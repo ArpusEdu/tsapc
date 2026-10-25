@@ -248,6 +248,23 @@ a.dt{text-decoration:none;display:inline-flex;align-items:center}
 #planOv .task.done .t-title,#planOv .task.done .t-det{text-decoration:line-through;opacity:.55}
 #planOv .foot{color:var(--muted);font-size:.85em}
 #planOv .dchip:focus-visible,#planOv .seg button:focus-visible,#planOv .t-go:focus-visible,#planOv input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* ===== Temporizador ===== */
+.tmr{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.blk:not(.open) .tmr{display:none}
+.tmr p{margin:0;font-size:.92em}
+.tmr .tm-done{color:var(--und);font-weight:700}
+.tmr button{font:inherit;font-weight:800;font-size:15px;border:0;border-radius:10px;padding:9px 14px;background:var(--accent);color:var(--accent-ink);cursor:pointer;white-space:nowrap}
+.tpill{position:fixed;z-index:30;left:50%;transform:translateX(-50%);top:calc(8px + env(safe-area-inset-top,0px));width:min(440px,calc(100vw - 24px));background:var(--ink);color:var(--surface);border-radius:16px;padding:9px 10px 9px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tpill .tp-txt{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.15}
+.tpill .tp-b{font-size:.75em;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tpill .tp-t{font-family:var(--f-mono);font-size:1.6em;font-weight:500;font-variant-numeric:tabular-nums}
+.tpill.over .tp-t{color:var(--lv1)}
+.tpill .tp-bar{position:absolute;left:12px;right:12px;bottom:4px;height:3px;border-radius:2px;background:rgba(127,127,127,.35);overflow:hidden}
+.tpill .tp-bar i{display:block;height:100%;background:var(--und);width:0}
+.tpill.over .tp-bar i{background:var(--lv1)}
+.tpill button{flex:none;font:inherit;font-weight:800;font-size:14px;border:0;border-radius:10px;padding:8px 11px;cursor:pointer;background:var(--surface);color:var(--ink)}
+.tpill button.fin{background:var(--und);color:var(--surface)}
+.tpill button.x{background:transparent;color:var(--surface);opacity:.7;padding:8px 6px;font-size:18px;line-height:1}
 /* ===== Índice lateral ===== */
 .drw{overflow:hidden;visibility:hidden;position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease,visibility 0s linear .25s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
 .drw.on{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
@@ -368,7 +385,7 @@ a.dt{text-decoration:none;display:inline-flex;align-items:center}
 <button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
 <a class="simlink" href="https://arpusedu.github.io/Fisio/simulacro/" target="_blank" rel="noopener"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>
 
-<section class="blk" id="b0"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">Histología: conceptos base</span><span class="bc">Conceptos 1–4 · 1 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv2" id="c1" data-lv="2">
+<section class="blk" id="b0" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">Histología: conceptos base</span><span class="bc">⏱ 20 min · Conceptos 1–4 · 1 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv2" id="c1" data-lv="2">
 <header class="c-h"><span class="c-n">1</span><h3>De qué trata la unidad: histología y anatomía</h3></header>
 <div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 1 (portada e índice)</span></div>
 <div class="c-body">
@@ -456,7 +473,7 @@ a.dt{text-decoration:none;display:inline-flex;align-items:center}
 <div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"CEMN"</strong> → <strong>C</strong>onectivo, <strong>E</strong>pitelial, <strong>M</strong>uscular, <strong>N</strong>ervioso. Piensa en un <strong>edificio</strong>: el <strong>epitelial</strong> es la <strong>pintura y las paredes</strong> (reviste), el <strong>conectivo</strong> es el <strong>cemento y las vigas</strong> (rellena y sostiene), el <strong>muscular</strong> son los <strong>motores</strong> (mueve) y el <strong>nervioso</strong> son los <strong>cables</strong> (transmite).</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los cuatro tipos básicos de tejido y qué hace cada uno?</p><label class="dom"><input type="checkbox" data-n="4"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b1"><h2 class="blk-h"><span class="bn">BLOQUE 2</span><span class="bt">Tejido epitelial</span><span class="bc">Conceptos 5–12 · 6 🔴 · <b class="bd">0</b>/8 dominados</span></h2><article class="cpt lv1" id="c5" data-lv="1">
+<section class="blk" id="b1" data-min="60"><h2 class="blk-h"><span class="bn">BLOQUE 2</span><span class="bt">Tejido epitelial</span><span class="bc">⏱ 60 min · Conceptos 5–12 · 6 🔴 · <b class="bd">0</b>/8 dominados</span></h2><article class="cpt lv1" id="c5" data-lv="1">
 <header class="c-h"><span class="c-n">5</span><h3>Características generales</h3></header>
 <div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 4 y 5</span></div>
 <div class="c-body">
@@ -673,7 +690,7 @@ a.dt{text-decoration:none;display:inline-flex;align-items:center}
 <div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El epitelio no solo <strong>cubre</strong>: también <strong>transporta</strong> (pasa sustancias a través de la célula), <strong>digiere</strong> (enzimas en su superficie), <strong>limpia</strong> y <strong>mueve</strong> cosas (cilios) y <strong>siente</strong> (receptores).</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las 6 funciones de los epitelios y cómo se realiza cada una.</p><label class="dom"><input type="checkbox" data-n="12"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b2"><h2 class="blk-h"><span class="bn">BLOQUE 3</span><span class="bt">Epitelio glandular</span><span class="bc">Conceptos 13–19 · 3 🔴 · <b class="bd">0</b>/7 dominados</span></h2><article class="cpt lv1" id="c13" data-lv="1">
+<section class="blk" id="b2" data-min="55"><h2 class="blk-h"><span class="bn">BLOQUE 3</span><span class="bt">Epitelio glandular</span><span class="bc">⏱ 55 min · Conceptos 13–19 · 3 🔴 · <b class="bd">0</b>/7 dominados</span></h2><article class="cpt lv1" id="c13" data-lv="1">
 <header class="c-h"><span class="c-n">13</span><h3>Glándula</h3></header>
 <div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 13</span></div>
 <div class="c-body">
@@ -852,7 +869,7 @@ Esquema: la <strong>exocrina</strong> tiene conducto y vierte sus productos al e
 <div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Truco de ejemplos en orden:</strong> <strong>"Estómago, Islote, Lúteo, Hígado, Hipófisis" = "El Indio Luchó Hasta Hoy"</strong>. En el islote: <strong>Alfa = Azúcar sube (glucagón), Beta = Baja (insulina)</strong>.</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Da un ejemplo de cada tipo de glándula endocrina según su complejidad. ¿Qué secretan los hepatocitos?</p><label class="dom"><input type="checkbox" data-n="19"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b3"><h2 class="blk-h"><span class="bn">BLOQUE 4</span><span class="bt">Tejido muscular</span><span class="bc">Conceptos 20–29 · 8 🔴 · <b class="bd">0</b>/10 dominados</span></h2><article class="cpt lv1" id="c20" data-lv="1">
+<section class="blk" id="b3" data-min="85"><h2 class="blk-h"><span class="bn">BLOQUE 4</span><span class="bt">Tejido muscular</span><span class="bc">⏱ 85 min · Conceptos 20–29 · 8 🔴 · <b class="bd">0</b>/10 dominados</span></h2><article class="cpt lv1" id="c20" data-lv="1">
 <header class="c-h"><span class="c-n">20</span><h3>Definición y tipos</h3></header>
 <div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 25</span></div>
 <div class="c-body">
@@ -1075,7 +1092,7 @@ e) <strong>Ion que induce la contracción → el calcio (Ca²⁺)</strong>, libe
 <div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La tabla resume lo que distingue a cada músculo: fíjate en <strong>núcleos</strong>, <strong>estrías</strong> y <strong>control</strong>; son las tres cosas que más pregunta la profe.</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Haz una tabla que compare los tres tipos de músculo.</p><label class="dom"><input type="checkbox" data-n="29"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b4"><h2 class="blk-h"><span class="bn">BLOQUE 5</span><span class="bt">Tejido nervioso</span><span class="bc">Conceptos 30–35 · 2 🔴 · <b class="bd">0</b>/6 dominados</span></h2><article class="cpt lv2" id="c30" data-lv="2">
+<section class="blk" id="b4" data-min="60"><h2 class="blk-h"><span class="bn">BLOQUE 5</span><span class="bt">Tejido nervioso</span><span class="bc">⏱ 60 min · Conceptos 30–35 · 2 🔴 · <b class="bd">0</b>/6 dominados</span></h2><article class="cpt lv2" id="c30" data-lv="2">
 <header class="c-h"><span class="c-n">30</span><h3>Definición</h3></header>
 <div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 38</span></div>
 <div class="c-body">
@@ -1199,7 +1216,7 @@ e) <strong>Ion que induce la contracción → el calcio (Ca²⁺)</strong>, libe
 <div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Gris = Guarda y piensa · Blanca = Bus de cables"</strong>. <strong>"Médula: mariposa gris dentro · Cerebro: corteza gris fuera"</strong>.</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué contiene la sustancia blanca y la gris, qué función tiene cada una y dónde están en la médula y en el cerebro?</p><label class="dom"><input type="checkbox" data-n="35"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b5"><h2 class="blk-h"><span class="bn">BLOQUE 6</span><span class="bt">Tejido conectivo: general y conjuntivo</span><span class="bc">Conceptos 36–40 · 2 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c36" data-lv="1">
+<section class="blk" id="b5" data-min="35"><h2 class="blk-h"><span class="bn">BLOQUE 6</span><span class="bt">Tejido conectivo: general y conjuntivo</span><span class="bc">⏱ 35 min · Conceptos 36–40 · 2 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c36" data-lv="1">
 <header class="c-h"><span class="c-n">36</span><h3>Tejido conectivo</h3></header>
 <div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 49</span></div>
 <div class="c-body">
@@ -1303,7 +1320,7 @@ e) <strong>Ion que induce la contracción → el calcio (Ca²⁺)</strong>, libe
 <div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Regular = Recto (tendón)" · "Irregular = en todas direcciones (dermis)" · "Elástico = arterias y cuerdas vocales (se estiran y vuelven)"</strong>.</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Diferencia el conjuntivo denso irregular, el regular y el elástico, con un ejemplo de cada uno.</p><label class="dom"><input type="checkbox" data-n="40"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b6"><h2 class="blk-h"><span class="bn">BLOQUE 7</span><span class="bt">Tejido adiposo</span><span class="bc">Conceptos 41–44 · 0 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv2" id="c41" data-lv="2">
+<section class="blk" id="b6" data-min="15"><h2 class="blk-h"><span class="bn">BLOQUE 7</span><span class="bt">Tejido adiposo</span><span class="bc">⏱ 15 min · Conceptos 41–44 · 0 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv2" id="c41" data-lv="2">
 <header class="c-h"><span class="c-n">41</span><h3>Características</h3></header>
 <div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 54</span></div>
 <div class="c-body">
@@ -1356,7 +1373,7 @@ Esquema de lipólisis: con <strong>adrenalina, ayuno o ejercicio</strong>, los T
 <div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Despensa, Abrigo y Cojín"</strong>.</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son las tres funciones del tejido adiposo?</p><label class="dom"><input type="checkbox" data-n="44"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b7"><h2 class="blk-h"><span class="bn">BLOQUE 8</span><span class="bt">Tejido cartilaginoso</span><span class="bc">Conceptos 45–46 · 1 🔴 · <b class="bd">0</b>/2 dominados</span></h2><article class="cpt lv2" id="c45" data-lv="2">
+<section class="blk" id="b7" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 8</span><span class="bt">Tejido cartilaginoso</span><span class="bc">⏱ 20 min · Conceptos 45–46 · 1 🔴 · <b class="bd">0</b>/2 dominados</span></h2><article class="cpt lv2" id="c45" data-lv="2">
 <header class="c-h"><span class="c-n">45</span><h3>Características</h3></header>
 <div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositivas 58 y 59</span></div>
 <div class="c-body">
@@ -1424,7 +1441,7 @@ Esquema de lipólisis: con <strong>adrenalina, ayuno o ejercicio</strong>, los T
 <div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Oreja Elástica, Disco Fibroso, Nariz Hialina"</strong>. Y <strong>"el FIBRO no tiene funda"</strong> (sin pericondrio).</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Compara los tres tipos de cartílago (fibras, pericondrio y localización).</p><label class="dom"><input type="checkbox" data-n="46"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b8"><h2 class="blk-h"><span class="bn">BLOQUE 9</span><span class="bt">Tejido óseo y el hueso</span><span class="bc">Conceptos 47–54 · 2 🔴 · <b class="bd">0</b>/8 dominados</span></h2><article class="cpt lv2" id="c47" data-lv="2">
+<section class="blk" id="b8" data-min="75"><h2 class="blk-h"><span class="bn">BLOQUE 9</span><span class="bt">Tejido óseo y el hueso</span><span class="bc">⏱ 75 min · Conceptos 47–54 · 2 🔴 · <b class="bd">0</b>/8 dominados</span></h2><article class="cpt lv2" id="c47" data-lv="2">
 <header class="c-h"><span class="c-n">47</span><h3>Tejido óseo</h3></header>
 <div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositivas 64 y 65</span></div>
 <div class="c-body">
@@ -1580,7 +1597,7 @@ Partes: <strong>periostio, tejido óseo compacto, endostio y tejido óseo esponj
 <div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Compacto = Columnas (osteonas) en la diáfisis · Esponjoso = Esponja (trabéculas) en las epífisis</strong>.</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿En qué se diferencia el hueso compacto del esponjoso?</p><label class="dom"><input type="checkbox" data-n="54"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b9"><h2 class="blk-h"><span class="bn">BLOQUE 10</span><span class="bt">Tejido sanguíneo</span><span class="bc">Conceptos 55–61 · 3 🔴 · <b class="bd">0</b>/7 dominados</span></h2><article class="cpt lv2" id="c55" data-lv="2">
+<section class="blk" id="b9" data-min="70"><h2 class="blk-h"><span class="bn">BLOQUE 10</span><span class="bt">Tejido sanguíneo</span><span class="bc">⏱ 70 min · Conceptos 55–61 · 3 🔴 · <b class="bd">0</b>/7 dominados</span></h2><article class="cpt lv2" id="c55" data-lv="2">
 <header class="c-h"><span class="c-n">55</span><h3>La sangre</h3></header>
 <div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 77</span></div>
 <div class="c-body">
@@ -1721,7 +1738,7 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 <div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La sangre es el <strong>"camión de reparto"</strong> del cuerpo: lleva gases, comida y hormonas, y también lleva a los <strong>defensores</strong> y las plaquetas.</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son las 4 funciones del tejido sanguíneo?</p><label class="dom"><input type="checkbox" data-n="61"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b10"><h2 class="blk-h"><span class="bn">BLOQUE 11</span><span class="bt">Tejido hematopoyético</span><span class="bc">Conceptos 62–64 · 1 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv1" id="c62" data-lv="1">
+<section class="blk" id="b10" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 11</span><span class="bt">Tejido hematopoyético</span><span class="bc">⏱ 20 min · Conceptos 62–64 · 1 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv1" id="c62" data-lv="1">
 <header class="c-h"><span class="c-n">62</span><h3>Definición</h3></header>
 <div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 90 a 92</span></div>
 <div class="c-body">
@@ -1763,7 +1780,7 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 <div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>El árbol baja en <strong>4 pisos</strong>: <strong>madre → progenitora (UFC) → precursora (-blasto) → célula de la sangre</strong>. Dos ramas: <strong>mieloide</strong> (casi todo) y <strong>linfoide</strong> (linfocitos).</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿De qué línea (mieloide o linfoide) salen el eritrocito, las plaquetas, el monocito, los granulocitos, los linfocitos y las NK?</p><label class="dom"><input type="checkbox" data-n="64"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b11"><h2 class="blk-h"><span class="bn">BLOQUE 12</span><span class="bt">Tejido linfático</span><span class="bc">Conceptos 65–66 · 0 🔴 · <b class="bd">0</b>/2 dominados</span></h2><article class="cpt lv2" id="c65" data-lv="2">
+<section class="blk" id="b11" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 12</span><span class="bt">Tejido linfático</span><span class="bc">⏱ 20 min · Conceptos 65–66 · 0 🔴 · <b class="bd">0</b>/2 dominados</span></h2><article class="cpt lv2" id="c65" data-lv="2">
 <header class="c-h"><span class="c-n">65</span><h3>Características</h3></header>
 <div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositivas 95 y 96</span></div>
 <div class="c-body">
@@ -1793,7 +1810,7 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 <div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El <strong>denso</strong> forma <strong>bolitas</strong> (nódulos) bien visibles: borde oscuro lleno de linfocitos y centro claro. El <strong>laxo</strong> está <strong>desperdigado</strong> y casi no se distingue del conectivo de alrededor.</p></div>
 <div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué diferencia al tejido linfático denso del laxo y dónde está cada uno?</p><label class="dom"><input type="checkbox" data-n="66"> Lo domino</label></div>
 </div></article></section>
-<section class="blk" id="b12"><h2 class="blk-h"><span class="bn">BLOQUE 13</span><span class="bt">Anatomía</span><span class="bc">Conceptos 67–70 · 2 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv1" id="c67" data-lv="1">
+<section class="blk" id="b12" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 13</span><span class="bt">Anatomía</span><span class="bc">⏱ 20 min · Conceptos 67–70 · 2 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv1" id="c67" data-lv="1">
 <header class="c-h"><span class="c-n">67</span><h3>Anatomía, órgano, sistema y aparato</h3></header>
 <div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 99</span></div>
 <div class="c-body">
@@ -2576,6 +2593,7 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 </tr>
 </tbody>
 </table></div></section>
+<div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
 <aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
 <div class="drw-tools"><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><a class="dt sim" href="https://arpusedu.github.io/Fisio/simulacro/" target="_blank" rel="noopener">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
 <details class="db"><summary><span class="dn">1</span><span class="dt2">Histología: conceptos base</span><span class="dc" data-b="b0">0/4</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i2" href="#c1"><i></i>1. De qué trata la unidad: histología y anatomía</a><a class="dl i3" href="#c2"><i></i>2. Datos del cuerpo</a><a class="dl i2" href="#c3"><i></i>3. Tejido e histología</a><a class="dl i1" href="#c4"><i></i>4. Los cuatro tipos de tejido</a></details>
@@ -2725,7 +2743,7 @@ qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDef
 (function(){
 
 const EXAM={id:"fisio2",em:"🫀",asig:"Fisiopatología",examen:"2º examen",fecha:"2026-10-28",horario:["8:00","13:25"],repaso:"#",simulacro:"https://arpusedu.github.io/Fisio/simulacro/",
-  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
+  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,m:+b.dataset.min||0,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
 const PKEY="plan-estudio-v1-"+EXAM.id;
 let ps={n:null,start:"hoy",times:{},done:{}};
 try{const s=JSON.parse(localStorage.getItem(PKEY)||"null");if(s)ps=Object.assign(ps,s)}catch(e){}
@@ -2748,7 +2766,7 @@ $("startSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{ps.start=b.da
 
 /* ---------- coste en minutos ---------- */
 const MIN={1:9,2:6,3:3};const CARDS=8;
-const bCost=b=>b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS;
+const bCost=b=>b.m||(b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS);
 const REVIEW=[
  {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
  {t:"📝 Simulacro completo",d:"Las 9 partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
@@ -2838,6 +2856,42 @@ ov.addEventListener("click",e=>{const a=e.target.closest("a.t-go");if(!a)return;
 /* resumen de hoy en la tarjeta de entrada */
 {prender();const td=[...ov.querySelectorAll(".day")].find(d=>d.querySelector(".badge.today"));
   if(td)document.getElementById("planToday").textContent="Hoy toca: "+td.querySelector("h2").textContent;}
+})();
+
+/* ===== Temporizador ===== */
+(function(){
+st.tm=st.tm||{a:null,s:{}};const T=st.tm;
+const pill=document.getElementById("tpill");let iv=null,beeped=false;
+const f2=n=>String(Math.floor(n)).padStart(2,"0");
+const fmt=sec=>{sec=Math.abs(sec);const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=Math.floor(sec%60);return (h?h+":"+f2(m):f2(m))+":"+f2(s)};
+const blkOf=id=>document.getElementById(id);
+const elapsed=()=>{const a=T.a;if(!a)return 0;return (a.acc+(a.paused?0:Date.now()-a.start))/1000};
+function beep(){try{const C=new (window.AudioContext||window.webkitAudioContext)();[0,.25,.5].forEach(t=>{const o=C.createOscillator(),g=C.createGain();o.frequency.value=880;o.connect(g);g.connect(C.destination);g.gain.setValueAtTime(.2,C.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,C.currentTime+t+.2);o.start(C.currentTime+t);o.stop(C.currentTime+t+.22)})}catch(e){}
+  try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}}
+function tick(){const a=T.a;if(!a){pill.hidden=true;return}
+  const tot=a.min*60,el=elapsed(),left=tot-el,over=left<0;
+  pill.hidden=false;pill.classList.toggle("over",over);
+  document.getElementById("tpB").textContent=(over?"⏰ Te pasaste · ":"⏱ ")+a.name+(a.paused?" · en pausa":"");
+  document.getElementById("tpT").textContent=(over?"+":"")+fmt(left);
+  document.getElementById("tpBar").style.width=Math.min(100,el/tot*100)+"%";
+  document.getElementById("tpPause").textContent=a.paused?"Seguir":"Pausa";
+  document.getElementById("tpPause").setAttribute("aria-label",a.paused?"Seguir":"Pausar");
+  if(over&&!beeped&&!a.beeped){beeped=true;a.beeped=1;save();beep()}}
+function run(){clearInterval(iv);if(T.a){iv=setInterval(tick,500)}tick()}
+function startB(b){const name=b.querySelector(".bn").textContent.replace("BLOQUE","Bloque")+" · "+b.querySelector(".bt").textContent;
+  T.a={b:b.id,name,min:+b.dataset.min,start:Date.now(),acc:0,paused:false};beeped=false;save();setOpen(b,true);save();run();
+  requestAnimationFrame(()=>{const y=b.getBoundingClientRect().top+scrollY-70;scrollTo({top:y,behavior:"smooth"})});rowAll()}
+function pause(){const a=T.a;if(!a)return;if(a.paused){a.start=Date.now();a.paused=false}else{a.acc+=Date.now()-a.start;a.paused=true}save();tick()}
+function fin(){const a=T.a;if(!a)return;T.s[a.b]=Math.max(1,Math.round(elapsed()/60));T.a=null;save();run();rowAll()}
+function cancel(){T.a=null;save();run();rowAll()}
+document.getElementById("tpPause").onclick=pause;document.getElementById("tpFin").onclick=fin;document.getElementById("tpX").onclick=cancel;
+function row(b){let r=b.querySelector(".tmr");if(!r){r=document.createElement("div");r.className="tmr";b.querySelector(".blk-h").after(r)}
+  const m=+b.dataset.min,sp=T.s[b.id],act=T.a&&T.a.b===b.id;
+  r.innerHTML=`<p>${sp?`<span class="tm-done">✓ Lo hiciste en ${sp} min</span> (previsto ${m})`:`⏱ Tiempo para aprenderte este bloque: <b>${m} min</b>`}</p>`+(act?`<p><b>⏳ En marcha…</b></p>`:`<button type="button">${sp?"↻ Otra vez":"▶ Empezar"}</button>`);
+  const bt=r.querySelector("button");if(bt)bt.onclick=()=>{if(T.a&&T.a.b!==b.id){fin()}startB(b)}}
+function rowAll(){blks.forEach(row)}
+rowAll();run();
+document.addEventListener("visibilitychange",tick);
 })();
 /* ===== Tarjetas ===== */
 (function(){
