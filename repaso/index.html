@@ -2601,6 +2601,7 @@ document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide
 document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
 setHide(!!st.hide);
 setMode(st.mode);apply();prog();
+if(/^#[\w-]+$/.test(location.hash)){const h=location.hash.slice(1);setTimeout(()=>go(h),300)}
 const drw=document.getElementById("drw"),scrim=document.getElementById("scrim");
 const wide=()=>matchMedia("(min-width:1100px)").matches;
 function drwSet(v){drw.classList.toggle("on",v);scrim.hidden=!v;document.body.style.overflow=v&&!wide()?"hidden":""}
