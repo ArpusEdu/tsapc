@@ -174,6 +174,20 @@ body.hidedefs .fd.peek{color:var(--ink)}
 .fab.hf[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
 .fab.hf[aria-pressed="true"] .sw{background:var(--lv1)}
 .fab.hf[aria-pressed="true"] .sw i{left:18px}
+.res{border:1px solid var(--line);border-radius:10px;background:var(--surface);max-height:60vh;overflow:auto}
+.res .rh{position:sticky;top:0;background:var(--soft);font-family:var(--f-mono);font-size:12px;color:var(--muted);padding:7px 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.res .rh button{font:inherit;border:0;background:none;color:var(--accent);cursor:pointer;padding:0}
+.ri{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 10px;color:var(--ink);cursor:pointer}
+.ri:last-child{border-bottom:0}
+.ri:hover,.ri:focus-visible{background:var(--soft)}
+.ri .rk{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.ri .rt{display:block;font-weight:700;line-height:1.25}
+.ri .rs{display:block;font-size:.85em;color:var(--muted);line-height:1.35;margin-top:2px}
+.res mark,.hl mark{background:#ffe066;color:#1d1828;border-radius:3px;padding:0 1px}
+.res .none{padding:12px 10px;color:var(--muted)}
+.flash{animation:fl 2.2s ease}
+@keyframes fl{0%,40%{box-shadow:0 0 0 4px #ffe066}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none;outline:3px solid #ffe066}}
 /* ===== Índice lateral ===== */
 .drw{position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
 .drw.on{transform:none}
@@ -263,7 +277,8 @@ body.hidedefs .fd.peek{color:var(--ink)}
     <select id="toc" aria-label="Ir a un bloque"><option value="">Ir a…</option><option value="b0">Bloque 1 · Histología: conceptos base</option><option value="b1">Bloque 2 · Tejido epitelial</option><option value="b2">Bloque 3 · Epitelio glandular</option><option value="b3">Bloque 4 · Tejido muscular</option><option value="b4">Bloque 5 · Tejido nervioso</option><option value="b5">Bloque 6 · Tejido conectivo: general y conjuntivo</option><option value="b6">Bloque 7 · Tejido adiposo</option><option value="b7">Bloque 8 · Tejido cartilaginoso</option><option value="b8">Bloque 9 · Tejido óseo y el hueso</option><option value="b9">Bloque 10 · Tejido sanguíneo</option><option value="b10">Bloque 11 · Tejido hematopoyético</option><option value="b11">Bloque 12 · Tejido linfático</option><option value="b12">Bloque 13 · Anatomía</option><option value="hoja">📝 Las 20 preguntas de la hoja</option><option value="trampas">⚠️ Trampas</option><option value="numeros">🔢 Números clave</option><option value="chequeo">✅ Chequeo final</option><option value="impres">⚡ Lo imprescindible</option><option value="glosario">📖 Glosario</option></select>
     <div class="mode" role="group" aria-label="Modo"><button type="button" id="mRead" aria-pressed="true">Leer</button><button type="button" id="mTest" aria-pressed="false">Ponte a prueba</button></div>
   </div>
-  <div class="row"><input type="search" id="q" placeholder="Buscar: osteona, mielina, sebácea…" aria-label="Buscar"></div>
+  <div class="row srow"><input type="search" id="q" placeholder="🔎 Busca cualquier palabra: osteona, pus, sebácea…" aria-label="Buscar en el repaso" autocomplete="off"></div>
+  <div class="res" id="res" hidden></div>
   <div class="chips" role="group" aria-label="Filtrar por importancia">
     <button type="button" class="chip" data-f="0" aria-pressed="true">Todos</button>
     <button type="button" class="chip c1" data-f="1" aria-pressed="false">🔴 Imprescindibles</button>
@@ -271,7 +286,6 @@ body.hidedefs .fd.peek{color:var(--ink)}
     <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
     <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
   </div>
-  <button type="button" class="hidebtn" id="hideBtn" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideTxt">💡 Definiciones a la vista · toca para taparlas</span></button>
   <div class="prog"><span id="pText">Dominas 0 de 70</span><span id="pHint"></span></div>
   <div class="pbar"><i id="pBar"></i></div>
 </div>
@@ -2565,24 +2579,22 @@ document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)g
 function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const el=b.querySelector(".bd");if(el)el.textContent=cs.filter(x=>st.done[x.dataset.n]).length});
   const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de 70";document.getElementById("pBar").style.width=(n/70*100)+"%";
   const p1=cpts.filter(c=>c.dataset.lv==="1"&&!st.done[c.id.slice(1)]).length;document.getElementById("pHint").textContent=p1?"Te faltan "+p1+" 🔴":"¡Todos los 🔴 dominados!"}
-function apply(){const q=norm(document.getElementById("q").value.trim());let shown=0;const filt=q||st.f!=="0";
+function apply(){const q="";let shown=0;const filt=st.f!=="0";
   cpts.forEach(c=>{const n=c.id.slice(1);let ok=true;if(st.f==="pend")ok=!st.done[n];else if(st.f!=="0")ok=c.dataset.lv===st.f;if(q)ok=ok&&c._t.includes(q);c.hidden=!ok;if(ok)shown++});
   blks.forEach(b=>{const any=[...b.querySelectorAll(".cpt")].some(c=>!c.hidden);b.hidden=!any;if(any&&filt)b.classList.add("open")});
   if(!filt)blks.forEach(b=>b.classList.toggle("open",!!st.open[b.id]));
   document.getElementById("empty").hidden=shown>0;
   document.querySelectorAll(".chips .chip").forEach(ch=>ch.setAttribute("aria-pressed",String(ch.dataset.f===st.f)))}
 document.querySelectorAll(".chips .chip").forEach(ch=>ch.addEventListener("click",()=>{st.f=ch.dataset.f;save();apply()}));
-document.getElementById("q").addEventListener("input",apply);
+
 function setMode(m){st.mode=m;save();document.body.classList.toggle("test",m==="test");
   document.getElementById("mRead").setAttribute("aria-pressed",String(m==="read"));document.getElementById("mTest").setAttribute("aria-pressed",String(m==="test"));
   cpts.forEach(c=>{c.classList.remove("reveal");c.querySelector(".show").textContent="Ver respuesta"})}
 document.getElementById("mRead").onclick=()=>setMode("read");document.getElementById("mTest").onclick=()=>setMode("test");
-const hb=document.getElementById("hideBtn");
-function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);hb.setAttribute("aria-pressed",String(v));
-  document.getElementById("hideTxt").textContent=v?"🙈 Definiciones tapadas · toca cada una para verla":"💡 Definiciones a la vista · toca para taparlas";
+function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);
   document.querySelectorAll(".fd.peek").forEach(x=>x.classList.remove("peek"));setBar();
-  const hf=document.getElementById("hideFab");hf.setAttribute("aria-pressed",String(v));document.getElementById("hideFabTxt").textContent=v?"🙈 Tapadas":"💡 Tapar definiciones"}
-hb.addEventListener("click",()=>setHide(!st.hide));document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide));
+  const hf=document.getElementById("hideFab");hf.setAttribute("aria-pressed",String(v));document.getElementById("hideFabTxt").textContent=v?"🙈 Tapadas":"💡 Tapar"}
+document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide));
 document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
 setHide(!!st.hide);
 setMode(st.mode);apply();prog();
@@ -2594,6 +2606,48 @@ drw.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(!wide())
 document.getElementById("fcOpen2").addEventListener("click",()=>{if(!wide())drwSet(false)});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drw.classList.contains("on"))drwSet(false)});
 const upB=document.getElementById("upBtn");addEventListener("scroll",()=>{upB.hidden=scrollY<600},{passive:true});upB.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* ===== Buscador ===== */
+(function(){
+const qi=document.getElementById("q"),res=document.getElementById("res");
+const U=[];
+const txt=el=>{const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);const out=[];while(w.nextNode()){const t=w.currentNode;if(t.parentNode.closest(".fl,.lbl,.tag,.show,.dom,.srcl,figcaption"))continue;const v=t.nodeValue.trim();if(v)out.push(v)}return out.join(" ")};
+const add=(el,kind,title,text)=>U.push({el,kind,title,text,n:norm(text),nt:norm(title)});
+cpts.forEach(c=>{const t=c.querySelector("h3").childNodes[0].textContent.trim();add(c,"Concepto "+c.id.slice(1)+" · "+c.closest(".blk").querySelector(".bt").textContent,t,txt(c))});
+document.querySelectorAll("#hoja .pq").forEach(d=>add(d,"20 preguntas de la hoja",d.querySelector("summary").textContent,txt(d)));
+document.querySelectorAll("#impres .pq").forEach(d=>add(d,"Lo imprescindible",d.querySelector("summary").textContent,txt(d)));
+[["glosario","Glosario"],["trampas","Trampas"],["numeros","Números clave"]].forEach(([id,k])=>document.querySelectorAll("#"+id+" tbody tr").forEach(r=>add(r,k,r.cells[0].textContent,txt(r))));
+document.querySelectorAll("#chequeo li").forEach(li=>add(li,"Chequeo final",li.textContent,li.textContent));
+const escH=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function snip(text,q){const n=norm(text);const i=n.indexOf(q);if(i<0)return escH(text.slice(0,110))+"…";
+  const a=Math.max(0,i-50),b=Math.min(text.length,i+q.length+70);
+  return (a?"…":"")+escH(text.slice(a,i))+"<mark>"+escH(text.slice(i,i+q.length))+"</mark>"+escH(text.slice(i+q.length,b))+(b<text.length?"…":"")}
+function markT(t,q){const n=norm(t);const i=n.indexOf(q);return i<0?escH(t):escH(t.slice(0,i))+"<mark>"+escH(t.slice(i,i+q.length))+"</mark>"+escH(t.slice(i+q.length))}
+let found=[];
+function run(){const raw=qi.value.trim();const q=norm(raw);if(q.length<2){res.hidden=true;return}
+  found=U.filter(u=>u.n.includes(q)).sort((a,b)=>(b.nt.includes(q)-a.nt.includes(q)));
+  res.hidden=false;
+  if(!found.length){res.innerHTML=`<div class="none">No aparece «${escH(raw)}» en el repaso. Prueba con otra palabra o sin la última letra.</div>`;return}
+  res.innerHTML=`<div class="rh"><span>${found.length} resultado${found.length>1?"s":""} para «${escH(raw)}»</span><button type="button" id="resX">Cerrar</button></div>`+
+   found.slice(0,60).map((u,k)=>`<button type="button" class="ri" data-k="${k}"><span class="rk">${escH(u.kind)}</span><span class="rt">${markT(u.title.slice(0,120),q)}</span><span class="rs">${snip(u.text.replace(/\s+/g," "),q)}</span></button>`).join("");
+  document.getElementById("resX").onclick=()=>{qi.value="";res.hidden=true};
+  res.querySelectorAll(".ri").forEach(b=>b.onclick=()=>jump(found[+b.dataset.k],q))}
+function jump(u,q){const el=u.el;const b=el.closest(".blk");if(b){setOpen(b,true);save()}if(b&&b.hidden){st.f="0";save();apply()}
+  if(el.tagName==="DETAILS")el.open=true;const d=el.closest("details");if(d)d.open=true;
+  if(el.closest(".cpt")&&document.body.classList.contains("test")){const c=el.closest(".cpt");c.classList.add("reveal")}
+  highlight(el,q);
+  requestAnimationFrame(()=>{const tgt=firstMark(el)||el;const y=tgt.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:"smooth"});
+    el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")})}
+function clearHL(){document.querySelectorAll("mark.sh").forEach(m=>{const t=document.createTextNode(m.textContent);m.replaceWith(t);t.parentNode&&t.parentNode.normalize()})}
+function highlight(root,q){clearHL();const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(t=>{const n=norm(t.nodeValue);let i=n.indexOf(q);if(i<0||t.parentNode.closest("script,style,.res"))return;
+    const frag=document.createDocumentFragment();let last=0;const s=t.nodeValue;
+    while(i>=0){frag.append(s.slice(last,i));const m=document.createElement("mark");m.className="sh";m.style.cssText="background:#ffe066;color:#1d1828;border-radius:3px";m.textContent=s.slice(i,i+q.length);frag.append(m);last=i+q.length;i=n.indexOf(q,last)}
+    frag.append(s.slice(last));t.replaceWith(frag)})}
+function firstMark(el){return el.querySelector("mark.sh")}
+qi.addEventListener("input",run);qi.addEventListener("focus",run);
+qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDefault();jump(found[0],norm(qi.value.trim()))}if(e.key==="Escape"){res.hidden=true}});
+})();
 /* ===== Tarjetas ===== */
 (function(){
 const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
