@@ -166,6 +166,51 @@ body.hidedefs .fd.peek{color:var(--ink)}
 @media (prefers-reduced-motion:reduce){.hidebtn .sw,.hidebtn .sw i{transition:none}}
 .empty{color:var(--muted);text-align:center;padding:20px}
 .chip:focus-visible,.mode button:focus-visible,.show:focus-visible,.tbtn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.blk-h:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+[hidden]{display:none!important}
+/* ===== Tarjetas ===== */
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;font:inherit;font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 18px;background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.tbtn.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.fc{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.fc-in{max-width:620px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+.fc-top{display:flex;align-items:center;gap:10px}
+.fc-top h2{font-size:1.15em;flex:1}
+.fc-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.fc-setup{display:flex;flex-direction:column;gap:12px;overflow:auto}
+.fc-setup .lbl{margin:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:9px 12px;cursor:pointer;text-align:left}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--q-soft);font-weight:700}
+.opt small{display:block;font-size:.8em;color:var(--muted);font-weight:400}
+.go{font:inherit;font-weight:800;font-size:17px;border:0;border-radius:12px;padding:14px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.go:disabled{opacity:.45;cursor:default}
+#fcGo{position:sticky;bottom:0;box-shadow:0 -8px 16px var(--bg)}
+.fc-prog{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fc-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;display:flex}
+.fc-bar .g{background:var(--und)} .fc-bar .r{background:var(--lv1)}
+.stage{flex:1;min-height:0;perspective:1400px}
+.card3{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.3,.7,.3,1);cursor:pointer}
+.card3.flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;padding:18px;overflow:hidden}
+.face.front{border-top:8px solid var(--cc,var(--accent));justify-content:center;text-align:center;gap:14px}
+.face.back{transform:rotateY(180deg);border-top:8px solid var(--und)}
+.face .kind{font-family:var(--f-mono);font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.face.front .qq{font-family:var(--f-display);font-size:1.45em;font-weight:800;line-height:1.2;text-wrap:balance}
+.face .hint{color:var(--muted);font-size:.85em}
+.bulb{font-size:2.4em;line-height:1;filter:grayscale(1) opacity(.5);transition:filter .3s}
+.card3.flip .bulb{filter:none}
+.face.back .ans{overflow:auto;flex:1;min-height:0;font-size:.98em}
+.face.back .ans>:first-child{margin-top:0}
+.face.back .ans .formal{font-weight:700;font-size:1.15em;border-left:4px solid var(--accent);padding-left:10px}
+.face.back .src{font-size:.78em;color:var(--muted);margin-top:8px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btns button{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px 8px;cursor:pointer}
+.b-no{background:var(--lv1-soft);color:var(--lv1)} .b-si{background:var(--und-soft);color:var(--und)}
+.btns button:disabled{opacity:.35;cursor:default}
+.flipb{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px;background:var(--ink);color:var(--surface);cursor:pointer}
+.fc-end{display:flex;flex-direction:column;gap:12px;align-items:stretch;text-align:center;overflow:auto}
+.fc-end .score{font-family:var(--f-display);font-size:3.2em;font-weight:800;line-height:1}
+@media (prefers-reduced-motion:reduce){.card3{transition:none}}
 </style>
 </head>
 <body>
@@ -221,7 +266,7 @@ body.hidedefs .fd.peek{color:var(--ink)}
 <li><a class="toc-b" href="#b11"><span>Bloque 12</span> Tejido linfático</a><span class="toc-c"><a class="i2" href="#c65">65. Características</a> · <a class="i2" href="#c66">66. Linfático denso vs laxo</a></span></li>
 <li><a class="toc-b" href="#b12"><span>Bloque 13</span> Anatomía</a><span class="toc-c"><a class="i1" href="#c67">67. Anatomía, órgano, sistema y aparato</a> · <a class="i2" href="#c68">68. Sistemas y su tejido</a> · <a class="i2" href="#c69">69. Aparatos y sus órganos</a> · <a class="i1" href="#c70">70. Planos y direcciones anatómicas (diapositiva 102, imagen)</a></span></li>
 <li><a class="toc-b" href="#hoja"><span>Extra</span> Las 20 preguntas de la hoja de la profe</a></li><li><a class="toc-b" href="#trampas"><span>Extra</span> Trampas · Números clave · Chequeo final</a></li><li><a class="toc-b" href="#impres"><span>Extra</span> Lo imprescindible</a></li><li><a class="toc-b" href="#glosario"><span>Extra</span> Glosario</a></li></ol></nav>
-<div class="tools"><button type="button" class="tbtn" id="openAll">Abrir todos los bloques</button><button type="button" class="tbtn" id="closeAll">Cerrar todos</button></div>
+<div class="tools"><button type="button" class="tbtn big" id="fcOpen2">🃏 Tarjetas de preguntas</button><button type="button" class="tbtn" id="openAll">Abrir todos los bloques</button><button type="button" class="tbtn" id="closeAll">Cerrar todos</button></div>
 <section class="blk" id="b0"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">Histología: conceptos base</span><span class="bc">Conceptos 1–4 · 1 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv2" id="c1" data-lv="2">
 <header class="c-h"><span class="c-n">1</span><h3>De qué trata la unidad: histología y anatomía</h3></header>
 <div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 1 (portada e índice)</span></div>
@@ -2430,6 +2475,26 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 </tr>
 </tbody>
 </table></div></section>
+<button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button>
+<div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
+ <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
+ <div class="fc-setup" id="fcSetup">
+  <p class="meta" style="margin:0">Pregunta por delante, respuesta por detrás. Toca la tarjeta para <b>encender la luz 💡</b> y darle la vuelta. Luego di si te la sabías.</p>
+  <p class="lbl">1 · ¿Qué bloque?</p><div class="opts" id="oBlk"></div>
+  <p class="lbl">2 · ¿Qué preguntas?</p><div class="opts" id="oKind"></div>
+  <p class="lbl">3 · ¿Cuáles?</p><div class="opts" id="oLv"></div>
+  <button type="button" class="go" id="fcGo">Empezar</button>
+ </div>
+ <div id="fcPlay" hidden style="display:contents">
+  <div class="fc-prog"><span id="fcN"></span><span id="fcS"></span></div>
+  <div class="fc-bar"><i class="g" id="fcG"></i><i class="r" id="fcR"></i></div>
+  <div class="stage"><div class="card3" id="card3" tabindex="0" role="button" aria-label="Dar la vuelta a la tarjeta">
+   <div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></div>
+  <button type="button" class="flipb" id="fcFlip">💡 Ver respuesta</button>
+  <div class="btns" id="fcBtns" hidden><button type="button" class="b-no" id="fcNo">❌ No me la sé</button><button type="button" class="b-si" id="fcSi">✅ Me la sé</button></div>
+ </div>
+ <div class="fc-end" id="fcEnd" hidden></div>
+</div></div>
 </div>
 <script>
 const KEY="fisio2-repaso-v3";
@@ -2478,6 +2543,55 @@ hb.addEventListener("click",()=>setHide(!st.hide));
 document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
 setHide(!!st.hide);
 setMode(st.mode);apply();prog();
+/* ===== Tarjetas ===== */
+(function(){
+const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
+const LVC={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const ALL=[];
+cpts.forEach(c=>{const b=c.closest(".blk");const bt=b.querySelector(".bt").textContent;const n=c.id.slice(1);const lv=c.dataset.lv;
+  const qt=c.querySelector(".qt");const prof=[...c.querySelectorAll(".prof-t")].map(x=>x.innerHTML).join("");
+  const src=c.querySelector(".srcl").textContent;
+  if(qt)ALL.push({id:"q"+n,blk:b.id,bt,lv,kind:"q",q:qt.textContent,a:prof,src,title:n+". "+c.querySelector("h3").childNodes[0].textContent});
+  c.querySelectorAll(".defs li").forEach((li,i)=>{const ok=li.querySelector(".fd.ok");if(!ok)return;
+    const term=li.querySelector(".term").textContent;const txt=ok.textContent.replace(/^📌[^«]*/,"");
+    ALL.push({id:"d"+n+"_"+i,blk:b.id,bt,lv,kind:"d",q:"¿Cómo define la diapositiva: «"+term+"»?",a:'<p class="formal">'+txt+"</p>",src,title:term})})});
+st.fc=st.fc||{bad:{}};
+let cfg={blk:"all",kind:"all",lv:"all"},deck=[],i=0,ok=0,ko=0,flipped=false;
+const blkOpts=[["all","Todos los bloques",""]].concat(blks.map(b=>[b.id,b.querySelector(".bn").textContent.replace("BLOQUE","Bloque"),b.querySelector(".bt").textContent]));
+function opts(el,list,key){el.innerHTML=list.map(([v,t,sm])=>`<button type="button" class="opt" data-v="${v}" aria-pressed="${cfg[key]===v}">${t}${sm?`<small>${sm}</small>`:""}</button>`).join("");
+  el.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cfg[key]=b.dataset.v;el.querySelectorAll(".opt").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));count()})}
+function pool(){return ALL.filter(c=>(cfg.blk==="all"||c.blk===cfg.blk)&&(cfg.kind==="all"||c.kind===cfg.kind)&&(cfg.lv==="all"||(cfg.lv==="bad"?st.fc.bad[c.id]:c.lv===cfg.lv)))}
+function count(){const n=pool().length;$("fcGo").textContent=n?"Empezar · "+n+" tarjetas":"No hay tarjetas con esa elección";$("fcGo").disabled=!n}
+function setup(){opts($("oBlk"),blkOpts,"blk");
+  opts($("oKind"),[["all","Todo","preguntas + definiciones"],["q","❓ Preguntas de cada concepto",""],["d","📌 Definiciones de la diapositiva","las del examen"]],"kind");
+  const nb=Object.keys(st.fc.bad).length;
+  opts($("oLv"),[["all","Todas",""],["1","🔴 Solo imprescindibles",""],["bad","❌ Solo las que fallé",nb+" guardadas"]],"lv");count();
+  $("fcSetup").hidden=false;$("fcPlay").hidden=true;$("fcPlay").style.display="none";$("fcEnd").hidden=true}
+function open(){fc.hidden=false;document.body.style.overflow="hidden";setup()}
+function close(){fc.hidden=true;document.body.style.overflow=""}
+$("fcOpen").onclick=open;$("fcOpen2").onclick=open;$("fcClose").onclick=close;
+document.addEventListener("keydown",e=>{if(fc.hidden)return;if(e.key==="Escape")close()});
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function start(list){deck=shuffle(list.slice());i=0;ok=0;ko=0;$("fcSetup").hidden=true;$("fcEnd").hidden=true;$("fcPlay").hidden=false;$("fcPlay").style.display="contents";show()}
+$("fcGo").onclick=()=>start(pool());
+function show(){const c=deck[i];flipped=false;$("card3").classList.remove("flip");$("fcFlip").hidden=false;$("fcBtns").hidden=true;
+  $("ffront").style.setProperty("--cc",LVC[c.lv]);
+  $("ffront").innerHTML=`<span class="kind">${c.kind==="d"?"📌 Definición de la diapositiva":"❓ Pregunta"} · ${c.bt}</span><span class="bulb" aria-hidden="true">💡</span><span class="qq">${c.q}</span><span class="hint">Piensa la respuesta (o dila en voz alta) y toca para encender la luz</span>`;
+  $("fback").innerHTML=`<span class="kind">💡 Respuesta · ${c.title}</span><div class="ans">${c.a}</div><span class="src">${c.src}</span>`;
+  $("fcN").textContent="Tarjeta "+(i+1)+" de "+deck.length;$("fcS").textContent="✅ "+ok+" · ❌ "+ko;
+  $("fcG").style.width=(ok/deck.length*100)+"%";$("fcR").style.width=(ko/deck.length*100)+"%"}
+function flip(){flipped=!flipped;$("card3").classList.toggle("flip",flipped);if(flipped){$("fcFlip").hidden=true;$("fcBtns").hidden=false}}
+$("card3").onclick=e=>{if(e.target.closest("a"))return;flip()};$("card3").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+$("fcFlip").onclick=flip;
+function answer(good){const c=deck[i];if(good){ok++;delete st.fc.bad[c.id]}else{ko++;st.fc.bad[c.id]=1}save();i++;if(i<deck.length)show();else end()}
+$("fcSi").onclick=()=>answer(true);$("fcNo").onclick=()=>answer(false);
+function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pct=Math.round(ok/deck.length*100);const fails=deck.filter(c=>st.fc.bad[c.id]);
+  const msg=pct>=90?"¡Lo tienes dominado! 🔥":pct>=70?"¡Muy bien! Repasa las que fallaste.":pct>=50?"Vas bien: repite las falladas.":"Toca repasar este bloque y volver a intentarlo.";
+  $("fcEnd").innerHTML=`<span class="kind" style="font-family:var(--f-mono);color:var(--muted)">RESULTADO</span><span class="score">${ok}/${deck.length}</span><p style="margin:0;font-weight:700">${msg}</p>`+
+   (fails.length?`<button type="button" class="go" id="fcRe">🔁 Repetir las ${fails.length} que fallé</button>`:"")+`<button type="button" class="opt" id="fcAgain" style="text-align:center">🃏 Elegir otras tarjetas</button><button type="button" class="opt" id="fcBack" style="text-align:center">Volver al repaso</button>`;
+  $("fcEnd").hidden=false;if(fails.length)$("fcRe").onclick=()=>start(fails);$("fcAgain").onclick=setup;$("fcBack").onclick=close}
+})();
+
 </script>
 
 </body>
