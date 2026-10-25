@@ -77,6 +77,8 @@ textarea{min-height:70px;resize:vertical}
 .secscore{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
 .llave{border:2px solid var(--bad)}
 .note{font-size:13px;color:var(--muted);margin:0}
+.replink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:11px 14px;font-size:15px}
+.replink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
 .btn:focus-visible,.sec-h:focus-visible,.pchip:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-visible,.selfmark button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -89,6 +91,7 @@ textarea{min-height:70px;resize:vertical}
     <h1>Simulacro: tejidos y anatomía</h1>
     <p class="meta">Haz las partes en el orden que quieras y corrige cada una con su botón. Las de test, verdadero/falso, relacionar y esquemas se corrigen solas; en las de escribir te sale la respuesta modelo y te marcas tú ✓ o ✗. Todo se guarda en este navegador.</p>
   </header>
+  <a class="replink" href="https://arpusedu.github.io/Fisio/repaso/" target="_blank" rel="noopener"><span>📖 ¿Fallaste algo? Búscalo en el <b>Repaso</b></span><span aria-hidden="true">→</span></a>
   <div class="score" aria-live="polite">
     <div class="score-top"><span class="big" id="nota">–</span><small id="pts">Aún no has corregido ninguna parte</small></div>
     <div class="parts" id="chips"></div>
