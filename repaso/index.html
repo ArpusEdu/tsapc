@@ -192,6 +192,62 @@ body.hidedefs .fd.peek{color:var(--ink)}
 .simlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
 a.dt{text-decoration:none;display:inline-flex;align-items:center}
 .dc.full{color:var(--und);font-weight:700}
+/* ===== Mi plan ===== */
+#planOv{position:fixed;inset:0;z-index:55;background:var(--bg);overflow:auto;--ok:var(--und);--ok-soft:var(--und-soft);--warn:var(--tip);--warn-soft:var(--tip-soft);--rev:var(--lv3);--rev-soft:var(--lv3-soft)}
+#planOv .pwrap{max-width:720px;margin:0 auto;padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+#planOv .ptop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+#planOv .px{flex:none;font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.planlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px solid var(--accent);border-radius:12px;padding:11px 14px;font:inherit;font-size:.95em;width:100%;text-align:left;cursor:pointer}
+.planlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+#planOv .eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+#planOv h1{font-size:1.9em;line-height:1.08;margin:4px 0 4px}
+#planOv .sub{color:var(--muted);margin:0}
+#planOv .count{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#planOv .count .n{font-family:var(--f-display);font-weight:800;font-size:2.4em;line-height:1;color:var(--lv1);font-variant-numeric:tabular-nums;min-width:1.4ch;text-align:center}
+#planOv .count p{margin:0}
+#planOv .k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+#planOv .cfg{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+#planOv .days{display:flex;flex-wrap:wrap;gap:6px}
+#planOv .dchip{font:inherit;font-weight:700;font-size:15px;min-width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+#planOv .dchip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#planOv .seg{display:flex;gap:6px;flex-wrap:wrap}
+#planOv .seg button{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:7px 12px;cursor:pointer}
+#planOv .seg button[aria-pressed="true"]{border-color:var(--accent);font-weight:700;background:var(--surface)}
+#planOv .note{font-size:.9em;border-radius:10px;padding:9px 11px}
+#planOv .note.warn{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn)}
+#planOv .note.ok{background:var(--ok-soft);border-left:4px solid var(--ok)}
+#planOv .day{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#planOv .day-h{padding:12px 14px 10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+#planOv .day-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+#planOv .day-h h2{font-size:1.3em}
+#planOv .day-h .when{font-family:var(--f-mono);font-size:.75em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+#planOv .day-h .goal{font-size:.92em;color:var(--muted);margin:0}
+#planOv .times{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.9em;color:var(--muted)}
+#planOv .times input{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:4px 6px}
+#planOv .dprog{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+#planOv .dprog i{display:block;height:100%;background:var(--ok);width:0}
+#planOv .badge{font-family:var(--f-mono);font-size:.7em;border-radius:999px;padding:2px 8px;white-space:nowrap}
+#planOv .badge.today{background:var(--accent);color:var(--accent-ink)}
+#planOv .badge.done{background:var(--ok-soft);color:var(--ok)}
+#planOv .tasks{list-style:none;margin:0;padding:6px 8px 10px}
+#planOv .task{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding:9px 6px;border-radius:10px;align-items:start}
+#planOv .task+.task{border-top:1px solid var(--line)}
+#planOv .task input{width:22px;height:22px;margin-top:2px;accent-color:var(--ok)}
+#planOv .t-time{font-family:var(--f-mono);font-size:.75em;color:var(--muted);font-variant-numeric:tabular-nums}
+#planOv .t-title{font-weight:700;line-height:1.3}
+#planOv .t-det{font-size:.88em;color:var(--muted);line-height:1.4;margin-top:2px}
+#planOv .t-det b{color:var(--ink)}
+#planOv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 3px 0 0;transform:translateY(-1px)}
+#planOv .d1{background:var(--lv1)}
+#planOv .d2{background:var(--lv2)}
+#planOv .d3{background:var(--lv3)}
+#planOv .t-go{display:inline-block;margin-top:6px;font-size:.85em;font-weight:700;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);border-radius:8px;padding:4px 10px}
+#planOv .task.brk{grid-template-columns:1fr;padding:5px 6px;color:var(--muted);font-size:.88em}
+#planOv .task.brk .t-title{font-weight:400}
+#planOv .task.rev .t-title{color:var(--rev)}
+#planOv .task.done .t-title,#planOv .task.done .t-det{text-decoration:line-through;opacity:.55}
+#planOv .foot{color:var(--muted);font-size:.85em}
+#planOv .dchip:focus-visible,#planOv .seg button:focus-visible,#planOv .t-go:focus-visible,#planOv input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 /* ===== Índice lateral ===== */
 .drw{overflow:hidden;visibility:hidden;position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease,visibility 0s linear .25s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
 .drw.on{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
@@ -309,6 +365,7 @@ a.dt{text-decoration:none;display:inline-flex;align-items:center}
   <div class="prog"><span id="pText">Dominas 0 de 70</span><span id="pHint"></span></div>
   <div class="pbar"><i id="pBar"></i></div>
 </div>
+<button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
 <a class="simlink" href="https://arpusedu.github.io/Fisio/simulacro/" target="_blank" rel="noopener"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>
 
 <section class="blk" id="b0"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">Histología: conceptos base</span><span class="bc">Conceptos 1–4 · 1 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv2" id="c1" data-lv="2">
@@ -2520,7 +2577,7 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 </tbody>
 </table></div></section>
 <aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
-<div class="drw-tools"><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><a class="dt sim" href="https://arpusedu.github.io/Fisio/simulacro/" target="_blank" rel="noopener">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<div class="drw-tools"><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><a class="dt sim" href="https://arpusedu.github.io/Fisio/simulacro/" target="_blank" rel="noopener">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
 <details class="db"><summary><span class="dn">1</span><span class="dt2">Histología: conceptos base</span><span class="dc" data-b="b0">0/4</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i2" href="#c1"><i></i>1. De qué trata la unidad: histología y anatomía</a><a class="dl i3" href="#c2"><i></i>2. Datos del cuerpo</a><a class="dl i2" href="#c3"><i></i>3. Tejido e histología</a><a class="dl i1" href="#c4"><i></i>4. Los cuatro tipos de tejido</a></details>
 <details class="db"><summary><span class="dn">2</span><span class="dt2">Tejido epitelial</span><span class="dc" data-b="b1">0/8</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i1" href="#c5"><i></i>5. Características generales</a><a class="dl i3" href="#c6"><i></i>6. Epitelios de revestimiento: características</a><a class="dl i1" href="#c7"><i></i>7. Clasificación del epitelio de revestimiento</a><a class="dl i1" href="#c8"><i></i>8. Epitelio simple (monoestratificado): dónde está</a><a class="dl i2" href="#c9"><i></i>9. Epitelio pseudoestratificado</a><a class="dl i1" href="#c10"><i></i>10. Epitelio estratificado</a><a class="dl i1" href="#c11"><i></i>11. Relación tipo de epitelio / función</a><a class="dl i1" href="#c12"><i></i>12. Funciones de los epitelios</a></details>
 <details class="db"><summary><span class="dn">3</span><span class="dt2">Epitelio glandular</span><span class="dc" data-b="b2">0/7</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i1" href="#c13"><i></i>13. Glándula</a><a class="dl i1" href="#c14"><i></i>14. Glándulas exocrinas</a><a class="dl i2" href="#c15"><i></i>15. Clasificación por adenómeros y conductos</a><a class="dl i2" href="#c16"><i></i>16. Según el producto secretado</a><a class="dl i1" href="#c17"><i></i>17. Según el mecanismo de secreción</a><a class="dl i2" href="#c18"><i></i>18. Glándulas endocrinas</a><a class="dl i2" href="#c19"><i></i>19. Ejemplos de cada nivel de complejidad</a></details>
@@ -2534,7 +2591,19 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 <details class="db"><summary><span class="dn">11</span><span class="dt2">Tejido hematopoyético</span><span class="dc" data-b="b10">0/3</span></summary><a class="dbk" href="#b10">Ir al inicio del bloque</a><a class="dl i1" href="#c62"><i></i>62. Definición</a><a class="dl i2" href="#c63"><i></i>63. Dónde está</a><a class="dl i3" href="#c64"><i></i>64. Árbol de la hematopoyesis (diapositiva 94, imagen)</a></details>
 <details class="db"><summary><span class="dn">12</span><span class="dt2">Tejido linfático</span><span class="dc" data-b="b11">0/2</span></summary><a class="dbk" href="#b11">Ir al inicio del bloque</a><a class="dl i2" href="#c65"><i></i>65. Características</a><a class="dl i2" href="#c66"><i></i>66. Linfático denso vs laxo</a></details>
 <details class="db"><summary><span class="dn">13</span><span class="dt2">Anatomía</span><span class="dc" data-b="b12">0/4</span></summary><a class="dbk" href="#b12">Ir al inicio del bloque</a><a class="dl i1" href="#c67"><i></i>67. Anatomía, órgano, sistema y aparato</a><a class="dl i2" href="#c68"><i></i>68. Sistemas y su tejido</a><a class="dl i2" href="#c69"><i></i>69. Aparatos y sus órganos</a><a class="dl i1" href="#c70"><i></i>70. Planos y direcciones anatómicas (diapositiva 102, imagen)</a></details>
-<p class="dx">Extras</p><a class="dl" href="#hoja">📝 Las 20 preguntas de la hoja</a><a class="dl" href="#trampas">⚠️ Trampas</a><a class="dl" href="#numeros">🔢 Números clave</a><a class="dl" href="#chequeo">✅ Chequeo final</a><a class="dl" href="#impres">⚡ Lo imprescindible</a><a class="dl" href="#glosario">📖 Glosario</a></div></aside><div class="scrim" id="scrim" hidden></div><button type="button" class="fab hf" id="hideFab" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideFabTxt">Tapar</span></button><button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab idx" id="drwOpen" aria-label="Abrir índice">☰ Índice</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
+<p class="dx">Extras</p><a class="dl" href="#hoja">📝 Las 20 preguntas de la hoja</a><a class="dl" href="#trampas">⚠️ Trampas</a><a class="dl" href="#numeros">🔢 Números clave</a><a class="dl" href="#chequeo">✅ Chequeo final</a><a class="dl" href="#impres">⚡ Lo imprescindible</a><a class="dl" href="#glosario">📖 Glosario</a></div></aside><div id="planOv" hidden role="dialog" aria-modal="true" aria-label="Mi plan de estudio"><div class="pwrap">
+<div class="ptop"><header><p class="eyebrow" id="pl_eb"></p><h1>📅 Mi plan de estudio</h1><p class="sub" id="pl_sub"></p></header><button type="button" class="px" id="planClose" aria-label="Cerrar plan">×</button></div>
+<section class="count" id="pl_count"></section>
+<section class="cfg">
+  <div><p class="k" style="margin:0 0 6px">1 · ¿Cuántos días vas a estudiar?</p><div class="days" id="pl_days"></div></div>
+  <div><p class="k" style="margin:0 0 6px">2 · ¿Cuándo empiezas?</p><div class="seg" id="pl_startSeg"></div></div>
+  <p class="foot" style="margin:0">Cambia la hora de inicio y fin de cada día si hace falta: el plan se reparte solo según el tiempo que tengas.</p>
+</section>
+<div id="pl_msg"></div>
+<div id="pl_plan" style="display:flex;flex-direction:column;gap:14px"></div>
+<p class="foot">Toca <b>Ir →</b> para saltar a esa parte del repaso. Marca la casilla cuando termines cada tarea. Se guarda en este móvil.</p>
+</div></div>
+<div class="scrim" id="scrim" hidden></div><button type="button" class="fab hf" id="hideFab" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideFabTxt">Tapar</span></button><button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab idx" id="drwOpen" aria-label="Abrir índice">☰ Índice</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
 <div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
  <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
  <div class="fc-setup" id="fcSetup">
@@ -2651,6 +2720,124 @@ function highlight(root,q){clearHL();const w=document.createTreeWalker(root,Node
 function firstMark(el){return el.querySelector("mark.sh")}
 qi.addEventListener("input",run);qi.addEventListener("focus",run);
 qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDefault();jump(found[0],norm(qi.value.trim()))}if(e.key==="Escape"){res.hidden=true}});
+})();
+/* ===== Mi plan ===== */
+(function(){
+
+const EXAM={id:"fisio2",em:"🫀",asig:"Fisiopatología",examen:"2º examen",fecha:"2026-10-28",horario:["8:00","13:25"],repaso:"#",simulacro:"https://arpusedu.github.io/Fisio/simulacro/",
+  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
+const PKEY="plan-estudio-v1-"+EXAM.id;
+let ps={n:null,start:"hoy",times:{},done:{}};
+try{const s=JSON.parse(localStorage.getItem(PKEY)||"null");if(s)ps=Object.assign(ps,s)}catch(e){}
+const psave=()=>{try{localStorage.setItem(PKEY,JSON.stringify(ps))}catch(e){}};
+const $=id=>document.getElementById("pl_"+id);
+const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const today=new Date();today.setHours(0,0,0,0);
+const exam=new Date(EXAM.fecha+"T00:00:00");
+const left=Math.round((exam-today)/864e5);
+const fmtD=d=>DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];
+$("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
+$("sub").textContent="Examen: "+fmtD(exam)+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar y hacer el Simulacro.";
+$("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`;
+const maxN=10;const defN=Math.min(maxN,Math.max(1,left));
+if(!ps.n)ps.n=defN;
+$("days").innerHTML=Array.from({length:maxN},(_,i)=>`<button type="button" class="dchip" data-n="${i+1}" aria-pressed="${ps.n===i+1}" aria-label="${i+1} días">${i+1}</button>`).join("");
+$("days").querySelectorAll(".dchip").forEach(b=>b.onclick=()=>{ps.n=+b.dataset.n;psave();$("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+$("startSeg").innerHTML=[["hoy","Hoy"],["manana","Mañana"]].map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${ps.start===k}">${t}</button>`).join("");
+$("startSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{ps.start=b.dataset.k;psave();$("startSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+
+/* ---------- coste en minutos ---------- */
+const MIN={1:9,2:6,3:3};const CARDS=8;
+const bCost=b=>b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS;
+const REVIEW=[
+ {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
+ {t:"📝 Simulacro completo",d:"Las 9 partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
+ {t:"🩹 Repasa lo que fallaste en el Simulacro",d:"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».",m:30,u:EXAM.simulacro,rev:1},
+ {t:"📝 Las 20 preguntas de la hoja de la profe",d:"Contéstalas en voz alta antes de abrir cada respuesta. Es lo más parecido al examen.",m:40,u:"#hoja",rev:1},
+ {t:"⚠️ Trampas y 🔢 números clave",d:"Las parejas que se confunden y las cifras (%, µm, mm/h…).",m:20,u:"#trampas",rev:1},
+ {t:"⚡ Lo imprescindible",d:"Pregunta → respuesta corta. Lo último antes de dormir.",m:20,u:"#impres",rev:1}];
+const WARM={t:"🔁 Calentamiento: lo que fallaste ayer",d:"🃏 Tarjetas → «Solo las que fallé». Así lo de ayer no se te olvida.",m:15,u:"#fc",rev:1};
+const toMin=s=>{const [h,m]=(s||"0:0").split(":").map(Number);return h*60+m};
+const toHM=m=>{m=((m%1440)+1440)%1440;return Math.floor(m/60)+":"+String(m%60).padStart(2,"0")};
+function dayDate(i){const d=new Date(today);d.setDate(d.getDate()+i+(ps.start==="manana"?1:0));return d}
+function defTimes(i){const d=dayDate(i);const isToday=d.getTime()===today.getTime();
+  if(isToday){const now=new Date();let s=Math.ceil((now.getHours()*60+now.getMinutes()+15)/15)*15;s=Math.max(s,8*60);const e=Math.max(s+60,22*60);return [toHM(s),toHM(Math.min(e,23*60+30))]}
+  return EXAM.horario}
+function times(i){const k=dayDate(i).toISOString().slice(0,10);return ps.times[k]||defTimes(i)}
+function setTime(i,which,v){const k=dayDate(i).toISOString().slice(0,10);const t=times(i).slice();t[which]=v;ps.times[k]=t;psave();prender()}
+
+function plan(N){
+  const caps=Array.from({length:N},(_,i)=>{const [a,b]=times(i);return Math.max(30,toMin(b)-toMin(a))});
+  const days=Array.from({length:N},()=>[]);
+  const blocks=EXAM.blocks.map(b=>({b,m:bCost(b)}));const total=blocks.reduce((s,x)=>s+x.m,0);
+  let mode="full";
+  if(N===1){
+    const rojo=EXAM.blocks.map(b=>({b,cs:b.c.filter(c=>c.lv===1)})).filter(x=>x.cs.length);
+    const avail=caps[0]-80;
+    days[0].push({t:"🔴 Solo lo imprescindible de cada bloque",d:"En el Repaso pulsa el filtro <b>🔴 Imprescindibles</b> y repasa: "+rojo.map(x=>`<b>${x.b.n}</b> ${x.b.t} (${x.cs.map(c=>c.n).join(", ")})`).join(" · "),m:Math.max(60,avail),u:"#fc"});
+    days[0].push(REVIEW[3],REVIEW[5]);
+    return {days,caps,mode:"rojo"};}
+  const lastRev=REVIEW;const revM=lastRev.reduce((s,x)=>s+x.m,0);
+  // capacidad para bloques: días 1..N-1 (menos calentamiento) + lo que sobre del último día
+  const W=.82;/* tiempo real de estudio descontando descansos */
+  const learnCaps=caps.map((c,i)=>i<N-1?c*W-(i>0?WARM.m:0):Math.max(0,c*W-WARM.m-revM));
+  const learnTotal=learnCaps.reduce((s,x)=>s+x,0);
+  const f=Math.min(1,learnTotal/total);if(f<1)mode=f<.7?"rojo":"rapido";
+  // repartir bloques en orden según capacidad acumulada
+  const cum=[];let acc=0;const tf=total*f;learnCaps.forEach(c=>{acc+=c;cum.push(acc/learnTotal*tf)});
+  let pos=0;
+  blocks.forEach(x=>{const m=x.m*f;const mid=pos+m/2;let d=cum.findIndex(c=>mid<=c);if(d<0)d=N-1;
+    x.day=d;pos+=m;x.mm=Math.round(m)});
+  for(let i=0;i<N;i++){
+    if(i>0)days[i].push(WARM);
+    blocks.filter(x=>x.day===i).forEach(x=>{const r=x.b.c.filter(c=>c.lv===1);
+      days[i].push({t:`Bloque ${x.b.n} · ${x.b.t}`,blk:x.b,m:x.mm,u:"#"+x.b.id,
+        d:(mode==="rojo"?"<b>Poco tiempo:</b> lee bien los 🔴 y los demás por encima. ":"")+"Lee los conceptos "+x.b.c[0].n+"–"+x.b.c[x.b.c.length-1].n+" y al terminar haz sus 🃏 Tarjetas. "+(r.length?"🔴 Imprescindibles: <b>"+r.map(c=>c.n).join(", ")+"</b>.":"")})});
+    if(i===N-1)days[i].push(...lastRev);}
+  return {days,caps,mode,f};
+}
+function schedule(tasks,start){let t=toMin(start),run=0;const out=[];
+  tasks.forEach((x,k)=>{out.push({...x,a:t,b:t+x.m});t+=x.m;run+=x.m;
+    if(run>=45&&k<tasks.length-1){out.push({brk:1,t:"☕ Descanso: levántate, agua, nada de móvil",a:t,b:t+10,m:10});t+=10;run=0}});
+  return out}
+function prender(){
+  const N=ps.n;const P=plan(N);
+  const msg=$("msg");
+  if(left>0&&N>left)msg.innerHTML=`<p class="note warn">⚠️ Elegiste ${N} días pero solo quedan ${left} antes del examen. Los últimos días caerían después del examen.</p>`;
+  else if(N===1)msg.innerHTML=`<p class="note warn">⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴, las 20 preguntas de la hoja y "Lo imprescindible".</p>`;
+  else if(P.mode==="rojo")msg.innerHTML=`<p class="note warn">⚠️ <b>El tiempo es justo.</b> En cada bloque céntrate en los conceptos 🔴 y los demás léelos por encima. Si puedes, alarga las horas de algún día.</p>`;
+  else if(P.mode==="rapido")msg.innerHTML=`<p class="note warn">⏱️ Vas un poco justo: en cada bloque dale prioridad a los 🔴. Si puedes, añade algo de tiempo a algún día.</p>`;
+  else msg.innerHTML=`<p class="note ok">✅ Te da tiempo de todo. Sigue el plan en orden y tacha cada tarea.</p>`;
+  $("plan").innerHTML=P.days.map((tasks,i)=>{const d=dayDate(i);const [a,b]=times(i);const sch=schedule(tasks,a);
+    const used=sch.length?sch[sch.length-1].b-toMin(a):0;const over=used>P.caps[i]+10;
+    const real=sch.filter(x=>!x.brk);const k=dayDate(i).toISOString().slice(0,10);
+    const doneN=real.filter((x,j)=>ps.done[k+"|"+x.t]).length;
+    const isToday=d.getTime()===today.getTime();
+    const bl=real.filter(x=>x.blk).map(x=>x.blk);const rng=bl.length?(bl.length===1?"Bloque "+bl[0].n:"Bloques "+bl[0].n+" a "+bl[bl.length-1].n):"";
+    const goal=i===N-1&&N>1?(rng?rng+" + Repaso final y Simulacro":"Repaso final y Simulacro"):rng;const names=bl.map(b=>b.t).join(" · ");
+    return `<article class="day" id="pl_d${i}"><div class="day-h">
+      <div class="day-top"><span class="when">Día ${i+1} de ${N} · ${fmtD(d)}</span>${isToday?'<span class="badge today">HOY</span>':""}${doneN===real.length&&real.length?'<span class="badge done">✓ HECHO</span>':""}</div>
+      <h2>${goal||"Repaso"}</h2>${names?`<p class="goal">${names}</p>`:""}
+      <div class="times">De <input type="time" id="pl_ts${i}" value="${a.padStart(5,"0")}" aria-label="Hora de inicio día ${i+1}"> a <input type="time" id="pl_te${i}" value="${b.padStart(5,"0")}" aria-label="Hora de fin día ${i+1}"> · ${Math.round(P.caps[i]/6)/10} h${over?' · <b style="color:var(--warn)">el plan acaba a las '+toHM(sch[sch.length-1].b)+'</b>':""}</div>
+      <div class="dprog"><i style="width:${real.length?doneN/real.length*100:0}%"></i></div></div>
+      <ul class="tasks">${sch.map(x=>x.brk?`<li class="task brk"><span class="t-title"><span class="t-time">${toHM(x.a)}</span> ${x.t}</span></li>`:
+        `<li class="task${x.rev?" rev":""}${ps.done[k+"|"+x.t]?" done":""}"><input type="checkbox" data-k="${k}|${x.t.replace(/"/g,"&quot;")}" ${ps.done[k+"|"+x.t]?"checked":""} aria-label="Hecho: ${x.t.replace(/"/g,"&quot;")}"><div><span class="t-time">${toHM(x.a)}–${toHM(x.b)} · ${x.m} min</span><div class="t-title">${x.blk?`<span class="dot d1"></span>`:""}${x.t}</div><div class="t-det">${x.d||""}</div>${x.u?`<a class="t-go" href="${x.u}"${x.u.startsWith("#")?"":' target="_blank" rel="noopener"'}>${x.u.startsWith("#")?"Ir →":"Abrir →"}</a>`:""}</div></li>`).join("")}</ul></article>`}).join("");
+  P.days.forEach((_,i)=>{$("ts"+i).onchange=e=>setTime(i,0,e.target.value);$("te"+i).onchange=e=>setTime(i,1,e.target.value)});
+  document.querySelectorAll("#planOv .task input").forEach(c=>c.onchange=()=>{if(c.checked)ps.done[c.dataset.k]=1;else delete ps.done[c.dataset.k];psave();prender()});
+}
+
+const ov=document.getElementById("planOv");
+function openPlan(){ov.hidden=false;document.body.style.overflow="hidden";prender();ov.scrollTop=0}
+function closePlan(){ov.hidden=true;document.body.style.overflow=""}
+document.getElementById("planOpen").onclick=openPlan;
+const pb=document.getElementById("planOpen2");if(pb)pb.onclick=()=>{if(typeof drwSet==="function"&&!wide())drwSet(false);openPlan()};
+document.getElementById("planClose").onclick=closePlan;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ov.hidden)closePlan()});
+ov.addEventListener("click",e=>{const a=e.target.closest("a.t-go");if(!a)return;const h=a.getAttribute("href");if(!h.startsWith("#"))return;e.preventDefault();closePlan();
+  if(h==="#fc"){document.getElementById("fcOpen").click();return}go(h.slice(1))});
+/* resumen de hoy en la tarjeta de entrada */
+{prender();const td=[...ov.querySelectorAll(".day")].find(d=>d.querySelector(".badge.today"));
+  if(td)document.getElementById("planToday").textContent="Hoy toca: "+td.querySelector("h2").textContent;}
 })();
 /* ===== Tarjetas ===== */
 (function(){
