@@ -150,6 +150,20 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 body.test .show{display:inline-block}
 body.test .cpt:not(.reveal) .c-body>:not(.q){display:none}
 body.test .cpt:not(.reveal) .c-body{gap:0}
+.hidebtn{font:inherit;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer}
+.hidebtn .sw{flex:none;width:40px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.hidebtn .sw i{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--surface);transition:left .2s}
+.hidebtn[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.hidebtn[aria-pressed="true"] .sw{background:var(--lv1)}
+.hidebtn[aria-pressed="true"] .sw i{left:21px}
+body.hidedefs .fd.easy,body.hidedefs .fd.ok{position:relative;cursor:pointer;color:transparent;user-select:none}
+body.hidedefs .fd.easy *,body.hidedefs .fd.ok *{color:transparent!important;border-color:transparent}
+body.hidedefs .fd.easy:not(.peek)::after,body.hidedefs .fd.ok:not(.peek)::after{content:"👆 Toca para ver";position:absolute;inset:0;display:grid;place-items:center;border-radius:8px;background:repeating-linear-gradient(135deg,var(--soft) 0 10px,var(--line) 10px 20px);color:var(--muted);font-family:var(--f-mono);font-size:.78em;font-weight:500;letter-spacing:.04em;padding:0 12px;text-align:center}
+body.hidedefs .fd.ok:not(.peek)::after{content:"📌 ¿Cuál es la definición de la diapositiva? · toca para ver"}
+body.hidedefs .fd.easy:not(.peek)::after{content:"💡 ¿Qué significa? · toca para ver"}
+body.hidedefs .fd.peek,body.hidedefs .fd.peek *{color:inherit!important;user-select:auto}
+body.hidedefs .fd.peek{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.hidebtn .sw,.hidebtn .sw i{transition:none}}
 .empty{color:var(--muted);text-align:center;padding:20px}
 .chip:focus-visible,.mode button:focus-visible,.show:focus-visible,.tbtn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.blk-h:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 </style>
@@ -170,6 +184,7 @@ body.test .cpt:not(.reveal) .c-body{gap:0}
     <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
     <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
   </div>
+  <button type="button" class="hidebtn" id="hideBtn" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideTxt">💡 Definiciones a la vista · toca para taparlas</span></button>
   <div class="prog"><span id="pText">Dominas 0 de 70</span><span id="pHint"></span></div>
   <div class="pbar"><i id="pBar"></i></div>
 </div>
@@ -2455,6 +2470,13 @@ function setMode(m){st.mode=m;save();document.body.classList.toggle("test",m==="
   document.getElementById("mRead").setAttribute("aria-pressed",String(m==="read"));document.getElementById("mTest").setAttribute("aria-pressed",String(m==="test"));
   cpts.forEach(c=>{c.classList.remove("reveal");c.querySelector(".show").textContent="Ver respuesta"})}
 document.getElementById("mRead").onclick=()=>setMode("read");document.getElementById("mTest").onclick=()=>setMode("test");
+const hb=document.getElementById("hideBtn");
+function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);hb.setAttribute("aria-pressed",String(v));
+  document.getElementById("hideTxt").textContent=v?"🙈 Definiciones tapadas · toca cada una para verla":"💡 Definiciones a la vista · toca para taparlas";
+  document.querySelectorAll(".fd.peek").forEach(x=>x.classList.remove("peek"));setBar()}
+hb.addEventListener("click",()=>setHide(!st.hide));
+document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
+setHide(!!st.hide);
 setMode(st.mode);apply();prog();
 </script>
 
