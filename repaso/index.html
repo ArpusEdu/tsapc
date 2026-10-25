@@ -125,7 +125,7 @@ a{color:var(--accent)}
 body{font-size:17px}
 .wrap{padding-block:14px 60px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line);margin:0 calc(-1 * max(14px,env(safe-area-inset-left,0px)));padding:8px max(14px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:7px;min-width:0}
+.bar{position:relative;z-index:5;border-radius:12px;border:1px solid var(--line);background:var(--surface);border-bottom:1px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:7px;min-width:0}
 .row{display:flex;gap:8px;align-items:center;min-width:0}
 .row select,.row input[type=search]{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0;flex:1}
 .mode{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
@@ -170,6 +170,7 @@ body.hidedefs .fd.peek{color:var(--ink)}
 [hidden]{display:none!important}
 /* ===== Tarjetas ===== */
 .fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;font:inherit;font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 18px;background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.fab.up{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:13px 16px}
 .tbtn.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
 .fc{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .fc-in{max-width:620px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
@@ -2475,7 +2476,7 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 </tr>
 </tbody>
 </table></div></section>
-<button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button>
+<button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
 <div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
  <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
  <div class="fc-setup" id="fcSetup">
@@ -2502,7 +2503,7 @@ let st={done:{},f:"0",mode:"read",open:{}};
 try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.done)st=Object.assign(st,s)}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
 const bar=document.querySelector(".bar");
-const setBar=()=>document.documentElement.style.setProperty("--bar",(bar.offsetHeight+8)+"px");setBar();addEventListener("resize",setBar);
+const setBar=()=>document.documentElement.style.setProperty("--bar","8px");setBar();addEventListener("resize",setBar);
 const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 const cpts=[...document.querySelectorAll(".cpt")];
 const blks=[...document.querySelectorAll(".blk")];
@@ -2517,7 +2518,7 @@ blks.forEach(b=>{const h=b.querySelector(".blk-h");h.tabIndex=0;h.setAttribute("
 document.getElementById("openAll").onclick=()=>{blks.forEach(b=>setOpen(b,true));save()};
 document.getElementById("closeAll").onclick=()=>{blks.forEach(b=>setOpen(b,false));save()};
 function go(id){const el=document.getElementById(id);if(!el)return;const b=el.closest(".blk");if(b){setOpen(b,true);save()}
-  requestAnimationFrame(()=>{const y=el.getBoundingClientRect().top+scrollY-bar.offsetHeight-8;scrollTo({top:y,behavior:"smooth"})})}
+  requestAnimationFrame(()=>{const y=el.getBoundingClientRect().top+scrollY-8;scrollTo({top:y,behavior:"smooth"})})}
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.getAttribute("href").slice(1))}));
 document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)go(e.target.value);e.target.value=""});
 function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const el=b.querySelector(".bd");if(el)el.textContent=cs.filter(x=>st.done[x.dataset.n]).length});
@@ -2543,6 +2544,7 @@ hb.addEventListener("click",()=>setHide(!st.hide));
 document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
 setHide(!!st.hide);
 setMode(st.mode);apply();prog();
+const upB=document.getElementById("upBtn");addEventListener("scroll",()=>{upB.hidden=scrollY<600},{passive:true});upB.onclick=()=>scrollTo({top:0,behavior:"smooth"});
 /* ===== Tarjetas ===== */
 (function(){
 const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
