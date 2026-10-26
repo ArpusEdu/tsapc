@@ -379,7 +379,7 @@ a.dt{text-decoration:none;display:inline-flex;align-items:center}
     <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
     <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
   </div>
-  <div class="prog"><span id="pText">Dominas 0 de 70</span><span id="pHint"></span></div>
+  <div class="prog"><span id="pText">Dominas 0</span><span id="pHint"></span></div>
   <div class="pbar"><i id="pBar"></i></div>
 </div>
 <button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
@@ -2613,6 +2613,7 @@ Esquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegaca
 <div class="ptop"><header><p class="eyebrow" id="pl_eb"></p><h1>📅 Mi plan de estudio</h1><p class="sub" id="pl_sub"></p></header><button type="button" class="px" id="planClose" aria-label="Cerrar plan">×</button></div>
 <section class="count" id="pl_count"></section>
 <section class="cfg">
+  <div><p class="k" style="margin:0 0 6px">📆 Fecha del examen</p><input type="date" id="pl_fecha" style="font:inherit;font-size:16px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 8px"></div>
   <div><p class="k" style="margin:0 0 6px">1 · ¿Cuántos días vas a estudiar?</p><div class="days" id="pl_days"></div></div>
   <div><p class="k" style="margin:0 0 6px">2 · ¿Cuándo empiezas?</p><div class="seg" id="pl_startSeg"></div></div>
   <p class="foot" style="margin:0">Cambia la hora de inicio y fin de cada día si hace falta: el plan se reparte solo según el tiempo que tengas.</p>
@@ -2667,7 +2668,7 @@ function go(id){const el=document.getElementById(id);if(!el)return;const b=el.cl
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.getAttribute("href").slice(1))}));
 document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)go(e.target.value);e.target.value=""});
 function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const k=cs.filter(x=>st.done[x.dataset.n]).length;const el=b.querySelector(".bd");if(el)el.textContent=k;const dc=document.querySelector('.dc[data-b="'+b.id+'"]');if(dc){dc.textContent=(k===cs.length?"✓ ":"")+k+"/"+cs.length;dc.classList.toggle("full",k===cs.length)}});
-  const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de 70";document.getElementById("pBar").style.width=(n/70*100)+"%";
+  const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de "+cpts.length;document.getElementById("pBar").style.width=(n/cpts.length*100)+"%";
   const p1=cpts.filter(c=>c.dataset.lv==="1"&&!st.done[c.id.slice(1)]).length;document.getElementById("pHint").textContent=p1?"Te faltan "+p1+" 🔴":"¡Todos los 🔴 dominados!"}
 function apply(){const q="";let shown=0;const filt=st.f!=="0";
   cpts.forEach(c=>{const n=c.id.slice(1);let ok=true;if(st.f==="pend")ok=!st.done[n];else if(st.f!=="0")ok=c.dataset.lv===st.f;if(q)ok=ok&&c._t.includes(q);c.hidden=!ok;if(ok)shown++});
@@ -2751,14 +2752,18 @@ const psave=()=>{try{localStorage.setItem(PKEY,JSON.stringify(ps))}catch(e){}};
 const $=id=>document.getElementById("pl_"+id);
 const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
 const today=new Date();today.setHours(0,0,0,0);
-const exam=new Date(EXAM.fecha+"T00:00:00");
-const left=Math.round((exam-today)/864e5);
 const fmtD=d=>DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];
-$("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
-$("sub").textContent="Examen: "+fmtD(exam)+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar y hacer el Simulacro.";
-$("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`;
-const maxN=10;const defN=Math.min(maxN,Math.max(1,left));
-if(!ps.n)ps.n=defN;
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+let exam,left;const maxN=10;
+function setExam(){const f=ps.fecha||EXAM.fecha||iso(new Date(today.getTime()+7*864e5));exam=new Date(f+"T00:00:00");left=Math.round((exam-today)/864e5);
+  $("fecha").value=f;
+  $("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
+  $("sub").textContent="Examen: "+fmtD(exam)+(ps.fecha||EXAM.fecha?"":" (fecha de ejemplo: pon la tuya arriba)")+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar.";
+  $("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`}
+setExam();
+if(!ps.n)ps.n=Math.min(maxN,Math.max(1,left));
+$("fecha").addEventListener("change",e=>{if(!e.target.value)return;ps.fecha=e.target.value;setExam();ps.n=Math.min(maxN,Math.max(1,left));psave();
+  $("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(+x.dataset.n===ps.n)));prender()});
 $("days").innerHTML=Array.from({length:maxN},(_,i)=>`<button type="button" class="dchip" data-n="${i+1}" aria-pressed="${ps.n===i+1}" aria-label="${i+1} días">${i+1}</button>`).join("");
 $("days").querySelectorAll(".dchip").forEach(b=>b.onclick=()=>{ps.n=+b.dataset.n;psave();$("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
 $("startSeg").innerHTML=[["hoy","Hoy"],["manana","Mañana"]].map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${ps.start===k}">${t}</button>`).join("");
