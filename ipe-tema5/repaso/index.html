@@ -4,8 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}}</style>
-<script>document.addEventListener("DOMContentLoaded",function(){var a=document.createElement("a");a.className="mc-back";a.href="../../";a.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(a,document.body.firstChild)});</script>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:60;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});</script>
 </head>
 <body>
 <title>IPE · Primeros auxilios</title>
@@ -1551,7 +1558,7 @@ En el trabajo se pueden producir accidentes por <strong>caídas, golpes y atrapa
 </table></div></section>
 <div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
 <aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
-<div class="drw-tools"><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
 <details class="db"><summary><span class="dn">1</span><span class="dt2">Los primeros auxilios</span><span class="dc" data-b="b0">0/4</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i3" href="#c1"><i></i>1. De qué trata el tema</a><a class="dl i1" href="#c2"><i></i>2. Qué son los primeros auxilios y sus objetivos</a><a class="dl i1" href="#c3"><i></i>3. Principios de los primeros auxilios</a><a class="dl i1" href="#c4"><i></i>4. La conducta PAS (proteger, avisar y socorrer)</a></details>
 <details class="db"><summary><span class="dn">2</span><span class="dt2">El triaje</span><span class="dc" data-b="b1">0/2</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i1" href="#c5"><i></i>5. El triaje: qué es</a><a class="dl i1" href="#c6"><i></i>6. Clasificación de heridos: triaje básico SHORT</a></details>
 <details class="db"><summary><span class="dn">3</span><span class="dt2">El botiquín de primeros auxilios</span><span class="dc" data-b="b2">0/2</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i1" href="#c7"><i></i>7. El botiquín: cuál debe tener la empresa y sus normas</a><a class="dl i2" href="#c8"><i></i>8. Contenido del botiquín portátil</a></details>

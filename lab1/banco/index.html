@@ -4,8 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}}</style>
-<script>document.addEventListener("DOMContentLoaded",function(){var a=document.createElement("a");a.className="mc-back";a.href="../../";a.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(a,document.body.firstChild)});</script>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:60;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});</script>
 </head>
 <body>
 <title>Banco completo de Laboratorio U1</title>
