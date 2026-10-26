@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){var a=document.createElement("a");a.className="mc-back";a.href="../../";a.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(a,document.body.firstChild)});</script>
+</head>
+<body>
+<title>Lab Words: aprende las 50</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: columna central con 3 pestañas (Aprender · Tarjetas · Practicar); arriba, el marcador "sabes X de 50" */
+:root{
+  --bg:#eef1f6; --surface:#ffffff; --ink:#18213a; --muted:#5d6782; --line:#d6dce8; --field:#f4f6fb;
+  --accent:#1f3c88; --accent-soft:#e3e9f8; --ok:#18794e; --ok-soft:#e1f4ea; --bad:#c1121f; --bad-soft:#fde7e8; --tip:#8a5a00; --tip-soft:#fff3d6;
+  --f-display:"Familjen Grotesk","Segoe UI",system-ui,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1322; --surface:#161d31; --ink:#e6eaf5; --muted:#9aa4c0; --line:#2b3550; --field:#1d2640;
+  --accent:#8ea8ff; --accent-soft:#222e52; --ok:#4fd197; --ok-soft:#163327; --bad:#ff6b74; --bad-soft:#3a1d24; --tip:#f5c56b; --tip-soft:#3a2f17; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1322; --surface:#161d31; --ink:#e6eaf5; --muted:#9aa4c0; --line:#2b3550; --field:#1d2640;
+  --accent:#8ea8ff; --accent-soft:#222e52; --ok:#4fd197; --ok-soft:#163327; --bad:#ff6b74; --bad-soft:#3a1d24; --tip:#f5c56b; --tip-soft:#3a2f17; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding-block:20px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:16px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--f-display);font-size:clamp(28px,7vw,40px);line-height:1.05;margin:4px 0 0;text-wrap:balance}
+.sub{margin:6px 0 0;color:var(--muted);max-width:62ch}
+.prog{display:flex;flex-direction:column;gap:6px}
+.prog-top{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;gap:8px;flex-wrap:wrap}
+.bar{height:8px;border-radius:4px;background:var(--line);overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.bar .b-ok{background:var(--ok)} .bar .b-mid{background:var(--tip)}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);overflow-x:auto}
+.tab{font:inherit;font-weight:700;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:10px 12px;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible,.btn:focus-visible,.chip:focus-visible,.say:focus-visible,.card:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.panel{display:flex;flex-direction:column;gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:5px 11px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.grp{font-family:var(--f-display);font-size:19px;margin:8px 0 0}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.w{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.w-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.w-en{font-family:var(--f-display);font-size:21px;line-height:1.15;font-weight:700}
+.w-n{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.w-es{font-weight:600}
+.w-p{font-family:var(--f-mono);font-size:13px;color:var(--accent)}
+.w-t{background:var(--tip-soft);color:var(--ink);border-radius:6px;padding:6px 9px;font-size:14px}
+.w-t b{color:var(--tip)}
+.w-e{font-size:14px;color:var(--muted);font-style:italic}
+.w-state{font-family:var(--f-mono);font-size:11px}
+.say{flex:none;font:inherit;font-size:15px;border:1px solid var(--line);background:var(--field);color:var(--ink);border-radius:999px;width:36px;height:36px;cursor:pointer}
+.say[hidden]{display:none}
+.stage{display:flex;flex-direction:column;align-items:center;gap:14px}
+.card{width:100%;max-width:480px;min-height:230px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;cursor:pointer}
+.card .big{font-family:var(--f-display);font-size:clamp(28px,8vw,40px);line-height:1.1;font-weight:700;text-wrap:balance}
+.card .hint{font-size:13px;color:var(--muted)}
+.card.back{border-color:var(--accent);background:var(--accent-soft)}
+.row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.btn{font:inherit;font-weight:700;border-radius:8px;padding:10px 16px;cursor:pointer;border:1.5px solid var(--accent);background:var(--surface);color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--surface)}
+.btn.no{border-color:var(--bad);color:var(--bad)}
+.btn.yes{border-color:var(--ok);color:var(--ok)}
+.meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.opts{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center}
+.opts label{display:flex;gap:6px;align-items:center;font-size:14px}
+select{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+.ask{font-family:var(--f-display);font-size:clamp(24px,7vw,34px);font-weight:700;text-align:center;text-wrap:balance}
+.answer{display:flex;gap:8px;width:100%;max-width:480px}
+.answer input{flex:1;min-width:0;font:inherit;font-size:18px;color:var(--ink);background:var(--field);border:1px solid var(--line);border-bottom:2px solid var(--accent);border-radius:6px 6px 0 0;padding:8px 10px}
+.fb{width:100%;max-width:480px;border-radius:8px;padding:10px 12px}
+.fb.ok{background:var(--ok-soft);color:var(--ink);border-left:4px solid var(--ok)}
+.fb.no{background:var(--bad-soft);color:var(--ink);border-left:4px solid var(--bad)}
+.done{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center;display:flex;flex-direction:column;gap:8px;align-items:center}
+.done .big{font-family:var(--f-display);font-size:44px;font-weight:700;font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:var(--muted);margin:0}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Inglés · Vocabulario de laboratorio · Lista oficial</span>
+    <h1>Lab Words: aprende las 50</h1>
+    <p class="sub">Primero <b>Aprender</b> (lee, escucha y fíjate en el truco), luego <b>Tarjetas</b> (las que no sabes vuelven a salir) y al final <b>Practicar</b> escribiéndolas. Tu progreso se guarda en este navegador.</p>
+  </header>
+
+  <div class="prog" aria-live="polite">
+    <div class="prog-top"><span id="pText">Sabes 0 de 50</span><span id="pSub">0 aprendiendo · 50 sin ver</span></div>
+    <div class="bar" aria-hidden="true"><i class="b-ok" id="bOk"></i><i class="b-mid" id="bMid"></i></div>
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="t-learn" aria-selected="true" type="button">1 · Aprender</button>
+    <button class="tab" role="tab" id="t-cards" aria-selected="false" type="button">2 · Tarjetas</button>
+    <button class="tab" role="tab" id="t-practice" aria-selected="false" type="button">3 · Practicar</button>
+  </div>
+
+  <section class="panel" id="p-learn" role="tabpanel" aria-labelledby="t-learn">
+    <div class="chips" id="groupChips" role="group" aria-label="Elegir grupo"></div>
+    <div id="learnList"></div>
+  </section>
+
+  <section class="panel" id="p-cards" role="tabpanel" aria-labelledby="t-cards" hidden>
+    <div class="opts">
+      <label for="cardDir">Mostrar primero:
+        <select id="cardDir"><option value="en">Inglés</option><option value="es">Español</option></select></label>
+      <label for="cardGroup">Grupo:
+        <select id="cardGroup"></select></label>
+    </div>
+    <div class="stage">
+      <div class="card" id="card" tabindex="0" role="button" aria-label="Dar la vuelta a la tarjeta"></div>
+      <div class="row" id="cardBtns"></div>
+      <span class="meta" id="cardMeta"></span>
+    </div>
+  </section>
+
+  <section class="panel" id="p-practice" role="tabpanel" aria-labelledby="t-practice" hidden>
+    <div class="opts">
+      <label for="prDir">Traducir:
+        <select id="prDir"><option value="es">Español → Inglés</option><option value="en">Inglés → Español</option></select></label>
+      <label for="prN">Palabras:
+        <select id="prN"><option value="10">10</option><option value="20">20</option><option value="50">Las 50</option></select></label>
+      <button class="btn" id="prStart" type="button">Empezar otra ronda</button>
+    </div>
+    <div class="stage" id="prStage"></div>
+  </section>
+  <p class="note">El botón 🔊 usa la voz en inglés de tu móvil u ordenador; si no suena, revisa el volumen o prueba en otro navegador.</p>
+</div>
+
+<script>
+const DATA = {"items": [{"n": 1, "en": "Pathologist", "es": "Patólogo", "ena": ["pathologist"], "esa": ["patologo", "patologa"], "p": "paZÓ-lo-chist", "t": "Path- (enfermedad) + -logist (el que estudia): el que estudia la enfermedad. Como «patólogo».", "e": "The pathologist studies the tissue under the microscope.", "g": "Personas y lugar"}, {"n": 2, "en": "Laboratory technician", "es": "Técnico de laboratorio", "ena": ["laboratory technician", "lab technician", "technician"], "esa": ["tecnico de laboratorio", "tecnica de laboratorio", "tecnico de lab"], "p": "la-BÓ-ra-tri tek-NÍ-shan", "t": "Technician = técnico. ¡Es lo que vas a ser tú!", "e": "The laboratory technician prepares the samples every morning.", "g": "Personas y lugar"}, {"n": 3, "en": "Laboratory", "es": "Laboratorio", "ena": ["laboratory", "lab"], "esa": ["laboratorio"], "p": "la-BÓ-ra-tri", "t": "En inglés británico se come una sílaba: «laBORatry». Abreviado: lab.", "e": "Our laboratory has two microscopes.", "g": "Personas y lugar"}, {"n": 4, "en": "Lab coat", "es": "Bata de laboratorio", "ena": ["lab coat", "laboratory coat"], "esa": ["bata de laboratorio", "bata"], "p": "lab kóut", "t": "Coat = abrigo. La bata es el «abrigo del lab».", "e": "Always wear a lab coat in the laboratory.", "g": "Protección y seguridad"}, {"n": 5, "en": "Gloves", "es": "Guantes", "ena": ["gloves"], "esa": ["guantes", "guante"], "p": "glavs", "t": "Suena como «glovs» con a. Siempre en plural, como «guantes».", "e": "She puts on her gloves before she touches the samples.", "g": "Protección y seguridad"}, {"n": 6, "en": "Lab bench", "es": "Poyata", "ena": ["lab bench", "bench", "laboratory bench"], "esa": ["poyata", "mesa de laboratorio", "mesa de trabajo"], "p": "lab bench", "t": "Bench = banco. La poyata es el «banco de trabajo» del lab.", "e": "The pipettes are on the lab bench.", "g": "Personas y lugar"}, {"n": 7, "en": "Fume hood", "es": "Campana de extracción", "ena": ["fume hood", "fume cupboard"], "esa": ["campana de extraccion", "campana extractora", "campana", "vitrina extractora", "campana de gases"], "p": "fium jud", "t": "Fume = humo, vapor · hood = capucha. Una «capucha para los humos».", "e": "We work with acids under the fume hood.", "g": "Protección y seguridad"}, {"n": 8, "en": "Biosafety cabinet", "es": "Cabina de seguridad biológica", "ena": ["biosafety cabinet", "biological safety cabinet"], "esa": ["cabina de seguridad biologica", "cabina de seguridad"], "p": "bái-o-SÉIF-ti CÁ-bi-net", "t": "Bio + safety (seguridad) + cabinet (armario/cabina). Se traduce casi palabra por palabra.", "e": "He is working with bacteria in the biosafety cabinet.", "g": "Protección y seguridad"}, {"n": 9, "en": "Microscope", "es": "Microscopio", "ena": ["microscope"], "esa": ["microscopio"], "p": "MÁI-cro-scoup", "t": "Micro (pequeño) + scope (mirar). Casi igual que en español.", "e": "We look at cells with a microscope.", "g": "Equipos"}, {"n": 10, "en": "Microtome", "es": "Micrótomo", "ena": ["microtome"], "esa": ["micrótomo"], "p": "MÁI-cro-toum", "t": "Micro + tome (cortar), como «tomo» de un libro cortado en partes.", "e": "The microtome cuts very thin sections of tissue.", "g": "Equipos"}, {"n": 11, "en": "Centrifuge", "es": "Centrífuga", "ena": ["centrifuge"], "esa": ["centrífuga"], "p": "SÉN-tri-fiuch", "t": "Centri- (centro) + -fuge (huir): todo «huye del centro» al girar.", "e": "We use the centrifuge to separate the blood.", "g": "Equipos"}, {"n": 12, "en": "Autoclave", "es": "Autoclave", "ena": ["autoclave"], "esa": ["autoclave"], "p": "Ó-to-kleiv", "t": "Igual que en español, pero se pronuncia «óto».", "e": "The autoclave sterilises the material with steam.", "g": "Equipos"}, {"n": 13, "en": "Fridge", "es": "Frigorífico", "ena": ["fridge"], "esa": ["frigorifico", "nevera", "frigo", "refrigerador"], "p": "frich", "t": "Fridge rima con «bridge». Es la forma corta de refrigerator.", "e": "Keep the reagents in the fridge.", "g": "Equipos"}, {"n": 14, "en": "Freezer", "es": "Congelador", "ena": ["freezer"], "esa": ["congelador"], "p": "FRÍ-ser", "t": "Freeze = congelar → freezer = congelador.", "e": "The samples are in the freezer at -80 degrees.", "g": "Equipos"}, {"n": 15, "en": "Oven", "es": "Estufa", "ena": ["oven"], "esa": ["estufa", "horno"], "p": "Á-ven", "t": "¡Falso amigo! En el lab, oven es la estufa (también «horno»).", "e": "We dry the glassware in the oven.", "g": "Equipos"}, {"n": 16, "en": "Water bath", "es": "Baño termostático", "ena": ["water bath"], "esa": ["baño termostatico", "baño", "baño maria", "baño de agua"], "p": "UÓ-ter baz", "t": "Water (agua) + bath (baño). «Baño de agua» → baño termostático.", "e": "The water bath is at 37 degrees.", "g": "Equipos"}, {"n": 17, "en": "Balance", "es": "Balanza", "ena": ["balance", "scale", "scales"], "esa": ["balanza"], "p": "BÁ-lans", "t": "¡Falso amigo! Aquí no es «equilibrio»: es la balanza.", "e": "She weighs the reagent on the balance.", "g": "Equipos"}, {"n": 18, "en": "Hot plate", "es": "Placa calefactora", "ena": ["hot plate", "hotplate"], "esa": ["placa calefactora"], "p": "jot pleit", "t": "Hot (caliente) + plate (placa). Literal: placa caliente.", "e": "Heat the solution on the hot plate.", "g": "Equipos"}, {"n": 19, "en": "Magnetic stirrer", "es": "Agitador magnético", "ena": ["magnetic stirrer"], "esa": ["agitador magnético"], "p": "mag-NÉ-tik STÉ-rer", "t": "Stir = remover → stirrer = el que remueve, con un imán (magnetic).", "e": "The magnetic stirrer mixes the solution.", "g": "Equipos"}, {"n": 20, "en": "Vortex mixer", "es": "Agitador vórtex", "ena": ["vortex mixer", "vortex"], "esa": ["agitador vortex", "vortex"], "p": "VÓR-tex MÍK-ser", "t": "Vortex (remolino) + mixer (mezclador). Hace un remolino en el tubo.", "e": "Mix the tube on the vortex mixer for five seconds.", "g": "Equipos"}, {"n": 21, "en": "pH meter", "es": "pHmetro", "ena": ["ph meter", "phmeter", "ph-meter"], "esa": ["phmetro", "ph metro", "medidor de ph"], "p": "pi eich MÍ-ter", "t": "Meter = medidor. Se dicen las letras: «pi-eich».", "e": "The pH meter measures how acid a solution is.", "g": "Equipos"}, {"n": 22, "en": "Bunsen burner", "es": "Mechero Bunsen", "ena": ["bunsen burner"], "esa": ["mechero bunsen", "mechero"], "p": "BÁN-sen BÉR-ner", "t": "Burner = quemador (burn = quemar). Bunsen es el apellido del inventor.", "e": "Be careful with the Bunsen burner.", "g": "Equipos"}, {"n": 23, "en": "Spectrophotometer", "es": "Espectrofotómetro", "ena": ["spectrophotometer"], "esa": ["espectrofotómetro"], "p": "spek-tro-fo-TÓ-mi-ter", "t": "Spectro (espectro) + photo (luz) + meter (medidor): mide la luz.", "e": "The spectrophotometer measures the concentration.", "g": "Equipos"}, {"n": 24, "en": "Flask", "es": "Matraz", "ena": ["flask"], "esa": ["matraz"], "p": "flask", "t": "Una palabra corta y nada parecida: flask = matraz. Piensa en «frasco».", "e": "Pour the solution into the flask.", "g": "Material de vidrio y medida"}, {"n": 25, "en": "Volumetric flask", "es": "Matraz aforado", "ena": ["volumetric flask"], "esa": ["matraz aforado"], "p": "vo-liu-MÉ-trik flask", "t": "Volumetric = de volumen → el matraz que mide un volumen exacto (aforado).", "e": "Use a volumetric flask to prepare the solution.", "g": "Material de vidrio y medida"}, {"n": 26, "en": "Erlenmeyer flask", "es": "Matraz Erlenmeyer", "ena": ["erlenmeyer flask", "erlenmeyer", "conical flask"], "esa": ["matraz erlenmeyer", "erlenmeyer"], "p": "ÉR-len-mai-er flask", "t": "Igual que en español; el apellido se dice «érlenmaier».", "e": "Shake the Erlenmeyer flask without splashing.", "g": "Material de vidrio y medida"}, {"n": 27, "en": "Graduated cylinder", "es": "Probeta", "ena": ["graduated cylinder", "measuring cylinder"], "esa": ["probeta"], "p": "GRÁ-chu-ei-tid SÍ-lin-der", "t": "Graduated (con rayas, graduado) + cylinder (cilindro). Un cilindro graduado = probeta.", "e": "Measure 50 ml with the graduated cylinder.", "g": "Material de vidrio y medida"}, {"n": 28, "en": "Beaker", "es": "Vaso de precipitados", "ena": ["beaker"], "esa": ["vaso de precipitados", "vaso de precipitado"], "p": "BÍ-ker", "t": "No se parece al español. Imagina un «vaso» con «pico» (beak = pico).", "e": "Heat the water in a beaker.", "g": "Material de vidrio y medida"}, {"n": 29, "en": "Burette", "es": "Bureta", "ena": ["burette", "buret"], "esa": ["bureta"], "p": "biu-RÉT", "t": "Casi igual que bureta; la fuerza va al final.", "e": "Open the tap of the burette slowly.", "g": "Material de vidrio y medida"}, {"n": 30, "en": "Pipette", "es": "Pipeta", "ena": ["pipette", "pipet"], "esa": ["pipeta"], "p": "pi-PÉT", "t": "Igual que pipeta, con doble t. La fuerza va al final.", "e": "Take 1 ml with the pipette.", "g": "Material de vidrio y medida"}, {"n": 31, "en": "Micropipette", "es": "Micropipeta", "ena": ["micropipette"], "esa": ["micropipeta"], "p": "mái-cro-pi-PÉT", "t": "Micro + pipette.", "e": "Change the tip of the micropipette for each sample.", "g": "Material de vidrio y medida"}, {"n": 32, "en": "Pipette tip", "es": "Punta de pipeta", "ena": ["pipette tip"], "esa": ["punta de pipeta", "punta"], "p": "pi-PÉT tip", "t": "Tip = punta. ¡Una muestra, una punta!", "e": "Throw away the pipette tip after each sample.", "g": "Material de vidrio y medida"}, {"n": 33, "en": "Pasteur pipette", "es": "Pipeta Pasteur", "ena": ["pasteur pipette"], "esa": ["pipeta pasteur"], "p": "pas-TÉR pi-PÉT", "t": "La pipeta del señor Pasteur, la de chupete.", "e": "Add two drops with a Pasteur pipette.", "g": "Material de vidrio y medida"}, {"n": 34, "en": "Test tube", "es": "Tubo de ensayo", "ena": ["test tube", "test-tube"], "esa": ["tubo de ensayo"], "p": "test tiub", "t": "Test (prueba) + tube (tubo) = tubo de ensayo.", "e": "Put the sample in a test tube.", "g": "Material de vidrio y medida"}, {"n": 35, "en": "Test tube rack", "es": "Gradilla", "ena": ["test tube rack", "test-tube rack", "tube rack", "rack"], "esa": ["gradilla"], "p": "test tiub rak", "t": "Rack = estante, soporte. El soporte de los tubos = gradilla.", "e": "Put the test tubes in the test tube rack.", "g": "Utensilios y otros"}, {"n": 36, "en": "Funnel", "es": "Embudo", "ena": ["funnel"], "esa": ["embudo"], "p": "FÁ-nel", "t": "Funnel suena a «fanel». Piensa en la forma de un embudo de humo (funnel = chimenea de barco).", "e": "Use a funnel to pour the liquid into the flask.", "g": "Utensilios y otros"}, {"n": 37, "en": "Filter paper", "es": "Papel de filtro", "ena": ["filter paper"], "esa": ["papel de filtro"], "p": "FÍL-ter PÉI-per", "t": "Paper = papel. Literal: papel de filtro (en inglés va al revés).", "e": "Put the filter paper in the funnel.", "g": "Utensilios y otros"}, {"n": 38, "en": "Glass rod", "es": "Varilla de vidrio", "ena": ["glass rod", "stirring rod"], "esa": ["varilla de vidrio", "varilla"], "p": "glas rod", "t": "Rod = varilla, barra. Glass rod = varilla de vidrio.", "e": "Stir the solution with a glass rod.", "g": "Utensilios y otros"}, {"n": 39, "en": "Spatula", "es": "Espátula", "ena": ["spatula"], "esa": ["espátula"], "p": "SPÁ-chu-la", "t": "Igual que espátula.", "e": "Take a little powder with the spatula.", "g": "Utensilios y otros"}, {"n": 40, "en": "Watch glass", "es": "Vidrio de reloj", "ena": ["watch glass"], "esa": ["vidrio de reloj"], "p": "uóch glas", "t": "Watch = reloj (de pulsera) + glass = cristal: el cristal del reloj.", "e": "Weigh the solid on a watch glass.", "g": "Material de vidrio y medida"}, {"n": 41, "en": "Wash bottle", "es": "Frasco lavador", "ena": ["wash bottle"], "esa": ["frasco lavador"], "p": "uósh BÓ-tel", "t": "Wash = lavar + bottle = botella. La botella para lavar = frasco lavador.", "e": "Rinse the beaker with the wash bottle.", "g": "Material de vidrio y medida"}, {"n": 42, "en": "Reagent bottle", "es": "Frasco de reactivos", "ena": ["reagent bottle"], "esa": ["frasco de reactivos", "frasco de reactivo"], "p": "ri-ÉI-chent BÓ-tel", "t": "Reagent (reactivo) + bottle (frasco).", "e": "Read the label on the reagent bottle.", "g": "Material de vidrio y medida"}, {"n": 43, "en": "Petri dish", "es": "Placa de Petri", "ena": ["petri dish", "petri plate"], "esa": ["placa de petri", "placa petri"], "p": "PÍ-tri dish", "t": "Dish = plato. El plato del señor Petri.", "e": "Bacteria grow in a Petri dish.", "g": "Utensilios y otros"}, {"n": 44, "en": "Slide", "es": "Portaobjetos", "ena": ["slide", "microscope slide", "glass slide"], "esa": ["portaobjetos"], "p": "slaid", "t": "Slide = deslizar: el portaobjetos «se desliza» en el microscopio.", "e": "Put a drop on the slide.", "g": "Utensilios y otros"}, {"n": 45, "en": "Coverslip", "es": "Cubreobjetos", "ena": ["coverslip", "cover slip", "cover glass"], "esa": ["cubreobjetos"], "p": "CÁ-ver-slip", "t": "Cover (tapar) + slip (lámina): la lámina que tapa = cubreobjetos.", "e": "Cover the sample with a coverslip.", "g": "Utensilios y otros"}, {"n": 46, "en": "Scalpel", "es": "Bisturí", "ena": ["scalpel"], "esa": ["bisturí"], "p": "SKÁL-pel", "t": "Parecido a «escalpelo», otro nombre del bisturí.", "e": "The pathologist cuts the tissue with a scalpel.", "g": "Utensilios y otros"}, {"n": 47, "en": "Forceps", "es": "Pinzas", "ena": ["forceps", "tweezers"], "esa": ["pinzas", "pinza"], "p": "FÓR-seps", "t": "Fórceps también existe en español: las pinzas.", "e": "Hold the tissue with the forceps.", "g": "Utensilios y otros"}, {"n": 48, "en": "Scissors", "es": "Tijeras", "ena": ["scissors"], "esa": ["tijeras", "tijera"], "p": "SÍ-sors", "t": "Siempre en plural, como «tijeras». Se dice «sísors».", "e": "Cut the filter paper with scissors.", "g": "Utensilios y otros"}, {"n": 49, "en": "Syringe", "es": "Jeringa", "ena": ["syringe"], "esa": ["jeringa", "jeringuilla"], "p": "si-RÍNCH", "t": "Suena a «siringe»: jeringa.", "e": "Take the blood with a syringe.", "g": "Utensilios y otros"}, {"n": 50, "en": "Needle", "es": "Aguja", "ena": ["needle"], "esa": ["aguja"], "p": "NÍ-del", "t": "Needle rima con «beetle». La aguja va en la syringe.", "e": "Put the needle in the sharps container.", "g": "Utensilios y otros"}], "groups": ["Personas y lugar", "Protección y seguridad", "Equipos", "Material de vidrio y medida", "Utensilios y otros"]};
+const W = DATA.items, GROUPS = DATA.groups;
+const KEY = "lab-words-learn-v1";
+let st = { box: {} }; // box: 0 nuevo, 1 aprendiendo, 2 casi, 3 sabida
+try { const s = JSON.parse(localStorage.getItem(KEY) || "null"); if (s && s.box) st = s; } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
+const box = n => st.box[n] || 0;
+const $ = id => document.getElementById(id);
+const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[’‘`´]/g, "'").replace(/[.?!,;:]/g, "").replace(/\s+/g, " ").trim();
+
+/* voz */
+let voice = null;
+const canSpeak = (() => { try { return "speechSynthesis" in window && typeof SpeechSynthesisUtterance === "function"; } catch (e) { return false; } })();
+function pickVoice() { try { const v = speechSynthesis.getVoices(); voice = v.find(x => /en-GB/i.test(x.lang)) || v.find(x => /^en/i.test(x.lang)) || null; } catch (e) {} }
+if (canSpeak) { pickVoice(); try { speechSynthesis.onvoiceschanged = pickVoice; } catch (e) {} }
+function say(text) { if (!canSpeak) return; try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = voice ? voice.lang : "en-GB"; if (voice) u.voice = voice; u.rate = 0.85; speechSynthesis.speak(u); } catch (e) {} }
+function sayBtn(text) { const b = document.createElement("button"); b.className = "say"; b.type = "button"; b.textContent = "🔊"; b.setAttribute("aria-label", "Escuchar " + text); b.hidden = !canSpeak; b.onclick = e => { e.stopPropagation(); say(text); }; return b; }
+
+function renderProgress() {
+  const n3 = W.filter(w => box(w.n) === 3).length, mid = W.filter(w => box(w.n) === 1 || box(w.n) === 2).length;
+  $("pText").textContent = "Sabes " + n3 + " de 50";
+  $("pSub").textContent = mid + " aprendiendo · " + (50 - n3 - mid) + " sin ver";
+  $("bOk").style.width = (n3 / 50 * 100) + "%"; $("bMid").style.width = (mid / 50 * 100) + "%";
+}
+const STATE = ["Nueva", "Aprendiendo", "Casi", "La sabes ✓"];
+
+/* APRENDER */
+let learnGroup = "Todas";
+function renderLearn() {
+  const chips = $("groupChips"); chips.innerHTML = "";
+  ["Todas", ...GROUPS].forEach(g => { const c = document.createElement("button"); c.type = "button"; c.className = "chip"; c.textContent = g; c.setAttribute("aria-pressed", String(learnGroup === g)); c.onclick = () => { learnGroup = g; renderLearn(); }; chips.appendChild(c); });
+  const host = $("learnList"); host.innerHTML = "";
+  GROUPS.filter(g => learnGroup === "Todas" || learnGroup === g).forEach(g => {
+    const h = document.createElement("h2"); h.className = "grp"; h.textContent = g; host.appendChild(h);
+    const list = document.createElement("div"); list.className = "list";
+    W.filter(w => w.g === g).forEach(w => {
+      const c = document.createElement("article"); c.className = "w";
+      const top = document.createElement("div"); top.className = "w-top";
+      const left = document.createElement("div");
+      left.innerHTML = '<div class="w-n">Nº ' + w.n + '</div>';
+      const en = document.createElement("div"); en.className = "w-en"; en.textContent = w.en; left.appendChild(en);
+      top.append(left, sayBtn(w.en));
+      const es = document.createElement("div"); es.className = "w-es"; es.textContent = "= " + w.es;
+      const p = document.createElement("div"); p.className = "w-p"; p.textContent = "Se dice: «" + w.p + "»";
+      const t = document.createElement("div"); t.className = "w-t"; t.innerHTML = "<b>Truco:</b> "; t.append(document.createTextNode(w.t));
+      const e = document.createElement("div"); e.className = "w-e"; e.textContent = "“" + w.e + "”";
+      const s = document.createElement("div"); s.className = "w-state"; s.textContent = STATE[box(w.n)]; s.style.color = box(w.n) === 3 ? "var(--ok)" : "var(--muted)";
+      c.append(top, es, p, t, e, s); list.appendChild(c);
+    });
+    host.appendChild(list);
+  });
+}
+
+/* TARJETAS (repetición: las que fallas vuelven antes) */
+let deck = [], cur = null, flipped = false;
+function buildDeck() {
+  const g = $("cardGroup").value;
+  const pool = W.filter(w => g === "Todas" || w.g === g);
+  // primero las que no sabes; las sabidas al final
+  deck = pool.slice().sort((a, b) => box(a.n) - box(b.n) || Math.random() - .5);
+  next();
+}
+function next() { flipped = false; cur = deck.shift() || null; renderCard(); }
+function renderCard() {
+  const card = $("card"), btns = $("cardBtns"); card.innerHTML = ""; btns.innerHTML = ""; card.classList.remove("back");
+  if (!cur) { card.innerHTML = '<div class="big">¡Mazo terminado!</div><div class="hint">Pulsa «Barajar otra vez» para repasar.</div>'; const b = document.createElement("button"); b.className = "btn primary"; b.type = "button"; b.textContent = "Barajar otra vez"; b.onclick = buildDeck; btns.appendChild(b); $("cardMeta").textContent = ""; return; }
+  const dir = $("cardDir").value, front = dir === "en" ? cur.en : cur.es, back = dir === "en" ? cur.es : cur.en;
+  const big = document.createElement("div"); big.className = "big"; big.textContent = flipped ? back : front;
+  card.appendChild(big);
+  if (flipped) {
+    card.classList.add("back");
+    const p = document.createElement("div"); p.className = "hint"; p.textContent = cur.en + " · se dice «" + cur.p + "»";
+    const t = document.createElement("div"); t.className = "hint"; t.textContent = "Truco: " + cur.t;
+    card.append(p, t, sayBtn(cur.en));
+    const no = document.createElement("button"); no.className = "btn no"; no.type = "button"; no.textContent = "✗ No la sabía";
+    no.onclick = () => { st.box[cur.n] = 1; save(); deck.splice(Math.min(3, deck.length), 0, cur); renderProgress(); next(); };
+    const yes = document.createElement("button"); yes.className = "btn yes"; yes.type = "button"; yes.textContent = "✓ La sabía";
+    yes.onclick = () => { st.box[cur.n] = Math.min(3, box(cur.n) + (box(cur.n) === 0 ? 3 : 1)); save(); renderProgress(); next(); };
+    btns.append(no, yes);
+  } else {
+    const h = document.createElement("div"); h.className = "hint"; h.textContent = "Piensa la respuesta y toca la tarjeta para darle la vuelta";
+    card.appendChild(h);
+    if (dir === "en") card.appendChild(sayBtn(cur.en));
+    const f = document.createElement("button"); f.className = "btn primary"; f.type = "button"; f.textContent = "Dar la vuelta"; f.onclick = flip; btns.appendChild(f);
+  }
+  $("cardMeta").textContent = "Quedan " + (deck.length + 1) + " en el mazo · Nº " + cur.n + " · " + STATE[box(cur.n)];
+}
+function flip() { if (!cur) return; flipped = !flipped; renderCard(); }
+$("card").addEventListener("click", flip);
+$("card").addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); flip(); } });
+
+/* PRACTICAR */
+let round = [], ri = 0, hits = 0, answered = false;
+function startRound() {
+  const n = +$("prN").value;
+  const pool = W.slice().sort((a, b) => box(a.n) - box(b.n) || Math.random() - .5);
+  round = pool.slice(0, n).sort(() => Math.random() - .5); ri = 0; hits = 0; renderQ();
+}
+function renderQ() {
+  const host = $("prStage"); host.innerHTML = ""; answered = false;
+  if (ri >= round.length) {
+    const d = document.createElement("div"); d.className = "done";
+    d.innerHTML = '<div class="big">' + hits + ' / ' + round.length + '</div><div>' + (hits === round.length ? "¡Perfecto! Prueba ahora en la otra dirección." : "Las que fallaste vuelven antes en las Tarjetas.") + '</div>';
+    const b = document.createElement("button"); b.className = "btn primary"; b.type = "button"; b.textContent = "Otra ronda"; b.onclick = startRound; d.appendChild(b); host.appendChild(d); return;
+  }
+  const w = round[ri], dir = $("prDir").value;
+  const meta = document.createElement("span"); meta.className = "meta"; meta.textContent = "Palabra " + (ri + 1) + " de " + round.length + " · aciertos: " + hits;
+  const ask = document.createElement("div"); ask.className = "ask"; ask.textContent = dir === "es" ? w.es : w.en;
+  const form = document.createElement("form"); form.className = "answer";
+  const inp = document.createElement("input"); inp.id = "prInput"; inp.type = "text"; inp.autocomplete = "off"; inp.spellcheck = false; inp.setAttribute("autocapitalize", "off"); inp.setAttribute("aria-label", "Tu respuesta"); inp.placeholder = dir === "es" ? "Escribe en inglés" : "Escribe en español";
+  const b = document.createElement("button"); b.className = "btn primary"; b.type = "submit"; b.textContent = "Comprobar";
+  form.append(inp, b);
+  const fb = document.createElement("div"); fb.hidden = true;
+  form.onsubmit = e => {
+    e.preventDefault();
+    if (answered) { ri++; renderQ(); return; }
+    answered = true;
+    const acc = (dir === "es" ? w.ena : w.esa).map(norm), ok = acc.includes(norm(inp.value));
+    if (ok) { hits++; st.box[w.n] = Math.min(3, box(w.n) + 1); } else { st.box[w.n] = 1; }
+    save(); renderProgress();
+    fb.hidden = false; fb.className = "fb " + (ok ? "ok" : "no");
+    fb.textContent = (ok ? "✓ ¡Bien! " : "✗ Era: ") + (dir === "es" ? w.en : w.es) + " · " + w.en + " se dice «" + w.p + "»";
+    fb.appendChild(sayBtn(w.en)); fb.lastChild.style.marginLeft = "8px";
+    b.textContent = "Siguiente →"; inp.readOnly = true; b.focus();
+    if (ok) say(w.en);
+  };
+  host.append(meta, ask, form, fb);
+  setTimeout(() => { try { inp.focus({ preventScroll: true }); } catch (e) {} }, 0);
+}
+$("prStart").onclick = startRound; $("prDir").onchange = startRound; $("prN").onchange = startRound;
+
+/* pestañas */
+const TABS = { learn: "p-learn", cards: "p-cards", practice: "p-practice" };
+function show(t) {
+  Object.entries(TABS).forEach(([k, p]) => { $(p).hidden = k !== t; $("t-" + k).setAttribute("aria-selected", String(k === t)); });
+  if (t === "learn") renderLearn();
+  if (t === "cards" && !cur && !deck.length) buildDeck(); else if (t === "cards") renderCard();
+  if (t === "practice" && !round.length) startRound();
+}
+Object.keys(TABS).forEach(k => $("t-" + k).onclick = () => show(k));
+$("cardGroup").innerHTML = ["Todas", ...GROUPS].map(g => '<option value="' + g + '">' + g + '</option>').join("");
+$("cardGroup").onchange = buildDeck; $("cardDir").onchange = renderCard;
+renderProgress(); renderLearn();
+</script>
+
+</body>
+</html>

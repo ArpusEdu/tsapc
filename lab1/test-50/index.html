@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){var a=document.createElement("a");a.className="mc-back";a.href="../../";a.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(a,document.body.firstChild)});</script>
+</head>
+<body>
+<title>Test de Laboratorio U1</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: una columna estrecha tipo "ficha de prácticas": cabecera con marcador, tarjeta de pregunta, navegación por puntos */
+:root{
+  --bg:#eef3f3; --surface:#ffffff; --ink:#14232a; --muted:#5b6d73; --line:#d3dfe0;
+  --accent:#0d6e6e; --accent-soft:#d6ecea; --ok:#15803d; --ok-soft:#dcf3e3; --bad:#c2410c; --bad-soft:#fde4d6;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1719; --surface:#172327; --ink:#e4eeef; --muted:#93a7ac; --line:#2a3a3f;
+  --accent:#4fc4bd; --accent-soft:#163a3a; --ok:#4ade80; --ok-soft:#173826; --bad:#fb923c; --bad-soft:#3d2414; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1719; --surface:#172327; --ink:#e4eeef; --muted:#93a7ac; --line:#2a3a3f;
+  --accent:#4fc4bd; --accent-soft:#163a3a; --ok:#4ade80; --ok-soft:#173826; --bad:#fb923c; --bad-soft:#3d2414; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:16px}
+header{display:flex;flex-direction:column;gap:6px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(26px,6vw,36px);line-height:1.1;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0;max-width:60ch}
+.bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;font-family:var(--f-mono);font-size:13px;font-variant-numeric:tabular-nums}
+.score{display:flex;gap:12px}
+.score span b{font-weight:500}
+.s-ok{color:var(--ok)} .s-bad{color:var(--bad)} .s-left{color:var(--muted)}
+.progress{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);width:0;transition:width .25s}
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:5px 10px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:14px}
+.meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.q{font-family:var(--f-display);font-weight:600;font-size:clamp(18px,4.4vw,22px);line-height:1.3;margin:0;text-wrap:balance}
+.opts{display:flex;flex-direction:column;gap:8px;list-style:none;margin:0;padding:0}
+.opt{width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:11px 12px;display:grid;grid-template-columns:28px 1fr;gap:8px;align-items:start;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt:focus-visible,.chip:focus-visible,.btn:focus-visible,.dot:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.opt .l{font-family:var(--f-mono);font-weight:500;color:var(--muted)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--ok-soft);border-color:var(--ok)}
+.opt.right .l{color:var(--ok)}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad)}
+.opt.wrong .l{color:var(--bad)}
+.fb{border-left:4px solid var(--ok);background:var(--ok-soft);padding:10px 12px;border-radius:0 8px 8px 0;display:flex;flex-direction:column;gap:2px}
+.fb.no{border-color:var(--bad);background:var(--bad-soft)}
+.fb strong{font-family:var(--f-display)}
+.fb small{font-family:var(--f-mono);color:var(--muted)}
+.nav{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap}
+.btn{font:inherit;font-weight:700;border-radius:8px;padding:10px 16px;cursor:pointer;border:1.5px solid var(--accent);background:var(--surface);color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--surface)}
+.btn:disabled{opacity:.4;cursor:default}
+.dots{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:6px}
+.dot{font-family:var(--f-mono);font-size:12px;font-variant-numeric:tabular-nums;height:32px;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
+.dot.ok{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.dot.no{background:var(--bad-soft);border-color:var(--bad);color:var(--bad)}
+.dot.cur{outline:2px solid var(--accent);outline-offset:1px;color:var(--ink)}
+.section-title{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:4px 0 0}
+.result{display:flex;flex-direction:column;gap:12px}
+.big{font-family:var(--f-display);font-weight:800;font-size:clamp(40px,12vw,64px);line-height:1;font-variant-numeric:tabular-nums}
+.verdict{font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+td,th{text-align:left;padding:6px 4px;border-bottom:1px solid var(--line)}
+th{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:500}
+.tip{font-size:14px;color:var(--muted)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Técnicas Generales de Laboratorio · Unidad 1</span>
+    <h1>Test de 50 preguntas</h1>
+    <p class="sub">Elige una opción y verás al momento si es correcta, por qué y de qué diapositiva sale. Tu progreso se guarda en este navegador.</p>
+  </header>
+
+  <div class="bar" aria-live="polite">
+    <div class="score">
+      <span class="s-ok">✔ <b id="nOk">0</b></span>
+      <span class="s-bad">✘ <b id="nBad">0</b></span>
+      <span class="s-left">Sin responder: <b id="nLeft">50</b></span>
+    </div>
+    <span id="pos">Pregunta 1 de 50</span>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+
+  <div class="filters" id="filters" role="group" aria-label="Filtrar por bloque"></div>
+
+  <section class="card" id="card" aria-live="polite"></section>
+
+  <div class="nav">
+    <button class="btn" id="prev" type="button">← Anterior</button>
+    <button class="btn primary" id="next" type="button">Siguiente →</button>
+  </div>
+
+  <p class="section-title">Ir a una pregunta</p>
+  <div class="dots" id="dots"></div>
+
+  <div class="nav">
+    <button class="btn" id="retry" type="button">Repetir solo las falladas</button>
+    <button class="btn" id="results" type="button">Ver resultado</button>
+    <button class="btn" id="reset" type="button">Empezar de cero</button>
+  </div>
+  <p class="tip" id="confirmMsg" hidden></p>
+</div>
+
+<script>
+const Q = [{"n": 1, "s": "Materiales", "b": "Bloque 1", "q": "¿Cuál es uno de los objetivos de la unidad?", "o": ["Diagnosticar enfermedades", "Fabricar reactivos", "Reparar microscopios", "Determinar los tipos de agua y sus métodos de obtención"], "a": 3, "e": "Identificar material, conocer la limpieza, determinar el agua, distinguir reactivos, reconocer equipos e interpretar PNT.", "d": 3}, {"n": 2, "s": "Materiales", "b": "Bloque 1", "q": "El material de plástico se caracteriza por ser:", "o": ["Económico y desechable", "Poroso y resistente al calor", "Material de soporte", "Inerte y resistente a la temperatura"], "a": 0, "e": "Plástico = económico y desechable.", "d": 5}, {"n": 3, "s": "Materiales", "b": "Bloque 1", "q": "¿Cuál NO es una propiedad del vidrio según la profe?", "o": ["Transparente", "Desechable", "Inerte", "Moldeable"], "a": 1, "e": "Lo desechable es el plástico; el vidrio no es desechable.", "d": 6}, {"n": 4, "s": "Materiales", "b": "Bloque 1", "q": "¿Qué tipo de vidrio se reserva para ensayos espectrofotométricos porque deja pasar la luz UV?", "o": ["Policarbonato", "Borosilicato", "Cuarzo", "Aluminosilicato"], "a": 2, "e": "El cuarzo (óxido de silicio) es caro y deja pasar la UV.", "d": 7}, {"n": 5, "s": "Materiales", "b": "Bloque 1", "q": "¿Qué plástico contiene hidrógeno y carbono con oxígeno (por ejemplo, bisfenol)?", "o": ["Policarbonato", "PE / PP", "PTFE (teflón)", "PVC"], "a": 0, "e": "Policarbonatos: H y C con oxígeno.", "d": 8}, {"n": 6, "s": "Materiales", "b": "Bloque 1", "q": "¿Qué ácido puede atacar al vidrio?", "o": ["Ácido acético", "Ácido fluorhídrico (HF)", "Ácido clorhídrico (HCl)", "Ácido sulfúrico (H₂SO₄)"], "a": 1, "e": "El HF ataca el vidrio.", "d": 9}, {"n": 7, "s": "Materiales", "b": "Bloque 1", "q": "¿Cuál es una DESVENTAJA del plástico?", "o": ["Tiene poca adsorción/desorción", "Es demasiado caro", "Suele ser opaco y puede deformarse con grandes cambios de temperatura", "Lo ataca el HF"], "a": 2, "e": "Plástico: opaco, se deforma, mucha adsorción.", "d": 9}, {"n": 8, "s": "Materiales", "b": "Bloque 1", "q": "El material volumétrico es el preparado para:", "o": ["Servir de soporte", "Cultivar microorganismos", "Calentar a altas temperaturas", "Medir y transferir volúmenes"], "a": 3, "e": "Volumétrico = medir y transferir volúmenes.", "d": 10}, {"n": 9, "s": "Materiales", "b": "Bloque 1", "q": "La pipeta sirve para transferir un volumen pequeño de líquido de forma:", "o": ["Aproximada", "Solo cualitativa", "Precisa y exacta", "Sin medir"], "a": 2, "e": "Precisa y exacta: desde la Pasteur a la electrónica.", "d": 11}, {"n": 10, "s": "Materiales", "b": "Bloque 1", "q": "Matraz con boca de vacío y saliente para goma, útil para filtrar disoluciones:", "o": ["Base redonda", "Erlenmeyer", "Kitasato", "Aforado"], "a": 2, "e": "Kitasato: salida lateral para vacío; filtrar.", "d": 13}, {"n": 11, "s": "Materiales", "b": "Bloque 1", "q": "En las pipetas manuales, la aspiración y expulsión se hace:", "o": ["De forma electrónica", "Con la mano, ayudándose de peras o pipeteadores", "Mediante un émbolo", "Con vacío"], "a": 1, "e": "Manuales: con la mano y peras o pipeteadores.", "d": 15}, {"n": 12, "s": "Materiales", "b": "Bloque 1", "q": "Las pipetas manuales de vidrio:", "o": ["Se tiran tras usarlas", "Nunca se lavan", "Se lavan cada vez que se utilizan", "Se esterilizan siempre en autoclave"], "a": 2, "e": "Suelen ser de vidrio y se lavan cada vez.", "d": 15}, {"n": 13, "s": "Materiales", "b": "Bloque 1", "q": "La pipeta electrónica:", "o": ["No es volumétrica", "Funciona con émbolo manual", "Funciona con pera", "Aspira y expulsa de modo electrónico, sin intervención humana"], "a": 3, "e": "Electrónica: sin intervención humana.", "d": 16}, {"n": 14, "s": "Materiales", "b": "Bloque 1", "q": "El vaso de precipitados:", "o": ["Es volumétrico porque está graduado", "Está graduado, pero no es volumétrico", "Sirve para medir con exactitud", "Tiene una llave al final"], "a": 1, "e": "Se usa para calentar, mezclar sin mucha exactitud, retener…", "d": 20}, {"n": 15, "s": "Materiales", "b": "Bloque 1", "q": "Los tubos de ensayo:", "o": ["Se usan para medir volúmenes exactos", "Son siempre de porcelana", "Siempre están graduados", "Normalmente no están graduados"], "a": 3, "e": "Existen graduados, pero lo normal es que no lo estén.", "d": 21}, {"n": 16, "s": "Materiales", "b": "Bloque 1", "q": "¿Qué material transforma a fase líquida los gases generados en la destilación?", "o": ["Desecador", "Tubo refrigerante", "Vidrio de reloj", "Kitasato"], "a": 1, "e": "Tubo refrigerante.", "d": 23}, {"n": 17, "s": "Materiales", "b": "Bloque 1", "q": "¿Para qué sirve el termómetro en el laboratorio?", "o": ["Para medir la concentración", "Para conocer la temperatura de la sustancia de estudio", "Para medir el pH", "Para medir la densidad"], "a": 1, "e": "Termómetro.", "d": 24}, {"n": 18, "s": "Materiales", "b": "Bloque 1", "q": "¿Para qué sirve la placa Petri?", "o": ["Para el cultivo de colonias de microorganismos", "Para filtrar", "Para observar muestras al microscopio", "Para pesar sólidos"], "a": 0, "e": "Placa Petri: redonda con tapa, cultivo de colonias.", "d": 26}, {"n": 19, "s": "Materiales", "b": "Bloque 1", "q": "El embudo Büchner sirve para:", "o": ["Condensar gases", "Calcinar sustancias", "Filtrar sustancias con vacío", "Trasvasar líquidos sin filtrar"], "a": 2, "e": "Büchner: filtra con vacío (porcelana).", "d": 29}, {"n": 20, "s": "Materiales", "b": "Bloque 1", "q": "¿Cuál de estos NO es material de metal de soporte según la profe?", "o": ["Nuez", "Trípode", "Gradilla", "Vidrio de reloj"], "a": 3, "e": "Metal: aros, trípodes, nuez, pinzas, soportes, espátulas, gradillas, escobillas.", "d": 30}, {"n": 21, "s": "Limpieza, desinfección y esterilización", "b": "Bloque 2", "q": "La precisión de una medida es:", "o": ["La marca de un volumen concreto", "El error del instrumento", "El valor verdadero o real de la medida", "Su reproducibilidad, aunque no implique que sea el valor verdadero"], "a": 3, "e": "Precisión = reproducibilidad.", "d": 31}, {"n": 22, "s": "Limpieza, desinfección y esterilización", "b": "Bloque 2", "q": "Según la profe, la limpieza del laboratorio:", "o": ["Es igual que la limpieza de casa", "Es un procedimiento de trabajo por ti, por tus compañeros y por los resultados; forma parte de un protocolo", "La hace solo el personal de limpieza", "Solo importa si hay microorganismos"], "a": 1, "e": "No es la limpieza de tu casa.", "d": 33}, {"n": 23, "s": "Limpieza, desinfección y esterilización", "b": "Bloque 2", "q": "Dentro de la limpieza a nivel personal, la ropa del laboratorio:", "o": ["Se lava en casa", "Se lava en el propio centro", "Se tira tras cada uso", "No hace falta lavarla"], "a": 1, "e": "Lavado agresivo en el centro: evita traer contaminantes de casa.", "d": 36}, {"n": 24, "s": "Limpieza, desinfección y esterilización", "b": "Bloque 2", "q": "En la limpieza del material, antes de usar las máquinas de lavado automáticas conviene:", "o": ["Pintarlo", "Secarlo en estufa", "Esterilizarlo", "Enjuagar el material"], "a": 3, "e": "Conviene enjuagar antes de introducirlo.", "d": 36}, {"n": 25, "s": "Limpieza, desinfección y esterilización", "b": "Bloque 2", "q": "En la actividad de clase, el 'alcohol etílico al 70 %' corresponde a:", "o": ["Esterilización", "Limpieza", "Desinfección", "Ninguna"], "a": 2, "e": "Agente químico desinfectante.", "d": 37}, {"n": 26, "s": "Limpieza, desinfección y esterilización", "b": "Bloque 2", "q": "En la actividad de clase, los agentes químicos como el hipoclorito de sodio, el etanol o el peróxido de hidrógeno son de:", "o": ["Ninguna de las tres", "Esterilización", "Limpieza", "Desinfección"], "a": 3, "e": "Desinfección (la radiación ultravioleta también se suele poner aquí).", "d": 37}, {"n": 27, "s": "Limpieza, desinfección y esterilización", "b": "Bloque 2", "q": "La esterilización más habitual se hace con:", "o": ["Agua y jabón", "Alcohol al 70 %", "Calor húmedo en autoclave", "Radiación UV"], "a": 2, "e": "Autoclave: calor húmedo a alta presión.", "d": 39}, {"n": 28, "s": "El agua", "b": "Bloque 3", "q": "¿Por qué no se usa agua corriente en el laboratorio?", "o": ["Porque el agua apta para el consumo contiene sales", "Porque tiene pH ácido", "Porque es más cara", "Porque contiene esporas siempre"], "a": 0, "e": "Agua del grifo = sales → interacciones químicas.", "d": 42}, {"n": 29, "s": "El agua", "b": "Bloque 3", "q": "¿Qué tipo de agua es la que MÁS se consume en los experimentos analíticos?", "o": ["Tipo IV", "Tipo I", "Tipo III", "Tipo II"], "a": 3, "e": "Tipo II (analítica): la más consumida.", "d": 43}, {"n": 30, "s": "El agua", "b": "Bloque 3", "q": "¿Qué agua tiene un pH entre 5 y 8 y se usa en lavavajillas y autoclave?", "o": ["Tipo IV", "Tipo I", "Tipo II", "Tipo III"], "a": 0, "e": "Tipo IV: la menos pura.", "d": 44}, {"n": 31, "s": "El agua", "b": "Bloque 3", "q": "La destilación separa el agua por:", "o": ["Carbón activo", "Su punto de ebullición", "Intercambio iónico", "Tamaño de la partícula"], "a": 1, "e": "Calentar → vapor → condensar.", "d": 45}, {"n": 32, "s": "El agua", "b": "Bloque 3", "q": "La destilación deja el agua libre de:", "o": ["Nada", "Solo sales", "Solo partículas grandes", "Impurezas no volátiles, materia orgánica y bacterias"], "a": 3, "e": "Se calienta, se evapora y se condensa.", "d": 45}, {"n": 33, "s": "Reactivos", "b": "Bloque 4", "q": "¿Cuál de estos compuestos es ORGÁNICO?", "o": ["CH₃OH (metanol)", "H₂O", "HCl", "NaOH"], "a": 0, "e": "Lleva carbono. También COOH (grupo carboxilo de los ácidos orgánicos).", "d": 49}, {"n": 34, "s": "Reactivos", "b": "Bloque 4", "q": "Según su funcionalidad, el NaOH es:", "o": ["Un disolvente", "Una sal", "Una base", "Un ácido"], "a": 2, "e": "Hidróxido de sodio = base.", "d": 51}, {"n": 35, "s": "Reactivos", "b": "Bloque 4", "q": "¿Cuál de estos es una BASE según la profe?", "o": ["Fluoruro potásico (KF)", "Ácido sulfúrico (H₂SO₄)", "Hidróxido de amonio (NH₄OH)", "Etanol"], "a": 2, "e": "Bases: NaOH, NH₄OH.", "d": 51}, {"n": 36, "s": "Reactivos", "b": "Bloque 4", "q": "En la etiqueta de un reactivo SÓLIDO, la pureza viene dada por:", "o": ["Peso del compuesto puro / peso total", "El pH", "La densidad", "Volumen del compuesto puro / volumen total"], "a": 0, "e": "Sólido → masa; líquido y gas → volumen.", "d": 54}, {"n": 37, "s": "Reactivos", "b": "Bloque 4", "q": "¿Qué reactivo de la tabla de grupos es un colorante?", "o": ["Metanol", "Glutaraldehído", "Alcohol isopropílico", "Azul de metileno"], "a": 3, "e": "Colorantes: hematoxilina, eosina, azul de metileno. Fijadores: formol, glutaraldehído.", "d": 55}, {"n": 38, "s": "Reactivos", "b": "Bloque 4", "q": "Según la profe, el etanol en el procesado de tejidos:", "o": ["Tiñe los núcleos", "Da consistencia", "Fija y deshidrata", "Aclara y hace transparente el tejido"], "a": 2, "e": "Etanol: fija y deshidrata.", "d": 56}, {"n": 39, "s": "Equipos", "b": "Bloque 5", "q": "¿A qué temperatura se guardan muestras y reactivos en los frigoríficos del laboratorio?", "o": ["-18 ºC", "-80 ºC", "-200 ºC", "4-10 ºC"], "a": 3, "e": "Frigoríficos 4-10 ºC.", "d": 58}, {"n": 40, "s": "Equipos", "b": "Bloque 5", "q": "Los congeladores del laboratorio trabajan:", "o": ["A -200 ºC", "Bajo -18 ºC o hasta -80 ºC", "A 4-10 ºC", "A 37 ºC"], "a": 1, "e": "Los tanques de N₂ líquido llegan a -200 ºC.", "d": 58}, {"n": 41, "s": "Equipos", "b": "Bloque 5", "q": "La balanza analítica es fundamental para pequeñas cantidades porque:", "o": ["Es poco sensible", "Pesa cantidades grandes", "Su error instrumental es mínimo", "No necesita calibrarse"], "a": 2, "e": "Muy sensible, error mínimo.", "d": 59}, {"n": 42, "s": "Equipos", "b": "Bloque 5", "q": "En el agitador magnético, el calor ayuda a la:", "o": ["Esterilización", "Miscibilidad", "Evaporación total", "Congelación"], "a": 1, "e": "Con o sin calor.", "d": 61}, {"n": 43, "s": "Equipos", "b": "Bloque 5", "q": "Al centrifugar la sangre:", "o": ["El plasma queda abajo", "El plasma queda arriba y las células rojas, más densas, abajo", "Las células rojas quedan arriba", "Todo queda mezclado"], "a": 1, "e": "Lo denso abajo.", "d": 62}, {"n": 44, "s": "Equipos", "b": "Bloque 5", "q": "En la centrífuga podemos controlar:", "o": ["El pH y el color", "La velocidad de la fuerza centrífuga y la temperatura", "La pureza", "Solo el tiempo"], "a": 1, "e": "Velocidad y temperatura.", "d": 62}, {"n": 45, "s": "Equipos", "b": "Bloque 5", "q": "La manta calefactora sirve para:", "o": ["Calentar un matraz sin agitación", "Secar material de vidrio", "Esterilizar", "Agitar con calor"], "a": 0, "e": "Recipiente de hilo.", "d": 64}, {"n": 46, "s": "Equipos", "b": "Bloque 5", "q": "El espectrofotómetro se basa en la absorción molecular en la región:", "o": ["Ultravioleta-visible", "Microondas", "Rayos X", "Ondas de radio"], "a": 0, "e": "UV-visible.", "d": 65}, {"n": 47, "s": "Equipos", "b": "Bloque 5", "q": "El instrumento que corta tejidos en láminas finas, propio de anatomía patológica, es el:", "o": ["Microtomo", "Vórtex", "Microscopio", "Crisol"], "a": 0, "e": "Microtomo.", "d": 68}, {"n": 48, "s": "Recursos y PNT", "b": "Bloques 6 y 7", "q": "¿Por qué hay que usar bien los recursos del laboratorio?", "o": ["Porque repetir un experimento cuesta tiempo y dinero", "Porque lo dice el fabricante", "Porque el material es eterno", "Porque no hay normas"], "a": 0, "e": "Economía del laboratorio.", "d": 70}, {"n": 49, "s": "Recursos y PNT", "b": "Bloques 6 y 7", "q": "¿Cuál NO es una de las partes de un PNT?", "o": ["Precio del equipo", "Normas del buen funcionamiento", "Fundamento físico", "Documentos que lo acompañan"], "a": 0, "e": "Título, descripción, fundamento físico, normas, aplicaciones, documentos.", "d": 71}, {"n": 50, "s": "Recursos y PNT", "b": "Bloques 6 y 7", "q": "Los PNT son parte de:", "o": ["La propiedad intelectual del laboratorio", "Los reactivos", "La propiedad del fabricante", "El material desechable"], "a": 0, "e": "Propiedad intelectual del laboratorio.", "d": 72}];
+const KEY = "lab-u1-test50";
+let state = { ans: {}, cur: 0, filter: "Todos", only: null };
+try { const s = JSON.parse(localStorage.getItem(KEY) || "null"); if (s && s.ans) state = Object.assign(state, s); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+const blocks = ["Todos", ...new Set(Q.map(q => q.s))];
+const $ = id => document.getElementById(id);
+let showResults = false, resetArmed = false;
+
+function list() {
+  let l = Q.map((q, i) => i);
+  if (state.filter !== "Todos") l = l.filter(i => Q[i].s === state.filter);
+  if (state.only) l = l.filter(i => state.only.includes(i));
+  return l;
+}
+function renderFilters() {
+  $("filters").innerHTML = "";
+  blocks.forEach(b => {
+    const c = document.createElement("button");
+    c.className = "chip"; c.type = "button"; c.textContent = b;
+    c.setAttribute("aria-pressed", String(state.filter === b && !state.only));
+    c.onclick = () => { state.filter = b; state.only = null; showResults = false; const l = list(); state.cur = l[0]; save(); render(); };
+    $("filters").appendChild(c);
+  });
+  if (state.only) {
+    const c = document.createElement("button");
+    c.className = "chip"; c.type = "button"; c.textContent = "Repasando falladas (" + state.only.length + ")"; c.setAttribute("aria-pressed", "true");
+    $("filters").appendChild(c);
+  }
+}
+function renderScore() {
+  const v = Object.entries(state.ans);
+  const ok = v.filter(([i, a]) => Q[i].a === a).length;
+  $("nOk").textContent = ok; $("nBad").textContent = v.length - ok; $("nLeft").textContent = Q.length - v.length;
+  $("prog").style.width = (v.length / Q.length * 100) + "%";
+}
+function renderCard() {
+  const l = list(); if (!l.includes(state.cur)) state.cur = l[0];
+  const i = state.cur, q = Q[i], picked = state.ans[i];
+  const k = l.indexOf(i);
+  $("pos").textContent = "Pregunta " + (k + 1) + " de " + l.length;
+  const card = $("card"); card.innerHTML = "";
+  const meta = document.createElement("div"); meta.className = "meta";
+  meta.innerHTML = "<span>" + q.b + " · " + q.s + "</span><span>Nº " + q.n + " · diap. " + q.d + "</span>";
+  const h = document.createElement("h2"); h.className = "q"; h.textContent = q.q;
+  const ul = document.createElement("ul"); ul.className = "opts";
+  q.o.forEach((o, j) => {
+    const li = document.createElement("li");
+    const b = document.createElement("button"); b.type = "button"; b.className = "opt";
+    b.innerHTML = '<span class="l">' + "abcd"[j] + ')</span><span></span>';
+    b.lastChild.textContent = o;
+    if (picked !== undefined) {
+      b.disabled = true;
+      if (j === q.a) b.classList.add("right");
+      else if (j === picked) b.classList.add("wrong");
+    }
+    b.onclick = () => { state.ans[i] = j; save(); render(); };
+    li.appendChild(b); ul.appendChild(li);
+  });
+  card.append(meta, h, ul);
+  if (picked !== undefined) {
+    const good = picked === q.a;
+    const fb = document.createElement("div"); fb.className = "fb" + (good ? "" : " no");
+    const s = document.createElement("strong"); s.textContent = good ? "¡Correcto!" : "No es esa. La correcta es la " + "abcd"[q.a] + ")";
+    const p = document.createElement("span"); p.textContent = q.e;
+    const sm = document.createElement("small"); sm.textContent = "📍 Diapositiva " + q.d + " del PDF de la profe";
+    fb.append(s, p, sm); card.appendChild(fb);
+  }
+  $("prev").disabled = k <= 0;
+  $("next").textContent = k >= l.length - 1 ? "Ver resultado" : "Siguiente →";
+}
+function renderDots() {
+  const l = list(); $("dots").innerHTML = "";
+  l.forEach(i => {
+    const d = document.createElement("button"); d.type = "button"; d.className = "dot"; d.textContent = Q[i].n;
+    d.setAttribute("aria-label", "Pregunta " + Q[i].n);
+    if (state.ans[i] !== undefined) d.classList.add(state.ans[i] === Q[i].a ? "ok" : "no");
+    if (i === state.cur && !showResults) d.classList.add("cur");
+    d.onclick = () => { state.cur = i; showResults = false; save(); render(); };
+    $("dots").appendChild(d);
+  });
+}
+function renderResults() {
+  const card = $("card"); card.innerHTML = "";
+  const v = Object.entries(state.ans); const ok = v.filter(([i, a]) => Q[i].a === a).length;
+  const box = document.createElement("div"); box.className = "result";
+  const big = document.createElement("div"); big.className = "big"; big.textContent = ok + " / 50";
+  const ver = document.createElement("p"); ver.className = "verdict";
+  ver.textContent = ok >= 40 ? "Vas muy bien. Repasa solo las que fallaste." : ok >= 35 ? "Bien encaminado. Repasa los bloques con más fallos." : ok >= 25 ? "Aprobado justo. Vuelve al Repaso en los bloques flojos." : "Toca repasar. Empieza por Lo imprescindible y repite el test.";
+  const t = document.createElement("table");
+  t.innerHTML = "<thead><tr><th>Bloque</th><th>Aciertos</th><th>Fallos</th><th>Sin responder</th></tr></thead>";
+  const tb = document.createElement("tbody");
+  blocks.slice(1).forEach(b => {
+    const ids = Q.map((q, i) => i).filter(i => Q[i].s === b);
+    const a = ids.filter(i => state.ans[i] === Q[i].a).length, f = ids.filter(i => state.ans[i] !== undefined && state.ans[i] !== Q[i].a).length;
+    const tr = document.createElement("tr"); tr.innerHTML = "<td></td><td>" + a + "</td><td>" + f + "</td><td>" + (ids.length - a - f) + "</td>";
+    tr.firstChild.textContent = b; tb.appendChild(tr);
+  });
+  t.appendChild(tb);
+  const wrap = document.createElement("div"); wrap.style.overflowX = "auto"; wrap.appendChild(t);
+  box.append(big, ver, wrap); card.appendChild(box);
+  $("pos").textContent = "Resultado";
+  $("prev").disabled = false; $("next").textContent = "Volver al test";
+}
+function render() { renderFilters(); renderScore(); renderDots(); showResults ? renderResults() : renderCard(); }
+
+$("prev").onclick = () => { if (showResults) { showResults = false; return render(); } const l = list(), k = l.indexOf(state.cur); if (k > 0) { state.cur = l[k - 1]; save(); render(); } };
+$("next").onclick = () => { if (showResults) { showResults = false; return render(); } const l = list(), k = l.indexOf(state.cur); if (k < l.length - 1) { state.cur = l[k + 1]; save(); render(); } else { showResults = true; render(); } window.scrollTo({ top: 0 }); };
+$("results").onclick = () => { showResults = true; render(); };
+$("retry").onclick = () => {
+  const f = Q.map((q, i) => i).filter(i => state.ans[i] !== undefined && state.ans[i] !== Q[i].a);
+  const msg = $("confirmMsg");
+  if (!f.length) { msg.hidden = false; msg.textContent = "No tienes preguntas falladas."; return; }
+  f.forEach(i => delete state.ans[i]); state.only = f; state.filter = "Todos"; state.cur = f[0]; showResults = false; msg.hidden = true; save(); render();
+};
+$("reset").onclick = () => {
+  const msg = $("confirmMsg");
+  if (!resetArmed) { resetArmed = true; msg.hidden = false; msg.textContent = "Pulsa otra vez «Empezar de cero» para borrar todas tus respuestas."; $("reset").textContent = "Sí, borrar todo"; return; }
+  state = { ans: {}, cur: 0, filter: "Todos", only: null }; resetArmed = false; showResults = false; msg.hidden = true; $("reset").textContent = "Empezar de cero"; save(); render();
+};
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT") return;
+  const n = "1234abcd".indexOf(e.key.toLowerCase());
+  if (n >= 0 && !showResults && state.ans[state.cur] === undefined) { state.ans[state.cur] = n % 4; save(); render(); }
+  if (e.key === "ArrowRight") $("next").click();
+  if (e.key === "ArrowLeft") $("prev").click();
+});
+render();
+</script>
+
+</body>
+</html>

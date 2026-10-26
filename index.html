@@ -4,4 +4,105 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Fisio 2 · Tejidos</title><style>body{font-family:system-ui,sans-serif;background:#f4f2f6;color:#1d1828;padding:24px max(16px,env(safe-area-inset-left,0px))}a{display:block;margin:12px 0;padding:16px;border-radius:12px;background:#7a1f3d;color:#fff;text-decoration:none;font-weight:700;font-size:18px;max-width:480px}@media (prefers-color-scheme:dark){body{background:#131019;color:#ece7f3}}</style></head><body><h1>🫀 Fisiopatología · 2º examen</h1><a href="repaso/">📖 Repaso completo</a><a href="simulacro/">📝 Simulacro</a></body></html>
+<title>Mi carrera TSAPC</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Estantería por asignatura: cada examen es una tarjeta con dos botones grandes (Repaso / Simulacro) */
+:root{
+  --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
+  --accent:#7a1f3d; --accent-ink:#ffffff; --ok:#1d6a44; --ok-soft:#e6f5ec; --hot:#c4314b; --hot-soft:#fbe8ec;
+  --fisio:#a3284a; --bio:#0f7c74; --ipe:#b8650a; --gest:#6a44b5; --ing:#2c5fc4; --lab:#3f7d1f;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif; --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --ok:#86dcad; --ok-soft:#15291f; --hot:#ff7d93; --hot-soft:#3a1820;
+  --fisio:#ff7fa0; --bio:#4fd1c5; --ipe:#ffae52; --gest:#b49cff; --ing:#83a8ff; --lab:#9bd66f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --ok:#86dcad; --ok-soft:#15291f; --hot:#ff7d93; --hot-soft:#3a1820;
+  --fisio:#ff7fa0; --bio:#4fd1c5; --ipe:#ffae52; --gest:#b49cff; --ing:#83a8ff; --lab:#9bd66f; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
+.wrap{max-width:760px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+.wrap>*{min-width:0}
+.eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+h1{font-size:2.1em;line-height:1.05;margin:4px 0 6px}
+.sub{color:var(--muted);margin:0}
+.next{display:flex;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+.next .n{font-family:var(--f-display);font-weight:800;font-size:2.6em;line-height:1;color:var(--hot);font-variant-numeric:tabular-nums;min-width:1.3ch;text-align:center}
+.next p{margin:0}.k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.how{font-size:.88em;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px}
+.jump{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.jump a{flex:none;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.88em;white-space:nowrap}
+.subj{display:flex;flex-direction:column;gap:10px;scroll-margin-top:12px}
+.subj-h{display:flex;align-items:center;gap:10px;border-bottom:3px solid var(--c);padding-bottom:6px}
+.subj-h .em{font-size:1.6em;line-height:1}
+.subj-h h2{font-size:1.3em;flex:1}
+.subj-h span.c{font-family:var(--f-mono);font-size:.72em;color:var(--muted)}
+.ex{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.ex.past{opacity:.85}
+.ex-top{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:6px}
+.ex h3{font-size:1.15em;line-height:1.2}
+.ex .tema{color:var(--muted);font-size:.9em;margin:2px 0 0}
+.st{flex:none;font-family:var(--f-mono);font-size:.68em;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.st.up{background:var(--hot-soft);color:var(--hot)} .st.done{background:var(--ok-soft);color:var(--ok)} .st.tbd{background:var(--soft);color:var(--muted);border:1px solid var(--line)}
+.main{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.big{display:flex;flex-direction:column;gap:2px;text-decoration:none;border-radius:12px;padding:12px;min-height:76px;justify-content:center}
+.big b{font-family:var(--f-display);font-size:1.12em}
+.big small{font-size:.78em;opacity:.9;line-height:1.25}
+.big.on{background:var(--c);color:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .big.on{color:#131019}}
+:root[data-theme="dark"] .big.on{color:#131019}
+.big.pdf{background:var(--soft);color:var(--ink);border:1.5px solid var(--c)}
+.big.off{background:transparent;color:var(--muted);border:1.5px dashed var(--line)}
+.more{display:flex;flex-wrap:wrap;gap:6px}
+.more a{font-size:.82em;text-decoration:none;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:5px 9px}
+.more .lbl{font-family:var(--f-mono);font-size:.68em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;align-self:center;margin-right:2px}
+.foot{color:var(--muted);font-size:.85em}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header><p class="eyebrow">Anatomía Patológica y Citodiagnóstico · 1.º TSAPC · Impulsa Pamplona</p><h1>Mi carrera</h1><p class="sub" id="sub"></p></header>
+<a class="next" id="next" hidden></a>
+<p class="how"><span><b>📖 Repaso</b> y <b>📝 Simulacro</b>: botón de color = página interactiva</span><span>botón con borde = PDF</span><span>gris discontinuo = todavía no está hecho</span></p>
+<nav class="jump" id="jump" aria-label="Ir a una asignatura"></nav>
+<div id="list" style="display:flex;flex-direction:column;gap:22px"></div>
+<p class="foot">En cada página tienes arriba el botón «← Menú» para volver aquí. Los PDF se pueden descargar.</p>
+</main>
+<script>
+const EX=[{"id": "fisio2", "asig": "Fisiopatología", "em": "🫀", "col": "fisio", "ex": "2º examen", "tema": "Unidad 2 · Tejidos y anatomía", "fecha": "2026-10-28", "rep": {"web": "fisio2/repaso/", "pdf": "files/FISIO2_1-Repaso_Tejidos_28.oct.pdf"}, "sim": {"web": "fisio2/simulacro/", "pdf": "files/FISIO2_2-Simulacro_Tejidos_28.oct.pdf"}, "extra": [["⚡ Lo imprescindible", "files/FISIO2_3-Imprescindible_Tejidos_28.oct.pdf"], ["✏️ Esquemas para rellenar", "files/FISIO2_4-Esquemas-Rellenar_Tejidos_28.oct.pdf"], ["✅ Verificación", "files/FISIO2_5-Verificacion_Tejidos_28.oct.pdf"]]}, {"id": "ipe3", "asig": "IPE 1", "em": "🦺", "col": "ipe", "ex": "Tema 5", "tema": "Los primeros auxilios en la empresa", "fecha": null, "rep": {"web": "ipe-tema5/repaso/", "pdf": "files/IPE3_1-Repaso_Primeros-Auxilios.pdf"}, "sim": {}, "extra": [["⚡ Lo imprescindible", "files/IPE3_3-Imprescindible_Primeros-Auxilios.pdf"], ["✅ Verificación", "files/IPE3_5-Verificacion_Primeros-Auxilios.pdf"]]}, {"id": "bio2", "asig": "Biología Molecular", "em": "🧬", "col": "bio", "ex": "2º examen", "tema": "Tema 3 · Citogenética y análisis cromosómico", "fecha": null, "rep": {"web": "bio2/repaso/", "pdf": "files/BIO2_1-Repaso_Citogenetica.pdf"}, "sim": {"pdf": "files/BIO2_2-Simulacro_Citogenetica.pdf"}, "extra": [["⚡ Lo imprescindible", "files/BIO2_3-Imprescindible_Citogenetica.pdf"], ["✅ Verificación", "files/BIO2_5-Verificacion_Citogenetica.pdf"]]}, {"id": "gest2", "asig": "Gestión de Muestras", "em": "🧫", "col": "gest", "ex": "2º examen", "tema": "Tema 2 · Funciones, áreas y organización del laboratorio", "fecha": null, "rep": {"pdf": "files/GESTION2_1-Repaso_Laboratorio.pdf"}, "sim": {"pdf": "files/GESTION2_2-Simulacro-Test_Laboratorio.pdf"}, "extra": [["⚡ Lo imprescindible", "files/GESTION2_3-Imprescindible_Laboratorio.pdf"], ["✅ Verificación", "files/GESTION2_5-Verificacion_Laboratorio.pdf"]]}, {"id": "ing1", "asig": "Inglés", "em": "🇬🇧", "col": "ing", "ex": "1er examen", "tema": "Unit 1 verbos · Unit 2 presentes · vocabulario de laboratorio", "fecha": null, "rep": {"web": "ingles1/vocabulario/", "webt": "Aprende las 50 palabras", "pdf": "files/INGLES1_1-Repaso_Tiempos.pdf"}, "sim": {"web": "ingles1/simulacro/", "pdf": "files/INGLES1_2-Simulacro_Tiempos.pdf"}, "extra": [["🌐 Examen Units 1–2", "ingles1/examen/"], ["🌐 Examen de vocabulario", "ingles1/examen-vocabulario/"], ["🌐 Simulacro de vocabulario", "ingles1/simulacro-vocabulario/"], ["📄 Repaso breve + 50 palabras", "files/INGLES1_1-Repaso-Breve_Vocabulario.pdf"], ["⚡ Lo imprescindible", "files/INGLES1_3-Imprescindible_Tiempos.pdf"]]}, {"id": "ipe2", "asig": "IPE 1", "em": "🦺", "col": "ipe", "ex": "2º examen", "tema": "Tema 3 · Riesgos ambientales en el trabajo", "fecha": null, "rep": {"pdf": "files/IPE2_1-Repaso_Riesgos-Ambientales.pdf"}, "sim": {"pdf": "files/IPE2_2-Simulacro-Tipo-Examen_Riesgos-Ambientales.pdf"}, "extra": [["📄 Simulacro test", "files/IPE2_2-Simulacro-Test_Riesgos-Ambientales.pdf"], ["📄 Simulacro rápido", "files/IPE2_2-Simulacro-Rapido_Riesgos-Ambientales.pdf"], ["⚡ Lo imprescindible", "files/IPE2_3-Imprescindible_Riesgos-Ambientales.pdf"]]}, {"id": "lab1", "asig": "Técnicas Generales de Laboratorio", "em": "🧪", "col": "lab", "ex": "1er examen", "tema": "Unidad 1", "fecha": "2026-10-22", "rep": {"pdf": "files/LAB1_1-Repaso_Unidad1_22.oct.pdf"}, "sim": {"web": "lab1/banco/", "webt": "Banco completo (153 preguntas)", "pdf": "files/LAB1_2-Simulacro-Test_Unidad1_22.oct.pdf"}, "extra": [["🌐 Test de 50", "lab1/test-50/"], ["🌐 Segundo test de 50", "lab1/test-50-b/"], ["📄 50 con respuestas", "files/LAB1_2-Simulacro-50-con-Respuestas_Unidad1_22.oct.pdf"], ["⚡ Lo imprescindible", "files/LAB1_3-Imprescindible_Unidad1_22.oct.pdf"]]}, {"id": "bio1", "asig": "Biología Molecular", "em": "🧬", "col": "bio", "ex": "1er examen", "tema": "Tema 2 · Cultivos celulares", "fecha": "2026-10-19", "rep": {"pdf": "files/BIO1_1-Repaso_Cultivos_19.oct.pdf"}, "sim": {"pdf": "files/BIO1_2-Simulacro_Cultivos_19.oct.pdf"}, "extra": [["🔬 Neubauer y microscopio", "files/BIO1_4-Neubauer-Microscopio_Cultivos_19.oct.pdf"], ["⚡ Lo imprescindible", "files/BIO1_3-Imprescindible_Cultivos_19.oct.pdf"]]}, {"id": "gest1", "asig": "Gestión de Muestras", "em": "🧫", "col": "gest", "ex": "1er examen", "tema": "Tema 1 · Estructura organizativa del sector sanitario", "fecha": "2026-10-15", "rep": {"pdf": "files/GESTION1_1-Repaso_Sector-Sanitario_15.oct.pdf"}, "sim": {"pdf": "files/GESTION1_2-Simulacro-Test_Sector-Sanitario_15.oct.pdf"}, "extra": [["⚡ Lo imprescindible", "files/GESTION1_3-Imprescindible_Sector-Sanitario_15.oct.pdf"]]}, {"id": "fisio1", "asig": "Fisiopatología", "em": "🫀", "col": "fisio", "ex": "1er examen", "tema": "Unidad 1 · La organización del cuerpo humano", "fecha": "2026-10-13", "rep": {"pdf": "files/FISIO1_1-Repaso_Organizacion_13.oct.pdf"}, "sim": {"pdf": "files/FISIO1_1-Repaso_Organizacion_13.oct.pdf"}, "extra": [["⚡ Lo imprescindible", "files/FISIO1_3-Imprescindible_Organizacion_13.oct.pdf"], ["🧭 Cómo estudiar", "files/FISIO1_4-Como-Estudiar_Organizacion_13.oct.pdf"]]}];
+const MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+const today=new Date();today.setHours(0,0,0,0);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+EX.forEach(e=>{if(e.fecha){const d=new Date(e.fecha+"T00:00:00");e.days=Math.round((d-today)/864e5);e.fd=DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];e.state=e.days<0?"done":"up"}else e.state="tbd"});
+const rank=e=>e.state==="up"?e.days:e.state==="tbd"?500:5000-e.days;
+const subjects=[];EX.slice().sort((a,b)=>rank(a)-rank(b)).forEach(e=>{let s=subjects.find(x=>x.asig===e.asig);if(!s){s={asig:e.asig,em:e.em,col:e.col,ex:[]};subjects.push(s)}s.ex.push(e)});
+const nWeb=EX.reduce((n,e)=>n+(e.rep.web?1:0)+(e.sim.web?1:0),0);
+document.getElementById("sub").textContent=subjects.length+" asignaturas · "+EX.length+" exámenes · cada uno con su Repaso y su Simulacro";
+const nx=EX.filter(e=>e.state==="up").sort((a,b)=>a.days-b.days)[0];
+if(nx){const n=document.getElementById("next");n.hidden=false;n.href="#"+nx.id;n.innerHTML=`<span class="n">${nx.days}</span><div><p class="k">${nx.days===0?"¡Hoy es el examen!":nx.days===1?"día para el próximo examen":"días para el próximo examen"}</p><p><b>${nx.em} ${esc(nx.asig)} · ${esc(nx.ex)}</b> · ${nx.fd}</p></div>`}
+const stLab=e=>e.state==="up"?(e.days===0?"Hoy":"Faltan "+e.days+(e.days===1?" día":" días")+" · "+e.fd):e.state==="done"?"Hecho · "+e.fd:"Fecha por confirmar";
+function big(kind,o){const T=kind==="rep"?"📖 Repaso":"📝 Simulacro";
+  if(o.web)return `<a class="big on" href="${o.web}"><b>${T}</b><small>${esc(o.webt||"Página interactiva")}</small></a>`;
+  if(o.pdf)return `<a class="big pdf" href="${o.pdf}"><b>${T}</b><small>PDF</small></a>`;
+  return `<span class="big off"><b>${T}</b><small>Todavía no está hecho</small></span>`}
+document.getElementById("jump").innerHTML=subjects.map(s=>`<a href="#s-${s.col}-${s.ex[0].id}">${s.em} ${esc(s.asig)}</a>`).join("");
+document.getElementById("list").innerHTML=subjects.map(s=>`<section class="subj" id="s-${s.col}-${s.ex[0].id}" style="--c:var(--${s.col})"><div class="subj-h"><span class="em" aria-hidden="true">${s.em}</span><h2>${esc(s.asig)}</h2><span class="c">${s.ex.length} ${s.ex.length===1?"examen":"exámenes"}</span></div>`+
+ s.ex.map(e=>{const more=[];
+   if(e.rep.web&&e.rep.pdf)more.push(`<a href="${e.rep.pdf}">📄 Repaso en PDF</a>`);
+   if(e.rep.gh)more.push(`<a href="${e.rep.gh}">🌍 Repaso público</a>`);
+   if(e.sim.web&&e.sim.pdf)more.push(`<a href="${e.sim.pdf}">📄 Simulacro en PDF</a>`);
+   if(e.sim.gh)more.push(`<a href="${e.sim.gh}">🌍 Simulacro público</a>`);
+   (e.extra||[]).forEach(([t,u])=>more.push(`<a href="${u}">${esc(t)}</a>`));
+   return `<article class="ex${e.state==="done"?" past":""}" id="${e.id}"><div class="ex-top"><div><h3>${esc(e.ex)}</h3><p class="tema">${esc(e.tema)}</p></div><span class="st ${e.state}">${stLab(e)}</span></div>
+   <div class="main">${big("rep",e.rep)}${big("sim",e.sim)}</div>${more.length?`<div class="more"><span class="lbl">Más</span>${more.join("")}</div>`:""}</article>`}).join("")+`</section>`).join("");
+</script>
+
+</body>
+</html>

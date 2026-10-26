@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){var a=document.createElement("a");a.className="mc-back";a.href="../../";a.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(a,document.body.firstChild)});</script>
+</head>
+<body>
+<title>Lab Vocabulary Exam</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: una hoja de examen centrada; cada ejercicio es una sección numerada con su puntuación; la corrección aparece "en bolígrafo rojo" junto a cada respuesta */
+:root{
+  --bg:#e9edf4; --paper:#ffffff; --ink:#18213a; --muted:#5d6782; --line:#d5dbe8; --field:#f4f6fb;
+  --accent:#1f3c88; --accent-soft:#e3e9f8; --pen:#c1121f; --pen-soft:#fde7e8; --ok:#18794e; --ok-soft:#e1f4ea;
+  --f-display:"Familjen Grotesk","Segoe UI",system-ui,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1322; --paper:#161d31; --ink:#e6eaf5; --muted:#9aa4c0; --line:#2b3550; --field:#1d2640;
+  --accent:#8ea8ff; --accent-soft:#222e52; --pen:#ff6b74; --pen-soft:#3a1d24; --ok:#4fd197; --ok-soft:#163327; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1322; --paper:#161d31; --ink:#e6eaf5; --muted:#9aa4c0; --line:#2b3550; --field:#1d2640;
+  --accent:#8ea8ff; --accent-soft:#222e52; --pen:#ff6b74; --pen-soft:#3a1d24; --ok:#4fd197; --ok-soft:#163327; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+.wrap{max-width:780px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.paper{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:clamp(18px,4vw,36px);display:flex;flex-direction:column;gap:28px}
+.head{display:flex;flex-direction:column;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:16px}
+.school{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-size:clamp(26px,6vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.fields{display:flex;flex-wrap:wrap;gap:10px 20px;font-size:15px}
+.fields label{display:flex;gap:8px;align-items:baseline;flex:1 1 220px;min-width:0}
+.fields input{flex:1;min-width:0;border:0;border-bottom:1.5px solid var(--ink);background:transparent;font:inherit;color:var(--ink);padding:2px 4px}
+.rules{font-size:14px;color:var(--muted);margin:0}
+section.ex{display:flex;flex-direction:column;gap:12px}
+.ex-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ex-h h2{font-family:var(--f-display);font-size:20px;margin:0;text-wrap:balance}
+.ex-h h2 span{color:var(--accent)}
+.pts{font-family:var(--f-mono);font-size:13px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.pts.got{color:var(--pen);font-weight:500}
+.inst{margin:0;color:var(--muted);font-size:15px}
+.inst em{color:var(--ink);font-style:normal;font-weight:600}
+ol.items{margin:0;padding-left:1.6em;display:flex;flex-direction:column;gap:10px}
+ol.items>li{padding-left:4px}
+input.g,select.g{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-bottom:2px solid var(--accent);border-radius:4px 4px 0 0;padding:3px 8px;min-width:0}
+input.g{width:12em;max-width:100%}
+input.g.wide{width:100%}
+input.g.short{width:9em}
+input.g:focus-visible,select.g:focus-visible,.btn:focus-visible,.opt input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
+.hint{color:var(--muted);font-size:14px}
+.opts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:4px}
+.opt{display:flex;gap:6px;align-items:center;cursor:pointer}
+.opt span{font-size:15px}
+.mark{display:inline-block;font-family:var(--f-mono);font-size:13px;margin-left:6px}
+.right input.g,.right select.g{border-bottom-color:var(--ok);background:var(--ok-soft)}
+.wrong input.g,.wrong select.g{border-bottom-color:var(--pen);background:var(--pen-soft)}
+.fix{display:block;color:var(--pen);font-size:14px;margin-top:2px}
+.fix b{font-weight:700}
+.ok-t{color:var(--ok)} .bad-t{color:var(--pen)}
+table.vt{border-collapse:collapse;width:100%;font-size:15px}
+.tw{overflow-x:auto}
+table.vt th,table.vt td{border-bottom:1px solid var(--line);padding:6px 6px;text-align:left;vertical-align:top}
+table.vt th{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:500}
+table.vt input.g{width:100%;min-width:6.5em}
+.cloze{background:var(--field);border-left:3px solid var(--accent);padding:14px 16px;border-radius:0 6px 6px 0;line-height:2.1}
+.cloze input.g{width:11em;background:var(--paper)}
+.num{font-family:var(--f-mono);font-size:12px;color:var(--accent);margin-right:2px}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font:inherit;font-weight:700;border-radius:6px;padding:11px 18px;cursor:pointer;border:1.5px solid var(--accent);background:var(--paper);color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--paper)}
+.result{border:2px solid var(--pen);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.grade{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.grade .big{font-family:var(--f-display);font-size:clamp(44px,12vw,64px);line-height:1;color:var(--pen);font-variant-numeric:tabular-nums}
+.grade .of{font-family:var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.verdict{margin:0;font-weight:600}
+.note{font-size:14px;color:var(--muted);margin:0}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<div class="wrap">
+<div class="paper" id="paper">
+  <div class="head">
+    <span class="school">Impulsa · Inglés · Lab vocabulary</span>
+    <h1>Lab Vocabulary Exam: the 50 official words</h1>
+    <div class="fields">
+      <label for="stName">Name: <input id="stName" type="text" autocomplete="off"></label>
+      <label for="stDate">Date: <input id="stDate" type="text" autocomplete="off"></label>
+    </div>
+    <p class="rules">Answer all the exercises, then press <b>Check my exam</b> at the bottom. Capital letters and accents don't matter, and <i>to weigh</i> or <i>weigh</i> are both fine. All 50 words of the teacher’s list appear once in exercises 1 and 2. Tu examen se guarda en este navegador mientras lo haces.</p>
+  </div>
+  <div id="exam"></div>
+  <div class="result" id="result" hidden></div>
+  <div class="actions">
+    <button class="btn primary" id="check" type="button">Check my exam</button>
+    <button class="btn" id="retry" type="button" hidden>Try again (keep only the right answers)</button>
+    <button class="btn" id="reset" type="button">Start a new attempt</button>
+  </div>
+  <p class="note" id="msg" hidden></p>
+</div>
+</div>
+
+<script>
+const EX = [{"t": "Translate into English", "es": "Escribe la palabra en inglés. El número es el de la lista de la profe.", "type": "voc", "items": [["1. Patólogo", ["pathologist"]], ["3. Laboratorio", ["laboratory", "lab"]], ["5. Guantes", ["gloves"]], ["7. Campana de extracción", ["fume hood", "fume cupboard"]], ["9. Microscopio", ["microscope"]], ["11. Centrífuga", ["centrifuge"]], ["13. Frigorífico", ["fridge"]], ["15. Estufa", ["oven"]], ["17. Balanza", ["balance", "scale", "scales"]], ["19. Agitador magnético", ["magnetic stirrer"]], ["21. pHmetro", ["ph meter", "phmeter", "ph-meter"]], ["23. Espectrofotómetro", ["spectrophotometer"]], ["25. Matraz aforado", ["volumetric flask"]], ["27. Probeta", ["graduated cylinder", "measuring cylinder"]], ["29. Bureta", ["burette", "buret"]], ["31. Micropipeta", ["micropipette"]], ["33. Pipeta Pasteur", ["pasteur pipette"]], ["35. Gradilla", ["test tube rack", "test-tube rack", "tube rack", "rack"]], ["37. Papel de filtro", ["filter paper"]], ["39. Espátula", ["spatula"]], ["41. Frasco lavador", ["wash bottle"]], ["43. Placa de Petri", ["petri dish", "petri plate"]], ["45. Cubreobjetos", ["coverslip", "cover slip", "cover glass"]], ["47. Pinzas", ["forceps", "tweezers"]], ["49. Jeringa", ["syringe"]]]}, {"t": "Translate into Spanish", "es": "Escribe la palabra en español (las tildes no cuentan).", "type": "voc", "items": [["2. Laboratory technician", ["tecnico de laboratorio", "tecnica de laboratorio", "tecnico de lab"]], ["4. Lab coat", ["bata de laboratorio", "bata"]], ["6. Lab bench", ["poyata", "mesa de laboratorio", "mesa de trabajo"]], ["8. Biosafety cabinet", ["cabina de seguridad biologica", "cabina de seguridad"]], ["10. Microtome", ["micrótomo"]], ["12. Autoclave", ["autoclave"]], ["14. Freezer", ["congelador"]], ["16. Water bath", ["baño termostatico", "baño", "baño maria", "baño de agua"]], ["18. Hot plate", ["placa calefactora"]], ["20. Vortex mixer", ["agitador vortex", "vortex"]], ["22. Bunsen burner", ["mechero bunsen", "mechero"]], ["24. Flask", ["matraz"]], ["26. Erlenmeyer flask", ["matraz erlenmeyer", "erlenmeyer"]], ["28. Beaker", ["vaso de precipitados", "vaso de precipitado"]], ["30. Pipette", ["pipeta"]], ["32. Pipette tip", ["punta de pipeta", "punta"]], ["34. Test tube", ["tubo de ensayo"]], ["36. Funnel", ["embudo"]], ["38. Glass rod", ["varilla de vidrio", "varilla"]], ["40. Watch glass", ["vidrio de reloj"]], ["42. Reagent bottle", ["frasco de reactivos", "frasco de reactivo"]], ["44. Slide", ["portaobjetos"]], ["46. Scalpel", ["bisturí"]], ["48. Scissors", ["tijeras", "tijera"]], ["50. Needle", ["aguja"]]]}, {"t": "Choose the correct word", "es": "Elige la palabra que completa la frase.", "type": "mc", "items": [["You look at cells and tissues with a ___.", ["centrifuge", "microscope", "funnel", "syringe"], 1], ["Put the sample on a ___ and cover it with a coverslip.", ["slide", "beaker", "scalpel", "flask"], 0], ["We use the ___ to separate blood into plasma and red cells.", ["autoclave", "hot plate", "water bath", "centrifuge"], 3], ["The ___ cuts very thin sections of tissue for the microscope.", ["microtome", "microscope", "magnetic stirrer", "spectrophotometer"], 0], ["The ___ sterilises material with steam under pressure.", ["freezer", "autoclave", "pH meter", "spatula"], 1], ["Work with acids under the ___ so you don't breathe the vapours.", ["water bath", "oven", "fume hood", "test tube rack"], 2], ["Bacteria grow in a ___.", ["watch glass", "burette", "wash bottle", "Petri dish"], 3], ["The ___ is the doctor who studies tissues to make a diagnosis.", ["pathologist", "lab bench", "scalpel", "funnel"], 0], ["Use a ___ and a needle to take a blood sample.", ["funnel", "syringe", "glass rod", "reagent bottle"], 1], ["Mix a small tube in a few seconds with the ___.", ["balance", "oven", "vortex mixer", "Bunsen burner"], 2], ["Use the ___ to know how acid a solution is.", ["scissors", "forceps", "balance", "pH meter"], 3], ["You stir a liquid by hand with a ___.", ["glass rod", "needle", "slide", "coverslip"], 0]]}, {"t": "Reading: complete the text with the words from the box", "es": "Banco de palabras: forceps · balance · lab coat · biosafety cabinet · glass rod · gloves · scalpel · lab bench · reagent bottle. Cada palabra se usa una vez.", "type": "cloze", "bank": ["forceps", "balance", "lab coat", "biosafety cabinet", "glass rod", "gloves", "scalpel", "lab bench", "reagent bottle"], "text": "Ana is a laboratory technician. Every morning she puts on her {1}, protects her hands with {2} and prepares her work on the {3}. Right now she is weighing a reagent on the {4}; she has taken it from the {5}. She has been mixing the solution with a {6} for five minutes. Look! Now she is cutting a small piece of tissue with a {7} and holding it with {8}. When she works with dangerous microorganisms, she always uses the {9}.", "items": [2, 5, 7, 1, 8, 4, 6, 0, 3]}];
+const KEY="eng-lab-vocab-v2";
+let saved={}; try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")||{}}catch(e){}
+const store=()=>{try{const v={};document.querySelectorAll("[data-k]").forEach(el=>{if(el.type==="radio"){if(el.checked)v[el.name]=el.value}else v[el.dataset.k]=el.value});v.stName=document.getElementById("stName").value;v.stDate=document.getElementById("stDate").value;localStorage.setItem(KEY,JSON.stringify(v))}catch(e){}};
+const norm=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[’‘`´]/g,"'").replace(/[.?!,;:]/g,"").replace(/\s+/g," ").trim();
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const checks=[]; // {secIndex, test():bool, show(ok), reset()}
+
+function textInput(k,cls,label){const i=document.createElement("input");i.type="text";i.className="g "+(cls||"");i.dataset.k=k;i.id=k;i.autocomplete="off";i.spellcheck=false;i.setAttribute("autocapitalize","off");if(label)i.setAttribute("aria-label",label);if(saved[k])i.value=saved[k];i.addEventListener("input",store);return i}
+function fixLine(host,ok,correct){let f=host.querySelector(".fix");if(!f){f=document.createElement("span");f.className="fix";host.appendChild(f)}f.innerHTML=ok?'<span class="ok-t">✓</span>':'✗ <b>'+esc(correct)+'</b>';}
+function addTextCheck(si,input,accept,host){
+  checks.push({si,test:()=>accept.map(norm).includes(norm(input.value)),show(ok){host.classList.toggle("right",ok);host.classList.toggle("wrong",!ok);fixLine(host,ok,accept[0])},clear(){host.classList.remove("right","wrong");const f=host.querySelector(".fix");if(f)f.remove()},keep(){return this.test()},wipe(){input.value=""}});
+}
+function build(){
+  const exam=document.getElementById("exam"); exam.innerHTML="";
+  let total=0;
+  EX.forEach((ex,si)=>{
+    const sec=document.createElement("section");sec.className="ex";
+    const n=ex.type==="table"||ex.type==="pair"?ex.items.length*2:ex.items.length; total+=n; ex.n=n;
+    sec.innerHTML='<div class="ex-h"><h2><span>'+(si+1)+'.</span> '+ex.t+'</h2><span class="pts" id="pts'+si+'">/ '+n+' pts</span></div><p class="inst">'+ex.es+'</p>';
+    if(ex.type==="mc"){
+      const ol=document.createElement("ol");ol.className="items";
+      ex.items.forEach((it,i)=>{
+        const li=document.createElement("li");li.innerHTML='<div>'+esc(it[0])+'</div>';
+        const box=document.createElement("div");box.className="opts";
+        const name="e"+si+"_"+i;
+        it[1].forEach((o,j)=>{const l=document.createElement("label");l.className="opt";const r=document.createElement("input");r.type="radio";r.name=name;r.value=j;r.dataset.k=name;if(saved[name]==String(j))r.checked=true;r.addEventListener("change",store);const sp=document.createElement("span");sp.textContent="abcd"[j]+") "+o;l.append(r,sp);box.appendChild(l)});
+        li.appendChild(box);ol.appendChild(li);
+        checks.push({si,test:()=>{const c=li.querySelector("input:checked");return !!c&&+c.value===it[2]},show(ok){li.classList.toggle("right",ok);li.classList.toggle("wrong",!ok);fixLine(li,ok,"abcd"[it[2]]+") "+it[1][it[2]])},clear(){li.classList.remove("right","wrong");const f=li.querySelector(".fix");if(f)f.remove()},wipe(){li.querySelectorAll("input").forEach(x=>x.checked=false)}});
+      });sec.appendChild(ol);
+    }
+    if(ex.type==="gap"||ex.type==="selgap"){
+      const ol=document.createElement("ol");ol.className="items";
+      ex.items.forEach((it,i)=>{
+        const li=document.createElement("li");const [a,b]=it[0].split("{}");
+        li.append(document.createTextNode(a));
+        if(ex.type==="gap"){const inp=textInput("e"+si+"_"+i,"",a.trim()+" …");li.appendChild(inp);li.append(document.createTextNode(b));addTextCheck(si,inp,it[1],li)}
+        else{const s=document.createElement("select");s.className="g";s.dataset.k="e"+si+"_"+i;s.id=s.dataset.k;s.setAttribute("aria-label",it[0].replace("{}","___"));s.innerHTML='<option value="">—</option>'+it[1].map((o,j)=>'<option value="'+j+'">'+o+'</option>').join("");if(saved[s.dataset.k]!==undefined)s.value=saved[s.dataset.k];s.addEventListener("change",store);li.appendChild(s);li.append(document.createTextNode(b));
+          checks.push({si,test:()=>s.value!==""&&+s.value===it[2],show(ok){li.classList.toggle("right",ok);li.classList.toggle("wrong",!ok);fixLine(li,ok,it[1][it[2]])},clear(){li.classList.remove("right","wrong");const f=li.querySelector(".fix");if(f)f.remove()},wipe(){s.value=""}})}
+        ol.appendChild(li)});sec.appendChild(ol);
+    }
+    if(ex.type==="table"){
+      const w=document.createElement("div");w.className="tw";const tb=document.createElement("table");tb.className="vt";
+      tb.innerHTML="<thead><tr><th>Infinitive</th><th>Past simple</th><th>Past participle</th></tr></thead>";const body=document.createElement("tbody");
+      ex.items.forEach((it,i)=>{const tr=document.createElement("tr");const td0=document.createElement("td");td0.innerHTML="<b>"+it[0]+"</b>";tr.appendChild(td0);
+        [1,2].forEach(c=>{const td=document.createElement("td");const inp=textInput("e"+si+"_"+i+"_"+c,"",it[0]+(c===1?" past":" participle"));td.appendChild(inp);tr.appendChild(td);addTextCheck(si,inp,it[c],td)});
+        body.appendChild(tr)});tb.appendChild(body);w.appendChild(tb);sec.appendChild(w);
+    }
+    if(ex.type==="pair"){
+      const ol=document.createElement("ol");ol.className="items";
+      ex.items.forEach((it,i)=>{const li=document.createElement("li");li.innerHTML="<div><b>"+esc(it[0])+"</b></div>";
+        [["Negative:",1],["Question:",2]].forEach(([lab,c])=>{const d=document.createElement("div");const sp=document.createElement("span");sp.className="hint";sp.textContent=lab+" ";const inp=textInput("e"+si+"_"+i+"_"+c,"wide",lab+" "+it[0]);d.append(sp,inp);li.appendChild(d);addTextCheck(si,inp,it[c].map((x,k)=>x+(c===2?"?":".")),d)});
+        ol.appendChild(li)});sec.appendChild(ol);
+    }
+    if(ex.type==="fix"){
+      const ol=document.createElement("ol");ol.className="items";
+      ex.items.forEach((it,i)=>{const li=document.createElement("li");li.innerHTML='<div><s>'+esc(it[0])+'</s></div>';const inp=textInput("e"+si+"_"+i,"wide","Correct: "+it[0]);li.appendChild(inp);addTextCheck(si,inp,it[1].map(x=>x+"."),li);ol.appendChild(li)});sec.appendChild(ol);
+    }
+    if(ex.type==="spell"||ex.type==="voc"){
+      const ol=document.createElement("ol");ol.className="items";ol.style.display="grid";ol.style.gridTemplateColumns="repeat(auto-fill,minmax(220px,1fr))";ol.style.gap="10px 18px";
+      ex.items.forEach((it,i)=>{const li=document.createElement("li");const lab=document.createElement("div");lab.innerHTML=ex.type==="spell"?"<b>"+it[0]+"</b> <span class='hint'>("+it[1]+")</span>":"<b>"+esc(it[0])+"</b>";li.appendChild(lab);const inp=textInput("e"+si+"_"+i,"",it[0]);li.appendChild(inp);addTextCheck(si,inp,ex.type==="spell"?it[2]:it[1],li);ol.appendChild(li)});sec.appendChild(ol);
+    }
+    if(ex.type==="sel"){
+      const ol=document.createElement("ol");ol.className="items";ol.style.display="grid";ol.style.gridTemplateColumns="repeat(auto-fill,minmax(170px,1fr))";ol.style.gap="10px 18px";
+      ex.items.forEach((it,i)=>{const li=document.createElement("li");const lab=document.createElement("b");lab.textContent=it[0]+" ";const s=document.createElement("select");s.className="g";s.dataset.k="e"+si+"_"+i;s.id=s.dataset.k;s.setAttribute("aria-label",it[0]);s.innerHTML='<option value="">—</option>'+it[1].map((o,j)=>'<option value="'+j+'">'+o+'</option>').join("");if(saved[s.dataset.k]!==undefined)s.value=saved[s.dataset.k];s.addEventListener("change",store);li.append(lab,s);
+        checks.push({si,test:()=>s.value!==""&&+s.value===it[2],show(ok){li.classList.toggle("right",ok);li.classList.toggle("wrong",!ok);fixLine(li,ok,it[1][it[2]])},clear(){li.classList.remove("right","wrong");const f=li.querySelector(".fix");if(f)f.remove()},wipe(){s.value=""}});ol.appendChild(li)});sec.appendChild(ol);
+    }
+    if(ex.type==="cloze"){
+      const box=document.createElement("div");box.className="cloze";
+      ex.text.split(/(\{\d\})/).forEach(part=>{const m=part.match(/^\{(\d)\}$/);if(!m){box.append(document.createTextNode(part));return}
+        const i=+m[1]-1;const host=document.createElement("span");host.innerHTML='<span class="num">('+(i+1)+')</span>';
+        if(ex.bank){const s=document.createElement("select");s.className="g";s.dataset.k="e"+si+"_"+i;s.id=s.dataset.k;s.setAttribute("aria-label","Gap "+(i+1));s.innerHTML='<option value="">—</option>'+ex.bank.map((o,j)=>'<option value="'+j+'">'+o+'</option>').join("");if(saved[s.dataset.k]!==undefined)s.value=saved[s.dataset.k];s.addEventListener("change",store);host.appendChild(s);box.appendChild(host);
+          checks.push({si,test:()=>s.value!==""&&+s.value===ex.items[i],show(ok){host.classList.toggle("right",ok);host.classList.toggle("wrong",!ok);fixLine(host,ok,ex.bank[ex.items[i]])},clear(){host.classList.remove("right","wrong");const f=host.querySelector(".fix");if(f)f.remove()},wipe(){s.value=""}});return}
+        const inp=textInput("e"+si+"_"+i,"","Gap "+(i+1));host.appendChild(inp);box.appendChild(host);addTextCheck(si,inp,ex.items[i],host)});
+      sec.appendChild(box);
+    }
+    exam.appendChild(sec);
+  });
+  EX.total=total;
+  document.getElementById("stName").value=saved.stName||"";document.getElementById("stDate").value=saved.stDate||"";
+}
+function grade(){
+  const per=EX.map(()=>0);let got=0;
+  checks.forEach(c=>{const ok=c.test();c.show(ok);if(ok){per[c.si]++;got++}});
+  EX.forEach((ex,si)=>{const p=document.getElementById("pts"+si);p.textContent=per[si]+" / "+ex.n+" pts";p.classList.add("got")});
+  const mark=Math.round(got/EX.total*100)/10;
+  const r=document.getElementById("result");r.hidden=false;
+  const v=mark>=9?"Excellent! Estás muy preparado.":mark>=7?"Very good. Repasa solo los ejercicios con fallos.":mark>=5?"Pass. Repasa en el Repaso los apartados donde más fallaste y vuelve a intentarlo.":"Not yet. Lee el Repaso breve y vuelve a hacer el examen.";
+  const weak=EX.map((ex,si)=>({t:ex.t,pc:per[si]/ex.n})).filter(x=>x.pc<0.7).map(x=>x.t);
+  r.innerHTML='<div class="grade"><span class="big">'+mark.toFixed(1).replace(".",",")+'</span><span class="of">/ 10 · '+got+' of '+EX.total+' points</span></div><p class="verdict">'+v+'</p>'+(weak.length?'<p class="note">Para repasar: '+weak.map(esc).join(" · ")+'.</p>':'<p class="note">No tienes ningún ejercicio por debajo del 70 %.</p>')+'<p class="note">Las respuestas en rojo llevan la solución al lado.</p>';
+  document.getElementById("retry").hidden=false;
+  r.scrollIntoView({behavior:"smooth",block:"start"});
+}
+document.getElementById("check").onclick=grade;
+document.getElementById("retry").onclick=()=>{checks.forEach(c=>{if(!c.test())c.wipe();c.clear()});EX.forEach((ex,si)=>{const p=document.getElementById("pts"+si);p.textContent="/ "+ex.n+" pts";p.classList.remove("got")});document.getElementById("result").hidden=true;document.getElementById("retry").hidden=true;store();window.scrollTo({top:0})};
+let armed=false;
+document.getElementById("reset").onclick=()=>{const m=document.getElementById("msg");if(!armed){armed=true;m.hidden=false;m.textContent="Pulsa otra vez «Start a new attempt» para borrar todas tus respuestas.";return}
+  armed=false;m.hidden=true;try{localStorage.removeItem(KEY)}catch(e){};saved={};checks.length=0;build();document.getElementById("result").hidden=true;document.getElementById("retry").hidden=true;window.scrollTo({top:0})};
+build();
+</script>
+
+</body>
+</html>
