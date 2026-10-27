@@ -1,0 +1,3265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:30;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
+(function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
+</head>
+<body>
+<title>Inglés 1 · Verbs and Present</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
+  --accent:#7a1f3d; --accent-ink:#ffffff; --blk:#7a1f3d; --blk-ink:#ffffff;
+  --lv1:#d3264a; --lv1-soft:#fdebef; --lv2:#d9730a; --lv2-soft:#fdf1e3; --lv3:#2c6bd2; --lv3-soft:#e8effc;
+  --def-soft:#f1eef7; --und-soft:#eaf6ef; --und:#1d6a44; --tip-soft:#fff4d6; --tip:#7a5000; --q:#7a1f3d; --q-soft:#fbf0f4;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);line-height:1.55}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:1.25em}
+li{margin:2px 0}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.wrap>*{min-width:0}
+/* cabecera */
+.top{padding:6px 0 0}
+.eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+.top h1{font-size:1.85em;line-height:1.1;margin:6px 0 4px}
+.sub{color:var(--muted);margin:0 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;border-radius:999px;padding:3px 9px;color:#fff;white-space:nowrap}
+.tag.lv1{background:var(--lv1)} .tag.lv2{background:var(--lv2)} .tag.lv3{background:var(--lv3)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag{color:#16121c}}
+:root[data-theme="dark"] .tag{color:#16121c}
+.meta{color:var(--muted)}
+/* cómo estudiar */
+.how{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.how>summary{cursor:pointer;font-weight:700;padding:12px 14px;font-family:var(--f-display)}
+.how-b{padding:0 14px 12px;font-size:.93em}
+/* índice */
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.toc .xs-h{margin:0 0 8px;border:0;padding:0}
+.toc-l{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.toc-l li{margin:0}
+.toc-b{display:block;font-weight:700;color:var(--ink);text-decoration:none}
+.toc-b span{font-family:var(--f-mono);font-size:.72em;color:var(--accent);margin-right:4px;text-transform:uppercase}
+.toc-c{display:block;font-size:.8em;color:var(--muted);line-height:1.45}
+.toc-c a{color:var(--muted);text-decoration:none}
+.toc-c a.i1{color:var(--lv1);font-weight:700}
+/* bloques */
+.blk{display:flex;flex-direction:column;gap:12px;scroll-margin-top:var(--bar,0px)}
+.blk-h{display:grid;gap:2px;background:var(--blk);color:var(--blk-ink);border-radius:12px;padding:14px 44px 14px 14px;position:relative;font-family:var(--f-body)}
+.blk-h .bn{font-family:var(--f-mono);font-size:.62em;letter-spacing:.1em;opacity:.9;font-weight:500}
+.blk-h .bt{font-family:var(--f-display);font-size:1.15em;font-weight:800;line-height:1.15}
+.blk-h .bc{font-size:.66em;font-weight:400;opacity:.95}
+/* concepto */
+.cpt{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lv2);border-radius:12px;padding:12px 14px 14px;scroll-margin-top:var(--bar,0px);min-width:0}
+.cpt.lv1{border-left-color:var(--lv1)} .cpt.lv3{border-left-color:var(--lv3)}
+.c-h{display:flex;gap:10px;align-items:flex-start}
+.c-n{flex:none;font-family:var(--f-mono);font-weight:500;font-size:.85em;min-width:2em;height:2em;border-radius:8px;display:grid;place-items:center;background:var(--soft);color:var(--muted);margin-top:1px}
+.lv1 .c-n{background:var(--lv1-soft);color:var(--lv1)} .lv2 .c-n{background:var(--lv2-soft);color:var(--lv2)} .lv3 .c-n{background:var(--lv3-soft);color:var(--lv3)}
+.c-h h3{font-size:1.15em;line-height:1.25}
+.c-h .note{display:block;font-family:var(--f-body);font-weight:400;font-size:.72em;color:var(--muted);margin-top:2px}
+.c-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:8px 0 10px}
+.srcl{font-size:.8em;color:var(--muted)}
+.c-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.c-body>*{min-width:0;max-width:100%}
+.lbl{font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.prof{color:var(--accent);margin-bottom:-6px}
+.prof-t>:first-child{margin-top:0}
+.defs{background:var(--def-soft);border-radius:10px;padding:9px 11px;font-size:.88em}
+.defs ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.defs li{display:flex;flex-direction:column;gap:4px}
+.term{font-size:1.05em}
+.fd{border-radius:8px;padding:6px 9px;line-height:1.45}
+.fd .fl{display:block;font-family:var(--f-mono);font-size:.72em;font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.fd.easy{background:var(--surface)} .fd.easy .fl{color:var(--und)}
+.fd.ok{background:var(--surface);border-left:4px solid var(--accent);font-weight:700} .fd.ok .fl{color:var(--accent)}
+.fd.no{background:transparent;color:var(--muted);font-size:.92em;padding-top:0;padding-bottom:0} .fd.no .fl{color:var(--lv2)}
+.box{border-radius:10px;padding:9px 11px;font-size:.94em}
+.box>p:last-child,.box>ul:last-child{margin-bottom:0}
+.box .lbl{margin-bottom:2px}
+.und{background:var(--und-soft)} .und .lbl{color:var(--und)}
+.tip{background:var(--tip-soft)} .tip .lbl{color:var(--tip)}
+.q{background:var(--q-soft);border:1.5px dashed var(--q)} .q .lbl{color:var(--q)}
+.qt{font-weight:700;margin:2px 0}
+.qt em{font-style:normal}
+.dom{display:inline-flex;gap:7px;align-items:center;font-size:.9em;color:var(--muted);margin-top:6px;cursor:pointer}
+.dom input{width:19px;height:19px;accent-color:var(--und)}
+.cpt.done .c-n::after{content:"✓";margin-left:2px;color:var(--und)}
+.tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86em}
+th,td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+figure{margin:0;text-align:center}
+figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.76em;color:var(--muted);margin-top:3px}
+/* extras */
+.xs{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0;scroll-margin-top:var(--bar,0px)}
+.xs-h{font-size:1.25em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:4px;margin:0 0 10px}
+.ih{font-size:1em;margin:14px 0 6px}
+.pq{border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px;background:var(--soft)}
+.pq summary,.pqq{cursor:pointer;font-weight:700;margin:0}
+.pq[open] summary{margin-bottom:6px}
+.pn{font-family:var(--f-mono);font-size:.78em;color:var(--accent);margin-right:2px}
+.pa>:first-child{margin-top:0}.pa>:last-child{margin-bottom:0}
+.ref{font-size:.8em;color:var(--muted);white-space:nowrap}
+a{color:var(--accent)}
+.gal{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.gal figure{margin:0;flex:1 1 140px;max-width:100%}.gal img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}.gal figcaption{font-size:.8em;color:var(--muted)}pre{overflow-x:auto;max-width:100%;font-size:.8em;background:var(--soft);padding:8px;border-radius:8px}
+body{font-size:17px}
+.wrap{padding-block:14px 60px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.bar{position:relative;z-index:5;border-radius:12px;border:1px solid var(--line);background:var(--surface);border-bottom:1px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.row{display:flex;gap:8px;align-items:center;min-width:0}
+.row select,.row input[type=search]{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0;flex:1}
+.mode{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.mode button{font:inherit;font-size:13px;border:0;background:var(--surface);color:var(--ink);padding:6px 10px;cursor:pointer}
+.mode button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;min-width:0}
+.chip{font:inherit;font-size:13px;white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chip.c1[aria-pressed="true"]{background:var(--lv1);border-color:var(--lv1);color:#fff}
+.chip.c2[aria-pressed="true"]{background:var(--lv2);border-color:var(--lv2);color:#fff}
+.chip.c3[aria-pressed="true"]{background:var(--lv3);border-color:var(--lv3);color:#fff}
+.prog{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;font-variant-numeric:tabular-nums}
+.pbar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}.pbar i{display:block;height:100%;width:0;background:var(--und)}
+.blk-h{cursor:pointer;user-select:none}
+.blk-h::after{content:"▾";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.1em;transition:transform .2s}
+.blk.open .blk-h::after{transform:translateY(-50%) rotate(180deg)}
+.blk:not(.open) .cpt{display:none}
+.blk[hidden],.cpt[hidden]{display:none!important}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tbtn{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 11px;cursor:pointer}
+.show{display:none;font:inherit;font-weight:700;font-size:14px;border:1.5px solid var(--q);color:var(--q);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;margin-top:6px;margin-right:8px}
+body.test .show{display:inline-block}
+body.test .cpt:not(.reveal) .c-body>:not(.q){display:none}
+body.test .cpt:not(.reveal) .c-body{gap:0}
+.hidebtn{font:inherit;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer}
+.hidebtn .sw{flex:none;width:40px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.hidebtn .sw i{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--surface);transition:left .2s}
+.hidebtn[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.hidebtn[aria-pressed="true"] .sw{background:var(--lv1)}
+.hidebtn[aria-pressed="true"] .sw i{left:21px}
+body.hidedefs .fd.easy,body.hidedefs .fd.ok{position:relative;cursor:pointer;color:transparent;user-select:none}
+body.hidedefs .fd.easy *,body.hidedefs .fd.ok *{color:transparent!important;border-color:transparent}
+body.hidedefs .fd.easy:not(.peek)::after,body.hidedefs .fd.ok:not(.peek)::after{content:"👆 Toca para ver";position:absolute;inset:0;display:grid;place-items:center;border-radius:8px;background:repeating-linear-gradient(135deg,var(--soft) 0 10px,var(--line) 10px 20px);color:var(--muted);font-family:var(--f-mono);font-size:.78em;font-weight:500;letter-spacing:.04em;padding:0 12px;text-align:center}
+body.hidedefs .fd.ok:not(.peek)::after{content:"📌 ¿Cuál es la definición de la diapositiva? · toca para ver"}
+body.hidedefs .fd.easy:not(.peek)::after{content:"💡 ¿Qué significa? · toca para ver"}
+body.hidedefs .fd.peek,body.hidedefs .fd.peek *{color:inherit!important;user-select:auto}
+body.hidedefs .fd.peek{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.hidebtn .sw,.hidebtn .sw i{transition:none}}
+.empty{color:var(--muted);text-align:center;padding:20px}
+.chip:focus-visible,.mode button:focus-visible,.show:focus-visible,.tbtn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.blk-h:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+[hidden]{display:none!important}
+.fab.hf{bottom:calc(78px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);padding:10px 14px 10px 10px}
+.fab.hf .sw{flex:none;width:36px;height:20px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.fab.hf .sw i{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.3);transition:left .2s}
+.fab.hf[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.fab.hf[aria-pressed="true"] .sw{background:var(--lv1)}
+.fab.hf[aria-pressed="true"] .sw i{left:18px}
+.res{border:1px solid var(--line);border-radius:10px;background:var(--surface);max-height:60vh;overflow:auto}
+.res .rh{position:sticky;top:0;background:var(--soft);font-family:var(--f-mono);font-size:12px;color:var(--muted);padding:7px 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.res .rh button{font:inherit;border:0;background:none;color:var(--accent);cursor:pointer;padding:0}
+.ri{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 10px;color:var(--ink);cursor:pointer}
+.ri:last-child{border-bottom:0}
+.ri:hover,.ri:focus-visible{background:var(--soft)}
+.ri .rk{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.ri .rt{display:block;font-weight:700;line-height:1.25}
+.ri .rs{display:block;font-size:.85em;color:var(--muted);line-height:1.35;margin-top:2px}
+.res mark,.hl mark{background:#ffe066;color:#1d1828;border-radius:3px;padding:0 1px}
+.res .none{padding:12px 10px;color:var(--muted)}
+.flash{animation:fl 2.2s ease}
+@keyframes fl{0%,40%{box-shadow:0 0 0 4px #ffe066}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none;outline:3px solid #ffe066}}
+.simlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:11px 14px;font-size:.95em}
+.simlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+a.dt{text-decoration:none;display:inline-flex;align-items:center}
+.dc.full{color:var(--und);font-weight:700}
+/* ===== Mi plan ===== */
+#planOv{position:fixed;inset:0;z-index:55;background:var(--bg);overflow:auto;--ok:var(--und);--ok-soft:var(--und-soft);--warn:var(--tip);--warn-soft:var(--tip-soft);--rev:var(--lv3);--rev-soft:var(--lv3-soft)}
+#planOv .pwrap{max-width:720px;margin:0 auto;padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+#planOv .ptop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+#planOv .px{flex:none;font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.planlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px solid var(--accent);border-radius:12px;padding:11px 14px;font:inherit;font-size:.95em;width:100%;text-align:left;cursor:pointer}
+.planlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+#planOv .eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+#planOv h1{font-size:1.9em;line-height:1.08;margin:4px 0 4px}
+#planOv .sub{color:var(--muted);margin:0}
+#planOv .count{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#planOv .count .n{font-family:var(--f-display);font-weight:800;font-size:2.4em;line-height:1;color:var(--lv1);font-variant-numeric:tabular-nums;min-width:1.4ch;text-align:center}
+#planOv .count p{margin:0}
+#planOv .k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+#planOv .cfg{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+#planOv .days{display:flex;flex-wrap:wrap;gap:6px}
+#planOv .dchip{font:inherit;font-weight:700;font-size:15px;min-width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+#planOv .dchip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#planOv .seg{display:flex;gap:6px;flex-wrap:wrap}
+#planOv .seg button{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:7px 12px;cursor:pointer}
+#planOv .seg button[aria-pressed="true"]{border-color:var(--accent);font-weight:700;background:var(--surface)}
+#planOv .note{font-size:.9em;border-radius:10px;padding:9px 11px}
+#planOv .note.warn{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn)}
+#planOv .note.ok{background:var(--ok-soft);border-left:4px solid var(--ok)}
+#planOv .day{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#planOv .day-h{padding:12px 14px 10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+#planOv .day-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+#planOv .day-h h2{font-size:1.3em}
+#planOv .day-h .when{font-family:var(--f-mono);font-size:.75em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+#planOv .day-h .goal{font-size:.92em;color:var(--muted);margin:0}
+#planOv .times{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.9em;color:var(--muted)}
+#planOv .times input{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:4px 6px}
+#planOv .dprog{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+#planOv .dprog i{display:block;height:100%;background:var(--ok);width:0}
+#planOv .badge{font-family:var(--f-mono);font-size:.7em;border-radius:999px;padding:2px 8px;white-space:nowrap}
+#planOv .badge.today{background:var(--accent);color:var(--accent-ink)}
+#planOv .badge.done{background:var(--ok-soft);color:var(--ok)}
+#planOv .tasks{list-style:none;margin:0;padding:6px 8px 10px}
+#planOv .task{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding:9px 6px;border-radius:10px;align-items:start}
+#planOv .task+.task{border-top:1px solid var(--line)}
+#planOv .task input{width:22px;height:22px;margin-top:2px;accent-color:var(--ok)}
+#planOv .t-time{font-family:var(--f-mono);font-size:.75em;color:var(--muted);font-variant-numeric:tabular-nums}
+#planOv .t-title{font-weight:700;line-height:1.3}
+#planOv .t-det{font-size:.88em;color:var(--muted);line-height:1.4;margin-top:2px}
+#planOv .t-det b{color:var(--ink)}
+#planOv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 3px 0 0;transform:translateY(-1px)}
+#planOv .d1{background:var(--lv1)}
+#planOv .d2{background:var(--lv2)}
+#planOv .d3{background:var(--lv3)}
+#planOv .t-go{display:inline-block;margin-top:6px;font-size:.85em;font-weight:700;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);border-radius:8px;padding:4px 10px}
+#planOv .task.brk{grid-template-columns:1fr;padding:5px 6px;color:var(--muted);font-size:.88em}
+#planOv .task.brk .t-title{font-weight:400}
+#planOv .task.rev .t-title{color:var(--rev)}
+#planOv .task.done .t-title,#planOv .task.done .t-det{text-decoration:line-through;opacity:.55}
+#planOv .foot{color:var(--muted);font-size:.85em}
+#planOv .dchip:focus-visible,#planOv .seg button:focus-visible,#planOv .t-go:focus-visible,#planOv input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* ===== Temporizador ===== */
+.tmr{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.blk:not(.open) .tmr{display:none}
+.tmr p{margin:0;font-size:.92em}
+.tmr .tm-done{color:var(--und);font-weight:700}
+.tmr button{font:inherit;font-weight:800;font-size:15px;border:0;border-radius:10px;padding:9px 14px;background:var(--accent);color:var(--accent-ink);cursor:pointer;white-space:nowrap}
+.tpill{position:fixed;z-index:30;left:50%;transform:translateX(-50%);top:calc(8px + env(safe-area-inset-top,0px));width:min(440px,calc(100vw - 24px));background:var(--ink);color:var(--surface);border-radius:16px;padding:9px 10px 9px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tpill .tp-txt{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.15}
+.tpill .tp-b{font-size:.75em;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tpill .tp-t{font-family:var(--f-mono);font-size:1.6em;font-weight:500;font-variant-numeric:tabular-nums}
+.tpill.over .tp-t{color:var(--lv1)}
+.tpill .tp-bar{position:absolute;left:12px;right:12px;bottom:4px;height:3px;border-radius:2px;background:rgba(127,127,127,.35);overflow:hidden}
+.tpill .tp-bar i{display:block;height:100%;background:var(--und);width:0}
+.tpill.over .tp-bar i{background:var(--lv1)}
+.tpill button{flex:none;font:inherit;font-weight:800;font-size:14px;border:0;border-radius:10px;padding:8px 11px;cursor:pointer;background:var(--surface);color:var(--ink)}
+.tpill button.fin{background:var(--und);color:var(--surface)}
+.tpill button.x{background:transparent;color:var(--surface);opacity:.7;padding:8px 6px;font-size:18px;line-height:1}
+/* ===== Leyenda desplegable ===== */
+.top .legend .tag{cursor:pointer;border:0;font:inherit;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;padding:5px 10px}
+.top .legend .tag::after{content:" ▾";display:inline-block;transition:transform .2s}
+.top .legend .tag[aria-expanded="true"]::after{transform:rotate(180deg)}
+.top .legend .tag[aria-expanded="true"]{outline:3px solid var(--line);outline-offset:1px}
+.lvpanel{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lc);border-radius:12px;padding:10px 12px;max-height:60vh;overflow:auto}
+.lvpanel h4{margin:0 0 6px;font-family:var(--f-display);font-size:1em}
+.lvpanel .lg{font-family:var(--f-mono);font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 2px}
+.lvpanel a{display:block;color:var(--ink);text-decoration:none;padding:6px 4px;border-radius:8px;font-size:.92em;line-height:1.3}
+.lvpanel a:hover{background:var(--soft)}
+.lvpanel a b{font-family:var(--f-mono);font-weight:500;color:var(--lc);margin-right:4px}
+.lvpanel a.ok{opacity:.55}.lvpanel a.ok::after{content:" ✓";color:var(--und)}
+/* ===== Índice lateral ===== */
+.drw{overflow:hidden;visibility:hidden;position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease,visibility 0s linear .25s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
+.drw.on{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
+.scrim{position:fixed;inset:0;z-index:35;background:rgba(10,8,14,.45)}
+.drw-h{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 8px;font-family:var(--f-display);font-size:1.15em}
+.drw-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;width:38px;height:38px;cursor:pointer}
+.drw-tools{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;border-bottom:1px solid var(--line)}
+.dt{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:8px;padding:7px 9px;cursor:pointer;white-space:nowrap}
+.dt.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.drw-l{overflow:auto;flex:1;padding:8px 8px 24px;display:flex;flex-direction:column;gap:2px}
+.db summary{list-style:none;display:flex;align-items:center;gap:10px;padding:9px 8px;border-radius:10px;cursor:pointer;font-weight:700}
+.db summary::-webkit-details-marker{display:none}
+.db summary:hover,.db[open] summary{background:var(--soft)}
+.dn{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-family:var(--f-mono);font-size:.78em}
+.dt2{flex:1;line-height:1.25}
+.dc{font-family:var(--f-mono);font-size:.72em;color:var(--muted);font-weight:500}
+.db summary::after{content:"▾";color:var(--muted);transition:transform .2s}
+.db[open] summary::after{transform:rotate(180deg)}
+.dl,.dbk{display:flex;align-items:baseline;gap:8px;padding:6px 8px 6px 44px;color:var(--ink);text-decoration:none;font-size:.9em;line-height:1.3;border-radius:8px}
+.dl:hover,.dbk:hover{background:var(--soft)}
+.dbk{color:var(--accent);font-weight:700;font-size:.82em}
+.dl i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--lv2);transform:translateY(-1px)}
+.dl.i1 i{background:var(--lv1)} .dl.i3 i{background:var(--lv3)}
+.dx{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:14px 8px 4px}
+.drw-l>.dl{padding-left:12px}
+.fab.idx{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--ink);color:var(--surface)}
+.fab.up{bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+@media (min-width:1100px){
+  .drw{transform:none;box-shadow:none;visibility:visible}
+  .scrim,.fab.idx,.drw-x{display:none!important}
+  .wrap{margin-left:max(360px,calc((100vw - 760px)/2))}
+  .fab.up{left:calc(356px + 16px);bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){.drw{transition:none}}
+
+/* ===== Tarjetas ===== */
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;font:inherit;font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 18px;background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.fab.up{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:13px 16px}
+.tbtn.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.fc{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.fc-in{max-width:620px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+.fc-top{display:flex;align-items:center;gap:10px}
+.fc-top h2{font-size:1.15em;flex:1}
+.fc-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.fc-setup{display:flex;flex-direction:column;gap:12px;overflow:auto}
+.fc-setup .lbl{margin:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:9px 12px;cursor:pointer;text-align:left}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--q-soft);font-weight:700}
+.opt small{display:block;font-size:.8em;color:var(--muted);font-weight:400}
+.go{font:inherit;font-weight:800;font-size:17px;border:0;border-radius:12px;padding:14px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.go:disabled{opacity:.45;cursor:default}
+#fcGo{position:sticky;bottom:0;box-shadow:0 -8px 16px var(--bg)}
+.fc-prog{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fc-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;display:flex}
+.fc-bar .g{background:var(--und)} .fc-bar .r{background:var(--lv1)}
+.stage{flex:1;min-height:0;perspective:1400px}
+.card3{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.3,.7,.3,1);cursor:pointer}
+.card3.flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;padding:18px;overflow:hidden}
+.face.front{border-top:8px solid var(--cc,var(--accent));justify-content:center;text-align:center;gap:14px}
+.face.back{transform:rotateY(180deg);border-top:8px solid var(--und)}
+.face .kind{font-family:var(--f-mono);font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.face.front .qq{font-family:var(--f-display);font-size:1.45em;font-weight:800;line-height:1.2;text-wrap:balance}
+.face .hint{color:var(--muted);font-size:.85em}
+.bulb{font-size:2.4em;line-height:1;filter:grayscale(1) opacity(.5);transition:filter .3s}
+.card3.flip .bulb{filter:none}
+.face.back .ans{overflow:auto;flex:1;min-height:0;font-size:.98em}
+.face.back .ans>:first-child{margin-top:0}
+.face.back .ans .formal{font-weight:700;font-size:1.15em;border-left:4px solid var(--accent);padding-left:10px}
+.face.back .src{font-size:.78em;color:var(--muted);margin-top:8px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btns button{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px 8px;cursor:pointer}
+.b-no{background:var(--lv1-soft);color:var(--lv1)} .b-si{background:var(--und-soft);color:var(--und)}
+.btns button:disabled{opacity:.35;cursor:default}
+.flipb{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px;background:var(--ink);color:var(--surface);cursor:pointer}
+.fc-end{display:flex;flex-direction:column;gap:12px;align-items:stretch;text-align:center;overflow:auto}
+.fc-end .score{font-family:var(--f-display);font-size:3.2em;font-weight:800;line-height:1}
+@media (prefers-reduced-motion:reduce){.card3{transition:none}}
+</style>
+<div class="wrap">
+<header class="top"><p class="eyebrow">🇬🇧 Inglés · 1er examen</p>
+<h1>Repaso completo: verbos y los 4 presentes</h1>
+<p class="sub">Unit 1 (verbos regulares e irregulares) + Unit 2 (presentes) · 5 bloques · 26 conceptos</p>
+<div class="legend"><span class="tag lv1">🔴 IMPRESCINDIBLE · 25</span><span class="tag lv2">🟠 IMPORTANTE · 1</span></div></header><details class="how"><summary>🧭 Cómo usar este repaso</summary><div class="how-b"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>
+<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div></details>
+<div class="bar">
+  <div class="row">
+    <select id="toc" aria-label="Ir a un bloque"><option value="">Ir a…</option><option value="b0">Bloque 1 · Unit 1: Regular and Irregular Verbs</option><option value="b1">Bloque 2 · Unit 2: Present Simple</option><option value="b2">Bloque 3 · Unit 2: Present Continuous</option><option value="b3">Bloque 4 · Unit 2: Present Perfect Simple</option><option value="b4">Bloque 5 · Unit 2: Present Perfect Continuous</option><option value="x1">📋 Tabla resumen de los 4 presentes</option><option value="trampas">⚠️ Trampas típicas del examen (y de los hispanohablantes)</option><option value="chequeo">✅ Chequeo final (contesta sin mirar; si fallas, vuelve al concepto)</option><option value="x4">📚 Anexo 1 · Los 198 verbos irregulares de la lista de la profe, ordenados por patrón</option><option value="x5">📚 Anexo 2 · Los 202 verbos regulares de la lista, ordenados por regla de ortografía</option><option value="impres">⚡ Lo imprescindible</option><option value="glosario">📖 Glosario</option></select>
+    <div class="mode" role="group" aria-label="Modo"><button type="button" id="mRead" aria-pressed="true">Leer</button><button type="button" id="mTest" aria-pressed="false">Ponte a prueba</button></div>
+  </div>
+  <div class="row srow"><input type="search" id="q" placeholder="🔎 Buscar cualquier palabra" aria-label="Buscar en el repaso" autocomplete="off"></div>
+  <div class="res" id="res" hidden></div>
+  <div class="chips" role="group" aria-label="Filtrar por importancia">
+    <button type="button" class="chip" data-f="0" aria-pressed="true">Todos</button>
+    <button type="button" class="chip c1" data-f="1" aria-pressed="false">🔴 Imprescindibles</button>
+    <button type="button" class="chip c2" data-f="2" aria-pressed="false">🟠 Importantes</button>
+    <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
+    <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
+  </div>
+  <div class="prog"><span id="pText">Dominas 0</span><span id="pHint"></span></div>
+  <div class="pbar"><i id="pBar"></i></div>
+</div>
+<button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
+<a class="simlink" href="../../ingles1/simulacro/"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>
+
+<section class="blk" id="b0" data-min="40"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">Unit 1: Regular and Irregular Verbs</span><span class="bc">⏱ 40 min · Conceptos 1–7 · 6 🔴 · <b class="bd">0</b>/7 dominados</span></h2><article class="cpt lv2" id="c1" data-lv="2">
+<header class="c-h"><span class="c-n">1</span><h3>Índice del curso</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 U1, diapositiva 1; U2, diapositiva 1</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>el curso tiene 9 unidades: <strong>1</strong> Regular and Irregular Verbs · <strong>2</strong> Present · <strong>3</strong> Modal Verbs · <strong>4</strong> Comparative and Superlative · <strong>5</strong> Past · <strong>6</strong> Future · <strong>7</strong> Conditionals · <strong>8</strong> Relative Clauses · <strong>9</strong> Passive Voice. En este examen entran la <strong>1</strong> y la <strong>2</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>la Unidad 1 (verbos) es la base de todo: sin el <strong>participio</strong> no puedes formar el <em>Present Perfect</em> de la Unidad 2.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Índice del curso.</p><label class="dom"><input type="checkbox" data-n="1"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c2" data-lv="1">
+<header class="c-h"><span class="c-n">2</span><h3>Verbos regulares</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U1, diapositiva 3</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Infinitivo</b><div class="fd easy"><span class="fl">💡 Qué significa</span>La forma básica del verbo, la del diccionario (<em>work</em>, trabajar). <strong>Pasado (past simple):</strong> la forma para acciones terminadas (<em>worked</em>, trabajé). <strong>Participio (past participle):</strong> la forma que va con <em>have</em> en el <em>Present Perfect</em> (<em>worked</em>, trabajado). <strong>Persona:</strong> quién hace la acción (I, you, he, she, it, we, they).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>un verbo es <strong>regular</strong> cuando forma el <strong>pasado</strong> y el <strong>participio</strong> de la misma manera: <strong>añadiendo "-ed" al infinitivo</strong>. La forma es <strong>idéntica para todas las personas</strong>.</p>
+<ul>
+<li><em>work &gt; worked &gt; worked</em> · <em>play &gt; played &gt; played</em></li>
+</ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>en los regulares, <strong>pasado = participio</strong> y los dos terminan en <em>-ed</em>. Y no cambian con la persona: <em>I worked, she worked, they worked</em>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>regular = "-ed" para todo y para todos</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es un verbo regular? Di las tres formas de "play" y de "work".</p><label class="dom"><input type="checkbox" data-n="2"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c3" data-lv="1">
+<header class="c-h"><span class="c-n">3</span><h3>Ortografía del "-ed"</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U1, diapositiva 4</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Consonante</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Letra que no es vocal (b, c, d, f…). <strong>Vocal:</strong> a, e, i, o, u. <strong>Sílaba acentuada / tónica:</strong> la que suena más fuerte al decir la palabra (pre-<strong>FER</strong>). <strong>Átona:</strong> la que suena débil (<strong>VI</strong>-sit: el golpe va en <em>vi</em>, así que <em>-sit</em> es átona).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Regla</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acaba en <strong>-e</strong></td>
+<td>Solo se añade <strong>-d</strong></td>
+<td>change &gt; chang<strong>ed</strong> · believe &gt; believ<strong>ed</strong></td>
+</tr>
+<tr>
+<td><strong>Consonante + y</strong></td>
+<td>La <strong>y</strong> pasa a <strong>i + -ed</strong></td>
+<td>study &gt; stud<strong>ied</strong> · try &gt; tr<strong>ied</strong></td>
+</tr>
+<tr>
+<td><strong>Vocal + y</strong></td>
+<td>Se <strong>mantiene</strong> la <strong>y</strong> + -ed</td>
+<td>play &gt; play<strong>ed</strong> · enjoy &gt; enjoy<strong>ed</strong></td>
+</tr>
+<tr>
+<td><strong>Consonante + vocal + consonante</strong>, con la <strong>última sílaba acentuada</strong></td>
+<td>Se <strong>dobla</strong> la consonante final</td>
+<td>stop &gt; sto<strong>pp</strong>ed · prefer &gt; prefe<strong>rr</strong>ed · plan &gt; pla<strong>nn</strong>ed</td>
+</tr>
+</tbody>
+</table></div>
+<p>🟥 <strong>Pero: visit &gt; visited · open &gt; opened</strong> (la última sílaba es <strong>átona</strong>, no lleva el acento → <strong>no se dobla</strong>).</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p><em>prefer</em> se pronuncia pre-<strong>FER</strong> (fuerza al final) → <em>preferred</em>. <em>Visit</em> se pronuncia <strong>VI</strong>-sit (fuerza al principio) → <em>visited</em>, sin doblar. Los verbos de una sílaba (<em>stop, plan</em>) siempre llevan la fuerza en esa sílaba → se dobla.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"C-V-C con golpe al final → dobla"</strong>. Y <strong>"la y se queda si tiene una vocal delante"</strong> (pl<strong>ay</strong>, enj<strong>oy</strong>); si tiene consonante, se va (st<strong>udy</strong> → studied).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Escribe el pasado de: change, cry, stay, stop, prefer, open, visit, plan.</p><label class="dom"><input type="checkbox" data-n="3"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c4" data-lv="1">
+<header class="c-h"><span class="c-n">4</span><h3>Pronunciación del "-ed"</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U1, diapositiva 5</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Sonido sonoro</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Al decirlo, la garganta <strong>vibra</strong> (pon la mano en el cuello y di "mmm": vibra). <strong>Sonido sordo:</strong> la garganta <strong>no vibra</strong> (di "sss": no vibra). <strong>Sílaba:</strong> cada golpe de voz de una palabra (<em>wait-ed</em> = 2 sílabas).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>la terminación <strong>-ed</strong> se pronuncia de <strong>tres formas</strong> según el <strong>sonido final</strong> del infinitivo:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Se pronuncia</th>
+<th>Cuándo</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/d/</strong></td>
+<td>Tras <strong>sonido sonoro</strong>: b, g, l, m, n, v, z, r o vocal</td>
+<td>cleaned [klind] · yelled [jeld] · played [pleid]</td>
+</tr>
+<tr>
+<td><strong>/t/</strong></td>
+<td>Tras <strong>sonido sordo</strong>: p, f, k, s, sh, ch</td>
+<td>looked [lukt] · kissed [kist] · washed [wɒʃt]</td>
+</tr>
+<tr>
+<td><strong>/ɪd/</strong></td>
+<td>Tras los sonidos <strong>d</strong> o <strong>t</strong></td>
+<td>ended [endid] · waited [weitid] · decided [disaidid]</td>
+</tr>
+</tbody>
+</table></div>
+<p>🟥 <strong>Truco de la profe: solo se añade una sílaba extra cuando el verbo ya acaba en "d" o "t".</strong></p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p><em>looked</em> se dice "lukt" (<strong>una sílaba</strong>), no "lu-ked". Solo <em>wait-ed</em>, <em>end-ed</em>, <em>de-ci-ded</em> ganan una sílaba, porque no se pueden decir dos "t" o dos "d" seguidas.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Si acaba en T o D → /ɪd/ (una sílaba más). Si no, la -ed casi no se oye"</strong>: /t/ tras sonidos "de soplar" (p, f, k, s, sh, ch) y /d/ tras el resto.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo se pronuncia la -ed de wanted, watched y lived? ¿Cuál tiene una sílaba más?</p><label class="dom"><input type="checkbox" data-n="4"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c5" data-lv="1">
+<header class="c-h"><span class="c-n">5</span><h3>Verbos irregulares</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U1, diapositiva 6</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Past participle</b><div class="fd easy"><span class="fl">💡 Qué significa</span>El participio, la 3ª columna de la lista (<em>gone, written</em>). <strong>Patrón:</strong> forma que se repite en varios verbos.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>son los verbos que <strong>no siguen la regla del "-ed"</strong>. Cada uno tiene su <strong>propia forma de pasado y de participio</strong> y hay que aprenderlas. <strong>No hay reglas fijas, pero sí patrones</strong> que facilitan mucho el estudio. Orden: <strong>infinitivo &gt; past &gt; past participle</strong>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>recítalos <strong>siempre en el mismo orden y en voz alta</strong>, como una canción: <em>go – went – gone</em>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es un verbo irregular? Di las 3 formas de go, write y be.</p><label class="dom"><input type="checkbox" data-n="5"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c6" data-lv="1">
+<header class="c-h"><span class="c-n">6</span><h3>Estrategia: aprenderlos por patrones</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U1, diapositiva 7</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>en lugar de memorizar una lista larga, <strong>agrupa los verbos por patrón</strong>:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Ejemplos de la profe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Las tres formas iguales</strong> (A-A-A)</td>
+<td>cut &gt; cut &gt; cut · put &gt; put &gt; put · hit &gt; hit &gt; hit · cost &gt; cost &gt; cost · let &gt; let &gt; let · shut &gt; shut &gt; shut</td>
+</tr>
+<tr>
+<td><strong>2. Pasado y participio iguales</strong> (A-B-B)</td>
+<td>buy &gt; bought &gt; bought · teach &gt; taught &gt; taught · find &gt; found &gt; found</td>
+</tr>
+<tr>
+<td><strong>3. Las tres formas distintas</strong> (A-B-C)</td>
+<td>sing &gt; sang &gt; sung · drive &gt; drove &gt; driven · write &gt; wrote &gt; written</td>
+</tr>
+<tr>
+<td><strong>4. Infinitivo y participio iguales</strong> (A-B-A)</td>
+<td>come &gt; came &gt; come · run &gt; ran &gt; run · become &gt; became &gt; become</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>el <strong>grupo 2 (A-B-B)</strong> es el más grande: si aprendes el pasado, ya tienes el participio. El <strong>grupo 1 (A-A-A)</strong> es el más fácil: no cambia nada. El <strong>grupo 3</strong> es el difícil: tres formas distintas. En el <strong>anexo</strong> tienes <strong>los 198 verbos de la lista de la profe ordenados por estos patrones</strong>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Trucos por grupo:</strong></p>
+<ul>
+<li><strong>A-A-A:</strong> casi todos son <strong>cortos y acaban en -t o -d</strong> (cut, put, hit, let, set, shut, hurt, cost, spread).</li>
+<li><strong>A-B-B:</strong> muchos acaban en <strong>-ought / -aught</strong> (bought, brought, thought, fought, caught, taught) o cambian a <strong>-t</strong> (keep &gt; kept, sleep &gt; slept, feel &gt; felt).</li>
+<li><strong>A-B-C:</strong> muchos tienen <strong>vocal i – a – u</strong> (sing–sang–sung, drink–drank–drunk, swim–swam–swum, begin–began–begun) o el participio en <strong>-en / -n</strong> (written, driven, taken, eaten, given, known).</li>
+<li><strong>A-B-A:</strong> solo hay <strong>4 muy comunes</strong>: <strong>come, become, run, overcome</strong>.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los 4 patrones de los verbos irregulares? Pon 2 ejemplos de cada uno.</p><label class="dom"><input type="checkbox" data-n="6"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c7" data-lv="1">
+<header class="c-h"><span class="c-n">7</span><h3>Los verbos irregulares más comunes</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U1, diapositiva 8</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Lo que dice la profe (los 30 que tienes que saber sí o sí):</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Infinitivo</th>
+<th>Past</th>
+<th>Participle</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>be</td>
+<td>was / were</td>
+<td>been</td>
+<td>ser / estar</td>
+</tr>
+<tr>
+<td>have</td>
+<td>had</td>
+<td>had</td>
+<td>tener / haber</td>
+</tr>
+<tr>
+<td>do</td>
+<td>did</td>
+<td>done</td>
+<td>hacer</td>
+</tr>
+<tr>
+<td>go</td>
+<td>went</td>
+<td>gone</td>
+<td>ir</td>
+</tr>
+<tr>
+<td>make</td>
+<td>made</td>
+<td>made</td>
+<td>hacer / fabricar</td>
+</tr>
+<tr>
+<td>say</td>
+<td>said</td>
+<td>said</td>
+<td>decir</td>
+</tr>
+<tr>
+<td>get</td>
+<td>got</td>
+<td>got</td>
+<td>conseguir / llegar</td>
+</tr>
+<tr>
+<td>know</td>
+<td>knew</td>
+<td>known</td>
+<td>saber / conocer</td>
+</tr>
+<tr>
+<td>think</td>
+<td>thought</td>
+<td>thought</td>
+<td>pensar</td>
+</tr>
+<tr>
+<td>take</td>
+<td>took</td>
+<td>taken</td>
+<td>tomar / coger</td>
+</tr>
+<tr>
+<td>see</td>
+<td>saw</td>
+<td>seen</td>
+<td>ver</td>
+</tr>
+<tr>
+<td>come</td>
+<td>came</td>
+<td>come</td>
+<td>venir</td>
+</tr>
+<tr>
+<td>give</td>
+<td>gave</td>
+<td>given</td>
+<td>dar</td>
+</tr>
+<tr>
+<td>find</td>
+<td>found</td>
+<td>found</td>
+<td>encontrar</td>
+</tr>
+<tr>
+<td>tell</td>
+<td>told</td>
+<td>told</td>
+<td>contar / decir</td>
+</tr>
+<tr>
+<td>become</td>
+<td>became</td>
+<td>become</td>
+<td>llegar a ser</td>
+</tr>
+<tr>
+<td>leave</td>
+<td>left</td>
+<td>left</td>
+<td>dejar / irse</td>
+</tr>
+<tr>
+<td>feel</td>
+<td>felt</td>
+<td>felt</td>
+<td>sentir</td>
+</tr>
+<tr>
+<td>put</td>
+<td>put</td>
+<td>put</td>
+<td>poner</td>
+</tr>
+<tr>
+<td>bring</td>
+<td>brought</td>
+<td>brought</td>
+<td>traer</td>
+</tr>
+<tr>
+<td>begin</td>
+<td>began</td>
+<td>begun</td>
+<td>empezar</td>
+</tr>
+<tr>
+<td>keep</td>
+<td>kept</td>
+<td>kept</td>
+<td>guardar / mantener</td>
+</tr>
+<tr>
+<td>hold</td>
+<td>held</td>
+<td>held</td>
+<td>sostener</td>
+</tr>
+<tr>
+<td>write</td>
+<td>wrote</td>
+<td>written</td>
+<td>escribir</td>
+</tr>
+<tr>
+<td>stand</td>
+<td>stood</td>
+<td>stood</td>
+<td>estar de pie</td>
+</tr>
+<tr>
+<td>hear</td>
+<td>heard</td>
+<td>heard</td>
+<td>oír</td>
+</tr>
+<tr>
+<td>let</td>
+<td>let</td>
+<td>let</td>
+<td>dejar / permitir</td>
+</tr>
+<tr>
+<td>mean</td>
+<td>meant</td>
+<td>meant</td>
+<td>significar</td>
+</tr>
+<tr>
+<td>meet</td>
+<td>met</td>
+<td>met</td>
+<td>conocer / quedar</td>
+</tr>
+<tr>
+<td>run</td>
+<td>ran</td>
+<td>run</td>
+<td>correr</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p><strong>be</strong> es el único con <strong>dos pasados</strong>: <strong>was</strong> (I, he, she, it) y <strong>were</strong> (you, we, they).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>divídelos en <strong>3 tandas de 10</strong> y repite cada tanda tapando las columnas 2 y 3 hasta decirla sin fallos.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di el pasado y el participio de: be, go, see, take, write, think, bring, begin, know, give.</p><label class="dom"><input type="checkbox" data-n="7"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b1" data-min="25"><h2 class="blk-h"><span class="bn">BLOQUE 2</span><span class="bt">Unit 2: Present Simple</span><span class="bc">⏱ 25 min · Conceptos 8–12 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c8" data-lv="1">
+<header class="c-h"><span class="c-n">8</span><h3>Present Simple: forma y significado</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 3; Infografía, página 1</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Infinitivo sin "to"</b><div class="fd easy"><span class="fl">💡 Qué significa</span>El verbo "pelado" (<em>work</em>, no <em>to work</em>). <strong>Tercera persona del singular:</strong> he (él), she (ella), it (ello, para cosas y animales).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>se forma con el <strong>infinitivo sin "to"</strong> para <strong>I, you, we, they</strong>, y se añade <strong>"-s"</strong> en la <strong>tercera persona del singular (he, she, it)</strong>. Es el tiempo de <strong>lo habitual, lo permanente y lo que siempre es verdad</strong>.</p>
+<ul>
+<li><em>I work · She works</em></li>
+</ul></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"He, She, It → la -s se lleva"</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo se forma el Present Simple? Conjuga "play" con I, she, they.</p><label class="dom"><input type="checkbox" data-n="8"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c9" data-lv="1">
+<header class="c-h"><span class="c-n">9</span><h3>Present Simple: los 6 usos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 4; Infografía, página 1</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Imperativo</b><div class="fd easy"><span class="fl">💡 Qué significa</span>La forma de dar órdenes (<em>Open!</em>, ¡Abre!). <strong>Horario / programación:</strong> algo fijado por un calendario oficial (trenes, películas, clases). <strong>Adverbio de frecuencia:</strong> palabra que dice <strong>cada cuánto</strong> pasa algo.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Uso</th>
+<th>Ejemplos de la profe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Hábitos y rutinas</strong></td>
+<td><em>I get up at seven every day.</em> · <em>She never drinks coffee.</em></td>
+</tr>
+<tr>
+<td><strong>2. Verdades generales y hechos</strong></td>
+<td><em>Water boils at 100 degrees.</em> · <em>My sister lives in Bilbao.</em></td>
+</tr>
+<tr>
+<td><strong>3. Horarios y programaciones</strong></td>
+<td><em>The train leaves at 10:00.</em> · <em>The film starts at eight.</em></td>
+</tr>
+<tr>
+<td><strong>4. Instrucciones e imperativo</strong></td>
+<td><em>Open the window, please.</em> · <em>Turn left at the corner.</em></td>
+</tr>
+<tr>
+<td><strong>5. Opiniones y gustos</strong></td>
+<td><em>I think it's a good idea.</em> · <em>They love Italian food.</em></td>
+</tr>
+<tr>
+<td><strong>6. Narraciones y resúmenes</strong></td>
+<td><em>The book tells the story of…</em> · <em>Then he opens the door and…</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Se usa mucho con <strong>adverbios de frecuencia</strong>: always · usually · often · sometimes · rarely · hardly ever · never.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>aunque <em>The train leaves at 10:00</em> es futuro, va en <strong>presente simple</strong> porque es un <strong>horario fijo</strong>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Truco de los 6 usos:</strong> <strong>"Hábito, Verdad, Horario, Orden, Opinión, Historia"</strong> → "<strong>H</strong>oy <strong>V</strong>eo <strong>H</strong>oras <strong>O</strong>cupadas <strong>O</strong>tra <strong>H</strong>ora".</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 6 usos del Present Simple con un ejemplo de cada uno.</p><label class="dom"><input type="checkbox" data-n="9"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c10" data-lv="1">
+<header class="c-h"><span class="c-n">10</span><h3>Adverbios de frecuencia: dónde van</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 5; Infografía, página 1</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Verbo principal</b><div class="fd easy"><span class="fl">💡 Qué significa</span>El que lleva el significado (<em>eat, talk</em>). <strong>To be:</strong> ser/estar (am, is, are). <strong>Once / twice:</strong> una vez / dos veces.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Van <strong>delante del verbo principal</strong>: <em>I </em><em>always</em><em> talk too much.</em> · <em>He </em><em>never</em><em> eats vegetables.</em></li>
+<li>Pero <strong>detrás del verbo "to be"</strong>: <em>I am </em><em>always</em><em> happy.</em> · <em>He is </em><em>often</em><em> sick.</em></li>
+<li>Escala: <strong>100 %</strong> always · usually · often · sometimes → <strong>0 %</strong> rarely · hardly ever · never.</li>
+<li>Las expresiones como <strong>every day, once a week, twice a month</strong> van <strong>al final</strong> de la frase.</li>
+</ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p><em>always, often, never</em> son <strong>palabras sueltas</strong> que se meten <strong>dentro</strong> de la frase; <em>every day, once a week</em> son <strong>expresiones de varias palabras</strong> que se ponen <strong>al final</strong>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"El adverbio se pone delante del verbo, pero al be le deja pasar primero"</strong> (<em>I </em><em>am</em><em> always…</em>). Y la escala, de más a menos: <strong>"Al-Us-Of-Som | Ra-Har-Nev"</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Ordena: (always / is / she / late) y (coffee / never / I / drink). ¿Dónde va "every day"?</p><label class="dom"><input type="checkbox" data-n="10"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c11" data-lv="1">
+<header class="c-h"><span class="c-n">11</span><h3>Present Simple: afirmativa, negativa y pregunta</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 6; Infografía, página 1</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Sujeto</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Quién hace la acción (I, he, my sister…). <strong>Auxiliar:</strong> verbo de ayuda que sirve para negar o preguntar (<em>do / does</em>). <strong>Don't</strong> = do not</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Afirmativa</th>
+<th>Negativa</th>
+<th>Pregunta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sujeto + verbo</td>
+<td>Sujeto + <strong>don't / doesn't</strong> + verbo</td>
+<td><strong>Do / Does</strong> + sujeto + verbo + ?</td>
+</tr>
+<tr>
+<td>I talk</td>
+<td>I don't talk</td>
+<td>Do you talk?</td>
+</tr>
+<tr>
+<td>He eats</td>
+<td>He doesn't eat</td>
+<td>Does he eat?</td>
+</tr>
+<tr>
+<td>They learn</td>
+<td>They don't learn</td>
+<td>Do they learn?</td>
+</tr>
+</tbody>
+</table></div>
+<p>🟥 <strong>¡Atención! Si la frase lleva does o doesn't, el verbo principal pierde la "-s".</strong> <em>He doesn't play tennis.</em> · <em>Does he play tennis?</em> (nunca <em>He doesn't plays</em>).</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>la <strong>-s</strong> de he/she/it <strong>se pasa al auxiliar</strong>: <em>does</em> ya lleva la -s, así que el verbo vuelve a su forma básica. <strong>La -s solo puede ir en un sitio.</strong></p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Una sola -s por frase"</strong>: o en el verbo (<em>He plays</em>) o en el auxiliar (<em>He doe</em><em>s</em><em>n't play</em>). Nunca en los dos.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Pon en negativa y en pregunta: "She works on Saturdays".</p><label class="dom"><input type="checkbox" data-n="11"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c12" data-lv="1">
+<header class="c-h"><span class="c-n">12</span><h3>La "-s" de la tercera persona</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 7; Infografía, página 1</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Regla</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Regla general</strong></td>
+<td>Se añade <strong>-s</strong></td>
+<td>work &gt; works · live &gt; lives</td>
+</tr>
+<tr>
+<td>Acaba en <strong>s, ss, sh, ch, x, o</strong></td>
+<td>Se añade <strong>-es</strong></td>
+<td>watch &gt; watches · go &gt; goes · mix &gt; mixes</td>
+</tr>
+<tr>
+<td><strong>Consonante + y</strong></td>
+<td>La <strong>y</strong> pasa a <strong>-ies</strong></td>
+<td>study &gt; studies · fly &gt; flies</td>
+</tr>
+<tr>
+<td><strong>Vocal + y</strong></td>
+<td>Se mantiene la <strong>y</strong> + <strong>-s</strong></td>
+<td>play &gt; plays · enjoy &gt; enjoys</td>
+</tr>
+<tr>
+<td><strong>Irregulares</strong></td>
+<td><strong>Solo hay tres</strong></td>
+<td>have &gt; <strong>has</strong> · do &gt; <strong>does</strong> · be &gt; <strong>is</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>🟥 <strong>Recuerda: la "-s" es solo para he, she, it.</strong> <em>She works.</em> · <em>We work.</em></p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>se añade <strong>-es</strong> cuando con una sola -s no se podría pronunciar (<em>watchs</em> no se puede decir → <em>watches</em>).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>las letras del <strong>-es</strong> → <strong>"O-S-SS-SH-CH-X"</strong> → "<strong>O</strong>so, <strong>S</strong>í, <strong>S</strong>ss<strong>H</strong>h, <strong>CH</strong>ico e<strong>X</strong>tra". Y la <strong>y</strong> igual que en el pasado: <strong>consonante + y → ies; vocal + y → ys</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Escribe con "she": watch, go, study, play, have, fix, do, kiss.</p><label class="dom"><input type="checkbox" data-n="12"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b2" data-min="25"><h2 class="blk-h"><span class="bn">BLOQUE 3</span><span class="bt">Unit 2: Present Continuous</span><span class="bc">⏱ 25 min · Conceptos 13–17 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c13" data-lv="1">
+<header class="c-h"><span class="c-n">13</span><h3>Present Continuous: forma y significado</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 8; Infografía, página 1</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">-ing</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Terminación que equivale al gerundio español (-ando, -iendo: <em>working</em> = trabajando). <strong>Temporal:</strong> que dura un tiempo y luego acaba.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>se forma con el verbo <strong>to be (am / is / are)</strong> + el verbo principal acabado en <strong>"-ing"</strong>. Es el tiempo de <strong>lo que está pasando ahora</strong> o de <strong>lo temporal</strong>.</p>
+<ul>
+<li><em>I am working · They are studying</em></li>
+</ul>
+<p>🟥 <strong>Ojo (infografía): no te olvides del verbo to be</strong> → <del>She working</del> → <strong><em>She is working.</em></strong></p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>es como el español <strong>"estar + -ando"</strong>: <em>I am working</em> = estoy trabajando. Igual que en español no dices "yo trabajando", en inglés <strong>siempre</strong> hace falta <em>am/is/are</em>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>I → am · he/she/it → is · you/we/they → are</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo se forma el Present Continuous? Traduce: "Ella está leyendo" y "Están jugando".</p><label class="dom"><input type="checkbox" data-n="13"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c14" data-lv="1">
+<header class="c-h"><span class="c-n">14</span><h3>Present Continuous: los 3 usos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 9; Infografía, página 1</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Plan de futuro cerrado</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Algo ya organizado, con hora o día y normalmente con otra persona (ya has quedado, ya tienes el billete). <strong>Waiter:</strong> camarero.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Uso</th>
+<th>Ejemplos de la profe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Acciones en este momento</strong></td>
+<td><em>She is watching TV now.</em> · <em>They are eating right now.</em></td>
+</tr>
+<tr>
+<td><strong>2. Situaciones temporales</strong></td>
+<td><em>I am living in Madrid this year.</em> · <em>He is working as a waiter.</em></td>
+</tr>
+<tr>
+<td><strong>3. Planes de futuro cerrados</strong></td>
+<td><em>We are meeting Ana at three.</em> · <em>I am flying to Rome on Friday.</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Se usa con <strong>expresiones de momento concreto</strong>: now · right now · at the moment · today · this week · at five o'clock. La infografía añade <strong>this year</strong> y <strong>Look! · Listen! · Be quiet!</strong>, que <strong>avisan de que algo pasa justo ahora</strong>: <em>Listen! Someone is singing.</em></p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p><em>I am living in Madrid this year</em> = <strong>temporal</strong> (este año, luego me iré). <em>I live in Madrid</em> = <strong>permanente</strong>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Ahora, Temporal, Agenda"</strong> (los 3 usos): si lo puedes <strong>apuntar en la agenda</strong>, va en continuo.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 3 usos del Present Continuous con un ejemplo de cada uno. ¿Qué indican "Look!" y "Listen!"?</p><label class="dom"><input type="checkbox" data-n="14"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c15" data-lv="1">
+<header class="c-h"><span class="c-n">15</span><h3>Ortografía del "-ing"</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 10; Infografía, página 1</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Regla</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Regla general</strong></td>
+<td>Se añade <strong>-ing</strong></td>
+<td>work &gt; working · play &gt; playing</td>
+</tr>
+<tr>
+<td>Acaba en <strong>-e</strong></td>
+<td><strong>Se pierde la "e"</strong></td>
+<td>write &gt; writing · make &gt; making</td>
+</tr>
+<tr>
+<td><strong>Consonante + vocal + consonante</strong></td>
+<td><strong>Se dobla</strong> la consonante final</td>
+<td>run &gt; running · sit &gt; sitting</td>
+</tr>
+<tr>
+<td>Acaba en <strong>-ie</strong></td>
+<td><strong>"-ie" pasa a "-y"</strong></td>
+<td>lie &gt; lying · die &gt; dying</td>
+</tr>
+<tr>
+<td>Acaba en <strong>-ee</strong></td>
+<td><strong>No cambian</strong></td>
+<td>see &gt; seeing · agree &gt; agreeing</td>
+</tr>
+<tr>
+<td>Acaba en <strong>-y</strong></td>
+<td><strong>Nunca cambian</strong></td>
+<td>study &gt; studying · enjoy &gt; enjoying</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>con <em>-ing</em> la <strong>y nunca se toca</strong> (<em>studying</em>), al revés que con la -s (<em>studies</em>) y el -ed (<em>studied</em>), porque "studiing" tendría dos "i" seguidas.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"La e se va (write → writing), pero la doble ee se queda (see → seeing)"</strong>. <strong>"ie → y (lie → lying)"</strong>. <strong>"La y del -ing es intocable"</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Escribe en -ing: write, swim, lie, see, study, make, sit, die.</p><label class="dom"><input type="checkbox" data-n="15"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c16" data-lv="1">
+<header class="c-h"><span class="c-n">16</span><h3>Present Continuous: afirmativa, negativa y pregunta</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 11; Infografía, página 1</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Contracción</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Unir dos palabras con un apóstrofo: <em>is not</em> → <em>isn't</em>, <em>are not</em> → <em>aren't</em>, <em>I am</em> → <em>I'm</em>. ⚠️ (<em>am not</em> no se contrae como "amn't": se dice <em>I'm not</em>).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Afirmativa</th>
+<th>Negativa</th>
+<th>Pregunta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sujeto + am/is/are + verbo-ing</td>
+<td>Sujeto + am/is/are + <strong>not</strong> + verbo-ing</td>
+<td><strong>Am/Is/Are</strong> + sujeto + verbo-ing + ?</td>
+</tr>
+<tr>
+<td>I am working.</td>
+<td>I am not working.</td>
+<td>Am I working?</td>
+</tr>
+<tr>
+<td>She is reading.</td>
+<td>She isn't reading.</td>
+<td>Is she reading?</td>
+</tr>
+<tr>
+<td>They are playing.</td>
+<td>They aren't playing.</td>
+<td>Are they playing?</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>aquí <strong>no se usa do/does</strong>: el propio <em>am/is/are</em> sirve para negar (añadiendo <em>not</em>) y para preguntar (poniéndolo delante).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"El be hace todo el trabajo"</strong>: para preguntar, solo <strong>le das la vuelta</strong> (<em>She is → Is she?</em>).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Pon en negativa y en pregunta: "They are playing football".</p><label class="dom"><input type="checkbox" data-n="16"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c17" data-lv="1">
+<header class="c-h"><span class="c-n">17</span><h3>¿Present Simple o Present Continuous?</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Infografía, página 1</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><em>I </em><em>usually go</em><em> to school by bus… but today </em><em>I am walking</em><em>.</em> → <strong>Busca la pista: usually → Simple · today / now → Continuous.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Present Simple</th>
+<th>Present Continuous</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lo <strong>habitual</strong>, lo <strong>permanente</strong> y lo que <strong>siempre es verdad</strong></td>
+<td>Lo que <strong>está pasando ahora</strong> o es <strong>temporal</strong></td>
+</tr>
+<tr>
+<td>always, usually, often, sometimes, rarely, hardly ever, never, <strong>every day, once a week, twice a month, on Mondays</strong></td>
+<td>now, right now, at the moment, today, this week, this year, at five o'clock, Look!, Listen!, Be quiet!</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>la misma persona puede usar los dos en la misma frase: lo <strong>normal</strong> (Simple) frente a lo de <strong>hoy</strong> (Continuous).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>busca la palabra pista</strong> antes de mirar el verbo. Y ojo con los <strong>stative verbs</strong> (concepto 26): <em>know, like, love, want…</em> <strong>siempre en Simple</strong>, aunque diga <em>now</em>: <em>I </em><em>know</em><em> the answer now</em> (no <del>I am knowing</del>).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Completa: "My dad usually (drive) to work, but this week he (take) the bus."</p><label class="dom"><input type="checkbox" data-n="17"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b3" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 4</span><span class="bt">Unit 2: Present Perfect Simple</span><span class="bc">⏱ 20 min · Conceptos 18–21 · 4 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv1" id="c18" data-lv="1">
+<header class="c-h"><span class="c-n">18</span><h3>Present Perfect Simple: forma y significado</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 12; Infografía, página 2</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Have / has</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Aquí no significa "tener"; es el auxiliar <strong>haber</strong> (<em>I have worked</em> = <strong>he</strong> trabajado). <strong>Has</strong> se usa con he, she, it.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>se forma con <strong>have / has + el participio</strong> del verbo principal. <strong>Conecta el pasado con el presente</strong>: la acción ocurrió antes, <strong>pero nos interesa ahora</strong>.</p>
+<ul>
+<li><em>I have worked · She has gone</em></li>
+<li><strong>Participio = 3ª columna</strong> (infografía): <em>go – went – </em><em>gone</em><strong> · <em>write – wrote – **written</em></strong> · <em>be – was – </em><em>been</em><strong> · regulares: <em>work → **worked</em></strong>.</li>
+</ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>aquí es donde la <strong>Unidad 1</strong> sirve: para este tiempo <strong>necesitas la 3ª columna</strong> de los irregulares.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>have/has = "he/ha" en español</strong> → <em>I have eaten</em> = <strong>he</strong> comido · <em>She has gone</em> = <strong>ha</strong> ido.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo se forma el Present Perfect Simple? Traduce: "He comido", "Ella ha escrito una carta".</p><label class="dom"><input type="checkbox" data-n="18"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c19" data-lv="1">
+<header class="c-h"><span class="c-n">19</span><h3>Present Perfect Simple: los 3 usos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 13; Infografía, página 2</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Pretérito perfecto</b><div class="fd easy"><span class="fl">💡 Qué significa</span>El tiempo español "he + participio" (he comido, ha llegado). <strong>Have been to:</strong> haber estado en un sitio (y haber vuelto).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Uso</th>
+<th>Ejemplos de la profe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Experiencias de la vida</strong> (sin decir cuándo)</td>
+<td><em>I have been to London.</em> · <em>She has never flown.</em></td>
+</tr>
+<tr>
+<td><strong>2. Resultado en el presente</strong> (lo que pasó se nota ahora)</td>
+<td><em>I have lost my keys.</em> · <em>He has broken his arm.</em></td>
+</tr>
+<tr>
+<td><strong>3. Acción que continúa</strong> (empezó antes y sigue)</td>
+<td><em>We have lived here for ten years.</em> · <em>I have known her since 2010.</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>En español se traduce casi siempre por el pretérito perfecto:</strong> he trabajado, ha ido, hemos vivido.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p><em>I have lost my keys</em> → <strong>por eso ahora</strong> no puedo entrar en casa. <em>He has broken his arm</em> → <strong>por eso ahora</strong> lleva escayola. Si dices <strong>cuándo</strong> pasó (<em>yesterday, in 2019</em>), ya no es este tiempo: es el <strong>pasado</strong> (Unidad 5).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Experiencia, Efecto, Extensión"</strong> (las 3 E): vida, resultado y lo que sigue.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 3 usos del Present Perfect Simple con un ejemplo de cada uno.</p><label class="dom"><input type="checkbox" data-n="19"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c20" data-lv="1">
+<header class="c-h"><span class="c-n">20</span><h3>Las palabras del Present Perfect: already, yet, just, ever, never, for, since</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 14; Infografía, página 2</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Palabra</th>
+<th>Significado</th>
+<th>Dónde va</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>already</strong></td>
+<td>"ya"</td>
+<td><strong>Afirmativas</strong>, en medio</td>
+<td><em>I have </em><em>already</em><em> eaten.</em></td>
+</tr>
+<tr>
+<td><strong>yet</strong></td>
+<td>"ya / todavía"</td>
+<td><strong>Negativas y preguntas</strong>, <strong>al final</strong></td>
+<td><em>Have you finished </em><em>yet</em><em>?</em> · <em>I haven't finished </em><em>yet</em><em>.</em></td>
+</tr>
+<tr>
+<td><strong>just</strong></td>
+<td>"acabar de"</td>
+<td>En medio</td>
+<td><em>She has </em><em>just</em><em> arrived.</em> (= acaba de llegar)</td>
+</tr>
+<tr>
+<td><strong>ever / never</strong></td>
+<td>"alguna vez" / "nunca"</td>
+<td><em>ever</em> en <strong>preguntas</strong></td>
+<td><em>Have you </em><em>ever</em><em> tried sushi?</em></td>
+</tr>
+<tr>
+<td><strong>for</strong></td>
+<td>+ <strong>duración</strong> (cuánto tiempo)</td>
+<td></td>
+<td><em>for two years</em> · <em>for a week</em> · <em>for an hour</em></td>
+</tr>
+<tr>
+<td><strong>since</strong></td>
+<td>+ <strong>momento de inicio</strong> (desde cuándo)</td>
+<td></td>
+<td><em>since 2010</em> · <em>since Monday</em> · <em>since 9 o'clock</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>La infografía añade <strong>three times</strong> (número de veces) y que <strong>for y since valen para los dos Perfect</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p><em>already</em> y <em>yet</em> significan los dos "ya", pero <strong>already</strong> va en frases <strong>positivas</strong> y <strong>yet</strong> en <strong>negativas y preguntas</strong>, siempre al final.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Trucos:</strong></p>
+<ul>
+<li><strong>FOR = Fecha NO</strong> (un periodo: <em>for two years</em>) · <strong>SINCE = punto de inicio</strong> (<em>since 2010</em>). Pregúntate: ¿puedo decir "<strong>durante</strong>"? → <em>for</em>. ¿Puedo decir "<strong>desde</strong>"? → <em>since</em>.</li>
+<li><strong>"Already en medio y en positivo; yet al final y en negativo o pregunta."</strong></li>
+<li><strong>Just = "acabo de"</strong>: <em>I have just eaten</em> = <strong>acabo de</strong> comer.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Completa con for o since: ___ three days, ___ last summer, ___ 2015, ___ an hour. Y con already o yet: "I haven't done my homework ___". "She has ___ left."</p><label class="dom"><input type="checkbox" data-n="20"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c21" data-lv="1">
+<header class="c-h"><span class="c-n">21</span><h3>Present Perfect Simple: afirmativa, negativa y pregunta</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 15; Infografía, página 2</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Afirmativa</th>
+<th>Negativa</th>
+<th>Pregunta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sujeto + have/has + participio</td>
+<td>Sujeto + <strong>haven't/hasn't</strong> + participio</td>
+<td><strong>Have/Has</strong> + sujeto + participio + ?</td>
+</tr>
+<tr>
+<td>I have finished.</td>
+<td>I haven't finished.</td>
+<td>Have you finished?</td>
+</tr>
+<tr>
+<td>She has gone.</td>
+<td>She hasn't gone.</td>
+<td>Has she gone?</td>
+</tr>
+<tr>
+<td>They have already eaten.</td>
+<td>They haven't eaten yet.</td>
+<td>Have they eaten yet?</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"El have hace todo el trabajo"</strong>, igual que el <em>be</em> en el continuo: se niega con <em>not</em> y se pregunta poniéndolo delante.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Pon en negativa (con yet) y en pregunta: "They have eaten".</p><label class="dom"><input type="checkbox" data-n="21"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b4" data-min="25"><h2 class="blk-h"><span class="bn">BLOQUE 5</span><span class="bt">Unit 2: Present Perfect Continuous</span><span class="bc">⏱ 25 min · Conceptos 22–26 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c22" data-lv="1">
+<header class="c-h"><span class="c-n">22</span><h3>Present Perfect Continuous: forma y significado</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 16; Infografía, página 2</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Been</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Participio de <em>be</em>. <strong>Duración:</strong> cuánto tiempo dura algo.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>se forma con <strong>have / has been + verbo acabado en "-ing"</strong>. <strong>Insiste en la duración</strong> de una acción que <strong>empezó en el pasado y sigue o acaba de terminar</strong>.</p>
+<ul>
+<li><em>I have been working · She has been running</em></li>
+</ul>
+<p><strong>Usos (infografía):</strong></p>
+<ul>
+<li><strong>Duración hasta ahora:</strong> <em>I have been waiting for an hour.</em></li>
+<li><strong>Acaba de parar y se nota:</strong> <em>She's tired: she has been running.</em></li>
+</ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>es <strong>"llevar + tiempo + -ando"</strong> del español: <em>I have been waiting for an hour</em> = <strong>llevo</strong> una hora <strong>esperando</strong>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>have/has + been + -ing = "llevo … -ando"</strong>. Fíjate en que <strong>been</strong> nunca cambia (no hay "beens" ni "is been").</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo se forma el Present Perfect Continuous y qué expresa? Traduce: "Llevo dos horas estudiando".</p><label class="dom"><input type="checkbox" data-n="22"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c23" data-lv="1">
+<header class="c-h"><span class="c-n">23</span><h3>La trampa del español: "Llevo dos horas esperando"</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Infografía, página 2</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>«Llevo dos horas esperando» → <del>I am waiting for two hours</del> → <strong><em>I have been waiting for two hours.</em></strong></p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>en español usamos el <strong>presente</strong> ("llevo", "hace dos horas que espero"), pero en inglés, si la acción <strong>empezó en el pasado y sigue</strong>, va en <strong>Present Perfect</strong> (Continuous si importa la duración). Es uno de los errores más típicos de los hispanohablantes.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Si en español dices llevo… o hace… que…, en inglés va have been"</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Corrige: "I am living here since 2018" y "She is studying English for three years".</p><label class="dom"><input type="checkbox" data-n="23"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c24" data-lv="1">
+<header class="c-h"><span class="c-n">24</span><h3>Present Perfect Continuous: afirmativa, negativa y pregunta</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 17; Infografía, página 2</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Afirmativa</th>
+<th>Negativa</th>
+<th>Pregunta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sujeto + have/has <strong>been</strong> + verbo-ing</td>
+<td>Sujeto + haven't/hasn't <strong>been</strong> + verbo-ing</td>
+<td><strong>Have/Has</strong> + sujeto + <strong>been</strong> + verbo-ing + ?</td>
+</tr>
+<tr>
+<td>I have been studying.</td>
+<td>I haven't been studying.</td>
+<td>Have you been studying?</td>
+</tr>
+<tr>
+<td>She has been running.</td>
+<td>She hasn't been running.</td>
+<td>Has she been running?</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Con for y since es muy frecuente:</strong> <em>I have been waiting for an hour.</em> Palabras pista (infografía): <strong>for · since · all day · all morning · How long…?</strong> → <em>How long…?</em> pregunta por la duración: <strong><em>How long have you been studying English?</em></strong></p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"How long…? → have been -ing"</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Haz la pregunta con "How long" para: "She has been running for 40 minutes".</p><label class="dom"><input type="checkbox" data-n="24"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c25" data-lv="1">
+<header class="c-h"><span class="c-n">25</span><h3>¿Present Perfect Simple o Continuous?</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 18; Infografía, página 2</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Present Perfect Simple</th>
+<th>Present Perfect Continuous</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Interesa el resultado:</strong> qué se ha conseguido</td>
+<td><strong>Interesa la duración:</strong> cuánto tiempo llevo</td>
+</tr>
+<tr>
+<td><em>I have written three emails.</em> (importa <strong>cuántos</strong>, ya están hechos)</td>
+<td><em>I have been writing emails all morning.</em> (importa <strong>el tiempo</strong>, quizá sigo)</td>
+</tr>
+<tr>
+<td><em>She has painted the kitchen.</em> → <strong>ya está terminada</strong></td>
+<td><em>She has been painting the kitchen.</em> → <strong>por eso está manchada de pintura</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Infografía: con un número (three, two…) casi siempre va el Simple.</strong></p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"¿Cuántos? → Simple · ¿Cuánto tiempo? → Continuous"</strong>. <strong>Número → Simple.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Elige: "I (read) three books this month" / "I (read) all afternoon".</p><label class="dom"><input type="checkbox" data-n="25"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c26" data-lv="1">
+<header class="c-h"><span class="c-n">26</span><h3>Stative verbs: no admiten la forma continua <span class="note">🟥</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 U2, diapositiva 18 (en rojo)</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Stative verbs (verbos de estado)</b><div class="fd easy"><span class="fl">💡 Qué significa</span>Verbos que expresan un <strong>estado</strong> (lo que piensas, sientes, sabes o tienes), no una <strong>acción</strong>. ⚠️ Otros muy comunes (no salen en la diapositiva): <em>love, hate, want, need, believe, understand, remember, own, belong</em>.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>🟥 <strong>Los stative verbs (know, be, like…) no admiten la forma continua.</strong></p>
+<ul>
+<li><del>I have been knowing her for years</del> → <strong><em>I have known her for years.</em></strong> (ejemplo de la profe en la diap. 13: <em>I have known her since 2010</em>).</li>
+<li><del>I am liking this song</del> → <strong><em>I like this song.</em></strong></li>
+</ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>"saber" o "gustar" no son cosas que <strong>estés haciendo</strong> como correr; simplemente <strong>son así</strong>. Por eso no llevan -ing.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>"Si es de cabeza o de corazón (saber, creer, querer, gustar), no lleva -ing"</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Corrige: "I am knowing the answer" y "She has been liking him for years".</p><label class="dom"><input type="checkbox" data-n="26"> Lo domino</label></div>
+</div></article></section>
+<p class="empty" id="empty" hidden>No hay conceptos con ese filtro o esa búsqueda.</p>
+<section class="xs" id="x1"><h2 class="xs-h">📋 Tabla resumen de los 4 presentes</h2><div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Present Simple</strong></th>
+<th><strong>Present Continuous</strong></th>
+<th><strong>Present Perfect Simple</strong></th>
+<th><strong>Present Perfect Continuous</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Idea</strong></td>
+<td>Hábito, permanente, siempre verdad</td>
+<td>Ahora, temporal, plan cerrado</td>
+<td>Pasado que importa ahora (<strong>resultado</strong>)</td>
+<td>Empezó antes y sigue (<strong>duración</strong>)</td>
+</tr>
+<tr>
+<td><strong>+</strong></td>
+<td>I work / She work<strong>s</strong></td>
+<td>I <strong>am</strong> working / She <strong>is</strong> working</td>
+<td>I <strong>have</strong> worked / She <strong>has</strong> gone</td>
+<td>I <strong>have been</strong> working / She <strong>has been</strong> running</td>
+</tr>
+<tr>
+<td><strong>–</strong></td>
+<td>I <strong>don't</strong> work / She <strong>doesn't</strong> work</td>
+<td>I'm <strong>not</strong> working / She <strong>isn't</strong> working</td>
+<td>I <strong>haven't</strong> worked / She <strong>hasn't</strong> gone</td>
+<td>I <strong>haven't been</strong> working</td>
+</tr>
+<tr>
+<td><strong>?</strong></td>
+<td><strong>Do</strong> you work? / <strong>Does</strong> she work?</td>
+<td><strong>Are</strong> you working? / <strong>Is</strong> she working?</td>
+<td><strong>Have</strong> you worked? / <strong>Has</strong> she gone?</td>
+<td><strong>Have</strong> you <strong>been</strong> working?</td>
+</tr>
+<tr>
+<td><strong>Pistas</strong></td>
+<td>always, usually, often, sometimes, rarely, hardly ever, never, every day, once a week, on Mondays</td>
+<td>now, right now, at the moment, today, this week, Look!, Listen!</td>
+<td>already, yet, just, ever, never, for, since, three times</td>
+<td>for, since, all day, all morning, How long…?</td>
+</tr>
+<tr>
+<td><strong>Español</strong></td>
+<td>trabajo</td>
+<td>estoy trabajando</td>
+<td>he trabajado</td>
+<td>llevo … trabajando</td>
+</tr>
+</tbody>
+</table></div>
+<p>🧠 <strong>Truco final:</strong> el auxiliar te dice el tiempo: <strong>do/does → Simple · am/is/are → Continuous · have/has → Perfect · have/has been → Perfect Continuous</strong>.</p></section>
+<section class="xs" id="trampas"><h2 class="xs-h">⚠️ Trampas típicas del examen (y de los hispanohablantes)</h2><ol>
+<li>🟥 <del>He doesn't <strong>plays</strong></del> → <strong>He doesn't play.</strong> Con <em>does/doesn't</em> el verbo pierde la -s.</li>
+<li>🟥 <del>We <strong>works</strong></del> → <strong>We work.</strong> La -s es solo para he, she, it.</li>
+<li><del>She working</del> → <strong>She is working.</strong> En el continuo nunca falta <em>am/is/are</em>.</li>
+<li><del>I am waiting for two hours</del> → <strong>I have been waiting for two hours.</strong> "Llevo… -ando" = <em>have been -ing</em>.</li>
+<li><del>I live here since 2018</del> → <strong>I have lived here since 2018.</strong> Con <em>since/for</em> + "hasta ahora" → Perfect.</li>
+<li>🟥 <del>I am knowing / I have been liking</del> → <strong>I know / I have liked.</strong> Los <em>stative verbs</em> no van en continuo.</li>
+<li><del>for 2010 / since two years</del> → <strong>since 2010 / for two years.</strong> <em>For</em> = duración; <em>since</em> = punto de inicio.</li>
+<li><del>I have finished yesterday</del> → <strong>I finished yesterday.</strong> Si dices <strong>cuándo</strong> (yesterday, last week), no es <em>Present Perfect</em>.</li>
+<li><del>I have already not finished</del> → <strong>I haven't finished yet.</strong> <em>Already</em> en afirmativas; <em>yet</em> en negativas y preguntas, al final.</li>
+<li><del>I always am happy</del> → <strong>I am always happy.</strong> El adverbio va <strong>detrás</strong> de <em>be</em>.</li>
+<li><del>He every day plays</del> → <strong>He plays every day.</strong> <em>Every day, once a week…</em> van al final.</li>
+<li><del>studiing / lieing / writeing</del> → <strong>studying / lying / writing.</strong></li>
+<li><del>studys / plaies</del> → <strong>studies / plays.</strong> Consonante + y → ies; vocal + y → ys.</li>
+<li>🟥 <del>visitted / openned</del> → <strong>visited / opened.</strong> No se dobla si la última sílaba es átona.</li>
+<li><del>I have wrote / I have went</del> → <strong>I have written / I have gone.</strong> Con <em>have/has</em> va la <strong>3ª columna</strong> (participio), no la 2ª.</li>
+<li>🟥 <del>look-ed (dos sílabas)</del> → <strong>lookt</strong> (una sílaba). Solo hay sílaba extra tras <strong>d</strong> o <strong>t</strong> (<em>wait-ed</em>, <em>end-ed</em>).</li>
+<li><strong>Número → Present Perfect Simple:</strong> <em>I have written </em><em>three</em><em> emails</em> (no <em>have been writing three emails</em>).</li>
+<li><strong>Horarios → Present Simple</strong> aunque sean futuro: <em>The train </em><em>leaves</em><em> at 10:00.</em></li>
+</ol></section>
+<section class="xs" id="chequeo"><h2 class="xs-h">✅ Chequeo final (contesta sin mirar; si fallas, vuelve al concepto)</h2><ol>
+<li>Las 3 formas de: be, go, write, take, see, bring, think, begin, come, run. (7)</li>
+<li>Los 4 patrones de irregulares con 2 ejemplos cada uno. (6)</li>
+<li>Pasado de: study, play, stop, prefer, visit, change. (3)</li>
+<li>¿Cómo se pronuncia la -ed de wanted, looked, played? (4)</li>
+<li>Con "he": watch, go, study, play, have, do. (12)</li>
+<li>Los 6 usos del Present Simple. (9)</li>
+<li>Coloca el adverbio: "She (always) is late" · "I (never) eat meat". (10)</li>
+<li>En -ing: write, run, lie, see, study. (15)</li>
+<li>Los 3 usos del Present Continuous. (14)</li>
+<li>Los 3 usos del Present Perfect Simple. (19)</li>
+<li>¿For o since?: three days, 2015, Monday, an hour. (20)</li>
+<li>¿Already o yet?: "Have you finished ___?" "I've ___ eaten." (20)</li>
+<li>Traduce: "Llevo una hora esperando". (23)</li>
+<li>¿Simple o Continuous?: "I (write) three emails" / "I (write) emails all morning". (25)</li>
+<li>¿Por qué no se dice "I am knowing"? (26)</li>
+</ol></section>
+<section class="xs" id="x4"><h2 class="xs-h">📚 Anexo 1 · Los 198 verbos irregulares de la lista de la profe, ordenados por patrón</h2><p>📍 <strong>Fuente:</strong> <em>Verbos Irregulares, lista completa</em> (5 páginas) + la estrategia de U1, diapositiva 7.</p>
+<p><strong>Cómo usarlo:</strong> ★ = uno de los 30 más comunes (U1, diap. 8): <strong>apréndete esos primero</strong>. Después, un patrón cada día. Tapa las columnas 2 y 3 y dilas en voz alta.</p>
+<p>⚠️ <strong>Erratas de la lista de la profe que he corregido:</strong> <em>light</em> (pone «Li», es <strong>lit</strong>), <em>wake up</em> (el participio es <strong>woken up</strong>), <em>chide</em> (<strong>chid / chidden</strong>), <em>forbear</em> (<strong>forbore / forborne</strong>). Muchos verbos de la lista son <strong>muy raros</strong> (<em>abide, beget, bestride, shrive, stave…</em>); no pierdas tiempo con ellos antes que con los ★.</p>
+<h3 class="ih">Patrón 1 · Las tres formas iguales (A-A-A) · 26 verbos</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Infinitivo</th>
+<th>Past</th>
+<th>Participle</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>★ <strong>Let</strong></td>
+<td>Let</td>
+<td>Let</td>
+<td>Permitir</td>
+</tr>
+<tr>
+<td>★ <strong>Put</strong></td>
+<td>Put</td>
+<td>Put</td>
+<td>Poner</td>
+</tr>
+<tr>
+<td><strong>Bet</strong></td>
+<td>Bet</td>
+<td>Bet</td>
+<td>Apostar</td>
+</tr>
+<tr>
+<td><strong>Bid</strong></td>
+<td>Bid / Bade</td>
+<td>Bid / Bidden</td>
+<td>Pujar / Ofertar</td>
+</tr>
+<tr>
+<td><strong>Broadcast</strong></td>
+<td>Broadcast</td>
+<td>Broadcast</td>
+<td>Radiar</td>
+</tr>
+<tr>
+<td><strong>Burst</strong></td>
+<td>Burst</td>
+<td>Burst</td>
+<td>Estallar</td>
+</tr>
+<tr>
+<td><strong>Cast</strong></td>
+<td>Cast</td>
+<td>Cast</td>
+<td>Arrojar</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Cost</td>
+<td>Cost</td>
+<td>Costar</td>
+</tr>
+<tr>
+<td><strong>Cut</strong></td>
+<td>Cut</td>
+<td>Cut</td>
+<td>Cortar</td>
+</tr>
+<tr>
+<td><strong>Forecast</strong></td>
+<td>Forecast</td>
+<td>Forecast</td>
+<td>Predecir</td>
+</tr>
+<tr>
+<td><strong>Hit</strong></td>
+<td>Hit</td>
+<td>Hit</td>
+<td>Golpear</td>
+</tr>
+<tr>
+<td><strong>Hurt</strong></td>
+<td>Hurt</td>
+<td>Hurt</td>
+<td>Doler</td>
+</tr>
+<tr>
+<td><strong>Knit</strong></td>
+<td>Knit</td>
+<td>Knit</td>
+<td>Hacer punto</td>
+</tr>
+<tr>
+<td><strong>Quit</strong></td>
+<td>Quit</td>
+<td>Quit</td>
+<td>Parar / Dejar</td>
+</tr>
+<tr>
+<td><strong>Read</strong></td>
+<td>Read</td>
+<td>Read</td>
+<td>Leer</td>
+</tr>
+<tr>
+<td><strong>Rid</strong></td>
+<td>Rid</td>
+<td>Rid</td>
+<td>Eliminar</td>
+</tr>
+<tr>
+<td><strong>Set</strong></td>
+<td>Set</td>
+<td>Set</td>
+<td>Poner (se)</td>
+</tr>
+<tr>
+<td><strong>Shed</strong></td>
+<td>Shed</td>
+<td>Shed</td>
+<td>Mudar</td>
+</tr>
+<tr>
+<td><strong>Shut</strong></td>
+<td>Shut</td>
+<td>Shut</td>
+<td>Callar / Cerrar</td>
+</tr>
+<tr>
+<td><strong>Slit</strong></td>
+<td>Slit</td>
+<td>Slit</td>
+<td>Rajar</td>
+</tr>
+<tr>
+<td><strong>Split</strong></td>
+<td>Split</td>
+<td>Split</td>
+<td>Hender / Partir</td>
+</tr>
+<tr>
+<td><strong>Spread</strong></td>
+<td>Spread</td>
+<td>Spread</td>
+<td>Extenderse</td>
+</tr>
+<tr>
+<td><strong>Sweat</strong></td>
+<td>Sweat</td>
+<td>Sweat</td>
+<td>Sudar</td>
+</tr>
+<tr>
+<td><strong>Thrust</strong></td>
+<td>Thrust</td>
+<td>Thrust</td>
+<td>Empujar</td>
+</tr>
+<tr>
+<td><strong>Upset</strong></td>
+<td>Upset</td>
+<td>Upset</td>
+<td>Molestar / Volcar</td>
+</tr>
+<tr>
+<td><strong>Wet</strong></td>
+<td>Wet</td>
+<td>Wet</td>
+<td>Mojar</td>
+</tr>
+</tbody>
+</table></div>
+<h3 class="ih">Patrón 2 · Pasado y participio iguales (A-B-B) · 94 verbos</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Infinitivo</th>
+<th>Past</th>
+<th>Participle</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>★ <strong>Bring</strong></td>
+<td>Brought</td>
+<td>Brought</td>
+<td>Traer</td>
+</tr>
+<tr>
+<td>★ <strong>Feel</strong></td>
+<td>Felt</td>
+<td>Felt</td>
+<td>Sentir</td>
+</tr>
+<tr>
+<td>★ <strong>Find</strong></td>
+<td>Found</td>
+<td>Found</td>
+<td>Encontrar</td>
+</tr>
+<tr>
+<td>★ <strong>Get</strong></td>
+<td>Got</td>
+<td>Got / Gotten</td>
+<td>Obtener</td>
+</tr>
+<tr>
+<td>★ <strong>Have</strong></td>
+<td>Had</td>
+<td>Had</td>
+<td>Haber / Tener</td>
+</tr>
+<tr>
+<td>★ <strong>Hear</strong></td>
+<td>Heard</td>
+<td>Heard</td>
+<td>Oir</td>
+</tr>
+<tr>
+<td>★ <strong>Hold</strong></td>
+<td>Held</td>
+<td>Held</td>
+<td>Agarrar / Sostener</td>
+</tr>
+<tr>
+<td>★ <strong>Keep</strong></td>
+<td>Kept</td>
+<td>Kept</td>
+<td>Conservar</td>
+</tr>
+<tr>
+<td>★ <strong>Leave</strong></td>
+<td>Left</td>
+<td>Left</td>
+<td>Dejar / Salir</td>
+</tr>
+<tr>
+<td>★ <strong>Make</strong></td>
+<td>Made</td>
+<td>Made</td>
+<td>Hacer</td>
+</tr>
+<tr>
+<td>★ <strong>Mean</strong></td>
+<td>Meant</td>
+<td>Meant</td>
+<td>Significar</td>
+</tr>
+<tr>
+<td>★ <strong>Meet</strong></td>
+<td>Met</td>
+<td>Met</td>
+<td>Encontrar</td>
+</tr>
+<tr>
+<td>★ <strong>Say</strong></td>
+<td>Said</td>
+<td>Said</td>
+<td>Decir</td>
+</tr>
+<tr>
+<td>★ <strong>Stand</strong></td>
+<td>Stood</td>
+<td>Stood</td>
+<td>Estar de pie</td>
+</tr>
+<tr>
+<td>★ <strong>Tell</strong></td>
+<td>Told</td>
+<td>Told</td>
+<td>Decir</td>
+</tr>
+<tr>
+<td>★ <strong>Think</strong></td>
+<td>Thought</td>
+<td>Thought</td>
+<td>Pensar</td>
+</tr>
+<tr>
+<td><strong>Abide</strong></td>
+<td>Abode</td>
+<td>Abode</td>
+<td>Soportar / Aguantar</td>
+</tr>
+<tr>
+<td><strong>Behold</strong></td>
+<td>Beheld</td>
+<td>Beheld</td>
+<td>Contemplar</td>
+</tr>
+<tr>
+<td><strong>Bend</strong></td>
+<td>Bent</td>
+<td>Bent</td>
+<td>Doblar / Curvar</td>
+</tr>
+<tr>
+<td><strong>Bereave</strong></td>
+<td>Bereft</td>
+<td>Bereft</td>
+<td>Privar</td>
+</tr>
+<tr>
+<td><strong>Beseech</strong></td>
+<td>Besought</td>
+<td>Besought</td>
+<td>Implorar / Suplicar</td>
+</tr>
+<tr>
+<td><strong>Bind</strong></td>
+<td>Bound</td>
+<td>Bound</td>
+<td>Atar / Encuadernar</td>
+</tr>
+<tr>
+<td><strong>Bleed</strong></td>
+<td>Bled</td>
+<td>Bled</td>
+<td>Sangrar</td>
+</tr>
+<tr>
+<td><strong>Breed</strong></td>
+<td>Bred</td>
+<td>Bred</td>
+<td>Criar</td>
+</tr>
+<tr>
+<td><strong>Build</strong></td>
+<td>Built</td>
+<td>Built</td>
+<td>Edificar</td>
+</tr>
+<tr>
+<td><strong>Burn</strong></td>
+<td>Burnt / Burned</td>
+<td>Burnt / Burned</td>
+<td>Quemar</td>
+</tr>
+<tr>
+<td><strong>Buy</strong></td>
+<td>Bought</td>
+<td>Bought</td>
+<td>Comprar</td>
+</tr>
+<tr>
+<td><strong>Catch</strong></td>
+<td>Caught</td>
+<td>Caught</td>
+<td>Coger</td>
+</tr>
+<tr>
+<td><strong>Chide</strong></td>
+<td>Chid</td>
+<td>Chid / Chidden</td>
+<td>Regañar · ⚠️ la lista pone «Chide / Chidden»; es <em>chid / chidden</em></td>
+</tr>
+<tr>
+<td><strong>Cling</strong></td>
+<td>Clung</td>
+<td>Clung</td>
+<td>Agarrarse</td>
+</tr>
+<tr>
+<td><strong>Clothe</strong></td>
+<td>Clad</td>
+<td>Clad</td>
+<td>Vestir</td>
+</tr>
+<tr>
+<td><strong>Creep</strong></td>
+<td>Crept</td>
+<td>Crept</td>
+<td>Arrastrarse / Trepar</td>
+</tr>
+<tr>
+<td><strong>Deal</strong></td>
+<td>Dealt</td>
+<td>Dealt</td>
+<td>Tratar</td>
+</tr>
+<tr>
+<td><strong>Dig</strong></td>
+<td>Dug</td>
+<td>Dug</td>
+<td>Cavar</td>
+</tr>
+<tr>
+<td><strong>Dream</strong></td>
+<td>Dreamt</td>
+<td>Dreamt</td>
+<td>Soñar</td>
+</tr>
+<tr>
+<td><strong>Dwell</strong></td>
+<td>Dwelt</td>
+<td>Dwelt</td>
+<td>Morar / Residir</td>
+</tr>
+<tr>
+<td><strong>Feed</strong></td>
+<td>Fed</td>
+<td>Fed</td>
+<td>Alimentar</td>
+</tr>
+<tr>
+<td><strong>Fight</strong></td>
+<td>Fought</td>
+<td>Fought</td>
+<td>Luchar</td>
+</tr>
+<tr>
+<td><strong>Flee</strong></td>
+<td>Fled</td>
+<td>Fled</td>
+<td>Huir</td>
+</tr>
+<tr>
+<td><strong>Fling</strong></td>
+<td>Flung</td>
+<td>Flung</td>
+<td>Arrojar / Lanzar</td>
+</tr>
+<tr>
+<td><strong>Gainsay</strong></td>
+<td>Gainsaid</td>
+<td>Gainsaid</td>
+<td>Contradecir / Negar</td>
+</tr>
+<tr>
+<td><strong>Gild</strong></td>
+<td>Gilt</td>
+<td>Gilt</td>
+<td>Dorar</td>
+</tr>
+<tr>
+<td><strong>Grind</strong></td>
+<td>Ground</td>
+<td>Ground</td>
+<td>Moler</td>
+</tr>
+<tr>
+<td><strong>Hang</strong></td>
+<td>Hung</td>
+<td>Hung</td>
+<td>Colgar</td>
+</tr>
+<tr>
+<td><strong>Inlay</strong></td>
+<td>Inlaid</td>
+<td>Inlaid</td>
+<td>Incrustar</td>
+</tr>
+<tr>
+<td><strong>Kneel</strong></td>
+<td>Knelt</td>
+<td>Knelt</td>
+<td>Arrodillarse</td>
+</tr>
+<tr>
+<td><strong>Lay</strong></td>
+<td>Laid</td>
+<td>Laid</td>
+<td>Poner</td>
+</tr>
+<tr>
+<td><strong>Lead</strong></td>
+<td>Led</td>
+<td>Led</td>
+<td>Guiar</td>
+</tr>
+<tr>
+<td><strong>Lean</strong></td>
+<td>Leant</td>
+<td>Leant</td>
+<td>Apoyarse</td>
+</tr>
+<tr>
+<td><strong>Leap</strong></td>
+<td>Leapt</td>
+<td>Leapt</td>
+<td>Saltar</td>
+</tr>
+<tr>
+<td><strong>Learn</strong></td>
+<td>Learnt</td>
+<td>Learnt</td>
+<td>Aprender</td>
+</tr>
+<tr>
+<td><strong>Lend</strong></td>
+<td>Lent</td>
+<td>Lent</td>
+<td>Prestar</td>
+</tr>
+<tr>
+<td><strong>Light</strong></td>
+<td>Lit</td>
+<td>Lit</td>
+<td>Encender · ⚠️ en la lista pone «Li»; es <em>lit</em></td>
+</tr>
+<tr>
+<td><strong>Lose</strong></td>
+<td>Lost</td>
+<td>Lost</td>
+<td>Perder</td>
+</tr>
+<tr>
+<td><strong>Mislay</strong></td>
+<td>Mislaid</td>
+<td>Mislaid</td>
+<td>Extraviar</td>
+</tr>
+<tr>
+<td><strong>Mislead</strong></td>
+<td>Misled</td>
+<td>Misled</td>
+<td>Engañar / Cofundir</td>
+</tr>
+<tr>
+<td><strong>Pay</strong></td>
+<td>Paid</td>
+<td>Paid</td>
+<td>Pagar</td>
+</tr>
+<tr>
+<td><strong>Rend</strong></td>
+<td>Rent</td>
+<td>Rent</td>
+<td>Desgarrar / Rasgar</td>
+</tr>
+<tr>
+<td><strong>Seek</strong></td>
+<td>Sought</td>
+<td>Sought</td>
+<td>Buscar</td>
+</tr>
+<tr>
+<td><strong>Sell</strong></td>
+<td>Sold</td>
+<td>Sold</td>
+<td>Vender</td>
+</tr>
+<tr>
+<td><strong>Send</strong></td>
+<td>Sent</td>
+<td>Sent</td>
+<td>Enviar</td>
+</tr>
+<tr>
+<td><strong>Shine</strong></td>
+<td>Shone</td>
+<td>Shone</td>
+<td>Brillar</td>
+</tr>
+<tr>
+<td><strong>Shoe</strong></td>
+<td>Shod</td>
+<td>Shod</td>
+<td>Herrar</td>
+</tr>
+<tr>
+<td><strong>Shoot</strong></td>
+<td>Shot</td>
+<td>Shot</td>
+<td>Disparar</td>
+</tr>
+<tr>
+<td><strong>Shrive</strong></td>
+<td>Shrove</td>
+<td>Shrove</td>
+<td>Confesarse</td>
+</tr>
+<tr>
+<td><strong>Sit</strong></td>
+<td>Sat</td>
+<td>Sat</td>
+<td>Sentarse</td>
+</tr>
+<tr>
+<td><strong>Sleep</strong></td>
+<td>Slept</td>
+<td>Slept</td>
+<td>Dormir</td>
+</tr>
+<tr>
+<td><strong>Slide</strong></td>
+<td>Slid</td>
+<td>Slid</td>
+<td>Resbalar</td>
+</tr>
+<tr>
+<td><strong>Sling</strong></td>
+<td>Slung</td>
+<td>Slung</td>
+<td>Tirar / Arrojar</td>
+</tr>
+<tr>
+<td><strong>Slink</strong></td>
+<td>Slunk</td>
+<td>Slunk</td>
+<td>Escabullirse</td>
+</tr>
+<tr>
+<td><strong>Smell</strong></td>
+<td>Smelt</td>
+<td>Smelt</td>
+<td>Oler</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Sped</td>
+<td>Sped</td>
+<td>Acelerar</td>
+</tr>
+<tr>
+<td><strong>Spell</strong></td>
+<td>Spelt</td>
+<td>Spelt</td>
+<td>Deletrear</td>
+</tr>
+<tr>
+<td><strong>Spend</strong></td>
+<td>Spent</td>
+<td>Spent</td>
+<td>Gastar</td>
+</tr>
+<tr>
+<td><strong>Spill</strong></td>
+<td>Spilt</td>
+<td>Spilt</td>
+<td>Derramar</td>
+</tr>
+<tr>
+<td><strong>Spit</strong></td>
+<td>Spat</td>
+<td>Spat</td>
+<td>Escupir</td>
+</tr>
+<tr>
+<td><strong>Spoil</strong></td>
+<td>Spoilt</td>
+<td>Spoilt</td>
+<td>Estropear</td>
+</tr>
+<tr>
+<td><strong>Stave</strong></td>
+<td>Stove</td>
+<td>Stove</td>
+<td>Desfondar</td>
+</tr>
+<tr>
+<td><strong>Stick</strong></td>
+<td>Stuck</td>
+<td>Stuck</td>
+<td>Pegar / Engomar</td>
+</tr>
+<tr>
+<td><strong>Sting</strong></td>
+<td>Stung</td>
+<td>Stung</td>
+<td>Picar</td>
+</tr>
+<tr>
+<td><strong>Strike</strong></td>
+<td>Struck</td>
+<td>Struck</td>
+<td>Golpear</td>
+</tr>
+<tr>
+<td><strong>String</strong></td>
+<td>Strung</td>
+<td>Strung</td>
+<td>Encordar</td>
+</tr>
+<tr>
+<td><strong>Sweep</strong></td>
+<td>Swept</td>
+<td>Swept</td>
+<td>Barrer</td>
+</tr>
+<tr>
+<td><strong>Swing</strong></td>
+<td>Swung</td>
+<td>Swung</td>
+<td>Balancearse</td>
+</tr>
+<tr>
+<td><strong>Teach</strong></td>
+<td>Taught</td>
+<td>Taught</td>
+<td>Enseñar</td>
+</tr>
+<tr>
+<td><strong>Tread</strong></td>
+<td>Trod</td>
+<td>Trod / Trodden</td>
+<td>Pisar / Hollar</td>
+</tr>
+<tr>
+<td><strong>Understand</strong></td>
+<td>Understood</td>
+<td>Understood</td>
+<td>Entender</td>
+</tr>
+<tr>
+<td><strong>Waylay</strong></td>
+<td>Waylaid</td>
+<td>Waylaid</td>
+<td>Abordar / Atacar</td>
+</tr>
+<tr>
+<td><strong>Weep</strong></td>
+<td>Wept</td>
+<td>Wept</td>
+<td>Llorar / LLoriquear</td>
+</tr>
+<tr>
+<td><strong>Win</strong></td>
+<td>Won</td>
+<td>Won</td>
+<td>Ganar</td>
+</tr>
+<tr>
+<td><strong>Wind</strong></td>
+<td>Wound</td>
+<td>Wound</td>
+<td>Enrollar</td>
+</tr>
+<tr>
+<td><strong>Withhold</strong></td>
+<td>Withheld</td>
+<td>Withheld</td>
+<td>Retener / Ocultar</td>
+</tr>
+<tr>
+<td><strong>Withstand</strong></td>
+<td>Withstood</td>
+<td>Withstood</td>
+<td>Resistir / Aguantar</td>
+</tr>
+<tr>
+<td><strong>Wring</strong></td>
+<td>Wrung</td>
+<td>Wrung</td>
+<td>Torcer</td>
+</tr>
+</tbody>
+</table></div>
+<h3 class="ih">Patrón 3 · Las tres formas distintas (A-B-C) · 74 verbos</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Infinitivo</th>
+<th>Past</th>
+<th>Participle</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>★ <strong>Be</strong></td>
+<td>Was / Were</td>
+<td>Been</td>
+<td>Ser / Estar</td>
+</tr>
+<tr>
+<td>★ <strong>Begin</strong></td>
+<td>Began</td>
+<td>Begun</td>
+<td>Empezar</td>
+</tr>
+<tr>
+<td>★ <strong>Do</strong></td>
+<td>Did</td>
+<td>Done</td>
+<td>Hacer</td>
+</tr>
+<tr>
+<td>★ <strong>Give</strong></td>
+<td>Gave</td>
+<td>Given</td>
+<td>Dar</td>
+</tr>
+<tr>
+<td>★ <strong>Go</strong></td>
+<td>Went</td>
+<td>Gone</td>
+<td>Ir</td>
+</tr>
+<tr>
+<td>★ <strong>Know</strong></td>
+<td>Knew</td>
+<td>Known</td>
+<td>Saber / Conocer</td>
+</tr>
+<tr>
+<td>★ <strong>See</strong></td>
+<td>Saw</td>
+<td>Seen</td>
+<td>Ver</td>
+</tr>
+<tr>
+<td>★ <strong>Take</strong></td>
+<td>Took</td>
+<td>Taken</td>
+<td>Coger / Tomar</td>
+</tr>
+<tr>
+<td>★ <strong>Write</strong></td>
+<td>Wrote</td>
+<td>Written</td>
+<td>Escribir</td>
+</tr>
+<tr>
+<td><strong>Arise</strong></td>
+<td>Arose</td>
+<td>Arisen</td>
+<td>Surgir / Levantarse</td>
+</tr>
+<tr>
+<td><strong>Awake</strong></td>
+<td>Awoke</td>
+<td>Awoken</td>
+<td>Despertarse</td>
+</tr>
+<tr>
+<td><strong>Bear</strong></td>
+<td>Bore</td>
+<td>Borne / Born</td>
+<td>Soportar</td>
+</tr>
+<tr>
+<td><strong>Beat</strong></td>
+<td>Beat</td>
+<td>Beaten</td>
+<td>Golpear</td>
+</tr>
+<tr>
+<td><strong>Befall</strong></td>
+<td>Befell</td>
+<td>Befallen</td>
+<td>Suceder / Ocurrir</td>
+</tr>
+<tr>
+<td><strong>Beget</strong></td>
+<td>Begot</td>
+<td>Begotten</td>
+<td>Engendrar</td>
+</tr>
+<tr>
+<td><strong>Bestride</strong></td>
+<td>Bestrode</td>
+<td>Bestridden</td>
+<td>Montar a horcajadas</td>
+</tr>
+<tr>
+<td><strong>Bite</strong></td>
+<td>Bit</td>
+<td>Bitten</td>
+<td>Morder</td>
+</tr>
+<tr>
+<td><strong>Blow</strong></td>
+<td>Blew</td>
+<td>Blown</td>
+<td>Soplar</td>
+</tr>
+<tr>
+<td><strong>Break</strong></td>
+<td>Broke</td>
+<td>Broken</td>
+<td>Romper</td>
+</tr>
+<tr>
+<td><strong>Choose</strong></td>
+<td>Chose</td>
+<td>Chosen</td>
+<td>Elegir / Escoger</td>
+</tr>
+<tr>
+<td><strong>Cleave</strong></td>
+<td>Clove / Cleft</td>
+<td>Cloven / Cleft</td>
+<td>Hender</td>
+</tr>
+<tr>
+<td><strong>Draw</strong></td>
+<td>Drew</td>
+<td>Drawn</td>
+<td>Dibujar</td>
+</tr>
+<tr>
+<td><strong>Drink</strong></td>
+<td>Drank</td>
+<td>Drunk</td>
+<td>Beber</td>
+</tr>
+<tr>
+<td><strong>Drive</strong></td>
+<td>Drove</td>
+<td>Driven</td>
+<td>Conducir</td>
+</tr>
+<tr>
+<td><strong>Eat</strong></td>
+<td>Ate</td>
+<td>Eaten</td>
+<td>Comer</td>
+</tr>
+<tr>
+<td><strong>Fall</strong></td>
+<td>Fell</td>
+<td>Fallen</td>
+<td>Caer</td>
+</tr>
+<tr>
+<td><strong>Fly</strong></td>
+<td>Flew</td>
+<td>Flown</td>
+<td>Volar</td>
+</tr>
+<tr>
+<td><strong>Forbear</strong></td>
+<td>Forbore</td>
+<td>Forborne</td>
+<td>Contenerse · ⚠️ la lista pone «Forebore / Foreborne»; es <em>forbore / forborne</em></td>
+</tr>
+<tr>
+<td><strong>Forbid</strong></td>
+<td>Forbade</td>
+<td>Forbidden</td>
+<td>Prohibir</td>
+</tr>
+<tr>
+<td><strong>Forego</strong></td>
+<td>Forewent</td>
+<td>Foregone</td>
+<td>Renunciar a</td>
+</tr>
+<tr>
+<td><strong>Forget</strong></td>
+<td>Forgot</td>
+<td>Forgotten</td>
+<td>Olvidar</td>
+</tr>
+<tr>
+<td><strong>Forgive</strong></td>
+<td>Forgave</td>
+<td>Forgiven</td>
+<td>Perdonar</td>
+</tr>
+<tr>
+<td><strong>Forsake</strong></td>
+<td>Forsook</td>
+<td>Forsaken</td>
+<td>Abandonar / Dejar</td>
+</tr>
+<tr>
+<td><strong>Freeze</strong></td>
+<td>Froze</td>
+<td>Frozen</td>
+<td>Helar</td>
+</tr>
+<tr>
+<td><strong>Grow</strong></td>
+<td>Grew</td>
+<td>Grown</td>
+<td>Crecer</td>
+</tr>
+<tr>
+<td><strong>Hide</strong></td>
+<td>Hid</td>
+<td>Hidden</td>
+<td>Esconder</td>
+</tr>
+<tr>
+<td><strong>Lade</strong></td>
+<td>Laded</td>
+<td>Laden</td>
+<td>Cargar</td>
+</tr>
+<tr>
+<td><strong>Lie</strong></td>
+<td>Lay</td>
+<td>Lain</td>
+<td>Echarse</td>
+</tr>
+<tr>
+<td><strong>Mistake</strong></td>
+<td>Mistook</td>
+<td>Mistaken</td>
+<td>Equivocar</td>
+</tr>
+<tr>
+<td><strong>Mow</strong></td>
+<td>Mowed</td>
+<td>Mown</td>
+<td>Segar / Cortar</td>
+</tr>
+<tr>
+<td><strong>Ride</strong></td>
+<td>Rode</td>
+<td>Ridden</td>
+<td>Montar</td>
+</tr>
+<tr>
+<td><strong>Ring</strong></td>
+<td>Rang</td>
+<td>Rung</td>
+<td>Sonar</td>
+</tr>
+<tr>
+<td><strong>Rise</strong></td>
+<td>Rose</td>
+<td>Risen</td>
+<td>Levantar / Subir</td>
+</tr>
+<tr>
+<td><strong>Saw</strong></td>
+<td>Sawed</td>
+<td>Sawn</td>
+<td>Serrar / Serruchar</td>
+</tr>
+<tr>
+<td><strong>Sew</strong></td>
+<td>Sewed</td>
+<td>Sewn</td>
+<td>Coser</td>
+</tr>
+<tr>
+<td><strong>Shake</strong></td>
+<td>Shook</td>
+<td>Shaken</td>
+<td>Sacudir</td>
+</tr>
+<tr>
+<td><strong>Shave</strong></td>
+<td>Shaved</td>
+<td>Shaven</td>
+<td>Afeitar / Rasurar</td>
+</tr>
+<tr>
+<td><strong>Shear</strong></td>
+<td>Sheared</td>
+<td>Shorn</td>
+<td>Esquilar</td>
+</tr>
+<tr>
+<td><strong>Show</strong></td>
+<td>Showed</td>
+<td>Shown</td>
+<td>Mostrar</td>
+</tr>
+<tr>
+<td><strong>Shrink</strong></td>
+<td>Shrank</td>
+<td>Shrunk</td>
+<td>Encoger</td>
+</tr>
+<tr>
+<td><strong>Sing</strong></td>
+<td>Sang</td>
+<td>Sung</td>
+<td>Cantar</td>
+</tr>
+<tr>
+<td><strong>Sink</strong></td>
+<td>Sank</td>
+<td>Sunk</td>
+<td>Hundir</td>
+</tr>
+<tr>
+<td><strong>Slay</strong></td>
+<td>Slew</td>
+<td>Slain</td>
+<td>Matar / Asesinar</td>
+</tr>
+<tr>
+<td><strong>Sow</strong></td>
+<td>Sowed</td>
+<td>Sown</td>
+<td>Sembrar</td>
+</tr>
+<tr>
+<td><strong>Speak</strong></td>
+<td>Spoke</td>
+<td>Spoken</td>
+<td>Hablar</td>
+</tr>
+<tr>
+<td><strong>Spin</strong></td>
+<td>Span</td>
+<td>Spun</td>
+<td>Hilar</td>
+</tr>
+<tr>
+<td><strong>Spring</strong></td>
+<td>Sprang</td>
+<td>Sprung</td>
+<td>Saltar</td>
+</tr>
+<tr>
+<td><strong>Steal</strong></td>
+<td>Stole</td>
+<td>Stolen</td>
+<td>Robar</td>
+</tr>
+<tr>
+<td><strong>Stink</strong></td>
+<td>Stank</td>
+<td>Stunk</td>
+<td>Apestar</td>
+</tr>
+<tr>
+<td><strong>Strew</strong></td>
+<td>Strewed</td>
+<td>Strewn</td>
+<td>Esparcir</td>
+</tr>
+<tr>
+<td><strong>Stride</strong></td>
+<td>Strode</td>
+<td>Stridden</td>
+<td>Dar zancadas</td>
+</tr>
+<tr>
+<td><strong>Strive</strong></td>
+<td>Strove</td>
+<td>Striven</td>
+<td>Esforzarse</td>
+</tr>
+<tr>
+<td><strong>Swear</strong></td>
+<td>Swore</td>
+<td>Sworn</td>
+<td>Jurar</td>
+</tr>
+<tr>
+<td><strong>Swell</strong></td>
+<td>Swelled</td>
+<td>Swollen</td>
+<td>Hinchar</td>
+</tr>
+<tr>
+<td><strong>Swim</strong></td>
+<td>Swam</td>
+<td>Swum</td>
+<td>Nadar</td>
+</tr>
+<tr>
+<td><strong>Tear</strong></td>
+<td>Tore</td>
+<td>Torn</td>
+<td>Rasgar</td>
+</tr>
+<tr>
+<td><strong>Thrive</strong></td>
+<td>Throve</td>
+<td>Thriven</td>
+<td>Prosperar / Florecer</td>
+</tr>
+<tr>
+<td><strong>Throw</strong></td>
+<td>Threw</td>
+<td>Thrown</td>
+<td>Arrojar / Tirar</td>
+</tr>
+<tr>
+<td><strong>Undergo</strong></td>
+<td>Underwent</td>
+<td>Undergone</td>
+<td>Sufrir</td>
+</tr>
+<tr>
+<td><strong>Undertake</strong></td>
+<td>Undertook</td>
+<td>Undertaken</td>
+<td>Emprender</td>
+</tr>
+<tr>
+<td><strong>Wake up</strong></td>
+<td>Woke up</td>
+<td>Woken up</td>
+<td>Despertarse · ⚠️ en la lista pone participio «woke up»; lo correcto es <em>woken up</em></td>
+</tr>
+<tr>
+<td><strong>Wear</strong></td>
+<td>Wore</td>
+<td>Worn</td>
+<td>Llevar puesto</td>
+</tr>
+<tr>
+<td><strong>Weave</strong></td>
+<td>Wove</td>
+<td>Woven</td>
+<td>Tejer</td>
+</tr>
+<tr>
+<td><strong>Withdraw</strong></td>
+<td>Withdrew</td>
+<td>Withdrawn</td>
+<td>Retirar</td>
+</tr>
+</tbody>
+</table></div>
+<h3 class="ih">Patrón 4 · Infinitivo y participio iguales (A-B-A) · 4 verbos</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Infinitivo</th>
+<th>Past</th>
+<th>Participle</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>★ <strong>Become</strong></td>
+<td>Became</td>
+<td>Become</td>
+<td>Llegar a ser</td>
+</tr>
+<tr>
+<td>★ <strong>Come</strong></td>
+<td>Came</td>
+<td>Come</td>
+<td>Venir</td>
+</tr>
+<tr>
+<td>★ <strong>Run</strong></td>
+<td>Ran</td>
+<td>Run</td>
+<td>Correr</td>
+</tr>
+<tr>
+<td><strong>Overcome</strong></td>
+<td>Overcame</td>
+<td>Overcome</td>
+<td>Vencer</td>
+</tr>
+</tbody>
+</table></div></section>
+<section class="xs" id="x5"><h2 class="xs-h">📚 Anexo 2 · Los 202 verbos regulares de la lista, ordenados por regla de ortografía</h2><p>📍 <strong>Fuente:</strong> <em>Verbos Regulares, lista completa</em> (5 páginas) + U1, diapositiva 4.</p>
+<p><strong>Cómo usarlo:</strong> los regulares no hay que memorizarlos como los irregulares: basta con <strong>saber la regla</strong> y el <strong>significado</strong>. Fíjate sobre todo en los grupos pequeños (y → ied, doblan la consonante), que son los que caen en el examen.</p>
+<p>⚠️ <strong>Erratas de la lista que he corregido:</strong> <em>Advice → Adviced</em> (el verbo es <strong>advise → advised</strong>), <em>Notice → Notice</em> (es <strong>noticed</strong>, «notar / darse cuenta»), <em>spelled → spelled</em> (el infinitivo es <strong>spell</strong>).</p>
+<p><strong>Consonante + y → -ied (13):</strong> Carry → Carried (Llevar) · Copy → Copied (Copiar) · Cry → Cried (Llorar) · Deny → Denied (Denegar) · Dry → Dried (Secar) · Envy → Envied (Envidiar) · Fry → Fried (Freir) · Hurry → Hurried (Apurarse) · Marry → Married (Casarse) · Study → Studied (Estudiar) · Try → Tried (Intentar) · Vary → Varied (Variar) · Worry → Worried (Preocuparse)</p>
+<p><strong>Doblan la consonante final (6):</strong> Admit → Admitted (Admitir) · Beg → Begged (Suplicar) · Commit → Committed (Cometer) · Drop → Dropped (Dejar caer) · Plan → Planned (Planificar) · Stop → Stopped (Detener)</p>
+<p><strong>Vocal + y: + -ed (la y se queda) (7):</strong> Annoy → Annoyed (Molestar) · Delay → Delayed (Demorar / Retrasar) · Destroy → Destroyed (Destruir) · Enjoy → Enjoyed (Disfrutar) · Play → Played (Jugar) · Pray → Prayed (Rezar) · Stay → Stayed (Permanecer)</p>
+<p><strong>Acaban en -e: + -d (72):</strong> Abuse → Abused (Abusar) · Accede → Acceded (Acceder) · Accuse → Accused (Acusar) · Acquire → Acquired (Adquirir) · Admire → Admired (Admirar) · Adore → Adored (Adorar) · Advance → Advanced (Avanzar) · Advertise → Advertised (Anunciar) · Advise → Advised (Aconsejar; ⚠️ la lista pone «Advice → Adviced»; el verbo es <em>advise → advised</em> (<em>advice</em> es el sustantivo, «consejo»)) · Agree → Agreed (Acordar) · Amuse → Amused (Entretener) · Announce → Announced (Anunciar) · Apologize → Apologized (Disculparse) · Arrange → Arranged (Arreglar) · Arrive → Arrived (Llegar) · Assure → Assured (Asegurar) · Balance → Balanced (Equilibrar) · Behave → Behaved (Comportarse) · Believe → Believed (Creer) · Blame → Blamed (Culpar) · Breathe → Breathed (Respirar) · Care → Cared (Cuidar) · Change → Changed (Cambiar) · Charge → Charged (Cargar) · Close → Closed (Cerrar) · Combine → Combined (Combinar) · Compare → Compared (Comparar) · Complete → Completed (Completar) · Compose → Composed (Componer) · Continue → Continued (Continuar) · Dance → Danced (Bailar) · Declare → Declared (Declarar) · Devote → Devoted (Dedicar) · Die → Died (Morir) · Engage → Engaged (Comprometer) · File → Filed (Archivar) · Fire → Fired (Disparar) · Hope → Hoped (Desear) · Imagine → Imagined (Imaginar) · Judge → Judged (Juzgar) · Like → Liked (Gustar) · Manage → Managed (Administrar) · Massage → Massaged (Masajear) · Measure → Measured (Medir) · Move → Moved (Mover) · Name → Named (Nombrar) · Note → Noted (Notar) · Notice → Noticed (Notar / darse cuenta; ⚠️ la lista pone pasado «Notice» y significado «Notificar»; es <em>noticed</em> = notar) · Observe → Observed (Observar) · Phone → Phoned (Telefonear) · Please → Pleased (Complacer) · Practice → Practiced (Practicar) · Prepare → Prepared (Preparar) · Promise → Promised (Prometer) · Pronounce → Pronounced (Pronunciar) · Raise → Raised (Levantar) · Receive → Received (Recibir) · Refuse → Refused (Rechazar) · Require → Required (Requerir) · Reserve → Reserved (Reservar) · Resolve → Resolved (Resolver) · Save → Saved (Salvar) · Serve → Served (Servir) · Smile → Smiled (Sonreír) · Smoke → Smoked (Fumar) · Surprise → Surprised (Sorprender) · Taste → Tasted (Probar) · Tie → Tied (Atar) · Translate → Translated (Traducir) · Unite → United (Unir) · Use → Used (Usar) · Whistle → Whistled (Silbar)</p>
+<p><strong>Regla general: + -ed (104):</strong> Abandon → Abandoned (Abandonar) · Abolish → Abolished (Abolir) · Absorb → Absorbed (Absorber) · Accent → Accented (Acentuar) · Act → Acted (Actuar) · Add → Added (Añadir / Sumar) · Address → Addressed (Dirigirse) · Allow → Allowed (Permitir) · Answer → Answered (Responder) · Appear → Appeared (Aparecer) · Approach → Approached (Acercarse) · Arrest → Arrested (Arrestar) · Ask → Asked (Preguntar) · Assist → Assisted (Asistir) · Attack → Attacked (Atacar) · Attempt → Attempted (Intentar) · Avoid → Avoided (Evitar) · Belong → Belonged (Pertenecer) · Bless → Blessed (Bendecir) · Brush → Brushed (Cepillar) · Call → Called (Llamar) · Cash → Cashed (Cobrar) · Check → Checked (Comprobar) · Claim → Claimed (Reclamar) · Clean → Cleaned (Limpiar) · Climb → Climbed (Escalar) · Collect → Collected (Recolectar) · Command → Commanded (Mandar) · Consider → Considered (Considerar) · Consist → Consisted (Consistir) · Contain → Contained (Contener) · Cook → Cooked (Cocinar) · Count → Counted (Contar) · Cover → Covered (Cubrir) · Crash → Crashed (Chocar) · Cross → Crossed (Cruzar) · Crown → Crowned (Coronar) · Deliver → Delivered (Entregar) · Dress → Dressed (Vestir) · Exclaim → Exclaimed (Exclamar) · Explain → Explained (Explicar) · Express → Expressed (Expresar) · Fail → Failed (Fracasar) · Fill → Filled (Llenar) · Finish → Finished (Terminar) · Fish → Fished (Pescar) · Fix → Fixed (Arreglar) · Follow → Followed (Seguir) · Gain → Gained (Ganar) · Guess → Guessed (Adivinar) · Happen → Happened (Suceder) · Help → Helped (Ayudar) · Kill → Killed (Matar) · Kiss → Kissed (Besar) · Laugh → Laughed (Reir) · Look → Looked (Mirar) · Maintain → Maintained (Mantener) · Mark → Marked (Marcar) · Miss → Missed (Extrañar) · Number → Numbered (Enumerar) · Offer → Offered (Ofrecer) · Open → Opened (Abrir) · Order → Ordered (Ordenar) · Park → Parked (Aparcar) · Pass → Passed (Aprobar) · Perform → Performed (Llevar a cabo) · Pick → Picked (Recoger) · Prefer → Prefered (Preferir) · Punish → Punished (Castigar) · Push → Pushed (Empujar) · Rain → Rained (Llover) · Register → Registered (Registrar) · Remember → Remembered (Recordar) · Repair → Repaired (Reparar) · Repeat → Repeated (Repetir) · Report → Reported (Reportar) · Request → Requested (Solicitar) · Sail → Sailed (Navegar) · Search → Searched (Buscar) · Sign → Signed (Firmar) · Sound → Sounded (Sonar) · Spell → Spelled / Spelt (Deletrear; ⚠️ la lista pone «spelled» como infinitivo; el infinitivo es <em>spell</em> (también es irregular: <em>spelt</em>)) · Start → Started (Comenzar) · Suffer → Suffered (Sufrir) · Talk → Talked (Hablar) · Test → Tested (Testear) · Thank → Thanked (Agradecer) · Touch → Touched (Tocar) · Train → Trained (Entrenar) · Travel → Traveled (Viajar) · Trust → Trusted (Confiar) · Turn → Turned (Girar) · Visit → Visited (Visitar) · Wait → Waited (Esperar) · Walk → Walked (Caminar) · Want → Wanted (Querer) · Warm → Warmed (Calentar) · Wash → Washed (Lavar) · Watch → Watched (Observar (ver)) · Water → Watered (Regar) · Weigh → Weighed (Pesar) · Wish → Wished (Desear) · Work → Worked (Trabajar) · Wound → Wounded (Herir)</p></section><section class="xs" id="impres"><h2 class="xs-h">⚡ Lo imprescindible (repaso exprés)</h2><p class="meta">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><h3 class='ih'>Verbos (Unit 1)</h3><details class="pq"><summary>¿Verbo regular?</summary><div class="pa"><p>Pasado y participio con <strong>-ed</strong>, igual para todas las personas: <em>work – worked – worked</em>.</p></div></details><details class="pq"><summary>¿-ed con -e?</summary><div class="pa"><p>Solo <strong>-d</strong>: change → changed.</p></div></details><details class="pq"><summary>¿-ed con consonante + y?</summary><div class="pa"><p><strong>-ied</strong>: study → studied, try → tried. <strong>Vocal + y</strong> → se queda: play → played.</p></div></details><details class="pq"><summary>¿Cuándo se dobla?</summary><div class="pa"><p><strong>C-V-C con la última sílaba acentuada</strong>: stop → stopped, prefer → preferred, plan → planned. 🟥 <strong>Pero visit → visited, open → opened</strong> (última sílaba átona).</p></div></details><details class="pq"><summary>¿Cómo suena -ed?</summary><div class="pa"><p><strong>/d/</strong> tras sonoro (cleaned, played) · <strong>/t/</strong> tras p, f, k, s, sh, ch (looked, kissed, washed) · <strong>/ɪd/</strong> tras <strong>d o t</strong> (ended, waited, decided). 🟥 <strong>Solo hay sílaba extra tras d o t.</strong></p></div></details><details class="pq"><summary>¿Verbo irregular?</summary><div class="pa"><p>No sigue el -ed. Orden: <strong>infinitivo &gt; past &gt; past participle</strong>.</p></div></details><details class="pq"><summary>¿4 patrones?</summary><div class="pa"><p><strong>A-A-A</strong> cut, put, hit, cost, let, shut · <strong>A-B-B</strong> buy–bought, teach–taught, find–found · <strong>A-B-C</strong> sing–sang–sung, drive–drove–driven, write–wrote–written · <strong>A-B-A</strong> come–came–come, run–ran–run, become–became–become.</p></div></details><details class="pq"><summary>¿Los imprescindibles?</summary><div class="pa"><p>be–was/were–been · go–went–gone · do–did–done · have–had–had · see–saw–seen · take–took–taken · write–wrote–written · know–knew–known · give–gave–given · begin–began–begun · think–thought–thought · bring–brought–brought.</p></div></details><h3 class='ih'>Present Simple</h3><details class="pq"><summary>¿Forma?</summary><div class="pa"><p>Verbo; <strong>+ -s con he/she/it</strong>. 🟥 <strong>La -s es solo para he, she, it.</strong></p></div></details><details class="pq"><summary>¿Negativa y pregunta?</summary><div class="pa"><p><strong>don't/doesn't + verbo</strong> · <strong>Do/Does + sujeto + verbo?</strong> 🟥 <strong>Con does/doesn't el verbo pierde la -s</strong> (He doesn't play).</p></div></details><details class="pq"><summary>¿6 usos?</summary><div class="pa"><p>Hábitos · verdades generales · horarios · instrucciones · opiniones y gustos · narraciones.</p></div></details><details class="pq"><summary>¿-s?</summary><div class="pa"><p>+s · <strong>-es</strong> tras s, ss, sh, ch, x, o (watches, goes) · consonante + y → <strong>-ies</strong> (studies) · vocal + y → <strong>-ys</strong> (plays) · <strong>has, does, is</strong>.</p></div></details><details class="pq"><summary>¿Adverbios?</summary><div class="pa"><p><strong>Delante del verbo</strong> (I always talk) · <strong>detrás de be</strong> (I am always happy) · <em>every day, once a week</em> <strong>al final</strong>.</p></div></details><details class="pq"><summary>¿Pistas?</summary><div class="pa"><p>always, usually, often, sometimes, rarely, hardly ever, never, every day, on Mondays.</p></div></details><h3 class='ih'>Present Continuous</h3><details class="pq"><summary>¿Forma?</summary><div class="pa"><p><strong>am/is/are + -ing</strong> (sin el <em>be</em> no vale: <del>She working</del>).</p></div></details><details class="pq"><summary>¿3 usos?</summary><div class="pa"><p>Ahora mismo · temporal (this year) · planes de futuro cerrados (We're meeting Ana at three).</p></div></details><details class="pq"><summary>¿-ing?</summary><div class="pa"><p>write → <strong>writing</strong> · run → <strong>running</strong> · lie → <strong>lying</strong> · see → <strong>seeing</strong> · study → <strong>studying</strong> (la y nunca cambia).</p></div></details><details class="pq"><summary>¿Pistas?</summary><div class="pa"><p>now, right now, at the moment, today, this week, at five o'clock, <strong>Look! Listen! Be quiet!</strong></p></div></details><details class="pq"><summary>¿Simple o Continuous?</summary><div class="pa"><p><em>I usually go by bus… but today I am walking</em> → <strong>usually = Simple · today/now = Continuous</strong>.</p></div></details><h3 class='ih'>Present Perfect Simple</h3><details class="pq"><summary>¿Forma?</summary><div class="pa"><p><strong>have/has + participio (3ª columna)</strong>.</p></div></details><details class="pq"><summary>¿3 usos?</summary><div class="pa"><p>Experiencias sin decir cuándo (I have been to London) · resultado que se nota ahora (I have lost my keys) · empezó antes y sigue (We have lived here for ten years).</p></div></details><details class="pq"><summary>¿Palabras?</summary><div class="pa"><p><strong>already</strong> (ya, afirmativa, en medio) · <strong>yet</strong> (ya/todavía, negativa y pregunta, al final) · <strong>just</strong> (acabar de) · <strong>ever</strong> (alguna vez, preguntas) · <strong>never</strong> · <strong>for + duración</strong> (for two years) · <strong>since + inicio</strong> (since 2010).</p></div></details><details class="pq"><summary>¿En español?</summary><div class="pa"><p>Pretérito perfecto: <strong>he trabajado, ha ido</strong>.</p></div></details><h3 class='ih'>Present Perfect Continuous</h3><details class="pq"><summary>¿Forma?</summary><div class="pa"><p><strong>have/has been + -ing</strong>.</p></div></details><details class="pq"><summary>¿Usos?</summary><div class="pa"><p>Duración hasta ahora (I have been waiting for an hour) · acaba de parar y se nota (She's tired: she has been running).</p></div></details><details class="pq"><summary>¿Trampa?</summary><div class="pa"><p>«Llevo dos horas esperando» = <strong>I have been waiting for two hours</strong> (no <del>I am waiting</del>).</p></div></details><details class="pq"><summary>¿Pistas?</summary><div class="pa"><p>for, since, all day, all morning, <strong>How long…?</strong></p></div></details><details class="pq"><summary>¿Simple o Continuous?</summary><div class="pa"><p><strong>Resultado / número → Simple</strong> (I have written three emails) · <strong>duración → Continuous</strong> (I have been writing emails all morning).</p></div></details><details class="pq"><summary>¿Stative verbs?</summary><div class="pa"><p>🟥 <strong>know, be, like… no van en continuo</strong>: I know, I have known (no <del>I am knowing</del>).</p></div></details><h3 class='ih'>Los 10 que no puedes fallar</h3><ol>
+<li><strong>He doesn't play</strong> (no <em>plays</em>).</li>
+<li><strong>We work</strong> (la -s solo con he/she/it).</li>
+<li><strong>She is working</strong> (con <em>be</em>).</li>
+<li><strong>I have been waiting for two hours</strong> ("llevo").</li>
+<li><strong>for</strong> duración · <strong>since</strong> inicio.</li>
+<li><strong>already</strong> afirmativa · <strong>yet</strong> negativa/pregunta al final.</li>
+<li><strong>visited / opened</strong> (no se dobla).</li>
+<li><strong>-ed extra sílaba solo tras d/t</strong>.</li>
+<li><strong>I know</strong> (stative, sin -ing).</li>
+<li><strong>Con have/has → 3ª columna</strong> (have gone, have written).</li>
+</ol></section><section class="xs" id="glosario"><h2 class="xs-h">📖 Glosario</h2><div class="tw"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>-ed</strong></td>
+<td>Terminación del pasado y del participio de los verbos regulares (<em>worked</em>)</td>
+</tr>
+<tr>
+<td><strong>-ing</strong></td>
+<td>Terminación de los tiempos continuos; equivale a "-ando / -iendo" (<em>working</em>)</td>
+</tr>
+<tr>
+<td><strong>A-A-A, A-B-B, A-B-C, A-B-A</strong></td>
+<td>Los 4 patrones de los verbos irregulares (qué formas se repiten)</td>
+</tr>
+<tr>
+<td><strong>Adverbio de frecuencia</strong></td>
+<td>Palabra que dice cada cuánto pasa algo (<em>always, usually, often, sometimes, rarely, hardly ever, never</em>)</td>
+</tr>
+<tr>
+<td><strong>Afirmativa</strong></td>
+<td>Frase que dice que algo sí pasa (<em>I work</em>)</td>
+</tr>
+<tr>
+<td><strong>Already</strong></td>
+<td>"Ya", en frases afirmativas, en medio (<em>I have already eaten</em>)</td>
+</tr>
+<tr>
+<td><strong>Átona (sílaba)</strong></td>
+<td>Sílaba que se pronuncia débil, sin el golpe de voz (<em>VI-sit</em>: <em>-sit</em> es átona)</td>
+</tr>
+<tr>
+<td><strong>Auxiliar</strong></td>
+<td>Verbo de ayuda para negar, preguntar o formar tiempos (<em>do/does, am/is/are, have/has</em>)</td>
+</tr>
+<tr>
+<td><strong>Consonante</strong></td>
+<td>Letra que no es vocal (b, c, d, f, g…)</td>
+</tr>
+<tr>
+<td><strong>Contracción</strong></td>
+<td>Unión de dos palabras con apóstrofo (<em>don't, isn't, I've, she's</em>)</td>
+</tr>
+<tr>
+<td><strong>Duración</strong></td>
+<td>Cuánto tiempo dura algo; la idea del <em>Present Perfect Continuous</em></td>
+</tr>
+<tr>
+<td><strong>Ever</strong></td>
+<td>"Alguna vez", en preguntas (<em>Have you ever tried sushi?</em>)</td>
+</tr>
+<tr>
+<td><strong>For</strong></td>
+<td>+ duración, "durante" (<em>for two years</em>)</td>
+</tr>
+<tr>
+<td><strong>Hardly ever</strong></td>
+<td>"Casi nunca"</td>
+</tr>
+<tr>
+<td><strong>How long…?</strong></td>
+<td>"¿Cuánto tiempo…?"; pregunta por la duración</td>
+</tr>
+<tr>
+<td><strong>Imperativo</strong></td>
+<td>Forma para dar órdenes o instrucciones (<em>Open the window</em>)</td>
+</tr>
+<tr>
+<td><strong>Infinitivo</strong></td>
+<td>Forma básica del verbo, la del diccionario (<em>work</em>, <em>go</em>)</td>
+</tr>
+<tr>
+<td><strong>Interrogativa (pregunta)</strong></td>
+<td>Frase que pregunta (<em>Do you work?</em>)</td>
+</tr>
+<tr>
+<td><strong>Just</strong></td>
+<td>"Acabar de" (<em>She has just arrived</em>)</td>
+</tr>
+<tr>
+<td><strong>Negativa</strong></td>
+<td>Frase que dice que algo no pasa (<em>I don't work</em>)</td>
+</tr>
+<tr>
+<td><strong>Never</strong></td>
+<td>"Nunca"</td>
+</tr>
+<tr>
+<td><strong>Participio (past participle)</strong></td>
+<td>3ª forma del verbo; va con <em>have/has</em> (<em>worked, gone, written</em>)</td>
+</tr>
+<tr>
+<td><strong>Pasado (past simple)</strong></td>
+<td>2ª forma del verbo; para acciones terminadas (<em>worked, went</em>)</td>
+</tr>
+<tr>
+<td><strong>Patrón</strong></td>
+<td>Forma que se repite en varios verbos y ayuda a memorizarlos</td>
+</tr>
+<tr>
+<td><strong>Persona</strong></td>
+<td>Quién hace la acción (I, you, he, she, it, we, they)</td>
+</tr>
+<tr>
+<td><strong>Plan de futuro cerrado</strong></td>
+<td>Algo ya organizado, con hora o día; va en <em>Present Continuous</em></td>
+</tr>
+<tr>
+<td><strong>Present Continuous</strong></td>
+<td><em>am/is/are + -ing</em>: lo que pasa ahora o es temporal</td>
+</tr>
+<tr>
+<td><strong>Present Perfect Continuous</strong></td>
+<td><em>have/has been + -ing</em>: empezó antes y sigue; interesa la duración</td>
+</tr>
+<tr>
+<td><strong>Present Perfect Simple</strong></td>
+<td><em>have/has + participio</em>: pasado que importa ahora; interesa el resultado</td>
+</tr>
+<tr>
+<td><strong>Present Simple</strong></td>
+<td>Verbo (+ -s con he/she/it): hábitos, lo permanente, verdades</td>
+</tr>
+<tr>
+<td><strong>Pretérito perfecto</strong></td>
+<td>Tiempo español "he + participio" (he comido); equivale al <em>Present Perfect</em></td>
+</tr>
+<tr>
+<td><strong>Rarely</strong></td>
+<td>"Raramente"</td>
+</tr>
+<tr>
+<td><strong>Resultado</strong></td>
+<td>Lo conseguido; la idea del <em>Present Perfect Simple</em></td>
+</tr>
+<tr>
+<td><strong>Since</strong></td>
+<td>+ momento de inicio, "desde" (<em>since 2010</em>)</td>
+</tr>
+<tr>
+<td><strong>Sílaba</strong></td>
+<td>Cada golpe de voz de una palabra (<em>wait-ed</em> tiene dos)</td>
+</tr>
+<tr>
+<td><strong>Sílaba acentuada (tónica)</strong></td>
+<td>La que suena más fuerte (pre-<strong>FER</strong>)</td>
+</tr>
+<tr>
+<td><strong>Sonido sonoro</strong></td>
+<td>Sonido que hace vibrar la garganta (b, g, l, m, n, v, z, r, vocales)</td>
+</tr>
+<tr>
+<td><strong>Sonido sordo</strong></td>
+<td>Sonido que no hace vibrar la garganta (p, f, k, s, sh, ch)</td>
+</tr>
+<tr>
+<td><strong>Stative verbs</strong></td>
+<td>Verbos de estado (<em>know, be, like…</em>) que no admiten la forma continua</td>
+</tr>
+<tr>
+<td><strong>Sujeto</strong></td>
+<td>Quién hace la acción (<em>I, she, my sister</em>)</td>
+</tr>
+<tr>
+<td><strong>Tercera persona del singular</strong></td>
+<td>He, she, it; la que lleva -s en el <em>Present Simple</em></td>
+</tr>
+<tr>
+<td><strong>To be</strong></td>
+<td>Ser / estar (<em>am, is, are</em>)</td>
+</tr>
+<tr>
+<td><strong>Verbo irregular</strong></td>
+<td>Verbo que no forma el pasado y el participio con <em>-ed</em> (<em>go – went – gone</em>)</td>
+</tr>
+<tr>
+<td><strong>Verbo principal</strong></td>
+<td>El que lleva el significado de la frase (<em>eat, work</em>)</td>
+</tr>
+<tr>
+<td><strong>Verbo regular</strong></td>
+<td>Verbo que forma el pasado y el participio con <em>-ed</em> (<em>work – worked – worked</em>)</td>
+</tr>
+<tr>
+<td><strong>Vocal</strong></td>
+<td>a, e, i, o, u</td>
+</tr>
+<tr>
+<td><strong>Yet</strong></td>
+<td>"Ya / todavía", en negativas y preguntas, al final (<em>I haven't finished yet</em>)</td>
+</tr>
+</tbody>
+</table></div></section>
+<div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
+<aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
+<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><a class="dt sim" href="../../ingles1/simulacro/">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<details class="db"><summary><span class="dn">1</span><span class="dt2">Unit 1: Regular and Irregular Verbs</span><span class="dc" data-b="b0">0/7</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i2" href="#c1"><i></i>1. Índice del curso</a><a class="dl i1" href="#c2"><i></i>2. Verbos regulares</a><a class="dl i1" href="#c3"><i></i>3. Ortografía del "-ed"</a><a class="dl i1" href="#c4"><i></i>4. Pronunciación del "-ed"</a><a class="dl i1" href="#c5"><i></i>5. Verbos irregulares</a><a class="dl i1" href="#c6"><i></i>6. Estrategia: aprenderlos por patrones</a><a class="dl i1" href="#c7"><i></i>7. Los verbos irregulares más comunes</a></details>
+<details class="db"><summary><span class="dn">2</span><span class="dt2">Unit 2: Present Simple</span><span class="dc" data-b="b1">0/5</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i1" href="#c8"><i></i>8. Present Simple: forma y significado</a><a class="dl i1" href="#c9"><i></i>9. Present Simple: los 6 usos</a><a class="dl i1" href="#c10"><i></i>10. Adverbios de frecuencia: dónde van</a><a class="dl i1" href="#c11"><i></i>11. Present Simple: afirmativa, negativa y pregunta</a><a class="dl i1" href="#c12"><i></i>12. La "-s" de la tercera persona</a></details>
+<details class="db"><summary><span class="dn">3</span><span class="dt2">Unit 2: Present Continuous</span><span class="dc" data-b="b2">0/5</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i1" href="#c13"><i></i>13. Present Continuous: forma y significado</a><a class="dl i1" href="#c14"><i></i>14. Present Continuous: los 3 usos</a><a class="dl i1" href="#c15"><i></i>15. Ortografía del "-ing"</a><a class="dl i1" href="#c16"><i></i>16. Present Continuous: afirmativa, negativa y pregunta</a><a class="dl i1" href="#c17"><i></i>17. ¿Present Simple o Present Continuous?</a></details>
+<details class="db"><summary><span class="dn">4</span><span class="dt2">Unit 2: Present Perfect Simple</span><span class="dc" data-b="b3">0/4</span></summary><a class="dbk" href="#b3">Ir al inicio del bloque</a><a class="dl i1" href="#c18"><i></i>18. Present Perfect Simple: forma y significado</a><a class="dl i1" href="#c19"><i></i>19. Present Perfect Simple: los 3 usos</a><a class="dl i1" href="#c20"><i></i>20. Las palabras del Present Perfect: already, yet, just, ever, never, for, since</a><a class="dl i1" href="#c21"><i></i>21. Present Perfect Simple: afirmativa, negativa y pregunta</a></details>
+<details class="db"><summary><span class="dn">5</span><span class="dt2">Unit 2: Present Perfect Continuous</span><span class="dc" data-b="b4">0/5</span></summary><a class="dbk" href="#b4">Ir al inicio del bloque</a><a class="dl i1" href="#c22"><i></i>22. Present Perfect Continuous: forma y significado</a><a class="dl i1" href="#c23"><i></i>23. La trampa del español: "Llevo dos horas esperando"</a><a class="dl i1" href="#c24"><i></i>24. Present Perfect Continuous: afirmativa, negativa y pregunta</a><a class="dl i1" href="#c25"><i></i>25. ¿Present Perfect Simple o Continuous?</a><a class="dl i1" href="#c26"><i></i>26. Stative verbs: no admiten la forma continua</a></details>
+<p class="dx">Extras</p><a class="dl" href="#x1">📋 Tabla resumen de los 4 presentes</a><a class="dl" href="#trampas">⚠️ Trampas típicas del examen (y de los hispanohablantes)</a><a class="dl" href="#chequeo">✅ Chequeo final (contesta sin mirar; si fallas, vuelve al concepto)</a><a class="dl" href="#x4">📚 Anexo 1 · Los 198 verbos irregulares de la lista de la profe, ordenados por patrón</a><a class="dl" href="#x5">📚 Anexo 2 · Los 202 verbos regulares de la lista, ordenados por regla de ortografía</a><a class="dl" href="#impres">⚡ Lo imprescindible</a><a class="dl" href="#glosario">📖 Glosario</a></div></aside><div id="planOv" hidden role="dialog" aria-modal="true" aria-label="Mi plan de estudio"><div class="pwrap">
+<div class="ptop"><header><p class="eyebrow" id="pl_eb"></p><h1>📅 Mi plan de estudio</h1><p class="sub" id="pl_sub"></p></header><button type="button" class="px" id="planClose" aria-label="Cerrar plan">×</button></div>
+<section class="count" id="pl_count"></section>
+<section class="cfg">
+  <div><p class="k" style="margin:0 0 6px">📆 Fecha del examen</p><input type="date" id="pl_fecha" style="font:inherit;font-size:16px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 8px"></div>
+  <div><p class="k" style="margin:0 0 6px">1 · ¿Cuántos días vas a estudiar?</p><div class="days" id="pl_days"></div></div>
+  <div><p class="k" style="margin:0 0 6px">2 · ¿Cuándo empiezas?</p><div class="seg" id="pl_startSeg"></div></div>
+  <p class="foot" style="margin:0">Cambia la hora de inicio y fin de cada día si hace falta: el plan se reparte solo según el tiempo que tengas.</p>
+</section>
+<div id="pl_msg"></div>
+<div id="pl_plan" style="display:flex;flex-direction:column;gap:14px"></div>
+<p class="foot">Toca <b>Ir →</b> para saltar a esa parte del repaso. Marca la casilla cuando termines cada tarea. Se guarda en este móvil.</p>
+</div></div>
+<div class="scrim" id="scrim" hidden></div><button type="button" class="fab hf" id="hideFab" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideFabTxt">Tapar</span></button><button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab idx" id="drwOpen" aria-label="Abrir índice">☰ Índice</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
+<div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
+ <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
+ <div class="fc-setup" id="fcSetup">
+  <p class="meta" style="margin:0">Pregunta por delante, respuesta por detrás. Toca la tarjeta para <b>encender la luz 💡</b> y darle la vuelta. Luego di si te la sabías.</p>
+  <p class="lbl">1 · ¿Qué bloque?</p><div class="opts" id="oBlk"></div>
+  <p class="lbl">2 · ¿Qué preguntas?</p><div class="opts" id="oKind"></div>
+  <p class="lbl">3 · ¿Cuáles?</p><div class="opts" id="oLv"></div>
+  <button type="button" class="go" id="fcGo">Empezar</button>
+ </div>
+ <div id="fcPlay" hidden style="display:contents">
+  <div class="fc-prog"><span id="fcN"></span><span id="fcS"></span></div>
+  <div class="fc-bar"><i class="g" id="fcG"></i><i class="r" id="fcR"></i></div>
+  <div class="stage"><div class="card3" id="card3" tabindex="0" role="button" aria-label="Dar la vuelta a la tarjeta">
+   <div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></div>
+  <button type="button" class="flipb" id="fcFlip">💡 Ver respuesta</button>
+  <div class="btns" id="fcBtns" hidden><button type="button" class="b-no" id="fcNo">❌ No me la sé</button><button type="button" class="b-si" id="fcSi">✅ Me la sé</button></div>
+ </div>
+ <div class="fc-end" id="fcEnd" hidden></div>
+</div></div>
+</div>
+<script>
+const KEY="ing1-repaso-v1";
+let st={done:{},f:"0",mode:"read",open:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.done)st=Object.assign(st,s)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const bar=document.querySelector(".bar");
+const setBar=()=>document.documentElement.style.setProperty("--bar","8px");setBar();addEventListener("resize",setBar);
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const cpts=[...document.querySelectorAll(".cpt")];
+const blks=[...document.querySelectorAll(".blk")];
+cpts.forEach(c=>{c._t=norm(c.textContent);const cb=c.querySelector(".dom input");const n=cb.dataset.n;cb.checked=!!st.done[n];c.classList.toggle("done",cb.checked);
+  cb.addEventListener("change",()=>{if(cb.checked)st.done[n]=1;else delete st.done[n];c.classList.toggle("done",cb.checked);save();prog();if(st.f==="pend")apply()});
+  const b=document.createElement("button");b.type="button";b.className="show";b.textContent="Ver respuesta";
+  const q=c.querySelector(".box.q");q.insertBefore(b,q.querySelector(".dom"));
+  b.addEventListener("click",()=>{c.classList.toggle("reveal");b.textContent=c.classList.contains("reveal")?"Ocultar respuesta":"Ver respuesta"})});
+function setOpen(b,v){b.classList.toggle("open",v);b.querySelector(".blk-h").setAttribute("aria-expanded",String(v));if(v)st.open[b.id]=1;else delete st.open[b.id]}
+blks.forEach(b=>{const h=b.querySelector(".blk-h");h.tabIndex=0;h.setAttribute("role","button");setOpen(b,!!st.open[b.id]);
+  const t=()=>{setOpen(b,!b.classList.contains("open"));save()};h.addEventListener("click",t);h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();t()}})});
+document.getElementById("openAll").onclick=()=>{blks.forEach(b=>setOpen(b,true));save()};
+document.getElementById("closeAll").onclick=()=>{blks.forEach(b=>setOpen(b,false));save()};
+function go(id){const el=document.getElementById(id);if(!el)return;const b=el.closest(".blk");if(b){setOpen(b,true);save()}
+  requestAnimationFrame(()=>{const y=el.getBoundingClientRect().top+scrollY-8;scrollTo({top:y,behavior:"smooth"})})}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.getAttribute("href").slice(1))}));
+document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)go(e.target.value);e.target.value=""});
+function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const k=cs.filter(x=>st.done[x.dataset.n]).length;const el=b.querySelector(".bd");if(el)el.textContent=k;const dc=document.querySelector('.dc[data-b="'+b.id+'"]');if(dc){dc.textContent=(k===cs.length?"✓ ":"")+k+"/"+cs.length;dc.classList.toggle("full",k===cs.length)}});
+  const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de "+cpts.length;document.getElementById("pBar").style.width=(n/cpts.length*100)+"%";
+  const p1=cpts.filter(c=>c.dataset.lv==="1"&&!st.done[c.id.slice(1)]).length;document.getElementById("pHint").textContent=p1?"Te faltan "+p1+" 🔴":"¡Todos los 🔴 dominados!"}
+function apply(){const q="";let shown=0;const filt=st.f!=="0";
+  cpts.forEach(c=>{const n=c.id.slice(1);let ok=true;if(st.f==="pend")ok=!st.done[n];else if(st.f!=="0")ok=c.dataset.lv===st.f;if(q)ok=ok&&c._t.includes(q);c.hidden=!ok;if(ok)shown++});
+  blks.forEach(b=>{const any=[...b.querySelectorAll(".cpt")].some(c=>!c.hidden);b.hidden=!any;if(any&&filt)b.classList.add("open")});
+  if(!filt)blks.forEach(b=>b.classList.toggle("open",!!st.open[b.id]));
+  document.getElementById("empty").hidden=shown>0;
+  document.querySelectorAll(".chips .chip").forEach(ch=>ch.setAttribute("aria-pressed",String(ch.dataset.f===st.f)))}
+document.querySelectorAll(".chips .chip").forEach(ch=>ch.addEventListener("click",()=>{st.f=ch.dataset.f;save();apply()}));
+
+function setMode(m){st.mode=m;save();document.body.classList.toggle("test",m==="test");
+  document.getElementById("mRead").setAttribute("aria-pressed",String(m==="read"));document.getElementById("mTest").setAttribute("aria-pressed",String(m==="test"));
+  cpts.forEach(c=>{c.classList.remove("reveal");c.querySelector(".show").textContent="Ver respuesta"})}
+document.getElementById("mRead").onclick=()=>setMode("read");document.getElementById("mTest").onclick=()=>setMode("test");
+function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);
+  document.querySelectorAll(".fd.peek").forEach(x=>x.classList.remove("peek"));setBar();
+  const hf=document.getElementById("hideFab");hf.setAttribute("aria-pressed",String(v));document.getElementById("hideFabTxt").textContent=v?"🙈 Tapadas":"💡 Tapar"}
+document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide));
+document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
+setHide(!!st.hide);
+setMode(st.mode);apply();prog();
+if(/^#[\w-]+$/.test(location.hash)){const h=location.hash.slice(1);setTimeout(()=>go(h),300)}
+const drw=document.getElementById("drw"),scrim=document.getElementById("scrim");
+const wide=()=>matchMedia("(min-width:1100px)").matches;
+function drwSet(v){drw.classList.toggle("on",v);scrim.hidden=!v;document.body.style.overflow=v&&!wide()?"hidden":""}
+document.getElementById("drwOpen").onclick=()=>drwSet(true);document.getElementById("drwClose").onclick=()=>drwSet(false);scrim.onclick=()=>drwSet(false);
+drw.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(!wide())drwSet(false)}));
+document.getElementById("fcOpen2").addEventListener("click",()=>{if(!wide())drwSet(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drw.classList.contains("on"))drwSet(false)});
+const upB=document.getElementById("upBtn");addEventListener("scroll",()=>{upB.hidden=scrollY<600},{passive:true});upB.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* ===== Buscador ===== */
+(function(){
+const qi=document.getElementById("q"),res=document.getElementById("res");
+const U=[];
+const txt=el=>{const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);const out=[];while(w.nextNode()){const t=w.currentNode;if(t.parentNode.closest(".fl,.lbl,.tag,.show,.dom,.srcl,figcaption"))continue;const v=t.nodeValue.trim();if(v)out.push(v)}return out.join(" ")};
+const add=(el,kind,title,text)=>U.push({el,kind,title,text,n:norm(text),nt:norm(title)});
+cpts.forEach(c=>{const t=c.querySelector("h3").childNodes[0].textContent.trim();add(c,"Concepto "+c.id.slice(1)+" · "+c.closest(".blk").querySelector(".bt").textContent,t,txt(c))});
+document.querySelectorAll("#hoja .pq").forEach(d=>add(d,"20 preguntas de la hoja",d.querySelector("summary").textContent,txt(d)));
+document.querySelectorAll("#impres .pq").forEach(d=>add(d,"Lo imprescindible",d.querySelector("summary").textContent,txt(d)));
+[["glosario","Glosario"],["trampas","Trampas"],["numeros","Números clave"]].forEach(([id,k])=>document.querySelectorAll("#"+id+" tbody tr").forEach(r=>add(r,k,r.cells[0].textContent,txt(r))));
+document.querySelectorAll("#chequeo li").forEach(li=>add(li,"Chequeo final",li.textContent,li.textContent));
+const escH=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function snip(text,q){const n=norm(text);const i=n.indexOf(q);if(i<0)return escH(text.slice(0,110))+"…";
+  const a=Math.max(0,i-50),b=Math.min(text.length,i+q.length+70);
+  return (a?"…":"")+escH(text.slice(a,i))+"<mark>"+escH(text.slice(i,i+q.length))+"</mark>"+escH(text.slice(i+q.length,b))+(b<text.length?"…":"")}
+function markT(t,q){const n=norm(t);const i=n.indexOf(q);return i<0?escH(t):escH(t.slice(0,i))+"<mark>"+escH(t.slice(i,i+q.length))+"</mark>"+escH(t.slice(i+q.length))}
+let found=[];
+function run(){const raw=qi.value.trim();const q=norm(raw);if(q.length<2){res.hidden=true;return}
+  found=U.filter(u=>u.n.includes(q)).sort((a,b)=>(b.nt.includes(q)-a.nt.includes(q)));
+  res.hidden=false;
+  if(!found.length){res.innerHTML=`<div class="none">No aparece «${escH(raw)}» en el repaso. Prueba con otra palabra o sin la última letra.</div>`;return}
+  res.innerHTML=`<div class="rh"><span>${found.length} resultado${found.length>1?"s":""} para «${escH(raw)}»</span><button type="button" id="resX">Cerrar</button></div>`+
+   found.slice(0,60).map((u,k)=>`<button type="button" class="ri" data-k="${k}"><span class="rk">${escH(u.kind)}</span><span class="rt">${markT(u.title.slice(0,120),q)}</span><span class="rs">${snip(u.text.replace(/\s+/g," "),q)}</span></button>`).join("");
+  document.getElementById("resX").onclick=()=>{qi.value="";res.hidden=true};
+  res.querySelectorAll(".ri").forEach(b=>b.onclick=()=>jump(found[+b.dataset.k],q))}
+function jump(u,q){const el=u.el;const b=el.closest(".blk");if(b){setOpen(b,true);save()}if(b&&b.hidden){st.f="0";save();apply()}
+  if(el.tagName==="DETAILS")el.open=true;const d=el.closest("details");if(d)d.open=true;
+  if(el.closest(".cpt")&&document.body.classList.contains("test")){const c=el.closest(".cpt");c.classList.add("reveal")}
+  highlight(el,q);
+  requestAnimationFrame(()=>{const tgt=firstMark(el)||el;const y=tgt.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:"smooth"});
+    el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")})}
+function clearHL(){document.querySelectorAll("mark.sh").forEach(m=>{const t=document.createTextNode(m.textContent);m.replaceWith(t);t.parentNode&&t.parentNode.normalize()})}
+function highlight(root,q){clearHL();const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(t=>{const n=norm(t.nodeValue);let i=n.indexOf(q);if(i<0||t.parentNode.closest("script,style,.res"))return;
+    const frag=document.createDocumentFragment();let last=0;const s=t.nodeValue;
+    while(i>=0){frag.append(s.slice(last,i));const m=document.createElement("mark");m.className="sh";m.style.cssText="background:#ffe066;color:#1d1828;border-radius:3px";m.textContent=s.slice(i,i+q.length);frag.append(m);last=i+q.length;i=n.indexOf(q,last)}
+    frag.append(s.slice(last));t.replaceWith(frag)})}
+function firstMark(el){return el.querySelector("mark.sh")}
+qi.addEventListener("input",run);qi.addEventListener("focus",run);
+qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDefault();jump(found[0],norm(qi.value.trim()))}if(e.key==="Escape"){res.hidden=true}});
+})();
+/* ===== Mi plan ===== */
+(function(){
+
+const EXAM={id:"ing1",em:"🇬🇧",asig:"Inglés",examen:"1er examen",fecha:"2026-10-23",horario:["8:00","13:25"],repaso:"#",simulacro:"../../ingles1/simulacro/",
+  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,m:+b.dataset.min||0,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
+const PKEY="plan-estudio-v1-"+EXAM.id;
+let ps={n:null,start:"hoy",times:{},done:{}};
+try{const s=JSON.parse(localStorage.getItem(PKEY)||"null");if(s)ps=Object.assign(ps,s)}catch(e){}
+const psave=()=>{try{localStorage.setItem(PKEY,JSON.stringify(ps))}catch(e){}};
+const $=id=>document.getElementById("pl_"+id);
+const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const today=new Date();today.setHours(0,0,0,0);
+const fmtD=d=>DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+let exam,left;const maxN=10;
+function setExam(){const f=ps.fecha||EXAM.fecha||iso(new Date(today.getTime()+7*864e5));exam=new Date(f+"T00:00:00");left=Math.round((exam-today)/864e5);
+  $("fecha").value=f;
+  $("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
+  $("sub").textContent="Examen: "+fmtD(exam)+(ps.fecha||EXAM.fecha?"":" (fecha de ejemplo: pon la tuya arriba)")+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar.";
+  $("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`}
+setExam();
+if(!ps.n)ps.n=Math.min(maxN,Math.max(1,left));
+$("fecha").addEventListener("change",e=>{if(!e.target.value)return;ps.fecha=e.target.value;setExam();ps.n=Math.min(maxN,Math.max(1,left));psave();
+  $("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(+x.dataset.n===ps.n)));prender()});
+$("days").innerHTML=Array.from({length:maxN},(_,i)=>`<button type="button" class="dchip" data-n="${i+1}" aria-pressed="${ps.n===i+1}" aria-label="${i+1} días">${i+1}</button>`).join("");
+$("days").querySelectorAll(".dchip").forEach(b=>b.onclick=()=>{ps.n=+b.dataset.n;psave();$("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+$("startSeg").innerHTML=[["hoy","Hoy"],["manana","Mañana"]].map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${ps.start===k}">${t}</button>`).join("");
+$("startSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{ps.start=b.dataset.k;psave();$("startSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+
+/* ---------- coste en minutos ---------- */
+const MIN={1:9,2:6,3:3};const CARDS=8;
+const bCost=b=>b.m||(b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS);
+const REVIEW=[
+ {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
+ {t:"📝 Simulacro completo",d:"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
+ {t:"🩹 Repasa lo que fallaste en el Simulacro",d:"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».",m:30,u:EXAM.simulacro,rev:1},
+ {t:"⚠️ Trampas y chequeo final",d:"Repasa las trampas y contesta el chequeo final sin mirar.",m:25,u:"#trampas",rev:1},
+ {t:"⚠️ Trampas y 🔢 números clave",d:"Las parejas que se confunden y las cifras (%, µm, mm/h…).",m:20,u:"#trampas",rev:1},
+ {t:"⚡ Lo imprescindible",d:"Pregunta → respuesta corta. Lo último antes de dormir.",m:20,u:"#impres",rev:1}];
+const WARM={t:"🔁 Calentamiento: lo que fallaste ayer",d:"🃏 Tarjetas → «Solo las que fallé». Así lo de ayer no se te olvida.",m:15,u:"#fc",rev:1};
+const toMin=s=>{const [h,m]=(s||"0:0").split(":").map(Number);return h*60+m};
+const toHM=m=>{m=((m%1440)+1440)%1440;return Math.floor(m/60)+":"+String(m%60).padStart(2,"0")};
+function dayDate(i){const d=new Date(today);d.setDate(d.getDate()+i+(ps.start==="manana"?1:0));return d}
+function defTimes(i){const d=dayDate(i);const isToday=d.getTime()===today.getTime();
+  if(isToday){const now=new Date();let s=Math.ceil((now.getHours()*60+now.getMinutes()+15)/15)*15;s=Math.max(s,8*60);const e=Math.max(s+60,22*60);return [toHM(s),toHM(Math.min(e,23*60+30))]}
+  return EXAM.horario}
+function times(i){const k=dayDate(i).toISOString().slice(0,10);return ps.times[k]||defTimes(i)}
+function setTime(i,which,v){const k=dayDate(i).toISOString().slice(0,10);const t=times(i).slice();t[which]=v;ps.times[k]=t;psave();prender()}
+
+function plan(N){
+  const caps=Array.from({length:N},(_,i)=>{const [a,b]=times(i);return Math.max(30,toMin(b)-toMin(a))});
+  const days=Array.from({length:N},()=>[]);
+  const blocks=EXAM.blocks.map(b=>({b,m:bCost(b)}));const total=blocks.reduce((s,x)=>s+x.m,0);
+  let mode="full";
+  if(N===1){
+    const rojo=EXAM.blocks.map(b=>({b,cs:b.c.filter(c=>c.lv===1)})).filter(x=>x.cs.length);
+    const avail=caps[0]-80;
+    days[0].push({t:"🔴 Solo lo imprescindible de cada bloque",d:"En el Repaso pulsa el filtro <b>🔴 Imprescindibles</b> y repasa: "+rojo.map(x=>`<b>${x.b.n}</b> ${x.b.t} (${x.cs.map(c=>c.n).join(", ")})`).join(" · "),m:Math.max(60,avail),u:"#fc"});
+    days[0].push(REVIEW[3],REVIEW[5]);
+    return {days,caps,mode:"rojo"};}
+  const lastRev=REVIEW;const revM=lastRev.reduce((s,x)=>s+x.m,0);
+  // capacidad para bloques: días 1..N-1 (menos calentamiento) + lo que sobre del último día
+  const W=.82;/* tiempo real de estudio descontando descansos */
+  const learnCaps=caps.map((c,i)=>i<N-1?c*W-(i>0?WARM.m:0):Math.max(0,c*W-WARM.m-revM));
+  const learnTotal=learnCaps.reduce((s,x)=>s+x,0);
+  const f=Math.min(1,learnTotal/total);if(f<1)mode=f<.7?"rojo":"rapido";
+  // repartir bloques en orden según capacidad acumulada
+  const cum=[];let acc=0;const tf=total*f;learnCaps.forEach(c=>{acc+=c;cum.push(acc/learnTotal*tf)});
+  let pos=0;
+  blocks.forEach(x=>{const m=x.m*f;const mid=pos+m/2;let d=cum.findIndex(c=>mid<=c);if(d<0)d=N-1;
+    x.day=d;pos+=m;x.mm=Math.round(m)});
+  for(let i=0;i<N;i++){
+    if(i>0)days[i].push(WARM);
+    blocks.filter(x=>x.day===i).forEach(x=>{const r=x.b.c.filter(c=>c.lv===1);
+      days[i].push({t:`Bloque ${x.b.n} · ${x.b.t}`,blk:x.b,m:x.mm,u:"#"+x.b.id,
+        d:(mode==="rojo"?"<b>Poco tiempo:</b> lee bien los 🔴 y los demás por encima. ":"")+"Lee los conceptos "+x.b.c[0].n+"–"+x.b.c[x.b.c.length-1].n+" y al terminar haz sus 🃏 Tarjetas. "+(r.length?"🔴 Imprescindibles: <b>"+r.map(c=>c.n).join(", ")+"</b>.":"")})});
+    if(i===N-1)days[i].push(...lastRev);}
+  return {days,caps,mode,f};
+}
+function schedule(tasks,start){let t=toMin(start),run=0;const out=[];
+  tasks.forEach((x,k)=>{out.push({...x,a:t,b:t+x.m});t+=x.m;run+=x.m;
+    if(run>=45&&k<tasks.length-1){out.push({brk:1,t:"☕ Descanso: levántate, agua, nada de móvil",a:t,b:t+10,m:10});t+=10;run=0}});
+  return out}
+function prender(){
+  const N=ps.n;const P=plan(N);
+  const msg=$("msg");
+  if(left>0&&N>left)msg.innerHTML=`<p class="note warn">⚠️ Elegiste ${N} días pero solo quedan ${left} antes del examen. Los últimos días caerían después del examen.</p>`;
+  else if(N===1)msg.innerHTML=`<p class="note warn">⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴 y "Lo imprescindible".</p>`;
+  else if(P.mode==="rojo")msg.innerHTML=`<p class="note warn">⚠️ <b>El tiempo es justo.</b> En cada bloque céntrate en los conceptos 🔴 y los demás léelos por encima. Si puedes, alarga las horas de algún día.</p>`;
+  else if(P.mode==="rapido")msg.innerHTML=`<p class="note warn">⏱️ Vas un poco justo: en cada bloque dale prioridad a los 🔴. Si puedes, añade algo de tiempo a algún día.</p>`;
+  else msg.innerHTML=`<p class="note ok">✅ Te da tiempo de todo. Sigue el plan en orden y tacha cada tarea.</p>`;
+  $("plan").innerHTML=P.days.map((tasks,i)=>{const d=dayDate(i);const [a,b]=times(i);const sch=schedule(tasks,a);
+    const used=sch.length?sch[sch.length-1].b-toMin(a):0;const over=used>P.caps[i]+10;
+    const real=sch.filter(x=>!x.brk);const k=dayDate(i).toISOString().slice(0,10);
+    const doneN=real.filter((x,j)=>ps.done[k+"|"+x.t]).length;
+    const isToday=d.getTime()===today.getTime();
+    const bl=real.filter(x=>x.blk).map(x=>x.blk);const rng=bl.length?(bl.length===1?"Bloque "+bl[0].n:"Bloques "+bl[0].n+" a "+bl[bl.length-1].n):"";
+    const goal=i===N-1&&N>1?(rng?rng+" + Repaso final y Simulacro":"Repaso final y Simulacro"):rng;const names=bl.map(b=>b.t).join(" · ");
+    return `<article class="day" id="pl_d${i}"><div class="day-h">
+      <div class="day-top"><span class="when">Día ${i+1} de ${N} · ${fmtD(d)}</span>${isToday?'<span class="badge today">HOY</span>':""}${doneN===real.length&&real.length?'<span class="badge done">✓ HECHO</span>':""}</div>
+      <h2>${goal||"Repaso"}</h2>${names?`<p class="goal">${names}</p>`:""}
+      <div class="times">De <input type="time" id="pl_ts${i}" value="${a.padStart(5,"0")}" aria-label="Hora de inicio día ${i+1}"> a <input type="time" id="pl_te${i}" value="${b.padStart(5,"0")}" aria-label="Hora de fin día ${i+1}"> · ${Math.round(P.caps[i]/6)/10} h${over?' · <b style="color:var(--warn)">el plan acaba a las '+toHM(sch[sch.length-1].b)+'</b>':""}</div>
+      <div class="dprog"><i style="width:${real.length?doneN/real.length*100:0}%"></i></div></div>
+      <ul class="tasks">${sch.map(x=>x.brk?`<li class="task brk"><span class="t-title"><span class="t-time">${toHM(x.a)}</span> ${x.t}</span></li>`:
+        `<li class="task${x.rev?" rev":""}${ps.done[k+"|"+x.t]?" done":""}"><input type="checkbox" data-k="${k}|${x.t.replace(/"/g,"&quot;")}" ${ps.done[k+"|"+x.t]?"checked":""} aria-label="Hecho: ${x.t.replace(/"/g,"&quot;")}"><div><span class="t-time">${toHM(x.a)}–${toHM(x.b)} · ${x.m} min</span><div class="t-title">${x.blk?`<span class="dot d1"></span>`:""}${x.t}</div><div class="t-det">${x.d||""}</div>${x.u?`<a class="t-go" href="${x.u}"${x.u.startsWith("#")?"":' target="_blank" rel="noopener"'}>${x.u.startsWith("#")?"Ir →":"Abrir →"}</a>`:""}</div></li>`).join("")}</ul></article>`}).join("");
+  P.days.forEach((_,i)=>{$("ts"+i).onchange=e=>setTime(i,0,e.target.value);$("te"+i).onchange=e=>setTime(i,1,e.target.value)});
+  document.querySelectorAll("#planOv .task input").forEach(c=>c.onchange=()=>{if(c.checked)ps.done[c.dataset.k]=1;else delete ps.done[c.dataset.k];psave();prender()});
+}
+
+const ov=document.getElementById("planOv");
+function openPlan(){ov.hidden=false;document.body.style.overflow="hidden";prender();ov.scrollTop=0}
+function closePlan(){ov.hidden=true;document.body.style.overflow=""}
+document.getElementById("planOpen").onclick=openPlan;
+const pb=document.getElementById("planOpen2");if(pb)pb.onclick=()=>{if(typeof drwSet==="function"&&!wide())drwSet(false);openPlan()};
+document.getElementById("planClose").onclick=closePlan;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ov.hidden)closePlan()});
+ov.addEventListener("click",e=>{const a=e.target.closest("a.t-go");if(!a)return;const h=a.getAttribute("href");if(!h.startsWith("#"))return;e.preventDefault();closePlan();
+  if(h==="#fc"){document.getElementById("fcOpen").click();return}go(h.slice(1))});
+/* resumen de hoy en la tarjeta de entrada */
+{prender();const td=[...ov.querySelectorAll(".day")].find(d=>d.querySelector(".badge.today"));
+  if(td)document.getElementById("planToday").textContent="Hoy toca: "+td.querySelector("h2").textContent;}
+})();
+
+/* ===== Temporizador ===== */
+(function(){
+st.tm=st.tm||{a:null,s:{}};const T=st.tm;
+const pill=document.getElementById("tpill");let iv=null,beeped=false;
+const f2=n=>String(Math.floor(n)).padStart(2,"0");
+const fmt=sec=>{sec=Math.abs(sec);const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=Math.floor(sec%60);return (h?h+":"+f2(m):f2(m))+":"+f2(s)};
+const blkOf=id=>document.getElementById(id);
+const elapsed=()=>{const a=T.a;if(!a)return 0;return (a.acc+(a.paused?0:Date.now()-a.start))/1000};
+function beep(){try{const C=new (window.AudioContext||window.webkitAudioContext)();[0,.25,.5].forEach(t=>{const o=C.createOscillator(),g=C.createGain();o.frequency.value=880;o.connect(g);g.connect(C.destination);g.gain.setValueAtTime(.2,C.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,C.currentTime+t+.2);o.start(C.currentTime+t);o.stop(C.currentTime+t+.22)})}catch(e){}
+  try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}}
+function tick(){const a=T.a;if(!a){pill.hidden=true;return}
+  const tot=a.min*60,el=elapsed(),left=tot-el,over=left<0;
+  pill.hidden=false;pill.classList.toggle("over",over);
+  document.getElementById("tpB").textContent=(over?"⏰ Te pasaste · ":"⏱ ")+a.name+(a.paused?" · en pausa":"");
+  document.getElementById("tpT").textContent=(over?"+":"")+fmt(left);
+  document.getElementById("tpBar").style.width=Math.min(100,el/tot*100)+"%";
+  document.getElementById("tpPause").textContent=a.paused?"Seguir":"Pausa";
+  document.getElementById("tpPause").setAttribute("aria-label",a.paused?"Seguir":"Pausar");
+  if(over&&!beeped&&!a.beeped){beeped=true;a.beeped=1;save();beep()}}
+function run(){clearInterval(iv);if(T.a){iv=setInterval(tick,500)}tick()}
+function startB(b){const name=b.querySelector(".bn").textContent.replace("BLOQUE","Bloque")+" · "+b.querySelector(".bt").textContent;
+  T.a={b:b.id,name,min:+b.dataset.min,start:Date.now(),acc:0,paused:false};beeped=false;save();setOpen(b,true);save();run();
+  requestAnimationFrame(()=>{const y=b.getBoundingClientRect().top+scrollY-70;scrollTo({top:y,behavior:"smooth"})});rowAll()}
+function pause(){const a=T.a;if(!a)return;if(a.paused){a.start=Date.now();a.paused=false}else{a.acc+=Date.now()-a.start;a.paused=true}save();tick()}
+function fin(){const a=T.a;if(!a)return;T.s[a.b]=Math.max(1,Math.round(elapsed()/60));T.a=null;save();run();rowAll()}
+function cancel(){T.a=null;save();run();rowAll()}
+document.getElementById("tpPause").onclick=pause;document.getElementById("tpFin").onclick=fin;document.getElementById("tpX").onclick=cancel;
+function row(b){let r=b.querySelector(".tmr");if(!r){r=document.createElement("div");r.className="tmr";b.querySelector(".blk-h").after(r)}
+  const m=+b.dataset.min,sp=T.s[b.id],act=T.a&&T.a.b===b.id;
+  r.innerHTML=`<p>${sp?`<span class="tm-done">✓ Lo hiciste en ${sp} min</span> (previsto ${m})`:`⏱ Tiempo para aprenderte este bloque: <b>${m} min</b>`}</p>`+(act?`<p><b>⏳ En marcha…</b></p>`:`<button type="button">${sp?"↻ Otra vez":"▶ Empezar"}</button>`);
+  const bt=r.querySelector("button");if(bt)bt.onclick=()=>{if(T.a&&T.a.b!==b.id){fin()}startB(b)}}
+function rowAll(){blks.forEach(row)}
+rowAll();run();
+document.addEventListener("visibilitychange",tick);
+})();
+
+/* ===== Leyenda desplegable ===== */
+(function(){
+const lg=document.querySelector(".top .legend");if(!lg)return;
+const NAMES={1:"🔴 Imprescindibles",2:"🟠 Importantes",3:"🔵 Leer una vez"},COL={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const panel=document.createElement("div");panel.className="lvpanel";panel.id="lvpanel";panel.hidden=true;lg.after(panel);
+let cur=null;
+const tags=[...lg.querySelectorAll(".tag")];
+tags.forEach(t=>{const lv=t.classList.contains("lv1")?1:t.classList.contains("lv2")?2:3;
+  const b=document.createElement("button");b.type="button";b.className=t.className;b.innerHTML=t.innerHTML;b.setAttribute("aria-expanded","false");b.setAttribute("aria-controls","lvpanel");t.replaceWith(b);
+  b.onclick=()=>{if(cur===lv){cur=null;panel.hidden=true;b.setAttribute("aria-expanded","false");return}
+    cur=lv;lg.querySelectorAll(".tag").forEach(x=>x.setAttribute("aria-expanded",String(x===b)));show(lv)}});
+function show(lv){panel.style.setProperty("--lc",COL[lv]);
+  const cs=cpts.filter(c=>c.dataset.lv===String(lv));let h=`<h4>${NAMES[lv]} · ${cs.length} conceptos</h4>`,last="";
+  cs.forEach(c=>{const bt=c.closest(".blk").querySelector(".bt").textContent;if(bt!==last){h+=`<p class="lg">${c.closest(".blk").querySelector(".bn").textContent} · ${bt}</p>`;last=bt}
+    const t=c.querySelector("h3").childNodes[0].textContent.trim();h+=`<a href="#${c.id}" class="${st.done[c.id.slice(1)]?"ok":""}"><b>${c.id.slice(1)}</b>${t}</a>`});
+  panel.innerHTML=h;panel.hidden=false;
+  panel.querySelectorAll("a").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.getAttribute("href").slice(1))})}
+})();
+/* ===== Tarjetas ===== */
+(function(){
+const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
+const LVC={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const ALL=[];
+cpts.forEach(c=>{const b=c.closest(".blk");const bt=b.querySelector(".bt").textContent;const n=c.id.slice(1);const lv=c.dataset.lv;
+  const qt=c.querySelector(".qt");const prof=[...c.querySelectorAll(".prof-t")].map(x=>x.innerHTML).join("");
+  const src=c.querySelector(".srcl").textContent;
+  if(qt)ALL.push({id:"q"+n,blk:b.id,bt,lv,kind:"q",q:qt.textContent,a:prof,src,title:n+". "+c.querySelector("h3").childNodes[0].textContent});
+  c.querySelectorAll(".defs li").forEach((li,i)=>{const ok=li.querySelector(".fd.ok");if(!ok)return;
+    const term=li.querySelector(".term").textContent;const txt=ok.textContent.replace(/^📌[^«]*/,"");
+    ALL.push({id:"d"+n+"_"+i,blk:b.id,bt,lv,kind:"d",q:"¿Cómo define la diapositiva: «"+term+"»?",a:'<p class="formal">'+txt+"</p>",src,title:term})})});
+st.fc=st.fc||{bad:{}};
+let cfg={blk:"all",kind:"all",lv:"all"},deck=[],i=0,ok=0,ko=0,flipped=false;
+const blkOpts=[["all","Todos los bloques",""]].concat(blks.map(b=>[b.id,b.querySelector(".bn").textContent.replace("BLOQUE","Bloque"),b.querySelector(".bt").textContent]));
+function opts(el,list,key){el.innerHTML=list.map(([v,t,sm])=>`<button type="button" class="opt" data-v="${v}" aria-pressed="${cfg[key]===v}">${t}${sm?`<small>${sm}</small>`:""}</button>`).join("");
+  el.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cfg[key]=b.dataset.v;el.querySelectorAll(".opt").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));count()})}
+function pool(){return ALL.filter(c=>(cfg.blk==="all"||c.blk===cfg.blk)&&(cfg.kind==="all"||c.kind===cfg.kind)&&(cfg.lv==="all"||(cfg.lv==="bad"?st.fc.bad[c.id]:c.lv===cfg.lv)))}
+function count(){const n=pool().length;$("fcGo").textContent=n?"Empezar · "+n+" tarjetas":"No hay tarjetas con esa elección";$("fcGo").disabled=!n}
+function setup(){opts($("oBlk"),blkOpts,"blk");
+  opts($("oKind"),[["all","Todo","preguntas + definiciones"],["q","❓ Preguntas de cada concepto",""],["d","📌 Definiciones de la diapositiva","las del examen"]],"kind");
+  const nb=Object.keys(st.fc.bad).length;
+  opts($("oLv"),[["all","Todas",""],["1","🔴 Solo imprescindibles",""],["bad","❌ Solo las que fallé",nb+" guardadas"]],"lv");count();
+  $("fcSetup").hidden=false;$("fcPlay").hidden=true;$("fcPlay").style.display="none";$("fcEnd").hidden=true}
+function open(){fc.hidden=false;document.body.style.overflow="hidden";setup()}
+function close(){fc.hidden=true;document.body.style.overflow=""}
+$("fcOpen").onclick=open;$("fcOpen2").onclick=open;$("fcClose").onclick=close;
+document.addEventListener("keydown",e=>{if(fc.hidden)return;if(e.key==="Escape")close()});
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function start(list){deck=shuffle(list.slice());i=0;ok=0;ko=0;$("fcSetup").hidden=true;$("fcEnd").hidden=true;$("fcPlay").hidden=false;$("fcPlay").style.display="contents";show()}
+$("fcGo").onclick=()=>start(pool());
+function show(){const c=deck[i];flipped=false;$("card3").classList.remove("flip");$("fcFlip").hidden=false;$("fcBtns").hidden=true;
+  $("ffront").style.setProperty("--cc",LVC[c.lv]);
+  $("ffront").innerHTML=`<span class="kind">${c.kind==="d"?"📌 Definición de la diapositiva":"❓ Pregunta"} · ${c.bt}</span><span class="bulb" aria-hidden="true">💡</span><span class="qq">${c.q}</span><span class="hint">Piensa la respuesta (o dila en voz alta) y toca para encender la luz</span>`;
+  $("fback").innerHTML=`<span class="kind">💡 Respuesta · ${c.title}</span><div class="ans">${c.a}</div><span class="src">${c.src}</span>`;
+  $("fcN").textContent="Tarjeta "+(i+1)+" de "+deck.length;$("fcS").textContent="✅ "+ok+" · ❌ "+ko;
+  $("fcG").style.width=(ok/deck.length*100)+"%";$("fcR").style.width=(ko/deck.length*100)+"%"}
+function flip(){flipped=!flipped;$("card3").classList.toggle("flip",flipped);if(flipped){$("fcFlip").hidden=true;$("fcBtns").hidden=false}}
+$("card3").onclick=e=>{if(e.target.closest("a"))return;flip()};$("card3").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+$("fcFlip").onclick=flip;
+function answer(good){const c=deck[i];if(good){ok++;delete st.fc.bad[c.id]}else{ko++;st.fc.bad[c.id]=1}save();i++;if(i<deck.length)show();else end()}
+$("fcSi").onclick=()=>answer(true);$("fcNo").onclick=()=>answer(false);
+function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pct=Math.round(ok/deck.length*100);const fails=deck.filter(c=>st.fc.bad[c.id]);
+  const msg=pct>=90?"¡Lo tienes dominado! 🔥":pct>=70?"¡Muy bien! Repasa las que fallaste.":pct>=50?"Vas bien: repite las falladas.":"Toca repasar este bloque y volver a intentarlo.";
+  $("fcEnd").innerHTML=`<span class="kind" style="font-family:var(--f-mono);color:var(--muted)">RESULTADO</span><span class="score">${ok}/${deck.length}</span><p style="margin:0;font-weight:700">${msg}</p>`+
+   (fails.length?`<button type="button" class="go" id="fcRe">🔁 Repetir las ${fails.length} que fallé</button>`:"")+`<button type="button" class="opt" id="fcAgain" style="text-align:center">🃏 Elegir otras tarjetas</button><button type="button" class="opt" id="fcBack" style="text-align:center">Volver al repaso</button>`;
+  $("fcEnd").hidden=false;if(fails.length)$("fcRe").onclick=()=>start(fails);$("fcAgain").onclick=setup;$("fcBack").onclick=close}
+})();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1533 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:30;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
+(function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
+</head>
+<body>
+<title>Gestión 2 · El laboratorio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
+  --accent:#7a1f3d; --accent-ink:#ffffff; --blk:#7a1f3d; --blk-ink:#ffffff;
+  --lv1:#d3264a; --lv1-soft:#fdebef; --lv2:#d9730a; --lv2-soft:#fdf1e3; --lv3:#2c6bd2; --lv3-soft:#e8effc;
+  --def-soft:#f1eef7; --und-soft:#eaf6ef; --und:#1d6a44; --tip-soft:#fff4d6; --tip:#7a5000; --q:#7a1f3d; --q-soft:#fbf0f4;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);line-height:1.55}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:1.25em}
+li{margin:2px 0}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.wrap>*{min-width:0}
+/* cabecera */
+.top{padding:6px 0 0}
+.eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+.top h1{font-size:1.85em;line-height:1.1;margin:6px 0 4px}
+.sub{color:var(--muted);margin:0 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;border-radius:999px;padding:3px 9px;color:#fff;white-space:nowrap}
+.tag.lv1{background:var(--lv1)} .tag.lv2{background:var(--lv2)} .tag.lv3{background:var(--lv3)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag{color:#16121c}}
+:root[data-theme="dark"] .tag{color:#16121c}
+.meta{color:var(--muted)}
+/* cómo estudiar */
+.how{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.how>summary{cursor:pointer;font-weight:700;padding:12px 14px;font-family:var(--f-display)}
+.how-b{padding:0 14px 12px;font-size:.93em}
+/* índice */
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.toc .xs-h{margin:0 0 8px;border:0;padding:0}
+.toc-l{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.toc-l li{margin:0}
+.toc-b{display:block;font-weight:700;color:var(--ink);text-decoration:none}
+.toc-b span{font-family:var(--f-mono);font-size:.72em;color:var(--accent);margin-right:4px;text-transform:uppercase}
+.toc-c{display:block;font-size:.8em;color:var(--muted);line-height:1.45}
+.toc-c a{color:var(--muted);text-decoration:none}
+.toc-c a.i1{color:var(--lv1);font-weight:700}
+/* bloques */
+.blk{display:flex;flex-direction:column;gap:12px;scroll-margin-top:var(--bar,0px)}
+.blk-h{display:grid;gap:2px;background:var(--blk);color:var(--blk-ink);border-radius:12px;padding:14px 44px 14px 14px;position:relative;font-family:var(--f-body)}
+.blk-h .bn{font-family:var(--f-mono);font-size:.62em;letter-spacing:.1em;opacity:.9;font-weight:500}
+.blk-h .bt{font-family:var(--f-display);font-size:1.15em;font-weight:800;line-height:1.15}
+.blk-h .bc{font-size:.66em;font-weight:400;opacity:.95}
+/* concepto */
+.cpt{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lv2);border-radius:12px;padding:12px 14px 14px;scroll-margin-top:var(--bar,0px);min-width:0}
+.cpt.lv1{border-left-color:var(--lv1)} .cpt.lv3{border-left-color:var(--lv3)}
+.c-h{display:flex;gap:10px;align-items:flex-start}
+.c-n{flex:none;font-family:var(--f-mono);font-weight:500;font-size:.85em;min-width:2em;height:2em;border-radius:8px;display:grid;place-items:center;background:var(--soft);color:var(--muted);margin-top:1px}
+.lv1 .c-n{background:var(--lv1-soft);color:var(--lv1)} .lv2 .c-n{background:var(--lv2-soft);color:var(--lv2)} .lv3 .c-n{background:var(--lv3-soft);color:var(--lv3)}
+.c-h h3{font-size:1.15em;line-height:1.25}
+.c-h .note{display:block;font-family:var(--f-body);font-weight:400;font-size:.72em;color:var(--muted);margin-top:2px}
+.c-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:8px 0 10px}
+.srcl{font-size:.8em;color:var(--muted)}
+.c-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.c-body>*{min-width:0;max-width:100%}
+.lbl{font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.prof{color:var(--accent);margin-bottom:-6px}
+.prof-t>:first-child{margin-top:0}
+.defs{background:var(--def-soft);border-radius:10px;padding:9px 11px;font-size:.88em}
+.defs ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.defs li{display:flex;flex-direction:column;gap:4px}
+.term{font-size:1.05em}
+.fd{border-radius:8px;padding:6px 9px;line-height:1.45}
+.fd .fl{display:block;font-family:var(--f-mono);font-size:.72em;font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.fd.easy{background:var(--surface)} .fd.easy .fl{color:var(--und)}
+.fd.ok{background:var(--surface);border-left:4px solid var(--accent);font-weight:700} .fd.ok .fl{color:var(--accent)}
+.fd.no{background:transparent;color:var(--muted);font-size:.92em;padding-top:0;padding-bottom:0} .fd.no .fl{color:var(--lv2)}
+.box{border-radius:10px;padding:9px 11px;font-size:.94em}
+.box>p:last-child,.box>ul:last-child{margin-bottom:0}
+.box .lbl{margin-bottom:2px}
+.und{background:var(--und-soft)} .und .lbl{color:var(--und)}
+.tip{background:var(--tip-soft)} .tip .lbl{color:var(--tip)}
+.q{background:var(--q-soft);border:1.5px dashed var(--q)} .q .lbl{color:var(--q)}
+.qt{font-weight:700;margin:2px 0}
+.qt em{font-style:normal}
+.dom{display:inline-flex;gap:7px;align-items:center;font-size:.9em;color:var(--muted);margin-top:6px;cursor:pointer}
+.dom input{width:19px;height:19px;accent-color:var(--und)}
+.cpt.done .c-n::after{content:"✓";margin-left:2px;color:var(--und)}
+.tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86em}
+th,td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+figure{margin:0;text-align:center}
+figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.76em;color:var(--muted);margin-top:3px}
+/* extras */
+.xs{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0;scroll-margin-top:var(--bar,0px)}
+.xs-h{font-size:1.25em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:4px;margin:0 0 10px}
+.ih{font-size:1em;margin:14px 0 6px}
+.pq{border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px;background:var(--soft)}
+.pq summary,.pqq{cursor:pointer;font-weight:700;margin:0}
+.pq[open] summary{margin-bottom:6px}
+.pn{font-family:var(--f-mono);font-size:.78em;color:var(--accent);margin-right:2px}
+.pa>:first-child{margin-top:0}.pa>:last-child{margin-bottom:0}
+.ref{font-size:.8em;color:var(--muted);white-space:nowrap}
+a{color:var(--accent)}
+.gal{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.gal figure{margin:0;flex:1 1 140px;max-width:100%}.gal img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}.gal figcaption{font-size:.8em;color:var(--muted)}pre{overflow-x:auto;max-width:100%;font-size:.8em;background:var(--soft);padding:8px;border-radius:8px}
+body{font-size:17px}
+.wrap{padding-block:14px 60px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.bar{position:relative;z-index:5;border-radius:12px;border:1px solid var(--line);background:var(--surface);border-bottom:1px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.row{display:flex;gap:8px;align-items:center;min-width:0}
+.row select,.row input[type=search]{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0;flex:1}
+.mode{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.mode button{font:inherit;font-size:13px;border:0;background:var(--surface);color:var(--ink);padding:6px 10px;cursor:pointer}
+.mode button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;min-width:0}
+.chip{font:inherit;font-size:13px;white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chip.c1[aria-pressed="true"]{background:var(--lv1);border-color:var(--lv1);color:#fff}
+.chip.c2[aria-pressed="true"]{background:var(--lv2);border-color:var(--lv2);color:#fff}
+.chip.c3[aria-pressed="true"]{background:var(--lv3);border-color:var(--lv3);color:#fff}
+.prog{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;font-variant-numeric:tabular-nums}
+.pbar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}.pbar i{display:block;height:100%;width:0;background:var(--und)}
+.blk-h{cursor:pointer;user-select:none}
+.blk-h::after{content:"▾";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.1em;transition:transform .2s}
+.blk.open .blk-h::after{transform:translateY(-50%) rotate(180deg)}
+.blk:not(.open) .cpt{display:none}
+.blk[hidden],.cpt[hidden]{display:none!important}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tbtn{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 11px;cursor:pointer}
+.show{display:none;font:inherit;font-weight:700;font-size:14px;border:1.5px solid var(--q);color:var(--q);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;margin-top:6px;margin-right:8px}
+body.test .show{display:inline-block}
+body.test .cpt:not(.reveal) .c-body>:not(.q){display:none}
+body.test .cpt:not(.reveal) .c-body{gap:0}
+.hidebtn{font:inherit;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer}
+.hidebtn .sw{flex:none;width:40px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.hidebtn .sw i{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--surface);transition:left .2s}
+.hidebtn[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.hidebtn[aria-pressed="true"] .sw{background:var(--lv1)}
+.hidebtn[aria-pressed="true"] .sw i{left:21px}
+body.hidedefs .fd.easy,body.hidedefs .fd.ok{position:relative;cursor:pointer;color:transparent;user-select:none}
+body.hidedefs .fd.easy *,body.hidedefs .fd.ok *{color:transparent!important;border-color:transparent}
+body.hidedefs .fd.easy:not(.peek)::after,body.hidedefs .fd.ok:not(.peek)::after{content:"👆 Toca para ver";position:absolute;inset:0;display:grid;place-items:center;border-radius:8px;background:repeating-linear-gradient(135deg,var(--soft) 0 10px,var(--line) 10px 20px);color:var(--muted);font-family:var(--f-mono);font-size:.78em;font-weight:500;letter-spacing:.04em;padding:0 12px;text-align:center}
+body.hidedefs .fd.ok:not(.peek)::after{content:"📌 ¿Cuál es la definición de la diapositiva? · toca para ver"}
+body.hidedefs .fd.easy:not(.peek)::after{content:"💡 ¿Qué significa? · toca para ver"}
+body.hidedefs .fd.peek,body.hidedefs .fd.peek *{color:inherit!important;user-select:auto}
+body.hidedefs .fd.peek{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.hidebtn .sw,.hidebtn .sw i{transition:none}}
+.empty{color:var(--muted);text-align:center;padding:20px}
+.chip:focus-visible,.mode button:focus-visible,.show:focus-visible,.tbtn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.blk-h:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+[hidden]{display:none!important}
+.fab.hf{bottom:calc(78px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);padding:10px 14px 10px 10px}
+.fab.hf .sw{flex:none;width:36px;height:20px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.fab.hf .sw i{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.3);transition:left .2s}
+.fab.hf[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.fab.hf[aria-pressed="true"] .sw{background:var(--lv1)}
+.fab.hf[aria-pressed="true"] .sw i{left:18px}
+.res{border:1px solid var(--line);border-radius:10px;background:var(--surface);max-height:60vh;overflow:auto}
+.res .rh{position:sticky;top:0;background:var(--soft);font-family:var(--f-mono);font-size:12px;color:var(--muted);padding:7px 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.res .rh button{font:inherit;border:0;background:none;color:var(--accent);cursor:pointer;padding:0}
+.ri{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 10px;color:var(--ink);cursor:pointer}
+.ri:last-child{border-bottom:0}
+.ri:hover,.ri:focus-visible{background:var(--soft)}
+.ri .rk{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.ri .rt{display:block;font-weight:700;line-height:1.25}
+.ri .rs{display:block;font-size:.85em;color:var(--muted);line-height:1.35;margin-top:2px}
+.res mark,.hl mark{background:#ffe066;color:#1d1828;border-radius:3px;padding:0 1px}
+.res .none{padding:12px 10px;color:var(--muted)}
+.flash{animation:fl 2.2s ease}
+@keyframes fl{0%,40%{box-shadow:0 0 0 4px #ffe066}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none;outline:3px solid #ffe066}}
+.simlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:11px 14px;font-size:.95em}
+.simlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+a.dt{text-decoration:none;display:inline-flex;align-items:center}
+.dc.full{color:var(--und);font-weight:700}
+/* ===== Mi plan ===== */
+#planOv{position:fixed;inset:0;z-index:55;background:var(--bg);overflow:auto;--ok:var(--und);--ok-soft:var(--und-soft);--warn:var(--tip);--warn-soft:var(--tip-soft);--rev:var(--lv3);--rev-soft:var(--lv3-soft)}
+#planOv .pwrap{max-width:720px;margin:0 auto;padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+#planOv .ptop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+#planOv .px{flex:none;font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.planlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px solid var(--accent);border-radius:12px;padding:11px 14px;font:inherit;font-size:.95em;width:100%;text-align:left;cursor:pointer}
+.planlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+#planOv .eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+#planOv h1{font-size:1.9em;line-height:1.08;margin:4px 0 4px}
+#planOv .sub{color:var(--muted);margin:0}
+#planOv .count{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#planOv .count .n{font-family:var(--f-display);font-weight:800;font-size:2.4em;line-height:1;color:var(--lv1);font-variant-numeric:tabular-nums;min-width:1.4ch;text-align:center}
+#planOv .count p{margin:0}
+#planOv .k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+#planOv .cfg{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+#planOv .days{display:flex;flex-wrap:wrap;gap:6px}
+#planOv .dchip{font:inherit;font-weight:700;font-size:15px;min-width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+#planOv .dchip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#planOv .seg{display:flex;gap:6px;flex-wrap:wrap}
+#planOv .seg button{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:7px 12px;cursor:pointer}
+#planOv .seg button[aria-pressed="true"]{border-color:var(--accent);font-weight:700;background:var(--surface)}
+#planOv .note{font-size:.9em;border-radius:10px;padding:9px 11px}
+#planOv .note.warn{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn)}
+#planOv .note.ok{background:var(--ok-soft);border-left:4px solid var(--ok)}
+#planOv .day{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#planOv .day-h{padding:12px 14px 10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+#planOv .day-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+#planOv .day-h h2{font-size:1.3em}
+#planOv .day-h .when{font-family:var(--f-mono);font-size:.75em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+#planOv .day-h .goal{font-size:.92em;color:var(--muted);margin:0}
+#planOv .times{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.9em;color:var(--muted)}
+#planOv .times input{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:4px 6px}
+#planOv .dprog{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+#planOv .dprog i{display:block;height:100%;background:var(--ok);width:0}
+#planOv .badge{font-family:var(--f-mono);font-size:.7em;border-radius:999px;padding:2px 8px;white-space:nowrap}
+#planOv .badge.today{background:var(--accent);color:var(--accent-ink)}
+#planOv .badge.done{background:var(--ok-soft);color:var(--ok)}
+#planOv .tasks{list-style:none;margin:0;padding:6px 8px 10px}
+#planOv .task{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding:9px 6px;border-radius:10px;align-items:start}
+#planOv .task+.task{border-top:1px solid var(--line)}
+#planOv .task input{width:22px;height:22px;margin-top:2px;accent-color:var(--ok)}
+#planOv .t-time{font-family:var(--f-mono);font-size:.75em;color:var(--muted);font-variant-numeric:tabular-nums}
+#planOv .t-title{font-weight:700;line-height:1.3}
+#planOv .t-det{font-size:.88em;color:var(--muted);line-height:1.4;margin-top:2px}
+#planOv .t-det b{color:var(--ink)}
+#planOv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 3px 0 0;transform:translateY(-1px)}
+#planOv .d1{background:var(--lv1)}
+#planOv .d2{background:var(--lv2)}
+#planOv .d3{background:var(--lv3)}
+#planOv .t-go{display:inline-block;margin-top:6px;font-size:.85em;font-weight:700;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);border-radius:8px;padding:4px 10px}
+#planOv .task.brk{grid-template-columns:1fr;padding:5px 6px;color:var(--muted);font-size:.88em}
+#planOv .task.brk .t-title{font-weight:400}
+#planOv .task.rev .t-title{color:var(--rev)}
+#planOv .task.done .t-title,#planOv .task.done .t-det{text-decoration:line-through;opacity:.55}
+#planOv .foot{color:var(--muted);font-size:.85em}
+#planOv .dchip:focus-visible,#planOv .seg button:focus-visible,#planOv .t-go:focus-visible,#planOv input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* ===== Temporizador ===== */
+.tmr{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.blk:not(.open) .tmr{display:none}
+.tmr p{margin:0;font-size:.92em}
+.tmr .tm-done{color:var(--und);font-weight:700}
+.tmr button{font:inherit;font-weight:800;font-size:15px;border:0;border-radius:10px;padding:9px 14px;background:var(--accent);color:var(--accent-ink);cursor:pointer;white-space:nowrap}
+.tpill{position:fixed;z-index:30;left:50%;transform:translateX(-50%);top:calc(8px + env(safe-area-inset-top,0px));width:min(440px,calc(100vw - 24px));background:var(--ink);color:var(--surface);border-radius:16px;padding:9px 10px 9px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tpill .tp-txt{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.15}
+.tpill .tp-b{font-size:.75em;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tpill .tp-t{font-family:var(--f-mono);font-size:1.6em;font-weight:500;font-variant-numeric:tabular-nums}
+.tpill.over .tp-t{color:var(--lv1)}
+.tpill .tp-bar{position:absolute;left:12px;right:12px;bottom:4px;height:3px;border-radius:2px;background:rgba(127,127,127,.35);overflow:hidden}
+.tpill .tp-bar i{display:block;height:100%;background:var(--und);width:0}
+.tpill.over .tp-bar i{background:var(--lv1)}
+.tpill button{flex:none;font:inherit;font-weight:800;font-size:14px;border:0;border-radius:10px;padding:8px 11px;cursor:pointer;background:var(--surface);color:var(--ink)}
+.tpill button.fin{background:var(--und);color:var(--surface)}
+.tpill button.x{background:transparent;color:var(--surface);opacity:.7;padding:8px 6px;font-size:18px;line-height:1}
+/* ===== Leyenda desplegable ===== */
+.top .legend .tag{cursor:pointer;border:0;font:inherit;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;padding:5px 10px}
+.top .legend .tag::after{content:" ▾";display:inline-block;transition:transform .2s}
+.top .legend .tag[aria-expanded="true"]::after{transform:rotate(180deg)}
+.top .legend .tag[aria-expanded="true"]{outline:3px solid var(--line);outline-offset:1px}
+.lvpanel{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lc);border-radius:12px;padding:10px 12px;max-height:60vh;overflow:auto}
+.lvpanel h4{margin:0 0 6px;font-family:var(--f-display);font-size:1em}
+.lvpanel .lg{font-family:var(--f-mono);font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 2px}
+.lvpanel a{display:block;color:var(--ink);text-decoration:none;padding:6px 4px;border-radius:8px;font-size:.92em;line-height:1.3}
+.lvpanel a:hover{background:var(--soft)}
+.lvpanel a b{font-family:var(--f-mono);font-weight:500;color:var(--lc);margin-right:4px}
+.lvpanel a.ok{opacity:.55}.lvpanel a.ok::after{content:" ✓";color:var(--und)}
+/* ===== Índice lateral ===== */
+.drw{overflow:hidden;visibility:hidden;position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease,visibility 0s linear .25s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
+.drw.on{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
+.scrim{position:fixed;inset:0;z-index:35;background:rgba(10,8,14,.45)}
+.drw-h{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 8px;font-family:var(--f-display);font-size:1.15em}
+.drw-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;width:38px;height:38px;cursor:pointer}
+.drw-tools{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;border-bottom:1px solid var(--line)}
+.dt{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:8px;padding:7px 9px;cursor:pointer;white-space:nowrap}
+.dt.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.drw-l{overflow:auto;flex:1;padding:8px 8px 24px;display:flex;flex-direction:column;gap:2px}
+.db summary{list-style:none;display:flex;align-items:center;gap:10px;padding:9px 8px;border-radius:10px;cursor:pointer;font-weight:700}
+.db summary::-webkit-details-marker{display:none}
+.db summary:hover,.db[open] summary{background:var(--soft)}
+.dn{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-family:var(--f-mono);font-size:.78em}
+.dt2{flex:1;line-height:1.25}
+.dc{font-family:var(--f-mono);font-size:.72em;color:var(--muted);font-weight:500}
+.db summary::after{content:"▾";color:var(--muted);transition:transform .2s}
+.db[open] summary::after{transform:rotate(180deg)}
+.dl,.dbk{display:flex;align-items:baseline;gap:8px;padding:6px 8px 6px 44px;color:var(--ink);text-decoration:none;font-size:.9em;line-height:1.3;border-radius:8px}
+.dl:hover,.dbk:hover{background:var(--soft)}
+.dbk{color:var(--accent);font-weight:700;font-size:.82em}
+.dl i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--lv2);transform:translateY(-1px)}
+.dl.i1 i{background:var(--lv1)} .dl.i3 i{background:var(--lv3)}
+.dx{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:14px 8px 4px}
+.drw-l>.dl{padding-left:12px}
+.fab.idx{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--ink);color:var(--surface)}
+.fab.up{bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+@media (min-width:1100px){
+  .drw{transform:none;box-shadow:none;visibility:visible}
+  .scrim,.fab.idx,.drw-x{display:none!important}
+  .wrap{margin-left:max(360px,calc((100vw - 760px)/2))}
+  .fab.up{left:calc(356px + 16px);bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){.drw{transition:none}}
+
+/* ===== Tarjetas ===== */
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;font:inherit;font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 18px;background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.fab.up{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:13px 16px}
+.tbtn.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.fc{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.fc-in{max-width:620px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+.fc-top{display:flex;align-items:center;gap:10px}
+.fc-top h2{font-size:1.15em;flex:1}
+.fc-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.fc-setup{display:flex;flex-direction:column;gap:12px;overflow:auto}
+.fc-setup .lbl{margin:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:9px 12px;cursor:pointer;text-align:left}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--q-soft);font-weight:700}
+.opt small{display:block;font-size:.8em;color:var(--muted);font-weight:400}
+.go{font:inherit;font-weight:800;font-size:17px;border:0;border-radius:12px;padding:14px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.go:disabled{opacity:.45;cursor:default}
+#fcGo{position:sticky;bottom:0;box-shadow:0 -8px 16px var(--bg)}
+.fc-prog{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fc-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;display:flex}
+.fc-bar .g{background:var(--und)} .fc-bar .r{background:var(--lv1)}
+.stage{flex:1;min-height:0;perspective:1400px}
+.card3{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.3,.7,.3,1);cursor:pointer}
+.card3.flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;padding:18px;overflow:hidden}
+.face.front{border-top:8px solid var(--cc,var(--accent));justify-content:center;text-align:center;gap:14px}
+.face.back{transform:rotateY(180deg);border-top:8px solid var(--und)}
+.face .kind{font-family:var(--f-mono);font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.face.front .qq{font-family:var(--f-display);font-size:1.45em;font-weight:800;line-height:1.2;text-wrap:balance}
+.face .hint{color:var(--muted);font-size:.85em}
+.bulb{font-size:2.4em;line-height:1;filter:grayscale(1) opacity(.5);transition:filter .3s}
+.card3.flip .bulb{filter:none}
+.face.back .ans{overflow:auto;flex:1;min-height:0;font-size:.98em}
+.face.back .ans>:first-child{margin-top:0}
+.face.back .ans .formal{font-weight:700;font-size:1.15em;border-left:4px solid var(--accent);padding-left:10px}
+.face.back .src{font-size:.78em;color:var(--muted);margin-top:8px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btns button{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px 8px;cursor:pointer}
+.b-no{background:var(--lv1-soft);color:var(--lv1)} .b-si{background:var(--und-soft);color:var(--und)}
+.btns button:disabled{opacity:.35;cursor:default}
+.flipb{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px;background:var(--ink);color:var(--surface);cursor:pointer}
+.fc-end{display:flex;flex-direction:column;gap:12px;align-items:stretch;text-align:center;overflow:auto}
+.fc-end .score{font-family:var(--f-display);font-size:3.2em;font-weight:800;line-height:1}
+@media (prefers-reduced-motion:reduce){.card3{transition:none}}
+</style>
+<div class="wrap">
+<header class="top"><p class="eyebrow">🧫 Gestión de Muestras · 2º examen</p>
+<h1>Repaso completo: funciones, áreas y organización del laboratorio</h1>
+<p class="sub">Tema 2 · 35 diapositivas · 7 bloques · 31 conceptos</p>
+<div class="legend"><span class="tag lv1">🔴 IMPRESCINDIBLE · 28</span><span class="tag lv2">🟠 IMPORTANTE · 3</span></div></header><details class="how"><summary>🧭 Cómo usar este repaso</summary><div class="how-b"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>
+<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div></details>
+<div class="bar">
+  <div class="row">
+    <select id="toc" aria-label="Ir a un bloque"><option value="">Ir a…</option><option value="b0">Bloque 1 · TSLCB: qué hace y para qué</option><option value="b1">Bloque 2 · TSLCB: funciones profesionales, personales y sociales</option><option value="b2">Bloque 3 · TSLCB: áreas, puestos y ambiente profesional</option><option value="b3">Bloque 4 · TSLCB: objetivos</option><option value="b4">Bloque 5 · TSAPC (tu título): funciones</option><option value="b5">Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad</option><option value="b6">Bloque 7 · TSAPC: objetivos (4 grupos)</option><option value="x1">🎯 Lo que más probablemente caerá (según los colores)</option><option value="chequeo">Chequeo final (contesta sin mirar)</option><option value="impres">⚡ Lo imprescindible</option><option value="glosario">📖 Glosario (palabras importantes, por orden alfabético)</option></select>
+    <div class="mode" role="group" aria-label="Modo"><button type="button" id="mRead" aria-pressed="true">Leer</button><button type="button" id="mTest" aria-pressed="false">Ponte a prueba</button></div>
+  </div>
+  <div class="row srow"><input type="search" id="q" placeholder="🔎 Buscar cualquier palabra" aria-label="Buscar en el repaso" autocomplete="off"></div>
+  <div class="res" id="res" hidden></div>
+  <div class="chips" role="group" aria-label="Filtrar por importancia">
+    <button type="button" class="chip" data-f="0" aria-pressed="true">Todos</button>
+    <button type="button" class="chip c1" data-f="1" aria-pressed="false">🔴 Imprescindibles</button>
+    <button type="button" class="chip c2" data-f="2" aria-pressed="false">🟠 Importantes</button>
+    <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
+    <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
+  </div>
+  <div class="prog"><span id="pText">Dominas 0</span><span id="pHint"></span></div>
+  <div class="pbar"><i id="pBar"></i></div>
+</div>
+<button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
+<a class="simlink" href="../../gest2/simulacro/"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>
+
+<section class="blk" id="b0" data-min="10"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">TSLCB: qué hace y para qué</span><span class="bc">⏱ 10 min · Conceptos 1–3 · 2 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv1" id="c1" data-lv="1">
+<header class="c-h"><span class="c-n">1</span><h3>Funciones del TSLCB</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 1 · TSLCB: qué hace y para qué</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Sus funciones son de <strong>diagnóstico, tratamiento, seguimiento e investigación</strong>, siempre <strong>bajo supervisión y dirección del titulado universitario</strong>.</li>
+<li>Debe aplicar las técnicas garantizando la <strong>máxima fiabilidad, reproducibilidad y calidad</strong>.</li>
+<li><strong>Competencia general:</strong> <strong>realizar estudios analíticos de muestras biológicas</strong> (fluidos, tejidos, células…) mediante <strong>protocolos normalizados de trabajo</strong>, aplicando las <strong>normas de calidad, seguridad y medioambientales vigentes</strong>.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son las funciones del TSLCB, bajo qué supervisión trabaja y cuál es su competencia general?</p><label class="dom"><input type="checkbox" data-n="1"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c2" data-lv="1">
+<header class="c-h"><span class="c-n">2</span><h3>Resultados ciertos: para qué sirven <span class="note">azul</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 1 · TSLCB: qué hace y para qué</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Debe estar <strong>pendiente y garantizar que los resultados obtenidos son ciertos</strong>, para que sirvan de soporte a: <strong>prevención, diagnóstico, control de evolución de la enfermedad, posible tratamiento e investigación</strong> (5).
+Truco: <strong>"PreDiCoTrI"</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿A qué 5 cosas sirven de soporte los resultados del laboratorio?</p><label class="dom"><input type="checkbox" data-n="2"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c3" data-lv="2">
+<header class="c-h"><span class="c-n">3</span><h3>Los 3 grupos de funciones</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 1 · TSLCB: qué hace y para qué</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Profesionales, personales y sociales.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿En qué tres grupos se dividen las funciones del TSLCB?</p><label class="dom"><input type="checkbox" data-n="3"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b1" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 2</span><span class="bt">TSLCB: funciones profesionales, personales y sociales</span><span class="bc">⏱ 20 min · Conceptos 4–7 · 4 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv1" id="c4" data-lv="1">
+<header class="c-h"><span class="c-n">4</span><h3>Funciones profesionales (10) <span class="note">azul</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · TSLCB: funciones profesionales, personales y sociales</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li><strong>Organización del laboratorio</strong> (área de trabajo).</li>
+<li><strong>Gestión del control</strong> de <strong>existencias de almacén y equipos</strong> (según procedimientos establecidos).</li>
+<li><strong>Recepción de muestras biológicas</strong>; la <strong>obtención</strong> la hacen <strong>otros profesionales</strong>.</li>
+<li><strong>Distribución de las muestras</strong> según las demandas clínicas y/o analíticas.</li>
+<li><strong>Conservación de las muestras</strong> a lo largo del proceso.</li>
+<li><strong>Preparar la muestra para el análisis</strong> (tratamiento <strong>preanalítico o pretratamiento</strong>, dentro de los parámetros de calidad).</li>
+<li><strong>Asegurar las normas de seguridad</strong> durante todo el proceso.</li>
+<li><strong>Verificar el funcionamiento de los equipos instrumentales.</strong></li>
+<li><strong>Determinaciones analíticas siguiendo los protocolos (PNT)</strong> y las normas de calidad.</li>
+<li><strong>Trazabilidad y protocolos establecidos</strong>, garantizando la calidad.
+Truco del orden de la muestra: <strong>Recibir → Distribuir → Conservar → Preparar → Analizar</strong>.</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Enumera las funciones profesionales. ¿Quién obtiene la muestra?</p><label class="dom"><input type="checkbox" data-n="4"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c5" data-lv="1">
+<header class="c-h"><span class="c-n">5</span><h3>Funciones a nivel personal</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · TSLCB: funciones profesionales, personales y sociales</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Evaluar la <strong>coherencia, reproducibilidad y fiabilidad</strong> de los resultados (azul).</li>
+<li><strong>Utilizar las aplicaciones informáticas</strong> → <strong>mayor fiabilidad</strong> y <strong>menos manipulación</strong> de los resultados (azul).</li>
+<li>Identificar la <strong>normativa de protección ambiental y personal</strong> (azul).</li>
+<li><strong>Adaptarse a las nuevas situaciones</strong> (azul). Para ello (en <strong>rojo</strong>):</li>
+<li>🔴 <strong>Mantenerse actualizado en conocimientos</strong> científicos, técnicos y tecnológicos.</li>
+<li>🔴 <strong>Formación continua</strong>, aprovechando los recursos.</li>
+<li>🔴 <strong>Uso de las tecnologías</strong> de la información y la comunicación (<strong>TIC</strong>).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son las funciones personales y qué 3 cosas hacen falta para adaptarse a nuevas situaciones?</p><label class="dom"><input type="checkbox" data-n="5"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c6" data-lv="1">
+<header class="c-h"><span class="c-n">6</span><h3>Funciones a nivel social (1ª parte) <span class="note">azul</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · TSLCB: funciones profesionales, personales y sociales</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Habilidades para resolver situaciones</strong> y problemas → hace falta <strong>iniciativa y autonomía</strong>.</li>
+<li>Habilidades en su ámbito con <strong>creatividad, fomentando la innovación</strong> y espíritu de mejora.</li>
+<li><strong>Organizar y coordinar equipos de trabajo.</strong></li>
+<li><strong>Uso eficiente de los recursos.</strong></li>
+<li>Actuar con <strong>responsabilidad</strong>.</li>
+<li>Relaciones fluidas y asumir el <strong>liderazgo</strong>.</li>
+<li><strong>Soluciones a los conflictos</strong> del trabajo en equipo.</li>
+<li><strong>Comunicar con sus iguales</strong>, superiores y personas ajenas o clientes.</li>
+<li><strong>Vías eficaces de comunicación.</strong></li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué hace falta para resolver situaciones y problemas? Di 5 funciones sociales.</p><label class="dom"><input type="checkbox" data-n="6"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c7" data-lv="1">
+<header class="c-h"><span class="c-n">7</span><h3>Funciones a nivel social (2ª parte) <span class="note">azul</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · TSLCB: funciones profesionales, personales y sociales</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Respetar las opiniones, la autonomía</strong> y la competencia del equipo.</li>
+<li>Generar <strong>entornos seguros de trabajo</strong>.</li>
+<li><strong>Supervisar y aplicar</strong> procedimientos de <strong>prevención de riesgos laborales y ambientales</strong>.</li>
+<li>Procedimientos de <strong>gestión de calidad</strong>.</li>
+<li>Procedimientos de <strong>accesibilidad universal para todas las personas</strong>.</li>
+<li><strong>Gestión inicial básica</strong> para el funcionamiento de la empresa.</li>
+<li><strong>Iniciativa en su actividad profesional.</strong></li>
+<li>Sentido de la <strong>responsabilidad social</strong>.</li>
+<li>Ejercer sus <strong>derechos</strong> y cumplir las <strong>obligaciones</strong> profesionales.</li>
+<li><strong>Principios éticos de salud.</strong></li>
+<li><strong>Participar activamente</strong> en la vida social, económica y cultural.
+Imagen: "<strong>Cultura en valores y ética</strong>".</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué procedimientos debe supervisar y aplicar el técnico (3)? Di otras 4 funciones sociales.</p><label class="dom"><input type="checkbox" data-n="7"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b2" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 3</span><span class="bt">TSLCB: áreas, puestos y ambiente profesional</span><span class="bc">⏱ 20 min · Conceptos 8–12 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c8" data-lv="1">
+<header class="c-h"><span class="c-n">8</span><h3>Sectores donde trabaja el TSLCB <span class="note">rojo/azul</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · TSLCB: áreas, puestos y ambiente profesional</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>🔴 <strong>Las personas con el título de laboratorio clínico y biomédico ejercen su actividad</strong> en estos sectores <strong>sanitarios</strong>:</p>
+<ol>
+<li><strong>Ámbito público</strong> (organismos e instituciones).</li>
+<li><strong>Empresas privadas</strong> (farmacéuticas o biotecnológicas).</li>
+<li><strong>Área del laboratorio</strong> de análisis clínicos y diagnóstico.</li>
+<li><strong>Servicio de tratamiento</strong> realizando preparaciones.
+🔴 <strong>Otros entornos laborales:</strong> <strong>puestos de gestión</strong> e <strong>investigación</strong>.</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿En qué 4 sectores trabaja el TSLCB y cuáles son los otros 2 entornos?</p><label class="dom"><input type="checkbox" data-n="8"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c9" data-lv="1">
+<header class="c-h"><span class="c-n">9</span><h3>Regulación y puestos del TSLCB</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · TSLCB: áreas, puestos y ambiente profesional</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>🔴 <strong>La actividad profesional</strong> está <strong>regulada por la administración sanitaria estatal</strong> (azul).</li>
+<li><strong>Puestos de trabajo (5):</strong>
+  1. Técnico superior en <strong>laboratorio de diagnóstico clínico</strong>.
+  2. Técnico <strong>especialista en laboratorio</strong>.
+  3. <strong>Ayudante técnico en laboratorio de investigación y experimentación</strong>.
+  4. <strong>Ayudante técnico de toxicología</strong>.
+  5. <strong>Delegado comercial</strong> de productos hospitalarios y farmacéuticos.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Quién regula la actividad del TSLCB y cuáles son sus 5 puestos de trabajo?</p><label class="dom"><input type="checkbox" data-n="9"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c10" data-lv="1">
+<header class="c-h"><span class="c-n">10</span><h3>Ambiente profesional</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · TSLCB: áreas, puestos y ambiente profesional</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>🔴 <strong>Ambiente profesional</strong>: un <strong>laboratorio con una responsabilidad grande, esfuerzo y trabajo</strong> (azul).</li>
+<li>Se requieren <strong>profesionales versátiles</strong> (azul), capaces de desarrollar <strong>diferentes metodologías analíticas</strong>.</li>
+<li>La labor <strong>no consiste solo en repetir ensayos y metodologías de puesta a punto</strong> (azul): debe 🔴 <strong>adaptarse a la rapidez en el avance de las nuevas técnicas</strong> y proponer otras nuevas con la 🔴 <strong>constante formación</strong>, que él mismo debe incentivar.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo es el ambiente profesional? ¿En qué consiste (y en qué no) la labor del técnico?</p><label class="dom"><input type="checkbox" data-n="10"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c11" data-lv="1">
+<header class="c-h"><span class="c-n">11</span><h3>Avances tecnológicos e informática</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · TSLCB: áreas, puestos y ambiente profesional</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>🔴 <strong>Los avances tecnológicos</strong> (métodos de diagnóstico, <strong>automatización</strong>, <strong>robótica</strong>, <strong>autoanalizadores</strong>, <strong>inyectores automáticos</strong>) <strong>requieren que formadores y alumnos estén actualizados y formados en nuevos programas informáticos</strong> (azul), para la gestión y el manejo de tecnologías. <strong>Es necesario</strong> (rosa):
+  1. <strong>Manejar y aplicar</strong> estos programas.
+  2. <strong>Actualizarlos</strong> y estar pendiente de las actualizaciones.
+  3. <strong>Conocer el avance</strong> de las casas comerciales y <strong>resolver incidencias</strong> (gestión del laboratorio: <strong>desde la solicitud del análisis hasta el envío del resultado</strong>).
+  4. <strong>Conocer la digitalización de imágenes</strong> (laboratorios de imagen) y los documentos de seguimiento del análisis.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué avances tecnológicos cita la profe y qué 4 cosas son necesarias respecto a los programas informáticos?</p><label class="dom"><input type="checkbox" data-n="11"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c12" data-lv="1">
+<header class="c-h"><span class="c-n">12</span><h3>Mejora de la calidad <span class="note">rojo</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · TSLCB: áreas, puestos y ambiente profesional</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>🔴 <strong>En los laboratorios es muy importante la mejora de calidad</strong>; por ello es necesario:</p>
+<ul>
+<li><strong>Revisar los protocolos de trabajo</strong>, <strong>desde la preparación del paciente</strong> para la obtención de muestra <strong>hasta el envío de los informes</strong> de resultado (azul).</li>
+<li><strong>Que el técnico sea autosuficiente y capaz de aplicar</strong> correctamente los procedimientos (azul).
+Imagen "<strong>Protocolos de bioseguridad</strong>": medidas contra el contagio, reportar casos, cuidar la salud, <strong>lavarse las manos 20 s cada 2 h</strong>, distancia, tapabocas, guantes en aseo/residuos; quien incumpla tendrá sanciones.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué hay que revisar para mejorar la calidad y desde dónde hasta dónde?</p><label class="dom"><input type="checkbox" data-n="12"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b3" data-min="15"><h2 class="blk-h"><span class="bn">BLOQUE 4</span><span class="bt">TSLCB: objetivos</span><span class="bc">⏱ 15 min · Conceptos 13–16 · 2 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv1" id="c13" data-lv="1">
+<header class="c-h"><span class="c-n">13</span><h3>Objetivos relacionados con la patología <span class="note">rojo</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 4 · TSLCB: objetivos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Conocer la patología y relacionarla con la <strong>fisiopatología</strong> del proceso, <strong>aplicando terminología científico-técnica</strong> (azul).</li>
+<li><strong>Conocer la patología</strong> y relacionarla con los <strong>patrones de alteración morfológica</strong> (tejido) <strong>o bioquímica</strong>.</li>
+<li>Después, los objetivos se centran en <strong>la gestión, el análisis y los objetivos personales</strong> (rosa).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los objetivos relacionados con la patología y en qué se centran después?</p><label class="dom"><input type="checkbox" data-n="13"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c14" data-lv="2">
+<header class="c-h"><span class="c-n">14</span><h3>Objetivos personales del TSLCB (6 cajas)</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 4 · TSLCB: objetivos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>Aplicaciones informáticas para <strong>gestionar documentos</strong>.</li>
+<li>Aplicaciones informáticas para el <strong>control de existencias</strong>.</li>
+<li>Aplicaciones informáticas para <strong>organizar y gestionar el área de trabajo</strong>.</li>
+<li><strong>Gestionar la documentación</strong> del procesamiento de muestras: <strong>codificación y registro, sin perder la trazabilidad</strong>.</li>
+<li><strong>Preparar y gestionar reactivos y equipos</strong> en condiciones óptimas.</li>
+<li>Distribución de <strong>hemoderivados</strong> y otras muestras de interés biológico con protocolos de calidad.</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los objetivos personales. ¿Qué exige gestionar la documentación de las muestras?</p><label class="dom"><input type="checkbox" data-n="14"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c15" data-lv="2">
+<header class="c-h"><span class="c-n">15</span><h3>Objetivos de análisis (4 cajas)</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 4 · TSLCB: objetivos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>Tener en cuenta los <strong>errores que influyen en la variabilidad de los resultados</strong>: variables de <strong>extracción, transporte, conservación y análisis</strong>.</li>
+<li><strong>Puesta en marcha de los equipos</strong> y su <strong>mantenimiento</strong>.</li>
+<li><strong>Pretratamiento</strong> de las muestras.</li>
+<li><strong>Seleccionar técnicas instrumentales</strong> apropiadas según el análisis.</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué 4 variables influyen en la variabilidad de los resultados? Di los 4 objetivos de análisis.</p><label class="dom"><input type="checkbox" data-n="15"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c16" data-lv="1">
+<header class="c-h"><span class="c-n">16</span><h3>Objetivos de la fase post analítica (6) <span class="note">azul</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 4 · TSLCB: objetivos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li><strong>Aplicar protocolos</strong> (diseño y proceso analítico).</li>
+<li><strong>Supervisar y mejorar procedimientos</strong> de gestión de calidad.</li>
+<li><strong>Tratamiento de datos</strong> de los análisis con <strong>estudio estadístico</strong>.</li>
+<li><strong>Programas informáticos</strong> de tratamiento de datos.</li>
+<li>Criterios para <strong>dar un informe verídico</strong>.</li>
+<li><strong>Aceptar los riesgos y la posibilidad de error.</strong>
+Imagen: "estrategias para abordar errores en la fase postanalítica".</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Enumera los objetivos de la fase post analítica.</p><label class="dom"><input type="checkbox" data-n="16"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b4" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 5</span><span class="bt">TSAPC (tu título): funciones</span><span class="bc">⏱ 20 min · Conceptos 17–21 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c17" data-lv="1">
+<header class="c-h"><span class="c-n">17</span><h3>Funciones del TSAPC</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · TSAPC (tu título): funciones</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Son <strong>funciones de AYUDA</strong> en el <strong>diagnóstico, tratamiento, seguimiento e investigación</strong>, siempre <strong>bajo supervisión y dirección del titulado universitario</strong>.</li>
+<li>Garantizar la <strong>máxima fiabilidad, reproducibilidad y calidad</strong> de las técnicas.
+<strong>Diferencia clave con el TSLCB:</strong> el TSAPC hace funciones "<strong>de ayuda</strong>" en el diagnóstico.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué funciones tiene el TSAPC y en qué se diferencian de las del TSLCB?</p><label class="dom"><input type="checkbox" data-n="17"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c18" data-lv="1">
+<header class="c-h"><span class="c-n">18</span><h3>Competencia general del TSAPC (5 cajas)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · TSAPC (tu título): funciones</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li><strong>Procesar muestras histológicas y citológicas.</strong></li>
+<li><strong>Seleccionar citologías ginecológicas y generales.</strong></li>
+<li><strong>Colaborar en las necropsias clínicas y forenses.</strong></li>
+<li><strong>Organizar el trabajo y cumplir los criterios de calidad.</strong></li>
+<li><strong>Optimizar los recursos.</strong>
+Truco: <strong>"Pro-Se-Ne-Or-Op"</strong> (Procesar, Seleccionar, Necropsias, Organizar, Optimizar).</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son las 5 funciones basadas en la competencia general del TSAPC?</p><label class="dom"><input type="checkbox" data-n="18"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c19" data-lv="1">
+<header class="c-h"><span class="c-n">19</span><h3>Funciones a nivel profesional del TSAPC <span class="note">azul</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · TSAPC (tu título): funciones</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Organización del laboratorio</strong>; <strong>gestión del control</strong> de existencias de almacén y equipos.</li>
+<li><strong>Recepción de muestras</strong> (la <strong>obtención NO la suele realizar el técnico</strong>), <strong>según protocolo de unidad</strong>.</li>
+<li><strong>Distribución</strong> de muestras; <strong>conservación</strong> de muestras <strong>desde la solicitud hasta el informe final</strong>.</li>
+<li><strong>Preparar la muestra</strong> (pretratamiento); <strong>normas de seguridad</strong>; <strong>verificar los equipos</strong>.</li>
+<li><strong>Determinaciones analíticas con PNT:</strong> ✓ <strong>parámetros bioquímicos</strong> ✓ <strong>análisis microbiológico</strong> (muestras y cultivos) ✓ <strong>inmunológicos</strong> ✓ <strong>hematológicos</strong> ✓ <strong>técnicas de análisis genéticos</strong> (muestras y cultivos celulares).</li>
+<li><strong>Garantizar la calidad</strong> desde que sale la <strong>solicitud de los clínicos</strong> hasta que se <strong>envía el informe final</strong>, con <strong>trazabilidad</strong>.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué 5 tipos de determinaciones analíticas hace el técnico con PNT? ¿Desde cuándo hasta cuándo garantiza la calidad?</p><label class="dom"><input type="checkbox" data-n="19"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c20" data-lv="1">
+<header class="c-h"><span class="c-n">20</span><h3>Funciones específicas del TSAPC (8 cajas)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · TSAPC (tu título): funciones</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li><strong>Técnicas de análisis genético</strong> a muestras biológicas y cultivos celulares.</li>
+<li>Relacionar el resultado de <strong>citologías ginecológicas</strong> con un <strong>patrón control</strong>.</li>
+<li>Relacionar el resultado de <strong>citologías no ginecológicas</strong> con un <strong>patrón control</strong>.</li>
+<li><strong>Procesado de muestras histológicas y citológicas</strong> para el microscopio.</li>
+<li><strong>Técnicas inmunohistoquímicas y de biología molecular.</strong></li>
+<li><strong>Protocolos en preparación de necropsias</strong> clínicas o médico-legales.</li>
+<li><strong>Registrar los datos de necropsias</strong> clínicas legales.</li>
+<li>Procedimientos técnicos necrópsicos <strong>bajo la supervisión siempre del patólogo</strong>.</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las funciones específicas del TSAPC. ¿Bajo la supervisión de quién hace las técnicas necrópsicas?</p><label class="dom"><input type="checkbox" data-n="20"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c21" data-lv="1">
+<header class="c-h"><span class="c-n">21</span><h3>Funciones personales y sociales del TSAPC</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · TSAPC (tu título): funciones</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Son <strong>las mismas que las del TSLCB</strong> (conceptos 5, 6 y 7), con estos matices:</p>
+<ul>
+<li>Personales: aplicaciones informáticas → <strong>menor manipulación manual</strong>; <strong>para ello es necesario</strong> (azul): 🔴 <strong>mantenerse actualizado</strong>, 🔴 <strong>formación continua</strong>, 🔴 <strong>tecnologías de la información</strong>.</li>
+<li>Sociales (la profe las numera "<strong>5.</strong>", saltándose el 4): resolver situaciones (iniciativa y autonomía), <strong>habilidades en su ámbito</strong> (creatividad/innovación), <strong>organizar y coordinar equipos</strong>, uso eficiente de recursos, <strong>actuar con responsabilidad</strong>, relaciones fluidas y liderazgo, <strong>soluciones a los conflictos al trabajar en grupo</strong>, <strong>saber comunicar</strong>, vías eficaces de comunicación, <strong>respetar opiniones, autonomía y competencia</strong>, entornos seguros, PRL y ambientales, gestión de calidad, accesibilidad universal, gestión inicial básica, <strong>tener iniciativa</strong>, derechos y obligaciones, <strong>responsabilidad social y principios éticos</strong>, <strong>participar activamente</strong> en la vida económica, social y cultural.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué funciones personales y sociales comparten el TSAPC y el TSLCB?</p><label class="dom"><input type="checkbox" data-n="21"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b5" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 6</span><span class="bt">TSAPC: áreas, puestos, ambiente y calidad</span><span class="bc">⏱ 20 min · Conceptos 22–26 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c22" data-lv="1">
+<header class="c-h"><span class="c-n">22</span><h3>Sectores donde trabaja el TSAPC</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>🔴 <strong>El título de técnico de anatomía patológica y citodiagnóstico</strong> ejerce en:</p>
+<ul>
+<li><strong>Ámbito público.</strong></li>
+<li><strong>Sector sanitario</strong>, en <strong>atención primaria y especializada</strong> ← (<strong>esto NO aparece en el TSLCB</strong>).</li>
+<li><strong>Empresas privadas</strong> (farmacéuticas o biotecnológicas).</li>
+<li><strong>Laboratorio de análisis clínicos</strong> y diagnóstico.</li>
+<li><strong>Servicio de tratamiento</strong> realizando preparaciones.
+Otros entornos: <strong>puestos de gestión</strong> e <strong>investigación</strong>.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿En qué sectores trabaja el TSAPC? ¿Qué sector tiene que el TSLCB no tiene?</p><label class="dom"><input type="checkbox" data-n="22"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c23" data-lv="1">
+<header class="c-h"><span class="c-n">23</span><h3>Regulación y puestos del TSAPC (8)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>🔴 <strong>La actividad profesional del técnico</strong> está <strong>regulada por la Administración sanitaria estatal</strong>. Puestos:</p>
+<ol>
+<li><strong>Técnico superior en anatomía patológica y citología.</strong></li>
+<li><strong>Técnico especialista en anatomía patológica y citología.</strong></li>
+<li><strong>Citotécnico.</strong></li>
+<li><strong>Ayudante de forense.</strong></li>
+<li><strong>Prosector de autopsias clínicas y médico-legales.</strong></li>
+<li><strong>Tanatopractor.</strong></li>
+<li><strong>Colaborador y asistente en biología molecular.</strong></li>
+<li><strong>Colaborador y asistente de investigación.</strong></li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Quién regula la actividad del TSAPC? Di sus 8 puestos de trabajo.</p><label class="dom"><input type="checkbox" data-n="23"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c24" data-lv="1">
+<header class="c-h"><span class="c-n">24</span><h3>Comparativa de puestos TSLCB vs TSAPC</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>TSLCB (5 puestos)</th>
+<th>TSAPC (8 puestos)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TS en laboratorio de diagnóstico clínico</td>
+<td>TS en anatomía patológica y citología</td>
+</tr>
+<tr>
+<td>Técnico especialista en laboratorio</td>
+<td>Técnico especialista en AP y citología</td>
+</tr>
+<tr>
+<td>Ayudante técnico en laboratorio de investigación y experimentación</td>
+<td>Citotécnico</td>
+</tr>
+<tr>
+<td>Ayudante técnico de toxicología</td>
+<td>Ayudante de forense</td>
+</tr>
+<tr>
+<td>Delegado comercial de productos hospitalarios y farmacéuticos</td>
+<td>Prosector de autopsias · Tanatopractor · Colaborador en biología molecular · Colaborador de investigación</td>
+</tr>
+</tbody>
+</table></div>
+<p>Truco: <strong>forense, autopsias, tanatopractor y citotécnico → solo TSAPC. Toxicología y delegado comercial → solo TSLCB.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿De qué título son el citotécnico, el tanatopractor, el ayudante de toxicología y el delegado comercial?</p><label class="dom"><input type="checkbox" data-n="24"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c25" data-lv="1">
+<header class="c-h"><span class="c-n">25</span><h3>Ambiente y avances en anatomía patológica <span class="note">azul</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Responsabilidad grande</strong> que requiere esfuerzo y trabajo.</li>
+<li>Se <strong>requieren profesionales versátiles</strong> (metodologías aplicadas a la anatomía patológica).</li>
+<li>Los <strong>avances en las investigaciones</strong> permiten descubrir <strong>moléculas implicadas en procesos patológicos</strong>.</li>
+<li>Por ello <strong>la biología molecular, la citogenética y la bioinformática</strong> son <strong>disciplinas con entidad propia</strong>.</li>
+<li>El técnico debe <strong>aplicar las técnicas que van actualizando</strong> las tareas.</li>
+<li>La <strong>incorporación de la robótica</strong> en el <strong>procesamiento de muestras citológicas e histológicas</strong> permite <strong>diagnósticos con fluidez</strong>.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué 3 disciplinas tienen entidad propia y qué aporta la robótica?</p><label class="dom"><input type="checkbox" data-n="25"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c26" data-lv="1">
+<header class="c-h"><span class="c-n">26</span><h3>Calidad y sector funerario (TSAPC) <span class="note">rojo</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>🔴 <strong>Otro punto importante es la calidad:</strong></p>
+<ul>
+<li><strong>Revisión frecuente de los procedimientos</strong>, garantizando la calidad en todo el procesado.</li>
+<li>Desde la <strong>preparación del paciente por parte de otros</strong> servicios <strong>hasta el informe de los resultados</strong>.</li>
+<li><strong>Cumplir los protocolos de calidad</strong> + conocer las mejoras en <strong>riesgos laborales y medioambiental</strong>.</li>
+<li>El <strong>sector funerario requiere técnicos</strong> que sepan <strong>extraer del cadáver: tejidos, prótesis, marcapasos y otros contaminantes</strong> (imagen: radiografía de tórax con marcapasos).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué incluye la calidad y qué debe saber extraer el técnico del cadáver en el sector funerario?</p><label class="dom"><input type="checkbox" data-n="26"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b6" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 7</span><span class="bt">TSAPC: objetivos (4 grupos)</span><span class="bc">⏱ 20 min · Conceptos 27–31 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c27" data-lv="1">
+<header class="c-h"><span class="c-n">27</span><h3>Objetivos relacionados con la patología</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · TSAPC: objetivos (4 grupos)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>Conocer la patología y saber <strong>fisiopatología</strong>.</li>
+<li>Relacionar con el <strong>proceso fisiológico</strong>.</li>
+<li>Relacionar con el <strong>patrón morfológico y bioquímico</strong>.</li>
+<li><strong>Pasos que deben ser dados por el TSAPC.</strong></li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los objetivos del TSAPC relacionados con la patología?</p><label class="dom"><input type="checkbox" data-n="27"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c28" data-lv="1">
+<header class="c-h"><span class="c-n">28</span><h3>Objetivos relacionados con la gestión (6)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · TSAPC: objetivos (4 grupos)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>Aplicaciones informáticas para <strong>gestión de documentos</strong>.</li>
+<li>Aplicaciones informáticas para <strong>gestión de existencias</strong>.</li>
+<li>Aplicaciones informáticas para <strong>organización y gestión del área de trabajo</strong>.</li>
+<li><strong>Procesamiento de muestras: codificación y registro sin perder la trazabilidad.</strong></li>
+<li><strong>Reactivos y equipos</strong> en condiciones óptimas.</li>
+<li><strong>Distribución de muestras de interés biológico</strong> con protocolos de calidad.
+(Son los mismos que los "objetivos personales" del TSLCB.)</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los objetivos de gestión del TSAPC.</p><label class="dom"><input type="checkbox" data-n="28"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c29" data-lv="1">
+<header class="c-h"><span class="c-n">29</span><h3>Objetivos de análisis: específicos y post analíticos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · TSAPC: objetivos (4 grupos)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th><strong>Específicos (5)</strong></th>
+<th><strong>Fase post analítica (6)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tinción</strong></td>
+<td>Aplicar protocolos</td>
+</tr>
+<tr>
+<td><strong>Extensión</strong></td>
+<td>Supervisar procedimientos de calidad</td>
+</tr>
+<tr>
+<td><strong>Disección</strong></td>
+<td>Realizar el tratamiento de datos</td>
+</tr>
+<tr>
+<td><strong>Extracción</strong></td>
+<td>Programas informáticos de tratamiento de datos</td>
+</tr>
+<tr>
+<td><strong>Detección</strong></td>
+<td>Informe verídico de los resultados</td>
+</tr>
+<tr>
+<td></td>
+<td>Aceptar los riesgos y la posibilidad de error</td>
+</tr>
+</tbody>
+</table></div>
+<p>Truco de los específicos: <strong>"TEDED"</strong> → <strong>T</strong>inción, <strong>E</strong>xtensión, <strong>D</strong>isección, <strong>E</strong>xtracción, <strong>D</strong>etección.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los 5 objetivos específicos de análisis y los 6 de la fase post analítica?</p><label class="dom"><input type="checkbox" data-n="29"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c30" data-lv="1">
+<header class="c-h"><span class="c-n">30</span><h3>Objetivos de desarrollo personal (8)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · TSAPC: objetivos (4 grupos)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li><strong>Liderazgo</strong> para facilitar la <strong>coordinación</strong> de equipos.</li>
+<li><strong>Motivación</strong> para facilitar la <strong>organización</strong> de equipos.</li>
+<li><strong>Comunicación</strong> en contextos de trabajo en grupo.</li>
+<li><strong>Identificar situaciones de riesgo</strong> y aplicar protocolos de <strong>prevención de riesgos y protección ambiental</strong>.</li>
+<li><strong>Actividad emprendedora, empresarial y de iniciativa profesional.</strong></li>
+<li><strong>Marco legal</strong> como <strong>ciudadano democrático</strong> y profesional.</li>
+<li><strong>Aprendizaje y evolución científica y tecnológica.</strong></li>
+<li><strong>Creatividad para poder innovar.</strong>
+Ojo: <strong>liderazgo → coordinación</strong>; <strong>motivación → organización</strong>.</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Enumera los objetivos de desarrollo personal. ¿Para qué sirve el liderazgo y para qué la motivación?</p><label class="dom"><input type="checkbox" data-n="30"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c31" data-lv="1">
+<header class="c-h"><span class="c-n">31</span><h3>Comparativa de objetivos TSLCB vs TSAPC</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · TSAPC: objetivos (4 grupos)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>TSLCB</th>
+<th>TSAPC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Relacionados con la patología</td>
+<td>1. Relacionados con la patología</td>
+</tr>
+<tr>
+<td>Objetivos personales (= gestión)</td>
+<td>2. Relacionados con la gestión</td>
+</tr>
+<tr>
+<td>Objetivos de análisis</td>
+<td>3. De análisis (específicos + post analítica)</td>
+</tr>
+<tr>
+<td>Objetivos de la fase post analítica</td>
+<td>4. De desarrollo personal</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué grupos de objetivos tiene cada título?</p><label class="dom"><input type="checkbox" data-n="31"> Lo domino</label></div>
+</div></article></section>
+<p class="empty" id="empty" hidden>No hay conceptos con ese filtro o esa búsqueda.</p>
+<section class="xs" id="x1"><h2 class="xs-h">🎯 Lo que más probablemente caerá (según los colores)</h2><ol>
+<li>Funciones del TSLCB vs TSAPC ("<strong>de ayuda</strong>"), siempre bajo el <strong>titulado universitario</strong>.</li>
+<li>Los <strong>5 soportes</strong> de los resultados (prevención, diagnóstico, control de evolución, tratamiento, investigación).</li>
+<li>Funciones profesionales: <strong>recepción</strong> (la <strong>obtención no la hace el técnico</strong>), distribución, conservación, <strong>pretratamiento</strong>, <strong>PNT</strong>, <strong>trazabilidad</strong>.</li>
+<li>Para adaptarse: <strong>actualizado, formación continua, TIC</strong> (rojo).</li>
+<li>Sectores y <strong>regulación por la administración sanitaria estatal</strong> (rojo) + puestos de cada título.</li>
+<li><strong>Calidad</strong> (rojo): revisar protocolos <strong>desde la preparación del paciente hasta el informe</strong>.</li>
+<li>Objetivos: post analítica (6), específicos <strong>TEDED</strong>, desarrollo personal (8).</li>
+</ol></section>
+<section class="xs" id="chequeo"><h2 class="xs-h">Chequeo final (contesta sin mirar)</h2><ol>
+<li>Funciones TSLCB y TSAPC. 2. Competencia general de cada uno. 3. 10 funciones profesionales. 4. Funciones personales + 3 rojas. 5. 5 funciones sociales. 6. Sectores de cada título (y el extra del TSAPC). 7. Puestos de cada título. 8. Avances tecnológicos y 4 necesidades informáticas. 9. Calidad. 10. Objetivos de cada título.</li>
+</ol></section><section class="xs" id="impres"><h2 class="xs-h">⚡ Lo imprescindible (repaso exprés)</h2><p class="meta">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><p><strong>Clave del tema:</strong> se comparan 2 títulos. <strong>TSLCB</strong> = Laboratorio Clínico y Biomédico. <strong>TSAPC</strong> = Anatomía Patológica y Citodiagnóstico (el tuyo).</p><h3 class='ih'>1 · Funciones</h3><details class="pq"><summary>¿Qué funciones tiene el TSLCB?</summary><div class="pa"><p><strong>Diagnóstico, tratamiento, seguimiento e investigación</strong>, siempre bajo <strong>supervisión del titulado universitario</strong>.</p></div></details><details class="pq"><summary>¿Y el TSAPC?</summary><div class="pa"><p>Las mismas, pero son funciones <strong>"DE AYUDA"</strong> en el diagnóstico, tratamiento, seguimiento e investigación (también bajo el titulado universitario).</p></div></details><details class="pq"><summary>¿Qué debe garantizar al aplicar las técnicas?</summary><div class="pa"><p><strong>Máxima fiabilidad, reproducibilidad y calidad.</strong></p></div></details><details class="pq"><summary>¿Competencia general del TSLCB?</summary><div class="pa"><p><strong>Realizar estudios analíticos de muestras biológicas</strong> (fluidos, tejidos, células) con <strong>protocolos normalizados</strong> y normas de <strong>calidad, seguridad y medioambientales</strong>.</p></div></details><details class="pq"><summary>¿Competencia general del TSAPC (5)?</summary><div class="pa"><p><strong>Procesar</strong> muestras histológicas y citológicas · <strong>Seleccionar</strong> citologías ginecológicas y generales · Colaborar en <strong>necropsias</strong> clínicas y forenses · <strong>Organizar</strong> el trabajo con calidad · <strong>Optimizar</strong> los recursos.</p></div></details><details class="pq"><summary>¿A qué sirven de soporte los resultados ciertos (5)?</summary><div class="pa"><p><strong>Prevención, diagnóstico, control de evolución, tratamiento e investigación.</strong></p></div></details><details class="pq"><summary>¿En qué 3 grupos se dividen las funciones?</summary><div class="pa"><p><strong>Profesionales, personales y sociales.</strong></p></div></details><h3 class='ih'>2 · Funciones profesionales</h3><details class="pq"><summary>¿Cuáles son las principales?</summary><div class="pa"><p>Organizar el laboratorio · <strong>gestión del control de existencias</strong> de almacén y equipos · <strong>recepción</strong> · <strong>distribución</strong> · <strong>conservación</strong> · <strong>preparar la muestra (pretratamiento/preanalítico)</strong> · normas de seguridad · <strong>verificar los equipos</strong> · <strong>determinaciones con PNT</strong> · <strong>trazabilidad</strong>.</p></div></details><details class="pq"><summary>¿Quién obtiene la muestra?</summary><div class="pa"><p><strong>Otros profesionales.</strong> El técnico hace la <strong>recepción</strong> (según protocolo de unidad).</p></div></details><details class="pq"><summary>¿Qué es el PNT?</summary><div class="pa"><p><strong>Procedimiento Normalizado de Trabajo</strong> (el protocolo escrito de cada técnica).</p></div></details><details class="pq"><summary>¿Qué es la trazabilidad?</summary><div class="pa"><p>Poder seguir la muestra <strong>desde la solicitud hasta el informe final</strong> sin perderla.</p></div></details><details class="pq"><summary>¿Qué determinaciones hace con PNT?</summary><div class="pa"><p><strong>Bioquímicas, microbiológicas, inmunológicas, hematológicas y genéticas.</strong></p></div></details><h3 class='ih'>3 · Funciones personales y sociales</h3><details class="pq"><summary>¿Funciones personales?</summary><div class="pa"><p>Evaluar la <strong>coherencia, reproducibilidad y fiabilidad</strong> · usar <strong>aplicaciones informáticas</strong> (más fiabilidad, <strong>menos manipulación</strong>) · conocer la <strong>normativa de protección ambiental y personal</strong> · <strong>adaptarse</strong> a nuevas situaciones.</p></div></details><p><strong>¿Qué hace falta para adaptarse? (ROJO)</strong> → <strong>Mantenerse actualizado · formación continua · uso de las TIC.</strong></p><details class="pq"><summary>¿Qué hace falta para resolver problemas?</summary><div class="pa"><p><strong>Iniciativa y autonomía.</strong></p></div></details><details class="pq"><summary>¿Funciones sociales clave?</summary><div class="pa"><p><strong>Organizar y coordinar equipos</strong> · uso eficiente de recursos · <strong>responsabilidad</strong> · <strong>liderazgo</strong> · resolver <strong>conflictos</strong> · <strong>comunicar</strong> · respetar opiniones · <strong>entornos seguros</strong> · <strong>supervisar y aplicar PRL, calidad y accesibilidad universal</strong> · <strong>principios éticos</strong> · participar en la vida social, económica y cultural.</p></div></details><h3 class='ih'>4 · Dónde trabaja y quién lo regula</h3><p><strong>¿Quién regula la actividad? (ROJO)</strong> → <strong>La administración sanitaria estatal</strong> (los dos títulos).</p><details class="pq"><summary>¿Sectores?</summary><div class="pa"><p><strong>Ámbito público · empresas privadas (farmacéuticas/biotecnológicas) · laboratorio de análisis clínicos · servicio de tratamiento.</strong> Otros entornos: <strong>gestión e investigación</strong>.</p></div></details><details class="pq"><summary>¿Qué sector tiene solo el TSAPC?</summary><div class="pa"><p><strong>Sector sanitario: atención primaria y especializada.</strong></p></div></details><details class="pq"><summary>¿Puestos propios del TSLCB?</summary><div class="pa"><p><strong>TS en laboratorio de diagnóstico clínico · técnico especialista en laboratorio · ayudante en investigación y experimentación · ayudante de toxicología · delegado comercial.</strong></p></div></details><details class="pq"><summary>¿Puestos propios del TSAPC?</summary><div class="pa"><p><strong>TS y técnico especialista en anatomía patológica y citología · citotécnico · ayudante de forense · prosector de autopsias · tanatopractor · colaborador en biología molecular · colaborador de investigación.</strong></p></div></details><h3 class='ih'>5 · Ambiente, avances y calidad</h3><details class="pq"><summary>¿Cómo es el ambiente profesional?</summary><div class="pa"><p>Laboratorio con <strong>responsabilidad grande, esfuerzo y trabajo</strong>. Se piden <strong>profesionales versátiles</strong>.</p></div></details><details class="pq"><summary>¿Su labor es solo repetir ensayos?</summary><div class="pa"><p><strong>No.</strong> Debe <strong>adaptarse a la rapidez del avance de nuevas técnicas</strong> y proponer otras con <strong>constante formación</strong> (ROJO).</p></div></details><p><strong>¿Qué avances tecnológicos hay? (ROJO)</strong> → <strong>Automatización, robótica, autoanalizadores, inyectores automáticos.</strong> Exigen estar formado en <strong>programas informáticos</strong>: manejarlos, actualizarlos, resolver incidencias y conocer la <strong>digitalización de imágenes</strong>.</p><details class="pq"><summary>¿Qué disciplinas tienen entidad propia?</summary><div class="pa"><p><strong>Biología molecular, citogenética y bioinformática.</strong></p></div></details><details class="pq"><summary>¿Qué aporta la robótica en anatomía patológica?</summary><div class="pa"><p><strong>Diagnósticos con fluidez.</strong></p></div></details><p><strong>¿Qué exige la calidad? (ROJO)</strong> → <strong>Revisar los protocolos desde la preparación del paciente hasta el envío del informe</strong>, que el técnico sea <strong>autosuficiente</strong>, y conocer mejoras en <strong>riesgos laborales y medioambientales</strong>.</p><details class="pq"><summary>¿Qué extrae del cadáver en el sector funerario?</summary><div class="pa"><p><strong>Tejidos, prótesis, marcapasos y otros contaminantes.</strong></p></div></details><h3 class='ih'>6 · Objetivos</h3><details class="pq"><summary>¿Variables que influyen en la variabilidad de resultados?</summary><div class="pa"><p><strong>Extracción, transporte, conservación y análisis.</strong></p></div></details><details class="pq"><summary>¿Objetivos de la fase post analítica (6)?</summary><div class="pa"><p>Aplicar protocolos · supervisar calidad · <strong>tratamiento de datos (estadística)</strong> · programas informáticos · <strong>informe verídico</strong> · <strong>aceptar los riesgos y la posibilidad de error</strong>.</p></div></details><details class="pq"><summary>¿Objetivos específicos de análisis del TSAPC?</summary><div class="pa"><p><strong>Tinción, extensión, disección, extracción y detección</strong> (truco <strong>TEDED</strong>).</p></div></details><details class="pq"><summary>¿Liderazgo y motivación sirven para…?</summary><div class="pa"><p><strong>Liderazgo → coordinación</strong> de equipos. <strong>Motivación → organización</strong> de equipos.</p></div></details><details class="pq"><summary>¿Qué exige gestionar la documentación de las muestras?</summary><div class="pa"><p><strong>Codificación y registro sin perder la trazabilidad.</strong></p></div></details><h3 class='ih'>Las 10 que no puedes fallar</h3><ol>
+<li>TSAPC = funciones <strong>de ayuda</strong>; los dos, bajo el <strong>titulado universitario</strong>.</li>
+<li>Fiabilidad, reproducibilidad y calidad.</li>
+<li>La obtención de la muestra <strong>no</strong> la hace el técnico.</li>
+<li><strong>PNT</strong> y <strong>trazabilidad</strong>.</li>
+<li>Adaptarse = <strong>actualizado + formación continua + TIC</strong>.</li>
+<li>Regulado por la <strong>administración sanitaria estatal</strong>.</li>
+<li>Solo TSAPC: <strong>atención primaria y especializada</strong>; citotécnico, forense, prosector, tanatopractor.</li>
+<li>Solo TSLCB: <strong>toxicología</strong> y <strong>delegado comercial</strong>.</li>
+<li>Calidad: <strong>desde la preparación del paciente hasta el informe</strong>.</li>
+<li><strong>TEDED</strong> + post analítica (aceptar riesgos y error).</li>
+</ol></section><section class="xs" id="glosario"><h2 class="xs-h">📖 Glosario (palabras importantes, por orden alfabético)</h2><div class="tw"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Qué significa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accesibilidad universal</strong></td>
+<td>Que instalaciones, servicios y procedimientos puedan ser usados por todas las personas, incluidas las que tienen discapacidad</td>
+</tr>
+<tr>
+<td><strong>Administración sanitaria estatal</strong></td>
+<td>Organismo del Estado (Ministerio de Sanidad) que regula la actividad profesional de estos técnicos</td>
+</tr>
+<tr>
+<td><strong>Autoanalizador</strong></td>
+<td>Equipo automático que realiza análisis de muestras sin intervención manual en cada paso</td>
+</tr>
+<tr>
+<td><strong>Automatización</strong></td>
+<td>Uso de máquinas para hacer tareas de forma automática, reduciendo errores y manipulación</td>
+</tr>
+<tr>
+<td><strong>Bioinformática</strong></td>
+<td>Uso de la informática para analizar datos biológicos (por ejemplo, secuencias de ADN)</td>
+</tr>
+<tr>
+<td><strong>Biología molecular</strong></td>
+<td>Estudio de las moléculas de la vida (ADN, ARN, proteínas) y sus técnicas de análisis</td>
+</tr>
+<tr>
+<td><strong>Citodiagnóstico / citología</strong></td>
+<td>Estudio de las células para diagnosticar enfermedades</td>
+</tr>
+<tr>
+<td><strong>Citogenética</strong></td>
+<td>Estudio de los cromosomas</td>
+</tr>
+<tr>
+<td><strong>Citología ginecológica</strong></td>
+<td>Estudio de células del aparato genital femenino (p. ej., la del cuello del útero)</td>
+</tr>
+<tr>
+<td><strong>Citotécnico</strong></td>
+<td>Técnico especializado en preparar y seleccionar citologías (puesto del TSAPC)</td>
+</tr>
+<tr>
+<td><strong>Codificación</strong></td>
+<td>Asignar un código único a cada muestra para identificarla sin errores</td>
+</tr>
+<tr>
+<td><strong>Coherencia</strong></td>
+<td>Que los resultados tengan sentido y encajen entre sí y con el paciente</td>
+</tr>
+<tr>
+<td><strong>Competencia general</strong></td>
+<td>Resumen de lo que un título capacita para hacer</td>
+</tr>
+<tr>
+<td><strong>Conservación de muestras</strong></td>
+<td>Mantener la muestra en condiciones adecuadas (temperatura, tiempo…) para que no se altere</td>
+</tr>
+<tr>
+<td><strong>Delegado comercial</strong></td>
+<td>Persona que vende y asesora sobre productos hospitalarios y farmacéuticos (puesto del TSLCB)</td>
+</tr>
+<tr>
+<td><strong>Determinación analítica</strong></td>
+<td>Medición concreta que se hace sobre una muestra (glucosa, hemograma…)</td>
+</tr>
+<tr>
+<td><strong>Disección</strong></td>
+<td>Cortar y separar tejidos u órganos para estudiarlos</td>
+</tr>
+<tr>
+<td><strong>Distribución de muestras</strong></td>
+<td>Enviar cada muestra a la sección o equipo que corresponde según lo solicitado</td>
+</tr>
+<tr>
+<td><strong>Existencias</strong></td>
+<td>Material almacenado en el laboratorio (reactivos, fungibles…)</td>
+</tr>
+<tr>
+<td><strong>Extensión</strong></td>
+<td>Repartir una muestra en capa fina sobre un portaobjetos para verla al microscopio</td>
+</tr>
+<tr>
+<td><strong>Fase post analítica</strong></td>
+<td>Lo que ocurre después del análisis: revisión, tratamiento de datos e informe de resultados</td>
+</tr>
+<tr>
+<td><strong>Fase preanalítica / pretratamiento</strong></td>
+<td>Lo que se hace a la muestra antes de analizarla (preparación, centrifugado, etc.)</td>
+</tr>
+<tr>
+<td><strong>Fiabilidad</strong></td>
+<td>Que el resultado sea correcto y se pueda confiar en él</td>
+</tr>
+<tr>
+<td><strong>Fisiopatología</strong></td>
+<td>Estudio de cómo funciona el organismo cuando está enfermo</td>
+</tr>
+<tr>
+<td><strong>Forense</strong></td>
+<td>Médico que estudia cadáveres para fines legales (el técnico puede ser su ayudante)</td>
+</tr>
+<tr>
+<td><strong>Formación continua</strong></td>
+<td>Seguir formándose durante toda la vida profesional</td>
+</tr>
+<tr>
+<td><strong>Gestión de calidad</strong></td>
+<td>Conjunto de procedimientos para asegurar y mejorar la calidad del trabajo</td>
+</tr>
+<tr>
+<td><strong>Hemoderivados</strong></td>
+<td>Productos obtenidos de la sangre (plasma, plaquetas, factores de coagulación…)</td>
+</tr>
+<tr>
+<td><strong>Histología / muestra histológica</strong></td>
+<td>Estudio de los tejidos / muestra de tejido</td>
+</tr>
+<tr>
+<td><strong>Informe verídico</strong></td>
+<td>Informe de resultados fiel a la realidad, sin errores</td>
+</tr>
+<tr>
+<td><strong>Inmunohistoquímica</strong></td>
+<td>Técnica que usa anticuerpos para detectar sustancias concretas en los tejidos</td>
+</tr>
+<tr>
+<td><strong>Inyector automático</strong></td>
+<td>Equipo que introduce muestras de forma automática en un analizador</td>
+</tr>
+<tr>
+<td><strong>Marcapasos</strong></td>
+<td>Aparato implantado que regula el ritmo del corazón; debe extraerse del cadáver en el sector funerario</td>
+</tr>
+<tr>
+<td><strong>Necropsia / autopsia</strong></td>
+<td>Estudio del cadáver; clínica (causa médica de la muerte) o médico-legal/forense (fines judiciales)</td>
+</tr>
+<tr>
+<td><strong>Obtención de muestras</strong></td>
+<td>Extraer la muestra del paciente; la hacen otros profesionales, no el técnico</td>
+</tr>
+<tr>
+<td><strong>Patólogo</strong></td>
+<td>Médico especialista en anatomía patológica; supervisa al TSAPC</td>
+</tr>
+<tr>
+<td><strong>Patrón control</strong></td>
+<td>Referencia "normal" con la que se compara un resultado</td>
+</tr>
+<tr>
+<td><strong>PNT</strong></td>
+<td>Procedimiento Normalizado de Trabajo: protocolo escrito y estandarizado de cómo hacer cada técnica</td>
+</tr>
+<tr>
+<td><strong>Prevención de riesgos laborales (PRL)</strong></td>
+<td>Medidas para evitar accidentes y enfermedades en el trabajo</td>
+</tr>
+<tr>
+<td><strong>Prosector</strong></td>
+<td>Persona que prepara y realiza la disección del cadáver en las autopsias</td>
+</tr>
+<tr>
+<td><strong>Protocolo de unidad</strong></td>
+<td>Normas propias de cada servicio sobre cómo hacer las cosas</td>
+</tr>
+<tr>
+<td><strong>Recepción de muestras</strong></td>
+<td>Recibir, comprobar e identificar las muestras que llegan al laboratorio</td>
+</tr>
+<tr>
+<td><strong>Reproducibilidad</strong></td>
+<td>Que al repetir el análisis se obtenga el mismo resultado</td>
+</tr>
+<tr>
+<td><strong>Robótica</strong></td>
+<td>Uso de robots para procesar muestras de forma automática</td>
+</tr>
+<tr>
+<td><strong>Tanatopractor</strong></td>
+<td>Técnico que prepara y conserva el cadáver (higiene, estética, conservación)</td>
+</tr>
+<tr>
+<td><strong>TIC</strong></td>
+<td>Tecnologías de la Información y la Comunicación</td>
+</tr>
+<tr>
+<td><strong>Titulado universitario</strong></td>
+<td>Profesional con carrera universitaria (médico, biólogo…) que supervisa al técnico</td>
+</tr>
+<tr>
+<td><strong>Toxicología</strong></td>
+<td>Estudio de los tóxicos y venenos (el TSLCB puede ser ayudante técnico de toxicología)</td>
+</tr>
+<tr>
+<td><strong>Trazabilidad</strong></td>
+<td>Poder seguir el recorrido completo de una muestra, desde la solicitud hasta el informe, sin perderla</td>
+</tr>
+<tr>
+<td><strong>TSAPC</strong></td>
+<td>Técnico Superior en Anatomía Patológica y Citodiagnóstico</td>
+</tr>
+<tr>
+<td><strong>TSLCB</strong></td>
+<td>Técnico Superior en Laboratorio Clínico y Biomédico</td>
+</tr>
+<tr>
+<td><strong>Variabilidad de resultados</strong></td>
+<td>Diferencias en los resultados causadas por errores en la extracción, transporte, conservación o análisis</td>
+</tr>
+</tbody>
+</table></div></section>
+<div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
+<aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
+<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><a class="dt sim" href="../../gest2/simulacro/">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<details class="db"><summary><span class="dn">1</span><span class="dt2">TSLCB: qué hace y para qué</span><span class="dc" data-b="b0">0/3</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i1" href="#c1"><i></i>1. Funciones del TSLCB</a><a class="dl i1" href="#c2"><i></i>2. Resultados ciertos: para qué sirven</a><a class="dl i2" href="#c3"><i></i>3. Los 3 grupos de funciones</a></details>
+<details class="db"><summary><span class="dn">2</span><span class="dt2">TSLCB: funciones profesionales, personales y sociales</span><span class="dc" data-b="b1">0/4</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i1" href="#c4"><i></i>4. Funciones profesionales (10)</a><a class="dl i1" href="#c5"><i></i>5. Funciones a nivel personal</a><a class="dl i1" href="#c6"><i></i>6. Funciones a nivel social (1ª parte)</a><a class="dl i1" href="#c7"><i></i>7. Funciones a nivel social (2ª parte)</a></details>
+<details class="db"><summary><span class="dn">3</span><span class="dt2">TSLCB: áreas, puestos y ambiente profesional</span><span class="dc" data-b="b2">0/5</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i1" href="#c8"><i></i>8. Sectores donde trabaja el TSLCB</a><a class="dl i1" href="#c9"><i></i>9. Regulación y puestos del TSLCB</a><a class="dl i1" href="#c10"><i></i>10. Ambiente profesional</a><a class="dl i1" href="#c11"><i></i>11. Avances tecnológicos e informática</a><a class="dl i1" href="#c12"><i></i>12. Mejora de la calidad</a></details>
+<details class="db"><summary><span class="dn">4</span><span class="dt2">TSLCB: objetivos</span><span class="dc" data-b="b3">0/4</span></summary><a class="dbk" href="#b3">Ir al inicio del bloque</a><a class="dl i1" href="#c13"><i></i>13. Objetivos relacionados con la patología</a><a class="dl i2" href="#c14"><i></i>14. Objetivos personales del TSLCB (6 cajas)</a><a class="dl i2" href="#c15"><i></i>15. Objetivos de análisis (4 cajas)</a><a class="dl i1" href="#c16"><i></i>16. Objetivos de la fase post analítica (6)</a></details>
+<details class="db"><summary><span class="dn">5</span><span class="dt2">TSAPC (tu título): funciones</span><span class="dc" data-b="b4">0/5</span></summary><a class="dbk" href="#b4">Ir al inicio del bloque</a><a class="dl i1" href="#c17"><i></i>17. Funciones del TSAPC</a><a class="dl i1" href="#c18"><i></i>18. Competencia general del TSAPC (5 cajas)</a><a class="dl i1" href="#c19"><i></i>19. Funciones a nivel profesional del TSAPC</a><a class="dl i1" href="#c20"><i></i>20. Funciones específicas del TSAPC (8 cajas)</a><a class="dl i1" href="#c21"><i></i>21. Funciones personales y sociales del TSAPC</a></details>
+<details class="db"><summary><span class="dn">6</span><span class="dt2">TSAPC: áreas, puestos, ambiente y calidad</span><span class="dc" data-b="b5">0/5</span></summary><a class="dbk" href="#b5">Ir al inicio del bloque</a><a class="dl i1" href="#c22"><i></i>22. Sectores donde trabaja el TSAPC</a><a class="dl i1" href="#c23"><i></i>23. Regulación y puestos del TSAPC (8)</a><a class="dl i1" href="#c24"><i></i>24. Comparativa de puestos TSLCB vs TSAPC</a><a class="dl i1" href="#c25"><i></i>25. Ambiente y avances en anatomía patológica</a><a class="dl i1" href="#c26"><i></i>26. Calidad y sector funerario (TSAPC)</a></details>
+<details class="db"><summary><span class="dn">7</span><span class="dt2">TSAPC: objetivos (4 grupos)</span><span class="dc" data-b="b6">0/5</span></summary><a class="dbk" href="#b6">Ir al inicio del bloque</a><a class="dl i1" href="#c27"><i></i>27. Objetivos relacionados con la patología</a><a class="dl i1" href="#c28"><i></i>28. Objetivos relacionados con la gestión (6)</a><a class="dl i1" href="#c29"><i></i>29. Objetivos de análisis: específicos y post analíticos</a><a class="dl i1" href="#c30"><i></i>30. Objetivos de desarrollo personal (8)</a><a class="dl i1" href="#c31"><i></i>31. Comparativa de objetivos TSLCB vs TSAPC</a></details>
+<p class="dx">Extras</p><a class="dl" href="#x1">🎯 Lo que más probablemente caerá (según los colores)</a><a class="dl" href="#chequeo">Chequeo final (contesta sin mirar)</a><a class="dl" href="#impres">⚡ Lo imprescindible</a><a class="dl" href="#glosario">📖 Glosario (palabras importantes, por orden alfabético)</a></div></aside><div id="planOv" hidden role="dialog" aria-modal="true" aria-label="Mi plan de estudio"><div class="pwrap">
+<div class="ptop"><header><p class="eyebrow" id="pl_eb"></p><h1>📅 Mi plan de estudio</h1><p class="sub" id="pl_sub"></p></header><button type="button" class="px" id="planClose" aria-label="Cerrar plan">×</button></div>
+<section class="count" id="pl_count"></section>
+<section class="cfg">
+  <div><p class="k" style="margin:0 0 6px">📆 Fecha del examen</p><input type="date" id="pl_fecha" style="font:inherit;font-size:16px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 8px"></div>
+  <div><p class="k" style="margin:0 0 6px">1 · ¿Cuántos días vas a estudiar?</p><div class="days" id="pl_days"></div></div>
+  <div><p class="k" style="margin:0 0 6px">2 · ¿Cuándo empiezas?</p><div class="seg" id="pl_startSeg"></div></div>
+  <p class="foot" style="margin:0">Cambia la hora de inicio y fin de cada día si hace falta: el plan se reparte solo según el tiempo que tengas.</p>
+</section>
+<div id="pl_msg"></div>
+<div id="pl_plan" style="display:flex;flex-direction:column;gap:14px"></div>
+<p class="foot">Toca <b>Ir →</b> para saltar a esa parte del repaso. Marca la casilla cuando termines cada tarea. Se guarda en este móvil.</p>
+</div></div>
+<div class="scrim" id="scrim" hidden></div><button type="button" class="fab hf" id="hideFab" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideFabTxt">Tapar</span></button><button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab idx" id="drwOpen" aria-label="Abrir índice">☰ Índice</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
+<div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
+ <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
+ <div class="fc-setup" id="fcSetup">
+  <p class="meta" style="margin:0">Pregunta por delante, respuesta por detrás. Toca la tarjeta para <b>encender la luz 💡</b> y darle la vuelta. Luego di si te la sabías.</p>
+  <p class="lbl">1 · ¿Qué bloque?</p><div class="opts" id="oBlk"></div>
+  <p class="lbl">2 · ¿Qué preguntas?</p><div class="opts" id="oKind"></div>
+  <p class="lbl">3 · ¿Cuáles?</p><div class="opts" id="oLv"></div>
+  <button type="button" class="go" id="fcGo">Empezar</button>
+ </div>
+ <div id="fcPlay" hidden style="display:contents">
+  <div class="fc-prog"><span id="fcN"></span><span id="fcS"></span></div>
+  <div class="fc-bar"><i class="g" id="fcG"></i><i class="r" id="fcR"></i></div>
+  <div class="stage"><div class="card3" id="card3" tabindex="0" role="button" aria-label="Dar la vuelta a la tarjeta">
+   <div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></div>
+  <button type="button" class="flipb" id="fcFlip">💡 Ver respuesta</button>
+  <div class="btns" id="fcBtns" hidden><button type="button" class="b-no" id="fcNo">❌ No me la sé</button><button type="button" class="b-si" id="fcSi">✅ Me la sé</button></div>
+ </div>
+ <div class="fc-end" id="fcEnd" hidden></div>
+</div></div>
+</div>
+<script>
+const KEY="gest2-repaso-v1";
+let st={done:{},f:"0",mode:"read",open:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.done)st=Object.assign(st,s)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const bar=document.querySelector(".bar");
+const setBar=()=>document.documentElement.style.setProperty("--bar","8px");setBar();addEventListener("resize",setBar);
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const cpts=[...document.querySelectorAll(".cpt")];
+const blks=[...document.querySelectorAll(".blk")];
+cpts.forEach(c=>{c._t=norm(c.textContent);const cb=c.querySelector(".dom input");const n=cb.dataset.n;cb.checked=!!st.done[n];c.classList.toggle("done",cb.checked);
+  cb.addEventListener("change",()=>{if(cb.checked)st.done[n]=1;else delete st.done[n];c.classList.toggle("done",cb.checked);save();prog();if(st.f==="pend")apply()});
+  const b=document.createElement("button");b.type="button";b.className="show";b.textContent="Ver respuesta";
+  const q=c.querySelector(".box.q");q.insertBefore(b,q.querySelector(".dom"));
+  b.addEventListener("click",()=>{c.classList.toggle("reveal");b.textContent=c.classList.contains("reveal")?"Ocultar respuesta":"Ver respuesta"})});
+function setOpen(b,v){b.classList.toggle("open",v);b.querySelector(".blk-h").setAttribute("aria-expanded",String(v));if(v)st.open[b.id]=1;else delete st.open[b.id]}
+blks.forEach(b=>{const h=b.querySelector(".blk-h");h.tabIndex=0;h.setAttribute("role","button");setOpen(b,!!st.open[b.id]);
+  const t=()=>{setOpen(b,!b.classList.contains("open"));save()};h.addEventListener("click",t);h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();t()}})});
+document.getElementById("openAll").onclick=()=>{blks.forEach(b=>setOpen(b,true));save()};
+document.getElementById("closeAll").onclick=()=>{blks.forEach(b=>setOpen(b,false));save()};
+function go(id){const el=document.getElementById(id);if(!el)return;const b=el.closest(".blk");if(b){setOpen(b,true);save()}
+  requestAnimationFrame(()=>{const y=el.getBoundingClientRect().top+scrollY-8;scrollTo({top:y,behavior:"smooth"})})}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.getAttribute("href").slice(1))}));
+document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)go(e.target.value);e.target.value=""});
+function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const k=cs.filter(x=>st.done[x.dataset.n]).length;const el=b.querySelector(".bd");if(el)el.textContent=k;const dc=document.querySelector('.dc[data-b="'+b.id+'"]');if(dc){dc.textContent=(k===cs.length?"✓ ":"")+k+"/"+cs.length;dc.classList.toggle("full",k===cs.length)}});
+  const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de "+cpts.length;document.getElementById("pBar").style.width=(n/cpts.length*100)+"%";
+  const p1=cpts.filter(c=>c.dataset.lv==="1"&&!st.done[c.id.slice(1)]).length;document.getElementById("pHint").textContent=p1?"Te faltan "+p1+" 🔴":"¡Todos los 🔴 dominados!"}
+function apply(){const q="";let shown=0;const filt=st.f!=="0";
+  cpts.forEach(c=>{const n=c.id.slice(1);let ok=true;if(st.f==="pend")ok=!st.done[n];else if(st.f!=="0")ok=c.dataset.lv===st.f;if(q)ok=ok&&c._t.includes(q);c.hidden=!ok;if(ok)shown++});
+  blks.forEach(b=>{const any=[...b.querySelectorAll(".cpt")].some(c=>!c.hidden);b.hidden=!any;if(any&&filt)b.classList.add("open")});
+  if(!filt)blks.forEach(b=>b.classList.toggle("open",!!st.open[b.id]));
+  document.getElementById("empty").hidden=shown>0;
+  document.querySelectorAll(".chips .chip").forEach(ch=>ch.setAttribute("aria-pressed",String(ch.dataset.f===st.f)))}
+document.querySelectorAll(".chips .chip").forEach(ch=>ch.addEventListener("click",()=>{st.f=ch.dataset.f;save();apply()}));
+
+function setMode(m){st.mode=m;save();document.body.classList.toggle("test",m==="test");
+  document.getElementById("mRead").setAttribute("aria-pressed",String(m==="read"));document.getElementById("mTest").setAttribute("aria-pressed",String(m==="test"));
+  cpts.forEach(c=>{c.classList.remove("reveal");c.querySelector(".show").textContent="Ver respuesta"})}
+document.getElementById("mRead").onclick=()=>setMode("read");document.getElementById("mTest").onclick=()=>setMode("test");
+function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);
+  document.querySelectorAll(".fd.peek").forEach(x=>x.classList.remove("peek"));setBar();
+  const hf=document.getElementById("hideFab");hf.setAttribute("aria-pressed",String(v));document.getElementById("hideFabTxt").textContent=v?"🙈 Tapadas":"💡 Tapar"}
+document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide));
+document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
+setHide(!!st.hide);
+setMode(st.mode);apply();prog();
+if(/^#[\w-]+$/.test(location.hash)){const h=location.hash.slice(1);setTimeout(()=>go(h),300)}
+const drw=document.getElementById("drw"),scrim=document.getElementById("scrim");
+const wide=()=>matchMedia("(min-width:1100px)").matches;
+function drwSet(v){drw.classList.toggle("on",v);scrim.hidden=!v;document.body.style.overflow=v&&!wide()?"hidden":""}
+document.getElementById("drwOpen").onclick=()=>drwSet(true);document.getElementById("drwClose").onclick=()=>drwSet(false);scrim.onclick=()=>drwSet(false);
+drw.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(!wide())drwSet(false)}));
+document.getElementById("fcOpen2").addEventListener("click",()=>{if(!wide())drwSet(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drw.classList.contains("on"))drwSet(false)});
+const upB=document.getElementById("upBtn");addEventListener("scroll",()=>{upB.hidden=scrollY<600},{passive:true});upB.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* ===== Buscador ===== */
+(function(){
+const qi=document.getElementById("q"),res=document.getElementById("res");
+const U=[];
+const txt=el=>{const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);const out=[];while(w.nextNode()){const t=w.currentNode;if(t.parentNode.closest(".fl,.lbl,.tag,.show,.dom,.srcl,figcaption"))continue;const v=t.nodeValue.trim();if(v)out.push(v)}return out.join(" ")};
+const add=(el,kind,title,text)=>U.push({el,kind,title,text,n:norm(text),nt:norm(title)});
+cpts.forEach(c=>{const t=c.querySelector("h3").childNodes[0].textContent.trim();add(c,"Concepto "+c.id.slice(1)+" · "+c.closest(".blk").querySelector(".bt").textContent,t,txt(c))});
+document.querySelectorAll("#hoja .pq").forEach(d=>add(d,"20 preguntas de la hoja",d.querySelector("summary").textContent,txt(d)));
+document.querySelectorAll("#impres .pq").forEach(d=>add(d,"Lo imprescindible",d.querySelector("summary").textContent,txt(d)));
+[["glosario","Glosario"],["trampas","Trampas"],["numeros","Números clave"]].forEach(([id,k])=>document.querySelectorAll("#"+id+" tbody tr").forEach(r=>add(r,k,r.cells[0].textContent,txt(r))));
+document.querySelectorAll("#chequeo li").forEach(li=>add(li,"Chequeo final",li.textContent,li.textContent));
+const escH=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function snip(text,q){const n=norm(text);const i=n.indexOf(q);if(i<0)return escH(text.slice(0,110))+"…";
+  const a=Math.max(0,i-50),b=Math.min(text.length,i+q.length+70);
+  return (a?"…":"")+escH(text.slice(a,i))+"<mark>"+escH(text.slice(i,i+q.length))+"</mark>"+escH(text.slice(i+q.length,b))+(b<text.length?"…":"")}
+function markT(t,q){const n=norm(t);const i=n.indexOf(q);return i<0?escH(t):escH(t.slice(0,i))+"<mark>"+escH(t.slice(i,i+q.length))+"</mark>"+escH(t.slice(i+q.length))}
+let found=[];
+function run(){const raw=qi.value.trim();const q=norm(raw);if(q.length<2){res.hidden=true;return}
+  found=U.filter(u=>u.n.includes(q)).sort((a,b)=>(b.nt.includes(q)-a.nt.includes(q)));
+  res.hidden=false;
+  if(!found.length){res.innerHTML=`<div class="none">No aparece «${escH(raw)}» en el repaso. Prueba con otra palabra o sin la última letra.</div>`;return}
+  res.innerHTML=`<div class="rh"><span>${found.length} resultado${found.length>1?"s":""} para «${escH(raw)}»</span><button type="button" id="resX">Cerrar</button></div>`+
+   found.slice(0,60).map((u,k)=>`<button type="button" class="ri" data-k="${k}"><span class="rk">${escH(u.kind)}</span><span class="rt">${markT(u.title.slice(0,120),q)}</span><span class="rs">${snip(u.text.replace(/\s+/g," "),q)}</span></button>`).join("");
+  document.getElementById("resX").onclick=()=>{qi.value="";res.hidden=true};
+  res.querySelectorAll(".ri").forEach(b=>b.onclick=()=>jump(found[+b.dataset.k],q))}
+function jump(u,q){const el=u.el;const b=el.closest(".blk");if(b){setOpen(b,true);save()}if(b&&b.hidden){st.f="0";save();apply()}
+  if(el.tagName==="DETAILS")el.open=true;const d=el.closest("details");if(d)d.open=true;
+  if(el.closest(".cpt")&&document.body.classList.contains("test")){const c=el.closest(".cpt");c.classList.add("reveal")}
+  highlight(el,q);
+  requestAnimationFrame(()=>{const tgt=firstMark(el)||el;const y=tgt.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:"smooth"});
+    el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")})}
+function clearHL(){document.querySelectorAll("mark.sh").forEach(m=>{const t=document.createTextNode(m.textContent);m.replaceWith(t);t.parentNode&&t.parentNode.normalize()})}
+function highlight(root,q){clearHL();const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(t=>{const n=norm(t.nodeValue);let i=n.indexOf(q);if(i<0||t.parentNode.closest("script,style,.res"))return;
+    const frag=document.createDocumentFragment();let last=0;const s=t.nodeValue;
+    while(i>=0){frag.append(s.slice(last,i));const m=document.createElement("mark");m.className="sh";m.style.cssText="background:#ffe066;color:#1d1828;border-radius:3px";m.textContent=s.slice(i,i+q.length);frag.append(m);last=i+q.length;i=n.indexOf(q,last)}
+    frag.append(s.slice(last));t.replaceWith(frag)})}
+function firstMark(el){return el.querySelector("mark.sh")}
+qi.addEventListener("input",run);qi.addEventListener("focus",run);
+qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDefault();jump(found[0],norm(qi.value.trim()))}if(e.key==="Escape"){res.hidden=true}});
+})();
+/* ===== Mi plan ===== */
+(function(){
+
+const EXAM={id:"gest2",em:"🧫",asig:"Gestión de Muestras",examen:"2º examen",fecha:"",horario:["8:00","13:25"],repaso:"#",simulacro:"../../gest2/simulacro/",
+  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,m:+b.dataset.min||0,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
+const PKEY="plan-estudio-v1-"+EXAM.id;
+let ps={n:null,start:"hoy",times:{},done:{}};
+try{const s=JSON.parse(localStorage.getItem(PKEY)||"null");if(s)ps=Object.assign(ps,s)}catch(e){}
+const psave=()=>{try{localStorage.setItem(PKEY,JSON.stringify(ps))}catch(e){}};
+const $=id=>document.getElementById("pl_"+id);
+const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const today=new Date();today.setHours(0,0,0,0);
+const fmtD=d=>DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+let exam,left;const maxN=10;
+function setExam(){const f=ps.fecha||EXAM.fecha||iso(new Date(today.getTime()+7*864e5));exam=new Date(f+"T00:00:00");left=Math.round((exam-today)/864e5);
+  $("fecha").value=f;
+  $("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
+  $("sub").textContent="Examen: "+fmtD(exam)+(ps.fecha||EXAM.fecha?"":" (fecha de ejemplo: pon la tuya arriba)")+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar.";
+  $("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`}
+setExam();
+if(!ps.n)ps.n=Math.min(maxN,Math.max(1,left));
+$("fecha").addEventListener("change",e=>{if(!e.target.value)return;ps.fecha=e.target.value;setExam();ps.n=Math.min(maxN,Math.max(1,left));psave();
+  $("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(+x.dataset.n===ps.n)));prender()});
+$("days").innerHTML=Array.from({length:maxN},(_,i)=>`<button type="button" class="dchip" data-n="${i+1}" aria-pressed="${ps.n===i+1}" aria-label="${i+1} días">${i+1}</button>`).join("");
+$("days").querySelectorAll(".dchip").forEach(b=>b.onclick=()=>{ps.n=+b.dataset.n;psave();$("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+$("startSeg").innerHTML=[["hoy","Hoy"],["manana","Mañana"]].map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${ps.start===k}">${t}</button>`).join("");
+$("startSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{ps.start=b.dataset.k;psave();$("startSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+
+/* ---------- coste en minutos ---------- */
+const MIN={1:9,2:6,3:3};const CARDS=8;
+const bCost=b=>b.m||(b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS);
+const REVIEW=[
+ {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
+ {t:"📝 Simulacro completo",d:"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
+ {t:"🩹 Repasa lo que fallaste en el Simulacro",d:"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».",m:30,u:EXAM.simulacro,rev:1},
+ {t:"⚠️ Trampas y chequeo final",d:"Repasa las trampas y contesta el chequeo final sin mirar.",m:25,u:"#trampas",rev:1},
+ {t:"⚠️ Trampas y 🔢 números clave",d:"Las parejas que se confunden y las cifras (%, µm, mm/h…).",m:20,u:"#trampas",rev:1},
+ {t:"⚡ Lo imprescindible",d:"Pregunta → respuesta corta. Lo último antes de dormir.",m:20,u:"#impres",rev:1}];
+const WARM={t:"🔁 Calentamiento: lo que fallaste ayer",d:"🃏 Tarjetas → «Solo las que fallé». Así lo de ayer no se te olvida.",m:15,u:"#fc",rev:1};
+const toMin=s=>{const [h,m]=(s||"0:0").split(":").map(Number);return h*60+m};
+const toHM=m=>{m=((m%1440)+1440)%1440;return Math.floor(m/60)+":"+String(m%60).padStart(2,"0")};
+function dayDate(i){const d=new Date(today);d.setDate(d.getDate()+i+(ps.start==="manana"?1:0));return d}
+function defTimes(i){const d=dayDate(i);const isToday=d.getTime()===today.getTime();
+  if(isToday){const now=new Date();let s=Math.ceil((now.getHours()*60+now.getMinutes()+15)/15)*15;s=Math.max(s,8*60);const e=Math.max(s+60,22*60);return [toHM(s),toHM(Math.min(e,23*60+30))]}
+  return EXAM.horario}
+function times(i){const k=dayDate(i).toISOString().slice(0,10);return ps.times[k]||defTimes(i)}
+function setTime(i,which,v){const k=dayDate(i).toISOString().slice(0,10);const t=times(i).slice();t[which]=v;ps.times[k]=t;psave();prender()}
+
+function plan(N){
+  const caps=Array.from({length:N},(_,i)=>{const [a,b]=times(i);return Math.max(30,toMin(b)-toMin(a))});
+  const days=Array.from({length:N},()=>[]);
+  const blocks=EXAM.blocks.map(b=>({b,m:bCost(b)}));const total=blocks.reduce((s,x)=>s+x.m,0);
+  let mode="full";
+  if(N===1){
+    const rojo=EXAM.blocks.map(b=>({b,cs:b.c.filter(c=>c.lv===1)})).filter(x=>x.cs.length);
+    const avail=caps[0]-80;
+    days[0].push({t:"🔴 Solo lo imprescindible de cada bloque",d:"En el Repaso pulsa el filtro <b>🔴 Imprescindibles</b> y repasa: "+rojo.map(x=>`<b>${x.b.n}</b> ${x.b.t} (${x.cs.map(c=>c.n).join(", ")})`).join(" · "),m:Math.max(60,avail),u:"#fc"});
+    days[0].push(REVIEW[3],REVIEW[5]);
+    return {days,caps,mode:"rojo"};}
+  const lastRev=REVIEW;const revM=lastRev.reduce((s,x)=>s+x.m,0);
+  // capacidad para bloques: días 1..N-1 (menos calentamiento) + lo que sobre del último día
+  const W=.82;/* tiempo real de estudio descontando descansos */
+  const learnCaps=caps.map((c,i)=>i<N-1?c*W-(i>0?WARM.m:0):Math.max(0,c*W-WARM.m-revM));
+  const learnTotal=learnCaps.reduce((s,x)=>s+x,0);
+  const f=Math.min(1,learnTotal/total);if(f<1)mode=f<.7?"rojo":"rapido";
+  // repartir bloques en orden según capacidad acumulada
+  const cum=[];let acc=0;const tf=total*f;learnCaps.forEach(c=>{acc+=c;cum.push(acc/learnTotal*tf)});
+  let pos=0;
+  blocks.forEach(x=>{const m=x.m*f;const mid=pos+m/2;let d=cum.findIndex(c=>mid<=c);if(d<0)d=N-1;
+    x.day=d;pos+=m;x.mm=Math.round(m)});
+  for(let i=0;i<N;i++){
+    if(i>0)days[i].push(WARM);
+    blocks.filter(x=>x.day===i).forEach(x=>{const r=x.b.c.filter(c=>c.lv===1);
+      days[i].push({t:`Bloque ${x.b.n} · ${x.b.t}`,blk:x.b,m:x.mm,u:"#"+x.b.id,
+        d:(mode==="rojo"?"<b>Poco tiempo:</b> lee bien los 🔴 y los demás por encima. ":"")+"Lee los conceptos "+x.b.c[0].n+"–"+x.b.c[x.b.c.length-1].n+" y al terminar haz sus 🃏 Tarjetas. "+(r.length?"🔴 Imprescindibles: <b>"+r.map(c=>c.n).join(", ")+"</b>.":"")})});
+    if(i===N-1)days[i].push(...lastRev);}
+  return {days,caps,mode,f};
+}
+function schedule(tasks,start){let t=toMin(start),run=0;const out=[];
+  tasks.forEach((x,k)=>{out.push({...x,a:t,b:t+x.m});t+=x.m;run+=x.m;
+    if(run>=45&&k<tasks.length-1){out.push({brk:1,t:"☕ Descanso: levántate, agua, nada de móvil",a:t,b:t+10,m:10});t+=10;run=0}});
+  return out}
+function prender(){
+  const N=ps.n;const P=plan(N);
+  const msg=$("msg");
+  if(left>0&&N>left)msg.innerHTML=`<p class="note warn">⚠️ Elegiste ${N} días pero solo quedan ${left} antes del examen. Los últimos días caerían después del examen.</p>`;
+  else if(N===1)msg.innerHTML=`<p class="note warn">⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴 y "Lo imprescindible".</p>`;
+  else if(P.mode==="rojo")msg.innerHTML=`<p class="note warn">⚠️ <b>El tiempo es justo.</b> En cada bloque céntrate en los conceptos 🔴 y los demás léelos por encima. Si puedes, alarga las horas de algún día.</p>`;
+  else if(P.mode==="rapido")msg.innerHTML=`<p class="note warn">⏱️ Vas un poco justo: en cada bloque dale prioridad a los 🔴. Si puedes, añade algo de tiempo a algún día.</p>`;
+  else msg.innerHTML=`<p class="note ok">✅ Te da tiempo de todo. Sigue el plan en orden y tacha cada tarea.</p>`;
+  $("plan").innerHTML=P.days.map((tasks,i)=>{const d=dayDate(i);const [a,b]=times(i);const sch=schedule(tasks,a);
+    const used=sch.length?sch[sch.length-1].b-toMin(a):0;const over=used>P.caps[i]+10;
+    const real=sch.filter(x=>!x.brk);const k=dayDate(i).toISOString().slice(0,10);
+    const doneN=real.filter((x,j)=>ps.done[k+"|"+x.t]).length;
+    const isToday=d.getTime()===today.getTime();
+    const bl=real.filter(x=>x.blk).map(x=>x.blk);const rng=bl.length?(bl.length===1?"Bloque "+bl[0].n:"Bloques "+bl[0].n+" a "+bl[bl.length-1].n):"";
+    const goal=i===N-1&&N>1?(rng?rng+" + Repaso final y Simulacro":"Repaso final y Simulacro"):rng;const names=bl.map(b=>b.t).join(" · ");
+    return `<article class="day" id="pl_d${i}"><div class="day-h">
+      <div class="day-top"><span class="when">Día ${i+1} de ${N} · ${fmtD(d)}</span>${isToday?'<span class="badge today">HOY</span>':""}${doneN===real.length&&real.length?'<span class="badge done">✓ HECHO</span>':""}</div>
+      <h2>${goal||"Repaso"}</h2>${names?`<p class="goal">${names}</p>`:""}
+      <div class="times">De <input type="time" id="pl_ts${i}" value="${a.padStart(5,"0")}" aria-label="Hora de inicio día ${i+1}"> a <input type="time" id="pl_te${i}" value="${b.padStart(5,"0")}" aria-label="Hora de fin día ${i+1}"> · ${Math.round(P.caps[i]/6)/10} h${over?' · <b style="color:var(--warn)">el plan acaba a las '+toHM(sch[sch.length-1].b)+'</b>':""}</div>
+      <div class="dprog"><i style="width:${real.length?doneN/real.length*100:0}%"></i></div></div>
+      <ul class="tasks">${sch.map(x=>x.brk?`<li class="task brk"><span class="t-title"><span class="t-time">${toHM(x.a)}</span> ${x.t}</span></li>`:
+        `<li class="task${x.rev?" rev":""}${ps.done[k+"|"+x.t]?" done":""}"><input type="checkbox" data-k="${k}|${x.t.replace(/"/g,"&quot;")}" ${ps.done[k+"|"+x.t]?"checked":""} aria-label="Hecho: ${x.t.replace(/"/g,"&quot;")}"><div><span class="t-time">${toHM(x.a)}–${toHM(x.b)} · ${x.m} min</span><div class="t-title">${x.blk?`<span class="dot d1"></span>`:""}${x.t}</div><div class="t-det">${x.d||""}</div>${x.u?`<a class="t-go" href="${x.u}"${x.u.startsWith("#")?"":' target="_blank" rel="noopener"'}>${x.u.startsWith("#")?"Ir →":"Abrir →"}</a>`:""}</div></li>`).join("")}</ul></article>`}).join("");
+  P.days.forEach((_,i)=>{$("ts"+i).onchange=e=>setTime(i,0,e.target.value);$("te"+i).onchange=e=>setTime(i,1,e.target.value)});
+  document.querySelectorAll("#planOv .task input").forEach(c=>c.onchange=()=>{if(c.checked)ps.done[c.dataset.k]=1;else delete ps.done[c.dataset.k];psave();prender()});
+}
+
+const ov=document.getElementById("planOv");
+function openPlan(){ov.hidden=false;document.body.style.overflow="hidden";prender();ov.scrollTop=0}
+function closePlan(){ov.hidden=true;document.body.style.overflow=""}
+document.getElementById("planOpen").onclick=openPlan;
+const pb=document.getElementById("planOpen2");if(pb)pb.onclick=()=>{if(typeof drwSet==="function"&&!wide())drwSet(false);openPlan()};
+document.getElementById("planClose").onclick=closePlan;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ov.hidden)closePlan()});
+ov.addEventListener("click",e=>{const a=e.target.closest("a.t-go");if(!a)return;const h=a.getAttribute("href");if(!h.startsWith("#"))return;e.preventDefault();closePlan();
+  if(h==="#fc"){document.getElementById("fcOpen").click();return}go(h.slice(1))});
+/* resumen de hoy en la tarjeta de entrada */
+{prender();const td=[...ov.querySelectorAll(".day")].find(d=>d.querySelector(".badge.today"));
+  if(td)document.getElementById("planToday").textContent="Hoy toca: "+td.querySelector("h2").textContent;}
+})();
+
+/* ===== Temporizador ===== */
+(function(){
+st.tm=st.tm||{a:null,s:{}};const T=st.tm;
+const pill=document.getElementById("tpill");let iv=null,beeped=false;
+const f2=n=>String(Math.floor(n)).padStart(2,"0");
+const fmt=sec=>{sec=Math.abs(sec);const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=Math.floor(sec%60);return (h?h+":"+f2(m):f2(m))+":"+f2(s)};
+const blkOf=id=>document.getElementById(id);
+const elapsed=()=>{const a=T.a;if(!a)return 0;return (a.acc+(a.paused?0:Date.now()-a.start))/1000};
+function beep(){try{const C=new (window.AudioContext||window.webkitAudioContext)();[0,.25,.5].forEach(t=>{const o=C.createOscillator(),g=C.createGain();o.frequency.value=880;o.connect(g);g.connect(C.destination);g.gain.setValueAtTime(.2,C.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,C.currentTime+t+.2);o.start(C.currentTime+t);o.stop(C.currentTime+t+.22)})}catch(e){}
+  try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}}
+function tick(){const a=T.a;if(!a){pill.hidden=true;return}
+  const tot=a.min*60,el=elapsed(),left=tot-el,over=left<0;
+  pill.hidden=false;pill.classList.toggle("over",over);
+  document.getElementById("tpB").textContent=(over?"⏰ Te pasaste · ":"⏱ ")+a.name+(a.paused?" · en pausa":"");
+  document.getElementById("tpT").textContent=(over?"+":"")+fmt(left);
+  document.getElementById("tpBar").style.width=Math.min(100,el/tot*100)+"%";
+  document.getElementById("tpPause").textContent=a.paused?"Seguir":"Pausa";
+  document.getElementById("tpPause").setAttribute("aria-label",a.paused?"Seguir":"Pausar");
+  if(over&&!beeped&&!a.beeped){beeped=true;a.beeped=1;save();beep()}}
+function run(){clearInterval(iv);if(T.a){iv=setInterval(tick,500)}tick()}
+function startB(b){const name=b.querySelector(".bn").textContent.replace("BLOQUE","Bloque")+" · "+b.querySelector(".bt").textContent;
+  T.a={b:b.id,name,min:+b.dataset.min,start:Date.now(),acc:0,paused:false};beeped=false;save();setOpen(b,true);save();run();
+  requestAnimationFrame(()=>{const y=b.getBoundingClientRect().top+scrollY-70;scrollTo({top:y,behavior:"smooth"})});rowAll()}
+function pause(){const a=T.a;if(!a)return;if(a.paused){a.start=Date.now();a.paused=false}else{a.acc+=Date.now()-a.start;a.paused=true}save();tick()}
+function fin(){const a=T.a;if(!a)return;T.s[a.b]=Math.max(1,Math.round(elapsed()/60));T.a=null;save();run();rowAll()}
+function cancel(){T.a=null;save();run();rowAll()}
+document.getElementById("tpPause").onclick=pause;document.getElementById("tpFin").onclick=fin;document.getElementById("tpX").onclick=cancel;
+function row(b){let r=b.querySelector(".tmr");if(!r){r=document.createElement("div");r.className="tmr";b.querySelector(".blk-h").after(r)}
+  const m=+b.dataset.min,sp=T.s[b.id],act=T.a&&T.a.b===b.id;
+  r.innerHTML=`<p>${sp?`<span class="tm-done">✓ Lo hiciste en ${sp} min</span> (previsto ${m})`:`⏱ Tiempo para aprenderte este bloque: <b>${m} min</b>`}</p>`+(act?`<p><b>⏳ En marcha…</b></p>`:`<button type="button">${sp?"↻ Otra vez":"▶ Empezar"}</button>`);
+  const bt=r.querySelector("button");if(bt)bt.onclick=()=>{if(T.a&&T.a.b!==b.id){fin()}startB(b)}}
+function rowAll(){blks.forEach(row)}
+rowAll();run();
+document.addEventListener("visibilitychange",tick);
+})();
+
+/* ===== Leyenda desplegable ===== */
+(function(){
+const lg=document.querySelector(".top .legend");if(!lg)return;
+const NAMES={1:"🔴 Imprescindibles",2:"🟠 Importantes",3:"🔵 Leer una vez"},COL={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const panel=document.createElement("div");panel.className="lvpanel";panel.id="lvpanel";panel.hidden=true;lg.after(panel);
+let cur=null;
+const tags=[...lg.querySelectorAll(".tag")];
+tags.forEach(t=>{const lv=t.classList.contains("lv1")?1:t.classList.contains("lv2")?2:3;
+  const b=document.createElement("button");b.type="button";b.className=t.className;b.innerHTML=t.innerHTML;b.setAttribute("aria-expanded","false");b.setAttribute("aria-controls","lvpanel");t.replaceWith(b);
+  b.onclick=()=>{if(cur===lv){cur=null;panel.hidden=true;b.setAttribute("aria-expanded","false");return}
+    cur=lv;lg.querySelectorAll(".tag").forEach(x=>x.setAttribute("aria-expanded",String(x===b)));show(lv)}});
+function show(lv){panel.style.setProperty("--lc",COL[lv]);
+  const cs=cpts.filter(c=>c.dataset.lv===String(lv));let h=`<h4>${NAMES[lv]} · ${cs.length} conceptos</h4>`,last="";
+  cs.forEach(c=>{const bt=c.closest(".blk").querySelector(".bt").textContent;if(bt!==last){h+=`<p class="lg">${c.closest(".blk").querySelector(".bn").textContent} · ${bt}</p>`;last=bt}
+    const t=c.querySelector("h3").childNodes[0].textContent.trim();h+=`<a href="#${c.id}" class="${st.done[c.id.slice(1)]?"ok":""}"><b>${c.id.slice(1)}</b>${t}</a>`});
+  panel.innerHTML=h;panel.hidden=false;
+  panel.querySelectorAll("a").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.getAttribute("href").slice(1))})}
+})();
+/* ===== Tarjetas ===== */
+(function(){
+const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
+const LVC={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const ALL=[];
+cpts.forEach(c=>{const b=c.closest(".blk");const bt=b.querySelector(".bt").textContent;const n=c.id.slice(1);const lv=c.dataset.lv;
+  const qt=c.querySelector(".qt");const prof=[...c.querySelectorAll(".prof-t")].map(x=>x.innerHTML).join("");
+  const src=c.querySelector(".srcl").textContent;
+  if(qt)ALL.push({id:"q"+n,blk:b.id,bt,lv,kind:"q",q:qt.textContent,a:prof,src,title:n+". "+c.querySelector("h3").childNodes[0].textContent});
+  c.querySelectorAll(".defs li").forEach((li,i)=>{const ok=li.querySelector(".fd.ok");if(!ok)return;
+    const term=li.querySelector(".term").textContent;const txt=ok.textContent.replace(/^📌[^«]*/,"");
+    ALL.push({id:"d"+n+"_"+i,blk:b.id,bt,lv,kind:"d",q:"¿Cómo define la diapositiva: «"+term+"»?",a:'<p class="formal">'+txt+"</p>",src,title:term})})});
+st.fc=st.fc||{bad:{}};
+let cfg={blk:"all",kind:"all",lv:"all"},deck=[],i=0,ok=0,ko=0,flipped=false;
+const blkOpts=[["all","Todos los bloques",""]].concat(blks.map(b=>[b.id,b.querySelector(".bn").textContent.replace("BLOQUE","Bloque"),b.querySelector(".bt").textContent]));
+function opts(el,list,key){el.innerHTML=list.map(([v,t,sm])=>`<button type="button" class="opt" data-v="${v}" aria-pressed="${cfg[key]===v}">${t}${sm?`<small>${sm}</small>`:""}</button>`).join("");
+  el.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cfg[key]=b.dataset.v;el.querySelectorAll(".opt").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));count()})}
+function pool(){return ALL.filter(c=>(cfg.blk==="all"||c.blk===cfg.blk)&&(cfg.kind==="all"||c.kind===cfg.kind)&&(cfg.lv==="all"||(cfg.lv==="bad"?st.fc.bad[c.id]:c.lv===cfg.lv)))}
+function count(){const n=pool().length;$("fcGo").textContent=n?"Empezar · "+n+" tarjetas":"No hay tarjetas con esa elección";$("fcGo").disabled=!n}
+function setup(){opts($("oBlk"),blkOpts,"blk");
+  opts($("oKind"),[["all","Todo","preguntas + definiciones"],["q","❓ Preguntas de cada concepto",""],["d","📌 Definiciones de la diapositiva","las del examen"]],"kind");
+  const nb=Object.keys(st.fc.bad).length;
+  opts($("oLv"),[["all","Todas",""],["1","🔴 Solo imprescindibles",""],["bad","❌ Solo las que fallé",nb+" guardadas"]],"lv");count();
+  $("fcSetup").hidden=false;$("fcPlay").hidden=true;$("fcPlay").style.display="none";$("fcEnd").hidden=true}
+function open(){fc.hidden=false;document.body.style.overflow="hidden";setup()}
+function close(){fc.hidden=true;document.body.style.overflow=""}
+$("fcOpen").onclick=open;$("fcOpen2").onclick=open;$("fcClose").onclick=close;
+document.addEventListener("keydown",e=>{if(fc.hidden)return;if(e.key==="Escape")close()});
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function start(list){deck=shuffle(list.slice());i=0;ok=0;ko=0;$("fcSetup").hidden=true;$("fcEnd").hidden=true;$("fcPlay").hidden=false;$("fcPlay").style.display="contents";show()}
+$("fcGo").onclick=()=>start(pool());
+function show(){const c=deck[i];flipped=false;$("card3").classList.remove("flip");$("fcFlip").hidden=false;$("fcBtns").hidden=true;
+  $("ffront").style.setProperty("--cc",LVC[c.lv]);
+  $("ffront").innerHTML=`<span class="kind">${c.kind==="d"?"📌 Definición de la diapositiva":"❓ Pregunta"} · ${c.bt}</span><span class="bulb" aria-hidden="true">💡</span><span class="qq">${c.q}</span><span class="hint">Piensa la respuesta (o dila en voz alta) y toca para encender la luz</span>`;
+  $("fback").innerHTML=`<span class="kind">💡 Respuesta · ${c.title}</span><div class="ans">${c.a}</div><span class="src">${c.src}</span>`;
+  $("fcN").textContent="Tarjeta "+(i+1)+" de "+deck.length;$("fcS").textContent="✅ "+ok+" · ❌ "+ko;
+  $("fcG").style.width=(ok/deck.length*100)+"%";$("fcR").style.width=(ko/deck.length*100)+"%"}
+function flip(){flipped=!flipped;$("card3").classList.toggle("flip",flipped);if(flipped){$("fcFlip").hidden=true;$("fcBtns").hidden=false}}
+$("card3").onclick=e=>{if(e.target.closest("a"))return;flip()};$("card3").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+$("fcFlip").onclick=flip;
+function answer(good){const c=deck[i];if(good){ok++;delete st.fc.bad[c.id]}else{ko++;st.fc.bad[c.id]=1}save();i++;if(i<deck.length)show();else end()}
+$("fcSi").onclick=()=>answer(true);$("fcNo").onclick=()=>answer(false);
+function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pct=Math.round(ok/deck.length*100);const fails=deck.filter(c=>st.fc.bad[c.id]);
+  const msg=pct>=90?"¡Lo tienes dominado! 🔥":pct>=70?"¡Muy bien! Repasa las que fallaste.":pct>=50?"Vas bien: repite las falladas.":"Toca repasar este bloque y volver a intentarlo.";
+  $("fcEnd").innerHTML=`<span class="kind" style="font-family:var(--f-mono);color:var(--muted)">RESULTADO</span><span class="score">${ok}/${deck.length}</span><p style="margin:0;font-weight:700">${msg}</p>`+
+   (fails.length?`<button type="button" class="go" id="fcRe">🔁 Repetir las ${fails.length} que fallé</button>`:"")+`<button type="button" class="opt" id="fcAgain" style="text-align:center">🃏 Elegir otras tarjetas</button><button type="button" class="opt" id="fcBack" style="text-align:center">Volver al repaso</button>`;
+  $("fcEnd").hidden=false;if(fails.length)$("fcRe").onclick=()=>start(fails);$("fcAgain").onclick=setup;$("fcBack").onclick=close}
+})();
+
+</script>
+
+</body>
+</html>

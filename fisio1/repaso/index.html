@@ -1,0 +1,2993 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:30;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
+(function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
+</head>
+<body>
+<title>Fisio 1 · Organización del cuerpo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
+  --accent:#7a1f3d; --accent-ink:#ffffff; --blk:#7a1f3d; --blk-ink:#ffffff;
+  --lv1:#d3264a; --lv1-soft:#fdebef; --lv2:#d9730a; --lv2-soft:#fdf1e3; --lv3:#2c6bd2; --lv3-soft:#e8effc;
+  --def-soft:#f1eef7; --und-soft:#eaf6ef; --und:#1d6a44; --tip-soft:#fff4d6; --tip:#7a5000; --q:#7a1f3d; --q-soft:#fbf0f4;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);line-height:1.55}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:1.25em}
+li{margin:2px 0}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.wrap>*{min-width:0}
+/* cabecera */
+.top{padding:6px 0 0}
+.eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+.top h1{font-size:1.85em;line-height:1.1;margin:6px 0 4px}
+.sub{color:var(--muted);margin:0 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;border-radius:999px;padding:3px 9px;color:#fff;white-space:nowrap}
+.tag.lv1{background:var(--lv1)} .tag.lv2{background:var(--lv2)} .tag.lv3{background:var(--lv3)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag{color:#16121c}}
+:root[data-theme="dark"] .tag{color:#16121c}
+.meta{color:var(--muted)}
+/* cómo estudiar */
+.how{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.how>summary{cursor:pointer;font-weight:700;padding:12px 14px;font-family:var(--f-display)}
+.how-b{padding:0 14px 12px;font-size:.93em}
+/* índice */
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.toc .xs-h{margin:0 0 8px;border:0;padding:0}
+.toc-l{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.toc-l li{margin:0}
+.toc-b{display:block;font-weight:700;color:var(--ink);text-decoration:none}
+.toc-b span{font-family:var(--f-mono);font-size:.72em;color:var(--accent);margin-right:4px;text-transform:uppercase}
+.toc-c{display:block;font-size:.8em;color:var(--muted);line-height:1.45}
+.toc-c a{color:var(--muted);text-decoration:none}
+.toc-c a.i1{color:var(--lv1);font-weight:700}
+/* bloques */
+.blk{display:flex;flex-direction:column;gap:12px;scroll-margin-top:var(--bar,0px)}
+.blk-h{display:grid;gap:2px;background:var(--blk);color:var(--blk-ink);border-radius:12px;padding:14px 44px 14px 14px;position:relative;font-family:var(--f-body)}
+.blk-h .bn{font-family:var(--f-mono);font-size:.62em;letter-spacing:.1em;opacity:.9;font-weight:500}
+.blk-h .bt{font-family:var(--f-display);font-size:1.15em;font-weight:800;line-height:1.15}
+.blk-h .bc{font-size:.66em;font-weight:400;opacity:.95}
+/* concepto */
+.cpt{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lv2);border-radius:12px;padding:12px 14px 14px;scroll-margin-top:var(--bar,0px);min-width:0}
+.cpt.lv1{border-left-color:var(--lv1)} .cpt.lv3{border-left-color:var(--lv3)}
+.c-h{display:flex;gap:10px;align-items:flex-start}
+.c-n{flex:none;font-family:var(--f-mono);font-weight:500;font-size:.85em;min-width:2em;height:2em;border-radius:8px;display:grid;place-items:center;background:var(--soft);color:var(--muted);margin-top:1px}
+.lv1 .c-n{background:var(--lv1-soft);color:var(--lv1)} .lv2 .c-n{background:var(--lv2-soft);color:var(--lv2)} .lv3 .c-n{background:var(--lv3-soft);color:var(--lv3)}
+.c-h h3{font-size:1.15em;line-height:1.25}
+.c-h .note{display:block;font-family:var(--f-body);font-weight:400;font-size:.72em;color:var(--muted);margin-top:2px}
+.c-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:8px 0 10px}
+.srcl{font-size:.8em;color:var(--muted)}
+.c-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.c-body>*{min-width:0;max-width:100%}
+.lbl{font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.prof{color:var(--accent);margin-bottom:-6px}
+.prof-t>:first-child{margin-top:0}
+.defs{background:var(--def-soft);border-radius:10px;padding:9px 11px;font-size:.88em}
+.defs ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.defs li{display:flex;flex-direction:column;gap:4px}
+.term{font-size:1.05em}
+.fd{border-radius:8px;padding:6px 9px;line-height:1.45}
+.fd .fl{display:block;font-family:var(--f-mono);font-size:.72em;font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.fd.easy{background:var(--surface)} .fd.easy .fl{color:var(--und)}
+.fd.ok{background:var(--surface);border-left:4px solid var(--accent);font-weight:700} .fd.ok .fl{color:var(--accent)}
+.fd.no{background:transparent;color:var(--muted);font-size:.92em;padding-top:0;padding-bottom:0} .fd.no .fl{color:var(--lv2)}
+.box{border-radius:10px;padding:9px 11px;font-size:.94em}
+.box>p:last-child,.box>ul:last-child{margin-bottom:0}
+.box .lbl{margin-bottom:2px}
+.und{background:var(--und-soft)} .und .lbl{color:var(--und)}
+.tip{background:var(--tip-soft)} .tip .lbl{color:var(--tip)}
+.q{background:var(--q-soft);border:1.5px dashed var(--q)} .q .lbl{color:var(--q)}
+.qt{font-weight:700;margin:2px 0}
+.qt em{font-style:normal}
+.dom{display:inline-flex;gap:7px;align-items:center;font-size:.9em;color:var(--muted);margin-top:6px;cursor:pointer}
+.dom input{width:19px;height:19px;accent-color:var(--und)}
+.cpt.done .c-n::after{content:"✓";margin-left:2px;color:var(--und)}
+.tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86em}
+th,td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+figure{margin:0;text-align:center}
+figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.76em;color:var(--muted);margin-top:3px}
+/* extras */
+.xs{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0;scroll-margin-top:var(--bar,0px)}
+.xs-h{font-size:1.25em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:4px;margin:0 0 10px}
+.ih{font-size:1em;margin:14px 0 6px}
+.pq{border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px;background:var(--soft)}
+.pq summary,.pqq{cursor:pointer;font-weight:700;margin:0}
+.pq[open] summary{margin-bottom:6px}
+.pn{font-family:var(--f-mono);font-size:.78em;color:var(--accent);margin-right:2px}
+.pa>:first-child{margin-top:0}.pa>:last-child{margin-bottom:0}
+.ref{font-size:.8em;color:var(--muted);white-space:nowrap}
+a{color:var(--accent)}
+.gal{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.gal figure{margin:0;flex:1 1 140px;max-width:100%}.gal img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}.gal figcaption{font-size:.8em;color:var(--muted)}pre{overflow-x:auto;max-width:100%;font-size:.8em;background:var(--soft);padding:8px;border-radius:8px}
+body{font-size:17px}
+.wrap{padding-block:14px 60px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.bar{position:relative;z-index:5;border-radius:12px;border:1px solid var(--line);background:var(--surface);border-bottom:1px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.row{display:flex;gap:8px;align-items:center;min-width:0}
+.row select,.row input[type=search]{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0;flex:1}
+.mode{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.mode button{font:inherit;font-size:13px;border:0;background:var(--surface);color:var(--ink);padding:6px 10px;cursor:pointer}
+.mode button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;min-width:0}
+.chip{font:inherit;font-size:13px;white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chip.c1[aria-pressed="true"]{background:var(--lv1);border-color:var(--lv1);color:#fff}
+.chip.c2[aria-pressed="true"]{background:var(--lv2);border-color:var(--lv2);color:#fff}
+.chip.c3[aria-pressed="true"]{background:var(--lv3);border-color:var(--lv3);color:#fff}
+.prog{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;font-variant-numeric:tabular-nums}
+.pbar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}.pbar i{display:block;height:100%;width:0;background:var(--und)}
+.blk-h{cursor:pointer;user-select:none}
+.blk-h::after{content:"▾";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.1em;transition:transform .2s}
+.blk.open .blk-h::after{transform:translateY(-50%) rotate(180deg)}
+.blk:not(.open) .cpt{display:none}
+.blk[hidden],.cpt[hidden]{display:none!important}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tbtn{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 11px;cursor:pointer}
+.show{display:none;font:inherit;font-weight:700;font-size:14px;border:1.5px solid var(--q);color:var(--q);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;margin-top:6px;margin-right:8px}
+body.test .show{display:inline-block}
+body.test .cpt:not(.reveal) .c-body>:not(.q){display:none}
+body.test .cpt:not(.reveal) .c-body{gap:0}
+.hidebtn{font:inherit;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer}
+.hidebtn .sw{flex:none;width:40px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.hidebtn .sw i{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--surface);transition:left .2s}
+.hidebtn[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.hidebtn[aria-pressed="true"] .sw{background:var(--lv1)}
+.hidebtn[aria-pressed="true"] .sw i{left:21px}
+body.hidedefs .fd.easy,body.hidedefs .fd.ok{position:relative;cursor:pointer;color:transparent;user-select:none}
+body.hidedefs .fd.easy *,body.hidedefs .fd.ok *{color:transparent!important;border-color:transparent}
+body.hidedefs .fd.easy:not(.peek)::after,body.hidedefs .fd.ok:not(.peek)::after{content:"👆 Toca para ver";position:absolute;inset:0;display:grid;place-items:center;border-radius:8px;background:repeating-linear-gradient(135deg,var(--soft) 0 10px,var(--line) 10px 20px);color:var(--muted);font-family:var(--f-mono);font-size:.78em;font-weight:500;letter-spacing:.04em;padding:0 12px;text-align:center}
+body.hidedefs .fd.ok:not(.peek)::after{content:"📌 ¿Cuál es la definición de la diapositiva? · toca para ver"}
+body.hidedefs .fd.easy:not(.peek)::after{content:"💡 ¿Qué significa? · toca para ver"}
+body.hidedefs .fd.peek,body.hidedefs .fd.peek *{color:inherit!important;user-select:auto}
+body.hidedefs .fd.peek{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.hidebtn .sw,.hidebtn .sw i{transition:none}}
+.empty{color:var(--muted);text-align:center;padding:20px}
+.chip:focus-visible,.mode button:focus-visible,.show:focus-visible,.tbtn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.blk-h:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+[hidden]{display:none!important}
+.fab.hf{bottom:calc(78px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);padding:10px 14px 10px 10px}
+.fab.hf .sw{flex:none;width:36px;height:20px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.fab.hf .sw i{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.3);transition:left .2s}
+.fab.hf[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.fab.hf[aria-pressed="true"] .sw{background:var(--lv1)}
+.fab.hf[aria-pressed="true"] .sw i{left:18px}
+.res{border:1px solid var(--line);border-radius:10px;background:var(--surface);max-height:60vh;overflow:auto}
+.res .rh{position:sticky;top:0;background:var(--soft);font-family:var(--f-mono);font-size:12px;color:var(--muted);padding:7px 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.res .rh button{font:inherit;border:0;background:none;color:var(--accent);cursor:pointer;padding:0}
+.ri{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 10px;color:var(--ink);cursor:pointer}
+.ri:last-child{border-bottom:0}
+.ri:hover,.ri:focus-visible{background:var(--soft)}
+.ri .rk{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.ri .rt{display:block;font-weight:700;line-height:1.25}
+.ri .rs{display:block;font-size:.85em;color:var(--muted);line-height:1.35;margin-top:2px}
+.res mark,.hl mark{background:#ffe066;color:#1d1828;border-radius:3px;padding:0 1px}
+.res .none{padding:12px 10px;color:var(--muted)}
+.flash{animation:fl 2.2s ease}
+@keyframes fl{0%,40%{box-shadow:0 0 0 4px #ffe066}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none;outline:3px solid #ffe066}}
+.simlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:11px 14px;font-size:.95em}
+.simlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+a.dt{text-decoration:none;display:inline-flex;align-items:center}
+.dc.full{color:var(--und);font-weight:700}
+/* ===== Mi plan ===== */
+#planOv{position:fixed;inset:0;z-index:55;background:var(--bg);overflow:auto;--ok:var(--und);--ok-soft:var(--und-soft);--warn:var(--tip);--warn-soft:var(--tip-soft);--rev:var(--lv3);--rev-soft:var(--lv3-soft)}
+#planOv .pwrap{max-width:720px;margin:0 auto;padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+#planOv .ptop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+#planOv .px{flex:none;font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.planlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px solid var(--accent);border-radius:12px;padding:11px 14px;font:inherit;font-size:.95em;width:100%;text-align:left;cursor:pointer}
+.planlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+#planOv .eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+#planOv h1{font-size:1.9em;line-height:1.08;margin:4px 0 4px}
+#planOv .sub{color:var(--muted);margin:0}
+#planOv .count{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#planOv .count .n{font-family:var(--f-display);font-weight:800;font-size:2.4em;line-height:1;color:var(--lv1);font-variant-numeric:tabular-nums;min-width:1.4ch;text-align:center}
+#planOv .count p{margin:0}
+#planOv .k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+#planOv .cfg{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+#planOv .days{display:flex;flex-wrap:wrap;gap:6px}
+#planOv .dchip{font:inherit;font-weight:700;font-size:15px;min-width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+#planOv .dchip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#planOv .seg{display:flex;gap:6px;flex-wrap:wrap}
+#planOv .seg button{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:7px 12px;cursor:pointer}
+#planOv .seg button[aria-pressed="true"]{border-color:var(--accent);font-weight:700;background:var(--surface)}
+#planOv .note{font-size:.9em;border-radius:10px;padding:9px 11px}
+#planOv .note.warn{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn)}
+#planOv .note.ok{background:var(--ok-soft);border-left:4px solid var(--ok)}
+#planOv .day{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#planOv .day-h{padding:12px 14px 10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+#planOv .day-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+#planOv .day-h h2{font-size:1.3em}
+#planOv .day-h .when{font-family:var(--f-mono);font-size:.75em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+#planOv .day-h .goal{font-size:.92em;color:var(--muted);margin:0}
+#planOv .times{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.9em;color:var(--muted)}
+#planOv .times input{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:4px 6px}
+#planOv .dprog{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+#planOv .dprog i{display:block;height:100%;background:var(--ok);width:0}
+#planOv .badge{font-family:var(--f-mono);font-size:.7em;border-radius:999px;padding:2px 8px;white-space:nowrap}
+#planOv .badge.today{background:var(--accent);color:var(--accent-ink)}
+#planOv .badge.done{background:var(--ok-soft);color:var(--ok)}
+#planOv .tasks{list-style:none;margin:0;padding:6px 8px 10px}
+#planOv .task{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding:9px 6px;border-radius:10px;align-items:start}
+#planOv .task+.task{border-top:1px solid var(--line)}
+#planOv .task input{width:22px;height:22px;margin-top:2px;accent-color:var(--ok)}
+#planOv .t-time{font-family:var(--f-mono);font-size:.75em;color:var(--muted);font-variant-numeric:tabular-nums}
+#planOv .t-title{font-weight:700;line-height:1.3}
+#planOv .t-det{font-size:.88em;color:var(--muted);line-height:1.4;margin-top:2px}
+#planOv .t-det b{color:var(--ink)}
+#planOv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 3px 0 0;transform:translateY(-1px)}
+#planOv .d1{background:var(--lv1)}
+#planOv .d2{background:var(--lv2)}
+#planOv .d3{background:var(--lv3)}
+#planOv .t-go{display:inline-block;margin-top:6px;font-size:.85em;font-weight:700;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);border-radius:8px;padding:4px 10px}
+#planOv .task.brk{grid-template-columns:1fr;padding:5px 6px;color:var(--muted);font-size:.88em}
+#planOv .task.brk .t-title{font-weight:400}
+#planOv .task.rev .t-title{color:var(--rev)}
+#planOv .task.done .t-title,#planOv .task.done .t-det{text-decoration:line-through;opacity:.55}
+#planOv .foot{color:var(--muted);font-size:.85em}
+#planOv .dchip:focus-visible,#planOv .seg button:focus-visible,#planOv .t-go:focus-visible,#planOv input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* ===== Temporizador ===== */
+.tmr{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.blk:not(.open) .tmr{display:none}
+.tmr p{margin:0;font-size:.92em}
+.tmr .tm-done{color:var(--und);font-weight:700}
+.tmr button{font:inherit;font-weight:800;font-size:15px;border:0;border-radius:10px;padding:9px 14px;background:var(--accent);color:var(--accent-ink);cursor:pointer;white-space:nowrap}
+.tpill{position:fixed;z-index:30;left:50%;transform:translateX(-50%);top:calc(8px + env(safe-area-inset-top,0px));width:min(440px,calc(100vw - 24px));background:var(--ink);color:var(--surface);border-radius:16px;padding:9px 10px 9px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tpill .tp-txt{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.15}
+.tpill .tp-b{font-size:.75em;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tpill .tp-t{font-family:var(--f-mono);font-size:1.6em;font-weight:500;font-variant-numeric:tabular-nums}
+.tpill.over .tp-t{color:var(--lv1)}
+.tpill .tp-bar{position:absolute;left:12px;right:12px;bottom:4px;height:3px;border-radius:2px;background:rgba(127,127,127,.35);overflow:hidden}
+.tpill .tp-bar i{display:block;height:100%;background:var(--und);width:0}
+.tpill.over .tp-bar i{background:var(--lv1)}
+.tpill button{flex:none;font:inherit;font-weight:800;font-size:14px;border:0;border-radius:10px;padding:8px 11px;cursor:pointer;background:var(--surface);color:var(--ink)}
+.tpill button.fin{background:var(--und);color:var(--surface)}
+.tpill button.x{background:transparent;color:var(--surface);opacity:.7;padding:8px 6px;font-size:18px;line-height:1}
+/* ===== Leyenda desplegable ===== */
+.top .legend .tag{cursor:pointer;border:0;font:inherit;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;padding:5px 10px}
+.top .legend .tag::after{content:" ▾";display:inline-block;transition:transform .2s}
+.top .legend .tag[aria-expanded="true"]::after{transform:rotate(180deg)}
+.top .legend .tag[aria-expanded="true"]{outline:3px solid var(--line);outline-offset:1px}
+.lvpanel{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lc);border-radius:12px;padding:10px 12px;max-height:60vh;overflow:auto}
+.lvpanel h4{margin:0 0 6px;font-family:var(--f-display);font-size:1em}
+.lvpanel .lg{font-family:var(--f-mono);font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 2px}
+.lvpanel a{display:block;color:var(--ink);text-decoration:none;padding:6px 4px;border-radius:8px;font-size:.92em;line-height:1.3}
+.lvpanel a:hover{background:var(--soft)}
+.lvpanel a b{font-family:var(--f-mono);font-weight:500;color:var(--lc);margin-right:4px}
+.lvpanel a.ok{opacity:.55}.lvpanel a.ok::after{content:" ✓";color:var(--und)}
+/* ===== Índice lateral ===== */
+.drw{overflow:hidden;visibility:hidden;position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease,visibility 0s linear .25s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
+.drw.on{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
+.scrim{position:fixed;inset:0;z-index:35;background:rgba(10,8,14,.45)}
+.drw-h{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 8px;font-family:var(--f-display);font-size:1.15em}
+.drw-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;width:38px;height:38px;cursor:pointer}
+.drw-tools{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;border-bottom:1px solid var(--line)}
+.dt{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:8px;padding:7px 9px;cursor:pointer;white-space:nowrap}
+.dt.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.drw-l{overflow:auto;flex:1;padding:8px 8px 24px;display:flex;flex-direction:column;gap:2px}
+.db summary{list-style:none;display:flex;align-items:center;gap:10px;padding:9px 8px;border-radius:10px;cursor:pointer;font-weight:700}
+.db summary::-webkit-details-marker{display:none}
+.db summary:hover,.db[open] summary{background:var(--soft)}
+.dn{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-family:var(--f-mono);font-size:.78em}
+.dt2{flex:1;line-height:1.25}
+.dc{font-family:var(--f-mono);font-size:.72em;color:var(--muted);font-weight:500}
+.db summary::after{content:"▾";color:var(--muted);transition:transform .2s}
+.db[open] summary::after{transform:rotate(180deg)}
+.dl,.dbk{display:flex;align-items:baseline;gap:8px;padding:6px 8px 6px 44px;color:var(--ink);text-decoration:none;font-size:.9em;line-height:1.3;border-radius:8px}
+.dl:hover,.dbk:hover{background:var(--soft)}
+.dbk{color:var(--accent);font-weight:700;font-size:.82em}
+.dl i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--lv2);transform:translateY(-1px)}
+.dl.i1 i{background:var(--lv1)} .dl.i3 i{background:var(--lv3)}
+.dx{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:14px 8px 4px}
+.drw-l>.dl{padding-left:12px}
+.fab.idx{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--ink);color:var(--surface)}
+.fab.up{bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+@media (min-width:1100px){
+  .drw{transform:none;box-shadow:none;visibility:visible}
+  .scrim,.fab.idx,.drw-x{display:none!important}
+  .wrap{margin-left:max(360px,calc((100vw - 760px)/2))}
+  .fab.up{left:calc(356px + 16px);bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){.drw{transition:none}}
+
+/* ===== Tarjetas ===== */
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;font:inherit;font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 18px;background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.fab.up{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:13px 16px}
+.tbtn.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.fc{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.fc-in{max-width:620px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+.fc-top{display:flex;align-items:center;gap:10px}
+.fc-top h2{font-size:1.15em;flex:1}
+.fc-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.fc-setup{display:flex;flex-direction:column;gap:12px;overflow:auto}
+.fc-setup .lbl{margin:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:9px 12px;cursor:pointer;text-align:left}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--q-soft);font-weight:700}
+.opt small{display:block;font-size:.8em;color:var(--muted);font-weight:400}
+.go{font:inherit;font-weight:800;font-size:17px;border:0;border-radius:12px;padding:14px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.go:disabled{opacity:.45;cursor:default}
+#fcGo{position:sticky;bottom:0;box-shadow:0 -8px 16px var(--bg)}
+.fc-prog{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fc-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;display:flex}
+.fc-bar .g{background:var(--und)} .fc-bar .r{background:var(--lv1)}
+.stage{flex:1;min-height:0;perspective:1400px}
+.card3{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.3,.7,.3,1);cursor:pointer}
+.card3.flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;padding:18px;overflow:hidden}
+.face.front{border-top:8px solid var(--cc,var(--accent));justify-content:center;text-align:center;gap:14px}
+.face.back{transform:rotateY(180deg);border-top:8px solid var(--und)}
+.face .kind{font-family:var(--f-mono);font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.face.front .qq{font-family:var(--f-display);font-size:1.45em;font-weight:800;line-height:1.2;text-wrap:balance}
+.face .hint{color:var(--muted);font-size:.85em}
+.bulb{font-size:2.4em;line-height:1;filter:grayscale(1) opacity(.5);transition:filter .3s}
+.card3.flip .bulb{filter:none}
+.face.back .ans{overflow:auto;flex:1;min-height:0;font-size:.98em}
+.face.back .ans>:first-child{margin-top:0}
+.face.back .ans .formal{font-weight:700;font-size:1.15em;border-left:4px solid var(--accent);padding-left:10px}
+.face.back .src{font-size:.78em;color:var(--muted);margin-top:8px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btns button{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px 8px;cursor:pointer}
+.b-no{background:var(--lv1-soft);color:var(--lv1)} .b-si{background:var(--und-soft);color:var(--und)}
+.btns button:disabled{opacity:.35;cursor:default}
+.flipb{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px;background:var(--ink);color:var(--surface);cursor:pointer}
+.fc-end{display:flex;flex-direction:column;gap:12px;align-items:stretch;text-align:center;overflow:auto}
+.fc-end .score{font-family:var(--f-display);font-size:3.2em;font-weight:800;line-height:1}
+@media (prefers-reduced-motion:reduce){.card3{transition:none}}
+</style>
+<div class="wrap">
+<header class="top"><p class="eyebrow">🫀 Fisiopatología · 1er examen</p>
+<h1>Repaso completo: la organización del cuerpo humano</h1>
+<p class="sub">Unidad 1 · las 6 entregas de apuntes · 6 bloques · 52 conceptos</p>
+<div class="legend"><span class="tag lv1">🔴 IMPRESCINDIBLE · 0</span><span class="tag lv2">🟠 IMPORTANTE · 52</span></div></header><details class="how"><summary>🧭 Cómo usar este repaso</summary><div class="how-b"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>
+<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div></details>
+<div class="bar">
+  <div class="row">
+    <select id="toc" aria-label="Ir a un bloque"><option value="">Ir a…</option><option value="b0">Entrega 1 · Niveles de organización y tipos de célula</option><option value="b1">Entrega 2 · Matriz extracelular y membrana plasmática</option><option value="b2">Entrega 3 · Citoplasma y orgánulos</option><option value="b3">Entrega 4 · El núcleo</option><option value="b4">Entrega 5 · Fisiología celular</option><option value="b5">Entrega 6 · Reproducción celular</option><option value="impres">⚡ Lo imprescindible</option></select>
+    <div class="mode" role="group" aria-label="Modo"><button type="button" id="mRead" aria-pressed="true">Leer</button><button type="button" id="mTest" aria-pressed="false">Ponte a prueba</button></div>
+  </div>
+  <div class="row srow"><input type="search" id="q" placeholder="🔎 Buscar cualquier palabra" aria-label="Buscar en el repaso" autocomplete="off"></div>
+  <div class="res" id="res" hidden></div>
+  <div class="chips" role="group" aria-label="Filtrar por importancia">
+    <button type="button" class="chip" data-f="0" aria-pressed="true">Todos</button>
+    <button type="button" class="chip c1" data-f="1" aria-pressed="false">🔴 Imprescindibles</button>
+    <button type="button" class="chip c2" data-f="2" aria-pressed="false">🟠 Importantes</button>
+    <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
+    <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
+  </div>
+  <div class="prog"><span id="pText">Dominas 0</span><span id="pHint"></span></div>
+  <div class="pbar"><i id="pBar"></i></div>
+</div>
+<button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
+<a class="simlink" href="../../fisio1/simulacro/"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>
+
+<section class="blk" id="b0" data-min="40"><h2 class="blk-h"><span class="bn">ENTREGA 1</span><span class="bt">Niveles de organización y tipos de célula</span><span class="bc">⏱ 40 min · Conceptos 1–12 · 0 🔴 · <b class="bd">0</b>/12 dominados</span></h2><article class="cpt lv2" id="c1" data-lv="2">
+<header class="c-h"><span class="c-n">1</span><h3>1.1 Los 5 niveles de organización</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>El cuerpo humano se organiza en 5 niveles, de lo más pequeño a lo más grande. La célula es el primer nivel con vida.</p>
+<p>Según Wang et al. (1992), el cuerpo humano tiene 5 niveles:</p>
+<ol>
+<li>Nivel atómico</li>
+<li>Nivel molecular (moléculas inorgánicas y orgánicas)</li>
+<li>Nivel celular</li>
+<li>Nivel anatómico</li>
+<li>Nivel organismo vivo</li>
+</ol>
+<p>Truco para recordar el orden: <strong>A-M-C-A-O</strong> (átomo, molécula, célula, anatomía, organismo).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.1 Los 5 niveles de organización.</p><label class="dom"><input type="checkbox" data-n="1"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c2" data-lv="2">
+<header class="c-h"><span class="c-n">2</span><h3>1.2 Nivel atómico</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>El átomo es la <strong>unidad básica de toda la materia</strong>.</li>
+<li>Solo <strong>⅓ de los elementos</strong> químicos forman parte de la materia viva (bioelementos: C, H, O, N, P, S, Ca, Fe…).</li>
+<li>En el organismo encontramos los átomos de dos formas:<ul>
+<li><strong>Átomos libres</strong>, como iones (Na⁺, K⁺, Ca²⁺, Cl⁻).</li>
+<li><strong>Formando moléculas</strong>.</li>
+</ul>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.2 Nivel atómico.</p><label class="dom"><input type="checkbox" data-n="2"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c3" data-lv="2">
+<header class="c-h"><span class="c-n">3</span><h3>1.3 Nivel molecular</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Las moléculas son combinaciones de átomos. Hay dos tipos:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inorgánicas</td>
+<td>Agua (H₂O), sales minerales</td>
+</tr>
+<tr>
+<td>Orgánicas (formadas por CHONPS)</td>
+<td>Lípidos, proteínas, glúcidos, vitaminas</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>CHONPS</strong> = carbono, hidrógeno, oxígeno, nitrógeno, fósforo y azufre.</li>
+<li>Las moléculas pueden estar <strong>libres</strong> (por ejemplo, las enzimas) o <strong>formando estructuras</strong>, y así forman la célula.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.3 Nivel molecular.</p><label class="dom"><input type="checkbox" data-n="3"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c4" data-lv="2">
+<header class="c-h"><span class="c-n">4</span><h3>1.4 Nivel celular</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>La célula es la <strong>estructura más pequeña del organismo que realiza las tres funciones vitales</strong>: relación, nutrición y reproducción.</li>
+<li>Por eso es el <strong>primer nivel con vida</strong>. Los niveles atómico y molecular no tienen funciones vitales.</li>
+<li>Las células están rodeadas por la <strong>matriz extracelular</strong> (Entrega 2).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.4 Nivel celular.</p><label class="dom"><input type="checkbox" data-n="4"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c5" data-lv="2">
+<header class="c-h"><span class="c-n">5</span><h3>1.5 Nivel anatómico</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Estructuras, y combinaciones de estructuras, formadas por <strong>multitud de células</strong>.</li>
+<li>Incluye <strong>tejidos, órganos, sistemas y aparatos</strong>.<ul>
+<li><strong>Tejido:</strong> células parecidas que hacen la misma función, más su matriz (por ejemplo, tejido muscular).</li>
+<li><strong>Órgano:</strong> varios tejidos que trabajan juntos (corazón, estómago, pulmón).</li>
+<li><strong>Sistema:</strong> órganos del mismo tipo de tejido (sistema nervioso, sistema óseo).</li>
+<li><strong>Aparato:</strong> órganos de distintos tejidos que colaboran en una función (aparato digestivo, respiratorio).</li>
+</ul>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.5 Nivel anatómico.</p><label class="dom"><input type="checkbox" data-n="5"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c6" data-lv="2">
+<header class="c-h"><span class="c-n">6</span><h3>1.6 Nivel organismo vivo</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>El ser completo realiza las tres funciones vitales:</p>
+<ul>
+<li><strong>Relación:</strong> detecta gran cantidad de estímulos y elabora respuestas diversas.</li>
+<li><strong>Nutrición:</strong> obtiene oxígeno y nutrientes.</li>
+<li><strong>Reproducción:</strong> reproducción sexual.</li>
+</ul>
+<p><strong>Fisiología:</strong> ciencia que estudia el funcionamiento del organismo vivo.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.6 Nivel organismo vivo.</p><label class="dom"><input type="checkbox" data-n="6"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c7" data-lv="2">
+<header class="c-h"><span class="c-n">7</span><h3>1.7 Tabla resumen de los niveles</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>¿Funciones vitales?</th>
+<th>Tamaño</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atómico</td>
+<td>No</td>
+<td>Microscópico</td>
+<td>Fe, Ca²⁺, Na⁺</td>
+</tr>
+<tr>
+<td>Molecular</td>
+<td>No</td>
+<td>Microscópico</td>
+<td>Agua, glucosa, hemoglobina</td>
+</tr>
+<tr>
+<td>Celular</td>
+<td>Sí</td>
+<td>Microscópico</td>
+<td>Neurona, glóbulo rojo, espermatozoide</td>
+</tr>
+<tr>
+<td>Anatómico</td>
+<td>Sí</td>
+<td>Tejidos micro; órganos, sistemas y aparatos macro</td>
+<td>Tejido muscular, corazón, aparato digestivo</td>
+</tr>
+<tr>
+<td>Organismo vivo</td>
+<td>Sí</td>
+<td>Macroscópico</td>
+<td>Ser humano</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.7 Tabla resumen de los niveles.</p><label class="dom"><input type="checkbox" data-n="7"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c8" data-lv="2">
+<header class="c-h"><span class="c-n">8</span><h3>1.8 Funciones vitales: célula frente a organismo</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Función</th>
+<th>En la célula</th>
+<th>En el organismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nutrición</td>
+<td>Toma nutrientes y O₂ del medio y expulsa desechos</td>
+<td>Obtiene O₂ y nutrientes con varios aparatos coordinados (digestivo, respiratorio, circulatorio, excretor)</td>
+</tr>
+<tr>
+<td>Relación</td>
+<td>Mantiene su equilibrio e interactúa con el medio y con otras células</td>
+<td>Detecta muchos estímulos y elabora respuestas variadas (sistemas nervioso y endocrino, sentidos)</td>
+</tr>
+<tr>
+<td>Reproducción</td>
+<td>Se divide (mitosis o meiosis)</td>
+<td>Reproducción sexual</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Idea clave:</strong> en la célula, una sola unidad lo hace todo. En el organismo, cada función la reparten órganos especializados que trabajan coordinados.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.8 Funciones vitales: célula frente a organismo.</p><label class="dom"><input type="checkbox" data-n="8"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c9" data-lv="2">
+<header class="c-h"><span class="c-n">9</span><h3>1.9 Ejemplo: del hierro al organismo ✏️</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La hemoglobina es una proteína que contiene hierro. Está en los glóbulos rojos y les permite transportar oxígeno por la sangre.</p>
+<pre><code>[ Fe ] → [ Hemoglobina ] → [ Glóbulo rojo ] → [ Sangre / aparato circulatorio ] → [ Ser humano ]
+Atómico     Molecular          Celular             Anatómico                    Organismo vivo
+</code></pre>
+<p>El glóbulo rojo maduro no tiene núcleo ni orgánulos.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.9 Ejemplo: del hierro al organismo ✏️.</p><label class="dom"><input type="checkbox" data-n="9"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c10" data-lv="2">
+<header class="c-h"><span class="c-n">10</span><h3>1.10 La célula eucariota y la procariota</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Las células humanas son <strong>eucariotas</strong> y tienen tres partes: <strong>membrana, citoplasma y núcleo</strong>.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>Procariota</th>
+<th>Eucariota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organismos</td>
+<td>Bacterias</td>
+<td>Protistas, hongos, plantas y animales</td>
+</tr>
+<tr>
+<td>Organización</td>
+<td>Unicelular</td>
+<td>Unicelular y pluricelular</td>
+</tr>
+<tr>
+<td>Tamaño</td>
+<td>1–10 micras</td>
+<td>10–100 micras</td>
+</tr>
+<tr>
+<td>Endocitosis y exocitosis</td>
+<td>No</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Membrana plasmática</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Pared celular</td>
+<td>Sí</td>
+<td>Vegetales sí, animales no</td>
+</tr>
+<tr>
+<td>Citoplasma</td>
+<td>Sin citoesqueleto; sin orgánulos, solo ribosomas</td>
+<td>Con citoesqueleto y muchos tipos de orgánulos</td>
+</tr>
+<tr>
+<td>Membrana nuclear</td>
+<td>No: el ADN está disperso en el citoplasma</td>
+<td>Sí: el ADN está dentro del núcleo</td>
+</tr>
+<tr>
+<td>Nucléolo</td>
+<td>No</td>
+<td>Sí</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 1.10 La célula eucariota y la procariota.</p><label class="dom"><input type="checkbox" data-n="10"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c11" data-lv="2">
+<header class="c-h"><span class="c-n">11</span><h3>Glosario de la Entrega 1</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Palabra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elemento</td>
+<td>Cada tipo de átomo de la tabla periódica (carbono, hierro…)</td>
+</tr>
+<tr>
+<td>Ion</td>
+<td>Átomo con carga eléctrica (Na⁺ = sodio, Ca²⁺ = calcio)</td>
+</tr>
+<tr>
+<td>Molécula</td>
+<td>Varios átomos unidos (H₂O = 2 hidrógenos + 1 oxígeno)</td>
+</tr>
+<tr>
+<td>Inorgánica</td>
+<td>Molécula sin cadenas de carbono, como el agua o las sales</td>
+</tr>
+<tr>
+<td>Orgánica</td>
+<td>Molécula con carbono, fabricada por los seres vivos</td>
+</tr>
+<tr>
+<td>Enzima</td>
+<td>Proteína que acelera las reacciones químicas del cuerpo</td>
+</tr>
+<tr>
+<td>Hemoglobina</td>
+<td>Proteína con hierro de los glóbulos rojos que transporta el oxígeno</td>
+</tr>
+<tr>
+<td>Funciones vitales</td>
+<td>Relación, nutrición y reproducción</td>
+</tr>
+<tr>
+<td>Tejido</td>
+<td>Grupo de células parecidas que hacen la misma función</td>
+</tr>
+<tr>
+<td>Órgano</td>
+<td>Estructura formada por varios tejidos</td>
+</tr>
+<tr>
+<td>Micra</td>
+<td>Milésima de milímetro</td>
+</tr>
+<tr>
+<td>Microscópico / macroscópico</td>
+<td>Solo se ve con microscopio / se ve a simple vista</td>
+</tr>
+<tr>
+<td>Unicelular / pluricelular</td>
+<td>Formado por una sola célula / por muchas</td>
+</tr>
+<tr>
+<td>Procariota / eucariota</td>
+<td>Célula sin núcleo / célula con núcleo</td>
+</tr>
+<tr>
+<td>Orgánulo</td>
+<td>"Órgano" pequeño dentro de la célula</td>
+</tr>
+<tr>
+<td>Citoesqueleto</td>
+<td>Red de filamentos que da forma a la célula</td>
+</tr>
+<tr>
+<td>Fisiología</td>
+<td>Ciencia que estudia el funcionamiento del organismo vivo</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Glosario de la Entrega 1.</p><label class="dom"><input type="checkbox" data-n="11"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c12" data-lv="2">
+<header class="c-h"><span class="c-n">12</span><h3>Preguntas de la Entrega 1</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 1 · Niveles de organización y tipos de célula</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>Cita los 5 niveles de organización del cuerpo humano. ¿Quién los propuso?</li>
+<li>¿Qué proporción de los elementos forma la materia viva? ¿Cómo encontramos los átomos en el organismo?</li>
+<li>¿Qué tipos de moléculas hay? Pon ejemplos. ¿Qué significa CHONPS?</li>
+<li>¿Cuál es el primer nivel con funciones vitales y por qué?</li>
+<li>¿Qué estructuras incluye el nivel anatómico? Diferencia sistema y aparato.</li>
+<li>Para cada nivel, di si tiene funciones vitales, si es micro o macroscópico y pon tres ejemplos.</li>
+<li>Cita las tres funciones vitales y explica cómo cambian a nivel celular y a nivel organismo.</li>
+<li>¿Qué es la fisiología?</li>
+<li>Haz el diagrama de flujo del hierro hasta el organismo, nombrando cada nivel.</li>
+<li>¿Cuáles son las tres partes de la célula eucariota?</li>
+<li>Di cinco diferencias entre la célula procariota y la eucariota.</li>
+<li>V/F: las moléculas tienen funciones vitales. (Falso)</li>
+<li>V/F: las bacterias tienen nucléolo. (Falso)</li>
+<li>¿Qué tamaño tiene una célula eucariota? (10–100 micras)</li>
+<li>¿Las células animales tienen pared celular? (No)</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Preguntas de la Entrega 1.</p><label class="dom"><input type="checkbox" data-n="12"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b1" data-min="35"><h2 class="blk-h"><span class="bn">ENTREGA 2</span><span class="bt">Matriz extracelular y membrana plasmática</span><span class="bc">⏱ 35 min · Conceptos 13–21 · 0 🔴 · <b class="bd">0</b>/9 dominados</span></h2><article class="cpt lv2" id="c13" data-lv="2">
+<header class="c-h"><span class="c-n">13</span><h3>2.1 Matriz extracelular: sustancia fundamental</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Las células están rodeadas por la matriz extracelular y delimitadas por la membrana plasmática, una bicapa lipídica fluida y asimétrica (mosaico fluido).</p>
+<ul>
+<li><strong>Matriz extracelular (MEC):</strong> medio en el que están inmersas las células.</li>
+<li>Está formada por <strong>sustancia fundamental</strong> y <strong>proteínas fibrosas</strong>.</li>
+<li><strong>Sustancia fundamental:</strong> gelatinosa (gelosa). Agua + proteoglicanos.<ul>
+<li>Proteoglicanos: <strong>95 % glucosaminoglucanos (GAG)</strong> y <strong>5 % proteínas</strong>.</li>
+<li>Los GAG tienen <strong>carga negativa</strong> → captan Na⁺ → el Na⁺ retiene el agua. Por eso la MEC está hidratada.</li>
+</ul>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 2.1 Matriz extracelular: sustancia fundamental.</p><label class="dom"><input type="checkbox" data-n="13"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c14" data-lv="2">
+<header class="c-h"><span class="c-n">14</span><h3>2.2 Proteínas fibrosas de la matriz</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Tienen función <strong>estructural</strong> o <strong>adhesiva</strong>.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Proteína</th>
+<th>Qué hay que saber</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estructural</td>
+<td>Colágeno</td>
+<td>25 % de la proteína total del cuerpo. Hasta 25 tipos. Da resistencia a la tracción</td>
+</tr>
+<tr>
+<td>Estructural</td>
+<td>Elastina</td>
+<td>Componente principal de las fibras elásticas. Abunda en el tejido conjuntivo de arterias, dermis, pulmones y ligamentos</td>
+</tr>
+<tr>
+<td>Adhesiva</td>
+<td>Fibronectina</td>
+<td>Une la MEC con las células</td>
+</tr>
+<tr>
+<td>Adhesiva</td>
+<td>Laminina</td>
+<td>Forma parte de la membrana basal</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Membrana basal:</strong> capa acelular (sin células) en la base del tejido epitelial que lo separa del tejido conjuntivo.</li>
+<li><strong>Ojo (pregunta 5 de la hoja):</strong> el componente con la misma función que el colágeno es la <strong>elastina</strong> (estructural): arterias, dermis, pulmones y ligamentos.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 2.2 Proteínas fibrosas de la matriz.</p><label class="dom"><input type="checkbox" data-n="14"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c15" data-lv="2">
+<header class="c-h"><span class="c-n">15</span><h3>2.3 Membrana plasmática: definición, funciones básicas y mosaico fluido</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Definición:</strong> envoltura continua que delimita la célula. Capa delgada de <strong>75 ángstroms</strong>.</li>
+<li><strong>Hace 3 cosas básicas:</strong> define la extensión de la célula, mantiene las diferencias entre medio interno y externo, y regula los intercambios (<strong>filtro selectivo</strong>).</li>
+<li><strong>Modelo de mosaico fluido</strong> (Singer y Nicolson, <strong>1972</strong>):<ol>
+<li>Lípidos dispuestos en <strong>bicapa</strong>, con proteínas entre ellos.</li>
+<li>Las membranas son <strong>fluidas</strong>: lípidos y proteínas se mueven por difusión lateral.</li>
+<li>La estructura es <strong>asimétrica</strong>.</li>
+</ol>
+</li>
+</ul>
+<p>Dibujo de la membrana ✏️:</p>
+<pre><code>            EXTERIOR
+
+     * glúcidos (glucocálix)  *        ← solo en la cara externa
+  o o o o o o o ██ o o o o o o o        o = cabeza hidrófila (fosfato)
+  | | | | | | | ██ | | | | | | |        | = colas hidrófobas
+  | | | | | | | ██ | | | | | | |        ██ = proteína integral (transmembrana)
+  o o o o o o o ██ o o o o o o o
+        ▓▓  proteína periférica          ← en la cara interna
+            CITOPLASMA
+</code></pre></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 2.3 Membrana plasmática: definición, funciones básicas y mosaico fluido.</p><label class="dom"><input type="checkbox" data-n="15"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c16" data-lv="2">
+<header class="c-h"><span class="c-n">16</span><h3>2.4 Composición: lípidos y proteínas</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Lípidos y proteínas unidos por <strong>enlaces no covalentes</strong>. La composición varía según el tipo de célula.</li>
+<li><strong>Lípidos:</strong> tienen un extremo <strong>hidrófilo</strong> y otro <strong>hidrófobo</strong> (anfipáticos). Esto es muy importante para formar la bicapa.<ul>
+<li><strong>Por qué bicapa (pregunta 6):</strong> en agua, las cabezas hidrófilas miran al agua (fuera y dentro de la célula) y las colas hidrófobas se esconden en el centro.</li>
+<li>Principales lípidos: <strong>fosfolípidos, glucolípidos y colesterol</strong>. Tras los fosfolípidos, el más abundante es el <strong>colesterol</strong>.</li>
+</ul>
+</li>
+<li><strong>Proteínas:</strong><ul>
+<li><strong>Integrales</strong> (algunas transmembrana): casi todas glucoproteínas, con regiones hidrófobas dentro de la membrana.</li>
+<li><strong>Periféricas:</strong> en la cara interna de la membrana.</li>
+</ul>
+</li>
+<li><strong>Funciones de las proteínas:</strong> poros y canales, transporte, receptores (hormonas, neurotransmisores, citocinas), catalizar reacciones (enzimas) e identidad de la célula.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 2.4 Composición: lípidos y proteínas.</p><label class="dom"><input type="checkbox" data-n="16"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c17" data-lv="2">
+<header class="c-h"><span class="c-n">17</span><h3>2.5 Fluidez: movimientos y factores</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Los lípidos hacen 4 movimientos: <strong>difusión lateral, rotación, flexión y flip-flop</strong>.<ul>
+<li><strong>Difusión lateral:</strong> moverse de lado dentro de la misma capa. La determina la <strong>fluidez</strong>.</li>
+<li><strong>Flip-flop:</strong> pasar de una capa a la otra. Es muy raro.</li>
+</ul>
+</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Más fluida si…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperatura</td>
+<td>Más temperatura</td>
+</tr>
+<tr>
+<td>Tamaño de los lípidos</td>
+<td>Cadenas más cortas</td>
+</tr>
+<tr>
+<td>Insaturación de los ácidos grasos</td>
+<td>Más insaturados</td>
+</tr>
+<tr>
+<td>Colesterol</td>
+<td>Menos colesterol</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 2.5 Fluidez: movimientos y factores.</p><label class="dom"><input type="checkbox" data-n="17"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c18" data-lv="2">
+<header class="c-h"><span class="c-n">18</span><h3>2.6 Asimetría y glucocálix</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>La <strong>asimetría</strong> permite procesos de transporte y orientar los componentes transmembrana.</li>
+<li>Glucolípidos y glucoproteínas están solo en la <strong>monocapa externa</strong>, con sus cadenas de oligosacáridos hacia fuera → forman el <strong>glucocálix</strong>.</li>
+<li><strong>Funciones del glucocálix:</strong><ol>
+<li>Proteger a la célula de daños químicos y mecánicos.</li>
+<li>Dar carga negativa a la superficie y unir calcio.</li>
+<li>Reconocimiento celular y emplazamiento de enzimas (sus glúcidos actúan como marcadores).</li>
+<li>Facilitar el movimiento y la división celular.</li>
+<li>Anclar y orientar proteínas de la MEC.</li>
+</ol>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 2.6 Asimetría y glucocálix.</p><label class="dom"><input type="checkbox" data-n="18"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c19" data-lv="2">
+<header class="c-h"><span class="c-n">19</span><h3>2.7 Funciones de la membrana plasmática</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>Separar el citoplasma y sus orgánulos del medio externo.</li>
+<li>Regular el transporte e intercambio de sustancias de forma selectiva.</li>
+<li>Producir y controlar gradientes electroquímicos (con sus proteínas y cadenas de transporte).</li>
+<li>Detectar y transmitir señales del medio externo y de otras células.</li>
+<li>Participar en el control y desarrollo de la división celular (citocinesis).</li>
+<li>Facilitar la adhesión y comunicación entre células vecinas.</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 2.7 Funciones de la membrana plasmática.</p><label class="dom"><input type="checkbox" data-n="19"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c20" data-lv="2">
+<header class="c-h"><span class="c-n">20</span><h3>Glosario de la Entrega 2</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Palabra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sustancia fundamental</td>
+<td>Parte gelatinosa de la MEC: agua + proteoglicanos</td>
+</tr>
+<tr>
+<td>Proteoglicano</td>
+<td>Molécula de la MEC formada sobre todo por GAG y algo de proteína</td>
+</tr>
+<tr>
+<td>GAG</td>
+<td>Glúcidos largos con carga negativa que retienen agua</td>
+</tr>
+<tr>
+<td>Tejido conjuntivo</td>
+<td>Tejido que une y sostiene otros tejidos; tiene mucha MEC</td>
+</tr>
+<tr>
+<td>Tejido epitelial</td>
+<td>Tejido que recubre superficies</td>
+</tr>
+<tr>
+<td>Membrana basal</td>
+<td>Capa sin células bajo el epitelio que lo separa del conjuntivo</td>
+</tr>
+<tr>
+<td>Ángstrom (Å)</td>
+<td>Diezmilésima de micra</td>
+</tr>
+<tr>
+<td>Anfipático</td>
+<td>Con una parte hidrófila y otra hidrófoba</td>
+</tr>
+<tr>
+<td>Hidrófilo / hidrófobo</td>
+<td>Que atrae el agua / que la repele</td>
+</tr>
+<tr>
+<td>Glucolípido / glucoproteína</td>
+<td>Lípido / proteína con glúcidos unidos</td>
+</tr>
+<tr>
+<td>Oligosacárido</td>
+<td>Cadena corta de azúcares</td>
+</tr>
+<tr>
+<td>Enlace no covalente</td>
+<td>Unión débil que permite que las moléculas se muevan</td>
+</tr>
+<tr>
+<td>Transmembrana</td>
+<td>Que atraviesa la membrana de lado a lado</td>
+</tr>
+<tr>
+<td>Citocina</td>
+<td>Molécula de comunicación entre células, sobre todo del sistema inmune</td>
+</tr>
+<tr>
+<td>Ácido graso insaturado</td>
+<td>Cola con dobles enlaces que la doblan</td>
+</tr>
+<tr>
+<td>Gradiente electroquímico</td>
+<td>Diferencia de concentración y carga entre dentro y fuera</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Glosario de la Entrega 2.</p><label class="dom"><input type="checkbox" data-n="20"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c21" data-lv="2">
+<header class="c-h"><span class="c-n">21</span><h3>Preguntas de la Entrega 2</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 2 · Matriz extracelular y membrana plasmática</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>Explica qué es la matriz extracelular y cuál es su composición básica.</li>
+<li>¿Cómo es la sustancia fundamental? ¿Por qué retiene agua?</li>
+<li>¿Qué función tiene el colágeno? Cita otro componente con la misma función y di dónde se localiza.</li>
+<li>Cita las 4 proteínas fibrosas, clasificadas por su función.</li>
+<li>¿Qué es la membrana basal y qué proteína forma parte de ella?</li>
+<li>Define la membrana plasmática. ¿Qué grosor tiene?</li>
+<li>Explica el modelo de mosaico fluido. ¿Quién lo propuso y cuándo?</li>
+<li>Dibuja la membrana plasmática y nombra sus partes.</li>
+<li>¿Por qué los fosfolípidos forman una bicapa? Además de ellos, ¿cuál es el lípido más abundante?</li>
+<li>Diferencia proteínas integrales y periféricas.</li>
+<li>Cita 5 funciones de las proteínas de membrana.</li>
+<li>¿Qué es la difusión lateral? ¿Qué propiedad la determina?</li>
+<li>Cita los 4 movimientos de los lípidos de membrana.</li>
+<li>Cita 4 factores que aumentan la fluidez de la membrana.</li>
+<li>¿Qué es la asimetría de la membrana y para qué sirve?</li>
+<li>Di qué es el glucocálix y explica sus funciones.</li>
+<li>Cita las 6 funciones de la membrana plasmática.</li>
+<li>V/F: más colesterol hace la membrana más fluida. (Falso)</li>
+<li>V/F: el glucocálix está en las dos caras de la membrana. (Falso)</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Preguntas de la Entrega 2.</p><label class="dom"><input type="checkbox" data-n="21"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b2" data-min="40"><h2 class="blk-h"><span class="bn">ENTREGA 3</span><span class="bt">Citoplasma y orgánulos</span><span class="bc">⏱ 40 min · Conceptos 22–32 · 0 🔴 · <b class="bd">0</b>/11 dominados</span></h2><article class="cpt lv2" id="c22" data-lv="2">
+<header class="c-h"><span class="c-n">22</span><h3>3.1 El citoplasma y sus partes</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>El citoplasma contiene el citosol, los orgánulos (cada uno con su función) y el citoesqueleto. El RER, el Golgi y los lisosomas trabajan en cadena: es el sistema de endomembranas.</p>
+<ul>
+<li><strong>Citoplasma:</strong> todo lo que hay entre la membrana plasmática y la membrana nuclear.</li>
+<li>Tiene 3 partes:<ol>
+<li><strong>Matriz citoplasmática</strong> (también llamada citosol o hialoplasma): el medio líquido.</li>
+<li><strong>Orgánulos.</strong></li>
+<li><strong>Citoesqueleto.</strong></li>
+</ol>
+</li>
+<li>Además puede tener <strong>inclusiones</strong> (ver 3.7).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 3.1 El citoplasma y sus partes.</p><label class="dom"><input type="checkbox" data-n="22"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c23" data-lv="2">
+<header class="c-h"><span class="c-n">23</span><h3>3.2 Ribosomas</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Qué son:</strong> complejos macromoleculares de <strong>ARNr + proteínas</strong>. No tienen membrana.</li>
+<li><strong>Dónde:</strong> libres en el citoplasma, unidos al RER o a la membrana nuclear.</li>
+<li><strong>Función:</strong> síntesis de proteínas.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 3.2 Ribosomas.</p><label class="dom"><input type="checkbox" data-n="23"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c24" data-lv="2">
+<header class="c-h"><span class="c-n">24</span><h3>3.3 Sistema de endomembranas y retículo endoplasmático</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Sistema de endomembranas:</strong> retículo endoplasmático + aparato de Golgi (con sus vesículas y lisosomas). Función: <strong>síntesis, almacenamiento y transporte de proteínas</strong>.</li>
+<li><strong>Retículo endoplasmático (RE):</strong> sáculos, cisternas y túbulos interconectados. Está relacionado con la membrana plasmática, la nuclear y el Golgi. Hay dos tipos:</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>RER (rugoso)</th>
+<th>REL (liso)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aspecto</td>
+<td>Con ribosomas unidos a su membrana mediante <strong>riboforina</strong></td>
+<td>Sin ribosomas, estructura <strong>tubular</strong>. Menos abundante</td>
+</tr>
+<tr>
+<td>Funciones</td>
+<td><strong>Síntesis y glucosilación de proteínas</strong></td>
+<td><strong>Síntesis y transporte de lípidos</strong>, <strong>glucogenólisis</strong> y <strong>almacenamiento de Ca</strong></td>
+</tr>
+<tr>
+<td>Dónde abunda</td>
+<td>En células que fabrican muchas proteínas</td>
+<td>En células que sintetizan hormonas lipídicas y colesterol</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Destino de las proteínas del RER (4):</strong> almacenadas en el RER, ancladas a su membrana, secretadas o incorporadas a lisosomas.</li>
+<li><strong>Relación entre los orgánulos (pregunta 10):</strong></li>
+</ul>
+<pre><code>RER (fabrica y glucosila la proteína) → vesícula → Golgi cara cis → zona intermedia (modifica)
+→ cara trans → vesículas de secreción (exocitosis) / lisosomas / membrana plasmática
+</code></pre></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 3.3 Sistema de endomembranas y retículo endoplasmático.</p><label class="dom"><input type="checkbox" data-n="24"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c25" data-lv="2">
+<header class="c-h"><span class="c-n">25</span><h3>3.4 Aparato de Golgi</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Sistema de membranas comunicado con el RE. Formado por <strong>dictiosomas</strong> (pilas de sáculos); su tamaño varía según el tipo de célula.</li>
+<li><strong>Funciones:</strong> modificación, transporte y secreción de proteínas.</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Zona</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cara cis</td>
+<td>Próxima al núcleo. Recibe las proteínas en vesículas del RER</td>
+</tr>
+<tr>
+<td>Región intermedia</td>
+<td>Zona de transición: modifica y prepara las proteínas para su transporte</td>
+</tr>
+<tr>
+<td>Cara trans</td>
+<td>Libera las proteínas en vesículas de secreción</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 3.4 Aparato de Golgi.</p><label class="dom"><input type="checkbox" data-n="25"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c26" data-lv="2">
+<header class="c-h"><span class="c-n">26</span><h3>3.5 Lisosomas</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Qué son:</strong> vesículas membranosas con <strong>enzimas digestivos</strong>.</li>
+<li><strong>Función:</strong> digestión intracelular y extracelular.</li>
+<li><strong>Se forman</strong> en la cara trans del Golgi.</li>
+<li><strong>Su membrana tiene:</strong><ul>
+<li>Proteínas glucosiladas en la cara interna → protegen la membrana de sus propios enzimas.</li>
+<li>Bomba de protones → mantiene el <strong>pH ácido</strong>.</li>
+<li>Proteínas de transporte → expulsan los productos de la digestión.</li>
+</ul>
+</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Primario</th>
+<th>Secundario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solo tiene enzimas digestivos</td>
+<td>Contiene productos de la digestión</td>
+</tr>
+<tr>
+<td>Todavía no ha digerido nada</td>
+<td>Ya está digiriendo (se ha unido a lo que digiere)</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 3.5 Lisosomas.</p><label class="dom"><input type="checkbox" data-n="26"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c27" data-lv="2">
+<header class="c-h"><span class="c-n">27</span><h3>3.6 Mitocondrias</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Mitocondrias y peroxisomas son los <strong>orgánulos energéticos</strong>.</p>
+<ul>
+<li><strong>Función principal:</strong> obtener energía mediante la <strong>respiración celular</strong>.</li>
+<li><strong>Partes:</strong><ul>
+<li><strong>Membrana externa:</strong> lisa, da forma a la mitocondria. Tiene <strong>porinas</strong> → muy permeable.</li>
+<li><strong>Membrana interna:</strong> forma <strong>crestas</strong> (aumentan la superficie). Impermeable: <strong>75 % proteínas y 25 % lípidos</strong>.</li>
+<li><strong>Matriz mitocondrial:</strong> sintetiza el <strong>10 % de las proteínas</strong> mitocondriales.</li>
+</ul>
+</li>
+<li><strong>Funciones:</strong><ol>
+<li>Respiración celular: compuestos orgánicos → oxidación → sustancias inorgánicas + energía (ATP).</li>
+<li>Síntesis de lípidos (junto al REL).</li>
+<li>Síntesis del grupo hemo (parte de la hemoglobina).</li>
+</ol>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 3.6 Mitocondrias.</p><label class="dom"><input type="checkbox" data-n="27"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c28" data-lv="2">
+<header class="c-h"><span class="c-n">28</span><h3>3.7 Peroxisomas e inclusiones</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Peroxisomas:</strong> parecidos a los lisosomas. Tienen <strong>enzimas oxidativos</strong> que generan <strong>H₂O₂</strong> (agua oxigenada), que las <strong>catalasas y peroxidasas</strong> degradan.</li>
+<li><strong>Funciones de los peroxisomas:</strong><ol>
+<li>Catabolismo de purinas (A y G) → genera ácido úrico.</li>
+<li>Catabolismo de ácidos grasos de cadena larga.</li>
+<li>Detoxificación celular.</li>
+</ol>
+</li>
+<li><strong>Inclusiones</strong> (depósitos sin membrana en el citoplasma):<ul>
+<li>Gránulos de glucógeno (células musculares y hepáticas).</li>
+<li>Inclusiones lipídicas.</li>
+<li>Inclusiones cristalinas (proteínas).</li>
+<li>Pigmentos: <strong>endógenos</strong> (hemoglobina, lipofuscina, melanina) y <strong>exógenos</strong> (vegetales o minerales).</li>
+</ul>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 3.7 Peroxisomas e inclusiones.</p><label class="dom"><input type="checkbox" data-n="28"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c29" data-lv="2">
+<header class="c-h"><span class="c-n">29</span><h3>3.8 Citoesqueleto</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Qué es:</strong> red de túbulos y filamentos que determina la forma de la célula, la posición y el desplazamiento de los orgánulos, el movimiento y la división celular.</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>Microfilamentos</th>
+<th>Filamentos intermedios</th>
+<th>Microtúbulos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grosor</td>
+<td>6–7 nm (los más finos)</td>
+<td>8–10 nm</td>
+<td>25 nm (los más gruesos)</td>
+</tr>
+<tr>
+<td>Unidad</td>
+<td><strong>Actina</strong></td>
+<td>Diversas <strong>proteínas fibrosas</strong></td>
+<td>Dímeros de <strong>α y β tubulina</strong></td>
+</tr>
+<tr>
+<td>Estructura</td>
+<td>Polímeros de actina en doble hélice, unidos a la membrana por proteínas</td>
+<td>Fibras muy resistentes en red desde el núcleo a la periferia; anclados a uniones intercelulares o a la MEC</td>
+<td>Dímeros → protofilamentos → tubo hueco</td>
+</tr>
+<tr>
+<td>Funciones</td>
+<td>Contracción muscular; esqueleto citoplasmático; adhesión y migración; endocitosis, exocitosis y transporte de vesículas; microvellosidades y estereocilios</td>
+<td>Soportar tensiones mecánicas (soporte al núcleo, axones, orgánulos y contactos celulares); comunicación intercelular</td>
+<td>Soporte estructural; organizar el movimiento de los orgánulos; movilidad (cilios y flagelos)</td>
+</tr>
+<tr>
+<td>Dónde destacan</td>
+<td>Músculo, microvellosidades</td>
+<td>Células epiteliales, musculares y nerviosas</td>
+<td>Centriolos (9 tripletes), axones, cilios, flagelo del espermatozoide</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Proteínas accesorias</strong> del citoesqueleto:<ul>
+<li><strong>Reguladoras:</strong> controlan la polimerización y despolimerización de los filamentos.</li>
+<li><strong>Ligadoras:</strong> conectan filamentos entre sí y con otras estructuras.</li>
+<li><strong>Motoras:</strong> motilidad, contracción, cambios de forma y transporte de macromoléculas y orgánulos.</li>
+</ul>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 3.8 Citoesqueleto.</p><label class="dom"><input type="checkbox" data-n="29"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c30" data-lv="2">
+<header class="c-h"><span class="c-n">30</span><h3>Resumen de funciones (pregunta 11)</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Estructura</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REL</td>
+<td>Síntesis y transporte de lípidos; glucogenólisis; almacén de Ca</td>
+</tr>
+<tr>
+<td>Ribosomas</td>
+<td>Síntesis de proteínas</td>
+</tr>
+<tr>
+<td>Mitocondrias</td>
+<td>Respiración celular (ATP); síntesis de lípidos y del grupo hemo</td>
+</tr>
+<tr>
+<td>Membrana plasmática</td>
+<td>Separar; transporte selectivo; señales; adhesión</td>
+</tr>
+<tr>
+<td>Citoesqueleto</td>
+<td>Forma de la célula; movimiento; división; transporte de orgánulos</td>
+</tr>
+<tr>
+<td>Peroxisomas</td>
+<td>Degradar H₂O₂; catabolismo de purinas y ácidos grasos; detoxificación</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Resumen de funciones (pregunta 11).</p><label class="dom"><input type="checkbox" data-n="30"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c31" data-lv="2">
+<header class="c-h"><span class="c-n">31</span><h3>Glosario de la Entrega 3</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Palabra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Citosol / hialoplasma</td>
+<td>Medio líquido del citoplasma</td>
+</tr>
+<tr>
+<td>ARNr</td>
+<td>ARN ribosómico, el que forma los ribosomas</td>
+</tr>
+<tr>
+<td>Riboforina</td>
+<td>Proteína que une los ribosomas a la membrana del RER</td>
+</tr>
+<tr>
+<td>Glucosilación</td>
+<td>Añadir azúcares a una proteína</td>
+</tr>
+<tr>
+<td>Glucogenólisis</td>
+<td>Romper el glucógeno para obtener glucosa</td>
+</tr>
+<tr>
+<td>Dictiosoma</td>
+<td>Pila de sáculos aplanados que forma el Golgi</td>
+</tr>
+<tr>
+<td>Cis / trans</td>
+<td>Cara de entrada / cara de salida del Golgi</td>
+</tr>
+<tr>
+<td>Vesícula</td>
+<td>Pequeña bolsa de membrana que transporta sustancias</td>
+</tr>
+<tr>
+<td>pH ácido</td>
+<td>Medio con muchos protones (H⁺)</td>
+</tr>
+<tr>
+<td>Cresta mitocondrial</td>
+<td>Pliegue de la membrana interna de la mitocondria</td>
+</tr>
+<tr>
+<td>Porina</td>
+<td>Proteína que forma un poro grande en una membrana</td>
+</tr>
+<tr>
+<td>ATP</td>
+<td>Molécula que almacena la energía que usa la célula</td>
+</tr>
+<tr>
+<td>H₂O₂</td>
+<td>Agua oxigenada, tóxica para la célula</td>
+</tr>
+<tr>
+<td>Catabolismo</td>
+<td>Reacciones que rompen moléculas para obtener energía</td>
+</tr>
+<tr>
+<td>Purinas</td>
+<td>Bases adenina (A) y guanina (G)</td>
+</tr>
+<tr>
+<td>Detoxificación</td>
+<td>Eliminar sustancias tóxicas</td>
+</tr>
+<tr>
+<td>Pigmento endógeno / exógeno</td>
+<td>Fabricado por el cuerpo / venido de fuera</td>
+</tr>
+<tr>
+<td>Polímero / dímero</td>
+<td>Cadena de muchas unidades / unión de dos unidades</td>
+</tr>
+<tr>
+<td>Polimerización</td>
+<td>Unir unidades para alargar un filamento</td>
+</tr>
+<tr>
+<td>Centriolo</td>
+<td>Cilindro de 9 tripletes de microtúbulos que organiza el huso</td>
+</tr>
+<tr>
+<td>Cilio / flagelo</td>
+<td>Prolongación móvil corta y numerosa / larga y única</td>
+</tr>
+<tr>
+<td>Microvellosidad</td>
+<td>Pliegue de membrana que aumenta la superficie (intestino)</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Glosario de la Entrega 3.</p><label class="dom"><input type="checkbox" data-n="31"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c32" data-lv="2">
+<header class="c-h"><span class="c-n">32</span><h3>Preguntas de la Entrega 3</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 3 · Citoplasma y orgánulos</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>¿Qué es el citoplasma y qué partes tiene?</li>
+<li>¿Qué son los ribosomas, dónde están y qué función tienen?</li>
+<li>Cita los orgánulos del sistema de endomembranas y explica qué relación hay entre ellos.</li>
+<li>Diferencia el RER y el REL (estructura, funciones y dónde abundan).</li>
+<li>¿Qué 4 destinos pueden tener las proteínas del RER?</li>
+<li>Explica las 3 zonas del aparato de Golgi.</li>
+<li>¿Qué son los lisosomas, dónde se forman y qué tiene su membrana?</li>
+<li>Explica las diferencias entre lisosoma primario y secundario.</li>
+<li>Describe la estructura de la mitocondria y cita sus 3 funciones.</li>
+<li>¿Qué son los peroxisomas y qué funciones tienen?</li>
+<li>Cita 4 tipos de inclusiones. Pon ejemplos de pigmentos.</li>
+<li>Di al menos una función de: REL, ribosomas, mitocondrias, membrana plasmática, citoesqueleto y peroxisomas.</li>
+<li>Cita las 3 estructuras del citoesqueleto, su unidad estructural y su estructura.</li>
+<li>¿Qué tipos de proteínas accesorias tiene el citoesqueleto?</li>
+<li>V/F: los ribosomas tienen membrana. (Falso)</li>
+<li>V/F: los microtúbulos son los filamentos más finos. (Falso: son los más gruesos)</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Preguntas de la Entrega 3.</p><label class="dom"><input type="checkbox" data-n="32"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b3" data-min="20"><h2 class="blk-h"><span class="bn">ENTREGA 4</span><span class="bt">El núcleo</span><span class="bc">⏱ 20 min · Conceptos 33–38 · 0 🔴 · <b class="bd">0</b>/6 dominados</span></h2><article class="cpt lv2" id="c33" data-lv="2">
+<header class="c-h"><span class="c-n">33</span><h3>4.1 El núcleo y la membrana nuclear</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 4 · El núcleo</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>El núcleo guarda el ADN dentro de una doble membrana con poros. Su cromatina explica por qué células con el mismo ADN son distintas.</p>
+<ul>
+<li><strong>Núcleo:</strong> estructura diferenciada, delimitada por una membrana, que contiene el <strong>material genético</strong> de la célula.</li>
+<li><strong>Membrana nuclear (envoltura):</strong> es doble.</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Membrana externa</th>
+<th>Membrana interna</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unida al RE</td>
+<td>Con filamentos intermedios asociados</td>
+</tr>
+<tr>
+<td>Tiene ribosomas en su cara citoplasmática</td>
+<td>Sirven para anclar la cromatina y regular el crecimiento de la envoltura</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 4.1 El núcleo y la membrana nuclear.</p><label class="dom"><input type="checkbox" data-n="33"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c34" data-lv="2">
+<header class="c-h"><span class="c-n">34</span><h3>4.2 El complejo del poro</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 4 · El núcleo</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>La membrana nuclear tiene <strong>complejos del poro</strong> para el paso de sustancias entre núcleo y citoplasma.</li>
+<li>Se <strong>forman y desaparecen</strong> según el estado funcional de la célula.</li>
+<li><strong>Cómo funcionan:</strong> solo pasan las sustancias <strong>marcadas con una secuencia específica de aminoácidos</strong>, que reconocen las proteínas del complejo: <strong>importinas</strong> (meten) y <strong>exportinas</strong> (sacan).</li>
+<li>Ejemplos: entran proteínas como las histonas; salen ARN mensajero y subunidades de los ribosomas.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 4.2 El complejo del poro.</p><label class="dom"><input type="checkbox" data-n="34"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c35" data-lv="2">
+<header class="c-h"><span class="c-n">35</span><h3>4.3 Nucleoplasma y cromatina</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 4 · El núcleo</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Nucleoplasma:</strong> región delimitada por la membrana nuclear. Contiene la <strong>cromatina</strong> y el <strong>nucléolo</strong>.</li>
+<li><strong>Cromatina = ADN + proteínas.</strong><ul>
+<li>Es una estructura <strong>dinámica</strong>: se empaqueta más o menos según la célula esté replicando, transcribiendo o reparando el ADN.</li>
+<li>Su unidad funcional es el <strong>nucleosoma</strong>.</li>
+</ul>
+</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Eucromatina</th>
+<th>Heterocromatina</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Poco compactada</td>
+<td>Muy compactada</td>
+</tr>
+<tr>
+<td>Se transcribe en todas las células</td>
+<td>Genes que se inactivan según la especialización de la célula</td>
+</tr>
+<tr>
+<td>10 % del total</td>
+<td>80–90 % del total</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Pregunta 15 — Mismo ADN, células distintas:</strong> todas las células tienen el mismo ADN, pero cada tejido compacta en heterocromatina genes distintos, que quedan inaccesibles para la transcripción. Cada célula solo usa una parte de sus genes: es la <strong>diferenciación celular</strong>. Ejemplo: solo las células del páncreas usan el gen de la insulina.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 4.3 Nucleoplasma y cromatina.</p><label class="dom"><input type="checkbox" data-n="35"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c36" data-lv="2">
+<header class="c-h"><span class="c-n">36</span><h3>4.4 El nucléolo</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 4 · El núcleo</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Corpúsculo esférico; hay <strong>entre 1 y 5</strong> en mamíferos.</li>
+<li>Relacionado con la <strong>generación de ribosomas</strong>:<ul>
+<li>Síntesis y maduración del ARNr.</li>
+<li>Ensamblaje de las subunidades ribosómicas.</li>
+</ul>
+</li>
+<li><strong>Desaparece durante la división celular.</strong></li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 4.4 El nucléolo.</p><label class="dom"><input type="checkbox" data-n="36"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c37" data-lv="2">
+<header class="c-h"><span class="c-n">37</span><h3>Glosario de la Entrega 4</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 4 · El núcleo</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Palabra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Material genético</td>
+<td>El ADN, con la información de la célula</td>
+</tr>
+<tr>
+<td>Envoltura nuclear</td>
+<td>Doble membrana que rodea el núcleo</td>
+</tr>
+<tr>
+<td>Complejo del poro</td>
+<td>Conjunto de proteínas que forma cada poro nuclear</td>
+</tr>
+<tr>
+<td>Importina / exportina</td>
+<td>Proteína que mete / saca sustancias del núcleo</td>
+</tr>
+<tr>
+<td>Aminoácido</td>
+<td>Unidad que forma las proteínas</td>
+</tr>
+<tr>
+<td>Nucleoplasma</td>
+<td>Interior del núcleo</td>
+</tr>
+<tr>
+<td>Cromatina</td>
+<td>ADN + proteínas (histonas)</td>
+</tr>
+<tr>
+<td>Histona</td>
+<td>Proteína alrededor de la que se enrolla el ADN</td>
+</tr>
+<tr>
+<td>Nucleosoma</td>
+<td>Unidad de la cromatina: ADN enrollado en histonas</td>
+</tr>
+<tr>
+<td>Replicación</td>
+<td>Copia del ADN antes de dividirse</td>
+</tr>
+<tr>
+<td>Transcripción</td>
+<td>Copiar un gen de ADN a ARN para usarlo</td>
+</tr>
+<tr>
+<td>Eucromatina / heterocromatina</td>
+<td>Cromatina poco compactada y activa / muy compactada e inactiva</td>
+</tr>
+<tr>
+<td>Diferenciación celular</td>
+<td>Especialización de una célula para una función</td>
+</tr>
+<tr>
+<td>Nucléolo</td>
+<td>Zona del núcleo donde se fabrican los ribosomas</td>
+</tr>
+<tr>
+<td>Subunidad ribosómica</td>
+<td>Cada una de las 2 piezas de un ribosoma</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Glosario de la Entrega 4.</p><label class="dom"><input type="checkbox" data-n="37"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c38" data-lv="2">
+<header class="c-h"><span class="c-n">38</span><h3>Preguntas de la Entrega 4</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 4 · El núcleo</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>¿Qué es el núcleo?</li>
+<li>Diferencia la membrana nuclear externa y la interna.</li>
+<li>Explica qué son los poros nucleares y cómo funcionan.</li>
+<li>¿Qué son las importinas y las exportinas?</li>
+<li>¿Qué contiene el nucleoplasma?</li>
+<li>¿Qué es la cromatina? ¿Cuál es su unidad funcional?</li>
+<li>Diferencia eucromatina y heterocromatina (con sus porcentajes).</li>
+<li>Si todas las células de un organismo tienen el mismo ADN, ¿por qué no son todas idénticas?</li>
+<li>¿Qué es el nucléolo y qué funciones tiene? ¿Cuántos hay?</li>
+<li>V/F: el nucléolo se mantiene durante la división celular. (Falso)</li>
+<li>V/F: por el poro nuclear pasa cualquier sustancia. (Falso: solo las marcadas)</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Preguntas de la Entrega 4.</p><label class="dom"><input type="checkbox" data-n="38"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b4" data-min="35"><h2 class="blk-h"><span class="bn">ENTREGA 5</span><span class="bt">Fisiología celular</span><span class="bc">⏱ 35 min · Conceptos 39–46 · 0 🔴 · <b class="bd">0</b>/8 dominados</span></h2><article class="cpt lv2" id="c39" data-lv="2">
+<header class="c-h"><span class="c-n">39</span><h3>5.1 Fisiología celular y funciones vitales de la célula</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 5 · Fisiología celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La célula obtiene energía por respiración celular, mantiene su equilibrio interno (homeostasis) gracias al transporte de membrana y se une a otras células mediante uniones celulares.</p>
+<ul>
+<li><strong>Fisiología celular:</strong> estudio de los procesos que mantienen viva a una célula. En los pluricelulares, también cómo participa en el funcionamiento del organismo completo.</li>
+<li><strong>3 funciones vitales de la célula:</strong><ul>
+<li><strong>Nutrición:</strong> tomar nutrientes y O₂ y expulsar desechos.</li>
+<li><strong>Relación:</strong> mantener el equilibrio e interactuar con el medio.</li>
+<li><strong>Reproducción.</strong></li>
+</ul>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 5.1 Fisiología celular y funciones vitales de la célula.</p><label class="dom"><input type="checkbox" data-n="39"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c40" data-lv="2">
+<header class="c-h"><span class="c-n">40</span><h3>5.2 Metabolismo y respiración celular</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 5 · Fisiología celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Metabolismo celular:</strong> conjunto de reacciones químicas que permiten a la célula usar los nutrientes y el oxígeno para atender sus necesidades vitales. La suma del metabolismo de todas las células es el metabolismo del organismo.</li>
+<li><strong>Respiración celular:</strong> conjunto de reacciones por las que las células usan el <strong>oxígeno</strong> para <strong>oxidar nutrientes</strong> y generar <strong>energía (ATP)</strong> aprovechable por la célula.</li>
+<li><strong>Ojo:</strong> no es la respiración pulmonar (meter y sacar aire).</li>
+</ul>
+<p><strong>Ecuación:</strong> C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + energía (ATP)</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Dónde</th>
+<th>Qué pasa</th>
+<th>ATP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Glucólisis</td>
+<td>Citosol</td>
+<td>Glucosa → 2 piruvatos (+ 2 NADH)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Paso intermedio</td>
+<td>Matriz mitocondrial</td>
+<td>Piruvato → acetil-CoA (+ 2 NADH)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2. Ciclo de Krebs</td>
+<td>Matriz mitocondrial</td>
+<td>Acetil-CoA se oxida a CO₂ (+ 6 NADH y 2 FADH₂)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3. Cadena respiratoria y fosforilación oxidativa</td>
+<td>Crestas (membrana interna)</td>
+<td>NADH y FADH₂ ceden electrones; el O₂ los recibe y forma agua; la ATP sintasa fabrica ATP</td>
+<td>Hasta 32–34</td>
+</tr>
+</tbody>
+</table></div>
+<p>Total: unos <strong>36–38 ATP por glucosa</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 5.2 Metabolismo y respiración celular.</p><label class="dom"><input type="checkbox" data-n="40"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c41" data-lv="2">
+<header class="c-h"><span class="c-n">41</span><h3>5.3 Homeostasis y transporte pasivo</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 5 · Fisiología celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Homeostasis:</strong> estado en que las células mantienen una condición interna estable.</li>
+<li><strong>Mecanismos de regulación:</strong> transporte por permeabilidad y transporte por endocitosis o exocitosis.</li>
+<li><strong>Transporte por permeabilidad:</strong> depende de la naturaleza de la sustancia y del gradiente de concentración.</li>
+<li><strong>Transporte pasivo</strong> (a favor de gradiente, sin gastar energía):<ul>
+<li><strong>Difusión simple:</strong> las moléculas atraviesan directamente la membrana. Ejemplos: CO₂, O₂, H₂O, etanol, urea.</li>
+<li><strong>Difusión facilitada:</strong> con proteínas transportadoras.<ul>
+<li><strong>Porinas:</strong> dejan pasar moléculas que quepan por el poro.</li>
+<li><strong>Permeasas:</strong> proteínas integrales específicas para un sustrato concreto (por ejemplo, la glucosa).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Extra (pregunta 17) — Ósmosis y deshidratación:</strong></p>
+<ul>
+<li><strong>Ósmosis:</strong> paso de agua a través de la membrana hacia donde hay <strong>más concentración de solutos</strong>.</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Medio externo</th>
+<th>Qué le pasa a la célula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hipertónico (más solutos fuera)</td>
+<td>Pierde agua y se encoge</td>
+</tr>
+<tr>
+<td>Hipotónico (menos solutos fuera)</td>
+<td>Gana agua y se hincha (puede romperse)</td>
+</tr>
+<tr>
+<td>Isotónico (igual)</td>
+<td>No cambia</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Deshidratación:</strong> el medio interno queda <strong>hipertónico</strong>, así que las células <strong>sí se ven afectadas</strong>: pierden agua por ósmosis y se encogen.</li>
+<li>Los mecanismos que lo compensan, en la célula y en el organismo, se llaman <strong>homeostasis</strong>. Ejemplos: sed, hormona antidiurética (ADH) y riñón que ahorra agua y concentra la orina.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 5.3 Homeostasis y transporte pasivo.</p><label class="dom"><input type="checkbox" data-n="41"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c42" data-lv="2">
+<header class="c-h"><span class="c-n">42</span><h3>5.4 Transporte activo</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 5 · Fisiología celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>En contra de gradiente</strong> y <strong>consume energía</strong>.</li>
+<li><strong>Transporte activo primario:</strong> la energía viene directamente del <strong>ATP</strong>.<ul>
+<li><strong>Transportadores ABC</strong> (ATP Binding Cassette).</li>
+<li><strong>Bombas de iones.</strong> Ejemplo: bomba Na⁺/K⁺, que saca 3 Na⁺ y mete 2 K⁺.</li>
+</ul>
+</li>
+<li><strong>Transporte activo secundario:</strong> acopla la entrada de una sustancia <strong>en contra</strong> de su gradiente a la entrada de iones (por ejemplo, Na⁺) <strong>a favor</strong> del suyo. Ejemplo: Na⁺ con aminoácidos o glucosa.</li>
+</ul>
+<p><strong>Esquema de los tipos de transporte (pregunta 18)</strong> ✏️:</p>
+<pre><code>TRANSPORTE A TRAVÉS DE LA MEMBRANA
+├── Por permeabilidad (moléculas pequeñas)
+│   ├── Pasivo (a favor de gradiente, sin energía)
+│   │   ├── Difusión simple: CO₂, O₂, H₂O, etanol, urea
+│   │   └── Difusión facilitada
+│   │       ├── Porinas
+│   │       └── Permeasas (glucosa)
+│   └── Activo (contra gradiente, con energía)
+│       ├── Primario (ATP): ABC y bombas de iones (Na⁺/K⁺)
+│       └── Secundario (acoplado a iones)
+└── Con vesículas (moléculas grandes)
+    ├── Endocitosis: pinocitosis, fagocitosis, mediada por receptor
+    └── Exocitosis
+</code></pre></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 5.4 Transporte activo.</p><label class="dom"><input type="checkbox" data-n="42"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c43" data-lv="2">
+<header class="c-h"><span class="c-n">43</span><h3>5.5 Endocitosis y exocitosis</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 5 · Fisiología celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Endocitosis:</strong> la membrana envuelve sustancias de fuera y las mete en una vesícula.<ul>
+<li><strong>Pinocitosis:</strong> líquidos y pequeñas partículas disueltas.</li>
+<li><strong>Fagocitosis:</strong> partículas grandes (bacterias, restos celulares).</li>
+<li><strong>Mediada por receptor:</strong> solo entra lo que se une a receptores específicos.</li>
+</ul>
+</li>
+<li><strong>Exocitosis (pregunta 20):</strong> una vesícula (normalmente del Golgi) se une a la membrana plasmática y vierte su contenido fuera. La membrana de la vesícula pasa a formar parte de la membrana plasmática.</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Sustancia liberada por exocitosis</th>
+<th>Función en el organismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Insulina (páncreas)</td>
+<td>Baja la glucosa en sangre</td>
+</tr>
+<tr>
+<td>Neurotransmisores (neuronas)</td>
+<td>Transmiten el impulso nervioso</td>
+</tr>
+<tr>
+<td>Enzimas digestivas (páncreas)</td>
+<td>Digieren los alimentos</td>
+</tr>
+<tr>
+<td>Anticuerpos (células plasmáticas)</td>
+<td>Defensa inmunitaria</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Extra (pregunta 19) — Importancia del transporte:</strong> sin transporte no entran nutrientes, no salen desechos y no hay homeostasis.</p>
+<ul>
+<li><strong>Nivel celular:</strong> entrada de glucosa para la respiración; bomba Na⁺/K⁺; fagocitosis de un macrófago.</li>
+<li><strong>Nivel organismo:</strong> impulso nervioso; absorción de nutrientes en el intestino; formación de orina en el riñón; intercambio de gases en los alvéolos.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 5.5 Endocitosis y exocitosis.</p><label class="dom"><input type="checkbox" data-n="43"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c44" data-lv="2">
+<header class="c-h"><span class="c-n">44</span><h3>5.6 Uniones celulares</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 5 · Fisiología celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Qué hacen</th>
+<th>Subtipos y estructura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ocluyentes</strong></td>
+<td>Membranas totalmente unidas: barrera impermeable, delimitación y protección</td>
+<td>Puntual o macular (células endoteliales de capilares); en banda o zónula (epitelios)</td>
+</tr>
+<tr>
+<td><strong>De anclaje</strong></td>
+<td>Sujetan las células y sus citoesqueletos a las vecinas o a la MEC. Membranas separadas</td>
+<td><strong>Desmosoma:</strong> una placa de fijación en cada membrana, cadherinas entre las placas y filamentos de queratina que anclan la placa a los filamentos intermedios. Reparte las tensiones por el tejido; unión fuerte que deja circular sustancias. <strong>Unión adherente:</strong> también con cadherinas; banda continua alrededor de la célula</td>
+</tr>
+<tr>
+<td><strong>Comunicantes</strong></td>
+<td>Crean poros para intercambiar sustancias</td>
+<td><strong>Uniones gap:</strong> conexinas agrupadas en conexones que se unen a los de la célula vecina y forman un poro</td>
+</tr>
+<tr>
+<td><strong>De adhesión</strong></td>
+<td>Glucoproteínas de membrana que unen a otras células o a la MEC. Tienen 3 partes: intracelular (unida al citoesqueleto), transmembrana y extracelular</td>
+<td><strong>CAM</strong> (célula–célula): selectinas. <strong>SAM</strong> (célula–MEC): integrinas, que llevan señales de la MEC a la célula (detección de antígenos, migración, unión a virus)</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Complejo de unión</strong> (en epitelios, de arriba abajo): zónula ocluyente → zónula adherente → mácula adherente (desmosoma).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 5.6 Uniones celulares.</p><label class="dom"><input type="checkbox" data-n="44"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c45" data-lv="2">
+<header class="c-h"><span class="c-n">45</span><h3>Glosario de la Entrega 5</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 5 · Fisiología celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Palabra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metabolismo</td>
+<td>Conjunto de reacciones químicas de la célula</td>
+</tr>
+<tr>
+<td>Oxidar</td>
+<td>Quitar electrones a una molécula (así se libera energía)</td>
+</tr>
+<tr>
+<td>Piruvato</td>
+<td>Molécula que sale de partir la glucosa en la glucólisis</td>
+</tr>
+<tr>
+<td>NADH / FADH₂</td>
+<td>Moléculas que transportan electrones hasta la cadena respiratoria</td>
+</tr>
+<tr>
+<td>ATP sintasa</td>
+<td>Enzima de las crestas que fabrica ATP</td>
+</tr>
+<tr>
+<td>Homeostasis</td>
+<td>Mantener estable el medio interno</td>
+</tr>
+<tr>
+<td>Gradiente de concentración</td>
+<td>Diferencia de concentración entre dos lados de la membrana</td>
+</tr>
+<tr>
+<td>A favor / en contra de gradiente</td>
+<td>De más a menos concentración / de menos a más</td>
+</tr>
+<tr>
+<td>Soluto</td>
+<td>Sustancia disuelta en agua</td>
+</tr>
+<tr>
+<td>Hipertónico / hipotónico / isotónico</td>
+<td>Con más / menos / igual concentración de solutos</td>
+</tr>
+<tr>
+<td>Ósmosis</td>
+<td>Paso de agua hacia donde hay más solutos</td>
+</tr>
+<tr>
+<td>Permeasa</td>
+<td>Proteína transportadora específica de una sustancia</td>
+</tr>
+<tr>
+<td>Endocitosis / exocitosis</td>
+<td>Meter / sacar sustancias con vesículas</td>
+</tr>
+<tr>
+<td>Fagocitosis / pinocitosis</td>
+<td>Comer partículas grandes / beber líquido</td>
+</tr>
+<tr>
+<td>Endotelio</td>
+<td>Capa de células que recubre los vasos sanguíneos</td>
+</tr>
+<tr>
+<td>Cadherina</td>
+<td>Proteína de adhesión de desmosomas y uniones adherentes</td>
+</tr>
+<tr>
+<td>Conexina / conexón</td>
+<td>Proteína / conjunto de proteínas que forma el poro de una unión gap</td>
+</tr>
+<tr>
+<td>Integrina / selectina</td>
+<td>Proteína que une la célula a la MEC / a otra célula</td>
+</tr>
+<tr>
+<td>Antígeno</td>
+<td>Sustancia que el sistema inmune reconoce como extraña</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Glosario de la Entrega 5.</p><label class="dom"><input type="checkbox" data-n="45"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c46" data-lv="2">
+<header class="c-h"><span class="c-n">46</span><h3>Preguntas de la Entrega 5</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 5 · Fisiología celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>¿Qué estudia la fisiología celular? Cita las 3 funciones vitales de la célula.</li>
+<li>¿Qué es el metabolismo celular?</li>
+<li>Explica qué es la respiración celular: fases, dónde ocurren y ATP que se obtiene.</li>
+<li>¿Qué es la homeostasis y qué mecanismos la regulan?</li>
+<li>Una persona se deshidrata y su medio interno se concentra. ¿Sus células se verán afectadas? ¿Cómo se llama el conjunto de mecanismos que lo compensan?</li>
+<li>Elabora un esquema de los tipos de transporte a través de la membrana.</li>
+<li>Diferencia difusión simple y facilitada. Pon ejemplos.</li>
+<li>Diferencia transporte activo primario y secundario.</li>
+<li>Argumenta la importancia del transporte de membrana con ejemplos a nivel celular y de organismo.</li>
+<li>Cita los 3 tipos de endocitosis.</li>
+<li>Explica la exocitosis y pon 3 ejemplos de sustancias liberadas con su función.</li>
+<li>Cita los tipos de uniones celulares y explica cada uno.</li>
+<li>Describe la estructura de un desmosoma.</li>
+<li>¿Cómo se forma una unión gap?</li>
+<li>Diferencia CAM y SAM.</li>
+<li>V/F: el transporte pasivo consume ATP. (Falso)</li>
+<li>V/F: en un medio hipotónico la célula se encoge. (Falso: se hincha)</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Preguntas de la Entrega 5.</p><label class="dom"><input type="checkbox" data-n="46"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b5" data-min="25"><h2 class="blk-h"><span class="bn">ENTREGA 6</span><span class="bt">Reproducción celular</span><span class="bc">⏱ 25 min · Conceptos 47–52 · 0 🔴 · <b class="bd">0</b>/6 dominados</span></h2><article class="cpt lv2" id="c47" data-lv="2">
+<header class="c-h"><span class="c-n">47</span><h3>6.1 Ciclo celular e interfase</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 6 · Reproducción celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La célula se divide por mitosis (2 células idénticas) o por meiosis (4 gametos distintos con la mitad de cromosomas). La meiosis es la fuente de la diversidad genética.</p>
+<ul>
+<li>Los ciclos celulares duran distinto según el tipo de célula. Hay reproducción asexual y sexual.</li>
+<li><strong>Ciclo celular:</strong> conjunto de cambios que sufre la célula desde que se forma hasta que se divide. Tiene 2 etapas: <strong>interfase</strong> y <strong>división</strong>.</li>
+<li><strong>Interfase:</strong> gran actividad metabólica; el núcleo no cambia de forma.</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Qué pasa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G1</td>
+<td>Desde la división hasta el inicio de la replicación. Síntesis de proteínas para crecer</td>
+</tr>
+<tr>
+<td>S (síntesis)</td>
+<td>Replicación del ADN, síntesis de histonas y duplicación de los centriolos</td>
+</tr>
+<tr>
+<td>G2</td>
+<td>Muy corta. Con el doble de material genético, la célula se prepara para dividirse (condensa el ADN, forma orgánulos)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Llevan a la célula a dividirse</th>
+<th>Detienen la división</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tamaño: llega a su crecimiento máximo</td>
+<td>Diferenciación celular (los factores de crecimiento pueden reactivarla)</td>
+</tr>
+<tr>
+<td>Factores de crecimiento: moléculas que activan la mitosis</td>
+<td>Inhibición por contacto con muchas células</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 6.1 Ciclo celular e interfase.</p><label class="dom"><input type="checkbox" data-n="47"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c48" data-lv="2">
+<header class="c-h"><span class="c-n">48</span><h3>6.2 Mitosis</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 6 · Reproducción celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Definición:</strong> división en la que, de una célula, se obtienen <strong>2 células hijas con igual dotación genética</strong>.</li>
+<li>Tiene 2 partes: <strong>cariocinesis</strong> (división del núcleo) y <strong>citocinesis</strong> (división del citoplasma).</li>
+<li><strong>5 etapas:</strong> profase, prometafase, metafase, anafase y telofase. Truco: <strong>P-P-M-A-T</strong>.</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Qué pasa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Profase</td>
+<td>La más larga. Los cromosomas se hacen visibles como filamentos (con centrómero y cinetocoro). Desaparece el nucléolo. La membrana nuclear se rompe en vesículas. Los centrosomas van a polos opuestos y forman el huso acromático (microtúbulos polares y cinetocóricos)</td>
+</tr>
+<tr>
+<td>2. Prometafase</td>
+<td>Los microtúbulos cinetocóricos se anclan a los cinetocoros y van llevando los cromosomas hacia el plano ecuatorial</td>
+</tr>
+<tr>
+<td>3. Metafase</td>
+<td>Máxima condensación. Los cromosomas se alinean en el plano ecuatorial: <strong>placa metafásica</strong></td>
+</tr>
+<tr>
+<td>4. Anafase</td>
+<td>Las 2 cromátidas de cada cromosoma se separan y van a polos opuestos. Los microtúbulos polares se alargan y separan los polos. Empieza la citocinesis: surco en la membrana y reparto de orgánulos</td>
+</tr>
+<tr>
+<td>5. Telofase</td>
+<td>Desaparecen los microtúbulos cinetocóricos. Se forman las nuevas membranas nucleares. Los cromosomas se descondensan y reaparecen los nucléolos</td>
+</tr>
+<tr>
+<td>Citocinesis</td>
+<td>Un anillo contráctil de actina y miosina se cierra en el surco y separa las 2 células hijas</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Pregunta 22 — Verdadero o falso:</strong></p>
+<ul>
+<li>a. "La citocinesis es la división del núcleo" → <strong>Falsa.</strong> La citocinesis divide el citoplasma; la del núcleo es la cariocinesis.</li>
+<li>b. "Las cromátidas se separan en la anafase" → <strong>Verdadera.</strong></li>
+<li>c. "En la prometafase los cromosomas están alineados en el plano ecuatorial" → <strong>Falsa.</strong> Se alinean en la metafase; en la prometafase se están dirigiendo hacia él.</li>
+<li>d. "El sobrecruzamiento ocurre en la mitosis" → <strong>Falsa.</strong> Ocurre en la meiosis (paquiteno de la profase I).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 6.2 Mitosis.</p><label class="dom"><input type="checkbox" data-n="48"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c49" data-lv="2">
+<header class="c-h"><span class="c-n">49</span><h3>6.3 Meiosis</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 6 · Reproducción celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Definición:</strong> división en la que, de una célula, se obtienen <strong>4 células hijas</strong> con la <strong>mitad de cromosomas</strong> (n). Son los <strong>gametos</strong>.</li>
+<li>Tiene <strong>2 divisiones sucesivas</strong>: meiosis I y meiosis II.</li>
+</ul>
+<p><strong>Meiosis I</strong> (separa los cromosomas homólogos):</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Qué pasa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Profase I — a. Leptoteno</td>
+<td>Cromosomas como hebras delgadas, con los extremos unidos a la membrana nuclear</td>
+</tr>
+<tr>
+<td>b. Zigoteno</td>
+<td>Empiezan a emparejarse los homólogos (<strong>sinapsis</strong>): se forman bivalentes o <strong>tétradas</strong></td>
+</tr>
+<tr>
+<td>c. Paquiteno</td>
+<td>Puede durar años. Los bivalentes se acortan y engrosan. Ocurre el <strong>sobrecruzamiento</strong> entre cromátidas no hermanas</td>
+</tr>
+<tr>
+<td>d. Diploteno</td>
+<td>Los bivalentes se separan pero quedan unidos por <strong>quiasmas</strong>. Puede durar mucho (los ovocitos llegan a diploteno en el 5.º mes de vida prenatal)</td>
+</tr>
+<tr>
+<td>e. Diacinesis</td>
+<td>Máxima condensación. Los quiasmas van a los extremos. Desaparecen nucléolo y membrana nuclear; se forma el huso</td>
+</tr>
+<tr>
+<td>Prometafase I</td>
+<td>Los cinetocoros de cada par de homólogos se orientan a polos distintos</td>
+</tr>
+<tr>
+<td>Metafase I</td>
+<td>Los bivalentes se colocan en el plano ecuatorial</td>
+</tr>
+<tr>
+<td>Anafase I</td>
+<td>Se separan los homólogos: cada uno va a un polo, al azar</td>
+</tr>
+<tr>
+<td>Telofase I</td>
+<td>2 núcleos con la mitad de cromosomas, cada cromosoma con 2 cromátidas. Reaparecen membrana nuclear y nucléolo</td>
+</tr>
+</tbody>
+</table></div>
+<p>Truco para la profase I: <strong>Le-Zi-Pa-Di-Dia</strong> (leptoteno, zigoteno, paquiteno, diploteno, diacinesis).</p>
+<p><strong>Meiosis II</strong> (como una mitosis): profase II → metafase II → anafase II (se separan las <strong>cromátidas hermanas</strong>) → telofase II. Resultado: <strong>4 células haploides</strong> (n).</p>
+<p><strong>Ojo:</strong> en la anafase I se separan <strong>homólogos</strong>; en la anafase II y en la mitosis se separan <strong>cromátidas</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 6.3 Meiosis.</p><label class="dom"><input type="checkbox" data-n="49"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c50" data-lv="2">
+<header class="c-h"><span class="c-n">50</span><h3>6.4 Mitosis frente a meiosis y diversidad genética</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 6 · Reproducción celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>Mitosis</th>
+<th>Meiosis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dónde</td>
+<td>Células del cuerpo (somáticas)</td>
+<td>Células que forman gametos (gónadas)</td>
+</tr>
+<tr>
+<td>Divisiones</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Células hijas</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Cromosomas</td>
+<td>Igual que la madre (2n → 2n)</td>
+<td>La mitad (2n → n)</td>
+</tr>
+<tr>
+<td>Cómo son las hijas</td>
+<td>Idénticas a la madre</td>
+<td>Distintas entre sí</td>
+</tr>
+<tr>
+<td>Sobrecruzamiento</td>
+<td>No</td>
+<td>Sí (paquiteno)</td>
+</tr>
+<tr>
+<td>Objetivo</td>
+<td>Crecer, reparar y renovar tejidos</td>
+<td>Formar gametos para la reproducción sexual</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Pregunta 23 — La meiosis mantiene la diversidad genética</strong> gracias a 3 mecanismos:</p>
+<ol>
+<li><strong>Sobrecruzamiento</strong> (paquiteno): los homólogos intercambian trozos y aparecen combinaciones nuevas de genes.</li>
+<li><strong>Reparto al azar de los homólogos</strong> (anafase I): en humanos hay 2²³, más de 8 millones de combinaciones posibles.</li>
+<li><strong>Fecundación al azar:</strong> cualquier óvulo con cualquier espermatozoide.</li>
+</ol>
+<p>Conclusión: cada gameto es único, la población es más variada y se adapta mejor a los cambios. La mitosis, en cambio, hace copias idénticas.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: 6.4 Mitosis frente a meiosis y diversidad genética.</p><label class="dom"><input type="checkbox" data-n="50"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c51" data-lv="2">
+<header class="c-h"><span class="c-n">51</span><h3>Glosario de la Entrega 6</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 6 · Reproducción celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Palabra</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ciclo celular</td>
+<td>Vida de una célula desde que se forma hasta que se divide</td>
+</tr>
+<tr>
+<td>Interfase</td>
+<td>Etapa en la que la célula crece y copia su ADN</td>
+</tr>
+<tr>
+<td>Cromosoma</td>
+<td>ADN muy condensado, visible durante la división</td>
+</tr>
+<tr>
+<td>Cromátida</td>
+<td>Cada una de las 2 copias idénticas de un cromosoma</td>
+</tr>
+<tr>
+<td>Centrómero</td>
+<td>Punto donde se unen las 2 cromátidas</td>
+</tr>
+<tr>
+<td>Cinetocoro</td>
+<td>Proteínas del centrómero donde se ancla el huso</td>
+</tr>
+<tr>
+<td>Centrosoma</td>
+<td>Zona con los centriolos que organiza el huso</td>
+</tr>
+<tr>
+<td>Huso acromático</td>
+<td>Conjunto de microtúbulos que reparte los cromosomas</td>
+</tr>
+<tr>
+<td>Plano ecuatorial</td>
+<td>Plano central de la célula, entre los dos polos</td>
+</tr>
+<tr>
+<td>Cariocinesis / citocinesis</td>
+<td>División del núcleo / del citoplasma</td>
+</tr>
+<tr>
+<td>Diploide (2n) / haploide (n)</td>
+<td>Con pares de cromosomas / con un solo juego</td>
+</tr>
+<tr>
+<td>Gameto</td>
+<td>Óvulo o espermatozoide</td>
+</tr>
+<tr>
+<td>Cromosomas homólogos</td>
+<td>Pareja de cromosomas, uno del padre y otro de la madre</td>
+</tr>
+<tr>
+<td>Sinapsis</td>
+<td>Emparejamiento de los homólogos</td>
+</tr>
+<tr>
+<td>Bivalente / tétrada</td>
+<td>Pareja de homólogos unidos (4 cromátidas)</td>
+</tr>
+<tr>
+<td>Sobrecruzamiento</td>
+<td>Intercambio de trozos entre homólogos</td>
+</tr>
+<tr>
+<td>Quiasma</td>
+<td>Punto donde se cruzan los homólogos tras el sobrecruzamiento</td>
+</tr>
+<tr>
+<td>Ovocito</td>
+<td>Célula que dará lugar al óvulo</td>
+</tr>
+<tr>
+<td>Célula somática</td>
+<td>Cualquier célula del cuerpo que no es gameto</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Glosario de la Entrega 6.</p><label class="dom"><input type="checkbox" data-n="51"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c52" data-lv="2">
+<header class="c-h"><span class="c-n">52</span><h3>Preguntas de la Entrega 6</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Entrega 6 · Reproducción celular</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>¿Qué es el ciclo celular y qué etapas tiene?</li>
+<li>Explica las fases G1, S y G2.</li>
+<li>¿Qué factores llevan a la célula a dividirse y cuáles la detienen?</li>
+<li>Define mitosis. ¿Qué son la cariocinesis y la citocinesis?</li>
+<li>Explica las 5 fases de la mitosis.</li>
+<li>¿Cómo ocurre la citocinesis?</li>
+<li>Detecta y corrige las falsas: a) la citocinesis es la división del núcleo; b) las cromátidas se separan en la anafase; c) en la prometafase los cromosomas están alineados en el plano ecuatorial; d) el sobrecruzamiento ocurre en la mitosis.</li>
+<li>Define meiosis. ¿Cuántas divisiones tiene?</li>
+<li>Cita y explica las 5 subfases de la profase I.</li>
+<li>¿Qué se separa en la anafase I y qué en la anafase II?</li>
+<li>¿Qué diferencias hay entre mitosis y meiosis? ¿Con qué objetivo se realiza cada una?</li>
+<li>La meiosis mantiene la diversidad genética de las poblaciones. Explica esta afirmación.</li>
+<li>V/F: la G2 es la fase más larga de la interfase. (Falso: es muy corta)</li>
+<li>V/F: en el diploteno los homólogos quedan unidos por quiasmas. (Verdadero)</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica sin mirar: Preguntas de la Entrega 6.</p><label class="dom"><input type="checkbox" data-n="52"> Lo domino</label></div>
+</div></article></section>
+<p class="empty" id="empty" hidden>No hay conceptos con ese filtro o esa búsqueda.</p>
+<section class="xs" id="impres"><h2 class="xs-h">⚡ Lo imprescindible (repaso exprés)</h2><p class="meta">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><p>Las 23 preguntas de la hoja del profe con su respuesta corta, más 3 extra muy probables. Si dominas estas 26, tienes la mayoría del examen. <strong>Cómo usarla:</strong> tapa la respuesta, contesta en voz alta, destapa y comprueba. Marca en rojo las que falles y repítelas al final.</p><h3 class='ih'>Plan para hoy (9:25–13:25)</h3><div class="tw"><table>
+<thead>
+<tr>
+<th>Hora</th>
+<th>Qué haces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9:25–10:15</td>
+<td>Preguntas 1–9</td>
+</tr>
+<tr>
+<td>10:15–10:25</td>
+<td>Descanso</td>
+</tr>
+<tr>
+<td>10:25–11:15</td>
+<td>Preguntas 10–17</td>
+</tr>
+<tr>
+<td>11:15–11:25</td>
+<td>Descanso</td>
+</tr>
+<tr>
+<td>11:25–12:20</td>
+<td>Preguntas 18–26</td>
+</tr>
+<tr>
+<td>12:20–12:30</td>
+<td>Descanso</td>
+</tr>
+<tr>
+<td>12:30–13:10</td>
+<td>Segunda vuelta: tapa todas y responde de corrido</td>
+</tr>
+<tr>
+<td>13:10–13:25</td>
+<td>Solo las que marcaste en rojo</td>
+</tr>
+</tbody>
+</table></div>
+<p>Si te sobra tiempo, abre los Apuntes únicamente en el tema que más te cueste.</p><h3 class='ih'>Bloque 1 · Organización y membrana</h3><p><strong>1. Niveles de organización: ¿funciones vitales?, ¿micro o macro?, 3 ejemplos.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Vida</th>
+<th>Tamaño</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atómico</td>
+<td>No</td>
+<td>Micro</td>
+<td>Fe, Ca²⁺, Na⁺</td>
+</tr>
+<tr>
+<td>Molecular</td>
+<td>No</td>
+<td>Micro</td>
+<td>Agua, glucosa, hemoglobina</td>
+</tr>
+<tr>
+<td>Celular</td>
+<td><strong>Sí</strong> (primero con vida)</td>
+<td>Micro</td>
+<td>Neurona, glóbulo rojo, espermatozoide</td>
+</tr>
+<tr>
+<td>Anatómico (tejidos, órganos, sistemas, aparatos)</td>
+<td>Sí</td>
+<td>Tejidos micro; órganos y aparatos macro</td>
+<td>Tejido muscular, corazón, aparato digestivo</td>
+</tr>
+<tr>
+<td>Organismo vivo</td>
+<td>Sí</td>
+<td>Macro</td>
+<td>Ser humano</td>
+</tr>
+</tbody>
+</table></div>
+<p>5 niveles de Wang (1992). Truco A-M-C-A-O.</p>
+<p><strong>2. Diagrama de flujo desde el hierro.</strong></p>
+<p>Fe (atómico) → hemoglobina (molecular) → glóbulo rojo (celular) → sangre / aparato circulatorio (anatómico) → ser humano (organismo vivo). Dibújalo con cajas y flechas.</p>
+<p><strong>3. Funciones vitales: célula frente a organismo.</strong></p>
+<p>Nutrición, relación y reproducción. En la célula, una sola unidad lo hace todo: toma nutrientes y O₂ por la membrana, responde a su entorno y se divide. En el organismo se reparten entre aparatos coordinados (digestivo, respiratorio, circulatorio; nervioso y endocrino) y la reproducción es sexual.</p>
+<p><strong>4. Matriz extracelular y composición.</strong></p>
+<p>Medio en el que están inmersas las células. Sustancia fundamental (gel de agua + proteoglicanos: 95 % GAG, que retienen agua gracias al Na⁺) + proteínas fibrosas (colágeno, elastina, fibronectina, laminina).</p>
+<p><strong>5. Función del colágeno y otro componente igual.</strong></p>
+<p>Colágeno: función estructural, resistencia (25 % de la proteína del cuerpo). Otro con la misma función: <strong>elastina</strong>, en arterias, dermis, pulmones y ligamentos.</p>
+<p><strong>6. ¿Por qué bicapa? Lípido más abundante tras los fosfolípidos.</strong></p>
+<p>Los fosfolípidos son anfipáticos: cabeza hidrófila hacia el agua (fuera y dentro) y colas hidrófobas escondidas en el centro. El siguiente más abundante es el <strong>colesterol</strong>.</p>
+<p><strong>7. Difusión lateral y qué la determina.</strong></p>
+<p>Lípidos y proteínas se desplazan de lado dentro de la misma capa. La determina la <strong>fluidez</strong> (modelo de mosaico fluido, Singer y Nicolson, 1972). No confundir con flip-flop (cambio de capa, muy raro).</p>
+<p><strong>8. Cuatro factores que aumentan la fluidez.</strong></p>
+<p>Más temperatura · cadenas más cortas · ácidos grasos más insaturados · <strong>menos</strong> colesterol.</p>
+<p><strong>9. Glucocálix y funciones.</strong></p>
+<p>Glúcidos de glucolípidos y glucoproteínas solo en la cara externa. Funciones: proteger, dar carga negativa y unir calcio, reconocimiento celular, ayudar al movimiento y la división, anclar proteínas de la MEC.</p><h3 class='ih'>Bloque 2 · Orgánulos y núcleo</h3><p><strong>10. Sistema de endomembranas y relación.</strong></p>
+<p>RE (rugoso y liso), aparato de Golgi, lisosomas y vesículas. Trabajan en cadena: RER fabrica la proteína → vesícula → Golgi cara cis → zona intermedia (modifica) → cara trans → vesículas de secreción, lisosomas o membrana.</p>
+<p><strong>11. Una función de cada uno.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Estructura</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REL</td>
+<td>Síntesis de lípidos; glucogenólisis; almacén de Ca</td>
+</tr>
+<tr>
+<td>Ribosomas</td>
+<td>Síntesis de proteínas</td>
+</tr>
+<tr>
+<td>Mitocondrias</td>
+<td>Respiración celular (ATP)</td>
+</tr>
+<tr>
+<td>Membrana plasmática</td>
+<td>Transporte selectivo; separar dentro y fuera</td>
+</tr>
+<tr>
+<td>Citoesqueleto</td>
+<td>Forma, movimiento y división celular</td>
+</tr>
+<tr>
+<td>Peroxisomas</td>
+<td>Degradar H₂O₂; detoxificación</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>12. Lisosoma primario frente a secundario.</strong></p>
+<p>Primario: recién salido del Golgi, solo tiene enzimas, aún no ha digerido. Secundario: contiene productos de la digestión (ya está digiriendo).</p>
+<p><strong>13. Tres estructuras del citoesqueleto.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>Unidad</th>
+<th>Estructura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microfilamentos (7 nm)</td>
+<td>Actina</td>
+<td>Doble hélice</td>
+</tr>
+<tr>
+<td>Filamentos intermedios (10 nm)</td>
+<td>Proteínas fibrosas</td>
+<td>Fibras resistentes en red</td>
+</tr>
+<tr>
+<td>Microtúbulos (25 nm)</td>
+<td>α y β tubulina</td>
+<td>Dímeros → protofilamentos → tubo hueco</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>14. Poros nucleares.</strong></p>
+<p>Complejos de proteínas en la doble membrana nuclear para el paso de sustancias. Solo pasan las marcadas con una secuencia de aminoácidos, reconocidas por <strong>importinas</strong> (meten) y <strong>exportinas</strong> (sacan). Se forman y desaparecen según el estado de la célula.</p>
+<p><strong>15. Mismo ADN, células distintas.</strong></p>
+<p>Cada tejido inactiva genes distintos compactándolos en <strong>heterocromatina</strong> (80–90 %); solo se transcribe una parte (eucromatina, 10 %). Es la <strong>diferenciación celular</strong>. Ejemplo: solo el páncreas usa el gen de la insulina.</p><h3 class='ih'>Bloque 3 · Fisiología</h3><p><strong>16. Respiración celular.</strong></p>
+<p>Reacciones por las que la célula usa O₂ para oxidar nutrientes y obtener energía (ATP). Glucosa + 6 O₂ → 6 CO₂ + 6 H₂O + ATP. Fases: glucólisis (citosol, 2 ATP) → Krebs (matriz, 2 ATP) → cadena respiratoria (crestas, 32–34 ATP). Total unos 36–38 ATP. No es la respiración pulmonar.</p>
+<p><strong>17. Deshidratación.</strong></p>
+<p>Sí se ven afectadas: el medio queda <strong>hipertónico</strong> y las células pierden agua por ósmosis y se encogen. El conjunto de mecanismos que lo compensan es la <strong>homeostasis</strong> (sed, hormona ADH, el riñón ahorra agua).</p>
+<p><strong>18. Esquema de transporte.</strong></p>
+<pre><code>TRANSPORTE
+├── Por permeabilidad (moléculas pequeñas)
+│   ├── Pasivo (a favor, sin energía): difusión simple (O₂, CO₂)
+│   │                                  difusión facilitada (porinas, permeasas)
+│   └── Activo (en contra, con energía): primario (ATP: ABC, bomba Na⁺/K⁺)
+│                                        secundario (acoplado a iones)
+└── Con vesículas (moléculas grandes)
+    ├── Endocitosis: pinocitosis, fagocitosis, mediada por receptor
+    └── Exocitosis
+</code></pre>
+<p><strong>19. Importancia del transporte.</strong></p>
+<p>Sin transporte no entran nutrientes, no salen desechos y no hay homeostasis. Nivel celular: entrada de glucosa, bomba Na⁺/K⁺, fagocitosis. Nivel organismo: impulso nervioso, absorción intestinal, formación de orina, intercambio de gases en los alvéolos.</p>
+<p><strong>20. Exocitosis y tres ejemplos.</strong></p>
+<p>Una vesícula se une a la membrana y vierte su contenido fuera. Ejemplos: <strong>insulina</strong> (baja la glucosa), <strong>neurotransmisores</strong> (impulso nervioso), <strong>enzimas digestivas</strong> (digestión). También anticuerpos (defensa).</p><h3 class='ih'>Bloque 4 · División celular</h3><p><strong>21. Mitosis frente a meiosis.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>Mitosis</th>
+<th>Meiosis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Divisiones</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Células hijas</td>
+<td>2 idénticas</td>
+<td>4 distintas</td>
+</tr>
+<tr>
+<td>Cromosomas</td>
+<td>2n → 2n</td>
+<td>2n → n</td>
+</tr>
+<tr>
+<td>Sobrecruzamiento</td>
+<td>No</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Objetivo</td>
+<td>Crecer, reparar, renovar tejidos</td>
+<td>Formar gametos</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>22. Verdadero o falso.</strong></p>
+<ul>
+<li>a) Falsa: la citocinesis divide el <strong>citoplasma</strong>; el núcleo lo divide la cariocinesis.</li>
+<li>b) Verdadera: las cromátidas se separan en la anafase.</li>
+<li>c) Falsa: se alinean en la <strong>metafase</strong>; en la prometafase se dirigen hacia el ecuador.</li>
+<li>d) Falsa: el sobrecruzamiento ocurre en la <strong>meiosis</strong> (paquiteno).</li>
+</ul>
+<p><strong>23. Meiosis y diversidad genética.</strong></p>
+<ol>
+<li>Sobrecruzamiento: los homólogos intercambian trozos.</li>
+<li>Reparto al azar de los homólogos en la anafase I (2²³, más de 8 millones de combinaciones).</li>
+<li>Fecundación al azar.</li>
+</ol>
+<p>Cada gameto es único, así que la población es variada y se adapta mejor.</p><h3 class='ih'>Extra muy probables</h3><p><strong>24. Fases de la mitosis (P-P-M-A-T).</strong></p>
+<p>Profase (cromosomas visibles, se rompe la membrana nuclear, se forma el huso) → prometafase (los microtúbulos se anclan a los cinetocoros) → metafase (cromosomas alineados en el ecuador) → anafase (se separan las cromátidas) → telofase (nuevas membranas nucleares) + citocinesis (anillo de actina y miosina).</p>
+<p><strong>25. Profase I de la meiosis (Le-Zi-Pa-Di-Dia).</strong></p>
+<p>Leptoteno (hebras finas) → zigoteno (se emparejan los homólogos: sinapsis, tétradas) → paquiteno (sobrecruzamiento) → diploteno (unidos por quiasmas) → diacinesis (máxima condensación, desaparece la membrana nuclear). En la anafase I se separan homólogos; en la anafase II, cromátidas.</p>
+<p><strong>26. Uniones celulares.</strong></p>
+<p>Ocluyentes (sellan: barrera impermeable) · de anclaje (desmosoma: placas + cadherinas + filamentos de queratina; unión adherente) · comunicantes (gap: conexinas → conexones → poro) · de adhesión (CAM célula–célula, selectinas; SAM célula–MEC, integrinas).</p></section>
+<div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
+<aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
+<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><a class="dt sim" href="../../fisio1/simulacro/">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<details class="db"><summary><span class="dn">1</span><span class="dt2">Niveles de organización y tipos de célula</span><span class="dc" data-b="b0">0/12</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i2" href="#c1"><i></i>1. 1.1 Los 5 niveles de organización</a><a class="dl i2" href="#c2"><i></i>2. 1.2 Nivel atómico</a><a class="dl i2" href="#c3"><i></i>3. 1.3 Nivel molecular</a><a class="dl i2" href="#c4"><i></i>4. 1.4 Nivel celular</a><a class="dl i2" href="#c5"><i></i>5. 1.5 Nivel anatómico</a><a class="dl i2" href="#c6"><i></i>6. 1.6 Nivel organismo vivo</a><a class="dl i2" href="#c7"><i></i>7. 1.7 Tabla resumen de los niveles</a><a class="dl i2" href="#c8"><i></i>8. 1.8 Funciones vitales: célula frente a organismo</a><a class="dl i2" href="#c9"><i></i>9. 1.9 Ejemplo: del hierro al organismo ✏️</a><a class="dl i2" href="#c10"><i></i>10. 1.10 La célula eucariota y la procariota</a><a class="dl i2" href="#c11"><i></i>11. Glosario de la Entrega 1</a><a class="dl i2" href="#c12"><i></i>12. Preguntas de la Entrega 1</a></details>
+<details class="db"><summary><span class="dn">2</span><span class="dt2">Matriz extracelular y membrana plasmática</span><span class="dc" data-b="b1">0/9</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i2" href="#c13"><i></i>13. 2.1 Matriz extracelular: sustancia fundamental</a><a class="dl i2" href="#c14"><i></i>14. 2.2 Proteínas fibrosas de la matriz</a><a class="dl i2" href="#c15"><i></i>15. 2.3 Membrana plasmática: definición, funciones básicas y mosaico fluido</a><a class="dl i2" href="#c16"><i></i>16. 2.4 Composición: lípidos y proteínas</a><a class="dl i2" href="#c17"><i></i>17. 2.5 Fluidez: movimientos y factores</a><a class="dl i2" href="#c18"><i></i>18. 2.6 Asimetría y glucocálix</a><a class="dl i2" href="#c19"><i></i>19. 2.7 Funciones de la membrana plasmática</a><a class="dl i2" href="#c20"><i></i>20. Glosario de la Entrega 2</a><a class="dl i2" href="#c21"><i></i>21. Preguntas de la Entrega 2</a></details>
+<details class="db"><summary><span class="dn">3</span><span class="dt2">Citoplasma y orgánulos</span><span class="dc" data-b="b2">0/11</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i2" href="#c22"><i></i>22. 3.1 El citoplasma y sus partes</a><a class="dl i2" href="#c23"><i></i>23. 3.2 Ribosomas</a><a class="dl i2" href="#c24"><i></i>24. 3.3 Sistema de endomembranas y retículo endoplasmático</a><a class="dl i2" href="#c25"><i></i>25. 3.4 Aparato de Golgi</a><a class="dl i2" href="#c26"><i></i>26. 3.5 Lisosomas</a><a class="dl i2" href="#c27"><i></i>27. 3.6 Mitocondrias</a><a class="dl i2" href="#c28"><i></i>28. 3.7 Peroxisomas e inclusiones</a><a class="dl i2" href="#c29"><i></i>29. 3.8 Citoesqueleto</a><a class="dl i2" href="#c30"><i></i>30. Resumen de funciones (pregunta 11)</a><a class="dl i2" href="#c31"><i></i>31. Glosario de la Entrega 3</a><a class="dl i2" href="#c32"><i></i>32. Preguntas de la Entrega 3</a></details>
+<details class="db"><summary><span class="dn">4</span><span class="dt2">El núcleo</span><span class="dc" data-b="b3">0/6</span></summary><a class="dbk" href="#b3">Ir al inicio del bloque</a><a class="dl i2" href="#c33"><i></i>33. 4.1 El núcleo y la membrana nuclear</a><a class="dl i2" href="#c34"><i></i>34. 4.2 El complejo del poro</a><a class="dl i2" href="#c35"><i></i>35. 4.3 Nucleoplasma y cromatina</a><a class="dl i2" href="#c36"><i></i>36. 4.4 El nucléolo</a><a class="dl i2" href="#c37"><i></i>37. Glosario de la Entrega 4</a><a class="dl i2" href="#c38"><i></i>38. Preguntas de la Entrega 4</a></details>
+<details class="db"><summary><span class="dn">5</span><span class="dt2">Fisiología celular</span><span class="dc" data-b="b4">0/8</span></summary><a class="dbk" href="#b4">Ir al inicio del bloque</a><a class="dl i2" href="#c39"><i></i>39. 5.1 Fisiología celular y funciones vitales de la célula</a><a class="dl i2" href="#c40"><i></i>40. 5.2 Metabolismo y respiración celular</a><a class="dl i2" href="#c41"><i></i>41. 5.3 Homeostasis y transporte pasivo</a><a class="dl i2" href="#c42"><i></i>42. 5.4 Transporte activo</a><a class="dl i2" href="#c43"><i></i>43. 5.5 Endocitosis y exocitosis</a><a class="dl i2" href="#c44"><i></i>44. 5.6 Uniones celulares</a><a class="dl i2" href="#c45"><i></i>45. Glosario de la Entrega 5</a><a class="dl i2" href="#c46"><i></i>46. Preguntas de la Entrega 5</a></details>
+<details class="db"><summary><span class="dn">6</span><span class="dt2">Reproducción celular</span><span class="dc" data-b="b5">0/6</span></summary><a class="dbk" href="#b5">Ir al inicio del bloque</a><a class="dl i2" href="#c47"><i></i>47. 6.1 Ciclo celular e interfase</a><a class="dl i2" href="#c48"><i></i>48. 6.2 Mitosis</a><a class="dl i2" href="#c49"><i></i>49. 6.3 Meiosis</a><a class="dl i2" href="#c50"><i></i>50. 6.4 Mitosis frente a meiosis y diversidad genética</a><a class="dl i2" href="#c51"><i></i>51. Glosario de la Entrega 6</a><a class="dl i2" href="#c52"><i></i>52. Preguntas de la Entrega 6</a></details>
+<p class="dx">Extras</p><a class="dl" href="#impres">⚡ Lo imprescindible</a></div></aside><div id="planOv" hidden role="dialog" aria-modal="true" aria-label="Mi plan de estudio"><div class="pwrap">
+<div class="ptop"><header><p class="eyebrow" id="pl_eb"></p><h1>📅 Mi plan de estudio</h1><p class="sub" id="pl_sub"></p></header><button type="button" class="px" id="planClose" aria-label="Cerrar plan">×</button></div>
+<section class="count" id="pl_count"></section>
+<section class="cfg">
+  <div><p class="k" style="margin:0 0 6px">📆 Fecha del examen</p><input type="date" id="pl_fecha" style="font:inherit;font-size:16px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 8px"></div>
+  <div><p class="k" style="margin:0 0 6px">1 · ¿Cuántos días vas a estudiar?</p><div class="days" id="pl_days"></div></div>
+  <div><p class="k" style="margin:0 0 6px">2 · ¿Cuándo empiezas?</p><div class="seg" id="pl_startSeg"></div></div>
+  <p class="foot" style="margin:0">Cambia la hora de inicio y fin de cada día si hace falta: el plan se reparte solo según el tiempo que tengas.</p>
+</section>
+<div id="pl_msg"></div>
+<div id="pl_plan" style="display:flex;flex-direction:column;gap:14px"></div>
+<p class="foot">Toca <b>Ir →</b> para saltar a esa parte del repaso. Marca la casilla cuando termines cada tarea. Se guarda en este móvil.</p>
+</div></div>
+<div class="scrim" id="scrim" hidden></div><button type="button" class="fab hf" id="hideFab" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideFabTxt">Tapar</span></button><button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab idx" id="drwOpen" aria-label="Abrir índice">☰ Índice</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
+<div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
+ <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
+ <div class="fc-setup" id="fcSetup">
+  <p class="meta" style="margin:0">Pregunta por delante, respuesta por detrás. Toca la tarjeta para <b>encender la luz 💡</b> y darle la vuelta. Luego di si te la sabías.</p>
+  <p class="lbl">1 · ¿Qué bloque?</p><div class="opts" id="oBlk"></div>
+  <p class="lbl">2 · ¿Qué preguntas?</p><div class="opts" id="oKind"></div>
+  <p class="lbl">3 · ¿Cuáles?</p><div class="opts" id="oLv"></div>
+  <button type="button" class="go" id="fcGo">Empezar</button>
+ </div>
+ <div id="fcPlay" hidden style="display:contents">
+  <div class="fc-prog"><span id="fcN"></span><span id="fcS"></span></div>
+  <div class="fc-bar"><i class="g" id="fcG"></i><i class="r" id="fcR"></i></div>
+  <div class="stage"><div class="card3" id="card3" tabindex="0" role="button" aria-label="Dar la vuelta a la tarjeta">
+   <div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></div>
+  <button type="button" class="flipb" id="fcFlip">💡 Ver respuesta</button>
+  <div class="btns" id="fcBtns" hidden><button type="button" class="b-no" id="fcNo">❌ No me la sé</button><button type="button" class="b-si" id="fcSi">✅ Me la sé</button></div>
+ </div>
+ <div class="fc-end" id="fcEnd" hidden></div>
+</div></div>
+</div>
+<script>
+const KEY="fisio1-repaso-v1";
+let st={done:{},f:"0",mode:"read",open:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.done)st=Object.assign(st,s)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const bar=document.querySelector(".bar");
+const setBar=()=>document.documentElement.style.setProperty("--bar","8px");setBar();addEventListener("resize",setBar);
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const cpts=[...document.querySelectorAll(".cpt")];
+const blks=[...document.querySelectorAll(".blk")];
+cpts.forEach(c=>{c._t=norm(c.textContent);const cb=c.querySelector(".dom input");const n=cb.dataset.n;cb.checked=!!st.done[n];c.classList.toggle("done",cb.checked);
+  cb.addEventListener("change",()=>{if(cb.checked)st.done[n]=1;else delete st.done[n];c.classList.toggle("done",cb.checked);save();prog();if(st.f==="pend")apply()});
+  const b=document.createElement("button");b.type="button";b.className="show";b.textContent="Ver respuesta";
+  const q=c.querySelector(".box.q");q.insertBefore(b,q.querySelector(".dom"));
+  b.addEventListener("click",()=>{c.classList.toggle("reveal");b.textContent=c.classList.contains("reveal")?"Ocultar respuesta":"Ver respuesta"})});
+function setOpen(b,v){b.classList.toggle("open",v);b.querySelector(".blk-h").setAttribute("aria-expanded",String(v));if(v)st.open[b.id]=1;else delete st.open[b.id]}
+blks.forEach(b=>{const h=b.querySelector(".blk-h");h.tabIndex=0;h.setAttribute("role","button");setOpen(b,!!st.open[b.id]);
+  const t=()=>{setOpen(b,!b.classList.contains("open"));save()};h.addEventListener("click",t);h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();t()}})});
+document.getElementById("openAll").onclick=()=>{blks.forEach(b=>setOpen(b,true));save()};
+document.getElementById("closeAll").onclick=()=>{blks.forEach(b=>setOpen(b,false));save()};
+function go(id){const el=document.getElementById(id);if(!el)return;const b=el.closest(".blk");if(b){setOpen(b,true);save()}
+  requestAnimationFrame(()=>{const y=el.getBoundingClientRect().top+scrollY-8;scrollTo({top:y,behavior:"smooth"})})}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.getAttribute("href").slice(1))}));
+document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)go(e.target.value);e.target.value=""});
+function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const k=cs.filter(x=>st.done[x.dataset.n]).length;const el=b.querySelector(".bd");if(el)el.textContent=k;const dc=document.querySelector('.dc[data-b="'+b.id+'"]');if(dc){dc.textContent=(k===cs.length?"✓ ":"")+k+"/"+cs.length;dc.classList.toggle("full",k===cs.length)}});
+  const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de "+cpts.length;document.getElementById("pBar").style.width=(n/cpts.length*100)+"%";
+  const p1=cpts.filter(c=>c.dataset.lv==="1"&&!st.done[c.id.slice(1)]).length;document.getElementById("pHint").textContent=p1?"Te faltan "+p1+" 🔴":"¡Todos los 🔴 dominados!"}
+function apply(){const q="";let shown=0;const filt=st.f!=="0";
+  cpts.forEach(c=>{const n=c.id.slice(1);let ok=true;if(st.f==="pend")ok=!st.done[n];else if(st.f!=="0")ok=c.dataset.lv===st.f;if(q)ok=ok&&c._t.includes(q);c.hidden=!ok;if(ok)shown++});
+  blks.forEach(b=>{const any=[...b.querySelectorAll(".cpt")].some(c=>!c.hidden);b.hidden=!any;if(any&&filt)b.classList.add("open")});
+  if(!filt)blks.forEach(b=>b.classList.toggle("open",!!st.open[b.id]));
+  document.getElementById("empty").hidden=shown>0;
+  document.querySelectorAll(".chips .chip").forEach(ch=>ch.setAttribute("aria-pressed",String(ch.dataset.f===st.f)))}
+document.querySelectorAll(".chips .chip").forEach(ch=>ch.addEventListener("click",()=>{st.f=ch.dataset.f;save();apply()}));
+
+function setMode(m){st.mode=m;save();document.body.classList.toggle("test",m==="test");
+  document.getElementById("mRead").setAttribute("aria-pressed",String(m==="read"));document.getElementById("mTest").setAttribute("aria-pressed",String(m==="test"));
+  cpts.forEach(c=>{c.classList.remove("reveal");c.querySelector(".show").textContent="Ver respuesta"})}
+document.getElementById("mRead").onclick=()=>setMode("read");document.getElementById("mTest").onclick=()=>setMode("test");
+function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);
+  document.querySelectorAll(".fd.peek").forEach(x=>x.classList.remove("peek"));setBar();
+  const hf=document.getElementById("hideFab");hf.setAttribute("aria-pressed",String(v));document.getElementById("hideFabTxt").textContent=v?"🙈 Tapadas":"💡 Tapar"}
+document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide));
+document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
+setHide(!!st.hide);
+setMode(st.mode);apply();prog();
+if(/^#[\w-]+$/.test(location.hash)){const h=location.hash.slice(1);setTimeout(()=>go(h),300)}
+const drw=document.getElementById("drw"),scrim=document.getElementById("scrim");
+const wide=()=>matchMedia("(min-width:1100px)").matches;
+function drwSet(v){drw.classList.toggle("on",v);scrim.hidden=!v;document.body.style.overflow=v&&!wide()?"hidden":""}
+document.getElementById("drwOpen").onclick=()=>drwSet(true);document.getElementById("drwClose").onclick=()=>drwSet(false);scrim.onclick=()=>drwSet(false);
+drw.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(!wide())drwSet(false)}));
+document.getElementById("fcOpen2").addEventListener("click",()=>{if(!wide())drwSet(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drw.classList.contains("on"))drwSet(false)});
+const upB=document.getElementById("upBtn");addEventListener("scroll",()=>{upB.hidden=scrollY<600},{passive:true});upB.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* ===== Buscador ===== */
+(function(){
+const qi=document.getElementById("q"),res=document.getElementById("res");
+const U=[];
+const txt=el=>{const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);const out=[];while(w.nextNode()){const t=w.currentNode;if(t.parentNode.closest(".fl,.lbl,.tag,.show,.dom,.srcl,figcaption"))continue;const v=t.nodeValue.trim();if(v)out.push(v)}return out.join(" ")};
+const add=(el,kind,title,text)=>U.push({el,kind,title,text,n:norm(text),nt:norm(title)});
+cpts.forEach(c=>{const t=c.querySelector("h3").childNodes[0].textContent.trim();add(c,"Concepto "+c.id.slice(1)+" · "+c.closest(".blk").querySelector(".bt").textContent,t,txt(c))});
+document.querySelectorAll("#hoja .pq").forEach(d=>add(d,"20 preguntas de la hoja",d.querySelector("summary").textContent,txt(d)));
+document.querySelectorAll("#impres .pq").forEach(d=>add(d,"Lo imprescindible",d.querySelector("summary").textContent,txt(d)));
+[["glosario","Glosario"],["trampas","Trampas"],["numeros","Números clave"]].forEach(([id,k])=>document.querySelectorAll("#"+id+" tbody tr").forEach(r=>add(r,k,r.cells[0].textContent,txt(r))));
+document.querySelectorAll("#chequeo li").forEach(li=>add(li,"Chequeo final",li.textContent,li.textContent));
+const escH=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function snip(text,q){const n=norm(text);const i=n.indexOf(q);if(i<0)return escH(text.slice(0,110))+"…";
+  const a=Math.max(0,i-50),b=Math.min(text.length,i+q.length+70);
+  return (a?"…":"")+escH(text.slice(a,i))+"<mark>"+escH(text.slice(i,i+q.length))+"</mark>"+escH(text.slice(i+q.length,b))+(b<text.length?"…":"")}
+function markT(t,q){const n=norm(t);const i=n.indexOf(q);return i<0?escH(t):escH(t.slice(0,i))+"<mark>"+escH(t.slice(i,i+q.length))+"</mark>"+escH(t.slice(i+q.length))}
+let found=[];
+function run(){const raw=qi.value.trim();const q=norm(raw);if(q.length<2){res.hidden=true;return}
+  found=U.filter(u=>u.n.includes(q)).sort((a,b)=>(b.nt.includes(q)-a.nt.includes(q)));
+  res.hidden=false;
+  if(!found.length){res.innerHTML=`<div class="none">No aparece «${escH(raw)}» en el repaso. Prueba con otra palabra o sin la última letra.</div>`;return}
+  res.innerHTML=`<div class="rh"><span>${found.length} resultado${found.length>1?"s":""} para «${escH(raw)}»</span><button type="button" id="resX">Cerrar</button></div>`+
+   found.slice(0,60).map((u,k)=>`<button type="button" class="ri" data-k="${k}"><span class="rk">${escH(u.kind)}</span><span class="rt">${markT(u.title.slice(0,120),q)}</span><span class="rs">${snip(u.text.replace(/\s+/g," "),q)}</span></button>`).join("");
+  document.getElementById("resX").onclick=()=>{qi.value="";res.hidden=true};
+  res.querySelectorAll(".ri").forEach(b=>b.onclick=()=>jump(found[+b.dataset.k],q))}
+function jump(u,q){const el=u.el;const b=el.closest(".blk");if(b){setOpen(b,true);save()}if(b&&b.hidden){st.f="0";save();apply()}
+  if(el.tagName==="DETAILS")el.open=true;const d=el.closest("details");if(d)d.open=true;
+  if(el.closest(".cpt")&&document.body.classList.contains("test")){const c=el.closest(".cpt");c.classList.add("reveal")}
+  highlight(el,q);
+  requestAnimationFrame(()=>{const tgt=firstMark(el)||el;const y=tgt.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:"smooth"});
+    el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")})}
+function clearHL(){document.querySelectorAll("mark.sh").forEach(m=>{const t=document.createTextNode(m.textContent);m.replaceWith(t);t.parentNode&&t.parentNode.normalize()})}
+function highlight(root,q){clearHL();const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(t=>{const n=norm(t.nodeValue);let i=n.indexOf(q);if(i<0||t.parentNode.closest("script,style,.res"))return;
+    const frag=document.createDocumentFragment();let last=0;const s=t.nodeValue;
+    while(i>=0){frag.append(s.slice(last,i));const m=document.createElement("mark");m.className="sh";m.style.cssText="background:#ffe066;color:#1d1828;border-radius:3px";m.textContent=s.slice(i,i+q.length);frag.append(m);last=i+q.length;i=n.indexOf(q,last)}
+    frag.append(s.slice(last));t.replaceWith(frag)})}
+function firstMark(el){return el.querySelector("mark.sh")}
+qi.addEventListener("input",run);qi.addEventListener("focus",run);
+qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDefault();jump(found[0],norm(qi.value.trim()))}if(e.key==="Escape"){res.hidden=true}});
+})();
+/* ===== Mi plan ===== */
+(function(){
+
+const EXAM={id:"fisio1",em:"🫀",asig:"Fisiopatología",examen:"1er examen",fecha:"2026-10-13",horario:["8:00","13:25"],repaso:"#",simulacro:"../../fisio1/simulacro/",
+  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,m:+b.dataset.min||0,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
+const PKEY="plan-estudio-v1-"+EXAM.id;
+let ps={n:null,start:"hoy",times:{},done:{}};
+try{const s=JSON.parse(localStorage.getItem(PKEY)||"null");if(s)ps=Object.assign(ps,s)}catch(e){}
+const psave=()=>{try{localStorage.setItem(PKEY,JSON.stringify(ps))}catch(e){}};
+const $=id=>document.getElementById("pl_"+id);
+const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const today=new Date();today.setHours(0,0,0,0);
+const fmtD=d=>DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+let exam,left;const maxN=10;
+function setExam(){const f=ps.fecha||EXAM.fecha||iso(new Date(today.getTime()+7*864e5));exam=new Date(f+"T00:00:00");left=Math.round((exam-today)/864e5);
+  $("fecha").value=f;
+  $("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
+  $("sub").textContent="Examen: "+fmtD(exam)+(ps.fecha||EXAM.fecha?"":" (fecha de ejemplo: pon la tuya arriba)")+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar.";
+  $("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`}
+setExam();
+if(!ps.n)ps.n=Math.min(maxN,Math.max(1,left));
+$("fecha").addEventListener("change",e=>{if(!e.target.value)return;ps.fecha=e.target.value;setExam();ps.n=Math.min(maxN,Math.max(1,left));psave();
+  $("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(+x.dataset.n===ps.n)));prender()});
+$("days").innerHTML=Array.from({length:maxN},(_,i)=>`<button type="button" class="dchip" data-n="${i+1}" aria-pressed="${ps.n===i+1}" aria-label="${i+1} días">${i+1}</button>`).join("");
+$("days").querySelectorAll(".dchip").forEach(b=>b.onclick=()=>{ps.n=+b.dataset.n;psave();$("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+$("startSeg").innerHTML=[["hoy","Hoy"],["manana","Mañana"]].map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${ps.start===k}">${t}</button>`).join("");
+$("startSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{ps.start=b.dataset.k;psave();$("startSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+
+/* ---------- coste en minutos ---------- */
+const MIN={1:9,2:6,3:3};const CARDS=8;
+const bCost=b=>b.m||(b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS);
+const REVIEW=[
+ {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
+ {t:"📝 Simulacro completo",d:"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
+ {t:"🩹 Repasa lo que fallaste en el Simulacro",d:"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».",m:30,u:EXAM.simulacro,rev:1},
+ {t:"⚠️ Trampas y chequeo final",d:"Repasa las trampas y contesta el chequeo final sin mirar.",m:25,u:"#trampas",rev:1},
+ {t:"⚠️ Trampas y 🔢 números clave",d:"Las parejas que se confunden y las cifras (%, µm, mm/h…).",m:20,u:"#trampas",rev:1},
+ {t:"⚡ Lo imprescindible",d:"Pregunta → respuesta corta. Lo último antes de dormir.",m:20,u:"#impres",rev:1}];
+const WARM={t:"🔁 Calentamiento: lo que fallaste ayer",d:"🃏 Tarjetas → «Solo las que fallé». Así lo de ayer no se te olvida.",m:15,u:"#fc",rev:1};
+const toMin=s=>{const [h,m]=(s||"0:0").split(":").map(Number);return h*60+m};
+const toHM=m=>{m=((m%1440)+1440)%1440;return Math.floor(m/60)+":"+String(m%60).padStart(2,"0")};
+function dayDate(i){const d=new Date(today);d.setDate(d.getDate()+i+(ps.start==="manana"?1:0));return d}
+function defTimes(i){const d=dayDate(i);const isToday=d.getTime()===today.getTime();
+  if(isToday){const now=new Date();let s=Math.ceil((now.getHours()*60+now.getMinutes()+15)/15)*15;s=Math.max(s,8*60);const e=Math.max(s+60,22*60);return [toHM(s),toHM(Math.min(e,23*60+30))]}
+  return EXAM.horario}
+function times(i){const k=dayDate(i).toISOString().slice(0,10);return ps.times[k]||defTimes(i)}
+function setTime(i,which,v){const k=dayDate(i).toISOString().slice(0,10);const t=times(i).slice();t[which]=v;ps.times[k]=t;psave();prender()}
+
+function plan(N){
+  const caps=Array.from({length:N},(_,i)=>{const [a,b]=times(i);return Math.max(30,toMin(b)-toMin(a))});
+  const days=Array.from({length:N},()=>[]);
+  const blocks=EXAM.blocks.map(b=>({b,m:bCost(b)}));const total=blocks.reduce((s,x)=>s+x.m,0);
+  let mode="full";
+  if(N===1){
+    const rojo=EXAM.blocks.map(b=>({b,cs:b.c.filter(c=>c.lv===1)})).filter(x=>x.cs.length);
+    const avail=caps[0]-80;
+    days[0].push({t:"🔴 Solo lo imprescindible de cada bloque",d:"En el Repaso pulsa el filtro <b>🔴 Imprescindibles</b> y repasa: "+rojo.map(x=>`<b>${x.b.n}</b> ${x.b.t} (${x.cs.map(c=>c.n).join(", ")})`).join(" · "),m:Math.max(60,avail),u:"#fc"});
+    days[0].push(REVIEW[3],REVIEW[5]);
+    return {days,caps,mode:"rojo"};}
+  const lastRev=REVIEW;const revM=lastRev.reduce((s,x)=>s+x.m,0);
+  // capacidad para bloques: días 1..N-1 (menos calentamiento) + lo que sobre del último día
+  const W=.82;/* tiempo real de estudio descontando descansos */
+  const learnCaps=caps.map((c,i)=>i<N-1?c*W-(i>0?WARM.m:0):Math.max(0,c*W-WARM.m-revM));
+  const learnTotal=learnCaps.reduce((s,x)=>s+x,0);
+  const f=Math.min(1,learnTotal/total);if(f<1)mode=f<.7?"rojo":"rapido";
+  // repartir bloques en orden según capacidad acumulada
+  const cum=[];let acc=0;const tf=total*f;learnCaps.forEach(c=>{acc+=c;cum.push(acc/learnTotal*tf)});
+  let pos=0;
+  blocks.forEach(x=>{const m=x.m*f;const mid=pos+m/2;let d=cum.findIndex(c=>mid<=c);if(d<0)d=N-1;
+    x.day=d;pos+=m;x.mm=Math.round(m)});
+  for(let i=0;i<N;i++){
+    if(i>0)days[i].push(WARM);
+    blocks.filter(x=>x.day===i).forEach(x=>{const r=x.b.c.filter(c=>c.lv===1);
+      days[i].push({t:`Bloque ${x.b.n} · ${x.b.t}`,blk:x.b,m:x.mm,u:"#"+x.b.id,
+        d:(mode==="rojo"?"<b>Poco tiempo:</b> lee bien los 🔴 y los demás por encima. ":"")+"Lee los conceptos "+x.b.c[0].n+"–"+x.b.c[x.b.c.length-1].n+" y al terminar haz sus 🃏 Tarjetas. "+(r.length?"🔴 Imprescindibles: <b>"+r.map(c=>c.n).join(", ")+"</b>.":"")})});
+    if(i===N-1)days[i].push(...lastRev);}
+  return {days,caps,mode,f};
+}
+function schedule(tasks,start){let t=toMin(start),run=0;const out=[];
+  tasks.forEach((x,k)=>{out.push({...x,a:t,b:t+x.m});t+=x.m;run+=x.m;
+    if(run>=45&&k<tasks.length-1){out.push({brk:1,t:"☕ Descanso: levántate, agua, nada de móvil",a:t,b:t+10,m:10});t+=10;run=0}});
+  return out}
+function prender(){
+  const N=ps.n;const P=plan(N);
+  const msg=$("msg");
+  if(left>0&&N>left)msg.innerHTML=`<p class="note warn">⚠️ Elegiste ${N} días pero solo quedan ${left} antes del examen. Los últimos días caerían después del examen.</p>`;
+  else if(N===1)msg.innerHTML=`<p class="note warn">⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴 y "Lo imprescindible".</p>`;
+  else if(P.mode==="rojo")msg.innerHTML=`<p class="note warn">⚠️ <b>El tiempo es justo.</b> En cada bloque céntrate en los conceptos 🔴 y los demás léelos por encima. Si puedes, alarga las horas de algún día.</p>`;
+  else if(P.mode==="rapido")msg.innerHTML=`<p class="note warn">⏱️ Vas un poco justo: en cada bloque dale prioridad a los 🔴. Si puedes, añade algo de tiempo a algún día.</p>`;
+  else msg.innerHTML=`<p class="note ok">✅ Te da tiempo de todo. Sigue el plan en orden y tacha cada tarea.</p>`;
+  $("plan").innerHTML=P.days.map((tasks,i)=>{const d=dayDate(i);const [a,b]=times(i);const sch=schedule(tasks,a);
+    const used=sch.length?sch[sch.length-1].b-toMin(a):0;const over=used>P.caps[i]+10;
+    const real=sch.filter(x=>!x.brk);const k=dayDate(i).toISOString().slice(0,10);
+    const doneN=real.filter((x,j)=>ps.done[k+"|"+x.t]).length;
+    const isToday=d.getTime()===today.getTime();
+    const bl=real.filter(x=>x.blk).map(x=>x.blk);const rng=bl.length?(bl.length===1?"Bloque "+bl[0].n:"Bloques "+bl[0].n+" a "+bl[bl.length-1].n):"";
+    const goal=i===N-1&&N>1?(rng?rng+" + Repaso final y Simulacro":"Repaso final y Simulacro"):rng;const names=bl.map(b=>b.t).join(" · ");
+    return `<article class="day" id="pl_d${i}"><div class="day-h">
+      <div class="day-top"><span class="when">Día ${i+1} de ${N} · ${fmtD(d)}</span>${isToday?'<span class="badge today">HOY</span>':""}${doneN===real.length&&real.length?'<span class="badge done">✓ HECHO</span>':""}</div>
+      <h2>${goal||"Repaso"}</h2>${names?`<p class="goal">${names}</p>`:""}
+      <div class="times">De <input type="time" id="pl_ts${i}" value="${a.padStart(5,"0")}" aria-label="Hora de inicio día ${i+1}"> a <input type="time" id="pl_te${i}" value="${b.padStart(5,"0")}" aria-label="Hora de fin día ${i+1}"> · ${Math.round(P.caps[i]/6)/10} h${over?' · <b style="color:var(--warn)">el plan acaba a las '+toHM(sch[sch.length-1].b)+'</b>':""}</div>
+      <div class="dprog"><i style="width:${real.length?doneN/real.length*100:0}%"></i></div></div>
+      <ul class="tasks">${sch.map(x=>x.brk?`<li class="task brk"><span class="t-title"><span class="t-time">${toHM(x.a)}</span> ${x.t}</span></li>`:
+        `<li class="task${x.rev?" rev":""}${ps.done[k+"|"+x.t]?" done":""}"><input type="checkbox" data-k="${k}|${x.t.replace(/"/g,"&quot;")}" ${ps.done[k+"|"+x.t]?"checked":""} aria-label="Hecho: ${x.t.replace(/"/g,"&quot;")}"><div><span class="t-time">${toHM(x.a)}–${toHM(x.b)} · ${x.m} min</span><div class="t-title">${x.blk?`<span class="dot d1"></span>`:""}${x.t}</div><div class="t-det">${x.d||""}</div>${x.u?`<a class="t-go" href="${x.u}"${x.u.startsWith("#")?"":' target="_blank" rel="noopener"'}>${x.u.startsWith("#")?"Ir →":"Abrir →"}</a>`:""}</div></li>`).join("")}</ul></article>`}).join("");
+  P.days.forEach((_,i)=>{$("ts"+i).onchange=e=>setTime(i,0,e.target.value);$("te"+i).onchange=e=>setTime(i,1,e.target.value)});
+  document.querySelectorAll("#planOv .task input").forEach(c=>c.onchange=()=>{if(c.checked)ps.done[c.dataset.k]=1;else delete ps.done[c.dataset.k];psave();prender()});
+}
+
+const ov=document.getElementById("planOv");
+function openPlan(){ov.hidden=false;document.body.style.overflow="hidden";prender();ov.scrollTop=0}
+function closePlan(){ov.hidden=true;document.body.style.overflow=""}
+document.getElementById("planOpen").onclick=openPlan;
+const pb=document.getElementById("planOpen2");if(pb)pb.onclick=()=>{if(typeof drwSet==="function"&&!wide())drwSet(false);openPlan()};
+document.getElementById("planClose").onclick=closePlan;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ov.hidden)closePlan()});
+ov.addEventListener("click",e=>{const a=e.target.closest("a.t-go");if(!a)return;const h=a.getAttribute("href");if(!h.startsWith("#"))return;e.preventDefault();closePlan();
+  if(h==="#fc"){document.getElementById("fcOpen").click();return}go(h.slice(1))});
+/* resumen de hoy en la tarjeta de entrada */
+{prender();const td=[...ov.querySelectorAll(".day")].find(d=>d.querySelector(".badge.today"));
+  if(td)document.getElementById("planToday").textContent="Hoy toca: "+td.querySelector("h2").textContent;}
+})();
+
+/* ===== Temporizador ===== */
+(function(){
+st.tm=st.tm||{a:null,s:{}};const T=st.tm;
+const pill=document.getElementById("tpill");let iv=null,beeped=false;
+const f2=n=>String(Math.floor(n)).padStart(2,"0");
+const fmt=sec=>{sec=Math.abs(sec);const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=Math.floor(sec%60);return (h?h+":"+f2(m):f2(m))+":"+f2(s)};
+const blkOf=id=>document.getElementById(id);
+const elapsed=()=>{const a=T.a;if(!a)return 0;return (a.acc+(a.paused?0:Date.now()-a.start))/1000};
+function beep(){try{const C=new (window.AudioContext||window.webkitAudioContext)();[0,.25,.5].forEach(t=>{const o=C.createOscillator(),g=C.createGain();o.frequency.value=880;o.connect(g);g.connect(C.destination);g.gain.setValueAtTime(.2,C.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,C.currentTime+t+.2);o.start(C.currentTime+t);o.stop(C.currentTime+t+.22)})}catch(e){}
+  try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}}
+function tick(){const a=T.a;if(!a){pill.hidden=true;return}
+  const tot=a.min*60,el=elapsed(),left=tot-el,over=left<0;
+  pill.hidden=false;pill.classList.toggle("over",over);
+  document.getElementById("tpB").textContent=(over?"⏰ Te pasaste · ":"⏱ ")+a.name+(a.paused?" · en pausa":"");
+  document.getElementById("tpT").textContent=(over?"+":"")+fmt(left);
+  document.getElementById("tpBar").style.width=Math.min(100,el/tot*100)+"%";
+  document.getElementById("tpPause").textContent=a.paused?"Seguir":"Pausa";
+  document.getElementById("tpPause").setAttribute("aria-label",a.paused?"Seguir":"Pausar");
+  if(over&&!beeped&&!a.beeped){beeped=true;a.beeped=1;save();beep()}}
+function run(){clearInterval(iv);if(T.a){iv=setInterval(tick,500)}tick()}
+function startB(b){const name=b.querySelector(".bn").textContent.replace("BLOQUE","Bloque")+" · "+b.querySelector(".bt").textContent;
+  T.a={b:b.id,name,min:+b.dataset.min,start:Date.now(),acc:0,paused:false};beeped=false;save();setOpen(b,true);save();run();
+  requestAnimationFrame(()=>{const y=b.getBoundingClientRect().top+scrollY-70;scrollTo({top:y,behavior:"smooth"})});rowAll()}
+function pause(){const a=T.a;if(!a)return;if(a.paused){a.start=Date.now();a.paused=false}else{a.acc+=Date.now()-a.start;a.paused=true}save();tick()}
+function fin(){const a=T.a;if(!a)return;T.s[a.b]=Math.max(1,Math.round(elapsed()/60));T.a=null;save();run();rowAll()}
+function cancel(){T.a=null;save();run();rowAll()}
+document.getElementById("tpPause").onclick=pause;document.getElementById("tpFin").onclick=fin;document.getElementById("tpX").onclick=cancel;
+function row(b){let r=b.querySelector(".tmr");if(!r){r=document.createElement("div");r.className="tmr";b.querySelector(".blk-h").after(r)}
+  const m=+b.dataset.min,sp=T.s[b.id],act=T.a&&T.a.b===b.id;
+  r.innerHTML=`<p>${sp?`<span class="tm-done">✓ Lo hiciste en ${sp} min</span> (previsto ${m})`:`⏱ Tiempo para aprenderte este bloque: <b>${m} min</b>`}</p>`+(act?`<p><b>⏳ En marcha…</b></p>`:`<button type="button">${sp?"↻ Otra vez":"▶ Empezar"}</button>`);
+  const bt=r.querySelector("button");if(bt)bt.onclick=()=>{if(T.a&&T.a.b!==b.id){fin()}startB(b)}}
+function rowAll(){blks.forEach(row)}
+rowAll();run();
+document.addEventListener("visibilitychange",tick);
+})();
+
+/* ===== Leyenda desplegable ===== */
+(function(){
+const lg=document.querySelector(".top .legend");if(!lg)return;
+const NAMES={1:"🔴 Imprescindibles",2:"🟠 Importantes",3:"🔵 Leer una vez"},COL={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const panel=document.createElement("div");panel.className="lvpanel";panel.id="lvpanel";panel.hidden=true;lg.after(panel);
+let cur=null;
+const tags=[...lg.querySelectorAll(".tag")];
+tags.forEach(t=>{const lv=t.classList.contains("lv1")?1:t.classList.contains("lv2")?2:3;
+  const b=document.createElement("button");b.type="button";b.className=t.className;b.innerHTML=t.innerHTML;b.setAttribute("aria-expanded","false");b.setAttribute("aria-controls","lvpanel");t.replaceWith(b);
+  b.onclick=()=>{if(cur===lv){cur=null;panel.hidden=true;b.setAttribute("aria-expanded","false");return}
+    cur=lv;lg.querySelectorAll(".tag").forEach(x=>x.setAttribute("aria-expanded",String(x===b)));show(lv)}});
+function show(lv){panel.style.setProperty("--lc",COL[lv]);
+  const cs=cpts.filter(c=>c.dataset.lv===String(lv));let h=`<h4>${NAMES[lv]} · ${cs.length} conceptos</h4>`,last="";
+  cs.forEach(c=>{const bt=c.closest(".blk").querySelector(".bt").textContent;if(bt!==last){h+=`<p class="lg">${c.closest(".blk").querySelector(".bn").textContent} · ${bt}</p>`;last=bt}
+    const t=c.querySelector("h3").childNodes[0].textContent.trim();h+=`<a href="#${c.id}" class="${st.done[c.id.slice(1)]?"ok":""}"><b>${c.id.slice(1)}</b>${t}</a>`});
+  panel.innerHTML=h;panel.hidden=false;
+  panel.querySelectorAll("a").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.getAttribute("href").slice(1))})}
+})();
+/* ===== Tarjetas ===== */
+(function(){
+const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
+const LVC={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const ALL=[];
+cpts.forEach(c=>{const b=c.closest(".blk");const bt=b.querySelector(".bt").textContent;const n=c.id.slice(1);const lv=c.dataset.lv;
+  const qt=c.querySelector(".qt");const prof=[...c.querySelectorAll(".prof-t")].map(x=>x.innerHTML).join("");
+  const src=c.querySelector(".srcl").textContent;
+  if(qt)ALL.push({id:"q"+n,blk:b.id,bt,lv,kind:"q",q:qt.textContent,a:prof,src,title:n+". "+c.querySelector("h3").childNodes[0].textContent});
+  c.querySelectorAll(".defs li").forEach((li,i)=>{const ok=li.querySelector(".fd.ok");if(!ok)return;
+    const term=li.querySelector(".term").textContent;const txt=ok.textContent.replace(/^📌[^«]*/,"");
+    ALL.push({id:"d"+n+"_"+i,blk:b.id,bt,lv,kind:"d",q:"¿Cómo define la diapositiva: «"+term+"»?",a:'<p class="formal">'+txt+"</p>",src,title:term})})});
+st.fc=st.fc||{bad:{}};
+let cfg={blk:"all",kind:"all",lv:"all"},deck=[],i=0,ok=0,ko=0,flipped=false;
+const blkOpts=[["all","Todos los bloques",""]].concat(blks.map(b=>[b.id,b.querySelector(".bn").textContent.replace("BLOQUE","Bloque"),b.querySelector(".bt").textContent]));
+function opts(el,list,key){el.innerHTML=list.map(([v,t,sm])=>`<button type="button" class="opt" data-v="${v}" aria-pressed="${cfg[key]===v}">${t}${sm?`<small>${sm}</small>`:""}</button>`).join("");
+  el.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cfg[key]=b.dataset.v;el.querySelectorAll(".opt").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));count()})}
+function pool(){return ALL.filter(c=>(cfg.blk==="all"||c.blk===cfg.blk)&&(cfg.kind==="all"||c.kind===cfg.kind)&&(cfg.lv==="all"||(cfg.lv==="bad"?st.fc.bad[c.id]:c.lv===cfg.lv)))}
+function count(){const n=pool().length;$("fcGo").textContent=n?"Empezar · "+n+" tarjetas":"No hay tarjetas con esa elección";$("fcGo").disabled=!n}
+function setup(){opts($("oBlk"),blkOpts,"blk");
+  opts($("oKind"),[["all","Todo","preguntas + definiciones"],["q","❓ Preguntas de cada concepto",""],["d","📌 Definiciones de la diapositiva","las del examen"]],"kind");
+  const nb=Object.keys(st.fc.bad).length;
+  opts($("oLv"),[["all","Todas",""],["1","🔴 Solo imprescindibles",""],["bad","❌ Solo las que fallé",nb+" guardadas"]],"lv");count();
+  $("fcSetup").hidden=false;$("fcPlay").hidden=true;$("fcPlay").style.display="none";$("fcEnd").hidden=true}
+function open(){fc.hidden=false;document.body.style.overflow="hidden";setup()}
+function close(){fc.hidden=true;document.body.style.overflow=""}
+$("fcOpen").onclick=open;$("fcOpen2").onclick=open;$("fcClose").onclick=close;
+document.addEventListener("keydown",e=>{if(fc.hidden)return;if(e.key==="Escape")close()});
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function start(list){deck=shuffle(list.slice());i=0;ok=0;ko=0;$("fcSetup").hidden=true;$("fcEnd").hidden=true;$("fcPlay").hidden=false;$("fcPlay").style.display="contents";show()}
+$("fcGo").onclick=()=>start(pool());
+function show(){const c=deck[i];flipped=false;$("card3").classList.remove("flip");$("fcFlip").hidden=false;$("fcBtns").hidden=true;
+  $("ffront").style.setProperty("--cc",LVC[c.lv]);
+  $("ffront").innerHTML=`<span class="kind">${c.kind==="d"?"📌 Definición de la diapositiva":"❓ Pregunta"} · ${c.bt}</span><span class="bulb" aria-hidden="true">💡</span><span class="qq">${c.q}</span><span class="hint">Piensa la respuesta (o dila en voz alta) y toca para encender la luz</span>`;
+  $("fback").innerHTML=`<span class="kind">💡 Respuesta · ${c.title}</span><div class="ans">${c.a}</div><span class="src">${c.src}</span>`;
+  $("fcN").textContent="Tarjeta "+(i+1)+" de "+deck.length;$("fcS").textContent="✅ "+ok+" · ❌ "+ko;
+  $("fcG").style.width=(ok/deck.length*100)+"%";$("fcR").style.width=(ko/deck.length*100)+"%"}
+function flip(){flipped=!flipped;$("card3").classList.toggle("flip",flipped);if(flipped){$("fcFlip").hidden=true;$("fcBtns").hidden=false}}
+$("card3").onclick=e=>{if(e.target.closest("a"))return;flip()};$("card3").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+$("fcFlip").onclick=flip;
+function answer(good){const c=deck[i];if(good){ok++;delete st.fc.bad[c.id]}else{ko++;st.fc.bad[c.id]=1}save();i++;if(i<deck.length)show();else end()}
+$("fcSi").onclick=()=>answer(true);$("fcNo").onclick=()=>answer(false);
+function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pct=Math.round(ok/deck.length*100);const fails=deck.filter(c=>st.fc.bad[c.id]);
+  const msg=pct>=90?"¡Lo tienes dominado! 🔥":pct>=70?"¡Muy bien! Repasa las que fallaste.":pct>=50?"Vas bien: repite las falladas.":"Toca repasar este bloque y volver a intentarlo.";
+  $("fcEnd").innerHTML=`<span class="kind" style="font-family:var(--f-mono);color:var(--muted)">RESULTADO</span><span class="score">${ok}/${deck.length}</span><p style="margin:0;font-weight:700">${msg}</p>`+
+   (fails.length?`<button type="button" class="go" id="fcRe">🔁 Repetir las ${fails.length} que fallé</button>`:"")+`<button type="button" class="opt" id="fcAgain" style="text-align:center">🃏 Elegir otras tarjetas</button><button type="button" class="opt" id="fcBack" style="text-align:center">Volver al repaso</button>`;
+  $("fcEnd").hidden=false;if(fails.length)$("fcRe").onclick=()=>start(fails);$("fcAgain").onclick=setup;$("fcBack").onclick=close}
+})();
+
+</script>
+
+</body>
+</html>

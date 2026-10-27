@@ -404,7 +404,7 @@ a.dt{text-decoration:none;display:inline-flex;align-items:center}
   <div class="pbar"><i id="pBar"></i></div>
 </div>
 <button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
-
+<a class="simlink" href="../../bio2/simulacro/"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>
 
 <section class="blk" id="b0" data-min="25"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">El cromosoma</span><span class="bc">⏱ 25 min · Conceptos 1–3 · 2 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv3" id="c1" data-lv="3">
 <header class="c-h"><span class="c-n">1</span><h3>Citogenética (portada)</h3></header>
@@ -1753,7 +1753,7 @@ Imagen: cariotipo femenino con bandas G (1-22 + X).</li>
 </table></div></section>
 <div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
 <aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
-<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><a class="dt sim" href="../../bio2/simulacro/">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
 <details class="db"><summary><span class="dn">1</span><span class="dt2">El cromosoma</span><span class="dc" data-b="b0">0/3</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i3" href="#c1"><i></i>1. Citogenética (portada)</a><a class="dl i1" href="#c2"><i></i>2. Definición de cromosoma</a><a class="dl i1" href="#c3"><i></i>3. Cuándo se ven los cromosomas: la metafase</a></details>
 <details class="db"><summary><span class="dn">2</span><span class="dt2">Estructura del cromosoma</span><span class="dc" data-b="b1">0/1</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i1" href="#c4"><i></i>4. Partes del cromosoma</a></details>
 <details class="db"><summary><span class="dn">3</span><span class="dt2">Clasificación según el centrómero</span><span class="dc" data-b="b2">0/2</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i1" href="#c5"><i></i>5. Los 4 tipos de cromosoma</a><a class="dl i3" href="#c6"><i></i>6. Reconocerlos en el dibujo (diapositiva 6, imagen)</a></details>
@@ -1897,7 +1897,7 @@ qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDef
 /* ===== Mi plan ===== */
 (function(){
 
-const EXAM={id:"bio2",em:"🧬",asig:"Biología Molecular",examen:"2º examen",fecha:"",horario:["8:00","13:25"],repaso:"#",simulacro:"",
+const EXAM={id:"bio2",em:"🧬",asig:"Biología Molecular",examen:"2º examen",fecha:"",horario:["8:00","13:25"],repaso:"#",simulacro:"../../bio2/simulacro/",
   blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,m:+b.dataset.min||0,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
 const PKEY="plan-estudio-v1-"+EXAM.id;
 let ps={n:null,start:"hoy",times:{},done:{}};

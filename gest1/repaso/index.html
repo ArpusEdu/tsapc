@@ -1,0 +1,1924 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:30;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
+(function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
+</head>
+<body>
+<title>Gestión 1 · Sector sanitario</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
+  --accent:#7a1f3d; --accent-ink:#ffffff; --blk:#7a1f3d; --blk-ink:#ffffff;
+  --lv1:#d3264a; --lv1-soft:#fdebef; --lv2:#d9730a; --lv2-soft:#fdf1e3; --lv3:#2c6bd2; --lv3-soft:#e8effc;
+  --def-soft:#f1eef7; --und-soft:#eaf6ef; --und:#1d6a44; --tip-soft:#fff4d6; --tip:#7a5000; --q:#7a1f3d; --q-soft:#fbf0f4;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);line-height:1.55}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:1.25em}
+li{margin:2px 0}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.wrap>*{min-width:0}
+/* cabecera */
+.top{padding:6px 0 0}
+.eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+.top h1{font-size:1.85em;line-height:1.1;margin:6px 0 4px}
+.sub{color:var(--muted);margin:0 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;border-radius:999px;padding:3px 9px;color:#fff;white-space:nowrap}
+.tag.lv1{background:var(--lv1)} .tag.lv2{background:var(--lv2)} .tag.lv3{background:var(--lv3)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag{color:#16121c}}
+:root[data-theme="dark"] .tag{color:#16121c}
+.meta{color:var(--muted)}
+/* cómo estudiar */
+.how{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.how>summary{cursor:pointer;font-weight:700;padding:12px 14px;font-family:var(--f-display)}
+.how-b{padding:0 14px 12px;font-size:.93em}
+/* índice */
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.toc .xs-h{margin:0 0 8px;border:0;padding:0}
+.toc-l{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.toc-l li{margin:0}
+.toc-b{display:block;font-weight:700;color:var(--ink);text-decoration:none}
+.toc-b span{font-family:var(--f-mono);font-size:.72em;color:var(--accent);margin-right:4px;text-transform:uppercase}
+.toc-c{display:block;font-size:.8em;color:var(--muted);line-height:1.45}
+.toc-c a{color:var(--muted);text-decoration:none}
+.toc-c a.i1{color:var(--lv1);font-weight:700}
+/* bloques */
+.blk{display:flex;flex-direction:column;gap:12px;scroll-margin-top:var(--bar,0px)}
+.blk-h{display:grid;gap:2px;background:var(--blk);color:var(--blk-ink);border-radius:12px;padding:14px 44px 14px 14px;position:relative;font-family:var(--f-body)}
+.blk-h .bn{font-family:var(--f-mono);font-size:.62em;letter-spacing:.1em;opacity:.9;font-weight:500}
+.blk-h .bt{font-family:var(--f-display);font-size:1.15em;font-weight:800;line-height:1.15}
+.blk-h .bc{font-size:.66em;font-weight:400;opacity:.95}
+/* concepto */
+.cpt{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lv2);border-radius:12px;padding:12px 14px 14px;scroll-margin-top:var(--bar,0px);min-width:0}
+.cpt.lv1{border-left-color:var(--lv1)} .cpt.lv3{border-left-color:var(--lv3)}
+.c-h{display:flex;gap:10px;align-items:flex-start}
+.c-n{flex:none;font-family:var(--f-mono);font-weight:500;font-size:.85em;min-width:2em;height:2em;border-radius:8px;display:grid;place-items:center;background:var(--soft);color:var(--muted);margin-top:1px}
+.lv1 .c-n{background:var(--lv1-soft);color:var(--lv1)} .lv2 .c-n{background:var(--lv2-soft);color:var(--lv2)} .lv3 .c-n{background:var(--lv3-soft);color:var(--lv3)}
+.c-h h3{font-size:1.15em;line-height:1.25}
+.c-h .note{display:block;font-family:var(--f-body);font-weight:400;font-size:.72em;color:var(--muted);margin-top:2px}
+.c-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:8px 0 10px}
+.srcl{font-size:.8em;color:var(--muted)}
+.c-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.c-body>*{min-width:0;max-width:100%}
+.lbl{font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.prof{color:var(--accent);margin-bottom:-6px}
+.prof-t>:first-child{margin-top:0}
+.defs{background:var(--def-soft);border-radius:10px;padding:9px 11px;font-size:.88em}
+.defs ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.defs li{display:flex;flex-direction:column;gap:4px}
+.term{font-size:1.05em}
+.fd{border-radius:8px;padding:6px 9px;line-height:1.45}
+.fd .fl{display:block;font-family:var(--f-mono);font-size:.72em;font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.fd.easy{background:var(--surface)} .fd.easy .fl{color:var(--und)}
+.fd.ok{background:var(--surface);border-left:4px solid var(--accent);font-weight:700} .fd.ok .fl{color:var(--accent)}
+.fd.no{background:transparent;color:var(--muted);font-size:.92em;padding-top:0;padding-bottom:0} .fd.no .fl{color:var(--lv2)}
+.box{border-radius:10px;padding:9px 11px;font-size:.94em}
+.box>p:last-child,.box>ul:last-child{margin-bottom:0}
+.box .lbl{margin-bottom:2px}
+.und{background:var(--und-soft)} .und .lbl{color:var(--und)}
+.tip{background:var(--tip-soft)} .tip .lbl{color:var(--tip)}
+.q{background:var(--q-soft);border:1.5px dashed var(--q)} .q .lbl{color:var(--q)}
+.qt{font-weight:700;margin:2px 0}
+.qt em{font-style:normal}
+.dom{display:inline-flex;gap:7px;align-items:center;font-size:.9em;color:var(--muted);margin-top:6px;cursor:pointer}
+.dom input{width:19px;height:19px;accent-color:var(--und)}
+.cpt.done .c-n::after{content:"✓";margin-left:2px;color:var(--und)}
+.tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86em}
+th,td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+figure{margin:0;text-align:center}
+figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.76em;color:var(--muted);margin-top:3px}
+/* extras */
+.xs{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0;scroll-margin-top:var(--bar,0px)}
+.xs-h{font-size:1.25em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:4px;margin:0 0 10px}
+.ih{font-size:1em;margin:14px 0 6px}
+.pq{border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px;background:var(--soft)}
+.pq summary,.pqq{cursor:pointer;font-weight:700;margin:0}
+.pq[open] summary{margin-bottom:6px}
+.pn{font-family:var(--f-mono);font-size:.78em;color:var(--accent);margin-right:2px}
+.pa>:first-child{margin-top:0}.pa>:last-child{margin-bottom:0}
+.ref{font-size:.8em;color:var(--muted);white-space:nowrap}
+a{color:var(--accent)}
+.gal{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.gal figure{margin:0;flex:1 1 140px;max-width:100%}.gal img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}.gal figcaption{font-size:.8em;color:var(--muted)}pre{overflow-x:auto;max-width:100%;font-size:.8em;background:var(--soft);padding:8px;border-radius:8px}
+body{font-size:17px}
+.wrap{padding-block:14px 60px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.bar{position:relative;z-index:5;border-radius:12px;border:1px solid var(--line);background:var(--surface);border-bottom:1px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.row{display:flex;gap:8px;align-items:center;min-width:0}
+.row select,.row input[type=search]{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0;flex:1}
+.mode{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.mode button{font:inherit;font-size:13px;border:0;background:var(--surface);color:var(--ink);padding:6px 10px;cursor:pointer}
+.mode button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;min-width:0}
+.chip{font:inherit;font-size:13px;white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chip.c1[aria-pressed="true"]{background:var(--lv1);border-color:var(--lv1);color:#fff}
+.chip.c2[aria-pressed="true"]{background:var(--lv2);border-color:var(--lv2);color:#fff}
+.chip.c3[aria-pressed="true"]{background:var(--lv3);border-color:var(--lv3);color:#fff}
+.prog{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;font-variant-numeric:tabular-nums}
+.pbar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}.pbar i{display:block;height:100%;width:0;background:var(--und)}
+.blk-h{cursor:pointer;user-select:none}
+.blk-h::after{content:"▾";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.1em;transition:transform .2s}
+.blk.open .blk-h::after{transform:translateY(-50%) rotate(180deg)}
+.blk:not(.open) .cpt{display:none}
+.blk[hidden],.cpt[hidden]{display:none!important}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tbtn{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 11px;cursor:pointer}
+.show{display:none;font:inherit;font-weight:700;font-size:14px;border:1.5px solid var(--q);color:var(--q);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;margin-top:6px;margin-right:8px}
+body.test .show{display:inline-block}
+body.test .cpt:not(.reveal) .c-body>:not(.q){display:none}
+body.test .cpt:not(.reveal) .c-body{gap:0}
+.hidebtn{font:inherit;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer}
+.hidebtn .sw{flex:none;width:40px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.hidebtn .sw i{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--surface);transition:left .2s}
+.hidebtn[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.hidebtn[aria-pressed="true"] .sw{background:var(--lv1)}
+.hidebtn[aria-pressed="true"] .sw i{left:21px}
+body.hidedefs .fd.easy,body.hidedefs .fd.ok{position:relative;cursor:pointer;color:transparent;user-select:none}
+body.hidedefs .fd.easy *,body.hidedefs .fd.ok *{color:transparent!important;border-color:transparent}
+body.hidedefs .fd.easy:not(.peek)::after,body.hidedefs .fd.ok:not(.peek)::after{content:"👆 Toca para ver";position:absolute;inset:0;display:grid;place-items:center;border-radius:8px;background:repeating-linear-gradient(135deg,var(--soft) 0 10px,var(--line) 10px 20px);color:var(--muted);font-family:var(--f-mono);font-size:.78em;font-weight:500;letter-spacing:.04em;padding:0 12px;text-align:center}
+body.hidedefs .fd.ok:not(.peek)::after{content:"📌 ¿Cuál es la definición de la diapositiva? · toca para ver"}
+body.hidedefs .fd.easy:not(.peek)::after{content:"💡 ¿Qué significa? · toca para ver"}
+body.hidedefs .fd.peek,body.hidedefs .fd.peek *{color:inherit!important;user-select:auto}
+body.hidedefs .fd.peek{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.hidebtn .sw,.hidebtn .sw i{transition:none}}
+.empty{color:var(--muted);text-align:center;padding:20px}
+.chip:focus-visible,.mode button:focus-visible,.show:focus-visible,.tbtn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.blk-h:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+[hidden]{display:none!important}
+.fab.hf{bottom:calc(78px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);padding:10px 14px 10px 10px}
+.fab.hf .sw{flex:none;width:36px;height:20px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.fab.hf .sw i{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.3);transition:left .2s}
+.fab.hf[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.fab.hf[aria-pressed="true"] .sw{background:var(--lv1)}
+.fab.hf[aria-pressed="true"] .sw i{left:18px}
+.res{border:1px solid var(--line);border-radius:10px;background:var(--surface);max-height:60vh;overflow:auto}
+.res .rh{position:sticky;top:0;background:var(--soft);font-family:var(--f-mono);font-size:12px;color:var(--muted);padding:7px 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.res .rh button{font:inherit;border:0;background:none;color:var(--accent);cursor:pointer;padding:0}
+.ri{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 10px;color:var(--ink);cursor:pointer}
+.ri:last-child{border-bottom:0}
+.ri:hover,.ri:focus-visible{background:var(--soft)}
+.ri .rk{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.ri .rt{display:block;font-weight:700;line-height:1.25}
+.ri .rs{display:block;font-size:.85em;color:var(--muted);line-height:1.35;margin-top:2px}
+.res mark,.hl mark{background:#ffe066;color:#1d1828;border-radius:3px;padding:0 1px}
+.res .none{padding:12px 10px;color:var(--muted)}
+.flash{animation:fl 2.2s ease}
+@keyframes fl{0%,40%{box-shadow:0 0 0 4px #ffe066}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none;outline:3px solid #ffe066}}
+.simlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:11px 14px;font-size:.95em}
+.simlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+a.dt{text-decoration:none;display:inline-flex;align-items:center}
+.dc.full{color:var(--und);font-weight:700}
+/* ===== Mi plan ===== */
+#planOv{position:fixed;inset:0;z-index:55;background:var(--bg);overflow:auto;--ok:var(--und);--ok-soft:var(--und-soft);--warn:var(--tip);--warn-soft:var(--tip-soft);--rev:var(--lv3);--rev-soft:var(--lv3-soft)}
+#planOv .pwrap{max-width:720px;margin:0 auto;padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+#planOv .ptop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+#planOv .px{flex:none;font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.planlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px solid var(--accent);border-radius:12px;padding:11px 14px;font:inherit;font-size:.95em;width:100%;text-align:left;cursor:pointer}
+.planlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+#planOv .eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+#planOv h1{font-size:1.9em;line-height:1.08;margin:4px 0 4px}
+#planOv .sub{color:var(--muted);margin:0}
+#planOv .count{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#planOv .count .n{font-family:var(--f-display);font-weight:800;font-size:2.4em;line-height:1;color:var(--lv1);font-variant-numeric:tabular-nums;min-width:1.4ch;text-align:center}
+#planOv .count p{margin:0}
+#planOv .k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+#planOv .cfg{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+#planOv .days{display:flex;flex-wrap:wrap;gap:6px}
+#planOv .dchip{font:inherit;font-weight:700;font-size:15px;min-width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+#planOv .dchip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#planOv .seg{display:flex;gap:6px;flex-wrap:wrap}
+#planOv .seg button{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:7px 12px;cursor:pointer}
+#planOv .seg button[aria-pressed="true"]{border-color:var(--accent);font-weight:700;background:var(--surface)}
+#planOv .note{font-size:.9em;border-radius:10px;padding:9px 11px}
+#planOv .note.warn{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn)}
+#planOv .note.ok{background:var(--ok-soft);border-left:4px solid var(--ok)}
+#planOv .day{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#planOv .day-h{padding:12px 14px 10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+#planOv .day-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+#planOv .day-h h2{font-size:1.3em}
+#planOv .day-h .when{font-family:var(--f-mono);font-size:.75em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+#planOv .day-h .goal{font-size:.92em;color:var(--muted);margin:0}
+#planOv .times{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.9em;color:var(--muted)}
+#planOv .times input{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:4px 6px}
+#planOv .dprog{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+#planOv .dprog i{display:block;height:100%;background:var(--ok);width:0}
+#planOv .badge{font-family:var(--f-mono);font-size:.7em;border-radius:999px;padding:2px 8px;white-space:nowrap}
+#planOv .badge.today{background:var(--accent);color:var(--accent-ink)}
+#planOv .badge.done{background:var(--ok-soft);color:var(--ok)}
+#planOv .tasks{list-style:none;margin:0;padding:6px 8px 10px}
+#planOv .task{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding:9px 6px;border-radius:10px;align-items:start}
+#planOv .task+.task{border-top:1px solid var(--line)}
+#planOv .task input{width:22px;height:22px;margin-top:2px;accent-color:var(--ok)}
+#planOv .t-time{font-family:var(--f-mono);font-size:.75em;color:var(--muted);font-variant-numeric:tabular-nums}
+#planOv .t-title{font-weight:700;line-height:1.3}
+#planOv .t-det{font-size:.88em;color:var(--muted);line-height:1.4;margin-top:2px}
+#planOv .t-det b{color:var(--ink)}
+#planOv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 3px 0 0;transform:translateY(-1px)}
+#planOv .d1{background:var(--lv1)}
+#planOv .d2{background:var(--lv2)}
+#planOv .d3{background:var(--lv3)}
+#planOv .t-go{display:inline-block;margin-top:6px;font-size:.85em;font-weight:700;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);border-radius:8px;padding:4px 10px}
+#planOv .task.brk{grid-template-columns:1fr;padding:5px 6px;color:var(--muted);font-size:.88em}
+#planOv .task.brk .t-title{font-weight:400}
+#planOv .task.rev .t-title{color:var(--rev)}
+#planOv .task.done .t-title,#planOv .task.done .t-det{text-decoration:line-through;opacity:.55}
+#planOv .foot{color:var(--muted);font-size:.85em}
+#planOv .dchip:focus-visible,#planOv .seg button:focus-visible,#planOv .t-go:focus-visible,#planOv input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* ===== Temporizador ===== */
+.tmr{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.blk:not(.open) .tmr{display:none}
+.tmr p{margin:0;font-size:.92em}
+.tmr .tm-done{color:var(--und);font-weight:700}
+.tmr button{font:inherit;font-weight:800;font-size:15px;border:0;border-radius:10px;padding:9px 14px;background:var(--accent);color:var(--accent-ink);cursor:pointer;white-space:nowrap}
+.tpill{position:fixed;z-index:30;left:50%;transform:translateX(-50%);top:calc(8px + env(safe-area-inset-top,0px));width:min(440px,calc(100vw - 24px));background:var(--ink);color:var(--surface);border-radius:16px;padding:9px 10px 9px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tpill .tp-txt{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.15}
+.tpill .tp-b{font-size:.75em;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tpill .tp-t{font-family:var(--f-mono);font-size:1.6em;font-weight:500;font-variant-numeric:tabular-nums}
+.tpill.over .tp-t{color:var(--lv1)}
+.tpill .tp-bar{position:absolute;left:12px;right:12px;bottom:4px;height:3px;border-radius:2px;background:rgba(127,127,127,.35);overflow:hidden}
+.tpill .tp-bar i{display:block;height:100%;background:var(--und);width:0}
+.tpill.over .tp-bar i{background:var(--lv1)}
+.tpill button{flex:none;font:inherit;font-weight:800;font-size:14px;border:0;border-radius:10px;padding:8px 11px;cursor:pointer;background:var(--surface);color:var(--ink)}
+.tpill button.fin{background:var(--und);color:var(--surface)}
+.tpill button.x{background:transparent;color:var(--surface);opacity:.7;padding:8px 6px;font-size:18px;line-height:1}
+/* ===== Leyenda desplegable ===== */
+.top .legend .tag{cursor:pointer;border:0;font:inherit;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;padding:5px 10px}
+.top .legend .tag::after{content:" ▾";display:inline-block;transition:transform .2s}
+.top .legend .tag[aria-expanded="true"]::after{transform:rotate(180deg)}
+.top .legend .tag[aria-expanded="true"]{outline:3px solid var(--line);outline-offset:1px}
+.lvpanel{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lc);border-radius:12px;padding:10px 12px;max-height:60vh;overflow:auto}
+.lvpanel h4{margin:0 0 6px;font-family:var(--f-display);font-size:1em}
+.lvpanel .lg{font-family:var(--f-mono);font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 2px}
+.lvpanel a{display:block;color:var(--ink);text-decoration:none;padding:6px 4px;border-radius:8px;font-size:.92em;line-height:1.3}
+.lvpanel a:hover{background:var(--soft)}
+.lvpanel a b{font-family:var(--f-mono);font-weight:500;color:var(--lc);margin-right:4px}
+.lvpanel a.ok{opacity:.55}.lvpanel a.ok::after{content:" ✓";color:var(--und)}
+/* ===== Índice lateral ===== */
+.drw{overflow:hidden;visibility:hidden;position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease,visibility 0s linear .25s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
+.drw.on{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
+.scrim{position:fixed;inset:0;z-index:35;background:rgba(10,8,14,.45)}
+.drw-h{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 8px;font-family:var(--f-display);font-size:1.15em}
+.drw-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;width:38px;height:38px;cursor:pointer}
+.drw-tools{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;border-bottom:1px solid var(--line)}
+.dt{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:8px;padding:7px 9px;cursor:pointer;white-space:nowrap}
+.dt.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.drw-l{overflow:auto;flex:1;padding:8px 8px 24px;display:flex;flex-direction:column;gap:2px}
+.db summary{list-style:none;display:flex;align-items:center;gap:10px;padding:9px 8px;border-radius:10px;cursor:pointer;font-weight:700}
+.db summary::-webkit-details-marker{display:none}
+.db summary:hover,.db[open] summary{background:var(--soft)}
+.dn{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-family:var(--f-mono);font-size:.78em}
+.dt2{flex:1;line-height:1.25}
+.dc{font-family:var(--f-mono);font-size:.72em;color:var(--muted);font-weight:500}
+.db summary::after{content:"▾";color:var(--muted);transition:transform .2s}
+.db[open] summary::after{transform:rotate(180deg)}
+.dl,.dbk{display:flex;align-items:baseline;gap:8px;padding:6px 8px 6px 44px;color:var(--ink);text-decoration:none;font-size:.9em;line-height:1.3;border-radius:8px}
+.dl:hover,.dbk:hover{background:var(--soft)}
+.dbk{color:var(--accent);font-weight:700;font-size:.82em}
+.dl i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--lv2);transform:translateY(-1px)}
+.dl.i1 i{background:var(--lv1)} .dl.i3 i{background:var(--lv3)}
+.dx{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:14px 8px 4px}
+.drw-l>.dl{padding-left:12px}
+.fab.idx{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--ink);color:var(--surface)}
+.fab.up{bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+@media (min-width:1100px){
+  .drw{transform:none;box-shadow:none;visibility:visible}
+  .scrim,.fab.idx,.drw-x{display:none!important}
+  .wrap{margin-left:max(360px,calc((100vw - 760px)/2))}
+  .fab.up{left:calc(356px + 16px);bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){.drw{transition:none}}
+
+/* ===== Tarjetas ===== */
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;font:inherit;font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 18px;background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.fab.up{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:13px 16px}
+.tbtn.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.fc{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.fc-in{max-width:620px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+.fc-top{display:flex;align-items:center;gap:10px}
+.fc-top h2{font-size:1.15em;flex:1}
+.fc-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.fc-setup{display:flex;flex-direction:column;gap:12px;overflow:auto}
+.fc-setup .lbl{margin:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:9px 12px;cursor:pointer;text-align:left}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--q-soft);font-weight:700}
+.opt small{display:block;font-size:.8em;color:var(--muted);font-weight:400}
+.go{font:inherit;font-weight:800;font-size:17px;border:0;border-radius:12px;padding:14px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.go:disabled{opacity:.45;cursor:default}
+#fcGo{position:sticky;bottom:0;box-shadow:0 -8px 16px var(--bg)}
+.fc-prog{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fc-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;display:flex}
+.fc-bar .g{background:var(--und)} .fc-bar .r{background:var(--lv1)}
+.stage{flex:1;min-height:0;perspective:1400px}
+.card3{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.3,.7,.3,1);cursor:pointer}
+.card3.flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;padding:18px;overflow:hidden}
+.face.front{border-top:8px solid var(--cc,var(--accent));justify-content:center;text-align:center;gap:14px}
+.face.back{transform:rotateY(180deg);border-top:8px solid var(--und)}
+.face .kind{font-family:var(--f-mono);font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.face.front .qq{font-family:var(--f-display);font-size:1.45em;font-weight:800;line-height:1.2;text-wrap:balance}
+.face .hint{color:var(--muted);font-size:.85em}
+.bulb{font-size:2.4em;line-height:1;filter:grayscale(1) opacity(.5);transition:filter .3s}
+.card3.flip .bulb{filter:none}
+.face.back .ans{overflow:auto;flex:1;min-height:0;font-size:.98em}
+.face.back .ans>:first-child{margin-top:0}
+.face.back .ans .formal{font-weight:700;font-size:1.15em;border-left:4px solid var(--accent);padding-left:10px}
+.face.back .src{font-size:.78em;color:var(--muted);margin-top:8px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btns button{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px 8px;cursor:pointer}
+.b-no{background:var(--lv1-soft);color:var(--lv1)} .b-si{background:var(--und-soft);color:var(--und)}
+.btns button:disabled{opacity:.35;cursor:default}
+.flipb{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px;background:var(--ink);color:var(--surface);cursor:pointer}
+.fc-end{display:flex;flex-direction:column;gap:12px;align-items:stretch;text-align:center;overflow:auto}
+.fc-end .score{font-family:var(--f-display);font-size:3.2em;font-weight:800;line-height:1}
+@media (prefers-reduced-motion:reduce){.card3{transition:none}}
+</style>
+<div class="wrap">
+<header class="top"><p class="eyebrow">🧫 Gestión de Muestras · 1er examen</p>
+<h1>Repaso completo: estructura organizativa del sector sanitario</h1>
+<p class="sub">Tema 1 · 10 bloques · 75 conceptos</p>
+<div class="legend"><span class="tag lv1">🔴 IMPRESCINDIBLE · 56</span><span class="tag lv2">🟠 IMPORTANTE · 19</span></div></header><details class="how"><summary>🧭 Cómo usar este repaso</summary><div class="how-b"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>
+<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div></details>
+<div class="bar">
+  <div class="row">
+    <select id="toc" aria-label="Ir a un bloque"><option value="">Ir a…</option><option value="b0">Bloque 1 · Sistema sanitario y salud</option><option value="b1">Bloque 2 · Determinantes de la salud</option><option value="b2">Bloque 3 · Qué hace un sistema sanitario y cómo se organiza</option><option value="b3">Bloque 4 · Modelos sanitarios</option><option value="b4">Bloque 5 · El Sistema Nacional de Salud (SNS) en España</option><option value="b5">Bloque 6 · Organización asistencial y cartera de servicios</option><option value="b6">Bloque 7 · Deontología y bioética</option><option value="b7">Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)</option><option value="b8">Bloque 9 · Economía de la salud y sostenibilidad</option><option value="b9">Bloque 10 · Calidad asistencial y evaluación</option><option value="impres">⚡ Lo imprescindible</option></select>
+    <div class="mode" role="group" aria-label="Modo"><button type="button" id="mRead" aria-pressed="true">Leer</button><button type="button" id="mTest" aria-pressed="false">Ponte a prueba</button></div>
+  </div>
+  <div class="row srow"><input type="search" id="q" placeholder="🔎 Buscar cualquier palabra" aria-label="Buscar en el repaso" autocomplete="off"></div>
+  <div class="res" id="res" hidden></div>
+  <div class="chips" role="group" aria-label="Filtrar por importancia">
+    <button type="button" class="chip" data-f="0" aria-pressed="true">Todos</button>
+    <button type="button" class="chip c1" data-f="1" aria-pressed="false">🔴 Imprescindibles</button>
+    <button type="button" class="chip c2" data-f="2" aria-pressed="false">🟠 Importantes</button>
+    <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
+    <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
+  </div>
+  <div class="prog"><span id="pText">Dominas 0</span><span id="pHint"></span></div>
+  <div class="pbar"><i id="pBar"></i></div>
+</div>
+<button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
+<a class="simlink" href="../../gest1/simulacro/"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>
+
+<section class="blk" id="b0" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">Sistema sanitario y salud</span><span class="bc">⏱ 20 min · Conceptos 1–5 · 4 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c1" data-lv="1">
+<header class="c-h"><span class="c-n">1</span><h3>Sistema sanitario</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 1 · Sistema sanitario y salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>No solo hospitales, médicos y enfermería: es el <strong>conjunto de todos los elementos que contribuyen a cuidar la salud</strong> de los ciudadanos.
+Definición de la <strong>OMS</strong>: <strong>conjunto de elementos interrelacionados que contribuyen a la salud</strong> en hogares, lugares de trabajo, lugares públicos y comunidades, y en el medio físico y psicosocial.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo define la OMS el sistema sanitario?</p><label class="dom"><input type="checkbox" data-n="1"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c2" data-lv="2">
+<header class="c-h"><span class="c-n">2</span><h3>Para qué existe el sistema sanitario (esquema de la diapositiva 3)</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 1 · Sistema sanitario y salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La <strong>persona y su salud</strong> en el centro, rodeada de: legislación para sostener el derecho a la salud; cuidar la igualdad de trato y dignidad en el <strong>acceso</strong> a la sanidad; organizar la administración sanitaria, desde la gestión hasta las profesiones sanitarias.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué tres cosas rodean a la persona y su salud en el esquema del sistema sanitario?</p><label class="dom"><input type="checkbox" data-n="2"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c3" data-lv="1">
+<header class="c-h"><span class="c-n">3</span><h3>Principios de un sistema sanitario según la OMS</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 1 · Sistema sanitario y salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Principio</th>
+<th>Qué significa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Universalidad ★</td>
+<td><strong>Todas las personas tienen derecho a recibir atención</strong>, sin importar su situación económica o social</td>
+</tr>
+<tr>
+<td>2. Equidad ★</td>
+<td>No es dar lo mismo a todos: es <strong>dar a cada persona la atención que necesita</strong> (un crónico necesita más recursos)</td>
+</tr>
+<tr>
+<td>3. Eficiencia ★</td>
+<td><strong>Mejores resultados en salud usando bien los recursos</strong>, sin gastos ni pruebas innecesarias. No es "gastar poco"</td>
+</tr>
+<tr>
+<td>4. Atención integral ★</td>
+<td>La <strong>persona como un todo</strong>: aspectos físicos, psicológicos y sociales + prevención, diagnóstico, tratamiento y rehabilitación</td>
+</tr>
+<tr>
+<td>5. Adaptación a las necesidades ★</td>
+<td><strong>Detectar los problemas y necesidades de salud</strong> nuevos y adaptarse; <strong>intentar prevenir los problemas</strong> antes de que aparezcan o disminuir sus consecuencias</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los 5 principios de un sistema sanitario según la OMS y qué significa cada uno?</p><label class="dom"><input type="checkbox" data-n="3"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c4" data-lv="1">
+<header class="c-h"><span class="c-n">4</span><h3>Equidad frente a igualdad</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 1 · Sistema sanitario y salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Equidad <strong>no</strong> es dar exactamente lo mismo a todos, sino dar a cada uno lo que necesita para alcanzar el mejor nivel de salud.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Por qué equidad no es lo mismo que dar lo mismo a todos?</p><label class="dom"><input type="checkbox" data-n="4"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c5" data-lv="1">
+<header class="c-h"><span class="c-n">5</span><h3>Definición de salud</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 1 · Sistema sanitario y salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OMS (1948) ★</td>
+<td><strong>Estado de completo bienestar físico, mental y social, y no solamente la ausencia de enfermedad</strong></td>
+</tr>
+<tr>
+<td>Alma-Ata (1978) ★</td>
+<td>La salud es un <strong>derecho humano fundamental</strong>; destaca la <strong>atención primaria</strong></td>
+</tr>
+<tr>
+<td>Concepto ampliado ★</td>
+<td>El nivel de salud <strong>está condicionado por los factores sociales y por la capacidad de funcionamiento</strong> de la persona</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué definió la OMS en 1948, qué aportó Alma-Ata en 1978 y qué añade el concepto ampliado de salud?</p><label class="dom"><input type="checkbox" data-n="5"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b1" data-min="30"><h2 class="blk-h"><span class="bn">BLOQUE 2</span><span class="bt">Determinantes de la salud</span><span class="bc">⏱ 30 min · Conceptos 6–13 · 7 🔴 · <b class="bd">0</b>/8 dominados</span></h2><article class="cpt lv1" id="c6" data-lv="1">
+<header class="c-h"><span class="c-n">6</span><h3>Determinantes de la salud</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · Determinantes de la salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Factores que influyen en la salud: biología, hábitos de vida, entorno social y cultural y sistema sanitario. La salud de una persona afecta también a su familia (cuidados, trabajo, economía).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué son los determinantes de la salud?</p><label class="dom"><input type="checkbox" data-n="6"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c7" data-lv="2">
+<header class="c-h"><span class="c-n">7</span><h3>Modelo de Lalonde (1974): los 4 determinantes y su peso</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 2 · Determinantes de la salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Determinante</th>
+<th>Peso en la salud</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estilo de vida</td>
+<td><strong>43 %</strong> (el que más)</td>
+</tr>
+<tr>
+<td>Biología humana y herencia</td>
+<td><strong>27 %</strong></td>
+</tr>
+<tr>
+<td>Medio ambiente y entorno</td>
+<td><strong>19 %</strong></td>
+</tr>
+<tr>
+<td>Sistema de asistencia sanitaria</td>
+<td><strong>11 %</strong> (el que menos)</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los 4 determinantes de Lalonde, de qué año es y cuál pesa más y cuál menos?</p><label class="dom"><input type="checkbox" data-n="7"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c8" data-lv="1">
+<header class="c-h"><span class="c-n">8</span><h3>Biología humana</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · Determinantes de la salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Características propias del organismo de cada persona</strong>: edad, sexo, genética y herencia, constitución física, envejecimiento, funcionamiento de órganos. Ejemplo: antecedentes familiares de diabetes. <strong>Es cómo somos biológicamente.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la biología humana como determinante y qué incluye?</p><label class="dom"><input type="checkbox" data-n="8"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c9" data-lv="1">
+<header class="c-h"><span class="c-n">9</span><h3>Estilos de vida</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · Determinantes de la salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Hábitos y comportamientos que favorecen o perjudican la salud</strong>: alimentación, actividad física, tabaco y alcohol, higiene, sueño, conducta sexual, estrés, seguridad. Ejemplo: fumar. <strong>Es lo que hacemos y cómo vivimos.</strong>
+★ <strong>No todas las conductas dependen solo de decisiones individuales</strong>: las <strong>condiciones sociales y económicas pueden facilitar o dificultar</strong> hábitos saludables.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué son los estilos de vida? ¿Dependen solo de la persona?</p><label class="dom"><input type="checkbox" data-n="9"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c10" data-lv="1">
+<header class="c-h"><span class="c-n">10</span><h3>Medio ambiente</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · Determinantes de la salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Condiciones externas que rodean a la persona.</strong> Lalonde distingue:</p>
+<ul>
+<li><strong>Medio físico:</strong> contaminación, agua, ruido, temperatura, vivienda, condiciones de trabajo.</li>
+<li><strong>Medio social:</strong> familia, comunidad, relaciones, economía, educación, condiciones laborales.</li>
+</ul>
+<p><strong>Es lo que nos rodea.</strong> Ejemplo: vivir en zona contaminada.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es el medio ambiente como determinante y qué dos tipos distingue Lalonde?</p><label class="dom"><input type="checkbox" data-n="10"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c11" data-lv="1">
+<header class="c-h"><span class="c-n">11</span><h3>Sistema de asistencia sanitaria (como determinante)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · Determinantes de la salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Conjunto de servicios, recursos y profesionales sanitarios</strong> para proteger y mejorar la salud: atención primaria, hospitales, urgencias, vacunación, prevención, diagnóstico, tratamiento, rehabilitación. <strong>Es la atención sanitaria que tenemos y recibimos.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué incluye el sistema de asistencia sanitaria como determinante?</p><label class="dom"><input type="checkbox" data-n="11"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c12" data-lv="1">
+<header class="c-h"><span class="c-n">12</span><h3>Modelo de Dahlgren y Whitehead (1991)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · Determinantes de la salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Uno de los modelos más importantes después de Lalonde.</strong> Representa los determinantes en <strong>capas concéntricas</strong> alrededor de la persona: en el centro edad, sexo y herencia → estilos de vida individuales → redes sociales y comunitarias → condiciones de vida y trabajo → condiciones socioeconómicas, culturales y ambientales.
+★ <strong>Cuanto más externas son las capas, menos dependen de las decisiones individuales</strong> y más de las condiciones sociales y económicas.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo representa el modelo de Dahlgren y Whitehead los determinantes y qué pasa con las capas externas?</p><label class="dom"><input type="checkbox" data-n="12"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c13" data-lv="1">
+<header class="c-h"><span class="c-n">13</span><h3>Dónde naces importa</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 2 · Determinantes de la salud</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>El riesgo de enfermar, el acceso al diagnóstico y la curación <strong>varían entre países desarrollados y en vías de desarrollo</strong>.</p>
+<ul>
+<li><strong>Países ricos:</strong> predominan las <strong>enfermedades crónicas</strong> (cardiovasculares, cáncer, diabetes).</li>
+<li><strong>Países pobres:</strong> pesan las <strong>enfermedades infecciosas y la mortalidad infantil</strong>.</li>
+</ul>
+<p>Ejemplo: el cáncer de cérvix es raro donde hay cribado y vacuna del VPH.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué enfermedades predominan en países ricos y cuáles en países pobres?</p><label class="dom"><input type="checkbox" data-n="13"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b2" data-min="15"><h2 class="blk-h"><span class="bn">BLOQUE 3</span><span class="bt">Qué hace un sistema sanitario y cómo se organiza</span><span class="bc">⏱ 15 min · Conceptos 14–18 · 4 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c14" data-lv="1">
+<header class="c-h"><span class="c-n">14</span><h3>El sistema sanitario no actúa solo cuando estamos enfermos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · Qué hace un sistema sanitario y cómo se organiza</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Es el <strong>conjunto de organizaciones, profesionales, recursos y servicios que una sociedad pone en marcha para proteger, mantener y recuperar la salud</strong>. La salud está condicionada por <strong>múltiples factores</strong>, no solo por tener o no una enfermedad.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿El sistema sanitario actúa solo cuando estamos enfermos? Justifica.</p><label class="dom"><input type="checkbox" data-n="14"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c15" data-lv="1">
+<header class="c-h"><span class="c-n">15</span><h3>Actuaciones del sistema sanitario</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · Qué hace un sistema sanitario y cómo se organiza</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Actuación</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prevención ★</td>
+<td>Vacunas, cribados, educación sanitaria</td>
+</tr>
+<tr>
+<td>Detección precoz ★</td>
+<td>Diagnosticar antes de que haya complicaciones</td>
+</tr>
+<tr>
+<td>Tratamiento ★</td>
+<td>Atender a los enfermos</td>
+</tr>
+<tr>
+<td>Rehabilitación ★</td>
+<td>Recuperar o mantener la capacidad funcional; también vigilancia epidemiológica</td>
+</tr>
+<tr>
+<td>Promoción de la salud ★</td>
+<td>Mejorar el bienestar y favorecer hábitos saludables</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué cinco tipos de actuaciones realiza el sistema sanitario?</p><label class="dom"><input type="checkbox" data-n="15"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c16" data-lv="1">
+<header class="c-h"><span class="c-n">16</span><h3>¿Por qué cada país lo organiza distinto?</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · Qué hace un sistema sanitario y cómo se organiza</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>El objetivo es el mismo (mejorar la salud), pero <strong>cada sociedad tiene una situación económica, política, social y cultural diferente</strong>. Unos se financian con impuestos, otros con cotizaciones y otros con seguros privados.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Por qué los países organizan su sanidad de forma distinta si el objetivo es el mismo?</p><label class="dom"><input type="checkbox" data-n="16"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c17" data-lv="1">
+<header class="c-h"><span class="c-n">17</span><h3>Modelos sanitarios</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 3 · Qué hace un sistema sanitario y cómo se organiza</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Dentro del sistema sanitario <strong>se emplazan los modelos sanitarios</strong>: los <strong>criterios doctrinales e ideológicos</strong> sobre los que se basa cada sistema.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué son los modelos sanitarios?</p><label class="dom"><input type="checkbox" data-n="17"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c18" data-lv="2">
+<header class="c-h"><span class="c-n">18</span><h3>Las 3 preguntas de todo sistema sanitario</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 3 · Qué hace un sistema sanitario y cómo se organiza</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li><strong>¿Quién paga?</strong> → <strong>financiación</strong> (el individuo, el Estado con impuestos o cotizaciones).</li>
+<li><strong>¿Quién presta el servicio?</strong> → <strong>provisión</strong> (público, privado o ambos).</li>
+<li><strong>¿Quién puede usarlo?</strong> → <strong>acceso</strong> (todos, o solo quien paga o está asegurado).</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿A qué tres preguntas responde todo sistema sanitario?</p><label class="dom"><input type="checkbox" data-n="18"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b3" data-min="30"><h2 class="blk-h"><span class="bn">BLOQUE 4</span><span class="bt">Modelos sanitarios</span><span class="bc">⏱ 30 min · Conceptos 19–26 · 6 🔴 · <b class="bd">0</b>/8 dominados</span></h2><article class="cpt lv1" id="c19" data-lv="1">
+<header class="c-h"><span class="c-n">19</span><h3>Modelo liberal o de libre mercado</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 4 · Modelos sanitarios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><em>Ningún país tiene un modelo puro: todos combinan elementos.</em></p>
+<ul>
+<li>La salud <strong>se trata como un bien que se compra y se vende</strong>. El Estado interviene lo mínimo.</li>
+<li>★ Funcionamiento: personas o empresas pagan un <strong>seguro privado</strong> (o directamente) y el seguro paga a proveedores privados.</li>
+<li>★ <strong>El acceso depende de la capacidad económica o de la póliza.</strong></li>
+<li>★ Ejemplo: <strong>Estados Unidos</strong> (Medicare: mayores de 65; Medicaid: pocos recursos; Obamacare en 2010).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo funciona el modelo liberal y de qué depende el acceso? Pon un ejemplo.</p><label class="dom"><input type="checkbox" data-n="19"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c20" data-lv="1">
+<header class="c-h"><span class="c-n">20</span><h3>Ventajas e inconvenientes del modelo liberal</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 4 · Modelos sanitarios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>★ <strong>Principal beneficio: avances tecnológicos</strong> por la competencia entre proveedores.</li>
+<li>★ <strong>Carece de universalidad y equidad</strong> (principios de la OMS).</li>
+<li>Ventajas: libertad de elección, innovación, menos esperas si tienes buen seguro, menos impuestos.</li>
+<li>Inconvenientes: exclusión, endeudamiento (es el sistema más caro del mundo y ★ <strong>su esperanza de vida es inferior</strong> a la de países con sanidad universal), selección de riesgos, sobrediagnóstico.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuál es el principal beneficio del modelo liberal y qué principios de la OMS no cumple?</p><label class="dom"><input type="checkbox" data-n="20"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c21" data-lv="1">
+<header class="c-h"><span class="c-n">21</span><h3>Modelo social (socialista o Semashko)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 4 · Modelos sanitarios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>La salud <strong>es responsabilidad exclusiva del Estado</strong>: la planifica, la financia y <strong>la gestiona toda</strong>.</li>
+<li>★ El <strong>Estado financia todo</strong>, es dueño de los centros y los <strong>profesionales son empleados públicos</strong>.</li>
+<li>★ <strong>Acceso universal y gratuito</strong> en el momento de uso.</li>
+<li>Lo diseñó <strong>Nikolái Semashko</strong> en la URSS tras 1917. ★ <strong>Hoy el ejemplo más citado es Cuba.</strong></li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Quién gestiona y financia el modelo social, quién lo creó y cuál es el ejemplo actual?</p><label class="dom"><input type="checkbox" data-n="21"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c22" data-lv="2">
+<header class="c-h"><span class="c-n">22</span><h3>Ventajas e inconvenientes del modelo social</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 4 · Modelos sanitarios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Ventajas: universalidad real; ★ <strong>campañas masivas de vacunación o cribado</strong>; ★ Cuba tiene <strong>una de las tasas de médicos por habitante más altas</strong>; igualdad.</li>
+<li>Inconvenientes: falta de recursos y tecnología, burocracia, <strong>nula libertad de elección</strong>, poca motivación, ★ <strong>vinculado a regímenes no democráticos</strong> (datos poco fiables).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Cita dos ventajas y dos inconvenientes del modelo social.</p><label class="dom"><input type="checkbox" data-n="22"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c23" data-lv="1">
+<header class="c-h"><span class="c-n">23</span><h3>Modelo mixto</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 4 · Modelos sanitarios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>★ Presente en <strong>la mayoría de los países occidentales</strong>.</li>
+<li>★ <strong>Financia el Estado</strong>, pero <strong>necesita la intervención privada</strong> para algunos servicios.</li>
+<li>★ Garantiza <strong>parámetros de calidad asistencial</strong> sea la provisión pública o privada.</li>
+<li>★ Se basa en <strong>la promoción, la prevención y la atención primaria</strong>.</li>
+<li>Tiene <strong>dos variantes: Bismarck y Beveridge.</strong></li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué caracteriza al modelo mixto y cuáles son sus dos variantes?</p><label class="dom"><input type="checkbox" data-n="23"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c24" data-lv="1">
+<header class="c-h"><span class="c-n">24</span><h3>Modelo Bismarck</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 4 · Modelos sanitarios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Origen: <strong>Alemania, 1883</strong> (Otto von Bismarck, primer seguro obligatorio de enfermedad).</li>
+<li>★ Se financia con <strong>cotizaciones sociales</strong> obligatorias de trabajadores y empresas (cajas o fondos de enfermedad).</li>
+<li>★ Es un <strong>sistema mutualista</strong>; a los desempleados los cubre la ★ <strong>beneficencia</strong>.</li>
+<li>★ El Estado asegura una sanidad <strong>gratuita, universal y equitativa</strong>.</li>
+<li>Países: Alemania, Austria, Bélgica, Francia.</li>
+<li>Ventajas: alta calidad y elección, listas de espera más cortas, "derecho ganado", menos dependencia del gobierno.</li>
+<li>Inconvenientes: nació ligado al empleo (★ <strong>quien no trabajaba quedaba desprotegido</strong>), encarece el empleo, caro de administrar, desigualdad entre cajas.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo se financia el modelo Bismarck, dónde y cuándo nació y qué países lo usan?</p><label class="dom"><input type="checkbox" data-n="24"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c25" data-lv="1">
+<header class="c-h"><span class="c-n">25</span><h3>Modelo Beveridge (sistemas públicos)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 4 · Modelos sanitarios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Origen: <strong>Reino Unido</strong>. Informe Beveridge (<strong>1942</strong>) → <strong>NHS</strong> (<strong>1948</strong>).</li>
+<li>★ Se financia con <strong>impuestos generales</strong> y la <strong>cobertura es universal</strong> por ser ciudadano o residente.</li>
+<li>Provisión mayoritariamente pública, aunque ★ <strong>se puede concertar con centros privados</strong>.</li>
+<li>Ejemplos: Reino Unido, ★ <strong>España</strong>, Italia, Portugal, países nórdicos.</li>
+<li>Ventajas: universal y equitativo, gratuito en el uso (salvo copago farmacéutico), buen control del gasto, fuerte atención primaria y cribados.</li>
+<li>Inconvenientes: <strong>listas de espera</strong> (la gran crítica), depende de presupuestos políticos, menos elección, <strong>doble aseguramiento</strong>, uso excesivo de urgencias.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo se financia el modelo Beveridge, de dónde viene y qué país de los nuestros lo sigue?</p><label class="dom"><input type="checkbox" data-n="25"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c26" data-lv="2">
+<header class="c-h"><span class="c-n">26</span><h3>Tabla resumen de los modelos</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 4 · Modelos sanitarios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>Liberal</th>
+<th>Social</th>
+<th>Bismarck</th>
+<th>Beveridge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paga</td>
+<td>Individuo / seguro privado</td>
+<td>Estado (todo)</td>
+<td>Cotizaciones</td>
+<td>Impuestos</td>
+</tr>
+<tr>
+<td>Acceso</td>
+<td>Según dinero o póliza</td>
+<td>Universal y gratuito</td>
+<td>Trabajadores cotizantes (+ beneficencia)</td>
+<td>Universal</td>
+</tr>
+<tr>
+<td>Ejemplo</td>
+<td>EE. UU.</td>
+<td>Cuba</td>
+<td>Alemania, Francia</td>
+<td>Reino Unido, España</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Para cada modelo: ¿quién paga, quién tiene acceso y qué país es el ejemplo?</p><label class="dom"><input type="checkbox" data-n="26"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b4" data-min="30"><h2 class="blk-h"><span class="bn">BLOQUE 5</span><span class="bt">El Sistema Nacional de Salud (SNS) en España</span><span class="bc">⏱ 30 min · Conceptos 27–33 · 7 🔴 · <b class="bd">0</b>/7 dominados</span></h2><article class="cpt lv1" id="c27" data-lv="1">
+<header class="c-h"><span class="c-n">27</span><h3>Modelo de España</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · El Sistema Nacional de Salud (SNS) en España</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>España <strong>sigue el modelo Beveridge</strong>: ★ <strong>impuestos generales, cobertura universal y servicios mayoritariamente públicos</strong>.
+Hasta los años 80 era <strong>Bismarck</strong> ("el médico del seguro"). La transición empezó con ★ <strong>la Ley General de Sanidad de 1986</strong> y terminó a principios de los 2000.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué modelo sigue España, cuál tenía antes y qué ley inició el cambio?</p><label class="dom"><input type="checkbox" data-n="27"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c28" data-lv="1">
+<header class="c-h"><span class="c-n">28</span><h3>Marco legal internacional</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · El Sistema Nacional de Salud (SNS) en España</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Constitución de la OMS (1946):</strong> la ★ <strong>salud es un derecho fundamental</strong> de todo ser humano.</li>
+<li><strong>Declaración Universal de Derechos Humanos (1948):</strong> incluye la asistencia médica.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué documento internacional reconoció la salud como derecho fundamental y en qué año?</p><label class="dom"><input type="checkbox" data-n="28"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c29" data-lv="1">
+<header class="c-h"><span class="c-n">29</span><h3>Leyes clave en España (en orden)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · El Sistema Nacional de Salud (SNS) en España</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Norma</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Constitución 1978, <strong>artículo 43</strong> ★</td>
+<td>Reconoce el <strong>derecho a la protección de la salud</strong></td>
+</tr>
+<tr>
+<td><strong>Ley 14/1986, de 25 de abril, General de Sanidad</strong> ★</td>
+<td><strong>Crea el SNS</strong> y sus principios. Ley base</td>
+</tr>
+<tr>
+<td><strong>Ley 16/2003, de 28 de mayo, de cohesión y calidad del SNS</strong> ★</td>
+<td>Prestaciones comunes en todas las CC. AA.; define la <strong>cartera común de servicios</strong></td>
+</tr>
+<tr>
+<td><strong>Real Decreto-ley 16/2012</strong> ★</td>
+<td>Crisis: restringe el acceso a "asegurados" (deja fuera a inmigrantes irregulares) y amplía el copago</td>
+</tr>
+<tr>
+<td><strong>Real Decreto-ley 7/2018, de 27 de julio</strong> ★</td>
+<td><strong>Recupera la universalidad</strong>: el derecho depende de la <strong>residencia</strong>, no de cotizar</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué hace cada una: art. 43 CE, Ley 14/1986, Ley 16/2003, RDL 16/2012 y RDL 7/2018?</p><label class="dom"><input type="checkbox" data-n="29"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c30" data-lv="1">
+<header class="c-h"><span class="c-n">30</span><h3>Principios del SNS <span class="note">los establece la **Ley General de Sanidad**</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · El Sistema Nacional de Salud (SNS) en España</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Universal:</strong> toda la población residente.</li>
+<li><strong>Equitativo:</strong> igualdad en acceso y trato.</li>
+<li><strong>Financiado con fondos públicos</strong> (impuestos).</li>
+<li><strong>Gratuito en el momento de uso</strong> (hay copagos en farmacia, algunas prótesis y transporte no urgente; la odontología está poco cubierta).</li>
+<li><strong>Integral:</strong> promoción, prevención, asistencia, rehabilitación y reinserción.</li>
+<li><strong>De calidad:</strong> eficacia, eficiencia y evaluación.</li>
+<li><strong>Descentralizado:</strong> lo gestionan las comunidades autónomas.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Cita los 7 principios del SNS.</p><label class="dom"><input type="checkbox" data-n="30"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c31" data-lv="1">
+<header class="c-h"><span class="c-n">31</span><h3>Reparto de competencias</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · El Sistema Nacional de Salud (SNS) en España</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La ★ <strong>Constitución reparte las competencias entre Estado y CC. AA.</strong> (artículos 148 y 149).</p>
+<ul>
+<li><strong>Estado (Ministerio de Sanidad):</strong> bases y coordinación, legislación de medicamentos, <strong>sanidad exterior</strong> (puertos, aeropuertos, fronteras), relaciones internacionales.</li>
+<li>★ <strong>CC. AA.: gestionan la asistencia</strong> con su servicio de salud. Ejemplos: SERMAS (Madrid), SAS (Andalucía), Osakidetza (País Vasco), SERGAS (Galicia), <strong>Osasunbidea (Navarra)</strong>.</li>
+<li><strong>Ceuta y Melilla:</strong> el Estado, a través del ★ <strong>INGESA</strong>.</li>
+<li>★ <strong>Consejo Interterritorial del SNS:</strong> <strong>conecta ambos niveles</strong>. Reúne al Ministerio y a los <strong>consejeros de sanidad de las CC. AA.</strong> (muy visible en la COVID-19).</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué competencias tiene el Estado, cuáles las CC. AA., quién gestiona Ceuta y Melilla y qué hace el Consejo Interterritorial?</p><label class="dom"><input type="checkbox" data-n="31"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c32" data-lv="1">
+<header class="c-h"><span class="c-n">32</span><h3>AEMPS</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · El Sistema Nacional de Salud (SNS) en España</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Agencia Española de Medicamentos y Productos Sanitarios.</strong> ★ <strong>Depende del Ministerio de Sanidad</strong> y garantiza <strong>calidad, seguridad, eficacia e información</strong> de medicamentos y productos sanitarios.
+Controla todo: investigación, ensayos, autorización, comercialización y vigilancia posterior ★ (<strong>farmacovigilancia</strong>). También cosméticos y productos de diagnóstico in vitro (reactivos de inmunohistoquímica).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la AEMPS, de quién depende y cómo se llama la vigilancia de los medicamentos tras su venta?</p><label class="dom"><input type="checkbox" data-n="32"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c33" data-lv="1">
+<header class="c-h"><span class="c-n">33</span><h3>Dimensión internacional</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 5 · El Sistema Nacional de Salud (SNS) en España</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>★ <strong>Tarjeta Sanitaria Europea:</strong> asistencia necesaria en estancias temporales en la UE, EEE, Suiza y Reino Unido. Con otros países, ★ <strong>convenios bilaterales</strong>.</li>
+<li>★ Ante <strong>epidemias y crisis sanitarias</strong>, cooperación: España participa en la <strong>OMS</strong> y el <strong>ECDC</strong>.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué permite la Tarjeta Sanitaria Europea y qué hay con países fuera de ella?</p><label class="dom"><input type="checkbox" data-n="33"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b5" data-min="40"><h2 class="blk-h"><span class="bn">BLOQUE 6</span><span class="bt">Organización asistencial y cartera de servicios</span><span class="bc">⏱ 40 min · Conceptos 34–44 · 8 🔴 · <b class="bd">0</b>/11 dominados</span></h2><article class="cpt lv1" id="c34" data-lv="1">
+<header class="c-h"><span class="c-n">34</span><h3>Los dos niveles de atención</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Atención primaria</th>
+<th>Atención especializada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>★ <strong>Puerta de entrada al sistema</strong> (primer nivel)</td>
+<td>★ <strong>En hospitales y centros de especialidades</strong></td>
+</tr>
+<tr>
+<td>Centros de salud y consultorios: médicos de familia, pediatras, enfermería</td>
+<td>Normalmente tras <strong>derivación desde primaria</strong> o por urgencias</td>
+</tr>
+<tr>
+<td>★ <strong>Prevención, promoción de la salud y problemas frecuentes</strong></td>
+<td>Especialistas, pruebas complejas, cirugía, hospitalización</td>
+</tr>
+<tr>
+<td>★ <strong>Acompaña al paciente toda su vida</strong> y coordina su atención</td>
+<td>★ Aquí está <strong>Anatomía Patológica</strong>. ★ Tras el tratamiento, el paciente <strong>vuelve a primaria</strong> (continuidad asistencial)</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la atención primaria y la especializada, y en qué nivel está Anatomía Patológica?</p><label class="dom"><input type="checkbox" data-n="34"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c35" data-lv="1">
+<header class="c-h"><span class="c-n">35</span><h3>Funciones de atención primaria</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Coordinación (horizontal con su equipo y vertical con el sistema), accesibilidad (el paciente acude a su médico cuando lo necesita), <strong>continuidad</strong> (sigue al paciente aunque lo deriven), labor asistencial, labor docente, investigación y atención integral de la persona.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Cita las funciones de la atención primaria.</p><label class="dom"><input type="checkbox" data-n="35"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c36" data-lv="1">
+<header class="c-h"><span class="c-n">36</span><h3>Funciones de atención especializada</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Coordinación (por <strong>áreas de salud</strong>), accesibilidad (llega <strong>derivado por su médico de primaria</strong> y vuelve a él), <strong>servicio de medios</strong> (más tecnología y métodos diagnósticos), labor asistencial, docente, investigación (completa a la primaria) y atención integral.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué función tiene la especializada que no tiene la primaria?* (servicio de medios)</p><label class="dom"><input type="checkbox" data-n="36"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c37" data-lv="1">
+<header class="c-h"><span class="c-n">37</span><h3>Organización territorial</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>El territorio se divide en ★ <strong>áreas de salud</strong> (vinculadas a un <strong>hospital de referencia</strong>) y estas en <strong>zonas básicas de salud</strong> (cada una con su <strong>centro de salud</strong>).
+A cada persona le toca médico y hospital ★ <strong>según donde está empadronada</strong>, y se identifica con la ★ <strong>tarjeta sanitaria individual</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo se divide el territorio sanitario y qué determina tu médico y hospital?</p><label class="dom"><input type="checkbox" data-n="37"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c38" data-lv="1">
+<header class="c-h"><span class="c-n">38</span><h3>Cartera de servicios del SNS</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Conjunto de técnicas, tecnologías y procedimientos que ofrece el SNS</strong>: el "catálogo" de lo que garantiza. Normativa: ★ <strong>Ley 16/2003 y Real Decreto 1030/2006</strong>. Se actualiza periódicamente.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la cartera de servicios y qué normas la regulan?</p><label class="dom"><input type="checkbox" data-n="38"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c39" data-lv="2">
+<header class="c-h"><span class="c-n">39</span><h3>Tipos de cartera</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Qué es</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Común básica</td>
+<td><strong>Totalmente gratuita</strong></td>
+</tr>
+<tr>
+<td>Común suplementaria</td>
+<td><strong>Con aportación del usuario</strong> (farmacia, prótesis, dietéticos, transporte no urgente)</td>
+</tr>
+<tr>
+<td>Común de servicios accesorios</td>
+<td>Actividades de apoyo</td>
+</tr>
+<tr>
+<td>Complementaria</td>
+<td>Servicios extra de <strong>cada comunidad autónoma</strong></td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué tipos de cartera hay y cuál es totalmente gratuita?</p><label class="dom"><input type="checkbox" data-n="39"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c40" data-lv="2">
+<header class="c-h"><span class="c-n">40</span><h3>Prestaciones de la cartera común (8)</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Salud pública · atención primaria · atención especializada · urgencias · farmacéutica · productos dietéticos · ortoprotésica · transporte sanitario.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Cita las 8 prestaciones de la cartera común.</p><label class="dom"><input type="checkbox" data-n="40"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c41" data-lv="1">
+<header class="c-h"><span class="c-n">41</span><h3>Salud pública</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Protege, promueve y preserva la salud de toda la comunidad, no solo del individuo.</strong> Incluye vigilancia epidemiológica, vacunas, control de brotes, seguridad alimentaria, salud ambiental y <strong>cribados de cáncer</strong> (mama, cérvix y colorrectal). El cribado de cérvix genera gran parte del trabajo de citología.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué hace la salud pública y qué cribados de cáncer incluye?</p><label class="dom"><input type="checkbox" data-n="41"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c42" data-lv="1">
+<header class="c-h"><span class="c-n">42</span><h3>Urgencias y triaje</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>Urgencias ★ <strong>24 horas</strong>: extrahospitalarias (centros de salud, puntos de atención continuada, <strong>112</strong>) y hospitalarias.</li>
+<li>★ Al llegar, <strong>triaje</strong> (normalmente enfermería): ★ <strong>clasifica la prioridad según la gravedad</strong>.</li>
+<li>★ <strong>Todos los pacientes son atendidos</strong>: el triaje no decide si se atiende.</li>
+<li>★ <strong>5 niveles</strong> (Sistema Español de Triaje, Manchester): de "atención inmediata" a "no urgente".</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es el triaje, quién lo hace y cuántos niveles tiene?</p><label class="dom"><input type="checkbox" data-n="42"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c43" data-lv="1">
+<header class="c-h"><span class="c-n">43</span><h3>Prestación farmacéutica</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Medicamentos necesarios al menor coste posible para el paciente.</strong></p>
+<ul>
+<li>Farmacia hospitalaria: <strong>gratuita</strong>.</li>
+<li>Oficina de farmacia: con receta y <strong>copago según renta</strong>.</li>
+<li>★ <strong>La AEMPS autoriza los medicamentos; el Ministerio de Sanidad decide cuáles se financian y a qué precio.</strong></li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Quién autoriza los medicamentos y quién decide su financiación y precio?</p><label class="dom"><input type="checkbox" data-n="43"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c44" data-lv="2">
+<header class="c-h"><span class="c-n">44</span><h3>Dietéticos, ortoprótesis y transporte</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 6 · Organización asistencial y cartera de servicios</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Productos dietéticos:</strong> para quien necesita ★ <strong>alimentación especial</strong> (trastornos metabólicos congénitos, ★ <strong>nutrición enteral</strong>, también domiciliaria).</li>
+<li><strong>Ortoprotésica:</strong> <strong>prótesis</strong> (sustituyen una parte del cuerpo: cadera, mama), <strong>ortesis</strong> (corrigen o apoyan: férulas, corsés), sillas de ruedas. Algunas con aportación.</li>
+<li><strong>Transporte sanitario:</strong> urgente (ambulancias) y no urgente (por motivos clínicos: diálisis, radioterapia). Siempre con prescripción.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué diferencia hay entre prótesis y ortesis?</p><label class="dom"><input type="checkbox" data-n="44"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b6" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 7</span><span class="bt">Deontología y bioética</span><span class="bc">⏱ 20 min · Conceptos 45–49 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c45" data-lv="1">
+<header class="c-h"><span class="c-n">45</span><h3>Código deontológico</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · Deontología y bioética</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Conjunto de principios éticos, deberes y normas que rigen la conducta de los profesionales</strong>, ★ <strong>estableciendo pautas de comportamiento</strong>. ★ <strong>No siempre son legalmente vinculantes</strong>; los aplican los colegios profesionales.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es un código deontológico y es siempre legalmente vinculante?</p><label class="dom"><input type="checkbox" data-n="45"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c46" data-lv="1">
+<header class="c-h"><span class="c-n">46</span><h3>Deontología y bioética</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · Deontología y bioética</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>La deontología ★ <strong>une la ética personal a la normativa legal</strong>. Algunos comportamientos ★ <strong>exigen una legislación que los regule</strong>.</li>
+<li>La <strong>bioética</strong> ★ <strong>engloba la ética, la deontología y el derecho</strong>.</li>
+<li>★ El término <strong>bioética</strong> lo acuñó <strong>Van Rensselaer Potter (1971)</strong>.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Quién acuñó el término bioética y en qué año?</p><label class="dom"><input type="checkbox" data-n="46"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c47" data-lv="1">
+<header class="c-h"><span class="c-n">47</span><h3>Principios de la bioética <span class="note">**Tom Beauchamp y James Childress**</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · Deontología y bioética</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Principio</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Autonomía</td>
+<td>Respetar la capacidad de decidir de forma informada y libre: <strong>consentimiento informado</strong> (Ley 41/2002, 14 de noviembre)</td>
+</tr>
+<tr>
+<td>Justicia</td>
+<td>Equidad e imparcialidad: acceso a la atención <strong>sin discriminación</strong></td>
+</tr>
+<tr>
+<td>Beneficencia</td>
+<td>Obligación de <strong>actuar en beneficio</strong> del paciente</td>
+</tr>
+<tr>
+<td>No maleficencia</td>
+<td><strong>No causar daño</strong> intencionado ("primero, no hacer daño", principio hipocrático)</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los 4 principios de la bioética, quién los estableció y qué ley regula el consentimiento informado?</p><label class="dom"><input type="checkbox" data-n="47"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c48" data-lv="1">
+<header class="c-h"><span class="c-n">48</span><h3>Código de Deontología Médica</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · Deontología y bioética</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Publicado en 2011.</strong> Tres bloques:</p>
+<ol>
+<li>★ <strong>Comportamiento del médico</strong>, secreto profesional y final de la vida.</li>
+<li>★ <strong>Relaciones con otras profesiones</strong> sanitarias.</li>
+<li>★ <strong>Relación con el sistema sanitario</strong> e instituciones del SNS.</li>
+</ol>
+<p>Capítulos ★: reproducción humana, investigación, dopaje, vejación y torturas, trasplantes, genética, gestión, formación de conciencia, economía y docencia.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿En qué año se publicó el Código de Deontología Médica y cuáles son sus tres bloques?</p><label class="dom"><input type="checkbox" data-n="48"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c49" data-lv="1">
+<header class="c-h"><span class="c-n">49</span><h3>Novedades del código 2011</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 7 · Deontología y bioética</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li>Historia clínica <strong>registrada informáticamente</strong>.</li>
+<li><strong>Protección de datos</strong> clínicos.</li>
+<li><strong>Seguridad del paciente</strong> e información de riesgos (<strong>consentimiento informado</strong>).</li>
+<li><strong>Combatir la violencia</strong> (mujeres, menores, ancianos, discapacidad): denunciarla.</li>
+<li>
+<p><strong>Responsabilidad en la relación médico-paciente</strong> (veraz, honesto, leal).
+Además: los directivos de los colegios oficiales deben cumplir su responsabilidad <strong>sin fraude</strong>.</p>
+</li>
+<li>
+<p><strong>Formación continua.</strong></p>
+</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Cita las seis novedades del código de 2011.</p><label class="dom"><input type="checkbox" data-n="49"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b7" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 8</span><span class="bt">Ley de Ordenación de las Profesiones Sanitarias (LOPS)</span><span class="bc">⏱ 20 min · Conceptos 50–54 · 3 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c50" data-lv="1">
+<header class="c-h"><span class="c-n">50</span><h3>LOPS</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Ley 44/2003, de 21 de noviembre.</strong> La Hasta 2003 no había una norma que definiera quién es profesional sanitario, qué puede hacer y cómo se forma. La Ley General de Sanidad (1986) crea el sistema; ★ <strong>la LOPS (2003) regula a las personas que trabajan en él</strong>.
+★ <strong>Regula el ejercicio de las profesiones sanitarias en la sanidad pública y privada</strong>, para garantizar que quien atiende ★ <strong>está debidamente cualificado</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué diferencia hay entre la Ley General de Sanidad y la LOPS?</p><label class="dom"><input type="checkbox" data-n="50"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c51" data-lv="1">
+<header class="c-h"><span class="c-n">51</span><h3>Clasificación de profesionales <span class="note">**dos grandes grupos**</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li>★ <strong>A. Profesiones tituladas (universitarias), art. 2</strong>, con colegio profesional:<ul>
+<li><strong>Licenciado / grado + máster:</strong> Medicina, Farmacia, Odontología, Veterinaria (+ Biología, Química, Bioquímica, Física con especialidad sanitaria; Psicología General Sanitaria).</li>
+<li><strong>Diplomado / grado:</strong> Enfermería, Fisioterapia, Terapia Ocupacional, Podología, Óptica, Logopedia, Nutrición.</li>
+</ul>
+</li>
+<li>★ <strong>B. Formación profesional, art. 3:</strong><ul>
+<li><strong>Técnicos superiores:</strong> <strong>Anatomía Patológica y Citodiagnóstico</strong>, Laboratorio Clínico, Imagen para el Diagnóstico, Radioterapia, Higiene Bucodental, Documentación Sanitaria, Dietética, Audiología/Audioprótesis, Prótesis Dentales, Ortoprótesis, Salud Ambiental.</li>
+<li><strong>Técnicos (grado medio):</strong> Cuidados Auxiliares de Enfermería, Farmacia y Parafarmacia, Emergencias Sanitarias (título de 2009).</li>
+</ul>
+</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿En qué dos grupos clasifica la LOPS a los profesionales y en cuál está el Técnico Superior en Anatomía Patológica?</p><label class="dom"><input type="checkbox" data-n="51"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c52" data-lv="2">
+<header class="c-h"><span class="c-n">52</span><h3>Principios del ejercicio profesional</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Ejercer solo con la <strong>titulación</strong> · actuar según la <strong>evidencia científica</strong>, ★ <strong>siguiendo guías y protocolos</strong> · respetar <strong>autonomía, intimidad y dignidad</strong> · ★ <strong>formación continuada</strong> · ★ <strong>trabajo coordinado en equipo</strong>: ★ <strong>interdisciplinar, basado en la cooperación y no en la jerarquía rígida</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué principios del ejercicio profesional fija la LOPS?</p><label class="dom"><input type="checkbox" data-n="52"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c53" data-lv="1">
+<header class="c-h"><span class="c-n">53</span><h3>Formación de los profesionales <span class="note">**en varias etapas**</span></h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol>
+<li><strong>Pregrado:</strong> carrera o ciclo.</li>
+<li><strong>Especializada:</strong> residencia (MIR, FIR, BIR, QIR, EIR, PIR). El patólogo: 4 años de residente tras el MIR.</li>
+<li><strong>Continuada:</strong> cursos acreditados.</li>
+<li><strong>Desarrollo profesional:</strong> carrera por grados.</li>
+</ol></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son las cuatro etapas de formación que establece la LOPS?</p><label class="dom"><input type="checkbox" data-n="53"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c54" data-lv="2">
+<header class="c-h"><span class="c-n">54</span><h3>Otros aspectos de la LOPS</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>Ejercicio privado:</strong> por cuenta propia o ajena, con las mismas garantías.</li>
+<li><strong>Registro Estatal de Profesionales Sanitarios:</strong> comprobar quién está habilitado.</li>
+<li><strong>Comisión Consultiva Profesional:</strong> participación de las profesiones en las decisiones.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Para qué sirve el Registro Estatal de Profesionales Sanitarios?</p><label class="dom"><input type="checkbox" data-n="54"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b8" data-min="25"><h2 class="blk-h"><span class="bn">BLOQUE 9</span><span class="bt">Economía de la salud y sostenibilidad</span><span class="bc">⏱ 25 min · Conceptos 55–62 · 5 🔴 · <b class="bd">0</b>/8 dominados</span></h2><article class="cpt lv1" id="c55" data-lv="1">
+<header class="c-h"><span class="c-n">55</span><h3>Cambios en la sociedad</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 9 · Economía de la salud y sostenibilidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La sociedad vive ★ <strong>grandes cambios, rápidos</strong>. Los expertos estudian ★ <strong>situaciones demográficas, económicas y sociales futuras</strong>, que influyen en el ★ <strong>diseño de sistemas y la planificación de leyes</strong>. Futuro: ★ <strong>población envejecida, con enfermedades antes mortales que ahora son crónicas</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué tipo de población se prevé y por qué importa al sistema sanitario?</p><label class="dom"><input type="checkbox" data-n="55"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c56" data-lv="1">
+<header class="c-h"><span class="c-n">56</span><h3>Hacia dónde van las mejoras</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 9 · Economía de la salud y sostenibilidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Gestionar los recursos humanos y financieros</strong> · ★ <strong>sostenibilidad del sistema</strong> · ★ <strong>atención integral del paciente</strong> · ★ <strong>nuevas herramientas digitales</strong> y ★ <strong>formación en las especialidades cada vez más fluida</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Hacia dónde van enfocadas las mejoras del sistema sanitario?</p><label class="dom"><input type="checkbox" data-n="56"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c57" data-lv="1">
+<header class="c-h"><span class="c-n">57</span><h3>Economía de la salud</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 9 · Economía de la salud y sostenibilidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Estudia cómo repartir unos recursos limitados para obtener el máximo nivel de salud posible.</strong>
+<strong>Coste de oportunidad:</strong> cada euro gastado en algo deja de gastarse en otra cosa.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la economía de la salud y qué es el coste de oportunidad?</p><label class="dom"><input type="checkbox" data-n="57"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c58" data-lv="2">
+<header class="c-h"><span class="c-n">58</span><h3>Eficacia, efectividad, eficiencia y equidad</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 9 · Economía de la salud y sostenibilidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Pregunta que responde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Eficacia</strong></td>
+<td>¿Funciona en <strong>condiciones ideales</strong>?</td>
+</tr>
+<tr>
+<td><strong>Efectividad</strong></td>
+<td>¿Funciona en la <strong>práctica real</strong>?</td>
+</tr>
+<tr>
+<td><strong>Eficiencia</strong></td>
+<td>¿Mejor resultado con el <strong>menor coste</strong>?</td>
+</tr>
+<tr>
+<td><strong>Equidad</strong></td>
+<td>¿Llega a todos <strong>según sus necesidades</strong>?</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué diferencia hay entre eficacia, efectividad y eficiencia?</p><label class="dom"><input type="checkbox" data-n="58"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c59" data-lv="1">
+<header class="c-h"><span class="c-n">59</span><h3>Sostenibilidad del SNS</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 9 · Economía de la salud y sostenibilidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>El gasto sanitario crece más deprisa que los recursos.</strong> España dedica ★ <strong>alrededor del 10 % del PIB a sanidad</strong>; unas tres cuartas partes es gasto público.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué porcentaje del PIB dedica España a sanidad?</p><label class="dom"><input type="checkbox" data-n="59"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c60" data-lv="2">
+<header class="c-h"><span class="c-n">60</span><h3>Causas del aumento del gasto</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 9 · Economía de la salud y sostenibilidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Envejecimiento</strong> (más de 1 de cada 5 españoles tiene más de 65) · <strong>descenso de la natalidad</strong> · <strong>cronicidad</strong> · tecnologías y fármacos caros (inmunoterapia, terapias génicas) · ★ <strong>mayores expectativas de la población</strong>.
+El envejecimiento es un logro, pero ★ <strong>obliga a replantear el modelo</strong> (crónicos, servicios sociales, atención domiciliaria, prevención). Objetivo: ★ <strong>mejor calidad de vida de los mayores sin poner en riesgo el sistema</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Cita cinco causas del aumento del gasto sanitario.</p><label class="dom"><input type="checkbox" data-n="60"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c61" data-lv="2">
+<header class="c-h"><span class="c-n">61</span><h3>En qué se gasta el dinero</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 9 · Economía de la salud y sostenibilidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Personal sanitario: la partida más importante</strong> (casi la mitad del gasto público) · infraestructuras · alta tecnología · quirófanos y material estéril · fármacos · prevención · vigilancia epidemiológica · investigación · reducción de listas de espera · trasplantes.
+★ <strong>España es líder mundial en donación de órganos (ONT).</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuál es la mayor partida del gasto sanitario y en qué es líder mundial España?</p><label class="dom"><input type="checkbox" data-n="61"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c62" data-lv="1">
+<header class="c-h"><span class="c-n">62</span><h3>El coste de no diagnosticar</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 9 · Economía de la salud y sostenibilidad</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Un diagnóstico tardío es mucho más caro que uno precoz</strong> (más tratamientos, ingresos, peor pronóstico). Ejemplo: quitar un pólipo en el cribado colorrectal frente a tratar un cáncer avanzado. ★ <strong>La Anatomía Patológica es clave</strong>: diagnóstico rápido y preciso.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Por qué el diagnóstico precoz ahorra dinero?</p><label class="dom"><input type="checkbox" data-n="62"> Lo domino</label></div>
+</div></article></section>
+<section class="blk" id="b9" data-min="45"><h2 class="blk-h"><span class="bn">BLOQUE 10</span><span class="bt">Calidad asistencial y evaluación</span><span class="bc">⏱ 45 min · Conceptos 63–75 · 7 🔴 · <b class="bd">0</b>/13 dominados</span></h2><article class="cpt lv1" id="c63" data-lv="1">
+<header class="c-h"><span class="c-n">63</span><h3>Calidad en la Ley 16/2003</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>No basta con atender a todos: hay que atender <strong>bien y de forma parecida en todo el territorio</strong>. ★ <strong>Calidad = hacer lo correcto, de la forma correcta, en el momento adecuado, para el paciente adecuado, con seguridad y al menor coste posible.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo define la calidad asistencial la Ley 16/2003?</p><label class="dom"><input type="checkbox" data-n="63"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c64" data-lv="2">
+<header class="c-h"><span class="c-n">64</span><h3>Garantías de las prestaciones (Ley 16/2003)</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Accesibilidad</strong> (igualdad de acceso) · <strong>movilidad</strong> (atención en cualquier comunidad) · <strong>tiempo</strong> (plazos razonables, tiempos máximos) · <strong>información</strong> · <strong>seguridad</strong> (centros autorizados) · <strong>calidad</strong> (estándares y <strong>CSUR</strong>: centros de referencia para casos complejos o raros).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Cita las seis garantías de las prestaciones y qué son los CSUR.</p><label class="dom"><input type="checkbox" data-n="64"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c65" data-lv="2">
+<header class="c-h"><span class="c-n">65</span><h3>Infraestructura de la calidad</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Normas de calidad y seguridad</strong> · <strong>indicadores</strong> (tiempos de espera, infecciones, reingresos, mortalidad) · <strong>guías de práctica clínica</strong> (programa <strong>GuíaSalud</strong>) · <strong>registro de buenas prácticas</strong> · <strong>registro de acontecimientos adversos</strong> (errores e incidentes).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué incluye la infraestructura de la calidad y qué es GuíaSalud?</p><label class="dom"><input type="checkbox" data-n="65"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c66" data-lv="2">
+<header class="c-h"><span class="c-n">66</span><h3>Instrumentos para mejorar</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Planes de calidad del SNS</strong> (de ahí la Estrategia de Seguridad del Paciente) · <strong>evaluación externa</strong> (auditorías y acreditación) · <strong>Agencia de Calidad del SNS</strong> (hoy sus funciones las asume el Ministerio) · <strong>Observatorio del SNS</strong> (compara comunidades).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué instrumentos de mejora de la calidad creó la ley?</p><label class="dom"><input type="checkbox" data-n="66"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c67" data-lv="1">
+<header class="c-h"><span class="c-n">67</span><h3>Definición de calidad de Donabedian</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Avedis Donabedian (1980)</strong> propuso una ★ <strong>definición de calidad asistencial</strong>: la que ★ <strong>se espera que proporcione al usuario el máximo y más completo bienestar</strong>, tras valorar el ★ <strong>balance de ganancias y pérdidas</strong> del proceso.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Quién definió la calidad asistencial en 1980 y cómo?</p><label class="dom"><input type="checkbox" data-n="67"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c68" data-lv="2">
+<header class="c-h"><span class="c-n">68</span><h3>Los 7 pilares de la calidad (Donabedian)</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Eficacia · efectividad · eficiencia · optimización · equidad · aceptabilidad · legitimidad.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Cita los 7 pilares de la calidad de Donabedian.</p><label class="dom"><input type="checkbox" data-n="68"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c69" data-lv="2">
+<header class="c-h"><span class="c-n">69</span><h3>Las 3 dimensiones de Donabedian: estructura, proceso y resultado</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Estructura</th>
+<th>Proceso</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Personal, equipos, recursos financieros, instalaciones, normas, procedimientos, sistemas de información</td>
+<td>Acciones del personal y de los pacientes, oportunidad, comunicación, aplicación de procedimientos</td>
+<td>Indicadores, gasto adecuado, acreditación, mejora de la salud, satisfacción de los usuarios</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son las tres dimensiones del modelo de calidad de Donabedian?</p><label class="dom"><input type="checkbox" data-n="69"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c70" data-lv="2">
+<header class="c-h"><span class="c-n">70</span><h3>Atributos de la calidad asistencial</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Accesibilidad, aceptabilidad (satisfacción del paciente), adecuación, calidad científico-técnica, competencia profesional, continuidad, cooperación del paciente, disponibilidad, efectividad, eficiencia, satisfacción del profesional y <strong>seguridad</strong> (minimizar riesgos y daños).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la aceptabilidad y qué es la seguridad como atributos de calidad?</p><label class="dom"><input type="checkbox" data-n="70"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c71" data-lv="1">
+<header class="c-h"><span class="c-n">71</span><h3>Tipos de costes sanitarios</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Qué son</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>★ <strong>Directos</strong></td>
+<td>Se originan <strong>directamente por la atención</strong> y se miden en dinero</td>
+<td><strong>Sanitarios:</strong> hospitalización, fármacos, consultas, pruebas, rehabilitación. <strong>No sanitarios:</strong> transporte, ayuda en el domicilio</td>
+</tr>
+<tr>
+<td>★ <strong>Indirectos</strong></td>
+<td>★ <strong>Surgen a raíz de la enfermedad</strong> y afectan a la <strong>capacidad de trabajar o de realizar las actividades habituales</strong></td>
+<td>★ <strong>Pérdida de productividad</strong> (absentismo, salarios) y ★ <strong>tiempo de cuidado informal</strong> de familiares</td>
+</tr>
+<tr>
+<td>★ <strong>Intangibles</strong></td>
+<td>★ <strong>Los más difíciles de medir</strong></td>
+<td>★ <strong>Dolor y sufrimiento</strong>, ★ <strong>ansiedad y estrés</strong>, ★ <strong>menor calidad de vida</strong></td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué tres tipos de costes sanitarios hay? Pon un ejemplo de cada uno.</p><label class="dom"><input type="checkbox" data-n="71"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c72" data-lv="1">
+<header class="c-h"><span class="c-n">72</span><h3>Modelos de gestión de calidad</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>★ <strong>Referente permanente e instrumento para mejorar los productos o servicios</strong> de una organización. ★ <strong>Ayuda a comprender sus dimensiones</strong> y a compararse con otras.
+Los de calidad total más difundidos: <strong>Deming (1951)</strong>, <strong>Malcolm Baldrige (1987)</strong> y <strong>EFQM (1992)</strong>.
+★ <strong>Los más usados en salud:</strong> <strong>EFQM</strong> (autoevaluación), <strong>Euskalit</strong> (Fundación Vasca para la Calidad), <strong>ISO 9001:2015</strong> y <strong>Joint Commission (JCAHO)</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué modelos de gestión de calidad son los más usados en salud?</p><label class="dom"><input type="checkbox" data-n="72"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c73" data-lv="1">
+<header class="c-h"><span class="c-n">73</span><h3>Modelo Deming (ciclo PDCA)</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Ciclo de 4 fases que se repite: <strong>Planificar</strong> (objetivos, recursos) → <strong>Hacer</strong> (procesos, actividades) → <strong>Verificar</strong> (análisis, medidas) → <strong>Actuar</strong> (acciones correctivas, nuevo estándar).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son las cuatro fases del ciclo de Deming?</p><label class="dom"><input type="checkbox" data-n="73"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c74" data-lv="1">
+<header class="c-h"><span class="c-n">74</span><h3>Modelo EFQM y Euskalit</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul>
+<li><strong>EFQM:</strong> liderazgo → personas, política y estrategia, alianzas y recursos → procesos → resultados en personas, clientes y sociedad → <strong>resultados clave</strong>. Se divide en <strong>agentes</strong> (lo que se hace) y <strong>resultados</strong> (lo que se logra). Versión actual: dirección, ejecución y resultados.</li>
+<li><strong>Euskalit:</strong> <strong>resultados</strong> en el centro, rodeados de <strong>estrategia, clientes, personas, sociedad e innovación</strong>.</li>
+</ul></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿En qué dos grandes partes se divide el modelo EFQM y qué hay en el centro del modelo Euskalit?</p><label class="dom"><input type="checkbox" data-n="74"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c75" data-lv="1">
+<header class="c-h"><span class="c-n">75</span><h3>Tipos de evaluaciones económicas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Bloque 10 · Calidad asistencial y evaluación</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class="tw"><table>
+<thead>
+<tr>
+<th>Análisis</th>
+<th>Qué compara</th>
+<th>Cómo mide el resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Coste-beneficio (ACB)</strong></td>
+<td>★ Costes con <strong>beneficios</strong></td>
+<td>★ <strong>En dinero (€)</strong></td>
+</tr>
+<tr>
+<td><strong>Coste-efectividad (ACE)</strong></td>
+<td>★ Costes con <strong>resultados en salud</strong></td>
+<td>Efectos: años de vida, casos evitados</td>
+</tr>
+<tr>
+<td><strong>Coste-utilidad (ACU)</strong></td>
+<td>★ Costes con <strong>años de vida ajustados por calidad (QALY)</strong></td>
+<td>En <strong>QALY</strong></td>
+</tr>
+<tr>
+<td><strong>Coste-minimización (ACM)</strong></td>
+<td>★ Dos tratamientos <strong>igual de efectivos</strong></td>
+<td>★ <strong>Se elige el más barato</strong> (€)</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué compara y cómo mide cada tipo de análisis: ACB, ACE, ACU y ACM?</p><label class="dom"><input type="checkbox" data-n="75"> Lo domino</label></div>
+</div></article></section>
+<p class="empty" id="empty" hidden>No hay conceptos con ese filtro o esa búsqueda.</p>
+<section class="xs" id="impres"><h2 class="xs-h">⚡ Lo imprescindible (repaso exprés)</h2><p class="meta">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><h3 class='ih'>1 · Sistema sanitario y salud</h3><details class="pq"><summary>¿Sistema sanitario según la OMS?</summary><div class="pa"><p><strong>Conjunto de elementos interrelacionados que contribuyen a la salud</strong> (hogares, trabajo, lugares públicos, comunidades).</p></div></details><details class="pq"><summary>¿5 principios de la OMS?</summary><div class="pa"><p><strong>Universalidad</strong> (todos tienen derecho) · <strong>Equidad</strong> (a cada uno lo que <strong>necesita</strong>, no lo mismo) · <strong>Eficiencia</strong> (mejores resultados usando bien los recursos, no "gastar poco") · <strong>Atención integral</strong> (física, psicológica y social) · <strong>Adaptación a las necesidades</strong> (detectar y <strong>prevenir</strong>).</p></div></details><details class="pq"><summary>¿Salud según la OMS (1948)?</summary><div class="pa"><p><strong>Completo bienestar físico, mental y social, y no solo ausencia de enfermedad.</strong></p></div></details><details class="pq"><summary>¿Alma-Ata (1978)?</summary><div class="pa"><p>Salud = <strong>derecho humano fundamental</strong>; destaca la <strong>atención primaria</strong>.</p></div></details><details class="pq"><summary>¿Concepto ampliado?</summary><div class="pa"><p>La salud está condicionada por <strong>factores sociales y capacidad de funcionamiento</strong>.</p></div></details><h3 class='ih'>2 · Determinantes de la salud</h3><details class="pq"><summary>¿Modelo de Lalonde (1974)?</summary><div class="pa"><p><strong>Estilo de vida 43 %</strong> (el que más) · <strong>Biología 27 %</strong> · <strong>Medio ambiente 19 %</strong> · <strong>Sistema sanitario 11 %</strong> (el que menos).</p></div></details><details class="pq"><summary>¿Biología / estilo de vida / medio ambiente / sistema sanitario?</summary><div class="pa"><p><strong>Cómo somos</strong> (edad, sexo, genética) / <strong>lo que hacemos</strong> (dieta, tabaco, ejercicio) / <strong>lo que nos rodea</strong> (medio <strong>físico</strong> y <strong>social</strong>) / <strong>la atención que recibimos</strong>.</p></div></details><details class="pq"><summary>¿Los estilos de vida dependen solo de la persona?</summary><div class="pa"><p><strong>No</strong>: las condiciones sociales y económicas facilitan o dificultan los hábitos.</p></div></details><details class="pq"><summary>¿Dahlgren y Whitehead (1991)?</summary><div class="pa"><p><strong>Capas concéntricas</strong> alrededor de la persona; <strong>cuanto más externa la capa, menos depende de la persona</strong>.</p></div></details><details class="pq"><summary>¿Países ricos vs pobres?</summary><div class="pa"><p>Ricos: <strong>enfermedades crónicas</strong>. Pobres: <strong>infecciosas y mortalidad infantil</strong>.</p></div></details><h3 class='ih'>3 · Qué hace el sistema y cómo se organiza</h3><details class="pq"><summary>¿Actúa solo cuando enfermamos?</summary><div class="pa"><p><strong>No</strong>: protege, mantiene y recupera la salud.</p></div></details><details class="pq"><summary>¿5 actuaciones?</summary><div class="pa"><p><strong>Prevención · detección precoz · tratamiento · rehabilitación · promoción de la salud.</strong></p></div></details><details class="pq"><summary>¿Por qué cada país lo organiza distinto?</summary><div class="pa"><p>Distinta situación <strong>económica, política, social y cultural</strong>.</p></div></details><details class="pq"><summary>¿Modelos sanitarios?</summary><div class="pa"><p>Los <strong>criterios doctrinales e ideológicos</strong> de cada sistema.</p></div></details><details class="pq"><summary>¿3 preguntas de todo sistema?</summary><div class="pa"><p><strong>¿Quién paga?</strong> (financiación) · <strong>¿quién presta?</strong> (provisión) · <strong>¿quién lo usa?</strong> (acceso).</p></div></details><h3 class='ih'>4 · Modelos sanitarios</h3><div class="tw"><table>
+<thead>
+<tr>
+<th>Modelo</th>
+<th>Quién paga</th>
+<th>Acceso</th>
+<th>Ejemplo</th>
+<th>Lo clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Liberal</strong></td>
+<td>Seguro privado / individuo</td>
+<td>Según <strong>dinero o póliza</strong></td>
+<td><strong>EE. UU.</strong></td>
+<td><strong>Avances tecnológicos</strong>; <strong>sin universalidad ni equidad</strong>; esperanza de vida menor</td>
+</tr>
+<tr>
+<td><strong>Social (Semashko)</strong></td>
+<td><strong>Estado (todo)</strong></td>
+<td><strong>Universal y gratuito</strong></td>
+<td><strong>Cuba</strong> (antes URSS, 1917)</td>
+<td>Profesionales = empleados públicos; vacunaciones masivas; regímenes no democráticos</td>
+</tr>
+<tr>
+<td><strong>Mixto</strong></td>
+<td>Estado + privado</td>
+<td>—</td>
+<td><strong>Mayoría de países occidentales</strong></td>
+<td>Calidad asistencial; <strong>promoción, prevención y primaria</strong>; 2 variantes</td>
+</tr>
+<tr>
+<td><strong>Bismarck</strong></td>
+<td><strong>Cotizaciones</strong></td>
+<td>Trabajadores (+ <strong>beneficencia</strong>)</td>
+<td><strong>Alemania 1883</strong>, Francia</td>
+<td><strong>Mutualista</strong>; quien no trabajaba quedaba desprotegido</td>
+</tr>
+<tr>
+<td><strong>Beveridge</strong></td>
+<td><strong>Impuestos</strong></td>
+<td><strong>Universal</strong></td>
+<td><strong>Reino Unido</strong> (1942→NHS 1948), <strong>España</strong></td>
+<td>Se puede concertar con privados; <strong>listas de espera</strong></td>
+</tr>
+</tbody>
+</table></div><details class="pq"><summary>¿Qué modelo sigue España?</summary><div class="pa"><p><strong>Beveridge.</strong> Antes era <strong>Bismarck</strong>; el cambio empezó con la <strong>Ley General de Sanidad de 1986</strong>.</p></div></details><h3 class='ih'>5 · El SNS en España</h3><p><strong>¿Leyes clave?</strong></p>
+<ul>
+<li><strong>Constitución 1978, art. 43</strong> → <strong>derecho a la protección de la salud</strong>.</li>
+<li><strong>Ley 14/1986 General de Sanidad</strong> → <strong>crea el SNS</strong>.</li>
+<li><strong>Ley 16/2003 de cohesión y calidad</strong> → <strong>cartera común</strong> en todas las CC. AA.</li>
+<li><strong>RDL 16/2012</strong> → restringe a "asegurados" y amplía el copago.</li>
+<li><strong>RDL 7/2018</strong> → <strong>recupera la universalidad</strong> (por <strong>residencia</strong>).</li>
+</ul><details class="pq"><summary>¿Salud como derecho fundamental (internacional)?</summary><div class="pa"><p><strong>Constitución de la OMS, 1946.</strong></p></div></details><details class="pq"><summary>¿7 principios del SNS?</summary><div class="pa"><p><strong>Universal · equitativo · financiado con fondos públicos · gratuito en el uso · integral · de calidad · descentralizado.</strong></p></div></details><details class="pq"><summary>¿Quién reparte competencias?</summary><div class="pa"><p>La <strong>Constitución</strong> (arts. 148 y 149). <strong>Estado:</strong> bases, medicamentos, <strong>sanidad exterior</strong>. <strong>CC. AA.:</strong> <strong>gestionan la asistencia</strong> (Navarra: <strong>Osasunbidea</strong>). <strong>Ceuta y Melilla:</strong> <strong>INGESA</strong>.</p></div></details><details class="pq"><summary>¿Consejo Interterritorial?</summary><div class="pa"><p><strong>Conecta Estado y CC. AA.</strong> (Ministerio + consejeros).</p></div></details><details class="pq"><summary>¿AEMPS?</summary><div class="pa"><p>Agencia de Medicamentos; <strong>depende del Ministerio de Sanidad</strong>; vigilancia tras la venta = <strong>farmacovigilancia</strong>.</p></div></details><details class="pq"><summary>¿Tarjeta Sanitaria Europea?</summary><div class="pa"><p>Asistencia en estancias temporales en la UE; con otros países, <strong>convenios bilaterales</strong>. Epidemias: <strong>OMS y ECDC</strong>.</p></div></details><h3 class='ih'>6 · Organización asistencial y cartera</h3><details class="pq"><summary>¿Atención primaria?</summary><div class="pa"><p><strong>Puerta de entrada</strong>; prevención y problemas frecuentes; <strong>acompaña toda la vida</strong>.</p></div></details><details class="pq"><summary>¿Atención especializada?</summary><div class="pa"><p>Hospitales; llega <strong>derivado</strong>; aquí está <strong>Anatomía Patológica</strong>; luego <strong>vuelve a primaria</strong>. Función propia: <strong>servicio de medios</strong>.</p></div></details><details class="pq"><summary>¿Organización territorial?</summary><div class="pa"><p><strong>Áreas de salud</strong> (hospital de referencia) → <strong>zonas básicas</strong> (centro de salud). Te toca según dónde estás <strong>empadronado</strong>; <strong>tarjeta sanitaria individual</strong>.</p></div></details><details class="pq"><summary>¿Cartera de servicios?</summary><div class="pa"><p><strong>Técnicas, tecnologías y procedimientos que ofrece el SNS</strong> (Ley 16/2003 y <strong>RD 1030/2006</strong>). <strong>Básica = gratuita</strong>; <strong>suplementaria = con aportación</strong>; <strong>complementaria = de cada CC. AA.</strong></p></div></details><details class="pq"><summary>¿Salud pública?</summary><div class="pa"><p>Protege la salud de <strong>toda la comunidad</strong>; incluye <strong>cribados</strong> de mama, cérvix y colorrectal.</p></div></details><details class="pq"><summary>¿Triaje?</summary><div class="pa"><p><strong>Clasifica la prioridad según la gravedad</strong> (enfermería), <strong>5 niveles</strong>; <strong>todos son atendidos</strong>.</p></div></details><details class="pq"><summary>¿Medicamentos?</summary><div class="pa"><p><strong>La AEMPS autoriza; el Ministerio decide la financiación y el precio.</strong></p></div></details><details class="pq"><summary>¿Prótesis vs ortesis?</summary><div class="pa"><p>Prótesis <strong>sustituye</strong> (cadera); ortesis <strong>corrige o apoya</strong> (férula, corsé).</p></div></details><h3 class='ih'>7 · Deontología y bioética</h3><details class="pq"><summary>¿Código deontológico?</summary><div class="pa"><p><strong>Principios éticos y normas de conducta</strong> de los profesionales; <strong>no siempre legalmente vinculante</strong>.</p></div></details><details class="pq"><summary>¿Bioética?</summary><div class="pa"><p>Engloba <strong>ética, deontología y derecho</strong>; término de <strong>Van Rensselaer Potter (1971)</strong>.</p></div></details><details class="pq"><summary>¿4 principios (Beauchamp y Childress)?</summary><div class="pa"><p><strong>Autonomía</strong> (consentimiento informado, <strong>Ley 41/2002</strong>) · <strong>Justicia</strong> (sin discriminación) · <strong>Beneficencia</strong> (hacer el bien) · <strong>No maleficencia</strong> (no hacer daño).</p></div></details><details class="pq"><summary>¿Código de Deontología Médica?</summary><div class="pa"><p><strong>2011</strong>; 3 bloques: <strong>comportamiento del médico</strong>, <strong>relación con otras profesiones</strong>, <strong>relación con el sistema sanitario</strong>. Novedades: historia clínica informatizada, protección de datos, seguridad del paciente, combatir la violencia, relación médico-paciente, formación continua.</p></div></details><h3 class='ih'>8 · LOPS</h3><details class="pq"><summary>¿Qué es?</summary><div class="pa"><p><strong>Ley 44/2003</strong>: regula <strong>a las personas</strong> (profesiones sanitarias, pública y privada) para que estén <strong>cualificadas</strong>. La LGS de 1986 crea <strong>el sistema</strong>.</p></div></details><details class="pq"><summary>¿Dos grupos de profesionales?</summary><div class="pa"><p><strong>A. Titulados universitarios (art. 2)</strong> y <strong>B. Formación profesional (art. 3)</strong>. El <strong>TS en Anatomía Patológica</strong> está en <strong>FP</strong>.</p></div></details><details class="pq"><summary>¿Trabajo en equipo según la LOPS?</summary><div class="pa"><p><strong>Interdisciplinar, basado en la cooperación y no en la jerarquía</strong>; seguir <strong>guías y protocolos</strong>; <strong>formación continuada</strong>.</p></div></details><details class="pq"><summary>¿Etapas de formación?</summary><div class="pa"><p><strong>Pregrado · especializada (MIR, BIR…) · continuada · desarrollo profesional.</strong></p></div></details><h3 class='ih'>9 · Economía y sostenibilidad</h3><details class="pq"><summary>¿Futuro de la población?</summary><div class="pa"><p><strong>Envejecida</strong>, con enfermedades antes mortales ahora <strong>crónicas</strong>.</p></div></details><details class="pq"><summary>¿Hacia dónde van las mejoras?</summary><div class="pa"><p>Gestionar recursos humanos y financieros · <strong>sostenibilidad</strong> · atención integral · <strong>herramientas digitales</strong> · formación más fluida.</p></div></details><details class="pq"><summary>¿Economía de la salud?</summary><div class="pa"><p>Repartir <strong>recursos limitados</strong> para el <strong>máximo nivel de salud</strong>.</p></div></details><details class="pq"><summary>¿Eficacia / efectividad / eficiencia?</summary><div class="pa"><p>Funciona en <strong>condiciones ideales</strong> / en la <strong>práctica real</strong> / <strong>mejor resultado al menor coste</strong>.</p></div></details><details class="pq"><summary>¿Gasto sanitario?</summary><div class="pa"><p>Crece más que los recursos; España ≈ <strong>10 % del PIB</strong>. Mayor partida: <strong>personal</strong>. España: <strong>líder en donación de órganos (ONT)</strong>.</p></div></details><details class="pq"><summary>¿Por qué el diagnóstico precoz ahorra?</summary><div class="pa"><p>El <strong>diagnóstico tardío es mucho más caro</strong>; la <strong>Anatomía Patológica es clave</strong>.</p></div></details><h3 class='ih'>10 · Calidad y evaluación</h3><details class="pq"><summary>¿Calidad (Ley 16/2003)?</summary><div class="pa"><p><strong>Hacer lo correcto, de la forma correcta, en el momento adecuado, al paciente adecuado, con seguridad y al menor coste.</strong></p></div></details><details class="pq"><summary>¿Calidad según Donabedian (1980)?</summary><div class="pa"><p>La que da al usuario el <strong>máximo y más completo bienestar</strong> tras valorar el <strong>balance de ganancias y pérdidas</strong>. Dimensiones: <strong>estructura, proceso y resultado</strong>.</p></div></details><details class="pq"><summary>¿Tipos de costes?</summary><div class="pa"><p><strong>Directos</strong> (por la atención: consultas, fármacos) · <strong>Indirectos</strong> (por la enfermedad: <strong>pérdida de productividad</strong>, cuidado informal) · <strong>Intangibles</strong> (<strong>los más difíciles de medir</strong>: dolor, ansiedad, calidad de vida).</p></div></details><details class="pq"><summary>¿Modelos de gestión de calidad más usados en salud?</summary><div class="pa"><p><strong>EFQM, Euskalit, ISO 9001:2015 y Joint Commission.</strong></p></div></details><details class="pq"><summary>¿Ciclo de Deming (PDCA)?</summary><div class="pa"><p><strong>Planificar → Hacer → Verificar → Actuar.</strong></p></div></details><details class="pq"><summary>¿Evaluaciones económicas?</summary><div class="pa"><p><strong>ACB:</strong> costes vs beneficios <strong>en €</strong> · <strong>ACE:</strong> costes vs resultados en salud · <strong>ACU:</strong> costes vs <strong>QALY</strong> · <strong>ACM:</strong> dos tratamientos <strong>igual de efectivos → el más barato</strong>.</p></div></details><h3 class='ih'>Las 15 que no puedes fallar</h3><ol>
+<li>5 principios de la OMS (<strong>equidad ≠ igualdad</strong>).</li>
+<li>Salud OMS 1948 y Alma-Ata 1978.</li>
+<li>Lalonde: <strong>43-27-19-11</strong>.</li>
+<li>Liberal = EE. UU., avances, sin universalidad.</li>
+<li>Social = Estado todo, <strong>Cuba</strong>.</li>
+<li>Bismarck = <strong>cotizaciones</strong>, Alemania 1883.</li>
+<li>Beveridge = <strong>impuestos</strong>, Reino Unido → <strong>España</strong>.</li>
+<li>Art. 43 CE · LGS 1986 crea el SNS · Ley 16/2003 cartera · RDL 7/2018 universalidad.</li>
+<li>CC. AA. gestionan la asistencia · Consejo Interterritorial · INGESA.</li>
+<li>Primaria = puerta de entrada · <strong>Anatomía Patológica en especializada</strong>.</li>
+<li>Triaje = prioridad por gravedad, 5 niveles.</li>
+<li>Bioética: autonomía, justicia, beneficencia, no maleficencia.</li>
+<li>LOPS 2003: TS en AP = <strong>formación profesional</strong>.</li>
+<li>Costes directos / indirectos / <strong>intangibles</strong> (los más difíciles).</li>
+<li>ACB (€), ACE, ACU (QALY), ACM (el más barato) · Deming PDCA.</li>
+</ol></section>
+<div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
+<aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
+<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><a class="dt sim" href="../../gest1/simulacro/">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<details class="db"><summary><span class="dn">1</span><span class="dt2">Sistema sanitario y salud</span><span class="dc" data-b="b0">0/5</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i1" href="#c1"><i></i>1. Sistema sanitario</a><a class="dl i2" href="#c2"><i></i>2. Para qué existe el sistema sanitario (esquema de la diapositiva 3)</a><a class="dl i1" href="#c3"><i></i>3. Principios de un sistema sanitario según la OMS</a><a class="dl i1" href="#c4"><i></i>4. Equidad frente a igualdad</a><a class="dl i1" href="#c5"><i></i>5. Definición de salud</a></details>
+<details class="db"><summary><span class="dn">2</span><span class="dt2">Determinantes de la salud</span><span class="dc" data-b="b1">0/8</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i1" href="#c6"><i></i>6. Determinantes de la salud</a><a class="dl i2" href="#c7"><i></i>7. Modelo de Lalonde (1974): los 4 determinantes y su peso</a><a class="dl i1" href="#c8"><i></i>8. Biología humana</a><a class="dl i1" href="#c9"><i></i>9. Estilos de vida</a><a class="dl i1" href="#c10"><i></i>10. Medio ambiente</a><a class="dl i1" href="#c11"><i></i>11. Sistema de asistencia sanitaria (como determinante)</a><a class="dl i1" href="#c12"><i></i>12. Modelo de Dahlgren y Whitehead (1991)</a><a class="dl i1" href="#c13"><i></i>13. Dónde naces importa</a></details>
+<details class="db"><summary><span class="dn">3</span><span class="dt2">Qué hace un sistema sanitario y cómo se organiza</span><span class="dc" data-b="b2">0/5</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i1" href="#c14"><i></i>14. El sistema sanitario no actúa solo cuando estamos enfermos</a><a class="dl i1" href="#c15"><i></i>15. Actuaciones del sistema sanitario</a><a class="dl i1" href="#c16"><i></i>16. ¿Por qué cada país lo organiza distinto?</a><a class="dl i1" href="#c17"><i></i>17. Modelos sanitarios</a><a class="dl i2" href="#c18"><i></i>18. Las 3 preguntas de todo sistema sanitario</a></details>
+<details class="db"><summary><span class="dn">4</span><span class="dt2">Modelos sanitarios</span><span class="dc" data-b="b3">0/8</span></summary><a class="dbk" href="#b3">Ir al inicio del bloque</a><a class="dl i1" href="#c19"><i></i>19. Modelo liberal o de libre mercado</a><a class="dl i1" href="#c20"><i></i>20. Ventajas e inconvenientes del modelo liberal</a><a class="dl i1" href="#c21"><i></i>21. Modelo social (socialista o Semashko)</a><a class="dl i2" href="#c22"><i></i>22. Ventajas e inconvenientes del modelo social</a><a class="dl i1" href="#c23"><i></i>23. Modelo mixto</a><a class="dl i1" href="#c24"><i></i>24. Modelo Bismarck</a><a class="dl i1" href="#c25"><i></i>25. Modelo Beveridge (sistemas públicos)</a><a class="dl i2" href="#c26"><i></i>26. Tabla resumen de los modelos</a></details>
+<details class="db"><summary><span class="dn">5</span><span class="dt2">El Sistema Nacional de Salud (SNS) en España</span><span class="dc" data-b="b4">0/7</span></summary><a class="dbk" href="#b4">Ir al inicio del bloque</a><a class="dl i1" href="#c27"><i></i>27. Modelo de España</a><a class="dl i1" href="#c28"><i></i>28. Marco legal internacional</a><a class="dl i1" href="#c29"><i></i>29. Leyes clave en España (en orden)</a><a class="dl i1" href="#c30"><i></i>30. Principios del SNS</a><a class="dl i1" href="#c31"><i></i>31. Reparto de competencias</a><a class="dl i1" href="#c32"><i></i>32. AEMPS</a><a class="dl i1" href="#c33"><i></i>33. Dimensión internacional</a></details>
+<details class="db"><summary><span class="dn">6</span><span class="dt2">Organización asistencial y cartera de servicios</span><span class="dc" data-b="b5">0/11</span></summary><a class="dbk" href="#b5">Ir al inicio del bloque</a><a class="dl i1" href="#c34"><i></i>34. Los dos niveles de atención</a><a class="dl i1" href="#c35"><i></i>35. Funciones de atención primaria</a><a class="dl i1" href="#c36"><i></i>36. Funciones de atención especializada</a><a class="dl i1" href="#c37"><i></i>37. Organización territorial</a><a class="dl i1" href="#c38"><i></i>38. Cartera de servicios del SNS</a><a class="dl i2" href="#c39"><i></i>39. Tipos de cartera</a><a class="dl i2" href="#c40"><i></i>40. Prestaciones de la cartera común (8)</a><a class="dl i1" href="#c41"><i></i>41. Salud pública</a><a class="dl i1" href="#c42"><i></i>42. Urgencias y triaje</a><a class="dl i1" href="#c43"><i></i>43. Prestación farmacéutica</a><a class="dl i2" href="#c44"><i></i>44. Dietéticos, ortoprótesis y transporte</a></details>
+<details class="db"><summary><span class="dn">7</span><span class="dt2">Deontología y bioética</span><span class="dc" data-b="b6">0/5</span></summary><a class="dbk" href="#b6">Ir al inicio del bloque</a><a class="dl i1" href="#c45"><i></i>45. Código deontológico</a><a class="dl i1" href="#c46"><i></i>46. Deontología y bioética</a><a class="dl i1" href="#c47"><i></i>47. Principios de la bioética</a><a class="dl i1" href="#c48"><i></i>48. Código de Deontología Médica</a><a class="dl i1" href="#c49"><i></i>49. Novedades del código 2011</a></details>
+<details class="db"><summary><span class="dn">8</span><span class="dt2">Ley de Ordenación de las Profesiones Sanitarias (LOPS)</span><span class="dc" data-b="b7">0/5</span></summary><a class="dbk" href="#b7">Ir al inicio del bloque</a><a class="dl i1" href="#c50"><i></i>50. LOPS</a><a class="dl i1" href="#c51"><i></i>51. Clasificación de profesionales</a><a class="dl i2" href="#c52"><i></i>52. Principios del ejercicio profesional</a><a class="dl i1" href="#c53"><i></i>53. Formación de los profesionales</a><a class="dl i2" href="#c54"><i></i>54. Otros aspectos de la LOPS</a></details>
+<details class="db"><summary><span class="dn">9</span><span class="dt2">Economía de la salud y sostenibilidad</span><span class="dc" data-b="b8">0/8</span></summary><a class="dbk" href="#b8">Ir al inicio del bloque</a><a class="dl i1" href="#c55"><i></i>55. Cambios en la sociedad</a><a class="dl i1" href="#c56"><i></i>56. Hacia dónde van las mejoras</a><a class="dl i1" href="#c57"><i></i>57. Economía de la salud</a><a class="dl i2" href="#c58"><i></i>58. Eficacia, efectividad, eficiencia y equidad</a><a class="dl i1" href="#c59"><i></i>59. Sostenibilidad del SNS</a><a class="dl i2" href="#c60"><i></i>60. Causas del aumento del gasto</a><a class="dl i2" href="#c61"><i></i>61. En qué se gasta el dinero</a><a class="dl i1" href="#c62"><i></i>62. El coste de no diagnosticar</a></details>
+<details class="db"><summary><span class="dn">10</span><span class="dt2">Calidad asistencial y evaluación</span><span class="dc" data-b="b9">0/13</span></summary><a class="dbk" href="#b9">Ir al inicio del bloque</a><a class="dl i1" href="#c63"><i></i>63. Calidad en la Ley 16/2003</a><a class="dl i2" href="#c64"><i></i>64. Garantías de las prestaciones (Ley 16/2003)</a><a class="dl i2" href="#c65"><i></i>65. Infraestructura de la calidad</a><a class="dl i2" href="#c66"><i></i>66. Instrumentos para mejorar</a><a class="dl i1" href="#c67"><i></i>67. Definición de calidad de Donabedian</a><a class="dl i2" href="#c68"><i></i>68. Los 7 pilares de la calidad (Donabedian)</a><a class="dl i2" href="#c69"><i></i>69. Las 3 dimensiones de Donabedian: estructura, proceso y resultado</a><a class="dl i2" href="#c70"><i></i>70. Atributos de la calidad asistencial</a><a class="dl i1" href="#c71"><i></i>71. Tipos de costes sanitarios</a><a class="dl i1" href="#c72"><i></i>72. Modelos de gestión de calidad</a><a class="dl i1" href="#c73"><i></i>73. Modelo Deming (ciclo PDCA)</a><a class="dl i1" href="#c74"><i></i>74. Modelo EFQM y Euskalit</a><a class="dl i1" href="#c75"><i></i>75. Tipos de evaluaciones económicas</a></details>
+<p class="dx">Extras</p><a class="dl" href="#impres">⚡ Lo imprescindible</a></div></aside><div id="planOv" hidden role="dialog" aria-modal="true" aria-label="Mi plan de estudio"><div class="pwrap">
+<div class="ptop"><header><p class="eyebrow" id="pl_eb"></p><h1>📅 Mi plan de estudio</h1><p class="sub" id="pl_sub"></p></header><button type="button" class="px" id="planClose" aria-label="Cerrar plan">×</button></div>
+<section class="count" id="pl_count"></section>
+<section class="cfg">
+  <div><p class="k" style="margin:0 0 6px">📆 Fecha del examen</p><input type="date" id="pl_fecha" style="font:inherit;font-size:16px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 8px"></div>
+  <div><p class="k" style="margin:0 0 6px">1 · ¿Cuántos días vas a estudiar?</p><div class="days" id="pl_days"></div></div>
+  <div><p class="k" style="margin:0 0 6px">2 · ¿Cuándo empiezas?</p><div class="seg" id="pl_startSeg"></div></div>
+  <p class="foot" style="margin:0">Cambia la hora de inicio y fin de cada día si hace falta: el plan se reparte solo según el tiempo que tengas.</p>
+</section>
+<div id="pl_msg"></div>
+<div id="pl_plan" style="display:flex;flex-direction:column;gap:14px"></div>
+<p class="foot">Toca <b>Ir →</b> para saltar a esa parte del repaso. Marca la casilla cuando termines cada tarea. Se guarda en este móvil.</p>
+</div></div>
+<div class="scrim" id="scrim" hidden></div><button type="button" class="fab hf" id="hideFab" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideFabTxt">Tapar</span></button><button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab idx" id="drwOpen" aria-label="Abrir índice">☰ Índice</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
+<div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
+ <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
+ <div class="fc-setup" id="fcSetup">
+  <p class="meta" style="margin:0">Pregunta por delante, respuesta por detrás. Toca la tarjeta para <b>encender la luz 💡</b> y darle la vuelta. Luego di si te la sabías.</p>
+  <p class="lbl">1 · ¿Qué bloque?</p><div class="opts" id="oBlk"></div>
+  <p class="lbl">2 · ¿Qué preguntas?</p><div class="opts" id="oKind"></div>
+  <p class="lbl">3 · ¿Cuáles?</p><div class="opts" id="oLv"></div>
+  <button type="button" class="go" id="fcGo">Empezar</button>
+ </div>
+ <div id="fcPlay" hidden style="display:contents">
+  <div class="fc-prog"><span id="fcN"></span><span id="fcS"></span></div>
+  <div class="fc-bar"><i class="g" id="fcG"></i><i class="r" id="fcR"></i></div>
+  <div class="stage"><div class="card3" id="card3" tabindex="0" role="button" aria-label="Dar la vuelta a la tarjeta">
+   <div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></div>
+  <button type="button" class="flipb" id="fcFlip">💡 Ver respuesta</button>
+  <div class="btns" id="fcBtns" hidden><button type="button" class="b-no" id="fcNo">❌ No me la sé</button><button type="button" class="b-si" id="fcSi">✅ Me la sé</button></div>
+ </div>
+ <div class="fc-end" id="fcEnd" hidden></div>
+</div></div>
+</div>
+<script>
+const KEY="gest1-repaso-v1";
+let st={done:{},f:"0",mode:"read",open:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.done)st=Object.assign(st,s)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const bar=document.querySelector(".bar");
+const setBar=()=>document.documentElement.style.setProperty("--bar","8px");setBar();addEventListener("resize",setBar);
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const cpts=[...document.querySelectorAll(".cpt")];
+const blks=[...document.querySelectorAll(".blk")];
+cpts.forEach(c=>{c._t=norm(c.textContent);const cb=c.querySelector(".dom input");const n=cb.dataset.n;cb.checked=!!st.done[n];c.classList.toggle("done",cb.checked);
+  cb.addEventListener("change",()=>{if(cb.checked)st.done[n]=1;else delete st.done[n];c.classList.toggle("done",cb.checked);save();prog();if(st.f==="pend")apply()});
+  const b=document.createElement("button");b.type="button";b.className="show";b.textContent="Ver respuesta";
+  const q=c.querySelector(".box.q");q.insertBefore(b,q.querySelector(".dom"));
+  b.addEventListener("click",()=>{c.classList.toggle("reveal");b.textContent=c.classList.contains("reveal")?"Ocultar respuesta":"Ver respuesta"})});
+function setOpen(b,v){b.classList.toggle("open",v);b.querySelector(".blk-h").setAttribute("aria-expanded",String(v));if(v)st.open[b.id]=1;else delete st.open[b.id]}
+blks.forEach(b=>{const h=b.querySelector(".blk-h");h.tabIndex=0;h.setAttribute("role","button");setOpen(b,!!st.open[b.id]);
+  const t=()=>{setOpen(b,!b.classList.contains("open"));save()};h.addEventListener("click",t);h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();t()}})});
+document.getElementById("openAll").onclick=()=>{blks.forEach(b=>setOpen(b,true));save()};
+document.getElementById("closeAll").onclick=()=>{blks.forEach(b=>setOpen(b,false));save()};
+function go(id){const el=document.getElementById(id);if(!el)return;const b=el.closest(".blk");if(b){setOpen(b,true);save()}
+  requestAnimationFrame(()=>{const y=el.getBoundingClientRect().top+scrollY-8;scrollTo({top:y,behavior:"smooth"})})}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.getAttribute("href").slice(1))}));
+document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)go(e.target.value);e.target.value=""});
+function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const k=cs.filter(x=>st.done[x.dataset.n]).length;const el=b.querySelector(".bd");if(el)el.textContent=k;const dc=document.querySelector('.dc[data-b="'+b.id+'"]');if(dc){dc.textContent=(k===cs.length?"✓ ":"")+k+"/"+cs.length;dc.classList.toggle("full",k===cs.length)}});
+  const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de "+cpts.length;document.getElementById("pBar").style.width=(n/cpts.length*100)+"%";
+  const p1=cpts.filter(c=>c.dataset.lv==="1"&&!st.done[c.id.slice(1)]).length;document.getElementById("pHint").textContent=p1?"Te faltan "+p1+" 🔴":"¡Todos los 🔴 dominados!"}
+function apply(){const q="";let shown=0;const filt=st.f!=="0";
+  cpts.forEach(c=>{const n=c.id.slice(1);let ok=true;if(st.f==="pend")ok=!st.done[n];else if(st.f!=="0")ok=c.dataset.lv===st.f;if(q)ok=ok&&c._t.includes(q);c.hidden=!ok;if(ok)shown++});
+  blks.forEach(b=>{const any=[...b.querySelectorAll(".cpt")].some(c=>!c.hidden);b.hidden=!any;if(any&&filt)b.classList.add("open")});
+  if(!filt)blks.forEach(b=>b.classList.toggle("open",!!st.open[b.id]));
+  document.getElementById("empty").hidden=shown>0;
+  document.querySelectorAll(".chips .chip").forEach(ch=>ch.setAttribute("aria-pressed",String(ch.dataset.f===st.f)))}
+document.querySelectorAll(".chips .chip").forEach(ch=>ch.addEventListener("click",()=>{st.f=ch.dataset.f;save();apply()}));
+
+function setMode(m){st.mode=m;save();document.body.classList.toggle("test",m==="test");
+  document.getElementById("mRead").setAttribute("aria-pressed",String(m==="read"));document.getElementById("mTest").setAttribute("aria-pressed",String(m==="test"));
+  cpts.forEach(c=>{c.classList.remove("reveal");c.querySelector(".show").textContent="Ver respuesta"})}
+document.getElementById("mRead").onclick=()=>setMode("read");document.getElementById("mTest").onclick=()=>setMode("test");
+function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);
+  document.querySelectorAll(".fd.peek").forEach(x=>x.classList.remove("peek"));setBar();
+  const hf=document.getElementById("hideFab");hf.setAttribute("aria-pressed",String(v));document.getElementById("hideFabTxt").textContent=v?"🙈 Tapadas":"💡 Tapar"}
+document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide));
+document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
+setHide(!!st.hide);
+setMode(st.mode);apply();prog();
+if(/^#[\w-]+$/.test(location.hash)){const h=location.hash.slice(1);setTimeout(()=>go(h),300)}
+const drw=document.getElementById("drw"),scrim=document.getElementById("scrim");
+const wide=()=>matchMedia("(min-width:1100px)").matches;
+function drwSet(v){drw.classList.toggle("on",v);scrim.hidden=!v;document.body.style.overflow=v&&!wide()?"hidden":""}
+document.getElementById("drwOpen").onclick=()=>drwSet(true);document.getElementById("drwClose").onclick=()=>drwSet(false);scrim.onclick=()=>drwSet(false);
+drw.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(!wide())drwSet(false)}));
+document.getElementById("fcOpen2").addEventListener("click",()=>{if(!wide())drwSet(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drw.classList.contains("on"))drwSet(false)});
+const upB=document.getElementById("upBtn");addEventListener("scroll",()=>{upB.hidden=scrollY<600},{passive:true});upB.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* ===== Buscador ===== */
+(function(){
+const qi=document.getElementById("q"),res=document.getElementById("res");
+const U=[];
+const txt=el=>{const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);const out=[];while(w.nextNode()){const t=w.currentNode;if(t.parentNode.closest(".fl,.lbl,.tag,.show,.dom,.srcl,figcaption"))continue;const v=t.nodeValue.trim();if(v)out.push(v)}return out.join(" ")};
+const add=(el,kind,title,text)=>U.push({el,kind,title,text,n:norm(text),nt:norm(title)});
+cpts.forEach(c=>{const t=c.querySelector("h3").childNodes[0].textContent.trim();add(c,"Concepto "+c.id.slice(1)+" · "+c.closest(".blk").querySelector(".bt").textContent,t,txt(c))});
+document.querySelectorAll("#hoja .pq").forEach(d=>add(d,"20 preguntas de la hoja",d.querySelector("summary").textContent,txt(d)));
+document.querySelectorAll("#impres .pq").forEach(d=>add(d,"Lo imprescindible",d.querySelector("summary").textContent,txt(d)));
+[["glosario","Glosario"],["trampas","Trampas"],["numeros","Números clave"]].forEach(([id,k])=>document.querySelectorAll("#"+id+" tbody tr").forEach(r=>add(r,k,r.cells[0].textContent,txt(r))));
+document.querySelectorAll("#chequeo li").forEach(li=>add(li,"Chequeo final",li.textContent,li.textContent));
+const escH=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function snip(text,q){const n=norm(text);const i=n.indexOf(q);if(i<0)return escH(text.slice(0,110))+"…";
+  const a=Math.max(0,i-50),b=Math.min(text.length,i+q.length+70);
+  return (a?"…":"")+escH(text.slice(a,i))+"<mark>"+escH(text.slice(i,i+q.length))+"</mark>"+escH(text.slice(i+q.length,b))+(b<text.length?"…":"")}
+function markT(t,q){const n=norm(t);const i=n.indexOf(q);return i<0?escH(t):escH(t.slice(0,i))+"<mark>"+escH(t.slice(i,i+q.length))+"</mark>"+escH(t.slice(i+q.length))}
+let found=[];
+function run(){const raw=qi.value.trim();const q=norm(raw);if(q.length<2){res.hidden=true;return}
+  found=U.filter(u=>u.n.includes(q)).sort((a,b)=>(b.nt.includes(q)-a.nt.includes(q)));
+  res.hidden=false;
+  if(!found.length){res.innerHTML=`<div class="none">No aparece «${escH(raw)}» en el repaso. Prueba con otra palabra o sin la última letra.</div>`;return}
+  res.innerHTML=`<div class="rh"><span>${found.length} resultado${found.length>1?"s":""} para «${escH(raw)}»</span><button type="button" id="resX">Cerrar</button></div>`+
+   found.slice(0,60).map((u,k)=>`<button type="button" class="ri" data-k="${k}"><span class="rk">${escH(u.kind)}</span><span class="rt">${markT(u.title.slice(0,120),q)}</span><span class="rs">${snip(u.text.replace(/\s+/g," "),q)}</span></button>`).join("");
+  document.getElementById("resX").onclick=()=>{qi.value="";res.hidden=true};
+  res.querySelectorAll(".ri").forEach(b=>b.onclick=()=>jump(found[+b.dataset.k],q))}
+function jump(u,q){const el=u.el;const b=el.closest(".blk");if(b){setOpen(b,true);save()}if(b&&b.hidden){st.f="0";save();apply()}
+  if(el.tagName==="DETAILS")el.open=true;const d=el.closest("details");if(d)d.open=true;
+  if(el.closest(".cpt")&&document.body.classList.contains("test")){const c=el.closest(".cpt");c.classList.add("reveal")}
+  highlight(el,q);
+  requestAnimationFrame(()=>{const tgt=firstMark(el)||el;const y=tgt.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:"smooth"});
+    el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")})}
+function clearHL(){document.querySelectorAll("mark.sh").forEach(m=>{const t=document.createTextNode(m.textContent);m.replaceWith(t);t.parentNode&&t.parentNode.normalize()})}
+function highlight(root,q){clearHL();const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(t=>{const n=norm(t.nodeValue);let i=n.indexOf(q);if(i<0||t.parentNode.closest("script,style,.res"))return;
+    const frag=document.createDocumentFragment();let last=0;const s=t.nodeValue;
+    while(i>=0){frag.append(s.slice(last,i));const m=document.createElement("mark");m.className="sh";m.style.cssText="background:#ffe066;color:#1d1828;border-radius:3px";m.textContent=s.slice(i,i+q.length);frag.append(m);last=i+q.length;i=n.indexOf(q,last)}
+    frag.append(s.slice(last));t.replaceWith(frag)})}
+function firstMark(el){return el.querySelector("mark.sh")}
+qi.addEventListener("input",run);qi.addEventListener("focus",run);
+qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDefault();jump(found[0],norm(qi.value.trim()))}if(e.key==="Escape"){res.hidden=true}});
+})();
+/* ===== Mi plan ===== */
+(function(){
+
+const EXAM={id:"gest1",em:"🧫",asig:"Gestión de Muestras",examen:"1er examen",fecha:"2026-10-15",horario:["8:00","13:25"],repaso:"#",simulacro:"../../gest1/simulacro/",
+  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,m:+b.dataset.min||0,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
+const PKEY="plan-estudio-v1-"+EXAM.id;
+let ps={n:null,start:"hoy",times:{},done:{}};
+try{const s=JSON.parse(localStorage.getItem(PKEY)||"null");if(s)ps=Object.assign(ps,s)}catch(e){}
+const psave=()=>{try{localStorage.setItem(PKEY,JSON.stringify(ps))}catch(e){}};
+const $=id=>document.getElementById("pl_"+id);
+const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const today=new Date();today.setHours(0,0,0,0);
+const fmtD=d=>DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+let exam,left;const maxN=10;
+function setExam(){const f=ps.fecha||EXAM.fecha||iso(new Date(today.getTime()+7*864e5));exam=new Date(f+"T00:00:00");left=Math.round((exam-today)/864e5);
+  $("fecha").value=f;
+  $("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
+  $("sub").textContent="Examen: "+fmtD(exam)+(ps.fecha||EXAM.fecha?"":" (fecha de ejemplo: pon la tuya arriba)")+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar.";
+  $("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`}
+setExam();
+if(!ps.n)ps.n=Math.min(maxN,Math.max(1,left));
+$("fecha").addEventListener("change",e=>{if(!e.target.value)return;ps.fecha=e.target.value;setExam();ps.n=Math.min(maxN,Math.max(1,left));psave();
+  $("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(+x.dataset.n===ps.n)));prender()});
+$("days").innerHTML=Array.from({length:maxN},(_,i)=>`<button type="button" class="dchip" data-n="${i+1}" aria-pressed="${ps.n===i+1}" aria-label="${i+1} días">${i+1}</button>`).join("");
+$("days").querySelectorAll(".dchip").forEach(b=>b.onclick=()=>{ps.n=+b.dataset.n;psave();$("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+$("startSeg").innerHTML=[["hoy","Hoy"],["manana","Mañana"]].map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${ps.start===k}">${t}</button>`).join("");
+$("startSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{ps.start=b.dataset.k;psave();$("startSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+
+/* ---------- coste en minutos ---------- */
+const MIN={1:9,2:6,3:3};const CARDS=8;
+const bCost=b=>b.m||(b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS);
+const REVIEW=[
+ {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
+ {t:"📝 Simulacro completo",d:"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
+ {t:"🩹 Repasa lo que fallaste en el Simulacro",d:"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».",m:30,u:EXAM.simulacro,rev:1},
+ {t:"⚠️ Trampas y chequeo final",d:"Repasa las trampas y contesta el chequeo final sin mirar.",m:25,u:"#trampas",rev:1},
+ {t:"⚠️ Trampas y 🔢 números clave",d:"Las parejas que se confunden y las cifras (%, µm, mm/h…).",m:20,u:"#trampas",rev:1},
+ {t:"⚡ Lo imprescindible",d:"Pregunta → respuesta corta. Lo último antes de dormir.",m:20,u:"#impres",rev:1}];
+const WARM={t:"🔁 Calentamiento: lo que fallaste ayer",d:"🃏 Tarjetas → «Solo las que fallé». Así lo de ayer no se te olvida.",m:15,u:"#fc",rev:1};
+const toMin=s=>{const [h,m]=(s||"0:0").split(":").map(Number);return h*60+m};
+const toHM=m=>{m=((m%1440)+1440)%1440;return Math.floor(m/60)+":"+String(m%60).padStart(2,"0")};
+function dayDate(i){const d=new Date(today);d.setDate(d.getDate()+i+(ps.start==="manana"?1:0));return d}
+function defTimes(i){const d=dayDate(i);const isToday=d.getTime()===today.getTime();
+  if(isToday){const now=new Date();let s=Math.ceil((now.getHours()*60+now.getMinutes()+15)/15)*15;s=Math.max(s,8*60);const e=Math.max(s+60,22*60);return [toHM(s),toHM(Math.min(e,23*60+30))]}
+  return EXAM.horario}
+function times(i){const k=dayDate(i).toISOString().slice(0,10);return ps.times[k]||defTimes(i)}
+function setTime(i,which,v){const k=dayDate(i).toISOString().slice(0,10);const t=times(i).slice();t[which]=v;ps.times[k]=t;psave();prender()}
+
+function plan(N){
+  const caps=Array.from({length:N},(_,i)=>{const [a,b]=times(i);return Math.max(30,toMin(b)-toMin(a))});
+  const days=Array.from({length:N},()=>[]);
+  const blocks=EXAM.blocks.map(b=>({b,m:bCost(b)}));const total=blocks.reduce((s,x)=>s+x.m,0);
+  let mode="full";
+  if(N===1){
+    const rojo=EXAM.blocks.map(b=>({b,cs:b.c.filter(c=>c.lv===1)})).filter(x=>x.cs.length);
+    const avail=caps[0]-80;
+    days[0].push({t:"🔴 Solo lo imprescindible de cada bloque",d:"En el Repaso pulsa el filtro <b>🔴 Imprescindibles</b> y repasa: "+rojo.map(x=>`<b>${x.b.n}</b> ${x.b.t} (${x.cs.map(c=>c.n).join(", ")})`).join(" · "),m:Math.max(60,avail),u:"#fc"});
+    days[0].push(REVIEW[3],REVIEW[5]);
+    return {days,caps,mode:"rojo"};}
+  const lastRev=REVIEW;const revM=lastRev.reduce((s,x)=>s+x.m,0);
+  // capacidad para bloques: días 1..N-1 (menos calentamiento) + lo que sobre del último día
+  const W=.82;/* tiempo real de estudio descontando descansos */
+  const learnCaps=caps.map((c,i)=>i<N-1?c*W-(i>0?WARM.m:0):Math.max(0,c*W-WARM.m-revM));
+  const learnTotal=learnCaps.reduce((s,x)=>s+x,0);
+  const f=Math.min(1,learnTotal/total);if(f<1)mode=f<.7?"rojo":"rapido";
+  // repartir bloques en orden según capacidad acumulada
+  const cum=[];let acc=0;const tf=total*f;learnCaps.forEach(c=>{acc+=c;cum.push(acc/learnTotal*tf)});
+  let pos=0;
+  blocks.forEach(x=>{const m=x.m*f;const mid=pos+m/2;let d=cum.findIndex(c=>mid<=c);if(d<0)d=N-1;
+    x.day=d;pos+=m;x.mm=Math.round(m)});
+  for(let i=0;i<N;i++){
+    if(i>0)days[i].push(WARM);
+    blocks.filter(x=>x.day===i).forEach(x=>{const r=x.b.c.filter(c=>c.lv===1);
+      days[i].push({t:`Bloque ${x.b.n} · ${x.b.t}`,blk:x.b,m:x.mm,u:"#"+x.b.id,
+        d:(mode==="rojo"?"<b>Poco tiempo:</b> lee bien los 🔴 y los demás por encima. ":"")+"Lee los conceptos "+x.b.c[0].n+"–"+x.b.c[x.b.c.length-1].n+" y al terminar haz sus 🃏 Tarjetas. "+(r.length?"🔴 Imprescindibles: <b>"+r.map(c=>c.n).join(", ")+"</b>.":"")})});
+    if(i===N-1)days[i].push(...lastRev);}
+  return {days,caps,mode,f};
+}
+function schedule(tasks,start){let t=toMin(start),run=0;const out=[];
+  tasks.forEach((x,k)=>{out.push({...x,a:t,b:t+x.m});t+=x.m;run+=x.m;
+    if(run>=45&&k<tasks.length-1){out.push({brk:1,t:"☕ Descanso: levántate, agua, nada de móvil",a:t,b:t+10,m:10});t+=10;run=0}});
+  return out}
+function prender(){
+  const N=ps.n;const P=plan(N);
+  const msg=$("msg");
+  if(left>0&&N>left)msg.innerHTML=`<p class="note warn">⚠️ Elegiste ${N} días pero solo quedan ${left} antes del examen. Los últimos días caerían después del examen.</p>`;
+  else if(N===1)msg.innerHTML=`<p class="note warn">⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴 y "Lo imprescindible".</p>`;
+  else if(P.mode==="rojo")msg.innerHTML=`<p class="note warn">⚠️ <b>El tiempo es justo.</b> En cada bloque céntrate en los conceptos 🔴 y los demás léelos por encima. Si puedes, alarga las horas de algún día.</p>`;
+  else if(P.mode==="rapido")msg.innerHTML=`<p class="note warn">⏱️ Vas un poco justo: en cada bloque dale prioridad a los 🔴. Si puedes, añade algo de tiempo a algún día.</p>`;
+  else msg.innerHTML=`<p class="note ok">✅ Te da tiempo de todo. Sigue el plan en orden y tacha cada tarea.</p>`;
+  $("plan").innerHTML=P.days.map((tasks,i)=>{const d=dayDate(i);const [a,b]=times(i);const sch=schedule(tasks,a);
+    const used=sch.length?sch[sch.length-1].b-toMin(a):0;const over=used>P.caps[i]+10;
+    const real=sch.filter(x=>!x.brk);const k=dayDate(i).toISOString().slice(0,10);
+    const doneN=real.filter((x,j)=>ps.done[k+"|"+x.t]).length;
+    const isToday=d.getTime()===today.getTime();
+    const bl=real.filter(x=>x.blk).map(x=>x.blk);const rng=bl.length?(bl.length===1?"Bloque "+bl[0].n:"Bloques "+bl[0].n+" a "+bl[bl.length-1].n):"";
+    const goal=i===N-1&&N>1?(rng?rng+" + Repaso final y Simulacro":"Repaso final y Simulacro"):rng;const names=bl.map(b=>b.t).join(" · ");
+    return `<article class="day" id="pl_d${i}"><div class="day-h">
+      <div class="day-top"><span class="when">Día ${i+1} de ${N} · ${fmtD(d)}</span>${isToday?'<span class="badge today">HOY</span>':""}${doneN===real.length&&real.length?'<span class="badge done">✓ HECHO</span>':""}</div>
+      <h2>${goal||"Repaso"}</h2>${names?`<p class="goal">${names}</p>`:""}
+      <div class="times">De <input type="time" id="pl_ts${i}" value="${a.padStart(5,"0")}" aria-label="Hora de inicio día ${i+1}"> a <input type="time" id="pl_te${i}" value="${b.padStart(5,"0")}" aria-label="Hora de fin día ${i+1}"> · ${Math.round(P.caps[i]/6)/10} h${over?' · <b style="color:var(--warn)">el plan acaba a las '+toHM(sch[sch.length-1].b)+'</b>':""}</div>
+      <div class="dprog"><i style="width:${real.length?doneN/real.length*100:0}%"></i></div></div>
+      <ul class="tasks">${sch.map(x=>x.brk?`<li class="task brk"><span class="t-title"><span class="t-time">${toHM(x.a)}</span> ${x.t}</span></li>`:
+        `<li class="task${x.rev?" rev":""}${ps.done[k+"|"+x.t]?" done":""}"><input type="checkbox" data-k="${k}|${x.t.replace(/"/g,"&quot;")}" ${ps.done[k+"|"+x.t]?"checked":""} aria-label="Hecho: ${x.t.replace(/"/g,"&quot;")}"><div><span class="t-time">${toHM(x.a)}–${toHM(x.b)} · ${x.m} min</span><div class="t-title">${x.blk?`<span class="dot d1"></span>`:""}${x.t}</div><div class="t-det">${x.d||""}</div>${x.u?`<a class="t-go" href="${x.u}"${x.u.startsWith("#")?"":' target="_blank" rel="noopener"'}>${x.u.startsWith("#")?"Ir →":"Abrir →"}</a>`:""}</div></li>`).join("")}</ul></article>`}).join("");
+  P.days.forEach((_,i)=>{$("ts"+i).onchange=e=>setTime(i,0,e.target.value);$("te"+i).onchange=e=>setTime(i,1,e.target.value)});
+  document.querySelectorAll("#planOv .task input").forEach(c=>c.onchange=()=>{if(c.checked)ps.done[c.dataset.k]=1;else delete ps.done[c.dataset.k];psave();prender()});
+}
+
+const ov=document.getElementById("planOv");
+function openPlan(){ov.hidden=false;document.body.style.overflow="hidden";prender();ov.scrollTop=0}
+function closePlan(){ov.hidden=true;document.body.style.overflow=""}
+document.getElementById("planOpen").onclick=openPlan;
+const pb=document.getElementById("planOpen2");if(pb)pb.onclick=()=>{if(typeof drwSet==="function"&&!wide())drwSet(false);openPlan()};
+document.getElementById("planClose").onclick=closePlan;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ov.hidden)closePlan()});
+ov.addEventListener("click",e=>{const a=e.target.closest("a.t-go");if(!a)return;const h=a.getAttribute("href");if(!h.startsWith("#"))return;e.preventDefault();closePlan();
+  if(h==="#fc"){document.getElementById("fcOpen").click();return}go(h.slice(1))});
+/* resumen de hoy en la tarjeta de entrada */
+{prender();const td=[...ov.querySelectorAll(".day")].find(d=>d.querySelector(".badge.today"));
+  if(td)document.getElementById("planToday").textContent="Hoy toca: "+td.querySelector("h2").textContent;}
+})();
+
+/* ===== Temporizador ===== */
+(function(){
+st.tm=st.tm||{a:null,s:{}};const T=st.tm;
+const pill=document.getElementById("tpill");let iv=null,beeped=false;
+const f2=n=>String(Math.floor(n)).padStart(2,"0");
+const fmt=sec=>{sec=Math.abs(sec);const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=Math.floor(sec%60);return (h?h+":"+f2(m):f2(m))+":"+f2(s)};
+const blkOf=id=>document.getElementById(id);
+const elapsed=()=>{const a=T.a;if(!a)return 0;return (a.acc+(a.paused?0:Date.now()-a.start))/1000};
+function beep(){try{const C=new (window.AudioContext||window.webkitAudioContext)();[0,.25,.5].forEach(t=>{const o=C.createOscillator(),g=C.createGain();o.frequency.value=880;o.connect(g);g.connect(C.destination);g.gain.setValueAtTime(.2,C.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,C.currentTime+t+.2);o.start(C.currentTime+t);o.stop(C.currentTime+t+.22)})}catch(e){}
+  try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}}
+function tick(){const a=T.a;if(!a){pill.hidden=true;return}
+  const tot=a.min*60,el=elapsed(),left=tot-el,over=left<0;
+  pill.hidden=false;pill.classList.toggle("over",over);
+  document.getElementById("tpB").textContent=(over?"⏰ Te pasaste · ":"⏱ ")+a.name+(a.paused?" · en pausa":"");
+  document.getElementById("tpT").textContent=(over?"+":"")+fmt(left);
+  document.getElementById("tpBar").style.width=Math.min(100,el/tot*100)+"%";
+  document.getElementById("tpPause").textContent=a.paused?"Seguir":"Pausa";
+  document.getElementById("tpPause").setAttribute("aria-label",a.paused?"Seguir":"Pausar");
+  if(over&&!beeped&&!a.beeped){beeped=true;a.beeped=1;save();beep()}}
+function run(){clearInterval(iv);if(T.a){iv=setInterval(tick,500)}tick()}
+function startB(b){const name=b.querySelector(".bn").textContent.replace("BLOQUE","Bloque")+" · "+b.querySelector(".bt").textContent;
+  T.a={b:b.id,name,min:+b.dataset.min,start:Date.now(),acc:0,paused:false};beeped=false;save();setOpen(b,true);save();run();
+  requestAnimationFrame(()=>{const y=b.getBoundingClientRect().top+scrollY-70;scrollTo({top:y,behavior:"smooth"})});rowAll()}
+function pause(){const a=T.a;if(!a)return;if(a.paused){a.start=Date.now();a.paused=false}else{a.acc+=Date.now()-a.start;a.paused=true}save();tick()}
+function fin(){const a=T.a;if(!a)return;T.s[a.b]=Math.max(1,Math.round(elapsed()/60));T.a=null;save();run();rowAll()}
+function cancel(){T.a=null;save();run();rowAll()}
+document.getElementById("tpPause").onclick=pause;document.getElementById("tpFin").onclick=fin;document.getElementById("tpX").onclick=cancel;
+function row(b){let r=b.querySelector(".tmr");if(!r){r=document.createElement("div");r.className="tmr";b.querySelector(".blk-h").after(r)}
+  const m=+b.dataset.min,sp=T.s[b.id],act=T.a&&T.a.b===b.id;
+  r.innerHTML=`<p>${sp?`<span class="tm-done">✓ Lo hiciste en ${sp} min</span> (previsto ${m})`:`⏱ Tiempo para aprenderte este bloque: <b>${m} min</b>`}</p>`+(act?`<p><b>⏳ En marcha…</b></p>`:`<button type="button">${sp?"↻ Otra vez":"▶ Empezar"}</button>`);
+  const bt=r.querySelector("button");if(bt)bt.onclick=()=>{if(T.a&&T.a.b!==b.id){fin()}startB(b)}}
+function rowAll(){blks.forEach(row)}
+rowAll();run();
+document.addEventListener("visibilitychange",tick);
+})();
+
+/* ===== Leyenda desplegable ===== */
+(function(){
+const lg=document.querySelector(".top .legend");if(!lg)return;
+const NAMES={1:"🔴 Imprescindibles",2:"🟠 Importantes",3:"🔵 Leer una vez"},COL={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const panel=document.createElement("div");panel.className="lvpanel";panel.id="lvpanel";panel.hidden=true;lg.after(panel);
+let cur=null;
+const tags=[...lg.querySelectorAll(".tag")];
+tags.forEach(t=>{const lv=t.classList.contains("lv1")?1:t.classList.contains("lv2")?2:3;
+  const b=document.createElement("button");b.type="button";b.className=t.className;b.innerHTML=t.innerHTML;b.setAttribute("aria-expanded","false");b.setAttribute("aria-controls","lvpanel");t.replaceWith(b);
+  b.onclick=()=>{if(cur===lv){cur=null;panel.hidden=true;b.setAttribute("aria-expanded","false");return}
+    cur=lv;lg.querySelectorAll(".tag").forEach(x=>x.setAttribute("aria-expanded",String(x===b)));show(lv)}});
+function show(lv){panel.style.setProperty("--lc",COL[lv]);
+  const cs=cpts.filter(c=>c.dataset.lv===String(lv));let h=`<h4>${NAMES[lv]} · ${cs.length} conceptos</h4>`,last="";
+  cs.forEach(c=>{const bt=c.closest(".blk").querySelector(".bt").textContent;if(bt!==last){h+=`<p class="lg">${c.closest(".blk").querySelector(".bn").textContent} · ${bt}</p>`;last=bt}
+    const t=c.querySelector("h3").childNodes[0].textContent.trim();h+=`<a href="#${c.id}" class="${st.done[c.id.slice(1)]?"ok":""}"><b>${c.id.slice(1)}</b>${t}</a>`});
+  panel.innerHTML=h;panel.hidden=false;
+  panel.querySelectorAll("a").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.getAttribute("href").slice(1))})}
+})();
+/* ===== Tarjetas ===== */
+(function(){
+const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
+const LVC={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const ALL=[];
+cpts.forEach(c=>{const b=c.closest(".blk");const bt=b.querySelector(".bt").textContent;const n=c.id.slice(1);const lv=c.dataset.lv;
+  const qt=c.querySelector(".qt");const prof=[...c.querySelectorAll(".prof-t")].map(x=>x.innerHTML).join("");
+  const src=c.querySelector(".srcl").textContent;
+  if(qt)ALL.push({id:"q"+n,blk:b.id,bt,lv,kind:"q",q:qt.textContent,a:prof,src,title:n+". "+c.querySelector("h3").childNodes[0].textContent});
+  c.querySelectorAll(".defs li").forEach((li,i)=>{const ok=li.querySelector(".fd.ok");if(!ok)return;
+    const term=li.querySelector(".term").textContent;const txt=ok.textContent.replace(/^📌[^«]*/,"");
+    ALL.push({id:"d"+n+"_"+i,blk:b.id,bt,lv,kind:"d",q:"¿Cómo define la diapositiva: «"+term+"»?",a:'<p class="formal">'+txt+"</p>",src,title:term})})});
+st.fc=st.fc||{bad:{}};
+let cfg={blk:"all",kind:"all",lv:"all"},deck=[],i=0,ok=0,ko=0,flipped=false;
+const blkOpts=[["all","Todos los bloques",""]].concat(blks.map(b=>[b.id,b.querySelector(".bn").textContent.replace("BLOQUE","Bloque"),b.querySelector(".bt").textContent]));
+function opts(el,list,key){el.innerHTML=list.map(([v,t,sm])=>`<button type="button" class="opt" data-v="${v}" aria-pressed="${cfg[key]===v}">${t}${sm?`<small>${sm}</small>`:""}</button>`).join("");
+  el.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cfg[key]=b.dataset.v;el.querySelectorAll(".opt").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));count()})}
+function pool(){return ALL.filter(c=>(cfg.blk==="all"||c.blk===cfg.blk)&&(cfg.kind==="all"||c.kind===cfg.kind)&&(cfg.lv==="all"||(cfg.lv==="bad"?st.fc.bad[c.id]:c.lv===cfg.lv)))}
+function count(){const n=pool().length;$("fcGo").textContent=n?"Empezar · "+n+" tarjetas":"No hay tarjetas con esa elección";$("fcGo").disabled=!n}
+function setup(){opts($("oBlk"),blkOpts,"blk");
+  opts($("oKind"),[["all","Todo","preguntas + definiciones"],["q","❓ Preguntas de cada concepto",""],["d","📌 Definiciones de la diapositiva","las del examen"]],"kind");
+  const nb=Object.keys(st.fc.bad).length;
+  opts($("oLv"),[["all","Todas",""],["1","🔴 Solo imprescindibles",""],["bad","❌ Solo las que fallé",nb+" guardadas"]],"lv");count();
+  $("fcSetup").hidden=false;$("fcPlay").hidden=true;$("fcPlay").style.display="none";$("fcEnd").hidden=true}
+function open(){fc.hidden=false;document.body.style.overflow="hidden";setup()}
+function close(){fc.hidden=true;document.body.style.overflow=""}
+$("fcOpen").onclick=open;$("fcOpen2").onclick=open;$("fcClose").onclick=close;
+document.addEventListener("keydown",e=>{if(fc.hidden)return;if(e.key==="Escape")close()});
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function start(list){deck=shuffle(list.slice());i=0;ok=0;ko=0;$("fcSetup").hidden=true;$("fcEnd").hidden=true;$("fcPlay").hidden=false;$("fcPlay").style.display="contents";show()}
+$("fcGo").onclick=()=>start(pool());
+function show(){const c=deck[i];flipped=false;$("card3").classList.remove("flip");$("fcFlip").hidden=false;$("fcBtns").hidden=true;
+  $("ffront").style.setProperty("--cc",LVC[c.lv]);
+  $("ffront").innerHTML=`<span class="kind">${c.kind==="d"?"📌 Definición de la diapositiva":"❓ Pregunta"} · ${c.bt}</span><span class="bulb" aria-hidden="true">💡</span><span class="qq">${c.q}</span><span class="hint">Piensa la respuesta (o dila en voz alta) y toca para encender la luz</span>`;
+  $("fback").innerHTML=`<span class="kind">💡 Respuesta · ${c.title}</span><div class="ans">${c.a}</div><span class="src">${c.src}</span>`;
+  $("fcN").textContent="Tarjeta "+(i+1)+" de "+deck.length;$("fcS").textContent="✅ "+ok+" · ❌ "+ko;
+  $("fcG").style.width=(ok/deck.length*100)+"%";$("fcR").style.width=(ko/deck.length*100)+"%"}
+function flip(){flipped=!flipped;$("card3").classList.toggle("flip",flipped);if(flipped){$("fcFlip").hidden=true;$("fcBtns").hidden=false}}
+$("card3").onclick=e=>{if(e.target.closest("a"))return;flip()};$("card3").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+$("fcFlip").onclick=flip;
+function answer(good){const c=deck[i];if(good){ok++;delete st.fc.bad[c.id]}else{ko++;st.fc.bad[c.id]=1}save();i++;if(i<deck.length)show();else end()}
+$("fcSi").onclick=()=>answer(true);$("fcNo").onclick=()=>answer(false);
+function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pct=Math.round(ok/deck.length*100);const fails=deck.filter(c=>st.fc.bad[c.id]);
+  const msg=pct>=90?"¡Lo tienes dominado! 🔥":pct>=70?"¡Muy bien! Repasa las que fallaste.":pct>=50?"Vas bien: repite las falladas.":"Toca repasar este bloque y volver a intentarlo.";
+  $("fcEnd").innerHTML=`<span class="kind" style="font-family:var(--f-mono);color:var(--muted)">RESULTADO</span><span class="score">${ok}/${deck.length}</span><p style="margin:0;font-weight:700">${msg}</p>`+
+   (fails.length?`<button type="button" class="go" id="fcRe">🔁 Repetir las ${fails.length} que fallé</button>`:"")+`<button type="button" class="opt" id="fcAgain" style="text-align:center">🃏 Elegir otras tarjetas</button><button type="button" class="opt" id="fcBack" style="text-align:center">Volver al repaso</button>`;
+  $("fcEnd").hidden=false;if(fails.length)$("fcRe").onclick=()=>start(fails);$("fcAgain").onclick=setup;$("fcBack").onclick=close}
+})();
+
+</script>
+
+</body>
+</html>
