@@ -83,6 +83,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 EX.forEach(e=>{if(e.fecha){const d=new Date(e.fecha+"T00:00:00");e.days=Math.round((d-today)/864e5);e.fd=DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];e.state=e.days<0?"done":"up"}else e.state="tbd"});
 const rank=e=>e.state==="up"?e.days:e.state==="tbd"?500:5000-e.days;
 const subjects=[];EX.slice().sort((a,b)=>rank(a)-rank(b)).forEach(e=>{let s=subjects.find(x=>x.asig===e.asig);if(!s){s={asig:e.asig,em:e.em,col:e.col,ex:[]};subjects.push(s)}s.ex.push(e)});
+const num=e=>+(String(e.id).match(/\d+$/)||[0])[0];subjects.forEach(s=>s.ex.sort((a,b)=>num(b)-num(a)));
 const nWeb=EX.reduce((n,e)=>n+(e.rep.web?1:0)+(e.sim.web?1:0),0);
 document.getElementById("sub").textContent=subjects.length+" asignaturas · "+EX.length+" exámenes · cada uno con su Repaso y su Simulacro";
 const nx=EX.filter(e=>e.state==="up").sort((a,b)=>a.days-b.days)[0];
