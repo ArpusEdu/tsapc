@@ -1,6 +1,6 @@
 /* Sin internet: primero la red para ver siempre lo último; si falla o tarda, lo guardado.
    Las páginas se guardan al instalar; imágenes y PDF, la primera vez que se abren. */
-const CACHE="tsapc-f726db7e";
+const CACHE="tsapc-5adf90ad";
 const SHELL=["./", "manifest.webmanifest", "assets/especimen.js", "assets/practica.css", "assets/practica.js", "assets/repaso.css", "assets/repaso.js", "assets/unidades.css", "bio3/repaso/","bio3/simulacro/","bio1/repaso/", "bio1/simulacro/", "bio2/repaso/", "bio2/simulacro/", "fisio1/repaso/", "fisio1/simulacro/", "fisio2/repaso/", "fisio2/simulacro/", "fisio3/repaso/", "fisio3/simulacro/", "gest1/repaso/", "gest1/simulacro/", "gest2/repaso/", "gest2/simulacro/", "ingles1/examen-vocabulario/", "ingles1/examen/", "ingles1/repaso/", "ingles1/simulacro-vocabulario/", "ingles1/simulacro/", "ingles1/vocabulario/", "ipe-tema5/repaso/", "ipe-tema5/simulacro/", "ipe2/repaso/", "ipe2/simulacro/", "lab1/banco/", "lab1/repaso/", "lab1/test-50-b/", "lab1/test-50/", "assets/logo.svg","assets/icon-192.png", "assets/icon-512.png"];
 self.addEventListener("install",e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>Promise.all(SHELL.map(u=>c.add(new Request(new URL(u,self.location),{cache:"reload"})).catch(()=>{})))))});
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith("tsapc-")&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
