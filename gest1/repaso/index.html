@@ -14,12 +14,13 @@ var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body
 var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
 function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
 (function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
-</head>
-<body>
 <title>Gestión 1 · Sector sanitario</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+</head>
+<body>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@700&display=swap">
 <style>
 :root{
   --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
@@ -369,6 +370,7 @@ a.dt{text-decoration:none;display:inline-flex;align-items:center}
 .fc-end .score{font-family:var(--f-display);font-size:3.2em;font-weight:800;line-height:1}
 @media (prefers-reduced-motion:reduce){.card3{transition:none}}
 </style>
+<link rel="stylesheet" href="../../assets/repaso.css">
 <div class="wrap">
 <header class="top"><p class="eyebrow">🧫 Gestión de Muestras · 1er examen</p>
 <h1>Repaso completo: estructura organizativa del sector sanitario</h1>
@@ -1920,5 +1922,6 @@ function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pc
 
 </script>
 
+<script src="../../assets/repaso.js"></script>
 </body>
 </html>
