@@ -5,74 +5,120 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Mi carrera TSAPC</title>
+<meta name="description" content="Repasos, simulacros y material de estudio de 1.º de TSAPC, Anatomía Patológica y Citodiagnóstico.">
 <meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14121b" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <style>
-/* Estantería por asignatura: cada examen es una tarjeta con dos botones grandes (Repaso / Simulacro) */
+/* Paleta de la tinción hematoxilina-eosina: papel, índigo para la acción y rosa para el detalle */
 :root{
-  --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
-  --accent:#7a1f3d; --accent-ink:#ffffff; --ok:#1d6a44; --ok-soft:#e6f5ec; --hot:#c4314b; --hot-soft:#fbe8ec;
-  --fisio:#a3284a; --bio:#0f7c74; --ipe:#b8650a; --gest:#6a44b5; --ing:#2c5fc4; --lab:#3f7d1f;
-  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif; --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --paper:#f7f4ee; --ink:#1d1a26; --muted:#655f6e; --line:#e2dcd1; --edge:#938c80; --hema:#3a2f7d; --hema-ink:#ffffff; --hema-soft:#ebe8f4;
+  --eosin:#b23a63; --cyto:#e9a9bd; --nuc:#4a3b92; --field:#fbeef0;
+  --f-display:"Newsreader",Georgia,"Times New Roman",serif; --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
-  --accent:#ff8fae; --accent-ink:#1d1825; --ok:#86dcad; --ok-soft:#15291f; --hot:#ff7d93; --hot-soft:#3a1820;
-  --fisio:#ff7fa0; --bio:#4fd1c5; --ipe:#ffae52; --gest:#b49cff; --ing:#83a8ff; --lab:#9bd66f; color-scheme:dark}}
+  --paper:#14121b; --ink:#efebf4; --muted:#a79fb2; --line:#2e2a39; --edge:#6f687b; --hema:#b9b0f2; --hema-ink:#17142a; --hema-soft:#26223a;
+  --eosin:#f08bab; --cyto:#7c3a56; --nuc:#b3a7f2; --field:#1f1824; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
-  --accent:#ff8fae; --accent-ink:#1d1825; --ok:#86dcad; --ok-soft:#15291f; --hot:#ff7d93; --hot-soft:#3a1820;
-  --fisio:#ff7fa0; --bio:#4fd1c5; --ipe:#ffae52; --gest:#b49cff; --ing:#83a8ff; --lab:#9bd66f; color-scheme:dark}
+  --paper:#14121b; --ink:#efebf4; --muted:#a79fb2; --line:#2e2a39; --edge:#6f687b; --hema:#b9b0f2; --hema-ink:#17142a; --hema-soft:#26223a;
+  --eosin:#f08bab; --cyto:#7c3a56; --nuc:#b3a7f2; --field:#1f1824; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
-h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
-.wrap{max-width:760px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
-.wrap>*{min-width:0}
-.eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
-h1{font-size:2.1em;line-height:1.05;margin:4px 0 6px}
-.sub{color:var(--muted);margin:0}
-.next{display:flex;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px;text-decoration:none;color:var(--ink)}
-.next .n{font-family:var(--f-display);font-weight:800;font-size:2.6em;line-height:1;color:var(--hot);font-variant-numeric:tabular-nums;min-width:1.3ch;text-align:center}
-.next p{margin:0}.k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.how{font-size:.88em;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px}
-.jump{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
-.jump a{flex:none;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.88em;white-space:nowrap}
-.subj{display:flex;flex-direction:column;gap:10px;scroll-margin-top:12px}
-.subj-h{display:flex;align-items:center;gap:10px;border-bottom:3px solid var(--c);padding-bottom:6px}
-.subj-h .em{font-size:1.6em;line-height:1}
-.subj-h h2{font-size:1.3em;flex:1}
-.subj-h span.c{font-family:var(--f-mono);font-size:.72em;color:var(--muted)}
-.ex{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
-.ex.past{opacity:.85}
-.ex-top{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:6px}
-.ex h3{font-size:1.15em;line-height:1.2}
-.ex .tema{color:var(--muted);font-size:.9em;margin:2px 0 0}
-.st{flex:none;font-family:var(--f-mono);font-size:.68em;border-radius:999px;padding:3px 9px;white-space:nowrap}
-.st.up{background:var(--hot-soft);color:var(--hot)} .st.done{background:var(--ok-soft);color:var(--ok)} .st.tbd{background:var(--soft);color:var(--muted);border:1px solid var(--line)}
-.main{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.big{display:flex;flex-direction:column;gap:2px;text-decoration:none;border-radius:12px;padding:12px;min-height:76px;justify-content:center}
-.big b{font-family:var(--f-display);font-size:1.12em}
-.big small{font-size:.78em;opacity:.9;line-height:1.25}
-.big.on{background:var(--c);color:#fff}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .big.on{color:#131019}}
-:root[data-theme="dark"] .big.on{color:#131019}
-.big.pdf{background:var(--soft);color:var(--ink);border:1.5px solid var(--c)}
-.big.off{background:transparent;color:var(--muted);border:1.5px dashed var(--line)}
-.more{display:flex;flex-wrap:wrap;gap:6px}
-.more a{font-size:.82em;text-decoration:none;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:5px 9px}
-.more .lbl{font-family:var(--f-mono);font-size:.68em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;align-self:center;margin-right:2px}
-.foot{color:var(--muted);font-size:.85em}
-a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding-block:clamp(28px,6vw,72px) 72px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--eosin);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+.hero{display:grid;grid-template-columns:minmax(0,1fr) clamp(120px,32vw,340px);gap:clamp(16px,5vw,64px);align-items:center;margin-bottom:clamp(36px,6vw,72px)}
+.place{color:var(--muted);font-size:.92em;max-width:34ch}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(3.1rem,9.5vw,6.6rem);line-height:.98;letter-spacing:-.025em;margin:.16em 0 .22em}
+.summary{font-size:1.08em;max-width:38ch}
+.summary b{font-weight:700}
+.field{aspect-ratio:1;border-radius:50%;background:var(--field);overflow:hidden;box-shadow:0 0 0 1px var(--line),0 0 0 7px var(--paper),0 0 0 8px var(--line)}
+.field svg{display:block;width:100%;height:100%}
+.field .c{fill:var(--cyto)}
+.field .n{fill:var(--nuc)}
+
+.filter{display:flex;gap:4px 8px;flex-wrap:wrap;margin-inline:-6px;padding-inline:6px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.filter button{appearance:none;background:none;border:0;font:inherit;font-size:.95em;color:var(--muted);min-height:44px;min-width:44px;padding:0 6px;cursor:pointer;text-underline-offset:6px;text-decoration-thickness:2px}
+.filter button:hover{color:var(--ink)}
+.filter button[aria-pressed="true"]{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--eosin)}
+
+.group{margin-top:clamp(36px,5vw,56px)}
+.group-h{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+h2{font-family:var(--f-display);font-weight:400;font-size:clamp(1.65rem,3.4vw,2.15rem);letter-spacing:-.012em}
+.count{color:var(--muted);font-size:.92em}
+
+.ex{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 32px;align-items:center;padding-block:20px;border-bottom:1px solid var(--line);scroll-margin-top:16px}
+.ex:target h3{color:var(--eosin)}
+.meta{color:var(--muted);font-size:.88em}
+.when{white-space:nowrap}
+.when.soon{color:var(--eosin);font-weight:700}
+h3{font-family:var(--f-display);font-weight:500;font-size:1.32em;line-height:1.22;margin-top:2px;text-wrap:pretty}
+.actions{display:flex;gap:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:104px;padding:0 16px;border-radius:999px;font-size:.94em;font-weight:700;text-decoration:none;transition:background-color .18s ease,color .18s ease}
+.btn.main{background:var(--hema);color:var(--hema-ink)}
+.btn.main:hover{background:var(--eosin);color:var(--hema-ink)}
+.btn:active{transform:translateY(1px)}
+.btn.alt{box-shadow:inset 0 0 0 1px var(--edge)}
+.btn.alt:hover{background:var(--hema-soft)}
+.btn.off{color:var(--muted);box-shadow:inset 0 0 0 1px var(--line);font-weight:400}
+.btn .tag{font-weight:400;font-size:.82em;margin-left:6px;opacity:.75}
+
+details{grid-column:1/-1}
+summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-block:-8px;color:var(--muted);font-size:.9em;cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.25em;line-height:1;color:var(--eosin)}
+details[open] summary::after{content:"−"}
+summary:hover{color:var(--ink)}
+.more{list-style:none;margin:10px 0 2px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0 28px}
+.more a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;font-size:.93em;text-decoration:none;border-top:1px solid var(--line)}
+.more a:hover{color:var(--eosin)}
+.more .kind{color:var(--muted);font-size:.82em}
+.past h3{font-size:1.14em}
+
+.foot{color:var(--muted);font-size:.88em;margin-top:40px;max-width:60ch;text-wrap:pretty}
+.sep{white-space:pre}
+
+@media (max-width:680px){
+  body{font-size:16px}
+  .ex{grid-template-columns:minmax(0,1fr)}
+  .actions .btn{flex:1 1 0}
+  .hero{grid-template-columns:minmax(0,1fr) 72px;gap:0 16px;align-items:center;margin-bottom:22px}
+  .hero-text{display:contents}
+  h1{grid-column:1;grid-row:1;font-size:2.7rem;margin:0}
+  .place{grid-column:1/-1;grid-row:2;font-size:.82em;max-width:none;margin-top:8px}
+  .field{grid-column:2;grid-row:1;box-shadow:0 0 0 1px var(--line)}
+  .summary{grid-column:1/-1;grid-row:3;margin-top:8px;max-width:none;font-size:1em}
+  .when{display:block}
+  .filter{gap:0 4px;font-size:.94em;padding-bottom:8px}
+  .group{margin-top:22px}
+  .ex{padding-block:16px}
+  .sep.last{display:none}
+  .more{grid-template-columns:minmax(0,1fr)}
+}
 </style>
 </head>
 <body>
 <main class="wrap">
-<header><p class="eyebrow">Anatomía Patológica y Citodiagnóstico · 1.º TSAPC · Impulsa Pamplona</p><h1>Mi carrera</h1><p class="sub" id="sub"></p></header>
-<a class="next" id="next" hidden></a>
-<p class="how"><span><b>📖 Repaso</b> y <b>📝 Simulacro</b>: botón de color = página interactiva</span><span>botón con borde = PDF</span><span>gris discontinuo = todavía no está hecho</span></p>
-<nav class="jump" id="jump" aria-label="Ir a una asignatura"></nav>
-<div id="list" style="display:flex;flex-direction:column;gap:22px"></div>
+<header class="hero">
+  <div class="hero-text">
+    <p class="place">Anatomía Patológica y Citodiagnóstico · 1.º TSAPC · Impulsa Pamplona</p>
+    <h1>Mi carrera</h1>
+    <p class="summary" id="summary"></p>
+  </div>
+  <div class="field" id="field" aria-hidden="true"></div>
+</header>
+<div class="filter" id="filter" role="group" aria-label="Filtrar por asignatura"></div>
+<p class="sr-only" id="status" role="status"></p>
+<noscript><p>Esta página necesita JavaScript para mostrar los exámenes.</p></noscript>
+<div id="list"></div>
 <p class="foot">En cada página tienes arriba el botón «← Menú» para volver aquí. Los PDF se pueden descargar.</p>
 </main>
 <script>
@@ -81,29 +127,66 @@ const MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","di
 const today=new Date();today.setHours(0,0,0,0);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 EX.forEach(e=>{if(e.fecha){const d=new Date(e.fecha+"T00:00:00");e.days=Math.round((d-today)/864e5);e.fd=DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];e.state=e.days<0?"done":"up"}else e.state="tbd"});
-const rank=e=>e.state==="up"?e.days:e.state==="tbd"?500:5000-e.days;
-const subjects=[];EX.slice().sort((a,b)=>rank(a)-rank(b)).forEach(e=>{let s=subjects.find(x=>x.asig===e.asig);if(!s){s={asig:e.asig,em:e.em,col:e.col,ex:[]};subjects.push(s)}s.ex.push(e)});
-const num=e=>+(String(e.id).match(/\d+$/)||[0])[0];subjects.forEach(s=>s.ex.sort((a,b)=>num(b)-num(a)));
-const nWeb=EX.reduce((n,e)=>n+(e.rep.web?1:0)+(e.sim.web?1:0),0);
-document.getElementById("sub").textContent=subjects.length+" asignaturas · "+EX.length+" exámenes · cada uno con su Repaso y su Simulacro";
-const nx=EX.filter(e=>e.state==="up").sort((a,b)=>a.days-b.days)[0];
-if(nx){const n=document.getElementById("next");n.hidden=false;n.href="#"+nx.id;n.innerHTML=`<span class="n">${nx.days}</span><div><p class="k">${nx.days===0?"¡Hoy es el examen!":nx.days===1?"día para el próximo examen":"días para el próximo examen"}</p><p><b>${nx.em} ${esc(nx.asig)} · ${esc(nx.ex)}</b> · ${nx.fd}</p></div>`}
-const stLab=e=>e.state==="up"?(e.days===0?"Hoy":"Faltan "+e.days+(e.days===1?" día":" días")+" · "+e.fd):e.state==="done"?"Hecho · "+e.fd:"Fecha por confirmar";
-function big(kind,o){const T=kind==="rep"?"📖 Repaso":"📝 Simulacro";
-  if(o.web)return `<a class="big on" href="${o.web}"><b>${T}</b><small>${esc(o.webt||"Página interactiva")}</small></a>`;
-  if(o.pdf)return `<a class="big pdf" href="${o.pdf}"><b>${T}</b><small>PDF</small></a>`;
-  return `<span class="big off"><b>${T}</b><small>Todavía no está hecho</small></span>`}
-document.getElementById("jump").innerHTML=subjects.map(s=>`<a href="#s-${s.col}-${s.ex[0].id}">${s.em} ${esc(s.asig)}</a>`).join("");
-document.getElementById("list").innerHTML=subjects.map(s=>`<section class="subj" id="s-${s.col}-${s.ex[0].id}" style="--c:var(--${s.col})"><div class="subj-h"><span class="em" aria-hidden="true">${s.em}</span><h2>${esc(s.asig)}</h2><span class="c">${s.ex.length} ${s.ex.length===1?"examen":"exámenes"}</span></div>`+
- s.ex.map(e=>{const more=[];
-   if(e.rep.web&&e.rep.pdf)more.push(`<a href="${e.rep.pdf}">📄 Repaso en PDF</a>`);
-   if(e.rep.gh)more.push(`<a href="${e.rep.gh}">🌍 Repaso público</a>`);
-   if(e.sim.web&&e.sim.pdf)more.push(`<a href="${e.sim.pdf}">📄 Simulacro en PDF</a>`);
-   if(e.sim.gh)more.push(`<a href="${e.sim.gh}">🌍 Simulacro público</a>`);
-   (e.extra||[]).forEach(([t,u])=>more.push(`<a href="${u}">${esc(t)}</a>`));
-   return `<article class="ex${e.state==="done"?" past":""}" id="${e.id}"><div class="ex-top"><div><h3>${esc(e.ex)}</h3><p class="tema">${esc(e.tema)}</p></div><span class="st ${e.state}">${stLab(e)}</span></div>
-   <div class="main">${big("rep",e.rep)}${big("sim",e.sim)}</div>${more.length?`<div class="more"><span class="lbl">Más</span>${more.join("")}</div>`:""}</article>`}).join("")+`</section>`).join("");
-</script>
+const asigs=[...new Set(EX.map(e=>e.asig))];
+const upcoming=EX.filter(e=>e.state==="up").sort((a,b)=>a.days-b.days);
+const toStudy=[...upcoming,...EX.filter(e=>e.state==="tbd")];
+const past=EX.filter(e=>e.state==="done").sort((a,b)=>a.days===b.days?0:b.days-a.days);
+const nx=upcoming[0];
+const countAsig=l=>new Set(l.map(e=>e.asig)).size;
+const SHORT={"Técnicas Generales de Laboratorio":"Laboratorio","Gestión de Muestras":"Gestión","Biología Molecular":"Biología"};
 
+document.getElementById("summary").innerHTML=nx
+  ?`<b>${nx.days===0?"Hoy":nx.days===1?"Mañana":"En "+nx.days+" días"}</b>: ${esc(nx.asig)}, ${esc(nx.ex)}. ${toStudy.length} por preparar en ${countAsig(toStudy)} ${countAsig(toStudy)===1?"asignatura":"asignaturas"}.`
+  :`<b>${toStudy.length} exámenes por preparar</b>, todavía sin fecha. ${past.length} ya pasados.`;
+
+const when=e=>e.state==="up"?`<span class="when${e.days<=7?" soon":""}">${e.days===0?"Hoy":e.days===1?"Mañana":"Faltan "+e.days+" días"} · ${e.fd}</span>`:e.state==="done"?`<span class="when">Pasado · ${e.fd}</span>`:`<span class="when">Fecha por confirmar</span>`;
+function btn(kind,o,cls,e){const T=kind==="rep"?"Repaso":"Simulacro",L=`aria-label="${T}: ${esc(e.asig)}, ${esc(e.ex)}"`;
+  if(o.web)return `<a class="btn ${cls}" href="${o.web}" ${L}>${T}</a>`;
+  if(o.pdf)return `<a class="btn ${cls}" href="${o.pdf}" ${L}>${T}<span class="tag">PDF</span></a>`;
+  return `<span class="btn off">${T}: pendiente</span>`}
+const clean=t=>t.replace(/^[^\p{L}\p{N}]+/u,"");
+function materials(e){const m=[];
+  if(e.rep.web&&e.rep.pdf)m.push(["Repaso",e.rep.pdf]);
+  if(e.sim.web&&e.sim.pdf)m.push(["Simulacro",e.sim.pdf]);
+  (e.extra||[]).forEach(([t,u])=>m.push([clean(t),u]));
+  return m}
+function row(e){const m=materials(e);
+  return `<article class="ex${e.state==="done"?" past":""}" id="${e.id}">
+   <div><p class="meta">${esc(e.asig)} · ${esc(e.ex)}<span class="sep last"> · </span>${when(e)}</p><h3>${esc(e.tema)}</h3>${e.sim.webt?`<p class="meta">Simulacro: ${esc(e.sim.webt)}</p>`:""}</div>
+   <div class="actions">${btn("rep",e.rep,"main",e)}${btn("sim",e.sim,"alt",e)}</div>
+   ${m.length?`<details><summary aria-label="Más material de ${esc(e.asig)}, ${esc(e.ex)}: ${m.length}">Más material (${m.length})</summary><ul class="more">${m.map(([t,u])=>`<li><a href="${u}"><span>${esc(t)}</span><span class="kind">${/\.pdf$/i.test(u)?"PDF":"Web"}</span></a></li>`).join("")}</ul></details>`:""}
+  </article>`}
+function group(title,list){return list.length?`<section class="group"><div class="group-h"><h2>${title}</h2><span class="count"><span aria-hidden="true">${list.length}</span><span class="sr-only">${list.length} ${list.length===1?"examen":"exámenes"}</span></span></div>${list.map(row).join("")}</section>`:""}
+
+let current=null;try{const c=sessionStorage.getItem("asig");if(asigs.includes(c))current=c}catch(_){}
+const list=document.getElementById("list"),filter=document.getElementById("filter");
+function render(){const f=a=>!current||a.asig===current;
+  list.innerHTML=group("Por preparar",toStudy.filter(f))+group("Ya pasados",past.filter(f));
+  filter.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String((b.dataset.a||null)===current)));
+  const n=list.querySelectorAll(".ex").length;document.getElementById("status").textContent=n+(n===1?" examen":" exámenes")+(current?" de "+current:"");
+  try{current?sessionStorage.setItem("asig",current):sessionStorage.removeItem("asig")}catch(_){}}
+filter.innerHTML=`<button type="button" data-a="">Todas</button>`+asigs.map(a=>`<button type="button" data-a="${esc(a)}">${esc(SHORT[a]||a)}</button>`).join("");
+filter.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;current=b.dataset.a||null;render()});
+render();
+// Un enlace directo a un examen quita el filtro si lo estaba ocultando
+addEventListener("hashchange",()=>{const id=location.hash.slice(1);if(id&&current&&!document.getElementById(id)){current=null;render();document.getElementById(id)?.scrollIntoView()}});
+if(location.hash&&!document.getElementById(location.hash.slice(1))){current=null;render();document.getElementById(location.hash.slice(1))?.scrollIntoView()}
+
+// Campo de microscopio: células generadas con una semilla fija, igual en cada visita
+(function(){let s=20261030;const r=()=>(s=(s*1664525+1013904223)%4294967296)/4294967296;
+  let out="";const step=9.4;let row=0;
+  for(let y=-4;y<=104;y+=step*.86,row++)for(let x=-4+(row%2?step/2:0);x<=104;x+=step){
+    const cx=x+(r()-.5)*4.6,cy=y+(r()-.5)*4.6,a=(r()*180).toFixed(0),rx=(3.5+r()*1.7).toFixed(2),ry=(2.8+r()*1.3).toFixed(2),nr=(1.25+r()*.75).toFixed(2),dx=((r()-.5)*1.5).toFixed(2),dy=((r()-.5)*1.5).toFixed(2);
+    out+=`<g transform="translate(${cx.toFixed(2)} ${cy.toFixed(2)}) rotate(${a})"><ellipse class="c" rx="${rx}" ry="${ry}" opacity="${(.5+r()*.5).toFixed(2)}"/><circle class="n" cx="${dx}" cy="${dy}" r="${nr}" opacity="${(.72+r()*.28).toFixed(2)}"/></g>`}
+  document.getElementById("field").innerHTML=`<svg viewBox="0 0 100 100" focusable="false">${out}</svg>`})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+// El contenido ya es visible sin GSAP; la animación solo se añade si la librería carga pronto y el movimiento está permitido
+if(window.gsap&&performance.now()<800&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
+  gsap.from("#field svg",{filter:"blur(9px)",scale:1.16,duration:1.7,ease:"power2.out",clearProps:"filter,transform"});
+  gsap.from(".hero h1, .place, .summary",{y:10,opacity:0,duration:.7,ease:"power2.out",stagger:.07,clearProps:"all"});
+}
+</script>
 </body>
 </html>
