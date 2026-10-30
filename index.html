@@ -7,120 +7,160 @@
 <title>Mi carrera TSAPC</title>
 <meta name="description" content="Repasos, simulacros y material de estudio de 1.º de TSAPC, Anatomía Patológica y Citodiagnóstico.">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#14121b" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#21124f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@700&display=swap">
 <style>
-/* Paleta de la tinción hematoxilina-eosina: papel, índigo para la acción y rosa para el detalle */
+/* Capítulos de color de la tinción: hematoxilina (portada), eosina (por preparar) y papel (pasados) */
 :root{
-  --paper:#f7f4ee; --ink:#1d1a26; --muted:#655f6e; --line:#e2dcd1; --edge:#938c80; --hema:#3a2f7d; --hema-ink:#ffffff; --hema-soft:#ebe8f4;
-  --eosin:#b23a63; --cyto:#e9a9bd; --nuc:#4a3b92; --field:#fbeef0;
-  --f-display:"Newsreader",Georgia,"Times New Roman",serif; --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --hema:#21124f; --hema-2:#35207a; --on-hema:#ffffff; --eosin:#ee4d84; --on-eosin:#1c0a1a;
+  --paper:#f8f2e8; --ink:#1c1626; --muted:#5f5868; --line:#ddd3c3; --card:#fffdf9; --edge:#8c8476;
+  --glass:#f4eff7;
+  --f-display:"Young Serif",Georgia,"Times New Roman",serif; --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif; --f-hand:"Caveat","Segoe Script",cursive;
+  --ease-out:cubic-bezier(.23,1,.32,1);
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#14121b; --ink:#efebf4; --muted:#a79fb2; --line:#2e2a39; --edge:#6f687b; --hema:#b9b0f2; --hema-ink:#17142a; --hema-soft:#26223a;
-  --eosin:#f08bab; --cyto:#7c3a56; --nuc:#b3a7f2; --field:#1f1824; color-scheme:dark}}
+  --hema:#170c3a; --hema-2:#2a1a63; --eosin:#a92b5d; --on-eosin:#ffffff;
+  --paper:#15121c; --ink:#f1ecf5; --muted:#ada5b6; --line:#312c3b; --card:#1f1a29; --edge:#756d80; --glass:#2a2336; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --paper:#14121b; --ink:#efebf4; --muted:#a79fb2; --line:#2e2a39; --edge:#6f687b; --hema:#b9b0f2; --hema-ink:#17142a; --hema-soft:#26223a;
-  --eosin:#f08bab; --cyto:#7c3a56; --nuc:#b3a7f2; --field:#1f1824; color-scheme:dark}
+  --hema:#170c3a; --hema-2:#2a1a63; --eosin:#a92b5d; --on-eosin:#ffffff;
+  --paper:#15121c; --ink:#f1ecf5; --muted:#ada5b6; --line:#312c3b; --card:#1f1a29; --edge:#756d80; --glass:#2a2336; color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1040px;margin:0 auto;padding-block:clamp(28px,6vw,72px) 72px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:clip}
 h1,h2,h3,p{margin:0}
 a{color:inherit}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--eosin);outline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid currentColor;outline-offset:3px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.frame{max-width:1320px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 
-.hero{display:grid;grid-template-columns:minmax(0,1fr) clamp(120px,32vw,340px);gap:clamp(16px,5vw,64px);align-items:center;margin-bottom:clamp(36px,6vw,72px)}
-.place{color:var(--muted);font-size:.92em;max-width:34ch}
-h1{font-family:var(--f-display);font-weight:400;font-size:clamp(3.1rem,9.5vw,6.6rem);line-height:.98;letter-spacing:-.025em;margin:.16em 0 .22em}
-.summary{font-size:1.08em;max-width:38ch}
-.summary b{font-weight:700}
-.field{aspect-ratio:1;border-radius:50%;background:var(--field);overflow:hidden;box-shadow:0 0 0 1px var(--line),0 0 0 7px var(--paper),0 0 0 8px var(--line)}
-.field svg{display:block;width:100%;height:100%}
-.field .c{fill:var(--cyto)}
-.field .n{fill:var(--nuc)}
+/* Portada: una preparación a toda pantalla que se explora con la lente */
+.hero{position:relative;background:var(--hema);color:var(--on-hema);min-height:min(86svh,860px);display:flex;align-items:flex-end;overflow:hidden;touch-action:pan-y}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,var(--hema) 0,rgba(33,18,79,.72) 26%,rgba(33,18,79,0) 58%)}
+#stage.hot{cursor:pointer}
+.tip{position:absolute;z-index:3;left:0;top:0;max-width:280px;padding:8px 12px;border-radius:8px;background:#fff;color:#21124f;font-size:.88em;line-height:1.25;pointer-events:none;box-shadow:0 10px 26px -8px rgba(10,0,40,.6)}
+.tip b{display:block}
+.hero .frame{z-index:2;position:relative;width:100%;padding-block:32px clamp(28px,5vw,56px);pointer-events:none}
+.place,.summary{text-shadow:0 1px 10px rgba(25,8,65,.85)}
+.place{font-size:clamp(1rem,1.5vw,1.2rem);max-width:44ch;margin-bottom:10px;font-weight:700}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(4rem,17.2vw,16rem);line-height:.86;letter-spacing:-.035em;margin-left:-.03em;text-shadow:0 4px 34px rgba(20,8,60,.7)}
+.hero-foot{display:flex;flex-wrap:wrap;gap:14px 32px;align-items:center;justify-content:space-between;margin-top:clamp(18px,3vw,32px)}
+.summary{font-size:clamp(1.08rem,1.8vw,1.45rem);line-height:1.3;max-width:34ch;text-wrap:balance}
+.go{pointer-events:auto;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;background:#fff;color:#21124f;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .16s var(--ease-out)}
+.go:active{transform:scale(.97)}
+@media (hover:hover){.go:hover{transform:translateY(-2px)}}
 
-.filter{display:flex;gap:4px 8px;flex-wrap:wrap;margin-inline:-6px;padding-inline:6px;padding-bottom:14px;border-bottom:1px solid var(--line)}
-.filter button{appearance:none;background:none;border:0;font:inherit;font-size:.95em;color:var(--muted);min-height:44px;min-width:44px;padding:0 6px;cursor:pointer;text-underline-offset:6px;text-decoration-thickness:2px}
-.filter button:hover{color:var(--ink)}
-.filter button[aria-pressed="true"]{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--eosin)}
+/* Filtro: las etiquetas de la caja de preparaciones */
+.filter-bar{position:sticky;top:0;z-index:5;background:var(--hema);color:var(--on-hema)}
+.filter{display:flex;flex-wrap:wrap;gap:0 4px;padding-block:6px}
+.filter button{appearance:none;background:none;border:0;color:inherit;font:inherit;font-size:.96em;min-height:44px;min-width:44px;padding:0 14px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;opacity:.86}
+.filter button i{width:10px;height:10px;border-radius:50%;background:var(--c,#fff);flex:none}
+.filter button:hover{opacity:1}
+.filter button[aria-pressed="true"]{background:#fff;color:#21124f;opacity:1;font-weight:700}
 
-.group{margin-top:clamp(36px,5vw,56px)}
-.group-h{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
-h2{font-family:var(--f-display);font-weight:400;font-size:clamp(1.65rem,3.4vw,2.15rem);letter-spacing:-.012em}
-.count{color:var(--muted);font-size:.92em}
+/* Capítulos */
+.chapter{padding-block:clamp(40px,7vw,96px);scroll-margin-top:56px}
+.chapter.todo{background:var(--eosin);color:var(--on-eosin)}
+.chapter-h{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:clamp(20px,3.4vw,40px)}
+h2{font-family:var(--f-display);font-weight:400;font-size:clamp(2.7rem,8.4vw,7.4rem);line-height:.92;letter-spacing:-.025em}
+.count{font-family:var(--f-display);font-size:clamp(2.7rem,8.4vw,7.4rem);line-height:.92;opacity:.68}
 
-.ex{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 32px;align-items:center;padding-block:20px;border-bottom:1px solid var(--line);scroll-margin-top:16px}
-.ex:target h3{color:var(--eosin)}
-.meta{color:var(--muted);font-size:.88em}
-.when{white-space:nowrap}
-.when.soon{color:var(--eosin);font-weight:700}
-h3{font-family:var(--f-display);font-weight:500;font-size:1.32em;line-height:1.22;margin-top:2px;text-wrap:pretty}
-.actions{display:flex;gap:8px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:104px;padding:0 16px;border-radius:999px;font-size:.94em;font-weight:700;text-decoration:none;transition:background-color .18s ease,color .18s ease}
-.btn.main{background:var(--hema);color:var(--hema-ink)}
-.btn.main:hover{background:var(--eosin);color:var(--hema-ink)}
-.btn:active{transform:translateY(1px)}
-.btn.alt{box-shadow:inset 0 0 0 1px var(--edge)}
-.btn.alt:hover{background:var(--hema-soft)}
+/* El portaobjetos: vidrio con la muestra, etiqueta esmerilada escrita a mano y la ficha debajo */
+.tray{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,400px),1fr));gap:clamp(14px,2vw,24px)}
+.slide{background:var(--card);color:var(--ink);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:72px;box-shadow:0 1px 0 rgba(0,0,0,.08),0 12px 30px -18px rgba(30,5,30,.55);transition:transform .22s var(--ease-out)}
+@media (hover:hover){.slide:hover{transform:translateY(-4px) rotate(-.35deg)}}
+.slide:target{outline:3px solid var(--ink);outline-offset:3px}
+.glass{position:relative;height:clamp(96px,11vw,132px);background:var(--glass);overflow:hidden}
+.glass svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.glass::after{content:"";position:absolute;inset:0;background:linear-gradient(112deg,rgba(255,255,255,.34) 0 13%,rgba(255,255,255,0) 13.4% 58%,rgba(255,255,255,.13) 58.3% 68%,rgba(255,255,255,0) 68.3%);pointer-events:none}
+.label{position:absolute;z-index:1;left:0;top:0;bottom:0;width:30%;min-width:96px;background:#f7f4ec;color:#26205f;font-family:var(--f-hand);font-size:1.42rem;line-height:1;display:flex;flex-direction:column;justify-content:center;padding:0 12px;transform:none;box-shadow:1px 0 0 rgba(0,0,0,.14);background-image:radial-gradient(rgba(60,40,90,.09) 1px,transparent 1.2px);background-size:4px 4px}
+.label span{display:block}
+.label .num{color:#c22a5e;font-size:1.65rem;margin-top:3px}
+.sheet{padding:16px 18px 10px;display:flex;flex-direction:column;gap:8px;flex:1}
+.meta{color:var(--muted);font-size:.9em}
+.when.soon{color:#b4144f;font-weight:700}
+h3{font-family:var(--f-display);font-weight:400;font-size:1.34em;line-height:1.16;text-wrap:pretty}
+.actions{display:flex;gap:8px;margin-top:auto;padding-top:10px}
+.btn{flex:1 1 0;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 14px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .16s var(--ease-out),background-color .16s ease}
+.btn:active{transform:scale(.97)}
+.btn.main{background:#21124f;color:#fff}
+.btn.main:hover{background:#35207a}
+.btn.alt{box-shadow:inset 0 0 0 1.5px var(--edge)}
+.btn.alt:hover{background:var(--glass)}
 .btn.off{color:var(--muted);box-shadow:inset 0 0 0 1px var(--line);font-weight:400}
 .btn .tag{font-weight:400;font-size:.82em;margin-left:6px;opacity:.75}
-
-details{grid-column:1/-1}
-summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-block:-8px;color:var(--muted);font-size:.9em;cursor:pointer;list-style:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.main{background:#d9d2ff;color:#17102f}:root:not([data-theme="light"]) .btn.main:hover{background:#fff}:root:not([data-theme="light"]) .when.soon{color:#ff9dbd}}
+:root[data-theme="dark"] .btn.main{background:#d9d2ff;color:#17102f}
+:root[data-theme="dark"] .btn.main:hover{background:#fff}
+:root[data-theme="dark"] .when.soon{color:#ff9dbd}
+details{margin-top:2px}
+summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:var(--muted);font-size:.92em;cursor:pointer;list-style:none}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:1.25em;line-height:1;color:var(--eosin)}
+summary::after{content:"+";font-size:1.3em;line-height:1;color:#c22a5e}
 details[open] summary::after{content:"−"}
 summary:hover{color:var(--ink)}
-.more{list-style:none;margin:10px 0 2px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0 28px}
-.more a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;font-size:.93em;text-decoration:none;border-top:1px solid var(--line)}
-.more a:hover{color:var(--eosin)}
-.more .kind{color:var(--muted);font-size:.82em}
-.past h3{font-size:1.14em}
+.more{list-style:none;margin:0 0 8px;padding:0}
+.more a{display:flex;justify-content:space-between;gap:12px;align-items:center;min-height:44px;font-size:.94em;text-decoration:none;border-top:1px solid var(--line)}
+.more a:hover{color:#c22a5e}
+.more .kind{color:var(--muted);font-size:.84em}
 
-.foot{color:var(--muted);font-size:.88em;margin-top:40px;max-width:60ch;text-wrap:pretty}
-.sep{white-space:pre}
+/* Ya pasados: mismo portaobjetos, archivado en la caja */
+.chapter.todo .tray{grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr))}
+.done .tray{grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr))}
+.done .slide{box-shadow:0 0 0 1px var(--line)}
+.done .glass{height:72px}
+.done h3{font-size:1.16em}
+
+.closing{background:var(--hema);color:var(--on-hema);overflow:hidden}
+.closing .frame{padding-block:clamp(28px,4vw,48px) 0}
+.closing p{max-width:58ch}
+.word{font-family:var(--f-display);font-size:clamp(4rem,23.5vw,21rem);line-height:.84;letter-spacing:-.04em;margin-top:.14em;margin-bottom:.02em;opacity:.95;color:#ee4d84;white-space:nowrap}
 
 @media (max-width:680px){
   body{font-size:16px}
-  .ex{grid-template-columns:minmax(0,1fr)}
-  .actions .btn{flex:1 1 0}
-  .hero{grid-template-columns:minmax(0,1fr) 72px;gap:0 16px;align-items:center;margin-bottom:22px}
-  .hero-text{display:contents}
-  h1{grid-column:1;grid-row:1;font-size:2.7rem;margin:0}
-  .place{grid-column:1/-1;grid-row:2;font-size:.82em;max-width:none;margin-top:8px}
-  .field{grid-column:2;grid-row:1;box-shadow:0 0 0 1px var(--line)}
-  .summary{grid-column:1/-1;grid-row:3;margin-top:8px;max-width:none;font-size:1em}
-  .when{display:block}
-  .filter{gap:0 4px;font-size:.94em;padding-bottom:8px}
-  .group{margin-top:22px}
-  .ex{padding-block:16px}
-  .sep.last{display:none}
-  .more{grid-template-columns:minmax(0,1fr)}
+  .hero{min-height:74svh}
+  .hero .frame{padding-block:40px 18px}
+  .tip{display:none}
+  .go{display:none}
+  .place{font-size:.92em}
+  h1{font-size:clamp(4rem,21vw,7.4rem)}
+  .hero-foot{margin-top:12px}
+  .filter-bar{position:static}
+  .filter button{padding:0 10px;font-size:.92em}
+  .chapter{padding-block:24px 36px}
+  .chapter-h{margin-bottom:14px}
+  .glass{height:84px}
+  .done .glass{height:60px}
 }
 </style>
 </head>
 <body>
-<main class="wrap">
-<header class="hero">
-  <div class="hero-text">
+<header class="hero" id="hero">
+  <canvas id="lens" aria-hidden="true"></canvas>
+  <canvas id="stage" aria-hidden="true" hidden></canvas>
+  <p class="tip" id="tip" aria-hidden="true" hidden></p>
+  <div class="frame">
     <p class="place">Anatomía Patológica y Citodiagnóstico · 1.º TSAPC · Impulsa Pamplona</p>
     <h1>Mi carrera</h1>
-    <p class="summary" id="summary"></p>
+    <div class="hero-foot">
+      <p class="summary" id="summary"></p>
+      <a class="go" href="#preparar">Ver lo que toca →</a>
+    </div>
   </div>
-  <div class="field" id="field" aria-hidden="true"></div>
 </header>
-<div class="filter" id="filter" role="group" aria-label="Filtrar por asignatura"></div>
+<div class="filter-bar"><div class="frame filter" id="filter" role="group" aria-label="Filtrar por asignatura"></div></div>
 <p class="sr-only" id="status" role="status"></p>
-<noscript><p>Esta página necesita JavaScript para mostrar los exámenes.</p></noscript>
-<div id="list"></div>
-<p class="foot">En cada página tienes arriba el botón «← Menú» para volver aquí. Los PDF se pueden descargar.</p>
-</main>
+<noscript><p class="frame">Esta página necesita JavaScript para mostrar los exámenes.</p></noscript>
+<main id="list"></main>
+<footer class="closing">
+  <div class="frame">
+    <p>En cada página tienes arriba el botón «← Menú» para volver aquí. Los PDF se pueden descargar.</p>
+    <div class="word" aria-hidden="true">TSAPC</div>
+  </div>
+</footer>
 <script>
 const EX=[{"id": "fisio3", "asig": "Fisiopatología", "em": "🫀", "col": "fisio", "ex": "3er examen", "tema": "Unidad 3 · La patología: estudio de la enfermedad", "fecha": null, "rep": {"web": "fisio3/repaso/", "pdf": "files/FISIO3_1-Repaso_Patologia.pdf"}, "sim": {"web": "fisio3/simulacro/", "pdf": "files/FISIO3_2-Simulacro_Patologia.pdf"}, "extra": [["⚡ Lo imprescindible", "files/FISIO3_3-Imprescindible_Patologia.pdf"], ["✅ Verificación", "files/FISIO3_5-Verificacion_Patologia.pdf"]]}, {"id": "fisio2", "asig": "Fisiopatología", "em": "🫀", "col": "fisio", "ex": "2º examen", "tema": "Unidad 2 · Tejidos y anatomía", "fecha": "2026-10-28", "rep": {"web": "fisio2/repaso/", "pdf": "files/FISIO2_1-Repaso_Tejidos_28.oct.pdf"}, "sim": {"web": "fisio2/simulacro/", "pdf": "files/FISIO2_2-Simulacro_Tejidos_28.oct.pdf"}, "extra": [["⚡ Lo imprescindible", "files/FISIO2_3-Imprescindible_Tejidos_28.oct.pdf"], ["✏️ Esquemas para rellenar", "files/FISIO2_4-Esquemas-Rellenar_Tejidos_28.oct.pdf"], ["✅ Verificación", "files/FISIO2_5-Verificacion_Tejidos_28.oct.pdf"]]}, {"id": "ipe3", "asig": "IPE 1", "em": "🦺", "col": "ipe", "ex": "Tema 5", "tema": "Los primeros auxilios en la empresa", "fecha": null, "rep": {"web": "ipe-tema5/repaso/", "pdf": "files/IPE3_1-Repaso_Primeros-Auxilios.pdf"}, "sim": {"web": "ipe-tema5/simulacro/"}, "extra": [["⚡ Lo imprescindible", "files/IPE3_3-Imprescindible_Primeros-Auxilios.pdf"], ["✅ Verificación", "files/IPE3_5-Verificacion_Primeros-Auxilios.pdf"]]}, {"id": "bio2", "asig": "Biología Molecular", "em": "🧬", "col": "bio", "ex": "2º examen", "tema": "Tema 3 · Citogenética y análisis cromosómico", "fecha": null, "rep": {"web": "bio2/repaso/", "pdf": "files/BIO2_1-Repaso_Citogenetica.pdf"}, "sim": {"web": "bio2/simulacro/", "pdf": "files/BIO2_2-Simulacro_Citogenetica.pdf"}, "extra": [["⚡ Lo imprescindible", "files/BIO2_3-Imprescindible_Citogenetica.pdf"], ["✅ Verificación", "files/BIO2_5-Verificacion_Citogenetica.pdf"]]}, {"id": "gest2", "asig": "Gestión de Muestras", "em": "🧫", "col": "gest", "ex": "2º examen", "tema": "Tema 2 · Funciones, áreas y organización del laboratorio", "fecha": null, "rep": {"web": "gest2/repaso/", "pdf": "files/GESTION2_1-Repaso_Laboratorio.pdf"}, "sim": {"web": "gest2/simulacro/", "pdf": "files/GESTION2_2-Simulacro-Test_Laboratorio.pdf"}, "extra": [["⚡ Lo imprescindible", "files/GESTION2_3-Imprescindible_Laboratorio.pdf"], ["✅ Verificación", "files/GESTION2_5-Verificacion_Laboratorio.pdf"]]}, {"id": "ing1", "asig": "Inglés", "em": "🇬🇧", "col": "ing", "ex": "1er examen", "tema": "Unit 1 verbos · Unit 2 presentes · vocabulario de laboratorio", "fecha": "2026-10-23", "rep": {"web": "ingles1/repaso/", "pdf": "files/INGLES1_1-Repaso_Tiempos.pdf"}, "sim": {"web": "ingles1/simulacro/", "pdf": "files/INGLES1_2-Simulacro_Tiempos.pdf"}, "extra": [["🌐 Aprende las 50 palabras", "ingles1/vocabulario/"], ["🌐 Examen Units 1–2", "ingles1/examen/"], ["🌐 Examen de vocabulario", "ingles1/examen-vocabulario/"], ["🌐 Simulacro de vocabulario", "ingles1/simulacro-vocabulario/"], ["📄 Repaso breve + 50 palabras", "files/INGLES1_1-Repaso-Breve_Vocabulario.pdf"], ["⚡ Lo imprescindible", "files/INGLES1_3-Imprescindible_Tiempos.pdf"]]}, {"id": "ipe2", "asig": "IPE 1", "em": "🦺", "col": "ipe", "ex": "2º examen", "tema": "Tema 3 · Riesgos ambientales en el trabajo", "fecha": "2026-10-13", "rep": {"web": "ipe2/repaso/", "pdf": "files/IPE2_1-Repaso_Riesgos-Ambientales.pdf"}, "sim": {"web": "ipe2/simulacro/", "pdf": "files/IPE2_2-Simulacro-Tipo-Examen_Riesgos-Ambientales.pdf"}, "extra": [["📄 Simulacro test", "files/IPE2_2-Simulacro-Test_Riesgos-Ambientales.pdf"], ["📄 Simulacro rápido", "files/IPE2_2-Simulacro-Rapido_Riesgos-Ambientales.pdf"], ["⚡ Lo imprescindible", "files/IPE2_3-Imprescindible_Riesgos-Ambientales.pdf"]]}, {"id": "lab1", "asig": "Técnicas Generales de Laboratorio", "em": "🧪", "col": "lab", "ex": "1er examen", "tema": "Unidad 1", "fecha": "2026-10-22", "rep": {"web": "lab1/repaso/", "pdf": "files/LAB1_1-Repaso_Unidad1_22.oct.pdf"}, "sim": {"web": "lab1/banco/", "webt": "Banco completo (153 preguntas)", "pdf": "files/LAB1_2-Simulacro-Test_Unidad1_22.oct.pdf"}, "extra": [["🌐 Test de 50", "lab1/test-50/"], ["🌐 Segundo test de 50", "lab1/test-50-b/"], ["📄 50 con respuestas", "files/LAB1_2-Simulacro-50-con-Respuestas_Unidad1_22.oct.pdf"], ["⚡ Lo imprescindible", "files/LAB1_3-Imprescindible_Unidad1_22.oct.pdf"]]}, {"id": "bio1", "asig": "Biología Molecular", "em": "🧬", "col": "bio", "ex": "1er examen", "tema": "Tema 2 · Cultivos celulares", "fecha": "2026-10-19", "rep": {"web": "bio1/repaso/", "pdf": "files/BIO1_1-Repaso_Cultivos_19.oct.pdf"}, "sim": {"web": "bio1/simulacro/", "pdf": "files/BIO1_2-Simulacro_Cultivos_19.oct.pdf"}, "extra": [["🔬 Neubauer y microscopio", "files/BIO1_4-Neubauer-Microscopio_Cultivos_19.oct.pdf"], ["⚡ Lo imprescindible", "files/BIO1_3-Imprescindible_Cultivos_19.oct.pdf"]]}, {"id": "gest1", "asig": "Gestión de Muestras", "em": "🧫", "col": "gest", "ex": "1er examen", "tema": "Tema 1 · Estructura organizativa del sector sanitario", "fecha": "2026-10-15", "rep": {"web": "gest1/repaso/", "pdf": "files/GESTION1_1-Repaso_Sector-Sanitario_15.oct.pdf"}, "sim": {"web": "gest1/simulacro/", "pdf": "files/GESTION1_2-Simulacro-Test_Sector-Sanitario_15.oct.pdf"}, "extra": [["⚡ Lo imprescindible", "files/GESTION1_3-Imprescindible_Sector-Sanitario_15.oct.pdf"]]}, {"id": "fisio1", "asig": "Fisiopatología", "em": "🫀", "col": "fisio", "ex": "1er examen", "tema": "Unidad 1 · La organización del cuerpo humano", "fecha": "2026-10-13", "rep": {"web": "fisio1/repaso/", "pdf": "files/FISIO1_1-Repaso_Organizacion_13.oct.pdf"}, "sim": {"web": "fisio1/simulacro/"}, "extra": [["⚡ Lo imprescindible", "files/FISIO1_3-Imprescindible_Organizacion_13.oct.pdf"], ["🧭 Cómo estudiar", "files/FISIO1_4-Como-Estudiar_Organizacion_13.oct.pdf"]]}];
 const MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
@@ -130,14 +170,36 @@ EX.forEach(e=>{if(e.fecha){const d=new Date(e.fecha+"T00:00:00");e.days=Math.rou
 const asigs=[...new Set(EX.map(e=>e.asig))];
 const upcoming=EX.filter(e=>e.state==="up").sort((a,b)=>a.days-b.days);
 const toStudy=[...upcoming,...EX.filter(e=>e.state==="tbd")];
-const past=EX.filter(e=>e.state==="done").sort((a,b)=>a.days===b.days?0:b.days-a.days);
+const past=EX.filter(e=>e.state==="done").sort((a,b)=>b.days-a.days);
 const nx=upcoming[0];
 const countAsig=l=>new Set(l.map(e=>e.asig)).size;
 const SHORT={"Técnicas Generales de Laboratorio":"Laboratorio","Gestión de Muestras":"Gestión","Biología Molecular":"Biología"};
+const LAB={"Técnicas Generales de Laboratorio":"Lab","Gestión de Muestras":"Gestión","Biología Molecular":"Bio","Fisiopatología":"Fisio","IPE 1":"IPE","Inglés":"Inglés"};
+const SW={fisio:"#ee4d84",ipe:"#e0433a",bio:"#9a7bff",gest:"#f2b134",ing:"#55a8ff",lab:"#54c98a"};
 
 document.getElementById("summary").innerHTML=nx
-  ?`<b>${nx.days===0?"Hoy":nx.days===1?"Mañana":"En "+nx.days+" días"}</b>: ${esc(nx.asig)}, ${esc(nx.ex)}. ${toStudy.length} por preparar en ${countAsig(toStudy)} ${countAsig(toStudy)===1?"asignatura":"asignaturas"}.`
-  :`<b>${toStudy.length} exámenes por preparar</b>, todavía sin fecha. ${past.length} ya pasados.`;
+  ?`${nx.days===0?"Hoy":nx.days===1?"Mañana":"En "+nx.days+" días"}: ${esc(nx.asig)}, ${esc(nx.ex)}. ${toStudy.length} por preparar.`
+  :`${toStudy.length} exámenes por preparar, todavía sin fecha, y ${past.length} ya pasados.`;
+
+/* Muestras dibujadas: cada asignatura tiene la suya y cada examen, su propia semilla */
+function rng(str){let s=[...str].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,7);return()=>(s=(s*1664525+1013904223)%4294967296)/4294967296}
+function specimen(e){const r=rng(e.id);let o="",bg="#f3c3d4";const W=420,H=120;
+  if(e.col==="fisio"){bg="#f2a5be";for(let y=-4;y<H+8;y+=13){const w=4+r()*3,a=r()*5;
+      o+=`<path d="M-5 ${y} Q 105 ${y+a} 210 ${y} T 425 ${y}" fill="none" stroke="#d63a72" stroke-width="${w*1.6}" opacity=".78"/>`;
+      for(let x=r()*50;x<W;x+=46+r()*70)o+=`<ellipse cx="${x}" cy="${y+a/2}" rx="7" ry="2.5" fill="#3a1f8a"/>`}
+    for(let x=0;x<W;x+=7)o+=`<path d="M${x} 0V${H}" stroke="#a81c50" stroke-width=".7" opacity=".3"/>`}
+  else if(e.col==="bio"){bg="#e8e0ff";for(let i=0;i<46;i++){const x=r()*W,y=r()*H,a=r()*180,l=7+r()*8,c=["#4a2bb3","#6a3fd6","#2e1a80"][i%3];
+      o+=`<g transform="translate(${x} ${y}) rotate(${a})" stroke="${c}" stroke-width="4.4" stroke-linecap="round"><path d="M${-l/2} ${-l} L${l/2} ${l}"/><path d="M${l/2} ${-l} L${-l/2} ${l}"/></g>`}}
+  else if(e.col==="ipe"){bg="#fbe0d8";for(let i=0;i<78;i++){const x=r()*W,y=r()*H,R=8+r()*2.6;
+      o+=`<circle cx="${x}" cy="${y}" r="${R}" fill="#e0433a" opacity=".85"/><circle cx="${x}" cy="${y}" r="${R*.45}" fill="#f7b3a6" opacity=".9"/>`}
+    for(let i=0;i<3;i++){const x=80+r()*260,y=20+r()*80;o+=`<circle cx="${x}" cy="${y}" r="15" fill="#d9c7f4"/><path d="M${x-7} ${y-3} q6 -8 11 0 t-4 9 q-7 2 -7 -9" fill="#4a2bb3"/>`}}
+  else if(e.col==="lab"){bg="#d9f3e4";for(let x=0;x<=W;x+=30)o+=`<path d="M${x} 0V${H}" stroke="#16764a" stroke-width="${x%120===0?2.4:.8}"/>`;for(let y=0;y<=H;y+=30)o+=`<path d="M0 ${y}H${W}" stroke="#16764a" stroke-width="${y%120===0?2.4:.8}"/>`;
+    for(let i=0;i<60;i++){const x=r()*W,y=r()*H;o+=`<circle cx="${x}" cy="${y}" r="${2.4+r()*2}" fill="${i%5?"#0e5a8a":"#1c1626"}"/>`}}
+  else if(e.col==="gest"){bg="#fff1cf";let x=120;while(x<W){const w=2+Math.floor(r()*9);if(r()>.42)o+=`<rect x="${x}" y="14" width="${w}" height="92" fill="#22180a"/>`;x+=w+1}
+    for(let i=0;i<26;i++){o+=`<circle cx="${r()*W}" cy="${r()*H}" r="${3+r()*7}" fill="#f2a71b" opacity=".62"/>`}}
+  else{bg="#d6e9ff";const t="cell tissue stain slide smear lab".replace(/ /g,"");for(let i=0;i<48;i++){const x=r()*W,y=r()*H;
+      o+=`<circle cx="${x}" cy="${y}" r="${13+r()*5}" fill="#7dbbff" opacity=".66"/><text x="${x}" y="${y+5}" text-anchor="middle" font-family="Young Serif,Georgia,serif" font-size="15" fill="#10337f">${t[i%t.length]}</text>`}}
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="${W}" height="${H}" fill="${bg}"/>${o}</svg>`}
 
 const when=e=>e.state==="up"?`<span class="when${e.days<=7?" soon":""}">${e.days===0?"Hoy":e.days===1?"Mañana":"Faltan "+e.days+" días"} · ${e.fd}</span>`:e.state==="done"?`<span class="when">Pasado · ${e.fd}</span>`:`<span class="when">Fecha por confirmar</span>`;
 function btn(kind,o,cls,e){const T=kind==="rep"?"Repaso":"Simulacro",L=`aria-label="${T}: ${esc(e.asig)}, ${esc(e.ex)}"`;
@@ -151,41 +213,154 @@ function materials(e){const m=[];
   (e.extra||[]).forEach(([t,u])=>m.push([clean(t),u]));
   return m}
 function row(e){const m=materials(e);
-  return `<article class="ex${e.state==="done"?" past":""}" id="${e.id}">
-   <div><p class="meta">${esc(e.asig)} · ${esc(e.ex)}<span class="sep last"> · </span>${when(e)}</p><h3>${esc(e.tema)}</h3>${e.sim.webt?`<p class="meta">Simulacro: ${esc(e.sim.webt)}</p>`:""}</div>
-   <div class="actions">${btn("rep",e.rep,"main",e)}${btn("sim",e.sim,"alt",e)}</div>
-   ${m.length?`<details><summary aria-label="Más material de ${esc(e.asig)}, ${esc(e.ex)}: ${m.length}">Más material (${m.length})</summary><ul class="more">${m.map(([t,u])=>`<li><a href="${u}"><span>${esc(t)}</span><span class="kind">${/\.pdf$/i.test(u)?"PDF":"Web"}</span></a></li>`).join("")}</ul></details>`:""}
+  return `<article class="slide" id="${e.id}">
+   <div class="glass">${specimen(e)}<div class="label" aria-hidden="true"><span>${esc(LAB[e.asig]||e.asig)}</span><span class="num">${esc(e.ex.replace(" examen",""))}</span></div></div>
+   <div class="sheet">
+    <p class="meta">${esc(e.asig)} · ${esc(e.ex)} · ${when(e)}</p>
+    <h3>${esc(e.tema)}</h3>
+    ${e.sim.webt?`<p class="meta">Simulacro: ${esc(e.sim.webt)}</p>`:""}
+    <div class="actions">${btn("rep",e.rep,"main",e)}${btn("sim",e.sim,"alt",e)}</div>
+    ${m.length?`<details><summary aria-label="Más material de ${esc(e.asig)}, ${esc(e.ex)}: ${m.length}">Más material (${m.length})</summary><ul class="more">${m.map(([t,u])=>`<li><a href="${u}"><span>${esc(t)}</span><span class="kind">${/\.pdf$/i.test(u)?"PDF":"Web"}</span></a></li>`).join("")}</ul></details>`:""}
+   </div>
   </article>`}
-function group(title,list){return list.length?`<section class="group"><div class="group-h"><h2>${title}</h2><span class="count"><span aria-hidden="true">${list.length}</span><span class="sr-only">${list.length} ${list.length===1?"examen":"exámenes"}</span></span></div>${list.map(row).join("")}</section>`:""}
+function group(id,cls,title,list){return list.length?`<section class="chapter ${cls}" id="${id}"><div class="frame"><div class="chapter-h"><h2>${title}</h2><span class="count"><span aria-hidden="true">${list.length}</span><span class="sr-only">${list.length} ${list.length===1?"examen":"exámenes"}</span></span></div><div class="tray">${list.map(row).join("")}</div></div></section>`:""}
 
 let current=null;try{const c=sessionStorage.getItem("asig");if(asigs.includes(c))current=c}catch(_){}
 const list=document.getElementById("list"),filter=document.getElementById("filter");
 function render(){const f=a=>!current||a.asig===current;
-  list.innerHTML=group("Por preparar",toStudy.filter(f))+group("Ya pasados",past.filter(f));
+  list.innerHTML=group("preparar","todo","Por preparar",toStudy.filter(f))+group("pasados","done","Ya pasados",past.filter(f));
   filter.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String((b.dataset.a||null)===current)));
-  const n=list.querySelectorAll(".ex").length;document.getElementById("status").textContent=n+(n===1?" examen":" exámenes")+(current?" de "+current:"");
-  try{current?sessionStorage.setItem("asig",current):sessionStorage.removeItem("asig")}catch(_){}}
-filter.innerHTML=`<button type="button" data-a="">Todas</button>`+asigs.map(a=>`<button type="button" data-a="${esc(a)}">${esc(SHORT[a]||a)}</button>`).join("");
+  const n=list.querySelectorAll(".slide").length;document.getElementById("status").textContent=n+(n===1?" examen":" exámenes")+(current?" de "+current:"");
+  try{current?sessionStorage.setItem("asig",current):sessionStorage.removeItem("asig")}catch(_){}
+  window.revealSlides&&window.revealSlides()}
+filter.innerHTML=`<button type="button" data-a="">Todas</button>`+asigs.map(a=>{const col=EX.find(e=>e.asig===a).col;return `<button type="button" data-a="${esc(a)}" style="--c:${SW[col]}"><i aria-hidden="true"></i>${esc(SHORT[a]||a)}</button>`}).join("");
 filter.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;current=b.dataset.a||null;render()});
 render();
 // Un enlace directo a un examen quita el filtro si lo estaba ocultando
-addEventListener("hashchange",()=>{const id=location.hash.slice(1);if(id&&current&&!document.getElementById(id)){current=null;render();document.getElementById(id)?.scrollIntoView()}});
-if(location.hash&&!document.getElementById(location.hash.slice(1))){current=null;render();document.getElementById(location.hash.slice(1))?.scrollIntoView()}
+const showHash=()=>{const id=location.hash.slice(1);if(id&&current&&!document.getElementById(id)){current=null;render();document.getElementById(id)?.scrollIntoView()}};
+addEventListener("hashchange",showHash);showHash();
 
-// Campo de microscopio: células generadas con una semilla fija, igual en cada visita
-(function(){let s=20261030;const r=()=>(s=(s*1664525+1013904223)%4294967296)/4294967296;
-  let out="";const step=9.4;let row=0;
-  for(let y=-4;y<=104;y+=step*.86,row++)for(let x=-4+(row%2?step/2:0);x<=104;x+=step){
-    const cx=x+(r()-.5)*4.6,cy=y+(r()-.5)*4.6,a=(r()*180).toFixed(0),rx=(3.5+r()*1.7).toFixed(2),ry=(2.8+r()*1.3).toFixed(2),nr=(1.25+r()*.75).toFixed(2),dx=((r()-.5)*1.5).toFixed(2),dy=((r()-.5)*1.5).toFixed(2);
-    out+=`<g transform="translate(${cx.toFixed(2)} ${cy.toFixed(2)}) rotate(${a})"><ellipse class="c" rx="${rx}" ry="${ry}" opacity="${(.5+r()*.5).toFixed(2)}"/><circle class="n" cx="${dx}" cy="${dy}" r="${nr}" opacity="${(.72+r()*.28).toFixed(2)}"/></g>`}
-  document.getElementById("field").innerHTML=`<svg viewBox="0 0 100 100" focusable="false">${out}</svg>`})();
+/* La lente: el tejido se pinta una vez y cada fotograma solo copia un círculo ampliado */
+(function(){const hero=document.getElementById("hero"),cv=document.getElementById("lens"),ctx=cv.getContext("2d");
+  const still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let W,H,D,tissue,lx,ly,tx,ty,R,user=false,raf=0,visible=true,t=0,dead=false;
+  function paint(){D=Math.min(devicePixelRatio||1,2);W=hero.clientWidth;H=hero.clientHeight;cv.width=W*D;cv.height=H*D;
+    tissue=document.createElement("canvas");tissue.width=cv.width;tissue.height=cv.height;
+    const g=tissue.getContext("2d");g.fillStyle="#a92b5d";g.fillRect(0,0,cv.width,cv.height);
+    let s=20261030;const r=()=>(s=(s*1664525+1013904223)%4294967296)/4294967296;
+    const step=46*D;let row=0;
+    for(let y=-step;y<cv.height+step;y+=step*.84,row++)for(let x=-step+(row%2?step/2:0);x<cv.width+step;x+=step){
+      const cx=x+(r()-.5)*step*.5,cy=y+(r()-.5)*step*.5,a=r()*Math.PI,rx=step*(.36+r()*.2),ry=step*(.28+r()*.16);
+      g.fillStyle=["#c43a71","#b4305f","#cf4b7e","#9a2552"][Math.floor(r()*4)];g.beginPath();g.ellipse(cx,cy,rx,ry,a,0,7);g.fill();
+      g.fillStyle=r()>.82?"#170a44":"#2b1a78";g.beginPath();g.ellipse(cx+(r()-.5)*step*.14,cy+(r()-.5)*step*.14,step*(.11+r()*.08),step*(.1+r()*.07),a,0,7);g.fill();
+      if(r()>.7){g.fillStyle="rgba(255,190,215,.32)";g.beginPath();g.arc(cx-rx*.35,cy-ry*.3,step*.05,0,7);g.fill()}}
+    R=Math.max(90,Math.min(W,H)*.34);
+    if(lx===undefined){lx=tx=W*.72;ly=ty=H*.38}
+    draw()}
+  function draw(){const c=ctx;c.setTransform(1,0,0,1,0,0);
+    c.fillStyle="#21124f";c.fillRect(0,0,cv.width,cv.height);c.globalAlpha=.34;c.drawImage(tissue,0,0);c.globalAlpha=1;
+    const px=lx*D,py=ly*D,pr=R*D,z=1.7;
+    c.save();c.beginPath();c.arc(px,py,pr,0,7);c.clip();
+    c.translate(px,py);c.scale(z,z);c.translate(-px,-py);c.drawImage(tissue,0,0);c.restore();
+    const v=c.createRadialGradient(px,py,pr*.72,px,py,pr);v.addColorStop(0,"rgba(20,8,60,0)");v.addColorStop(1,"rgba(20,8,60,.62)");
+    c.fillStyle=v;c.beginPath();c.arc(px,py,pr,0,7);c.fill();
+    c.strokeStyle="rgba(255,255,255,.9)";c.lineWidth=2*D;c.beginPath();c.arc(px,py,pr,0,7);c.stroke()}
+  function tick(){raf=0;if(!visible||dead)return;t+=.0042;
+    if(!user){tx=W*(.66+.2*Math.sin(t*1.3));ty=H*(.38+.16*Math.sin(t*2.1))}
+    lx+=(tx-lx)*.09;ly+=(ty-ly)*.09;draw();raf=requestAnimationFrame(tick)}
+  const start=()=>{if(!still&&!raf&&visible)raf=requestAnimationFrame(tick)};
+  hero.addEventListener("pointermove",e=>{const b=hero.getBoundingClientRect();user=true;tx=e.clientX-b.left;ty=e.clientY-b.top;
+    if(still){lx=tx;ly=ty;draw()}});
+  hero.addEventListener("pointerleave",()=>{user=false});
+  new IntersectionObserver(([en])=>{visible=en.isIntersecting;start()}).observe(hero);
+  let rs;addEventListener("resize",()=>{clearTimeout(rs);rs=setTimeout(()=>{lx=lx*hero.clientWidth/W;ly=ly*hero.clientHeight/H;paint()},150)});
+  paint();start();window.heroLens={stop(){dead=true;cv.hidden=true},resume(){dead=false;cv.hidden=false;paint();start()},grow(from){const end=R;R=from;return{get r(){return R},set r(v){R=v;if(still)draw()},end}}}})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+<script>
+/* Hélice de portaobjetos en 3D: uno por examen, con su muestra. Si no hay WebGL se queda la lente 2D */
+(function(){if(!window.THREE)return;
+  const hero=document.getElementById("hero"),cv=document.getElementById("stage"),tip=document.getElementById("tip");
+  let gl;try{gl=new THREE.WebGLRenderer({canvas:cv,antialias:true,powerPreference:"high-performance"})}catch(_){return}
+  const still=matchMedia("(prefers-reduced-motion: reduce)").matches,small=innerWidth<680;
+  cv.hidden=false;heroLens.stop();
+  gl.setPixelRatio(Math.min(devicePixelRatio||1,small?1.5:2));
+  const bg=getComputedStyle(document.documentElement).getPropertyValue("--hema").trim()||"#21124f";
+  const scene=new THREE.Scene();scene.background=new THREE.Color(bg);scene.fog=new THREE.Fog(bg,10,30);
+  const cam=new THREE.PerspectiveCamera(38,1,.1,70);
+  scene.add(new THREE.AmbientLight(0xffffff,.95));
+  const key=new THREE.DirectionalLight(0xffffff,2.2);key.position.set(5,8,9);scene.add(key);
+  const rim=new THREE.PointLight(0xff4d8d,70,30);rim.position.set(-7,-3,5);scene.add(rim);
+
+  // Células: dos mallas instanciadas para citoplasma y núcleo
+  const N=small?90:260,sph=new THREE.SphereGeometry(1,18,14),sph2=new THREE.SphereGeometry(1,12,10);
+  const cyt=new THREE.InstancedMesh(sph,new THREE.MeshStandardMaterial({roughness:.3,transparent:true,opacity:.5,depthWrite:false}),N);
+  const nuc=new THREE.InstancedMesh(sph2,new THREE.MeshStandardMaterial({color:0x4a2fc0,emissive:0x2a1a8a,emissiveIntensity:.8,roughness:.42}),N);
+  const m=new THREE.Object3D(),col=new THREE.Color(),P=["#ee4d84","#d93a72","#f27aa3","#b82f66"];let s=20261030;const r=()=>(s=(s*1664525+1013904223)%4294967296)/4294967296;
+  for(let i=0;i<N;i++){const x=(r()-.5)*34,y=(r()-.5)*20,z=-24+r()*22,k=.42+r()*.62;
+    m.position.set(x,y,z);m.rotation.set(r()*3,r()*3,r()*3);m.scale.set(k,k*(.72+r()*.28),k*(.72+r()*.28));m.updateMatrix();cyt.setMatrixAt(i,m.matrix);cyt.setColorAt(i,col.set(P[i%4]));
+    m.scale.set(k*.36,k*.3,k*.34);m.updateMatrix();nuc.setMatrixAt(i,m.matrix)}
+  const cells=new THREE.Group();cells.add(cyt,nuc);scene.add(cells);
+
+  // Portaobjetos: textura con etiqueta y muestra, vidrio encima y canto brillante
+  const helix=new THREE.Group();scene.add(helix);const slides=[];const ORDER=[...toStudy,...past];
+  const SW3=2.9,SH3=.96,stepA=.82,stepY=.6;
+  function texture(e){const c=document.createElement("canvas");c.width=768;c.height=256;const x=c.getContext("2d");x.fillStyle="#f4eff7";x.fillRect(0,0,768,256);
+    const tx=new THREE.CanvasTexture(c);tx.colorSpace=THREE.SRGBColorSpace;tx.anisotropy=4;
+    const label=()=>{x.fillStyle="#f7f4ec";x.fillRect(0,0,226,256);x.fillStyle="rgba(0,0,0,.14)";x.fillRect(226,0,2,256);
+      x.fillStyle="#26205f";x.font='700 54px Caveat,cursive';x.fillText(LAB[e.asig]||e.asig,20,112);x.fillStyle="#c22a5e";x.font='700 50px Caveat,cursive';x.fillText(e.ex.replace(" examen",""),20,172);tx.needsUpdate=true};
+    const im=new Image();im.onload=()=>{const k=Math.max(542/im.width,256/im.height);x.drawImage(im,226+(542-im.width*k)/2,(256-im.height*k)/2,im.width*k,im.height*k);label()};im.onerror=label;
+    im.width=840;im.height=240;im.src="data:image/svg+xml,"+encodeURIComponent(specimen(e).replace("<svg ",'<svg xmlns="http://www.w3.org/2000/svg" width="840" height="240" '));
+    return tx}
+  const glassG=new THREE.BoxGeometry(SW3,SH3,.07),planeG=new THREE.PlaneGeometry(SW3*.985,SH3*.96),edgeG=new THREE.EdgesGeometry(glassG);
+  const glassM=new THREE.MeshPhysicalMaterial({color:0xffffff,transparent:true,opacity:.2,roughness:.06,clearcoat:1,depthWrite:false}),edgeM=new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:.75});
+  function build(){ORDER.forEach((e,i)=>{const a=i*stepA,g=new THREE.Group(),y=(ORDER.length-1)/2*stepY-i*stepY;
+      g.position.set(Math.cos(a)*2.55,y,Math.sin(a)*2.55);g.rotation.y=Math.PI/2-a;
+      const map=texture(e),plane=new THREE.Mesh(planeG,new THREE.MeshStandardMaterial({map,emissive:0xffffff,emissiveMap:map,emissiveIntensity:.3,roughness:.28,side:THREE.DoubleSide}));
+      plane.userData.i=i;g.add(plane,new THREE.Mesh(glassG,glassM),new THREE.LineSegments(edgeG,edgeM));g.userData={e,base:g.position.clone(),lift:0,target:0};helix.add(g);slides.push(g)})}
+  (document.fonts&&document.fonts.load?document.fonts.load('700 54px Caveat').catch(()=>{}):Promise.resolve()).then(()=>{build();if(still)frame()});
+
+  let W=1,H=1,mx=0,my=0,cx=0,cy=0,raf=0,seen=true,hot=null,spin=0;const t0=performance.now();
+  function fit(){W=hero.clientWidth;H=hero.clientHeight;gl.setSize(W,H,false);cam.aspect=W/H;cam.updateProjectionMatrix();
+    const narrow=W/H<1.05;helix.scale.setScalar(narrow?.5:.82);helix.position.set(narrow?0:W/H*2.2,narrow?2.05:.5,0);if(still)frame()}
+  const ray=new THREE.Raycaster(),ndc=new THREE.Vector2();
+  function pick(e){const b=hero.getBoundingClientRect();ndc.set((e.clientX-b.left)/W*2-1,-((e.clientY-b.top)/H)*2+1);ray.setFromCamera(ndc,cam);
+    const h=ray.intersectObjects(slides.map(g=>g.children[0]));return h.length?slides[h[0].object.userData.i]:null}
+  hero.addEventListener("pointermove",e=>{const b=hero.getBoundingClientRect();mx=(e.clientX-b.left)/W*2-1;my=(e.clientY-b.top)/H*2-1;
+    if(e.pointerType==="touch")return;const g=pick(e);if(g!==hot){if(hot)hot.userData.target=0;hot=g;if(g)g.userData.target=1;cv.classList.toggle("hot",!!g);hero.style.cursor=g?"pointer":""}
+    if(g){const d=g.userData.e;tip.innerHTML=`<b>${esc(d.asig)} · ${esc(d.ex)}</b>${esc(d.tema)}`;tip.hidden=false;tip.style.transform=`translate(${Math.min(e.clientX-b.left+16,W-296)}px,${e.clientY-b.top+16}px)`}else tip.hidden=true;
+    if(still)frame()});
+  hero.addEventListener("pointerleave",()=>{mx=my=0;if(hot)hot.userData.target=0;hot=null;tip.hidden=true});
+  hero.addEventListener("click",e=>{if(e.target.closest("a"))return;const g=hot||pick(e);if(!g)return;const id=g.userData.e.id;current=null;render();history.replaceState(null,"","#"+id);const el=document.getElementById(id);el&&scrollTo({top:scrollY+el.getBoundingClientRect().top-(innerWidth>680?76:16)})});
+  function frame(){const now=performance.now(),i=still?1:Math.min((now-t0)/1500,1),ease=1-Math.pow(1-i,4);
+    const b=hero.getBoundingClientRect(),p=Math.max(0,Math.min(1,-b.top/Math.max(b.height,1)));
+    if(!still)spin+=hot?.0007:.0032;cx+=(mx-cx)*.06;cy+=(my-cy)*.06;
+    helix.rotation.y=spin+(1-ease)*-2.6+p*2.4+cx*.5;helix.rotation.x=cy*.12;
+    slides.forEach(g=>{const u=g.userData;u.lift+=(u.target-u.lift)*.16;const k=1+u.lift*.42;g.scale.setScalar(k*ease);
+      g.position.copy(u.base).multiplyScalar(1+u.lift*.18)});
+    cells.rotation.y=now*.000018+cx*.05;cells.rotation.x=cy*.03;cells.position.y=p*2;
+    cam.position.set(cx*.5,-cy*.25-p*.8,11.5-p*5);cam.lookAt(0,0,-2);gl.render(scene,cam)}
+  function tick(){raf=0;if(!seen)return;frame();raf=requestAnimationFrame(tick)}
+  const go=()=>{if(!still&&!raf&&seen)raf=requestAnimationFrame(tick)};
+  new IntersectionObserver(([en])=>{seen=en.isIntersecting;go()}).observe(hero);
+  let rs;addEventListener("resize",()=>{clearTimeout(rs);rs=setTimeout(fit,120)});
+  cv.addEventListener("webglcontextlost",ev=>{ev.preventDefault();seen=false;cv.hidden=true;tip.hidden=true;heroLens.resume()});
+  fit();frame();go();
+  if(still)addEventListener("scroll",()=>requestAnimationFrame(frame),{passive:true});
+  window.hero3D={slides,pick}})();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
-// El contenido ya es visible sin GSAP; la animación solo se añade si la librería carga pronto y el movimiento está permitido
-if(window.gsap&&performance.now()<800&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
-  gsap.from("#field svg",{filter:"blur(9px)",scale:1.16,duration:1.7,ease:"power2.out",clearProps:"filter,transform"});
-  gsap.from(".hero h1, .place, .summary",{y:10,opacity:0,duration:.7,ease:"power2.out",stagger:.07,clearProps:"all"});
+// Todo es visible sin GSAP; la animación solo se añade si la librería carga pronto y el movimiento está permitido
+if(window.gsap&&window.ScrollTrigger&&performance.now()<1200&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
+  gsap.registerPlugin(ScrollTrigger);
+  const l=heroLens.grow(20);gsap.to(l,{r:l.end,duration:1.3,ease:"power3.out"});
+  gsap.from("h1",{yPercent:14,duration:.9,ease:"power3.out"});
+  // Los portaobjetos salen de la caja al entrar en pantalla, solo la primera vez
+  window.revealSlides=()=>{ScrollTrigger.getAll().forEach(s=>s.kill());
+    ScrollTrigger.batch(".slide",{start:"top 94%",once:true,onEnter:b=>gsap.fromTo(b,{y:34,rotate:-1.2,opacity:0},{y:0,rotate:0,opacity:1,duration:.55,ease:"power3.out",stagger:.06,clearProps:"transform,opacity"})})};
+  revealSlides();
 }
 </script>
 </body>
