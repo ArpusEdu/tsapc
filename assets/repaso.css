@@ -176,3 +176,6 @@ pre{overflow-x:auto;max-width:100%}
 .dl.bll .dn,.dl.b10 .dn{background:#8a5f00;color:#fff}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dl.nave{color:#4fd1c5;background:#14322e}}
 :root[data-theme="dark"] .dl.nave{color:#4fd1c5;background:#14322e}
+
+/* Logo junto al enlace de volver */
+.mc-back:not(.mc-float)::before{content:"";width:30px;height:30px;flex:none;margin-right:2px;background:url(logo.svg) center/contain no-repeat}

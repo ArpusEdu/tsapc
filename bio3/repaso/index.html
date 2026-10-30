@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="es" data-unit="bio3">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:30;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
+(function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
+<title>Bio 3 · Ácidos nucleicos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-192.png">
+<meta name="theme-color" content="#21124f">
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@700&display=swap">
+<style>
+:root{
+  --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
+  --accent:#7a1f3d; --accent-ink:#ffffff; --blk:#7a1f3d; --blk-ink:#ffffff;
+  --lv1:#d3264a; --lv1-soft:#fdebef; --lv2:#d9730a; --lv2-soft:#fdf1e3; --lv3:#2c6bd2; --lv3-soft:#e8effc;
+  --def-soft:#f1eef7; --und-soft:#eaf6ef; --und:#1d6a44; --tip-soft:#fff4d6; --tip:#7a5000; --q:#7a1f3d; --q-soft:#fbf0f4;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);line-height:1.55}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:1.25em}
+li{margin:2px 0}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.wrap>*{min-width:0}
+/* cabecera */
+.top{padding:6px 0 0}
+.eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+.top h1{font-size:1.85em;line-height:1.1;margin:6px 0 4px}
+.sub{color:var(--muted);margin:0 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;border-radius:999px;padding:3px 9px;color:#fff;white-space:nowrap}
+.tag.lv1{background:var(--lv1)} .tag.lv2{background:var(--lv2)} .tag.lv3{background:var(--lv3)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag{color:#16121c}}
+:root[data-theme="dark"] .tag{color:#16121c}
+.meta{color:var(--muted)}
+/* cómo estudiar */
+.how{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.how>summary{cursor:pointer;font-weight:700;padding:12px 14px;font-family:var(--f-display)}
+.how-b{padding:0 14px 12px;font-size:.93em}
+/* índice */
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.toc .xs-h{margin:0 0 8px;border:0;padding:0}
+.toc-l{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.toc-l li{margin:0}
+.toc-b{display:block;font-weight:700;color:var(--ink);text-decoration:none}
+.toc-b span{font-family:var(--f-mono);font-size:.72em;color:var(--accent);margin-right:4px;text-transform:uppercase}
+.toc-c{display:block;font-size:.8em;color:var(--muted);line-height:1.45}
+.toc-c a{color:var(--muted);text-decoration:none}
+.toc-c a.i1{color:var(--lv1);font-weight:700}
+/* bloques */
+.blk{display:flex;flex-direction:column;gap:12px;scroll-margin-top:var(--bar,0px)}
+.blk-h{display:grid;gap:2px;background:var(--blk);color:var(--blk-ink);border-radius:12px;padding:14px 44px 14px 14px;position:relative;font-family:var(--f-body)}
+.blk-h .bn{font-family:var(--f-mono);font-size:.62em;letter-spacing:.1em;opacity:.9;font-weight:500}
+.blk-h .bt{font-family:var(--f-display);font-size:1.15em;font-weight:800;line-height:1.15}
+.blk-h .bc{font-size:.66em;font-weight:400;opacity:.95}
+/* concepto */
+.cpt{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lv2);border-radius:12px;padding:12px 14px 14px;scroll-margin-top:var(--bar,0px);min-width:0}
+.cpt.lv1{border-left-color:var(--lv1)} .cpt.lv3{border-left-color:var(--lv3)}
+.c-h{display:flex;gap:10px;align-items:flex-start}
+.c-n{flex:none;font-family:var(--f-mono);font-weight:500;font-size:.85em;min-width:2em;height:2em;border-radius:8px;display:grid;place-items:center;background:var(--soft);color:var(--muted);margin-top:1px}
+.lv1 .c-n{background:var(--lv1-soft);color:var(--lv1)} .lv2 .c-n{background:var(--lv2-soft);color:var(--lv2)} .lv3 .c-n{background:var(--lv3-soft);color:var(--lv3)}
+.c-h h3{font-size:1.15em;line-height:1.25}
+.c-h .note{display:block;font-family:var(--f-body);font-weight:400;font-size:.72em;color:var(--muted);margin-top:2px}
+.c-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:8px 0 10px}
+.srcl{font-size:.8em;color:var(--muted)}
+.c-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.c-body>*{min-width:0;max-width:100%}
+.lbl{font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.prof{color:var(--accent);margin-bottom:-6px}
+.prof-t>:first-child{margin-top:0}
+.defs{background:var(--def-soft);border-radius:10px;padding:9px 11px;font-size:.88em}
+.defs ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.defs li{display:flex;flex-direction:column;gap:4px}
+.term{font-size:1.05em}
+.fd{border-radius:8px;padding:6px 9px;line-height:1.45}
+.fd .fl{display:block;font-family:var(--f-mono);font-size:.72em;font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.fd.easy{background:var(--surface)} .fd.easy .fl{color:var(--und)}
+.fd.ok{background:var(--surface);border-left:4px solid var(--accent);font-weight:700} .fd.ok .fl{color:var(--accent)}
+.fd.no{background:transparent;color:var(--muted);font-size:.92em;padding-top:0;padding-bottom:0} .fd.no .fl{color:var(--lv2)}
+.box{border-radius:10px;padding:9px 11px;font-size:.94em}
+.box>p:last-child,.box>ul:last-child{margin-bottom:0}
+.box .lbl{margin-bottom:2px}
+.und{background:var(--und-soft)} .und .lbl{color:var(--und)}
+.tip{background:var(--tip-soft)} .tip .lbl{color:var(--tip)}
+.q{background:var(--q-soft);border:1.5px dashed var(--q)} .q .lbl{color:var(--q)}
+.qt{font-weight:700;margin:2px 0}
+.qt em{font-style:normal}
+.dom{display:inline-flex;gap:7px;align-items:center;font-size:.9em;color:var(--muted);margin-top:6px;cursor:pointer}
+.dom input{width:19px;height:19px;accent-color:var(--und)}
+.cpt.done .c-n::after{content:"✓";margin-left:2px;color:var(--und)}
+.tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86em}
+th,td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+figure{margin:0;text-align:center}
+figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.76em;color:var(--muted);margin-top:3px}
+/* extras */
+.xs{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0;scroll-margin-top:var(--bar,0px)}
+.xs-h{font-size:1.25em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:4px;margin:0 0 10px}
+.ih{font-size:1em;margin:14px 0 6px}
+.pq{border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px;background:var(--soft)}
+.pq summary,.pqq{cursor:pointer;font-weight:700;margin:0}
+.pq[open] summary{margin-bottom:6px}
+.pn{font-family:var(--f-mono);font-size:.78em;color:var(--accent);margin-right:2px}
+.pa>:first-child{margin-top:0}.pa>:last-child{margin-bottom:0}
+.ref{font-size:.8em;color:var(--muted);white-space:nowrap}
+a{color:var(--accent)}
+#llave{background:#fff4d6;border:2px solid #b07a00;border-radius:16px;padding:14px}#llave .xs-h{color:#fff;background:#b07a00;border-radius:10px;padding:10px 12px;border:0}#llave .pq{border-left:5px solid #b07a00}#llave .pn{background:#b07a00;color:#fff}.dl.bll{display:flex;align-items:center;gap:10px;margin-top:6px;background:#fff4d6;border-radius:10px;color:#8a5f00;font-weight:700}.dl.bll .dn{background:#b07a00;color:#fff}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #llave{background:#33270a;border-color:#ffc94d}:root:not([data-theme="light"]) #llave .xs-h,:root:not([data-theme="light"]) #llave .pn{background:#ffc94d;color:#33270a}:root:not([data-theme="light"]) .dl.bll{background:#33270a;color:#ffc94d}}.gal{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.gal figure{margin:0;flex:1 1 140px;max-width:100%}.gal img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}.gal figcaption{font-size:.8em;color:var(--muted)}pre{overflow-x:auto;max-width:100%;font-size:.8em;background:var(--soft);padding:8px;border-radius:8px}
+body{font-size:17px}
+.wrap{padding-block:14px 60px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.bar{position:relative;z-index:5;border-radius:12px;border:1px solid var(--line);background:var(--surface);border-bottom:1px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.row{display:flex;gap:8px;align-items:center;min-width:0}
+.row select,.row input[type=search]{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0;flex:1}
+.mode{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.mode button{font:inherit;font-size:13px;border:0;background:var(--surface);color:var(--ink);padding:6px 10px;cursor:pointer}
+.mode button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;min-width:0}
+.chip{font:inherit;font-size:13px;white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chip.c1[aria-pressed="true"]{background:var(--lv1);border-color:var(--lv1);color:#fff}
+.chip.c2[aria-pressed="true"]{background:var(--lv2);border-color:var(--lv2);color:#fff}
+.chip.c3[aria-pressed="true"]{background:var(--lv3);border-color:var(--lv3);color:#fff}
+.prog{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;font-variant-numeric:tabular-nums}
+.pbar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}.pbar i{display:block;height:100%;width:0;background:var(--und)}
+.blk-h{cursor:pointer;user-select:none}
+.blk-h::after{content:"▾";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.1em;transition:transform .2s}
+.blk.open .blk-h::after{transform:translateY(-50%) rotate(180deg)}
+.blk:not(.open) .cpt{display:none}
+.blk[hidden],.cpt[hidden]{display:none!important}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tbtn{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 11px;cursor:pointer}
+.show{display:none;font:inherit;font-weight:700;font-size:14px;border:1.5px solid var(--q);color:var(--q);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;margin-top:6px;margin-right:8px}
+body.test .show{display:inline-block}
+body.test .cpt:not(.reveal) .c-body>:not(.q){display:none}
+body.test .cpt:not(.reveal) .c-body{gap:0}
+.hidebtn{font:inherit;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer}
+.hidebtn .sw{flex:none;width:40px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.hidebtn .sw i{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--surface);transition:left .2s}
+.hidebtn[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.hidebtn[aria-pressed="true"] .sw{background:var(--lv1)}
+.hidebtn[aria-pressed="true"] .sw i{left:21px}
+body.hidedefs .fd.easy,body.hidedefs .fd.ok{position:relative;cursor:pointer;color:transparent;user-select:none}
+body.hidedefs .fd.easy *,body.hidedefs .fd.ok *{color:transparent!important;border-color:transparent}
+body.hidedefs .fd.easy:not(.peek)::after,body.hidedefs .fd.ok:not(.peek)::after{content:"👆 Toca para ver";position:absolute;inset:0;display:grid;place-items:center;border-radius:8px;background:repeating-linear-gradient(135deg,var(--soft) 0 10px,var(--line) 10px 20px);color:var(--muted);font-family:var(--f-mono);font-size:.78em;font-weight:500;letter-spacing:.04em;padding:0 12px;text-align:center}
+body.hidedefs .fd.ok:not(.peek)::after{content:"📌 ¿Cuál es la definición de la diapositiva? · toca para ver"}
+body.hidedefs .fd.easy:not(.peek)::after{content:"💡 ¿Qué significa? · toca para ver"}
+body.hidedefs .fd.peek,body.hidedefs .fd.peek *{color:inherit!important;user-select:auto}
+body.hidedefs .fd.peek{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.hidebtn .sw,.hidebtn .sw i{transition:none}}
+.empty{color:var(--muted);text-align:center;padding:20px}
+.chip:focus-visible,.mode button:focus-visible,.show:focus-visible,.tbtn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.blk-h:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+[hidden]{display:none!important}
+.fab.hf{bottom:calc(78px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);padding:10px 14px 10px 10px}
+.fab.hf .sw{flex:none;width:36px;height:20px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.fab.hf .sw i{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.3);transition:left .2s}
+.fab.hf[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.fab.hf[aria-pressed="true"] .sw{background:var(--lv1)}
+.fab.hf[aria-pressed="true"] .sw i{left:18px}
+.res{border:1px solid var(--line);border-radius:10px;background:var(--surface);max-height:60vh;overflow:auto}
+.res .rh{position:sticky;top:0;background:var(--soft);font-family:var(--f-mono);font-size:12px;color:var(--muted);padding:7px 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.res .rh button{font:inherit;border:0;background:none;color:var(--accent);cursor:pointer;padding:0}
+.ri{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 10px;color:var(--ink);cursor:pointer}
+.ri:last-child{border-bottom:0}
+.ri:hover,.ri:focus-visible{background:var(--soft)}
+.ri .rk{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.ri .rt{display:block;font-weight:700;line-height:1.25}
+.ri .rs{display:block;font-size:.85em;color:var(--muted);line-height:1.35;margin-top:2px}
+.res mark,.hl mark{background:#ffe066;color:#1d1828;border-radius:3px;padding:0 1px}
+.res .none{padding:12px 10px;color:var(--muted)}
+.flash{animation:fl 2.2s ease}
+@keyframes fl{0%,40%{box-shadow:0 0 0 4px #ffe066}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none;outline:3px solid #ffe066}}
+.simlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:11px 14px;font-size:.95em}
+.simlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+a.dt{text-decoration:none;display:inline-flex;align-items:center}
+.dc.full{color:var(--und);font-weight:700}
+/* ===== Mi plan ===== */
+#planOv{position:fixed;inset:0;z-index:55;background:var(--bg);overflow:auto;--ok:var(--und);--ok-soft:var(--und-soft);--warn:var(--tip);--warn-soft:var(--tip-soft);--rev:var(--lv3);--rev-soft:var(--lv3-soft)}
+#planOv .pwrap{max-width:720px;margin:0 auto;padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+#planOv .ptop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+#planOv .px{flex:none;font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.planlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px solid var(--accent);border-radius:12px;padding:11px 14px;font:inherit;font-size:.95em;width:100%;text-align:left;cursor:pointer}
+.planlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+#planOv .eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+#planOv h1{font-size:1.9em;line-height:1.08;margin:4px 0 4px}
+#planOv .sub{color:var(--muted);margin:0}
+#planOv .count{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#planOv .count .n{font-family:var(--f-display);font-weight:800;font-size:2.4em;line-height:1;color:var(--lv1);font-variant-numeric:tabular-nums;min-width:1.4ch;text-align:center}
+#planOv .count p{margin:0}
+#planOv .k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+#planOv .cfg{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+#planOv .days{display:flex;flex-wrap:wrap;gap:6px}
+#planOv .dchip{font:inherit;font-weight:700;font-size:15px;min-width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+#planOv .dchip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#planOv .seg{display:flex;gap:6px;flex-wrap:wrap}
+#planOv .seg button{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:7px 12px;cursor:pointer}
+#planOv .seg button[aria-pressed="true"]{border-color:var(--accent);font-weight:700;background:var(--surface)}
+#planOv .note{font-size:.9em;border-radius:10px;padding:9px 11px}
+#planOv .note.warn{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn)}
+#planOv .note.ok{background:var(--ok-soft);border-left:4px solid var(--ok)}
+#planOv .day{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#planOv .day-h{padding:12px 14px 10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+#planOv .day-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+#planOv .day-h h2{font-size:1.3em}
+#planOv .day-h .when{font-family:var(--f-mono);font-size:.75em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+#planOv .day-h .goal{font-size:.92em;color:var(--muted);margin:0}
+#planOv .times{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.9em;color:var(--muted)}
+#planOv .times input{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:4px 6px}
+#planOv .dprog{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+#planOv .dprog i{display:block;height:100%;background:var(--ok);width:0}
+#planOv .badge{font-family:var(--f-mono);font-size:.7em;border-radius:999px;padding:2px 8px;white-space:nowrap}
+#planOv .badge.today{background:var(--accent);color:var(--accent-ink)}
+#planOv .badge.done{background:var(--ok-soft);color:var(--ok)}
+#planOv .tasks{list-style:none;margin:0;padding:6px 8px 10px}
+#planOv .task{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding:9px 6px;border-radius:10px;align-items:start}
+#planOv .task+.task{border-top:1px solid var(--line)}
+#planOv .task input{width:22px;height:22px;margin-top:2px;accent-color:var(--ok)}
+#planOv .t-time{font-family:var(--f-mono);font-size:.75em;color:var(--muted);font-variant-numeric:tabular-nums}
+#planOv .t-title{font-weight:700;line-height:1.3}
+#planOv .t-det{font-size:.88em;color:var(--muted);line-height:1.4;margin-top:2px}
+#planOv .t-det b{color:var(--ink)}
+#planOv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 3px 0 0;transform:translateY(-1px)}
+#planOv .d1{background:var(--lv1)}
+#planOv .d2{background:var(--lv2)}
+#planOv .d3{background:var(--lv3)}
+#planOv .t-go{display:inline-block;margin-top:6px;font-size:.85em;font-weight:700;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);border-radius:8px;padding:4px 10px}
+#planOv .task.brk{grid-template-columns:1fr;padding:5px 6px;color:var(--muted);font-size:.88em}
+#planOv .task.brk .t-title{font-weight:400}
+#planOv .task.rev .t-title{color:var(--rev)}
+#planOv .task.done .t-title,#planOv .task.done .t-det{text-decoration:line-through;opacity:.55}
+#planOv .foot{color:var(--muted);font-size:.85em}
+#planOv .dchip:focus-visible,#planOv .seg button:focus-visible,#planOv .t-go:focus-visible,#planOv input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* ===== Temporizador ===== */
+.tmr{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.blk:not(.open) .tmr{display:none}
+.tmr p{margin:0;font-size:.92em}
+.tmr .tm-done{color:var(--und);font-weight:700}
+.tmr button{font:inherit;font-weight:800;font-size:15px;border:0;border-radius:10px;padding:9px 14px;background:var(--accent);color:var(--accent-ink);cursor:pointer;white-space:nowrap}
+.tpill{position:fixed;z-index:30;left:50%;transform:translateX(-50%);top:calc(8px + env(safe-area-inset-top,0px));width:min(440px,calc(100vw - 24px));background:var(--ink);color:var(--surface);border-radius:16px;padding:9px 10px 9px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tpill .tp-txt{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.15}
+.tpill .tp-b{font-size:.75em;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tpill .tp-t{font-family:var(--f-mono);font-size:1.6em;font-weight:500;font-variant-numeric:tabular-nums}
+.tpill.over .tp-t{color:var(--lv1)}
+.tpill .tp-bar{position:absolute;left:12px;right:12px;bottom:4px;height:3px;border-radius:2px;background:rgba(127,127,127,.35);overflow:hidden}
+.tpill .tp-bar i{display:block;height:100%;background:var(--und);width:0}
+.tpill.over .tp-bar i{background:var(--lv1)}
+.tpill button{flex:none;font:inherit;font-weight:800;font-size:14px;border:0;border-radius:10px;padding:8px 11px;cursor:pointer;background:var(--surface);color:var(--ink)}
+.tpill button.fin{background:var(--und);color:var(--surface)}
+.tpill button.x{background:transparent;color:var(--surface);opacity:.7;padding:8px 6px;font-size:18px;line-height:1}
+/* ===== Leyenda desplegable ===== */
+.top .legend .tag{cursor:pointer;border:0;font:inherit;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;padding:5px 10px}
+.top .legend .tag::after{content:" ▾";display:inline-block;transition:transform .2s}
+.top .legend .tag[aria-expanded="true"]::after{transform:rotate(180deg)}
+.top .legend .tag[aria-expanded="true"]{outline:3px solid var(--line);outline-offset:1px}
+.lvpanel{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lc);border-radius:12px;padding:10px 12px;max-height:60vh;overflow:auto}
+.lvpanel h4{margin:0 0 6px;font-family:var(--f-display);font-size:1em}
+.lvpanel .lg{font-family:var(--f-mono);font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 2px}
+.lvpanel a{display:block;color:var(--ink);text-decoration:none;padding:6px 4px;border-radius:8px;font-size:.92em;line-height:1.3}
+.lvpanel a:hover{background:var(--soft)}
+.lvpanel a b{font-family:var(--f-mono);font-weight:500;color:var(--lc);margin-right:4px}
+.lvpanel a.ok{opacity:.55}.lvpanel a.ok::after{content:" ✓";color:var(--und)}
+/* ===== Índice lateral ===== */
+.drw{overflow:hidden;visibility:hidden;position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease,visibility 0s linear .25s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
+.drw.on{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
+.scrim{position:fixed;inset:0;z-index:35;background:rgba(10,8,14,.45)}
+.drw-h{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 8px;font-family:var(--f-display);font-size:1.15em}
+.drw-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;width:38px;height:38px;cursor:pointer}
+.drw-tools{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;border-bottom:1px solid var(--line)}
+.dt{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:8px;padding:7px 9px;cursor:pointer;white-space:nowrap}
+.dt.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.drw-l{overflow:auto;flex:1;padding:8px 8px 24px;display:flex;flex-direction:column;gap:2px}
+.db summary{list-style:none;display:flex;align-items:center;gap:10px;padding:9px 8px;border-radius:10px;cursor:pointer;font-weight:700}
+.db summary::-webkit-details-marker{display:none}
+.db summary:hover,.db[open] summary{background:var(--soft)}
+.dn{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-family:var(--f-mono);font-size:.78em}
+.dt2{flex:1;line-height:1.25}
+.dc{font-family:var(--f-mono);font-size:.72em;color:var(--muted);font-weight:500}
+.db summary::after{content:"▾";color:var(--muted);transition:transform .2s}
+.db[open] summary::after{transform:rotate(180deg)}
+.dl,.dbk{display:flex;align-items:baseline;gap:8px;padding:6px 8px 6px 44px;color:var(--ink);text-decoration:none;font-size:.9em;line-height:1.3;border-radius:8px}
+.dl:hover,.dbk:hover{background:var(--soft)}
+.dbk{color:var(--accent);font-weight:700;font-size:.82em}
+.dl i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--lv2);transform:translateY(-1px)}
+.dl.i1 i{background:var(--lv1)} .dl.i3 i{background:var(--lv3)}
+.dx{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:14px 8px 4px}
+.drw-l>.dl{padding-left:12px}
+.fab.idx{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--ink);color:var(--surface)}
+.fab.up{bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+@media (min-width:1100px){
+  .drw{transform:none;box-shadow:none;visibility:visible}
+  .scrim,.fab.idx,.drw-x{display:none!important}
+  .wrap{margin-left:max(360px,calc((100vw - 760px)/2))}
+  .fab.up{left:calc(356px + 16px);bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){.drw{transition:none}}
+
+/* ===== Tarjetas ===== */
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;font:inherit;font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 18px;background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.fab.up{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:13px 16px}
+.tbtn.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.fc{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.fc-in{max-width:620px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+.fc-top{display:flex;align-items:center;gap:10px}
+.fc-top h2{font-size:1.15em;flex:1}
+.fc-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.fc-setup{display:flex;flex-direction:column;gap:12px;overflow:auto}
+.fc-setup .lbl{margin:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:9px 12px;cursor:pointer;text-align:left}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--q-soft);font-weight:700}
+.opt small{display:block;font-size:.8em;color:var(--muted);font-weight:400}
+.go{font:inherit;font-weight:800;font-size:17px;border:0;border-radius:12px;padding:14px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.go:disabled{opacity:.45;cursor:default}
+#fcGo{position:sticky;bottom:0;box-shadow:0 -8px 16px var(--bg)}
+.fc-prog{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fc-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;display:flex}
+.fc-bar .g{background:var(--und)} .fc-bar .r{background:var(--lv1)}
+.stage{flex:1;min-height:0;perspective:1400px}
+.card3{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.3,.7,.3,1);cursor:pointer}
+.card3.flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;padding:18px;overflow:hidden}
+.face.front{border-top:8px solid var(--cc,var(--accent));justify-content:center;text-align:center;gap:14px}
+.face.back{transform:rotateY(180deg);border-top:8px solid var(--und)}
+.face .kind{font-family:var(--f-mono);font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.face.front .qq{font-family:var(--f-display);font-size:1.45em;font-weight:800;line-height:1.2;text-wrap:balance}
+.face .hint{color:var(--muted);font-size:.85em}
+.bulb{font-size:2.4em;line-height:1;filter:grayscale(1) opacity(.5);transition:filter .3s}
+.card3.flip .bulb{filter:none}
+.face.back .ans{overflow:auto;flex:1;min-height:0;font-size:.98em}
+.face.back .ans>:first-child{margin-top:0}
+.face.back .ans .formal{font-weight:700;font-size:1.15em;border-left:4px solid var(--accent);padding-left:10px}
+.face.back .src{font-size:.78em;color:var(--muted);margin-top:8px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btns button{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px 8px;cursor:pointer}
+.b-no{background:var(--lv1-soft);color:var(--lv1)} .b-si{background:var(--und-soft);color:var(--und)}
+.btns button:disabled{opacity:.35;cursor:default}
+.flipb{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px;background:var(--ink);color:var(--surface);cursor:pointer}
+.fc-end{display:flex;flex-direction:column;gap:12px;align-items:stretch;text-align:center;overflow:auto}
+.fc-end .score{font-family:var(--f-display);font-size:3.2em;font-weight:800;line-height:1}
+@media (prefers-reduced-motion:reduce){.card3{transition:none}}
+</style>
+<link rel="stylesheet" href="../../assets/repaso.css">
+<link rel="stylesheet" href="../../assets/unidades.css">
+<div class="wrap">
+<header class="top"><p class="eyebrow">🧬 Biología Molecular · 3er examen</p>
+<h1>Repaso completo: ácidos nucleicos y enzimas asociadas</h1>
+<p class="sub">Tema 4 · 61 diapositivas + preguntas llave · 11 bloques · 40 conceptos</p>
+<div class="legend"><span class="tag lv1">🔴 IMPRESCINDIBLE · 34</span><span class="tag lv2">🟠 IMPORTANTE · 6</span></div></header><details class="how"><summary>🧭 Cómo usar este repaso</summary><div class="how-b"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>
+<p><b>Colores:</b> los he puesto según lo que resaltan las diapositivas: 🔴 lo más destacado · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div></details>
+<div class="bar">
+  <div class="row">
+    <select id="toc" aria-label="Ir a un bloque"><option value="">Ir a…</option><option value="b0">Bloque 1 · Qué son los ácidos nucleicos y los nucleótidos</option><option value="b1">Bloque 2 · ADN: características y estructura primaria</option><option value="b2">Bloque 3 · ADN: doble hélice y empaquetamiento</option><option value="b3">Bloque 4 · ADN fuera del núcleo y en procariotas</option><option value="b4">Bloque 5 · ARN: características y estructuras</option><option value="b5">Bloque 6 · ARNm, ARNt y ARNr en detalle</option><option value="b6">Bloque 7 · Flujo de la información y replicación</option><option value="b7">Bloque 8 · Replicación: fase de iniciación</option><option value="b8">Bloque 9 · Replicación: elongación y telómeros</option><option value="b9">Bloque 10 · Transcripción</option><option value="b10">Bloque 11 · Maduración del ARN</option><option value="llave">🔑 Bloque 12 · Preguntas llave</option><option value="trampas">⚠️ Trampas típicas del examen</option><option value="numeros">🔢 Números clave (apréndelos como una tabla de multiplicar)</option><option value="chequeo">✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)</option><option value="impres">⚡ Lo imprescindible</option><option value="glosario">📖 Glosario (palabras importantes, por orden alfabético)</option></select>
+    <div class="mode" role="group" aria-label="Modo"><button type="button" id="mRead" aria-pressed="true">Leer</button><button type="button" id="mTest" aria-pressed="false">Ponte a prueba</button></div>
+  </div>
+  <div class="row srow"><input type="search" id="q" placeholder="🔎 Buscar cualquier palabra" aria-label="Buscar en el repaso" autocomplete="off"></div>
+  <div class="res" id="res" hidden></div>
+  <div class="chips" role="group" aria-label="Filtrar por importancia">
+    <button type="button" class="chip" data-f="0" aria-pressed="true">Todos</button>
+    <button type="button" class="chip c1" data-f="1" aria-pressed="false">🔴 Imprescindibles</button>
+    <button type="button" class="chip c2" data-f="2" aria-pressed="false">🟠 Importantes</button>
+    <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
+    <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
+  </div>
+  <div class="prog"><span id="pText">Dominas 0</span><span id="pHint"></span></div>
+  <div class="pbar"><i id="pBar"></i></div>
+</div>
+<button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
+<a class="simlink" href="../../bio3/simulacro/"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>
+
+<section class="blk" id="b0" data-min="35"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">Qué son los ácidos nucleicos y los nucleótidos</span><span class="bc">⏱ 35 min · Conceptos 1–5 · 4 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c1" data-lv="1">
+<header class="c-h"><span class="c-n">1</span><h3>Ácidos nucleicos: ADN y ARN</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 2 y 3</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Ácidos nucleicos</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Las moléculas que guardan y usan las instrucciones de un ser vivo.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Macromoléculas encargadas de almacenar, transmitir y expresar la información genética de los seres vivos. (diap. 2)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Existen <strong>2 tipos</strong>: <strong>ADN</strong> y <strong>ARN</strong>.</p><ul><li><strong>ADN:</strong> almacenar y transmitir la información genética a la descendencia (mitosis y meiosis).</li><li><strong>ARN:</strong> expresar la información almacenada en el ADN para sintetizar <strong>proteínas</strong>.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El ADN es el libro de recetas que se guarda y se copia para los hijos. El ARN saca la receta del libro para fabricar la proteína.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Las 3 funciones: <strong>A-T-E</strong>, Almacenar, Transmitir, Expresar. ADN = A y T; ARN = E.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué son los ácidos nucleicos y qué función tienen ADN y ARN?</p><label class="dom"><input type="checkbox" data-n="1"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c2" data-lv="1">
+<header class="c-h"><span class="c-n">2</span><h3>El nucleótido y sus 3 partes</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 4</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Nucleótido</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La pieza con la que se construyen las cadenas de ácidos nucleicos.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Los ácidos nucleicos están formados por largas cadenas de NUCLEÓTIDOS. (diap. 4)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Cada nucleótido tiene <strong>fosfato</strong>, <strong>pentosa</strong> y <strong>base nitrogenada</strong>.</p><figure><svg viewBox="0 0 420 150" role="img" aria-label="Nucleótido: fosfato unido a una pentosa, unida a una base nitrogenada" style="width:100%;max-width:440px;background:#fff;border-radius:12px"><path d="M80 75L150 88M205 88L250 72" stroke="#333" stroke-width="3"/><circle cx="62" cy="72" r="24" fill="#e8bd1f" stroke="#7a5a00" stroke-width="2"/><text x="62" y="79" text-anchor="middle" font-size="20" font-weight="700" fill="#1c1626">P</text><path d="M150 72l28-20 28 20-11 33h-34z" fill="#dcd8f2" stroke="#35205f" stroke-width="2"/><path d="M250 50l33-16 26 20-11 32-36 2z" fill="#169ccb" stroke="#0a5a78" stroke-width="2"/><path d="M309 54l46-2 22 36-23 36-44-3-12-35z" fill="#169ccb" stroke="#0a5a78" stroke-width="2"/><text x="62" y="124" text-anchor="middle" font-size="15" fill="#1c1626">Fosfato</text><text x="178" y="130" text-anchor="middle" font-size="15" fill="#1c1626">Pentosa</text><text x="310" y="144" text-anchor="middle" font-size="15" fill="#1c1626">Base nitrogenada</text></svg><figcaption>Esquema propio basado en la diapositiva 4.</figcaption></figure></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Es como un eslabón: el fosfato y el azúcar forman el esqueleto de la cadena y la base es la «letra» de la información.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>F-P-B</strong>: Fosfato, Pentosa, Base.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué partes tiene un nucleótido?</p><label class="dom"><input type="checkbox" data-n="2"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c3" data-lv="2">
+<header class="c-h"><span class="c-n">3</span><h3>El grupo fosfato</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 5</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Grupo fosfato</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La parte con fósforo y oxígeno; es la que da el carácter ácido.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«1 átomo de fósforo (centro) y 4 átomos de oxígeno (vértices). (diap. 5)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>1 átomo de fósforo</strong> en el centro y <strong>4 átomos de oxígeno</strong> en los vértices.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Por esos grupos fosfato los ácidos nucleicos son fuertemente ácidos (lo verás en las propiedades).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Fosfato = <strong>1 P + 4 O</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿De qué átomos está formado el grupo fosfato?</p><label class="dom"><input type="checkbox" data-n="3"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c4" data-lv="1">
+<header class="c-h"><span class="c-n">4</span><h3>La pentosa: ribosa y desoxirribosa</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 6</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Ribosa</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El azúcar del ARN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Ribosa → ARN: lleva OH en la posición señalada. (diap. 6)»</div></li><li><b class="term">Desoxirribosa</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El azúcar del ADN: le falta un oxígeno.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Desoxirribosa → ADN: lleva H en la posición señalada. (diap. 6)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La pentosa es un azúcar. La diferencia está en un solo grupo: <strong>OH en la ribosa (ARN)</strong> y <strong>H en la desoxirribosa (ADN)</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>«Desoxi» significa «sin oxígeno»: por eso la desoxirribosa tiene H donde la ribosa tiene OH.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>D</strong>esoxirribosa = A<strong>D</strong>N. <strong>R</strong>ibosa = A<strong>R</strong>N.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué diferencia hay entre la pentosa del ADN y la del ARN?</p><label class="dom"><input type="checkbox" data-n="4"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c5" data-lv="1">
+<header class="c-h"><span class="c-n">5</span><h3>Las 5 bases nitrogenadas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 7</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Bases púricas</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Las bases más grandes, de dos anillos.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«ADENINA y GUANINA → ADN y ARN. (diap. 7)»</div></li><li><b class="term">Bases pirimidínicas</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Las bases más pequeñas, de un anillo.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«CITOSINA → ADN y ARN; TIMINA → ADN; URACILO → ARN. (diap. 7)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class='tw'><table><thead><tr><th>Tipo</th><th>Base</th><th>Dónde</th></tr></thead><tbody><tr><td>Púricas</td><td><strong>Adenina, Guanina</strong></td><td>ADN y ARN</td></tr><tr><td rowspan='3'>Pirimidínicas</td><td><strong>Citosina</strong></td><td>ADN y ARN</td></tr><tr><td><strong>Timina</strong></td><td>Solo ADN</td></tr><tr><td><strong>Uracilo</strong></td><td>Solo ARN</td></tr></tbody></table></div></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>ADN y ARN comparten A, G y C. La diferencia es que el ADN usa T y el ARN usa U.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>«Pura AGua»</strong>: púricas = A y G. El resto (C, T, U) son pirimidínicas.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Clasifica las 5 bases y di en qué ácido nucleico está cada una.</p><label class="dom"><input type="checkbox" data-n="5"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b1" data-min="35"><h2 class="blk-h"><span class="bn">BLOQUE 2</span><span class="bt">ADN: características y estructura primaria</span><span class="bc">⏱ 35 min · Conceptos 6–10 · 4 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c6" data-lv="1">
+<header class="c-h"><span class="c-n">6</span><h3>Características del ADN</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 8</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Desoxirribonucleótidos</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Los eslabones del ADN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Largas cadenas de desoxirribonucleótidos formados por el grupo fosfato, una DESOXIRRIBOSA y 4 tipos de bases nitrogenadas (A, T, G y C). (diap. 8)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol><li>Composición: fosfato, desoxirribosa y A, T, G, C.</li><li><strong>Tamaño:</strong> depende del número de nucleótidos. Las moléculas que forman los cromosomas son de gran tamaño (<strong>millones de pares de bases</strong>).</li><li><strong>Secuencia de bases</strong> (orden y proporción de cada una): depende de cada <strong>especie</strong>.</li></ol></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El orden de las letras es la información: por eso cambia de una especie a otra.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>C-T-S</strong>: Composición, Tamaño, Secuencia.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las 3 características del ADN.</p><label class="dom"><input type="checkbox" data-n="6"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c7" data-lv="1">
+<header class="c-h"><span class="c-n">7</span><h3>Estructura primaria del ADN</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 9</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Estructura primaria</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El orden de las letras en una cadena.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Es la secuencia de bases nitrogenadas de la cadena de nucleótidos leídas en dirección 5’ → 3’. (diap. 9)»</div></li><li><b class="term">Extremos 5’ y 3’</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Los dos extremos de la cadena, cada uno distinto.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«5’ → extremo fosfato; 3’ → extremo pentosa. (diap. 9)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Ejemplo de secuencia: <strong>(5’) A C T G (3’)</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Como un texto: siempre se lee en un sentido. Aquí, de 5’ a 3’.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Memoriza la pareja: <strong>5’ = fosfato</strong>, <strong>3’ = pentosa</strong>. Se lee siempre de 5’ a 3’.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la estructura primaria del ADN y qué hay en sus extremos 5’ y 3’?</p><label class="dom"><input type="checkbox" data-n="7"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c8" data-lv="1">
+<header class="c-h"><span class="c-n">8</span><h3>Complementariedad de bases y puentes de H</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 10 y 11</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Bases complementarias</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Parejas fijas de letras que encajan entre sí.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Las bases nitrogenadas complementarias se unen mediante puentes de H en función de su tamaño y estructura. (diap. 10)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul><li><strong>A y T → 2 puentes de H</strong></li><li><strong>C y G → 3 puentes de H</strong></li></ul><p>Secuencia: (5’) A C T G (3’) · complementaria: (3’) T G A C (5’).</p><figure><svg viewBox="0 0 420 210" role="img" aria-label="Cadenas antiparalelas: A con T por 2 puentes de hidrógeno y G con C por 3" style="width:100%;max-width:440px;background:#fff;border-radius:12px"><path d="M100 28V190M320 28V190" stroke="#c7a660" stroke-width="10"/><text x="100" y="20" text-anchor="middle" font-size="15" fill="#1c1626">5’</text><text x="100" y="206" text-anchor="middle" font-size="15" fill="#1c1626">3’</text><text x="320" y="20" text-anchor="middle" font-size="15" fill="#1c1626">3’</text><text x="320" y="206" text-anchor="middle" font-size="15" fill="#1c1626">5’</text><rect x="108" y="32" width="64" height="27" rx="6" fill="#1c7fb0"/><text x="140" y="52" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">A</text><path d="M172 40H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><path d="M172 50H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><rect x="248" y="32" width="64" height="27" rx="6" fill="#167a60"/><text x="280" y="52" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">T</text><rect x="108" y="70" width="64" height="27" rx="6" fill="#d0445a"/><text x="140" y="90" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">C</text><path d="M172 73H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><path d="M172 83H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><path d="M172 93H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><rect x="248" y="70" width="64" height="27" rx="6" fill="#7a3ea8"/><text x="280" y="90" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">G</text><rect x="108" y="108" width="64" height="27" rx="6" fill="#167a60"/><text x="140" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">T</text><path d="M172 116H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><path d="M172 126H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><rect x="248" y="108" width="64" height="27" rx="6" fill="#1c7fb0"/><text x="280" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">A</text><rect x="108" y="146" width="64" height="27" rx="6" fill="#7a3ea8"/><text x="140" y="166" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">G</text><path d="M172 149H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><path d="M172 159H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><path d="M172 169H248" stroke="#555" stroke-width="2" stroke-dasharray="5 4"/><rect x="248" y="146" width="64" height="27" rx="6" fill="#d0445a"/><text x="280" y="166" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">C</text></svg><figcaption>Esquema propio basado en la diapositiva 10: la secuencia 5’ ACTG 3’ y su complementaria 3’ TGAC 5’.</figcaption></figure></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Una púrica grande siempre se empareja con una pirimidínica pequeña: así la anchura de la doble hélice es constante.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>A-T</strong> tiene 2 palitos en la T; <strong>C-G</strong> son 3 por ser «más fuertes»: A2T, C3G.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué bases son complementarias y cuántos puentes de H forman? Escribe la complementaria de 5’ ACTG 3’.</p><label class="dom"><input type="checkbox" data-n="8"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c9" data-lv="2">
+<header class="c-h"><span class="c-n">9</span><h3>Parejas en el ARN: la U sustituye a la T</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 12</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Apareamiento en ARN</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La A se empareja con U en lugar de con T.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«A-U y G-C, con ribosa. (diap. 12)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>En el ARN: <strong>A con U</strong> (2 puentes de H) y <strong>G con C</strong> (3 puentes de H). El azúcar es la <strong>ribosa</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Cuando el ARN copia una A del ADN, coloca una U.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>En <strong>ARN</strong> ya no hay T: la <strong>U</strong> ocupa su sitio.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Con qué base se empareja la adenina en el ARN?</p><label class="dom"><input type="checkbox" data-n="9"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c10" data-lv="1">
+<header class="c-h"><span class="c-n">10</span><h3>Propiedades fisicoquímicas e hibridación</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 13</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Hibridación</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Dos cadenas complementarias se juntan.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La unión de dos cadenas complementarias de ácidos nucleicos se unen mediante puentes de hidrógeno entre las bases nitrogenadas → hibridación. (diap. 13)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol><li><strong>Fuertemente ácidos</strong> en solución acuosa (por los grupos fosfato).</li><li><strong>Elevada viscosidad.</strong></li><li><strong>Hibridación.</strong></li></ol></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Valen tanto para ADN como para ARN.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Á-V-H</strong>: Ácidos, Viscosos, Hibridación.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las 3 propiedades fisicoquímicas de los ácidos nucleicos.</p><label class="dom"><input type="checkbox" data-n="10"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b2" data-min="45"><h2 class="blk-h"><span class="bn">BLOQUE 3</span><span class="bt">ADN: doble hélice y empaquetamiento</span><span class="bc">⏱ 45 min · Conceptos 11–14 · 4 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv1" id="c11" data-lv="1">
+<header class="c-h"><span class="c-n">11</span><h3>Estructura secundaria: la doble hélice</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 14 y 15</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Modelo de la doble hélice</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Las dos cadenas enrolladas como una escalera de caracol.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«En 1953 Watson y Crick, junto con los resultados de Wilkins y Rosalind Franklin, propusieron un modelo [...] Este modelo permite explicar el principio de complementariedad y sostiene que el ADN es una doble hélice. (diap. 14)»</div></li><li><b class="term">Antiparalelas</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Las dos cadenas van en sentidos opuestos.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Las 2 cadenas son antiparalelas → 5’-3’ vs. 3’-5’. (diap. 15)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul><li>La secuencia de cada cadena es la estructura primaria; cuando las complementarias se unen, la secundaria.</li><li>Se forma alrededor de un <strong>eje central</strong>.</li><li>Secuencias <strong>complementarias</strong>: conocida una hebra, se deduce la otra.</li><li>Unidas por <strong>puentes de H</strong>.</li><li><strong>Bases en el interior</strong>; <strong>fosfatos y desoxirribosa en el exterior</strong>.</li><li>Un giro de 360º = <strong>10 nucleótidos</strong>.</li></ul><p><a href='https://www.youtube.com/watch?v=SbkiiIuhDyc'>Vídeo de la diapositiva 15</a></p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>⚠️ La diapositiva 15 escribe «360 ºC»: es una errata, son 360 grados de giro, no una temperatura.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Escalera de caracol: <strong>peldaños = bases (dentro)</strong>, <strong>barandillas = fosfato y azúcar (fuera)</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Describe la estructura secundaria del ADN: autores, cadenas, uniones y posición de cada parte.</p><label class="dom"><input type="checkbox" data-n="11"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c12" data-lv="1">
+<header class="c-h"><span class="c-n">12</span><h3>Estructura terciaria: histonas y no histonas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 16 y 17</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Histonas</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Proteínas sobre las que se enrolla el ADN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Proteínas con una función estructural y reguladora. (diap. 16)»</div></li><li><b class="term">No histonas</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Proteínas muy variadas que trabajan con el ADN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Proteínas muy heterogéneas con funciones estructurales, enzimáticas y reguladoras. (diap. 16)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La mayor parte del ADN de las células eucariotas está en el <strong>núcleo</strong>. No está libre: se asocia a proteínas que lo <strong>compactan</strong>.</p><p>Histonas: básicas, empaquetan el ADN, forman nucleosomas. No histonas: varias, regulan el ADN, participan en procesos.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Sin empaquetar, el ADN no cabría en el núcleo: las histonas lo enrollan como hilo en un carrete.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Histonas = carrete</strong>. No histonas = «todo lo demás».</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Dónde está el ADN eucariota y con qué proteínas se asocia? Diferéncialas.</p><label class="dom"><input type="checkbox" data-n="12"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c13" data-lv="1">
+<header class="c-h"><span class="c-n">13</span><h3>Nucleosoma y fibra de cromatina</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 18 y 19</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Nucleosoma</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El carrete de 8 histonas con el ADN enrollado.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Estructura cilíndrica formada por un octámero de histonas (8 histonas) sobre la que se enrolla la doble hélice de ADN. (diap. 19)»</div></li><li><b class="term">Fibra de cromatina</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Muchos nucleosomas seguidos en el ADN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La molécula de ADN asociada a las histonas se denomina fibra de cromatina → “Collar de perlas”. (diap. 19)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>8 histonas en cada nucleosoma. El nucleosoma pertenece a la estructura terciaria.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Cada perla del collar es un nucleosoma, y el hilo es el ADN.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Octámero = 8</strong>, como un <strong>oct</strong>ópodo con 8 patas.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es un nucleosoma y qué es la fibra de cromatina?</p><label class="dom"><input type="checkbox" data-n="13"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c14" data-lv="1">
+<header class="c-h"><span class="c-n">14</span><h3>Solenoide y cromosoma metafásico</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 20 y 21</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Solenoide</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La fibra de cromatina enrollada sobre sí misma.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La fibra de cromatina, a su vez, se enrolla sobre sí misma formando el solenoide. Es el nivel de empaquetamiento más bajo de los cromosomas. (diap. 20)»</div></li><li><b class="term">Cromosoma metafásico</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El máximo de compactación, durante la mitosis.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«En el momento de la división celular (MITOSIS), las fibras de cromatina se ordenan y experimentan varios niveles de superenrollamiento hasta formar el cromosoma metafásico. (diap. 21)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Cada vuelta del solenoide tiene <strong>6 nucleosomas</strong>.</p><p>Orden: ADN → nucleosoma → fibra de cromatina → solenoide → cromosoma metafásico.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>⚠️ La diapositiva 20 dice «6 nucleosomas con 6 histonas», pero la 18 y la 19 dicen que cada nucleosoma tiene 8 histonas. Aprende 6 nucleosomas por vuelta y 8 histonas por nucleosoma, y confírmalo con la profe.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>6 por vuelta, 8 por perla.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Ordena los niveles de empaquetamiento del ADN hasta el cromosoma metafásico.</p><label class="dom"><input type="checkbox" data-n="14"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b3" data-min="20"><h2 class="blk-h"><span class="bn">BLOQUE 4</span><span class="bt">ADN fuera del núcleo y en procariotas</span><span class="bc">⏱ 20 min · Conceptos 15–17 · 1 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv2" id="c15" data-lv="2">
+<header class="c-h"><span class="c-n">15</span><h3>ADN mitocondrial</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositivas 22 y 23</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ADNmt</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El ADN propio de las mitocondrias.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«ADN mitocondrial → en todos los organismos eucariotas. (diap. 22)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul><li>Suele haber <strong>varias copias</strong> en cada mitocondria.</li><li>Contiene genes para la <strong>respiración celular</strong>.</li><li>Se replica de manera <strong>independiente</strong> del ADN nuclear.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La mitocondria produce energía, por eso sus genes son de respiración.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Mito = Respira</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Dónde está el ADN mitocondrial, qué contiene y cómo se replica?</p><label class="dom"><input type="checkbox" data-n="15"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c16" data-lv="2">
+<header class="c-h"><span class="c-n">16</span><h3>ADN de cloroplastos</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositivas 22 y 24</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ADNcp</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El ADN propio de los cloroplastos.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«ADN de cloroplastos → Sólo en organismos fotosintéticos. (diap. 22)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul><li>Suele haber <strong>varias moléculas de ADN circular</strong> en cada cloroplasto.</li><li>Genes especialmente de la <strong>fotosíntesis</strong>.</li><li>Se replica de manera <strong>independiente</strong> del ADN nuclear.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Mitocondrias: todos los eucariotas. Cloroplastos: solo los que hacen fotosíntesis.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Cloro = Foto</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué organismos tienen ADN de cloroplastos y qué genes contiene?</p><label class="dom"><input type="checkbox" data-n="16"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c17" data-lv="1">
+<header class="c-h"><span class="c-n">17</span><h3>ADN de procariotas y plásmidos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 25</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Plásmidos</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Pequeños círculos de ADN extra en las bacterias.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Además del cromosoma, muchos procariotas presentan pequeñas moléculas de ADN circular denominadas → PLÁSMIDOS. (diap. 25)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul><li>Un solo <strong>cromosoma circular</strong>, <strong>libre en el citoplasma</strong>.</li><li><strong>No está unido a proteínas.</strong></li><li>Muchos tienen <strong>plásmidos</strong>.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Las bacterias no tienen núcleo: su ADN está suelto en el citoplasma.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Bacteria: <strong>1 círculo, libre, sin proteínas</strong>, y a veces plásmidos.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo es el ADN de los procariotas? ¿Qué son los plásmidos?</p><label class="dom"><input type="checkbox" data-n="17"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b4" data-min="30"><h2 class="blk-h"><span class="bn">BLOQUE 5</span><span class="bt">ARN: características y estructuras</span><span class="bc">⏱ 30 min · Conceptos 18–20 · 3 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv1" id="c18" data-lv="1">
+<header class="c-h"><span class="c-n">18</span><h3>Características del ARN</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 26</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Ribonucleótidos</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Los eslabones del ARN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Cadenas de ribonucleótidos formados por el grupo fosfato, una ribosa y 4 tipos de bases nitrogenadas (A, U, G y C). (diap. 26)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol><li>Composición: fosfato, ribosa y A, U, G, C.</li><li><strong>Tamaño:</strong> depende del número de nucleótidos, pero mucho más pequeñas que las de ADN (cientos o miles).</li><li><strong>Función:</strong> controla la <strong>síntesis de proteínas</strong> a partir de la información del ADN.</li></ol></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>⚠️ La diapositiva 26 dice «pares de bases», pero el ARN suele ser cadena simple: mejor habla de nucleótidos o bases.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>ARN: <strong>ribosa, U, más pequeño</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di 3 características del ARN y compáralo con el ADN.</p><label class="dom"><input type="checkbox" data-n="18"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c19" data-lv="1">
+<header class="c-h"><span class="c-n">19</span><h3>Estructuras primaria, secundaria y terciaria del ARN</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 27, 28 y 29</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Primaria</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El orden de las letras de la cadena simple.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Es la secuencia de bases nitrogenadas de la cadena simple de nucleótidos leídas en dirección 5’ → 3’. (diap. 27)»</div></li><li><b class="term">Secundaria</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La cadena se dobla y se empareja consigo misma.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La cadena simple de ARN puede plegarse y presentar regiones con bases apareadas (ARN transferencia). (diap. 28)»</div></li><li><b class="term">Terciaria</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Un segundo plegado más complejo.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Consiste en un plegamiento de la estructura secundaria, normalmente por asociación con proteínas. (diap. 29)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Secundaria: las bases NO siempre serán complementarias (A-U, G-C, <strong>G-U</strong>); los extremos 5’ y 3’ permanecen <strong>libres</strong>.</p><p>Terciaria: ARN ribosomal y ARN transferente.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>G-U es una pareja que solo aparece aquí como excepción: no ocurre en el ADN.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>G-U</strong> es la «pareja rara» del ARN.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica las 3 estructuras del ARN. ¿Qué pareja de bases especial puede aparecer?</p><label class="dom"><input type="checkbox" data-n="19"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c20" data-lv="1">
+<header class="c-h"><span class="c-n">20</span><h3>Los 3 tipos de ARN</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 30</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ARNm</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>ARN mensajero: lleva el mensaje.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Contiene la información que codifica las proteínas. Estructura primaria (cadena simple). (diap. 30)»</div></li><li><b class="term">ARNt</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>ARN transferente: trae los aminoácidos.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Transporta los aminoácidos y los coloca en función de la secuencia del mRNA. Estructura secundaria. (diap. 30)»</div></li><li><b class="term">ARNr</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>ARN ribosomal: forma los ribosomas.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Forma los ribosomas. Estructura terciaria. (diap. 30)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><div class='tw'><table><thead><tr><th>Tipo</th><th>Función</th><th>Estructura</th></tr></thead><tbody><tr><td><strong>ARNm</strong></td><td>Información de la proteína</td><td>Primaria</td></tr><tr><td><strong>ARNt</strong></td><td>Transporta aminoácidos</td><td>Secundaria</td></tr><tr><td><strong>ARNr</strong></td><td>Forma ribosomas</td><td>Terciaria</td></tr></tbody></table></div></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Fábrica de proteínas: el ARNm es la orden, el ARNt el repartidor y el ARNr parte de la máquina.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>m</strong>ensaje, <strong>t</strong>ransporte, <strong>r</strong>ibosoma; y estructuras <strong>1, 2, 3</strong> en ese orden.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 3 tipos de ARN, su función y su estructura.</p><label class="dom"><input type="checkbox" data-n="20"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b5" data-min="35"><h2 class="blk-h"><span class="bn">BLOQUE 6</span><span class="bt">ARNm, ARNt y ARNr en detalle</span><span class="bc">⏱ 35 min · Conceptos 21–23 · 3 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv1" id="c21" data-lv="1">
+<header class="c-h"><span class="c-n">21</span><h3>ARN mensajero</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 31</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ARNm</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La copia de un gen que sale a fabricar proteína.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Es una copia exacta de la secuencia de un gen de ADN. Porta la información para la síntesis de una proteína. (diap. 31)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Se obtiene por <strong>transcripción</strong> en el núcleo.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>⚠️ «Copia exacta» con un matiz: lleva U en lugar de T, como explica la diapositiva 59.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>ARNm = <strong>fotocopia</strong> del gen, con U en vez de T.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es el ARNm y qué porta?</p><label class="dom"><input type="checkbox" data-n="21"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c22" data-lv="1">
+<header class="c-h"><span class="c-n">22</span><h3>ARN transferente: trébol, L y anticodón</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 32 y 33</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ARNt</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Lleva cada aminoácido al ribosoma.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Transportan los aminoácidos hasta los ribosomas para ir formando la cadena proteica. (diap. 32)»</div></li><li><b class="term">Brazo aceptor</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Donde se engancha el aminoácido.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Sitio de unión para el aminoácido (CCA-3’). (diap. 33)»</div></li><li><b class="term">Brazo anticodón</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La parte que lee el mensaje.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Contiene el anticodón correspondiente al aminoácido que lleva. Este anticodón reconoce el codón de ARNm que indica el aminoácido que se tiene que añadir a la proteína. (diap. 33)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Estructura secundaria en forma de <strong>trébol</strong>, que se pliega en una terciaria en forma de <strong>L</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El anticodón encaja con el codón del ARNm como una llave en una cerradura. Ejemplo de la diapositiva: anticodón CUC con codón GAG.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Trébol</strong> en plano, <strong>L</strong> en 3D. Aminoácido arriba, anticodón abajo.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo es el ARNt y qué hacen el brazo aceptor y el brazo anticodón?</p><label class="dom"><input type="checkbox" data-n="22"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c23" data-lv="1">
+<header class="c-h"><span class="c-n">23</span><h3>ARN ribosomal y ribosoma</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 34 y 35</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ARNr</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El ARN más abundante, parte del ribosoma.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Es el ARN mayoritario en las células (aproximadamente el 80% del ARN). (diap. 34)»</div></li><li><b class="term">Ribosomas</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La máquina que fabrica proteínas.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Combinado con ciertas proteínas forma los ribosomas. Orgánulos citoplasmáticos responsables de la síntesis de proteínas. (diap. 35)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Estructura secundaria muy compleja, con muchas horquillas y bucles.</p><ul><li><strong>Subunidad 60:</strong> 3 moléculas de ARNr y 49 proteínas.</li><li><strong>Subunidad 40:</strong> 1 molécula de ARNr y 33 proteínas.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El ribosoma tiene dos piezas, una grande y otra pequeña, hechas de ARNr y proteínas.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>60 = 3 + 49</strong> · <strong>40 = 1 + 33</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué porcentaje del ARN es ARNr y cómo son las subunidades del ribosoma?</p><label class="dom"><input type="checkbox" data-n="23"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b6" data-min="30"><h2 class="blk-h"><span class="bn">BLOQUE 7</span><span class="bt">Flujo de la información y replicación</span><span class="bc">⏱ 30 min · Conceptos 24–26 · 3 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv1" id="c24" data-lv="1">
+<header class="c-h"><span class="c-n">24</span><h3>Flujo de la información genética</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 36 y 37</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Replicación</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Copiar el ADN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Duplicación del material genético, ADN (para la división celular: mitosis y meiosis). (diap. 36)»</div></li><li><b class="term">Transcripción</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Pasar de ADN a ARN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Síntesis de ARNm partiendo de ADN. (diap. 36)»</div></li><li><b class="term">Traducción</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Pasar de ARN a proteína.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Síntesis de proteínas partiendo de ARNm. (diap. 36)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><figure><svg viewBox="0 0 460 140" role="img" aria-label="ADN se replica; por transcripción da ARN; por traducción da proteína. En rojo: transcripción inversa y replicación del ARN" style="width:100%;max-width:480px;background:#fff;border-radius:12px"><defs><marker id="mk" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#222"/></marker><marker id="mr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#c2122d"/></marker></defs><g font-size="19" font-weight="700" fill="#2c2a7a" text-anchor="middle"><text x="55" y="77">ADN</text><text x="245" y="77">ARN</text><text x="400" y="77">Proteína</text></g><path d="M88 62H210" stroke="#222" stroke-width="3" marker-end="url(#mk)"/><path d="M210 82H88" stroke="#c2122d" stroke-width="3" marker-end="url(#mr)"/><path d="M280 71H345" stroke="#222" stroke-width="3" marker-end="url(#mk)"/><g font-size="13" text-anchor="middle"><text x="148" y="52">Transcripción</text><text x="148" y="102" fill="#c2122d">Transcripción inversa</text><text x="312" y="58">Traducción</text><text x="55" y="22">Replicación</text><text x="245" y="22" fill="#c2122d">Replicación</text></g><path d="M36 54C20 28 88 28 74 54" fill="none" stroke="#222" stroke-width="3" marker-end="url(#mk)"/><path d="M226 54C210 28 278 28 264 54" fill="none" stroke="#c2122d" stroke-width="3" marker-end="url(#mr)"/></svg><figcaption>Esquema propio basado en la diapositiva 37.</figcaption></figure><p>El esquema incluye en rojo la <strong>transcripción inversa</strong> y la <strong>replicación del ARN</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La diapositiva no explica las flechas rojas. Como dato general, no de la diapositiva: son rutas típicas de algunos virus.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>R-T-T</strong>: Replicación (ADN→ADN), Transcripción (ADN→ARN), Traducción (ARN→proteína).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Define replicación, transcripción y traducción.</p><label class="dom"><input type="checkbox" data-n="24"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c25" data-lv="1">
+<header class="c-h"><span class="c-n">25</span><h3>Replicación: qué es y cuándo ocurre</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 38</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Replicación del ADN</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Sacar dos copias idénticas de una molécula.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Proceso por el cual una molécula de ADN se duplica para dar lugar a dos moléculas de ADN idénticas → Ocurre en la fase S de la interfase, cuando la célula se prepara para dividirse por mitosis o meiosis. (diap. 38)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Ocurre en la <strong>fase S de la interfase</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Antes de dividirse, la célula copia su ADN para que cada hija reciba un juego completo.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>S</strong> de <strong>S</strong>íntesis de ADN.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la replicación y en qué fase ocurre?</p><label class="dom"><input type="checkbox" data-n="25"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c26" data-lv="1">
+<header class="c-h"><span class="c-n">26</span><h3>Características de la replicación</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 39, 40 y 41</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Semiconservativa</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Cada copia lleva una hebra vieja y una nueva.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Una hebra viene de la molécula original y la otra se sintetiza. (diap. 39)»</div></li><li><b class="term">Origen de replicación</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El punto donde empieza.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«El inicio de la replicación se da en puntos concretos. Procariotas: un único origen. Eucariotas: más de un origen. (diap. 39)»</div></li><li><b class="term">Bidireccional</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Avanza hacia los dos lados.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La síntesis de las nuevas cadenas se produce en ambos sentidos usando las 2 cadenas de ADN como molde. (diap. 40)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Se divide en 2 fases: <strong>iniciación</strong> y <strong>elongación</strong>. <a href='https://www.youtube.com/watch?v=pm_Takf_SyM'>Vídeo de la diapositiva 41</a></p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Eucariotas tienen más ADN, por eso necesitan varios puntos de inicio.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>S-O-B</strong>: Semiconservativa, Origen, Bidireccional.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Explica las 3 características de la replicación. ¿Cuántos orígenes hay en procariotas y en eucariotas?</p><label class="dom"><input type="checkbox" data-n="26"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b7" data-min="25"><h2 class="blk-h"><span class="bn">BLOQUE 8</span><span class="bt">Replicación: fase de iniciación</span><span class="bc">⏱ 25 min · Conceptos 27–28 · 2 🔴 · <b class="bd">0</b>/2 dominados</span></h2><article class="cpt lv1" id="c27" data-lv="1">
+<header class="c-h"><span class="c-n">27</span><h3>Origen, helicasas y burbuja</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 42, 43 y 44</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Helicasas</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Abren la doble hélice como una cremallera.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Rompen los puentes de hidrógeno que hay entre las bases nitrogenadas de las dos cadenas complementarias del ADN y forman la burbuja de replicación. (diap. 44)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol><li>Unas proteínas específicas reconocen el <strong>origen de replicación</strong> y se unen a él.</li><li>Esa unión <strong>activa las helicasas</strong>.</li><li>Rompen los puentes de H y forman la <strong>burbuja de replicación</strong>.</li><li>Dos helicasas avanzan en sentidos opuestos: replicación <strong>bidireccional</strong>.</li></ol></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Abrir una cremallera desde el centro hacia los dos lados.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Helicasa = <strong>abre</strong> la hélice.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué ocurre en el origen de replicación y qué hacen las helicasas?</p><label class="dom"><input type="checkbox" data-n="27"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c28" data-lv="1">
+<header class="c-h"><span class="c-n">28</span><h3>SSBP, girasa y topoisomerasa</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 45 y 51</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">SSBP</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Mantienen separadas las cadenas abiertas.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Se unen a las cadenas desenrolladas evitando que se vuelva a formar la doble hélice. (diap. 51)»</div></li><li><b class="term">Girasa y topoisomerasa</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Quitan la tensión del giro.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La separación de las dos cadenas genera un superenrollamiento en el resto de la hélice. Esta enzima junto con la girasa se encargan de relajar esa tensión extra. (diap. 51)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Proteínas de unión a cadena sencilla: <strong>SSBP</strong>. Los dos extremos de la burbuja son las <strong>horquillas de replicación</strong>.</p><figure><svg viewBox="0 0 520 230" role="img" aria-label="Burbuja de replicación con horquillas, helicasas, proteínas SSB, primers de ARN, hebra conductora y fragmentos de Okazaki" style="width:100%;max-width:560px;background:#fff;border-radius:12px"><defs><marker id="ma" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#d06a1e"/></marker></defs><path d="M10 105H95C130 105 140 40 190 40H330C380 40 390 105 425 105H510M10 125H95C130 125 140 190 190 190H330C380 190 390 125 425 125H510" fill="none" stroke="#1d4f9c" stroke-width="6"/><path d="M260 28V202" stroke="#222" stroke-dasharray="5 4"/><text x="260" y="18" text-anchor="middle" font-size="13" fill="#1c1626">Origen</text><path d="M250 56H165" stroke="#d06a1e" stroke-width="4" marker-end="url(#ma)"/><rect x="250" y="52" width="20" height="8" fill="#e56b7c"/><path d="M270 174H355" stroke="#d06a1e" stroke-width="4" marker-end="url(#ma)"/><rect x="250" y="170" width="20" height="8" fill="#e56b7c"/><g stroke="#d06a1e" stroke-width="4" marker-end="url(#ma)"><path d="M310 56H280"/><path d="M360 56H330"/></g><rect x="310" y="52" width="14" height="8" fill="#e56b7c"/><rect x="360" y="52" width="14" height="8" fill="#e56b7c"/><g stroke="#d06a1e" stroke-width="4" marker-end="url(#ma)"><path d="M210 174H240"/><path d="M160 174H190"/></g><rect x="196" y="170" width="14" height="8" fill="#e56b7c"/><rect x="146" y="170" width="14" height="8" fill="#e56b7c"/><circle cx="118" cy="115" r="16" fill="#a8455f"/><circle cx="402" cy="115" r="16" fill="#a8455f"/><g fill="#2c6fd6"><circle cx="160" cy="28" r="7"/><circle cx="360" cy="28" r="7"/></g><g font-size="13" fill="#1c1626"><text x="96" y="84" text-anchor="middle">Helicasa</text><text x="424" y="84" text-anchor="middle">Helicasa</text><text x="150" y="18">SSB</text><text x="350" y="18">SSB</text><text x="200" y="80">Conductora</text><text x="310" y="80">Okazaki</text><text x="280" y="160">Conductora</text><text x="145" y="160">Okazaki</text></g><g font-size="13" fill="#1c1626"><rect x="12" y="186" width="14" height="8" fill="#e56b7c"/><text x="32" y="195">Primer (ARN)</text><path d="M12 212H30" stroke="#d06a1e" stroke-width="4"/><text x="36" y="217">ADN nuevo</text></g></svg><figcaption>Esquema propio simplificado a partir de las diapositivas 45-54.</figcaption></figure></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Si abres una cuerda retorcida por el centro, se enrosca más por los lados: eso es lo que relajan.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>SSBP = separadas</strong>. <strong>Girasa y topoisomerasa = sin tensión</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué hacen las SSBP y la girasa con la topoisomerasa?</p><label class="dom"><input type="checkbox" data-n="28"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b8" data-min="45"><h2 class="blk-h"><span class="bn">BLOQUE 9</span><span class="bt">Replicación: elongación y telómeros</span><span class="bc">⏱ 45 min · Conceptos 29–34 · 4 🔴 · <b class="bd">0</b>/6 dominados</span></h2><article class="cpt lv1" id="c29" data-lv="1">
+<header class="c-h"><span class="c-n">29</span><h3>Primasa y primers</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 46 y 52</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Primasa</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Pone el punto de arranque de ARN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Es una enzima con función ARN polimerasa que sintetiza fragmentos cortos de ARN (10 nucleótidos), denominados cebadores o primers. (diap. 52)»</div></li><li><b class="term">Primers</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Fragmentitos de ARN donde empieza la copia.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Los primers son complementarios de zonas concretas de ADN y sirven para que la ADN polimerasa empiece a hacer la nueva cadena de ADN copiando la original. (diap. 52)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La primasa sintetiza los primers en dirección <strong>5’→3’</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La ADN polimerasa no sabe empezar de cero: necesita un trocito ya colocado del que continuar.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Primer</strong> = lo que va <strong>primero</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la primasa y para qué sirven los primers? ¿De cuántos nucleótidos son?</p><label class="dom"><input type="checkbox" data-n="29"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c30" data-lv="1">
+<header class="c-h"><span class="c-n">30</span><h3>Hebra conductora y hebra retardada</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 46, 47, 50 y 54</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Hebra conductora</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Se copia seguida.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Un único primer en el origen de la replicación (5’-3’). Elongación continua. (diap. 46-47)»</div></li><li><b class="term">Hebra retardada</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Se copia a trozos.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Varios primers. Elongación discontinua (5’-3’) → se van sintetizando los fragmentos de Okazaki hasta alcanzar el primer siguiente. (diap. 46-47)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Las hebras nuevas que van en la <strong>misma dirección que la helicasa</strong> son continuas; las que van en <strong>dirección opuesta</strong>, retardadas. Cada fragmento de Okazaki necesita su primer.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Conductora, continua y líder son la misma hebra: la diapositiva usa los tres nombres. Como la polimerasa solo avanza 5’→3’, una de las hebras tiene que hacerse a trozos.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>C</strong>onductora = <strong>C</strong>ontinua. <strong>R</strong>etardada = a t<strong>R</strong>ozos (Okazaki).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Diferencia la hebra conductora de la retardada: primers y tipo de elongación.</p><label class="dom"><input type="checkbox" data-n="30"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c31" data-lv="1">
+<header class="c-h"><span class="c-n">31</span><h3>ADN polimerasa III</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 47 y 53</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ADN polimerasa</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La enzima que fabrica la cadena nueva.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Enzima que añade nuevos nucleótidos al extremo OH-3’ de una cadena en crecimiento, es decir, añade nucleótidos en dirección 5’ → 3’ siempre. (diap. 53)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Una vez colocados los primers, la <strong>ADN polimerasa III</strong> sintetiza las hebras nuevas. La secuencia que incorpora es <strong>complementaria</strong> de la cadena molde. Procariotas y eucariotas tienen <strong>varios tipos</strong> de polimerasas.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Solo puede añadir por el extremo 3’: de ahí la regla de oro.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Siempre 5’→3’.</strong> Si en el examen ves 3’→5’ para la síntesis, es falso.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué hace la ADN polimerasa y en qué dirección?</p><label class="dom"><input type="checkbox" data-n="31"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c32" data-lv="1">
+<header class="c-h"><span class="c-n">32</span><h3>ADN polimerasa I y ligasa</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 48</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ADN polimerasa I</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Cambia los primers de ARN por ADN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Actividad exonucleasa para retirar los cebadores y actividad polimerasa para sustituirlos por ADN. (diap. 48)»</div></li><li><b class="term">Ligasa</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Pega los trozos.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Tras la ADN polimerasa I, la ligasa se encargará de ir uniendo los fragmentos de ADN de la hebra que se acaba de copiar. (diap. 48)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Última etapa: eliminación de primers y unión de todos los fragmentos.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Primero se quita el ARN y se rellena con ADN; después se sellan las uniones.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Pol I quIta</strong>; <strong>Ligasa Liga</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué hacen la ADN polimerasa I y la ligasa?</p><label class="dom"><input type="checkbox" data-n="32"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c33" data-lv="2">
+<header class="c-h"><span class="c-n">33</span><h3>Orden completo de la replicación</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositivas 42-54</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol><li>Proteínas reconocen el origen.</li><li>Helicasas abren: burbuja.</li><li>SSBP mantienen separadas las hebras.</li><li>Girasa y topoisomerasa relajan la tensión.</li><li>Primasa coloca primers.</li><li>ADN polimerasa III alarga.</li><li>ADN polimerasa I sustituye los primers.</li><li>Ligasa une los fragmentos.</li></ol></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Si te sabes este orden, tienes toda la replicación.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>He-SS-Gi-Pri-III-I-Li</strong>: Helicasa, SSBP, Girasa, Primasa, Pol III, Pol I, Ligasa.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Ordena las enzimas de la replicación y di qué hace cada una.</p><label class="dom"><input type="checkbox" data-n="33"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c34" data-lv="2">
+<header class="c-h"><span class="c-n">34</span><h3>Acortamiento de los telómeros</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 55</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Telómeros</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Los extremos de los cromosomas.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Con cada división celular disminuye la longitud de los telómeros. Final del telómero: fragmento que se pierde porque no se puede copiar. (diap. 55)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Secuencia del esquema: <strong>TTAGGG</strong> repetida. El último primer deja un fragmento sin copiar. <a href='https://www.youtube.com/watch?v=Ld9E064MaPY'>Vídeo de la diapositiva 55</a></p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Al quitar el último primer no hay de dónde rellenar: en cada división el extremo se acorta un poco.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Cada división, <strong>telómero más corto</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Por qué se acortan los telómeros?</p><label class="dom"><input type="checkbox" data-n="34"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b9" data-min="40"><h2 class="blk-h"><span class="bn">BLOQUE 10</span><span class="bt">Transcripción</span><span class="bc">⏱ 40 min · Conceptos 35–39 · 5 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c35" data-lv="1">
+<header class="c-h"><span class="c-n">35</span><h3>Transcripción: fases y diferencias</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 56</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Transcripción</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Copiar un gen de ADN a ARN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Proceso por el cual se sintetiza una molécula de ARN utilizando como molde una cadena de ADN. (diap. 56)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Fases: <strong>iniciación, elongación y terminación</strong>.</p><ul><li><strong>Procariotas:</strong> se obtienen directamente moléculas maduras de ARN.</li><li><strong>Eucariotas:</strong> moléculas de ARN que tienen que sufrir modificaciones para madurar.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Replicación tiene 2 fases según la profe; transcripción, 3.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>I-E-T</strong>: Inicia, Elonga, Termina.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la transcripción y cuáles son sus fases?</p><label class="dom"><input type="checkbox" data-n="35"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c36" data-lv="1">
+<header class="c-h"><span class="c-n">36</span><h3>ARN polimerasas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 57</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">ARN polimerasa</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La enzima principal de la transcripción.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Función: síntesis de ARN usando una cadena de ADN como molde. La ARN polimerasa produce la copia de ARN en dirección 5’ → 3’. (diap. 57)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Procariotas: <strong>un único tipo</strong>. Eucariotas: <strong>3 tipos</strong>:</p><ul><li><strong>I</strong> → mayor parte del ARNr.</li><li><strong>II</strong> → ARNm.</li><li><strong>III</strong> → ARNt y una parte del ARNr.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La II es la destacada porque es la que fabrica el mensajero de las proteínas.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>1-r, 2-m, 3-t</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuántas ARN polimerasas hay en procariotas y eucariotas y qué sintetiza cada una?</p><label class="dom"><input type="checkbox" data-n="36"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c37" data-lv="1">
+<header class="c-h"><span class="c-n">37</span><h3>Iniciación: el promotor</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 58</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Promotor</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La señal de «empieza aquí» del gen.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La ARN polimerasa reconoce una secuencia de bases específica llamada promotor, que se encuentra al inicio de un gen → Cada gen tiene su propio promotor. (diap. 58)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Después de unirse al promotor, las dos hebras se separan y comienza la síntesis de ARN.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Replicación: <strong>origen</strong>. Transcripción: <strong>promotor</strong>.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>El <strong>pro</strong>motor es el <strong>pro</strong>tagonista del inicio.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es el promotor y qué pasa en la iniciación?</p><label class="dom"><input type="checkbox" data-n="37"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c38" data-lv="1">
+<header class="c-h"><span class="c-n">38</span><h3>Elongación: molde, codificante y uracilo</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 59</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Cadena molde</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La que se lee.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La ARN polimerasa añade ribonucleótidos en dirección 5’ → 3’, tomando una hebra de ADN como molde (cadena molde 3’ → 5’). (diap. 59)»</div></li><li><b class="term">Cadena codificante</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La que se parece al ARN.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«El transcrito de ARN tiene la misma información que la cadena de ADN contraria a la molde (cadena codificante) en el gen, pero contiene la base uracilo (U) en lugar de timina (T). (diap. 59)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Ejemplo: codificante 5’ ATGATCTCGTAA 3’ · ARN 5’ AUGAUC… 3’ · molde 3’ TACTAGAGCATT 5’.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El ARN es complementario de la molde e igual que la codificante, cambiando T por U.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>ARN = <strong>codificante con U</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Diferencia cadena molde y codificante. Si la codificante es 5’ ATGATC 3’, ¿cuál es el ARN?</p><label class="dom"><input type="checkbox" data-n="38"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c39" data-lv="1">
+<header class="c-h"><span class="c-n">39</span><h3>Terminación y procariotas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 60</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Terminador</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La señal de «para aquí».</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«La síntesis de ARN [termina] cuando la ARN polimerasa alcanza una secuencia específica llamada terminador. En este punto se separa el ARN de la cadena de ADN y de la ARN polimerasa. (diap. 60)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Queda un transcrito listo para la traducción: ARNm. En <strong>procariotas</strong> está listo inmediatamente y, al no haber núcleo, los ribosomas pueden empezar directamente a sintetizar proteínas (<strong>polirribosoma</strong>).</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>⚠️ A la frase de la diapositiva le falta el verbo: he añadido «termina» entre corchetes.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>Promotor empieza, terminador acaba.</strong></p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo termina la transcripción y qué tiene de especial en procariotas?</p><label class="dom"><input type="checkbox" data-n="39"> Lo domino</label></div>
+</div></article>
+</section><section class="blk" id="b10" data-min="15"><h2 class="blk-h"><span class="bn">BLOQUE 11</span><span class="bt">Maduración del ARN</span><span class="bc">⏱ 15 min · Conceptos 40–40 · 1 🔴 · <b class="bd">0</b>/1 dominados</span></h2><article class="cpt lv1" id="c40" data-lv="1">
+<header class="c-h"><span class="c-n">40</span><h3>Por qué madura el ARN en eucariotas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 61</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Maduración del ARN</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Los retoques que necesita el ARN en eucariotas.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«En eucariotas, el ARN requiere modificaciones para dar lugar a las moléculas maduras de ARN (ARNm, ARNt y ARNr) → Este proceso se conoce como MADURACIÓN DEL ARN. (diap. 61)»</div></li><li><b class="term">Exones</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Las partes del gen que sí informan.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Regiones con información relacionada con la síntesis de proteínas. (diap. 61)»</div></li><li><b class="term">Intrones</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Las partes del gen que se eliminan.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Regiones que no tienen este tipo de información; cuando se produce el ARNm hay que eliminarlas. (diap. 61)»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ol><li>El ARN, al ser <strong>monocatenario</strong>, se degrada con facilidad: se modifica para evitarlo.</li><li>Se sintetiza en el <strong>núcleo</strong> y para salir al <strong>citoplasma</strong> debe modificar su estructura.</li><li>Hay que eliminar los <strong>intrones</strong>.</li></ol></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Tres motivos: protegerse, poder salir del núcleo y quitar lo que no sirve.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>E</strong>xones se <strong>E</strong>xpresan; <strong>I</strong>ntrones se <strong>I</strong>gnoran. Motivos: <strong>D-S-I</strong>, Degradación, Salida, Intrones.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 3 motivos por los que madura el ARN en eucariotas. ¿Qué son exones e intrones?</p><label class="dom"><input type="checkbox" data-n="40"> Lo domino</label></div>
+</div></article>
+</section><section class="xs" id="llave"><h2 class="xs-h">🔑 Bloque 12 · Preguntas llave</h2><p>Candidatas elegidas por lo que más destacan las diapositivas, de más a menos probable. <strong>No son preguntas confirmadas por la profe.</strong> Escríbelas de memoria al menos una vez.</p><details class="pq"><summary><span class="pn">🔑 1</span> Explica la replicación del ADN: características, fases y enzimas.</summary><div class="pa"><p><em>Por qué:</em> Tiene 2 títulos, muchas diapositivas y la mayoría de esquemas.</p><p><strong>Respuesta modelo:</strong></p><p>Duplica una molécula de ADN en dos idénticas, en la <strong>fase S de la interfase</strong>. Es <strong>semiconservativa</strong>, empieza en un <strong>origen</strong> (uno en procariotas, varios en eucariotas) y es <strong>bidireccional</strong>. <strong>Iniciación:</strong> proteínas reconocen el origen, las <strong>helicasas</strong> rompen los puentes de H y forman la burbuja, las <strong>SSBP</strong> mantienen separadas las cadenas y la <strong>girasa y la topoisomerasa</strong> relajan la tensión. <strong>Elongación:</strong> la <strong>primasa</strong> coloca primers, la <strong>ADN polimerasa III</strong> sintetiza 5’→3’, de forma continua en la hebra conductora y discontinua en la retardada (fragmentos de Okazaki). La <strong>ADN polimerasa I</strong> sustituye los primers por ADN y la <strong>ligasa</strong> une los fragmentos.</p></div></details><details class="pq"><summary><span class="pn">🔑 2</span> Explica la transcripción: enzimas y fases. ¿Qué diferencia hay entre procariotas y eucariotas?</summary><div class="pa"><p><em>Por qué:</em> Título propio, cuatro diapositivas seguidas y varias en negrita.</p><p><strong>Respuesta modelo:</strong></p><p>Síntesis de ARN usando como molde una cadena de ADN. Enzima: <strong>ARN polimerasa</strong>, 5’→3’; un tipo en procariotas y tres en eucariotas (I: ARNr; II: ARNm; III: ARNt y parte del ARNr). <strong>Iniciación:</strong> reconoce el <strong>promotor</strong> y se separan las hebras. <strong>Elongación:</strong> añade ribonucleótidos con U en lugar de T. <strong>Terminación:</strong> alcanza el <strong>terminador</strong> y se separa. En procariotas el ARN queda listo; en eucariotas debe <strong>madurar</strong>.</p></div></details><details class="pq"><summary><span class="pn">🔑 3</span> Compara ADN y ARN: función, azúcar, bases, cadenas y tamaño.</summary><div class="pa"><p><em>Por qué:</em> Es el eje de todo el tema.</p><p><strong>Respuesta modelo:</strong></p><p><strong>ADN:</strong> almacena y transmite; desoxirribosa; A, T, G, C; doble hélice antiparalela; millones de pares de bases. <strong>ARN:</strong> expresa la información para sintetizar proteínas; ribosa; A, U, G, C; cadena simple; cientos o miles de nucleótidos.</p></div></details><details class="pq"><summary><span class="pn">🔑 4</span> Describe la doble hélice del ADN y su empaquetamiento hasta el cromosoma.</summary><div class="pa"><p><em>Por qué:</em> Título propio, fotografía de Rosalind Franklin y muchas palabras destacadas.</p><p><strong>Respuesta modelo:</strong></p><p>Dos cadenas complementarias y <strong>antiparalelas</strong> alrededor de un eje central, unidas por <strong>puentes de H</strong> (A-T: 2; C-G: 3), con bases dentro y fosfato y desoxirribosa fuera; 10 nucleótidos por giro. Se asocia a <strong>histonas</strong>: <strong>nucleosoma</strong> (8 histonas) → <strong>fibra de cromatina</strong> → <strong>solenoide</strong> (6 nucleosomas por vuelta) → <strong>cromosoma metafásico</strong>.</p></div></details><details class="pq"><summary><span class="pn">🔑 5</span> Explica los 3 tipos de ARN y las diferencias de su estructura.</summary><div class="pa"><p><em>Por qué:</em> Tiene diapositiva resumen y una dedicada a cada tipo.</p><p><strong>Respuesta modelo:</strong></p><p><strong>ARNm:</strong> copia de un gen, lleva la información; primaria. <strong>ARNt:</strong> transporta aminoácidos; trébol que se pliega en L, con brazo aceptor (CCA-3’) y anticodón. <strong>ARNr:</strong> aproximadamente 80 % del ARN; con proteínas forma los ribosomas (subunidades 60 y 40).</p></div></details></section><p class="empty" id="empty" hidden>No hay conceptos con ese filtro o esa búsqueda.</p>
+<section class="xs" id="trampas"><h2 class="xs-h">⚠️ Trampas típicas del examen</h2><div class="tw"><table><thead><tr><th>No confundas…</th><th>…con…</th><th>Cómo diferenciarlos</th></tr></thead><tbody><tr><td><strong>Desoxirribosa</strong> (H)</td><td><strong>Ribosa</strong> (OH)</td><td>Desoxirribosa en ADN; ribosa en ARN</td></tr><tr><td><strong>Púricas</strong> (A, G)</td><td><strong>Pirimidínicas</strong> (C, T, U)</td><td>«Pura AGua»</td></tr><tr><td><strong>A-T: 2 puentes</strong></td><td><strong>C-G: 3 puentes</strong></td><td>No los inviertas</td></tr><tr><td><strong>5’</strong> extremo fosfato</td><td><strong>3’</strong> extremo pentosa</td><td>La síntesis siempre avanza 5’→3’</td></tr><tr><td><strong>Histonas</strong></td><td><strong>No histonas</strong></td><td>Las histonas forman nucleosomas; las otras son muy heterogéneas</td></tr><tr><td><strong>8 histonas</strong> por nucleosoma</td><td><strong>6 nucleosomas</strong> por vuelta</td><td>Nucleosoma frente a solenoide</td></tr><tr><td><strong>Replicación</strong>: origen</td><td><strong>Transcripción</strong>: promotor</td><td>Cada proceso tiene su punto de inicio</td></tr><tr><td><strong>Primasa</strong>: pone primers de ARN</td><td><strong>ADN pol I</strong>: los quita</td><td>Y la ADN pol III alarga</td></tr><tr><td><strong>Conductora</strong>: un primer, continua</td><td><strong>Retardada</strong>: varios, Okazaki</td><td>Ambas se sintetizan 5’→3’</td></tr><tr><td><strong>Cadena molde</strong></td><td><strong>Cadena codificante</strong></td><td>El ARN es complementario de la molde e igual que la codificante con U</td></tr><tr><td><strong>Exones</strong>: se quedan</td><td><strong>Intrones</strong>: se eliminan</td><td>E de Expresar, I de Ignorar</td></tr><tr><td><strong>ARN pol II</strong>: ARNm</td><td><strong>ADN pol III</strong>: replicación</td><td>No confundas ARN polimerasa con ADN polimerasa</td></tr></tbody></table></div></section><section class="xs" id="numeros"><h2 class="xs-h">🔢 Números clave (apréndelos como una tabla de multiplicar)</h2><div class="tw"><table><thead><tr><th>Número</th><th>Qué es</th></tr></thead><tbody><tr><td><strong>2</strong></td><td>Tipos de ácidos nucleicos y puentes de H entre A y T</td></tr><tr><td><strong>3</strong></td><td>Puentes de H entre C y G; ARN polimerasas en eucariotas; tipos de ARN</td></tr><tr><td><strong>5</strong></td><td>Tipos de bases nitrogenadas</td></tr><tr><td><strong>1953</strong></td><td>Modelo de Watson y Crick</td></tr><tr><td><strong>10 nucleótidos</strong></td><td>Un giro de 360º; también el tamaño del primer</td></tr><tr><td><strong>8</strong></td><td>Histonas en cada nucleosoma</td></tr><tr><td><strong>6</strong></td><td>Nucleosomas por vuelta de solenoide</td></tr><tr><td><strong>80 %</strong></td><td>ARNr respecto al ARN total</td></tr><tr><td><strong>60: 3 + 49</strong></td><td>Subunidad mayor: moléculas de ARNr + proteínas</td></tr><tr><td><strong>40: 1 + 33</strong></td><td>Subunidad menor: moléculas de ARNr + proteínas</td></tr><tr><td><strong>5’→3’</strong></td><td>Dirección de síntesis de todas las polimerasas</td></tr></tbody></table></div></section><section class="xs" id="chequeo"><h2 class="xs-h">✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)</h2><ol><li>Las 3 partes del nucleótido (F-P-B).</li><li>Las 5 bases y en qué ácido nucleico está cada una.</li><li>Complementaria de 5’ ACTG 3’ y puentes de H.</li><li>Las características de la doble hélice.</li><li>ADN → nucleosoma → cromatina → solenoide → cromosoma metafásico.</li><li>ADN mitocondrial, de cloroplastos y de procariotas.</li><li>Los 3 tipos de ARN con función y estructura.</li><li>Replicación, transcripción y traducción.</li><li>Las 7 enzimas de la replicación en orden.</li><li>Conductora frente a retardada.</li><li>Las 3 ARN polimerasas.</li><li>Promotor y terminador, molde y codificante.</li><li>Los 3 motivos de la maduración.</li></ol></section><section class="xs" id="impres"><h2 class="xs-h">⚡ Lo imprescindible (repaso exprés)</h2><p class="meta">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><h3 class='ih'>1 · Ácidos nucleicos</h3><details class="pq"><summary>¿Qué son?</summary><div class="pa"><p>Macromoléculas que <strong>almacenan, transmiten y expresan</strong> la información genética.</p></div></details><details class="pq"><summary>¿Partes del nucleótido?</summary><div class="pa"><p>Fosfato, pentosa y base nitrogenada.</p></div></details><details class="pq"><summary>¿Púricas y pirimidínicas?</summary><div class="pa"><p>Púricas: A, G. Pirimidínicas: C, T, U.</p></div></details><h3 class='ih'>2 · ADN</h3><details class="pq"><summary>¿Complementarias?</summary><div class="pa"><p>A-T (2 puentes de H), C-G (3).</p></div></details><details class="pq"><summary>¿Doble hélice?</summary><div class="pa"><p>Dos cadenas antiparalelas y complementarias; bases dentro; 10 nucleótidos por giro.</p></div></details><details class="pq"><summary>¿Nucleosoma?</summary><div class="pa"><p>Octámero de histonas con ADN enrollado.</p></div></details><details class="pq"><summary>¿Procariotas?</summary><div class="pa"><p>Un cromosoma circular libre, sin proteínas, y plásmidos.</p></div></details><h3 class='ih'>3 · ARN</h3><details class="pq"><summary>¿Tipos?</summary><div class="pa"><p>ARNm (información), ARNt (aminoácidos), ARNr (ribosomas).</p></div></details><details class="pq"><summary>¿Pareja especial?</summary><div class="pa"><p>G-U.</p></div></details><details class="pq"><summary>¿Subunidades?</summary><div class="pa"><p>60: 3 ARNr + 49 proteínas. 40: 1 ARNr + 33 proteínas.</p></div></details><h3 class='ih'>4 · Replicación</h3><details class="pq"><summary>¿Cuándo?</summary><div class="pa"><p>Fase S de la interfase.</p></div></details><details class="pq"><summary>¿Características?</summary><div class="pa"><p>Semiconservativa, con origen y bidireccional.</p></div></details><details class="pq"><summary>¿Enzimas?</summary><div class="pa"><p>Helicasa, SSBP, girasa y topoisomerasa, primasa, ADN pol III, ADN pol I, ligasa.</p></div></details><details class="pq"><summary>¿Dirección?</summary><div class="pa"><p>Siempre 5’→3’.</p></div></details><h3 class='ih'>5 · Transcripción y maduración</h3><details class="pq"><summary>¿Fases?</summary><div class="pa"><p>Iniciación (promotor), elongación y terminación (terminador).</p></div></details><details class="pq"><summary>¿ARN polimerasas?</summary><div class="pa"><p>I: ARNr. II: ARNm. III: ARNt y parte del ARNr.</p></div></details><details class="pq"><summary>¿Por qué madura?</summary><div class="pa"><p>Evitar degradación, poder salir del núcleo y eliminar intrones.</p></div></details></section><section class="xs" id="glosario"><h2 class="xs-h">📖 Glosario (palabras importantes, por orden alfabético)</h2><div class="tw"><table><thead><tr><th>Término</th><th>Qué significa</th></tr></thead><tbody><tr><td><strong>Anticodón</strong></td><td>Tres bases del ARNt que reconocen el codón del ARNm</td></tr><tr><td><strong>Antiparalelas</strong></td><td>Cadenas en sentidos opuestos, 5’-3’ y 3’-5’</td></tr><tr><td><strong>Burbuja de replicación</strong></td><td>Zona abierta del ADN durante la replicación</td></tr><tr><td><strong>Cadena codificante</strong></td><td>Hebra de ADN con la misma información que el ARN, con T en lugar de U</td></tr><tr><td><strong>Cadena molde</strong></td><td>Hebra de ADN que se lee para sintetizar el ARN</td></tr><tr><td><strong>Cebador o primer</strong></td><td>Fragmento corto de ARN que permite empezar a la ADN polimerasa</td></tr><tr><td><strong>Codón</strong></td><td>Secuencia del ARNm que indica un aminoácido</td></tr><tr><td><strong>Cromatina</strong></td><td>ADN asociado a histonas; «collar de perlas»</td></tr><tr><td><strong>Exón</strong></td><td>Región del gen con información para proteínas</td></tr><tr><td><strong>Fragmento de Okazaki</strong></td><td>Trozo de ADN de la hebra retardada</td></tr><tr><td><strong>Girasa y topoisomerasa</strong></td><td>Enzimas que relajan la tensión del superenrollamiento</td></tr><tr><td><strong>Helicasa</strong></td><td>Enzima que rompe los puentes de H y separa las hebras</td></tr><tr><td><strong>Hibridación</strong></td><td>Unión de dos cadenas complementarias por puentes de H</td></tr><tr><td><strong>Histonas</strong></td><td>Proteínas básicas que compactan el ADN</td></tr><tr><td><strong>Intrón</strong></td><td>Región del gen sin información para proteínas; se elimina</td></tr><tr><td><strong>Ligasa</strong></td><td>Enzima que une fragmentos de ADN</td></tr><tr><td><strong>Nucleosoma</strong></td><td>Octámero de histonas con ADN enrollado</td></tr><tr><td><strong>Plásmido</strong></td><td>Pequeña molécula de ADN circular de procariotas</td></tr><tr><td><strong>Primasa</strong></td><td>Enzima que sintetiza los primers</td></tr><tr><td><strong>Promotor</strong></td><td>Secuencia del inicio de un gen que reconoce la ARN polimerasa</td></tr><tr><td><strong>SSBP</strong></td><td>Proteínas que se unen a la cadena sencilla</td></tr><tr><td><strong>Semiconservativa</strong></td><td>Cada ADN nuevo conserva una hebra original</td></tr><tr><td><strong>Solenoide</strong></td><td>Fibra de cromatina enrollada sobre sí misma</td></tr><tr><td><strong>Telómero</strong></td><td>Extremo del cromosoma, que se acorta en cada división</td></tr><tr><td><strong>Terminador</strong></td><td>Secuencia que indica el final de la transcripción</td></tr></tbody></table></div></section>
+<div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
+<aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
+<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><a class="dt sim" href="../../bio3/simulacro/">📝 Simulacro</a><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<details class="db"><summary><span class="dn">1</span><span class="dt2">Qué son los ácidos nucleicos y los nucleótidos</span><span class="dc" data-b="b0">0/5</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i1" href="#c1"><i></i>1. Ácidos nucleicos: ADN y ARN</a><a class="dl i1" href="#c2"><i></i>2. El nucleótido y sus 3 partes</a><a class="dl i2" href="#c3"><i></i>3. El grupo fosfato</a><a class="dl i1" href="#c4"><i></i>4. La pentosa: ribosa y desoxirribosa</a><a class="dl i1" href="#c5"><i></i>5. Las 5 bases nitrogenadas</a></details>
+<details class="db"><summary><span class="dn">2</span><span class="dt2">ADN: características y estructura primaria</span><span class="dc" data-b="b1">0/5</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i1" href="#c6"><i></i>6. Características del ADN</a><a class="dl i1" href="#c7"><i></i>7. Estructura primaria del ADN</a><a class="dl i1" href="#c8"><i></i>8. Complementariedad de bases y puentes de H</a><a class="dl i2" href="#c9"><i></i>9. Parejas en el ARN: la U sustituye a la T</a><a class="dl i1" href="#c10"><i></i>10. Propiedades fisicoquímicas e hibridación</a></details>
+<details class="db"><summary><span class="dn">3</span><span class="dt2">ADN: doble hélice y empaquetamiento</span><span class="dc" data-b="b2">0/4</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i1" href="#c11"><i></i>11. Estructura secundaria: la doble hélice</a><a class="dl i1" href="#c12"><i></i>12. Estructura terciaria: histonas y no histonas</a><a class="dl i1" href="#c13"><i></i>13. Nucleosoma y fibra de cromatina</a><a class="dl i1" href="#c14"><i></i>14. Solenoide y cromosoma metafásico</a></details>
+<details class="db"><summary><span class="dn">4</span><span class="dt2">ADN fuera del núcleo y en procariotas</span><span class="dc" data-b="b3">0/3</span></summary><a class="dbk" href="#b3">Ir al inicio del bloque</a><a class="dl i2" href="#c15"><i></i>15. ADN mitocondrial</a><a class="dl i2" href="#c16"><i></i>16. ADN de cloroplastos</a><a class="dl i1" href="#c17"><i></i>17. ADN de procariotas y plásmidos</a></details>
+<details class="db"><summary><span class="dn">5</span><span class="dt2">ARN: características y estructuras</span><span class="dc" data-b="b4">0/3</span></summary><a class="dbk" href="#b4">Ir al inicio del bloque</a><a class="dl i1" href="#c18"><i></i>18. Características del ARN</a><a class="dl i1" href="#c19"><i></i>19. Estructuras primaria, secundaria y terciaria del ARN</a><a class="dl i1" href="#c20"><i></i>20. Los 3 tipos de ARN</a></details>
+<details class="db"><summary><span class="dn">6</span><span class="dt2">ARNm, ARNt y ARNr en detalle</span><span class="dc" data-b="b5">0/3</span></summary><a class="dbk" href="#b5">Ir al inicio del bloque</a><a class="dl i1" href="#c21"><i></i>21. ARN mensajero</a><a class="dl i1" href="#c22"><i></i>22. ARN transferente: trébol, L y anticodón</a><a class="dl i1" href="#c23"><i></i>23. ARN ribosomal y ribosoma</a></details>
+<details class="db"><summary><span class="dn">7</span><span class="dt2">Flujo de la información y replicación</span><span class="dc" data-b="b6">0/3</span></summary><a class="dbk" href="#b6">Ir al inicio del bloque</a><a class="dl i1" href="#c24"><i></i>24. Flujo de la información genética</a><a class="dl i1" href="#c25"><i></i>25. Replicación: qué es y cuándo ocurre</a><a class="dl i1" href="#c26"><i></i>26. Características de la replicación</a></details>
+<details class="db"><summary><span class="dn">8</span><span class="dt2">Replicación: fase de iniciación</span><span class="dc" data-b="b7">0/2</span></summary><a class="dbk" href="#b7">Ir al inicio del bloque</a><a class="dl i1" href="#c27"><i></i>27. Origen, helicasas y burbuja</a><a class="dl i1" href="#c28"><i></i>28. SSBP, girasa y topoisomerasa</a></details>
+<details class="db"><summary><span class="dn">9</span><span class="dt2">Replicación: elongación y telómeros</span><span class="dc" data-b="b8">0/6</span></summary><a class="dbk" href="#b8">Ir al inicio del bloque</a><a class="dl i1" href="#c29"><i></i>29. Primasa y primers</a><a class="dl i1" href="#c30"><i></i>30. Hebra conductora y hebra retardada</a><a class="dl i1" href="#c31"><i></i>31. ADN polimerasa III</a><a class="dl i1" href="#c32"><i></i>32. ADN polimerasa I y ligasa</a><a class="dl i2" href="#c33"><i></i>33. Orden completo de la replicación</a><a class="dl i2" href="#c34"><i></i>34. Acortamiento de los telómeros</a></details>
+<details class="db"><summary><span class="dn">10</span><span class="dt2">Transcripción</span><span class="dc" data-b="b9">0/5</span></summary><a class="dbk" href="#b9">Ir al inicio del bloque</a><a class="dl i1" href="#c35"><i></i>35. Transcripción: fases y diferencias</a><a class="dl i1" href="#c36"><i></i>36. ARN polimerasas</a><a class="dl i1" href="#c37"><i></i>37. Iniciación: el promotor</a><a class="dl i1" href="#c38"><i></i>38. Elongación: molde, codificante y uracilo</a><a class="dl i1" href="#c39"><i></i>39. Terminación y procariotas</a></details>
+<details class="db"><summary><span class="dn">11</span><span class="dt2">Maduración del ARN</span><span class="dc" data-b="b10">0/1</span></summary><a class="dbk" href="#b10">Ir al inicio del bloque</a><a class="dl i1" href="#c40"><i></i>40. Por qué madura el ARN en eucariotas</a></details>
+
+<a class="dl bll" href="#llave"><span class="dn">9</span>🔑 Preguntas llave</a>
+<p class="dx">Extras</p><a class="dl" href="#trampas">⚠️ Trampas típicas del examen</a><a class="dl" href="#numeros">🔢 Números clave (apréndelos como una tabla de multiplicar)</a><a class="dl" href="#chequeo">✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)</a><a class="dl" href="#impres">⚡ Lo imprescindible</a><a class="dl" href="#glosario">📖 Glosario (palabras importantes, por orden alfabético)</a></div></aside><div id="planOv" hidden role="dialog" aria-modal="true" aria-label="Mi plan de estudio"><div class="pwrap">
+<div class="ptop"><header><p class="eyebrow" id="pl_eb"></p><h1>📅 Mi plan de estudio</h1><p class="sub" id="pl_sub"></p></header><button type="button" class="px" id="planClose" aria-label="Cerrar plan">×</button></div>
+<section class="count" id="pl_count"></section>
+<section class="cfg">
+  <div><p class="k" style="margin:0 0 6px">📆 Fecha del examen</p><input type="date" id="pl_fecha" style="font:inherit;font-size:16px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 8px"></div>
+  <div><p class="k" style="margin:0 0 6px">1 · ¿Cuántos días vas a estudiar?</p><div class="days" id="pl_days"></div></div>
+  <div><p class="k" style="margin:0 0 6px">2 · ¿Cuándo empiezas?</p><div class="seg" id="pl_startSeg"></div></div>
+  <p class="foot" style="margin:0">Cambia la hora de inicio y fin de cada día si hace falta: el plan se reparte solo según el tiempo que tengas.</p>
+</section>
+<div id="pl_msg"></div>
+<div id="pl_plan" style="display:flex;flex-direction:column;gap:14px"></div>
+<p class="foot">Toca <b>Ir →</b> para saltar a esa parte del repaso. Marca la casilla cuando termines cada tarea. Se guarda en este móvil.</p>
+</div></div>
+<div class="scrim" id="scrim" hidden></div><button type="button" class="fab hf" id="hideFab" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideFabTxt">Tapar</span></button><button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab idx" id="drwOpen" aria-label="Abrir índice">☰ Índice</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
+<div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
+ <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
+ <div class="fc-setup" id="fcSetup">
+  <p class="meta" style="margin:0">Pregunta por delante, respuesta por detrás. Toca la tarjeta para <b>encender la luz 💡</b> y darle la vuelta. Luego di si te la sabías.</p>
+  <p class="lbl">1 · ¿Qué bloque?</p><div class="opts" id="oBlk"></div>
+  <p class="lbl">2 · ¿Qué preguntas?</p><div class="opts" id="oKind"></div>
+  <p class="lbl">3 · ¿Cuáles?</p><div class="opts" id="oLv"></div>
+  <button type="button" class="go" id="fcGo">Empezar</button>
+ </div>
+ <div id="fcPlay" hidden style="display:contents">
+  <div class="fc-prog"><span id="fcN"></span><span id="fcS"></span></div>
+  <div class="fc-bar"><i class="g" id="fcG"></i><i class="r" id="fcR"></i></div>
+  <div class="stage"><div class="card3" id="card3" tabindex="0" role="button" aria-label="Dar la vuelta a la tarjeta">
+   <div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></div>
+  <button type="button" class="flipb" id="fcFlip">💡 Ver respuesta</button>
+  <div class="btns" id="fcBtns" hidden><button type="button" class="b-no" id="fcNo">❌ No me la sé</button><button type="button" class="b-si" id="fcSi">✅ Me la sé</button></div>
+ </div>
+ <div class="fc-end" id="fcEnd" hidden></div>
+</div></div>
+</div>
+<script>
+const KEY="bio3-repaso-v1";
+let st={done:{},f:"0",mode:"read",open:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.done)st=Object.assign(st,s)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const bar=document.querySelector(".bar");
+const setBar=()=>document.documentElement.style.setProperty("--bar","8px");setBar();addEventListener("resize",setBar);
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const cpts=[...document.querySelectorAll(".cpt")];
+const blks=[...document.querySelectorAll(".blk")];
+cpts.forEach(c=>{c._t=norm(c.textContent);const cb=c.querySelector(".dom input");const n=cb.dataset.n;cb.checked=!!st.done[n];c.classList.toggle("done",cb.checked);
+  cb.addEventListener("change",()=>{if(cb.checked)st.done[n]=1;else delete st.done[n];c.classList.toggle("done",cb.checked);save();prog();if(st.f==="pend")apply()});
+  const b=document.createElement("button");b.type="button";b.className="show";b.textContent="Ver respuesta";
+  const q=c.querySelector(".box.q");q.insertBefore(b,q.querySelector(".dom"));
+  b.addEventListener("click",()=>{c.classList.toggle("reveal");b.textContent=c.classList.contains("reveal")?"Ocultar respuesta":"Ver respuesta"})});
+function setOpen(b,v){b.classList.toggle("open",v);b.querySelector(".blk-h").setAttribute("aria-expanded",String(v));if(v)st.open[b.id]=1;else delete st.open[b.id]}
+blks.forEach(b=>{const h=b.querySelector(".blk-h");h.tabIndex=0;h.setAttribute("role","button");setOpen(b,!!st.open[b.id]);
+  const t=()=>{setOpen(b,!b.classList.contains("open"));save()};h.addEventListener("click",t);h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();t()}})});
+document.getElementById("openAll").onclick=()=>{blks.forEach(b=>setOpen(b,true));save()};
+document.getElementById("closeAll").onclick=()=>{blks.forEach(b=>setOpen(b,false));save()};
+function go(id){const el=document.getElementById(id);if(!el)return;const b=el.closest(".blk");if(b){setOpen(b,true);save()}
+  requestAnimationFrame(()=>{const y=el.getBoundingClientRect().top+scrollY-8;scrollTo({top:y,behavior:"smooth"})})}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.getAttribute("href").slice(1))}));
+document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)go(e.target.value);e.target.value=""});
+function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const k=cs.filter(x=>st.done[x.dataset.n]).length;const el=b.querySelector(".bd");if(el)el.textContent=k;const dc=document.querySelector('.dc[data-b="'+b.id+'"]');if(dc){dc.textContent=(k===cs.length?"✓ ":"")+k+"/"+cs.length;dc.classList.toggle("full",k===cs.length)}});
+  const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de "+cpts.length;document.getElementById("pBar").style.width=(n/cpts.length*100)+"%";
+  const p1=cpts.filter(c=>c.dataset.lv==="1"&&!st.done[c.id.slice(1)]).length;document.getElementById("pHint").textContent=p1?"Te faltan "+p1+" 🔴":"¡Todos los 🔴 dominados!"}
+function apply(){const q="";let shown=0;const filt=st.f!=="0";
+  cpts.forEach(c=>{const n=c.id.slice(1);let ok=true;if(st.f==="pend")ok=!st.done[n];else if(st.f!=="0")ok=c.dataset.lv===st.f;if(q)ok=ok&&c._t.includes(q);c.hidden=!ok;if(ok)shown++});
+  blks.forEach(b=>{const any=[...b.querySelectorAll(".cpt")].some(c=>!c.hidden);b.hidden=!any;if(any&&filt)b.classList.add("open")});
+  if(!filt)blks.forEach(b=>b.classList.toggle("open",!!st.open[b.id]));
+  document.getElementById("empty").hidden=shown>0;
+  document.querySelectorAll(".chips .chip").forEach(ch=>ch.setAttribute("aria-pressed",String(ch.dataset.f===st.f)))}
+document.querySelectorAll(".chips .chip").forEach(ch=>ch.addEventListener("click",()=>{st.f=ch.dataset.f;save();apply()}));
+
+function setMode(m){st.mode=m;save();document.body.classList.toggle("test",m==="test");
+  document.getElementById("mRead").setAttribute("aria-pressed",String(m==="read"));document.getElementById("mTest").setAttribute("aria-pressed",String(m==="test"));
+  cpts.forEach(c=>{c.classList.remove("reveal");c.querySelector(".show").textContent="Ver respuesta"})}
+document.getElementById("mRead").onclick=()=>setMode("read");document.getElementById("mTest").onclick=()=>setMode("test");
+function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);
+  document.querySelectorAll(".fd.peek").forEach(x=>x.classList.remove("peek"));setBar();
+  const hf=document.getElementById("hideFab");hf.setAttribute("aria-pressed",String(v));document.getElementById("hideFabTxt").textContent=v?"🙈 Tapadas":"💡 Tapar"}
+document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide));
+document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
+setHide(!!st.hide);
+setMode(st.mode);apply();prog();
+if(/^#[\w-]+$/.test(location.hash)){const h=location.hash.slice(1);setTimeout(()=>go(h),300)}
+const drw=document.getElementById("drw"),scrim=document.getElementById("scrim");
+const wide=()=>matchMedia("(min-width:1100px)").matches;
+function drwSet(v){drw.classList.toggle("on",v);scrim.hidden=!v;document.body.style.overflow=v&&!wide()?"hidden":""}
+document.getElementById("drwOpen").onclick=()=>drwSet(true);document.getElementById("drwClose").onclick=()=>drwSet(false);scrim.onclick=()=>drwSet(false);
+drw.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(!wide())drwSet(false)}));
+document.getElementById("fcOpen2").addEventListener("click",()=>{if(!wide())drwSet(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drw.classList.contains("on"))drwSet(false)});
+const upB=document.getElementById("upBtn");addEventListener("scroll",()=>{upB.hidden=scrollY<600},{passive:true});upB.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* ===== Buscador ===== */
+(function(){
+const qi=document.getElementById("q"),res=document.getElementById("res");
+const U=[];
+const txt=el=>{const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);const out=[];while(w.nextNode()){const t=w.currentNode;if(t.parentNode.closest(".fl,.lbl,.tag,.show,.dom,.srcl,figcaption"))continue;const v=t.nodeValue.trim();if(v)out.push(v)}return out.join(" ")};
+const add=(el,kind,title,text)=>U.push({el,kind,title,text,n:norm(text),nt:norm(title)});
+cpts.forEach(c=>{const t=c.querySelector("h3").childNodes[0].textContent.trim();add(c,"Concepto "+c.id.slice(1)+" · "+c.closest(".blk").querySelector(".bt").textContent,t,txt(c))});
+document.querySelectorAll("#hoja .pq").forEach(d=>add(d,"20 preguntas de la hoja",d.querySelector("summary").textContent,txt(d)));
+document.querySelectorAll("#llave .pq").forEach(d=>add(d,"🔑 Preguntas llave",d.querySelector("summary").textContent,txt(d)));document.querySelectorAll("#impres .pq").forEach(d=>add(d,"Lo imprescindible",d.querySelector("summary").textContent,txt(d)));
+[["glosario","Glosario"],["trampas","Trampas"],["numeros","Números clave"]].forEach(([id,k])=>document.querySelectorAll("#"+id+" tbody tr").forEach(r=>add(r,k,r.cells[0].textContent,txt(r))));
+document.querySelectorAll("#chequeo li").forEach(li=>add(li,"Chequeo final",li.textContent,li.textContent));
+const escH=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function snip(text,q){const n=norm(text);const i=n.indexOf(q);if(i<0)return escH(text.slice(0,110))+"…";
+  const a=Math.max(0,i-50),b=Math.min(text.length,i+q.length+70);
+  return (a?"…":"")+escH(text.slice(a,i))+"<mark>"+escH(text.slice(i,i+q.length))+"</mark>"+escH(text.slice(i+q.length,b))+(b<text.length?"…":"")}
+function markT(t,q){const n=norm(t);const i=n.indexOf(q);return i<0?escH(t):escH(t.slice(0,i))+"<mark>"+escH(t.slice(i,i+q.length))+"</mark>"+escH(t.slice(i+q.length))}
+let found=[];
+function run(){const raw=qi.value.trim();const q=norm(raw);if(q.length<2){res.hidden=true;return}
+  found=U.filter(u=>u.n.includes(q)).sort((a,b)=>(b.nt.includes(q)-a.nt.includes(q)));
+  res.hidden=false;
+  if(!found.length){res.innerHTML=`<div class="none">No aparece «${escH(raw)}» en el repaso. Prueba con otra palabra o sin la última letra.</div>`;return}
+  res.innerHTML=`<div class="rh"><span>${found.length} resultado${found.length>1?"s":""} para «${escH(raw)}»</span><button type="button" id="resX">Cerrar</button></div>`+
+   found.slice(0,60).map((u,k)=>`<button type="button" class="ri" data-k="${k}"><span class="rk">${escH(u.kind)}</span><span class="rt">${markT(u.title.slice(0,120),q)}</span><span class="rs">${snip(u.text.replace(/\s+/g," "),q)}</span></button>`).join("");
+  document.getElementById("resX").onclick=()=>{qi.value="";res.hidden=true};
+  res.querySelectorAll(".ri").forEach(b=>b.onclick=()=>jump(found[+b.dataset.k],q))}
+function jump(u,q){const el=u.el;const b=el.closest(".blk");if(b){setOpen(b,true);save()}if(b&&b.hidden){st.f="0";save();apply()}
+  if(el.tagName==="DETAILS")el.open=true;const d=el.closest("details");if(d)d.open=true;
+  if(el.closest(".cpt")&&document.body.classList.contains("test")){const c=el.closest(".cpt");c.classList.add("reveal")}
+  highlight(el,q);
+  requestAnimationFrame(()=>{const tgt=firstMark(el)||el;const y=tgt.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:"smooth"});
+    el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")})}
+function clearHL(){document.querySelectorAll("mark.sh").forEach(m=>{const t=document.createTextNode(m.textContent);m.replaceWith(t);t.parentNode&&t.parentNode.normalize()})}
+function highlight(root,q){clearHL();const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(t=>{const n=norm(t.nodeValue);let i=n.indexOf(q);if(i<0||t.parentNode.closest("script,style,.res"))return;
+    const frag=document.createDocumentFragment();let last=0;const s=t.nodeValue;
+    while(i>=0){frag.append(s.slice(last,i));const m=document.createElement("mark");m.className="sh";m.style.cssText="background:#ffe066;color:#1d1828;border-radius:3px";m.textContent=s.slice(i,i+q.length);frag.append(m);last=i+q.length;i=n.indexOf(q,last)}
+    frag.append(s.slice(last));t.replaceWith(frag)})}
+function firstMark(el){return el.querySelector("mark.sh")}
+qi.addEventListener("input",run);qi.addEventListener("focus",run);
+qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDefault();jump(found[0],norm(qi.value.trim()))}if(e.key==="Escape"){res.hidden=true}});
+})();
+/* ===== Mi plan ===== */
+(function(){
+
+const EXAM={id:"bio3",em:"🧬",asig:"Biología Molecular",examen:"3er examen",fecha:null,horario:["8:00","13:25"],repaso:"#",simulacro:"../../bio3/simulacro/",
+  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,m:+b.dataset.min||0,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
+const PKEY="plan-estudio-v1-"+EXAM.id;
+let ps={n:null,start:"hoy",times:{},done:{}};
+try{const s=JSON.parse(localStorage.getItem(PKEY)||"null");if(s)ps=Object.assign(ps,s)}catch(e){}
+const psave=()=>{try{localStorage.setItem(PKEY,JSON.stringify(ps))}catch(e){}};
+const $=id=>document.getElementById("pl_"+id);
+const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const today=new Date();today.setHours(0,0,0,0);
+const fmtD=d=>DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+let exam,left;const maxN=10;
+function setExam(){const f=ps.fecha||EXAM.fecha||iso(new Date(today.getTime()+7*864e5));exam=new Date(f+"T00:00:00");left=Math.round((exam-today)/864e5);
+  $("fecha").value=f;
+  $("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
+  $("sub").textContent="Examen: "+fmtD(exam)+(ps.fecha||EXAM.fecha?"":" (fecha de ejemplo: pon la tuya arriba)")+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar.";
+  $("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`}
+setExam();
+if(!ps.n)ps.n=Math.min(maxN,Math.max(1,left));
+$("fecha").addEventListener("change",e=>{if(!e.target.value)return;ps.fecha=e.target.value;setExam();ps.n=Math.min(maxN,Math.max(1,left));psave();
+  $("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(+x.dataset.n===ps.n)));prender()});
+$("days").innerHTML=Array.from({length:maxN},(_,i)=>`<button type="button" class="dchip" data-n="${i+1}" aria-pressed="${ps.n===i+1}" aria-label="${i+1} días">${i+1}</button>`).join("");
+$("days").querySelectorAll(".dchip").forEach(b=>b.onclick=()=>{ps.n=+b.dataset.n;psave();$("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+$("startSeg").innerHTML=[["hoy","Hoy"],["manana","Mañana"]].map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${ps.start===k}">${t}</button>`).join("");
+$("startSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{ps.start=b.dataset.k;psave();$("startSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+
+/* ---------- coste en minutos ---------- */
+const MIN={1:9,2:6,3:3};const CARDS=8;
+const bCost=b=>b.m||(b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS);
+const REVIEW=[
+ {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
+ {t:"📝 Simulacro completo",d:"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
+ {t:"🩹 Repasa lo que fallaste en el Simulacro",d:"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».",m:30,u:EXAM.simulacro,rev:1},
+ {t:"⚠️ Trampas y chequeo final",d:"Repasa las trampas y contesta el chequeo final sin mirar.",m:25,u:"#trampas",rev:1},
+ {t:"⚠️ Trampas y 🔢 números clave",d:"Las parejas que se confunden y las cifras (%, µm, mm/h…).",m:20,u:"#trampas",rev:1},
+ {t:"⚡ Lo imprescindible",d:"Pregunta → respuesta corta. Lo último antes de dormir.",m:20,u:"#impres",rev:1}];
+const WARM={t:"🔁 Calentamiento: lo que fallaste ayer",d:"🃏 Tarjetas → «Solo las que fallé». Así lo de ayer no se te olvida.",m:15,u:"#fc",rev:1};
+const toMin=s=>{const [h,m]=(s||"0:0").split(":").map(Number);return h*60+m};
+const toHM=m=>{m=((m%1440)+1440)%1440;return Math.floor(m/60)+":"+String(m%60).padStart(2,"0")};
+function dayDate(i){const d=new Date(today);d.setDate(d.getDate()+i+(ps.start==="manana"?1:0));return d}
+function defTimes(i){const d=dayDate(i);const isToday=d.getTime()===today.getTime();
+  if(isToday){const now=new Date();let s=Math.ceil((now.getHours()*60+now.getMinutes()+15)/15)*15;s=Math.max(s,8*60);const e=Math.max(s+60,22*60);return [toHM(s),toHM(Math.min(e,23*60+30))]}
+  return EXAM.horario}
+function times(i){const k=dayDate(i).toISOString().slice(0,10);return ps.times[k]||defTimes(i)}
+function setTime(i,which,v){const k=dayDate(i).toISOString().slice(0,10);const t=times(i).slice();t[which]=v;ps.times[k]=t;psave();prender()}
+
+function plan(N){
+  const caps=Array.from({length:N},(_,i)=>{const [a,b]=times(i);return Math.max(30,toMin(b)-toMin(a))});
+  const days=Array.from({length:N},()=>[]);
+  const blocks=EXAM.blocks.map(b=>({b,m:bCost(b)}));const total=blocks.reduce((s,x)=>s+x.m,0);
+  let mode="full";
+  if(N===1){
+    const rojo=EXAM.blocks.map(b=>({b,cs:b.c.filter(c=>c.lv===1)})).filter(x=>x.cs.length);
+    const avail=caps[0]-80;
+    days[0].push({t:"🔴 Solo lo imprescindible de cada bloque",d:"En el Repaso pulsa el filtro <b>🔴 Imprescindibles</b> y repasa: "+rojo.map(x=>`<b>${x.b.n}</b> ${x.b.t} (${x.cs.map(c=>c.n).join(", ")})`).join(" · "),m:Math.max(60,avail),u:"#fc"});
+    days[0].push(REVIEW[3],REVIEW[5]);
+    return {days,caps,mode:"rojo"};}
+  const lastRev=REVIEW;const revM=lastRev.reduce((s,x)=>s+x.m,0);
+  // capacidad para bloques: días 1..N-1 (menos calentamiento) + lo que sobre del último día
+  const W=.82;/* tiempo real de estudio descontando descansos */
+  const learnCaps=caps.map((c,i)=>i<N-1?c*W-(i>0?WARM.m:0):Math.max(0,c*W-WARM.m-revM));
+  const learnTotal=learnCaps.reduce((s,x)=>s+x,0);
+  const f=Math.min(1,learnTotal/total);if(f<1)mode=f<.7?"rojo":"rapido";
+  // repartir bloques en orden según capacidad acumulada
+  const cum=[];let acc=0;const tf=total*f;learnCaps.forEach(c=>{acc+=c;cum.push(acc/learnTotal*tf)});
+  let pos=0;
+  blocks.forEach(x=>{const m=x.m*f;const mid=pos+m/2;let d=cum.findIndex(c=>mid<=c);if(d<0)d=N-1;
+    x.day=d;pos+=m;x.mm=Math.round(m)});
+  for(let i=0;i<N;i++){
+    if(i>0)days[i].push(WARM);
+    blocks.filter(x=>x.day===i).forEach(x=>{const r=x.b.c.filter(c=>c.lv===1);
+      days[i].push({t:`Bloque ${x.b.n} · ${x.b.t}`,blk:x.b,m:x.mm,u:"#"+x.b.id,
+        d:(mode==="rojo"?"<b>Poco tiempo:</b> lee bien los 🔴 y los demás por encima. ":"")+"Lee los conceptos "+x.b.c[0].n+"–"+x.b.c[x.b.c.length-1].n+" y al terminar haz sus 🃏 Tarjetas. "+(r.length?"🔴 Imprescindibles: <b>"+r.map(c=>c.n).join(", ")+"</b>.":"")})});
+    if(i===N-1)days[i].push(...lastRev);}
+  return {days,caps,mode,f};
+}
+function schedule(tasks,start){let t=toMin(start),run=0;const out=[];
+  tasks.forEach((x,k)=>{out.push({...x,a:t,b:t+x.m});t+=x.m;run+=x.m;
+    if(run>=45&&k<tasks.length-1){out.push({brk:1,t:"☕ Descanso: levántate, agua, nada de móvil",a:t,b:t+10,m:10});t+=10;run=0}});
+  return out}
+function prender(){
+  const N=ps.n;const P=plan(N);
+  const msg=$("msg");
+  if(left>0&&N>left)msg.innerHTML=`<p class="note warn">⚠️ Elegiste ${N} días pero solo quedan ${left} antes del examen. Los últimos días caerían después del examen.</p>`;
+  else if(N===1)msg.innerHTML=`<p class="note warn">⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴 y "Lo imprescindible".</p>`;
+  else if(P.mode==="rojo")msg.innerHTML=`<p class="note warn">⚠️ <b>El tiempo es justo.</b> En cada bloque céntrate en los conceptos 🔴 y los demás léelos por encima. Si puedes, alarga las horas de algún día.</p>`;
+  else if(P.mode==="rapido")msg.innerHTML=`<p class="note warn">⏱️ Vas un poco justo: en cada bloque dale prioridad a los 🔴. Si puedes, añade algo de tiempo a algún día.</p>`;
+  else msg.innerHTML=`<p class="note ok">✅ Te da tiempo de todo. Sigue el plan en orden y tacha cada tarea.</p>`;
+  $("plan").innerHTML=P.days.map((tasks,i)=>{const d=dayDate(i);const [a,b]=times(i);const sch=schedule(tasks,a);
+    const used=sch.length?sch[sch.length-1].b-toMin(a):0;const over=used>P.caps[i]+10;
+    const real=sch.filter(x=>!x.brk);const k=dayDate(i).toISOString().slice(0,10);
+    const doneN=real.filter((x,j)=>ps.done[k+"|"+x.t]).length;
+    const isToday=d.getTime()===today.getTime();
+    const bl=real.filter(x=>x.blk).map(x=>x.blk);const rng=bl.length?(bl.length===1?"Bloque "+bl[0].n:"Bloques "+bl[0].n+" a "+bl[bl.length-1].n):"";
+    const goal=i===N-1&&N>1?(rng?rng+" + Repaso final y Simulacro":"Repaso final y Simulacro"):rng;const names=bl.map(b=>b.t).join(" · ");
+    return `<article class="day" id="pl_d${i}"><div class="day-h">
+      <div class="day-top"><span class="when">Día ${i+1} de ${N} · ${fmtD(d)}</span>${isToday?'<span class="badge today">HOY</span>':""}${doneN===real.length&&real.length?'<span class="badge done">✓ HECHO</span>':""}</div>
+      <h2>${goal||"Repaso"}</h2>${names?`<p class="goal">${names}</p>`:""}
+      <div class="times">De <input type="time" id="pl_ts${i}" value="${a.padStart(5,"0")}" aria-label="Hora de inicio día ${i+1}"> a <input type="time" id="pl_te${i}" value="${b.padStart(5,"0")}" aria-label="Hora de fin día ${i+1}"> · ${Math.round(P.caps[i]/6)/10} h${over?' · <b style="color:var(--warn)">el plan acaba a las '+toHM(sch[sch.length-1].b)+'</b>':""}</div>
+      <div class="dprog"><i style="width:${real.length?doneN/real.length*100:0}%"></i></div></div>
+      <ul class="tasks">${sch.map(x=>x.brk?`<li class="task brk"><span class="t-title"><span class="t-time">${toHM(x.a)}</span> ${x.t}</span></li>`:
+        `<li class="task${x.rev?" rev":""}${ps.done[k+"|"+x.t]?" done":""}"><input type="checkbox" data-k="${k}|${x.t.replace(/"/g,"&quot;")}" ${ps.done[k+"|"+x.t]?"checked":""} aria-label="Hecho: ${x.t.replace(/"/g,"&quot;")}"><div><span class="t-time">${toHM(x.a)}–${toHM(x.b)} · ${x.m} min</span><div class="t-title">${x.blk?`<span class="dot d1"></span>`:""}${x.t}</div><div class="t-det">${x.d||""}</div>${x.u?`<a class="t-go" href="${x.u}"${x.u.startsWith("#")?"":' target="_blank" rel="noopener"'}>${x.u.startsWith("#")?"Ir →":"Abrir →"}</a>`:""}</div></li>`).join("")}</ul></article>`}).join("");
+  P.days.forEach((_,i)=>{$("ts"+i).onchange=e=>setTime(i,0,e.target.value);$("te"+i).onchange=e=>setTime(i,1,e.target.value)});
+  document.querySelectorAll("#planOv .task input").forEach(c=>c.onchange=()=>{if(c.checked)ps.done[c.dataset.k]=1;else delete ps.done[c.dataset.k];psave();prender()});
+}
+
+const ov=document.getElementById("planOv");
+function openPlan(){ov.hidden=false;document.body.style.overflow="hidden";prender();ov.scrollTop=0}
+function closePlan(){ov.hidden=true;document.body.style.overflow=""}
+document.getElementById("planOpen").onclick=openPlan;
+const pb=document.getElementById("planOpen2");if(pb)pb.onclick=()=>{if(typeof drwSet==="function"&&!wide())drwSet(false);openPlan()};
+document.getElementById("planClose").onclick=closePlan;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ov.hidden)closePlan()});
+ov.addEventListener("click",e=>{const a=e.target.closest("a.t-go");if(!a)return;const h=a.getAttribute("href");if(!h.startsWith("#"))return;e.preventDefault();closePlan();
+  if(h==="#fc"){document.getElementById("fcOpen").click();return}go(h.slice(1))});
+/* resumen de hoy en la tarjeta de entrada */
+{prender();const td=[...ov.querySelectorAll(".day")].find(d=>d.querySelector(".badge.today"));
+  if(td)document.getElementById("planToday").textContent="Hoy toca: "+td.querySelector("h2").textContent;}
+})();
+
+/* ===== Temporizador ===== */
+(function(){
+st.tm=st.tm||{a:null,s:{}};const T=st.tm;
+const pill=document.getElementById("tpill");let iv=null,beeped=false;
+const f2=n=>String(Math.floor(n)).padStart(2,"0");
+const fmt=sec=>{sec=Math.abs(sec);const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=Math.floor(sec%60);return (h?h+":"+f2(m):f2(m))+":"+f2(s)};
+const blkOf=id=>document.getElementById(id);
+const elapsed=()=>{const a=T.a;if(!a)return 0;return (a.acc+(a.paused?0:Date.now()-a.start))/1000};
+function beep(){try{const C=new (window.AudioContext||window.webkitAudioContext)();[0,.25,.5].forEach(t=>{const o=C.createOscillator(),g=C.createGain();o.frequency.value=880;o.connect(g);g.connect(C.destination);g.gain.setValueAtTime(.2,C.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,C.currentTime+t+.2);o.start(C.currentTime+t);o.stop(C.currentTime+t+.22)})}catch(e){}
+  try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}}
+function tick(){const a=T.a;if(!a){pill.hidden=true;return}
+  const tot=a.min*60,el=elapsed(),left=tot-el,over=left<0;
+  pill.hidden=false;pill.classList.toggle("over",over);
+  document.getElementById("tpB").textContent=(over?"⏰ Te pasaste · ":"⏱ ")+a.name+(a.paused?" · en pausa":"");
+  document.getElementById("tpT").textContent=(over?"+":"")+fmt(left);
+  document.getElementById("tpBar").style.width=Math.min(100,el/tot*100)+"%";
+  document.getElementById("tpPause").textContent=a.paused?"Seguir":"Pausa";
+  document.getElementById("tpPause").setAttribute("aria-label",a.paused?"Seguir":"Pausar");
+  if(over&&!beeped&&!a.beeped){beeped=true;a.beeped=1;save();beep()}}
+function run(){clearInterval(iv);if(T.a){iv=setInterval(tick,500)}tick()}
+function startB(b){const name=b.querySelector(".bn").textContent.replace("BLOQUE","Bloque")+" · "+b.querySelector(".bt").textContent;
+  T.a={b:b.id,name,min:+b.dataset.min,start:Date.now(),acc:0,paused:false};beeped=false;save();setOpen(b,true);save();run();
+  requestAnimationFrame(()=>{const y=b.getBoundingClientRect().top+scrollY-70;scrollTo({top:y,behavior:"smooth"})});rowAll()}
+function pause(){const a=T.a;if(!a)return;if(a.paused){a.start=Date.now();a.paused=false}else{a.acc+=Date.now()-a.start;a.paused=true}save();tick()}
+function fin(){const a=T.a;if(!a)return;T.s[a.b]=Math.max(1,Math.round(elapsed()/60));T.a=null;save();run();rowAll()}
+function cancel(){T.a=null;save();run();rowAll()}
+document.getElementById("tpPause").onclick=pause;document.getElementById("tpFin").onclick=fin;document.getElementById("tpX").onclick=cancel;
+function row(b){let r=b.querySelector(".tmr");if(!r){r=document.createElement("div");r.className="tmr";b.querySelector(".blk-h").after(r)}
+  const m=+b.dataset.min,sp=T.s[b.id],act=T.a&&T.a.b===b.id;
+  r.innerHTML=`<p>${sp?`<span class="tm-done">✓ Lo hiciste en ${sp} min</span> (previsto ${m})`:`⏱ Tiempo para aprenderte este bloque: <b>${m} min</b>`}</p>`+(act?`<p><b>⏳ En marcha…</b></p>`:`<button type="button">${sp?"↻ Otra vez":"▶ Empezar"}</button>`);
+  const bt=r.querySelector("button");if(bt)bt.onclick=()=>{if(T.a&&T.a.b!==b.id){fin()}startB(b)}}
+function rowAll(){blks.forEach(row)}
+rowAll();run();
+document.addEventListener("visibilitychange",tick);
+})();
+
+/* ===== Leyenda desplegable ===== */
+(function(){
+const lg=document.querySelector(".top .legend");if(!lg)return;
+const NAMES={1:"🔴 Imprescindibles",2:"🟠 Importantes",3:"🔵 Leer una vez"},COL={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const panel=document.createElement("div");panel.className="lvpanel";panel.id="lvpanel";panel.hidden=true;lg.after(panel);
+let cur=null;
+const tags=[...lg.querySelectorAll(".tag")];
+tags.forEach(t=>{const lv=t.classList.contains("lv1")?1:t.classList.contains("lv2")?2:3;
+  const b=document.createElement("button");b.type="button";b.className=t.className;b.innerHTML=t.innerHTML;b.setAttribute("aria-expanded","false");b.setAttribute("aria-controls","lvpanel");t.replaceWith(b);
+  b.onclick=()=>{if(cur===lv){cur=null;panel.hidden=true;b.setAttribute("aria-expanded","false");return}
+    cur=lv;lg.querySelectorAll(".tag").forEach(x=>x.setAttribute("aria-expanded",String(x===b)));show(lv)}});
+function show(lv){panel.style.setProperty("--lc",COL[lv]);
+  const cs=cpts.filter(c=>c.dataset.lv===String(lv));let h=`<h4>${NAMES[lv]} · ${cs.length} conceptos</h4>`,last="";
+  cs.forEach(c=>{const bt=c.closest(".blk").querySelector(".bt").textContent;if(bt!==last){h+=`<p class="lg">${c.closest(".blk").querySelector(".bn").textContent} · ${bt}</p>`;last=bt}
+    const t=c.querySelector("h3").childNodes[0].textContent.trim();h+=`<a href="#${c.id}" class="${st.done[c.id.slice(1)]?"ok":""}"><b>${c.id.slice(1)}</b>${t}</a>`});
+  panel.innerHTML=h;panel.hidden=false;
+  panel.querySelectorAll("a").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.getAttribute("href").slice(1))})}
+})();
+/* ===== Tarjetas ===== */
+(function(){
+const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
+const LVC={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const ALL=[];
+cpts.forEach(c=>{const b=c.closest(".blk");const bt=b.querySelector(".bt").textContent;const n=c.id.slice(1);const lv=c.dataset.lv;
+  const qt=c.querySelector(".qt");const prof=[...c.querySelectorAll(".prof-t")].map(x=>x.innerHTML).join("");
+  const src=c.querySelector(".srcl").textContent;
+  if(qt)ALL.push({id:"q"+n,blk:b.id,bt,lv,kind:"q",q:qt.textContent,a:prof,src,title:n+". "+c.querySelector("h3").childNodes[0].textContent});
+  c.querySelectorAll(".defs li").forEach((li,i)=>{const ok=li.querySelector(".fd.ok");if(!ok)return;
+    const term=li.querySelector(".term").textContent;const txt=ok.textContent.replace(/^📌[^«]*/,"");
+    ALL.push({id:"d"+n+"_"+i,blk:b.id,bt,lv,kind:"d",q:"¿Cómo define la diapositiva: «"+term+"»?",a:'<p class="formal">'+txt+"</p>",src,title:term})})});
+st.fc=st.fc||{bad:{}};
+let cfg={blk:"all",kind:"all",lv:"all"},deck=[],i=0,ok=0,ko=0,flipped=false;
+const blkOpts=[["all","Todos los bloques",""]].concat(blks.map(b=>[b.id,b.querySelector(".bn").textContent.replace("BLOQUE","Bloque"),b.querySelector(".bt").textContent]));
+function opts(el,list,key){el.innerHTML=list.map(([v,t,sm])=>`<button type="button" class="opt" data-v="${v}" aria-pressed="${cfg[key]===v}">${t}${sm?`<small>${sm}</small>`:""}</button>`).join("");
+  el.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cfg[key]=b.dataset.v;el.querySelectorAll(".opt").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));count()})}
+function pool(){return ALL.filter(c=>(cfg.blk==="all"||c.blk===cfg.blk)&&(cfg.kind==="all"||c.kind===cfg.kind)&&(cfg.lv==="all"||(cfg.lv==="bad"?st.fc.bad[c.id]:c.lv===cfg.lv)))}
+function count(){const n=pool().length;$("fcGo").textContent=n?"Empezar · "+n+" tarjetas":"No hay tarjetas con esa elección";$("fcGo").disabled=!n}
+function setup(){opts($("oBlk"),blkOpts,"blk");
+  opts($("oKind"),[["all","Todo","preguntas + definiciones"],["q","❓ Preguntas de cada concepto",""],["d","📌 Definiciones de la diapositiva","las del examen"]],"kind");
+  const nb=Object.keys(st.fc.bad).length;
+  opts($("oLv"),[["all","Todas",""],["1","🔴 Solo imprescindibles",""],["bad","❌ Solo las que fallé",nb+" guardadas"]],"lv");count();
+  $("fcSetup").hidden=false;$("fcPlay").hidden=true;$("fcPlay").style.display="none";$("fcEnd").hidden=true}
+function open(){fc.hidden=false;document.body.style.overflow="hidden";setup()}
+function close(){fc.hidden=true;document.body.style.overflow=""}
+$("fcOpen").onclick=open;$("fcOpen2").onclick=open;$("fcClose").onclick=close;
+document.addEventListener("keydown",e=>{if(fc.hidden)return;if(e.key==="Escape")close()});
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function start(list){deck=shuffle(list.slice());i=0;ok=0;ko=0;$("fcSetup").hidden=true;$("fcEnd").hidden=true;$("fcPlay").hidden=false;$("fcPlay").style.display="contents";show()}
+$("fcGo").onclick=()=>start(pool());
+function show(){const c=deck[i];flipped=false;$("card3").classList.remove("flip");$("fcFlip").hidden=false;$("fcBtns").hidden=true;
+  $("ffront").style.setProperty("--cc",LVC[c.lv]);
+  $("ffront").innerHTML=`<span class="kind">${c.kind==="d"?"📌 Definición de la diapositiva":"❓ Pregunta"} · ${c.bt}</span><span class="bulb" aria-hidden="true">💡</span><span class="qq">${c.q}</span><span class="hint">Piensa la respuesta (o dila en voz alta) y toca para encender la luz</span>`;
+  $("fback").innerHTML=`<span class="kind">💡 Respuesta · ${c.title}</span><div class="ans">${c.a}</div><span class="src">${c.src}</span>`;
+  $("fcN").textContent="Tarjeta "+(i+1)+" de "+deck.length;$("fcS").textContent="✅ "+ok+" · ❌ "+ko;
+  $("fcG").style.width=(ok/deck.length*100)+"%";$("fcR").style.width=(ko/deck.length*100)+"%"}
+function flip(){flipped=!flipped;$("card3").classList.toggle("flip",flipped);if(flipped){$("fcFlip").hidden=true;$("fcBtns").hidden=false}}
+$("card3").onclick=e=>{if(e.target.closest("a"))return;flip()};$("card3").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+$("fcFlip").onclick=flip;
+function answer(good){const c=deck[i];if(good){ok++;delete st.fc.bad[c.id]}else{ko++;st.fc.bad[c.id]=1}save();i++;if(i<deck.length)show();else end()}
+$("fcSi").onclick=()=>answer(true);$("fcNo").onclick=()=>answer(false);
+function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pct=Math.round(ok/deck.length*100);const fails=deck.filter(c=>st.fc.bad[c.id]);
+  const msg=pct>=90?"¡Lo tienes dominado! 🔥":pct>=70?"¡Muy bien! Repasa las que fallaste.":pct>=50?"Vas bien: repite las falladas.":"Toca repasar este bloque y volver a intentarlo.";
+  $("fcEnd").innerHTML=`<span class="kind" style="font-family:var(--f-mono);color:var(--muted)">RESULTADO</span><span class="score">${ok}/${deck.length}</span><p style="margin:0;font-weight:700">${msg}</p>`+
+   (fails.length?`<button type="button" class="go" id="fcRe">🔁 Repetir las ${fails.length} que fallé</button>`:"")+`<button type="button" class="opt" id="fcAgain" style="text-align:center">🃏 Elegir otras tarjetas</button><button type="button" class="opt" id="fcBack" style="text-align:center">Volver al repaso</button>`;
+  $("fcEnd").hidden=false;if(fails.length)$("fcRe").onclick=()=>start(fails);$("fcAgain").onclick=setup;$("fcBack").onclick=close}
+})();
+
+</script>
+
+<script src="../../assets/especimen.js"></script>
+<script src="../../assets/repaso.js"></script>
+</body>
+</html>

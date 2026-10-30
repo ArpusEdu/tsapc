@@ -33,6 +33,9 @@
 @media (prefers-color-scheme:dark){:root[data-unit="lab1"]:not([data-theme="light"]){--q:#7fe5b5;--bg:#09130e;--surface:#122019;--soft:#1a2d23;--line:#2d4639;--ink:#e9f5ee;--muted:#a4c0b0;--accent:#7fe5b5;--accent-ink:#0a2318;--blk:#143f2e;--blk-ink:#fff;--blk-accent:#9ff0c8;--blk-open:#0c6b45;--hero:#143f2e;--hero-ink:#fff;--hero-sub:#dcf3e6;--hero-accent:#9ff0c8}}
 :root[data-unit="lab1"][data-theme="dark"]{--q:#7fe5b5;--bg:#09130e;--surface:#122019;--soft:#1a2d23;--line:#2d4639;--ink:#e9f5ee;--muted:#a4c0b0;--accent:#7fe5b5;--accent-ink:#0a2318;--blk:#143f2e;--blk-ink:#fff;--blk-accent:#9ff0c8;--blk-open:#0c6b45;--hero:#143f2e;--hero-ink:#fff;--hero-sub:#dcf3e6;--hero-accent:#9ff0c8}
 
+:root[data-unit="bio3"]{--f-display:"Space Grotesk",Georgia,serif;--dw:700;--r:12px;--q:#a84a00;--bg:#eef4fb;--surface:#fcfeff;--soft:#e2edf8;--line:#cadcee;--ink:#0d2238;--muted:#465a6f;--accent:#a84a00;--accent-ink:#fff;--blk:#0d2f55;--blk-ink:#fff;--blk-accent:#ffc27a;--blk-open:#8a3f00;--hero:#0d2f55;--hero-ink:#fff;--hero-sub:#dceaf8;--hero-accent:#ffc27a}
+@media (prefers-color-scheme:dark){:root[data-unit="bio3"]:not([data-theme="light"]){--q:#ffb36b;--bg:#08131f;--surface:#101f30;--soft:#182b40;--line:#2b4158;--ink:#e8f1fa;--muted:#a5b9cc;--accent:#ffb36b;--accent-ink:#2a1500;--blk:#123d6e;--blk-ink:#fff;--blk-accent:#ffc27a;--blk-open:#8a3f00;--hero:#123d6e;--hero-ink:#fff;--hero-sub:#dceaf8;--hero-accent:#ffc27a}}
+:root[data-unit="bio3"][data-theme="dark"]{--q:#ffb36b;--bg:#08131f;--surface:#101f30;--soft:#182b40;--line:#2b4158;--ink:#e8f1fa;--muted:#a5b9cc;--accent:#ffb36b;--accent-ink:#2a1500;--blk:#123d6e;--blk-ink:#fff;--blk-accent:#ffc27a;--blk-open:#8a3f00;--hero:#123d6e;--hero-ink:#fff;--hero-sub:#dceaf8;--hero-accent:#ffc27a}
 /* Fisio 1 · Atlas anatómico: lámina clásica con el grabado a un lado */
 @media (min-width:720px){[data-unit="fisio1"] .top{display:grid;grid-template-columns:1fr 36%;column-gap:28px;padding-top:28px}
 [data-unit="fisio1"] .top>*{grid-column:1}
@@ -125,3 +128,11 @@
 [data-unit="lab1"] .blk-h::before{inset:0 0 0 58%;opacity:.42}
 [data-unit="lab1"] .cpt{border:1px solid var(--line);border-left:6px solid var(--lv2)}
 [data-unit="lab1"] .cpt.lv1{border-left-color:var(--lv1)}[data-unit="lab1"] .cpt.lv3{border-left-color:var(--lv3)}
+/* Bio 3 · Replicación: la escalera de bases en sus colores como firma */
+[data-unit="bio3"] h1{letter-spacing:-.025em}
+[data-unit="bio3"] .blk-h{padding-left:40px}
+[data-unit="bio3"] .blk-h::before{inset:0 auto 0 0;width:18px;opacity:1;background:repeating-linear-gradient(180deg,#27a0d0 0 12px,#27b58a 12px 24px,#a463d6 24px 36px,#ef6478 36px 48px);-webkit-mask-image:none;mask-image:none}
+[data-unit="bio3"] .cpt{border-left:0;border-top:5px solid var(--lv2);background-image:none}
+[data-unit="bio3"] .cpt.lv1{border-top-color:var(--lv1)}[data-unit="bio3"] .cpt.lv3{border-top-color:var(--lv3)}
+[data-unit="bio3"] .c-n{background:var(--blk);color:var(--blk-ink)}
+[data-unit="bio3"] figure svg{max-width:100%;height:auto}

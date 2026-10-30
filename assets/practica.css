@@ -62,3 +62,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .chip,.say{min-height:40px}
 .dot{min-width:40px;min-height:40px}
 @media (prefers-color-scheme:light){:root[data-unit]{--self:#1f55b5}}
+
+/* Logo junto al enlace de volver */
+.mc-back:not(.mc-float)::before{content:"";width:30px;height:30px;flex:none;margin-right:2px;background:url(logo.svg) center/contain no-repeat}
