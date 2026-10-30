@@ -1,0 +1,127 @@
+/* Un diseño por unidad: paleta, tipografía y forma salen del tema de cada una. El texto corrido mantiene la misma fuente legible. */
+:root[data-unit="fisio1"]{--f-display:"Playfair Display",Georgia,serif;--dw:700;--r:6px;--q:#8c2f1b;--bg:#f6efe0;--surface:#fffaf0;--soft:#efe5d0;--line:#ddcfb4;--ink:#2a1a12;--muted:#65564a;--accent:#8c2f1b;--accent-ink:#fff;--blk:#efe3cc;--blk-ink:#2a1a12;--blk-accent:#8c2f1b;--blk-open:#e4d2ad;--hero:#efe3cc;--hero-ink:#2a1a12;--hero-sub:#4d3d30;--hero-accent:#8c2f1b}
+@media (prefers-color-scheme:dark){:root[data-unit="fisio1"]:not([data-theme="light"]){--q:#ec9a7e;--bg:#17110c;--surface:#221a13;--soft:#2d231a;--line:#40332a;--ink:#f4eadc;--muted:#bfae9b;--accent:#ec9a7e;--accent-ink:#22130c;--blk:#33261a;--blk-ink:#f6e8d0;--blk-accent:#ec9a7e;--blk-open:#46301d;--hero:#33261a;--hero-ink:#f6e8d0;--hero-sub:#d9c7ae;--hero-accent:#ec9a7e}}
+:root[data-unit="fisio1"][data-theme="dark"]{--q:#ec9a7e;--bg:#17110c;--surface:#221a13;--soft:#2d231a;--line:#40332a;--ink:#f4eadc;--muted:#bfae9b;--accent:#ec9a7e;--accent-ink:#22130c;--blk:#33261a;--blk-ink:#f6e8d0;--blk-accent:#ec9a7e;--blk-open:#46301d;--hero:#33261a;--hero-ink:#f6e8d0;--hero-sub:#d9c7ae;--hero-accent:#ec9a7e}
+:root[data-unit="fisio2"]{--f-display:"Young Serif",Georgia,serif;--dw:400;--r:16px;--q:#a91f55;--bg:#fbf0f4;--surface:#fffcfd;--soft:#f8e6ec;--line:#efd3dc;--ink:#26122a;--muted:#664f68;--accent:#a91f55;--accent-ink:#fff;--blk:#4a1a6e;--blk-ink:#fff;--blk-accent:#ffb3cd;--blk-open:#8c1c55;--hero:#4a1a6e;--hero-ink:#fff;--hero-sub:#efe0f6;--hero-accent:#ffb3cd}
+@media (prefers-color-scheme:dark){:root[data-unit="fisio2"]:not([data-theme="light"]){--q:#ff8fb3;--bg:#190f1d;--surface:#241729;--soft:#2f1e34;--line:#432d49;--ink:#f5ecf6;--muted:#bda9c1;--accent:#ff8fb3;--accent-ink:#26122a;--blk:#3a1557;--blk-ink:#fff;--blk-accent:#ffb3cd;--blk-open:#6e1a45;--hero:#3a1557;--hero-ink:#fff;--hero-sub:#e5d6ee;--hero-accent:#ffb3cd}}
+:root[data-unit="fisio2"][data-theme="dark"]{--q:#ff8fb3;--bg:#190f1d;--surface:#241729;--soft:#2f1e34;--line:#432d49;--ink:#f5ecf6;--muted:#bda9c1;--accent:#ff8fb3;--accent-ink:#26122a;--blk:#3a1557;--blk-ink:#fff;--blk-accent:#ffb3cd;--blk-open:#6e1a45;--hero:#3a1557;--hero-ink:#fff;--hero-sub:#e5d6ee;--hero-accent:#ffb3cd}
+:root[data-unit="fisio3"]{--f-display:"Archivo Black",Georgia,serif;--dw:400;--r:3px;--q:#a3121f;--bg:#f1eeed;--surface:#fff;--soft:#e8e3e1;--line:#d6cfcc;--ink:#1a1414;--muted:#5c5252;--accent:#a3121f;--accent-ink:#fff;--blk:#1a1414;--blk-ink:#fff;--blk-accent:#ff8a8f;--blk-open:#7c0e18;--hero:#1a1414;--hero-ink:#fff;--hero-sub:#e3dcdc;--hero-accent:#ff8a8f}
+@media (prefers-color-scheme:dark){:root[data-unit="fisio3"]:not([data-theme="light"]){--q:#ff8a8f;--bg:#0f0c0c;--surface:#1b1616;--soft:#262020;--line:#3a3131;--ink:#f3eeee;--muted:#b8acac;--accent:#ff8a8f;--accent-ink:#1a0a0c;--blk:#2a1c1c;--blk-ink:#fff;--blk-accent:#ff8a8f;--blk-open:#7c0e18;--hero:#2a1c1c;--hero-ink:#fff;--hero-sub:#e3dcdc;--hero-accent:#ff8a8f}}
+:root[data-unit="fisio3"][data-theme="dark"]{--q:#ff8a8f;--bg:#0f0c0c;--surface:#1b1616;--soft:#262020;--line:#3a3131;--ink:#f3eeee;--muted:#b8acac;--accent:#ff8a8f;--accent-ink:#1a0a0c;--blk:#2a1c1c;--blk-ink:#fff;--blk-accent:#ff8a8f;--blk-open:#7c0e18;--hero:#2a1c1c;--hero-ink:#fff;--hero-sub:#e3dcdc;--hero-accent:#ff8a8f}
+:root[data-unit="bio1"]{--f-display:"Fredoka",Georgia,serif;--dw:600;--r:28px;--q:#8a5a00;--bg:#fff6df;--surface:#fffdf6;--soft:#fdeec6;--line:#f0dcaa;--ink:#2a2008;--muted:#5f5230;--accent:#8a5a00;--accent-ink:#fff;--blk:#0a6360;--blk-ink:#fff;--blk-accent:#ffd86b;--blk-open:#0a5655;--hero:#0a6360;--hero-ink:#fff;--hero-sub:#def5f2;--hero-accent:#ffd86b}
+@media (prefers-color-scheme:dark){:root[data-unit="bio1"]:not([data-theme="light"]){--q:#ffcf5c;--bg:#14130b;--surface:#201e12;--soft:#2b2818;--line:#3f3a24;--ink:#f7f1dd;--muted:#bcb391;--accent:#ffcf5c;--accent-ink:#2a2008;--blk:#0a4f4d;--blk-ink:#fff;--blk-accent:#ffd86b;--blk-open:#0a6663;--hero:#0a4f4d;--hero-ink:#fff;--hero-sub:#def5f2;--hero-accent:#ffd86b}}
+:root[data-unit="bio1"][data-theme="dark"]{--q:#ffcf5c;--bg:#14130b;--surface:#201e12;--soft:#2b2818;--line:#3f3a24;--ink:#f7f1dd;--muted:#bcb391;--accent:#ffcf5c;--accent-ink:#2a2008;--blk:#0a4f4d;--blk-ink:#fff;--blk-accent:#ffd86b;--blk-open:#0a6663;--hero:#0a4f4d;--hero-ink:#fff;--hero-sub:#def5f2;--hero-accent:#ffd86b}
+:root[data-unit="bio2"]{--f-display:"Syne",Georgia,serif;--dw:700;--r:10px;--q:#5328c9;--bg:#f1eeff;--surface:#fdfcff;--soft:#e7e1fd;--line:#d6cdf5;--ink:#180f3c;--muted:#544a75;--accent:#5328c9;--accent-ink:#fff;--blk:#180f3c;--blk-ink:#fff;--blk-accent:#b7a3ff;--blk-open:#3c1d9a;--hero:#180f3c;--hero-ink:#fff;--hero-sub:#dfd8fa;--hero-accent:#b7a3ff}
+@media (prefers-color-scheme:dark){:root[data-unit="bio2"]:not([data-theme="light"]){--q:#b7a3ff;--bg:#0f0b22;--surface:#1a1533;--soft:#252046;--line:#393263;--ink:#efebff;--muted:#b0a8d6;--accent:#b7a3ff;--accent-ink:#180f3c;--blk:#261c5c;--blk-ink:#fff;--blk-accent:#b7a3ff;--blk-open:#3c1d9a;--hero:#261c5c;--hero-ink:#fff;--hero-sub:#dfd8fa;--hero-accent:#b7a3ff}}
+:root[data-unit="bio2"][data-theme="dark"]{--q:#b7a3ff;--bg:#0f0b22;--surface:#1a1533;--soft:#252046;--line:#393263;--ink:#efebff;--muted:#b0a8d6;--accent:#b7a3ff;--accent-ink:#180f3c;--blk:#261c5c;--blk-ink:#fff;--blk-accent:#b7a3ff;--blk-open:#3c1d9a;--hero:#261c5c;--hero-ink:#fff;--hero-sub:#dfd8fa;--hero-accent:#b7a3ff}
+:root[data-unit="gest1"]{--f-display:"Barlow Condensed",Georgia,serif;--dw:700;--r:4px;--q:#0a5bb5;--bg:#edf3fa;--surface:#fff;--soft:#e0eaf6;--line:#c9d9ec;--ink:#0c2038;--muted:#47586c;--accent:#0a5bb5;--accent-ink:#fff;--blk:#0a4c9c;--blk-ink:#fff;--blk-accent:#ffd24d;--blk-open:#083b7a;--hero:#0a4c9c;--hero-ink:#fff;--hero-sub:#e1edfb;--hero-accent:#ffd24d}
+@media (prefers-color-scheme:dark){:root[data-unit="gest1"]:not([data-theme="light"]){--q:#7bb7ff;--bg:#0a121c;--surface:#131e2c;--soft:#1b2a3c;--line:#2c3f56;--ink:#eaf2fb;--muted:#a6b7ca;--accent:#7bb7ff;--accent-ink:#0c2038;--blk:#0a3a78;--blk-ink:#fff;--blk-accent:#ffd24d;--blk-open:#0a4c9c;--hero:#0a3a78;--hero-ink:#fff;--hero-sub:#d7e6f8;--hero-accent:#ffd24d}}
+:root[data-unit="gest1"][data-theme="dark"]{--q:#7bb7ff;--bg:#0a121c;--surface:#131e2c;--soft:#1b2a3c;--line:#2c3f56;--ink:#eaf2fb;--muted:#a6b7ca;--accent:#7bb7ff;--accent-ink:#0c2038;--blk:#0a3a78;--blk-ink:#fff;--blk-accent:#ffd24d;--blk-open:#0a4c9c;--hero:#0a3a78;--hero-ink:#fff;--hero-sub:#d7e6f8;--hero-accent:#ffd24d}
+:root[data-unit="gest2"]{--f-display:"IBM Plex Mono",Georgia,serif;--dw:600;--r:0;--q:#0f5c94;--bg:#e9f0f7;--surface:#f9fcff;--soft:#dde8f2;--line:#a9c2d9;--ink:#0b2a45;--muted:#40596f;--accent:#0f5c94;--accent-ink:#fff;--blk:#0d3a60;--blk-ink:#fff;--blk-accent:#8fdcff;--blk-open:#0a2c4a;--hero:#0d3a60;--hero-ink:#fff;--hero-sub:#d5e8f7;--hero-accent:#8fdcff}
+@media (prefers-color-scheme:dark){:root[data-unit="gest2"]:not([data-theme="light"]){--q:#8fdcff;--bg:#07131f;--surface:#0e2031;--soft:#142b41;--line:#2a4a68;--ink:#e4f1fb;--muted:#a0b9cf;--accent:#8fdcff;--accent-ink:#07202f;--blk:#0d3a60;--blk-ink:#fff;--blk-accent:#8fdcff;--blk-open:#124d7e;--hero:#0d3a60;--hero-ink:#fff;--hero-sub:#d5e8f7;--hero-accent:#8fdcff}}
+:root[data-unit="gest2"][data-theme="dark"]{--q:#8fdcff;--bg:#07131f;--surface:#0e2031;--soft:#142b41;--line:#2a4a68;--ink:#e4f1fb;--muted:#a0b9cf;--accent:#8fdcff;--accent-ink:#07202f;--blk:#0d3a60;--blk-ink:#fff;--blk-accent:#8fdcff;--blk-open:#124d7e;--hero:#0d3a60;--hero-ink:#fff;--hero-sub:#d5e8f7;--hero-accent:#8fdcff}
+:root[data-unit="ingles1"]{--f-display:"DM Serif Display",Georgia,serif;--dw:400;--r:2px;--q:#b3122d;--bg:#fbf8f3;--surface:#fff;--soft:#f3eee6;--line:#dcd5c9;--ink:#10203f;--muted:#515a6e;--accent:#b3122d;--accent-ink:#fff;--blk:#10203f;--blk-ink:#fff;--blk-accent:#ff9aa8;--blk-open:#b3122d;--hero:#fbf8f3;--hero-ink:#10203f;--hero-sub:#3c4760;--hero-accent:#b3122d}
+@media (prefers-color-scheme:dark){:root[data-unit="ingles1"]:not([data-theme="light"]){--q:#ff9aa8;--bg:#0b1220;--surface:#141c2e;--soft:#1d263b;--line:#303b55;--ink:#eef1f8;--muted:#aab3c6;--accent:#ff9aa8;--accent-ink:#10203f;--blk:#1d2c52;--blk-ink:#fff;--blk-accent:#ff9aa8;--blk-open:#8f1026;--hero:#141c2e;--hero-ink:#eef1f8;--hero-sub:#c6cddd;--hero-accent:#ff9aa8}}
+:root[data-unit="ingles1"][data-theme="dark"]{--q:#ff9aa8;--bg:#0b1220;--surface:#141c2e;--soft:#1d263b;--line:#303b55;--ink:#eef1f8;--muted:#aab3c6;--accent:#ff9aa8;--accent-ink:#10203f;--blk:#1d2c52;--blk-ink:#fff;--blk-accent:#ff9aa8;--blk-open:#8f1026;--hero:#141c2e;--hero-ink:#eef1f8;--hero-sub:#c6cddd;--hero-accent:#ff9aa8}
+:root[data-unit="ipe2"]{--f-display:"Anton",Georgia,serif;--dw:400;--r:0;--q:#7a5a00;--bg:#fffbe8;--surface:#fff;--soft:#fff4c2;--line:#e5d88e;--ink:#16140a;--muted:#57522f;--accent:#7a5a00;--accent-ink:#fff;--blk:#16140a;--blk-ink:#fff;--blk-accent:#ffd400;--blk-open:#3b3510;--hero:#ffd400;--hero-ink:#16140a;--hero-sub:#2e2a10;--hero-accent:#16140a}
+@media (prefers-color-scheme:dark){:root[data-unit="ipe2"]:not([data-theme="light"]){--q:#ffd400;--bg:#121008;--surface:#1d1a0d;--soft:#292512;--line:#40391c;--ink:#faf5dc;--muted:#c2bb91;--accent:#ffd400;--accent-ink:#16140a;--blk:#2a2610;--blk-ink:#fff;--blk-accent:#ffd400;--blk-open:#544b12;--hero:#ffd400;--hero-ink:#16140a;--hero-sub:#2e2a10;--hero-accent:#16140a}}
+:root[data-unit="ipe2"][data-theme="dark"]{--q:#ffd400;--bg:#121008;--surface:#1d1a0d;--soft:#292512;--line:#40391c;--ink:#faf5dc;--muted:#c2bb91;--accent:#ffd400;--accent-ink:#16140a;--blk:#2a2610;--blk-ink:#fff;--blk-accent:#ffd400;--blk-open:#544b12;--hero:#ffd400;--hero-ink:#16140a;--hero-sub:#2e2a10;--hero-accent:#16140a}
+:root[data-unit="ipe-tema5"]{--f-display:"Rubik",Georgia,serif;--dw:800;--r:14px;--q:#0a7a4a;--bg:#ecf8f1;--surface:#fff;--soft:#def2e7;--line:#c2e3d0;--ink:#0a2a1c;--muted:#3f5c4e;--accent:#0a7a4a;--accent-ink:#fff;--blk:#0a7a4a;--blk-ink:#fff;--blk-accent:#d6ffe8;--blk-open:#b3182d;--hero:#0a7a4a;--hero-ink:#fff;--hero-sub:#e3f8ec;--hero-accent:#d6ffe8}
+@media (prefers-color-scheme:dark){:root[data-unit="ipe-tema5"]:not([data-theme="light"]){--q:#6fe0a8;--bg:#08150f;--surface:#10231a;--soft:#172f23;--line:#274a39;--ink:#e9f7ef;--muted:#a3c2b1;--accent:#6fe0a8;--accent-ink:#08251a;--blk:#0a5c39;--blk-ink:#fff;--blk-accent:#d6ffe8;--blk-open:#a11529;--hero:#0a5c39;--hero-ink:#fff;--hero-sub:#d9f3e4;--hero-accent:#d6ffe8}}
+:root[data-unit="ipe-tema5"][data-theme="dark"]{--q:#6fe0a8;--bg:#08150f;--surface:#10231a;--soft:#172f23;--line:#274a39;--ink:#e9f7ef;--muted:#a3c2b1;--accent:#6fe0a8;--accent-ink:#08251a;--blk:#0a5c39;--blk-ink:#fff;--blk-accent:#d6ffe8;--blk-open:#a11529;--hero:#0a5c39;--hero-ink:#fff;--hero-sub:#d9f3e4;--hero-accent:#d6ffe8}
+:root[data-unit="lab1"]{--f-display:"JetBrains Mono",Georgia,serif;--dw:700;--r:6px;--q:#0c6b45;--bg:#f1f7f3;--surface:#fff;--soft:#e4f0e9;--line:#c6dcce;--ink:#0e241a;--muted:#46594f;--accent:#0c6b45;--accent-ink:#fff;--blk:#0f3d2c;--blk-ink:#fff;--blk-accent:#9ff0c8;--blk-open:#0c6b45;--hero:#0f3d2c;--hero-ink:#fff;--hero-sub:#dcf3e6;--hero-accent:#9ff0c8}
+@media (prefers-color-scheme:dark){:root[data-unit="lab1"]:not([data-theme="light"]){--q:#7fe5b5;--bg:#09130e;--surface:#122019;--soft:#1a2d23;--line:#2d4639;--ink:#e9f5ee;--muted:#a4c0b0;--accent:#7fe5b5;--accent-ink:#0a2318;--blk:#143f2e;--blk-ink:#fff;--blk-accent:#9ff0c8;--blk-open:#0c6b45;--hero:#143f2e;--hero-ink:#fff;--hero-sub:#dcf3e6;--hero-accent:#9ff0c8}}
+:root[data-unit="lab1"][data-theme="dark"]{--q:#7fe5b5;--bg:#09130e;--surface:#122019;--soft:#1a2d23;--line:#2d4639;--ink:#e9f5ee;--muted:#a4c0b0;--accent:#7fe5b5;--accent-ink:#0a2318;--blk:#143f2e;--blk-ink:#fff;--blk-accent:#9ff0c8;--blk-open:#0c6b45;--hero:#143f2e;--hero-ink:#fff;--hero-sub:#dcf3e6;--hero-accent:#9ff0c8}
+
+/* Fisio 1 · Atlas anatómico: lámina clásica con el grabado a un lado */
+@media (min-width:720px){[data-unit="fisio1"] .top{display:grid;grid-template-columns:1fr 36%;column-gap:28px;padding-top:28px}
+[data-unit="fisio1"] .top>*{grid-column:1}
+[data-unit="fisio1"] .spec{grid-column:2;grid-row:1/span 5;height:auto;min-height:260px;margin:0;border:1px solid var(--hero-accent)}
+[data-unit="fisio1"] .spec-l{top:auto;left:0;right:0;bottom:0;width:auto;padding:8px 14px;flex-direction:row;gap:10px;align-items:baseline}}
+[data-unit="fisio1"] .top{border:1px solid var(--line);box-shadow:inset 0 0 0 5px var(--hero),inset 0 0 0 6px var(--line)}
+[data-unit="fisio1"] .blk-h{border:1px solid var(--line)}
+[data-unit="fisio1"] .blk-h::before{opacity:.35}
+[data-unit="fisio1"] .cpt{border-left:0;border-top:4px double var(--lv2)}
+[data-unit="fisio1"] .cpt.lv1{border-top-color:var(--lv1)}[data-unit="fisio1"] .cpt.lv3{border-top-color:var(--lv3)}
+/* Fisio 2 · Tejidos: bloques con la preparación teñida bien visible */
+[data-unit="fisio2"] .blk-h::before{inset:0 0 0 30%;opacity:.7}
+[data-unit="fisio2"] .c-n{background:var(--blk);color:var(--blk-ink)}
+/* Fisio 3 · Informe de patología: negro clínico, banda y bordes secos */
+[data-unit="fisio3"] .top{position:relative;padding-top:clamp(120px,22vw,190px)}
+[data-unit="fisio3"] .spec{position:absolute;inset:0 0 auto 0;height:clamp(110px,20vw,170px);margin:0;filter:saturate(.9)}
+[data-unit="fisio3"] .spec-l{background:#1a1414;color:#fff;width:auto;bottom:auto;padding:8px 14px;flex-direction:row;gap:8px}
+[data-unit="fisio3"] .spec-l b{color:#ff8a8f;margin:0}
+[data-unit="fisio3"] h1,[data-unit="fisio3"] .blk-h .bt{text-transform:uppercase;letter-spacing:-.005em}
+[data-unit="fisio3"] .blk-h{border-left:10px solid var(--blk-accent)}
+[data-unit="fisio3"] .blk-h::before{opacity:.25;filter:grayscale(1)}
+[data-unit="fisio3"] .cpt{border-left-width:0;border-top:6px solid var(--lv2)}
+[data-unit="fisio3"] .cpt.lv1{border-top-color:var(--lv1)}[data-unit="fisio3"] .cpt.lv3{border-top-color:var(--lv3)}
+/* Bio 1 · Placa de Petri: todo redondo, con la placa flotando */
+[data-unit="bio1"] .top{position:relative;padding-top:clamp(20px,4vw,34px);padding-right:clamp(120px,27vw,250px)}
+[data-unit="bio1"] .spec{position:absolute;top:clamp(16px,3vw,28px);right:clamp(12px,3vw,28px);width:clamp(96px,23vw,205px);height:clamp(96px,23vw,205px);margin:0;border-radius:50%;box-shadow:0 0 0 6px rgba(255,255,255,.4),0 0 0 9px rgba(255,255,255,.18)}
+[data-unit="bio1"] .spec::after{border-radius:50%}
+[data-unit="bio1"] .spec-l{display:none}
+[data-unit="bio1"] .blk-h::before{inset:-30% -8% -30% auto;width:42%;border-radius:50%;opacity:.45;-webkit-mask-image:none;mask-image:none}
+[data-unit="bio1"] .blk-h{padding-right:clamp(70px,16vw,140px)}
+[data-unit="bio1"] .cpt{border-left:0;box-shadow:inset 0 0 0 3px var(--lv2)}
+[data-unit="bio1"] .cpt.lv1{box-shadow:inset 0 0 0 3px var(--lv1)}[data-unit="bio1"] .cpt.lv3{box-shadow:inset 0 0 0 3px var(--lv3)}
+[data-unit="bio1"] .chip,[data-unit="bio1"] .row select,[data-unit="bio1"] .row input[type=search]{border-radius:999px}
+/* Bio 2 · Cariotipo: bandas de cromosoma como firma */
+[data-unit="bio2"] .blk-h{padding-left:44px}
+[data-unit="bio2"] .blk-h::before{inset:0 auto 0 0;width:22px;opacity:1;background:repeating-linear-gradient(180deg,var(--blk-accent) 0 7px,transparent 7px 11px,var(--blk-accent) 11px 15px,transparent 15px 24px);-webkit-mask-image:none;mask-image:none}
+[data-unit="bio2"] .cpt{background-image:repeating-linear-gradient(180deg,var(--lv2) 0 7px,transparent 7px 11px);background-size:5px 100%;background-repeat:no-repeat;border-left-color:transparent}
+[data-unit="bio2"] .cpt.lv1{background-image:repeating-linear-gradient(180deg,var(--lv1) 0 7px,transparent 7px 11px)}
+[data-unit="bio2"] .cpt.lv3{background-image:repeating-linear-gradient(180deg,var(--lv3) 0 7px,transparent 7px 11px)}
+/* Gestión 1 · Señalética de hospital: letreros y flechas */
+[data-unit="gest1"] h1,[data-unit="gest1"] .blk-h .bt,[data-unit="gest1"] h2,[data-unit="gest1"] .c-h h3{text-transform:uppercase;letter-spacing:.005em;line-height:1}
+[data-unit="gest1"] h1{font-size:clamp(2.4rem,8vw,4.2rem)}
+[data-unit="gest1"] .blk-h{padding-left:88px;min-height:92px}
+[data-unit="gest1"] .blk-h .bn{position:absolute;left:0;top:0;bottom:0;width:72px;background:var(--blk-accent);color:#0c2038;display:grid;place-items:center;text-align:center;font:700 .86rem/1.05 var(--f-display);text-transform:uppercase}
+[data-unit="gest1"] .blk-h::before{display:none}
+[data-unit="gest1"] .cpt{border-left-width:12px}
+/* Gestión 2 · Plano técnico: retícula azul y líneas de cota */
+[data-unit="gest2"] body,[data-unit="gest2"] .top{background-image:linear-gradient(rgba(70,130,180,.14) 1px,transparent 1px),linear-gradient(90deg,rgba(70,130,180,.14) 1px,transparent 1px);background-size:24px 24px}
+[data-unit="gest2"] .top{border:2px solid var(--hero-accent)}
+[data-unit="gest2"] .spec{border-bottom:2px solid var(--hero-accent)}
+[data-unit="gest2"] .blk-h{border:2px dashed var(--blk-accent)}
+[data-unit="gest2"] .blk-h::before{opacity:.28}
+[data-unit="gest2"] .cpt{border:1.5px dashed var(--muted);border-left:6px solid var(--lv2)}
+[data-unit="gest2"] .cpt.lv1{border-left-color:var(--lv1)}[data-unit="gest2"] .cpt.lv3{border-left-color:var(--lv3)}
+[data-unit="gest2"] h1{font-size:clamp(1.7rem,5vw,2.7rem);letter-spacing:-.03em}
+/* Inglés · Revista: portada editorial con filete rojo y mucho aire */
+[data-unit="ingles1"] .top{border-top:10px solid var(--hero-accent);border-bottom:2px solid var(--hero-ink);padding-inline:0;background:transparent}
+[data-unit="ingles1"] .spec{margin-inline:0;height:clamp(70px,12vw,110px)}
+[data-unit="ingles1"] .top h1{font-size:clamp(2.4rem,8vw,4.6rem);line-height:1}
+[data-unit="ingles1"] .top .legend .tag{box-shadow:inset 0 0 0 1px var(--line)}
+[data-unit="ingles1"] .blk-h{background:transparent;color:var(--ink);padding-inline:0 50px;border-top:2px solid var(--ink);border-radius:0}
+[data-unit="ingles1"] .blk.open .blk-h{background:transparent}
+[data-unit="ingles1"] .blk-h .bn{color:var(--accent)}[data-unit="ingles1"] .blk-h .bc{color:var(--muted)}
+[data-unit="ingles1"] .blk-h::before{display:none}
+[data-unit="ingles1"] .blk-h::after{background:var(--ink);color:var(--surface)}
+[data-unit="ingles1"] .cpt{border:0;border-bottom:1px solid var(--line);background:transparent;padding-inline:0}
+[data-unit="ingles1"] .c-n{background:transparent!important;color:var(--accent)!important;font-size:1.6rem}
+/* IPE 2 · Riesgos: cartel de seguridad, amarillo y negro */
+[data-unit="ipe2"] .top{border:6px solid #16140a;box-shadow:0 0 0 4px var(--hero)}
+[data-unit="ipe2"] .spec{height:46px;background:repeating-linear-gradient(135deg,#16140a 0 22px,#ffd400 22px 44px)}
+[data-unit="ipe2"] .spec::after,[data-unit="ipe2"] .spec-l{display:none}
+[data-unit="ipe2"] .top h1,[data-unit="ipe2"] .blk-h .bt,[data-unit="ipe2"] .xs-h,[data-unit="ipe2"] .c-h h3{text-transform:uppercase;letter-spacing:.01em;line-height:1.08}
+[data-unit="ipe2"] .top h1{font-size:clamp(2.5rem,9vw,4.8rem)}
+[data-unit="ipe2"] .blk-h{padding-top:30px}
+[data-unit="ipe2"] .blk-h::before{inset:0 0 auto 0;height:12px;opacity:1;background:repeating-linear-gradient(135deg,#ffd400 0 14px,#16140a 14px 28px);-webkit-mask-image:none;mask-image:none}
+[data-unit="ipe2"] .cpt{border-left-width:0;border-top:8px solid var(--lv2)}
+[data-unit="ipe2"] .cpt.lv1{border-top-color:var(--lv1)}[data-unit="ipe2"] .cpt.lv3{border-top-color:var(--lv3)}
+/* IPE Tema 5 · Primeros auxilios: cruz verde y trazado de monitor */
+[data-unit="ipe-tema5"] .spec{height:clamp(72px,12vw,100px);background-color:#075c37}
+[data-unit="ipe-tema5"] .spec-l{display:none}
+[data-unit="ipe-tema5"] .blk-h{padding-left:76px}
+[data-unit="ipe-tema5"] .blk-h::before{inset:50% auto auto 18px;width:40px;height:40px;margin-top:-20px;opacity:1;background:#fff;-webkit-mask-image:none;mask-image:none;clip-path:polygon(35% 0,65% 0,65% 35%,100% 35%,100% 65%,65% 65%,65% 100%,35% 100%,35% 65%,0 65%,0 35%,35% 35%)}
+[data-unit="ipe-tema5"] .cpt{border-left-width:8px}
+/* Lab 1 · Cámara de Neubauer: papel cuadriculado y datos en monoespaciada */
+[data-unit="lab1"] body{background-image:linear-gradient(rgba(12,107,69,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(12,107,69,.09) 1px,transparent 1px);background-size:20px 20px}
+[data-unit="lab1"] h1{font-size:clamp(1.65rem,5vw,2.6rem);letter-spacing:-.04em}
+[data-unit="lab1"] .blk-h .bt{font-size:clamp(1.15rem,3vw,1.5rem);letter-spacing:-.03em}
+[data-unit="lab1"] .c-h h3{font-size:clamp(1.05rem,2.8vw,1.28rem);letter-spacing:-.02em}
+[data-unit="lab1"] .xs-h{font-size:clamp(1.25rem,3.4vw,1.6rem)}
+[data-unit="lab1"] .blk-h::before{inset:0 0 0 58%;opacity:.42}
+[data-unit="lab1"] .cpt{border:1px solid var(--line);border-left:6px solid var(--lv2)}
+[data-unit="lab1"] .cpt.lv1{border-left-color:var(--lv1)}[data-unit="lab1"] .cpt.lv3{border-left-color:var(--lv3)}
