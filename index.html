@@ -8,6 +8,8 @@
 <meta name="description" content="Repasos, simulacros y material de estudio de 1.º de TSAPC, Anatomía Patológica y Citodiagnóstico.">
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#21124f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@700&display=swap">
@@ -115,6 +117,15 @@ summary:hover{color:var(--ink)}
 .done h3{font-size:1.16em}
 
 .closing{background:var(--hema);color:var(--on-hema);overflow:hidden}
+.mastery{display:flex;flex-direction:column;gap:5px;font-size:.88em;color:var(--muted)}
+.mastery i{display:block;height:7px;border-radius:999px;background:var(--glass);overflow:hidden}
+.mastery b{display:block;height:100%;background:linear-gradient(90deg,#21124f,#ee4d84);border-radius:999px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.tools button,.tools label{appearance:none;font:inherit;font-weight:700;font-size:.94em;min-height:44px;padding:0 16px;display:inline-flex;align-items:center;border-radius:999px;border:1.5px solid rgba(255,255,255,.6);background:transparent;color:#fff;cursor:pointer}
+.tools button:hover,.tools label:hover{background:rgba(255,255,255,.12)}
+.tools label:focus-within{outline:3px solid #fff;outline-offset:3px}
+.tools input{position:absolute;width:1px;height:1px;opacity:0}
+.tools-msg{min-height:1.5em;margin-top:8px}
 .closing .frame{padding-block:clamp(28px,4vw,48px) 0}
 .closing p{max-width:58ch}
 .word{font-family:var(--f-display);font-size:clamp(4rem,23.5vw,21rem);line-height:.84;letter-spacing:-.04em;margin-top:.14em;margin-bottom:.02em;opacity:.95;color:#ee4d84;white-space:nowrap}
@@ -124,7 +135,8 @@ summary:hover{color:var(--ink)}
   .hero{min-height:74svh}
   .hero .frame{padding-block:40px 18px}
   .tip{display:none}
-  .go{display:none}
+  .go{width:100%;justify-content:center;min-height:48px}
+  .hero-foot{gap:12px}
   .place{font-size:.92em}
   h1{font-size:clamp(4rem,21vw,7.4rem)}
   .hero-foot{margin-top:12px}
@@ -147,7 +159,7 @@ summary:hover{color:var(--ink)}
     <h1>Mi carrera</h1>
     <div class="hero-foot">
       <p class="summary" id="summary"></p>
-      <a class="go" href="#preparar">Ver lo que toca →</a>
+      <a class="go" id="go" href="#preparar">Ver lo que toca →</a>
     </div>
   </div>
 </header>
@@ -158,9 +170,16 @@ summary:hover{color:var(--ink)}
 <footer class="closing">
   <div class="frame">
     <p>En cada página tienes arriba el botón «← Menú» para volver aquí. Los PDF se pueden descargar.</p>
+    <div class="tools">
+      <button type="button" id="bkSave">Guardar copia de mi progreso</button>
+      <label>Restaurar una copia<input type="file" id="bkLoad" accept="application/json,.json"></label>
+      <button type="button" id="install" hidden>Instalar como app</button>
+    </div>
+    <p class="tools-msg" id="bkMsg" role="status"></p>
     <div class="word" aria-hidden="true">TSAPC</div>
   </div>
 </footer>
+<script src="assets/especimen.js"></script>
 <script>
 const EX=[{"id": "fisio3", "asig": "Fisiopatología", "em": "🫀", "col": "fisio", "ex": "3er examen", "tema": "Unidad 3 · La patología: estudio de la enfermedad", "fecha": null, "rep": {"web": "fisio3/repaso/", "pdf": "files/FISIO3_1-Repaso_Patologia.pdf"}, "sim": {"web": "fisio3/simulacro/", "pdf": "files/FISIO3_2-Simulacro_Patologia.pdf"}, "extra": [["⚡ Lo imprescindible", "files/FISIO3_3-Imprescindible_Patologia.pdf"], ["✅ Verificación", "files/FISIO3_5-Verificacion_Patologia.pdf"]]}, {"id": "fisio2", "asig": "Fisiopatología", "em": "🫀", "col": "fisio", "ex": "2º examen", "tema": "Unidad 2 · Tejidos y anatomía", "fecha": "2026-10-28", "rep": {"web": "fisio2/repaso/", "pdf": "files/FISIO2_1-Repaso_Tejidos_28.oct.pdf"}, "sim": {"web": "fisio2/simulacro/", "pdf": "files/FISIO2_2-Simulacro_Tejidos_28.oct.pdf"}, "extra": [["⚡ Lo imprescindible", "files/FISIO2_3-Imprescindible_Tejidos_28.oct.pdf"], ["✏️ Esquemas para rellenar", "files/FISIO2_4-Esquemas-Rellenar_Tejidos_28.oct.pdf"], ["✅ Verificación", "files/FISIO2_5-Verificacion_Tejidos_28.oct.pdf"]]}, {"id": "ipe3", "asig": "IPE 1", "em": "🦺", "col": "ipe", "ex": "Tema 5", "tema": "Los primeros auxilios en la empresa", "fecha": null, "rep": {"web": "ipe-tema5/repaso/", "pdf": "files/IPE3_1-Repaso_Primeros-Auxilios.pdf"}, "sim": {"web": "ipe-tema5/simulacro/"}, "extra": [["⚡ Lo imprescindible", "files/IPE3_3-Imprescindible_Primeros-Auxilios.pdf"], ["✅ Verificación", "files/IPE3_5-Verificacion_Primeros-Auxilios.pdf"]]}, {"id": "bio2", "asig": "Biología Molecular", "em": "🧬", "col": "bio", "ex": "2º examen", "tema": "Tema 3 · Citogenética y análisis cromosómico", "fecha": null, "rep": {"web": "bio2/repaso/", "pdf": "files/BIO2_1-Repaso_Citogenetica.pdf"}, "sim": {"web": "bio2/simulacro/", "pdf": "files/BIO2_2-Simulacro_Citogenetica.pdf"}, "extra": [["⚡ Lo imprescindible", "files/BIO2_3-Imprescindible_Citogenetica.pdf"], ["✅ Verificación", "files/BIO2_5-Verificacion_Citogenetica.pdf"]]}, {"id": "gest2", "asig": "Gestión de Muestras", "em": "🧫", "col": "gest", "ex": "2º examen", "tema": "Tema 2 · Funciones, áreas y organización del laboratorio", "fecha": null, "rep": {"web": "gest2/repaso/", "pdf": "files/GESTION2_1-Repaso_Laboratorio.pdf"}, "sim": {"web": "gest2/simulacro/", "pdf": "files/GESTION2_2-Simulacro-Test_Laboratorio.pdf"}, "extra": [["⚡ Lo imprescindible", "files/GESTION2_3-Imprescindible_Laboratorio.pdf"], ["✅ Verificación", "files/GESTION2_5-Verificacion_Laboratorio.pdf"]]}, {"id": "ing1", "asig": "Inglés", "em": "🇬🇧", "col": "ing", "ex": "1er examen", "tema": "Unit 1 verbos · Unit 2 presentes · vocabulario de laboratorio", "fecha": "2026-10-23", "rep": {"web": "ingles1/repaso/", "pdf": "files/INGLES1_1-Repaso_Tiempos.pdf"}, "sim": {"web": "ingles1/simulacro/", "pdf": "files/INGLES1_2-Simulacro_Tiempos.pdf"}, "extra": [["🌐 Aprende las 50 palabras", "ingles1/vocabulario/"], ["🌐 Examen Units 1–2", "ingles1/examen/"], ["🌐 Examen de vocabulario", "ingles1/examen-vocabulario/"], ["🌐 Simulacro de vocabulario", "ingles1/simulacro-vocabulario/"], ["📄 Repaso breve + 50 palabras", "files/INGLES1_1-Repaso-Breve_Vocabulario.pdf"], ["⚡ Lo imprescindible", "files/INGLES1_3-Imprescindible_Tiempos.pdf"]]}, {"id": "ipe2", "asig": "IPE 1", "em": "🦺", "col": "ipe", "ex": "2º examen", "tema": "Tema 3 · Riesgos ambientales en el trabajo", "fecha": "2026-10-13", "rep": {"web": "ipe2/repaso/", "pdf": "files/IPE2_1-Repaso_Riesgos-Ambientales.pdf"}, "sim": {"web": "ipe2/simulacro/", "pdf": "files/IPE2_2-Simulacro-Tipo-Examen_Riesgos-Ambientales.pdf"}, "extra": [["📄 Simulacro test", "files/IPE2_2-Simulacro-Test_Riesgos-Ambientales.pdf"], ["📄 Simulacro rápido", "files/IPE2_2-Simulacro-Rapido_Riesgos-Ambientales.pdf"], ["⚡ Lo imprescindible", "files/IPE2_3-Imprescindible_Riesgos-Ambientales.pdf"]]}, {"id": "lab1", "asig": "Técnicas Generales de Laboratorio", "em": "🧪", "col": "lab", "ex": "1er examen", "tema": "Unidad 1", "fecha": "2026-10-22", "rep": {"web": "lab1/repaso/", "pdf": "files/LAB1_1-Repaso_Unidad1_22.oct.pdf"}, "sim": {"web": "lab1/banco/", "webt": "Banco completo (153 preguntas)", "pdf": "files/LAB1_2-Simulacro-Test_Unidad1_22.oct.pdf"}, "extra": [["🌐 Test de 50", "lab1/test-50/"], ["🌐 Segundo test de 50", "lab1/test-50-b/"], ["📄 50 con respuestas", "files/LAB1_2-Simulacro-50-con-Respuestas_Unidad1_22.oct.pdf"], ["⚡ Lo imprescindible", "files/LAB1_3-Imprescindible_Unidad1_22.oct.pdf"]]}, {"id": "bio1", "asig": "Biología Molecular", "em": "🧬", "col": "bio", "ex": "1er examen", "tema": "Tema 2 · Cultivos celulares", "fecha": "2026-10-19", "rep": {"web": "bio1/repaso/", "pdf": "files/BIO1_1-Repaso_Cultivos_19.oct.pdf"}, "sim": {"web": "bio1/simulacro/", "pdf": "files/BIO1_2-Simulacro_Cultivos_19.oct.pdf"}, "extra": [["🔬 Neubauer y microscopio", "files/BIO1_4-Neubauer-Microscopio_Cultivos_19.oct.pdf"], ["⚡ Lo imprescindible", "files/BIO1_3-Imprescindible_Cultivos_19.oct.pdf"]]}, {"id": "gest1", "asig": "Gestión de Muestras", "em": "🧫", "col": "gest", "ex": "1er examen", "tema": "Tema 1 · Estructura organizativa del sector sanitario", "fecha": "2026-10-15", "rep": {"web": "gest1/repaso/", "pdf": "files/GESTION1_1-Repaso_Sector-Sanitario_15.oct.pdf"}, "sim": {"web": "gest1/simulacro/", "pdf": "files/GESTION1_2-Simulacro-Test_Sector-Sanitario_15.oct.pdf"}, "extra": [["⚡ Lo imprescindible", "files/GESTION1_3-Imprescindible_Sector-Sanitario_15.oct.pdf"]]}, {"id": "fisio1", "asig": "Fisiopatología", "em": "🫀", "col": "fisio", "ex": "1er examen", "tema": "Unidad 1 · La organización del cuerpo humano", "fecha": "2026-10-13", "rep": {"web": "fisio1/repaso/", "pdf": "files/FISIO1_1-Repaso_Organizacion_13.oct.pdf"}, "sim": {"web": "fisio1/simulacro/"}, "extra": [["⚡ Lo imprescindible", "files/FISIO1_3-Imprescindible_Organizacion_13.oct.pdf"], ["🧭 Cómo estudiar", "files/FISIO1_4-Como-Estudiar_Organizacion_13.oct.pdf"]]}];
 const MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
@@ -181,26 +200,12 @@ document.getElementById("summary").innerHTML=nx
   ?`${nx.days===0?"Hoy":nx.days===1?"Mañana":"En "+nx.days+" días"}: ${esc(nx.asig)}, ${esc(nx.ex)}. ${toStudy.length} por preparar.`
   :`${toStudy.length} exámenes por preparar, todavía sin fecha, y ${past.length} ya pasados.`;
 
-/* Muestras dibujadas: cada asignatura tiene la suya y cada examen, su propia semilla */
-function rng(str){let s=[...str].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,7);return()=>(s=(s*1664525+1013904223)%4294967296)/4294967296}
-function specimen(e){const r=rng(e.id);let o="",bg="#f3c3d4";const W=420,H=120;
-  if(e.col==="fisio"){bg="#f2a5be";for(let y=-4;y<H+8;y+=13){const w=4+r()*3,a=r()*5;
-      o+=`<path d="M-5 ${y} Q 105 ${y+a} 210 ${y} T 425 ${y}" fill="none" stroke="#d63a72" stroke-width="${w*1.6}" opacity=".78"/>`;
-      for(let x=r()*50;x<W;x+=46+r()*70)o+=`<ellipse cx="${x}" cy="${y+a/2}" rx="7" ry="2.5" fill="#3a1f8a"/>`}
-    for(let x=0;x<W;x+=7)o+=`<path d="M${x} 0V${H}" stroke="#a81c50" stroke-width=".7" opacity=".3"/>`}
-  else if(e.col==="bio"){bg="#e8e0ff";for(let i=0;i<46;i++){const x=r()*W,y=r()*H,a=r()*180,l=7+r()*8,c=["#4a2bb3","#6a3fd6","#2e1a80"][i%3];
-      o+=`<g transform="translate(${x} ${y}) rotate(${a})" stroke="${c}" stroke-width="4.4" stroke-linecap="round"><path d="M${-l/2} ${-l} L${l/2} ${l}"/><path d="M${l/2} ${-l} L${-l/2} ${l}"/></g>`}}
-  else if(e.col==="ipe"){bg="#fbe0d8";for(let i=0;i<78;i++){const x=r()*W,y=r()*H,R=8+r()*2.6;
-      o+=`<circle cx="${x}" cy="${y}" r="${R}" fill="#e0433a" opacity=".85"/><circle cx="${x}" cy="${y}" r="${R*.45}" fill="#f7b3a6" opacity=".9"/>`}
-    for(let i=0;i<3;i++){const x=80+r()*260,y=20+r()*80;o+=`<circle cx="${x}" cy="${y}" r="15" fill="#d9c7f4"/><path d="M${x-7} ${y-3} q6 -8 11 0 t-4 9 q-7 2 -7 -9" fill="#4a2bb3"/>`}}
-  else if(e.col==="lab"){bg="#d9f3e4";for(let x=0;x<=W;x+=30)o+=`<path d="M${x} 0V${H}" stroke="#16764a" stroke-width="${x%120===0?2.4:.8}"/>`;for(let y=0;y<=H;y+=30)o+=`<path d="M0 ${y}H${W}" stroke="#16764a" stroke-width="${y%120===0?2.4:.8}"/>`;
-    for(let i=0;i<60;i++){const x=r()*W,y=r()*H;o+=`<circle cx="${x}" cy="${y}" r="${2.4+r()*2}" fill="${i%5?"#0e5a8a":"#1c1626"}"/>`}}
-  else if(e.col==="gest"){bg="#fff1cf";let x=120;while(x<W){const w=2+Math.floor(r()*9);if(r()>.42)o+=`<rect x="${x}" y="14" width="${w}" height="92" fill="#22180a"/>`;x+=w+1}
-    for(let i=0;i<26;i++){o+=`<circle cx="${r()*W}" cy="${r()*H}" r="${3+r()*7}" fill="#f2a71b" opacity=".62"/>`}}
-  else{bg="#d6e9ff";const t="cell tissue stain slide smear lab".replace(/ /g,"");for(let i=0;i<48;i++){const x=r()*W,y=r()*H;
-      o+=`<circle cx="${x}" cy="${y}" r="${13+r()*5}" fill="#7dbbff" opacity=".66"/><text x="${x}" y="${y+5}" text-anchor="middle" font-family="Young Serif,Georgia,serif" font-size="15" fill="#10337f">${t[i%t.length]}</text>`}}
-  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="${W}" height="${H}" fill="${bg}"/>${o}</svg>`}
+const UNIT=e=>(e.rep.web||e.sim.web||"").split("/")[0];
+const specimen=e=>tsapcSpecimen(UNIT(e));
 
+const PROG={"bio1": {"key": "bio1-repaso-v1", "total": 32}, "gest1": {"key": "gest1-repaso-v1", "total": 75}, "gest2": {"key": "gest2-repaso-v1", "total": 31}, "bio2": {"key": "bio2-repaso-v1", "total": 37}, "ingles1": {"key": "ing1-repaso-v1", "total": 26}, "ipe2": {"key": "ipe2-repaso-v1", "total": 29}, "fisio2": {"key": "fisio2-repaso-v3", "total": 70}, "ipe-tema5": {"key": "ipe5-repaso-v1", "total": 35}, "lab1": {"key": "lab1-repaso-v1", "total": 47}, "fisio1": {"key": "fisio1-repaso-v1", "total": 52}, "fisio3": {"key": "fisio3-repaso-v1", "total": 90}};
+const KEYS=["bio1-repaso-v1", "bio1-simulacro-v1", "bio2-repaso-v1", "bio2-simulacro-v1", "eng-lab-vocab-full-v1", "eng-lab-vocab-v2", "eng-u12-exam-v2", "eng-u12-simulacro-v1", "fisio1-repaso-v1", "fisio1-simulacro-v1", "fisio2-repaso-v3", "fisio2-simulacro-v2", "fisio3-repaso-v1", "fisio3-simulacro-v1", "gest1-repaso-v1", "gest1-simulacro-v1", "gest2-repaso-v1", "gest2-simulacro-v1", "ing1-repaso-v1", "ipe2-repaso-v1", "ipe2-simulacro-v1", "ipe3-simulacro-v1", "ipe5-repaso-v1", "lab-u1-test153", "lab-u1-test50", "lab-u1-test50-b", "lab-words-learn-v1", "lab1-repaso-v1"];
+function progress(e){const p=PROG[UNIT(e)];if(!p)return null;let done=0;try{const s=JSON.parse(localStorage.getItem(p.key)||"null");if(s&&s.done)done=Object.keys(s.done).length}catch(_){}return{done:Math.min(done,p.total),total:p.total}}
 const when=e=>e.state==="up"?`<span class="when${e.days<=7?" soon":""}">${e.days===0?"Hoy":e.days===1?"Mañana":"Faltan "+e.days+" días"} · ${e.fd}</span>`:e.state==="done"?`<span class="when">Pasado · ${e.fd}</span>`:`<span class="when">Fecha por confirmar</span>`;
 function btn(kind,o,cls,e){const T=kind==="rep"?"Repaso":"Simulacro",L=`aria-label="${T}: ${esc(e.asig)}, ${esc(e.ex)}"`;
   if(o.web)return `<a class="btn ${cls}" href="${o.web}" ${L}>${T}</a>`;
@@ -218,6 +223,7 @@ function row(e){const m=materials(e);
    <div class="sheet">
     <p class="meta">${esc(e.asig)} · ${esc(e.ex)} · ${when(e)}</p>
     <h3>${esc(e.tema)}</h3>
+    ${(pr=>pr?`<div class="mastery"><span>${pr.done?`Dominas ${pr.done} de ${pr.total}`:`${pr.total} conceptos`}</span><i aria-hidden="true"><b style="width:${pr.done/pr.total*100}%%"></b></i></div>`:"")(progress(e))}
     ${e.sim.webt?`<p class="meta">Simulacro: ${esc(e.sim.webt)}</p>`:""}
     <div class="actions">${btn("rep",e.rep,"main",e)}${btn("sim",e.sim,"alt",e)}</div>
     ${m.length?`<details><summary aria-label="Más material de ${esc(e.asig)}, ${esc(e.ex)}: ${m.length}">Más material (${m.length})</summary><ul class="more">${m.map(([t,u])=>`<li><a href="${u}"><span>${esc(t)}</span><span class="kind">${/\.pdf$/i.test(u)?"PDF":"Web"}</span></a></li>`).join("")}</ul></details>`:""}
@@ -226,6 +232,8 @@ function row(e){const m=materials(e);
 function group(id,cls,title,list){return list.length?`<section class="chapter ${cls}" id="${id}"><div class="frame"><div class="chapter-h"><h2>${title}</h2><span class="count"><span aria-hidden="true">${list.length}</span><span class="sr-only">${list.length} ${list.length===1?"examen":"exámenes"}</span></span></div><div class="tray">${list.map(row).join("")}</div></div></section>`:""}
 
 let current=null;try{const c=sessionStorage.getItem("asig");if(asigs.includes(c))current=c}catch(_){}
+// Lo siguiente: el examen por preparar con menos progreso
+(function(){const pct=e=>{const p=progress(e);return p?p.done/p.total:1};const next=upcoming[0]||[...toStudy].sort((a,b)=>pct(a)-pct(b))[0];if(!next)return;const g=document.getElementById("go");g.href=next.rep.web||"#"+next.id;g.textContent="Seguir con "+(LAB[next.asig]||next.asig)+" · "+next.ex.replace(" examen","")+" →"})();
 const list=document.getElementById("list"),filter=document.getElementById("filter");
 function render(){const f=a=>!current||a.asig===current;
   list.innerHTML=group("preparar","todo","Por preparar",toStudy.filter(f))+group("pasados","done","Ya pasados",past.filter(f));
@@ -239,6 +247,20 @@ render();
 // Un enlace directo a un examen quita el filtro si lo estaba ocultando
 const showHash=()=>{const id=location.hash.slice(1);if(id&&current&&!document.getElementById(id)){current=null;render();document.getElementById(id)?.scrollIntoView()}};
 addEventListener("hashchange",showHash);showHash();
+
+/* Copia de seguridad: solo las claves de estas páginas, en un archivo que guarda el propio usuario */
+(function(){const msg=document.getElementById("bkMsg"),allowed=k=>KEYS.includes(k);
+  document.getElementById("bkSave").addEventListener("click",()=>{const data={};KEYS.forEach(k=>{try{const v=localStorage.getItem(k);if(v!==null)data[k]=v}catch(_){}});
+    const n=Object.keys(data).length;if(!n){msg.textContent="Todavía no hay progreso que guardar.";return}
+    const url=URL.createObjectURL(new Blob([JSON.stringify({app:"tsapc",saved:new Date().toISOString(),data})],{type:"application/json"}));const a=document.createElement("a");a.href=url;a.download="tsapc-progreso-"+new Date().toISOString().slice(0,10)+".json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);msg.textContent="Copia guardada con "+n+(n===1?" página.":" páginas.")});
+  document.getElementById("bkLoad").addEventListener("change",async ev=>{const f=ev.target.files[0];ev.target.value="";if(!f)return;let j;try{j=JSON.parse(await f.text())}catch(_){msg.textContent="Ese archivo no es una copia válida.";return}
+    if(!j||j.app!=="tsapc"||!j.data||typeof j.data!=="object"){msg.textContent="Ese archivo no es una copia de esta web.";return}
+    const ks=Object.keys(j.data).filter(k=>allowed(k)&&typeof j.data[k]==="string");if(!ks.length){msg.textContent="La copia no contiene progreso.";return}
+    msg.textContent="";const b=document.createElement("button");b.type="button";b.textContent="Sí, sustituir mi progreso por la copia ("+ks.length+")";b.style.cssText="appearance:none;font:inherit;font-weight:700;min-height:44px;padding:0 16px;border-radius:999px;border:0;background:#fff;color:#21124f;cursor:pointer";msg.appendChild(b);
+    b.addEventListener("click",()=>{try{ks.forEach(k=>localStorage.setItem(k,j.data[k]));msg.textContent="Copia restaurada. Actualizando…";setTimeout(()=>location.reload(),700)}catch(_){msg.textContent="No se pudo restaurar: el navegador bloquea el guardado."}})});
+  let prompt;const ins=document.getElementById("install");addEventListener("beforeinstallprompt",e=>{e.preventDefault();prompt=e;ins.hidden=false});
+  ins.addEventListener("click",async()=>{if(!prompt)return;prompt.prompt();await prompt.userChoice;prompt=null;ins.hidden=true});
+  if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))})();
 
 /* La lente: el tejido se pinta una vez y cada fotograma solo copia un círculo ampliado */
 (function(){const hero=document.getElementById("hero"),cv=document.getElementById("lens"),ctx=cv.getContext("2d");
@@ -282,7 +304,7 @@ addEventListener("hashchange",showHash);showHash();
 (function(){if(!window.THREE)return;
   const hero=document.getElementById("hero"),cv=document.getElementById("stage"),tip=document.getElementById("tip");
   let gl;try{gl=new THREE.WebGLRenderer({canvas:cv,antialias:true,powerPreference:"high-performance"})}catch(_){return}
-  const still=matchMedia("(prefers-reduced-motion: reduce)").matches,small=innerWidth<680;
+  let still=matchMedia("(prefers-reduced-motion: reduce)").matches;const small=innerWidth<680;
   cv.hidden=false;heroLens.stop();
   gl.setPixelRatio(Math.min(devicePixelRatio||1,small?1.5:2));
   const bg=getComputedStyle(document.documentElement).getPropertyValue("--hema").trim()||"#21124f";
@@ -310,7 +332,7 @@ addEventListener("hashchange",showHash);showHash();
     const label=()=>{x.fillStyle="#f7f4ec";x.fillRect(0,0,226,256);x.fillStyle="rgba(0,0,0,.14)";x.fillRect(226,0,2,256);
       x.fillStyle="#26205f";x.font='700 54px Caveat,cursive';x.fillText(LAB[e.asig]||e.asig,20,112);x.fillStyle="#c22a5e";x.font='700 50px Caveat,cursive';x.fillText(e.ex.replace(" examen",""),20,172);tx.needsUpdate=true};
     const im=new Image();im.onload=()=>{const k=Math.max(542/im.width,256/im.height);x.drawImage(im,226+(542-im.width*k)/2,(256-im.height*k)/2,im.width*k,im.height*k);label()};im.onerror=label;
-    im.width=840;im.height=240;im.src="data:image/svg+xml,"+encodeURIComponent(specimen(e).replace("<svg ",'<svg xmlns="http://www.w3.org/2000/svg" width="840" height="240" '));
+    im.width=840;im.height=240;im.src="data:image/svg+xml,"+encodeURIComponent(specimen(e).replace("<svg ",'<svg width="840" height="240" '));
     return tx}
   const glassG=new THREE.BoxGeometry(SW3,SH3,.07),planeG=new THREE.PlaneGeometry(SW3*.985,SH3*.96),edgeG=new THREE.EdgesGeometry(glassG);
   const glassM=new THREE.MeshPhysicalMaterial({color:0xffffff,transparent:true,opacity:.2,roughness:.06,clearcoat:1,depthWrite:false}),edgeM=new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:.75});
@@ -340,13 +362,18 @@ addEventListener("hashchange",showHash);showHash();
       g.position.copy(u.base).multiplyScalar(1+u.lift*.18)});
     cells.rotation.y=now*.000018+cx*.05;cells.rotation.x=cy*.03;cells.position.y=p*2;
     cam.position.set(cx*.5,-cy*.25-p*.8,11.5-p*5);cam.lookAt(0,0,-2);gl.render(scene,cam)}
-  function tick(){raf=0;if(!seen)return;frame();raf=requestAnimationFrame(tick)}
+  // Si el dispositivo va justo, baja la calidad; si aun así no llega, deja la escena fija
+  let last=0,dts=[],level=0;
+  function tune(now){if(last&&now-last<500)dts.push(now-last);last=now;if(dts.length<45||now-t0<1600)return;const avg=dts.reduce((a,b)=>a+b,0)/dts.length;dts=[];
+    if(avg>30&&level===0){level=1;gl.setPixelRatio(1);cyt.count=nuc.count=Math.floor(N/2);fit()}
+    else if(avg>45&&level===1){level=2;still=true}}
+  function tick(now){raf=0;if(!seen)return;frame();tune(now);if(still)return;raf=requestAnimationFrame(tick)}
   const go=()=>{if(!still&&!raf&&seen)raf=requestAnimationFrame(tick)};
   new IntersectionObserver(([en])=>{seen=en.isIntersecting;go()}).observe(hero);
   let rs;addEventListener("resize",()=>{clearTimeout(rs);rs=setTimeout(fit,120)});
   cv.addEventListener("webglcontextlost",ev=>{ev.preventDefault();seen=false;cv.hidden=true;tip.hidden=true;heroLens.resume()});
   fit();frame();go();
-  if(still)addEventListener("scroll",()=>requestAnimationFrame(frame),{passive:true});
+  addEventListener("scroll",()=>{if(still&&seen)requestAnimationFrame(frame)},{passive:true});
   window.hero3D={slides,pick}})();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

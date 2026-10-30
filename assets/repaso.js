@@ -5,24 +5,7 @@
   const col=/^fisio/.test(folder)?"fisio":/^bio/.test(folder)?"bio":/^gest/.test(folder)?"gest":/^ingles/.test(folder)?"ing":/^ipe/.test(folder)?"ipe":/^lab/.test(folder)?"lab":"fisio";
   const SHORT={fisio:"Fisio",bio:"Bio",gest:"Gestión",ing:"Inglés",ipe:"IPE",lab:"Lab"};
 
-  // Cada unidad tiene su propio dibujo, sacado de su tema
-  function specimen(id){let s=[...id].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,7);const r=()=>(s=(s*1664525+1013904223)%4294967296)/4294967296;
-    let o="",bg="#f3c3d4";const W=420,H=120;
-    const cells=(n,cy,nu,big)=>{for(let i=0;i<n;i++){const x=r()*W,y=r()*H,R=big*(.7+r()*.6);o+=`<ellipse cx="${x}" cy="${y}" rx="${R}" ry="${R*(.7+r()*.3)}" transform="rotate(${r()*180} ${x} ${y})" fill="${cy}" opacity="${.5+r()*.4}"/><circle cx="${x}" cy="${y}" r="${R*.35}" fill="${nu}"/>`}};
-    if(id==="fisio1"){bg="#efe3cc";for(let i=1;i<16;i++){o+=`<ellipse cx="300" cy="60" rx="${i*15}" ry="${i*8}" fill="none" stroke="#8c2f1b" stroke-width="${i%4?.7:1.5}" opacity=".7"/>`}for(let x=10;x<190;x+=9)o+=`<path d="M${x} 10 q 14 50 0 100" fill="none" stroke="#2a1a12" stroke-width=".7" opacity=".55"/>`}
-    else if(id==="fisio2"){bg="#f2a5be";for(let y=-4;y<H+8;y+=13){const w=4+r()*3,a=r()*5;o+=`<path d="M-5 ${y} Q 105 ${y+a} 210 ${y} T 425 ${y}" fill="none" stroke="#d63a72" stroke-width="${w*1.6}" opacity=".78"/>`;for(let x=r()*50;x<W;x+=46+r()*70)o+=`<ellipse cx="${x}" cy="${y+a/2}" rx="7" ry="2.5" fill="#3a1f8a"/>`}}
-    else if(id==="fisio3"){bg="#d9a6a6";cells(70,"#a3121f","#1a1414",11);for(let i=0;i<14;i++){const x=r()*W,y=r()*H;o+=`<circle cx="${x}" cy="${y}" r="${5+r()*16}" fill="#f4e8e8" opacity=".75"/>`}}
-    else if(id==="bio1"){bg="#f5d68a";for(let i=0;i<60;i++){const x=r()*W,y=r()*H,R=3+r()*11;o+=`<circle cx="${x}" cy="${y}" r="${R}" fill="${["#fff6df","#e89a2c","#d0562b","#0b6d6a"][i%4]}" opacity=".85"/><circle cx="${x-R*.3}" cy="${y-R*.3}" r="${R*.3}" fill="#fff" opacity=".55"/>`}}
-    else if(id==="bio2"){bg="#efeaff";for(let i=0;i<26;i++){const x=12+i*16,h=40+r()*50,y=(H-h)/2;for(let k=0;k<2;k++){const px=x+k*7;o+=`<rect x="${px}" y="${y}" width="6" height="${h}" rx="3" fill="#180f3c"/>`;for(let b=y+3;b<y+h-3;b+=4+r()*7)o+=`<rect x="${px}" y="${b}" width="6" height="${1+r()*3}" fill="#b7a3ff"/>`}}}
-    else if(id==="gest1"){bg="#dbe8f7";const n=(x,y,w=70)=>`<rect x="${x}" y="${y}" width="${w}" height="24" rx="3" fill="#0a4c9c"/>`,l=(a,b,c,d)=>`<path d="M${a} ${b}V${(b+d)/2}H${c}V${d}" fill="none" stroke="#0a4c9c" stroke-width="2.4"/>`;o+=n(175,6)+l(210,30,90,48)+l(210,30,210,48)+l(210,30,330,48)+n(55,48)+n(175,48)+n(295,48)+l(90,72,50,90)+l(90,72,130,90)+l(330,72,290,90)+l(330,72,370,90)+l(210,72,210,90)+n(15,90)+n(95,90)+n(175,90)+n(255,90)+n(335,90)}
-    else if(id==="gest2"){bg="#0d3a60";const c="#8fdcff";for(let x=0;x<W;x+=14)o+=`<path d="M${x} 0V${H}" stroke="#2c6a96" stroke-width=".5"/>`;for(let y=0;y<H;y+=14)o+=`<path d="M0 ${y}H${W}" stroke="#2c6a96" stroke-width=".5"/>`;o+=`<path d="M16 14H404V106H16Z M130 14V68H16 M250 14V106 M250 60H404 M130 68V106 M330 60V106" fill="none" stroke="${c}" stroke-width="2.4"/><path d="M180 106a30 30 0 0 1 30-30V106" fill="none" stroke="${c}"/><path d="M280 14a24 24 0 0 0 24 24V14" fill="none" stroke="${c}"/>`}
-    else if(id==="ingles1"){bg="#10203f";const t=["have","be","do","run","see","go","am","is","are","was","has","does","work","study"];for(let i=0;i<26;i++){const x=r()*W,y=14+r()*(H-12);o+=`<text x="${x}" y="${y}" font-family="Georgia,serif" font-style="italic" font-size="${13+r()*26}" fill="${i%3?"#fbf8f3":"#ff6b7f"}" opacity="${.45+r()*.55}">${t[i%t.length]}</text>`}}
-    else if(id==="ipe2"){bg="#ffd400"}
-    else if(id==="ipe-tema5"){bg="#075c37";o+=`<path d="M0 62H90l10-16 12 30 13-62 15 74 12-26H220l10-16 12 30 13-62 15 74 12-26H420" fill="none" stroke="#d6ffe8" stroke-width="3" stroke-linejoin="round"/>`}
-    else if(id==="lab1"){bg="#d9f3e4";for(let x=0;x<=W;x+=30)o+=`<path d="M${x} 0V${H}" stroke="#16764a" stroke-width="${x%120===0?2.4:.8}"/>`;for(let y=0;y<=H;y+=30)o+=`<path d="M0 ${y}H${W}" stroke="#16764a" stroke-width="${y%120===0?2.4:.8}"/>`;for(let i=0;i<60;i++)o+=`<circle cx="${r()*W}" cy="${r()*H}" r="${2.4+r()*2}" fill="${i%5?"#0e5a8a":"#1c1626"}"/>`}
-    return `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice"><rect width="${W}" height="${H}" fill="${bg}"/>${o}</svg>`)}")`}
-
-  document.documentElement.style.setProperty("--spec",specimen(folder));
+  document.documentElement.style.setProperty("--spec",tsapcSpecUrl(folder));
 
   const top=document.querySelector(".top");
   if(top&&!top.querySelector(".spec")){const parts=(top.querySelector(".eyebrow")?.textContent||"").split("·").map(x=>x.trim()),m=(parts.find(x=>/examen|tema|unidad/i.test(x))||parts[parts.length-1]||"").replace(/ examen$/i,"");
@@ -50,4 +33,7 @@
   const plan=document.getElementById("planOv");
   if(plan){const clean=()=>plan.querySelectorAll('a[href^="#"]').forEach(a=>{const id=a.getAttribute("href").slice(1);if(id&&!document.getElementById(id))a.remove()});
     new MutationObserver(clean).observe(plan,{childList:true,subtree:true});clean()}
+
+  // Modo sin internet: guarda lo visitado
+  if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../../sw.js").catch(()=>{}));
 })();

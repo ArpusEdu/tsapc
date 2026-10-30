@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-unit="ingles1">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -14,12 +14,16 @@ var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body
 var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
 function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
 (function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
-</head>
-<body>
 <title>English Exam Units 1–2</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-192.png">
+<meta name="theme-color" content="#21124f">
+</head>
+<body>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@700&display=swap">
 <style>
 /* Layout: una hoja de examen centrada; cada ejercicio es una sección numerada con su puntuación; la corrección aparece "en bolígrafo rojo" junto a cada respuesta */
 :root{
@@ -90,6 +94,8 @@ table.vt input.g{width:100%;min-width:6.5em}
 .note{font-size:14px;color:var(--muted);margin:0}
 @media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
 </style>
+<link rel="stylesheet" href="../../assets/unidades.css">
+<link rel="stylesheet" href="../../assets/practica.css">
 
 <div class="wrap">
 <div class="paper" id="paper">
@@ -292,5 +298,7 @@ document.getElementById("reset").onclick=()=>{const m=document.getElementById("m
 build();
 </script>
 
+<script src="../../assets/especimen.js"></script>
+<script src="../../assets/practica.js"></script>
 </body>
 </html>

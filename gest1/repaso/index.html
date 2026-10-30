@@ -16,6 +16,9 @@ function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEv
 (function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
 <title>Gestión 1 · Sector sanitario</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-192.png">
+<meta name="theme-color" content="#21124f">
 </head>
 <body>
 
@@ -1731,8 +1734,8 @@ const REVIEW=[
  {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
  {t:"📝 Simulacro completo",d:"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
  {t:"🩹 Repasa lo que fallaste en el Simulacro",d:"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».",m:30,u:EXAM.simulacro,rev:1},
- {t:"⚠️ Trampas y chequeo final",d:"Repasa las trampas y contesta el chequeo final sin mirar.",m:25,u:"#trampas",rev:1},
- {t:"⚠️ Trampas y 🔢 números clave",d:"Las parejas que se confunden y las cifras (%, µm, mm/h…).",m:20,u:"#trampas",rev:1},
+ {t:"🃏 Tarjetas: definiciones",d:"🃏 Tarjetas → «Definiciones de la diapositiva». Son las que tienes que dar en el examen.",m:25,u:"#fc",rev:1},
+ {t:"🔴 Repaso de lo imprescindible",d:"En el Repaso, filtra 🔴 Imprescindibles y responde «Ponte a prueba» sin mirar.",m:20,u:"#fc",rev:1},
  {t:"⚡ Lo imprescindible",d:"Pregunta → respuesta corta. Lo último antes de dormir.",m:20,u:"#impres",rev:1}];
 const WARM={t:"🔁 Calentamiento: lo que fallaste ayer",d:"🃏 Tarjetas → «Solo las que fallé». Así lo de ayer no se te olvida.",m:15,u:"#fc",rev:1};
 const toMin=s=>{const [h,m]=(s||"0:0").split(":").map(Number);return h*60+m};
@@ -1923,6 +1926,7 @@ function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pc
 
 </script>
 
+<script src="../../assets/especimen.js"></script>
 <script src="../../assets/repaso.js"></script>
 </body>
 </html>
