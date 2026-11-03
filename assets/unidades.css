@@ -136,3 +136,15 @@
 [data-unit="bio3"] .cpt.lv1{border-top-color:var(--lv1)}[data-unit="bio3"] .cpt.lv3{border-top-color:var(--lv3)}
 [data-unit="bio3"] .c-n{background:var(--blk);color:var(--blk-ink)}
 [data-unit="bio3"] figure svg{max-width:100%;height:auto}
+/* Lab 2: mismo estilo que Lab 1 */
+:root[data-unit="lab2"]{--f-display:"JetBrains Mono",Georgia,serif;--dw:700;--r:6px;--q:#0c6b45;--bg:#f1f7f3;--surface:#fff;--soft:#e4f0e9;--line:#c6dcce;--ink:#0e241a;--muted:#46594f;--accent:#0c6b45;--accent-ink:#fff;--blk:#0f3d2c;--blk-ink:#fff;--blk-accent:#9ff0c8;--blk-open:#0c6b45;--hero:#0f3d2c;--hero-ink:#fff;--hero-sub:#dcf3e6;--hero-accent:#9ff0c8}
+@media (prefers-color-scheme:dark){:root[data-unit="lab2"]:not([data-theme="light"]){--q:#7fe5b5;--bg:#09130e;--surface:#122019;--soft:#1a2d23;--line:#2d4639;--ink:#e9f5ee;--muted:#a4c0b0;--accent:#7fe5b5;--accent-ink:#0a2318;--blk:#143f2e;--blk-ink:#fff;--blk-accent:#9ff0c8;--blk-open:#0c6b45;--hero:#143f2e;--hero-ink:#fff;--hero-sub:#dcf3e6;--hero-accent:#9ff0c8}}
+:root[data-unit="lab2"][data-theme="dark"]{--q:#7fe5b5;--bg:#09130e;--surface:#122019;--soft:#1a2d23;--line:#2d4639;--ink:#e9f5ee;--muted:#a4c0b0;--accent:#7fe5b5;--accent-ink:#0a2318;--blk:#143f2e;--blk-ink:#fff;--blk-accent:#9ff0c8;--blk-open:#0c6b45;--hero:#143f2e;--hero-ink:#fff;--hero-sub:#dcf3e6;--hero-accent:#9ff0c8}
+[data-unit="lab2"] body{background-image:linear-gradient(rgba(12,107,69,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(12,107,69,.09) 1px,transparent 1px);background-size:20px 20px}
+[data-unit="lab2"] h1{font-size:clamp(1.65rem,5vw,2.6rem);letter-spacing:-.04em}
+[data-unit="lab2"] .blk-h .bt{font-size:clamp(1.15rem,3vw,1.5rem);letter-spacing:-.03em}
+[data-unit="lab2"] .c-h h3{font-size:clamp(1.05rem,2.8vw,1.28rem);letter-spacing:-.02em}
+[data-unit="lab2"] .xs-h{font-size:clamp(1.25rem,3.4vw,1.6rem)}
+[data-unit="lab2"] .blk-h::before{inset:0 0 0 58%;opacity:.42}
+[data-unit="lab2"] .cpt{border:1px solid var(--line);border-left:6px solid var(--lv2)}
+[data-unit="lab2"] .cpt.lv1{border-left-color:var(--lv1)}[data-unit="lab2"] .cpt.lv3{border-left-color:var(--lv3)}

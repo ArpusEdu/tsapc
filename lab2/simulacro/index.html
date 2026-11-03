@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es" data-unit="lab2">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Lab 2 · Simulacro</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@700&display=swap">
+<style>
+/* Layout: una columna para el móvil; cada parte del examen es una sección plegable con su botón «Corregir esta parte»; arriba, el marcador global */
+:root{
+  --bg:#f3f1f5; --surface:#ffffff; --ink:#1f1a2b; --muted:#6a6178; --line:#e2dde8; --soft:#f7f5fa; --accent:#7a1f3d;
+  --ok:#1e7a4c; --ok-soft:#e3f5ea; --bad:#c3203f; --bad-soft:#fde8ec; --self:#2f6fd6; --self-soft:#e6eefc; --tip-soft:#fff4d4;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif; --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141019; --surface:#1e1926; --ink:#ece7f3; --muted:#a79cb6; --line:#332b3f; --soft:#251f2e; --accent:#ff8fae;
+  --ok:#5fd39a; --ok-soft:#163323; --bad:#ff6f87; --bad-soft:#3a1720; --self:#7aa7ff; --self-soft:#172540; --tip-soft:#352a14; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141019; --surface:#1e1926; --ink:#ece7f3; --muted:#a79cb6; --line:#332b3f; --soft:#251f2e; --accent:#ff8fae;
+  --ok:#5fd39a; --ok-soft:#163323; --bad:#ff6f87; --bad-soft:#3a1720; --self:#7aa7ff; --self-soft:#172540; --tip-soft:#352a14; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding-block:16px 60px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:12px}
+.wrap>*{min-width:0}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:30px;line-height:1.1;margin-top:4px}
+.meta{color:var(--muted);margin:4px 0 0;font-size:15px}
+.score{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.score-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.big{font-family:var(--f-display);font-size:40px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;color:var(--accent)}
+.score small{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.parts{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.pchip{font:inherit;font-size:13px;text-align:left;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:8px;padding:6px 8px;cursor:pointer;display:flex;justify-content:space-between;gap:6px}
+.pchip b{font-family:var(--f-mono);font-weight:500;font-variant-numeric:tabular-nums}
+.sec{margin:0}
+.sec-h{width:100%;text-align:left;font:inherit;color:#fff;background:var(--accent);border:0;border-radius:12px;padding:12px 40px 12px 14px;cursor:pointer;position:relative;display:grid;gap:2px}
+.sec-h .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;opacity:.9}
+.sec-h .t{font-family:var(--f-display);font-size:20px;font-weight:700;line-height:1.15}
+.sec-h .c{font-size:13px;opacity:.95}
+.sec-h .chev{position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+.sec.open .sec-h .chev{transform:translateY(-50%) rotate(180deg)}
+.sec-b{display:none;flex-direction:column;gap:10px;padding:10px 0 0}
+.sec.open .sec-b{display:flex}
+.how{font-size:14px;color:var(--muted);margin:0}
+.it{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.it .q{font-weight:700}
+.it .n{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-right:4px}
+.opts{display:flex;flex-direction:column;gap:6px}
+.opt{display:grid;grid-template-columns:22px 1fr;gap:6px;align-items:start;border:1px solid var(--line);border-radius:8px;padding:7px 8px;cursor:pointer;background:var(--soft)}
+.opt input{margin-top:4px}
+.vf{display:flex;gap:8px}
+.vf label{display:flex;gap:6px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:6px 12px;cursor:pointer;background:var(--soft)}
+textarea,input.tx,select{font:inherit;font-size:16px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%;min-width:0}
+textarea{min-height:70px;resize:vertical}
+.mrow{display:grid;grid-template-columns:1fr;gap:4px}
+.mrow label{font-weight:700;font-size:15px}
+.fig img{max-width:100%;border-radius:8px;border:1px solid var(--line);background:#fff;display:block;margin:0 auto}
+.labels{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px}
+.lab{display:grid;grid-template-columns:30px 1fr;gap:6px;align-items:center}
+.lab span{font-family:var(--f-mono);font-size:13px;background:var(--accent);color:#fff;border-radius:999px;text-align:center;padding:3px 0}
+.btn{font:inherit;font-weight:700;font-size:15px;border-radius:8px;padding:10px 14px;cursor:pointer;border:1.5px solid var(--accent);background:var(--surface);color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--surface)}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.ok-box{background:var(--ok-soft);border-left:4px solid var(--ok);border-radius:0 8px 8px 0;padding:7px 9px;font-size:15px}
+.bad-box{background:var(--bad-soft);border-left:4px solid var(--bad);border-radius:0 8px 8px 0;padding:7px 9px;font-size:15px}
+.model{background:var(--self-soft);border-left:4px solid var(--self);border-radius:0 8px 8px 0;padding:7px 9px;font-size:15px}
+.model b.lbl{color:var(--self)}
+.selfmark{display:flex;gap:8px;flex-wrap:wrap}
+.selfmark button{font:inherit;font-size:14px;font-weight:700;border-radius:8px;padding:6px 12px;cursor:pointer;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+.selfmark button[aria-pressed="true"].y{background:var(--ok);border-color:var(--ok);color:#fff}
+.selfmark button[aria-pressed="true"].n{background:var(--bad);border-color:var(--bad);color:#fff}
+.it.right{border-color:var(--ok)} .it.wrong{border-color:var(--bad)}
+.secscore{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.llave{border:2px solid var(--bad)}
+.note{font-size:13px;color:var(--muted);margin:0}
+.replink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:11px 14px;font-size:15px}
+.replink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+.btn:focus-visible,.sec-h:focus-visible,.pchip:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-visible,.selfmark button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:30;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<link rel="stylesheet" href="../../assets/unidades.css">
+<link rel="stylesheet" href="../../assets/practica.css">
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
+(function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
+<link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-192.png">
+<meta name="theme-color" content="#21124f">
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">🧪 Técnicas Generales de Laboratorio · 2º examen · 5 de noviembre</span>
+    <h1>Simulacro: seguridad y prevención de riesgos en el laboratorio</h1>
+    <p class="meta">Haz las partes en el orden que quieras y corrige cada una con su botón. Las de test, verdadero/falso y relacionar se corrigen solas; en las de escribir te sale la respuesta modelo y te marcas tú ✓ o ✗. Todo se guarda en este navegador.</p>
+  </header>
+  <a class="replink" href="../../lab2/repaso/"><span>📖 ¿Fallaste algo? Búscalo en el <b>Repaso</b></span><span aria-hidden="true">→</span></a>
+  <div class="score" aria-live="polite">
+    <div class="score-top"><span class="big" id="nota">–</span><small id="pts">Aún no has corregido ninguna parte</small></div>
+    <div class="parts" id="chips"></div>
+  </div>
+  <div id="exam"></div>
+  <div class="row"><button class="btn" type="button" id="reset">Borrar todo y empezar de cero</button></div>
+  <p class="note" id="msg" hidden></p>
+</div>
+<script>
+const D = {"MC": [["¿Qué tipo de señal es redonda, con pictograma blanco sobre fondo azul?", ["Prohibición", "Advertencia", "Obligación", "Emergencia"], 2], ["¿De qué color es el fondo de las señales de emergencia (vías de evacuación y salidas)?", ["Azul", "Amarillo", "Rojo", "Verde"], 3], ["¿Por qué no se debe trabajar solo en el laboratorio?", ["Porque si pierdes la consciencia en un accidente, nadie podrá socorrerte", "Porque las normas lo prohíben a los técnicos con poca experiencia", "Porque los reactivos solo se pueden abrir entre dos personas", "Porque el laboratorio debe estar siempre lleno de gente"], 0], ["¿Por qué la bata de laboratorio lleva automáticos y no botones?", ["Para que quede más ajustada al cuerpo", "Para quitártela rápido si arde", "Para que no reaccione con los vapores", "Para que sea más barata"], 1], ["El látex produce muchas alergias. ¿Qué materiales se usan cada vez más en los guantes?", ["Algodón o lana", "Cuero o goma dura", "Vinilo o nitrilo", "Papel o cartón"], 2], ["¿Cuál de estos elementos NO se considera un EPI?", ["Los guantes de protección térmica", "Las gafas de seguridad", "Las mascarillas FFP2/FFP3", "La ropa de trabajo corriente"], 3], ["Manipulas una pieza conservada en formaldehído y sus vapores se pueden inhalar. ¿Qué EPI te protege de ellos?", ["Mascarilla FFP2/FFP3", "Guantes de protección térmica", "Bata con automáticos", "Lentes de contacto"], 0], ["¿Cómo debe ser el calzado para ir al laboratorio?", ["Abierto y fresco, tipo sandalia", "Cerrado y cómodo, con suela de goma", "Con tacón para estar más alto", "Cualquiera, si lleva calcetines"], 1], ["¿Cuántos epígrafes tiene la ficha de datos de seguridad (FDS)?", ["8", "12", "16", "20"], 2], ["¿Qué epígrafe de la FDS recoge las medidas en caso de vertido accidental?", ["El 4", "El 9", "El 13", "El 6"], 3], ["En la tabla de compatibilidad de almacenamiento, un 0 significa:", ["Compatibilidad condicionada: juntas solo con ciertas precauciones", "Incompatibles: deben almacenarse separadas", "Compatibles sin ninguna precaución", "Producto sin riesgo que no necesita almacenarse"], 0], ["Según la tabla de compatibilidad, además de consigo mismo, ¿con qué es compatible un producto Tóxico?", ["Inflamable", "Irritante/Nocivo", "Explosivo", "Radioactivo"], 1], ["En las etiquetas, la letra T+ significa:", ["Tóxico", "Extremadamente inflamable", "Extremadamente tóxico", "Irritante"], 2], ["¿Qué letra de la etiqueta indica «peligroso para el medioambiente»?", ["R", "O", "C", "N"], 3], ["¿Cuál de estos fluidos está implicado en la transmisión de agentes biológicos?", ["Plasma", "Orina", "Saliva", "Lágrimas"], 0], ["Si se rompen tubos en la centrífuga, ¿cuánto hay que esperar antes de abrirla?", ["Nada: se abre de inmediato", "5 minutos", "10 minutos", "1 hora"], 1], ["¿Cuál es el orden de peligrosidad de las partículas radiactivas en el organismo?", ["γ < β < α", "β < α < γ", "α < β < γ", "α < γ < β"], 2], ["¿Cómo se sujeta un reactivo o una mezcla al transportarlo?", ["Solo por el tapón", "Con una sola mano, para llevar la otra libre", "Apoyado contra el pecho", "Con una mano en el fondo y la otra en la parte de arriba"], 3], ["Según el caso práctico 2.1, ¿cómo se observan las placas y los reactivos?", ["Apoyados en la mesa, nunca a la altura de la cara", "Levantados hacia la luz para verlos mejor", "Sostenidos a la altura de la cara", "Inclinados hacia uno mismo"], 0], ["Con material radiactivo, ¿sobre qué tipo de superficies se debe trabajar?", ["Porosas, para que absorban la radiación", "No porosas y sin roturas", "Con roturas, para que drenen", "Cualquiera, porque la radiación no se deposita"], 1], ["En una cabina de bioseguridad, ¿qué haces con la luz UV mientras trabajas?", ["La enciendes para esterilizar mientras trabajas", "La dejas en intermitente", "La apagas, porque causa quemaduras y lesiones en ojos y córnea", "La orientas hacia las manos"], 2], ["¿Cuántos manómetros tiene una bombona de gas?", ["Ninguno", "Uno", "Tres", "Dos"], 3], ["¿Cómo se abren los congeladores de –80 °C?", ["Con guantes térmicos, porque el frío extremo también quema", "Con guantes de látex", "Sin guantes, para tener más precisión", "Con las manos secas y sin protección"], 0], ["En una centrífuga, ¿qué indica que los pesos están desequilibrados?", ["Que sube muy rápido a la velocidad indicada", "Que vibra o suena raro", "Que está completamente anclada", "Que mantiene la tapa cerrada"], 1], ["¿Qué equipo trabaja a alta presión y tiene un manómetro que indica cuándo abrir?", ["El baño", "La estufa", "El autoclave", "La balanza"], 2], ["¿Qué tipo de agua se recomienda para los baños?", ["Agua del grifo sin cambiar nunca", "Agua con sal", "Agua con disolvente", "Agua destilada"], 3], ["¿Qué residuos van en el recipiente blanco?", ["Restos de disolventes químicos", "Contaminación citotóxica", "Residuos urbanos", "Material punzante"], 0], ["¿Qué residuos van en el bote azul?", ["Residuos urbanos", "Contaminación citotóxica", "Restos de disolventes químicos", "Cadáveres"], 1], ["¿Qué material genera el grupo V de residuos biosanitarios especiales?", ["Restos humanos pequeños", "Heces de personas con cólera o disentería", "Material punzante: agujas, bisturíes…", "Material de cultivos biológicos"], 2], ["El grupo VIII de residuos biosanitarios corresponde a:", ["Restos humanos pequeños", "Esputos de tuberculosis y fiebre Q", "Enfermedades infecciosas erradicadas", "Material usado para contener más de 100 ml de sangre"], 3], ["¿Por qué razón, por regla general, los residuos químicos no se tiran por el desagüe?", ["Pueden reaccionar con el agua en una reacción exotérmica, con salpicaduras dañinas o una explosión", "Porque siempre son radiactivos", "Porque el agua los vuelve más puros", "Porque todos son biodegradables y se pierden"], 0], ["¿Cómo se eliminan los residuos ácidos dentro del laboratorio?", ["Se neutralizan con otro ácido", "Se neutralizan con una base y se diluyen", "Se tiran sin diluir", "Se absorben con una aspiradora"], 1], ["¿Cuánto tiempo, como mínimo, hay que mantener el ojo abierto bajo el chorro del lavaojos?", ["30 segundos", "1 minuto", "5 minutos", "2-3 minutos"], 2], ["Si hay amenaza de bomba, ¿qué se hace con las puertas y ventanas al evacuar?", ["Se cierran con llave", "Se cierran sin llave", "Se bloquean con muebles", "Se dejan abiertas"], 3], ["¿Cuál es la secuencia correcta del sistema de alarma?", ["Aviso → prealarma → silencio → alarma → evacuación", "Aviso → alarma → silencio → prealarma → evacuación", "Prealarma → aviso → alarma → silencio → evacuación", "Alarma → aviso → prealarma → evacuación → silencio"], 0], ["Si se te prende la ropa durante una evacuación, ¿qué haces?", ["Corres hacia la salida", "Te tiras al suelo y ruedas", "Subes por las escaleras", "Te quedas quieto de pie"], 1], ["Con mucho humo durante la evacuación, ¿cómo debes caminar?", ["Erguido y corriendo", "Gateando sin cubrirte la cara", "Agachado, tapándote la nariz y la boca con un pañuelo o una prenda", "Por el ascensor"], 2], ["Tras un corte o pinchazo, ¿con qué se desinfecta la herida?", ["Con lejía", "Con lejía diluida al 10 %", "No se desinfecta: basta con cubrirla", "Con povidona yodada o clorhexidina"], 3], ["Para limpiar un derrame de sangre sobre una superficie, ¿qué se vierte sobre ella?", ["Lejía diluida al 10 %", "Agua destilada", "Un disolvente orgánico", "Un ácido concentrado"], 0], ["¿Qué haces durante la prealarma?", ["Evacuar de inmediato por el ascensor", "Dejar el puesto seguro, desconectar los equipos y estar atento a las señales", "Cerrar con llave el laboratorio", "Seguir trabajando con normalidad"], 1]], "VF": [["La ropa de trabajo corriente no se considera un EPI.", 1, "Los EPI son los pensados para proteger; la ropa de trabajo corriente y los uniformes sin ese fin no lo son."], ["Si llevas gafas de seguridad, puedes usar lentes de contacto en el laboratorio.", 0, "No se deben usar lentes de contacto."], ["Los guantes de protección térmica se usan en cualquier tarea del laboratorio.", 0, "Solo cuando hay riesgo de quemadura."], ["Las secreciones nasales, los esputos, la orina, la saliva y las heces no están vinculados con la transmisión laboral, salvo que contengan sangre.", 1, "Su riesgo es extremadamente bajo salvo que contengan sangre."], ["La letra N en una etiqueta indica que el producto es radioactivo.", 0, "N es peligroso para el medioambiente; la radioactividad es R."], ["Los productos que preparas y almacenas también llevan su símbolo, igual que los comerciales.", 1, "Hay que rotularlos con su nombre y su pictograma."], ["La radiación γ es menos peligrosa para el organismo que la α.", 0, "El orden de peligrosidad es α < β < γ; la γ es muy penetrante."], ["Con material radiactivo hay que mantener la distancia adecuada con la fuente y no alargar el tiempo de exposición.", 1, "Son formas de prevención: distancia, tiempo de exposición y apantallamiento."], ["Un equipo que trabaja solo y detecta una anomalía sigue funcionando hasta que llega alguien.", 0, "Los equipos preparados para trabajar solos tienen un sistema de seguridad que los apaga."], ["El aire comprimido nunca debe dirigirse hacia una persona.", 1, "Causa heridas graves."], ["Por regla general, los residuos químicos se pueden tirar por el desagüe.", 0, "No: pueden no ser biodegradables y pueden reaccionar con el agua."], ["El grupo IX de los residuos biosanitarios especiales son los restos humanos pequeños.", 1, "Los cadáveres o restos humanos grandes van al servicio funerario o forense."], ["Si se te prende la ropa, debes correr para apagar el fuego.", 0, "Tírate al suelo y rueda; correr avivaría el fuego."], ["Ante un corte o un pinchazo no se usa lejía.", 1, "Se lava con agua corriente sin frotar y se desinfecta con povidona yodada o clorhexidina."], ["Durante una evacuación se pueden usar los ascensores si están cerca de la salida.", 0, "No se usan los ascensores."]], "MATCH": [{"t": "**1. Relaciona cada señal con su forma y su color**", "opts": ["Fondo verde", "Pictograma negro sobre fondo amarillo", "Redonda, pictograma negro sobre fondo blanco, con borde y banda rojos", "Redonda, pictograma blanco sobre fondo azul", "Rectangular o cuadrada, pictograma blanco sobre fondo rojo"], "items": [["Emergencia", [0]], ["Advertencia", [1]], ["Prohibición", [2]], ["Obligación", [3]], ["Contra incendios", [4]]]}, {"t": "**2. Relaciona cada residuo con el lugar donde va** (sala de tallado o de autopsias)", "opts": ["Grupo V: contenedor sólido especial de punzantes", "Clase II (RBAU)", "Grupo IX", "Servicio funerario o forense", "Residuo químico (RQ): recipiente etiquetado, nunca al desagüe", "Clase I (RSU)"], "items": [["Bisturí y agujas usados", [0]], ["Gasas y guantes con sangre", [1]], ["Restos humanos pequeños", [2]], ["Cadáveres o restos humanos grandes", [3]], ["Restos de un reactivo caducado", [4]], ["Papel del envoltorio de los guantes", [5]]]}, {"t": "**3. Relaciona cada recipiente con su residuo**", "opts": ["Contaminación citotóxica", "Residuos urbanos", "Restos de disolventes químicos"], "items": [["Bote azul", [0]], ["Bolsa roja", [1]], ["Recipiente blanco", [2]]]}, {"t": "**4. Relaciona cada letra de la etiqueta con su significado**", "opts": ["Corrosivo", "Explosivo", "Comburente", "Extremadamente inflamable", "Tóxico", "Irritante", "Nocivo", "Radioactivo"], "items": [["C", [0]], ["E", [1]], ["O", [2]], ["F+", [3]], ["T", [4]], ["Xi", [5]], ["Xn", [6]], ["R", [7]]]}, {"t": "**5. Relaciona cada grupo de residuos biosanitarios con lo que genera**", "opts": ["Heces de personas con cólera o disentería", "Esputos de tuberculosis y fiebre Q", "Material punzante: agujas, bisturíes…", "Material de cultivos biológicos: cápsula de Petri, tubo…", "Material usado para contener más de 100 ml de sangre", "Restos humanos pequeños"], "items": [["Grupo II", [0]], ["Grupo III", [1]], ["Grupo V", [2]], ["Grupo VI", [3]], ["Grupo VIII", [4]], ["Grupo IX", [5]]]}, {"t": "**6. Relaciona cada fluido con su riesgo**", "opts": ["Implicado en la transmisión de agentes biológicos", "Potencialmente infeccioso (riesgo desconocido)", "No vinculado con la transmisión laboral (salvo que contenga sangre)"], "items": [["Plasma", [0]], ["Suero", [0]], ["Líquido cefalorraquídeo", [1]], ["Líquido pleural", [1]], ["Orina", [2]], ["Saliva", [2]]]}, {"t": "**7. Relaciona cada situación con su tiempo**", "opts": ["5 minutos", "10 minutos", "2-3 minutos", "Al menos 5 minutos"], "items": [["Esperar antes de abrir la centrífuga si se rompen tubos", [0]], ["Inmersión de cestillas y paredes en lejía 1/10", [1]], ["Lavar con agua corriente un corte o pinchazo", [2]], ["Ojo abierto bajo el chorro del lavaojos", [3]]]}], "SC": [["Ordena las partículas α, β y γ por peligrosidad y di de qué depende su agresividad.", "**α < β < γ.** Se diferencian por su agresividad, que depende de cuánto **penetran en la materia**; la γ es muy penetrante."], ["Se rompen tubos en la centrífuga. ¿Qué haces?", "**Esperas 5 minutos** antes de abrir. Desinfectas las cestillas y las paredes con **lejía 1/10** u otro desinfectante, por inmersión durante **10 minutos**."], ["Te pinchas con una aguja usada. Di los pasos.", "Retiras el objeto; lavas con **agua corriente** sin restregar, dejando fluir la sangre **2-3 minutos**; **no usas lejía ni frotas**; desinfectas con **povidona yodada o clorhexidina**; aclaras; cubres con un **apósito impermeable**; lo comunicas al **servicio de salud laboral**."], ["Se derrama sangre sobre una mesa. ¿Cómo la limpias?", "Te pones **guantes resistentes e impermeables**; viertes **lejía diluida al 10 %** sobre la superficie; limpias con **toallas desechables**; te quitas los guantes y **te lavas las manos**."], ["Di la secuencia del sistema de alarma y qué haces en prealarma.", "**Aviso → prealarma → silencio → alarma → evacuación.** En prealarma dejas tu puesto **seguro** (sin nada encendido que pueda prender o explotar), **desconectas los equipos** y permaneces **atento a las señales**."], ["¿Por qué los residuos químicos no van por el desagüe y cómo se tratan los ácidos y las bases?", "Pueden **no ser biodegradables** y ser tóxicos, y pueden reaccionar con el agua en una **reacción exotérmica** (salpicaduras o explosión). Los **ácidos** se neutralizan con una **base** y se diluyen; las **bases** se neutralizan con un **ácido** y se diluyen."], ["Tallas una pieza conservada en formaldehído. ¿Qué EPI usas y por qué?", "**Guantes de laboratorio** (contacto con la muestra y salpicaduras del fijador); **mascarilla FFP2/FFP3** (vapores que se pueden inhalar); **gafas con protección lateral** (salpicaduras en los ojos); **bata con automáticos** (salpicaduras y derrames)."], ["Di cinco normas generales para evacuar.", "Por ejemplo: eliminar obstáculos de puertas y caminos; apagar los equipos eléctricos; cerrar puertas y ventanas **sin llave** (con amenaza de bomba, **abiertas**); no correr; **no usar los ascensores**; con humo, **agachado**; con la ropa ardiendo, **al suelo y rueda**; no retroceder a buscar a nadie."], ["¿Qué epígrafes de la FDS son muy importantes en los primeros momentos de un accidente y cuántos tiene en total?", "El **4 (primeros auxilios)** y el **6 (medidas en caso de vertido accidental)**. Tiene **16** epígrafes."]]};
+const KEY="lab2-simulacro-v1";
+let st={a:{},self:{},done:{},open:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.a)st=Object.assign(st,s)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const norm=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9ñ ]/g," ").replace(/\s+/g," ").trim();
+const md=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\*(.+?)\*/g,"<i>$1</i>").replace(/\n/g,"<br>");
+const el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!==undefined)e.innerHTML=h;return e};
+const PARTS=[];  // {id,k,t,how,items:[{id,auto:bool,render(host),check()->bool|null,max}]}
+
+function inputVal(id){return st.a[id]||""}
+function bindInput(e,id){e.value=inputVal(id);e.addEventListener("input",()=>{st.a[id]=e.value;save()})}
+
+/* ---- tipos ---- */
+function mcItem(pid,i,q){const id=pid+i;return{id,auto:true,render(h){h.appendChild(el("div","q",'<span class="n">'+(i+1)+'.</span>'+md(q[0])));const o=el("div","opts");
+  q[1].forEach((t,j)=>{const l=el("label","opt");const r=document.createElement("input");r.type="radio";r.name=id;r.value=j;if(st.a[id]==String(j))r.checked=true;r.onchange=()=>{st.a[id]=String(j);save()};l.append(r,el("span","",md("abcd"[j]+") "+t)));o.appendChild(l)});h.appendChild(o)},
+  check(){return st.a[id]!==undefined&&+st.a[id]===q[2]},sol(){return "Correcta: <b>"+"abcd"[q[2]]+") "+md(q[1][q[2]])+"</b>"}}}
+function vfItem(pid,i,q){const id=pid+i;return{id,auto:true,render(h){h.appendChild(el("div","q",'<span class="n">B'+(i+1)+'.</span>'+md(q[0])));const v=el("div","vf");
+  [["V",1],["F",0]].forEach(([t,val])=>{const l=el("label");const r=document.createElement("input");r.type="radio";r.name=id;r.value=val;if(st.a[id]==String(val))r.checked=true;r.onchange=()=>{st.a[id]=String(val);save()};l.append(r,document.createTextNode(t==="V"?"Verdadero":"Falso"));v.appendChild(l)});h.appendChild(v)},
+  check(){return st.a[id]!==undefined&&+st.a[id]===q[1]},sol(){return (q[1]?"<b>Verdadero</b>":"<b>Falso</b>")+(q[2]?": "+md(q[2]):".")}}}
+function matchItem(pid,i,m){const id=pid+i;return{id,auto:true,max:m.items.length,render(h){h.appendChild(el("div","q",md(m.t)));m.items.forEach((it,k)=>{const r=el("div","mrow");const lb=el("label","",md(it[0]));lb.htmlFor=id+"_"+k;const s=document.createElement("select");s.id=id+"_"+k;s.innerHTML='<option value="">— elige —</option>'+m.opts.map((o,j)=>'<option value="'+j+'">'+o.replace(/</g,"&lt;")+'</option>').join("");bindSel(s,id+"_"+k);r.append(lb,s);h.appendChild(r)})},
+  score(){return m.items.filter((it,k)=>st.a[id+"_"+k]!==undefined&&st.a[id+"_"+k]!==""&&it[1].includes(+st.a[id+"_"+k])).length},
+  sol(){return m.items.map((it,k)=>{const ok=st.a[id+"_"+k]!==undefined&&it[1].includes(+st.a[id+"_"+k]);return (ok?"✓ ":"✗ ")+md(it[0])+" → <b>"+m.opts[it[1][0]]+"</b>"}).join("<br>")}}}
+function bindSel(s,id){if(st.a[id]!==undefined)s.value=st.a[id];s.onchange=()=>{st.a[id]=s.value;save()}}
+function selfItem(pid,i,q,label,rows){const id=pid+i;return{id,auto:false,render(h){h.appendChild(el("div","q",'<span class="n">'+label+(i+1)+'.</span>'+md(q[0])));const t=document.createElement("textarea");t.rows=rows||3;t.setAttribute("aria-label","Tu respuesta");t.placeholder="Escribe aquí tu respuesta (o contéstala en voz alta)";bindInput(t,id);h.appendChild(t)},
+  sol(){return '<b class="lbl">Respuesta modelo:</b> '+md(q[1])}}}
+function labelItem(pid,i,f){const id=pid+i;return{id,auto:true,max:f.answers.length,render(h){h.appendChild(el("div","q",md(f.title)+' <span class="n">(diap. '+f.slide+')</span>'));const fg=el("div","fig");const im=document.createElement("img");im.src=f.img;im.alt="Esquema para rellenar: "+f.title;im.loading="lazy";fg.appendChild(im);h.appendChild(fg);
+  const g=el("div","labels");f.answers.forEach((a,k)=>{const l=el("label","lab");const sp=el("span","",String(k+1));const inp=document.createElement("input");inp.className="tx";inp.type="text";inp.autocomplete="off";inp.setAttribute("autocapitalize","off");inp.setAttribute("aria-label","Número "+(k+1));bindInput(inp,id+"_"+k);l.append(sp,inp);g.appendChild(l)});h.appendChild(g)},
+  score(){return f.answers.filter((a,k)=>okLabel(st.a[id+"_"+k],a)||st.self[id+"_"+k]===1).length},
+  sol(){return f.answers.map((a,k)=>{const ok=okLabel(st.a[id+"_"+k],a)||st.self[id+"_"+k]===1;return (ok?"✓ ":"✗ ")+"<b>"+(k+1)+".</b> "+md(a)+(!ok&&st.a[id+"_"+k]?' <button type="button" class="btn ovr" data-k="'+id+"_"+k+'" style="padding:2px 8px;font-size:12px">La tenía bien</button>':"")}).join("<br>")}}}
+function okLabel(v,a){const x=norm(v);if(x.length<3)return false;const base=norm(a.replace(/\(.*?\)/g,""));const alts=[base,...(a.match(/\((.*?)\)/g)||[]).flatMap(p=>p.slice(1,-1).split(/[,/]| o /)).map(norm)].filter(Boolean);
+  return alts.some(c=>c===x||(c.startsWith(x)&&x.length>=Math.min(c.length,Math.max(5,c.length*0.6)))||(x.includes(c)&&c.length>=4))}
+
+/* ---- construir partes ---- */
+PARTS.push({id:"A",k:"PARTE 1",t:"Test: 40 preguntas",how:"Una sola respuesta correcta.",items:D.MC.map((q,i)=>mcItem("A",i,q))});
+PARTS.push({id:"B",k:"PARTE 2",t:"Verdadero o falso",how:"Al corregir verás la explicación de las falsas.",items:D.VF.map((q,i)=>vfItem("B",i,q))});
+PARTS.push({id:"R",k:"PARTE 3",t:"Relacionar",how:"Elige la opción que corresponde a cada elemento.",items:D.MATCH.map((m,i)=>matchItem("R",i,m))});
+PARTS.push({id:"C",k:"PARTE 4",t:"Respuesta corta",how:"Contesta en 1-3 líneas.",items:D.SC.map((q,i)=>selfItem("C",i,q,"C",3))});
+
+const maxOf=it=>it.max||1;
+function partScore(p){let got=0,max=0,pend=0;p.items.forEach(it=>{const m=maxOf(it);max+=m;if(!st.done[p.id])return;
+  if(it.auto){got+=it.score?it.score():(it.check()?1:0)}else{const v=st.self[it.id];if(v===1)got+=1;else if(v===undefined)pend++}});return{got,max,pend}}
+function renderScore(){let g=0,m=0,pend=0,anyDone=false;const ch=document.getElementById("chips");ch.innerHTML="";
+  PARTS.forEach(p=>{const s=partScore(p);const b=el("button","pchip");b.type="button";b.innerHTML="<span>"+p.k.replace("PARTE ","")+" · "+p.t+"</span><b>"+(st.done[p.id]?s.got+"/"+s.max:"–")+"</b>";b.onclick=()=>{openSec(p.id,true)};ch.appendChild(b);
+    if(st.done[p.id]){anyDone=true;g+=s.got;m+=s.max;pend+=s.pend}});
+  document.getElementById("nota").textContent=anyDone?(Math.round(g/m*100)/10).toFixed(1).replace(".",","):"–";
+  document.getElementById("pts").textContent=anyDone?g+" de "+m+" puntos en las partes corregidas"+(pend?" · "+pend+" respuestas por marcar ✓/✗":""):"Aún no has corregido ninguna parte"}
+function openSec(id,scroll){const s=document.getElementById("sec-"+id);s.classList.add("open");s.querySelector(".sec-h").setAttribute("aria-expanded","true");st.open[id]=1;save();if(scroll)s.scrollIntoView({behavior:"smooth",block:"start"})}
+function build(){const ex=document.getElementById("exam");ex.innerHTML="";
+  PARTS.forEach(p=>{const sec=el("section","sec");sec.id="sec-"+p.id;if(st.open[p.id])sec.classList.add("open");
+    const h=el("button","sec-h");h.type="button";h.setAttribute("aria-expanded",String(!!st.open[p.id]));const tot=p.items.reduce((a,it)=>a+maxOf(it),0);
+    h.innerHTML='<span class="k">'+p.k+'</span><span class="t">'+p.t+'</span><span class="c">'+p.items.length+' ejercicios · '+tot+' puntos</span><span class="chev" aria-hidden="true">▾</span>';
+    h.onclick=()=>{sec.classList.toggle("open");h.setAttribute("aria-expanded",String(sec.classList.contains("open")));if(sec.classList.contains("open"))st.open[p.id]=1;else delete st.open[p.id];save()};
+    const b=el("div","sec-b");b.appendChild(el("p","how",p.how));
+    p.items.forEach(it=>{const box=el("div","it"+(p.llave?" llave":""));box.id="it-"+it.id;it.render(box);const fb=el("div","fb");box.appendChild(fb);it.box=box;it.fb=fb;b.appendChild(box)});
+    const row=el("div","row");const c=el("button","btn primary","Corregir esta parte");c.type="button";c.onclick=()=>{st.done[p.id]=1;save();showPart(p);renderScore()};
+    const r=el("button","btn","Repetir esta parte");r.type="button";r.onclick=()=>{p.items.forEach(it=>{Object.keys(st.a).forEach(k=>{if(k===it.id||k.startsWith(it.id+"_"))delete st.a[k]});Object.keys(st.self).forEach(k=>{if(k===it.id||k.startsWith(it.id+"_"))delete st.self[k]})});delete st.done[p.id];save();build();renderScore();openSec(p.id,true)};
+    const ss=el("span","secscore");ss.id="ss-"+p.id;row.append(c,r,ss);b.appendChild(row);sec.append(h,b);ex.appendChild(sec);if(st.done[p.id])showPart(p)})}
+function showPart(p){p.items.forEach(it=>{const fb=it.fb;fb.innerHTML="";it.box.classList.remove("right","wrong");
+    if(it.auto){const sc=it.score?it.score():(it.check()?1:0);const full=sc===maxOf(it);it.box.classList.add(full?"right":"wrong");fb.appendChild(el("div",full?"ok-box":"bad-box",(it.score?"<b>"+sc+"/"+maxOf(it)+"</b><br>":(full?"✓ ¡Bien! ":"✗ "))+it.sol()));
+      fb.querySelectorAll(".ovr").forEach(o=>o.onclick=()=>{st.self[o.dataset.k]=1;save();showPart(p);renderScore()})}
+    else{fb.appendChild(el("div","model",it.sol()));const sm=el("div","selfmark");const y=el("button","y","✓ La tenía bien"),n=el("button","n","✗ La tenía mal");[y,n].forEach(x=>x.type="button");
+      y.setAttribute("aria-pressed",String(st.self[it.id]===1));n.setAttribute("aria-pressed",String(st.self[it.id]===0));
+      y.onclick=()=>{st.self[it.id]=1;save();showPart(p);renderScore()};n.onclick=()=>{st.self[it.id]=0;save();showPart(p);renderScore()};sm.append(y,n);fb.appendChild(sm);
+      if(st.self[it.id]!==undefined)it.box.classList.add(st.self[it.id]?"right":"wrong")}});
+  const s=partScore(p);document.getElementById("ss-"+p.id).textContent=s.got+" / "+s.max+" puntos"+(s.pend?" · faltan "+s.pend+" por marcar":"")}
+let armed=false;document.getElementById("reset").onclick=()=>{const m=document.getElementById("msg");if(!armed){armed=true;m.hidden=false;m.textContent="Pulsa otra vez para borrar todas tus respuestas.";return}
+  armed=false;m.hidden=true;st={a:{},self:{},done:{},open:{}};save();build();renderScore();window.scrollTo({top:0})};
+build();renderScore();
+</script>
+
+<script src="../../assets/especimen.js"></script>
+<script src="../../assets/practica.js"></script>
+</body>
+</html>
