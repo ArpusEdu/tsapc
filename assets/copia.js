@@ -11,7 +11,8 @@
   const MAX_BYTES = 5 * 1024 * 1024;
   const MAX_CLAVES = 5000, MAX_LARGO_CLAVE = 200;
   /* Ruido: solo la copia automática que crea el propio importador (evita copias dentro de copias). */
-  const RUIDO = new Set([BACKUP_KEY]);
+  /* tsapc:backup-v1 y tsapc:v2-corrupto duplican claves que ya van en la copia */
+  const RUIDO = new Set([BACKUP_KEY, "tsapc:backup-v1", "tsapc:v2-corrupto"]);
   const PELIGROSAS = new Set(["__proto__", "constructor", "prototype"]);
   /* Solo claves de tsapc. Añadir aquí cualquier prefijo nuevo que usen las páginas. */
   const PERMITIDAS = [
