@@ -1525,7 +1525,7 @@ function dayDate(i){const d=new Date(today);d.setDate(d.getDate()+i+(ps.start===
 function defTimes(i){const d=dayDate(i);const isToday=d.getTime()===today.getTime();
   if(isToday){const now=new Date();let s=Math.ceil((now.getHours()*60+now.getMinutes()+15)/15)*15;s=Math.max(s,8*60);const e=Math.max(s+60,22*60);return [toHM(s),toHM(Math.min(e,23*60+30))]}
   return EXAM.horario}
-function times(i){const k=dayDate(i).toISOString().slice(0,10);return ps.times[k]||defTimes(i)}
+function times(i){const k=dayDate(i).toISOString().slice(0,10),t=ps.times&&ps.times[k];return Array.isArray(t)&&t.length===2&&t.every(x=>/^\d{1,2}:\d{2}$/.test(x))?t:defTimes(i)}
 function setTime(i,which,v){const k=dayDate(i).toISOString().slice(0,10);const t=times(i).slice();t[which]=v;ps.times[k]=t;psave();prender()}
 
 function plan(N){
@@ -1630,7 +1630,7 @@ function fin(){const a=T.a;if(!a)return;T.s[a.b]=Math.max(1,Math.round(elapsed()
 function cancel(){T.a=null;save();run();rowAll()}
 document.getElementById("tpPause").onclick=pause;document.getElementById("tpFin").onclick=fin;document.getElementById("tpX").onclick=cancel;
 function row(b){let r=b.querySelector(".tmr");if(!r){r=document.createElement("div");r.className="tmr";b.querySelector(".blk-h").after(r)}
-  const m=+b.dataset.min,sp=T.s[b.id],act=T.a&&T.a.b===b.id;
+  const m=+b.dataset.min,sp=+T.s[b.id]||0,act=T.a&&T.a.b===b.id;
   r.innerHTML=`<p>${sp?`<span class="tm-done">✓ Lo hiciste en ${sp} min</span> (previsto ${m})`:`⏱ Tiempo para aprenderte este bloque: <b>${m} min</b>`}</p>`+(act?`<p><b>⏳ En marcha…</b></p>`:`<button type="button">${sp?"↻ Otra vez":"▶ Empezar"}</button>`);
   const bt=r.querySelector("button");if(bt)bt.onclick=()=>{if(T.a&&T.a.b!==b.id){fin()}startB(b)}}
 function rowAll(){blks.forEach(row)}
