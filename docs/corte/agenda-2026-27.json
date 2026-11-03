@@ -1,0 +1,406 @@
+{
+  "schema": 1,
+  "fuente": "Horario semanal y calendario escolar de Impulsa Centro de Formación (Pamplona), pasados por el usuario el 2026-11-02",
+  "curso": {
+    "nombre": "1.º Técnico Superior en Anatomía Patológica y Citodiagnóstico",
+    "centro": "Impulsa Centro de Formación · Pamplona",
+    "anio": "2026/27",
+    "turno": "Tarde · 14:45–20:45",
+    "inicio": "2026-09-16",
+    "fin": "2027-06-04"
+  },
+  "asignaturas": [
+    {
+      "id": "gest",
+      "nombre": "Gestión de muestras biológicas",
+      "corto": "Muestras",
+      "horas": 5,
+      "canal": "gest"
+    },
+    {
+      "id": "lab",
+      "nombre": "Técnicas generales de laboratorio",
+      "corto": "Laboratorio",
+      "horas": 6,
+      "canal": "lab"
+    },
+    {
+      "id": "bio",
+      "nombre": "Biología molecular y citogenética",
+      "corto": "Biología Molecular",
+      "horas": 7,
+      "canal": "bio"
+    },
+    {
+      "id": "fisio",
+      "nombre": "Fisiopatología general",
+      "corto": "Fisiopatología",
+      "horas": 5,
+      "canal": "fisio"
+    },
+    {
+      "id": "ingles",
+      "nombre": "Inglés profesional (GS)",
+      "corto": "Inglés",
+      "horas": 2,
+      "canal": "ingles"
+    },
+    {
+      "id": "digi",
+      "nombre": "Digitalización aplicada a los sectores productivos (GS)",
+      "corto": "Digitalización",
+      "horas": 1,
+      "canal": "digi"
+    },
+    {
+      "id": "sost",
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "corto": "Sostenibilidad",
+      "horas": 1,
+      "canal": "sost"
+    },
+    {
+      "id": "ipe",
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "corto": "IPE I",
+      "horas": 3,
+      "canal": "ipe"
+    }
+  ],
+  "franjas": [
+    {
+      "n": 1,
+      "inicio": "14:45",
+      "fin": "15:40"
+    },
+    {
+      "n": 2,
+      "inicio": "15:40",
+      "fin": "16:35"
+    },
+    {
+      "n": 3,
+      "inicio": "16:35",
+      "fin": "17:30"
+    },
+    {
+      "n": 0,
+      "inicio": "17:30",
+      "fin": "18:00",
+      "recreo": true
+    },
+    {
+      "n": 4,
+      "inicio": "18:00",
+      "fin": "18:55"
+    },
+    {
+      "n": 5,
+      "inicio": "18:55",
+      "fin": "19:50"
+    },
+    {
+      "n": 6,
+      "inicio": "19:50",
+      "fin": "20:45"
+    }
+  ],
+  "horario": [
+    {
+      "dia": 1,
+      "asig": "fisio",
+      "inicio": "14:45",
+      "fin": "16:35"
+    },
+    {
+      "dia": 1,
+      "asig": "ipe",
+      "inicio": "16:35",
+      "fin": "17:30"
+    },
+    {
+      "dia": 1,
+      "asig": "bio",
+      "inicio": "18:00",
+      "fin": "18:55"
+    },
+    {
+      "dia": 1,
+      "asig": "bio",
+      "inicio": "18:55",
+      "fin": "20:45",
+      "lab": true
+    },
+    {
+      "dia": 2,
+      "asig": "ipe",
+      "inicio": "14:45",
+      "fin": "16:35"
+    },
+    {
+      "dia": 2,
+      "asig": "fisio",
+      "inicio": "16:35",
+      "fin": "17:30"
+    },
+    {
+      "dia": 2,
+      "asig": "digi",
+      "inicio": "18:00",
+      "fin": "18:55"
+    },
+    {
+      "dia": 2,
+      "asig": "lab",
+      "inicio": "18:55",
+      "fin": "20:45",
+      "lab": true
+    },
+    {
+      "dia": 3,
+      "asig": "fisio",
+      "inicio": "14:45",
+      "fin": "16:35"
+    },
+    {
+      "dia": 3,
+      "asig": "bio",
+      "inicio": "16:35",
+      "fin": "17:30"
+    },
+    {
+      "dia": 3,
+      "asig": "bio",
+      "inicio": "18:00",
+      "fin": "18:55"
+    },
+    {
+      "dia": 3,
+      "asig": "gest",
+      "inicio": "18:55",
+      "fin": "19:50",
+      "nota": "Tutoría"
+    },
+    {
+      "dia": 3,
+      "asig": "gest",
+      "inicio": "19:50",
+      "fin": "20:45"
+    },
+    {
+      "dia": 4,
+      "asig": "gest",
+      "inicio": "14:45",
+      "fin": "17:30"
+    },
+    {
+      "dia": 4,
+      "asig": "sost",
+      "inicio": "18:00",
+      "fin": "18:55"
+    },
+    {
+      "dia": 4,
+      "asig": "lab",
+      "inicio": "18:55",
+      "fin": "20:45",
+      "lab": true
+    },
+    {
+      "dia": 5,
+      "asig": "ingles",
+      "inicio": "14:45",
+      "fin": "16:35"
+    },
+    {
+      "dia": 5,
+      "asig": "lab",
+      "inicio": "16:35",
+      "fin": "17:30"
+    },
+    {
+      "dia": 5,
+      "asig": "lab",
+      "inicio": "18:00",
+      "fin": "18:55"
+    },
+    {
+      "dia": 5,
+      "asig": "bio",
+      "inicio": "18:55",
+      "fin": "20:45",
+      "lab": true
+    }
+  ],
+  "calendario": [
+    {
+      "desde": "2026-09-01",
+      "hasta": "2026-09-15",
+      "tipo": "sin-clases"
+    },
+    {
+      "fecha": "2026-09-16",
+      "tipo": "inicio"
+    },
+    {
+      "fecha": "2026-10-12",
+      "tipo": "festivo"
+    },
+    {
+      "fecha": "2026-11-02",
+      "tipo": "festivo"
+    },
+    {
+      "fecha": "2026-11-06",
+      "tipo": "fin-trimestre",
+      "nota": "Fin 1.er trimestre"
+    },
+    {
+      "fecha": "2026-12-03",
+      "tipo": "festivo"
+    },
+    {
+      "fecha": "2026-12-04",
+      "tipo": "festivo"
+    },
+    {
+      "fecha": "2026-12-07",
+      "tipo": "festivo"
+    },
+    {
+      "fecha": "2026-12-08",
+      "tipo": "festivo"
+    },
+    {
+      "desde": "2026-12-21",
+      "hasta": "2026-12-22",
+      "tipo": "recuperaciones"
+    },
+    {
+      "desde": "2026-12-23",
+      "hasta": "2027-01-08",
+      "tipo": "no-lectivo",
+      "nota": "Navidad"
+    },
+    {
+      "desde": "2027-02-08",
+      "hasta": "2027-02-09",
+      "tipo": "no-lectivo"
+    },
+    {
+      "fecha": "2027-03-05",
+      "tipo": "fin-trimestre",
+      "nota": "Fin 2.º trimestre"
+    },
+    {
+      "fecha": "2027-03-19",
+      "tipo": "festivo"
+    },
+    {
+      "desde": "2027-03-25",
+      "hasta": "2027-04-04",
+      "tipo": "no-lectivo"
+    },
+    {
+      "desde": "2027-04-12",
+      "hasta": "2027-05-07",
+      "tipo": "practicas",
+      "nota": "Prácticas en empresa"
+    },
+    {
+      "fecha": "2027-06-04",
+      "tipo": "fin"
+    },
+    {
+      "desde": "2027-06-07",
+      "hasta": "2027-06-11",
+      "tipo": "recuperaciones"
+    },
+    {
+      "desde": "2027-06-14",
+      "hasta": "2027-06-30",
+      "tipo": "sin-clases"
+    },
+    {
+      "fecha": "2027-06-15",
+      "tipo": "notas",
+      "nota": "Entrega de notas"
+    },
+    {
+      "fecha": "2027-06-16",
+      "tipo": "festivo"
+    },
+    {
+      "fecha": "2027-06-17",
+      "tipo": "reclamaciones"
+    }
+  ],
+  "eventos": [
+    {
+      "id": "ipe-ejercicios-finales",
+      "tipo": "entrega",
+      "asig": "ipe",
+      "titulo": "Ejercicios finales",
+      "nota": "Con permiso de la profesora",
+      "fecha": "2026-11-03",
+      "hora": "21:00"
+    },
+    {
+      "id": "fisio-infografia",
+      "tipo": "entrega",
+      "asig": "fisio",
+      "titulo": "Infografía de enfermedad",
+      "fecha": "2026-11-03",
+      "hora": "23:59",
+      "cierre": "2026-11-04T00:00"
+    },
+    {
+      "id": "bio-examen-citogenetica",
+      "tipo": "examen",
+      "asig": "bio",
+      "unidad": "bio2",
+      "titulo": "Examen · Citogenética y análisis cromosómico",
+      "fecha": "2026-11-04",
+      "hora": null,
+      "nota": "En horario de clase"
+    },
+    {
+      "id": "lab-examen-u2",
+      "tipo": "examen",
+      "asig": "lab",
+      "unidad": "lab2",
+      "titulo": "Examen · Unidad 2 · Seguridad y prevención de riesgos",
+      "fecha": "2026-11-05",
+      "hora": null,
+      "nota": "En horario de clase"
+    },
+    {
+      "id": "sost-tarea",
+      "tipo": "entrega",
+      "asig": "sost",
+      "titulo": "Tarea",
+      "nota": "Último día de clase con el profesor sustituto",
+      "fecha": "2026-11-05",
+      "hora": "21:00"
+    },
+    {
+      "id": "ingles-project-1",
+      "tipo": "entrega",
+      "asig": "ingles",
+      "titulo": "Project 1",
+      "fecha": "2026-11-05",
+      "hora": "23:59",
+      "cierre": "2026-11-06T00:00"
+    },
+    {
+      "id": "ingles-speaking",
+      "tipo": "oral",
+      "asig": "ingles",
+      "titulo": "Speaking",
+      "fecha": "2026-11-06",
+      "hora": null,
+      "nota": "En horario de clase"
+    }
+  ],
+  "nota_privacidad": "Sin nombres de profesores: el repo y la web son públicos. Cada estudiante puede añadirlos en Mi mesa (solo en su móvil)."
+}
