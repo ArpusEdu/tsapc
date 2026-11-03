@@ -15,56 +15,64 @@
       "nombre": "Gestión de muestras biológicas",
       "corto": "Muestras",
       "horas": 5,
-      "canal": "gest"
+      "canal": "gest",
+      "profesor": "Begoña Zabalza"
     },
     {
       "id": "lab",
       "nombre": "Técnicas generales de laboratorio",
       "corto": "Laboratorio",
       "horas": 6,
-      "canal": "lab"
+      "canal": "lab",
+      "profesor": "Rosalía"
     },
     {
       "id": "bio",
       "nombre": "Biología molecular y citogenética",
       "corto": "Biología Molecular",
       "horas": 7,
-      "canal": "bio"
+      "canal": "bio",
+      "profesor": "Maider Delgado"
     },
     {
       "id": "fisio",
       "nombre": "Fisiopatología general",
       "corto": "Fisiopatología",
       "horas": 5,
-      "canal": "fisio"
+      "canal": "fisio",
+      "profesor": "Ander Redín"
     },
     {
       "id": "ingles",
       "nombre": "Inglés profesional (GS)",
       "corto": "Inglés",
       "horas": 2,
-      "canal": "ingles"
+      "canal": "ingles",
+      "profesor": "Álvaro Arellano"
     },
     {
       "id": "digi",
       "nombre": "Digitalización aplicada a los sectores productivos (GS)",
       "corto": "Digitalización",
       "horas": 1,
-      "canal": "digi"
+      "canal": "digi",
+      "profesor": "Marina Campo"
     },
     {
       "id": "sost",
       "nombre": "Sostenibilidad aplicada al sistema productivo",
       "corto": "Sostenibilidad",
       "horas": 1,
-      "canal": "sost"
+      "canal": "sost",
+      "profesor": "Marina Campo"
     },
     {
       "id": "ipe",
       "nombre": "Itinerario personal para la empleabilidad I",
       "corto": "IPE I",
       "horas": 3,
-      "canal": "ipe"
+      "canal": "ipe",
+      "profesor": "Marina Campo"
     }
   ],
   "franjas": [
@@ -341,7 +349,7 @@
       "tipo": "entrega",
       "asig": "ipe",
       "titulo": "Ejercicios finales",
-      "nota": "Con permiso de la profesora",
+      "nota": "Permiso de Marina",
       "fecha": "2026-11-03",
       "hora": "21:00"
     },
@@ -379,7 +387,7 @@
       "tipo": "entrega",
       "asig": "sost",
       "titulo": "Tarea",
-      "nota": "Último día de clase con el profesor sustituto",
+      "nota": "Último día de clase con Raúl (sustituto de Marina)",
       "fecha": "2026-11-05",
       "hora": "21:00"
     },
@@ -401,6 +409,5 @@
       "hora": null,
       "nota": "En horario de clase"
     }
-  ],
-  "nota_privacidad": "Sin nombres de profesores: el repo y la web son públicos. Cada estudiante puede añadirlos en Mi mesa (solo en su móvil)."
+  ]
 }
