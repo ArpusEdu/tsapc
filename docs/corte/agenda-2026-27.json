@@ -408,6 +408,37 @@
       "fecha": "2026-11-06",
       "hora": null,
       "nota": "En horario de clase"
+    },
+    {
+      "id": "ipe-examen-u1",
+      "tipo": "examen",
+      "asig": "ipe",
+      "titulo": "Examen · Unidad 1",
+      "fecha": "2026-11-17",
+      "hora": null,
+      "provisional": true,
+      "nota": "Fecha provisional, puede cambiar. Si da tiempo, entran también los puntos 2 y 3."
+    },
+    {
+      "id": "ipe-examen-nomina",
+      "tipo": "examen",
+      "asig": "ipe",
+      "titulo": "Examen · Nómina",
+      "fecha": "2026-12-15",
+      "hora": null,
+      "provisional": true,
+      "nota": "Fecha provisional, puede cambiar. Si los puntos 2 y 3 no entraron el 17 de noviembre, entran aquí."
+    },
+    {
+      "id": "ipe-examen-seguridad-social",
+      "tipo": "examen",
+      "asig": "ipe",
+      "titulo": "Examen · Seguridad Social",
+      "fecha": "2027-02-02",
+      "hora": null,
+      "provisional": true,
+      "nota": "Fecha provisional, puede cambiar. Si tampoco entraron el 15 de diciembre, los puntos pendientes van aquí."
     }
-  ]
+  ],
+  "notas_eventos": "Los eventos con \"provisional\": true tienen fecha por confirmar: se muestran como «Fecha provisional · puede cambiar»."
 }

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hoy · Corte</title>
+<meta name="description" content="Corte: el día, la agenda, las asignaturas y el progreso de 1.º de TSAPC, en un cuaderno.">
+<meta name="theme-color" content="#fbf7ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141821" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Corte">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<script>
+/* tema elegido en «Mi mesa», antes de pintar (sin parpadeo). Solo lee. */
+try{var v=JSON.parse(localStorage.getItem("tsapc:v2")),t=v&&v.personal&&v.personal.prefs&&v.personal.prefs.tema;if(t==="papel"||t==="noche")document.documentElement.setAttribute("data-theme",t)}catch(e){}
+</script>
+<link rel="preload" href="../assets/corte/fuentes/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/corte/fuentes/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../docs/corte/agenda-2026-27.json" as="fetch" crossorigin>
+<link rel="stylesheet" href="../assets/corte/tokens.css">
+<link rel="stylesheet" href="../assets/corte/base.css">
+<link rel="stylesheet" href="../assets/corte/texturas.css">
+<link rel="stylesheet" href="../assets/corte/componentes.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="saltar" href="#vista">Saltar al contenido</a>
+<div class="mesa cuaderno">
+  <div id="pestanas"></div>
+  <div class="anillas" aria-hidden="true"></div>
+  <main id="vista" class="hoja tx-hoja vista" tabindex="-1">
+    <div class="estado cargando" aria-busy="true"><span class="sr">Cargando</span><div style="grid-column:1/-1"><div class="linea-carga"></div><div class="linea-carga"></div></div></div>
+    <noscript><p>Corte necesita JavaScript. La web de siempre está en <a href="../">la portada</a>.</p></noscript>
+  </main>
+</div>
+<div class="avisos" id="avisos" role="status" aria-live="polite"></div>
+<nav class="barra-inferior fija" id="barra" aria-label="Secciones">
+  <a href="#/hoy" data-sec="hoy"><svg aria-hidden="true"><use href="../assets/corte/iconos.svg#i-hoy"/></svg><span>Hoy</span></a>
+  <a href="#/agenda" data-sec="agenda"><svg aria-hidden="true"><use href="../assets/corte/iconos.svg#i-agenda"/></svg><span>Agenda</span></a>
+  <a href="#/asignaturas" data-sec="asignaturas"><svg aria-hidden="true"><use href="../assets/corte/iconos.svg#i-asignaturas"/></svg><span>Asignaturas</span></a>
+  <a href="#/errores" data-sec="errores"><svg aria-hidden="true"><use href="../assets/corte/iconos.svg#i-errores"/></svg><span>Errores</span></a>
+  <a href="#/mesa" data-sec="mesa"><svg aria-hidden="true"><use href="../assets/corte/iconos.svg#i-mi-mesa"/></svg><span>Mi mesa</span></a>
+</nav>
+<script src="../assets/copia.js"></script>
+<script src="../assets/store.js"></script>
+<script src="datos.js"></script>
+<script src="logica.js"></script>
+<script src="app.js"></script>
+<script src="../assets/sw-register.js" defer></script>
+</body>
+</html>
