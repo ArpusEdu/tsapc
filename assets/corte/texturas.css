@@ -1,0 +1,52 @@
+/* =========================================================
+   Corte · texturas: grano de papel, cuadrícula, margen, cinta y rayas
+   Todo con degradados y un SVG de ruido de 180 px. Sin imágenes.
+   ========================================================= */
+@layer texturas{
+  :root{
+    /* ruido fractal en sepia, muy suave */
+    --tx-grano:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .2 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    /* en noche, el grano es claro */
+    --tx-grano-noche:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .88 0 0 0 0 .84 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* papel con grano */
+  .tx-grano{background-image:var(--tx-grano-tema,var(--tx-grano));background-size:180px 180px}
+
+  /* papel cuadriculado */
+  .tx-cuadricula{
+    background-image:linear-gradient(var(--c-cuadricula) 1px,transparent 1px),linear-gradient(90deg,var(--c-cuadricula) 1px,transparent 1px);
+    background-size:var(--cuadro) var(--cuadro);
+  }
+
+  /* hoja completa: grano + margen rojo + cuadrícula */
+  .tx-hoja{
+    background-color:var(--c-hoja);
+    background-image:
+      var(--tx-grano-tema,var(--tx-grano)),
+      linear-gradient(90deg,transparent calc(var(--margen-hoja) - 1px),var(--c-margen) calc(var(--margen-hoja) - 1px) calc(var(--margen-hoja) + .5px),transparent calc(var(--margen-hoja) + .5px)),
+      linear-gradient(var(--c-cuadricula) 1px,transparent 1px),
+      linear-gradient(90deg,var(--c-cuadricula) 1px,transparent 1px);
+    background-size:180px 180px,100% 100%,var(--cuadro) var(--cuadro),var(--cuadro) var(--cuadro);
+    background-position:0 0,0 0,0 10px,0 0;
+  }
+  /* el grano cambia con el tema por herencia */
+  :root,[data-theme="papel"]{--tx-grano-tema:var(--tx-grano)}
+  [data-theme="noche"]{--tx-grano-tema:var(--tx-grano-noche)}
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="papel"]){--tx-grano-tema:var(--tx-grano-noche)} }
+
+  /* solo el margen rojo */
+  .tx-margen{background-image:linear-gradient(90deg,transparent calc(var(--margen-hoja) - 1px),var(--c-margen) calc(var(--margen-hoja) - 1px) calc(var(--margen-hoja) + .5px),transparent calc(var(--margen-hoja) + .5px))}
+
+  /* rayas de «clase en el laboratorio» y de días sin clase */
+  .tx-rayas{background-image:repeating-linear-gradient(-45deg,var(--raya,var(--asig-suave)) 0 7px,transparent 7px 12px)}
+
+  /* cinta washi: se aplica a un elemento vacío posicionado */
+  .tx-washi{
+    background-color:var(--cinta,color-mix(in srgb,var(--s-tinte) 80%,transparent));
+    background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.35) 0 6px,transparent 6px 12px);
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 3px,#000 calc(100% - 3px),transparent 100%);
+    mask-image:linear-gradient(90deg,transparent 0,#000 3px,#000 calc(100% - 3px),transparent 100%);
+  }
+  @supports not (color:color-mix(in srgb,red 50%,transparent)){ .tx-washi{background-color:var(--cinta,var(--s-tinte));opacity:.85} }
+}

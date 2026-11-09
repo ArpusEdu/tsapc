@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "fraunces",
+        "createdAt": "2026-11-09T11:57:59.323Z",
+        "reason": "Tipografía de la maqueta v4 «Mi carrera», aprobada por el usuario el 2026-11-09 como dirección de Corte"
+      }
+    ]
+  }
+}

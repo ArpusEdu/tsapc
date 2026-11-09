@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="es" data-subject="bio">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sistema Corte</title>
+<meta name="description" content="Muestra del sistema de diseño de Corte: colores, letra, piezas y estados en papel y en noche.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#e9e1d0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="../../../assets/corte/fuentes/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../assets/corte/fuentes/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../assets/corte/tokens.css">
+<link rel="stylesheet" href="../../../assets/corte/base.css">
+<link rel="stylesheet" href="../../../assets/corte/texturas.css">
+<link rel="stylesheet" href="../../../assets/corte/componentes.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23221d2e'/%3E%3Cpath d='M9 22 L23 9' stroke='%23ffcf8a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+/* solo para esta página de muestra (sin capa: manda sobre el sistema) */
+body{padding-bottom:40px}
+.sup{position:sticky;top:0;z-index:var(--z-barra);display:flex;align-items:center;justify-content:space-between;gap:var(--e-3);flex-wrap:wrap;padding:max(8px,env(safe-area-inset-top)) max(var(--canal),env(safe-area-inset-right)) 8px max(var(--canal),env(safe-area-inset-left));background:var(--c-fondo);border-bottom:1px solid var(--c-linea-suave)}
+.marca{display:flex;align-items:baseline;gap:8px;font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:600;font-size:20px;letter-spacing:-.01em;color:var(--c-tinta);text-decoration:none;white-space:nowrap}
+.marca small{font-family:var(--f-mono);font-size:var(--t-xs);font-weight:500;color:var(--c-tinta-2)}
+.envoltura{max-width:var(--ancho-pagina);margin:0 auto;padding:18px 8px 0}
+@media (min-width:760px){.envoltura{padding:28px 24px 0}}
+.sec{padding-top:var(--e-7);scroll-margin-top:72px}
+.sec:first-of-type{padding-top:0}
+.sec>h2{margin-bottom:var(--e-2)}
+.sec>.intro{color:var(--c-tinta-2);max-width:58ch;margin-bottom:var(--e-5)}
+.sub{margin:var(--e-6) 0 var(--e-3);font-size:var(--t-lg)}
+.sub+.nota-al-margen{margin-top:-6px}
+.nota-al-margen{font-size:var(--t-sm);color:var(--c-tinta-2);margin-bottom:var(--e-3);max-width:60ch}
+.fila{display:flex;flex-wrap:wrap;gap:var(--e-3);align-items:center}
+.rejilla{display:grid;gap:var(--e-5);grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.rejilla.dos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.portada h1{margin:4px 0 var(--e-3)}
+.portada .lede{font-size:var(--t-lg);color:var(--c-tinta-2);max-width:40ch}
+.portada .firma{display:inline-block;margin-top:var(--e-3);transform:rotate(-2deg)}
+.selector{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:var(--e-2);margin-top:var(--e-5);padding:0;list-style:none}
+.selector button{display:grid;justify-items:center;gap:2px;width:100%;min-height:var(--toque);padding:8px 4px 10px;border-radius:var(--r-3);border:1.5px solid transparent;color:var(--c-tinta);font-size:var(--t-xs);font-weight:700;line-height:1.15;text-align:center;transition:background-color var(--d-rapida) ease,transform var(--d-rapida) var(--ease-salida)}
+.selector .pegatina{width:56px;height:56px}
+@media (hover:hover){.selector button:hover{background:var(--c-hoja-2)}}
+.selector button:active{transform:scale(.96)}
+.selector button[aria-pressed="true"]{background:var(--asig-suave);border-color:var(--c-linea)}
+.cabeza-portada{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--e-4);align-items:start}
+.cabeza-portada .pegatina{transform:rotate(6deg)}
+/* dúo: lo mismo en papel y en noche */
+.duo{display:grid;gap:var(--e-3);grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.duo{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.duo>div{position:relative;display:grid;gap:var(--e-3);align-content:start;padding:var(--e-5) var(--e-4) var(--e-4);border-radius:var(--r-3);background:var(--c-hoja);color:var(--c-tinta);border:1px solid var(--c-linea-suave)}
+.duo .tema-nombre{font-family:var(--f-mano);font-size:24px;color:var(--c-boli);line-height:1}
+.duo p{color:var(--c-tinta-2);font-size:var(--t-sm)}
+/* muestras de color */
+.paleta{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:var(--e-2)}
+.muestra{display:grid;grid-template-rows:56px auto;border-radius:var(--r-2);overflow:hidden;border:1px solid var(--c-linea-suave);background:var(--c-hoja)}
+.muestra i{display:block;background:var(--v)}
+.muestra span{padding:6px 8px 8px;font-size:var(--t-xs);line-height:1.3;color:var(--c-tinta-2)}
+.muestra b{display:block;color:var(--c-tinta);font-family:var(--f-mono);font-weight:700;font-size:var(--t-xs)}
+.asigs{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+.asigs li{display:grid;grid-template-columns:minmax(0,1fr) repeat(4,46px);gap:6px;align-items:center;font-size:var(--t-sm);font-weight:700}
+.asigs i{display:block;height:36px;border-radius:6px;border:1px solid var(--c-linea-suave)}
+.asigs .cab{font-size:var(--t-min);font-weight:700;color:var(--c-tinta-2);text-align:center;white-space:nowrap}
+.asigs .cab:first-child{text-align:left}
+@media (max-width:380px){.asigs li{grid-template-columns:minmax(0,1fr) repeat(4,42px);gap:4px}}
+/* contraste */
+.tabla-c{width:100%;font-size:var(--t-sm);font-variant-numeric:tabular-nums}
+.tabla-c th,.tabla-c td{padding:8px 6px;text-align:left;border-bottom:1px dashed var(--c-cuadricula-2);vertical-align:middle}
+.tabla-c thead th{font-size:var(--t-min);letter-spacing:.06em;text-transform:uppercase;color:var(--c-tinta-2)}
+.tabla-c td.r{font-family:var(--f-mono);font-weight:700;white-space:nowrap}
+.tabla-c .uso{display:block;font-size:var(--t-xs);color:var(--c-tinta-2);font-weight:400}
+.ok,.mal{display:inline-flex;align-items:center;gap:4px;padding:1px 6px;border-radius:4px;font-size:var(--t-min);font-weight:700;letter-spacing:.04em}
+.ok{background:var(--c-ok-suave);color:var(--c-ok)}
+.mal{background:var(--c-error-suave);color:var(--c-error)}
+.par{display:inline-flex;align-items:center;justify-content:center;width:34px;height:26px;border-radius:5px;font-weight:700;font-size:13px;border:1px solid var(--c-linea-suave)}
+.resumen-c{margin-top:var(--e-3);font-size:var(--t-sm);color:var(--c-tinta-2)}
+.tabla-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* letra */
+.esp{display:grid;gap:var(--e-4)}
+.esp>div{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding-bottom:var(--e-3);border-bottom:1px dashed var(--c-cuadricula-2)}
+.esp code{font-size:var(--t-xs);color:var(--c-tinta-2)}
+/* espacio, radios, sombras */
+.escala{display:flex;flex-wrap:wrap;gap:var(--e-4);align-items:flex-end}
+.escala div{display:grid;justify-items:center;gap:4px;font-size:var(--t-xs);color:var(--c-tinta-2);font-family:var(--f-mono)}
+.escala i{display:block;background:var(--asig-suave);border:1.5px solid var(--c-linea)}
+.mov{display:grid;gap:var(--e-2)}
+.mov button{justify-self:start}
+.carril{position:relative;height:12px;border-radius:6px;background:var(--c-hoja-2);overflow:hidden}
+.carril i{position:absolute;left:0;top:0;width:28px;height:12px;border-radius:6px;background:var(--asig);box-shadow:inset 0 0 0 1.5px var(--c-linea);transform:translateX(0)}
+.carril.va i{transform:translateX(calc(var(--w,260px) - 28px))}
+.mov small{font-family:var(--f-mono);font-size:var(--t-xs);color:var(--c-tinta-2)}
+/* iconos */
+.iconos{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:var(--e-2);margin:0;padding:0;list-style:none}
+.iconos li{display:grid;justify-items:center;gap:6px;padding:12px 4px;border-radius:var(--r-2);background:var(--c-tarjeta);border:1px solid var(--c-linea-suave);font-size:var(--t-xs);color:var(--c-tinta-2);text-align:center}
+.iconos svg.i{width:26px;height:26px;color:var(--c-tinta)}
+.pegatinas{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
+/* pasillo: etiquetas sobre la escena */
+.pasillo{position:relative;min-height:260px;margin-top:var(--e-3);padding:var(--e-5) var(--e-4) 90px;border-radius:var(--r-3);overflow:hidden;background:radial-gradient(90% 60% at 60% 30%,rgba(255,160,90,.16),transparent 60%),linear-gradient(180deg,#141821 0%,#0b0d12 80%);display:flex;flex-wrap:wrap;gap:60px 34px;align-items:flex-start}
+.horario-caja{overflow:hidden}
+.demo-barra{max-width:420px;border-radius:var(--r-3);overflow:hidden;border:1px solid var(--c-linea-suave)}
+.cabecera-mes{display:flex;align-items:center;justify-content:space-between;gap:var(--e-2);margin:var(--e-4) 0 var(--e-2)}
+.cabecera-mes h3{text-transform:capitalize}
+.claves{display:grid;gap:6px;margin:var(--e-3) 0 0;padding:0;list-style:none}
+.claves li{display:grid;grid-template-columns:minmax(96px,max-content) minmax(0,1fr);gap:12px;padding:7px 10px;border-radius:8px;background:var(--c-tarjeta);font-size:15px}
+.claves .d{font-family:var(--f-mono);font-size:13.5px;font-weight:700;color:var(--c-tinta-2);white-space:nowrap}
+.claves li.pasada{color:var(--c-tinta-2)}
+.claves li.pasada span:last-child{text-decoration:line-through;text-decoration-color:var(--c-tinta-3)}
+.pie{max-width:var(--ancho-pagina);margin:var(--e-6) auto 0;padding:0 var(--canal);font-size:var(--t-sm);color:var(--c-tinta-2)}
+.tareas{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+</style>
+</head>
+<body class="tx-grano">
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="sup">
+  <a class="marca" href="#principal">Corte <small>corte · 4 µm</small></a>
+  <div class="segmentado compacto" role="group" aria-label="Tema" id="segTema">
+    <button type="button" data-tema="auto" aria-pressed="true">Sistema</button>
+    <button type="button" data-tema="papel" aria-pressed="false">Papel</button>
+    <button type="button" data-tema="noche" aria-pressed="false">Noche</button>
+  </div>
+</header>
+
+<div class="avisos" id="avisos" role="status" aria-live="polite"></div>
+
+<main class="envoltura" id="principal">
+<div class="cuaderno">
+  <ul class="pestanas" aria-label="Secciones">
+    <li><a class="pestana" href="#color" data-subject="gest" aria-current="page">Color</a></li>
+    <li><a class="pestana" href="#letra" data-subject="ipe">Letra</a></li>
+    <li><a class="pestana" href="#piezas" data-subject="lab">Piezas</a></li>
+    <li><a class="pestana" href="#agenda" data-subject="fisio">Agenda</a></li>
+    <li><a class="pestana" href="#estados" data-subject="digi">Estados</a></li>
+  </ul>
+  <span class="anillas" aria-hidden="true"></span>
+  <article class="hoja tx-hoja">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="sec portada" aria-labelledby="tPortada">
+    <div class="cabeza-portada">
+      <div>
+        <ol class="ruta" aria-label="Estás en"><li>tsapc</li><li>docs</li><li aria-current="page">Sistema de diseño</li></ol>
+        <h1 id="tPortada">El sistema <em>Corte</em></h1>
+        <p class="lede">Las piezas del cuaderno para todas las páginas: <span class="fluor">un color por asignatura</span>, dos temas y letra que se lee en el bus.</p>
+        <span class="mano firma">Fase 2 · para aprobar</span>
+      </div>
+      <svg class="pegatina grande js-dibujo" id="pegPortada" viewBox="0 0 80 80" aria-hidden="true"><use href="../../../assets/corte/iconos.svg#st-adn"/></svg>
+    </div>
+
+    <h2 class="sub" id="tSel">Elige asignatura</h2>
+    <p class="nota-al-margen">Toda la página cambia al color de la que toques. En la web, cada página lleva su <code>data-subject</code>.</p>
+    <ul class="selector" id="selector" aria-labelledby="tSel"></ul>
+  </section>
+
+  <!-- ============ COLOR ============ -->
+  <section class="sec" id="color" aria-labelledby="tColor">
+    <h2 id="tColor"><span class="fluor">Color</span></h2>
+    <p class="intro">Papel es el cuaderno de día. Noche es el pasillo a última hora. Los objetos de papel (notas, pegatinas, el temporizador) no cambian de tema: son cosas de verdad.</p>
+
+    <div class="duo">
+      <div data-theme="papel">
+        <span class="tema-nombre">papel</span>
+        <div class="fila"><button class="boton" type="button">Empezar repaso</button><span class="insignia"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-calendario"/></svg>Examen · jueves</span></div>
+        <div class="celda" style="max-width:220px"><span>Biología Molecular</span><small>18:00–18:55</small></div>
+        <p>Texto secundario sobre la hoja. Tinta, no gris.</p>
+      </div>
+      <div data-theme="noche">
+        <span class="tema-nombre">noche</span>
+        <div class="fila"><button class="boton" type="button">Empezar repaso</button><span class="insignia"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-calendario"/></svg>Examen · jueves</span></div>
+        <div class="celda" style="max-width:220px"><span>Biología Molecular</span><small>18:00–18:55</small></div>
+        <p>Texto secundario sobre la hoja. Tinta, no gris.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">Neutros del tema</h3>
+    <div class="paleta" id="paleta"></div>
+
+    <h3 class="sub">Asignaturas</h3>
+    <p class="nota-al-margen">Base para marcas con contorno (puntos, rayas, pegatinas), nunca de fondo de texto. Tinte para celdas en papel. Oscuro para texto de color en papel. Noche para celdas en el tema oscuro.</p>
+    <ul class="asigs" id="asigs"></ul>
+
+    <h3 class="sub" id="tCont">Contraste, medido al cargar</h3>
+    <p class="nota-al-margen">Cada pareja que se usa en las piezas, leída del navegador en los dos temas. AA pide 4,5:1 en texto y 3:1 en texto grande y bordes de controles. Las filas de asignatura son de la que tengas elegida.</p>
+    <div class="tabla-scroll"><table class="tabla-c" aria-labelledby="tCont"><thead><tr><th scope="col">Pareja</th><th scope="col">Papel</th><th scope="col">Noche</th></tr></thead><tbody id="tablaC"><tr><td colspan="3">Midiendo…</td></tr></tbody></table></div>
+    <p class="resumen-c" id="resumenC"></p>
+  </section>
+
+  <!-- ============ LETRA ============ -->
+  <section class="sec" id="letra" aria-labelledby="tLetra">
+    <h2 id="tLetra"><span class="fluor">Letra</span></h2>
+    <p class="intro">Fraunces para títulos, redondeada como tinta. Atkinson Hyperlegible para leer: distingue la I, la l y el 1. Caveat para lo escrito a mano. Atkinson Mono para horas y cifras. Todas locales: 226 KB en total.</p>
+    <div class="esp">
+      <div><code>--t-3xl · Fraunces 600 · 38 → 72 px</code><span style="font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:600;font-size:var(--t-3xl);line-height:var(--lh-ajustado);letter-spacing:var(--tr-display)">Citogenética <em style="font-weight:500">y cariotipo</em></span></div>
+      <div><code>--t-xl · h2 · 24 → 32 px</code><span style="font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:600;font-size:var(--t-xl);line-height:var(--lh-titulo)">Lo que entra en el examen</span></div>
+      <div><code>--t-lg · h3 · 19 → 22 px</code><span style="font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:600;font-size:var(--t-lg)">Fijación y deshidratación</span></div>
+      <div><code>--t-lectura · Atkinson · 17 → 18 px · interlineado 1,62</code><p class="lectura">El tejido se fija para detener la autólisis y conservar la estructura. Después se deshidrata en alcoholes de concentración creciente, se aclara y se incluye en parafina.</p></div>
+      <div><code>--t-base · texto de interfaz · 16 → 17 px</code><span>Empieza por el repaso y, cuando lo tengas, haz el simulacro.</span></div>
+      <div><code>--t-mano · Caveat 600 · 21 → 23 px</code><span class="mano">tacha al terminar</span></div>
+      <div><code>--f-mono · horas y cifras tabulares</code><span class="num" style="font-weight:700;font-size:20px">14:45 · 16:35 · 18:00 · 4 µm</span></div>
+      <div><code>--t-min · 12 px · el mínimo, solo en versalitas</code><span style="font-size:var(--t-min);font-weight:700;letter-spacing:var(--tr-versal);text-transform:uppercase;color:var(--asig-texto)">Hoy · examen</span></div>
+    </div>
+
+    <h3 class="sub">Espacio, radios y sombras</h3>
+    <div class="escala" aria-label="Escala de espacio">
+      <div><i style="width:4px;height:4px"></i>4</div><div><i style="width:8px;height:8px"></i>8</div><div><i style="width:12px;height:12px"></i>12</div><div><i style="width:16px;height:16px"></i>16</div><div><i style="width:24px;height:24px"></i>24</div><div><i style="width:32px;height:32px"></i>32</div><div><i style="width:48px;height:48px"></i>48</div><div><i style="width:64px;height:64px"></i>64</div>
+    </div>
+    <div class="escala" style="margin-top:var(--e-5)" aria-label="Radios y sombras">
+      <div><i style="width:64px;height:48px;border-radius:var(--r-1)"></i>r-1</div>
+      <div><i style="width:64px;height:48px;border-radius:var(--r-3)"></i>r-3</div>
+      <div><i style="width:64px;height:48px;border-radius:var(--r-mano)"></i>mano</div>
+      <div><i style="width:64px;height:48px;border-radius:var(--r-nota);background:var(--nota-amarilla);border:0;box-shadow:var(--sombra-nota)"></i>nota</div>
+      <div><i style="width:64px;height:48px;border-radius:var(--r-2);background:var(--c-hoja);border:0;box-shadow:var(--sombra-flota)"></i>flota</div>
+    </div>
+
+    <h3 class="sub">Movimiento</h3>
+    <div class="mov" id="mov">
+      <button class="boton secundario" type="button" id="probarMov">Probar las curvas</button>
+      <small>salida · 240 ms · lo normal</small><div class="carril" data-c="var(--ease-salida)" data-d="var(--d-media)"><i></i></div>
+      <small>muelle · 450 ms · pestañas y notas</small><div class="carril" data-c="var(--ease-muelle)" data-d="var(--d-lenta)"><i></i></div>
+      <small>trazo · 1300 ms · pegatinas que se dibujan</small><div class="carril" data-c="var(--ease-trazo)" data-d="var(--d-trazo)"><i></i></div>
+      <p class="nota-al-margen">Con «reducir movimiento» activado, todo llega al instante.</p>
+    </div>
+  </section>
+
+  <!-- ============ PIEZAS ============ -->
+  <section class="sec" id="piezas" aria-labelledby="tPiezas">
+    <h2 id="tPiezas"><span class="fluor">Piezas</span></h2>
+    <p class="intro">Todas miden 44 px o más donde se tocan. Pasa el ratón, tabula con el teclado o mantén pulsado para ver sus estados.</p>
+
+    <h3 class="sub">Botones</h3>
+    <div class="fila">
+      <button class="boton" type="button"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-siguiente"/></svg>Preparar el examen</button>
+      <button class="boton secundario" type="button">Ver el horario</button>
+      <button class="boton fantasma" type="button">Más tarde</button>
+      <button class="boton icono secundario" type="button" aria-label="Buscar"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-buscar"/></svg></button>
+    </div>
+    <div class="fila" style="margin-top:var(--e-3)">
+      <button class="boton" type="button" disabled>Sin conexión</button>
+      <button class="boton secundario" type="button" disabled>Deshabilitado</button>
+      <button class="boton" type="button" id="btnCarga">Guardar copia</button>
+    </div>
+
+    <h3 class="sub">Notas adhesivas como botón</h3>
+    <div class="fila" style="gap:18px;align-items:flex-start">
+      <a class="nota-boton" href="#piezas"><b>Repaso</b><span class="mano">bloque a bloque</span><span class="ext">Abrir en otra pestaña <svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-abrir-fuera"/></svg></span></a>
+      <a class="nota-boton amarilla" href="#piezas"><b>Simulacro</b><span class="mano">como el examen</span><span class="ext">Abrir en otra pestaña <svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-abrir-fuera"/></svg></span></a>
+    </div>
+
+    <h3 class="sub">Píldora «Hoy» y segmentados</h3>
+    <div class="fila">
+      <a class="pildora-hoy" href="#piezas" id="pildora" data-subject="ipe"><span class="punto" aria-hidden="true"></span><span class="etq">Hoy</span><span class="que">Ejemplo · entrega a las 21:00</span><span class="cuenta num" id="pilCuenta">--:--:--</span></a>
+      <span class="pildora-hoy vacia"><span class="punto" aria-hidden="true"></span><span class="que">Nada urgente</span></span>
+    </div>
+    <div class="fila" style="margin-top:var(--e-3)">
+      <div class="segmentado" role="group" aria-label="Vista del calendario" data-grupo="cal"><button type="button" aria-pressed="true" data-v="mes">Mes</button><button type="button" aria-pressed="false" data-v="curso">Curso</button></div>
+      <div class="segmentado compacto" role="group" aria-label="Formato de la hora" data-grupo="hora"><button type="button" aria-pressed="true" data-v="ambas">Ambas</button><button type="button" aria-pressed="false" data-v="24">24 h</button><button type="button" aria-pressed="false" data-v="12">12 h</button></div>
+    </div>
+
+    <div class="rejilla dos" style="margin-top:var(--e-6)">
+      <div>
+        <h3 class="sub" style="margin-top:0">Tarjeta, washi y bloques</h3>
+        <div class="tarjeta" style="margin-top:18px">
+          <span class="washi" aria-hidden="true"></span>
+          <h3>Lo que entra</h3>
+          <ol class="bloques">
+            <li>Cromosomas: estructura y clasificación</li>
+            <li>Técnicas de bandeo</li>
+            <li>Cariotipo y nomenclatura</li>
+          </ol>
+        </div>
+        <p class="nota-al-margen" style="margin-top:8px">Bloques de muestra; en la web salen del repaso de cada unidad.</p>
+      </div>
+      <div>
+        <h3 class="sub" style="margin-top:0">Casilla que se tacha</h3>
+        <ul class="tareas" id="tareas">
+          <li class="tarea" data-subject="ipe">
+            <button class="casilla" type="button" role="checkbox" aria-checked="false" aria-label="Marcar como hecha: Ejercicios finales, IPE I"><svg viewBox="0 0 38 38" aria-hidden="true"><path class="caja" d="M5 6 Q19 3 33 5 Q35 19 33 33 Q19 35 5 33 Q3 19 5 6 Z"/><path class="tic" pathLength="1" d="M9 19 L16 27 L34 4"/></svg></button>
+            <div><div class="meta"><span class="hora">21:00</span><span class="asig-nombre">IPE I</span></div><span class="titulo-w"><span class="titulo">Ejercicios finales</span></span><div class="queda">ejemplo</div></div>
+            <span class="hecho" aria-hidden="true">¡hecho!</span>
+          </li>
+          <li class="tarea hecha" data-subject="fisio">
+            <button class="casilla" type="button" role="checkbox" aria-checked="true" aria-label="Marcar como hecha: Infografía de enfermedad, Fisiopatología"><svg viewBox="0 0 38 38" aria-hidden="true"><path class="caja" d="M5 6 Q19 3 33 5 Q35 19 33 33 Q19 35 5 33 Q3 19 5 6 Z"/><path class="tic" pathLength="1" d="M9 19 L16 27 L34 4"/></svg></button>
+            <div><div class="meta"><span class="hora">23:59</span><span class="asig-nombre">Fisiopatología</span></div><span class="titulo-w"><span class="titulo">Infografía de enfermedad</span></span></div>
+            <span class="hecho" aria-hidden="true">¡hecho!</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rejilla dos" style="margin-top:var(--e-6)">
+      <div>
+        <h3 class="sub" style="margin-top:0">Fluorescente, sello y nota</h3>
+        <p class="lectura">Lo importante se marca con <span class="fluor">fluorescente amarillo</span> o con el <span class="fluor asig">tinte de la asignatura</span>, nunca con color de texto solo.</p>
+        <p style="margin:var(--e-5) 0 var(--e-6)" data-subject="digi"><span class="sello" id="sello">Pronto</span></p>
+        <div class="nota"><span class="mano">Miércoles, 18:55–19:50: Gestión es hora de tutoría.</span></div>
+      </div>
+      <div>
+        <h3 class="sub" style="margin-top:0">Examen y cuenta atrás</h3>
+        <div class="recuadro" style="margin-top:22px">
+          <span class="washi" aria-hidden="true"></span>
+          <div class="cuando">Biología Molecular · examen</div>
+          <h3 style="font-size:var(--t-2xl);margin:6px 0 10px"><span class="fluor asig">Citogenética</span></h3>
+          <div class="fila"><span class="insignia"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-calendario"/></svg>Examen · en tu hora de clase</span><span class="insignia por-confirmar">Fecha por confirmar</span></div>
+          <div class="fila" style="margin-top:18px;align-items:center">
+            <div class="lcd" role="timer" aria-label="Cuenta atrás de ejemplo hasta las 21:00"><div class="lcd-pantalla"><span id="tH">--</span><span class="u">h</span><span id="tM">--</span><span class="u">m</span><span id="tS">--</span><span class="u">s</span></div><div class="lcd-pie"><span>LAB TIMER</span><span>→ 21:00</span></div></div>
+            <span class="mano">hasta la entrega</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub">Barra inferior</h3>
+    <p class="nota-al-margen">En el móvil va fija abajo; aquí, en una caja para verla.</p>
+    <nav class="demo-barra" aria-label="Muestra de la barra inferior">
+      <div class="barra-inferior">
+        <a href="#piezas" aria-current="page"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-hoy"/></svg><span>Hoy</span></a>
+        <a href="#agenda"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-agenda"/></svg><span>Agenda</span></a>
+        <a href="#piezas"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-asignaturas"/></svg><span>Asignaturas</span></a>
+        <a href="#piezas" class="aviso-punto"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-errores"/></svg><span>Errores</span><span class="sr">(hay fallos para repasar)</span></a>
+        <a href="#piezas"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-mi-mesa"/></svg><span>Mi mesa</span></a>
+      </div>
+    </nav>
+
+    <h3 class="sub">Etiqueta editorial</h3>
+    <p class="nota-al-margen">Sobre la escena 3D, siempre en noche: número grande, línea fina hasta el objeto y nombre.</p>
+    <div class="pasillo" data-theme="noche">
+      <a class="etiqueta-ed" href="#piezas" data-subject="bio"><span class="num">02</span><span class="nombre">Citogenética</span></a>
+      <a class="etiqueta-ed" href="#piezas" data-subject="lab" style="--largo:56px"><span class="num">05</span><span class="nombre">Seguridad</span></a>
+      <a class="etiqueta-ed apagada" href="#piezas" data-subject="fisio"><span class="num">03</span><span class="nombre">Patología</span></a>
+    </div>
+
+    <h3 class="sub">Iconos</h3>
+    <p class="nota-al-margen">Un trazo de 2 px, puntas redondas, toman el color del texto.</p>
+    <ul class="iconos" id="iconos"></ul>
+
+    <h3 class="sub">Pegatinas</h3>
+    <div class="fila" style="margin-bottom:var(--e-3)"><button class="boton secundario" type="button" id="redibujar"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-editar"/></svg>Dibujarlas otra vez</button></div>
+    <ul class="iconos pegatinas" id="pegatinas"></ul>
+  </section>
+
+  <!-- ============ AGENDA ============ -->
+  <section class="sec" id="agenda" aria-labelledby="tAgenda">
+    <h2 id="tAgenda"><span class="fluor">Agenda</span></h2>
+    <p class="intro">Horario y calendario con los datos reales del curso 2026/27. Las rayas son clase en el laboratorio; el estado nunca va solo en el color.</p>
+    <div id="agendaZona">
+      <div class="estado cargando" aria-busy="true"><span class="sr">Cargando la agenda</span><div style="grid-column:1/-1"><div class="linea-carga"></div><div class="linea-carga"></div></div></div>
+    </div>
+  </section>
+
+  <!-- ============ ESTADOS ============ -->
+  <section class="sec" id="estados" aria-labelledby="tEstados">
+    <h2 id="tEstados"><span class="fluor">Estados</span></h2>
+    <p class="intro">Lo que se ve cuando no hay nada, cuando algo falla y mientras carga. El error dice qué pasó y cómo seguir.</p>
+    <div class="rejilla dos">
+      <div class="estado" data-subject="sost">
+        <svg class="pegatina js-dibujo" viewBox="0 0 80 80" aria-hidden="true"><use href="../../../assets/corte/iconos.svg#st-hoja"/></svg>
+        <div><h3>Nada pendiente esta semana</h3><p>Página en blanco: respira. Si quieres, adelanta un repaso.</p><div class="acciones"><button class="boton secundario" type="button">Ver asignaturas</button></div></div>
+      </div>
+      <div class="estado es-error" role="alert">
+        <svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-sin-conexion"/></svg>
+        <div><h3>Sin conexión</h3><p>No se ha podido abrir el simulacro. Lo que ya visitaste sigue disponible; vuelve a intentarlo cuando tengas red.</p><div class="acciones"><button class="boton" type="button" id="reintentar"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-actualizar"/></svg>Reintentar</button></div></div>
+      </div>
+      <div class="estado cargando" aria-busy="true"><span class="sr">Cargando</span><div style="grid-column:1/-1"><div class="linea-carga"></div><div class="linea-carga"></div></div></div>
+      <div class="estado">
+        <svg aria-hidden="true" style="width:40px;height:40px;color:var(--c-tinta-2)"><use href="../../../assets/corte/iconos.svg#i-buscar"/></svg>
+        <div><h3>Sin resultados</h3><p>Ninguna tarjeta tiene «parafina» en esta unidad. Prueba con otra palabra.</p></div>
+      </div>
+    </div>
+
+    <h3 class="sub">Avisos</h3>
+    <div class="fila">
+      <button class="boton secundario" type="button" data-aviso="ok">Aviso de acierto</button>
+      <button class="boton secundario" type="button" data-aviso="error">Aviso de error</button>
+    </div>
+    <div class="avisos en-linea" style="margin-top:var(--e-4)">
+      <div class="aviso es-ok"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-check"/></svg><span class="aviso-texto">Copia guardada en tu móvil.</span></div>
+      <div class="aviso es-error"><svg aria-hidden="true"><use href="../../../assets/corte/iconos.svg#i-alerta"/></svg><span class="aviso-texto">No se pudo leer la copia.</span><button class="aviso-accion" type="button">Elegir otra</button></div>
+    </div>
+  </section>
+
+  </article>
+</div>
+</main>
+<p class="pie">Corte · sistema de diseño · fase 2. Archivos en <code>assets/corte/</code>; reglas en <code>docs/corte/DESIGN.md</code>.</p>
+
+<script>
+(function(){
+'use strict';
+var SPR='../../../assets/corte/iconos.svg#';
+var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var html=document.documentElement;
+var SUBJ={
+  bio:['Biología Molecular','Bio','adn'], lab:['Laboratorio','Lab','matraz'], fisio:['Fisiopatología','Fisio','corazon'], gest:['Gestión de Muestras','Gest','tubos'],
+  ipe:['IPE I','IPE','botiquin'], ing:['Inglés','Ing','hello'], digi:['Digitalización','Digi','pantalla'], sost:['Sostenibilidad','Sost','hoja']
+};
+var ORDER=['bio','lab','fisio','gest','ipe','ing','digi','sost'];
+function load(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function save(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function use(id){return '<use href="'+SPR+id+'"/>'}
+
+/* ---------- dibujo de pegatinas y fluorescente al entrar en pantalla ---------- */
+var io='IntersectionObserver' in window && !RM ? new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){mark(e.target);io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'}) : null;
+function mark(el){ if(el.classList.contains('pegatina')) el.classList.add('dibujada'); else el.classList.add('pintado'); }
+function draw(el){
+  if(RM||!io){ el.classList.remove('dibujar'); return; }
+  el.classList.remove('dibujada'); el.classList.add('dibujar'); void el.getBoundingClientRect();
+  var r=el.getBoundingClientRect(); if(r.top<innerHeight && r.bottom>0){ requestAnimationFrame(function(){requestAnimationFrame(function(){el.classList.add('dibujada')})}); } else io.observe(el);
+}
+function watch(root){ $$('.js-dibujo',root).forEach(draw); }
+
+/* ---------- tema ---------- */
+function setTema(v){
+  if(v==='auto') html.removeAttribute('data-theme'); else html.setAttribute('data-theme',v);
+  $$('#segTema button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.tema===v))});
+  save('corte-sistema-tema',v); medir();
+}
+$('#segTema').addEventListener('click',function(e){var b=e.target.closest('button');if(b) setTema(b.dataset.tema)});
+
+/* ---------- asignatura ---------- */
+var sel=$('#selector');
+sel.innerHTML=ORDER.map(function(k){return '<li><button type="button" data-s="'+k+'" data-subject="'+k+'" aria-pressed="false"><svg class="pegatina quieta" viewBox="0 0 80 80" aria-hidden="true">'+use('st-'+SUBJ[k][2])+'</svg>'+SUBJ[k][0]+'</button></li>'}).join('');
+function setAsig(k){
+  html.setAttribute('data-subject',k);
+  $$('button',sel).forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.s===k))});
+  var p=$('#pegPortada'); p.innerHTML=use('st-'+SUBJ[k][2]); draw(p);
+  save('corte-sistema-asig',k); medir();
+}
+sel.addEventListener('click',function(e){var b=e.target.closest('button');if(b) setAsig(b.dataset.s)});
+
+/* ---------- paleta y asignaturas ---------- */
+var NEUTROS=[['--c-fondo','fondo','la mesa'],['--c-hoja','hoja','superficie'],['--c-hoja-2','hoja-2','segunda capa'],['--c-tinta','tinta','texto'],['--c-tinta-2','tinta-2','texto secundario'],['--c-boli','boli','a mano, enlaces'],['--c-rotulador','rotulador','hoy, ahora'],['--c-foco','foco','anillo de foco'],['--c-ok','ok','acierto'],['--c-aviso','aviso','atención'],['--c-error','error','fallo'],['--c-fluor','fluor','subrayado']];
+$('#paleta').innerHTML=NEUTROS.map(function(n){return '<div class="muestra"><i style="--v:var('+n[0]+')"></i><span><b>'+n[1]+'</b>'+n[2]+'</span></div>'}).join('');
+$('#asigs').innerHTML='<li aria-hidden="true"><span class="cab">asignatura</span><span class="cab">base</span><span class="cab">tinte</span><span class="cab">oscuro</span><span class="cab">noche</span></li>'+
+  ORDER.map(function(k){return '<li><span>'+SUBJ[k][0]+'</span><i style="background:var(--'+k+'-base)" title="base"></i><i style="background:var(--'+k+'-tinte)" title="tinte"></i><i style="background:var(--'+k+'-oscuro)" title="oscuro"></i><i style="background:var(--'+k+'-noche)" title="noche"></i></li>'}).join('');
+
+/* ---------- contraste: se lee del navegador en los dos temas ---------- */
+var cv=document.createElement('canvas'); cv.width=cv.height=1; var cx=cv.getContext('2d',{willReadFrequently:true});
+function rgba(css){ cx.clearRect(0,0,1,1); cx.fillStyle='#000'; cx.fillStyle=css; cx.fillRect(0,0,1,1); var d=cx.getImageData(0,0,1,1).data; return [d[0],d[1],d[2],d[3]/255]; }
+function over(a,b){ return [a[0]*a[3]+b[0]*(1-a[3]),a[1]*a[3]+b[1]*(1-a[3]),a[2]*a[3]+b[2]*(1-a[3]),1]; }
+function L(c){ var f=function(v){v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)}; return .2126*f(c[0])+.7152*f(c[1])+.0722*f(c[2]); }
+function ratio(a,b){ var x=L(a),y=L(b); return (Math.max(x,y)+.05)/(Math.min(x,y)+.05); }
+/* [texto, fondo, mínimo, nombre, uso, ¿de asignatura?] */
+var PARES=[
+  ['--c-tinta','--c-hoja',4.5,'tinta / hoja','texto normal'],
+  ['--c-tinta-2','--c-hoja',4.5,'tinta-2 / hoja','texto secundario'],
+  ['--c-tinta-3','--c-hoja-2',4.5,'tinta-3 / hoja-2','pies y notas'],
+  ['--c-tinta-2','--c-fondo',4.5,'tinta-2 / fondo','fuera de la hoja'],
+  ['--c-boli','--c-hoja',4.5,'boli / hoja','letra a mano, enlaces'],
+  ['--c-sobre-tinta','--c-relleno',4.5,'sobre-tinta / relleno','segmentado activo, aviso'],
+  ['--c-tinta','--c-tarjeta',4.5,'tinta / tarjeta','tareas, tarjetas'],
+  ['--c-ok','--c-hoja',4.5,'ok / hoja','acierto'],
+  ['--c-aviso','--c-hoja',4.5,'aviso / hoja','atención'],
+  ['--c-error','--c-hoja',4.5,'error / hoja','fallo'],
+  ['--c-tinta','--c-error-suave',4.5,'tinta / error-suave','caja de error'],
+  ['--c-foco','--c-hoja',3,'foco / hoja','anillo de foco (3:1)'],
+  ['--c-rotulador','--c-hoja',3,'rotulador / hoja','círculo de hoy (3:1)'],
+  ['--c-linea','--c-hoja',3,'línea / hoja','borde de controles (3:1)'],
+  ['--fijo-tinta','--nota-amarilla',4.5,'tinta / nota amarilla','nota adhesiva'],
+  ['--lcd-cifra','--lcd-pantalla',4.5,'cifra / pantalla LCD','cuenta atrás'],
+  ['--lcd-pie','--lcd-caja',4.5,'pie / caja LCD','pie del temporizador'],
+  ['--asig-texto','--c-hoja',4.5,'asig-texto / hoja','texto de color',1],
+  ['--c-tinta','--asig-suave',4.5,'tinta / asig-suave','celdas, pestañas, insignia',1],
+  ['--c-sobre-tinta','--asig-relleno',4.5,'botón principal','texto del botón',1],
+  ['--asig','--c-hoja',3,'base / hoja','marca de color (3:1, con contorno)',1,1],
+  ['--fijo-tinta','--s-tinte',4.5,'tinta / nota de color','nota-botón',1]
+];
+var probe=document.createElement('div'); probe.setAttribute('aria-hidden','true'); probe.style.cssText='position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden';
+document.body.appendChild(probe);
+function medirTema(tema,asig){
+  probe.innerHTML='<div data-theme="'+tema+'" data-subject="'+asig+'">'+PARES.map(function(p){return '<i style="color:var('+p[0]+');background-color:var('+p[1]+')"></i>'}).join('')+'<b style="color:var(--c-hoja);background-color:var(--c-hoja)"></b></div>';
+  var hoja=rgba(getComputedStyle($('b',probe)).backgroundColor);
+  return $$('i',probe).map(function(el){ var cs=getComputedStyle(el), bg=over(rgba(cs.backgroundColor),hoja), fg=over(rgba(cs.color),bg); return ratio(fg,bg); });
+}
+function fmt(r){ return r.toFixed(2).replace('.',',')+':1'; }
+function celda(r,min,decor){ var ok=r>=min; return '<td class="r">'+fmt(r)+' <span class="'+(ok?'ok':'mal')+'">'+(ok?'AA':(decor?'marca':'bajo'))+'</span></td>'; }
+var tm=0;
+function medir(){ clearTimeout(tm); tm=setTimeout(medirYa,30); }
+function medirYa(){
+  var asig=html.getAttribute('data-subject')||'bio';
+  var P=medirTema('papel',asig), N=medirTema('noche',asig);
+  $('#tablaC').innerHTML=PARES.map(function(p,i){
+    return '<tr><th scope="row">'+p[3]+(p[5]?' · '+SUBJ[asig][1]:'')+'<span class="uso">'+p[4]+'</span></th>'+celda(P[i],p[2],p[6])+celda(N[i],p[2],p[6])+'</tr>';
+  }).join('');
+  /* las 8 asignaturas: el par de texto más bajo */
+  var peor=null, fallos=0;
+  ORDER.forEach(function(k){ ['papel','noche'].forEach(function(t){ var R=medirTema(t,k); PARES.forEach(function(p,i){ if(!p[5]||p[6]) return; if(R[i]<p[2]) fallos++; if(!peor||R[i]<peor[0]) peor=[R[i],p[3],SUBJ[k][0],t]; }); }); });
+  probe.innerHTML='';
+  $('#resumenC').textContent='En las 8 asignaturas y los dos temas, el par de texto más bajo es «'+peor[1]+'» de '+peor[2]+' en '+peor[3]+': '+fmt(peor[0])+'. '+(fallos?fallos+' parejas no llegan a AA.':'Todas llegan a AA.');
+}
+
+/* ---------- iconos y pegatinas ---------- */
+var ICOS=[['volver','volver'],['siguiente','siguiente'],['cerrar','cerrar'],['calendario','calendario'],['reloj','reloj'],['check','hecho'],['alerta','atención'],['info','información'],['descargar','descargar'],['subir','importar'],['abrir-fuera','abrir fuera'],['buscar','buscar'],['menu','menú'],['sin-conexion','sin conexión'],['actualizar','actualizar'],['mas','añadir'],['editar','editar'],['tema','tema'],['hoy','hoy'],['agenda','agenda'],['asignaturas','asignaturas'],['errores','errores'],['mi-mesa','mi mesa']];
+$('#iconos').innerHTML=ICOS.map(function(i){return '<li><svg class="i" aria-hidden="true">'+use('i-'+i[0])+'</svg>'+i[1]+'</li>'}).join('');
+var STS=[['corazon','fisio','Fisio · corazón'],['torso','fisio','Fisio 1 · torso'],['microscopio','fisio','Fisio 2 · microscopio'],['adn','bio','Bio · ADN'],['petri','bio','Bio 1 · Petri'],['gel','bio','Bio 3 · gel'],['matraz','lab','Lab · matraz'],['gafas','lab','Lab 2 · gafas'],['tubos','gest','Gest · tubos'],['hospital','gest','Gest 1 · hospital'],['botiquin','ipe','IPE · botiquín'],['sonometro','ipe','IPE 2 · sonómetro'],['hello','ing','Inglés · Hello'],['pantalla','digi','Digi · pantalla'],['hoja','sost','Sost · hoja']];
+$('#pegatinas').innerHTML=STS.map(function(s){return '<li data-subject="'+s[1]+'"><svg class="pegatina js-dibujo" viewBox="0 0 80 80" aria-hidden="true">'+use('st-'+s[0])+'</svg>'+s[2]+'</li>'}).join('');
+$('#redibujar').addEventListener('click',function(){ $$('#pegatinas .pegatina').forEach(draw); });
+
+/* ---------- interacción de las piezas ---------- */
+$('#tareas').addEventListener('click',function(e){ var b=e.target.closest('.casilla'); if(!b) return; var on=b.getAttribute('aria-checked')!=='true'; b.setAttribute('aria-checked',String(on)); b.closest('.tarea').classList.toggle('hecha',on); if(on) aviso('Tachada. Buen trabajo.','ok'); });
+$$('.segmentado[data-grupo]').forEach(function(g){ g.addEventListener('click',function(e){ var b=e.target.closest('button'); if(!b) return; $$('button',g).forEach(function(x){x.setAttribute('aria-pressed',String(x===b))}); if(g.dataset.grupo==='hora'){ hFmt=b.dataset.v; pintarAgenda(); } if(g.dataset.grupo==='cal'){ calVista=b.dataset.v; pintarAgenda(); } }); });
+$('#btnCarga').addEventListener('click',function(){ var b=this; b.setAttribute('aria-busy','true'); setTimeout(function(){ b.removeAttribute('aria-busy'); aviso('Copia guardada en tu móvil.','ok'); },1400); });
+$('#reintentar').addEventListener('click',function(){ aviso('Sigue sin conexión. Lo intento otra vez en cuanto vuelva la red.','error'); });
+$$('[data-aviso]').forEach(function(b){ b.addEventListener('click',function(){ b.dataset.aviso==='ok'?aviso('Copia guardada en tu móvil.','ok'):aviso('No se pudo leer la copia. Elige el archivo .json que exportaste.','error'); }); });
+$('#sello').addEventListener('click',function(){ var s=this; s.classList.remove('estampar'); void s.offsetWidth; s.classList.add('estampar'); });
+$('#probarMov').addEventListener('click',function(){
+  $$('#mov .carril').forEach(function(c){ var i=$('i',c); c.style.setProperty('--w',c.clientWidth+'px'); i.style.transition='transform '+c.dataset.d+' '+c.dataset.c; c.classList.toggle('va'); });
+});
+
+/* ---------- aviso ---------- */
+var avisos=$('#avisos');
+function aviso(msg,tipo){
+  var a=document.createElement('div'); a.className='aviso entra es-'+(tipo||'ok');
+  a.innerHTML='<svg aria-hidden="true">'+use(tipo==='error'?'i-alerta':'i-check')+'</svg><span class="aviso-texto"></span>';
+  $('.aviso-texto',a).textContent=msg; avisos.innerHTML=''; avisos.appendChild(a);
+  requestAnimationFrame(function(){requestAnimationFrame(function(){a.classList.remove('entra')})});
+  setTimeout(function(){ a.classList.add('entra'); setTimeout(function(){ if(a.parentNode) a.parentNode.removeChild(a); },500); },3200);
+}
+
+/* ---------- cuenta atrás de ejemplo: hasta las 21:00 ---------- */
+function pad(n){return (n<10?'0':'')+n}
+function objetivo(){ var n=new Date(), t=new Date(n.getFullYear(),n.getMonth(),n.getDate(),21,0,0); if(t<=n) t.setDate(t.getDate()+1); return t; }
+function tic(){
+  var ms=objetivo()-new Date(), s=Math.floor(ms/1000), h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60;
+  $('#pilCuenta').textContent=pad(h)+':'+pad(m)+':'+pad(x);
+  $('#tH').textContent=pad(h); $('#tM').textContent=pad(m); $('#tS').textContent=pad(x);
+}
+tic(); setInterval(tic,1000);
+
+/* ---------- agenda real (docs/corte/agenda-2026-27.json) ---------- */
+var AG=null, hFmt='ambas', calVista='mes', MES=null;
+var MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+var DIAS=['','Lun','Mar','Mié','Jue','Vie'], DIASL=['','Lunes','Martes','Miércoles','Jueves','Viernes'], DIASA=['','L','M','X','J','V'];
+function sid(a){return a==='ingles'?'ing':a}
+function h12(t){ var p=t.split(':'), h=+p[0]%12||12; return h+':'+p[1]+(+p[0]>=12?' pm':' am'); }
+function horaCol(t){ return hFmt==='12'?'<span>'+h12(t)+'</span>':hFmt==='24'?'<span>'+t+'</span>':'<span>'+t+'</span><small>'+h12(t)+'</small>'; }
+function key(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+function parseD(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
+function infoDia(k){
+  var t=[],notas=[],evs=[];
+  AG.calendario.forEach(function(c){ if(c.fecha?c.fecha===k:(k>=c.desde&&k<=c.hasta)){ t.push(c.tipo); notas.push(c.nota||({festivo:'Festivo','no-lectivo':'Sin clase','sin-clases':'Sin clase',practicas:'Prácticas',recuperaciones:'Recuperaciones',inicio:'Empieza el curso',fin:'Fin de las clases','fin-trimestre':'Fin de trimestre',notas:'Notas',reclamaciones:'Reclamaciones'})[c.tipo]); } });
+  AG.eventos.forEach(function(e){ if(e.fecha===k) evs.push(e); });
+  var cls=[]; if(t.indexOf('festivo')>=0) cls.push('es-festivo'); if(t.indexOf('no-lectivo')>=0||t.indexOf('sin-clases')>=0) cls.push('es-sinclase'); if(t.indexOf('practicas')>=0) cls.push('es-practicas'); if(t.indexOf('recuperaciones')>=0) cls.push('es-recuperacion');
+  if(['inicio','fin','fin-trimestre','notas','reclamaciones'].some(function(x){return t.indexOf(x)>=0})) cls.push('es-clave');
+  return {cls:cls,notas:notas,evs:evs};
+}
+function pintarHorario(){
+  var hoy=new Date().getDay(), F=AG.franjas, out='<div class="h-dia" style="grid-row:1;grid-column:1"><span class="sr">Hora</span></div>';
+  for(var d=1;d<=5;d++) out+='<div class="h-dia'+(d===hoy?' hoy':'')+'" style="grid-row:1;grid-column:'+(d+1)+'"><span class="ab" aria-hidden="true">'+DIASA[d]+'</span><span class="completo">'+DIASL[d]+'</span><span class="sr">'+(d===hoy?' (hoy)':'')+'</span></div>';
+  F.forEach(function(f,i){ out+='<div class="h-hora" style="grid-row:'+(i+2)+';grid-column:1">'+horaCol(f.inicio)+'</div>'; if(f.recreo) out+='<div class="recreo" style="grid-row:'+(i+2)+'">recreo</div>'; });
+  var fi=function(t,fin){ for(var i=0;i<F.length;i++){ if((fin?F[i].fin:F[i].inicio)===t) return i; } return 0; };
+  var n=new Date(), nm=n.getHours()*60+n.getMinutes();
+  AG.horario.forEach(function(h){
+    var s=sid(h.asig), S=SUBJ[s], a=h.inicio.split(':'), b=h.fin.split(':'), ahora=h.dia===hoy&&nm>=a[0]*60+ +a[1]&&nm<b[0]*60+ +b[1];
+    out+='<div class="celda'+(h.lab?' es-lab':'')+(ahora?' es-ahora':'')+'" data-subject="'+s+'" style="grid-row:'+(fi(h.inicio)+2)+'/'+(fi(h.fin,true)+3)+';grid-column:'+(h.dia+1)+'"><span class="ab">'+S[1]+'</span><span class="completo">'+S[0]+'</span>'+(h.nota?'<small>'+h.nota+'</small>':'')+'<small class="completo">'+h.inicio+'–'+h.fin+'</small><span class="sr">, '+DIASL[h.dia]+' de '+h.inicio+' a '+h.fin+(h.lab?', práctica en el laboratorio':'')+(ahora?', ahora':'')+'</span></div>';
+  });
+  return '<h3 class="sub">Horario de la semana</h3><div class="segmentado compacto" role="group" aria-label="Formato de la hora" data-grupo="hora2">'+['ambas','24','12'].map(function(v){return '<button type="button" data-v="'+v+'" aria-pressed="'+(hFmt===v)+'">'+(v==='ambas'?'Ambas':v+' h')+'</button>'}).join('')+'</div>'+
+    '<div class="horario-caja" style="margin-top:var(--e-3)"><div class="horario" role="table" aria-label="Horario semanal" style="grid-template-rows:auto repeat('+F.length+',minmax(48px,auto))">'+out+'</div></div>'+
+    '<ul class="leyenda">'+ORDER.map(function(k){return '<li data-subject="'+k+'"><i></i>'+SUBJ[k][0]+'</li>'}).join('')+'<li data-subject="bio"><i class="l-lab"></i>Clase en el laboratorio</li></ul>';
+}
+function pintarMes(){
+  var y=MES.getFullYear(), mo=MES.getMonth(), off=(new Date(y,mo,1).getDay()+6)%7, dias=new Date(y,mo+1,0).getDate(), hk=key(new Date()), out='';
+  ['L','M','X','J','V','S','D'].forEach(function(x){ out+='<div class="dds" aria-hidden="true">'+x+'</div>'; });
+  for(var i=0;i<off;i++) out+='<div class="dia fuera" aria-hidden="true"></div>';
+  for(var d=1;d<=dias;d++){
+    var dt=new Date(y,mo,d), k=key(dt), inf=infoDia(k), we=dt.getDay()===0||dt.getDay()===6, esHoy=k===hk;
+    var sr=d+' de '+MESES[mo]+(inf.notas.length?': '+inf.notas.join(', '):'')+(inf.evs.length?'. '+inf.evs.map(function(e){return SUBJ[sid(e.asig)][0]+', '+e.titulo}).join('; '):'')+(esHoy?' (hoy)':'');
+    out+='<div class="dia'+(we?' es-finde':'')+(esHoy?' es-hoy':'')+(inf.cls.length?' '+inf.cls.join(' '):'')+'" role="listitem" aria-label="'+sr.replace(/"/g,'&quot;')+'"><span class="n">'+d+'</span>'+
+      inf.evs.map(function(e){var s=sid(e.asig);return '<span class="ev" data-subject="'+s+'">'+SUBJ[s][1]+' · '+e.titulo.replace(/^Examen · /,'Ex. ')+'</span>'}).join('')+
+      (inf.evs.length?'<span class="puntos">'+inf.evs.map(function(e){return '<i data-subject="'+sid(e.asig)+'"></i>'}).join('')+'</span>':'')+'</div>';
+  }
+  var min=new Date(2026,8,1), max=new Date(2027,5,1);
+  return '<div class="cabecera-mes"><button class="boton icono secundario" type="button" data-mes="-1" aria-label="Mes anterior"'+(MES<=min?' disabled':'')+'><svg aria-hidden="true">'+use('i-volver')+'</svg></button><h3 aria-live="polite">'+MESES[mo]+' '+y+'</h3><button class="boton icono secundario" type="button" data-mes="1" aria-label="Mes siguiente"'+(MES>=max?' disabled':'')+'><svg aria-hidden="true">'+use('i-siguiente')+'</svg></button></div>'+
+    '<div class="mes" role="list" aria-label="'+MESES[mo]+' de '+y+'">'+out+'</div>'+
+    '<ul class="leyenda"><li><i class="l-festivo"></i>Festivo</li><li><i class="l-sinclase"></i>Sin clase</li><li><i class="l-practicas"></i>Prácticas</li><li><i class="l-recuperacion"></i>Recuperaciones</li><li><i class="l-clave"></i>Fecha clave</li></ul>';
+}
+function pintarCurso(){
+  var it=[], hk=key(new Date());
+  AG.calendario.forEach(function(c){ var t=infoDia(c.fecha||c.desde).notas; it.push({k:c.fecha||c.desde,fin:c.hasta,txt:c.nota||t[t.length-1]||c.tipo}); });
+  AG.eventos.forEach(function(e){ var s=sid(e.asig); it.push({k:e.fecha,txt:SUBJ[s][0]+' · '+e.titulo+(e.hora?' · '+e.hora:' · en clase')}); });
+  it.sort(function(a,b){return a.k<b.k?-1:a.k>b.k?1:0});
+  var f=function(s){var d=parseD(s);return d.getDate()+' '+MESES[d.getMonth()].slice(0,3)};
+  return '<ul class="claves">'+it.map(function(x){return '<li class="'+((x.fin||x.k)<hk?'pasada':'')+'"><span class="d">'+f(x.k)+(x.fin?' – '+f(x.fin):'')+'</span><span>'+x.txt+((x.fin||x.k)<hk?'<span class="sr"> (pasada)</span>':'')+'</span></li>'}).join('')+'</ul>';
+}
+function pintarAgenda(){
+  if(!AG) return;
+  var z=$('#agendaZona');
+  z.innerHTML=pintarHorario()+'<h3 class="sub">Calendario</h3><div class="segmentado" role="group" aria-label="Vista del calendario" data-grupo="cal2"><button type="button" data-v="mes" aria-pressed="'+(calVista==='mes')+'">Mes</button><button type="button" data-v="curso" aria-pressed="'+(calVista==='curso')+'">Curso</button></div>'+(calVista==='mes'?pintarMes():pintarCurso());
+}
+$('#agendaZona').addEventListener('click',function(e){
+  var b=e.target.closest('button'); if(!b) return;
+  var g=b.closest('[data-grupo]');
+  if(g&&g.dataset.grupo==='hora2'){ hFmt=b.dataset.v; pintarAgenda(); return; }
+  if(g&&g.dataset.grupo==='cal2'){ calVista=b.dataset.v; pintarAgenda(); return; }
+  if(b.dataset.mes){ MES=new Date(MES.getFullYear(),MES.getMonth()+ +b.dataset.mes,1); pintarAgenda(); var h=$('#agendaZona [data-mes="'+b.dataset.mes+'"]'); if(h&&!h.disabled) h.focus(); else { var o=$('#agendaZona [data-mes]:not([disabled])'); if(o) o.focus(); } }
+});
+function cargarAgenda(){
+  fetch('../agenda-2026-27.json').then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(d){
+    AG=d; var n=new Date(), min=new Date(2026,8,1), max=new Date(2027,5,1); MES=new Date(n.getFullYear(),n.getMonth(),1); if(MES<min) MES=min; if(MES>max) MES=max; pintarAgenda();
+  }).catch(function(){
+    $('#agendaZona').innerHTML='<div class="estado es-error" role="alert"><svg aria-hidden="true">'+use('i-alerta')+'</svg><div><h3>No se pudo cargar la agenda</h3><p>Esta página lee docs/corte/agenda-2026-27.json. Ábrela desde un servidor (no como archivo suelto) y vuelve a intentarlo.</p><div class="acciones"><button class="boton" type="button" id="reAgenda">Reintentar</button></div></div></div>';
+    $('#reAgenda').addEventListener('click',cargarAgenda);
+  });
+}
+cargarAgenda();
+
+/* ---------- arranque ---------- */
+var t0=load('corte-sistema-tema'); setTema(t0==='papel'||t0==='noche'?t0:'auto');
+var a0=load('corte-sistema-asig'); setAsig(SUBJ[a0]?a0:'bio');
+watch(document);
+if(io) $$('.fluor.por-pintar').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

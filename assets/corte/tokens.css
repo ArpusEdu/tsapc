@@ -1,0 +1,270 @@
+/* =========================================================
+   Corte · tokens
+   Orden de capas de todo el sistema. Este archivo va primero.
+   Uso: tokens.css → base.css → texturas.css → componentes.css
+   ========================================================= */
+@layer tokens, base, texturas, componentes;
+
+/* ---------- fuentes locales (subconjunto latino, OFL) ---------- */
+@font-face{font-family:"Fraunces";src:url("fuentes/fraunces-var.woff2") format("woff2");font-weight:300 800;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Fraunces";src:url("fuentes/fraunces-italic-500.woff2") format("woff2");font-weight:300 800;font-style:italic;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("fuentes/atkinson-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("fuentes/atkinson-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("fuentes/atkinson-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Atkinson Hyperlegible Mono";src:url("fuentes/atkinson-mono-var.woff2") format("woff2");font-weight:200 800;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Caveat";src:url("fuentes/caveat-600.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* respaldos ajustados a las métricas de cada fuente: el texto no salta al cargar */
+@font-face{font-family:"Fraunces respaldo";src:local("Georgia"),local("Times New Roman"),local("Liberation Serif"),local("DejaVu Serif");size-adjust:110%;ascent-override:89%;descent-override:23%;line-gap-override:0%}
+@font-face{font-family:"Atkinson respaldo";src:local("Arial"),local("Helvetica"),local("Liberation Sans"),local("Roboto");size-adjust:101%;ascent-override:94%;descent-override:29%;line-gap-override:0%}
+@font-face{font-family:"Mono respaldo";src:local("Courier New"),local("Menlo"),local("Liberation Mono"),local("DejaVu Sans Mono");size-adjust:105%;ascent-override:94%;descent-override:30%;line-gap-override:0%}
+
+@layer tokens{
+  :root{
+    color-scheme:light dark;
+
+    /* ---------- primitivos: papel (claro, el cuaderno) ---------- */
+    --p-fondo:#e9e1d0;        /* la mesa bajo la hoja */
+    --p-hoja:#fbf7ee;         /* el papel */
+    --p-hoja-2:#f4eee1;       /* papel de segunda capa */
+    --p-tinta:#221d2e;
+    --p-tinta-2:#4f485c;
+    --p-tinta-3:#5d5669;
+    --p-boli:#2846a8;         /* bolígrafo azul: letra a mano y enlaces */
+    --p-foco:#2846a8;
+    --p-linea:rgba(34,29,46,.75);
+    --p-linea-suave:rgba(34,29,46,.18);
+    --p-cuadricula:rgba(52,96,150,.13);
+    --p-cuadricula-2:rgba(52,96,150,.24);
+    --p-margen:rgba(220,84,84,.38);
+    --p-anilla:#8d8579;
+    --p-fluor:rgba(255,214,64,.62);
+    --p-sombra:rgba(52,36,20,.28);
+    --p-tarjeta:rgba(255,255,255,.62);
+    --p-rotulador:#ad3326;     /* boli rojo: rodea «hoy» y «ahora» */
+    --p-ok:#0d6b4c;   --p-ok-suave:#dcf3ea;
+    --p-aviso:#7a4f00; --p-aviso-suave:#fbedc8;
+    --p-error:#a8201a; --p-error-suave:#fbe3df;
+
+    /* ---------- primitivos: noche (oscuro, el pasillo) ---------- */
+    --n-fondo:#0b0d12;
+    --n-hoja:#141821;
+    --n-hoja-2:#1c2130;
+    --n-tinta:#f3ede2;
+    --n-tinta-2:#d3cbbd;
+    --n-tinta-3:#a9a296;
+    --n-boli:#a9c4ff;
+    --n-foco:#ffcf8a;
+    --n-linea:rgba(243,237,226,.55);
+    --n-linea-suave:rgba(243,237,226,.16);
+    --n-cuadricula:rgba(156,192,255,.075);
+    --n-cuadricula-2:rgba(156,192,255,.17);
+    --n-margen:rgba(255,120,100,.34);
+    --n-anilla:#4a4f5c;
+    --n-fluor:rgba(255,207,138,.30);
+    --n-sombra:rgba(0,0,0,.55);
+    --n-tarjeta:rgba(255,255,255,.045);
+    --n-rotulador:#ff8f80;
+    --n-ok:#86e4c3;   --n-ok-suave:#173a31;
+    --n-aviso:#ffd166; --n-aviso-suave:#3d3216;
+    --n-error:#ff8f80; --n-error-suave:#3e1f1f;
+
+    /* ---------- fijos: objetos de papel que no cambian de tema ---------- */
+    --fijo-tinta:#221d2e;
+    --fijo-tinta-2:#4f485c;
+    --fijo-papel:#fbf7ee;
+    --fijo-blanco:#ffffff;
+    --nota-amarilla:#fff2a8;
+    --nota-lila:#d9ccff;
+    --lampara:#ffcf8a;
+    --lcd-caja:#2b2635; --lcd-borde:#454055; --lcd-pantalla:#0f2a22; --lcd-cifra:#d7ffe9; --lcd-unidad:#8fe6c0; --lcd-pie:#c9c3d8;
+
+    /* ---------- asignaturas: base · tinte · oscuro · noche ----------
+       base   → marcas (puntos, rayas, pegatinas). Nunca fondo de texto.
+       tinte  → fondo de celdas y notas en papel; texto de color en noche.
+       oscuro → texto de color en papel (AA sobre la hoja).
+       noche  → fondo de celdas en noche (26 % de la base sobre la hoja oscura). */
+    --fisio-base:#ff6b5b; --fisio-tinte:#ffa197; --fisio-oscuro:#ad3326; --fisio-noche:#512e30;
+    --bio-base:#8b5cf6;   --bio-tinte:#c3adff;   --bio-oscuro:#5a2ec0;   --bio-noche:#332a58;
+    --lab-base:#2fc796;   --lab-tinte:#86e4c3;   --lab-oscuro:#0d6b4c;   --lab-noche:#1b463f;
+    --gest-base:#f5ad1b;  --gest-tinte:#ffd166;  --gest-oscuro:#7a4f00;  --gest-noche:#4f3f1f;
+    --ipe-base:#3b82f6;   --ipe-tinte:#9cc0ff;   --ipe-oscuro:#1a53b3;   --ipe-noche:#1e3458;
+    --ing-base:#ff8a3d;   --ing-tinte:#ffb685;   --ing-oscuro:#a3460a;   --ing-noche:#513628;
+    --digi-base:#5b7fa3;  --digi-tinte:#adc3da;  --digi-oscuro:#34557a;  --digi-noche:#263343;
+    --sost-base:#5fb83a;  --sost-tinte:#a6dd88;  --sost-oscuro:#336f1a;  --sost-noche:#284228;
+
+    /* asignatura por defecto (sin data-subject): el violeta de Biología */
+    --s-base:var(--bio-base); --s-tinte:var(--bio-tinte); --s-oscuro:var(--bio-oscuro); --s-noche:var(--bio-noche);
+
+    /* ---------- tipografía ---------- */
+    --f-titulo:"Fraunces","Fraunces respaldo",Georgia,serif;
+    --f-texto:"Atkinson Hyperlegible","Atkinson respaldo",system-ui,sans-serif;
+    --f-mono:"Atkinson Hyperlegible Mono","Mono respaldo",ui-monospace,monospace;
+    --f-mano:"Caveat","Segoe Print","Bradley Hand",cursive;
+
+    /* escala fluida (360 px → 1280 px). Nada por debajo de 12 px. */
+    --t-min:.75rem;                                        /* 12 px: solo etiquetas en versalitas */
+    --t-xs:.8125rem;                                       /* 13 */
+    --t-sm:clamp(.875rem,.85rem + .11vw,.9375rem);          /* 14 → 15 */
+    --t-base:clamp(1rem,.96rem + .17vw,1.0625rem);         /* 16 → 17 */
+    --t-lectura:clamp(1.0625rem,1.01rem + .22vw,1.125rem); /* 17 → 18 */
+    --t-lg:clamp(1.1875rem,1.12rem + .3vw,1.375rem);       /* 19 → 22 */
+    --t-xl:clamp(1.5rem,1.24rem + 1.1vw,2rem);             /* 24 → 32 */
+    --t-2xl:clamp(1.75rem,1.3rem + 2vw,2.75rem);           /* 28 → 44 */
+    --t-3xl:clamp(2.375rem,1.45rem + 4.1vw,4.5rem);        /* 38 → 72 */
+    --t-mano:clamp(1.3125rem,1.25rem + .3vw,1.4375rem);    /* 21 → 23 */
+
+    --lh-ajustado:1.02;
+    --lh-titulo:1.1;
+    --lh-texto:1.5;
+    --lh-lectura:1.62;
+    --tr-display:-.03em;
+    --tr-titulo:-.015em;
+    --tr-versal:.12em;
+    --suave:"SOFT" 100;   /* Fraunces redondeada, como tinta en papel */
+
+    /* ---------- espacio (base 4 px) y cuadrícula ---------- */
+    --e-1:4px; --e-2:8px; --e-3:12px; --e-4:16px; --e-5:24px; --e-6:32px; --e-7:48px; --e-8:64px;
+    --cuadro:22px;          /* lado del cuadro del papel */
+    --margen-hoja:28px;     /* donde cae la línea roja */
+    --canal:16px;           /* margen lateral de página */
+    --ancho-lectura:62ch;
+    --ancho-pagina:1040px;
+    --toque:44px;           /* objetivo táctil mínimo */
+
+    /* ---------- radios ---------- */
+    --r-1:4px; --r-2:8px; --r-3:12px; --r-4:20px; --r-pildora:999px;
+    --r-mano:255px 14px 225px 14px/14px 225px 14px 255px;   /* borde dibujado a mano */
+    --r-nota:2px 2px 2px 16px;                              /* esquina de nota adhesiva */
+
+    /* ---------- sombras: neutras, con desplazamiento y desenfoque. Nunca halos de color ---------- */
+    --sombra-1:0 1px 2px rgba(0,0,0,.08);
+    --sombra-nota:0 12px 16px -12px var(--c-sombra),0 1px 2px rgba(0,0,0,.1);
+    --sombra-hoja:0 1px 0 rgba(0,0,0,.06),0 30px 60px -24px rgba(0,0,0,.45),0 6px 14px -8px var(--c-sombra);
+    --sombra-flota:0 12px 30px -12px rgba(0,0,0,.5);
+    --sombra-tecla:0 4px 2px -2px rgba(0,0,0,.28),0 10px 18px -10px rgba(0,0,0,.45);
+
+    /* ---------- capas ---------- */
+    --z-escena:0; --z-hoja:10; --z-pegajoso:20; --z-barra:70; --z-pildora:80; --z-aviso:90; --z-dialogo:100;
+
+    /* ---------- movimiento ---------- */
+    --d-rapida:140ms;    /* hover, pulsación */
+    --d-media:240ms;     /* pestañas, segmentado */
+    --d-lenta:450ms;     /* aviso, hoja que entra */
+    --d-tacha:550ms;     /* casilla que se tacha */
+    --d-trazo:1300ms;    /* pegatina que se dibuja */
+    --ease-salida:cubic-bezier(.23,1,.32,1);   /* por defecto: arranca rápido y frena */
+    --ease-muelle:cubic-bezier(.3,1.5,.5,1);   /* rebote corto: pestañas y notas */
+    --ease-trazo:cubic-bezier(.6,.05,.25,1);   /* bolígrafo */
+    --ease-tacha:cubic-bezier(.7,0,.3,1);
+  }
+
+  /* ---------- tema: papel / noche ----------
+     Por defecto sigue al sistema. data-theme="papel" o "noche" lo fuerza
+     en <html> o en cualquier bloque. */
+  [data-theme="papel"]{color-scheme:light}
+  [data-theme="noche"]{color-scheme:dark}
+
+  /* navegadores con light-dark(): Chrome 123+, Safari 17.5+, Firefox 120+ */
+  @supports (color:light-dark(#000,#fff)){
+    :root,[data-theme]{
+      --c-fondo:light-dark(var(--p-fondo),var(--n-fondo));
+      --c-hoja:light-dark(var(--p-hoja),var(--n-hoja));
+      --c-hoja-2:light-dark(var(--p-hoja-2),var(--n-hoja-2));
+      --c-tinta:light-dark(var(--p-tinta),var(--n-tinta));
+      --c-tinta-2:light-dark(var(--p-tinta-2),var(--n-tinta-2));
+      --c-tinta-3:light-dark(var(--p-tinta-3),var(--n-tinta-3));
+      --c-boli:light-dark(var(--p-boli),var(--n-boli));
+      --c-foco:light-dark(var(--p-foco),var(--n-foco));
+      --c-linea:light-dark(var(--p-linea),var(--n-linea));
+      --c-linea-suave:light-dark(var(--p-linea-suave),var(--n-linea-suave));
+      --c-cuadricula:light-dark(var(--p-cuadricula),var(--n-cuadricula));
+      --c-cuadricula-2:light-dark(var(--p-cuadricula-2),var(--n-cuadricula-2));
+      --c-margen:light-dark(var(--p-margen),var(--n-margen));
+      --c-anilla:light-dark(var(--p-anilla),var(--n-anilla));
+      --c-fluor:light-dark(var(--p-fluor),var(--n-fluor));
+      --c-sombra:light-dark(var(--p-sombra),var(--n-sombra));
+      --c-tarjeta:light-dark(var(--p-tarjeta),var(--n-tarjeta));
+      --c-rotulador:light-dark(var(--p-rotulador),var(--n-rotulador));
+      --c-ok:light-dark(var(--p-ok),var(--n-ok));           --c-ok-suave:light-dark(var(--p-ok-suave),var(--n-ok-suave));
+      --c-aviso:light-dark(var(--p-aviso),var(--n-aviso));  --c-aviso-suave:light-dark(var(--p-aviso-suave),var(--n-aviso-suave));
+      --c-error:light-dark(var(--p-error),var(--n-error));  --c-error-suave:light-dark(var(--p-error-suave),var(--n-error-suave));
+      --c-sobre-tinta:light-dark(#fff,var(--fijo-tinta));   /* texto sobre un relleno de tinta */
+      --c-relleno:light-dark(var(--p-tinta),var(--n-tinta));
+    }
+    :root,[data-theme],[data-subject]{
+      --asig:var(--s-base);
+      --asig-suave:light-dark(var(--s-tinte),var(--s-noche));
+      --asig-texto:light-dark(var(--s-oscuro),var(--s-tinte));
+      --asig-relleno:light-dark(var(--p-tinta),var(--s-tinte));   /* botón principal */
+      --asig-borde:light-dark(var(--s-oscuro),var(--s-tinte));
+    }
+  }
+
+  /* respaldo sin light-dark() (Safari 15 a 17.4): mismo resultado con selectores */
+  @supports not (color:light-dark(#000,#fff)){
+    :root,[data-theme="papel"]{
+      --c-fondo:var(--p-fondo); --c-hoja:var(--p-hoja); --c-hoja-2:var(--p-hoja-2);
+      --c-tinta:var(--p-tinta); --c-tinta-2:var(--p-tinta-2); --c-tinta-3:var(--p-tinta-3);
+      --c-boli:var(--p-boli); --c-foco:var(--p-foco); --c-linea:var(--p-linea); --c-linea-suave:var(--p-linea-suave);
+      --c-cuadricula:var(--p-cuadricula); --c-cuadricula-2:var(--p-cuadricula-2); --c-margen:var(--p-margen); --c-anilla:var(--p-anilla);
+      --c-fluor:var(--p-fluor); --c-sombra:var(--p-sombra); --c-tarjeta:var(--p-tarjeta); --c-rotulador:var(--p-rotulador);
+      --c-ok:var(--p-ok); --c-ok-suave:var(--p-ok-suave); --c-aviso:var(--p-aviso); --c-aviso-suave:var(--p-aviso-suave); --c-error:var(--p-error); --c-error-suave:var(--p-error-suave);
+      --c-sobre-tinta:#fff; --c-relleno:var(--p-tinta);
+    }
+    :root,[data-theme="papel"],[data-subject]{
+      --asig:var(--s-base); --asig-suave:var(--s-tinte); --asig-texto:var(--s-oscuro); --asig-relleno:var(--p-tinta); --asig-borde:var(--s-oscuro);
+    }
+    [data-theme="noche"]{
+      --c-fondo:var(--n-fondo); --c-hoja:var(--n-hoja); --c-hoja-2:var(--n-hoja-2);
+      --c-tinta:var(--n-tinta); --c-tinta-2:var(--n-tinta-2); --c-tinta-3:var(--n-tinta-3);
+      --c-boli:var(--n-boli); --c-foco:var(--n-foco); --c-linea:var(--n-linea); --c-linea-suave:var(--n-linea-suave);
+      --c-cuadricula:var(--n-cuadricula); --c-cuadricula-2:var(--n-cuadricula-2); --c-margen:var(--n-margen); --c-anilla:var(--n-anilla);
+      --c-fluor:var(--n-fluor); --c-sombra:var(--n-sombra); --c-tarjeta:var(--n-tarjeta); --c-rotulador:var(--n-rotulador);
+      --c-ok:var(--n-ok); --c-ok-suave:var(--n-ok-suave); --c-aviso:var(--n-aviso); --c-aviso-suave:var(--n-aviso-suave); --c-error:var(--n-error); --c-error-suave:var(--n-error-suave);
+      --c-sobre-tinta:var(--fijo-tinta); --c-relleno:var(--n-tinta);
+    }
+    [data-theme="noche"],[data-theme="noche"] [data-subject]{
+      --asig-suave:var(--s-noche); --asig-texto:var(--s-tinte); --asig-relleno:var(--s-tinte); --asig-borde:var(--s-tinte);
+    }
+    @media (prefers-color-scheme:dark){
+      :root:not([data-theme="papel"]){
+        --c-fondo:var(--n-fondo); --c-hoja:var(--n-hoja); --c-hoja-2:var(--n-hoja-2);
+        --c-tinta:var(--n-tinta); --c-tinta-2:var(--n-tinta-2); --c-tinta-3:var(--n-tinta-3);
+        --c-boli:var(--n-boli); --c-foco:var(--n-foco); --c-linea:var(--n-linea); --c-linea-suave:var(--n-linea-suave);
+        --c-cuadricula:var(--n-cuadricula); --c-cuadricula-2:var(--n-cuadricula-2); --c-margen:var(--n-margen); --c-anilla:var(--n-anilla);
+        --c-fluor:var(--n-fluor); --c-sombra:var(--n-sombra); --c-tarjeta:var(--n-tarjeta); --c-rotulador:var(--n-rotulador);
+        --c-ok:var(--n-ok); --c-ok-suave:var(--n-ok-suave); --c-aviso:var(--n-aviso); --c-aviso-suave:var(--n-aviso-suave); --c-error:var(--n-error); --c-error-suave:var(--n-error-suave);
+        --c-sobre-tinta:var(--fijo-tinta); --c-relleno:var(--n-tinta);
+      }
+      :root:not([data-theme="papel"]),:root:not([data-theme="papel"]) [data-subject]{
+        --asig-suave:var(--s-noche); --asig-texto:var(--s-tinte); --asig-relleno:var(--s-tinte); --asig-borde:var(--s-tinte);
+      }
+    }
+  }
+
+  /* ---------- una asignatura, un color ---------- */
+  [data-subject="fisio"]{--s-base:var(--fisio-base);--s-tinte:var(--fisio-tinte);--s-oscuro:var(--fisio-oscuro);--s-noche:var(--fisio-noche)}
+  [data-subject="bio"]{--s-base:var(--bio-base);--s-tinte:var(--bio-tinte);--s-oscuro:var(--bio-oscuro);--s-noche:var(--bio-noche)}
+  [data-subject="lab"]{--s-base:var(--lab-base);--s-tinte:var(--lab-tinte);--s-oscuro:var(--lab-oscuro);--s-noche:var(--lab-noche)}
+  [data-subject="gest"]{--s-base:var(--gest-base);--s-tinte:var(--gest-tinte);--s-oscuro:var(--gest-oscuro);--s-noche:var(--gest-noche)}
+  [data-subject="ipe"]{--s-base:var(--ipe-base);--s-tinte:var(--ipe-tinte);--s-oscuro:var(--ipe-oscuro);--s-noche:var(--ipe-noche)}
+  [data-subject="ing"]{--s-base:var(--ing-base);--s-tinte:var(--ing-tinte);--s-oscuro:var(--ing-oscuro);--s-noche:var(--ing-noche)}
+  [data-subject="digi"]{--s-base:var(--digi-base);--s-tinte:var(--digi-tinte);--s-oscuro:var(--digi-oscuro);--s-noche:var(--digi-noche)}
+  [data-subject="sost"]{--s-base:var(--sost-base);--s-tinte:var(--sost-tinte);--s-oscuro:var(--sost-oscuro);--s-noche:var(--sost-noche)}
+
+  /* pulsado: la base algo más oscura, calculada (Chrome 119+, Safari 18+); si no, el oscuro */
+  :root,[data-subject]{--asig-pulsado:var(--s-oscuro)}
+  @supports (color:oklch(from red l c h)){
+    :root,[data-subject]{--asig-pulsado:oklch(from var(--s-base) calc(l - .12) c h)}
+  }
+
+  @media (min-width:760px){
+    :root{--cuadro:24px;--margen-hoja:53px;--canal:28px}
+  }
+
+  /* movimiento reducido: todo instantáneo; base.css corta además animaciones sueltas */
+  @media (prefers-reduced-motion:reduce){
+    :root{--d-rapida:0ms;--d-media:0ms;--d-lenta:0ms;--d-tacha:0ms;--d-trazo:0ms}
+  }
+}
