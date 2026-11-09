@@ -11,5 +11,5 @@
   const bar=document.createElement("div");bar.id="readbar";bar.setAttribute("aria-hidden","true");document.body.appendChild(bar);
   let tick=false;const upd=()=>{tick=false;const h=document.documentElement.scrollHeight-innerHeight;bar.style.setProperty("--p",h>0?Math.min(1,scrollY/h):0)};
   addEventListener("scroll",()=>{if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});addEventListener("resize",upd);upd();
-  if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../../sw.js").catch(()=>{}));
+  {const s=document.createElement("script");s.src="../../assets/sw-register.js";s.defer=true;document.head.appendChild(s);}  /* service worker, aviso de versión nueva y persist() */
 })();

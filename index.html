@@ -275,7 +275,7 @@ drawNav();route(false);
 (function(){tsapcCopia.iniciar({storage:localStorage,msg:document.getElementById("bkMsg"),botonGuardar:document.getElementById("bkSave"),entradaArchivo:document.getElementById("bkLoad"),botonCopiar:document.getElementById("bkCopy")});
   let prompt;const ins=document.getElementById("install");addEventListener("beforeinstallprompt",e=>{e.preventDefault();prompt=e;ins.hidden=false});
   ins.addEventListener("click",async()=>{if(!prompt)return;prompt.prompt();await prompt.userChoice;prompt=null;ins.hidden=true});
-  if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))})();
+  {const s=document.createElement("script");s.src="assets/sw-register.js";s.defer=true;document.head.appendChild(s);}})();  /* service worker, aviso de versión nueva y persist() */
 
 /* La lente: el tejido se pinta una vez y cada fotograma solo copia un círculo ampliado */
 (function(){const hero=document.getElementById("hero"),cv=document.getElementById("lens"),ctx=cv.getContext("2d");
@@ -313,7 +313,7 @@ drawNav();route(false);
   let rs;addEventListener("resize",()=>{clearTimeout(rs);rs=setTimeout(()=>{lx=lx*hero.clientWidth/W;ly=ly*hero.clientHeight/H;paint()},150)});
   paint();start();window.heroLens={stop(){dead=true;cv.hidden=true},resume(){dead=false;cv.hidden=false;paint();start()},grow(from){const end=R;R=from;return{get r(){return R},set r(v){R=v;if(still)draw()},end}}}})();
 </script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js" integrity="sha384-5UGTcMIxVUKFeJH0zOS3lqMAZNBG+fCXJbi3UglUq6ABO4MQJu6rxNa+MPP+qtwq" crossorigin="anonymous"></script>
 <script>
 /* Hélice de portaobjetos en 3D: uno por examen, con su muestra. Si no hay WebGL se queda la lente 2D */
 (function(){if(!window.THREE)return;
@@ -391,8 +391,8 @@ drawNav();route(false);
   addEventListener("scroll",()=>{if(still&&seen)requestAnimationFrame(frame)},{passive:true});
   window.hero3D={slides,pick}})();
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
 <script>
 // Todo es visible sin GSAP; la animación solo se añade si la librería carga pronto y el movimiento está permitido
 if(window.gsap&&window.ScrollTrigger&&performance.now()<1200&&!matchMedia("(prefers-reduced-motion: reduce)").matches){

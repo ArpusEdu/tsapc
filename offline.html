@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sin conexión · tsapc</title>
+<meta name="theme-color" content="#0b0d12">
+<style>
+  :root{color-scheme:dark;--bg:#0b0d12;--ink:#f3ede2;--soft:#c9c1b3;--lamp:#ffcf8a;--line:rgba(243,237,226,.16)}
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+  main{max-width:560px;margin:0 auto;padding:max(48px,env(safe-area-inset-top)) 20px 40px}
+  .dot{width:12px;height:12px;border-radius:50%;background:var(--lamp);margin-bottom:22px}
+  h1{font:600 clamp(32px,9vw,46px)/1.05 Georgia,serif;letter-spacing:-.02em;margin:0 0 12px}
+  p{color:var(--soft);margin:0 0 16px}
+  button,a.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;border:0;background:var(--lamp);color:#14110d;font:700 16px system-ui,sans-serif;text-decoration:none;cursor:pointer}
+  h2{font:600 20px Georgia,serif;margin:34px 0 10px}
+  ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  li a{display:flex;min-height:48px;align-items:center;padding:0 16px;border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none}
+  li a:hover,li a:focus-visible{background:rgba(243,237,226,.06)}
+  :focus-visible{outline:3px solid var(--lamp);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <div class="dot" aria-hidden="true"></div>
+  <h1>Sin conexión</h1>
+  <p>Esta página no estaba guardada en el móvil. Tu progreso está a salvo: se guarda en este navegador y no depende de internet.</p>
+  <button type="button" id="retry">Reintentar</button>
+  <h2>Lo que puedes abrir sin internet</h2>
+  <ul id="list"><li><a id="home" href="/tsapc/">Inicio</a></li></ul>
+</main>
+<script>
+  document.getElementById("retry").addEventListener("click", function () { location.reload(); });
+  /* lista las páginas que ya están guardadas (repasos, simulacros…) */
+  (async function () {
+    if ("serviceWorker" in navigator) { var reg = await navigator.serviceWorker.getRegistration(); if (reg) document.getElementById("home").href = reg.scope; }
+    if (!("caches" in self)) return;
+    var nombres = { repaso: "Repaso", simulacro: "Simulacro", vocabulario: "Vocabulario", examen: "Examen", banco: "Banco de preguntas", "test-50": "Test 50", "test-50-b": "Test 50 B", "examen-vocabulario": "Examen de vocabulario", "simulacro-vocabulario": "Simulacro de vocabulario" };
+    var vistas = {}, items = [];
+    for (var n of await caches.keys()) {
+      if (n.indexOf("tsapc-app-") !== 0) continue;
+      var c = await caches.open(n);
+      for (var r of await c.keys()) {
+        if (new URL(r.url).origin !== location.origin) continue;
+        var m = new URL(r.url).pathname.match(/\/([a-z0-9-]+)\/([a-z0-9-]+)\/$/);
+        if (!m || vistas[m[0]]) continue; vistas[m[0]] = 1;
+        var u = m[1].replace("ipe-tema", "ipe").replace(/^([a-z]+)(\d+)$/, function (_, a, n) { return ({ bio: "Bio", fisio: "Fisio", gest: "Gest", ipe: "IPE", ingles: "Inglés", lab: "Lab" }[a] || a) + " " + n; });
+        items.push([u + " · " + (nombres[m[2]] || m[2]), r.url]);
+      }
+    }
+    items.sort(function (a, b) { return a[0].localeCompare(b[0], "es"); });
+    var ul = document.getElementById("list");
+    items.forEach(function (it) { var li = document.createElement("li"), a = document.createElement("a"); a.href = it[1]; a.textContent = it[0]; li.appendChild(a); ul.appendChild(li); });
+  })().catch(function () {});
+</script>
+</body>
+</html>
