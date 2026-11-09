@@ -8,7 +8,7 @@
 })(typeof self !== "undefined" ? self : this, function () {
   const APP = "tsapc", FORMATO = 1;
   const BACKUP_KEY = "tsapc:backup-antes-de-importar";
-  const MAX_BYTES = 5 * 1024 * 1024;
+  const MAX_BYTES = 5 * 1024 * 1024;   /* 5 MB: hay copias reales de más de 1 MB; bajar el límite podría impedir restaurarlas */
   const MAX_CLAVES = 5000, MAX_LARGO_CLAVE = 200;
   /* Ruido: solo la copia automática que crea el propio importador (evita copias dentro de copias). */
   /* tsapc:backup-v1 y tsapc:v2-corrupto duplican claves que ya van en la copia */
@@ -20,7 +20,7 @@
     /^(eng|lab)-[a-z0-9-]+$/,                                       /* eng-u12-exam-v2, lab-u1-test50... */
     /^plan-estudio-v\d+-[a-z0-9-]+$/,                                /* planificador de cada repaso */
     /^pos:\/tsapc\//,                                                /* posición de lectura */
-    /^tsapc:/, /^corte:/                                             /* rediseño Corte */
+    /^tsapc:/                                                        /* rediseño Corte (tsapc:v2…) */
   ];
   const permitida = k => PERMITIDAS.some(r => r.test(k));
 

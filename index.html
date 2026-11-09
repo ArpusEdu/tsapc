@@ -263,7 +263,7 @@ function render(){const s=q.value.trim();
   setCurrent();window.revealSlides&&window.revealSlides()}
 /* La dirección manda: #por-preparar, #a-asignatura o #examen, para que el botón atrás funcione */
 function route(scroll){const h=location.hash.slice(1);
-  if(h&&VIEWS[h]){view=h;q.value="";document.body.classList.add("detail");render();if(scroll&&isMobile())scrollTo(0,0);return}
+  if(h&&Object.prototype.hasOwnProperty.call(VIEWS,h)){view=h;q.value="";document.body.classList.add("detail");render();if(scroll&&isMobile())scrollTo(0,0);return}
   const e=EX.find(x=>x.id===h);
   if(e){q.value="";view="a-"+slug(e.asig);document.body.classList.add("detail");render();const el=document.getElementById(e.id);el&&el.scrollIntoView();return}
   document.body.classList.remove("detail");view=VIEW_TODO;render()}
