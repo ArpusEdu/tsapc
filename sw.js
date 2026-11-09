@@ -7,13 +7,16 @@
    No se activa solo: la página enseña «Nueva versión» y, al pulsar «Actualizar», manda SKIP_WAITING.
    Si una instalación no consigue bajar lo esencial, falla y sigue el service worker anterior.
    La versión se calcula con: node scripts/sw-version.mjs */
-const VERSION = "d5cc59e9242c";
+const VERSION = "fe26ce02cb09";
 const APP = "tsapc-app-" + VERSION, MEDIA = "tsapc-media", MEDIA_MAX = 120, OFFLINE = "offline.html";
-const SHELL = ["./", "offline.html", "manifest.webmanifest", "assets/copia.js", "assets/sw-register.js", "assets/especimen.js", "assets/practica.css", "assets/practica.js", "assets/repaso.css", "assets/repaso.js", "assets/unidades.css", "bio1/repaso/", "bio1/simulacro/", "bio2/repaso/", "bio2/simulacro/", "bio3/repaso/", "bio3/simulacro/", "fisio1/repaso/", "fisio1/simulacro/", "fisio2/repaso/", "fisio2/simulacro/", "fisio3/repaso/", "fisio3/simulacro/", "gest1/repaso/", "gest1/simulacro/", "gest2/repaso/", "gest2/simulacro/", "ingles1/examen-vocabulario/", "ingles1/examen/", "ingles1/repaso/", "ingles1/simulacro-vocabulario/", "ingles1/simulacro/", "ingles1/vocabulario/", "ipe-tema5/repaso/", "ipe-tema5/simulacro/", "ipe2/repaso/", "ipe2/simulacro/", "lab1/banco/", "lab1/repaso/", "lab1/test-50-b/", "lab1/test-50/", "lab2/repaso/", "lab2/simulacro/", "assets/logo.svg", "assets/icon-192.png", "assets/icon-512.png", "app/", "app/app.js", "app/app.css", "app/datos.js", "app/logica.js", "app/manifest.webmanifest", "assets/store.js", "assets/corte/tokens.css", "assets/corte/base.css", "assets/corte/texturas.css", "assets/corte/componentes.css", "assets/corte/iconos.svg", "docs/corte/agenda-2026-27.json", "assets/corte/fuentes/atkinson-400-italic.woff2", "assets/corte/fuentes/atkinson-400.woff2", "assets/corte/fuentes/atkinson-700.woff2", "assets/corte/fuentes/atkinson-mono-var.woff2", "assets/corte/fuentes/caveat-600.woff2", "assets/corte/fuentes/fraunces-italic-500.woff2", "assets/corte/fuentes/fraunces-var.woff2"];
+const SHELL = ["./", "offline.html", "manifest.webmanifest", "assets/copia.js", "assets/sw-register.js", "assets/especimen.js", "assets/practica.css", "assets/practica.js", "assets/repaso.css", "assets/repaso.js", "assets/unidades.css", "bio1/repaso/", "bio1/simulacro/", "bio2/repaso/", "bio2/simulacro/", "bio3/repaso/", "bio3/simulacro/", "fisio1/repaso/", "fisio1/simulacro/", "fisio2/repaso/", "fisio2/simulacro/", "fisio3/repaso/", "fisio3/simulacro/", "gest1/repaso/", "gest1/simulacro/", "gest2/repaso/", "gest2/simulacro/", "ingles1/examen-vocabulario/", "ingles1/examen/", "ingles1/repaso/", "ingles1/simulacro-vocabulario/", "ingles1/simulacro/", "ingles1/vocabulario/", "ipe-tema5/repaso/", "ipe-tema5/simulacro/", "ipe2/repaso/", "ipe2/simulacro/", "lab1/banco/", "lab1/repaso/", "lab1/test-50-b/", "lab1/test-50/", "lab2/repaso/", "lab2/simulacro/", "assets/logo.svg", "assets/icon-192.png", "assets/icon-512.png", "app/", "app/app.js", "app/quiz.js", "app/sm2.js", "app/estudio.js", "app/preguntas/bio1.json", "app/preguntas/bio2.json", "app/preguntas/bio3.json", "app/preguntas/fisio1.json", "app/preguntas/fisio2.json", "app/preguntas/fisio3.json", "app/preguntas/gest1.json", "app/preguntas/gest2.json", "app/preguntas/ingles1.json", "app/preguntas/ipe2.json", "app/preguntas/ipe-tema5.json", "app/preguntas/lab1.json", "app/preguntas/lab2.json", "app/app.css", "app/datos.js", "app/logica.js", "app/manifest.webmanifest", "assets/store.js", "assets/corte/tokens.css", "assets/corte/base.css", "assets/corte/texturas.css", "assets/corte/componentes.css", "assets/corte/iconos.svg", "docs/corte/agenda-2026-27.json", "assets/corte/fuentes/atkinson-400-italic.woff2", "assets/corte/fuentes/atkinson-400.woff2", "assets/corte/fuentes/atkinson-700.woff2", "assets/corte/fuentes/atkinson-mono-var.woff2", "assets/corte/fuentes/caveat-600.woff2", "assets/corte/fuentes/fraunces-italic-500.woff2", "assets/corte/fuentes/fraunces-var.woff2"];
 /* sin esto no se instala: la portada, la página sin conexión y el código común */
 const ESENCIAL = ["./", "offline.html", "manifest.webmanifest", "assets/copia.js", "assets/sw-register.js", "assets/practica.css", "assets/practica.js", "assets/repaso.css", "assets/repaso.js", "assets/unidades.css"];
 /* otros sitios cuyos archivos se guardan (fuentes y librerías); el resto pasa sin tocar */
-const ORIGENES = ["https://fonts.googleapis.com", "https://fonts.gstatic.com", "https://cdnjs.cloudflare.com", "https://cdn.jsdelivr.net", "https://unpkg.com"];
+const ORIGENES = ["https://fonts.googleapis.com", "https://fonts.gstatic.com", "https://cdnjs.cloudflare.com", "https://cdn.jsdelivr.net"];
+/* cajones propios (los de ahora y los nombres que usaron versiones anteriores de esta web); el dominio se comparte con otros proyectos */
+const PROPIOS = /^tsapc-(app-[0-9a-f]{12}|media|[0-9a-f]{8}|copia2|lab2a1c7)$/;
+const esNuestra = (u) => u.origin === SCOPE.origin ? u.pathname.startsWith(SCOPE.pathname) : ORIGENES.includes(u.origin);
 const SCOPE = new URL("./", self.location);
 const MEDIA_RE = /\.(pdf|png|jpe?g|webp|avif|gif|svg|ico|woff2?|ttf|otf|mp3|mp4|webm)$/i;
 const SEMANA = 7 * 24 * 3600 * 1000;
@@ -38,12 +41,13 @@ self.addEventListener("activate", (e) => {
     try {
       const app = await caches.open(APP), media = await caches.open(MEDIA);
       for (const name of await caches.keys()) {
-        if (!name.startsWith("tsapc-") || name === APP || name === MEDIA) continue;
+        if (!PROPIOS.test(name) || name === APP || name === MEDIA) continue;
         try {
           const old = await caches.open(name);
           for (const req of await old.keys()) {
             try {
               const u = new URL(req.url), dest = isMedia(u) ? media : app;
+              if (!esNuestra(u)) continue;
               if (await dest.match(req)) continue;
               const res = await old.match(req);
               if (!res || res.status !== 200) continue;
@@ -101,7 +105,7 @@ self.addEventListener("fetch", (e) => {
 async function fromMedia(r, e) {
   if (r.headers.has("range")) return fetch(r);                      // vídeo y audio a trozos: directo de la red
   const media = await caches.open(MEDIA);
-  const hit = (await media.match(r)) || (await caches.match(r));    // los iconos precargados están en APP
+  const hit = (await media.match(r)) || (await (await caches.open(APP)).match(r));    // los iconos precargados están en APP (nunca cachés ajenas)
   if (hit) {
     const viejo = Date.now() - usado(hit) / 1000 > SEMANA;
     e.waitUntil((async () => {
@@ -117,7 +121,7 @@ async function fromMedia(r, e) {
     if (res.status === 200 && res.type !== "opaque") e.waitUntil(guardar(media, r, res.clone()).catch(() => {}));
     return res;
   } catch (err) {
-    if (r.mode === "navigate") { const off = await caches.match(urlDe(OFFLINE)); if (off) return off; }
+    if (r.mode === "navigate") { const off = await (await caches.open(APP)).match(urlDe(OFFLINE)); if (off) return off; }
     throw err;
   }
 }
@@ -133,7 +137,9 @@ async function staleWhileRevalidate(r, e) {
 /* páginas, estilos y scripts: primero la red para ver siempre lo último; si falla o tarda 3,5 s, lo guardado */
 async function networkFirst(r, e) {
   const app = await caches.open(APP);
-  const net = fetch(r).then((res) => { if (res.ok) return app.put(r, res.clone()).catch(() => {}).then(() => res); return res; });
+  /* las navegaciones se guardan sin «?…»: con ?x=1…N la caché no crece */
+  const clave = r.mode === "navigate" ? (() => { const u = new URL(r.url); u.search = ""; return u.href; })() : r;
+  const net = fetch(r).then((res) => { if (res.ok) return app.put(clave, res.clone()).catch(() => {}).then(() => res); return res; });
   e.waitUntil(net.catch(() => {}));
   const late = new Promise((ok) => setTimeout(() => ok(null), 3500));
   try { const res = await Promise.race([net, late]); if (res) return res; } catch (_) {}

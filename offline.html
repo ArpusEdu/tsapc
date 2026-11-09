@@ -34,15 +34,17 @@
   document.getElementById("retry").addEventListener("click", function () { location.reload(); });
   /* lista las páginas que ya están guardadas (repasos, simulacros…) */
   (async function () {
-    if ("serviceWorker" in navigator) { var reg = await navigator.serviceWorker.getRegistration(); if (reg) document.getElementById("home").href = reg.scope; }
+    /* solo lo de esta web: el dominio se comparte con otros proyectos (carpeta del registro, /tsapc/ por defecto) */
+    var carpeta = "/tsapc/";
+    if ("serviceWorker" in navigator) { var reg = await navigator.serviceWorker.getRegistration(); if (reg) { document.getElementById("home").href = reg.scope; carpeta = new URL(reg.scope).pathname; } }
     if (!("caches" in self)) return;
     var nombres = { repaso: "Repaso", simulacro: "Simulacro", vocabulario: "Vocabulario", examen: "Examen", banco: "Banco de preguntas", "test-50": "Test 50", "test-50-b": "Test 50 B", "examen-vocabulario": "Examen de vocabulario", "simulacro-vocabulario": "Simulacro de vocabulario" };
     var vistas = {}, items = [];
     for (var n of await caches.keys()) {
-      if (n.indexOf("tsapc-app-") !== 0) continue;
+      if (!/^tsapc-app-[0-9a-f]{12}$/.test(n)) continue;
       var c = await caches.open(n);
       for (var r of await c.keys()) {
-        if (new URL(r.url).origin !== location.origin) continue;
+        if (new URL(r.url).origin !== location.origin || new URL(r.url).pathname.indexOf(carpeta) !== 0) continue;
         var m = new URL(r.url).pathname.match(/\/([a-z0-9-]+)\/([a-z0-9-]+)\/$/);
         if (!m || vistas[m[0]]) continue; vistas[m[0]] = 1;
         var u = m[1].replace("ipe-tema", "ipe").replace(/^([a-z]+)(\d+)$/, function (_, a, n) { return ({ bio: "Bio", fisio: "Fisio", gest: "Gest", ipe: "IPE", ingles: "Inglés", lab: "Lab" }[a] || a) + " " + n; });

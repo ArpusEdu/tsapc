@@ -89,13 +89,15 @@ test("al activar borra cajones viejos, rescata imágenes y PDF y no toca cachés
   await old.put(SCOPE + "files/tema.pdf", new Response("pdf"));
   await old.put(SCOPE + "assets/logo.png", new Response("png"));
   await old.put(SCOPE + "bio1/repaso/", new Response("viejo"));
-  await env.caches.open("tsapc-app-antigua");
+  await env.caches.open("tsapc-app-0123456789ab");
   await env.caches.open("otra-web");
+  const ajena = await env.caches.open("tsapc-de-otro-proyecto"); await ajena.put("https://arpusedu.github.io/otro/x.pdf", new Response("suyo"));
   await fire("install"); await fire("activate");
   const names = await env.caches.keys();
   assert.equal(await (await env.stores.get("tsapc-app-" + VERSION).match(SCOPE + "bio1/repaso/")).text(), "contenido de bio1/repaso/", "la página nueva gana a la vieja");
-  assert.ok(!names.includes("tsapc-copia2") && !names.includes("tsapc-app-antigua"));
+  assert.ok(!names.includes("tsapc-copia2") && !names.includes("tsapc-app-0123456789ab"));
   assert.ok(names.includes("otra-web"), "no toca lo que no es suyo");
+  assert.ok(names.includes("tsapc-de-otro-proyecto"), "un cajón que empieza por tsapc- pero no es de esta web no se toca");
   const media = env.stores.get("tsapc-media");
   assert.equal(await (await media.match(SCOPE + "files/tema.pdf")).text(), "pdf");
   assert.ok(await media.match(SCOPE + "assets/logo.png"));
@@ -223,4 +225,48 @@ test("abrir un PDF sin conexión que no está guardado lleva a «Sin conexión»
   await fire("install"); await fire("activate");
   env.online = false;
   assert.equal(await (await fire("fetch", { request: get("files/nuevo.pdf", "navigate") })).text(), "contenido de offline.html");
+});
+
+test("al activar solo rescata entradas de nuestra carpeta (el dominio se comparte)", async () => {
+  makeEnv({ files: allShell() });
+  const old = await env.caches.open("tsapc-media");
+  const vieja = await env.caches.open("tsapc-4e2a1b8c");
+  await vieja.put("https://arpusedu.github.io/otro/pagina/", new Response("de otro"));
+  await vieja.put("https://arpusedu.github.io/otro/foto.png", new Response("de otro"));
+  await vieja.put(SCOPE + "files/mio.pdf", new Response("mio"));
+  await fire("install"); await fire("activate");
+  const app = env.stores.get("tsapc-app-" + VERSION), media = env.stores.get("tsapc-media");
+  assert.equal(await app.match("https://arpusedu.github.io/otro/pagina/"), undefined);
+  assert.equal(await media.match("https://arpusedu.github.io/otro/foto.png"), undefined);
+  assert.equal(await (await media.match(SCOPE + "files/mio.pdf")).text(), "mio");
+  assert.ok(!(await env.caches.keys()).includes("tsapc-4e2a1b8c"), "el cajón antiguo propio se borra");
+  assert.ok(old);
+});
+
+test("un archivo que solo está en una caché ajena del mismo dominio no se sirve", async () => {
+  makeEnv({ files: allShell() });
+  await fire("install"); await fire("activate");
+  const ajena = await env.caches.open("cache-de-otro-proyecto");
+  await ajena.put(SCOPE + "assets/trampa.png", new Response("ajeno"));
+  env.online = false;
+  await assert.rejects(fire("fetch", { request: get("assets/trampa.png") }));
+});
+
+test("las navegaciones con ?x=1…N se guardan una sola vez, sin el «?»", async () => {
+  makeEnv({ files: allShell() });
+  await fire("install"); await fire("activate");
+  const app = env.stores.get("tsapc-app-" + VERSION), antes = (await app.keys()).length;
+  for (let i = 1; i <= 5; i++) await fire("fetch", { request: get("bio1/repaso/?x=" + i, "navigate") });
+  const keys = (await app.keys()).map((k) => k.url);
+  assert.equal(keys.length, antes);
+  assert.ok(!keys.some((k) => k.includes("?x=")));
+  env.online = false;
+  assert.equal(await (await fire("fetch", { request: get("bio1/repaso/?x=9", "navigate") })).text(), "contenido de bio1/repaso/");
+});
+
+test("unpkg.com ya no es un origen previsto", async () => {
+  makeEnv({ files: allShell() });
+  await fire("install"); await fire("activate");
+  assert.ok(!SRC.includes("unpkg.com"));
+  assert.equal(await fire("fetch", { request: new Request("https://unpkg.com/x@1.0.0/x.js") }), undefined);
 });

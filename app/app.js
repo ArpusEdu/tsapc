@@ -41,7 +41,7 @@
   /* ---------- piezas ---------- */
   var A = D.ASIGNATURAS;
   function ico(id, cls) { return '<svg class="ico' + (cls ? " " + cls : "") + '" aria-hidden="true"><use href="' + SPR + "i-" + id + '"/></svg>'; }
-  function pegatina(nombre, s, cls) { return '<svg class="pegatina dibujar ' + (cls || "") + '" data-subject="' + s + '" viewBox="0 0 80 80" aria-hidden="true"><use href="' + SPR + "st-" + nombre + '"/></svg>'; }
+  function pegatina(nombre, s, cls) { return '<svg class="pegatina dibujar ' + (cls || "") + '" data-subject="' + esc(s) + '" viewBox="0 0 80 80" aria-hidden="true"><use href="' + SPR + "st-" + nombre + '"/></svg>'; }
   function titulo(html) { return '<h1 id="titulo" tabindex="-1">' + html + "</h1>"; }
   function ruta(items) {
     return '<nav aria-label="Estás en"><ol class="ruta">' + items.map(function (it, i) {
@@ -107,13 +107,13 @@
       var dentro = '<span class="punto" aria-hidden="true"></span><span class="etq">' + etq + '</span><span class="que">' + esc(S1.ab + " · " + urg.titulo.replace(/^Examen · /, "") + (urg.provisional ? " (provisional)" : "")) + '</span><span class="cuenta num" data-cuenta="' + esc(urg.id) + '"></span>';
       var lbl = "Lo más urgente: " + urg.titulo + ", " + S1.nombre + (urg.provisional ? ". " + PROV_TXT : "");
       pild = urg.tipo === "entrega" && urg.fecha === k
-        ? '<button type="button" class="pildora-hoy" data-subject="' + urg.s + '" data-ir="t-' + esc(urg.id) + '" aria-label="' + esc(lbl) + '. Ir a la tarea.">' + dentro + "</button>"
-        : '<a class="pildora-hoy" data-subject="' + urg.s + '" href="' + (urg.unidad ? "#/unidad/" + esc(urg.unidad) : "#/agenda/calendario") + '" aria-label="' + esc(lbl) + '">' + dentro + "</a>";
+        ? '<button type="button" class="pildora-hoy" data-subject="' + esc(urg.s) + '" data-ir="t-' + esc(urg.id) + '" aria-label="' + esc(lbl) + '. Ir a la tarea.">' + dentro + "</button>"
+        : '<a class="pildora-hoy" data-subject="' + esc(urg.s) + '" href="' + (urg.unidad ? "#/unidad/" + esc(urg.unidad) : "#/agenda/calendario") + '" aria-label="' + esc(lbl) + '">' + dentro + "</a>";
     } else pild = '<span class="pildora-hoy vacia"><span class="punto" aria-hidden="true"></span><span class="que">Nada urgente pendiente</span></span>';
 
     var tareas = hoy.map(function (e) {
       var on = !!h[e.id], S1 = A[e.s];
-      return '<li class="tarea' + (on ? " hecha" : "") + '" id="t-' + esc(e.id) + '" data-subject="' + e.s + '">' +
+      return '<li class="tarea' + (on ? " hecha" : "") + '" id="t-' + esc(e.id) + '" data-subject="' + esc(e.s) + '">' +
         '<button class="casilla" type="button" role="checkbox" aria-checked="' + on + '" data-tarea="' + esc(e.id) + '" aria-label="Marcar como hecha: ' + esc(e.titulo) + ", " + S1.nombre + '">' + CASILLA + "</button>" +
         '<div><div class="meta">' + (e.hora ? '<span class="hora">' + esc(L.hora(e.hora, fmtHora() === "ambas" ? "24" : fmtHora())) + "</span>" : "") + '<span class="asig-nombre">' + S1.nombre + "</span></div>" +
         '<span class="titulo-w"><span class="titulo">' + esc(e.titulo) + '</span></span><div class="queda" data-queda="' + esc(e.id) + '"></div>' +
@@ -123,7 +123,7 @@
     var bloqueEx;
     if (ex) {
       var SE = A[ex.s], nom = ex.titulo.replace(/^Examen · /, "");
-      bloqueEx = '<div class="recuadro" data-subject="' + ex.s + '"><span class="washi" aria-hidden="true"></span>' +
+      bloqueEx = '<div class="recuadro" data-subject="' + esc(ex.s) + '"><span class="washi" aria-hidden="true"></span>' +
         '<div class="cuando">' + SE.nombre + " · " + (ex.tipo === "oral" ? "oral" : "examen") + " · " + L.diaRelativo(ex.date, n).toLowerCase() + "</div>" +
         '<h3 class="ex-nombre"><span class="fluor asig">' + esc(nom) + "</span></h3>" + (ex.provisional ? '<p class="ex-prov">' + provisional(ex) + "</p>" : "") +
         '<p class="ex-det">' + L.may(L.fechaLarga(ex.date)) + (ex.claseHora ? ", en tu hora de clase: " + L.hora(ex.claseHora, fmtHora()) : "") + "." + (prof(ex.s) ? " Con " + esc(prof(ex.s)) + "." : "") + "</p>" + (ex.nota && ex.provisional ? '<p class="ex-nota">' + ico("info") + "<span>" + esc(ex.nota) + "</span>" + "</p>" : "") +
@@ -139,9 +139,9 @@
       var kk = L.clave(dt), esHoy = kk === k, inf = L.infoDia(AG.calendario, EVS, kk);
       var items = inf.evs.map(function (e) {
         var pre = e.tipo === "examen" ? "Examen: " : e.tipo === "oral" ? "Oral: " : "";
-        return '<li data-subject="' + e.s + '" class="' + (h[e.id] ? "tachada" : "") + '" data-sem="' + esc(e.id) + '"><b>' + A[e.s].ab + "</b> " + esc(pre + e.titulo.replace(/^Examen · /, "")) + (h[e.id] ? '<span class="sr"> (hecha)</span>' : "") + (e.provisional ? " " + provisional(e, true) : "") + "</li>";
+        return '<li data-subject="' + esc(e.s) + '" class="' + (h[e.id] ? "tachada" : "") + '" data-sem="' + esc(e.id) + '"><b>' + A[e.s].ab + "</b> " + esc(pre + e.titulo.replace(/^Examen · /, "")) + (h[e.id] ? '<span class="sr"> (hecha)</span>' : "") + (e.provisional ? " " + provisional(e, true) : "") + "</li>";
       }).join("");
-      return '<li class="sem-dia' + (esHoy ? " es-hoy" : "") + (inf.cls.length ? " " + inf.cls.join(" ") : "") + '"><div class="sem-cab"><span class="sem-nombre">' + L.may(L.DIAS[dt.getDay()]) + (esHoy ? '<span class="sr"> (hoy)</span>' : "") + '</span><span class="sem-num">' + dt.getDate() + "</span></div>" +
+      return '<li class="sem-dia' + (esHoy ? " es-hoy" : "") + (inf.cls.length ? " " + esc(inf.cls.join(" ")) : "") + '"><div class="sem-cab"><span class="sem-nombre">' + L.may(L.DIAS[dt.getDay()]) + (esHoy ? '<span class="sr"> (hoy)</span>' : "") + '</span><span class="sem-num">' + dt.getDate() + "</span></div>" +
         (inf.notas.length ? '<span class="sem-nota">' + esc(inf.notas[0]) + "</span>" : "") +
         (items ? "<ul>" + items + "</ul>" : (inf.notas.length ? "" : '<span class="mano sem-libre">libre</span>')) + "</li>";
     }).join("");
@@ -153,6 +153,7 @@
       (tareas ? '<ul class="tareas" id="tareas">' + tareas + "</ul>" : '<div class="nota"><span class="mano">Hoy no hay entregas. ' + (ex && L.clave(ex.date) === k ? "Hoy toca examen: a por él." : "Buen día para repasar.") + "</span></div>") + "</section>" +
       '<section aria-labelledby="hEx"><div class="sec-cab"><h2 id="hEx">Próximo examen</h2></div>' + bloqueEx + "</section>" +
       '<section class="ancho" aria-labelledby="hSem"><div class="sec-cab"><h2 id="hSem">Esta semana</h2><span class="mano">de lunes a viernes</span></div><ol class="semana">' + semana + "</ol></section>" +
+      E.hoyTarjetas() +
       '<section aria-labelledby="hPl"><div class="sec-cab"><h2 id="hPl">Tu planta</h2><span class="mano">crece contigo</span></div>' + plantaHTML() + "</section>" +
       '<section aria-labelledby="hAt"><div class="sec-cab"><h2 id="hAt">Atajos</h2></div><div class="notas-fila">' +
       '<a class="nota-boton" data-subject="ipe" href="#/agenda"><b>Horario</b><span class="mano">la semana entera</span></a>' +
@@ -219,21 +220,21 @@
     var out = '<div class="h-dia" style="grid-row:1;grid-column:1"><span class="sr">Hora</span></div>';
     for (var d = 1; d <= 5; d++) out += '<div class="h-dia' + (d === dow ? " hoy" : "") + '" style="grid-row:1;grid-column:' + (d + 1) + '"><span class="ab" aria-hidden="true">' + DIASA[d] + '</span><span class="completo">' + DIASL[d] + '</span><span class="sr">' + (d === dow ? " (hoy)" : "") + "</span></div>";
     F.forEach(function (fr, i) {
-      out += '<div class="h-hora" style="grid-row:' + (i + 2) + ';grid-column:1">' + horaCol(fr.inicio) + "</div>";
+      out += '<div class="h-hora" style="grid-row:' + (i + 2) + ';grid-column:1">' + esc(horaCol(fr.inicio)) + "</div>";
       if (fr.recreo) out += '<div class="recreo" style="grid-row:' + (i + 2) + '">recreo · ' + L.rango(fr.inicio, fr.fin, f === "ambas" ? "24" : f) + "</div>";
     });
     var fi = function (t, fin) { for (var i = 0; i < F.length; i++) if ((fin ? F[i].fin : F[i].inicio) === t) return i; return 0; };
     AG.horario.forEach(function (h) {
       var s = L.sid(h.asig), S1 = A[s], a = L.hm(h.inicio), b = L.hm(h.fin), ya = h.dia === dow && nm >= a[0] * 60 + a[1] && nm < b[0] * 60 + b[1];
       var pf = prof(s);
-      out += '<div class="celda' + (h.lab ? " es-lab" : "") + (ya ? " es-ahora" : "") + '" data-subject="' + s + '" style="grid-row:' + (fi(h.inicio) + 2) + "/" + (fi(h.fin, true) + 3) + ";grid-column:" + (h.dia + 1) + '">' +
+      out += '<div class="celda' + (h.lab ? " es-lab" : "") + (ya ? " es-ahora" : "") + '" data-subject="' + esc(s) + '" style="grid-row:' + (fi(h.inicio) + 2) + "/" + (fi(h.fin, true) + 3) + ";grid-column:" + (h.dia + 1) + '">' +
         '<span class="ab" aria-hidden="true">' + S1.ab + '</span><span class="completo">' + S1.nombre + "</span>" + (pf ? '<small class="completo">' + esc(pf) + "</small>" : "") + (h.nota ? "<small>" + esc(h.nota) + "</small>" : "") +
-        '<small class="completo">' + L.rango(h.inicio, h.fin, f === "ambas" ? "24" : f) + "</small>" +
-        '<span class="sr">, ' + DIASL[h.dia] + " de " + L.rango(h.inicio, h.fin, f).replace("–", " a ") + (pf ? ", con " + esc(pf) : "") + (h.lab ? ", práctica en el laboratorio" : "") + (ya ? ", ahora" : "") + "</span></div>";
+        '<small class="completo">' + esc(L.rango(h.inicio, h.fin, f === "ambas" ? "24" : f)) + "</small>" +
+        '<span class="sr">, ' + DIASL[h.dia] + " de " + esc(L.rango(h.inicio, h.fin, f).replace("–", " a ")) + (pf ? ", con " + esc(pf) : "") + (h.lab ? ", práctica en el laboratorio" : "") + (ya ? ", ahora" : "") + "</span></div>";
     });
     var hoyL = AG.horario.filter(function (h) { return h.dia === dow; }).map(function (h) {
       var s = L.sid(h.asig);
-      return '<li data-subject="' + s + '"><span class="t num">' + (f === "ambas" ? h.inicio + "–" + h.fin + "<small>" + L.h12r(h.inicio, h.fin) + "</small>" : L.rango(h.inicio, h.fin, f)) + "</span><span><b>" + A[s].nombre + "</b>" + (prof(s) ? " · " + esc(prof(s)) : "") + (h.lab ? " · práctica en el laboratorio" : "") + (h.nota ? " · " + esc(h.nota) : "") + "</span></li>";
+      return '<li data-subject="' + esc(s) + '"><span class="t num">' + (f === "ambas" ? esc(h.inicio + "–" + h.fin) + "<small>" + esc(L.h12r(h.inicio, h.fin)) + "</small>" : esc(L.rango(h.inicio, h.fin, f))) + "</span><span><b>" + A[s].nombre + "</b>" + (prof(s) ? " · " + esc(prof(s)) : "") + (h.lab ? " · práctica en el laboratorio" : "") + (h.nota ? " · " + esc(h.nota) : "") + "</span></li>";
     }).join("");
     var orden = D.ORDEN_ASIG;
     return '<header class="cab">' + titulo("Horario <em>de la semana</em>") +
@@ -295,7 +296,7 @@
           if (inf.evs.length) { c.push("con-ev"); if (inf.evs.some(function (e) { return e.provisional; })) c.push("es-provisional"); }
           if (dt.getDay() === 0 || dt.getDay() === 6) c.push("es-finde");
           if (L.clave(dt) === L.clave(n)) c.push("es-hoy");
-          g += '<i class="' + c.join(" ") + '"' + (inf.evs.length ? ' data-subject="' + inf.evs[0].s + '"' : "") + ">" + d + "</i>";
+          g += '<i class="' + esc(c.join(" ")) + '"' + (inf.evs.length ? ' data-subject="' + esc(inf.evs[0].s) + '"' : "") + ">" + d + "</i>";
         }
         out += '<div class="mini"><h3>' + L.MESES[mo] + (mo === 0 || i === 0 ? " " + y : "") + '</h3><div class="mini-g" aria-hidden="true">' + g + "</div></div>";
       }
@@ -308,10 +309,10 @@
     for (var dd = 1; dd <= nd2; dd++) {
       var dt2 = new Date(y2, mo2, dd), kk = L.clave(dt2), inf2 = L.infoDia(AG.calendario, EVS, kk), fin = dt2.getDay() === 0 || dt2.getDay() === 6, hoy = kk === L.clave(n);
       var sr = dd + " de " + L.MESES[mo2] + (inf2.notas.length ? ": " + inf2.notas.join(", ") : "") + (inf2.evs.length ? ". " + inf2.evs.map(function (e) { return A[e.s].nombre + ", " + e.titulo + (e.provisional ? " (fecha provisional, puede cambiar)" : ""); }).join("; ") : "") + (hoy ? " (hoy)" : "");
-      celdas += '<div class="dia' + (inf2.evs.some(function (e) { return e.provisional; }) ? " es-provisional" : "") + (fin ? " es-finde" : "") + (hoy ? " es-hoy" : "") + (inf2.cls.length ? " " + inf2.cls.join(" ") : "") + '" role="listitem" aria-label="' + esc(sr) + '"><span class="n" aria-hidden="true">' + dd + "</span>" +
+      celdas += '<div class="dia' + (inf2.evs.some(function (e) { return e.provisional; }) ? " es-provisional" : "") + (fin ? " es-finde" : "") + (hoy ? " es-hoy" : "") + (inf2.cls.length ? " " + esc(inf2.cls.join(" ")) : "") + '" role="listitem" aria-label="' + esc(sr) + '"><span class="n" aria-hidden="true">' + dd + "</span>" +
         (inf2.notas.length ? '<span class="dia-nota" aria-hidden="true">' + esc(inf2.notas[0]) + "</span>" : "") +
-        inf2.evs.map(function (e) { return '<span class="ev" data-subject="' + e.s + '" aria-hidden="true">' + esc(A[e.s].ab + " · " + e.titulo.replace(/^Examen · /, "Ex. ") + (e.provisional ? " (prov.)" : "")) + "</span>"; }).join("") +
-        (inf2.evs.length ? '<span class="puntos" aria-hidden="true">' + inf2.evs.map(function (e) { return '<i data-subject="' + e.s + '"></i>'; }).join("") + "</span>" : "") + "</div>";
+        inf2.evs.map(function (e) { return '<span class="ev" data-subject="' + esc(e.s) + '" aria-hidden="true">' + esc(A[e.s].ab + " · " + e.titulo.replace(/^Examen · /, "Ex. ") + (e.provisional ? " (prov.)" : "")) + "</span>"; }).join("") +
+        (inf2.evs.length ? '<span class="puntos" aria-hidden="true">' + inf2.evs.map(function (e) { return '<i data-subject="' + esc(e.s) + '"></i>'; }).join("") + "</span>" : "") + "</div>";
     }
     return cab +
       '<div class="mes-nav"><button class="boton icono secundario" type="button" data-mes="-1" aria-label="Mes anterior"' + (calMes <= MIN_M ? " disabled" : "") + ">" + ico("volver") + '</button><h2 aria-live="polite">' + L.may(L.MESES[mo2]) + " " + y2 + '</h2><button class="boton icono secundario" type="button" data-mes="1" aria-label="Mes siguiente"' + (calMes >= MAX_M ? " disabled" : "") + ">" + ico("siguiente") + "</button></div>" +
@@ -360,7 +361,8 @@
     var S1 = A[u.s], n = ahora(), pf = prof(u.s), p = progresoDe(u), ev = EVS.filter(function (e) { return e.unidad === u.id; })[0];
     var notas = '<a class="nota-boton" href="../' + esc(u.repaso.web) + '"><b>Repaso</b><span class="mano">' + (u.porEntregas ? "entrega a entrega" : "bloque a bloque") + '</span><span class="ext">Abrir el repaso' + ico("siguiente") + "</span></a>" +
       (u.simulacro && u.simulacro.web ? '<a class="nota-boton amarilla" href="../' + esc(u.simulacro.web) + '"><b>Simulacro</b><span class="mano">' + esc(u.simulacro.webt || "como el examen") + '</span><span class="ext">Abrir el simulacro' + ico("siguiente") + "</span></a>" : "") +
-      (u.id === "bio3" ? '<a class="nota-boton lila" href="#/lectura/franklin"><b>Lectura</b><span class="mano">La historia de Rosalind Franklin</span></a>' : "");
+      E.unidadNotas(u) +
+      (u.id === "bio3" ? '<a class="nota-boton" data-subject="bio" href="#/lectura/franklin"><b>Lectura</b><span class="mano">La historia de Rosalind Franklin</span></a>' : "");
     var mat = [];
     if (u.repaso.pdf) mat.push(["Repaso en PDF", u.repaso.pdf]);
     if (u.simulacro && u.simulacro.pdf) mat.push(["Simulacro en PDF", u.simulacro.pdf]);
@@ -368,7 +370,7 @@
     var html = ruta([["Asignaturas", "#/asignaturas"], [S1.nombre, "#/asignatura/" + u.s], [u.codigo]]) +
       '<header class="cab cab-asig"><div>' + titulo('<span class="fluor asig">' + esc(u.titulo) + "</span>") +
       '<p class="sub">' + esc(u.tema) + " · " + esc(u.examen) + (pf ? " · " + esc(pf) : "") + "</p>" + insigniaExamen(u, n) + "</div>" + pegatina(u.pegatina, u.s, "grande") + "</header>" +
-      (p ? barra(p, "Repaso dominado") : "") +
+      (p ? barra(p, "Repaso dominado") : "") + E.unidadResumen(u) +
       '<div class="rejilla rejilla-unidad"><section aria-labelledby="hBl"><div class="sec-cab"><h2 id="hBl">Lo que entra</h2><span class="mano">' + (u.porEntregas ? "por entregas" : "bloque a bloque") + '</span></div><ol class="bloques">' + u.bloques.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("") + "</ol></section>" +
       '<section aria-labelledby="hEs"><div class="sec-cab"><h2 id="hEs">Para estudiar</h2><span class="mano">empieza por el repaso</span></div><div class="notas-fila">' + notas + "</div>" +
       (ev && ev.nota ? '<div class="nota nota-ex"><span class="mano">' + esc(ev.titulo) + ". " + esc(ev.nota) + ".</span></div>" : "") +
@@ -432,8 +434,8 @@
       filas.push('<li data-subject="' + u.s + '"><a class="unidad-fila" href="../' + esc(u.simulacro.web) + '"><span class="u-cod mano">' + esc(u.codigo) + '</span><span class="u-txt"><span class="u-tit">' + esc(u.titulo) + '</span><span class="u-tema">' + (r ? r + (r === 1 ? " respuesta guardada" : " respuestas guardadas") : "") + (r && au ? " · " : "") + (au ? au + (au === 1 ? " respuesta escrita" : " respuestas escritas") : "") + "</span></span>" + ico("siguiente", "u-flecha") + "</a></li>");
     });
     var html = '<header class="cab">' + titulo("Err<em>ores</em>") + '<p class="sub">Lo que falles en los simulacros, para repasarlo hasta que salga solo.</p></header>' +
-      '<div class="estado" data-subject="fisio">' + pegatina("microscopio", "fisio", "") + '<div><h2 class="estado-tit">Aquí aparecerán tus fallos</h2><p>Cuando corrijas un simulacro, cada pregunta que falles se apuntará aquí con tu respuesta y la buena, agrupada por unidad. Esta parte llega pronto; de momento no hay nada que repasar.</p><div class="acciones"><a class="boton secundario" href="#/asignaturas">Ir a un simulacro</a></div></div></div>' +
-      (filas.length ? '<section aria-labelledby="hSg"><div class="sec-cab"><h2 id="hSg">Simulacros empezados</h2><span class="mano">guardados en este móvil</span></div><ul class="unidades">' + filas.join("") + "</ul></section>" : "");
+      E.errores() +
+      (filas.length ? '<section aria-labelledby="hSg"><div class="sec-cab"><h2 id="hSg">Simulacros de siempre empezados</h2><span class="mano">guardados en este móvil</span></div><ul class="unidades">' + filas.join("") + "</ul></section>" : "");
     return { sec: "errores", titulo: "Errores", html: html };
   }
 
@@ -477,12 +479,18 @@
     return { sec: "", titulo: "No encontrada", html: '<header class="cab">' + titulo("Esta página <em>no está</em>") + '</header><div class="estado"><svg aria-hidden="true"><use href="' + SPR + 'i-info"/></svg><div><h2 class="estado-tit">No hay nada en esta dirección</h2><p>Puede que el enlace esté mal escrito o que la unidad aún no exista.</p><div class="acciones"><a class="boton" href="#/hoy">Ir a Hoy</a></div></div></div>' };
   }
 
+  /* ================= estudiar (app/estudio.js) ================= */
+  var E = window.CorteEstudio({ D: D, A: A, esc: esc, ico: ico, SPR: SPR, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina,
+    pintar: function (q) { pintar(q); }, repintar: function (sel, arriba) { pintar(!arriba); var b = sel && $(sel, vista); if (b) b.focus({ preventScroll: !arriba }); } });
+  function pPractica(id, a2) { return E.practica(id, a2) || pNada(); }
+  function pTarjetas(id) { return E.tarjetas(id) || pNada(); }
+
   /* ================= rutas y pintado ================= */
-  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa };
+  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas };
   function leerRuta() {
     var h = location.hash.replace(/^#\/?/, ""), p = h.split("/");
-    var arg = null; try { arg = p[1] ? decodeURIComponent(p[1]) : null; } catch (_) {}
-    return { sec: p[0] || "hoy", arg: arg };
+    var arg = null, arg2 = null; try { arg = p[1] ? decodeURIComponent(p[1]) : null; arg2 = p[2] ? decodeURIComponent(p[2]) : null; } catch (_) {}
+    return { sec: p[0] || "hoy", arg: arg, arg2: arg2 };
   }
   var io = "IntersectionObserver" in window ? new IntersectionObserver(function (es) {
     es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("dibujada"); io.unobserve(e.target); } });
@@ -493,7 +501,7 @@
   var actual = null;
   function pintar(quieta) {
     var r = leerRuta(), f = tiene(PANT, r.sec) ? PANT[r.sec] : pNada, p;
-    try { p = f(r.arg); } catch (err) { p = { sec: "", titulo: "Error", html: '<header class="cab">' + titulo("Algo se ha <em>torcido</em>") + '</header><div class="estado es-error" role="alert"><svg aria-hidden="true"><use href="' + SPR + 'i-alerta"/></svg><div><h2 class="estado-tit">No se pudo pintar esta pantalla</h2><p>Tus datos no se han tocado. Prueba a recargar.</p></div></div>' }; }
+    try { p = f(r.arg, r.arg2); } catch (err) { p = { sec: "", titulo: "Error", html: '<header class="cab">' + titulo("Algo se ha <em>torcido</em>") + '</header><div class="estado es-error" role="alert"><svg aria-hidden="true"><use href="' + SPR + 'i-alerta"/></svg><div><h2 class="estado-tit">No se pudo pintar esta pantalla</h2><p>Tus datos no se han tocado. Prueba a recargar.</p></div></div>' }; }
     var y = window.scrollY;
     vista.innerHTML = p.html;
     if (p.subject) vista.setAttribute("data-subject", p.subject); else vista.removeAttribute("data-subject");
