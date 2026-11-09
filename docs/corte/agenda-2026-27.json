@@ -345,15 +345,6 @@
   ],
   "eventos": [
     {
-      "id": "ipe-ejercicios-finales",
-      "tipo": "entrega",
-      "asig": "ipe",
-      "titulo": "Ejercicios finales",
-      "nota": "Permiso de Marina",
-      "fecha": "2026-11-03",
-      "hora": "21:00"
-    },
-    {
       "id": "fisio-infografia",
       "tipo": "entrega",
       "asig": "fisio",
@@ -361,6 +352,15 @@
       "fecha": "2026-11-03",
       "hora": "23:59",
       "cierre": "2026-11-04T00:00"
+    },
+    {
+      "id": "ipe-ejercicios-finales",
+      "tipo": "entrega",
+      "asig": "ipe",
+      "titulo": "Ejercicios finales",
+      "nota": "Permiso de Marina",
+      "fecha": "2026-11-03",
+      "hora": "21:00"
     },
     {
       "id": "bio-examen-citogenetica",
@@ -371,6 +371,15 @@
       "fecha": "2026-11-04",
       "hora": null,
       "nota": "En horario de clase"
+    },
+    {
+      "id": "ingles-project-1",
+      "tipo": "entrega",
+      "asig": "ingles",
+      "titulo": "Project 1",
+      "fecha": "2026-11-05",
+      "hora": "23:59",
+      "cierre": "2026-11-06T00:00"
     },
     {
       "id": "lab-examen-u2",
@@ -392,15 +401,6 @@
       "hora": "21:00"
     },
     {
-      "id": "ingles-project-1",
-      "tipo": "entrega",
-      "asig": "ingles",
-      "titulo": "Project 1",
-      "fecha": "2026-11-05",
-      "hora": "23:59",
-      "cierre": "2026-11-06T00:00"
-    },
-    {
       "id": "ingles-speaking",
       "tipo": "oral",
       "asig": "ingles",
@@ -408,6 +408,15 @@
       "fecha": "2026-11-06",
       "hora": null,
       "nota": "En horario de clase"
+    },
+    {
+      "id": "ipe-entrega-trabajo",
+      "tipo": "entrega",
+      "asig": "ipe",
+      "titulo": "Entrega del trabajo",
+      "fecha": "2026-11-16",
+      "hora": null,
+      "nota": "Hora por confirmar"
     },
     {
       "id": "ipe-examen-u1",
