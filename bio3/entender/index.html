@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="es" data-unit="bio3">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bio 3 · Entender los ácidos nucleicos</title>
+<meta name="theme-color" content="#21124f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{
+  --bg:#f4f2f6;--surface:#fff;--ink:#1d1828;--muted:#5f566d;--line:#e3dee9;--soft:#f7f5fa;
+  --accent:#7a1f3d;--accent-ink:#fff;
+  --r:#c8203f;--r-soft:#fdebef;--o:#c76200;--o-soft:#fdf1e3;--b:#2c62c4;--b-soft:#e8effc;
+  --und:#1d6a44;--und-soft:#e8f5ee;--why:#5b2a9e;--why-soft:#f1ebfb;--def:#3d3550;--def-soft:#f0eef5;
+  --lab:#00707a;--lab-soft:#e3f5f6;--tip:#7a5000;--tip-soft:#fff4d6;--act:#0d5c8a;--act-soft:#e4f1fa;--key:#8a1538;--key-soft:#fbe9ef;
+  --f-d:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--f-b:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#131019;--surface:#1d1825;--ink:#ece7f3;--muted:#ab9fba;--line:#332b3e;--soft:#241e2d;
+  --accent:#ff8fae;--accent-ink:#1d1825;
+  --r:#ff7a90;--r-soft:#3a1822;--o:#ffad5c;--o-soft:#38260f;--b:#8fb4ff;--b-soft:#18243d;
+  --und:#7fdcab;--und-soft:#142a20;--why:#c9a8ff;--why-soft:#251a3a;--def:#d8d1e6;--def-soft:#272233;
+  --lab:#6fd9e2;--lab-soft:#0f2a2d;--tip:#ffd479;--tip-soft:#2f2510;--act:#8fd0ff;--act-soft:#10283a;--key:#ff9bb5;--key-soft:#3a1424;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--f-b);padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
+main{max-width:760px;margin:0 auto;padding:12px 14px 80px}
+h1,h2,h3{font-family:var(--f-d);line-height:1.2;margin:0}
+a{color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;padding:8px 14px;border-radius:999px;background:var(--accent);color:var(--accent-ink)!important;text-decoration:none;font-weight:700;font-size:15px}
+.hero{background:linear-gradient(135deg,#21124f,#7a1f3d);color:#fff;border-radius:22px;padding:22px 18px;margin:12px 0 16px}
+.hero .eb{font-size:14px;opacity:.85;margin:0 0 6px;letter-spacing:.02em}
+.hero h1{font-size:29px;font-weight:800}
+.hero p{margin:10px 0 0;opacity:.95}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px;margin:0 0 14px}
+.box h2{font-size:21px;margin-bottom:8px}
+.legend{display:grid;gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.legend2{margin:6px 0 0;padding-left:4px;list-style:none}.legend2 li{margin:6px 0;font-size:15.5px}
+.legend li{display:flex;gap:8px;align-items:flex-start;font-size:15.5px}
+.lv{display:inline-flex;align-items:center;gap:4px;font:700 13px/1 var(--f-b);padding:6px 10px;border-radius:999px;white-space:nowrap}
+.lv.r{background:var(--r);color:#fff}.lv.o{background:var(--o);color:#fff}.lv.b{background:var(--b);color:#fff}
+@media (prefers-color-scheme:dark){.lv.r,.lv.o,.lv.b{color:#1d1825}}
+.dp{display:inline-block;font:700 13px/1 var(--f-b);padding:6px 9px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+/* índice */
+.toc{display:grid;grid-template-columns:1fr;gap:6px;margin:6px 0 0;padding:0;list-style:none}
+.toc a{display:flex;justify-content:space-between;gap:8px;padding:10px 12px;border-radius:12px;background:var(--soft);text-decoration:none;color:var(--ink);font-weight:700;font-size:15.5px;min-height:44px;align-items:center}
+.toc a span{font-weight:400;color:var(--muted);font-size:13.5px;white-space:nowrap}
+.toc a.done{opacity:.55}.toc a.done::after{content:"✓";color:var(--und);font-weight:800}
+/* plan */
+.plan-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 12px}
+.plan-row label{font-weight:700}
+select{font:inherit;font-size:17px;padding:8px 10px;border-radius:12px;border:2px solid var(--accent);background:var(--surface);color:var(--ink);min-height:44px}
+.day{border-left:5px solid var(--accent);background:var(--soft);border-radius:12px;padding:10px 12px;margin:8px 0}
+.day b{display:block;font-family:var(--f-d);font-size:17px;margin-bottom:4px}
+.day ul{margin:0;padding-left:20px}.day li{margin:2px 0}
+.day.rev{border-left-color:var(--und)}
+/* bloques */
+.blk{margin:26px 0 0;scroll-margin-top:10px}
+.blk-h{background:var(--accent);color:var(--accent-ink);border-radius:18px;padding:16px;margin-bottom:12px}
+.blk-h .n{font-size:14px;opacity:.85;font-weight:700}
+.blk-h h2{font-size:23px;margin:2px 0 4px}
+.blk-h p{margin:0;font-size:15px;opacity:.92}
+.blk.act .blk-h{background:var(--act);}
+.blk.key .blk-h{background:linear-gradient(135deg,#8a1538,#c8203f)}
+@media (prefers-color-scheme:dark){.blk.act .blk-h,.blk.key .blk-h{color:#10131a}.blk.key .blk-h{background:#ff9bb5}}
+.c{background:var(--surface);border:1px solid var(--line);border-left:7px solid var(--b);border-radius:16px;padding:14px 14px 12px;margin:0 0 14px}
+.c.r{border-left-color:var(--r);box-shadow:0 0 0 2px var(--r-soft) inset}
+.c.o{border-left-color:var(--o)}
+.c.a{border-left-color:var(--act);background:var(--act-soft)}
+.c.k{border-left-color:var(--key);background:var(--key-soft)}
+.c h3{font-size:20px;margin:0 0 8px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.p{border-radius:12px;padding:10px 12px;margin:8px 0;font-size:16.5px}
+.p>b:first-child{display:block;font-size:14px;letter-spacing:.02em;margin-bottom:2px}
+.und{background:var(--und-soft)}.und>b:first-child{color:var(--und)}
+.why{background:var(--why-soft)}.why>b:first-child{color:var(--why)}
+.def{background:var(--def-soft);border:1px dashed var(--line)}.def>b:first-child{color:var(--def)}
+.def q{font-style:italic;quotes:"«" "»"}
+.lab{background:var(--lab-soft)}.lab>b:first-child{color:var(--lab)}
+.lab>b:first-child::after{content:" · extra, no viene en las diapositivas";font-weight:400;opacity:.8}
+.tip{background:var(--tip-soft)}.tip>b:first-child{color:var(--tip)}
+.p p{margin:6px 0 0}.p ul,.p ol{margin:6px 0 0;padding-left:22px}.p li{margin:3px 0}
+.t{font-weight:700;border-bottom:2px dotted var(--accent)}
+.seq{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:8px 10px;overflow-x:auto;white-space:pre;margin:6px 0}
+details.chk{border:2px solid var(--accent);border-radius:14px;margin:10px 0 0;background:var(--surface)}
+details.chk summary{cursor:pointer;padding:12px 14px;font-weight:700;min-height:44px;list-style:none}
+details.chk summary::-webkit-details-marker{display:none}
+details.chk summary::before{content:"🤔 Piénsalo antes de abrir · ";color:var(--accent)}
+details.chk[open] summary{border-bottom:1px solid var(--line)}
+details.chk>div{padding:10px 14px 12px}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:6px 0}
+th,td{border:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.tw{overflow-x:auto}
+.donebtn{display:block;width:100%;margin:6px 0 0;padding:12px;border-radius:14px;border:2px solid var(--und);background:transparent;color:var(--und);font:700 16px var(--f-b);min-height:48px;cursor:pointer}
+.donebtn[aria-pressed="true"]{background:var(--und);color:var(--surface)}
+.gl dt{font-weight:700;margin-top:10px}.gl dd{margin:2px 0 0}
+.note{font-size:14.5px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .back,.donebtn,.plan-ui,.noprint{display:none!important}
+  .p,.blk-h,details.chk,tr{break-inside:avoid}.blk-h{break-after:avoid}h3{break-after:avoid}main{max-width:none;padding:0}
+  details.chk summary::before{content:"🤔 "}
+  .hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<main>
+<a class="back noprint" id="back" href="../../" hidden>← Menú · Mi carrera</a>
+
+<header class="hero">
+  <p class="eb">🧬 Biología Molecular · 3er examen · Tema 4</p>
+  <h1>Entender los ácidos nucleicos y sus enzimas</h1>
+  <p>No es para memorizar frases: es para que sepas <b>por qué</b> pasa cada cosa. Si entiendes el porqué, la definición formal se te queda sola. Cubre las 110 diapositivas, en el mismo orden que el PowerPoint.</p>
+</header>
+
+<section class="box">
+  <h2>Cómo usar esta página</h2>
+  <ul class="legend">
+    <li><span class="lv r">🔴 Rojo de la profe</span> Lo marca en rojo: suele salir en el examen.</li>
+    <li><span class="lv o">🟠 Clave</span> Base para entender el resto del tema.</li>
+    <li><span class="lv b">🔵 Contexto</span> Ayuda a entender; menos probable que salga tal cual.</li>
+  </ul>
+  <p>En cada concepto encontrarás, en este orden:</p>
+  <ul class="legend2">
+    <li>💡 <b>Para entenderlo</b>: una explicación con una comparación de la vida diaria.</li>
+    <li>❓ <b>¿Por qué?</b>: la razón de que sea así. Esto es lo que hace que no se te olvide.</li>
+    <li>📌 <b>Definición formal</b>: tal como viene en la diapositiva. Es la que piden en el examen.</li>
+    <li>🔬 <b>En el laboratorio</b>: para qué te sirve como técnico. No viene en las diapositivas, así que no lo pongas en el examen en vez de la definición.</li>
+    <li>🧠 <b>Truco</b> y 🤔 <b>pregunta para razonar</b>: intenta responder en voz alta antes de abrir la respuesta.</li>
+  </ul>
+  <p class="note">📍 «diap. X» = número de diapositiva del PDF de la profe.</p>
+</section>
+
+<section class="box plan-ui" id="plan">
+  <h2>📅 Mi plan de estudio</h2>
+  <div class="plan-row"><label for="dias">¿Cuántos días te quedan?</label>
+  <select id="dias"><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></div>
+  <div id="planOut"></div>
+  <p class="note">El plan reparte los bloques según lo que pesa cada uno. El último día siempre es de repaso (preguntas llave y trampas). Marca cada bloque como entendido con el botón verde del final del bloque: se guarda en este móvil.</p>
+</section>
+
+<nav class="box" aria-labelledby="hIdx">
+  <h2 id="hIdx">Índice</h2>
+  <ul class="toc" id="toc"></ul>
+</nav>
+
+<!-- ============ BLOQUE 1 ============ -->
+<section class="blk" id="b1" data-w="3" data-t="Qué son y de qué están hechos">
+<div class="blk-h"><div class="n">Bloque 1 · diap. 1–14, 18–19</div><h2>Qué son y de qué están hechos</h2><p>La pieza de LEGO de la genética: el nucleótido.</p></div>
+
+<article class="c o">
+<h3>ADN y ARN: el original y la fotocopia</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 6–7</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>El <span class="t">ADN</span> es el libro de recetas original de la célula: está guardado en la biblioteca (el núcleo) y nunca se presta. Cuando hace falta una receta, se saca una fotocopia, que es el <span class="t">ARN</span>. Esa copia sale a la cocina y allí se prepara el plato: la proteína.</div>
+<div class="p why"><b>❓ ¿Por qué hay dos moléculas y no una sola?</b>Para <b>proteger el original</b>. Lo que sale a trabajar se gasta y se rompe. Si se rompe una fotocopia (un ARN), se hace otra y no pasa nada. Si se estropea el original (el ADN), el error se queda para siempre y se copia en todas las células hijas.</div>
+<div class="p def"><b>📌 Definición formal (diap. 6)</b>Los ácidos nucleicos son <q>macromoléculas encargadas de almacenar, transmitir y expresar la información genética de los seres vivos</q>. Hay 2 tipos: ADN (ácido desoxirribonucleico) y ARN (ácido ribonucleico).
+<p><b>Funciones (diap. 7):</b></p><ul><li><b>ADN</b>: almacenar y transmitir la información genética a la descendencia, en la mitosis y la meiosis. Lo hace con la <b>replicación</b>.</li><li><b>ARN</b>: expresar la información almacenada en el ADN para sintetizar <b>proteínas</b>. Lo hace con la <b>transcripción</b> y la <b>traducción</b>.</li></ul></div>
+<p class="note">Macromolécula = molécula gigante formada por muchas piezas pequeñas repetidas.</p>
+<details class="chk"><summary>¿Por qué un error en el ADN es más grave que un error en un ARNm?</summary><div>El ARNm se usa unas cuantas veces y se destruye, así que el error solo afecta a unas pocas proteínas. El ADN es el original: el error pasa a cada célula hija y a <b>todos</b> los ARNm que salgan de ese gen a partir de entonces.</div></details>
+</article>
+
+<article class="c o">
+<h3>El nucleótido: la pieza que se repite</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 8</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>Un ácido nucleico es un collar, y cada cuenta del collar es un <span class="t">nucleótido</span>. Cada cuenta tiene 3 partes: un <b>fosfato</b>, un <b>azúcar</b> (la pentosa) y una <b>base nitrogenada</b>, que es la "letra".</div>
+<div class="p why"><b>❓ ¿Por qué con piezas tan simples se guarda tanta información?</b>Porque la información no está en las piezas, sino en <b>el orden</b> en que se colocan. Pasa lo mismo con el ordenador: solo usa 0 y 1, y con eso guarda películas enteras. Con 4 letras en orden se escribe cualquier gen.</div>
+<div class="p def"><b>📌 Definición formal (diap. 8)</b>Los nucleótidos <q>son las unidades estructurales que forman los ácidos nucleicos y hacen posible el almacenamiento y transmisión de la información genética</q>. Los ácidos nucleicos están formados por largas cadenas de nucleótidos.</div>
+</article>
+
+<article class="c b">
+<h3>Grupo fosfato: la razón de que sean "ácidos"</h3>
+<div class="meta"><span class="lv b">🔵 Contexto</span><span class="dp">📍 diap. 9</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 9)</b>Grupo fosfato: <q>1 átomo de fósforo (centro) y 4 átomos de oxígeno (vértices)</q>.</div>
+<div class="p why"><b>❓ ¿Por qué importa?</b>En el agua, el fosfato suelta protones (H⁺) y se queda con <b>carga negativa</b>. Por eso el ADN y el ARN son <b>ácidos</b> y tienen carga negativa en toda la cadena. De aquí salen tres cosas del tema: las histonas (que son positivas) se pegan al ADN, el ADN se mueve en un campo eléctrico y se tiñe con colorantes básicos.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b><ul><li><b>Electroforesis</b> (separar ADN en un gel con corriente eléctrica): como el ADN es negativo, <b>corre hacia el polo positivo</b>. Los trozos pequeños corren más que los grandes. Así se comprueba si una PCR ha salido bien.</li><li><b>Tinción H-E</b> (hematoxilina-eosina): la hematoxilina tiñe lo ácido de azul-morado. Por eso el núcleo, lleno de ADN, sale morado: se dice que es <b>basófilo</b>, que significa "que atrae colorantes básicos".</li></ul></div>
+<details class="chk"><summary>En un gel de electroforesis, ¿hacia qué polo va el ADN y por qué?</summary><div>Hacia el <b>polo positivo</b>. El fosfato le da carga negativa, y las cargas opuestas se atraen.</div></details>
+</article>
+
+<article class="c o">
+<h3>La pentosa: ribosa y desoxirribosa</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 10, 18, 19</span></div>
+<div class="p und"><b>💡 Para entenderlo</b><span class="t">Pentosa</span> = azúcar de 5 carbonos. El ARN lleva <b>ribosa</b> y el ADN lleva <b>desoxirribosa</b>. "Desoxi" significa "sin oxígeno": a la desoxirribosa le falta un oxígeno (el grupo OH del carbono 2').</div>
+<div class="p why"><b>❓ ¿Por qué el ADN usa el azúcar al que le falta un oxígeno?</b>Ese OH que tiene la ribosa hace que el ARN sea <b>reactivo: se rompe solo con facilidad</b>. Al ADN le conviene ser estable porque tiene que durar toda la vida de la célula. Al ARN le conviene durar poco: es una fotocopia que se usa y se tira. Así la célula deja de fabricar una proteína en cuanto deja de necesitarla.</div>
+<div class="p def"><b>📌 Definición formal (diap. 10)</b>Pentosa (azúcar): en el ARN es la <b>ribosa</b> y en el ADN, la <b>desoxirribosa</b>.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>El ARN es muy delicado. Hay <b>RNasas</b> (enzimas que destruyen ARN) por todas partes, incluso en tu piel. Por eso con ARN se trabaja siempre con guantes, en frío, con material libre de RNasas y congelando rápido la muestra. En una muestra mal conservada, el ADN suele sobrevivir y el ARN no.</div>
+<div class="p tip"><b>🧠 Truco</b>DESoxi = "DES-oxígeno": le falta uno. Y como le falta, es más estable.</div>
+</article>
+
+<article class="c o">
+<h3>Las 5 bases nitrogenadas</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 11–12</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 11)</b><div class="tw"><table><tr><th>Tipo</th><th>Base</th><th>Dónde</th></tr>
+<tr><td rowspan="2"><b>Púricas</b></td><td>Adenina (A)</td><td>ADN y ARN</td></tr><tr><td>Guanina (G)</td><td>ADN y ARN</td></tr>
+<tr><td rowspan="3"><b>Pirimidínicas</b></td><td>Citosina (C)</td><td>ADN y ARN</td></tr><tr><td>Timina (T)</td><td>solo ADN</td></tr><tr><td>Uracilo (U)</td><td>solo ARN</td></tr></table></div></div>
+<div class="p und"><b>💡 Para entenderlo</b>Las <b>púricas son grandes</b> (tienen 2 anillos) y las <b>pirimidínicas son pequeñas</b> (1 anillo). En la doble hélice, cada pareja junta siempre una grande con una pequeña. Así la "escalera" tiene todos los peldaños del mismo ancho.</div>
+<div class="p why"><b>❓ ¿Por qué el ADN usa timina y no uracilo?</b>La citosina se estropea a veces sola y <b>se convierte en uracilo</b>. Si el ADN usara U de forma normal, la célula no sabría distinguir una U buena de una que viene de un daño. Usando T, <b>cualquier U que aparezca en el ADN es un error</b>, y la célula la repara. El ARN dura poco, así que no necesita esa vigilancia.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>Los anillos de las bases absorben luz ultravioleta a <b>260 nm</b>. Con un espectrofotómetro (un aparato que mide cuánta luz absorbe una muestra) se mide cuánto ADN o ARN tienes. El cociente <b>260/280</b> te dice si la muestra está limpia de proteínas: alrededor de 1,8 en ADN puro y de 2,0 en ARN puro.</div>
+<div class="p tip"><b>🧠 Truco</b>"Agua <b>PUR</b>a": las púricas son <b>A</b> y <b>G</b>. Las pirimidínicas son las "cortitas", como en inglés <b>CUT</b> (cortar): <b>C, U, T</b>.</div>
+<details class="chk"><summary>¿Podría emparejarse una púrica con otra púrica en la doble hélice?</summary><div>No. Dos bases grandes juntas no caben: la hélice se ensancharía en ese punto y quedaría deformada. Por eso siempre va una grande con una pequeña.</div></details>
+</article>
+
+<article class="c o">
+<h3>Enlace fosfodiéster: cómo se unen las cuentas</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 13–14</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>El fosfato de un nucleótido (que está en el carbono 5' de su azúcar) se une al carbono 3' del azúcar del nucleótido anterior. Al unirse <b>se libera una molécula de agua (H₂O)</b>. La cadena queda como un esqueleto que alterna azúcar-fosfato-azúcar-fosfato, con las bases saliendo hacia un lado.</div>
+<div class="p why"><b>❓ ¿Por qué esto le da dirección a la cadena?</b>Porque los dos extremos de la cadena son diferentes. En un extremo queda un fosfato libre (es el <b>5'</b>) y en el otro un azúcar con su OH libre (es el <b>3'</b>). Pasa como con una frase: tiene principio y final, y se lee en un sentido. Además, es un <b>enlace fuerte</b> (covalente): por eso el calor separa las dos hebras del ADN sin romper cada hebra.</div>
+<div class="p def"><b>📌 Definición formal (diap. 14)</b>Enlace fosfodiéster: une los nucleótidos de la cadena en sentido <b>5' → 3'</b>.</div>
+<div class="p tip"><b>🧠 Truco</b>Fosfo-<b>DI</b>-éster: el fosfato hace <b>dos</b> uniones, una con cada azúcar que tiene al lado.</div>
+</article>
+<button class="donebtn" type="button" data-b="b1" aria-pressed="false">✓ Bloque 1 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 2 ============ -->
+<section class="blk" id="b2" data-w="2" data-t="Propiedades fisicoquímicas">
+<div class="blk-h"><div class="n">Bloque 2 · diap. 20–21</div><h2>Propiedades fisicoquímicas</h2><p>El bloque más útil para el laboratorio: aquí está la base de la PCR y del FISH.</p></div>
+
+<article class="c o">
+<h3>Ácidos y viscosos</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 20</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 20)</b>1. Son <q>fuertemente ácidos en solución acuosa (por los grupos fosfato)</q>. 2. Tienen <q>elevada viscosidad</q>.</div>
+<div class="p why"><b>❓ ¿Por qué son viscosos?</b>Porque son moléculas <b>larguísimas</b>, y en el agua se enredan unas con otras como los espaguetis. Por eso una solución de ADN es espesa.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b><ul><li>Cuando extraes ADN, la solución se pone espesa. Al añadir etanol frío, el ADN aparece como unos hilos blancos que se pueden enrollar en una varilla.</li><li>El ADN largo se rompe si lo agitas fuerte o lo pipeteas con brusquedad. Por eso se mezcla suave, dando la vuelta al tubo.</li><li>El <b>formol</b> que usamos para fijar las biopsias (y la parafina) rompe y entrecruza los ácidos nucleicos. Por eso el ADN de un bloque de parafina sale en trozos cortos, y por eso las pruebas moleculares de anatomía patológica se diseñan para trozos pequeños. Fijar de más empeora el resultado.</li></ul></div>
+</article>
+
+<article class="c o">
+<h3>Hibridación: las hebras se buscan solas</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 20</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>Dos cadenas complementarias son como las dos mitades de una cremallera: si encajan, se cierran solas. Eso se llama <span class="t">hibridación</span>.</div>
+<div class="p why"><b>❓ ¿Por qué es tan importante?</b>Porque <b>solo se pegan las secuencias que encajan</b>. Si fabricas una cadena corta con la secuencia que buscas, ella sola encontrará su pareja entre millones de secuencias distintas. Es como un imán que solo atrae una pieza concreta.</div>
+<div class="p def"><b>📌 Definición formal (diap. 20)</b><q>La unión de dos cadenas complementarias de ácidos nucleicos se unen mediante puentes de hidrógeno entre las bases nitrogenadas → hibridación</q>. <q>Esto puede ocurrir tanto en ADN como en ARN</q>.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>Una <b>sonda</b> (cadena corta con una marca de color o fluorescente) se pega por hibridación justo a la secuencia que buscas:<ul><li><b>FISH</b> (hibridación in situ fluorescente): se usa en anatomía patológica para ver, por ejemplo, si hay demasiadas copias del gen <b>HER2</b> en un cáncer de mama, o una translocación en un linfoma.</li><li><b>ISH</b> para virus: el virus del papiloma humano (VPH) o el ARN del virus de Epstein-Barr (EBER) dentro del tejido.</li><li>Los <b>primers de la PCR</b> también funcionan por hibridación.</li></ul></div>
+</article>
+
+<article class="c o">
+<h3>Desnaturalización y renaturalización</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 21</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>Si calientas el ADN, la cremallera se abre: las dos hebras se separan. Eso es la <span class="t">desnaturalización</span>. Si lo enfrías, se vuelve a cerrar: eso es la <span class="t">renaturalización</span>.</div>
+<div class="p why"><b>❓ ¿Por qué el calor separa las hebras sin destruirlas?</b>Porque el calor rompe los <b>puentes de hidrógeno</b>, que son débiles, pero no los <b>enlaces fosfodiéster</b>, que son fuertes. Cada hebra sigue entera, solo se separa de su pareja. Por eso es <b>reversible</b>: al bajar la temperatura, las bases se vuelven a encontrar. Subir mucho el pH produce el mismo efecto.</div>
+<div class="p def"><b>📌 Definición formal (diap. 21)</b><q>Las dos cadenas de la doble hélice de ADN se pueden separar elevando la temperatura o el pH → desnaturalización</q>: <q>rompen los puentes de H entre las bases nitrogenadas complementarias</q>. <q>La desnaturalización es reversible si se baja de nuevo la temperatura o el pH → renaturalización</q>.</div>
+<div class="p lab"><b>🔬 En el laboratorio: así funciona la PCR</b><ol><li><b>94–95 °C</b>: se separan las hebras (desnaturalización).</li><li><b>~50–65 °C</b>: los primers se pegan a su secuencia (hibridación).</li><li><b>72 °C</b>: la Taq polimerasa copia la cadena. Es una ADN polimerasa de una bacteria de aguas termales, por eso aguanta el calor.</li></ol><p>Se repite unas 30 veces, y cada ciclo duplica la cantidad: al final hay millones de copias del trozo que te interesa.</p></div>
+<details class="chk"><summary>¿Por qué un ADN rico en C-G necesita más temperatura para separarse que uno rico en A-T?</summary><div>Porque <b>C-G se une con 3 puentes de H y A-T solo con 2</b>. Más puentes significa una unión más fuerte, así que hace falta más energía (más calor) para romperla.</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b2" aria-pressed="false">✓ Bloque 2 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 3 ============ -->
+<section class="blk" id="b3" data-w="3" data-t="ADN: estructura primaria y doble hélice">
+<div class="blk-h"><div class="n">Bloque 3 · diap. 15–17, 22–25</div><h2>ADN: estructura primaria y doble hélice</h2><p>El texto y cómo se dobla.</p></div>
+
+<article class="c b">
+<h3>Características del ADN</h3>
+<div class="meta"><span class="lv b">🔵 Contexto</span><span class="dp">📍 diap. 15</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 15)</b><ol><li><q>Largas cadenas de desoxirribonucleótidos formados por el grupo fosfato, una desoxirribosa y 4 tipos de bases nitrogenadas (A, T, G y C)</q>.</li><li>Tamaño: depende del número de nucleótidos. El ADN de los cromosomas es enorme (millones de pares de bases).</li><li>La secuencia (el orden y la proporción de bases) depende de cada especie.</li></ol></div>
+<div class="p why"><b>❓ ¿Por qué cada especie tiene una secuencia distinta, si todas usan las mismas 4 bases?</b>Con las mismas 27 letras del abecedario se escribe tanto el Quijote como una receta de cocina. La información es <b>el orden</b>, no las letras.</div>
+</article>
+
+<article class="c o">
+<h3>Estructura primaria: el texto</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 16</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>Es simplemente <b>la secuencia de letras</b> de una hebra, leída siempre desde el extremo 5' hasta el 3'.</div>
+<div class="p def"><b>📌 Definición formal (diap. 16)</b><q>Es la secuencia de bases nitrogenadas de la cadena de nucleótidos leídas en dirección 5' → 3'</q>. El 5' es el extremo del fosfato y el 3' es el extremo de la pentosa. Ejemplo: (5') A C T G (3').</div>
+<div class="p why"><b>❓ ¿Por qué siempre de 5' a 3'?</b>Porque es el sentido en el que <b>trabaja toda la maquinaria de la célula</b>: las polimerasas fabrican en ese sentido y el ribosoma lee en ese sentido. Escribir las secuencias así es como escribir siempre de izquierda a derecha: todo el mundo lo entiende igual.</div>
+</article>
+
+<article class="c o">
+<h3>Complementariedad: A con T y C con G</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 17</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 17)</b>Principio de complementariedad: <q>las bases nitrogenadas complementarias se unen mediante puentes de H en función de su tamaño y estructura</q>. <b>A-T: 2 puentes de H. C-G: 3 puentes de H.</b> Para que la unión sea estable, los nucleótidos de cada pareja tienen sus fosfatos en posiciones opuestas.
+<div class="seq">(5') A C T G (3')
+(3') T G A C (5')  ← complementaria</div></div>
+<div class="p why"><b>❓ ¿Por qué es tan útil para la célula?</b>Porque <b>cada hebra contiene la información de la otra</b>. Es una copia de seguridad incorporada: si una hebra se daña, la otra sirve de modelo para repararla. Y cuando la célula se va a dividir, cada hebra sirve de molde para fabricar una nueva (lo verás en la replicación).</div>
+<div class="p tip"><b>🧠 Truco</b>Las letras rectas van juntas: <b>A con T</b>. Las curvas van juntas: <b>C con G</b>. Y C-G es la pareja "fuerte": 3 puentes.</div>
+<details class="chk"><summary>Escribe la hebra complementaria de 5' ATGCCA 3'</summary><div><div class="seq">5' ATGCCA 3'
+3' TACGGT 5'</div>Fíjate en que el 3' queda enfrente del 5'. Si en el examen pones los extremos al revés, está mal aunque las letras estén bien.</div></details>
+</article>
+
+<article class="c o">
+<h3>Estructura secundaria: la doble hélice</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 22–24</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>Imagina una escalera de caracol. Las barandillas son el azúcar y el fosfato; los peldaños son las parejas de bases.</div>
+<div class="p def"><b>📌 Definición formal (diap. 23–24)</b><q>Es la doble hélice del ADN formada por las dos cadenas complementarias de nucleótidos</q>. La propusieron <b>Watson y Crick en 1953</b>, con los resultados de <b>Wilkins y Rosalind Franklin</b> (diap. 22). Sus características son:<ul><li>Se enrolla alrededor de un eje central.</li><li>Las 2 cadenas son <b>antiparalelas</b>: una va 5'→3' y la otra 3'→5'.</li><li>Las secuencias son <b>complementarias</b>: si conoces una, puedes deducir la otra.</li><li>Las hebras están unidas por <b>puentes de H</b>.</li><li>Las <b>bases están dentro</b>; el fosfato y la desoxirribosa están <b>fuera</b>.</li><li><b>Una vuelta completa (360°) = 10 nucleótidos.</b> La diapositiva pone "360 ºC", pero es una errata: son grados, no temperatura.</li></ul></div>
+<div class="p why"><b>❓ ¿Por qué las bases van dentro y el fosfato fuera?</b>Las bases <b>no se llevan bien con el agua</b> (son hidrófobas) y además son la información, así que conviene que estén protegidas en el centro. El fosfato y el azúcar sí se llevan bien con el agua y tienen carga, así que quedan por fuera, en contacto con el líquido de la célula.<p><b>¿Y por qué antiparalelas?</b> Porque solo así encajan las bases cara a cara y se pueden formar los puentes de H.</p></div>
+<div class="p lab"><b>🔬 En el laboratorio</b>Cuando se diseña una PCR se necesitan dos primers: uno se pega a una hebra y el otro a la otra, y los dos se escriben en sentido 5'→3'. Si no tienes clara la idea de "antiparalelas", no entiendes por qué hacen falta dos.</div>
+<details class="chk"><summary>Si una vuelta tiene 10 nucleótidos, ¿cuántas vueltas da un trozo de 100 pares de bases?</summary><div>10 vueltas (100 ÷ 10). Es una cuenta sencilla que puede caer en un ejercicio.</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b3" aria-pressed="false">✓ Bloque 3 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 4 ============ -->
+<section class="blk" id="b4" data-w="3" data-t="Empaquetamiento del ADN">
+<div class="blk-h"><div class="n">Bloque 4 · diap. 26–34</div><h2>Empaquetamiento del ADN (estructura terciaria)</h2><p>Cómo caben 2 metros de ADN en un núcleo microscópico.</p></div>
+
+<article class="c o">
+<h3>ADN unido a proteínas: histonas y no histonas</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 26</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>Cada célula humana tiene unos <b>2 metros de ADN</b> dentro de un núcleo de unas pocas milésimas de milímetro. Es como meter 40 km de hilo en una pelota de tenis. Para que quepa, el ADN se enrolla en unas proteínas que hacen de carrete.</div>
+<div class="p def"><b>📌 Definición formal (diap. 26)</b>La mayor parte del ADN de las células eucariotas está en el núcleo. <q>El ADN no se encuentra libre, sino que está asociado a proteínas básicas que compactan el ADN</q>. Son de dos tipos:<ul><li><b>Histonas</b>: <q>proteínas con una función estructural y reguladora</q>.</li><li><b>No histonas</b>: <q>proteínas muy heterogéneas con funciones estructurales, enzimáticas y reguladoras</q>.</li></ul></div>
+<div class="p why"><b>❓ ¿Por qué las histonas se pegan tan bien al ADN?</b>Porque son proteínas <b>básicas</b>, es decir, con <b>carga positiva</b>, y el ADN es <b>negativo</b> por sus fosfatos. Se atraen como los dos polos de un imán. Además, al tapar las cargas negativas, el ADN deja de repelerse a sí mismo y se puede doblar mucho más.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>Al microscopio se ve la <b>cromatina</b> teñida con hematoxilina. El patólogo se fija en cómo está: si el núcleo está muy oscuro (hipercromasia), si la cromatina forma grumos, si los nucleolos son grandes... Son pistas de que una célula puede ser maligna.</div>
+</article>
+
+<article class="c o">
+<h3>Nucleosoma y fibra de cromatina ("collar de perlas")</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 27–29</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 27–28)</b><ol><li><q>Un nucleosoma es la estructura cilíndrica formada por un octámero de histonas (8 histonas) sobre la que se enrolla la doble hélice de ADN</q>.</li><li><q>La molécula de ADN asociada a las histonas se denomina fibra de cromatina</q>. Su aspecto es de <b>"collar de perlas"</b>.</li></ol></div>
+<div class="p why"><b>❓ ¿Por qué enrollarlo en carretes y no en una bola sin más?</b>Porque un carrete se puede <b>desenrollar por trozos</b>. Cuando la célula necesita leer un gen, afloja solo los nucleosomas de esa zona y el resto sigue guardado. Una bola sin orden se enredaría y no se podría leer.</div>
+<div class="p tip"><b>🧠 Truco</b>Nucleo<b>SOMA</b> = "cuerpo" con <b>8</b> histonas. Piensa en el 8 como dos rosquillas una encima de otra, y el ADN dando vueltas alrededor.</div>
+</article>
+
+<article class="c o">
+<h3>Solenoide y cromosoma metafásico</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 30–33</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 30–33)</b><ol start="3"><li><q>La fibra de cromatina, a su vez, se enrolla sobre sí misma formando el solenoide</q>. <b>Cada vuelta del solenoide tiene 6 nucleosomas con 6 histonas H1.</b> <q>Es el nivel de empaquetamiento más bajo de los cromosomas</q>.</li><li><q>En el momento de la división celular (MITOSIS), las fibras de cromatina se ordenan y experimentan varios niveles de superenrollamiento hasta formar el cromosoma metafásico</q>.</li></ol>Cuando la célula no se va a dividir, el ADN está como cromatina (diap. 33).</div>
+<div class="p why"><b>❓ ¿Por qué se compacta al máximo justo al dividirse?</b>Para <b>repartirlo sin que se enrede ni se rompa</b>. Es como meter los cables en cajas antes de una mudanza. Pero tiene un precio: lo que está tan compactado <b>no se puede leer</b>. Por eso, durante la división, la célula casi deja de fabricar ARN.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>Esto enlaza con el Tema 3 (citogenética). Los <b>cariotipos</b> se hacen con cromosomas metafásicos, porque es cuando se ven mejor. Por eso se usa <b>colchicina</b>: deja las células paradas en metafase.</div>
+<details class="chk"><summary>Ordena de menos a más compactado: solenoide, cromosoma metafásico, doble hélice, nucleosoma/fibra de cromatina</summary><div>Doble hélice → nucleosoma/fibra de cromatina (collar de perlas) → solenoide → cromosoma metafásico.</div></details>
+</article>
+
+<article class="c o">
+<h3>Eucromatina y heterocromatina</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 34</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>Piensa en la ropa de tu casa. La <b>eucromatina</b> es la ropa del armario abierto: está a mano y la usas a diario. La <b>heterocromatina</b> es la ropa guardada en cajas en el trastero: está apretada y no la usas.</div>
+<div class="p def"><b>📌 Definición formal (diap. 34)</b><ul><li><b>Eucromatina</b>: <q>cromatina poco compactada y que presenta una gran concentración de genes</q>. Normalmente (aunque no siempre) esos genes se están transcribiendo.</li><li><b>Heterocromatina</b>: <q>cromatina más compacta y condensada, por lo que no se puede dar la transcripción</q>.</li><li>La eucromatina se replica <b>al inicio de la fase S</b>; la heterocromatina, <b>hacia el final</b>.</li></ul></div>
+<div class="p why"><b>❓ ¿Por qué la eucromatina se replica primero?</b>Porque está <b>abierta</b> y la maquinaria llega a ella fácilmente. La heterocromatina primero hay que desempaquetarla, y eso tarda más.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>En el núcleo se ven zonas claras (eucromatina) y zonas oscuras (heterocromatina). Una célula muy activa tiene el núcleo más claro. Algunos tumores tienen un patrón típico: en los tumores neuroendocrinos se describe la cromatina "en sal y pimienta".</div>
+</article>
+<button class="donebtn" type="button" data-b="b4" aria-pressed="false">✓ Bloque 4 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 5 ============ -->
+<section class="blk" id="b5" data-w="2" data-t="Tipos de ADN">
+<div class="blk-h"><div class="n">Bloque 5 · diap. 34–38</div><h2>Tipos de ADN</h2><p>Nuclear, mitocondrial, de cloroplastos y de bacterias.</p></div>
+
+<article class="c b">
+<h3>ADN cromosómico (nuclear)</h3>
+<div class="meta"><span class="lv b">🔵 Contexto</span><span class="dp">📍 diap. 34</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 34)</b>En los eucariotas está en el núcleo. En humanos tiene <b>20.000–25.000 genes</b>.</div>
+</article>
+
+<article class="c o">
+<h3>ADN mitocondrial (ADNmt)</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 35–36</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 36)</b><q>ADN bicatenario (doble hélice) y circular de 16,5 kb (en humanos)</q>. Está en todos los eucariotas. Sus características:<ul><li>Suele haber <b>varias copias</b> en cada mitocondria.</li><li>Tiene <b>37 genes</b>, que codifican ARN ribosómico, ARN de transferencia y proteínas de los procesos de la mitocondria, como la respiración celular.</li><li>Se replica <b>de forma independiente</b> del ADN nuclear.</li></ul><p class="note">kb = kilobase = 1.000 pares de bases. Bicatenario = de dos cadenas.</p></div>
+<div class="p why"><b>❓ ¿Por qué la mitocondria tiene su propio ADN, y además circular como el de una bacteria?</b>Porque, según la teoría endosimbiótica, hace muchísimo tiempo <b>las mitocondrias eran bacterias</b> que vivían libres, hasta que otra célula las "adoptó". Conservaron su ADN circular y su forma de copiarlo por su cuenta. (Esto no viene en las diapositivas, pero explica por qué se parece al de las bacterias.)</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>Como hay <b>muchas copias por célula</b>, el ADNmt se puede recuperar incluso de muestras muy degradadas, como un pelo o un hueso antiguo. Por eso se usa en genética forense. Además, se hereda solo de la madre.</div>
+</article>
+
+<article class="c b">
+<h3>ADN de cloroplastos (ADNcp)</h3>
+<div class="meta"><span class="lv b">🔵 Contexto</span><span class="dp">📍 diap. 35, 37</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 37)</b>Solo en organismos fotosintéticos. Es bicatenario y circular, de <b>120 a 160 kb</b>. Suele haber varias moléculas en cada cloroplasto. Tiene unos <b>150 genes</b> (depende de la especie), para ARNr, ARNt y proteínas del cloroplasto, sobre todo de la <b>fotosíntesis</b>. Se replica de forma independiente del ADN nuclear.</div>
+<div class="p tip"><b>🧠 Truco para no mezclar los números</b>Mitocondria = <b>16,5 kb y 37 genes</b> (los números pequeños, como la mitocondria). Cloroplasto = <b>120–160 kb y ~150 genes</b> (todo en "cientos").</div>
+</article>
+
+<article class="c o">
+<h3>ADN de procariotas (bacterias) y plásmidos</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 38</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 38)</b>Es bicatenario y circular:<ul><li><b>Un solo cromosoma circular, libre en el citoplasma.</b></li><li><b>No está unido a proteínas, así que no forma cromatina.</b></li><li>Muchas bacterias tienen además pequeñas moléculas de ADN circular llamadas <b>plásmidos</b>.</li></ul></div>
+<div class="p why"><b>❓ ¿Por qué una bacteria no tiene cromatina?</b>Porque la cromatina es el ADN unido a histonas, y las bacterias no tienen histonas. Su ADN es pequeño y no necesita tanto empaquetamiento. Y no tiene núcleo, así que su ADN flota en el citoplasma.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b><ul><li>Los plásmidos suelen llevar <b>genes de resistencia a antibióticos</b>, y las bacterias se los pasan entre ellas. Así aparecen las bacterias multirresistentes en los hospitales.</li><li>En biotecnología se meten genes humanos en plásmidos para que las bacterias fabriquen proteínas. Así se produce, por ejemplo, la insulina.</li></ul></div>
+</article>
+<button class="donebtn" type="button" data-b="b5" aria-pressed="false">✓ Bloque 5 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 6 ============ -->
+<section class="blk" id="b6" data-w="2" data-t="ARN: características y estructuras">
+<div class="blk-h"><div class="n">Bloque 6 · diap. 39–43</div><h2>ARN: características y estructuras</h2><p>Una sola cadena que se dobla para trabajar.</p></div>
+
+<article class="c o">
+<h3>Características del ARN</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 39</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 39)</b><ol><li><q>Cadenas de ribonucleótidos formados por el grupo fosfato, una ribosa y 4 tipos de bases nitrogenadas (A, U, G y C)</q>.</li><li>Tamaño: depende del número de nucleótidos, pero son <b>mucho más pequeñas</b> que el ADN (cientos o miles de bases).</li><li>Función: <q>controla la síntesis de proteínas a partir de la información contenida en el ADN</q>.</li></ol></div>
+<div class="p why"><b>❓ ¿Por qué es mucho más pequeño que el ADN?</b>Porque el ADN es el libro entero, y cada ARN es la fotocopia de <b>una sola receta</b> (un gen). Y como es una sola cadena, se puede doblar y tomar formas distintas para hacer distintos trabajos, como los ARNt o los ARNr.</div>
+</article>
+
+<article class="c r">
+<h3>Estructuras primaria, secundaria y terciaria del ARN</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe (G-U)</span><span class="dp">📍 diap. 40–43</span></div>
+<div class="p def"><b>📌 Definición formal</b><ul><li><b>Primaria (diap. 40)</b>: <q>es la secuencia de bases nitrogenadas de la cadena simple de nucleótidos leídas en dirección 5' → 3'</q>.</li><li><b>Secundaria (diap. 41)</b>: <q>la cadena simple de ARN puede plegarse y presentar regiones con bases apareadas</q> (por ejemplo, el ARN de transferencia). Las bases <b>no siempre serán complementarias</b>: se forman A-U, G-C y <b>🔴 G-U</b>. Aunque haya zonas apareadas, los extremos 5' y 3' quedan libres.</li><li><b>Terciaria (diap. 42)</b>: <q>consiste en un plegamiento de la estructura secundaria, normalmente por asociación con proteínas</q>. Por ejemplo, el ARN ribosomal y el ARN transferente.</li></ul></div>
+<div class="p und"><b>💡 Para entenderlo</b>Coge un cordón y dóblalo sobre sí mismo: algunos trozos quedan pegados unos con otros y forman horquillas y bucles. Eso es la estructura secundaria. Si después ese cordón doblado se aprieta más y se pega a unas proteínas, es la terciaria.</div>
+<div class="p why"><b>❓ ¿Por qué en el ARN vale la pareja G-U, que en el ADN no existe?</b>En el ADN, dos hebras enteras tienen que encajar a la perfección a lo largo de toda la molécula. En el ARN, una sola cadena se dobla sobre sí misma, y un pliegue <b>admite parejas imperfectas</b>. Y en el ARN eso importa poco, porque lo que cuenta es la <b>forma</b>: la forma es lo que le permite hacer su trabajo, igual que la forma de una llave es lo que le permite abrir una cerradura.</div>
+<details class="chk"><summary>En una pregunta tipo test, ¿es verdad que "en el ARN las bases siempre se emparejan A-U y C-G"?</summary><div><b>Falso.</b> La profe marca en rojo que también se forma <b>G-U</b>. Las bases del ARN "no siempre serán complementarias".</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b6" aria-pressed="false">✓ Bloque 6 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 7 ============ -->
+<section class="blk" id="b7" data-w="3" data-t="Los 3 tipos de ARN">
+<div class="blk-h"><div class="n">Bloque 7 · diap. 44–48</div><h2>Los 3 tipos de ARN</h2><p>El mensaje (ARNm), el adaptador (ARNt) y la fábrica (ARNr).</p></div>
+
+<article class="c o">
+<h3>ARN mensajero (ARNm)</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 44</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 44)</b>En eucariotas: 1. <q>Es una copia exacta de la secuencia de un gen de ADN</q>. 2. <q>Porta la información para la síntesis de una proteína</q>.</div>
+<div class="p und"><b>💡 Para entenderlo</b>Es la fotocopia de una receta que sale del núcleo hacia la cocina (el ribosoma).</div>
+</article>
+
+<article class="c o">
+<h3>ARN transferente (ARNt): el traductor bilingüe</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 45–46, 97–98</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 45–46)</b><ol><li><q>Transportan los aminoácidos hasta los ribosomas</q> para formar la cadena de la proteína.</li><li>Su estructura secundaria tiene <b>forma de trébol</b>, que se pliega en una terciaria con <b>forma de L</b>.</li></ol>Tiene dos partes clave:<ul><li><b>Brazo aceptor</b>: el sitio de unión del aminoácido, en el extremo <b>CCA-3'</b>.</li><li><b>Brazo anticodón</b>: tiene el <b>anticodón</b>, 3 bases que reconocen el <b>codón</b> del ARNm que indica qué aminoácido toca añadir.</li></ul></div>
+<div class="p und"><b>💡 Para entenderlo</b>Es un intérprete que habla dos idiomas a la vez. Por un extremo "habla nucleótidos" (con el anticodón lee el ARNm) y por el otro lleva el aminoácido.</div>
+<div class="p why"><b>❓ ¿Por qué hace falta el ARNt? ¿No podrían los aminoácidos pegarse solos al ARNm?</b>No, porque <b>un aminoácido no tiene forma de reconocer bases</b>: son idiomas distintos. Hace falta una molécula que tenga un pie en cada idioma, y eso es el ARNt. Sin él, el código genético no se podría leer.</div>
+<div class="p tip"><b>🧠 Truco</b><b>A</b>ceptor = donde <b>A</b>garra el <b>A</b>minoácido. Anti<b>codón</b> = el que lee el <b>codón</b>.</div>
+</article>
+
+<article class="c o">
+<h3>ARN ribosomal (ARNr) y el ribosoma</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 47–48, 99</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 47–48)</b><ol><li><q>Es el ARN mayoritario en las células (aproximadamente el 80 % del ARN)</q>.</li><li>Tiene una estructura secundaria <b>muy compleja</b>, con muchas horquillas y bucles.</li><li>Combinado con ciertas proteínas forma los <b>ribosomas</b>: <q>orgánulos citoplasmáticos responsables de la síntesis de proteínas</q>.<ul><li>Subunidad <b>60</b>: 3 moléculas de ARNr y 49 proteínas.</li><li>Subunidad <b>40</b>: 1 molécula de ARNr y 33 proteínas.</li></ul></li></ol></div>
+<div class="p why"><b>❓ ¿Por qué el ARNr es el más abundante?</b>Porque una célula tiene <b>millones de ribosomas</b> trabajando a la vez, y cada uno está hecho de ARNr. Un ARNm se usa y desaparece; los ribosomas son la maquinaria fija de la fábrica.</div>
+<div class="p lab"><b>🔬 En el laboratorio y en la clínica</b>Los números 60 y 40 se miden en unidades "S" (Svedberg), que indican lo rápido que cae la pieza al centrifugarla. Por eso no se suman: el ribosoma humano completo es 80S, no 100S. Los ribosomas de las bacterias son distintos (70S). Muchos antibióticos (tetraciclinas, aminoglucósidos, macrólidos) <b>bloquean el ribosoma bacteriano sin tocar el humano</b>: por eso matan a la bacteria y no a ti.</div>
+<details class="chk"><summary>¿Qué subunidad tiene más ARNr y cuánto exactamente?</summary><div>La <b>60</b>: 3 ARNr y 49 proteínas. La 40 tiene 1 ARNr y 33 proteínas.</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b7" aria-pressed="false">✓ Bloque 7 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 8 ============ -->
+<section class="blk" id="b8" data-w="3" data-t="Flujo de la información y características de la replicación">
+<div class="blk-h"><div class="n">Bloque 8 · diap. 49, 51–58</div><h2>Flujo de la información y cómo es la replicación</h2><p>Del gen a la proteína, y las 4 características de la copia del ADN.</p></div>
+
+<article class="c o">
+<h3>El dogma central: del gen a la proteína</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 49, 52</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 52)</b>El ADN almacena la información genética, la transmite a los descendientes y dirige la síntesis de proteínas. Para eso hay 3 procesos:<ul><li><b>Replicación</b>: duplicación del ADN, para la división celular (mitosis y meiosis).</li><li><b>Transcripción</b>: síntesis de ARNm a partir de ADN.</li><li><b>Traducción</b>: síntesis de proteínas a partir de ARNm.</li></ul></div>
+<div class="p why"><b>❓ ¿Por qué todo acaba en proteínas?</b>Porque las proteínas son las que <b>hacen el trabajo</b>: son las enzimas que aceleran las reacciones, las estructuras (como el colágeno), los transportadores (como la hemoglobina) y las defensas (como los anticuerpos). El ADN solo guarda las instrucciones.</div>
+<div class="p tip"><b>🧠 Truco</b><b>Re</b>plicación = <b>re</b>petir el ADN. <b>Trans</b>cripción = <b>trans</b>cribir, es decir, copiar en el mismo idioma (letras a letras). <b>Tra</b>ducción = <b>tra</b>ducir a otro idioma (de letras a aminoácidos).</div>
+</article>
+
+<article class="c o">
+<h3>Replicación: qué es y cuándo ocurre</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 53</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 53)</b><q>Proceso por el cual una molécula de ADN se duplica para dar lugar a dos moléculas de ADN idénticas</q>. Ocurre en la <b>fase S de la interfase</b>, cuando la célula se prepara para dividirse por mitosis o meiosis.</div>
+<div class="p why"><b>❓ ¿Por qué tiene que ser antes de dividirse?</b>Porque cada célula hija necesita <b>una copia completa</b> del libro. Si la célula se dividiera sin copiar antes, cada hija se llevaría solo la mitad.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>En anatomía patológica se usa la tinción <b>Ki-67</b> (una técnica de inmunohistoquímica), que marca las células que están en el ciclo celular, es decir, preparándose para dividirse o dividiéndose. Cuantas más células marcadas, más rápido crece un tumor. También se cuentan las <b>mitosis</b> para dar el grado del tumor.</div>
+</article>
+
+<article class="c o">
+<h3>Las 4 características de la replicación</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 54–57</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 54–57)</b><ol><li><b>Semiconservativa</b>: <q>una hebra viene de la molécula original y la otra se sintetiza</q>.</li><li><b>Comienza en un origen de replicación</b>, es decir, en puntos concretos. Los procariotas tienen <b>un único origen</b> y los eucariotas, <b>más de uno</b>.</li><li><b>Bidireccional</b>: las nuevas cadenas se fabrican <b>en ambos sentidos</b>, usando las 2 cadenas de ADN como molde. Así se forma la <b>burbuja de replicación</b>.</li><li><b>Semidiscontinua</b>: las cadenas nuevas se fabrican siempre en dirección 5' → 3', y como las hebras son antiparalelas:<ul><li>Una se fabrica de forma <b>continua</b>: es la <b>hebra líder, conductora o continua</b>.</li><li>La otra se fabrica <b>a trozos</b>, llamados <b>fragmentos de Okazaki</b>: es la <b>hebra retardada</b>.</li></ul></li></ol></div>
+<div class="p why"><b>❓ El porqué de cada una</b><ul>
+<li><b>Semiconservativa</b>: la hebra vieja hace de <b>molde y de referencia</b>. Si en la hebra nueva se cuela un error, la célula sabe cuál es la buena (la original) y corrige la nueva.</li>
+<li><b>Varios orígenes en eucariotas</b>: nuestro ADN es <b>enorme</b>. Con un solo origen, copiarlo tardaría semanas. Es como pintar una carretera muy larga: un pintor solo tardaría muchísimo, pero miles de pintores empezando a la vez en distintos puntos terminan en horas.</li>
+<li><b>Bidireccional</b>: desde cada origen se copia hacia los dos lados a la vez, así que va <b>el doble de rápido</b>.</li>
+<li><b>Semidiscontinua</b>: lo explico a fondo justo abajo, porque es lo que más se suele confundir.</li></ul></div>
+</article>
+
+<article class="c o">
+<h3>¿Por qué una hebra va seguida y la otra a trozos?</h3>
+<div class="meta"><span class="lv o">🟠 Clave · lo que más se confunde</span><span class="dp">📍 diap. 56–57, 68</span></div>
+<div class="p und"><b>💡 Para entenderlo, paso a paso</b><ol><li>La ADN polimerasa <b>solo sabe escribir en un sentido</b>: de 5' a 3'. Únicamente puede añadir nucleótidos al extremo 3' de la cadena que está fabricando.</li><li>Las dos hebras del ADN van en <b>sentidos contrarios</b> (son antiparalelas).</li><li>La helicasa va abriendo la doble hélice como una cremallera que avanza.</li><li>En una de las hebras, la dirección en la que la polimerasa puede escribir coincide con la dirección en la que se abre la cremallera. Así que va <b>detrás de la helicasa sin parar</b>: es la <b>conductora</b>.</li><li>En la otra hebra, la polimerasa tiene que escribir <b>hacia atrás</b>, alejándose de la cremallera. Así que espera a que se abra un trozo, lo copia hacia atrás, vuelve a esperar, y empieza otro trozo. Esos trozos son los <b>fragmentos de Okazaki</b>, y esa es la <b>retardada</b>.</li></ol></div>
+<div class="p why"><b>❓ ¿Y por qué la polimerasa no puede escribir en los dos sentidos?</b>Porque la <b>energía</b> para pegar cada nucleótido la trae el propio nucleótido que llega: viene con 3 fosfatos y suelta 2 al unirse. Este mecanismo solo funciona si se pega al extremo 3' de la cadena. (Esto no viene en las diapositivas; es para que entiendas que no es una regla caprichosa.)</div>
+<div class="p tip"><b>🧠 Pista de examen (diap. 68)</b><b>La hebra nueva que va en el mismo sentido que la helicasa es la continua. La que va en sentido contrario es la retardada.</b></div>
+<details class="chk"><summary>¿Por qué la hebra retardada necesita muchos primers y la conductora solo uno?</summary><div>Porque la conductora se fabrica de corrido desde el origen: basta con un punto de arranque. La retardada se fabrica a trozos, y <b>cada fragmento de Okazaki necesita su propio punto de arranque</b>, es decir, su propio primer.</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b8" aria-pressed="false">✓ Bloque 8 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 9 ============ -->
+<section class="blk" id="b9" data-w="4" data-t="Replicación: fases y enzimas">
+<div class="blk-h"><div class="n">Bloque 9 · diap. 59–75</div><h2>Replicación: fases y enzimas</h2><p>Es lo que más marca la profe en rojo. Apréndelo como una obra con un equipo de operarios.</p></div>
+
+<article class="c r">
+<h3>Fase 1 · Iniciación: se abre la burbuja</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 59–63</span></div>
+<div class="p def"><b>📌 Los pasos tal como vienen (diap. 60–63)</b><ol>
+<li>La replicación empieza en una secuencia de nucleótidos llamada <b>origen de replicación</b>.</li>
+<li>Unas <b>proteínas específicas</b> reconocen el origen y se unen a él. Esa unión <b>activa las helicasas</b>.</li>
+<li>Las <b>helicasas rompen los puentes de hidrógeno</b> entre las bases de las dos cadenas y forman la <b>burbuja de replicación</b>.</li>
+<li>Las <b>dos helicasas</b> empiezan a trabajar desde el origen, cada una en un sentido. Por eso la replicación es <b>bidireccional</b>.</li>
+<li>Para que la burbuja no se cierre, las <b>proteínas de unión a cadena sencilla (SSBP)</b> se unen a las hebras abiertas. Al desenrollar se crea tensión en las zonas cercanas, y la <b>girasa y la topoisomerasa</b> la relajan.</li></ol></div>
+<div class="p why"><b>❓ El porqué de cada paso</b><ul>
+<li><b>¿Por qué hace falta un origen?</b> Porque la maquinaria necesita saber <b>dónde empezar</b>, como la marca de salida de una carrera.</li>
+<li><b>¿Por qué SSBP?</b> Las hebras separadas tienden a <b>volver a pegarse solas</b> (es la renaturalización del Bloque 2). Las SSBP las mantienen separadas, como unos dedos que sujetan la cremallera abierta.</li>
+<li><b>¿Por qué topoisomerasa y girasa?</b> Coge una cuerda trenzada y separa las dos hebras por el medio: verás que el resto de la cuerda <b>se retuerce todavía más</b>. Esa tensión acabaría rompiendo el ADN. La topoisomerasa <b>corta, deja girar y vuelve a pegar</b>, y así quita la tensión.</li></ul></div>
+<div class="p lab"><b>🔬 En la clínica</b>Algunos fármacos de quimioterapia bloquean la topoisomerasa (el irinotecán bloquea la topoisomerasa I; el etopósido y la doxorrubicina, la II). Sin topoisomerasa, el ADN de las células que se dividen mucho, como las del tumor, se rompe al intentar replicarse.</div>
+<div class="p tip"><b>🧠 Truco: el orden de la iniciación</b>"<b>O</b>rigen → <b>P</b>roteínas → <b>H</b>elicasa → <b>B</b>urbuja → <b>S</b>SBP → <b>T</b>opoisomerasa". Frase para recordarlo: "<b>O</b>tra <b>P</b>izza <b>H</b>ace <b>B</b>ien <b>S</b>i <b>T</b>engo hambre".</div>
+</article>
+
+<article class="c r">
+<h3>Fase 2 · Elongación: se fabrican las hebras nuevas</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 64–66</span></div>
+<div class="p def"><b>📌 Los pasos tal como vienen (diap. 64–66)</b><ol>
+<li>La <b>primasa</b> (que es una ARN polimerasa) fabrica los <b>primers o cebadores</b> en dirección 5' → 3'.<ul><li>Hebra conductora: <b>un único primer</b>, en el origen de replicación.</li><li>Hebra retardada: <b>varios primers</b>. A medida que avanza la horquilla, se van poniendo primers nuevos, que darán lugar a los fragmentos de Okazaki.</li></ul></li>
+<li>Una vez puestos los primers, la <b>ADN polimerasa III</b> fabrica las hebras nuevas en dirección 5' → 3'. En la conductora, de forma continua. En la retardada, de forma discontinua: fabrica cada fragmento de Okazaki hasta que llega al primer siguiente.</li>
+<li><b>Se quitan los primers y se unen todos los fragmentos.</b><ul><li><b>ADN polimerasa I</b>: con su actividad <b>exonucleasa</b> retira los primers, y con su actividad <b>polimerasa</b> pone ADN en su lugar.</li><li><b>Ligasa</b>: después de la ADN polimerasa I, va uniendo los fragmentos de ADN de la hebra recién copiada.</li></ul></li></ol>
+<p class="note">Exonucleasa = actividad que corta nucleótidos desde un extremo de la cadena. Horquilla de replicación = cada uno de los dos extremos de la burbuja, donde se está abriendo el ADN.</p></div>
+<div class="p why"><b>❓ ¿Por qué hacen falta los primers?</b>Porque la ADN polimerasa <b>no sabe empezar de cero</b>: necesita un extremo 3' ya existente donde seguir añadiendo, como quien solo sabe continuar una frase empezada. La primasa, en cambio, sí sabe empezar sola, porque es una ARN polimerasa (y las ARN polimerasas no necesitan primer). Por eso el primer es de <b>ARN</b>: es una pieza provisional que después se cambia por ADN.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>En la PCR los primers son de <b>ADN</b> y los diseñamos nosotros. Son los que deciden <b>qué trozo concreto</b> se copia: la polimerasa solo copia a partir de donde se ha pegado un primer.</div>
+</article>
+
+<article class="c r">
+<h3>El equipo de obra: cada enzima y qué pasa si falla</h3>
+<div class="meta"><span class="lv r">🔴 Muy preguntado</span><span class="dp">📍 diap. 67–74</span></div>
+<div class="tw"><table>
+<tr><th>Enzima</th><th>Qué hace (diap.)</th><th>Si faltara…</th></tr>
+<tr><td><b>Helicasa</b></td><td>Desenrolla y separa las 2 cadenas de la doble hélice, en ambos sentidos (68)</td><td>No se abre el ADN: no hay replicación</td></tr>
+<tr><td><b>SSB</b></td><td>Se une a las cadenas desenrolladas e impide que se vuelva a formar la doble hélice (69)</td><td>Las hebras se vuelven a pegar</td></tr>
+<tr><td><b>Topoisomerasa y girasa</b></td><td>Relajan la tensión del superenrollamiento que se forma en el resto de la hélice (69)</td><td>El ADN se retuerce y se rompe</td></tr>
+<tr><td><b>Primasa</b></td><td>Tiene función ARN polimerasa: fabrica fragmentos cortos de ARN (unos 10 nucleótidos), los primers, complementarios a zonas concretas del ADN (70)</td><td>La ADN polimerasa no tiene por dónde empezar</td></tr>
+<tr><td><b>ADN polimerasa (III)</b></td><td>Añade nucleótidos nuevos al extremo <b>OH-3'</b> de la cadena que crece, siempre en 5' → 3', complementarios a la hebra molde. Reconoce los primers para empezar (72–73)</td><td>No se fabrica la hebra nueva</td></tr>
+<tr><td><b>ADN polimerasa (I)</b></td><td>Elimina los primers de ARN y los sustituye por ADN, también en 5' → 3' (74)</td><td>Quedan trozos de ARN dentro del ADN</td></tr>
+<tr><td><b>Ligasa</b></td><td>Une los fragmentos de ADN entre sí (74)</td><td>La hebra retardada se queda en trozos sueltos</td></tr>
+</table></div>
+<div class="p und"><b>💡 Para entenderlo</b>Helicasa = el que abre la cremallera · SSB = el que la sujeta abierta · Topoisomerasa = el que quita la tensión · Primasa = el que pone las marcas de salida · Pol III = el albañil que construye · Pol I = el que cambia las marcas provisionales por material definitivo · Ligasa = el que pega las juntas.</div>
+<div class="p tip"><b>🧠 Truco: el orden de aparición</b>"<b>H</b>oy <b>S</b>e <b>T</b>rabaja: <b>P</b>rimero <b>3</b>, luego <b>1</b> y <b>L</b>isto". Es decir: Helicasa, SSB, Topoisomerasa, Primasa, pol III, pol I, Ligasa.</div>
+<details class="chk"><summary>Pregunta trampa: ¿qué ADN polimerasa quita los primers, la I o la III?</summary><div>La <b>I</b>. La III es la que construye las hebras. Para no liarte: la III llega antes porque es "la grande", la que hace casi todo el trabajo, y la I es la que "corrige" al final.</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b9" aria-pressed="false">✓ Bloque 9 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 10 ============ -->
+<section class="blk" id="b10" data-w="2" data-t="Replicación en eucariotas y telómeros">
+<div class="blk-h"><div class="n">Bloque 10 · diap. 76–77</div><h2>Replicación en eucariotas y telómeros</h2><p>Por qué nuestros cromosomas se acortan un poco cada vez.</p></div>
+
+<article class="c o">
+<h3>Lo propio de los eucariotas</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 76</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 76)</b><ul><li><b>Múltiples orígenes</b> de replicación.</li><li><b>Varios tipos de ADN polimerasas</b>, que se reparten las tareas.</li><li>Durante la replicación también se unen las <b>histonas</b> y se forman los <b>nucleosomas</b>.</li><li><b>Reducción de los telómeros.</b></li></ul></div>
+<div class="p why"><b>❓ ¿Por qué hay que colocar histonas durante la replicación?</b>Porque el ADN nuevo también tiene que quedar <b>empaquetado</b>. Si no se le ponen sus carretes, no cabría en el núcleo. Las bacterias no tienen histonas, así que no hacen este paso.</div>
+</article>
+
+<article class="c o">
+<h3>Acortamiento de los telómeros</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 76–77</span></div>
+<div class="p und"><b>💡 Para entenderlo</b>Los <span class="t">telómeros</span> son los extremos de los cromosomas. Son como el plástico de la punta de los cordones: no llevan información, pero protegen. Están hechos de una secuencia que se repite muchas veces: TTAGGG. En cada división se pierde un trocito.</div>
+<div class="p why"><b>❓ ¿Por qué se pierde ese trozo?</b>En la punta del cromosoma, el <b>último primer</b> de la hebra retardada se quita, y en su lugar no se puede poner ADN: no queda ningún extremo 3' delante desde el que la polimerasa pueda rellenar. Así que ese <b>trozo no se puede copiar y se pierde</b>. Por eso los telómeros se van acortando con cada división. Las bacterias no tienen este problema porque su ADN es circular, sin puntas.</div>
+<div class="p def"><b>📌 Definición formal (diap. 77)</b>Al final del telómero hay un <q>fragmento que se pierde porque no se puede copiar</q>: es donde estaba el primer. Con cada división celular, disminuye la longitud de los telómeros.</div>
+<div class="p lab"><b>🔬 En la clínica</b>Cuando los telómeros se acortan demasiado, la célula deja de dividirse: es parte del envejecimiento celular. Muchas células tumorales activan una enzima, la <b>telomerasa</b>, que vuelve a alargar los telómeros, y así se pueden dividir sin límite. Esto enlaza con el Tema 2 (cultivos): las líneas celulares continuas como las HeLa se dividen indefinidamente por esto mismo.</div>
+<details class="chk"><summary>¿Por qué el ADN de una bacteria no pierde telómeros?</summary><div>Porque es <b>circular</b>: no tiene extremos, y por tanto no le queda ningún "último primer" sin rellenar.</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b10" aria-pressed="false">✓ Bloque 10 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 11 ============ -->
+<section class="blk" id="b11" data-w="3" data-t="Transcripción">
+<div class="blk-h"><div class="n">Bloque 11 · diap. 78–83</div><h2>Transcripción: del ADN al ARN</h2><p>Sacar la fotocopia de una sola receta.</p></div>
+
+<article class="c o">
+<h3>Qué es y en qué se diferencian procariotas y eucariotas</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 78</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 78)</b><q>La transcripción es el proceso por el cual se sintetiza una molécula de ARN utilizando como molde una cadena de ADN</q>. Tiene 3 fases: iniciación, elongación y terminación.<ul><li>En <b>procariotas</b> se obtienen directamente moléculas de ARN <b>maduras</b>.</li><li>En <b>eucariotas</b> se obtienen moléculas de ARN que tienen que sufrir <b>modificaciones para madurar</b>.</li></ul></div>
+<div class="p why"><b>❓ ¿Por qué se copia solo una hebra, y solo un gen?</b>Porque de una receta solo necesitas el texto de esa receta, no el libro entero. Y basta con una hebra, porque la otra solo es su "negativo".</div>
+</article>
+
+<article class="c o">
+<h3>Las ARN polimerasas</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 79</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 79)</b>La enzima principal es la <b>ARN polimerasa</b>: <q>síntesis de ARN usando una cadena de ADN como molde</q>. Fabrica la copia de ARN en dirección <b>5' → 3'</b>.<ul><li>Células procariotas: <b>un único tipo</b> de ARN polimerasa.</li><li>Células eucariotas: <b>3 tipos</b>:<ul><li><b>ARN polimerasa I</b> → la mayor parte del <b>ARNr</b>.</li><li><b>ARN polimerasa II</b> → el <b>ARNm</b>.</li><li><b>ARN polimerasa III</b> → el <b>ARNt</b> y una parte del ARNr.</li></ul></li></ul></div>
+<div class="p why"><b>❓ ¿Por qué no necesita primer, si la ADN polimerasa sí?</b>Porque las ARN polimerasas <b>sí saben empezar de cero</b>. Por eso mismo la primasa, que es una ARN polimerasa, es la que pone los primers en la replicación. Todo encaja.</div>
+<div class="p lab"><b>🔬 En la clínica</b>La seta <i>Amanita phalloides</i> lleva una toxina, la α-amanitina, que <b>bloquea la ARN polimerasa II</b>. El hígado deja de fabricar ARNm, y por tanto proteínas, y puede llegar al fallo hepático.</div>
+<div class="p tip"><b>🧠 Truco</b>"<b>RoMa Tú</b>": I → r, II → m, III → t (y la III también hace un poco de r).</div>
+</article>
+
+<article class="c r">
+<h3>Iniciación: el promotor</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 80</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 80)</b><ol><li>La ARN polimerasa reconoce una secuencia específica de bases llamada <b>promotor</b>, que está al inicio de un gen. <b>Cada gen tiene su propio promotor.</b></li><li>Después de unirse al promotor, las dos hebras de ADN se separan y empieza la síntesis de ARN.</li></ol></div>
+<div class="p why"><b>❓ ¿Por qué cada gen tiene su propio promotor?</b>Porque el promotor es como el <b>interruptor</b> de cada gen y la señal de "empieza aquí". Gracias a eso, cada célula enciende solo los genes que necesita. Una neurona y una célula del hígado tienen <b>exactamente el mismo ADN</b>, pero encienden genes distintos: por eso son tan diferentes.</div>
+</article>
+
+<article class="c r">
+<h3>Elongación: hebra molde y hebra codificante</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 81–82</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 81)</b><ol start="3"><li>La ARN polimerasa añade ribonucleótidos en dirección 5' → 3', usando como molde una hebra de ADN: la <b>cadena molde</b> (3' → 5'). El <b>transcrito de ARN</b> tiene la misma información que la hebra de ADN contraria a la molde, la <b>cadena codificante</b>, pero lleva <b>uracilo (U) en lugar de timina (T)</b>.</li></ol>En la replicación, los nucleótidos se unen de forma parecida (diap. 82).</div>
+<div class="p und"><b>💡 Para entenderlo</b>La hebra <b>molde</b> es como el negativo de una foto: la polimerasa la "lee". El ARN que sale es como la foto revelada: queda igual que la otra hebra, la <b>codificante</b>, solo que cambiando T por U.</div>
+<div class="p why"><b>❓ ¿Por qué se llama "codificante" la hebra que no se lee?</b>Porque su secuencia es <b>la misma que la del ARNm</b>, es decir, el "texto" de la receta que se va a traducir. La molde es la que se lee, pero su secuencia es la complementaria.</div>
+<div class="p tip"><b>🧠 Truco</b>La codificante es la <b>gemela</b> del ARN (solo cambia T por U). La molde es su <b>negativo</b>.</div>
+<details class="chk"><summary>La hebra codificante es 5' ATGAAATTT 3'. ¿Cuál es la molde y cuál es el ARNm?</summary><div><div class="seq">Codificante 5' ATG AAA TTT 3'
+Molde       3' TAC TTT AAA 5'
+ARNm        5' AUG AAA UUU 3'</div>El ARNm es igual que la codificante, cambiando T por U, y complementario a la molde.</div></details>
+</article>
+
+<article class="c r">
+<h3>Terminación (y por qué en las bacterias es todo más rápido)</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 83</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 83)</b><ol start="4"><li>La síntesis de ARN termina cuando la ARN polimerasa llega a una secuencia específica llamada <b>terminador</b>.</li><li>En ese punto, el ARN se separa de la cadena de ADN y de la ARN polimerasa.</li><li>La transcripción ha terminado. El resultado es un transcrito de ARN listo para la traducción: el ARNm.</li></ol>En <b>procariotas</b>, el ARNm está listo para traducirse justo después de la transcripción. Y como no hay núcleo, los ribosomas empiezan a fabricar la proteína directamente.</div>
+<div class="p why"><b>❓ ¿Por qué en las bacterias la traducción empieza enseguida?</b>Porque <b>no hay una membrana nuclear</b> que separe el ADN de los ribosomas: todo está en el mismo citoplasma. Los ribosomas se enganchan al ARNm incluso antes de que termine de fabricarse. En nuestras células, el ARN primero tiene que madurar y salir del núcleo.</div>
+<div class="p tip"><b>🧠 Truco</b><b>P</b>romotor = <b>P</b>rincipio. <b>T</b>erminador = <b>T</b>érmino.</div>
+</article>
+<button class="donebtn" type="button" data-b="b11" aria-pressed="false">✓ Bloque 11 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 12 ============ -->
+<section class="blk" id="b12" data-w="3" data-t="Maduración del ARN">
+<div class="blk-h"><div class="n">Bloque 12 · diap. 84–89</div><h2>Maduración del ARN (solo eucariotas)</h2><p>Antes de salir del núcleo, la copia se protege, se etiqueta y se edita.</p></div>
+
+<article class="c r">
+<h3>¿Por qué tiene que madurar el ARN?</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 84</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 84)</b>En eucariotas, el ARN necesita modificaciones para dar las moléculas maduras (ARNm, ARNt y ARNr): es la <b>maduración del ARN</b>. Hay 3 razones:<ol type="A"><li>El ARN, al ser monocatenario (de una sola cadena), <b>se degrada con mucha facilidad</b>. Se modifica para evitar que se degrade.</li><li>El ARN se fabrica en el núcleo, y para <b>salir al citoplasma</b> necesita modificar un poco su estructura y así poder atravesar la membrana del núcleo.</li><li>Los genes tienen regiones con información para fabricar proteínas (<b>exones</b>) y regiones sin esa información (<b>intrones</b>). Al producir el ARNm, hay que <b>eliminar los intrones</b>.</li></ol></div>
+<div class="p und"><b>💡 Para entenderlo</b>Antes de enviar una carta importante: la metes en un sobre resistente (para que no se estropee), le pones sello y dirección (para que pueda salir) y quitas las páginas que no tocan (para que solo lleve lo que importa). Esas son las 3 modificaciones de abajo.</div>
+</article>
+
+<article class="c r">
+<h3>1 · CAP-5' y 2 · cola poliA</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 85</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 85)</b><ul><li><b>CAP-5'</b>: se añade una <b>caperuza de metilguanosina en el extremo 5'</b>, es decir, al inicio del transcrito. Es un nucleótido de guanina (G) modificado, que se añade al primer nucleótido durante la transcripción. El cap 5':<ol><li><b>Evita que el ARN se degrade</b> durante la elongación.</li><li><b>Ayuda al ribosoma a unirse</b> al ARNm y a empezar a leerlo.</li></ol></li><li><b>Cola poliA</b>: se añade una <b>cola de adeninas en el extremo 3'</b>, al final del transcrito: <b>entre 100 y 200 adeninas</b>. La cola poliA <b>permite al ARN maduro salir al citoplasma</b>.</li></ul></div>
+<div class="p und"><b>💡 Para entenderlo</b>El <b>CAP</b> es un casco en la cabeza (el extremo 5'): protege y además funciona como un cartel de "empieza a leer aquí" para el ribosoma. La <b>cola poliA</b> es el pasaporte en los pies (el extremo 3'): sin ella, el ARN no puede salir del núcleo.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>Se aprovecha la cola poliA para <b>"pescar" solo los ARNm</b>: se usan cadenas cortas de T (oligo-dT), que se pegan a las A de la cola. También sirven como punto de partida para fabricar <b>ADNc</b> (ADN complementario: una copia en ADN de un ARNm, que se hace con la enzima transcriptasa inversa). Es lo primero que se hace en una RT-PCR, la técnica con la que se detectan virus de ARN o la expresión de un gen.</div>
+<div class="p tip"><b>🧠 Truco</b><b>CAP</b> = <b>CA</b>beza = 5'. Cola = final = 3'. Y en la cola van <b>A</b>deninas: cola <b>poliA</b>.</div>
+</article>
+
+<article class="c r">
+<h3>3 · Splicing: eliminar los intrones</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 86–87</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 86)</b>La eliminación de los intrones se hace mediante un proceso de corte y empalme llamado <b>splicing</b>, en el que interviene un complejo de proteínas llamado <b>spliceosoma</b>:<ol><li>Las proteínas se unen en el extremo de los intrones.</li><li>El intrón forma un <b>bucle</b>.</li><li>El spliceosoma corta en la base del bucle y <b>empalma los exones</b>.</li></ol></div>
+<div class="p und"><b>💡 Para entenderlo</b>Es como editar un vídeo quitando los anuncios: cortas los anuncios (los intrones) y pegas las escenas (los exones) para que se vean seguidas.</div>
+<div class="p why"><b>❓ ¿Por qué se forma un bucle?</b>Porque, al juntar los dos extremos del intrón, este se dobla y queda como una lazada. Así los dos exones quedan uno al lado del otro y se pueden cortar y pegar de un solo golpe.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>El ADNc se fabrica a partir del ARNm ya maduro, así que <b>no tiene intrones</b>. Por eso, cuando se quiere que una bacteria fabrique una proteína humana (como la insulina), se le da el ADNc: las bacterias no saben hacer splicing.</div>
+<div class="p tip"><b>🧠 Truco</b>Los <b>EX</b>ones se <b>EX</b>presan (se quedan). Los <b>IN</b>trones son <b>IN</b>útiles para la proteína (se van).</div>
+</article>
+
+<article class="c o">
+<h3>Splicing alternativo: un gen, varias proteínas</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 88–89</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 88)</b>En el splicing hay que eliminar todos los intrones y juntar los exones, pero puede ocurrir que <b>también se eliminen algunos exones</b>. Eso hace que <b>de la misma secuencia de ADN se puedan formar diferentes ARNm</b>, y por tanto distintas proteínas. Así se pueden codificar <b>más proteínas que genes</b> tenemos en el ADN.</div>
+<div class="p und"><b>💡 Para entenderlo</b>Con las mismas fotos de un viaje puedes montar dos álbumes distintos, eligiendo unas u otras. El gen son las fotos; cada ARNm es un álbum.</div>
+<div class="p why"><b>❓ ¿Por qué esto es tan útil?</b>Porque con unos 20.000–25.000 genes fabricamos muchísimas más proteínas distintas. Es una forma de <b>ahorrar ADN</b>.</div>
+</article>
+<button class="donebtn" type="button" data-b="b12" aria-pressed="false">✓ Bloque 12 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 13 ============ -->
+<section class="blk" id="b13" data-w="3" data-t="Proteínas y código genético">
+<div class="blk-h"><div class="n">Bloque 13 · diap. 90–95</div><h2>Proteínas y código genético</h2><p>El diccionario para pasar de 4 letras a 20 aminoácidos.</p></div>
+
+<article class="c r">
+<h3>Las proteínas están hechas de aminoácidos</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 90–91</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 90–91)</b><q>La traducción es el proceso por el cual se sintetiza una proteína a partir de una molécula de ARNm</q>. <b>¡Los genes codifican proteínas!</b> Las proteínas están formadas por <b>aminoácidos (AA)</b>. Cada aminoácido tiene una <b>R</b>, que es una cadena variable y específica de cada AA. Hay <b>20 aminoácidos estándar</b> (y algunos más raros). Cada uno tiene una abreviatura de 3 letras y otra de 1: Met / M, Lys / K, Phe / F, Gly / G…</div>
+<div class="p why"><b>❓ ¿Por qué 20 aminoácidos dan para tanto?</b>Porque cada R tiene propiedades químicas distintas: unas son grandes, otras pequeñas, unas tienen carga y otras repelen el agua. Combinando 20 piezas distintas en cadenas de cientos, salen formas prácticamente infinitas, y <b>la forma de una proteína es lo que decide su función</b>.</div>
+</article>
+
+<article class="c o">
+<h3>¿Por qué el código va de 3 en 3?</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 92–93</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 93)</b><q>El código genético es el diccionario que permite traducir una secuencia de nucleótidos a una secuencia de aminoácidos</q>. Se basa en que <b>una secuencia de 3 nucleótidos codifica un aminoácido</b>. Cada triplete se llama <b>codón</b>. Hay 4 bases (A, C, G, U), así que hay <b>4³ = 64 codones</b>: <b>61 codifican aminoácidos</b> y <b>3 son de terminación</b>.</div>
+<div class="p why"><b>❓ ¿Por qué 3 letras y no 2?</b>Haz la cuenta. Con codones de <b>1 letra</b> solo habría 4 combinaciones: no llega para 20 aminoácidos. Con <b>2 letras</b>, 4 × 4 = 16: tampoco llega. Con <b>3 letras</b>, 4 × 4 × 4 = <b>64</b>: llega y sobra. Por eso el código es de tripletes, y por eso sobran codones (lo verás en "degenerado").</div>
+<details class="chk"><summary>¿Cuántos codones hay en total, cuántos dan aminoácido y cuántos son STOP?</summary><div>64 en total (4³) · 61 dan aminoácido · 3 son STOP.</div></details>
+</article>
+
+<article class="c o">
+<h3>Las 4 características del código genético</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 94</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 94)</b><ul><li><b>Universal</b> → es el mismo para todos los organismos.</li><li><b>No ambiguo</b> → cada codón codifica un único aminoácido.</li><li><b>Degenerado</b> → hay 20 aminoácidos y 61 codones, así que la mayoría de los aminoácidos están codificados por más de un codón (son <b>codones sinónimos</b>).</li><li><b>Continuo y no solapado</b> → en el ARNm, los codones van uno detrás de otro, sin saltos y sin compartir letras.</li></ul></div>
+<div class="p why"><b>❓ Para qué sirve cada característica</b><ul>
+<li><b>Universal</b>: por eso una bacteria puede leer un gen humano y fabricar, por ejemplo, insulina humana.</li>
+<li><b>No ambiguo</b>: un mismo ARNm da siempre la misma proteína. Si un codón pudiera significar dos cosas, la proteína saldría distinta cada vez.</li>
+<li><b>Degenerado</b>: es una <b>protección contra las mutaciones</b>. Si cambia una letra pero el codón nuevo es sinónimo, la proteína queda igual (es la mutación silenciosa del Bloque 15).</li>
+<li><b>Continuo y no solapado</b>: por eso, si se mete o se quita una sola letra, <b>se descoloca todo lo que viene después</b> (es el cambio del marco de lectura del Bloque 15).</li></ul></div>
+<div class="p tip"><b>🧠 Truco</b>"<b>U</b>n <b>N</b>iño <b>D</b>ice <b>C</b>osas": <b>U</b>niversal, <b>N</b>o ambiguo, <b>D</b>egenerado, <b>C</b>ontinuo.</div>
+<details class="chk"><summary>Trampa: ¿"no ambiguo" y "degenerado" se contradicen?</summary><div>No. Hablan de direcciones distintas. <b>No ambiguo</b>: un codón → un solo aminoácido. <b>Degenerado</b>: un aminoácido → varios codones posibles. Un aminoácido puede tener varias "palabras", pero cada "palabra" significa una sola cosa.</div></details>
+</article>
+
+<article class="c r">
+<h3>Codón de inicio y codones STOP</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 95</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 95)</b><ul><li>Todas las secuencias de ARNm que se traducen <b>empiezan con el codón AUG</b>, que codifica la <b>Metionina (Met)</b>.</li><li>Los codones <b>UAA, UAG y UGA</b> son codones de terminación o <b>codones STOP</b>.</li></ul></div>
+<div class="p why"><b>❓ ¿Por qué los STOP no dan ningún aminoácido?</b>Porque son <b>señales</b>, no palabras: equivalen al punto final de la frase. No existe ningún ARNt que los reconozca, y por eso el ribosoma se detiene ahí (lo verás en la terminación).</div>
+<div class="p tip"><b>🧠 Truco para los STOP</b>"<b>U</b> <b>A</b>re <b>A</b>way, <b>U</b> <b>A</b>re <b>G</b>one, <b>U</b> <b>G</b>o <b>A</b>way" → UAA, UAG, UGA. Los tres empiezan por U.</div>
+</article>
+<button class="donebtn" type="button" data-b="b13" aria-pressed="false">✓ Bloque 13 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 14 ============ -->
+<section class="blk" id="b14" data-w="4" data-t="Traducción">
+<div class="blk-h"><div class="n">Bloque 14 · diap. 96–105</div><h2>Traducción: del ARNm a la proteína</h2><p>El ribosoma como una cadena de montaje.</p></div>
+
+<article class="c o">
+<h3>Lo que hace falta y los 3 sitios del ribosoma</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 96–99</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 96)</b>Para fabricar una proteína hace falta: <b>1 molécula de ARNm</b>, <b>los 20 aminoácidos</b>, <b>los ribosomas</b> (ARNr y proteínas), <b>los ARNt</b> que llevan los aminoácidos y la enzima <b>peptidil transferasa</b>, que une un aminoácido con el siguiente.<p>El ribosoma tiene 2 subunidades:</p><ul><li><b>Subunidad menor</b>: tiene 1 sitio de unión al ARNm (por el cap 5').</li><li><b>Subunidad mayor</b>: tiene 3 sitios de unión al ARNt:<ul><li><b>Sitio A (aminoacil)</b>: ahí se coloca el ARNt que trae el <b>siguiente</b> aminoácido.</li><li><b>Sitio P (peptidil)</b>: ahí está el ARNt que lleva la <b>cadena de proteína que va creciendo</b>.</li><li><b>Sitio E (exit, salida)</b>: ahí va el ARNt que acaba de pasar la cadena al siguiente ARNt, y por ahí <b>se va</b>.</li></ul></li></ul></div>
+<div class="p und"><b>💡 Para entenderlo</b>Imagina una cadena de montaje con tres puestos seguidos. En el puesto A llega la pieza nueva. En el puesto P está el producto a medio montar. Por el puesto E sale la caja vacía.</div>
+<div class="p tip"><b>🧠 Truco</b>El orden es <b>A-P-E</b>: el ARNt <b>A</b>terriza, <b>P</b>asa la cadena y sale por la <b>E</b>xit. También: <b>A</b> = <b>A</b>minoácido nuevo, <b>P</b> = <b>P</b>éptido (la cadena), <b>E</b> = <b>E</b>xit.</div>
+</article>
+
+<article class="c r">
+<h3>Fase 1 · Iniciación</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 100</span></div>
+<div class="p def"><b>📌 Los pasos (diap. 100)</b><ol><li>El <b>ARNt iniciador</b> (el que lleva la Metionina) se une a la <b>subunidad menor</b> del ribosoma, y juntos se colocan en el <b>CAP-5'</b> del ARNm.</li><li>Este complejo recorre el ARNm hasta encontrar el <b>codón de inicio (AUG)</b>.</li><li><b>El ARNt iniciador se une al codón de inicio.</b></li><li>Se une la <b>subunidad mayor</b> y se forma el <b>complejo de iniciación</b>. El ARNt queda en el <b>sitio P</b>.</li></ol></div>
+<div class="p why"><b>❓ ¿Por qué el primer ARNt va directamente al sitio P y no al A?</b>Porque el sitio P es el de "la cadena que crece", y la Met <b>es</b> el principio de esa cadena. Así el sitio A queda libre para el segundo aminoácido. Y fíjate en por qué importa el CAP: es el punto donde el ribosoma "aterriza" (lo viste en la maduración).</div>
+</article>
+
+<article class="c r">
+<h3>Fase 2 · Elongación</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 101–102</span></div>
+<div class="p def"><b>📌 Los pasos (diap. 101–102)</b><ol><li>Empieza cuando en el <b>sitio A</b> se coloca el segundo aminoacil-ARNt (un ARNt con su aminoácido), cuyo anticodón es complementario al segundo codón del ARNm.</li><li>La <b>peptidil transferasa</b> forma el <b>enlace peptídico</b> entre la Met y el segundo aminoácido. Así, el ARNt del sitio P se queda sin aminoácido, y el ARNt del sitio A lleva la cadena que crece.</li><li>Una vez formado el enlace, el ribosoma <b>avanza</b> por el ARNm en dirección 5' → 3'.</li><li>El ARNt iniciador, ya vacío, queda en el <b>sitio E</b> y se separa. El ARNt que lleva 2 aminoácidos pasa al <b>sitio P</b>, y el sitio A queda libre para el siguiente.</li></ol></div>
+<div class="p why"><b>❓ ¿Por qué la cadena se pasa siempre al ARNt nuevo?</b>Así la proteína <b>siempre está colgada del último que ha llegado</b> y nunca se suelta antes de tiempo. Es como una carrera de relevos: el testigo (la cadena) pasa al corredor nuevo, y el anterior, ya sin testigo, sale de la pista por el sitio E.</div>
+<div class="p tip"><b>🧠 Ciclo para repetir en voz alta</b>"Entra en A → enlace (peptidil transferasa) → el ribosoma avanza → el vacío sale por E" … y vuelta a empezar.</div>
+</article>
+
+<article class="c r">
+<h3>Fase 3 · Terminación</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 103–104</span></div>
+<div class="p def"><b>📌 Los pasos (diap. 103–104)</b><ol><li>Ocurre cuando el ribosoma llega a un <b>codón STOP</b> (UAA, UGA o UAG).</li><li><b>No existe ningún ARNt</b> con un anticodón complementario a esos codones.</li><li>Los <b>factores de liberación</b> reconocen los codones STOP, se colocan en el sitio A y hacen que la peptidil transferasa <b>corte la unión</b> entre la proteína y el ARNt que la lleva.</li><li>La proteína se libera, y todo el complejo de traducción se separa.</li></ol></div>
+<div class="p why"><b>❓ ¿Por qué hacen falta los factores de liberación?</b>Porque ningún ARNt reconoce el STOP, así que el sitio A se queda vacío. Los factores de liberación ocupan ese hueco y dan la orden de "suelta la proteína". Sin ellos, el ribosoma se quedaría atascado con la proteína colgando.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>La <b>inmunohistoquímica</b> usa anticuerpos que se pegan a una proteína concreta y la tiñen. Es decir, en el laboratorio vemos el <b>producto final</b> de todo este tema. Si un gen está mutado, la proteína puede no aparecer. Por ejemplo, en cáncer de colon se tiñen las proteínas de reparación del ADN (MLH1, MSH2…), y que falten en la tinción es una pista de que su gen está dañado.</div>
+</article>
+
+<article class="c o">
+<h3>Ejercicio: traduce un ARNm</h3>
+<div class="meta"><span class="lv o">🟠 Práctica</span><span class="dp">📍 diap. 95, 109</span></div>
+<div class="p und"><b>💡 Cómo se hace</b><ol><li>Busca el <b>AUG</b>: ahí empieza la lectura.</li><li>Corta el ARNm de 3 en 3 desde ahí.</li><li>Busca cada codón en la tabla del código genético (en el examen te la suelen dar).</li><li>Para al llegar a un STOP.</li></ol></div>
+<details class="chk"><summary>Traduce: 5' AUG AAG UUU GGC UAA 3'</summary><div><div class="seq">AUG  AAG  UUU  GGC  UAA
+Met  Lys  Phe  Gly  STOP</div>Es la proteína "normal" (wild type) del ejemplo de la profe en las mutaciones (diap. 108–109). Te servirá en el Bloque 15.</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b14" aria-pressed="false">✓ Bloque 14 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 15 ============ -->
+<section class="blk" id="b15" data-w="3" data-t="Mutaciones génicas">
+<div class="blk-h"><div class="n">Bloque 15 · diap. 106–110</div><h2>Mutaciones génicas</h2><p>Qué pasa cuando cambia una letra del libro.</p></div>
+
+<article class="c o">
+<h3>Qué es una mutación y sus tipos según el tamaño</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 106</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 106)</b><b>Mutación</b>: <q>cambio en la secuencia o estructura de ADN que ocurre de manera espontánea</q>.<ul><li>Cambia la información genética, y puede tener consecuencias (positivas o negativas) o no tenerlas.</li><li>En <b>células somáticas</b> (las del cuerpo): la mutación la heredan las células hijas.</li><li>En <b>células sexuales</b> (óvulos y espermatozoides): la mutación puede pasar a la siguiente generación.</li></ul>Tipos de mutaciones:<ul><li><b>Cromosómicas</b>: de gran extensión, afectan a muchos genes. Por ejemplo: deleciones, inserciones, translocaciones…</li><li><b>Génicas</b>: de menor extensión, afectan a un gen y, por tanto, a la proteína que codifica ese gen.</li></ul></div>
+<div class="p why"><b>❓ ¿Por qué una mutación en la piel no la heredan tus hijos?</b>Porque a los hijos solo les llega el ADN de las <b>células sexuales</b>. Una mutación en una célula de la piel se queda en las células de piel que salgan de ella, pero no viaja al óvulo ni al espermatozoide.</div>
+<div class="p lab"><b>🔬 En el laboratorio</b>Un cáncer es una acumulación de mutaciones somáticas. En anatomía patológica se buscan algunas mutaciones concretas porque deciden el tratamiento: BRAF en el melanoma, EGFR en el pulmón, KRAS en el colon…</div>
+</article>
+
+<article class="c r">
+<h3>Inserciones y deleciones: el marco de lectura</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe</span><span class="dp">📍 diap. 107–108</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 107–108)</b>Las mutaciones génicas afectan a uno o varios nucleótidos. Hay <b>3 tipos</b>: <b>inserciones, deleciones y sustituciones</b>.<ul><li><b>Inserción</b>: ganancia de uno o varios nucleótidos. Si ocurre en una región codificante (un exón), puede <b>cambiar el marco de lectura</b>, lo que afecta al ARNm y a la proteína.</li><li><b>Deleción</b>: pérdida de uno o varios nucleótidos. También puede cambiar el marco de lectura.</li><li>🔴 Si la inserción o deleción es de <b>3 nucleótidos o un múltiplo de 3</b>: <b>no cambia el marco de lectura</b>, pero <b>se añaden o se pierden aminoácidos</b>.</li></ul></div>
+<div class="p und"><b>💡 Para entenderlo con una frase de palabras de 3 letras</b><div class="seq">Normal:        SOL MAR SAL PAN
+Inserción (X): SOL XMA RSA LPA N   ← todo descolocado
+Deleción (M):  SOL ARS ALP AN      ← todo descolocado
+Inserción XXX: SOL XXX MAR SAL PAN ← una palabra de más, el resto bien</div>
+<p>El "marco de lectura" es la forma de cortar la secuencia de 3 en 3. Si metes o quitas 1 o 2 letras, el corte se desplaza y todo lo que viene detrás sale mal. Si metes o quitas 3, el corte vuelve a encajar.</p></div>
+<div class="p why"><b>❓ ¿Por qué pasa esto?</b>Porque el código es <b>continuo y no solapado</b> (Bloque 13): no hay "espacios" entre los codones que marquen dónde empieza cada uno. El ribosoma simplemente va contando de 3 en 3 desde el AUG.</div>
+<div class="p def"><b>📌 Ejemplos de la profe (diap. 108)</b>Normal: AUG AAG UUU GGC UAA → Met-Lys-Phe-Gly-STOP.<br>Si se <b>inserta una U</b> justo después del AUG, el siguiente codón se convierte en un <b>STOP</b>: la proteína se queda en Met.<br>Si se <b>pierde una U</b>, aparecen aminoácidos distintos (Leu, Ala…) a partir de ese punto.</div>
+</article>
+
+<article class="c r">
+<h3>Sustituciones: silenciosa, errónea y sin sentido</h3>
+<div class="meta"><span class="lv r">🔴 Rojo de la profe (sustituciones)</span><span class="dp">📍 diap. 107, 109</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 109)</b><b>Sustitución</b>: se sustituye un nucleótido por otro. Cuando ocurre en una <b>región codificante</b> (un exón), hay 3 tipos según cómo cambia la proteína. Si ocurre en una región no codificante, no debería tener consecuencias.<div class="tw"><table><tr><th>Tipo</th><th>Qué pasa</th><th>Ejemplo de la profe</th></tr>
+<tr><td><b>Silenciosa</b></td><td>El codón nuevo codifica <b>el mismo aminoácido</b>. La proteína NO cambia.</td><td>AAG → AAA: los dos son Lys</td></tr>
+<tr><td><b>Errónea</b> (de cambio de sentido)</td><td>El codón nuevo codifica <b>otro aminoácido</b>. La proteína SÍ cambia.</td><td>UUU (Phe) → UUA (Leu)</td></tr>
+<tr><td><b>Sin sentido</b></td><td>El codón nuevo es un <b>STOP</b>. La proteína SÍ cambia: <b>se acorta</b>.</td><td>Aparece un STOP antes de tiempo</td></tr></table></div></div>
+<div class="p why"><b>❓ ¿Por qué puede existir una mutación silenciosa?</b>Porque el código es <b>degenerado</b> (Bloque 13): varios codones significan el mismo aminoácido. Si la letra que cambia es una de esas que "da igual", la proteína sale idéntica.</div>
+<div class="p lab"><b>🔬 En la clínica</b>La <b>anemia falciforme</b> la causa una sola sustitución errónea en el gen de la hemoglobina: un ácido glutámico se cambia por una valina. Con un solo aminoácido distinto, los glóbulos rojos se deforman y quedan en forma de hoz.</div>
+<div class="p tip"><b>🧠 Truco</b><b>Silenciosa</b> = no se nota. <b>Errónea</b> = un aminoácido equivocado. <b>Sin sentido</b> = la frase termina antes de tiempo, así que deja de tener sentido.</div>
+<details class="chk"><summary>¿Qué es normalmente más grave: una sustitución errónea o una deleción de 1 nucleótido al principio del gen?</summary><div>Normalmente la <b>deleción</b>. La sustitución errónea cambia un solo aminoácido. La deleción de 1 nucleótido <b>cambia el marco de lectura</b> y estropea <b>todos</b> los aminoácidos que vienen detrás (o mete un STOP enseguida).</div></details>
+</article>
+
+<article class="c o">
+<h3>¿De qué depende que una mutación sea grave?</h3>
+<div class="meta"><span class="lv o">🟠 Clave</span><span class="dp">📍 diap. 110</span></div>
+<div class="p def"><b>📌 Definición formal (diap. 110)</b>Estas mutaciones afectarán más o menos a la proteína que se forma a partir del ARNm según <b>qué aminoácido afecten</b>, es decir, según el <b>papel que tenga ese aminoácido en la estructura y la función</b> de la proteína.</div>
+<div class="p und"><b>💡 Para entenderlo</b>En una llave, si rayas el mango no pasa nada, pero si cambias un diente, ya no abre. En una proteína pasa igual: hay aminoácidos que son "dientes" (los de la zona activa) y otros que son "mango".</div>
+</article>
+<button class="donebtn" type="button" data-b="b15" aria-pressed="false">✓ Bloque 15 entendido</button>
+</section>
+
+<!-- ============ BLOQUE 16 · ACTIVIDADES ============ -->
+<section class="blk act" id="b16" data-w="2" data-t="Actividades de clase">
+<div class="blk-h"><div class="n">Bloque 16 · Actividades de la profe</div><h2>📘 Actividades de clase</h2><p>Las actividades del PowerPoint, resueltas y razonadas.</p></div>
+
+<article class="c a">
+<h3>Actividad 1 · La célula y la división</h3>
+<div class="meta"><span class="dp">📍 diap. 4–5</span></div>
+<div class="p und"><b>Enunciado (resumido)</b>Dibujar una célula humana con sus orgánulos y la función de cada uno, y responder 3 preguntas.</div>
+<div class="p def"><b>Respuestas modelo</b><ol><li><b>¿Qué hacen nuestras células para reparar una lesión?</b> Se <b>dividen por mitosis</b> para reponer las que se han perdido. Por eso, antes, tienen que <b>replicar su ADN</b> (en la fase S).</li><li><b>¿Qué pasa con los orgánulos al dividirse?</b> Se reparten entre las dos células hijas, y después cada una fabrica o divide los suyos para completarlos. Las mitocondrias, por ejemplo, se dividen por su cuenta y replican su propio ADN (diap. 36).</li><li><b>¿Qué estructura tiene el ADN cuando la célula se divide?</b> Está en su máximo grado de compactación: el <b>cromosoma metafásico</b> (diap. 32).</li></ol></div>
+<p class="note">La parte del dibujo depende de tu cuaderno. Con estas respuestas tienes el razonamiento que hay detrás.</p>
+</article>
+
+<article class="c a">
+<h3>Actividad 4 · Artículo sobre la doble hélice</h3>
+<div class="meta"><span class="dp">📍 diap. 25 (y 22)</span></div>
+<div class="p def"><b>Lo que tienes que saber contar</b><ul><li><b>Watson y Crick</b> propusieron el modelo de doble hélice en <b>1953</b>.</li><li>Se basaron en los datos de <b>Maurice Wilkins</b> y, sobre todo, de <b>Rosalind Franklin</b>, cuya imagen del ADN por difracción de rayos X (la famosa "Fotografía 51") mostraba la forma helicoidal.</li><li>En 1962 recibieron el Premio Nobel Watson, Crick y Wilkins. Franklin había muerto en 1958, y el Nobel no se da a título póstumo. Hoy se reconoce que su aportación fue clave.</li><li>El modelo explicaba el <b>principio de complementariedad</b> y cómo el ADN se puede copiar.</li></ul></div>
+<p class="note">Lo de la Fotografía 51 y el Nobel no está en las diapositivas: es el contexto habitual de este artículo. En la app tienes también la lectura sobre Rosalind Franklin.</p>
+</article>
+
+<article class="c a">
+<h3>Actividad 5 · Ejercicios de estructura (práctica)</h3>
+<div class="meta"><span class="dp">📍 diap. 50</span></div>
+<p class="note">La diapositiva no trae los ejercicios. Estos los he hecho yo, del mismo tipo, para practicar.</p>
+<details class="chk"><summary>1) Escribe la hebra complementaria de 5' GATTACA 3'</summary><div><div class="seq">5' GATTACA 3'
+3' CTAATGT 5'</div></div></details>
+<details class="chk"><summary>2) Un ADN tiene un 30 % de A. ¿Qué porcentaje tiene de T, de G y de C?</summary><div>A = T, así que <b>T = 30 %</b>. Entre las dos suman 60 %, y queda un 40 % para G + C. Como G = C, <b>G = 20 % y C = 20 %</b>. Esto sale directamente de la complementariedad.</div></details>
+<details class="chk"><summary>3) ¿Cómo sabes si una secuencia es de ADN o de ARN con solo mirarla?</summary><div>Si tiene <b>T</b>, es ADN. Si tiene <b>U</b>, es ARN. (Ojo: en la Actividad 6 la hebra de abajo tiene U porque incluye un primer, que es de ARN.)</div></details>
+<details class="chk"><summary>4) Nombra 3 diferencias entre el ADN y el ARN</summary><div>El <b>azúcar</b> (desoxirribosa / ribosa), las <b>bases</b> (T / U), el <b>número de cadenas</b> (doble / simple), el <b>tamaño</b> (enorme / pequeño) y la <b>función</b> (guardar y transmitir / expresar para fabricar proteínas).</div></details>
+</article>
+
+<article class="c a">
+<h3>Actividad 6 · Replicación con secuencia</h3>
+<div class="meta"><span class="dp">📍 diap. 75 (y 71)</span></div>
+<div class="p und"><b>Enunciado (diap. 75)</b>Hay un origen de replicación en el centro y dos helicasas, una avanzando hacia la izquierda y otra hacia la derecha:
+<div class="seq">5' AGTCGGTCAATGCATTGGCAGACGC|GAAATGCGCTGCAATGCTGATG 3'
+          ← HELICASA      |      HELICASA →
+3' TCAGCCAGTTACGTAACCGUCUGCG|CTTTACGCGACGTTACGACTAC 5'
+                    origen de replicación</div></div>
+<div class="p def"><b>Cómo se resuelve, paso a paso</b><ol>
+<li>Las hebras nuevas siempre se fabrican de <b>5' a 3'</b>, y en sentido contrario a la hebra que copian (antiparalelas).</li>
+<li><b>Lado derecho</b> (la helicasa va →):<ul><li>Para copiar la hebra de <b>abajo</b> (que va 3'→5' de izquierda a derecha), la hebra nueva crece 5'→3' <b>hacia la derecha</b>, igual que la helicasa → es la <b>conductora</b>.</li><li>Para copiar la hebra de <b>arriba</b>, la hebra nueva tiene que crecer hacia la izquierda, en contra de la helicasa → es la <b>retardada</b> (fragmentos de Okazaki).</li></ul></li>
+<li><b>Lado izquierdo</b> (la helicasa va ←): pasa justo al revés.<ul><li>La hebra nueva que copia la de <b>arriba</b> crece hacia la izquierda, igual que la helicasa → <b>conductora</b>.</li><li>La que copia la de <b>abajo</b> → <b>retardada</b>.</li></ul></li>
+<li>Las <b>U</b> de la hebra de abajo (…CCG<b>U</b>C<b>U</b>GC…) delatan un <b>primer</b>: es ARN, por eso lleva U y no T (diap. 71). Está junto al origen, donde empieza una hebra conductora.</li></ol></div>
+<div class="p tip"><b>🧠 La regla que lo resuelve todo (diap. 68)</b><b>La hebra nueva que crece en el mismo sentido que su helicasa es la continua.</b> Por eso cada hebra molde da una hebra continua en un lado del origen y una retardada en el otro.</div>
+<details class="chk"><summary>¿Cuántas hebras conductoras y cuántas retardadas hay en total en una burbuja de replicación?</summary><div><b>2 conductoras y 2 retardadas</b>: una de cada en cada horquilla.</div></details>
+</article>
+<button class="donebtn" type="button" data-b="b16" aria-pressed="false">✓ Actividades repasadas</button>
+</section>
+
+<!-- ============ BLOQUE 17 · PREGUNTAS LLAVE ============ -->
+<section class="blk key" id="b17" data-w="2" data-t="Posibles preguntas llave">
+<div class="blk-h"><div class="n">Bloque 17 · Exclusivo de Biología Molecular</div><h2>🔑 Posibles preguntas llave</h2><p>Si no respondes la pregunta llave, el resto del examen no cuenta. Estas son las que tienen más papeletas, con su respuesta modelo. Son una predicción mía, no las ha dicho la profe.</p></div>
+
+<article class="c k">
+<h3>🔑 1 · Diferencias entre el ADN y el ARN</h3>
+<div class="p def"><b>Respuesta modelo</b><div class="tw"><table><tr><th></th><th>ADN</th><th>ARN</th></tr>
+<tr><td>Pentosa</td><td>Desoxirribosa</td><td>Ribosa</td></tr><tr><td>Bases</td><td>A, T, G, C</td><td>A, U, G, C</td></tr><tr><td>Cadenas</td><td>Doble hélice, antiparalela</td><td>Simple (se puede plegar)</td></tr><tr><td>Tamaño</td><td>Muy grande (millones de pb)</td><td>Pequeño (cientos o miles)</td></tr><tr><td>Función</td><td>Almacenar y transmitir (replicación)</td><td>Expresar: síntesis de proteínas (transcripción y traducción)</td></tr><tr><td>Tipos</td><td>Nuclear, mitocondrial, de cloroplastos, procariota</td><td>ARNm, ARNt, ARNr</td></tr></table></div></div>
+</article>
+
+<article class="c k">
+<h3>🔑 2 · Explica la replicación con sus enzimas, en orden</h3>
+<div class="p def"><b>Respuesta modelo</b>Es semiconservativa, bidireccional y semidiscontinua, y ocurre en la fase S. <b>Iniciación</b>: unas proteínas reconocen el origen y activan las helicasas, que rompen los puentes de H y forman la burbuja. Las SSB mantienen las hebras separadas, y la topoisomerasa y la girasa relajan la tensión. <b>Elongación</b>: la primasa pone los primers de ARN (uno en la conductora, varios en la retardada). La ADN polimerasa III fabrica en 5'→3': de forma continua en la conductora y en fragmentos de Okazaki en la retardada. La ADN polimerasa I quita los primers y los cambia por ADN, y la ligasa une los fragmentos.</div>
+</article>
+
+<article class="c k">
+<h3>🔑 3 · ¿Por qué la replicación es semidiscontinua?</h3>
+<div class="p def"><b>Respuesta modelo</b>Porque la ADN polimerasa solo fabrica en dirección 5'→3', y las dos hebras molde son antiparalelas. En una, el sentido de síntesis coincide con el avance de la horquilla, y se fabrica de forma continua: es la conductora. En la otra, va en sentido contrario y se fabrica a trozos, los fragmentos de Okazaki, cada uno con su primer: es la retardada.</div>
+</article>
+
+<article class="c k">
+<h3>🔑 4 · Maduración del ARN: por qué ocurre y las 3 modificaciones</h3>
+<div class="p def"><b>Respuesta modelo</b>Ocurre solo en eucariotas, porque el ARN se degrada fácilmente, tiene que salir del núcleo y contiene intrones. Las 3 modificaciones son: (1) el <b>CAP-5'</b>, una caperuza de metilguanosina en el extremo 5' que evita la degradación y ayuda a que el ribosoma se una; (2) la <b>cola poliA</b>, de 100 a 200 adeninas en el extremo 3', que permite al ARN salir al citoplasma; (3) el <b>splicing</b>, en el que el spliceosoma elimina los intrones (que forman un bucle) y empalma los exones. El splicing alternativo permite fabricar varias proteínas a partir de un mismo gen.</div>
+</article>
+
+<article class="c k">
+<h3>🔑 5 · Las fases de la traducción y los sitios A, P y E</h3>
+<div class="p def"><b>Respuesta modelo</b><b>Iniciación</b>: el ARNt iniciador, con la Met, se une a la subunidad menor en el CAP-5' y busca el AUG. Se une la subunidad mayor y el ARNt queda en el sitio P. <b>Elongación</b>: entra un aminoacil-ARNt en el sitio A. La peptidil transferasa forma el enlace peptídico. El ribosoma avanza 5'→3', y el ARNt vacío sale por el sitio E. <b>Terminación</b>: al llegar a un STOP (UAA, UAG o UGA), los factores de liberación ocupan el sitio A, se corta la unión, se libera la proteína y el complejo se separa.</div>
+</article>
+
+<article class="c k">
+<h3>🔑 6 · Tipos de mutaciones génicas</h3>
+<div class="p def"><b>Respuesta modelo</b>Hay inserciones, deleciones y sustituciones. Las inserciones y las deleciones cambian el marco de lectura, salvo que sean de 3 nucleótidos o un múltiplo de 3; en ese caso solo se ganan o se pierden aminoácidos. Las sustituciones en un exón pueden ser: <b>silenciosas</b> (el mismo aminoácido, la proteína no cambia), <b>erróneas</b> (otro aminoácido, la proteína cambia) o <b>sin sentido</b> (aparece un STOP y la proteína se acorta).</div>
+</article>
+<button class="donebtn" type="button" data-b="b17" aria-pressed="false">✓ Preguntas llave dominadas</button>
+</section>
+
+<!-- ============ TRAMPAS ============ -->
+<section class="blk" id="b18" data-w="1" data-t="Trampas típicas">
+<div class="blk-h"><div class="n">Bloque 18 · Antes del examen</div><h2>⚠️ Trampas típicas</h2><p>Lo que más se confunde en este tema.</p></div>
+<article class="c r">
+<ul>
+<li><b>Púricas = A y G</b> (las grandes). La T y la U son pirimidínicas.</li>
+<li><b>A-T: 2 puentes; C-G: 3.</b> No al revés.</li>
+<li>La vuelta de la hélice es de <b>360° = 10 nucleótidos</b> ("ºC" es una errata).</li>
+<li>El <b>nucleosoma tiene 8 histonas</b>. El <b>solenoide, 6 nucleosomas y 6 H1</b> por vuelta.</li>
+<li>La <b>eucromatina</b> se replica <b>al principio</b> de la fase S; la heterocromatina, al final.</li>
+<li>Las <b>bacterias no tienen cromatina</b> (ni histonas ni núcleo).</li>
+<li>En el ARN existe la pareja <b>G-U</b> (rojo de la profe).</li>
+<li>La <b>pol III construye</b> y la <b>pol I quita los primers</b>.</li>
+<li>Los <b>primers son de ARN</b> y los hace la <b>primasa</b>.</li>
+<li>Continua = la que va <b>en el mismo sentido que la helicasa</b>.</li>
+<li>ARN pol <b>II → ARNm</b> ("RoMa Tú").</li>
+<li>El <b>ARN se parece a la hebra codificante</b>, no a la molde.</li>
+<li><b>CAP en el 5'</b>, <b>poliA en el 3'</b>. El CAP protege y ayuda al ribosoma; la poliA deja salir al citoplasma.</li>
+<li>Los <b>exones se quedan</b> y los <b>intrones se van</b>.</li>
+<li><b>64 codones = 61 con aminoácido + 3 STOP</b>. El inicio es <b>AUG (Met)</b>.</li>
+<li>El primer ARNt va al <b>sitio P</b>; los siguientes entran por el <b>A</b>.</li>
+<li><b>No hay ningún ARNt para los STOP</b>: actúan los factores de liberación.</li>
+<li>Una inserción o deleción de <b>3 nucleótidos no cambia el marco de lectura</b>.</li>
+</ul>
+</article>
+</section>
+
+<!-- ============ GLOSARIO ============ -->
+<section class="blk" id="glos" data-t="Glosario">
+<div class="blk-h"><div class="n">Al final</div><h2>📖 Glosario del tema</h2><p>Todas las palabras importantes, de la A a la Z.</p></div>
+<article class="c b"><dl class="gl">
+<dt>Ácido nucleico</dt><dd>Macromolécula que almacena, transmite y expresa la información genética (ADN y ARN).</dd>
+<dt>ADNc (ADN complementario)</dt><dd>Copia en ADN de un ARNm, fabricada con transcriptasa inversa; no tiene intrones. (Extra.)</dd>
+<dt>ADN polimerasa I</dt><dd>Quita los primers (por su actividad exonucleasa) y los sustituye por ADN.</dd>
+<dt>ADN polimerasa III</dt><dd>Fabrica las hebras nuevas añadiendo nucleótidos al extremo OH-3', siempre en 5'→3'.</dd>
+<dt>Aminoácido (AA)</dt><dd>Unidad que forma las proteínas; hay 20 estándar, cada uno con su cadena R.</dd>
+<dt>Aminoacil-ARNt</dt><dd>ARNt que lleva unido su aminoácido.</dd>
+<dt>Anticodón</dt><dd>Triplete del ARNt que reconoce, por complementariedad, el codón del ARNm.</dd>
+<dt>Antiparalelas</dt><dd>Hebras que van en sentidos opuestos: 5'→3' frente a 3'→5'.</dd>
+<dt>ARN polimerasa</dt><dd>Enzima que fabrica ARN usando ADN como molde (I: ARNr; II: ARNm; III: ARNt).</dd>
+<dt>ARNm / ARNt / ARNr</dt><dd>Mensajero (copia de un gen) / transferente (lleva los aminoácidos) / ribosomal (forma los ribosomas, el 80 % del ARN).</dd>
+<dt>Basófilo</dt><dd>Que se tiñe con colorantes básicos, como la hematoxilina; por ejemplo, el núcleo. (Extra.)</dd>
+<dt>Bicatenario / monocatenario</dt><dd>De dos cadenas / de una sola cadena.</dd>
+<dt>Bidireccional</dt><dd>Que avanza en los dos sentidos a la vez desde el origen.</dd>
+<dt>Brazo aceptor</dt><dd>Extremo CCA-3' del ARNt, donde se une el aminoácido.</dd>
+<dt>Burbuja de replicación</dt><dd>Zona abierta del ADN que se forma desde el origen.</dd>
+<dt>CAP-5'</dt><dd>Caperuza de metilguanosina en el extremo 5' del ARN: lo protege y ayuda al ribosoma a unirse.</dd>
+<dt>Cebador (primer)</dt><dd>Fragmento corto de ARN (unos 10 nucleótidos) que sirve de punto de partida a la ADN polimerasa.</dd>
+<dt>Cadena codificante</dt><dd>Hebra de ADN con la misma secuencia que el ARNm (con T en lugar de U).</dd>
+<dt>Cadena molde</dt><dd>Hebra de ADN que se lee (3'→5') para fabricar el ARN.</dd>
+<dt>Código genético</dt><dd>Diccionario que traduce codones a aminoácidos: universal, no ambiguo, degenerado, continuo y no solapado.</dd>
+<dt>Codón</dt><dd>Triplete de nucleótidos del ARNm que codifica un aminoácido o una señal de STOP.</dd>
+<dt>Codones STOP</dt><dd>UAA, UAG y UGA: señales de terminación.</dd>
+<dt>Codones sinónimos</dt><dd>Codones distintos que codifican el mismo aminoácido.</dd>
+<dt>Complementariedad</dt><dd>Emparejamiento específico de bases: A-T (2 puentes de H) y C-G (3).</dd>
+<dt>Cromatina (fibra de)</dt><dd>ADN unido a histonas, con aspecto de "collar de perlas".</dd>
+<dt>Cromosoma metafásico</dt><dd>Máximo grado de compactación del ADN, durante la mitosis.</dd>
+<dt>Deleción</dt><dd>Pérdida de uno o varios nucleótidos.</dd>
+<dt>Desnaturalización / renaturalización</dt><dd>Separación de las dos hebras por calor o pH alto / su unión de nuevo al bajarlos.</dd>
+<dt>Desoxirribosa / ribosa</dt><dd>Pentosa del ADN (sin el OH del C2') / pentosa del ARN.</dd>
+<dt>Electroforesis</dt><dd>Separación de ADN por tamaño en un gel con corriente eléctrica: corre hacia el polo positivo. (Extra.)</dd>
+<dt>Enlace fosfodiéster</dt><dd>Unión entre nucleótidos: el fosfato del 5' se une al 3' del siguiente y se libera agua.</dd>
+<dt>Enlace peptídico</dt><dd>Unión entre dos aminoácidos, que forma la peptidil transferasa.</dd>
+<dt>Eucromatina / heterocromatina</dt><dd>Cromatina poco compactada y activa / muy compactada, sin transcripción.</dd>
+<dt>Exón / intrón</dt><dd>Región del gen con información para la proteína (se queda) / sin ella (se elimina en el splicing).</dd>
+<dt>Exonucleasa</dt><dd>Actividad que corta nucleótidos desde un extremo de la cadena.</dd>
+<dt>Factores de liberación</dt><dd>Proteínas que reconocen el STOP y provocan que se suelte la proteína.</dd>
+<dt>FISH</dt><dd>Hibridación in situ fluorescente: localiza una secuencia en el tejido con una sonda. (Extra.)</dd>
+<dt>Fragmentos de Okazaki</dt><dd>Trozos en los que se fabrica la hebra retardada.</dd>
+<dt>Girasa / topoisomerasa</dt><dd>Enzimas que relajan la tensión (el superenrollamiento) que se crea al abrir la hélice.</dd>
+<dt>Hebra conductora (líder, continua)</dt><dd>Se fabrica de forma continua, en el mismo sentido que la helicasa.</dd>
+<dt>Hebra retardada</dt><dd>Se fabrica a trozos (fragmentos de Okazaki), en sentido contrario a la helicasa.</dd>
+<dt>Helicasa</dt><dd>Enzima que rompe los puentes de H y separa las dos hebras.</dd>
+<dt>Hibridación</dt><dd>Unión de dos cadenas complementarias de ácidos nucleicos mediante puentes de H.</dd>
+<dt>Histonas / no histonas</dt><dd>Proteínas básicas, estructurales y reguladoras, que compactan el ADN / proteínas heterogéneas, estructurales, enzimáticas y reguladoras.</dd>
+<dt>Horquilla de replicación</dt><dd>Cada extremo de la burbuja, donde se va abriendo el ADN.</dd>
+<dt>Inserción</dt><dd>Ganancia de uno o varios nucleótidos.</dd>
+<dt>kb (kilobase)</dt><dd>1.000 pares de bases.</dd>
+<dt>Ligasa</dt><dd>Enzima que une los fragmentos de ADN.</dd>
+<dt>Macromolécula</dt><dd>Molécula gigante formada por muchas piezas pequeñas repetidas.</dd>
+<dt>Maduración del ARN</dt><dd>Modificaciones del ARN en eucariotas: CAP-5', cola poliA y splicing.</dd>
+<dt>Marco de lectura</dt><dd>Forma de dividir el ARNm de 3 en 3 desde el AUG.</dd>
+<dt>Mutación</dt><dd>Cambio espontáneo en la secuencia o la estructura del ADN.</dd>
+<dt>Mutación silenciosa / errónea / sin sentido</dt><dd>Sustitución con el mismo aminoácido / con otro aminoácido / que crea un STOP.</dd>
+<dt>Nucleosoma</dt><dd>Octámero de 8 histonas sobre el que se enrolla el ADN.</dd>
+<dt>Nucleótido</dt><dd>Unidad de los ácidos nucleicos: fosfato, pentosa y base nitrogenada.</dd>
+<dt>Origen de replicación</dt><dd>Secuencia donde empieza la replicación (procariotas: 1; eucariotas: varios).</dd>
+<dt>Peptidil transferasa</dt><dd>Enzima del ribosoma que forma el enlace peptídico y corta la unión al terminar.</dd>
+<dt>Plásmido</dt><dd>Pequeña molécula de ADN circular extra en las bacterias.</dd>
+<dt>Primasa</dt><dd>ARN polimerasa que fabrica los primers.</dd>
+<dt>Promotor</dt><dd>Secuencia al inicio de cada gen que reconoce la ARN polimerasa.</dd>
+<dt>Púricas / pirimidínicas</dt><dd>Bases grandes, de 2 anillos (A, G) / bases pequeñas, de 1 anillo (C, T, U).</dd>
+<dt>Replicación semiconservativa</dt><dd>Cada ADN nuevo tiene una hebra original y una nueva.</dd>
+<dt>Ribosoma</dt><dd>Orgánulo de ARNr y proteínas que fabrica las proteínas; subunidades 60 y 40; sitios A, P y E.</dd>
+<dt>Sitios A / P / E</dt><dd>Aminoacil (entra el nuevo aminoácido) / peptidil (la cadena que crece) / exit (sale el ARNt vacío).</dd>
+<dt>Solenoide</dt><dd>Fibra de cromatina enrollada, con 6 nucleosomas y 6 H1 por vuelta.</dd>
+<dt>Splicing / spliceosoma</dt><dd>Corte de los intrones y empalme de los exones / el complejo de proteínas que lo hace.</dd>
+<dt>Splicing alternativo</dt><dd>Eliminación de algunos exones, que da distintos ARNm (y proteínas) a partir de un mismo gen.</dd>
+<dt>SSB (SSBP)</dt><dd>Proteínas de unión a cadena sencilla: impiden que las hebras se vuelvan a unir.</dd>
+<dt>Sustitución</dt><dd>Cambio de un nucleótido por otro.</dd>
+<dt>Telómeros</dt><dd>Extremos repetitivos de los cromosomas, que se acortan en cada división.</dd>
+<dt>Terminador</dt><dd>Secuencia donde termina la transcripción.</dd>
+<dt>Transcripción</dt><dd>Síntesis de ARN a partir de un molde de ADN.</dd>
+<dt>Traducción</dt><dd>Síntesis de una proteína a partir del ARNm, en el ribosoma.</dd>
+</dl></article>
+</section>
+
+<p class="note" style="margin-top:24px">Fuente: PDF «Tema 4. Ácidos nucleicos y enzimas asociadas» de la profe (110 diapositivas). Las cajas 🔬 y algunos datos marcados como "extra" son ampliación para entender y para el laboratorio. En el examen, usa las definiciones 📌.</p>
+</main>
+
+<script>
+(function(){
+  var KEY="bio3-entender-v1", st={};
+  try{st=JSON.parse(localStorage.getItem(KEY)||"{}")||{}}catch(e){st={}}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+  if(/github\.io$/.test(location.hostname)||location.protocol==="file:"){var b=document.getElementById("back");if(b)b.hidden=false}
+  var pdf=/pdf/.test(location.search);
+  if(pdf){document.querySelectorAll("details").forEach(function(d){d.open=true})}
+  var blks=[].slice.call(document.querySelectorAll(".blk[data-t]"));
+  var toc=document.getElementById("toc");
+  function renderToc(){toc.innerHTML=blks.map(function(s){var n=s.querySelector(".n");var dp=n?n.textContent.replace(/^[^·]*·\s*/,""):"";return '<li><a href="#'+s.id+'" class="'+(st[s.id]?"done":"")+'">'+s.dataset.t+' <span>'+dp+'</span></a></li>'}).join("")}
+  document.querySelectorAll(".donebtn").forEach(function(btn){
+    var id=btn.dataset.b;function ui(){btn.setAttribute("aria-pressed",st[id]?"true":"false");btn.textContent=(st[id]?"✓ Entendido · pulsa para desmarcar":btn.dataset.l)}
+    btn.dataset.l=btn.textContent;ui();
+    btn.addEventListener("click",function(){st[id]=!st[id];save();ui();renderToc();renderPlan()});
+  });
+  var sel=document.getElementById("dias"),out=document.getElementById("planOut");
+  try{var sd=localStorage.getItem(KEY+":dias");if(sd)sel.value=sd}catch(e){}
+  var study=blks.filter(function(s){return s.dataset.w&&s.id!=="b17"&&s.id!=="b18"});
+  function renderPlan(){
+    var d=+sel.value;try{localStorage.setItem(KEY+":dias",d)}catch(e){}
+    var days=[];
+    if(d===1){days=[{t:"Día 1 (único)",items:study.map(function(s){return s.dataset.t}).concat(["🔑 Preguntas llave","⚠️ Trampas"]),rev:true}]}
+    else{
+      var n=d-1,total=study.reduce(function(a,s){return a+(+s.dataset.w)},0),per=total/n,acc=0,cur=[],groups=[];
+      var lab=function(x){return (st[x.id]?"✓ ":"")+x.dataset.t+" ("+x.querySelector(".n").textContent.replace(/^[^·]*·\s*/,"")+")"};
+      study.forEach(function(s,i){
+        cur.push(s);acc+=+s.dataset.w;
+        var left=study.length-i-1,daysLeft=n-groups.length-1;
+        if(daysLeft>0&&(acc>=per*(groups.length+1)-0.5||left===daysLeft)){groups.push(cur);cur=[]}
+      });
+      if(cur.length)groups.push(cur);
+      days=groups.map(function(g,i){return {t:"Día "+(i+1),items:g.map(lab)}});
+      days.push({t:"Día "+d+" · Repaso final",items:["🔑 Preguntas llave (Bloque 17): respóndelas en voz alta sin mirar","⚠️ Trampas (Bloque 18)","Abre todas las 🤔 y vuelve al bloque de las que falles","Haz el simulacro del tema"],rev:true});
+    }
+    out.innerHTML=days.map(function(x){return '<div class="day'+(x.rev?" rev":"")+'"><b>'+x.t+'</b><ul>'+x.items.map(function(i){return "<li>"+i+"</li>"}).join("")+"</ul></div>"}).join("");
+  }
+  sel.addEventListener("change",renderPlan);
+  renderToc();renderPlan();
+})();
+</script>
+</body>
+</html>

@@ -155,7 +155,16 @@ var UNIDADES = [
   "simulacro": {
    "web": "bio3/simulacro/"
   },
-  "extra": [],
+  "extra": [
+   [
+    "Entender el porqué",
+    "bio3/entender/"
+   ],
+   [
+    "Entender el porqué (PDF)",
+    "files/BIO3_4-Entender_Acidos-Nucleicos.pdf"
+   ]
+  ],
   "progreso": {
    "clave": "bio3-repaso-v1",
    "total": 40
