@@ -75,6 +75,15 @@ test("mov(): el modo se lee en cada llamada (entrar y salir del examen)", () => 
   m.sentir(10); assert.deepEqual(vib, [10]);
 });
 
+test("mov(): no vibra si la persona aún no ha tocado la página (el navegador lo bloquearía)", () => {
+  const { w, vib } = entorno();
+  w.navigator.userActivation = { hasBeenActive: false };
+  const m = M.crear(w);
+  assert.equal(m.sentir(10), false); assert.deepEqual(vib, []);
+  w.navigator.userActivation.hasBeenActive = true;
+  m.sentir(10); assert.deepEqual(vib, [10]);
+});
+
 test("mov(): una animación con la misma clave corta la anterior (se completa, no se queda a medias)", () => {
   const m = M.crear(entorno().w);
   const el = elemento();

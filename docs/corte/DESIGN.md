@@ -135,6 +135,33 @@ Interlineado: `--lh-ajustado` 1,02 (títulos grandes), `--lh-titulo` 1,1, `--lh-
 
 Con «reducir movimiento», las duraciones pasan a 0, las pegatinas aparecen dibujadas y nada late. El hover solo se aplica en dispositivos con puntero (`@media (hover:hover)`), para que en el móvil no se quede pegado.
 
+### La puerta del movimiento (`app/mov.js`, Fase 5)
+
+Toda animación hecha con JavaScript pasa por `window.CorteMov`. Tiene tres modos y se leen en cada llamada:
+
+| Modo | Cuándo | Qué pasa |
+|---|---|---|
+| completo | lo normal | la animación entera |
+| reducido | `prefers-reduced-motion` | un fundido de 150 ms (o nada, con `sinFundido`) y sin vibración |
+| examen | `<html data-examen="1">`, mientras dura un intento en modo examen | nada se mueve, ni con CSS |
+
+- `M.animar(el, keyframes, opciones, clave)` es la llamada habitual. Solo admite `transform`, `opacity`, `filter` y `clip-path`. Una animación nueva con la misma clave termina la anterior en su estado final.
+- `M.mov(completo, { reducido, examen })` sirve para lo que no es una animación de WAAPI, como el View Transition o la nota que sube contando.
+- `M.sentir(ms)` vibra, salvo en examen, con movimiento reducido o si la persona aún no ha tocado la página.
+- Cada pantalla puede devolver `animar(M)`, que `app.js` llama después de pintar, y `examen: true` para activar el modo examen. `pintar()` corta todo lo que esté en marcha antes de repintar.
+
+Lo que se mueve con ella:
+- el cambio de pantalla;
+- la pegatina nueva de la colección (se estampa);
+- en la práctica, acertar (salto y tick que se dibuja) y fallar (la elegida tiembla y la buena entra en foco);
+- la nota, que sube contando en 800 ms y se salta con un toque;
+- la tarjeta, que se gira y se desliza (→ bien, ← otra vez);
+- la línea de «ahora» del horario;
+- el mes del calendario, que llega desde un lado y también se cambia deslizando;
+- el cierre de la bienvenida.
+
+**Colección (Mi mesa).** Cada unidad dominada al 100 % en su repaso gana su pegatina en `personal.coleccion` y nunca se borra. Practicar o repasar tarjetas de esa unidad le devuelve el color. Si no se repasa, palidece: un poco a los 7 días, más a los 14 y mucho a los 30. Lo dice también en texto («hace N días»).
+
 ## Texturas (`texturas.css`)
 
 - `.tx-hoja`: papel completo (grano + margen rojo + cuadrícula). Úsala junto a `.hoja`.

@@ -5,7 +5,8 @@
   "use strict";
   var D = window.CorteDatos, L = window.CorteLogica, S = window.tsapcStore, esc = L.escapar;
   var SPR = "../assets/corte/iconos.svg#";
-  var RM = window.matchMedia ? matchMedia("(prefers-reduced-motion: reduce)") : { matches: false };
+  /* la puerta única del movimiento (app/mov.js). Si faltara, nada se anima y todo sigue funcionando. */
+  var M = window.CorteMov || { modo: function () { return "examen"; }, mov: function (c, a) { return a && a.examen ? a.examen() : undefined; }, anim: function () { return null; }, animar: function () { return null; }, fundido: function () { return null; }, cortar: function () {}, cortarTodo: function () {}, sentir: function () { return false; }, CURVA: {} };
   var ahora = L.reloj(location.search);
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
@@ -147,6 +148,7 @@
     }).join("");
 
     var html = '<header class="cab">' + cab + '<p class="mano resumen" id="resumen">' + esc(L.resumenHoy(EVS, h, n, ex)) + "</p></header>" +
+      bienvenida() +
       '<div class="urgente">' + pild + "</div>" +
       '<div class="rejilla rejilla-hoy">' +
       '<section aria-labelledby="hHoy"><div class="sec-cab"><h2 id="hHoy"><span class="fluor">Para hoy</span></h2><span class="mano">tacha al terminar</span></div>' +
@@ -161,6 +163,17 @@
       '<a class="nota-boton" data-subject="lab" href="#/asignaturas"><b>Unidades</b><span class="mano">repaso y simulacro</span></a></div></section>' +
       "</div>";
     return { sec: "hoy", titulo: "Hoy", html: html, tic: true };
+  }
+
+  /* primer uso: una nota de bienvenida en Hoy hasta que se cierra (prefs.bienvenida). Si ya hay progreso guardado, no sale. */
+  function bienvenida() {
+    if (prefs().bienvenida) return "";
+    var u = leer("unidades", {}), pl = leer("personal.planta", []);
+    if ((u && typeof u === "object" && Object.keys(u).length) || (Array.isArray(pl) && pl.length) || Object.keys(hechas()).length) return "";
+    return '<section class="bienvenida recuadro" aria-labelledby="hBv"><span class="washi" aria-hidden="true"></span>' + pegatina("microscopio", "lab", "quieta") +
+      '<div><h2 id="hBv">Te damos la bienvenida a <em>Corte</em></h2><p>Tu cuaderno de 1.º de TSAPC. <b>Hoy</b> te dice qué toca, <b>Agenda</b> guarda el horario y el calendario, y en cada unidad tienes repaso, práctica y tarjetas.</p>' +
+      '<p class="mano">Todo se guarda en este móvil, sin cuentas. Haz una copia en Mi mesa de vez en cuando.</p>' +
+      '<div class="acciones"><button type="button" class="boton" data-accion="bienvenida">Entendido</button><a class="boton secundario" href="#/asignaturas">Ver las unidades</a></div></div></section>';
   }
 
   var HOJAS = [[58, 104, -1], [60, 94, 1], [58, 84, -1], [59, 74, 1], [57, 64, -1], [57, 54, 1], [58, 44, -1], [60, 36, 1], [59, 27, -1], [58, 20, 1], [59, 15, -1], [58, 12, 1], [60, 10, -1]];
@@ -206,6 +219,17 @@
     var falta = sinAgenda();
     if (falta) { r.html = '<header class="cab">' + titulo(cal ? "Calen<em>dario</em>" : "Horario <em>de la semana</em>") + "</header>" + falta; return r; }
     r.html = cal ? calendario() : horario();
+    r.tic = !cal;
+    r.animar = function (M) {
+      /* la línea de «ahora» entra barriendo la columna, como un rotulador */
+      var la = $("#ahoraLinea i", vista);
+      if (la) M.animar(la, [{ clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0 0 0)" }], { duration: 600, delay: 200, easing: M.CURVA.trazo, sinFundido: true }, "ahora");
+      /* el mes nuevo llega desde el lado hacia el que se pasa */
+      var mes = $(".mes", vista);
+      if (mes && dirMes) M.animar(mes, [{ opacity: 0, transform: "translateX(" + dirMes * 28 + "px)" }, { opacity: 1, transform: "none" }], { duration: 280, easing: M.CURVA.salida }, "mes");
+      dirMes = 0;
+      if (mes) deslizarMes(mes);
+    };
     return r;
   }
   function seg(grupo, valor, opciones, etiqueta) {
@@ -216,11 +240,12 @@
   var DIASL = ["", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes"], DIASA = ["", "L", "M", "X", "J", "V"];
   function horario() {
     var f = fmtHora(), F = AG.franjas, n = ahora(), dow = n.getDay(), nm = n.getHours() * 60 + n.getMinutes();
-    var horaCol = function (t) { return f === "12" ? "<span>" + L.h12(t, true) + "</span>" : f === "24" ? "<span>" + t + "</span>" : "<span>" + t + "</span><small>" + L.h12(t, true) + "</small>"; };
+    /* se escapa el texto (viene del JSON de la agenda), no el HTML de la celda */
+    var horaCol = function (t) { var h = esc(L.h12(t, true)); t = esc(t); return f === "12" ? "<span>" + h + "</span>" : f === "24" ? "<span>" + t + "</span>" : "<span>" + t + "</span><small>" + h + "</small>"; };
     var out = '<div class="h-dia" style="grid-row:1;grid-column:1"><span class="sr">Hora</span></div>';
     for (var d = 1; d <= 5; d++) out += '<div class="h-dia' + (d === dow ? " hoy" : "") + '" style="grid-row:1;grid-column:' + (d + 1) + '"><span class="ab" aria-hidden="true">' + DIASA[d] + '</span><span class="completo">' + DIASL[d] + '</span><span class="sr">' + (d === dow ? " (hoy)" : "") + "</span></div>";
     F.forEach(function (fr, i) {
-      out += '<div class="h-hora" style="grid-row:' + (i + 2) + ';grid-column:1">' + esc(horaCol(fr.inicio)) + "</div>";
+      out += '<div class="h-hora" style="grid-row:' + (i + 2) + ';grid-column:1">' + horaCol(fr.inicio) + "</div>";
       if (fr.recreo) out += '<div class="recreo" style="grid-row:' + (i + 2) + '">recreo · ' + L.rango(fr.inicio, fr.fin, f === "ambas" ? "24" : f) + "</div>";
     });
     var fi = function (t, fin) { for (var i = 0; i < F.length; i++) if ((fin ? F[i].fin : F[i].inicio) === t) return i; return 0; };
@@ -232,6 +257,7 @@
         '<small class="completo">' + esc(L.rango(h.inicio, h.fin, f === "ambas" ? "24" : f)) + "</small>" +
         '<span class="sr">, ' + DIASL[h.dia] + " de " + esc(L.rango(h.inicio, h.fin, f).replace("–", " a ")) + (pf ? ", con " + esc(pf) : "") + (h.lab ? ", práctica en el laboratorio" : "") + (ya ? ", ahora" : "") + "</span></div>";
     });
+    out += lineaAhora(n);
     var hoyL = AG.horario.filter(function (h) { return h.dia === dow; }).map(function (h) {
       var s = L.sid(h.asig);
       return '<li data-subject="' + esc(s) + '"><span class="t num">' + (f === "ambas" ? esc(h.inicio + "–" + h.fin) + "<small>" + esc(L.h12r(h.inicio, h.fin)) + "</small>" : esc(L.rango(h.inicio, h.fin, f))) + "</span><span><b>" + A[s].nombre + "</b>" + (prof(s) ? " · " + esc(prof(s)) : "") + (h.lab ? " · práctica en el laboratorio" : "") + (h.nota ? " · " + esc(h.nota) : "") + "</span></li>";
@@ -247,7 +273,29 @@
       '<section aria-label="Nota"><div class="nota"><span class="mano">Miércoles, ' + L.rango("18:55", "19:50", f) + ": Gestión es hora de tutoría. Recreo, " + L.rango("17:30", "18:00", f) + ".</span></div></section></div>";
   }
 
-  var MIN_M = new Date(2026, 8, 1), MAX_M = new Date(2027, 5, 1);
+  /* la línea de «ahora»: cruza la columna de hoy a la altura de la hora real, dentro de su franja. Solo en horas de clase. */
+  function posAhora(n) {
+    var F = AG.franjas, dow = n.getDay(), nm = n.getHours() * 60 + n.getMinutes() + n.getSeconds() / 60;
+    if (dow < 1 || dow > 5) return null;
+    for (var i = 0; i < F.length; i++) {
+      var a = L.hm(F[i].inicio), b = L.hm(F[i].fin), ia = a[0] * 60 + a[1], ib = b[0] * 60 + b[1];
+      if (nm >= ia && nm < ib) return { fila: i + 2, col: dow + 1, pct: ((nm - ia) / (ib - ia) * 100).toFixed(2) };
+    }
+    return null;
+  }
+  function lineaAhora(n) {
+    var p = posAhora(n); if (!p) return "";
+    return '<div class="ahora-linea" id="ahoraLinea" aria-hidden="true" style="grid-row:' + p.fila + ";grid-column:" + p.col + ";--p:" + p.pct + '%"><i></i><span class="ahora-hora num">' + L.pad(n.getHours()) + ":" + L.pad(n.getMinutes()) + "</span></div>";
+  }
+  function moverAhora() {
+    var el = $("#ahoraLinea"), p = posAhora(ahora()); if (!el) return;
+    if (!p) { el.remove(); return; }
+    var n = ahora();
+    el.style.gridRow = String(p.fila); el.style.gridColumn = String(p.col); el.style.setProperty("--p", p.pct + "%");
+    var h = el.querySelector(".ahora-hora"); if (h) h.textContent = L.pad(n.getHours()) + ":" + L.pad(n.getMinutes());
+  }
+
+  var MIN_M = new Date(2026, 8, 1), MAX_M = new Date(2027, 5, 1), dirMes = 0;
   function itemsClave(cal, filtro) {
     var it = [];
     AG.calendario.forEach(function (c) { it.push({ k: c.fecha || c.desde, fin: c.hasta, txt: c.nota || L.TIPO[c.tipo] || c.tipo }); });
@@ -264,6 +312,19 @@
       var pas = (x.fin || x.k) < nk;
       return '<li class="' + (pas ? "pasada" : "") + '"' + (x.s ? ' data-subject="' + x.s + '"' : "") + '><span class="d num">' + l + "</span><span>" + esc(x.txt) + (pas ? '<span class="sr"> (pasada)</span>' : "") + (x.ev && x.ev.provisional ? " " + provisional(x.ev, true) + (x.ev.nota && !pas ? '<small class="clave-nota">' + esc(x.ev.nota) + "</small>" : "") : "") + "</span></li>";
     }).join("") + "</ul>";
+  }
+  /* pasar de mes deslizando el calendario con el dedo; los botones ‹ › siguen siendo la vía principal */
+  function deslizarMes(mes) {
+    var x0 = null, y0 = 0, id = null;
+    mes.addEventListener("pointerdown", function (ev) { if (ev.pointerType === "mouse") return; x0 = ev.clientX; y0 = ev.clientY; id = ev.pointerId; });
+    var soltar = function (ev) {
+      if (x0 === null || ev.pointerId !== id) return;
+      var dx = ev.clientX - x0, dy = ev.clientY - y0; x0 = null;
+      if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      var b = $('[data-mes="' + (dx < 0 ? 1 : -1) + '"]:not([disabled])'); if (b) b.click();
+    };
+    mes.addEventListener("pointerup", soltar);
+    mes.addEventListener("pointercancel", function () { x0 = null; });
   }
   var NUM = ["ninguno", "uno", "dos", "tres", "cuatro", "cinco", "seis"];
   function notaMes(m) {
@@ -440,12 +501,45 @@
   }
 
   /* ================= MI MESA ================= */
+  /* ---------- colección: una pegatina por unidad dominada al 100 % (tsapc:v2 › personal.coleccion) ----------
+     Nunca se borra. Si pasan días sin repasar esa unidad (tarjetas o práctica), la pegatina palidece; al repasar, recupera el color. */
+  function coleccion() { return L.coleccionLimpia(leer("personal.coleccion", {})); }
+  function completas() { return D.UNIDADES.filter(function (u) { var p = progresoDe(u); return p && p.total > 0 && p.hechos >= p.total; }).map(function (u) { return u.id; }); }
+  function estamparColeccion() {
+    var r = L.estampar(leer("personal.coleccion", {}), completas(), L.clave(ahora()));
+    if (r.nuevas.length) guardar("personal.coleccion", r.col);
+    return r.col;
+  }
+  function refrescarColeccion(id) {
+    var antes = coleccion(), hoy = L.clave(ahora());
+    if (!antes[id] || antes[id].ultimo >= hoy) return;
+    guardar("personal.coleccion", L.refrescar(antes, id, hoy));
+  }
+  var PALIDEZ = ["", "algo pálida", "pálida", "muy pálida"];
+  function hace(dias) { return dias <= 0 ? "hoy" : dias === 1 ? "ayer" : "hace " + dias + " días"; }
+  function fechaCorta(k) { var d = L.parseDia(k); return d.getDate() + " " + L.MESES[d.getMonth()].slice(0, 3); }
+  function albumHTML(col) {
+    var hoy = L.clave(ahora()), n = 0;
+    var li = D.UNIDADES.map(function (u) {
+      var e = col[u.id];
+      if (!e) return '<li class="hueco" data-subject="' + u.s + '"><span class="hueco-marco" aria-hidden="true"></span><span class="alb-cod mano">' + esc(u.codigo) + '</span><span class="sr">' + esc(u.codigo + " · " + u.titulo) + ": todavía sin pegatina</span></li>";
+      n++;
+      var pz = L.palidez(e, hoy), dias = L.difDias(L.parseDia(hoy), L.parseDia(e.ultimo));
+      return '<li class="ganada' + (e.vista ? "" : " nueva") + '" data-subject="' + u.s + '" data-palidez="' + pz + '" data-unidad="' + esc(u.id) + '">' +
+        '<a href="#/unidad/' + esc(u.id) + '" aria-label="' + esc(u.codigo + " · " + u.titulo + ": dominada desde el " + fechaCorta(e.desde) + ", repasada " + hace(dias) + (pz ? ", " + PALIDEZ[pz] : "")) + '">' +
+        pegatina(u.pegatina, u.s, "quieta") + '<span class="alb-cod mano" aria-hidden="true">' + esc(u.codigo) + "</span>" + (pz ? '<span class="alb-pal" aria-hidden="true">' + hace(dias) + "</span>" : "") + "</a></li>";
+    }).join("");
+    return '<section class="ancho" aria-labelledby="hCol"><div class="sec-cab"><h2 id="hCol">Tu colección</h2><span class="mano">' + n + " de " + D.UNIDADES.length + "</span></div>" +
+      '<p class="sub">Cuando dominas una unidad entera en su repaso, ganas su pegatina. Si pasa una semana sin repasarla (tarjetas o práctica), se va poniendo pálida; nunca se pierde y recupera el color al volver.</p>' +
+      '<ul class="album" role="list">' + li + "</ul></section>";
+  }
+
   var instalar = null;
   window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); instalar = e; var b = $("#instalar"); if (b) b.hidden = false; });
   function pMesa() {
-    var p = prefs(), tema = p.tema === "papel" || p.tema === "noche" ? p.tema : "sistema", f = fmtHora();
-    var html = '<header class="cab">' + titulo("Mi <em>mesa</em>") + '<p class="sub">Cómo se ve, cómo se guarda y cómo llevarla en el móvil.</p></header>' +
-      '<div class="rejilla rejilla-mesa">' +
+    var p = prefs(), tema = p.tema === "papel" || p.tema === "noche" ? p.tema : "sistema", f = fmtHora(), col = estamparColeccion();
+    var html = '<header class="cab">' + titulo("Mi <em>mesa</em>") + '<p class="sub">Tu colección, cómo se ve, cómo se guarda y cómo llevarla en el móvil.</p></header>' +
+      '<div class="rejilla rejilla-mesa">' + albumHTML(col) +
       '<section aria-labelledby="hTe"><h2 id="hTe">Tema</h2><p class="sub">Papel de día, noche para la última hora. «Sistema» sigue al móvil.</p>' + seg("tema", tema, [["sistema", "Sistema"], ["papel", "Papel"], ["noche", "Noche"]], "Tema") + "</section>" +
       '<section aria-labelledby="hHo"><h2 id="hHo">Formato de hora</h2><p class="sub">La primera clase: <b class="num" id="ejHora">' + L.hora("14:45", f) + "</b></p>" + seg("hora", f, [["ambas", "Ambas"], ["24", "24 h"], ["12", "12 h"]], "Formato de la hora") + "</section>" +
       '<section class="ancho" aria-labelledby="hCo"><h2 id="hCo">Copia de seguridad</h2><p>Tu progreso se guarda en este dispositivo. Haz una copia para no perderlo o para pasarlo a otro móvil. Al restaurar no se borra nada que no venga en la copia.</p>' +
@@ -466,6 +560,18 @@
           catch (_) { $("#bkMsg").textContent = "Este navegador no deja leer el almacenamiento: no se puede hacer copia."; }
         }
         var bi = $("#instalar"); if (bi) bi.addEventListener("click", function () { if (!instalar) return; instalar.prompt(); instalar.userChoice.then(function () { instalar = null; bi.hidden = true; }); });
+      },
+      /* las pegatinas recién ganadas se estampan una vez (con un poco de giro) y quedan vistas */
+      animar: function (M) {
+        var nuevas = $$(".album .nueva", vista);
+        if (!nuevas.length) return;
+        nuevas.forEach(function (li, i) {
+          var pg = li.querySelector(".pegatina");
+          M.animar(pg, [{ transform: "scale(1.6) rotate(-14deg)", opacity: 0 }, { transform: "scale(.94) rotate(3deg)", opacity: 1, offset: 0.7 }, { transform: "none", opacity: 1 }], { duration: 520, delay: 120 + i * 140, easing: M.CURVA.muelle, fill: "both" }, "estampa-" + i);
+        });
+        M.sentir(12);
+        guardar("personal.coleccion", L.marcarVistas(coleccion()));
+        aviso(nuevas.length === 1 ? "Pegatina nueva en tu colección." : nuevas.length + " pegatinas nuevas en tu colección.");
       }
     };
   }
@@ -480,7 +586,7 @@
   }
 
   /* ================= estudiar (app/estudio.js) ================= */
-  var E = window.CorteEstudio({ D: D, A: A, esc: esc, ico: ico, SPR: SPR, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina,
+  var E = window.CorteEstudio({ D: D, A: A, esc: esc, ico: ico, SPR: SPR, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion,
     pintar: function (q) { pintar(q); }, repintar: function (sel, arriba) { pintar(!arriba); var b = sel && $(sel, vista); if (b) b.focus({ preventScroll: !arriba }); } });
   function pPractica(id, a2) { return E.practica(id, a2) || pNada(); }
   function pTarjetas(id) { return E.tarjetas(id) || pNada(); }
@@ -496,13 +602,17 @@
     es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("dibujada"); io.unobserve(e.target); } });
   }, { threshold: 0.3 }) : null;
   function dibujar() {
-    $$(".pegatina.dibujar", vista).forEach(function (el) { if (RM.matches || !io) el.classList.add("dibujada"); else io.observe(el); });
+    var quietas = M.modo() !== "completo" || !io;
+    $$(".pegatina.dibujar", vista).forEach(function (el) { if (quietas) el.classList.add("dibujada"); else io.observe(el); });
   }
   var actual = null;
   function pintar(quieta) {
     var r = leerRuta(), f = tiene(PANT, r.sec) ? PANT[r.sec] : pNada, p;
     try { p = f(r.arg, r.arg2); } catch (err) { p = { sec: "", titulo: "Error", html: '<header class="cab">' + titulo("Algo se ha <em>torcido</em>") + '</header><div class="estado es-error" role="alert"><svg aria-hidden="true"><use href="' + SPR + 'i-alerta"/></svg><div><h2 class="estado-tit">No se pudo pintar esta pantalla</h2><p>Tus datos no se han tocado. Prueba a recargar.</p></div></div>' }; }
     var y = window.scrollY;
+    M.cortarTodo();                                   /* nada se queda a medias al repintar */
+    /* modo examen: mientras se hace un intento en modo examen, nada se mueve (mov.js lo lee aquí) */
+    if (p.examen) document.documentElement.setAttribute("data-examen", "1"); else document.documentElement.removeAttribute("data-examen");
     vista.innerHTML = p.html;
     if (p.subject) vista.setAttribute("data-subject", p.subject); else vista.removeAttribute("data-subject");
     var pt = $("#pestanas");
@@ -513,14 +623,22 @@
     dibujar();
     actual = p;
     tic();
+    /* cada pantalla anima lo suyo después de pintarse; un fallo aquí nunca rompe la pantalla */
+    if (p.animar) { try { p.animar(M); } catch (_) {} }
     if (quieta) { window.scrollTo(0, y); return; }
     window.scrollTo(0, 0);
     var h1 = $("#titulo"); if (h1) h1.focus({ preventScroll: true });
   }
+  /* cambio de pantalla: completo = la hoja pasa (View Transition o entrada suave); reducido = fundido de 150 ms; examen = nada */
   function cambiar() {
-    if (document.startViewTransition && !RM.matches) { document.startViewTransition(function () { pintar(false); }); return; }
-    pintar(false);
-    if (!RM.matches) { vista.classList.remove("entra"); void vista.offsetWidth; vista.classList.add("entra"); }
+    M.mov(function () {
+      if (document.startViewTransition) { document.startViewTransition(function () { pintar(false); }); return; }
+      pintar(false);
+      M.anim(vista, [{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }], { duration: 220, easing: M.CURVA.salida }, "vista");
+    }, {
+      reducido: function () { pintar(false); M.fundido(vista, "vista"); },
+      examen: function () { pintar(false); }
+    });
   }
   window.addEventListener("hashchange", function () { if (/^#\/|^$/.test(location.hash)) cambiar(); });
   var salta = $(".saltar"); if (salta) salta.addEventListener("click", function (e) { e.preventDefault(); var h = $("#titulo") || vista; h.focus(); });
@@ -529,6 +647,7 @@
   function tic() {
     if (!actual || !actual.tic || !AG) return;
     var n = ahora();
+    moverAhora();
     $$("[data-cuenta]").forEach(function (el) { var e = EVS.filter(function (x) { return x.id === el.getAttribute("data-cuenta"); })[0]; if (e) el.textContent = L.cuentaAtras(e.due - n); });
     var h = hechas();
     $$("[data-queda]").forEach(function (el) { var e = EVS.filter(function (x) { return x.id === el.getAttribute("data-queda"); })[0]; if (e) el.textContent = h[e.id] ? "entregada" : e.due > n ? "quedan " + L.cuentaAtras(e.due - n, true) : "plazo cerrado"; });
@@ -545,7 +664,14 @@
     if (!t || !vista.contains(t) && !t.closest(".mesa")) return;
     if (t.hasAttribute("data-tarea")) return tachar(t);
     if (t.getAttribute("data-accion") === "reintentar") { vista.innerHTML = cargando("Cargando la agenda"); return cargarAgenda(); }
-    if (t.hasAttribute("data-ir")) { var d = document.getElementById(t.getAttribute("data-ir")); if (d) { d.scrollIntoView({ block: "center", behavior: RM.matches ? "auto" : "smooth" }); var c = d.querySelector(".casilla"); if (c) c.focus({ preventScroll: true }); } return; }
+    if (t.getAttribute("data-accion") === "bienvenida") {
+      ponerPref("bienvenida", true);
+      var bv = t.closest(".bienvenida"), fin = function () { pintar(true); var h1 = $("#titulo"); if (h1) h1.focus({ preventScroll: true }); };
+      var a = bv && M.animar(bv, [{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateY(-6px) rotate(-1deg)" }], { duration: 240, easing: M.CURVA.salida, fill: "forwards" }, "bienvenida");
+      if (a) a.onfinish = fin; else fin();
+      return;
+    }
+    if (t.hasAttribute("data-ir")) { var d = document.getElementById(t.getAttribute("data-ir")); if (d) { d.scrollIntoView({ block: "center", behavior: M.modo() === "completo" ? "smooth" : "auto" }); var c = d.querySelector(".casilla"); if (c) c.focus({ preventScroll: true }); } return; }
     if (t.hasAttribute("data-hora")) {
       var v = L.formatoValido(t.getAttribute("data-hora"));
       if (!ponerPref("hora", v)) aviso("No se pudo guardar la preferencia.", "error");
@@ -559,11 +685,15 @@
     if (t.hasAttribute("data-cal")) { calVista = t.getAttribute("data-cal") === "curso" ? "curso" : "mes"; return repintarConFoco('[data-cal="' + calVista + '"]'); }
     if (t.hasAttribute("data-mes")) {
       var paso = +t.getAttribute("data-mes"), nm = new Date(calMes.getFullYear(), calMes.getMonth() + paso, 1);
-      if (nm >= MIN_M && nm <= MAX_M) calMes = nm;
+      if (nm >= MIN_M && nm <= MAX_M) { calMes = nm; dirMes = paso; }
       return repintarConFoco('[data-mes="' + paso + '"]:not([disabled])', '[data-mes="' + (-paso) + '"]');
     }
   });
   function repintarConFoco(sel, alt) { pintar(true); var b = $(sel, vista) || (alt && $(alt, vista)); if (b) b.focus({ preventScroll: true }); }
+
+  /* ---------- conexión: avisar al perderla y al recuperarla (lo guardado sigue funcionando) ---------- */
+  window.addEventListener("offline", function () { aviso("Sin conexión. Lo que ya abriste sigue funcionando y tu progreso se guarda igual."); });
+  window.addEventListener("online", function () { aviso("Vuelves a tener conexión."); if (agError) cargarAgenda(); });
 
   /* ---------- arranque ---------- */
   aplicarTema(prefs().tema);

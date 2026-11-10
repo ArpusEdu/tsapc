@@ -65,7 +65,11 @@
     }
     /* vibración corta: nunca en examen ni con movimiento reducido */
     function sentir(ms) {
-      return mov(function () { if (nav && typeof nav.vibrate === "function") { try { return nav.vibrate(ms || 10); } catch (_) {} } return false; });
+      return mov(function () {
+        if (!nav || typeof nav.vibrate !== "function") return false;
+        if (nav.userActivation && !nav.userActivation.hasBeenActive) return false;   /* sin un toque previo el navegador la bloquea */
+        try { return nav.vibrate(ms || 10); } catch (_) { return false; }
+      });
     }
     function enCurso() { return Object.keys(vivas).length; }
     return { modo: modo, mov: mov, anim: anim, animar: animar, fundido: fundido, cortar: cortar, cortarTodo: cortarTodo, sentir: sentir, enCurso: enCurso, CURVA: CURVA, REDUCIDO_MS: REDUCIDO_MS };

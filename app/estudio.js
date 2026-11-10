@@ -11,6 +11,87 @@
     var tiene = function (o, k) { return o !== null && typeof o === "object" && Object.prototype.hasOwnProperty.call(o, k); };
     var hoyClave = function () { return S2.dia(ctx.ahora()); };
     var coma = function (n) { return (Math.round(n * 10) / 10).toFixed(1).replace(".", ","); };
+    var refrescar = function (u) { if (ctx.refrescar) { try { ctx.refrescar(u); } catch (_) {} } };   /* la pegatina de la colección recupera el color */
+
+    /* ---------- movimiento (Fase 5): cada acción deja apuntado su efecto y la pantalla lo anima al repintarse ----------
+       Todo pasa por app/mov.js: en modo examen no se mueve nada y con «reducir movimiento» solo hay fundidos. */
+    var EF = null;
+    function efectosPractica(M) {
+      var f = EF; EF = null; if (!f) return;
+      if (f.t === "resp") {
+        var caja = $(".qz-fb") || $(".qz-modelo");
+        if (caja) M.animar(caja, [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 260, easing: M.CURVA.salida }, "qz-fb");
+        if (f.abierta) return;
+        var buena = $(".qz-op.buena"), mala = $(".qz-op.mala");
+        if (f.ok) {
+          if (buena) M.animar(buena, [{ transform: "none" }, { transform: "scale(1.025)", offset: 0.4 }, { transform: "none" }], { duration: 320, easing: M.CURVA.muelle, sinFundido: true }, "qz-op");
+          var tic = buena && buena.querySelector(".ico");
+          if (tic) M.animar(tic, [{ clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0 0 0)" }], { duration: 300, delay: 60, easing: M.CURVA.trazo, sinFundido: true }, "qz-tic");
+          $$(".qz-campo.bien, .qz-rel-f.bien").forEach(function (el, i) { M.animar(el, [{ transform: "none" }, { transform: "scale(1.02)", offset: 0.4 }, { transform: "none" }], { duration: 300, delay: i * 40, easing: M.CURVA.muelle, sinFundido: true }, "qz-c" + i); });
+          M.sentir(8);
+        } else {
+          /* fallo: la elegida tiembla poco y la buena entra en foco. Sin rojo chillón. */
+          if (mala) M.animar(mala, [{ transform: "none" }, { transform: "translateX(-5px)" }, { transform: "translateX(4px)" }, { transform: "translateX(-2px)" }, { transform: "none" }], { duration: 300, easing: "ease-out", sinFundido: true }, "qz-op");
+          if (buena) M.animar(buena, [{ transform: "scale(.985)", filter: "blur(1.5px)" }, { transform: "none", filter: "none" }], { duration: 380, delay: 160, easing: M.CURVA.foco }, "qz-buena");
+          $$(".qz-campo.mal .qz-buena, .qz-rel-f.mal .qz-buena").forEach(function (el, i) { M.animar(el, [{ opacity: 0, filter: "blur(2px)" }, { opacity: 1, filter: "none" }], { duration: 360, delay: 120 + i * 50, easing: M.CURVA.foco }, "qz-b" + i); });
+          M.sentir(15);
+        }
+      } else if (f.t === "nota") subirNota(M);
+    }
+    /* la nota sube contando en 800 ms; un toque (o una tecla) la deja en su sitio */
+    function subirNota(M) {
+      var el = $(".qz-nota-n"), caja = $(".qz-nota-caja"); if (!el) return;
+      var fin = parseFloat(el.textContent.replace(",", ".")); if (!(fin > 0)) return;
+      M.mov(function () {
+        var t0 = null, parar = false, DUR = 800;
+        var saltar = function () { parar = true; el.textContent = coma(fin); quitar(); };
+        var quitar = function () { if (caja) caja.removeEventListener("click", saltar); document.removeEventListener("keydown", saltar, true); };
+        if (caja) caja.addEventListener("click", saltar);
+        document.addEventListener("keydown", saltar, true);
+        el.textContent = coma(0);
+        var paso = function (ts) {
+          if (parar || !document.contains(el)) return quitar();
+          if (t0 === null) t0 = ts;
+          var x = Math.min(1, (ts - t0) / DUR), e = 1 - Math.pow(1 - x, 3);
+          el.textContent = coma(fin * e);
+          if (x < 1) requestAnimationFrame(paso); else quitar();
+        };
+        requestAnimationFrame(paso);
+      });
+    }
+    function efectosTarjetas(M) {
+      var f = EF; EF = null;
+      var ficha = $(".tj-ficha"); if (!ficha) return;
+      if (f && f.t === "voltear") M.animar(ficha, [{ transform: "perspective(900px) rotateY(-80deg)", opacity: 0.4 }, { transform: "perspective(900px) rotateY(0deg)", opacity: 1 }], { duration: 340, easing: M.CURVA.salida }, "tj");
+      if (f && f.t === "puntuada") { var d = f.r === "otra" ? -1 : 1; M.animar(ficha, [{ transform: "translateX(" + d * 28 + "px) rotate(" + d * 2 + "deg)", opacity: 0 }, { transform: "none", opacity: 1 }], { duration: 300, easing: M.CURVA.salida }, "tj"); }
+      if (ficha.classList.contains("vuelta") && M.modo() === "completo") deslizar(ficha, M);
+    }
+    /* deslizar la tarjeta ya girada: → «Bien», ← «Otra vez». Los botones siguen ahí para quien no quiera arrastrar. */
+    function deslizar(ficha, M) {
+      var x0 = null, y0 = 0, dx = 0, id = null, UMBRAL = 90;
+      ficha.addEventListener("pointerdown", function (ev) {
+        if (ev.button !== 0 || (ev.target.closest && ev.target.closest("a, button, summary"))) return;
+        x0 = ev.clientX; y0 = ev.clientY; dx = 0; id = ev.pointerId;
+      });
+      ficha.addEventListener("pointermove", function (ev) {
+        if (x0 === null || ev.pointerId !== id) return;
+        dx = ev.clientX - x0;
+        if (Math.abs(dx) < 8 || Math.abs(dx) < Math.abs(ev.clientY - y0)) return;
+        if (!ficha.hasPointerCapture(id)) ficha.setPointerCapture(id);
+        ficha.style.transform = "translateX(" + dx + "px) rotate(" + (dx / 18).toFixed(2) + "deg)";
+        ficha.setAttribute("data-va", dx > UMBRAL ? "bien" : dx < -UMBRAL ? "otra" : "");
+      });
+      var soltar = function (ev) {
+        if (x0 === null || ev.pointerId !== id) return;
+        x0 = null; ficha.removeAttribute("data-va");
+        var b = dx > UMBRAL ? $('[data-tj-r="bien"]') : dx < -UMBRAL ? $('[data-tj-r="otra"]') : null;
+        if (b) { b.click(); return; }
+        var ahoraT = ficha.style.transform; ficha.style.transform = "";
+        if (ahoraT) M.anim(ficha, [{ transform: ahoraT }, { transform: "none" }], { duration: 240, easing: M.CURVA.muelle }, "tj-vuelve");
+      };
+      ficha.addEventListener("pointerup", soltar);
+      ficha.addEventListener("pointercancel", soltar);
+    }
 
     /* ---------- bancos (fetch y memoria) ---------- */
     var BANCOS = {}, CARGA = {};
@@ -119,7 +200,8 @@
       if ((e.fase === "hacer" || e.fase === "aviso" || e.fase === "resultado") && !act) e.fase = "elegir";
       var cuerpo = e.fase === "hacer" ? vistaPregunta(u, J, act, e) : e.fase === "aviso" ? vistaAviso(u, J, act) : e.fase === "resultado" ? vistaResultado(u, J, act, e) : vistaElegir(u, J, act, e);
       var enCurso = e.fase === "hacer" || e.fase === "aviso";
-      return { sec: "asignaturas", titulo: (enCurso ? "Pregunta · " : "Practicar · ") + u.codigo, subject: u.s, html: (enCurso ? "" : rt + cab) + cuerpo, montar: enCurso ? montarHacer : null };
+      return { sec: "asignaturas", titulo: (enCurso ? "Pregunta · " : "Practicar · ") + u.codigo, subject: u.s, html: (enCurso ? "" : rt + cab) + cuerpo, montar: enCurso ? montarHacer : null,
+        examen: enCurso && !!act && act.modo === "examen" && !act.terminado, animar: efectosPractica };
     }
 
     /* --- elegir --- */
@@ -288,6 +370,7 @@
       var v = intentos(u); v.actual = it; v.historial = Q.registrar(v.historial, Q.resumen(it, c));
       ctx.guardar(rutaU(u, "intentos"), v); ctx.guardar(rutaU(u, "errores"), r0.mazo);
       est(u).fase = "resultado"; est(u).filtro = c.falladas.length || c.pendientes.length ? "falladas" : "todas";
+      EF = { t: "nota" }; refrescar(u);
       ctx.repintar("#titulo", true);
       ctx.aviso(porTiempo ? "Se acabó el tiempo: examen corregido." : r0.entran.length ? r0.entran.length + (r0.entran.length === 1 ? " pregunta nueva" : " preguntas nuevas") + " en tu mazo de errores." : r0.salen.length ? r0.salen.length + " sale" + (r0.salen.length === 1 ? "" : "n") + " del mazo de errores." : "Corregido.");
     }
@@ -349,8 +432,8 @@
         var q = J.porId[it.orden[pos(it)]], ex = it.modo === "examen";
         if (!ex && it.vistas[q.id]) return;
         Q.responder(it, q.id, Q.valorDesdePosicion(q, it, +t.getAttribute("data-qz-op")));
-        if (!ex) it.vistas[q.id] = 1;
-        guardarIntento(u, it);
+        if (!ex) { it.vistas[q.id] = 1; EF = { t: "resp", ok: Q.corregirPregunta(q, it.resp[q.id], it.auto[q.id]).ok }; }
+        guardarIntento(u, it); refrescar(u);
         return ctx.repintar('.qz-nav [data-qz="sig"], .qz-nav .boton[data-qz="corregir"]');   /* Intro pasa a la siguiente */
       }
       if (t.hasAttribute("data-qz-ovr")) {
@@ -372,7 +455,8 @@
         case "indice": e.indice = !e.indice; return ctx.repintar('[data-qz="indice"]');
         case "ant": return irA(u, pos(it) - 1);
         case "sig": return irA(u, pos(it) + 1);
-        case "ver": { guardarYa(); it = actual(u); var q2 = J.porId[it.orden[pos(it)]]; it.vistas[q2.id] = 1; guardarIntento(u, it); return ctx.repintar(".qz-auto button, .qz-nav [data-qz=sig], .qz-nav [data-qz=corregir]"); }
+        case "ver": { guardarYa(); it = actual(u); var q2 = J.porId[it.orden[pos(it)]]; it.vistas[q2.id] = 1; guardarIntento(u, it); refrescar(u);
+          EF = { t: "resp", abierta: q2.tipo === "abierta", ok: q2.tipo === "abierta" ? false : Q.corregirPregunta(q2, it.resp[q2.id], it.auto[q2.id]).ok }; return ctx.repintar(".qz-auto button, .qz-nav [data-qz=sig], .qz-nav [data-qz=corregir]"); }
         case "corregir": guardarYa(); return intentarCorregir(u, J);
         case "corregir-ya": guardarYa(); return terminarIntento(u, J);
         case "ir-faltan": { var f = Q.sinContestar(it, preguntasDe(J, it)); return irA(u, f.length ? it.orden.indexOf(f[0]) : 0); }
@@ -437,16 +521,17 @@
         var dorso = t.tipo === "palabra" ? '<p class="tj-palabra">' + esc(t.dorso) + '</p><p class="tj-extra">Se dice: «' + esc(t.pronuncia) + '»</p><p class="tj-extra"><b>Truco:</b> ' + esc(t.truco) + '</p><p class="tj-extra">“' + esc(t.ejemplo) + "”</p>" : '<div class="rico">' + rico(t.dorso, t.formato, "../" + u.id + "/repaso/") + "</div>" + (t.fuente ? '<p class="tj-fuente">' + esc(t.fuente) + "</p>" : "");
         cuerpo = '<div class="tj-cont"><span class="num">' + (s.hechas + 1) + "</span> · quedan " + s.cola.length + (S2.caja(e0) ? " · " + S2.CAJAS[S2.caja(e0)] : " · nueva") + '</div><article class="tj-ficha' + (s.vuelta ? " vuelta" : "") + '" aria-live="polite"><p class="tj-meta">' + meta + '</p><h2 class="tj-frente">' + esc(t.frente) + "</h2>" +
           (s.vuelta ? '<div class="tj-dorso">' + dorso + "</div>" : "") + "</article>" +
+          (s.vuelta ? '<p class="tj-desliza mano" aria-hidden="true">o desliza la tarjeta: → bien · ← otra vez</p>' : "") +
           (s.vuelta ? '<div class="tj-botones" role="group" aria-label="¿Cómo te ha ido?"><button type="button" class="boton secundario tj-otra" data-tj-r="otra"><span>Otra vez</span><small>hoy · <kbd>1</kbd></small></button><button type="button" class="boton" data-tj-r="bien"><span>Bien</span><small>' + dias(pv.bien) + ' · <kbd>2</kbd></small></button><button type="button" class="boton secundario" data-tj-r="facil"><span>Fácil</span><small>' + dias(pv.facil) + " · <kbd>3</kbd></small></button></div>"
             : '<div class="tj-botones"><button type="button" class="boton" data-tj="voltear">Ver la respuesta <kbd>Espacio</kbd></button></div>');
       }
-      return { sec: "asignaturas", titulo: "Tarjetas · " + u.codigo, subject: u.s, html: rt + cab + '<div class="tj-rejilla"><div class="tj-sesion">' + cuerpo + '</div><aside class="tj-lado">' + cajas + "</aside></div>" };
+      return { sec: "asignaturas", titulo: "Tarjetas · " + u.codigo, subject: u.s, html: rt + cab + '<div class="tj-rejilla"><div class="tj-sesion">' + cuerpo + '</div><aside class="tj-lado">' + cajas + "</aside></div>", animar: efectosTarjetas };
     }
     function dias(n) { return n === 1 ? "mañana" : "en " + n + " días"; }
     function fechaCorta(k) { var p = k.split("-"); return +p[2] + " de " + ctx.MESES[+p[1] - 1]; }
     function clicTarjetas(t, u, J) {
       var s = sesion(u, J);
-      if (t.getAttribute("data-tj") === "voltear") { s.vuelta = true; return ctx.repintar('[data-tj-r="bien"]'); }
+      if (t.getAttribute("data-tj") === "voltear") { s.vuelta = true; EF = { t: "voltear" }; return ctx.repintar('[data-tj-r="bien"]'); }
       if (t.getAttribute("data-tj") === "mas") {
         var es = estadosCon(u, J), hoy = hoyClave();
         var futuras = J.tarjetas.filter(function (x) { return es[x.id] && es[x.id].due > hoy; }).sort(function (a, b) { return es[a.id].due < es[b.id].due ? -1 : 1; });
@@ -460,7 +545,7 @@
       todos[id] = S2.puntuar(previo, resp, hoyClave());
       if (!ctx.guardar(rutaU(u, "tarjetas"), todos)) ctx.aviso("No se pudo guardar.", "error");
       if (resp === "otra") s.cola.splice(Math.min(3, s.cola.length), 0, id); else s.hechas++;
-      s.vuelta = false;
+      s.vuelta = false; EF = { t: "puntuada", r: resp }; refrescar(u);
       ctx.repintar('[data-tj="voltear"], [data-tj="mas"]');
     }
 

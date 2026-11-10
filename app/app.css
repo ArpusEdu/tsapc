@@ -21,6 +21,9 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 @keyframes vista-entra{from{opacity:0;transform:translateY(6px)}}
 ::view-transition-old(vista),::view-transition-new(vista){animation-duration:200ms}
 @media (prefers-reduced-motion:reduce){ .entra{animation:none} }
+/* modo examen (app/mov.js): mientras dura un intento en modo examen nada se mueve, ni con CSS.
+   Es la misma excepción que el movimiento reducido: el único otro sitio con !important. */
+[data-examen="1"] *,[data-examen="1"] *::before,[data-examen="1"] *::after{animation:none!important;transition:none!important}
 
 /* ---------- cabeceras y secciones ---------- */
 .cab{margin-bottom:var(--e-5)}
@@ -365,7 +368,10 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .qz-tipos td.num{white-space:nowrap;width:5.5em}
 .qz-mini-barra{display:block;height:8px;border:1.5px solid var(--c-tinta);border-radius:var(--r-pildora);overflow:hidden;min-width:60px}
 .qz-mini-barra i{display:block;height:100%;background:var(--asig)}
-.qz-revision{list-style:none;padding:0;display:grid;gap:var(--e-4)}
+.qz-revision{list-style:none;padding:0;display:grid;gap:var(--e-4);min-width:0}
+.rejilla>section{min-width:0}   /* que una palabra larga o una tabla de la corrección no ensanche la hoja a 360 px */
+.qz-rev{min-width:0;overflow-wrap:anywhere}
+.qz-rev .rico table,.qz-rev .rico pre{display:block;max-width:100%;overflow-x:auto}
 .qz-rev{padding:var(--e-3) var(--e-4);border-radius:var(--r-mano);background:var(--c-tarjeta);border:1.5px solid var(--c-linea-suave)}
 .qz-rev.mal{background:var(--c-error-suave);border-color:var(--c-error)}
 .qz-rev.bien{background:var(--c-ok-suave);border-color:var(--c-ok)}
@@ -437,3 +443,47 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .err-mas{color:var(--c-tinta-2)}
 .tj-hoy b{margin-left:var(--e-2);color:var(--c-rotulador)}
 @media (prefers-reduced-motion:reduce){ .qz-circulo{animation:none;stroke-dashoffset:0} .tj-ficha.vuelta .tj-dorso{animation:none} }
+
+/* ---------- Fase 5 · colección de pegatinas (Mi mesa) ---------- */
+.album{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:var(--e-3);margin-top:var(--e-4);padding:0;list-style:none}
+.album li{position:relative;display:grid;min-height:112px}
+.album a,.album .hueco{display:grid;justify-items:center;align-content:center;gap:4px;padding:var(--e-2) 4px;border-radius:var(--r-mano);color:var(--c-tinta);text-decoration:none}
+.album a{transition:filter var(--d-lenta) ease}
+.album a:focus-visible{outline:2.5px solid var(--asig-texto);outline-offset:2px}
+.album .pegatina{width:64px;height:64px}
+.album .alb-cod{font-size:20px;line-height:1;color:var(--asig-texto)}
+.album .alb-pal{font-size:var(--t-min);color:var(--c-tinta-2)}
+.hueco-marco{width:58px;height:58px;border:2px dashed var(--c-cuadricula-2);border-radius:50%}
+.album .hueco .alb-cod{color:var(--c-tinta-2);opacity:.7}
+/* palidez: 1 (7–13 días), 2 (14–29), 3 (30 o más). Nunca desaparece. El texto «hace N días» lo dice también sin color. */
+.album [data-palidez="1"] a{filter:saturate(.65) opacity(.92)}
+.album [data-palidez="2"] a{filter:saturate(.35) opacity(.8)}
+.album [data-palidez="3"] a{filter:saturate(.1) opacity(.66)}
+@media (hover:hover){ .album .ganada a:hover{filter:none} }
+
+/* ---------- Fase 5 · tarjetas: deslizar la ficha girada ---------- */
+.tj-ficha.vuelta{touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab}
+.tj-ficha.vuelta:active{cursor:grabbing}
+.tj-ficha[data-va]::after{position:absolute;top:12px;padding:2px 10px;border-radius:var(--r-pildora);font-family:var(--f-mano);font-size:22px;font-weight:600;pointer-events:none;opacity:0;transition:opacity var(--d-rapida) ease}
+/* la etiqueta va en el borde que queda a la vista: al arrastrar a la derecha, a la izquierda, y al revés */
+.tj-ficha[data-va="bien"]::after{content:"bien";left:14px;opacity:1;color:var(--c-ok);border:2px solid currentColor;transform:rotate(-6deg)}
+.tj-ficha[data-va="otra"]::after{content:"otra vez";right:14px;opacity:1;color:var(--c-tinta-2);border:2px solid currentColor;transform:rotate(6deg)}
+.tj-ficha{position:relative}
+.tj-desliza{display:none;margin-top:var(--e-2);text-align:center;color:var(--c-tinta-2);font-size:19px}
+@media (pointer:coarse) and (prefers-reduced-motion:no-preference){ .tj-desliza{display:block} }
+[data-examen="1"] .tj-desliza{display:none}
+
+/* ---------- Fase 5 · agenda: la línea de «ahora» y el mes que se desliza ---------- */
+.horario{position:relative}
+.ahora-linea{position:relative;z-index:3;pointer-events:none}
+.ahora-linea i{position:absolute;left:-3px;right:-3px;top:var(--p);height:2.5px;margin-top:-1.25px;border-radius:2px;background:var(--c-rotulador);box-shadow:0 0 0 1.5px var(--c-hoja,var(--c-tarjeta))}
+.ahora-linea i::before{content:"";position:absolute;left:-4px;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;background:var(--c-rotulador)}
+.ahora-hora{position:absolute;right:0;top:var(--p);transform:translateY(-130%);padding:0 4px;border-radius:4px;background:var(--c-rotulador);color:var(--c-sobre-tinta,#fff);font-size:11px;font-weight:700;line-height:1.5}
+.mes{touch-action:pan-y}
+
+/* ---------- Fase 5 · primer uso ---------- */
+.bienvenida{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--e-4);align-items:start;margin-bottom:var(--e-5)}
+.bienvenida h2{font-size:var(--t-xl);margin-bottom:var(--e-2)}
+.bienvenida p+p{margin-top:var(--e-2)}
+.bienvenida .acciones{display:flex;flex-wrap:wrap;gap:var(--e-2);margin-top:var(--e-3)}
+@media (max-width:480px){ .bienvenida{grid-template-columns:1fr} .bienvenida .pegatina{width:56px;height:56px} }
