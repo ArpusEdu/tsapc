@@ -157,6 +157,10 @@ var UNIDADES = [
   },
   "extra": [
    [
+    "Aprende jugando",
+    "bio3/aprende/"
+   ],
+   [
     "Entender el porqué",
     "bio3/entender/"
    ],

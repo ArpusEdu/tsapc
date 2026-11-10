@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="es" data-unit="bio3">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bio 3 · Aprende el Tema 4 jugando</title>
+<meta name="theme-color" content="#21124f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+:root{--bg:#f4f2f6;--sf:#fff;--ink:#1d1828;--mu:#5f566d;--ln:#e3dee9;--so:#f7f5fa;--ac:#7a1f3d;--aci:#fff;--deep:#21124f;
+--ok:#1d7a4c;--oks:#e6f5ec;--no:#c8203f;--nos:#fdebef;--wa:#8a5a00;--was:#fff4d6;--lab:#00707a;--labs:#e3f5f6;--act:#0d5c8a;--acts:#e4f1fa;--r:#c8203f;
+--A:#e0533d;--T:#2f8f5b;--U:#7b4bc9;--G:#d99a00;--C:#2c62c4;
+--fd:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--fb:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;--fm:"JetBrains Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#131019;--sf:#1d1825;--ink:#ece7f3;--mu:#ab9fba;--ln:#332b3e;--so:#241e2d;--ac:#ff8fae;--aci:#1d1825;
+--ok:#7fdcab;--oks:#142a20;--no:#ff7a90;--nos:#3a1822;--wa:#ffd479;--was:#2f2510;--lab:#6fd9e2;--labs:#0f2a2d;--act:#8fd0ff;--acts:#10283a}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--fb);padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
+main{max-width:760px;margin:0 auto;padding:10px 14px 110px}
+h1,h2,h3{font-family:var(--fd);line-height:1.2;margin:0}
+button{font:inherit;cursor:pointer}
+.back{display:inline-block;margin:4px 0 8px;padding:8px 14px;border-radius:999px;background:var(--ac);color:var(--aci)!important;text-decoration:none;font-weight:700;font-size:15px}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--sf);border-top:1px solid var(--ln);display:flex;justify-content:space-around;padding:6px 4px calc(6px + env(safe-area-inset-bottom,0))}
+nav.tabs a{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;text-decoration:none;color:var(--mu);font-size:11.5px;font-weight:700;padding:4px 2px;border-radius:12px;min-height:48px;justify-content:center}
+nav.tabs a span{font-size:21px;line-height:1}
+nav.tabs a[aria-current="page"]{color:var(--ac);background:var(--so)}
+.hero{background:linear-gradient(135deg,#21124f,#7a1f3d);color:#fff;border-radius:22px;padding:20px 18px;margin:6px 0 14px}
+.hero .eb{font-size:13.5px;opacity:.85;margin:0 0 4px}.hero h1{font-size:27px;font-weight:800}.hero p{margin:8px 0 0;opacity:.95}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:18px;padding:16px;margin:0 0 14px}
+.card h2{font-size:21px;margin-bottom:6px}.card h3{font-size:18px;margin-bottom:6px}
+.mu{color:var(--mu);font-size:14.5px}
+.dp{display:inline-block;font:700 12.5px/1 var(--fb);padding:5px 8px;border-radius:999px;background:var(--so);border:1px solid var(--ln);color:var(--mu);white-space:nowrap}
+.tag{display:inline-block;font:700 12.5px/1 var(--fb);padding:5px 9px;border-radius:999px;white-space:nowrap}
+.tag.r{background:var(--r);color:#fff}.tag.k{background:var(--deep);color:#fff}.tag.x{background:var(--lab);color:#fff}.tag.a{background:var(--act);color:#fff}
+@media (prefers-color-scheme:dark){.tag.r,.tag.x,.tag.a{color:#14101a}.tag.k{background:#c9a8ff;color:#14101a}}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{display:flex;flex-direction:column;gap:4px;text-align:left;background:var(--sf);border:1px solid var(--ln);border-radius:16px;padding:14px;min-height:118px;color:var(--ink)}
+.tile b{font-family:var(--fd);font-size:16.5px;line-height:1.2}.tile .e{font-size:28px}.tile.done{border-color:var(--ok);box-shadow:0 0 0 2px var(--oks) inset}
+.tile.done::after{content:"✓ hecho";color:var(--ok);font-weight:700;font-size:13px}
+.tile.act{background:var(--acts);border-color:var(--act)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:10px 16px;border-radius:14px;border:2px solid var(--ac);background:var(--ac);color:var(--aci);font-weight:700}
+.btn.ghost{background:transparent;color:var(--ac)}
+.btn.sm{min-height:40px;padding:6px 12px;font-size:15px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.opts{display:grid;gap:8px;margin:10px 0}
+.opt{text-align:left;padding:12px 14px;border-radius:14px;border:2px solid var(--ln);background:var(--sf);color:var(--ink);min-height:48px}
+.opt.ok{border-color:var(--ok);background:var(--oks)}.opt.no{border-color:var(--no);background:var(--nos)}
+.fb{border-radius:14px;padding:12px 14px;margin:10px 0}
+.fb.ok{background:var(--oks);border-left:5px solid var(--ok)}.fb.no{background:var(--nos);border-left:5px solid var(--no)}.fb.in{background:var(--so);border-left:5px solid var(--ac)}
+.fb.lab{background:var(--labs);border-left:5px solid var(--lab)}
+.fb b:first-child{display:block}
+.seq{font-family:var(--fm);font-size:15px;background:var(--so);border:1px solid var(--ln);border-radius:12px;padding:10px;overflow-x:auto;white-space:pre;margin:8px 0;line-height:1.5}
+.strand{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:6px 0}
+.strand .end{font:700 14px var(--fm);color:var(--mu);padding:0 4px}
+.base{width:34px;height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font:700 18px var(--fm);color:#fff;border:0}
+.base.e{background:transparent;border:2px dashed var(--ln);color:var(--mu)}
+.base.sel{outline:3px solid var(--ink);outline-offset:2px}
+.bA{background:var(--A)}.bT{background:var(--T)}.bU{background:var(--U)}.bG{background:var(--G)}.bC{background:var(--C)}
+.keys{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}.keys .base{width:56px;height:52px;font-size:22px}
+.prog{height:10px;background:var(--so);border-radius:99px;overflow:hidden;border:1px solid var(--ln)}.prog i{display:block;height:100%;background:var(--ok)}
+.state{font-size:15.5px;background:var(--so);border-radius:12px;padding:10px 12px;margin:8px 0}
+.state li{margin:3px 0}
+.story p{margin:0 0 12px}
+.story .ref{font-size:12.5px;color:var(--mu);white-space:nowrap}
+textarea{width:100%;min-height:150px;font:inherit;font-size:16.5px;padding:12px;border-radius:14px;border:2px solid var(--ln);background:var(--sf);color:var(--ink)}
+.chk{list-style:none;padding:0;margin:8px 0}.chk li{display:flex;gap:8px;align-items:flex-start;padding:8px 10px;border-radius:12px;margin:5px 0;background:var(--so)}
+.chk li.on{background:var(--oks)}.chk input{width:22px;height:22px;flex:none;margin-top:2px}
+select{font:inherit;font-size:17px;padding:8px 10px;border-radius:12px;border:2px solid var(--ac);background:var(--sf);color:var(--ink);min-height:44px}
+.day{border-left:5px solid var(--ac);background:var(--so);border-radius:12px;padding:10px 12px;margin:8px 0}.day b{font-family:var(--fd)}.day ul{margin:4px 0 0;padding-left:20px}
+.day.rev{border-left-color:var(--ok)}
+.seg{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:6px 10px;border-radius:10px;font-weight:700;font-size:14.5px;border:2px solid transparent}
+.seg.ex{background:#2c62c4;color:#fff}.seg.in{background:#9aa0ab;color:#fff}.seg.end{background:var(--so);color:var(--mu);border:2px dashed var(--ln)}.seg.cap{background:#d99a00;color:#fff}.seg.pa{background:#e0533d;color:#fff}
+.seg.gone{opacity:.25;text-decoration:line-through}
+.gl dt{font-weight:700;margin-top:10px}.gl dd{margin:2px 0 0}
+.toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-weight:700;z-index:40;opacity:0;transition:opacity .25s;pointer-events:none}
+.toast.on{opacity:1}
+table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid var(--ln);padding:6px 8px;text-align:left}th{background:var(--so)}
+.rib{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}.rib div{border:2px solid var(--ln);border-radius:12px;padding:8px;text-align:center;font-size:14px;min-height:64px}.rib b{display:block;font-family:var(--fd);font-size:16px}
+@media (prefers-reduced-motion:no-preference){.fb,.opt{transition:background .2s,border-color .2s}}
+</style>
+</head>
+<body>
+<main id="app" aria-live="polite"></main>
+<nav class="tabs" aria-label="Secciones">
+<a href="#inicio" data-v="inicio"><span>🏠</span>Inicio</a>
+<a href="#laboratorio" data-v="laboratorio"><span>🧪</span>Laboratorio</a>
+<a href="#historia" data-v="historia"><span>📖</span>Historia</a>
+<a href="#casos" data-v="casos"><span>🔬</span>Casos</a>
+<a href="#explica" data-v="explica"><span>🗣️</span>Explícalo</a>
+<a href="#glosario" data-v="glosario"><span>📚</span>Glosario</a>
+</nav>
+<div class="toast" id="toast"></div>
+<template id="glos"><dl class="gl">
+<dt>Ácido nucleico</dt><dd>Macromolécula que almacena, transmite y expresa la información genética (ADN y ARN).</dd>
+<dt>ADNc (ADN complementario)</dt><dd>Copia en ADN de un ARNm, fabricada con transcriptasa inversa; no tiene intrones. (Extra.)</dd>
+<dt>ADN polimerasa I</dt><dd>Quita los primers (por su actividad exonucleasa) y los sustituye por ADN.</dd>
+<dt>ADN polimerasa III</dt><dd>Fabrica las hebras nuevas añadiendo nucleótidos al extremo OH-3', siempre en 5'→3'.</dd>
+<dt>Aminoácido (AA)</dt><dd>Unidad que forma las proteínas; hay 20 estándar, cada uno con su cadena R.</dd>
+<dt>Aminoacil-ARNt</dt><dd>ARNt que lleva unido su aminoácido.</dd>
+<dt>Anticodón</dt><dd>Triplete del ARNt que reconoce, por complementariedad, el codón del ARNm.</dd>
+<dt>Antiparalelas</dt><dd>Hebras que van en sentidos opuestos: 5'→3' frente a 3'→5'.</dd>
+<dt>ARN polimerasa</dt><dd>Enzima que fabrica ARN usando ADN como molde (I: ARNr; II: ARNm; III: ARNt).</dd>
+<dt>ARNm / ARNt / ARNr</dt><dd>Mensajero (copia de un gen) / transferente (lleva los aminoácidos) / ribosomal (forma los ribosomas, el 80 % del ARN).</dd>
+<dt>Basófilo</dt><dd>Que se tiñe con colorantes básicos, como la hematoxilina; por ejemplo, el núcleo. (Extra.)</dd>
+<dt>Bicatenario / monocatenario</dt><dd>De dos cadenas / de una sola cadena.</dd>
+<dt>Bidireccional</dt><dd>Que avanza en los dos sentidos a la vez desde el origen.</dd>
+<dt>Brazo aceptor</dt><dd>Extremo CCA-3' del ARNt, donde se une el aminoácido.</dd>
+<dt>Burbuja de replicación</dt><dd>Zona abierta del ADN que se forma desde el origen.</dd>
+<dt>CAP-5'</dt><dd>Caperuza de metilguanosina en el extremo 5' del ARN: lo protege y ayuda al ribosoma a unirse.</dd>
+<dt>Cebador (primer)</dt><dd>Fragmento corto de ARN (unos 10 nucleótidos) que sirve de punto de partida a la ADN polimerasa.</dd>
+<dt>Cadena codificante</dt><dd>Hebra de ADN con la misma secuencia que el ARNm (con T en lugar de U).</dd>
+<dt>Cadena molde</dt><dd>Hebra de ADN que se lee (3'→5') para fabricar el ARN.</dd>
+<dt>Código genético</dt><dd>Diccionario que traduce codones a aminoácidos: universal, no ambiguo, degenerado, continuo y no solapado.</dd>
+<dt>Codón</dt><dd>Triplete de nucleótidos del ARNm que codifica un aminoácido o una señal de STOP.</dd>
+<dt>Codones STOP</dt><dd>UAA, UAG y UGA: señales de terminación.</dd>
+<dt>Codones sinónimos</dt><dd>Codones distintos que codifican el mismo aminoácido.</dd>
+<dt>Complementariedad</dt><dd>Emparejamiento específico de bases: A-T (2 puentes de H) y C-G (3).</dd>
+<dt>Cromatina (fibra de)</dt><dd>ADN unido a histonas, con aspecto de "collar de perlas".</dd>
+<dt>Cromosoma metafásico</dt><dd>Máximo grado de compactación del ADN, durante la mitosis.</dd>
+<dt>Deleción</dt><dd>Pérdida de uno o varios nucleótidos.</dd>
+<dt>Desnaturalización / renaturalización</dt><dd>Separación de las dos hebras por calor o pH alto / su unión de nuevo al bajarlos.</dd>
+<dt>Desoxirribosa / ribosa</dt><dd>Pentosa del ADN (sin el OH del C2') / pentosa del ARN.</dd>
+<dt>Electroforesis</dt><dd>Separación de ADN por tamaño en un gel con corriente eléctrica: corre hacia el polo positivo. (Extra.)</dd>
+<dt>Enlace fosfodiéster</dt><dd>Unión entre nucleótidos: el fosfato del 5' se une al 3' del siguiente y se libera agua.</dd>
+<dt>Enlace peptídico</dt><dd>Unión entre dos aminoácidos, que forma la peptidil transferasa.</dd>
+<dt>Eucromatina / heterocromatina</dt><dd>Cromatina poco compactada y activa / muy compactada, sin transcripción.</dd>
+<dt>Exón / intrón</dt><dd>Región del gen con información para la proteína (se queda) / sin ella (se elimina en el splicing).</dd>
+<dt>Exonucleasa</dt><dd>Actividad que corta nucleótidos desde un extremo de la cadena.</dd>
+<dt>Factores de liberación</dt><dd>Proteínas que reconocen el STOP y provocan que se suelte la proteína.</dd>
+<dt>FISH</dt><dd>Hibridación in situ fluorescente: localiza una secuencia en el tejido con una sonda. (Extra.)</dd>
+<dt>Fragmentos de Okazaki</dt><dd>Trozos en los que se fabrica la hebra retardada.</dd>
+<dt>Girasa / topoisomerasa</dt><dd>Enzimas que relajan la tensión (el superenrollamiento) que se crea al abrir la hélice.</dd>
+<dt>Hebra conductora (líder, continua)</dt><dd>Se fabrica de forma continua, en el mismo sentido que la helicasa.</dd>
+<dt>Hebra retardada</dt><dd>Se fabrica a trozos (fragmentos de Okazaki), en sentido contrario a la helicasa.</dd>
+<dt>Helicasa</dt><dd>Enzima que rompe los puentes de H y separa las dos hebras.</dd>
+<dt>Hibridación</dt><dd>Unión de dos cadenas complementarias de ácidos nucleicos mediante puentes de H.</dd>
+<dt>Histonas / no histonas</dt><dd>Proteínas básicas, estructurales y reguladoras, que compactan el ADN / proteínas heterogéneas, estructurales, enzimáticas y reguladoras.</dd>
+<dt>Horquilla de replicación</dt><dd>Cada extremo de la burbuja, donde se va abriendo el ADN.</dd>
+<dt>Inserción</dt><dd>Ganancia de uno o varios nucleótidos.</dd>
+<dt>kb (kilobase)</dt><dd>1.000 pares de bases.</dd>
+<dt>Ligasa</dt><dd>Enzima que une los fragmentos de ADN.</dd>
+<dt>Macromolécula</dt><dd>Molécula gigante formada por muchas piezas pequeñas repetidas.</dd>
+<dt>Maduración del ARN</dt><dd>Modificaciones del ARN en eucariotas: CAP-5', cola poliA y splicing.</dd>
+<dt>Marco de lectura</dt><dd>Forma de dividir el ARNm de 3 en 3 desde el AUG.</dd>
+<dt>Mutación</dt><dd>Cambio espontáneo en la secuencia o la estructura del ADN.</dd>
+<dt>Mutación silenciosa / errónea / sin sentido</dt><dd>Sustitución con el mismo aminoácido / con otro aminoácido / que crea un STOP.</dd>
+<dt>Nucleosoma</dt><dd>Octámero de 8 histonas sobre el que se enrolla el ADN.</dd>
+<dt>Nucleótido</dt><dd>Unidad de los ácidos nucleicos: fosfato, pentosa y base nitrogenada.</dd>
+<dt>Origen de replicación</dt><dd>Secuencia donde empieza la replicación (procariotas: 1; eucariotas: varios).</dd>
+<dt>Peptidil transferasa</dt><dd>Enzima del ribosoma que forma el enlace peptídico y corta la unión al terminar.</dd>
+<dt>Plásmido</dt><dd>Pequeña molécula de ADN circular extra en las bacterias.</dd>
+<dt>Primasa</dt><dd>ARN polimerasa que fabrica los primers.</dd>
+<dt>Promotor</dt><dd>Secuencia al inicio de cada gen que reconoce la ARN polimerasa.</dd>
+<dt>Púricas / pirimidínicas</dt><dd>Bases grandes, de 2 anillos (A, G) / bases pequeñas, de 1 anillo (C, T, U).</dd>
+<dt>Replicación semiconservativa</dt><dd>Cada ADN nuevo tiene una hebra original y una nueva.</dd>
+<dt>Ribosoma</dt><dd>Orgánulo de ARNr y proteínas que fabrica las proteínas; subunidades 60 y 40; sitios A, P y E.</dd>
+<dt>Sitios A / P / E</dt><dd>Aminoacil (entra el nuevo aminoácido) / peptidil (la cadena que crece) / exit (sale el ARNt vacío).</dd>
+<dt>Solenoide</dt><dd>Fibra de cromatina enrollada, con 6 nucleosomas y 6 H1 por vuelta.</dd>
+<dt>Splicing / spliceosoma</dt><dd>Corte de los intrones y empalme de los exones / el complejo de proteínas que lo hace.</dd>
+<dt>Splicing alternativo</dt><dd>Eliminación de algunos exones, que da distintos ARNm (y proteínas) a partir de un mismo gen.</dd>
+<dt>SSB (SSBP)</dt><dd>Proteínas de unión a cadena sencilla: impiden que las hebras se vuelvan a unir.</dd>
+<dt>Sustitución</dt><dd>Cambio de un nucleótido por otro.</dd>
+<dt>Telómeros</dt><dd>Extremos repetitivos de los cromosomas, que se acortan en cada división.</dd>
+<dt>Terminador</dt><dd>Secuencia donde termina la transcripción.</dd>
+<dt>Transcripción</dt><dd>Síntesis de ARN a partir de un molde de ADN.</dd>
+<dt>Traducción</dt><dd>Síntesis de una proteína a partir del ARNm, en el ribosoma.</dd>
+</dl></template>
+<script>
+"use strict";
+/* ================= ESTADO ================= */
+var KEY="bio3-aprende-v1",S={lab:{},hist:{},casos:{},exp:{},notas:{},dias:5};
+try{var raw=localStorage.getItem(KEY);if(raw){var o=JSON.parse(raw);for(var k in o)S[k]=o[k]}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+var app=$("#app");
+function toast(t){var x=$("#toast");x.textContent=t;x.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(function(){x.classList.remove("on")},1600)}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function bases(seq,cls){return seq.split("").map(function(b,i){return '<span class="base b'+b+(cls?" "+cls:"")+'" data-i="'+i+'">'+b+"</span>"}).join("")}
+
+/* ================= CÓDIGO GENÉTICO ================= */
+var BS="UCAG",AA="FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG";
+var AN={F:"Phe",L:"Leu",S:"Ser",Y:"Tyr",C:"Cys",W:"Trp",P:"Pro",H:"His",Q:"Gln",R:"Arg",I:"Ile",M:"Met",T:"Thr",N:"Asn",K:"Lys",V:"Val",A:"Ala",D:"Asp",E:"Glu",G:"Gly","*":"STOP"};
+function tr(c){return AA[16*BS.indexOf(c[0])+4*BS.indexOf(c[1])+BS.indexOf(c[2])]}
+function comp(b,rna){return {A:rna?"U":"T",T:"A",U:"A",G:"C",C:"G"}[b]}
+function proteina(m){var st=m.indexOf("AUG");if(st<0)return {aa:[],ok:false,stop:false,start:-1};var out=[],stop=false;for(var i=st;i+3<=m.length;i+=3){var a=tr(m.substr(i,3));if(a==="*"){stop=true;break}out.push(a)}return {aa:out,stop:stop,start:st}}
+
+/* ================= LABORATORIO ================= */
+var LAB=[
+{id:"nuc",e:"🧩",t:"Monta nucleótidos",d:"diap. 8–12",run:labNuc},
+{id:"comp",e:"🧬",t:"Hebra complementaria",d:"diap. 16–17, 24",run:labComp},
+{id:"emp",e:"🧶",t:"Empaqueta el ADN",d:"diap. 26–33",run:labEmp},
+{id:"rep",e:"🏗️",t:"Dirige la replicación",d:"diap. 59–74",run:labRep},
+{id:"act6",e:"📘",t:"Actividad 6 de la profe",d:"diap. 75",run:labAct6,act:true},
+{id:"trans",e:"📝",t:"Transcribe un gen",d:"diap. 78–83",run:labTrans},
+{id:"mad",e:"✂️",t:"Madura el ARN",d:"diap. 84–88",run:labMad},
+{id:"trad",e:"🏭",t:"Sé el ribosoma",d:"diap. 93–104",run:labTrad},
+{id:"mut",e:"⚠️",t:"Laboratorio de mutaciones",d:"diap. 106–110",run:labMut}
+];
+function done(area,id){S[area][id]=true;save()}
+
+function viewLab(sub){
+  if(sub){var m=LAB.filter(function(x){return x.id===sub})[0];if(m){app.innerHTML='<button class="btn ghost sm" id="bk">← Laboratorio</button><div id="lab" style="margin-top:10px"></div>';$("#bk").onclick=function(){go("laboratorio")};m.run($("#lab"));scrollTo(0,0);return}}
+  app.innerHTML=hero("🧪 Laboratorio interactivo","Tú haces el trabajo de la célula. Si te equivocas, no pasa nada: te explico por qué no funciona, que es justo lo que hay que entender.")+
+  '<div class="grid">'+LAB.map(function(m){return '<button class="tile'+(m.act?" act":"")+(S.lab[m.id]?" done":"")+'" data-m="'+m.id+'"><span class="e">'+m.e+'</span><b>'+m.t+'</b><span class="dp">📍 '+m.d+'</span></button>'}).join("")+"</div>";
+  $$(".tile[data-m]").forEach(function(b){b.onclick=function(){openLab(b.dataset.m)}});
+}
+var labSub=null;function openLab(id){labSub=id;viewLab(id)}
+
+/* --- 1 nucleótidos --- */
+function labNuc(el){
+  var T=[
+   {q:"Monta un nucleótido de ADN con una base <b>púrica</b>.",ok:function(p,b){return p==="D"&&(b==="A"||b==="G")},why:"ADN → desoxirribosa. Las púricas (las grandes, de 2 anillos) son la A y la G. Truco: agua PURa = A y G."},
+   {q:"Monta un nucleótido de ARN que <b>nunca</b> podría estar en el ADN.",ok:function(p,b){return p==="R"&&b==="U"},why:"Ribosa + uracilo. El uracilo solo está en el ARN: el ADN usa timina para poder detectar las C dañadas, que se convierten en U."},
+   {q:"Monta un nucleótido de ADN que se una a la G con <b>3 puentes de H</b>.",ok:function(p,b){return p==="D"&&b==="C"},why:"C-G = 3 puentes de H (A-T = 2). Desoxirribosa porque es ADN."},
+   {q:"Monta un nucleótido de ARN <b>púrico</b> que se empareje con el uracilo.",ok:function(p,b){return p==="R"&&b==="A"},why:"En el ARN, la A se empareja con la U. La A es púrica. Ribosa porque es ARN."},
+   {q:"Monta un nucleótido de ADN <b>pirimidínico</b> que se una con 2 puentes de H.",ok:function(p,b){return p==="D"&&b==="T"},why:"Las pirimidínicas son C, T y U (las 'cortitas': CUT). La que se une con 2 puentes en el ADN es la T (con la A)."}
+  ],i=0,p=null,b=null;
+  function r(){
+    if(i>=T.length){done("lab","nuc");el.innerHTML='<div class="card"><h2>🧩 ¡Hecho!</h2><p>Ya sabes montar nucleótidos y, sobre todo, <b>por qué</b> cada pieza va donde va.</p><div class="fb lab"><b>🔬 En el laboratorio</b>Las bases absorben luz UV a 260 nm: así se mide la cantidad de ADN o ARN de una muestra con el espectrofotómetro.</div><button class="btn" id="re">Repetir</button></div>';$("#re").onclick=function(){i=0;r()};return}
+    var t=T[i];
+    el.innerHTML='<div class="card"><h2>🧩 Monta nucleótidos <span class="mu">('+(i+1)+'/'+T.length+')</span></h2><p>'+t.q+'</p>'+
+    '<div class="state">🟡 <b>Fosfato</b> (1 P + 4 O) — siempre igual · diap. 9</div>'+
+    '<p><b>Elige la pentosa</b> <span class="dp">diap. 10</span></p><div class="row"><button class="opt'+(p==="R"?" ok":"")+'" data-p="R">Ribosa</button><button class="opt'+(p==="D"?" ok":"")+'" data-p="D">Desoxirribosa</button></div>'+
+    '<p><b>Elige la base</b> <span class="dp">diap. 11</span></p><div class="keys">'+["A","G","C","T","U"].map(function(x){return '<button class="base b'+x+(b===x?" sel":"")+'" data-b="'+x+'">'+x+"</button>"}).join("")+'</div>'+
+    '<button class="btn" id="ck"'+(p&&b?"":" disabled")+'>Comprobar</button><div id="f"></div></div>';
+    $$("[data-p]",el).forEach(function(x){x.onclick=function(){p=x.dataset.p;r()}});
+    $$("[data-b]",el).forEach(function(x){x.onclick=function(){b=x.dataset.b;r()}});
+    $("#ck").onclick=function(){var f=$("#f");
+      if(t.ok(p,b)){f.innerHTML='<div class="fb ok"><b>✅ Correcto</b>'+t.why+'</div><button class="btn" id="nx">Siguiente</button>';$("#nx").onclick=function(){i++;p=b=null;r()}}
+      else{var m=[];if(p==="R"&&b==="T")m.push("La ribosa con timina no existe: la T es solo del ADN.");if(p==="D"&&b==="U")m.push("La desoxirribosa con uracilo no existe: la U es solo del ARN.");
+        f.innerHTML='<div class="fb no"><b>❌ Todavía no</b>'+(m.join(" ")||"Revisa qué pide el enunciado: ¿es ADN o ARN? ¿púrica o pirimidínica?")+'</div>'}};
+  }r();
+}
+
+/* --- 2 complementaria --- */
+function labComp(el){
+  var seq,ans,q2;
+  function nuevo(){seq="";for(var i=0;i<8;i++)seq+="ATGC"[Math.floor(Math.random()*4)];ans="";q2=false;r()}
+  function hb(s){return s.split("").reduce(function(a,b){return a+(b==="G"||b==="C"?3:2)},0)}
+  function r(){
+    var slots=seq.split("").map(function(_,i){return ans[i]?'<span class="base b'+ans[i]+'">'+ans[i]+"</span>":'<span class="base e">?</span>'}).join("");
+    el.innerHTML='<div class="card"><h2>🧬 Hebra complementaria</h2><p class="mu">Construye la hebra de abajo tocando las letras. Cuidado con los extremos: la de abajo va al revés (son <b>antiparalelas</b>). <span class="dp">diap. 17, 24</span></p>'+
+    '<div class="strand"><span class="end">5\'</span>'+bases(seq)+'<span class="end">3\'</span></div><div class="strand"><span class="end">3\'</span>'+slots+'<span class="end">5\'</span></div>'+
+    (ans.length<seq.length?'<div class="keys">'+["A","T","G","C","U"].map(function(x){return '<button class="base b'+x+'" data-k="'+x+'">'+x+"</button>"}).join("")+'</div><button class="btn ghost sm" id="del">⌫ Borrar</button>':"")+
+    '<div id="f"></div></div>';
+    $$("[data-k]",el).forEach(function(k){k.onclick=function(){var x=k.dataset.k,need=comp(seq[ans.length]);
+      if(x==="U"){$("#f").innerHTML='<div class="fb no"><b>❌ U no</b>Esto es ADN: en el ADN no hay uracilo, hay timina (T). La U solo está en el ARN.</div>';return}
+      if(x!==need){$("#f").innerHTML='<div class="fb no"><b>❌ '+seq[ans.length]+' no va con '+x+'</b>'+(/[AG]/.test(x)===/[AG]/.test(seq[ans.length])?"Has juntado dos bases del mismo tamaño: púrica con púrica o pirimidínica con pirimidínica. La hélice se deformaría. ":"")+'La pareja de '+seq[ans.length]+' es '+need+'.</div>';return}
+      ans+=x;r()}});
+    var d=$("#del");if(d)d.onclick=function(){ans=ans.slice(0,-1);r()};
+    if(ans.length===seq.length){var h=hb(seq),o=shuffle([h,h+1,h-2,h+3]);
+      $("#f").innerHTML='<div class="fb ok"><b>✅ Hebra correcta</b>Fíjate en que la de abajo empieza por el 3\'. Si en el examen pones los extremos al revés, está mal.</div><p><b>Pregunta extra:</b> ¿cuántos puentes de H tiene este fragmento?</p><div class="opts">'+o.map(function(n){return '<button class="opt" data-n="'+n+'">'+n+"</button>"}).join("")+'</div><div id="f2"></div>';
+      $$("[data-n]",el).forEach(function(b){b.onclick=function(){var ok=+b.dataset.n===h;b.classList.add(ok?"ok":"no");
+        if(ok){done("lab","comp");$("#f2").innerHTML='<div class="fb ok"><b>✅ '+h+' puentes</b>Cada A-T suma 2 y cada C-G suma 3. Por eso el ADN rico en C-G necesita más calor para separarse, por ejemplo en la PCR.</div><button class="btn" id="nv">Otra secuencia</button>';$("#nv").onclick=nuevo}
+        else $("#f2").innerHTML='<div class="fb no"><b>❌ Cuenta otra vez</b>A-T = 2 puentes, C-G = 3 puentes. Suma pareja por pareja.</div>'}})}
+  }nuevo();
+}
+
+/* --- 3 empaquetamiento --- */
+function labEmp(el){
+  var L=[["Doble hélice","Dos hebras antiparalelas, 10 nucleótidos por vuelta."],["Nucleosoma","8 histonas (un octámero) con el ADN enrollado alrededor."],["Fibra de cromatina","El 'collar de perlas': ADN + histonas."],["Solenoide","6 nucleosomas y 6 histonas H1 por vuelta. Es el nivel de empaquetamiento más bajo de los cromosomas."],["Cromosoma metafásico","El máximo superenrollamiento. Solo existe durante la división (mitosis)."]],got=[],ord=shuffle(L.map(function(_,i){return i}));
+  function r(){
+    el.innerHTML='<div class="card"><h2>🧶 Empaqueta el ADN</h2><p>Tienes 2 metros de ADN y un núcleo diminuto. Tócalos <b>de menos a más compactado</b>. <span class="dp">diap. 26–33</span></p>'+
+    '<ol class="state">'+got.map(function(i){return "<li><b>"+L[i][0]+"</b> — "+L[i][1]+"</li>"}).join("")+(got.length<L.length?"<li class='mu'>…</li>":"")+'</ol>'+
+    '<div class="opts">'+ord.filter(function(i){return got.indexOf(i)<0}).map(function(i){return '<button class="opt" data-i="'+i+'">'+L[i][0]+"</button>"}).join("")+'</div><div id="f"></div></div>';
+    $$("[data-i]",el).forEach(function(b){b.onclick=function(){var i=+b.dataset.i;
+      if(i===got.length){got.push(i);r();if(got.length===L.length){done("lab","emp");$("#f").innerHTML='<div class="fb ok"><b>✅ Perfecto</b><b>¿Por qué se compacta al máximo justo al dividirse?</b> Para repartirlo sin que se enrede ni se rompa, como los cables metidos en cajas antes de una mudanza. Pero lo compactado <b>no se puede leer</b>: por eso, durante la mitosis, casi no hay transcripción.</div><div class="fb lab"><b>🔬 En el laboratorio</b>Los cariotipos (Tema 3) se hacen con cromosomas metafásicos, y para eso se usa colchicina, que para las células en metafase.</div><button class="btn" id="re">Repetir</button>';$("#re").onclick=function(){got=[];ord=shuffle(ord);r()}}}
+      else $("#f").innerHTML='<div class="fb no"><b>❌ Aún no toca "'+L[i][0]+'"</b>'+(i>got.length?"Hay un nivel menos compactado que todavía no has puesto. Piensa: primero el carrete (las histonas), después el collar, después el muelle.":"")+'</div>'}});
+  }r();
+}
+
+/* --- 4 replicación --- */
+function labRep(el){
+  var E={ori:"Proteínas que reconocen el origen",hel:"Helicasa",ssb:"Proteínas SSB",top:"Topoisomerasa / girasa",pri:"Primasa",p3:"ADN polimerasa III",p1:"ADN polimerasa I",lig:"Ligasa"};
+  var ORDER=[["ori"],["hel"],["ssb","top"],["pri"],["p3"],["p1"],["lig"]];
+  var RES={ori:"Las proteínas se unen al <b>origen de replicación</b> y <b>activan las helicasas</b>.",hel:"Las helicasas rompen los <b>puentes de H</b>: se abre la <b>burbuja</b> con dos horquillas, una a cada lado (por eso es <b>bidireccional</b>).",ssb:"Las SSB sujetan las hebras sueltas para que <b>no se vuelvan a cerrar</b>.",top:"La topoisomerasa y la girasa <b>relajan la tensión</b> del superenrollamiento que se crea al abrir.",pri:"La primasa pone los <b>primers de ARN</b>: 1 en la conductora y varios en la retardada.",p3:"La ADN pol III fabrica en <b>5'→3'</b>: la conductora seguida y la retardada en <b>fragmentos de Okazaki</b>.",p1:"La ADN pol I quita los primers de ARN (exonucleasa) y pone ADN en su lugar.",lig:"La ligasa <b>pega los fragmentos</b>. Resultado: 2 moléculas de ADN, cada una con una hebra vieja y una nueva (<b>semiconservativa</b>)."};
+  var WHY={hel:"La helicasa está inactiva: primero las proteínas específicas tienen que reconocer el origen, y son ellas las que la activan.",ssb:"No hay hebras sueltas que sujetar: primero hay que abrir la doble hélice.",top:"Todavía no hay tensión: la tensión aparece cuando la helicasa empieza a abrir la hélice.",pri:"La primasa necesita las hebras abiertas, sujetas y sin tensión.",p3:"La ADN polimerasa III no sabe empezar de cero: necesita un primer con su extremo 3'-OH donde enganchar nucleótidos.",p1:"La ADN pol I cambia los primers por ADN, pero primero tiene que estar construida la hebra (ADN pol III).",lig:"La ligasa pega fragmentos de ADN, pero entre ellos todavía hay trozos de ARN (primers): primero tiene que actuar la ADN pol I."};
+  var step=0,used=[],log=[];
+  function cur(){return ORDER[step]||[]}
+  function r(){
+    var fin=step>=ORDER.length;
+    el.innerHTML='<div class="card"><h2>🏗️ Dirige la replicación</h2><p class="mu">Estamos en la fase S. Llama a cada operario en su momento. <span class="dp">diap. 60–74</span></p>'+
+    '<div class="prog"><i style="width:'+Math.round(used.length/8*100)+'%"></i></div>'+
+    '<ol class="state">'+(log.length?log.map(function(x){return "<li>"+x+"</li>"}).join(""):"<li>🧬 ADN cerrado, enrollado en sus histonas. Nada ha empezado.</li>")+'</ol>'+
+    (fin?'':'<p><b>¿Quién actúa ahora?</b></p><div class="opts">'+shuffle(Object.keys(E)).filter(function(k){return used.indexOf(k)<0}).map(function(k){return '<button class="opt" data-k="'+k+'">'+E[k]+"</button>"}).join("")+'</div>')+'<div id="f"></div></div>';
+    $$("[data-k]",el).forEach(function(b){b.onclick=function(){var k=b.dataset.k;
+      if(cur().indexOf(k)>=0){used.push(k);log.push("<b>"+E[k]+"</b>: "+RES[k]);
+        var g=cur();if(g.every(function(x){return used.indexOf(x)>=0}))step++;r();
+        if(step>=ORDER.length){done("lab","rep");$("#f").innerHTML='<div class="fb ok"><b>✅ ¡ADN replicado!</b>Truco del orden: "<b>H</b>oy <b>S</b>e <b>T</b>rabaja: <b>P</b>rimero <b>3</b>, luego <b>1</b> y <b>L</b>isto".</div><div class="fb lab"><b>🔬 En la clínica</b>Algunos fármacos de quimioterapia (el irinotecán, el etopósido) bloquean la topoisomerasa: el ADN de las células que se dividen mucho se rompe al intentar replicarse.</div><button class="btn" id="re">Repetir</button> <button class="btn ghost" id="a6">Ir a la Actividad 6 →</button>';$("#re").onclick=function(){step=0;used=[];log=[];r()};$("#a6").onclick=function(){openLab("act6")}}}
+      else $("#f").innerHTML='<div class="fb no"><b>❌ '+E[k]+' todavía no</b>'+(WHY[k]||"Primero hay que reconocer el origen.")+'</div>'}});
+  }r();
+}
+
+/* --- Actividad 6 --- */
+function labAct6(el){
+  var Q=[
+  {q:"<b>Lado derecho</b> (la helicasa va →). La hebra nueva que copia la hebra de <b>abajo</b>, ¿cómo se fabrica?",ok:"c",fb:"La de abajo va 3'→5' de izquierda a derecha, así que la nueva crece 5'→3' <b>hacia la derecha</b>, igual que la helicasa → <b>continua</b>."},
+  {q:"<b>Lado derecho</b>. La hebra nueva que copia la hebra de <b>arriba</b>…",ok:"r",fb:"Tiene que crecer 5'→3' hacia la izquierda, en contra de la helicasa → <b>retardada</b>, en fragmentos de Okazaki."},
+  {q:"<b>Lado izquierdo</b> (la helicasa va ←). La hebra nueva que copia la hebra de <b>arriba</b>…",ok:"c",fb:"Ahora crece hacia la izquierda, igual que la helicasa → <b>continua</b>. Es al revés que en el lado derecho."},
+  {q:"<b>Lado izquierdo</b>. La hebra nueva que copia la hebra de <b>abajo</b>…",ok:"r",fb:"Va en contra de la helicasa → <b>retardada</b>."}
+  ],i=0;
+  function r(){
+    var top="5' AGTCGGTCAATGCATTGGCAGACGC|GAAATGCGCTGCAATGCTGATG 3'\n         ← HELICASA      |      HELICASA →\n3' TCAGCCAGTTACGTAACCGUCUGCG|CTTTACGCGACGTTACGACTAC 5'\n                     origen";
+    if(i>=Q.length){done("lab","act6");el.innerHTML='<div class="card" style="border-color:var(--act)"><span class="tag a">📘 Actividad de la profe</span><h2 style="margin-top:6px">✅ Actividad 6 resuelta</h2><p>En total hay <b>2 hebras continuas y 2 retardadas</b>: una de cada en cada horquilla.</p><div class="fb in"><b>🧠 La regla que lo resuelve todo (diap. 68)</b>La hebra nueva que crece <b>en el mismo sentido que su helicasa</b> es la continua.</div><p><b>¿Y por qué la hebra de abajo tiene U (…CCG<b>U</b>C<b>U</b>GC…)?</b> Porque ahí hay un <b>primer</b>: es ARN, y el ARN lleva U, no T (diap. 71). Está junto al origen, que es donde empieza la hebra continua del lado izquierdo.</p><button class="btn" id="re">Repetir</button></div>';$("#re").onclick=function(){i=0;r()};return}
+    var x=Q[i];
+    el.innerHTML='<div class="card" style="border-color:var(--act)"><span class="tag a">📘 Actividad de la profe · diap. 75</span><h2 style="margin-top:6px">Actividad 6 <span class="mu">('+(i+1)+'/4)</span></h2><div class="seq">'+top+'</div><p>'+x.q+'</p><div class="opts"><button class="opt" data-a="c">Continua (conductora)</button><button class="opt" data-a="r">Retardada (fragmentos de Okazaki)</button></div><div id="f"></div></div>';
+    $$("[data-a]",el).forEach(function(b){b.onclick=function(){var ok=b.dataset.a===x.ok;b.classList.add(ok?"ok":"no");$("#f").innerHTML='<div class="fb '+(ok?"ok":"no")+'"><b>'+(ok?"✅ Bien":"❌ No")+'</b>'+x.fb+'</div>'+(ok?'<button class="btn" id="nx">Siguiente</button>':"");if(ok)$("#nx").onclick=function(){i++;r()}}});
+  }r();
+}
+
+/* --- 5 transcripción --- */
+function labTrans(el){
+  var cod="ATGTTTGGCAAATAA",mol=cod.split("").map(function(b){return comp(b)}).join(""),arn=cod.replace(/T/g,"U"),ans="",ph=0;
+  function r(){
+    var slots=arn.split("").map(function(_,i){return ans[i]?'<span class="base b'+ans[i]+'">'+ans[i]+"</span>":'<span class="base e">?</span>'}).join("");
+    el.innerHTML='<div class="card"><h2>📝 Transcribe un gen</h2>'+
+    (ph===0?'<p>La ARN polimerasa busca dónde empieza el gen. ¿Qué secuencia reconoce? <span class="dp">diap. 80</span></p><div class="opts"><button class="opt" data-p="no">El origen de replicación</button><button class="opt" data-p="si">El promotor</button><button class="opt" data-p="no2">El codón AUG</button></div><div id="f"></div>':
+    '<p class="mu">Lee la <b>hebra molde</b> (3\'→5\') y escribe el ARNm (5\'→3\'). <span class="dp">diap. 81–82</span></p>'+
+    '<div class="mu">Codificante</div><div class="strand"><span class="end">5\'</span>'+bases(cod)+'<span class="end">3\'</span></div>'+
+    '<div class="mu"><b>Molde ← la que se lee</b></div><div class="strand"><span class="end">3\'</span>'+bases(mol)+'<span class="end">5\'</span></div>'+
+    '<div class="mu">ARNm que estás fabricando</div><div class="strand"><span class="end">5\'</span>'+slots+'<span class="end">3\'</span></div>'+
+    (ans.length<arn.length?'<div class="keys">'+["A","U","G","C","T"].map(function(x){return '<button class="base b'+x+'" data-k="'+x+'">'+x+"</button>"}).join("")+'</div>':"")+'<div id="f"></div>')+'</div>';
+    $$("[data-p]",el).forEach(function(b){b.onclick=function(){var ok=b.dataset.p==="si";b.classList.add(ok?"ok":"no");
+      $("#f").innerHTML=ok?'<div class="fb ok"><b>✅ El promotor</b>Cada gen tiene el suyo: es su interruptor. Por eso una neurona y una célula del hígado, con el mismo ADN, encienden genes distintos.</div><button class="btn" id="nx">Empezar a transcribir</button>':'<div class="fb no"><b>❌ No</b>'+(b.dataset.p==="no"?"El origen es donde empieza la <b>replicación</b>, no la transcripción.":"El AUG es el inicio de la <b>traducción</b> en el ribosoma, y está en el ARN, no en el ADN.")+'</div>';
+      if(ok)$("#nx").onclick=function(){ph=1;r()}}});
+    $$("[data-k]",el).forEach(function(k){k.onclick=function(){var x=k.dataset.k,need=arn[ans.length];
+      if(x==="T"){$("#f").innerHTML='<div class="fb no"><b>❌ T no</b>Estás fabricando ARN: en lugar de timina lleva <b>uracilo (U)</b>.</div>';return}
+      if(x!==need){$("#f").innerHTML='<div class="fb no"><b>❌ No</b>En la molde hay una '+mol[ans.length]+'. Su pareja en el ARN es '+need+'.</div>';return}
+      ans+=x;r();if(ans.length===arn.length){done("lab","trans");
+        $("#f").innerHTML='<div class="fb ok"><b>✅ ARNm listo</b>Compáralo con la <b>codificante</b>: es igual, cambiando T por U. Por eso se llama codificante: tiene el mismo "texto" que el ARN.</div><p><b>¿Qué ARN polimerasa ha hecho este ARNm (en eucariotas)?</b></p><div class="opts"><button class="opt" data-z="0">I</button><button class="opt" data-z="1">II</button><button class="opt" data-z="0b">III</button></div><div id="f2"></div>';
+        $$("[data-z]",el).forEach(function(b){b.onclick=function(){var ok=b.dataset.z==="1";b.classList.add(ok?"ok":"no");$("#f2").innerHTML='<div class="fb '+(ok?"ok":"no")+'"><b>'+(ok?"✅ La II":"❌ No")+'</b>"RoMa Tú": I → ARNr, II → ARNm, III → ARNt.'+(ok?' Y ahora llega el terminador: el ARN se suelta. En procariotas ya estaría listo; en eucariotas tiene que <b>madurar</b> → siguiente módulo.':'')+'</div>'+(ok?'<button class="btn" id="go">Madurar este ARN →</button>':"");if(ok)$("#go").onclick=function(){openLab("mad")}}})}}});
+  }r();
+}
+
+/* --- 6 maduración --- */
+function labMad(el){
+  var segs=[["ex","Exón 1"],["in","Intrón 1"],["ex","Exón 2"],["in","Intrón 2"],["ex","Exón 3"]],cut={},p5=null,p3=null,ph=0;
+  function chain(){return '<div class="row" style="gap:4px;margin:10px 0">'+(p5==="cap"?'<span class="seg cap">CAP</span>':'<span class="seg end">5\'</span>')+segs.map(function(s,i){return '<button class="seg '+s[0]+(cut[i]?" gone":"")+'" data-s="'+i+'"'+(ph===2?"":" disabled")+'>'+s[1]+"</button>"}).join("")+(p3==="pa"?'<span class="seg pa">AAAA…</span>':'<span class="seg end">3\'</span>')+'</div>'}
+  function r(){
+    var h='<div class="card"><h2>✂️ Madura el ARN</h2><p class="mu">Acaba de salir de la ARN polimerasa II, en el núcleo. Así no sobrevive ni puede salir. <span class="dp">diap. 84–88</span></p>'+chain();
+    if(ph===0)h+='<p><b>1 · ¿Qué le pones en el extremo 5\'?</b></p><div class="opts"><button class="opt" data-a="cap">Caperuza de metilguanosina (CAP)</button><button class="opt" data-a="pa">Cola de 100–200 adeninas</button><button class="opt" data-a="no">Nada, así está bien</button></div>';
+    if(ph===1)h+='<p><b>2 · ¿Y en el extremo 3\'?</b></p><div class="opts"><button class="opt" data-a="cap">Caperuza de metilguanosina (CAP)</button><button class="opt" data-a="pa">Cola poliA (100–200 adeninas)</button><button class="opt" data-a="no">Nada</button></div>';
+    if(ph===2)h+='<p><b>3 · Eres el spliceosoma: toca lo que hay que cortar.</b></p>';
+    if(ph===3)h+='<p><b>4 · Pregunta:</b> si en otra célula el spliceosoma quitara también el Exón 2, ¿qué pasaría?</p><div class="opts"><button class="opt" data-a="mal">El ARNm se destruye: es un error</button><button class="opt" data-a="alt">Sale otro ARNm y otra proteína distinta, a partir del mismo gen</button></div>';
+    el.innerHTML=h+'<div id="f"></div></div>';
+    $$("[data-a]",el).forEach(function(b){b.onclick=function(){var a=b.dataset.a,f=$("#f");
+      if(ph===0){if(a==="cap"){p5="cap";ph=1;r();$("#f").innerHTML='<div class="fb ok"><b>✅ CAP en el 5\'</b>Hace dos cosas: <b>evita que el ARN se degrade</b> y <b>ayuda al ribosoma a unirse</b> para empezar a leer. Es un casco con un cartel de "empieza aquí".</div>'}else f.innerHTML='<div class="fb no"><b>❌ No</b>'+(a==="pa"?"La cola de adeninas va al <b>final</b>, en el 3'.":"Sin protección, el ARN (que es de una sola cadena) se degrada enseguida.")+'</div>'}
+      else if(ph===1){if(a==="pa"){p3="pa";ph=2;r();$("#f").innerHTML='<div class="fb ok"><b>✅ Cola poliA en el 3\'</b>Es el "pasaporte": <b>permite al ARN maduro salir al citoplasma</b>.</div><div class="fb lab"><b>🔬 En el laboratorio</b>Con cadenas de T (oligo-dT) se "pescan" solo los ARNm por su cola poliA, porque la A se pega a la T. Es el primer paso para fabricar ADNc en una RT-PCR.</div>'}else f.innerHTML='<div class="fb no"><b>❌ No</b>'+(a==="cap"?"El CAP ya está en el 5'. En el 3' va otra cosa.":"Sin esto no puede salir del núcleo.")+'</div>'}
+      else if(ph===3){var ok=a==="alt";b.classList.add(ok?"ok":"no");f.innerHTML='<div class="fb '+(ok?"ok":"no")+'"><b>'+(ok?"✅ Splicing alternativo":"❌ No")+'</b>Si también se quita algún exón, de la <b>misma secuencia de ADN</b> salen <b>distintos ARNm</b> y, por tanto, distintas proteínas. Así fabricamos más proteínas que genes tenemos (diap. 88).</div>';if(ok){done("lab","mad");f.innerHTML+='<button class="btn" id="go">Llevarlo al ribosoma →</button>';$("#go").onclick=function(){openLab("trad")}}}}});
+    $$("[data-s]",el).forEach(function(b){b.onclick=function(){var i=+b.dataset.s,f=$("#f");
+      if(segs[i][0]==="ex"){f.innerHTML='<div class="fb no"><b>❌ ¡Eso es un exón!</b>Los <b>EX</b>ones se <b>EX</b>presan: llevan la información de la proteína. Se quedan.</div>';return}
+      cut[i]=true;if(cut[1]&&cut[3]){ph=3;r();$("#f").innerHTML='<div class="fb ok"><b>✅ Intrones fuera</b>El spliceosoma se une a los extremos del intrón, el intrón forma un <b>bucle</b>, y se corta en su base y se <b>empalman los exones</b>. Como editar un vídeo quitando los anuncios.</div>'}else{r();$("#f").innerHTML='<div class="fb ok"><b>✂️ Cortado</b>Queda otro intrón.</div>'}}});
+  }r();
+}
+
+/* --- 7 traducción --- */
+function labTrad(el){
+  var m="CCAUGGCUUGGAAAUGAUC",ph=0,i=0,pep=[];
+  function cods(st){var o=[];for(var k=st;k+3<=m.length;k+=3)o.push(m.substr(k,3));return o}
+  function r(){
+    var h='<div class="card"><h2>🏭 Sé el ribosoma</h2>';
+    if(ph===0){h+='<p>Te has unido al <b>CAP-5\'</b> del ARNm junto con el ARNt iniciador. Recorre el ARNm y <b>toca dónde empiezas a traducir</b>. <span class="dp">diap. 95, 100</span></p><div class="strand"><span class="end">5\'</span>'+m.split("").map(function(b,k){return '<button class="base b'+b+'" data-k="'+k+'">'+b+"</button>"}).join("")+'<span class="end">3\'</span></div><div id="f"></div>'}
+    else{var cs=cods(2),done_=i>=cs.length||tr(cs[i])==="*";
+      h+='<div class="strand">'+cs.map(function(c,k){return '<span class="seq" style="margin:2px;padding:6px 8px;'+(k===i?"outline:3px solid var(--ac)":"")+'">'+c+"</span>"}).join("")+'</div>';
+      h+='<div class="rib"><div><b>E</b>'+(i>=2?"ARNt vacío saliendo":"—")+'</div><div><b>P</b>'+(pep.length?"ARNt con "+pep.map(function(a){return AN[a]}).join("-"):"—")+'</div><div><b>A</b>'+(i<cs.length&&!done_?"Entra un ARNt con anticodón "+cs[i].split("").map(function(b){return comp(b,true)}).join("")+"":"—")+'</div></div>';
+      if(!done_){var c=cs[i],ok=tr(c),pool=shuffle("ACDEFGHIKLMNPQRSTVWY".split("").filter(function(x){return x!==ok})).slice(0,3).concat(ok);
+        h+='<p><b>Codón '+c+'</b>: ¿qué aminoácido trae el ARNt?</p><div class="opts">'+shuffle(pool).map(function(a){return '<button class="opt" data-a="'+a+'">'+AN[a]+"</button>"}).join("")+'</div><details><summary class="mu">Ver la tabla del código genético</summary>'+tabla()+'</details>'}
+      else h+='<p><b>Codón '+(cs[i]||"")+'</b>: ¿qué ARNt entra en el sitio A?</p><div class="opts"><button class="opt" data-z="n">El ARNt de la metionina</button><button class="opt" data-z="s">Ninguno: no hay ARNt para los STOP; entran los factores de liberación</button></div>';
+      h+='<div id="f"></div>'}
+    el.innerHTML=h+'</div>';
+    $$("[data-k]",el).forEach(function(b){b.onclick=function(){var k=+b.dataset.k;
+      if(k===2){ph=1;pep=["M"];i=1;r();$("#f").innerHTML='<div class="fb ok"><b>✅ AUG = Metionina</b>El ARNt iniciador se une al AUG, llega la subunidad mayor y se forma el <b>complejo de iniciación</b>, con la Met en el <b>sitio P</b>. Fíjate: más adelante hay otro AUG, pero el ribosoma empieza en el primero que encuentra desde el CAP.</div>'}
+      else $("#f").innerHTML='<div class="fb no"><b>❌ Aquí no</b>Busca el codón de inicio: <b>AUG</b>. Antes de él no se traduce nada.</div>'}});
+    $$("[data-a]",el).forEach(function(b){b.onclick=function(){var cs=cods(2),ok=b.dataset.a===tr(cs[i]);b.classList.add(ok?"ok":"no");
+      if(ok){pep.push(b.dataset.a);i++;r();$("#f").innerHTML='<div class="fb ok"><b>✅ '+AN[b.dataset.a]+'</b>La <b>peptidil transferasa</b> forma el enlace peptídico. La cadena pasa al ARNt del sitio A, el ribosoma avanza un codón (5\'→3\') y el ARNt vacío sale por el E.</div>'}
+      else $("#f").innerHTML='<div class="fb no"><b>❌ No</b>Búscalo en la tabla: primera letra (fila), segunda (columna), tercera (dentro de la casilla).</div>'}});
+    $$("[data-z]",el).forEach(function(b){b.onclick=function(){var ok=b.dataset.z==="s";b.classList.add(ok?"ok":"no");
+      $("#f").innerHTML='<div class="fb '+(ok?"ok":"no")+'"><b>'+(ok?"✅ Terminación":"❌ No")+'</b>UGA es un <b>codón STOP</b> (como UAA y UAG). <b>No existe ningún ARNt</b> para él: los <b>factores de liberación</b> se colocan en el sitio A y hacen que la peptidil transferasa corte la unión. Se libera la proteína: <b>'+pep.map(function(a){return AN[a]}).join("-")+'</b>.</div>';if(ok){done("lab","trad");$("#f").innerHTML+='<button class="btn" id="go">Ahora, a mutarla →</button>';$("#go").onclick=function(){openLab("mut")}}}});
+  }r();
+}
+function tabla(){var h='<div style="overflow-x:auto"><table><tr><th></th>'+BS.split("").map(function(b){return"<th>"+b+"</th>"}).join("")+"</tr>";BS.split("").forEach(function(a){h+="<tr><th>"+a+"</th>";BS.split("").forEach(function(b){h+="<td>"+BS.split("").map(function(c){return a+b+c+" "+AN[tr(a+b+c)]}).join("<br>")+"</td>"});h+="</tr>"});return h+"</table></div>"}
+
+/* --- 8 mutaciones --- */
+function labMut(el){
+  var WT="AUGAAGUUUGGCUAA",m=WT,sel=null,got=S.mutRetos||{};
+  var RETOS=[["sil","Una mutación silenciosa"],["err","Una mutación errónea"],["sin","Una mutación sin sentido"],["marco","Un cambio del marco de lectura"],["m3","Una inserción de 3 sin cambio de marco"]];
+  function clas(){var a=proteina(WT),b=proteina(m),d=m.length-WT.length;
+    if(m===WT)return {k:null,t:"Secuencia normal (wild type)."};
+    if(b.start!==0)return {k:"ini",t:"Has destruido el codón de inicio AUG: el ribosoma no empieza donde debía. La proteína no se fabrica tal cual."};
+    if(d%3!==0)return {k:"marco",t:"<b>Cambio del marco de lectura</b> ("+(d>0?"inserción":"deleción")+" de "+Math.abs(d)+"). Todos los codones que vienen detrás se leen desplazados."};
+    if(d!==0)return {k:"m3",t:"<b>"+(d>0?"Inserción":"Deleción")+" de "+Math.abs(d)+" (múltiplo de 3)</b>: el marco de lectura no cambia; se "+(d>0?"gana":"pierde")+" aminoácido."};
+    if(b.aa.join("")===a.aa.join("")&&b.stop)return {k:"sil",t:"<b>Mutación silenciosa</b>: el codón nuevo es un sinónimo (el código es degenerado). La proteína NO cambia."};
+    if(b.stop&&b.aa.length<a.aa.length)return {k:"sin",t:"<b>Mutación sin sentido</b>: ha aparecido un STOP antes de tiempo. La proteína se acorta."};
+    if(!b.stop)return {k:"stopx",t:"Has roto el codón STOP: el ribosoma seguiría leyendo más allá y la proteína saldría más larga (esto no viene en las diapositivas)."};
+    return {k:"err",t:"<b>Mutación errónea</b>: el codón nuevo codifica otro aminoácido. La proteína SÍ cambia."}}
+  function r(){
+    var p=proteina(m),c=clas();if(c.k&&RETOS.some(function(x){return x[0]===c.k})&&!got[c.k]){got[c.k]=true;S.mutRetos=got;save();toast("🎯 Reto conseguido");if(RETOS.every(function(x){return got[x[0]]}))done("lab","mut")}
+    var cs=[];for(var k=0;k<m.length;k+=3)cs.push(m.substr(k,3));
+    el.innerHTML='<div class="card"><h2>⚠️ Laboratorio de mutaciones</h2><p class="mu">Es el ARNm del ejemplo de la profe. Toca una base y elige qué le haces. Verás al momento cómo cambia la proteína. <span class="dp">diap. 107–109</span></p>'+
+    '<div class="strand"><span class="end">5\'</span>'+m.split("").map(function(b,k){return '<button class="base b'+b+(sel===k?" sel":"")+'" data-k="'+k+'" style="'+(k%3===2?"margin-right:8px":"")+'">'+b+"</button>"}).join("")+'<span class="end">3\'</span></div>'+
+    '<div class="seq">'+cs.join("  ")+"\n"+cs.map(function(x){return x.length===3?(AN[tr(x)]+"  ").slice(0,5):"   "}).join("")+'</div>'+
+    (sel!==null?'<div class="state"><b>Base '+(sel+1)+' ('+m[sel]+')</b><div class="row" style="margin-top:6px"><span>Cambiar por:</span>'+"AUGC".split("").filter(function(x){return x!==m[sel]}).map(function(x){return '<button class="base b'+x+'" data-s="'+x+'">'+x+"</button>"}).join("")+'</div><div class="row" style="margin-top:6px"><span>Insertar detrás:</span>'+"AUGC".split("").map(function(x){return '<button class="base b'+x+'" data-i="'+x+'">'+x+"</button>"}).join("")+'</div><div class="row" style="margin-top:6px"><button class="btn ghost sm" id="dl">🗑 Borrar esta base</button></div></div>':"")+
+    '<div class="fb in"><b>Proteína: '+(p.aa.length?p.aa.map(function(a){return AN[a]}).join("-"):"—")+(p.stop?" · STOP":"")+'</b>'+c.t+'</div>'+
+    '<div class="row"><button class="btn ghost sm" id="rs">↺ Volver a la normal</button></div>'+
+    '<h3 style="margin-top:14px">🎯 Retos</h3><ul class="chk">'+RETOS.map(function(x){return '<li class="'+(got[x[0]]?"on":"")+'">'+(got[x[0]]?"✅":"⬜")+" "+x[1]+"</li>"}).join("")+'</ul><p class="mu">Pista: la tercera letra de cada codón es la que más "perdona" (codones sinónimos).</p>'+
+    '<div class="fb lab"><b>🔬 En la clínica</b>La anemia falciforme la causa una sola mutación errónea en el gen de la hemoglobina (un Glu cambiado por una Val). En anatomía patológica se buscan mutaciones como BRAF, EGFR o KRAS para elegir el tratamiento de un tumor.</div></div>';
+    $$("[data-k]",el).forEach(function(b){b.onclick=function(){sel=+b.dataset.k;r()}});
+    $$("[data-s]",el).forEach(function(b){b.onclick=function(){m=m.slice(0,sel)+b.dataset.s+m.slice(sel+1);sel=null;r()}});
+    $$("[data-i]",el).forEach(function(b){b.onclick=function(){m=m.slice(0,sel+1)+b.dataset.i+m.slice(sel+1);sel=null;r()}});
+    var dl=$("#dl");if(dl)dl.onclick=function(){m=m.slice(0,sel)+m.slice(sel+1);sel=null;r()};
+    $("#rs").onclick=function(){m=WT;sel=null;r()};
+  }r();
+}
+
+/* ================= HISTORIA ================= */
+var HIST=[
+{t:"En la biblioteca",d:"diap. 6–24",p:[
+["Me llamo <b>INS</b> y soy un gen: un trozo de ADN de una célula beta del páncreas. Mi trabajo es guardar la receta de la <b>insulina</b>. No salgo nunca del núcleo, que es la biblioteca: soy el libro original, y los originales no se prestan.","6–7"],
+["Estoy escrito con 4 letras: A, T, G y C. Cada letra va colgada de un <b>nucleótido</b>, que tiene un fosfato, una desoxirribosa y su base. Los nucleótidos se unen con <b>enlaces fosfodiéster</b>, y eso me da un principio (5') y un final (3').","8–14"],
+["No estoy solo: tengo una hebra gemela pegada enfrente, en sentido contrario. Somos <b>antiparalelas</b>. Mis A se dan la mano con sus T (2 puentes de H) y mis C con sus G (3 puentes). Juntas formamos una <b>escalera de caracol</b>: las bases dentro, protegidas, y el fosfato y el azúcar fuera, mojándose.","17, 22–24"]],
+q:{q:"Una mañana, la temperatura de la célula sube muchísimo (como en una PCR). ¿Qué nos pasa a mi hebra gemela y a mí?",o:[["Se rompen nuestros enlaces fosfodiéster y nos deshacemos en trozos",0,"No: los fosfodiéster son enlaces fuertes, y el calor no los rompe."],["Se rompen los puentes de H y nos separamos, pero si se enfría volvemos a unirnos",1,"¡Eso es! <b>Desnaturalización</b>, y es <b>reversible</b>: al enfriar viene la <b>renaturalización</b> (diap. 21)."],["Nada: el ADN no se altera con el calor",0,"Sí se altera: los puentes de H son débiles."]]}},
+{t:"Bien guardado",d:"diap. 26–38",p:[
+["Somos 2 metros de ADN en un núcleo diminuto. Para caber, nos enrollamos en carretes de <b>8 histonas</b>: los <b>nucleosomas</b>. Las histonas tienen carga positiva y nosotros negativa, así que nos atraemos. Vistos de lejos parecemos un <b>collar de perlas</b>: la fibra de cromatina.","26–29"],
+["El collar se enrolla otra vez y forma el <b>solenoide</b> (6 nucleosomas y 6 histonas H1 por vuelta). Yo estoy en una zona poco apretada, la <b>eucromatina</b>, porque en la célula beta me leen a menudo. Mis vecinos que nunca se usan viven en la <b>heterocromatina</b>, tan apretada que no se puede leer.","30–34"],
+["Fuera del núcleo, en las mitocondrias, vive otro ADN: pequeño, <b>circular</b>, de 16,5 kb y con 37 genes, que va a su aire. Se parece al de las bacterias, que tienen un único cromosoma circular libre en el citoplasma, sin histonas, y unos <b>plásmidos</b>.","35–38"]],
+q:{q:"Me dicen que hoy la célula se va a dividir y que me van a empaquetar al máximo, como cromosoma metafásico. ¿Me podrán leer para hacer insulina mientras tanto?",o:[["Sí, cuanto más compactado, más fácil de leer",0,"Al revés: lo compactado no se puede leer."],["No: tan compactado no se puede transcribir; me empaquetan para repartirme sin enredos",1,"¡Exacto! La compactación máxima sirve para <b>repartir</b> el ADN entre las células hijas sin que se rompa (diap. 32)."]]}},
+{t:"La célula se divide",d:"diap. 52–77",p:[
+["Fase S. Para que cada célula hija tenga su copia de INS, hay que <b>replicarme</b>. En varios puntos de mi cromosoma (los <b>orígenes de replicación</b>) se sientan unas proteínas que activan a las <b>helicasas</b>. Las helicasas me abren como una cremallera, en los dos sentidos: se forma la <b>burbuja</b>.","53–63"],
+["Las SSB sujetan mis hebras para que no se cierren, y la topoisomerasa quita la tensión. La primasa me pone unos <b>primers de ARN</b> y la ADN polimerasa III empieza a copiar. Siempre de 5' a 3'. En una hebra va seguida, detrás de la helicasa; en la otra va a trozos, hacia atrás: los <b>fragmentos de Okazaki</b>.","56–65"],
+["La ADN polimerasa I cambia los primers por ADN y la <b>ligasa</b> pega los trozos. Ahora hay dos INS, cada uno con una hebra vieja y una nueva. Pero en mi punta del cromosoma, el último primer no se ha podido sustituir: mi <b>telómero</b> es un poco más corto que ayer.","66, 74–77"]],
+q:{q:"¿Por qué una de mis hebras nuevas tiene que fabricarse a trozos?",o:[["Porque la helicasa solo abre una hebra",0,"No: la helicasa separa las dos."],["Porque la polimerasa solo escribe 5'→3' y las hebras son antiparalelas: en una, escribir 5'→3' va en contra de la apertura",1,"¡Eso es! Por eso la replicación es <b>semidiscontinua</b> (diap. 56–57)."],["Porque falta ligasa",0,"La ligasa pega los trozos, pero no es la causa de que existan."]]}},
+{t:"La fotocopia",d:"diap. 39–48, 78–83",p:[
+["Sube el azúcar en la sangre y llega la orden: ¡insulina! La <b>ARN polimerasa II</b> busca mi <b>promotor</b>, mi interruptor, y separa mis hebras justo en esa zona. Lee mi <b>hebra molde</b> (3'→5') y fabrica un ARN de 5' a 3'.","79–81"],
+["La copia es igual que mi otra hebra, la <b>codificante</b>, pero con <b>U</b> en lugar de T y con ribosa en lugar de desoxirribosa. Y es de una sola cadena. Cuando la polimerasa llega al <b>terminador</b>, suelta la copia.","39, 81–83"],
+["Esa copia es un <b>ARN mensajero</b>. Por ahí también andan sus primos: los <b>ARNt</b>, con forma de trébol (que se pliega en L), que llevan los aminoácidos, y los <b>ARNr</b>, el 80 % de todo el ARN, que con proteínas forman los ribosomas.","44–48"]],
+q:{q:"Si yo estuviera en una bacteria, ¿qué pasaría con mi copia nada más terminar?",o:[["Tendría que madurar en el núcleo",0,"Las bacterias no tienen núcleo."],["Los ribosomas empezarían a traducirla directamente: no hay núcleo ni maduración",1,"¡Exacto! En procariotas, el ARNm sale maduro y está en el mismo citoplasma que los ribosomas (diap. 83)."]]}},
+{t:"Preparando la salida",d:"diap. 84–89",p:[
+["Mi copia, el pre-ARNm, tiene tres problemas: se degrada fácilmente, no puede salir del núcleo y lleva trozos que no sirven (<b>intrones</b>) mezclados con los que sí sirven (<b>exones</b>).","84"],
+["Primero le ponen un <b>casco</b> en la cabeza: el <b>CAP-5'</b> de metilguanosina, que la protege y será la señal para el ribosoma. Después, en los pies, una <b>cola de 100 a 200 adeninas</b> (poliA): su pasaporte para salir.","85"],
+["Por último llega el <b>spliceosoma</b>: se agarra a los extremos de cada intrón, lo dobla en un <b>bucle</b>, lo corta y empalma los exones. Ya es un <b>ARNm maduro</b>.","86–87"]],
+q:{q:"En otra célula, el spliceosoma también quita uno de mis exones. ¿Qué pasa?",o:[["Sale otro ARNm y otra proteína a partir del mismo gen: splicing alternativo",1,"¡Bien! Así se fabrican <b>más proteínas que genes</b> (diap. 88)."],["Es imposible: los exones nunca se quitan",0,"Puede pasar: se llama splicing alternativo."]]}},
+{t:"En la fábrica",d:"diap. 90–105",p:[
+["Mi ARNm sale al citoplasma. La <b>subunidad menor</b> del ribosoma, con el ARNt iniciador (el que lleva la Metionina), se pone en su CAP-5' y avanza hasta encontrar el <b>AUG</b>. Llega la <b>subunidad mayor</b> y la Met queda en el <b>sitio P</b>.","95–96, 100"],
+["Se lee de 3 en 3: cada <b>codón</b> es un aminoácido. Entra en el <b>sitio A</b> un ARNt con el anticodón que encaja; la <b>peptidil transferasa</b> une los aminoácidos; el ribosoma avanza; el ARNt vacío sale por el <b>E</b>. Y así una y otra vez.","93, 101–102"],
+["Al final llega un <b>STOP</b> (UAA, UAG o UGA). Ningún ARNt lo reconoce: entran los <b>factores de liberación</b> y la cadena se suelta. Nace la insulina.","103–104"]],
+q:{q:"¿Por qué el código se lee de 3 en 3 y no de 2 en 2?",o:[["Con 2 letras solo hay 4×4 = 16 combinaciones, que no llegan para 20 aminoácidos; con 3 hay 64",1,"¡Exacto! 64 codones = 61 para aminoácidos + 3 STOP (diap. 93)."],["Por casualidad",0,"No es casualidad: haz la cuenta de las combinaciones."]]}},
+{t:"La errata",d:"diap. 106–110",p:[
+["Años después, en una de mis copias, la ADN polimerasa se equivoca y cambia una letra. Es una <b>mutación</b>: un cambio en mi secuencia. Como ha pasado en una célula del páncreas (una <b>célula somática</b>), solo la heredarán sus células hijas, no los hijos de la persona.","106"],
+["Si la letra cambiada da un codón sinónimo, no pasa nada (<b>silenciosa</b>). Si da otro aminoácido, la insulina cambia (<b>errónea</b>). Si da un STOP, la insulina sale cortada (<b>sin sentido</b>).","109"],
+["Y si en vez de cambiar una letra se me cuela una de más o se me cae una, se desplaza toda la lectura de 3 en 3: se cambia el <b>marco de lectura</b>, salvo que sean 3 letras (o un múltiplo de 3). Que sea grave o no depende del papel del aminoácido afectado.","107–110"]],
+q:{q:"¿Qué me haría más daño, normalmente?",o:[["Cambiar la 3.ª letra de un codón por otra que da el mismo aminoácido",0,"Eso sería silenciosa: la proteína no cambia."],["Perder 1 letra al principio del gen",1,"Sí: cambia el marco de lectura y estropea <b>todo</b> lo que viene detrás."],["Perder 3 letras seguidas",0,"Solo se pierde un aminoácido; el marco de lectura no cambia."]]}}
+];
+function viewHist(sub){
+  if(sub!=null&&HIST[sub]){var h=HIST[sub],n=+sub;
+    app.innerHTML='<button class="btn ghost sm" id="bk">← Capítulos</button><div class="card story" style="margin-top:10px"><p class="mu">Capítulo '+(n+1)+' de '+HIST.length+' · <span class="dp">📍 '+h.d+'</span></p><h2>'+h.t+'</h2><br>'+h.p.map(function(x){return "<p>"+x[0]+' <span class="ref">· diap. '+x[1]+"</span></p>"}).join("")+
+    '<div class="fb in"><b>🤔 Tú decides</b>'+h.q.q+'</div><div class="opts">'+h.q.o.map(function(o,k){return '<button class="opt" data-o="'+k+'">'+o[0]+"</button>"}).join("")+'</div><div id="f"></div></div>';
+    $("#bk").onclick=function(){histSub=null;viewHist()};scrollTo(0,0);
+    $$("[data-o]").forEach(function(b){b.onclick=function(){var o=h.q.o[+b.dataset.o];b.classList.add(o[1]?"ok":"no");$("#f").innerHTML='<div class="fb '+(o[1]?"ok":"no")+'"><b>'+(o[1]?"✅ ":"❌ ")+'</b>'+o[2]+'</div>'+(o[1]?(n+1<HIST.length?'<button class="btn" id="nx">Capítulo '+(n+2)+' →</button>':'<div class="fb ok"><b>🎉 Fin de la historia</b>Has seguido a un gen desde la biblioteca hasta la proteína. Ahora prueba a contarla tú en «Explícalo».</div>'):"");if(o[1]){S.hist[n]=true;save();var nx=$("#nx");if(nx)nx.onclick=function(){histSub=n+1;viewHist(n+1)}}}});
+    return}
+  app.innerHTML=hero("📖 El viaje de INS","La historia de un gen, el de la insulina, desde el núcleo hasta convertirse en proteína. Cada capítulo es una parte del tema, y al final tomas una decisión.")+
+  HIST.map(function(h,k){return '<button class="tile'+(S.hist[k]?" done":"")+'" style="width:100%;min-height:0;margin-bottom:10px" data-h="'+k+'"><b>'+(k+1)+'. '+h.t+'</b><span class="dp">📍 '+h.d+'</span></button>'}).join("");
+  $$("[data-h]").forEach(function(b){b.onclick=function(){histSub=+b.dataset.h;viewHist(histSub)}});
+}
+var histSub=null;
+
+/* ================= CASOS ================= */
+var CASOS=[
+{id:"c1",th:1,t:"La RT-PCR vacía",d:"diap. 10, 39",q:"Una biopsia se quedó 3 horas en la mesa antes de congelarla. La PCR de su <b>ADN</b> sale bien, pero la RT-PCR de su <b>ARN</b> no da nada. ¿Qué ha pasado?",o:[["Se han roto los fosfodiéster del ADN",0,"El ADN ha salido bien, así que el ADN está intacto."],["El ARN se ha degradado: la ribosa tiene un OH extra que lo hace inestable, y hay RNasas por todas partes",1,"Eso es. El ADN (desoxirribosa) es estable; el ARN se rompe enseguida si no se congela o se protege."],["Al ARN le falta timina",0,"El ARN nunca lleva timina: eso es normal y no tiene nada que ver."]]},
+{id:"c2",th:1,t:"El gel sin bandas",d:"diap. 9, 20",q:"Montas una electroforesis con los pocillos junto al polo <b>positivo</b>. Al terminar no ves ninguna banda. ¿Por qué?",o:[["El ADN es negativo (por sus fosfatos) y ha ido hacia el polo positivo: se ha salido del gel",1,"Correcto: los pocillos siempre van en el lado negativo, para que el ADN cruce el gel hacia el positivo."],["El ADN no tiene carga y no se ha movido",0,"Sí tiene carga: negativa, por los grupos fosfato."],["El ADN es positivo y se ha quedado pegado",0,"Es negativo: los fosfatos sueltan H⁺."]]},
+{id:"c3",th:1,t:"La PCR que no arranca",d:"diap. 21",q:"Alguien programa la PCR con la desnaturalización a <b>60 °C</b> en vez de 95 °C. No amplifica. ¿Por qué?",o:[["A 60 °C no se rompen bien los puentes de H y las hebras no se separan, así que los primers no tienen dónde pegarse",1,"Eso es: sin desnaturalización no hay hebras sueltas que copiar."],["A 60 °C se destruye la polimerasa",0,"La Taq aguanta muy bien el calor; el problema es otro."],["A 60 °C se rompen los enlaces fosfodiéster",0,"Esos enlaces no se rompen ni a 95 °C."]]},
+{id:"c4",th:1,t:"La zona rica en GC",d:"diap. 17",q:"Una región del ADN tiene un 70 % de G y C. ¿Por qué necesita más temperatura para separarse?",o:[["Porque C-G se une con 3 puentes de H y A-T con 2",1,"Exacto: más puentes, más energía para separar."],["Porque G y C son más pesadas",0,"No es por el peso: es por el número de puentes."],["Porque G y C llevan desoxirribosa",0,"Todas las bases del ADN llevan desoxirribosa."]]},
+{id:"c5",th:1,t:"El HER2 en una biopsia de mama",d:"diap. 17, 20",q:"Para ver si un tumor de mama tiene demasiadas copias del gen HER2 se usa el <b>FISH</b>: una sonda fluorescente que se pega justo a ese gen. ¿En qué propiedad se basa?",o:[["En la hibridación: las cadenas complementarias se buscan y se unen por puentes de H",1,"Eso es. Solo se pega donde la secuencia encaja."],["En que el ADN es viscoso",0,"La viscosidad no permite reconocer una secuencia."],["En la traducción",0,"La FISH no usa proteínas: usa ácidos nucleicos."]]},
+{id:"c6",th:2,t:"El bloque de parafina",d:"diap. 20",q:"El ADN de una biopsia que pasó 4 días en formol sale en trozos muy cortos. ¿Qué conclusión sacas?",o:[["El formol fragmenta y entrecruza los ácidos nucleicos: fijar de más estropea el ADN para las pruebas moleculares",1,"Correcto. Por eso las pruebas en parafina se diseñan para fragmentos cortos, y por eso hay que controlar el tiempo de fijación."],["Es normal: el ADN humano siempre está en trozos de 100 pares",0,"El ADN de un cromosoma tiene millones de pares de bases."]]},
+{id:"c7",th:2,t:"El hueso antiguo",d:"diap. 36",q:"Te llega un hueso muy degradado para identificarlo. El ADN nuclear no da resultado. ¿Qué ADN se suele probar?",o:[["El ADN mitocondrial: hay muchas copias en cada célula",1,"Eso es: hay varias copias por mitocondria y muchas mitocondrias por célula. Además se hereda de la madre."],["El de los plásmidos",0,"Los plásmidos son de las bacterias, no humanos."],["La heterocromatina",0,"Sigue siendo ADN nuclear."]]},
+{id:"c8",th:2,t:"La bacteria resistente",d:"diap. 38",q:"En la UCI, una bacteria se vuelve resistente al antibiótico después de convivir con otra especie que ya lo era. ¿Cómo ha recibido la resistencia?",o:[["A través de un plásmido: un pequeño ADN circular que pueden pasarse entre ellas",1,"Correcto: muchos genes de resistencia van en plásmidos."],["Por splicing alternativo",0,"Las bacterias no hacen splicing."],["Por su cromatina",0,"Las bacterias no tienen cromatina."]]},
+{id:"c9",th:3,t:"Ki-67 al 60 %",d:"diap. 53",q:"En un tumor, el Ki-67 marca el 60 % de los núcleos. Ki-67 aparece en las células que están en el ciclo celular. ¿Qué significa?",o:[["Que muchas células se están preparando para dividirse (replicando ADN) o dividiéndose: el tumor crece rápido",1,"Eso es. Un índice alto = mucha proliferación."],["Que el 60 % de las células está muerta",0,"Ki-67 marca las células en ciclo, no las muertas."]]},
+{id:"c10",th:3,t:"La línea HeLa",d:"diap. 76–77",q:"Las células HeLa (Tema 2) se dividen sin parar desde los años 50. Las células normales se paran tras muchas divisiones. ¿Qué tienen de especial?",o:[["Mantienen largos sus telómeros (con la telomerasa), así que no se acortan con cada división",1,"Correcto. Normalmente, cada división pierde un trozo de telómero porque el último primer no se puede sustituir."],["No replican su ADN",0,"Sin replicar no podrían dividirse."]]},
+{id:"c11",th:4,t:"Intoxicación por setas",d:"diap. 79",q:"Un paciente comió <i>Amanita phalloides</i>. Su toxina bloquea la <b>ARN polimerasa II</b>. ¿Por qué falla su hígado?",o:[["Porque sin ARN pol II no se fabrica ARNm, y sin ARNm no se fabrican proteínas",1,"Exacto: II → ARNm ('RoMa Tú')."],["Porque no puede replicar su ADN",0,"La replicación la hacen las ADN polimerasas."],["Porque se queda sin ARNt",0,"El ARNt lo hace la III."]]},
+{id:"c12",th:4,t:"El antibiótico selectivo",d:"diap. 48",q:"Una tetraciclina bloquea el ribosoma de las bacterias pero no daña tus células. ¿Por qué es posible?",o:[["Porque los ribosomas de las bacterias son distintos de los nuestros",1,"Eso es: tienen otro tamaño y otra composición, y el fármaco solo encaja en el bacteriano."],["Porque las bacterias no tienen ribosomas",0,"Sí tienen: todas las células fabrican proteínas."]]},
+{id:"c13",th:5,t:"Insulina hecha por bacterias",d:"diap. 86–87, 94",q:"Quieres que una bacteria fabrique insulina humana. ¿Qué le das?",o:[["El gen tal cual, con sus intrones",0,"Las bacterias no saben hacer splicing: traducirían también los intrones."],["El ADNc (una copia en ADN del ARNm maduro, sin intrones)",1,"Correcto. Y funciona porque el código genético es <b>universal</b>."]]},
+{id:"c14",th:5,t:"Pescar el ARNm",d:"diap. 85",q:"Para separar solo los ARNm de una muestra se usan unas cadenas de T (oligo-dT). ¿Por qué funcionan?",o:[["Porque los ARNm maduros tienen la cola poliA en el 3', y las A se pegan a las T",1,"Eso es: el ARNr y el ARNt no tienen esa cola."],["Porque se pegan al CAP",0,"El CAP es una G modificada; las T se pegan a las A."]]},
+{id:"c15",th:7,t:"La proteína que no se tiñe",d:"diap. 107–108",q:"En un cáncer de colon, la inmunohistoquímica de una proteína de reparación (MLH1) sale negativa. En el gen hay una deleción de 1 nucleótido al principio. ¿Por qué no se ve la proteína?",o:[["Porque la deleción cambia el marco de lectura y la proteína sale alterada o cortada",1,"Correcto: todo lo que viene detrás se lee desplazado."],["Porque las deleciones siempre son silenciosas",0,"Una deleción de 1 nucleótido nunca es silenciosa."]]},
+{id:"c16",th:7,t:"La hemoglobina en hoz",d:"diap. 109",q:"En la anemia falciforme, el codón GAG (Glu) pasa a GUG (Val) en el ARNm. ¿Qué tipo de mutación es?",o:[["Silenciosa",0,"Cambia el aminoácido, así que no es silenciosa."],["Errónea (de cambio de sentido)",1,"Exacto: una sola sustitución → otro aminoácido → la proteína cambia."],["Sin sentido",0,"No aparece un STOP."]]}
+];
+function viewCasos(){
+  var hechos=CASOS.filter(function(c){return S.casos[c.id]!=null}).length,ok=CASOS.filter(function(c){return S.casos[c.id]===true}).length;
+  app.innerHTML=hero("🔬 Casos del laboratorio","Situaciones reales de un laboratorio de anatomía patológica que se resuelven con la teoría del tema.")+
+  '<div class="card"><div class="row" style="justify-content:space-between"><b>'+hechos+'/'+CASOS.length+' resueltos · '+ok+' a la primera</b><button class="btn ghost sm" id="fl">Repetir los fallados</button></div><div class="prog" style="margin-top:8px"><i style="width:'+Math.round(hechos/CASOS.length*100)+'%"></i></div><p class="mu" style="margin:8px 0 0">Los casos son ampliación (no vienen en las diapositivas), pero cada uno indica en qué diapositiva está la teoría que lo resuelve.</p></div><div id="cl"></div>';
+  var lista=CASOS;function pinta(L){$("#cl").innerHTML=L.map(function(c){var st=S.casos[c.id];return '<div class="card" id="'+c.id+'"><div class="row"><span class="tag x">Caso '+c.id.slice(1)+'</span><span class="dp">📍 '+c.d+'</span>'+(st===true?'<span class="tag" style="background:var(--oks);color:var(--ok)">✓ a la primera</span>':st===false?'<span class="tag" style="background:var(--nos);color:var(--no)">a repasar</span>':"")+'</div><h3 style="margin-top:8px">'+c.t+'</h3><p>'+c.q+'</p><div class="opts">'+c.o.map(function(o,k){return '<button class="opt" data-c="'+c.id+'" data-o="'+k+'">'+o[0]+"</button>"}).join("")+'</div><div class="f"></div></div>'}).join("");
+    $$("[data-c]").forEach(function(b){b.onclick=function(){var c=CASOS.filter(function(x){return x.id===b.dataset.c})[0],o=c.o[+b.dataset.o],card=$("#"+c.id);
+      if(card.dataset.ans)return;b.classList.add(o[1]?"ok":"no");if(!card.dataset.tried){S.casos[c.id]=!!o[1];save()}card.dataset.tried=1;
+      $(".f",card).innerHTML='<div class="fb '+(o[1]?"ok":"no")+'"><b>'+(o[1]?"✅ Bien resuelto":"❌ No es eso")+'</b>'+o[2]+'</div>';if(o[1])card.dataset.ans=1}})}
+  pinta(lista);$("#fl").onclick=function(){var L=CASOS.filter(function(c){return S.casos[c.id]===false});if(!L.length){toast("No tienes casos fallados 👌");return}L.forEach(function(c){delete S.casos[c.id]});save();pinta(L)};
+}
+
+/* ================= EXPLÍCALO (Feynman) ================= */
+var EXP=[
+{id:"e1",th:1,k:1,q:"Explícale a alguien que no sabe nada en qué se diferencian el ADN y el ARN.",d:"diap. 6–11, 39",pts:[["El azúcar: desoxirribosa / ribosa",["desoxirribosa","ribosa"]],["Las bases: T en el ADN / U en el ARN",["timina","uracilo","la t ","la u "]],["Las cadenas: doble / simple",["doble","simple","monocatenari","bicatenari","una cadena","dos cadenas"]],["La función: guardar y transmitir / fabricar proteínas",["almacen","guard","transmit","protein"]],["El tamaño: el ADN es mucho más grande",["grande","pequeñ","tamaño"]]]},
+{id:"e2",th:1,k:0,q:"¿Qué es la desnaturalización y por qué es reversible?",d:"diap. 21",pts:[["Se separan las dos hebras",["separ"]],["Por calor o por pH alto",["temperatura","calor","ph"]],["Se rompen los puentes de H",["puente"]],["No se rompen los fosfodiéster, por eso se puede revertir",["fosfodiest","enlace fuerte","covalente"]],["Al bajar la temperatura o el pH: renaturalización",["renatural","reversible","baja"]]]},
+{id:"e3",th:1,k:0,q:"Cuenta cómo es la doble hélice y por qué es así.",d:"diap. 22–24",pts:[["Hebras antiparalelas",["antiparalel"]],["Bases complementarias: A-T y C-G",["complementari"]],["Unidas por puentes de H (2 y 3)",["puente"]],["Bases dentro; fosfato y azúcar fuera",["dentro","interior"]],["10 nucleótidos por vuelta",["10"]]]},
+{id:"e4",th:2,k:0,q:"¿Cómo se empaqueta el ADN, nivel por nivel?",d:"diap. 26–33",pts:[["Histonas (positivas) unidas al ADN",["histona"]],["Nucleosoma de 8 histonas",["nucleosoma","octamero","8"]],["Fibra de cromatina, el collar de perlas",["collar","cromatina"]],["Solenoide (6 nucleosomas + H1)",["solenoide"]],["Cromosoma metafásico en la mitosis",["metafas","mitosis"]]]},
+{id:"e5",th:3,k:1,q:"Explica la replicación paso a paso, con todas sus enzimas.",d:"diap. 59–74",pts:[["Origen y proteínas que activan las helicasas",["origen"]],["La helicasa rompe los puentes de H y forma la burbuja",["helicasa"]],["SSB y topoisomerasa/girasa",["ssb","topoisomerasa","girasa"]],["La primasa pone primers de ARN",["primasa","primer","cebador"]],["La ADN pol III fabrica en 5'→3'",["iii","pol 3","polimerasa 3"]],["La ADN pol I cambia los primers por ADN",["polimerasa i ","pol i ","polimerasa i,","polimerasa i.","polimerasa 1","pol 1"]],["La ligasa une los fragmentos",["ligasa"]]]},
+{id:"e6",th:3,k:1,q:"¿Por qué la replicación es semidiscontinua?",d:"diap. 56–57",pts:[["La polimerasa solo fabrica 5'→3'",["5'","5 3","5-3"]],["Las hebras son antiparalelas",["antiparalel"]],["La conductora (continua) va con la horquilla",["continua","conductora","lider"]],["La retardada va a trozos",["retardada"]],["Los fragmentos de Okazaki, cada uno con su primer",["okazaki"]]]},
+{id:"e7",th:3,k:0,q:"¿Por qué se acortan los telómeros en cada división?",d:"diap. 76–77",pts:[["Están en los extremos de los cromosomas",["extremo","punta","final"]],["El último primer de la punta",["primer","cebador"]],["No se puede sustituir/copiar y ese trozo se pierde",["no se puede","pierde","copiar"]],["Se acortan en cada división",["division","acorta"]]]},
+{id:"e8",th:4,k:0,q:"Explica la transcripción de principio a fin.",d:"diap. 78–83",pts:[["La ARN polimerasa (II para el ARNm)",["arn polimerasa","polimerasa ii","pol ii"]],["Reconoce el promotor",["promotor"]],["Lee la hebra molde",["molde"]],["El ARN es como la codificante, con U en vez de T",["codificante","uracilo"]],["Termina en el terminador",["terminador"]]]},
+{id:"e9",th:5,k:1,q:"¿Por qué madura el ARN y cómo lo hace?",d:"diap. 84–88",pts:[["Porque se degrada, tiene que salir y lleva intrones",["degrad","salir","intron"]],["CAP-5' de metilguanosina: protege y une al ribosoma",["cap","caperuza","metilguanosina"]],["Cola poliA en el 3': para salir al citoplasma",["poli","adenina"]],["Splicing con el spliceosoma: se van los intrones, quedan los exones",["splicing","spliceosoma","exon"]],["Splicing alternativo: varias proteínas de un gen",["alternativo"]]]},
+{id:"e10",th:6,k:0,q:"¿Qué es el código genético y cuáles son sus características?",d:"diap. 93–95",pts:[["Tripletes (codones), 64 en total",["triplete","codon","64"]],["Universal",["universal"]],["No ambiguo",["ambiguo"]],["Degenerado (codones sinónimos)",["degenerado","sinonimo"]],["Continuo y no solapado",["continuo","solapado"]],["AUG = Met; STOP = UAA, UAG, UGA",["aug","metionina","stop"]]]},
+{id:"e11",th:6,k:1,q:"Explica la traducción: las fases y los sitios del ribosoma.",d:"diap. 96–104",pts:[["Iniciación: ARNt con Met, subunidad menor, CAP, AUG",["iniciador","aug","metionina"]],["Sitio P (peptidil)",["sitio p","peptidil "]],["Sitio A (aminoacil)",["sitio a","aminoacil"]],["Sitio E (salida)",["sitio e","exit","salida"]],["Peptidil transferasa: enlace peptídico",["transferasa","peptidico"]],["STOP y factores de liberación",["liberacion","stop"]]]},
+{id:"e12",th:7,k:1,q:"Explica los tipos de mutaciones génicas con un ejemplo.",d:"diap. 106–110",pts:[["Inserción y deleción",["insercion","delecion"]],["Cambio del marco de lectura (salvo múltiplos de 3)",["marco","multiplo"]],["Sustitución",["sustitucion"]],["Silenciosa (la proteína no cambia)",["silencios"]],["Errónea (otro aminoácido)",["erronea"]],["Sin sentido (un STOP, proteína corta)",["sin sentido"]]]}
+];
+function nk(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[’´`]/g,"'")}
+function norm(s){return " "+s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[’´`]/g,"'")+" "}
+function viewExp(sub){
+  if(sub){var e=EXP.filter(function(x){return x.id===sub})[0];if(e){
+    var txt=S.notas[e.id]||"",man=(S.manual||{})[e.id]||{};
+    app.innerHTML='<button class="btn ghost sm" id="bk">← Temas</button><div class="card" style="margin-top:10px"><div class="row">'+(e.k?'<span class="tag k">🔑 Posible pregunta llave</span>':"")+'<span class="dp">📍 '+e.d+'</span></div><h2 style="margin-top:8px">'+e.q+'</h2><p class="mu">Escríbelo (o díctalo con el micrófono del teclado) como si se lo contaras a un amigo que no sabe nada. Sin mirar los apuntes. Luego pulsa <b>Comprobar</b>.</p><textarea id="tx" placeholder="Empieza por: Imagina que…">'+esc(txt)+'</textarea><div class="row" style="margin-top:8px"><button class="btn" id="ck">Comprobar</button><button class="btn ghost" id="cp">📋 Copiar para Claude</button></div><div id="res"></div></div>';
+    $("#bk").onclick=function(){expSub=null;viewExp()};scrollTo(0,0);
+    var tx=$("#tx");tx.oninput=function(){S.notas[e.id]=tx.value;save()};
+    function check(){var n=norm(tx.value),c=0;
+      var h='<h3 style="margin-top:14px">Lo que debería aparecer</h3><ul class="chk">'+e.pts.map(function(p,k){var auto=p[1].some(function(w){return n.indexOf(nk(w))>=0}),on=man[k]!=null?man[k]:auto;if(on)c++;return '<li class="'+(on?"on":"")+'"><input type="checkbox" data-k="'+k+'"'+(on?" checked":"")+' aria-label="Lo he dicho"><span>'+p[0]+(auto&&man[k]==null?' <span class="mu">(detectado)</span>':"")+"</span></li>"}).join("")+'</ul>';
+      var all=c===e.pts.length;h+='<div class="fb '+(all?"ok":"in")+'"><b>'+c+'/'+e.pts.length+' ideas</b>'+(all?"¡Lo has explicado completo! Ese es el nivel que pide el examen.":"Lo que falta es justo tu hueco: repásalo en el <b>Laboratorio</b> o en la <b>Historia</b> y vuelve a explicarlo dentro de un rato. Si la detección automática no ha pillado algo que sí dijiste, márcalo tú.")+'</div>';
+      $("#res").innerHTML=h;if(all){S.exp[e.id]=true;save()}
+      $$("#res input").forEach(function(i){i.onchange=function(){S.manual=S.manual||{};S.manual[e.id]=S.manual[e.id]||{};S.manual[e.id][i.dataset.k]=i.checked;man=S.manual[e.id];save();check()}})}
+    $("#ck").onclick=check;
+    $("#cp").onclick=function(){var t="Hazme de alumno que no sabe nada (método Feynman). Te explico: «"+e.q+"»\n\n"+tx.value+"\n\n¿Qué me falta, qué está mal y qué me preguntarías para pillarme?";try{navigator.clipboard.writeText(t).then(function(){toast("Copiado: pégalo en el chat con Claude")},function(){toast("No se pudo copiar")})}catch(er){toast("No se pudo copiar")}};
+    if(txt)check();return}}
+  app.innerHTML=hero("🗣️ Explícalo tú","Método Feynman: si sabes explicarlo con tus palabras, lo has entendido. Escribes tu explicación y la página busca las ideas clave. Para que te corrija una persona de verdad, cópiala y pégala en el chat conmigo: haré de alumno preguntón.")+
+  EXP.map(function(e){return '<button class="tile'+(S.exp[e.id]?" done":"")+'" style="width:100%;min-height:0;margin-bottom:10px" data-e="'+e.id+'"><b>'+e.q+'</b><span class="row">'+(e.k?'<span class="tag k">🔑 pregunta llave</span>':"")+'<span class="dp">📍 '+e.d+'</span></span></button>'}).join("");
+  $$("[data-e]").forEach(function(b){b.onclick=function(){expSub=b.dataset.e;viewExp(expSub)}});
+}
+var expSub=null;
+
+/* ================= INICIO + PLAN ================= */
+var TEMAS=[
+{n:1,t:"Moléculas: nucleótidos, doble hélice y propiedades",lab:["nuc","comp"]},
+{n:2,t:"Empaquetamiento y tipos de ADN",lab:["emp"]},
+{n:3,t:"Replicación y telómeros",lab:["rep","act6"]},
+{n:4,t:"ARN y transcripción",lab:["trans"]},
+{n:5,t:"Maduración del ARN",lab:["mad"]},
+{n:6,t:"Código genético y traducción",lab:["trad"]},
+{n:7,t:"Mutaciones",lab:["mut"]}];
+function hero(t,p){return '<a class="back" id="back" href="../../" hidden>← Menú · Mi carrera</a><header class="hero"><p class="eb">🧬 Biología Molecular · 3er examen · Tema 4</p><h1>'+t+'</h1><p>'+p+'</p></header>'}
+function viewInicio(){
+  var tot=LAB.length+HIST.length+CASOS.length+EXP.length,hc=Object.keys(S.lab).length+Object.keys(S.hist).length+Object.keys(S.casos).length+Object.keys(S.exp).length;
+  app.innerHTML=hero("Aprende el Tema 4 haciendo","Ácidos nucleicos y enzimas asociadas, las 110 diapositivas. Nada de leer y subrayar: aquí montas, decides, resuelves y explicas.")+
+  '<div class="card"><h2>Tu avance</h2><div class="prog"><i style="width:'+Math.round(hc/tot*100)+'%"></i></div><p class="mu" style="margin:6px 0 0">'+hc+' de '+tot+' actividades · se guarda en este móvil</p></div>'+
+  '<div class="grid">'+
+  '<a class="tile" href="#laboratorio" style="text-decoration:none"><span class="e">🧪</span><b>Laboratorio</b><span class="mu">Haces tú el trabajo de la célula</span></a>'+
+  '<a class="tile" href="#historia" style="text-decoration:none"><span class="e">📖</span><b>Historia</b><span class="mu">El viaje de un gen hasta la proteína</span></a>'+
+  '<a class="tile" href="#casos" style="text-decoration:none"><span class="e">🔬</span><b>Casos</b><span class="mu">Problemas reales de laboratorio</span></a>'+
+  '<a class="tile" href="#explica" style="text-decoration:none"><span class="e">🗣️</span><b>Explícalo</b><span class="mu">Si sabes contarlo, lo sabes</span></a></div>'+
+  '<div class="card" style="margin-top:14px"><h2>📅 Mi plan de estudio</h2><p class="mu">Cada día sigue el mismo orden, el que mejor funciona para entender: <b>historia</b> (te sitúas) → <b>laboratorio</b> (lo haces) → <b>casos</b> (lo aplicas) → <b>explícalo</b> (lo cuentas tú).</p><div class="row"><label for="ds"><b>¿Cuántos días te quedan?</b></label><select id="ds">'+[1,2,3,4,5,6,7,8,9,10].map(function(n){return "<option"+(n==S.dias?" selected":"")+">"+n+"</option>"}).join("")+'</select></div><div id="pl"></div></div>'+
+  '<div class="card"><h2>¿Qué es cada cosa?</h2><p><span class="tag k">🔑</span> posible pregunta llave · <span class="tag a">📘</span> actividad de clase de la profe · <span class="tag x">Caso</span> ampliación de laboratorio (no viene en las diapositivas) · <span class="dp">📍 diap.</span> dónde está la teoría en el PDF de la profe.</p><p class="mu">Si prefieres la explicación completa para leer, la tienes en la página «Entender el porqué».</p></div>';
+  $("#ds").onchange=function(){S.dias=+this.value;save();plan()};plan();showBack();
+}
+function plan(){
+  var d=S.dias,n=Math.max(1,d-1),g=[];
+  if(d===1)g=[TEMAS];else{var per=TEMAS.length/n,cur=[],cnt=0;TEMAS.forEach(function(t,i){cur.push(t);cnt++;var left=TEMAS.length-i-1,dl=n-g.length-1;if(dl>0&&(cnt>=per*(g.length+1)-0.01||left===dl)){g.push(cur);cur=[]}});if(cur.length)g.push(cur)}
+  function item(t){var hi=HIST[t.n-1],cs=CASOS.filter(function(c){return c.th===t.n}),ex=EXP.filter(function(e){return e.th===t.n});
+    return "<li><b>"+t.t+"</b><br>📖 Cap. "+t.n+" · 🧪 "+t.lab.map(function(id){return LAB.filter(function(x){return x.id===id})[0].t}).join(", ")+(cs.length?" · 🔬 "+cs.length+(cs.length===1?" caso":" casos"):"")+(ex.length?" · 🗣️ "+ex.length+(ex.length===1?" explicación":" explicaciones"):"")+"</li>"}
+  var h=g.map(function(gr,i){return '<div class="day"><b>Día '+(i+1)+'</b><ul>'+gr.map(item).join("")+"</ul></div>"}).join("");
+  for(var x=g.length;x<n;x++)h+='<div class="day"><b>Día '+(x+1)+' · Afianzar</b><ul><li>🗣️ Explica de nuevo los temas en los que te falten ideas</li><li>🔬 Repite los casos fallados</li><li>🧪 Repite el módulo de laboratorio que más te haya costado</li></ul></div>';
+  h+='<div class="day rev"><b>'+(d===1?"Al final del día":"Día "+d+" · Repaso final")+'</b><ul><li>🗣️ Explica en voz alta todas las 🔑 preguntas llave</li><li>🔬 «Repetir los fallados» en Casos</li><li>⚠️ Laboratorio de mutaciones: completa los 5 retos</li><li>Haz el simulacro del tema</li></ul></div>';
+  $("#pl").innerHTML=h;
+}
+function viewGlos(){app.innerHTML=hero("📚 Glosario","Todas las palabras importantes del tema, de la A a la Z.")+'<div class="card">'+$("#glos").innerHTML+'</div>';showBack()}
+
+/* ================= RUTAS ================= */
+var VIEWS={inicio:viewInicio,laboratorio:function(){labSub=null;viewLab()},historia:function(){viewHist(histSub)},casos:viewCasos,explica:function(){viewExp(expSub)},glosario:viewGlos};
+function showBack(){var b=$("#back");if(b&&(/github\.io$/.test(location.hostname)||location.protocol==="file:"))b.hidden=false}
+function go(v){if(location.hash.slice(1)!==v)location.hash=v;else route()}
+function route(){var v=location.hash.slice(1);if(!VIEWS[v])v="inicio";$$("nav.tabs a").forEach(function(a){a.toggleAttribute("aria-current",a.dataset.v===v);if(a.dataset.v===v)a.setAttribute("aria-current","page")});VIEWS[v]();showBack();scrollTo(0,0)}
+addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
