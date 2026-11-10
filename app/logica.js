@@ -161,8 +161,36 @@
     return a + " " + (r === "Hoy" ? "Hoy toca examen." : r + ", examen.");
   }
 
+  /* ---------- colección de temas dominados (Mi mesa · tsapc:v2 › personal.coleccion) ----------
+     {<unidad>: {desde:"AAAA-MM-DD", ultimo:"AAAA-MM-DD", vista:bool}}. Nunca se borra nada: solo se añade o se refresca. */
+  function coleccionLimpia(c) {
+    var out = {}; if (!c || typeof c !== "object" || Array.isArray(c)) return out;
+    for (var k in c) if (Object.prototype.hasOwnProperty.call(c, k) && c[k] && typeof c[k] === "object" && /^\d{4}-\d{2}-\d{2}$/.test(c[k].desde)) {
+      out[k] = { desde: c[k].desde, ultimo: /^\d{4}-\d{2}-\d{2}$/.test(c[k].ultimo) ? c[k].ultimo : c[k].desde, vista: c[k].vista === true };
+    }
+    return out;
+  }
+  /* añade las unidades al 100 % que falten; devuelve {col, nuevas:[ids]} */
+  function estampar(col, completas, hoy) {
+    var c = coleccionLimpia(col), nuevas = [];
+    (completas || []).forEach(function (id) { if (!c[id]) { c[id] = { desde: hoy, ultimo: hoy, vista: false }; nuevas.push(id); } });
+    return { col: c, nuevas: nuevas };
+  }
+  /* se ha repasado algo de la unidad: recupera el color (solo si ya está en la colección) */
+  function refrescar(col, id, hoy) {
+    var c = coleccionLimpia(col); if (c[id] && c[id].ultimo < hoy) c[id].ultimo = hoy; return c;
+  }
+  function marcarVistas(col) { var c = coleccionLimpia(col); for (var k in c) c[k].vista = true; return c; }
+  /* 0 = viva (menos de 7 días), 1 = algo pálida (7–13), 2 = pálida (14–29), 3 = muy pálida (30 o más). Nunca desaparece. */
+  function palidez(entrada, hoy) {
+    if (!entrada) return 0;
+    var d = difDias(parseDia(hoy), parseDia(entrada.ultimo));
+    return d >= 30 ? 3 : d >= 14 ? 2 : d >= 7 ? 1 : 0;
+  }
+
   return { DIAS: DIAS, MESES: MESES, TIPO: TIPO, pad: pad, may: may, escapar: escapar, sid: sid, clave: clave, parseDia: parseDia, hm: hm, difDias: difDias,
     ahoraDesde: ahoraDesde, reloj: reloj, inicioClase: inicioClase, prepararEventos: prepararEventos, pendientes: pendientes, proximoExamen: proximoExamen,
     cuentaAtras: cuentaAtras, partes: partes, h12: h12, h12r: h12r, hora: hora, rango: rango, formatoValido: formatoValido, diaRelativo: diaRelativo, fechaLarga: fechaLarga,
-    semana: semana, infoDia: infoDia, progreso: progreso, planta: planta, resumenHoy: resumenHoy };
+    semana: semana, infoDia: infoDia, progreso: progreso, planta: planta, resumenHoy: resumenHoy,
+    coleccionLimpia: coleccionLimpia, estampar: estampar, refrescar: refrescar, marcarVistas: marcarVistas, palidez: palidez };
 });
