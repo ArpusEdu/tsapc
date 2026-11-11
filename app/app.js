@@ -422,8 +422,7 @@
   function pUnidad(id) {
     var u = D.unidad(id); if (!u) return pNada();
     var S1 = A[u.s], n = ahora(), pf = prof(u.s), p = progresoDe(u), ev = EVS.filter(function (e) { return e.unidad === u.id; })[0];
-    var notas = (u.id === "lab1" ? '<a class="nota-boton lila" href="#/sesion/lab1-agua"><b>Sesión de estudio</b><span class="mano">el agua del laboratorio · la nueva forma de estudiar</span><span class="ext">Empezar' + ico("siguiente") + "</span></a>" : "") +
-      '<a class="nota-boton" href="../' + esc(u.repaso.web) + '"><b>Repaso</b><span class="mano">' + (u.porEntregas ? "entrega a entrega" : "bloque a bloque") + '</span><span class="ext">Abrir el repaso' + ico("siguiente") + "</span></a>" +
+    var notas = '<a class="nota-boton" href="../' + esc(u.repaso.web) + '"><b>Repaso</b><span class="mano">' + (u.porEntregas ? "entrega a entrega" : "bloque a bloque") + '</span><span class="ext">Abrir el repaso' + ico("siguiente") + "</span></a>" +
       (u.simulacro && u.simulacro.web ? '<a class="nota-boton amarilla" href="../' + esc(u.simulacro.web) + '"><b>Simulacro</b><span class="mano">' + esc(u.simulacro.webt || "como el examen") + '</span><span class="ext">Abrir el simulacro' + ico("siguiente") + "</span></a>" : "") +
       E.unidadNotas(u) +
       (u.id === "bio3" ? '<a class="nota-boton" data-subject="bio" href="#/lectura/franklin"><b>Lectura</b><span class="mano">La historia de Rosalind Franklin</span></a>' : "");
@@ -434,7 +433,7 @@
     var html = ruta([["Asignaturas", "#/asignaturas"], [S1.nombre, "#/asignatura/" + u.s], [u.codigo]]) +
       '<header class="cab cab-asig"><div>' + titulo('<span class="fluor asig">' + esc(u.titulo) + "</span>") +
       '<p class="sub">' + esc(u.tema) + " · " + esc(u.examen) + (pf ? " · " + esc(pf) : "") + "</p>" + insigniaExamen(u, n) + "</div>" + pegatina(u.pegatina, u.s, "grande") + "</header>" +
-      (p ? barra(p, "Repaso dominado") : "") + E.unidadResumen(u) +
+      (p ? barra(p, "Repaso dominado") : "") + E.unidadResumen(u) + (SS ? SS.unidadBloque(u.id) : "") +
       '<div class="rejilla rejilla-unidad"><section aria-labelledby="hBl"><div class="sec-cab"><h2 id="hBl">Lo que entra</h2><span class="mano">' + (u.porEntregas ? "por entregas" : "bloque a bloque") + '</span></div><ol class="bloques">' + u.bloques.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("") + "</ol></section>" +
       '<section aria-labelledby="hEs"><div class="sec-cab"><h2 id="hEs">Para estudiar</h2><span class="mano">empieza por el repaso</span></div><div class="notas-fila">' + notas + "</div>" +
       (ev && ev.nota ? '<div class="nota nota-ex"><span class="mano">' + esc(ev.titulo) + ". " + esc(ev.nota) + ".</span></div>" : "") +

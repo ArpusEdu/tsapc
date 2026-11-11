@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "id": "lab1-limpieza",
+  "unidad": "lab1",
+  "bloque": 2,
+  "titulo": "Limpieza, desinfección y esterilización",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 2, diapositivas 32 a 40). El misterio es el caso de la diapositiva 34 contado sin el final; su solución es el texto de la profe. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 22,
+    "titulo": "4,05",
+    "caso": "Control antidopaje. El reglamento es claro: si el betabloqueante «X» en orina pasa de 4 µg/ml, es dopaje. El análisis da 4,05 µg/ml. El deportista jura que no ha tomado nada, y el técnico sospecha del material que había usado un compañero justo antes.",
+    "pregunta": "¿Cómo puede una cantidad tan pequeña decidirlo todo? ¿Se arregla repitiendo el análisis?",
+    "solucionProfe": "<p>en un análisis antidopaje se mide el betabloqueante \"X\" en orina. <strong>Por encima de 4 µg/ml es dopaje</strong>. El técnico obtiene <strong>4,05 µg/ml</strong>, pero dice que es un error por <strong>falta de limpieza del material</strong> del compañero que lo usó antes. Resultado: <strong>el deportista no puede competir</strong> por un error de protocolo, y <strong>no hay solución</strong>: <strong>los análisis antidopaje solo se pueden hacer una vez</strong>.</p>",
+    "entiendeProfe": "0,05 µg/ml de restos (una cantidad diminuta) bastaron para cambiar el resultado. <strong>Moraleja:</strong> una mala limpieza tiene consecuencias reales e irreversibles.",
+    "claves": [
+      "0,05 µg/ml de restos bastaron",
+      "El antidopaje solo se analiza una vez",
+      "Limpiar es parte del protocolo"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c21",
+      "n": 21,
+      "titulo": "Los tres procesos",
+      "diapositivas": "32, 33 y 35",
+      "gancho": "Limpiar, desinfectar y esterilizar: ¿son lo mismo? Antes de mirar, ordénalos de menos a más.",
+      "profe": {
+        "glosario": "<p><b>Protocolo:</b> serie de pasos escritos que hay que seguir siempre igual.</p>",
+        "dice": "<p><strong>Limpieza → Desinfección → Esterilización</strong>.</p>\n<ul>\n<li>La limpieza es <strong>fundamental</strong> y forma parte de un <strong>protocolo adecuado de trabajo</strong>.</li>\n<li>Las contaminaciones por falta de limpieza <strong>interfieren en los resultados</strong> (recuerda la <strong>adsorción/desorción</strong>).</li>\n<li><strong>No es la limpieza de tu casa</strong>: es un procedimiento de trabajo <strong>por ti, por tus compañeros y por los resultados</strong>.</li>\n<li>En los laboratorios clínicos se usa mucho <strong>plástico desechable</strong> para evitar contaminaciones, pero hay material básico (<strong>pipetas, vasos de precipitados, buretas…</strong>) que <strong>hay que limpiar cada vez que se usa</strong>.</li>\n</ul>",
+        "truco": "<strong>\"Li-Des-Es\"</strong> en orden de <strong>menos a más</strong>: quitas la suciedad → matas la mayoría → matas <strong>todo</strong>."
+      },
+      "porque": {
+        "pregunta": "Si en los laboratorios clínicos se usa tanto plástico desechable, ¿por qué hay que seguir aprendiendo a limpiar?",
+        "respuesta": "Porque hay material básico que no se tira —pipetas, vasos de precipitados, buretas— y hay que limpiarlo cada vez que se usa. Y porque una contaminación por falta de limpieza interfiere en los resultados: el material sucio también «mide»."
+      },
+      "aplica": [
+        {
+          "caso": "Ordena los tres procesos.",
+          "opciones": [
+            "Limpieza → Desinfección → Esterilización",
+            "Desinfección → Limpieza → Esterilización",
+            "Esterilización → Desinfección → Limpieza"
+          ],
+          "buena": 0,
+          "porque": "De menos a más: quitas la suciedad, matas la mayoría y, si hace falta, matas todo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los tres procesos en orden y por qué la limpieza es tan importante.",
+        "puntos": [
+          "Limpieza → Desinfección → Esterilización",
+          "La limpieza forma parte de un protocolo de trabajo",
+          "La falta de limpieza contamina e interfiere en los resultados",
+          "El material básico (pipetas, vasos, buretas) se limpia cada vez que se usa"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c23",
+      "n": 23,
+      "titulo": "Limpieza a tres niveles",
+      "diapositivas": "36",
+      "gancho": "¿Dónde empieza la limpieza de un laboratorio? Piensa en tres sitios distintos antes de abrir.",
+      "profe": {
+        "glosario": "<p><b>Soluble en agua:</b> que se disuelve en agua. <b>Disolvente:</b> líquido capaz de disolver otras sustancias. <b>Orgánico:</b> compuesto basado en carbono.</p>",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Nivel</th>\n<th>Qué incluye</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Personal</strong></td>\n<td><strong>Bata o mono</strong> de seguridad. La ropa <strong>se lava en el propio centro</strong> (lavado agresivo, evita traer contaminantes de casa). <strong>Pelo largo recogido</strong>. <strong>Lavado de manos y guantes</strong></td>\n</tr>\n<tr>\n<td><strong>Laboratorio</strong></td>\n<td>Mesa, estanterías y zonas comunes <strong>ordenadas y limpias</strong> → <strong>menos interferencias</strong> en el análisis y <strong>más seguridad</strong></td>\n</tr>\n<tr>\n<td><strong>Material</strong></td>\n<td>Lo más común es <strong>a mano</strong>, aunque cada vez se usan más <strong>máquinas de lavado</strong> (conviene <strong>enjuagar antes</strong>). Los compuestos <strong>solubles en agua no requieren disolventes agresivos</strong>. <strong>Restos orgánicos: etanol o acetona</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "truco": "<strong>\"Yo, mi mesa y mis cosas\"</strong> (Personal, Laboratorio, Material). Y <strong>\"lo orgánico se va con E o A\"</strong> (Etanol o Acetona)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la bata se lava en el propio centro y no en casa?",
+        "respuesta": "Porque allí el lavado es agresivo y así no traes contaminantes de casa al laboratorio. La limpieza no empieza en la mesa: empieza por ti."
+      },
+      "aplica": [
+        {
+          "caso": "Un vaso tiene restos de algo que se disuelve en agua.",
+          "opciones": [
+            "Agua, sin disolventes agresivos",
+            "Acetona o etanol"
+          ],
+          "buena": 0,
+          "porque": "Los compuestos solubles en agua no requieren disolventes agresivos."
+        },
+        {
+          "caso": "Una pipeta tiene restos orgánicos.",
+          "opciones": [
+            "Solo agua",
+            "Etanol o acetona"
+          ],
+          "buena": 1,
+          "porque": "Los restos orgánicos se limpian con etanol o acetona."
+        },
+        {
+          "caso": "Vas a meter el material en la máquina de lavado.",
+          "opciones": [
+            "Lo meto tal cual",
+            "Lo enjuago antes"
+          ],
+          "buena": 1,
+          "porque": "Con las máquinas de lavado conviene enjuagar antes."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los tres niveles de limpieza y qué incluye cada uno.",
+        "puntos": [
+          "Personal: bata o mono, que se lava en el propio centro",
+          "Personal: pelo largo recogido, lavado de manos y guantes",
+          "Laboratorio: mesa, estanterías y zonas comunes ordenadas y limpias",
+          "Material: a mano o con máquinas de lavado (enjuagar antes)",
+          "Restos orgánicos: etanol o acetona"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c24",
+      "n": 24,
+      "titulo": "Desinfección",
+      "diapositivas": "38",
+      "gancho": "Si desinfectas algo, ¿queda sin ningún microorganismo? Apuesta antes de abrir.",
+      "profe": {
+        "glosario": "<p><b>Espora:</b> forma de resistencia de algunas bacterias y hongos, como una «semilla blindada» que aguanta casi todo. <b>Proliferación:</b> multiplicación rápida.</p>",
+        "dice": "<ul>\n<li>Elimina <strong>la mayoría</strong> de los microorganismos, <strong>excepto las esporas</strong>.</li>\n<li>Suele hacerse con <strong>agentes químicos</strong>.</li>\n<li>Aun así, <strong>la limpieza y el orden son la mayor garantía</strong> para evitar la proliferación de gérmenes y bacterias.</li>\n</ul>"
+      },
+      "porque": {
+        "pregunta": "Si la desinfección deja las esporas, ¿por qué no esterilizamos siempre?",
+        "respuesta": "Porque casi nunca hace falta eliminar todos los microorganismos: depende del ensayo. Y la mayor garantía contra los gérmenes no es un producto, sino la limpieza y el orden de cada día."
+      },
+      "aplica": [
+        {
+          "caso": "Acabas de desinfectar una superficie. ¿Qué puede quedar?",
+          "opciones": [
+            "Nada",
+            "Las esporas",
+            "Todas las bacterias"
+          ],
+          "buena": 1,
+          "porque": "La desinfección elimina la mayoría de los microorganismos, excepto las esporas."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué elimina la desinfección, qué no, y con qué se suele hacer?",
+        "puntos": [
+          "Elimina la mayoría de los microorganismos",
+          "No elimina las esporas",
+          "Suele hacerse con agentes químicos",
+          "La limpieza y el orden son la mayor garantía contra los gérmenes"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c25",
+      "n": 25,
+      "titulo": "Esterilización",
+      "diapositivas": "39 y 40",
+      "gancho": "¿Cómo eliminarías absolutamente toda la vida de un frasco, esporas incluidas? Piensa en una olla de tu cocina.",
+      "profe": {
+        "glosario": "<p><b>Autoclave:</b> aparato como una olla a presión gigante que esteriliza con vapor de agua caliente a presión. <b>Calor húmedo:</b> calor con vapor de agua.</p>",
+        "img": "../lab1/repaso/img/030.jpg",
+        "imgAlt": "Autoclave con frascos dentro",
+        "dice": "<ul>\n<li>Elimina <strong>todos</strong> los microorganismos (<strong>también las esporas</strong>).</li>\n<li>Con <strong>agentes químicos y/o físicos</strong>.</li>\n<li>Lo más habitual: <strong>calor húmedo</strong> con <strong>autoclave</strong>, que usa <strong>calor húmedo a alta presión</strong>.</li>\n<li>El autoclave no solo destruye microorganismos en material limpio: a veces interesa <strong>eliminar toda forma de vida de una disolución</strong>.</li>\n<li>Es <strong>el último proceso</strong> para una limpieza completa, pero <strong>no siempre hace falta llegar a esterilizar</strong>: casi nunca hay que eliminar contaminantes de microorganismos. <strong>Todo depende del ensayo</strong>.</li>\n</ul>",
+        "truco": "<strong>Desinfección = Deja las esporas</strong> · <strong>Esterilización = Elimina todo</strong>. <strong>Autoclave = olla exprés</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué esterilizar una disolución, si no es material sucio?",
+        "respuesta": "Porque el autoclave no solo sirve para el material limpio: a veces interesa eliminar toda forma de vida de una disolución. Lo que decide si hay que llegar a esterilizar no es la costumbre, sino el ensayo."
+      },
+      "aplica": [
+        {
+          "caso": "Necesitas eliminar también las esporas.",
+          "opciones": [
+            "Desinfectar",
+            "Esterilizar"
+          ],
+          "buena": 1,
+          "porque": "Solo la esterilización elimina todos los microorganismos, también las esporas."
+        },
+        {
+          "caso": "¿Hay que esterilizar siempre después de limpiar?",
+          "opciones": [
+            "Sí, siempre",
+            "No, depende del ensayo"
+          ],
+          "buena": 1,
+          "porque": "No siempre hace falta llegar a esterilizar: casi nunca hay que eliminar contaminantes de microorganismos. Todo depende del ensayo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la esterilización: qué elimina, cómo se hace lo más habitual y si hace falta siempre.",
+        "puntos": [
+          "Elimina todos los microorganismos, también las esporas",
+          "Con agentes químicos y/o físicos",
+          "Lo más habitual: calor húmedo a alta presión, con el autoclave",
+          "También sirve para eliminar la vida de una disolución",
+          "No siempre hace falta: depende del ensayo"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "El autoclave funciona con agua tipo IV, la menos pura (sesión «El agua del laboratorio»).",
+          "ruta": "#/sesion/lab1-agua"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 3"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

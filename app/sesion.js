@@ -34,6 +34,11 @@
       inicio: typeof e.inicio === "string" ? e.inicio : null, hecha: typeof e.hecha === "string" ? e.hecha : null
     };
   }
+  /* la siguiente sesión del recorrido: la que está a medias; si no, la primera sin hacer; si no, ninguna */
+  function siguienteSesion(lista, estados) {
+    var e = function (x) { return estado(estados && estados[x.id]); };
+    return lista.filter(function (x) { var s = e(x); return s.inicio && !s.hecha && s.paso > 0; })[0] || lista.filter(function (x) { return !e(x).hecha; })[0] || null;
+  }
   /* los conceptos que vuelven hoy: ya tocan y no se estudiaron hoy mismo (lo de hoy vuelve, como pronto, mañana) */
   function conceptosHoy(estados, hoy) {
     var out = [];
@@ -80,7 +85,7 @@
         CARGA[url] = "cargando";
         fetch(url, { credentials: "same-origin" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
           .then(function (j) { caja[clave] = j; CARGA[url] = "ok"; }).catch(function () { CARGA[url] = "error"; })
-          .then(function () { if (/^#\/(sesion|hoy)/.test(location.hash)) ctx.pintar(true); });
+          .then(function () { if (/^#\/(sesion|hoy|unidad)/.test(location.hash) || !location.hash) ctx.pintar(true); });
       }
       return null;
     }
@@ -166,7 +171,9 @@
       return '<section class="ss-caso recuadro" aria-labelledby="ssRes"><span class="washi" aria-hidden="true"></span>' + DE_CORTE + '<p class="ss-k mano">Vuelves al caso del principio</p><h2 id="ssRes">' + esc(m.titulo) + "</h2>" +
         '<p class="ss-preg"><b>' + esc(m.pregunta) + "</b></p>" +
         '<p class="ss-tuya"><span>Tu apuesta</span> ' + (e.apuesta ? esc(e.apuesta) : "<i>(no apostaste)</i>") + "</p>" +
-        '<details class="ss-sol"' + (ok ? " open" : "") + '><summary>Antes de abrir: con lo que acabas de aprender, ¿cómo lo resolverías ahora? <b>Ver la solución</b></summary><p>' + esc(m.solucion) + '</p><ul class="ss-claves">' + m.claves.map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("") + "</ul>" +
+        '<details class="ss-sol"' + (ok ? " open" : "") + '><summary>Antes de abrir: con lo que acabas de aprender, ¿cómo lo resolverías ahora? <b>Ver la solución</b></summary>' +
+        (m.solucionProfe ? '<div class="ss-profe">' + DE_PROFE + '<div class="ss-dice rico">' + rico(m.solucionProfe) + "</div>" + (m.entiendeProfe ? '<div class="ss-ent"><b>Entiéndelo:</b> ' + rico(m.entiendeProfe) + "</div>" : "") + "</div>" : "<p>" + esc(m.solucion) + "</p>") +
+        '<ul class="ss-claves">' + m.claves.map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("") + "</ul>" +
         '<div class="ss-ac" role="group" aria-label="¿Tu apuesta iba bien encaminada?"><span>¿Tu apuesta iba bien encaminada?</span>' + [["si", "Sí"], ["casi", "Más o menos"], ["no", "No"]].map(function (x) { return '<button type="button" class="boton secundario" data-ss-ac="' + x[0] + '" aria-pressed="' + (ok === x[0]) + '">' + x[1] + "</button>"; }).join("") + "</div></details>" +
         (ok ? '<p class="ss-fb bien" role="status">' + (ok === "no" ? "Perfecto que fallaras al principio: justo eso hace que ahora se te quede." : "Fíjate: antes no lo sabías y ahora sí.") + "</p>" : "") +
         (con.length ? '<section class="ss-conecta" aria-labelledby="ssCo"><h3 id="ssCo">Esto se conecta con…</h3><ul>' + con.map(function (x) { return '<li><a href="' + esc(x.ruta) + '">' + esc(x.texto) + "</a></li>"; }).join("") + "</ul></section>" : "") +
@@ -204,8 +211,12 @@
     /* ================= el repaso de los días siguientes: #/sesion/repaso =================
        Lo que vuelve hoy: los conceptos de tus sesiones que ya tocan (otra vez sin mirar) y tus tarjetas vencidas.
        Estado del día en personal.sesiones._repaso = {fecha, cola:[{t:"c",id}|{t:"t",u,id}], k, comparado, marcas, txt, vuelta}. */
-    var SESIONES = ["lab1-agua"];
-    function todas() { var l = SESIONES.map(sesionDe); return l.some(function (x) { return !x; }) ? null : l; }
+    /* para el repaso solo hacen falta las sesiones que ya se han empezado */
+    function todas() {
+      var lista = indice(); if (!lista) return null;
+      var est = estadosTodas(), l = lista.filter(function (x) { return est[x.id]; }).map(function (x) { return sesionDe(x.id); });
+      return l.some(function (x) { return !x; }) ? null : l;
+    }
     function indiceConceptos(ls) { var o = {}; ls.forEach(function (S) { S.conceptos.forEach(function (c) { o[c.id] = { c: c, S: S }; }); }); return o; }
     function leerR() {
       var r = ctx.leer(["personal", "sesiones", "_repaso"], null);
@@ -351,31 +362,51 @@
       }, 300);
     });
 
-    /* ---------- en Hoy: la sesión de hoy ---------- */
-    var HOY_ID = "lab1-agua";
+    /* ---------- el recorrido: app/sesiones/indice.json ---------- */
+    var INDICE = {};
+    function indice() { var j = cargar("sesiones/indice.json", INDICE, "i"); return j && Array.isArray(j.sesiones) ? j.sesiones : null; }
+    function estadosTodas() { var o = ctx.leer(["personal", "sesiones"], {}); return o && typeof o === "object" ? o : {}; }
+    function tarjetaHoy(href, peg, s, k, tit, txt, btn, extra) {
+      return '<a class="ss-hoy-tarjeta recuadro" data-subject="' + esc(s) + '" href="' + href + '"><span class="washi" aria-hidden="true"></span>' + ctx.pegatina(peg, s, "quieta") +
+        '<span class="ss-hoy-txt"><span class="ss-k mano">' + esc(k) + "</span><b>" + esc(tit) + "</b><span>" + esc(txt) + "</span>" + (extra || "") + "</span>" +
+        '<span class="boton">' + esc(btn) + ico("siguiente") + "</span></a>";
+    }
+    /* en Hoy: primero el repaso (lo estudiado vuelve sin mirar) y después la siguiente sesión del recorrido */
     function hoyBloque() {
-      var S = sesionDe(HOY_ID), e = leerS(HOY_ID), h = hoy();
-      /* después de una sesión, lo que manda es el repaso: lo estudiado vuelve sin mirar */
-      var rp = leerR(), nRep = rp ? rp.cola.length - rp.k : pendientesHoy();
-      if (e.hecha && e.hecha !== h && (nRep > 0 || (rp && rp.k >= rp.cola.length && rp.cola.length))) {
-        var hecho = rp && rp.k >= rp.cola.length;
-        return '<section class="ancho ss-hoy" aria-labelledby="hSs"><div class="sec-cab"><h2 id="hSs">Tu repaso de hoy</h2><span class="mano">' + (hecho ? "hecho" : "unos 5 min") + "</span></div>" +
-          '<a class="ss-hoy-tarjeta recuadro" data-subject="lab" href="#/sesion/repaso"><span class="washi" aria-hidden="true"></span>' + ctx.pegatina("gafas", "lab", "quieta") +
-          '<span class="ss-hoy-txt"><span class="ss-k mano">vuelve justo antes de olvidarse</span><b>' + (hecho ? "Repaso hecho" : rp ? nRep + (nRep === 1 ? " cosa vuelve hoy" : " cosas vuelven hoy") : nRep + (nRep === 1 ? " concepto vuelve hoy" : " conceptos vuelven hoy")) + "</b><span>" +
-          (hecho ? "Lo que te costó volverá antes. Mañana, más." : "Explícalo otra vez sin mirar. Si lo recuerdas, tardará más en volver.") + "</span></span>" +
-          '<span class="boton">' + (hecho ? "Verlo" : "Repasar") + ico("siguiente") + "</span></a></section>";
+      var h = hoy(), lista = indice(), est = estadosTodas(), html = "";
+      var rp = leerR(), nRep = rp ? rp.cola.length - rp.k : pendientesHoy(), repHecho = rp && rp.cola.length && rp.k >= rp.cola.length;
+      if (nRep > 0 || repHecho) {
+        html += '<div class="sec-cab"><h2 id="hRp">Tu repaso de hoy</h2><span class="mano">' + (repHecho ? "hecho" : "unos 5 min") + "</span></div>" +
+          tarjetaHoy("#/sesion/repaso", "gafas", "lab", "vuelve justo antes de olvidarse", repHecho ? "Repaso hecho" : rp ? nRep + (nRep === 1 ? " cosa vuelve hoy" : " cosas vuelven hoy") : nRep + (nRep === 1 ? " concepto vuelve hoy" : " conceptos vuelven hoy"),
+            repHecho ? "Lo que te costó volverá antes. Mañana, más." : "Explícalo otra vez sin mirar. Si lo recuerdas, tardará más en volver.", repHecho ? "Verlo" : "Repasar");
       }
-      var tit = S ? S.titulo : "El agua del laboratorio", min = S ? S.minutos : 20;
-      var hecha = !!e.hecha, empezada = e.inicio && !e.hecha && e.paso > 0;
-      return '<section class="ancho ss-hoy" aria-labelledby="hSs"><div class="sec-cab"><h2 id="hSs">Tu sesión de hoy</h2><span class="mano">' + (hecha ? "hecha" : "unos " + min + " min") + "</span></div>" +
-        '<a class="ss-hoy-tarjeta recuadro" data-subject="lab" href="#/sesion/' + HOY_ID + '"><span class="washi" aria-hidden="true"></span>' + ctx.pegatina("matraz", "lab", "quieta") +
-        '<span class="ss-hoy-txt"><span class="ss-k mano">Lab 1 · bloque 3 · empieza con un misterio</span><b>' + esc(tit) + "</b><span>" +
-        (hecha ? (e.hecha === h ? "Hecha hoy." : "Ya la hiciste.") + " Lo que estudiaste vuelve solo, en tu repaso, cuando toque." : empezada ? "La dejaste a medias: sigue donde ibas." : "Un caso real, tres conceptos y lo de otros días. Sin tener que organizarte.") + "</span></span>" +
-        '<span class="boton">' + (hecha ? "Verla" : empezada ? "Seguir" : "Empezar") + ico("siguiente") + "</span></a></section>";
+      if (!lista) return '<section class="ancho ss-hoy" aria-label="Estudio de hoy">' + html + "</section>";
+      var sig = siguienteSesion(lista, est), hechas = lista.filter(function (x) { return est[x.id] && est[x.id].hecha; }).length;
+      var hoyHecha = lista.filter(function (x) { return est[x.id] && est[x.id].hecha === h; })[0];
+      var prog = '<span class="ss-recorrido" aria-label="' + hechas + " de " + lista.length + ' sesiones hechas"><i style="width:' + Math.round(hechas / Math.max(1, lista.length) * 100) + '%"></i></span><span class="ss-mini">' + hechas + " de " + lista.length + " sesiones del recorrido</span>";
+      html += '<div class="sec-cab"><h2 id="hSs">Tu sesión de hoy</h2><span class="mano">' + (sig ? "unos " + sig.minutos + " min" : "recorrido completo") + "</span></div>";
+      if (!sig) html += tarjetaHoy("#/asignaturas", "gafas", "lab", "todas hechas", "Has terminado el recorrido", "Lo que estudiaste seguirá volviendo en tu repaso. Pronto llegarán más sesiones.", "Ver unidades", prog);
+      else {
+        var U = D.unidad(sig.unidad), e = estado(est[sig.id]), empezada = e.inicio && !e.hecha && e.paso > 0;
+        var k = (U ? U.codigo : "") + " · bloque " + sig.bloque + " · " + (sig.gancho || "empieza con un misterio");
+        var txt = hoyHecha && !empezada ? "Ya hiciste una hoy (" + hoyHecha.titulo + "). Si te apetece, sigue con la siguiente; si no, mañana." : empezada ? "La dejaste a medias: sigue donde ibas." : "Un caso real, unos pocos conceptos y lo de otros días. Sin tener que organizarte.";
+        html += tarjetaHoy("#/sesion/" + encodeURIComponent(sig.id), sig.pegatina || (U ? U.pegatina : "matraz"), U ? U.s : "lab", k, sig.titulo, txt, empezada ? "Seguir" : "Empezar", prog);
+      }
+      return '<section class="ancho ss-hoy" aria-labelledby="hSs">' + html + "</section>";
+    }
+    /* en la unidad: sus sesiones, en orden, con lo hecho marcado */
+    function unidadBloque(u) {
+      var lista = indice(); if (!lista) return "";
+      var mias = lista.filter(function (x) { return x.unidad === u; }); if (!mias.length) return "";
+      var est = estadosTodas();
+      return '<section class="ss-unidad" aria-labelledby="hSsU"><div class="sec-cab"><h2 id="hSsU">Sesiones de estudio</h2><span class="mano">la nueva forma de estudiar</span></div><ol class="ss-lista">' + mias.map(function (x) {
+        var e = estado(est[x.id]), st = e.hecha ? "hecha" : e.inicio && e.paso > 0 ? "a medias" : "";
+        return '<li class="' + (e.hecha ? "hecha" : "") + '"><a href="#/sesion/' + encodeURIComponent(x.id) + '"><span class="ss-b mano">B' + x.bloque + '</span><span class="ss-lt"><b>' + esc(x.titulo) + "</b><small>" + esc(x.gancho || "") + " · " + x.minutos + " min</small></span>" + (st ? '<span class="insignia' + (e.hecha ? " pasada" : "") + '">' + st + "</span>" : "") + ico("siguiente", "u-flecha") + "</a></li>";
+      }).join("") + "</ol></section>";
     }
 
-    return { sesion: pSesion, hoyBloque: hoyBloque };
+    return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque };
   }
 
-  return { crear: crear, L: { nota: nota, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, PASOS: PASOS } };
+  return { crear: crear, L: { nota: nota, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, siguienteSesion: siguienteSesion, PASOS: PASOS } };
 });

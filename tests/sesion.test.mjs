@@ -41,9 +41,33 @@ test("repaso: vuelve lo que ya toca, nunca lo estudiado hoy mismo", () => {
   assert.equal(L.vuelve({ due: "2026-11-15" }, "2026-11-12", S2), "en 3 días");
 });
 
-test("sesión lab1-agua: todo lo marcado como «profe» está tal cual en el repaso de Lab 1", () => {
-  const S = JSON.parse(readFileSync(new URL("app/sesiones/lab1-agua.json", ROOT), "utf8"));
-  const html = readFileSync(new URL("lab1/repaso/index.html", ROOT), "utf8");
+test("recorrido: Hoy propone la que está a medias; si no, la primera sin hacer", () => {
+  const l = [{ id: "a" }, { id: "b" }, { id: "c" }];
+  assert.equal(L.siguienteSesion(l, {}).id, "a");
+  assert.equal(L.siguienteSesion(l, { a: { hecha: "2026-11-10", paso: 4, inicio: "2026-11-10" } }).id, "b");
+  assert.equal(L.siguienteSesion(l, { a: { hecha: "2026-11-10", paso: 4, inicio: "x" }, c: { inicio: "2026-11-11", paso: 2 } }).id, "c", "la empezada manda");
+  assert.equal(L.siguienteSesion(l, { a: { hecha: "1" }, b: { hecha: "1" }, c: { hecha: "1" } }), null);
+});
+
+test("índice de sesiones: cada una existe, está en el modo sin conexión y apunta a una unidad real", () => {
+  const I = JSON.parse(readFileSync(new URL("app/sesiones/indice.json", ROOT), "utf8"));
+  const sw = readFileSync(new URL("sw.js", ROOT), "utf8");
+  const D = req("../app/datos.js");
+  const ids = new Set();
+  for (const s of I.sesiones) {
+    assert.ok(!ids.has(s.id), "repetida: " + s.id); ids.add(s.id);
+    assert.ok(existsSync(new URL("app/sesiones/" + s.id + ".json", ROOT)), "falta el archivo de " + s.id);
+    assert.ok(sw.includes('"app/sesiones/' + s.id + '.json"'), "no está en el SHELL del service worker: " + s.id);
+    assert.ok(D.UNIDADES.some((u) => u.id === s.unidad), "unidad desconocida: " + s.unidad);
+    const S = JSON.parse(readFileSync(new URL("app/sesiones/" + s.id + ".json", ROOT), "utf8"));
+    assert.equal(S.id, s.id); assert.equal(S.unidad, s.unidad);
+  }
+});
+
+const INDICE = JSON.parse(readFileSync(new URL("app/sesiones/indice.json", ROOT), "utf8")).sesiones;
+for (const entrada of INDICE) test("sesión " + entrada.id + ": todo lo marcado como «profe» está tal cual en el repaso de " + entrada.unidad, () => {
+  const S = JSON.parse(readFileSync(new URL("app/sesiones/" + entrada.id + ".json", ROOT), "utf8"));
+  const html = readFileSync(new URL(S.unidad + "/repaso/index.html", ROOT), "utf8");
   /* las etiquetas de formato (negrita, cursiva…) se quitan sin dejar hueco: «<strong>De</strong>stilación» = «Destilación» */
   const plano = (s) => s.replace(/<\/?(strong|b|em|i|u|span|mark|sub|sup|small)\b[^>]*>/g, "").replace(/<[^>]+>/g, " ").replace(/&gt;/g, ">").replace(/&lt;/g, "<").replace(/&amp;/g, "&").replace(/[«»"]/g, "").replace(/\s+/g, " ").replace(/\s+([.,;:)…])/g, "$1").replace(/\(\s+/g, "(").trim();
   const original = plano(html);
@@ -59,5 +83,11 @@ test("sesión lab1-agua: todo lo marcado como «profe» está tal cual en el rep
     for (const a of c.aplica) assert.ok(a.buena >= 0 && a.buena < a.opciones.length, c.id + ": respuesta buena fuera de rango");
     if (c.profe.img) assert.ok(existsSync(new URL(c.profe.img.replace(/^\.\.\//, ""), ROOT)), c.id + ": falta la imagen");
   }
-  assert.ok(S.misterio.caso && S.misterio.solucion && S.misterio.corte);
+  assert.ok(S.misterio.caso && (S.misterio.solucion || S.misterio.solucionProfe) && S.misterio.corte);
+  for (const k of ["solucionProfe", "entiendeProfe"]) {
+    if (!S.misterio[k]) continue;
+    const trozos = plano(S.misterio[k].replace(/<\/(li|td|th|p)>/g, "|")).split("|").map((x) => x.trim()).filter((x) => x.length > 3);
+    for (const t of trozos) assert.ok(original.toLowerCase().includes(t.toLowerCase()), "misterio · " + k + ": no está tal cual → «" + t + "»");
+  }
+  assert.ok(S.conceptos.every((c) => c.profe.dice), "algún concepto sin «Lo que dice la profe» (¿falta node scripts/copiar-profe.mjs?)");
 });
