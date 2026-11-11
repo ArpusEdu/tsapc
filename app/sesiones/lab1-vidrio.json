@@ -1,0 +1,293 @@
+{
+  "schema": 1,
+  "id": "lab1-vidrio",
+  "unidad": "lab1",
+  "bloque": 1,
+  "titulo": "Vidrio y plástico",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 1, conceptos 1 a 5, diapositivas 5 a 9). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El tubo que recordaba",
+    "caso": "Para no gastar, alguien lava y vuelve a usar un tubo de plástico desechable con el que acababa de medir una muestra muy concentrada. La muestra siguiente, que debía salir limpia, aparece con restos de la anterior. El tubo parecía limpio.",
+    "pregunta": "¿De dónde salen esos restos, si el tubo parecía limpio?",
+    "solucion": "El plástico tiene mucha adsorción/desorción. Las moléculas de la primera muestra se quedaron retenidas en la superficie del tubo (adsorción) y, al poner la segunda muestra, volvieron a pasar a la disolución (desorción): contaminación cruzada. Por eso el plástico se fabrica como desechable, para usarlo una vez y tirarlo. El vidrio, en cambio, tiene poca adsorción/desorción.",
+    "claves": [
+      "Plástico = mucha adsorción/desorción",
+      "Adsorción: se queda; desorción: se suelta",
+      "Desechable → menos contaminación cruzada"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c1",
+      "n": 1,
+      "titulo": "Los 4 materiales y su uso",
+      "diapositivas": "5",
+      "gancho": "Vidrio, plástico, porcelana y metal. Si tuvieras que calentar algo muchísimo, ¿en cuál lo pondrías? ¿Y cuál crees que solo sirve para sujetar?",
+      "profe": {
+        "glosario": "<p><b>Inerte:</b> que no reacciona con lo que contiene. <b>Desechable:</b> de un solo uso; se tira después. <b>Soporte:</b> pieza que sujeta o aguanta a otras.</p>",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Característica</th>\n<th>Uso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Vidrio</strong></td>\n<td><strong>Inerte</strong> y resistente a la temperatura</td>\n<td>De trabajo</td>\n</tr>\n<tr>\n<td><strong>Plástico</strong></td>\n<td><strong>Económico y desechable</strong></td>\n<td>De trabajo</td>\n</tr>\n<tr>\n<td><strong>Porcelana</strong></td>\n<td>Resiste <strong>temperaturas muy elevadas</strong> y ataques químicos</td>\n<td>Para calentar</td>\n</tr>\n<tr>\n<td><strong>Metal</strong></td>\n<td>—</td>\n<td><strong>Material de soporte</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "el vidrio es como un vaso de cristal de calidad (no se mancha, aguanta calor), el plástico es como un vaso de usar y tirar, la porcelana es como una cazuela de barro para el horno, y el metal es la \"estantería\" que lo sujeta todo.",
+        "truco": "<strong>\"Vi-Pla-Por-Me\" = Inerte, Barato, Caliente, Sujeta</strong>."
+      },
+      "porque": {
+        "pregunta": "Si el vidrio es tan bueno, ¿por qué existen los otros tres materiales?",
+        "respuesta": "Porque cada uno resuelve algo que el vidrio no: el plástico es económico y se tira (evita contaminaciones), la porcelana resiste temperaturas muy elevadas y ataques químicos (para calentar) y el metal sirve de soporte para sujetar lo demás."
+      },
+      "aplica": [
+        {
+          "caso": "Necesitas calentar a una temperatura muy elevada.",
+          "opciones": [
+            "Vidrio",
+            "Porcelana",
+            "Plástico"
+          ],
+          "buena": 1,
+          "porque": "La porcelana resiste temperaturas muy elevadas y ataques químicos: es la de calentar."
+        },
+        {
+          "caso": "Necesitas sujetar el material mientras trabajas.",
+          "opciones": [
+            "Metal",
+            "Plástico",
+            "Porcelana"
+          ],
+          "buena": 0,
+          "porque": "El metal es el material de soporte."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 materiales, su característica y para qué se usa cada uno.",
+        "puntos": [
+          "Vidrio: inerte y resistente a la temperatura; de trabajo",
+          "Plástico: económico y desechable; de trabajo",
+          "Porcelana: resiste temperaturas muy elevadas y ataques químicos; para calentar",
+          "Metal: material de soporte"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c2",
+      "n": 2,
+      "titulo": "Propiedades del vidrio",
+      "diapositivas": "6",
+      "gancho": "¿Por qué crees que casi todo lo que ves en un laboratorio es de vidrio?",
+      "profe": {
+        "dice": "<p>es <strong>el material más utilizado</strong> en el laboratorio porque es:</p>\n<ul>\n<li><strong>Inerte:</strong> no interfiere ni reacciona con la mayoría de compuestos químicos.</li>\n<li><strong>Transparente:</strong> podemos ver qué pasa dentro del recipiente.</li>\n<li><strong>Manejable.</strong></li>\n<li><strong>Moldeable:</strong> se pueden reparar o diseñar piezas nuevas con el material roto.</li>\n<li><strong>Resistente a los cambios bruscos de temperatura:</strong> no cambia significativamente su forma ni su volumen.</li>\n</ul>",
+        "truco": "<strong>\"I-T-M-M-R\"</strong> → \"<strong>I</strong>nés <strong>T</strong>iene <strong>M</strong>uchos <strong>M</strong>uñecos <strong>R</strong>otos\" (Inerte, Transparente, Manejable, Moldeable, Resistente)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué importa tanto que el vidrio sea inerte?",
+        "respuesta": "Porque si el recipiente reaccionara con lo que contiene, el resultado sería del recipiente y no de la muestra. Inerte significa que no interfiere: el vidrio «no se mete» en el análisis."
+      },
+      "aplica": [
+        {
+          "caso": "Puedes ver lo que pasa dentro del recipiente. ¿Qué propiedad es?",
+          "opciones": [
+            "Moldeable",
+            "Transparente",
+            "Inerte"
+          ],
+          "buena": 1,
+          "porque": "Transparente: podemos ver qué pasa dentro."
+        },
+        {
+          "caso": "Con el material roto se pueden reparar piezas o diseñar otras nuevas.",
+          "opciones": [
+            "Moldeable",
+            "Manejable",
+            "Resistente"
+          ],
+          "buena": 0,
+          "porque": "Eso es ser moldeable."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 5 propiedades del vidrio y qué significa cada una.",
+        "puntos": [
+          "Inerte: no interfiere ni reacciona con la mayoría de compuestos",
+          "Transparente: se ve qué pasa dentro",
+          "Manejable",
+          "Moldeable: se puede reparar o diseñar piezas nuevas",
+          "Resistente a los cambios bruscos de temperatura"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c3",
+      "n": 3,
+      "titulo": "Tipos de vidrio según su composición",
+      "diapositivas": "7",
+      "gancho": "Todo el vidrio parece igual. ¿Crees que hay un vidrio «mejor» que otro? ¿Qué lo haría mejor?",
+      "profe": {
+        "glosario": "<p><b>Óxido:</b> compuesto de un elemento con oxígeno. <b>Espectrofotométrico:</b> ensayo que mide cuánta luz absorbe una muestra. <b>Luz UV (ultravioleta):</b> luz invisible de más energía que la violeta.</p>",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Composición</th>\n<th>Dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Cuarzo</strong></td>\n<td><strong>Óxido de silicio</strong></td>\n<td>Lo ideal, pero <strong>muy caro</strong>: se reserva para ensayos específicos, como los <strong>espectrofotométricos</strong> (deja pasar la <strong>luz UV</strong>)</td>\n</tr>\n<tr>\n<td><strong>Borosilicatos</strong></td>\n<td><strong>Óxido de boro + óxido de silicio</strong></td>\n<td>La alternativa <strong>más frecuente y económica</strong></td>\n</tr>\n<tr>\n<td><strong>Aluminosilicatos</strong></td>\n<td><strong>Óxido de aluminio + óxido de silicio</strong></td>\n<td>También muy usados como alternativa al cuarzo</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "<strong>los tres llevan silicio</strong> (el vidrio es básicamente arena fundida). Lo que cambia es el \"acompañante\": nada (cuarzo, el puro), boro o aluminio.",
+        "truco": "<strong>\"Todos llevan Silicio; el apellido dice el otro\"</strong>: <strong>Boro</strong>-silicato = boro · <strong>Alumino</strong>-silicato = aluminio · <strong>Cuarzo</strong> = silicio solo, <strong>caro y para la luz UV</strong>."
+      },
+      "porque": {
+        "pregunta": "Si el cuarzo es lo ideal, ¿por qué no es todo de cuarzo?",
+        "respuesta": "Porque es muy caro. Se reserva para lo que de verdad lo necesita, como los ensayos espectrofotométricos, porque deja pasar la luz UV. Para lo demás bastan los borosilicatos (la alternativa más frecuente y económica) o los aluminosilicatos."
+      },
+      "aplica": [
+        {
+          "caso": "Un ensayo espectrofotométrico con luz UV.",
+          "opciones": [
+            "Cuarzo",
+            "Borosilicato",
+            "Aluminosilicato"
+          ],
+          "buena": 0,
+          "porque": "El cuarzo deja pasar la luz UV: se reserva para estos ensayos."
+        },
+        {
+          "caso": "Material de uso diario: lo más frecuente y económico.",
+          "opciones": [
+            "Cuarzo",
+            "Borosilicato"
+          ],
+          "buena": 1,
+          "porque": "Los borosilicatos son la alternativa más frecuente y económica."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 3 tipos de vidrio, de qué están hechos y cuándo se usa cada uno.",
+        "puntos": [
+          "Cuarzo: óxido de silicio; lo ideal, pero muy caro",
+          "Cuarzo: para ensayos espectrofotométricos (deja pasar la luz UV)",
+          "Borosilicatos: óxido de boro + óxido de silicio; lo más frecuente y económico",
+          "Aluminosilicatos: óxido de aluminio + óxido de silicio; también alternativa al cuarzo"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La espectrofotometría vuelve en el bloque 5, con los equipos de análisis.",
+          "ruta": "#/unidad/lab1"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c4",
+      "n": 4,
+      "titulo": "El plástico y sus tipos",
+      "diapositivas": "8",
+      "gancho": "El plástico pierde frente al vidrio en casi todo… y aun así se usa muchísimo. ¿Qué ventaja crees que tiene?",
+      "profe": {
+        "glosario": "<p><b>Polímero:</b> molécula muy larga formada por muchas piezas iguales repetidas. <b>Halógenos:</b> grupo de elementos de la tabla periódica (flúor, cloro, bromo, yodo). <b>Contaminante:</b> cualquier sustancia ajena que se cuela en la muestra.</p>",
+        "dice": "<p>es muy fácil introducir contaminantes en una muestra al manipularla. El plástico tiene una ventaja frente al vidrio: al ser <strong>más barato</strong>, se fabrica como <strong>material desechable</strong>, y así <strong>evita muchas contaminaciones</strong>. Tipos:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Composición</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>PE / PP</strong> (polietileno / polipropileno)</td>\n<td>Polímeros puros de <strong>hidrógeno y carbono</strong></td>\n</tr>\n<tr>\n<td><strong>Policarbonatos</strong></td>\n<td>Hidrógeno y carbono <strong>con oxígeno</strong> (p. ej. <strong>bisfenol</strong>)</td>\n</tr>\n<tr>\n<td><strong>PVC</strong></td>\n<td>Hidrógeno y carbono <strong>con halógenos</strong></td>\n</tr>\n<tr>\n<td><strong>PTFE (teflón)</strong></td>\n<td>Politetrafluoroetileno: hidrógeno, carbono y <strong>halógenos</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "todos los plásticos tienen la base de <strong>carbono + hidrógeno</strong>. Se diferencian en lo que se les añade: nada (PE/PP), oxígeno (policarbonatos) o halógenos (PVC y teflón). El <strong>teflón</strong> es el de las sartenes antiadherentes.",
+        "truco": "<strong>\"Puro, con O, con Halógeno, con Halógeno\"</strong> → PE/PP puro · P<strong>O</strong>licarbonato con <strong>O</strong>xígeno · PVC y PTFE con halógenos (el <strong>F</strong> de PT<strong>F</strong>E es de <strong>F</strong>lúor, un halógeno)."
+      },
+      "porque": {
+        "pregunta": "¿Cómo puede un material «peor» evitar contaminaciones?",
+        "respuesta": "Porque, al ser barato, se fabrica desechable: se usa una vez y se tira. Como es muy fácil introducir contaminantes al manipular una muestra, empezar siempre con material nuevo evita muchas."
+      },
+      "aplica": [
+        {
+          "caso": "Un plástico con halógenos.",
+          "opciones": [
+            "PE / PP",
+            "PVC",
+            "Policarbonato"
+          ],
+          "buena": 1,
+          "porque": "El PVC es hidrógeno y carbono con halógenos (el PTFE también)."
+        },
+        {
+          "caso": "El teflón (PTFE) lleva…",
+          "opciones": [
+            "Solo hidrógeno y carbono",
+            "Hidrógeno, carbono y halógenos",
+            "Hidrógeno, carbono y oxígeno"
+          ],
+          "buena": 1,
+          "porque": "PTFE: hidrógeno, carbono y halógenos (la F es de flúor)."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué ventaja tiene el plástico frente al vidrio y cuáles son sus 4 tipos?",
+        "puntos": [
+          "Más barato → desechable → evita muchas contaminaciones",
+          "PE / PP: polímeros puros de hidrógeno y carbono",
+          "Policarbonatos: hidrógeno y carbono con oxígeno",
+          "PVC: hidrógeno y carbono con halógenos",
+          "PTFE (teflón): hidrógeno, carbono y halógenos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c5",
+      "n": 5,
+      "titulo": "Vidrio frente a plástico",
+      "diapositivas": "9",
+      "gancho": "Si tuvieras que quedarte con uno para siempre, ¿vidrio o plástico? Apuesta, y luego mira qué perderías con cada uno.",
+      "profe": {
+        "glosario": "<p><b>HF:</b> ácido fluorhídrico, el único ácido común que disuelve el vidrio. <b>Contaminación cruzada:</b> restos de una muestra que pasan a la siguiente. <b>Ion:</b> átomo o molécula con carga eléctrica. <b>Fase:</b> cada parte de una mezcla con estado distinto (sólida, líquida…).</p>",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Vidrio</strong></th>\n<th><strong>Plástico</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Ventajas</strong></td>\n<td>Inerte a la mayoría de interacciones · soporta temperatura · transparente · <strong>poca adsorción/desorción</strong> · moldeable</td>\n<td><strong>Más económico</strong> · <strong>desechable</strong> (reduce contaminaciones cruzadas)</td>\n</tr>\n<tr>\n<td><strong>Desventajas</strong></td>\n<td>Más caro · no desechable (<strong>más contaminación cruzada</strong>) · <strong>puede atacarlo el HF</strong></td>\n<td>Más interacción con compuestos químicos · no soporta grandes cambios de temperatura sin deformarse · suele ser <strong>opaco</strong> · <strong>mucha adsorción/desorción</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Adsorción:</strong> las moléculas o iones <strong>quedan retenidos por el material</strong>, entre una fase sólida (el material) y una líquida (la muestra).</li>\n<li><strong>Desorción:</strong> el proceso inverso: la sustancia retenida <strong>vuelve a pasar a la disolución</strong>.</li>\n</ul>",
+        "entiende": "<strong>adsorción</strong> (con <strong>d</strong>) es que la sustancia se queda <strong>pegada a la superficie</strong> del recipiente, como la grasa que se queda en un táper de plástico. <strong>Desorción</strong> es cuando esa grasa <strong>se suelta</strong> en la comida siguiente y la contamina. Por eso el plástico (mucha adsorción) se tira tras usarlo.",
+        "truco": "<strong>a</strong>D<strong>sorción = se a</strong>D<strong>hiere a la superficie</strong> (no confundir con <strong>absorción</strong>, que es meterse dentro, como una esponja). <strong>Vidrio = caro pero limpio; plástico = barato pero \"pegajoso\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el vidrio puede dar más contaminación cruzada que el plástico, si es más «limpio»?",
+        "respuesta": "Porque el vidrio no es desechable: se lava y se vuelve a usar, y si no se limpia bien, los restos de una muestra pasan a la siguiente. El plástico se tira después de usarlo, así que cada muestra empieza con material nuevo."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué ácido común puede atacar el vidrio?",
+          "opciones": [
+            "HCl",
+            "HF",
+            "H₂SO₄"
+          ],
+          "buena": 1,
+          "porque": "El HF (ácido fluorhídrico) puede atacar el vidrio."
+        },
+        {
+          "caso": "La sustancia retenida en el recipiente vuelve a pasar a la disolución.",
+          "opciones": [
+            "Adsorción",
+            "Desorción"
+          ],
+          "buena": 1,
+          "porque": "Eso es la desorción, el proceso inverso de la adsorción."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara vidrio y plástico (ventajas y desventajas) y explica qué son la adsorción y la desorción.",
+        "puntos": [
+          "Vidrio: inerte, aguanta la temperatura, transparente, poca adsorción/desorción, moldeable",
+          "Vidrio: más caro, no desechable, puede atacarlo el HF",
+          "Plástico: más económico y desechable (menos contaminación cruzada)",
+          "Plástico: más interacción química, se deforma con el calor, opaco, mucha adsorción/desorción",
+          "Adsorción: queda retenido en el material; desorción: vuelve a la disolución"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La adsorción/desorción es una de las razones por las que la limpieza importa tanto (sesión «Limpieza, desinfección y esterilización»).",
+          "ruta": "#/sesion/lab1-limpieza"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 2",
+        "BLOQUE 3",
+        "BLOQUE 4"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

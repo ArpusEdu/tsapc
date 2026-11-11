@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "id": "lab1-volumenes",
+  "unidad": "lab1",
+  "bloque": 1,
+  "titulo": "Medir volúmenes",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 1, conceptos 6, 7, 8 y 11, diapositivas 10 a 18). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "«Los dos ponen 250»",
+    "caso": "Hay que preparar exactamente 250 ml de una disolución. En la estantería hay un Erlenmeyer con una marca de 250 ml y un matraz aforado de 250 ml. Alguien coge el Erlenmeyer: «Los dos ponen 250, y este es más cómodo de agitar». Los resultados del análisis que se hace después no salen bien.",
+    "pregunta": "¿Qué tiene de malo el Erlenmeyer, si también pone 250?",
+    "solucion": "Que el Erlenmeyer no es material volumétrico: no está preparado para medir volúmenes con exactitud (sirve para agitar con fuerza sin salpicar). Para preparar una disolución de volumen concreto se usa el matraz aforado, el único volumétrico de los cuatro matraces: su raya marca un volumen determinado y se llena enrasando, hasta que el menisco llega a la marca.",
+    "claves": [
+      "Solo el aforado es volumétrico",
+      "Erlenmeyer = agitar sin salpicar",
+      "Volumen exacto → aforado + enrase"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c6",
+      "n": 6,
+      "titulo": "Material volumétrico y no volumétrico",
+      "diapositivas": "10",
+      "gancho": "Una jarra de cocina tiene rayas… pero ¿mide igual de bien que el material de laboratorio? ¿Qué hace que un recipiente sirva para medir de verdad?",
+      "profe": {
+        "glosario": "<p><b>Volumen:</b> el espacio que ocupa un líquido (se mide en ml o l). <b>Transferir:</b> pasar de un recipiente a otro.</p>",
+        "dice": "<p>da igual que sea de vidrio o de plástico; se divide según si mide el volumen con precisión:</p>\n<ul>\n<li><strong>Volumétrico</strong> (plástico · vidrio): preparado para <strong>medir y transferir volúmenes</strong>: <strong>bureta, probeta, matraz y pipeta</strong>.</li>\n<li><strong>No volumétrico</strong> (plástico · vidrio · <strong>metal</strong> · <strong>porcelana</strong>): <strong>no es apto para medir volúmenes con exactitud</strong>, aunque puede tener otros usos.</li>\n</ul>",
+        "entiende": "fíjate en que <strong>solo el vidrio y el plástico pueden ser volumétricos</strong>. El metal y la porcelana nunca miden volúmenes.",
+        "truco": "<strong>\"Bu-Pro-Ma-Pi miden\"</strong> (Bureta, Probeta, Matraz aforado, Pipeta). Y <strong>porcelana y metal nunca miden</strong>."
+      },
+      "porque": {
+        "pregunta": "Si un recipiente tiene rayas, ¿por qué puede no ser material volumétrico?",
+        "respuesta": "Porque tener rayas no es lo mismo que medir con exactitud. El material volumétrico está preparado para medir y transferir volúmenes; el no volumétrico puede servir para otras cosas, pero no es apto para medir volúmenes con exactitud."
+      },
+      "aplica": [
+        {
+          "caso": "Una probeta.",
+          "opciones": [
+            "Volumétrico",
+            "No volumétrico"
+          ],
+          "buena": 0,
+          "porque": "Bureta, probeta, matraz aforado y pipeta son los volumétricos."
+        },
+        {
+          "caso": "Una cápsula de porcelana.",
+          "opciones": [
+            "Volumétrico",
+            "No volumétrico"
+          ],
+          "buena": 1,
+          "porque": "La porcelana y el metal nunca miden volúmenes."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué diferencia hay entre material volumétrico y no volumétrico? Di cuáles son los volumétricos y de qué materiales pueden ser.",
+        "puntos": [
+          "Volumétrico: preparado para medir y transferir volúmenes",
+          "Volumétricos: bureta, probeta, matraz (aforado) y pipeta",
+          "Solo pueden ser de vidrio o de plástico",
+          "No volumétrico: no mide con exactitud, aunque tenga otros usos (también metal y porcelana)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c7",
+      "n": 7,
+      "titulo": "Bureta, probeta y pipeta",
+      "diapositivas": "11 y 12",
+      "gancho": "Tienes que soltar un líquido gota a gota y decidir tú cuándo parar. ¿Cómo tendría que ser el instrumento?",
+      "profe": {
+        "glosario": "<p><b>Graduado:</b> con rayas que marcan distintos volúmenes. <b>Llave:</b> grifo pequeño que abre o cierra el paso del líquido. <b>Pico:</b> la boquilla por donde se vierte.</p>",
+        "img": "../lab1/repaso/img/002.jpg",
+        "imgAlt": "Bureta · Probeta · Matraz aforado",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Cómo es y para qué sirve</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Bureta</strong></td>\n<td><strong>Tubo alargado graduado con una llave al final</strong>, que permite abrir o cerrar el flujo del líquido según la necesidad</td>\n</tr>\n<tr>\n<td><strong>Probeta</strong></td>\n<td><strong>Tubo cilíndrico graduado con base</strong> para apoyarlo. Mide volúmenes y los <strong>vierte gracias a su pico</strong>. <strong>No se mezclan volúmenes dentro de ella</strong></td>\n</tr>\n<tr>\n<td><strong>Pipeta</strong></td>\n<td>Para <strong>transferir un volumen pequeño</strong> de líquido de forma <strong>precisa y exacta</strong>: desde la pipeta Pasteur hasta la electrónica</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "la <strong>bureta</strong> es un \"grifo con regla\" (sueltas gota a gota). La <strong>probeta</strong> es una \"jarra medidora\" alta y estrecha (mides y viertes, pero no mezclas dentro). La <strong>pipeta</strong> es una \"pajita de precisión\" para volúmenes pequeños.",
+        "truco": "<strong>Bureta = llave (grifo)</strong> · <strong>Probeta = pie y pico</strong> · <strong>Pipeta = poquito</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se mezclan volúmenes dentro de la probeta?",
+        "respuesta": "Porque la probeta está pensada para medir y verter: su forma y su pico sirven para eso. Para mezclar o agitar hay material hecho para ello, como el Erlenmeyer, que verás en el siguiente concepto."
+      },
+      "aplica": [
+        {
+          "caso": "Necesitas abrir y cerrar el paso del líquido cuando quieras.",
+          "opciones": [
+            "Bureta",
+            "Probeta",
+            "Pipeta"
+          ],
+          "buena": 0,
+          "porque": "La bureta tiene una llave al final para abrir o cerrar el flujo."
+        },
+        {
+          "caso": "Transferir un volumen pequeño con precisión.",
+          "opciones": [
+            "Probeta",
+            "Pipeta",
+            "Bureta"
+          ],
+          "buena": 1,
+          "porque": "La pipeta transfiere volúmenes pequeños de forma precisa y exacta."
+        },
+        {
+          "caso": "Medir un volumen y verterlo por el pico.",
+          "opciones": [
+            "Probeta",
+            "Bureta"
+          ],
+          "buena": 0,
+          "porque": "La probeta mide volúmenes y los vierte gracias a su pico."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe la bureta, la probeta y la pipeta y di para qué sirve cada una.",
+        "puntos": [
+          "Bureta: tubo alargado graduado con una llave para abrir o cerrar el flujo",
+          "Probeta: tubo cilíndrico graduado con base; mide y vierte por su pico",
+          "En la probeta no se mezclan volúmenes",
+          "Pipeta: transfiere un volumen pequeño con precisión (de la Pasteur a la electrónica)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c8",
+      "n": 8,
+      "titulo": "Los 4 matraces",
+      "diapositivas": "13 y 14",
+      "gancho": "Hay cuatro matraces distintos y solo uno sirve para medir. Antes de mirar: ¿qué crees que tiene ese que no tienen los demás?",
+      "profe": {
+        "glosario": "<p><b>Disolución:</b> mezcla de una sustancia (soluto) disuelta en un líquido (disolvente). <b>Esmerilada:</b> zona de vidrio rugosa, mate, donde se puede escribir o que encaja con un tapón. <b>Vacío:</b> espacio del que se ha sacado el aire, para «chupar» el líquido.</p>",
+        "img": "../lab1/repaso/img/003.jpg",
+        "imgAlt": "Base redonda · Erlenmeyer · Kitasato",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Matraz</th>\n<th>Cómo es / para qué</th>\n<th>¿Volumétrico?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Aforado</strong></td>\n<td><strong>Señal que marca un volumen determinado</strong>. Para preparar <strong>disoluciones de volumen concreto</strong></td>\n<td><strong>VOLUMÉTRICO</strong></td>\n</tr>\n<tr>\n<td><strong>Base redonda</strong></td>\n<td>Parecido al aforado, con <strong>base redonda</strong> y <strong>marca esmerilada</strong></td>\n<td>NO volumétrico</td>\n</tr>\n<tr>\n<td><strong>Erlenmeyer</strong></td>\n<td><strong>Mucha base, cuello largo</strong>. Para <strong>agitación fuerte sin salpicar</strong></td>\n<td>NO volumétrico</td>\n</tr>\n<tr>\n<td><strong>Kitasato</strong></td>\n<td><strong>Boca de vacío con saliente para goma</strong>. Útil para <strong>filtrar disoluciones</strong></td>\n<td>NO volumétrico</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "<strong>solo el aforado es volumétrico</strong>, porque solo él tiene una raya que marca un volumen exacto. El <strong>Erlenmeyer</strong> es triangular: por su base ancha y cuello estrecho puedes agitar sin que salte el líquido. El <strong>Kitasato</strong> se parece al Erlenmeyer pero tiene un <strong>tubito lateral</strong> para conectar una goma de vacío.",
+        "truco": "<strong>\"A-B-E-K\"</strong> y <strong>solo la A mide</strong> (Aforado). <strong>Erlenmeyer = Embudo al revés (triángulo)</strong> · <strong>Kitasato = el que tiene \"oreja\"</strong> (el tubito lateral)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el Erlenmeyer tiene la base tan ancha y el cuello tan estrecho?",
+        "respuesta": "Para poder agitar con fuerza sin que salpique: con la base ancha y el cuello estrecho, el líquido se mueve dentro sin saltar. Está hecho para agitar, no para medir."
+      },
+      "aplica": [
+        {
+          "caso": "Preparar una disolución de un volumen concreto.",
+          "opciones": [
+            "Aforado",
+            "Erlenmeyer",
+            "Kitasato"
+          ],
+          "buena": 0,
+          "porque": "El aforado tiene una señal que marca un volumen determinado."
+        },
+        {
+          "caso": "Filtrar una disolución con vacío.",
+          "opciones": [
+            "Base redonda",
+            "Kitasato",
+            "Aforado"
+          ],
+          "buena": 1,
+          "porque": "El Kitasato tiene una boca de vacío con saliente para la goma: es útil para filtrar."
+        },
+        {
+          "caso": "Agitar con fuerza sin salpicar.",
+          "opciones": [
+            "Erlenmeyer",
+            "Aforado"
+          ],
+          "buena": 0,
+          "porque": "El Erlenmeyer: mucha base y cuello largo, para agitar sin salpicar."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 matraces, para qué sirve cada uno y cuál es el único volumétrico.",
+        "puntos": [
+          "Aforado: marca un volumen determinado; para disoluciones de volumen concreto; el único volumétrico",
+          "Base redonda: parecido al aforado, con base redonda y marca esmerilada",
+          "Erlenmeyer: mucha base y cuello largo; para agitar sin salpicar",
+          "Kitasato: boca de vacío con saliente para goma; para filtrar"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c11",
+      "n": 11,
+      "titulo": "Aforado, graduado y enrase",
+      "diapositivas": "18",
+      "gancho": "Si llenas de agua un tubo estrecho y miras la superficie muy de cerca, no es plana. ¿Qué forma crees que tiene? ¿Dónde leerías el volumen?",
+      "profe": {
+        "glosario": "<p><b>Menisco:</b> la curva que forma la superficie del líquido dentro de un tubo estrecho. <b>Cóncavo:</b> curvado hacia dentro, como una cuchara (más bajo en el centro).</p>",
+        "img": "../lab1/repaso/img/009.jpg",
+        "imgAlt": "Enrase: se lee por la parte baja del menisco",
+        "dice": "<ul>\n<li>El material volumétrico puede ser <strong>aforado</strong> (marca <strong>un volumen concreto</strong>) o <strong>graduado</strong> (marca <strong>un rango graduado</strong> de volumen).</li>\n<li><strong>Enrase:</strong> <strong>llenar el recipiente hasta una marca</strong> que indica un volumen concreto. Es importante saber dónde está el límite: el volumen <strong>se mide por el menisco</strong>, la <strong>forma cóncava</strong> que forma la disolución.</li>\n</ul>",
+        "entiende": "el agua \"se sube\" un poco por las paredes del tubo y forma una sonrisa (U). ⚠️ (la profe no lo detalla) <strong>Se lee por la parte de abajo de esa curva</strong>, con los ojos a la altura de la marca.",
+        "truco": "<strong>Aforado = 1 raya (un volumen) · Graduado = muchas rayas (una regla)</strong>. <strong>Enrase = el fondo de la sonrisa toca la raya</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que enrasar y no basta con llenar «más o menos» hasta la raya?",
+        "respuesta": "Porque el material volumétrico existe para medir con exactitud, y un poco por encima o por debajo de la marca ya es otro volumen. Como la superficie del líquido forma una curva, el menisco, hay que saber dónde está el límite para que el volumen sea el que marca la raya."
+      },
+      "aplica": [
+        {
+          "caso": "Una sola raya que marca un volumen concreto.",
+          "opciones": [
+            "Aforado",
+            "Graduado"
+          ],
+          "buena": 0,
+          "porque": "Aforado: marca un volumen concreto."
+        },
+        {
+          "caso": "Muchas rayas, como una regla, para un rango de volúmenes.",
+          "opciones": [
+            "Aforado",
+            "Graduado"
+          ],
+          "buena": 1,
+          "porque": "Graduado: marca un rango graduado de volumen."
+        },
+        {
+          "caso": "La curva que forma el líquido dentro de un tubo estrecho se llama…",
+          "opciones": [
+            "Enrase",
+            "Menisco"
+          ],
+          "buena": 1,
+          "porque": "Es el menisco; enrasar es llenar hasta que el menisco llega a la marca."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la diferencia entre aforado y graduado y qué es enrasar.",
+        "puntos": [
+          "Aforado: marca un volumen concreto",
+          "Graduado: marca un rango graduado de volumen",
+          "Enrase: llenar hasta la marca de un volumen concreto",
+          "El volumen se mide por el menisco, la forma cóncava del líquido"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Aforado y graduado vuelven con las pipetas, en la siguiente sesión.",
+          "ruta": "#/unidad/lab1"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 1",
+        "BLOQUE 2",
+        "BLOQUE 3"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
