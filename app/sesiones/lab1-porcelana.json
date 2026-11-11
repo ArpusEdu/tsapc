@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "id": "lab1-porcelana",
+  "unidad": "lab1",
+  "bloque": 1,
+  "titulo": "Porcelana, metal y microbiología",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 1, conceptos 16 a 19, diapositivas 25 a 30). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La estantería que se vació",
+    "caso": "En un laboratorio antiguo había estanterías llenas de material de porcelana. En el laboratorio nuevo casi no queda: lo están sustituyendo poco a poco. Y, sin embargo, la porcelana aguanta temperaturas muy elevadas y ataques químicos mejor que el vidrio o el plástico.",
+    "pregunta": "Si es tan resistente, ¿por qué la están dejando de usar?",
+    "solucion": "Por lo mismo que la hace resistente: la porcelana es porosa. Esos poros son clave para soportar el calor, pero también retienen la sustancia (adsorción) y luego la sueltan en la siguiente muestra (desorción), y eso produce contaminaciones. Por esa gran desventaja, su uso es cada vez menos frecuente.",
+    "claves": [
+      "Porcelana = poros",
+      "Poros: aguantan el calor",
+      "Poros: retienen y contaminan"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c16",
+      "n": 16,
+      "titulo": "Cápsula, crisol y cuchara espátula",
+      "diapositivas": "25 y 26",
+      "gancho": "Tienes que calentar algo tanto que quede reducido a cenizas. ¿Qué recipiente crees que aguantaría?",
+      "profe": {
+        "glosario": "<p><b>Vitrificado:</b> con una capa brillante como de vidrio. <b>Fundir:</b> pasar de sólido a líquido con calor. <b>Calcinar:</b> calentar a muy alta temperatura hasta reducir a cenizas. <b>Grafito:</b> forma de carbono (la mina del lápiz).</p>",
+        "img": "../lab1/repaso/img/022.jpg",
+        "imgAlt": "Crisol",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Cómo es y para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Cápsula de porcelana</strong></td>\n<td><strong>Cerámica vitrificada</strong>, con o sin pico. Para <strong>calentar o fundir</strong> sustancias, o <strong>separar mezclas por evaporación</strong></td>\n</tr>\n<tr>\n<td><strong>Crisol</strong></td>\n<td>De <strong>porcelana, cuarzo y grafito</strong>, con o sin tapa. <strong>Soporta más de 500 ºC</strong>. Para <strong>calentar, fundir, quemar y calcinar</strong></td>\n</tr>\n<tr>\n<td><strong>Cuchara espátula</strong></td>\n<td><strong>Espátula por un lado y cuchara por el otro</strong>. Para <strong>trasvasar sólidos</strong> y <strong>pesar pequeñas cantidades</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "la <strong>cápsula</strong> es un \"cuenco bajito\" y el <strong>crisol</strong> un \"vasito alto con tapa\" para el fuego más fuerte.",
+        "truco": "<strong>Crisol = Calcinar</strong> (las dos con C) y <strong>\"+500 ºC\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la cuchara espátula tiene dos extremos distintos?",
+        "respuesta": "Porque hace dos trabajos con una sola herramienta: con un lado trasvasas sólidos y con el otro pesas pequeñas cantidades."
+      },
+      "aplica": [
+        {
+          "caso": "Calcinar una muestra, a más de 500 ºC.",
+          "opciones": [
+            "Crisol",
+            "Cápsula de porcelana",
+            "Cuchara espátula"
+          ],
+          "buena": 0,
+          "porque": "El crisol soporta más de 500 ºC: para calentar, fundir, quemar y calcinar."
+        },
+        {
+          "caso": "Separar una mezcla por evaporación.",
+          "opciones": [
+            "Cápsula de porcelana",
+            "Crisol"
+          ],
+          "buena": 0,
+          "porque": "La cápsula de porcelana sirve para calentar, fundir o separar mezclas por evaporación."
+        },
+        {
+          "caso": "Trasvasar un sólido y pesar una pequeña cantidad.",
+          "opciones": [
+            "Cuchara espátula",
+            "Crisol"
+          ],
+          "buena": 0,
+          "porque": "La cuchara espátula: para trasvasar sólidos y pesar pequeñas cantidades."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe la cápsula de porcelana, el crisol y la cuchara espátula.",
+        "puntos": [
+          "Cápsula: cerámica vitrificada, con o sin pico; calentar, fundir o separar por evaporación",
+          "Crisol: de porcelana, cuarzo y grafito, con o sin tapa",
+          "Crisol: soporta más de 500 ºC; calentar, fundir, quemar y calcinar",
+          "Cuchara espátula: espátula y cuchara; trasvasar sólidos y pesar pequeñas cantidades"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c17",
+      "n": 17,
+      "titulo": "Placa Petri, mechero, portaobjetos y asa",
+      "diapositivas": "26, 27 y 28",
+      "gancho": "Para estudiar bacterias hay que hacerlas crecer, calentarlas o esterilizar, ponerlas a la vista y manejarlas. ¿Qué cuatro herramientas crees que hacen falta?",
+      "profe": {
+        "glosario": "<p><b>Colonia:</b> grupo de microorganismos que crecen juntos a partir de uno. <b>Microorganismo:</b> ser vivo microscópico (bacteria, hongo…). <b>Sembrar:</b> poner la muestra en el medio de cultivo para que crezca.</p>",
+        "img": "../lab1/repaso/img/027.jpg",
+        "imgAlt": "Asa de siembra",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Cómo es y para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Placa Petri</strong></td>\n<td><strong>Redonda, de vidrio o plástico, con tapa</strong>. Para el <strong>cultivo de colonias de microorganismos</strong></td>\n</tr>\n<tr>\n<td><strong>Mechero Bunsen</strong></td>\n<td><strong>Fuente de calor</strong> para <strong>calentar o esterilizar</strong> muestras o reactivos químicos</td>\n</tr>\n<tr>\n<td><strong>Portaobjetos</strong></td>\n<td><strong>Hoja fina y rectangular</strong> de material transparente donde se coloca lo que se va a <strong>observar al microscopio</strong></td>\n</tr>\n<tr>\n<td><strong>Asa de siembra</strong> ⚠️</td>\n<td>Material con un <strong>filamento con un aro de 5 mm en la punta</strong>. Para <strong>sembrar muestras de microorganismos</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>⚠️ <strong>Ojo:</strong> en la diapositiva 28 la profe describe el material pero <strong>no escribe su nombre</strong>: es el <strong>asa de siembra</strong> (o asa de Kolle). Apréndete el nombre y el dato del <strong>aro de 5 mm</strong>.</p>",
+        "truco": "<strong>Petri = \"plato con tapa\"</strong> · <strong>Mechero = \"fuego que esteriliza\"</strong> · <strong>Asa = \"aro de 5 mm para sembrar\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el asa de siembra es tan fácil de fallar en el examen?",
+        "respuesta": "Porque en la diapositiva 28 la profe describe el material, pero no escribe su nombre. Hay que aprenderse las dos cosas: se llama asa de siembra (o asa de Kolle) y tiene un aro de 5 mm en la punta para sembrar microorganismos."
+      },
+      "aplica": [
+        {
+          "caso": "Cultivar colonias de microorganismos.",
+          "opciones": [
+            "Placa Petri",
+            "Portaobjetos",
+            "Mechero Bunsen"
+          ],
+          "buena": 0,
+          "porque": "La placa Petri, redonda y con tapa, es para cultivar colonias."
+        },
+        {
+          "caso": "Colocar lo que vas a mirar al microscopio.",
+          "opciones": [
+            "Portaobjetos",
+            "Placa Petri"
+          ],
+          "buena": 0,
+          "porque": "El portaobjetos: hoja fina y transparente para el microscopio."
+        },
+        {
+          "caso": "Un filamento con un aro de 5 mm en la punta.",
+          "opciones": [
+            "Asa de siembra",
+            "Cuchara espátula"
+          ],
+          "buena": 0,
+          "porque": "Es el asa de siembra, para sembrar muestras de microorganismos."
+        },
+        {
+          "caso": "Calentar o esterilizar muestras o reactivos.",
+          "opciones": [
+            "Mechero Bunsen",
+            "Crisol"
+          ],
+          "buena": 0,
+          "porque": "El mechero Bunsen es una fuente de calor para calentar o esterilizar."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di para qué sirven la placa Petri, el mechero Bunsen, el portaobjetos y el asa de siembra.",
+        "puntos": [
+          "Placa Petri: redonda, de vidrio o plástico, con tapa; para cultivar colonias",
+          "Mechero Bunsen: fuente de calor para calentar o esterilizar muestras o reactivos",
+          "Portaobjetos: hoja fina y transparente donde se pone lo que se mira al microscopio",
+          "Asa de siembra: filamento con un aro de 5 mm; para sembrar microorganismos"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Sembrar y cultivar es la base de Bio 1 (cultivos celulares).",
+          "ruta": "#/unidad/bio1"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c18",
+      "n": 18,
+      "titulo": "Material de porcelana",
+      "diapositivas": "29",
+      "gancho": "Mira muy de cerca un trozo de porcelana: tiene agujeritos diminutos. ¿Eso te parece bueno o malo para un material de laboratorio?",
+      "profe": {
+        "glosario": "<p><b>Poroso:</b> con muchos agujeritos diminutos en su superficie.</p>",
+        "dice": "<ul>\n<li>Preparado para <strong>calentar sustancias a temperaturas elevadas</strong>.</li>\n<li>Es <strong>poroso</strong>: eso es clave para soportar el calor, <strong>pero a la vez produce contaminaciones</strong> por retención de la sustancia (<strong>adsorción/desorción</strong>).</li>\n<li>Esta gran desventaja hace que <strong>su uso sea cada vez menos frecuente</strong>.</li>\n</ul>",
+        "entiende": "los poros son como los de una esponja: aguantan el calor, pero <strong>se quedan restos dentro</strong> que luego salen en la siguiente muestra.",
+        "truco": "<strong>Porcelana = Poros = Pros (calor) y contras (contamina)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué los poros de la porcelana son a la vez su ventaja y su problema?",
+        "respuesta": "Porque esos poros son clave para que soporte el calor, pero también retienen la sustancia (adsorción) y luego la sueltan en la siguiente muestra (desorción): contaminación. Por esa gran desventaja, se usa cada vez menos."
+      },
+      "aplica": [
+        {
+          "caso": "¿Por qué contamina la porcelana?",
+          "opciones": [
+            "Porque es porosa y retiene la sustancia (adsorción/desorción)",
+            "Porque reacciona con casi todo"
+          ],
+          "buena": 0,
+          "porque": "Es porosa: retiene la sustancia y produce contaminaciones."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la ventaja de la porcelana y su gran desventaja.",
+        "puntos": [
+          "Preparada para calentar a temperaturas elevadas",
+          "Es porosa: eso le permite soportar el calor",
+          "Los poros retienen la sustancia y contaminan (adsorción/desorción)",
+          "Por eso se usa cada vez menos"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Adsorción y desorción: lo mismo que le pasa al plástico (sesión «Vidrio y plástico»).",
+          "ruta": "#/sesion/lab1-vidrio"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c19",
+      "n": 19,
+      "titulo": "Material de metal: de soporte",
+      "diapositivas": "30",
+      "gancho": "El metal no sirve para medir ni para meter muestras dentro. Entonces, ¿para qué crees que hay tanto en un laboratorio?",
+      "profe": {
+        "glosario": "<p><b>Nuez:</b> pieza que une una pinza o un aro a la varilla del soporte. <b>Gradilla:</b> soporte con agujeros para colocar tubos de ensayo de pie. <b>Escobilla:</b> cepillo para limpiar el interior de tubos y frascos. <b>Trípode:</b> soporte de tres patas para calentar encima.</p>",
+        "img": "../lab1/repaso/img/029.jpg",
+        "imgAlt": "Gradilla",
+        "dice": "<p>el metal está enfocado a <strong>ayudar como soporte</strong>: <strong>aros, trípodes, nuez, pinzas, soportes de pie, espátulas, gradillas y escobillas</strong>.</p>",
+        "truco": "<strong>Truco (8 objetos):</strong> <strong>\"A-T-N-P-S-E-G-E\"</strong> → \"<strong>A</strong>na <strong>T</strong>iene <strong>N</strong>ueve <strong>P</strong>erros <strong>S</strong>in <strong>E</strong>scoba, <strong>G</strong>atos y <strong>E</strong>rizos\"."
+      },
+      "porque": {
+        "pregunta": "Si el metal no contiene muestras, ¿por qué es tan importante?",
+        "respuesta": "Porque sujeta todo lo demás: aros, trípodes, nueces, pinzas y soportes de pie mantienen el material firme mientras trabajas, y las gradillas mantienen los tubos de pie. El metal está enfocado a ayudar como soporte."
+      },
+      "aplica": [
+        {
+          "caso": "Mantener los tubos de ensayo de pie.",
+          "opciones": [
+            "Gradilla",
+            "Trípode",
+            "Nuez"
+          ],
+          "buena": 0,
+          "porque": "La gradilla es el soporte con agujeros para los tubos de ensayo."
+        },
+        {
+          "caso": "Unir una pinza o un aro a la varilla del soporte.",
+          "opciones": [
+            "Nuez",
+            "Escobilla"
+          ],
+          "buena": 0,
+          "porque": "Eso hace la nuez."
+        },
+        {
+          "caso": "Limpiar el interior de tubos y frascos.",
+          "opciones": [
+            "Escobilla",
+            "Espátula"
+          ],
+          "buena": 0,
+          "porque": "La escobilla es el cepillo para limpiar por dentro."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Para qué sirve el material de metal? Di los 8 objetos.",
+        "puntos": [
+          "El metal sirve de soporte",
+          "Aros, trípodes y nuez",
+          "Pinzas y soportes de pie",
+          "Espátulas, gradillas y escobillas"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 1",
+        "BLOQUE 2",
+        "BLOQUE 3",
+        "BLOQUE 4"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

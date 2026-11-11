@@ -6,6 +6,7 @@
     { "id": "lab1-volumenes", "unidad": "lab1", "bloque": 1, "titulo": "Medir volúmenes", "minutos": 25, "pegatina": "tubos", "gancho": "«los dos ponen 250»" },
     { "id": "lab1-pipetas", "unidad": "lab1", "bloque": 1, "titulo": "Las pipetas", "minutos": 20, "pegatina": "tubos", "gancho": "una punta para todos" },
     { "id": "lab1-cristaleria", "unidad": "lab1", "bloque": 1, "titulo": "La cristalería", "minutos": 20, "pegatina": "matraz", "gancho": "el vapor que se escapaba" },
+    { "id": "lab1-porcelana", "unidad": "lab1", "bloque": 1, "titulo": "Porcelana, metal y microbiología", "minutos": 25, "pegatina": "petri", "gancho": "la estantería que se vació" },
     { "id": "lab1-limpieza", "unidad": "lab1", "bloque": 2, "titulo": "Limpieza, desinfección y esterilización", "minutos": 25, "pegatina": "tubos", "gancho": "un caso de antidopaje" },
     { "id": "lab1-agua", "unidad": "lab1", "bloque": 3, "titulo": "El agua del laboratorio", "minutos": 20, "pegatina": "matraz", "gancho": "el calcio que no era de nadie" },
     { "id": "lab1-reactivos", "unidad": "lab1", "bloque": 4, "titulo": "Reactivos químicos", "minutos": 25, "pegatina": "tubos", "gancho": "la etiqueta que engañaba" },
