@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "lab2-residuos2",
+  "unidad": "lab2",
+  "bloque": 5,
+  "titulo": "¿Dónde va cada residuo? (II): biosanitarios",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.5, conceptos 39 y 40, diapositivas 52 y 53). La solución del misterio es la tabla del concepto 41 (diapositiva 54). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 41,
+    "titulo": "Recoger la sala de tallado",
+    "caso": "Termina tu jornada en la sala de tallado. Sobre la mesa quedan: un bisturí y unas agujas usados, gasas y guantes con sangre, unos restos humanos pequeños, los restos de un reactivo caducado y el papel del envoltorio de los guantes.",
+    "pregunta": "¿Dónde va cada cosa?",
+    "solucionProfe": "<div class=\"tw\"><table><thead><tr><th>Residuo</th><th>Dónde va</th></tr></thead><tbody><tr><td>Bisturí y agujas usados</td><td>Grupo V (material punzante): contenedor sólido especial.</td></tr><tr><td>Gasas y guantes con sangre</td><td>Clase II (RBAU).</td></tr><tr><td>Restos humanos pequeños</td><td>Grupo IX.</td></tr><tr><td>Cadáveres o restos humanos grandes</td><td>Servicio funerario o forense.</td></tr><tr><td>Restos de un reactivo caducado</td><td>Residuo químico (RQ): recipiente etiquetado, nunca al desagüe.</td></tr><tr><td>Papel del envoltorio de los guantes</td><td>Clase I (RSU).</td></tr></tbody></table></div>",
+    "claves": [
+      "Punzantes: grupo V, contenedor sólido",
+      "Gasas y guantes con sangre: clase II",
+      "Restos humanos pequeños: grupo IX",
+      "Reactivo caducado: RQ, nunca al desagüe"
+    ],
+    "entiendeProfe": ""
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c39",
+      "n": 39,
+      "titulo": "Biosanitarios: tres grupos y nueve grupos especiales",
+      "diapositivas": "52",
+      "gancho": "Una aguja, una placa Petri con un cultivo y una bolsa que contuvo más de 100 ml de sangre. ¿Crees que van al mismo sitio?",
+      "profe": {
+        "dice": "<p>Son propios de la actividad sanitaria y proceden de <strong>pacientes</strong> o de <strong>fluidos biológicos</strong>. Tres grupos según su peligrosidad:</p><ul><li><strong>Especiales:</strong> nueve grupos, según el <strong>R.D. 83/99</strong>.</li><li><strong>Urbanos:</strong> se gestionan como los residuos urbanos.</li><li><strong>Cadáveres</strong> o restos humanos grandes.</li></ul><div class=\"tw\"><table><thead><tr><th>Grupo</th><th>Residuos que genera</th></tr></thead><tbody><tr><td><strong>I</strong></td><td>Enfermedades infecciosas erradicadas.</td></tr><tr><td><strong>II</strong></td><td>Heces de personas con cólera o disentería.</td></tr><tr><td><strong>III</strong></td><td>Esputos de tuberculosis y fiebre Q.</td></tr><tr><td><strong>IV</strong></td><td>Filtros de diálisis de personas con VIH, hepatitis (A, B o C), etc.</td></tr><tr><td><strong>V</strong></td><td>Material punzante: agujas, bisturíes…</td></tr><tr><td><strong>VI</strong></td><td>Material de cultivos biológicos: cápsula de Petri, tubo…</td></tr><tr><td><strong>VII</strong></td><td>Restos de animales de ensayos de enfermedades infecciosas.</td></tr><tr><td><strong>VIII</strong></td><td>Material usado para contener más de 100 ml de sangre.</td></tr><tr><td><strong>IX</strong></td><td>Restos humanos pequeños.</td></tr></tbody></table></div>",
+        "entiende": "Para ubicarte: <strong>V</strong> = punzantes, <strong>VI</strong> = cultivos, <strong>VIII</strong> = más de 100 ml de sangre, <strong>IX</strong> = restos humanos pequeños."
+      },
+      "porque": {
+        "pregunta": "¿Qué tienen en común todos los residuos biosanitarios?",
+        "respuesta": "Que son propios de la actividad sanitaria y proceden de pacientes o de fluidos biológicos. Según su peligrosidad, se dividen en tres grupos: especiales (nueve grupos), urbanos y cadáveres o restos humanos grandes."
+      },
+      "aplica": [
+        {
+          "caso": "Agujas y bisturíes.",
+          "opciones": [
+            "Grupo V",
+            "Grupo VI",
+            "Grupo IX"
+          ],
+          "buena": 0,
+          "porque": "V = material punzante."
+        },
+        {
+          "caso": "Una placa Petri de un cultivo.",
+          "opciones": [
+            "Grupo VI",
+            "Grupo V"
+          ],
+          "buena": 0,
+          "porque": "VI = material de cultivos biológicos."
+        },
+        {
+          "caso": "Material que contuvo más de 100 ml de sangre.",
+          "opciones": [
+            "Grupo VIII",
+            "Grupo IV"
+          ],
+          "buena": 0,
+          "porque": "VIII = más de 100 ml de sangre."
+        },
+        {
+          "caso": "Restos humanos pequeños.",
+          "opciones": [
+            "Grupo IX",
+            "Grupo VII"
+          ],
+          "buena": 0,
+          "porque": "IX = restos humanos pequeños."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son los residuos biosanitarios, cómo se agrupan y cuáles son los grupos clave de los especiales?",
+        "puntos": [
+          "Proceden de pacientes o de fluidos biológicos",
+          "Tres grupos: especiales (9 grupos, R.D. 83/99), urbanos y cadáveres o restos grandes",
+          "V: punzantes · VI: cultivos",
+          "VIII: más de 100 ml de sangre · IX: restos humanos pequeños",
+          "I a IV: infecciosos (enfermedades erradicadas, cólera, tuberculosis, VIH o hepatitis)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c40",
+      "n": 40,
+      "titulo": "Cómo actuar con los biosanitarios",
+      "diapositivas": "53",
+      "gancho": "Restos infecciosos: ¿en qué tipo de recipiente los meterías para que nadie corra peligro al recogerlos?",
+      "profe": {
+        "dice": "<ul><li>Aplica las <strong>mismas normas</strong> que con los residuos químicos.</li><li>Los restos infecciosos de los <strong>grupos I a IV</strong> van en recipientes <strong>opacos, impermeables y sin fisuras</strong>, de no más de <strong>60-70 litros</strong>, etiquetados como <strong>«Material infeccioso»</strong>. Cada comunidad autónoma tiene su normativa.</li><li>Restos de <strong>cadáveres</strong>: al servicio funerario o forense.</li><li>Restos <strong>animales</strong>: al servicio veterinario.</li><li><strong>Urbanos:</strong> como los de casa (papel, envases, tóner de impresora…).</li><li><strong>Material fungible:</strong> vidrio o plástico desechable usado en el laboratorio.</li><li><strong>Residuos siempre mínimos.</strong></li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué los recipientes de restos infecciosos son opacos, impermeables y sin fisuras?",
+        "respuesta": "Para que nada se salga y nadie se exponga al manipularlos. Además van etiquetados como «Material infeccioso» y no pasan de 60-70 litros."
+      },
+      "aplica": [
+        {
+          "caso": "Restos de cadáveres.",
+          "opciones": [
+            "Servicio funerario o forense",
+            "Servicio veterinario"
+          ],
+          "buena": 0,
+          "porque": "Al servicio funerario o forense."
+        },
+        {
+          "caso": "Restos animales.",
+          "opciones": [
+            "Servicio veterinario",
+            "Basura urbana"
+          ],
+          "buena": 0,
+          "porque": "Al servicio veterinario."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se actúa con los residuos biosanitarios?",
+        "puntos": [
+          "Mismas normas que con los químicos",
+          "Grupos I a IV: recipientes opacos, impermeables y sin fisuras, de no más de 60-70 l",
+          "Etiquetados «Material infeccioso»; cada comunidad tiene su normativa",
+          "Cadáveres: servicio funerario o forense; animales: servicio veterinario",
+          "Urbanos como en casa; residuos siempre mínimos"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Las cinco clases de residuos (clase I, II, especiales, citotóxicos y químicos), en la sesión anterior.",
+          "ruta": "#/sesion/lab2-residuos1"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

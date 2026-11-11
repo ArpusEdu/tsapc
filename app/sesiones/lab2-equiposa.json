@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "id": "lab2-equiposa",
+  "unidad": "lab2",
+  "bloque": 4,
+  "titulo": "Equipos sin sustos (I): normas y electricidad",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.4, conceptos 26 a 28, diapositivas 38 a 40). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El enchufe de todos",
+    "caso": "En una esquina del laboratorio, una regleta con varios ladrones alimenta cinco equipos. Un cable va tirante por detrás de la mesa, cerca del fregadero, y uno de los equipos lleva días haciendo un ruido raro. «Ya lo arreglo yo», dice alguien, con un destornillador en la mano.",
+    "pregunta": "¿Cuántos problemas ves? ¿Qué harías con cada uno?",
+    "solucion": "Al menos cuatro. Mejor sin regletas ni ladrones: cada equipo, directo al enchufe (y si hay regleta, pocos cables). Los cables, sin tiranteces ni daños, y la zona sin humedad: el fregadero cerca es un riesgo. Un aparato eléctrico no lo repara cualquiera, sino personal con conocimientos de electricidad. Y todo esto importa porque la mayoría de los equipos son eléctricos y un cortocircuito puede causar un incendio.",
+    "claves": [
+      "Directo al enchufe, sin ladrones",
+      "Cables sin tiranteces, zona sin humedad",
+      "No repares tú un aparato eléctrico"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c26",
+      "n": 26,
+      "titulo": "Nunca sin supervisión",
+      "diapositivas": "38",
+      "gancho": "Un análisis tarda toda la noche. ¿Dejarías el equipo funcionando solo y te irías a casa?",
+      "profe": {
+        "dice": "<ul><li><strong>No dejes los equipos trabajando solos, sin supervisión.</strong></li><li>Algunos equipos sí pueden trabajar solos, y a veces se dejan análisis toda la noche. Están preparados: si detectan una anomalía, un <strong>sistema de seguridad los apaga</strong>.</li><li>Aun así, no es lo más aconsejable: siempre que se pueda evitar, <strong>no se dejan de noche sin supervisión</strong>.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "Si algunos equipos se apagan solos ante una anomalía, ¿por qué no es aconsejable dejarlos de noche?",
+        "respuesta": "Porque la regla general es no dejar los equipos sin supervisión. Que un sistema de seguridad los apague ante una anomalía no significa que sea lo aconsejable: siempre que se pueda evitar, no se dejan de noche solos."
+      },
+      "aplica": [
+        {
+          "caso": "¿Es lo más aconsejable dejar un análisis toda la noche sin supervisión?",
+          "opciones": [
+            "Sí, si el equipo tiene sistema de seguridad",
+            "No: siempre que se pueda, se evita"
+          ],
+          "buena": 1,
+          "porque": "No es lo más aconsejable: siempre que se pueda evitar, no se dejan de noche."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cuál es la regla general de los equipos y qué excepción hay?",
+        "puntos": [
+          "No dejar los equipos trabajando sin supervisión",
+          "Algunos pueden trabajar solos: un sistema de seguridad los apaga ante una anomalía",
+          "Aun así, siempre que se pueda, no se dejan de noche sin supervisión"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c27",
+      "n": 27,
+      "titulo": "Normas generales de los equipos",
+      "diapositivas": "39",
+      "gancho": "Pones un equipo pegado a la pared, en una mesa que cojea. ¿Qué dos problemas acabas de crear?",
+      "profe": {
+        "glosario": "<p><b>Reacción exotérmica:</b> la que desprende calor. <b>Ignición:</b> temperatura a la que algo arde.</p>",
+        "dice": "<ul><li><strong>Sin defectos:</strong> los equipos no pueden tener defectos que causen un accidente o incidente.</li><li><strong>Temperatura:</strong> controla la del equipo y la del laboratorio, sin sobrecalentamientos.</li><li><strong>Ventilación:</strong> coloca los equipos de modo que sus ventiladores internos puedan «respirar» y extraer el calor.</li><li><strong>Mesa firme:</strong> que soporte su peso y su agitación (por ejemplo, una centrífuga).</li><li><strong>Superficie equilibrada:</strong> por ejemplo, para una balanza.</li><li><strong>Vapores y reacciones:</strong> cuidado con el cúmulo de vapores y con las <strong>reacciones exotérmicas</strong>, por el peligro de explosión.</li><li><strong>Calentar:</strong> conoce la <strong>temperatura de ebullición</strong> y la de <strong>ignición</strong> y no la superes, para evitar salpicaduras, quemaduras o una explosión.</li><li><strong>Aire comprimido:</strong> nunca hacia una persona, porque causa heridas graves.</li><li><strong>Lámparas UV:</strong> en cajas cerradas. Al cambiarlas, no las toques con las manos y ve protegido.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que dejar espacio alrededor de un equipo?",
+        "respuesta": "Para que sus ventiladores internos puedan «respirar» y extraer el calor. Si no, el equipo se sobrecalienta."
+      },
+      "aplica": [
+        {
+          "caso": "Vas a calentar una sustancia.",
+          "opciones": [
+            "Sin superar su temperatura de ebullición ni de ignición",
+            "Lo más rápido posible"
+          ],
+          "buena": 0,
+          "porque": "Conócelas y no las superes: salpicaduras, quemaduras o explosión."
+        },
+        {
+          "caso": "Limpias algo con aire comprimido.",
+          "opciones": [
+            "Nunca apuntando a una persona",
+            "Hacia un compañero, para quitarle el polvo"
+          ],
+          "buena": 0,
+          "porque": "El aire comprimido hacia una persona causa heridas graves."
+        },
+        {
+          "caso": "Cambias una lámpara UV.",
+          "opciones": [
+            "Sin tocarla con las manos y protegido",
+            "Con las manos, con cuidado"
+          ],
+          "buena": 0,
+          "porque": "No la toques con las manos y ve protegido."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las normas generales de los equipos.",
+        "puntos": [
+          "Sin defectos; temperatura controlada, sin sobrecalentamientos",
+          "Ventilación: que los ventiladores puedan «respirar»",
+          "Mesa firme y superficie equilibrada",
+          "Cuidado con vapores y reacciones exotérmicas; no superar ebullición ni ignición",
+          "Aire comprimido nunca a una persona; lámparas UV en cajas cerradas, sin tocarlas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c28",
+      "n": 28,
+      "titulo": "Electricidad y cortocircuito",
+      "diapositivas": "40",
+      "gancho": "¿Qué tiene de peligroso enchufar cinco equipos a la misma regleta?",
+      "profe": {
+        "dice": "<p>La mayoría de los equipos son eléctricos, y un <strong>cortocircuito</strong> puede causar un incendio.</p><ul><li>Cables al aire, <strong>sin tiranteces</strong>, sin fisuras en el plástico, sin roturas ni daños.</li><li>Mejor sin alargadores, regletas ni ladrones: conecta <strong>directamente al enchufe</strong>. Si usas regleta, pocos cables.</li><li>Comprueba que hay <strong>toma de tierra</strong> y que la zona <strong>no está húmeda</strong>.</li><li>Cuidado con los vapores inflamables y las <strong>chispas</strong>.</li><li><strong>No repares un aparato eléctrico</strong>: eso lo hace personal con conocimientos de electricidad.</li><li>Los equipos de <strong>alto voltaje</strong> van en enchufes especiales, con circuito propio: soportan más voltaje y no les afecta un apagón por sobrevoltaje.</li><li>Conoce el <strong>cuadro con diferenciales y automáticos</strong>, que debe estar señalado.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué no debes reparar tú un aparato eléctrico?",
+        "respuesta": "Porque eso lo hace personal con conocimientos de electricidad. La mayoría de los equipos son eléctricos, y un cortocircuito puede causar un incendio."
+      },
+      "aplica": [
+        {
+          "caso": "Tienes que conectar un equipo.",
+          "opciones": [
+            "Directo al enchufe",
+            "A una regleta con varios ladrones"
+          ],
+          "buena": 0,
+          "porque": "Mejor sin alargadores, regletas ni ladrones."
+        },
+        {
+          "caso": "Un equipo de alto voltaje se conecta…",
+          "opciones": [
+            "En un enchufe especial, con circuito propio",
+            "En cualquier enchufe libre"
+          ],
+          "buena": 0,
+          "porque": "Enchufes especiales, con circuito propio."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las normas de electricidad para los equipos del laboratorio.",
+        "puntos": [
+          "Un cortocircuito puede causar un incendio",
+          "Cables al aire, sin tiranteces, fisuras ni daños",
+          "Mejor sin alargadores, regletas ni ladrones",
+          "Toma de tierra y zona sin humedad; cuidado con vapores inflamables y chispas",
+          "No reparar; alto voltaje en enchufes especiales; conocer el cuadro"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

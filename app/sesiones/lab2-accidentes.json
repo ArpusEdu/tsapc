@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "id": "lab2-accidentes",
+  "unidad": "lab2",
+  "bloque": 6,
+  "titulo": "Accidentes: actuar en segundos",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.6, conceptos 46 a 49, diapositivas 60 a 63). La solución del misterio son los pasos del concepto 50 (diapositiva 64). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 50,
+    "titulo": "El pinchazo",
+    "caso": "Estás ayudando en una punción para citología. Al recoger, te pinchas en el dedo con la aguja usada. Te asustas, y lo primero que se te ocurre es frotarte fuerte y buscar la lejía.",
+    "pregunta": "¿Qué haces, en orden?",
+    "solucionProfe": "<p>Ayudas en una punción para citología y te pinchas con la aguja usada. Qué haces, en orden:</p><ol><li>Deja la aguja en el <strong>contenedor de punzantes</strong> (grupo V).</li><li>Lava bajo el grifo 2-3 minutos, dejando sangrar, <strong>sin frotar ni lejía</strong>.</li><li>Desinfecta con <strong>povidona yodada o clorhexidina</strong>, aclara y cubre con un <strong>apósito impermeable</strong>.</li><li>Comunícalo al <strong>servicio de salud laboral</strong>.</li></ol>",
+    "claves": [
+      "Aguja al contenedor de punzantes",
+      "Agua 2-3 min, dejando sangrar",
+      "Sin frotar y sin lejía",
+      "Comunicarlo a salud laboral"
+    ],
+    "entiendeProfe": ""
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c46",
+      "n": 46,
+      "titulo": "Derrames y salpicaduras: limpiar un vertido",
+      "diapositivas": "60",
+      "gancho": "Se te vuelca un tubo de sangre sobre la mesa. ¿Qué cuatro pasos darías para limpiarlo?",
+      "profe": {
+        "dice": "<p>Para salpicaduras de productos químicos o vertidos de sangre o fluidos sobre superficies u objetos:</p><ol><li>Ponte <strong>guantes resistentes e impermeables</strong>.</li><li>Vierte <strong>lejía diluida al 10 %</strong> sobre la superficie contaminada.</li><li>Limpia la superficie con <strong>toallas desechables</strong>.</li><li>Quítate los guantes y <strong>lávate las manos</strong>.</li></ol>",
+        "entiende": "La lejía diluida al 10 % es para <strong>superficies</strong> (derrames). Para cortes y pinchazos en la piel <strong>no se usa lejía</strong>."
+      },
+      "porque": {
+        "pregunta": "¿La lejía diluida al 10 % sirve para todo?",
+        "respuesta": "No: es para superficies y objetos. Para un corte o un pinchazo en la piel no se usa lejía."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué guantes te pones?",
+          "opciones": [
+            "Resistentes e impermeables",
+            "Los primeros que encuentre"
+          ],
+          "buena": 0,
+          "porque": "Guantes resistentes e impermeables."
+        },
+        {
+          "caso": "¿Qué viertes sobre la superficie?",
+          "opciones": [
+            "Lejía diluida al 10 %",
+            "Agua del grifo"
+          ],
+          "buena": 0,
+          "porque": "Lejía diluida al 10 % sobre la superficie contaminada."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los cuatro pasos para limpiar un vertido.",
+        "puntos": [
+          "Guantes resistentes e impermeables",
+          "Lejía diluida al 10 % sobre la superficie",
+          "Limpiar con toallas desechables",
+          "Quitarse los guantes y lavarse las manos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c47",
+      "n": 47,
+      "titulo": "Ducha, extintor, manta y lavaojos",
+      "diapositivas": "61",
+      "gancho": "Te salpica algo en un ojo. ¿Cuánto tiempo crees que hay que lavarlo?",
+      "profe": {
+        "glosario": "<p><b>Poyatas:</b> las mesas de trabajo.</p>",
+        "dice": "<p>Para salpicaduras, heridas leves o que te caiga algo encima.</p><ul><li><strong>Ducha de seguridad:</strong> suele ser <strong>amarilla</strong>, cuelga del techo y tiene desagüe. Sale agua a mucha presión. Si te cae un producto químico encima, <strong>ve de inmediato</strong>.</li><li><strong>Extintores:</strong> contienen distintos gases (como el <strong>CO₂</strong>) según el material de la zona.</li><li><strong>Mantas ignífugas:</strong> para cubrir a una persona que está ardiendo y <strong>apagar la llama</strong>.</li><li><strong>Lavaojos:</strong> está en las <strong>poyatas</strong>. Mantén el ojo abierto bajo el chorro <strong>al menos 5 minutos</strong>. Si sigue rojo o molesta mucho, ve al médico. Los dos grifos laterales aclaran directamente el ojo. En el botiquín hay soluciones para lavar los ojos.</li></ul>",
+        "truco": "Lavaojos = <strong>5 minutos</strong> como mínimo, con el ojo abierto."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve una manta ignífuga?",
+        "respuesta": "Para cubrir a una persona que está ardiendo y apagar la llama."
+      },
+      "aplica": [
+        {
+          "caso": "Lavaojos: ¿cuánto tiempo?",
+          "opciones": [
+            "Al menos 5 minutos, con el ojo abierto",
+            "Unos segundos"
+          ],
+          "buena": 0,
+          "porque": "El ojo abierto bajo el chorro, al menos 5 minutos."
+        },
+        {
+          "caso": "Te cae un producto químico encima.",
+          "opciones": [
+            "Voy de inmediato a la ducha de seguridad",
+            "Me seco con papel"
+          ],
+          "buena": 0,
+          "porque": "A la ducha de seguridad, de inmediato."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe los equipos para emergencias menores y cómo se usa el lavaojos.",
+        "puntos": [
+          "Ducha de seguridad: amarilla, del techo, mucha presión; ir de inmediato",
+          "Extintores: distintos gases según el material de la zona",
+          "Mantas ignífugas: cubrir a quien arde y apagar la llama",
+          "Lavaojos: en las poyatas; ojo abierto al menos 5 minutos",
+          "Si sigue rojo o molesta mucho, al médico"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Lavaojos, ducha y extintor son los tres equipos obligatorios (sesión «Las normas del laboratorio»).",
+          "ruta": "#/sesion/lab2-normas"
+        }
+      ]
+    },
+    {
+      "id": "lab2.c48",
+      "n": 48,
+      "titulo": "Cortes y pinchazos",
+      "diapositivas": "62",
+      "gancho": "Te cortas con un bisturí usado. ¿Echarías lejía en la herida?",
+      "profe": {
+        "dice": "<p>Son los que atraviesan la piel: un corte con bisturí o tijeras, o un pinchazo accidental con una aguja.</p><ol><li>Retira el objeto del accidente.</li><li>Lava con <strong>agua corriente</strong>, sin restregar, dejando fluir la sangre <strong>2-3 minutos</strong>. Induce el sangrado si hace falta.</li><li><strong>No uses lejía. No frotes.</strong></li><li>Desinfecta con <strong>povidona yodada</strong> o <strong>clorhexidina</strong>.</li><li>Aclara bien.</li><li>Cubre con un <strong>apósito impermeable</strong>.</li></ol>",
+        "truco": "Corte o pinchazo: <strong>agua, no lejía</strong>; sin frotar; povidona o clorhexidina."
+      },
+      "porque": {
+        "pregunta": "¿Qué tiene de especial un accidente percutáneo?",
+        "respuesta": "Que atraviesa la piel: un corte con bisturí o tijeras, o un pinchazo con una aguja. Por eso tiene su propio protocolo, distinto del de una salpicadura sobre la piel."
+      },
+      "aplica": [
+        {
+          "caso": "Lavas la herida…",
+          "opciones": [
+            "Con agua corriente, sin restregar, 2-3 minutos",
+            "Con lejía, frotando"
+          ],
+          "buena": 0,
+          "porque": "Agua corriente, sin restregar, dejando fluir la sangre 2-3 minutos."
+        },
+        {
+          "caso": "Desinfectas con…",
+          "opciones": [
+            "Povidona yodada o clorhexidina",
+            "Lejía al 10 %"
+          ],
+          "buena": 0,
+          "porque": "Povidona yodada o clorhexidina; nunca lejía."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los pasos ante un corte o un pinchazo.",
+        "puntos": [
+          "Retirar el objeto",
+          "Agua corriente sin restregar, dejando fluir la sangre 2-3 min",
+          "Sin lejía y sin frotar",
+          "Desinfectar con povidona yodada o clorhexidina y aclarar",
+          "Cubrir con un apósito impermeable"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c49",
+      "n": 49,
+      "titulo": "Exposición de la piel y de las mucosas",
+      "diapositivas": "63",
+      "gancho": "Te salta una gota de un fluido biológico a la boca. ¿Con qué te la lavarías?",
+      "profe": {
+        "dice": "<ul><li><strong>Exposición dérmica:</strong> si un agente biológico cae sobre la piel, <strong>lávate con agua y jabón</strong>. Si es muy fuerte o la molestia sigue, ve al servicio médico. También tienes las <strong>duchas de seguridad</strong>.</li><li><strong>Exposición de mucosas:</strong> suele ser la <strong>boca</strong>, porque está más expuesta. Haz un <strong>lavado prolongado con agua o suero fisiológico</strong>.</li><li><strong>Después, en todos los casos:</strong> comunícalo al <strong>servicio de salud laboral</strong> para que haga el seguimiento médico del accidente biológico.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que comunicar un accidente biológico aunque parezca leve?",
+        "respuesta": "Porque, en todos los casos, el servicio de salud laboral tiene que hacer el seguimiento médico del accidente biológico."
+      },
+      "aplica": [
+        {
+          "caso": "Te cae un agente biológico en la piel.",
+          "opciones": [
+            "Agua y jabón",
+            "Lejía"
+          ],
+          "buena": 0,
+          "porque": "En la piel, agua y jabón."
+        },
+        {
+          "caso": "Te salpica en la boca.",
+          "opciones": [
+            "Lavado prolongado con agua o suero fisiológico",
+            "Enjuague rápido con alcohol"
+          ],
+          "buena": 0,
+          "porque": "Mucosas: lavado prolongado con agua o suero fisiológico."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué haces si un agente biológico te cae en la piel o en una mucosa?",
+        "puntos": [
+          "Piel: agua y jabón; si molesta, al servicio médico (y duchas de seguridad)",
+          "Mucosas (suele ser la boca): lavado prolongado con agua o suero fisiológico",
+          "En todos los casos: comunicarlo al servicio de salud laboral",
+          "Para que haga el seguimiento médico"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

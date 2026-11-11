@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "id": "lab2-emergencia",
+  "unidad": "lab2",
+  "bloque": 6,
+  "titulo": "Si suena la alarma",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.6, conceptos 42 a 45, diapositivas 56 a 59). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Suena la alarma",
+    "caso": "Estás en el laboratorio y suena una sirena. Después, silencio. Y al poco, un sonido que no para. Tu compañera quiere coger su bolso, bajar en ascensor «que es más rápido» y salir corriendo. En el pasillo empieza a haber humo.",
+    "pregunta": "¿Qué harías tú, paso a paso?",
+    "solucion": "La sirena era la prealarma: deja tu puesto seguro, desconecta los equipos y atento. El sonido ininterrumpido es la alarma: calma, buen juicio y obedecer. Al salir, cierra puertas y ventanas sin llave, sin recoger objetos personales y sin correr. Nunca el ascensor: escaleras, por el exterior. Con humo, agachado y tapándote nariz y boca. Y a la zona de reunión, de donde no te vas hasta que te lo indiquen.",
+    "claves": [
+      "Prealarma: puesto seguro",
+      "Nunca el ascensor",
+      "Humo: agachado, nariz y boca tapadas",
+      "No correr ni volver atrás"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c42",
+      "n": 42,
+      "titulo": "Plan de emergencia: aviso, alarma y evacuación",
+      "diapositivas": "56",
+      "gancho": "Ves salir humo de un enchufe al fondo del laboratorio. ¿Qué es lo primero que harías?",
+      "profe": {
+        "dice": "<p>Una <strong>emergencia</strong> es un accidente grande: incendio, inundación, terremoto, desprendimiento de una pared o algo catastrófico similar.</p><ul><li><strong>Aviso:</strong> avisa en cuanto descubras una posible emergencia. Usa el <strong>teléfono de emergencias</strong> del centro o el <strong>112</strong>. Los <strong>botones de alarma</strong> activan de inmediato todos los sistemas. Si no te han explicado las normas, pregunta a los responsables o al servicio de prevención.</li><li><strong>Alarma:</strong> no siempre hay alarma; depende del <strong>protocolo de cada centro</strong>. Al avisar o pulsar el pulsador se activa el <strong>plan de emergencias</strong>, que puede acabar en falsa alarma, evacuación parcial o evacuación total.</li><li><strong>Evacuación:</strong> ve a la <strong>salida de emergencia más cercana</strong> y reúnete en tu <strong>punto de encuentro</strong>.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que avisar en cuanto descubres una posible emergencia, aunque no estés seguro de que lo sea?",
+        "respuesta": "Porque el aviso es lo que activa el plan de emergencias, y ese plan puede acabar en falsa alarma, evacuación parcial o total. Avisa al teléfono de emergencias del centro o al 112, o pulsa los botones de alarma."
+      },
+      "aplica": [
+        {
+          "caso": "¿A qué número llamas si no tienes el del centro?",
+          "opciones": [
+            "Al 112",
+            "Al de tu casa"
+          ],
+          "buena": 0,
+          "porque": "El teléfono de emergencias del centro o el 112."
+        },
+        {
+          "caso": "Hay que evacuar: ¿adónde vas?",
+          "opciones": [
+            "A la salida de emergencia más cercana y al punto de encuentro",
+            "A por mis cosas"
+          ],
+          "buena": 0,
+          "porque": "Salida más cercana y tu punto de encuentro."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es una emergencia y en qué consisten el aviso, la alarma y la evacuación?",
+        "puntos": [
+          "Emergencia: accidente grande (incendio, inundación, terremoto…)",
+          "Aviso: teléfono del centro o 112; botones de alarma",
+          "Alarma: según el protocolo; el plan acaba en falsa alarma, evacuación parcial o total",
+          "Evacuación: salida más cercana y punto de encuentro"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c43",
+      "n": 43,
+      "titulo": "Si el centro tiene sistema de alarma",
+      "diapositivas": "57",
+      "gancho": "Suena una campana, luego silencio y después un sonido que no para. ¿Qué crees que significa cada cosa?",
+      "profe": {
+        "dice": "<p>La secuencia es: <strong>AVISO → PREALARMA</strong> (campana, sirena o mensaje por megafonía) <strong>→ SILENCIO</strong>, esperamos instrucciones <strong>→ ALARMA</strong>, sonido ininterrumpido <strong>→ EVACUACIÓN</strong>.</p><p><strong>En prealarma:</strong></p><ul><li>Deja tu puesto <strong>seguro</strong>, sin nada encendido que pueda prender o explotar.</li><li>Desconecta los equipos.</li><li>Permanece atento a las señales.</li></ul><p><strong>En alarma:</strong> mantén la <strong>calma</strong>. Si hay que evacuar (no siempre), actúa con buen juicio y <strong>obedece</strong>.</p><p>Hay una <strong>brigada de emergencia</strong> y un <strong>plano con los puntos de encuentro</strong> en un lugar visible: ve al más cercano.</p>",
+        "truco": "<strong>A</strong>viso → <strong>P</strong>realarma → <strong>S</strong>ilencio → <strong>A</strong>larma (sonido ininterrumpido) → <strong>E</strong>vacuación."
+      },
+      "porque": {
+        "pregunta": "¿Por qué en la prealarma hay que desconectar los equipos y dejar el puesto seguro?",
+        "respuesta": "Para no dejar nada encendido que pueda prender o explotar mientras esperas instrucciones, o si al final hay que evacuar."
+      },
+      "aplica": [
+        {
+          "caso": "Un sonido ininterrumpido.",
+          "opciones": [
+            "Alarma",
+            "Prealarma"
+          ],
+          "buena": 0,
+          "porque": "La alarma es un sonido ininterrumpido."
+        },
+        {
+          "caso": "Campana, sirena o mensaje por megafonía.",
+          "opciones": [
+            "Prealarma",
+            "Evacuación"
+          ],
+          "buena": 0,
+          "porque": "Así suena la prealarma."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di la secuencia completa y qué haces en la prealarma y en la alarma.",
+        "puntos": [
+          "Aviso → prealarma → silencio → alarma → evacuación",
+          "Prealarma: campana, sirena o megafonía",
+          "Prealarma: puesto seguro, equipos desconectados, atento a las señales",
+          "Alarma: sonido ininterrumpido; calma, buen juicio y obedecer",
+          "Hay brigada de emergencia y un plano con los puntos de encuentro"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c44",
+      "n": 44,
+      "titulo": "Evacuación (1/2): antes de salir y mientras sales",
+      "diapositivas": "58",
+      "gancho": "Al salir, ¿cerrarías la puerta del laboratorio con llave para que nadie entre?",
+      "profe": {
+        "dice": "<ol><li>Elimina los obstáculos de puertas y caminos de evacuación.</li><li>Apaga todos los equipos eléctricos.</li><li>Cierra puertas y ventanas al pasar, comprobando que no queda nadie. <strong>No cierres con llave.</strong></li><li>Si hay <strong>amenaza de bomba</strong>, deja puertas y ventanas <strong>abiertas</strong>.</li><li>Ayuda a evacuar a las personas con discapacidad de la zona.</li><li>No te entretengas recogiendo tus objetos personales.</li><li>Mantén la calma, no grites y, sobre todo, <strong>no corras</strong>: una caída puede bloquear el camino y provocar aglomeraciones.</li></ol>",
+        "entiende": "Puertas y ventanas se cierran sin llave; solo con amenaza de bomba se dejan abiertas."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se corre durante una evacuación?",
+        "respuesta": "Porque una caída puede bloquear el camino y provocar aglomeraciones."
+      },
+      "aplica": [
+        {
+          "caso": "Al salir, cierras puertas y ventanas…",
+          "opciones": [
+            "Sin llave, comprobando que no queda nadie",
+            "Con llave"
+          ],
+          "buena": 0,
+          "porque": "Ciérralas al pasar, sin llave."
+        },
+        {
+          "caso": "Hay amenaza de bomba.",
+          "opciones": [
+            "Dejo puertas y ventanas abiertas",
+            "Las cierro"
+          ],
+          "buena": 0,
+          "porque": "Con amenaza de bomba, abiertas."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué haces antes de salir y mientras sales?",
+        "puntos": [
+          "Quitar obstáculos de puertas y caminos de evacuación",
+          "Apagar los equipos eléctricos",
+          "Cerrar puertas y ventanas sin llave, comprobando que no queda nadie (con amenaza de bomba, abiertas)",
+          "Ayudar a las personas con discapacidad; no recoger objetos personales",
+          "Calma: no gritar y, sobre todo, no correr"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c45",
+      "n": 45,
+      "titulo": "Evacuación (2/2): durante y al llegar",
+      "diapositivas": "59",
+      "gancho": "Hay humo en el pasillo y se te prende la manga. ¿Qué harías en cada caso?",
+      "profe": {
+        "dice": "<ol start=\"8\"><li>En las escaleras, circula por el <strong>exterior</strong> para dejar paso a los equipos de emergencia.</li><li><strong>No uses los ascensores.</strong></li><li>No retrocedas a buscar a nadie: entorpecerías la evacuación.</li><li>Con mucho <strong>humo</strong>, camina <strong>agachado</strong> y tápate la nariz y la boca con un pañuelo o una prenda.</li><li>Si se te prende la ropa, <strong>tírate al suelo y rueda</strong>. No corras, porque avivarías el fuego.</li><li>Sal por la <strong>salida más próxima</strong> y ve a la zona de reunión de enfrente para detectar ausencias. No te vayas hasta que te lo indiquen.</li><li>Si no llegas a zona segura, avisa a la centralita telefónica; si no puedes, hazlo por las ventanas.</li></ol>",
+        "truco": "Humo = agachado; ropa ardiendo = suelo y rueda; ascensor = nunca."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se vuelve atrás a buscar a nadie?",
+        "respuesta": "Porque entorpecerías la evacuación. Por eso, al llegar, se va a la zona de reunión: ahí se detectan las ausencias."
+      },
+      "aplica": [
+        {
+          "caso": "Hay mucho humo.",
+          "opciones": [
+            "Camino agachado, tapándome la nariz y la boca",
+            "Corro erguido"
+          ],
+          "buena": 0,
+          "porque": "Con humo, agachado y con nariz y boca tapadas."
+        },
+        {
+          "caso": "Se te prende la ropa.",
+          "opciones": [
+            "Me tiro al suelo y ruedo",
+            "Corro hacia la salida"
+          ],
+          "buena": 0,
+          "porque": "Al suelo y rodar: correr aviva el fuego."
+        },
+        {
+          "caso": "Para bajar de planta…",
+          "opciones": [
+            "Por las escaleras, por el exterior",
+            "En ascensor"
+          ],
+          "buena": 0,
+          "porque": "Nunca el ascensor; en las escaleras, por el exterior."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué haces durante la evacuación y al llegar?",
+        "puntos": [
+          "Escaleras por el exterior; nunca ascensores",
+          "No retroceder a buscar a nadie",
+          "Humo: agachado, nariz y boca tapadas",
+          "Ropa ardiendo: al suelo y rodar, nunca correr",
+          "A la zona de reunión; no irse hasta que lo indiquen; si no llegas, avisar"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

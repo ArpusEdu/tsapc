@@ -16,6 +16,13 @@
     { "id": "lab2-normas", "unidad": "lab2", "bloque": 1, "titulo": "Las normas del laboratorio", "minutos": 25, "pegatina": "gafas", "gancho": "lo que nadie sabía" },
     { "id": "lab2-epi", "unidad": "lab2", "bloque": 1, "titulo": "Protégete: los EPI", "minutos": 25, "pegatina": "gafas", "gancho": "primer día en la sala de tallado" },
     { "id": "lab2-agentes", "unidad": "lab2", "bloque": 2, "titulo": "Cómo te daña un agente", "minutos": 25, "pegatina": "gafas", "gancho": "el tubo que se rompió" },
-    { "id": "lab2-etiquetas", "unidad": "lab2", "bloque": 2, "titulo": "Etiquetas, fichas y almacén", "minutos": 25, "pegatina": "gafas", "gancho": "vecinos peligrosos" }
+    { "id": "lab2-etiquetas", "unidad": "lab2", "bloque": 2, "titulo": "Etiquetas, fichas y almacén", "minutos": 25, "pegatina": "gafas", "gancho": "vecinos peligrosos" },
+    { "id": "lab2-prevencion", "unidad": "lab2", "bloque": 3, "titulo": "Manejar sin riesgo: químicos, radiactivos y biológicos", "minutos": 25, "pegatina": "gafas", "gancho": "más cerca de la luz" },
+    { "id": "lab2-equiposa", "unidad": "lab2", "bloque": 4, "titulo": "Equipos sin sustos (I): normas y electricidad", "minutos": 20, "pegatina": "gafas", "gancho": "el enchufe de todos" },
+    { "id": "lab2-equiposb", "unidad": "lab2", "bloque": 4, "titulo": "Equipos sin sustos (II): centrífugas, calor, frío y cabinas", "minutos": 25, "pegatina": "gafas", "gancho": "vibra y suena raro" },
+    { "id": "lab2-residuos1", "unidad": "lab2", "bloque": 5, "titulo": "¿Dónde va cada residuo? (I): químicos y radiactivos", "minutos": 25, "pegatina": "gafas", "gancho": "por el fregadero" },
+    { "id": "lab2-residuos2", "unidad": "lab2", "bloque": 5, "titulo": "¿Dónde va cada residuo? (II): biosanitarios", "minutos": 20, "pegatina": "gafas", "gancho": "recoger la sala de tallado" },
+    { "id": "lab2-emergencia", "unidad": "lab2", "bloque": 6, "titulo": "Si suena la alarma", "minutos": 25, "pegatina": "gafas", "gancho": "suena la alarma" },
+    { "id": "lab2-accidentes", "unidad": "lab2", "bloque": 6, "titulo": "Accidentes: actuar en segundos", "minutos": 25, "pegatina": "gafas", "gancho": "el pinchazo" }
   ]
 }

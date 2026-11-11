@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "id": "lab2-prevencion",
+  "unidad": "lab2",
+  "bloque": 3,
+  "titulo": "Manejar sin riesgo: químicos, radiactivos y biológicos",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.3, conceptos 21, 23, 24 y 25, diapositivas 32 a 36). El misterio es el caso práctico 2.1 (concepto 22) contado sin el final; su solución es el texto de la profe. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 22,
+    "titulo": "Más cerca de la luz",
+    "caso": "Un técnico añade un reactivo a una placa con muestras y quiere comprobar que lo ha hecho bien. Con la luz del laboratorio no lo ve claro, así que levanta la placa a la altura de la cara para verla mejor.",
+    "pregunta": "¿Qué puede salir mal? ¿Cómo debería haberlo comprobado?",
+    "solucionProfe": "<p><strong>Situación:</strong> un técnico quiere comprobar si ha añadido bien el reactivo a la placa con las muestras. La <strong>levanta</strong> para verla con más luz.</p><p><strong>Problema:</strong> al levantarla, el reactivo se <strong>derrama y le entra en la boca</strong>. Acaba en urgencias por una intoxicación, con una <strong>saturación de O₂ del 40 %</strong>.</p><p><strong>Solución:</strong> no hay solución, porque ha cometido una <strong>imprudencia</strong>. Las placas y los reactivos se observan <strong>apoyados en la mesa, nunca a la altura de la cara</strong>.</p>",
+    "entiendeProfe": "La regla del caso: placas y reactivos se miran <strong>apoyados en la mesa</strong>, no levantados a la altura de la cara.",
+    "claves": [
+      "Placas y reactivos, apoyados en la mesa",
+      "Nunca a la altura de la cara",
+      "Una imprudencia no tiene solución"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c21",
+      "n": 21,
+      "titulo": "Manejo de reactivos químicos",
+      "diapositivas": "32",
+      "gancho": "Tienes un bote de disolvente que desprende vapores y una placa con muestras. ¿Qué normas te pondrías para trabajar con ellos?",
+      "profe": {
+        "glosario": "<p><b>Volátil:</b> que pasa fácilmente al aire. <b>Vitrina extractora:</b> cabina donde se trabaja con reactivos que desprenden vapores.</p>",
+        "dice": "<p>Piensa siempre que lo que tienes entre las manos te puede hacer daño. El miedo es mal compañero: sé <strong>firme y seguro</strong>.</p><ul><li>Presta <strong>cuidado, atención y concentración</strong>.</li><li>No comas ni bebas: hay sustancias <strong>volátiles</strong> que se depositan en todas partes, incluso sobre ti.</li><li>Lee las <strong>etiquetas de seguridad</strong>.</li><li>No enciendas llamas con reactivos explosivos ni calientes un disolvente explosivo.</li><li>Trabaja en <strong>vitrina extractora</strong> con los reactivos o disolventes que desprenden vapores.</li><li>Ve protegido, sin dejar libre nada de piel, y <strong>protege los ojos</strong>.</li><li>No metas un <strong>recipiente cerrado</strong> en una estufa o un equipo a temperatura elevada.</li><li><strong>No pipetees con la boca</strong>: puedes intoxicarte por ingesta.</li><li><strong>Rotula siempre</strong> las muestras preparadas.</li><li>Para transportar un reactivo o una mezcla, sujeta el <strong>fondo con una mano</strong> y la <strong>parte de arriba con la otra</strong>.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se come ni se bebe en el laboratorio, aunque tengas cuidado?",
+        "respuesta": "Porque hay sustancias volátiles que pasan al aire y se depositan en todas partes, incluso sobre ti y sobre lo que fueras a comer."
+      },
+      "aplica": [
+        {
+          "caso": "Trabajas con un disolvente que desprende vapores.",
+          "opciones": [
+            "En la vitrina extractora",
+            "En la mesa, con la ventana abierta"
+          ],
+          "buena": 0,
+          "porque": "Los reactivos o disolventes que desprenden vapores, en vitrina extractora."
+        },
+        {
+          "caso": "Transportas un reactivo.",
+          "opciones": [
+            "Sujeto el fondo con una mano y la parte de arriba con la otra",
+            "Lo llevo por el cuello del frasco"
+          ],
+          "buena": 0,
+          "porque": "Fondo con una mano y parte de arriba con la otra."
+        },
+        {
+          "caso": "Has preparado una muestra.",
+          "opciones": [
+            "La rotulo siempre",
+            "La rotulo si me da tiempo"
+          ],
+          "buena": 0,
+          "porque": "Rotula siempre las muestras preparadas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las normas para manejar reactivos químicos.",
+        "puntos": [
+          "Pensar que lo que tienes te puede hacer daño; atención y concentración",
+          "No comer ni beber (volátiles); leer las etiquetas",
+          "Sin llamas con explosivos; los vapores, en vitrina extractora",
+          "Protegido, sin piel libre y con los ojos protegidos; no pipetear con la boca",
+          "Rotular las muestras; transportar sujetando el fondo y la parte de arriba"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c23",
+      "n": 23,
+      "titulo": "Partículas α, β y γ",
+      "diapositivas": "34",
+      "gancho": "Una radiación es muy energética pero penetra poco; otra lo atraviesa casi todo. ¿Cuál crees que es más peligrosa para tu cuerpo?",
+      "profe": {
+        "dice": "<p>Estamos expuestos a radiaciones de forma continua: casi todas son naturales y otras las origina el ser humano.</p><ul><li><strong>α (alfa):</strong> muy energéticas, poco penetrantes.</li><li><strong>β (beta):</strong> muy energéticas, poco penetrantes.</li><li><strong>γ (gamma):</strong> muy penetrantes.</li></ul><p><strong>Orden de peligrosidad en el organismo: α &lt; β &lt; γ.</strong></p><p>Las partículas se diferencian por su <strong>agresividad</strong>, que depende de cuánto <strong>penetran en la materia</strong>.</p>",
+        "entiende": "La peligrosidad crece con lo que <strong>penetra</strong> en la materia: la gamma, muy penetrante, es la más peligrosa de las tres.",
+        "truco": "<strong>α &lt; β &lt; γ</strong>: de menos a más peligrosa (alfa, beta, gamma)."
+      },
+      "porque": {
+        "pregunta": "Si las α y las β son muy energéticas, ¿por qué la γ es la más peligrosa?",
+        "respuesta": "Porque la agresividad depende de cuánto penetran en la materia. Las α y las β son muy energéticas pero poco penetrantes; la γ es muy penetrante. Por eso el orden de peligrosidad es α < β < γ."
+      },
+      "aplica": [
+        {
+          "caso": "La más peligrosa en el organismo.",
+          "opciones": [
+            "α",
+            "β",
+            "γ"
+          ],
+          "buena": 2,
+          "porque": "α < β < γ: la gamma, muy penetrante, es la más peligrosa."
+        },
+        {
+          "caso": "¿De qué depende su agresividad?",
+          "opciones": [
+            "De cuánto penetran en la materia",
+            "De su energía y nada más"
+          ],
+          "buena": 0,
+          "porque": "Se diferencian por su agresividad, que depende de cuánto penetran."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las partículas α, β y γ y su orden de peligrosidad.",
+        "puntos": [
+          "Estamos expuestos a radiaciones de forma continua (casi todas naturales)",
+          "α y β: muy energéticas, poco penetrantes",
+          "γ: muy penetrantes",
+          "Peligrosidad: α < β < γ, según lo que penetran en la materia"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Radiaciones ionizantes y no ionizantes, en la sesión «Cómo te daña un agente».",
+          "ruta": "#/sesion/lab2-agentes"
+        }
+      ]
+    },
+    {
+      "id": "lab2.c24",
+      "n": 24,
+      "titulo": "Prevención con material radiactivo",
+      "diapositivas": "35",
+      "gancho": "Si tuvieras que trabajar cerca de una fuente radiactiva, ¿qué tres cosas harías para protegerte? Piensa en la distancia y en el tiempo.",
+      "profe": {
+        "glosario": "<p><b>Apantallamiento:</b> barreras que frenan la radiación.</p>",
+        "dice": "<ul><li>Ten buena <strong>información</strong> sobre lo que haces y usas. Todo debe estar perfectamente <strong>señalado</strong> y bajo control.</li><li>Protección personal con buen <strong>apantallamiento</strong> y vestuario especial, nunca la ropa de calle.</li><li>Ten un buen <strong>plan de trabajo</strong>.</li><li>Mantén la <strong>distancia</strong> adecuada con la fuente.</li><li><strong>No alargues</strong> el tiempo de exposición.</li><li>Gestiona bien los <strong>residuos radiactivos</strong>, en sus recipientes especiales.</li><li>Debes saber actuar en una <strong>emergencia</strong>.</li><li>Si se trabaja habitualmente con material radiactivo, hay que hacer <strong>controles periódicos</strong> de la radiación del recinto y del material.</li><li><strong>Superficies:</strong> la radiación se deposita en todas partes. Trabaja sobre superficies <strong>no porosas</strong> y sin roturas, en un espacio <strong>controlado y pequeño</strong> para que el daño no se extienda.</li><li><strong>Material de vidrio:</strong> evita roturas o explosiones. Existe material especial, aunque no en muchos laboratorios; con cuidado se puede usar cualquiera.</li></ul>",
+        "truco": "Distancia, tiempo y apantallamiento: <strong>lejos, poco rato y con barrera</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se trabaja sobre superficies no porosas y sin roturas?",
+        "respuesta": "Porque la radiación se deposita en todas partes, y en una superficie porosa o rota se quedaría. Además, se trabaja en un espacio controlado y pequeño, para que el daño no se extienda."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué tres palabras resumen la protección frente a la radiación?",
+          "opciones": [
+            "Distancia, tiempo y apantallamiento",
+            "Guantes, bata y gafas"
+          ],
+          "buena": 0,
+          "porque": "Lejos, poco rato y con barrera."
+        },
+        {
+          "caso": "¿Qué ropa llevas?",
+          "opciones": [
+            "Vestuario especial",
+            "Mi ropa de calle"
+          ],
+          "buena": 0,
+          "porque": "Vestuario especial, nunca la ropa de calle."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las formas de prevención con material radiactivo.",
+        "puntos": [
+          "Buena información, todo señalado y bajo control; un buen plan de trabajo",
+          "Apantallamiento y vestuario especial, nunca ropa de calle",
+          "Distancia adecuada a la fuente y no alargar el tiempo de exposición",
+          "Residuos radiactivos en recipientes especiales; saber actuar en emergencias",
+          "Superficies no porosas y sin roturas; controles periódicos si es habitual"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c25",
+      "n": 25,
+      "titulo": "Manejo de agentes biológicos",
+      "diapositivas": "36",
+      "gancho": "En citología te llega una orina sin rastro de sangre. ¿Te pondrías guantes igualmente?",
+      "profe": {
+        "dice": "<p>Además de las normas para reactivos químicos, ten en cuenta las formas de <strong>contaminación biológica</strong>.</p><ul><li><strong>Buena higiene</strong> del material expuesto y del personal. Lávate las manos antes y, sobre todo, <strong>después</strong> de trabajar, mejor con <strong>solución hidroalcohólica</strong> o con <strong>agua y jabón</strong>, que son muy eficaces contra las infecciones.</li><li><strong>Superficies no porosas</strong> y <strong>sin roturas</strong>: los agentes biológicos se pueden depositar en todas partes.</li></ul><p><strong>En tu puesto de trabajo:</strong> en citología recibirás orinas, esputos o líquidos pleurales. Trátalos todos con guantes y lávate las manos al terminar, aunque no veas sangre.</p>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que lavarse las manos, sobre todo, después de trabajar?",
+        "respuesta": "Porque después es cuando puedes llevar en las manos lo que has manipulado. La solución hidroalcohólica o el agua y jabón son muy eficaces contra las infecciones."
+      },
+      "aplica": [
+        {
+          "caso": "Te llega un esputo sin sangre visible.",
+          "opciones": [
+            "Con guantes y lavado de manos al terminar",
+            "Sin guantes, porque no hay sangre"
+          ],
+          "buena": 0,
+          "porque": "Trátalos todos con guantes y lávate las manos al terminar, aunque no veas sangre."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se manejan los agentes biológicos?",
+        "puntos": [
+          "Además, las normas de los reactivos químicos",
+          "Buena higiene del material expuesto y del personal",
+          "Manos antes y sobre todo después (hidroalcohólica o agua y jabón)",
+          "Superficies no porosas y sin roturas",
+          "Orinas, esputos o líquidos: siempre con guantes"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "id": "lab2-residuos1",
+  "unidad": "lab2",
+  "bloque": 5,
+  "titulo": "¿Dónde va cada residuo? (I): químicos y radiactivos",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.5, conceptos 34 a 38, diapositivas 47 a 51). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Por el fregadero",
+    "caso": "Termina la práctica y hay prisa por recoger. Alguien vacía en el fregadero los restos de un ácido y de un disolvente: «Con agua abundante se va todo». Al echarlos, el ácido salpica.",
+    "pregunta": "¿Qué dos razones hay para no tirarlos por el desagüe? ¿Dónde tendrían que haber ido?",
+    "solucion": "Por regla general, los residuos químicos no se tiran por el desagüe. Primero, porque pueden no ser biodegradables y ser tóxicos para el ser humano. Segundo, porque pueden reaccionar con el agua en una reacción exotérmica, con salpicaduras dañinas o incluso una explosión: justo lo que ha pasado. Tendrían que haber ido a sus recipientes bien etiquetados: el ácido con los ácidos y el disolvente con los disolventes (halogenados o no, según su estructura).",
+    "claves": [
+      "Nunca por el desagüe",
+      "No biodegradables y tóxicos",
+      "Reacción con el agua: salpicaduras o explosión"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c34",
+      "n": 34,
+      "titulo": "Qué es un residuo y qué va en cada recipiente",
+      "diapositivas": "47",
+      "gancho": "Al acabar una práctica tienes papel, guantes, restos de disolvente y una aguja. ¿Lo echarías todo en la misma papelera?",
+      "profe": {
+        "glosario": "<p><b>Fungible:</b> desechable.</p>",
+        "dice": "<p><strong>Residuo:</strong> aquello que, tras usarlo en un experimento o análisis, queda <strong>inservible</strong>. Puede ser una sustancia, un material o un objeto.</p><p>En un laboratorio de análisis clínicos se generan tres categorías: <strong>químicos, radiactivos y biosanitarios</strong>. Y no hay que olvidar los <strong>urbanos</strong> y los del <strong>material fungible</strong>.</p><p><strong>Recuerda:</strong></p><ul><li><strong>Bote azul:</strong> contaminación citotóxica.</li><li><strong>Bolsa roja:</strong> residuos urbanos.</li><li><strong>Recipiente blanco:</strong> restos de disolventes químicos.</li></ul>",
+        "truco": "<strong>Azul</strong> = citotóxico · <strong>roja</strong> = urbanos · <strong>blanco</strong> = disolventes."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay recipientes de colores distintos?",
+        "respuesta": "Para no mezclar residuos que se tratan de forma distinta y para que cualquiera sepa de un vistazo dónde va cada cosa: bote azul, contaminación citotóxica; bolsa roja, residuos urbanos; recipiente blanco, restos de disolventes químicos."
+      },
+      "aplica": [
+        {
+          "caso": "Restos de disolventes químicos.",
+          "opciones": [
+            "Recipiente blanco",
+            "Bolsa roja",
+            "Bote azul"
+          ],
+          "buena": 0,
+          "porque": "Blanco = disolventes."
+        },
+        {
+          "caso": "Contaminación citotóxica.",
+          "opciones": [
+            "Bote azul",
+            "Recipiente blanco"
+          ],
+          "buena": 0,
+          "porque": "Azul = citotóxico."
+        },
+        {
+          "caso": "Residuos urbanos.",
+          "opciones": [
+            "Bolsa roja",
+            "Bote azul"
+          ],
+          "buena": 0,
+          "porque": "Roja = urbanos."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es un residuo, qué categorías hay y qué va en cada recipiente de color?",
+        "puntos": [
+          "Residuo: lo que queda inservible tras un experimento o análisis",
+          "Químicos, radiactivos y biosanitarios (y además urbanos y fungible)",
+          "Bote azul: contaminación citotóxica",
+          "Bolsa roja: residuos urbanos",
+          "Recipiente blanco: restos de disolventes químicos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c35",
+      "n": 35,
+      "titulo": "Las cinco clases de residuos",
+      "diapositivas": "48",
+      "gancho": "Un papel, unos guantes manchados de sangre y un reactivo caducado. ¿Crees que la normativa los trata igual?",
+      "profe": {
+        "glosario": "<p><b>Ciclo celular:</b> el proceso por el que la célula crece y se divide.</p>",
+        "dice": "<div class=\"tw\"><table><thead><tr><th>Tipo</th><th>Qué son</th><th>Ejemplos</th></tr></thead><tbody><tr><td><strong>Residuos sólidos urbanos</strong> (clase I: RSU)</td><td>Sin contaminación específica ni agentes infecciosos.</td><td>Papel, plásticos, latas, comida.</td></tr><tr><td><strong>Biosanitarios asimilables a urbanos</strong> (clase II: RBAU)</td><td>Incluyen todo residuo sanitario.</td><td>Filtros, gasas, guantes, material en contacto con fluidos biológicos.</td></tr><tr><td><strong>Biosanitarios específicos o especiales</strong> (RBE)</td><td>Se clasifican en nueve grupos.</td><td>Tabla de los grupos I a IX.</td></tr><tr><td><strong>Citotóxicos</strong> (clase VI)</td><td>Proceden de fármacos que actúan sobre el <strong>ciclo celular</strong> y provocan la muerte celular.</td><td>—</td></tr><tr><td><strong>Químicos</strong> (RQ)</td><td>Caracterizados por su contaminación química.</td><td>Reactivos que ya no se usan, caducados, mezclas inservibles.</td></tr></tbody></table></div>",
+        "truco": "I = urbanos (RSU) · II = biosanitarios asimilables a urbanos (RBAU) · VI = citotóxicos."
+      },
+      "porque": {
+        "pregunta": "¿Por qué unos guantes que han tocado fluidos no van con la basura normal?",
+        "respuesta": "Porque son residuo sanitario: los biosanitarios asimilables a urbanos (clase II) incluyen filtros, gasas, guantes y material en contacto con fluidos biológicos. La basura normal (clase I) es la que no tiene contaminación específica ni agentes infecciosos."
+      },
+      "aplica": [
+        {
+          "caso": "Papel, plásticos, latas.",
+          "opciones": [
+            "Clase I (RSU)",
+            "Clase II (RBAU)"
+          ],
+          "buena": 0,
+          "porque": "Sin contaminación específica: residuos sólidos urbanos."
+        },
+        {
+          "caso": "Gasas y guantes en contacto con fluidos biológicos.",
+          "opciones": [
+            "Clase I (RSU)",
+            "Clase II (RBAU)"
+          ],
+          "buena": 1,
+          "porque": "Biosanitarios asimilables a urbanos."
+        },
+        {
+          "caso": "Restos de fármacos que actúan sobre el ciclo celular.",
+          "opciones": [
+            "Citotóxicos (clase VI)",
+            "Químicos (RQ)"
+          ],
+          "buena": 0,
+          "porque": "Provocan la muerte celular: citotóxicos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las cinco clases de residuos con un ejemplo de cada una.",
+        "puntos": [
+          "Clase I (RSU): sin contaminación específica (papel, plásticos…)",
+          "Clase II (RBAU): residuo sanitario (gasas, guantes, filtros…)",
+          "Biosanitarios especiales (RBE): nueve grupos",
+          "Citotóxicos (clase VI): fármacos sobre el ciclo celular",
+          "Químicos (RQ): reactivos que ya no se usan, caducados, mezclas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c36",
+      "n": 36,
+      "titulo": "Residuos químicos: nunca por el desagüe",
+      "diapositivas": "49",
+      "gancho": "Si el agua se lo lleva, ¿por qué crees que no se tiran los productos químicos por el fregadero?",
+      "profe": {
+        "glosario": "<p><b>Halógenos:</b> elementos como el cloro o el bromo.</p>",
+        "dice": "<p>Por regla general, los residuos químicos <strong>no se tiran por el desagüe</strong>, por dos razones:</p><ol><li>Pueden <strong>no ser biodegradables</strong> y ser tóxicos para el ser humano.</li><li>Pueden reaccionar con el agua en una <strong>reacción exotérmica</strong>, con salpicaduras dañinas o una explosión.</li></ol><p><strong>Recipientes bien etiquetados:</strong></p><ul><li><strong>Ácidos:</strong> pH menor de 7.</li><li><strong>Bases:</strong> pH mayor de 7.</li><li><strong>Disolventes orgánicos no halogenados:</strong> sin halógenos.</li><li><strong>Disolventes orgánicos halogenados:</strong> con halógenos en su estructura.</li></ul><p>Además: <strong>no acumules</strong> residuos (gestiónalos al terminar el experimento), infórmate de cómo gestionar los residuos de todo lo que usas y conoce el producto: <strong>no es lo mismo un disolvente que un ácido</strong>.</p>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué ácidos, bases y disolventes van en recipientes distintos?",
+        "respuesta": "Porque no es lo mismo un disolvente que un ácido: hay que conocer el producto y gestionarlo según lo que es. Por eso hay recipientes bien etiquetados para ácidos, bases, disolventes no halogenados y disolventes halogenados."
+      },
+      "aplica": [
+        {
+          "caso": "Un disolvente orgánico con cloro en su estructura.",
+          "opciones": [
+            "Disolventes halogenados",
+            "Disolventes no halogenados"
+          ],
+          "buena": 0,
+          "porque": "El cloro es un halógeno."
+        },
+        {
+          "caso": "Un residuo con pH menor de 7.",
+          "opciones": [
+            "Ácidos",
+            "Bases"
+          ],
+          "buena": 0,
+          "porque": "pH menor de 7: ácido."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Por qué no van por el desagüe y cómo se separan los residuos químicos?",
+        "puntos": [
+          "Por regla general, nunca por el desagüe",
+          "Pueden no ser biodegradables y ser tóxicos",
+          "Pueden reaccionar con el agua: salpicaduras o explosión",
+          "Recipientes etiquetados: ácidos, bases, disolventes halogenados y no halogenados",
+          "No acumular; informarse; conocer el producto"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c37",
+      "n": 37,
+      "titulo": "Neutralizar, absorber y el mercurio",
+      "diapositivas": "50",
+      "gancho": "Se te rompe un termómetro de mercurio en la mesa. ¿Cómo lo recogerías?",
+      "profe": {
+        "glosario": "<p><b>Desecante:</b> sustancia que absorbe la humedad.</p>",
+        "dice": "<ul><li><strong>Ácidos:</strong> se <strong>neutralizan con una base</strong> y se diluyen. La sal formada es menos dañina.</li><li><strong>Bases:</strong> se <strong>neutralizan con un ácido</strong> y se diluyen.</li><li><strong>Algunos disolventes orgánicos:</strong> se eliminan tras absorberlos con <strong>carbono activo</strong> o con una <strong>sustancia desecante</strong>.</li><li><strong>Mercurio:</strong> sale al romperse los termómetros y es <strong>tremendamente tóxico</strong>. Se recupera con pequeñas <strong>aspiradoras</strong>. Cuidado, porque se mete en las ranuras.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué se neutraliza un ácido con una base antes de eliminarlo?",
+        "respuesta": "Porque la sal que se forma es menos dañina. Después, se diluye."
+      },
+      "aplica": [
+        {
+          "caso": "Se rompe un termómetro de mercurio.",
+          "opciones": [
+            "Lo recupero con una pequeña aspiradora",
+            "Lo empujo con la mano hasta una hoja"
+          ],
+          "buena": 0,
+          "porque": "Es tremendamente tóxico: pequeñas aspiradoras, y ojo con las ranuras."
+        },
+        {
+          "caso": "Neutralizas una base…",
+          "opciones": [
+            "Con un ácido, y luego se diluye",
+            "Solo con agua"
+          ],
+          "buena": 0,
+          "porque": "Las bases se neutralizan con un ácido y se diluyen."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se tratan dentro del laboratorio los ácidos, las bases, algunos disolventes y el mercurio?",
+        "puntos": [
+          "Ácidos: se neutralizan con una base y se diluyen (la sal es menos dañina)",
+          "Bases: se neutralizan con un ácido y se diluyen",
+          "Algunos disolventes orgánicos: se absorben con carbono activo o desecante",
+          "Mercurio: tremendamente tóxico; pequeñas aspiradoras; se mete en las ranuras"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c38",
+      "n": 38,
+      "titulo": "Residuos radiactivos",
+      "diapositivas": "51",
+      "gancho": "Un residuo radiactivo: ¿crees que se tira, se guarda o se reutiliza?",
+      "profe": {
+        "dice": "<p>También son residuos químicos, pero por su <strong>peligrosidad</strong> se estudian aparte. Pueden ser <strong>radiactivos por sí mismos</strong> o estar <strong>contaminados</strong> por sustancias radiactivas.</p><p>Se almacenan, en uso o no, en <strong>salas especiales con protección radiológica</strong>. Personal especializado retira lo que no se va a reutilizar y el material contaminado.</p><p>Clasificación del <strong>RD 102/2014</strong>:</p><ul><li><strong>Almacenamiento temporal:</strong> se guardan con intención de <strong>recuperarlos</strong>.</li><li><strong>Almacenamiento definitivo:</strong> se guardan de forma <strong>definitiva</strong>.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "Si también son residuos químicos, ¿por qué los radiactivos se estudian aparte?",
+        "respuesta": "Por su peligrosidad. Se almacenan, se usen o no, en salas especiales con protección radiológica, y solo personal especializado retira lo que no se va a reutilizar y el material contaminado."
+      },
+      "aplica": [
+        {
+          "caso": "Se guardan con intención de recuperarlos.",
+          "opciones": [
+            "Almacenamiento temporal",
+            "Almacenamiento definitivo"
+          ],
+          "buena": 0,
+          "porque": "RD 102/2014: temporal = con intención de recuperarlos."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se gestionan los residuos radiactivos?",
+        "puntos": [
+          "También son químicos, pero se estudian aparte por su peligrosidad",
+          "Radiactivos por sí mismos o contaminados por sustancias radiactivas",
+          "En salas especiales con protección radiológica; los retira personal especializado",
+          "RD 102/2014: almacenamiento temporal (para recuperarlos) o definitivo"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

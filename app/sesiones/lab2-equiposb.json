@@ -1,0 +1,243 @@
+{
+  "schema": 1,
+  "id": "lab2-equiposb",
+  "unidad": "lab2",
+  "bloque": 4,
+  "titulo": "Equipos sin sustos (II): centrífugas, calor, frío y cabinas",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.4, conceptos 29 a 32, diapositivas 41 a 44). La solución del misterio es la tabla del concepto 33 (diapositiva 45). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 33,
+    "titulo": "Vibra y suena raro",
+    "caso": "Tienes que centrifugar varios tubos con líquido para hacer extensiones citológicas. Los colocas deprisa, como caben, cierras y la pones en marcha. A los pocos segundos, la centrífuga empieza a vibrar y a sonar raro.",
+    "pregunta": "¿Qué ha pasado? ¿Qué deberías haber hecho antes, durante y después?",
+    "solucionProfe": "<p>Tienes que centrifugar varios tubos con líquido para hacer extensiones citológicas.</p><div class=\"tw\"><table><thead><tr><th>Momento</th><th>Qué haces</th></tr></thead><tbody><tr><td><strong>Antes</strong></td><td>Centrífuga anclada y en una superficie lisa. Coloca los tubos <strong>equilibrando los pesos</strong>.</td></tr><tr><td><strong>Durante</strong></td><td>Tapa <strong>cerrada</strong>. Comprueba que alcanza la velocidad; si vibra o suena raro, hay desequilibrio.</td></tr><tr><td><strong>Si se rompe un tubo</strong></td><td>Espera <strong>5 minutos</strong> antes de abrir. Desinfecta cestillas y paredes con <strong>lejía 1/10 durante 10 minutos</strong>.</td></tr><tr><td><strong>Después</strong></td><td>Limpia el interior y el rotor, y ventila.</td></tr></tbody></table></div>",
+    "claves": [
+      "Equilibrar los pesos de los tubos",
+      "Tapa cerrada; vigilar la velocidad",
+      "Tubo roto: 5 min y lejía 1/10",
+      "Después: limpiar y ventilar"
+    ],
+    "entiendeProfe": ""
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c29",
+      "n": 29,
+      "titulo": "Centrífugas: riesgos y cómo evitarlos",
+      "diapositivas": "41",
+      "gancho": "Una centrífuga gira a muchísimas vueltas. ¿Qué podría pasar si metes los tubos sin pensar dónde va cada uno?",
+      "profe": {
+        "glosario": "<p><b>PNT:</b> procedimiento normalizado de trabajo.</p>",
+        "dice": "<p>Usan la <strong>fuerza centrífuga</strong>, así que deben estar bien ancladas sobre una superficie lisa y equilibrada. Lee siempre las instrucciones del fabricante y el <strong>PNT</strong>.</p><div class=\"tw\"><table><thead><tr><th>Riesgo asociado</th><th>Cómo evitarlo</th></tr></thead><tbody><tr><td>Rotura del rotor</td><td>Equilibra bien los pesos. Si vibra o suena raro, hay desequilibrio. Comprueba que sube hasta la velocidad indicada.</td></tr><tr><td>Rotura de los tubos dentro del rotor</td><td>Limpia el interior y el rotor después de usarla.</td></tr><tr><td>Que el contenido del tubo salga y se extienda</td><td>Limpia el interior y el rotor después de usarla.</td></tr><tr><td>Que se acumulen vapores inflamables</td><td>Ventila bien el interior.</td></tr><tr><td>Contaminantes y microorganismos por falta de limpieza</td><td>Limpia el interior y el rotor después de usarla.</td></tr><tr><td>Hacerte daño si la abres sin que haya frenado</td><td>Mantenla cerrada mientras funciona. Las modernas tienen un sistema que impide abrirlas en marcha.</td></tr></tbody></table></div>",
+        "entiende": "Si vibra o suena raro, hay <strong>desequilibrio</strong>: equilibra los pesos de los tubos."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que equilibrar los pesos de los tubos?",
+        "respuesta": "Porque con los pesos desequilibrados el rotor se puede romper. La señal de aviso: si la centrífuga vibra o suena raro, hay desequilibrio."
+      },
+      "aplica": [
+        {
+          "caso": "La centrífuga vibra y suena raro.",
+          "opciones": [
+            "Hay desequilibrio de pesos",
+            "Es lo normal al arrancar"
+          ],
+          "buena": 0,
+          "porque": "Si vibra o suena raro, hay desequilibrio."
+        },
+        {
+          "caso": "¿Cuándo se abre la centrífuga?",
+          "opciones": [
+            "Cuando ha frenado; cerrada mientras funciona",
+            "En marcha, si tengo prisa"
+          ],
+          "buena": 0,
+          "porque": "Mantenla cerrada mientras funciona."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los riesgos de las centrífugas y cómo se evitan.",
+        "puntos": [
+          "Bien anclada, sobre superficie lisa y equilibrada; leer fabricante y PNT",
+          "Rotura del rotor: equilibrar los pesos",
+          "Limpiar el interior y el rotor después de usarla",
+          "Ventilar el interior (vapores inflamables)",
+          "Cerrada mientras funciona: no abrirla sin que haya frenado"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Para qué sirve la centrífuga (la sangre: plasma arriba, células rojas abajo), en «Equipos (II)» de Lab 1.",
+          "ruta": "#/sesion/lab1-equipos2"
+        }
+      ]
+    },
+    {
+      "id": "lab2.c30",
+      "n": 30,
+      "titulo": "Baños y autoclaves",
+      "diapositivas": "42",
+      "gancho": "Un baño de agua caliente y un autoclave. ¿Cuál de los dos crees que puede hacerte más daño al abrirlo, y por qué?",
+      "profe": {
+        "glosario": "<p><b>Termostato:</b> regulador de temperatura. <b>Manómetro:</b> aparato que mide la presión.</p>",
+        "dice": "<p><strong>Baños:</strong> riesgos de <strong>quemaduras</strong> y <strong>vuelcos</strong>.</p><ul><li>No los llenes del todo.</li><li>Cambia el agua cada cierto tiempo y usa <strong>agua destilada</strong>.</li><li>Aunque tengan <strong>termostato</strong>, vigila la temperatura.</li><li>Introduce material que soporte esa temperatura.</li><li>Colócalos en un lugar fijo que aguante su peso.</li><li>No mezcles sustancias dentro: el calor acelera las reacciones.</li><li>Evita que se acumulen vapores y revisa la instalación.</li><li>En funcionamiento, usa <strong>guantes de protección térmica</strong>.</li></ul><p><strong>Autoclaves:</strong></p><ul><li>Trabajan a <strong>alta presión</strong>: ábrelos con cautela.</li><li>Su <strong>manómetro</strong> indica cuándo abrir y detecta anomalías.</li><li>La presión debe subir de forma <strong>progresiva</strong>.</li><li>Para abrirlos, usa <strong>guantes de protección térmica</strong>.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se mezclan sustancias dentro de un baño?",
+        "respuesta": "Porque el calor acelera las reacciones."
+      },
+      "aplica": [
+        {
+          "caso": "¿Hasta dónde llenas el baño?",
+          "opciones": [
+            "No del todo",
+            "Hasta arriba"
+          ],
+          "buena": 0,
+          "porque": "No los llenes del todo."
+        },
+        {
+          "caso": "¿Qué te indica cuándo abrir el autoclave?",
+          "opciones": [
+            "El manómetro",
+            "El reloj"
+          ],
+          "buena": 0,
+          "porque": "Su manómetro indica cuándo abrir y detecta anomalías."
+        },
+        {
+          "caso": "Abres el autoclave…",
+          "opciones": [
+            "Con cautela y con guantes de protección térmica",
+            "Rápido, para que no se enfríe"
+          ],
+          "buena": 0,
+          "porque": "Trabaja a alta presión: con cautela y guantes térmicos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las normas de los baños y de los autoclaves.",
+        "puntos": [
+          "Baños: riesgo de quemaduras y vuelcos; no llenarlos del todo",
+          "Agua destilada, cambiada cada cierto tiempo; vigilar la temperatura",
+          "No mezclar sustancias dentro (el calor acelera las reacciones)",
+          "Autoclaves: alta presión; abrir con cautela y guantes térmicos",
+          "El manómetro indica cuándo abrir; la presión sube de forma progresiva"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c31",
+      "n": 31,
+      "titulo": "Gases y frío",
+      "diapositivas": "43",
+      "gancho": "¿El frío puede quemar? Apuesta antes de abrir.",
+      "profe": {
+        "dice": "<p><strong>Bombonas de gases</strong> (como el <strong>nitrógeno</strong> o el <strong>helio</strong>):</p><ul><li>Tienen <strong>dos manómetros</strong>: el de la presión interior (anomalías, cuándo se acaba) y el de la presión de salida.</li><li>No enfoques la salida a la cara ni al cuerpo de nadie, y que no salga a mucha presión.</li><li>Pueden quemar, y casi todos los gases son <strong>inflamables</strong>.</li><li>Con <strong>nitrógeno líquido</strong>, usa guantes de protección térmica.</li></ul><p><strong>Frigoríficos y congeladores:</strong> sobre todo los de <strong>–80 °C</strong>, que se abren con guantes térmicos. El <strong>frío extremo también quema</strong>.</p>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué el congelador de -80 °C se abre con guantes de protección térmica?",
+        "respuesta": "Porque el frío extremo también quema."
+      },
+      "aplica": [
+        {
+          "caso": "¿Hacia dónde enfocas la salida de una bombona?",
+          "opciones": [
+            "Nunca a la cara ni al cuerpo de nadie",
+            "Hacia arriba, cerca de la cara"
+          ],
+          "buena": 0,
+          "porque": "No la enfoques a la cara ni al cuerpo de nadie."
+        },
+        {
+          "caso": "Manipulas nitrógeno líquido.",
+          "opciones": [
+            "Con guantes de protección térmica",
+            "Con guantes de nitrilo"
+          ],
+          "buena": 0,
+          "porque": "Con nitrógeno líquido, guantes de protección térmica."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las normas de las bombonas de gas y de los frigoríficos y congeladores.",
+        "puntos": [
+          "Bombonas: dos manómetros (presión interior y de salida)",
+          "La salida, nunca a la cara ni al cuerpo, y sin mucha presión",
+          "Pueden quemar; casi todos los gases son inflamables",
+          "Nitrógeno líquido y congeladores de -80 °C: guantes térmicos",
+          "El frío extremo también quema"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c32",
+      "n": 32,
+      "titulo": "Cabinas, aparatos con llama y estufas",
+      "diapositivas": "44",
+      "gancho": "En una cabina de bioseguridad hay una luz ultravioleta. ¿La dejarías encendida mientras trabajas?",
+      "profe": {
+        "glosario": "<p><b>Flujo laminar:</b> corriente de aire ordenada que te aísla. <b>Comburente:</b> que aviva la combustión.</p>",
+        "dice": "<p><strong>Cabinas de bioseguridad (campanas de flujo laminar):</strong></p><ul><li>Apaga la <strong>luz UV</strong> mientras trabajas: causa quemaduras y lesiones en ojos y córnea.</li><li>Deja libres los orificios de aire para que funcione el <strong>flujo laminar</strong>.</li><li>Baja el cristal frontal hasta su tope.</li></ul><p><strong>Aparatos con llama:</strong></p><ul><li>Riesgo de <strong>incendio o explosión</strong> por gases <strong>comburentes</strong>, combustibles o inflamables.</li><li>Sustituye o aísla la llama o la sustancia inflamable. Es mejor calentar al <strong>baño maría</strong>.</li><li>Ventila para no alcanzar el <strong>límite inferior de inflamabilidad</strong>.</li><li>Usa un dispositivo que corte el gas ante anomalías y haz un buen mantenimiento.</li></ul><p><strong>Estufas:</strong></p><ul><li>Riesgo de <strong>explosión, incendio e intoxicación</strong> por vapores inflamables, de <strong>sobrecalentamiento</strong> si falla el termostato y de <strong>contacto eléctrico indirecto</strong>.</li><li>Usa estufas con <strong>termostato</strong>.</li><li>Pon extracción si evaporas líquidos volátiles.</li><li>Comprueba que no hay <strong>corrientes de fuga</strong>.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué es mejor calentar al baño maría que con una llama?",
+        "respuesta": "Porque los aparatos con llama tienen riesgo de incendio o explosión con gases comburentes, combustibles o inflamables. Sustituir la llama quita ese riesgo de raíz."
+      },
+      "aplica": [
+        {
+          "caso": "Trabajas en la cabina de bioseguridad.",
+          "opciones": [
+            "Con la luz UV apagada",
+            "Con la luz UV encendida"
+          ],
+          "buena": 0,
+          "porque": "La luz UV causa quemaduras y lesiones en ojos y córnea."
+        },
+        {
+          "caso": "El cristal frontal de la cabina…",
+          "opciones": [
+            "Bajado hasta su tope",
+            "Subido del todo, para ver mejor"
+          ],
+          "buena": 0,
+          "porque": "Baja el cristal frontal hasta su tope."
+        },
+        {
+          "caso": "Evaporas líquidos volátiles en la estufa.",
+          "opciones": [
+            "Pongo extracción",
+            "No hace falta nada"
+          ],
+          "buena": 0,
+          "porque": "Pon extracción si evaporas líquidos volátiles."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las normas de las cabinas de bioseguridad, los aparatos con llama y las estufas.",
+        "puntos": [
+          "Cabina: luz UV apagada al trabajar (quemaduras, ojos y córnea)",
+          "Cabina: orificios de aire libres y cristal bajado hasta su tope",
+          "Llama: riesgo de incendio o explosión; mejor baño maría; ventilar",
+          "Estufas: con termostato; extracción con volátiles; sin corrientes de fuga"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
