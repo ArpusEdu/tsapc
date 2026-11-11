@@ -160,7 +160,8 @@
       '<section aria-labelledby="hAt"><div class="sec-cab"><h2 id="hAt">Atajos</h2></div><div class="notas-fila">' +
       '<a class="nota-boton" data-subject="ipe" href="#/agenda"><b>Horario</b><span class="mano">la semana entera</span></a>' +
       '<a class="nota-boton amarilla" href="#/agenda/calendario"><b>Calendario</b><span class="mano">mes y curso</span></a>' +
-      '<a class="nota-boton" data-subject="lab" href="#/asignaturas"><b>Unidades</b><span class="mano">repaso y simulacro</span></a></div></section>' +
+      '<a class="nota-boton" data-subject="lab" href="#/asignaturas"><b>Unidades</b><span class="mano">repaso y simulacro</span></a>' +
+      '<a class="nota-boton lila" href="../centro/"><b>El centro</b><span class="mano">el pasillo y las salas en 3D</span></a></div></section>' +
       "</div>";
     return { sec: "hoy", titulo: "Hoy", html: html, tic: true };
   }
@@ -391,7 +392,8 @@
         '<span class="asig-txt"><span class="asig-nombre-g">' + S1.nombre + "</span>" + (pf ? '<span class="asig-prof">' + esc(pf) + "</span>" : "") +
         (u.length ? '<span class="asig-cuenta"><b class="num">' + u.length + "</b> " + (u.length === 1 ? "unidad" : "unidades") + "</span>" : '<span class="sello pequeno">Pronto</span>') + "</span></a></li>";
     }).join("");
-    return { sec: "asignaturas", titulo: "Asignaturas", html: '<header class="cab">' + titulo("Asig<em>naturas</em>") + '<p class="sub">Ocho asignaturas, un color cada una. Toca una para ver sus unidades.</p></header><ul class="asignaturas">' + li + "</ul>" };
+    return { sec: "asignaturas", titulo: "Asignaturas", html: '<header class="cab">' + titulo("Asig<em>naturas</em>") + '<p class="sub">Ocho asignaturas, un color cada una. Toca una para ver sus unidades.</p>' +
+      '<p class="centro-entrar"><a class="boton secundario" href="../centro/">' + ico("abrir-fuera") + "Entrar al centro en 3D</a><span class=\"mano\">cada puerta, una asignatura</span></p></header><ul class=\"asignaturas\">" + li + "</ul>" };
   }
   function pAsignatura(s) {
     if (!tiene(A, s)) return pNada();

@@ -1,0 +1,8 @@
+/* Corte · centro: las mismas fuentes autoalojadas de la app (assets/corte/fuentes, licencia SIL OFL 1.1). */
+@font-face{font-family:"Fraunces";src:url("../assets/corte/fuentes/fraunces-var.woff2") format("woff2");font-weight:300 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("../assets/corte/fuentes/fraunces-italic-500.woff2") format("woff2");font-weight:300 800;font-style:italic;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("../assets/corte/fuentes/atkinson-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("../assets/corte/fuentes/atkinson-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("../assets/corte/fuentes/atkinson-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Mono";src:url("../assets/corte/fuentes/atkinson-mono-var.woff2") format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Caveat";src:url("../assets/corte/fuentes/caveat-600.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
