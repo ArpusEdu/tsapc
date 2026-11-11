@@ -1,0 +1,313 @@
+{
+  "schema": 1,
+  "id": "lab2-agentes",
+  "unidad": "lab2",
+  "bloque": 2,
+  "titulo": "Cómo te daña un agente",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.2, conceptos 12 a 16, diapositivas 21 a 25). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El tubo que se rompió",
+    "caso": "Estás centrifugando tubos de sangre de varios pacientes. De pronto se oye un golpe seco dentro de la centrífuga: algo se ha roto. En cuanto se para, tu compañero va a abrir la tapa para ver qué ha pasado y limpiarlo rápido.",
+    "pregunta": "¿Qué le dirías antes de que la abra? ¿Y cómo limpiarías después?",
+    "solucion": "Que espere. La sangre es de los fluidos implicados en la transmisión de agentes biológicos, y hay que evitar las gotas y los aerosoles. La norma es clara: si se rompen tubos en la centrífuga, se esperan 5 minutos antes de abrir. Después, las cestillas y las paredes se desinfectan con lejía 1/10 u otro desinfectante, por inmersión durante 10 minutos. Y todo, con guantes.",
+    "claves": [
+      "Esperar 5 minutos antes de abrir",
+      "Lejía 1/10, 10 minutos por inmersión",
+      "La sangre transmite agentes biológicos"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c12",
+      "n": 12,
+      "titulo": "Vías de intoxicación",
+      "diapositivas": "21",
+      "gancho": "¿Por cuántos caminos distintos puede entrar en tu cuerpo un producto del laboratorio? Intenta decir al menos tres.",
+      "profe": {
+        "glosario": "<p><b>Epidermis:</b> capa externa de la piel.</p>",
+        "dice": "<ul><li><strong>Ingestión:</strong> entra accidentalmente por la <strong>boca</strong> y pasa al sistema digestivo.</li><li><strong>Vía cutánea:</strong> se absorbe por una zona de la <strong>epidermis</strong> sin protección.</li><li><strong>Inhalación:</strong> los <strong>vapores</strong> que desprenden algunas sustancias entran por las vías respiratorias.</li><li><strong>Alérgenos:</strong> sin saberlo, puedes ser <strong>alérgico</strong> a alguna sustancia que manejas.</li></ul><p>A mayor grado de exposición, mayores efectos: cuanto más tiempo ante algo que te daña, más daño.</p><div class=\"tw\"><table><thead><tr><th>Sustancia</th><th>Vía de intoxicación</th></tr></thead><tbody><tr><td>Látex</td><td>Puede ser alérgeno.</td></tr><tr><td>Melocotón</td><td>Puede ser alérgeno.</td></tr><tr><td>HCl (ácido clorhídrico)</td><td>Inhalación de sus vapores o vía cutánea, con quemaduras.</td></tr><tr><td>CuS (sulfuro de cobre)</td><td>Tóxico por vía cutánea.</td></tr></tbody></table></div>",
+        "entiende": "Cuatro entradas: <strong>boca</strong> (ingestión), <strong>piel</strong> (cutánea), <strong>vías respiratorias</strong> (inhalación) y <strong>alergia</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué importa tanto el tiempo de exposición?",
+        "respuesta": "Porque a mayor grado de exposición, mayores efectos: cuanto más tiempo estás ante algo que te daña, más daño te hace. Es la misma lección que la de Marie Curie."
+      },
+      "aplica": [
+        {
+          "caso": "Los vapores del HCl entran por las vías respiratorias.",
+          "opciones": [
+            "Inhalación",
+            "Ingestión",
+            "Vía cutánea"
+          ],
+          "buena": 0,
+          "porque": "Los vapores que entran por las vías respiratorias: inhalación."
+        },
+        {
+          "caso": "Un producto se absorbe por una zona de la piel sin protección.",
+          "opciones": [
+            "Vía cutánea",
+            "Inhalación"
+          ],
+          "buena": 0,
+          "porque": "Es la vía cutánea."
+        },
+        {
+          "caso": "El látex o el melocotón pueden ser…",
+          "opciones": [
+            "Alérgenos",
+            "Tóxicos por inhalación"
+          ],
+          "buena": 0,
+          "porque": "Pueden ser alérgenos: puedes ser alérgico sin saberlo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las vías de intoxicación y qué relación hay entre la exposición y el daño.",
+        "puntos": [
+          "Ingestión: por la boca, al sistema digestivo",
+          "Vía cutánea: se absorbe por la piel sin protección",
+          "Inhalación: los vapores entran por las vías respiratorias",
+          "Alérgenos: puedes ser alérgico sin saberlo",
+          "A mayor exposición, mayores efectos"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Más exposición, más riesgo: la historia de Marie Curie (sesión «Las normas del laboratorio»).",
+          "ruta": "#/sesion/lab2-normas"
+        }
+      ]
+    },
+    {
+      "id": "lab2.c13",
+      "n": 13,
+      "titulo": "Químicos, radiactivos y biológicos",
+      "diapositivas": "22",
+      "gancho": "Un ácido, la radiación de una máquina de rayos X y una bacteria pueden hacerte daño. ¿En qué se diferencian sus formas de dañarte?",
+      "profe": {
+        "glosario": "<p><b>Radiación:</b> forma de transmisión de la energía.</p>",
+        "dice": "<ul><li><strong>Químicos:</strong> elementos o compuestos químicos <strong>comerciales</strong> ya preparados, y también las <strong>mezclas o productos de reacción</strong> que se preparan durante la experimentación.</li><li><strong>Radiactivos:</strong> su daño se considera un <strong>daño físico</strong>. La <strong>radiación</strong> es una <strong>forma de transmisión de la energía</strong>; se propaga como ondas electromagnéticas (rayos X, ultravioleta, ondas de radio) o como partículas (α, β). No todas son malignas: el calor de la luz del Sol es beneficioso.</li><li><strong>Biológicos:</strong> contaminación por <strong>organismos vivos</strong> o por <strong>restos derivados</strong> de ellos. Se produce sobre todo por <strong>infección</strong> o <strong>alergia</strong>, además de por toxicidad.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "Si la radiación puede ser tan peligrosa, ¿es mala toda radiación?",
+        "respuesta": "No. La radiación es una forma de transmisión de la energía, y no todas son malignas: el calor de la luz del Sol, por ejemplo, es beneficioso."
+      },
+      "aplica": [
+        {
+          "caso": "Una mezcla que preparas durante un experimento.",
+          "opciones": [
+            "Químico",
+            "Radiactivo",
+            "Biológico"
+          ],
+          "buena": 0,
+          "porque": "Los químicos incluyen también las mezclas o productos que se preparan al experimentar."
+        },
+        {
+          "caso": "Contaminación por restos de organismos vivos.",
+          "opciones": [
+            "Químico",
+            "Biológico"
+          ],
+          "buena": 1,
+          "porque": "Biológicos: organismos vivos o restos derivados de ellos."
+        },
+        {
+          "caso": "Su daño se considera un daño físico.",
+          "opciones": [
+            "Radiactivo",
+            "Químico"
+          ],
+          "buena": 0,
+          "porque": "El daño de los radiactivos se considera un daño físico."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las tres categorías de reactivos y agentes y cómo dañan.",
+        "puntos": [
+          "Químicos: compuestos comerciales y las mezclas o productos que preparas",
+          "Radiactivos: daño físico; la radiación transmite energía (ondas o partículas)",
+          "No toda radiación es mala (el calor del Sol)",
+          "Biológicos: organismos vivos o sus restos; por infección, alergia y toxicidad"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c14",
+      "n": 14,
+      "titulo": "Radiaciones ionizantes y no ionizantes",
+      "diapositivas": "23",
+      "gancho": "La misma radiación que puede dañar tejidos se usa para tratar el cáncer. ¿Cómo puede ser las dos cosas a la vez?",
+      "profe": {
+        "glosario": "<p><b>Partículas subatómicas:</b> más pequeñas que el átomo. <b>Ionización:</b> rotura de enlaces de los átomos del entorno.</p>",
+        "dice": "<p>Se clasifican según la cantidad de energía que transportan.</p><ul><li><strong>Ionizantes:</strong> núcleos inestables se desintegran y emiten <strong>partículas subatómicas</strong> de forma espontánea y aleatoria. Una onda también es ionizante si tiene energía para producir la <strong>ionización</strong> o rotura de enlaces de los átomos de su alrededor.</li><li><strong>No ionizantes:</strong> no tienen energía suficiente para romper los enlaces de los átomos de su alrededor.</li></ul><p><strong>Beneficio y daño:</strong> se usan en pruebas clínicas y en alimentación. La <strong>terapia por radiación</strong> destruye células cancerígenas, pero puede destruir tejidos, dañar el aparato digestivo, reducir células o causar daño genético.</p><p><strong>¿Cómo te contamina?</strong> La radiación está en el ambiente (la Tierra y las <strong>radiaciones cósmicas</strong>). Puede quedar en superficies o en tu cuerpo, sin que te des cuenta, por <strong>contacto directo</strong>, por <strong>ingestión</strong> de un alimento radiado o por <strong>absorción por la piel</strong>.</p>"
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia a una radiación ionizante de una no ionizante?",
+        "respuesta": "La energía que transporta: la ionizante tiene energía suficiente para romper los enlaces de los átomos de su alrededor (ionización); la no ionizante, no."
+      },
+      "aplica": [
+        {
+          "caso": "Tiene energía suficiente para romper los enlaces de los átomos de alrededor.",
+          "opciones": [
+            "Ionizante",
+            "No ionizante"
+          ],
+          "buena": 0,
+          "porque": "Eso es la ionización."
+        },
+        {
+          "caso": "¿Puede quedar radiación en tu cuerpo sin que te des cuenta?",
+          "opciones": [
+            "Sí",
+            "No"
+          ],
+          "buena": 0,
+          "porque": "Puede quedar en superficies o en tu cuerpo sin que te des cuenta."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los dos tipos de radiación, su beneficio y su daño, y cómo te puede contaminar.",
+        "puntos": [
+          "Se clasifican según la energía que transportan",
+          "Ionizantes: rompen enlaces de los átomos (núcleos inestables emiten partículas)",
+          "No ionizantes: no tienen energía para romper enlaces",
+          "Beneficio (pruebas clínicas, terapia contra el cáncer) y daño (tejidos, daño genético…)",
+          "Contamina por contacto, ingestión o absorción por la piel, sin darte cuenta"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c15",
+      "n": 15,
+      "titulo": "Agentes biológicos y fluidos humanos",
+      "diapositivas": "24",
+      "gancho": "En tu trabajo vas a manejar sangre, orina y líquidos de dentro del cuerpo. ¿Crees que todos son igual de arriesgados?",
+      "profe": {
+        "dice": "<p><strong>Microorganismos:</strong> virus, bacterias u otras unidades unicelulares capaces de reproducirse o transferir material genético. <strong>Animales:</strong> los usados en experimentación (ratas, conejos…). <strong>Restos de organismos vivos:</strong> pelos, uñas, restos celulares…</p><p><strong>Fluidos biológicos humanos:</strong></p><div class=\"tw\"><table><thead><tr><th>Riesgo</th><th>Fluidos</th></tr></thead><tbody><tr><td><strong>Implicados en la transmisión</strong> de agentes biológicos</td><td>Sangre, suero, plasma y todos los fluidos visiblemente contaminados con sangre.</td></tr><tr><td><strong>Potencialmente infecciosos</strong> (si su riesgo es desconocido)</td><td>Líquido cefalorraquídeo, sinovial, pleural, peritoneal, pericárdico y amniótico.</td></tr><tr><td><strong>No vinculados con la transmisión laboral</strong> (riesgo extremadamente bajo, salvo que contengan sangre)</td><td>Secreciones nasales, esputos, sudor, lágrimas, orina, saliva, heces, vómitos y leche materna.</td></tr></tbody></table></div>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué la orina o la saliva son de riesgo extremadamente bajo… pero no siempre?",
+        "respuesta": "Porque no están vinculadas con la transmisión laboral de agentes biológicos, salvo que contengan sangre. La sangre lo cambia todo: los fluidos visiblemente contaminados con sangre pasan a ser de riesgo."
+      },
+      "aplica": [
+        {
+          "caso": "Sangre, suero o plasma.",
+          "opciones": [
+            "Implicados en la transmisión",
+            "Riesgo extremadamente bajo"
+          ],
+          "buena": 0,
+          "porque": "Están implicados en la transmisión de agentes biológicos."
+        },
+        {
+          "caso": "Líquido cefalorraquídeo cuyo riesgo se desconoce.",
+          "opciones": [
+            "Potencialmente infeccioso",
+            "Riesgo extremadamente bajo"
+          ],
+          "buena": 0,
+          "porque": "Es potencialmente infeccioso si su riesgo es desconocido."
+        },
+        {
+          "caso": "Saliva sin sangre.",
+          "opciones": [
+            "Implicada en la transmisión",
+            "Riesgo extremadamente bajo"
+          ],
+          "buena": 1,
+          "porque": "Riesgo extremadamente bajo, salvo que contenga sangre."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son los agentes biológicos y cómo se clasifican los fluidos humanos según su riesgo?",
+        "puntos": [
+          "Microorganismos, animales de experimentación y restos de organismos vivos",
+          "Implicados en la transmisión: sangre, suero, plasma y fluidos con sangre",
+          "Potencialmente infecciosos: cefalorraquídeo, sinovial, pleural, peritoneal, pericárdico y amniótico",
+          "Riesgo extremadamente bajo (salvo con sangre): secreciones, sudor, lágrimas, orina, saliva…"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c16",
+      "n": 16,
+      "titulo": "Medidas preventivas del riesgo biológico",
+      "diapositivas": "25",
+      "gancho": "Si tuvieras que trabajar con muestras biológicas sin contagiarte, ¿qué cinco normas te pondrías? Piénsalas antes de mirar.",
+      "profe": {
+        "glosario": "<p><b>Aerosoles:</b> gotas diminutas suspendidas en el aire.</p>",
+        "dice": "<ul><li>Manipula <strong>cualquier muestra siempre con guantes</strong>.</li><li>Transporta las muestras en recipientes con <strong>tapa segura</strong>.</li><li>Evita las gotas y los <strong>aerosoles</strong>. Usa <strong>cabinas de seguridad biológica (I y II)</strong> al homogeneizar y en las mezclas vigorosas.</li><li>Si se rompen tubos en la centrífuga, <strong>espera 5 minutos</strong> antes de abrir. Desinfecta cestillas y paredes con <strong>lejía 1/10</strong> u otro desinfectante, por inmersión durante <strong>10 minutos</strong>.</li><li><strong>No pipetees con la boca</strong>: usa sistemas mecánicos.</li><li>Restringe el uso de agujas y jeringas, y deséchalas en <strong>contenedores sólidos especiales</strong>.</li><li>Descontamina el material potencialmente contaminado, mejor por <strong>esterilización</strong>, antes de reutilizarlo, repararlo o transportarlo.</li><li>No comas, no bebas, no fumes.</li><li><strong>Lávate las manos</strong> al acabar, antes de salir y al quitarte la bata. La ropa es solo para el laboratorio.</li><li><strong>Reconocimiento médico anual</strong>, con revisión de vacunas.</li></ul>",
+        "entiende": "Dos tiempos distintos en la centrífuga: <strong>5 minutos de espera</strong> antes de abrir y <strong>10 minutos</strong> de inmersión en lejía 1/10.",
+        "truco": "5 de espera, 10 de lejía 1/10."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que descontaminar el material antes de reutilizarlo, repararlo o transportarlo?",
+        "respuesta": "Porque puede estar contaminado aunque no se vea, y quien lo use, lo arregle o lo lleve después quedaría expuesto. Lo mejor es descontaminarlo por esterilización, que elimina todos los microorganismos."
+      },
+      "aplica": [
+        {
+          "caso": "Se rompe un tubo en la centrífuga. ¿Cuándo abres?",
+          "opciones": [
+            "Enseguida",
+            "Espero 5 minutos"
+          ],
+          "buena": 1,
+          "porque": "Se esperan 5 minutos antes de abrir."
+        },
+        {
+          "caso": "Desinfectas las cestillas de la centrífuga…",
+          "opciones": [
+            "Con lejía 1/10, por inmersión durante 10 minutos",
+            "Con agua del grifo"
+          ],
+          "buena": 0,
+          "porque": "Lejía 1/10 u otro desinfectante, por inmersión 10 minutos."
+        },
+        {
+          "caso": "Tienes que pipetear una muestra.",
+          "opciones": [
+            "Con la boca, con cuidado",
+            "Con un sistema mecánico"
+          ],
+          "buena": 1,
+          "porque": "No pipetees con la boca: usa sistemas mecánicos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las medidas preventivas del riesgo biológico.",
+        "puntos": [
+          "Siempre con guantes; transporte en recipientes con tapa segura",
+          "Evitar gotas y aerosoles: cabinas de seguridad biológica",
+          "Tubo roto en la centrífuga: esperar 5 min; lejía 1/10 por inmersión 10 min",
+          "No pipetear con la boca; agujas restringidas y en contenedores especiales",
+          "Descontaminar (mejor esterilizando); no comer ni beber; lavarse las manos; revisión médica anual"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La esterilización elimina todos los microorganismos, también las esporas (sesión «Limpieza, desinfección y esterilización» de Lab 1).",
+          "ruta": "#/sesion/lab1-limpieza"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

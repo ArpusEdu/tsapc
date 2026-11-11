@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "id": "lab2-etiquetas",
+  "unidad": "lab2",
+  "bloque": 2,
+  "titulo": "Etiquetas, fichas y almacén",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.2, conceptos 17 a 20, diapositivas 26 a 30). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Vecinos peligrosos",
+    "caso": "Hay que hacer sitio en el almacén. Alguien pone en la misma balda un bote con el pictograma de inflamable y otro con el de comburente, porque «son del mismo tamaño y quedan ordenados». La persona responsable del almacén, al verlo, los separa enseguida.",
+    "pregunta": "¿Por qué los separa, si los dos botes estaban bien cerrados?",
+    "solucion": "Porque hay sustancias que no pueden almacenarse juntas. En la tabla de compatibilidades, inflamable y comburente se cruzan en una casilla «−»: son incompatibles y se guardan separados. Antes de colocar un producto hay que mirar su pictograma y cruzarlo con el de sus vecinos.",
+    "claves": [
+      "Inflamable × comburente = incompatibles",
+      "Fila × columna en la tabla",
+      "Mirar el pictograma antes de guardar"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c17",
+      "n": 17,
+      "titulo": "Cuándo es peligroso un agente químico",
+      "diapositivas": "26",
+      "gancho": "¿Cuándo dirías que un producto químico es «peligroso»? ¿Solo si quema o explota?",
+      "profe": {
+        "glosario": "<p><b>Vía parenteral:</b> entrada a través de la piel por un pinchazo o un corte.</p>",
+        "dice": "<p>Un agente químico es peligroso cuando puede causar un riesgo para la seguridad y la salud de los trabajadores, porque tiene <strong>capacidad para causar daño por sus propiedades físicas, químicas y/o toxicológicas</strong>.</p><p>Riesgos a evaluar (uno o varios):</p><ul><li>incendio y/o explosión;</li><li>reacciones químicas peligrosas;</li><li>inhalación;</li><li>absorción a través de la piel;</li><li>contacto con la piel o los ojos;</li><li>ingestión;</li><li>penetración por <strong>vía parenteral</strong> (pinchazo o corte).</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué la «vía parenteral» aparece entre los riesgos de un agente químico?",
+        "respuesta": "Porque un producto químico también puede entrar a través de la piel por un pinchazo o un corte, y no solo al respirarlo, tocarlo o tragarlo."
+      },
+      "aplica": [
+        {
+          "caso": "Un producto entra por un pinchazo o un corte.",
+          "opciones": [
+            "Vía parenteral",
+            "Inhalación"
+          ],
+          "buena": 0,
+          "porque": "Es la penetración por vía parenteral."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cuándo es peligroso un agente químico y qué riesgos hay que evaluar?",
+        "puntos": [
+          "Cuando puede causar daño por sus propiedades físicas, químicas y/o toxicológicas",
+          "Incendio y/o explosión; reacciones químicas peligrosas",
+          "Inhalación, absorción por la piel, contacto con piel u ojos",
+          "Ingestión y penetración por vía parenteral (pinchazo o corte)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c18",
+      "n": 18,
+      "titulo": "Pictogramas y etiquetado",
+      "diapositivas": "27 y 28",
+      "gancho": "Ves un bote con una «T+» en la etiqueta y otro con una «Xi». ¿Cuál cogerías con más cuidado, y por qué?",
+      "profe": {
+        "dice": "<p>La información de riesgo de un agente químico está en la <strong>etiqueta del producto</strong> y en la <strong>ficha de datos de seguridad (FDS)</strong>.</p><div class=\"tw\"><table><thead><tr><th>Letra</th><th>Significado</th></tr></thead><tbody><tr><td><strong>C</strong></td><td>Corrosivo</td></tr><tr><td><strong>E</strong></td><td>Explosivo</td></tr><tr><td><strong>O</strong></td><td>Comburente</td></tr><tr><td><strong>F</strong></td><td>Fácilmente inflamable</td></tr><tr><td><strong>F+</strong></td><td>Extremadamente inflamable</td></tr><tr><td><strong>T</strong></td><td>Tóxico</td></tr><tr><td><strong>T+</strong></td><td>Extremadamente tóxico</td></tr><tr><td><strong>Xi</strong></td><td>Irritante</td></tr><tr><td><strong>Xn</strong></td><td>Nocivo</td></tr><tr><td><strong>R</strong></td><td>Radioactivo</td></tr><tr><td><strong>N</strong></td><td>Peligroso para el medioambiente</td></tr></tbody></table></div><p>Los productos que prepares y almacenes también llevan su símbolo, igual que los comerciales. En la etiqueta fíjate, además, en el símbolo <strong>N: peligroso para el medioambiente</strong> (el pez y el árbol).</p><p>La etiqueta de la figura de la diapositiva 28 (tiourea de Fluka) usa <strong>pictogramas antiguos</strong>; los actualizados son los de la diapositiva anterior.</p><p><strong>En tu puesto de trabajo:</strong> cuando prepares una dilución o una mezcla y la guardes, rotúlala con su nombre y su pictograma, igual que un reactivo comercial.</p>",
+        "truco": "<strong>F</strong> = fácilmente inflamable y <strong>F+</strong> = extremadamente; <strong>T</strong> = tóxico y <strong>T+</strong> = extremadamente tóxico; <strong>Xi</strong> irritante, <strong>Xn</strong> nocivo."
+      },
+      "porque": {
+        "pregunta": "¿Por qué una dilución que preparas tú también tiene que llevar su pictograma?",
+        "respuesta": "Porque es tan peligrosa como el reactivo del que sale, y quien la encuentre después tiene que saber qué es y qué riesgo tiene. Lo que preparas y guardas lleva su símbolo, igual que un producto comercial."
+      },
+      "aplica": [
+        {
+          "caso": "T+",
+          "opciones": [
+            "Extremadamente tóxico",
+            "Tóxico",
+            "Nocivo"
+          ],
+          "buena": 0,
+          "porque": "T+ = extremadamente tóxico."
+        },
+        {
+          "caso": "O",
+          "opciones": [
+            "Comburente",
+            "Corrosivo",
+            "Explosivo"
+          ],
+          "buena": 0,
+          "porque": "O = comburente."
+        },
+        {
+          "caso": "Xn",
+          "opciones": [
+            "Irritante",
+            "Nocivo"
+          ],
+          "buena": 1,
+          "porque": "Xi = irritante; Xn = nocivo."
+        },
+        {
+          "caso": "N (el pez y el árbol)",
+          "opciones": [
+            "Peligroso para el medioambiente",
+            "Nocivo"
+          ],
+          "buena": 0,
+          "porque": "N = peligroso para el medioambiente."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Dónde está la información de riesgo y qué significan las letras de los pictogramas?",
+        "puntos": [
+          "En la etiqueta y en la ficha de datos de seguridad (FDS)",
+          "C corrosivo, E explosivo, O comburente",
+          "F / F+ inflamable / extremadamente; T / T+ tóxico / extremadamente",
+          "Xi irritante, Xn nocivo, R radioactivo, N medioambiente",
+          "Lo que preparas y guardas también lleva su pictograma"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La peligrosidad era uno de los 4 criterios para clasificar los reactivos (sesión «Reactivos químicos» de Lab 1).",
+          "ruta": "#/sesion/lab1-reactivos"
+        }
+      ]
+    },
+    {
+      "id": "lab2.c19",
+      "n": 19,
+      "titulo": "Fichas de datos de seguridad (FDS)",
+      "diapositivas": "29",
+      "gancho": "Se te cae un producto químico en la mano. ¿Dónde buscarías, deprisa, qué hacer?",
+      "profe": {
+        "dice": "<p>Hay que tener un archivo con la FDS de <strong>cada producto químico</strong>, en español, por orden alfabético, actualizado, <strong>visible y accesible</strong> a cualquier trabajador. Sus 16 epígrafes:</p><div class=\"tw\"><table><thead><tr><th>N.º</th><th>Epígrafe</th></tr></thead><tbody><tr><td>1</td><td>Identificación del preparado y del responsable de su comercialización</td></tr><tr><td>2</td><td>Composición / información sobre sus componentes</td></tr><tr><td>3</td><td>Identificación de los peligros</td></tr><tr><td><strong>4</strong></td><td><strong>Primeros auxilios</strong></td></tr><tr><td>5</td><td>Medidas de lucha contra incendios</td></tr><tr><td><strong>6</strong></td><td><strong>Medidas en caso de vertido accidental</strong></td></tr><tr><td>7</td><td>Manipulación y almacenamiento</td></tr><tr><td>8</td><td>Controles de exposición y protección individual</td></tr><tr><td>9</td><td>Propiedades físicas y químicas</td></tr><tr><td>10</td><td>Estabilidad y reactividad</td></tr><tr><td>11</td><td>Informaciones toxicológicas</td></tr><tr><td>12</td><td>Informaciones ecológicas</td></tr><tr><td>13</td><td>Consideraciones sobre la eliminación</td></tr><tr><td>14</td><td>Informaciones relativas al transporte</td></tr><tr><td>15</td><td>Informaciones reglamentarias</td></tr><tr><td>16</td><td>Otras informaciones</td></tr></tbody></table></div><p>Los epígrafes <strong>4 y 6</strong> son muy importantes en los primeros momentos de un accidente o incidente.</p>",
+        "entiende": "En un accidente, lo primero que miras es el <strong>4 (primeros auxilios)</strong> y el <strong>6 (vertido accidental)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué las FDS tienen que estar en español, ordenadas y a la vista de todos?",
+        "respuesta": "Porque en un accidente cualquiera tiene que encontrar la ficha en segundos y entenderla. Por eso el archivo va en español, por orden alfabético, actualizado, visible y accesible a cualquier trabajador."
+      },
+      "aplica": [
+        {
+          "caso": "Alguien se ha salpicado: ¿qué epígrafe miras primero?",
+          "opciones": [
+            "El 4, primeros auxilios",
+            "El 9, propiedades físicas"
+          ],
+          "buena": 0,
+          "porque": "En un accidente, lo primero: el 4 (primeros auxilios) y el 6 (vertido accidental)."
+        },
+        {
+          "caso": "Se ha volcado un bote en la mesa.",
+          "opciones": [
+            "El 6, vertido accidental",
+            "El 15, reglamentación"
+          ],
+          "buena": 0,
+          "porque": "El 6: medidas en caso de vertido accidental."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo tiene que estar el archivo de FDS y cuáles son los epígrafes clave en un accidente?",
+        "puntos": [
+          "Una FDS de cada producto químico",
+          "En español, por orden alfabético, actualizado, visible y accesible",
+          "16 epígrafes",
+          "Epígrafe 4: primeros auxilios",
+          "Epígrafe 6: medidas en caso de vertido accidental"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c20",
+      "n": 20,
+      "titulo": "Lo que no se puede guardar junto",
+      "diapositivas": "30",
+      "gancho": "¿Guardarías un producto inflamable junto a uno tóxico? ¿Y junto a uno explosivo? Apuesta antes de mirar la tabla.",
+      "profe": {
+        "dice": "<p>Hay sustancias que <strong>no pueden almacenarse juntas</strong>. Tabla de compatibilidades (fila × columna):</p><div class=\"tw\"><table><thead><tr><th></th><th>Inflamable</th><th>Explosivo</th><th>Tóxico</th><th>Radioactivo</th><th>Comburente</th><th>Irritante/Nocivo</th></tr></thead><tbody><tr><td><strong>Inflamable</strong></td><td>+</td><td>−</td><td>−</td><td>−</td><td>−</td><td>+</td></tr><tr><td><strong>Explosivo</strong></td><td>−</td><td>+</td><td>−</td><td>−</td><td>−</td><td>−</td></tr><tr><td><strong>Tóxico</strong></td><td>−</td><td>−</td><td>+</td><td>−</td><td>−</td><td>+</td></tr><tr><td><strong>Radioactivo</strong></td><td>−</td><td>−</td><td>−</td><td>+</td><td>−</td><td>−</td></tr><tr><td><strong>Comburente</strong></td><td>−</td><td>−</td><td>−</td><td>−</td><td>+</td><td>0</td></tr><tr><td><strong>Irritante / Nocivo</strong></td><td>+</td><td>−</td><td>+</td><td>−</td><td>0</td><td>+</td></tr></tbody></table></div><p><strong>+</strong> = compatibles (pueden almacenarse juntas) · <strong>−</strong> = incompatibles (separadas) · <strong>0</strong> = compatibilidad condicionada (juntas solo tomando ciertas precauciones; conviene consultar las condiciones específicas).</p><p><strong>Cómo se lee:</strong> busca el pictograma de un producto en la fila y el del otro en la columna; la casilla donde se cruzan te dice si se pueden guardar juntos.</p>",
+        "entiende": "Lo <strong>explosivo y lo radioactivo</strong> solo son compatibles consigo mismos. Con <strong>irritante/nocivo</strong> sí se pueden juntar inflamables y tóxicos."
+      },
+      "porque": {
+        "pregunta": "¿Cómo se lee la tabla de compatibilidades?",
+        "respuesta": "Buscas el pictograma de un producto en la fila y el del otro en la columna. La casilla donde se cruzan te dice si se pueden guardar juntos (+), si no (−) o si solo con ciertas precauciones (0)."
+      },
+      "aplica": [
+        {
+          "caso": "Inflamable con irritante/nocivo.",
+          "opciones": [
+            "Compatibles (+)",
+            "Incompatibles (−)"
+          ],
+          "buena": 0,
+          "porque": "Con irritante/nocivo se pueden juntar inflamables y tóxicos."
+        },
+        {
+          "caso": "Explosivo con tóxico.",
+          "opciones": [
+            "Compatibles (+)",
+            "Incompatibles (−)"
+          ],
+          "buena": 1,
+          "porque": "Lo explosivo solo es compatible consigo mismo."
+        },
+        {
+          "caso": "Comburente con irritante/nocivo.",
+          "opciones": [
+            "Compatibles (+)",
+            "Condicionada (0)",
+            "Incompatibles (−)"
+          ],
+          "buena": 1,
+          "porque": "Es un 0: juntos solo tomando ciertas precauciones."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica cómo se lee la tabla de compatibilidades y di qué productos solo son compatibles consigo mismos.",
+        "puntos": [
+          "Fila × columna: la casilla dice si se pueden guardar juntos",
+          "+ compatibles, − incompatibles, 0 condicionada",
+          "Explosivo y radioactivo: solo compatibles consigo mismos",
+          "Con irritante/nocivo se pueden juntar inflamables y tóxicos"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
