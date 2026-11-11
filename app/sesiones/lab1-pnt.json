@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "id": "lab1-pnt",
+  "unidad": "lab1",
+  "bloque": 7,
+  "titulo": "Recursos y procedimientos normalizados (PNT)",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloques 6 y 7, diapositivas 70 a 75). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El atajo",
+    "caso": "Una técnica descubre que, si se salta un paso al preparar el equipo instrumental, termina antes. Funciona, así que lo hace así a partir de entonces. No se lo cuenta a nadie porque «es una tontería». Semanas después, los resultados de varios análisis no cuadran, nadie sabe por qué y hay que repetirlos todos.",
+    "pregunta": "¿Qué falló, si el atajo «funcionaba»? ¿Cómo se habría evitado?",
+    "solucion": "Falló el procedimiento, no la técnica. Los equipos instrumentales se usan siguiendo su PNT, que está escrito y aprobado por un comité y se lee antes de trabajar: existe para cometer el mínimo de errores. Si se modifica algo, hay que comunicarlo al comité que lo autorizó, y si el cambio es grande, hacer una versión nueva. Por saltárselo, ahora toca repetir los experimentos, y repetir cuesta tiempo y dinero.",
+    "claves": [
+      "El PNT se lee y se sigue",
+      "Cambio → avisar al comité",
+      "Repetir cuesta tiempo y dinero"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c42",
+      "n": 42,
+      "titulo": "Uso eficiente de los recursos",
+      "diapositivas": "70",
+      "gancho": "Repetir un análisis que salió mal: ¿qué crees que cuesta, además de la muestra?",
+      "profe": {
+        "dice": "<p>es esencial conocer los recursos y usarlos bien. <strong>¿Qué garantizamos?</strong></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Que lo hacemos <strong>correctamente</strong></th>\n<th>Que lo <strong>valoramos</strong></th>\n<th>Que <strong>ahorramos</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Aplicando bien <strong>normas, procedimientos y protocolos</strong></td>\n<td>Poniendo <strong>interés</strong> en lo que hacemos, <strong>sin distraernos</strong></td>\n<td>Usando material y equipos pensando en la <strong>economía del laboratorio</strong>: <strong>repetir un experimento cuesta tiempo y dinero</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>Además:</p>\n<ul>\n<li>Conocer las <strong>normas de seguridad e higiene</strong> y los procedimientos <strong>antes de trabajar</strong>.</li>\n<li>Conocer el <strong>uso correcto</strong> de los compuestos químicos y el funcionamiento del material y los equipos <strong>antes de usarlos</strong>.</li>\n<li>Usar con <strong>responsabilidad</strong> la instrumentación y <strong>eliminar bien los residuos</strong>, sin dañar el medio ambiente.</li>\n<li>Garantizar <strong>nuestra seguridad y la de los compañeros</strong>.</li>\n</ul>",
+        "truco": "<strong>\"Co-Va-Ah\"</strong> → <strong>Co</strong>rrectamente, <strong>Va</strong>loramos, <strong>Ah</strong>orramos."
+      },
+      "porque": {
+        "pregunta": "¿Qué tiene que ver «poner interés, sin distraernos» con ahorrar?",
+        "respuesta": "Mucho: un despiste obliga a repetir el experimento, y repetirlo cuesta tiempo y dinero. Trabajar con atención y siguiendo los procedimientos es la forma más directa de no desperdiciar recursos."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué garantizamos con un uso eficiente de los recursos?",
+          "opciones": [
+            "Que lo hacemos correctamente, que lo valoramos y que ahorramos",
+            "Que vamos más rápido y usamos menos material",
+            "Que el equipo dura más y no hay que limpiarlo"
+          ],
+          "buena": 0,
+          "porque": "«Co-Va-Ah»: correctamente, valoramos, ahorramos."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué garantizamos con un uso eficiente de los recursos y cómo lo conseguimos?",
+        "puntos": [
+          "Que lo hacemos correctamente, que lo valoramos y que ahorramos",
+          "Aplicando bien normas, procedimientos y protocolos",
+          "Poniendo interés, sin distraernos",
+          "Pensando en la economía del laboratorio: repetir cuesta tiempo y dinero",
+          "Conocer normas, compuestos y equipos antes de usarlos y eliminar bien los residuos"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Eliminar bien los residuos y garantizar tu seguridad y la de tus compañeros lo estudias a fondo en Lab 2 · Seguridad.",
+          "ruta": "#/unidad/lab2"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c43",
+      "n": 43,
+      "titulo": "Qué son los PNT",
+      "diapositivas": "71",
+      "gancho": "Llegas a un laboratorio nuevo y hay un equipo que no has visto nunca. ¿Qué te gustaría tener por escrito antes de tocarlo?",
+      "profe": {
+        "glosario": "<p><b>PNT:</b> Procedimiento Normalizado de Trabajo, las «instrucciones oficiales» del laboratorio. <b>Normalizado:</b> hecho siempre según una norma, igual para todos. <b>Comité:</b> grupo de personas que revisa y aprueba.</p>",
+        "dice": "<ul>\n<li>Describen el <strong>protocolo de trabajo</strong>, las <strong>características de un instrumento según el fabricante</strong> y sus <strong>aplicaciones</strong> en el laboratorio.</li>\n<li>Deben ser <strong>escritos y aprobados por un comité</strong> de la empresa, y <strong>se leen antes de empezar a trabajar</strong>.</li>\n<li>Se pueden hacer de todos los procedimientos, pero <strong>lo más habitual es para los equipos instrumentales</strong>.</li>\n</ul>\n<p><strong>Partes de un PNT (6):</strong></p>\n<ol>\n<li><strong>Título</strong></li>\n<li><strong>Descripción del equipo</strong></li>\n<li><strong>Fundamento físico</strong> en que se apoya</li>\n<li><strong>Normas del buen funcionamiento</strong></li>\n<li><strong>Aplicaciones concretas</strong></li>\n<li><strong>Documentos que lo acompañan</strong> (fabricante, garantía de calidad)</li>\n</ol>",
+        "truco": "<strong>Truco de las 6 partes:</strong> <strong>\"Ti-De-Fu-No-A-Do\"</strong> → \"<strong>Ti</strong>to <strong>De</strong>be <strong>Fu</strong>mar <strong>No</strong>, <strong>A</strong>sí <strong>Do</strong>rmirá\"."
+      },
+      "porque": {
+        "pregunta": "¿Por qué un PNT tiene que estar escrito y aprobado por un comité, y no basta con que alguien te lo explique?",
+        "respuesta": "Porque así todo el mundo trabaja igual, con unas instrucciones revisadas y oficiales que se leen antes de empezar. Lo que se cuenta de palabra cambia de una persona a otra; lo escrito y aprobado, no. Eso es lo que significa «normalizado»."
+      },
+      "aplica": [
+        {
+          "caso": "¿Quién aprueba un PNT?",
+          "opciones": [
+            "El fabricante del equipo",
+            "Un comité de la empresa",
+            "El técnico que lo usa"
+          ],
+          "buena": 1,
+          "porque": "Los PNT deben ser escritos y aprobados por un comité de la empresa."
+        },
+        {
+          "caso": "¿Para qué es más habitual hacer un PNT?",
+          "opciones": [
+            "Para los equipos instrumentales",
+            "Para ordenar las estanterías"
+          ],
+          "buena": 0,
+          "porque": "Se pueden hacer de todos los procedimientos, pero lo más habitual es para los equipos instrumentales."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es un PNT, quién lo aprueba y cuáles son sus 6 partes?",
+        "puntos": [
+          "Describe el protocolo de trabajo y las características de un instrumento y sus aplicaciones",
+          "Escrito y aprobado por un comité de la empresa; se lee antes de trabajar",
+          "Lo más habitual: para los equipos instrumentales",
+          "Partes: título, descripción del equipo, fundamento físico",
+          "Partes: normas del buen funcionamiento, aplicaciones y documentos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c44",
+      "n": 44,
+      "titulo": "Por qué son importantes los PNT",
+      "diapositivas": "72",
+      "gancho": "Si se te ocurre una forma más rápida de hacer un paso de un PNT, ¿puedes cambiarlo sin más?",
+      "profe": {
+        "glosario": "<p><b>Propiedad intelectual:</b> algo creado por el laboratorio que le pertenece, como una receta secreta.</p>",
+        "dice": "<ul>\n<li>Son <strong>parte de la propiedad intelectual del laboratorio</strong>; se trabaja con ellos para <strong>cometer el mínimo de errores</strong>.</li>\n<li>Es <strong>obligado leerlos bien</strong> y tenerlos presentes <strong>siempre antes de trabajar</strong>.</li>\n<li>Si se <strong>modifica algo</strong>, hay que <strong>comunicarlo al comité que lo autorizó</strong>.</li>\n<li>Si se ha <strong>modificado mucho</strong>, lo mejor es hacer <strong>una versión nueva del PNT</strong>.</li>\n</ul>",
+        "truco": "<strong>\"Poco cambio → avisa al comité · Mucho cambio → PNT nuevo\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué, si cambias algo de un PNT, hay que avisar al comité que lo autorizó?",
+        "respuesta": "Porque el PNT es lo que garantiza que se trabaja con el mínimo de errores, y es propiedad intelectual del laboratorio: no es de quien lo usa. Si cambia sin control, deja de ser fiable para todos los demás."
+      },
+      "aplica": [
+        {
+          "caso": "Has cambiado un detalle pequeño del procedimiento.",
+          "opciones": [
+            "No hago nada",
+            "Lo comunico al comité que lo autorizó",
+            "Hago un PNT nuevo"
+          ],
+          "buena": 1,
+          "porque": "Si se modifica algo, hay que comunicarlo al comité que lo autorizó."
+        },
+        {
+          "caso": "Has cambiado muchas cosas del procedimiento.",
+          "opciones": [
+            "Lo comunico y sigo con el mismo",
+            "Lo mejor es hacer una versión nueva del PNT"
+          ],
+          "buena": 1,
+          "porque": "Si se ha modificado mucho, lo mejor es hacer una versión nueva del PNT."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Por qué son importantes los PNT y qué se hace si se modifican?",
+        "puntos": [
+          "Son propiedad intelectual del laboratorio",
+          "Se trabaja con ellos para cometer el mínimo de errores",
+          "Es obligado leerlos y tenerlos presentes antes de trabajar",
+          "Poco cambio → comunicarlo al comité",
+          "Mucho cambio → una versión nueva del PNT"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c45",
+      "n": 45,
+      "titulo": "Un PNT de verdad: el colector de fracciones",
+      "diapositivas": "73, 74 y 75",
+      "gancho": "Ahora un PNT real, de un aparato que no conoces. No intentes memorizar el aparato: busca dónde está cada una de las 6 partes.",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Parte</th>\n<th>En el ejemplo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Objetivo</strong></td>\n<td>Modo colector del <strong>nanoHPLC</strong> conectado en línea, para colectar fracciones en placa y analizarlas por <strong>espectrometría de masas con fuente MALDI</strong></td>\n</tr>\n<tr>\n<td><strong>2. Definiciones y descripción</strong></td>\n<td>El <strong>Probot Micro Fraction Collector</strong> es un equipo incorporado a un sistema de <strong>LC/MS</strong></td>\n</tr>\n<tr>\n<td><strong>3. Fundamento físico</strong></td>\n<td><strong>Recoge la muestra del equipo de LC y la deposita en placa</strong></td>\n</tr>\n<tr>\n<td><strong>4. Normas del buen funcionamiento</strong> (flujo de trabajo)</td>\n<td>Encender equipo → encender software → llenar viales → placa bien alineada → llenado de jeringa → preparar para dispensar alícuota → señal recibida del HPLC → spoteo matriz + muestra → limpieza del equipo</td>\n</tr>\n<tr>\n<td><strong>5. Aplicaciones</strong></td>\n<td>Técnica para recolectar en línea del nanoHPLC. <strong>Matriz CHCA</strong></td>\n</tr>\n<tr>\n<td><strong>6. Documentos</strong></td>\n<td><strong>User's Manual</strong> Probot Micro Fraction Collector P/Nxxxx</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "no hace falta memorizar el aparato; lo importante es <strong>reconocer las 6 partes del PNT</strong> en un ejemplo real. Fíjate en que el \"Título\" aquí aparece como <strong>Objetivo</strong>.",
+        "truco": "el flujo de trabajo es <strong>\"Encender → Preparar → Recibir → Limpiar\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no hace falta memorizar el aparato del ejemplo?",
+        "respuesta": "Porque lo que importa es saber reconocer las 6 partes de un PNT en un caso real, no saberte este equipo. Si sabes leer uno, sabes leer cualquiera, aunque el aparato sea nuevo para ti."
+      },
+      "aplica": [
+        {
+          "caso": "«Recoge la muestra del equipo de LC y la deposita en placa.» ¿Qué parte del PNT es?",
+          "opciones": [
+            "Fundamento físico",
+            "Aplicaciones",
+            "Documentos"
+          ],
+          "buena": 0,
+          "porque": "Es el fundamento físico: cómo funciona el equipo."
+        },
+        {
+          "caso": "«User's Manual Probot Micro Fraction Collector.» ¿Qué parte es?",
+          "opciones": [
+            "Normas del buen funcionamiento",
+            "Documentos",
+            "Título"
+          ],
+          "buena": 1,
+          "porque": "Es un documento que acompaña al PNT: el manual del fabricante."
+        },
+        {
+          "caso": "En este ejemplo, ¿cómo aparece el «Título»?",
+          "opciones": [
+            "Como Objetivo",
+            "Como Aplicaciones"
+          ],
+          "buena": 0,
+          "porque": "Fíjate: aquí el «Título» aparece como Objetivo."
+        }
+      ],
+      "recuerda": {
+        "pide": "En el ejemplo del colector de fracciones, ¿qué va en el fundamento físico, en las normas y en los documentos?",
+        "puntos": [
+          "Fundamento físico: recoge la muestra del equipo de LC y la deposita en placa",
+          "Normas del buen funcionamiento: el flujo de trabajo (encender → preparar → recibir → limpiar)",
+          "Documentos: el manual de usuario del equipo",
+          "El «Título» aparece como Objetivo"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Para cerrar la unidad: el mapa conceptual de la profe (concepto 46) resume en una tabla los 6 temas de Lab 1.",
+          "ruta": "../lab1/repaso/#c46"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 2",
+        "BLOQUE 3",
+        "BLOQUE 4"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
