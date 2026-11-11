@@ -12,6 +12,8 @@
     { "id": "lab1-reactivos", "unidad": "lab1", "bloque": 4, "titulo": "Reactivos químicos", "minutos": 25, "pegatina": "tubos", "gancho": "la etiqueta que engañaba" },
     { "id": "lab1-equipos1", "unidad": "lab1", "bloque": 5, "titulo": "Equipos (I): guardar, pesar y medir", "minutos": 25, "pegatina": "microscopio", "gancho": "cinco miligramos" },
     { "id": "lab1-equipos2", "unidad": "lab1", "bloque": 5, "titulo": "Equipos (II): separar, calentar, medir la luz y cortar", "minutos": 25, "pegatina": "microscopio", "gancho": "del bloque al cristal" },
-    { "id": "lab1-pnt", "unidad": "lab1", "bloque": 7, "titulo": "Recursos y procedimientos normalizados (PNT)", "minutos": 25, "pegatina": "microscopio", "gancho": "el atajo" }
+    { "id": "lab1-pnt", "unidad": "lab1", "bloque": 7, "titulo": "Recursos y procedimientos normalizados (PNT)", "minutos": 25, "pegatina": "microscopio", "gancho": "el atajo" },
+    { "id": "lab2-normas", "unidad": "lab2", "bloque": 1, "titulo": "Las normas del laboratorio", "minutos": 25, "pegatina": "gafas", "gancho": "lo que nadie sabía" },
+    { "id": "lab2-epi", "unidad": "lab2", "bloque": 1, "titulo": "Protégete: los EPI", "minutos": 25, "pegatina": "gafas", "gancho": "primer día en la sala de tallado" }
   ]
 }

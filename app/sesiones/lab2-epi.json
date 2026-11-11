@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "id": "lab2-epi",
+  "unidad": "lab2",
+  "bloque": 1,
+  "titulo": "Protégete: los EPI",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.1, conceptos 6 a 9, diapositivas 12 a 17). La solución del misterio es la tabla del concepto 10 (diapositiva 18). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 10,
+    "titulo": "Primer día en la sala de tallado",
+    "caso": "Primer día de prácticas en anatomía patológica. Te toca la sala de tallado: vas a manipular una pieza quirúrgica conservada en formaldehído. Llegas con tus lentillas, tu bata de siempre (de botones), unas gafas normales y muchas ganas de empezar.",
+    "pregunta": "¿Qué equipo de protección necesitas de verdad? ¿Y qué cambiarías de cómo has llegado?",
+    "solucionProfe": "<p>En la sala de tallado de anatomía patológica manipulas una pieza quirúrgica conservada en <strong>formaldehído</strong>. EPI necesarios:</p><div class=\"tw\"><table><thead><tr><th>EPI</th><th>Por qué</th></tr></thead><tbody><tr><td><strong>Guantes de laboratorio</strong></td><td>Contacto con la muestra y con salpicaduras del fijador. Al terminar, quítatelos dándoles la vuelta.</td></tr><tr><td><strong>Mascarilla FFP2/FFP3</strong></td><td>El formaldehído desprende vapores que se pueden inhalar.</td></tr><tr><td><strong>Gafas con protección lateral</strong></td><td>Hay riesgo de salpicaduras en los ojos.</td></tr><tr><td><strong>Bata con automáticos</strong></td><td>Protege de salpicaduras y derrames.</td></tr></tbody></table></div>",
+    "claves": [
+      "Sin lentes de contacto",
+      "Bata con automáticos, no botones",
+      "FFP2/FFP3 por los vapores del formaldehído",
+      "Gafas con protección lateral"
+    ],
+    "entiendeProfe": ""
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c6",
+      "n": 6,
+      "titulo": "Cómo debes ir al laboratorio",
+      "diapositivas": "12 y 13",
+      "gancho": "Maquillaje, lentillas, pulseras y unas zapatillas abiertas. Apuesta: ¿qué de todo eso está mal para ir al laboratorio, y por qué?",
+      "profe": {
+        "glosario": "<p><b>Teratogénico:</b> que produce malformaciones en el feto.</p>",
+        "dice": "<ul><li><strong>Ropa:</strong> cómoda, preferiblemente de <strong>algodón</strong>.</li><li><strong>Cosméticos:</strong> no los lleves; pueden reaccionar con vapores o salpicaduras y producir <strong>reacciones alérgicas</strong>.</li><li><strong>Calzado:</strong> <strong>cerrado y cómodo</strong>, con suela de goma. Evita que te caigan productos o material punzante, las torceduras y las caídas.</li><li><strong>Ojos:</strong> no uses <strong>lentes de contacto</strong>. No te frotes los ojos ni te rasques mientras trabajas.</li><li><strong>Pelo y accesorios:</strong> <strong>pelo largo recogido</strong>. Sin colgantes, pulseras ni pañuelos que puedan engancharse.</li><li><strong>Boca:</strong> no te metas en la boca ningún objeto: ni bolígrafos, ni lapiceros, ni nada que tengas en las manos.</li><li><strong>Embarazo:</strong> la profesional debe informarse de los efectos tóxicos de los productos y equipos que usa, sobre todo de los <strong>teratogénicos</strong>. Lo mejor es contactar con el <strong>Servicio de Prevención de Riesgos Laborales</strong>.</li><li><strong>Objetos personales:</strong> lleva pocos; cuantos menos utensilios se contaminen, más seguridad.</li><li><strong>Ropa contaminada:</strong> si crees que tu ropa está contaminada, <strong>no la laves con el resto de prendas</strong>.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se pueden llevar cosméticos al laboratorio?",
+        "respuesta": "Porque pueden reaccionar con los vapores o las salpicaduras y producir reacciones alérgicas. Lo que llevas puesto también entra en contacto con lo que manipulas."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué calzado llevas?",
+          "opciones": [
+            "Cerrado, cómodo y con suela de goma",
+            "Sandalias, que son frescas"
+          ],
+          "buena": 0,
+          "porque": "Cerrado y con suela de goma: evita que te caigan productos o material punzante, torceduras y caídas."
+        },
+        {
+          "caso": "¿Puedes llevar lentes de contacto?",
+          "opciones": [
+            "Sí",
+            "No"
+          ],
+          "buena": 1,
+          "porque": "No uses lentes de contacto."
+        },
+        {
+          "caso": "Crees que tu ropa está contaminada.",
+          "opciones": [
+            "La lavo con el resto",
+            "No la lavo con el resto de prendas"
+          ],
+          "buena": 1,
+          "porque": "La ropa contaminada no se lava con el resto de prendas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica cómo debes ir al laboratorio: ropa, calzado, ojos, pelo, boca y objetos personales.",
+        "puntos": [
+          "Ropa cómoda, mejor de algodón; sin cosméticos",
+          "Calzado cerrado y cómodo, con suela de goma",
+          "Sin lentes de contacto; no frotarse los ojos",
+          "Pelo recogido; sin colgantes, pulseras ni pañuelos",
+          "Nada a la boca; pocos objetos personales"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c7",
+      "n": 7,
+      "titulo": "Qué es un EPI",
+      "diapositivas": "14",
+      "gancho": "Tu ropa de calle te cubre el cuerpo. ¿Por qué crees que no cuenta como protección en el laboratorio?",
+      "profe": {
+        "glosario": "<p><b>EPI:</b> equipo de protección individual.</p>",
+        "dice": "<p>Un <strong>equipo de protección individual (EPI)</strong> es cualquier equipo que el trabajador lleva puesto o sujeta para que le proteja de uno o varios riesgos para su seguridad o su salud, y cualquier complemento o accesorio con ese fin.</p><p><strong>No son EPI</strong> la ropa de trabajo corriente ni los uniformes que no estén pensados específicamente para proteger.</p><p>Los EPI más importantes en el laboratorio son:</p><ul><li>guantes de protección en el laboratorio;</li><li>guantes de protección térmica;</li><li>mascarillas;</li><li>mascarillas FFP2/FFP3;</li><li>gafas de seguridad;</li><li>bata.</li></ul>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué la ropa de trabajo corriente no es un EPI?",
+        "respuesta": "Porque un EPI está pensado específicamente para protegerte de uno o varios riesgos para tu seguridad o tu salud. La ropa de trabajo corriente o un uniforme cualquiera no lo están, aunque te cubran."
+      },
+      "aplica": [
+        {
+          "caso": "Un uniforme que no está pensado para proteger, ¿es un EPI?",
+          "opciones": [
+            "Sí",
+            "No"
+          ],
+          "buena": 1,
+          "porque": "No son EPI la ropa de trabajo corriente ni los uniformes no pensados para proteger."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es un EPI y cuáles son los más importantes en el laboratorio?",
+        "puntos": [
+          "Equipo que se lleva puesto o se sujeta para protegerse de riesgos",
+          "También sus complementos o accesorios con ese fin",
+          "No lo son la ropa de trabajo corriente ni los uniformes no protectores",
+          "Los más importantes: guantes de laboratorio y térmicos",
+          "Mascarillas (y FFP2/FFP3), gafas de seguridad y bata"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c8",
+      "n": 8,
+      "titulo": "Guantes de protección",
+      "diapositivas": "15",
+      "gancho": "Llevas guantes y te has manchado. ¿Cómo te los quitarías sin tocar la mancha con la mano?",
+      "profe": {
+        "glosario": "<p><b>Permeabilidad:</b> el paso de un producto químico a través del material a nivel molecular.</p>",
+        "dice": "<p>Protegen la piel de las manos contra derrames y salpicaduras, al manejar animales de experimentación y en otras tareas.</p><p><strong>Cómo quitártelos:</strong> coge el final del guante y, con dos dedos, dale la vuelta tocándolo lo mínimo. El guante queda <strong>del revés</strong> y te lo has quitado de forma segura.</p><p><strong>Materiales:</strong></p><ul><li>El <strong>látex</strong> produce muchas alergias; cada vez se usan más los de <strong>vinilo</strong> o <strong>nitrilo</strong>.</li><li>Ningún material es del todo «impermeable». La <strong>permeabilidad</strong> es el paso de un producto químico a través del material a nivel molecular.</li></ul><p>En su <strong>examen CE de certificación</strong> (la prueba que acredita que cumple la normativa), un guante de protección química pasa también otros ensayos. Por ejemplo, un guante sin protección mecánica se rasga con mucha facilidad.</p>",
+        "entiende": "El látex da alergias, por eso se usan cada vez más vinilo o nitrilo."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se usan cada vez más los guantes de vinilo o de nitrilo?",
+        "respuesta": "Porque el látex produce muchas alergias. Y ojo: ningún material es del todo impermeable; un producto químico puede atravesar el guante a nivel molecular."
+      },
+      "aplica": [
+        {
+          "caso": "¿Hay algún guante totalmente impermeable?",
+          "opciones": [
+            "Sí, el de nitrilo",
+            "No, ninguno"
+          ],
+          "buena": 1,
+          "porque": "Ningún material es del todo «impermeable»."
+        },
+        {
+          "caso": "Para quitarte el guante…",
+          "opciones": [
+            "Lo coges por el final y le das la vuelta tocándolo lo mínimo",
+            "Tiras de los dedos"
+          ],
+          "buena": 0,
+          "porque": "Con dos dedos, del final, dándole la vuelta: queda del revés."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Para qué sirven los guantes, cómo te los quitas y qué pasa con sus materiales?",
+        "puntos": [
+          "Protegen la piel de las manos de derrames y salpicaduras",
+          "Quitarlos: cogerlos del final y darles la vuelta tocando lo mínimo",
+          "El látex da muchas alergias: cada vez más vinilo o nitrilo",
+          "Ningún material es del todo impermeable (permeabilidad)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c9",
+      "n": 9,
+      "titulo": "Guantes térmicos, bata, gafas y mascarillas",
+      "diapositivas": "16 y 17",
+      "gancho": "Si se te prendiera la bata, ¿qué preferirías que llevara: botones o automáticos? ¿Por qué?",
+      "profe": {
+        "dice": "<ul><li><strong>Guantes de protección térmica:</strong> solo cuando hay <strong>riesgo de quemadura</strong>.</li><li><strong>Bata o uniforme:</strong> protege de salpicaduras y derrames. Lleva <strong>automáticos, no botones</strong>: si arde, te la quitas rápido.</li><li><strong>Gafas de seguridad:</strong> con <strong>protección lateral</strong> para que no entren salpicaduras. Hay gafas especiales para radiaciones o temperaturas elevadas.</li><li><strong>Mascarillas FFP2/FFP3:</strong> para productos cuyos gases y vapores se pueden inhalar: <strong>acrilamida, formaldehído, bromuro de etilo</strong>.</li></ul>",
+        "entiende": "La bata lleva <strong>automáticos</strong> para poder quitártela rápido si arde; con botones tardarías más.",
+        "truco": "Bata = automáticos; gafas = protección lateral; FFP2/FFP3 = vapores (formaldehído)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué las gafas de seguridad llevan protección lateral?",
+        "respuesta": "Para que no entren salpicaduras por los lados. Una salpicadura no siempre viene de frente."
+      },
+      "aplica": [
+        {
+          "caso": "Vas a trabajar con formaldehído, que desprende vapores.",
+          "opciones": [
+            "Mascarilla FFP2/FFP3",
+            "Guantes térmicos"
+          ],
+          "buena": 0,
+          "porque": "Las FFP2/FFP3 son para gases y vapores que se inhalan, como el formaldehído."
+        },
+        {
+          "caso": "¿Cuándo se usan los guantes de protección térmica?",
+          "opciones": [
+            "Siempre",
+            "Solo cuando hay riesgo de quemadura"
+          ],
+          "buena": 1,
+          "porque": "Solo cuando hay riesgo de quemadura."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di para qué sirven los guantes térmicos, la bata, las gafas y las mascarillas FFP2/FFP3.",
+        "puntos": [
+          "Guantes térmicos: solo si hay riesgo de quemadura",
+          "Bata: protege de salpicaduras y derrames; con automáticos",
+          "Gafas: con protección lateral (hay especiales para radiaciones o calor)",
+          "FFP2/FFP3: gases y vapores que se inhalan (acrilamida, formaldehído, bromuro de etilo)"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Frente a los vapores también protege la vitrina extractora (sesión «Equipos (I)» de Lab 1).",
+          "ruta": "#/sesion/lab1-equipos1"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

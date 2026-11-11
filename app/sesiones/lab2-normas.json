@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "id": "lab2-normas",
+  "unidad": "lab2",
+  "bloque": 1,
+  "titulo": "Las normas del laboratorio",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 2 (bloque 2.1, conceptos 2 a 5, diapositivas 6 a 11). El misterio sale del caso de Marie Curie de la introducción (concepto 1). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Lo que nadie sabía",
+    "caso": "Una científica trabaja durante años, muy intensamente, con un material que casi nadie conoce. Hace descubrimientos enormes: encuentra dos elementos químicos nuevos. Trabaja sin ninguna protección, porque en su época nadie sabe que haga falta. Y acaba muriendo por culpa de ese mismo trabajo.",
+    "pregunta": "¿Qué crees que la mató? ¿Y qué te enseña a ti, que vas a trabajar en un laboratorio?",
+    "solucion": "Era Marie Curie. Trabajó intensamente con material radiactivo y descubrió el polonio y el radio. Por el desconocimiento de la época trabajó sin protección ni seguridad, y murió por la alta exposición a una radiactividad que todavía no se conocía. La lección: cuanta más exposición, más riesgo. Usa bien lo que conoces y actúa con prudencia ante lo que desconoces. La prevención es responsabilidad de todas las personas del centro.",
+    "claves": [
+      "Más exposición, más riesgo",
+      "Prudencia ante lo que no conoces",
+      "La prevención es cosa de todos"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab2.c2",
+      "n": 2,
+      "titulo": "La prevención empieza por ti: el espacio",
+      "diapositivas": "6 y 7",
+      "gancho": "Imagina un laboratorio sin ventanas, húmedo y caluroso. ¿Qué tres cosas crees que podrían salir mal ahí?",
+      "profe": {
+        "glosario": "<p><b>Espacio:</b> todo lo relativo a la zona de trabajo, desde los muebles hasta la atmósfera de la sala. <b>Inflamable:</b> que puede arder.</p>",
+        "dice": "<p>La primera medida de prevención empieza <strong>por ti y por lo que te rodea</strong>: protege tu cuerpo y cuida el entorno. En un laboratorio trabajan varias personas a la vez, cada una con su papel, y la seguridad de todos exige una <strong>coordinación perfecta</strong>. Repasa las normas de vez en cuando para volver a tomar conciencia de ellas.</p><p><strong>Normas relativas al espacio:</strong></p><ul><li><strong>Buena ventilación:</strong> elimina los contaminantes del ambiente y los vapores que puedan ser inflamables.</li><li><strong>Sin humedad:</strong> es fuente de contaminación, porque gracias a ella sobreviven muchos microorganismos.</li><li><strong>Sin exceso de temperatura:</strong> perjudica a las personas y a los experimentos; trabaja a la temperatura que marque el protocolo del ensayo.</li><li><strong>Buena iluminación:</strong> necesaria para ver bien, pero sin excesos.</li><li><strong>Señales de emergencia:</strong> para saber de inmediato hacia dónde ir en una emergencia.</li></ul><p><strong>En tu puesto de trabajo:</strong> en un servicio de anatomía patológica compartirás el espacio con patólogos, técnicos y otro personal; un error tuyo puede afectar a quien trabaja a tu lado.</p>",
+        "entiende": "Ventilación para sacar contaminantes y vapores inflamables; sin humedad porque ayuda a sobrevivir a los microorganismos."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la humedad es un problema en un laboratorio?",
+        "respuesta": "Porque es fuente de contaminación: gracias a ella sobreviven muchos microorganismos. Por eso el espacio de trabajo tiene que estar sin humedad."
+      },
+      "aplica": [
+        {
+          "caso": "En el ambiente hay vapores que pueden ser inflamables.",
+          "opciones": [
+            "Buena ventilación",
+            "Más iluminación"
+          ],
+          "buena": 0,
+          "porque": "La ventilación elimina los contaminantes y los vapores que puedan ser inflamables."
+        },
+        {
+          "caso": "¿A qué temperatura se trabaja?",
+          "opciones": [
+            "A la que marque el protocolo del ensayo",
+            "Lo más alta posible, para ir rápido"
+          ],
+          "buena": 0,
+          "porque": "Sin exceso de temperatura: la que marque el protocolo del ensayo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las normas relativas al espacio y por qué es importante cada una.",
+        "puntos": [
+          "Buena ventilación: elimina contaminantes y vapores inflamables",
+          "Sin humedad: ayuda a sobrevivir a los microorganismos",
+          "Sin exceso de temperatura: la que marque el protocolo",
+          "Buena iluminación, sin excesos",
+          "Señales de emergencia: saber de inmediato adónde ir"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c3",
+      "n": 3,
+      "titulo": "Normas para el personal",
+      "diapositivas": "8 y 9",
+      "gancho": "Un viernes por la tarde te quedas solo en el laboratorio para acabar algo. ¿Qué podría pasar? Piénsalo antes de abrir.",
+      "profe": {
+        "glosario": "<p><b>Llaves de paso:</b> las que cierran el agua, el gas, el vacío y cualquier otro suministro. <b>Lavaojos:</b> equipo para lavar los ojos tras una salpicadura (o una solución para lavarlos).</p>",
+        "dice": "<p><strong>Tu forma de trabajar:</strong></p><ul><li>Cada persona tiene <strong>su propio espacio</strong> de trabajo.</li><li>Sé <strong>metódico</strong>: haz las cosas siempre igual para evitar confusiones peligrosas.</li><li>Conoce los reactivos y equipos con los que vas a trabajar.</li><li>No trabajes <strong>sin supervisión</strong> ni hagas experimentos no autorizados.</li><li><strong>No trabajes solo</strong>: si pierdes la consciencia en un accidente, nadie podrá socorrerte.</li><li>No juegues, no te distraigas y no hagas bromas mientras trabajas.</li></ul><p><strong>Orden y cierre:</strong></p><ul><li>No dejes reactivos <strong>al borde</strong> de las superficies ni <strong>obstáculos</strong> en medio del laboratorio.</li><li>Al terminar, cierra las <strong>llaves de paso</strong> de agua, gas, vacío y cualquier otra.</li><li>Apaga los equipos que no estén funcionando.</li><li>Recoge cualquier <strong>derrame</strong> y señalízalo.</li></ul><p><strong>Sacar productos:</strong> no saques nada si no es necesario. Si tienes que salir con un producto, transpórtalo con seguridad, <strong>no te pares</strong> por el camino y <strong>avisa</strong> de que llevas un reactivo peligroso.</p><p><strong>Comida y bebida:</strong> <strong>no comas, no bebas y no fumes</strong>. Lávate las manos al salir. No guardes comida ni bebida dentro.</p><p><strong>Equipos obligatorios:</strong> <strong>lavaojos</strong> (o una solución para lavar los ojos), <strong>ducha de emergencia</strong> y <strong>extintor</strong>. Hay que <strong>revisarlos a menudo</strong> para asegurar que funcionan.</p>",
+        "entiende": "No trabajes solo porque, si pierdes la consciencia, nadie podrá socorrerte.",
+        "truco": "Equipos obligatorios: <strong>lavaojos, ducha y extintor</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que ser metódico y hacer las cosas siempre igual?",
+        "respuesta": "Para evitar confusiones peligrosas: si cada vez lo haces de una forma distinta, es más fácil equivocarte de reactivo o de paso. Es la misma idea de los PNT: trabajar siempre igual es trabajar con menos errores."
+      },
+      "aplica": [
+        {
+          "caso": "Terminas la jornada.",
+          "opciones": [
+            "Me voy sin más",
+            "Cierro las llaves de paso y apago los equipos"
+          ],
+          "buena": 1,
+          "porque": "Al terminar: cerrar las llaves de paso y apagar los equipos que no funcionen."
+        },
+        {
+          "caso": "Hay un derrame en el suelo.",
+          "opciones": [
+            "Lo recojo y lo señalizo",
+            "Lo dejo para quien limpie"
+          ],
+          "buena": 0,
+          "porque": "Recoge cualquier derrame y señalízalo."
+        },
+        {
+          "caso": "Los tres equipos obligatorios son…",
+          "opciones": [
+            "Lavaojos, ducha de emergencia y extintor",
+            "Bata, gafas y guantes"
+          ],
+          "buena": 0,
+          "porque": "Lavaojos, ducha y extintor, y hay que revisarlos a menudo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las normas para el personal: forma de trabajar, orden y cierre, comida y equipos obligatorios.",
+        "puntos": [
+          "Espacio propio, ser metódico y conocer reactivos y equipos",
+          "Nunca sin supervisión, ni experimentos no autorizados, ni solo",
+          "Al terminar: cerrar llaves de paso, apagar equipos, recoger y señalizar derrames",
+          "No comer, beber ni fumar; lavarse las manos al salir",
+          "Obligatorios: lavaojos, ducha de emergencia y extintor (revisarlos)"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Trabajar siempre igual es la idea de los procedimientos normalizados (sesión «Recursos y PNT» de Lab 1).",
+          "ruta": "#/sesion/lab1-pnt"
+        }
+      ]
+    },
+    {
+      "id": "lab2.c4",
+      "n": 4,
+      "titulo": "Los cinco tipos de señales",
+      "diapositivas": "10",
+      "gancho": "Sin leer ni una palabra, solo por el color y la forma, ¿sabrías si una señal te prohíbe algo o te obliga a algo?",
+      "profe": {
+        "glosario": "<p><b>Pictograma:</b> dibujo que representa un peligro. <b>Señalización:</b> conjunto de señales que informan de riesgos, obligaciones o salidas.</p>",
+        "dice": "<p>Una buena señalización ayuda a prevenir riesgos. Hay cinco tipos:</p><div class=\"tw\"><table><thead><tr><th>Señal</th><th>Forma y color</th><th>Indica</th></tr></thead><tbody><tr><td><strong>a) Emergencia</strong></td><td>Fondo <strong>verde</strong></td><td>Vías de evacuación y salidas de emergencia (ejemplo: EXIT).</td></tr><tr><td><strong>b) Advertencia</strong></td><td>Pictograma <strong>negro</strong> sobre fondo <strong>amarillo</strong></td><td>Riesgo eléctrico, materias tóxicas, inflamables, baja temperatura, riesgo biológico y radiaciones ionizantes.</td></tr><tr><td><strong>c) Prohibición</strong></td><td><strong>Redonda</strong>; pictograma negro sobre fondo <strong>blanco</strong>, con borde y banda <strong>rojos</strong></td><td>Lo que no se puede hacer (por ejemplo, fumar).</td></tr><tr><td><strong>d) Obligación</strong></td><td><strong>Redonda</strong>; pictograma <strong>blanco</strong> sobre fondo <strong>azul</strong></td><td>Protección obligatoria de cara, vías respiratorias y manos.</td></tr><tr><td><strong>e) Contra incendios</strong></td><td><strong>Rectangular o cuadrada</strong>; pictograma <strong>blanco</strong> sobre fondo <strong>rojo</strong></td><td>Dónde están el extintor y la manguera.</td></tr></tbody></table></div>",
+        "entiende": "Solo hay <strong>dos señales redondas</strong>: prohibición (borde rojo, fondo blanco) y obligación (fondo azul). La de contra incendios es rectangular o cuadrada.",
+        "truco": "Verde = salir; amarillo = cuidado; rojo con borde = prohibido; azul = obligatorio; rojo rectangular = incendios."
+      },
+      "porque": {
+        "pregunta": "¿Por qué las señales se reconocen por la forma y el color, y no solo por el texto?",
+        "respuesta": "Porque en una emergencia no hay tiempo de leer: el color y la forma se reconocen al instante. Por eso, por ejemplo, el rojo de los extintores está pensado para que sean fáciles de detectar."
+      },
+      "aplica": [
+        {
+          "caso": "Redonda, con pictograma blanco sobre fondo azul.",
+          "opciones": [
+            "Obligación",
+            "Prohibición",
+            "Advertencia"
+          ],
+          "buena": 0,
+          "porque": "Azul y redonda = obligación."
+        },
+        {
+          "caso": "Pictograma negro sobre fondo amarillo.",
+          "opciones": [
+            "Advertencia",
+            "Emergencia"
+          ],
+          "buena": 0,
+          "porque": "Amarillo = cuidado: advertencia de un riesgo."
+        },
+        {
+          "caso": "Fondo verde, con «EXIT».",
+          "opciones": [
+            "Emergencia",
+            "Contra incendios"
+          ],
+          "buena": 0,
+          "porque": "Verde = salir: vías de evacuación y salidas de emergencia."
+        },
+        {
+          "caso": "Redonda, fondo blanco con borde y banda rojos.",
+          "opciones": [
+            "Prohibición",
+            "Obligación"
+          ],
+          "buena": 0,
+          "porque": "Borde y banda rojos sobre blanco = prohibido."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe los cinco tipos de señales: forma, color y qué indican.",
+        "puntos": [
+          "Emergencia: fondo verde; vías de evacuación y salidas",
+          "Advertencia: pictograma negro sobre amarillo; riesgos",
+          "Prohibición: redonda, fondo blanco con borde y banda rojos",
+          "Obligación: redonda, pictograma blanco sobre azul",
+          "Contra incendios: rectangular o cuadrada, blanco sobre rojo; extintor y manguera"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab2.c5",
+      "n": 5,
+      "titulo": "Lucha contra incendios",
+      "diapositivas": "11",
+      "gancho": "Es tu primer día en un laboratorio nuevo. ¿Qué es lo primero que harías, antes de tocar nada?",
+      "profe": {
+        "dice": "<p>Los laboratorios suelen tener <strong>extintor</strong> y <strong>manguera contra incendios</strong>, señalizados con pictograma blanco sobre fondo rojo.</p><p>¿Por qué se usa el rojo para señalar los extintores? Para que sean <strong>fáciles de detectar</strong>.</p><p><strong>En tu puesto de trabajo:</strong> el primer día en un laboratorio nuevo, localiza salidas, extintor, ducha de seguridad y lavaojos antes de tocar nada.</p>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué localizar el extintor, la ducha y el lavaojos el primer día, antes de tocar nada?",
+        "respuesta": "Porque en una emergencia no hay tiempo de buscarlos: tienes que saber de inmediato dónde están. Por eso también se señalizan con colores fáciles de detectar."
+      },
+      "aplica": [
+        {
+          "caso": "¿Cómo se señalizan el extintor y la manguera?",
+          "opciones": [
+            "Pictograma blanco sobre fondo rojo",
+            "Pictograma negro sobre fondo amarillo"
+          ],
+          "buena": 0,
+          "porque": "Blanco sobre rojo, para que sean fáciles de detectar."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué hay contra incendios en un laboratorio y qué haces el primer día?",
+        "puntos": [
+          "Extintor y manguera contra incendios",
+          "Señalizados con pictograma blanco sobre fondo rojo",
+          "El rojo, para que sean fáciles de detectar",
+          "El primer día: localizar salidas, extintor, ducha de seguridad y lavaojos"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
