@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "id": "lab1-agua",
+  "unidad": "lab1",
+  "bloque": 3,
+  "titulo": "El agua del laboratorio",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (lab1/repaso, bloque 3, diapositivas 42 a 46). «corte»: escrito para esta sesión a partir de ese mismo contenido; no añade datos que no estén en el PDF.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El calcio que no era de nadie",
+    "caso": "Lunes, 9:00. En el laboratorio de análisis clínicos, todas las muestras de la mañana salen con el calcio más alto de lo normal. Los pacientes no tienen nada en común, el equipo está calibrado y los reactivos son nuevos. Solo cambió una cosa: el viernes se estropeó el equipo de purificación y alguien preparó las diluciones con agua del grifo.",
+    "pregunta": "¿Por qué crees que sale el calcio alto en todos? ¿Qué agua habría que haber usado?",
+    "solucion": "El agua del grifo es apta para beber, pero lleva sales disueltas, entre ellas sales de calcio. Al preparar las diluciones con ella, cada tubo recibió un poco de calcio que no venía del paciente: una impureza que se suma a lo que mides e interfiere en el análisis. Medir cuánto calcio hay es un ensayo cuantitativo, así que hacía falta agua tipo I (ultrapura) o tipo II (analítica), sacada de un equipo de purificación.",
+    "claves": [
+      "Grifo = sales",
+      "Las impurezas interfieren en el análisis",
+      "Cuantitativo → tipo I o II"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c26",
+      "n": 26,
+      "titulo": "El agua: el disolvente más usado",
+      "diapositivas": "42",
+      "gancho": "El agua del grifo se puede beber sin problema. ¿Por qué entonces está prohibida para trabajar en el laboratorio?",
+      "profe": {
+        "glosario": "<p><b>Incolora, inodora, insípida:</b> sin color, sin olor, sin sabor. <b>Impureza:</b> cualquier sustancia que no debería estar.</p>",
+        "dice": "<ul>\n<li>El agua líquida es <strong>incolora, inodora e insípida</strong>.</li>\n<li>Pura, es <strong>uno de los disolventes más utilizados</strong>.</li>\n<li><strong>No se usa agua corriente</strong>: el agua apta para el consumo humano <strong>contiene sales</strong>.</li>\n<li>El agua para análisis debe estar <strong>libre de impurezas</strong>, para evitar interacciones químicas → por eso se usan <strong>equipos de purificación</strong>.</li>\n</ul>",
+        "truco": "<strong>\"Grifo = sales = prohibido\"</strong>."
+      },
+      "porque": {
+        "pregunta": "Lo que es bueno para beber, ¿por qué no es bueno para medir?",
+        "respuesta": "Al beber no importa una pequeña cantidad de sales; al analizar, sí. Esas sales reaccionan o se suman a lo que estás midiendo, y el resultado deja de ser el de la muestra. En el laboratorio, el agua tiene que ser invisible para el análisis."
+      },
+      "aplica": [],
+      "recuerda": {
+        "pide": "Explica con tus palabras por qué en el laboratorio no se usa agua del grifo.",
+        "puntos": [
+          "El agua corriente (del grifo) contiene sales",
+          "El agua para análisis debe estar libre de impurezas",
+          "Las impurezas provocan interacciones químicas",
+          "Por eso se usan equipos de purificación"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c27",
+      "n": 27,
+      "titulo": "Los 4 tipos de agua",
+      "diapositivas": "43 y 44",
+      "gancho": "En el laboratorio hay cuatro tipos de agua. Antes de mirar: ¿qué crees que decide cuál se usa en cada momento?",
+      "profe": {
+        "glosario": "<p><b>pH:</b> escala de 0 a 14 que mide lo ácido o básico que es algo (7 = neutro). <b>Cuantitativo:</b> que mide cuánto hay de un compuesto. <b>Cualitativo:</b> que mira qué cualidades tiene (si está o no, de qué tipo es).</p>",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Nombre</th>\n<th>pH</th>\n<th>Uso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>I</strong></td>\n<td><strong>Ultrapura</strong></td>\n<td><strong>7</strong> (neutro)</td>\n<td>Ensayos <strong>cuantitativos</strong>; experimentos con <strong>el mínimo de interferencias</strong></td>\n</tr>\n<tr>\n<td><strong>II</strong></td>\n<td><strong>Analítica</strong></td>\n<td><strong>7</strong></td>\n<td>Ensayos <strong>cuantitativos</strong>, <strong>libre de impurezas orgánicas</strong>. <strong>La que más se consume</strong> en los experimentos analíticos</td>\n</tr>\n<tr>\n<td><strong>III</strong></td>\n<td><strong>General</strong></td>\n<td><strong>7</strong></td>\n<td>Ensayos <strong>cualitativos</strong>. Para <strong>ensayos generales y limpieza del material</strong></td>\n</tr>\n<tr>\n<td><strong>IV</strong></td>\n<td>—</td>\n<td><strong>entre 5 y 8</strong></td>\n<td><strong>Máquinas de lavado (lavavajillas) y autoclave</strong>. <strong>La menos pura</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>Orden de pureza: Tipo I &gt; Tipo II &gt; Tipo III &gt; Tipo IV.</strong></p>",
+        "entiende": "cuanto más fino es el análisis, más pura tiene que ser el agua. Para <strong>medir cantidades</strong> (cuantitativo) → tipo I o II. Para <strong>saber qué es</strong> (cualitativo) → tipo III. Para <strong>la máquina</strong> → tipo IV.",
+        "truco": "<strong>\"Ultra-Ana-Gene-Máquina\"</strong> (I, II, III, IV). <strong>CuaNtitativo = Número (cuánto)</strong> · <strong>CuaLitativo = cuaLidad (qué)</strong>. Y <strong>solo el IV no tiene pH 7</strong> (5-8)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué tiene sentido que el lavavajillas y el autoclave usen la menos pura, la tipo IV?",
+        "respuesta": "Porque esa agua no entra en ningún análisis: sirve para lavar o para producir el vapor del autoclave. Gastar agua ultrapura ahí sería caro y no mejoraría nada. La regla funciona en los dos sentidos: cuanto más fino es el trabajo, más pura el agua; cuanto más basto, menos hace falta."
+      },
+      "aplica": [
+        {
+          "caso": "Vas a medir cuánta glucosa hay en un suero.",
+          "opciones": [
+            "Tipo I o II",
+            "Tipo III",
+            "Tipo IV"
+          ],
+          "buena": 0,
+          "porque": "Medir cuánto hay es un ensayo cuantitativo: tipo I (ultrapura) o II (analítica)."
+        },
+        {
+          "caso": "Solo quieres saber si en una muestra hay proteínas o no.",
+          "opciones": [
+            "Tipo I o II",
+            "Tipo III",
+            "Tipo IV"
+          ],
+          "buena": 1,
+          "porque": "Saber si algo está o no es un ensayo cualitativo: tipo III (general)."
+        },
+        {
+          "caso": "Rellenas el depósito del autoclave.",
+          "opciones": [
+            "Tipo I o II",
+            "Tipo III",
+            "Tipo IV"
+          ],
+          "buena": 2,
+          "porque": "Las máquinas de lavado y el autoclave usan la menos pura: tipo IV."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 tipos de agua, de la más pura a la menos pura, y para qué sirve cada uno.",
+        "puntos": [
+          "Tipo I, ultrapura: ensayos cuantitativos, el mínimo de interferencias",
+          "Tipo II, analítica: cuantitativos; la que más se consume",
+          "Tipo III, general: ensayos cualitativos y limpieza del material",
+          "Tipo IV: lavavajillas y autoclave; la menos pura",
+          "Todas tienen pH 7 menos la IV (entre 5 y 8)"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "El autoclave de la esterilización (bloque 2 de esta misma unidad) funciona con agua tipo IV.",
+          "ruta": "#/unidad/lab1"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c28",
+      "n": 28,
+      "titulo": "Métodos de purificación del agua",
+      "diapositivas": "45 y 46",
+      "gancho": "Si tuvieras que dejar limpia de verdad el agua del grifo, ¿qué harías? Piensa al menos dos formas antes de mirar.",
+      "profe": {
+        "glosario": "<p><b>Punto de ebullición:</b> temperatura a la que un líquido hierve. <b>Condensar:</b> pasar de vapor a líquido. <b>No volátil:</b> que no se evapora fácilmente. <b>Intercambio iónico:</b> cambiar los iones del agua (sales) por otros inofensivos. <b>Carbón activo:</b> carbón muy poroso que atrapa sustancias. <b>Membrana semipermeable:</b> lámina que deja pasar unas cosas (el agua) y otras no.</p>",
+        "img": "../lab1/repaso/img/031.jpg",
+        "imgAlt": "Ósmosis y ósmosis inversa (con presión)",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Método</th>\n<th>Separa el agua por…</th>\n<th>Dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Destilación</strong></td>\n<td>Su <strong>punto de ebullición</strong>: se calienta, se vuelve vapor y se condensa</td>\n<td>Queda libre de impurezas <strong>no volátiles, materia orgánica y bacterias</strong></td>\n</tr>\n<tr>\n<td><strong>Desionización</strong></td>\n<td><strong>Intercambio iónico</strong></td>\n<td><strong>NO elimina la materia orgánica ni los microorganismos</strong></td>\n</tr>\n<tr>\n<td><strong>Adsorción</strong></td>\n<td><strong>Carbón activo</strong>, que adsorbe y retiene partículas</td>\n<td>Sobre todo <strong>impurezas orgánicas</strong></td>\n</tr>\n<tr>\n<td><strong>Filtración</strong></td>\n<td>El <strong>tamaño de la partícula</strong>, con filtros de distinto tamaño de <strong>poro</strong></td>\n<td>—</td>\n</tr>\n<tr>\n<td><strong>Ósmosis inversa</strong></td>\n<td>Una <strong>membrana semipermeable</strong>, gracias a la <strong>presión aplicada</strong></td>\n<td>La membrana deja pasar el agua pero <strong>detiene los contaminantes</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "la <strong>ósmosis</strong> normal es el agua yendo <strong>sola</strong> hacia donde hay más sales. En la <strong>inversa</strong> <strong>empujas con presión</strong> para obligar al agua a ir al revés y dejar las sales atrás (como apretar un colador muy fino).",
+        "truco": "<strong>\"De-De-A-Fi-Os\"</strong>: <strong>De</strong>stilación = hervir · <strong>De</strong>sionización = iones (pero <strong>deja bichos y materia orgánica</strong>) · <strong>A</strong>dsorción = carbón · <strong>Fi</strong>ltración = tamaño · <strong>Ós</strong>mosis inversa = presión + membrana."
+      },
+      "porque": {
+        "pregunta": "La desionización cambia los iones del agua por otros inofensivos. ¿Por qué no quita ni las bacterias ni la materia orgánica?",
+        "respuesta": "Porque solo actúa sobre los iones, es decir, sobre las sales disueltas. Las bacterias y la materia orgánica no son sales, así que pasan de largo. Para quitarlas hacen falta otros métodos: la destilación (se quedan atrás al hervir), la adsorción con carbón activo (atrapa sobre todo la materia orgánica) o la ósmosis inversa (la membrana las detiene)."
+      },
+      "aplica": [
+        {
+          "caso": "Necesitas agua sin sales y también sin bacterias. Solo tienes un desionizador.",
+          "opciones": [
+            "Me sirve",
+            "No me sirve"
+          ],
+          "buena": 1,
+          "porque": "La desionización NO elimina los microorganismos ni la materia orgánica."
+        },
+        {
+          "caso": "Quieres quitar sobre todo las impurezas orgánicas.",
+          "opciones": [
+            "Adsorción con carbón activo",
+            "Filtración",
+            "Desionización"
+          ],
+          "buena": 0,
+          "porque": "El carbón activo adsorbe y retiene sobre todo impurezas orgánicas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Nombra los 5 métodos de purificación y di qué usa cada uno para separar.",
+        "puntos": [
+          "Destilación: hervir y condensar (quita lo no volátil, la materia orgánica y las bacterias)",
+          "Desionización: intercambio iónico (no quita materia orgánica ni microorganismos)",
+          "Adsorción: carbón activo (sobre todo impurezas orgánicas)",
+          "Filtración: el tamaño de la partícula, según el poro",
+          "Ósmosis inversa: membrana semipermeable y presión"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "En Bio 1 (cultivos celulares) la contaminación es el gran enemigo: por eso importa que el agua esté libre de microorganismos, y no basta con quitarle las sales.",
+          "ruta": "#/unidad/bio1"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 1",
+        "BLOQUE 2"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

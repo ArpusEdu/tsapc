@@ -491,3 +491,103 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .bienvenida p+p{margin-top:var(--e-2)}
 .bienvenida .acciones{display:flex;flex-wrap:wrap;gap:var(--e-2);margin-top:var(--e-3)}
 @media (max-width:480px){ .bienvenida{grid-template-columns:1fr} .bienvenida .pegatina{width:56px;height:56px} }
+
+/* ---------- Fase 7 · sesión de estudio (app/sesion.js) ---------- */
+.ss-cab .ss-k{color:var(--asig-texto);font-size:20px}
+.ss-k{margin:0 0 var(--e-1);color:var(--c-tinta-2)}
+.ss-pasos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin:0 0 var(--e-5);padding:0;list-style:none;counter-reset:none}
+.ss-pasos li{display:grid;justify-items:center;gap:4px;text-align:center;font-size:var(--t-min);color:var(--c-tinta-2);line-height:1.15}
+.ss-pasos .ss-num{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1.5px dashed var(--c-linea-suave);font-weight:700;font-size:15px;background:var(--c-tarjeta)}
+.ss-pasos li.hecho .ss-num{border-style:solid;border-color:var(--asig-texto);color:var(--asig-texto)}
+.ss-pasos li.ahora{color:var(--c-tinta);font-weight:700}
+.ss-pasos li.ahora .ss-num{border:2px solid var(--c-tinta);background:var(--asig-suave);color:var(--c-tinta)}
+@media (max-width:420px){ .ss-pasos .ss-nom{font-size:11px} }
+.ss-cuerpo{display:grid;gap:var(--e-4);max-width:760px}
+.ss-cuerpo .acciones{display:flex;flex-wrap:wrap;gap:var(--e-2);margin-top:var(--e-3)}
+.ss-sello{display:inline-flex;align-items:center;gap:4px;margin-bottom:var(--e-2);padding:1px 8px 1px 6px;border-radius:var(--r-pildora);border:1.5px dashed var(--c-linea-suave);font-size:var(--t-min);font-weight:700;color:var(--c-tinta-2)}
+.ss-sello.profe{border-style:solid;border-color:var(--asig-borde,var(--c-linea-suave));color:var(--asig-texto)}
+.ss-sello svg{width:14px;height:14px}
+.ss-profe>.ss-sello,.ss-puntos>.ss-sello{justify-self:start;width:max-content}
+.ss-caso h2{font-size:var(--t-xl);margin:0 0 var(--e-2)}
+.ss-caso-t{font-size:var(--t-lg,18px);line-height:1.55}
+.ss-preg{margin-top:var(--e-3)}
+.ss-lbl{display:block;margin:var(--e-4) 0 var(--e-1);font-weight:700}
+.ss-cuerpo textarea{width:100%;min-height:96px;padding:12px 14px;border:1.5px solid var(--c-linea);border-radius:var(--r-mano);background:var(--c-tarjeta);color:var(--c-tinta);font:inherit;line-height:1.5;resize:vertical}
+.ss-cuerpo textarea:focus-visible{outline:2.5px solid var(--c-foco);outline-offset:2px}
+.ss-cuerpo textarea[readonly]{opacity:.85;border-style:dashed}
+.ss-por{margin-top:var(--e-3);color:var(--c-tinta-2);font-size:19px}
+.ss-mini{font-size:var(--t-sm);color:var(--c-tinta-2);margin-top:var(--e-1)}
+.ss-cuenta{font-size:var(--t-sm);color:var(--c-tinta-2)}
+.ss-concepto h2,.ss-recuerda h2{font-size:var(--t-xl);margin-bottom:var(--e-3)}
+.ss-gancho{padding:var(--e-4);border-radius:var(--r-mano);background:var(--asig-suave);border:1.5px solid var(--c-linea)}
+.ss-gancho .mano{font-size:clamp(22px,5vw,27px);line-height:1.2;color:var(--c-tinta)}
+.ss-profe{margin-top:var(--e-4);padding:var(--e-4);border-radius:var(--r-mano);background:var(--c-tarjeta);border:1.5px solid var(--c-linea);display:grid;gap:var(--e-3)}
+.ss-glos{font-size:var(--t-sm);color:var(--c-tinta-2);padding-bottom:var(--e-3);border-bottom:1.5px dashed var(--c-linea-suave)}
+.ss-dice ul{padding-left:1.2em;display:grid;gap:6px}
+.ss-dice table{width:100%;border-collapse:collapse;font-size:var(--t-sm)}
+.ss-dice th,.ss-dice td{padding:6px 8px;border-bottom:1px solid var(--c-linea-suave);text-align:left;vertical-align:top}
+.ss-dice{overflow-x:auto}
+/* móvil: cada fila de la tabla, una ficha; la columna se nombra a la izquierda */
+@media (max-width:560px){
+  .ss-dice table.ss-fichas,.ss-dice .ss-fichas tbody,.ss-dice .ss-fichas tr,.ss-dice .ss-fichas td{display:block;width:100%}
+  .ss-dice .ss-fichas thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .ss-dice .ss-fichas tr{margin-bottom:var(--e-2);padding:8px 10px;border:1.5px solid var(--c-linea-suave);border-radius:var(--r-mano);background:var(--c-hoja)}
+  .ss-dice .ss-fichas td{position:relative;padding:5px 0 5px 92px;border:0;min-height:1.6em}
+  .ss-dice .ss-fichas td::before{content:attr(data-col);position:absolute;left:0;top:7px;width:84px;font-size:var(--t-min);font-weight:700;letter-spacing:var(--tr-versal);text-transform:uppercase;color:var(--c-tinta-2);line-height:1.2}
+  .ss-dice .ss-fichas td:first-child{font-size:var(--t-lg,18px)}
+}
+.ss-dice .tw{overflow:visible}
+.ss-fig{margin:0;max-width:420px}.ss-fig img{border-radius:8px;display:block}
+.ss-fig figcaption{font-size:var(--t-sm);color:var(--c-tinta-2);margin-top:4px}
+.ss-ent{padding:var(--e-3);border-left:4px solid var(--asig);background:var(--asig-suave);border-radius:0 8px 8px 0}
+.ss-truco{padding:var(--e-2) var(--e-3);border-radius:var(--r-mano);border:1.5px dashed var(--c-linea-suave);color:var(--c-tinta)}
+.ss-truco .mano{font-size:20px;color:var(--c-boli);margin-right:4px}
+.ss-truco strong{color:var(--c-boli)}
+.ss-porque{margin-top:var(--e-4)}
+/* la nota amarilla es papel de verdad: tinta fija en los dos temas */
+.ss-porque,.ss-porque h3,.ss-porque p{color:var(--fijo-tinta)}
+.ss-porque .ss-sello{color:var(--fijo-tinta-2);border-color:rgba(34,29,46,.3)}
+.ss-porque .ss-resp{border-top-color:rgba(34,29,46,.25)}
+.ss-porque h3,.ss-aplica h3,.ss-puntos h3,.ss-conecta h3{font-size:var(--t-lg,20px);margin:0 0 var(--e-2)}
+.ss-resp{margin-top:var(--e-2);padding-top:var(--e-2);border-top:1.5px dashed var(--c-linea-suave)}
+.ss-aplica{margin-top:var(--e-4)}
+.ss-aplica ol{display:grid;gap:var(--e-4);padding-left:1.2em}
+.ss-ops{display:flex;flex-wrap:wrap;gap:var(--e-2);margin-top:var(--e-2)}
+.ss-op{min-height:var(--toque);padding:8px 14px;border-radius:var(--r-mano);border:1.5px solid var(--c-linea);background:var(--c-tarjeta);color:var(--c-tinta);font:inherit;font-weight:700;cursor:pointer}
+.ss-op[aria-disabled="true"]{cursor:default}
+.ss-op.buena{border-color:var(--c-ok);background:var(--c-ok-suave)}
+.ss-op.buena::after{content:" ✓";color:var(--c-ok)}
+.ss-op.mala{border-style:dashed;color:var(--c-tinta-2);text-decoration:line-through;text-decoration-color:var(--c-rotulador)}
+.ss-fb{margin-top:var(--e-2);padding:10px 12px;border-radius:var(--r-mano);font-size:var(--t-sm)}
+.ss-fb.bien{background:var(--c-ok-suave)}
+.ss-fb.mal{background:var(--c-aviso-suave)}
+.ss-pide{font-size:var(--t-lg,18px);font-weight:700;margin-bottom:var(--e-2)}
+.ss-puntos{margin-top:var(--e-4)}
+.ss-puntos ul{list-style:none;padding:0;display:grid;gap:var(--e-2);margin-top:var(--e-2)}
+.ss-check{display:grid;grid-template-columns:28px 1fr;gap:8px;align-items:start;min-height:var(--toque);padding:8px 10px;border-radius:var(--r-mano);border:1.5px solid var(--c-linea-suave);background:var(--c-tarjeta);cursor:pointer}
+.ss-check input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--asig-texto)}
+.ss-check:has(input:checked){border-color:var(--c-ok);background:var(--c-ok-suave)}
+.ss-tuya{padding:var(--e-3);border-radius:var(--r-mano);background:var(--c-tarjeta);border:1.5px dashed var(--c-linea-suave)}
+.ss-tuya span{display:block;font-size:var(--t-min);font-weight:700;letter-spacing:var(--tr-versal);text-transform:uppercase;color:var(--c-tinta-2)}
+.ss-sol{margin-top:var(--e-3)}
+.ss-sol summary{cursor:pointer;min-height:var(--toque);padding:var(--e-2) 0}
+.ss-sol summary b{color:var(--asig-texto);text-decoration:underline}
+.ss-claves{display:flex;flex-wrap:wrap;gap:var(--e-2);padding:0;list-style:none;margin-top:var(--e-2)}
+.ss-claves li{padding:2px 10px;border-radius:var(--r-pildora);background:var(--asig-suave);font-weight:700;font-size:var(--t-sm)}
+.ss-ac{display:flex;flex-wrap:wrap;align-items:center;gap:var(--e-2);margin-top:var(--e-3)}
+.ss-ac span{font-weight:700;margin-right:var(--e-2)}
+.ss-ac [aria-pressed="true"]{outline:2.5px solid var(--asig-texto);outline-offset:1px}
+.ss-conecta{margin-top:var(--e-4)}
+.ss-conecta ul{display:grid;gap:var(--e-2);padding-left:1.2em}
+.ss-ficha{min-height:180px}
+.ss-fin{display:grid;gap:var(--e-3);justify-items:start}
+.ss-resumen{list-style:none;padding:0;display:grid;gap:var(--e-2);width:100%}
+.ss-resumen li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:var(--e-3);align-items:baseline;padding:8px 0;border-bottom:1.5px dashed var(--c-linea-suave)}
+.ss-resumen li span:last-child{color:var(--c-tinta-2);font-size:var(--t-sm)}
+@media (max-width:480px){ .ss-resumen li{grid-template-columns:minmax(0,1fr) auto} .ss-resumen li span:last-child{grid-column:1/-1} }
+/* en Hoy */
+.ss-hoy-tarjeta{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:var(--e-4);align-items:center;color:var(--c-tinta);text-decoration:none}
+.ss-hoy-tarjeta b{display:block;font-family:var(--f-titulo);font-size:var(--t-xl);line-height:1.1;margin:2px 0 4px}
+.ss-hoy-txt>span:last-child{color:var(--c-tinta-2);font-size:var(--t-sm)}
+.ss-hoy-tarjeta .boton{pointer-events:none}
+@media (max-width:560px){ .ss-hoy-tarjeta{grid-template-columns:auto minmax(0,1fr)} .ss-hoy-tarjeta .boton{grid-column:1/-1;justify-self:start} .ss-hoy-tarjeta .pegatina{width:56px;height:56px} }

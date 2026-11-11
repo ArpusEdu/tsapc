@@ -150,7 +150,7 @@
     var html = '<header class="cab">' + cab + '<p class="mano resumen" id="resumen">' + esc(L.resumenHoy(EVS, h, n, ex)) + "</p></header>" +
       bienvenida() +
       '<div class="urgente">' + pild + "</div>" +
-      '<div class="rejilla rejilla-hoy">' +
+      '<div class="rejilla rejilla-hoy">' + (SS ? SS.hoyBloque() : "") +
       '<section aria-labelledby="hHoy"><div class="sec-cab"><h2 id="hHoy"><span class="fluor">Para hoy</span></h2><span class="mano">tacha al terminar</span></div>' +
       (tareas ? '<ul class="tareas" id="tareas">' + tareas + "</ul>" : '<div class="nota"><span class="mano">Hoy no hay entregas. ' + (ex && L.clave(ex.date) === k ? "Hoy toca examen: a por él." : "Buen día para repasar.") + "</span></div>") + "</section>" +
       '<section aria-labelledby="hEx"><div class="sec-cab"><h2 id="hEx">Próximo examen</h2></div>' + bloqueEx + "</section>" +
@@ -422,7 +422,8 @@
   function pUnidad(id) {
     var u = D.unidad(id); if (!u) return pNada();
     var S1 = A[u.s], n = ahora(), pf = prof(u.s), p = progresoDe(u), ev = EVS.filter(function (e) { return e.unidad === u.id; })[0];
-    var notas = '<a class="nota-boton" href="../' + esc(u.repaso.web) + '"><b>Repaso</b><span class="mano">' + (u.porEntregas ? "entrega a entrega" : "bloque a bloque") + '</span><span class="ext">Abrir el repaso' + ico("siguiente") + "</span></a>" +
+    var notas = (u.id === "lab1" ? '<a class="nota-boton lila" href="#/sesion/lab1-agua"><b>Sesión de estudio</b><span class="mano">el agua del laboratorio · la nueva forma de estudiar</span><span class="ext">Empezar' + ico("siguiente") + "</span></a>" : "") +
+      '<a class="nota-boton" href="../' + esc(u.repaso.web) + '"><b>Repaso</b><span class="mano">' + (u.porEntregas ? "entrega a entrega" : "bloque a bloque") + '</span><span class="ext">Abrir el repaso' + ico("siguiente") + "</span></a>" +
       (u.simulacro && u.simulacro.web ? '<a class="nota-boton amarilla" href="../' + esc(u.simulacro.web) + '"><b>Simulacro</b><span class="mano">' + esc(u.simulacro.webt || "como el examen") + '</span><span class="ext">Abrir el simulacro' + ico("siguiente") + "</span></a>" : "") +
       E.unidadNotas(u) +
       (u.id === "bio3" ? '<a class="nota-boton" data-subject="bio" href="#/lectura/franklin"><b>Lectura</b><span class="mano">La historia de Rosalind Franklin</span></a>' : "");
@@ -590,11 +591,15 @@
   /* ================= estudiar (app/estudio.js) ================= */
   var E = window.CorteEstudio({ D: D, A: A, esc: esc, ico: ico, SPR: SPR, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion,
     pintar: function (q) { pintar(q); }, repintar: function (sel, arriba) { pintar(!arriba); var b = sel && $(sel, vista); if (b) b.focus({ preventScroll: !arriba }); } });
+  /* sesión de estudio (app/sesion.js): misterio → descubre → sin mirar → resuelve → lo de otros días */
+  var SS = window.CorteSesion ? window.CorteSesion({ D: D, A: A, esc: esc, ico: ico, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion, rico: E.rico,
+    pintar: function (q) { pintar(q); }, repintar: function (sel, arriba) { pintar(!arriba); var b = sel && $(sel, vista); if (b) b.focus({ preventScroll: !arriba }); } }) : null;
+  function pSesionE(id) { return SS ? SS.sesion(id) : pNada(); }
   function pPractica(id, a2) { return E.practica(id, a2) || pNada(); }
   function pTarjetas(id) { return E.tarjetas(id) || pNada(); }
 
   /* ================= rutas y pintado ================= */
-  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas };
+  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas, sesion: pSesionE };
   function leerRuta() {
     var h = location.hash.replace(/^#\/?/, ""), p = h.split("/");
     var arg = null, arg2 = null; try { arg = p[1] ? decodeURIComponent(p[1]) : null; arg2 = p[2] ? decodeURIComponent(p[2]) : null; } catch (_) {}
