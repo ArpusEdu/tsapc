@@ -1680,6 +1680,9 @@ function buildHotspots() {
     b.setAttribute('aria-label', s.aria || s.label);
     b.addEventListener('click', () => { if (isBusy()) return; setIndex(i); s.act(); });
     b.addEventListener('focus', () => { if (si !== i) setIndex(i); });
+    /* con el ratón encima del rótulo, su puerta también se entreabre (antes se cerraba al salir del lienzo) */
+    b.addEventListener('pointerenter', e => { if (e.pointerType === 'touch' || isBusy() || !space || !space.hover) return; if (hoverId && hoverId !== s.id) space.hover(hoverId, false); hoverId = s.id; space.hover(s.id, true); kick(0.4); });
+    b.addEventListener('pointerleave', e => { if (e.pointerType === 'touch' || !space || !space.hover || hoverId !== s.id) return; space.hover(s.id, false); hoverId = null; kick(0.4); });
     hot.appendChild(b); return b;
   });
 }
@@ -1767,7 +1770,8 @@ canvas.addEventListener('pointerdown', e => { poke(); if (isBusy() || frozen) re
 canvas.addEventListener('pointermove', e => {
   mouse.x = e.clientX / W - 0.5; mouse.y = e.clientY / H - 0.5;
   if (performance.now() > ambientUntil - 24000) poke();
-  if (!down) { if (!MOBILE && space && !isBusy()) { const id = hitSpot(e.clientX, e.clientY); if (id !== hoverId) { if (space.hover) space.hover(hoverId, false); hoverId = id; if (space.hover) space.hover(id, true); canvas.style.cursor = id ? 'pointer' : 'grab'; lift(id); } kick(0.4); } return; }
+  /* el «pasar por encima» va con cualquier ratón o lápiz, aunque la ventana sea pequeña (antes dependía de MOBILE) */
+  if (!down) { if (e.pointerType !== 'touch' && space && !isBusy()) { const id = hitSpot(e.clientX, e.clientY); if (id !== hoverId) { if (space.hover) space.hover(hoverId, false); hoverId = id; if (space.hover) space.hover(id, true); canvas.style.cursor = id ? 'pointer' : 'grab'; lift(id); } kick(0.4); } return; }
   const dx = e.clientX - down.x;
   if (Math.abs(dx) > 8) down.moved = true;
   if (down.moved && space && space.spots && !space.camera) {
@@ -1788,7 +1792,12 @@ canvas.addEventListener('pointerup', e => {
 });
 canvas.addEventListener('pointercancel', () => { down = null; });
 /* al salir del lienzo (por encima de una etiqueta o de la tarjeta) la puerta se cierra */
-canvas.addEventListener('pointerleave', () => { if (hoverId && space && space.hover) space.hover(hoverId, false); hoverId = null; canvas.style.cursor = ''; mouse.x = mouse.y = 0; kick(0.4); });
+canvas.addEventListener('pointerleave', e => {
+  /* si el ratón pasa a un rótulo, el rótulo se encarga de su puerta: no se cierra aquí */
+  const a = e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('.hs');
+  if (!a && hoverId && space && space.hover) { space.hover(hoverId, false); hoverId = null; }
+  canvas.style.cursor = ''; mouse.x = mouse.y = 0; kick(0.4);
+});
 let wheelAcc = 0, wheelT = 0;
 /* la rueda funciona también encima de la tarjeta y de las etiquetas */
 addEventListener('wheel', e => {
@@ -2508,9 +2517,23 @@ async function buildHall() {
   const zoomTargetsM = { horario: [1.68, 1.5, 2.2], hoy: [3.05, 1.42, 1.3], calendario: [5.85, 1.5, 2.1] };
 
   let nextPass = 4, hoverDoor = null, focusDoor = null;
-  /* la puerta elegida queda entreabierta (se ve la sala); al pasar el ratón se abre un poco más */
-  const doorRest = id => (id === hoverDoor ? 0.95 : id === focusDoor ? 0.52 : 0);
-  function settleDoors() { if (isBusy()) return; for (const k in doors) { const d = doors[k], y = doorRest(k); if (Math.abs(d.pivot.rotation.y - y) > 0.001) { anim(d.pivot.rotation, { y, duration: y > d.pivot.rotation.y ? 0.7 : 0.5, ease: 'power2.out' }); d.winM.color.copy(k === hoverDoor ? d.base.clone().multiplyScalar(1.25) : d.base); } } }
+  /* la puerta elegida queda apenas entornada; con el ratón encima se abre a medias y baja el picaporte */
+  const doorRest = id => (id === hoverDoor ? 1.05 : id === focusDoor ? 0.32 : 0);
+  let lastHover = null;
+  function settleDoors() {
+    if (isBusy()) return;
+    if (hoverDoor && hoverDoor !== lastHover && doors[hoverDoor]) anim(doors[hoverDoor].handle.rotation, { z: -0.5, duration: 0.14, ease: 'power2.in', yoyo: true, repeat: 1 });
+    lastHover = hoverDoor;
+    for (const k in doors) {
+      const d = doors[k], y = doorRest(k), abre = y > d.pivot.rotation.y;
+      /* cada orden nueva manda: se cancela lo que hubiera en marcha y se va al ángulo nuevo */
+      gsap.killTweensOf(d.pivot.rotation); gsap.killTweensOf(d.under.material);
+      if (Math.abs(d.pivot.rotation.y - y) > 0.001) anim(d.pivot.rotation, { y, duration: abre ? 0.6 : 0.45, ease: abre ? 'power3.out' : 'power2.inOut' });
+      d.winM.color.copy(k === hoverDoor ? d.base.clone().multiplyScalar(1.25) : d.base);
+      const luz = k === hoverDoor ? 0.75 : 0.4;   /* sale más luz por debajo */
+      if (Math.abs(d.under.material.opacity - luz) > 0.01) anim(d.under.material, { opacity: luz, duration: 0.4 });
+    }
+  }
   const hall = {
     name: 'hall', exposure: 1.0, scene, spots, doors, pick: [cork, noteG, calG, ...Object.values(doors).map(d => d.g)], range: [-3.0, 22.0],
     cfg: { y: 1.3, z: 6.7, ly: 1.6, fov: 42, off: -1.6, m: { y: 1.42, z: 5.9, ly: 1.5, fov: 52, off: -0.5 } },
@@ -3936,7 +3959,9 @@ MC.three = {
   skipIntro: () => skipIntro(),
   get space() { return space && space.name; }, get busy() { return isBusy(); },
   goSpot(id) { const i = space.spots.findIndex(s => s.id === id); if (i >= 0) setIndex(i, true); },
-  get frames() { return frames; }, get dpr() { return dpr; }
+  get frames() { return frames; }, get dpr() { return dpr; },
+  /* para pruebas: cuánto está abierta cada puerta del pasillo (radianes) */
+  get puertas() { const o = {}; for (const k in hall.doors) o[k] = +hall.doors[k].pivot.rotation.y.toFixed(2); return o; }
 };
 
 const intro = $('#intro'), skip = $('#skip');
