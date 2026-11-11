@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "id": "lab1-pipetas",
+  "unidad": "lab1",
+  "bloque": 1,
+  "titulo": "Las pipetas",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 1, conceptos 9, 10 y 12, diapositivas 15 a 19). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Una punta para todos",
+    "caso": "Mañana de mucho trabajo. Para ir más rápido, alguien pipetea con la micropipeta las muestras de varios pacientes seguidas, sin cambiar la punta. «Solo son unos microlitros, no pasa nada». Por la tarde, varios resultados no encajan con lo que se esperaba de esos pacientes.",
+    "pregunta": "¿Qué pudo pasar con unos pocos microlitros? ¿Qué regla se saltó?",
+    "solucion": "Con las micropipetas se cambia de punta cada vez que se recoge una nueva muestra, para evitar contaminaciones: «una muestra, una punta». La punta es de plástico desechable precisamente para eso. Al no cambiarla, restos de cada muestra pasaron a la siguiente (contaminación cruzada) y los resultados dejaron de ser solo de cada paciente.",
+    "claves": [
+      "Una muestra, una punta",
+      "La punta es desechable",
+      "Contaminación cruzada"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c9",
+      "n": 9,
+      "titulo": "Pipetas manuales: aforadas, graduadas y Pasteur",
+      "diapositivas": "15",
+      "gancho": "Si tuvieras que pasar unas pocas gotas de un tubo a otro, ¿qué usarías en tu casa? Ahora piensa: ¿eso mide?",
+      "profe": {
+        "glosario": "<p><b>Pera / pipeteador:</b> accesorio de goma que se pone arriba de la pipeta para aspirar sin usar la boca. <b>Aspirar:</b> chupar el líquido hacia dentro. <b>Expulsar:</b> soltarlo.</p>",
+        "img": "../lab1/repaso/img/004.jpg",
+        "imgAlt": "Pipetas aforadas (volumétricas)",
+        "dice": "<ul>\n<li>La aspiración y expulsión se hace <strong>con la mano</strong>, con ayuda de <strong>peras o pipeteadores</strong>.</li>\n<li>Son <strong>parecidas a las buretas, pero sin llave</strong>. Suelen ser <strong>de vidrio</strong> y <strong>se lavan cada vez que se usan</strong>.</li>\n<li>Pueden ser <strong>aforadas o graduadas (volumétricas)</strong>, o <strong>pipetas Pasteur (no volumétricas)</strong>, con un <strong>chupete parecido a un cuentagotas</strong>.</li>\n</ul>",
+        "entiende": "la <strong>Pasteur</strong> es un <strong>cuentagotas</strong>: sirve para pasar unas gotas, pero <strong>no mide</strong>. Las aforadas y graduadas sí miden.",
+        "truco": "<strong>\"Pasteur = cuentagotas = no mide\"</strong>."
+      },
+      "porque": {
+        "pregunta": "Si la pipeta Pasteur no mide, ¿para qué sirve?",
+        "respuesta": "Para lo que hace un cuentagotas: pasar unas gotas de un sitio a otro cuando no importa el volumen exacto. Cuando el volumen importa, se usa una pipeta aforada o graduada, que sí son volumétricas."
+      },
+      "aplica": [
+        {
+          "caso": "Pipeta Pasteur.",
+          "opciones": [
+            "Volumétrica",
+            "No volumétrica"
+          ],
+          "buena": 1,
+          "porque": "La Pasteur es un cuentagotas: no mide."
+        },
+        {
+          "caso": "Pipeta graduada.",
+          "opciones": [
+            "Volumétrica",
+            "No volumétrica"
+          ],
+          "buena": 0,
+          "porque": "Las aforadas y las graduadas son volumétricas."
+        },
+        {
+          "caso": "¿En qué se parecen las pipetas manuales a las buretas?",
+          "opciones": [
+            "En todo, también en la llave",
+            "Son parecidas, pero sin llave"
+          ],
+          "buena": 1,
+          "porque": "Son parecidas a las buretas, pero sin llave."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe las pipetas manuales: cómo se usan, cómo son y qué tipos hay.",
+        "puntos": [
+          "Se aspira y expulsa con la mano, con peras o pipeteadores",
+          "Parecidas a las buretas, pero sin llave",
+          "Suelen ser de vidrio y se lavan cada vez que se usan",
+          "Aforadas o graduadas: volumétricas",
+          "Pasteur: no volumétricas (como un cuentagotas)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c10",
+      "n": 10,
+      "titulo": "Micropipetas y pipetas electrónicas",
+      "diapositivas": "16, 17 y 8",
+      "gancho": "En un laboratorio clínico se pipetean cientos de muestras al día. ¿Cómo harías para no contaminar una con la anterior sin tener que lavar nada?",
+      "profe": {
+        "glosario": "<p><b>Émbolo:</b> el botón que aprietas con el pulgar y que empuja el aire dentro de la pipeta. <b>Punta:</b> la pieza de plástico desechable que se pone en la parte de abajo.</p>",
+        "img": "../lab1/repaso/img/007.jpg",
+        "imgAlt": "Micropipetas (automáticas)",
+        "dice": "<ul>\n<li><strong>Automáticas (micropipetas):</strong> la aspiración y expulsión se hace <strong>mediante émbolo</strong>, una vez marcado el volumen deseado. <strong>Se cambia de punta cada vez que se recoge una nueva muestra</strong>, para evitar contaminaciones.</li>\n<li><strong>Electrónicas:</strong> la aspiración y expulsión se hace <strong>de modo electrónico</strong>, una vez marcado el volumen, <strong>sin intervención humana</strong>.</li>\n</ul>",
+        "truco": "<strong>Manual = mano y pera · Automática = émbolo (pulgar) · Electrónica = botón (máquina)</strong>. Y <strong>\"una muestra, una punta\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué con la micropipeta se cambia de punta y la pipeta manual se lava?",
+        "respuesta": "Porque la punta de la micropipeta es de plástico desechable: se tira y se pone una nueva para cada muestra. La pipeta manual suele ser de vidrio, que no es desechable, así que se lava cada vez que se usa. Es la diferencia entre vidrio y plástico."
+      },
+      "aplica": [
+        {
+          "caso": "Marcas el volumen y aspiras apretando el émbolo con el pulgar.",
+          "opciones": [
+            "Manual",
+            "Automática (micropipeta)",
+            "Electrónica"
+          ],
+          "buena": 1,
+          "porque": "En la micropipeta, la aspiración y la expulsión se hacen con el émbolo."
+        },
+        {
+          "caso": "Marcas el volumen y aspira y expulsa sola, sin intervención humana.",
+          "opciones": [
+            "Automática",
+            "Electrónica"
+          ],
+          "buena": 1,
+          "porque": "En la electrónica, todo se hace de modo electrónico."
+        },
+        {
+          "caso": "Vas a recoger una muestra nueva con la micropipeta.",
+          "opciones": [
+            "Uso la misma punta",
+            "Cambio de punta"
+          ],
+          "buena": 1,
+          "porque": "Una muestra, una punta: para evitar contaminaciones."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica cómo funcionan las micropipetas y las pipetas electrónicas, y qué regla hay con las puntas.",
+        "puntos": [
+          "Primero se marca el volumen deseado",
+          "Micropipetas: se aspira y expulsa con el émbolo",
+          "Se cambia de punta con cada muestra nueva, para evitar contaminaciones",
+          "Electrónicas: aspiran y expulsan de modo electrónico, sin intervención humana"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Punta desechable frente a pipeta de vidrio que se lava: es la diferencia que viste en «Vidrio y plástico».",
+          "ruta": "#/sesion/lab1-vidrio"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c12",
+      "n": 12,
+      "titulo": "Recapitulación: volumétrico y no volumétrico",
+      "diapositivas": "19",
+      "gancho": "De todo el material, hay dos «excepciones» que siempre preguntan: una en los matraces y otra en las pipetas. ¿Sabrías decir cuáles?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Volumétrico</th>\n<th>No volumétrico</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bureta</td>\n<td>Matraz de <strong>base redonda / destilación</strong></td>\n</tr>\n<tr>\n<td>Probeta</td>\n<td>Matraz <strong>Erlenmeyer</strong></td>\n</tr>\n<tr>\n<td>Matraz <strong>aforado</strong></td>\n<td>Matraz <strong>Kitasato</strong></td>\n</tr>\n<tr>\n<td>Pipetas <strong>aforadas / graduadas / automáticas / electrónicas</strong></td>\n<td>Pipetas <strong>Pasteur</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "truco": "de los matraces <strong>solo mide el aforado</strong>; de las pipetas <strong>solo NO mide la Pasteur</strong>. Son las dos \"excepciones\" que preguntan."
+      },
+      "porque": {
+        "pregunta": "¿Por qué conviene tener tan claras esas dos excepciones?",
+        "respuesta": "Porque rompen la regla de su familia: de los matraces, solo mide el aforado; de las pipetas, la única que no mide es la Pasteur. Si las tienes claras, todo lo demás se clasifica solo."
+      },
+      "aplica": [
+        {
+          "caso": "Matraz Kitasato.",
+          "opciones": [
+            "Volumétrico",
+            "No volumétrico"
+          ],
+          "buena": 1,
+          "porque": "De los matraces, solo el aforado es volumétrico."
+        },
+        {
+          "caso": "Pipeta automática.",
+          "opciones": [
+            "Volumétrico",
+            "No volumétrico"
+          ],
+          "buena": 0,
+          "porque": "De las pipetas, solo la Pasteur no es volumétrica."
+        },
+        {
+          "caso": "Bureta.",
+          "opciones": [
+            "Volumétrico",
+            "No volumétrico"
+          ],
+          "buena": 0,
+          "porque": "La bureta es volumétrica."
+        }
+      ],
+      "recuerda": {
+        "pide": "Haz la lista: ¿qué material es volumétrico y cuál no?",
+        "puntos": [
+          "Volumétrico: bureta, probeta y matraz aforado",
+          "Volumétrico: pipetas aforadas, graduadas, automáticas y electrónicas",
+          "No volumétrico: matraz de base redonda / destilación, Erlenmeyer y Kitasato",
+          "No volumétrico: pipetas Pasteur"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Los matraces y el enrase están en la sesión «Medir volúmenes».",
+          "ruta": "#/sesion/lab1-volumenes"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 1",
+        "BLOQUE 2",
+        "BLOQUE 3",
+        "BLOQUE 4"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
