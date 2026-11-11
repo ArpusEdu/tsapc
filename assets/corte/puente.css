@@ -1,0 +1,68 @@
+/* =========================================================
+   Corte · puente para las páginas de unidad de antes (repaso, simulacro, bancos y tests).
+   Fase 7: la página no cambia por dentro (contenido, scripts y progreso intactos); este archivo
+   le pone el papel, la tinta, las letras y el color de su asignatura en Corte.
+   Solo actúa en las páginas que lo piden: <html class="corte" data-unit="…">, cargado después de sus estilos.
+   La forma propia de cada unidad (cabecera, bloques, bordes de unidades.css) se conserva.
+   ========================================================= */
+
+@font-face{font-family:"Fraunces";src:url("fuentes/fraunces-var.woff2") format("woff2");font-weight:300 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("fuentes/fraunces-italic-500.woff2") format("woff2");font-weight:300 800;font-style:italic;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("fuentes/atkinson-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("fuentes/atkinson-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url("fuentes/atkinson-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Mono";src:url("fuentes/atkinson-mono-var.woff2") format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Caveat";src:url("fuentes/caveat-600.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+
+/* ---------- la asignatura de cada unidad: oscuro (texto en papel) · tinte (texto de noche) · noche (cabeceras) ---------- */
+:root.corte[data-unit^="lab"]{--s-o:#0d6b4c;--s-t:#86e4c3;--s-b:#2fc796;--s-n:#1b463f}
+:root.corte[data-unit^="bio"]{--s-o:#5a2ec0;--s-t:#c3adff;--s-b:#8b5cf6;--s-n:#332a58}
+:root.corte[data-unit^="fisio"]{--s-o:#ad3326;--s-t:#ffa197;--s-b:#ff6b5b;--s-n:#512e30}
+:root.corte[data-unit^="gest"]{--s-o:#7a4f00;--s-t:#ffd166;--s-b:#f5ad1b;--s-n:#4f3f1f}
+:root.corte[data-unit^="ipe"]{--s-o:#1a53b3;--s-t:#9cc0ff;--s-b:#3b82f6;--s-n:#1e3458}
+:root.corte[data-unit^="ingles"]{--s-o:#a3460a;--s-t:#ffb685;--s-b:#ff8a3d;--s-n:#513628}
+
+/* ---------- papel (claro) ---------- */
+:root.corte[data-unit]{
+  --f-display:"Fraunces","Fraunces respaldo",Georgia,serif; --dw:600;
+  --f-body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-mono:"Atkinson Hyperlegible Mono",ui-monospace,monospace;
+  --bg:#fbf7ee; --surface:#fffdf8; --soft:#f4eee1; --line:#ddd5c4; --ink:#221d2e; --muted:#4f485c;
+  --accent:var(--s-o); --accent-ink:#ffffff; --q:var(--s-o);
+  --blk:var(--s-n); --blk-ink:#fbf7ee; --blk-accent:var(--s-t); --blk-open:var(--s-o);
+  --hero:var(--s-n); --hero-ink:#fbf7ee; --hero-sub:#e9e1d0; --hero-accent:var(--s-t);
+  --c-cuadricula:rgba(52,96,150,.13); --c-margen:rgba(220,84,84,.38);
+  color-scheme:light;
+}
+/* ---------- noche (oscuro): el sistema o la elección de la página ---------- */
+@media (prefers-color-scheme:dark){
+  :root.corte[data-unit]:not([data-theme="light"]){
+    --bg:#141821; --surface:#1c2130; --soft:#222838; --line:#343a4a; --ink:#f3ede2; --muted:#d3cbbd;
+    --accent:var(--s-t); --accent-ink:#141821; --q:var(--s-t);
+    --blk:var(--s-n); --blk-ink:#f3ede2; --blk-accent:var(--s-t); --blk-open:var(--s-n);
+    --hero:var(--s-n); --hero-ink:#f3ede2; --hero-sub:#d3cbbd; --hero-accent:var(--s-t);
+    --c-cuadricula:rgba(156,192,255,.075); --c-margen:rgba(255,120,100,.34);
+    color-scheme:dark;
+  }
+}
+:root.corte[data-unit][data-theme="dark"]{
+  --bg:#141821; --surface:#1c2130; --soft:#222838; --line:#343a4a; --ink:#f3ede2; --muted:#d3cbbd;
+  --accent:var(--s-t); --accent-ink:#141821; --q:var(--s-t);
+  --blk:var(--s-n); --blk-ink:#f3ede2; --blk-accent:var(--s-t); --blk-open:var(--s-n);
+  --hero:var(--s-n); --hero-ink:#f3ede2; --hero-sub:#d3cbbd; --hero-accent:var(--s-t);
+  --c-cuadricula:rgba(156,192,255,.075); --c-margen:rgba(255,120,100,.34);
+  color-scheme:dark;
+}
+
+/* ---------- el cuaderno: hoja cuadriculada con margen rojo ---------- */
+:root.corte[data-unit] body{
+  background-color:var(--bg);
+  background-image:linear-gradient(90deg,transparent 27px,var(--c-margen) 27px 28.5px,transparent 28.5px),linear-gradient(var(--c-cuadricula) 1px,transparent 1px),linear-gradient(90deg,var(--c-cuadricula) 1px,transparent 1px);
+  background-size:100% 100%,22px 22px,22px 22px;
+}
+/* Fraunces pide menos apretado que las letras de antes */
+:root.corte[data-unit] h1,:root.corte[data-unit] h2,:root.corte[data-unit] h3,:root.corte[data-unit] .blk-h .bt{letter-spacing:-.015em}
+
+/* ---------- volver a la unidad en Corte (puente.js cambia el destino y el texto) ---------- */
+:root.corte .mc-back{background:var(--surface);color:var(--accent)!important;border:1.5px solid var(--line);font-family:var(--f-body)}
+:root.corte .mc-back.mc-float{background:var(--surface);color:var(--accent)!important;border:1.5px solid var(--accent)}
