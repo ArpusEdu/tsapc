@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "id": "lab1-cristaleria",
+  "unidad": "lab1",
+  "bloque": 1,
+  "titulo": "La cristalería",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 1, conceptos 13, 14 y 15, diapositivas 20 a 24). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El vapor que se escapaba",
+    "caso": "En una práctica hay que obtener agua destilada. Se calienta el agua en un matraz de base redonda, empieza a hervir, sale mucho vapor… y al final, en el recipiente de recogida, casi no hay agua. Todo el montaje está bien sujeto y no hay fugas.",
+    "pregunta": "¿Adónde se fue el agua? ¿Qué pieza crees que faltaba en el montaje?",
+    "solucion": "Destilar es calentar el agua hasta que se vuelve vapor y después condensarla, es decir, devolverla a líquido. Sin el tubo refrigerante, que transforma a fase líquida los gases generados en la destilación, el vapor no se condensa y no hay agua que recoger. El refrigerante es la «nevera» del vapor.",
+    "claves": [
+      "Destilar = hervir + condensar",
+      "Tubo refrigerante: gas → líquido",
+      "Sin él, no se recoge nada"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c13",
+      "n": 13,
+      "titulo": "Tubos, vasos y cristalizador",
+      "diapositivas": "20 y 21",
+      "gancho": "Un vaso de precipitados tiene rayas de volumen. ¿Mide con exactitud? Apuesta antes de abrir: es una de las trampas más típicas.",
+      "profe": {
+        "glosario": "<p><b>Fuerza centrífuga:</b> la fuerza que empuja hacia fuera al girar muy rápido. <b>Evaporar:</b> pasar de líquido a gas. <b>Cristalizar:</b> formarse cristales sólidos al quedarse sin líquido. <b>Soluto:</b> la sustancia que está disuelta.</p>",
+        "img": "../lab1/repaso/img/011.jpg",
+        "imgAlt": "Vaso de precipitados",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Cómo es y para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Tubos de centrífuga</strong></td>\n<td>Recipientes <strong>aptos para someterlos a una fuerza centrífuga</strong>. De diferentes tamaños y formas</td>\n</tr>\n<tr>\n<td><strong>Vaso de precipitados</strong></td>\n<td><strong>Forma de vaso</strong>, pero <strong>graduado</strong> y con <strong>pico</strong> para verter sin derramar. Para <strong>calentar, mezclar sin mucha exactitud, retener…</strong></td>\n</tr>\n<tr>\n<td><strong>Tubos de ensayo</strong></td>\n<td>Tubos cilíndricos de vidrio o plástico, con o sin tapón. Hay graduados, <strong>pero lo normal es que no lo estén</strong>. Para <strong>mezclas, variaciones de temperatura u otras pruebas</strong></td>\n</tr>\n<tr>\n<td><strong>Cristalizador</strong></td>\n<td><strong>Vidrio grueso, base ancha y poca altura</strong>. Para que un disolvente <strong>se evapore</strong> y el sólido o soluto <strong>cristalice</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "el <strong>vaso de precipitados</strong> tiene rayas, pero es <strong>no volumétrico</strong>: sus rayas son orientativas, \"sin mucha exactitud\". ¡Es pregunta trampa típica!",
+        "truco": "<strong>\"El vaso tiene rayas pero miente\"</strong> (no volumétrico). <strong>Cristalizador = plato hondo para que se seque y salgan cristales</strong> (como las salinas)."
+      },
+      "porque": {
+        "pregunta": "Si el vaso de precipitados no mide con exactitud, ¿para qué tiene rayas?",
+        "respuesta": "Para orientarte: dan una idea del volumen mientras calientas, mezclas o retienes algo, que es para lo que se usa. Pero son rayas orientativas, «sin mucha exactitud». Para medir de verdad está el material volumétrico."
+      },
+      "aplica": [
+        {
+          "caso": "Quieres que un disolvente se evapore y el soluto cristalice.",
+          "opciones": [
+            "Cristalizador",
+            "Tubo de ensayo",
+            "Vaso de precipitados"
+          ],
+          "buena": 0,
+          "porque": "El cristalizador: vidrio grueso, base ancha y poca altura, para evaporar y cristalizar."
+        },
+        {
+          "caso": "Vas a someter una muestra a fuerza centrífuga.",
+          "opciones": [
+            "Tubo de centrífuga",
+            "Cristalizador"
+          ],
+          "buena": 0,
+          "porque": "Los tubos de centrífuga son los aptos para la fuerza centrífuga."
+        },
+        {
+          "caso": "El vaso de precipitados es…",
+          "opciones": [
+            "Volumétrico",
+            "No volumétrico"
+          ],
+          "buena": 1,
+          "porque": "Tiene rayas, pero no es volumétrico: «el vaso tiene rayas pero miente»."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe los tubos de centrífuga, el vaso de precipitados, los tubos de ensayo y el cristalizador.",
+        "puntos": [
+          "Tubos de centrífuga: aptos para la fuerza centrífuga; de distintos tamaños y formas",
+          "Vaso de precipitados: graduado y con pico; para calentar, mezclar sin mucha exactitud, retener",
+          "Tubos de ensayo: cilíndricos, con o sin tapón, normalmente sin graduar; mezclas, temperatura y otras pruebas",
+          "Cristalizador: vidrio grueso, base ancha y poca altura; para evaporar y cristalizar",
+          "El vaso de precipitados no es volumétrico, aunque tenga rayas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c14",
+      "n": 14,
+      "titulo": "Embudos",
+      "diapositivas": "22",
+      "gancho": "Tienes que separar unas partículas sólidas de un líquido. ¿Cómo lo harías con lo que hay en una cocina?",
+      "profe": {
+        "glosario": "<p><b>Trasvasar:</b> pasar un líquido de un recipiente a otro. <b>Filtrar:</b> separar un sólido de un líquido haciéndolo pasar por un filtro.</p>",
+        "img": "../lab1/repaso/img/015.jpg",
+        "imgAlt": "Embudo Büchner (porcelana)",
+        "dice": "<ul>\n<li><strong>De vidrio, de plástico o de porcelana.</strong></li>\n<li>Sirven para <strong>trasvasar líquidos a matraces de cuello estrecho</strong>.</li>\n<li>También para <strong>filtrar</strong>, con un <strong>papel de filtro</strong> que separa las partículas sólidas del líquido.</li>\n<li>El <strong>Büchner</strong> (de porcelana, con agujeritos) <strong>filtra sustancias con vacío</strong> (diapositiva 29).</li>\n</ul>",
+        "entiende": "el <strong>Büchner + Kitasato</strong> van juntos: el Büchner se pone encima del Kitasato y la goma de vacío \"chupa\" el líquido. ⚠️ (la profe no los une en una diapositiva; es como se usan en la práctica)",
+        "truco": "<strong>Büchner = Bandeja con agujeros</strong>. <strong>Büchner arriba, Kitasato abajo</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué se junta el Büchner con el Kitasato?",
+        "respuesta": "Para filtrar con vacío: el Büchner, de porcelana y con agujeritos, va encima del Kitasato, y la goma de vacío del Kitasato «chupa» el líquido a través del filtro. Ojo: la profe no los une en una diapositiva; es como se usan en la práctica."
+      },
+      "aplica": [
+        {
+          "caso": "Pasar un líquido a un matraz de cuello estrecho.",
+          "opciones": [
+            "Embudo",
+            "Cristalizador"
+          ],
+          "buena": 0,
+          "porque": "Los embudos sirven para trasvasar líquidos a matraces de cuello estrecho."
+        },
+        {
+          "caso": "Filtrar una sustancia con vacío.",
+          "opciones": [
+            "Embudo Büchner",
+            "Vidrio de reloj"
+          ],
+          "buena": 0,
+          "porque": "El Büchner filtra sustancias con vacío."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿De qué pueden ser los embudos, para qué sirven y qué tiene de especial el Büchner?",
+        "puntos": [
+          "De vidrio, de plástico o de porcelana",
+          "Para trasvasar líquidos a matraces de cuello estrecho",
+          "Para filtrar, con papel de filtro que separa los sólidos del líquido",
+          "Büchner: de porcelana, con agujeritos; filtra con vacío"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "El Kitasato, con su boca de vacío, está en la sesión «Medir volúmenes».",
+          "ruta": "#/sesion/lab1-volumenes"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c15",
+      "n": 15,
+      "titulo": "Refrigerante, vidrio de reloj, frasco lavador y termómetro",
+      "diapositivas": "23 y 24",
+      "gancho": "Cuando te duchas con agua caliente, el espejo se empaña: el vapor vuelve a ser agua. ¿Qué pieza del laboratorio crees que hace eso a propósito?",
+      "profe": {
+        "glosario": "<p><b>Destilación:</b> separar líquidos calentándolos hasta que se evaporan y luego enfriando el vapor. <b>Cóncavo-convexo:</b> curvado hacia dentro por un lado y hacia fuera por el otro. <b>Precipitado:</b> el sólido que se forma y queda en el fondo. <b>Agua destilada:</b> agua purificada por destilación.</p>",
+        "img": "../lab1/repaso/img/017.jpg",
+        "imgAlt": "Montaje de destilación",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Tubo refrigerante</strong></td>\n<td>De vidrio. <strong>Transforma a fase líquida los gases generados en la destilación</strong></td>\n</tr>\n<tr>\n<td><strong>Vidrio de reloj</strong></td>\n<td><strong>Lámina de vidrio cóncavo-convexa</strong> para <strong>pesar sólidos</strong> y <strong>recoger el precipitado</strong> de la evaporación de un disolvente</td>\n</tr>\n<tr>\n<td><strong>Frasco lavador</strong></td>\n<td><strong>Bote de plástico con boquilla</strong> para <strong>enjuagar con agua destilada</strong> el instrumental de vidrio</td>\n</tr>\n<tr>\n<td><strong>Termómetro</strong></td>\n<td>Para <strong>conocer la temperatura</strong> de la sustancia de estudio</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "el <strong>refrigerante</strong> es un tubo con agua fría alrededor: el vapor caliente pasa por dentro, se enfría y <strong>vuelve a ser líquido</strong> (como el vaho en el espejo del baño).",
+        "truco": "<strong>Refrigerante = \"nevera\" del vapor</strong> · <strong>Vidrio de reloj = parece el cristal de un reloj</strong> · <strong>Frasco lavador = el bote de ketchup del laboratorio</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el frasco lavador lleva agua destilada y no agua del grifo?",
+        "respuesta": "Porque el agua del grifo lleva sales, y al enjuagar dejaría impurezas en el instrumental de vidrio que pueden interferir en el siguiente análisis. Por eso se enjuaga con agua destilada."
+      },
+      "aplica": [
+        {
+          "caso": "Pesar un sólido o recoger el precipitado al evaporarse un disolvente.",
+          "opciones": [
+            "Vidrio de reloj",
+            "Termómetro",
+            "Tubo refrigerante"
+          ],
+          "buena": 0,
+          "porque": "El vidrio de reloj sirve para pesar sólidos y recoger el precipitado."
+        },
+        {
+          "caso": "Pasar a líquido los gases de la destilación.",
+          "opciones": [
+            "Frasco lavador",
+            "Tubo refrigerante"
+          ],
+          "buena": 1,
+          "porque": "El tubo refrigerante transforma a fase líquida los gases generados en la destilación."
+        },
+        {
+          "caso": "Enjuagar el instrumental de vidrio.",
+          "opciones": [
+            "Frasco lavador",
+            "Vidrio de reloj"
+          ],
+          "buena": 0,
+          "porque": "El frasco lavador enjuaga con agua destilada el instrumental de vidrio."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di para qué sirven el tubo refrigerante, el vidrio de reloj, el frasco lavador y el termómetro.",
+        "puntos": [
+          "Tubo refrigerante: pasa a líquido los gases de la destilación",
+          "Vidrio de reloj: pesar sólidos y recoger el precipitado de una evaporación",
+          "Frasco lavador: enjuagar con agua destilada el instrumental de vidrio",
+          "Termómetro: conocer la temperatura de la sustancia"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La destilación como método para purificar el agua está en la sesión «El agua del laboratorio».",
+          "ruta": "#/sesion/lab1-agua"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 1",
+        "BLOQUE 2",
+        "BLOQUE 3",
+        "BLOQUE 4"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
