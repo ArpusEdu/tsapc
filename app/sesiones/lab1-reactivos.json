@@ -1,0 +1,325 @@
+{
+  "schema": 1,
+  "id": "lab1-reactivos",
+  "unidad": "lab1",
+  "bloque": 4,
+  "titulo": "Reactivos químicos",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 4, diapositivas 48 a 56). «corte»: escrito a partir de ese mismo contenido; el misterio sale de la trampa que avisa el propio repaso (los más puros son los especiales).",
+  "misterio": {
+    "corte": true,
+    "titulo": "La etiqueta que engañaba",
+    "caso": "Un equipo instrumental del laboratorio empieza a dar lecturas raras y hay que limpiarlo cada dos por tres. Nadie ha cambiado el método. Lo único nuevo: se pidió el mismo reactivo, pero con la etiqueta «purísimo» en lugar de «especial». «Si es purísimo, será todavía mejor», pensó quien hizo el pedido.",
+    "pregunta": "¿Por qué crees que falla el equipo?",
+    "solucion": "Porque «purísimo» suena a lo máximo, pero no lo es. Los más puros son los reactivos especiales, y son justo los que se usan en los equipos instrumentales, donde las impurezas pueden interferir en el análisis o ensuciar el equipo. Los purísimos tienen una pureza alta, pero nunca llegan al 100 % y quedan por debajo de los especiales.",
+    "claves": [
+      "Especiales > Purísimos > Generales",
+      "Equipos instrumentales → especiales",
+      "Las impurezas interfieren y ensucian el equipo"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c29",
+      "n": 29,
+      "titulo": "Cómo se clasifican los reactivos",
+      "diapositivas": "48",
+      "gancho": "Si tuvieras una estantería con cien botes de reactivos, ¿con qué criterios los ordenarías? Piensa al menos dos antes de abrir.",
+      "profe": {
+        "glosario": "<p><b>Reactivo:</b> sustancia química que se usa en un análisis para que reaccione o para preparar la muestra.</p>",
+        "dice": "<p>según el análisis se usan unos u otros. Se clasifican por:</p>\n<ol>\n<li><strong>Naturaleza química</strong></li>\n<li><strong>Funcionalidad</strong></li>\n<li><strong>Peligrosidad</strong> (se estudiará en la <strong>Unidad 2</strong>, con la seguridad)</li>\n<li><strong>Pureza</strong></li>\n</ol>",
+        "truco": "<strong>\"Na-Fu-Pe-Pu\"</strong> → \"<strong>Na</strong>cho <strong>Fu</strong>ma <strong>Pe</strong>ro <strong>Pu</strong>ro\"."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hacen falta cuatro clasificaciones y no basta con una?",
+        "respuesta": "Porque cada una responde a una pregunta distinta que te haces antes de usar un reactivo: de qué está hecho (naturaleza química), para qué sirve (funcionalidad), si es peligroso (peligrosidad) y cuánto de puro es (pureza). Según el análisis, te importa más una que otra."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué criterio se estudia en la Unidad 2, con la seguridad?",
+          "opciones": [
+            "La pureza",
+            "La peligrosidad",
+            "La funcionalidad"
+          ],
+          "buena": 1,
+          "porque": "La peligrosidad se estudia en la Unidad 2, con la seguridad."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 criterios con los que se clasifican los reactivos.",
+        "puntos": [
+          "Naturaleza química",
+          "Funcionalidad",
+          "Peligrosidad (se estudia en la Unidad 2)",
+          "Pureza"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La peligrosidad de los reactivos la estudias en Lab 2 · Seguridad.",
+          "ruta": "#/unidad/lab2"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c30",
+      "n": 30,
+      "titulo": "Orgánicos e inorgánicos",
+      "diapositivas": "50",
+      "gancho": "La sal común y el agua están por todas partes en el laboratorio. ¿Son orgánicas o inorgánicas? ¿Qué crees que lo decide?",
+      "profe": {
+        "glosario": "<p><b>Enlace:</b> unión entre átomos. <b>Esqueleto:</b> la «columna» principal de la molécula.</p>",
+        "dice": "<ul>\n<li><strong>Orgánicos:</strong> su estructura base es <strong>carbono</strong> y los enlaces que crea con el <strong>hidrógeno y el oxígeno</strong> principalmente (también puede unirse a <strong>halógenos y nitrógeno</strong>).</li>\n<li><strong>Inorgánicos:</strong> combinación de elementos de la tabla periódica cuyo <strong>esqueleto principal no es el carbono</strong>. Por ejemplo, la <strong>sal común (NaCl)</strong> o el <strong>agua (H₂O)</strong>.</li>\n</ul>",
+        "truco": "<strong>¿Tiene una cadena de C con H? → orgánico</strong>. Si no → inorgánico."
+      },
+      "porque": {
+        "pregunta": "Si el agua (H₂O) tiene hidrógeno y oxígeno, ¿por qué no es orgánica?",
+        "respuesta": "Porque lo que decide no es tener hidrógeno u oxígeno, sino el esqueleto: en los orgánicos, la estructura base es el carbono. El agua no tiene carbono, así que es inorgánica, igual que la sal común (NaCl)."
+      },
+      "aplica": [
+        {
+          "caso": "Un compuesto cuyo esqueleto es una cadena de carbono unida a hidrógeno.",
+          "opciones": [
+            "Orgánico",
+            "Inorgánico"
+          ],
+          "buena": 0,
+          "porque": "Su estructura base es el carbono: es orgánico."
+        },
+        {
+          "caso": "La sal común (NaCl).",
+          "opciones": [
+            "Orgánico",
+            "Inorgánico"
+          ],
+          "buena": 1,
+          "porque": "Su esqueleto principal no es el carbono: es inorgánica."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué diferencia a un compuesto orgánico de uno inorgánico y da dos ejemplos de inorgánicos.",
+        "puntos": [
+          "Orgánico: su estructura base es el carbono",
+          "Unido sobre todo a hidrógeno y oxígeno (también halógenos y nitrógeno)",
+          "Inorgánico: su esqueleto principal no es el carbono",
+          "Ejemplos: la sal común (NaCl) y el agua (H₂O)"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Los restos orgánicos del material se limpian con etanol o acetona (sesión «Limpieza, desinfección y esterilización»).",
+          "ruta": "#/sesion/lab1-limpieza"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c31",
+      "n": 31,
+      "titulo": "Ácidos, bases, sales y disolventes",
+      "diapositivas": "51",
+      "gancho": "Mira estas fórmulas sin saber química: HCl, NaOH, NaCl. ¿Ves algún patrón que las distinga?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Ejemplos de la profe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Ácidos</strong></td>\n<td><strong>Ácido clorhídrico (HCl)</strong>, ácido sulfúrico (<strong>H₂SO₄</strong>), ácido fluorhídrico (<strong>HF</strong>)</td>\n</tr>\n<tr>\n<td><strong>Bases</strong></td>\n<td><strong>Hidróxido de sodio (NaOH)</strong>, hidróxido de amonio (<strong>NH₄OH</strong>)</td>\n</tr>\n<tr>\n<td><strong>Sales</strong></td>\n<td><strong>Cloruro de sodio (NaCl)</strong>, fluoruro potásico (<strong>KF</strong>)</td>\n</tr>\n<tr>\n<td><strong>Disolventes</strong></td>\n<td><strong>Agua, acetona, etanol</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "truco": "<strong>Truco para reconocerlos por la fórmula:</strong> <strong>empieza por H → ácido</strong> (HCl, H₂SO₄, HF) · <strong>acaba en OH → base</strong> (NaOH, NH₄OH) · <strong>metal + no metal sin H ni OH → sal</strong> (NaCl, KF)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el agua, la acetona y el etanol van en el mismo grupo, si son tan distintos?",
+        "respuesta": "Porque aquí no se agrupan por lo que son, sino por lo que hacen: los tres se usan como disolventes, para disolver otras sustancias. Eso es clasificar por funcionalidad."
+      },
+      "aplica": [
+        {
+          "caso": "NaOH",
+          "opciones": [
+            "Ácido",
+            "Base",
+            "Sal",
+            "Disolvente"
+          ],
+          "buena": 1,
+          "porque": "Acaba en OH: es una base (hidróxido de sodio)."
+        },
+        {
+          "caso": "HCl",
+          "opciones": [
+            "Ácido",
+            "Base",
+            "Sal",
+            "Disolvente"
+          ],
+          "buena": 0,
+          "porque": "Empieza por H: es un ácido (ácido clorhídrico)."
+        },
+        {
+          "caso": "KF",
+          "opciones": [
+            "Ácido",
+            "Base",
+            "Sal",
+            "Disolvente"
+          ],
+          "buena": 2,
+          "porque": "Metal + no metal, sin H ni OH: es una sal (fluoruro potásico)."
+        },
+        {
+          "caso": "Acetona",
+          "opciones": [
+            "Ácido",
+            "Base",
+            "Sal",
+            "Disolvente"
+          ],
+          "buena": 3,
+          "porque": "La acetona es un disolvente, como el agua y el etanol."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 grupos según la funcionalidad, con sus ejemplos.",
+        "puntos": [
+          "Ácidos: HCl, H₂SO₄, HF",
+          "Bases: NaOH, NH₄OH",
+          "Sales: NaCl, KF",
+          "Disolventes: agua, acetona, etanol"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c32",
+      "n": 32,
+      "titulo": "Purísimos, generales y especiales",
+      "diapositivas": "52, 53 y 54",
+      "gancho": "Tres botes: «purísimo», «general para análisis» y «especial». ¿Cuál es el más puro? Ya sabes que hay trampa: piénsalo bien.",
+      "profe": {
+        "glosario": "<p><b>Sintetizar:</b> fabricar un compuesto en el laboratorio. <b>Cálculo estequiométrico:</b> cálculo de las cantidades exactas de cada sustancia que reaccionan entre sí.</p>",
+        "dice": "<p><strong>todos los compuestos tienen impurezas</strong>, que vienen de cómo se extraen de la naturaleza o se sintetizan. Según la pureza:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Pureza</th>\n<th>Uso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Purísimos</strong></td>\n<td><strong>Alta</strong>, pero <strong>nunca llega al 100 %</strong></td>\n<td>Experimentos con el <strong>mínimo contenido de impurezas</strong></td>\n</tr>\n<tr>\n<td><strong>Generales para análisis</strong></td>\n<td><strong>Media</strong></td>\n<td>Se tienen en cuenta en los <strong>cálculos estequiométricos</strong>, pero <strong>las impurezas no interfieren</strong> en el experimento</td>\n</tr>\n<tr>\n<td><strong>Especiales</strong></td>\n<td><strong>Los más puros</strong></td>\n<td><strong>Equipos instrumentales</strong>, donde las impurezas pueden <strong>interferir</strong> en el análisis o <strong>ensuciar el equipo</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>La pureza viene en la etiqueta:</strong></p>\n<ul>\n<li><strong>Sólido:</strong> <strong>peso</strong> del compuesto puro / peso total (<strong>masa</strong>).</li>\n<li><strong>Líquido y gas:</strong> <strong>volumen</strong> del compuesto puro / volumen total.</li>\n</ul>\n<p>Es importante saber cuánto compuesto puro tienes para hacer los <strong>cálculos estequiométricos</strong>: para que una reacción se complete hay que saber <strong>de qué partimos, sin contar las impurezas</strong>.</p>",
+        "entiende": "ojo con la trampa: los <strong>más puros son los especiales</strong>, no los \"purísimos\" (que suena a más pero va en medio).",
+        "truco": "orden de pureza <strong>\"E &gt; P &gt; G\"</strong> → \"<strong>E</strong>l <strong>P</strong>apa <strong>G</strong>ana\" (Especiales &gt; Purísimos &gt; Generales). Y <strong>\"Sólido = Peso · Líquido = Litros (volumen)\"</strong>."
+      },
+      "porque": {
+        "pregunta": "Si los reactivos generales tienen impurezas, ¿por qué se pueden usar en un análisis?",
+        "respuesta": "Porque esas impurezas no interfieren en el experimento: se tienen en cuenta en los cálculos estequiométricos y listo. No siempre hace falta lo más puro; lo que siempre hace falta es saber cuánto compuesto puro tienes."
+      },
+      "aplica": [
+        {
+          "caso": "Un equipo instrumental, donde las impurezas pueden interferir o ensuciarlo.",
+          "opciones": [
+            "Purísimo",
+            "General para análisis",
+            "Especial"
+          ],
+          "buena": 2,
+          "porque": "En los equipos instrumentales se usan los especiales, los más puros."
+        },
+        {
+          "caso": "En la etiqueta de un reactivo sólido, la pureza se indica como…",
+          "opciones": [
+            "Peso del compuesto puro / peso total",
+            "Volumen del compuesto puro / volumen total"
+          ],
+          "buena": 0,
+          "porque": "Sólido: peso (masa). Líquido y gas: volumen."
+        },
+        {
+          "caso": "¿Puede un reactivo purísimo tener un 100 % de pureza?",
+          "opciones": [
+            "Sí",
+            "No"
+          ],
+          "buena": 1,
+          "porque": "Su pureza es alta, pero nunca llega al 100 %: todos los compuestos tienen impurezas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Ordena los tres tipos de la más pura a la menos, di para qué sirve cada uno y cómo se indica la pureza en la etiqueta.",
+        "puntos": [
+          "Especiales: los más puros (equipos instrumentales)",
+          "Purísimos: pureza alta, nunca el 100 % (mínimo de impurezas)",
+          "Generales para análisis: pureza media (se tienen en cuenta en los cálculos)",
+          "Sólido: peso del compuesto puro / peso total",
+          "Líquido y gas: volumen del compuesto puro / volumen total"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c33",
+      "n": 33,
+      "titulo": "Reactivos en anatomía patológica",
+      "diapositivas": "56",
+      "gancho": "Llega una biopsia al laboratorio de anatomía patológica. Para poder verla al microscopio, ¿qué crees que le tiene que pasar antes al tejido?",
+      "profe": {
+        "glosario": "<p><b>Deshidratar:</b> quitar el agua. <b>Aclarar:</b> volver transparente el tejido. <b>Fijar:</b> conservar el tejido tal como estaba, para que no se degrade. <b>Caracterizar:</b> describir cómo es algo.</p>",
+        "dice": "<p>en anatomía patológica se estudian los tejidos para el diagnóstico, y se usan reactivos para procesarlos:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Reactivo</th>\n<th>Para qué (según la profe)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Parafina</strong></td>\n<td><strong>Polímero que da consistencia</strong> al tejido</td>\n</tr>\n<tr>\n<td><strong>Xilol</strong></td>\n<td><strong>Elimina el agua</strong> del tejido y <strong>aclara</strong> la muestra: <strong>deshidrata y lo hace transparente</strong></td>\n</tr>\n<tr>\n<td><strong>Etanol</strong></td>\n<td>Alcohol que <strong>elimina el agua</strong> del tejido: <strong>fija y deshidrata</strong></td>\n</tr>\n<tr>\n<td><strong>Tinte</strong></td>\n<td>Los tejidos <strong>se tiñen</strong> para verlos al microscopio y <strong>caracterizarlos</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>⚠️ <strong>Ojo:</strong> la diapositiva llama al xilol \"alcohol\", pero en química el <strong>xilol (xileno)</strong> es un <strong>hidrocarburo aromático</strong>, no un alcohol. En el examen, da la función tal como la dice la profe.</p>",
+        "truco": "<strong>Truco (orden real del procesado):</strong> <strong>E → X → P → T</strong> → \"<strong>E</strong>l <strong>X</strong>ilófono <strong>P</strong>ara <strong>T</strong>ocar\": <strong>E</strong>tanol (quita agua) → <strong>X</strong>ilol (aclara) → <strong>P</strong>arafina (da consistencia) → <strong>T</strong>inte (para ver)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el orden es etanol → xilol → parafina → tinte?",
+        "respuesta": "Porque cada paso deja el tejido listo para el siguiente: primero se fija y se le quita el agua (etanol), luego se aclara (xilol), después se le da consistencia (parafina) y al final se tiñe para poder verlo y caracterizarlo al microscopio."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué reactivo da consistencia al tejido?",
+          "opciones": [
+            "Parafina",
+            "Xilol",
+            "Etanol"
+          ],
+          "buena": 0,
+          "porque": "La parafina es un polímero que da consistencia al tejido."
+        },
+        {
+          "caso": "¿Cuál fija y deshidrata?",
+          "opciones": [
+            "Xilol",
+            "Etanol",
+            "Tinte"
+          ],
+          "buena": 1,
+          "porque": "El etanol es un alcohol que elimina el agua del tejido: fija y deshidrata."
+        },
+        {
+          "caso": "¿Cuál aclara la muestra, la hace transparente?",
+          "opciones": [
+            "Parafina",
+            "Xilol",
+            "Tinte"
+          ],
+          "buena": 1,
+          "porque": "El xilol elimina el agua del tejido y aclara la muestra."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué hacen la parafina, el xilol, el etanol y el tinte en anatomía patológica.",
+        "puntos": [
+          "Parafina: polímero que da consistencia al tejido",
+          "Xilol: elimina el agua y aclara (hace transparente)",
+          "Etanol: elimina el agua; fija y deshidrata",
+          "Tinte: para ver los tejidos al microscopio y caracterizarlos"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Esto es tu futuro trabajo: procesar tejidos es el día a día del técnico de anatomía patológica. Los tejidos que procesas así son los que estudias en Fisio 2.",
+          "ruta": "#/unidad/fisio2"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 2",
+        "BLOQUE 3"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

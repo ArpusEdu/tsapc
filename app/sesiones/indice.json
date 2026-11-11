@@ -3,6 +3,7 @@
   "nota": "El recorrido de sesiones, en orden. Hoy propone la primera que falte (o la que esté a medias). Cada sesión vive en app/sesiones/<id>.json.",
   "sesiones": [
     { "id": "lab1-limpieza", "unidad": "lab1", "bloque": 2, "titulo": "Limpieza, desinfección y esterilización", "minutos": 25, "pegatina": "tubos", "gancho": "un caso de antidopaje" },
-    { "id": "lab1-agua", "unidad": "lab1", "bloque": 3, "titulo": "El agua del laboratorio", "minutos": 20, "pegatina": "matraz", "gancho": "el calcio que no era de nadie" }
+    { "id": "lab1-agua", "unidad": "lab1", "bloque": 3, "titulo": "El agua del laboratorio", "minutos": 20, "pegatina": "matraz", "gancho": "el calcio que no era de nadie" },
+    { "id": "lab1-reactivos", "unidad": "lab1", "bloque": 4, "titulo": "Reactivos químicos", "minutos": 25, "pegatina": "tubos", "gancho": "la etiqueta que engañaba" }
   ]
 }
