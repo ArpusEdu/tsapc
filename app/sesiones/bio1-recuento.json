@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "id": "bio1-recuento",
+  "unidad": "bio1",
+  "bloque": 6,
+  "titulo": "Contar células vivas",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 1 (bloque 6, conceptos 18, 19 y 20). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Contadas, pero no vivas",
+    "caso": "Cuentas las células de tu suspensión en la cámara de Neubauer, calculas cuántas hay por mililitro y siembras justo las que necesitabas. Unos días después, el cultivo tiene muchas menos células de las que esperabas.",
+    "pregunta": "¿Qué se te pasó al contar?",
+    "solucion": "Contaste todas las células, pero no todas estaban vivas. Antes de contar hay que añadir un colorante vital, normalmente azul tripán: las vivas tienen la membrana intacta, no captan el colorante y se ven blancas; las muertas se ven azules. En la cámara de Neubauer se cuentan las viables y las no viables por separado.",
+    "claves": [
+      "Recuento + viabilidad",
+      "Azul tripán",
+      "Azul = muerta · blanca = viva"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio1.c18",
+      "n": 18,
+      "titulo": "Recuento: densidad celular",
+      "diapositivas": "bloque 6",
+      "gancho": "Tienes un tubo con células en suspensión. ¿Cómo dirías cuántas hay, si no las puedes ver a simple vista?",
+      "profe": {
+        "dice": "<p>con la suspensión hecha hay que saber cuántas células hay → <strong>densidad celular = nº de células/ml de suspensión</strong>.</p>",
+        "entiende": "es como saber <strong>cuánta gente hay por metro cuadrado</strong> en un concierto, pero con células por mililitro.",
+        "truco": "densidad = <strong>células/ml</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la densidad se da «por mililitro»?",
+        "respuesta": "Porque las células están en una suspensión: lo que necesitas saber es cuántas hay en cada mililitro, para calcular qué volumen coger al sembrar."
+      },
+      "aplica": [
+        {
+          "caso": "La densidad celular es…",
+          "opciones": [
+            "Nº de células / ml de suspensión",
+            "Nº de células / frasco"
+          ],
+          "buena": 0,
+          "porque": "Densidad = células/ml."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es la densidad celular?",
+        "puntos": [
+          "Con la suspensión hecha hay que saber cuántas células hay",
+          "Densidad celular = nº de células / ml de suspensión"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c19",
+      "n": 19,
+      "titulo": "Viabilidad: el colorante vital",
+      "diapositivas": "bloque 6",
+      "gancho": "Al microscopio, una célula viva y una muerta pueden parecer iguales. ¿Cómo las distinguirías?",
+      "profe": {
+        "dice": "<p>el colorante vital <strong>distingue células vivas y muertas</strong>. El más habitual: <strong>azul tripán (<em>Trypan blue</em>)</strong>.\nFoto: <strong>viables = blancas/claras</strong> (no captan el colorante); <strong>no viables = azules</strong>.</p>",
+        "entiende": "una célula viva tiene la <strong>membrana intacta</strong>, como una puerta cerrada, y el colorante no entra: se ve <strong>blanca</strong>. Una muerta tiene la membrana rota, el colorante entra y se ve <strong>azul</strong>.",
+        "truco": "<strong>\"Azul = adiós\"</strong> (muerta). <strong>Blanca = bien</strong> (viva)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué las células muertas se tiñen de azul y las vivas no?",
+        "respuesta": "Porque la célula viva tiene la membrana intacta, como una puerta cerrada, y el colorante no entra. La muerta tiene la membrana rota: el colorante entra y se ve azul."
+      },
+      "aplica": [
+        {
+          "caso": "Una célula azul con azul tripán está…",
+          "opciones": [
+            "Muerta (no viable)",
+            "Viva (viable)"
+          ],
+          "buena": 0,
+          "porque": "«Azul = adiós»."
+        },
+        {
+          "caso": "El colorante vital más habitual es…",
+          "opciones": [
+            "Azul tripán",
+            "Lejía"
+          ],
+          "buena": 0,
+          "porque": "El azul tripán (Trypan blue)."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué es un colorante vital y cómo se ven las células.",
+        "puntos": [
+          "Distingue células vivas y muertas",
+          "El más habitual: azul tripán",
+          "Viables: blancas o claras (no captan el colorante)",
+          "No viables: azules"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c20",
+      "n": 20,
+      "titulo": "La cámara de Neubauer",
+      "diapositivas": "bloque 6",
+      "gancho": "Contar miles de células una a una sería imposible. ¿Cómo crees que se cuenta solo una parte para saber el total?",
+      "profe": {
+        "dice": "<p>el recuento consiste en contar las <strong>viables (blancas) y no viables (azules)</strong> en una <strong>cámara de recuento o hemocitómetro → cámara de Neubauer</strong> (foto: portaobjetos grueso con rejilla; las flechas señalan los <strong>4 cuadrantes de las esquinas</strong> donde se cuenta).</p>",
+        "entiende": "es un portaobjetos con una <strong>cuadrícula grabada</strong>, como un tablero. Cuentas las células de las 4 esquinas y con eso calculas cuántas hay en total.",
+        "truco": "<strong>Neubauer = tablero de 4 esquinas</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la cámara de Neubauer tiene una cuadrícula?",
+        "respuesta": "Para contar en zonas concretas: se cuentan las células de los 4 cuadrantes de las esquinas y, con eso, se calcula cuántas hay en total."
+      },
+      "aplica": [
+        {
+          "caso": "¿Dónde se cuenta en la cámara de Neubauer?",
+          "opciones": [
+            "En los 4 cuadrantes de las esquinas",
+            "En toda la placa, una a una"
+          ],
+          "buena": 0,
+          "porque": "Neubauer = tablero de 4 esquinas."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se hace el recuento con la cámara de Neubauer?",
+        "puntos": [
+          "Se cuentan las viables (blancas) y las no viables (azules)",
+          "En una cámara de recuento o hemocitómetro: la de Neubauer",
+          "Portaobjetos grueso con rejilla",
+          "Se cuenta en los 4 cuadrantes de las esquinas"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "El portaobjetos y el microscopio, en Lab 1 («Porcelana, metal y microbiología»).",
+          "ruta": "#/sesion/lab1-porcelana"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "id": "bio1-aplicaciones",
+  "unidad": "bio1",
+  "bloque": 7,
+  "titulo": "Contaminación y para qué sirve todo esto",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 1 (bloques 7 y 8, conceptos 29 a 32). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Un enemigo invisible",
+    "caso": "Un cultivo parece perfecto: el medio no se ha enturbiado, no ha cambiado de color y al microscopio no se ve nada raro. Se ha trabajado en cabina, con etanol y luz UV. Aun así, los resultados del experimento no tienen sentido, como si algo estuviera afectando a las células desde dentro.",
+    "pregunta": "¿Qué contaminación puede ser, si no se ve nada? ¿Por dónde habrá entrado?",
+    "solucion": "Un virus, la contaminación más grave. Bacterias, levaduras y hongos suelen notarse (el medio se enturbia o cambia de color), pero los virus no se ven y viven dentro de las células. Suelen venir de los sueros animales, como el FBS que lleva el medio. Las normas de limpieza (campanas, etanol, rayos UV) frenan a los demás, pero no a lo que entra con el propio suero.",
+    "claves": [
+      "Bacterias, levaduras y hongos… y el virus, el villano",
+      "No se ve y vive dentro de la célula",
+      "Viene de los sueros animales"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio1.c29",
+      "n": 29,
+      "titulo": "Contaminaciones",
+      "diapositivas": "bloque 7",
+      "gancho": "¿Qué tipos de «bichos» crees que pueden colarse en un cultivo de células?",
+      "profe": {
+        "dice": "<ul>\n<li>Los microorganismos pueden <strong>alterar el crecimiento</strong> del cultivo.</li>\n<li><strong>Tres grupos:</strong> <strong>bacterias, levaduras y hongos</strong>.</li>\n<li>Normas de limpieza: <strong>campanas, etanol, rayos UV</strong>, etc.</li>\n<li><strong>Virus:</strong> la contaminación <strong>más grave</strong>; suele venir de <strong>sueros animales</strong>.</li>\n</ul>",
+        "entiende": "las bacterias, levaduras y hongos <strong>se ven</strong> (el medio se enturbia o cambia de color). Los <strong>virus no se ven</strong> y viven dentro de las células: por eso son <strong>los más graves</strong>. Entran con el <strong>suero animal</strong> (el FBS viene de vacas).",
+        "truco": "<strong>\"B-L-H y el Virus es el Villano\"</strong> (Bacterias, Levaduras, Hongos; el Virus, lo peor)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué los virus son la contaminación más grave?",
+        "respuesta": "Porque no se ven y viven dentro de las células, así que el cultivo puede parecer limpio. Además suelen llegar con los sueros animales, que van dentro del propio medio."
+      },
+      "aplica": [
+        {
+          "caso": "La contaminación más grave.",
+          "opciones": [
+            "Virus",
+            "Hongos",
+            "Levaduras"
+          ],
+          "buena": 0,
+          "porque": "El virus es el villano."
+        },
+        {
+          "caso": "¿De dónde suelen venir los virus?",
+          "opciones": [
+            "De los sueros animales",
+            "Del agua del grifo"
+          ],
+          "buena": 0,
+          "porque": "Suelen venir de sueros animales."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué contaminaciones puede tener un cultivo?",
+        "puntos": [
+          "Los microorganismos pueden alterar el crecimiento",
+          "Tres grupos: bacterias, levaduras y hongos",
+          "Limpieza: campanas, etanol, rayos UV…",
+          "Virus: la más grave; suele venir de sueros animales"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c30",
+      "n": 30,
+      "titulo": "Cuidados al trabajar con cultivos",
+      "diapositivas": "bloque 7",
+      "gancho": "Vas a meter un frasco en la cabina estéril. ¿Qué harías antes con el frasco y con tus guantes?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Antibióticos y antifúngicos</strong> en el medio.</li>\n<li>Condiciones estrictas de <strong>asepsia</strong> y <strong>cabinas de seguridad biológica 2</strong>.</li>\n<li>Cuidado especial <strong>fuera del ambiente estéril</strong> (p. ej., al mirar al microscopio).</li>\n<li>Limpiar el exterior de viales y recipientes que entren en la cabina con <strong>etanol 70 %</strong>.</li>\n<li><strong>EPIS:</strong> <strong>bata estéril solo para cultivos, guantes</strong>, y rociarlos con etanol en cada manipulación.</li>\n</ul>",
+        "truco": "<strong>\"A-C-E-E\"</strong> = <strong>A</strong>ntibióticos, <strong>C</strong>abina nivel 2, <strong>E</strong>tanol 70 %, <strong>E</strong>PIS."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que tener cuidado especial al mirar al microscopio?",
+        "respuesta": "Porque es un momento fuera del ambiente estéril: el cultivo sale de la cabina y queda expuesto."
+      },
+      "aplica": [
+        {
+          "caso": "Antes de meter un vial en la cabina, lo limpias con…",
+          "opciones": [
+            "Etanol 70 %",
+            "Agua destilada"
+          ],
+          "buena": 0,
+          "porque": "El exterior de viales y recipientes, con etanol 70 %."
+        },
+        {
+          "caso": "¿Qué cabina se usa?",
+          "opciones": [
+            "Cabina de seguridad biológica 2",
+            "Vitrina extractora de gases"
+          ],
+          "buena": 0,
+          "porque": "Asepsia estricta y cabinas de seguridad biológica 2."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los cuidados al trabajar con cultivos.",
+        "puntos": [
+          "Antibióticos y antifúngicos en el medio",
+          "Asepsia estricta y cabinas de seguridad biológica 2",
+          "Cuidado especial fuera del ambiente estéril (microscopio)",
+          "Limpiar viales y recipientes con etanol 70 % antes de la cabina",
+          "Bata estéril solo para cultivos, guantes rociados con etanol"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Las normas de las cabinas de bioseguridad (luz UV apagada, cristal bajado) están en Lab 2 · «Equipos sin sustos (II)».",
+          "ruta": "#/sesion/lab2-equiposb"
+        }
+      ]
+    },
+    {
+      "id": "bio1.c31",
+      "n": 31,
+      "titulo": "Investigación aplicada",
+      "diapositivas": "bloque 8",
+      "gancho": "La insulina que se inyectan muchas personas con diabetes o la piel artificial para grandes quemados… ¿crees que tienen algo que ver con los cultivos?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Área</th>\n<th>Qué se hace</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Virología</strong></td>\n<td>Cultivo de virus animales y de plantas, <strong>producción de vacunas</strong></td>\n</tr>\n<tr>\n<td><strong>Biotecnología</strong></td>\n<td>Fármacos en <strong>biorreactores</strong> (<strong>interferón, insulina, hormona de crecimiento</strong>)</td>\n</tr>\n<tr>\n<td><strong>Inmunología</strong></td>\n<td><strong>Anticuerpos monoclonales</strong>, señalización, inflamación</td>\n</tr>\n<tr>\n<td><strong>Farmacología</strong></td>\n<td>Efecto de fármacos, interacción con el receptor, <strong>resistencia</strong></td>\n</tr>\n<tr>\n<td><strong>Ingeniería de tejidos</strong></td>\n<td>Tejidos artificiales (<strong>piel, cartílago</strong>) para <strong>grandes quemados</strong>, injertos, autotrasplantes; desdiferenciación y diferenciación inducida</td>\n</tr>\n</tbody>\n</table></div>",
+        "truco": "<strong>\"VaBIFI\"</strong> → <strong>V</strong>irología (vacunas), <strong>B</strong>iotecnología (insulina), <strong>I</strong>nmunología (anticuerpos), <strong>F</strong>armacología (resistencia), <strong>I</strong>ngeniería (piel para quemados)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la ingeniería de tejidos es útil para los grandes quemados?",
+        "respuesta": "Porque permite fabricar tejidos artificiales, como piel o cartílago, para injertos y autotrasplantes."
+      },
+      "aplica": [
+        {
+          "caso": "Producción de vacunas.",
+          "opciones": [
+            "Virología",
+            "Farmacología"
+          ],
+          "buena": 0,
+          "porque": "Virología: virus y vacunas."
+        },
+        {
+          "caso": "Fármacos en biorreactores, como la insulina.",
+          "opciones": [
+            "Biotecnología",
+            "Inmunología"
+          ],
+          "buena": 0,
+          "porque": "Biotecnología."
+        },
+        {
+          "caso": "Anticuerpos monoclonales.",
+          "opciones": [
+            "Inmunología",
+            "Ingeniería de tejidos"
+          ],
+          "buena": 0,
+          "porque": "Inmunología."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 5 áreas de la investigación aplicada y un ejemplo de cada una.",
+        "puntos": [
+          "Virología: cultivo de virus y vacunas",
+          "Biotecnología: fármacos en biorreactores (interferón, insulina, hormona de crecimiento)",
+          "Inmunología: anticuerpos monoclonales, señalización, inflamación",
+          "Farmacología: efecto de fármacos, receptor, resistencia",
+          "Ingeniería de tejidos: piel o cartílago para quemados, injertos, autotrasplantes"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c32",
+      "n": 32,
+      "titulo": "Investigación básica",
+      "diapositivas": "bloque 8",
+      "gancho": "Si pudieras mirar dentro de una célula viva durante días, ¿qué te gustaría saber de ella?",
+      "profe": {
+        "dice": "<ol>\n<li><strong>Actividad intracelular:</strong> transcripción de DNA, síntesis de proteínas, metabolismo energético, ciclo celular, diferenciación, apoptosis.</li>\n<li><strong>Flujo intracelular de biomoléculas:</strong> procesamiento del ARN, su paso del núcleo al citoplasma, movimiento de proteínas a orgánulos, ensamblaje y desensamblaje de microtúbulos.</li>\n<li><strong>Genómica y proteómica:</strong> análisis genético, infección, transformación celular, inmortalización, senescencia, expresión génica, rutas metabólicas.</li>\n<li><strong>Ecología celular:</strong> condiciones ambientales que mantienen la función y diferenciación, necesidades nutricionales, cinética de la población.</li>\n<li><strong>Interacciones celulares:</strong> morfogénesis, proliferación, adhesión, interacciones con la matriz, invasión celular.</li>\n</ol>",
+        "entiende": "van de <strong>dentro hacia fuera</strong>: lo que pasa <strong>dentro</strong> de la célula (actividad) → lo que <strong>se mueve</strong> dentro (flujo) → sus <strong>genes y proteínas</strong> (genómica) → su <strong>ambiente</strong> (ecología) → su <strong>relación con otras</strong> (interacciones).",
+        "truco": "<strong>\"A-F-G-E-I\"</strong> → \"<strong>A</strong>ndrés <strong>F</strong>ue a <strong>G</strong>ranada <strong>E</strong>n <strong>I</strong>nvierno\"."
+      },
+      "porque": {
+        "pregunta": "¿Cómo se ordenan los cinco fenómenos de la investigación básica?",
+        "respuesta": "De dentro hacia fuera: lo que pasa dentro de la célula (actividad), lo que se mueve dentro (flujo), sus genes y proteínas (genómica y proteómica), su ambiente (ecología) y su relación con otras células (interacciones)."
+      },
+      "aplica": [
+        {
+          "caso": "Ciclo celular, apoptosis, síntesis de proteínas.",
+          "opciones": [
+            "Actividad intracelular",
+            "Interacciones celulares"
+          ],
+          "buena": 0,
+          "porque": "Es lo que pasa dentro de la célula."
+        },
+        {
+          "caso": "Adhesión, invasión celular, morfogénesis.",
+          "opciones": [
+            "Interacciones celulares",
+            "Ecología celular"
+          ],
+          "buena": 0,
+          "porque": "Su relación con otras células."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 5 fenómenos de la investigación básica.",
+        "puntos": [
+          "Actividad intracelular",
+          "Flujo intracelular de biomoléculas",
+          "Genómica y proteómica",
+          "Ecología celular",
+          "Interacciones celulares"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Básica y aplicada ya salían en el cultivo de células (sesión «Una granja de células»).",
+          "ruta": "#/sesion/bio1-cultivo"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

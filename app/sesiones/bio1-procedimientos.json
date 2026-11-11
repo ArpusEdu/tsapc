@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "bio1-procedimientos",
+  "unidad": "bio1",
+  "bloque": 6,
+  "titulo": "Separar, elegir y sembrar",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 1 (bloque 6, conceptos 15, 16, 17 y 21). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La sopa de células",
+    "caso": "Quieres cultivar un único tipo de célula de un tejido. Cortas y trituras el fragmento, lo filtras y obtienes una suspensión de células. Pero al mirarla te das cuenta de que tienes de todo: varios tipos celulares mezclados, como una sopa.",
+    "pregunta": "¿Qué paso te falta? ¿Cómo separarías solo las células que te interesan?",
+    "solucion": "Te falta la selección celular: tras la disgregación siempre queda una mezcla de varios tipos celulares. Se pueden separar por sus propiedades específicas (distinta adhesión a sustratos o materiales) o por métodos inmunológicos: anticuerpos que reconocen un tipo concreto de células y el cell sorting, que analiza cada gota con un láser y separa las células marcadas en tubos distintos.",
+    "claves": [
+      "Disgregar deja una mezcla",
+      "Selección: adhesión o anticuerpos",
+      "Cell sorting: láser y placas de deflexión"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio1.c15",
+      "n": 15,
+      "titulo": "Los 6 procedimientos, en orden",
+      "diapositivas": "bloque 6",
+      "gancho": "Para tener un cultivo hay que sacar las células, prepararlas, cuidarlas y guardarlas. ¿En qué orden pondrías esos pasos?",
+      "profe": {
+        "dice": "<p>1) <strong>Disgregación</strong> → 2) <strong>Recuento y viabilidad</strong> → 3) <strong>Siembra</strong> (inicio del cultivo) → 4) <strong>Mantenimiento</strong> → 5) <strong>Conservación</strong> → 6) <strong>Descongelación</strong>.</p>",
+        "entiende": "es la historia de la célula del mapa: <strong>separar → contar → plantar → cuidar → guardar → despertar</strong>.",
+        "truco": "<strong>\"Di-Re-Si-Man-Con-Des\"</strong> → \"<strong>Di</strong>le a <strong>Re</strong>mi que <strong>Si</strong> <strong>Man</strong>da la <strong>Con</strong>gelada, la <strong>Des</strong>congele\"."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el recuento va antes de la siembra?",
+        "respuesta": "Porque para sembrar hay que saber cuántas células tienes y cuántas están vivas: con eso calculas el volumen que transfieres. Primero separar, luego contar, después plantar, cuidar, guardar y despertar."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué va justo después de la disgregación?",
+          "opciones": [
+            "Recuento y viabilidad",
+            "Mantenimiento",
+            "Conservación"
+          ],
+          "buena": 0,
+          "porque": "Disgregación → recuento y viabilidad → siembra → …"
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 6 procedimientos del cultivo celular en orden.",
+        "puntos": [
+          "1 Disgregación",
+          "2 Recuento y viabilidad",
+          "3 Siembra (inicio del cultivo)",
+          "4 Mantenimiento",
+          "5 Conservación · 6 Descongelación"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c16",
+      "n": 16,
+      "titulo": "Disgregación celular",
+      "diapositivas": "bloque 6",
+      "gancho": "Las células de un tejido están unidas por una especie de cemento. ¿De qué dos formas se te ocurre que podrías soltarlas?",
+      "profe": {
+        "dice": "<p><strong>Definición:</strong> procedimiento para <strong>obtener una suspensión del tipo celular que nos interesa</strong>.</p>\n<ul>\n<li><strong>Mecánicos:</strong> <strong>cortar o triturar</strong> fragmentos de tejido en una placa con medio y <strong>filtrarlos</strong> para eliminar restos.</li>\n<li><strong>Enzimáticos:</strong> tratar con <strong>enzimas proteolíticas</strong> → <strong>digestión de la matriz extracelular</strong> y liberación de las células.</li>\n</ul>\n<p>Tras la disgregación hay <strong>una mezcla de varios tipos celulares</strong> → hace falta <strong>selección celular</strong>.</p>",
+        "entiende": "las células de un tejido están unidas por un \"cemento\" (la <strong>matriz extracelular</strong>, hecha de proteínas). Para soltarlas puedes <strong>romper a lo bruto</strong> (cortar, triturar) o <strong>disolver el cemento</strong> con enzimas que comen proteínas (<strong>proteolíticas</strong>: <em>proteo</em> = proteína, <em>lisis</em> = romper).",
+        "truco": "<strong>mecánica = tijera</strong> · <strong>enzimática = disolvente</strong>. Y \"proteolítica = <strong>rompe proteínas</strong>\"."
+      },
+      "porque": {
+        "pregunta": "¿Por qué funcionan las enzimas proteolíticas para soltar las células?",
+        "respuesta": "Porque digieren la matriz extracelular, el «cemento» de proteínas que mantiene unidas las células, y así las liberan. Proteolítica = rompe proteínas."
+      },
+      "aplica": [
+        {
+          "caso": "Cortar o triturar el tejido en una placa con medio y filtrarlo.",
+          "opciones": [
+            "Disgregación mecánica",
+            "Disgregación enzimática"
+          ],
+          "buena": 0,
+          "porque": "Mecánica = tijera."
+        },
+        {
+          "caso": "Tratar con enzimas proteolíticas.",
+          "opciones": [
+            "Disgregación mecánica",
+            "Disgregación enzimática"
+          ],
+          "buena": 1,
+          "porque": "Enzimática = disolvente del «cemento»."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define la disgregación y explica sus dos métodos.",
+        "puntos": [
+          "Procedimiento para obtener una suspensión del tipo celular que interesa",
+          "Mecánica: cortar o triturar en placa con medio y filtrar",
+          "Enzimática: enzimas proteolíticas que digieren la matriz extracelular",
+          "Después queda una mezcla de tipos celulares → selección"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c17",
+      "n": 17,
+      "titulo": "Selección de células",
+      "diapositivas": "bloque 6",
+      "gancho": "Tienes una mezcla de células y solo quieres un tipo. ¿Cómo las distinguirías si todas parecen iguales?",
+      "profe": {
+        "dice": "<p>Dos maneras:</p>\n<ul>\n<li><strong>Propiedades específicas:</strong> distinta <strong>adhesión a sustratos/materiales</strong>.</li>\n<li><strong>Métodos inmunológicos:</strong> <strong>anticuerpos</strong> que reconocen un tipo concreto de células → <strong>CELL SORTING</strong> (esquema: un láser analiza cada gota y unas placas de deflexión separan las células marcadas en tubos distintos).</li>\n</ul>",
+        "entiende": "después de disgregar tienes una mezcla. Puedes separarlas porque <strong>unas se pegan y otras no</strong>, o <strong>\"marcando\" con anticuerpos</strong> solo las que quieres: el <strong>cell sorting</strong> las ve con un láser y las desvía a otro tubo, como un <strong>control de aeropuerto</strong> que separa a los que llevan etiqueta.",
+        "truco": "<strong>pegarse o etiquetarse</strong> (adhesión o anticuerpos)."
+      },
+      "porque": {
+        "pregunta": "¿Cómo sabe el cell sorting qué células separar?",
+        "respuesta": "Porque antes se marcan con anticuerpos que reconocen un tipo concreto de células. Un láser analiza cada gota y unas placas de deflexión desvían las células marcadas a otro tubo."
+      },
+      "aplica": [
+        {
+          "caso": "Separar las células por su distinta adhesión a un material.",
+          "opciones": [
+            "Propiedades específicas",
+            "Métodos inmunológicos"
+          ],
+          "buena": 0,
+          "porque": "Pegarse o no: propiedades específicas."
+        },
+        {
+          "caso": "Usar anticuerpos y cell sorting.",
+          "opciones": [
+            "Propiedades específicas",
+            "Métodos inmunológicos"
+          ],
+          "buena": 1,
+          "porque": "Etiquetar con anticuerpos: métodos inmunológicos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las dos maneras de seleccionar células.",
+        "puntos": [
+          "Propiedades específicas: distinta adhesión a sustratos o materiales",
+          "Métodos inmunológicos: anticuerpos que reconocen un tipo concreto",
+          "Cell sorting: un láser analiza cada gota",
+          "Las placas de deflexión separan las células marcadas en tubos distintos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c21",
+      "n": 21,
+      "titulo": "Siembra: el inicio del cultivo",
+      "diapositivas": "bloque 6",
+      "gancho": "Vas a pasar unas células a su nuevo recipiente. ¿Qué harías con el medio antes de echarlas?",
+      "profe": {
+        "dice": "<ol>\n<li>Tras contar y hacer cálculos, <strong>transferir el volumen con el nº de células deseado a un falcon</strong> con medio previamente añadido para <strong>atemperar</strong>.</li>\n<li>Coger el volumen adecuado de células con medio y <strong>sembrarlo</strong> en el recipiente elegido.</li>\n<li><strong>Incubar en incubador de CO2 a 37 ºC</strong> (condiciones óptimas).</li>\n</ol>",
+        "entiende": "<strong>atemperar</strong> = poner el medio a la temperatura del cuerpo antes, para que la célula no \"pase frío\" al llegar.",
+        "truco": "<strong>\"calcular → falcon caliente → sembrar → 37 ºC\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el medio se pone antes en el falcon «para atemperar»?",
+        "respuesta": "Para que esté a la temperatura adecuada cuando lleguen las células, y no «pasen frío». Después se siembran y se incuban en el incubador de CO₂ a 37 ºC, en condiciones óptimas."
+      },
+      "aplica": [
+        {
+          "caso": "Tras sembrar, ¿dónde incubas?",
+          "opciones": [
+            "En el incubador de CO₂ a 37 ºC",
+            "En la nevera a 4 ºC"
+          ],
+          "buena": 0,
+          "porque": "Incubador de CO₂ a 37 ºC: condiciones óptimas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los pasos de la siembra.",
+        "puntos": [
+          "Contar y hacer cálculos",
+          "Transferir el volumen con el nº de células deseado a un falcon con medio ya añadido para atemperar",
+          "Sembrar el volumen adecuado en el recipiente elegido",
+          "Incubar en el incubador de CO₂ a 37 ºC"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Los tubos de centrífuga y el material de vidrio y plástico, en Lab 1 («La cristalería»).",
+          "ruta": "#/sesion/lab1-cristaleria"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

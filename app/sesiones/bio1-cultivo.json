@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "id": "bio1-cultivo",
+  "unidad": "bio1",
+  "bloque": 1,
+  "titulo": "Una granja de células: qué es un cultivo y sus tipos",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 1 (bloques 1 y 2, conceptos 1, 4, 5, 6 y 7). «corte»: escrito a partir de ese mismo contenido; el misterio sale del esquema del concepto 5.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La piel que no se formaba",
+    "caso": "En un laboratorio intentan obtener piel a partir de queratinocitos, las células de la piel. Los tienen sumergidos en el medio de cultivo, bien alimentados, y no hay manera: no se forma piel. Hasta que alguien cambia una sola cosa de cómo están colocados. Semanas después, aparece un epitelio de piel.",
+    "pregunta": "¿Qué crees que cambiaron?",
+    "solucion": "Dónde estaban: dejaron de estar sumergidos y pasaron a la interfase aire-líquido, entre el medio de cultivo y una atmósfera controlada. Así trabaja el cultivo de órganos: por abajo reciben el medio y por arriba tocan el aire, como en el cuerpo, y los tejidos retienen las características histológicas que tenían in vivo. Tras semanas en la interfase, los queratinocitos forman un epitelio de piel.",
+    "claves": [
+      "Interfase medio–aire",
+      "Se conserva la histología",
+      "Queratinocitos → epitelio de piel"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio1.c1",
+      "n": 1,
+      "titulo": "Qué es un cultivo celular",
+      "diapositivas": "bloque 1",
+      "gancho": "¿Se puede mantener viva una célula fuera del cuerpo? ¿Qué crees que necesitaría para no morir?",
+      "profe": {
+        "dice": "<p>es el <strong>conjunto de procedimientos que hacen posible el mantenimiento de células vivas <em>in vitro</em></strong>.</p>",
+        "entiende": "<em>in vitro</em> = \"en vidrio\", fuera del cuerpo. Es como tener una \"granja de células\" en el laboratorio: les das comida, temperatura y limpieza para que sigan vivas.",
+        "truco": "la definición tiene 3 piezas: <strong>procedimientos + células vivas + in vitro</strong>. Si dices las tres, la tienes bien."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la definición habla de «procedimientos» y no solo de «células en un frasco»?",
+        "respuesta": "Porque mantener células vivas in vitro no es dejarlas ahí: hace falta todo un conjunto de procedimientos (darles comida, temperatura y limpieza). Por eso la definición tiene tres piezas: procedimientos, células vivas e in vitro."
+      },
+      "aplica": [
+        {
+          "caso": "«In vitro» significa…",
+          "opciones": [
+            "«En vidrio»: fuera del cuerpo",
+            "Dentro del cuerpo"
+          ],
+          "buena": 0,
+          "porque": "In vitro = en vidrio, fuera del cuerpo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define cultivo celular con sus tres piezas.",
+        "puntos": [
+          "Conjunto de procedimientos",
+          "Que hacen posible el mantenimiento de células vivas",
+          "In vitro: fuera del cuerpo"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c4",
+      "n": 4,
+      "titulo": "Los 3 tipos de cultivo",
+      "diapositivas": "bloque 2",
+      "gancho": "Para estudiar el hígado en el laboratorio, ¿qué cultivarías: un trozo de hígado, un trocito de tejido o células sueltas? ¿Qué cambia?",
+      "profe": {
+        "dice": "<p>1) cultivo de <strong>órganos</strong> (o fragmentos de órganos). 2) cultivo de <strong>tejidos</strong> (explantes). 3) cultivo de <strong>células</strong>.</p>",
+        "entiende": "van de <strong>más grande a más pequeño</strong>: un trozo de órgano → un trozo de tejido → células sueltas.",
+        "truco": "<strong>\"O-T-C\"</strong> = <strong>O</strong>rganizo <strong>T</strong>odo <strong>C</strong>ompleto: <strong>Ó</strong>rganos, <strong>T</strong>ejidos, <strong>C</strong>élulas (de grande a pequeño)."
+      },
+      "porque": {
+        "pregunta": "¿Qué cambia entre los tres tipos de cultivo?",
+        "respuesta": "El tamaño de lo que cultivas: un trozo de órgano, un trozo de tejido o células sueltas. Van de más grande a más pequeño."
+      },
+      "aplica": [
+        {
+          "caso": "Ordena de más grande a más pequeño.",
+          "opciones": [
+            "Órganos → tejidos → células",
+            "Células → tejidos → órganos"
+          ],
+          "buena": 0,
+          "porque": "«O-T-C»: Órganos, Tejidos, Células."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los tres tipos de cultivo en orden.",
+        "puntos": [
+          "Cultivo de órganos (o fragmentos de órganos)",
+          "Cultivo de tejidos (explantes)",
+          "Cultivo de células",
+          "De más grande a más pequeño"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c5",
+      "n": 5,
+      "titulo": "Cultivo de órganos",
+      "diapositivas": "bloque 2",
+      "gancho": "Un trozo de piel tiene una cara que mira hacia dentro del cuerpo y otra que da al aire. ¿Cómo lo colocarías en el laboratorio para que siga siendo piel?",
+      "profe": {
+        "dice": "<p>parte de un <strong>fragmento de órgano</strong>; los tejidos <strong>retienen parte o todas las características histológicas</strong> del tejido <em>in vivo</em>. El fragmento se mantiene en la <strong>interfase entre el medio de cultivo y una atmósfera controlada</strong> (esquema: queratinocitos sumergidos → tras semanas, interfase aire-líquido → epitelio de piel).</p>",
+        "entiende": "el trozo de órgano se pone \"a flote\", con la parte de abajo tocando el medio (comida) y la de arriba tocando el aire, como la piel real, que por dentro recibe sangre y por fuera toca el aire. Así conserva su estructura (histología).",
+        "truco": "<strong>órgano = \"medio y aire\"</strong> (interfase)."
+      },
+      "porque": {
+        "pregunta": "¿Para qué se mantiene el fragmento entre el medio y el aire?",
+        "respuesta": "Para que los tejidos retengan las características histológicas que tenían in vivo: por abajo reciben el medio y por arriba tocan el aire, como en el cuerpo."
+      },
+      "aplica": [
+        {
+          "caso": "¿Dónde se mantiene el fragmento de órgano?",
+          "opciones": [
+            "En la interfase entre el medio y una atmósfera controlada",
+            "Sumergido del todo en el medio"
+          ],
+          "buena": 0,
+          "porque": "Órgano = «medio y aire» (interfase)."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica cómo es un cultivo de órganos.",
+        "puntos": [
+          "Parte de un fragmento de órgano",
+          "Los tejidos retienen parte o todas sus características histológicas",
+          "Se mantiene en la interfase entre el medio y una atmósfera controlada",
+          "Ejemplo: queratinocitos → interfase aire-líquido → epitelio de piel"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c6",
+      "n": 6,
+      "titulo": "Cultivo de explantes (tejidos)",
+      "diapositivas": "bloque 2",
+      "gancho": "Pegas un trocito de tejido en el fondo de una placa y le pones comida. ¿Qué crees que harán sus células?",
+      "profe": {
+        "dice": "<p>los <strong>fragmentos de tejido se adhieren a una superficie</strong> y se les añade el medio de cultivo apropiado (foto: trozos de tejido en placa de 6 pocillos).</p>",
+        "entiende": "el trocito de tejido se <strong>pega</strong> al fondo de la placa y las células van saliendo de él hacia los lados.",
+        "truco": "<strong>explante = trozo pegado</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia un explante de un cultivo de órganos?",
+        "respuesta": "En el de órganos, el fragmento se mantiene entre el medio y el aire para conservar su estructura. En el explante, los trozos de tejido se adhieren a una superficie y se les añade el medio; las células van saliendo de ellos hacia los lados."
+      },
+      "aplica": [
+        {
+          "caso": "Trozos de tejido pegados en una placa de 6 pocillos.",
+          "opciones": [
+            "Explantes",
+            "Cultivo de órganos"
+          ],
+          "buena": 0,
+          "porque": "Explante = trozo pegado."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué es un cultivo de explantes.",
+        "puntos": [
+          "Fragmentos de tejido",
+          "Se adhieren a una superficie",
+          "Se les añade el medio de cultivo apropiado"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c7",
+      "n": 7,
+      "titulo": "Cultivo de células",
+      "diapositivas": "bloque 2",
+      "gancho": "De los tres tipos de cultivo, ¿cuál crees que es el más usado? ¿Por qué?",
+      "profe": {
+        "dice": "<p><strong>es el más utilizado.</strong> Se introduce la <strong>suspensión de células</strong> en un recipiente con medio y se incuban en condiciones óptimas para que <strong>proliferen</strong>.</p>\n<ul>\n<li><strong>Investigación básica:</strong> metabolismo celular, interacciones celulares.</li>\n<li><strong>Investigación aplicada:</strong> anticuerpos, vacunas, fármacos, estudios de toxicidad, células madre para terapia celular, ingeniería y producción de tejidos y órganos <em>in vitro</em>.</li>\n</ul>",
+        "entiende": "<strong>básica</strong> = entender <strong>cómo funciona</strong> la célula. <strong>Aplicada</strong> = <strong>fabricar algo útil</strong> (vacunas, fármacos, tejidos).",
+        "truco": "<strong>básica = \"¿cómo funciona?\"</strong> · <strong>aplicada = \"¿para qué me sirve?\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia hay entre la investigación básica y la aplicada?",
+        "respuesta": "La básica quiere entender cómo funciona la célula: su metabolismo y sus interacciones. La aplicada quiere fabricar algo útil: anticuerpos, vacunas, fármacos, estudios de toxicidad, células madre para terapia celular o tejidos y órganos in vitro."
+      },
+      "aplica": [
+        {
+          "caso": "Estudiar el metabolismo celular.",
+          "opciones": [
+            "Investigación básica",
+            "Investigación aplicada"
+          ],
+          "buena": 0,
+          "porque": "Básica = «¿cómo funciona?»."
+        },
+        {
+          "caso": "Producir una vacuna.",
+          "opciones": [
+            "Investigación básica",
+            "Investigación aplicada"
+          ],
+          "buena": 1,
+          "porque": "Aplicada = «¿para qué me sirve?»."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el cultivo de células y sus usos.",
+        "puntos": [
+          "Es el más utilizado",
+          "Suspensión de células en un recipiente con medio",
+          "Se incuban en condiciones óptimas para que proliferen",
+          "Básica: metabolismo e interacciones celulares",
+          "Aplicada: anticuerpos, vacunas, fármacos, toxicidad, células madre, tejidos in vitro"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

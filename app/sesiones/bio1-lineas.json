@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "bio1-lineas",
+  "unidad": "bio1",
+  "bloque": 5,
+  "titulo": "Líneas celulares y equipos",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 1 (conceptos 12, 13, 14 y 2). «corte»: escrito a partir de ese mismo contenido; el misterio sale del ejemplo de las células HeLa del concepto 14.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Las células que no mueren",
+    "caso": "Hay células de una mujer que murió en 1951 que siguen dividiéndose hoy en laboratorios de todo el mundo. Vienen de un cáncer de cuello de útero. Pase tras pase, nunca envejecen.",
+    "pregunta": "¿Qué tienen estas células que no tienen las demás?",
+    "solucion": "Son una línea celular continua: las células HeLa, de Henrietta Lacks. Tras varios pases perdieron los mecanismos de control de la división y tienen las características de las células cancerosas: son inmortales, han perdido la inhibición por contacto y están indiferenciadas. Por eso se mantienen mediante pases durante un tiempo ilimitado, mientras que una línea primaria entra en senescencia tras 20-100 pases.",
+    "claves": [
+      "Línea continua = tiempo ilimitado",
+      "Inmortales, sin inhibición por contacto, indiferenciadas",
+      "HeLa = HEnrietta LAcks"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio1.c12",
+      "n": 12,
+      "titulo": "Qué es una línea celular",
+      "diapositivas": "bloque 5",
+      "gancho": "Si haces pase tras pase a partir de un cultivo primario, ¿crees que podrías seguir así para siempre?",
+      "profe": {
+        "dice": "<p>tras sucesivos pases, el cultivo primario da origen a una línea celular: <strong>colonia de células obtenidas tras varios subcultivos o pases a partir de un cultivo primario</strong>.</p>\n<ul>\n<li><strong>Líneas primarias:</strong> se mantienen mediante pases <strong>durante un tiempo limitado</strong>.</li>\n<li><strong>Líneas continuas:</strong> se mantienen mediante pases <strong>durante un tiempo ilimitado</strong>.</li>\n</ul>",
+        "entiende": "una línea celular es como una <strong>familia</strong> que viene del mismo cultivo primario. Si la familia <strong>envejece y se acaba</strong>, es primaria; si <strong>no muere nunca</strong>, es continua.",
+        "truco": "<strong>Primaria = Perecedera</strong> (caduca) · <strong>Continua = Continúa para siempre</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia una línea primaria de una continua?",
+        "respuesta": "El tiempo: las primarias se mantienen mediante pases durante un tiempo limitado; las continuas, durante un tiempo ilimitado."
+      },
+      "aplica": [
+        {
+          "caso": "Se mantiene con pases durante un tiempo ilimitado.",
+          "opciones": [
+            "Línea continua",
+            "Línea primaria"
+          ],
+          "buena": 0,
+          "porque": "Continua = continúa para siempre."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es una línea celular y qué dos tipos hay?",
+        "puntos": [
+          "Colonia obtenida tras varios pases a partir de un cultivo primario",
+          "Primarias: pases durante un tiempo limitado",
+          "Continuas: pases durante un tiempo ilimitado"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c13",
+      "n": 13,
+      "titulo": "Líneas primarias y senescencia",
+      "diapositivas": "bloque 5",
+      "gancho": "Una célula que se divide y se divide… ¿crees que envejece?",
+      "profe": {
+        "dice": "<ul>\n<li>Tras los <strong>2 o 3 primeros pases</strong> la población <strong>se estabiliza</strong> (morfología y fisiología estables).</li>\n<li>Tras <strong>20-100 pases</strong> (según el tipo celular) entra en <strong>senescencia</strong> (foto: célula senescente teñida de azul, grande y aplanada).</li>\n</ul>",
+        "entiende": "<strong>senescencia</strong> = envejecimiento: la célula deja de dividirse, como una persona mayor que ya no tiene hijos.",
+        "truco": "<strong>Truco de números:</strong> <strong>\"2-3 se asienta, 20-100 se jubila\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué es la senescencia?",
+        "respuesta": "El envejecimiento de la célula: deja de dividirse. En las líneas primarias llega tras 20-100 pases, según el tipo celular; la célula senescente se ve grande y aplanada."
+      },
+      "aplica": [
+        {
+          "caso": "¿Cuándo se estabiliza la población?",
+          "opciones": [
+            "Tras los 2 o 3 primeros pases",
+            "Tras 100 pases"
+          ],
+          "buena": 0,
+          "porque": "«2-3 se asienta»."
+        },
+        {
+          "caso": "¿Cuándo entra en senescencia?",
+          "opciones": [
+            "Tras 20-100 pases, según el tipo celular",
+            "Nunca"
+          ],
+          "buena": 0,
+          "porque": "«20-100 se jubila»."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué pasa con las líneas primarias a lo largo de los pases.",
+        "puntos": [
+          "Tras 2 o 3 pases la población se estabiliza",
+          "Morfología y fisiología estables",
+          "Tras 20-100 pases (según el tipo) entra en senescencia",
+          "Senescencia: la célula deja de dividirse (grande y aplanada)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c14",
+      "n": 14,
+      "titulo": "Líneas continuas: las células HeLa",
+      "diapositivas": "bloque 5",
+      "gancho": "¿Qué tendría que perder una célula para no dejar de dividirse nunca?",
+      "profe": {
+        "dice": "<ul>\n<li>Tras varios pases <strong>pierden los mecanismos de control de la división</strong>, de forma <strong>espontánea o inducida</strong>.</li>\n<li>Características de <strong>células cancerosas</strong>: <strong>inmortales, pérdida de inhibición por contacto, indiferenciadas</strong>.</li>\n<li>Ejemplo: <strong>Henrietta Lacks y las células HeLa</strong>.</li>\n</ul>",
+        "entiende": "una célula normal, cuando toca a sus vecinas, <strong>deja de dividirse</strong> (inhibición por contacto). Las continuas <strong>han perdido ese freno</strong>: se dividen sin parar, se amontonan y no se especializan (indiferenciadas), igual que un cáncer. Las <strong>HeLa</strong> vienen del cáncer de cuello de útero de Henrietta Lacks (1951) y todavía hoy se usan en todo el mundo.",
+        "truco": "<strong>\"I-P-I\"</strong> = <strong>I</strong>nmortales, <strong>P</strong>ierden la inhibición por contacto, <strong>I</strong>ndiferenciadas. Y <strong>HeLa = HEnrietta LAcks</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué es la inhibición por contacto y por qué importa perderla?",
+        "respuesta": "Una célula normal deja de dividirse cuando toca a sus vecinas. Las líneas continuas han perdido ese freno: se dividen sin parar, se amontonan y no se especializan, como las células cancerosas."
+      },
+      "aplica": [
+        {
+          "caso": "¿Cuál NO es una característica de las líneas continuas?",
+          "opciones": [
+            "Inmortales",
+            "Pérdida de la inhibición por contacto",
+            "Muy diferenciadas"
+          ],
+          "buena": 2,
+          "porque": "Son indiferenciadas: «I-P-I»."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son las líneas continuas y qué características tienen?",
+        "puntos": [
+          "Pierden los mecanismos de control de la división (espontáneo o inducido)",
+          "Inmortales",
+          "Pérdida de la inhibición por contacto",
+          "Indiferenciadas",
+          "Ejemplo: células HeLa (Henrietta Lacks)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c2",
+      "n": 2,
+      "titulo": "Equipos del laboratorio de cultivos",
+      "diapositivas": "bloque 1",
+      "gancho": "Para que unas células vivan fuera del cuerpo hay que imitar el cuerpo. ¿A qué temperatura crees que se guardan mientras crecen?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Equipo</th>\n<th>Para qué / dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Campanas de flujo laminar</td>\n<td>Trabajar en estéril</td>\n</tr>\n<tr>\n<td>Incubadores de CO2</td>\n<td>Mantener las células (37 ºC, 5 % CO2)</td>\n</tr>\n<tr>\n<td>Microscopio invertido</td>\n<td>Ver las células desde abajo del frasco</td>\n</tr>\n<tr>\n<td>Depósito de N líquido</td>\n<td><strong>-200 ºC</strong> (dato de la diapositiva)</td>\n</tr>\n<tr>\n<td>Neveras y congeladores</td>\n<td>Neveras <strong>4 ºC</strong>; congeladores <strong>-20 ºC y -80 ºC</strong></td>\n</tr>\n<tr>\n<td>Equipo de esterilización</td>\n<td><strong>Autoclave, sistema de filtración, luz UV</strong></td>\n</tr>\n<tr>\n<td>Otros</td>\n<td>Contadores, pHmetro, placa calefactora, pipeta automática…</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "el <strong>incubador</strong> imita el cuerpo humano (37 ºC). El <strong>microscopio invertido</strong> tiene el objetivo abajo porque las células están pegadas al <strong>fondo</strong> del frasco. La <strong>campana</strong> es una mesa con aire filtrado para que no entren bichos.",
+        "truco": "<strong>Truco de temperaturas (de calor a frío):</strong> <strong>37 → 4 → -20 → -80 → -200</strong>. Piensa: <strong>cuerpo → nevera → congelador de casa → ultracongelador → nitrógeno</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el microscopio de cultivos es «invertido»?",
+        "respuesta": "Porque las células están pegadas al fondo del frasco, y el objetivo está abajo para verlas desde ahí."
+      },
+      "aplica": [
+        {
+          "caso": "Mantener las células a 37 ºC y 5 % de CO₂.",
+          "opciones": [
+            "Incubador de CO₂",
+            "Campana de flujo laminar"
+          ],
+          "buena": 0,
+          "porque": "El incubador imita el cuerpo humano."
+        },
+        {
+          "caso": "Trabajar en estéril.",
+          "opciones": [
+            "Campana de flujo laminar",
+            "Microscopio invertido"
+          ],
+          "buena": 0,
+          "porque": "La campana de flujo laminar."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los equipos del laboratorio de cultivos y para qué sirve cada uno.",
+        "puntos": [
+          "Campanas de flujo laminar: trabajar en estéril",
+          "Incubadores de CO₂: 37 ºC y 5 % CO₂",
+          "Microscopio invertido: ver las células desde abajo",
+          "N líquido -200 ºC; neveras 4 ºC; congeladores -20 y -80 ºC",
+          "Esterilización: autoclave, filtración, luz UV"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Las mismas temperaturas de frío (4 → -18/-80 → -200) están en «Equipos (I)» de Lab 1.",
+          "ruta": "#/sesion/lab1-equipos1"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "id": "bio1-crecimiento",
+  "unidad": "bio1",
+  "bloque": 3,
+  "titulo": "Primario, secundario y cómo crecen",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 1 (bloques 3 y 4, conceptos 8 a 11). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Esperar a que se llene",
+    "caso": "Una técnica cuida un cultivo en monocapa. Prefiere esperar a que el fondo del frasco esté cubierto del todo antes de hacer el pase: «Así aprovecho al máximo cada frasco». Pero se da cuenta de que, antes de llegar a ese punto, el cultivo ya ha dejado de crecer.",
+    "pregunta": "¿Qué está haciendo mal? ¿Cuándo debería hacer el pase?",
+    "solucion": "Espera demasiado. Cuando el frasco se llena, el crecimiento se inhibe: es la fase estacionaria, la meseta de la curva. El pase se hace al final de la fase exponencial, hacia el 70-80 % de confluencia, mientras las células aún crecen con fuerza. «No esperes a que el piso esté lleno».",
+    "claves": [
+      "Lleno → fase estacionaria",
+      "Pase al final de la exponencial",
+      "≈ 70-80 % de confluencia"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio1.c8",
+      "n": 8,
+      "titulo": "Cultivo primario y secundario",
+      "diapositivas": "bloque 3",
+      "gancho": "Sacas células directamente de un trozo de tejido. ¿Crees que te saldrá un solo tipo de célula o varios?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Cultivo PRIMARIO</th>\n<th>Cultivo SECUNDARIO</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Origen</td>\n<td><strong>Directamente de un tejido</strong>, disgregando sus células</td>\n<td>De un <strong>primario o de otro secundario</strong>, mediante <strong>subcultivo o \"pase\"</strong></td>\n</tr>\n<tr>\n<td>Tipos celulares</td>\n<td>Normalmente <strong>varios</strong> tipos de células</td>\n<td>Normalmente un <strong>único tipo</strong> de células</td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td><strong>Cultivo de vellosidades coriónicas</strong></td>\n<td>—</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "el <strong>primario</strong> es la <strong>primera generación</strong>: sale del tejido y trae de todo (varios tipos de células, como una sopa). El <strong>secundario</strong> sale <strong>de otro cultivo</strong>: tras las mudanzas (pases) sobrevive el tipo que mejor crece, y queda <strong>uno solo</strong>.",
+        "truco": "<strong>Primario = Primero, del tejido, Plural (varios)</strong> · <strong>Secundario = Sale de otro cultivo, Solo uno</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el cultivo secundario suele tener un solo tipo de células?",
+        "respuesta": "Porque sale de otro cultivo mediante pases, y tras esas «mudanzas» sobrevive el tipo que mejor crece. El primario, que sale directamente del tejido, trae varios tipos."
+      },
+      "aplica": [
+        {
+          "caso": "Se obtiene disgregando las células de un tejido.",
+          "opciones": [
+            "Primario",
+            "Secundario"
+          ],
+          "buena": 0,
+          "porque": "Primario: directamente de un tejido."
+        },
+        {
+          "caso": "Se obtiene mediante un pase de otro cultivo.",
+          "opciones": [
+            "Primario",
+            "Secundario"
+          ],
+          "buena": 1,
+          "porque": "Secundario: de un primario u otro secundario."
+        },
+        {
+          "caso": "Cultivo de vellosidades coriónicas.",
+          "opciones": [
+            "Primario",
+            "Secundario"
+          ],
+          "buena": 0,
+          "porque": "Es el ejemplo de cultivo primario."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara el cultivo primario y el secundario.",
+        "puntos": [
+          "Primario: directamente de un tejido, disgregando sus células",
+          "Primario: normalmente varios tipos celulares (ej.: vellosidades coriónicas)",
+          "Secundario: de un primario u otro secundario, por subcultivo o pase",
+          "Secundario: normalmente un único tipo celular"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c9",
+      "n": 9,
+      "titulo": "La curva de crecimiento",
+      "diapositivas": "bloque 4",
+      "gancho": "Si pones unas pocas células en un frasco con comida, ¿crecerán siempre al mismo ritmo? Imagina cómo sería la gráfica.",
+      "profe": {
+        "dice": "<p>tras añadir el medio, las células se meten en un frasco y se incuban en condiciones óptimas. Fases:</p>\n<ol>\n<li><strong>Latencia</strong> (<em>lag</em>): se adaptan, casi no se dividen.</li>\n<li><strong>Exponencial</strong> (<em>log</em>): se dividen al máximo.</li>\n<li><strong>Estacionaria</strong>: el crecimiento se frena (meseta).</li>\n</ol>\n<p>Gráfica: eje Y = nº de células (log), eje X = tiempo (días). Tiene forma de <strong>S</strong> (sigmoide).</p>",
+        "entiende": "es como <strong>mudarte a un piso nuevo</strong>: los primeros días te adaptas (latencia), luego vives a tope (exponencial) y al final el piso se llena y ya no cabe nadie más (estacionaria).",
+        "truco": "<strong>\"L-E-E\"</strong> = <strong>L</strong>lego, <strong>E</strong>xploto, <strong>E</strong>stanco. Y la curva es una <strong>S</strong> de <strong>S</strong>igmoide."
+      },
+      "porque": {
+        "pregunta": "¿Por qué al principio casi no se dividen?",
+        "respuesta": "Porque están en la fase de latencia: se están adaptando. Después viene la exponencial, en la que se dividen al máximo, y luego la estacionaria, en la que el crecimiento se frena. Por eso la curva tiene forma de S."
+      },
+      "aplica": [
+        {
+          "caso": "Se dividen al máximo.",
+          "opciones": [
+            "Exponencial (log)",
+            "Latencia (lag)",
+            "Estacionaria"
+          ],
+          "buena": 0,
+          "porque": "La fase exponencial."
+        },
+        {
+          "caso": "El crecimiento se frena: meseta.",
+          "opciones": [
+            "Estacionaria",
+            "Exponencial"
+          ],
+          "buena": 0,
+          "porque": "La fase estacionaria."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las fases de la curva de crecimiento.",
+        "puntos": [
+          "Se incuban en condiciones óptimas",
+          "Latencia (lag): se adaptan, casi no se dividen",
+          "Exponencial (log): se dividen al máximo",
+          "Estacionaria: el crecimiento se frena (meseta)",
+          "Curva en S (sigmoide): nº de células frente al tiempo"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c10",
+      "n": 10,
+      "titulo": "Monocapa y suspensión",
+      "diapositivas": "bloque 4",
+      "gancho": "Las células de la sangre viajan flotando por el cuerpo. ¿Cómo crees que crecerán en un frasco?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Monocapa:</strong> células que <strong>necesitan adherirse</strong> a una superficie sólida → <strong>la mayoría</strong>.</li>\n<li><strong>Suspensión:</strong> <strong>no necesitan adherirse</strong> → <strong>células sanguíneas, células madre…</strong></li>\n</ul>",
+        "entiende": "las de la sangre viajan flotando por el cuerpo, así que en el frasco también <strong>flotan</strong> (suspensión). Las de los tejidos están pegadas unas a otras, así que en el frasco <strong>se pegan al fondo</strong> en una sola capa (monocapa).",
+        "truco": "<strong>la sangre flota</strong> → suspensión. <strong>Todo lo demás se pega</strong> → monocapa (la mayoría)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la mayoría de las células crecen en monocapa?",
+        "respuesta": "Porque necesitan adherirse a una superficie sólida, como en los tejidos, donde están pegadas unas a otras. Solo las que no lo necesitan, como las sanguíneas o las células madre, crecen en suspensión."
+      },
+      "aplica": [
+        {
+          "caso": "Células sanguíneas.",
+          "opciones": [
+            "Suspensión",
+            "Monocapa"
+          ],
+          "buena": 0,
+          "porque": "La sangre flota → suspensión."
+        },
+        {
+          "caso": "Células que necesitan pegarse a una superficie.",
+          "opciones": [
+            "Monocapa",
+            "Suspensión"
+          ],
+          "buena": 0,
+          "porque": "Monocapa: la mayoría."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las dos formas de crecimiento.",
+        "puntos": [
+          "Monocapa: necesitan adherirse a una superficie sólida (la mayoría)",
+          "Suspensión: no necesitan adherirse",
+          "Suspensión: células sanguíneas, células madre…"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c11",
+      "n": 11,
+      "titulo": "Subcultivo o pase",
+      "diapositivas": "bloque 4",
+      "gancho": "Un frasco de células se va llenando. ¿Cuándo hay que pasarlas a otro: cuando está lleno del todo o antes?",
+      "profe": {
+        "dice": "<p>en monocapa y en suspensión llega un momento en que se <strong>inhibe el crecimiento (fase estacionaria)</strong>. Para reanudarlo se hace un <strong>subcultivo o pase</strong>: <strong>coger parte de las células y pasarlas a un nuevo frasco con medio</strong>. Se hace <strong>al final de la fase exponencial</strong> (≈ <strong>70-80 % de confluencia</strong>).</p>",
+        "entiende": "es como <strong>trasplantar una planta</strong> que ya no cabe en la maceta: coges una parte y la pasas a una maceta nueva con tierra (medio). Se hace <strong>justo antes</strong> de que se llene del todo, mientras aún crece con fuerza.",
+        "truco": "<strong>pase = mudanza al 70-80 %</strong> (\"no esperes a que el piso esté lleno\")."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el pase se hace antes de que el frasco esté lleno?",
+        "respuesta": "Porque al llenarse se inhibe el crecimiento (fase estacionaria). El pase se hace al final de la fase exponencial, hacia el 70-80 % de confluencia, mientras aún crecen con fuerza."
+      },
+      "aplica": [
+        {
+          "caso": "¿Cuándo se hace el pase?",
+          "opciones": [
+            "Al final de la fase exponencial (≈ 70-80 % de confluencia)",
+            "Cuando el frasco está lleno al 100 %"
+          ],
+          "buena": 0,
+          "porque": "Pase = mudanza al 70-80 %."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué es un pase y cuándo se hace.",
+        "puntos": [
+          "Llega un momento en que se inhibe el crecimiento (estacionaria)",
+          "Pase: coger parte de las células y pasarlas a un frasco nuevo con medio",
+          "Al final de la fase exponencial",
+          "Hacia el 70-80 % de confluencia"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

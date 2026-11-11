@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "id": "bio1-mantenimiento",
+  "unidad": "bio1",
+  "bloque": 6,
+  "titulo": "Cuidar el cultivo",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 1 (bloque 6, conceptos 22 a 25). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El medio que cambió de color",
+    "caso": "Revisas tu cultivo en monocapa y notas que el medio, que estaba de un color al sembrar, ahora tiene otro distinto. Solo han pasado dos o tres días. Las células siguen pegadas y con buen aspecto al microscopio invertido.",
+    "pregunta": "¿Qué te está diciendo el color? ¿Qué haces?",
+    "solucion": "Que toca cambiar el medio. Las células comen y, a la vez, sueltan productos de desecho de su metabolismo: el pH varía y el color del medio cambia. El cambio de medio sirve para renovar nutrientes y retirar desechos, y se hace cada 2-3 días o cuando el medio cambia de color. Como es una monocapa, aspiras con pipeta y cambias 2/3 del volumen, dejando 1/3 con sustancias beneficiosas que han secretado las células.",
+    "claves": [
+      "Color = cambio de pH",
+      "Cambio de medio cada 2-3 días",
+      "Monocapa: cambiar 2/3"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio1.c22",
+      "n": 22,
+      "titulo": "Control microscópico",
+      "diapositivas": "bloque 6",
+      "gancho": "Un cultivo está vivo y cambia cada día. ¿Cada cuánto crees que hay que mirarlo?",
+      "profe": {
+        "dice": "<p><strong>cada 1-3 días</strong> se observan los cultivos en el <strong>microscopio invertido</strong> → cambios en apariencia y crecimiento.</p>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué se mira con el microscopio invertido?",
+        "respuesta": "Porque las células están pegadas al fondo del frasco y ese microscopio las ve desde abajo. Así se detectan cambios en su apariencia y en su crecimiento sin abrir el frasco."
+      },
+      "aplica": [
+        {
+          "caso": "¿Cada cuánto se observan los cultivos?",
+          "opciones": [
+            "Cada 1-3 días",
+            "Una vez al mes"
+          ],
+          "buena": 0,
+          "porque": "«Mira cada 1-3»."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿En qué consiste el control microscópico?",
+        "puntos": [
+          "Cada 1-3 días",
+          "Con el microscopio invertido",
+          "Se buscan cambios en la apariencia y el crecimiento"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c23",
+      "n": 23,
+      "titulo": "Cambio de medio",
+      "diapositivas": "bloque 6",
+      "gancho": "Si unas células viven en su comida, ¿qué crees que le pasa a esa comida con los días?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Para qué:</strong> renovar <strong>nutrientes</strong> y retirar <strong>productos de desecho</strong> del metabolismo.</li>\n<li><strong>Cuándo:</strong> <strong>cada 2-3 días</strong> o si el medio <strong>cambia de color</strong> (variación de <strong>pH</strong>).</li>\n<li><strong>Monocapa:</strong> aspirar con pipeta y cambiar <strong>2/3 del volumen</strong> (para conservar sustancias beneficiosas secretadas por las células).</li>\n<li><strong>Suspensión:</strong> recoger medio + células en <strong>falcon de 15 ml</strong>, <strong>centrifugar 5 min a 1500 rpm</strong>, eliminar <strong>sobrenadante</strong> y resuspender el <strong>pellet</strong> en medio fresco.</li>\n</ul>",
+        "entiende": "el medio es <strong>comida + agua del váter</strong> a la vez: las células comen y ensucian. Cuando se ensucia, el pH cambia y el color también (el medio tiene un indicador). En <strong>monocapa</strong> es fácil: las células están pegadas, así que quitas líquido sin perderlas (y dejas 1/3 porque tiene \"cosas buenas\" que fabrican ellas). En <strong>suspensión</strong> las células flotan en el líquido, así que primero hay que <strong>centrifugarlas</strong> para que bajen al fondo (<strong>pellet</strong>) y luego tirar el líquido de arriba (<strong>sobrenadante</strong>).",
+        "truco": "<strong>\"Mira cada 1-3, cambia cada 2-3\"</strong>. <strong>Monocapa = 2/3</strong> · <strong>Suspensión = centrifuga</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué en suspensión hay que centrifugar para cambiar el medio y en monocapa no?",
+        "respuesta": "Porque en monocapa las células están pegadas y puedes quitar el líquido sin perderlas. En suspensión flotan en el medio: primero hay que centrifugar para que bajen al fondo (pellet) y tirar el líquido de arriba (sobrenadante)."
+      },
+      "aplica": [
+        {
+          "caso": "Cambiar el medio de una monocapa.",
+          "opciones": [
+            "Aspirar y cambiar 2/3 del volumen",
+            "Centrifugar y tirar todo"
+          ],
+          "buena": 0,
+          "porque": "Monocapa = 2/3."
+        },
+        {
+          "caso": "Cambiar el medio de una suspensión.",
+          "opciones": [
+            "Falcon de 15 ml, centrifugar 5 min a 1500 rpm, tirar el sobrenadante y resuspender",
+            "Aspirar 2/3 directamente"
+          ],
+          "buena": 0,
+          "porque": "Suspensión = centrifuga."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica para qué, cuándo y cómo se cambia el medio.",
+        "puntos": [
+          "Para renovar nutrientes y retirar desechos del metabolismo",
+          "Cada 2-3 días o si el medio cambia de color (pH)",
+          "Monocapa: aspirar y cambiar 2/3 (conservar sustancias beneficiosas)",
+          "Suspensión: falcon de 15 ml, centrifugar 5 min a 1500 rpm",
+          "Eliminar el sobrenadante y resuspender el pellet en medio fresco"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c24",
+      "n": 24,
+      "titulo": "Preparar el medio",
+      "diapositivas": "bloque 6",
+      "gancho": "Si tuvieras que preparar la «comida» de unas células, ¿qué le pondrías además de la base?",
+      "profe": {
+        "dice": "<ul>\n<li>Botella de medio (<strong>DMEM, RPMI…</strong>) de <strong>500 ml</strong>.</li>\n<li><strong>FBS</strong> (suero fetal bovino) <strong>descomplementado con calor</strong> al <strong>10 %</strong>.</li>\n<li>Antibióticos <strong>Pen/Strep 1/1000</strong>.</li>\n</ul>",
+        "entiende": "el <strong>DMEM/RPMI</strong> es la comida base. El <strong>FBS</strong> es como un \"batido de proteínas\" con factores de crecimiento (se calienta antes para inactivar el complemento, unas proteínas que podrían dañar a las células). <strong>Pen/Strep</strong> = penicilina + estreptomicina, contra las bacterias.",
+        "truco": "<strong>\"500 · 10 · 1000\"</strong> → <strong>500</strong> ml de medio, <strong>10 %</strong> de suero, <strong>1/1000</strong> de antibiótico."
+      },
+      "porque": {
+        "pregunta": "¿Para qué se añaden antibióticos al medio?",
+        "respuesta": "Para proteger el cultivo de las bacterias: Pen/Strep es penicilina más estreptomicina."
+      },
+      "aplica": [
+        {
+          "caso": "¿Cuánto suero fetal bovino lleva el medio?",
+          "opciones": [
+            "10 %",
+            "50 %"
+          ],
+          "buena": 0,
+          "porque": "«500 · 10 · 1000»: FBS al 10 %."
+        },
+        {
+          "caso": "¿En qué proporción van los antibióticos Pen/Strep?",
+          "opciones": [
+            "1/1000",
+            "1/10"
+          ],
+          "buena": 0,
+          "porque": "Pen/Strep 1/1000."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué lleva el medio de cultivo?",
+        "puntos": [
+          "Botella de medio (DMEM, RPMI…) de 500 ml",
+          "FBS (suero fetal bovino) descomplementado con calor, al 10 %",
+          "Antibióticos Pen/Strep 1/1000"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c25",
+      "n": 25,
+      "titulo": "Confluencia",
+      "diapositivas": "bloque 6",
+      "gancho": "Mirando el fondo de un frasco al microscopio, ¿cómo sabrías si las células ya ocupan casi todo el espacio?",
+      "profe": {
+        "dice": "<p>fotos: <strong>no confluente</strong> (islotes sueltos) → <strong>subconfluente</strong> (huecos) → <strong>confluente</strong> (toda la superficie cubierta). El pase se hace a <strong>70-80 % de confluencia</strong> (subconfluente, final de la exponencial).</p>",
+        "entiende": "la confluencia es <strong>cuánto del suelo del frasco está ocupado</strong>, como las baldosas de un suelo cubiertas por gente."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el pase se hace en subconfluencia y no en confluencia?",
+        "respuesta": "Porque a 70-80 % de confluencia (subconfluente) las células están al final de la fase exponencial, aún creciendo con fuerza. En confluencia ya cubren toda la superficie y el crecimiento se frena."
+      },
+      "aplica": [
+        {
+          "caso": "Hay huecos entre las células, pero ya ocupan casi todo.",
+          "opciones": [
+            "Subconfluente",
+            "No confluente",
+            "Confluente"
+          ],
+          "buena": 0,
+          "porque": "Subconfluente: con huecos."
+        },
+        {
+          "caso": "Toda la superficie está cubierta.",
+          "opciones": [
+            "Confluente",
+            "Subconfluente"
+          ],
+          "buena": 0,
+          "porque": "Confluente: toda la superficie."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las fases de confluencia y cuándo se hace el pase.",
+        "puntos": [
+          "No confluente: islotes sueltos",
+          "Subconfluente: con huecos",
+          "Confluente: toda la superficie cubierta",
+          "El pase, a 70-80 % (subconfluente, final de la exponencial)"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Por qué no se espera a la confluencia: la curva de crecimiento (sesión «Primario, secundario y cómo crecen»).",
+          "ruta": "#/sesion/bio1-crecimiento"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

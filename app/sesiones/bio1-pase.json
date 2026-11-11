@@ -1,0 +1,187 @@
+{
+  "schema": 1,
+  "id": "bio1-pase",
+  "unidad": "bio1",
+  "bloque": 6,
+  "titulo": "El pase, congelar y despertar",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 1 (bloque 6, conceptos 26 a 28). «corte»: escrito a partir de ese mismo contenido; el misterio sale del «¡CUIDADO!» del protocolo del pase.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Diez minutos de más",
+    "caso": "Estás haciendo un pase. Has añadido la tripsina, metes el frasco a 37 ºC… y te llaman. Vuelves al cabo de unos diez minutos. Las células se han despegado de sobra, pero después, el cultivo nuevo sale mucho peor que otras veces.",
+    "pregunta": "¿Qué ha pasado durante esos diez minutos?",
+    "solucion": "Te pasaste de tiempo con la tripsina. La tripsina despega las células cortando las proteínas que las pegan al fondo, pero si la dejas demasiado también daña las células: por eso el protocolo marca 2-3 minutos a 37 ºC y un «¡CUIDADO!» en rojo. Después hay que mirar al microscopio si se han despegado e inactivarla enseguida con 10 ml de medio de cultivo (el suero la frena).",
+    "claves": [
+      "Tripsina: 2-3 min a 37 ºC",
+      "Si te pasas, daña las células",
+      "Inactivar con 10 ml de medio"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio1.c26",
+      "n": 26,
+      "titulo": "El protocolo del pase",
+      "diapositivas": "bloque 6",
+      "gancho": "Las células de una monocapa están pegadas al fondo. ¿Cómo las despegarías sin romperlas para pasarlas a otro frasco?",
+      "profe": {
+        "dice": "<p>Como la mayoría crece en monocapa, hay que <strong>despegarlas con tripsina</strong>.</p>\n<ol>\n<li>Aspirar el medio.</li>\n<li>Lavar con <strong>PBS</strong> (normalmente <strong>dos lavados</strong>).</li>\n<li>Añadir <strong>tripsina 3 ml</strong> e incubar <strong>37 ºC 2-3 min</strong> para despegarlas → <strong>¡CUIDADO!</strong> (si te pasas de tiempo, la tripsina daña las células).</li>\n<li>Observar al microscopio si se han despegado.</li>\n<li><strong>Inactivar la tripsina con medio de cultivo 10 ml.</strong></li>\n<li>Pasar el contenido a un <strong>falcon de 15 ml</strong>.</li>\n<li><strong>Centrifugar 1500 rpm, 5 min.</strong></li>\n<li>Eliminar sobrenadante y <strong>resuspender el pellet</strong> en medio.</li>\n<li><strong>Recuento con cámara de Neubauer</strong> + cálculos.</li>\n<li>Preparar frascos nuevos con medio.</li>\n<li>Añadir las células deseadas.</li>\n<li><strong>Incubar a 37 ºC, 5 % CO2.</strong></li>\n</ol>\n<p>Esquema del vídeo (resumen en 5): aspirar medio → 2 lavados PBS → <strong>tripsina-EDTA</strong> poco tiempo → inactivar tripsina (<strong>medio con suero</strong>) → pasar a nueva placa.</p>",
+        "entiende": "la <strong>tripsina</strong> es una enzima que corta las proteínas que pegan la célula al fondo. Pero <strong>también puede romper la célula</strong> si la dejas demasiado: por eso el <strong>cuidado</strong> con los 2-3 min. El <strong>PBS</strong> lava los restos de suero, porque el suero frena la tripsina. Después se añade <strong>medio con suero</strong> precisamente para <strong>frenarla</strong> (inactivarla).",
+        "truco": "<strong>Truco en 4 frases (cuéntalo como una historia):</strong>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué se lava con PBS antes de poner la tripsina?",
+        "respuesta": "Para quitar los restos de suero, porque el suero frena la tripsina. Por esa misma razón, después se añade medio con suero: para inactivarla cuando ya ha hecho su trabajo."
+      },
+      "aplica": [
+        {
+          "caso": "¿Cuánto tiempo se deja la tripsina a 37 ºC?",
+          "opciones": [
+            "2-3 minutos",
+            "15 minutos"
+          ],
+          "buena": 0,
+          "porque": "2-3 min, ¡cuidado!"
+        },
+        {
+          "caso": "¿Con qué se inactiva la tripsina?",
+          "opciones": [
+            "Con 10 ml de medio de cultivo",
+            "Con PBS"
+          ],
+          "buena": 0,
+          "porque": "Medio con suero: la frena."
+        },
+        {
+          "caso": "Centrifugación del pase.",
+          "opciones": [
+            "1500 rpm, 5 min",
+            "500 rpm, 1 min"
+          ],
+          "buena": 0,
+          "porque": "1500 rpm 5 min, como en el cambio de medio y la descongelación."
+        }
+      ],
+      "recuerda": {
+        "pide": "Cuenta el pase como una historia en cuatro partes, con sus números.",
+        "puntos": [
+          "Limpio: aspirar el medio y 2 lavados de PBS",
+          "Despego: tripsina 3 ml, 37 ºC, 2-3 min (¡cuidado!) y miro al microscopio",
+          "Freno y bajo: 10 ml de medio, falcon de 15 ml, 1500 rpm 5 min, tiro el sobrenadante y resuspendo",
+          "Cuento y siembro: Neubauer, frascos nuevos con medio, 37 ºC y 5 % CO₂"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Cuándo se hace el pase (70-80 % de confluencia), en «Cuidar el cultivo».",
+          "ruta": "#/sesion/bio1-mantenimiento"
+        }
+      ]
+    },
+    {
+      "id": "bio1.c27",
+      "n": 27,
+      "titulo": "Conservar: congelar con DMSO",
+      "diapositivas": "bloque 6",
+      "gancho": "Si congelas una célula sin más, el agua de dentro forma cristales de hielo. ¿Qué crees que le pasa?",
+      "profe": {
+        "dice": "<ul>\n<li>Método más habitual: <strong>congelación</strong>.</li>\n<li>Se añade <strong>DMSO (dimetil sulfóxido)</strong>, <strong>agente crioprotector → ¡tóxico!</strong></li>\n<li><strong>Una vez añadido el DMSO, se congelan inmediatamente con N líquido y se conservan a -80 ºC indefinidamente.</strong></li>\n</ul>",
+        "entiende": "al congelar, el agua de dentro de la célula forma <strong>cristales de hielo que la pinchan y la rompen</strong>. El <strong>DMSO</strong> (crio = frío, protector) lo evita, pero es <strong>tóxico</strong>: por eso, en cuanto lo pones, hay que congelar <strong>ya</strong>, sin esperar.",
+        "truco": "<strong>\"DMSO = Defiende del hielo, pero Mata Si Olvidas congelar\"</strong>."
+      },
+      "porque": {
+        "pregunta": "Si el DMSO protege del hielo, ¿por qué hay que congelar inmediatamente después de añadirlo?",
+        "respuesta": "Porque el DMSO es tóxico para las células. Las protege de los cristales de hielo, pero no puedes dejarlas en contacto con él: en cuanto lo pones, a congelar."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué agente crioprotector se usa?",
+          "opciones": [
+            "DMSO",
+            "Tripsina"
+          ],
+          "buena": 0,
+          "porque": "DMSO: dimetil sulfóxido."
+        },
+        {
+          "caso": "¿Dónde se conservan las células congeladas?",
+          "opciones": [
+            "A -80 ºC, indefinidamente",
+            "En la nevera a 4 ºC"
+          ],
+          "buena": 0,
+          "porque": "Se congelan con N líquido y se conservan a -80 ºC."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se conservan las células?",
+        "puntos": [
+          "Método más habitual: congelación",
+          "Se añade DMSO, crioprotector, ¡tóxico!",
+          "Congelar inmediatamente con N líquido",
+          "Conservar a -80 ºC indefinidamente"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio1.c28",
+      "n": 28,
+      "titulo": "Descongelar",
+      "diapositivas": "bloque 6",
+      "gancho": "Para «despertar» unas células congeladas, ¿qué crees que hay que quitarles antes de sembrarlas?",
+      "profe": {
+        "dice": "<ol>\n<li>Sacar del congelador de <strong>-80 ºC o del N líquido</strong> y descongelar ligeramente <strong>con las manos</strong>.</li>\n<li>Pasar al <strong>baño termostático a 37 ºC</strong>.</li>\n<li>El <strong>DMSO</strong> (medio de congelación = <strong>Suero Fetal Bovino + DMSO 10 %</strong>) es <strong>muy tóxico</strong> → hay que <strong>eliminarlo antes de sembrar</strong>.</li>\n<li>Mezclar el medio de congelación (con las células) con <strong>10 ml de medio atemperado</strong> y <strong>centrifugar 1500 rpm 5 min</strong>.</li>\n<li><strong>Eliminar sobrenadante</strong>, resuspender en medio y <strong>sembrar</strong>.</li>\n</ol>",
+        "entiende": "las células se despiertan con calor (manos → baño a 37 ºC). Luego hay que <strong>quitarles el DMSO</strong> antes de sembrarlas: lo <strong>diluyes</strong> en 10 ml de medio, <strong>centrifugas</strong> para que las células bajen y <strong>tiras el líquido de arriba</strong>, que es donde está el DMSO.",
+        "truco": "<strong>\"Manos → baño → diluyo → centrifugo → tiro el DMSO → siembro\"</strong>. Fíjate: <strong>centrifugar 1500 rpm 5 min</strong> sale <strong>3 veces</strong> en el tema (cambio de medio en suspensión, pase y descongelación)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se diluye en medio y se centrifuga antes de sembrar?",
+        "respuesta": "Para quitar el DMSO, que es muy tóxico: al diluirlo y centrifugar, las células bajan al fondo y el DMSO se queda en el líquido de arriba, que se tira."
+      },
+      "aplica": [
+        {
+          "caso": "Primer paso al sacar las células del congelador.",
+          "opciones": [
+            "Descongelar ligeramente con las manos",
+            "Sembrar directamente"
+          ],
+          "buena": 0,
+          "porque": "Manos → baño a 37 ºC."
+        },
+        {
+          "caso": "¿Con cuánto medio atemperado se mezclan?",
+          "opciones": [
+            "10 ml",
+            "1 ml"
+          ],
+          "buena": 0,
+          "porque": "10 ml de medio atemperado y centrifugar."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los pasos para descongelar células.",
+        "puntos": [
+          "Sacar del congelador (-80 ºC) o del N líquido y descongelar con las manos",
+          "Pasar al baño a 37 ºC",
+          "El DMSO es muy tóxico: hay que eliminarlo antes de sembrar",
+          "Mezclar con 10 ml de medio atemperado y centrifugar 1500 rpm 5 min",
+          "Tirar el sobrenadante, resuspender y sembrar"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

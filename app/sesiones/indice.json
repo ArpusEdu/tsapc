@@ -23,6 +23,14 @@
     { "id": "lab2-residuos1", "unidad": "lab2", "bloque": 5, "titulo": "¿Dónde va cada residuo? (I): químicos y radiactivos", "minutos": 25, "pegatina": "gafas", "gancho": "por el fregadero" },
     { "id": "lab2-residuos2", "unidad": "lab2", "bloque": 5, "titulo": "¿Dónde va cada residuo? (II): biosanitarios", "minutos": 20, "pegatina": "gafas", "gancho": "recoger la sala de tallado" },
     { "id": "lab2-emergencia", "unidad": "lab2", "bloque": 6, "titulo": "Si suena la alarma", "minutos": 25, "pegatina": "gafas", "gancho": "suena la alarma" },
-    { "id": "lab2-accidentes", "unidad": "lab2", "bloque": 6, "titulo": "Accidentes: actuar en segundos", "minutos": 25, "pegatina": "gafas", "gancho": "el pinchazo" }
+    { "id": "lab2-accidentes", "unidad": "lab2", "bloque": 6, "titulo": "Accidentes: actuar en segundos", "minutos": 25, "pegatina": "gafas", "gancho": "el pinchazo" },
+    { "id": "bio1-cultivo", "unidad": "bio1", "bloque": 1, "titulo": "Una granja de células: qué es un cultivo y sus tipos", "minutos": 25, "pegatina": "petri", "gancho": "la piel que no se formaba" },
+    { "id": "bio1-crecimiento", "unidad": "bio1", "bloque": 3, "titulo": "Primario, secundario y cómo crecen", "minutos": 25, "pegatina": "petri", "gancho": "esperar a que se llene" },
+    { "id": "bio1-lineas", "unidad": "bio1", "bloque": 5, "titulo": "Líneas celulares y equipos", "minutos": 25, "pegatina": "petri", "gancho": "las células que no mueren" },
+    { "id": "bio1-procedimientos", "unidad": "bio1", "bloque": 6, "titulo": "Separar, elegir y sembrar", "minutos": 25, "pegatina": "petri", "gancho": "la sopa de células" },
+    { "id": "bio1-recuento", "unidad": "bio1", "bloque": 6, "titulo": "Contar células vivas", "minutos": 20, "pegatina": "petri", "gancho": "contadas, pero no vivas" },
+    { "id": "bio1-mantenimiento", "unidad": "bio1", "bloque": 6, "titulo": "Cuidar el cultivo", "minutos": 25, "pegatina": "petri", "gancho": "el medio que cambió de color" },
+    { "id": "bio1-pase", "unidad": "bio1", "bloque": 6, "titulo": "El pase, congelar y despertar", "minutos": 25, "pegatina": "petri", "gancho": "diez minutos de más" },
+    { "id": "bio1-aplicaciones", "unidad": "bio1", "bloque": 7, "titulo": "Contaminación y para qué sirve todo esto", "minutos": 25, "pegatina": "petri", "gancho": "un enemigo invisible" }
   ]
 }
