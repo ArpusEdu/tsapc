@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "id": "lab1-equipos2",
+  "unidad": "lab1",
+  "bloque": 5,
+  "titulo": "Equipos (II): separar, calentar, medir la luz y cortar",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 5, conceptos 38 a 41, diapositivas 62 a 68). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Del bloque al cristal",
+    "caso": "Una biopsia ya está procesada: se le ha quitado el agua, se ha aclarado y tiene la consistencia que le da la parafina. Ahora hay que analizarla al microscopio. Pero lo que tienes en la mano es un bloque de tejido, y al microscopio se mira lo que se coloca en un portaobjetos, una hoja fina y transparente.",
+    "pregunta": "¿Cómo pasas de un bloque de tejido a algo que se pueda poner en un portaobjetos? ¿Con qué instrumento?",
+    "solucion": "Con el microtomo, el instrumento que corta los tejidos en láminas muy finas para analizarlos, propio del laboratorio de anatomía patológica. Esas láminas se colocan en el portaobjetos, se tiñen para poder verlas y caracterizarlas, y el microscopio amplía la imagen.",
+    "claves": [
+      "Microtomo = corta en láminas muy finas",
+      "Microscopio = amplía la imagen",
+      "Anatomía patológica: tu laboratorio"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c38",
+      "n": 38,
+      "titulo": "Centrífugas",
+      "diapositivas": "62",
+      "gancho": "Si dejas reposar un zumo natural, lo más pesado acaba en el fondo. ¿Cómo harías eso mismo con una muestra de sangre, pero en unos minutos?",
+      "profe": {
+        "glosario": "<p><b>Densidad:</b> lo «pesado» que es algo para su tamaño. <b>Plasma:</b> la parte líquida de la sangre.</p>",
+        "img": "../lab1/repaso/img/039.jpg",
+        "imgAlt": "Centrífuga",
+        "dice": "<ul>\n<li>Separan una <strong>mezcla líquida en función de su densidad</strong>.</li>\n<li>Se controla la <strong>velocidad</strong> de la fuerza centrífuga y la <strong>temperatura</strong>.</li>\n<li><strong>¿Sabías que…?</strong> La <strong>sangre</strong> se centrifuga para separar el <strong>plasma</strong> (arriba, donde se hacen la mayoría de los análisis) y las <strong>células rojas</strong> (abajo, porque son <strong>más densas</strong>).</li>\n</ul>",
+        "truco": "<strong>\"Lo denso se hunde\"</strong>: lo más pesado (células rojas) abajo, lo ligero (plasma) arriba."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el plasma queda arriba y las células rojas abajo?",
+        "respuesta": "Porque la centrífuga separa la mezcla según su densidad, y lo más denso se va al fondo. Las células rojas son más densas, así que quedan abajo; el plasma, donde se hacen la mayoría de los análisis, queda arriba."
+      },
+      "aplica": [
+        {
+          "caso": "En un tubo de sangre centrifugado, ¿dónde se hacen la mayoría de los análisis?",
+          "opciones": [
+            "En el plasma, arriba",
+            "En las células rojas, abajo"
+          ],
+          "buena": 0,
+          "porque": "En el plasma, que queda arriba."
+        },
+        {
+          "caso": "¿Qué se controla en una centrífuga?",
+          "opciones": [
+            "La velocidad de la fuerza centrífuga y la temperatura",
+            "Solo el tiempo"
+          ],
+          "buena": 0,
+          "porque": "Se controla la velocidad de la fuerza centrífuga y la temperatura."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué hace una centrífuga, qué se controla en ella y qué le pasa a la sangre?",
+        "puntos": [
+          "Separa una mezcla líquida según su densidad",
+          "Se controla la velocidad de la fuerza centrífuga y la temperatura",
+          "Sangre: el plasma queda arriba (la mayoría de los análisis)",
+          "Sangre: las células rojas quedan abajo, porque son más densas"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Los tubos de centrífuga están en la sesión «La cristalería».",
+          "ruta": "#/sesion/lab1-cristaleria"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c39",
+      "n": 39,
+      "titulo": "Baños, estufas y mantas calefactoras",
+      "diapositivas": "63 y 64",
+      "gancho": "Tienes que mantener una disolución a 37 ºC toda la mañana. ¿Cómo lo harías sin calentarla de más?",
+      "profe": {
+        "glosario": "<p><b>Baño maría:</b> calentar algo metiéndolo en agua caliente. <b>kHz (kilohercio):</b> unidad de frecuencia; mil vibraciones por segundo. <b>Ultrasonido:</b> sonido tan agudo que no lo oímos. <b>Interacción molecular:</b> las fuerzas que mantienen unidas las moléculas.</p>",
+        "img": "../lab1/repaso/img/042.jpg",
+        "imgAlt": "Estufa",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Equipo</th>\n<th>Para qué / dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Baño de agua</strong></td>\n<td><strong>Agua destilada calentada</strong> (normalmente a <strong>37 ºC</strong>): un <strong>\"baño maría\"</strong> para mantener disoluciones a una temperatura determinada</td>\n</tr>\n<tr>\n<td><strong>Baño de ultrasonidos</strong></td>\n<td>Agua destilada a la que se aplica una frecuencia de <strong>15 a 400 kHz</strong> para <strong>romper las interacciones moleculares</strong></td>\n</tr>\n<tr>\n<td><strong>Estufa</strong></td>\n<td>Como un <strong>horno</strong>. Para <strong>cultivos celulares (hasta 60 ºC)</strong> o para <strong>secar material de vidrio (hasta 300 ºC)</strong></td>\n</tr>\n<tr>\n<td><strong>Manta calefactora</strong></td>\n<td>Recipiente <strong>hecho con hilo</strong> donde se coloca el <strong>matraz</strong> para <strong>calentarlo sin agitación</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "truco": "<strong>Truco de números:</strong> <strong>\"Baño 37 · Ultrasonidos 15-400 · Estufa 60/300\"</strong>. <strong>Manta = abrigo del matraz (calienta sin agitar)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la estufa tiene dos temperaturas tan distintas, hasta 60 ºC y hasta 300 ºC?",
+        "respuesta": "Porque tiene dos usos muy distintos: los cultivos celulares, que necesitan una temperatura suave (hasta 60 ºC), y secar el material de vidrio, que aguanta mucho más (hasta 300 ºC)."
+      },
+      "aplica": [
+        {
+          "caso": "Mantener una disolución a 37 ºC.",
+          "opciones": [
+            "Baño de agua",
+            "Manta calefactora",
+            "Baño de ultrasonidos"
+          ],
+          "buena": 0,
+          "porque": "El baño de agua es un «baño maría», normalmente a 37 ºC."
+        },
+        {
+          "caso": "Romper interacciones moleculares con una frecuencia de 15 a 400 kHz.",
+          "opciones": [
+            "Baño de ultrasonidos",
+            "Estufa"
+          ],
+          "buena": 0,
+          "porque": "El baño de ultrasonidos aplica de 15 a 400 kHz."
+        },
+        {
+          "caso": "Calentar un matraz sin agitarlo.",
+          "opciones": [
+            "Manta calefactora",
+            "Agitador magnético con calor"
+          ],
+          "buena": 0,
+          "porque": "La manta calefactora calienta el matraz sin agitación."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di para qué sirven el baño de agua, el de ultrasonidos, la estufa y la manta calefactora, con sus números.",
+        "puntos": [
+          "Baño de agua: agua destilada, normalmente a 37 ºC (baño maría)",
+          "Baño de ultrasonidos: de 15 a 400 kHz para romper interacciones moleculares",
+          "Estufa: cultivos celulares (hasta 60 ºC) o secar vidrio (hasta 300 ºC)",
+          "Manta calefactora: calienta el matraz sin agitación"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c40",
+      "n": 40,
+      "titulo": "Espectrofotómetros",
+      "diapositivas": "65, 66 y 67",
+      "gancho": "Un zumo muy cargado deja pasar menos luz que uno aguado. ¿Cómo podría un aparato usar eso para saber cuánta sustancia hay en una disolución?",
+      "profe": {
+        "glosario": "<p><b>Concentración:</b> cuánta sustancia hay en un volumen de disolución. <b>Absorción:</b> la sustancia «se queda» con parte de la luz. <b>Longitud de onda:</b> distancia entre dos crestas de una onda (se mide en nm, nanómetros). <b>Oscilar:</b> moverse de un lado a otro repetidamente.</p>",
+        "img": "../lab1/repaso/img/044.jpg",
+        "imgAlt": "Espectro electromagnético (la zona visible va de 400 a 700 nm)",
+        "dice": "<ul>\n<li>Miden la <strong>concentración</strong> de una sustancia en una disolución.</li>\n<li>Se basan en la <strong>absorción molecular</strong> en la región <strong>ultravioleta-visible</strong> del espectro electromagnético.</li>\n<li><strong>Espectro electromagnético:</strong> conjunto de <strong>radiaciones electromagnéticas</strong>, producidas por la <strong>oscilación de los campos eléctrico y magnético</strong>, que se propagan por el espacio.</li>\n<li>En las imágenes (diapositivas 66 y 67): de menor a mayor longitud de onda: <strong>rayos gamma → rayos X → ultravioleta → visible (400 nm azul, 500 nm verde, 600-700 nm rojo) → infrarrojo → microondas → radio</strong>.</li>\n</ul>",
+        "entiende": "cuanto <strong>más concentrada</strong> está una disolución, <strong>más luz absorbe</strong> (un zumo más cargado deja pasar menos luz). El aparato mide esa luz y calcula la concentración. Por eso las cubetas son de <strong>cuarzo</strong>: dejan pasar la luz UV (concepto 3).",
+        "truco": "<strong>Truco del espectro:</strong> <strong>\"Gamma Xavi Usa Ves Infra Micro Radio\"</strong>. Y <strong>visible = 400-700 nm (azul → rojo)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué las cubetas del espectrofotómetro son de cuarzo?",
+        "respuesta": "Porque el aparato trabaja con la región ultravioleta-visible, y el cuarzo deja pasar la luz UV. Es justo el ensayo para el que se reserva el cuarzo, el vidrio más caro."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué mide un espectrofotómetro?",
+          "opciones": [
+            "La concentración de una sustancia en una disolución",
+            "El pH de la disolución"
+          ],
+          "buena": 0,
+          "porque": "Mide la concentración de una sustancia en una disolución."
+        },
+        {
+          "caso": "La zona visible del espectro va de…",
+          "opciones": [
+            "400 a 700 nm",
+            "15 a 400 kHz"
+          ],
+          "buena": 0,
+          "porque": "El visible va de 400 nm (azul) a 700 nm (rojo)."
+        },
+        {
+          "caso": "De menor a mayor longitud de onda, ¿qué va justo antes del visible?",
+          "opciones": [
+            "Ultravioleta",
+            "Infrarrojo"
+          ],
+          "buena": 0,
+          "porque": "Gamma → X → ultravioleta → visible → infrarrojo → microondas → radio."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué mide un espectrofotómetro, en qué se basa y el orden del espectro.",
+        "puntos": [
+          "Mide la concentración de una sustancia en una disolución",
+          "Se basa en la absorción molecular en la región ultravioleta-visible",
+          "Espectro: gamma → X → ultravioleta → visible → infrarrojo → microondas → radio",
+          "Visible: de 400 nm (azul) a 700 nm (rojo)"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "El cuarzo y la luz UV están en la sesión «Vidrio y plástico».",
+          "ruta": "#/sesion/lab1-vidrio"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c41",
+      "n": 41,
+      "titulo": "Microscopios y microtomos",
+      "diapositivas": "68",
+      "gancho": "Microscopio y microtomo suenan casi igual. Antes de mirar: ¿cuál crees que mira y cuál corta?",
+      "profe": {
+        "glosario": "<p><b>Principio físico:</b> la ley de la física en la que se basa el aparato (por ejemplo, la luz o los electrones).</p>",
+        "img": "../lab1/repaso/img/046.jpg",
+        "imgAlt": "Microtomo",
+        "dice": "<ul>\n<li><strong>Microscopios:</strong> instrumentos que <strong>amplían la imagen</strong>. Hay varios tipos según el <strong>principio físico</strong> en que se basan.</li>\n<li><strong>Microtomos:</strong> instrumentos que <strong>cortan tejidos en láminas muy finas</strong> para analizarlos. <strong>Propios del laboratorio de anatomía patológica.</strong></li>\n</ul>",
+        "truco": "<strong>Microscopio = mira</strong> · <strong>Microtomo = corta</strong> (<em>tomo</em> = cortar, como en \"tomografía\", imágenes \"en cortes\")."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el microtomo es «propio» del laboratorio de anatomía patológica?",
+        "respuesta": "Porque allí se analizan tejidos para el diagnóstico, y para analizarlos hay que cortarlos en láminas muy finas. Es tu especialidad: el microtomo será una de tus herramientas de trabajo."
+      },
+      "aplica": [
+        {
+          "caso": "Ampliar la imagen de una muestra.",
+          "opciones": [
+            "Microscopio",
+            "Microtomo"
+          ],
+          "buena": 0,
+          "porque": "Los microscopios amplían la imagen."
+        },
+        {
+          "caso": "Cortar un tejido en láminas muy finas.",
+          "opciones": [
+            "Microscopio",
+            "Microtomo"
+          ],
+          "buena": 1,
+          "porque": "Los microtomos cortan tejidos en láminas muy finas para analizarlos."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué hacen los microscopios y los microtomos?",
+        "puntos": [
+          "Microscopios: amplían la imagen",
+          "Hay varios tipos según el principio físico en que se basan",
+          "Microtomos: cortan tejidos en láminas muy finas para analizarlos",
+          "Son propios del laboratorio de anatomía patológica"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Antes de cortar, el tejido se procesa con etanol, xilol y parafina, y después se tiñe (sesión «Reactivos químicos»).",
+          "ruta": "#/sesion/lab1-reactivos"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 1",
+        "BLOQUE 2",
+        "BLOQUE 3",
+        "BLOQUE 4"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

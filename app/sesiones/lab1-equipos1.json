@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "id": "lab1-equipos1",
+  "unidad": "lab1",
+  "bloque": 5,
+  "titulo": "Equipos (I): guardar, pesar y medir",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Lab 1 (bloque 5, conceptos 34 a 37, diapositivas 58 a 61). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Cinco miligramos",
+    "caso": "Para un ensayo hay que pesar una cantidad muy pequeña de reactivo: unos pocos miligramos. Hay prisa, y el granatario está libre y a mano, así que se pesa ahí. La pesada «da» lo que tiene que dar, pero el ensayo sale mal una y otra vez.",
+    "pregunta": "¿Qué crees que falla, si la báscula marcaba lo que debía?",
+    "solucion": "Que el granatario es para pesadas grandes y no es muy sensible: con cantidades tan pequeñas no se puede fiar. Para pequeñas cantidades hace falta la balanza analítica, muy sensible y con un error instrumental mínimo. Y si la pesada debe ser exacta, el reactivo se pesa dentro de una cavidad de vidrio transparente, resguardado del aire.",
+    "claves": [
+      "Granatario = grande, poco sensible",
+      "Pequeñas cantidades → balanza analítica",
+      "Pesada exacta → resguardada del aire"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "lab1.c34",
+      "n": 34,
+      "titulo": "Mobiliario del laboratorio",
+      "diapositivas": "58",
+      "gancho": "En un laboratorio hay cosas que se guardan a 4 ºC, otras a -80 ºC y otras a -200 ºC. ¿Por qué crees que no se guarda todo en la misma nevera?",
+      "profe": {
+        "glosario": "<p><b>Poyata:</b> la mesa fija de trabajo del laboratorio. <b>Vial:</b> frasquito pequeño. <b>Inhalación:</b> respirar un gas o vapor. <b>N₂ líquido:</b> nitrógeno enfriado hasta volverse líquido.</p>",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Mueble</th>\n<th>Para qué / dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Mesas / poyatas</strong></td>\n<td>Donde trabaja el personal: frascos, pipetas automáticas, viales, reactivos, puntas, guantes, rotuladores…</td>\n</tr>\n<tr>\n<td><strong>Vitrinas extractoras</strong></td>\n<td>Protegen de <strong>salpicaduras e inhalaciones</strong> con productos que <strong>desprenden vapores, como los ácidos</strong></td>\n</tr>\n<tr>\n<td><strong>Frigoríficos</strong></td>\n<td>Muestras y reactivos a <strong>4-10 ºC</strong></td>\n</tr>\n<tr>\n<td><strong>Congeladores</strong></td>\n<td><strong>Bajo -18 ºC</strong> (primer nivel, como los de casa) o <strong>hasta -80 ºC</strong> para conservar mejor</td>\n</tr>\n<tr>\n<td><strong>Tanques de N₂ líquido</strong></td>\n<td>Para guardar <strong>células o tejidos</strong>. Hasta <strong>-200 ºC</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "truco": "<strong>Truco de temperaturas (de calor a frío):</strong> <strong>\"4-10 → -18 → -80 → -200\"</strong> = nevera → congelador de casa → ultracongelador → nitrógeno."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hacen falta vitrinas extractoras, si ya trabajas con cuidado en la mesa?",
+        "respuesta": "Porque algunos productos, como los ácidos, desprenden vapores. La vitrina extractora te protege de las salpicaduras y de las inhalaciones, algo que en una mesa normal no podrías evitar."
+      },
+      "aplica": [
+        {
+          "caso": "Guardar muestras y reactivos en frío, para el día a día.",
+          "opciones": [
+            "Frigorífico (4-10 ºC)",
+            "Tanque de N₂ líquido"
+          ],
+          "buena": 0,
+          "porque": "El frigorífico guarda muestras y reactivos a 4-10 ºC."
+        },
+        {
+          "caso": "Conservar células o tejidos al máximo frío.",
+          "opciones": [
+            "Congelador de -18 ºC",
+            "Tanque de N₂ líquido (hasta -200 ºC)"
+          ],
+          "buena": 1,
+          "porque": "Los tanques de N₂ líquido guardan células o tejidos, hasta -200 ºC."
+        },
+        {
+          "caso": "Trabajar con un ácido que desprende vapores.",
+          "opciones": [
+            "En la poyata",
+            "En la vitrina extractora"
+          ],
+          "buena": 1,
+          "porque": "La vitrina extractora protege de salpicaduras e inhalaciones."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di el mobiliario del laboratorio y para qué sirve cada mueble, con sus temperaturas.",
+        "puntos": [
+          "Mesas o poyatas: donde trabaja el personal",
+          "Vitrinas extractoras: protegen de salpicaduras e inhalaciones (vapores, como los ácidos)",
+          "Frigoríficos: muestras y reactivos a 4-10 ºC",
+          "Congeladores: bajo -18 ºC o hasta -80 ºC",
+          "Tanques de N₂ líquido: células o tejidos, hasta -200 ºC"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La protección frente a vapores y salpicaduras la estudias a fondo en Lab 2 · Seguridad.",
+          "ruta": "#/unidad/lab2"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c35",
+      "n": 35,
+      "titulo": "Balanzas: granatario y analítica",
+      "diapositivas": "59",
+      "gancho": "Una báscula de cocina pesa bien un kilo de harina… pero ¿pesaría bien un granito de sal? ¿Qué haría falta para eso?",
+      "profe": {
+        "glosario": "<p><b>Sensible:</b> que detecta diferencias de peso muy pequeñas. <b>Error instrumental:</b> el fallo que comete el propio aparato al medir.</p>",
+        "img": "../lab1/repaso/img/033.jpg",
+        "imgAlt": "Balanza analítica (con urna de vidrio)",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Balanza</th>\n<th>Para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Granatario</strong></td>\n<td><strong>Pesadas grandes</strong>. <strong>No es muy sensible</strong>. Ideal para <strong>gran cantidad de reactivo</strong></td>\n</tr>\n<tr>\n<td><strong>Balanza analítica</strong></td>\n<td><strong>Pesadas precisas</strong>, <strong>muy sensible</strong>, <strong>error instrumental mínimo</strong>: fundamental para <strong>pequeñas cantidades</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>Si la pesada debe ser exacta, el reactivo se pesa <strong>dentro de una cavidad de vidrio transparente, resguardado del aire</strong>.</p>",
+        "truco": "<strong>Granatario = Grande</strong> · <strong>Analítica = Al miligramo, en urna de cristal</strong> (el aire movería el plato)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la balanza analítica pesa dentro de una urna de cristal?",
+        "respuesta": "Porque es tan sensible que hasta el aire podría mover el plato y cambiar la pesada. Por eso, si la pesada debe ser exacta, el reactivo se pesa dentro de una cavidad de vidrio transparente, resguardado del aire."
+      },
+      "aplica": [
+        {
+          "caso": "Pesar una gran cantidad de reactivo.",
+          "opciones": [
+            "Granatario",
+            "Balanza analítica"
+          ],
+          "buena": 0,
+          "porque": "El granatario es para pesadas grandes."
+        },
+        {
+          "caso": "Pesar una cantidad pequeña con precisión.",
+          "opciones": [
+            "Granatario",
+            "Balanza analítica"
+          ],
+          "buena": 1,
+          "porque": "La balanza analítica es muy sensible: fundamental para pequeñas cantidades."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara el granatario y la balanza analítica y explica cómo se hace una pesada exacta.",
+        "puntos": [
+          "Granatario: pesadas grandes, no muy sensible; gran cantidad de reactivo",
+          "Balanza analítica: pesadas precisas, muy sensible, error instrumental mínimo",
+          "La analítica es fundamental para pequeñas cantidades",
+          "Pesada exacta: dentro de una cavidad de vidrio, resguardado del aire"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "lab1.c36",
+      "n": 36,
+      "titulo": "pHmetro y desecadores",
+      "diapositivas": "60",
+      "gancho": "¿Cómo sabrías si una disolución es ácida o básica sin probarla? Piensa qué tendría que medir un aparato.",
+      "profe": {
+        "glosario": "<p><b>Anhidro:</b> sin agua. <b>Desecante:</b> sustancia que absorbe la humedad (como las bolsitas de gel de sílice de las cajas de zapatos).</p>",
+        "img": "../lab1/repaso/img/035.jpg",
+        "imgAlt": "Desecador",
+        "dice": "<ul>\n<li><strong>pHmetro:</strong> aparato electrónico que mide la <strong>cantidad de iones hidrógeno</strong> (cargas positivas) de la solución, es decir, <strong>mide el pH</strong>. Permite caracterizar las muestras por su <strong>acidez y basicidad</strong>.</li>\n<li><strong>Desecadores:</strong> recipientes de vidrio con un compuesto que <strong>atrapa las moléculas de agua</strong>. <strong>Deshidratan</strong> una sustancia o <strong>guardan reactivos en ambiente anhidro</strong>, normalmente <strong>creando vacío</strong>. <strong>Las sustancias arriba y el desecante debajo.</strong></li>\n</ul>",
+        "truco": "<strong>desecador = \"la caja de zapatos con bolsita\"</strong>, y <strong>el desecante abajo, la muestra arriba</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve guardar un reactivo en un desecador?",
+        "respuesta": "Para tenerlo en un ambiente anhidro, sin agua: el desecante atrapa las moléculas de agua, normalmente creando vacío, y así el reactivo no coge humedad. El desecador también sirve para deshidratar una sustancia."
+      },
+      "aplica": [
+        {
+          "caso": "Caracterizar una muestra por su acidez o basicidad.",
+          "opciones": [
+            "pHmetro",
+            "Desecador"
+          ],
+          "buena": 0,
+          "porque": "El pHmetro mide el pH: caracteriza por acidez y basicidad."
+        },
+        {
+          "caso": "Guardar un reactivo en un ambiente sin agua.",
+          "opciones": [
+            "Desecador",
+            "Frigorífico"
+          ],
+          "buena": 0,
+          "porque": "El desecador guarda reactivos en ambiente anhidro."
+        },
+        {
+          "caso": "En el desecador, ¿dónde va el desecante?",
+          "opciones": [
+            "Arriba, sobre la sustancia",
+            "Debajo; la sustancia arriba"
+          ],
+          "buena": 1,
+          "porque": "Las sustancias arriba y el desecante debajo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué mide el pHmetro y para qué sirve un desecador.",
+        "puntos": [
+          "pHmetro: aparato electrónico que mide los iones hidrógeno, es decir, el pH",
+          "Permite caracterizar las muestras por su acidez y basicidad",
+          "Desecador: recipiente de vidrio con un compuesto que atrapa el agua",
+          "Deshidrata o guarda reactivos en ambiente anhidro (normalmente con vacío)",
+          "Sustancias arriba, desecante debajo"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "El pH vuelve en los tipos de agua: todas tienen pH 7 menos la IV (sesión «El agua del laboratorio»).",
+          "ruta": "#/sesion/lab1-agua"
+        }
+      ]
+    },
+    {
+      "id": "lab1.c37",
+      "n": 37,
+      "titulo": "Agitadores: magnético, de tubos y vórtex",
+      "diapositivas": "61",
+      "gancho": "Tienes que mezclar algo dentro de un matraz durante una hora, sin meter la mano ni una cuchara. ¿Cómo lo harías?",
+      "profe": {
+        "glosario": "<p><b>Miscibilidad:</b> capacidad de dos líquidos para mezclarse entre sí.</p>",
+        "img": "../lab1/repaso/img/038.jpg",
+        "imgAlt": "Vórtex",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Agitador</th>\n<th>Cómo funciona</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Magnético</strong></td>\n<td>Un <strong>imán en la placa hace rotar otro imán dentro del matraz</strong>. Puede ser <strong>con o sin calor</strong> (el calor ayuda a la <strong>miscibilidad</strong>)</td>\n</tr>\n<tr>\n<td><strong>De tubos de centrífuga</strong></td>\n<td><strong>Placa con base</strong> donde se meten los tubos; agita por <strong>vibración de la placa</strong></td>\n</tr>\n<tr>\n<td><strong>Vórtex</strong></td>\n<td>Agita <strong>un solo tubo</strong> por vibración, <strong>sujetándolo con la mano</strong>. Para <strong>agitaciones breves</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "truco": "<strong>Magnético = 2 imanes</strong> · <strong>Tubos = muchos tubos</strong> · <strong>Vórtex = 1 tubo en la mano</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el agitador magnético puede llevar calor?",
+        "respuesta": "Porque el calor ayuda a la miscibilidad, es decir, a que los líquidos se mezclen entre sí. Así agita y ayuda a mezclar a la vez."
+      },
+      "aplica": [
+        {
+          "caso": "Agitar un solo tubo un momento, sujetándolo con la mano.",
+          "opciones": [
+            "Vórtex",
+            "Agitador magnético",
+            "Agitador de tubos"
+          ],
+          "buena": 0,
+          "porque": "El vórtex agita un solo tubo por vibración: para agitaciones breves."
+        },
+        {
+          "caso": "Agitar dentro de un matraz con un imán que gira.",
+          "opciones": [
+            "Agitador magnético",
+            "Vórtex"
+          ],
+          "buena": 0,
+          "porque": "En el magnético, un imán de la placa hace girar otro dentro del matraz."
+        },
+        {
+          "caso": "Agitar muchos tubos de centrífuga a la vez.",
+          "opciones": [
+            "Agitador de tubos de centrífuga",
+            "Vórtex"
+          ],
+          "buena": 0,
+          "porque": "Se meten en la placa y se agitan por vibración."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica cómo funcionan los tres agitadores.",
+        "puntos": [
+          "Magnético: un imán de la placa hace girar otro imán dentro del matraz",
+          "Magnético: con o sin calor (el calor ayuda a la miscibilidad)",
+          "De tubos de centrífuga: agita por vibración de la placa",
+          "Vórtex: agita un solo tubo por vibración, en la mano; agitaciones breves"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab1",
+      "bloques": [
+        "BLOQUE 1",
+        "BLOQUE 2",
+        "BLOQUE 3",
+        "BLOQUE 4"
+      ]
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
