@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "id": "ipe-tema4-ergonomia",
+  "unidad": "ipe-tema4",
+  "bloque": 5,
+  "titulo": "Ergonomía (I): carga de trabajo y posturas",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 4 (bloque 5, conceptos 18 a 20, diapositivas 11 y 12). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La primera causa",
+    "caso": "Si tuvieras que adivinar cuál es la primera causa de enfermedad profesional en España, ¿dirías los químicos, el ruido o las radiaciones? ¿Y la primera causa de accidente de trabajo?",
+    "pregunta": "¿Qué crees que encabeza cada lista?",
+    "solucion": "Ninguno de los tres. Las enfermedades causadas por posturas forzadas y movimientos repetitivos son la primera causa de enfermedad profesional en nuestro país, y los sobresfuerzos son la primera causa de accidentes de trabajo. Por eso la carga física (posturas, movimientos repetitivos y manipulación de cargas) importa tanto.",
+    "claves": [
+      "1.ª enfermedad profesional: posturas y repetición",
+      "1.ª causa de accidente: sobresfuerzos",
+      "Carga física → TME"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema4.c18",
+      "n": 18,
+      "titulo": "Carga de trabajo y fatiga",
+      "diapositivas": "11",
+      "gancho": "Al final de un día de exámenes estás agotada aunque no hayas movido un músculo. ¿Eso también es carga de trabajo?",
+      "profe": {
+        "dice": "<p><strong>Riesgos ergonómicos:</strong> son aquellos derivados de la <strong>carga de trabajo</strong>, las <strong>condiciones ambientales</strong> y el <strong>diseño del puesto de trabajo</strong>.</p><p>La <strong>carga de trabajo</strong> es el conjunto de requerimientos, tanto físicos como mentales, a los que se ve sometida la persona trabajadora a lo largo de su jornada laboral.</p><p>La consecuencia más directa de la carga de trabajo es la <strong>fatiga</strong>: disminución de la capacidad física y mental de una persona después de haber desempeñado una tarea durante un periodo de tiempo determinado.</p>",
+        "entiende": "La carga de trabajo tiene dos partes, física y mental, y las dos acaban en lo mismo: fatiga.",
+        "truco": "Carga <strong>física + mental → fatiga</strong>."
+      },
+      "porque": {
+        "pregunta": "¿De qué derivan los riesgos ergonómicos?",
+        "respuesta": "De la carga de trabajo, las condiciones ambientales y el diseño del puesto de trabajo."
+      },
+      "aplica": [
+        {
+          "caso": "Consecuencia más directa de la carga de trabajo.",
+          "opciones": [
+            "Fatiga",
+            "Estrés"
+          ],
+          "buena": 0,
+          "porque": "Fatiga."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define carga de trabajo y fatiga.",
+        "puntos": [
+          "Riesgos ergonómicos: carga de trabajo, condiciones ambientales, diseño del puesto",
+          "Carga de trabajo: requerimientos físicos y mentales de la jornada",
+          "Fatiga: disminución de la capacidad física y mental tras una tarea"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c19",
+      "n": 19,
+      "titulo": "Carga física y TME",
+      "diapositivas": "11",
+      "gancho": "¿Qué tienen en común una tendinitis, el túnel carpiano y una hernia discal?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d011.jpg",
+        "imgAlt": "Trastornos musculoesqueléticos (diap. 11)",
+        "dice": "<p><strong>La carga física:</strong> son los requerimientos físicos a los que se ve sometida la persona trabajadora.</p><p>Como consecuencia de la carga física pueden aparecer <strong>trastornos musculoesqueléticos (TME)</strong>: alteraciones en músculos, articulaciones, tendones, ligamentos, nervios y huesos.</p><ul><li>Tendinitis del manguito rotador.</li><li>Bursitis, epicondilitis (codo de tenista), epitrocleitis.</li><li>Síndrome del túnel carpiano.</li><li>Tendinitis de flexores y extensores.</li><li>Ciática, hernia discal.</li><li>Bursitis.</li><li>Tendinitis del talón de Aquiles.</li></ul>",
+        "entiende": "Los TME son el «desgaste» del cuerpo por el trabajo: tendinitis, túnel carpiano, hernias…",
+        "truco": "TME ← <strong>carga física</strong> (pregunta 13 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Qué afectan los TME?",
+        "respuesta": "Músculos, articulaciones, tendones, ligamentos, nervios y huesos."
+      },
+      "aplica": [
+        {
+          "caso": "Los TME son consecuencia de…",
+          "opciones": [
+            "La carga física",
+            "La carga mental"
+          ],
+          "buena": 0,
+          "porque": "Pregunta 13 del test."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la carga física y los TME.",
+        "puntos": [
+          "Carga física: requerimientos físicos",
+          "Consecuencia: trastornos musculoesqueléticos (TME)",
+          "Ejemplos: tendinitis, epicondilitis, túnel carpiano, ciática, hernia discal"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c20",
+      "n": 20,
+      "titulo": "La postura de trabajo",
+      "diapositivas": "12",
+      "gancho": "Si trabajas muchas horas sentada, ¿a qué altura pondrías la mesa?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d012.jpg",
+        "imgAlt": "Pautas para el trabajo sentado, de pie y en posturas forzadas (diap. 12)",
+        "dice": "<p>Los <strong>factores de riesgo</strong> que están detrás de la carga física son: las posturas que se deben adoptar durante el trabajo, los <strong>movimientos repetitivos</strong> y la <strong>manipulación de cargas</strong>.</p><p>La realización de tareas, a veces en posturas prolongadas o forzadas, puede ocasionar alteraciones musculoesqueléticas. La persona trabajadora debe seguir unas <strong>pautas en función de la postura que debe adoptar</strong>:</p><ul><li><strong>Trabajo sentado:</strong> mantener la espalda recta, apoyada contra el respaldo de la silla, y evitar torsiones del tronco; nivelar la mesa a la altura de los codos; adecuar la altura de la silla al tipo de trabajo, apoyar completamente los pies en el suelo y mantener las rodillas al mismo nivel que la cadera; cambiar de posición y alternar esta postura con otras.</li><li><strong>Trabajo de pie:</strong> colocar el plano de trabajo y las herramientas en el área de trabajo; alternar esta postura con otras para retrasar el cansancio; adecuar la altura del puesto de trabajo a la actividad que se realiza; trabajar con los brazos a la altura de la cintura para no doblar la espalda o agacharse.</li><li><strong>Posturas forzadas:</strong> evitar las posturas inclinadas y los giramientos del tronco; evitar las posturas estáticas y prolongadas de las extremidades superiores e inferiores; evitar los trabajos con las manos por encima de la cabeza.</li></ul><p>Las enfermedades causadas por posturas forzadas y movimientos repetitivos son la <strong>primera causa de enfermedad profesional</strong> en nuestro país. Los <strong>sobresfuerzos</strong> son la <strong>primera causa de accidentes de trabajo</strong>.</p>",
+        "entiende": "La regla de oro de todas: cambiar de postura. Y que la mesa o el puesto se adapten a ti, no tú a ellos.",
+        "truco": "Factores de la carga física: «<strong>Postura, Repetir, Cargar</strong>». Posturas y repetición = <strong>1.ª enfermedad profesional</strong>; sobresfuerzos = <strong>1.º accidente</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué trabajar de pie con los brazos a la altura de la cintura?",
+        "respuesta": "Para no doblar la espalda o agacharse."
+      },
+      "aplica": [
+        {
+          "caso": "Trabajo sentado: la mesa, a la altura de…",
+          "opciones": [
+            "Los codos",
+            "El pecho"
+          ],
+          "buena": 0,
+          "porque": "Nivelar la mesa a la altura de los codos."
+        },
+        {
+          "caso": "Postura forzada a evitar.",
+          "opciones": [
+            "Trabajar con las manos por encima de la cabeza",
+            "Alternar posturas"
+          ],
+          "buena": 0,
+          "porque": "Alternar es bueno."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los factores de la carga física y las pautas de postura.",
+        "puntos": [
+          "Factores: posturas, movimientos repetitivos, manipulación de cargas",
+          "Sentado: espalda recta y apoyada, mesa a los codos, pies en el suelo, alternar",
+          "De pie: herramientas a mano, alternar, altura adecuada, brazos a la cintura",
+          "Forzadas: evitar inclinarse, girar el tronco, posturas estáticas, manos sobre la cabeza"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

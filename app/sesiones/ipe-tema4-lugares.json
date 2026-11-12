@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "id": "ipe-tema4-lugares",
+  "unidad": "ipe-tema4",
+  "bloque": 1,
+  "titulo": "Los lugares de trabajo",
+  "minutos": 30,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 4 (bloque 1, conceptos 1 a 6, diapositivas 2 y 3). El misterio es la actividad 1 de la profe. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Seis cosas mal en la nave",
+    "caso": "Actividad 1 de la profe: en una empresa se han detectado aberturas y huecos en el suelo desprotegidos, escaleras con barandillas en mal estado, vías de circulación de vehículos sin señalizar, falta de espacio en los puestos de trabajo, suelos mojados y con residuos, y herramientas en el suelo.",
+    "pregunta": "¿Qué riesgo puede provocar cada uno?",
+    "solucion": "Con los riesgos de los lugares de trabajo: huecos y aberturas desprotegidos y barandillas en mal estado → caídas a distinto nivel. Vías de vehículos sin señalizar → atropello con vehículos y choques contra objetos móviles. Falta de espacio → choques contra objetos inmóviles. Suelos mojados y con residuos → caídas al mismo nivel. Herramientas en el suelo → pisadas sobre objetos y caídas al mismo nivel.",
+    "claves": [
+      "Huecos y barandillas → caídas a distinto nivel",
+      "Suelo mojado → caída al mismo nivel",
+      "Herramientas tiradas → pisadas sobre objetos"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema4.c1",
+      "n": 1,
+      "titulo": "Las condiciones de seguridad",
+      "diapositivas": "2",
+      "gancho": "El ruido te deja sordo poco a poco. ¿Qué tipo de daño crees que producen un cable pelado o un suelo mojado?",
+      "profe": {
+        "dice": "<p>Los riesgos derivados de <strong>las condiciones de seguridad</strong> son los causados por elementos que, cuando están presentes, pueden provocar <strong>accidentes de trabajo</strong>.</p><p>Pueden estar originados por:</p><ul><li>los <strong>lugares de trabajo</strong></li><li>los <strong>equipos de trabajo</strong></li><li>las <strong>instalaciones eléctricas</strong></li><li>los <strong>incendios</strong></li></ul>",
+        "entiende": "Estos riesgos acaban en accidente (un golpe, una caída, una descarga, un fuego), no en una enfermedad lenta como el ruido o los químicos del tema anterior.",
+        "truco": "Los 4 orígenes: <strong>Lugar, Equipo, Electricidad, Fuego</strong> → «<strong>L-E-E-F</strong>»."
+      },
+      "porque": {
+        "pregunta": "¿Qué tienen en común los 4 orígenes?",
+        "respuesta": "Que son elementos que, cuando están presentes, pueden provocar accidentes de trabajo."
+      },
+      "aplica": [
+        {
+          "caso": "Un incendio en el almacén.",
+          "opciones": [
+            "Condiciones de seguridad",
+            "Riesgo ergonómico"
+          ],
+          "buena": 0,
+          "porque": "Incendios: uno de los 4 orígenes."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son y de qué se originan?",
+        "puntos": [
+          "Elementos que pueden provocar accidentes de trabajo",
+          "Lugares de trabajo · equipos de trabajo",
+          "Instalaciones eléctricas · incendios"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c2",
+      "n": 2,
+      "titulo": "Los lugares de trabajo",
+      "diapositivas": "2",
+      "gancho": "¿Es lugar de trabajo el patio por el que pasas para llegar al almacén?",
+      "profe": {
+        "dice": "<p><strong>Lugares de trabajo:</strong> son las áreas del centro de trabajo, edificadas o no, en las que la persona trabajadora debe permanecer o a las que ha de acceder para cualquier tarea que tenga que ver con su trabajo.</p><p><strong>Los lugares de trabajo pueden ser fuente de los siguientes riesgos laborales:</strong></p><ul><li>caídas al mismo y a distinto nivel</li><li>pisadas sobre objetos</li><li>choques contra objetos inmóviles</li><li>incendios y explosiones</li><li>choques contra objetos móviles</li><li>atropello con vehículos</li><li>caídas de objetos por derrumbamiento o desplome</li></ul><p>El <strong>Real Decreto 486/1997</strong> establece las disposiciones mínimas de seguridad y salud en los lugares de trabajo.</p>",
+        "entiende": "El patio, el almacén o el aparcamiento también son lugar de trabajo («edificadas o no»). Casi todos sus riesgos son caídas, golpes y atropellos.",
+        "truco": "Lugares de trabajo = <strong>RD 486/1997</strong> («486: el sitio»)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué «edificadas o no»?",
+        "respuesta": "Porque también cuentan las zonas al aire libre en las que tienes que estar o a las que tienes que ir por tu trabajo."
+      },
+      "aplica": [
+        {
+          "caso": "Norma de los lugares de trabajo.",
+          "opciones": [
+            "RD 486/1997",
+            "RD 614/2001"
+          ],
+          "buena": 0,
+          "porque": "614/2001 es el riesgo eléctrico."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define lugar de trabajo y di sus riesgos.",
+        "puntos": [
+          "Áreas del centro, edificadas o no, donde estás o a las que accedes",
+          "Caídas al mismo y a distinto nivel · pisadas sobre objetos",
+          "Choques contra objetos inmóviles y móviles · atropellos",
+          "Incendios y explosiones · caídas de objetos por derrumbamiento"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c3",
+      "n": 3,
+      "titulo": "Espacios de trabajo",
+      "diapositivas": "3",
+      "gancho": "¿Cuánto espacio crees que te corresponde, como mínimo, en tu puesto?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d003.jpg",
+        "imgAlt": "Condiciones mínimas de los lugares de trabajo (diap. 3)",
+        "dice": "<p>Los <strong>espacios de trabajo</strong> y las <strong>zonas peligrosas</strong> deben tener unas dimensiones que permitan la realización de la actividad sin peligro alguno y en condiciones ergonómicas adecuadas:</p><ul><li><strong>3 m</strong> de altura desde el piso hasta el techo. No obstante, en locales comerciales, de servicios, oficinas y despachos, la altura podrá reducirse a <strong>2,5 m</strong>.</li><li><strong>2 m<sup>2</sup></strong> de superficie libre por cada persona trabajadora.</li><li><strong>10 m<sup>3</sup></strong> no ocupados por cada persona trabajadora.</li></ul><p>Las máquinas y los equipos de trabajo se deben distribuir de manera que no generen riesgos.</p>",
+        "entiende": "Tres números para que quepas: altura (3 m, o 2,5 en oficinas), suelo libre (2 m²) y aire libre (10 m³) por persona.",
+        "truco": "«<strong>3 de alto, 2 de suelo, 10 de aire</strong>» (m, m², m³)."
+      },
+      "porque": {
+        "pregunta": "¿Dónde se permite bajar la altura a 2,5 m?",
+        "respuesta": "En locales comerciales, de servicios, oficinas y despachos."
+      },
+      "aplica": [
+        {
+          "caso": "Volumen no ocupado por trabajador.",
+          "opciones": [
+            "10 m³",
+            "2 m²"
+          ],
+          "buena": 0,
+          "porque": "2 m² es la superficie."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las medidas mínimas.",
+        "puntos": [
+          "3 m de altura (2,5 m en oficinas, comercios)",
+          "2 m² de superficie libre por trabajador",
+          "10 m³ no ocupados por trabajador",
+          "Máquinas distribuidas sin generar riesgos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c4",
+      "n": 4,
+      "titulo": "Suelos, huecos y barandillas",
+      "diapositivas": "3",
+      "gancho": "¿A partir de qué altura crees que es obligatorio proteger un hueco en la pared?",
+      "profe": {
+        "dice": "<ul><li>Los <strong>suelos</strong> han de ser fijos, estables, no resbaladizos y no tener irregularidades ni pendientes peligrosas.</li><li>Las <strong>aberturas</strong> en los suelos o las paredes y los <strong>desniveles</strong> que supongan riesgo de caída deben protegerse mediante barandillas u otros sistemas de protección y seguridad equivalentes. Los <strong>huecos</strong> de las paredes se protegerán obligatoriamente si la altura de <strong>caída es superior a 2 m</strong>.</li><li>Las <strong>barandillas</strong> de protección han de ser de materiales rígidos y resistentes, tener una altura mínima de <strong>90 cm</strong> y, además, contar con una protección que impida el deslizamiento por debajo de ellas.</li></ul>",
+        "entiende": "La barandilla tiene que llegarte por la cintura (90 cm) y tapar también por abajo, para que nadie se cuele por debajo.",
+        "truco": "Hueco obligatorio <strong>&gt; 2 m</strong> · barandilla <strong>≥ 90 cm</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la barandilla necesita protección por abajo?",
+        "respuesta": "Para impedir el deslizamiento por debajo de ella."
+      },
+      "aplica": [
+        {
+          "caso": "Altura mínima de una barandilla.",
+          "opciones": [
+            "90 cm",
+            "60 cm"
+          ],
+          "buena": 0,
+          "porque": "90 cm."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las condiciones de suelos, aberturas y barandillas.",
+        "puntos": [
+          "Suelos fijos, estables, no resbaladizos, sin irregularidades",
+          "Aberturas y desniveles con barandillas u otros sistemas",
+          "Huecos de pared: obligatorios si la caída es de más de 2 m",
+          "Barandillas rígidas, mínimo 90 cm y con protección inferior"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c5",
+      "n": 5,
+      "titulo": "Escaleras, rampas y vías",
+      "diapositivas": "3",
+      "gancho": "¿Una rampa larga debe ser más o menos inclinada que una corta?",
+      "profe": {
+        "dice": "<ul><li>Las <strong>escaleras</strong> deben tener una anchura mínima de <strong>1 m</strong>, una huella de entre <strong>26 y 36 cm</strong>, y una contrahuella de entre <strong>13 y 23 cm</strong>.</li><li>Las <strong>rampas</strong> tendrán una pendiente máxima del <strong>12 %</strong> cuando alcancen una longitud de hasta 3 m, del <strong>10 %</strong> cuando tengan una longitud de hasta 10 m y del <strong>8 %</strong> en longitudes superiores a 10 m.</li><li>Las vías de circulación tienen que ser utilizadas conforme a su uso previsto y con total seguridad para quienes circulen por ellas.</li><li>Las <strong>puertas exteriores</strong> deben tener una anchura mínima de <strong>80 cm</strong> y los <strong>pasillos</strong>, de <strong>1 m</strong> como mínimo.</li><li>El trazado de las vías de circulación ha de estar <strong>señalizado</strong> con claridad.</li></ul>",
+        "entiende": "Cuanto más larga es la rampa, menos inclinada tiene que ser (12 → 10 → 8 %), porque subirla cansa más.",
+        "truco": "Rampa: «<strong>3 m → 12 %, 10 m → 10 %, más → 8 %</strong>». Puerta <strong>80 cm</strong>, pasillo y escalera <strong>1 m</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué baja la pendiente máxima con la longitud?",
+        "respuesta": "Porque cuanto más larga es, más cuesta recorrerla: 12 % hasta 3 m, 10 % hasta 10 m y 8 % si es más larga."
+      },
+      "aplica": [
+        {
+          "caso": "Anchura mínima de las puertas exteriores.",
+          "opciones": [
+            "80 cm",
+            "1 m"
+          ],
+          "buena": 0,
+          "porque": "1 m es para pasillos y escaleras."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las medidas de escaleras, rampas y vías.",
+        "puntos": [
+          "Escaleras: 1 m de ancho; huella 26-36 cm; contrahuella 13-23 cm",
+          "Rampas: 12 % (≤3 m), 10 % (≤10 m), 8 % (>10 m)",
+          "Puertas exteriores 80 cm; pasillos 1 m",
+          "Vías de circulación señalizadas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c6",
+      "n": 6,
+      "titulo": "Orden, limpieza e iluminación",
+      "diapositivas": "3",
+      "gancho": "¿Cuánta más luz crees que necesita un trabajo de precisión que uno sencillo?",
+      "profe": {
+        "dice": "<ul><li>El <strong>orden</strong>, la <strong>limpieza</strong> y el <strong>mantenimiento</strong> son básicos para evitar accidentes por caídas y golpes.</li><li>Las zonas de paso, las salidas y las vías de circulación, y en especial las salidas previstas para la evacuación en caso de emergencia, deben permanecer libres de obstáculos.</li><li>Los materiales, herramientas y utensilios que se encuentren en cada puesto de trabajo deben colocarse ordenadamente en los soportes destinados a ellos (bandejas, cajas, estanterías, etc.).</li><li>Los apilamientos de materiales deben ser estables y seguros.</li></ul><p>La <strong>iluminación</strong> debe adaptarse a las características y exigencias de las tareas que se desarrollen. En los lugares de trabajo será, como mínimo, de <strong>100 lux</strong> para tareas con exigencias visuales bajas, <strong>200 lux</strong> para medias, <strong>500 lux</strong> para altas y <strong>1000</strong> para muy altas. En las zonas comunes de uso ocasional habrá un mínimo de 50 lux y 100 lux en las zonas de uso habitual. En las vías de circulación habrá un mínimo 25 lux para de uso ocasional y 50 lux paras las de uso habitual.</p>",
+        "entiende": "Una herramienta tirada en el suelo o una salida bloqueada son accidentes esperando. Y cuanto más fina es la tarea, más luz necesita.",
+        "truco": "Luz en el puesto: <strong>100 · 200 · 500 · 1000</strong> (baja, media, alta, muy alta)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué las salidas de evacuación deben estar libres?",
+        "respuesta": "Porque las zonas de paso, las salidas y las vías de circulación, y en especial las de evacuación, deben permanecer libres de obstáculos."
+      },
+      "aplica": [
+        {
+          "caso": "Tarea con exigencias visuales altas.",
+          "opciones": [
+            "500 lux",
+            "100 lux"
+          ],
+          "buena": 0,
+          "porque": "100 · 200 · 500 · 1000."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué dice la norma sobre orden e iluminación?",
+        "puntos": [
+          "Orden, limpieza y mantenimiento evitan caídas y golpes",
+          "Salidas y vías libres; materiales en sus soportes; apilamientos estables",
+          "Lux en el puesto: 100, 200, 500, 1000",
+          "Zonas comunes 50/100 lux; vías de circulación 25/50 lux"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

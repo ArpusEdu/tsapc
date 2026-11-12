@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "ipe-tema4-incendios",
+  "unidad": "ipe-tema4",
+  "bloque": 4,
+  "titulo": "Los incendios",
+  "minutos": 15,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 4 (bloque 4, conceptos 16 y 17, diapositiva 10). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Tres fuegos, tres extintores",
+    "caso": "En el mismo día hay tres conatos de incendio en la empresa: una papelera con papeles ardiendo, un bidón de gasolina en el taller y una freidora en la cocina del comedor.",
+    "pregunta": "¿Qué clase de fuego es cada uno y qué agente usarías?",
+    "solucion": "La papelera es clase A (sólidos con brasa): el agua pulverizada es excelente. La gasolina es clase B (líquidos inflamables): el polvo convencional BC es excelente. La freidora es clase F (grasas y aceites para cocinar): productos específicos para fuegos de grasas y aceites. El polvo polivalente ABC sirve para A, B y C, pero no para la F.",
+    "claves": [
+      "A sólidos → agua pulverizada",
+      "B líquidos → polvo BC",
+      "F grasas de cocina → producto específico"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema4.c16",
+      "n": 16,
+      "titulo": "Productos de los incendios",
+      "diapositivas": "10",
+      "gancho": "En un incendio, ¿crees que muere más gente por las llamas o por otra cosa?",
+      "profe": {
+        "dice": "<p>Los <strong>principales productos de los incendios</strong> y los <strong>efectos</strong> que pueden tener sobre las personas son:</p><ul><li><strong>gases tóxicos</strong>: principal causa de muerte en los incendios;</li><li><strong>humos y gases calientes</strong>: pueden producir quemaduras externas o internas por inhalación y dificultar la visión y la evacuación de las personas;</li><li><strong>calor, producido por las llamas</strong>: puede originar deshidratación y bloqueo respiratorio.</li></ul>",
+        "entiende": "En un incendio mata más el aire que respiras que las propias llamas.",
+        "truco": "Lo que más mata: <strong>gases tóxicos</strong> (pregunta 8 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué los humos dificultan escapar?",
+        "respuesta": "Porque, además de quemar por inhalación, dificultan la visión y la evacuación de las personas."
+      },
+      "aplica": [
+        {
+          "caso": "Principal causa de muerte en los incendios.",
+          "opciones": [
+            "Gases tóxicos",
+            "Calor"
+          ],
+          "buena": 0,
+          "porque": "Pregunta 8 del test."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los productos de los incendios y sus efectos.",
+        "puntos": [
+          "Gases tóxicos: principal causa de muerte",
+          "Humos y gases calientes: quemaduras externas o internas, menos visión",
+          "Calor: deshidratación y bloqueo respiratorio"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c17",
+      "n": 17,
+      "titulo": "Clases de fuego y extintores",
+      "diapositivas": "10",
+      "gancho": "¿Apagarías con agua una sartén de aceite ardiendo?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d010.jpg",
+        "imgAlt": "Clases de fuego y agentes extintores (diap. 10)",
+        "dice": "<p>Según el tipo de combustible, existen <strong>cinco tipos de fuego</strong>, y para cada uno existe un agente <strong>extintor adecuado</strong>:</p><ul><li><strong>A</strong> Sólidos con brasa (papel y madera)</li><li><strong>B</strong> Líquidos inflamables y sólidos licuables (gasolina y grasa)</li><li><strong>C</strong> Gases inflamables (propano, butano y gas ciudad)</li><li><strong>D</strong> Metales (magnesio, sodio, potasio...)</li><li><strong>F</strong> Grasas y aceites para cocinar</li></ul><div class=\"tw\"><table><thead><tr><th>Agente extintor</th><th>Clases de fuego</th></tr></thead><tbody><tr><td>Agua a chorro</td><td>A adecuado</td></tr><tr><td>Agua pulverizada</td><td>A excelente; B aceptable</td></tr><tr><td>Espuma física</td><td>A adecuado; B adecuado</td></tr><tr><td>Polvo convencional BC</td><td><strong>B excelente</strong>; C adecuado</td></tr><tr><td>Polvo polivalente ABC</td><td>A adecuado; B adecuado; C adecuado</td></tr><tr><td>Anhídrido carbónico</td><td>A aceptable; B aceptable</td></tr><tr><td>Polvos y productos específicos para metales</td><td>D adecuado</td></tr><tr><td>Productos específicos para fuegos de grasas y aceites para cocinar</td><td>F adecuado</td></tr></tbody></table></div>",
+        "entiende": "Cada combustible pide su extintor. El polvo polivalente ABC vale para casi todo; el agua solo para los sólidos (clase A).",
+        "truco": "«<strong>A</strong>rde con brasa, <strong>B</strong>ebe gasolina, <strong>C</strong>ocina de gas, <strong>D</strong>uro metal, <strong>F</strong>reidora». Clase B: el mejor, <strong>polvo BC</strong> (pregunta 11 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay agentes distintos?",
+        "respuesta": "Porque según el tipo de combustible hay cinco tipos de fuego, y para cada uno existe un agente extintor adecuado."
+      },
+      "aplica": [
+        {
+          "caso": "Mejor agente para la clase B.",
+          "opciones": [
+            "Polvo BC",
+            "Agua a chorro"
+          ],
+          "buena": 0,
+          "porque": "Excelente en B."
+        },
+        {
+          "caso": "Magnesio ardiendo.",
+          "opciones": [
+            "Clase D: productos específicos para metales",
+            "Clase A: agua"
+          ],
+          "buena": 0,
+          "porque": "Metales."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 5 clases de fuego y su agente.",
+        "puntos": [
+          "A sólidos con brasa: agua pulverizada excelente",
+          "B líquidos inflamables: polvo BC excelente",
+          "C gases inflamables: polvo BC o ABC",
+          "D metales y F grasas de cocina: productos específicos"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Los extintores y la emergencia en el laboratorio, en Lab 2.",
+          "ruta": "#/sesion/lab2-emergencia"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

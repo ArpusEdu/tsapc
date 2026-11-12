@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "id": "ipe-tema4-maquinas",
+  "unidad": "ipe-tema4",
+  "bloque": 2,
+  "titulo": "Máquinas, herramientas y nuevas tecnologías",
+  "minutos": 30,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 4 (bloque 2, conceptos 7 a 11, diapositivas 4 a 6). El misterio es la actividad 3a de la profe. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La mano bajo la protección",
+    "caso": "Actividad 3a de la profe: en una fábrica de cartón, una trabajadora sufre el aplastamiento del brazo izquierdo. Para desatascar la máquina, introdujo la mano por debajo de la protección y el brazo quedó atrapado entre dos rodillos que prensan el cartón.",
+    "pregunta": "¿Qué riesgo es y qué falló en las medidas preventivas?",
+    "solucion": "Es un riesgo mecánico de atrapamiento por partes móviles de la máquina (daños: aplastamientos y amputaciones). Falló el resguardo, que no impidió meter la mano por debajo, y no se usó la función de parada, que toda máquina debe tener y se usa en caso de necesidad. También fallaron las medidas no integradas: formación y métodos apropiados para la tarea (desatascar con la máquina en marcha).",
+    "claves": [
+      "Atrapamiento: riesgo mecánico",
+      "Resguardo y función de parada",
+      "Formación y método apropiado"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema4.c7",
+      "n": 7,
+      "titulo": "Equipo de trabajo y máquina",
+      "diapositivas": "4",
+      "gancho": "Un martillo y un taladro eléctrico. ¿Los dos son máquinas?",
+      "profe": {
+        "dice": "<p>Según el <strong>Real Decreto 1215/1997</strong>, un <strong>equipo de trabajo</strong> es cualquier máquina, aparato, instrumento o instalación utilizado en el trabajo.</p><p><strong>Máquina:</strong> conjunto de partes o componentes vinculados entre sí, de los cuales al menos uno es móvil, asociados para una aplicación determinada, provisto de un sistema de accionamiento distinto de la fuerza humana o animal.</p>",
+        "entiende": "Un martillo es un equipo de trabajo, pero no una máquina: lo mueve tu fuerza. Un taladro eléctrico sí es una máquina.",
+        "truco": "Máquina = <strong>pieza que se mueve + motor que no eres tú</strong>. Equipos = <strong>RD 1215/1997</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué hace falta para que algo sea una máquina?",
+        "respuesta": "Al menos una parte móvil y un sistema de accionamiento distinto de la fuerza humana o animal."
+      },
+      "aplica": [
+        {
+          "caso": "Norma de los equipos de trabajo.",
+          "opciones": [
+            "RD 1215/1997",
+            "RD 486/1997"
+          ],
+          "buena": 0,
+          "porque": "486 es la de lugares."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define equipo de trabajo y máquina.",
+        "puntos": [
+          "Equipo: cualquier máquina, aparato, instrumento o instalación (RD 1215/1997)",
+          "Máquina: partes vinculadas, al menos una móvil",
+          "Con accionamiento distinto de la fuerza humana o animal"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c8",
+      "n": 8,
+      "titulo": "Riesgos de las máquinas",
+      "diapositivas": "4",
+      "gancho": "¿Qué tres cosas «mecánicas» pueden pasarte con una máquina en marcha?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d004.jpg",
+        "imgAlt": "Riesgos del uso de máquinas (diap. 4)",
+        "dice": "<p>Las máquinas pueden generar una serie de riesgos para la seguridad y salud de las personas trabajadoras. Algunos de los más frecuentes son:</p><div class=\"tw\"><table><thead><tr><th>Riesgo</th><th>Daños</th></tr></thead><tbody><tr><td><strong>Mecánicos: atrapamientos</strong> por partes móviles de las máquinas</td><td>lesiones por aplastamientos y amputaciones</td></tr><tr><td><strong>Mecánicos: cortes y golpes</strong></td><td>lesiones, heridas y amputaciones</td></tr><tr><td><strong>Mecánicos: proyección de partículas</strong> por la rotura de la máquina o proyección de materiales utilizados</td><td>lesiones en la piel o en los ojos</td></tr><tr><td><strong>Eléctricos</strong></td><td>electrización, tetanización, quemaduras, etc.</td></tr><tr><td><strong>Ruidos</strong></td><td>pérdida de audición, estrés, fatiga, etc.</td></tr><tr><td><strong>Térmicos</strong></td><td>quemaduras</td></tr><tr><td><strong>Vibraciones</strong></td><td>trastornos musculoesqueléticos</td></tr><tr><td><strong>Radiaciones</strong></td><td>daños a la vista, a los tejidos, cáncer, cataratas, etc.</td></tr><tr><td><strong>Ergonómicos</strong>: realización de posturas forzadas y movimientos repetitivos</td><td>trastornos musculoesqueléticos</td></tr></tbody></table></div>",
+        "entiende": "Los mecánicos (atrapamientos, cortes y golpes, proyección de partículas) son los típicos de las máquinas; los demás ya los conoces del tema anterior.",
+        "truco": "Mecánicos: «<strong>Pillar, Cortar, Saltar</strong>» (atrapamiento, cortes y golpes, partículas)."
+      },
+      "porque": {
+        "pregunta": "¿Qué daño produce la proyección de partículas?",
+        "respuesta": "Lesiones en la piel o en los ojos."
+      },
+      "aplica": [
+        {
+          "caso": "Principales riesgos de las máquinas.",
+          "opciones": [
+            "Mecánicos",
+            "Psicosociales"
+          ],
+          "buena": 0,
+          "porque": "Pregunta 3 del test."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los riesgos de las máquinas.",
+        "puntos": [
+          "Mecánicos: atrapamientos, cortes y golpes, proyección de partículas",
+          "Eléctricos, ruidos, térmicos",
+          "Vibraciones, radiaciones",
+          "Ergonómicos: posturas forzadas y movimientos repetitivos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c9",
+      "n": 9,
+      "titulo": "Medidas en las máquinas",
+      "diapositivas": "5",
+      "gancho": "¿Qué es mejor: formar muy bien al trabajador o comprar una máquina segura?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d005.jpg",
+        "imgAlt": "Medidas preventivas de máquinas y herramientas (diap. 5)",
+        "dice": "<p>La principal medida de prevención de los riesgos derivados del uso de máquinas consiste en adquirir <strong>máquinas seguras</strong>, pero para protegerse contra los riesgos conviene adoptar <strong>medidas preventivas</strong>:</p><p><strong>Integradas en la máquina</strong></p><ul><li><strong>Sistemas de protección</strong><ul><li><strong>Resguardos.</strong> Elementos de la máquina que garantizan la protección de la persona trabajadora (carcasa, pantalla, puerta, cubierta, etc.).</li><li><strong>Dispositivos de seguridad.</strong> Elementos distintos del resguardo que eliminan o reducen el riesgo, solos o asociados a un mando.</li></ul></li><li><strong>Advertencias</strong><ul><li><strong>Manuales de instrucciones.</strong> Especificaciones técnicas del fabricante sobre la instalación, la utilización y el mantenimiento.</li><li><strong>Señalización.</strong> De los posibles riesgos o de los equipos de protección que hay que utilizar para desarrollar la actividad profesional.</li></ul></li><li><strong>Dispositivos suplementarios</strong><ul><li><strong>Función de parada.</strong> Todas las máquinas deben tener habilitada esta funcionalidad. Se hará uso de ella en caso de necesidad, por motivos de seguridad o por la falta de funcionamiento de las protecciones.</li></ul></li></ul><p><strong>No integradas en la máquina</strong></p><ul><li>Informar y dar formación a las personas trabajadoras.</li><li>Utilizar los equipos de protección individual.</li><li>Aplicar los métodos apropiados para el desarrollo de las tareas.</li><li>Realizar el mantenimiento periódicamente.</li></ul>",
+        "entiende": "Lo mejor es comprar una máquina segura. Lo que va en la propia máquina (resguardos, avisos, parada) protege siempre; lo que no va en ella depende de las personas (formación, EPI, método, mantenimiento).",
+        "truco": "Integradas: «<strong>Protege, Avisa, Para</strong>». Resguardo = <strong>sistema de protección</strong> (pregunta 4 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia un resguardo de un dispositivo de seguridad?",
+        "respuesta": "El resguardo es un elemento que protege físicamente (carcasa, pantalla, puerta…); el dispositivo de seguridad es otro elemento que elimina o reduce el riesgo, solo o asociado a un mando."
+      },
+      "aplica": [
+        {
+          "caso": "Utilizar los EPI.",
+          "opciones": [
+            "Medida no integrada",
+            "Sistema de protección"
+          ],
+          "buena": 0,
+          "porque": "No va en la máquina."
+        }
+      ],
+      "recuerda": {
+        "pide": "Clasifica las medidas preventivas de las máquinas.",
+        "puntos": [
+          "Principal: adquirir máquinas seguras",
+          "Integradas: sistemas de protección (resguardos y dispositivos de seguridad)",
+          "Advertencias (manuales, señalización) y función de parada",
+          "No integradas: formación, EPI, métodos apropiados, mantenimiento"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c10",
+      "n": 10,
+      "titulo": "Las herramientas",
+      "diapositivas": "5",
+      "gancho": "Usar un destornillador como palanca, ¿qué tiene de malo?",
+      "profe": {
+        "dice": "<p>Los trabajos de mantenimiento y reparación requieren del uso de herramientas, que pueden ser <strong>manuales</strong> (accionadas por la fuerza humana: destornillador, martillo, alicates, etc.) o <strong>portátiles</strong> (con accionamiento eléctrico, neumático o hidráulico).</p><ul><li><strong>Riesgos:</strong> golpes, cortes, pinchazos, proyección de fragmentos o partículas, trastornos musculoesqueléticos, contacto eléctrico.</li><li><strong>Factores de riesgo:</strong> la utilización de las herramientas de forma inadecuada o para un uso diferente del previsto en su diseño; el empleo de herramientas defectuosas o de baja calidad; la falta de mantenimiento; el almacenamiento o el transporte incorrectos.</li><li><strong>Medidas preventivas:</strong> adquirir herramientas con marcado CE; utilizar herramientas diseñadas para su uso; mantener en buen estado las herramientas; transporte adecuado y seguro, protegiendo los filos y las puntas; utilizar equipos de protección cuando sea necesario.</li></ul>",
+        "entiende": "Usar un destornillador como palanca o una herramienta rota es lo que causa el accidente: cada factor de riesgo tiene su medida preventiva enfrente.",
+        "truco": "Manuales = <strong>tu fuerza</strong>; portátiles = <strong>eléctrico, neumático o hidráulico</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que proteger filos y puntas al transportarlas?",
+        "respuesta": "Porque el almacenamiento o el transporte incorrectos son un factor de riesgo (cortes, pinchazos)."
+      },
+      "aplica": [
+        {
+          "caso": "Herramienta con accionamiento neumático.",
+          "opciones": [
+            "Portátil",
+            "Manual"
+          ],
+          "buena": 0,
+          "porque": "Manual = fuerza humana."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los riesgos de las herramientas.",
+        "puntos": [
+          "Manuales (fuerza humana) o portátiles (eléctrico, neumático, hidráulico)",
+          "Riesgos: golpes, cortes, pinchazos, partículas, TME, contacto eléctrico",
+          "Factores: uso inadecuado, defectuosas, sin mantenimiento, mal transporte",
+          "Medidas: marcado CE, uso previsto, buen estado, transporte seguro, EPI"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c11",
+      "n": 11,
+      "titulo": "Nuevas tecnologías",
+      "diapositivas": "6",
+      "gancho": "Un exoesqueleto te ayuda a cargar peso. ¿Puede también hacerte daño?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d006.jpg",
+        "imgAlt": "Robots, drones y exoesqueletos (diap. 6)",
+        "dice": "<p>El uso de las nuevas tecnologías está cambiando la forma de trabajar y los entornos de trabajo. Su aplicación supone el uso de <strong>nuevos equipos de trabajo</strong> para reducir los accidentes laborales y mejorar las condiciones de seguridad y salud de las personas, reduciendo los trastornos musculoesqueléticos, al eliminar la manipulación de cargas, las tareas repetitivas, las posturas estáticas y las posturas forzadas.</p><div class=\"tw\"><table><thead><tr><th></th><th>Características</th><th>Riesgos de seguridad</th></tr></thead><tbody><tr><td><strong>Robots</strong></td><td>Son mecanismos programables en dos o más ejes que tienen cierto grado de autonomía, se mueven dentro de su entorno operativo y ejecutan las actividades previstas.</td><td>Golpes y atrapamientos con partes móviles. Contacto eléctrico con partes activas. Proyección de partículas (chispas, salpicaduras). Quemaduras (contacto con partes calientes).</td></tr><tr><td><strong>Drones</strong></td><td>Son aeronaves no tripuladas dirigidas a distancia.</td><td>Caídas al mismo o a diferente nivel por las irregularidades del terreno. Golpes, cortes y atrapamientos con las hélices. Contacto eléctrico, incendio. Explosión de las baterías y proyección de partículas por el movimiento de las hélices.</td></tr><tr><td><strong>Exoesqueletos</strong></td><td>Dispositivos externos portátiles que se colocan sobre el cuerpo del usuario con la finalidad de aumentar sus capacidades y reducir la carga física.</td><td>Caídas y tropiezos, derivados de su uso. Rozaduras y compresiones en los puntos de contacto con el cuerpo si no están adaptados a las características de la persona.</td></tr></tbody></table></div><p>Aun así, estos nuevos equipos, pueden estar en el origen de otros riesgos, que tienen que ver con los procesos que desarrollan.</p>",
+        "entiende": "Las nuevas tecnologías quitan riesgos (cargar peso, repetir movimientos), pero traen otros nuevos propios del aparato.",
+        "truco": "<strong>R-D-E</strong>: Robot (pilla y quema), Dron (hélices y batería), Exoesqueleto (roza y tropieza)."
+      },
+      "porque": {
+        "pregunta": "¿Cómo reducen los TME?",
+        "respuesta": "Eliminando la manipulación de cargas, las tareas repetitivas, las posturas estáticas y las forzadas."
+      },
+      "aplica": [
+        {
+          "caso": "Explosión de las baterías.",
+          "opciones": [
+            "Drones",
+            "Exoesqueletos"
+          ],
+          "buena": 0,
+          "porque": "Drones."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los nuevos equipos y un riesgo de cada uno.",
+        "puntos": [
+          "Reducen accidentes y TME",
+          "Robots: golpes y atrapamientos, contacto eléctrico, quemaduras",
+          "Drones: hélices, caídas, incendio, baterías",
+          "Exoesqueletos: caídas y tropiezos, rozaduras y compresiones"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

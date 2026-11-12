@@ -1,0 +1,196 @@
+{
+  "schema": 1,
+  "id": "ipe-tema4-electrico",
+  "unidad": "ipe-tema4",
+  "bloque": 3,
+  "titulo": "El riesgo eléctrico",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 4 (bloque 3, conceptos 12 a 15, diapositivas 7 a 9). El misterio es la actividad 6 de la profe. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Sin cortar la corriente",
+    "caso": "Actividad 6 de la profe: un técnico electricista revisa la instalación de una empresa. Unos cables dan un chispazo y su camiseta empieza a arder. Había pedido que cortaran la corriente, pero la empresa le dijo que no era posible. Además, no tenía ningún equipamiento de seguridad.",
+    "pregunta": "¿Qué actuaciones, desde el punto de vista preventivo, provocaron el accidente?",
+    "solucion": "Se trabajó con tensión cuando el trabajo debía hacerse sin tensión siempre que sea posible, aplicando las cinco reglas de oro: desconectar todas las fuentes, prevenir realimentaciones, verificar la ausencia de tensión, poner a tierra y en cortocircuito y señalizar. Tampoco tenía equipos de protección individual (equipos y herramientas aislantes). El chispazo es el efecto del arco eléctrico: quemaduras sin paso de la corriente por el cuerpo.",
+    "claves": [
+      "Sin tensión siempre que sea posible",
+      "5 reglas de oro",
+      "EPI aislantes"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema4.c12",
+      "n": 12,
+      "titulo": "Riesgo eléctrico y efectos",
+      "diapositivas": "7",
+      "gancho": "Unos pocos miliamperios dan cosquillas. ¿Qué crees que pasa cuando la corriente atraviesa el corazón?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d007.jpg",
+        "imgAlt": "Efectos de la electricidad (diap. 7)",
+        "dice": "<p>Según el <strong>Real Decreto 614/2001</strong>, <strong>riesgo eléctrico</strong> es el originado por la corriente eléctrica. Esta definición <strong>incluye los riesgos de</strong>: choque eléctrico por contacto directo, quemaduras, caídas o golpes incendios o explosiones.</p><p><strong>Por el paso de la corriente eléctrica por el cuerpo</strong> · <strong>Directos</strong></p><ul><li><strong>Umbral de percepción</strong>. Se producen cosquilleos. 1-3 mA</li><li><strong>Electrización</strong>. Se producen movimientos reflejos. 3-10 mA</li><li><strong>Tetanización muscular</strong>. La corriente anula la capacidad de control muscular. 10 mA</li><li><strong>Parada respiratoria</strong>. La corriente atraviesa el cerebro. 25 mA</li><li><strong>Asfixia</strong>. La corriente atraviesa los centros nerviosos. Produce el paro respiratorio y quemaduras. 25-35 mA</li><li><strong>Fibrilación ventricular</strong>. La corriente atraviesa el corazón. Consiste en el movimiento anárquico de este órgano. 60-75 mA</li></ul><p><strong>Indirectos:</strong> golpes contra objetos, caídas, etc. <strong>Sin paso de la corriente por el cuerpo, por arco eléctrico:</strong> quemaduras por exposición a arco eléctrico.</p>",
+        "entiende": "Cuanta más intensidad, más grave: primero cosquillas, luego te quedas pegado (tetanización), luego dejas de respirar y lo peor, el corazón se descontrola (fibrilación).",
+        "truco": "«<strong>Cosquilla, Reflejo, Pegado, Sin aire, Asfixia, Corazón loco</strong>». Lo más grave: <strong>fibrilación ventricular</strong> (pregunta 5 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la tetanización es peligrosa?",
+        "respuesta": "Porque la corriente anula la capacidad de control muscular: la persona no puede soltarse."
+      },
+      "aplica": [
+        {
+          "caso": "El daño más grave.",
+          "opciones": [
+            "Fibrilación ventricular",
+            "Tetanización"
+          ],
+          "buena": 0,
+          "porque": "60-75 mA, la corriente atraviesa el corazón."
+        },
+        {
+          "caso": "Quemadura por un chispazo sin tocar el cable.",
+          "opciones": [
+            "Arco eléctrico",
+            "Electrización"
+          ],
+          "buena": 0,
+          "porque": "Sin paso de corriente por el cuerpo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los efectos de la electricidad.",
+        "puntos": [
+          "Riesgo eléctrico: el originado por la corriente eléctrica (RD 614/2001)",
+          "Directos: percepción 1-3, electrización 3-10, tetanización 10 mA",
+          "Parada respiratoria 25, asfixia 25-35, fibrilación 60-75 mA",
+          "Indirectos (golpes, caídas) y arco eléctrico (quemaduras)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c13",
+      "n": 13,
+      "titulo": "Factores que influyen",
+      "diapositivas": "7 y 8",
+      "gancho": "¿Por qué crees que es más peligroso tocar un enchufe con las manos mojadas?",
+      "profe": {
+        "dice": "<p>Los efectos de la corriente eléctrica dependen de su intensidad: intensidad (I) = tensión (V) / resistencia (R)</p><p>Los <strong>factores</strong> que influyen en los efectos del paso de la electricidad por el cuerpo son:</p><ul><li>la <strong>intensidad</strong> de la corriente (a mayor intensidad, lesiones más graves);</li><li>la <strong>duración</strong> del contacto eléctrico (a más duración, mayores daños);</li><li>la <strong>resistencia</strong> que el cuerpo humano opone a la corriente eléctrica;</li><li>el <strong>recorrido</strong> a través del organismo (los efectos son mucho más graves si en el trayecto de la corriente se encuentran órganos vitales, como los pulmones, el corazón o el cerebro);</li><li>la <strong>frecuencia</strong> (corriente continua o alterna).</li></ul>",
+        "entiende": "Si tu resistencia baja (por ejemplo, con las manos mojadas), pasa más intensidad con la misma tensión: I = V / R.",
+        "truco": "«<strong>I-D-R-R-F</strong>»: Intensidad, Duración, Resistencia, Recorrido, Frecuencia."
+      },
+      "porque": {
+        "pregunta": "¿Por qué importa el recorrido?",
+        "respuesta": "Porque los efectos son mucho más graves si en el trayecto están órganos vitales: pulmones, corazón o cerebro."
+      },
+      "aplica": [
+        {
+          "caso": "I = …",
+          "opciones": [
+            "V / R",
+            "V × R"
+          ],
+          "buena": 0,
+          "porque": "Intensidad = tensión / resistencia."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los factores que influyen.",
+        "puntos": [
+          "Intensidad: más intensidad, más graves",
+          "Duración: más tiempo, más daño",
+          "Resistencia del cuerpo · recorrido por órganos vitales",
+          "Frecuencia (continua o alterna) · I = V / R"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c14",
+      "n": 14,
+      "titulo": "Las cinco reglas de oro",
+      "diapositivas": "8",
+      "gancho": "Has bajado el interruptor. ¿Ya puedes tocar los cables tranquilamente?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d008.jpg",
+        "imgAlt": "Reglas de oro (diap. 8)",
+        "dice": "<p>Una actividad con riesgo eléctrico y en instalaciones eléctricas debe realizarse: con un <strong>procedimiento determinado</strong> y por <strong>autorizadas o cualificadas</strong> y <strong>sin tensión</strong> siempre que sea posible. La supresión de la tensión debe realizarse siguiendo las denominadas cinco <strong>reglas de oro</strong>:</p><ol><li>Desconectar todas las fuentes de alimentación.</li><li>Prevenir realimentaciones. Se debe evitar cualquier reconexión mediante bloqueos o señalización.</li><li>Verificar la ausencia de tensión en todos los elementos activos de la instalación.</li><li>Realizar la puesta a tierra y en cortocircuito de todas las posibles fuentes de tensión.</li><li>Señalizar la zona de trabajo.</li></ol>",
+        "entiende": "Cortas, bloqueas para que nadie lo vuelva a encender, compruebas que de verdad no hay corriente, conectas a tierra por si acaso y avisas con señales.",
+        "truco": "«<strong>Corto, Candado, Compruebo, Tierra, Cartel</strong>». Son <strong>5</strong> (pregunta 7 del test). La primera: <strong>desconectar</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que prevenir realimentaciones?",
+        "respuesta": "Para evitar cualquier reconexión mientras trabajas, mediante bloqueos o señalización."
+      },
+      "aplica": [
+        {
+          "caso": "Primera actuación para reparar una máquina con fallos eléctricos.",
+          "opciones": [
+            "Desconectar todas las fuentes de alimentación",
+            "Señalizar la zona"
+          ],
+          "buena": 0,
+          "porque": "Actividad 5 de la profe."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las cinco reglas de oro.",
+        "puntos": [
+          "1. Desconectar todas las fuentes de alimentación",
+          "2. Prevenir realimentaciones (bloqueos o señalización)",
+          "3. Verificar la ausencia de tensión",
+          "4. Puesta a tierra y en cortocircuito · 5. Señalizar la zona"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c15",
+      "n": 15,
+      "titulo": "Prevención y protección",
+      "diapositivas": "9",
+      "gancho": "¿Qué diferencia hay entre tocar un cable con corriente y tocar la carcasa de una máquina que se ha estropeado?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d009.jpg",
+        "imgAlt": "Medidas frente al riesgo eléctrico (diap. 9)",
+        "dice": "<p>Los riesgos derivados del uso de instalaciones eléctricas pueden evitarse si se aplican ciertas <strong>medidas de prevención y de protección</strong> sobre las instalaciones, los equipos y las personas trabajadoras:</p><p><strong>Sobre instalaciones y equipos</strong></p><ul><li>Protección contra contactos <strong>directos e indirectos</strong>: uso de tensiones de seguridad: <strong>50 voltios en corriente alterna</strong>; <strong>75 voltios en corriente continua</strong>.</li><li>Protección contra contactos eléctricos <strong>directos</strong>: alejar de las zonas de trabajo las partes activas de las instalaciones; recubrir con aislantes las partes en tensión; interponer obstáculos; usar interruptores diferenciales.</li><li>Protección contra contactos eléctricos <strong>indirectos</strong>: corte automático de la alimentación; separar los circuitos; poner doble aislamiento; puesta a tierra y neutro.</li></ul><p><strong>Sobre las personas trabajadoras</strong></p><ul><li>Medidas informativas: formar e informar sobre los riesgos; señalizar los riesgos.</li><li>Equipos de protección individual: usar equipos aislantes (guantes, botas, etc.); emplear herramientas aislantes (pértigas, alfombras o banquetas aislantes).</li></ul>",
+        "entiende": "Contacto directo: tocas algo que lleva corriente por diseño (un cable). Indirecto: tocas algo que no debería llevarla pero se ha puesto en tensión por un fallo (la carcasa de una máquina).",
+        "truco": "Tensiones de seguridad: <strong>50 alterna, 75 continua</strong> («la <strong>A</strong>lterna, menos»)."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve la puesta a tierra?",
+        "respuesta": "Es una protección contra contactos indirectos, junto con el corte automático, separar circuitos y el doble aislamiento."
+      },
+      "aplica": [
+        {
+          "caso": "Tensión de seguridad en corriente alterna.",
+          "opciones": [
+            "50 V",
+            "75 V"
+          ],
+          "buena": 0,
+          "porque": "75 V es en continua."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las medidas frente al riesgo eléctrico.",
+        "puntos": [
+          "Tensiones de seguridad: 50 V alterna, 75 V continua",
+          "Directos: alejar, aislar, obstáculos, interruptores diferenciales",
+          "Indirectos: corte automático, separar circuitos, doble aislamiento, tierra",
+          "Personas: formar, informar, señalizar y EPI aislantes"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

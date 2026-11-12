@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "id": "ipe-tema4-psicosociales",
+  "unidad": "ipe-tema4",
+  "bloque": 6,
+  "titulo": "Los riesgos psicosociales",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 4 (bloque 6, conceptos 24 a 26, diapositivas 15 a 17). El misterio es la actividad 9 de la profe. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Valery y Gabriel",
+    "caso": "Actividad 9 de la profe. Valery, desde que cambió de jefe, siente una gran ansiedad: todos los días recibe un correo de su superior criticando su trabajo. Gabriel, gestor de incidencias, tiene horarios muy amplios, mucha intensidad, llamadas, correos, wasaps y SMS, y clientes difíciles; no duerme bien y se enfada con su familia.",
+    "pregunta": "¿A qué riesgos está expuesto cada uno y qué factores influyen?",
+    "solucion": "Valery: riesgo de violencia laboral, acoso psicológico (mobbing), porque hay una relación asimétrica de poder con su jefe; el daño es un trastorno emocional (ansiedad). Gabriel: riesgo de estrés laboral (y tecnoestrés, por la avalancha de canales) y de fatiga por exceso de tiempo de trabajo; los factores son la organización y ordenación del trabajo (horarios, intensidad), y los daños, trastornos fisiológicos y sociales (sueño, conflictos con la familia).",
+    "claves": [
+      "Valery: acoso (violencia), asimetría de poder",
+      "Gabriel: estrés, tecnoestrés, fatiga",
+      "Factor → riesgo → daño"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema4.c24",
+      "n": 24,
+      "titulo": "Factores, riesgos y daños",
+      "diapositivas": "15",
+      "gancho": "Un jefe que critica todos los días, ¿es el riesgo o es la causa del riesgo?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d015.jpg",
+        "imgAlt": "Factores, riesgos y daños psicosociales (diap. 15)",
+        "dice": "<p>Para entender mejor cómo se generan estos riesgos se deben diferenciar los conceptos de <strong>factores de riesgos psicosociales, riesgos psicosociales</strong> y <strong>daños</strong>:</p><ul><li><strong>Factores de riesgos psicosociales:</strong> son los aspectos de la organización y dirección del trabajo y de su entorno social que, por una configuración deficiente o un diseño inadecuado, presentan la probabilidad de afectar negativamente a la salud y el bienestar de las personas trabajadoras.</li><li><strong>Riesgos psicosociales:</strong> estrés laboral, violencia, fatiga.</li><li><strong>Daños:</strong> trastornos emocionales: ansiedad, depresión, etc. · trastornos fisiológicos: aumento de la tensión, bulimia, cefalea, etc. · trastornos conductuales: adicciones, tecnoadicciones, etc. · trastornos sociales: aislamiento, conflictos interpersonales, agresiones, etc.</li></ul><p>La <strong>Agencia Europea para la Seguridad y la Salud en el Trabajo</strong> considera como factores de riesgo psicosocial aquellos aspectos del diseño, la organización y la dirección del trabajo, y de su entorno social, que puedan causar daños físicos, sociales o psicológicos.</p>",
+        "entiende": "Es una cadena: un factor (un jefe que critica a diario, horarios eternos) → un riesgo (estrés) → un daño (ansiedad, no dormir).",
+        "truco": "«<strong>Factor → Riesgo → Daño</strong>». Psicosociales = <strong>organización del trabajo</strong> (preguntas 14 y 15 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Con qué se relacionan principalmente los riesgos psicosociales?",
+        "respuesta": "Con la organización y dirección del trabajo y su entorno social (preguntas 14 y 15 del test)."
+      },
+      "aplica": [
+        {
+          "caso": "Tecnoadicción.",
+          "opciones": [
+            "Daño: trastorno conductual",
+            "Factor de riesgo"
+          ],
+          "buena": 0,
+          "porque": "Daño conductual."
+        },
+        {
+          "caso": "Estrés laboral.",
+          "opciones": [
+            "Riesgo psicosocial",
+            "Daño"
+          ],
+          "buena": 0,
+          "porque": "Riesgos: estrés, violencia, fatiga."
+        }
+      ],
+      "recuerda": {
+        "pide": "Diferencia factor, riesgo y daño.",
+        "puntos": [
+          "Factor: aspectos de la organización y dirección del trabajo mal diseñados",
+          "Riesgos: estrés laboral, violencia, fatiga",
+          "Daños emocionales, fisiológicos, conductuales y sociales"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c25",
+      "n": 25,
+      "titulo": "Estrés, violencia y fatiga",
+      "diapositivas": "16",
+      "gancho": "¿Puede un compañero, y no solo un jefe, acosarte en el trabajo?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d016.jpg",
+        "imgAlt": "Riesgos psicosociales en el trabajo (diap. 16)",
+        "dice": "<p>Los riesgos psicosociales son principalmente el <strong>estrés laboral</strong>, la <strong>violencia laboral</strong> y la <strong>fatiga</strong> derivada de la organización y ordenación del trabajo.</p><ul><li><strong>Estrés:</strong> estrés; estrés crónico o <strong>burnout</strong>; tecnoestrés.</li><li><strong>Violencia laboral:</strong> acoso psicológico en el trabajo (APT), acoso sexual, acoso discriminatorio; violencia física.</li><li><strong>Fatiga:</strong> derivada de la ordenación del tiempo de trabajo: por exceso de tiempo de trabajo; por falta de descanso.</li></ul><p>El <strong>estrés relacionado con el trabajo</strong>: es la respuesta física y emocional a un desajuste entre las demandas laborales y las características de la persona trabajadora para hacer frente a estas exigencias.</p><p>El <strong>acoso laboral en el trabajo (mobbing)</strong>: es una forma de violencia psicológica. Acoso laboral: ejercicio de violencia psicológica extrema infligida por una o más personas sobre otra, en el ámbito laboral, respecto de la que existe una relación asimétrica* de poder. (desigual, otro estatus…)</p>",
+        "entiende": "El acoso no tiene que ser de jefe a empleado: basta con que una parte tenga más poder (relación asimétrica). Y el burnout es estrés que se ha hecho crónico.",
+        "truco": "Burnout = <strong>estrés</strong> · mobbing = <strong>violencia</strong> · asimétrica = <strong>desigual</strong> (preguntas 16, 17 y 18 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Qué es imprescindible para hablar de acoso laboral?",
+        "respuesta": "Una relación asimétrica de poder (desigual, otro estatus), no necesariamente de superior a inferior."
+      },
+      "aplica": [
+        {
+          "caso": "Burnout.",
+          "opciones": [
+            "Una forma de estrés",
+            "Una forma de violencia"
+          ],
+          "buena": 0,
+          "porque": "Estrés crónico."
+        },
+        {
+          "caso": "Mobbing.",
+          "opciones": [
+            "Violencia psicológica",
+            "Fatiga"
+          ],
+          "buena": 0,
+          "porque": "Acoso psicológico."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los 3 riesgos psicosociales.",
+        "puntos": [
+          "Estrés: estrés, burnout (crónico), tecnoestrés",
+          "Violencia: acoso psicológico, sexual, discriminatorio; violencia física",
+          "Fatiga: por exceso de tiempo de trabajo o falta de descanso",
+          "Estrés: desajuste entre demandas y la persona · acoso: violencia psicológica con poder asimétrico"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c26",
+      "n": 26,
+      "titulo": "Las medidas",
+      "diapositivas": "17",
+      "gancho": "Si el problema es la organización, ¿basta con dar un curso a la persona afectada?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d017.jpg",
+        "imgAlt": "Medidas frente a los riesgos psicosociales (diap. 17)",
+        "dice": "<p>Los riesgos psicosociales <strong>son diferentes en cada empresa u organización</strong>. Se trata de buscar el <strong>equilibrio</strong> entre las condiciones laborales y el factor humano, con el fin de evitar la aparición de consecuencias negativas tanto sobre la salud de la plantilla como sobre la organización.</p><ul><li><strong>Medidas organizativas:</strong> van dirigidas al foco u origen del problema, para tratar de eliminar o reducir el factor de riesgo o proporcionar más recursos. Estas medidas actúan sobre la organización. Medidas: reorganización del trabajo (rotación, dotación de más recursos, etc.), mejora de la comunicación, ordenación del tiempo de trabajo, procedimientos de gestión de conflictos, prevención de violencias, etc.</li><li><strong>Medidas de afrontamiento:</strong> dirigidas a que la persona trabajadora pueda adquirir prácticas y conocimientos suficientes para afrontar los factores de riesgo psicosocial a los que está expuesto. Medidas: acciones de información y formación, desarrollo y aplicación de procedimientos o protocolos de acoso, códigos éticos, canales de denuncia, etc.</li><li><strong>Medidas de rehabilitación:</strong> dirigidas a la recuperación y rehabilitación de las personas trabajadoras que hayan sufrido daños en la salud derivados de la exposición a riesgos psicosociales. Medidas: adaptación del puesto de trabajo, cambio de funciones, mejora de los recursos, etc.</li></ul>",
+        "entiende": "Antes (cambiar la organización), durante (dar herramientas a la persona) y después (ayudar a recuperarse a quien ya está dañado).",
+        "truco": "«<strong>O-A-R</strong>»: Organizativas (foco), Afrontamiento (persona), Rehabilitación (después)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no hay una receta igual para todas las empresas?",
+        "respuesta": "Porque los riesgos psicosociales son diferentes en cada empresa u organización: se busca el equilibrio entre las condiciones laborales y el factor humano."
+      },
+      "aplica": [
+        {
+          "caso": "Protocolo de acoso y canal de denuncia.",
+          "opciones": [
+            "Medidas de afrontamiento",
+            "Medidas de rehabilitación"
+          ],
+          "buena": 0,
+          "porque": "Afrontamiento."
+        },
+        {
+          "caso": "Cambio de funciones tras un daño.",
+          "opciones": [
+            "Medidas de rehabilitación",
+            "Medidas organizativas"
+          ],
+          "buena": 0,
+          "porque": "Rehabilitación."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 3 tipos de medidas.",
+        "puntos": [
+          "Organizativas: al foco; reorganizar, comunicación, tiempo, conflictos",
+          "Afrontamiento: a la persona; formación, protocolos de acoso, canales de denuncia",
+          "Rehabilitación: a quien ya tiene daños; adaptar el puesto, cambiar funciones"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

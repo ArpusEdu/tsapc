@@ -86,6 +86,13 @@
     { "id": "ipe-tema5-hemorragias", "unidad": "ipe-tema5", "bloque": 6, "titulo": "Las hemorragias", "minutos": 25, "pegatina": "botiquin", "gancho": "cabeza atrás" },
     { "id": "ipe-tema5-quemaduras", "unidad": "ipe-tema5", "bloque": 7, "titulo": "Las quemaduras", "minutos": 25, "pegatina": "botiquin", "gancho": "la que no duele" },
     { "id": "ipe-tema5-traumatismos", "unidad": "ipe-tema5", "bloque": 8, "titulo": "Traumatismos y heridas", "minutos": 30, "pegatina": "botiquin", "gancho": "el tobillo que se mueve" },
-    { "id": "ipe-tema5-consciencia", "unidad": "ipe-tema5", "bloque": 10, "titulo": "Pérdida de consciencia y transporte de heridos", "minutos": 30, "pegatina": "botiquin", "gancho": "convulsiones en la oficina" }
+    { "id": "ipe-tema5-consciencia", "unidad": "ipe-tema5", "bloque": 10, "titulo": "Pérdida de consciencia y transporte de heridos", "minutos": 30, "pegatina": "botiquin", "gancho": "convulsiones en la oficina" },
+    { "id": "ipe-tema4-lugares", "unidad": "ipe-tema4", "bloque": 1, "titulo": "Los lugares de trabajo", "minutos": 30, "pegatina": "botiquin", "gancho": "seis cosas mal en la nave" },
+    { "id": "ipe-tema4-maquinas", "unidad": "ipe-tema4", "bloque": 2, "titulo": "Máquinas, herramientas y nuevas tecnologías", "minutos": 30, "pegatina": "botiquin", "gancho": "la mano bajo la protección" },
+    { "id": "ipe-tema4-electrico", "unidad": "ipe-tema4", "bloque": 3, "titulo": "El riesgo eléctrico", "minutos": 25, "pegatina": "botiquin", "gancho": "sin cortar la corriente" },
+    { "id": "ipe-tema4-incendios", "unidad": "ipe-tema4", "bloque": 4, "titulo": "Los incendios", "minutos": 15, "pegatina": "botiquin", "gancho": "tres fuegos, tres extintores" },
+    { "id": "ipe-tema4-ergonomia", "unidad": "ipe-tema4", "bloque": 5, "titulo": "Ergonomía (I): carga de trabajo y posturas", "minutos": 20, "pegatina": "botiquin", "gancho": "la primera causa" },
+    { "id": "ipe-tema4-cargas", "unidad": "ipe-tema4", "bloque": 5, "titulo": "Ergonomía (II): cargas, repetición y carga mental", "minutos": 25, "pegatina": "botiquin", "gancho": "las muñecas de Jaime" },
+    { "id": "ipe-tema4-psicosociales", "unidad": "ipe-tema4", "bloque": 6, "titulo": "Los riesgos psicosociales", "minutos": 25, "pegatina": "botiquin", "gancho": "valery y Gabriel" }
   ]
 }

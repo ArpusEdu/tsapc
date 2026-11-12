@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "ipe-tema4-cargas",
+  "unidad": "ipe-tema4",
+  "bloque": 5,
+  "titulo": "Ergonomía (II): cargas, repetición y carga mental",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 4 (bloque 5, conceptos 21 a 23, diapositivas 13 y 14). El misterio es la actividad 8 de la profe. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Las muñecas de Jaime",
+    "caso": "Actividad 8 de la profe: Jaime trabaja como montador de muebles. Últimamente le duelen las muñecas y le han diagnosticado tendinitis.",
+    "pregunta": "¿Qué causa puede haber provocado la lesión y qué medida preventiva propondrías?",
+    "solucion": "Una causa probable son los movimientos repetitivos: el mismo gesto de forma continua con el mismo conjunto osteomuscular (atornillar, montar) lleva a fatiga muscular acumulada, sobrecarga, dolor y, por último, lesión. La tendinitis es un trastorno musculoesquelético (TME) de la carga física. Medidas posibles con lo visto en el tema: alternar tareas y posturas, herramientas adecuadas en buen estado y, a nivel organizativo, rotación y descansos.",
+    "claves": [
+      "Movimiento repetitivo → TME",
+      "Fatiga → sobrecarga → dolor → lesión",
+      "Alternar, rotar, herramientas adecuadas"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema4.c21",
+      "n": 21,
+      "titulo": "La manipulación de cargas",
+      "diapositivas": "13",
+      "gancho": "Para coger una caja pesada del suelo, ¿doblas la espalda o las rodillas?",
+      "profe": {
+        "img": "../ipe-tema4/repaso/img/d013.jpg",
+        "imgAlt": "Manipulación manual correcta de cargas (diap. 13)",
+        "dice": "<p><strong>La manipulación de cargas:</strong> es cualquier operación de transporte o sujeción de estas por parte de una o varias personas trabajadoras que, por las características de la carga o por hacerse en condiciones ergonómicas inadecuadas, entraña riesgos dorsolumbares.</p><p><strong>Lo que se debe hacer:</strong></p><ul><li>Colocarse cerca de la carga con los pies separados a la altura de los hombros.</li><li>Agacharse doblando las rodillas, con la espalda recta, y sujetar la carga con los brazos estirados y pegados al cuerpo.</li><li>Levantar la carga enderezando las piernas y manteniendo la espalda recta.</li></ul><p><strong>Lo que no se debe hacer:</strong></p><ul><li>Doblar la espalda y dar tirones bruscos al levantarse.</li><li>Levantar la carga pesada por encima de la cintura con un solo movimiento.</li><li>Girar la cintura mientras se sujeta la carga, ya que hay que girar todo el cuerpo moviendo los pies.</li></ul>",
+        "entiende": "La fuerza la hacen las piernas, no la espalda: rodillas dobladas, espalda recta y la carga pegada al cuerpo.",
+        "truco": "«<strong>Cerca, Rodillas, Recta, Pegada</strong>». Y para girar, <strong>mueve los pies</strong>, no la cintura."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se gira la cintura con la carga?",
+        "respuesta": "Porque hay que girar todo el cuerpo moviendo los pies: girar la cintura cargado daña la zona dorsolumbar."
+      },
+      "aplica": [
+        {
+          "caso": "Lo correcto al levantar.",
+          "opciones": [
+            "Enderezar las piernas con la espalda recta",
+            "Dar un tirón doblando la espalda"
+          ],
+          "buena": 0,
+          "porque": "La fuerza, con las piernas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la manipulación de cargas.",
+        "puntos": [
+          "Transporte o sujeción de cargas con riesgo dorsolumbar",
+          "Cerca, pies separados a la altura de los hombros",
+          "Rodillas dobladas, espalda recta, brazos pegados; levantar con las piernas",
+          "No: doblar la espalda, tirones, subir por encima de la cintura de golpe, girar la cintura"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c22",
+      "n": 22,
+      "titulo": "Los movimientos repetitivos",
+      "diapositivas": "13",
+      "gancho": "¿Puede hacerte daño un gesto pequeño, como atornillar, si lo repites todo el día?",
+      "profe": {
+        "dice": "<p>Un movimiento es repetitivo cuando se realiza de forma continua e <strong>implica al mismo conjunto osteomuscular</strong>, lo que puede acabar provocando fatiga muscular acumulada, sobrecarga, dolor y, por último, lesión.</p><p>Las tareas con movimientos repetitivos son comunes en los trabajos en <strong>cadenas de montaje</strong>, en los talleres de reparación, en la industria agroalimentaria, en los trabajos administrativos (...).</p>",
+        "entiende": "No es un gran esfuerzo, sino el mismo pequeño gesto mil veces: fatiga, sobrecarga, dolor y lesión (como la tendinitis de muñeca de un montador).",
+        "truco": "Escalera del daño: «<strong>Fatiga → Sobrecarga → Dolor → Lesión</strong>»."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo es repetitivo un movimiento?",
+        "respuesta": "Cuando se realiza de forma continua e implica al mismo conjunto osteomuscular."
+      },
+      "aplica": [
+        {
+          "caso": "Trabajo típico con movimientos repetitivos.",
+          "opciones": [
+            "Cadena de montaje",
+            "Conducir de noche"
+          ],
+          "buena": 0,
+          "porque": "También talleres, agroalimentaria, administrativos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los movimientos repetitivos.",
+        "puntos": [
+          "Continuo y con el mismo conjunto osteomuscular",
+          "Fatiga muscular acumulada → sobrecarga → dolor → lesión",
+          "Cadenas de montaje, talleres, agroalimentaria, administrativos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema4.c23",
+      "n": 23,
+      "titulo": "La carga mental",
+      "diapositivas": "14",
+      "gancho": "Un trabajo con mucha información, decisiones difíciles y poco tiempo, ¿cansa aunque estés sentada?",
+      "profe": {
+        "dice": "<p>La <strong>carga mental</strong> es el nivel de actividad mental o de esfuerzo intelectual necesario para desarrollar el trabajo al que se ve sometida la persona trabajadora a lo largo de su jornada laboral.</p><p>Viene determinada por la relación que se establece entre las <strong>exigencias del trabajo</strong> (que dependen de la cantidad de información que se recibe, la complejidad de la respuesta que se requiere y el tiempo de respuesta que se tiene) y las <strong>características individuales de la persona</strong> que realiza la tarea, las condiciones ambientales del puesto de trabajo y factores psicosociales.</p><p>El principal efecto de la carga mental es la <strong>fatiga mental</strong>.</p>",
+        "entiende": "Mucha información, respuestas complicadas y poco tiempo para darlas: así se llena la cabeza. Y no afecta igual a todo el mundo.",
+        "truco": "Exigencias: «<strong>Cuánta info, qué complicado, cuánto tiempo</strong>». La cantidad de información es carga <strong>mental</strong>, no física (pregunta 12 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la misma tarea no cansa igual a todos?",
+        "respuesta": "Porque la carga mental depende de la relación entre las exigencias del trabajo y las características individuales de la persona, las condiciones ambientales y los factores psicosociales."
+      },
+      "aplica": [
+        {
+          "caso": "La cantidad de información que se maneja.",
+          "opciones": [
+            "Carga mental",
+            "Carga física"
+          ],
+          "buena": 0,
+          "porque": "Pregunta 12 del test."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la carga mental.",
+        "puntos": [
+          "Nivel de actividad mental o esfuerzo intelectual del trabajo",
+          "Exigencias: cantidad de información, complejidad de la respuesta, tiempo",
+          "Frente a las características de la persona, el ambiente y lo psicosocial",
+          "Efecto principal: fatiga mental"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}
