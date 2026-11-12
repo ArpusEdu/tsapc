@@ -21,8 +21,13 @@ for (const u of unidades) {
   test(u + ": «Lo que dice la profe» está tal cual en el PDF", () => {
     let fuente = leer("docs/fuentes/" + u + ".txt");
     if (existsSync(new URL("docs/fuentes/" + u + "-imagenes.txt", ROOT))) fuente += "\n" + leer("docs/fuentes/" + u + "-imagenes.txt");
-    const F = plano(fuente);
     const D = JSON.parse(leer(u + "/repaso/contenido.json"));
+    /* erratas del PDF corregidas a la vista: [«como está en el PDF», «como se muestra»] */
+    for (const [de, a] of D.correcciones || []) {
+      assert.ok(fuente.includes(de), "La corrección «" + de + "» no está en el PDF");
+      fuente = fuente.split(de).join(a);
+    }
+    const F = plano(fuente);
     const fallos = [];
     let n = 0;
     for (const b of D.bloques) for (const c of b.conceptos) {

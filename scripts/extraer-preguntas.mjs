@@ -13,7 +13,7 @@ import { fileURLToPath } from "node:url";
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SALIDA = path.join(RAIZ, "app", "preguntas");
 
-export const UNIDADES = ["bio1", "bio2", "bio3", "fisio1", "fisio2", "fisio3", "gest1", "gest2", "ingles1", "ipe2", "ipe-tema5", "lab1", "lab2"];
+export const UNIDADES = ["bio1", "bio2", "bio3", "fisio1", "fisio2", "fisio3", "fisio4", "gest1", "gest2", "ingles1", "ipe2", "ipe-tema5", "lab1", "lab2"];
 
 const leer = (rel) => fs.readFileSync(path.join(RAIZ, rel), "utf8");
 const num = (n) => String(n).padStart(3, "0");
@@ -180,7 +180,7 @@ export function extraerUnidad(u) {
       const EX = literal(leer(dir + "index.html"), "EX");
       bancos.push(Object.assign({ id, titulo, fuente: dir, formato: "texto" }, bancoIngles(EX, base)));
     });
-  } else {
+  } else if (fs.existsSync(path.join(RAIZ, u, "simulacro", "index.html"))) {
     const dir = u + "/simulacro/", html = leer(dir + "index.html"), D = literal(html, "D");
     const r = D.PARTS ? bancoPartes(u, D, u + ".q.") : bancoArrays(u, html, D, u + ".q.");
     bancos.push(Object.assign({ id: "sim", titulo: "Simulacro", fuente: dir, formato: formatoDe(html) }, r));
@@ -191,6 +191,7 @@ export function extraerUnidad(u) {
 
 /* Recuento independiente en los originales (para las pruebas): suma de elementos de cada banco. */
 export function recuentoOriginal(u) {
+  if (!fs.existsSync(path.join(RAIZ, u, "simulacro", "index.html")) && u !== "lab1" && u !== "ingles1") return [];
   if (u === "lab1") return ["lab1/banco/", "lab1/test-50/", "lab1/test-50-b/"].map((d) => literal(leer(d + "index.html"), "Q").length);
   if (u === "ingles1") return ["simulacro", "examen", "simulacro-vocabulario", "examen-vocabulario"].map((d) => literal(leer("ingles1/" + d + "/index.html"), "EX").reduce((s, e) => s + e.items.length, 0));
   const html = leer(u + "/simulacro/index.html"), D = literal(html, "D");

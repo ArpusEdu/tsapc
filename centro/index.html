@@ -627,6 +627,7 @@ var UNITS = {
   fisio1:{s:'fisio',code:'Fisio 1',t:'Organización del cuerpo',st:'torso',path:'fisio1/',bl:'Entrega',blocks:['Niveles de organización y tipos de célula','Matriz extracelular y membrana plasmática','Citoplasma y orgánulos','El núcleo','Fisiología celular','Reproducción celular']},
   fisio2:{s:'fisio',code:'Fisio 2',t:'Tejidos',st:'scope',path:'fisio2/',blocks:['Histología: conceptos base','Tejido epitelial','Epitelio glandular','Tejido muscular','Tejido nervioso','Tejido conectivo: general y conjuntivo','Tejido adiposo','Tejido cartilaginoso','Tejido óseo y el hueso','Tejido sanguíneo','Tejido hematopoyético','Tejido linfático','Anatomía']},
   fisio3:{s:'fisio',code:'Fisio 3',t:'La patología',st:'heart',path:'fisio3/',blocks:['Los procesos patológicos y los agentes patógenos','Los factores patógenos','La célula: salud y lesión','Las respuestas celulares adaptativas','Nivel anatómico: la necrosis tisular','Las respuestas tisulares adaptativas','Procesos patológicos fundamentales y reparación','El estudio de los procesos patológicos','La enfermedad y su clasificación','El desarrollo de la enfermedad','El diagnóstico de la enfermedad','Diagnóstico por imagen y electrodiagnóstico','El tratamiento de la enfermedad']},
+  fisio4:{s:'fisio',code:'Fisio 4',t:'Vascular y hemodinámica',st:'heart',path:'fisio4/',blocks:['El corazón','El sistema vascular','La sangre y la hemodinámica','Hemostasia y coagulación','Fisiopatología vascular: los vasos','Patologías obstructivas: aterosclerosis y trombosis','Embolias y accidentes cerebrovasculares','Fisiopatología cardiaca','Fisiopatología hemodinámica y de la coagulación','El aparato urinario: anatomía','El aparato urinario: fisiología','Fisiopatología urinaria']},
   gest1:{s:'gest',code:'Gest 1',t:'Sector sanitario',st:'hospital',path:'gest1/',blocks:['Sistema sanitario y salud','Determinantes de la salud','Qué hace un sistema sanitario y cómo se organiza','Modelos sanitarios','El Sistema Nacional de Salud (SNS) en España','Organización asistencial y cartera de servicios','Deontología y bioética','Ley de Ordenación de las Profesiones Sanitarias (LOPS)','Economía de la salud y sostenibilidad','Calidad asistencial y evaluación']},
   gest2:{s:'gest',code:'Gest 2',t:'El laboratorio',st:'tubes',path:'gest2/',blocks:['TSLCB: qué hace y para qué','TSLCB: funciones profesionales, personales y sociales','TSLCB: áreas, puestos y ambiente profesional','TSLCB: objetivos','TSAPC (tu título): funciones','TSAPC: áreas, puestos, ambiente y calidad','TSAPC: objetivos (4 grupos)']},
   ipe2:{s:'ipe',code:'IPE 2',t:'Riesgos ambientales',st:'sound',path:'ipe2/',blocks:['Riesgos físicos: introducción','El ruido','Las vibraciones mecánicas','El ambiente térmico','Las radiaciones electromagnéticas','Los riesgos químicos','Los riesgos biológicos']},
@@ -639,7 +640,7 @@ Object.keys(UNITS).forEach(function(k){ UNITS[k].id=k; });
 var ROOMS = {
   bio:  {name:'Biología Molecular', place:'Laboratorio de Biología Molecular', subs:['bio'], units:['bio1','bio2','bio3']},
   lab:  {name:'Técnicas de Laboratorio', place:'Laboratorio de Técnicas Generales', subs:['lab'], units:['lab1','lab2']},
-  fisio:{name:'Fisiopatología', place:'Aula de Fisiopatología', subs:['fisio'], units:['fisio1','fisio2','fisio3']},
+  fisio:{name:'Fisiopatología', place:'Aula de Fisiopatología', subs:['fisio'], units:['fisio1','fisio2','fisio3','fisio4']},
   gest: {name:'Gestión de Muestras', place:'Recepción de muestras', subs:['gest'], units:['gest1','gest2']},
   ipe:  {name:'IPE I', place:'Sala de prevención', subs:['ipe'], units:['ipe2','ipe5']},
   ing:  {name:'Inglés', place:'Aula de idiomas', subs:['ing'], units:['ing1']},
@@ -3366,14 +3367,17 @@ async function buildFisioRoom() {
   drawHr(63); plane(0.1, 0.22, basic(0xffffff, { map: hrT }), 0.16, 0.23, 0.061, mon);
   const hrLed = sph(0.012, basic(0xff5b5b), 0.19, 0.36, 0.062, mon);
   let ecgPh = 0;
+  tagSpot(mon, 'fisio4');
+  function reactFisio4() { beatBoost = 1; const tl = gsap.timeline(); tl.fromTo(hrLed.scale, { x: 2.4, y: 2.4, z: 2.4 }, { x: 1, y: 1, z: 1, duration: 1.6 }); animTL(tl); kick(2.0); }
 
   const spots = [
     unitSpot('fisio1', 0, reactFisio1, { anchor: V(0, top + 1.0, 0.55), label: 'Organización del cuerpo' }),
     unitSpot('fisio2', 2.2, reactFisio2, { anchor: V(2.2, top + 0.75, 0.55), label: 'Tejidos' }),
-    unitSpot('fisio3', 4.4, reactFisio3, { anchor: V(4.4, top + 1.1, 0.55), label: 'La patología' })
+    unitSpot('fisio3', 4.4, reactFisio3, { anchor: V(4.4, top + 1.1, 0.55), label: 'La patología' }),
+    unitSpot('fisio4', 5.12, reactFisio4, { anchor: V(5.3, top + 0.4, 0.32), label: 'Vascular y hemodinámica' })
   ];
   return {
-    name: 'fisio', shell: sh, exposure: sh.exposure, scene: S, spots, pick: [tor, f2, f3], range: [-0.6, 5.0],
+    name: 'fisio', shell: sh, exposure: sh.exposure, scene: S, spots, pick: [tor, f2, f3, mon], range: [-0.6, 5.5],
     cfg: { y: 1.62, z: 4.4, ly: 1.15, fov: 44, m: { y: 1.58, z: 4.0, ly: 1.2, fov: 50 } },
     idle(t, dt, vr) {
       const busy = beatBoost > 0;

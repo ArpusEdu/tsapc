@@ -406,6 +406,38 @@ var UNIDADES = [
   ]
  },
  {
+  "id": "fisio4",
+  "s": "fisio",
+  "codigo": "Fisio 4",
+  "titulo": "Vascular y hemodinámica",
+  "examen": "4º examen",
+  "tema": "Unidad 4 · Fisiopatología vascular y hemodinámica",
+  "fecha": null,
+  "pegatina": "corazon",
+  "repaso": {
+   "web": "fisio4/repaso/"
+  },
+  "extra": [],
+  "progreso": {
+   "clave": "fisio4-repaso-v1",
+   "total": 78
+  },
+  "bloques": [
+   "El corazón",
+   "El sistema vascular",
+   "La sangre y la hemodinámica",
+   "Hemostasia y coagulación",
+   "Fisiopatología vascular: los vasos",
+   "Patologías obstructivas: aterosclerosis y trombosis",
+   "Embolias y accidentes cerebrovasculares",
+   "Fisiopatología cardiaca",
+   "Fisiopatología hemodinámica y de la coagulación",
+   "El aparato urinario: anatomía",
+   "El aparato urinario: fisiología",
+   "Fisiopatología urinaria"
+  ]
+ },
+ {
   "id": "gest1",
   "s": "gest",
   "codigo": "Gest 1",

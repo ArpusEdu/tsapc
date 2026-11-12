@@ -114,8 +114,8 @@ test("calendario: festivos, rangos y fechas clave", () => {
   assert.equal(L.infoDia(AG.calendario, EVS, "2026-11-05").evs.length, 3);
 });
 
-test("datos: 13 unidades, ids de carpeta y bloques", () => {
-  assert.equal(D.UNIDADES.length, 13);
+test("datos: 14 unidades, ids de carpeta y bloques", () => {
+  assert.equal(D.UNIDADES.length, 14);
   const S = req("../assets/store.js");
   assert.deepEqual(D.UNIDADES.map((u) => u.id).sort(), [...S.UNIDADES].sort());
   for (const u of D.UNIDADES) {

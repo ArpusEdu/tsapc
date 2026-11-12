@@ -31,6 +31,9 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .sub{margin-top:var(--e-2);color:var(--c-tinta-2);font-size:var(--t-sm)}
 .resumen{margin-top:var(--e-3);transform:rotate(-1.2deg);transform-origin:left}
 .cab-asig{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--e-4)}
+/* títulos con palabras largas («hemodinámica»): se parten con guion en vez de empujar la pegatina fuera */
+.cab-asig>div{min-width:0}
+.cab-asig h1{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 .cab-asig .pegatina{flex:none;transform:rotate(6deg)}
 .cab-asig .insignia{margin-top:var(--e-3)}
 .rejilla{display:grid;gap:var(--e-6);margin-top:var(--e-6)}

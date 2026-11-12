@@ -1,0 +1,829 @@
+{
+  "unidad": "fisio4",
+  "titulo": "Fisio 4 · Vascular y hemodinámica",
+  "eyebrow": "🫀 Fisiopatología · 4º examen",
+  "h1": "Repaso completo: fisiopatología vascular y hemodinámica",
+  "sub": "Unidad 4 · 106 diapositivas · 12 bloques · 78 conceptos",
+  "clave": "fisio4-repaso-v1",
+  "examen": { "em": "🫀", "asig": "Fisiopatología", "examen": "4º examen", "fecha": null },
+  "simulacro": null,
+  "fuente": "Unidad 4_ Fisiopatología vascular y hemodinámica-1.pdf (106 diapositivas)",
+  "correcciones": [
+    ["evita que se nllene", "evita que se llene"],
+    ["degrada favtores", "degrada factores"],
+    ["Embolia de líquido amniótico: cñelulas", "Embolia de líquido amniótico: células"],
+    ["compatibles ocn", "compatibles con"],
+    ["estimulación excesiva cel", "estimulación excesiva del"],
+    ["circulación linfática uy aumento", "circulación linfática y aumento"],
+    ["ictus, trombsosis", "ictus, trombosis"],
+    ["(hemoragia,", "(hemorragia,"],
+    ["líquido intersiticial", "líquido intersticial"],
+    ["(regular\nconcentraicón", "(regular\nconcentración"],
+    ["(pielonefritiis)", "(pielonefritis)"],
+    ["lupus eritrematoso", "lupus eritematoso"],
+    ["2\nario\na diabetes", "secundario\na diabetes"],
+    ["enemas, anemia", "edemas, anemia"],
+    ["una enferemedad", "una enfermedad"],
+    ["Factores predisponientes", "Factores predisponentes"],
+    ["a traves de venas", "a través de venas"]
+  ],
+  "bloques": [
+    {
+      "titulo": "El corazón",
+      "conceptos": [
+        {
+          "titulo": "El aparato cardiovascular y el corazón", "lv": 1, "fuente": "Diapositivas 2 y 3",
+          "defs": [{ "t": "Mediastino", "facil": "El espacio del centro del tórax, entre los dos pulmones." }],
+          "prof": "<p>Aparato cardiovascular: <strong>Corazón + sistema vascular + sangre</strong></p><p><strong>El corazón:</strong> Órgano que se contrae y se relaja alternativamente para impulsar la sangre por todo el organismo.</p><p>En <strong>mediastino</strong>, apoyado en el <strong>diafragma</strong></p>",
+          "imgs": [{ "src": "img/d002.jpg", "alt": "Corazón, vasos y circulación (diap. 2)" }],
+          "entiende": "Tres piezas: una bomba (corazón), unas tuberías (vasos) y lo que circula por ellas (sangre).",
+          "truco": "<strong>C + V + S</strong>: Corazón, Vasos, Sangre.",
+          "q": "¿Qué forma el aparato cardiovascular y dónde está el corazón?"
+        },
+        {
+          "titulo": "La pared del corazón", "lv": 1, "fuente": "Diapositiva 4",
+          "defs": [{ "t": "Membrana serosa", "facil": "Membrana fina que envuelve un órgano y produce un líquido lubricante." }],
+          "prof": "<ul><li><strong>Pericardio:</strong> membrana serosa, envuelve corazón. 2 capas con líquido lubricante entre ellas. Mantiene corazón en posición, evita que se llene demasiado de sangre, lo protege de infecciones.</li><li><strong>Miocardio:</strong> músculo cardiaco. Fibras musculares + células de conducción eléctrica.</li><li><strong>Endocardio:</strong> membrana que recubre las paredes internas del corazón</li></ul>",
+          "imgs": [{ "src": "img/d004.jpg", "alt": "Pared del corazón: pericardio, miocardio y endocardio (diap. 4)" }],
+          "entiende": "De fuera adentro: una bolsa (pericardio), el músculo (miocardio) y un forro interior (endocardio).",
+          "truco": "<strong>Peri = alrededor · Mio = músculo · Endo = dentro</strong>.",
+          "q": "Di las 3 capas de la pared del corazón y qué hace cada una."
+        },
+        {
+          "titulo": "Las cavidades", "lv": 1, "fuente": "Diapositiva 5",
+          "defs": [],
+          "prof": "<ul><li><strong>Aurículas</strong><ul><li>Derecha: recibe sangre desde las <strong>venas cavas</strong>.</li><li>Izquierda: recibe de los pulmones a través de <strong>venas pulmonares</strong></li></ul></li><li><strong>Ventrículos</strong><ul><li>Derecho: recibe de aurícula derecha, impulsa hacia <strong>arteria pulmonar</strong></li><li>Izquierdo: recibe de aurícula izquierda, impulsa a <strong>arteria aorta</strong></li></ul></li></ul>",
+          "entiende": "Las aurículas reciben y los ventrículos empujan. El lado derecho lleva la sangre a los pulmones; el izquierdo, a todo el cuerpo.",
+          "truco": "<strong>Aurícula = recibe · Ventrículo = expulsa</strong>. Derecho → pulmón; izquierdo → aorta.",
+          "q": "¿De dónde recibe sangre cada aurícula y hacia dónde la impulsa cada ventrículo?"
+        },
+        {
+          "titulo": "Las válvulas", "lv": 1, "fuente": "Diapositivas 6 y 7",
+          "defs": [{ "t": "Válvula", "facil": "Una «puerta» que deja pasar la sangre en un solo sentido." }],
+          "prof": "<p><strong>Válvulas</strong> en salida de aurículas y ventrículos</p><ul><li>Lado derecho<ul><li>Válvula <strong>tricúspide</strong>: AD/VD</li><li>Válvula <strong>pulmonar</strong>: salida VD</li></ul></li><li>Lado izquierdo<ul><li>Válvula <strong>mitral</strong>: AI/VI</li><li>Válvula <strong>aórtica</strong>: salida VI</li></ul></li></ul>",
+          "imgs": [{ "src": "img/d007.jpg", "alt": "Cavidades y válvulas del corazón (diap. 7)" }],
+          "entiende": "Entre aurícula y ventrículo: tricúspide (derecha) y mitral (izquierda). A la salida de cada ventrículo: pulmonar y aórtica.",
+          "truco": "«<strong>Tri</strong> a la de<strong>r</strong>echa, <strong>Mi</strong>tral a la <strong>i</strong>zquierda»: las dos «i» van juntas.",
+          "q": "Di las 4 válvulas del corazón y dónde está cada una."
+        },
+        {
+          "titulo": "La irrigación del corazón", "lv": 2, "fuente": "Diapositiva 8",
+          "defs": [{ "t": "Arterias coronarias", "facil": "Las arterias que dan sangre al propio músculo del corazón." }],
+          "prof": "<p>Irrigación del corazón mediante <strong>arterias coronarias</strong>, nacen en la aorta y se ramifican. <strong>Venas coronarias</strong> recogen sangre desoxigenada y la llevan a la AD.</p>",
+          "entiende": "El corazón también necesita sangre para sí mismo: se la dan las coronarias, que salen de la aorta. Si se tapan, hay infarto.",
+          "truco": "<strong>Coronarias = corona</strong> alrededor del corazón.",
+          "q": "¿Qué arterias irrigan el corazón, de dónde salen y adónde llevan la sangre las venas coronarias?"
+        },
+        {
+          "titulo": "El ciclo cardiaco y la sangre por latido", "lv": 1, "fuente": "Diapositiva 9",
+          "defs": [
+            { "t": "Ciclo cardiaco", "facil": "Lo que pasa en el corazón en cada latido: contraerse y relajarse.", "diapo": "Fenómenos físicos que suceden en las cavidades cardiacas y en los grandes vasos durante las fases de contracción y relajación del corazón.", "n": 9 },
+            { "t": "Precarga", "facil": "La sangre que le llega al corazón." },
+            { "t": "Poscarga", "facil": "Lo que le cuesta a la sangre salir del ventrículo izquierdo." }
+          ],
+          "prof": "<p><strong>Ciclo cardiaco</strong>: fenómenos físicos que suceden en las cavidades cardiacas y en los grandes vasos durante las fases de contracción y relajación del corazón.</p><p>Cantidad de sangre expulsada/latido depende de:</p><ul><li><strong>Contractilidad</strong>: fuerza del miocardio</li><li><strong>Precarga</strong>: cantidad de sangre que recibe el corazón a través de venas cavas</li><li><strong>Poscarga</strong>: resistencia a salir del VI</li><li><strong>Frecuencia cardiaca</strong>: pulsaciones/minuto</li></ul>",
+          "entiende": "Cuánta sangre sale en cada latido depende de la fuerza, de cuánta entra, de lo que cuesta salir y de lo rápido que late.",
+          "truco": "<strong>CPPF</strong>: Contractilidad, Precarga, Poscarga, Frecuencia.",
+          "q": "¿Qué es el ciclo cardiaco y de qué 4 factores depende la sangre expulsada por latido?"
+        },
+        {
+          "titulo": "Sístole y diástole", "lv": 1, "fuente": "Diapositivas 10 y 11",
+          "defs": [
+            { "t": "Sístole", "facil": "Contracción de los ventrículos: el corazón bombea." },
+            { "t": "Diástole", "facil": "Relajación: el corazón se llena." }
+          ],
+          "prof": "<p>Fases del ciclo cardiaco</p><ul><li><strong>Sístole</strong>: contracción de ventrículos. Apertura válvulas pulmonar y aórtica. Cierre válvulas tricúspide y mitral</li><li><strong>Diástole</strong>: Ventrículos casi vacíos, P se reduce→apertura válvulas tricúspide y mitral. Cierre pulmonar y aórtica. Ventrículos se relajan, aurículas se contraen→sangre pasa de aurículas a ventrículos</li></ul>",
+          "imgs": [{ "src": "img/d011.jpg", "alt": "Diástole (llenando) y sístole (bombeando) (diap. 11)" }],
+          "entiende": "En sístole se abren las puertas de salida (pulmonar y aórtica) y se cierran las de entrada; en diástole, al revés.",
+          "truco": "<strong>Sístole = Sale</strong>; <strong>Diástole = se Dilata y se llena</strong>.",
+          "q": "¿Qué válvulas se abren y cuáles se cierran en la sístole y en la diástole?"
+        },
+        {
+          "titulo": "La actividad eléctrica del corazón", "lv": 1, "fuente": "Diapositivas 12 y 13",
+          "defs": [{ "t": "Nódulo sinusal", "facil": "El marcapasos natural del corazón, en la aurícula derecha." }],
+          "prof": "<p>Corazón posee un <strong>sistema intrínseco de conducción eléctrica</strong> formado por fibras musculares modificadas.</p><ol><li>Impulso se genera en <strong>Nódulo sinusal (AD)</strong> → <strong>marcapasos</strong></li><li>Impulso se extiende por aurículas y provoca su contracción</li><li>Impulso llega al <strong>nódulo auriculoventricular</strong></li><li>Impulso se extiende por los ventrículos y provoca contracción (<strong>sístole</strong>)</li></ol>",
+          "imgs": [{ "src": "img/d013.jpg", "alt": "Nódulo sinusal y nódulo auriculoventricular (diap. 13)" }],
+          "entiende": "El corazón lleva su propio «enchufe»: la chispa nace en el nódulo sinusal, contrae las aurículas, pasa por el nódulo auriculoventricular y contrae los ventrículos.",
+          "truco": "<strong>Sinusal → aurículas → AV → ventrículos</strong>: de arriba abajo.",
+          "q": "Explica los 4 pasos del sistema de conducción eléctrica del corazón."
+        },
+        {
+          "titulo": "Inervación del nódulo sinusal", "lv": 2, "fuente": "Diapositiva 14",
+          "defs": [],
+          "prof": "<p>Nódulo sinusal recibe inervación <strong>simpática</strong> y <strong>parasimpática</strong></p><ul><li>Simpática <strong>aumenta</strong> frecuencia</li><li>Parasimpática <strong>reduce</strong> frecuencia</li></ul>",
+          "entiende": "El sistema nervioso no crea el latido, pero lo acelera (simpático, en tensión o ejercicio) o lo frena (parasimpático, en reposo).",
+          "truco": "<strong>Simpático = Sube; Parasimpático = Para</strong>.",
+          "q": "¿Qué efecto tienen el simpático y el parasimpático sobre la frecuencia cardiaca?"
+        }
+      ]
+    },
+    {
+      "titulo": "El sistema vascular",
+      "conceptos": [
+        {
+          "titulo": "Arterias, venas y capilares", "lv": 1, "fuente": "Diapositivas 15 y 16",
+          "defs": [{ "t": "Válvulas semilunares", "facil": "En las venas, pequeñas puertas que impiden que la sangre vuelva atrás." }],
+          "prof": "<p><strong>El sistema vascular:</strong> Conjunto de vasos sanguíneos del organismo</p><ul><li><strong>Arterias</strong>: salen del corazón y se ramifican hasta <strong>arteriolas</strong>. Paredes muy fuertes</li><li><strong>Venas</strong>: conducen sangre hacia el corazón. Las más pequeñas se llaman <strong>vénulas</strong>. Paredes delgadas (baja P). Presentan <strong>válvulas semilunares</strong> (evitan retroceso de la sangre)</li><li><strong>Capilares</strong>: vasos de pequeño calibre, en ellos ocurre <strong>intercambio de sustancias</strong>. Paredes muy finas y permeables</li></ul>",
+          "imgs": [{ "src": "img/d016.jpg", "alt": "Arteria, capilares y vena (diap. 16)" }],
+          "entiende": "Arterias: salen del corazón con fuerza. Venas: vuelven con poca presión y necesitan válvulas. Capilares: finísimos, donde se hace el intercambio.",
+          "truco": "<strong>A = Aleja</strong> del corazón; <strong>V = Vuelve</strong>.",
+          "q": "Diferencia arterias, venas y capilares."
+        },
+        {
+          "titulo": "Las 3 capas de arterias y venas", "lv": 1, "fuente": "Diapositiva 17",
+          "defs": [{ "t": "Endotelio", "facil": "La capa de células que tapiza el interior de los vasos." }],
+          "prof": "<p>Paredes de arterias y venas presentan 3 capas concéntricas:</p><ol><li><strong>Íntima</strong>: endotelio plano, en contacto con la sangre, evita coagulación</li><li><strong>Media</strong>: capa más gruesa, células musculares lisas y tejido conjuntivo. Mayor en arterias que en venas</li><li><strong>Adventicia</strong>: externa. Fibras elásticas y de colágeno. Más gruesa en venas que arterias</li></ol>",
+          "imgs": [{ "src": "img/d017.jpg", "alt": "Capas de la pared de una arteria y una vena (diap. 17)" }],
+          "entiende": "La media (músculo) es más gruesa en las arterias porque aguantan más presión; la adventicia es más gruesa en las venas.",
+          "truco": "De dentro afuera: <strong>Í-M-A</strong> (Íntima, Media, Adventicia).",
+          "q": "Di las 3 capas de la pared de arterias y venas y cuál es más gruesa en cada tipo de vaso."
+        },
+        {
+          "titulo": "Los circuitos", "lv": 1, "fuente": "Diapositivas 18 y 19",
+          "defs": [{ "t": "Volemia", "facil": "La cantidad total de sangre que circula." }],
+          "prof": "<p>Sistema <strong>cerrado</strong>, sangre fluye de forma continua por el organismo impulsada por corazón. <strong>Volemia</strong> ha de ser constante.</p><ul><li><strong>Circuito menor o pulmonar</strong>: sangre del corazón a los pulmones y la devuelve al corazón oxigenada</li><li><strong>Circuito mayor o sistémico</strong>: sangre oxigenada desde el corazón hasta el resto del organismo y de vuelta desoxigenada</li></ul>",
+          "imgs": [{ "src": "img/d018.jpg", "alt": "Circuito menor y circuito mayor (diap. 18)" }],
+          "entiende": "Dos vueltas: una corta para cargar oxígeno en los pulmones y una larga para repartirlo por todo el cuerpo.",
+          "truco": "<strong>Menor = pulmones · Mayor = todo el cuerpo</strong>.",
+          "q": "Explica el circuito menor y el circuito mayor."
+        },
+        {
+          "titulo": "El sistema linfático", "lv": 1, "fuente": "Diapositivas 20 y 21",
+          "defs": [{ "t": "Linfa", "facil": "El líquido que se escapa de los capilares y recoge el sistema linfático." }],
+          "prof": "<p>Intercambio de sustancias en los capilares. En espacio intercelular queda filtrado de plasma procedente de capilares: <strong>linfa</strong>.</p><p><strong>Capilares linfáticos</strong> captan linfa y convergen para formar <strong>vasos linfáticos</strong>, de ahí a <strong>ganglios linfáticos</strong>, se filtra la linfa y se devuelve al sistema vascular</p><p>Sistema de circulación <strong>abierto</strong>, llega a todos los tejidos. 3 funciones:</p><ul><li>Recolectar y devolver líquido intersticial a la sangre</li><li>Absorber nutrientes del aparato digestivo y conducirlos a venas subclavias</li><li>Defender organismo de agentes patógenos: filtrado de la sangre</li></ul>",
+          "imgs": [{ "src": "img/d020.jpg", "alt": "Capilares sanguíneos y linfáticos (diap. 20)" }],
+          "entiende": "Es el «sistema de recogida»: devuelve a la sangre el líquido que se queda entre las células y, de paso, lo filtra en los ganglios.",
+          "truco": "Funciones: <strong>Devuelve, Absorbe, Defiende</strong>.",
+          "q": "¿Qué es la linfa? Di las 3 funciones del sistema linfático."
+        },
+        {
+          "titulo": "El retorno venoso", "lv": 2, "fuente": "Diapositiva 22",
+          "defs": [],
+          "prof": "<p>Impulso del corazón no llega a las venas, pero hace que la sangre de las arterias avance y “empuje” a la de las venas. Además, sístole del corazón tiene efecto succionador para la sangre de las venas cavas y pulmonares.</p>",
+          "entiende": "La sangre de las venas vuelve porque la de detrás la empuja y porque el corazón, al contraerse, la «aspira».",
+          "truco": "<strong>Empujón + succión</strong>.",
+          "q": "¿Cómo vuelve la sangre al corazón por las venas?"
+        }
+      ]
+    },
+    {
+      "titulo": "La sangre y la hemodinámica",
+      "conceptos": [
+        {
+          "titulo": "La sangre y la hemodinámica", "lv": 1, "fuente": "Diapositivas 23 y 24",
+          "defs": [{ "t": "Hemodinámica", "facil": "Cómo se mueve la sangre dentro de los vasos.", "diapo": "Estudio de la dinámica de la sangre en el interior de los vasos.", "n": 24 }],
+          "prof": "<p><strong>La sangre:</strong> Tejido conectivo con ME líquida (plasma) y células sanguíneas (eritrocitos y leucocitos) y fragmentos celulares (plaquetas).</p><p><strong>Hemodinámica:</strong> Estudio de la dinámica de la sangre en el interior de los vasos. 2 parámetros hemodinámicos esenciales:</p><ul><li><strong>Tensión arterial</strong></li><li><strong>Volemia</strong></li></ul>",
+          "entiende": "La sangre es un tejido líquido. La hemodinámica mira dos cosas: con qué presión va y cuánta hay.",
+          "truco": "<strong>Presión y cantidad</strong>: tensión y volemia.",
+          "q": "¿Qué es la sangre? ¿Qué estudia la hemodinámica y cuáles son sus 2 parámetros?"
+        },
+        {
+          "titulo": "La tensión arterial", "lv": 1, "fuente": "Diapositiva 25",
+          "defs": [
+            { "t": "Tensión arterial", "facil": "La presión de la sangre en las paredes de las arterias.", "diapo": "Presión que ejerce la sangre impulsada por el corazón sobre las paredes de las arterias.", "n": 25 },
+            { "t": "mmHg", "facil": "Milímetros de mercurio, la unidad de la tensión." }
+          ],
+          "prof": "<p>Presión que ejerce la sangre impulsada por el corazón sobre las paredes de las arterias. Oscila a lo largo del ciclo cardíaco.</p><ul><li><strong>Tensión arterial máxima o sistólica (TAS)</strong>: sangre empujada hacia las arterias aumenta la presión en ellas. Valor normal entre <strong>120 y 140 mmHg</strong></li><li><strong>Tensión arterial mínima o diastólica (TAD)</strong>: diástole y cierre de válvula aórtica. Valor normal entre <strong>60 y 90 mmHg</strong></li></ul>",
+          "imgs": [{ "src": "img/d025.jpg", "alt": "Valores de presión arterial (diap. 25)" }],
+          "entiende": "La máxima es al bombear (sístole) y la mínima al relajarse (diástole).",
+          "truco": "Máxima <strong>120-140</strong>, mínima <strong>60-90</strong>.",
+          "q": "¿Qué es la tensión arterial? Di los valores normales de la sistólica y la diastólica."
+        },
+        {
+          "titulo": "Regulación de la presión sanguínea", "lv": 1, "fuente": "Diapositiva 26",
+          "defs": [],
+          "prof": "<p>Tensión varía de una persona a otra en función de edad, nerviosismo, ejercicio…</p><p>Presión sanguínea regulada por:</p><ul><li><strong>SN vegetativo</strong>, actúa a nivel de gasto cardíaco, fr cardiaca, fuerza de contracción y resistencia periférica</li><li><strong>Sistema endocrino</strong>: hormonas que aumentan o reducen la volemia (Antidiurética y aldosterona)</li><li><strong>Aparato urinario</strong>: regulación de la cantidad de iones y H<sub>2</sub>O que se retiran de la sangre y se eliminan con la orina</li></ul>",
+          "imgs": [{ "src": "img/d026.jpg", "alt": "Regulación de la presión por la ADH (diap. 26)" }],
+          "entiende": "Tres mandos: los nervios (rápido), las hormonas (cambian el volumen de sangre) y el riñón (decide cuánta agua y sales se van con la orina).",
+          "truco": "<strong>Nervios, Hormonas, Riñón</strong>.",
+          "q": "¿Qué 3 sistemas regulan la presión sanguínea y cómo?"
+        },
+        {
+          "titulo": "La volemia", "lv": 1, "fuente": "Diapositiva 27",
+          "defs": [{ "t": "Hipovolemia", "facil": "Poca sangre circulando." }],
+          "prof": "<p><strong>Volemia:</strong> Volumen total de sangre circulante (<strong>5-6 litros</strong> en adultos).</p><p>Distintos mecanismos para mantenerla constante (sed, aumento o reducción de reabsorción de H<sub>2</sub>O).</p><ul><li>Aumento de volemia = aumento de TA, puede llevar a edema, rotura de vasos pequeños…</li><li>Hipovolemia →Hipotensión puede comprometer la circulación</li></ul>",
+          "entiende": "Más sangre = más presión (riesgo de edema o roturas). Menos sangre = menos presión (la sangre no llega bien).",
+          "truco": "<strong>5-6 litros</strong>; volemia y tensión suben y bajan juntas.",
+          "q": "¿Qué es la volemia, cuánto vale y qué pasa si sube o si baja?"
+        }
+      ]
+    },
+    {
+      "titulo": "Hemostasia y coagulación",
+      "conceptos": [
+        {
+          "titulo": "La hemostasia y sus 3 fases", "lv": 1, "fuente": "Diapositivas 28 y 29",
+          "defs": [{ "t": "Hemostasia", "facil": "Lo que hace el cuerpo para parar una hemorragia.", "diapo": "Conjunto de procesos fisiológicos que tiene por objetivo detener una hemorragia.", "n": 28 }],
+          "prof": "<p>Conjunto de procesos fisiológicos que tiene por objetivo detener una hemorragia. Ocurre en 3 fases:</p><ol><li><strong>Vasoconstricción local</strong>: rotura del endotelio detectada por plaquetas, liberan sustancias que provocan vasoconstricción. Se consigue reducir el flujo de sangre que llega a la zona.</li><li><strong>Formación de agregado plaquetario</strong>: estrechamiento del vaso por vasoconstricción favorece aglomeración de las plaquetas, agregado tapona zona lesionada.</li><li><strong>Formación del coágulo</strong>: agregado se transforma en coágulo (coagulación)</li></ol>",
+          "imgs": [{ "src": "img/d028.jpg", "alt": "Hemostasia: vaso que se contrae, tapón plaquetario y coágulo (diap. 28)" }],
+          "entiende": "Primero se cierra un poco el grifo (vasoconstricción), luego se tapa con plaquetas y por último se refuerza con un coágulo.",
+          "truco": "<strong>Cierra, Tapa, Cuaja</strong>.",
+          "q": "¿Qué es la hemostasia? Explica sus 3 fases."
+        },
+        {
+          "titulo": "La coagulación: de fibrinógeno a fibrina", "lv": 1, "fuente": "Diapositiva 30",
+          "defs": [{ "t": "Fibrina", "facil": "Los hilos que atrapan las células y forman el coágulo." }],
+          "prof": "<p><strong>La coagulación–Cascada de coagulación</strong>: Transformación del <strong>fibrinógeno (soluble)</strong> en <strong>fibrina (insoluble)</strong>, precipita en forma de filamentos que se entrelazan y atrapan elementos celulares hasta formar el coágulo.</p><p>Para la transformación se requiere activación del enzima <strong>trombina</strong> por parte de los <strong>factores de coagulación</strong></p>",
+          "imgs": [{ "src": "img/d030.jpg", "alt": "Fibrinógeno, monómeros de fibrina y coágulo (diap. 30)" }],
+          "entiende": "El fibrinógeno va disuelto en la sangre; la trombina lo convierte en fibrina, unos hilos que forman una red y atrapan las células.",
+          "truco": "<strong>Fibrinógeno (disuelto) → trombina → fibrina (red)</strong>.",
+          "q": "¿En qué consiste la coagulación y qué enzima la hace posible?"
+        },
+        {
+          "titulo": "Vía intrínseca y vía extrínseca", "lv": 1, "fuente": "Diapositiva 31",
+          "defs": [{ "t": "Trombogénico", "facil": "Que favorece la formación de coágulos." }],
+          "prof": "<p>Cascada de coagulación mediante 2 mecanismos:</p><ul><li><strong>Vía intrínseca</strong>: activada por lesión vascular. Endotelio es antitrombogénico, pero el tejido tras él es trombogénico. Al romperse, plaquetas se fijarán activando coagulación</li><li><strong>Vía extrínseca</strong>: lesión tisular libera factor de coagulación que desencadena cascada de coagulación.</li></ul><p>Las dos tienen una <strong>vía común</strong></p>",
+          "entiende": "Dos formas de encender la cascada: desde dentro del vaso (intrínseca) o desde el tejido dañado (extrínseca). Las dos acaban en el mismo camino.",
+          "truco": "<strong>Intrínseca = vaso · Extrínseca = tejido</strong>.",
+          "q": "Diferencia la vía intrínseca y la extrínseca de la coagulación."
+        },
+        {
+          "titulo": "La vía común", "lv": 1, "fuente": "Diapositiva 32",
+          "defs": [{ "t": "Protrombina / trombina", "facil": "La protrombina es la forma inactiva; la trombina, la activa." }],
+          "prof": "<p><strong>Cascada de coagulación: vía común</strong></p><ol><li>Activación factor X</li><li>Factor Xa activa factor II (protrombina→trombina)</li><li>Factor IIa activa Factor I. (fibrinógeno→fibrina soluble)</li><li>Factor XIIIa insolubiliza Ia→precipitación</li></ol>",
+          "imgs": [{ "src": "img/d032.jpg", "alt": "Cascada de coagulación: vía común (diap. 32)" }],
+          "entiende": "Como fichas de dominó: X activa II (trombina), II activa I (fibrina) y XIII la vuelve insoluble.",
+          "truco": "<strong>10 → 2 → 1 → 13</strong>.",
+          "q": "Ordena los 4 pasos de la vía común de la coagulación."
+        },
+        {
+          "titulo": "Factores según su lugar de síntesis", "lv": 2, "fuente": "Diapositiva 34",
+          "defs": [],
+          "prof": "<p>Factores de coagulación: Según su lugar de síntesis</p><ul><li><strong>Plasmáticos</strong>: VII, IX, X, XI, XII y XIII, precalicreína (PK) y quininógeno de alto peso molecular</li><li><strong>Hepáticos</strong>: I, II, V, VII, VIII-C, IX, X, XI, LXIII, PK</li><li><strong>Tisulares</strong>: tromboplastina tisular, colágeno, parte del factor VIII</li><li><strong>Plaquetarios</strong>: FP3</li></ul>",
+          "entiende": "La mayoría de los factores los fabrica el hígado: por eso una enfermedad del hígado altera la coagulación.",
+          "truco": "<strong>4 orígenes: plasma, hígado, tejidos, plaquetas</strong>.",
+          "q": "¿Cómo se clasifican los factores de coagulación según su lugar de síntesis?"
+        },
+        {
+          "titulo": "Factores según su dependencia", "lv": 1, "fuente": "Diapositiva 35",
+          "defs": [{ "t": "Anticoagulantes orales", "facil": "Medicamentos que dificultan la coagulación." }],
+          "prof": "<p>Según su dependencia o sensibilidad:</p><ul><li><strong>Dependientes de vitamina K: II, VII, IX y X</strong>. Pierden su actividad si hay déficit de vitamina K o si hay acción antagonista de anticoagulantes orales.</li><li><strong>Factores sensibles a la trombina</strong>: I, II, V, VII, VIII y XIII</li></ul>",
+          "entiende": "Los anticoagulantes orales funcionan bloqueando la vitamina K: así dejan sin actividad a los factores II, VII, IX y X.",
+          "truco": "Vitamina K: «<strong>2, 7, 9, 10</strong>» (dos-siete-nueve-diez).",
+          "q": "¿Qué factores dependen de la vitamina K y qué les pasa si falta?"
+        },
+        {
+          "titulo": "Factores reguladores o inhibidores", "lv": 2, "fuente": "Diapositiva 36",
+          "defs": [{ "t": "Proteasas", "facil": "Enzimas que rompen proteínas." }],
+          "prof": "<p>Factores reguladores o inhibidores de la coagulación:</p><ul><li><strong>Flujo sanguíneo normal</strong>: arrastra parte de los factores activados, diluyendo su acción.</li><li><strong>Hígado</strong>: actúa como filtro, retirando de la sangre en circulación los factores activados e inactivándolos.</li><li><strong>Proteasas</strong>: que degradan o inhiben factores: Proteína C, Proteína S, Antitrombina III</li></ul>",
+          "entiende": "La coagulación tiene frenos para que no se forme un coágulo donde no toca: la propia sangre que corre, el hígado y unas proteínas inhibidoras.",
+          "truco": "Frenos: <strong>Flujo, Hígado, Proteasas</strong>.",
+          "q": "Di los 3 mecanismos que regulan o frenan la coagulación."
+        },
+        {
+          "titulo": "Proteína C, proteína S y antitrombina III", "lv": 1, "fuente": "Diapositivas 37 y 38",
+          "defs": [
+            { "t": "Heparina", "facil": "Sustancia anticoagulante que potencia la antitrombina III." },
+            { "t": "Mastocitos", "facil": "Células del sistema inmunitario que guardan sustancias en gránulos." }
+          ],
+          "prof": "<ul><li><strong>Proteína C</strong>: proteína plasmática de síntesis hepática, dependiente de vit. K. Se activa en presencia de trombina y degrada factores Va y VIIIa, limitando proyección de cascada.</li><li><strong>Proteína S</strong>: plasmática hepática, cofactor de proteína C</li><li><strong>Antitrombina III (AT III)</strong>: glucoproteína sintetizada en el hígado. No dependiente de vitamina K. <strong>Principal inhibidora de la coagulación</strong>. Inhibe irreversiblemente varios factores: trombina, calicreína, IXa, Xa, XIa y XIIa. Su acción se ve aumentada por la <strong>heparina</strong>, que se encuentra en el endotelio de vasos sanguíneos y en gránulos de mastocitos</li></ul>",
+          "entiende": "La proteína C (con la S de ayudante) corta la cascada; la antitrombina III es el freno principal, y la heparina lo refuerza.",
+          "truco": "<strong>S = Socia de la C</strong>. <strong>AT III + heparina</strong> = freno principal.",
+          "q": "¿Qué hacen la proteína C, la proteína S y la antitrombina III? ¿Qué sustancia potencia la AT III?"
+        },
+        {
+          "titulo": "La reparación tras el coágulo", "lv": 2, "fuente": "Diapositivas 39 y 40",
+          "defs": [{ "t": "Angiogénesis", "facil": "Formación de vasos sanguíneos nuevos." }],
+          "prof": "<p>Tras establecimiento del coágulo, es necesario reparar tejidos lesionados mediante <strong>cicatrización</strong>.</p><p>Coágulo hace de base, células migran y se fijan a él. Principalmente <strong>neutrófilos</strong> (limpian) y <strong>macrófagos</strong> (inducen reparación)</p><ul><li>Células endoteliales realizan <strong>angiogénesis</strong> (nuevos vasos son muy permeables, se forman edemas)</li><li><strong>Fibroblastos</strong> proliferan y aportan colágeno que rellena la zona en 5-7 días</li><li>Células basales del epitelio proliferan bajo costra del coágulo y después originan nuevo epitelio.</li></ul><p>Tras un mes, cicatriz formada por tejido conjuntivo acelular recubierto de epidermis</p>",
+          "entiende": "El coágulo es el andamio: llegan los limpiadores, se hacen vasos nuevos, se rellena con colágeno y se cubre con piel nueva.",
+          "truco": "<strong>Limpiar, vasos, colágeno (5-7 días), piel; cicatriz al mes</strong>.",
+          "q": "Explica cómo se repara el tejido después de formarse el coágulo."
+        },
+        {
+          "titulo": "La fibrinólisis", "lv": 1, "fuente": "Diapositiva 41",
+          "defs": [{ "t": "Plasmina", "facil": "La enzima que deshace la fibrina del coágulo." }],
+          "prof": "<p>Degradación de la fibrina es catalizada por <strong>plasmina</strong> y sus restos son captados por macrófagos. Plasmina formada por activación de <strong>plasminógeno</strong>, sintetizado en el hígado. Activación por:</p><ul><li>Factores intrínsecos (la propia cascada)</li><li>Factores extrínsecos: <strong>activador tisular del plasminógeno (t-PA)</strong>, un enzima sintetizado en endotelio vascular.</li></ul>",
+          "entiende": "Cuando el coágulo ya no hace falta, la plasmina lo deshace. El t-PA es el que la activa desde el endotelio.",
+          "truco": "<strong>Plasminógeno → plasmina → adiós fibrina</strong>.",
+          "q": "¿Qué es la fibrinólisis, qué enzima la hace y cómo se activa?"
+        }
+      ]
+    },
+    {
+      "titulo": "Fisiopatología vascular: los vasos",
+      "conceptos": [
+        {
+          "titulo": "La isquemia", "lv": 1, "fuente": "Diapositiva 42",
+          "defs": [
+            { "t": "Isquemia", "facil": "Falta de riego sanguíneo en una zona.", "diapo": "Reducción del flujo sanguíneo en una zona del organismo, provocando que sus células no reciban oxígeno y sufran lesiones graves, incluso irreversibles.", "n": 42 },
+            { "t": "Hipoxia", "facil": "Falta de oxígeno en los tejidos." }
+          ],
+          "prof": "<p>Patologías en vasos, corazón y circulación.</p><p><strong>Isquemia</strong>: reducción del flujo sanguíneo en una zona del organismo, provocando que sus células no reciban oxígeno y sufran lesiones graves, incluso irreversibles.</p><p>Isquemia lleva a <strong>hipoxia</strong> de los tejidos, consecuencias más graves en <strong>corazón y cerebro</strong>.</p>",
+          "entiende": "Isquemia es que no llega sangre; hipoxia es la consecuencia: no llega oxígeno.",
+          "truco": "<strong>Isquemia → hipoxia</strong>; lo peor, en corazón y cerebro.",
+          "q": "¿Qué es la isquemia, qué provoca y dónde es más grave?"
+        },
+        {
+          "titulo": "Clasificación de las enfermedades vasculares", "lv": 2, "fuente": "Diapositiva 43",
+          "defs": [],
+          "prof": "<p>Enfermedades vasculares en arterias o venas.</p><ul><li>Patologías vasculares por afectación de vasos: <strong>Aneurismas</strong>, <strong>Varices</strong></li><li>Patologías vasculares obstructivas: <strong>Aterosclerosis</strong>, <strong>Trombosis</strong>, <strong>Embolias</strong></li><li>Patologías cerebrovasculares</li></ul>",
+          "entiende": "O el vaso se deforma (aneurisma, varices) o se tapa (aterosclerosis, trombosis, embolia).",
+          "truco": "<strong>Se deforma</strong> o <strong>se tapa</strong>.",
+          "q": "Clasifica las patologías vasculares."
+        },
+        {
+          "titulo": "Aneurismas", "lv": 1, "fuente": "Diapositivas 44 y 45",
+          "defs": [
+            { "t": "Aneurisma", "facil": "Una dilatación anormal de un vaso, como un globo.", "diapo": "Dilatación patológica de un segmento de un vaso sanguíneo, habitualmente a nivel arterial", "n": 44 },
+            { "t": "Disfagia", "facil": "Dificultad para tragar." }
+          ],
+          "prof": "<p>Dilatación patológica de un segmento de un vaso sanguíneo, habitualmente a nivel arterial (<strong>aorta</strong>).</p><p><strong>Factores de riesgo</strong>: varones de 60 años, hipertensión, fumadores, factores de aterosclerosis.</p><p>Síntomas y evolución dependen de localización. La mayoría <strong>asintomáticos</strong>, aunque compresión de tejidos puede provocar dolor torácico, tos, ronquera o disfagia</p><p><strong>Tratamiento</strong>: Según zona afectada. Medidas para controlar hipertensión + vigilancia periódica cada 6 meses. En caso de empeoramiento: tratamiento quirúrgico con implantación de injerto.</p>",
+          "entiende": "La pared de la arteria cede y se hincha. Casi nunca avisa; si molesta es porque aprieta lo que tiene al lado.",
+          "truco": "Riesgo: <strong>hombre, 60, hipertenso, fumador</strong>. Control cada <strong>6 meses</strong>.",
+          "q": "¿Qué es un aneurisma, dónde suele aparecer, cuáles son sus factores de riesgo y su tratamiento?"
+        },
+        {
+          "titulo": "Varices", "lv": 1, "fuente": "Diapositivas 46 y 47",
+          "defs": [{ "t": "Varices", "facil": "Venas dilatadas y retorcidas, sobre todo en las piernas." }],
+          "prof": "<p><strong>Varices</strong>: Dilataciones venosas, generalmente en extremidades inferiores.</p><p>Alteración en <strong>válvulas semilunares</strong> dificulta retorno venoso, sangre se acumula y venas se dilatan y se vuelven tortuosas.</p><p><strong>Factores de riesgo</strong>: Obesidad, sedentarismo, anticonceptivos orales, tabaquismo, hipertensión arterial, hipercolesterolemia, trombosis venosa profunda, traumatismos…</p><p><strong>Tratamientos</strong>: Medias de compresión, escleroterapia, terapia con láser, flebectomía…</p>",
+          "entiende": "Si las «puertas» de las venas fallan, la sangre se queda abajo, y la vena se ensancha y se retuerce.",
+          "truco": "<strong>Válvula rota → sangre parada → vena hinchada</strong>.",
+          "q": "¿Qué son las varices y por qué se producen? Di factores de riesgo y tratamientos."
+        }
+      ]
+    },
+    {
+      "titulo": "Patologías obstructivas: aterosclerosis y trombosis",
+      "conceptos": [
+        {
+          "titulo": "Aterosclerosis", "lv": 1, "fuente": "Diapositivas 48 y 49",
+          "defs": [{ "t": "Ateroma", "facil": "Placa de grasa y colesterol en la pared de una arteria." }],
+          "prof": "<p><strong>Aterosclerosis</strong>: Depósito de placas (<strong>ateromas</strong>) en la pared interna de las arterias. Placas compuestas por grasas, colesterol, Ca y otras sustancias. Con el tiempo se endurecen y estrechan luz arterial. Afectan a cualquier arteria, según zona afectada, distintas enfermedades</p><p>Además de reducción de flujo, existe riesgo de que la placa se suelte y pase al flujo sanguíneo, pudiendo llegar a bloquear vasos más pequeños.</p><p><strong>Prevención clave</strong>: Dieta sana, baja en grasas saturadas, ejercicio regular. Controlar hipertensión y diabetes</p>",
+          "imgs": [{ "src": "img/d049.jpg", "alt": "Placa de ateroma (diap. 49)" }],
+          "entiende": "La grasa se pega a la pared como la cal en una tubería: estrecha el paso y, si se suelta un trozo, puede tapar un vaso más pequeño.",
+          "truco": "<strong>Atero = papilla</strong> (de grasa); <strong>esclerosis = endurecimiento</strong>.",
+          "q": "¿Qué es la aterosclerosis, de qué están hechas las placas, qué riesgos tiene y cómo se previene?"
+        },
+        {
+          "titulo": "Trombosis: qué es y sus causas", "lv": 1, "fuente": "Diapositiva 50",
+          "defs": [{ "t": "Trombo", "facil": "Un coágulo dentro de un vaso." }],
+          "prof": "<p><strong>Trombosis</strong>: Formación de un coágulo (<strong>trombo</strong>) en el interior de un vaso sanguíneo. Muchas causas posibles:</p><ul><li>Alteración en vasos por aterosclerosis, ruptura traumática o alteración del flujo sanguíneo</li><li>Alteración en factores de coagulación o en anticoagulantes</li><li>Alteraciones en composición de la sangre (⬇fracción líquida)</li><li>Alteraciones vasculares que provocan flujos en torbellino (estenosis mitral)</li><li>Lesiones en endotelio.</li></ul>",
+          "entiende": "Un coágulo donde no debe: porque el vaso está dañado, porque la sangre coagula de más o porque circula mal.",
+          "truco": "Causas: <strong>vaso, coagulación, sangre espesa, torbellino, endotelio</strong>.",
+          "q": "¿Qué es una trombosis? Di sus causas."
+        },
+        {
+          "titulo": "Trombosis según el grado de oclusión", "lv": 1, "fuente": "Diapositivas 51 y 52",
+          "defs": [],
+          "prof": "<p>Clasificación según nivel de oclusión y lugar en que se originan:</p><ul><li>Según grado de oclusión: Ocluyente, Mural</li><li>Según ubicación: Por precipitación, Por coagulación, Hialina</li></ul><p>Según grado de oclusión</p><ul><li><strong>Ocluyente</strong>: obstrucción total</li><li><strong>Mural</strong>: obstrucción parcial</li></ul>",
+          "imgs": [{ "src": "img/d052.jpg", "alt": "Trombo oclusivo y trombo mural (diap. 52)" }],
+          "entiende": "El mural se pega a la pared (muro) y deja pasar algo; el ocluyente lo tapa todo.",
+          "truco": "<strong>Mural = muro</strong>, a un lado; <strong>ocluyente = ocluye</strong> todo.",
+          "q": "Clasifica las trombosis según el grado de oclusión."
+        },
+        {
+          "titulo": "Trombosis según su ubicación", "lv": 1, "fuente": "Diapositivas 53 y 54",
+          "defs": [],
+          "prof": "<ul><li><strong>Trombosis por precipitación (trombos blancos)</strong>. Carácter mural, principalmente en arterias o corazón. Causa más común es presencia de ateromas. Trombo compuesto por plaquetas, escasa fibrina y hematíes.</li><li><strong>Trombosis por coagulación (trombos rojos)</strong>. En venas tras enlentecimiento de circulación. Oclusivos. Trombo formado por mezcla de fibrina y plaquetas (más fibrina)</li><li><strong>Trombosis hialina</strong>: en vénulas o capilares. Provocadas por el desprendimiento de plaquetas y fibrinas</li></ul>",
+          "imgs": [{ "src": "img/d053.jpg", "alt": "Trombo sobre una placa de ateroma (diap. 53)" }],
+          "entiende": "Blancos en arterias (sobre todo plaquetas, sobre un ateroma); rojos en venas lentas (sobre todo fibrina, que atrapa glóbulos rojos); hialinos en los vasos más pequeños.",
+          "truco": "<strong>Blanco = arteria = plaquetas · Rojo = vena = fibrina</strong>.",
+          "q": "Compara la trombosis por precipitación, por coagulación y hialina."
+        },
+        {
+          "titulo": "Gravedad y detección: el dímero D", "lv": 1, "fuente": "Diapositiva 55",
+          "defs": [{ "t": "Dímero D", "facil": "Un resto de la fibrina que, en un análisis, avisa de coágulos." }],
+          "prof": "<p>Cualquier trombosis es grave (impide irrigación) y con consecuencias diversas.</p><p>Trombos no provocan síntomas hasta que ocurre el daño→ cuando algo puede favorecer formación de trombos se administran <strong>anticoagulantes preventivamente</strong>.</p><p>Detección de trastornos en coagulación mediante análisis de sangre (detección de <strong>dímero D</strong>)</p>",
+          "entiende": "Como no avisan, se previenen con anticoagulantes; en el laboratorio, el dímero D es la pista.",
+          "truco": "<strong>Dímero D = Detecta</strong> coágulos.",
+          "q": "¿Por qué se dan anticoagulantes de forma preventiva y qué se mide en sangre para detectar trastornos de coagulación?"
+        }
+      ]
+    },
+    {
+      "titulo": "Embolias y accidentes cerebrovasculares",
+      "conceptos": [
+        {
+          "titulo": "La embolia", "lv": 1, "fuente": "Diapositiva 56",
+          "defs": [{ "t": "Émbolo", "facil": "Una partícula que viaja por la sangre hasta que se queda atascada." }],
+          "prof": "<p><strong>Embolias</strong>: Oclusión parcial o total de un vaso debido a una partícula extraña circulante (<strong>émbolo</strong>) que se encaja en un vaso de pequeño calibre.</p>",
+          "imgs": [{ "src": "img/d056.jpg", "alt": "Émbolo circulante y émbolo bloqueando la circulación (diap. 56)" }],
+          "entiende": "El trombo se forma en el sitio; el émbolo viaja y tapa un vaso lejos de donde salió.",
+          "truco": "<strong>Trombo = quieto · Émbolo = viajero</strong>.",
+          "q": "¿Qué es una embolia y en qué se diferencia de una trombosis?"
+        },
+        {
+          "titulo": "Tipos de embolia", "lv": 1, "fuente": "Diapositiva 57",
+          "defs": [],
+          "prof": "<p>Según la naturaleza del émbolo distinguimos:</p><ul><li><strong>Tromboembolia</strong> (la mayoría)</li><li><strong>Embolia grasa</strong>: infiltración de tejido adiposo en vasos tras fractura ósea.</li><li><strong>Embolia aérea o gaseosa</strong>: en buzos, cirugías en tórax o cuello, o heridas profundas en tórax.</li><li><strong>Embolia séptica</strong>: pus, puede contener bacterias</li><li><strong>Embolia tisular</strong>: fragmentos de tejido</li><li><strong>Embolia de cuerpo extraño</strong>: materiales extraños al organismo.</li><li><strong>Embolia de líquido amniótico</strong>: células fetales, cabello, etc. que entran en torrente de la madre</li></ul>",
+          "entiende": "El tipo de embolia lo da el «viajero»: un trozo de trombo, grasa, aire, pus, tejido, un objeto o líquido amniótico.",
+          "truco": "<strong>T-G-A-S-T-C-A</strong>: Trombo, Grasa, Aire, Séptica, Tisular, Cuerpo extraño, Amniótico.",
+          "q": "Di los tipos de embolia según el émbolo. ¿Cuál es la más frecuente?"
+        },
+        {
+          "titulo": "Accidentes vasculares cerebrales (AVC o ictus)", "lv": 1, "fuente": "Diapositiva 58",
+          "defs": [{ "t": "Ictus", "facil": "Otro nombre del accidente vascular cerebral." }],
+          "prof": "<p><strong>Accidentes vasculares cerebrales (AVC o ictus)</strong>: Interrupciones del riego sanguíneo en alguna parte del cerebro. Puede deberse a estenosis u obstrucción (<strong>AVC isquémicos</strong>) o rotura de vaso (<strong>AVC hemorrágicos</strong>)</p>",
+          "imgs": [{ "src": "img/d058.jpg", "alt": "AVC isquémico y AVC hemorrágico (diap. 58)" }],
+          "entiende": "O el vaso se tapa (isquémico) o se rompe (hemorrágico).",
+          "truco": "<strong>Tapón o grieta</strong>.",
+          "q": "¿Qué es un AVC y cuáles son sus 2 tipos?"
+        },
+        {
+          "titulo": "AVC isquémicos", "lv": 1, "fuente": "Diapositiva 59",
+          "defs": [{ "t": "Estenosis", "facil": "Estrechamiento de un vaso." }],
+          "prof": "<p><strong>AVC isquémicos</strong> constituyen el <strong>80%</strong>:</p><ul><li><strong>De origen extravascular</strong>: estenosis de arterias debida a vasoconstricción (por disminución del gasto cardiaco o hipotensión arterial)</li><li><strong>De origen intravascular</strong>: émbolo en arteria.<ul><li><strong>Aterotrombótico</strong>: 55%. Trombo en arterias que irrigan el cerebro→isquemia. Ateromas favorecen.</li><li><strong>Embólico</strong>: émbolo llega por la circulación. Causas diversas: cardiopatías, fracturas, tumores, fármacos…</li></ul></li></ul>",
+          "entiende": "8 de cada 10 ictus son por falta de riego. Lo más frecuente es un trombo sobre un ateroma en las arterias del cerebro.",
+          "truco": "Isquémicos <strong>80 %</strong>; aterotrombótico <strong>55 %</strong>.",
+          "q": "¿Qué porcentaje de los AVC son isquémicos y cómo se clasifican?"
+        },
+        {
+          "titulo": "AVC hemorrágicos", "lv": 1, "fuente": "Diapositiva 60",
+          "defs": [{ "t": "Apoplejía", "facil": "Hemorragia cerebral." }],
+          "prof": "<p><strong>AVC hemorrágicos</strong>: hemorragia cerebral o apoplejía (<strong>20%</strong> de los AVC). Causado por pico hipertensivo o aneurisma congénito (aparte de traumas)</p>",
+          "entiende": "Un vaso del cerebro se rompe, por un pico de tensión o por un aneurisma de nacimiento.",
+          "truco": "Hemorrágicos <strong>20 %</strong>: «<strong>pico o globo</strong>» (pico hipertensivo o aneurisma).",
+          "q": "¿Qué es un AVC hemorrágico, qué porcentaje supone y qué lo causa?"
+        },
+        {
+          "titulo": "Síntomas del AVC", "lv": 1, "fuente": "Diapositiva 61",
+          "defs": [
+            { "t": "Hemiparesia / hemiplejia", "facil": "Debilidad / parálisis de un lado del cuerpo." },
+            { "t": "Disartria", "facil": "Dificultad para articular las palabras." }
+          ],
+          "prof": "<p>Síntomas AVC muy variados (según área cerebral).</p><ul><li>Pérdida de fuerza en 1 brazo o pierna, o cara (<strong>hemiparesia/hemiplejia</strong>)</li><li>Dificultad para expresarse, entender o lenguaje ininteligible (<strong>disartria</strong>)</li><li>Dificultad al caminar, pérdida de equilibrio o coordinación</li><li>Mareos, dolor de cabeza brusco..</li><li>Pérdida de visión en 1 o ambos ojos</li></ul>",
+          "entiende": "Dependen de la zona del cerebro afectada, y casi siempre empiezan de golpe y en un lado del cuerpo.",
+          "truco": "<strong>Fuerza, habla, equilibrio, cabeza, vista</strong>.",
+          "q": "Di 5 síntomas de un AVC."
+        },
+        {
+          "titulo": "Factores de riesgo del AVC", "lv": 1, "fuente": "Diapositiva 62",
+          "defs": [],
+          "prof": "<p>Factores de riesgo AVC:</p><ul><li><strong>No modificables</strong>: edad, sexo, raza, antecedentes familiares</li><li><strong>Modificables</strong>: hipertensión arterial, tabaco, consumo de grasas, diabetes, enfermedad cardíaca, alcohol, obesidad, vida sedentaria, anticonceptivos orales</li></ul>",
+          "entiende": "Los que no puedes cambiar vienen contigo; los modificables dependen de hábitos y del control de otras enfermedades.",
+          "truco": "No modificables: «<strong>E-S-R-A</strong>»: Edad, Sexo, Raza, Antecedentes.",
+          "q": "Di los factores de riesgo del AVC no modificables y 5 modificables."
+        }
+      ]
+    },
+    {
+      "titulo": "Fisiopatología cardiaca",
+      "conceptos": [
+        {
+          "titulo": "Las patologías del corazón", "lv": 2, "fuente": "Diapositiva 63",
+          "defs": [],
+          "prof": "<ul><li><strong>Arritmias</strong></li><li><strong>Cardiopatías isquémicas</strong></li><li><strong>Valvulopatías</strong></li></ul><p>Trastornos hemodinámicos (hiper e hipotensión) también afectan a actividad del corazón.</p>",
+          "entiende": "Fallos del ritmo, del riego o de las válvulas.",
+          "truco": "<strong>Ritmo, riego, válvulas</strong>.",
+          "q": "Di los 3 grupos de patologías cardiacas."
+        },
+        {
+          "titulo": "Arritmias", "lv": 1, "fuente": "Diapositiva 64",
+          "defs": [
+            { "t": "Taquicardia", "facil": "Corazón demasiado rápido." },
+            { "t": "Bradicardia", "facil": "Corazón demasiado lento." }
+          ],
+          "prof": "<p><strong>Arritmias</strong>: Trastorno en los latidos o en el ritmo del corazón. Pueden ser signo de distintos trastornos o consecuencia de un mal funcionamiento del sistema eléctrico del corazón.</p><p>3 trastornos básicos:</p><ul><li><strong>Taquicardia</strong>: más de 100 latidos/minuto</li><li><strong>Bradicardia</strong>: menos de 60 latidos/minuto</li><li><strong>Patrón irregular</strong></li></ul>",
+          "entiende": "Lo normal está entre 60 y 100 latidos por minuto: por encima es taquicardia, por debajo bradicardia.",
+          "truco": "<strong>Taqui = rápido (&gt;100) · Bradi = lento (&lt;60)</strong>.",
+          "q": "¿Qué es una arritmia? Di sus 3 trastornos básicos con sus cifras."
+        },
+        {
+          "titulo": "Cardiopatía isquémica y SCA", "lv": 1, "fuente": "Diapositiva 65",
+          "defs": [{ "t": "Síndrome coronario agudo (SCA)", "facil": "Los síntomas de un corazón al que de repente le falta riego." }],
+          "prof": "<p><strong>Cardiopatías isquémicas</strong>: Obstrucción en arterias coronarias o en sus ramificaciones provocará isquemia, que causará hipoxia del miocardio afectada.</p><p><strong>Síndrome coronario agudo (SCA)</strong>: conjunto de síntomas clínicos compatibles con cardiopatía isquémica aguda.</p>",
+          "entiende": "Se tapa una coronaria → no llega sangre al músculo del corazón → le falta oxígeno.",
+          "truco": "<strong>Coronaria tapada → isquemia → hipoxia del miocardio</strong>.",
+          "q": "¿Qué es una cardiopatía isquémica y qué es el síndrome coronario agudo?"
+        },
+        {
+          "titulo": "Angina de pecho", "lv": 1, "fuente": "Diapositiva 66",
+          "defs": [{ "t": "Angor", "facil": "Otro nombre de la angina de pecho." }],
+          "prof": "<p>Patologías más comunes que causan cardiopatía isquémica:</p><p><strong>Angor inestable o angina de pecho</strong>: dolor torácico debido a isquemia de miocardio. Dolor suele ser de <strong>corta duración</strong>, <strong>no causa lesiones permanentes</strong>, puede evolucionar hacia infarto agudo de miocardio. Suele deberse a presencia de <strong>ateromas</strong> en vasos coronarios.</p>",
+          "entiende": "Es un aviso: el corazón se queja por falta de riego, pero todavía no se ha muerto tejido.",
+          "truco": "<strong>Angina = aviso · Infarto = daño</strong>.",
+          "q": "¿Qué es la angina de pecho, cuánto dura y deja lesiones?"
+        },
+        {
+          "titulo": "Infarto agudo de miocardio", "lv": 1, "fuente": "Diapositiva 67",
+          "defs": [{ "t": "Necrosis", "facil": "Muerte de las células de un tejido." }],
+          "prof": "<p><strong>Infarto agudo de miocardio</strong>: cuadro de dolor más intenso debido a <strong>necrosis</strong> de tejido cardiaco por falta de irrigación, que se mantiene <strong>más de 20 minutos</strong>. Causa más habitual es un <strong>trombo</strong> que bloquea circulación de arteria coronaria, se suele formar por <strong>ateromas</strong>.</p>",
+          "entiende": "Si la falta de riego dura más de 20 minutos, el músculo se muere (necrosis): eso ya es un infarto.",
+          "truco": "Infarto: <strong>&gt;20 minutos + necrosis</strong>.",
+          "q": "¿Qué es un infarto agudo de miocardio, cuánto dura la falta de riego y cuál es su causa más habitual?"
+        },
+        {
+          "titulo": "Valvulopatías", "lv": 1, "fuente": "Diapositiva 68",
+          "defs": [{ "t": "Endocarditis infecciosa", "facil": "Infección del endocardio de una válvula por bacterias." }],
+          "prof": "<p><strong>Valvulopatías</strong>: Alteraciones en 1 ó varias de las válvulas del corazón, que impiden apertura o cierre completo, quitando efectividad al bombeo.</p><p>Causas habituales: <strong>envejecimiento</strong> (endurecimiento y calcificación valvular), <strong>endocarditis infecciosa</strong> (bacterias se fijan al endocardio de una válvula y comienzan a multiplicarse→vegetaciones)</p>",
+          "entiende": "Una puerta que no abre o no cierra del todo: el corazón bombea peor.",
+          "truco": "Causas: <strong>edad o bacterias</strong>.",
+          "q": "¿Qué es una valvulopatía y cuáles son sus causas habituales?"
+        }
+      ]
+    },
+    {
+      "titulo": "Fisiopatología hemodinámica y de la coagulación",
+      "conceptos": [
+        {
+          "titulo": "Alteraciones de la tensión arterial", "lv": 2, "fuente": "Diapositiva 69",
+          "defs": [],
+          "prof": "<p>Alteraciones de la tensión arterial: Pueden impedir funcionamiento normal del aparato cardiovascular. Altamente ligadas a volemia. Cuando tensión supera márgenes de normalidad o se mantienen valores elevados de forma continuada las consecuencias pueden ser graves.</p>",
+          "entiende": "La tensión va de la mano de la volemia: si una se descontrola, la otra también.",
+          "truco": "<strong>Tensión ↔ volemia</strong>.",
+          "q": "¿Con qué parámetro están muy ligadas las alteraciones de la tensión arterial?"
+        },
+        {
+          "titulo": "Hipertensión arterial (HTA)", "lv": 1, "fuente": "Diapositivas 70 y 71",
+          "defs": [
+            { "t": "Hipertensión primaria", "facil": "La que no tiene una causa concreta (la mayoría)." },
+            { "t": "Hipertensión secundaria", "facil": "La que se debe a algo concreto: alcohol, fármacos, riñón." }
+          ],
+          "prof": "<p>Principal factor de riesgo cardiovascular, “<strong>asesino silencioso</strong>” (asintomático)</p><p>Síntomas en hipertensión maligna: dolores de cabeza, confusión, cambios en la visión, sangrado nasal, mareos, náuseas y vómitos.</p><p><strong>90%</strong> de los casos no hay causa concreta que desencadene HTA, por lo que se llama <strong>hipertensión primaria</strong>. Factores predisponentes: edad avanzada, antecedentes familiares, diabetes, colesterol, obesidad.</p><p>En un porcentaje más pequeño HTA es secundaria a consumo de alcohol, fármacos, enfermedades renales→<strong>Hipertensión secundaria</strong>.</p><p>Reconocimiento precoz esencial, si ya existe lesión se pueden desarrollar ictus, trombosis cerebrales, infartos o insuficiencia renal.</p><p><strong>Tratamiento</strong>:</p><ul><li>Hábitos de vida saludables: dieta mediterránea, control peso, no fumar</li><li>Uso de fármacos</li></ul>",
+          "entiende": "No duele, pero va dañando vasos y órganos en silencio: por eso hay que medirla.",
+          "truco": "<strong>90 % primaria</strong> (sin causa); el resto, secundaria (alcohol, fármacos, riñón).",
+          "q": "¿Por qué la HTA es el «asesino silencioso»? Diferencia la primaria de la secundaria."
+        },
+        {
+          "titulo": "Hipotensión y shock", "lv": 1, "fuente": "Diapositiva 72",
+          "defs": [{ "t": "Shock hipovolémico", "facil": "Fallo circulatorio por perder mucho líquido." }],
+          "prof": "<p><strong>Hipotensión arterial</strong>: Presión muy baja. y falta suministro de sangre a órganos y tejidos persona entra en <strong>shock</strong>. Generalmente por pérdida de líquidos (hemorragia, deshidratación, quemaduras, diarreas…) →<strong>Shock hipovolémico</strong>.</p><p>Síntomas: piel fría y sudada, pulso débil pero acelerado, respiración irregular, boca seca, pupilas dilatadas</p>",
+          "entiende": "Si se pierde mucho líquido, baja la presión y la sangre no llega a los órganos: el corazón late rápido para compensar, pero flojo.",
+          "truco": "Shock: <strong>fría, sudada, pulso rápido y débil</strong>.",
+          "q": "¿Qué es el shock hipovolémico, qué lo causa y cuáles son sus síntomas?"
+        },
+        {
+          "titulo": "El edema", "lv": 1, "fuente": "Diapositiva 73",
+          "defs": [{ "t": "Edema", "facil": "Hinchazón por acumulación de líquido.", "diapo": "Acumulación de líquido en el espacio intercelular o intersticial o en cavidades del organismo.", "n": 73 }],
+          "prof": "<p><strong>Edemas</strong>: Acumulación de líquido en el espacio intercelular o intersticial o en cavidades del organismo.</p><p>Cantidad de líquido intersticial regulada por homeostasis.</p><p>H<sub>2</sub>O supone <strong>60%</strong> de nuestro peso: <strong>40% intracelular, 20% intercelular</strong>.</p><p>Sistema linfático recoge el plasma intersticial, edema se produce cuando se produce una secreción excesiva de líquido o cuando no se recupera de forma correcta</p>",
+          "entiende": "O sale demasiado líquido de los vasos, o el sistema linfático no da abasto para recogerlo.",
+          "truco": "Agua: <strong>60 = 40 dentro + 20 fuera</strong> de las células.",
+          "q": "¿Qué es un edema y por qué se produce? ¿Cómo se reparte el agua del cuerpo?"
+        },
+        {
+          "titulo": "Edemas según su localización", "lv": 2, "fuente": "Diapositiva 74",
+          "defs": [{ "t": "Líquido cefalorraquídeo", "facil": "El líquido que rodea el cerebro y la médula." }],
+          "prof": "<ul><li><strong>Ascitis</strong>: Acúmulo de líquido en la cavidad peritoneal o abdominal.</li><li><strong>Hidrotórax o derrame pleural</strong>. Acúmulo de líquido en la cavidad pleural o torácica.</li><li><strong>Hidropericardio o derrame pericárdico</strong>. Acúmulo de líquido en la cavidad pericárdica.</li><li><strong>Hidrocefalia</strong>. Dilatación de los ventrículos cerebrales por acumulación de líquido cefalorraquídeo.</li><li><strong>Edema pulmonar</strong>. Acúmulo de líquido (trasudado) en el espacio intersticial del parénquima pulmonar.</li><li><strong>Edemas cutáneos comunes</strong>. Se observan en picaduras de mosquito, araña, avispa o abeja, y contacto de la piel con ciertas plantas, como la ortiga.</li></ul>",
+          "entiende": "El nombre dice dónde está el líquido: abdomen (ascitis), tórax, pericardio, cerebro, pulmón o piel.",
+          "truco": "<strong>Hidro- + sitio</strong>: hidrotórax, hidropericardio, hidrocefalia. Abdomen = <strong>ascitis</strong>.",
+          "q": "Di los tipos de edema según su localización. ¿Qué es la ascitis?"
+        },
+        {
+          "titulo": "Causas de los edemas", "lv": 1, "fuente": "Diapositiva 75",
+          "defs": [{ "t": "Síndrome nefrótico", "facil": "Enfermedad del riñón que hace perder proteínas por la orina." }],
+          "prof": "<ul><li><strong>Aumento de la presión de la sangre a nivel capilar</strong>: resultado de insuficiencia cardíaca, hipervolemia, obstrucción venosa o varices</li><li><strong>Aumento de la permeabilidad de los capilares</strong>: inflamación o daño vascular (quemaduras, traumatismos)</li><li><strong>Disminución proteínas plasmáticas</strong>: plasma sale de los vasos para equilibrar [ ]. En cirrosis hepática, malnutrición, quemaduras y síndrome nefrótico.</li><li><strong>Bloqueo del drenaje linfático</strong>: traumatismos, inflamación vías linfáticas y otras causas.</li></ul>",
+          "entiende": "Cuatro razones: empuja más (presión), el vaso es un colador (permeabilidad), la sangre ya no «tira» del agua (pocas proteínas) o el desagüe está tapado (linfa).",
+          "truco": "<strong>Presión, Permeabilidad, Proteínas, Linfa</strong>: «3 P y una L».",
+          "q": "Di las 4 causas de los edemas con un ejemplo de cada una."
+        },
+        {
+          "titulo": "Edema generalizado y localizado", "lv": 1, "fuente": "Diapositivas 76 y 77",
+          "defs": [{ "t": "Anasarca", "facil": "Edema generalizado de todo el cuerpo." }],
+          "prof": "<ul><li><strong>Generalizado</strong>: hinchazón difusa de todos los tejidos y órganos del cuerpo. Causas más habituales: insuficiencia cardiaca, síndrome nefrótico e insuficiencia hepática</li><li><strong>Edema localizado</strong>: en una parte concreta del cuerpo. Suele deberse a disminución de circulación linfática y aumento de presión venosa en zona afectada. También a un aumento local de la permeabilidad capilar causado por una inflamación</li></ul>",
+          "entiende": "El generalizado viene de un órgano que falla (corazón, riñón, hígado); el localizado, de un problema en esa zona.",
+          "truco": "Generalizado = <strong>corazón, riñón, hígado</strong>.",
+          "q": "Diferencia el edema generalizado del localizado y di sus causas."
+        },
+        {
+          "titulo": "Coagulación intravascular diseminada (CID)", "lv": 1, "fuente": "Diapositiva 78",
+          "defs": [{ "t": "Neoplasia maligna", "facil": "Cáncer." }],
+          "prof": "<p>Existen trastornos que provocan una coagulación generalizada: <strong>coagulación intravascular diseminada (CID)</strong>.</p><p>CID se produce por activación y estimulación excesiva del sistema de la coagulación.</p><p>Causas comunes: inflamación, infección, neoplasia maligna, COVID-19.</p>",
+          "entiende": "La coagulación se dispara por todo el cuerpo a la vez.",
+          "truco": "<strong>CID = Coagula en todos los sitIos a la vez</strong>.",
+          "q": "¿Qué es la CID y cuáles son sus causas comunes?"
+        },
+        {
+          "titulo": "Déficit de vitamina K y hemofilia", "lv": 1, "fuente": "Diapositiva 79",
+          "defs": [{ "t": "Hemofilia", "facil": "Enfermedad hereditaria en la que la sangre no coagula bien." }],
+          "prof": "<p>Alteraciones propias de la coagulación→ trastornos por déficit:</p><ul><li><strong>Deficiencia de vitamina K</strong>: esencial para formación de protrombina, factores VII, IX, X y proteína C.</li><li><strong>Hemofilia</strong>: deficiencias factores <strong>VIII y IX</strong>. Transmitida por el <strong>cromosoma X</strong>.</li></ul>",
+          "entiende": "Si faltan factores, la sangre no coagula bien y se sangra más. En la hemofilia faltan el VIII o el IX y se hereda por el X.",
+          "truco": "Hemofilia: <strong>8 y 9, ligada al X</strong>.",
+          "q": "¿Qué factores faltan en la hemofilia y cómo se transmite? ¿Para qué es esencial la vitamina K?"
+        },
+        {
+          "titulo": "Trombocitopenia", "lv": 1, "fuente": "Diapositiva 80",
+          "defs": [{ "t": "Púrpura trombocitopénica", "facil": "Pequeñas manchas de sangre en la piel por falta de plaquetas." }],
+          "prof": "<p><strong>Trombocitopenia</strong>: deficiencia de plaquetas en sistema vascular. producción insuficiente, descomposición en el torrente o incremento de descomposición en el bazo o hígado.</p><p>Personas con trombocitopenia tienden a sangrar a partir de vasos de pequeño calibre o capilares→pequeñas hemorragias puntiformes en los tejidos de todo el cuerpo: <strong>púrpura trombocitopénica</strong>.</p>",
+          "entiende": "Pocas plaquetas = no se forman bien los tapones = salen puntitos de sangre en la piel.",
+          "truco": "<strong>Trombocito = plaqueta · -penia = falta</strong>.",
+          "q": "¿Qué es la trombocitopenia, por qué se produce y qué es la púrpura trombocitopénica?"
+        }
+      ]
+    },
+    {
+      "titulo": "El aparato urinario: anatomía",
+      "conceptos": [
+        {
+          "titulo": "El aparato urinario y la nefrona", "lv": 1, "fuente": "Diapositivas 81 y 82",
+          "defs": [{ "t": "Nefrona", "facil": "La unidad del riñón que filtra la sangre y forma la orina.", "diapo": "La nefrona es la unidad estructural y funcional del riñón.", "n": 82 }],
+          "prof": "<p>Aparato urinario relacionado con aparatos reproductivos. Desde punto de vista fisiológico, relacionado con circulatorio.</p><p>Aparato urinario filtra la sangre, la libera de sustancias de desecho y participa activamente en el mantenimiento de la volemia</p><p><strong>Riñones</strong>: Encargados de la filtración de sangre y formación de orina.</p><p>La <strong>nefrona</strong> es la unidad estructural y funcional del riñón. Cada riñón está constituido por <strong>más de un millón de nefronas</strong>. Cada una de ellas forma orina, que conduce hacia las vías urinarias.</p>",
+          "entiende": "El riñón es un filtro hecho de más de un millón de filtros pequeños: las nefronas.",
+          "truco": "<strong>Nefrona = filtro</strong>; más de <strong>1 millón</strong> por riñón.",
+          "q": "¿Qué hace el aparato urinario? ¿Qué es la nefrona y cuántas tiene cada riñón?"
+        },
+        {
+          "titulo": "Las partes de la nefrona", "lv": 1, "fuente": "Diapositiva 83",
+          "defs": [{ "t": "Glomérulo", "facil": "Un ovillo de capilares donde se filtra la sangre." }],
+          "prof": "<p>Nefrona constituida por:</p><ul><li><strong>Corpúsculo renal o de Malpighi</strong><ul><li><strong>Glomérulo</strong> (ovillo de capilares a partir de arteria renal)</li><li><strong>Cápsula de Bowman</strong> rodeando glomérulo.</li></ul></li><li><strong>Sistema tubular</strong> continuación de la cápsula.<ul><li>Túbulo contorneado proximal</li><li>Asa de Henle</li><li>Túbulo contorneado distal, desemboca en tubo colector que acaba en papila renal</li></ul></li></ul>",
+          "imgs": [{ "src": "img/d087.jpg", "alt": "La nefrona y sus vasos (diap. 87)" }],
+          "entiende": "Primero se filtra (glomérulo dentro de la cápsula de Bowman) y luego el líquido recorre unos tubos donde se ajusta qué se queda y qué se va.",
+          "truco": "Orden: <strong>Glomérulo · Bowman · proximal · Henle · distal · colector</strong>.",
+          "q": "Di las partes de la nefrona en orden."
+        },
+        {
+          "titulo": "La estructura del riñón", "lv": 1, "fuente": "Diapositiva 85",
+          "defs": [{ "t": "Hilio renal", "facil": "La «puerta» del riñón por donde entran y salen vasos y uréter." }],
+          "prof": "<p>Estructura de los riñones:</p><ul><li><strong>Cápsula renal</strong>: externa, formada por tejido conjuntivo fibroso</li><li><strong>Zona cortical</strong>: amarillenta y granulosa, aquí se encuentran corpúsculos renales, se continúa hacia el interior con las columnas renales.</li><li><strong>Zona medular</strong>: dividida en pirámides renales. Contiene las asas de Henle y parte del túbulo colector, que desemboca en papila renal, que continúa con cáliz renal menor.</li><li>Cada 2 o 3 cálices renales menores convergen para formar un <strong>cáliz mayor</strong>, todos desembocan en la <strong>pelvis renal</strong></li><li><strong>Hilio renal</strong>: depresión en puntos de entrada y salida.</li></ul>",
+          "imgs": [{ "src": "img/d085.jpg", "alt": "Corte del riñón: corteza, médula y pelvis renal (diap. 85)" }],
+          "entiende": "Fuera, la corteza con los filtros; dentro, la médula con los tubos; y en el centro, los cálices y la pelvis, que recogen la orina.",
+          "truco": "<strong>Cápsula → corteza → médula → cálices menores → mayores → pelvis</strong>.",
+          "q": "Describe la estructura del riñón de fuera adentro."
+        },
+        {
+          "titulo": "Las vías urinarias", "lv": 1, "fuente": "Diapositiva 86",
+          "defs": [{ "t": "Urotelio", "facil": "El tejido que recubre por dentro las vías urinarias." }],
+          "prof": "<p><strong>Las vías urinarias</strong>: Conducen orina al exterior del cuerpo. Formadas por <strong>uréteres</strong>, que salen de cada riñón y conducen orina hasta la <strong>vejiga</strong>, donde se almacena. Finalmente, <strong>uretra</strong> conduce orina hasta el <strong>meato urinario</strong>, donde se expulsa.</p><p>Recubiertas de <strong>urotelio</strong></p>",
+          "imgs": [{ "src": "img/d086.jpg", "alt": "Riñones, uréteres, vejiga y uretra (diap. 86)" }],
+          "entiende": "Riñón → uréter → vejiga (almacén) → uretra → fuera.",
+          "truco": "<strong>Uréteres son 2</strong> (uno por riñón); <strong>uretra, 1</strong>.",
+          "q": "Ordena las vías urinarias desde el riñón hasta el exterior."
+        },
+        {
+          "titulo": "Los vasos sanguíneos del riñón", "lv": 2, "fuente": "Diapositiva 87",
+          "defs": [{ "t": "Arteriola aferente / eferente", "facil": "La que entra al glomérulo / la que sale de él." }],
+          "prof": "<p><strong>Arterias renales</strong> derecha e izquierda salen de porción abdominal de la aorta. Arteria renal se ramifica en <strong>arteriolas aferentes</strong>, cada una forma un glomérulo.</p><p>Desde glomérulo sale <strong>arteriola eferente</strong> hacia zona tubular formando la <strong>red capilar peritubular</strong> (intercambio de sustancias).</p><p>Capilares venosos van confluyendo para formar vénulas que confluyen hasta formar <strong>vena renal</strong></p>",
+          "entiende": "La sangre entra al glomérulo por la aferente, sale por la eferente y rodea los túbulos para el intercambio antes de volver por la vena renal.",
+          "truco": "<strong>Aferente = Aproxima (entra) · Eferente = Exit</strong>.",
+          "q": "Explica el recorrido de la sangre por el riñón desde la aorta hasta la vena renal."
+        }
+      ]
+    },
+    {
+      "titulo": "El aparato urinario: fisiología",
+      "conceptos": [
+        {
+          "titulo": "Formación de la orina", "lv": 1, "fuente": "Diapositiva 89",
+          "defs": [
+            { "t": "Reabsorción", "facil": "Devolver a la sangre lo que el cuerpo necesita." },
+            { "t": "Secreción activa", "facil": "Echar a los túbulos sustancias tóxicas." }
+          ],
+          "prof": "<p><strong>Formación y expulsión de la orina</strong>: Sangre llega al glomérulo y se produce <strong>filtración</strong> del plasma. Sustancias filtradas pasan a cápsula de Bowman, punto de inicio del sistema tubular. Una vez ahí:</p><ul><li><strong>Reabsorción</strong>: se devuelven sustancias que el organismo necesita (H<sub>2</sub>O, Glucosa, Aa)</li><li><strong>Secreción activa</strong>: expulsión de sustancias tóxicas a red tubular.</li></ul><p>Aquello que queda en red tubular formará la orina</p>",
+          "imgs": [{ "src": "img/d089.jpg", "alt": "Filtración, reabsorción y secreción en la nefrona (diap. 89)" }],
+          "entiende": "Se filtra mucho, se recupera lo útil (agua, glucosa, aminoácidos), se añaden los tóxicos y lo que queda es orina.",
+          "truco": "<strong>Filtra, Recupera, Echa</strong>: F-R-S.",
+          "q": "Explica los 3 procesos de la formación de la orina."
+        },
+        {
+          "titulo": "La micción", "lv": 2, "fuente": "Diapositiva 90",
+          "defs": [{ "t": "Esfínter", "facil": "Músculo en anillo que abre o cierra un conducto." }],
+          "prof": "<p><strong>La micción</strong>: Proceso de vaciado de la vejiga urinaria.</p><p><strong>Esfínteres uretrales</strong> (interno y externo) a la salida de la vejiga se relajan para que orina fluya por uretra.</p><p>A partir de <strong>2-4 años</strong> micción se vuelve voluntaria, puede inhibirse o precipitarse por control encefálico</p>",
+          "entiende": "Dos anillos musculares cierran la vejiga; se relajan para orinar. Desde los 2-4 años lo controlamos.",
+          "truco": "<strong>2 esfínteres, 2-4 años</strong>.",
+          "q": "¿Qué es la micción y cuándo se vuelve voluntaria?"
+        },
+        {
+          "titulo": "Otras funciones: homeostasis", "lv": 1, "fuente": "Diapositiva 91",
+          "defs": [{ "t": "Homeostasis", "facil": "Mantener constante el medio interno." }],
+          "prof": "<p>Función principal es <strong>filtrado de la sangre</strong>. Pero además:</p><ul><li><strong>Regulación homeostasis</strong> (composición constante líquido intersticial y sangre)<ul><li>Mantener equilibrio <strong>hídrico</strong> (reabsorción H<sub>2</sub>O en nefronas)</li><li>Mantener equilibrio <strong>iónico</strong> (retirar más o menos iones)</li><li>Mantener equilibrio <strong>ácido-base</strong> (regular concentración de hidrones en plasma)</li></ul></li></ul>",
+          "entiende": "El riñón decide cuánta agua, cuántas sales y cuánto ácido se quedan en el cuerpo.",
+          "truco": "Equilibrios: <strong>agua, iones, ácido-base</strong>.",
+          "q": "¿Qué 3 equilibrios mantiene el riñón dentro de la homeostasis?"
+        },
+        {
+          "titulo": "Renina, EPO y vitamina D", "lv": 1, "fuente": "Diapositivas 92 y 93",
+          "defs": [
+            { "t": "Renina", "facil": "Enzima del riñón que pone en marcha la subida de la tensión." },
+            { "t": "Eritropoyetina (EPO)", "facil": "Hormona del riñón que hace fabricar glóbulos rojos." },
+            { "t": "Calcitriol", "facil": "La forma activa de la vitamina D." }
+          ],
+          "prof": "<ul><li><strong>Regulación de la tensión arterial</strong>: Secreción de enzima <strong>renina</strong> ante hipovolemia o hipotensión (Sistema Renina-Angiotensina-Aldosterona)</li><li><strong>Regulación de la producción de hemoglobina</strong>: Riñón secreta <strong>eritropoyetina (EPO)</strong> al detectar descenso en circulación de eritrocitos. Principal agente estimulador de eritropoyesis natural.</li><li><strong>Formación de la forma activa de la vitamina D</strong>: <strong>Calcitriol</strong> es forma activa, sintetizada en riñones a partir de calcidiol (formado en hígado a partir de vit. D3). Calcitriol regula concentración plasmática de Ca (absorción intestinal)</li></ul>",
+          "imgs": [{ "src": "img/d092.jpg", "alt": "Sistema renina-angiotensina-aldosterona (diap. 92)" }],
+          "entiende": "El riñón también es una glándula: sube la tensión (renina), manda fabricar glóbulos rojos (EPO) y activa la vitamina D (calcio).",
+          "truco": "<strong>R-E-D</strong>: Renina (tensión), EPO (glóbulos rojos), D (calcio).",
+          "q": "¿Qué hacen la renina, la EPO y el calcitriol, y cuándo se liberan?"
+        }
+      ]
+    },
+    {
+      "titulo": "Fisiopatología urinaria",
+      "conceptos": [
+        {
+          "titulo": "Fisiopatología urinaria y manifestaciones", "lv": 2, "fuente": "Diapositivas 94 y 95",
+          "defs": [{ "t": "Insuficiencia renal", "facil": "Cuando los riñones no pueden hacer su trabajo." }],
+          "prof": "<p>Composición y características de la orina es un indicador de alteraciones en la sangre.</p><p>Existen otros procesos patológicos en las vías urinarias: Obstrucciones, Infecciones, Mal funcionamiento de glomérulos..</p><p>Cuando aparato urinario no puede desempeñar sus funciones se produce <strong>insuficiencia renal</strong></p><p><strong>Manifestaciones urinarias</strong></p><ul><li>Alteraciones de la cantidad de orina</li><li>Alteraciones de la eliminación de orina</li><li>Alteraciones de la composición de la orina</li></ul>",
+          "entiende": "La orina es un espejo de la sangre. Puede cambiar en cuánta hay, en cómo sale o en qué lleva.",
+          "truco": "<strong>Cantidad, eliminación, composición</strong>.",
+          "q": "¿Qué 3 tipos de manifestaciones urinarias hay?"
+        },
+        {
+          "titulo": "Alteraciones de la cantidad de orina", "lv": 1, "fuente": "Diapositiva 96",
+          "defs": [
+            { "t": "Poliuria", "facil": "Orinar demasiado." },
+            { "t": "Oliguria", "facil": "Orinar poco." },
+            { "t": "Anuria", "facil": "Casi no orinar." }
+          ],
+          "prof": "<p>Normalmente <strong>1500cm<sup>3</sup></strong> de orina al día</p><ul><li><strong>Poliuria</strong>: más de 2500cm<sup>3</sup>/día</li><li><strong>Oliguria</strong>: entre 500 y 1000 cm<sup>3</sup>/día</li><li><strong>Anuria</strong>: inferior a 100cm<sup>3</sup>/día</li></ul>",
+          "imgs": [{ "src": "img/d096.jpg", "alt": "Cantidad de orina y su regulación por ADH y aldosterona (diap. 96)" }],
+          "entiende": "1 cm³ = 1 ml: lo normal es litro y medio al día.",
+          "truco": "<strong>Poli = mucha (&gt;2500) · Oligo = poca (500-1000) · An = nada (&lt;100)</strong>.",
+          "q": "¿Cuánta orina es normal al día? Define poliuria, oliguria y anuria con sus cifras."
+        },
+        {
+          "titulo": "Alteraciones de la eliminación y la composición", "lv": 1, "fuente": "Diapositivas 97 y 98",
+          "defs": [{ "t": "Hematuria", "facil": "Sangre en la orina." }],
+          "prof": "<p>Alteraciones de la eliminación de la orina</p><ul><li><strong>Polaquiuria</strong>: aumento en nº de micciones diarias, sin aumento del volumen</li><li><strong>Disuria</strong>: molestias y dificultad al orinar</li><li><strong>Retención urinaria</strong>: acumulación de orina en la vejiga, incapacidad para expulsarla.</li><li><strong>Nicturia</strong>: aumento de emisión de orina por la noche</li></ul><p>Alteraciones de la composición de la orina: <strong>Hematuria</strong> (presencia de sangre). Análisis de composición (pH..)</p>",
+          "entiende": "Polaquiuria no es orinar más cantidad (eso es poliuria), sino ir más veces.",
+          "truco": "<strong>Polaquiuria = muchas veces · Poliuria = mucha cantidad · Nicturia = de noche</strong>.",
+          "q": "Define polaquiuria, disuria, retención urinaria, nicturia y hematuria."
+        },
+        {
+          "titulo": "Cólico nefrítico", "lv": 1, "fuente": "Diapositiva 99",
+          "defs": [{ "t": "Litiasis", "facil": "Cálculos («piedras»)." }],
+          "prof": "<p><strong>Obstrucciones de las vías renales</strong></p><p><strong>Cólico nefrítico</strong>: cuadro de dolor producido como consecuencia de una obstrucción en el paso de la orina. 3,5% de todas las urgencias hospitalarias.</p><p>Causas diversas:</p><ul><li>Litiasis, urolitiasis, nefrolitiasis (cálculos)</li><li>Coágulos</li><li>Tumor</li><li>Patología retroperitoneal (fibrosis o linfoma)</li><li>Traumatismo renal. Muy grave si incluye rotura de vasos.</li></ul>",
+          "entiende": "Algo tapa el paso de la orina (sobre todo una piedra) y duele muchísimo.",
+          "truco": "Cólico = <strong>obstrucción + dolor</strong>; <strong>3,5 %</strong> de urgencias.",
+          "q": "¿Qué es el cólico nefrítico y cuáles son sus causas?"
+        },
+        {
+          "titulo": "Infecciones del tracto urinario (ITU)", "lv": 1, "fuente": "Diapositivas 100 y 101",
+          "defs": [
+            { "t": "Cistitis", "facil": "Infección de la vejiga." },
+            { "t": "Pielonefritis", "facil": "Infección que llega al riñón." },
+            { "t": "Piuria", "facil": "Pus en la orina." }
+          ],
+          "prof": "<p><strong>Infecciones del tracto urinario (ITU)</strong>: Debidas a la colonización y multiplicación de microorganismos (bacterias) en aparato urinario.</p><p>Después de las respiratorias, son las infecciones más frecuentes. Infecciones <strong>ascendentes</strong> (comienzan en uretra y pasan a vejiga). Si llegan a riñones pueden ser muy graves.</p><ul><li><strong>Uretritis y cistitis</strong>: necesidad fuerte y persistente de orinar. Ardor al orinar. Puede haber hematuria, orina turbia o con olor fuerte, molestias en área pélvica, dolor de espalda o del costado, fiebre, náuseas, vómitos…</li><li><strong>Pielonefritis</strong>: microorganismos ascienden hasta parénquima renal. Mayor probabilidad en personas con vagina, en la infancia y en la vejez. Dolor lumbar unilateral, náuseas, vómitos, fiebre y pus en la orina (piuria)</li></ul>",
+          "entiende": "Las bacterias suben: uretra → vejiga → riñón. Cuanto más arriba llegan, más grave.",
+          "truco": "<strong>Uretritis → cistitis → pielonefritis</strong> (sube y empeora).",
+          "q": "¿Qué es una ITU y por qué se dice que es ascendente? Diferencia la cistitis de la pielonefritis."
+        },
+        {
+          "titulo": "Síndrome nefrítico", "lv": 1, "fuente": "Diapositiva 102",
+          "defs": [{ "t": "Glomerulonefritis", "facil": "Inflamación de los glomérulos." }],
+          "prof": "<p>Mal funcionamiento de los glomérulos renales</p><p><strong>Síndrome nefrítico</strong>: Glomerulonefritis, triada de signos: <strong>hipertensión arterial, edema y hematuria</strong>. Además: polaquiuria, disuria, malestar.</p><p>Según aumenta deterioro síntomas más generales, sustancias tóxicas se quedarán en la sangre.</p><p>Causas: infecciones (pielonefritis), enfermedades autoinmunes, trastornos metabólicos y traumatismos.</p>",
+          "entiende": "Los glomérulos se inflaman: sube la tensión, se retiene líquido y sale sangre en la orina.",
+          "truco": "Nefr<strong>í</strong>tico = <strong>HEH</strong>: Hipertensión, Edema, Hematuria.",
+          "q": "¿Cuál es la tríada del síndrome nefrítico y cuáles son sus causas?"
+        },
+        {
+          "titulo": "Síndrome nefrótico", "lv": 1, "fuente": "Diapositiva 103",
+          "defs": [
+            { "t": "Proteinuria", "facil": "Proteínas en la orina." },
+            { "t": "Hipoalbuminemia", "facil": "Poca albúmina en la sangre." }
+          ],
+          "prof": "<p><strong>Síndrome nefrótico</strong>: Aumento permeabilidad glomérulos renales. Sustancias que no lo atravesarían lo hacen: <strong>proteinuria, hipoalbuminemia, hiperlipidemia y edemas</strong>.</p><p>Causas por diversos trastornos renales, también fruto de glomerulonefritis. Otra causa es que sea secundario a diabetes mellitus, lupus eritematoso sistémico, infecciones víricas o consumo de medicamentos</p>",
+          "entiende": "El filtro se vuelve un colador: se escapan las proteínas por la orina y, al faltar en la sangre, se forman edemas.",
+          "truco": "Nefr<strong>ó</strong>tico = pr<strong>o</strong>teínas fuera (<strong>o</strong> de cOlador).",
+          "q": "¿Qué ocurre en el síndrome nefrótico y cuáles son sus 4 signos?"
+        },
+        {
+          "titulo": "Insuficiencia renal", "lv": 1, "fuente": "Diapositiva 104",
+          "defs": [],
+          "prof": "<p><strong>Insuficiencia renal</strong>: Pérdida de la capacidad de los riñones para eliminar residuos y ayudar con el equilibrio de líquidos y electrolitos en el cuerpo.</p><p>Provoca alteraciones del flujo urinario, y manifestaciones muy diversas debidas a acumulación de productos nitrogenados, desequilibrio hidroelectrolítico y ácido-base.</p><p>Signos habituales: <strong>hipertensión arterial, edemas, anemia (déficit de EPO)</strong></p>",
+          "entiende": "Si el riñón falla, se acumulan desechos, se descontrolan agua y sales… y como no fabrica EPO, aparece anemia.",
+          "truco": "Signos: <strong>tensión alta, hinchazón, anemia</strong>.",
+          "q": "¿Qué es la insuficiencia renal y cuáles son sus signos habituales? ¿Por qué da anemia?"
+        },
+        {
+          "titulo": "Insuficiencia renal aguda y crónica", "lv": 1, "fuente": "Diapositivas 105 y 106",
+          "defs": [{ "t": "Diálisis", "facil": "Tratamiento que limpia la sangre con una máquina cuando el riñón no puede." }],
+          "prof": "<ul><li><strong>Insuficiencia renal aguda</strong>: Puede originarse por una necrosis tubular aguda, una enfermedad renal autoinmune, ⬇flujo por hipotensión, coagulación en vasos renales, infecciones, obstrucción de vías urinarias o complicaciones en embarazo. Pérdida rápida de función renal: atención de urgencia</li><li><strong>Insuficiencia renal crónica</strong>: Causas comunes <strong>diabetes e hipertensión arterial</strong>. Asintomática en etapas iniciales, o síntomas inespecíficos. Síntomas pueden ser piel anormalmente oscura o clara, dolor óseo, calambres, mal aliento, sed excesiva, susceptibilidad a hematomas o sangrado, sangre en las heces, impotencia, problemas de sueño, edemas… En etapa final riñones no pueden eliminar desechos. Únicas opciones son <strong>diálisis o trasplante de riñón</strong></li></ul>",
+          "entiende": "La aguda es de golpe (urgencia); la crónica avanza despacio y en silencio, sobre todo por diabetes e hipertensión, hasta necesitar diálisis o trasplante.",
+          "truco": "<strong>Aguda = urgencia · Crónica = diabetes + HTA → diálisis o trasplante</strong>.",
+          "q": "Compara la insuficiencia renal aguda y la crónica: causas, evolución y tratamiento final."
+        }
+      ]
+    }
+  ],
+  "llave": [
+    { "q": "Explica la hemostasia y la cascada de coagulación.", "porque": "Es la parte con más diapositivas seguidas del tema (28-41).", "resp": "La <strong>hemostasia</strong> detiene una hemorragia en 3 fases: <strong>vasoconstricción local</strong>, <strong>agregado plaquetario</strong> y <strong>coágulo</strong>. La coagulación transforma el <strong>fibrinógeno</strong> (soluble) en <strong>fibrina</strong> (insoluble) gracias a la <strong>trombina</strong>. Se activa por la <strong>vía intrínseca</strong> (lesión vascular) o la <strong>extrínseca</strong> (lesión tisular), que confluyen en la <strong>vía común</strong>: X → II (trombina) → I (fibrina) → XIII la insolubiliza. Frenos: flujo normal, hígado, proteína C y S y <strong>antitrombina III</strong> (potenciada por heparina). Después, la <strong>plasmina</strong> deshace la fibrina (fibrinólisis)." },
+    { "q": "Explica la trombosis y la embolia: definición, causas y tipos.", "porque": "Son las patologías obstructivas con más diapositivas (50-57).", "resp": "<strong>Trombosis</strong>: coágulo dentro de un vaso. Causas: aterosclerosis, alteraciones de la coagulación o de la sangre, flujos en torbellino, lesiones del endotelio. Según oclusión: <strong>ocluyente</strong> (total) o <strong>mural</strong> (parcial). Según ubicación: <strong>por precipitación</strong> (blancos, arterias, plaquetas), <strong>por coagulación</strong> (rojos, venas, más fibrina) e <strong>hialina</strong> (vénulas y capilares). Se detecta con el <strong>dímero D</strong>. <strong>Embolia</strong>: oclusión por un émbolo que circula y se encaja en un vaso pequeño: tromboembolia (la mayoría), grasa, aérea, séptica, tisular, de cuerpo extraño y de líquido amniótico." },
+    { "q": "¿Qué es un AVC? Tipos, síntomas y factores de riesgo.", "porque": "Cinco diapositivas propias con porcentajes.", "resp": "Interrupción del riego en una parte del cerebro. <strong>Isquémicos (80 %)</strong>: extravasculares (vasoconstricción) o intravasculares: aterotrombótico (55 %) y embólico. <strong>Hemorrágicos (20 %)</strong>: pico hipertensivo o aneurisma congénito. Síntomas: pérdida de fuerza en un lado, dificultad para hablar (disartria), pérdida de equilibrio, mareo o dolor de cabeza brusco, pérdida de visión. Riesgo no modificable: edad, sexo, raza, antecedentes; modificable: HTA, tabaco, grasas, diabetes, alcohol, obesidad, sedentarismo…" },
+    { "q": "Explica la nefrona y la formación de la orina.", "porque": "Es el centro del bloque urinario.", "resp": "La <strong>nefrona</strong> es la unidad estructural y funcional del riñón (más de un millón por riñón): <strong>corpúsculo renal</strong> (glomérulo + cápsula de Bowman) y <strong>sistema tubular</strong> (túbulo proximal, asa de Henle, túbulo distal y colector). La sangre se <strong>filtra</strong> en el glomérulo; en los túbulos hay <strong>reabsorción</strong> (agua, glucosa, aminoácidos) y <strong>secreción activa</strong> (tóxicos). Lo que queda es la orina (unos 1500 cm³ al día)." },
+    { "q": "Compara la angina de pecho y el infarto agudo de miocardio.", "porque": "Pregunta clásica de cardiopatía isquémica.", "resp": "Las dos son <strong>cardiopatías isquémicas</strong> por obstrucción coronaria, casi siempre por <strong>ateromas</strong>. La <strong>angina</strong>: dolor torácico de corta duración, sin lesiones permanentes, puede evolucionar a infarto. El <strong>infarto</strong>: dolor más intenso por <strong>necrosis</strong> del miocardio cuando la falta de riego dura <strong>más de 20 minutos</strong>; causa habitual, un trombo en una coronaria." }
+  ],
+  "trampas": [
+    ["<strong>Tricúspide</strong> (AD/VD)", "<strong>Mitral</strong> (AI/VI)", "Tri a la derecha, Mitral a la izquierda"],
+    ["<strong>Sístole</strong> (se abren pulmonar y aórtica)", "<strong>Diástole</strong> (se abren tricúspide y mitral)", "Sístole = salida"],
+    ["<strong>Íntima</strong> (endotelio)", "<strong>Adventicia</strong> (externa)", "La media (músculo) es la más gruesa"],
+    ["<strong>Trombo</strong> (se forma en el sitio)", "<strong>Émbolo</strong> (viaja)", "El émbolo tapa lejos de donde salió"],
+    ["<strong>Trombo blanco</strong> (arteria, plaquetas)", "<strong>Trombo rojo</strong> (vena, fibrina)", "Blanco por precipitación; rojo por coagulación"],
+    ["<strong>Angina</strong> (sin lesión)", "<strong>Infarto</strong> (necrosis, &gt;20 min)", "Angina avisa; infarto daña"],
+    ["<strong>Poliuria</strong> (mucha cantidad)", "<strong>Polaquiuria</strong> (muchas veces)", "Poli = cantidad; polaqui = frecuencia"],
+    ["<strong>Síndrome nefrítico</strong> (HTA, edema, hematuria)", "<strong>Síndrome nefrótico</strong> (proteinuria, edemas)", "Nefrítico = sangre; nefrótico = proteínas"],
+    ["<strong>Hemofilia</strong> (factores VIII y IX)", "<strong>Trombocitopenia</strong> (pocas plaquetas)", "Una es de factores; la otra de plaquetas"],
+    ["<strong>Aferente</strong> (entra al glomérulo)", "<strong>Eferente</strong> (sale)", "A = Aproxima; E = Exit"]
+  ],
+  "numeros": [
+    ["120-140 / 60-90 mmHg", "Tensión sistólica / diastólica normal"],
+    ["5-6 litros", "Volemia de un adulto"],
+    ["&lt;60 / &gt;100", "Latidos por minuto: bradicardia / taquicardia"],
+    ["II, VII, IX, X", "Factores dependientes de la vitamina K"],
+    ["VIII y IX", "Factores que faltan en la hemofilia"],
+    ["5-7 días", "Los fibroblastos rellenan la herida con colágeno"],
+    ["80 % / 20 %", "AVC isquémicos / hemorrágicos"],
+    ["55 %", "AVC aterotrombóticos"],
+    ["&gt;20 minutos", "Falta de riego que define el infarto"],
+    ["90 %", "Hipertensión primaria (sin causa concreta)"],
+    ["60 % = 40 + 20", "Agua del peso corporal: intracelular + intercelular"],
+    ["&gt;1 millón", "Nefronas por riñón"],
+    ["2-4 años", "Edad en que la micción se vuelve voluntaria"],
+    ["1500 cm³", "Orina normal al día (poliuria &gt;2500, oliguria 500-1000, anuria &lt;100)"],
+    ["3,5 %", "Urgencias hospitalarias por cólico nefrítico"]
+  ],
+  "impres": [
+    { "titulo": "Corazón y vasos", "items": [["¿Marcapasos del corazón?", "El nódulo sinusal, en la aurícula derecha."], ["¿Válvula entre AI y VI?", "La mitral."], ["¿Capa más gruesa de los vasos?", "La media."]] },
+    { "titulo": "Sangre y coagulación", "items": [["¿Fases de la hemostasia?", "Vasoconstricción, agregado plaquetario y coágulo."], ["¿Enzima que forma la fibrina?", "La trombina."], ["¿Principal inhibidor de la coagulación?", "La antitrombina III."], ["¿Qué deshace el coágulo?", "La plasmina."]] },
+    { "titulo": "Patología", "items": [["¿Placa en la arteria?", "Ateroma (aterosclerosis)."], ["¿Prueba de sangre para trombos?", "Dímero D."], ["¿Infarto?", "Necrosis por falta de riego de más de 20 minutos."], ["¿Asesino silencioso?", "La hipertensión arterial."]] },
+    { "titulo": "Aparato urinario", "items": [["¿Unidad funcional del riñón?", "La nefrona."], ["¿Hormona del riñón que fabrica glóbulos rojos?", "La eritropoyetina (EPO)."], ["¿Anuria?", "Menos de 100 cm³ de orina al día."], ["¿Tríada del síndrome nefrítico?", "Hipertensión, edema y hematuria."]] }
+  ]
+}
