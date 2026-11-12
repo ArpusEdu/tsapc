@@ -1,0 +1,659 @@
+{
+  "unidad": "bio3",
+  "titulo": "Bio 3 · Ácidos nucleicos",
+  "eyebrow": "🧬 Biología Molecular · 3er examen",
+  "h1": "Repaso completo: ácidos nucleicos y enzimas asociadas",
+  "sub": "Tema 4 completo · 110 diapositivas · 12 bloques · 56 conceptos",
+  "clave": "bio3-repaso-v2",
+  "examen": { "em": "🧬", "asig": "Biología Molecular", "examen": "3er examen", "fecha": null },
+  "simulacro": "bio3/simulacro/",
+  "fuente": "Tema 4. COMPLETO.pdf (110 diapositivas)",
+  "bloques": [
+    {
+      "titulo": "Los ácidos nucleicos y sus piezas",
+      "conceptos": [
+        {
+          "titulo": "Ácidos nucleicos: ADN y ARN", "lv": 1, "fuente": "Diapositivas 6 y 7",
+          "defs": [
+            { "t": "Ácidos nucleicos", "facil": "Las moléculas que guardan y usan las instrucciones de un ser vivo.", "diapo": "Macromoléculas encargadas de almacenar, transmitir y expresar la información genética de los seres vivos.", "n": 6 },
+            { "t": "Macromolécula", "facil": "Molécula muy grande, hecha de muchas piezas iguales unidas en cadena." }
+          ],
+          "prof": "<p>Los ácidos nucleicos son <strong>macromoléculas</strong> encargadas de <strong>almacenar, transmitir y expresar</strong> la información genética de los seres vivos.</p><p>Existen <strong>2 tipos</strong> de ácidos nucleicos:</p><ul><li><strong>ADN</strong> - Ácido Desoxirribonucleico</li><li><strong>ARN</strong></li></ul><ul><li><strong>ADN:</strong> almacenar y transmitir la información genética a la descendencia (Mitosis y Meiosis) → <strong>REPLICACIÓN</strong>.</li><li><strong>ARN:</strong> se encarga de expresar la información almacenada en el ADN para sintetizar <strong>PROTEÍNAS</strong> → <strong>TRANSCRIPCIÓN</strong>, <strong>TRADUCCIÓN</strong>.</li></ul>",
+          "imgs": [{ "src": "img/d007.jpg", "alt": "Funciones generales del ADN y del ARN (diap. 7)" }],
+          "entiende": "El ADN es el libro de recetas que se guarda y se copia para los hijos. El ARN saca la receta del libro para fabricar la proteína.",
+          "truco": "Las 3 funciones: <strong>A-T-E</strong>: Almacenar, Transmitir (ADN), Expresar (ARN).",
+          "q": "¿Qué son los ácidos nucleicos y qué función tiene el ADN y cuál el ARN?"
+        },
+        {
+          "titulo": "El nucleótido: la pieza de la cadena", "lv": 1, "fuente": "Diapositivas 8 y 13",
+          "defs": [
+            { "t": "Nucleótido", "facil": "La pieza con la que se construyen las cadenas de ácidos nucleicos.", "diapo": "Son las unidades estructurales que forman los ácidos nucleicos y hacen posible el almacenamiento y transmisión de la información genética.", "n": 8 },
+            { "t": "Nucleósido", "facil": "Base nitrogenada + pentosa, todavía sin el fosfato." }
+          ],
+          "prof": "<p>Los ácidos nucleicos están formados por largas cadenas de <strong>NUCLEÓTIDOS</strong>.</p><p>Estructura química de los nucleótidos:</p><ul><li><strong>Grupo fosfato</strong></li><li><strong>Pentosa (azúcar)</strong></li><li><strong>Bases nitrogenadas</strong></li></ul><ul><li>BASE NITROGENADA (Adenina) + PENTOSA (Ribosa) → Enlace N-glucosídico → <strong>NUCLEÓSIDO</strong> (Adenosina)</li><li>+ ION FOSFATO → Enlace éster → <strong>NUCLEÓTIDO</strong> (Adenosín 5 monofosfato)</li></ul>",
+          "imgs": [{ "src": "img/d013.jpg", "alt": "Cómo se forma un nucleótido: base + pentosa + fosfato (diap. 13)" }],
+          "entiende": "Primero se unen la base y el azúcar (nucleósido); luego se le engancha el fosfato y ya es un nucleótido, un eslabón completo de la cadena.",
+          "truco": "<strong>Nucleósi-D-o</strong> = sin fosfato (le falta algo); <strong>nucleóti-T-o</strong> = con todo.",
+          "q": "¿Qué partes tiene un nucleótido y qué diferencia hay con un nucleósido?"
+        },
+        {
+          "titulo": "El grupo fosfato", "lv": 2, "fuente": "Diapositiva 9",
+          "defs": [{ "t": "Grupo fosfato", "facil": "Una de las 3 partes del nucleótido: un fósforo rodeado de oxígenos." }],
+          "prof": "<p><strong>Grupo fosfato</strong></p><ul><li>1 átomo de fósforo (centro)</li><li>4 átomos de oxígeno (vértices)</li></ul>",
+          "entiende": "Es la pieza que da carácter ácido a los ácidos nucleicos.",
+          "truco": "<strong>1 P en el centro, 4 O en las esquinas</strong>: como una mesa con 4 patas.",
+          "q": "¿De qué átomos está formado el grupo fosfato?"
+        },
+        {
+          "titulo": "La pentosa: ribosa y desoxirribosa", "lv": 1, "fuente": "Diapositivas 10, 18 y 19",
+          "defs": [{ "t": "Pentosa", "facil": "Azúcar de 5 carbonos." }],
+          "prof": "<p><strong>Pentosa (azúcar):</strong></p><ul><li><strong>Ribosa</strong> → <strong>ARN</strong></li><li><strong>Desoxirribosa</strong> → <strong>ADN</strong></li></ul>",
+          "entiende": "El nombre del ácido nucleico te dice su azúcar: ácido <strong>desoxirribo</strong>nucleico lleva desoxirribosa; ácido <strong>ribo</strong>nucleico lleva ribosa.",
+          "truco": "El azúcar está escondido en el nombre: A<strong>D</strong>N = <strong>D</strong>esoxirribosa.",
+          "q": "¿Qué pentosa lleva el ADN y cuál el ARN?"
+        },
+        {
+          "titulo": "Las 5 bases nitrogenadas", "lv": 1, "fuente": "Diapositiva 11",
+          "defs": [
+            { "t": "Bases púricas", "facil": "Las bases más grandes: adenina y guanina." },
+            { "t": "Bases pirimidínicas", "facil": "Las bases más pequeñas: citosina, timina y uracilo." }
+          ],
+          "prof": "<p><strong>Bases nitrogenadas (5 tipos):</strong></p><div class=\"tw\"><table><thead><tr><th>Tipos</th><th>Base nitrogenada</th><th>Ácido Nucleico</th></tr></thead><tbody><tr><td><strong>PÚRICAS</strong></td><td>ADENINA, GUANINA</td><td>ADN y ARN</td></tr><tr><td><strong>PIRIMIDÍNICAS</strong></td><td>CITOSINA</td><td>ADN y ARN</td></tr><tr><td><strong>PIRIMIDÍNICAS</strong></td><td>TIMINA</td><td>ADN</td></tr><tr><td><strong>PIRIMIDÍNICAS</strong></td><td>URACILO</td><td>ARN</td></tr></tbody></table></div>",
+          "imgs": [{ "src": "img/d011.jpg", "alt": "Bases nitrogenadas: púricas y pirimidínicas (diap. 11)" }],
+          "entiende": "A, G y C están en los dos. La única que cambia: el ADN usa <strong>T</strong> (timina) y el ARN usa <strong>U</strong> (uracilo).",
+          "truco": "«<strong>Pura AGua</strong>»: púricas = A y G. Todas las demás (C, T, U) son pirimidínicas.",
+          "q": "Clasifica las 5 bases nitrogenadas y di en qué ácido nucleico está cada una."
+        },
+        {
+          "titulo": "El enlace fosfodiéster", "lv": 2, "fuente": "Diapositiva 14",
+          "defs": [{ "t": "Enlace fosfodiéster", "facil": "La unión entre un nucleótido y el siguiente, a través del fosfato." }],
+          "prof": "<p><strong>ENLACE FOSFODIESTER</strong></p><p>Fragmento de ácido nucleico</p>",
+          "imgs": [{ "src": "img/d014.jpg", "alt": "Enlace fosfodiéster entre nucleótidos (diap. 14)" }],
+          "entiende": "Es el «pegamento» que encadena un nucleótido con el siguiente: el fosfato de uno se une al azúcar del otro, y así se forma el esqueleto de la cadena.",
+          "truco": "Fosfo-<strong>DI</strong>-éster: el fosfato hace de puente entre <strong>dos</strong> azúcares.",
+          "q": "¿Cómo se llama el enlace que une un nucleótido con el siguiente?"
+        }
+      ]
+    },
+    {
+      "titulo": "Propiedades y estructura primaria del ADN",
+      "conceptos": [
+        {
+          "titulo": "Propiedades fisicoquímicas", "lv": 1, "fuente": "Diapositivas 20 y 21",
+          "defs": [
+            { "t": "Hibridación", "facil": "Unión de dos cadenas complementarias por puentes de H.", "diapo": "La unión de dos cadenas complementarias de ácidos nucleicos se unen mediante puentes de hidrógeno entre las bases nitrogenadas", "n": 20 },
+            { "t": "Desnaturalización", "facil": "Separar las dos cadenas del ADN con calor o pH.", "diapo": "Las dos cadenas de la doble hélice de ADN se pueden separar elevando la temperatura o el pH", "n": 21 },
+            { "t": "Renaturalización", "facil": "Volver a unirse las cadenas al bajar la temperatura o el pH." }
+          ],
+          "prof": "<ol><li>Fuertemente <strong>ácidos</strong> en solución acuosa (por los grupos fosfato).</li><li>Elevada <strong>viscosidad</strong>.</li><li>La unión de dos cadenas complementarias de ácidos nucleicos se unen mediante puentes de hidrógeno entre las bases nitrogenadas → <strong>hibridación</strong>: esto puede ocurrir tanto en ADN como en ARN.</li><li>Las dos cadenas de la doble hélice de ADN se pueden separar elevando la temperatura o el pH → <strong>desnaturalización</strong>: rompen los puentes de H entre las bases nitrogenadas complementarias.</li></ol><p>La desnaturalización es <strong>reversible</strong> si se baja de nuevo la temperatura o el pH → <strong>renaturalización</strong>.</p>",
+          "imgs": [{ "src": "img/d021.jpg", "alt": "Desnaturalización al subir la temperatura o el pH (diap. 21)" }],
+          "entiende": "Las dos cadenas están unidas por puentes de H, que son uniones débiles: con calor se abren como una cremallera (desnaturalización) y al enfriar se vuelven a cerrar (renaturalización).",
+          "truco": "<strong>Á-V-H-D</strong>: Ácidos, Viscosos, Hibridan, se Desnaturalizan (y se renaturalizan).",
+          "q": "Di las propiedades fisicoquímicas de los ácidos nucleicos. ¿Es reversible la desnaturalización?"
+        },
+        {
+          "titulo": "Características del ADN", "lv": 1, "fuente": "Diapositiva 15",
+          "defs": [{ "t": "Desoxirribonucleótido", "facil": "Nucleótido del ADN (lleva desoxirribosa)." }],
+          "prof": "<ol><li>Largas cadenas de <strong>desoxirribonucléotidos</strong> formados por el grupo fosfato, una desoxirribosa y 4 tipos de bases nitrogenadas (<strong>A, T, G y C</strong>).</li><li><strong>Tamaño:</strong> depende del número de nucleótidos. Las moléculas de ADN que forman los cromosomas son de gran tamaño (<strong>millones de pares de bases</strong>).</li><li><strong>Secuencia de bases nitrogenadas</strong> (orden de las bases y la proporción de cada una): depende de cada <strong>especie</strong>.</li></ol>",
+          "entiende": "El orden de las «letras» es la información: por eso cambia de una especie a otra.",
+          "truco": "<strong>C-T-S</strong>: Composición, Tamaño, Secuencia.",
+          "q": "Di las 3 características del ADN."
+        },
+        {
+          "titulo": "Estructura primaria del ADN", "lv": 1, "fuente": "Diapositiva 16",
+          "defs": [{ "t": "Extremo 5’ y 3’", "facil": "Los dos extremos de una cadena: el 5’ acaba en fosfato y el 3’ en pentosa." }],
+          "prof": "<p><strong>ESTRUCTURA PRIMARIA del ADN:</strong> es la <strong>secuencia</strong> de bases nitrogenadas de la cadena de nucleótidos leídas en <strong>dirección 5’ → 3’</strong>.</p><ul><li>5’ extremo fosfato</li><li>3’ extremo pentosa</li></ul><p>Secuencia: (5’) A C T G (3’)</p>",
+          "entiende": "Es simplemente el orden de las letras de una cadena, leído siempre en el mismo sentido: de 5’ a 3’.",
+          "truco": "«<strong>5 F</strong>»: el 5’ es el del Fosfato; el 3’, el del azúcar.",
+          "q": "¿Qué es la estructura primaria del ADN y qué hay en sus extremos 5’ y 3’?"
+        },
+        {
+          "titulo": "Principio de complementariedad", "lv": 1, "fuente": "Diapositivas 17, 18 y 19",
+          "defs": [{ "t": "Bases complementarias", "facil": "Las parejas de bases que encajan: A con T (o U en el ARN) y C con G." }],
+          "prof": "<p>Las bases nitrogenadas complementarias se unen mediante <strong>puentes de H</strong> en función de su tamaño y estructura. Son complementarias:</p><ul><li><strong>A y T</strong> → <strong>2 puentes de H</strong></li><li><strong>C y G</strong> → <strong>3 puentes de H</strong></li></ul><p>Secuencia: (5’) A C T G (3’) / (3’) T G A C (5’) - complementaria</p><p>Para que la unión sea estable, los 2 nucleótidos que portan las bases complementarias han de tener sus fosfatos en posiciones opuestas.</p>",
+          "imgs": [{ "src": "img/d017.jpg", "alt": "Bases complementarias unidas por puentes de H (diap. 17)" }],
+          "entiende": "Si conoces una cadena, conoces la otra: donde hay A pones T, donde hay C pones G. En el ARN, la A se empareja con U (diap. 19).",
+          "truco": "«<strong>AT 2, CG 3</strong>»: la pareja C-G es la más fuerte porque tiene más puentes.",
+          "q": "¿Qué bases son complementarias y cuántos puentes de H forma cada pareja? Escribe la complementaria de 5’ ACTG 3’."
+        }
+      ]
+    },
+    {
+      "titulo": "La doble hélice y el empaquetamiento",
+      "conceptos": [
+        {
+          "titulo": "El modelo de la doble hélice", "lv": 2, "fuente": "Diapositiva 22",
+          "defs": [],
+          "prof": "<p>En <strong>1953 Watson y Crick</strong>, junto con los resultados de <strong>Wilkins y Rosalind Franklin</strong>, propusieron un modelo para explicar la estructura del ADN. Este modelo permite explicar el principio de complementariedad y sostiene que el ADN es una doble hélice.</p>",
+          "entiende": "Las imágenes de rayos X de Rosalind Franklin fueron la pista clave para que Watson y Crick dibujaran la doble hélice.",
+          "truco": "<strong>1953</strong> → 4 nombres: Watson, Crick, Wilkins y Franklin.",
+          "q": "¿Quién propuso el modelo de la doble hélice, en qué año y con los resultados de quién?"
+        },
+        {
+          "titulo": "Estructura secundaria: la doble hélice", "lv": 1, "fuente": "Diapositivas 23 y 24",
+          "defs": [{ "t": "Antiparalelas", "facil": "Las dos cadenas van en sentidos opuestos: una 5’→3’ y la otra 3’→5’." }],
+          "prof": "<p>Es la <strong>doble hélice</strong> del ADN formada por las dos cadenas complementarias de nucleótidos. La secuencia de cada cadena es la estructura primaria. Cuando las cadenas complementarias se unen obtenemos la estructura secundaria.</p><ul><li>Doble hélice se forma alrededor un <strong>eje central</strong>.</li><li>Las 2 cadenas son <strong>antiparalelas</strong> 5’-3’ vs. 3’-5’</li><li>La secuencia de bases nitrogenadas de ambas cadenas es <strong>complementaria</strong>. Si se conoce la secuencia de una de las cadenas o hebras, se puede deducir la otra.</li><li>Ambas cadenas se mantienen unidas por <strong>puentes de H</strong>.</li><li>Las bases nitrogenadas se encuentran <strong>en el interior</strong> de la estructura. En el exterior se sitúan los fosfatos y la desoxirribosa.</li><li>Un giro de 360 ºC= <strong>10 nucleótidos</strong></li></ul>",
+          "imgs": [{ "src": "img/d024.jpg", "alt": "La doble hélice del ADN (diap. 24)" }],
+          "entiende": "Imagina una escalera de caracol: los pasamanos son el fosfato y el azúcar (fuera) y los peldaños son las parejas de bases (dentro). Cada vuelta completa tiene 10 peldaños.",
+          "truco": "<strong>E-A-C-H-I-10</strong>: Eje, Antiparalelas, Complementarias, puentes de H, bases en el Interior, 10 por giro.",
+          "q": "Describe la estructura secundaria del ADN: sus 6 características."
+        },
+        {
+          "titulo": "Estructura terciaria: ADN unido a proteínas", "lv": 1, "fuente": "Diapositiva 26",
+          "defs": [
+            { "t": "Histonas", "facil": "Proteínas sobre las que se enrolla el ADN.", "diapo": "Proteínas con una función estructural y reguladora.", "n": 26 },
+            { "t": "No histonas", "facil": "Otras proteínas del ADN, muy variadas.", "diapo": "Proteínas muy heterogéneas con funciones estructurales, enzimáticas y reguladoras.", "n": 26 }
+          ],
+          "prof": "<p><strong>ADN CROMOSÓMICO NUCLEAR</strong></p><ul><li>La mayor parte del ADN de las células eucariotas se encuentra en el <strong>núcleo</strong>.</li><li>El ADN no se encuentra libre, sino que está asociado a proteínas básicas que <strong>compactan</strong> el ADN. Dos tipos:<ul><li><strong>Histonas</strong>: Proteínas con una función estructural y reguladora.</li><li><strong>No histonas</strong>: Proteínas muy heterogéneas con funciones estructurales, enzimáticas y reguladoras.</li></ul></li></ul>",
+          "entiende": "El ADN de una célula mide casi dos metros: sin proteínas que lo enrollen no cabría en el núcleo.",
+          "truco": "<strong>Histonas = carretes</strong> (estructura); no histonas = «todo lo demás».",
+          "q": "¿Dónde está la mayor parte del ADN eucariota y a qué dos tipos de proteínas se asocia?"
+        },
+        {
+          "titulo": "Nucleosoma y fibra de cromatina", "lv": 1, "fuente": "Diapositivas 27 a 29",
+          "defs": [
+            { "t": "Nucleosoma", "facil": "Un «carrete» de 8 histonas con el ADN enrollado alrededor.", "diapo": "Un nucleosoma es la estructura cilíndrica formada por un octámero de histonas (8 histonas) sobre la que se enrolla la doble hélice de ADN.", "n": 28 },
+            { "t": "Fibra de cromatina", "facil": "El ADN con sus nucleosomas, como un collar de perlas." }
+          ],
+          "prof": "<p>NIVELES DE LA ESTRUCTURA TERCIARIA:</p><ol><li>Un <strong>nucleosoma</strong> es la estructura cilíndrica formada por un <strong>octámero de histonas (8 histonas)</strong> sobre la que se enrolla la doble hélice de ADN.</li><li>La molécula de ADN asociada a las histonas se denomina <strong>fibra de cromatina</strong> “<strong>Collar de perlas</strong>”</li></ol>",
+          "imgs": [{ "src": "img/d027.jpg", "alt": "Nucleosoma: 8 histonas con el ADN enrollado (diap. 27)" }],
+          "entiende": "Cada perla del collar es un nucleosoma (8 histonas con ADN enrollado) y el hilo entre perlas es ADN.",
+          "truco": "<strong>Nucleosoma = 8</strong> (octámero) · fibra = collar de perlas.",
+          "q": "¿Qué es un nucleosoma y qué es la fibra de cromatina?"
+        },
+        {
+          "titulo": "Solenoide y cromosoma metafásico", "lv": 1, "fuente": "Diapositivas 30 a 33",
+          "defs": [{ "t": "Solenoide", "facil": "La fibra de cromatina enrollada sobre sí misma en espiral." }],
+          "prof": "<ol start=\"3\"><li>La fibra de cromatina, a su vez, se enrolla sobre sí misma formando el <strong>solenoide</strong>.</li></ol><p>Cada vuelta del solenoide tiene <strong>6 nucleosomas</strong> con <strong>6 histonas H1</strong>. Es el nivel de empaquetamiento más bajo de los cromosomas.</p><p>En el momento de la división celular (<strong>MITOSIS</strong>), las fibras de cromatina se ordenan y experimentan varios niveles de superenrollamiento hasta formar el <strong>cromosoma metafásico</strong>.</p>",
+          "imgs": [{ "src": "img/d033.jpg", "alt": "Del ADN al cromosoma: nucleosoma, fibra, solenoide, asas y cromosoma (diap. 33)" }],
+          "entiende": "Es como enrollar un cable de teléfono: ADN → nucleosomas (collar) → solenoide (espiral de 6) → asas → cromosoma, lo más compacto, solo al dividirse.",
+          "truco": "Orden: <strong>ADN · Nucleosoma · Fibra · Solenoide · Cromosoma</strong> → «Al Niño Fuerte, Sopa Caliente». Solenoide = <strong>6 y 6</strong>.",
+          "q": "Ordena los niveles de empaquetamiento del ADN hasta el cromosoma metafásico. ¿Cuántos nucleosomas tiene cada vuelta del solenoide?"
+        }
+      ]
+    },
+    {
+      "titulo": "Tipos de ADN",
+      "conceptos": [
+        {
+          "titulo": "ADN cromosómico: eucromatina y heterocromatina", "lv": 1, "fuente": "Diapositiva 34",
+          "defs": [
+            { "t": "Eucromatina", "facil": "La parte del ADN «suelta», con genes que se están leyendo.", "diapo": "Cromatina poco compactada y que presenta una gran concentración de genes.", "n": 34 },
+            { "t": "Heterocromatina", "facil": "La parte del ADN muy apretada, que no se puede leer.", "diapo": "Cromatina más compactas y condensadas, por lo que no se puede dar la transcripción.", "n": 34 }
+          ],
+          "prof": "<p><strong>ADN cromosómico:</strong> en el núcleo. En humanos, <strong>20.000 - 25.000 genes</strong>.</p><ul><li><strong>Eucromatina:</strong> cromatina poco compactada y que presenta una gran concentración de genes. Normalmente, aunque no siempre, estos genes se encuentran en <strong>transcripción activa</strong>.</li><li><strong>Heterocromatina:</strong> cromatina más compactas y condensadas, por lo que no se puede dar la transcripción.</li></ul><p>La eucromatina se replica al <strong>inicio de la fase S</strong>, mientras que la heterocromatina se replica hacia el <strong>final fase S</strong>.</p>",
+          "imgs": [{ "src": "img/d034.jpg", "alt": "Eucromatina y heterocromatina en un núcleo (diap. 34)" }],
+          "entiende": "Lo que está suelto (eucromatina) se puede leer y se copia primero; lo que está muy apretado (heterocromatina) no se lee y se copia al final.",
+          "truco": "<strong>EU = bUEno, suelto, se lee</strong>; HETERO = apretado, cerrado.",
+          "q": "Diferencia la eucromatina de la heterocromatina: compactación, transcripción y cuándo se replican."
+        },
+        {
+          "titulo": "ADN mitocondrial y de cloroplastos", "lv": 2, "fuente": "Diapositivas 35 a 37",
+          "defs": [
+            { "t": "Bicatenario", "facil": "De dos cadenas (doble hélice)." },
+            { "t": "kb", "facil": "Kilobases: miles de pares de bases." }
+          ],
+          "prof": "<ul><li><strong>ADN mitocondrial:</strong> en todos los organismos eucariotas.</li><li><strong>ADN de cloroplastos:</strong> Sólo en organismos fotosintéticos.</li></ul><p><strong>ADN mitocondrial (ADNmt):</strong> ADN bicatenario (doble hélice) y <strong>circular de 16,5 kb</strong> (en humanos).</p><ul><li>Suele haber varias copias de ADNmt en cada mitocondria.</li><li>Contiene <strong>37 genes</strong> que codifican para ARN ribosómico, ARN de transferencia y proteínas implicadas en los procesos que tienen lugar en la mitocondria como la <strong>respiración celular</strong>.</li><li>Se replica de manera <strong>independiente</strong> respecto al ADN nuclear.</li></ul><p><strong>ADN de cloroplastos (ADNcp):</strong> ADN bicatenario (doble hélice) y circular de entre <strong>120 y 160 kb</strong>.</p><ul><li>Suele haber varias moléculas de ADN circular en cada cloroplasto.</li><li>Contiene en torno a <strong>150 genes</strong> (depende de la especie), que codifican para ARN ribosómico, ARN de transferencia y proteínas implicadas en los procesos que tienen lugar en la cloroplasto, especialmente en la <strong>fotosíntesis</strong>.</li><li>Se replica de manera independiente respecto al ADN nuclear.</li></ul>",
+          "entiende": "Las mitocondrias y los cloroplastos tienen su propio ADN pequeño y circular, con los genes que necesitan para su trabajo, y lo copian por su cuenta.",
+          "truco": "<strong>Mito = 16,5 kb y 37 genes</strong>; <strong>cloro = 120-160 kb y 150 genes</strong>. Los dos: circulares y se replican solos.",
+          "q": "Compara el ADN mitocondrial y el de cloroplastos: forma, tamaño, número de genes y replicación."
+        },
+        {
+          "titulo": "ADN de procariotas", "lv": 2, "fuente": "Diapositiva 38",
+          "defs": [{ "t": "Plásmidos", "facil": "Pequeños anillos extra de ADN de las bacterias.", "diapo": "Pequeñas moléculas de ADN circular", "n": 38 }],
+          "prof": "<p><strong>ADN de procariotas (bacterias):</strong> ADN bicatenario (doble hélice) y circular.</p><ul><li>Un sólo cromosoma circular que está <strong>libre en el citoplasma</strong>.</li><li><strong>No está unido a proteínas</strong>, por tanto no forma cromatina.</li><li>Además del cromosoma, muchos procariotas presentan pequeñas moléculas de ADN circular denominadas <strong>PLÁSMIDOS</strong>.</li></ul>",
+          "imgs": [{ "src": "img/d038.jpg", "alt": "ADN de procariotas: cromosoma circular y plásmidos (diap. 38)" }],
+          "entiende": "Las bacterias no tienen núcleo: su único cromosoma flota en el citoplasma, desnudo (sin histonas), y a veces llevan anillos extra, los plásmidos.",
+          "truco": "Bacteria: <strong>1 anillo, suelto, desnudo + plásmidos</strong>.",
+          "q": "¿Cómo es el ADN de las bacterias? ¿Qué son los plásmidos?"
+        }
+      ]
+    },
+    {
+      "titulo": "El ARN y sus tipos",
+      "conceptos": [
+        {
+          "titulo": "Características del ARN", "lv": 1, "fuente": "Diapositiva 39",
+          "defs": [{ "t": "Ribonucleótido", "facil": "Nucleótido del ARN (lleva ribosa)." }],
+          "prof": "<ol><li>Cadenas de <strong>ribonucléotidos</strong> formados por el grupo fosfato, una <strong>ribosa</strong> y 4 tipos de bases nitrogenadas (<strong>A, U, G y C</strong>).</li><li><strong>Tamaño:</strong> depende del número de nucleótidos, pero son mucho más pequeñas que las moléculas de ADN (cientos o miles de pares de bases.</li><li><strong>Función:</strong> controla la síntesis de proteínas a partir de la información contenida en el ADN.</li></ol>",
+          "entiende": "El ARN es una copia corta y de un solo uso de un trocito del ADN, la que sale a fabricar proteínas.",
+          "truco": "ARN = <strong>Ribosa, Uracilo, corto, Una cadena</strong>.",
+          "q": "Di las características del ARN: composición, tamaño y función."
+        },
+        {
+          "titulo": "Estructuras del ARN", "lv": 1, "fuente": "Diapositivas 40 a 43",
+          "defs": [],
+          "prof": "<ul><li><strong>ESTRUCTURA PRIMARIA del ARN:</strong> Es la secuencia de bases nitrogenadas de la <strong>cadena simple</strong> de nucleótidos leídas en dirección 5’ → 3’.</li><li><strong>ESTRUCTURA SECUNDARIA del ARN:</strong> La cadena simple de ARN puede plegarse y presentar regiones con bases apareadas (ej. ARN de transferencia). Las bases NO siempre serán complementarias (A-U, G-C, G-U). Aunque existan zonas apareadas, los extremos 5’ y 3’ que marcan el inicio y el final de la molécula permanecerán libres.</li><li><strong>ESTRUCTURA TERCIARIA del ARN:</strong> Consiste en un plegamiento de la estructura secundaria, normalmente por asociación con proteínas.</li></ul>",
+          "imgs": [{ "src": "img/d043.jpg", "alt": "Estructura primaria, secundaria y terciaria del ARN (diap. 43)" }],
+          "entiende": "Una sola cadena que se dobla sobre sí misma (secundaria) y luego se pliega más con ayuda de proteínas (terciaria). Los dos extremos siempre quedan sueltos.",
+          "truco": "<strong>1ª = cadena · 2ª = se dobla · 3ª = se pliega con proteínas</strong>. Pareja «rara» del ARN: <strong>G-U</strong>.",
+          "q": "Explica las estructuras primaria, secundaria y terciaria del ARN."
+        },
+        {
+          "titulo": "ARN mensajero (ARNm)", "lv": 1, "fuente": "Diapositiva 44",
+          "defs": [{ "t": "ARNm", "facil": "La copia de un gen que lleva la receta al ribosoma." }],
+          "prof": "<p><strong>ARN mensajero (ARNm)</strong>. En eucariotas:</p><ol><li>Es una <strong>copia exacta</strong> de la secuencia de un gen de ADN.</li><li>Porta la información para la síntesis de una proteína.</li></ol>",
+          "entiende": "Es la fotocopia de una receta (un gen) que sale del núcleo para que el ribosoma la cocine.",
+          "truco": "ARN<strong>m</strong> = <strong>m</strong>ensaje.",
+          "q": "¿Qué es el ARNm y qué función tiene?"
+        },
+        {
+          "titulo": "ARN transferente (ARNt)", "lv": 1, "fuente": "Diapositivas 45 y 46",
+          "defs": [
+            { "t": "Anticodón", "facil": "Las 3 bases del ARNt que encajan con un codón del ARNm." },
+            { "t": "Brazo aceptor", "facil": "La punta del ARNt donde se engancha el aminoácido (CCA-3’)." }
+          ],
+          "prof": "<ol><li><strong>Transportan los aminoácidos</strong> hasta los ribosomas para ir formando la cadena proteica.</li><li>Estructura secundaria en forma de <strong>trébol</strong>, que se pliega en una estructura terciaria en forma de <strong>L</strong>.</li></ol><ul><li><strong>Brazo aceptor:</strong> Sitio de unión para el aminoácido (<strong>CCA-3’</strong>)</li><li><strong>Brazo anticodón:</strong> Contiene el <strong>anticodón</strong> correspondiente al aminoácido que lleva. Este anticodón reconoce el codón de ARNm que indica el aminoácido que se tiene que añadir a la proteína.</li></ul>",
+          "imgs": [{ "src": "img/d046.jpg", "alt": "ARNt: brazo aceptor y anticodón (diap. 46)" }],
+          "entiende": "Es el repartidor: por un lado carga el aminoácido (brazo aceptor) y por el otro lee el ARNm (anticodón) para dejarlo en su sitio.",
+          "truco": "ARN<strong>t</strong> = <strong>t</strong>ransporte · <strong>t</strong>rébol que se pliega en L.",
+          "q": "¿Qué función tiene el ARNt? Describe su forma y sus dos brazos importantes."
+        },
+        {
+          "titulo": "ARN ribosomal (ARNr)", "lv": 1, "fuente": "Diapositivas 47 y 48",
+          "defs": [{ "t": "Ribosoma", "facil": "La «máquina» que fabrica proteínas." }],
+          "prof": "<ol><li>Es el <strong>ARN mayoritario</strong> en las células (aproximadamente el <strong>80%</strong> del ARN).</li><li>Estructura secundaria muy compleja, con muchas horquillas y bucles.</li><li>Combinado con ciertas proteínas forma los <strong>ribosomas</strong>. Orgánulos citoplasmáticos responsables de la síntesis de proteínas.</li></ol><ul><li><strong>Subunidad 60</strong>: 3 moléculas de ARNr, 49 proteínas</li><li><strong>Subunidad 40</strong>: 1 moléculas de ARNr, 33 proteínas</li></ul>",
+          "imgs": [{ "src": "img/d048.jpg", "alt": "Ribosoma: subunidades 60 y 40 (diap. 48)" }],
+          "entiende": "El ARNr es la mayor parte del ARN de la célula: junto con proteínas forma los ribosomas, la fábrica de proteínas.",
+          "truco": "ARN<strong>r</strong> = <strong>r</strong>ibosoma · <strong>80 %</strong> · subunidades <strong>60 y 40</strong>.",
+          "q": "¿Qué porcentaje del ARN es ARNr, qué forma y qué subunidades tiene el ribosoma?"
+        }
+      ]
+    },
+    {
+      "titulo": "El flujo de la información y la replicación",
+      "conceptos": [
+        {
+          "titulo": "El flujo de la información genética", "lv": 1, "fuente": "Diapositivas 49 y 52",
+          "defs": [{ "t": "Dogma central de la biología", "facil": "El camino de la información: ADN → ARN → proteína." }],
+          "prof": "<p><strong>DOGMA CENTRAL DE LA BIOLOGÍA</strong>: Del GEN a la PROTEÍNA.</p><p>El ADN almacena la información genética de un individuo, la transmite a los descendientes y dirige la síntesis de proteínas. Para llevar esto a cabo se dan distintos procesos:</p><ul><li><strong>Replicación</strong>: Duplicación del material genético, ADN (para la división celular: mitosis y meiosis).</li><li><strong>Transcripción</strong>: Síntesis de ARNm partiendo de ADN.</li><li><strong>Traducción</strong>: Síntesis de proteínas partiendo de ARNm.</li></ul>",
+          "entiende": "Copiar el libro entero (replicación), fotocopiar una receta (transcripción) y cocinarla (traducción).",
+          "truco": "<strong>Re-Trans-Tra</strong>: ADN→ADN, ADN→ARN, ARN→proteína.",
+          "q": "Di los 3 procesos del flujo de la información genética y qué se obtiene en cada uno."
+        },
+        {
+          "titulo": "Replicación: qué es y cuándo ocurre", "lv": 1, "fuente": "Diapositiva 53",
+          "defs": [{ "t": "Fase S", "facil": "La etapa de la interfase en la que la célula copia su ADN." }],
+          "prof": "<p>Proceso por el cual una molécula de ADN se duplica para dar lugar a <strong>dos moléculas de ADN idénticas</strong>. Ocurre en la <strong>fase S de la interfase</strong>, cuando la célula se prepara para dividirse por mitosis o meiosis.</p>",
+          "entiende": "Antes de dividirse, la célula fotocopia todo su ADN para que cada hija se lleve una copia completa.",
+          "truco": "Fase <strong>S</strong> = <strong>S</strong>íntesis del ADN.",
+          "q": "¿Qué es la replicación y en qué momento del ciclo celular ocurre?"
+        },
+        {
+          "titulo": "Semiconservativa y con orígenes de replicación", "lv": 1, "fuente": "Diapositiva 54",
+          "defs": [{ "t": "Semiconservativa", "facil": "Cada ADN nuevo lleva una cadena vieja y una nueva.", "diapo": "Una hebra viene de la molécula original y la otra se sintetiza.", "n": 54 }],
+          "prof": "<p>Características generales de la replicación:</p><ol><li><strong>Semiconservativa:</strong> Una hebra viene de la molécula original y la otra se sintetiza.</li><li><strong>Comienza en un origen de replicación:</strong> el inicio de la replicación se da en puntos concretos.<ul><li>En procariotas: un <strong>único</strong> origen de replicación.</li><li>En eucariotas: <strong>más de un</strong> origen de replicación</li></ul></li></ol>",
+          "entiende": "Las dos cadenas se separan y cada una sirve de molde: al final, cada molécula conserva la mitad de la original.",
+          "truco": "<strong>Semi = la mitad</strong> se conserva. Bacteria = 1 origen; eucariota = muchos.",
+          "q": "¿Por qué la replicación es semiconservativa? ¿Cuántos orígenes de replicación hay en procariotas y en eucariotas?"
+        },
+        {
+          "titulo": "Bidireccional y semidiscontinua", "lv": 1, "fuente": "Diapositivas 55 a 57",
+          "defs": [
+            { "t": "Hebra conductora", "facil": "La cadena nueva que se copia seguida, de un tirón." },
+            { "t": "Hebra retardada", "facil": "La cadena nueva que se copia a trozos (fragmentos de Okazaki)." },
+            { "t": "Fragmentos de Okazaki", "facil": "Los trocitos de ADN de la hebra retardada." }
+          ],
+          "prof": "<ol start=\"3\"><li><strong>Bidireccional:</strong> La síntesis de las nuevas cadenas se produce en ambos sentidos usando las 2 cadenas de ADN como molde.</li><li><strong>Semidiscontinua:</strong> La síntesis de las cadenas nuevas se produce siempre en dirección 5’ → 3’. Problema: las hebras de ADN son antiparalelas.<ul><li>Se forma la <strong>burbuja de replicación</strong>, y el proceso ocurre hacia ambos lados y en las dos cadenas a la vez.</li><li>Una de las cadenas se sintetiza de manera <strong>continua</strong> (5’-3’): Cadena <strong>líder, conductora o continua</strong>.</li><li>La otra hebra se sintetiza de manera <strong>discontinua</strong>, en forma de fragmentos (<strong>fragmentos de Okazaki</strong>): Hebra <strong>retardada</strong>.</li></ul></li></ol>",
+          "imgs": [{ "src": "img/d057.jpg", "alt": "Hebra continua y hebra retardada con fragmentos de Okazaki (diap. 57)" }],
+          "entiende": "Solo se puede copiar en sentido 5’→3’. Como las cadenas van al revés una de otra, una se copia seguida y la otra «marcha atrás», a trocitos.",
+          "truco": "<strong>Semi-dis-continua</strong>: una continua + una discontinua = media y media.",
+          "q": "¿Por qué la replicación es semidiscontinua? Explica la hebra conductora y la retardada."
+        }
+      ]
+    },
+    {
+      "titulo": "Las fases de la replicación y sus enzimas",
+      "conceptos": [
+        {
+          "titulo": "Iniciación: origen, helicasas y burbuja", "lv": 1, "fuente": "Diapositivas 59 a 62 y 68",
+          "defs": [
+            { "t": "Helicasa", "facil": "La enzima que abre la doble hélice rompiendo los puentes de H." },
+            { "t": "Burbuja de replicación", "facil": "La zona abierta del ADN donde se está copiando." }
+          ],
+          "prof": "<p>La replicación se divide en 2 fases: 1. <strong>INICIACIÓN</strong> 2. <strong>ELONGACIÓN</strong>.</p><p><strong>Fase de iniciación:</strong> formación de las horquillas de replicación</p><ol><li>La replicación del ADN empieza con una secuencia de nucleótidos, al cual se denomina “<strong>origen de replicación</strong>”.</li><li>Unas <strong>proteínas específicas</strong> reconocen el origen de replicación y se unen a él. La unión de estas proteínas hace que se activen las helicasas.</li><li>Las <strong>helicasas</strong> rompen los puentes de hidrógeno que hay entre las bases nitrogenadas de las dos cadenas complementarias del ADN y forman la <strong>burbuja de replicación</strong>.</li><li>Las dos helicasas empiezan a realizar su función a partir del punto de origen de replicación. Una en un sentido y la otra en el otro sentido. De esta manera la replicación del ADN es <strong>bidireccional</strong>.</li></ol>",
+          "entiende": "Unas proteínas marcan el punto de salida; las helicasas abren la cremallera hacia los dos lados y forman una burbuja.",
+          "truco": "<strong>Helicasa = abre la hélice</strong>.",
+          "q": "Explica los 4 primeros pasos de la iniciación de la replicación."
+        },
+        {
+          "titulo": "Iniciación: SSBP, girasa y topoisomerasa", "lv": 1, "fuente": "Diapositivas 63 y 69",
+          "defs": [
+            { "t": "SSBP", "facil": "Proteínas de unión a cadena sencilla: mantienen las cadenas separadas." },
+            { "t": "Topoisomerasa y girasa", "facil": "Enzimas que quitan la tensión que se crea al desenrollar." }
+          ],
+          "prof": "<ol start=\"5\"><li>Para que esta estructura se mantenga, las <strong>proteínas de unión a cadena sencilla (SSBP)</strong> se unen a las cadenas desenrolladas.</li><li>Este desenrollamiento provoca tensión en las zonas próximas a la burbuja. Por ello, la <strong>girasa</strong> y la <strong>topoisomerasa</strong> actúan relajando esa tensión.</li></ol><p>Proteínas de unión a cadena sencilla (SSB): se unen a las cadenas desenrolladas evitando que se vuelva a formar la doble hélice.</p>",
+          "imgs": [{ "src": "img/d063.jpg", "alt": "Burbuja y horquillas de replicación con SSBP, girasa y topoisomerasa (diap. 63)" }],
+          "entiende": "Las SSBP son pinzas que impiden que la cremallera se vuelva a cerrar; la girasa y la topoisomerasa quitan las vueltas de más que se crean delante, como cuando desenredas un cable.",
+          "truco": "<strong>SSB = Sujeta Separadas</strong>; <strong>topo y girasa = quitan tensión</strong>.",
+          "q": "¿Qué hacen las SSBP? ¿Y la girasa y la topoisomerasa?"
+        },
+        {
+          "titulo": "Elongación: la primasa y los primers", "lv": 1, "fuente": "Diapositivas 64, 70 y 71",
+          "defs": [{ "t": "Primer o cebador", "facil": "Un trocito corto de ARN que sirve de punto de arranque para la ADN polimerasa.", "diapo": "fragmentos cortos de ARN (10 nucleótidos), denominados cebadores o primers", "n": 70 }],
+          "prof": "<p><strong>Fase de elongación:</strong> síntesis de las nuevas hebras de ADN</p><ol><li>La <strong>primasa (ARN polimerasa)</strong> sintetiza los <strong>primers o cebadores</strong> en dirección 5’ → 3’.<ul><li><strong>Hebra conductora:</strong> Un único primer en el origen de la replicación (5’-3’)</li><li><strong>Hebra retardada:</strong> Varios primers. A medida que avanza la horquilla, se van sintetizando nuevos cebadores que darán lugar a fragmentos de Okazaki.</li></ul></li></ol><p><strong>Primasa:</strong> Es una enzima con función ARN polimerasa que sintetiza fragmentos cortos de ARN (<strong>10 nucleótidos</strong>), denominados cebadores o primers. Los primers son complementarios de zonas concretas de ADN y sirven para que la ADN polimerasa empiece a hacer la nueva cadena de ADN copiando la original.</p>",
+          "imgs": [{ "src": "img/d064.jpg", "alt": "La primasa coloca los primers en las dos hebras (diap. 64)" }],
+          "entiende": "La ADN polimerasa no sabe empezar de cero: necesita un trocito de ARN (el primer) donde engancharse. La continua necesita uno; la retardada, uno por cada fragmento.",
+          "truco": "<strong>Primasa → primer</strong> (de ARN, 10 nucleótidos).",
+          "q": "¿Qué hace la primasa? ¿Cuántos primers necesita cada hebra?"
+        },
+        {
+          "titulo": "Elongación: la ADN polimerasa III", "lv": 1, "fuente": "Diapositivas 65, 72 y 73",
+          "defs": [{ "t": "ADN polimerasa", "facil": "La enzima que va añadiendo nucleótidos a la cadena nueva." }],
+          "prof": "<ol start=\"2\"><li>Una vez que se colocan los primers, la <strong>ADN polimerasa III</strong> llega y empieza a sintetizar las nuevas hebras en dirección 5’ → 3’.<ul><li><strong>Hebra conductora:</strong> Elongación continua (5’-3’)</li><li><strong>Hebra retardada:</strong> Elongación discontinua (5’-3’) → se van sintetizando los fragmentos de Okazaki hasta alcanzar el primer siguiente</li></ul></li></ol><p><strong>ADN polimerasa:</strong> Enzima que añade nuevos nucleótidos al extremo OH-3’ de una cadena en crecimiento, es decir, añade nucleótidos en <strong>dirección 5’ → 3’ siempre</strong>.</p><ul><li>La secuencia de nucleótidos que se incorpora es complementaria de la secuencia de cadena molde que se está leyendo.</li><li>Tanto procariotas como eucariotas presentan varios tipos de polimerasas.</li></ul>",
+          "imgs": [{ "src": "img/d065.jpg", "alt": "La ADN polimerasa III alarga las hebras (diap. 65)" }],
+          "entiende": "Es la que hace el trabajo de verdad: lee el molde y va poniendo la base complementaria, siempre añadiendo por el extremo 3’.",
+          "truco": "Pol <strong>III</strong> = la que <strong>construye</strong> (la grande del trabajo).",
+          "q": "¿Qué hace la ADN polimerasa III y en qué dirección trabaja siempre?"
+        },
+        {
+          "titulo": "Elongación: ADN polimerasa I y ligasa", "lv": 1, "fuente": "Diapositivas 66 y 74",
+          "defs": [{ "t": "Ligasa", "facil": "La enzima que pega los fragmentos de ADN entre sí." }],
+          "prof": "<ol start=\"3\"><li>Eliminación de primers y unión de todos los fragmentos de ADN.<ul><li><strong>ADN polimerasa I:</strong> Actividad exonucleasa para retirar los cebadores y actividad polimerasa para sustituirlos por ADN.</li><li><strong>Ligasa:</strong> tras la ADN polimerasa I, la ligasa se encargará de ir uniendo los fragmentos de ADN de la hebra que se acaba de copiar.</li></ul></li></ol>",
+          "imgs": [{ "src": "img/d066.jpg", "alt": "Helicasa, SSB, ADN pol III, ADN pol I y ligasa (diap. 66)" }],
+          "entiende": "Al final quedan trocitos de ARN (los primers) en medio del ADN: la pol I los quita y los cambia por ADN, y la ligasa pega los trozos.",
+          "truco": "<strong>Pol I = goma y lápiz</strong> (borra primer y pone ADN) · <strong>Ligasa = pegamento</strong>.",
+          "q": "¿Qué hacen la ADN polimerasa I y la ligasa?"
+        },
+        {
+          "titulo": "Enzimas de la replicación: resumen", "lv": 1, "fuente": "Diapositivas 67 a 74",
+          "defs": [],
+          "prof": "<p><strong>Enzimas que actúan en la replicación</strong></p><ul><li><strong>Helicasa:</strong> Desenrolla y separa las 2 cadenas de la doble hélice en ambos sentidos. Las nuevas hebras que van en la misma dirección que las helicasas serán hebras continuas. En cambio, las que van en dirección opuesta serán las retardadas.</li><li><strong>Topoisomerasa:</strong> La separación de las dos cadenas genera un superenrollamiento en el resto de la hélice. Esta enzima junto con la girasa se encargan de relajar esa tensión extra.</li><li><strong>Proteínas de unión a cadena sencilla (SSB):</strong> Se unen a las cadenas desenrolladas evitando que se vuelva a formar la doble hélice</li><li><strong>Primasa:</strong> sintetiza fragmentos cortos de ARN (10 nucleótidos), denominados cebadores o primers.</li><li><strong>ADN polimerasa:</strong> La ADN polimerasa reconoce los primers para iniciar la elongación. Hebra continua: requiere un único primer en el origen de replicación. Hebra retardada: requiere varios primers (un primer para cada fragmento de Okazaki).</li><li>Hay otra ADN polimerasa que elimina los primers (RNA) y los sustituye por nucleótidos de ADN. También dirección 5’--3’</li><li><strong>Ligasa:</strong> Une los fragmentos de ADN entre sí.</li></ul>",
+          "imgs": [{ "src": "img/d068.jpg", "alt": "Burbuja de replicación con todas sus enzimas (diap. 68)" }],
+          "entiende": "En orden de trabajo: abrir (helicasa), sujetar (SSB), quitar tensión (topoisomerasa y girasa), poner arranque (primasa), copiar (pol III), cambiar primers (pol I) y pegar (ligasa).",
+          "truco": "«<strong>Hoy Sale Tu Primo Pol Pol Ligando</strong>»: Helicasa, SSB, Topoisomerasa, Primasa, Pol III, Pol I, Ligasa.",
+          "q": "Ordena las enzimas de la replicación y di la función de cada una."
+        },
+        {
+          "titulo": "Peculiaridades en eucariotas y telómeros", "lv": 2, "fuente": "Diapositivas 76 y 77",
+          "defs": [{ "t": "Telómeros", "facil": "Los extremos de los cromosomas, que se acortan en cada división." }],
+          "prof": "<p><strong>PECULIARIDADES DE LA REPLICACIÓN EN EUCARIOTAS</strong></p><ul><li>Múltiples orígenes de replicación</li><li>Varios tipos de ADN polimerasas que se reparten las tareas.</li><li>Durante la replicación también se unen las histonas y se estructuran los nucleosomas.</li><li><strong>Reducción de telómeros</strong>.</li></ul><p><strong>Acortamiento de los telómeros</strong></p><ul><li>División celular</li><li>↓longitud de los telómeros</li><li>Final del telómero: Fragmento que se pierde porque no se puede copiar</li></ul>",
+          "imgs": [{ "src": "img/d077.jpg", "alt": "Acortamiento de los telómeros en cada división (diap. 77)" }],
+          "entiende": "En el extremo del cromosoma, el último primer no se puede sustituir por ADN: ese trocito se pierde y el telómero se acorta un poco en cada división.",
+          "truco": "Eucariotas: <strong>muchos orígenes, muchas polimerasas, histonas y telómeros que se acortan</strong>.",
+          "q": "Di las 4 peculiaridades de la replicación en eucariotas. ¿Por qué se acortan los telómeros?"
+        }
+      ]
+    },
+    {
+      "titulo": "La transcripción",
+      "conceptos": [
+        {
+          "titulo": "Transcripción: qué es y sus fases", "lv": 1, "fuente": "Diapositiva 78",
+          "defs": [{ "t": "Transcripción", "facil": "Copiar un gen del ADN en forma de ARN.", "diapo": "La transcripción es el proceso por el cual se sintetiza una molécula de ARN utilizando como molde una cadena de ADN.", "n": 78 }],
+          "prof": "<p>La transcripción es el proceso por el cual se sintetiza una molécula de ARN utilizando como molde una cadena de ADN.</p><p>FASES DE LA TRANSCRIPCIÓN: 1. <strong>INICIACIÓN</strong> 2. <strong>ELONGACIÓN</strong> 3. <strong>TERMINACIÓN</strong></p><ul><li><strong>En procariotas:</strong> se obtienen directamente moléculas maduras de ARN.</li><li><strong>En eucariotas:</strong> se obtienen moléculas de ARN que tienen que sufrir modificaciones para madurar.</li></ul>",
+          "imgs": [{ "src": "img/d078.jpg", "alt": "Del ADN al ARN en la transcripción (diap. 78)" }],
+          "entiende": "Se copia solo un trozo (un gen) y en ARN. En bacterias sale listo para usar; en eucariotas hay que «retocarlo» antes.",
+          "truco": "3 fases, como en una carrera: <strong>salida, carrera, meta</strong>.",
+          "q": "¿Qué es la transcripción, cuáles son sus fases y qué diferencia hay entre procariotas y eucariotas?"
+        },
+        {
+          "titulo": "La ARN polimerasa", "lv": 1, "fuente": "Diapositiva 79",
+          "defs": [{ "t": "ARN polimerasa", "facil": "La enzima que fabrica ARN copiando el ADN." }],
+          "prof": "<p>La enzima principal de este proceso es la <strong>ARN polimerasa</strong>. Función: síntesis de ARN usando una cadena de ADN como molde. La ARN polimerasa produce la copia de ARN en <strong>dirección 5’ → 3’</strong>.</p><ul><li><strong>Células procariotas:</strong> Un único tipo de ARN polimerasa</li><li><strong>Células eucariotas:</strong> 3 tipos de ARN polimerasas:<ul><li><strong>ARN polimerasa I</strong>: Síntesis de la mayor parte del ARNr.</li><li><strong>ARN polimerasa II</strong>: Síntesis de ARNm.</li><li><strong>ARN polimerasa III</strong>: Síntesis del ARNt y una parte del ARNr.</li></ul></li></ul>",
+          "imgs": [{ "src": "img/d079.jpg", "alt": "La ARN polimerasa copia el molde de ADN (diap. 79)" }],
+          "entiende": "En bacterias, una sola polimerasa lo hace todo; en eucariotas hay tres especialistas, una para cada tipo de ARN.",
+          "truco": "«<strong>R-M-T</strong>» por orden: I → ARN<strong>r</strong>, II → ARN<strong>m</strong>, III → ARN<strong>t</strong> (y algo de r).",
+          "q": "¿Cuántas ARN polimerasas hay en procariotas y en eucariotas? ¿Qué sintetiza cada una?"
+        },
+        {
+          "titulo": "Iniciación: el promotor", "lv": 1, "fuente": "Diapositiva 80",
+          "defs": [{ "t": "Promotor", "facil": "La secuencia al inicio de un gen donde se engancha la ARN polimerasa." }],
+          "prof": "<p><strong>Fase de iniciación:</strong></p><ol><li>La <strong>ARN polimerasa</strong> reconoce una secuencia de bases específica llamada <strong>promotor</strong>, que se encuentra al inicio de un gen → <strong>Cada gen tiene su propio promotor</strong>.</li><li>Después de unirse al promotor, las dos hebras de ADN se separan y comienza la síntesis de ARN.</li></ol>",
+          "imgs": [{ "src": "img/d080.jpg", "alt": "La ARN polimerasa se une al promotor del gen (diap. 80)" }],
+          "entiende": "El promotor es el cartel de «empieza aquí»: la polimerasa lo reconoce, abre el ADN y se pone a copiar.",
+          "truco": "<strong>Promotor = Puerta de entrada</strong> del gen.",
+          "q": "¿Qué ocurre en la fase de iniciación de la transcripción? ¿Qué es el promotor?"
+        },
+        {
+          "titulo": "Elongación: cadena molde y cadena codificante", "lv": 1, "fuente": "Diapositivas 81 y 82",
+          "defs": [
+            { "t": "Cadena molde", "facil": "La cadena de ADN que se lee (3’→5’)." },
+            { "t": "Cadena codificante", "facil": "La otra cadena de ADN: el ARN sale igual que ella, pero con U en vez de T." }
+          ],
+          "prof": "<p><strong>Fase de elongación:</strong></p><ol start=\"3\"><li>La ARN polimerasa añade <strong>ribonucleótidos</strong> en dirección <strong>5’ → 3’</strong>, tomando una hebra de ADN como molde (<strong>cadena molde 3’ → 5’</strong>).</li></ol><p>El transcrito de ARN tiene la misma información que la cadena de ADN contraria a la molde (<strong>cadena codificante</strong>) en el gen, pero contiene la base <strong>uracilo (U) en lugar de timina (T)</strong>.</p><p>En la REPLICACIÓN, la unión de nucleótidos es similar.</p>",
+          "imgs": [{ "src": "img/d081.jpg", "alt": "Cadena molde, cadena codificante y ARN (diap. 81)" }],
+          "entiende": "El ARN es complementario de la molde, así que acaba siendo una copia de la codificante… con U donde había T.",
+          "truco": "<strong>ARN = codificante con U</strong>.",
+          "q": "Si la cadena codificante es 5’ ATGC 3’, ¿cómo es el ARN? ¿Qué cadena se usa de molde?"
+        },
+        {
+          "titulo": "Terminación: el terminador", "lv": 1, "fuente": "Diapositiva 83",
+          "defs": [{ "t": "Terminador", "facil": "La secuencia al final del gen donde la polimerasa para y suelta el ARN." }],
+          "prof": "<p><strong>Fase de terminación:</strong></p><ol start=\"4\"><li>La síntesis de ARN cuando la ARN polimerasa alcanza una secuencia específica llamada <strong>terminador</strong>.</li><li>En este punto se separa el ARN de la cadena de ADN y de la ARN polimerasa.</li><li>Después de la terminación, la transcripción ha concluido.</li></ol><p>Un transcrito de ARN que está listo para su uso en la traducción → <strong>ARNm</strong>.</p><p>En <strong>procariotas</strong>, los transcritos de ARNm están listos para su traducción inmediatamente después de la transcripción. Además, al encontrarse en el citoplasma (no hay núcleo), los ribosomas pueden empezar directamente a sintetizar las proteínas.</p>",
+          "imgs": [{ "src": "img/d083.jpg", "alt": "En procariotas los ribosomas traducen a la vez que se transcribe (diap. 83)" }],
+          "entiende": "En bacterias no hay núcleo: mientras se va copiando el ARN, los ribosomas ya lo están leyendo.",
+          "truco": "<strong>Promotor = salida · Terminador = meta</strong>.",
+          "q": "¿Qué pasa en la terminación de la transcripción? ¿Por qué en procariotas se puede traducir enseguida?"
+        }
+      ]
+    },
+    {
+      "titulo": "La maduración del ARN",
+      "conceptos": [
+        {
+          "titulo": "Por qué madura el ARN en eucariotas", "lv": 1, "fuente": "Diapositiva 84",
+          "defs": [
+            { "t": "Exones", "facil": "Los trozos del gen con información para la proteína." },
+            { "t": "Intrones", "facil": "Los trozos del gen sin esa información, que hay que quitar." }
+          ],
+          "prof": "<p>En <strong>eucariotas</strong>, el ARN requiere modificaciones para dar lugar a las moléculas maduras de ARN (ARNm, ARNt y ARNr) → Este proceso se conoce como <strong>MADURACIÓN DEL ARN</strong>.</p><p>¿Por qué el ARN de eucariotas requiere modificaciones?</p><ol><li>Porque el ARN, al ser monocatenario, <strong>se degrada con mucha facilidad</strong>. Por ello, se modifica para evitar su degradación durante la transcripción.</li><li>Porque el ARN se sintetiza en el núcleo y para <strong>salir al citoplasma</strong> necesita modificar un poco su estructura para poder atravesar la membrana del núcleo.</li><li>Porque los genes (ADN) tienen información relacionada con la síntesis de proteínas (a estas regiones se les llaman <strong>exones</strong>), pero también tienen regiones que no tienen este tipo de información (<strong>intrones</strong>). Por tanto, cuando se produce el ARNm hay que eliminar estas últimas regiones.</li></ol>",
+          "entiende": "Tres problemas, tres soluciones: se rompe fácil (protegerlo), tiene que salir del núcleo (adaptarlo) y lleva trozos que sobran (cortarlos).",
+          "truco": "<strong>Exón = sale</strong> (se queda en el ARN maduro); <strong>intrón = se queda dentro</strong> (se elimina).",
+          "q": "Di los 3 motivos por los que el ARN de eucariotas tiene que madurar."
+        },
+        {
+          "titulo": "CAP-5’ y cola poliA", "lv": 1, "fuente": "Diapositiva 85",
+          "defs": [
+            { "t": "CAP-5’", "facil": "Una «caperuza» de guanina modificada en el principio del ARN." },
+            { "t": "Cola poliA", "facil": "Una cola de 100-200 adeninas al final del ARN." }
+          ],
+          "prof": "<p><strong>I. Adición de un CAP-5’ al inicio de la transcripción.</strong> Se añade una caperuza de metilguanosina en el extremo 5’ (al inicio del transcrito) → El cap 5' es un nucleótido modificado de guanina (G) que se añade al primer nucleótido del transcrito durante la transcripción. El cap 5':</p><ol><li>Evita que el ARN se degrade durante la elongación.</li><li>Ayuda al ribosoma a unirse al ARNm y a comenzar a leerlo para hacer una proteína.</li></ol><p><strong>II. Adición de una cola de poliadeninas (poliA) al final de la transcripción.</strong> Se añade una cola de adeninas (cola poliA) en el extremo 3’ (al final del transcrito) → entre <strong>100-200 adeninas</strong>. La cola poliA:</p><ol><li>Permite al ARN maduro salir al citoplasma.</li></ol>",
+          "imgs": [{ "src": "img/d085.jpg", "alt": "ARN con cap 5’ y cola poli-A (diap. 85)" }],
+          "entiende": "Un «gorro» al principio (protege y ayuda al ribosoma a encontrarlo) y una «cola» al final (le deja salir del núcleo).",
+          "truco": "<strong>Gorro en la cabeza (5’), cola atrás (3’)</strong>.",
+          "q": "¿Qué son el CAP-5’ y la cola poliA? ¿Dónde se añaden y para qué sirven?"
+        },
+        {
+          "titulo": "Splicing: eliminar los intrones", "lv": 1, "fuente": "Diapositivas 86 y 87",
+          "defs": [
+            { "t": "Splicing", "facil": "Cortar los intrones y empalmar los exones." },
+            { "t": "Spliceosoma", "facil": "El complejo de proteínas que hace el splicing." }
+          ],
+          "prof": "<p><strong>III. Eliminación de los intrones (splicing).</strong> Se da mediante un proceso de corte y empalme conocido como <strong>splicing</strong>. En este proceso interviene un complejo de proteínas denominado <strong>spliceosoma</strong>.</p><ol><li>Las proteínas se unen en el extremo de los intrones.</li><li>El intrón forma un bucle.</li><li>El spliceosoma corta en la base del bucle y empalma los exones.</li></ol>",
+          "imgs": [{ "src": "img/d087.jpg", "alt": "Splicing: se cortan los intrones y se empalman los exones (diap. 87)" }],
+          "entiende": "Es como montar una película: se cortan las escenas que sobran (intrones) y se pegan las buenas (exones).",
+          "truco": "<strong>Unir, Bucle, Cortar y empalmar</strong>.",
+          "q": "Explica el splicing: qué es, quién lo hace y sus 3 pasos."
+        },
+        {
+          "titulo": "Splicing alternativo", "lv": 2, "fuente": "Diapositiva 88",
+          "defs": [],
+          "prof": "<p>Cuando ocurre el splicing del ARNm, aunque se tienen que eliminar todos los intrones y juntarse los exones, <strong>puede ocurrir que se eliminen también algunos exones</strong>.</p><p>Eso hace que desde la misma secuencia de ADN se puedan formar diferentes ARNm-s y por ende, <strong>distintas proteínas</strong>.</p><p>→ Esto permite codificar un mayor número de proteínas que los genes que tenemos en nuestro ADN.</p>",
+          "imgs": [{ "src": "img/d088.jpg", "alt": "Splicing alternativo: un gen, varias proteínas (diap. 88)" }],
+          "entiende": "Con las mismas escenas puedes montar películas distintas según cuáles quites: un gen, varias proteínas.",
+          "truco": "<strong>1 gen → varias proteínas</strong>.",
+          "q": "¿Qué es el splicing alternativo y qué consecuencia tiene?"
+        }
+      ]
+    },
+    {
+      "titulo": "La traducción y el código genético",
+      "conceptos": [
+        {
+          "titulo": "Traducción: de ARNm a proteína", "lv": 1, "fuente": "Diapositivas 90 y 91",
+          "defs": [
+            { "t": "Traducción", "facil": "Fabricar una proteína leyendo un ARNm.", "diapo": "La traducción es el proceso por el cual se sintetiza una proteína a partir de una molécula de ARNm.", "n": 90 },
+            { "t": "Aminoácidos (AA)", "facil": "Las piezas con las que se construyen las proteínas." }
+          ],
+          "prof": "<p>La traducción es el proceso por el cual se sintetiza una proteína a partir de una molécula de ARNm.</p><p>¡Los genes codifican proteínas! ¿De qué están formadas las proteínas? De <strong>AMINOÁCIDOS (AA)</strong>. R = cadena variable y específica de cada AA.</p><p>Hay <strong>20 aminoácidos estándar</strong>. También existen algunos más raros de encontrar en células eucariotas.</p>",
+          "imgs": [{ "src": "img/d090.jpg", "alt": "Del gen a la proteína: transcripción y traducción (diap. 90)" }],
+          "entiende": "Las proteínas son collares de aminoácidos. El orden de los aminoácidos lo marca el ARNm, que a su vez viene del gen.",
+          "truco": "<strong>20 aminoácidos</strong>; cada uno se distingue por su cadena <strong>R</strong>.",
+          "q": "¿Qué es la traducción y de qué están formadas las proteínas? ¿Cuántos aminoácidos estándar hay?"
+        },
+        {
+          "titulo": "El código genético y los codones", "lv": 1, "fuente": "Diapositivas 92 y 93",
+          "defs": [
+            { "t": "Código genético", "facil": "El diccionario que dice qué aminoácido corresponde a cada trío de bases.", "diapo": "El Código Genético es el diccionario que permite traducir una secuencia de nucleótidos a una secuencia de aminoácidos.", "n": 93 },
+            { "t": "Codón", "facil": "Un trío de bases del ARNm que indica un aminoácido.", "diapo": "Cada trío o triplete de nucleótidos se denomina codón.", "n": 93 }
+          ],
+          "prof": "<p>¿Cómo pasamos de un lenguaje 4 letras (A, C, G y U) a otro de 20 (AA)? Porque existe un código: <strong>el código genético</strong>.</p><p>El Código Genético es el diccionario que permite traducir una secuencia de nucleótidos a una secuencia de aminoácidos.</p><ul><li>Se basa en que una secuencia de <strong>3 nucleótidos</strong> codifica para un aminoácido.</li><li>Cada trío o triplete de nucleótidos se denomina <strong>codón</strong>.</li><li>¿Cuántos codones posibles existen? 4 bases nitrogenadas (A, C, G y U): 4³ = <strong>64</strong></li><li><strong>61 codones</strong> codifican para aminoácidos</li><li><strong>3 codones</strong> son codones de terminación.</li></ul>",
+          "imgs": [{ "src": "img/d093.jpg", "alt": "La rueda del código genético (diap. 93)" }],
+          "entiende": "Con palabras de 3 letras y 4 letras posibles salen 4 × 4 × 4 = 64 palabras: de sobra para 20 aminoácidos y 3 señales de «fin».",
+          "truco": "<strong>4³ = 64 = 61 + 3</strong>.",
+          "q": "¿Qué es un codón? ¿Cuántos codones hay, cuántos codifican aminoácidos y cuántos son de terminación?"
+        },
+        {
+          "titulo": "Características del código genético", "lv": 1, "fuente": "Diapositiva 94",
+          "defs": [{ "t": "Codones sinónimos", "facil": "Codones distintos que dan el mismo aminoácido." }],
+          "prof": "<ul><li><strong>Universal</strong> → Es el mismo para todos los organismos.</li><li><strong>No ambiguo</strong> → Cada codón codifica un único aminoácido.</li><li><strong>Degenerado</strong> → Hay 20 aminoácidos y 61 codones, en consecuencia → La mayor parte de los aminoácidos están codificados por más de un codón (<strong>codones sinónimos</strong>)</li><li><strong>Continuo y no solapado</strong> → En la cadena de ARNm, los codones se disponen de manera secuencial, uno a continuación del otro.</li></ul>",
+          "imgs": [{ "src": "img/d094.jpg", "alt": "Tabla del código genético y sus características (diap. 94)" }],
+          "entiende": "No ambiguo y degenerado no se contradicen: un codón → un solo aminoácido (no ambiguo), pero un aminoácido ← varios codones (degenerado).",
+          "truco": "<strong>U-N-D-C</strong>: Universal, No ambiguo, Degenerado, Continuo.",
+          "q": "Di las 4 características del código genético. ¿Qué diferencia hay entre «no ambiguo» y «degenerado»?"
+        },
+        {
+          "titulo": "Codones de inicio y de terminación", "lv": 1, "fuente": "Diapositiva 95",
+          "defs": [{ "t": "Codón STOP", "facil": "Codón que no da aminoácido: marca el final de la proteína." }],
+          "prof": "<p><strong>Codones importantes del código genético</strong></p><ul><li>Todas las secuencias de ARNm que se van a traducir empiezan con el codón <strong>AUG</strong> que codifica para la <strong>Metionina (Met)</strong></li><li>Los codones <strong>UAA, UAG y UGA</strong> son codones de terminación o <strong>codones STOP</strong>.</li></ul>",
+          "entiende": "Toda proteína empieza por metionina (AUG). Y la traducción se para al llegar a cualquiera de los 3 STOP.",
+          "truco": "<strong>AUG = «¡Arranca!»</strong> · STOP: «<strong>U Are Away, U Are Gone, U Go Away</strong>» (UAA, UAG, UGA).",
+          "q": "¿Cuál es el codón de inicio y qué aminoácido codifica? ¿Cuáles son los codones STOP?"
+        }
+      ]
+    },
+    {
+      "titulo": "Las fases de la traducción",
+      "conceptos": [
+        {
+          "titulo": "Lo que hace falta y los sitios del ribosoma", "lv": 1, "fuente": "Diapositiva 96",
+          "defs": [
+            { "t": "Peptidil transferasa", "facil": "La enzima que une un aminoácido con el siguiente." },
+            { "t": "Sitios A, P y E", "facil": "Los tres huecos de la subunidad mayor del ribosoma donde se colocan los ARNt." }
+          ],
+          "prof": "<p>Para que se desarrolle el proceso de síntesis de proteínas se necesita:</p><ul><li>1 molécula de <strong>ARNm</strong></li><li>Los <strong>20 aminoácidos</strong> (AA)</li><li>Los <strong>ribosomas</strong> (formados por ARNr y proteínas)</li><li>Los <strong>ARNt</strong> que transportan los AA hasta los ribosomas.</li><li>Las enzima(<strong>PEPTIDIL TRANSFERASA</strong>) que catalizan la unión entre AA.</li></ul><p>Los RIBOSOMAS tienen 2 subunidades:</p><ul><li><strong>Subunidad menor:</strong> Tiene 1 sitio de unión al ARNm</li><li><strong>Subunidad mayor:</strong> Tiene 3 sitios de unión al ARNt<ul><li><strong>Sitio A (aminoacil):</strong> donde se sitúa el ARNt que lleva el siguiente AA que se va a incorporar en la cadena proteica.</li><li><strong>Sitio P (peptidil):</strong> donde se sitúa el ARNt que lleva la cadena proteica en crecimiento</li><li><strong>Sitio E (exit):</strong> donde se sitúa el ARNt que acaba de transferir la cadena en crecimiento al ARNt que lleva el siguiente AA.</li></ul></li></ul>",
+          "imgs": [{ "src": "img/d096.jpg", "alt": "Ribosoma: subunidades y sitios E, P y A (diap. 96)" }],
+          "entiende": "Los ARNt pasan por el ribosoma como en una cinta: entran por A (traen aminoácido), pasan a P (sujetan la cadena) y salen por E.",
+          "truco": "Orden de paso: <strong>A → P → E</strong> = «<strong>A</strong>ntes, <strong>P</strong>egado, <strong>E</strong>xit».",
+          "q": "¿Qué hace falta para la traducción? Explica los sitios A, P y E del ribosoma."
+        },
+        {
+          "titulo": "Iniciación de la traducción", "lv": 1, "fuente": "Diapositiva 100",
+          "defs": [{ "t": "ARNt iniciador", "facil": "El ARNt que lleva la metionina y empieza la traducción." }],
+          "prof": "<p><strong>Fase de iniciación:</strong> unión del ARNt+Met al ribosoma</p><ol><li>El <strong>ARNt iniciador</strong> (ARNt con Metionina) se une a la subunidad menor del ribosoma y se colocan en el CAP-5’ del ARNm.</li><li>Este complejo lee el ARNm hasta encontrar el codón de inicio (<strong>AUG</strong>).</li><li>El ARNt iniciador se une al codón de inicio.</li><li>La subunidad mayor del ribosoma se une para formar el <strong>complejo de iniciación</strong>, y el ARNt queda colocado en el <strong>sitio P</strong>.</li></ol>",
+          "entiende": "La subunidad pequeña con la metionina se engancha al gorro (CAP-5’), avanza hasta AUG, y entonces llega la subunidad grande y cierra el «bocadillo».",
+          "truco": "El primer ARNt empieza en <strong>P</strong>, no en A.",
+          "q": "Explica los 4 pasos de la iniciación de la traducción. ¿En qué sitio queda el ARNt iniciador?"
+        },
+        {
+          "titulo": "Elongación de la traducción", "lv": 1, "fuente": "Diapositivas 101 y 102",
+          "defs": [{ "t": "Enlace peptídico", "facil": "La unión entre dos aminoácidos." }],
+          "prof": "<p><strong>Fase de elongación:</strong></p><ol><li>Comienza cuando se sitúa en el <strong>sitio A</strong> el segundo aminoacil-ARNt (ARNt+AA) que tiene un anticodón complementario al segundo codón del ARNm.</li><li>La enzima <strong>peptidil transferasa</strong> cataliza la formación del <strong>enlace peptídico</strong> entre la Met y el segundo AA. De esta forma, el ARNt del sitio P se queda sin AA (Met) y el ARNt del sitio A contiene la cadena en crecimiento.</li><li>Formado el enlace peptídico, el ribosoma se desplaza a lo largo del ARNm en dirección 5’ → 3’.</li><li>El ARNt iniciador (ahora sin AA), queda situado en el <strong>sitio E</strong> para separarse del complejo. El ARNt que tiene 2 AA queda situado en el sitio P, y así, el sitio A queda libre para que el siguiente aminoacil-ARNt se una para incorporar el AA correspondiente.</li></ol>",
+          "imgs": [{ "src": "img/d101.jpg", "alt": "Elongación: el segundo ARNt entra en el sitio A (diap. 101)" }],
+          "entiende": "Entra un ARNt en A, se unen los aminoácidos, el ribosoma avanza un codón, el ARNt vacío sale por E… y se repite.",
+          "truco": "<strong>Entra, Une, Avanza, Sale</strong>: «EUAS».",
+          "q": "Explica la elongación de la traducción: qué pasa en los sitios A, P y E."
+        },
+        {
+          "titulo": "Terminación de la traducción", "lv": 1, "fuente": "Diapositivas 103 y 104",
+          "defs": [{ "t": "Factores de liberación", "facil": "Proteínas que reconocen el STOP y sueltan la proteína." }],
+          "prof": "<p><strong>Fase de terminación:</strong></p><ol><li>Se produce cuando el ribosoma llega a un <strong>codón STOP</strong> (UAA, UGA o UAG)</li><li>No existe ningún ARNt que tenga un anticodón complementario a esos codones.</li><li>Los <strong>factores de liberación</strong> reconocen los codones STOP, se sitúan en el sitio A y hacen que la peptidil transferasa corte la unión entre la cadena proteína y el ARNt que la porta.</li><li>La proteína se libera, y todo el complejo de traducción se disocia.</li></ol>",
+          "imgs": [{ "src": "img/d104.jpg", "alt": "Terminación: factores de liberación en el codón STOP (diap. 104)" }],
+          "entiende": "Al STOP no le corresponde ningún ARNt: en su lugar entra un factor de liberación, que hace que la proteína se suelte y el ribosoma se desmonte.",
+          "truco": "<strong>STOP = ningún ARNt, entra el factor</strong>.",
+          "q": "¿Qué ocurre en la terminación de la traducción? ¿Por qué ningún ARNt se une al codón STOP?"
+        }
+      ]
+    },
+    {
+      "titulo": "Las mutaciones génicas",
+      "conceptos": [
+        {
+          "titulo": "Qué es una mutación", "lv": 1, "fuente": "Diapositiva 106",
+          "defs": [{ "t": "Mutación", "facil": "Un cambio en el ADN.", "diapo": "Cambio en la secuencia o estructura de ADN que ocurre de manera espontánea.", "n": 106 }],
+          "prof": "<p><strong>Mutación</strong>: cambio en la secuencia o estructura de ADN que ocurre de manera espontánea.</p><ul><li>Se produce un cambio en la información genética, que puede tener consecuencias (positivas o negativas) o no tenerlas.</li><li>Mutaciones en <strong>células somáticas</strong>: las células hijas heredan la mutación.</li><li>Mutaciones en <strong>células sexuales</strong>: la mutación se puede transmitir a la siguiente generación.</li></ul>",
+          "entiende": "Si la mutación está en una célula del cuerpo, la heredan sus células hijas; solo si está en un óvulo o espermatozoide puede pasar a los hijos.",
+          "truco": "<strong>Somática → células hijas</strong>; <strong>sexual → hijos</strong>.",
+          "q": "¿Qué es una mutación? ¿Qué diferencia hay entre una mutación en una célula somática y en una sexual?"
+        },
+        {
+          "titulo": "Cromosómicas y génicas", "lv": 1, "fuente": "Diapositivas 106 y 107",
+          "defs": [],
+          "prof": "<p><strong>TIPOS DE MUTACIONES</strong></p><ul><li>Mutaciones <strong>CROMOSÓMICAS</strong>: gran extensión (afectan a muchos genes). Ejemplo: deleciones, inserciones, translocaciones…</li><li>Mutaciones <strong>GÉNICAS</strong>: menor extensión (afectan a un gen y, por tanto, a la proteína que codifica ese gen).</li></ul><p>Las mutaciones génicas afectan a uno o varios nucleótidos, en lugar de a fragmentos extensos de ADN como ocurre en las mutaciones cromosómicas. Hay 3 tipos:</p><ul><li><strong>Inserciones</strong></li><li><strong>Deleciones</strong></li><li><strong>Sustituciones</strong></li></ul>",
+          "entiende": "Cromosómica = se mueve o se pierde un trozo grande (muchos genes). Génica = cambian una o pocas letras de un solo gen.",
+          "truco": "Génicas: <strong>I-D-S</strong> → Inserción, Deleción, Sustitución.",
+          "q": "Diferencia las mutaciones cromosómicas de las génicas y di los 3 tipos de mutaciones génicas."
+        },
+        {
+          "titulo": "Inserción y deleción: el marco de lectura", "lv": 1, "fuente": "Diapositiva 108",
+          "defs": [{ "t": "Marco de lectura", "facil": "La forma de agrupar el ARNm de 3 en 3 desde el AUG." }],
+          "prof": "<ul><li><strong>Inserción:</strong> Ganancia de uno o varios nucleótidos en la secuencia de ADN. Cuando ocurre en una región codificante (exón) puede haber un <strong>cambio en el marco de lectura</strong> que afecta al mRNA y a la proteína que codifica.</li><li><strong>Deleción:</strong> Pérdida de uno o varios nucleótidos en la secuencia de ADN. Cuando ocurre en una región codificante (exón) puede haber un cambio en el marco de lectura que afecta al mRNA y a la proteína que codifica.</li></ul><p>Si la inserción/deleción es de <strong>3 nucleótidos o múltiplo de 3</strong>: <strong>No hay cambio en el marco de lectura</strong>. Hay una adición o pérdida de aminoácidos.</p>",
+          "imgs": [{ "src": "img/d108.jpg", "alt": "Inserción y deleción: cambio del marco de lectura (diap. 108)" }],
+          "entiende": "Se lee de 3 en 3: si metes o quitas 1 letra, todos los tríos siguientes se descolocan. Si metes o quitas 3, solo sobra o falta un aminoácido.",
+          "truco": "«<strong>EL GATO SAL TÓ</strong>»: quita una letra y todo lo que sigue deja de tener sentido.",
+          "q": "¿Qué es una inserción y una deleción? ¿Cuándo no cambia el marco de lectura?"
+        },
+        {
+          "titulo": "Sustituciones: silenciosa, errónea y sin sentido", "lv": 1, "fuente": "Diapositiva 109",
+          "defs": [],
+          "prof": "<p><strong>Sustitución:</strong> Se sustituye algún nucleótido por otro. Cuando ocurre en una región codificante (exón), las sustituciones se clasifican en 3 grupos según sus consecuencias en la secuencia de la proteína.</p><ul><li><strong>M. silenciosa:</strong> Un nucleótido es sustiuido por otro dando lugar a un codón que codifica para el mismo aminoácido. La secuencia de la proteína NO cambia.</li><li><strong>M. errónea:</strong> Un nucleótido es sustiuido por otro dando lugar a un codón que codifica para otro aminoácido. La secuencia de la proteína SÍ cambia.</li><li><strong>M. sin sentido:</strong> Un nucleótido es sustiuido por otro dando lugar a un codón STOP. La secuencia de la proteína SÍ cambia, se ACORTA.</li></ul><p>*Si la mutación ocurre en una región no codificante no debería haber consecuencias</p>",
+          "imgs": [{ "src": "img/d109.jpg", "alt": "Mutación silenciosa, errónea y sin sentido (diap. 109)" }],
+          "entiende": "La silenciosa funciona gracias a que el código es degenerado: AAG y AAA dan los dos lisina. La sin sentido mete un STOP antes de tiempo.",
+          "truco": "<strong>Silenciosa = igual · Errónea = otro AA · Sin sentido = STOP, más corta</strong>.",
+          "q": "Explica los 3 tipos de sustitución según su efecto en la proteína."
+        },
+        {
+          "titulo": "Consecuencias de las mutaciones", "lv": 2, "fuente": "Diapositiva 110",
+          "defs": [],
+          "prof": "<p>Estas mutaciones en el ADN, afectarán más o menos la proteína que se forma a partir del ARNm, dependiendo de qué aminoácido afecten.</p><p>Esto dependerá del papel que juegue el aminoácido en la estructura y función de la proteína a sintetizar.</p>",
+          "entiende": "No todos los aminoácidos pesan igual: si el cambiado es clave para la forma o la función de la proteína, la mutación será grave.",
+          "truco": "Gravedad = <strong>qué aminoácido</strong> toca.",
+          "q": "¿De qué depende que una mutación afecte mucho o poco a la proteína?"
+        }
+      ]
+    }
+  ],
+  "llave": [
+    { "q": "Explica la replicación del ADN: características, fases y enzimas.", "porque": "Es la parte con más diapositivas (53-77) y con más esquemas.", "resp": "Duplica una molécula de ADN en dos idénticas, en la <strong>fase S</strong>. Es <strong>semiconservativa</strong>, empieza en un <strong>origen</strong> (uno en procariotas, varios en eucariotas), es <strong>bidireccional</strong> y <strong>semidiscontinua</strong>. <strong>Iniciación:</strong> proteínas reconocen el origen, las <strong>helicasas</strong> rompen los puentes de H y forman la burbuja, las <strong>SSBP</strong> mantienen separadas las cadenas y la <strong>girasa y la topoisomerasa</strong> relajan la tensión. <strong>Elongación:</strong> la <strong>primasa</strong> coloca primers, la <strong>ADN polimerasa III</strong> sintetiza 5’→3’, continua en la hebra conductora y discontinua en la retardada (fragmentos de Okazaki); la <strong>ADN polimerasa I</strong> sustituye los primers por ADN y la <strong>ligasa</strong> une los fragmentos." },
+    { "q": "Explica la traducción: qué se necesita, los sitios del ribosoma y sus 3 fases.", "porque": "Parte nueva del tema completo, con 15 diapositivas.", "resp": "Síntesis de una proteína a partir de un ARNm. Necesita ARNm, 20 AA, ribosomas, ARNt y <strong>peptidil transferasa</strong>. Ribosoma: subunidad menor (une el ARNm) y mayor con sitios <strong>A</strong> (ARNt con el siguiente AA), <strong>P</strong> (cadena en crecimiento) y <strong>E</strong> (salida). <strong>Iniciación:</strong> ARNt+Met con la subunidad menor en el CAP-5’, busca <strong>AUG</strong>, se une la subunidad mayor y el ARNt queda en P. <strong>Elongación:</strong> entra un ARNt en A, la peptidil transferasa forma el enlace peptídico, el ribosoma avanza 5’→3’ y el ARNt vacío sale por E. <strong>Terminación:</strong> codón STOP (UAA, UGA, UAG), los <strong>factores de liberación</strong> se sitúan en A y la proteína se libera." },
+    { "q": "Explica la transcripción y la maduración del ARN.", "porque": "Título propio y 12 diapositivas seguidas.", "resp": "Síntesis de ARN con una cadena de ADN como molde, por la <strong>ARN polimerasa</strong> (una en procariotas; tres en eucariotas: I ARNr, II ARNm, III ARNt). <strong>Iniciación:</strong> reconoce el <strong>promotor</strong>. <strong>Elongación:</strong> ribonucleótidos 5’→3’ sobre la cadena molde; el ARN es como la codificante con U en vez de T. <strong>Terminación:</strong> <strong>terminador</strong>. En eucariotas el ARN madura: <strong>CAP-5’</strong>, <strong>cola poliA</strong> (100-200 A) y <strong>splicing</strong> (el spliceosoma quita intrones y empalma exones)." },
+    { "q": "Describe el código genético y los tipos de mutaciones génicas.", "porque": "Las dos partes nuevas del tema van juntas: las mutaciones se entienden con el código.", "resp": "Diccionario de nucleótidos a aminoácidos: <strong>codón</strong> = 3 nucleótidos; 4³ = <strong>64</strong> (61 AA + 3 STOP). Universal, no ambiguo, degenerado, continuo y no solapado. Inicio <strong>AUG</strong> (Met); STOP <strong>UAA, UAG, UGA</strong>. Mutaciones génicas: <strong>inserción</strong> y <strong>deleción</strong> (cambian el marco de lectura salvo si son de 3 o múltiplo de 3) y <strong>sustitución</strong>: silenciosa (mismo AA), errónea (otro AA) y sin sentido (STOP, proteína más corta)." },
+    { "q": "Compara ADN y ARN y describe la doble hélice y su empaquetamiento.", "porque": "Es la base de todo el tema.", "resp": "<strong>ADN:</strong> desoxirribosa; A, T, G, C; doble hélice antiparalela; millones de pares de bases; almacena y transmite. <strong>ARN:</strong> ribosa; A, U, G, C; cadena simple; mucho más pequeño; expresa la información. Doble hélice: eje central, antiparalelas, complementarias (A-T 2 puentes, C-G 3), bases dentro, 10 nucleótidos por giro. Empaquetamiento: <strong>nucleosoma</strong> (8 histonas) → <strong>fibra de cromatina</strong> → <strong>solenoide</strong> (6 nucleosomas por vuelta) → <strong>cromosoma metafásico</strong>." }
+  ],
+  "trampas": [
+    ["<strong>Desoxirribosa</strong> (ADN)", "<strong>Ribosa</strong> (ARN)", "El nombre lo dice: A<strong>D</strong>N = <strong>D</strong>esoxirribosa"],
+    ["<strong>Púricas</strong> (A, G)", "<strong>Pirimidínicas</strong> (C, T, U)", "«Pura AGua»"],
+    ["<strong>A-T: 2 puentes</strong>", "<strong>C-G: 3 puentes</strong>", "No los inviertas"],
+    ["<strong>Nucleósido</strong> (base + azúcar)", "<strong>Nucleótido</strong> (+ fosfato)", "El nucleóTido lleva Todo"],
+    ["<strong>ADN polimerasa III</strong> (construye)", "<strong>ADN polimerasa I</strong> (quita primers)", "III hace la hebra; I la retoca"],
+    ["<strong>Primasa</strong> (pone primers de ARN)", "<strong>Ligasa</strong> (pega fragmentos)", "Una al principio, otra al final"],
+    ["<strong>Promotor</strong> (inicio del gen)", "<strong>Terminador</strong> (final)", "Salida y meta de la transcripción"],
+    ["<strong>Exones</strong> (se quedan)", "<strong>Intrones</strong> (se eliminan)", "Exón = sale al ARN maduro"],
+    ["<strong>No ambiguo</strong> (1 codón → 1 AA)", "<strong>Degenerado</strong> (1 AA ← varios codones)", "Mira la flecha"],
+    ["<strong>M. errónea</strong> (otro AA)", "<strong>M. sin sentido</strong> (STOP)", "Sin sentido = la proteína se corta"]
+  ],
+  "numeros": [
+    ["2", "Tipos de ácidos nucleicos · puentes de H entre A y T"],
+    ["3", "Puentes de H entre C y G · ARN polimerasas en eucariotas · nucleótidos por codón · codones STOP"],
+    ["5", "Tipos de bases nitrogenadas"],
+    ["8", "Histonas en cada nucleosoma"],
+    ["6 y 6", "Nucleosomas e histonas H1 por vuelta del solenoide"],
+    ["10", "Nucleótidos por giro de la doble hélice · nucleótidos de un primer"],
+    ["1953", "Modelo de Watson y Crick"],
+    ["20.000 - 25.000", "Genes en el ADN cromosómico humano"],
+    ["16,5 kb y 37 genes", "ADN mitocondrial humano"],
+    ["120-160 kb y ~150 genes", "ADN de cloroplastos"],
+    ["80 %", "Del ARN es ARNr"],
+    ["60 y 40", "Subunidades del ribosoma"],
+    ["100-200", "Adeninas de la cola poliA"],
+    ["20", "Aminoácidos estándar"],
+    ["64 = 61 + 3", "Codones posibles: 61 para aminoácidos y 3 de terminación"]
+  ],
+  "impres": [
+    { "titulo": "Piezas", "items": [["¿Partes de un nucleótido?", "Fosfato, pentosa y base nitrogenada."], ["¿Bases púricas?", "Adenina y guanina."], ["¿Base solo del ARN?", "Uracilo (U)."]] },
+    { "titulo": "Replicación", "items": [["¿Cuándo ocurre?", "En la fase S de la interfase."], ["¿Quién abre la hélice?", "La helicasa."], ["¿Quién sintetiza la nueva hebra?", "La ADN polimerasa III, siempre 5’→3’."], ["¿Quién une los fragmentos de Okazaki?", "La ligasa."]] },
+    { "titulo": "Transcripción y maduración", "items": [["¿Dónde empieza la transcripción?", "En el promotor."], ["¿Qué ARN polimerasa hace el ARNm?", "La II."], ["¿Tres modificaciones de la maduración?", "CAP-5’, cola poliA y splicing."]] },
+    { "titulo": "Traducción y mutaciones", "items": [["¿Codón de inicio?", "AUG (metionina)."], ["¿Codones STOP?", "UAA, UAG y UGA."], ["¿En qué sitio entra cada nuevo ARNt?", "En el sitio A."], ["¿Mutación que da un STOP?", "Sin sentido: la proteína se acorta."]] }
+  ]
+}

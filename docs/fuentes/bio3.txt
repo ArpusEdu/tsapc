@@ -1,0 +1,1289 @@
+
+=== Página 1 [6 imagen(es)]
+Tema 4.
+Ácidos nucleicos y enzimas
+asociadas
+
+=== Página 2 [4 imagen(es)]
+Contenidos
+1. Introducción
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+2.2. Propiedades fisicoquímicas
+3. El ADN
+4. El ARN
+5. El flujo de la información genética
+5.1. Replicación del ADN
+5.2. Transcripción
+5.3. Traducción
+6. Mutaciones génicas
+
+=== Página 3 [5 imagen(es)]
+https://www.youtube.com/watch?v=ZmF2y3xM7Lk
+EL GENOMA DE LOS SERES
+VIVOS
+1. Introducción
+
+=== Página 4 [5 imagen(es)]
+ACTIVIDAD 1
+INDIVIDUAL - Classroom
+1. Dibujad una célula humana con sus respectivos
+orgánulos. Para ello, podéis buscar en internet la imagen
+que necesitéis. Apuntar función principal de cada orgánulo
+1. Cuando ha habido una lesión en un órgano de nuestro
+cuerpo, ¿qué es lo que hacen la mayoría de nuestras
+células para poder reparar esa lesión?
+1. ¿Cuando una célula se divide, qué es lo que pasa con sus
+orgánulos?
+1. ¿Cuando la célula se divide el ADN qué estructura
+presenta?
+
+=== Página 5 [5 imagen(es)]
+https://www.youtube.com/watch?v=URUJD5NEXC8
+Actividad 1. Estructura celular
+https://www.youtube.com/watch?v=E_DSBDvYJmI
+Actividad 2. ¿Qué es el ADN?
+1. Introducción
+
+=== Página 6 [4 imagen(es)]
+Los ácidos nucleicos son macromoléculas encargadas de
+almacenar, transmitir y expresar la información
+genética de los seres vivos.
+Existen 2 tipos de ácidos nucleicos:
+2. Los ácidos nucleicos
+ADN - Ácido
+Desoxirribonucleico
+ARN - Ácido
+
+=== Página 7 [4 imagen(es)]
+FUNCIONES GENERALES
+2. Los ácidos nucleicos
+ADN ARN
+Almacenar y transmitir la
+información genética a la
+descendencia
+(Mitosis y Meiosis)
+REPLICACIÓN
+Se encarga de expresar la
+información almacenada
+en el ADN para sintetizar
+PROTEÍNAS
+TRANSCRIPCIÓN
+TRADUCCIÓN
+
+=== Página 8 [5 imagen(es)]
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+Los ácidos nucleicos están formados por largas cadenas de
+NUCLEÓTIDOS.
+son las unidades estructurales que forman los ácidos
+nucleicos y hacen posible el almacenamiento y
+transmisión de la información genética.
+Estructura
+química de los
+nucleótidos
+
+=== Página 9 [6 imagen(es)]
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+Grupo
+fosfato
+1 átomo de fósforo
+(centro)
+4 átomos de oxígeno
+(vértices)
+
+=== Página 10 [6 imagen(es)]
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+Pentosa
+(azúcar)
+Ribosa
+Desoxirribosa
+AD
+N
+AR
+N
+
+=== Página 11 [5 imagen(es)]
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+Bases
+nitrogenadas
+(5 tipos)
+Tipos Base nitrogenada Ácido Nucleico
+PÚRICAS
+ADENINA
+GUANINA
+ADN y ARN
+PIRIMIDÍNICAS
+CITOSINA
+TIMINA
+URACILO
+ADN y ARN
+ADN
+ARN
+
+=== Página 12 [6 imagen(es)]
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+Bases nitrogenadas
+
+=== Página 13 [5 imagen(es)]
+AD
+N
+1
+5
+
+=== Página 14 [5 imagen(es)]
+3
+3
+ENLACE
+FOSFODIESTER
+3
+
+=== Página 15 [5 imagen(es)]
+Características del ADN:
+1. Largas cadenas de desoxirribonucléotidos formados por el
+grupo fosfato, una desoxirribosa y 4 tipos de bases nitrogenadas
+(A, T, G y C).
+3. El ADN
+3.1. Estructura del ADN
+2. Tamaño: depende del
+número de nucleótidos.
+Las moléculas de ADN
+q u e f o r m a n l o s
+cromosomas son de
+gran tamaño (millones
+de pares de bases.
+3. Secuencia de bases nitrogenadas (orden de las bases y la
+proporción de cada una): depende de cada especie.
+
+=== Página 16 [6 imagen(es)]
+❖ ESTRUCTURA PRIMARIA
+del ADN:
+3. El ADN
+3.1. Estructura del ADN
+Es la secuencia de bases
+nitrogenadas de la cadena de
+nucleótidos leídas en dirección
+5’ 3’.
+5’ extremo fosfato
+3’ extremo pentosa
+Secuencia:
+(5’) A C T G (3’)
+Created with BioRender.com
+
+=== Página 17 [5 imagen(es)]
+Principio de
+complementariedad
+del ADN:
+3. El ADN
+3.1. Estructura del ADN
+L a s b a s e s n i t r o g e n a d a s
+complementarias se unen mediante
+puentes de H en función de su
+t a m a ñ o y e s t r u c t u r a . S o n
+complementarias:
+- A y T 2 puentes de H
+- C y G 3 puentes de H
+Secuencia:
+(5’) A C T G (3’)
+(3’) T G A C (5’) - complementaria
+Para que la unión sea
+estable, los 2 nucleótidos
+que por tan las bases
+complementarias han de
+tener sus fosfatos en
+posiciones opuestas.
+Created with BioRender.com
+
+=== Página 18 [5 imagen(es)]
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+AD
+N
+Desoxirribosa
+
+=== Página 19 [5 imagen(es)]
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+AR
+N
+Ribosa
+
+=== Página 20 [5 imagen(es)]
+2. Los ácidos nucleicos
+2.2. Propiedades fisicoquímicas
+Las propiedades físico químicas de los ácidos nucleicos (ADN y
+ARN) son:
+1. Fuertemente ácidos en solución acuosa (por los grupos fosfato).
+2. Elevada viscosidad.
+3. La unión de dos cadenas complementarias de ácidos nucleicos se
+unen mediante puentes de hidrógeno entre las bases nitrogenadas
+hibridación esto puede ocurrir tanto en ADN como en
+ARN
+Created with BioRender.com
+
+=== Página 21 [5 imagen(es)]
+4. Las dos cadenas de la doble hélice de ADN se pueden separar
+elevando la temperatura o el pH desnaturalización
+rompen los puentes de H entre las bases nitrogenadas
+complementarias.
+La desnaturalización es reversible si se baja de nuevo la
+temperatura o el pH renaturalización
+2. Los ácidos nucleicos
+2.2. Propiedades fisicoquímicas
+Created with BioRender.com
+
+=== Página 22 [6 imagen(es)]
+❖
+ESTRUCTURA SECUNDARIA del ADN:
+3. El ADN
+3.1. Estructura del ADN
+◦ La doble hélice
+En 1953 Watson y Crick, junto con los resultados de Wilkins y Rosalind
+Franklin, propusieron un modelo para explicar la estructura del ADN. Este
+modelo permite explicar el principio de complementariedad y sostiene que el ADN es
+una doble hélice.
+
+=== Página 23 [6 imagen(es)]
+❖ ESTRUCTURA SECUNDARIA
+del ADN:
+3. El ADN
+3.1. Estructura del ADN
+Es la doble hélice del ADN
+formada por las dos cadenas
+complementarias de nucleótidos.
+La secuencia de cada cadena es la
+estructura primaria. Cuando las
+cadenas complementarias se unen
+obtenemos la estructura secundaria.
+
+=== Página 24 [5 imagen(es)]
+❖ ESTRUCTURA SECUNDARIA
+del ADN:
+3. El ADN
+3.1. Estructura del ADN
+◦ Doble hélice se forma alrededor un eje central.
+◦ Las 2 cadenas son antiparalelas 5’-3’ vs. 3’-5’
+◦ La secuencia de bases nitrogenadas de ambas cadenas
+es complementaria.
+● Si se conoce la secuencia de una de las cadenas o
+hebras, se puede deducir la otra.
+◦ Ambas cadenas se mantienen unidas por puentes
+de H.
+◦ Las bases nitrogenadas se encuentran en el interior
+de la estructura. En el exterior se sitúan los fosfatos y
+la desoxirribosa.
+◦ Un giro de 360 ºC= 10 nucleótidos
+
+=== Página 25 [4 imagen(es)]
+ARTÍCULO DOBLE HÉLICE
+https://www.youtube.com/watch?v=o_-6JXLYS-k
+Actividad 4
+https://www.youtube.com/watch?v=sbNsRQc8iaU
+https://www.youtube.com/watch?v=SbkiiIuhDyc
+
+=== Página 26 [4 imagen(es)]
+❖
+ESTRUCTURA TERCIARIA del ADN:
+3. El ADN
+3.1. Estructura del ADN
+◦ ADN asociado a PROTEÍNAS
+ADN CROMOSÓMICO NUCLEAR
+● La mayor parte del ADN de las células eucariotas se encuentra
+en el núcleo.
+● El ADN no se encuentra libre, sino que está asociado a
+proteínas básicas que compactan el ADN. Dos tipos:
+●Histonas Proteínas con una función estructural y
+reguladora.
+●No histonas Proteínas muy heterogéneas con funciones
+estructurales, enzimáticas y reguladoras.
+
+=== Página 27 [5 imagen(es)]
+❖
+ESTRUCTURA TERCIARIA del ADN:
+◦ ADN asociado a PROTEÍNAS
+ADN CROMOSÓMICO NUCLEAR
+Created with BioRender.com
+8 HISTONAS en cada
+NUCLEOSOMA
+
+=== Página 28 [6 imagen(es)]
+❖
+ESTRUCTURA TERCIARIA del ADN:
+◦ ADN asociado a PROTEÍNAS
+ADN CROMOSÓMICO NUCLEAR
+NIVELES DE LA ESTRUCTURA TERCIARIA:
+1. Un nucleosoma es la estructura cilíndrica formada por un
+octámero de histonas (8 histonas) sobre la que se enrolla la doble
+hélice de ADN.
+1. La molécula de ADN asociada a las
+histonas se denomina fibra de
+cromatina “Collar de perlas”
+
+=== Página 29 [5 imagen(es)]
+❖
+ESTRUCTURA TERCIARIA del ADN:
+◦ ADN asociado a PROTEÍNAS
+ADN CROMOSÓMICO NUCLEAR
+Created with BioRender.com
+
+=== Página 30 [5 imagen(es)]
+❖
+ESTRUCTURA TERCIARIA del ADN:
+◦ ADN asociado a PROTEÍNAS
+ADN CROMOSÓMICO NUCLEAR
+NIVELES DE LA ESTRUCTURA TERCIARIA:
+3. La fibra de cromatina, a su vez, se enrolla sobre sí misma formando
+el solenoide.
+
+=== Página 31 [5 imagen(es)]
+Solenoide
+Cada vuelta del solenoide tiene 6
+nucleosomas con 6 histonas H1.
+E s e l n i v e l d e
+empaquetamiento más bajo de
+los cromosomas.
+
+=== Página 32 [5 imagen(es)]
+En el momento de la división celular (MITOSIS), las fibras de
+cromatina se ordenan y experimentan varios niveles de
+superenrollamiento hasta formar el cromosoma
+metafásico.
+Solenoide
+Fibra de cromatina
+
+=== Página 33 [5 imagen(es)]
+Es la forma en la que
+está el ADN cuando
+la célula no se va a
+dividir
+Created with BioRender.com
+
+=== Página 34 [5 imagen(es)]
+3.2. Tipos de ADN
+EN ORGANISMOS EUCARIOTAS
+◦ ADN cromosómico: en el núcleo En humanos, 20.000 - 25.000
+genes.
+● Eucromatina: cromatina poco compactada y que presenta una gran
+concentración de genes. Normalmente, aunque no siempre, estos genes se
+encuentran en transcripción activa.
+● Heterocromatina: cromatina más compactas y condensadas, por lo que
+no se puede dar la transcripción.. La eucromatina se replica al inicio de la
+fase S, mientras que la heterocromatina se replica hacia el final fase S.
+
+=== Página 35 [6 imagen(es)]
+3.2. Tipos de ADN
+EN ORGANISMOS EUCARIOTAS
+◦ ADN mitocondrial en todos los organismos eucariotas
+◦ ADN de cloroplastos Sólo en organismos fotosintéticos
+Mitocondria
+
+=== Página 36 [5 imagen(es)]
+ADN mitocondrial (ADNmt)
+● ADN bicatenario (doble hélice) y circular de 16,5 kb (en humanos)
+● Características:
+● Suele haber varias copias de ADNmt en cada mitocondria.
+● Contiene 37 genes que codifican para ARN ribosómico, ARN de
+transferencia y proteínas implicadas en los procesos que tienen lugar en la
+mitocondria como la respiración celular.
+● Se replica de manera independiente respecto al ADN nuclear.
+
+=== Página 37 [5 imagen(es)]
+ADN de cloroplastos (ADNcp)
+● ADN bicatenario (doble hélice) y circular de entre 120 y 160 kb.
+● Características:
+● Suele haber varias moléculas de ADN circular en cada cloroplasto.
+● Contiene en torno a 150 genes (depende de la especie), que codifican para
+ARN ribosómico, ARN de transferencia y proteínas implicadas en los
+procesos que tienen lugar en la cloroplasto, especialmente en la
+fotosíntesis.
+● Se replica de manera independiente respecto al ADN nuclear.
+
+=== Página 38 [5 imagen(es)]
+ADN de procariotas (bacterias)
+● ADN bicatenario (doble hélice) y circular
+● Características:
+● Un sólo cromosoma circular que está libre en el citoplasma.
+● No está unido a proteínas, por tanto no forma cromatina.
+● Además del cromosoma, muchos procariotas presentan pequeñas moléculas
+de ADN circular denominadas PLÁSMIDOS.
+
+=== Página 39 [5 imagen(es)]
+ARN:
+1. Cadenas de ribonucléotidos formados por el grupo fosfato,
+una ribosa y 4 tipos de bases nitrogenadas (A, U, G y C).
+4. El ARN
+4.1. Características del ARN
+2. Tamaño: depende del
+número de nucleótidos,
+pero son mucho más
+p e q u e ñ a s q u e l a s
+m o l é c u l a s d e A D N
+(cientos o miles de
+pares de bases.
+3. Función: controla la síntesis de proteínas a partir de la
+información contenida en el ADN.
+
+=== Página 40 [5 imagen(es)]
+4. El ARN
+4.2. Estructura del ARN
+❖
+ESTRUCTURA PRIMARIA del ARN:
+Es la secuencia de bases nitrogenadas de la cadena simple de
+nucleótidos leídas en dirección 5’ 3’.
+
+=== Página 41 [5 imagen(es)]
+La cadena simple de ARN puede
+plegarse y presentar regiones
+con bases apareadas (ej. ARN de
+transferencia).
+L a s b a s e s N O s i e m p re s e r á n
+complementarias (A-U, G-C, G-U)
+Aunque existan zonas apareadas, los
+extremos 5’ y 3’ que marcan el inicio y
+el final de la molécula permanecerán
+libres.
+❖
+ESTRUCTURA SECUNDARIA del ARN:
+4. El ARN
+4.2. Estructura del ARN
+
+=== Página 42 [5 imagen(es)]
+❖
+ESTRUCTURA TERCIARIA del ARN:
+Consiste en un plegamiento
+de la estructura secundaria,
+normalmente por asociación
+con proteínas.
+ARN ribosomal
+ARN transferente
+4. El ARN
+4.2. Estructura del ARN
+
+=== Página 43 [5 imagen(es)]
+Estructura primaria
+(cadena simple)
+Estructura secundaria Estructura
+terciaria
+4. El ARN
+4.3. Tipos de ARN
+
+=== Página 44 [6 imagen(es)]
+A R N m e n s a j e r o
+(ARNm):
+En eucariotas:
+1. Es una copia exacta de la
+secuencia de un gen de ADN.
+2. Porta la información para la
+síntesis de una proteína.
+4. El ARN
+4.3. Tipos de ARN
+GEN que codifica una PROTEÍNA
+
+=== Página 45 [6 imagen(es)]
+ARN transferente (ARNt):
+1. Transportan los aminoácidos hasta los ribosomas para ir formando
+la cadena proteica.
+2. Estructura secundaria en forma de trébol, que se pliega en una estructura
+terciaria en forma de L.
+4. El ARN
+4.3. Tipos de ARN
+
+=== Página 46 [5 imagen(es)]
+ARN transferente (ARNt):
+1. Transportan los aminoácidos hasta los ribosomas para su
+incorporación en la cadena proteica.
+Brazo aceptor
+Sitio de unión para el
+aminoácido (CCA-3’)
+Brazo anticodón
+Contiene el anticodón
+correspondiente al
+aminoácido que lleva.
+Este anticodón reconoce el
+codón de ARNm que indica el
+aminoácido que se tiene que
+añadir a la proteína.
+4. El ARN
+4.3. Tipos de ARN
+
+=== Página 47 [5 imagen(es)]
+A R N r i b o s o m a l
+(ARNr):
+1. Es el ARN mayoritario en
+las células (aproximadamente
+el 80% del ARN).
+1. Estructura secundaria
+muy compleja, con muchas
+horquillas y bucles.
+4. El ARN
+4.3. Tipos de ARN
+
+=== Página 48 [5 imagen(es)]
+ARN ribosomal (ARNr):
+3. Combinado con ciertas
+proteínas forma los
+ribosomas.
+Orgánulos citoplasmáticos
+r e s p o n s a b l e s d e l a
+síntesis de proteínas.
+4. El ARN
+4.3. Tipos de ARN
+Subunidad 60
+3 moléculas de ARNr
+49 proteínas
+Subunidad 40
+1 moléculas de ARNr
+33 proteínas
+
+=== Página 49 [5 imagen(es)]
+DOGMA CENTRAL DE LA BIOLOGÍA
+Del GEN a la PROTEÍNA
+GEN que codifica una PROTEÍNA
+https://www.youtube.com/watch?v=gG7uCskUOrA&t=66s
+
+=== Página 50 [4 imagen(es)]
+Ejercicios sobre la estructura de los ácidos
+nucleicos.
+Actividad 5
+
+=== Página 51 [4 imagen(es)]
+Contenidos
+1. Introducción
+2. Los ácidos nucleicos
+2.1. Estructura y composición química
+2.2. Propiedades fisicoquímicas
+1. El ADN
+2. El ARN
+3. El flujo de la información genética
+5.1. Replicación del ADN
+5.2. Transcripción
+5.3. Traducción
+1. Mutaciones génicas
+
+=== Página 52 [5 imagen(es)]
+El ADN almacena la información genética de un individuo, la transmite a
+los descendientes y dirige la síntesis de proteínas. Para llevar esto a cabo
+se dan distintos procesos:
+◦ Replicación Duplicación del material genético, ADN (para la
+división celular: mitosis y meiosis).
+◦ Transcripción Síntesis de ARNm partiendo de ADN.
+◦ Traducción Síntesis de proteínas partiendo de ARNm.
+5. El flujo de la información genética
+
+=== Página 53 [5 imagen(es)]
+5.1. Replicación de ADN
+Proceso por el cual una molécula de ADN se duplica para dar lugar a
+dos moléculas de ADN idénticas Ocurre en la fase S de la
+interfase, cuando la célula se prepara para dividirse por mitosis o
+meiosis.
+REPLICACIÓN
+https://www.youtube.com/watch?v=IjVLhoyfGAM
+
+=== Página 54 [5 imagen(es)]
+5.1. Replicación de ADN
+Características generales de la
+replicación:
+1. Semiconservativa: Una hebra
+viene de la molécula original y la otra
+se sintetiza.
+2. Comienza en un origen de
+re plicación: el inicio de la
+re p l i c a c i ó n s e d a e n p u n t o s
+concretos.
+a. En procariotas: un único
+origen de replicación.
+b. En eucariotas: más de un
+origen de replicación
+
+=== Página 55 [5 imagen(es)]
+5.1. Replicación de ADN
+Características generales de la replicación:
+3. Bidireccional La síntesis de las nuevas cadenas se produce en
+ambos sentidos usando las 2 cadenas de ADN como
+molde.
+
+=== Página 56 [5 imagen(es)]
+5.1. Replicación de ADN
+Características generales de la replicación:
+4. Semidiscontinua La síntesis de las cadenas nuevas se produce
+siempre en dirección 5’ 3’.
+Problema: las hebras de ADN son antiparalelas
+Se forma la burbuja de replicación, y el proceso ocurre hacia
+ambos lados y en las dos cadenas a la vez.
+
+=== Página 57 [5 imagen(es)]
+5.1. Replicación de ADN
+Características generales de la replicación:
+4. Semidiscontinua La síntesis de las cadenas nuevas se produce
+siempre en dirección 5’ 3’.
+Problema: las hebras de ADN son antiparalelas
+◦ Una de las cadenas se sintetiza de manera continua (5’-3’) Cadena
+líder, conductora o continua
+◦ La otra hebra se sintetiza de manera discontinua, en forma de
+fragmentos (fragmentos de Okazaki) Hebra retardada o
+
+=== Página 58 [4 imagen(es)]
+OBSERVA EL VÍDEO
+Te ayudará a ir afianzando el proceso de la
+REPLICACIÓN
+https://www.youtube.com/watch?v=pm_Takf_SyM
+
+=== Página 59 [4 imagen(es)]
+Aunque existen diferencias entre el proceso de replicación en procariotas
+y eucariotas, en general los procesos son muy parecidos.
+La replicación se divide en 2 fases
+1. INICIACIÓN
+2. ELONGACIÓN
+5.1. Replicación de ADN
+FASES DE LA REPLICACIÓN
+https://www.youtube.com/watch?v=TNKWgcFPHqw
+
+=== Página 60 [5 imagen(es)]
+1. Fase de iniciación: formación de las
+horquillas de replicación
+1. La replicación del ADN empieza con una secuencia de nucleótidos, al cual
+se denomina “origen de replicación”.
+Origen de replicación
+ATCG
+TAGC
+
+=== Página 61 [7 imagen(es)]
+1. Fase de iniciación: formación de las
+horquillas de replicación
+2. Unas proteínas específicas reconocen el origen de replicación y se unen a
+él. La unión de estas proteínas hace que se activen las helicasas.
+ATCG
+TAGC
+Proteínas
+específicas que
+se unen a la
+secuencia de
+ADN
+Las helicasas se
+activan
+Origen de replicación
+
+=== Página 62 [10 imagen(es)]
+1. Fase de iniciación: formación de las
+horquillas de replicación
+3. Las helicasas rompen los puentes de hidrógeno que hay entre las bases
+nitrogenadas de las dos cadenas complementarias del ADN y forman la
+burbuja de replicación.
+4. Las dos helicasas empiezan a realizar su función a partir del punto de
+origen de replicación. Una en un sentido y la otra en el otro sentido. De
+esta manera la replicación del ADN es bidireccional.
+Origen de replicación
+Helicasas
+
+=== Página 63 [10 imagen(es)]
+1. Fase de iniciación: formación de las
+horquillas de replicación
+5. Para que esta estructura se mantenga, las proteínas de unión a cadena
+sencilla (SSBP) se unen a las cadenas desenrolladas.
+5. Este desenrollamiento provoca tensión en las zonas próximas a la burbuja.
+Por ello, la girasa y la topoisomerasa actúan relajando esa tensión.
+SSBP
+Girasa y
+topoisomerasa
+Burbuja de replicación
+Horquillas de replicación
+
+=== Página 64 [7 imagen(es)]
+2. Fase de elongación: síntesis de las
+nuevas hebras de ADN
+1. La primasa (ARN polimerasa) sintetiza los primers o cebadores en
+dirección 5’ → 3’.
+● Hebra conductora: Un único primer en el origen de la replicación
+(5’-3’)
+● Hebra retardada: Varios primers. El primer cebador más alejado del
+origen de replicación → A medida que avanza la horquilla, se van
+sintetizando nuevos cebadores que darán lugar a fragmentos de
+Okazaki.
+Primer ADN
+Primasa
+
+=== Página 65 [7 imagen(es)]
+2. Fase de elongación: síntesis de las
+nuevas hebras de ADN
+2. Una vez que se colocan los primers, la ADN polimerasa III llega y empieza
+a sintetizar las nuevas hebras en dirección 5’ → 3’.
+● Hebra conductora: Elongación continua (5’-3’)
+● Hebra retardada: Elongación discontinua (5’-3’) → se van
+sintetizando los fragmentos de Okazaki hasta alcanzar el primer
+siguiente
+Primer ADN
+ADN polimerasa III
+
+=== Página 66 [5 imagen(es)]
+2. Fase de elongación: síntesis de las
+nuevas hebras de ADN
+3. Eliminación de primers y unión de todos los fragmentos de ADN.
+● ADN polimerasa I: Actividad exonucleasa para retirar los cebadores y
+actividad polimerasa para sustituirlos por ADN.
+● Ligasa: tras la ADN polimerasa I, la ligasa se encargará de ir uniendo
+los fragmentos de ADN de la hebra que se acaba de copiar.
+
+=== Página 67 [5 imagen(es)]
+
+
+=== Página 68 [5 imagen(es)]
+5.1. Replicación de ADN
+Enzimas que actúan en la replicación
+Desenrolla y separa las 2
+cadenas de la doble
+hélice en ambos sentidos.
+Las nuevas hebras que van en la misma dirección que las
+helicasas serán hebras continuas. En cambio, las que van en
+dirección opuesta serán las retardadas.
+
+=== Página 69 [5 imagen(es)]
+5.1. Replicación de ADN
+Enzimas que actúan en la replicación
+La separación de las
+dos cadenas genera un
+superenrollamiento en el
+resto de la hélice. Esta
+enzima junto con la
+girasa se encargan de
+relajar esa tensión extra.
+Proteínas de unión a
+cadena sencilla (SSB)
+Se unen a las cadenas
+desenrolladas evitando
+que se vuelva a formar la
+doble hélice
+
+=== Página 70 [5 imagen(es)]
+5.1. Replicación de ADN
+Enzimas que actúan en la replicación
+Primasa
+E s u n a e n z i m a c o n f u n c i ó n A R N
+polimerasa que sintetiza fragmentos cortos
+de ARN (10 nucleótidos), denominados
+cebadores o primers.
+Los primers son complementarios de zonas
+concretas de ADN y sirven para que la ADN
+polimerasa empiece a hacer la nueva
+cadena de ADN copiando la original.
+Nucleótidos
+(ARN)
+
+=== Página 71 [5 imagen(es)]
+5.1. Replicación de ADN
+Enzimas que actúan en la replicación
+Primasa
+5’AGTCGGTCAATGCATTGGCAGACG 3’
+3’TCAGCCAGTTACGTAACCGUCUGC 5’
+Nucleótidos
+(ARN)
+Primer
+
+=== Página 72 [5 imagen(es)]
+5.1. Replicación de ADN
+Enzimas que actúan en la replicación
+ADN polimerasa
+Enzima que añade nuevos nucleótidos al extremo
+OH-3’ de una cadena en crecimiento, es decir,
+añade nucleótidos en dirección 5’ → 3’ siempre.
+● La secuencia de nucleótidos que se incorpora
+es complementaria de la secuencia de cadena
+molde que se está leyendo.
+● Ta n t o p r o c a r i o t a s c o m o e u c a r i o t a s
+presentan varios tipos de polimerasas.
+5’AGTCGGTCAATGCATTGGCAGACG 3’
+3’TCAGCCAGTTACGTAACCGUCUGC 5’
+
+=== Página 73 [5 imagen(es)]
+5.1. Replicación de ADN
+Enzimas que actúan en la replicación
+ADN polimerasa
+La ADN polimerasa reconoce los primers para
+iniciar la elongación.
+● Hebra continua: requiere un único primer
+en el origen de replicación.
+● Hebra retardada: requiere varios primers
+(un primer para cada fragmento de Okazaki).
+
+=== Página 74 [5 imagen(es)]
+5.1. Replicación de ADN
+Enzimas que actúan en la replicación
+Hay otra ADN polimerasa que elimina los
+primers (RNA) y los sustituye por
+nucleótidos de ADN.
+También dirección 5’--3’
+Ligasa
+Une los fragmentos
+de ADN entre sí.
+
+=== Página 75 [4 imagen(es)]
+5’AGTCGGTCAATGCATTGGCAGACGCGAAATGCGCTGCAATGCTGATG 3’
+3’TCAGCCAGTTACGTAACCGUCUGCGCTTTACGCGACGTTACGACTAC 5’
+HELICASA HELICASA
+Origen de
+la
+replicación
+ACTIVIDAD 6
+
+=== Página 76 [5 imagen(es)]
+5.1. Replicación de ADN
+PECULIARIDADES DE LA REPLICACIÓN EN EUCARIOTAS
+❖ Múltiples orígenes de replicación
+❖ Varios tipos de ADN polimerasas que se reparten las tareas.
+❖ Durante la replicación también se unen las histonas y se estructuran
+los nucleosomas.
+❖ Reducción de telómeros.
+Ver únicamente hasta el minuto 3:
+https://www.youtube.com/watch?
+v=Ld9E064MaPY
+https://www.youtube.com/watch?v=vP8-5Bhd2ag
+https://www.youtube.com/watch?v=6O0qD6KCOVE
+
+=== Página 77 [6 imagen(es)]
+Fragmento que se pierde
+porque no se puede copiar
+
+=== Página 78 [5 imagen(es)]
+5.2. Transcripción
+La transcripción es el proceso por el cual se sintetiza una molécula de ARN
+utilizando como molde una cadena de ADN.
+1. INICIACIÓN
+2. ELONGACIÓN
+3. TERMINACIÓN
+FASES DE LA TRANSCRIPCIÓN
+En procariotas: se obtienen directamente
+moléculas maduras de ARN.
+En eucariotas: se obtienen moléculas de
+ARN que tienen que sufrir modificaciones para
+madurar.
+
+=== Página 79 [5 imagen(es)]
+5.2. Transcripción
+Enzimas que actúan en la transcripción
+La enzima principal de este proceso es la ARN polimerasa.
+Función: síntesis de ARN usando una cadena de ADN como molde. La
+ARN polimerasa produce la copia de ARN en dirección 5’ 3’.
+Células procariotas:
+Un único tipo de ARN polimerasa
+Células eucariotas:
+3 tipos de ARN polimerasas:
+• ARN polimerasa I Síntesis de la mayor parte del ARNr.
+• ARN polimerasa II Síntesis de ARNm.
+• ARN polimerasa III Síntesis del ARNt y una parte del ARNr.
+
+=== Página 80 [5 imagen(es)]
+FASES DE LA TRANSCRIPCIÓN
+1. Fase de iniciación:
+1. La ARN polimerasa reconoce una secuencia de bases específica llamada
+promotor, que se encuentra al inicio de un gen → Cada gen tiene su
+propio promotor.
+2. Después de unirse al promotor, las dos hebras de ADN se separan y
+comienza la síntesis de ARN.
+GEN
+Khan Academy
+
+=== Página 81 [5 imagen(es)]
+FASES DE LA TRANSCRIPCIÓN
+1I. Fase de elongación:
+3. La ARN polimerasa añade ribonucleótidos en dirección 5’ → 3’, tomando
+una hebra de ADN como molde (cadena molde 3’ → 5’).
+El transcrito de ARN tiene la misma información que la cadena de ADN
+contraria a la molde (cadena codificante) en el gen, pero contiene la base
+uracilo (U) en lugar de timina (T).
+Khan Academy
+https://www.youtube.com/
+watch?v=EC2n_iWR80Y
+
+=== Página 82 [5 imagen(es)]
+FASES DE LA TRANSCRIPCIÓN
+1I. Fase de elongación:
+3. La ARN polimerasa añade ribonucleótidos en dirección 5’ → 3’, tomando
+una hebra de ADN como molde (cadena molde 3’ → 5’).
+El transcrito de ARN tiene la misma información que la cadena de ADN
+contraria a la molde (cadena codificante) en el gen, pero contiene la base
+uracilo (U) en lugar de timina (T).
+Khan Academy
+En la REPLICACIÓN, la
+unión de nucleótidos es
+similar.
+
+=== Página 83 [5 imagen(es)]
+FASES DE LA TRANSCRIPCIÓN
+1II. Fase de terminación:
+4. La síntesis de ARN cuando la ARN polimerasa alcanza una secuencia
+específica llamada terminador.
+5. En este punto se separa el ARN de la cadena de ADN y de la ARN
+polimerasa.
+6. Después de la terminación, la transcripción ha concluido.
+Un transcrito de ARN que está listo para su uso en la traducción → ARNm.
+En procariotas, los transcritos de ARNm están listos para su traducción
+inmediatamente después de la transcripción. Además, al encontrarse en el
+citoplasma (no hay núcleo), los ribosomas pueden empezar directamente a
+sintetizar las proteínas.
+Khan Academy
+Gen
+1
+Gen
+2
+Gen
+3
+Gen
+4
+Gen
+5
+
+=== Página 84 [4 imagen(es)]
+Maduración de ARN
+En eucariotas, el ARN requiere modificaciones para dar lugar a las moléculas
+maduras de ARN (ARNm, ARNt y ARNr) → Este proceso se conoce como
+MADURACIÓN DEL ARN.
+¿Por qué el ARN de eucariotas requiere modificaciones?
+A. Porque el ARN, al ser monocatenario, se degrada con mucha facilidad. Por
+ello, se modifica para evitar su degradación durante la transcripción.
+A. Porque el ARN se sintetiza en el núcleo y para salir al citoplasma necesita
+modificar un poco su estructura para poder atravesar la membrana del
+núcleo.
+A. Porque los genes (ADN) tienen información relacionada con la síntesis de
+proteínas (a estas regiones se les llaman exones), pero también tienen
+regiones que no tienen este tipo de información (intrones). Por tanto,
+cuando se produce el ARNm hay que eliminar estas últimas regiones.
+
+=== Página 85 [5 imagen(es)]
+Maduración de ARN
+1. Adición de un CAP-5’ al inicio de la transcripción
+Se añade una caperuza de metilguanosina en el extremo 5’ (al inicio del transcrito) →
+El cap 5' es un nucleótido modificado de guanina (G) que se añade al primer
+nucleótido del transcrito durante la transcripción.
+El cap 5':
+1. Evita que el ARN se degrade durante la elongación.
+2. Ayuda al ribosoma a unirse al ARNm y a comenzar a leerlo para hacer una proteína.
+1I. Adición de una cola de poliadeninas (poliA) al final de la
+transcripción
+Se añade una cola de adeninas (cola poliA) en el extremo 3’ (al final del transcrito) →
+entre 100-200 adeninas.
+La cola poliA:
+1. Permite al ARN maduro salir al citoplasma.
+Khan Academy
+
+=== Página 86 [5 imagen(es)]
+Maduración de ARN
+1II. Eliminación de los intrones
+Se da mediante un proceso de corte y empalme conocido como splicing.
+En este proceso interviene un complejo de proteínas denominado spliceosoma.
+1. Las proteínas se unen en el extremo de los intrones.
+2. El intrón forma un bucle.
+3. El spliceosoma corta en la base del bucle y empalma los exones.
+Chemistry World
+
+=== Página 87 [5 imagen(es)]
+Maduración de ARN
+1II. Eliminación de los intrones (splicing)
+Se da mediante un proceso de corte y empalme conocido como splicing.
+En este proceso interviene un complejo de proteínas denominado spliceosoma.
+1. Las proteínas se unen en el extremo de los intrones.
+2. El intrón forma un bucle.
+3. El spliceosoma corta en la base del bucle y empalma los exones.
+Gen
+
+=== Página 88 [5 imagen(es)]
+Maduración de ARN
+Splicing alternativo
+Cuando ocurre el splicing del ARNm, aunque se tienen que eliminar todos los intrones y
+juntarse los exones, puede ocurrir que se eliminen también algunos exones.
+Eso hace que desde la misma secuencia de ADN se puedan formar diferentes ARNm-s y
+por ende, distintas proteínas.
+→ Esto permite codificar un
+mayor número de proteínas
+que los genes que tenemos
+en nuestro ADN.
+Gen
+
+=== Página 89 [6 imagen(es)]
+RESUMEN
+Khan Academy
+Transcripcion ARN: https://www.youtube.com/watch?
+v=vWV5hjsCRBk
+Maduración ARN: https://www.youtube.com/watch?
+v=mqwABIjzhog
+
+=== Página 90 [6 imagen(es)]
+5.3. Traducción del ARNm
+La traducción es el proceso por el cual se sintetiza una proteína a partir de
+una molécula de ARNm.
+¡Los genes codifican proteínas!
+¿ D e q u é e s t á n f o r m a d a s l a s
+proteínas?
+De AMINOÁCIDOS (AA)
+GEN que codifica una PROTEÍNA
+R = cadena variable y
+específica de cada AA
+
+=== Página 91 [9 imagen(es)]
+5.3. Traducción del ARNm
+Hay 20 aminoácidos estándar. También existen algunos más raros de
+encontrar en células eucariotas.
+Alanina
+Ala, A
+Ácido Glutámico
+Glu, E
+Leucina
+Leu, L
+Serina
+Ser, S
+Arginina
+Arg, R
+Glutamina
+Gln, Q Lisina
+Lys, K
+Treonina
+Thr, T
+Asparragina
+Asn, N
+Glicina
+Gly, G
+Metionina
+Met, M
+Triptófano
+Trp, W
+Ácido
+Aspártico
+Asp, D
+Histidina
+His, H
+Fenilalanina
+Phe, F
+Tirosina
+Tyr, Y
+Cisteína
+Cys, C
+Isoleucina
+Ile, I
+Prolina
+Pro, P
+Valina
+Val, V
+
+=== Página 92 [5 imagen(es)]
+5.3. Traducción del ARNm
+¿Cómo pasamos de un lenguaje 4
+letras (A, C, G y U) a otro de 20
+(AA)?
+Porque existe un código:
+el código genético
+
+=== Página 93 [5 imagen(es)]
+5.3. Traducción del ARNm
+EL CÓDIGO GENÉTICO
+El Código Genético es el diccionario que permite traducir una secuencia
+de nucleótidos a una secuencia de aminoácidos.
+• Se basa en que una secuencia de
+3 nucleótidos codifica para un
+aminoácido.
+• Cada trío o triplete de nucleótidos
+se denomina codón.
+• ¿ C u á n t o s c o d o n e s p o s i b l e s
+existen?
+4 bases nitrogenadas (A, C, G y U)
+4
+3
+= 64
+• 6 1 c o d o n e s c o d i f i c a n p a r a
+aminoácidos
+• 3 c o d o n e s s o n c o d o n e s d e
+terminación.
+
+=== Página 94 [5 imagen(es)]
+5.3. Traducción del ARNm
+EL CÓDIGO GENÉTICO
+Características del código genético
+❖ Universal → Es el mismo para
+todos los organismos.
+❖ No ambiguo → Cada codón
+codifica un único aminoácido.
+❖ D e g e n e r a d o → H a y 2 0
+aminoácidos y 61 codones, en
+consecuencia → La mayor parte de
+l o s a m i n o á c i d o s e s t á n
+codificados por más de un codón
+(codones sinónimos)
+❖ Continuo y no solapado → En la
+cadena de ARNm, los codones se
+disponen de manera secuencial,
+uno a continuación del otro.
+
+=== Página 95 [5 imagen(es)]
+5.3. Traducción del ARNm
+EL CÓDIGO GENÉTICO
+Codones importantes del código
+genético
+❖ Todas las secuencias de ARNm
+que se van a traducir empiezan
+con el codón AUG que codifica
+para la Metionina (Met)
+❖ Los codones UAA, UAG y UGA
+son codones de terminación o
+codones STOP.
+
+=== Página 96 [5 imagen(es)]
+FASES DE LA TRADUCCIÓN
+Para que se desarrolle el proceso de síntesis de proteínas se necesita:
+● 1 molécula de ARNm
+● Los 20 aminoácidos (AA)
+● Los ribosomas (formados por ARNr y proteínas)
+● Los ARNt que transportan los AA hasta los ribosomas.
+● Las enzima(PEPTIDIL TRANSFERASA) que catalizan la unión entre AA.
+Los RIBOSOMAS tienen 2 subunidades:
+● Subunidad menor: Tiene 1 sitio de unión al ARNm
+(cap5”)
+● Subunidad mayor: Tiene 3 sitios de unión al ARNt
+○ Sitio A (aminoacil): donde se sitúa el ARNt que lleva
+el siguiente AA que se va a incorporar en la cadena
+proteica.
+○ Sitio P (peptidil): donde se sitúa el ARNt que lleva la
+cadena proteica en crecimiento
+○ Sitio E (exit): donde se sitúa el ARNt
+que acaba de transferir la cadena en
+crecimiento al ARNt que lleva el
+siguiente AA.
+
+=== Página 97 [6 imagen(es)]
+ARN transferente (ARNt):
+1. Transportan los aminoácidos hasta los ribosomas para ir formando
+la cadena proteica.
+2. Estructura secundaria en forma de trébol, que se pliega en una estructura
+terciaria en forma de L.
+4. El ARN
+4.3. Tipos de ARN
+
+=== Página 98 [5 imagen(es)]
+ARN transferente (ARNt):
+1. Transportan los aminoácidos hasta los ribosomas para su
+incorporación en la cadena proteica.
+Brazo aceptor
+Sitio de unión para el
+aminoácido (CCA-3’)
+Brazo anticodón
+Contiene el anticodón
+correspondiente al
+aminoácido que lleva.
+Este anticodón reconoce el
+codón de ARNm que indica el
+aminoácido que se tiene que
+añadir a la proteína.
+4. El ARN
+4.3. Tipos de ARN
+peptidil-
+transfersaa
+
+=== Página 99 [5 imagen(es)]
+ARN ribosomal (ARNr):
+3. Combinado con ciertas
+proteínas forma los
+ribosomas.
+Orgánulos citoplasmáticos
+r e s p o n s a b l e s d e l a
+síntesis de proteínas.
+4. El ARN
+4.3. Tipos de ARN
+Subunidad 60
+3 moléculas de ARNr
+49 proteínas
+Subunidad 40
+1 moléculas de ARNr
+33 proteínas
+
+=== Página 100 [5 imagen(es)]
+FASES DE LA TRADUCCIÓN
+1. Fase de iniciación: unión del ARNt+Met al ribosoma
+1. El ARNt iniciador (ARNt con Metionina) se une a la subunidad menor del
+ribosoma y se colocan en el CAP-5’ del ARNm.
+2. Este complejo lee el ARNm hasta encontrar el codón de inicio (AUG).
+3. El ARNt iniciador se une al codón de inicio.
+4. La subunidad mayor del ribosoma se une para formar el complejo de
+iniciación, y el ARNt queda colocado en el sitio P.
+
+=== Página 101 [5 imagen(es)]
+FASES DE LA TRADUCCIÓN
+1I. Fase de elongación:
+1. Comienza cuando se sitúa en el sitio A el segundo aminoacil-ARNt (ARNt+AA)
+que tiene un anticodón complementario al segundo codón del ARNm.
+2. La enzima peptidil transferasa cataliza la formación del enlace peptídico entre
+la Met y el segundo AA. De esta forma, el ARNt del sitio P se queda sin AA
+(Met) y el ARNt del sitio A contiene la cadena en crecimiento.
+
+=== Página 102 [5 imagen(es)]
+FASES DE LA TRADUCCIÓN
+1I. Fase de elongación:
+3. Formado el enlace peptídico, el ribosoma se desplaza a lo largo del ARNm en
+dirección 5’ → 3’.
+4. El ARNt iniciador (ahora sin AA), queda situado en el sitio E para separarse del
+complejo. El ARNt que tiene 2 AA queda situado en el sitio P, y así, el sitio A
+queda libre para que el siguiente aminoacil-ARNt se una para incorporar el AA
+correspondiente.
+
+=== Página 103 [5 imagen(es)]
+FASES DE LA TRADUCCIÓN
+1II. Fase de terminación:
+1. Se produce cuando el ribosoma llega a un codón STOP (UAA, UGA o UAG)
+2. No existe ningún ARNt que tenga un anticodón complementario a esos
+codones.
+
+=== Página 104 [6 imagen(es)]
+FASES DE LA TRADUCCIÓN
+3. Los factores de liberación reconocen los codones STOP, se sitúan en el sitio A y
+hacen que la peptidil transferasa corte la unión entre la cadena proteína y el
+ARNt que la porta.
+4. La proteína se libera, y todo el complejo de traducción se disocia.
+1II. Fase de terminación:
+
+=== Página 105 [4 imagen(es)]
+https://www.youtube.com/watch?v=kkpHy7nH3Dk
+LA TRADUCCIÓN
+https://www.youtube.com/watch?v=KshsTlJKsU8
+
+=== Página 106 [4 imagen(es)]
+Mutación cambio en la secuencia o estructura de ADN que ocurre de
+manera espontánea.
+❖ Se produce un cambio en la información genética, que puede tener
+consecuencias (positivas o negativas) o no tenerlas.
+❖ Mutaciones en células somáticas las células hijas heredan la
+mutación.
+❖ Mutaciones en células sexuales la mutación se puede transmitir a la
+siguiente generación.
+6. Mutaciones génicas
+TIPOS DE MUTACIONES
+❖ Mutaciones CROMOSÓMICAS gran extensión (afectan a muchos genes).
+Ejemplo: deleciones, inserciones, translocaciones…
+❖ Mutaciones GÉNICAS menor extensión (afectan a un gen y, por tanto, a la
+proteína que codifica ese gen).
+
+=== Página 107 [5 imagen(es)]
+6. Mutaciones génicas
+Las mutaciones génicas afectan a uno o varios
+nucleótidos, en lugar de a fragmentos extensos
+de ADN como ocurre en las mutaciones
+cromosómicas. Hay 3 tipos:
+❖ Inserciones
+❖ Deleciones
+❖ Sustituciones
+
+=== Página 108 [5 imagen(es)]
+6. Mutaciones génicas
+Si la inserción/deleción es de 3 nucleótidos
+o múltiplo de 3:
+No hay cambio en el marco de lectura
+Hay una adición o pérdida de
+aminoácidos
+
+=== Página 109 [5 imagen(es)]
+6. Mutaciones génicas
+
+=== Página 110 [1 imagen(es)]
+Estas mutaciones en el ADN, afectarán más o
+menos la proteína que se forma a partir del
+ARNm, dependiendo de qué aminoácido afecten.
+Esto dependerá del papel que juegue el aminoácido
+en la estructura y función de la proteína a sintetizar.

@@ -170,21 +170,22 @@ var UNIDADES = [
    ]
   ],
   "progreso": {
-   "clave": "bio3-repaso-v1",
-   "total": 40
+   "clave": "bio3-repaso-v2",
+   "total": 56
   },
   "bloques": [
-   "Qué son los ácidos nucleicos y los nucleótidos",
-   "ADN: características y estructura primaria",
-   "ADN: doble hélice y empaquetamiento",
-   "ADN fuera del núcleo y en procariotas",
-   "ARN: características y estructuras",
-   "ARNm, ARNt y ARNr en detalle",
-   "Flujo de la información y replicación",
-   "Replicación: fase de iniciación",
-   "Replicación: elongación y telómeros",
-   "Transcripción",
-   "Maduración del ARN"
+   "Los ácidos nucleicos y sus piezas",
+   "Propiedades y estructura primaria del ADN",
+   "La doble hélice y el empaquetamiento",
+   "Tipos de ADN",
+   "El ARN y sus tipos",
+   "El flujo de la información y la replicación",
+   "Las fases de la replicación y sus enzimas",
+   "La transcripción",
+   "La maduración del ARN",
+   "La traducción y el código genético",
+   "Las fases de la traducción",
+   "Las mutaciones génicas"
   ]
  },
  {

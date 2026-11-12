@@ -1,0 +1,66 @@
+Bio 3 · Tema 4 · Texto que en el PDF de la profe está dentro de imágenes (transcrito a mano, tal cual).
+
+=== Diapositiva 13
+BASE NITROGENADA (Adenina)
+PENTOSA (Ribosa)
+Enlace N-glucosídico
+NUCLEÓSIDO (Adenosina)
+ION FOSFATO
+Enlace éster
+NUCLEÓTIDO (Adenosín 5 monofosfato)
+
+=== Diapositiva 14
+ENLACE FOSFODIESTER
+Fragmento de ácido nucleico
+
+=== Diapositiva 31
+OCTÁMERO
+HISTONA H1
+
+=== Diapositiva 33
+Es la forma en la que está el ADN cuando la célula no se va a dividir
+Solenoide. Los nucleosomas se empaquetan en una espiral.
+Cromatina extendida. Los solenoides se pliegan formando asas.
+Cromatina condensada. Las asas se empaquetan y enrollan formando las cromátidas de los cromosomas.
+
+=== Diapositiva 67
+BURBUJA DE REPLICACIÓN
+Primasa
+ADN Polimerasa III
+ADN Polimerasa I
+Topoisomerase
+SSBs
+Helicasa
+Fragmentos de Okazaki
+
+=== Diapositiva 68
+Helicasa. Desenrolla y separa las 2 cadenas de la doble hélice en ambos sentidos.
+
+=== Diapositiva 69
+Topoisomerasa. La separación de las dos cadenas genera un superenrollamiento en el resto de la hélice. Esta enzima junto con la girasa se encargan de relajar esa tensión extra.
+
+=== Diapositiva 77
+Acortamiento de los telómeros
+División celular
+↓longitud de los telómeros
+Final del telómero
+Fragmento que se pierde porque no se puede copiar
+
+=== Diapositiva 108
+Wild type (silvestre)
+Secuencia de ARNm sin ninguna mutación
+Inserción
+Ganancia de uno o varios nucleótidos en la secuencia de ADN. Cuando ocurre en una región codificante (exón) puede haber un cambio en el marco de lectura que afecta al mRNA y a la proteína que codifica.
+Deleción
+Pérdida de uno o varios nucleótidos en la secuencia de ADN. Cuando ocurre en una región codificante (exón) puede haber un cambio en el marco de lectura que afecta al mRNA y a la proteína que codifica.
+
+=== Diapositiva 109
+Sustitución
+Se sustituye algún nucleótido por otro. Cuando ocurre en una región codificante (exón), las sustituciones se clasifican en 3 grupos según sus consecuencias en la secuencia de la proteína.
+*Si la mutación ocurre en una región no codificante no debería haber consecuencias
+M. silenciosa
+Un nucleótido es sustiuido por otro dando lugar a un codón que codifica para el mismo aminoácido. La secuencia de la proteína NO cambia.
+M. errónea
+Un nucleótido es sustiuido por otro dando lugar a un codón que codifica para otro aminoácido. La secuencia de la proteína SÍ cambia.
+M. sin sentido
+Un nucleótido es sustiuido por otro dando lugar a un codón STOP. La secuencia de la proteína SÍ cambia, se ACORTA.
