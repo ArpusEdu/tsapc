@@ -13,7 +13,7 @@ import { fileURLToPath } from "node:url";
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SALIDA = path.join(RAIZ, "app", "preguntas");
 
-export const UNIDADES = ["bio1", "bio2", "bio3", "fisio1", "fisio2", "fisio3", "fisio4", "gest1", "gest2", "ingles1", "ipe2", "ipe-tema5", "lab1", "lab2"];
+export const UNIDADES = ["bio1", "bio2", "bio3", "fisio1", "fisio2", "fisio3", "fisio4", "gest1", "gest2", "ingles1", "ipe2", "ipe-tema4", "ipe-tema5", "lab1", "lab2"];
 
 const leer = (rel) => fs.readFileSync(path.join(RAIZ, rel), "utf8");
 const num = (n) => String(n).padStart(3, "0");

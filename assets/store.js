@@ -9,9 +9,9 @@
   const CLAVE = "tsapc:v2", BACKUP = "tsapc:backup-v1", CORRUPTO = "tsapc:v2-corrupto";
   const SCHEMA = 1;
   const UNIDADES = ["bio1", "bio2", "bio3", "fisio1", "fisio2", "fisio3", "fisio4", "gest1", "gest2",
-    "ingles1", "ipe2", "ipe-tema5", "lab1", "lab2"];
+    "ingles1", "ipe2", "ipe-tema4", "ipe-tema5", "lab1", "lab2"];
   /* id antiguo (prefijo de la clave o EXAM.id) -> carpeta */
-  const ALIAS = { ing1: "ingles1", ipe5: "ipe-tema5", ipe3: "ipe-tema5" };
+  const ALIAS = { ing1: "ingles1", ipe5: "ipe-tema5", ipe3: "ipe-tema5", ipe4: "ipe-tema4" };
   const INGLES = {
     "eng-u12-exam-v2": "examen", "eng-u12-simulacro-v1": "simulacro",
     "eng-lab-vocab-v2": "examenVocabulario", "eng-lab-vocab-full-v1": "simulacroVocabulario",

@@ -631,6 +631,7 @@ var UNITS = {
   gest1:{s:'gest',code:'Gest 1',t:'Sector sanitario',st:'hospital',path:'gest1/',blocks:['Sistema sanitario y salud','Determinantes de la salud','Qué hace un sistema sanitario y cómo se organiza','Modelos sanitarios','El Sistema Nacional de Salud (SNS) en España','Organización asistencial y cartera de servicios','Deontología y bioética','Ley de Ordenación de las Profesiones Sanitarias (LOPS)','Economía de la salud y sostenibilidad','Calidad asistencial y evaluación']},
   gest2:{s:'gest',code:'Gest 2',t:'El laboratorio',st:'tubes',path:'gest2/',blocks:['TSLCB: qué hace y para qué','TSLCB: funciones profesionales, personales y sociales','TSLCB: áreas, puestos y ambiente profesional','TSLCB: objetivos','TSAPC (tu título): funciones','TSAPC: áreas, puestos, ambiente y calidad','TSAPC: objetivos (4 grupos)']},
   ipe2:{s:'ipe',code:'IPE 2',t:'Riesgos ambientales',st:'sound',path:'ipe2/',blocks:['Riesgos físicos: introducción','El ruido','Las vibraciones mecánicas','El ambiente térmico','Las radiaciones electromagnéticas','Los riesgos químicos','Los riesgos biológicos']},
+  ipe4:{s:'ipe',code:'IPE 4',t:'Seguridad y ergonomía',st:'kit',path:'ipe-tema4/',blocks:['Condiciones de seguridad: los lugares de trabajo','Los equipos de trabajo','El riesgo eléctrico','Los incendios','Los riesgos ergonómicos','Los riesgos psicosociales']},
   ipe5:{s:'ipe',code:'IPE 5',t:'Primeros auxilios',st:'kit',path:'ipe-tema5/',blocks:['Los primeros auxilios','El triaje','El botiquín de primeros auxilios','El soporte vital básico','La actuación ante atragantamientos','Las hemorragias','Las quemaduras','Los traumatismos','Las heridas','La pérdida de consciencia']},
   ing1:{s:'ing',code:'Inglés 1',t:'Units 1-2 · Verbs and Present',st:'hello',path:'ingles1/',blocks:['Unit 1: Regular and Irregular Verbs','Unit 2: Present Simple','Unit 2: Present Continuous','Unit 2: Present Perfect Simple','Unit 2: Present Perfect Continuous']}
 };
@@ -642,7 +643,7 @@ var ROOMS = {
   lab:  {name:'Técnicas de Laboratorio', place:'Laboratorio de Técnicas Generales', subs:['lab'], units:['lab1','lab2']},
   fisio:{name:'Fisiopatología', place:'Aula de Fisiopatología', subs:['fisio'], units:['fisio1','fisio2','fisio3','fisio4']},
   gest: {name:'Gestión de Muestras', place:'Recepción de muestras', subs:['gest'], units:['gest1','gest2']},
-  ipe:  {name:'IPE I', place:'Sala de prevención', subs:['ipe'], units:['ipe2','ipe5']},
+  ipe:  {name:'IPE I', place:'Sala de prevención', subs:['ipe'], units:['ipe2','ipe4','ipe5']},
   ing:  {name:'Inglés', place:'Aula de idiomas', subs:['ing'], units:['ing1']},
   digi: {name:'Digitalización', place:'Sala de pantallas', subs:['digi'], units:[]},
   sost: {name:'Sostenibilidad', place:'Invernadero', subs:['sost'], units:[]}
@@ -3559,6 +3560,8 @@ async function buildIpeRoom() {
   mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(0.03, 1.12, 0.02), V(0.14, 1.05, 0.06), V(0.13, 0.7, 0.1), V(0.09, 0.55, 0.11)]), 20, 0.012, 6), darkM(), 0, 0, 0, ext);
   poster(ext, 0, 1.45, 0.24, 0.3, (g, w, h) => { g.fillStyle = '#d8231f'; g.fillRect(0, 0, w, h); g.fillStyle = '#fff'; g.fillRect(200, 140, 110, 280); g.beginPath(); g.arc(255, 140, 55, Math.PI, 0); g.fill(); g.fillRect(230, 60, 50, 40); g.fillRect(280, 70, 90, 18); g.font = '700 74px "Atkinson Hyperlegible"'; g.textAlign = 'center'; g.fillText('Extintor', w / 2, h - 50); }, -0.15);
   blob(0.4, 0.4, 0.4, 0, 0.003, 0.05, ext);
+  tagSpot(ext, 'ipe4');
+  function reactIpe4() { const tl = gsap.timeline(); tl.to(ext.rotation, { z: 0.12, duration: 0.12, yoyo: true, repeat: 3, ease: 'sine.inOut' }).to(ext.rotation, { z: 0, duration: 0.2 }); animTL(tl); kick(1.2); }
   const dea = new THREE.Group(); dea.position.set(3.55, 1.4, 0.06); S.add(dea);
   rbox(0.42, 0.52, 0.12, 0.02, std(0x0f8a4c, { roughness: 0.4 }), 0, 0, 0, dea);
   poster(dea, 0, -0.02, 0.36, 0.44, (g, w, h) => { g.fillStyle = '#0f8a4c'; g.fillRect(0, 0, w, h); g.fillStyle = '#fff'; g.beginPath(); g.moveTo(256, 420); g.bezierCurveTo(90, 300, 100, 160, 190, 150); g.bezierCurveTo(230, 146, 250, 170, 256, 190); g.bezierCurveTo(262, 170, 282, 146, 322, 150); g.bezierCurveTo(412, 160, 422, 300, 256, 420); g.fill(); g.fillStyle = '#0f8a4c'; g.beginPath(); g.moveTo(270, 190); g.lineTo(210, 300); g.lineTo(256, 300); g.lineTo(236, 380); g.lineTo(306, 260); g.lineTo(262, 260); g.closePath(); g.fill(); g.fillStyle = '#fff'; g.font = '700 96px "Atkinson Hyperlegible"'; g.textAlign = 'center'; g.fillText('DEA', 256, 560); }, 0.061);
@@ -3580,7 +3583,7 @@ async function buildIpeRoom() {
   blob(1.6, 0.5, 0.3, 4.45, 0.003, 1.35, S);
 
   return {
-    name: 'ipe', shell: sh, exposure: sh.exposure, scene: S, pick: [son, aid], range: [-0.6, 2.8],
+    name: 'ipe', shell: sh, exposure: sh.exposure, scene: S, pick: [ext, son, aid], range: [-1.9, 2.8],
     idle(t) {
       if (!ambientOn()) return false;
       sweep.rotation.y = t * 1.6; beaGlow.material.opacity = 0.45 + Math.abs(Math.sin(t * 1.6)) * 0.3;
@@ -3589,7 +3592,7 @@ async function buildIpeRoom() {
       tape.rotation.x = Math.sin(t * 1.3) * 0.18; tape.position.y = 0.86 + Math.sin(t * 0.9) * 0.008;
       return 'amb';
     },
-    spots: [unitSpot('ipe2', 0, reactIpe2, { anchor: V(-0.08, top + 0.52, 0.55), label: 'Riesgos ambientales' }), unitSpot('ipe5', 2.2, reactIpe5, { anchor: V(2.0, top + 0.38, 0.55), label: 'Primeros auxilios' })],
+    spots: [unitSpot('ipe4', -1.55, reactIpe4, { anchor: V(-1.55, 1.3, 0.2), label: 'Seguridad y ergonomía' }), unitSpot('ipe2', 0, reactIpe2, { anchor: V(-0.08, top + 0.52, 0.55), label: 'Riesgos ambientales' }), unitSpot('ipe5', 2.2, reactIpe5, { anchor: V(2.0, top + 0.38, 0.55), label: 'Primeros auxilios' })],
     cfg: { y: 1.55, z: 3.9, ly: 1.05, fov: 44, m: { y: 1.5, z: 3.7, ly: 1.1, fov: 50 } }
   };
 }

@@ -1,0 +1,1080 @@
+<!doctype html>
+<html lang="es" data-unit="ipe-tema4">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:30;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){function mk(c){var a=document.createElement("a");a.className=c;a.href="../../";a.textContent="\u2190 Mi carrera";return a}
+var top=mk("mc-back");top.textContent="\u2190 Menú · Mi carrera";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a Mi carrera");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
+(function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
+<title>IPE 4 · Seguridad, ergonomía y psicosociales</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-192.png">
+<meta name="theme-color" content="#21124f">
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@700&display=swap">
+<style>
+:root{
+  --bg:#f4f2f6; --surface:#ffffff; --ink:#1d1828; --muted:#665d74; --line:#e3dee9; --soft:#f7f5fa;
+  --accent:#7a1f3d; --accent-ink:#ffffff; --blk:#7a1f3d; --blk-ink:#ffffff;
+  --lv1:#d3264a; --lv1-soft:#fdebef; --lv2:#d9730a; --lv2-soft:#fdf1e3; --lv3:#2c6bd2; --lv3-soft:#e8effc;
+  --def-soft:#f1eef7; --und-soft:#eaf6ef; --und:#1d6a44; --tip-soft:#fff4d6; --tip:#7a5000; --q:#7a1f3d; --q-soft:#fbf0f4;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131019; --surface:#1d1825; --ink:#ece7f3; --muted:#a69bb5; --line:#332b3e; --soft:#241e2d;
+  --accent:#ff8fae; --accent-ink:#1d1825; --blk:#5c1a33; --blk-ink:#ffe9ef;
+  --lv1:#ff5c7a; --lv1-soft:#3a1720; --lv2:#ffa64d; --lv2-soft:#3a2714; --lv3:#72a2ff; --lv3-soft:#172540;
+  --def-soft:#251f30; --und-soft:#15291f; --und:#86dcad; --tip-soft:#352a14; --tip:#f5c56b; --q:#ff8fae; --q-soft:#2e1a24; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);line-height:1.55}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:1.25em}
+li{margin:2px 0}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.wrap>*{min-width:0}
+/* cabecera */
+.top{padding:6px 0 0}
+.eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+.top h1{font-size:1.85em;line-height:1.1;margin:6px 0 4px}
+.sub{color:var(--muted);margin:0 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;border-radius:999px;padding:3px 9px;color:#fff;white-space:nowrap}
+.tag.lv1{background:var(--lv1)} .tag.lv2{background:var(--lv2)} .tag.lv3{background:var(--lv3)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag{color:#16121c}}
+:root[data-theme="dark"] .tag{color:#16121c}
+.meta{color:var(--muted)}
+/* cómo estudiar */
+.how{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.how>summary{cursor:pointer;font-weight:700;padding:12px 14px;font-family:var(--f-display)}
+.how-b{padding:0 14px 12px;font-size:.93em}
+/* índice */
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.toc .xs-h{margin:0 0 8px;border:0;padding:0}
+.toc-l{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.toc-l li{margin:0}
+.toc-b{display:block;font-weight:700;color:var(--ink);text-decoration:none}
+.toc-b span{font-family:var(--f-mono);font-size:.72em;color:var(--accent);margin-right:4px;text-transform:uppercase}
+.toc-c{display:block;font-size:.8em;color:var(--muted);line-height:1.45}
+.toc-c a{color:var(--muted);text-decoration:none}
+.toc-c a.i1{color:var(--lv1);font-weight:700}
+/* bloques */
+.blk{display:flex;flex-direction:column;gap:12px;scroll-margin-top:var(--bar,0px)}
+.blk-h{display:grid;gap:2px;background:var(--blk);color:var(--blk-ink);border-radius:12px;padding:14px 44px 14px 14px;position:relative;font-family:var(--f-body)}
+.blk-h .bn{font-family:var(--f-mono);font-size:.62em;letter-spacing:.1em;opacity:.9;font-weight:500}
+.blk-h .bt{font-family:var(--f-display);font-size:1.15em;font-weight:800;line-height:1.15}
+.blk-h .bc{font-size:.66em;font-weight:400;opacity:.95}
+/* concepto */
+.cpt{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lv2);border-radius:12px;padding:12px 14px 14px;scroll-margin-top:var(--bar,0px);min-width:0}
+.cpt.lv1{border-left-color:var(--lv1)} .cpt.lv3{border-left-color:var(--lv3)}
+.c-h{display:flex;gap:10px;align-items:flex-start}
+.c-n{flex:none;font-family:var(--f-mono);font-weight:500;font-size:.85em;min-width:2em;height:2em;border-radius:8px;display:grid;place-items:center;background:var(--soft);color:var(--muted);margin-top:1px}
+.lv1 .c-n{background:var(--lv1-soft);color:var(--lv1)} .lv2 .c-n{background:var(--lv2-soft);color:var(--lv2)} .lv3 .c-n{background:var(--lv3-soft);color:var(--lv3)}
+.c-h h3{font-size:1.15em;line-height:1.25}
+.c-h .note{display:block;font-family:var(--f-body);font-weight:400;font-size:.72em;color:var(--muted);margin-top:2px}
+.c-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:8px 0 10px}
+.srcl{font-size:.8em;color:var(--muted)}
+.c-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.c-body>*{min-width:0;max-width:100%}
+.lbl{font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.prof{color:var(--accent);margin-bottom:-6px}
+.prof-t>:first-child{margin-top:0}
+.defs{background:var(--def-soft);border-radius:10px;padding:9px 11px;font-size:.88em}
+.defs ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.defs li{display:flex;flex-direction:column;gap:4px}
+.term{font-size:1.05em}
+.fd{border-radius:8px;padding:6px 9px;line-height:1.45}
+.fd .fl{display:block;font-family:var(--f-mono);font-size:.72em;font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.fd.easy{background:var(--surface)} .fd.easy .fl{color:var(--und)}
+.fd.ok{background:var(--surface);border-left:4px solid var(--accent);font-weight:700} .fd.ok .fl{color:var(--accent)}
+.fd.no{background:transparent;color:var(--muted);font-size:.92em;padding-top:0;padding-bottom:0} .fd.no .fl{color:var(--lv2)}
+.box{border-radius:10px;padding:9px 11px;font-size:.94em}
+.box>p:last-child,.box>ul:last-child{margin-bottom:0}
+.box .lbl{margin-bottom:2px}
+.und{background:var(--und-soft)} .und .lbl{color:var(--und)}
+.tip{background:var(--tip-soft)} .tip .lbl{color:var(--tip)}
+.q{background:var(--q-soft);border:1.5px dashed var(--q)} .q .lbl{color:var(--q)}
+.qt{font-weight:700;margin:2px 0}
+.qt em{font-style:normal}
+.dom{display:inline-flex;gap:7px;align-items:center;font-size:.9em;color:var(--muted);margin-top:6px;cursor:pointer}
+.dom input{width:19px;height:19px;accent-color:var(--und)}
+.cpt.done .c-n::after{content:"✓";margin-left:2px;color:var(--und)}
+.tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86em}
+th,td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+figure{margin:0;text-align:center}
+figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.76em;color:var(--muted);margin-top:3px}
+/* extras */
+.xs{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0;scroll-margin-top:var(--bar,0px)}
+.xs-h{font-size:1.25em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:4px;margin:0 0 10px}
+.ih{font-size:1em;margin:14px 0 6px}
+.pq{border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px;background:var(--soft)}
+.pq summary,.pqq{cursor:pointer;font-weight:700;margin:0}
+.pq[open] summary{margin-bottom:6px}
+.pn{font-family:var(--f-mono);font-size:.78em;color:var(--accent);margin-right:2px}
+.pa>:first-child{margin-top:0}.pa>:last-child{margin-bottom:0}
+.ref{font-size:.8em;color:var(--muted);white-space:nowrap}
+a{color:var(--accent)}
+#llave{background:#fff4d6;border:2px solid #b07a00;border-radius:16px;padding:14px}#llave .xs-h{color:#fff;background:#b07a00;border-radius:10px;padding:10px 12px;border:0}#llave .pq{border-left:5px solid #b07a00}#llave .pn{background:#b07a00;color:#fff}.dl.bll{display:flex;align-items:center;gap:10px;margin-top:6px;background:#fff4d6;border-radius:10px;color:#8a5f00;font-weight:700}.dl.bll .dn{background:#b07a00;color:#fff}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #llave{background:#33270a;border-color:#ffc94d}:root:not([data-theme="light"]) #llave .xs-h,:root:not([data-theme="light"]) #llave .pn{background:#ffc94d;color:#33270a}:root:not([data-theme="light"]) .dl.bll{background:#33270a;color:#ffc94d}}.gal{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.gal figure{margin:0;flex:1 1 140px;max-width:100%}.gal img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}.gal figcaption{font-size:.8em;color:var(--muted)}pre{overflow-x:auto;max-width:100%;font-size:.8em;background:var(--soft);padding:8px;border-radius:8px}
+body{font-size:17px}
+.wrap{padding-block:14px 60px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.bar{position:relative;z-index:5;border-radius:12px;border:1px solid var(--line);background:var(--surface);border-bottom:1px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.row{display:flex;gap:8px;align-items:center;min-width:0}
+.row select,.row input[type=search]{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:0;flex:1}
+.mode{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.mode button{font:inherit;font-size:13px;border:0;background:var(--surface);color:var(--ink);padding:6px 10px;cursor:pointer}
+.mode button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;min-width:0}
+.chip{font:inherit;font-size:13px;white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chip.c1[aria-pressed="true"]{background:var(--lv1);border-color:var(--lv1);color:#fff}
+.chip.c2[aria-pressed="true"]{background:var(--lv2);border-color:var(--lv2);color:#fff}
+.chip.c3[aria-pressed="true"]{background:var(--lv3);border-color:var(--lv3);color:#fff}
+.prog{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;font-variant-numeric:tabular-nums}
+.pbar{height:5px;background:var(--line);border-radius:3px;overflow:hidden}.pbar i{display:block;height:100%;width:0;background:var(--und)}
+.blk-h{cursor:pointer;user-select:none}
+.blk-h::after{content:"▾";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.1em;transition:transform .2s}
+.blk.open .blk-h::after{transform:translateY(-50%) rotate(180deg)}
+.blk:not(.open) .cpt{display:none}
+.blk[hidden],.cpt[hidden]{display:none!important}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tbtn{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 11px;cursor:pointer}
+.show{display:none;font:inherit;font-weight:700;font-size:14px;border:1.5px solid var(--q);color:var(--q);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;margin-top:6px;margin-right:8px}
+body.test .show{display:inline-block}
+body.test .cpt:not(.reveal) .c-body>:not(.q){display:none}
+body.test .cpt:not(.reveal) .c-body{gap:0}
+.hidebtn{font:inherit;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer}
+.hidebtn .sw{flex:none;width:40px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.hidebtn .sw i{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--surface);transition:left .2s}
+.hidebtn[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.hidebtn[aria-pressed="true"] .sw{background:var(--lv1)}
+.hidebtn[aria-pressed="true"] .sw i{left:21px}
+body.hidedefs .fd.easy,body.hidedefs .fd.ok{position:relative;cursor:pointer;color:transparent;user-select:none}
+body.hidedefs .fd.easy *,body.hidedefs .fd.ok *{color:transparent!important;border-color:transparent}
+body.hidedefs .fd.easy:not(.peek)::after,body.hidedefs .fd.ok:not(.peek)::after{content:"👆 Toca para ver";position:absolute;inset:0;display:grid;place-items:center;border-radius:8px;background:repeating-linear-gradient(135deg,var(--soft) 0 10px,var(--line) 10px 20px);color:var(--muted);font-family:var(--f-mono);font-size:.78em;font-weight:500;letter-spacing:.04em;padding:0 12px;text-align:center}
+body.hidedefs .fd.ok:not(.peek)::after{content:"📌 ¿Cuál es la definición de la diapositiva? · toca para ver"}
+body.hidedefs .fd.easy:not(.peek)::after{content:"💡 ¿Qué significa? · toca para ver"}
+body.hidedefs .fd.peek,body.hidedefs .fd.peek *{color:inherit!important;user-select:auto}
+body.hidedefs .fd.peek{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.hidebtn .sw,.hidebtn .sw i{transition:none}}
+.empty{color:var(--muted);text-align:center;padding:20px}
+.chip:focus-visible,.mode button:focus-visible,.show:focus-visible,.tbtn:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.blk-h:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+[hidden]{display:none!important}
+.fab.hf{bottom:calc(78px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);padding:10px 14px 10px 10px}
+.fab.hf .sw{flex:none;width:36px;height:20px;border-radius:999px;background:var(--line);position:relative;transition:background .2s}
+.fab.hf .sw i{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.3);transition:left .2s}
+.fab.hf[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.fab.hf[aria-pressed="true"] .sw{background:var(--lv1)}
+.fab.hf[aria-pressed="true"] .sw i{left:18px}
+.res{border:1px solid var(--line);border-radius:10px;background:var(--surface);max-height:60vh;overflow:auto}
+.res .rh{position:sticky;top:0;background:var(--soft);font-family:var(--f-mono);font-size:12px;color:var(--muted);padding:7px 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.res .rh button{font:inherit;border:0;background:none;color:var(--accent);cursor:pointer;padding:0}
+.ri{display:block;width:100%;text-align:left;font:inherit;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 10px;color:var(--ink);cursor:pointer}
+.ri:last-child{border-bottom:0}
+.ri:hover,.ri:focus-visible{background:var(--soft)}
+.ri .rk{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.ri .rt{display:block;font-weight:700;line-height:1.25}
+.ri .rs{display:block;font-size:.85em;color:var(--muted);line-height:1.35;margin-top:2px}
+.res mark,.hl mark{background:#ffe066;color:#1d1828;border-radius:3px;padding:0 1px}
+.res .none{padding:12px 10px;color:var(--muted)}
+.flash{animation:fl 2.2s ease}
+@keyframes fl{0%,40%{box-shadow:0 0 0 4px #ffe066}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none;outline:3px solid #ffe066}}
+.simlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px dashed var(--accent);border-radius:12px;padding:11px 14px;font-size:.95em}
+.simlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+a.dt{text-decoration:none;display:inline-flex;align-items:center}
+.dc.full{color:var(--und);font-weight:700}
+/* ===== Mi plan ===== */
+#planOv{position:fixed;inset:0;z-index:55;background:var(--bg);overflow:auto;--ok:var(--und);--ok-soft:var(--und-soft);--warn:var(--tip);--warn-soft:var(--tip-soft);--rev:var(--lv3);--rev-soft:var(--lv3-soft)}
+#planOv .pwrap{max-width:720px;margin:0 auto;padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+#planOv .ptop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+#planOv .px{flex:none;font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.planlink{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1.5px solid var(--accent);border-radius:12px;padding:11px 14px;font:inherit;font-size:.95em;width:100%;text-align:left;cursor:pointer}
+.planlink span:last-child{color:var(--accent);font-weight:800;font-size:1.2em}
+#planOv .eyebrow{font-family:var(--f-mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
+#planOv h1{font-size:1.9em;line-height:1.08;margin:4px 0 4px}
+#planOv .sub{color:var(--muted);margin:0}
+#planOv .count{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+#planOv .count .n{font-family:var(--f-display);font-weight:800;font-size:2.4em;line-height:1;color:var(--lv1);font-variant-numeric:tabular-nums;min-width:1.4ch;text-align:center}
+#planOv .count p{margin:0}
+#planOv .k{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+#planOv .cfg{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+#planOv .days{display:flex;flex-wrap:wrap;gap:6px}
+#planOv .dchip{font:inherit;font-weight:700;font-size:15px;min-width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+#planOv .dchip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#planOv .seg{display:flex;gap:6px;flex-wrap:wrap}
+#planOv .seg button{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;padding:7px 12px;cursor:pointer}
+#planOv .seg button[aria-pressed="true"]{border-color:var(--accent);font-weight:700;background:var(--surface)}
+#planOv .note{font-size:.9em;border-radius:10px;padding:9px 11px}
+#planOv .note.warn{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn)}
+#planOv .note.ok{background:var(--ok-soft);border-left:4px solid var(--ok)}
+#planOv .day{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#planOv .day-h{padding:12px 14px 10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+#planOv .day-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+#planOv .day-h h2{font-size:1.3em}
+#planOv .day-h .when{font-family:var(--f-mono);font-size:.75em;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+#planOv .day-h .goal{font-size:.92em;color:var(--muted);margin:0}
+#planOv .times{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.9em;color:var(--muted)}
+#planOv .times input{font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:4px 6px}
+#planOv .dprog{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+#planOv .dprog i{display:block;height:100%;background:var(--ok);width:0}
+#planOv .badge{font-family:var(--f-mono);font-size:.7em;border-radius:999px;padding:2px 8px;white-space:nowrap}
+#planOv .badge.today{background:var(--accent);color:var(--accent-ink)}
+#planOv .badge.done{background:var(--ok-soft);color:var(--ok)}
+#planOv .tasks{list-style:none;margin:0;padding:6px 8px 10px}
+#planOv .task{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding:9px 6px;border-radius:10px;align-items:start}
+#planOv .task+.task{border-top:1px solid var(--line)}
+#planOv .task input{width:22px;height:22px;margin-top:2px;accent-color:var(--ok)}
+#planOv .t-time{font-family:var(--f-mono);font-size:.75em;color:var(--muted);font-variant-numeric:tabular-nums}
+#planOv .t-title{font-weight:700;line-height:1.3}
+#planOv .t-det{font-size:.88em;color:var(--muted);line-height:1.4;margin-top:2px}
+#planOv .t-det b{color:var(--ink)}
+#planOv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 3px 0 0;transform:translateY(-1px)}
+#planOv .d1{background:var(--lv1)}
+#planOv .d2{background:var(--lv2)}
+#planOv .d3{background:var(--lv3)}
+#planOv .t-go{display:inline-block;margin-top:6px;font-size:.85em;font-weight:700;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);border-radius:8px;padding:4px 10px}
+#planOv .task.brk{grid-template-columns:1fr;padding:5px 6px;color:var(--muted);font-size:.88em}
+#planOv .task.brk .t-title{font-weight:400}
+#planOv .task.rev .t-title{color:var(--rev)}
+#planOv .task.done .t-title,#planOv .task.done .t-det{text-decoration:line-through;opacity:.55}
+#planOv .foot{color:var(--muted);font-size:.85em}
+#planOv .dchip:focus-visible,#planOv .seg button:focus-visible,#planOv .t-go:focus-visible,#planOv input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* ===== Temporizador ===== */
+.tmr{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.blk:not(.open) .tmr{display:none}
+.tmr p{margin:0;font-size:.92em}
+.tmr .tm-done{color:var(--und);font-weight:700}
+.tmr button{font:inherit;font-weight:800;font-size:15px;border:0;border-radius:10px;padding:9px 14px;background:var(--accent);color:var(--accent-ink);cursor:pointer;white-space:nowrap}
+.tpill{position:fixed;z-index:30;left:50%;transform:translateX(-50%);top:calc(8px + env(safe-area-inset-top,0px));width:min(440px,calc(100vw - 24px));background:var(--ink);color:var(--surface);border-radius:16px;padding:9px 10px 9px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tpill .tp-txt{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.15}
+.tpill .tp-b{font-size:.75em;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tpill .tp-t{font-family:var(--f-mono);font-size:1.6em;font-weight:500;font-variant-numeric:tabular-nums}
+.tpill.over .tp-t{color:var(--lv1)}
+.tpill .tp-bar{position:absolute;left:12px;right:12px;bottom:4px;height:3px;border-radius:2px;background:rgba(127,127,127,.35);overflow:hidden}
+.tpill .tp-bar i{display:block;height:100%;background:var(--und);width:0}
+.tpill.over .tp-bar i{background:var(--lv1)}
+.tpill button{flex:none;font:inherit;font-weight:800;font-size:14px;border:0;border-radius:10px;padding:8px 11px;cursor:pointer;background:var(--surface);color:var(--ink)}
+.tpill button.fin{background:var(--und);color:var(--surface)}
+.tpill button.x{background:transparent;color:var(--surface);opacity:.7;padding:8px 6px;font-size:18px;line-height:1}
+/* ===== Leyenda desplegable ===== */
+.top .legend .tag{cursor:pointer;border:0;font:inherit;font-family:var(--f-mono);font-size:.68em;font-weight:500;letter-spacing:.04em;padding:5px 10px}
+.top .legend .tag::after{content:" ▾";display:inline-block;transition:transform .2s}
+.top .legend .tag[aria-expanded="true"]::after{transform:rotate(180deg)}
+.top .legend .tag[aria-expanded="true"]{outline:3px solid var(--line);outline-offset:1px}
+.lvpanel{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--lc);border-radius:12px;padding:10px 12px;max-height:60vh;overflow:auto}
+.lvpanel h4{margin:0 0 6px;font-family:var(--f-display);font-size:1em}
+.lvpanel .lg{font-family:var(--f-mono);font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 2px}
+.lvpanel a{display:block;color:var(--ink);text-decoration:none;padding:6px 4px;border-radius:8px;font-size:.92em;line-height:1.3}
+.lvpanel a:hover{background:var(--soft)}
+.lvpanel a b{font-family:var(--f-mono);font-weight:500;color:var(--lc);margin-right:4px}
+.lvpanel a.ok{opacity:.55}.lvpanel a.ok::after{content:" ✓";color:var(--und)}
+/* ===== Índice lateral ===== */
+.drw{overflow:hidden;visibility:hidden;position:fixed;top:0;bottom:0;left:0;z-index:40;width:min(340px,86vw);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .25s ease,visibility 0s linear .25s;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);box-shadow:4px 0 24px rgba(0,0,0,.18)}
+.drw.on{transform:none;visibility:visible;transition:transform .25s ease,visibility 0s}
+.scrim{position:fixed;inset:0;z-index:35;background:rgba(10,8,14,.45)}
+.drw-h{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 8px;font-family:var(--f-display);font-size:1.15em}
+.drw-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;width:38px;height:38px;cursor:pointer}
+.drw-tools{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;border-bottom:1px solid var(--line)}
+.dt{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:8px;padding:7px 9px;cursor:pointer;white-space:nowrap}
+.dt.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.drw-l{overflow:auto;flex:1;padding:8px 8px 24px;display:flex;flex-direction:column;gap:2px}
+.db summary{list-style:none;display:flex;align-items:center;gap:10px;padding:9px 8px;border-radius:10px;cursor:pointer;font-weight:700}
+.db summary::-webkit-details-marker{display:none}
+.db summary:hover,.db[open] summary{background:var(--soft)}
+.dn{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-family:var(--f-mono);font-size:.78em}
+.dt2{flex:1;line-height:1.25}
+.dc{font-family:var(--f-mono);font-size:.72em;color:var(--muted);font-weight:500}
+.db summary::after{content:"▾";color:var(--muted);transition:transform .2s}
+.db[open] summary::after{transform:rotate(180deg)}
+.dl,.dbk{display:flex;align-items:baseline;gap:8px;padding:6px 8px 6px 44px;color:var(--ink);text-decoration:none;font-size:.9em;line-height:1.3;border-radius:8px}
+.dl:hover,.dbk:hover{background:var(--soft)}
+.dbk{color:var(--accent);font-weight:700;font-size:.82em}
+.dl i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--lv2);transform:translateY(-1px)}
+.dl.i1 i{background:var(--lv1)} .dl.i3 i{background:var(--lv3)}
+.dx{font-family:var(--f-mono);font-size:.7em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:14px 8px 4px}
+.drw-l>.dl{padding-left:12px}
+.fab.idx{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--ink);color:var(--surface)}
+.fab.up{bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+@media (min-width:1100px){
+  .drw{transform:none;box-shadow:none;visibility:visible}
+  .scrim,.fab.idx,.drw-x{display:none!important}
+  .wrap{margin-left:max(360px,calc((100vw - 760px)/2))}
+  .fab.up{left:calc(356px + 16px);bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){.drw{transition:none}}
+
+/* ===== Tarjetas ===== */
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;font:inherit;font-weight:700;font-size:16px;border:0;border-radius:999px;padding:13px 18px;background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.fab.up{right:auto;left:calc(16px + env(safe-area-inset-left,0px));background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:13px 16px}
+.tbtn.big{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.fc{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.fc-in{max-width:620px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+.fc-top{display:flex;align-items:center;gap:10px}
+.fc-top h2{font-size:1.15em;flex:1}
+.fc-x{font:inherit;font-size:22px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.fc-setup{display:flex;flex-direction:column;gap:12px;overflow:auto}
+.fc-setup .lbl{margin:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:9px 12px;cursor:pointer;text-align:left}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--q-soft);font-weight:700}
+.opt small{display:block;font-size:.8em;color:var(--muted);font-weight:400}
+.go{font:inherit;font-weight:800;font-size:17px;border:0;border-radius:12px;padding:14px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.go:disabled{opacity:.45;cursor:default}
+#fcGo{position:sticky;bottom:0;box-shadow:0 -8px 16px var(--bg)}
+.fc-prog{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fc-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;display:flex}
+.fc-bar .g{background:var(--und)} .fc-bar .r{background:var(--lv1)}
+.stage{flex:1;min-height:0;perspective:1400px}
+.card3{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.3,.7,.3,1);cursor:pointer}
+.card3.flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;padding:18px;overflow:hidden}
+.face.front{border-top:8px solid var(--cc,var(--accent));justify-content:center;text-align:center;gap:14px}
+.face.back{transform:rotateY(180deg);border-top:8px solid var(--und)}
+.face .kind{font-family:var(--f-mono);font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.face.front .qq{font-family:var(--f-display);font-size:1.45em;font-weight:800;line-height:1.2;text-wrap:balance}
+.face .hint{color:var(--muted);font-size:.85em}
+.bulb{font-size:2.4em;line-height:1;filter:grayscale(1) opacity(.5);transition:filter .3s}
+.card3.flip .bulb{filter:none}
+.face.back .ans{overflow:auto;flex:1;min-height:0;font-size:.98em}
+.face.back .ans>:first-child{margin-top:0}
+.face.back .ans .formal{font-weight:700;font-size:1.15em;border-left:4px solid var(--accent);padding-left:10px}
+.face.back .src{font-size:.78em;color:var(--muted);margin-top:8px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btns button{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px 8px;cursor:pointer}
+.b-no{background:var(--lv1-soft);color:var(--lv1)} .b-si{background:var(--und-soft);color:var(--und)}
+.btns button:disabled{opacity:.35;cursor:default}
+.flipb{font:inherit;font-weight:800;font-size:16px;border:0;border-radius:14px;padding:15px;background:var(--ink);color:var(--surface);cursor:pointer}
+.fc-end{display:flex;flex-direction:column;gap:12px;align-items:stretch;text-align:center;overflow:auto}
+.fc-end .score{font-family:var(--f-display);font-size:3.2em;font-weight:800;line-height:1}
+@media (prefers-reduced-motion:reduce){.card3{transition:none}}
+</style>
+<link rel="stylesheet" href="../../assets/repaso.css">
+<link rel="stylesheet" href="../../assets/unidades.css">
+<div class="wrap">
+<header class="top"><p class="eyebrow">🦺 IPE 1 · Tema 4</p>
+<h1>Repaso completo: condiciones de seguridad, ergonomía y riesgos psicosociales</h1>
+<p class="sub">Tema 4 · 17 diapositivas + vocabulario + test · 6 bloques · 26 conceptos</p>
+<div class="legend"><span class="tag lv1">🔴 IMPRESCINDIBLE · 20</span><span class="tag lv2">🟠 IMPORTANTE · 6</span></div></header><details class="how"><summary>🧭 Cómo usar este repaso</summary><div class="how-b"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>
+<p><b>Colores:</b> los he puesto según lo que resaltan las diapositivas: 🔴 lo más destacado · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div></details>
+<div class="bar">
+  <div class="row">
+    <select id="toc" aria-label="Ir a un bloque"><option value="">Ir a…</option><option value="b0">Bloque 1 · Condiciones de seguridad: los lugares de trabajo</option><option value="b1">Bloque 2 · Los equipos de trabajo</option><option value="b2">Bloque 3 · El riesgo eléctrico</option><option value="b3">Bloque 4 · Los incendios</option><option value="b4">Bloque 5 · Los riesgos ergonómicos</option><option value="b5">Bloque 6 · Los riesgos psicosociales</option></select>
+    <div class="mode" role="group" aria-label="Modo"><button type="button" id="mRead" aria-pressed="true">Leer</button><button type="button" id="mTest" aria-pressed="false">Ponte a prueba</button></div>
+  </div>
+  <div class="row srow"><input type="search" id="q" placeholder="🔎 Buscar cualquier palabra" aria-label="Buscar en el repaso" autocomplete="off"></div>
+  <div class="res" id="res" hidden></div>
+  <div class="chips" role="group" aria-label="Filtrar por importancia">
+    <button type="button" class="chip" data-f="0" aria-pressed="true">Todos</button>
+    <button type="button" class="chip c1" data-f="1" aria-pressed="false">🔴 Imprescindibles</button>
+    <button type="button" class="chip c2" data-f="2" aria-pressed="false">🟠 Importantes</button>
+    <button type="button" class="chip c3" data-f="3" aria-pressed="false">🔵 Leer una vez</button>
+    <button type="button" class="chip" data-f="pend" aria-pressed="false">Me faltan</button>
+  </div>
+  <div class="prog"><span id="pText">Dominas 0</span><span id="pHint"></span></div>
+  <div class="pbar"><i id="pBar"></i></div>
+</div>
+<button type="button" class="planlink" id="planOpen"><span>📅 <b>Mi plan de estudio</b> · <span id="planToday">reparte el temario en los días que te quedan</span></span><span aria-hidden="true">→</span></button>
+
+
+<section class="blk" id="b0" data-min="52"><h2 class="blk-h"><span class="bn">BLOQUE 1</span><span class="bt">Condiciones de seguridad: los lugares de trabajo</span><span class="bc">⏱ 52 min · Conceptos 1–6 · 4 🔴 · <b class="bd">0</b>/6 dominados</span></h2><article class="cpt lv1" id="c1" data-lv="1">
+<header class="c-h"><span class="c-n">1</span><h3>Riesgos derivados de las condiciones de seguridad</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 2 y vocabulario</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Condiciones de seguridad</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Lo que hay en el trabajo (suelos, máquinas, cables, fuego…) que puede provocar un accidente.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Los riesgos derivados de las condiciones de seguridad son los causados por elementos que, cuando están presentes, pueden provocar accidentes de trabajo.»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los riesgos derivados de <strong>las condiciones de seguridad</strong> son los causados por elementos que, cuando están presentes, pueden provocar <strong>accidentes de trabajo</strong>.</p><p>Pueden estar originados por:</p><ul><li>los <strong>lugares de trabajo</strong></li><li>los <strong>equipos de trabajo</strong></li><li>las <strong>instalaciones eléctricas</strong></li><li>los <strong>incendios</strong></li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Estos riesgos acaban en accidente (un golpe, una caída, una descarga, un fuego), no en una enfermedad lenta como el ruido o los químicos del tema anterior.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Los 4 orígenes: <strong>Lugar, Equipo, Electricidad, Fuego</strong> → «<strong>L-E-E-F</strong>».</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué son los riesgos derivados de las condiciones de seguridad y por qué 4 cosas pueden estar originados?</p><label class="dom"><input type="checkbox" data-n="1"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c2" data-lv="1">
+<header class="c-h"><span class="c-n">2</span><h3>Los lugares de trabajo y sus riesgos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 2</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Lugares de trabajo</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Todas las zonas del trabajo donde estás o a las que vas, tengan techo o no.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Son las áreas del centro de trabajo, edificadas o no, en las que la persona trabajadora debe permanecer o a las que ha de acceder para cualquier tarea que tenga que ver con su trabajo.»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Lugares de trabajo:</strong> son las áreas del centro de trabajo, edificadas o no, en las que la persona trabajadora debe permanecer o a las que ha de acceder para cualquier tarea que tenga que ver con su trabajo.</p><p><strong>Los lugares de trabajo pueden ser fuente de los siguientes riesgos laborales:</strong></p><ul><li>caídas al mismo y a distinto nivel</li><li>pisadas sobre objetos</li><li>choques contra objetos inmóviles</li><li>incendios y explosiones</li><li>choques contra objetos móviles</li><li>atropello con vehículos</li><li>caídas de objetos por derrumbamiento o desplome</li></ul><p>El <strong>Real Decreto 486/1997</strong> establece las disposiciones mínimas de seguridad y salud en los lugares de trabajo.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El patio, el almacén o el aparcamiento también son lugar de trabajo («edificadas o no»). Casi todos sus riesgos son caídas, golpes y atropellos.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Lugares de trabajo = <strong>RD 486/1997</strong> («486: el sitio»).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Define lugar de trabajo y di 5 riesgos que puede generar.</p><label class="dom"><input type="checkbox" data-n="2"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c3" data-lv="1">
+<header class="c-h"><span class="c-n">3</span><h3>Espacios de trabajo y zonas peligrosas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 3</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los <strong>espacios de trabajo</strong> y las <strong>zonas peligrosas</strong> deben tener unas dimensiones que permitan la realización de la actividad sin peligro alguno y en condiciones ergonómicas adecuadas:</p><ul><li><strong>3 m</strong> de altura desde el piso hasta el techo. No obstante, en locales comerciales, de servicios, oficinas y despachos, la altura podrá reducirse a <strong>2,5 m</strong>.</li><li><strong>2 m<sup>2</sup></strong> de superficie libre por cada persona trabajadora.</li><li><strong>10 m<sup>3</sup></strong> no ocupados por cada persona trabajadora.</li></ul><p>Las máquinas y los equipos de trabajo se deben distribuir de manera que no generen riesgos.</p></div>
+<figure><img src="img/d003.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Condiciones mínimas de los lugares de trabajo (diap. 3)"><figcaption>Condiciones mínimas de los lugares de trabajo (diap. 3)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Tres números para que quepas: altura (3 m, o 2,5 en oficinas), suelo libre (2 m²) y aire libre (10 m³) por persona.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>«<strong>3 de alto, 2 de suelo, 10 de aire</strong>» (m, m², m³).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las 3 medidas mínimas de los espacios de trabajo por persona.</p><label class="dom"><input type="checkbox" data-n="3"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c4" data-lv="1">
+<header class="c-h"><span class="c-n">4</span><h3>Suelos, aberturas, desniveles y barandillas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 3</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Barandilla</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La protección que impide caerse por un hueco o un desnivel.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul><li>Los <strong>suelos</strong> han de ser fijos, estables, no resbaladizos y no tener irregularidades ni pendientes peligrosas.</li><li>Las <strong>aberturas</strong> en los suelos o las paredes y los <strong>desniveles</strong> que supongan riesgo de caída deben protegerse mediante barandillas u otros sistemas de protección y seguridad equivalentes. Los <strong>huecos</strong> de las paredes se protegerán obligatoriamente si la altura de <strong>caída es superior a 2 m</strong>.</li><li>Las <strong>barandillas</strong> de protección han de ser de materiales rígidos y resistentes, tener una altura mínima de <strong>90 cm</strong> y, además, contar con una protección que impida el deslizamiento por debajo de ellas.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La barandilla tiene que llegarte por la cintura (90 cm) y tapar también por abajo, para que nadie se cuele por debajo.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Hueco obligatorio <strong>&gt; 2 m</strong> · barandilla <strong>≥ 90 cm</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cómo deben ser los suelos? ¿Cuándo es obligatorio proteger un hueco y qué altura mínima tiene la barandilla?</p><label class="dom"><input type="checkbox" data-n="4"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c5" data-lv="2">
+<header class="c-h"><span class="c-n">5</span><h3>Escaleras, rampas y vías de circulación</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 3</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Huella</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La parte del escalón donde pisas.</div></li><li><b class="term">Contrahuella</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La altura de cada escalón.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul><li>Las <strong>escaleras</strong> deben tener una anchura mínima de <strong>1 m</strong>, una huella de entre <strong>26 y 36 cm</strong>, y una contrahuella de entre <strong>13 y 23 cm</strong>.</li><li>Las <strong>rampas</strong> tendrán una pendiente máxima del <strong>12 %</strong> cuando alcancen una longitud de hasta 3 m, del <strong>10 %</strong> cuando tengan una longitud de hasta 10 m y del <strong>8 %</strong> en longitudes superiores a 10 m.</li><li>Las vías de circulación tienen que ser utilizadas conforme a su uso previsto y con total seguridad para quienes circulen por ellas.</li><li>Las <strong>puertas exteriores</strong> deben tener una anchura mínima de <strong>80 cm</strong> y los <strong>pasillos</strong>, de <strong>1 m</strong> como mínimo.</li><li>El trazado de las vías de circulación ha de estar <strong>señalizado</strong> con claridad.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Cuanto más larga es la rampa, menos inclinada tiene que ser (12 → 10 → 8 %), porque subirla cansa más.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Rampa: «<strong>3 m → 12 %, 10 m → 10 %, más → 8 %</strong>». Puerta <strong>80 cm</strong>, pasillo y escalera <strong>1 m</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las medidas de escaleras, rampas, puertas exteriores y pasillos.</p><label class="dom"><input type="checkbox" data-n="5"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c6" data-lv="2">
+<header class="c-h"><span class="c-n">6</span><h3>Orden, limpieza, mantenimiento e iluminación</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 3</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Lux</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La unidad con la que se mide cuánta luz llega a un sitio.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><ul><li>El <strong>orden</strong>, la <strong>limpieza</strong> y el <strong>mantenimiento</strong> son básicos para evitar accidentes por caídas y golpes.</li><li>Las zonas de paso, las salidas y las vías de circulación, y en especial las salidas previstas para la evacuación en caso de emergencia, deben permanecer libres de obstáculos.</li><li>Los materiales, herramientas y utensilios que se encuentren en cada puesto de trabajo deben colocarse ordenadamente en los soportes destinados a ellos (bandejas, cajas, estanterías, etc.).</li><li>Los apilamientos de materiales deben ser estables y seguros.</li></ul><p>La <strong>iluminación</strong> debe adaptarse a las características y exigencias de las tareas que se desarrollen. En los lugares de trabajo será, como mínimo, de <strong>100 lux</strong> para tareas con exigencias visuales bajas, <strong>200 lux</strong> para medias, <strong>500 lux</strong> para altas y <strong>1000</strong> para muy altas. En las zonas comunes de uso ocasional habrá un mínimo de 50 lux y 100 lux en las zonas de uso habitual. En las vías de circulación habrá un mínimo 25 lux para de uso ocasional y 50 lux paras las de uso habitual.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Una herramienta tirada en el suelo o una salida bloqueada son accidentes esperando. Y cuanto más fina es la tarea, más luz necesita.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Luz en el puesto: <strong>100 · 200 · 500 · 1000</strong> (baja, media, alta, muy alta).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué dice la norma sobre el orden y la limpieza? Di los lux mínimos según la exigencia visual de la tarea.</p><label class="dom"><input type="checkbox" data-n="6"> Lo domino</label></div>
+</div></article>
+</section>
+<section class="blk" id="b1" data-min="43"><h2 class="blk-h"><span class="bn">BLOQUE 2</span><span class="bt">Los equipos de trabajo</span><span class="bc">⏱ 43 min · Conceptos 7–11 · 3 🔴 · <b class="bd">0</b>/5 dominados</span></h2><article class="cpt lv1" id="c7" data-lv="1">
+<header class="c-h"><span class="c-n">7</span><h3>Equipo de trabajo y máquina</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 4 y vocabulario</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Equipo de trabajo</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Cualquier cosa que usas para trabajar: máquina, aparato, instrumento o instalación.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Cualquier máquina, aparato, instrumento o instalación utilizado en el trabajo.»</div></li><li><b class="term">Máquina</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Un aparato con alguna pieza que se mueve y que no funciona con tu fuerza.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Conjunto de partes o componentes vinculados entre sí, de los cuales al menos uno es móvil, asociados para una aplicación determinada, provisto de un sistema de accionamiento distinto de la fuerza humana o animal.»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Según el <strong>Real Decreto 1215/1997</strong>, un <strong>equipo de trabajo</strong> es cualquier máquina, aparato, instrumento o instalación utilizado en el trabajo.</p><p><strong>Máquina:</strong> conjunto de partes o componentes vinculados entre sí, de los cuales al menos uno es móvil, asociados para una aplicación determinada, provisto de un sistema de accionamiento distinto de la fuerza humana o animal.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Un martillo es un equipo de trabajo, pero no una máquina: lo mueve tu fuerza. Un taladro eléctrico sí es una máquina.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Máquina = <strong>pieza que se mueve + motor que no eres tú</strong>. Equipos = <strong>RD 1215/1997</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es un equipo de trabajo y qué es una máquina? ¿Por qué un martillo no es una máquina?</p><label class="dom"><input type="checkbox" data-n="7"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c8" data-lv="1">
+<header class="c-h"><span class="c-n">8</span><h3>Los riesgos de las máquinas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 4</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Atrapamiento</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Que una parte del cuerpo quede pillada entre piezas que se mueven.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Las máquinas pueden generar una serie de riesgos para la seguridad y salud de las personas trabajadoras. Algunos de los más frecuentes son:</p><div class="tw"><table><thead><tr><th>Riesgo</th><th>Daños</th></tr></thead><tbody><tr><td><strong>Mecánicos: atrapamientos</strong> por partes móviles de las máquinas</td><td>lesiones por aplastamientos y amputaciones</td></tr><tr><td><strong>Mecánicos: cortes y golpes</strong></td><td>lesiones, heridas y amputaciones</td></tr><tr><td><strong>Mecánicos: proyección de partículas</strong> por la rotura de la máquina o proyección de materiales utilizados</td><td>lesiones en la piel o en los ojos</td></tr><tr><td><strong>Eléctricos</strong></td><td>electrización, tetanización, quemaduras, etc.</td></tr><tr><td><strong>Ruidos</strong></td><td>pérdida de audición, estrés, fatiga, etc.</td></tr><tr><td><strong>Térmicos</strong></td><td>quemaduras</td></tr><tr><td><strong>Vibraciones</strong></td><td>trastornos musculoesqueléticos</td></tr><tr><td><strong>Radiaciones</strong></td><td>daños a la vista, a los tejidos, cáncer, cataratas, etc.</td></tr><tr><td><strong>Ergonómicos</strong>: realización de posturas forzadas y movimientos repetitivos</td><td>trastornos musculoesqueléticos</td></tr></tbody></table></div></div>
+<figure><img src="img/d004.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Riesgos del uso de máquinas (diap. 4)"><figcaption>Riesgos del uso de máquinas (diap. 4)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Los mecánicos (atrapamientos, cortes y golpes, proyección de partículas) son los típicos de las máquinas; los demás ya los conoces del tema anterior.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Mecánicos: «<strong>Pillar, Cortar, Saltar</strong>» (atrapamiento, cortes y golpes, partículas).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los riesgos de las máquinas. ¿Cuáles son los mecánicos y qué daños causan?</p><label class="dom"><input type="checkbox" data-n="8"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c9" data-lv="1">
+<header class="c-h"><span class="c-n">9</span><h3>Medidas preventivas de las máquinas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 5</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Resguardo</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Una parte de la máquina que tapa el peligro: carcasa, pantalla, puerta, cubierta.</div></li><li><b class="term">Función de parada</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El botón o sistema para detener la máquina en caso de necesidad.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La principal medida de prevención de los riesgos derivados del uso de máquinas consiste en adquirir <strong>máquinas seguras</strong>, pero para protegerse contra los riesgos conviene adoptar <strong>medidas preventivas</strong>:</p><p><strong>Integradas en la máquina</strong></p><ul><li><strong>Sistemas de protección</strong><ul><li><strong>Resguardos.</strong> Elementos de la máquina que garantizan la protección de la persona trabajadora (carcasa, pantalla, puerta, cubierta, etc.).</li><li><strong>Dispositivos de seguridad.</strong> Elementos distintos del resguardo que eliminan o reducen el riesgo, solos o asociados a un mando.</li></ul></li><li><strong>Advertencias</strong><ul><li><strong>Manuales de instrucciones.</strong> Especificaciones técnicas del fabricante sobre la instalación, la utilización y el mantenimiento.</li><li><strong>Señalización.</strong> De los posibles riesgos o de los equipos de protección que hay que utilizar para desarrollar la actividad profesional.</li></ul></li><li><strong>Dispositivos suplementarios</strong><ul><li><strong>Función de parada.</strong> Todas las máquinas deben tener habilitada esta funcionalidad. Se hará uso de ella en caso de necesidad, por motivos de seguridad o por la falta de funcionamiento de las protecciones.</li></ul></li></ul><p><strong>No integradas en la máquina</strong></p><ul><li>Informar y dar formación a las personas trabajadoras.</li><li>Utilizar los equipos de protección individual.</li><li>Aplicar los métodos apropiados para el desarrollo de las tareas.</li><li>Realizar el mantenimiento periódicamente.</li></ul></div>
+<figure><img src="img/d005.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Medidas preventivas de máquinas y herramientas (diap. 5)"><figcaption>Medidas preventivas de máquinas y herramientas (diap. 5)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Lo mejor es comprar una máquina segura. Lo que va en la propia máquina (resguardos, avisos, parada) protege siempre; lo que no va en ella depende de las personas (formación, EPI, método, mantenimiento).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Integradas: «<strong>Protege, Avisa, Para</strong>». Resguardo = <strong>sistema de protección</strong> (pregunta 4 del test).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuál es la principal medida frente a los riesgos de las máquinas? Clasifica las medidas integradas y no integradas.</p><label class="dom"><input type="checkbox" data-n="9"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c10" data-lv="2">
+<header class="c-h"><span class="c-n">10</span><h3>Las herramientas</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 5</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Marcado CE</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La marca que indica que un producto cumple la normativa europea de seguridad.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los trabajos de mantenimiento y reparación requieren del uso de herramientas, que pueden ser <strong>manuales</strong> (accionadas por la fuerza humana: destornillador, martillo, alicates, etc.) o <strong>portátiles</strong> (con accionamiento eléctrico, neumático o hidráulico).</p><ul><li><strong>Riesgos:</strong> golpes, cortes, pinchazos, proyección de fragmentos o partículas, trastornos musculoesqueléticos, contacto eléctrico.</li><li><strong>Factores de riesgo:</strong> la utilización de las herramientas de forma inadecuada o para un uso diferente del previsto en su diseño; el empleo de herramientas defectuosas o de baja calidad; la falta de mantenimiento; el almacenamiento o el transporte incorrectos.</li><li><strong>Medidas preventivas:</strong> adquirir herramientas con marcado CE; utilizar herramientas diseñadas para su uso; mantener en buen estado las herramientas; transporte adecuado y seguro, protegiendo los filos y las puntas; utilizar equipos de protección cuando sea necesario.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Usar un destornillador como palanca o una herramienta rota es lo que causa el accidente: cada factor de riesgo tiene su medida preventiva enfrente.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Manuales = <strong>tu fuerza</strong>; portátiles = <strong>eléctrico, neumático o hidráulico</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué tipos de herramientas hay? Di sus riesgos, factores de riesgo y medidas preventivas.</p><label class="dom"><input type="checkbox" data-n="10"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c11" data-lv="2">
+<header class="c-h"><span class="c-n">11</span><h3>Equipos con nuevas tecnologías</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 6</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Exoesqueleto</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Un aparato que te pones encima del cuerpo para tener más fuerza y cansarte menos.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>El uso de las nuevas tecnologías está cambiando la forma de trabajar y los entornos de trabajo. Su aplicación supone el uso de <strong>nuevos equipos de trabajo</strong> para reducir los accidentes laborales y mejorar las condiciones de seguridad y salud de las personas, reduciendo los trastornos musculoesqueléticos, al eliminar la manipulación de cargas, las tareas repetitivas, las posturas estáticas y las posturas forzadas.</p><div class="tw"><table><thead><tr><th></th><th>Características</th><th>Riesgos de seguridad</th></tr></thead><tbody><tr><td><strong>Robots</strong></td><td>Son mecanismos programables en dos o más ejes que tienen cierto grado de autonomía, se mueven dentro de su entorno operativo y ejecutan las actividades previstas.</td><td>Golpes y atrapamientos con partes móviles. Contacto eléctrico con partes activas. Proyección de partículas (chispas, salpicaduras). Quemaduras (contacto con partes calientes).</td></tr><tr><td><strong>Drones</strong></td><td>Son aeronaves no tripuladas dirigidas a distancia.</td><td>Caídas al mismo o a diferente nivel por las irregularidades del terreno. Golpes, cortes y atrapamientos con las hélices. Contacto eléctrico, incendio. Explosión de las baterías y proyección de partículas por el movimiento de las hélices.</td></tr><tr><td><strong>Exoesqueletos</strong></td><td>Dispositivos externos portátiles que se colocan sobre el cuerpo del usuario con la finalidad de aumentar sus capacidades y reducir la carga física.</td><td>Caídas y tropiezos, derivados de su uso. Rozaduras y compresiones en los puntos de contacto con el cuerpo si no están adaptados a las características de la persona.</td></tr></tbody></table></div><p>Aun así, estos nuevos equipos, pueden estar en el origen de otros riesgos, que tienen que ver con los procesos que desarrollan.</p></div>
+<figure><img src="img/d006.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Robots, drones y exoesqueletos (diap. 6)"><figcaption>Robots, drones y exoesqueletos (diap. 6)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Las nuevas tecnologías quitan riesgos (cargar peso, repetir movimientos), pero traen otros nuevos propios del aparato.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p><strong>R-D-E</strong>: Robot (pilla y quema), Dron (hélices y batería), Exoesqueleto (roza y tropieza).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué ventajas tienen los equipos con nuevas tecnologías? Di un riesgo de los robots, los drones y los exoesqueletos.</p><label class="dom"><input type="checkbox" data-n="11"> Lo domino</label></div>
+</div></article>
+</section>
+<section class="blk" id="b2" data-min="37"><h2 class="blk-h"><span class="bn">BLOQUE 3</span><span class="bt">El riesgo eléctrico</span><span class="bc">⏱ 37 min · Conceptos 12–15 · 3 🔴 · <b class="bd">0</b>/4 dominados</span></h2><article class="cpt lv1" id="c12" data-lv="1">
+<header class="c-h"><span class="c-n">12</span><h3>Riesgo eléctrico y sus efectos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 7</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Riesgo eléctrico</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El riesgo que viene de la corriente eléctrica.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Según el RD 614/2001, es el originado por la corriente eléctrica.»</div></li><li><b class="term">Fibrilación ventricular</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El corazón deja de latir con ritmo y se mueve sin orden: es lo más grave.</div></li><li><b class="term">Tetanización</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Los músculos se quedan agarrotados y no puedes soltarte.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Según el <strong>Real Decreto 614/2001</strong>, <strong>riesgo eléctrico</strong> es el originado por la corriente eléctrica. Esta definición <strong>incluye los riesgos de</strong>: choque eléctrico por contacto directo, quemaduras, caídas o golpes incendios o explosiones.</p><p><strong>Por el paso de la corriente eléctrica por el cuerpo</strong> · <strong>Directos</strong></p><ul><li><strong>Umbral de percepción</strong>. Se producen cosquilleos. 1-3 mA</li><li><strong>Electrización</strong>. Se producen movimientos reflejos. 3-10 mA</li><li><strong>Tetanización muscular</strong>. La corriente anula la capacidad de control muscular. 10 mA</li><li><strong>Parada respiratoria</strong>. La corriente atraviesa el cerebro. 25 mA</li><li><strong>Asfixia</strong>. La corriente atraviesa los centros nerviosos. Produce el paro respiratorio y quemaduras. 25-35 mA</li><li><strong>Fibrilación ventricular</strong>. La corriente atraviesa el corazón. Consiste en el movimiento anárquico de este órgano. 60-75 mA</li></ul><p><strong>Indirectos:</strong> golpes contra objetos, caídas, etc. <strong>Sin paso de la corriente por el cuerpo, por arco eléctrico:</strong> quemaduras por exposición a arco eléctrico.</p></div>
+<figure><img src="img/d007.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Efectos de la electricidad en el cuerpo humano (diap. 7)"><figcaption>Efectos de la electricidad en el cuerpo humano (diap. 7)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Cuanta más intensidad, más grave: primero cosquillas, luego te quedas pegado (tetanización), luego dejas de respirar y lo peor, el corazón se descontrola (fibrilación).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>«<strong>Cosquilla, Reflejo, Pegado, Sin aire, Asfixia, Corazón loco</strong>». Lo más grave: <strong>fibrilación ventricular</strong> (pregunta 5 del test).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es el riesgo eléctrico? Ordena sus efectos directos de menos a más grave.</p><label class="dom"><input type="checkbox" data-n="12"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c13" data-lv="1">
+<header class="c-h"><span class="c-n">13</span><h3>Los factores que influyen</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositivas 7 y 8</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Intensidad</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>La cantidad de corriente que pasa (se mide en amperios, A, o miliamperios, mA).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los efectos de la corriente eléctrica dependen de su intensidad: intensidad (I) = tensión (V) / resistencia (R)</p><p>Los <strong>factores</strong> que influyen en los efectos del paso de la electricidad por el cuerpo son:</p><ul><li>la <strong>intensidad</strong> de la corriente (a mayor intensidad, lesiones más graves);</li><li>la <strong>duración</strong> del contacto eléctrico (a más duración, mayores daños);</li><li>la <strong>resistencia</strong> que el cuerpo humano opone a la corriente eléctrica;</li><li>el <strong>recorrido</strong> a través del organismo (los efectos son mucho más graves si en el trayecto de la corriente se encuentran órganos vitales, como los pulmones, el corazón o el cerebro);</li><li>la <strong>frecuencia</strong> (corriente continua o alterna).</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Si tu resistencia baja (por ejemplo, con las manos mojadas), pasa más intensidad con la misma tensión: I = V / R.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>«<strong>I-D-R-R-F</strong>»: Intensidad, Duración, Resistencia, Recorrido, Frecuencia.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 5 factores que influyen en los efectos de la electricidad. ¿Qué fórmula relaciona intensidad, tensión y resistencia?</p><label class="dom"><input type="checkbox" data-n="13"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c14" data-lv="1">
+<header class="c-h"><span class="c-n">14</span><h3>Las cinco reglas de oro</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 8</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Realimentación</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Que la corriente vuelva a llegar mientras trabajas, porque alguien reconecta.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Una actividad con riesgo eléctrico y en instalaciones eléctricas debe realizarse: con un <strong>procedimiento determinado</strong> y por <strong>autorizadas o cualificadas</strong> y <strong>sin tensión</strong> siempre que sea posible. La supresión de la tensión debe realizarse siguiendo las denominadas cinco <strong>reglas de oro</strong>:</p><ol><li>Desconectar todas las fuentes de alimentación.</li><li>Prevenir realimentaciones. Se debe evitar cualquier reconexión mediante bloqueos o señalización.</li><li>Verificar la ausencia de tensión en todos los elementos activos de la instalación.</li><li>Realizar la puesta a tierra y en cortocircuito de todas las posibles fuentes de tensión.</li><li>Señalizar la zona de trabajo.</li></ol></div>
+<figure><img src="img/d008.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Las cinco reglas de oro (diap. 8)"><figcaption>Las cinco reglas de oro (diap. 8)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Cortas, bloqueas para que nadie lo vuelva a encender, compruebas que de verdad no hay corriente, conectas a tierra por si acaso y avisas con señales.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>«<strong>Corto, Candado, Compruebo, Tierra, Cartel</strong>». Son <strong>5</strong> (pregunta 7 del test). La primera: <strong>desconectar</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las cinco reglas de oro en orden. ¿Cuál es la primera actuación antes de reparar una máquina con fallos eléctricos?</p><label class="dom"><input type="checkbox" data-n="14"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c15" data-lv="2">
+<header class="c-h"><span class="c-n">15</span><h3>Medidas de prevención y protección eléctrica</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 9</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Interruptor diferencial</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El aparato que corta la luz solo cuando detecta que la corriente se escapa (por ejemplo, por una persona).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los riesgos derivados del uso de instalaciones eléctricas pueden evitarse si se aplican ciertas <strong>medidas de prevención y de protección</strong> sobre las instalaciones, los equipos y las personas trabajadoras:</p><p><strong>Sobre instalaciones y equipos</strong></p><ul><li>Protección contra contactos <strong>directos e indirectos</strong>: uso de tensiones de seguridad: <strong>50 voltios en corriente alterna</strong>; <strong>75 voltios en corriente continua</strong>.</li><li>Protección contra contactos eléctricos <strong>directos</strong>: alejar de las zonas de trabajo las partes activas de las instalaciones; recubrir con aislantes las partes en tensión; interponer obstáculos; usar interruptores diferenciales.</li><li>Protección contra contactos eléctricos <strong>indirectos</strong>: corte automático de la alimentación; separar los circuitos; poner doble aislamiento; puesta a tierra y neutro.</li></ul><p><strong>Sobre las personas trabajadoras</strong></p><ul><li>Medidas informativas: formar e informar sobre los riesgos; señalizar los riesgos.</li><li>Equipos de protección individual: usar equipos aislantes (guantes, botas, etc.); emplear herramientas aislantes (pértigas, alfombras o banquetas aislantes).</li></ul></div>
+<figure><img src="img/d009.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Medidas de prevención y protección eléctrica (diap. 9)"><figcaption>Medidas de prevención y protección eléctrica (diap. 9)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Contacto directo: tocas algo que lleva corriente por diseño (un cable). Indirecto: tocas algo que no debería llevarla pero se ha puesto en tensión por un fallo (la carcasa de una máquina).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Tensiones de seguridad: <strong>50 alterna, 75 continua</strong> («la <strong>A</strong>lterna, menos»).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las medidas contra contactos directos y contra contactos indirectos. ¿Cuáles son las tensiones de seguridad?</p><label class="dom"><input type="checkbox" data-n="15"> Lo domino</label></div>
+</div></article>
+</section>
+<section class="blk" id="b3" data-min="22"><h2 class="blk-h"><span class="bn">BLOQUE 4</span><span class="bt">Los incendios</span><span class="bc">⏱ 22 min · Conceptos 16–17 · 2 🔴 · <b class="bd">0</b>/2 dominados</span></h2><article class="cpt lv1" id="c16" data-lv="1">
+<header class="c-h"><span class="c-n">16</span><h3>Productos de los incendios y sus efectos</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 10</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los <strong>principales productos de los incendios</strong> y los <strong>efectos</strong> que pueden tener sobre las personas son:</p><ul><li><strong>gases tóxicos</strong>: principal causa de muerte en los incendios;</li><li><strong>humos y gases calientes</strong>: pueden producir quemaduras externas o internas por inhalación y dificultar la visión y la evacuación de las personas;</li><li><strong>calor, producido por las llamas</strong>: puede originar deshidratación y bloqueo respiratorio.</li></ul></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>En un incendio mata más el aire que respiras que las propias llamas.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Lo que más mata: <strong>gases tóxicos</strong> (pregunta 8 del test).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 3 productos de los incendios y su efecto. ¿Cuál es la principal causa de muerte?</p><label class="dom"><input type="checkbox" data-n="16"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c17" data-lv="1">
+<header class="c-h"><span class="c-n">17</span><h3>Clases de fuego y agentes extintores</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 10</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Agente extintor</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Lo que se echa para apagar el fuego: agua, espuma, polvo, CO₂…</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Según el tipo de combustible, existen <strong>cinco tipos de fuego</strong>, y para cada uno existe un agente <strong>extintor adecuado</strong>:</p><ul><li><strong>A</strong> Sólidos con brasa (papel y madera)</li><li><strong>B</strong> Líquidos inflamables y sólidos licuables (gasolina y grasa)</li><li><strong>C</strong> Gases inflamables (propano, butano y gas ciudad)</li><li><strong>D</strong> Metales (magnesio, sodio, potasio...)</li><li><strong>F</strong> Grasas y aceites para cocinar</li></ul><div class="tw"><table><thead><tr><th>Agente extintor</th><th>Clases de fuego</th></tr></thead><tbody><tr><td>Agua a chorro</td><td>A adecuado</td></tr><tr><td>Agua pulverizada</td><td>A excelente; B aceptable</td></tr><tr><td>Espuma física</td><td>A adecuado; B adecuado</td></tr><tr><td>Polvo convencional BC</td><td><strong>B excelente</strong>; C adecuado</td></tr><tr><td>Polvo polivalente ABC</td><td>A adecuado; B adecuado; C adecuado</td></tr><tr><td>Anhídrido carbónico</td><td>A aceptable; B aceptable</td></tr><tr><td>Polvos y productos específicos para metales</td><td>D adecuado</td></tr><tr><td>Productos específicos para fuegos de grasas y aceites para cocinar</td><td>F adecuado</td></tr></tbody></table></div></div>
+<figure><img src="img/d010.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Clases de fuego y agente extintor (diap. 10)"><figcaption>Clases de fuego y agente extintor (diap. 10)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Cada combustible pide su extintor. El polvo polivalente ABC vale para casi todo; el agua solo para los sólidos (clase A).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>«<strong>A</strong>rde con brasa, <strong>B</strong>ebe gasolina, <strong>C</strong>ocina de gas, <strong>D</strong>uro metal, <strong>F</strong>reidora». Clase B: el mejor, <strong>polvo BC</strong> (pregunta 11 del test).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di las 5 clases de fuego con su combustible y el mejor agente extintor para la A y para la B.</p><label class="dom"><input type="checkbox" data-n="17"> Lo domino</label></div>
+</div></article>
+</section>
+<section class="blk" id="b4" data-min="55"><h2 class="blk-h"><span class="bn">BLOQUE 5</span><span class="bt">Los riesgos ergonómicos</span><span class="bc">⏱ 55 min · Conceptos 18–23 · 5 🔴 · <b class="bd">0</b>/6 dominados</span></h2><article class="cpt lv1" id="c18" data-lv="1">
+<header class="c-h"><span class="c-n">18</span><h3>Riesgos ergonómicos, carga de trabajo y fatiga</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 11 y vocabulario</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Carga de trabajo</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Todo lo que te exige tu trabajo, en el cuerpo y en la cabeza.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Conjunto de requerimientos, tanto físicos como mentales, a los que se ve sometida la persona trabajadora a lo largo de su jornada laboral.»</div></li><li><b class="term">Fatiga</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>El cansancio que baja tu capacidad después de trabajar un tiempo.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>Riesgos ergonómicos:</strong> son aquellos derivados de la <strong>carga de trabajo</strong>, las <strong>condiciones ambientales</strong> y el <strong>diseño del puesto de trabajo</strong>.</p><p>La <strong>carga de trabajo</strong> es el conjunto de requerimientos, tanto físicos como mentales, a los que se ve sometida la persona trabajadora a lo largo de su jornada laboral.</p><p>La consecuencia más directa de la carga de trabajo es la <strong>fatiga</strong>: disminución de la capacidad física y mental de una persona después de haber desempeñado una tarea durante un periodo de tiempo determinado.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La carga de trabajo tiene dos partes, física y mental, y las dos acaban en lo mismo: fatiga.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Carga <strong>física + mental → fatiga</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿De qué derivan los riesgos ergonómicos? Define carga de trabajo y fatiga.</p><label class="dom"><input type="checkbox" data-n="18"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c19" data-lv="1">
+<header class="c-h"><span class="c-n">19</span><h3>La carga física y los TME</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 11 y vocabulario</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Carga física</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Lo que le exige el trabajo a tu cuerpo.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Son los requerimientos físicos a los que se ve sometida la persona trabajadora.»</div></li><li><b class="term">TME</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Trastornos musculoesqueléticos: lesiones de músculos, tendones, articulaciones, nervios y huesos.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>La carga física:</strong> son los requerimientos físicos a los que se ve sometida la persona trabajadora.</p><p>Como consecuencia de la carga física pueden aparecer <strong>trastornos musculoesqueléticos (TME)</strong>: alteraciones en músculos, articulaciones, tendones, ligamentos, nervios y huesos.</p><ul><li>Tendinitis del manguito rotador.</li><li>Bursitis, epicondilitis (codo de tenista), epitrocleitis.</li><li>Síndrome del túnel carpiano.</li><li>Tendinitis de flexores y extensores.</li><li>Ciática, hernia discal.</li><li>Bursitis.</li><li>Tendinitis del talón de Aquiles.</li></ul></div>
+<figure><img src="img/d011.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Carga de trabajo y trastornos musculoesqueléticos (diap. 11)"><figcaption>Carga de trabajo y trastornos musculoesqueléticos (diap. 11)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Los TME son el «desgaste» del cuerpo por el trabajo: tendinitis, túnel carpiano, hernias…</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>TME ← <strong>carga física</strong> (pregunta 13 del test).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Qué es la carga física y qué consecuencia tiene? Di 3 ejemplos de TME.</p><label class="dom"><input type="checkbox" data-n="19"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c20" data-lv="1">
+<header class="c-h"><span class="c-n">20</span><h3>La postura de trabajo</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 12</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los <strong>factores de riesgo</strong> que están detrás de la carga física son: las posturas que se deben adoptar durante el trabajo, los <strong>movimientos repetitivos</strong> y la <strong>manipulación de cargas</strong>.</p><p>La realización de tareas, a veces en posturas prolongadas o forzadas, puede ocasionar alteraciones musculoesqueléticas. La persona trabajadora debe seguir unas <strong>pautas en función de la postura que debe adoptar</strong>:</p><ul><li><strong>Trabajo sentado:</strong> mantener la espalda recta, apoyada contra el respaldo de la silla, y evitar torsiones del tronco; nivelar la mesa a la altura de los codos; adecuar la altura de la silla al tipo de trabajo, apoyar completamente los pies en el suelo y mantener las rodillas al mismo nivel que la cadera; cambiar de posición y alternar esta postura con otras.</li><li><strong>Trabajo de pie:</strong> colocar el plano de trabajo y las herramientas en el área de trabajo; alternar esta postura con otras para retrasar el cansancio; adecuar la altura del puesto de trabajo a la actividad que se realiza; trabajar con los brazos a la altura de la cintura para no doblar la espalda o agacharse.</li><li><strong>Posturas forzadas:</strong> evitar las posturas inclinadas y los giramientos del tronco; evitar las posturas estáticas y prolongadas de las extremidades superiores e inferiores; evitar los trabajos con las manos por encima de la cabeza.</li></ul><p>Las enfermedades causadas por posturas forzadas y movimientos repetitivos son la <strong>primera causa de enfermedad profesional</strong> en nuestro país. Los <strong>sobresfuerzos</strong> son la <strong>primera causa de accidentes de trabajo</strong>.</p></div>
+<figure><img src="img/d012.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Pautas para el trabajo sentado, de pie y en posturas forzadas (diap. 12)"><figcaption>Pautas para el trabajo sentado, de pie y en posturas forzadas (diap. 12)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La regla de oro de todas: cambiar de postura. Y que la mesa o el puesto se adapten a ti, no tú a ellos.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Factores de la carga física: «<strong>Postura, Repetir, Cargar</strong>». Posturas y repetición = <strong>1.ª enfermedad profesional</strong>; sobresfuerzos = <strong>1.º accidente</strong>.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 3 factores de riesgo de la carga física y las pautas para el trabajo sentado.</p><label class="dom"><input type="checkbox" data-n="20"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c21" data-lv="1">
+<header class="c-h"><span class="c-n">21</span><h3>La manipulación de cargas</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 13</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Dorsolumbar</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>De la espalda, sobre todo la parte baja (lumbares).</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p><strong>La manipulación de cargas:</strong> es cualquier operación de transporte o sujeción de estas por parte de una o varias personas trabajadoras que, por las características de la carga o por hacerse en condiciones ergonómicas inadecuadas, entraña riesgos dorsolumbares.</p><p><strong>Lo que se debe hacer:</strong></p><ul><li>Colocarse cerca de la carga con los pies separados a la altura de los hombros.</li><li>Agacharse doblando las rodillas, con la espalda recta, y sujetar la carga con los brazos estirados y pegados al cuerpo.</li><li>Levantar la carga enderezando las piernas y manteniendo la espalda recta.</li></ul><p><strong>Lo que no se debe hacer:</strong></p><ul><li>Doblar la espalda y dar tirones bruscos al levantarse.</li><li>Levantar la carga pesada por encima de la cintura con un solo movimiento.</li><li>Girar la cintura mientras se sujeta la carga, ya que hay que girar todo el cuerpo moviendo los pies.</li></ul></div>
+<figure><img src="img/d013.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Manipulación manual correcta de cargas (diap. 13)"><figcaption>Manipulación manual correcta de cargas (diap. 13)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>La fuerza la hacen las piernas, no la espalda: rodillas dobladas, espalda recta y la carga pegada al cuerpo.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>«<strong>Cerca, Rodillas, Recta, Pegada</strong>». Y para girar, <strong>mueve los pies</strong>, no la cintura.</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Define manipulación de cargas. ¿Cómo se levanta bien una carga y qué no se debe hacer?</p><label class="dom"><input type="checkbox" data-n="21"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv2" id="c22" data-lv="2">
+<header class="c-h"><span class="c-n">22</span><h3>Los movimientos repetitivos</h3></header>
+<div class="c-meta"><span class="tag lv2">🟠 IMPORTANTE</span><span class="srcl">📍 Diapositiva 13</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Osteomuscular</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>De los huesos y los músculos.</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Un movimiento es repetitivo cuando se realiza de forma continua e <strong>implica al mismo conjunto osteomuscular</strong>, lo que puede acabar provocando fatiga muscular acumulada, sobrecarga, dolor y, por último, lesión.</p><p>Las tareas con movimientos repetitivos son comunes en los trabajos en <strong>cadenas de montaje</strong>, en los talleres de reparación, en la industria agroalimentaria, en los trabajos administrativos (...).</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>No es un gran esfuerzo, sino el mismo pequeño gesto mil veces: fatiga, sobrecarga, dolor y lesión (como la tendinitis de muñeca de un montador).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Escalera del daño: «<strong>Fatiga → Sobrecarga → Dolor → Lesión</strong>».</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuándo es repetitivo un movimiento, a qué puede llevar y en qué trabajos es común?</p><label class="dom"><input type="checkbox" data-n="22"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c23" data-lv="1">
+<header class="c-h"><span class="c-n">23</span><h3>La carga mental</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 14 y vocabulario</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Carga mental</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Lo que te exige el trabajo a la cabeza.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Nivel de actividad mental o de esfuerzo intelectual necesario para desarrollar el trabajo al que se ve sometida la persona trabajadora a lo largo de su jornada laboral.»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>La <strong>carga mental</strong> es el nivel de actividad mental o de esfuerzo intelectual necesario para desarrollar el trabajo al que se ve sometida la persona trabajadora a lo largo de su jornada laboral.</p><p>Viene determinada por la relación que se establece entre las <strong>exigencias del trabajo</strong> (que dependen de la cantidad de información que se recibe, la complejidad de la respuesta que se requiere y el tiempo de respuesta que se tiene) y las <strong>características individuales de la persona</strong> que realiza la tarea, las condiciones ambientales del puesto de trabajo y factores psicosociales.</p><p>El principal efecto de la carga mental es la <strong>fatiga mental</strong>.</p></div>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Mucha información, respuestas complicadas y poco tiempo para darlas: así se llena la cabeza. Y no afecta igual a todo el mundo.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Exigencias: «<strong>Cuánta info, qué complicado, cuánto tiempo</strong>». La cantidad de información es carga <strong>mental</strong>, no física (pregunta 12 del test).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Define carga mental. ¿De qué dependen las exigencias del trabajo y cuál es su principal efecto?</p><label class="dom"><input type="checkbox" data-n="23"> Lo domino</label></div>
+</div></article>
+</section>
+<section class="blk" id="b5" data-min="31"><h2 class="blk-h"><span class="bn">BLOQUE 6</span><span class="bt">Los riesgos psicosociales</span><span class="bc">⏱ 31 min · Conceptos 24–26 · 3 🔴 · <b class="bd">0</b>/3 dominados</span></h2><article class="cpt lv1" id="c24" data-lv="1">
+<header class="c-h"><span class="c-n">24</span><h3>Factores de riesgo, riesgos y daños</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 15 y vocabulario</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Factores de riesgo psicosocial</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Cómo está organizado y dirigido el trabajo, cuando está mal hecho y puede dañarte.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Aspectos de la Eª y dirección del trabajo y su entorno social que, por una configuración deficiente o un mal diseño, presentan la probabilidad de afectar negativamente a la salud y el bienestar de las personas.»</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Para entender mejor cómo se generan estos riesgos se deben diferenciar los conceptos de <strong>factores de riesgos psicosociales, riesgos psicosociales</strong> y <strong>daños</strong>:</p><ul><li><strong>Factores de riesgos psicosociales:</strong> son los aspectos de la organización y dirección del trabajo y de su entorno social que, por una configuración deficiente o un diseño inadecuado, presentan la probabilidad de afectar negativamente a la salud y el bienestar de las personas trabajadoras.</li><li><strong>Riesgos psicosociales:</strong> estrés laboral, violencia, fatiga.</li><li><strong>Daños:</strong> trastornos emocionales: ansiedad, depresión, etc. · trastornos fisiológicos: aumento de la tensión, bulimia, cefalea, etc. · trastornos conductuales: adicciones, tecnoadicciones, etc. · trastornos sociales: aislamiento, conflictos interpersonales, agresiones, etc.</li></ul><p>La <strong>Agencia Europea para la Seguridad y la Salud en el Trabajo</strong> considera como factores de riesgo psicosocial aquellos aspectos del diseño, la organización y la dirección del trabajo, y de su entorno social, que puedan causar daños físicos, sociales o psicológicos.</p></div>
+<figure><img src="img/d015.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Factores de riesgo, riesgos psicosociales y daños (diap. 15)"><figcaption>Factores de riesgo, riesgos psicosociales y daños (diap. 15)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Es una cadena: un factor (un jefe que critica a diario, horarios eternos) → un riesgo (estrés) → un daño (ansiedad, no dormir).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>«<strong>Factor → Riesgo → Daño</strong>». Psicosociales = <strong>organización del trabajo</strong> (preguntas 14 y 15 del test).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Diferencia factor de riesgo psicosocial, riesgo psicosocial y daño, con un ejemplo de cada uno.</p><label class="dom"><input type="checkbox" data-n="24"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c25" data-lv="1">
+<header class="c-h"><span class="c-n">25</span><h3>Estrés, violencia y fatiga</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 16 y vocabulario</span></div>
+<div class="c-body">
+<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul><li><b class="term">Estrés relacionado con el trabajo</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Lo que sientes cuando el trabajo te pide más de lo que puedes dar.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Respuesta física y emocional a un desajuste entre las demandas laborales y las características de la persona trabajadora para hacer frente a estas exigencias.»</div></li><li><b class="term">Acoso laboral</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Violencia psicológica muy fuerte de alguien con más poder.</div><div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«Ejercicio de violencia psicológica extrema infligida por una o más personas sobre otra, en el ámbito laboral, respecto de la que existe una relación asimétrica* de poder.»</div></li><li><b class="term">Burnout</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>Estrés crónico: el «síndrome del quemado».</div></li></ul></div>
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los riesgos psicosociales son principalmente el <strong>estrés laboral</strong>, la <strong>violencia laboral</strong> y la <strong>fatiga</strong> derivada de la organización y ordenación del trabajo.</p><ul><li><strong>Estrés:</strong> estrés; estrés crónico o <strong>burnout</strong>; tecnoestrés.</li><li><strong>Violencia laboral:</strong> acoso psicológico en el trabajo (APT), acoso sexual, acoso discriminatorio; violencia física.</li><li><strong>Fatiga:</strong> derivada de la ordenación del tiempo de trabajo: por exceso de tiempo de trabajo; por falta de descanso.</li></ul><p>El <strong>estrés relacionado con el trabajo</strong>: es la respuesta física y emocional a un desajuste entre las demandas laborales y las características de la persona trabajadora para hacer frente a estas exigencias.</p><p>El <strong>acoso laboral en el trabajo (mobbing)</strong>: es una forma de violencia psicológica. Acoso laboral: ejercicio de violencia psicológica extrema infligida por una o más personas sobre otra, en el ámbito laboral, respecto de la que existe una relación asimétrica* de poder. (desigual, otro estatus…)</p></div>
+<figure><img src="img/d016.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Riesgos psicosociales en el trabajo (diap. 16)"><figcaption>Riesgos psicosociales en el trabajo (diap. 16)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>El acoso no tiene que ser de jefe a empleado: basta con que una parte tenga más poder (relación asimétrica). Y el burnout es estrés que se ha hecho crónico.</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>Burnout = <strong>estrés</strong> · mobbing = <strong>violencia</strong> · asimétrica = <strong>desigual</strong> (preguntas 16, 17 y 18 del test).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">¿Cuáles son los 3 riesgos psicosociales principales? Define estrés laboral y acoso laboral.</p><label class="dom"><input type="checkbox" data-n="25"> Lo domino</label></div>
+</div></article>
+<article class="cpt lv1" id="c26" data-lv="1">
+<header class="c-h"><span class="c-n">26</span><h3>Medidas frente a los riesgos psicosociales</h3></header>
+<div class="c-meta"><span class="tag lv1">🔴 IMPRESCINDIBLE</span><span class="srcl">📍 Diapositiva 17</span></div>
+<div class="c-body">
+<p class="lbl prof">📋 Lo que dice la profe</p>
+<div class="prof-t"><p>Los riesgos psicosociales <strong>son diferentes en cada empresa u organización</strong>. Se trata de buscar el <strong>equilibrio</strong> entre las condiciones laborales y el factor humano, con el fin de evitar la aparición de consecuencias negativas tanto sobre la salud de la plantilla como sobre la organización.</p><ul><li><strong>Medidas organizativas:</strong> van dirigidas al foco u origen del problema, para tratar de eliminar o reducir el factor de riesgo o proporcionar más recursos. Estas medidas actúan sobre la organización. Medidas: reorganización del trabajo (rotación, dotación de más recursos, etc.), mejora de la comunicación, ordenación del tiempo de trabajo, procedimientos de gestión de conflictos, prevención de violencias, etc.</li><li><strong>Medidas de afrontamiento:</strong> dirigidas a que la persona trabajadora pueda adquirir prácticas y conocimientos suficientes para afrontar los factores de riesgo psicosocial a los que está expuesto. Medidas: acciones de información y formación, desarrollo y aplicación de procedimientos o protocolos de acoso, códigos éticos, canales de denuncia, etc.</li><li><strong>Medidas de rehabilitación:</strong> dirigidas a la recuperación y rehabilitación de las personas trabajadoras que hayan sufrido daños en la salud derivados de la exposición a riesgos psicosociales. Medidas: adaptación del puesto de trabajo, cambio de funciones, mejora de los recursos, etc.</li></ul></div>
+<figure><img src="img/d017.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Medidas preventivas frente a los riesgos psicosociales (diap. 17)"><figcaption>Medidas preventivas frente a los riesgos psicosociales (diap. 17)</figcaption></figure>
+<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>Antes (cambiar la organización), durante (dar herramientas a la persona) y después (ayudar a recuperarse a quien ya está dañado).</p></div>
+<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>«<strong>O-A-R</strong>»: Organizativas (foco), Afrontamiento (persona), Rehabilitación (después).</p></div>
+<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">Di los 3 tipos de medidas frente a los riesgos psicosociales, a quién se dirigen y un ejemplo de cada uno.</p><label class="dom"><input type="checkbox" data-n="26"> Lo domino</label></div>
+</div></article>
+</section>
+<p class="empty" id="empty" hidden>No hay conceptos con ese filtro o esa búsqueda.</p><section class="xs" id="trampas"><h2 class="xs-h">⚠️ Trampas típicas del examen</h2><div class="tw"><table><thead><tr><th>No confundas…</th><th>…con…</th><th>Cómo diferenciarlos</th></tr></thead><tbody><tr><td><strong>Manipulación de cargas</strong></td><td><strong>Condiciones de seguridad</strong></td><td>Las cargas son riesgo ergonómico, no de seguridad (pregunta 1)</td></tr><tr><td><strong>2 m²</strong> de superficie</td><td><strong>10 m³</strong> de volumen</td><td>El volumen libre por persona es 10 m³ (pregunta 2)</td></tr><tr><td><strong>Contacto directo</strong> (elemento activo)</td><td><strong>Contacto indirecto</strong> (puesto accidentalmente en tensión)</td><td>Directo: el cable; indirecto: la carcasa que no debería tener corriente</td></tr><tr><td><strong>Tetanización</strong> (10 mA)</td><td><strong>Fibrilación ventricular</strong> (60-75 mA)</td><td>La más grave es la fibrilación</td></tr><tr><td><strong>Polvo convencional BC</strong></td><td><strong>Polvo polivalente ABC</strong></td><td>BC: excelente en clase B; ABC: adecuado en A, B y C</td></tr><tr><td><strong>Carga física</strong> (postura, repetición, cargas)</td><td><strong>Carga mental</strong> (información, complejidad, tiempo)</td><td>La cantidad de información es mental (pregunta 12)</td></tr><tr><td><strong>Riesgos ergonómicos</strong> (carga física y mental)</td><td><strong>Riesgos psicosociales</strong> (organización del trabajo)</td><td>La organización del trabajo es psicosocial (preguntas 14 y 15)</td></tr><tr><td><strong>Burnout</strong></td><td><strong>Mobbing</strong></td><td>Burnout = estrés crónico; mobbing = violencia psicológica</td></tr></tbody></table></div></section><section class="xs" id="numeros"><h2 class="xs-h">🔢 Números clave (apréndelos como una tabla de multiplicar)</h2><div class="tw"><table><thead><tr><th>Número</th><th>Qué es</th></tr></thead><tbody><tr><td><strong>3 m (2,5 m)</strong></td><td>Altura mínima del suelo al techo (oficinas y comercios: 2,5)</td></tr><tr><td><strong>2 m² y 10 m³</strong></td><td>Superficie libre y volumen no ocupado por trabajador</td></tr><tr><td><strong>2 m</strong></td><td>Altura de caída a partir de la que es obligatorio proteger los huecos</td></tr><tr><td><strong>90 cm</strong></td><td>Altura mínima de las barandillas</td></tr><tr><td><strong>1 m · 26-36 cm · 13-23 cm</strong></td><td>Escaleras: anchura, huella y contrahuella</td></tr><tr><td><strong>12 % · 10 % · 8 %</strong></td><td>Pendiente máxima de rampas de hasta 3 m, hasta 10 m y más de 10 m</td></tr><tr><td><strong>80 cm · 1 m</strong></td><td>Puertas exteriores · pasillos</td></tr><tr><td><strong>100 · 200 · 500 · 1000 lux</strong></td><td>Iluminación según exigencia visual baja, media, alta y muy alta</td></tr><tr><td><strong>1-3 · 3-10 · 10 · 25 · 25-35 · 60-75 mA</strong></td><td>Percepción · electrización · tetanización · parada respiratoria · asfixia · fibrilación</td></tr><tr><td><strong>5</strong></td><td>Reglas de oro · clases de fuego</td></tr><tr><td><strong>50 V / 75 V</strong></td><td>Tensiones de seguridad en alterna / continua</td></tr><tr><td><strong>RD 486/1997 · 1215/1997 · 614/2001</strong></td><td>Lugares de trabajo · equipos de trabajo · riesgo eléctrico</td></tr></tbody></table></div></section><section class="xs" id="chequeo"><h2 class="xs-h">✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)</h2><ol><li>¿Qué son los riesgos derivados de las condiciones de seguridad y por qué 4 cosas pueden estar originados? (Bloque 1)</li><li>¿Qué es un equipo de trabajo y qué es una máquina? ¿Por qué un martillo no es una máquina? (Bloque 2)</li><li>¿Qué es el riesgo eléctrico? Ordena sus efectos directos de menos a más grave. (Bloque 3)</li><li>Di los 3 productos de los incendios y su efecto. ¿Cuál es la principal causa de muerte? (Bloque 4)</li><li>¿De qué derivan los riesgos ergonómicos? Define carga de trabajo y fatiga. (Bloque 5)</li><li>Diferencia factor de riesgo psicosocial, riesgo psicosocial y daño, con un ejemplo de cada uno. (Bloque 6)</li></ol></section><section class="xs" id="impres"><h2 class="xs-h">⚡ Lo imprescindible (repaso exprés)</h2><p class="meta">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><h3 class='ih'>1 · Test del tema 4 (de la profe), con la respuesta según las diapositivas</h3><details class="pq"><summary>1. ¿Cuál no es un factor de riesgo derivado de las condiciones de seguridad?</summary><div class="pa"><p><strong>b) La manipulación de cargas</strong>: es un factor de la carga física (riesgo ergonómico). Los de seguridad son lugares, equipos, electricidad e incendios.</p></div></details><details class="pq"><summary>2. Volumen libre por persona trabajadora</summary><div class="pa"><p><strong>a) 10 m³</strong> no ocupados por cada persona (2 m² es la superficie).</p></div></details><details class="pq"><summary>3. Principales riesgos asociados al uso de máquinas</summary><div class="pa"><p><strong>c) Mecánicos</strong>: atrapamientos, cortes y golpes, proyección de partículas.</p></div></details><details class="pq"><summary>4. Los resguardos de protección en las máquinas son…</summary><div class="pa"><p><strong>c) Sistemas de protección</strong> integrados en la máquina.</p></div></details><details class="pq"><summary>5. Daño más grave del paso de la corriente por el cuerpo</summary><div class="pa"><p><strong>b) La fibrilación ventricular</strong> (60-75 mA, la corriente atraviesa el corazón).</p></div></details><details class="pq"><summary>6. Contacto con un elemento puesto en tensión</summary><div class="pa"><p>Según la diapositiva, el contacto <strong>directo</strong> es con elementos activos y el <strong>indirecto</strong>, con elementos <strong>puestos accidentalmente en tensión</strong>: por eso la respuesta es <strong>b) contacto indirecto</strong>. ⚠️ Si la profe da otra, apúntala.</p></div></details><details class="pq"><summary>7. Para trabajar sin tensión se aplican…</summary><div class="pa"><p><strong>b) Las cinco reglas de oro.</strong></p></div></details><details class="pq"><summary>8. Los efectos más graves de los incendios los provocan…</summary><div class="pa"><p><strong>c) Los gases tóxicos</strong>: principal causa de muerte.</p></div></details><details class="pq"><summary>9. Para dar lugar al tetraedro del fuego es necesario…</summary><div class="pa"><p>⚠️ No viene en las diapositivas. Lo general: el tetraedro es el triángulo del fuego (combustible, comburente, energía de activación) más la <strong>reacción en cadena</strong>; por eso la respuesta es <strong>c)</strong>.</p></div></details><details class="pq"><summary>10. Para un incendio eléctrico no se usa nunca…</summary><div class="pa"><p>⚠️ La tabla no trata los fuegos eléctricos. Lo general: <strong>c) agua</strong>, porque conduce la electricidad.</p></div></details><details class="pq"><summary>11. El mejor agente para fuegos de clase B</summary><div class="pa"><p><strong>b) El polvo BC</strong>: «excelente» en la tabla.</p></div></details><details class="pq"><summary>12. No es un factor de la carga física</summary><div class="pa"><p><strong>b) La cantidad de información que se maneja</strong>: es carga mental.</p></div></details><details class="pq"><summary>13. Los TME son consecuencia de…</summary><div class="pa"><p><strong>a) La carga física de trabajo.</strong></p></div></details><details class="pq"><summary>14. No son riesgos ergonómicos los derivados de…</summary><div class="pa"><p><strong>c) La organización del trabajo</strong>: eso es psicosocial.</p></div></details><details class="pq"><summary>15. Los riesgos psicosociales se deben principalmente a…</summary><div class="pa"><p><strong>c) La organización del trabajo.</strong></p></div></details><details class="pq"><summary>16. El acoso laboral es…</summary><div class="pa"><p><strong>c) Un tipo de violencia en el trabajo.</strong></p></div></details><details class="pq"><summary>17. El burnout es…</summary><div class="pa"><p><strong>a) Una forma de estrés</strong> (estrés crónico).</p></div></details><details class="pq"><summary>18. El acoso laboral se ejerce…</summary><div class="pa"><p><strong>c) Siempre que haya una relación asimétrica de poder.</strong></p></div></details></section><section class="xs" id="glosario"><h2 class="xs-h">📖 Glosario (palabras importantes, por orden alfabético)</h2><div class="tw"><table><thead><tr><th>Término</th><th>Qué significa</th></tr></thead><tbody><tr><td><strong>Acoso laboral</strong></td><td>Violencia psicológica muy fuerte de alguien con más poder.</td></tr><tr><td><strong>Agente extintor</strong></td><td>Lo que se echa para apagar el fuego: agua, espuma, polvo, CO₂…</td></tr><tr><td><strong>Atrapamiento</strong></td><td>Que una parte del cuerpo quede pillada entre piezas que se mueven.</td></tr><tr><td><strong>Barandilla</strong></td><td>La protección que impide caerse por un hueco o un desnivel.</td></tr><tr><td><strong>Burnout</strong></td><td>Estrés crónico: el «síndrome del quemado».</td></tr><tr><td><strong>Carga de trabajo</strong></td><td>Todo lo que te exige tu trabajo, en el cuerpo y en la cabeza.</td></tr><tr><td><strong>Carga física</strong></td><td>Lo que le exige el trabajo a tu cuerpo.</td></tr><tr><td><strong>Carga mental</strong></td><td>Lo que te exige el trabajo a la cabeza.</td></tr><tr><td><strong>Condiciones de seguridad</strong></td><td>Lo que hay en el trabajo (suelos, máquinas, cables, fuego…) que puede provocar un accidente.</td></tr><tr><td><strong>Contrahuella</strong></td><td>La altura de cada escalón.</td></tr><tr><td><strong>Dorsolumbar</strong></td><td>De la espalda, sobre todo la parte baja (lumbares).</td></tr><tr><td><strong>Equipo de trabajo</strong></td><td>Cualquier cosa que usas para trabajar: máquina, aparato, instrumento o instalación.</td></tr><tr><td><strong>Estrés relacionado con el trabajo</strong></td><td>Lo que sientes cuando el trabajo te pide más de lo que puedes dar.</td></tr><tr><td><strong>Exoesqueleto</strong></td><td>Un aparato que te pones encima del cuerpo para tener más fuerza y cansarte menos.</td></tr><tr><td><strong>Factores de riesgo psicosocial</strong></td><td>Cómo está organizado y dirigido el trabajo, cuando está mal hecho y puede dañarte.</td></tr><tr><td><strong>Fatiga</strong></td><td>El cansancio que baja tu capacidad después de trabajar un tiempo.</td></tr><tr><td><strong>Fibrilación ventricular</strong></td><td>El corazón deja de latir con ritmo y se mueve sin orden: es lo más grave.</td></tr><tr><td><strong>Función de parada</strong></td><td>El botón o sistema para detener la máquina en caso de necesidad.</td></tr><tr><td><strong>Huella</strong></td><td>La parte del escalón donde pisas.</td></tr><tr><td><strong>Intensidad</strong></td><td>La cantidad de corriente que pasa (se mide en amperios, A, o miliamperios, mA).</td></tr><tr><td><strong>Interruptor diferencial</strong></td><td>El aparato que corta la luz solo cuando detecta que la corriente se escapa (por ejemplo, por una persona).</td></tr><tr><td><strong>Lugares de trabajo</strong></td><td>Todas las zonas del trabajo donde estás o a las que vas, tengan techo o no.</td></tr><tr><td><strong>Lux</strong></td><td>La unidad con la que se mide cuánta luz llega a un sitio.</td></tr><tr><td><strong>Máquina</strong></td><td>Un aparato con alguna pieza que se mueve y que no funciona con tu fuerza.</td></tr><tr><td><strong>Marcado CE</strong></td><td>La marca que indica que un producto cumple la normativa europea de seguridad.</td></tr><tr><td><strong>Osteomuscular</strong></td><td>De los huesos y los músculos.</td></tr><tr><td><strong>Realimentación</strong></td><td>Que la corriente vuelva a llegar mientras trabajas, porque alguien reconecta.</td></tr><tr><td><strong>Resguardo</strong></td><td>Una parte de la máquina que tapa el peligro: carcasa, pantalla, puerta, cubierta.</td></tr><tr><td><strong>Riesgo eléctrico</strong></td><td>El riesgo que viene de la corriente eléctrica.</td></tr><tr><td><strong>Tetanización</strong></td><td>Los músculos se quedan agarrotados y no puedes soltarte.</td></tr><tr><td><strong>TME</strong></td><td>Trastornos musculoesqueléticos: lesiones de músculos, tendones, articulaciones, nervios y huesos.</td></tr></tbody></table></div></section>
+<div class="tpill" id="tpill" hidden role="timer" aria-live="off"><span class="tp-txt"><span class="tp-b" id="tpB"></span><span class="tp-t" id="tpT">00:00</span></span><button type="button" id="tpPause">Pausa</button><button type="button" class="fin" id="tpFin">✓ Terminé</button><button type="button" class="x" id="tpX" aria-label="Cancelar temporizador">✕</button><span class="tp-bar"><i id="tpBar"></i></span></div>
+<aside class="drw" id="drw" aria-label="Índice"><div class="drw-h"><b>📑 Índice</b><button type="button" class="drw-x" id="drwClose" aria-label="Cerrar índice">×</button></div>
+<div class="drw-tools"><a class="dt big" href="../../">← Mi carrera</a><button type="button" class="dt big" id="fcOpen2">🃏 Tarjetas</button><button type="button" class="dt" id="planOpen2">📅 Mi plan</button><button type="button" class="dt" id="openAll">Abrir todo</button><button type="button" class="dt" id="closeAll">Cerrar todo</button></div><div class="drw-l">
+<details class="db"><summary><span class="dn">1</span><span class="dt2">Condiciones de seguridad: los lugares de trabajo</span><span class="dc" data-b="b0">0/6</span></summary><a class="dbk" href="#b0">Ir al inicio del bloque</a><a class="dl i1" href="#c1"><i></i>1. Riesgos derivados de las condiciones de seguridad</a><a class="dl i1" href="#c2"><i></i>2. Los lugares de trabajo y sus riesgos</a><a class="dl i1" href="#c3"><i></i>3. Espacios de trabajo y zonas peligrosas</a><a class="dl i1" href="#c4"><i></i>4. Suelos, aberturas, desniveles y barandillas</a><a class="dl i2" href="#c5"><i></i>5. Escaleras, rampas y vías de circulación</a><a class="dl i2" href="#c6"><i></i>6. Orden, limpieza, mantenimiento e iluminación</a></details>
+<details class="db"><summary><span class="dn">2</span><span class="dt2">Los equipos de trabajo</span><span class="dc" data-b="b1">0/5</span></summary><a class="dbk" href="#b1">Ir al inicio del bloque</a><a class="dl i1" href="#c7"><i></i>7. Equipo de trabajo y máquina</a><a class="dl i1" href="#c8"><i></i>8. Los riesgos de las máquinas</a><a class="dl i1" href="#c9"><i></i>9. Medidas preventivas de las máquinas</a><a class="dl i2" href="#c10"><i></i>10. Las herramientas</a><a class="dl i2" href="#c11"><i></i>11. Equipos con nuevas tecnologías</a></details>
+<details class="db"><summary><span class="dn">3</span><span class="dt2">El riesgo eléctrico</span><span class="dc" data-b="b2">0/4</span></summary><a class="dbk" href="#b2">Ir al inicio del bloque</a><a class="dl i1" href="#c12"><i></i>12. Riesgo eléctrico y sus efectos</a><a class="dl i1" href="#c13"><i></i>13. Los factores que influyen</a><a class="dl i1" href="#c14"><i></i>14. Las cinco reglas de oro</a><a class="dl i2" href="#c15"><i></i>15. Medidas de prevención y protección eléctrica</a></details>
+<details class="db"><summary><span class="dn">4</span><span class="dt2">Los incendios</span><span class="dc" data-b="b3">0/2</span></summary><a class="dbk" href="#b3">Ir al inicio del bloque</a><a class="dl i1" href="#c16"><i></i>16. Productos de los incendios y sus efectos</a><a class="dl i1" href="#c17"><i></i>17. Clases de fuego y agentes extintores</a></details>
+<details class="db"><summary><span class="dn">5</span><span class="dt2">Los riesgos ergonómicos</span><span class="dc" data-b="b4">0/6</span></summary><a class="dbk" href="#b4">Ir al inicio del bloque</a><a class="dl i1" href="#c18"><i></i>18. Riesgos ergonómicos, carga de trabajo y fatiga</a><a class="dl i1" href="#c19"><i></i>19. La carga física y los TME</a><a class="dl i1" href="#c20"><i></i>20. La postura de trabajo</a><a class="dl i1" href="#c21"><i></i>21. La manipulación de cargas</a><a class="dl i2" href="#c22"><i></i>22. Los movimientos repetitivos</a><a class="dl i1" href="#c23"><i></i>23. La carga mental</a></details>
+<details class="db"><summary><span class="dn">6</span><span class="dt2">Los riesgos psicosociales</span><span class="dc" data-b="b5">0/3</span></summary><a class="dbk" href="#b5">Ir al inicio del bloque</a><a class="dl i1" href="#c24"><i></i>24. Factores de riesgo, riesgos y daños</a><a class="dl i1" href="#c25"><i></i>25. Estrés, violencia y fatiga</a><a class="dl i1" href="#c26"><i></i>26. Medidas frente a los riesgos psicosociales</a></details>
+
+<p class="dx">Extras</p><a class="dl" href="#trampas">⚠️ Trampas típicas del examen</a><a class="dl" href="#numeros">🔢 Números clave (apréndelos como una tabla de multiplicar)</a><a class="dl" href="#chequeo">✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)</a><a class="dl" href="#impres">⚡ Lo imprescindible</a><a class="dl" href="#glosario">📖 Glosario (palabras importantes, por orden alfabético)</a></div></aside><div id="planOv" hidden role="dialog" aria-modal="true" aria-label="Mi plan de estudio"><div class="pwrap">
+<div class="ptop"><header><p class="eyebrow" id="pl_eb"></p><h1>📅 Mi plan de estudio</h1><p class="sub" id="pl_sub"></p></header><button type="button" class="px" id="planClose" aria-label="Cerrar plan">×</button></div>
+<section class="count" id="pl_count"></section>
+<section class="cfg">
+  <div><p class="k" style="margin:0 0 6px">📆 Fecha del examen</p><input type="date" id="pl_fecha" style="font:inherit;font-size:16px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 8px"></div>
+  <div><p class="k" style="margin:0 0 6px">1 · ¿Cuántos días vas a estudiar?</p><div class="days" id="pl_days"></div></div>
+  <div><p class="k" style="margin:0 0 6px">2 · ¿Cuándo empiezas?</p><div class="seg" id="pl_startSeg"></div></div>
+  <p class="foot" style="margin:0">Cambia la hora de inicio y fin de cada día si hace falta: el plan se reparte solo según el tiempo que tengas.</p>
+</section>
+<div id="pl_msg"></div>
+<div id="pl_plan" style="display:flex;flex-direction:column;gap:14px"></div>
+<p class="foot">Toca <b>Ir →</b> para saltar a esa parte del repaso. Marca la casilla cuando termines cada tarea. Se guarda en este móvil.</p>
+</div></div>
+<div class="scrim" id="scrim" hidden></div><button type="button" class="fab hf" id="hideFab" aria-pressed="false"><span class="sw" aria-hidden="true"><i></i></span><span id="hideFabTxt">Tapar</span></button><button type="button" class="fab" id="fcOpen">🃏 Tarjetas</button><button type="button" class="fab idx" id="drwOpen" aria-label="Abrir índice">☰ Índice</button><button type="button" class="fab up" id="upBtn" aria-label="Volver arriba" hidden>⬆</button>
+<div class="fc" id="fc" hidden role="dialog" aria-modal="true" aria-labelledby="fcTitle"><div class="fc-in">
+ <div class="fc-top"><h2 id="fcTitle">🃏 Tarjetas de preguntas</h2><button type="button" class="fc-x" id="fcClose" aria-label="Cerrar">×</button></div>
+ <div class="fc-setup" id="fcSetup">
+  <p class="meta" style="margin:0">Pregunta por delante, respuesta por detrás. Toca la tarjeta para <b>encender la luz 💡</b> y darle la vuelta. Luego di si te la sabías.</p>
+  <p class="lbl">1 · ¿Qué bloque?</p><div class="opts" id="oBlk"></div>
+  <p class="lbl">2 · ¿Qué preguntas?</p><div class="opts" id="oKind"></div>
+  <p class="lbl">3 · ¿Cuáles?</p><div class="opts" id="oLv"></div>
+  <button type="button" class="go" id="fcGo">Empezar</button>
+ </div>
+ <div id="fcPlay" hidden style="display:contents">
+  <div class="fc-prog"><span id="fcN"></span><span id="fcS"></span></div>
+  <div class="fc-bar"><i class="g" id="fcG"></i><i class="r" id="fcR"></i></div>
+  <div class="stage"><div class="card3" id="card3" tabindex="0" role="button" aria-label="Dar la vuelta a la tarjeta">
+   <div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></div>
+  <button type="button" class="flipb" id="fcFlip">💡 Ver respuesta</button>
+  <div class="btns" id="fcBtns" hidden><button type="button" class="b-no" id="fcNo">❌ No me la sé</button><button type="button" class="b-si" id="fcSi">✅ Me la sé</button></div>
+ </div>
+ <div class="fc-end" id="fcEnd" hidden></div>
+</div></div>
+</div>
+<script>
+const KEY="ipe4-repaso-v1";
+let st={done:{},f:"0",mode:"read",open:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.done)st=Object.assign(st,s)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const bar=document.querySelector(".bar");
+const setBar=()=>document.documentElement.style.setProperty("--bar","8px");setBar();addEventListener("resize",setBar);
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const cpts=[...document.querySelectorAll(".cpt")];
+const blks=[...document.querySelectorAll(".blk")];
+cpts.forEach(c=>{c._t=norm(c.textContent);const cb=c.querySelector(".dom input");const n=cb.dataset.n;cb.checked=!!st.done[n];c.classList.toggle("done",cb.checked);
+  cb.addEventListener("change",()=>{if(cb.checked)st.done[n]=1;else delete st.done[n];c.classList.toggle("done",cb.checked);save();prog();if(st.f==="pend")apply()});
+  const b=document.createElement("button");b.type="button";b.className="show";b.textContent="Ver respuesta";
+  const q=c.querySelector(".box.q");q.insertBefore(b,q.querySelector(".dom"));
+  b.addEventListener("click",()=>{c.classList.toggle("reveal");b.textContent=c.classList.contains("reveal")?"Ocultar respuesta":"Ver respuesta"})});
+function setOpen(b,v){b.classList.toggle("open",v);b.querySelector(".blk-h").setAttribute("aria-expanded",String(v));if(v)st.open[b.id]=1;else delete st.open[b.id]}
+blks.forEach(b=>{const h=b.querySelector(".blk-h");h.tabIndex=0;h.setAttribute("role","button");setOpen(b,!!st.open[b.id]);
+  const t=()=>{setOpen(b,!b.classList.contains("open"));save()};h.addEventListener("click",t);h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();t()}})});
+document.getElementById("openAll").onclick=()=>{blks.forEach(b=>setOpen(b,true));save()};
+document.getElementById("closeAll").onclick=()=>{blks.forEach(b=>setOpen(b,false));save()};
+function go(id){const el=document.getElementById(id);if(!el)return;const b=el.closest(".blk");if(b){setOpen(b,true);save()}
+  requestAnimationFrame(()=>{const y=el.getBoundingClientRect().top+scrollY-8;scrollTo({top:y,behavior:"smooth"})})}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();go(a.getAttribute("href").slice(1))}));
+document.getElementById("toc").addEventListener("change",e=>{if(e.target.value)go(e.target.value);e.target.value=""});
+function prog(){blks.forEach(b=>{const cs=[...b.querySelectorAll(".dom input")];const k=cs.filter(x=>st.done[x.dataset.n]).length;const el=b.querySelector(".bd");if(el)el.textContent=k;const dc=document.querySelector('.dc[data-b="'+b.id+'"]');if(dc){dc.textContent=(k===cs.length?"✓ ":"")+k+"/"+cs.length;dc.classList.toggle("full",k===cs.length)}});
+  const n=Object.keys(st.done).length;document.getElementById("pText").textContent="Dominas "+n+" de "+cpts.length;document.getElementById("pBar").style.width=(n/cpts.length*100)+"%";
+  const p1=cpts.filter(c=>c.dataset.lv==="1"&&!st.done[c.id.slice(1)]).length;document.getElementById("pHint").textContent=p1?"Te faltan "+p1+" 🔴":"¡Todos los 🔴 dominados!"}
+function apply(){const q="";let shown=0;const filt=st.f!=="0";
+  cpts.forEach(c=>{const n=c.id.slice(1);let ok=true;if(st.f==="pend")ok=!st.done[n];else if(st.f!=="0")ok=c.dataset.lv===st.f;if(q)ok=ok&&c._t.includes(q);c.hidden=!ok;if(ok)shown++});
+  blks.forEach(b=>{const any=[...b.querySelectorAll(".cpt")].some(c=>!c.hidden);b.hidden=!any;if(any&&filt)b.classList.add("open")});
+  if(!filt)blks.forEach(b=>b.classList.toggle("open",!!st.open[b.id]));
+  document.getElementById("empty").hidden=shown>0;
+  document.querySelectorAll(".chips .chip").forEach(ch=>ch.setAttribute("aria-pressed",String(ch.dataset.f===st.f)))}
+document.querySelectorAll(".chips .chip").forEach(ch=>ch.addEventListener("click",()=>{st.f=ch.dataset.f;save();apply()}));
+
+function setMode(m){st.mode=m;save();document.body.classList.toggle("test",m==="test");
+  document.getElementById("mRead").setAttribute("aria-pressed",String(m==="read"));document.getElementById("mTest").setAttribute("aria-pressed",String(m==="test"));
+  cpts.forEach(c=>{c.classList.remove("reveal");c.querySelector(".show").textContent="Ver respuesta"})}
+document.getElementById("mRead").onclick=()=>setMode("read");document.getElementById("mTest").onclick=()=>setMode("test");
+function setHide(v){st.hide=v;save();document.body.classList.toggle("hidedefs",v);
+  document.querySelectorAll(".fd.peek").forEach(x=>x.classList.remove("peek"));setBar();
+  const hf=document.getElementById("hideFab");hf.setAttribute("aria-pressed",String(v));document.getElementById("hideFabTxt").textContent=v?"🙈 Tapadas":"💡 Tapar"}
+document.getElementById("hideFab").addEventListener("click",()=>setHide(!st.hide));
+document.addEventListener("click",e=>{const f=e.target.closest(".fd.easy,.fd.ok");if(f&&document.body.classList.contains("hidedefs"))f.classList.toggle("peek")});
+setHide(!!st.hide);
+setMode(st.mode);apply();prog();
+if(/^#[\w-]+$/.test(location.hash)){const h=location.hash.slice(1);setTimeout(()=>go(h),300)}
+const drw=document.getElementById("drw"),scrim=document.getElementById("scrim");
+const wide=()=>matchMedia("(min-width:1100px)").matches;
+function drwSet(v){drw.classList.toggle("on",v);scrim.hidden=!v;document.body.style.overflow=v&&!wide()?"hidden":""}
+document.getElementById("drwOpen").onclick=()=>drwSet(true);document.getElementById("drwClose").onclick=()=>drwSet(false);scrim.onclick=()=>drwSet(false);
+drw.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(!wide())drwSet(false)}));
+document.getElementById("fcOpen2").addEventListener("click",()=>{if(!wide())drwSet(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drw.classList.contains("on"))drwSet(false)});
+const upB=document.getElementById("upBtn");addEventListener("scroll",()=>{upB.hidden=scrollY<600},{passive:true});upB.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* ===== Buscador ===== */
+(function(){
+const qi=document.getElementById("q"),res=document.getElementById("res");
+const U=[];
+const txt=el=>{const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);const out=[];while(w.nextNode()){const t=w.currentNode;if(t.parentNode.closest(".fl,.lbl,.tag,.show,.dom,.srcl,figcaption"))continue;const v=t.nodeValue.trim();if(v)out.push(v)}return out.join(" ")};
+const add=(el,kind,title,text)=>U.push({el,kind,title,text,n:norm(text),nt:norm(title)});
+cpts.forEach(c=>{const t=c.querySelector("h3").childNodes[0].textContent.trim();add(c,"Concepto "+c.id.slice(1)+" · "+c.closest(".blk").querySelector(".bt").textContent,t,txt(c))});
+document.querySelectorAll("#hoja .pq").forEach(d=>add(d,"20 preguntas de la hoja",d.querySelector("summary").textContent,txt(d)));
+document.querySelectorAll("#llave .pq").forEach(d=>add(d,"🔑 Preguntas llave",d.querySelector("summary").textContent,txt(d)));document.querySelectorAll("#impres .pq").forEach(d=>add(d,"Lo imprescindible",d.querySelector("summary").textContent,txt(d)));
+[["glosario","Glosario"],["trampas","Trampas"],["numeros","Números clave"]].forEach(([id,k])=>document.querySelectorAll("#"+id+" tbody tr").forEach(r=>add(r,k,r.cells[0].textContent,txt(r))));
+document.querySelectorAll("#chequeo li").forEach(li=>add(li,"Chequeo final",li.textContent,li.textContent));
+const escH=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function snip(text,q){const n=norm(text);const i=n.indexOf(q);if(i<0)return escH(text.slice(0,110))+"…";
+  const a=Math.max(0,i-50),b=Math.min(text.length,i+q.length+70);
+  return (a?"…":"")+escH(text.slice(a,i))+"<mark>"+escH(text.slice(i,i+q.length))+"</mark>"+escH(text.slice(i+q.length,b))+(b<text.length?"…":"")}
+function markT(t,q){const n=norm(t);const i=n.indexOf(q);return i<0?escH(t):escH(t.slice(0,i))+"<mark>"+escH(t.slice(i,i+q.length))+"</mark>"+escH(t.slice(i+q.length))}
+let found=[];
+function run(){const raw=qi.value.trim();const q=norm(raw);if(q.length<2){res.hidden=true;return}
+  found=U.filter(u=>u.n.includes(q)).sort((a,b)=>(b.nt.includes(q)-a.nt.includes(q)));
+  res.hidden=false;
+  if(!found.length){res.innerHTML=`<div class="none">No aparece «${escH(raw)}» en el repaso. Prueba con otra palabra o sin la última letra.</div>`;return}
+  res.innerHTML=`<div class="rh"><span>${found.length} resultado${found.length>1?"s":""} para «${escH(raw)}»</span><button type="button" id="resX">Cerrar</button></div>`+
+   found.slice(0,60).map((u,k)=>`<button type="button" class="ri" data-k="${k}"><span class="rk">${escH(u.kind)}</span><span class="rt">${markT(u.title.slice(0,120),q)}</span><span class="rs">${snip(u.text.replace(/\s+/g," "),q)}</span></button>`).join("");
+  document.getElementById("resX").onclick=()=>{qi.value="";res.hidden=true};
+  res.querySelectorAll(".ri").forEach(b=>b.onclick=()=>jump(found[+b.dataset.k],q))}
+function jump(u,q){const el=u.el;const b=el.closest(".blk");if(b){setOpen(b,true);save()}if(b&&b.hidden){st.f="0";save();apply()}
+  if(el.tagName==="DETAILS")el.open=true;const d=el.closest("details");if(d)d.open=true;
+  if(el.closest(".cpt")&&document.body.classList.contains("test")){const c=el.closest(".cpt");c.classList.add("reveal")}
+  highlight(el,q);
+  requestAnimationFrame(()=>{const tgt=firstMark(el)||el;const y=tgt.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:"smooth"});
+    el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")})}
+function clearHL(){document.querySelectorAll("mark.sh").forEach(m=>{const t=document.createTextNode(m.textContent);m.replaceWith(t);t.parentNode&&t.parentNode.normalize()})}
+function highlight(root,q){clearHL();const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(t=>{const n=norm(t.nodeValue);let i=n.indexOf(q);if(i<0||t.parentNode.closest("script,style,.res"))return;
+    const frag=document.createDocumentFragment();let last=0;const s=t.nodeValue;
+    while(i>=0){frag.append(s.slice(last,i));const m=document.createElement("mark");m.className="sh";m.style.cssText="background:#ffe066;color:#1d1828;border-radius:3px";m.textContent=s.slice(i,i+q.length);frag.append(m);last=i+q.length;i=n.indexOf(q,last)}
+    frag.append(s.slice(last));t.replaceWith(frag)})}
+function firstMark(el){return el.querySelector("mark.sh")}
+qi.addEventListener("input",run);qi.addEventListener("focus",run);
+qi.addEventListener("keydown",e=>{if(e.key==="Enter"&&found.length){e.preventDefault();jump(found[0],norm(qi.value.trim()))}if(e.key==="Escape"){res.hidden=true}});
+})();
+/* ===== Mi plan ===== */
+(function(){
+
+const EXAM={id:"ipe-tema4",em:"🦺",asig:"IPE 1",examen:"Tema 4",fecha:null,horario:["8:00","13:25"],repaso:"#",simulacro:null,
+  blocks:blks.map(b=>({id:b.id,n:b.querySelector(".bn").textContent.replace(/\D+/g,""),t:b.querySelector(".bt").textContent,m:+b.dataset.min||0,c:[...b.querySelectorAll(".cpt")].map(c=>({n:+c.id.slice(1),lv:+c.dataset.lv}))}))};
+const PKEY="plan-estudio-v1-"+EXAM.id;
+let ps={n:null,start:"hoy",times:{},done:{}};
+try{const s=JSON.parse(localStorage.getItem(PKEY)||"null");if(s)ps=Object.assign(ps,s)}catch(e){}
+const psave=()=>{try{localStorage.setItem(PKEY,JSON.stringify(ps))}catch(e){}};
+const $=id=>document.getElementById("pl_"+id);
+const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const today=new Date();today.setHours(0,0,0,0);
+const fmtD=d=>DIAS[d.getDay()]+" "+d.getDate()+" "+MES[d.getMonth()];
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+let exam,left;const maxN=10;
+function setExam(){const f=ps.fecha||EXAM.fecha||iso(new Date(today.getTime()+7*864e5));exam=new Date(f+"T00:00:00");left=Math.round((exam-today)/864e5);
+  $("fecha").value=f;
+  $("eb").textContent=EXAM.em+" "+EXAM.asig+" · "+EXAM.examen;
+  $("sub").textContent="Examen: "+fmtD(exam)+(ps.fecha||EXAM.fecha?"":" (fecha de ejemplo: pon la tuya arriba)")+". El plan reparte los "+EXAM.blocks.length+" bloques del Repaso y deja el último día para repasar.";
+  $("count").innerHTML=left>0?`<span class="n">${left}</span><div><p class="k">${left===1?"día para el examen":"días para el examen"}</p><p><b>${fmtD(exam)}</b>. Puedes estudiar hasta ${left===1?"hoy":"el "+fmtD(new Date(exam-864e5))}.</p></div>`:left===0?`<span class="n">0</span><div><p><b>¡Hoy es el examen!</b> Mira solo "Lo imprescindible".</p></div>`:`<span class="n">✓</span><div><p>El examen ya pasó.</p></div>`}
+setExam();
+if(!ps.n)ps.n=Math.min(maxN,Math.max(1,left));
+$("fecha").addEventListener("change",e=>{if(!e.target.value)return;ps.fecha=e.target.value;setExam();ps.n=Math.min(maxN,Math.max(1,left));psave();
+  $("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(+x.dataset.n===ps.n)));prender()});
+$("days").innerHTML=Array.from({length:maxN},(_,i)=>`<button type="button" class="dchip" data-n="${i+1}" aria-pressed="${ps.n===i+1}" aria-label="${i+1} días">${i+1}</button>`).join("");
+$("days").querySelectorAll(".dchip").forEach(b=>b.onclick=()=>{ps.n=+b.dataset.n;psave();$("days").querySelectorAll(".dchip").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+$("startSeg").innerHTML=[["hoy","Hoy"],["manana","Mañana"]].map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${ps.start===k}">${t}</button>`).join("");
+$("startSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{ps.start=b.dataset.k;psave();$("startSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));prender()});
+
+/* ---------- coste en minutos ---------- */
+const MIN={1:9,2:6,3:3};const CARDS=8;
+const bCost=b=>b.m||(b.c.reduce((s,c)=>s+MIN[c.lv],0)+CARDS);
+const REVIEW=[
+ {t:"🔁 Tarjetas: solo las que fallé",d:"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.",m:20,u:"#fc",rev:1},
+ {t:"📝 Simulacro completo",d:"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.",m:100,u:EXAM.simulacro,rev:1},
+ {t:"🩹 Repasa lo que fallaste en el Simulacro",d:"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».",m:30,u:EXAM.simulacro,rev:1},
+ {t:"⚠️ Trampas y chequeo final",d:"Repasa las trampas y contesta el chequeo final sin mirar.",m:25,u:"#trampas",rev:1},
+ {t:"⚠️ Trampas y 🔢 números clave",d:"Las parejas que se confunden y las cifras (%, µm, mm/h…).",m:20,u:"#trampas",rev:1},
+ {t:"⚡ Lo imprescindible",d:"Pregunta → respuesta corta. Lo último antes de dormir.",m:20,u:"#impres",rev:1}];
+const WARM={t:"🔁 Calentamiento: lo que fallaste ayer",d:"🃏 Tarjetas → «Solo las que fallé». Así lo de ayer no se te olvida.",m:15,u:"#fc",rev:1};
+const toMin=s=>{const [h,m]=(s||"0:0").split(":").map(Number);return h*60+m};
+const toHM=m=>{m=((m%1440)+1440)%1440;return Math.floor(m/60)+":"+String(m%60).padStart(2,"0")};
+function dayDate(i){const d=new Date(today);d.setDate(d.getDate()+i+(ps.start==="manana"?1:0));return d}
+function defTimes(i){const d=dayDate(i);const isToday=d.getTime()===today.getTime();
+  if(isToday){const now=new Date();let s=Math.ceil((now.getHours()*60+now.getMinutes()+15)/15)*15;s=Math.max(s,8*60);const e=Math.max(s+60,22*60);return [toHM(s),toHM(Math.min(e,23*60+30))]}
+  return EXAM.horario}
+function times(i){const k=dayDate(i).toISOString().slice(0,10),t=ps.times&&ps.times[k];return Array.isArray(t)&&t.length===2&&t.every(x=>/^\d{1,2}:\d{2}$/.test(x))?t:defTimes(i)}
+function setTime(i,which,v){const k=dayDate(i).toISOString().slice(0,10);const t=times(i).slice();t[which]=v;ps.times[k]=t;psave();prender()}
+
+function plan(N){
+  const caps=Array.from({length:N},(_,i)=>{const [a,b]=times(i);return Math.max(30,toMin(b)-toMin(a))});
+  const days=Array.from({length:N},()=>[]);
+  const blocks=EXAM.blocks.map(b=>({b,m:bCost(b)}));const total=blocks.reduce((s,x)=>s+x.m,0);
+  let mode="full";
+  if(N===1){
+    const rojo=EXAM.blocks.map(b=>({b,cs:b.c.filter(c=>c.lv===1)})).filter(x=>x.cs.length);
+    const avail=caps[0]-80;
+    days[0].push({t:"🔴 Solo lo imprescindible de cada bloque",d:"En el Repaso pulsa el filtro <b>🔴 Imprescindibles</b> y repasa: "+rojo.map(x=>`<b>${x.b.n}</b> ${x.b.t} (${x.cs.map(c=>c.n).join(", ")})`).join(" · "),m:Math.max(60,avail),u:"#fc"});
+    days[0].push(REVIEW[3],REVIEW[5]);
+    return {days,caps,mode:"rojo"};}
+  const lastRev=REVIEW;const revM=lastRev.reduce((s,x)=>s+x.m,0);
+  // capacidad para bloques: días 1..N-1 (menos calentamiento) + lo que sobre del último día
+  const W=.82;/* tiempo real de estudio descontando descansos */
+  const learnCaps=caps.map((c,i)=>i<N-1?c*W-(i>0?WARM.m:0):Math.max(0,c*W-WARM.m-revM));
+  const learnTotal=learnCaps.reduce((s,x)=>s+x,0);
+  const f=Math.min(1,learnTotal/total);if(f<1)mode=f<.7?"rojo":"rapido";
+  // repartir bloques en orden según capacidad acumulada
+  const cum=[];let acc=0;const tf=total*f;learnCaps.forEach(c=>{acc+=c;cum.push(acc/learnTotal*tf)});
+  let pos=0;
+  blocks.forEach(x=>{const m=x.m*f;const mid=pos+m/2;let d=cum.findIndex(c=>mid<=c);if(d<0)d=N-1;
+    x.day=d;pos+=m;x.mm=Math.round(m)});
+  for(let i=0;i<N;i++){
+    if(i>0)days[i].push(WARM);
+    blocks.filter(x=>x.day===i).forEach(x=>{const r=x.b.c.filter(c=>c.lv===1);
+      days[i].push({t:`Bloque ${x.b.n} · ${x.b.t}`,blk:x.b,m:x.mm,u:"#"+x.b.id,
+        d:(mode==="rojo"?"<b>Poco tiempo:</b> lee bien los 🔴 y los demás por encima. ":"")+"Lee los conceptos "+x.b.c[0].n+"–"+x.b.c[x.b.c.length-1].n+" y al terminar haz sus 🃏 Tarjetas. "+(r.length?"🔴 Imprescindibles: <b>"+r.map(c=>c.n).join(", ")+"</b>.":"")})});
+    if(i===N-1)days[i].push(...lastRev);}
+  return {days,caps,mode,f};
+}
+function schedule(tasks,start){let t=toMin(start),run=0;const out=[];
+  tasks.forEach((x,k)=>{out.push({...x,a:t,b:t+x.m});t+=x.m;run+=x.m;
+    if(run>=45&&k<tasks.length-1){out.push({brk:1,t:"☕ Descanso: levántate, agua, nada de móvil",a:t,b:t+10,m:10});t+=10;run=0}});
+  return out}
+function prender(){
+  const N=ps.n;const P=plan(N);
+  const msg=$("msg");
+  if(left>0&&N>left)msg.innerHTML=`<p class="note warn">⚠️ Elegiste ${N} días pero solo quedan ${left} antes del examen. Los últimos días caerían después del examen.</p>`;
+  else if(N===1)msg.innerHTML=`<p class="note warn">⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴 y "Lo imprescindible".</p>`;
+  else if(P.mode==="rojo")msg.innerHTML=`<p class="note warn">⚠️ <b>El tiempo es justo.</b> En cada bloque céntrate en los conceptos 🔴 y los demás léelos por encima. Si puedes, alarga las horas de algún día.</p>`;
+  else if(P.mode==="rapido")msg.innerHTML=`<p class="note warn">⏱️ Vas un poco justo: en cada bloque dale prioridad a los 🔴. Si puedes, añade algo de tiempo a algún día.</p>`;
+  else msg.innerHTML=`<p class="note ok">✅ Te da tiempo de todo. Sigue el plan en orden y tacha cada tarea.</p>`;
+  $("plan").innerHTML=P.days.map((tasks,i)=>{const d=dayDate(i);const [a,b]=times(i);const sch=schedule(tasks,a);
+    const used=sch.length?sch[sch.length-1].b-toMin(a):0;const over=used>P.caps[i]+10;
+    const real=sch.filter(x=>!x.brk);const k=dayDate(i).toISOString().slice(0,10);
+    const doneN=real.filter((x,j)=>ps.done[k+"|"+x.t]).length;
+    const isToday=d.getTime()===today.getTime();
+    const bl=real.filter(x=>x.blk).map(x=>x.blk);const rng=bl.length?(bl.length===1?"Bloque "+bl[0].n:"Bloques "+bl[0].n+" a "+bl[bl.length-1].n):"";
+    const goal=i===N-1&&N>1?(rng?rng+" + Repaso final y Simulacro":"Repaso final y Simulacro"):rng;const names=bl.map(b=>b.t).join(" · ");
+    return `<article class="day" id="pl_d${i}"><div class="day-h">
+      <div class="day-top"><span class="when">Día ${i+1} de ${N} · ${fmtD(d)}</span>${isToday?'<span class="badge today">HOY</span>':""}${doneN===real.length&&real.length?'<span class="badge done">✓ HECHO</span>':""}</div>
+      <h2>${goal||"Repaso"}</h2>${names?`<p class="goal">${names}</p>`:""}
+      <div class="times">De <input type="time" id="pl_ts${i}" value="${a.padStart(5,"0")}" aria-label="Hora de inicio día ${i+1}"> a <input type="time" id="pl_te${i}" value="${b.padStart(5,"0")}" aria-label="Hora de fin día ${i+1}"> · ${Math.round(P.caps[i]/6)/10} h${over?' · <b style="color:var(--warn)">el plan acaba a las '+toHM(sch[sch.length-1].b)+'</b>':""}</div>
+      <div class="dprog"><i style="width:${real.length?doneN/real.length*100:0}%"></i></div></div>
+      <ul class="tasks">${sch.map(x=>x.brk?`<li class="task brk"><span class="t-title"><span class="t-time">${toHM(x.a)}</span> ${x.t}</span></li>`:
+        `<li class="task${x.rev?" rev":""}${ps.done[k+"|"+x.t]?" done":""}"><input type="checkbox" data-k="${k}|${x.t.replace(/"/g,"&quot;")}" ${ps.done[k+"|"+x.t]?"checked":""} aria-label="Hecho: ${x.t.replace(/"/g,"&quot;")}"><div><span class="t-time">${toHM(x.a)}–${toHM(x.b)} · ${x.m} min</span><div class="t-title">${x.blk?`<span class="dot d1"></span>`:""}${x.t}</div><div class="t-det">${x.d||""}</div>${x.u?`<a class="t-go" href="${x.u}"${x.u.startsWith("#")?"":' target="_blank" rel="noopener"'}>${x.u.startsWith("#")?"Ir →":"Abrir →"}</a>`:""}</div></li>`).join("")}</ul></article>`}).join("");
+  P.days.forEach((_,i)=>{$("ts"+i).onchange=e=>setTime(i,0,e.target.value);$("te"+i).onchange=e=>setTime(i,1,e.target.value)});
+  document.querySelectorAll("#planOv .task input").forEach(c=>c.onchange=()=>{if(c.checked)ps.done[c.dataset.k]=1;else delete ps.done[c.dataset.k];psave();prender()});
+}
+
+const ov=document.getElementById("planOv");
+function openPlan(){ov.hidden=false;document.body.style.overflow="hidden";prender();ov.scrollTop=0}
+function closePlan(){ov.hidden=true;document.body.style.overflow=""}
+document.getElementById("planOpen").onclick=openPlan;
+const pb=document.getElementById("planOpen2");if(pb)pb.onclick=()=>{if(typeof drwSet==="function"&&!wide())drwSet(false);openPlan()};
+document.getElementById("planClose").onclick=closePlan;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ov.hidden)closePlan()});
+ov.addEventListener("click",e=>{const a=e.target.closest("a.t-go");if(!a)return;const h=a.getAttribute("href");if(!h.startsWith("#"))return;e.preventDefault();closePlan();
+  if(h==="#fc"){document.getElementById("fcOpen").click();return}go(h.slice(1))});
+/* resumen de hoy en la tarjeta de entrada */
+{prender();const td=[...ov.querySelectorAll(".day")].find(d=>d.querySelector(".badge.today"));
+  if(td)document.getElementById("planToday").textContent="Hoy toca: "+td.querySelector("h2").textContent;}
+})();
+
+/* ===== Temporizador ===== */
+(function(){
+st.tm=st.tm||{a:null,s:{}};const T=st.tm;
+const pill=document.getElementById("tpill");let iv=null,beeped=false;
+const f2=n=>String(Math.floor(n)).padStart(2,"0");
+const fmt=sec=>{sec=Math.abs(sec);const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=Math.floor(sec%60);return (h?h+":"+f2(m):f2(m))+":"+f2(s)};
+const blkOf=id=>document.getElementById(id);
+const elapsed=()=>{const a=T.a;if(!a)return 0;return (a.acc+(a.paused?0:Date.now()-a.start))/1000};
+function beep(){try{const C=new (window.AudioContext||window.webkitAudioContext)();[0,.25,.5].forEach(t=>{const o=C.createOscillator(),g=C.createGain();o.frequency.value=880;o.connect(g);g.connect(C.destination);g.gain.setValueAtTime(.2,C.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,C.currentTime+t+.2);o.start(C.currentTime+t);o.stop(C.currentTime+t+.22)})}catch(e){}
+  try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}}
+function tick(){const a=T.a;if(!a){pill.hidden=true;return}
+  const tot=a.min*60,el=elapsed(),left=tot-el,over=left<0;
+  pill.hidden=false;pill.classList.toggle("over",over);
+  document.getElementById("tpB").textContent=(over?"⏰ Te pasaste · ":"⏱ ")+a.name+(a.paused?" · en pausa":"");
+  document.getElementById("tpT").textContent=(over?"+":"")+fmt(left);
+  document.getElementById("tpBar").style.width=Math.min(100,el/tot*100)+"%";
+  document.getElementById("tpPause").textContent=a.paused?"Seguir":"Pausa";
+  document.getElementById("tpPause").setAttribute("aria-label",a.paused?"Seguir":"Pausar");
+  if(over&&!beeped&&!a.beeped){beeped=true;a.beeped=1;save();beep()}}
+function run(){clearInterval(iv);if(T.a){iv=setInterval(tick,500)}tick()}
+function startB(b){const name=b.querySelector(".bn").textContent.replace("BLOQUE","Bloque")+" · "+b.querySelector(".bt").textContent;
+  T.a={b:b.id,name,min:+b.dataset.min,start:Date.now(),acc:0,paused:false};beeped=false;save();setOpen(b,true);save();run();
+  requestAnimationFrame(()=>{const y=b.getBoundingClientRect().top+scrollY-70;scrollTo({top:y,behavior:"smooth"})});rowAll()}
+function pause(){const a=T.a;if(!a)return;if(a.paused){a.start=Date.now();a.paused=false}else{a.acc+=Date.now()-a.start;a.paused=true}save();tick()}
+function fin(){const a=T.a;if(!a)return;T.s[a.b]=Math.max(1,Math.round(elapsed()/60));T.a=null;save();run();rowAll()}
+function cancel(){T.a=null;save();run();rowAll()}
+document.getElementById("tpPause").onclick=pause;document.getElementById("tpFin").onclick=fin;document.getElementById("tpX").onclick=cancel;
+function row(b){let r=b.querySelector(".tmr");if(!r){r=document.createElement("div");r.className="tmr";b.querySelector(".blk-h").after(r)}
+  const m=+b.dataset.min,sp=+T.s[b.id]||0,act=T.a&&T.a.b===b.id;
+  r.innerHTML=`<p>${sp?`<span class="tm-done">✓ Lo hiciste en ${sp} min</span> (previsto ${m})`:`⏱ Tiempo para aprenderte este bloque: <b>${m} min</b>`}</p>`+(act?`<p><b>⏳ En marcha…</b></p>`:`<button type="button">${sp?"↻ Otra vez":"▶ Empezar"}</button>`);
+  const bt=r.querySelector("button");if(bt)bt.onclick=()=>{if(T.a&&T.a.b!==b.id){fin()}startB(b)}}
+function rowAll(){blks.forEach(row)}
+rowAll();run();
+document.addEventListener("visibilitychange",tick);
+})();
+
+/* ===== Leyenda desplegable ===== */
+(function(){
+const lg=document.querySelector(".top .legend");if(!lg)return;
+const NAMES={1:"🔴 Imprescindibles",2:"🟠 Importantes",3:"🔵 Leer una vez"},COL={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const panel=document.createElement("div");panel.className="lvpanel";panel.id="lvpanel";panel.hidden=true;lg.after(panel);
+let cur=null;
+const tags=[...lg.querySelectorAll(".tag")];
+tags.forEach(t=>{const lv=t.classList.contains("lv1")?1:t.classList.contains("lv2")?2:3;
+  const b=document.createElement("button");b.type="button";b.className=t.className;b.innerHTML=t.innerHTML;b.setAttribute("aria-expanded","false");b.setAttribute("aria-controls","lvpanel");t.replaceWith(b);
+  b.onclick=()=>{if(cur===lv){cur=null;panel.hidden=true;b.setAttribute("aria-expanded","false");return}
+    cur=lv;lg.querySelectorAll(".tag").forEach(x=>x.setAttribute("aria-expanded",String(x===b)));show(lv)}});
+function show(lv){panel.style.setProperty("--lc",COL[lv]);
+  const cs=cpts.filter(c=>c.dataset.lv===String(lv));let h=`<h4>${NAMES[lv]} · ${cs.length} conceptos</h4>`,last="";
+  cs.forEach(c=>{const bt=c.closest(".blk").querySelector(".bt").textContent;if(bt!==last){h+=`<p class="lg">${c.closest(".blk").querySelector(".bn").textContent} · ${bt}</p>`;last=bt}
+    const t=c.querySelector("h3").childNodes[0].textContent.trim();h+=`<a href="#${c.id}" class="${st.done[c.id.slice(1)]?"ok":""}"><b>${c.id.slice(1)}</b>${t}</a>`});
+  panel.innerHTML=h;panel.hidden=false;
+  panel.querySelectorAll("a").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.getAttribute("href").slice(1))})}
+})();
+/* ===== Tarjetas ===== */
+(function(){
+const fc=document.getElementById("fc"),$=id=>document.getElementById(id);
+const LVC={1:"var(--lv1)",2:"var(--lv2)",3:"var(--lv3)"};
+const ALL=[];
+cpts.forEach(c=>{const b=c.closest(".blk");const bt=b.querySelector(".bt").textContent;const n=c.id.slice(1);const lv=c.dataset.lv;
+  const qt=c.querySelector(".qt");const prof=[...c.querySelectorAll(".prof-t")].map(x=>x.innerHTML).join("");
+  const src=c.querySelector(".srcl").textContent;
+  if(qt)ALL.push({id:"q"+n,blk:b.id,bt,lv,kind:"q",q:qt.textContent,a:prof,src,title:n+". "+c.querySelector("h3").childNodes[0].textContent});
+  c.querySelectorAll(".defs li").forEach((li,i)=>{const ok=li.querySelector(".fd.ok");if(!ok)return;
+    const term=li.querySelector(".term").textContent;const txt=ok.textContent.replace(/^📌[^«]*/,"");
+    ALL.push({id:"d"+n+"_"+i,blk:b.id,bt,lv,kind:"d",q:"¿Cómo define la diapositiva: «"+term+"»?",a:'<p class="formal">'+txt+"</p>",src,title:term})})});
+st.fc=st.fc||{bad:{}};
+let cfg={blk:"all",kind:"all",lv:"all"},deck=[],i=0,ok=0,ko=0,flipped=false;
+const blkOpts=[["all","Todos los bloques",""]].concat(blks.map(b=>[b.id,b.querySelector(".bn").textContent.replace("BLOQUE","Bloque"),b.querySelector(".bt").textContent]));
+function opts(el,list,key){el.innerHTML=list.map(([v,t,sm])=>`<button type="button" class="opt" data-v="${v}" aria-pressed="${cfg[key]===v}">${t}${sm?`<small>${sm}</small>`:""}</button>`).join("");
+  el.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cfg[key]=b.dataset.v;el.querySelectorAll(".opt").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));count()})}
+function pool(){return ALL.filter(c=>(cfg.blk==="all"||c.blk===cfg.blk)&&(cfg.kind==="all"||c.kind===cfg.kind)&&(cfg.lv==="all"||(cfg.lv==="bad"?st.fc.bad[c.id]:c.lv===cfg.lv)))}
+function count(){const n=pool().length;$("fcGo").textContent=n?"Empezar · "+n+" tarjetas":"No hay tarjetas con esa elección";$("fcGo").disabled=!n}
+function setup(){opts($("oBlk"),blkOpts,"blk");
+  opts($("oKind"),[["all","Todo","preguntas + definiciones"],["q","❓ Preguntas de cada concepto",""],["d","📌 Definiciones de la diapositiva","las del examen"]],"kind");
+  const nb=Object.keys(st.fc.bad).length;
+  opts($("oLv"),[["all","Todas",""],["1","🔴 Solo imprescindibles",""],["bad","❌ Solo las que fallé",nb+" guardadas"]],"lv");count();
+  $("fcSetup").hidden=false;$("fcPlay").hidden=true;$("fcPlay").style.display="none";$("fcEnd").hidden=true}
+function open(){fc.hidden=false;document.body.style.overflow="hidden";setup()}
+function close(){fc.hidden=true;document.body.style.overflow=""}
+$("fcOpen").onclick=open;$("fcOpen2").onclick=open;$("fcClose").onclick=close;
+document.addEventListener("keydown",e=>{if(fc.hidden)return;if(e.key==="Escape")close()});
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function start(list){deck=shuffle(list.slice());i=0;ok=0;ko=0;$("fcSetup").hidden=true;$("fcEnd").hidden=true;$("fcPlay").hidden=false;$("fcPlay").style.display="contents";show()}
+$("fcGo").onclick=()=>start(pool());
+function show(){const c=deck[i];flipped=false;$("card3").classList.remove("flip");$("fcFlip").hidden=false;$("fcBtns").hidden=true;
+  $("ffront").style.setProperty("--cc",LVC[c.lv]);
+  $("ffront").innerHTML=`<span class="kind">${c.kind==="d"?"📌 Definición de la diapositiva":"❓ Pregunta"} · ${c.bt}</span><span class="bulb" aria-hidden="true">💡</span><span class="qq">${c.q}</span><span class="hint">Piensa la respuesta (o dila en voz alta) y toca para encender la luz</span>`;
+  $("fback").innerHTML=`<span class="kind">💡 Respuesta · ${c.title}</span><div class="ans">${c.a}</div><span class="src">${c.src}</span>`;
+  $("fcN").textContent="Tarjeta "+(i+1)+" de "+deck.length;$("fcS").textContent="✅ "+ok+" · ❌ "+ko;
+  $("fcG").style.width=(ok/deck.length*100)+"%";$("fcR").style.width=(ko/deck.length*100)+"%"}
+function flip(){flipped=!flipped;$("card3").classList.toggle("flip",flipped);if(flipped){$("fcFlip").hidden=true;$("fcBtns").hidden=false}}
+$("card3").onclick=e=>{if(e.target.closest("a"))return;flip()};$("card3").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+$("fcFlip").onclick=flip;
+function answer(good){const c=deck[i];if(good){ok++;delete st.fc.bad[c.id]}else{ko++;st.fc.bad[c.id]=1}save();i++;if(i<deck.length)show();else end()}
+$("fcSi").onclick=()=>answer(true);$("fcNo").onclick=()=>answer(false);
+function end(){$("fcPlay").hidden=true;$("fcPlay").style.display="none";const pct=Math.round(ok/deck.length*100);const fails=deck.filter(c=>st.fc.bad[c.id]);
+  const msg=pct>=90?"¡Lo tienes dominado! 🔥":pct>=70?"¡Muy bien! Repasa las que fallaste.":pct>=50?"Vas bien: repite las falladas.":"Toca repasar este bloque y volver a intentarlo.";
+  $("fcEnd").innerHTML=`<span class="kind" style="font-family:var(--f-mono);color:var(--muted)">RESULTADO</span><span class="score">${ok}/${deck.length}</span><p style="margin:0;font-weight:700">${msg}</p>`+
+   (fails.length?`<button type="button" class="go" id="fcRe">🔁 Repetir las ${fails.length} que fallé</button>`:"")+`<button type="button" class="opt" id="fcAgain" style="text-align:center">🃏 Elegir otras tarjetas</button><button type="button" class="opt" id="fcBack" style="text-align:center">Volver al repaso</button>`;
+  $("fcEnd").hidden=false;if(fails.length)$("fcRe").onclick=()=>start(fails);$("fcAgain").onclick=setup;$("fcBack").onclick=close}
+})();
+
+</script>
+
+<script src="../../assets/especimen.js"></script>
+<script src="../../assets/repaso.js"></script>
+</body>
+</html>

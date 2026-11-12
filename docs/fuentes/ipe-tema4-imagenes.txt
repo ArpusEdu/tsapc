@@ -1,0 +1,186 @@
+IPE · Tema 4 · Texto que en la presentación de la profe está dentro de imágenes (tablas y esquemas del libro), transcrito a mano tal cual.
+
+=== Diapositiva 2 (cabecera de la imagen)
+Lugares de trabajo · Equipos de trabajo · Instalaciones eléctricas · Incendios
+
+=== Diapositiva 3 (tabla: condiciones mínimas de los lugares de trabajo)
+Espacios de trabajo y zonas peligrosas
+Los espacios de trabajo y las zonas peligrosas deben tener unas dimensiones que permitan la realización de la actividad sin peligro alguno y en condiciones ergonómicas adecuadas:
+3 m de altura desde el piso hasta el techo. No obstante, en locales comerciales, de servicios, oficinas y despachos, la altura podrá reducirse a 2,5 m.
+2 m2 de superficie libre por cada persona trabajadora.
+10 m3 no ocupados por cada persona trabajadora.
+Las máquinas y los equipos de trabajo se deben distribuir de manera que no generen riesgos.
+Suelos, aberturas, desniveles y barandillas
+Los suelos han de ser fijos, estables, no resbaladizos y no tener irregularidades ni pendientes peligrosas.
+Las aberturas en los suelos o las paredes y los desniveles que supongan riesgo de caída deben protegerse mediante barandillas u otros sistemas de protección y seguridad equivalentes. Los huecos de las paredes se protegerán obligatoriamente si la altura de caída es superior a 2 m.
+Las barandillas de protección han de ser de materiales rígidos y resistentes, tener una altura mínima de 90 cm y, además, contar con una protección que impida el deslizamiento por debajo de ellas.
+Escaleras y rampas
+Las escaleras deben tener una anchura mínima de 1 m, una huella de entre 26 y 36 cm, y una contrahuella de entre 13 y 23 cm.
+Las rampas tendrán una pendiente máxima del 12 % cuando alcancen una longitud de hasta 3 m, del 10 % cuando tengan una longitud de hasta 10 m y del 8 % en longitudes superiores a 10 m.
+Vías de circulación
+Las vías de circulación tienen que ser utilizadas conforme a su uso previsto y con total seguridad para quienes circulen por ellas.
+Las puertas exteriores deben tener una anchura mínima de 80 cm y los pasillos, de 1 m como mínimo.
+El trazado de las vías de circulación ha de estar señalizado con claridad.
+Orden, limpieza y mantenimiento
+El orden, la limpieza y el mantenimiento son básicos para evitar accidentes por caídas y golpes.
+Las zonas de paso, las salidas y las vías de circulación, y en especial las salidas previstas para la evacuación en caso de emergencia, deben permanecer libres de obstáculos.
+Los materiales, herramientas y utensilios que se encuentren en cada puesto de trabajo deben colocarse ordenadamente en los soportes destinados a ellos (bandejas, cajas, estanterías, etc.).
+Los apilamientos de materiales deben ser estables y seguros.
+Iluminación
+La iluminación debe adaptarse a las características y exigencias de las tareas que se desarrollen. En los lugares de trabajo será, como mínimo, de 100 lux para tareas con exigencias visuales bajas, 200 lux para medias, 500 lux para altas y 1000 para muy altas. En las zonas comunes de uso ocasional habrá un mínimo de 50 lux y 100 lux en las zonas de uso habitual. En las vías de circulación habrá un mínimo 25 lux para de uso ocasional y 50 lux paras las de uso habitual.
+
+=== Diapositiva 4 (tabla: riesgos del uso de máquinas)
+Mecánicos
+Atrapamientos. Atrapamientos por partes móviles de las máquinas. Daños: lesiones por aplastamientos y amputaciones.
+Cortes y golpes. Cortes, por la presencia de elementos de corte, como cuchillas o discos de corte. Golpes, por la presencia de partes móviles o no móviles que sobresalen. Daños: lesiones, heridas y amputaciones.
+Proyección de partículas. Proyección de partículas por la rotura de la máquina o proyección de materiales utilizados. Daños: lesiones en la piel o en los ojos.
+Eléctricos. Contacto directo o indirecto con elementos activos o puestos accidentalmente en tensión. Daños: electrización, tetanización, quemaduras, etc.
+Ruidos. Exposición a altos niveles de ruido. Daños: pérdida de audición, estrés, fatiga, etc.
+Térmicos. Por contacto con materiales o piezas expuestos a altas temperaturas. Por exposición a llamas de incendios y explosiones. Daños: quemaduras.
+Vibraciones. Exposición a vibraciones trasmitidas por las máquinas. Daños: trastornos musculoesqueléticos.
+Radiaciones. Exposición a radiaciones emitidas por las máquinas. Daños: daños a la vista, a los tejidos, cáncer, cataratas, etc.
+Ergonómicos. Realización de posturas forzadas y movimientos repetitivos. Daños: trastornos musculoesqueléticos.
+
+=== Diapositiva 5 (Fig. 4.2: medidas preventivas de los riesgos por el uso de máquinas)
+Integradas en la máquina
+Sistemas de protección
+Resguardos. Elementos de la máquina que garantizan la protección de la persona trabajadora (carcasa, pantalla, puerta, cubierta, etc.).
+Dispositivos de seguridad. Elementos distintos del resguardo que eliminan o reducen el riesgo, solos o asociados a un mando.
+Advertencias
+Manuales de instrucciones. Especificaciones técnicas del fabricante sobre la instalación, la utilización y el mantenimiento.
+Señalización. De los posibles riesgos o de los equipos de protección que hay que utilizar para desarrollar la actividad profesional.
+Dispositivos suplementarios
+Función de parada. Todas las máquinas deben tener habilitada esta funcionalidad. Se hará uso de ella en caso de necesidad, por motivos de seguridad o por la falta de funcionamiento de las protecciones.
+No integradas en la máquina
+Informar y dar formación a las personas trabajadoras.
+Utilizar los equipos de protección individual.
+Aplicar los métodos apropiados para el desarrollo de las tareas.
+Realizar el mantenimiento periódicamente.
+
+=== Diapositiva 5 (tabla: herramientas)
+Riesgos del uso de herramientas
+Golpes. Cortes. Pinchazos. Proyección de fragmentos o partículas. Trastornos musculoesqueléticos. Contacto eléctrico.
+Factores de riesgo
+La utilización de las herramientas de forma inadecuada o para un uso diferente del previsto en su diseño.
+El empleo de herramientas defectuosas o de baja calidad.
+La falta de mantenimiento.
+El almacenamiento o el transporte incorrectos.
+Medidas preventivas
+Adquirir herramientas con marcado CE.
+Utilizar herramientas diseñadas para su uso.
+Mantener en buen estado las herramientas.
+Transporte adecuado y seguro, protegiendo los filos y las puntas.
+Utilizar equipos de protección cuando sea necesario.
+
+=== Diapositiva 6 (tabla: nuevas tecnologías)
+Características · Riesgos de seguridad
+Robots
+Son mecanismos programables en dos o más ejes que tienen cierto grado de autonomía, se mueven dentro de su entorno operativo y ejecutan las actividades previstas.
+Golpes y atrapamientos con partes móviles. Contacto eléctrico con partes activas. Proyección de partículas (chispas, salpicaduras). Quemaduras (contacto con partes calientes).
+Drones
+Son aeronaves no tripuladas dirigidas a distancia.
+Caídas al mismo o a diferente nivel por las irregularidades del terreno. Golpes, cortes y atrapamientos con las hélices. Contacto eléctrico, incendio. Explosión de las baterías y proyección de partículas por el movimiento de las hélices.
+Exoesqueletos
+Dispositivos externos portátiles que se colocan sobre el cuerpo del usuario con la finalidad de aumentar sus capacidades y reducir la carga física.
+Caídas y tropiezos, derivados de su uso. Rozaduras y compresiones en los puntos de contacto con el cuerpo si no están adaptados a las características de la persona.
+
+=== Diapositiva 7 (Fig. 4.3: efectos de la electricidad en el cuerpo humano)
+Por el paso de la corriente eléctrica por el cuerpo
+Directos
+Fibrilación ventricular. La corriente atraviesa el corazón. Consiste en el movimiento anárquico de este órgano. 60-75 mA
+Asfixia. La corriente atraviesa los centros nerviosos. Produce el paro respiratorio y quemaduras. 25-35 mA
+Parada respiratoria. La corriente atraviesa el cerebro. 25 mA
+Tetanización muscular. La corriente anula la capacidad de control muscular. 10 mA
+Electrización. Se producen movimientos reflejos. 3-10 mA
+Umbral de percepción. Se producen cosquilleos. 1-3 mA
+Indirectos
+Golpes contra objetos, caídas, etc.
+Sin paso de la corriente por el cuerpo, por arco eléctrico
+Quemaduras por exposición a arco eléctrico. La corriente produce un calentamiento de la piel y de otros órganos al atravesarlos.
+intensidad (I) = tensión (V) / resistencia (R)
+
+=== Diapositiva 8 (Fig. 4.4: reglas de oro)
+1º Desconectar todas las fuentes de alimentación.
+2º Prevenir realimentaciones. Se debe evitar cualquier reconexión mediante bloqueos o señalización.
+3º Verificar la ausencia de tensión en todos los elementos activos de la instalación.
+4º Realizar la puesta a tierra y en cortocircuito de todas las posibles fuentes de tensión.
+5º Señalizar la zona de trabajo.
+
+=== Diapositiva 9 (Fig. 4.5: medidas de prevención y de protección de los riesgos eléctricos)
+Sobre instalaciones y equipos
+Protección contra contactos directos e indirectos. Uso de tensiones de seguridad: 50 voltios en corriente alterna. 75 voltios en corriente continua.
+Protección contra contactos eléctricos directos. Alejar de las zonas de trabajo las partes activas de las instalaciones. Recubrir con aislantes las partes en tensión. Interponer obstáculos. Usar interruptores diferenciales.
+Protección contra contactos eléctricos indirectos. Corte automático de la alimentación. Separar los circuitos. Poner doble aislamiento. Puesta a tierra y neutro.
+Sobre las personas trabajadoras
+Medidas informativas. Formar e informar sobre los riesgos. Señalizar los riesgos.
+Equipos de protección individual. Usar equipos aislantes (guantes, botas, etc.). Emplear herramientas aislantes (pértigas, alfombras o banquetas aislantes).
+
+=== Diapositiva 10 (tabla: clases de fuego y agente extintor)
+A Sólidos con brasa (papel y madera)
+B Líquidos inflamables y sólidos licuables (gasolina y grasa)
+C Gases inflamables (propano, butano y gas ciudad)
+D Metales (magnesio, sodio, potasio...)
+F Grasas y aceites para cocinar
+Agua a chorro: A adecuado.
+Agua pulverizada: A excelente; B aceptable.
+Espuma física: A adecuado; B adecuado.
+Polvo convencional BC: B excelente; C adecuado.
+Polvo polivalente ABC: A adecuado; B adecuado; C adecuado.
+Anhídrido carbónico: A aceptable; B aceptable.
+Polvos y productos específicos para metales: D adecuado.
+Productos específicos para fuegos de grasas y aceites para cocinar: F adecuado.
+
+=== Diapositiva 11 (Fig. 4.8 y 4.9)
+Carga de trabajo: carga física y carga mental → fatiga
+Tendinitis del manguito rotador.
+Bursitis, epicondilitis (codo de tenista), epitrocleitis.
+Síndrome del túnel carpiano.
+Tendinitis de flexores y extensores.
+Ciática, hernia discal.
+Bursitis.
+Tendinitis del talón de Aquiles.
+
+=== Diapositiva 12 (Fig. 4.10: pautas para el trabajo sentado, de pie y en posturas forzadas)
+Trabajo sentado
+Mantener la espalda recta, apoyada contra el respaldo de la silla, y evitar torsiones del tronco.
+Nivelar la mesa a la altura de los codos.
+Adecuar la altura de la silla al tipo de trabajo, apoyar completamente los pies en el suelo y mantener las rodillas al mismo nivel que la cadera.
+Cambiar de posición y alternar esta postura con otras.
+Trabajo de pie
+Colocar el plano de trabajo y las herramientas en el área de trabajo.
+Alternar esta postura con otras para retrasar el cansancio.
+Adecuar la altura del puesto de trabajo a la actividad que se realiza.
+Trabajar con los brazos a la altura de la cintura para no doblar la espalda o agacharse.
+Posturas forzadas
+Escoger planes de trabajo con alturas que se ajusten al tipo de tareas que se realizan.
+Evitar las posturas inclinadas y los giramientos del tronco.
+Evitar las posturas estáticas y prolongadas de las extremidades superiores e inferiores.
+Evitar los trabajos con las manos por encima de la cabeza.
+
+=== Diapositiva 13 (Fig. 4.11: manipulación manual correcta de cargas)
+Lo que se debe hacer
+Colocarse cerca de la carga con los pies separados a la altura de los hombros.
+Agacharse doblando las rodillas, con la espalda recta, y sujetar la carga con los brazos estirados y pegados al cuerpo.
+Levantar la carga enderezando las piernas y manteniendo la espalda recta.
+Lo que no se debe hacer
+Doblar la espalda y dar tirones bruscos al levantarse.
+Levantar la carga pesada por encima de la cintura con un solo movimiento.
+Girar la cintura mientras se sujeta la carga, ya que hay que girar todo el cuerpo moviendo los pies.
+
+=== Diapositiva 14 (recuadro)
+La carga mental es el nivel de actividad mental o de esfuerzo intelectual necesario para desarrollar el trabajo al que se ve sometida la persona trabajadora a lo largo de su jornada laboral.
+
+=== Diapositiva 15 (tabla)
+Factores de riesgos psicosociales. Son los aspectos de la organización y dirección del trabajo y de su entorno social que, por una configuración deficiente o un diseño inadecuado, presentan la probabilidad de afectar negativamente a la salud y el bienestar de las personas trabajadoras.
+Riesgos psicosociales. Estrés laboral. Violencia. Fatiga.
+Daños. Trastornos emocionales: ansiedad, depresión, etc. Trastornos fisiológicos: aumento de la tensión, bulimia, cefalea, etc. Trastornos conductuales: adicciones, tecnoadicciones, etc. Trastornos sociales: aislamiento, conflictos interpersonales, agresiones, etc.
+
+=== Diapositiva 16 (Fig. 4.13: riesgos psicosociales en el trabajo)
+Estrés. Estrés. Estrés crónico o burnout. Tecnoestrés.
+Violencia laboral. Acoso psicológico en el trabajo (APT), acoso sexual, acoso discriminatorio. Violencia física.
+Fatiga. Derivada de la ordenación del tiempo de trabajo: Por exceso de tiempo de trabajo. Por falta de descanso.
+
+=== Diapositiva 17 (tabla: medidas preventivas frente a los riesgos psicosociales)
+Medidas organizativas. Van dirigidas al foco u origen del problema, para tratar de eliminar o reducir el factor de riesgo o proporcionar más recursos. Estas medidas actúan sobre la organización. Medidas: reorganización del trabajo (rotación, dotación de más recursos, etc.), mejora de la comunicación, ordenación del tiempo de trabajo, procedimientos de gestión de conflictos, prevención de violencias, etc.
+Medidas de afrontamiento. Dirigidas a que la persona trabajadora pueda adquirir prácticas y conocimientos suficientes para afrontar los factores de riesgo psicosocial a los que está expuesto. Medidas: acciones de información y formación, desarrollo y aplicación de procedimientos o protocolos de acoso, códigos éticos, canales de denuncia, etc.
+Medidas de rehabilitación. Dirigidas a la recuperación y rehabilitación de las personas trabajadoras que hayan sufrido daños en la salud derivados de la exposición a riesgos psicosociales. Medidas: adaptación del puesto de trabajo, cambio de funciones, mejora de los recursos, etc.

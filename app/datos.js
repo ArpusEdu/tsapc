@@ -564,6 +564,32 @@ var UNIDADES = [
   ]
  },
  {
+  "id": "ipe-tema4",
+  "s": "ipe",
+  "codigo": "IPE 4",
+  "titulo": "Seguridad y ergonomía",
+  "examen": "Tema 4",
+  "tema": "Tema 4 · Riesgos de las condiciones de seguridad, ergonómicos y psicosociales",
+  "fecha": null,
+  "pegatina": "botiquin",
+  "repaso": {
+   "web": "ipe-tema4/repaso/"
+  },
+  "extra": [],
+  "progreso": {
+   "clave": "ipe4-repaso-v1",
+   "total": 26
+  },
+  "bloques": [
+   "Condiciones de seguridad: los lugares de trabajo",
+   "Los equipos de trabajo",
+   "El riesgo eléctrico",
+   "Los incendios",
+   "Los riesgos ergonómicos",
+   "Los riesgos psicosociales"
+  ]
+ },
+ {
   "id": "ipe-tema5",
   "s": "ipe",
   "codigo": "IPE 5",
