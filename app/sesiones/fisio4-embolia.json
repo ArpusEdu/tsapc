@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "id": "fisio4-embolia",
+  "unidad": "fisio4",
+  "bloque": 7,
+  "titulo": "Embolias y accidentes cerebrovasculares",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 7, conceptos 38 a 41, diapositivas 56 a 59). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El buzo",
+    "caso": "Un buzo sube demasiado rápido y poco después algo le tapa un vaso sanguíneo pequeño. No es un coágulo ni un trozo de grasa.",
+    "pregunta": "¿Qué ha pasado y cómo se llama?",
+    "solucion": "Una embolia: oclusión de un vaso por una partícula extraña que circula (émbolo) y se encaja en un vaso de pequeño calibre. Según la naturaleza del émbolo, aquí es una embolia aérea o gaseosa, típica de buzos, cirugías de tórax o cuello y heridas profundas en el tórax.",
+    "claves": [
+      "Émbolo: partícula que viaja",
+      "Se encaja en un vaso pequeño",
+      "Buzos → embolia aérea"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c38",
+      "n": 38,
+      "titulo": "La embolia",
+      "diapositivas": "56",
+      "gancho": "¿Qué diferencia hay entre un atasco que se forma en tu calle y un camión que viene de lejos y se queda atascado?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d056.jpg",
+        "imgAlt": "Émbolo (diap. 56)",
+        "dice": "<p><strong>Embolias</strong>: Oclusión parcial o total de un vaso debido a una partícula extraña circulante (<strong>émbolo</strong>) que se encaja en un vaso de pequeño calibre.</p>",
+        "entiende": "El trombo se forma en el sitio; el émbolo viaja y tapa un vaso lejos de donde salió.",
+        "truco": "<strong>Trombo = quieto · Émbolo = viajero</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el émbolo se encaja en vasos pequeños?",
+        "respuesta": "Porque circula hasta que llega a un vaso de pequeño calibre por el que ya no cabe."
+      },
+      "aplica": [
+        {
+          "caso": "Oclusión por una partícula que circula.",
+          "opciones": [
+            "Embolia",
+            "Trombosis"
+          ],
+          "buena": 0,
+          "porque": "Émbolo = viajero."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define embolia.",
+        "puntos": [
+          "Oclusión parcial o total de un vaso",
+          "Por una partícula extraña circulante: émbolo",
+          "Se encaja en un vaso de pequeño calibre"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c39",
+      "n": 39,
+      "titulo": "Tipos de embolia",
+      "diapositivas": "57",
+      "gancho": "Además de un trozo de coágulo, ¿qué otras cosas crees que podrían viajar por la sangre?",
+      "profe": {
+        "dice": "<p>Según la naturaleza del émbolo distinguimos:</p><ul><li><strong>Tromboembolia</strong> (la mayoría)</li><li><strong>Embolia grasa</strong>: infiltración de tejido adiposo en vasos tras fractura ósea.</li><li><strong>Embolia aérea o gaseosa</strong>: en buzos, cirugías en tórax o cuello, o heridas profundas en tórax.</li><li><strong>Embolia séptica</strong>: pus, puede contener bacterias</li><li><strong>Embolia tisular</strong>: fragmentos de tejido</li><li><strong>Embolia de cuerpo extraño</strong>: materiales extraños al organismo.</li><li><strong>Embolia de líquido amniótico</strong>: células fetales, cabello, etc. que entran en torrente de la madre</li></ul>",
+        "entiende": "El tipo de embolia lo da el «viajero»: un trozo de trombo, grasa, aire, pus, tejido, un objeto o líquido amniótico.",
+        "truco": "<strong>T-G-A-S-T-C-A</strong>: Trombo, Grasa, Aire, Séptica, Tisular, Cuerpo extraño, Amniótico."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo se produce una embolia grasa?",
+        "respuesta": "Tras una fractura ósea, por infiltración de tejido adiposo en los vasos."
+      },
+      "aplica": [
+        {
+          "caso": "La más frecuente.",
+          "opciones": [
+            "Tromboembolia",
+            "Embolia aérea"
+          ],
+          "buena": 0,
+          "porque": "La mayoría."
+        },
+        {
+          "caso": "Pus, puede contener bacterias.",
+          "opciones": [
+            "Séptica",
+            "Tisular"
+          ],
+          "buena": 0,
+          "porque": "Séptica."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los tipos de embolia.",
+        "puntos": [
+          "Tromboembolia (la mayoría)",
+          "Grasa (fractura) · aérea o gaseosa (buzos, cirugía o heridas de tórax)",
+          "Séptica (pus) · tisular (fragmentos de tejido)",
+          "De cuerpo extraño · de líquido amniótico"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c40",
+      "n": 40,
+      "titulo": "El ictus: dos tipos",
+      "diapositivas": "58",
+      "gancho": "¿De qué dos maneras crees que puede dejar de llegar sangre a una zona del cerebro?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d058.jpg",
+        "imgAlt": "AVC isquémico y hemorrágico (diap. 58)",
+        "dice": "<p><strong>Accidentes vasculares cerebrales (AVC o ictus)</strong>: Interrupciones del riego sanguíneo en alguna parte del cerebro. Puede deberse a estenosis u obstrucción (<strong>AVC isquémicos</strong>) o rotura de vaso (<strong>AVC hemorrágicos</strong>)</p>",
+        "entiende": "O el vaso se tapa (isquémico) o se rompe (hemorrágico).",
+        "truco": "<strong>Tapón o grieta</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia un AVC isquémico de uno hemorrágico?",
+        "respuesta": "El isquémico se debe a estenosis u obstrucción; el hemorrágico, a la rotura de un vaso."
+      },
+      "aplica": [
+        {
+          "caso": "Rotura de un vaso cerebral.",
+          "opciones": [
+            "AVC hemorrágico",
+            "AVC isquémico"
+          ],
+          "buena": 0,
+          "porque": "Hemorrágico."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es un AVC o ictus?",
+        "puntos": [
+          "Interrupción del riego en alguna parte del cerebro",
+          "Isquémico: estenosis u obstrucción",
+          "Hemorrágico: rotura de vaso"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c41",
+      "n": 41,
+      "titulo": "AVC isquémicos",
+      "diapositivas": "59",
+      "gancho": "De cada 10 ictus, ¿cuántos crees que son por un vaso tapado?",
+      "profe": {
+        "dice": "<p><strong>AVC isquémicos</strong> constituyen el <strong>80%</strong>:</p><ul><li><strong>De origen extravascular</strong>: estenosis de arterias debida a vasoconstricción (por disminución del gasto cardiaco o hipotensión arterial)</li><li><strong>De origen intravascular</strong>: émbolo en arteria.<ul><li><strong>Aterotrombótico</strong>: 55%. Trombo en arterias que irrigan el cerebro→isquemia. Ateromas favorecen.</li><li><strong>Embólico</strong>: émbolo llega por la circulación. Causas diversas: cardiopatías, fracturas, tumores, fármacos…</li></ul></li></ul>",
+        "entiende": "8 de cada 10 ictus son por falta de riego. Lo más frecuente es un trombo sobre un ateroma en las arterias del cerebro.",
+        "truco": "Isquémicos <strong>80 %</strong>; aterotrombótico <strong>55 %</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué los ateromas favorecen el ictus aterotrombótico?",
+        "respuesta": "Porque favorecen la formación de un trombo en las arterias que irrigan el cerebro, que produce isquemia."
+      },
+      "aplica": [
+        {
+          "caso": "Porcentaje de AVC isquémicos.",
+          "opciones": [
+            "80 %",
+            "20 %"
+          ],
+          "buena": 0,
+          "porque": "80 %; los hemorrágicos, 20 %."
+        },
+        {
+          "caso": "Émbolo que llega por la circulación.",
+          "opciones": [
+            "Embólico",
+            "Aterotrombótico"
+          ],
+          "buena": 0,
+          "porque": "Embólico."
+        }
+      ],
+      "recuerda": {
+        "pide": "Clasifica los AVC isquémicos.",
+        "puntos": [
+          "80 % de los AVC",
+          "Extravascular: estenosis por vasoconstricción (bajo gasto o hipotensión)",
+          "Intravascular aterotrombótico (55 %): trombo, ateromas",
+          "Intravascular embólico: cardiopatías, fracturas, tumores, fármacos…"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

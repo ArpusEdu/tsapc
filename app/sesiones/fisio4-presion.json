@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "fisio4-presion",
+  "unidad": "fisio4",
+  "bloque": 3,
+  "titulo": "La sangre: tensión arterial y volemia",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 3, conceptos 15 a 18, diapositivas 23 a 27). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Dos números en el tensiómetro",
+    "caso": "Te toman la tensión y la pantalla marca dos números: 125 y 80.",
+    "pregunta": "¿Qué mide cada número? ¿Está dentro de lo normal?",
+    "solucion": "El primero es la tensión arterial máxima o sistólica (TAS): la sangre empujada hacia las arterias aumenta la presión; lo normal es entre 120 y 140 mmHg. El segundo es la mínima o diastólica (TAD), en la diástole y con la válvula aórtica cerrada; lo normal, entre 60 y 90 mmHg. 125/80 está dentro de lo normal.",
+    "claves": [
+      "Máxima = sistólica: 120-140",
+      "Mínima = diastólica: 60-90",
+      "mmHg"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c15",
+      "n": 15,
+      "titulo": "La sangre y la hemodinámica",
+      "diapositivas": "23 y 24",
+      "gancho": "¿La sangre es un líquido o un tejido?",
+      "profe": {
+        "dice": "<p><strong>La sangre:</strong> Tejido conectivo con ME líquida (plasma) y células sanguíneas (eritrocitos y leucocitos) y fragmentos celulares (plaquetas).</p><p><strong>Hemodinámica:</strong> Estudio de la dinámica de la sangre en el interior de los vasos. 2 parámetros hemodinámicos esenciales:</p><ul><li><strong>Tensión arterial</strong></li><li><strong>Volemia</strong></li></ul>",
+        "entiende": "La sangre es un tejido líquido. La hemodinámica mira dos cosas: con qué presión va y cuánta hay.",
+        "truco": "<strong>Presión y cantidad</strong>: tensión y volemia."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la sangre es un tejido?",
+        "respuesta": "Porque es un tejido conectivo con matriz extracelular líquida (plasma), células sanguíneas y fragmentos celulares (plaquetas)."
+      },
+      "aplica": [
+        {
+          "caso": "Los 2 parámetros hemodinámicos esenciales.",
+          "opciones": [
+            "Tensión arterial y volemia",
+            "Frecuencia y temperatura"
+          ],
+          "buena": 0,
+          "porque": "Tensión y volemia."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es la sangre y qué estudia la hemodinámica?",
+        "puntos": [
+          "Conectivo con ME líquida (plasma), eritrocitos, leucocitos y plaquetas",
+          "Hemodinámica: dinámica de la sangre en los vasos",
+          "Parámetros: tensión arterial y volemia"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c16",
+      "n": 16,
+      "titulo": "La tensión arterial",
+      "diapositivas": "25",
+      "gancho": "¿Crees que la presión en tus arterias es la misma en todo momento del latido?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d025.jpg",
+        "imgAlt": "Valores de presión arterial (diap. 25)",
+        "dice": "<p>Presión que ejerce la sangre impulsada por el corazón sobre las paredes de las arterias. Oscila a lo largo del ciclo cardíaco.</p><ul><li><strong>Tensión arterial máxima o sistólica (TAS)</strong>: sangre empujada hacia las arterias aumenta la presión en ellas. Valor normal entre <strong>120 y 140 mmHg</strong></li><li><strong>Tensión arterial mínima o diastólica (TAD)</strong>: diástole y cierre de válvula aórtica. Valor normal entre <strong>60 y 90 mmHg</strong></li></ul>",
+        "entiende": "La máxima es al bombear (sístole) y la mínima al relajarse (diástole).",
+        "truco": "Máxima <strong>120-140</strong>, mínima <strong>60-90</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay una máxima y una mínima?",
+        "respuesta": "Porque la tensión oscila a lo largo del ciclo cardiaco: sube cuando la sangre es empujada (sístole) y baja en la diástole con la aórtica cerrada."
+      },
+      "aplica": [
+        {
+          "caso": "Valor normal de la diastólica.",
+          "opciones": [
+            "60-90 mmHg",
+            "120-140 mmHg"
+          ],
+          "buena": 0,
+          "porque": "120-140 es la sistólica."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define tensión arterial y sus valores normales.",
+        "puntos": [
+          "Presión de la sangre sobre las paredes de las arterias",
+          "Oscila con el ciclo cardiaco",
+          "TAS: 120-140 mmHg",
+          "TAD: 60-90 mmHg"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c17",
+      "n": 17,
+      "titulo": "Quién regula la presión",
+      "diapositivas": "26",
+      "gancho": "Si te deshidratas, ¿qué órgano crees que intenta «guardar» agua para que no baje la tensión?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d026.jpg",
+        "imgAlt": "Regulación por la ADH (diap. 26)",
+        "dice": "<p>Tensión varía de una persona a otra en función de edad, nerviosismo, ejercicio…</p><p>Presión sanguínea regulada por:</p><ul><li><strong>SN vegetativo</strong>, actúa a nivel de gasto cardíaco, fr cardiaca, fuerza de contracción y resistencia periférica</li><li><strong>Sistema endocrino</strong>: hormonas que aumentan o reducen la volemia (Antidiurética y aldosterona)</li><li><strong>Aparato urinario</strong>: regulación de la cantidad de iones y H<sub>2</sub>O que se retiran de la sangre y se eliminan con la orina</li></ul>",
+        "entiende": "Tres mandos: los nervios (rápido), las hormonas (cambian el volumen de sangre) y el riñón (decide cuánta agua y sales se van con la orina).",
+        "truco": "<strong>Nervios, Hormonas, Riñón</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cómo influyen las hormonas en la presión?",
+        "respuesta": "La antidiurética y la aldosterona aumentan o reducen la volemia, y con ella la presión."
+      },
+      "aplica": [
+        {
+          "caso": "Actúa sobre gasto cardiaco, frecuencia, fuerza y resistencia periférica.",
+          "opciones": [
+            "SN vegetativo",
+            "Aparato urinario"
+          ],
+          "buena": 0,
+          "porque": "SN vegetativo."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué regula la presión sanguínea?",
+        "puntos": [
+          "Varía con edad, nerviosismo, ejercicio…",
+          "SN vegetativo: gasto, frecuencia, contracción, resistencia periférica",
+          "Sistema endocrino: antidiurética y aldosterona (volemia)",
+          "Aparato urinario: iones y agua que se eliminan con la orina"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c18",
+      "n": 18,
+      "titulo": "La volemia",
+      "diapositivas": "27",
+      "gancho": "¿Qué crees que le pasa a la tensión si de repente pierdes mucha sangre?",
+      "profe": {
+        "dice": "<p><strong>Volemia:</strong> Volumen total de sangre circulante (<strong>5-6 litros</strong> en adultos).</p><p>Distintos mecanismos para mantenerla constante (sed, aumento o reducción de reabsorción de H<sub>2</sub>O).</p><ul><li>Aumento de volemia = aumento de TA, puede llevar a edema, rotura de vasos pequeños…</li><li>Hipovolemia →Hipotensión puede comprometer la circulación</li></ul>",
+        "entiende": "Más sangre = más presión (riesgo de edema o roturas). Menos sangre = menos presión (la sangre no llega bien).",
+        "truco": "<strong>5-6 litros</strong>; volemia y tensión suben y bajan juntas."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el aumento de volemia puede provocar edema?",
+        "respuesta": "Porque más volumen de sangre aumenta la tensión arterial, y eso puede llevar a edema o rotura de vasos pequeños."
+      },
+      "aplica": [
+        {
+          "caso": "Volemia de un adulto.",
+          "opciones": [
+            "5-6 litros",
+            "1-2 litros"
+          ],
+          "buena": 0,
+          "porque": "5-6 litros."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la volemia.",
+        "puntos": [
+          "Volumen total de sangre circulante: 5-6 l",
+          "Se mantiene con sed y reabsorción de agua",
+          "Aumento de volemia = aumento de TA: edema, rotura de vasos",
+          "Hipovolemia → hipotensión: compromete la circulación"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

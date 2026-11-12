@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "id": "fisio4-manifestaciones",
+  "unidad": "fisio4",
+  "bloque": 12,
+  "titulo": "Lo que dice la orina y el cólico nefrítico",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 12, conceptos 70 a 73, diapositivas 94 a 99). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Muchas veces, pero poca",
+    "caso": "Un paciente dice que orina muchísimas veces al día. Al medirlo, la cantidad total de orina en 24 horas es normal, unos 1500 cm³.",
+    "pregunta": "¿Tiene poliuria? ¿Cómo se llama lo que le pasa?",
+    "solucion": "No tiene poliuria (más de 2500 cm³ al día), porque la cantidad es normal (1500 cm³). Tiene polaquiuria: aumento del número de micciones diarias sin aumento del volumen. Es una alteración de la eliminación de la orina, no de su cantidad.",
+    "claves": [
+      "Poliuria = cantidad (>2500 cm³)",
+      "Polaquiuria = número de veces",
+      "Normal: 1500 cm³ al día"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c70",
+      "n": 70,
+      "titulo": "Manifestaciones urinarias",
+      "diapositivas": "94 y 95",
+      "gancho": "¿Por qué crees que en un análisis se mira tanto la orina?",
+      "profe": {
+        "dice": "<p>Composición y características de la orina es un indicador de alteraciones en la sangre.</p><p>Existen otros procesos patológicos en las vías urinarias: Obstrucciones, Infecciones, Mal funcionamiento de glomérulos..</p><p>Cuando aparato urinario no puede desempeñar sus funciones se produce <strong>insuficiencia renal</strong></p><p><strong>Manifestaciones urinarias</strong></p><ul><li>Alteraciones de la cantidad de orina</li><li>Alteraciones de la eliminación de orina</li><li>Alteraciones de la composición de la orina</li></ul>",
+        "entiende": "La orina es un espejo de la sangre. Puede cambiar en cuánta hay, en cómo sale o en qué lleva.",
+        "truco": "<strong>Cantidad, eliminación, composición</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué es la insuficiencia renal?",
+        "respuesta": "Lo que se produce cuando el aparato urinario no puede desempeñar sus funciones."
+      },
+      "aplica": [
+        {
+          "caso": "La orina es indicador de alteraciones en…",
+          "opciones": [
+            "La sangre",
+            "Los huesos"
+          ],
+          "buena": 0,
+          "porque": "En la sangre."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué manifestaciones urinarias hay?",
+        "puntos": [
+          "La orina indica alteraciones en la sangre",
+          "Otros procesos: obstrucciones, infecciones, glomérulos",
+          "Alteraciones de la cantidad, de la eliminación y de la composición"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c71",
+      "n": 71,
+      "titulo": "La cantidad de orina",
+      "diapositivas": "96",
+      "gancho": "¿Cuánta orina crees que es normal al día: medio litro, litro y medio o tres litros?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d096.jpg",
+        "imgAlt": "Cantidad de orina (diap. 96)",
+        "dice": "<p>Normalmente <strong>1500cm<sup>3</sup></strong> de orina al día</p><ul><li><strong>Poliuria</strong>: más de 2500cm<sup>3</sup>/día</li><li><strong>Oliguria</strong>: entre 500 y 1000 cm<sup>3</sup>/día</li><li><strong>Anuria</strong>: inferior a 100cm<sup>3</sup>/día</li></ul>",
+        "entiende": "1 cm³ = 1 ml: lo normal es litro y medio al día.",
+        "truco": "<strong>Poli = mucha (&gt;2500) · Oligo = poca (500-1000) · An = nada (&lt;100)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia la oliguria de la anuria?",
+        "respuesta": "La oliguria es entre 500 y 1000 cm³/día; la anuria, menos de 100 cm³/día."
+      },
+      "aplica": [
+        {
+          "caso": "3000 cm³ al día.",
+          "opciones": [
+            "Poliuria",
+            "Oliguria"
+          ],
+          "buena": 0,
+          "porque": "Más de 2500."
+        },
+        {
+          "caso": "50 cm³ al día.",
+          "opciones": [
+            "Anuria",
+            "Oliguria"
+          ],
+          "buena": 0,
+          "porque": "Menos de 100."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las alteraciones de la cantidad de orina.",
+        "puntos": [
+          "Normal: 1500 cm³/día",
+          "Poliuria: más de 2500 cm³/día",
+          "Oliguria: 500-1000 cm³/día",
+          "Anuria: menos de 100 cm³/día"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c72",
+      "n": 72,
+      "titulo": "Eliminación y composición",
+      "diapositivas": "97 y 98",
+      "gancho": "Además de cuánto orinas, ¿qué otras cosas pueden ir mal al orinar?",
+      "profe": {
+        "dice": "<p>Alteraciones de la eliminación de la orina</p><ul><li><strong>Polaquiuria</strong>: aumento en nº de micciones diarias, sin aumento del volumen</li><li><strong>Disuria</strong>: molestias y dificultad al orinar</li><li><strong>Retención urinaria</strong>: acumulación de orina en la vejiga, incapacidad para expulsarla.</li><li><strong>Nicturia</strong>: aumento de emisión de orina por la noche</li></ul><p>Alteraciones de la composición de la orina: <strong>Hematuria</strong> (presencia de sangre). Análisis de composición (pH..)</p>",
+        "entiende": "Polaquiuria no es orinar más cantidad (eso es poliuria), sino ir más veces.",
+        "truco": "<strong>Polaquiuria = muchas veces · Poliuria = mucha cantidad · Nicturia = de noche</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué es la retención urinaria?",
+        "respuesta": "La acumulación de orina en la vejiga con incapacidad para expulsarla."
+      },
+      "aplica": [
+        {
+          "caso": "Molestias y dificultad al orinar.",
+          "opciones": [
+            "Disuria",
+            "Nicturia"
+          ],
+          "buena": 0,
+          "porque": "Nicturia: de noche."
+        },
+        {
+          "caso": "Sangre en la orina.",
+          "opciones": [
+            "Hematuria",
+            "Piuria"
+          ],
+          "buena": 0,
+          "porque": "Piuria es pus."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las alteraciones de la eliminación y la composición.",
+        "puntos": [
+          "Polaquiuria: más micciones sin más volumen",
+          "Disuria: molestias y dificultad · retención: no se puede expulsar",
+          "Nicturia: más orina por la noche",
+          "Composición: hematuria (sangre), análisis (pH…)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c73",
+      "n": 73,
+      "titulo": "Cólico nefrítico",
+      "diapositivas": "99",
+      "gancho": "¿Qué crees que duele tanto cuando una «piedra» del riñón se atasca?",
+      "profe": {
+        "dice": "<p><strong>Obstrucciones de las vías renales</strong></p><p><strong>Cólico nefrítico</strong>: cuadro de dolor producido como consecuencia de una obstrucción en el paso de la orina. 3,5% de todas las urgencias hospitalarias.</p><p>Causas diversas:</p><ul><li>Litiasis, urolitiasis, nefrolitiasis (cálculos)</li><li>Coágulos</li><li>Tumor</li><li>Patología retroperitoneal (fibrosis o linfoma)</li><li>Traumatismo renal. Muy grave si incluye rotura de vasos.</li></ul>",
+        "entiende": "Algo tapa el paso de la orina (sobre todo una piedra) y duele muchísimo.",
+        "truco": "Cólico = <strong>obstrucción + dolor</strong>; <strong>3,5 %</strong> de urgencias."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo es muy grave un traumatismo renal?",
+        "respuesta": "Cuando incluye rotura de vasos."
+      },
+      "aplica": [
+        {
+          "caso": "Causa más conocida del cólico nefrítico.",
+          "opciones": [
+            "Cálculos (litiasis)",
+            "Varices"
+          ],
+          "buena": 0,
+          "porque": "También coágulos, tumores…"
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el cólico nefrítico.",
+        "puntos": [
+          "Dolor por una obstrucción del paso de la orina",
+          "3,5 % de las urgencias hospitalarias",
+          "Causas: cálculos (litiasis), coágulos, tumor",
+          "Patología retroperitoneal y traumatismo renal"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "id": "fisio4-latido",
+  "unidad": "fisio4",
+  "bloque": 1,
+  "titulo": "El latido: ciclo cardiaco y electricidad",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 1, conceptos 5 a 9, diapositivas 8 a 14). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El pulso que se acelera",
+    "caso": "Sales corriendo a por el autobús y notas el corazón a toda velocidad. Diez minutos después, sentada, vuelve a latir tranquilo. Nadie ha tocado tu corazón.",
+    "pregunta": "¿Dónde nace cada latido y quién lo acelera o lo frena?",
+    "solucion": "El impulso se genera en el nódulo sinusal, en la aurícula derecha: es el marcapasos. Ese nódulo recibe inervación simpática y parasimpática: la simpática aumenta la frecuencia y la parasimpática la reduce.",
+    "claves": [
+      "Nódulo sinusal = marcapasos (AD)",
+      "Simpático: sube la frecuencia",
+      "Parasimpático: la baja"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c5",
+      "n": 5,
+      "titulo": "La irrigación del corazón",
+      "diapositivas": "8",
+      "gancho": "El corazón bombea sangre a todo el cuerpo. ¿Y quién le da sangre a él?",
+      "profe": {
+        "dice": "<p>Irrigación del corazón mediante <strong>arterias coronarias</strong>, nacen en la aorta y se ramifican. <strong>Venas coronarias</strong> recogen sangre desoxigenada y la llevan a la AD.</p>",
+        "entiende": "El corazón también necesita sangre para sí mismo: se la dan las coronarias, que salen de la aorta. Si se tapan, hay infarto.",
+        "truco": "<strong>Coronarias = corona</strong> alrededor del corazón."
+      },
+      "porque": {
+        "pregunta": "¿Adónde llevan la sangre las venas coronarias?",
+        "respuesta": "Recogen la sangre desoxigenada del corazón y la llevan a la aurícula derecha."
+      },
+      "aplica": [
+        {
+          "caso": "Las arterias coronarias nacen en…",
+          "opciones": [
+            "La aorta",
+            "La arteria pulmonar"
+          ],
+          "buena": 0,
+          "porque": "Aorta."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se irriga el corazón?",
+        "puntos": [
+          "Arterias coronarias: nacen en la aorta y se ramifican",
+          "Venas coronarias: recogen sangre desoxigenada y la llevan a la AD"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c6",
+      "n": 6,
+      "titulo": "El ciclo cardiaco",
+      "diapositivas": "9",
+      "gancho": "¿De qué crees que depende cuánta sangre sale en cada latido?",
+      "profe": {
+        "dice": "<p><strong>Ciclo cardiaco</strong>: fenómenos físicos que suceden en las cavidades cardiacas y en los grandes vasos durante las fases de contracción y relajación del corazón.</p><p>Cantidad de sangre expulsada/latido depende de:</p><ul><li><strong>Contractilidad</strong>: fuerza del miocardio</li><li><strong>Precarga</strong>: cantidad de sangre que recibe el corazón a través de venas cavas</li><li><strong>Poscarga</strong>: resistencia a salir del VI</li><li><strong>Frecuencia cardiaca</strong>: pulsaciones/minuto</li></ul>",
+        "entiende": "Cuánta sangre sale en cada latido depende de la fuerza, de cuánta entra, de lo que cuesta salir y de lo rápido que late.",
+        "truco": "<strong>CPPF</strong>: Contractilidad, Precarga, Poscarga, Frecuencia."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia hay entre precarga y poscarga?",
+        "respuesta": "La precarga es la sangre que recibe el corazón por las venas cavas; la poscarga, la resistencia a salir del ventrículo izquierdo."
+      },
+      "aplica": [
+        {
+          "caso": "Fuerza del miocardio.",
+          "opciones": [
+            "Contractilidad",
+            "Precarga"
+          ],
+          "buena": 0,
+          "porque": "Contractilidad."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define ciclo cardiaco y di de qué depende la sangre expulsada por latido.",
+        "puntos": [
+          "Fenómenos físicos en cavidades y grandes vasos durante contracción y relajación",
+          "Contractilidad: fuerza del miocardio",
+          "Precarga: sangre que llega por las venas cavas · poscarga: resistencia a salir del VI",
+          "Frecuencia cardiaca: pulsaciones/minuto"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c7",
+      "n": 7,
+      "titulo": "Sístole y diástole",
+      "diapositivas": "10 y 11",
+      "gancho": "Cuando el ventrículo se contrae, ¿qué válvulas crees que tienen que abrirse y cuáles cerrarse?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d011.jpg",
+        "imgAlt": "Diástole y sístole (diap. 11)",
+        "dice": "<p>Fases del ciclo cardiaco</p><ul><li><strong>Sístole</strong>: contracción de ventrículos. Apertura válvulas pulmonar y aórtica. Cierre válvulas tricúspide y mitral</li><li><strong>Diástole</strong>: Ventrículos casi vacíos, P se reduce→apertura válvulas tricúspide y mitral. Cierre pulmonar y aórtica. Ventrículos se relajan, aurículas se contraen→sangre pasa de aurículas a ventrículos</li></ul>",
+        "entiende": "En sístole se abren las puertas de salida (pulmonar y aórtica) y se cierran las de entrada; en diástole, al revés.",
+        "truco": "<strong>Sístole = Sale</strong>; <strong>Diástole = se Dilata y se llena</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué en la sístole se cierran la tricúspide y la mitral?",
+        "respuesta": "Para que la sangre que empuja el ventrículo salga por la pulmonar y la aórtica y no vuelva a las aurículas."
+      },
+      "aplica": [
+        {
+          "caso": "Se abren la tricúspide y la mitral.",
+          "opciones": [
+            "Diástole",
+            "Sístole"
+          ],
+          "buena": 0,
+          "porque": "En diástole pasa la sangre de aurículas a ventrículos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la sístole y la diástole.",
+        "puntos": [
+          "Sístole: contracción de ventrículos; se abren pulmonar y aórtica; se cierran tricúspide y mitral",
+          "Diástole: ventrículos casi vacíos, baja la presión; se abren tricúspide y mitral, se cierran pulmonar y aórtica",
+          "Ventrículos se relajan y aurículas se contraen: la sangre pasa a los ventrículos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c8",
+      "n": 8,
+      "titulo": "La conducción eléctrica",
+      "diapositivas": "12 y 13",
+      "gancho": "¿Qué crees que pone de acuerdo a las 4 cavidades para que no se contraigan a lo loco?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d013.jpg",
+        "imgAlt": "Nódulo sinusal y auriculoventricular (diap. 13)",
+        "dice": "<p>Corazón posee un <strong>sistema intrínseco de conducción eléctrica</strong> formado por fibras musculares modificadas.</p><ol><li>Impulso se genera en <strong>Nódulo sinusal (AD)</strong> → <strong>marcapasos</strong></li><li>Impulso se extiende por aurículas y provoca su contracción</li><li>Impulso llega al <strong>nódulo auriculoventricular</strong></li><li>Impulso se extiende por los ventrículos y provoca contracción (<strong>sístole</strong>)</li></ol>",
+        "entiende": "El corazón lleva su propio «enchufe»: la chispa nace en el nódulo sinusal, contrae las aurículas, pasa por el nódulo auriculoventricular y contrae los ventrículos.",
+        "truco": "<strong>Sinusal → aurículas → AV → ventrículos</strong>: de arriba abajo."
+      },
+      "porque": {
+        "pregunta": "¿Por qué las aurículas se contraen antes que los ventrículos?",
+        "respuesta": "Porque el impulso nace en el nódulo sinusal (AD), se extiende primero por las aurículas y luego pasa por el nódulo auriculoventricular hacia los ventrículos."
+      },
+      "aplica": [
+        {
+          "caso": "Se llama «marcapasos».",
+          "opciones": [
+            "Nódulo sinusal",
+            "Nódulo auriculoventricular"
+          ],
+          "buena": 0,
+          "porque": "El impulso se genera ahí."
+        }
+      ],
+      "recuerda": {
+        "pide": "Ordena el recorrido del impulso eléctrico.",
+        "puntos": [
+          "Sistema intrínseco formado por fibras musculares modificadas",
+          "1. Nódulo sinusal (AD): marcapasos · 2. Aurículas: se contraen",
+          "3. Nódulo auriculoventricular",
+          "4. Ventrículos: contracción (sístole)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c9",
+      "n": 9,
+      "titulo": "Simpático y parasimpático",
+      "diapositivas": "14",
+      "gancho": "¿Por qué el corazón late más rápido cuando te asustas?",
+      "profe": {
+        "dice": "<p>Nódulo sinusal recibe inervación <strong>simpática</strong> y <strong>parasimpática</strong></p><ul><li>Simpática <strong>aumenta</strong> frecuencia</li><li>Parasimpática <strong>reduce</strong> frecuencia</li></ul>",
+        "entiende": "El sistema nervioso no crea el latido, pero lo acelera (simpático, en tensión o ejercicio) o lo frena (parasimpático, en reposo).",
+        "truco": "<strong>Simpático = Sube; Parasimpático = Para</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Sobre qué estructura actúan?",
+        "respuesta": "Sobre el nódulo sinusal, que recibe inervación simpática y parasimpática."
+      },
+      "aplica": [
+        {
+          "caso": "Reduce la frecuencia cardiaca.",
+          "opciones": [
+            "Parasimpático",
+            "Simpático"
+          ],
+          "buena": 0,
+          "porque": "El simpático la aumenta."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo regula el sistema nervioso la frecuencia?",
+        "puntos": [
+          "El nódulo sinusal recibe inervación simpática y parasimpática",
+          "Simpática: aumenta la frecuencia",
+          "Parasimpática: la reduce"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "id": "fisio4-hemostasia",
+  "unidad": "fisio4",
+  "bloque": 4,
+  "titulo": "Parar una hemorragia: hemostasia y cascada",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 4, conceptos 19 a 23, diapositivas 28 a 34). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El corte que deja de sangrar",
+    "caso": "Te cortas un dedo con un papel. Al principio sale sangre, pero a los pocos minutos deja de salir aunque no hagas nada.",
+    "pregunta": "¿Qué ha hecho tu cuerpo, paso a paso?",
+    "solucion": "La hemostasia, en 3 fases. 1) Vasoconstricción local: las plaquetas detectan la rotura del endotelio y liberan sustancias que estrechan el vaso, y llega menos sangre. 2) Agregado plaquetario: las plaquetas se aglomeran y taponan la lesión. 3) Coágulo: el agregado se transforma en coágulo (coagulación: el fibrinógeno pasa a fibrina por la trombina).",
+    "claves": [
+      "Vasoconstricción",
+      "Tapón de plaquetas",
+      "Coágulo de fibrina"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c19",
+      "n": 19,
+      "titulo": "La hemostasia",
+      "diapositivas": "28 y 29",
+      "gancho": "Si un grifo pierde agua, ¿qué harías primero: taparlo o cerrarlo un poco?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d028.jpg",
+        "imgAlt": "Hemostasia (diap. 28)",
+        "dice": "<p>Conjunto de procesos fisiológicos que tiene por objetivo detener una hemorragia. Ocurre en 3 fases:</p><ol><li><strong>Vasoconstricción local</strong>: rotura del endotelio detectada por plaquetas, liberan sustancias que provocan vasoconstricción. Se consigue reducir el flujo de sangre que llega a la zona.</li><li><strong>Formación de agregado plaquetario</strong>: estrechamiento del vaso por vasoconstricción favorece aglomeración de las plaquetas, agregado tapona zona lesionada.</li><li><strong>Formación del coágulo</strong>: agregado se transforma en coágulo (coagulación)</li></ol>",
+        "entiende": "Primero se cierra un poco el grifo (vasoconstricción), luego se tapa con plaquetas y por último se refuerza con un coágulo.",
+        "truco": "<strong>Cierra, Tapa, Cuaja</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la vasoconstricción ayuda a las plaquetas?",
+        "respuesta": "Porque al estrecharse el vaso llega menos sangre y se favorece la aglomeración de las plaquetas."
+      },
+      "aplica": [
+        {
+          "caso": "Segunda fase de la hemostasia.",
+          "opciones": [
+            "Formación de agregado plaquetario",
+            "Formación del coágulo"
+          ],
+          "buena": 0,
+          "porque": "Vasoconstricción → agregado → coágulo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la hemostasia.",
+        "puntos": [
+          "Procesos para detener una hemorragia",
+          "1. Vasoconstricción local (las plaquetas detectan la rotura)",
+          "2. Agregado plaquetario: tapona",
+          "3. Coágulo (coagulación)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c20",
+      "n": 20,
+      "titulo": "Fibrinógeno, fibrina y trombina",
+      "diapositivas": "30",
+      "gancho": "Un tapón de plaquetas es frágil. ¿Con qué lo reforzarías para que no se suelte?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d030.jpg",
+        "imgAlt": "Fibrinógeno y fibrina (diap. 30)",
+        "dice": "<p><strong>La coagulación–Cascada de coagulación</strong>: Transformación del <strong>fibrinógeno (soluble)</strong> en <strong>fibrina (insoluble)</strong>, precipita en forma de filamentos que se entrelazan y atrapan elementos celulares hasta formar el coágulo.</p><p>Para la transformación se requiere activación del enzima <strong>trombina</strong> por parte de los <strong>factores de coagulación</strong></p>",
+        "entiende": "El fibrinógeno va disuelto en la sangre; la trombina lo convierte en fibrina, unos hilos que forman una red y atrapan las células.",
+        "truco": "<strong>Fibrinógeno (disuelto) → trombina → fibrina (red)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el fibrinógeno no forma coágulos todo el tiempo?",
+        "respuesta": "Porque es soluble; solo cuando la trombina, activada por los factores de coagulación, lo transforma en fibrina (insoluble) precipita en filamentos."
+      },
+      "aplica": [
+        {
+          "caso": "Forma insoluble que atrapa las células.",
+          "opciones": [
+            "Fibrina",
+            "Fibrinógeno"
+          ],
+          "buena": 0,
+          "porque": "Fibrina."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la coagulación.",
+        "puntos": [
+          "Fibrinógeno (soluble) → fibrina (insoluble)",
+          "Filamentos que se entrelazan y atrapan células: coágulo",
+          "Requiere la trombina, activada por los factores de coagulación"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c21",
+      "n": 21,
+      "titulo": "Vía intrínseca y extrínseca",
+      "diapositivas": "31",
+      "gancho": "¿Crees que la coagulación se enciende igual si se rompe un vaso por dentro que si se lesiona el tejido de alrededor?",
+      "profe": {
+        "dice": "<p>Cascada de coagulación mediante 2 mecanismos:</p><ul><li><strong>Vía intrínseca</strong>: activada por lesión vascular. Endotelio es antitrombogénico, pero el tejido tras él es trombogénico. Al romperse, plaquetas se fijarán activando coagulación</li><li><strong>Vía extrínseca</strong>: lesión tisular libera factor de coagulación que desencadena cascada de coagulación.</li></ul><p>Las dos tienen una <strong>vía común</strong></p>",
+        "entiende": "Dos formas de encender la cascada: desde dentro del vaso (intrínseca) o desde el tejido dañado (extrínseca). Las dos acaban en el mismo camino.",
+        "truco": "<strong>Intrínseca = vaso · Extrínseca = tejido</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la rotura del endotelio activa la coagulación?",
+        "respuesta": "Porque el endotelio es antitrombogénico, pero el tejido tras él es trombogénico: al romperse, las plaquetas se fijan y activan la coagulación."
+      },
+      "aplica": [
+        {
+          "caso": "Lesión tisular que libera un factor de coagulación.",
+          "opciones": [
+            "Vía extrínseca",
+            "Vía intrínseca"
+          ],
+          "buena": 0,
+          "porque": "Extrínseca."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara la vía intrínseca y la extrínseca.",
+        "puntos": [
+          "Intrínseca: activada por lesión vascular",
+          "Extrínseca: la lesión tisular libera un factor de coagulación",
+          "Las dos tienen una vía común"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c22",
+      "n": 22,
+      "titulo": "La vía común",
+      "diapositivas": "32",
+      "gancho": "Las dos vías tienen que acabar fabricando fibrina. ¿Qué crees que pasa justo antes?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d032.jpg",
+        "imgAlt": "Vía común (diap. 32)",
+        "dice": "<p><strong>Cascada de coagulación: vía común</strong></p><ol><li>Activación factor X</li><li>Factor Xa activa factor II (protrombina→trombina)</li><li>Factor IIa activa Factor I. (fibrinógeno→fibrina soluble)</li><li>Factor XIIIa insolubiliza Ia→precipitación</li></ol>",
+        "entiende": "Como fichas de dominó: X activa II (trombina), II activa I (fibrina) y XIII la vuelve insoluble.",
+        "truco": "<strong>10 → 2 → 1 → 13</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué hace el factor XIII?",
+        "respuesta": "El XIIIa insolubiliza la fibrina (Ia) y provoca su precipitación."
+      },
+      "aplica": [
+        {
+          "caso": "Factor II activado.",
+          "opciones": [
+            "Trombina",
+            "Fibrina"
+          ],
+          "buena": 0,
+          "porque": "Protrombina → trombina."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 pasos de la vía común.",
+        "puntos": [
+          "1. Activación del factor X",
+          "2. Xa activa II (protrombina → trombina)",
+          "3. IIa activa I (fibrinógeno → fibrina soluble)",
+          "4. XIIIa insolubiliza Ia → precipitación"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c23",
+      "n": 23,
+      "titulo": "Dónde se fabrican los factores",
+      "diapositivas": "34",
+      "gancho": "Si casi todos los factores salen del mismo órgano, ¿qué crees que le pasa a la coagulación si ese órgano enferma?",
+      "profe": {
+        "dice": "<p>Factores de coagulación: Según su lugar de síntesis</p><ul><li><strong>Plasmáticos</strong>: VII, IX, X, XI, XII y XIII, precalicreína (PK) y quininógeno de alto peso molecular</li><li><strong>Hepáticos</strong>: I, II, V, VII, VIII-C, IX, X, XI, LXIII, PK</li><li><strong>Tisulares</strong>: tromboplastina tisular, colágeno, parte del factor VIII</li><li><strong>Plaquetarios</strong>: FP3</li></ul>",
+        "entiende": "La mayoría de los factores los fabrica el hígado: por eso una enfermedad del hígado altera la coagulación.",
+        "truco": "<strong>4 orígenes: plasma, hígado, tejidos, plaquetas</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué factor es plaquetario?",
+        "respuesta": "El FP3."
+      },
+      "aplica": [
+        {
+          "caso": "Tromboplastina tisular y colágeno.",
+          "opciones": [
+            "Tisulares",
+            "Hepáticos"
+          ],
+          "buena": 0,
+          "porque": "Tisulares."
+        }
+      ],
+      "recuerda": {
+        "pide": "Clasifica los factores por su lugar de síntesis.",
+        "puntos": [
+          "Plasmáticos: VII, IX, X, XI, XII, XIII, PK y quininógeno",
+          "Hepáticos: I, II, V, VII, VIII-C, IX, X, XI…",
+          "Tisulares: tromboplastina, colágeno, parte del VIII",
+          "Plaquetarios: FP3"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

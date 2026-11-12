@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "id": "fisio4-rinon",
+  "unidad": "fisio4",
+  "bloque": 10,
+  "titulo": "El riñón y las vías urinarias",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 10, conceptos 61 a 65, diapositivas 81 a 87). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Un millón de filtros",
+    "caso": "Cada riñón filtra la sangre de todo el cuerpo una y otra vez. No lo hace con un único filtro grande, sino con más de un millón de unidades pequeñas que trabajan a la vez.",
+    "pregunta": "¿Cómo se llama esa unidad y qué partes tiene?",
+    "solucion": "La nefrona, unidad estructural y funcional del riñón (más de un millón por riñón). Tiene el corpúsculo renal o de Malpighi (glomérulo, un ovillo de capilares, rodeado por la cápsula de Bowman) y el sistema tubular: túbulo contorneado proximal, asa de Henle y túbulo contorneado distal, que desemboca en el tubo colector.",
+    "claves": [
+      "Nefrona: >1 millón por riñón",
+      "Glomérulo + cápsula de Bowman",
+      "Proximal → Henle → distal → colector"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c61",
+      "n": 61,
+      "titulo": "El aparato urinario y la nefrona",
+      "diapositivas": "81 y 82",
+      "gancho": "¿Qué tiene que ver el riñón con la cantidad de sangre que circula?",
+      "profe": {
+        "dice": "<p>Aparato urinario relacionado con aparatos reproductivos. Desde punto de vista fisiológico, relacionado con circulatorio.</p><p>Aparato urinario filtra la sangre, la libera de sustancias de desecho y participa activamente en el mantenimiento de la volemia</p><p><strong>Riñones</strong>: Encargados de la filtración de sangre y formación de orina.</p><p>La <strong>nefrona</strong> es la unidad estructural y funcional del riñón. Cada riñón está constituido por <strong>más de un millón de nefronas</strong>. Cada una de ellas forma orina, que conduce hacia las vías urinarias.</p>",
+        "entiende": "El riñón es un filtro hecho de más de un millón de filtros pequeños: las nefronas.",
+        "truco": "<strong>Nefrona = filtro</strong>; más de <strong>1 millón</strong> por riñón."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se relaciona el aparato urinario con el circulatorio?",
+        "respuesta": "Porque filtra la sangre, la libera de sustancias de desecho y participa activamente en el mantenimiento de la volemia."
+      },
+      "aplica": [
+        {
+          "caso": "Unidad estructural y funcional del riñón.",
+          "opciones": [
+            "Nefrona",
+            "Uréter"
+          ],
+          "buena": 0,
+          "porque": "Nefrona."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué hace el aparato urinario y qué es la nefrona?",
+        "puntos": [
+          "Filtra la sangre, elimina desechos y mantiene la volemia",
+          "Riñones: filtración de la sangre y formación de orina",
+          "Nefrona: unidad estructural y funcional",
+          "Más de un millón por riñón; cada una forma orina"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c62",
+      "n": 62,
+      "titulo": "Las partes de la nefrona",
+      "diapositivas": "83",
+      "gancho": "Si la sangre se filtra en un ovillo de capilares, ¿qué haría falta alrededor para recoger lo filtrado?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d087.jpg",
+        "imgAlt": "La nefrona y sus vasos (diap. 87)",
+        "dice": "<p>Nefrona constituida por:</p><ul><li><strong>Corpúsculo renal o de Malpighi</strong><ul><li><strong>Glomérulo</strong> (ovillo de capilares a partir de arteria renal)</li><li><strong>Cápsula de Bowman</strong> rodeando glomérulo.</li></ul></li><li><strong>Sistema tubular</strong> continuación de la cápsula.<ul><li>Túbulo contorneado proximal</li><li>Asa de Henle</li><li>Túbulo contorneado distal, desemboca en tubo colector que acaba en papila renal</li></ul></li></ul>",
+        "entiende": "Primero se filtra (glomérulo dentro de la cápsula de Bowman) y luego el líquido recorre unos tubos donde se ajusta qué se queda y qué se va.",
+        "truco": "Orden: <strong>Glomérulo · Bowman · proximal · Henle · distal · colector</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué rodea al glomérulo?",
+        "respuesta": "La cápsula de Bowman; juntos forman el corpúsculo renal o de Malpighi."
+      },
+      "aplica": [
+        {
+          "caso": "Tramo entre el túbulo proximal y el distal.",
+          "opciones": [
+            "Asa de Henle",
+            "Tubo colector"
+          ],
+          "buena": 0,
+          "porque": "Proximal → Henle → distal."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las partes de la nefrona.",
+        "puntos": [
+          "Corpúsculo renal o de Malpighi: glomérulo + cápsula de Bowman",
+          "Sistema tubular: túbulo contorneado proximal",
+          "Asa de Henle · túbulo contorneado distal",
+          "Tubo colector → papila renal"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c63",
+      "n": 63,
+      "titulo": "La estructura del riñón",
+      "diapositivas": "85",
+      "gancho": "Si cortas un riñón por la mitad, ¿qué zonas crees que verías de fuera adentro?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d085.jpg",
+        "imgAlt": "Corte del riñón (diap. 85)",
+        "dice": "<p>Estructura de los riñones:</p><ul><li><strong>Cápsula renal</strong>: externa, formada por tejido conjuntivo fibroso</li><li><strong>Zona cortical</strong>: amarillenta y granulosa, aquí se encuentran corpúsculos renales, se continúa hacia el interior con las columnas renales.</li><li><strong>Zona medular</strong>: dividida en pirámides renales. Contiene las asas de Henle y parte del túbulo colector, que desemboca en papila renal, que continúa con cáliz renal menor.</li><li>Cada 2 o 3 cálices renales menores convergen para formar un <strong>cáliz mayor</strong>, todos desembocan en la <strong>pelvis renal</strong></li><li><strong>Hilio renal</strong>: depresión en puntos de entrada y salida.</li></ul>",
+        "entiende": "Fuera, la corteza con los filtros; dentro, la médula con los tubos; y en el centro, los cálices y la pelvis, que recogen la orina.",
+        "truco": "<strong>Cápsula → corteza → médula → cálices menores → mayores → pelvis</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Dónde están los corpúsculos renales y dónde las asas de Henle?",
+        "respuesta": "Los corpúsculos, en la zona cortical; las asas de Henle y parte del túbulo colector, en la zona medular (pirámides)."
+      },
+      "aplica": [
+        {
+          "caso": "Donde desembocan todos los cálices mayores.",
+          "opciones": [
+            "Pelvis renal",
+            "Hilio renal"
+          ],
+          "buena": 0,
+          "porque": "Pelvis renal."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe la estructura del riñón.",
+        "puntos": [
+          "Cápsula renal: conjuntivo fibroso",
+          "Zona cortical: corpúsculos; columnas renales",
+          "Zona medular: pirámides, asas de Henle, colectores → papila → cáliz menor",
+          "Cálices menores → mayor → pelvis renal · hilio: entrada y salida"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c64",
+      "n": 64,
+      "titulo": "Las vías urinarias",
+      "diapositivas": "86",
+      "gancho": "¿Por dónde sale la orina desde el riñón hasta fuera?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d086.jpg",
+        "imgAlt": "Vías urinarias (diap. 86)",
+        "dice": "<p><strong>Las vías urinarias</strong>: Conducen orina al exterior del cuerpo. Formadas por <strong>uréteres</strong>, que salen de cada riñón y conducen orina hasta la <strong>vejiga</strong>, donde se almacena. Finalmente, <strong>uretra</strong> conduce orina hasta el <strong>meato urinario</strong>, donde se expulsa.</p><p>Recubiertas de <strong>urotelio</strong></p>",
+        "entiende": "Riñón → uréter → vejiga (almacén) → uretra → fuera.",
+        "truco": "<strong>Uréteres son 2</strong> (uno por riñón); <strong>uretra, 1</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia hay entre uréter y uretra?",
+        "respuesta": "Los uréteres llevan la orina de cada riñón a la vejiga; la uretra, de la vejiga al meato urinario."
+      },
+      "aplica": [
+        {
+          "caso": "Tejido que recubre las vías urinarias.",
+          "opciones": [
+            "Urotelio",
+            "Endotelio"
+          ],
+          "buena": 0,
+          "porque": "Urotelio."
+        }
+      ],
+      "recuerda": {
+        "pide": "Ordena las vías urinarias.",
+        "puntos": [
+          "Uréteres: de cada riñón a la vejiga",
+          "Vejiga: almacena",
+          "Uretra: hasta el meato urinario",
+          "Recubiertas de urotelio"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c65",
+      "n": 65,
+      "titulo": "Los vasos del riñón",
+      "diapositivas": "87",
+      "gancho": "La sangre entra al glomérulo para filtrarse. ¿Sale por una vena o por otra arteriola?",
+      "profe": {
+        "dice": "<p><strong>Arterias renales</strong> derecha e izquierda salen de porción abdominal de la aorta. Arteria renal se ramifica en <strong>arteriolas aferentes</strong>, cada una forma un glomérulo.</p><p>Desde glomérulo sale <strong>arteriola eferente</strong> hacia zona tubular formando la <strong>red capilar peritubular</strong> (intercambio de sustancias).</p><p>Capilares venosos van confluyendo para formar vénulas que confluyen hasta formar <strong>vena renal</strong></p>",
+        "entiende": "La sangre entra al glomérulo por la aferente, sale por la eferente y rodea los túbulos para el intercambio antes de volver por la vena renal.",
+        "truco": "<strong>Aferente = Aproxima (entra) · Eferente = Exit</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve la red capilar peritubular?",
+        "respuesta": "Para el intercambio de sustancias con los túbulos."
+      },
+      "aplica": [
+        {
+          "caso": "Sale del glomérulo hacia la zona tubular.",
+          "opciones": [
+            "Arteriola eferente",
+            "Arteriola aferente"
+          ],
+          "buena": 0,
+          "porque": "Eferente = sale."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe los vasos del riñón.",
+        "puntos": [
+          "Arterias renales: de la aorta abdominal",
+          "Arteriolas aferentes: cada una forma un glomérulo",
+          "Arteriola eferente → red capilar peritubular (intercambio)",
+          "Vénulas → vena renal"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

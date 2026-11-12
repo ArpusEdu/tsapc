@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "id": "fisio4-renal",
+  "unidad": "fisio4",
+  "bloque": 12,
+  "titulo": "Infecciones, síndromes e insuficiencia renal",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 12, conceptos 74 a 78, diapositivas 100 a 106). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Fiebre y dolor en un lado",
+    "caso": "Una mujer empezó con ardor al orinar y ganas constantes de ir al baño. Días después tiene fiebre, náuseas, dolor lumbar en un solo lado y pus en la orina.",
+    "pregunta": "¿Qué ha pasado con la infección?",
+    "solucion": "Empezó como una infección del tracto urinario baja (uretritis o cistitis: ganas fuertes de orinar y ardor) y, como las ITU son ascendentes, los microorganismos han subido hasta el parénquima renal: pielonefritis, con dolor lumbar unilateral, náuseas, vómitos, fiebre y piuria. Es más probable en personas con vagina, en la infancia y en la vejez.",
+    "claves": [
+      "ITU ascendente",
+      "Cistitis → pielonefritis",
+      "Dolor lumbar unilateral + piuria"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c74",
+      "n": 74,
+      "titulo": "Infecciones del tracto urinario",
+      "diapositivas": "100 y 101",
+      "gancho": "¿Por dónde crees que entran las bacterias en el aparato urinario?",
+      "profe": {
+        "dice": "<p><strong>Infecciones del tracto urinario (ITU)</strong>: Debidas a la colonización y multiplicación de microorganismos (bacterias) en aparato urinario.</p><p>Después de las respiratorias, son las infecciones más frecuentes. Infecciones <strong>ascendentes</strong> (comienzan en uretra y pasan a vejiga). Si llegan a riñones pueden ser muy graves.</p><ul><li><strong>Uretritis y cistitis</strong>: necesidad fuerte y persistente de orinar. Ardor al orinar. Puede haber hematuria, orina turbia o con olor fuerte, molestias en área pélvica, dolor de espalda o del costado, fiebre, náuseas, vómitos…</li><li><strong>Pielonefritis</strong>: microorganismos ascienden hasta parénquima renal. Mayor probabilidad en personas con vagina, en la infancia y en la vejez. Dolor lumbar unilateral, náuseas, vómitos, fiebre y pus en la orina (piuria)</li></ul>",
+        "entiende": "Las bacterias suben: uretra → vejiga → riñón. Cuanto más arriba llegan, más grave.",
+        "truco": "<strong>Uretritis → cistitis → pielonefritis</strong> (sube y empeora)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué son peligrosas si llegan a los riñones?",
+        "respuesta": "Porque son ascendentes: empiezan en la uretra, pasan a la vejiga y, si llegan a los riñones (pielonefritis), pueden ser muy graves."
+      },
+      "aplica": [
+        {
+          "caso": "Ardor al orinar y ganas fuertes y persistentes.",
+          "opciones": [
+            "Uretritis y cistitis",
+            "Pielonefritis"
+          ],
+          "buena": 0,
+          "porque": "La pielonefritis llega al riñón."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las ITU.",
+        "puntos": [
+          "Colonización y multiplicación de bacterias",
+          "Las más frecuentes tras las respiratorias; ascendentes",
+          "Uretritis y cistitis: ganas de orinar, ardor, hematuria, orina turbia…",
+          "Pielonefritis: dolor lumbar unilateral, fiebre, piuria"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c75",
+      "n": 75,
+      "titulo": "Síndrome nefrítico",
+      "diapositivas": "102",
+      "gancho": "Si los glomérulos se inflaman, ¿qué crees que puede salir por la orina que no debería?",
+      "profe": {
+        "dice": "<p>Mal funcionamiento de los glomérulos renales</p><p><strong>Síndrome nefrítico</strong>: Glomerulonefritis, triada de signos: <strong>hipertensión arterial, edema y hematuria</strong>. Además: polaquiuria, disuria, malestar.</p><p>Según aumenta deterioro síntomas más generales, sustancias tóxicas se quedarán en la sangre.</p><p>Causas: infecciones (pielonefritis), enfermedades autoinmunes, trastornos metabólicos y traumatismos.</p>",
+        "entiende": "Los glomérulos se inflaman: sube la tensión, se retiene líquido y sale sangre en la orina.",
+        "truco": "Nefr<strong>í</strong>tico = <strong>HEH</strong>: Hipertensión, Edema, Hematuria."
+      },
+      "porque": {
+        "pregunta": "¿Qué pasa si empeora el deterioro?",
+        "respuesta": "Los síntomas se hacen más generales y las sustancias tóxicas se quedan en la sangre."
+      },
+      "aplica": [
+        {
+          "caso": "Tríada del síndrome nefrítico.",
+          "opciones": [
+            "Hipertensión, edema y hematuria",
+            "Proteinuria, hiperlipidemia y edemas"
+          ],
+          "buena": 0,
+          "porque": "La otra es el nefrótico."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el síndrome nefrítico.",
+        "puntos": [
+          "Glomerulonefritis",
+          "Tríada: hipertensión arterial, edema y hematuria",
+          "Además: polaquiuria, disuria, malestar",
+          "Causas: infecciones, autoinmunes, metabólicas, traumatismos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c76",
+      "n": 76,
+      "titulo": "Síndrome nefrótico",
+      "diapositivas": "103",
+      "gancho": "¿Qué pasaría si el filtro del riñón dejara pasar proteínas que normalmente se quedan en la sangre?",
+      "profe": {
+        "dice": "<p><strong>Síndrome nefrótico</strong>: Aumento permeabilidad glomérulos renales. Sustancias que no lo atravesarían lo hacen: <strong>proteinuria, hipoalbuminemia, hiperlipidemia y edemas</strong>.</p><p>Causas por diversos trastornos renales, también fruto de glomerulonefritis. Otra causa es que sea secundario a diabetes mellitus, lupus eritematoso sistémico, infecciones víricas o consumo de medicamentos</p>",
+        "entiende": "El filtro se vuelve un colador: se escapan las proteínas por la orina y, al faltar en la sangre, se forman edemas.",
+        "truco": "Nefr<strong>ó</strong>tico = pr<strong>o</strong>teínas fuera (<strong>o</strong> de cOlador)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el síndrome nefrótico da edemas?",
+        "respuesta": "Porque se pierden proteínas por la orina (proteinuria) y bajan en la sangre (hipoalbuminemia); con menos proteínas plasmáticas, el líquido sale de los vasos."
+      },
+      "aplica": [
+        {
+          "caso": "Puede ser secundario a…",
+          "opciones": [
+            "Diabetes mellitus o lupus",
+            "Varices"
+          ],
+          "buena": 0,
+          "porque": "También infecciones víricas o medicamentos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el síndrome nefrótico.",
+        "puntos": [
+          "Aumento de la permeabilidad de los glomérulos",
+          "Proteinuria, hipoalbuminemia, hiperlipidemia y edemas",
+          "Trastornos renales o glomerulonefritis",
+          "Secundario a diabetes, lupus, infecciones víricas o medicamentos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c77",
+      "n": 77,
+      "titulo": "Insuficiencia renal",
+      "diapositivas": "104",
+      "gancho": "Si el riñón deja de funcionar, ¿por qué crees que la persona podría tener anemia?",
+      "profe": {
+        "dice": "<p><strong>Insuficiencia renal</strong>: Pérdida de la capacidad de los riñones para eliminar residuos y ayudar con el equilibrio de líquidos y electrolitos en el cuerpo.</p><p>Provoca alteraciones del flujo urinario, y manifestaciones muy diversas debidas a acumulación de productos nitrogenados, desequilibrio hidroelectrolítico y ácido-base.</p><p>Signos habituales: <strong>hipertensión arterial, edemas, anemia (déficit de EPO)</strong></p>",
+        "entiende": "Si el riñón falla, se acumulan desechos, se descontrolan agua y sales… y como no fabrica EPO, aparece anemia.",
+        "truco": "Signos: <strong>tensión alta, hinchazón, anemia</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la insuficiencia renal da anemia?",
+        "respuesta": "Por déficit de EPO, la hormona del riñón que estimula la producción de glóbulos rojos."
+      },
+      "aplica": [
+        {
+          "caso": "Signo habitual de insuficiencia renal.",
+          "opciones": [
+            "Hipertensión arterial",
+            "Bradicardia"
+          ],
+          "buena": 0,
+          "porque": "Hipertensión, edemas y anemia."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la insuficiencia renal.",
+        "puntos": [
+          "Pérdida de la capacidad de eliminar residuos y equilibrar líquidos y electrolitos",
+          "Acumulación de productos nitrogenados",
+          "Desequilibrio hidroelectrolítico y ácido-base",
+          "Signos: hipertensión, edemas, anemia (déficit de EPO)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c78",
+      "n": 78,
+      "titulo": "Aguda y crónica",
+      "diapositivas": "105 y 106",
+      "gancho": "¿Qué dos enfermedades muy frecuentes crees que dañan el riñón poco a poco durante años?",
+      "profe": {
+        "dice": "<ul><li><strong>Insuficiencia renal aguda</strong>: Puede originarse por una necrosis tubular aguda, una enfermedad renal autoinmune, ⬇flujo por hipotensión, coagulación en vasos renales, infecciones, obstrucción de vías urinarias o complicaciones en embarazo. Pérdida rápida de función renal: atención de urgencia</li><li><strong>Insuficiencia renal crónica</strong>: Causas comunes <strong>diabetes e hipertensión arterial</strong>. Asintomática en etapas iniciales, o síntomas inespecíficos. Síntomas pueden ser piel anormalmente oscura o clara, dolor óseo, calambres, mal aliento, sed excesiva, susceptibilidad a hematomas o sangrado, sangre en las heces, impotencia, problemas de sueño, edemas… En etapa final riñones no pueden eliminar desechos. Únicas opciones son <strong>diálisis o trasplante de riñón</strong></li></ul>",
+        "entiende": "La aguda es de golpe (urgencia); la crónica avanza despacio y en silencio, sobre todo por diabetes e hipertensión, hasta necesitar diálisis o trasplante.",
+        "truco": "<strong>Aguda = urgencia · Crónica = diabetes + HTA → diálisis o trasplante</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué opciones quedan en la etapa final de la crónica?",
+        "respuesta": "Diálisis o trasplante de riñón, porque los riñones ya no pueden eliminar los desechos."
+      },
+      "aplica": [
+        {
+          "caso": "Pérdida rápida de función renal.",
+          "opciones": [
+            "Insuficiencia renal aguda",
+            "Insuficiencia renal crónica"
+          ],
+          "buena": 0,
+          "porque": "Aguda: urgencia."
+        },
+        {
+          "caso": "Causas comunes de la crónica.",
+          "opciones": [
+            "Diabetes e hipertensión",
+            "Embarazo"
+          ],
+          "buena": 0,
+          "porque": "Diabetes e HTA."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara la insuficiencia renal aguda y la crónica.",
+        "puntos": [
+          "Aguda: necrosis tubular, autoinmune, hipotensión, coagulación renal, infecciones, obstrucción, embarazo",
+          "Aguda: pérdida rápida, atención de urgencia",
+          "Crónica: diabetes e HTA; asintomática al principio",
+          "Etapa final: diálisis o trasplante"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "id": "fisio4-edema",
+  "unidad": "fisio4",
+  "bloque": 9,
+  "titulo": "Los edemas",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 9, conceptos 54 a 57, diapositivas 73 a 77). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Un abdomen lleno de líquido",
+    "caso": "Una persona con cirrosis hepática tiene el abdomen hinchado de líquido. Su corazón y sus vasos funcionan bien, pero en la sangre le faltan proteínas.",
+    "pregunta": "¿Cómo se llama esa acumulación y por qué la falta de proteínas hace que se escape líquido?",
+    "solucion": "Es una ascitis: acúmulo de líquido en la cavidad peritoneal o abdominal, un tipo de edema. Una de las causas de los edemas es la disminución de las proteínas plasmáticas: el plasma sale de los vasos para equilibrar concentraciones. Ocurre en la cirrosis hepática, la malnutrición, las quemaduras y el síndrome nefrótico.",
+    "claves": [
+      "Ascitis = líquido en el abdomen",
+      "Pocas proteínas → el plasma sale",
+      "Cirrosis, malnutrición, quemaduras, nefrótico"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c54",
+      "n": 54,
+      "titulo": "Qué es un edema",
+      "diapositivas": "73",
+      "gancho": "¿Dónde está la mayor parte del agua de tu cuerpo: dentro o fuera de las células?",
+      "profe": {
+        "dice": "<p><strong>Edemas</strong>: Acumulación de líquido en el espacio intercelular o intersticial o en cavidades del organismo.</p><p>Cantidad de líquido intersticial regulada por homeostasis.</p><p>H<sub>2</sub>O supone <strong>60%</strong> de nuestro peso: <strong>40% intracelular, 20% intercelular</strong>.</p><p>Sistema linfático recoge el plasma intersticial, edema se produce cuando se produce una secreción excesiva de líquido o cuando no se recupera de forma correcta</p>",
+        "entiende": "O sale demasiado líquido de los vasos, o el sistema linfático no da abasto para recogerlo.",
+        "truco": "Agua: <strong>60 = 40 dentro + 20 fuera</strong> de las células."
+      },
+      "porque": {
+        "pregunta": "¿Qué dos fallos provocan un edema?",
+        "respuesta": "Una secreción excesiva de líquido o que no se recupere bien (el sistema linfático recoge el plasma intersticial)."
+      },
+      "aplica": [
+        {
+          "caso": "Agua en el peso corporal.",
+          "opciones": [
+            "60 %: 40 % intracelular, 20 % intercelular",
+            "40 %: 20 % y 20 %"
+          ],
+          "buena": 0,
+          "porque": "60 = 40 + 20."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define edema.",
+        "puntos": [
+          "Acumulación de líquido en el espacio intersticial o en cavidades",
+          "El líquido intersticial se regula por homeostasis",
+          "Agua: 60 % del peso (40 % intra, 20 % inter)",
+          "Se produce por secreción excesiva o mala recuperación (linfa)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c55",
+      "n": 55,
+      "titulo": "Tipos de edema por su localización",
+      "diapositivas": "74",
+      "gancho": "Si «hidro» significa agua, ¿qué crees que es un hidrotórax?",
+      "profe": {
+        "dice": "<ul><li><strong>Ascitis</strong>: Acúmulo de líquido en la cavidad peritoneal o abdominal.</li><li><strong>Hidrotórax o derrame pleural</strong>. Acúmulo de líquido en la cavidad pleural o torácica.</li><li><strong>Hidropericardio o derrame pericárdico</strong>. Acúmulo de líquido en la cavidad pericárdica.</li><li><strong>Hidrocefalia</strong>. Dilatación de los ventrículos cerebrales por acumulación de líquido cefalorraquídeo.</li><li><strong>Edema pulmonar</strong>. Acúmulo de líquido (trasudado) en el espacio intersticial del parénquima pulmonar.</li><li><strong>Edemas cutáneos comunes</strong>. Se observan en picaduras de mosquito, araña, avispa o abeja, y contacto de la piel con ciertas plantas, como la ortiga.</li></ul>",
+        "entiende": "El nombre dice dónde está el líquido: abdomen (ascitis), tórax, pericardio, cerebro, pulmón o piel.",
+        "truco": "<strong>Hidro- + sitio</strong>: hidrotórax, hidropericardio, hidrocefalia. Abdomen = <strong>ascitis</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué es la hidrocefalia?",
+        "respuesta": "La dilatación de los ventrículos cerebrales por acumulación de líquido cefalorraquídeo."
+      },
+      "aplica": [
+        {
+          "caso": "Líquido en la cavidad pleural o torácica.",
+          "opciones": [
+            "Hidrotórax o derrame pleural",
+            "Ascitis"
+          ],
+          "buena": 0,
+          "porque": "Ascitis es abdominal."
+        },
+        {
+          "caso": "Picadura de avispa.",
+          "opciones": [
+            "Edema cutáneo común",
+            "Edema pulmonar"
+          ],
+          "buena": 0,
+          "porque": "Cutáneo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los tipos de edema según su localización.",
+        "puntos": [
+          "Ascitis: cavidad peritoneal o abdominal",
+          "Hidrotórax (pleural) · hidropericardio (pericárdico)",
+          "Hidrocefalia: ventrículos cerebrales · edema pulmonar",
+          "Cutáneos comunes: picaduras, ortiga"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c56",
+      "n": 56,
+      "titulo": "Causas de los edemas",
+      "diapositivas": "75",
+      "gancho": "¿Qué podría hacer que el agua saliera de los capilares más de lo normal?",
+      "profe": {
+        "dice": "<ul><li><strong>Aumento de la presión de la sangre a nivel capilar</strong>: resultado de insuficiencia cardíaca, hipervolemia, obstrucción venosa o varices</li><li><strong>Aumento de la permeabilidad de los capilares</strong>: inflamación o daño vascular (quemaduras, traumatismos)</li><li><strong>Disminución proteínas plasmáticas</strong>: plasma sale de los vasos para equilibrar [ ]. En cirrosis hepática, malnutrición, quemaduras y síndrome nefrótico.</li><li><strong>Bloqueo del drenaje linfático</strong>: traumatismos, inflamación vías linfáticas y otras causas.</li></ul>",
+        "entiende": "Cuatro razones: empuja más (presión), el vaso es un colador (permeabilidad), la sangre ya no «tira» del agua (pocas proteínas) o el desagüe está tapado (linfa).",
+        "truco": "<strong>Presión, Permeabilidad, Proteínas, Linfa</strong>: «3 P y una L»."
+      },
+      "porque": {
+        "pregunta": "¿Por qué una quemadura produce edema?",
+        "respuesta": "Porque aumenta la permeabilidad de los capilares (daño vascular) y también disminuye las proteínas plasmáticas."
+      },
+      "aplica": [
+        {
+          "caso": "Insuficiencia cardiaca o varices.",
+          "opciones": [
+            "Aumento de la presión capilar",
+            "Bloqueo linfático"
+          ],
+          "buena": 0,
+          "porque": "Presión."
+        },
+        {
+          "caso": "Inflamación de las vías linfáticas.",
+          "opciones": [
+            "Bloqueo del drenaje linfático",
+            "Disminución de proteínas"
+          ],
+          "buena": 0,
+          "porque": "Linfático."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 4 causas de los edemas.",
+        "puntos": [
+          "Más presión capilar: insuficiencia cardiaca, hipervolemia, obstrucción venosa, varices",
+          "Más permeabilidad capilar: inflamación, quemaduras, traumatismos",
+          "Menos proteínas plasmáticas: cirrosis, malnutrición, quemaduras, nefrótico",
+          "Bloqueo del drenaje linfático"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c57",
+      "n": 57,
+      "titulo": "Generalizado o localizado",
+      "diapositivas": "76 y 77",
+      "gancho": "¿Por qué crees que una persona se hincha entera y otra solo un tobillo?",
+      "profe": {
+        "dice": "<ul><li><strong>Generalizado</strong>: hinchazón difusa de todos los tejidos y órganos del cuerpo. Causas más habituales: insuficiencia cardiaca, síndrome nefrótico e insuficiencia hepática</li><li><strong>Edema localizado</strong>: en una parte concreta del cuerpo. Suele deberse a disminución de circulación linfática y aumento de presión venosa en zona afectada. También a un aumento local de la permeabilidad capilar causado por una inflamación</li></ul>",
+        "entiende": "El generalizado viene de un órgano que falla (corazón, riñón, hígado); el localizado, de un problema en esa zona.",
+        "truco": "Generalizado = <strong>corazón, riñón, hígado</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué causa un edema localizado?",
+        "respuesta": "La disminución de la circulación linfática y el aumento de la presión venosa en esa zona, o un aumento local de la permeabilidad por inflamación."
+      },
+      "aplica": [
+        {
+          "caso": "Causa habitual de edema generalizado.",
+          "opciones": [
+            "Insuficiencia cardiaca",
+            "Picadura de abeja"
+          ],
+          "buena": 0,
+          "porque": "También síndrome nefrótico e insuficiencia hepática."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara el edema generalizado y el localizado.",
+        "puntos": [
+          "Generalizado: hinchazón difusa de todo el cuerpo",
+          "Causas: insuficiencia cardiaca, síndrome nefrótico, insuficiencia hepática",
+          "Localizado: en una zona",
+          "Menos circulación linfática, más presión venosa o inflamación local"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

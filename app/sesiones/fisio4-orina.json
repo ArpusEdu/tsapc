@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "id": "fisio4-orina",
+  "unidad": "fisio4",
+  "bloque": 11,
+  "titulo": "Formar orina y mucho más",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 11, conceptos 66 a 69, diapositivas 89 a 93). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El riñón que fabrica sangre",
+    "caso": "Tras perder sangre, el número de glóbulos rojos baja. Unos días después, la médula ósea fabrica más. La orden no viene del corazón ni de la médula: viene del riñón.",
+    "pregunta": "¿Qué manda el riñón y en qué otras cosas hace de «glándula»?",
+    "solucion": "El riñón secreta eritropoyetina (EPO) al detectar que bajan los eritrocitos: es el principal estimulador de la eritropoyesis. Además, secreta renina ante hipovolemia o hipotensión (sistema renina-angiotensina-aldosterona) y forma el calcitriol, la forma activa de la vitamina D, que regula el calcio.",
+    "claves": [
+      "EPO → glóbulos rojos",
+      "Renina → tensión",
+      "Calcitriol → calcio"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c66",
+      "n": 66,
+      "titulo": "Formación de la orina",
+      "diapositivas": "89",
+      "gancho": "Si el glomérulo filtra también agua y glucosa, ¿por qué no orinamos azúcar?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d089.jpg",
+        "imgAlt": "Filtración, reabsorción y secreción (diap. 89)",
+        "dice": "<p><strong>Formación y expulsión de la orina</strong>: Sangre llega al glomérulo y se produce <strong>filtración</strong> del plasma. Sustancias filtradas pasan a cápsula de Bowman, punto de inicio del sistema tubular. Una vez ahí:</p><ul><li><strong>Reabsorción</strong>: se devuelven sustancias que el organismo necesita (H<sub>2</sub>O, Glucosa, Aa)</li><li><strong>Secreción activa</strong>: expulsión de sustancias tóxicas a red tubular.</li></ul><p>Aquello que queda en red tubular formará la orina</p>",
+        "entiende": "Se filtra mucho, se recupera lo útil (agua, glucosa, aminoácidos), se añaden los tóxicos y lo que queda es orina.",
+        "truco": "<strong>Filtra, Recupera, Echa</strong>: F-R-S."
+      },
+      "porque": {
+        "pregunta": "¿Qué se reabsorbe y qué se secreta?",
+        "respuesta": "Se reabsorben las sustancias que el organismo necesita (agua, glucosa, aminoácidos) y se secretan activamente las tóxicas a la red tubular."
+      },
+      "aplica": [
+        {
+          "caso": "Expulsión de sustancias tóxicas a la red tubular.",
+          "opciones": [
+            "Secreción activa",
+            "Reabsorción"
+          ],
+          "buena": 0,
+          "porque": "Secreción."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la formación de la orina.",
+        "puntos": [
+          "Filtración del plasma en el glomérulo → cápsula de Bowman",
+          "Reabsorción: agua, glucosa, aminoácidos",
+          "Secreción activa: tóxicos a la red tubular",
+          "Lo que queda en los túbulos es la orina"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c67",
+      "n": 67,
+      "titulo": "La micción",
+      "diapositivas": "90",
+      "gancho": "¿Por qué un bebé no controla la orina y tú sí?",
+      "profe": {
+        "dice": "<p><strong>La micción</strong>: Proceso de vaciado de la vejiga urinaria.</p><p><strong>Esfínteres uretrales</strong> (interno y externo) a la salida de la vejiga se relajan para que orina fluya por uretra.</p><p>A partir de <strong>2-4 años</strong> micción se vuelve voluntaria, puede inhibirse o precipitarse por control encefálico</p>",
+        "entiende": "Dos anillos musculares cierran la vejiga; se relajan para orinar. Desde los 2-4 años lo controlamos.",
+        "truco": "<strong>2 esfínteres, 2-4 años</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué tiene que pasar para orinar?",
+        "respuesta": "Que se relajen los esfínteres uretrales interno y externo a la salida de la vejiga."
+      },
+      "aplica": [
+        {
+          "caso": "Edad en que la micción se vuelve voluntaria.",
+          "opciones": [
+            "2-4 años",
+            "6-8 meses"
+          ],
+          "buena": 0,
+          "porque": "2-4 años."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la micción.",
+        "puntos": [
+          "Vaciado de la vejiga",
+          "Se relajan los esfínteres uretrales interno y externo",
+          "Voluntaria desde los 2-4 años (control encefálico)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c68",
+      "n": 68,
+      "titulo": "Homeostasis",
+      "diapositivas": "91",
+      "gancho": "Bebes mucha agua un día y casi nada otro. ¿Quién mantiene tu medio interno igual?",
+      "profe": {
+        "dice": "<p>Función principal es <strong>filtrado de la sangre</strong>. Pero además:</p><ul><li><strong>Regulación homeostasis</strong> (composición constante líquido intersticial y sangre)<ul><li>Mantener equilibrio <strong>hídrico</strong> (reabsorción H<sub>2</sub>O en nefronas)</li><li>Mantener equilibrio <strong>iónico</strong> (retirar más o menos iones)</li><li>Mantener equilibrio <strong>ácido-base</strong> (regular concentración de hidrones en plasma)</li></ul></li></ul>",
+        "entiende": "El riñón decide cuánta agua, cuántas sales y cuánto ácido se quedan en el cuerpo.",
+        "truco": "Equilibrios: <strong>agua, iones, ácido-base</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cómo mantiene el riñón el equilibrio ácido-base?",
+        "respuesta": "Regulando la concentración de hidrones en el plasma."
+      },
+      "aplica": [
+        {
+          "caso": "Equilibrio que depende de reabsorber agua en las nefronas.",
+          "opciones": [
+            "Hídrico",
+            "Iónico"
+          ],
+          "buena": 0,
+          "porque": "Hídrico."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las funciones de homeostasis del riñón.",
+        "puntos": [
+          "Función principal: filtrado de la sangre",
+          "Equilibrio hídrico (reabsorción de agua)",
+          "Equilibrio iónico (retirar más o menos iones)",
+          "Equilibrio ácido-base (hidrones en plasma)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c69",
+      "n": 69,
+      "titulo": "Renina, EPO y vitamina D",
+      "diapositivas": "92 y 93",
+      "gancho": "¿Crees que el riñón fabrica hormonas?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d092.jpg",
+        "imgAlt": "Sistema renina-angiotensina-aldosterona (diap. 92)",
+        "dice": "<ul><li><strong>Regulación de la tensión arterial</strong>: Secreción de enzima <strong>renina</strong> ante hipovolemia o hipotensión (Sistema Renina-Angiotensina-Aldosterona)</li><li><strong>Regulación de la producción de hemoglobina</strong>: Riñón secreta <strong>eritropoyetina (EPO)</strong> al detectar descenso en circulación de eritrocitos. Principal agente estimulador de eritropoyesis natural.</li><li><strong>Formación de la forma activa de la vitamina D</strong>: <strong>Calcitriol</strong> es forma activa, sintetizada en riñones a partir de calcidiol (formado en hígado a partir de vit. D3). Calcitriol regula concentración plasmática de Ca (absorción intestinal)</li></ul>",
+        "entiende": "El riñón también es una glándula: sube la tensión (renina), manda fabricar glóbulos rojos (EPO) y activa la vitamina D (calcio).",
+        "truco": "<strong>R-E-D</strong>: Renina (tensión), EPO (glóbulos rojos), D (calcio)."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo secreta el riñón renina?",
+        "respuesta": "Ante hipovolemia o hipotensión."
+      },
+      "aplica": [
+        {
+          "caso": "Forma activa de la vitamina D.",
+          "opciones": [
+            "Calcitriol",
+            "Calcidiol"
+          ],
+          "buena": 0,
+          "porque": "El calcidiol se forma en el hígado."
+        },
+        {
+          "caso": "Principal estimulador de la eritropoyesis.",
+          "opciones": [
+            "EPO",
+            "Renina"
+          ],
+          "buena": 0,
+          "porque": "EPO."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la renina, la EPO y el calcitriol.",
+        "puntos": [
+          "Renina: ante hipovolemia o hipotensión (renina-angiotensina-aldosterona)",
+          "EPO: al bajar los eritrocitos; estimula la eritropoyesis",
+          "Calcitriol: forma activa de la vit. D, en el riñón desde el calcidiol (hígado, de la D3)",
+          "Regula el Ca plasmático (absorción intestinal)"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

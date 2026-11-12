@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "id": "fisio4-frenos",
+  "unidad": "fisio4",
+  "bloque": 4,
+  "titulo": "Los frenos de la coagulación y la reparación",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 4, conceptos 24 a 28, diapositivas 35 a 41). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La pastilla que bloquea la vitamina K",
+    "caso": "Una persona toma anticoagulantes orales. Su sangre tarda más en coagular, aunque tiene todos sus factores de coagulación.",
+    "pregunta": "¿Qué factores pierden su actividad y por qué?",
+    "solucion": "Los factores dependientes de vitamina K: II, VII, IX y X. Pierden su actividad si hay déficit de vitamina K o si hay acción antagonista de anticoagulantes orales, que es justo lo que hacen estas pastillas.",
+    "claves": [
+      "Vitamina K: II, VII, IX y X",
+      "Anticoagulantes orales: antagonistas",
+      "Factores presentes pero sin actividad"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c24",
+      "n": 24,
+      "titulo": "Factores según su dependencia",
+      "diapositivas": "35",
+      "gancho": "¿Qué vitamina crees que tiene que ver con la coagulación?",
+      "profe": {
+        "dice": "<p>Según su dependencia o sensibilidad:</p><ul><li><strong>Dependientes de vitamina K: II, VII, IX y X</strong>. Pierden su actividad si hay déficit de vitamina K o si hay acción antagonista de anticoagulantes orales.</li><li><strong>Factores sensibles a la trombina</strong>: I, II, V, VII, VIII y XIII</li></ul>",
+        "entiende": "Los anticoagulantes orales funcionan bloqueando la vitamina K: así dejan sin actividad a los factores II, VII, IX y X.",
+        "truco": "Vitamina K: «<strong>2, 7, 9, 10</strong>» (dos-siete-nueve-diez)."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo pierden actividad los factores dependientes de vitamina K?",
+        "respuesta": "Si hay déficit de vitamina K o acción antagonista de anticoagulantes orales."
+      },
+      "aplica": [
+        {
+          "caso": "Factor dependiente de vitamina K.",
+          "opciones": [
+            "IX",
+            "VIII"
+          ],
+          "buena": 0,
+          "porque": "II, VII, IX y X."
+        }
+      ],
+      "recuerda": {
+        "pide": "Clasifica los factores según su dependencia.",
+        "puntos": [
+          "Dependientes de vitamina K: II, VII, IX y X",
+          "Pierden actividad sin vitamina K o con anticoagulantes orales",
+          "Sensibles a la trombina: I, II, V, VII, VIII y XIII"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c25",
+      "n": 25,
+      "titulo": "Reguladores e inhibidores",
+      "diapositivas": "36",
+      "gancho": "Si la coagulación es una cascada, ¿qué impide que se forme un coágulo en todo el cuerpo?",
+      "profe": {
+        "dice": "<p>Factores reguladores o inhibidores de la coagulación:</p><ul><li><strong>Flujo sanguíneo normal</strong>: arrastra parte de los factores activados, diluyendo su acción.</li><li><strong>Hígado</strong>: actúa como filtro, retirando de la sangre en circulación los factores activados e inactivándolos.</li><li><strong>Proteasas</strong>: que degradan o inhiben factores: Proteína C, Proteína S, Antitrombina III</li></ul>",
+        "entiende": "La coagulación tiene frenos para que no se forme un coágulo donde no toca: la propia sangre que corre, el hígado y unas proteínas inhibidoras.",
+        "truco": "Frenos: <strong>Flujo, Hígado, Proteasas</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cómo frena el hígado la coagulación?",
+        "respuesta": "Actúa como filtro: retira de la sangre los factores activados y los inactiva."
+      },
+      "aplica": [
+        {
+          "caso": "Arrastra parte de los factores activados, diluyendo su acción.",
+          "opciones": [
+            "Flujo sanguíneo normal",
+            "Proteína S"
+          ],
+          "buena": 0,
+          "porque": "El flujo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los reguladores de la coagulación.",
+        "puntos": [
+          "Flujo sanguíneo normal: diluye los factores activados",
+          "Hígado: filtra e inactiva",
+          "Proteasas: proteína C, proteína S y antitrombina III"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c26",
+      "n": 26,
+      "titulo": "Proteína C, S y antitrombina III",
+      "diapositivas": "37 y 38",
+      "gancho": "La heparina se usa como anticoagulante. ¿Sobre qué crees que actúa?",
+      "profe": {
+        "dice": "<ul><li><strong>Proteína C</strong>: proteína plasmática de síntesis hepática, dependiente de vit. K. Se activa en presencia de trombina y degrada factores Va y VIIIa, limitando proyección de cascada.</li><li><strong>Proteína S</strong>: plasmática hepática, cofactor de proteína C</li><li><strong>Antitrombina III (AT III)</strong>: glucoproteína sintetizada en el hígado. No dependiente de vitamina K. <strong>Principal inhibidora de la coagulación</strong>. Inhibe irreversiblemente varios factores: trombina, calicreína, IXa, Xa, XIa y XIIa. Su acción se ve aumentada por la <strong>heparina</strong>, que se encuentra en el endotelio de vasos sanguíneos y en gránulos de mastocitos</li></ul>",
+        "entiende": "La proteína C (con la S de ayudante) corta la cascada; la antitrombina III es el freno principal, y la heparina lo refuerza.",
+        "truco": "<strong>S = Socia de la C</strong>. <strong>AT III + heparina</strong> = freno principal."
+      },
+      "porque": {
+        "pregunta": "¿Cuál es el principal inhibidor de la coagulación y qué lo potencia?",
+        "respuesta": "La antitrombina III, cuya acción aumenta la heparina (presente en el endotelio y en los gránulos de los mastocitos)."
+      },
+      "aplica": [
+        {
+          "caso": "Cofactor de la proteína C.",
+          "opciones": [
+            "Proteína S",
+            "Antitrombina III"
+          ],
+          "buena": 0,
+          "porque": "S."
+        },
+        {
+          "caso": "No depende de la vitamina K.",
+          "opciones": [
+            "Antitrombina III",
+            "Proteína C"
+          ],
+          "buena": 0,
+          "porque": "La C sí depende."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la proteína C, la S y la AT III.",
+        "puntos": [
+          "Proteína C: hepática, dependiente de vit. K; activada por trombina; degrada Va y VIIIa",
+          "Proteína S: cofactor de la C",
+          "AT III: hepática, no depende de vit. K; principal inhibidora",
+          "Inhibe trombina, calicreína, IXa, Xa, XIa y XIIa; la potencia la heparina"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c27",
+      "n": 27,
+      "titulo": "La reparación del tejido",
+      "diapositivas": "39 y 40",
+      "gancho": "Ya no sangra. ¿Qué crees que hace el cuerpo después con la herida?",
+      "profe": {
+        "dice": "<p>Tras establecimiento del coágulo, es necesario reparar tejidos lesionados mediante <strong>cicatrización</strong>.</p><p>Coágulo hace de base, células migran y se fijan a él. Principalmente <strong>neutrófilos</strong> (limpian) y <strong>macrófagos</strong> (inducen reparación)</p><ul><li>Células endoteliales realizan <strong>angiogénesis</strong> (nuevos vasos son muy permeables, se forman edemas)</li><li><strong>Fibroblastos</strong> proliferan y aportan colágeno que rellena la zona en 5-7 días</li><li>Células basales del epitelio proliferan bajo costra del coágulo y después originan nuevo epitelio.</li></ul><p>Tras un mes, cicatriz formada por tejido conjuntivo acelular recubierto de epidermis</p>",
+        "entiende": "El coágulo es el andamio: llegan los limpiadores, se hacen vasos nuevos, se rellena con colágeno y se cubre con piel nueva.",
+        "truco": "<strong>Limpiar, vasos, colágeno (5-7 días), piel; cicatriz al mes</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se forman edemas al reparar?",
+        "respuesta": "Porque las células endoteliales hacen angiogénesis y los vasos nuevos son muy permeables."
+      },
+      "aplica": [
+        {
+          "caso": "Aportan colágeno que rellena la zona en 5-7 días.",
+          "opciones": [
+            "Fibroblastos",
+            "Neutrófilos"
+          ],
+          "buena": 0,
+          "porque": "Los neutrófilos limpian."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la reparación tras el coágulo.",
+        "puntos": [
+          "El coágulo hace de base; neutrófilos (limpian) y macrófagos (reparación)",
+          "Angiogénesis: vasos nuevos muy permeables (edemas)",
+          "Fibroblastos: colágeno en 5-7 días; células basales: nuevo epitelio",
+          "Al mes: cicatriz de conjuntivo acelular con epidermis"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c28",
+      "n": 28,
+      "titulo": "La fibrinólisis",
+      "diapositivas": "41",
+      "gancho": "El coágulo cumplió su función. ¿Se queda ahí para siempre?",
+      "profe": {
+        "dice": "<p>Degradación de la fibrina es catalizada por <strong>plasmina</strong> y sus restos son captados por macrófagos. Plasmina formada por activación de <strong>plasminógeno</strong>, sintetizado en el hígado. Activación por:</p><ul><li>Factores intrínsecos (la propia cascada)</li><li>Factores extrínsecos: <strong>activador tisular del plasminógeno (t-PA)</strong>, un enzima sintetizado en endotelio vascular.</li></ul>",
+        "entiende": "Cuando el coágulo ya no hace falta, la plasmina lo deshace. El t-PA es el que la activa desde el endotelio.",
+        "truco": "<strong>Plasminógeno → plasmina → adiós fibrina</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué es el t-PA?",
+        "respuesta": "El activador tisular del plasminógeno, una enzima del endotelio vascular que activa la plasmina (factor extrínseco)."
+      },
+      "aplica": [
+        {
+          "caso": "Degrada la fibrina.",
+          "opciones": [
+            "Plasmina",
+            "Trombina"
+          ],
+          "buena": 0,
+          "porque": "La trombina la forma."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la fibrinólisis.",
+        "puntos": [
+          "Degradación de la fibrina por la plasmina; restos a macrófagos",
+          "Plasmina: del plasminógeno (sintetizado en el hígado)",
+          "Activación intrínseca (la cascada) y extrínseca (t-PA del endotelio)"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

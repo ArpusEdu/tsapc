@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "id": "fisio4-cardiaca",
+  "unidad": "fisio4",
+  "bloque": 8,
+  "titulo": "El corazón enfermo: ritmo, riego y válvulas",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 8, conceptos 45 a 50, diapositivas 63 a 68). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Diez minutos o media hora",
+    "caso": "Dos personas tienen dolor en el pecho por falta de riego en el corazón. A una se le pasa en pocos minutos y no le deja ninguna lesión. A la otra le dura más de 20 minutos y una parte del músculo cardiaco muere.",
+    "pregunta": "¿Qué ha tenido cada una?",
+    "solucion": "La primera, una angina de pecho (angor): dolor torácico por isquemia del miocardio, de corta duración y sin lesiones permanentes, aunque puede evolucionar a infarto. La segunda, un infarto agudo de miocardio: dolor más intenso por necrosis del tejido cardiaco cuando la falta de irrigación dura más de 20 minutos, casi siempre por un trombo sobre ateromas en una coronaria.",
+    "claves": [
+      "Angina: corta, sin lesión",
+      "Infarto: >20 min, necrosis",
+      "Causa habitual: ateromas y trombo coronario"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c45",
+      "n": 45,
+      "titulo": "Las patologías cardiacas",
+      "diapositivas": "63",
+      "gancho": "Si el corazón es una bomba con cables y puertas, ¿qué tres cosas pueden fallar?",
+      "profe": {
+        "dice": "<ul><li><strong>Arritmias</strong></li><li><strong>Cardiopatías isquémicas</strong></li><li><strong>Valvulopatías</strong></li></ul><p>Trastornos hemodinámicos (hiper e hipotensión) también afectan a actividad del corazón.</p>",
+        "entiende": "Fallos del ritmo, del riego o de las válvulas.",
+        "truco": "<strong>Ritmo, riego, válvulas</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué más afecta a la actividad del corazón, aparte de estas tres?",
+        "respuesta": "Los trastornos hemodinámicos: hipertensión e hipotensión."
+      },
+      "aplica": [
+        {
+          "caso": "Patología de las válvulas.",
+          "opciones": [
+            "Valvulopatía",
+            "Arritmia"
+          ],
+          "buena": 0,
+          "porque": "Valvulopatía."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las patologías cardiacas.",
+        "puntos": [
+          "Arritmias",
+          "Cardiopatías isquémicas",
+          "Valvulopatías",
+          "También le afectan la hiper y la hipotensión"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c46",
+      "n": 46,
+      "titulo": "Arritmias",
+      "diapositivas": "64",
+      "gancho": "¿Cuántos latidos por minuto te parecen «demasiados»? ¿Y «demasiado pocos»?",
+      "profe": {
+        "dice": "<p><strong>Arritmias</strong>: Trastorno en los latidos o en el ritmo del corazón. Pueden ser signo de distintos trastornos o consecuencia de un mal funcionamiento del sistema eléctrico del corazón.</p><p>3 trastornos básicos:</p><ul><li><strong>Taquicardia</strong>: más de 100 latidos/minuto</li><li><strong>Bradicardia</strong>: menos de 60 latidos/minuto</li><li><strong>Patrón irregular</strong></li></ul>",
+        "entiende": "Lo normal está entre 60 y 100 latidos por minuto: por encima es taquicardia, por debajo bradicardia.",
+        "truco": "<strong>Taqui = rápido (&gt;100) · Bradi = lento (&lt;60)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué puede causar una arritmia?",
+        "respuesta": "Puede ser signo de distintos trastornos o consecuencia de un mal funcionamiento del sistema eléctrico del corazón."
+      },
+      "aplica": [
+        {
+          "caso": "50 latidos por minuto.",
+          "opciones": [
+            "Bradicardia",
+            "Taquicardia"
+          ],
+          "buena": 0,
+          "porque": "Menos de 60."
+        },
+        {
+          "caso": "120 latidos por minuto.",
+          "opciones": [
+            "Taquicardia",
+            "Bradicardia"
+          ],
+          "buena": 0,
+          "porque": "Más de 100."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las arritmias.",
+        "puntos": [
+          "Trastorno en los latidos o el ritmo",
+          "Taquicardia: más de 100/min",
+          "Bradicardia: menos de 60/min",
+          "Patrón irregular"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c47",
+      "n": 47,
+      "titulo": "Cardiopatía isquémica",
+      "diapositivas": "65",
+      "gancho": "¿Qué crees que le pasa al músculo del corazón si se tapa una coronaria?",
+      "profe": {
+        "dice": "<p><strong>Cardiopatías isquémicas</strong>: Obstrucción en arterias coronarias o en sus ramificaciones provocará isquemia, que causará hipoxia del miocardio afectada.</p><p><strong>Síndrome coronario agudo (SCA)</strong>: conjunto de síntomas clínicos compatibles con cardiopatía isquémica aguda.</p>",
+        "entiende": "Se tapa una coronaria → no llega sangre al músculo del corazón → le falta oxígeno.",
+        "truco": "<strong>Coronaria tapada → isquemia → hipoxia del miocardio</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué es el síndrome coronario agudo?",
+        "respuesta": "El conjunto de síntomas clínicos compatibles con una cardiopatía isquémica aguda."
+      },
+      "aplica": [
+        {
+          "caso": "La obstrucción coronaria provoca…",
+          "opciones": [
+            "Isquemia e hipoxia del miocardio",
+            "Hipertensión"
+          ],
+          "buena": 0,
+          "porque": "Isquemia → hipoxia."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la cardiopatía isquémica.",
+        "puntos": [
+          "Obstrucción en las arterias coronarias o sus ramas",
+          "Isquemia → hipoxia del miocardio afectado",
+          "SCA: síntomas de cardiopatía isquémica aguda"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c48",
+      "n": 48,
+      "titulo": "Angina de pecho",
+      "diapositivas": "66",
+      "gancho": "¿Puede el corazón «quejarse» de falta de riego sin llegar a dañarse?",
+      "profe": {
+        "dice": "<p>Patologías más comunes que causan cardiopatía isquémica:</p><p><strong>Angor inestable o angina de pecho</strong>: dolor torácico debido a isquemia de miocardio. Dolor suele ser de <strong>corta duración</strong>, <strong>no causa lesiones permanentes</strong>, puede evolucionar hacia infarto agudo de miocardio. Suele deberse a presencia de <strong>ateromas</strong> en vasos coronarios.</p>",
+        "entiende": "Es un aviso: el corazón se queja por falta de riego, pero todavía no se ha muerto tejido.",
+        "truco": "<strong>Angina = aviso · Infarto = daño</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la angina es un aviso importante?",
+        "respuesta": "Porque, aunque no causa lesiones permanentes, puede evolucionar hacia un infarto agudo de miocardio."
+      },
+      "aplica": [
+        {
+          "caso": "Causa habitual de la angina.",
+          "opciones": [
+            "Ateromas en los vasos coronarios",
+            "Valvas calcificadas"
+          ],
+          "buena": 0,
+          "porque": "Ateromas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la angina de pecho.",
+        "puntos": [
+          "Angor inestable o angina: dolor torácico por isquemia del miocardio",
+          "Corta duración, sin lesiones permanentes",
+          "Puede evolucionar a infarto",
+          "Suele deberse a ateromas coronarios"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c49",
+      "n": 49,
+      "titulo": "Infarto agudo de miocardio",
+      "diapositivas": "67",
+      "gancho": "¿Cuánto tiempo crees que aguanta el músculo cardiaco sin riego antes de morir?",
+      "profe": {
+        "dice": "<p><strong>Infarto agudo de miocardio</strong>: cuadro de dolor más intenso debido a <strong>necrosis</strong> de tejido cardiaco por falta de irrigación, que se mantiene <strong>más de 20 minutos</strong>. Causa más habitual es un <strong>trombo</strong> que bloquea circulación de arteria coronaria, se suele formar por <strong>ateromas</strong>.</p>",
+        "entiende": "Si la falta de riego dura más de 20 minutos, el músculo se muere (necrosis): eso ya es un infarto.",
+        "truco": "Infarto: <strong>&gt;20 minutos + necrosis</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia el infarto de la angina?",
+        "respuesta": "En el infarto hay necrosis del tejido cardiaco, porque la falta de irrigación se mantiene más de 20 minutos."
+      },
+      "aplica": [
+        {
+          "caso": "Causa más habitual del infarto.",
+          "opciones": [
+            "Un trombo en una arteria coronaria",
+            "Una bradicardia"
+          ],
+          "buena": 0,
+          "porque": "Trombo, formado por ateromas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el infarto agudo de miocardio.",
+        "puntos": [
+          "Dolor más intenso por necrosis del tejido cardiaco",
+          "Falta de irrigación de más de 20 minutos",
+          "Causa: trombo en una coronaria, formado por ateromas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c50",
+      "n": 50,
+      "titulo": "Valvulopatías",
+      "diapositivas": "68",
+      "gancho": "¿Qué le pasaría al bombeo si una puerta del corazón no cerrara del todo?",
+      "profe": {
+        "dice": "<p><strong>Valvulopatías</strong>: Alteraciones en 1 ó varias de las válvulas del corazón, que impiden apertura o cierre completo, quitando efectividad al bombeo.</p><p>Causas habituales: <strong>envejecimiento</strong> (endurecimiento y calcificación valvular), <strong>endocarditis infecciosa</strong> (bacterias se fijan al endocardio de una válvula y comienzan a multiplicarse→vegetaciones)</p>",
+        "entiende": "Una puerta que no abre o no cierra del todo: el corazón bombea peor.",
+        "truco": "Causas: <strong>edad o bacterias</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué son las vegetaciones de la endocarditis?",
+        "respuesta": "Acúmulos de bacterias que se fijan al endocardio de una válvula y empiezan a multiplicarse."
+      },
+      "aplica": [
+        {
+          "caso": "Causa por envejecimiento.",
+          "opciones": [
+            "Endurecimiento y calcificación valvular",
+            "Endocarditis"
+          ],
+          "buena": 0,
+          "porque": "La endocarditis es infecciosa."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las valvulopatías.",
+        "puntos": [
+          "Alteraciones de una o varias válvulas que impiden abrir o cerrar del todo",
+          "El bombeo pierde efectividad",
+          "Causas: envejecimiento (endurecimiento, calcificación)",
+          "Endocarditis infecciosa: bacterias en el endocardio → vegetaciones"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

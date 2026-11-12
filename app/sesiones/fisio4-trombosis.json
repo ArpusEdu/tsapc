@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "id": "fisio4-trombosis",
+  "unidad": "fisio4",
+  "bloque": 6,
+  "titulo": "Aterosclerosis y trombosis",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 6, conceptos 33 a 37, diapositivas 48 a 55). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Blanco en la arteria, rojo en la vena",
+    "caso": "En una arteria con placas de ateroma se forma un trombo pegado a la pared, hecho sobre todo de plaquetas. En la vena de una pierna en la que la sangre circula muy despacio se forma otro que la tapa entera, con mucha fibrina.",
+    "pregunta": "¿Qué tipo de trombosis es cada uno?",
+    "solucion": "El de la arteria es una trombosis por precipitación (trombo blanco): carácter mural, en arterias o corazón; causa más común, los ateromas; plaquetas, escasa fibrina y hematíes. El de la vena es una trombosis por coagulación (trombo rojo): en venas tras enlentecimiento de la circulación, oclusivo, con fibrina y plaquetas (más fibrina).",
+    "claves": [
+      "Blanco: arteria, mural, plaquetas",
+      "Rojo: vena lenta, oclusivo, fibrina",
+      "Ateroma → trombo blanco"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c33",
+      "n": 33,
+      "titulo": "Aterosclerosis",
+      "diapositivas": "48 y 49",
+      "gancho": "¿Qué crees que pasa en una tubería por la que pasa agua con cal durante años?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d049.jpg",
+        "imgAlt": "Placa de ateroma (diap. 49)",
+        "dice": "<p><strong>Aterosclerosis</strong>: Depósito de placas (<strong>ateromas</strong>) en la pared interna de las arterias. Placas compuestas por grasas, colesterol, Ca y otras sustancias. Con el tiempo se endurecen y estrechan luz arterial. Afectan a cualquier arteria, según zona afectada, distintas enfermedades</p><p>Además de reducción de flujo, existe riesgo de que la placa se suelte y pase al flujo sanguíneo, pudiendo llegar a bloquear vasos más pequeños.</p><p><strong>Prevención clave</strong>: Dieta sana, baja en grasas saturadas, ejercicio regular. Controlar hipertensión y diabetes</p>",
+        "entiende": "La grasa se pega a la pared como la cal en una tubería: estrecha el paso y, si se suelta un trozo, puede tapar un vaso más pequeño.",
+        "truco": "<strong>Atero = papilla</strong> (de grasa); <strong>esclerosis = endurecimiento</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la aterosclerosis puede tapar vasos lejanos?",
+        "respuesta": "Porque la placa se puede soltar, pasar al flujo sanguíneo y bloquear vasos más pequeños."
+      },
+      "aplica": [
+        {
+          "caso": "Prevención clave.",
+          "opciones": [
+            "Dieta baja en grasas saturadas y ejercicio",
+            "Anticonceptivos orales"
+          ],
+          "buena": 0,
+          "porque": "Y controlar HTA y diabetes."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la aterosclerosis.",
+        "puntos": [
+          "Placas (ateromas) en la pared interna de las arterias",
+          "Grasas, colesterol, Ca…; se endurecen y estrechan la luz",
+          "Riesgo de que la placa se suelte y tape vasos pequeños",
+          "Prevención: dieta sana, ejercicio, controlar HTA y diabetes"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c34",
+      "n": 34,
+      "titulo": "Trombosis: causas",
+      "diapositivas": "50",
+      "gancho": "Un coágulo dentro de un vaso sano y con la sangre circulando bien sería raro. ¿Qué tendría que fallar?",
+      "profe": {
+        "dice": "<p><strong>Trombosis</strong>: Formación de un coágulo (<strong>trombo</strong>) en el interior de un vaso sanguíneo. Muchas causas posibles:</p><ul><li>Alteración en vasos por aterosclerosis, ruptura traumática o alteración del flujo sanguíneo</li><li>Alteración en factores de coagulación o en anticoagulantes</li><li>Alteraciones en composición de la sangre (⬇fracción líquida)</li><li>Alteraciones vasculares que provocan flujos en torbellino (estenosis mitral)</li><li>Lesiones en endotelio.</li></ul>",
+        "entiende": "Un coágulo donde no debe: porque el vaso está dañado, porque la sangre coagula de más o porque circula mal.",
+        "truco": "Causas: <strong>vaso, coagulación, sangre espesa, torbellino, endotelio</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la estenosis mitral favorece la trombosis?",
+        "respuesta": "Porque provoca flujos en torbellino, una de las causas de trombosis."
+      },
+      "aplica": [
+        {
+          "caso": "Trombo.",
+          "opciones": [
+            "Coágulo en el interior de un vaso",
+            "Partícula que viaja por la sangre"
+          ],
+          "buena": 0,
+          "porque": "Lo que viaja es un émbolo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las causas de la trombosis.",
+        "puntos": [
+          "Vasos alterados: aterosclerosis, rotura, flujo alterado",
+          "Alteración de factores de coagulación o anticoagulantes",
+          "Composición de la sangre (menos fracción líquida)",
+          "Flujos en torbellino (estenosis mitral) y lesiones del endotelio"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c35",
+      "n": 35,
+      "titulo": "Ocluyente y mural",
+      "diapositivas": "51 y 52",
+      "gancho": "¿Tapará siempre el trombo todo el vaso?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d052.jpg",
+        "imgAlt": "Trombo oclusivo y mural (diap. 52)",
+        "dice": "<p>Clasificación según nivel de oclusión y lugar en que se originan:</p><ul><li>Según grado de oclusión: Ocluyente, Mural</li><li>Según ubicación: Por precipitación, Por coagulación, Hialina</li></ul><p>Según grado de oclusión</p><ul><li><strong>Ocluyente</strong>: obstrucción total</li><li><strong>Mural</strong>: obstrucción parcial</li></ul>",
+        "entiende": "El mural se pega a la pared (muro) y deja pasar algo; el ocluyente lo tapa todo.",
+        "truco": "<strong>Mural = muro</strong>, a un lado; <strong>ocluyente = ocluye</strong> todo."
+      },
+      "porque": {
+        "pregunta": "¿Cuáles son los dos criterios para clasificar las trombosis?",
+        "respuesta": "El grado de oclusión (ocluyente o mural) y la ubicación (por precipitación, por coagulación o hialina)."
+      },
+      "aplica": [
+        {
+          "caso": "Obstrucción parcial.",
+          "opciones": [
+            "Mural",
+            "Ocluyente"
+          ],
+          "buena": 0,
+          "porque": "Ocluyente = total."
+        }
+      ],
+      "recuerda": {
+        "pide": "Clasifica las trombosis según su oclusión.",
+        "puntos": [
+          "Ocluyente: obstrucción total",
+          "Mural: obstrucción parcial"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c36",
+      "n": 36,
+      "titulo": "Precipitación, coagulación e hialina",
+      "diapositivas": "53 y 54",
+      "gancho": "¿Se formará igual un trombo en una arteria rápida que en una vena lenta?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d053.jpg",
+        "imgAlt": "Trombo sobre ateroma (diap. 53)",
+        "dice": "<ul><li><strong>Trombosis por precipitación (trombos blancos)</strong>. Carácter mural, principalmente en arterias o corazón. Causa más común es presencia de ateromas. Trombo compuesto por plaquetas, escasa fibrina y hematíes.</li><li><strong>Trombosis por coagulación (trombos rojos)</strong>. En venas tras enlentecimiento de circulación. Oclusivos. Trombo formado por mezcla de fibrina y plaquetas (más fibrina)</li><li><strong>Trombosis hialina</strong>: en vénulas o capilares. Provocadas por el desprendimiento de plaquetas y fibrinas</li></ul>",
+        "entiende": "Blancos en arterias (sobre todo plaquetas, sobre un ateroma); rojos en venas lentas (sobre todo fibrina, que atrapa glóbulos rojos); hialinos en los vasos más pequeños.",
+        "truco": "<strong>Blanco = arteria = plaquetas · Rojo = vena = fibrina</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Dónde se forma la trombosis hialina?",
+        "respuesta": "En vénulas o capilares, por el desprendimiento de plaquetas y fibrina."
+      },
+      "aplica": [
+        {
+          "caso": "Trombo rojo.",
+          "opciones": [
+            "Por coagulación, en venas",
+            "Por precipitación, en arterias"
+          ],
+          "buena": 0,
+          "porque": "Rojos: coagulación."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara los 3 tipos según su ubicación.",
+        "puntos": [
+          "Precipitación (blancos): murales, arterias o corazón; ateromas; plaquetas",
+          "Coagulación (rojos): venas con circulación lenta; oclusivos; más fibrina",
+          "Hialina: vénulas o capilares; plaquetas y fibrina"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c37",
+      "n": 37,
+      "titulo": "Gravedad y dímero D",
+      "diapositivas": "55",
+      "gancho": "Si un trombo no duele hasta que hace daño, ¿cómo lo evitarías?",
+      "profe": {
+        "dice": "<p>Cualquier trombosis es grave (impide irrigación) y con consecuencias diversas.</p><p>Trombos no provocan síntomas hasta que ocurre el daño→ cuando algo puede favorecer formación de trombos se administran <strong>anticoagulantes preventivamente</strong>.</p><p>Detección de trastornos en coagulación mediante análisis de sangre (detección de <strong>dímero D</strong>)</p>",
+        "entiende": "Como no avisan, se previenen con anticoagulantes; en el laboratorio, el dímero D es la pista.",
+        "truco": "<strong>Dímero D = Detecta</strong> coágulos."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se dan anticoagulantes preventivamente?",
+        "respuesta": "Porque los trombos no dan síntomas hasta que ocurre el daño: si algo favorece que se formen, se previenen."
+      },
+      "aplica": [
+        {
+          "caso": "Se mide en sangre para detectar trastornos de coagulación.",
+          "opciones": [
+            "Dímero D",
+            "Hemoglobina"
+          ],
+          "buena": 0,
+          "porque": "Dímero D."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Por qué es grave la trombosis y cómo se detecta?",
+        "puntos": [
+          "Toda trombosis es grave: impide la irrigación",
+          "Sin síntomas hasta el daño: anticoagulantes preventivos",
+          "Detección en sangre: dímero D"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

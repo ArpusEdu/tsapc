@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "fisio4-tension",
+  "unidad": "fisio4",
+  "bloque": 9,
+  "titulo": "Tensión alta, tensión baja",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 9, conceptos 51 a 53, diapositivas 69 a 72). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El asesino silencioso",
+    "caso": "Un hombre se encuentra perfectamente: no le duele nada y nunca ha tenido síntomas. En una revisión le encuentran la tensión alta desde hace años, y los médicos se preocupan.",
+    "pregunta": "¿Por qué preocupa si no tiene síntomas?",
+    "solucion": "La hipertensión arterial es el principal factor de riesgo cardiovascular y se llama «asesino silencioso» porque es asintomática. El reconocimiento precoz es esencial: si ya existe lesión, se pueden desarrollar ictus, trombosis cerebrales, infartos o insuficiencia renal. En el 90 % de los casos no hay causa concreta (hipertensión primaria).",
+    "claves": [
+      "Asintomática",
+      "Riesgo: ictus, infarto, insuficiencia renal",
+      "90 % primaria"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c51",
+      "n": 51,
+      "titulo": "Alteraciones de la tensión",
+      "diapositivas": "69",
+      "gancho": "¿Con qué otro parámetro de la sangre crees que va de la mano la tensión?",
+      "profe": {
+        "dice": "<p>Alteraciones de la tensión arterial: Pueden impedir funcionamiento normal del aparato cardiovascular. Altamente ligadas a volemia. Cuando tensión supera márgenes de normalidad o se mantienen valores elevados de forma continuada las consecuencias pueden ser graves.</p>",
+        "entiende": "La tensión va de la mano de la volemia: si una se descontrola, la otra también.",
+        "truco": "<strong>Tensión ↔ volemia</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo son graves las alteraciones de la tensión?",
+        "respuesta": "Cuando la tensión supera los márgenes de normalidad o se mantiene elevada de forma continuada."
+      },
+      "aplica": [
+        {
+          "caso": "Las alteraciones de la tensión están muy ligadas a…",
+          "opciones": [
+            "La volemia",
+            "La glucosa"
+          ],
+          "buena": 0,
+          "porque": "Volemia."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son las alteraciones de la tensión arterial?",
+        "puntos": [
+          "Pueden impedir el funcionamiento normal del aparato cardiovascular",
+          "Muy ligadas a la volemia",
+          "Graves si se superan los márgenes o se mantienen altas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c52",
+      "n": 52,
+      "titulo": "Hipertensión arterial",
+      "diapositivas": "70 y 71",
+      "gancho": "Si la mayoría de las hipertensiones no tienen una causa concreta, ¿cómo crees que se tratan?",
+      "profe": {
+        "dice": "<p>Principal factor de riesgo cardiovascular, “<strong>asesino silencioso</strong>” (asintomático)</p><p>Síntomas en hipertensión maligna: dolores de cabeza, confusión, cambios en la visión, sangrado nasal, mareos, náuseas y vómitos.</p><p><strong>90%</strong> de los casos no hay causa concreta que desencadene HTA, por lo que se llama <strong>hipertensión primaria</strong>. Factores predisponentes: edad avanzada, antecedentes familiares, diabetes, colesterol, obesidad.</p><p>En un porcentaje más pequeño HTA es secundaria a consumo de alcohol, fármacos, enfermedades renales→<strong>Hipertensión secundaria</strong>.</p><p>Reconocimiento precoz esencial, si ya existe lesión se pueden desarrollar ictus, trombosis cerebrales, infartos o insuficiencia renal.</p><p><strong>Tratamiento</strong>:</p><ul><li>Hábitos de vida saludables: dieta mediterránea, control peso, no fumar</li><li>Uso de fármacos</li></ul>",
+        "entiende": "No duele, pero va dañando vasos y órganos en silencio: por eso hay que medirla.",
+        "truco": "<strong>90 % primaria</strong> (sin causa); el resto, secundaria (alcohol, fármacos, riñón)."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia la HTA primaria de la secundaria?",
+        "respuesta": "La primaria (90 %) no tiene causa concreta; la secundaria se debe a alcohol, fármacos o enfermedades renales."
+      },
+      "aplica": [
+        {
+          "caso": "Síntomas de la hipertensión maligna.",
+          "opciones": [
+            "Dolor de cabeza, confusión, cambios en la visión, sangrado nasal",
+            "Piel fría y pupilas dilatadas"
+          ],
+          "buena": 0,
+          "porque": "Lo otro es shock."
+        },
+        {
+          "caso": "Tratamiento.",
+          "opciones": [
+            "Hábitos saludables y fármacos",
+            "Solo reposo"
+          ],
+          "buena": 0,
+          "porque": "Dieta mediterránea, peso, no fumar y fármacos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la hipertensión arterial.",
+        "puntos": [
+          "Principal factor de riesgo cardiovascular: «asesino silencioso»",
+          "90 % primaria (edad, antecedentes, diabetes, colesterol, obesidad)",
+          "Secundaria: alcohol, fármacos, enfermedad renal",
+          "Riesgos: ictus, trombosis cerebral, infarto, insuficiencia renal; tratamiento: hábitos + fármacos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c53",
+      "n": 53,
+      "titulo": "Hipotensión y shock",
+      "diapositivas": "72",
+      "gancho": "Tras una hemorragia grande, ¿qué crees que le pasa a la presión y por qué el pulso se acelera?",
+      "profe": {
+        "dice": "<p><strong>Hipotensión arterial</strong>: Presión muy baja. y falta suministro de sangre a órganos y tejidos persona entra en <strong>shock</strong>. Generalmente por pérdida de líquidos (hemorragia, deshidratación, quemaduras, diarreas…) →<strong>Shock hipovolémico</strong>.</p><p>Síntomas: piel fría y sudada, pulso débil pero acelerado, respiración irregular, boca seca, pupilas dilatadas</p>",
+        "entiende": "Si se pierde mucho líquido, baja la presión y la sangre no llega a los órganos: el corazón late rápido para compensar, pero flojo.",
+        "truco": "Shock: <strong>fría, sudada, pulso rápido y débil</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se llama shock hipovolémico?",
+        "respuesta": "Porque se debe a la pérdida de líquidos (hemorragia, deshidratación, quemaduras, diarreas): baja la volemia."
+      },
+      "aplica": [
+        {
+          "caso": "Síntoma de shock.",
+          "opciones": [
+            "Pulso débil pero acelerado",
+            "Pulso fuerte y lento"
+          ],
+          "buena": 0,
+          "porque": "Débil y rápido."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la hipotensión y el shock.",
+        "puntos": [
+          "Presión muy baja; falta sangre en órganos: shock",
+          "Pérdida de líquidos → shock hipovolémico",
+          "Piel fría y sudada, pulso débil y rápido",
+          "Respiración irregular, boca seca, pupilas dilatadas"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

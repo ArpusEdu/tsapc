@@ -1,0 +1,212 @@
+{
+  "schema": 1,
+  "id": "fisio4-corazon",
+  "unidad": "fisio4",
+  "bloque": 1,
+  "titulo": "El corazón por dentro: pared, cavidades y válvulas",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 1, conceptos 1 a 4, diapositivas 2 a 7). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El viaje de una gota",
+    "caso": "Una gota de sangre vuelve del pie al corazón por las venas cavas. Antes de salir hacia los pulmones atraviesa dos cavidades y dos válvulas.",
+    "pregunta": "¿Por qué cavidades y válvulas pasa, en orden?",
+    "solucion": "Entra en la aurícula derecha (recibe sangre desde las venas cavas), pasa por la válvula tricúspide (entre AD y VD) al ventrículo derecho, que la impulsa hacia la arteria pulmonar a través de la válvula pulmonar (salida del VD).",
+    "claves": [
+      "Venas cavas → aurícula derecha",
+      "Tricúspide → ventrículo derecho",
+      "Válvula pulmonar → arteria pulmonar"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c1",
+      "n": 1,
+      "titulo": "El aparato cardiovascular y el corazón",
+      "diapositivas": "2 y 3",
+      "gancho": "Si la sangre es lo que circula, ¿qué otras dos piezas necesita un sistema de circulación?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d002.jpg",
+        "imgAlt": "Corazón, vasos y circulación (diap. 2)",
+        "dice": "<p>Aparato cardiovascular: <strong>Corazón + sistema vascular + sangre</strong></p><p><strong>El corazón:</strong> Órgano que se contrae y se relaja alternativamente para impulsar la sangre por todo el organismo.</p><p>En <strong>mediastino</strong>, apoyado en el <strong>diafragma</strong></p>",
+        "entiende": "Tres piezas: una bomba (corazón), unas tuberías (vasos) y lo que circula por ellas (sangre).",
+        "truco": "<strong>C + V + S</strong>: Corazón, Vasos, Sangre."
+      },
+      "porque": {
+        "pregunta": "¿Cómo impulsa el corazón la sangre?",
+        "respuesta": "Contrayéndose y relajándose alternativamente."
+      },
+      "aplica": [
+        {
+          "caso": "El corazón está…",
+          "opciones": [
+            "En el mediastino, apoyado en el diafragma",
+            "Bajo el diafragma"
+          ],
+          "buena": 0,
+          "porque": "Mediastino, apoyado en el diafragma."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué forma el aparato cardiovascular y qué es el corazón?",
+        "puntos": [
+          "Corazón + sistema vascular + sangre",
+          "Órgano que se contrae y se relaja para impulsar la sangre",
+          "En el mediastino, apoyado en el diafragma"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c2",
+      "n": 2,
+      "titulo": "La pared del corazón",
+      "diapositivas": "4",
+      "gancho": "Un músculo que late toda la vida dentro del pecho, ¿qué crees que necesita para no rozarse ni moverse de sitio?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d004.jpg",
+        "imgAlt": "Pared del corazón (diap. 4)",
+        "dice": "<ul><li><strong>Pericardio:</strong> membrana serosa, envuelve corazón. 2 capas con líquido lubricante entre ellas. Mantiene corazón en posición, evita que se llene demasiado de sangre, lo protege de infecciones.</li><li><strong>Miocardio:</strong> músculo cardiaco. Fibras musculares + células de conducción eléctrica.</li><li><strong>Endocardio:</strong> membrana que recubre las paredes internas del corazón</li></ul>",
+        "entiende": "De fuera adentro: una bolsa (pericardio), el músculo (miocardio) y un forro interior (endocardio).",
+        "truco": "<strong>Peri = alrededor · Mio = músculo · Endo = dentro</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve el líquido lubricante del pericardio?",
+        "respuesta": "Está entre sus 2 capas: deja que el corazón se mueva sin rozarse. Además, el pericardio lo mantiene en posición, evita que se llene demasiado de sangre y lo protege de infecciones."
+      },
+      "aplica": [
+        {
+          "caso": "Capa con fibras musculares y células de conducción eléctrica.",
+          "opciones": [
+            "Miocardio",
+            "Endocardio"
+          ],
+          "buena": 0,
+          "porque": "Mio = músculo."
+        },
+        {
+          "caso": "Recubre las paredes internas.",
+          "opciones": [
+            "Endocardio",
+            "Pericardio"
+          ],
+          "buena": 0,
+          "porque": "Endo = dentro."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 3 capas de la pared del corazón.",
+        "puntos": [
+          "Pericardio: serosa de 2 capas con líquido lubricante; posición, no sobrellenado, protección",
+          "Miocardio: músculo cardiaco (fibras + conducción eléctrica)",
+          "Endocardio: recubre las paredes internas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c3",
+      "n": 3,
+      "titulo": "Las cavidades",
+      "diapositivas": "5",
+      "gancho": "El corazón tiene 4 cavidades. ¿Cuáles crees que reciben sangre y cuáles la expulsan?",
+      "profe": {
+        "dice": "<ul><li><strong>Aurículas</strong><ul><li>Derecha: recibe sangre desde las <strong>venas cavas</strong>.</li><li>Izquierda: recibe de los pulmones a través de <strong>venas pulmonares</strong></li></ul></li><li><strong>Ventrículos</strong><ul><li>Derecho: recibe de aurícula derecha, impulsa hacia <strong>arteria pulmonar</strong></li><li>Izquierdo: recibe de aurícula izquierda, impulsa a <strong>arteria aorta</strong></li></ul></li></ul>",
+        "entiende": "Las aurículas reciben y los ventrículos empujan. El lado derecho lleva la sangre a los pulmones; el izquierdo, a todo el cuerpo.",
+        "truco": "<strong>Aurícula = recibe · Ventrículo = expulsa</strong>. Derecho → pulmón; izquierdo → aorta."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la aurícula izquierda recibe sangre de las venas pulmonares?",
+        "respuesta": "Porque es la sangre que vuelve de los pulmones; el ventrículo izquierdo la impulsará a la aorta."
+      },
+      "aplica": [
+        {
+          "caso": "Impulsa la sangre hacia la arteria aorta.",
+          "opciones": [
+            "Ventrículo izquierdo",
+            "Ventrículo derecho"
+          ],
+          "buena": 0,
+          "porque": "El derecho la impulsa a la arteria pulmonar."
+        },
+        {
+          "caso": "Recibe sangre de las venas cavas.",
+          "opciones": [
+            "Aurícula derecha",
+            "Aurícula izquierda"
+          ],
+          "buena": 0,
+          "porque": "Derecha."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿De dónde recibe y adónde envía cada cavidad?",
+        "puntos": [
+          "AD: desde las venas cavas",
+          "AI: de los pulmones por las venas pulmonares",
+          "VD: de la AD → arteria pulmonar",
+          "VI: de la AI → arteria aorta"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c4",
+      "n": 4,
+      "titulo": "Las válvulas",
+      "diapositivas": "6 y 7",
+      "gancho": "¿Qué impediría que la sangre volviera hacia atrás cada vez que el ventrículo se contrae?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d007.jpg",
+        "imgAlt": "Cavidades y válvulas (diap. 7)",
+        "dice": "<p><strong>Válvulas</strong> en salida de aurículas y ventrículos</p><ul><li>Lado derecho<ul><li>Válvula <strong>tricúspide</strong>: AD/VD</li><li>Válvula <strong>pulmonar</strong>: salida VD</li></ul></li><li>Lado izquierdo<ul><li>Válvula <strong>mitral</strong>: AI/VI</li><li>Válvula <strong>aórtica</strong>: salida VI</li></ul></li></ul>",
+        "entiende": "Entre aurícula y ventrículo: tricúspide (derecha) y mitral (izquierda). A la salida de cada ventrículo: pulmonar y aórtica.",
+        "truco": "«<strong>Tri</strong> a la de<strong>r</strong>echa, <strong>Mi</strong>tral a la <strong>i</strong>zquierda»: las dos «i» van juntas."
+      },
+      "porque": {
+        "pregunta": "¿Dónde están las válvulas?",
+        "respuesta": "En la salida de las aurículas (tricúspide y mitral) y de los ventrículos (pulmonar y aórtica)."
+      },
+      "aplica": [
+        {
+          "caso": "Entre la aurícula izquierda y el ventrículo izquierdo.",
+          "opciones": [
+            "Mitral",
+            "Tricúspide"
+          ],
+          "buena": 0,
+          "porque": "Mitral: AI/VI."
+        },
+        {
+          "caso": "Salida del ventrículo izquierdo.",
+          "opciones": [
+            "Aórtica",
+            "Pulmonar"
+          ],
+          "buena": 0,
+          "porque": "Aórtica."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 4 válvulas y su sitio.",
+        "puntos": [
+          "Tricúspide: AD/VD",
+          "Pulmonar: salida del VD",
+          "Mitral: AI/VI",
+          "Aórtica: salida del VI"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

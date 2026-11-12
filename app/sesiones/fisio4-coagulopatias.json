@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "id": "fisio4-coagulopatias",
+  "unidad": "fisio4",
+  "bloque": 9,
+  "titulo": "Cuando la coagulación falla",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 9, conceptos 58 a 60, diapositivas 78 a 80). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Puntitos por todo el cuerpo",
+    "caso": "A una persona le aparecen pequeñas manchas rojas puntiformes por toda la piel y sangra con facilidad de vasos muy pequeños. Sus factores de coagulación están bien.",
+    "pregunta": "Si los factores están bien, ¿qué le falta? ¿Cómo se llaman esas manchas?",
+    "solucion": "Le faltan plaquetas: es una trombocitopenia (producción insuficiente o más descomposición en la sangre, el bazo o el hígado). Estas personas sangran de vasos pequeños y capilares, con pequeñas hemorragias puntiformes por todo el cuerpo: la púrpura trombocitopénica.",
+    "claves": [
+      "Trombocitopenia = pocas plaquetas",
+      "Sangrado de capilares",
+      "Púrpura trombocitopénica"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c58",
+      "n": 58,
+      "titulo": "Coagulación intravascular diseminada",
+      "diapositivas": "78",
+      "gancho": "¿Puede ser un problema coagular demasiado?",
+      "profe": {
+        "dice": "<p>Existen trastornos que provocan una coagulación generalizada: <strong>coagulación intravascular diseminada (CID)</strong>.</p><p>CID se produce por activación y estimulación excesiva del sistema de la coagulación.</p><p>Causas comunes: inflamación, infección, neoplasia maligna, COVID-19.</p>",
+        "entiende": "La coagulación se dispara por todo el cuerpo a la vez.",
+        "truco": "<strong>CID = Coagula en todos los sitIos a la vez</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se produce la CID?",
+        "respuesta": "Por una activación y estimulación excesiva del sistema de la coagulación."
+      },
+      "aplica": [
+        {
+          "caso": "Causa común de CID.",
+          "opciones": [
+            "Infección",
+            "Falta de vitamina K"
+          ],
+          "buena": 0,
+          "porque": "Inflamación, infección, neoplasia maligna, COVID-19."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la CID.",
+        "puntos": [
+          "Coagulación generalizada",
+          "Activación y estimulación excesiva de la coagulación",
+          "Causas: inflamación, infección, neoplasia maligna, COVID-19"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c59",
+      "n": 59,
+      "titulo": "Vitamina K y hemofilia",
+      "diapositivas": "79",
+      "gancho": "¿Qué pasaría si te faltara uno de los factores de la cascada?",
+      "profe": {
+        "dice": "<p>Alteraciones propias de la coagulación→ trastornos por déficit:</p><ul><li><strong>Deficiencia de vitamina K</strong>: esencial para formación de protrombina, factores VII, IX, X y proteína C.</li><li><strong>Hemofilia</strong>: deficiencias factores <strong>VIII y IX</strong>. Transmitida por el <strong>cromosoma X</strong>.</li></ul>",
+        "entiende": "Si faltan factores, la sangre no coagula bien y se sangra más. En la hemofilia faltan el VIII o el IX y se hereda por el X.",
+        "truco": "Hemofilia: <strong>8 y 9, ligada al X</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué es esencial la vitamina K?",
+        "respuesta": "Para formar la protrombina, los factores VII, IX y X y la proteína C."
+      },
+      "aplica": [
+        {
+          "caso": "Hemofilia: factores deficientes.",
+          "opciones": [
+            "VIII y IX",
+            "II y VII"
+          ],
+          "buena": 0,
+          "porque": "VIII y IX, transmitida por el cromosoma X."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los trastornos por déficit.",
+        "puntos": [
+          "Déficit de vitamina K: falla la protrombina, VII, IX, X y proteína C",
+          "Hemofilia: deficiencia de los factores VIII y IX",
+          "Se transmite por el cromosoma X"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Los cromosomas sexuales X e Y, en Bio 2.",
+          "ruta": "#/sesion/bio2-numero"
+        }
+      ]
+    },
+    {
+      "id": "fisio4.c60",
+      "n": 60,
+      "titulo": "Trombocitopenia",
+      "diapositivas": "80",
+      "gancho": "Sin suficientes plaquetas, ¿qué fase de la hemostasia fallaría?",
+      "profe": {
+        "dice": "<p><strong>Trombocitopenia</strong>: deficiencia de plaquetas en sistema vascular. producción insuficiente, descomposición en el torrente o incremento de descomposición en el bazo o hígado.</p><p>Personas con trombocitopenia tienden a sangrar a partir de vasos de pequeño calibre o capilares→pequeñas hemorragias puntiformes en los tejidos de todo el cuerpo: <strong>púrpura trombocitopénica</strong>.</p>",
+        "entiende": "Pocas plaquetas = no se forman bien los tapones = salen puntitos de sangre en la piel.",
+        "truco": "<strong>Trombocito = plaqueta · -penia = falta</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué puede haber pocas plaquetas?",
+        "respuesta": "Por producción insuficiente, descomposición en el torrente o más descomposición en el bazo o el hígado."
+      },
+      "aplica": [
+        {
+          "caso": "Pequeñas hemorragias puntiformes por todo el cuerpo.",
+          "opciones": [
+            "Púrpura trombocitopénica",
+            "Ascitis"
+          ],
+          "buena": 0,
+          "porque": "Púrpura."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la trombocitopenia.",
+        "puntos": [
+          "Deficiencia de plaquetas",
+          "Producción insuficiente o más descomposición (sangre, bazo, hígado)",
+          "Sangran de vasos pequeños y capilares",
+          "Púrpura trombocitopénica"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

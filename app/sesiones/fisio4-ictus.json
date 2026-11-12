@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "id": "fisio4-ictus",
+  "unidad": "fisio4",
+  "bloque": 7,
+  "titulo": "El ictus: hemorragia, síntomas y riesgos",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 7, conceptos 42 a 44, diapositivas 60 a 62). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "De golpe, un lado",
+    "caso": "Una mujer de repente no puede mover bien el brazo y la pierna derechos, le cuesta hablar y le duele mucho la cabeza. Ese día tenía la tensión muy alta.",
+    "pregunta": "¿Qué puede estar pasando? Con la tensión tan alta, ¿qué tipo es más probable?",
+    "solucion": "Son síntomas de un AVC (ictus): pérdida de fuerza en un lado (hemiparesia/hemiplejia), dificultad para expresarse (disartria), dolor de cabeza brusco. Un pico hipertensivo es una de las causas del AVC hemorrágico (hemorragia cerebral o apoplejía, el 20 % de los AVC).",
+    "claves": [
+      "Hemiparesia + disartria + cefalea brusca",
+      "Pico hipertensivo → hemorrágico",
+      "Hemorrágicos: 20 %"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c42",
+      "n": 42,
+      "titulo": "AVC hemorrágicos",
+      "diapositivas": "60",
+      "gancho": "¿Qué dos cosas crees que pueden hacer que un vaso del cerebro se rompa?",
+      "profe": {
+        "dice": "<p><strong>AVC hemorrágicos</strong>: hemorragia cerebral o apoplejía (<strong>20%</strong> de los AVC). Causado por pico hipertensivo o aneurisma congénito (aparte de traumas)</p>",
+        "entiende": "Un vaso del cerebro se rompe, por un pico de tensión o por un aneurisma de nacimiento.",
+        "truco": "Hemorrágicos <strong>20 %</strong>: «<strong>pico o globo</strong>» (pico hipertensivo o aneurisma)."
+      },
+      "porque": {
+        "pregunta": "¿Qué causa un AVC hemorrágico, además de los traumas?",
+        "respuesta": "Un pico hipertensivo o un aneurisma congénito."
+      },
+      "aplica": [
+        {
+          "caso": "Otro nombre del AVC hemorrágico.",
+          "opciones": [
+            "Apoplejía",
+            "Angina"
+          ],
+          "buena": 0,
+          "porque": "Hemorragia cerebral o apoplejía."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el AVC hemorrágico.",
+        "puntos": [
+          "Hemorragia cerebral o apoplejía",
+          "20 % de los AVC",
+          "Pico hipertensivo o aneurisma congénito (y traumas)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c43",
+      "n": 43,
+      "titulo": "Síntomas del AVC",
+      "diapositivas": "61",
+      "gancho": "¿Por qué crees que los síntomas de un ictus son tan distintos de una persona a otra?",
+      "profe": {
+        "dice": "<p>Síntomas AVC muy variados (según área cerebral).</p><ul><li>Pérdida de fuerza en 1 brazo o pierna, o cara (<strong>hemiparesia/hemiplejia</strong>)</li><li>Dificultad para expresarse, entender o lenguaje ininteligible (<strong>disartria</strong>)</li><li>Dificultad al caminar, pérdida de equilibrio o coordinación</li><li>Mareos, dolor de cabeza brusco..</li><li>Pérdida de visión en 1 o ambos ojos</li></ul>",
+        "entiende": "Dependen de la zona del cerebro afectada, y casi siempre empiezan de golpe y en un lado del cuerpo.",
+        "truco": "<strong>Fuerza, habla, equilibrio, cabeza, vista</strong>."
+      },
+      "porque": {
+        "pregunta": "¿De qué dependen los síntomas?",
+        "respuesta": "Del área cerebral afectada."
+      },
+      "aplica": [
+        {
+          "caso": "Dificultad para expresarse o lenguaje ininteligible.",
+          "opciones": [
+            "Disartria",
+            "Hemiplejia"
+          ],
+          "buena": 0,
+          "porque": "Hemiplejia: pérdida de fuerza."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los síntomas del AVC.",
+        "puntos": [
+          "Pérdida de fuerza en un brazo, pierna o cara (hemiparesia/hemiplejia)",
+          "Dificultad para expresarse o entender (disartria)",
+          "Dificultad al caminar, pérdida de equilibrio o coordinación",
+          "Mareos, dolor de cabeza brusco; pérdida de visión"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c44",
+      "n": 44,
+      "titulo": "Factores de riesgo",
+      "diapositivas": "62",
+      "gancho": "De todo lo que aumenta el riesgo de ictus, ¿qué puedes cambiar tú y qué no?",
+      "profe": {
+        "dice": "<p>Factores de riesgo AVC:</p><ul><li><strong>No modificables</strong>: edad, sexo, raza, antecedentes familiares</li><li><strong>Modificables</strong>: hipertensión arterial, tabaco, consumo de grasas, diabetes, enfermedad cardíaca, alcohol, obesidad, vida sedentaria, anticonceptivos orales</li></ul>",
+        "entiende": "Los que no puedes cambiar vienen contigo; los modificables dependen de hábitos y del control de otras enfermedades.",
+        "truco": "No modificables: «<strong>E-S-R-A</strong>»: Edad, Sexo, Raza, Antecedentes."
+      },
+      "porque": {
+        "pregunta": "¿Por qué interesa separar modificables y no modificables?",
+        "respuesta": "Porque los modificables (hipertensión, tabaco, grasas, diabetes…) son sobre los que se puede actuar para prevenir."
+      },
+      "aplica": [
+        {
+          "caso": "Antecedentes familiares.",
+          "opciones": [
+            "No modificable",
+            "Modificable"
+          ],
+          "buena": 0,
+          "porque": "Edad, sexo, raza y antecedentes."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los factores de riesgo del AVC.",
+        "puntos": [
+          "No modificables: edad, sexo, raza, antecedentes familiares",
+          "Modificables: HTA, tabaco, grasas, diabetes, enfermedad cardiaca",
+          "Alcohol, obesidad, vida sedentaria, anticonceptivos orales"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

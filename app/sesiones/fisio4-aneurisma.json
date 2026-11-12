@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "id": "fisio4-aneurisma",
+  "unidad": "fisio4",
+  "bloque": 5,
+  "titulo": "Isquemia, aneurismas y varices",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 5, conceptos 29 a 32, diapositivas 42 a 47). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El globo que no avisa",
+    "caso": "Un hombre de 60 años, fumador e hipertenso, se hace una prueba por otro motivo. Aparece un segmento de la aorta dilatado. Él no ha notado nada.",
+    "pregunta": "¿Qué tiene, por qué no lo notaba y qué se hace?",
+    "solucion": "Un aneurisma: dilatación patológica de un segmento de un vaso, habitualmente arterial (aorta). Es típico en varones de 60 años, hipertensos y fumadores. La mayoría son asintomáticos. Se controla la hipertensión y se vigila cada 6 meses; si empeora, cirugía con injerto.",
+    "claves": [
+      "Dilatación arterial (aorta)",
+      "Casi siempre asintomático",
+      "Control de HTA + revisión cada 6 meses"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c29",
+      "n": 29,
+      "titulo": "La isquemia",
+      "diapositivas": "42",
+      "gancho": "¿Qué órganos crees que aguantan peor sin sangre unos minutos?",
+      "profe": {
+        "dice": "<p>Patologías en vasos, corazón y circulación.</p><p><strong>Isquemia</strong>: reducción del flujo sanguíneo en una zona del organismo, provocando que sus células no reciban oxígeno y sufran lesiones graves, incluso irreversibles.</p><p>Isquemia lleva a <strong>hipoxia</strong> de los tejidos, consecuencias más graves en <strong>corazón y cerebro</strong>.</p>",
+        "entiende": "Isquemia es que no llega sangre; hipoxia es la consecuencia: no llega oxígeno.",
+        "truco": "<strong>Isquemia → hipoxia</strong>; lo peor, en corazón y cerebro."
+      },
+      "porque": {
+        "pregunta": "¿Qué relación hay entre isquemia e hipoxia?",
+        "respuesta": "La isquemia (menos flujo de sangre) lleva a hipoxia: las células no reciben oxígeno."
+      },
+      "aplica": [
+        {
+          "caso": "Dónde son más graves sus consecuencias.",
+          "opciones": [
+            "Corazón y cerebro",
+            "Piel y uñas"
+          ],
+          "buena": 0,
+          "porque": "Corazón y cerebro."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define isquemia.",
+        "puntos": [
+          "Reducción del flujo sanguíneo en una zona",
+          "Las células no reciben oxígeno: lesiones graves, incluso irreversibles",
+          "Lleva a hipoxia; más grave en corazón y cerebro"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c30",
+      "n": 30,
+      "titulo": "Clasificación de las patologías vasculares",
+      "diapositivas": "43",
+      "gancho": "Un vaso puede fallar de dos maneras básicas. ¿Cuáles se te ocurren?",
+      "profe": {
+        "dice": "<p>Enfermedades vasculares en arterias o venas.</p><ul><li>Patologías vasculares por afectación de vasos: <strong>Aneurismas</strong>, <strong>Varices</strong></li><li>Patologías vasculares obstructivas: <strong>Aterosclerosis</strong>, <strong>Trombosis</strong>, <strong>Embolias</strong></li><li>Patologías cerebrovasculares</li></ul>",
+        "entiende": "O el vaso se deforma (aneurisma, varices) o se tapa (aterosclerosis, trombosis, embolia).",
+        "truco": "<strong>Se deforma</strong> o <strong>se tapa</strong>."
+      },
+      "porque": {
+        "pregunta": "¿En qué se diferencian los dos grandes grupos?",
+        "respuesta": "En unos se afecta el propio vaso (aneurismas, varices) y en otros se obstruye (aterosclerosis, trombosis, embolias)."
+      },
+      "aplica": [
+        {
+          "caso": "Trombosis.",
+          "opciones": [
+            "Patología obstructiva",
+            "Afectación del vaso"
+          ],
+          "buena": 0,
+          "porque": "Obstructiva."
+        }
+      ],
+      "recuerda": {
+        "pide": "Clasifica las patologías vasculares.",
+        "puntos": [
+          "Por afectación de vasos: aneurismas y varices",
+          "Obstructivas: aterosclerosis, trombosis y embolias",
+          "Cerebrovasculares"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c31",
+      "n": 31,
+      "titulo": "Aneurismas",
+      "diapositivas": "44 y 45",
+      "gancho": "Si un aneurisma casi nunca duele, ¿cómo podría dar síntomas?",
+      "profe": {
+        "dice": "<p>Dilatación patológica de un segmento de un vaso sanguíneo, habitualmente a nivel arterial (<strong>aorta</strong>).</p><p><strong>Factores de riesgo</strong>: varones de 60 años, hipertensión, fumadores, factores de aterosclerosis.</p><p>Síntomas y evolución dependen de localización. La mayoría <strong>asintomáticos</strong>, aunque compresión de tejidos puede provocar dolor torácico, tos, ronquera o disfagia</p><p><strong>Tratamiento</strong>: Según zona afectada. Medidas para controlar hipertensión + vigilancia periódica cada 6 meses. En caso de empeoramiento: tratamiento quirúrgico con implantación de injerto.</p>",
+        "entiende": "La pared de la arteria cede y se hincha. Casi nunca avisa; si molesta es porque aprieta lo que tiene al lado.",
+        "truco": "Riesgo: <strong>hombre, 60, hipertenso, fumador</strong>. Control cada <strong>6 meses</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo da síntomas?",
+        "respuesta": "Cuando comprime tejidos: dolor torácico, tos, ronquera o disfagia."
+      },
+      "aplica": [
+        {
+          "caso": "Tratamiento si empeora.",
+          "opciones": [
+            "Cirugía con implantación de injerto",
+            "Medias de compresión"
+          ],
+          "buena": 0,
+          "porque": "Las medias son para varices."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los aneurismas.",
+        "puntos": [
+          "Dilatación patológica de un segmento de vaso, sobre todo aorta",
+          "Riesgo: varones de 60, HTA, fumadores, aterosclerosis",
+          "Casi siempre asintomáticos; por compresión: dolor torácico, tos, ronquera, disfagia",
+          "Control de HTA + vigilancia cada 6 meses; si empeora, injerto"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c32",
+      "n": 32,
+      "titulo": "Varices",
+      "diapositivas": "46 y 47",
+      "gancho": "¿Por qué crees que las varices salen casi siempre en las piernas y no en los brazos?",
+      "profe": {
+        "dice": "<p><strong>Varices</strong>: Dilataciones venosas, generalmente en extremidades inferiores.</p><p>Alteración en <strong>válvulas semilunares</strong> dificulta retorno venoso, sangre se acumula y venas se dilatan y se vuelven tortuosas.</p><p><strong>Factores de riesgo</strong>: Obesidad, sedentarismo, anticonceptivos orales, tabaquismo, hipertensión arterial, hipercolesterolemia, trombosis venosa profunda, traumatismos…</p><p><strong>Tratamientos</strong>: Medias de compresión, escleroterapia, terapia con láser, flebectomía…</p>",
+        "entiende": "Si las «puertas» de las venas fallan, la sangre se queda abajo, y la vena se ensancha y se retuerce.",
+        "truco": "<strong>Válvula rota → sangre parada → vena hinchada</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué falla en las varices?",
+        "respuesta": "Las válvulas semilunares: dificultan el retorno venoso, la sangre se acumula y las venas se dilatan y se vuelven tortuosas."
+      },
+      "aplica": [
+        {
+          "caso": "Tratamiento de las varices.",
+          "opciones": [
+            "Escleroterapia",
+            "Injerto aórtico"
+          ],
+          "buena": 0,
+          "porque": "Medias, escleroterapia, láser, flebectomía."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las varices.",
+        "puntos": [
+          "Dilataciones venosas, sobre todo en piernas",
+          "Fallan las válvulas semilunares; la sangre se acumula",
+          "Riesgo: obesidad, sedentarismo, anticonceptivos, tabaco, HTA…",
+          "Tratamiento: medias, escleroterapia, láser, flebectomía"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

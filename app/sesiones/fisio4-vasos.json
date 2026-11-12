@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "id": "fisio4-vasos",
+  "unidad": "fisio4",
+  "bloque": 2,
+  "titulo": "Los vasos, los circuitos y la linfa",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Fisio 4 (bloque 2, conceptos 10 a 14, diapositivas 15 a 22). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Cuesta arriba",
+    "caso": "La sangre de los pies tiene que subir hasta el corazón, en contra de la gravedad. El impulso del corazón no llega a las venas, y sus paredes son delgadas, con poca presión.",
+    "pregunta": "¿Cómo consigue volver la sangre al corazón sin caerse hacia abajo?",
+    "solucion": "Por el retorno venoso: la sangre de las arterias avanza y «empuja» a la de las venas, y la sístole tiene un efecto succionador sobre las venas cavas y pulmonares. Además, las venas tienen válvulas semilunares que evitan el retroceso de la sangre.",
+    "claves": [
+      "Empuje de la sangre arterial",
+      "Succión de la sístole",
+      "Válvulas semilunares: no hay retroceso"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "fisio4.c10",
+      "n": 10,
+      "titulo": "Arterias, venas y capilares",
+      "diapositivas": "15 y 16",
+      "gancho": "Un vaso que sale del corazón a toda presión y otro que vuelve despacio, ¿tendrán la misma pared?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d016.jpg",
+        "imgAlt": "Arteria, capilares y vena (diap. 16)",
+        "dice": "<p><strong>El sistema vascular:</strong> Conjunto de vasos sanguíneos del organismo</p><ul><li><strong>Arterias</strong>: salen del corazón y se ramifican hasta <strong>arteriolas</strong>. Paredes muy fuertes</li><li><strong>Venas</strong>: conducen sangre hacia el corazón. Las más pequeñas se llaman <strong>vénulas</strong>. Paredes delgadas (baja P). Presentan <strong>válvulas semilunares</strong> (evitan retroceso de la sangre)</li><li><strong>Capilares</strong>: vasos de pequeño calibre, en ellos ocurre <strong>intercambio de sustancias</strong>. Paredes muy finas y permeables</li></ul>",
+        "entiende": "Arterias: salen del corazón con fuerza. Venas: vuelven con poca presión y necesitan válvulas. Capilares: finísimos, donde se hace el intercambio.",
+        "truco": "<strong>A = Aleja</strong> del corazón; <strong>V = Vuelve</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el intercambio de sustancias ocurre en los capilares?",
+        "respuesta": "Porque sus paredes son muy finas y permeables."
+      },
+      "aplica": [
+        {
+          "caso": "Paredes delgadas (baja presión) y válvulas semilunares.",
+          "opciones": [
+            "Venas",
+            "Arterias"
+          ],
+          "buena": 0,
+          "porque": "Venas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Diferencia arterias, venas y capilares.",
+        "puntos": [
+          "Arterias: salen del corazón, se ramifican hasta arteriolas; paredes muy fuertes",
+          "Venas: hacia el corazón; vénulas; paredes delgadas; válvulas semilunares",
+          "Capilares: pequeño calibre, intercambio de sustancias, paredes finas y permeables"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c11",
+      "n": 11,
+      "titulo": "Las 3 capas de los vasos",
+      "diapositivas": "17",
+      "gancho": "¿Por qué crees que la sangre no se coagula al rozar con la pared de los vasos?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d017.jpg",
+        "imgAlt": "Capas de arteria y vena (diap. 17)",
+        "dice": "<p>Paredes de arterias y venas presentan 3 capas concéntricas:</p><ol><li><strong>Íntima</strong>: endotelio plano, en contacto con la sangre, evita coagulación</li><li><strong>Media</strong>: capa más gruesa, células musculares lisas y tejido conjuntivo. Mayor en arterias que en venas</li><li><strong>Adventicia</strong>: externa. Fibras elásticas y de colágeno. Más gruesa en venas que arterias</li></ol>",
+        "entiende": "La media (músculo) es más gruesa en las arterias porque aguantan más presión; la adventicia es más gruesa en las venas.",
+        "truco": "De dentro afuera: <strong>Í-M-A</strong> (Íntima, Media, Adventicia)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la capa media es mayor en las arterias?",
+        "respuesta": "Porque es la de las células musculares lisas, y las arterias soportan más presión (paredes muy fuertes)."
+      },
+      "aplica": [
+        {
+          "caso": "Endotelio plano que evita la coagulación.",
+          "opciones": [
+            "Íntima",
+            "Adventicia"
+          ],
+          "buena": 0,
+          "porque": "Íntima."
+        },
+        {
+          "caso": "Más gruesa en venas que en arterias.",
+          "opciones": [
+            "Adventicia",
+            "Media"
+          ],
+          "buena": 0,
+          "porque": "La media es mayor en arterias."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 3 capas de arterias y venas.",
+        "puntos": [
+          "Íntima: endotelio plano, contacto con la sangre, evita la coagulación",
+          "Media: la más gruesa; músculo liso y conjuntivo; mayor en arterias",
+          "Adventicia: externa; fibras elásticas y de colágeno; más gruesa en venas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c12",
+      "n": 12,
+      "titulo": "Los circuitos",
+      "diapositivas": "18 y 19",
+      "gancho": "La sangre tiene que cargar oxígeno y repartirlo. ¿Lo hará en una sola vuelta o en dos?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d018.jpg",
+        "imgAlt": "Circuito menor y mayor (diap. 18)",
+        "dice": "<p>Sistema <strong>cerrado</strong>, sangre fluye de forma continua por el organismo impulsada por corazón. <strong>Volemia</strong> ha de ser constante.</p><ul><li><strong>Circuito menor o pulmonar</strong>: sangre del corazón a los pulmones y la devuelve al corazón oxigenada</li><li><strong>Circuito mayor o sistémico</strong>: sangre oxigenada desde el corazón hasta el resto del organismo y de vuelta desoxigenada</li></ul>",
+        "entiende": "Dos vueltas: una corta para cargar oxígeno en los pulmones y una larga para repartirlo por todo el cuerpo.",
+        "truco": "<strong>Menor = pulmones · Mayor = todo el cuerpo</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la volemia ha de ser constante?",
+        "respuesta": "Porque es un sistema cerrado en el que la sangre fluye de forma continua impulsada por el corazón."
+      },
+      "aplica": [
+        {
+          "caso": "Sangre oxigenada del corazón al resto del organismo.",
+          "opciones": [
+            "Circuito mayor o sistémico",
+            "Circuito menor o pulmonar"
+          ],
+          "buena": 0,
+          "porque": "Mayor."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los dos circuitos.",
+        "puntos": [
+          "Sistema cerrado; volemia constante",
+          "Menor o pulmonar: corazón → pulmones → corazón (oxigenada)",
+          "Mayor o sistémico: oxigenada al organismo y vuelve desoxigenada"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c13",
+      "n": 13,
+      "titulo": "El sistema linfático",
+      "diapositivas": "20 y 21",
+      "gancho": "En los capilares se escapa un poco de plasma entre las células. ¿Qué crees que pasa con ese líquido?",
+      "profe": {
+        "img": "../fisio4/repaso/img/d020.jpg",
+        "imgAlt": "Capilares sanguíneos y linfáticos (diap. 20)",
+        "dice": "<p>Intercambio de sustancias en los capilares. En espacio intercelular queda filtrado de plasma procedente de capilares: <strong>linfa</strong>.</p><p><strong>Capilares linfáticos</strong> captan linfa y convergen para formar <strong>vasos linfáticos</strong>, de ahí a <strong>ganglios linfáticos</strong>, se filtra la linfa y se devuelve al sistema vascular</p><p>Sistema de circulación <strong>abierto</strong>, llega a todos los tejidos. 3 funciones:</p><ul><li>Recolectar y devolver líquido intersticial a la sangre</li><li>Absorber nutrientes del aparato digestivo y conducirlos a venas subclavias</li><li>Defender organismo de agentes patógenos: filtrado de la sangre</li></ul>",
+        "entiende": "Es el «sistema de recogida»: devuelve a la sangre el líquido que se queda entre las células y, de paso, lo filtra en los ganglios.",
+        "truco": "Funciones: <strong>Devuelve, Absorbe, Defiende</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se dice que es un sistema abierto?",
+        "respuesta": "Porque llega a todos los tejidos recogiendo el líquido intersticial, en vez de circular cerrado como la sangre."
+      },
+      "aplica": [
+        {
+          "caso": "Donde se filtra la linfa.",
+          "opciones": [
+            "Ganglios linfáticos",
+            "Capilares sanguíneos"
+          ],
+          "buena": 0,
+          "porque": "Ganglios."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la linfa y las funciones del sistema linfático.",
+        "puntos": [
+          "Linfa: filtrado de plasma que queda en el espacio intercelular",
+          "Capilares linfáticos → vasos → ganglios (filtran) → vuelve al sistema vascular",
+          "Recolectar y devolver líquido intersticial",
+          "Absorber nutrientes del digestivo (a venas subclavias) y defender: filtrar"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "fisio4.c14",
+      "n": 14,
+      "titulo": "El retorno venoso",
+      "diapositivas": "22",
+      "gancho": "Si el impulso del corazón no llega a las venas, ¿qué mueve la sangre por ellas?",
+      "profe": {
+        "dice": "<p>Impulso del corazón no llega a las venas, pero hace que la sangre de las arterias avance y “empuje” a la de las venas. Además, sístole del corazón tiene efecto succionador para la sangre de las venas cavas y pulmonares.</p>",
+        "entiende": "La sangre de las venas vuelve porque la de detrás la empuja y porque el corazón, al contraerse, la «aspira».",
+        "truco": "<strong>Empujón + succión</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cómo ayuda la sístole al retorno venoso?",
+        "respuesta": "Tiene un efecto succionador sobre la sangre de las venas cavas y pulmonares."
+      },
+      "aplica": [
+        {
+          "caso": "La sangre arterial que avanza…",
+          "opciones": [
+            "«Empuja» a la de las venas",
+            "Frena a la de las venas"
+          ],
+          "buena": 0,
+          "porque": "Empuje."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo vuelve la sangre al corazón?",
+        "puntos": [
+          "El impulso no llega a las venas",
+          "La sangre arterial avanza y empuja a la venosa",
+          "La sístole succiona la sangre de cavas y pulmonares"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "fisio3",
+      "bloques": []
+    },
+    {
+      "unidad": "fisio2",
+      "bloques": []
+    }
+  ]
+}

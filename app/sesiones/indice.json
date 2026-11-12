@@ -52,6 +52,24 @@
     { "id": "bio3-maduracion", "unidad": "bio3", "bloque": 9, "titulo": "La maduración del ARN", "minutos": 25, "pegatina": "gel", "gancho": "un gen más largo que su mensaje" },
     { "id": "bio3-codigo", "unidad": "bio3", "bloque": 10, "titulo": "El código genético", "minutos": 25, "pegatina": "gel", "gancho": "cuatro letras para veinte palabras" },
     { "id": "bio3-traduccion", "unidad": "bio3", "bloque": 11, "titulo": "La traducción paso a paso", "minutos": 25, "pegatina": "gel", "gancho": "el codón sin repartidor" },
-    { "id": "bio3-mutaciones", "unidad": "bio3", "bloque": 12, "titulo": "Las mutaciones génicas", "minutos": 25, "pegatina": "gel", "gancho": "una letra cambiada que no cambia nada" }
+    { "id": "bio3-mutaciones", "unidad": "bio3", "bloque": 12, "titulo": "Las mutaciones génicas", "minutos": 25, "pegatina": "gel", "gancho": "una letra cambiada que no cambia nada" },
+    { "id": "fisio4-corazon", "unidad": "fisio4", "bloque": 1, "titulo": "El corazón por dentro: pared, cavidades y válvulas", "minutos": 25, "pegatina": "corazon", "gancho": "el viaje de una gota" },
+    { "id": "fisio4-latido", "unidad": "fisio4", "bloque": 1, "titulo": "El latido: ciclo cardiaco y electricidad", "minutos": 25, "pegatina": "corazon", "gancho": "el pulso que se acelera" },
+    { "id": "fisio4-vasos", "unidad": "fisio4", "bloque": 2, "titulo": "Los vasos, los circuitos y la linfa", "minutos": 25, "pegatina": "corazon", "gancho": "cuesta arriba" },
+    { "id": "fisio4-presion", "unidad": "fisio4", "bloque": 3, "titulo": "La sangre: tensión arterial y volemia", "minutos": 20, "pegatina": "corazon", "gancho": "dos números en el tensiómetro" },
+    { "id": "fisio4-hemostasia", "unidad": "fisio4", "bloque": 4, "titulo": "Parar una hemorragia: hemostasia y cascada", "minutos": 25, "pegatina": "corazon", "gancho": "el corte que deja de sangrar" },
+    { "id": "fisio4-frenos", "unidad": "fisio4", "bloque": 4, "titulo": "Los frenos de la coagulación y la reparación", "minutos": 25, "pegatina": "corazon", "gancho": "la pastilla que bloquea la vitamina K" },
+    { "id": "fisio4-aneurisma", "unidad": "fisio4", "bloque": 5, "titulo": "Isquemia, aneurismas y varices", "minutos": 25, "pegatina": "corazon", "gancho": "el globo que no avisa" },
+    { "id": "fisio4-trombosis", "unidad": "fisio4", "bloque": 6, "titulo": "Aterosclerosis y trombosis", "minutos": 25, "pegatina": "corazon", "gancho": "blanco en la arteria, rojo en la vena" },
+    { "id": "fisio4-embolia", "unidad": "fisio4", "bloque": 7, "titulo": "Embolias y accidentes cerebrovasculares", "minutos": 25, "pegatina": "corazon", "gancho": "el buzo" },
+    { "id": "fisio4-ictus", "unidad": "fisio4", "bloque": 7, "titulo": "El ictus: hemorragia, síntomas y riesgos", "minutos": 20, "pegatina": "corazon", "gancho": "de golpe, un lado" },
+    { "id": "fisio4-cardiaca", "unidad": "fisio4", "bloque": 8, "titulo": "El corazón enfermo: ritmo, riego y válvulas", "minutos": 25, "pegatina": "corazon", "gancho": "diez minutos o media hora" },
+    { "id": "fisio4-tension", "unidad": "fisio4", "bloque": 9, "titulo": "Tensión alta, tensión baja", "minutos": 20, "pegatina": "corazon", "gancho": "el asesino silencioso" },
+    { "id": "fisio4-edema", "unidad": "fisio4", "bloque": 9, "titulo": "Los edemas", "minutos": 25, "pegatina": "corazon", "gancho": "un abdomen lleno de líquido" },
+    { "id": "fisio4-coagulopatias", "unidad": "fisio4", "bloque": 9, "titulo": "Cuando la coagulación falla", "minutos": 20, "pegatina": "corazon", "gancho": "puntitos por todo el cuerpo" },
+    { "id": "fisio4-rinon", "unidad": "fisio4", "bloque": 10, "titulo": "El riñón y las vías urinarias", "minutos": 25, "pegatina": "corazon", "gancho": "un millón de filtros" },
+    { "id": "fisio4-orina", "unidad": "fisio4", "bloque": 11, "titulo": "Formar orina y mucho más", "minutos": 25, "pegatina": "corazon", "gancho": "el riñón que fabrica sangre" },
+    { "id": "fisio4-manifestaciones", "unidad": "fisio4", "bloque": 12, "titulo": "Lo que dice la orina y el cólico nefrítico", "minutos": 25, "pegatina": "corazon", "gancho": "muchas veces, pero poca" },
+    { "id": "fisio4-renal", "unidad": "fisio4", "bloque": 12, "titulo": "Infecciones, síndromes e insuficiencia renal", "minutos": 25, "pegatina": "corazon", "gancho": "fiebre y dolor en un lado" }
   ]
 }
