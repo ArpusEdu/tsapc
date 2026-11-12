@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-pas",
+  "unidad": "ipe-tema5",
+  "bloque": 1,
+  "titulo": "Primeros auxilios y la conducta PAS",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloque 1, conceptos 1 a 4, diapositivas 1 y 2). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El compañero junto al cable",
+    "caso": "Entras en el almacén y ves a un compañero tirado en el suelo, junto a una máquina con un cable pelado que sigue enchufado. Tu primer impulso es correr a tocarle para ver si está bien.",
+    "pregunta": "¿Qué es lo primero que tienes que hacer, y en qué orden lo demás?",
+    "solucion": "Aplicar la conducta PAS. Proteger: alejar el peligro de la persona accidentada y de ti (si te electrocutas, ya hay dos heridos) y eliminar la causa activa. Avisar: a los servicios de socorro de la empresa y al 112, dando datos de quien llama, lugar exacto, tipo de accidente y número de heridos, y dejar libre la línea. Socorrer: evaluación primaria (consciencia y respiración) y luego secundaria, de la cabeza a los pies.",
+    "claves": [
+      "Proteger → Avisar → Socorrer",
+      "Primero, tú a salvo",
+      "Consciencia → respiración"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c1",
+      "n": 1,
+      "titulo": "De qué trata el tema",
+      "diapositivas": "1",
+      "gancho": "Si un compañero se desmaya en el trabajo, ¿sabrías qué hacer en los primeros minutos?",
+      "profe": {
+        "dice": "<p>El tema 5 se llama <strong>«Los primeros auxilios en la empresa»</strong> y tiene 4 apartados:</p>\n<ol>\n<li><strong>Los primeros auxilios:</strong> conducta PAS, triaje y botiquín.</li>\n<li><strong>El soporte vital básico</strong> (SVB): cadena de supervivencia y RCP.</li>\n<li><strong>La actuación ante atragantamientos.</strong></li>\n<li><strong>Las técnicas de actuación ante otras emergencias:</strong> hemorragias, quemaduras, traumatismos, heridas, pérdida de consciencia y transporte de heridos.</li>\n</ol>",
+        "entiende": "El tema te enseña <strong>qué hacer en los primeros minutos</strong> de un accidente en el trabajo, hasta que llegan los profesionales: primero el método general (PAS), luego cómo salvar a alguien que no respira (SVB) y después cada tipo de lesión.",
+        "truco": "<strong>\"Auxilios, Vida, Atragantamiento, Otras\"</strong> → 1 PAS · 2 RCP · 3 Heimlich · 4 lesiones."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el tema empieza por la conducta PAS y no por las lesiones?",
+        "respuesta": "Porque PAS es el método general que vale para cualquier accidente; después vienen el soporte vital y cada tipo de lesión."
+      },
+      "aplica": [
+        {
+          "caso": "Cadena de supervivencia y RCP.",
+          "opciones": [
+            "Soporte vital básico",
+            "Primeros auxilios: PAS"
+          ],
+          "buena": 0,
+          "porque": "Apartado 2: SVB."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 apartados del tema.",
+        "puntos": [
+          "Primeros auxilios: PAS, triaje y botiquín",
+          "Soporte vital básico: cadena de supervivencia y RCP",
+          "Atragantamientos",
+          "Otras emergencias: hemorragias, quemaduras, traumatismos, heridas, consciencia, transporte"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c2",
+      "n": 2,
+      "titulo": "Qué son y sus objetivos",
+      "diapositivas": "1",
+      "gancho": "Cuando das primeros auxilios, ¿estás curando a la persona?",
+      "profe": {
+        "dice": "<p>Son las <strong>medidas que se adoptan inicialmente</strong>, hasta que se puede conseguir asistencia sanitaria profesional, <strong>en el mismo lugar de los hechos</strong>, con una persona accidentada o enferma de manera repentina.\n<strong>Objetivos</strong> de los primeros auxilios:</p>\n<ol>\n<li><strong>Mantener la vida</strong> de la persona accidentada.</li>\n<li><strong>Evitar que se agrave</strong> con nuevas lesiones o complicaciones.</li>\n<li><strong>Aliviar el dolor.</strong></li>\n<li><strong>Garantizar el traslado</strong> a un centro sanitario en condiciones adecuadas.</li>\n</ol>",
+        "entiende": "Tú no curas: <strong>aguantas la situación</strong> (mantienes viva a la persona, no dejas que empeore y le quitas dolor) hasta que llegan los profesionales y se la llevan bien.",
+        "truco": "Los 4 objetivos = <strong>\"Vida, No empeorar, Dolor, Traslado\"</strong> → <strong>\"Vi-No-Do-Tra\"</strong> (\"Vino de Trajano\")."
+      },
+      "porque": {
+        "pregunta": "¿Hasta cuándo se dan los primeros auxilios?",
+        "respuesta": "Hasta que se puede conseguir asistencia sanitaria profesional: son las medidas iniciales, en el mismo lugar de los hechos."
+      },
+      "aplica": [
+        {
+          "caso": "Objetivo de los primeros auxilios.",
+          "opciones": [
+            "Evitar que se agrave con nuevas lesiones",
+            "Curar la lesión"
+          ],
+          "buena": 0,
+          "porque": "Mantener, no empeorar, aliviar, trasladar."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define primeros auxilios y di sus objetivos.",
+        "puntos": [
+          "Medidas iniciales, hasta la asistencia profesional, en el lugar de los hechos",
+          "Mantener la vida",
+          "Evitar que se agrave · aliviar el dolor",
+          "Garantizar un traslado adecuado"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c3",
+      "n": 3,
+      "titulo": "Los 7 principios",
+      "diapositivas": "1",
+      "gancho": "Alguien inconsciente tiene sed y la boca seca. ¿Le das agua?",
+      "profe": {
+        "dice": "<ol>\n<li><strong>Mantener la calma.</strong></li>\n<li><strong>Actuar con rapidez.</strong></li>\n<li><strong>Activar urgentemente el sistema de emergencia.</strong></li>\n<li><strong>No dar de beber ni de comer</strong> a una víctima inconsciente.</li>\n<li><strong>Mantener abrigada</strong> a la víctima.</li>\n<li><strong>No mover</strong> a la víctima, a menos que sea imprescindible.</li>\n<li><strong>Trasladar</strong> a la víctima de la forma adecuada.</li>\n</ol>",
+        "entiende": "Son las <strong>7 reglas de oro</strong> que valen para cualquier accidente. Si dudas en el examen qué hacer, casi siempre la respuesta está aquí: calma, rapidez, 112, nada por la boca, abrigo, no mover y traslado correcto.",
+        "truco": "<strong>\"Calma, Rápido, 112, Boca cerrada, Manta, Quieto, Traslado\"</strong> → cuenta con los dedos de una mano y dos de la otra: <strong>7 reglas</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se mueve a la víctima?",
+        "respuesta": "Porque solo se mueve si es imprescindible: moverla mal puede agravar las lesiones."
+      },
+      "aplica": [
+        {
+          "caso": "Víctima inconsciente.",
+          "opciones": [
+            "No darle de beber ni de comer",
+            "Darle agua con azúcar"
+          ],
+          "buena": 0,
+          "porque": "Principio de los primeros auxilios."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 7 principios de los primeros auxilios.",
+        "puntos": [
+          "Mantener la calma · actuar con rapidez",
+          "Activar urgentemente el sistema de emergencia",
+          "No dar de beber ni comer a un inconsciente · mantenerla abrigada",
+          "No moverla salvo si es imprescindible · trasladarla de forma adecuada"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c4",
+      "n": 4,
+      "titulo": "La conducta PAS",
+      "diapositivas": "2",
+      "gancho": "¿Qué información crees que necesita el 112 cuando llamas?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/001.jpg",
+        "imgAlt": "Cadena de socorro: sistema PAS (diap. 2)",
+        "dice": "<p>La conducta PAS es una <strong>técnica de primeros auxilios</strong> que debe activarse <strong>ante un accidente o una enfermedad repentina</strong> para evitar que el estado de la persona empeore.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Proteger</th>\n<th>Avisar</th>\n<th>Socorrer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. <strong>Alejar el peligro</strong> tanto de la persona accidentada como de nosotros mismos.</td>\n<td>1. Avisar a los <strong>servicios de socorro de la empresa</strong>.</td>\n<td>Una vez protegida la persona accidentada y avisados los servicios de socorro, se asiste a la víctima en <strong>dos fases</strong>:</td>\n</tr>\n<tr>\n<td>2. <strong>Observar si las causas</strong> que han provocado el accidente continúan activas e intentar eliminarlas para evitar nuevos accidentes.</td>\n<td>2. <strong>Llamar al 112</strong> y facilitar: datos de la persona que llama, <strong>lugar exacto</strong> de los hechos, <strong>tipo de accidente</strong>, <strong>número de personas heridas</strong> y su situación.</td>\n<td>1. <strong>Evaluación primaria:</strong> reconocer los <strong>signos vitales</strong>, en este orden: <strong>consciencia y respiración</strong>.</td>\n</tr>\n<tr>\n<td>3. <strong>Señalizar</strong> el lugar del accidente de forma adecuada. <strong>Solo si existe peligro</strong> para la persona accidentada se procederá a su traslado.</td>\n<td>3. <strong>Mantener libre la línea telefónica</strong> empleada para facilitar la comunicación con los servicios de ayuda.</td>\n<td>2. <strong>Evaluación secundaria:</strong> examinar otras posibles lesiones <strong>desde la cabeza hasta los pies</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "Primero <strong>tú y la víctima a salvo</strong> (si te electrocutas tú también, ya son dos heridos), luego <strong>pides ayuda</strong> dando datos claros y <strong>sin colgar la línea</strong>, y solo después <strong>atiendes</strong>: primero lo que mata (¿responde? ¿respira?) y luego el resto, de arriba abajo.",
+        "truco": "<strong>P-A-S = \"Primero yo a salvo, Aviso, Socorro\"</strong>. En socorrer: <strong>\"Con-Res\"</strong> (Consciencia → Respiración) y luego <strong>\"de la cabeza a los pies\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay que dejar libre la línea telefónica?",
+        "respuesta": "Para facilitar la comunicación con los servicios de ayuda."
+      },
+      "aplica": [
+        {
+          "caso": "Primer signo vital que se evalúa.",
+          "opciones": [
+            "Consciencia",
+            "Respiración"
+          ],
+          "buena": 0,
+          "porque": "Consciencia y respiración, en ese orden."
+        },
+        {
+          "caso": "Evaluación secundaria.",
+          "opciones": [
+            "Otras lesiones de la cabeza a los pies",
+            "Llamar al 112"
+          ],
+          "buena": 0,
+          "porque": "De arriba abajo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la conducta PAS.",
+        "puntos": [
+          "Proteger: alejar el peligro, eliminar causas activas, señalizar",
+          "Avisar: socorro de la empresa y 112 con datos; línea libre",
+          "Socorrer: evaluación primaria (consciencia y respiración)",
+          "Evaluación secundaria: de la cabeza a los pies"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

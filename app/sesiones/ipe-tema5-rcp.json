@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-rcp",
+  "unidad": "ipe-tema5",
+  "bloque": 4,
+  "titulo": "La RCP 30:2 y la posición lateral de seguridad",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloque 4, conceptos 12 a 14, diapositiva 6 y casos de la página 84). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Solo, con el móvil en la mano",
+    "caso": "Estás solo en el laboratorio por la tarde. Una compañera se desploma: no responde y no respira con normalidad. Llevas el móvil en el bolsillo.",
+    "pregunta": "¿Te vas a buscar ayuda o te quedas? ¿Qué haces exactamente?",
+    "solucion": "Te quedas: marcas el 112/061, pones el altavoz u otra opción de manos libres e inicias inmediatamente la RCP, guiado por el teleoperador: 30 compresiones torácicas y 2 ventilaciones de rescate, sin parar (30:2). En cuanto llegue el DEA, lo enciendes y sigues sus instrucciones. Solo si no tuvieras teléfono dejarías a la víctima para avisar y volverías a iniciar la RCP.",
+    "claves": [
+      "Con móvil: altavoz + RCP",
+      "30:2",
+      "DEA: encender y seguir instrucciones"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c12",
+      "n": 12,
+      "titulo": "El algoritmo 30:2",
+      "diapositivas": "6",
+      "gancho": "¿Cuántas compresiones y cuántas ventilaciones crees que se alternan en la RCP?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/005.jpg",
+        "imgAlt": "Soporte vital básico (diap. 6)",
+        "dice": "<ol>\n<li><strong>Persona inconsciente con respiración ausente o anormal.</strong></li>\n<li><strong>Llama al servicio de emergencias.</strong></li>\n<li><strong>Da treinta compresiones torácicas.</strong></li>\n<li><strong>Da dos ventilaciones de rescate.</strong></li>\n<li><strong>Continúa RCP 30:2.</strong></li>\n<li><strong>En cuanto llegue el DEA, enciéndelo y sigue sus instrucciones.</strong></li>\n</ol>",
+        "entiende": "Si <strong>no responde y no respira bien</strong>, no esperes: <strong>llama</strong> y empieza a <strong>apretar el pecho</strong>. Cada 30 compresiones, 2 soplos, sin parar, hasta que llegue el DEA (que te va diciendo en voz alta qué hacer) o los sanitarios.",
+        "truco": "<strong>\"30:2 como el 30 de febrero: 30 aprieto y 2 soplo\"</strong>. Orden: <strong>\"Mira, Llama, Aprieta, Sopla, Repite, DEA\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo se empieza el algoritmo?",
+        "respuesta": "Ante una persona inconsciente con respiración ausente o anormal."
+      },
+      "aplica": [
+        {
+          "caso": "Ventilaciones de rescate tras cada 30 compresiones.",
+          "opciones": [
+            "2",
+            "5"
+          ],
+          "buena": 0,
+          "porque": "30:2."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di el algoritmo del soporte vital básico.",
+        "puntos": [
+          "Inconsciente con respiración ausente o anormal",
+          "Llama al servicio de emergencias",
+          "30 compresiones + 2 ventilaciones; continúa 30:2",
+          "Cuando llegue el DEA, enciéndelo y sigue sus instrucciones"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c13",
+      "n": 13,
+      "titulo": "Cómo avisar si estás solo",
+      "diapositivas": "6",
+      "gancho": "Si estás solo y sin teléfono, ¿empiezas la RCP o vas a avisar?",
+      "profe": {
+        "dice": "<p>Ante una persona <strong>inconsciente</strong> y con una <strong>respiración ausente o anormal</strong>, se debe alertar inmediatamente a los <strong>Servicios de Emergencias Médicas (112/061)</strong>.</p>\n<ul>\n<li><strong>Socorrista solo y con móvil:</strong> marcar el número de emergencias, <strong>activar el altavoz</strong> u otra opción de manos libres e <strong>iniciar inmediatamente la RCP</strong>, asistido por el teleoperador.</li>\n<li><strong>Socorrista solo y sin teléfono:</strong> <strong>dejar a la víctima</strong> para avisar al sistema de emergencias y <strong>posteriormente iniciar la RCP</strong>.</li>\n</ul>",
+        "entiende": "Con móvil <strong>no te separas nunca</strong> de la víctima: altavoz y a hacer RCP mientras te guían. Sin móvil, primero <strong>vas a pedir ayuda</strong> y luego vuelves: sin el aviso no llegará el DEA ni la ambulancia.",
+        "truco": "<strong>\"Con móvil: altavoz y aprieto. Sin móvil: corro, aviso y vuelvo\"</strong>. Teléfonos: <strong>112 / 061</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué sin teléfono primero se avisa?",
+        "respuesta": "Porque sin el aviso no llegarán el DEA ni la ambulancia; después se vuelve y se inicia la RCP."
+      },
+      "aplica": [
+        {
+          "caso": "Solo y con móvil.",
+          "opciones": [
+            "Altavoz y RCP inmediata",
+            "Dejar a la víctima y buscar ayuda"
+          ],
+          "buena": 0,
+          "porque": "No te separas."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se avisa si estás solo?",
+        "puntos": [
+          "Inconsciente y sin respirar bien: alertar inmediatamente al 112/061",
+          "Con móvil: marcar, altavoz e iniciar la RCP guiado",
+          "Sin teléfono: dejar a la víctima, avisar y luego iniciar la RCP"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c14",
+      "n": 14,
+      "titulo": "Casos prácticos y PLS",
+      "diapositivas": "6",
+      "gancho": "Una persona no responde pero respira. ¿Le haces la RCP?",
+      "profe": {
+        "dice": "<p>La diapositiva solo remite a los <strong>casos prácticos de la página 84</strong> (actuación en PCR y posición lateral de seguridad). ⚠️ Lo que sigue <strong>no está en la diapositiva</strong>; es lo general de las guías y lo que pregunta el test:</p>\n<ul>\n<li><strong>Consciencia:</strong> háblale y tócale los hombros. Es el <strong>primer signo vital</strong> que se evalúa.</li>\n<li><strong>Respiración:</strong> abre la vía aérea con la <strong>maniobra frente-mentón</strong> y <strong>mira, escucha y siente</strong> si respira (unos 10 segundos).</li>\n<li><strong>Si está inconsciente y respira → PLS</strong> y llamar al 112, vigilando que siga respirando.</li>\n<li><strong>Si está inconsciente y no respira (o respira mal) → 112 + RCP 30:2.</strong> Las compresiones, en el <strong>centro del pecho</strong>, a un ritmo de <strong>100-120 por minuto</strong> y unos <strong>5-6 cm</strong> de profundidad.</li>\n</ul>",
+        "entiende": "La <strong>PLS</strong> es para quien <strong>respira pero no responde</strong>: de lado no se atraganta con su lengua ni con el vómito. Si <strong>no respira</strong>, la PLS no sirve: hay que hacer <strong>RCP</strong>.",
+        "truco": "<strong>\"Respira → de lado (PLS) · No respira → RCP\"</strong>. Ritmo de compresiones: <strong>\"100-120, al ritmo de <em>Stayin' Alive</em>\"</strong>. <strong>\"Frente-mentón = abro para ver si respira\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve la posición lateral de seguridad?",
+        "respuesta": "Para quien está inconsciente pero respira: de lado no se atraganta con la lengua ni con el vómito."
+      },
+      "aplica": [
+        {
+          "caso": "Inconsciente y respira.",
+          "opciones": [
+            "PLS y 112, vigilando la respiración",
+            "RCP 30:2"
+          ],
+          "buena": 0,
+          "porque": "Si no respira, RCP."
+        },
+        {
+          "caso": "Ritmo de compresiones.",
+          "opciones": [
+            "100-120 por minuto",
+            "30 por minuto"
+          ],
+          "buena": 0,
+          "porque": "En el centro del pecho, 5-6 cm."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica qué hacer según la consciencia y la respiración.",
+        "puntos": [
+          "Consciencia: hablarle y tocarle los hombros",
+          "Respiración: maniobra frente-mentón; mirar, escuchar, sentir (10 s)",
+          "Inconsciente y respira → PLS y 112",
+          "Inconsciente y no respira → 112 + RCP 30:2 (100-120/min, 5-6 cm)"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-traumatismos",
+  "unidad": "ipe-tema5",
+  "bloque": 8,
+  "titulo": "Traumatismos y heridas",
+  "minutos": 30,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloques 8 y 9, conceptos 25 a 29, diapositivas 11 y 12). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El tobillo que se mueve",
+    "caso": "Dos compañeros se tuercen el tobillo bajando una escalera. A uno se le hincha y le duele, pero puede moverlo. Al otro se le ve la articulación deformada y no puede moverla nada.",
+    "pregunta": "¿Qué le ha pasado a cada uno y qué no debes hacer nunca con el segundo?",
+    "solucion": "El primero tiene un esguince: desgarro de ligamentos al forzar la articulación, con inflamación, dolor y amoratamiento, pero se conserva la movilidad (frío, levantar e inmovilizar). El segundo, una luxación: torcedura brusca con deformación e imposibilidad de movimiento. Frío, mantener la articulación como está y nunca intentar recolocar el hueso.",
+    "claves": [
+      "Se mueve → esguince",
+      "Deformada y no se mueve → luxación",
+      "Nunca recolocar"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c25",
+      "n": 25,
+      "titulo": "Los traumatismos",
+      "diapositivas": "11",
+      "gancho": "¿Qué partes del cuerpo crees que se lesionan con una caída o un golpe?",
+      "profe": {
+        "dice": "<p>Son <strong>lesiones del sistema musculoesquelético</strong>, producidas normalmente por una <strong>lesión mecánica externa</strong>, que afectan a los <strong>huesos, articulaciones y tendones</strong>.\nEn el trabajo se pueden producir accidentes por <strong>caídas, golpes y atrapamientos</strong> que originan <strong>fracturas, contusiones, esguinces y luxaciones</strong>.</p>",
+        "entiende": "Traumatismo = <strong>\"golpe\"</strong> que daña lo que te sostiene y te mueve (huesos y articulaciones). Hay 4 tipos según qué se rompe o se mueve.",
+        "truco": "Causas = <strong>\"Caer, Chocar, Pillarse\"</strong>. Tipos = <strong>\"Con-Es-Lu-Fra\"</strong> (Contusión, Esguince, Luxación, Fractura): de menos a más grave."
+      },
+      "porque": {
+        "pregunta": "¿Cómo se producen en el trabajo?",
+        "respuesta": "Por caídas, golpes y atrapamientos, que originan fracturas, contusiones, esguinces y luxaciones."
+      },
+      "aplica": [
+        {
+          "caso": "Afectan a…",
+          "opciones": [
+            "Huesos, articulaciones y tendones",
+            "Solo la piel"
+          ],
+          "buena": 0,
+          "porque": "Sistema musculoesquelético."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son los traumatismos?",
+        "puntos": [
+          "Lesiones del sistema musculoesquelético por una lesión mecánica externa",
+          "Huesos, articulaciones y tendones",
+          "Caídas, golpes y atrapamientos",
+          "Fracturas, contusiones, esguinces y luxaciones"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c26",
+      "n": 26,
+      "titulo": "Contusión y esguince",
+      "diapositivas": "11",
+      "gancho": "Un chichón en la cabeza, ¿qué tipo de traumatismo es?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/012.jpg",
+        "imgAlt": "Actuación en caso de traumatismo (diap. 11)",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Traumatismo</th>\n<th>Qué es</th>\n<th>Síntomas</th>\n<th>Protocolo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Contusión</strong></td>\n<td>Lesión producida por un golpe sobre la piel <strong>sin causar una herida</strong></td>\n<td>Dolor, inflamación, <strong>hematoma y edema</strong>. En la cabeza provoca un <strong>chichón</strong></td>\n<td>1. <strong>Aplicar frío local.</strong> 2. <strong>Elevar la zona</strong> afectada por encima del corazón, cuando sea posible</td>\n</tr>\n<tr>\n<td><strong>Esguince</strong></td>\n<td><strong>Desgarro de ligamentos</strong> que se produce cuando se <strong>fuerza una articulación</strong></td>\n<td>Inflamación y dolor · amoratamiento · <strong>se conserva la movilidad</strong></td>\n<td>1. <strong>Aplicar frío local.</strong> 2. <strong>Levantar la extremidad</strong> lesionada. 3. <strong>Inmovilizar</strong> la zona: el brazo en <strong>cabestrillo</strong> y la pierna en <strong>horizontal</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "En las dos, <strong>frío y levantar</strong>. La pista del esguince es que <strong>duele y se hincha, pero puedes moverlo</strong> (por ejemplo, un tobillo torcido con el que todavía caminas).",
+        "truco": "<strong>\"Contusión = golpe sin herida; Esguince = ligamento que se Estira\"</strong>. <strong>\"Si se mueve, es esguince\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué tienen en común sus protocolos?",
+        "respuesta": "Frío local y elevar la zona; en el esguince, además, inmovilizar."
+      },
+      "aplica": [
+        {
+          "caso": "Golpe sobre la piel sin herida.",
+          "opciones": [
+            "Contusión",
+            "Esguince"
+          ],
+          "buena": 0,
+          "porque": "Esguince: ligamentos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara la contusión y el esguince.",
+        "puntos": [
+          "Contusión: golpe sin herida; dolor, hematoma, edema (chichón)",
+          "Frío local y elevar por encima del corazón",
+          "Esguince: desgarro de ligamentos; se conserva la movilidad",
+          "Frío, levantar e inmovilizar (cabestrillo; pierna horizontal)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c27",
+      "n": 27,
+      "titulo": "Luxación y fractura",
+      "diapositivas": "11",
+      "gancho": "Si ves un hueso fuera de su sitio, ¿intentarías colocarlo?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Traumatismo</th>\n<th>Qué es</th>\n<th>Síntomas</th>\n<th>Protocolo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Luxación</strong></td>\n<td><strong>Torcedura brusca y dolorosa</strong> de una articulación</td>\n<td><strong>Deformación</strong> de la articulación · dolor e <strong>imposibilidad de movimiento</strong></td>\n<td>1. <strong>Aplicar frío.</strong> 2. <strong>Mantener la articulación tal y como se encuentre.</strong> 3. <strong>No movilizar ni intentar recolocar</strong> el hueso en su sitio</td>\n</tr>\n<tr>\n<td><strong>Fractura</strong></td>\n<td><strong>Rotura del hueso.</strong> Puede ser <strong>abierta</strong> (si se produce una herida al romperse la piel) o <strong>cerrada</strong> (cuando no hay rotura de la piel)</td>\n<td><strong>Imposibilidad de mover</strong> el miembro · deformación y amoratamiento · sensación de dolor · <strong>hemorragias y fragmentos de hueso</strong> en las fracturas abiertas</td>\n<td>1. <strong>No intentar recolocar</strong> la fractura ni situar el hueso en su posición natural. 2. <strong>Aplicar frío local.</strong> 3. <strong>Inmovilizar</strong> con material rígido <strong>por encima y por debajo</strong> del punto de fractura. 4. Si hay una herida, <strong>protegerla con un paño o un trapo limpios</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "En las dos <strong>NO se recoloca nada</strong>: lo dejas como está, frío e inmovilizado. La diferencia con el esguince es que aquí <strong>no se puede mover</strong>.",
+        "truco": "<strong>\"Luxación = hueso que se Larga de su sitio\"</strong>. <strong>\"Fractura: frío, férula arriba y abajo, y trapo limpio si sale\"</strong>. <strong>Regla de oro: \"nunca recolocar\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cómo se inmoviliza una fractura?",
+        "respuesta": "Con material rígido por encima y por debajo del punto de fractura."
+      },
+      "aplica": [
+        {
+          "caso": "Fractura con herida en la piel.",
+          "opciones": [
+            "Abierta: proteger la herida con un paño limpio",
+            "Cerrada"
+          ],
+          "buena": 0,
+          "porque": "Abierta."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara la luxación y la fractura.",
+        "puntos": [
+          "Luxación: deformación, dolor e imposibilidad de movimiento",
+          "Frío, mantener como está, no recolocar",
+          "Fractura: rotura del hueso, abierta o cerrada",
+          "No recolocar, frío, inmovilizar arriba y abajo, proteger la herida"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c28",
+      "n": 28,
+      "titulo": "Cabeza o columna",
+      "diapositivas": "11",
+      "gancho": "Alguien se cae de un andamio y se queja de la espalda. ¿Le ayudas a levantarse?",
+      "profe": {
+        "dice": "<p>En caso de <strong>traumatismo grave</strong> que afecte a la <strong>cabeza o a la columna vertebral</strong>, <strong>no se debe movilizar a la persona accidentada</strong>.</p>",
+        "entiende": "Dentro de la columna va la <strong>médula espinal</strong>: si la mueves mal, una lesión que se podía curar puede dejar a la persona <strong>paralizada</strong>. Ante la duda (caída de altura, golpe fuerte en la cabeza o la espalda), <strong>no la mueves</strong> y llamas al 112.",
+        "truco": "<strong>\"Cabeza o columna: quieto todo el mundo\"</strong>. Es la respuesta de la pregunta 17 del test."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se mueve?",
+        "respuesta": "Porque en un traumatismo grave de cabeza o columna moverle mal puede dañar la médula espinal."
+      },
+      "aplica": [
+        {
+          "caso": "Traumatismo grave en la columna.",
+          "opciones": [
+            "No movilizar a la persona",
+            "Sentarla"
+          ],
+          "buena": 0,
+          "porque": "Quieto."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué se hace en un traumatismo grave de cabeza o columna?",
+        "puntos": [
+          "No se debe movilizar a la persona accidentada"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c29",
+      "n": 29,
+      "titulo": "Heridas leves y graves",
+      "diapositivas": "12",
+      "gancho": "Si alguien tiene un objeto clavado, ¿se lo sacas?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/013.jpg",
+        "imgAlt": "Tipos de heridas y protocolo (diap. 12)",
+        "dice": "<p>Son <strong>lesiones</strong> que se producen por la <strong>pérdida de continuidad de la piel</strong> como consecuencia de un <strong>traumatismo</strong>. Una herida requiere una serie de cuidados:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Cómo es</th>\n<th>Protocolo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Heridas leves</strong></td>\n<td>Solo afectan a la <strong>epidermis</strong> · se han producido hace <strong>menos de seis horas</strong></td>\n<td>1. <strong>Lavarse las manos.</strong> 2. <strong>Limpiar la herida con agua y jabón</strong> utilizando gasas estériles. 3. Aplicar un <strong>antiséptico yodado</strong> (salvo en personas alérgicas). 4. <strong>Cubrir</strong> la herida con gasas estériles</td>\n</tr>\n<tr>\n<td><strong>Heridas graves</strong></td>\n<td>Afectan a las <strong>capas internas</strong> de la piel · presentan <strong>hemorragia</strong> · se localizan en <strong>ojos, tórax y abdomen</strong> · son <strong>extensas y sucias</strong> · tienen <strong>cuerpos extraños</strong></td>\n<td>1. <strong>Evaluar los signos vitales.</strong> 2. <strong>No extraer los cuerpos enclavados</strong> (solo sujetarlos para evitar que se muevan). 3. <strong>No hurgar</strong> dentro de la herida. 4. Colocar un <strong>apósito o una gasa húmeda.</strong> 5. <strong>Acudir a un centro sanitario</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "La <strong>leve</strong> la curas tú (manos limpias → lavar → desinfectar → tapar). La <strong>grave</strong> no la curas: la <strong>proteges</strong> y vas al hospital. Un objeto clavado <strong>tapona</strong> la herida: si lo sacas, puede sangrar muchísimo.",
+        "truco": "Leve = <strong>\"Lavo yo, Lavo herida, Yodo, Tapo\"</strong>. Grave = <strong>\"Signos, No saco, No hurgo, Gasa húmeda, Hospital\"</strong>. Leve si <strong>solo epidermis y menos de 6 h</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se extraen los cuerpos enclavados?",
+        "respuesta": "Porque taponan la herida: solo se sujetan para que no se muevan y se va al centro sanitario."
+      },
+      "aplica": [
+        {
+          "caso": "Solo afecta a la epidermis y es de hace menos de 6 horas.",
+          "opciones": [
+            "Leve",
+            "Grave"
+          ],
+          "buena": 0,
+          "porque": "Leve."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara las heridas leves y las graves.",
+        "puntos": [
+          "Leve: lavarse las manos, limpiar con agua y jabón, antiséptico yodado, gasas",
+          "Grave: capas internas, hemorragia, ojos/tórax/abdomen, sucias, cuerpos extraños",
+          "Grave: signos vitales, no extraer, no hurgar",
+          "Apósito o gasa húmeda y centro sanitario"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

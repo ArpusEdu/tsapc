@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-atragantamiento",
+  "unidad": "ipe-tema5",
+  "bloque": 5,
+  "titulo": "El atragantamiento",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloque 5, conceptos 15 a 17, diapositiva 7). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Las manos al cuello",
+    "caso": "En la comida de empresa, una compañera se lleva las manos al cuello. No tose, no puede hablar y no le entra aire. Está despierta y asustada. Alguien propone darle golpes en la espalda «por si acaso» a otro compañero que solo tose un poco.",
+    "pregunta": "¿Qué haces con cada uno?",
+    "solucion": "La compañera tiene una obstrucción completa y está consciente: revisar la boca, dar cinco palmadas fuertes en la espalda y hacer la maniobra de Heimlich. Al que tose (obstrucción parcial) solo hay que animarle a toser: no se le golpea la espalda, porque podría producirse una obstrucción completa o introducir más el cuerpo extraño. Si alguien se queda inconsciente: 112 y RCP.",
+    "claves": [
+      "Tose → animar, sin golpes",
+      "No tose y consciente → 5 palmadas + Heimlich",
+      "Inconsciente → 112 + RCP"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c15",
+      "n": 15,
+      "titulo": "El atragantamiento y sus tipos",
+      "diapositivas": "7",
+      "gancho": "¿Cómo sabrías, sin preguntar, si a alguien que se atraganta todavía le pasa aire?",
+      "profe": {
+        "dice": "<p>El <strong>atragantamiento</strong> es una <strong>obstrucción de las vías respiratorias</strong> que impide que el aire llegue a los pulmones, lo que puede provocar la <strong>pérdida de consciencia por la falta de oxígeno</strong>.\nGeneralmente se relaciona con <strong>comida o con otros cuerpos sólidos</strong>. Puede ser de dos tipos:</p>\n<ul>\n<li>Obstrucción <strong>incompleta o parcial</strong>.</li>\n<li>Obstrucción <strong>completa o total</strong>.\nLa <strong>actuación</strong> varía en función del tipo de obstrucción.</li>\n</ul>",
+        "entiende": "En la <strong>parcial</strong> todavía pasa algo de aire: la persona <strong>tose, habla o hace ruido</strong>. En la <strong>total</strong> no pasa nada de aire: <strong>no puede hablar, ni toser, ni respirar</strong> y se lleva las manos al cuello.",
+        "truco": "<strong>\"Si tose, hay aire (parcial). Si no tose ni habla, no hay aire (total)\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el atragantamiento puede provocar pérdida de consciencia?",
+        "respuesta": "Porque la obstrucción impide que el aire llegue a los pulmones y falta oxígeno."
+      },
+      "aplica": [
+        {
+          "caso": "La persona tose y hace ruido.",
+          "opciones": [
+            "Obstrucción parcial",
+            "Obstrucción total"
+          ],
+          "buena": 0,
+          "porque": "Si tose, hay aire."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define atragantamiento y sus tipos.",
+        "puntos": [
+          "Obstrucción de las vías respiratorias que impide que llegue aire a los pulmones",
+          "Suele ser comida u otros sólidos",
+          "Obstrucción incompleta o parcial",
+          "Obstrucción completa o total"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c16",
+      "n": 16,
+      "titulo": "El protocolo",
+      "diapositivas": "7",
+      "gancho": "Si alguien tose con fuerza, ¿le ayudas dándole golpes en la espalda?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/006.jpg",
+        "imgAlt": "Actuación en obstrucción de las vías respiratorias (diap. 7)",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Qué hacer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Obstrucción incompleta o parcial</strong></td>\n<td>1. <strong>Animar a toser.</strong> 2. <strong>No golpear la espalda</strong>, ya que se podría producir una obstrucción completa o introducir más el cuerpo extraño.</td>\n</tr>\n<tr>\n<td><strong>Obstrucción completa, si está consciente</strong></td>\n<td>1. <strong>Revisar la boca.</strong> 2. <strong>Dar cinco palmadas fuertes en la espalda.</strong> 3. <strong>Realizar la maniobra de Heimlich.</strong></td>\n</tr>\n<tr>\n<td><strong>Obstrucción completa, si está inconsciente</strong></td>\n<td>1. <strong>Llamar al 112.</strong> 2. <strong>Iniciar la RCP.</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "Si tose, <strong>su tos es lo más fuerte</strong> que hay: tú solo le animas. Si no puede toser y sigue despierto, le ayudas tú (palmadas y Heimlich). Si se desmaya, ya es una <strong>parada</strong>: 112 y RCP.",
+        "truco": "<strong>\"Tose → anima. No tose → 5 palmadas + Heimlich. Se desmaya → 112 + RCP\"</strong>. Recuerda el <strong>5</strong> de las palmadas."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se golpea la espalda en la obstrucción parcial?",
+        "respuesta": "Porque se podría producir una obstrucción completa o introducir más el cuerpo extraño."
+      },
+      "aplica": [
+        {
+          "caso": "Obstrucción completa e inconsciente.",
+          "opciones": [
+            "Llamar al 112 e iniciar la RCP",
+            "Heimlich de pie"
+          ],
+          "buena": 0,
+          "porque": "Ya es una parada."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di el protocolo según el tipo de obstrucción.",
+        "puntos": [
+          "Parcial: animar a toser; no golpear la espalda",
+          "Completa y consciente: revisar la boca, 5 palmadas, Heimlich",
+          "Completa e inconsciente: 112 y RCP"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c17",
+      "n": 17,
+      "titulo": "La maniobra de Heimlich",
+      "diapositivas": "7",
+      "gancho": "¿Cómo usarías el aire de los pulmones para expulsar algo atascado?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/007.jpg",
+        "imgAlt": "Maniobra de Heimlich (diap. 7)",
+        "dice": "<p>En caso de <strong>obstrucción completa</strong> se debe realizar la <strong>maniobra de Heimlich</strong>, que consiste en <strong>empujar el cuerpo extraño hacia la tráquea y, por tanto, hacia la salida</strong>, mediante la <strong>expulsión del aire que llena los pulmones</strong>.\nEn la figura: <strong>de pie</strong>, el socorrista <strong>detrás</strong> de la víctima rodeándola con los brazos y el puño en la boca del estómago; y <strong>tumbada</strong>, el socorrista <strong>a horcajadas</strong> sobre ella empujando con las manos.</p>",
+        "entiende": "Es como <strong>apretar una botella de plástico</strong> con el tapón suelto: el aire de dentro sale de golpe y <strong>dispara el tapón</strong>. Los pulmones son la botella y la comida atascada es el tapón.",
+        "truco": "<strong>\"Heimlich = Hacia arriba y hacia dentro\"</strong>. Solo en la <strong>total y consciente</strong> (pregunta 12 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Cómo funciona la maniobra?",
+        "respuesta": "Empuja el cuerpo extraño hacia la tráquea y hacia la salida mediante la expulsión del aire de los pulmones."
+      },
+      "aplica": [
+        {
+          "caso": "Cuándo se hace.",
+          "opciones": [
+            "Obstrucción completa y consciente",
+            "Obstrucción parcial"
+          ],
+          "buena": 0,
+          "porque": "Solo en la total."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la maniobra de Heimlich.",
+        "puntos": [
+          "Empujar el cuerpo extraño hacia la tráquea y la salida",
+          "Mediante la expulsión del aire de los pulmones",
+          "De pie: detrás, rodeando, puño en la boca del estómago",
+          "Tumbada: a horcajadas, empujando con las manos"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-consciencia",
+  "unidad": "ipe-tema5",
+  "bloque": 10,
+  "titulo": "Pérdida de consciencia y transporte de heridos",
+  "minutos": 30,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloques 10 y 11, conceptos 30 a 35, diapositivas 12 y 13). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Convulsiones en la oficina",
+    "caso": "Un compañero cae al suelo y empieza a convulsionar, con algo de espuma en la boca. Alguien intenta sujetarle los brazos con fuerza y otro quiere meterle algo en la boca.",
+    "pregunta": "¿Qué le pasa y qué hay que hacer, y no hacer?",
+    "solucion": "Es una crisis epiléptica: pérdida de conocimiento y convulsiones, a veces con espuma por la boca. Hay que despejar el entorno de objetos que puedan herirle, no intentar sujetarle ni inmovilizarle, poner una manta o ropa debajo para amortiguar los golpes y, cuando cese la crisis o si aparecen vómitos, colocarle en PLS y comprobar las constantes vitales.",
+    "claves": [
+      "Despejar, no sujetar",
+      "Manta debajo",
+      "PLS al terminar"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c30",
+      "n": 30,
+      "titulo": "La pérdida de consciencia",
+      "diapositivas": "12",
+      "gancho": "¿Cómo sabes que alguien ha perdido la consciencia?",
+      "profe": {
+        "dice": "<p>Una persona sufre <strong>pérdida de consciencia</strong> cuando <strong>no es capaz de responder a los estímulos externos</strong>. El <strong>origen</strong> suele ser una <strong>lipotimia</strong> o un <strong>ataque epiléptico</strong>.</p>",
+        "entiende": "Le hablas, le tocas y <strong>no responde</strong>. Las dos causas típicas del tema son el <strong>desmayo</strong> (lipotimia) y la <strong>crisis epiléptica</strong>.",
+        "truco": "<strong>\"No responde = Lipo o Epi\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuál suele ser el origen?",
+        "respuesta": "Una lipotimia o un ataque epiléptico."
+      },
+      "aplica": [
+        {
+          "caso": "No responde a estímulos externos.",
+          "opciones": [
+            "Pérdida de consciencia",
+            "Esguince"
+          ],
+          "buena": 0,
+          "porque": "No responde."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es la pérdida de consciencia?",
+        "puntos": [
+          "No es capaz de responder a los estímulos externos",
+          "Origen: lipotimia o ataque epiléptico"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c31",
+      "n": 31,
+      "titulo": "Lipotimia",
+      "diapositivas": "12",
+      "gancho": "Si a alguien le falta sangre en la cabeza, ¿en qué postura lo pondrías?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/014.jpg",
+        "imgAlt": "Actuación en pérdida de consciencia (diap. 12)",
+        "dice": "<p><strong>desmayo o mareo con pérdida del conocimiento durante unos segundos</strong>, debido a una <strong>disminución momentánea de la sangre que llega al cerebro</strong>.\n<strong>Protocolo:</strong></p>\n<ol>\n<li><strong>Tumbar a la persona con las piernas en alto</strong> para facilitar que la sangre llegue al cerebro.</li>\n<li><strong>Aflojar las prendas</strong> que compriman el cuello, el tórax o la cintura y quitar los calcetines, pero <strong>manteniendo la temperatura</strong> del cuerpo.</li>\n<li><strong>Aportar suficiente aire</strong> abriendo puertas y ventanas.</li>\n<li>Si la persona <strong>mantiene las constantes vitales</strong>, colocarla en <strong>PLS</strong>.</li>\n<li>Si <strong>no se detectan las constantes vitales</strong>, iniciar la <strong>RCP</strong>.</li>\n</ol>",
+        "entiende": "El problema es que <strong>falta sangre en la cabeza</strong>, así que <strong>subes las piernas</strong> para que la sangre baje hacia el cerebro, quitas lo que aprieta y das aire. Suele pasar con <strong>calor</strong>, de pie mucho rato o con un susto.",
+        "truco": "<strong>\"Piernas arriba, Ropa floja, Ventana abierta, PLS o RCP\"</strong> = <strong>\"Pi-Ro-Ve-Pe\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se levantan las piernas?",
+        "respuesta": "Para facilitar que la sangre llegue al cerebro: la lipotimia se debe a una disminución momentánea de la sangre que llega a él."
+      },
+      "aplica": [
+        {
+          "caso": "Si no se detectan las constantes vitales.",
+          "opciones": [
+            "Iniciar la RCP",
+            "Ponerla en PLS"
+          ],
+          "buena": 0,
+          "porque": "Con constantes: PLS."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la lipotimia y su protocolo.",
+        "puntos": [
+          "Desmayo de unos segundos por menos sangre en el cerebro",
+          "Tumbar con las piernas en alto",
+          "Aflojar ropa, quitar calcetines (manteniendo la temperatura), dar aire",
+          "Con constantes: PLS · sin constantes: RCP"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La lipotimia por calor, en IPE 2 («El ambiente térmico»).",
+          "ruta": "#/sesion/ipe2-termico"
+        }
+      ]
+    },
+    {
+      "id": "ipe-tema5.c32",
+      "n": 32,
+      "titulo": "Epilepsia",
+      "diapositivas": "12",
+      "gancho": "¿Se puede parar una convulsión sujetando a la persona?",
+      "profe": {
+        "dice": "<p>Enfermedad que se caracteriza por la <strong>pérdida de conocimiento y convulsiones</strong>; en ocasiones va acompañada de <strong>salida de espuma por la boca</strong>.\n<strong>Protocolo:</strong></p>\n<ol>\n<li><strong>Despejar el entorno</strong> de cualquier objeto que pueda herir a la víctima.</li>\n<li><strong>No intentar sujetarla o inmovilizarla.</strong></li>\n<li>Colocarle <strong>una manta o ropa debajo</strong> para amortiguar los golpes.</li>\n<li>Colocar en <strong>PLS cuando cese la crisis</strong> o si aparecen vómitos.</li>\n<li><strong>Comprobar las constantes vitales.</strong></li>\n</ol>",
+        "entiende": "Durante la crisis <strong>no la paras tú</strong>: solo evitas que se haga daño contra algo. <strong>No se le sujeta</strong> ni se le mete nada en la boca. Cuando termina, de lado (PLS).",
+        "truco": "<strong>\"Aparta, No sujetes, Almohada, De lado después, Vigila\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo se coloca en PLS?",
+        "respuesta": "Cuando cesa la crisis o si aparecen vómitos."
+      },
+      "aplica": [
+        {
+          "caso": "Durante la crisis…",
+          "opciones": [
+            "No intentar sujetarla",
+            "Sujetarle los brazos"
+          ],
+          "buena": 0,
+          "porque": "Solo evitar que se haga daño."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la epilepsia y su protocolo.",
+        "puntos": [
+          "Pérdida de conocimiento y convulsiones, a veces espuma",
+          "Despejar objetos · no sujetar ni inmovilizar",
+          "Manta o ropa debajo",
+          "PLS al cesar la crisis o con vómitos; comprobar constantes"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c33",
+      "n": 33,
+      "titulo": "No mover",
+      "diapositivas": "13",
+      "gancho": "¿Cuándo crees que sí está justificado mover a un herido?",
+      "profe": {
+        "dice": "<p>Como norma general, <strong>no se debe mover a las personas accidentadas</strong>, pues hacerlo de manera incorrecta puede conllevar graves consecuencias, como <strong>agravar las lesiones</strong> del accidentado o <strong>provocarle otras nuevas, incluso la muerte</strong>. Aun así, existen varias técnicas para movilizar heridos, en función de si hay <strong>varias personas socorristas o una sola</strong>.</p>",
+        "entiende": "Solo se mueve a alguien si <strong>quedarse ahí es más peligroso</strong> (fuego, derrumbe, tráfico). Si hay que moverlo, la técnica depende de cuántos sois.",
+        "truco": "<strong>\"Primero no mover; si hay que mover, ¿cuántos somos?\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se debe mover como norma general?",
+        "respuesta": "Porque hacerlo mal puede agravar las lesiones, provocar otras nuevas o incluso la muerte."
+      },
+      "aplica": [
+        {
+          "caso": "La técnica para movilizar depende de…",
+          "opciones": [
+            "Si hay varios socorristas o uno solo",
+            "La hora del accidente"
+          ],
+          "buena": 0,
+          "porque": "¿Cuántos somos?"
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cuál es la norma general en el transporte de heridos?",
+        "puntos": [
+          "No mover a las personas accidentadas",
+          "Moverlas mal agrava lesiones o causa otras, incluso la muerte",
+          "Técnicas según haya varios socorristas o uno solo"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c34",
+      "n": 34,
+      "titulo": "Varios socorristas: protocolo de columna",
+      "diapositivas": "13",
+      "gancho": "Si sospechas una lesión de columna y tenéis que moverla, ¿cómo lo haríais entre varios?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/015.jpg",
+        "imgAlt": "Movilización con varios socorristas (diap. 13)",
+        "dice": "<p>En caso de <strong>sospecharse lesión de columna</strong>, se debe seguir siempre el siguiente <strong>protocolo</strong>:</p>\n<ol>\n<li>Mantener la <strong>alineación del eje cabeza-cuello-tronco</strong>.</li>\n<li>Tener como <strong>mínimo seis puntos de apoyo</strong>.</li>\n<li><strong>Sujetar la cabeza con dos manos.</strong></li>\n<li><strong>Mover el cuerpo de una sola vez.</strong></li>\n</ol>",
+        "entiende": "El cuerpo se mueve <strong>como si fuera un tronco</strong>: todo a la vez, sin que el cuello ni la espalda se doblen. Por eso hacen falta <strong>varias personas</strong> (6 puntos de apoyo) y una que sujete la cabeza.",
+        "truco": "<strong>\"Recto, 6, 2 manos, 1 vez\"</strong> → <strong>\"Eje · 6 apoyos · cabeza con 2 manos · de una vez\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se mueve de una sola vez?",
+        "respuesta": "Para mantener la alineación del eje cabeza-cuello-tronco, como si fuera un tronco."
+      },
+      "aplica": [
+        {
+          "caso": "Puntos de apoyo mínimos.",
+          "opciones": [
+            "Seis",
+            "Dos"
+          ],
+          "buena": 0,
+          "porque": "Como mínimo seis."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di el protocolo de columna.",
+        "puntos": [
+          "Mantener el eje cabeza-cuello-tronco",
+          "Mínimo seis puntos de apoyo",
+          "Sujetar la cabeza con dos manos",
+          "Mover el cuerpo de una sola vez"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c35",
+      "n": 35,
+      "titulo": "Un solo socorrista",
+      "diapositivas": "13",
+      "gancho": "Estás solo y la víctima pesa mucho. ¿Cómo la sacarías de un sitio peligroso?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Arrastre:</strong> útil cuando sea necesario desplazar a una víctima <strong>pesada o corpulenta</strong>; se podrá utilizar cuando esta <strong>no tenga ninguna fractura</strong>.</li>\n<li><strong>A hombros</strong>, si la <strong>distancia es corta</strong>, con una mano pasada por la espalda.</li>\n<li><strong>En brazos</strong> o <strong>a cuestas</strong>.</li>\n</ul>",
+        "entiende": "Solo es tu fuerza: si pesa mucho, <strong>arrastras</strong> (pero solo si no tiene nada roto); si la distancia es corta y puede ayudarse, <strong>a hombros</strong>; si puedes con ella, <strong>en brazos o a cuestas</strong>.",
+        "truco": "<strong>\"A-H-B-C\"</strong>: <strong>A</strong>rrastre, <strong>H</strong>ombros, <strong>B</strong>razos, <strong>C</strong>uestas. Arrastre <strong>solo sin fracturas</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo no se puede usar el arrastre?",
+        "respuesta": "Cuando la víctima tiene alguna fractura."
+      },
+      "aplica": [
+        {
+          "caso": "Distancia corta, con una mano por la espalda.",
+          "opciones": [
+            "A hombros",
+            "Arrastre"
+          ],
+          "buena": 0,
+          "porque": "A hombros."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las técnicas con un solo socorrista.",
+        "puntos": [
+          "Arrastre: víctima pesada, sin fracturas",
+          "A hombros: distancia corta",
+          "En brazos o a cuestas"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-hemorragias",
+  "unidad": "ipe-tema5",
+  "bloque": 6,
+  "titulo": "Las hemorragias",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloque 6, conceptos 18 a 21, diapositivas 8 y 9). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Cabeza atrás",
+    "caso": "A un compañero le sangra la nariz y otro le dice: «Echa la cabeza hacia atrás, que así para». Al rato, el que sangraba dice que nota sangre en la garganta.",
+    "pregunta": "¿Qué se ha hecho mal y qué habría que hacer?",
+    "solucion": "Es una hemorragia exteriorizada (la sangre sale por un orificio natural). Con la cabeza hacia atrás la sangre se va a la garganta y la persona se la traga o se atraganta: es lo incorrecto. Lo correcto es inclinar la cabeza hacia delante apretando la nariz.",
+    "claves": [
+      "Nariz: cabeza hacia delante",
+      "Apretar la nariz",
+      "Nunca hacia atrás"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c18",
+      "n": 18,
+      "titulo": "Tipos y objetivo",
+      "diapositivas": "8",
+      "gancho": "¿Puede alguien perder mucha sangre sin que se vea ni una gota?",
+      "profe": {
+        "dice": "<p>Las hemorragias pueden ser <strong>externas, internas o exteriorizadas</strong>. Ante una hemorragia, el objetivo del socorrista es <strong>evitar la pérdida de sangre</strong> o el <strong>empeoramiento del estado</strong> de la persona accidentada.</p>",
+        "entiende": "La diferencia está en <strong>por dónde va la sangre</strong>: sale por una <strong>herida</strong> (externa), <strong>se queda dentro</strong> (interna) o es interna pero <strong>sale por un orificio natural</strong> como la nariz o el oído (exteriorizada).",
+        "truco": "<strong>\"Fuera por herida, Dentro sin salida, Dentro y sale por un agujero natural\"</strong> = <strong>Externa, Interna, Exteriorizada</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia una hemorragia exteriorizada de una interna?",
+        "respuesta": "Las dos son internas, pero en la exteriorizada la sangre sale por un orificio natural (boca, oído, nariz)."
+      },
+      "aplica": [
+        {
+          "caso": "Objetivo del socorrista.",
+          "opciones": [
+            "Evitar la pérdida de sangre o el empeoramiento",
+            "Coser la herida"
+          ],
+          "buena": 0,
+          "porque": "Evitar perder sangre."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los tipos de hemorragia y el objetivo.",
+        "puntos": [
+          "Externas, internas o exteriorizadas",
+          "Objetivo: evitar la pérdida de sangre o el empeoramiento"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c19",
+      "n": 19,
+      "titulo": "Hemorragias externas: los 3 métodos",
+      "diapositivas": "8",
+      "gancho": "Si apretar encima de la herida no basta, ¿qué harías después?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/008.jpg",
+        "imgAlt": "Compresión directa, arterial y torniquete (diap. 8)",
+        "dice": "<p>En las <strong>hemorragias externas</strong> la sangre <strong>sale a través de una herida</strong>. Para detenerlas se utilizan <strong>tres métodos de manera consecutiva</strong>:</p>\n<ol>\n<li><strong>Compresión directa</strong> (Fig. 5.16).</li>\n<li><strong>Compresión arterial</strong>, para hemorragias en las extremidades (Fig. 5.17).</li>\n<li><strong>Torniquete</strong> (Fig. 5.18).</li>\n</ol>\n<p>⚠️ La diapositiva no explica cómo se hace el torniquete (está en la página 87 del libro). Lo general: es el <strong>último recurso</strong>, se pone <strong>por encima de la herida</strong>, se anota la <strong>hora</strong> en que se puso y <strong>no se afloja</strong> hasta que lo hagan los sanitarios.</p>",
+        "entiende": "<strong>«consecutiva»</strong> quiere decir <strong>en orden</strong>: empiezas por lo más sencillo (apretar encima). Si no para, aprietas la arteria. Solo si sigue sangrando pones el torniquete, porque corta toda la sangre del miembro.",
+        "truco": "<strong>\"Encima → Arteria → Torniquete\"</strong> = <strong>\"de menos a más\"</strong>. Si la directa no funciona, <strong>el siguiente paso es la compresión arterial</strong> (pregunta 14 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el torniquete es el último recurso?",
+        "respuesta": "Porque corta toda la sangre del miembro: se usa solo si los otros métodos no bastan, de manera consecutiva."
+      },
+      "aplica": [
+        {
+          "caso": "Si la compresión directa no funciona…",
+          "opciones": [
+            "Compresión arterial",
+            "Torniquete directamente"
+          ],
+          "buena": 0,
+          "porque": "En orden."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 3 métodos para detener una hemorragia externa.",
+        "puntos": [
+          "1. Compresión directa",
+          "2. Compresión arterial (extremidades)",
+          "3. Torniquete: el último, por encima de la herida",
+          "Se anota la hora y no se afloja hasta los sanitarios"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c20",
+      "n": 20,
+      "titulo": "Hemorragias internas",
+      "diapositivas": "8",
+      "gancho": "Si no ves la sangre, ¿cómo notarías que alguien sangra por dentro?",
+      "profe": {
+        "dice": "<p>La sangre <strong>no sale al exterior</strong>; se queda <strong>en el interior del cuerpo</strong>. Ante estas hemorragias <strong>no se debe intervenir</strong>; solo hay que:</p>\n<ul>\n<li><strong>Avisar urgentemente</strong> a los servicios de emergencia.</li>\n<li><strong>Colocar a la persona boca arriba con las piernas levantadas.</strong></li>\n<li><strong>Cubrirla</strong> para evitar que pierda calor.\n<strong>Síntomas:</strong> <strong>piel fría, palidez, mareo, tensión baja y taquicardia.</strong></li>\n</ul>",
+        "entiende": "No la ves, pero <strong>la notas por los síntomas</strong>: el cuerpo pierde sangre por dentro, así que la piel se enfría y palidece, baja la tensión y el corazón acelera para compensar. Tú no puedes pararla: <strong>solo avisar, piernas arriba y abrigo</strong>.",
+        "truco": "Síntomas = <strong>\"Fría, Pálida, Mareada, Baja y Rápida\"</strong>. Actuación = <strong>\"Aviso, Piernas arriba, Manta\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se levantan las piernas?",
+        "respuesta": "Para ayudar a que la sangre llegue a los órganos vitales mientras llegan los servicios de emergencia; no se debe intervenir."
+      },
+      "aplica": [
+        {
+          "caso": "Síntoma de hemorragia interna.",
+          "opciones": [
+            "Piel fría, palidez y taquicardia",
+            "Fiebre alta"
+          ],
+          "buena": 0,
+          "porque": "Fría, pálida, mareada, tensión baja, taquicardia."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué hacer ante una hemorragia interna?",
+        "puntos": [
+          "No se interviene",
+          "Avisar urgentemente a emergencias",
+          "Boca arriba con las piernas levantadas y abrigada",
+          "Síntomas: piel fría, palidez, mareo, tensión baja, taquicardia"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c21",
+      "n": 21,
+      "titulo": "Nariz y oído",
+      "diapositivas": "9",
+      "gancho": "Si sangra un oído, ¿hacia dónde orientarías la cabeza?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/009.jpg",
+        "imgAlt": "Oído hacia el suelo; nariz con la cabeza hacia delante (diap. 9)",
+        "dice": "<p><strong>aun siendo internas, la sangre sale al exterior</strong> a través de un <strong>orificio natural</strong> del cuerpo: la boca, un oído, etc.</p>\n<ul>\n<li><strong>Fig. 5.21:</strong> en caso de hemorragia, <strong>el oído que sangra debe orientarse hacia el suelo</strong>.</li>\n<li><strong>Fig. 5.22:</strong> actuación en caso de hemorragia de nariz: ✅ <strong>correcto, cabeza inclinada hacia delante</strong> apretando la nariz; ❌ <strong>incorrecto, cabeza hacia atrás</strong>.</li>\n</ul>\n<p>⚠️ Lo general (no está escrito en la diapositiva): en la epistaxis se <strong>aprieta la parte blanda de la nariz</strong> (el ala nasal contra el tabique) unos 10 minutos. Una <strong>otorragia tras un golpe en la cabeza</strong> puede indicar una lesión grave: no se tapona el oído y se avisa al 112.</p>",
+        "entiende": "Si echas la cabeza <strong>hacia atrás</strong>, la sangre <strong>se va a la garganta</strong> y la persona se la traga o se atraganta. <strong>Hacia delante</strong>, la sangre sale y puedes apretar. El oído hacia el suelo es para que <strong>la sangre salga</strong> y no se quede dentro.",
+        "truco": "<strong>\"Nariz: cabeza para ALANTE, nunca para atrás\"</strong>. <strong>\"Oído que sangra, oído al suelo\"</strong>. <strong>Epi-staxis = nariz</strong> (como \"estornudo\"); <strong>Oto-rragia = oído</strong> (otorrino)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no se tapona un oído que sangra tras un golpe en la cabeza?",
+        "respuesta": "Porque una otorragia tras un golpe puede indicar una lesión grave: no se tapona y se avisa al 112."
+      },
+      "aplica": [
+        {
+          "caso": "El oído que sangra se orienta…",
+          "opciones": [
+            "Hacia el suelo",
+            "Hacia arriba"
+          ],
+          "buena": 0,
+          "porque": "Para que la sangre salga."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se actúa en las hemorragias de nariz y oído?",
+        "puntos": [
+          "Exteriorizadas: salen por un orificio natural",
+          "Oído que sangra: hacia el suelo",
+          "Nariz: cabeza hacia delante apretando la nariz; nunca hacia atrás",
+          "Epistaxis: apretar la parte blanda unos 10 min"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-quemaduras",
+  "unidad": "ipe-tema5",
+  "bloque": 7,
+  "titulo": "Las quemaduras",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloque 7, conceptos 22 a 24, diapositiva 10). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La que no duele",
+    "caso": "Dos compañeros se queman en el mismo accidente. Uno tiene ampollas y se queja muchísimo. El otro tiene una zona de piel reseca y marrón en el brazo y dice que no le duele nada.",
+    "pregunta": "¿Cuál está más grave? ¿Por qué el segundo no siente dolor?",
+    "solucion": "El más grave es el segundo: es una quemadura de tercer grado (piel reseca o calcinada, lesión bajo la piel, destrucción de músculos y vasos), y no duele. El primero tiene una de segundo grado (ampollas y dolor fuerte). En todas, lo primero es agua fría 15-20 minutos; en la de tercer grado, además, gasas con suero, no retirar la ropa pegada, nada de pomadas y al centro sanitario.",
+    "claves": [
+      "Rojo · ampolla · carbón",
+      "El que no duele es el peor",
+      "Agua fría 15-20 min"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c22",
+      "n": 22,
+      "titulo": "Qué son y su gravedad",
+      "diapositivas": "10",
+      "gancho": "¿Te puedes quemar con algo frío?",
+      "profe": {
+        "dice": "<p>Son <strong>lesiones de la piel y otros tejidos blandos</strong> debidas al contacto con <strong>el fuego, el frío, la electricidad, los productos químicos, líquidos hirviendo</strong> o el paso de la electricidad por el cuerpo.\nLa <strong>gravedad</strong> de las quemaduras depende de su <strong>profundidad</strong> y de su <strong>extensión</strong>. <strong>Cuanto más extensas, más graves son.</strong></p>",
+        "entiende": "No solo quema el fuego: también <strong>el frío</strong> (congelación), <strong>la electricidad</strong> o <strong>un ácido</strong>. Para saber si es grave miras <strong>lo hondo</strong> que llega (grado) y <strong>cuánta piel</strong> ocupa (porcentaje).",
+        "truco": "Causas = <strong>\"Fuego, Frío, Luz (electricidad), Química y Agua hirviendo\"</strong>. Gravedad = <strong>\"Hondo y Ancho\"</strong> (profundidad y extensión)."
+      },
+      "porque": {
+        "pregunta": "¿De qué depende la gravedad?",
+        "respuesta": "De su profundidad y de su extensión: cuanto más extensas, más graves."
+      },
+      "aplica": [
+        {
+          "caso": "Causa de quemadura.",
+          "opciones": [
+            "El frío",
+            "Solo el fuego"
+          ],
+          "buena": 0,
+          "porque": "Fuego, frío, electricidad, químicos, líquidos hirviendo."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son las quemaduras y de qué depende su gravedad?",
+        "puntos": [
+          "Lesiones de la piel y tejidos blandos",
+          "Por fuego, frío, electricidad, químicos o líquidos hirviendo",
+          "Gravedad: profundidad y extensión"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c23",
+      "n": 23,
+      "titulo": "Según su profundidad",
+      "diapositivas": "10",
+      "gancho": "Si se forma una ampolla, ¿la revientas para que se cure antes?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/010.jpg",
+        "imgAlt": "Quemaduras según su profundidad (diap. 10)",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grado</th>\n<th>Cómo es</th>\n<th>Protocolo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Primer grado</strong></td>\n<td><strong>Enrojecimiento</strong> de la parte externa de la piel · ligera inflamación · <strong>dolor</strong></td>\n<td>Aplicar <strong>agua fría durante quince o veinte minutos</strong>, aproximadamente, <strong>sin que el chorro caiga directamente</strong> en la zona quemada, o <strong>sumergir</strong> la zona en un recipiente con agua fría</td>\n</tr>\n<tr>\n<td><strong>Segundo grado</strong></td>\n<td>La <strong>parte interior</strong> de la piel se quema · <strong>se forman ampollas</strong> · <strong>dolor fuerte</strong></td>\n<td>1. Agua fría 15-20 min. 2. <strong>No reventar las ampollas.</strong> 3. Si se han reventado, <strong>tratarlas como una herida</strong>: antiséptico y gasas estériles. 4. <strong>Acudir a un centro sanitario</strong></td>\n</tr>\n<tr>\n<td><strong>Tercer grado</strong></td>\n<td>Piel <strong>reseca o calcinada</strong> (color marrón) · lesión de los tejidos bajo la piel · <strong>destrucción de músculos y vasos</strong> sanguíneos · <strong>no duelen</strong></td>\n<td>1. Refrescar con agua 15-20 min. 2. Cubrir con <strong>gasas humedecidas con suero fisiológico</strong>. 3. <strong>No retirar los restos de ropa.</strong> 4. <strong>No aplicar pomadas ni cremas.</strong> 5. <strong>Acudir a un centro sanitario</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "<strong>1.º = rojo y duele</strong> (como quemarse al sol); <strong>2.º = ampollas y duele mucho</strong>; <strong>3.º = negro/marrón y NO duele</strong>, porque se han quemado los nervios (¡la más grave es la que no duele!). En las tres, <strong>lo primero es agua fría 15-20 minutos</strong>.",
+        "truco": "<strong>\"Rojo, Ampolla, Carbón\"</strong> = 1.º, 2.º, 3.º. <strong>\"El que no duele es el peor\"</strong>. Primera actuación siempre: <strong>agua fría 15-20 min</strong> (pregunta 15 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué en tercer grado no se retiran los restos de ropa?",
+        "respuesta": "Porque están pegados a la piel quemada: se cubre con gasas humedecidas con suero y se acude al centro sanitario."
+      },
+      "aplica": [
+        {
+          "caso": "Primera actuación en cualquier quemadura.",
+          "opciones": [
+            "Agua fría 15-20 minutos",
+            "Pomada"
+          ],
+          "buena": 0,
+          "porque": "Nada de pomadas."
+        },
+        {
+          "caso": "Ampollas y dolor fuerte.",
+          "opciones": [
+            "Segundo grado",
+            "Primer grado"
+          ],
+          "buena": 0,
+          "porque": "1.º: enrojecimiento."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los 3 grados y su protocolo.",
+        "puntos": [
+          "1.º: enrojecimiento, inflamación, dolor → agua fría 15-20 min",
+          "2.º: ampollas, dolor fuerte → agua fría, no reventar, centro sanitario",
+          "3.º: piel calcinada, no duele",
+          "3.º: agua, gasas con suero, no retirar ropa, no pomadas, centro sanitario"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c24",
+      "n": 24,
+      "titulo": "La regla de los nueves",
+      "diapositivas": "10",
+      "gancho": "¿Cómo calcularías rápido qué porcentaje del cuerpo está quemado?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/011.jpg",
+        "imgAlt": "Regla de los nueves (diap. 10)",
+        "dice": "<p>En los servicios de urgencias, para valorar la <strong>extensión</strong> de una quemadura de forma rápida y lo más precisa posible, se expresa en <strong>porcentajes de la superficie corporal</strong> mediante la <strong>«regla de los nueves» o «regla de Wallace»</strong>.\nSegún esta regla, la superficie del cuerpo se divide en <strong>once áreas</strong>, cada una de las cuales representa un <strong>9 %</strong>. En la figura: <strong>cabeza 9 %</strong>, cada <strong>brazo 9 %</strong>, <strong>tronco por delante 9 + 9 %</strong>, <strong>tronco por detrás 9 + 9 %</strong>, cada <strong>pierna 9 + 9 %</strong> y <strong>genitales 1 %</strong> (la <strong>palma de la mano</strong> equivale a un <strong>1 %</strong>).\nLas quemaduras que afectan a una superficie <strong>superior al 25 % en adultos</strong> deben considerarse <strong>graves</strong>, de igual forma que si se localizan en <strong>la cara, las manos o los genitales</strong>, así como las <strong>quemaduras eléctricas</strong> y en <strong>mujeres embarazadas</strong>.</p>",
+        "entiende": "11 trozos × 9 % = 99 % + 1 % de genitales = <strong>100 %</strong>. Para calcular, <strong>sumas los trozos quemados</strong>. Pero ojo: aunque sea poca piel, <strong>cara, manos, genitales, electricidad o embarazo = grave</strong> siempre.",
+        "truco": "<strong>\"11 × 9 + 1 = 100\"</strong>. Graves: <strong>\"más de 25 % o C-M-G-E-E\"</strong> (<strong>C</strong>ara, <strong>M</strong>anos, <strong>G</strong>enitales, <strong>E</strong>léctricas, <strong>E</strong>mbarazadas). La regla de Wallace mide la <strong>extensión</strong> (pregunta 16 del test)."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo es grave aunque ocupe poca piel?",
+        "respuesta": "Si está en la cara, las manos o los genitales, si es eléctrica o si es una mujer embarazada."
+      },
+      "aplica": [
+        {
+          "caso": "Quemadura grave en un adulto.",
+          "opciones": [
+            "Más del 25 %",
+            "Más del 5 %"
+          ],
+          "buena": 0,
+          "porque": "Más del 25 %."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la regla de los nueves.",
+        "puntos": [
+          "Regla de Wallace: extensión en % de la superficie",
+          "11 áreas de 9 % + genitales 1 %",
+          "Cabeza 9 · cada brazo 9 · tronco delante 18 y detrás 18 · cada pierna 18",
+          "Graves: más del 25 %, cara, manos, genitales, eléctricas, embarazadas"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

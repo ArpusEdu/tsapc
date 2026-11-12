@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-triaje",
+  "unidad": "ipe-tema5",
+  "bloque": 2,
+  "titulo": "El triaje y el botiquín",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloques 2 y 3, conceptos 5 a 8, diapositivas 3 y 4). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Cuatro heridos y dos manos",
+    "caso": "Tras una explosión en el taller hay cuatro heridos. Uno camina con un corte en la mano. Otro está sentado, habla bien pero tiene una fractura abierta. Otro no responde pero respira. El cuarto no camina, no responde y no respira; nadie vio cuándo cayó.",
+    "pregunta": "¿Qué color de triaje le toca a cada uno? ¿A quién atiendes primero?",
+    "solucion": "Con el triaje SHORT: el que camina, verde. El que no camina pero habla y obedece, amarillo (fractura abierta). El que no habla pero respira, rojo: es el primero. El que no respira, en una parada no presenciada, negro. Se pregunta en orden: ¿camina?, ¿habla y obedece?, ¿respira?",
+    "claves": [
+      "¿Camina? → verde",
+      "¿Habla? → amarillo",
+      "¿Respira? → rojo · no → negro"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c5",
+      "n": 5,
+      "titulo": "El triaje",
+      "diapositivas": "3",
+      "gancho": "Con muchos heridos, ¿atenderías primero al que más grita?",
+      "profe": {
+        "dice": "<p>El <strong>triaje</strong> es un procedimiento empleado para <strong>clasificar</strong> a las personas heridas cuando hay un <strong>número indeterminado</strong> de ellas. Tiene como finalidad <strong>asegurar su supervivencia, priorizando las más graves</strong>.\nSu procedimiento consiste en <strong>asignar a cada víctima una tarjeta con un color</strong> (<strong>rojo, amarillo, verde o negro</strong>), dependiendo de la prioridad de atención.</p>",
+        "entiende": "Cuando hay muchos heridos y pocas manos, no atiendes al primero que ves ni al que más grita: <strong>pones una etiqueta de color a cada uno</strong> para saber a quién atender antes.",
+        "truco": "<strong>triaje = \"tri-ar\" = elegir</strong> (como \"triar\" las mejores frutas). Los colores son <strong>como un semáforo + negro</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve el triaje?",
+        "respuesta": "Para asegurar la supervivencia priorizando a los más graves cuando hay un número indeterminado de heridos."
+      },
+      "aplica": [
+        {
+          "caso": "Colores del triaje.",
+          "opciones": [
+            "Rojo, amarillo, verde y negro",
+            "Rojo, azul y verde"
+          ],
+          "buena": 0,
+          "porque": "Cuatro colores."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es el triaje?",
+        "puntos": [
+          "Clasificar a los heridos cuando hay muchos",
+          "Asegurar su supervivencia, priorizando a los más graves",
+          "Tarjeta de color: rojo, amarillo, verde o negro"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c6",
+      "n": 6,
+      "titulo": "Triaje SHORT",
+      "diapositivas": "3",
+      "gancho": "¿Qué tres preguntas harías para saber rápido lo grave que está alguien?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/002.jpg",
+        "imgAlt": "Triaje básico SHORT (diap. 3)",
+        "dice": "<p>Se hacen 3 preguntas en orden:</p>\n<ol>\n<li><strong>¿Camina?</strong> → SÍ → <strong>VERDE</strong>. Si NO →</li>\n<li><strong>¿Habla sin dificultad y obedece órdenes sencillas?</strong> → SÍ → <strong>AMARILLO</strong>. Si NO →</li>\n<li><strong>¿Respira? (¿signos de circulación?)</strong> → SÍ → <strong>ROJO</strong> · NO → <strong>NEGRO</strong>.</li>\n</ol>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Color</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>🟢 <strong>Verde</strong></td>\n<td>Lesiones y fracturas menores · heridas menores</td>\n</tr>\n<tr>\n<td>🟡 <strong>Amarillo</strong></td>\n<td>Heridas en el abdomen · <strong>fracturas abiertas</strong> · dificultad respiratoria · riesgo de <em>shock</em> · personas quemadas con lesiones de <strong>menos del 20 %</strong></td>\n</tr>\n<tr>\n<td>🔴 <strong>Rojo</strong></td>\n<td><strong>Parada cardiorrespiratoria presenciada</strong> · <strong>asfixia</strong> u obstrucción mecánica de las vías respiratorias · <strong>hemorragia abundante</strong> · <strong>grandes quemados</strong></td>\n</tr>\n<tr>\n<td>⚫ <strong>Negro</strong></td>\n<td>Personas <strong>fallecidas</strong> · parada cardiorrespiratoria <strong>no presenciada</strong> · trauma craneal severo con <strong>salida de masa encefálica</strong></td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "<strong>rojo = se atiende YA</strong> (se puede salvar si actúas rápido); <strong>amarillo = grave pero puede esperar un poco</strong>; <strong>verde = leve, camina solo</strong>; <strong>negro = ya no se puede hacer nada</strong>. Fíjate en la trampa: la PCR <strong>presenciada</strong> es <strong>roja</strong> (aún se puede salvar con RCP), la <strong>no presenciada</strong> es <strong>negra</strong> (no sabes cuánto tiempo lleva).",
+        "truco": "Las 3 preguntas = <strong>\"¿Camina? ¿Habla? ¿Respira?\"</strong> → <strong>\"Ca-Ha-Re\"</strong> → Verde, Amarillo, Rojo/Negro. <strong>\"Presenciada = Preferente (rojo); No presenciada = Negro\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la parada presenciada es roja y la no presenciada negra?",
+        "respuesta": "Porque en la presenciada aún se puede salvar con RCP; en la no presenciada no sabes cuánto tiempo lleva."
+      },
+      "aplica": [
+        {
+          "caso": "Hemorragia abundante.",
+          "opciones": [
+            "Rojo",
+            "Verde"
+          ],
+          "buena": 0,
+          "porque": "Se atiende ya."
+        },
+        {
+          "caso": "Quemado con menos del 20 %.",
+          "opciones": [
+            "Amarillo",
+            "Negro"
+          ],
+          "buena": 0,
+          "porque": "Grave, puede esperar un poco."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el triaje SHORT.",
+        "puntos": [
+          "¿Camina? Sí → verde",
+          "¿Habla y obedece? Sí → amarillo",
+          "¿Respira? Sí → rojo · No → negro",
+          "Rojo: PCR presenciada, asfixia, hemorragia abundante, grandes quemados"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c7",
+      "n": 7,
+      "titulo": "El botiquín y sus normas",
+      "diapositivas": "4",
+      "gancho": "¿Una empresa de 200 trabajadores tiene suficiente con un botiquín?",
+      "profe": {
+        "dice": "<p>En función del <strong>riesgo existente</strong>, de su <strong>tamaño</strong> y de las <strong>facilidades de acceso</strong> al centro de asistencia más cercano, las empresas deben tener desde un <strong>botiquín portátil</strong> hasta un <strong>local de primeros auxilios</strong> en aquellas con <strong>más de cincuenta personas trabajadoras</strong>.\nEl botiquín tiene que cumplir estas <strong>normas</strong>:</p>\n<ul>\n<li>Ha de ser <strong>portátil</strong> y fácil de trasladar al lugar del accidente.</li>\n<li>Debe <strong>revisarse periódicamente</strong> para reponer los elementos agotados o deteriorados.</li>\n<li>Tiene que estar <strong>debidamente señalizado</strong> y ubicado en un lugar de <strong>fácil acceso</strong>.</li>\n</ul>",
+        "entiende": "Lo que tenga la empresa depende de <strong>cuánto riesgo hay, cuánta gente trabaja y lo lejos que está el hospital</strong>. Con <strong>más de 50 trabajadores</strong>, además del botiquín hace falta una <strong>sala</strong> de primeros auxilios.",
+        "truco": "Las 3 normas = <strong>\"Se lleva, Se revisa, Se ve\"</strong> (portátil, revisado, señalizado). <strong>\"Más de 50 → local\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿De qué depende lo que debe tener la empresa?",
+        "respuesta": "Del riesgo existente, de su tamaño y de las facilidades de acceso al centro de asistencia más cercano."
+      },
+      "aplica": [
+        {
+          "caso": "Obligatorio con más de 50 trabajadores.",
+          "opciones": [
+            "Local de primeros auxilios",
+            "Solo botiquín"
+          ],
+          "buena": 0,
+          "porque": "Más de 50 → local."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué botiquín debe tener la empresa y qué normas cumple?",
+        "puntos": [
+          "Desde un botiquín portátil hasta un local (más de 50 trabajadores)",
+          "Portátil y fácil de trasladar",
+          "Revisado periódicamente",
+          "Señalizado y en un lugar de fácil acceso"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c8",
+      "n": 8,
+      "titulo": "Contenido del botiquín",
+      "diapositivas": "4",
+      "gancho": "¿Qué crees que lleva un botiquín, además de tiritas?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/003.jpg",
+        "imgAlt": "Contenido de un botiquín (diap. 4)",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Contenido</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Instrumental básico</strong></td>\n<td>Desinfectantes y antisépticos, gasas estériles, algodón hidrófilo, vendas, esparadrapo, apósitos adhesivos, tijeras, pinzas y guantes desechables</td>\n</tr>\n<tr>\n<td><strong>Material auxiliar</strong></td>\n<td>Manta isotérmica, botella de suero fisiológico, antiséptico yodado y torniquete</td>\n</tr>\n<tr>\n<td><strong>Otros</strong></td>\n<td>Férulas, analgésico (espray, pomada), etc.</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "El <strong>básico</strong> es lo de curar heridas (limpiar, tapar y sujetar); el <strong>auxiliar</strong> es para casos más serios (frío, lavar, hemorragias); <strong>otros</strong> son para golpes y dolor.",
+        "truco": "<strong>básico = \"lo de la tirita\"</strong>; <strong>auxiliar = \"M-S-A-T\"</strong> (<strong>M</strong>anta, <strong>S</strong>uero, <strong>A</strong>ntiséptico yodado, <strong>T</strong>orniquete); <strong>otros = \"Férula y analgésico\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve el material auxiliar?",
+        "respuesta": "Para casos más serios: manta isotérmica (frío), suero fisiológico (lavar), antiséptico yodado y torniquete (hemorragias)."
+      },
+      "aplica": [
+        {
+          "caso": "Manta isotérmica.",
+          "opciones": [
+            "Material auxiliar",
+            "Instrumental básico"
+          ],
+          "buena": 0,
+          "porque": "Manta, suero, antiséptico yodado, torniquete."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di el contenido del botiquín portátil.",
+        "puntos": [
+          "Básico: desinfectantes, gasas, algodón, vendas, esparadrapo, apósitos, tijeras, pinzas, guantes",
+          "Auxiliar: manta isotérmica, suero fisiológico, antiséptico yodado, torniquete",
+          "Otros: férulas, analgésico"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

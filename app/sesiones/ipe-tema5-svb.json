@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "id": "ipe-tema5-svb",
+  "unidad": "ipe-tema5",
+  "bloque": 4,
+  "titulo": "Soporte vital y la cadena de supervivencia",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de IPE tema 5 (bloque 4, conceptos 9 a 11, diapositiva 5). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Cuatro eslabones",
+    "caso": "En el comedor, un compañero se desploma y deja de respirar. Hay gente alrededor, un desfibrilador en el pasillo y la ambulancia tardará diez minutos.",
+    "pregunta": "¿Qué cuatro cosas tienen que pasar, en orden, para que sobreviva? ¿Cuáles podéis hacer vosotros?",
+    "solucion": "La cadena de supervivencia: 1) reconocimiento precoz de la urgencia y llamada de auxilio; 2) RCP precoz por testigos; 3) desfibrilación precoz; 4) soporte vital avanzado y cuidados posteriores. Los tres primeros los puede hacer cualquier persona con conocimientos básicos (son el soporte vital básico); el cuarto, solo el personal sanitario.",
+    "claves": [
+      "Llamar → RCP → DEA → avanzado",
+      "3 para todos, 1 para sanitarios",
+      "«Precoz» en los 3 primeros"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe-tema5.c9",
+      "n": 9,
+      "titulo": "SVB, PCR y RCP",
+      "diapositivas": "5",
+      "gancho": "PCR y RCP tienen las mismas letras. ¿Cuál es el problema y cuál la solución?",
+      "profe": {
+        "dice": "<p>El <strong>soporte vital básico (SVB)</strong> integra tanto las medidas de <strong>prevención de la parada cardiorrespiratoria (PCR)</strong> como las medidas de <strong>reanimación cardiopulmonar (RCP)</strong>, en caso de que esta se produzca. También incluye el <strong>conocimiento del sistema de emergencias</strong> y la <strong>desfibrilación precoz</strong>.</p>",
+        "entiende": "El SVB es el \"paquete\" completo: <strong>evitar</strong> que alguien entre en parada, <strong>reanimarlo</strong> si entra (RCP), <strong>saber llamar</strong> a emergencias y <strong>usar el desfibrilador</strong> cuanto antes.",
+        "truco": "<strong>SVB = \"Previene, Reanima, Llama y Desfibrila\"</strong>. <strong>PCR = el problema</strong> (Parada), <strong>RCP = la solución</strong> (Reanimación): son las mismas letras cambiadas de sitio."
+      },
+      "porque": {
+        "pregunta": "¿Qué incluye el SVB, además de la RCP?",
+        "respuesta": "La prevención de la PCR, el conocimiento del sistema de emergencias y la desfibrilación precoz."
+      },
+      "aplica": [
+        {
+          "caso": "Parada cardiorrespiratoria.",
+          "opciones": [
+            "PCR",
+            "RCP"
+          ],
+          "buena": 0,
+          "porque": "RCP es la reanimación."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es el soporte vital básico?",
+        "puntos": [
+          "Integra la prevención de la PCR",
+          "Y la reanimación cardiopulmonar (RCP) si se produce",
+          "También el sistema de emergencias y la desfibrilación precoz"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c10",
+      "n": 10,
+      "titulo": "La cadena de supervivencia",
+      "diapositivas": "5",
+      "gancho": "¿Qué crees que es lo primerísimo ante alguien que cae en parada?",
+      "profe": {
+        "img": "../ipe-tema5/repaso/img/004.jpg",
+        "imgAlt": "Cadena de supervivencia (diap. 5)",
+        "dice": "<p>Para salvar la vida de las personas que sufren una PCR se debe seguir la <strong>cadena de supervivencia</strong>, compuesta por <strong>cuatro acciones o eslabones</strong> para revertir la situación de PCR. Según el <strong>European Resuscitation Council (ERC)</strong>:</p>\n<ol>\n<li><strong>Reconocimiento precoz</strong> de la urgencia médica y <strong>llamada de auxilio</strong>.</li>\n<li><strong>Medidas de RCP precoz</strong> realizada por testigos.</li>\n<li><strong>Desfibrilación precoz.</strong></li>\n<li><strong>Soporte vital avanzado</strong> y cuidados posteriores a la RCP.</li>\n</ol>",
+        "entiende": "Es una cadena: <strong>si falla un eslabón, se rompe</strong>. Cada minuto sin RCP ni desfibrilación baja mucho la posibilidad de sobrevivir; por eso los 3 primeros pasos tienen la palabra <strong>«precoz»</strong>.",
+        "truco": "<strong>\"Reconozco y llamo → Aprieto el pecho → Descarga → Hospital\"</strong> = <strong>\"Lla-Pe-Des-Hos\"</strong>. <strong>El 1.º siempre es reconocer y llamar al 112</strong> (pregunta típica del test)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se llama «cadena»?",
+        "respuesta": "Porque son cuatro eslabones que hay que desarrollar para revertir la PCR: si falla uno, se rompe."
+      },
+      "aplica": [
+        {
+          "caso": "Tercer eslabón.",
+          "opciones": [
+            "Desfibrilación precoz",
+            "RCP precoz"
+          ],
+          "buena": 0,
+          "porque": "Llamar, RCP, desfibrilación, avanzado."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 eslabones de la cadena de supervivencia.",
+        "puntos": [
+          "1. Reconocimiento precoz y llamada de auxilio",
+          "2. RCP precoz por testigos",
+          "3. Desfibrilación precoz",
+          "4. Soporte vital avanzado y cuidados posteriores (ERC)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe-tema5.c11",
+      "n": 11,
+      "titulo": "Quién hace cada paso",
+      "diapositivas": "5",
+      "gancho": "¿Puedes usar tú un desfibrilador sin ser sanitario?",
+      "profe": {
+        "dice": "<p>Los <strong>tres primeros pasos</strong> de la cadena de supervivencia pueden ser ejecutados por <strong>cualquier persona</strong> con conocimientos básicos sobre técnicas de salvamento y constituyen el <strong>soporte vital básico</strong>. <strong>El paso final solo puede ser realizado por personal sanitario.</strong>\nEl soporte vital básico se desarrolla de acuerdo con los pasos del <strong>algoritmo de las guías del año 2021 del European Resuscitation Council (ERC)</strong>.</p>",
+        "entiende": "Tú (o cualquier compañero) puedes hacer <strong>llamar, RCP y DEA</strong>; el <strong>4.º eslabón</strong> (soporte vital avanzado) es cosa de <strong>médicos y técnicos</strong>.",
+        "truco": "<strong>\"3 para todos, 1 para sanitarios\"</strong>. Guías <strong>ERC 2021</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el cuarto eslabón no lo hace cualquiera?",
+        "respuesta": "Porque el soporte vital avanzado solo puede ser realizado por personal sanitario."
+      },
+      "aplica": [
+        {
+          "caso": "Guías que sigue el SVB.",
+          "opciones": [
+            "ERC 2021",
+            "OMS 2010"
+          ],
+          "buena": 0,
+          "porque": "European Resuscitation Council, 2021."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Quién puede hacer cada paso?",
+        "puntos": [
+          "Los 3 primeros: cualquiera con conocimientos básicos (SVB)",
+          "El último: solo personal sanitario",
+          "Algoritmo de las guías ERC 2021"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "ipe2",
+      "bloques": []
+    },
+    {
+      "unidad": "lab2",
+      "bloques": []
+    }
+  ]
+}

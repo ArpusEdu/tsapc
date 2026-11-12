@@ -77,6 +77,15 @@
     { "id": "ipe2-radiaciones", "unidad": "ipe2", "bloque": 5, "titulo": "Las radiaciones", "minutos": 20, "pegatina": "sonometro", "gancho": "el delantal de la radiografía" },
     { "id": "ipe2-quimicos", "unidad": "ipe2", "bloque": 6, "titulo": "Riesgos químicos (I): cómo entran y qué hacen", "minutos": 25, "pegatina": "sonometro", "gancho": "el rasguño y la mesa" },
     { "id": "ipe2-control", "unidad": "ipe2", "bloque": 6, "titulo": "Riesgos químicos (II): pictogramas y control", "minutos": 25, "pegatina": "sonometro", "gancho": "lejía y amoníaco en el mismo armario" },
-    { "id": "ipe2-biologicos", "unidad": "ipe2", "bloque": 7, "titulo": "Los riesgos biológicos", "minutos": 30, "pegatina": "sonometro", "gancho": "el pinchazo en Anatomía Patológica" }
+    { "id": "ipe2-biologicos", "unidad": "ipe2", "bloque": 7, "titulo": "Los riesgos biológicos", "minutos": 30, "pegatina": "sonometro", "gancho": "el pinchazo en Anatomía Patológica" },
+    { "id": "ipe-tema5-pas", "unidad": "ipe-tema5", "bloque": 1, "titulo": "Primeros auxilios y la conducta PAS", "minutos": 25, "pegatina": "botiquin", "gancho": "el compañero junto al cable" },
+    { "id": "ipe-tema5-triaje", "unidad": "ipe-tema5", "bloque": 2, "titulo": "El triaje y el botiquín", "minutos": 25, "pegatina": "botiquin", "gancho": "cuatro heridos y dos manos" },
+    { "id": "ipe-tema5-svb", "unidad": "ipe-tema5", "bloque": 4, "titulo": "Soporte vital y la cadena de supervivencia", "minutos": 20, "pegatina": "botiquin", "gancho": "cuatro eslabones" },
+    { "id": "ipe-tema5-rcp", "unidad": "ipe-tema5", "bloque": 4, "titulo": "La RCP 30:2 y la posición lateral de seguridad", "minutos": 25, "pegatina": "botiquin", "gancho": "solo, con el móvil en la mano" },
+    { "id": "ipe-tema5-atragantamiento", "unidad": "ipe-tema5", "bloque": 5, "titulo": "El atragantamiento", "minutos": 20, "pegatina": "botiquin", "gancho": "las manos al cuello" },
+    { "id": "ipe-tema5-hemorragias", "unidad": "ipe-tema5", "bloque": 6, "titulo": "Las hemorragias", "minutos": 25, "pegatina": "botiquin", "gancho": "cabeza atrás" },
+    { "id": "ipe-tema5-quemaduras", "unidad": "ipe-tema5", "bloque": 7, "titulo": "Las quemaduras", "minutos": 25, "pegatina": "botiquin", "gancho": "la que no duele" },
+    { "id": "ipe-tema5-traumatismos", "unidad": "ipe-tema5", "bloque": 8, "titulo": "Traumatismos y heridas", "minutos": 30, "pegatina": "botiquin", "gancho": "el tobillo que se mueve" },
+    { "id": "ipe-tema5-consciencia", "unidad": "ipe-tema5", "bloque": 10, "titulo": "Pérdida de consciencia y transporte de heridos", "minutos": 30, "pegatina": "botiquin", "gancho": "convulsiones en la oficina" }
   ]
 }
