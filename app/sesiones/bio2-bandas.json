@@ -1,0 +1,161 @@
+{
+  "schema": 1,
+  "id": "bio2-bandas",
+  "unidad": "bio2",
+  "bloque": 7,
+  "titulo": "Teñir y bandear (II): R, NOR y T",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 2 (bloque 7, conceptos 28 a 30, diapositivas 22 a 24). La solución del misterio es la tabla comparativa del concepto 31. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 31,
+    "titulo": "Cinco preparaciones sin etiqueta",
+    "caso": "En la mesa hay cinco preparaciones bandeadas con técnicas distintas y se han caído las etiquetas. Una brilla bajo una luz especial y se apaga enseguida; otra solo tiene teñidas las puntas; otra es justo el negativo de la más usada; otra tiene unas zonas negras en el brazo corto de los acrocéntricos; y la última es el clásico código de barras del cariotipo.",
+    "pregunta": "¿Qué técnica es cada una y qué reactivo usa?",
+    "solucionProfe": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Bandas</th>\n<th>Reactivo / paso clave</th>\n<th>Qué muestran</th>\n<th>Dato estrella</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>G</strong></td>\n<td>Tripsina + Giemsa</td>\n<td>G+ oscuras (AT), G− claras (CG)</td>\n<td><strong>La más usada</strong> para el cariotipo</td>\n</tr>\n<tr>\n<td><strong>Q</strong></td>\n<td>Quinacrina (acridina)</td>\n<td>Bandas brillantes = G+</td>\n<td>Fluorescencia; + rápido / − poco duradero (1 min)</td>\n</tr>\n<tr>\n<td><strong>R</strong></td>\n<td>Calor + Giemsa</td>\n<td><strong>Negativo de las G</strong></td>\n<td>Reverse</td>\n</tr>\n<tr>\n<td><strong>NOR</strong></td>\n<td><strong>Nitrato de plata</strong></td>\n<td>Genes de <strong>ARN ribosómico</strong></td>\n<td>Brazo corto de <strong>acrocéntricos</strong>; patrón único</td>\n</tr>\n<tr>\n<td><strong>T</strong></td>\n<td>Variante de R, incubación larga</td>\n<td><strong>Telómeros</strong></td>\n<td>Resto del cromosoma débil</td>\n</tr>\n</tbody>\n</table></div>",
+    "entiendeProfe": "La tabla resume las 5 técnicas: qué reactivo usan y qué muestra cada una. Es una pregunta típica de desarrollo.",
+    "claves": [
+      "G: tripsina + Giemsa",
+      "Q: quinacrina (fluorescencia)",
+      "R: calor + Giemsa",
+      "NOR: nitrato de plata · T: telómeros"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio2.c28",
+      "n": 28,
+      "titulo": "Bandas R (reverse)",
+      "diapositivas": "22",
+      "gancho": "Si unas bandas fueran el «negativo» de otras, ¿cómo se verían?",
+      "profe": {
+        "dice": "<ul>\n<li>Patrón de bandas = <strong>negativo de las bandas G</strong>.</li>\n<li>Se obtienen de forma similar al G: 1) <strong>calor</strong>; 2) <strong>Giemsa</strong>.</li>\n</ul>",
+        "entiende": "<strong>reverse = al revés</strong>: donde las G salen oscuras, las R salen claras, y al contrario. En vez de tripsina se usa <strong>calor</strong>.",
+        "truco": "<strong>R = Reverse = negativo de las G</strong> · <strong>«Calor + Giemsa»</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué cambia en la técnica respecto a las bandas G?",
+        "respuesta": "En vez de tripsina se usa calor, y después Giemsa. El resultado es el negativo de las G: lo claro sale oscuro y al revés."
+      },
+      "aplica": [
+        {
+          "caso": "Bandas R.",
+          "opciones": [
+            "Calor + Giemsa",
+            "Tripsina + Giemsa"
+          ],
+          "buena": 0,
+          "porque": "R = reverse: calor + Giemsa."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las bandas R.",
+        "puntos": [
+          "Patrón = negativo de las bandas G",
+          "Calor y después Giemsa",
+          "Reverse = al revés"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c29",
+      "n": 29,
+      "titulo": "Bandas NOR",
+      "diapositivas": "23",
+      "gancho": "Hay zonas del cromosoma que guardan los genes para fabricar ribosomas. ¿Crees que todos los cromosomas las tienen?",
+      "profe": {
+        "glosario": "<p><b>ARN ribosómico:</b> el ARN que forma los ribosomas, las «fábricas» de proteínas de la célula.</p>",
+        "dice": "<ul>\n<li>Zonas donde están los <strong>genes que producen ARN ribosómico</strong>.</li>\n<li>Se ven como bandas al teñir con <strong>nitrato de plata</strong>.</li>\n<li>Suelen estar en el <strong>brazo corto de los cromosomas acrocéntricos</strong>.</li>\n<li>No todos los cromosomas las tienen → <strong>cada persona tiene un patrón NOR único</strong>.</li>\n</ul>",
+        "entiende": "Son las zonas donde están los genes del <strong>ARN ribosómico</strong> (los que fabrican las «fábricas» de proteínas). Se tiñen de negro con <strong>plata</strong>.",
+        "truco": "<strong>NOR = Nitrato de plata, ARN Ribosómico</strong> · en el brazo corto de los <strong>acrocéntricos</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el patrón NOR es único de cada persona?",
+        "respuesta": "Porque no todos los cromosomas tienen estas regiones."
+      },
+      "aplica": [
+        {
+          "caso": "Las NOR se tiñen con…",
+          "opciones": [
+            "Nitrato de plata",
+            "Quinacrina"
+          ],
+          "buena": 0,
+          "porque": "NOR = nitrato de plata."
+        },
+        {
+          "caso": "¿Dónde suelen estar?",
+          "opciones": [
+            "En el brazo corto de los acrocéntricos",
+            "En los telómeros"
+          ],
+          "buena": 0,
+          "porque": "En el brazo corto de los acrocéntricos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las bandas NOR.",
+        "puntos": [
+          "Zonas con los genes que producen ARN ribosómico",
+          "Se tiñen con nitrato de plata",
+          "Suelen estar en el brazo corto de los acrocéntricos",
+          "No todos las tienen: patrón NOR único de cada persona"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Los acrocéntricos, con su brazo corto muy pequeño, en «El cromosoma».",
+          "ruta": "#/sesion/bio2-cromosoma"
+        }
+      ]
+    },
+    {
+      "id": "bio2.c30",
+      "n": 30,
+      "titulo": "Bandas T",
+      "diapositivas": "24",
+      "gancho": "¿Cómo harías que solo se tiñeran las puntas del cromosoma?",
+      "profe": {
+        "dice": "<ul>\n<li>Permiten la <strong>tinción de los telómeros</strong>.</li>\n<li>Son una <strong>variante del bandeo R</strong>.</li>\n<li>Se <strong>prolongan los tiempos de incubación</strong>: el cromosoma se ve <strong>débil</strong>, excepto los <strong>telómeros, muy teñidos</strong>.</li>\n</ul>",
+        "entiende": "Se deja incubar más tiempo: casi todo el cromosoma se ve flojito y <strong>solo las puntas (telómeros) salen muy teñidas</strong>.",
+        "truco": "<strong>T = Telómeros</strong> · <strong>variante de la R</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cómo se consigue que destaquen los telómeros?",
+        "respuesta": "Prolongando los tiempos de incubación: el cromosoma se ve débil, excepto los telómeros, que salen muy teñidos. Es una variante del bandeo R."
+      },
+      "aplica": [
+        {
+          "caso": "Las bandas T tiñen…",
+          "opciones": [
+            "Los telómeros",
+            "Los centrómeros"
+          ],
+          "buena": 0,
+          "porque": "T = telómeros."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las bandas T.",
+        "puntos": [
+          "Tiñen los telómeros",
+          "Variante del bandeo R",
+          "Incubación más larga: el resto débil, telómeros muy teñidos"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab1",
+      "bloques": []
+    }
+  ]
+}

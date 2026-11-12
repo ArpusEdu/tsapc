@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "id": "bio2-extension",
+  "unidad": "bio2",
+  "bloque": 5,
+  "titulo": "Ver cromosomas (II): parar, hinchar, fijar y extender",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 2 (bloque 5, conceptos 16 a 19, diapositivas 12 a 15). El misterio es el caso práctico 1 (concepto 21) y su solución, la tabla resumen del concepto 20. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 20,
+    "titulo": "El caso práctico 1",
+    "caso": "Tu profe lo plantea así: «En el laboratorio realizas cariotipos estándar a partir de sangre periférica. Haz un esquema descriptivo de las etapas del proceso de obtención de extensiones cromosómicas».",
+    "pregunta": "Antes de ver la solución: ¿te atreves a escribir los 7 pasos, cada uno con su dato clave?",
+    "solucionProfe": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Paso</th>\n<th>Qué se hace</th>\n<th>Dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. Muestra</td>\n<td>Venopunción, sangre periférica</td>\n<td>Heparina sódica; <strong>nunca EDTA</strong>; no congelar</td>\n</tr>\n<tr>\n<td>2. Siembra</td>\n<td>Inocular la muestra en medio</td>\n<td>1,5-10 ml; <strong>RPMI 1640</strong> (DMEM, Ham F10)</td>\n</tr>\n<tr>\n<td>3. Cultivo</td>\n<td>Incubar</td>\n<td>37 ºC, 5 % CO2, <strong>72 h</strong>; agitar a 24 y 48 h</td>\n</tr>\n<tr>\n<td>4. Sacrificio</td>\n<td><strong>Colchicina</strong> → para en metafase</td>\n<td><strong>45-60 min, 37 º</strong></td>\n</tr>\n<tr>\n<td>5. Choque hipotónico</td>\n<td><strong>KCl 0,075 M</strong> → hincha la célula</td>\n<td><strong>20-40 min</strong></td>\n</tr>\n<tr>\n<td>6. Fijación</td>\n<td><strong>Carnoy</strong></td>\n<td>Metanol 100 % + ácido acético glaciar <strong>3:1</strong></td>\n</tr>\n<tr>\n<td>7. Extensión</td>\n<td>Goteo en portaobjetos</td>\n<td>1-2 gotas desde <strong>30 cm</strong></td>\n</tr>\n</tbody>\n</table></div>",
+    "entiendeProfe": "Esta tabla es la <strong>respuesta del caso práctico 1</strong> y la pregunta llave más probable: apréndela entera con sus números.",
+    "claves": [
+      "Heparina · RPMI · 37-5-72",
+      "Colchicina 45-60 · KCl 20-40",
+      "Carnoy 3:1 · 30 cm"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio2.c16",
+      "n": 16,
+      "titulo": "Paso 4: sacrificio con colchicina",
+      "diapositivas": "12",
+      "gancho": "Las células se dividen sin parar en el cultivo. ¿Cómo las «congelarías» justo cuando mejor se ven los cromosomas?",
+      "profe": {
+        "glosario": "<p><b>Colchicina:</b> sustancia que deja la célula parada en metafase. <b>Microtúbulos:</b> tubitos de proteína (tubulina) que forman el huso. <b>Huso mitótico:</b> las «cuerdas» que separan los cromosomas al dividirse la célula.</p>",
+        "img": "../bio2/repaso/img/005.jpg",
+        "imgAlt": "Microtúbulo de α- y β-tubulina (diap. 12)",
+        "dice": "<ul>\n<li>Es la <strong>parada del cultivo en metafase</strong>.</li>\n<li>Tras las 72 h se añade 🟥 <strong>colchicina</strong>, que <strong>inhibe la polimerización de los microtúbulos</strong> → <strong>destruye el huso mitótico</strong> → las células <strong>se detienen en metafase</strong>.</li>\n<li>🟨 <strong>45-60 minutos a 37 º.</strong>\nImagen: microtúbulo formado por <strong>α- y β-tubulina</strong> (22 nm de diámetro).</li>\n</ul>",
+        "entiende": "La <strong>colchicina</strong> rompe el «andamio» (huso mitótico) que separa los cromosomas: la célula queda <strong>congelada en metafase</strong>, justo cuando los cromosomas se ven mejor.",
+        "truco": "<strong>«Colchicina = Congela en metafase»</strong> · <strong>45-60 min a 37 º</strong> (recuadro amarillo de la profe)."
+      },
+      "porque": {
+        "pregunta": "¿Cómo consigue la colchicina parar las células en metafase?",
+        "respuesta": "Inhibe la polimerización de los microtúbulos, así que se destruye el huso mitótico, el «andamio» que separa los cromosomas. Sin huso, la célula no puede seguir y se queda en metafase."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué se añade para parar el cultivo en metafase?",
+          "opciones": [
+            "Colchicina",
+            "Heparina"
+          ],
+          "buena": 0,
+          "porque": "Colchicina = congela en metafase."
+        },
+        {
+          "caso": "¿Cuánto tiempo actúa?",
+          "opciones": [
+            "45-60 min a 37 º",
+            "72 h"
+          ],
+          "buena": 0,
+          "porque": "45-60 minutos a 37 º."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el sacrificio del cultivo.",
+        "puntos": [
+          "Es la parada del cultivo en metafase, tras las 72 h",
+          "Se añade colchicina",
+          "Inhibe la polimerización de los microtúbulos",
+          "Se destruye el huso mitótico y las células se detienen en metafase",
+          "45-60 minutos a 37 º"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c17",
+      "n": 17,
+      "titulo": "Paso 5: choque hipotónico",
+      "diapositivas": "13",
+      "gancho": "En metafase, los cromosomas están apretados en el centro. ¿Cómo harías que se separaran para verlos uno a uno?",
+      "profe": {
+        "glosario": "<p><b>Solución hipotónica:</b> líquido con menos sales que el interior de la célula, por lo que el agua entra en ella. <b>Ósmosis:</b> paso del agua a través de una membrana hacia donde hay más sales.</p>",
+        "dice": "<ul>\n<li>Tratamiento a las células en metafase para <strong>hincharlas</strong> con una <strong>solución hipotónica (KCl 0,075 M)</strong>.</li>\n<li><strong>Entra agua</strong> en la célula (ósmosis) → los cromosomas <strong>se separan mejor</strong> → se observan mejor.</li>\n<li><strong>Tiempo clave: 20-40 min.</strong> Si es <strong>poco</strong>, <strong>no se liberan bien</strong> los cromosomas; si es <strong>mucho</strong>, <strong>se deshace la estructura de la metafase</strong>.</li>\n</ul>",
+        "entiende": "La solución <strong>hipotónica</strong> tiene menos sales que la célula, así que <strong>entra agua</strong> y la célula se hincha como un globo: los cromosomas se separan y se ven mejor. Ni poco tiempo (no se separan) ni mucho (se rompe todo).",
+        "truco": "<strong>«KCl 0,075 M, 20-40 min: hincha el globo»</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué importa tanto el tiempo del choque hipotónico?",
+        "respuesta": "Porque si es poco, los cromosomas no se liberan bien, y si es mucho, se deshace la estructura de la metafase. Por eso son 20-40 minutos."
+      },
+      "aplica": [
+        {
+          "caso": "Solución del choque hipotónico.",
+          "opciones": [
+            "KCl 0,075 M",
+            "Carnoy"
+          ],
+          "buena": 0,
+          "porque": "KCl 0,075 M."
+        },
+        {
+          "caso": "Al entrar agua en la célula…",
+          "opciones": [
+            "Se hincha y los cromosomas se separan",
+            "Se encoge"
+          ],
+          "buena": 0,
+          "porque": "Hincha el globo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el choque hipotónico.",
+        "puntos": [
+          "Se hinchan las células en metafase con una solución hipotónica",
+          "KCl 0,075 M",
+          "Entra agua (ósmosis): los cromosomas se separan y se ven mejor",
+          "20-40 min: ni poco (no se liberan) ni mucho (se deshace la metafase)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c18",
+      "n": 18,
+      "titulo": "Paso 6: fijación",
+      "diapositivas": "14",
+      "gancho": "Ya tienes las células hinchadas con los cromosomas separados. ¿Qué harías para que no se estropeen?",
+      "profe": {
+        "glosario": "<p><b>Carnoy:</b> líquido fijador hecho de metanol y ácido acético.</p>",
+        "dice": "<p><strong>Lavado con Carnoy</strong> (subrayado) = <strong>metanol 100 % + ácido acético glaciar 3:1</strong>.</p>",
+        "entiende": "Fijar = <strong>«congelar» la célula tal cual</strong> para que no se estropee. Se hace con <strong>Carnoy</strong>, una mezcla de metanol y ácido acético.",
+        "truco": "<strong>Carnoy «3:1» = 3 de metanol por 1 de ácido acético</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué significa fijar?",
+        "respuesta": "Conservar las células tal como están, como una foto, para que no se estropeen. Se hace lavando con Carnoy."
+      },
+      "aplica": [
+        {
+          "caso": "Composición del Carnoy.",
+          "opciones": [
+            "Metanol 100 % + ácido acético glaciar 3:1",
+            "KCl 0,075 M"
+          ],
+          "buena": 0,
+          "porque": "Carnoy «3:1»."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la fijación.",
+        "puntos": [
+          "Fijación: lavado con Carnoy",
+          "Carnoy: metanol 100 % + ácido acético glaciar",
+          "Proporción 3:1"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c19",
+      "n": 19,
+      "titulo": "Paso 7: la extensión",
+      "diapositivas": "15",
+      "gancho": "Para ver los cromosomas, la célula hinchada tiene que «reventar» sobre el cristal. ¿Cómo lo harías sin tocarla?",
+      "profe": {
+        "glosario": "<p><b>Técnica de goteo:</b> dejar caer gotas desde cierta altura para que las células se rompan y los cromosomas se extiendan.</p>",
+        "dice": "<ul>\n<li>Las células se <strong>extienden sobre portaobjetos</strong>.</li>\n<li><strong>Técnica de goteo</strong>: dejar caer <strong>1 o 2 gotas</strong> de la suspensión desde <strong>unos 30 cm</strong> de altura.</li>\n</ul>",
+        "entiende": "Se deja caer la gota <strong>desde alto (30 cm)</strong> para que, al chocar con el cristal, la célula hinchada <strong>reviente</strong> y los cromosomas queden repartidos.",
+        "truco": "<strong>«1-2 gotas desde 30 cm»</strong> (como un palmo y medio)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se deja caer la gota desde unos 30 cm?",
+        "respuesta": "Para que, al chocar con el portaobjetos, la célula hinchada reviente y los cromosomas queden repartidos."
+      },
+      "aplica": [
+        {
+          "caso": "Técnica de goteo.",
+          "opciones": [
+            "1-2 gotas desde unos 30 cm",
+            "Una gota a ras del cristal"
+          ],
+          "buena": 0,
+          "porque": "1-2 gotas desde 30 cm."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se obtiene la extensión?",
+        "puntos": [
+          "Las células se extienden sobre portaobjetos",
+          "Técnica de goteo",
+          "1 o 2 gotas desde unos 30 cm de altura"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab1",
+      "bloques": []
+    }
+  ]
+}

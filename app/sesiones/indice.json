@@ -31,6 +31,14 @@
     { "id": "bio1-recuento", "unidad": "bio1", "bloque": 6, "titulo": "Contar células vivas", "minutos": 20, "pegatina": "petri", "gancho": "contadas, pero no vivas" },
     { "id": "bio1-mantenimiento", "unidad": "bio1", "bloque": 6, "titulo": "Cuidar el cultivo", "minutos": 25, "pegatina": "petri", "gancho": "el medio que cambió de color" },
     { "id": "bio1-pase", "unidad": "bio1", "bloque": 6, "titulo": "El pase, congelar y despertar", "minutos": 25, "pegatina": "petri", "gancho": "diez minutos de más" },
-    { "id": "bio1-aplicaciones", "unidad": "bio1", "bloque": 7, "titulo": "Contaminación y para qué sirve todo esto", "minutos": 25, "pegatina": "petri", "gancho": "un enemigo invisible" }
+    { "id": "bio1-aplicaciones", "unidad": "bio1", "bloque": 7, "titulo": "Contaminación y para qué sirve todo esto", "minutos": 25, "pegatina": "petri", "gancho": "un enemigo invisible" },
+    { "id": "bio2-cromosoma", "unidad": "bio2", "bloque": 1, "titulo": "El cromosoma: qué es, cuándo se ve y sus formas", "minutos": 25, "pegatina": "adn", "gancho": "ningún cromosoma a la vista" },
+    { "id": "bio2-numero", "unidad": "bio2", "bloque": 4, "titulo": "Cuántos cromosomas: diploide y haploide", "minutos": 20, "pegatina": "adn", "gancho": "46 + 46" },
+    { "id": "bio2-muestra", "unidad": "bio2", "bloque": 5, "titulo": "Ver cromosomas (I): de la vena al cultivo", "minutos": 25, "pegatina": "adn", "gancho": "el tubo equivocado" },
+    { "id": "bio2-extension", "unidad": "bio2", "bloque": 5, "titulo": "Ver cromosomas (II): parar, hinchar, fijar y extender", "minutos": 25, "pegatina": "adn", "gancho": "el caso práctico 1" },
+    { "id": "bio2-tincion", "unidad": "bio2", "bloque": 7, "titulo": "Teñir y bandear (I): convencional, G y Q", "minutos": 25, "pegatina": "adn", "gancho": "todos del mismo color" },
+    { "id": "bio2-bandas", "unidad": "bio2", "bloque": 7, "titulo": "Teñir y bandear (II): R, NOR y T", "minutos": 20, "pegatina": "adn", "gancho": "cinco preparaciones sin etiqueta" },
+    { "id": "bio2-nomenclatura", "unidad": "bio2", "bloque": 8, "titulo": "La dirección de un gen: ISCN y locus", "minutos": 20, "pegatina": "adn", "gancho": "la dirección de un gen" },
+    { "id": "bio2-cariotipo", "unidad": "bio2", "bloque": 9, "titulo": "Resolver un cariotipo", "minutos": 35, "pegatina": "adn", "gancho": "46 piezas desordenadas" }
   ]
 }

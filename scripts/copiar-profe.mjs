@@ -17,7 +17,7 @@ function concepto(n) {
   if (at < 0) throw new Error("no encuentro el concepto " + n + " en " + unidad);
   const ini = html.lastIndexOf("<article", at), fin = html.indexOf("</article>", at);
   const a = html.slice(ini, fin);
-  const prof = a.match(/<div class="prof-t">([\s\S]*?)<\/div>\s*(?=<div class="box|<p class="lbl|$)/);
+  const prof = a.match(/<div class="prof-t">([\s\S]*?)<\/div>\s*(?=<div class="box|<p class="lbl|<figure|<div class="gal|$)/);
   if (!prof) throw new Error("sin «Lo que dice la profe» en " + n);
   const ent = a.match(/<div class="box und">[\s\S]*?<\/p>\s*<p>([\s\S]*?)<\/p>/);
   const tr = a.match(/<div class="box tip">[\s\S]*?<\/p>\s*<p>([\s\S]*?)<\/p>/);

@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "id": "bio2-tincion",
+  "unidad": "bio2",
+  "bloque": 7,
+  "titulo": "Teñir y bandear (I): convencional, G y Q",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 2 (bloque 7, conceptos 24 a 27, diapositivas 18 a 21). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Todos del mismo color",
+    "caso": "Has teñido una extensión con Giemsa al 2-3 % durante 10 minutos. Cuentas 46 cromosomas y los agrupas por su forma. Entonces te preguntan si el cromosoma 7 tiene alguna alteración… y te das cuenta de que no sabes cuál es el 7.",
+    "pregunta": "¿Por qué no lo puedes saber? ¿Qué te falta?",
+    "solucion": "Con la tinción convencional los cromosomas se tiñen de manera uniforme: sirve para contarlos y agruparlos por su forma, pero no para identificar cada uno. Para eso hace falta una técnica de bandeo, como las bandas G (tripsina + Giemsa), la más usada para el cariotipo: cada cromosoma sale con su propio patrón de bandas claras y oscuras, como un código de barras.",
+    "claves": [
+      "Convencional = cuento",
+      "Bandeo = reconozco",
+      "Bandas G: la más usada"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio2.c24",
+      "n": 24,
+      "titulo": "Tinción convencional",
+      "diapositivas": "18",
+      "gancho": "Si todos los cromosomas salieran del mismo color, ¿podrías saber cuál es el 7 y cuál el 8?",
+      "profe": {
+        "glosario": "<p><b>Bandeo:</b> técnica que tiñe los cromosomas con un patrón de rayas claras y oscuras.</p>",
+        "dice": "<p>Una vez secas las extensiones:</p>\n<ul>\n<li><strong>Tinción convencional, 10 min</strong> → solución <strong>Giemsa 2-3 % u orceína</strong>.</li>\n<li><strong>Lavar</strong> → <strong>agua destilada</strong> → <strong>secar</strong>.</li>\n<li>🟩 <strong>Permiten contar y agrupar los cromosomas por características morfológicas comunes.</strong></li>\n<li>Se tiñen <strong>de manera uniforme</strong>; la <strong>identificación detallada</strong> de cada cromosoma <strong>solo se consigue con técnicas de bandeo</strong>.</li>\n</ul>",
+        "entiende": "Con la tinción convencional <strong>todos los cromosomas salen del mismo color</strong>: puedes <strong>contarlos</strong> y agruparlos por forma, pero no saber exactamente cuál es cada uno. Para eso hace falta <strong>bandeo</strong>.",
+        "truco": "<strong>«Convencional = cuento; bandeo = reconozco»</strong> · Giemsa <strong>2-3 %</strong>, <strong>10 min</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué puedes hacer con la tinción convencional y qué no?",
+        "respuesta": "Puedes contar los cromosomas y agruparlos por su forma. Pero como se tiñen de manera uniforme, no puedes identificar cada uno con detalle: para eso hace falta el bandeo."
+      },
+      "aplica": [
+        {
+          "caso": "Tinción convencional.",
+          "opciones": [
+            "Giemsa 2-3 % u orceína, 10 min",
+            "Quinacrina con fluorescencia"
+          ],
+          "buena": 0,
+          "porque": "Giemsa 2-3 % u orceína, 10 min."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la tinción convencional: cómo se hace y para qué sirve.",
+        "puntos": [
+          "Con las extensiones secas: Giemsa 2-3 % u orceína, 10 min",
+          "Lavar con agua destilada y secar",
+          "Permite contar y agrupar por características morfológicas",
+          "Tiñe de forma uniforme: identificar cada uno requiere bandeo"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c25",
+      "n": 25,
+      "titulo": "Banda, región y marca",
+      "diapositivas": "19",
+      "gancho": "Un cromosoma bandeado parece un código de barras. ¿Cómo pondrías nombre a cada trozo para poder encontrarlo?",
+      "profe": {
+        "img": "../bio2/repaso/img/006.jpg",
+        "imgAlt": "Brazo p, centrómero, brazo q, regiones, bandas y subbandas (diap. 19)",
+        "dice": "<ul>\n<li><strong>Banda cromosómica:</strong> parte del cromosoma con apariencia <strong>más oscura o más clara</strong>.</li>\n<li><strong>Región cromosómica:</strong> área <strong>entre dos marcas</strong>; puede contener <strong>varias bandas</strong>.</li>\n<li><strong>Marca cromosómica:</strong> característica morfológica importante para <strong>identificar</strong> un cromosoma: <strong>puntos de referencia, extremos de los brazos, centrómeros y ciertas bandas</strong>.\nImagen: cromosoma con brazo p arriba, centrómero, brazo q abajo; regiones 1, 2, 3; banda 4; subbanda 2.</li>\n</ul>",
+        "entiende": "Con el bandeo el cromosoma parece un <strong>código de barras</strong>: cada raya es una <strong>banda</strong>; entre dos «señales» (marcas) hay una <strong>región</strong>, que puede tener varias bandas.",
+        "truco": "<strong>Banda = una raya · Región = entre dos marcas · Marca = señal para identificarlo</strong> (centrómero, extremos, ciertas bandas)."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia una banda de una región?",
+        "respuesta": "La banda es una sola raya, más clara u oscura. La región es el área entre dos marcas y puede contener varias bandas."
+      },
+      "aplica": [
+        {
+          "caso": "El centrómero o los extremos de los brazos son…",
+          "opciones": [
+            "Marcas cromosómicas",
+            "Bandas"
+          ],
+          "buena": 0,
+          "porque": "Marca = señal para identificar el cromosoma."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define banda, región y marca cromosómica.",
+        "puntos": [
+          "Banda: parte con apariencia más oscura o más clara",
+          "Región: área entre dos marcas; puede tener varias bandas",
+          "Marca: característica para identificar el cromosoma",
+          "Marcas: puntos de referencia, extremos de los brazos, centrómeros y ciertas bandas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c26",
+      "n": 26,
+      "titulo": "Bandas G (Giemsa)",
+      "diapositivas": "20",
+      "gancho": "Si «mordieras» un poco las proteínas de un cromosoma y luego lo tiñeras, ¿qué crees que verías?",
+      "profe": {
+        "glosario": "<p><b>Tripsina:</b> enzima que corta proteínas. <b>AT / CG:</b> las parejas de «letras» del ADN (adenina-timina y citosina-guanina).</p>",
+        "img": "../bio2/repaso/img/007.jpg",
+        "imgAlt": "Cariotipo femenino con bandas G (diap. 20)",
+        "dice": "<ul>\n<li><strong>La técnica de bandeo más utilizada para el cariotipo.</strong></li>\n<li>1) <strong>Tripsina</strong> → <strong>degrada proteínas</strong> y produce bandas claras y oscuras según la digestión. 2) <strong>Giemsa.</strong></li>\n<li><strong>Bandas oscuras (G+) → ricas en AT. Bandas claras (G−) → ricas en CG.</strong>\nImagen: cariotipo femenino con bandas G (1-22 + X).</li>\n</ul>",
+        "entiende": "La <strong>tripsina</strong> «come» un poco de las proteínas del cromosoma y, al teñir con <strong>Giemsa</strong>, salen rayas oscuras y claras. Es la técnica <strong>más usada</strong> para el cariotipo.",
+        "truco": "<strong>G = Giemsa</strong> · <strong>«Oscura = AT (A de oscurA) · Clara = CG»</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué salen bandas claras y oscuras?",
+        "respuesta": "Porque la tripsina degrada las proteínas del cromosoma y, según cuánto digiere cada zona, al teñir con Giemsa salen bandas oscuras (ricas en AT) y claras (ricas en CG)."
+      },
+      "aplica": [
+        {
+          "caso": "Las bandas G oscuras (G+) son ricas en…",
+          "opciones": [
+            "AT",
+            "CG"
+          ],
+          "buena": 0,
+          "porque": "Oscura = AT."
+        },
+        {
+          "caso": "La técnica de bandeo más usada para el cariotipo.",
+          "opciones": [
+            "Bandas G",
+            "Bandas T"
+          ],
+          "buena": 0,
+          "porque": "Las G."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las bandas G.",
+        "puntos": [
+          "La más utilizada para el cariotipo",
+          "Tripsina: degrada proteínas",
+          "Después, Giemsa",
+          "G+ oscuras: ricas en AT · G− claras: ricas en CG"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La tripsina también despega las células en el pase (Bio 1, «El pase, congelar y despertar»).",
+          "ruta": "#/sesion/bio1-pase"
+        }
+      ]
+    },
+    {
+      "id": "bio2.c27",
+      "n": 27,
+      "titulo": "Bandas Q (quinacrina)",
+      "diapositivas": "21",
+      "gancho": "¿Y si en vez de un colorante normal usaras uno que brilla con una luz especial?",
+      "profe": {
+        "glosario": "<p><b>Microscopio de fluorescencia:</b> ilumina con una luz especial que hace brillar los colorantes fluorescentes.</p>",
+        "dice": "<ul>\n<li>Se usa <strong>acridina</strong> (quinacrina) y se observan con <strong>microscopio de fluorescencia</strong>.</li>\n<li><strong>Bandas brillantes → G+.</strong></li>\n<li>🟩 <strong>Ventaja: rápido.</strong> 🟥 <strong>Desventaja: poco duradero (≈ 1 min).</strong></li>\n</ul>",
+        "entiende": "La <strong>quinacrina</strong> brilla con luz especial (fluorescencia): es <strong>rápida</strong>, pero el brillo <strong>dura solo 1 minuto</strong>.",
+        "truco": "<strong>Q = Quinacrina = brillo rápido que se apaga (1 min)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuál es la pega de las bandas Q?",
+        "respuesta": "Que son poco duraderas: el brillo dura alrededor de un minuto. A cambio, la técnica es rápida."
+      },
+      "aplica": [
+        {
+          "caso": "Las bandas Q se observan con…",
+          "opciones": [
+            "Microscopio de fluorescencia",
+            "Microscopio normal"
+          ],
+          "buena": 0,
+          "porque": "La quinacrina es fluorescente."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las bandas Q.",
+        "puntos": [
+          "Se usa acridina (quinacrina)",
+          "Microscopio de fluorescencia",
+          "Bandas brillantes = G+",
+          "Rápida, pero poco duradera (≈ 1 min)"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab1",
+      "bloques": []
+    }
+  ]
+}

@@ -74,6 +74,9 @@ for (const entrada of INDICE) test("sesión " + entrada.id + ": todo lo marcado 
   for (const c of S.conceptos) {
     for (const k of ["dice", "entiende", "truco"]) {
       if (!c.profe[k]) continue;
+      /* el copiador no puede arrastrar trozos de la ficha de al lado (figuras, recuadros, «Entiéndelo» dentro de «dice») */
+      const cuenta = (re) => (c.profe[k].match(re) || []).length;
+      assert.ok(!/<figure|<div class="box/.test(c.profe[k]) && cuenta(/<div\b/g) === cuenta(/<\/div>/g),c.id + " · " + k + ": se ha colado HTML de fuera del texto de la profe");
       /* cada frase (o celda) de la profe tiene que aparecer en el original */
       const trozos = plano(c.profe[k].replace(/<\/(li|td|th|p)>/g, "|")).split("|").map((x) => x.trim().replace(/^Entiéndelo:\s*/i, "")).filter((x) => x.length > 3);
       for (const t of trozos) assert.ok(original.toLowerCase().includes(t.toLowerCase()), c.id + " · " + k + ": no está tal cual → «" + t + "»");

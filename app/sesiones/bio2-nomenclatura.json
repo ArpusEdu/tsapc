@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "id": "bio2-nomenclatura",
+  "unidad": "bio2",
+  "bloque": 8,
+  "titulo": "La dirección de un gen: ISCN y locus",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 2 (bloque 8, conceptos 32 y 33, diapositivas 25, 26 y 28). El misterio es el caso práctico 3 y su solución, el concepto 23. «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "desde": 23,
+    "titulo": "El caso práctico 3",
+    "caso": "La anemia falciforme se debe a un fallo en el gen HBB, el que fabrica parte de la hemoglobina. Te piden que digas en qué cromosoma está, dónde exactamente, y cómo se hereda.",
+    "pregunta": "¿Sabrías escribir su «dirección» en el cromosoma? Si no, intenta adivinar qué partes debería tener.",
+    "solucionProfe": "<p><em>(Respuesta fuera del PowerPoint:)</em> El gen <strong>HBB</strong> (cadena <strong>β de la hemoglobina</strong>) está en el <strong>cromosoma 11</strong>, en el <strong>brazo corto</strong>: <strong>locus 11p15.4</strong>. Herencia <strong>autosómica recesiva</strong>: la enfermedad aparece cuando <strong>las dos copias del cromosoma 11</strong> llevan la mutación (cambio de ácido glutámico por valina → hemoglobina S).\nLéelo con la nomenclatura ISCN: <strong>11 = cromosoma, p = brazo corto, 1 = región, 5 = banda, .4 = subbanda.</strong></p>",
+    "entiendeProfe": "La anemia falciforme es un fallo del gen <strong>HBB</strong>, que fabrica parte de la hemoglobina. El gen está en el <strong>cromosoma 11</strong>, brazo corto: <strong>11p15.4</strong>.",
+    "claves": [
+      "HBB en el 11p15.4",
+      "Cromosoma · brazo · región · banda · subbanda",
+      "Autosómica recesiva: las dos copias"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio2.c32",
+      "n": 32,
+      "titulo": "Ideograma y nomenclatura ISCN",
+      "diapositivas": "25",
+      "gancho": "Si tuvieras que mandar a alguien a una banda concreta de un cromosoma, ¿qué datos le darías, como en una dirección postal?",
+      "profe": {
+        "glosario": "<p><b>Ideograma:</b> dibujo esquemático de un cromosoma con todas sus bandas. <b>ISCN:</b> sistema internacional para nombrar los cromosomas y sus bandas. <b>Subbanda:</b> división más fina de una banda.</p>",
+        "img": "../bio2/repaso/img/008.jpg",
+        "imgAlt": "Nomenclatura ISCN: 7q31.2 (diap. 25)",
+        "dice": "<ul>\n<li>Forma <strong>estandarizada</strong> de nombrar regiones de los cromosomas.</li>\n<li>Se dibuja con el <strong>brazo corto (p) arriba</strong> y el <strong>largo (q) abajo</strong>.</li>\n<li>Las regiones se numeran <strong>desde el centrómero hacia el telómero</strong>.</li>\n<li>El nombre incluye: <strong>nº de cromosoma, brazo, región, banda y subbanda</strong>.</li>\n<li>Ejemplo <strong>7q31.2</strong> → cromosoma <strong>7</strong>, brazo <strong>q</strong>, región <strong>3</strong>, banda <strong>1</strong>, subbanda <strong>2</strong> (se lee \"siete q tres uno punto dos\").</li>\n</ul>",
+        "entiende": "Es como una <strong>dirección postal</strong> del cromosoma: número de cromosoma, brazo, región, banda y subbanda. Se cuenta <strong>desde el centrómero hacia la punta</strong>.",
+        "truco": "<strong>7q31.2</strong> → «<strong>7</strong> cromosoma, <strong>q</strong> brazo largo, <strong>3</strong> región, <strong>1</strong> banda, <strong>.2</strong> subbanda»."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hace falta una forma estandarizada de nombrar las regiones?",
+        "respuesta": "Para que cualquier laboratorio entienda exactamente el mismo sitio: con el número de cromosoma, el brazo, la región, la banda y la subbanda no hay dudas, igual que con una dirección completa."
+      },
+      "aplica": [
+        {
+          "caso": "En 7q31.2, el «3» es…",
+          "opciones": [
+            "La región",
+            "La banda"
+          ],
+          "buena": 0,
+          "porque": "7 cromosoma, q brazo, 3 región, 1 banda, .2 subbanda."
+        },
+        {
+          "caso": "Las regiones se numeran…",
+          "opciones": [
+            "Desde el centrómero hacia el telómero",
+            "Desde el telómero hacia el centrómero"
+          ],
+          "buena": 0,
+          "porque": "Del centrómero hacia la punta."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la nomenclatura ISCN con el ejemplo 7q31.2.",
+        "puntos": [
+          "Forma estandarizada de nombrar regiones",
+          "Brazo corto (p) arriba, largo (q) abajo",
+          "Regiones numeradas del centrómero al telómero",
+          "Nº de cromosoma, brazo, región, banda y subbanda: 7 · q · 3 · 1 · .2"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Banda, región y marca, en «Teñir y bandear (I)».",
+          "ruta": "#/sesion/bio2-tincion"
+        }
+      ]
+    },
+    {
+      "id": "bio2.c33",
+      "n": 33,
+      "titulo": "Locus",
+      "diapositivas": "26 y 28",
+      "gancho": "Si la nomenclatura ISCN es la dirección, ¿cómo llamarías al «sitio» donde vive un gen?",
+      "profe": {
+        "glosario": "<p><b>Locus:</b> la «dirección» de un gen en el cromosoma. <b>Marcador genético:</b> trozo de ADN conocido que sirve de «señal» en un cromosoma. <b>Loci:</b> plural de locus.</p>",
+        "dice": "<p><strong>Locus:</strong> lugar que ocupa un <strong>gen o marcador genético</strong> en un cromosoma (plural: <strong>loci</strong>). Imagen: ideograma de los cromosomas 1-22, X e Y con sus bandas (diapositivas 26 y 28).</p>",
+        "entiende": "El <strong>locus</strong> es la <strong>dirección exacta</strong> de un gen en el cromosoma (por ejemplo, el gen HBB está en 11p15.4).",
+        "truco": "<strong>Locus = Lugar</strong> (en latín); plural <strong>loci</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué relación hay entre el locus y la nomenclatura ISCN?",
+        "respuesta": "El locus es el lugar que ocupa un gen o marcador en un cromosoma, y la nomenclatura ISCN es la forma de escribirlo: por ejemplo, el gen HBB está en 11p15.4."
+      },
+      "aplica": [
+        {
+          "caso": "El plural de locus es…",
+          "opciones": [
+            "Loci",
+            "Locus"
+          ],
+          "buena": 0,
+          "porque": "Locus, loci."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define locus.",
+        "puntos": [
+          "Lugar que ocupa un gen o marcador genético en un cromosoma",
+          "Plural: loci",
+          "Ejemplo: HBB en 11p15.4"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab1",
+      "bloques": []
+    }
+  ]
+}

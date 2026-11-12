@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "id": "bio2-numero",
+  "unidad": "bio2",
+  "bloque": 4,
+  "titulo": "Cuántos cromosomas: diploide y haploide",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 2 (bloque 4, conceptos 7 a 10, diapositivas 3 y 7). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "46 + 46",
+    "caso": "Imagina que el óvulo y el espermatozoide tuvieran 46 cromosomas cada uno, como el resto de tus células. Al unirse, el bebé tendría 92. Y su hijo, 184. Y así cada generación.",
+    "pregunta": "¿Por qué no pasa eso? ¿Qué tienen de especial los gametos?",
+    "solucion": "Porque los gametos son células haploides (n): llevan la mitad de cromosomas, 23, y resultan de una división especial, la meiosis. Todas las demás células del cuerpo (somáticas) son diploides (2n, 46). Al unirse óvulo y espermatozoide, 23 + 23 = 46: el número se mantiene generación tras generación.",
+    "claves": [
+      "Somáticas: 2n = 46",
+      "Gametos: n = 23 (meiosis)",
+      "23 + 23 = 46"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio2.c7",
+      "n": 7,
+      "titulo": "La regla general",
+      "diapositivas": "7",
+      "gancho": "¿Tiene una célula de tu piel los mismos cromosomas que una célula de tu hígado?",
+      "profe": {
+        "glosario": "<p><b>Células somáticas:</b> todas las células del cuerpo menos los gametos. <b>Gameto:</b> célula sexual (óvulo o espermatozoide).</p>",
+        "dice": "<p>En un organismo eucariota, el <strong>nº de cromosomas es el mismo en todas las células somáticas</strong>, porque son <strong>diploides</strong>, y <strong>se reduce a la mitad en los gametos</strong>, porque son <strong>haploides</strong>.</p>",
+        "entiende": "Todas tus células del cuerpo vienen de la misma célula inicial por mitosis, así que tienen los mismos cromosomas (46). Los gametos llevan <strong>la mitad</strong> para que, al unirse óvulo y espermatozoide, salgan otra vez 46.",
+        "truco": "<strong>Somáticas = 2n (46) · Gametos = n (23)</strong>: <strong>«23 + 23 = 46»</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué los gametos llevan la mitad de cromosomas?",
+        "respuesta": "Para que, al unirse óvulo y espermatozoide, salgan otra vez 46: 23 + 23 = 46."
+      },
+      "aplica": [
+        {
+          "caso": "Una célula del músculo es…",
+          "opciones": [
+            "Diploide (2n)",
+            "Haploide (n)"
+          ],
+          "buena": 0,
+          "porque": "Las somáticas son diploides."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di la regla general del número de cromosomas.",
+        "puntos": [
+          "Mismo nº en todas las células somáticas, porque son diploides",
+          "Se reduce a la mitad en los gametos, porque son haploides",
+          "Somáticas 2n = 46 · gametos n = 23"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c8",
+      "n": 8,
+      "titulo": "Diploides y haploides",
+      "diapositivas": "7",
+      "gancho": "Tienes dos copias de cada cromosoma. ¿De dónde crees que viene cada una?",
+      "profe": {
+        "glosario": "<p><b>Cromosoma homólogo:</b> cada uno de los dos cromosomas de una pareja (uno del padre y otro de la madre). <b>Meiosis:</b> división celular que produce gametos con la mitad de cromosomas.</p>",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th><strong>Células diploides (2n)</strong></th>\n<th><strong>Células haploides (n)</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Contienen <strong>2n</strong> cromosomas</td>\n<td>Poseen <strong>n</strong> cromosomas</td>\n</tr>\n<tr>\n<td>Cada cromosoma de cada pareja se llama <strong>cromosoma homólogo</strong></td>\n<td><strong>Los gametos son células haploides</strong></td>\n</tr>\n<tr>\n<td>En humanos: <strong>23 pares</strong> de cromosomas: <strong>22 autosomas y 2 cromosomas sexuales</strong> (es decir, 22 pares de autosomas + 1 par sexual = <strong>46</strong>)</td>\n<td>Resultan de un proceso de división celular → <strong>meiosis</strong></td>\n</tr>\n<tr>\n<td>Ej.: células somáticas (piel, músculo…)</td>\n<td>Ej.: óvulos y espermatozoides (<strong>23</strong> cromosomas)</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "Tienes <strong>dos copias</strong> de cada cromosoma (una de tu madre y otra de tu padre): son los <strong>homólogos</strong>. Por eso la célula es <strong>diploide</strong> (2n). El gameto solo lleva una copia de cada uno: <strong>haploide</strong> (n).",
+        "truco": "<strong>Di = dos, Haplo = sencillo</strong>. <strong>«22 + 2 = 23 pares»</strong> (22 pares de autosomas + el par sexual)."
+      },
+      "porque": {
+        "pregunta": "¿Qué son los cromosomas homólogos?",
+        "respuesta": "Los dos cromosomas de cada pareja: uno viene de tu madre y otro de tu padre. Por eso la célula es diploide (2n)."
+      },
+      "aplica": [
+        {
+          "caso": "Un óvulo tiene…",
+          "opciones": [
+            "23 cromosomas (n)",
+            "46 cromosomas (2n)"
+          ],
+          "buena": 0,
+          "porque": "Los gametos son haploides."
+        },
+        {
+          "caso": "Las células haploides resultan de…",
+          "opciones": [
+            "La meiosis",
+            "La mitosis"
+          ],
+          "buena": 0,
+          "porque": "De la meiosis."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara las células diploides y las haploides.",
+        "puntos": [
+          "Diploides: 2n; cada cromosoma de cada pareja es un homólogo",
+          "En humanos: 23 pares: 22 autosomas + 1 par sexual = 46",
+          "Haploides: n; los gametos",
+          "Resultan de la meiosis; óvulos y espermatozoides (23)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c9",
+      "n": 9,
+      "titulo": "Autosomas y cromosomas sexuales",
+      "diapositivas": "7",
+      "gancho": "De los 23 pares de cromosomas, ¿crees que todos influyen en el sexo?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Autosomas:</strong> los 22 pares que <strong>no</strong> determinan el sexo.</li>\n<li><strong>Cromosomas sexuales:</strong> el par 23 (<strong>XX</strong> mujer, <strong>XY</strong> hombre).</li>\n</ul>",
+        "entiende": "Los <strong>autosomas</strong> (1 al 22) llevan genes de todo el cuerpo; el <strong>par 23</strong> decide el sexo: <strong>XX</strong> mujer, <strong>XY</strong> hombre.",
+        "truco": "<strong>Auto = los «normales» (1-22)</strong>; <strong>sexuales = par 23 (XX/XY)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia a los autosomas de los cromosomas sexuales?",
+        "respuesta": "Los autosomas (pares 1 al 22) no determinan el sexo; el par 23, el sexual, sí: XX mujer, XY hombre."
+      },
+      "aplica": [
+        {
+          "caso": "XY.",
+          "opciones": [
+            "Hombre",
+            "Mujer"
+          ],
+          "buena": 0,
+          "porque": "XX mujer, XY hombre."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica autosomas y cromosomas sexuales.",
+        "puntos": [
+          "Autosomas: los 22 pares que no determinan el sexo",
+          "Cromosomas sexuales: el par 23",
+          "XX mujer, XY hombre"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c10",
+      "n": 10,
+      "titulo": "Mitosis y meiosis",
+      "diapositivas": "3 y 7",
+      "gancho": "Tu cuerpo hace células nuevas para crecer y también hace gametos. ¿Usa la misma división para las dos cosas?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Mitosis</strong> (diapositiva 3): 1 célula diploide → <strong>2 células hijas iguales con 46</strong> cromosomas (células somáticas).</li>\n<li><strong>Meiosis</strong> (diapositiva 7): da <strong>gametos haploides (n = 23)</strong>.</li>\n</ul>",
+        "entiende": "La <strong>mitosis</strong> hace <strong>copias</strong> para crecer y reparar (46 → 46); la <strong>meiosis</strong> hace <strong>gametos</strong> para reproducirse (46 → 23).",
+        "truco": "<strong>MiTosis = Te copio igual · MeiOsis = Óvulo y espermatozoide (la mitad)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve cada división?",
+        "respuesta": "La mitosis hace copias iguales para crecer y reparar (46 → 46); la meiosis hace gametos para reproducirse (46 → 23)."
+      },
+      "aplica": [
+        {
+          "caso": "1 célula diploide → 2 células hijas iguales con 46.",
+          "opciones": [
+            "Mitosis",
+            "Meiosis"
+          ],
+          "buena": 0,
+          "porque": "MiTosis = te copio igual."
+        },
+        {
+          "caso": "Da gametos haploides (n = 23).",
+          "opciones": [
+            "Mitosis",
+            "Meiosis"
+          ],
+          "buena": 1,
+          "porque": "MeiOsis = óvulo y espermatozoide."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara la mitosis y la meiosis.",
+        "puntos": [
+          "Mitosis: 1 diploide → 2 hijas iguales de 46 (somáticas)",
+          "Meiosis: gametos haploides (n = 23)"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "La metafase de la mitosis es cuando se ven los cromosomas (sesión «El cromosoma»).",
+          "ruta": "#/sesion/bio2-cromosoma"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab1",
+      "bloques": []
+    }
+  ]
+}

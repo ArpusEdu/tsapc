@@ -1,0 +1,243 @@
+{
+  "schema": 1,
+  "id": "bio2-muestra",
+  "unidad": "bio2",
+  "bloque": 5,
+  "titulo": "Ver cromosomas (I): de la vena al cultivo",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 2 (bloque 5, conceptos 11 a 15, diapositivas 8 a 11). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El tubo equivocado",
+    "caso": "Llega al laboratorio un tubo de sangre para hacer un cariotipo. Se siembra y se cultiva 72 h a 37 ºC, como siempre, pero casi no aparecen células en división. Al revisar el tubo, ves que llevaba EDTA como anticoagulante.",
+    "pregunta": "¿Qué ha fallado?",
+    "solucion": "El anticoagulante. Para el cariotipo, la sangre se recoge por venopunción en un tubo estéril con heparina sódica. Nunca se usa EDTA, porque es tóxico para las células, y aquí las necesitamos vivas para que se dividan. Tampoco se congela ni se calienta la muestra: se procesa lo antes posible.",
+    "claves": [
+      "Heparina sí, EDTA nunca",
+      "Las células tienen que estar vivas",
+      "No congelar ni calentar"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio2.c11",
+      "n": 11,
+      "titulo": "La muestra de partida",
+      "diapositivas": "8",
+      "gancho": "Para ver cromosomas hacen falta células con núcleo que se puedan dividir. ¿De dónde las sacarías de la forma más fácil?",
+      "profe": {
+        "glosario": "<p><b>Sangre periférica:</b> la que circula por las venas, la de un análisis normal. <b>Leucocitos:</b> glóbulos blancos.</p>",
+        "dice": "<p>Como la <strong>sangre periférica</strong> es el tejido humano <strong>más fácil de obtener</strong>, se usan las <strong>células blancas de la sangre</strong> (leucocitos) para el estudio de cromosomas.</p>",
+        "entiende": "Para ver cromosomas necesitas células <strong>con núcleo que se puedan dividir</strong>. Los glóbulos blancos de la sangre cumplen y la sangre se saca con un simple pinchazo.",
+        "truco": "<strong>«Sangre del brazo → glóbulos blancos»</strong> (los rojos no tienen núcleo)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se usan los glóbulos blancos y no los rojos?",
+        "respuesta": "Porque los glóbulos rojos no tienen núcleo, y para ver cromosomas hace falta núcleo. Los blancos sí lo tienen, y la sangre periférica es el tejido humano más fácil de obtener."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué células de la sangre se usan para estudiar cromosomas?",
+          "opciones": [
+            "Leucocitos (glóbulos blancos)",
+            "Glóbulos rojos"
+          ],
+          "buena": 0,
+          "porque": "Los rojos no tienen núcleo."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿De qué muestra se parte y por qué?",
+        "puntos": [
+          "La sangre periférica es el tejido humano más fácil de obtener",
+          "Se usan las células blancas (leucocitos)",
+          "Los glóbulos rojos no tienen núcleo"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c12",
+      "n": 12,
+      "titulo": "Los 7 pasos, en orden",
+      "diapositivas": "8 a 15",
+      "gancho": "Tienes un tubo de sangre y quieres acabar con cromosomas extendidos en un cristal. ¿Qué pasos crees que hay en medio?",
+      "profe": {
+        "glosario": "<p><b>Extensión cromosómica:</b> preparación en un portaobjetos con las células extendidas para ver sus cromosomas al microscopio.</p>",
+        "dice": "<p>1) <strong>Obtención de la muestra</strong> → 2) <strong>Siembra</strong> → 3) <strong>Cultivo celular</strong> → 4) <strong>Sacrificio del cultivo</strong> → 5) <strong>Choque hipotónico</strong> → 6) <strong>Fijación</strong> → 7) <strong>Obtención de la extensión</strong>. (Después: <strong>tinción y bandeo</strong>.)\nTruco: <strong>\"Mu-Sie-Cul-Sa-Cho-Fi-Ex\"</strong> → \"<strong>Mu</strong>cho <strong>Sie</strong>mpre <strong>Cul</strong>tivo, <strong>Sa</strong>le <strong>Cho</strong>colate <strong>Fi</strong>no <strong>Ex</strong>tra\".</p>",
+        "entiende": "Es una receta en orden: sacas la sangre, la pones en un medio con nutrientes, la dejas crecer, la paras justo en metafase, la hinchas para separar los cromosomas, la conservas y la extiendes en el cristal.",
+        "truco": "<strong>«Mu-Sie-Cul-Sa-Cho-Fi-Ex»</strong> → «<strong>Mu</strong>cho <strong>Sie</strong>mpre <strong>Cul</strong>tivo, <strong>Sa</strong>le <strong>Cho</strong>colate <strong>Fi</strong>no <strong>Ex</strong>tra»."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el cultivo va antes del sacrificio?",
+        "respuesta": "Porque primero las células tienen que vivir y dividirse en el medio; solo entonces se pueden parar en metafase. Es una receta en orden: sacas, siembras, dejas crecer, paras, hinchas, fijas y extiendes."
+      },
+      "aplica": [
+        {
+          "caso": "¿Qué va justo después del choque hipotónico?",
+          "opciones": [
+            "Fijación",
+            "Siembra"
+          ],
+          "buena": 0,
+          "porque": "«Mu-Sie-Cul-Sa-Cho-Fi-Ex»."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 7 pasos para obtener extensiones cromosómicas.",
+        "puntos": [
+          "1 Obtención de la muestra · 2 Siembra",
+          "3 Cultivo celular · 4 Sacrificio del cultivo",
+          "5 Choque hipotónico · 6 Fijación",
+          "7 Obtención de la extensión (después, tinción y bandeo)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c13",
+      "n": 13,
+      "titulo": "Paso 1: obtener la muestra",
+      "diapositivas": "9",
+      "gancho": "La sangre se coagula si no le pones nada. ¿Vale cualquier anticoagulante si luego quieres que las células se dividan?",
+      "profe": {
+        "glosario": "<p><b>Venopunción:</b> pinchar una vena para sacar sangre. <b>Heparina sódica / EDTA:</b> anticoagulantes, sustancias que impiden que la sangre se coagule.</p>",
+        "dice": "<ul>\n<li>Sangre periférica por <strong>venopunción</strong> en tubo <strong>estéril</strong> con <strong>heparina sódica</strong>.</li>\n<li>Procesar <strong>lo antes posible</strong>; <strong>nunca congelar ni mantener a altas temperaturas</strong> (mueren las células).</li>\n<li>🟥 <strong>Nunca usar EDTA como anticoagulante: es tóxico para las células.</strong></li>\n</ul>",
+        "entiende": "La <strong>heparina</strong> impide la coagulación sin dañar las células; el <strong>EDTA</strong> sí las daña (son células que necesitamos vivas para que se dividan). Por eso <strong>nunca EDTA</strong> y nunca congelar ni calentar.",
+        "truco": "<strong>«Heparina sí, EDTA nunca (es tóxico)»</strong>: el recuadro rojo de la profe."
+      },
+      "porque": {
+        "pregunta": "¿Por qué nunca se congela la muestra ni se deja a altas temperaturas?",
+        "respuesta": "Porque las células mueren, y para el cariotipo las necesitas vivas para que se dividan. Por eso, además, se procesa lo antes posible."
+      },
+      "aplica": [
+        {
+          "caso": "Anticoagulante para un cariotipo.",
+          "opciones": [
+            "Heparina sódica",
+            "EDTA"
+          ],
+          "buena": 0,
+          "porque": "Heparina sí, EDTA nunca: es tóxico para las células."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se obtiene la muestra para un cariotipo?",
+        "puntos": [
+          "Sangre periférica por venopunción",
+          "Tubo estéril con heparina sódica",
+          "Nunca EDTA: es tóxico para las células",
+          "Procesar lo antes posible; nunca congelar ni calentar"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c14",
+      "n": 14,
+      "titulo": "Paso 2: la siembra",
+      "diapositivas": "10",
+      "gancho": "Fuera del cuerpo, la sangre ya no recibe comida. ¿Qué harías para que sus células sigan vivas y se dividan?",
+      "profe": {
+        "glosario": "<p><b>Inoculación:</b> introducir la muestra en el medio. <b>Medio de cultivo:</b> líquido con los nutrientes que necesitan las células.</p>",
+        "dice": "<ul>\n<li><strong>Consiste en la inoculación de la muestra con medio de cultivo.</strong></li>\n<li>Se añade <strong>1,5-10 ml de medio</strong>.</li>\n<li>Medio: 🟨 <strong>RPMI 1640</strong> (el resaltado); también <strong>DMEM y Ham F10</strong>.</li>\n</ul>",
+        "entiende": "Sembrar = <strong>poner la sangre en un medio de cultivo</strong> (un «caldo» con nutrientes) para que las células puedan vivir y dividirse.",
+        "truco": "<strong>RPMI 1640</strong> (lo que la profe resaltó en amarillo): <strong>«R de Receta principal»</strong>. Cantidad: <strong>1,5-10 ml</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué es sembrar, aquí?",
+        "respuesta": "Inocular la muestra en un medio de cultivo, un «caldo» con nutrientes, para que las células puedan vivir y dividirse."
+      },
+      "aplica": [
+        {
+          "caso": "El medio que la profe resaltó.",
+          "opciones": [
+            "RPMI 1640",
+            "Carnoy"
+          ],
+          "buena": 0,
+          "porque": "RPMI 1640 (también DMEM y Ham F10)."
+        },
+        {
+          "caso": "¿Cuánto medio se añade?",
+          "opciones": [
+            "1,5-10 ml",
+            "100 ml"
+          ],
+          "buena": 0,
+          "porque": "Se añaden 1,5-10 ml."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la siembra con sus datos.",
+        "puntos": [
+          "Inoculación de la muestra con medio de cultivo",
+          "Se añaden 1,5-10 ml de medio",
+          "Medio: RPMI 1640 (también DMEM y Ham F10)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c15",
+      "n": 15,
+      "titulo": "Paso 3: el cultivo",
+      "diapositivas": "11",
+      "gancho": "¿A qué temperatura y durante cuánto tiempo dejarías crecer las células?",
+      "profe": {
+        "dice": "<ul>\n<li>A <strong>37 ºC y 5 % de CO2</strong> durante <strong>72 h</strong>.</li>\n<li><strong>No sobrepasar las 72 h</strong>: se empieza a <strong>agotar el medio</strong>.</li>\n<li><strong>Agitar los tubos a las 24 y a las 48 h</strong> para que las células de la <strong>fase inferior</strong> accedan a los nutrientes.</li>\n</ul>",
+        "entiende": "Las células crecen como en el cuerpo: <strong>37 ºC y 5 % de CO₂</strong>, durante <strong>72 h</strong>. Si te pasas, se acaba la comida del medio. Se agitan porque las células del fondo no llegan a los nutrientes.",
+        "truco": "<strong>«37-5-72»</strong> (temperatura, CO₂, horas) y <strong>agitar a las 24 y 48 h</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se agitan los tubos a las 24 y a las 48 horas?",
+        "respuesta": "Para que las células de la fase inferior accedan a los nutrientes: las del fondo no llegarían a ellos."
+      },
+      "aplica": [
+        {
+          "caso": "Condiciones del cultivo.",
+          "opciones": [
+            "37 ºC, 5 % CO₂, 72 h",
+            "4 ºC, 24 h"
+          ],
+          "buena": 0,
+          "porque": "«37-5-72»."
+        },
+        {
+          "caso": "¿Por qué no pasar de 72 h?",
+          "opciones": [
+            "Se empieza a agotar el medio",
+            "Se congelan las células"
+          ],
+          "buena": 0,
+          "porque": "Se empieza a agotar el medio de cultivo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el cultivo con sus datos.",
+        "puntos": [
+          "37 ºC y 5 % CO₂ durante 72 h",
+          "No sobrepasar las 72 h: se agota el medio",
+          "Agitar a las 24 y a las 48 h"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "El incubador de CO₂ a 37 ºC, como en Bio 1 («Líneas celulares y equipos»).",
+          "ruta": "#/sesion/bio1-lineas"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab1",
+      "bloques": []
+    }
+  ]
+}

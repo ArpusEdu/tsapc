@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "id": "bio2-cromosoma",
+  "unidad": "bio2",
+  "bloque": 1,
+  "titulo": "El cromosoma: qué es, cuándo se ve y sus formas",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 2 (bloques 1 a 3, conceptos 2 a 5, diapositivas 2 a 5). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Ningún cromosoma a la vista",
+    "caso": "Pones unas células al microscopio para contar sus cromosomas. Por mucho que enfoques, no ves ninguna forma de X: solo una masa de material dentro del núcleo.",
+    "pregunta": "¿Por qué no se ven los cromosomas? ¿Cuándo tendrías que mirar?",
+    "solucion": "Esas células están en interfase: el ADN está suelto, en forma de cromatina, y los cromosomas no se distinguen. Hay que mirar en metafase, cuando los cromosomas están más condensados y alineados en el centro de la célula (la placa metafásica). Es la «mejor foto»: por eso el análisis cromosómico, el cariotipo, se hace en metafase.",
+    "claves": [
+      "Interfase: cromatina suelta",
+      "Metafase: condensados y alineados",
+      "El cariotipo se hace en metafase"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio2.c2",
+      "n": 2,
+      "titulo": "Qué es un cromosoma",
+      "diapositivas": "2",
+      "gancho": "Cada célula guarda en su núcleo diminuto unos 2 metros de ADN. ¿Cómo crees que cabe?",
+      "profe": {
+        "glosario": "<p><b>Histonas:</b> proteínas alrededor de las que se enrolla el ADN. <b>Nucleosoma:</b> cada «perla» formada por ADN enrollado en histonas.</p>",
+        "img": "../bio2/repaso/img/001.jpg",
+        "imgAlt": "Del ADN al cromosoma (diap. 2)",
+        "dice": "<p><strong>Cromosoma:</strong> material genético organizado que se compone de <strong>una molécula de ADN en interacción con proteínas</strong>.\nImagen: la <strong>doble hélice de ADN</strong> se enrolla alrededor de <strong>histonas</strong> formando <strong>nucleosomas</strong> (\"collar de perlas\"); estos se pliegan más y más hasta formar el <strong>cromosoma</strong> compacto.</p>",
+        "entiende": "El ADN es un hilo larguísimo (unos 2 m por célula). Para que quepa en el núcleo se <strong>enrolla en histonas</strong> como hilo en carretes (nucleosomas) y luego se pliega una y otra vez hasta formar el cromosoma compacto.",
+        "truco": "<strong>Cromosoma = ADN + proteínas</strong>. Imagen: <strong>«hilo enrollado en carretes»</strong> (ADN en histonas = nucleosomas, «collar de perlas»)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ADN se enrolla en histonas?",
+        "respuesta": "Para que quepa en el núcleo: es un hilo larguísimo que se enrolla en histonas como hilo en carretes (nucleosomas, el «collar de perlas») y luego se pliega una y otra vez hasta formar el cromosoma compacto."
+      },
+      "aplica": [
+        {
+          "caso": "Un cromosoma es…",
+          "opciones": [
+            "ADN en interacción con proteínas",
+            "Solo proteínas"
+          ],
+          "buena": 0,
+          "porque": "Cromosoma = ADN + proteínas."
+        },
+        {
+          "caso": "El ADN enrollado en histonas forma…",
+          "opciones": [
+            "Nucleosomas",
+            "Telómeros"
+          ],
+          "buena": 0,
+          "porque": "Los nucleosomas: el «collar de perlas»."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define cromosoma y explica cómo se forma.",
+        "puntos": [
+          "Material genético organizado",
+          "Una molécula de ADN en interacción con proteínas",
+          "El ADN se enrolla en histonas: nucleosomas («collar de perlas»)",
+          "Se pliega más y más hasta formar el cromosoma compacto"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c3",
+      "n": 3,
+      "titulo": "Cuándo se ven: la metafase",
+      "diapositivas": "3",
+      "gancho": "Si quisieras hacerles una «foto» a los cromosomas para contarlos, ¿en qué momento de la vida de la célula la harías?",
+      "profe": {
+        "glosario": "<p><b>Metafase:</b> fase de la mitosis en la que los cromosomas están más condensados y alineados en el centro. <b>Cromatina:</b> el ADN «suelto» del núcleo cuando la célula no se divide. <b>Interfase:</b> periodo entre dos divisiones.</p>",
+        "img": "../bio2/repaso/img/002.jpg",
+        "imgAlt": "Mitosis con la metafase en círculo rojo (diap. 3)",
+        "dice": "<p>Imagen: un ojo + un microscopio sobre el ciclo de la mitosis, con la <strong>metafase rodeada en rojo</strong>.</p>\n<ul>\n<li>Los cromosomas <strong>se observan al microscopio en metafase</strong>, porque es cuando están <strong>más condensados</strong> y <strong>alineados en el centro</strong> de la célula (placa metafásica). Por eso el análisis cromosómico (cariotipo) se hace en metafase.</li>\n<li>Fases del esquema: <strong>interfase</strong> (cromatina duplicada, 46 cromosomas) → <strong>profase</strong> → <strong>prometafase</strong> → <strong>metafase</strong> → <strong>anafase</strong> → <strong>telofase</strong> → <strong>2 células hijas con 46 cromosomas</strong> cada una.</li>\n</ul>",
+        "entiende": "En la interfase el ADN está suelto (cromatina) y no se distinguen los cromosomas. En <strong>metafase</strong> están <strong>lo más enrollados posible y en fila</strong> en el centro: es la «foto» perfecta para contarlos y ver su forma.",
+        "truco": "<strong>«Meta-fase = la Mejor foto»</strong>. Orden de la mitosis: <strong>«PPMAT»</strong> → Profase, Prometafase, Metafase, Anafase, Telofase."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el cariotipo se hace en metafase?",
+        "respuesta": "Porque es cuando los cromosomas están más condensados y alineados en el centro de la célula: la mejor «foto» para contarlos y ver su forma."
+      },
+      "aplica": [
+        {
+          "caso": "El ADN está suelto y no se distinguen cromosomas.",
+          "opciones": [
+            "Interfase",
+            "Metafase"
+          ],
+          "buena": 0,
+          "porque": "En interfase el ADN es cromatina."
+        },
+        {
+          "caso": "Orden de la mitosis.",
+          "opciones": [
+            "Profase → prometafase → metafase → anafase → telofase",
+            "Profase → anafase → metafase → telofase"
+          ],
+          "buena": 0,
+          "porque": "«PPMAT»."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cuándo se ven los cromosomas y por qué?",
+        "puntos": [
+          "En metafase",
+          "Más condensados y alineados en el centro (placa metafásica)",
+          "Por eso el cariotipo se hace en metafase",
+          "Mitosis: profase, prometafase, metafase, anafase, telofase → 2 células de 46"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c4",
+      "n": 4,
+      "titulo": "Partes del cromosoma",
+      "diapositivas": "4",
+      "gancho": "Un cromosoma en metafase parece una X. ¿Cómo llamarías a la «cintura» y a las puntas?",
+      "profe": {
+        "glosario": "<p><b>Cromátida:</b> cada una de las dos copias idénticas que forman el cromosoma en metafase.</p>",
+        "img": "../bio2/repaso/img/003.jpg",
+        "imgAlt": "Telómeros y centrómero (diap. 4)",
+        "dice": "<ul>\n<li><strong>Centrómero:</strong> el punto de unión central (estrangulamiento). <strong>Divide el cromosoma en dos brazos.</strong></li>\n<li><strong>Brazo p = corto. Brazo q = largo.</strong> (Truco: <strong>p de \"petit\"</strong> = pequeño.)</li>\n<li><strong>Telómeros:</strong> los <strong>extremos</strong> del cromosoma.\nEn el dibujo se ven las <strong>dos cromátidas</strong> (dos líneas paralelas) unidas por el centrómero.</li>\n</ul>",
+        "entiende": "El cromosoma en metafase parece una <strong>X</strong>: las dos mitades son <strong>cromátidas</strong> iguales, el <strong>centrómero</strong> es la «cintura» y los <strong>telómeros</strong> son las puntas.",
+        "truco": "<strong>p = petit (pequeño, arriba)</strong> y <strong>q = la letra que va después (largo, abajo)</strong>. <strong>Telómero = Terminal</strong> (los extremos)."
+      },
+      "porque": {
+        "pregunta": "¿Cómo distingues el brazo p del brazo q?",
+        "respuesta": "El centrómero divide el cromosoma en dos brazos: el p es el corto (p de «petit», pequeño) y el q, el largo."
+      },
+      "aplica": [
+        {
+          "caso": "Los extremos del cromosoma.",
+          "opciones": [
+            "Telómeros",
+            "Centrómero"
+          ],
+          "buena": 0,
+          "porque": "Telómero = terminal."
+        },
+        {
+          "caso": "El brazo corto es el…",
+          "opciones": [
+            "p",
+            "q"
+          ],
+          "buena": 0,
+          "porque": "p = petit."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las partes del cromosoma.",
+        "puntos": [
+          "Centrómero: el estrangulamiento que lo divide en dos brazos",
+          "Brazo p: corto · brazo q: largo",
+          "Telómeros: los extremos",
+          "Dos cromátidas unidas por el centrómero"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio2.c5",
+      "n": 5,
+      "titulo": "Los 4 tipos de cromosoma",
+      "diapositivas": "5",
+      "gancho": "Si la «cintura» del cromosoma puede estar en distintos sitios, ¿cuántas formas distintas de cromosoma se te ocurren?",
+      "profe": {
+        "glosario": "<p><b>Índice centromérico (IC):</b> número que indica dónde está el centrómero. <b>Distal:</b> lejos del centro, hacia el extremo.</p>",
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Descripción</th>\n<th>IC (índice centromérico)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Metacéntricos</strong></td>\n<td>Centrómero en <strong>posición media</strong>; <strong>brazos iguales</strong></td>\n<td><strong>Próximo a 50</strong></td>\n</tr>\n<tr>\n<td><strong>Submetacéntricos</strong></td>\n<td>Centrómero <strong>desplazado</strong>; un brazo <strong>corto y otro largo</strong></td>\n<td><strong>25-45</strong></td>\n</tr>\n<tr>\n<td><strong>Acrocéntricos</strong></td>\n<td>Centrómero en posición <strong>muy distal</strong>; brazo corto <strong>muy pequeño</strong></td>\n<td><strong>&lt; 25</strong></td>\n</tr>\n<tr>\n<td><strong>Telocéntricos</strong></td>\n<td>Centrómero en <strong>un extremo</strong>; <strong>solo un brazo largo</strong></td>\n<td><strong>0</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>Truco del orden (del centro al extremo): <strong>\"Me Su Acro Telo\"</strong> → el IC baja: <strong>50 → 25-45 → &lt; 25 → 0</strong>.\n<em>(Aclaración, no viene en el PowerPoint: el IC = longitud del brazo corto ÷ longitud total × 100. Por eso, cuanto más al extremo está el centrómero, más bajo es el IC.)</em></p>",
+        "entiende": "Lo que cambia es <strong>dónde está la cintura</strong> (centrómero): en el medio, un poco desplazada, casi en la punta o justo en la punta. El <strong>IC</strong> lo mide: cuanto más al extremo, más pequeño es el brazo corto y <strong>más baja el IC</strong>.",
+        "truco": "<strong>«Me Su Acro Telo»</strong> con el IC bajando: <strong>50 → 25-45 → &lt; 25 → 0</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el índice centromérico baja cuanto más al extremo está el centrómero?",
+        "respuesta": "Porque mide el brazo corto respecto al total: cuanto más al extremo está el centrómero, más pequeño es el brazo corto y más bajo el IC, hasta llegar a 0 en los telocéntricos."
+      },
+      "aplica": [
+        {
+          "caso": "Centrómero en posición media, brazos iguales.",
+          "opciones": [
+            "Metacéntrico",
+            "Acrocéntrico"
+          ],
+          "buena": 0,
+          "porque": "IC próximo a 50."
+        },
+        {
+          "caso": "IC menor de 25, brazo corto muy pequeño.",
+          "opciones": [
+            "Acrocéntrico",
+            "Submetacéntrico"
+          ],
+          "buena": 0,
+          "porque": "Centrómero muy distal."
+        },
+        {
+          "caso": "IC = 0, solo un brazo.",
+          "opciones": [
+            "Telocéntrico",
+            "Metacéntrico"
+          ],
+          "buena": 0,
+          "porque": "Centrómero en un extremo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 tipos de cromosoma con su índice centromérico.",
+        "puntos": [
+          "Metacéntricos: centrómero en medio; IC ≈ 50",
+          "Submetacéntricos: desplazado; IC 25-45",
+          "Acrocéntricos: muy distal; IC < 25",
+          "Telocéntricos: en un extremo; IC 0"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio1",
+      "bloques": []
+    },
+    {
+      "unidad": "lab1",
+      "bloques": []
+    }
+  ]
+}
