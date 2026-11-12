@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "id": "bio3-enzimas",
+  "unidad": "bio3",
+  "bloque": 7,
+  "titulo": "Replicación (II): rematar, el equipo completo y los telómeros",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 7, conceptos 32 a 34, diapositivas 66 a 77). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Una hebra con remiendos",
+    "caso": "La ADN polimerasa III ya ha terminado. Pero la hebra retardada no está lista: es una fila de fragmentos de Okazaki separados y, al principio de cada uno, todavía queda un trocito de ARN.",
+    "pregunta": "¿Qué falta por hacer y qué enzimas lo hacen?",
+    "solucion": "Quitar los primers y unir los fragmentos. La ADN polimerasa I tiene actividad exonucleasa para retirar los cebadores y actividad polimerasa para sustituirlos por ADN. Después, la ligasa va uniendo los fragmentos de ADN de la hebra que se acaba de copiar.",
+    "claves": [
+      "Pol I: quita primers y pone ADN",
+      "Ligasa: une los fragmentos",
+      "Primero pol I, después ligasa"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c32",
+      "n": 32,
+      "titulo": "ADN polimerasa I y ligasa",
+      "diapositivas": "66 y 74",
+      "gancho": "Si un texto tiene palabras escritas a lápiz que hay que pasar a tinta y frases sueltas, ¿qué dos herramientas usarías?",
+      "profe": {
+        "img": "../bio3/repaso/img/d066.jpg",
+        "imgAlt": "ADN pol I y ligasa (diap. 66)",
+        "dice": "<ol start=\"3\"><li>Eliminación de primers y unión de todos los fragmentos de ADN.<ul><li><strong>ADN polimerasa I:</strong> Actividad exonucleasa para retirar los cebadores y actividad polimerasa para sustituirlos por ADN.</li><li><strong>Ligasa:</strong> tras la ADN polimerasa I, la ligasa se encargará de ir uniendo los fragmentos de ADN de la hebra que se acaba de copiar.</li></ul></li></ol>",
+        "entiende": "Al final quedan trocitos de ARN (los primers) en medio del ADN: la pol I los quita y los cambia por ADN, y la ligasa pega los trozos.",
+        "truco": "<strong>Pol I = goma y lápiz</strong> (borra primer y pone ADN) · <strong>Ligasa = pegamento</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la ADN polimerasa I tiene dos actividades?",
+        "respuesta": "Porque tiene que hacer dos cosas en el mismo sitio: retirar el cebador de ARN (exonucleasa) y rellenar el hueco con ADN (polimerasa)."
+      },
+      "aplica": [
+        {
+          "caso": "Une los fragmentos de ADN entre sí.",
+          "opciones": [
+            "Ligasa",
+            "Primasa"
+          ],
+          "buena": 0,
+          "porque": "Ligasa = pegamento."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el último paso de la elongación.",
+        "puntos": [
+          "Eliminación de primers y unión de los fragmentos",
+          "ADN polimerasa I: exonucleasa (quita primers) + polimerasa (pone ADN)",
+          "Ligasa: une los fragmentos de ADN"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c33",
+      "n": 33,
+      "titulo": "El equipo completo",
+      "diapositivas": "67 a 74",
+      "gancho": "Antes de abrir: intenta decir todas las enzimas de la replicación en el orden en que trabajan.",
+      "profe": {
+        "img": "../bio3/repaso/img/d068.jpg",
+        "imgAlt": "Burbuja de replicación con todas sus enzimas (diap. 68)",
+        "dice": "<p><strong>Enzimas que actúan en la replicación</strong></p><ul><li><strong>Helicasa:</strong> Desenrolla y separa las 2 cadenas de la doble hélice en ambos sentidos. Las nuevas hebras que van en la misma dirección que las helicasas serán hebras continuas. En cambio, las que van en dirección opuesta serán las retardadas.</li><li><strong>Topoisomerasa:</strong> La separación de las dos cadenas genera un superenrollamiento en el resto de la hélice. Esta enzima junto con la girasa se encargan de relajar esa tensión extra.</li><li><strong>Proteínas de unión a cadena sencilla (SSB):</strong> Se unen a las cadenas desenrolladas evitando que se vuelva a formar la doble hélice</li><li><strong>Primasa:</strong> sintetiza fragmentos cortos de ARN (10 nucleótidos), denominados cebadores o primers.</li><li><strong>ADN polimerasa:</strong> La ADN polimerasa reconoce los primers para iniciar la elongación. Hebra continua: requiere un único primer en el origen de replicación. Hebra retardada: requiere varios primers (un primer para cada fragmento de Okazaki).</li><li>Hay otra ADN polimerasa que elimina los primers (RNA) y los sustituye por nucleótidos de ADN. También dirección 5’--3’</li><li><strong>Ligasa:</strong> Une los fragmentos de ADN entre sí.</li></ul>",
+        "entiende": "En orden de trabajo: abrir (helicasa), sujetar (SSB), quitar tensión (topoisomerasa y girasa), poner arranque (primasa), copiar (pol III), cambiar primers (pol I) y pegar (ligasa).",
+        "truco": "«<strong>Hoy Sale Tu Primo Pol Pol Ligando</strong>»: Helicasa, SSB, Topoisomerasa, Primasa, Pol III, Pol I, Ligasa."
+      },
+      "porque": {
+        "pregunta": "¿Cómo se sabe qué hebra será continua y cuál retardada?",
+        "respuesta": "Las nuevas hebras que van en la misma dirección que las helicasas serán continuas; las que van en dirección opuesta, retardadas."
+      },
+      "aplica": [
+        {
+          "caso": "Relaja el superenrollamiento junto con la girasa.",
+          "opciones": [
+            "Topoisomerasa",
+            "Helicasa"
+          ],
+          "buena": 0,
+          "porque": "La helicasa separa las cadenas."
+        },
+        {
+          "caso": "Reconoce los primers para iniciar la elongación.",
+          "opciones": [
+            "ADN polimerasa",
+            "Ligasa"
+          ],
+          "buena": 0,
+          "porque": "ADN polimerasa."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las enzimas de la replicación y su función.",
+        "puntos": [
+          "Helicasa: separa las 2 cadenas en ambos sentidos",
+          "SSB: mantiene las cadenas separadas · topoisomerasa y girasa: relajan la tensión",
+          "Primasa: primers de ARN · ADN polimerasa: alarga 5’→3’",
+          "Otra ADN polimerasa cambia primers por ADN · ligasa: une fragmentos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c34",
+      "n": 34,
+      "titulo": "Eucariotas y telómeros",
+      "diapositivas": "76 y 77",
+      "gancho": "En el extremo de un cromosoma, el último primer se quita… ¿y con qué se rellena ese hueco si no queda ADN detrás?",
+      "profe": {
+        "img": "../bio3/repaso/img/d077.jpg",
+        "imgAlt": "Acortamiento de los telómeros (diap. 77)",
+        "dice": "<p><strong>PECULIARIDADES DE LA REPLICACIÓN EN EUCARIOTAS</strong></p><ul><li>Múltiples orígenes de replicación</li><li>Varios tipos de ADN polimerasas que se reparten las tareas.</li><li>Durante la replicación también se unen las histonas y se estructuran los nucleosomas.</li><li><strong>Reducción de telómeros</strong>.</li></ul><p><strong>Acortamiento de los telómeros</strong></p><ul><li>División celular</li><li>↓longitud de los telómeros</li><li>Final del telómero: Fragmento que se pierde porque no se puede copiar</li></ul>",
+        "entiende": "En el extremo del cromosoma, el último primer no se puede sustituir por ADN: ese trocito se pierde y el telómero se acorta un poco en cada división.",
+        "truco": "Eucariotas: <strong>muchos orígenes, muchas polimerasas, histonas y telómeros que se acortan</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se acortan los telómeros en cada división?",
+        "respuesta": "Porque el final del telómero es un fragmento que se pierde porque no se puede copiar: en cada división celular disminuye la longitud de los telómeros."
+      },
+      "aplica": [
+        {
+          "caso": "Peculiaridad de la replicación en eucariotas.",
+          "opciones": [
+            "Múltiples orígenes de replicación",
+            "Un único origen"
+          ],
+          "buena": 0,
+          "porque": "Un único origen es de procariotas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las peculiaridades de la replicación en eucariotas.",
+        "puntos": [
+          "Múltiples orígenes de replicación",
+          "Varios tipos de ADN polimerasas que se reparten las tareas",
+          "Se unen las histonas y se estructuran los nucleosomas",
+          "Reducción de telómeros: el final no se puede copiar"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Los telómeros también se tiñen con las bandas T (Bio 2).",
+          "ruta": "#/sesion/bio2-bandas"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

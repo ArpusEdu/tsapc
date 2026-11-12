@@ -1,0 +1,235 @@
+{
+  "schema": 1,
+  "id": "bio3-transcripcion",
+  "unidad": "bio3",
+  "bloque": 8,
+  "titulo": "La transcripción: del gen al ARN",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 8, conceptos 35 a 39, diapositivas 78 a 83). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La copia con una letra cambiada",
+    "caso": "Un trozo de la cadena codificante de un gen dice 5’ A T G C 3’. La ARN polimerasa lo transcribe usando la otra cadena como molde.",
+    "pregunta": "¿Cómo será el ARN que sale? ¿Por qué no es idéntico a la cadena codificante?",
+    "solucion": "El ARN será 5’ A U G C 3’. El transcrito tiene la misma información que la cadena codificante (la contraria a la molde), pero contiene uracilo (U) en lugar de timina (T). La ARN polimerasa añade ribonucleótidos en dirección 5’→3’ leyendo la cadena molde (3’→5’).",
+    "claves": [
+      "ARN = codificante con U en vez de T",
+      "Se lee la cadena molde 3’→5’",
+      "El ARN crece 5’→3’"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c35",
+      "n": 35,
+      "titulo": "Transcripción y sus fases",
+      "diapositivas": "78",
+      "gancho": "¿Crees que la célula copia todo el ADN cada vez que necesita una proteína, o solo un trozo?",
+      "profe": {
+        "img": "../bio3/repaso/img/d078.jpg",
+        "imgAlt": "Del ADN al ARN (diap. 78)",
+        "dice": "<p>La transcripción es el proceso por el cual se sintetiza una molécula de ARN utilizando como molde una cadena de ADN.</p><p>FASES DE LA TRANSCRIPCIÓN: 1. <strong>INICIACIÓN</strong> 2. <strong>ELONGACIÓN</strong> 3. <strong>TERMINACIÓN</strong></p><ul><li><strong>En procariotas:</strong> se obtienen directamente moléculas maduras de ARN.</li><li><strong>En eucariotas:</strong> se obtienen moléculas de ARN que tienen que sufrir modificaciones para madurar.</li></ul>",
+        "entiende": "Se copia solo un trozo (un gen) y en ARN. En bacterias sale listo para usar; en eucariotas hay que «retocarlo» antes.",
+        "truco": "3 fases, como en una carrera: <strong>salida, carrera, meta</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia hay entre el ARN que sale en procariotas y en eucariotas?",
+        "respuesta": "En procariotas se obtienen directamente moléculas maduras; en eucariotas, el ARN tiene que sufrir modificaciones para madurar."
+      },
+      "aplica": [
+        {
+          "caso": "Fases de la transcripción.",
+          "opciones": [
+            "Iniciación, elongación y terminación",
+            "Iniciación y elongación"
+          ],
+          "buena": 0,
+          "porque": "Tres fases (la replicación tiene dos)."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es la transcripción y cuáles son sus fases?",
+        "puntos": [
+          "Síntesis de ARN usando como molde una cadena de ADN",
+          "Iniciación, elongación y terminación",
+          "Procariotas: ARN maduro directamente",
+          "Eucariotas: el ARN tiene que madurar"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c36",
+      "n": 36,
+      "titulo": "La ARN polimerasa",
+      "diapositivas": "79",
+      "gancho": "Hay tres tipos de ARN. ¿Una sola enzima para todos o una para cada uno?",
+      "profe": {
+        "img": "../bio3/repaso/img/d079.jpg",
+        "imgAlt": "ARN polimerasa (diap. 79)",
+        "dice": "<p>La enzima principal de este proceso es la <strong>ARN polimerasa</strong>. Función: síntesis de ARN usando una cadena de ADN como molde. La ARN polimerasa produce la copia de ARN en <strong>dirección 5’ → 3’</strong>.</p><ul><li><strong>Células procariotas:</strong> Un único tipo de ARN polimerasa</li><li><strong>Células eucariotas:</strong> 3 tipos de ARN polimerasas:<ul><li><strong>ARN polimerasa I</strong>: Síntesis de la mayor parte del ARNr.</li><li><strong>ARN polimerasa II</strong>: Síntesis de ARNm.</li><li><strong>ARN polimerasa III</strong>: Síntesis del ARNt y una parte del ARNr.</li></ul></li></ul>",
+        "entiende": "En bacterias, una sola polimerasa lo hace todo; en eucariotas hay tres especialistas, una para cada tipo de ARN.",
+        "truco": "«<strong>R-M-T</strong>» por orden: I → ARN<strong>r</strong>, II → ARN<strong>m</strong>, III → ARN<strong>t</strong> (y algo de r)."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia hay entre procariotas y eucariotas en las ARN polimerasas?",
+        "respuesta": "Las procariotas tienen un único tipo; las eucariotas, tres, cada una especializada."
+      },
+      "aplica": [
+        {
+          "caso": "Sintetiza el ARNm en eucariotas.",
+          "opciones": [
+            "ARN polimerasa II",
+            "ARN polimerasa I"
+          ],
+          "buena": 0,
+          "porque": "I: ARNr; II: ARNm; III: ARNt y parte del ARNr."
+        },
+        {
+          "caso": "Sintetiza el ARNt.",
+          "opciones": [
+            "ARN polimerasa III",
+            "ARN polimerasa II"
+          ],
+          "buena": 0,
+          "porque": "III."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la ARN polimerasa y sus tipos.",
+        "puntos": [
+          "Sintetiza ARN con una cadena de ADN como molde, 5’→3’",
+          "Procariotas: un único tipo",
+          "Eucariotas: I (mayor parte del ARNr), II (ARNm), III (ARNt y parte del ARNr)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c37",
+      "n": 37,
+      "titulo": "Iniciación: el promotor",
+      "diapositivas": "80",
+      "gancho": "El ADN tiene miles de genes seguidos. ¿Cómo sabe la ARN polimerasa dónde empieza uno?",
+      "profe": {
+        "img": "../bio3/repaso/img/d080.jpg",
+        "imgAlt": "El promotor (diap. 80)",
+        "dice": "<p><strong>Fase de iniciación:</strong></p><ol><li>La <strong>ARN polimerasa</strong> reconoce una secuencia de bases específica llamada <strong>promotor</strong>, que se encuentra al inicio de un gen → <strong>Cada gen tiene su propio promotor</strong>.</li><li>Después de unirse al promotor, las dos hebras de ADN se separan y comienza la síntesis de ARN.</li></ol>",
+        "entiende": "El promotor es el cartel de «empieza aquí»: la polimerasa lo reconoce, abre el ADN y se pone a copiar.",
+        "truco": "<strong>Promotor = Puerta de entrada</strong> del gen."
+      },
+      "porque": {
+        "pregunta": "¿Por qué cada gen necesita su propio promotor?",
+        "respuesta": "Porque el promotor es la secuencia específica al inicio de cada gen que la ARN polimerasa reconoce para empezar a copiar justo ese gen."
+      },
+      "aplica": [
+        {
+          "caso": "Secuencia que reconoce la ARN polimerasa al inicio del gen.",
+          "opciones": [
+            "Promotor",
+            "Terminador"
+          ],
+          "buena": 0,
+          "porque": "Promotor = salida."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué ocurre en la iniciación?",
+        "puntos": [
+          "La ARN polimerasa reconoce el promotor, al inicio de un gen",
+          "Cada gen tiene su propio promotor",
+          "Se separan las dos hebras y comienza la síntesis de ARN"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c38",
+      "n": 38,
+      "titulo": "Elongación: molde y codificante",
+      "diapositivas": "81 y 82",
+      "gancho": "Si el ARN es complementario de la cadena molde, ¿a qué otra cadena se parecerá?",
+      "profe": {
+        "img": "../bio3/repaso/img/d081.jpg",
+        "imgAlt": "Cadena molde y codificante (diap. 81)",
+        "dice": "<p><strong>Fase de elongación:</strong></p><ol start=\"3\"><li>La ARN polimerasa añade <strong>ribonucleótidos</strong> en dirección <strong>5’ → 3’</strong>, tomando una hebra de ADN como molde (<strong>cadena molde 3’ → 5’</strong>).</li></ol><p>El transcrito de ARN tiene la misma información que la cadena de ADN contraria a la molde (<strong>cadena codificante</strong>) en el gen, pero contiene la base <strong>uracilo (U) en lugar de timina (T)</strong>.</p><p>En la REPLICACIÓN, la unión de nucleótidos es similar.</p>",
+        "entiende": "El ARN es complementario de la molde, así que acaba siendo una copia de la codificante… con U donde había T.",
+        "truco": "<strong>ARN = codificante con U</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ARN se parece a la cadena codificante?",
+        "respuesta": "Porque es complementario de la molde, y la codificante también lo es: así que ARN y codificante tienen la misma información, con U en lugar de T."
+      },
+      "aplica": [
+        {
+          "caso": "Cadena de ADN que se lee.",
+          "opciones": [
+            "Molde (3’→5’)",
+            "Codificante"
+          ],
+          "buena": 0,
+          "porque": "Molde."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la elongación de la transcripción.",
+        "puntos": [
+          "La ARN polimerasa añade ribonucleótidos 5’→3’",
+          "Lee la cadena molde (3’→5’)",
+          "El ARN = misma información que la cadena codificante, con U en vez de T",
+          "La unión de nucleótidos es similar a la replicación"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c39",
+      "n": 39,
+      "titulo": "Terminación",
+      "diapositivas": "83",
+      "gancho": "En una bacteria no hay núcleo. ¿Tendrá que esperar el ARNm a terminar para empezar a fabricar la proteína?",
+      "profe": {
+        "img": "../bio3/repaso/img/d083.jpg",
+        "imgAlt": "Transcripción y traducción a la vez en procariotas (diap. 83)",
+        "dice": "<p><strong>Fase de terminación:</strong></p><ol start=\"4\"><li>La síntesis de ARN cuando la ARN polimerasa alcanza una secuencia específica llamada <strong>terminador</strong>.</li><li>En este punto se separa el ARN de la cadena de ADN y de la ARN polimerasa.</li><li>Después de la terminación, la transcripción ha concluido.</li></ol><p>Un transcrito de ARN que está listo para su uso en la traducción → <strong>ARNm</strong>.</p><p>En <strong>procariotas</strong>, los transcritos de ARNm están listos para su traducción inmediatamente después de la transcripción. Además, al encontrarse en el citoplasma (no hay núcleo), los ribosomas pueden empezar directamente a sintetizar las proteínas.</p>",
+        "entiende": "En bacterias no hay núcleo: mientras se va copiando el ARN, los ribosomas ya lo están leyendo.",
+        "truco": "<strong>Promotor = salida · Terminador = meta</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué en procariotas la traducción puede empezar enseguida?",
+        "respuesta": "Porque el ARNm está listo inmediatamente después de la transcripción y, al estar en el citoplasma (no hay núcleo), los ribosomas pueden empezar directamente."
+      },
+      "aplica": [
+        {
+          "caso": "Al alcanzar el terminador…",
+          "opciones": [
+            "Se separan el ARN, el ADN y la ARN polimerasa",
+            "Empieza la replicación"
+          ],
+          "buena": 0,
+          "porque": "Fin de la transcripción."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué ocurre en la terminación?",
+        "puntos": [
+          "La ARN polimerasa alcanza el terminador",
+          "Se separa el ARN de la cadena de ADN y de la polimerasa",
+          "El transcrito listo para traducir: ARNm",
+          "Procariotas: traducción inmediata en el citoplasma"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

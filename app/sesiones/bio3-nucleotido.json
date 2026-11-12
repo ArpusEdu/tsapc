@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "id": "bio3-nucleotido",
+  "unidad": "bio3",
+  "bloque": 1,
+  "titulo": "Las piezas: ADN, ARN y el nucleótido",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 1, conceptos 1 a 5, diapositivas 6 a 19). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El tubo sin etiqueta",
+    "caso": "En el laboratorio aparece un tubo con un ácido nucleico y sin etiqueta. El análisis dice que su azúcar es la ribosa y que, entre sus bases, hay uracilo y no hay timina.",
+    "pregunta": "¿Es ADN o ARN? ¿Qué dos pistas te lo dicen?",
+    "solucion": "Es ARN. Las dos pistas: la pentosa es ribosa (el ADN lleva desoxirribosa) y tiene uracilo (U), una base que solo está en el ARN; el ADN lleva timina (T) en su lugar. Adenina, guanina y citosina no sirven para distinguirlos, porque están en los dos.",
+    "claves": [
+      "Ribosa → ARN · desoxirribosa → ADN",
+      "U solo en ARN · T solo en ADN",
+      "A, G y C: en los dos"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c1",
+      "n": 1,
+      "titulo": "Ácidos nucleicos: ADN y ARN",
+      "diapositivas": "6 y 7",
+      "gancho": "Si el ADN es un libro de instrucciones, ¿para qué haría falta otra molécula distinta, el ARN?",
+      "profe": {
+        "img": "../bio3/repaso/img/d007.jpg",
+        "imgAlt": "Funciones generales del ADN y del ARN (diap. 7)",
+        "dice": "<p>Los ácidos nucleicos son <strong>macromoléculas</strong> encargadas de <strong>almacenar, transmitir y expresar</strong> la información genética de los seres vivos.</p><p>Existen <strong>2 tipos</strong> de ácidos nucleicos:</p><ul><li><strong>ADN</strong> - Ácido Desoxirribonucleico</li><li><strong>ARN</strong></li></ul><ul><li><strong>ADN:</strong> almacenar y transmitir la información genética a la descendencia (Mitosis y Meiosis) → <strong>REPLICACIÓN</strong>.</li><li><strong>ARN:</strong> se encarga de expresar la información almacenada en el ADN para sintetizar <strong>PROTEÍNAS</strong> → <strong>TRANSCRIPCIÓN</strong>, <strong>TRADUCCIÓN</strong>.</li></ul>",
+        "entiende": "El ADN es el libro de recetas que se guarda y se copia para los hijos. El ARN saca la receta del libro para fabricar la proteína.",
+        "truco": "Las 3 funciones: <strong>A-T-E</strong>: Almacenar, Transmitir (ADN), Expresar (ARN)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ADN se asocia a la replicación y el ARN a la transcripción y la traducción?",
+        "respuesta": "Porque el ADN almacena y transmite la información a la descendencia (para eso se copia: replicación), mientras que el ARN expresa esa información para sintetizar proteínas (transcripción y traducción)."
+      },
+      "aplica": [
+        {
+          "caso": "Transmitir la información genética a la descendencia.",
+          "opciones": [
+            "ADN",
+            "ARN"
+          ],
+          "buena": 0,
+          "porque": "Almacenar y transmitir: ADN."
+        },
+        {
+          "caso": "Expresar la información para sintetizar proteínas.",
+          "opciones": [
+            "ARN",
+            "ADN"
+          ],
+          "buena": 0,
+          "porque": "Expresar: ARN."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son los ácidos nucleicos y qué hace cada tipo?",
+        "puntos": [
+          "Macromoléculas que almacenan, transmiten y expresan la información genética",
+          "2 tipos: ADN y ARN",
+          "ADN: almacenar y transmitir (replicación)",
+          "ARN: expresar para sintetizar proteínas (transcripción y traducción)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c2",
+      "n": 2,
+      "titulo": "El nucleótido",
+      "diapositivas": "8 y 13",
+      "gancho": "Una cadena larguísima tiene que estar hecha de piezas que se repiten. ¿Qué partes crees que tiene cada pieza?",
+      "profe": {
+        "img": "../bio3/repaso/img/d013.jpg",
+        "imgAlt": "Cómo se forma un nucleótido (diap. 13)",
+        "dice": "<p>Los ácidos nucleicos están formados por largas cadenas de <strong>NUCLEÓTIDOS</strong>.</p><p>Estructura química de los nucleótidos:</p><ul><li><strong>Grupo fosfato</strong></li><li><strong>Pentosa (azúcar)</strong></li><li><strong>Bases nitrogenadas</strong></li></ul><ul><li>BASE NITROGENADA (Adenina) + PENTOSA (Ribosa) → Enlace N-glucosídico → <strong>NUCLEÓSIDO</strong> (Adenosina)</li><li>+ ION FOSFATO → Enlace éster → <strong>NUCLEÓTIDO</strong> (Adenosín 5 monofosfato)</li></ul>",
+        "entiende": "Primero se unen la base y el azúcar (nucleósido); luego se le engancha el fosfato y ya es un nucleótido, un eslabón completo de la cadena.",
+        "truco": "<strong>Nucleósi-D-o</strong> = sin fosfato (le falta algo); <strong>nucleóti-T-o</strong> = con todo."
+      },
+      "porque": {
+        "pregunta": "¿Qué le falta a un nucleósido para ser un nucleótido?",
+        "respuesta": "El grupo fosfato. Base + pentosa (unidas por el enlace N-glucosídico) es un nucleósido; al añadir el fosfato (enlace éster) ya es un nucleótido."
+      },
+      "aplica": [
+        {
+          "caso": "Adenina + ribosa, sin fosfato.",
+          "opciones": [
+            "Nucleósido (adenosina)",
+            "Nucleótido"
+          ],
+          "buena": 0,
+          "porque": "Sin fosfato es nucleósido."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe el nucleótido y cómo se forma.",
+        "puntos": [
+          "Unidad estructural de los ácidos nucleicos",
+          "Grupo fosfato + pentosa + base nitrogenada",
+          "Base + pentosa (enlace N-glucosídico) = nucleósido",
+          "+ fosfato (enlace éster) = nucleótido"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c3",
+      "n": 3,
+      "titulo": "El grupo fosfato",
+      "diapositivas": "9",
+      "gancho": "Se llaman ácidos nucleicos. ¿Qué parte del nucleótido crees que les da lo de «ácido»?",
+      "profe": {
+        "dice": "<p><strong>Grupo fosfato</strong></p><ul><li>1 átomo de fósforo (centro)</li><li>4 átomos de oxígeno (vértices)</li></ul>",
+        "entiende": "Es la pieza que da carácter ácido a los ácidos nucleicos.",
+        "truco": "<strong>1 P en el centro, 4 O en las esquinas</strong>: como una mesa con 4 patas."
+      },
+      "porque": {
+        "pregunta": "¿Qué relación tiene el fosfato con que sean «ácidos»?",
+        "respuesta": "Los ácidos nucleicos son fuertemente ácidos en solución acuosa precisamente por los grupos fosfato (lo verás en las propiedades fisicoquímicas)."
+      },
+      "aplica": [
+        {
+          "caso": "Átomos del grupo fosfato.",
+          "opciones": [
+            "1 fósforo y 4 oxígenos",
+            "4 fósforos y 1 oxígeno"
+          ],
+          "buena": 0,
+          "porque": "P en el centro, O en los vértices."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo es el grupo fosfato?",
+        "puntos": [
+          "1 átomo de fósforo en el centro",
+          "4 átomos de oxígeno en los vértices"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c4",
+      "n": 4,
+      "titulo": "La pentosa",
+      "diapositivas": "10, 18 y 19",
+      "gancho": "ADN significa «ácido desoxirribonucleico». ¿Qué pista te da el nombre sobre su azúcar?",
+      "profe": {
+        "dice": "<p><strong>Pentosa (azúcar):</strong></p><ul><li><strong>Ribosa</strong> → <strong>ARN</strong></li><li><strong>Desoxirribosa</strong> → <strong>ADN</strong></li></ul>",
+        "entiende": "El nombre del ácido nucleico te dice su azúcar: ácido <strong>desoxirribo</strong>nucleico lleva desoxirribosa; ácido <strong>ribo</strong>nucleico lleva ribosa.",
+        "truco": "El azúcar está escondido en el nombre: A<strong>D</strong>N = <strong>D</strong>esoxirribosa."
+      },
+      "porque": {
+        "pregunta": "¿Por qué sirve el nombre para no confundirse?",
+        "respuesta": "Porque el azúcar está en el nombre: desoxirribo-nucleico lleva desoxirribosa; ribo-nucleico lleva ribosa."
+      },
+      "aplica": [
+        {
+          "caso": "Pentosa del ARN.",
+          "opciones": [
+            "Ribosa",
+            "Desoxirribosa"
+          ],
+          "buena": 0,
+          "porque": "ARN = ribosa."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las dos pentosas y en qué ácido nucleico está cada una.",
+        "puntos": [
+          "Ribosa → ARN",
+          "Desoxirribosa → ADN"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c5",
+      "n": 5,
+      "titulo": "Las 5 bases nitrogenadas",
+      "diapositivas": "11",
+      "gancho": "Hay 5 bases, pero cada ácido nucleico solo usa 4. ¿Cuál crees que cambia de uno a otro?",
+      "profe": {
+        "img": "../bio3/repaso/img/d011.jpg",
+        "imgAlt": "Bases púricas y pirimidínicas (diap. 11)",
+        "dice": "<p><strong>Bases nitrogenadas (5 tipos):</strong></p><div class=\"tw\"><table><thead><tr><th>Tipos</th><th>Base nitrogenada</th><th>Ácido Nucleico</th></tr></thead><tbody><tr><td><strong>PÚRICAS</strong></td><td>ADENINA, GUANINA</td><td>ADN y ARN</td></tr><tr><td><strong>PIRIMIDÍNICAS</strong></td><td>CITOSINA</td><td>ADN y ARN</td></tr><tr><td><strong>PIRIMIDÍNICAS</strong></td><td>TIMINA</td><td>ADN</td></tr><tr><td><strong>PIRIMIDÍNICAS</strong></td><td>URACILO</td><td>ARN</td></tr></tbody></table></div>",
+        "entiende": "A, G y C están en los dos. La única que cambia: el ADN usa <strong>T</strong> (timina) y el ARN usa <strong>U</strong> (uracilo).",
+        "truco": "«<strong>Pura AGua</strong>»: púricas = A y G. Todas las demás (C, T, U) son pirimidínicas."
+      },
+      "porque": {
+        "pregunta": "¿Qué bases sirven para diferenciar ADN de ARN y cuáles no?",
+        "respuesta": "La timina (solo ADN) y el uracilo (solo ARN) los diferencian; adenina, guanina y citosina están en los dos."
+      },
+      "aplica": [
+        {
+          "caso": "Base púrica.",
+          "opciones": [
+            "Guanina",
+            "Citosina"
+          ],
+          "buena": 0,
+          "porque": "Púricas: A y G («Pura AGua»)."
+        },
+        {
+          "caso": "Pirimidínica que solo está en el ADN.",
+          "opciones": [
+            "Timina",
+            "Uracilo"
+          ],
+          "buena": 0,
+          "porque": "Timina: ADN; uracilo: ARN."
+        }
+      ],
+      "recuerda": {
+        "pide": "Clasifica las 5 bases y di dónde está cada una.",
+        "puntos": [
+          "Púricas: adenina y guanina (ADN y ARN)",
+          "Pirimidínicas: citosina (ADN y ARN)",
+          "Timina: solo ADN",
+          "Uracilo: solo ARN"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

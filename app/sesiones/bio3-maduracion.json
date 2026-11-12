@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "id": "bio3-maduracion",
+  "unidad": "bio3",
+  "bloque": 9,
+  "titulo": "La maduración del ARN",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 9, conceptos 40 a 43, diapositivas 84 a 88). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Un gen más largo que su mensaje",
+    "caso": "Comparas un gen humano con su ARNm maduro y el ARNm es bastante más corto: faltan trozos enteros del gen. Además, ese mismo gen da lugar a más de una proteína distinta.",
+    "pregunta": "¿Qué ha pasado con los trozos que faltan? ¿Cómo puede un gen dar varias proteínas?",
+    "solucion": "Los genes tienen exones (con información para la proteína) e intrones (sin ella). En la maduración, el splicing elimina los intrones y empalma los exones, con el spliceosoma. A veces se eliminan también algunos exones (splicing alternativo): así, la misma secuencia de ADN forma diferentes ARNm y, por tanto, distintas proteínas.",
+    "claves": [
+      "Intrones fuera, exones empalmados",
+      "Spliceosoma",
+      "Splicing alternativo: 1 gen → varias proteínas"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c40",
+      "n": 40,
+      "titulo": "Por qué madura el ARN",
+      "diapositivas": "84",
+      "gancho": "El ARN de una bacteria sale listo. ¿Qué problemas crees que tiene el de una célula con núcleo?",
+      "profe": {
+        "dice": "<p>En <strong>eucariotas</strong>, el ARN requiere modificaciones para dar lugar a las moléculas maduras de ARN (ARNm, ARNt y ARNr) → Este proceso se conoce como <strong>MADURACIÓN DEL ARN</strong>.</p><p>¿Por qué el ARN de eucariotas requiere modificaciones?</p><ol><li>Porque el ARN, al ser monocatenario, <strong>se degrada con mucha facilidad</strong>. Por ello, se modifica para evitar su degradación durante la transcripción.</li><li>Porque el ARN se sintetiza en el núcleo y para <strong>salir al citoplasma</strong> necesita modificar un poco su estructura para poder atravesar la membrana del núcleo.</li><li>Porque los genes (ADN) tienen información relacionada con la síntesis de proteínas (a estas regiones se les llaman <strong>exones</strong>), pero también tienen regiones que no tienen este tipo de información (<strong>intrones</strong>). Por tanto, cuando se produce el ARNm hay que eliminar estas últimas regiones.</li></ol>",
+        "entiende": "Tres problemas, tres soluciones: se rompe fácil (protegerlo), tiene que salir del núcleo (adaptarlo) y lleva trozos que sobran (cortarlos).",
+        "truco": "<strong>Exón = sale</strong> (se queda en el ARN maduro); <strong>intrón = se queda dentro</strong> (se elimina)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ARN eucariota se degrada con facilidad?",
+        "respuesta": "Porque es monocatenario; por eso se modifica para evitar su degradación."
+      },
+      "aplica": [
+        {
+          "caso": "Regiones del gen sin información para la proteína.",
+          "opciones": [
+            "Intrones",
+            "Exones"
+          ],
+          "buena": 0,
+          "porque": "Los intrones se eliminan."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 3 motivos de la maduración del ARN.",
+        "puntos": [
+          "En eucariotas, el ARN se modifica para dar las moléculas maduras",
+          "1. Al ser monocatenario se degrada con facilidad",
+          "2. Tiene que salir del núcleo al citoplasma",
+          "3. Hay que eliminar los intrones"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c41",
+      "n": 41,
+      "titulo": "CAP-5’ y cola poliA",
+      "diapositivas": "85",
+      "gancho": "Si quisieras proteger los dos extremos de una cuerda para que no se deshilache, ¿qué pondrías en cada punta?",
+      "profe": {
+        "img": "../bio3/repaso/img/d085.jpg",
+        "imgAlt": "Cap 5’ y cola poli-A (diap. 85)",
+        "dice": "<p><strong>I. Adición de un CAP-5’ al inicio de la transcripción.</strong> Se añade una caperuza de metilguanosina en el extremo 5’ (al inicio del transcrito) → El cap 5' es un nucleótido modificado de guanina (G) que se añade al primer nucleótido del transcrito durante la transcripción. El cap 5':</p><ol><li>Evita que el ARN se degrade durante la elongación.</li><li>Ayuda al ribosoma a unirse al ARNm y a comenzar a leerlo para hacer una proteína.</li></ol><p><strong>II. Adición de una cola de poliadeninas (poliA) al final de la transcripción.</strong> Se añade una cola de adeninas (cola poliA) en el extremo 3’ (al final del transcrito) → entre <strong>100-200 adeninas</strong>. La cola poliA:</p><ol><li>Permite al ARN maduro salir al citoplasma.</li></ol>",
+        "entiende": "Un «gorro» al principio (protege y ayuda al ribosoma a encontrarlo) y una «cola» al final (le deja salir del núcleo).",
+        "truco": "<strong>Gorro en la cabeza (5’), cola atrás (3’)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué hace cada extremo?",
+        "respuesta": "El cap 5’ evita que el ARN se degrade y ayuda al ribosoma a unirse y empezar a leer; la cola poliA permite al ARN maduro salir al citoplasma."
+      },
+      "aplica": [
+        {
+          "caso": "Nucleótido modificado de guanina en el extremo 5’.",
+          "opciones": [
+            "CAP-5’",
+            "Cola poliA"
+          ],
+          "buena": 0,
+          "porque": "Caperuza de metilguanosina."
+        },
+        {
+          "caso": "Adeninas de la cola poliA.",
+          "opciones": [
+            "Entre 100 y 200",
+            "Entre 10 y 20"
+          ],
+          "buena": 0,
+          "porque": "100-200."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el CAP-5’ y la cola poliA.",
+        "puntos": [
+          "CAP-5’: caperuza de metilguanosina al inicio (5’)",
+          "Evita la degradación y ayuda al ribosoma a unirse al ARNm",
+          "Cola poliA: 100-200 adeninas al final (3’)",
+          "Permite al ARN maduro salir al citoplasma"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c42",
+      "n": 42,
+      "titulo": "Splicing",
+      "diapositivas": "86 y 87",
+      "gancho": "Tienes una película con escenas que sobran en medio. ¿Cómo la dejarías solo con las buenas?",
+      "profe": {
+        "img": "../bio3/repaso/img/d087.jpg",
+        "imgAlt": "Splicing (diap. 87)",
+        "dice": "<p><strong>III. Eliminación de los intrones (splicing).</strong> Se da mediante un proceso de corte y empalme conocido como <strong>splicing</strong>. En este proceso interviene un complejo de proteínas denominado <strong>spliceosoma</strong>.</p><ol><li>Las proteínas se unen en el extremo de los intrones.</li><li>El intrón forma un bucle.</li><li>El spliceosoma corta en la base del bucle y empalma los exones.</li></ol>",
+        "entiende": "Es como montar una película: se cortan las escenas que sobran (intrones) y se pegan las buenas (exones).",
+        "truco": "<strong>Unir, Bucle, Cortar y empalmar</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el intrón forma un bucle?",
+        "respuesta": "Porque las proteínas se unen en los extremos del intrón y lo acercan, formando un bucle; el spliceosoma corta en la base del bucle y empalma los exones."
+      },
+      "aplica": [
+        {
+          "caso": "Complejo de proteínas que hace el splicing.",
+          "opciones": [
+            "Spliceosoma",
+            "Ribosoma"
+          ],
+          "buena": 0,
+          "porque": "Spliceosoma."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el splicing.",
+        "puntos": [
+          "Eliminación de los intrones por corte y empalme",
+          "Interviene el spliceosoma",
+          "1. Las proteínas se unen en el extremo de los intrones · 2. El intrón forma un bucle",
+          "3. Se corta en la base del bucle y se empalman los exones"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c43",
+      "n": 43,
+      "titulo": "Splicing alternativo",
+      "diapositivas": "88",
+      "gancho": "¿Crees que tenemos un gen distinto para cada una de nuestras proteínas?",
+      "profe": {
+        "img": "../bio3/repaso/img/d088.jpg",
+        "imgAlt": "Splicing alternativo (diap. 88)",
+        "dice": "<p>Cuando ocurre el splicing del ARNm, aunque se tienen que eliminar todos los intrones y juntarse los exones, <strong>puede ocurrir que se eliminen también algunos exones</strong>.</p><p>Eso hace que desde la misma secuencia de ADN se puedan formar diferentes ARNm-s y por ende, <strong>distintas proteínas</strong>.</p><p>→ Esto permite codificar un mayor número de proteínas que los genes que tenemos en nuestro ADN.</p>",
+        "entiende": "Con las mismas escenas puedes montar películas distintas según cuáles quites: un gen, varias proteínas.",
+        "truco": "<strong>1 gen → varias proteínas</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué consecuencia tiene el splicing alternativo?",
+        "respuesta": "Permite codificar un mayor número de proteínas que los genes que tenemos en nuestro ADN."
+      },
+      "aplica": [
+        {
+          "caso": "En el splicing alternativo se eliminan…",
+          "opciones": [
+            "Los intrones y también algunos exones",
+            "Solo los exones"
+          ],
+          "buena": 0,
+          "porque": "Además de los intrones, algunos exones."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es el splicing alternativo?",
+        "puntos": [
+          "Además de los intrones, se eliminan algunos exones",
+          "La misma secuencia de ADN forma diferentes ARNm y distintas proteínas",
+          "Más proteínas que genes"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

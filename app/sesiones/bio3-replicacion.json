@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "id": "bio3-replicacion",
+  "unidad": "bio3",
+  "bloque": 7,
+  "titulo": "Replicación (I): abrir, sujetar, arrancar y copiar",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 7, conceptos 28 a 31, diapositivas 59 a 73). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La copiadora que no sabe empezar",
+    "caso": "La ADN polimerasa es la enzima que añade nucleótidos a la cadena nueva. Pero tiene una limitación: solo sabe añadir nucleótidos al extremo de una cadena que ya existe.",
+    "pregunta": "Entonces, ¿cómo empieza una cadena nueva desde cero?",
+    "solucion": "Gracias a la primasa, una enzima con función ARN polimerasa que sintetiza fragmentos cortos de ARN (10 nucleótidos), los cebadores o primers. Son complementarios de zonas concretas del ADN y sirven para que la ADN polimerasa empiece la nueva cadena. La hebra conductora necesita un único primer; la retardada, uno por cada fragmento de Okazaki.",
+    "claves": [
+      "Primasa → primers de ARN",
+      "10 nucleótidos",
+      "Conductora: 1 primer · retardada: varios"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c28",
+      "n": 28,
+      "titulo": "Iniciación: helicasas y burbuja",
+      "diapositivas": "59 a 62 y 68",
+      "gancho": "Para copiar las dos cadenas primero hay que separarlas. ¿Qué crees que hay que romper?",
+      "profe": {
+        "dice": "<p>La replicación se divide en 2 fases: 1. <strong>INICIACIÓN</strong> 2. <strong>ELONGACIÓN</strong>.</p><p><strong>Fase de iniciación:</strong> formación de las horquillas de replicación</p><ol><li>La replicación del ADN empieza con una secuencia de nucleótidos, al cual se denomina “<strong>origen de replicación</strong>”.</li><li>Unas <strong>proteínas específicas</strong> reconocen el origen de replicación y se unen a él. La unión de estas proteínas hace que se activen las helicasas.</li><li>Las <strong>helicasas</strong> rompen los puentes de hidrógeno que hay entre las bases nitrogenadas de las dos cadenas complementarias del ADN y forman la <strong>burbuja de replicación</strong>.</li><li>Las dos helicasas empiezan a realizar su función a partir del punto de origen de replicación. Una en un sentido y la otra en el otro sentido. De esta manera la replicación del ADN es <strong>bidireccional</strong>.</li></ol>",
+        "entiende": "Unas proteínas marcan el punto de salida; las helicasas abren la cremallera hacia los dos lados y forman una burbuja.",
+        "truco": "<strong>Helicasa = abre la hélice</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la replicación es bidireccional?",
+        "respuesta": "Porque las dos helicasas empiezan en el origen de replicación y trabajan una en un sentido y otra en el otro."
+      },
+      "aplica": [
+        {
+          "caso": "Rompe los puentes de H y forma la burbuja.",
+          "opciones": [
+            "Helicasa",
+            "Ligasa"
+          ],
+          "buena": 0,
+          "porque": "Helicasa = abre la hélice."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los 4 primeros pasos de la iniciación.",
+        "puntos": [
+          "Empieza en una secuencia: el origen de replicación",
+          "Proteínas específicas lo reconocen y activan las helicasas",
+          "Las helicasas rompen los puentes de H: burbuja de replicación",
+          "Dos helicasas en sentidos opuestos: bidireccional"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c29",
+      "n": 29,
+      "titulo": "Iniciación: SSBP, girasa y topoisomerasa",
+      "diapositivas": "63 y 69",
+      "gancho": "Si separas las dos hebras de una cuerda trenzada, ¿qué le pasa al trozo que aún no has separado?",
+      "profe": {
+        "img": "../bio3/repaso/img/d063.jpg",
+        "imgAlt": "SSBP, girasa y topoisomerasa (diap. 63)",
+        "dice": "<ol start=\"5\"><li>Para que esta estructura se mantenga, las <strong>proteínas de unión a cadena sencilla (SSBP)</strong> se unen a las cadenas desenrolladas.</li><li>Este desenrollamiento provoca tensión en las zonas próximas a la burbuja. Por ello, la <strong>girasa</strong> y la <strong>topoisomerasa</strong> actúan relajando esa tensión.</li></ol><p>Proteínas de unión a cadena sencilla (SSB): se unen a las cadenas desenrolladas evitando que se vuelva a formar la doble hélice.</p>",
+        "entiende": "Las SSBP son pinzas que impiden que la cremallera se vuelva a cerrar; la girasa y la topoisomerasa quitan las vueltas de más que se crean delante, como cuando desenredas un cable.",
+        "truco": "<strong>SSB = Sujeta Separadas</strong>; <strong>topo y girasa = quitan tensión</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hacen falta la girasa y la topoisomerasa?",
+        "respuesta": "Porque el desenrollamiento provoca tensión (superenrollamiento) en las zonas próximas a la burbuja, y ellas la relajan."
+      },
+      "aplica": [
+        {
+          "caso": "Evita que se vuelva a formar la doble hélice.",
+          "opciones": [
+            "SSBP",
+            "Topoisomerasa"
+          ],
+          "buena": 0,
+          "porque": "Proteínas de unión a cadena sencilla."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué hacen las SSBP, la girasa y la topoisomerasa?",
+        "puntos": [
+          "SSBP: se unen a las cadenas desenrolladas y evitan que se vuelvan a unir",
+          "El desenrollamiento genera tensión cerca de la burbuja",
+          "Girasa y topoisomerasa relajan esa tensión"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c30",
+      "n": 30,
+      "titulo": "Elongación: primasa y primers",
+      "diapositivas": "64, 70 y 71",
+      "gancho": "¿Crees que la cadena nueva empieza directamente con ADN o con otra cosa?",
+      "profe": {
+        "img": "../bio3/repaso/img/d064.jpg",
+        "imgAlt": "Primers en las dos hebras (diap. 64)",
+        "dice": "<p><strong>Fase de elongación:</strong> síntesis de las nuevas hebras de ADN</p><ol><li>La <strong>primasa (ARN polimerasa)</strong> sintetiza los <strong>primers o cebadores</strong> en dirección 5’ → 3’.<ul><li><strong>Hebra conductora:</strong> Un único primer en el origen de la replicación (5’-3’)</li><li><strong>Hebra retardada:</strong> Varios primers. A medida que avanza la horquilla, se van sintetizando nuevos cebadores que darán lugar a fragmentos de Okazaki.</li></ul></li></ol><p><strong>Primasa:</strong> Es una enzima con función ARN polimerasa que sintetiza fragmentos cortos de ARN (<strong>10 nucleótidos</strong>), denominados cebadores o primers. Los primers son complementarios de zonas concretas de ADN y sirven para que la ADN polimerasa empiece a hacer la nueva cadena de ADN copiando la original.</p>",
+        "entiende": "La ADN polimerasa no sabe empezar de cero: necesita un trocito de ARN (el primer) donde engancharse. La continua necesita uno; la retardada, uno por cada fragmento.",
+        "truco": "<strong>Primasa → primer</strong> (de ARN, 10 nucleótidos)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la hebra retardada necesita varios primers?",
+        "respuesta": "Porque se sintetiza a trozos: a medida que avanza la horquilla se van sintetizando nuevos cebadores, que darán lugar a los fragmentos de Okazaki."
+      },
+      "aplica": [
+        {
+          "caso": "Los primers son de…",
+          "opciones": [
+            "ARN (unos 10 nucleótidos)",
+            "ADN (miles de nucleótidos)"
+          ],
+          "buena": 0,
+          "porque": "La primasa tiene función ARN polimerasa."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la primasa y los primers.",
+        "puntos": [
+          "Primasa: enzima con función ARN polimerasa",
+          "Sintetiza primers o cebadores de ARN (10 nucleótidos), 5’→3’",
+          "Sirven para que la ADN polimerasa empiece",
+          "Conductora: un primer · retardada: varios"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c31",
+      "n": 31,
+      "titulo": "Elongación: ADN polimerasa III",
+      "diapositivas": "65, 72 y 73",
+      "gancho": "Ya hay primer. ¿Qué enzima crees que hace la mayor parte del trabajo de copiar?",
+      "profe": {
+        "img": "../bio3/repaso/img/d065.jpg",
+        "imgAlt": "ADN polimerasa III (diap. 65)",
+        "dice": "<ol start=\"2\"><li>Una vez que se colocan los primers, la <strong>ADN polimerasa III</strong> llega y empieza a sintetizar las nuevas hebras en dirección 5’ → 3’.<ul><li><strong>Hebra conductora:</strong> Elongación continua (5’-3’)</li><li><strong>Hebra retardada:</strong> Elongación discontinua (5’-3’) → se van sintetizando los fragmentos de Okazaki hasta alcanzar el primer siguiente</li></ul></li></ol><p><strong>ADN polimerasa:</strong> Enzima que añade nuevos nucleótidos al extremo OH-3’ de una cadena en crecimiento, es decir, añade nucleótidos en <strong>dirección 5’ → 3’ siempre</strong>.</p><ul><li>La secuencia de nucleótidos que se incorpora es complementaria de la secuencia de cadena molde que se está leyendo.</li><li>Tanto procariotas como eucariotas presentan varios tipos de polimerasas.</li></ul>",
+        "entiende": "Es la que hace el trabajo de verdad: lee el molde y va poniendo la base complementaria, siempre añadiendo por el extremo 3’.",
+        "truco": "Pol <strong>III</strong> = la que <strong>construye</strong> (la grande del trabajo)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la ADN polimerasa trabaja siempre en dirección 5’→3’?",
+        "respuesta": "Porque añade los nucleótidos nuevos al extremo OH-3’ de la cadena en crecimiento."
+      },
+      "aplica": [
+        {
+          "caso": "En la hebra retardada, la ADN pol III sintetiza…",
+          "opciones": [
+            "Fragmentos de Okazaki hasta el primer siguiente",
+            "Una cadena continua"
+          ],
+          "buena": 0,
+          "porque": "Discontinua."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la ADN polimerasa III.",
+        "puntos": [
+          "Llega tras los primers y sintetiza las hebras nuevas 5’→3’",
+          "Añade nucleótidos al extremo OH-3’",
+          "Incorpora la secuencia complementaria del molde",
+          "Conductora continua; retardada discontinua (fragmentos de Okazaki)"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

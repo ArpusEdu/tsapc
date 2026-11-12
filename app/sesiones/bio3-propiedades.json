@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "id": "bio3-propiedades",
+  "unidad": "bio3",
+  "bloque": 2,
+  "titulo": "La cadena: enlaces, propiedades y complementariedad",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (conceptos 6 a 10, diapositivas 14 a 21). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La cremallera que se abre con calor",
+    "caso": "Calientas una muestra de ADN de doble hélice y las dos cadenas se separan. La dejas enfriar y, poco a poco, vuelven a unirse como antes.",
+    "pregunta": "¿Qué se rompe al calentar y por qué se puede volver a unir?",
+    "solucion": "Al elevar la temperatura (o el pH) se rompen los puentes de hidrógeno entre las bases complementarias: es la desnaturalización. Es reversible: si se baja de nuevo la temperatura o el pH, las bases complementarias (A con T, C con G) vuelven a emparejarse: renaturalización.",
+    "claves": [
+      "Calor o pH → desnaturalización",
+      "Se rompen los puentes de H",
+      "Enfriar → renaturalización"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c6",
+      "n": 6,
+      "titulo": "El enlace fosfodiéster",
+      "diapositivas": "14",
+      "gancho": "Ya tienes nucleótidos sueltos. ¿Cómo los pegarías en fila para hacer una cadena?",
+      "profe": {
+        "img": "../bio3/repaso/img/d014.jpg",
+        "imgAlt": "Enlace fosfodiéster (diap. 14)",
+        "dice": "<p><strong>ENLACE FOSFODIESTER</strong></p><p>Fragmento de ácido nucleico</p>",
+        "entiende": "Es el «pegamento» que encadena un nucleótido con el siguiente: el fosfato de uno se une al azúcar del otro, y así se forma el esqueleto de la cadena.",
+        "truco": "Fosfo-<strong>DI</strong>-éster: el fosfato hace de puente entre <strong>dos</strong> azúcares."
+      },
+      "porque": {
+        "pregunta": "¿Qué forma el «esqueleto» de la cadena?",
+        "respuesta": "Los fosfatos y los azúcares unidos por enlaces fosfodiéster; las bases quedan colgando a un lado."
+      },
+      "aplica": [
+        {
+          "caso": "Une un nucleótido con el siguiente.",
+          "opciones": [
+            "Enlace fosfodiéster",
+            "Puente de hidrógeno"
+          ],
+          "buena": 0,
+          "porque": "Los puentes de H unen las dos cadenas, no los nucleótidos de una misma cadena."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo se unen los nucleótidos de una cadena?",
+        "puntos": [
+          "Mediante el enlace fosfodiéster",
+          "Forman un fragmento de ácido nucleico"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c7",
+      "n": 7,
+      "titulo": "Propiedades fisicoquímicas",
+      "diapositivas": "20 y 21",
+      "gancho": "¿Qué crees que les pasaría a las dos cadenas del ADN si lo calentaras?",
+      "profe": {
+        "img": "../bio3/repaso/img/d021.jpg",
+        "imgAlt": "Desnaturalización (diap. 21)",
+        "dice": "<ol><li>Fuertemente <strong>ácidos</strong> en solución acuosa (por los grupos fosfato).</li><li>Elevada <strong>viscosidad</strong>.</li><li>La unión de dos cadenas complementarias de ácidos nucleicos se unen mediante puentes de hidrógeno entre las bases nitrogenadas → <strong>hibridación</strong>: esto puede ocurrir tanto en ADN como en ARN.</li><li>Las dos cadenas de la doble hélice de ADN se pueden separar elevando la temperatura o el pH → <strong>desnaturalización</strong>: rompen los puentes de H entre las bases nitrogenadas complementarias.</li></ol><p>La desnaturalización es <strong>reversible</strong> si se baja de nuevo la temperatura o el pH → <strong>renaturalización</strong>.</p>",
+        "entiende": "Las dos cadenas están unidas por puentes de H, que son uniones débiles: con calor se abren como una cremallera (desnaturalización) y al enfriar se vuelven a cerrar (renaturalización).",
+        "truco": "<strong>Á-V-H-D</strong>: Ácidos, Viscosos, Hibridan, se Desnaturalizan (y se renaturalizan)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué son fuertemente ácidos?",
+        "respuesta": "Por los grupos fosfato."
+      },
+      "aplica": [
+        {
+          "caso": "Unión de dos cadenas complementarias por puentes de H.",
+          "opciones": [
+            "Hibridación",
+            "Desnaturalización"
+          ],
+          "buena": 0,
+          "porque": "Hibridación; puede darse en ADN y en ARN."
+        },
+        {
+          "caso": "Bajar la temperatura tras la desnaturalización.",
+          "opciones": [
+            "Renaturalización",
+            "Hibridación imposible"
+          ],
+          "buena": 0,
+          "porque": "Es reversible."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las propiedades fisicoquímicas de los ácidos nucleicos.",
+        "puntos": [
+          "Fuertemente ácidos (fosfatos)",
+          "Elevada viscosidad",
+          "Hibridación: unión de cadenas complementarias por puentes de H",
+          "Desnaturalización con temperatura o pH; reversible: renaturalización"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c8",
+      "n": 8,
+      "titulo": "Características del ADN",
+      "diapositivas": "15",
+      "gancho": "Si todas las especies usan las mismas 4 letras, ¿qué hace que el ADN de un humano y el de una bacteria sean distintos?",
+      "profe": {
+        "dice": "<ol><li>Largas cadenas de <strong>desoxirribonucléotidos</strong> formados por el grupo fosfato, una desoxirribosa y 4 tipos de bases nitrogenadas (<strong>A, T, G y C</strong>).</li><li><strong>Tamaño:</strong> depende del número de nucleótidos. Las moléculas de ADN que forman los cromosomas son de gran tamaño (<strong>millones de pares de bases</strong>).</li><li><strong>Secuencia de bases nitrogenadas</strong> (orden de las bases y la proporción de cada una): depende de cada <strong>especie</strong>.</li></ol>",
+        "entiende": "El orden de las «letras» es la información: por eso cambia de una especie a otra.",
+        "truco": "<strong>C-T-S</strong>: Composición, Tamaño, Secuencia."
+      },
+      "porque": {
+        "pregunta": "¿Qué cambia de una especie a otra?",
+        "respuesta": "La secuencia de bases: el orden de las bases y la proporción de cada una."
+      },
+      "aplica": [
+        {
+          "caso": "Tamaño de las moléculas de ADN de los cromosomas.",
+          "opciones": [
+            "Millones de pares de bases",
+            "Cientos de bases"
+          ],
+          "buena": 0,
+          "porque": "Gran tamaño."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 3 características del ADN.",
+        "puntos": [
+          "Cadenas de desoxirribonucleótidos: fosfato, desoxirribosa y A, T, G, C",
+          "Tamaño: depende del nº de nucleótidos; millones de pares de bases",
+          "Secuencia de bases: depende de cada especie"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c9",
+      "n": 9,
+      "titulo": "Estructura primaria",
+      "diapositivas": "16",
+      "gancho": "Una frase se lee de izquierda a derecha. ¿Tendrá también el ADN un sentido de lectura?",
+      "profe": {
+        "dice": "<p><strong>ESTRUCTURA PRIMARIA del ADN:</strong> es la <strong>secuencia</strong> de bases nitrogenadas de la cadena de nucleótidos leídas en <strong>dirección 5’ → 3’</strong>.</p><ul><li>5’ extremo fosfato</li><li>3’ extremo pentosa</li></ul><p>Secuencia: (5’) A C T G (3’)</p>",
+        "entiende": "Es simplemente el orden de las letras de una cadena, leído siempre en el mismo sentido: de 5’ a 3’.",
+        "truco": "«<strong>5 F</strong>»: el 5’ es el del Fosfato; el 3’, el del azúcar."
+      },
+      "porque": {
+        "pregunta": "¿Qué hay en cada extremo de la cadena?",
+        "respuesta": "En el extremo 5’, el fosfato; en el 3’, la pentosa. Se lee de 5’ a 3’."
+      },
+      "aplica": [
+        {
+          "caso": "Extremo con el fosfato.",
+          "opciones": [
+            "5’",
+            "3’"
+          ],
+          "buena": 0,
+          "porque": "5’ fosfato, 3’ pentosa."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es la estructura primaria del ADN?",
+        "puntos": [
+          "La secuencia de bases de la cadena",
+          "Leída en dirección 5’ → 3’",
+          "5’ extremo fosfato · 3’ extremo pentosa"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c10",
+      "n": 10,
+      "titulo": "Complementariedad",
+      "diapositivas": "17 a 19",
+      "gancho": "Si conoces una cadena del ADN, ¿podrías escribir la otra sin verla?",
+      "profe": {
+        "img": "../bio3/repaso/img/d017.jpg",
+        "imgAlt": "Bases complementarias (diap. 17)",
+        "dice": "<p>Las bases nitrogenadas complementarias se unen mediante <strong>puentes de H</strong> en función de su tamaño y estructura. Son complementarias:</p><ul><li><strong>A y T</strong> → <strong>2 puentes de H</strong></li><li><strong>C y G</strong> → <strong>3 puentes de H</strong></li></ul><p>Secuencia: (5’) A C T G (3’) / (3’) T G A C (5’) - complementaria</p><p>Para que la unión sea estable, los 2 nucleótidos que portan las bases complementarias han de tener sus fosfatos en posiciones opuestas.</p>",
+        "entiende": "Si conoces una cadena, conoces la otra: donde hay A pones T, donde hay C pones G. En el ARN, la A se empareja con U (diap. 19).",
+        "truco": "«<strong>AT 2, CG 3</strong>»: la pareja C-G es la más fuerte porque tiene más puentes."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la pareja C-G es más estable que A-T?",
+        "respuesta": "Porque C y G forman 3 puentes de H, y A y T solo 2."
+      },
+      "aplica": [
+        {
+          "caso": "Complementaria de (5’) A C T G (3’).",
+          "opciones": [
+            "(3’) T G A C (5’)",
+            "(3’) A C T G (5’)"
+          ],
+          "buena": 0,
+          "porque": "A-T y C-G."
+        },
+        {
+          "caso": "En el ARN, la A se empareja con…",
+          "opciones": [
+            "U",
+            "T"
+          ],
+          "buena": 0,
+          "porque": "El ARN no tiene T."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el principio de complementariedad.",
+        "puntos": [
+          "Las bases complementarias se unen por puentes de H",
+          "A-T: 2 puentes · C-G: 3 puentes",
+          "Conociendo una cadena se deduce la otra",
+          "Fosfatos en posiciones opuestas para que sea estable"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

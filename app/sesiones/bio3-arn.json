@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "id": "bio3-arn",
+  "unidad": "bio3",
+  "bloque": 5,
+  "titulo": "El ARN y sus tres tipos",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 5, conceptos 19 a 23, diapositivas 39 a 48). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Tres trabajos en la fábrica",
+    "caso": "Para fabricar una proteína hacen falta tres cosas: alguien que traiga la receta copiada del ADN, alguien que vaya trayendo las piezas (los aminoácidos) y la máquina donde se monta todo.",
+    "pregunta": "¿Qué tipo de ARN hace cada trabajo?",
+    "solucion": "El ARN mensajero (ARNm) es la copia exacta de un gen y lleva la información para sintetizar una proteína. El ARN transferente (ARNt) transporta los aminoácidos hasta los ribosomas. El ARN ribosomal (ARNr), combinado con proteínas, forma los ribosomas, los orgánulos responsables de la síntesis de proteínas.",
+    "claves": [
+      "ARNm = receta",
+      "ARNt = transporte de aminoácidos",
+      "ARNr = ribosoma"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c19",
+      "n": 19,
+      "titulo": "Características del ARN",
+      "diapositivas": "39",
+      "gancho": "Si el ADN tiene millones de pares de bases, ¿crees que el ARN será igual de largo?",
+      "profe": {
+        "dice": "<ol><li>Cadenas de <strong>ribonucléotidos</strong> formados por el grupo fosfato, una <strong>ribosa</strong> y 4 tipos de bases nitrogenadas (<strong>A, U, G y C</strong>).</li><li><strong>Tamaño:</strong> depende del número de nucleótidos, pero son mucho más pequeñas que las moléculas de ADN (cientos o miles de pares de bases.</li><li><strong>Función:</strong> controla la síntesis de proteínas a partir de la información contenida en el ADN.</li></ol>",
+        "entiende": "El ARN es una copia corta y de un solo uso de un trocito del ADN, la que sale a fabricar proteínas.",
+        "truco": "ARN = <strong>Ribosa, Uracilo, corto, Una cadena</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ARN es mucho más pequeño que el ADN?",
+        "respuesta": "Porque no copia todo el ADN: su función es controlar la síntesis de proteínas a partir de la información del ADN, así que tiene cientos o miles de nucleótidos."
+      },
+      "aplica": [
+        {
+          "caso": "Bases del ARN.",
+          "opciones": [
+            "A, U, G y C",
+            "A, T, G y C"
+          ],
+          "buena": 0,
+          "porque": "U en lugar de T."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las características del ARN.",
+        "puntos": [
+          "Ribonucleótidos: fosfato, ribosa y A, U, G, C",
+          "Mucho más pequeño que el ADN (cientos o miles)",
+          "Controla la síntesis de proteínas a partir del ADN"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c20",
+      "n": 20,
+      "titulo": "Estructuras del ARN",
+      "diapositivas": "40 a 43",
+      "gancho": "Una sola cadena, sin pareja. ¿Crees que se queda estirada o se dobla sobre sí misma?",
+      "profe": {
+        "img": "../bio3/repaso/img/d043.jpg",
+        "imgAlt": "Estructuras del ARN (diap. 43)",
+        "dice": "<ul><li><strong>ESTRUCTURA PRIMARIA del ARN:</strong> Es la secuencia de bases nitrogenadas de la <strong>cadena simple</strong> de nucleótidos leídas en dirección 5’ → 3’.</li><li><strong>ESTRUCTURA SECUNDARIA del ARN:</strong> La cadena simple de ARN puede plegarse y presentar regiones con bases apareadas (ej. ARN de transferencia). Las bases NO siempre serán complementarias (A-U, G-C, G-U). Aunque existan zonas apareadas, los extremos 5’ y 3’ que marcan el inicio y el final de la molécula permanecerán libres.</li><li><strong>ESTRUCTURA TERCIARIA del ARN:</strong> Consiste en un plegamiento de la estructura secundaria, normalmente por asociación con proteínas.</li></ul>",
+        "entiende": "Una sola cadena que se dobla sobre sí misma (secundaria) y luego se pliega más con ayuda de proteínas (terciaria). Los dos extremos siempre quedan sueltos.",
+        "truco": "<strong>1ª = cadena · 2ª = se dobla · 3ª = se pliega con proteínas</strong>. Pareja «rara» del ARN: <strong>G-U</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ARN puede tener zonas con bases apareadas si es de una sola cadena?",
+        "respuesta": "Porque la cadena se pliega sobre sí misma (estructura secundaria) y algunas bases se emparejan, aunque no siempre sean complementarias (A-U, G-C, G-U). Los extremos 5’ y 3’ quedan libres."
+      },
+      "aplica": [
+        {
+          "caso": "Plegamiento de la secundaria, normalmente con proteínas.",
+          "opciones": [
+            "Estructura terciaria",
+            "Estructura primaria"
+          ],
+          "buena": 0,
+          "porque": "Terciaria."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las estructuras del ARN.",
+        "puntos": [
+          "Primaria: secuencia de la cadena simple, 5’→3’",
+          "Secundaria: se pliega con regiones apareadas (A-U, G-C, G-U); extremos libres",
+          "Terciaria: plegamiento de la secundaria, normalmente con proteínas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c21",
+      "n": 21,
+      "titulo": "ARN mensajero",
+      "diapositivas": "44",
+      "gancho": "El ADN no sale del núcleo. ¿Cómo llega entonces la información de un gen a donde se fabrican las proteínas?",
+      "profe": {
+        "dice": "<p><strong>ARN mensajero (ARNm)</strong>. En eucariotas:</p><ol><li>Es una <strong>copia exacta</strong> de la secuencia de un gen de ADN.</li><li>Porta la información para la síntesis de una proteína.</li></ol>",
+        "entiende": "Es la fotocopia de una receta (un gen) que sale del núcleo para que el ribosoma la cocine.",
+        "truco": "ARN<strong>m</strong> = <strong>m</strong>ensaje."
+      },
+      "porque": {
+        "pregunta": "¿Qué relación hay entre el ARNm y un gen?",
+        "respuesta": "En eucariotas, el ARNm es una copia exacta de la secuencia de un gen y porta la información para sintetizar una proteína."
+      },
+      "aplica": [
+        {
+          "caso": "Copia exacta de un gen.",
+          "opciones": [
+            "ARNm",
+            "ARNr"
+          ],
+          "buena": 0,
+          "porque": "Mensajero."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es el ARNm?",
+        "puntos": [
+          "Copia exacta de la secuencia de un gen",
+          "Porta la información para la síntesis de una proteína"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c22",
+      "n": 22,
+      "titulo": "ARN transferente",
+      "diapositivas": "45 y 46",
+      "gancho": "Las piezas de la proteína tienen que llegar en el orden correcto. ¿Cómo «sabe» el repartidor dónde dejar cada una?",
+      "profe": {
+        "img": "../bio3/repaso/img/d046.jpg",
+        "imgAlt": "ARNt: brazo aceptor y anticodón (diap. 46)",
+        "dice": "<ol><li><strong>Transportan los aminoácidos</strong> hasta los ribosomas para ir formando la cadena proteica.</li><li>Estructura secundaria en forma de <strong>trébol</strong>, que se pliega en una estructura terciaria en forma de <strong>L</strong>.</li></ol><ul><li><strong>Brazo aceptor:</strong> Sitio de unión para el aminoácido (<strong>CCA-3’</strong>)</li><li><strong>Brazo anticodón:</strong> Contiene el <strong>anticodón</strong> correspondiente al aminoácido que lleva. Este anticodón reconoce el codón de ARNm que indica el aminoácido que se tiene que añadir a la proteína.</li></ul>",
+        "entiende": "Es el repartidor: por un lado carga el aminoácido (brazo aceptor) y por el otro lee el ARNm (anticodón) para dejarlo en su sitio.",
+        "truco": "ARN<strong>t</strong> = <strong>t</strong>ransporte · <strong>t</strong>rébol que se pliega en L."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve el anticodón?",
+        "respuesta": "Reconoce el codón del ARNm que indica el aminoácido que se tiene que añadir: así el aminoácido que lleva el ARNt se coloca en su sitio."
+      },
+      "aplica": [
+        {
+          "caso": "Sitio de unión del aminoácido.",
+          "opciones": [
+            "Brazo aceptor (CCA-3’)",
+            "Brazo anticodón"
+          ],
+          "buena": 0,
+          "porque": "Aceptor = acepta el aminoácido."
+        },
+        {
+          "caso": "Forma de su estructura terciaria.",
+          "opciones": [
+            "L",
+            "Trébol"
+          ],
+          "buena": 0,
+          "porque": "Secundaria en trébol, terciaria en L."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el ARNt.",
+        "puntos": [
+          "Transporta los aminoácidos hasta los ribosomas",
+          "Secundaria en trébol, terciaria en L",
+          "Brazo aceptor: une el aminoácido (CCA-3’)",
+          "Brazo anticodón: reconoce el codón del ARNm"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c23",
+      "n": 23,
+      "titulo": "ARN ribosomal",
+      "diapositivas": "47 y 48",
+      "gancho": "De todo el ARN que hay en una célula, ¿cuál crees que es el más abundante?",
+      "profe": {
+        "img": "../bio3/repaso/img/d048.jpg",
+        "imgAlt": "Subunidades del ribosoma (diap. 48)",
+        "dice": "<ol><li>Es el <strong>ARN mayoritario</strong> en las células (aproximadamente el <strong>80%</strong> del ARN).</li><li>Estructura secundaria muy compleja, con muchas horquillas y bucles.</li><li>Combinado con ciertas proteínas forma los <strong>ribosomas</strong>. Orgánulos citoplasmáticos responsables de la síntesis de proteínas.</li></ol><ul><li><strong>Subunidad 60</strong>: 3 moléculas de ARNr, 49 proteínas</li><li><strong>Subunidad 40</strong>: 1 moléculas de ARNr, 33 proteínas</li></ul>",
+        "entiende": "El ARNr es la mayor parte del ARN de la célula: junto con proteínas forma los ribosomas, la fábrica de proteínas.",
+        "truco": "ARN<strong>r</strong> = <strong>r</strong>ibosoma · <strong>80 %</strong> · subunidades <strong>60 y 40</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué forma el ARNr junto con proteínas?",
+        "respuesta": "Los ribosomas, orgánulos citoplasmáticos responsables de la síntesis de proteínas."
+      },
+      "aplica": [
+        {
+          "caso": "Porcentaje del ARN celular que es ARNr.",
+          "opciones": [
+            "Aproximadamente el 80 %",
+            "Aproximadamente el 20 %"
+          ],
+          "buena": 0,
+          "porque": "Es el mayoritario."
+        },
+        {
+          "caso": "Subunidad con 3 moléculas de ARNr y 49 proteínas.",
+          "opciones": [
+            "Subunidad 60",
+            "Subunidad 40"
+          ],
+          "buena": 0,
+          "porque": "La 40: 1 ARNr y 33 proteínas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el ARNr.",
+        "puntos": [
+          "El ARN mayoritario: unos 80 %",
+          "Secundaria compleja con horquillas y bucles",
+          "Con proteínas forma los ribosomas",
+          "Subunidad 60 (3 ARNr, 49 proteínas) y 40 (1 ARNr, 33 proteínas)"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

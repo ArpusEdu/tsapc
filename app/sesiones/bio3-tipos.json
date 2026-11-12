@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "id": "bio3-tipos",
+  "unidad": "bio3",
+  "bloque": 4,
+  "titulo": "ADN dentro y fuera del núcleo",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 4, conceptos 16 a 18, diapositivas 34 a 38). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Un ADN sin casa",
+    "caso": "Analizas el ADN de una célula y no encuentras núcleo ni histonas. Hay un único cromosoma circular suelto en el citoplasma y, además, varios anillos de ADN pequeños.",
+    "pregunta": "¿Qué tipo de célula es y qué son esos anillos pequeños?",
+    "solucion": "Es una célula procariota (una bacteria): su ADN es bicatenario y circular, un solo cromosoma libre en el citoplasma, no unido a proteínas (no forma cromatina). Los anillos pequeños son plásmidos.",
+    "claves": [
+      "Procariota: 1 cromosoma circular",
+      "Libre en el citoplasma, sin cromatina",
+      "Anillos extra = plásmidos"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c16",
+      "n": 16,
+      "titulo": "Eucromatina y heterocromatina",
+      "diapositivas": "34",
+      "gancho": "¿Se puede leer un libro que está muy apretado y cerrado con cinta?",
+      "profe": {
+        "img": "../bio3/repaso/img/d034.jpg",
+        "imgAlt": "Eucromatina y heterocromatina (diap. 34)",
+        "dice": "<p><strong>ADN cromosómico:</strong> en el núcleo. En humanos, <strong>20.000 - 25.000 genes</strong>.</p><ul><li><strong>Eucromatina:</strong> cromatina poco compactada y que presenta una gran concentración de genes. Normalmente, aunque no siempre, estos genes se encuentran en <strong>transcripción activa</strong>.</li><li><strong>Heterocromatina:</strong> cromatina más compactas y condensadas, por lo que no se puede dar la transcripción.</li></ul><p>La eucromatina se replica al <strong>inicio de la fase S</strong>, mientras que la heterocromatina se replica hacia el <strong>final fase S</strong>.</p>",
+        "entiende": "Lo que está suelto (eucromatina) se puede leer y se copia primero; lo que está muy apretado (heterocromatina) no se lee y se copia al final.",
+        "truco": "<strong>EU = bUEno, suelto, se lee</strong>; HETERO = apretado, cerrado."
+      },
+      "porque": {
+        "pregunta": "¿Por qué en la heterocromatina no se puede dar la transcripción?",
+        "respuesta": "Porque está más compacta y condensada; la eucromatina, poco compactada, es la que tiene los genes en transcripción activa."
+      },
+      "aplica": [
+        {
+          "caso": "Se replica al inicio de la fase S.",
+          "opciones": [
+            "Eucromatina",
+            "Heterocromatina"
+          ],
+          "buena": 0,
+          "porque": "La heterocromatina, hacia el final."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara eucromatina y heterocromatina.",
+        "puntos": [
+          "ADN cromosómico: en el núcleo; 20.000-25.000 genes en humanos",
+          "Eucromatina: poco compactada, muchos genes, transcripción activa; se replica al inicio de la fase S",
+          "Heterocromatina: compacta, sin transcripción; se replica al final de la fase S"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c17",
+      "n": 17,
+      "titulo": "ADN mitocondrial y de cloroplastos",
+      "diapositivas": "35 a 37",
+      "gancho": "¿Crees que todo el ADN de una célula eucariota está en el núcleo?",
+      "profe": {
+        "dice": "<ul><li><strong>ADN mitocondrial:</strong> en todos los organismos eucariotas.</li><li><strong>ADN de cloroplastos:</strong> Sólo en organismos fotosintéticos.</li></ul><p><strong>ADN mitocondrial (ADNmt):</strong> ADN bicatenario (doble hélice) y <strong>circular de 16,5 kb</strong> (en humanos).</p><ul><li>Suele haber varias copias de ADNmt en cada mitocondria.</li><li>Contiene <strong>37 genes</strong> que codifican para ARN ribosómico, ARN de transferencia y proteínas implicadas en los procesos que tienen lugar en la mitocondria como la <strong>respiración celular</strong>.</li><li>Se replica de manera <strong>independiente</strong> respecto al ADN nuclear.</li></ul><p><strong>ADN de cloroplastos (ADNcp):</strong> ADN bicatenario (doble hélice) y circular de entre <strong>120 y 160 kb</strong>.</p><ul><li>Suele haber varias moléculas de ADN circular en cada cloroplasto.</li><li>Contiene en torno a <strong>150 genes</strong> (depende de la especie), que codifican para ARN ribosómico, ARN de transferencia y proteínas implicadas en los procesos que tienen lugar en la cloroplasto, especialmente en la <strong>fotosíntesis</strong>.</li><li>Se replica de manera independiente respecto al ADN nuclear.</li></ul>",
+        "entiende": "Las mitocondrias y los cloroplastos tienen su propio ADN pequeño y circular, con los genes que necesitan para su trabajo, y lo copian por su cuenta.",
+        "truco": "<strong>Mito = 16,5 kb y 37 genes</strong>; <strong>cloro = 120-160 kb y 150 genes</strong>. Los dos: circulares y se replican solos."
+      },
+      "porque": {
+        "pregunta": "¿Qué tienen en común el ADN mitocondrial y el de cloroplastos?",
+        "respuesta": "Los dos son bicatenarios y circulares, hay varias copias en cada orgánulo y se replican de manera independiente del ADN nuclear."
+      },
+      "aplica": [
+        {
+          "caso": "16,5 kb y 37 genes (humanos).",
+          "opciones": [
+            "ADN mitocondrial",
+            "ADN de cloroplastos"
+          ],
+          "buena": 0,
+          "porque": "Cloroplastos: 120-160 kb y unos 150 genes."
+        },
+        {
+          "caso": "Solo en organismos fotosintéticos.",
+          "opciones": [
+            "ADN de cloroplastos",
+            "ADN mitocondrial"
+          ],
+          "buena": 0,
+          "porque": "El mitocondrial está en todos los eucariotas."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara el ADN mitocondrial y el de cloroplastos.",
+        "puntos": [
+          "Mitocondrial: todos los eucariotas; circular de 16,5 kb; 37 genes (respiración celular)",
+          "Cloroplastos: solo fotosintéticos; 120-160 kb; unos 150 genes (fotosíntesis)",
+          "Los dos: bicatenarios, circulares, varias copias",
+          "Se replican independientemente del ADN nuclear"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c18",
+      "n": 18,
+      "titulo": "ADN de procariotas",
+      "diapositivas": "38",
+      "gancho": "Las bacterias no tienen núcleo. ¿Dónde guardarán su ADN?",
+      "profe": {
+        "img": "../bio3/repaso/img/d038.jpg",
+        "imgAlt": "ADN de procariotas (diap. 38)",
+        "dice": "<p><strong>ADN de procariotas (bacterias):</strong> ADN bicatenario (doble hélice) y circular.</p><ul><li>Un sólo cromosoma circular que está <strong>libre en el citoplasma</strong>.</li><li><strong>No está unido a proteínas</strong>, por tanto no forma cromatina.</li><li>Además del cromosoma, muchos procariotas presentan pequeñas moléculas de ADN circular denominadas <strong>PLÁSMIDOS</strong>.</li></ul>",
+        "entiende": "Las bacterias no tienen núcleo: su único cromosoma flota en el citoplasma, desnudo (sin histonas), y a veces llevan anillos extra, los plásmidos.",
+        "truco": "Bacteria: <strong>1 anillo, suelto, desnudo + plásmidos</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ADN bacteriano no forma cromatina?",
+        "respuesta": "Porque no está unido a proteínas."
+      },
+      "aplica": [
+        {
+          "caso": "Pequeñas moléculas de ADN circular además del cromosoma.",
+          "opciones": [
+            "Plásmidos",
+            "Nucleosomas"
+          ],
+          "buena": 0,
+          "porque": "Plásmidos."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Cómo es el ADN de las bacterias?",
+        "puntos": [
+          "Bicatenario y circular",
+          "Un solo cromosoma libre en el citoplasma",
+          "No unido a proteínas: no forma cromatina",
+          "Muchos tienen plásmidos"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

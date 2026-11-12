@@ -1,0 +1,237 @@
+{
+  "schema": 1,
+  "id": "bio3-helice",
+  "unidad": "bio3",
+  "bloque": 3,
+  "titulo": "La doble hélice y cómo se empaqueta",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 3, conceptos 11 a 15, diapositivas 22 a 33). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Collar de perlas o una X",
+    "caso": "Al microscopio electrónico, el ADN de una célula que no se está dividiendo parece un collar de perlas. En la misma célula, durante la mitosis, aparecen cromosomas en forma de X.",
+    "pregunta": "¿Es el mismo ADN? ¿Qué ha pasado entre una imagen y otra?",
+    "solucion": "Es el mismo ADN, más o menos empaquetado. El collar de perlas es la fibra de cromatina: ADN enrollado sobre nucleosomas (8 histonas cada uno). Al dividirse la célula, la fibra se enrolla en solenoides y sufre varios niveles de superenrollamiento hasta formar el cromosoma metafásico.",
+    "claves": [
+      "Nucleosoma = 8 histonas",
+      "Collar de perlas = fibra de cromatina",
+      "Mitosis → cromosoma metafásico"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c11",
+      "n": 11,
+      "titulo": "El modelo de 1953",
+      "diapositivas": "22",
+      "gancho": "Nadie había «visto» el ADN por dentro. ¿Cómo crees que se descubrió su forma?",
+      "profe": {
+        "dice": "<p>En <strong>1953 Watson y Crick</strong>, junto con los resultados de <strong>Wilkins y Rosalind Franklin</strong>, propusieron un modelo para explicar la estructura del ADN. Este modelo permite explicar el principio de complementariedad y sostiene que el ADN es una doble hélice.</p>",
+        "entiende": "Las imágenes de rayos X de Rosalind Franklin fueron la pista clave para que Watson y Crick dibujaran la doble hélice.",
+        "truco": "<strong>1953</strong> → 4 nombres: Watson, Crick, Wilkins y Franklin."
+      },
+      "porque": {
+        "pregunta": "¿Qué explicaba el modelo de la doble hélice?",
+        "respuesta": "El principio de complementariedad, y sostenía que el ADN es una doble hélice."
+      },
+      "aplica": [
+        {
+          "caso": "Propusieron el modelo en 1953…",
+          "opciones": [
+            "Watson y Crick",
+            "Wilkins y Franklin"
+          ],
+          "buena": 0,
+          "porque": "Watson y Crick, con los resultados de Wilkins y Rosalind Franklin."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Quién propuso la doble hélice y cuándo?",
+        "puntos": [
+          "1953, Watson y Crick",
+          "Con los resultados de Wilkins y Rosalind Franklin",
+          "Explica la complementariedad: el ADN es una doble hélice"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c12",
+      "n": 12,
+      "titulo": "La estructura secundaria",
+      "diapositivas": "23 y 24",
+      "gancho": "Imagina una escalera de caracol. ¿Qué serían los pasamanos y qué los peldaños en el ADN?",
+      "profe": {
+        "img": "../bio3/repaso/img/d024.jpg",
+        "imgAlt": "La doble hélice (diap. 24)",
+        "dice": "<p>Es la <strong>doble hélice</strong> del ADN formada por las dos cadenas complementarias de nucleótidos. La secuencia de cada cadena es la estructura primaria. Cuando las cadenas complementarias se unen obtenemos la estructura secundaria.</p><ul><li>Doble hélice se forma alrededor un <strong>eje central</strong>.</li><li>Las 2 cadenas son <strong>antiparalelas</strong> 5’-3’ vs. 3’-5’</li><li>La secuencia de bases nitrogenadas de ambas cadenas es <strong>complementaria</strong>. Si se conoce la secuencia de una de las cadenas o hebras, se puede deducir la otra.</li><li>Ambas cadenas se mantienen unidas por <strong>puentes de H</strong>.</li><li>Las bases nitrogenadas se encuentran <strong>en el interior</strong> de la estructura. En el exterior se sitúan los fosfatos y la desoxirribosa.</li><li>Un giro de 360 ºC= <strong>10 nucleótidos</strong></li></ul>",
+        "entiende": "Imagina una escalera de caracol: los pasamanos son el fosfato y el azúcar (fuera) y los peldaños son las parejas de bases (dentro). Cada vuelta completa tiene 10 peldaños.",
+        "truco": "<strong>E-A-C-H-I-10</strong>: Eje, Antiparalelas, Complementarias, puentes de H, bases en el Interior, 10 por giro."
+      },
+      "porque": {
+        "pregunta": "¿Por qué las bases están dentro y no fuera?",
+        "respuesta": "Porque son las que se emparejan entre las dos cadenas por puentes de H; fuera quedan los fosfatos y la desoxirribosa, el «pasamanos»."
+      },
+      "aplica": [
+        {
+          "caso": "Una cadena va 5’→3’ y la otra 3’→5’.",
+          "opciones": [
+            "Antiparalelas",
+            "Paralelas"
+          ],
+          "buena": 0,
+          "porque": "Antiparalelas."
+        },
+        {
+          "caso": "Nucleótidos en un giro de 360º.",
+          "opciones": [
+            "10",
+            "20"
+          ],
+          "buena": 0,
+          "porque": "10 nucleótidos por giro."
+        }
+      ],
+      "recuerda": {
+        "pide": "Describe la estructura secundaria del ADN.",
+        "puntos": [
+          "Doble hélice alrededor de un eje central",
+          "Cadenas antiparalelas y complementarias",
+          "Unidas por puentes de H; bases dentro, fosfato y desoxirribosa fuera",
+          "Un giro = 10 nucleótidos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c13",
+      "n": 13,
+      "titulo": "La estructura terciaria: histonas",
+      "diapositivas": "26",
+      "gancho": "¿Crees que el ADN está suelto dentro del núcleo, como un hilo, o sujeto a algo?",
+      "profe": {
+        "dice": "<p><strong>ADN CROMOSÓMICO NUCLEAR</strong></p><ul><li>La mayor parte del ADN de las células eucariotas se encuentra en el <strong>núcleo</strong>.</li><li>El ADN no se encuentra libre, sino que está asociado a proteínas básicas que <strong>compactan</strong> el ADN. Dos tipos:<ul><li><strong>Histonas</strong>: Proteínas con una función estructural y reguladora.</li><li><strong>No histonas</strong>: Proteínas muy heterogéneas con funciones estructurales, enzimáticas y reguladoras.</li></ul></li></ul>",
+        "entiende": "El ADN de una célula mide casi dos metros: sin proteínas que lo enrollen no cabría en el núcleo.",
+        "truco": "<strong>Histonas = carretes</strong> (estructura); no histonas = «todo lo demás»."
+      },
+      "porque": {
+        "pregunta": "¿Para qué se asocia el ADN a proteínas?",
+        "respuesta": "Para compactarse: las proteínas básicas (histonas y no histonas) lo compactan."
+      },
+      "aplica": [
+        {
+          "caso": "Proteínas con función estructural y reguladora.",
+          "opciones": [
+            "Histonas",
+            "No histonas"
+          ],
+          "buena": 0,
+          "porque": "Las no histonas son muy heterogéneas: estructurales, enzimáticas y reguladoras."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la estructura terciaria del ADN nuclear.",
+        "puntos": [
+          "La mayor parte del ADN eucariota está en el núcleo",
+          "No está libre: asociado a proteínas básicas que lo compactan",
+          "Histonas: estructural y reguladora",
+          "No histonas: muy heterogéneas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c14",
+      "n": 14,
+      "titulo": "Nucleosoma y fibra de cromatina",
+      "diapositivas": "27 a 29",
+      "gancho": "Si tuvieras que guardar un hilo larguísimo sin que se enrede, ¿alrededor de qué lo enrollarías?",
+      "profe": {
+        "img": "../bio3/repaso/img/d027.jpg",
+        "imgAlt": "Nucleosoma (diap. 27)",
+        "dice": "<p>NIVELES DE LA ESTRUCTURA TERCIARIA:</p><ol><li>Un <strong>nucleosoma</strong> es la estructura cilíndrica formada por un <strong>octámero de histonas (8 histonas)</strong> sobre la que se enrolla la doble hélice de ADN.</li><li>La molécula de ADN asociada a las histonas se denomina <strong>fibra de cromatina</strong> “<strong>Collar de perlas</strong>”</li></ol>",
+        "entiende": "Cada perla del collar es un nucleosoma (8 histonas con ADN enrollado) y el hilo entre perlas es ADN.",
+        "truco": "<strong>Nucleosoma = 8</strong> (octámero) · fibra = collar de perlas."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se llama «collar de perlas»?",
+        "respuesta": "Porque cada nucleosoma (8 histonas con el ADN enrollado) es una perla, y el ADN entre ellos es el hilo."
+      },
+      "aplica": [
+        {
+          "caso": "Histonas de un nucleosoma.",
+          "opciones": [
+            "8 (octámero)",
+            "6"
+          ],
+          "buena": 0,
+          "porque": "Octámero = 8."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es un nucleosoma y qué es la fibra de cromatina?",
+        "puntos": [
+          "Nucleosoma: octámero de histonas (8) con la doble hélice enrollada",
+          "Fibra de cromatina: ADN asociado a histonas",
+          "«Collar de perlas»"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c15",
+      "n": 15,
+      "titulo": "Solenoide y cromosoma",
+      "diapositivas": "30 a 33",
+      "gancho": "El collar de perlas todavía es largo. ¿Cómo lo harías aún más compacto para repartirlo al dividirse la célula?",
+      "profe": {
+        "img": "../bio3/repaso/img/d033.jpg",
+        "imgAlt": "Del ADN al cromosoma (diap. 33)",
+        "dice": "<ol start=\"3\"><li>La fibra de cromatina, a su vez, se enrolla sobre sí misma formando el <strong>solenoide</strong>.</li></ol><p>Cada vuelta del solenoide tiene <strong>6 nucleosomas</strong> con <strong>6 histonas H1</strong>. Es el nivel de empaquetamiento más bajo de los cromosomas.</p><p>En el momento de la división celular (<strong>MITOSIS</strong>), las fibras de cromatina se ordenan y experimentan varios niveles de superenrollamiento hasta formar el <strong>cromosoma metafásico</strong>.</p>",
+        "entiende": "Es como enrollar un cable de teléfono: ADN → nucleosomas (collar) → solenoide (espiral de 6) → asas → cromosoma, lo más compacto, solo al dividirse.",
+        "truco": "Orden: <strong>ADN · Nucleosoma · Fibra · Solenoide · Cromosoma</strong> → «Al Niño Fuerte, Sopa Caliente». Solenoide = <strong>6 y 6</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo llega el ADN a su máxima compactación?",
+        "respuesta": "En la división celular (mitosis): las fibras se superenrollan hasta formar el cromosoma metafásico."
+      },
+      "aplica": [
+        {
+          "caso": "Cada vuelta del solenoide tiene…",
+          "opciones": [
+            "6 nucleosomas con 6 histonas H1",
+            "8 nucleosomas"
+          ],
+          "buena": 0,
+          "porque": "6 y 6."
+        }
+      ],
+      "recuerda": {
+        "pide": "Ordena los niveles de empaquetamiento.",
+        "puntos": [
+          "ADN (doble hélice) → nucleosoma",
+          "→ fibra de cromatina → solenoide (6 nucleosomas por vuelta)",
+          "Solenoide: el nivel de empaquetamiento más bajo de los cromosomas",
+          "En mitosis: superenrollamiento → cromosoma metafásico"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "El cromosoma metafásico y sus partes, en Bio 2 («El cromosoma»).",
+          "ruta": "#/sesion/bio2-cromosoma"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

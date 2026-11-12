@@ -39,6 +39,19 @@
     { "id": "bio2-tincion", "unidad": "bio2", "bloque": 7, "titulo": "Teñir y bandear (I): convencional, G y Q", "minutos": 25, "pegatina": "adn", "gancho": "todos del mismo color" },
     { "id": "bio2-bandas", "unidad": "bio2", "bloque": 7, "titulo": "Teñir y bandear (II): R, NOR y T", "minutos": 20, "pegatina": "adn", "gancho": "cinco preparaciones sin etiqueta" },
     { "id": "bio2-nomenclatura", "unidad": "bio2", "bloque": 8, "titulo": "La dirección de un gen: ISCN y locus", "minutos": 20, "pegatina": "adn", "gancho": "la dirección de un gen" },
-    { "id": "bio2-cariotipo", "unidad": "bio2", "bloque": 9, "titulo": "Resolver un cariotipo", "minutos": 35, "pegatina": "adn", "gancho": "46 piezas desordenadas" }
+    { "id": "bio2-cariotipo", "unidad": "bio2", "bloque": 9, "titulo": "Resolver un cariotipo", "minutos": 35, "pegatina": "adn", "gancho": "46 piezas desordenadas" },
+    { "id": "bio3-nucleotido", "unidad": "bio3", "bloque": 1, "titulo": "Las piezas: ADN, ARN y el nucleótido", "minutos": 25, "pegatina": "gel", "gancho": "el tubo sin etiqueta" },
+    { "id": "bio3-propiedades", "unidad": "bio3", "bloque": 2, "titulo": "La cadena: enlaces, propiedades y complementariedad", "minutos": 25, "pegatina": "gel", "gancho": "la cremallera que se abre con calor" },
+    { "id": "bio3-helice", "unidad": "bio3", "bloque": 3, "titulo": "La doble hélice y cómo se empaqueta", "minutos": 25, "pegatina": "gel", "gancho": "collar de perlas o una X" },
+    { "id": "bio3-tipos", "unidad": "bio3", "bloque": 4, "titulo": "ADN dentro y fuera del núcleo", "minutos": 20, "pegatina": "gel", "gancho": "un ADN sin casa" },
+    { "id": "bio3-arn", "unidad": "bio3", "bloque": 5, "titulo": "El ARN y sus tres tipos", "minutos": 25, "pegatina": "gel", "gancho": "tres trabajos en la fábrica" },
+    { "id": "bio3-flujo", "unidad": "bio3", "bloque": 6, "titulo": "Del gen a la proteína y cómo se copia el ADN", "minutos": 25, "pegatina": "gel", "gancho": "media vieja, media nueva" },
+    { "id": "bio3-replicacion", "unidad": "bio3", "bloque": 7, "titulo": "Replicación (I): abrir, sujetar, arrancar y copiar", "minutos": 25, "pegatina": "gel", "gancho": "la copiadora que no sabe empezar" },
+    { "id": "bio3-enzimas", "unidad": "bio3", "bloque": 7, "titulo": "Replicación (II): rematar, el equipo completo y los telómeros", "minutos": 25, "pegatina": "gel", "gancho": "una hebra con remiendos" },
+    { "id": "bio3-transcripcion", "unidad": "bio3", "bloque": 8, "titulo": "La transcripción: del gen al ARN", "minutos": 25, "pegatina": "gel", "gancho": "la copia con una letra cambiada" },
+    { "id": "bio3-maduracion", "unidad": "bio3", "bloque": 9, "titulo": "La maduración del ARN", "minutos": 25, "pegatina": "gel", "gancho": "un gen más largo que su mensaje" },
+    { "id": "bio3-codigo", "unidad": "bio3", "bloque": 10, "titulo": "El código genético", "minutos": 25, "pegatina": "gel", "gancho": "cuatro letras para veinte palabras" },
+    { "id": "bio3-traduccion", "unidad": "bio3", "bloque": 11, "titulo": "La traducción paso a paso", "minutos": 25, "pegatina": "gel", "gancho": "el codón sin repartidor" },
+    { "id": "bio3-mutaciones", "unidad": "bio3", "bloque": 12, "titulo": "Las mutaciones génicas", "minutos": 25, "pegatina": "gel", "gancho": "una letra cambiada que no cambia nada" }
   ]
 }

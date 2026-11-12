@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "id": "bio3-traduccion",
+  "unidad": "bio3",
+  "bloque": 11,
+  "titulo": "La traducción paso a paso",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 11, conceptos 48 a 51, diapositivas 96 a 104). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El codón sin repartidor",
+    "caso": "Cada codón del ARNm tiene su ARNt con el anticodón complementario, que trae el aminoácido. Pero para los codones UAA, UAG y UGA no existe ningún ARNt.",
+    "pregunta": "¿Qué pasa cuando el ribosoma llega a uno de esos codones?",
+    "solucion": "Son codones STOP: se termina la traducción. Como ningún ARNt tiene anticodón complementario, en el sitio A se colocan los factores de liberación, que reconocen el STOP y hacen que la peptidil transferasa corte la unión entre la proteína y el ARNt. La proteína se libera y el complejo se disocia.",
+    "claves": [
+      "STOP: UAA, UAG, UGA",
+      "Factores de liberación en el sitio A",
+      "La proteína se libera"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c48",
+      "n": 48,
+      "titulo": "Lo que hace falta y los sitios A, P y E",
+      "diapositivas": "96",
+      "gancho": "Una cadena de montaje tiene un sitio donde entra la pieza nueva, otro donde está lo ya montado y una salida. ¿Te suena del ribosoma?",
+      "profe": {
+        "img": "../bio3/repaso/img/d096.jpg",
+        "imgAlt": "Sitios E, P y A del ribosoma (diap. 96)",
+        "dice": "<p>Para que se desarrolle el proceso de síntesis de proteínas se necesita:</p><ul><li>1 molécula de <strong>ARNm</strong></li><li>Los <strong>20 aminoácidos</strong> (AA)</li><li>Los <strong>ribosomas</strong> (formados por ARNr y proteínas)</li><li>Los <strong>ARNt</strong> que transportan los AA hasta los ribosomas.</li><li>Las enzima(<strong>PEPTIDIL TRANSFERASA</strong>) que catalizan la unión entre AA.</li></ul><p>Los RIBOSOMAS tienen 2 subunidades:</p><ul><li><strong>Subunidad menor:</strong> Tiene 1 sitio de unión al ARNm</li><li><strong>Subunidad mayor:</strong> Tiene 3 sitios de unión al ARNt<ul><li><strong>Sitio A (aminoacil):</strong> donde se sitúa el ARNt que lleva el siguiente AA que se va a incorporar en la cadena proteica.</li><li><strong>Sitio P (peptidil):</strong> donde se sitúa el ARNt que lleva la cadena proteica en crecimiento</li><li><strong>Sitio E (exit):</strong> donde se sitúa el ARNt que acaba de transferir la cadena en crecimiento al ARNt que lleva el siguiente AA.</li></ul></li></ul>",
+        "entiende": "Los ARNt pasan por el ribosoma como en una cinta: entran por A (traen aminoácido), pasan a P (sujetan la cadena) y salen por E.",
+        "truco": "Orden de paso: <strong>A → P → E</strong> = «<strong>A</strong>ntes, <strong>P</strong>egado, <strong>E</strong>xit»."
+      },
+      "porque": {
+        "pregunta": "¿Qué ARNt está en el sitio P?",
+        "respuesta": "El que lleva la cadena proteica en crecimiento; en A entra el que trae el siguiente aminoácido y por E sale el que ya la ha transferido."
+      },
+      "aplica": [
+        {
+          "caso": "Enzima que une los aminoácidos.",
+          "opciones": [
+            "Peptidil transferasa",
+            "ARN polimerasa"
+          ],
+          "buena": 0,
+          "porque": "Peptidil transferasa."
+        },
+        {
+          "caso": "Subunidad con 3 sitios de unión al ARNt.",
+          "opciones": [
+            "Mayor",
+            "Menor"
+          ],
+          "buena": 0,
+          "porque": "La menor tiene 1 sitio de unión al ARNm."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué hace falta para traducir y qué son los sitios A, P y E?",
+        "puntos": [
+          "ARNm, 20 AA, ribosomas, ARNt y peptidil transferasa",
+          "Subunidad menor: 1 sitio de unión al ARNm",
+          "Mayor: sitio A (siguiente AA), P (cadena en crecimiento), E (salida)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c49",
+      "n": 49,
+      "titulo": "Iniciación",
+      "diapositivas": "100",
+      "gancho": "¿Cómo encuentra el ribosoma, entre todo el ARNm, el sitio exacto donde empezar?",
+      "profe": {
+        "dice": "<p><strong>Fase de iniciación:</strong> unión del ARNt+Met al ribosoma</p><ol><li>El <strong>ARNt iniciador</strong> (ARNt con Metionina) se une a la subunidad menor del ribosoma y se colocan en el CAP-5’ del ARNm.</li><li>Este complejo lee el ARNm hasta encontrar el codón de inicio (<strong>AUG</strong>).</li><li>El ARNt iniciador se une al codón de inicio.</li><li>La subunidad mayor del ribosoma se une para formar el <strong>complejo de iniciación</strong>, y el ARNt queda colocado en el <strong>sitio P</strong>.</li></ol>",
+        "entiende": "La subunidad pequeña con la metionina se engancha al gorro (CAP-5’), avanza hasta AUG, y entonces llega la subunidad grande y cierra el «bocadillo».",
+        "truco": "El primer ARNt empieza en <strong>P</strong>, no en A."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirve aquí el CAP-5’ de la maduración?",
+        "respuesta": "El complejo del ARNt iniciador y la subunidad menor se coloca en el CAP-5’ y desde ahí lee el ARNm hasta encontrar el AUG."
+      },
+      "aplica": [
+        {
+          "caso": "Al formarse el complejo de iniciación, el ARNt iniciador queda en…",
+          "opciones": [
+            "El sitio P",
+            "El sitio A"
+          ],
+          "buena": 0,
+          "porque": "Sitio P."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la iniciación de la traducción.",
+        "puntos": [
+          "ARNt iniciador (con Met) + subunidad menor, en el CAP-5’",
+          "Lee el ARNm hasta el codón AUG",
+          "El ARNt iniciador se une al AUG",
+          "Se une la subunidad mayor: complejo de iniciación; ARNt en P"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c50",
+      "n": 50,
+      "titulo": "Elongación",
+      "diapositivas": "101 y 102",
+      "gancho": "Ya está la metionina en P. ¿Qué crees que pasa cuando llega el segundo aminoácido?",
+      "profe": {
+        "img": "../bio3/repaso/img/d101.jpg",
+        "imgAlt": "Elongación de la traducción (diap. 101)",
+        "dice": "<p><strong>Fase de elongación:</strong></p><ol><li>Comienza cuando se sitúa en el <strong>sitio A</strong> el segundo aminoacil-ARNt (ARNt+AA) que tiene un anticodón complementario al segundo codón del ARNm.</li><li>La enzima <strong>peptidil transferasa</strong> cataliza la formación del <strong>enlace peptídico</strong> entre la Met y el segundo AA. De esta forma, el ARNt del sitio P se queda sin AA (Met) y el ARNt del sitio A contiene la cadena en crecimiento.</li><li>Formado el enlace peptídico, el ribosoma se desplaza a lo largo del ARNm en dirección 5’ → 3’.</li><li>El ARNt iniciador (ahora sin AA), queda situado en el <strong>sitio E</strong> para separarse del complejo. El ARNt que tiene 2 AA queda situado en el sitio P, y así, el sitio A queda libre para que el siguiente aminoacil-ARNt se una para incorporar el AA correspondiente.</li></ol>",
+        "entiende": "Entra un ARNt en A, se unen los aminoácidos, el ribosoma avanza un codón, el ARNt vacío sale por E… y se repite.",
+        "truco": "<strong>Entra, Une, Avanza, Sale</strong>: «EUAS»."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ARNt del sitio P se queda sin aminoácido?",
+        "respuesta": "Porque la peptidil transferasa forma el enlace peptídico entre la Met y el segundo aminoácido: la cadena pasa al ARNt del sitio A."
+      },
+      "aplica": [
+        {
+          "caso": "Tras el enlace peptídico, el ribosoma se desplaza…",
+          "opciones": [
+            "5’ → 3’ por el ARNm",
+            "3’ → 5’ por el ARNm"
+          ],
+          "buena": 0,
+          "porque": "5’→3’."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la elongación de la traducción.",
+        "puntos": [
+          "Entra en A el aminoacil-ARNt con anticodón complementario",
+          "La peptidil transferasa forma el enlace peptídico",
+          "El ribosoma avanza 5’→3’",
+          "El ARNt vacío pasa a E y sale; A queda libre para el siguiente"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c51",
+      "n": 51,
+      "titulo": "Terminación",
+      "diapositivas": "103 y 104",
+      "gancho": "¿Cómo crees que se suelta la proteína del último ARNt?",
+      "profe": {
+        "img": "../bio3/repaso/img/d104.jpg",
+        "imgAlt": "Terminación (diap. 104)",
+        "dice": "<p><strong>Fase de terminación:</strong></p><ol><li>Se produce cuando el ribosoma llega a un <strong>codón STOP</strong> (UAA, UGA o UAG)</li><li>No existe ningún ARNt que tenga un anticodón complementario a esos codones.</li><li>Los <strong>factores de liberación</strong> reconocen los codones STOP, se sitúan en el sitio A y hacen que la peptidil transferasa corte la unión entre la cadena proteína y el ARNt que la porta.</li><li>La proteína se libera, y todo el complejo de traducción se disocia.</li></ol>",
+        "entiende": "Al STOP no le corresponde ningún ARNt: en su lugar entra un factor de liberación, que hace que la proteína se suelte y el ribosoma se desmonte.",
+        "truco": "<strong>STOP = ningún ARNt, entra el factor</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Quién ocupa el sitio A al llegar al STOP?",
+        "respuesta": "Los factores de liberación, porque no hay ningún ARNt con anticodón complementario a los codones STOP."
+      },
+      "aplica": [
+        {
+          "caso": "Reconocen el codón STOP.",
+          "opciones": [
+            "Factores de liberación",
+            "ARNt iniciador"
+          ],
+          "buena": 0,
+          "porque": "Factores de liberación."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la terminación de la traducción.",
+        "puntos": [
+          "El ribosoma llega a un STOP (UAA, UGA o UAG)",
+          "Ningún ARNt tiene anticodón complementario",
+          "Los factores de liberación se sitúan en A; la peptidil transferasa corta la unión",
+          "Se libera la proteína y el complejo se disocia"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

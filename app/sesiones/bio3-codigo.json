@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "id": "bio3-codigo",
+  "unidad": "bio3",
+  "bloque": 10,
+  "titulo": "El código genético",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 10, conceptos 44 a 47, diapositivas 90 a 95). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Cuatro letras para veinte palabras",
+    "caso": "El ARNm solo tiene 4 letras (A, C, G y U), pero las proteínas se construyen con 20 aminoácidos distintos. Si cada letra indicara un aminoácido, solo habría 4.",
+    "pregunta": "¿Cómo se consigue nombrar 20 aminoácidos con solo 4 letras?",
+    "solucion": "Con el código genético: cada secuencia de 3 nucleótidos (un codón) codifica un aminoácido. Con 4 bases tomadas de 3 en 3 hay 4³ = 64 codones posibles: 61 codifican aminoácidos y 3 son de terminación. Por eso la mayoría de aminoácidos tienen más de un codón (el código es degenerado).",
+    "claves": [
+      "Codón = 3 nucleótidos",
+      "4³ = 64 = 61 + 3",
+      "Varios codones por aminoácido"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c44",
+      "n": 44,
+      "titulo": "La traducción y los aminoácidos",
+      "diapositivas": "90 y 91",
+      "gancho": "Una proteína es un collar. ¿De qué crees que son las cuentas?",
+      "profe": {
+        "img": "../bio3/repaso/img/d090.jpg",
+        "imgAlt": "Del gen a la proteína (diap. 90)",
+        "dice": "<p>La traducción es el proceso por el cual se sintetiza una proteína a partir de una molécula de ARNm.</p><p>¡Los genes codifican proteínas! ¿De qué están formadas las proteínas? De <strong>AMINOÁCIDOS (AA)</strong>. R = cadena variable y específica de cada AA.</p><p>Hay <strong>20 aminoácidos estándar</strong>. También existen algunos más raros de encontrar en células eucariotas.</p>",
+        "entiende": "Las proteínas son collares de aminoácidos. El orden de los aminoácidos lo marca el ARNm, que a su vez viene del gen.",
+        "truco": "<strong>20 aminoácidos</strong>; cada uno se distingue por su cadena <strong>R</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué distingue a un aminoácido de otro?",
+        "respuesta": "La cadena R, variable y específica de cada aminoácido."
+      },
+      "aplica": [
+        {
+          "caso": "Aminoácidos estándar.",
+          "opciones": [
+            "20",
+            "64"
+          ],
+          "buena": 0,
+          "porque": "64 son los codones."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es la traducción y de qué están hechas las proteínas?",
+        "puntos": [
+          "Síntesis de una proteína a partir de una molécula de ARNm",
+          "Los genes codifican proteínas",
+          "Las proteínas están formadas por aminoácidos (AA)",
+          "20 aminoácidos estándar; R = cadena específica de cada uno"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c45",
+      "n": 45,
+      "titulo": "Codones y el código genético",
+      "diapositivas": "92 y 93",
+      "gancho": "¿Cuántas letras necesitarías por «palabra» para tener al menos 20 palabras distintas con 4 letras?",
+      "profe": {
+        "img": "../bio3/repaso/img/d093.jpg",
+        "imgAlt": "La rueda del código genético (diap. 93)",
+        "dice": "<p>¿Cómo pasamos de un lenguaje 4 letras (A, C, G y U) a otro de 20 (AA)? Porque existe un código: <strong>el código genético</strong>.</p><p>El Código Genético es el diccionario que permite traducir una secuencia de nucleótidos a una secuencia de aminoácidos.</p><ul><li>Se basa en que una secuencia de <strong>3 nucleótidos</strong> codifica para un aminoácido.</li><li>Cada trío o triplete de nucleótidos se denomina <strong>codón</strong>.</li><li>¿Cuántos codones posibles existen? 4 bases nitrogenadas (A, C, G y U): 4³ = <strong>64</strong></li><li><strong>61 codones</strong> codifican para aminoácidos</li><li><strong>3 codones</strong> son codones de terminación.</li></ul>",
+        "entiende": "Con palabras de 3 letras y 4 letras posibles salen 4 × 4 × 4 = 64 palabras: de sobra para 20 aminoácidos y 3 señales de «fin».",
+        "truco": "<strong>4³ = 64 = 61 + 3</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no bastan palabras de 2 letras?",
+        "respuesta": "Porque con 4 letras de 2 en 2 solo hay 16 combinaciones, menos que 20 aminoácidos; de 3 en 3 salen 64."
+      },
+      "aplica": [
+        {
+          "caso": "Codones que codifican aminoácidos.",
+          "opciones": [
+            "61",
+            "64"
+          ],
+          "buena": 0,
+          "porque": "64 posibles − 3 de terminación."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica el código genético y el codón.",
+        "puntos": [
+          "Diccionario de nucleótidos a aminoácidos",
+          "3 nucleótidos codifican un aminoácido: codón",
+          "4³ = 64 codones posibles",
+          "61 para aminoácidos y 3 de terminación"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c46",
+      "n": 46,
+      "titulo": "Características del código",
+      "diapositivas": "94",
+      "gancho": "Si 61 codones tienen que repartirse 20 aminoácidos, ¿qué crees que pasa?",
+      "profe": {
+        "img": "../bio3/repaso/img/d094.jpg",
+        "imgAlt": "Tabla y características del código (diap. 94)",
+        "dice": "<ul><li><strong>Universal</strong> → Es el mismo para todos los organismos.</li><li><strong>No ambiguo</strong> → Cada codón codifica un único aminoácido.</li><li><strong>Degenerado</strong> → Hay 20 aminoácidos y 61 codones, en consecuencia → La mayor parte de los aminoácidos están codificados por más de un codón (<strong>codones sinónimos</strong>)</li><li><strong>Continuo y no solapado</strong> → En la cadena de ARNm, los codones se disponen de manera secuencial, uno a continuación del otro.</li></ul>",
+        "entiende": "No ambiguo y degenerado no se contradicen: un codón → un solo aminoácido (no ambiguo), pero un aminoácido ← varios codones (degenerado).",
+        "truco": "<strong>U-N-D-C</strong>: Universal, No ambiguo, Degenerado, Continuo."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el código es degenerado pero no ambiguo?",
+        "respuesta": "Degenerado porque la mayor parte de los aminoácidos tienen más de un codón (codones sinónimos); no ambiguo porque cada codón codifica un único aminoácido."
+      },
+      "aplica": [
+        {
+          "caso": "Es el mismo para todos los organismos.",
+          "opciones": [
+            "Universal",
+            "Degenerado"
+          ],
+          "buena": 0,
+          "porque": "Universal."
+        },
+        {
+          "caso": "Los codones van uno a continuación del otro.",
+          "opciones": [
+            "Continuo y no solapado",
+            "No ambiguo"
+          ],
+          "buena": 0,
+          "porque": "Continuo y no solapado."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las características del código genético.",
+        "puntos": [
+          "Universal: el mismo para todos",
+          "No ambiguo: cada codón, un único aminoácido",
+          "Degenerado: varios codones por aminoácido (sinónimos)",
+          "Continuo y no solapado"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c47",
+      "n": 47,
+      "titulo": "Inicio y STOP",
+      "diapositivas": "95",
+      "gancho": "Una frase necesita mayúscula al principio y punto al final. ¿Qué crees que hace de «mayúscula» y de «punto» en el ARNm?",
+      "profe": {
+        "dice": "<p><strong>Codones importantes del código genético</strong></p><ul><li>Todas las secuencias de ARNm que se van a traducir empiezan con el codón <strong>AUG</strong> que codifica para la <strong>Metionina (Met)</strong></li><li>Los codones <strong>UAA, UAG y UGA</strong> son codones de terminación o <strong>codones STOP</strong>.</li></ul>",
+        "entiende": "Toda proteína empieza por metionina (AUG). Y la traducción se para al llegar a cualquiera de los 3 STOP.",
+        "truco": "<strong>AUG = «¡Arranca!»</strong> · STOP: «<strong>U Are Away, U Are Gone, U Go Away</strong>» (UAA, UAG, UGA)."
+      },
+      "porque": {
+        "pregunta": "¿Con qué aminoácido empiezan todas las proteínas que se traducen?",
+        "respuesta": "Con metionina, porque todas las secuencias de ARNm que se traducen empiezan con el codón AUG."
+      },
+      "aplica": [
+        {
+          "caso": "Codón de inicio.",
+          "opciones": [
+            "AUG",
+            "UAG"
+          ],
+          "buena": 0,
+          "porque": "UAG es STOP."
+        },
+        {
+          "caso": "Codón STOP.",
+          "opciones": [
+            "UGA",
+            "AUG"
+          ],
+          "buena": 0,
+          "porque": "STOP: UAA, UAG, UGA."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di el codón de inicio y los de terminación.",
+        "puntos": [
+          "Inicio: AUG, que codifica metionina (Met)",
+          "STOP: UAA, UAG y UGA"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

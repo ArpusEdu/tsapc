@@ -1,0 +1,243 @@
+{
+  "schema": 1,
+  "id": "bio3-mutaciones",
+  "unidad": "bio3",
+  "bloque": 12,
+  "titulo": "Las mutaciones génicas",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 12, conceptos 52 a 56, diapositivas 106 a 110). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Una letra cambiada que no cambia nada",
+    "caso": "En un ARNm, el codón AAG cambia a AAA por una mutación. Al analizar la proteína, sale exactamente igual que antes: misma secuencia de aminoácidos.",
+    "pregunta": "¿Cómo puede cambiar el ADN sin que cambie la proteína?",
+    "solucion": "Es una mutación silenciosa: un nucleótido es sustituido por otro dando lugar a un codón que codifica el mismo aminoácido (AAG y AAA codifican los dos lisina), así que la secuencia de la proteína no cambia. Es posible porque el código genético es degenerado: la mayoría de aminoácidos tienen más de un codón.",
+    "claves": [
+      "Mutación silenciosa",
+      "Código degenerado: codones sinónimos",
+      "AAG y AAA → lisina"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c52",
+      "n": 52,
+      "titulo": "Qué es una mutación",
+      "diapositivas": "106",
+      "gancho": "Si una célula de tu piel sufre una mutación, ¿la heredarán tus hijos?",
+      "profe": {
+        "dice": "<p><strong>Mutación</strong>: cambio en la secuencia o estructura de ADN que ocurre de manera espontánea.</p><ul><li>Se produce un cambio en la información genética, que puede tener consecuencias (positivas o negativas) o no tenerlas.</li><li>Mutaciones en <strong>células somáticas</strong>: las células hijas heredan la mutación.</li><li>Mutaciones en <strong>células sexuales</strong>: la mutación se puede transmitir a la siguiente generación.</li></ul>",
+        "entiende": "Si la mutación está en una célula del cuerpo, la heredan sus células hijas; solo si está en un óvulo o espermatozoide puede pasar a los hijos.",
+        "truco": "<strong>Somática → células hijas</strong>; <strong>sexual → hijos</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué no todas las mutaciones pasan a la siguiente generación?",
+        "respuesta": "Porque solo las que ocurren en células sexuales se pueden transmitir a los hijos; las de células somáticas las heredan solo sus células hijas."
+      },
+      "aplica": [
+        {
+          "caso": "Mutación en un óvulo.",
+          "opciones": [
+            "Se puede transmitir a la siguiente generación",
+            "Solo la heredan sus células hijas"
+          ],
+          "buena": 0,
+          "porque": "Es una célula sexual."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es una mutación y cuándo se hereda?",
+        "puntos": [
+          "Cambio en la secuencia o estructura del ADN, espontáneo",
+          "Puede tener consecuencias (positivas o negativas) o no",
+          "Somáticas: las heredan las células hijas",
+          "Sexuales: se pueden transmitir a la siguiente generación"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c53",
+      "n": 53,
+      "titulo": "Cromosómicas y génicas",
+      "diapositivas": "106 y 107",
+      "gancho": "¿Es lo mismo cambiar una letra de una palabra que arrancar una página del libro?",
+      "profe": {
+        "dice": "<p><strong>TIPOS DE MUTACIONES</strong></p><ul><li>Mutaciones <strong>CROMOSÓMICAS</strong>: gran extensión (afectan a muchos genes). Ejemplo: deleciones, inserciones, translocaciones…</li><li>Mutaciones <strong>GÉNICAS</strong>: menor extensión (afectan a un gen y, por tanto, a la proteína que codifica ese gen).</li></ul><p>Las mutaciones génicas afectan a uno o varios nucleótidos, en lugar de a fragmentos extensos de ADN como ocurre en las mutaciones cromosómicas. Hay 3 tipos:</p><ul><li><strong>Inserciones</strong></li><li><strong>Deleciones</strong></li><li><strong>Sustituciones</strong></li></ul>",
+        "entiende": "Cromosómica = se mueve o se pierde un trozo grande (muchos genes). Génica = cambian una o pocas letras de un solo gen.",
+        "truco": "Génicas: <strong>I-D-S</strong> → Inserción, Deleción, Sustitución."
+      },
+      "porque": {
+        "pregunta": "¿Por qué una mutación génica afecta a una sola proteína?",
+        "respuesta": "Porque es de menor extensión: afecta a uno o varios nucleótidos de un gen, y por tanto a la proteína que codifica ese gen."
+      },
+      "aplica": [
+        {
+          "caso": "Translocación que afecta a muchos genes.",
+          "opciones": [
+            "Mutación cromosómica",
+            "Mutación génica"
+          ],
+          "buena": 0,
+          "porque": "Gran extensión."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara las mutaciones cromosómicas y las génicas.",
+        "puntos": [
+          "Cromosómicas: gran extensión, muchos genes (deleciones, inserciones, translocaciones…)",
+          "Génicas: uno o varios nucleótidos de un gen",
+          "3 tipos de génicas: inserciones, deleciones y sustituciones"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Las alteraciones de cromosomas enteros se ven en el cariotipo (Bio 2).",
+          "ruta": "#/sesion/bio2-cariotipo"
+        }
+      ]
+    },
+    {
+      "id": "bio3.c54",
+      "n": 54,
+      "titulo": "Inserción y deleción",
+      "diapositivas": "108",
+      "gancho": "El ARNm se lee de 3 en 3. ¿Qué pasa con todo lo que viene detrás si metes una letra de más?",
+      "profe": {
+        "img": "../bio3/repaso/img/d108.jpg",
+        "imgAlt": "Inserción y deleción (diap. 108)",
+        "dice": "<ul><li><strong>Inserción:</strong> Ganancia de uno o varios nucleótidos en la secuencia de ADN. Cuando ocurre en una región codificante (exón) puede haber un <strong>cambio en el marco de lectura</strong> que afecta al mRNA y a la proteína que codifica.</li><li><strong>Deleción:</strong> Pérdida de uno o varios nucleótidos en la secuencia de ADN. Cuando ocurre en una región codificante (exón) puede haber un cambio en el marco de lectura que afecta al mRNA y a la proteína que codifica.</li></ul><p>Si la inserción/deleción es de <strong>3 nucleótidos o múltiplo de 3</strong>: <strong>No hay cambio en el marco de lectura</strong>. Hay una adición o pérdida de aminoácidos.</p>",
+        "entiende": "Se lee de 3 en 3: si metes o quitas 1 letra, todos los tríos siguientes se descolocan. Si metes o quitas 3, solo sobra o falta un aminoácido.",
+        "truco": "«<strong>EL GATO SAL TÓ</strong>»: quita una letra y todo lo que sigue deja de tener sentido."
+      },
+      "porque": {
+        "pregunta": "¿Por qué una inserción de 3 nucleótidos no cambia el marco de lectura?",
+        "respuesta": "Porque 3 nucleótidos son un codón completo: los codones siguientes no se descolocan; solo se añade (o se pierde) un aminoácido."
+      },
+      "aplica": [
+        {
+          "caso": "Pérdida de un nucleótido en un exón.",
+          "opciones": [
+            "Deleción: puede cambiar el marco de lectura",
+            "Sustitución silenciosa"
+          ],
+          "buena": 0,
+          "porque": "Deleción."
+        },
+        {
+          "caso": "Deleción de 6 nucleótidos.",
+          "opciones": [
+            "No cambia el marco: se pierden aminoácidos",
+            "Cambia todo el marco"
+          ],
+          "buena": 0,
+          "porque": "6 es múltiplo de 3."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica la inserción y la deleción.",
+        "puntos": [
+          "Inserción: ganancia de uno o varios nucleótidos",
+          "Deleción: pérdida de uno o varios nucleótidos",
+          "En un exón pueden cambiar el marco de lectura",
+          "Si son de 3 o múltiplo de 3: no cambia el marco; se añaden o pierden aminoácidos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c55",
+      "n": 55,
+      "titulo": "Sustituciones",
+      "diapositivas": "109",
+      "gancho": "Cambias una letra de un codón. ¿Qué tres cosas distintas pueden pasar con el aminoácido?",
+      "profe": {
+        "img": "../bio3/repaso/img/d109.jpg",
+        "imgAlt": "Silenciosa, errónea y sin sentido (diap. 109)",
+        "dice": "<p><strong>Sustitución:</strong> Se sustituye algún nucleótido por otro. Cuando ocurre en una región codificante (exón), las sustituciones se clasifican en 3 grupos según sus consecuencias en la secuencia de la proteína.</p><ul><li><strong>M. silenciosa:</strong> Un nucleótido es sustiuido por otro dando lugar a un codón que codifica para el mismo aminoácido. La secuencia de la proteína NO cambia.</li><li><strong>M. errónea:</strong> Un nucleótido es sustiuido por otro dando lugar a un codón que codifica para otro aminoácido. La secuencia de la proteína SÍ cambia.</li><li><strong>M. sin sentido:</strong> Un nucleótido es sustiuido por otro dando lugar a un codón STOP. La secuencia de la proteína SÍ cambia, se ACORTA.</li></ul><p>*Si la mutación ocurre en una región no codificante no debería haber consecuencias</p>",
+        "entiende": "La silenciosa funciona gracias a que el código es degenerado: AAG y AAA dan los dos lisina. La sin sentido mete un STOP antes de tiempo.",
+        "truco": "<strong>Silenciosa = igual · Errónea = otro AA · Sin sentido = STOP, más corta</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la mutación sin sentido acorta la proteína?",
+        "respuesta": "Porque el nuevo codón es un STOP: la traducción termina antes de tiempo."
+      },
+      "aplica": [
+        {
+          "caso": "El codón cambiado codifica otro aminoácido.",
+          "opciones": [
+            "Errónea",
+            "Silenciosa"
+          ],
+          "buena": 0,
+          "porque": "Otro AA: errónea."
+        },
+        {
+          "caso": "Sustitución en una región no codificante.",
+          "opciones": [
+            "No debería tener consecuencias",
+            "Acorta la proteína"
+          ],
+          "buena": 0,
+          "porque": "No codifica proteína."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica los 3 tipos de sustitución.",
+        "puntos": [
+          "Silenciosa: mismo aminoácido; la proteína no cambia",
+          "Errónea: otro aminoácido; la proteína sí cambia",
+          "Sin sentido: codón STOP; la proteína se acorta",
+          "En región no codificante, no debería haber consecuencias"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c56",
+      "n": 56,
+      "titulo": "Consecuencias",
+      "diapositivas": "110",
+      "gancho": "Dos mutaciones erróneas cambian un aminoácido cada una. ¿Por qué una podría ser grave y la otra no?",
+      "profe": {
+        "dice": "<p>Estas mutaciones en el ADN, afectarán más o menos la proteína que se forma a partir del ARNm, dependiendo de qué aminoácido afecten.</p><p>Esto dependerá del papel que juegue el aminoácido en la estructura y función de la proteína a sintetizar.</p>",
+        "entiende": "No todos los aminoácidos pesan igual: si el cambiado es clave para la forma o la función de la proteína, la mutación será grave.",
+        "truco": "Gravedad = <strong>qué aminoácido</strong> toca."
+      },
+      "porque": {
+        "pregunta": "¿De qué depende la gravedad?",
+        "respuesta": "Del aminoácido afectado y del papel que juegue en la estructura y función de la proteína."
+      },
+      "aplica": [
+        {
+          "caso": "El aminoácido cambiado es clave para la función.",
+          "opciones": [
+            "La proteína se verá muy afectada",
+            "No importa"
+          ],
+          "buena": 0,
+          "porque": "Depende del papel del aminoácido."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿De qué depende el efecto de una mutación?",
+        "puntos": [
+          "Afecta más o menos a la proteína según el aminoácido",
+          "Depende de su papel en la estructura y la función de la proteína"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}

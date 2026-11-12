@@ -1,0 +1,196 @@
+{
+  "schema": 1,
+  "id": "bio3-flujo",
+  "unidad": "bio3",
+  "bloque": 6,
+  "titulo": "Del gen a la proteína y cómo se copia el ADN",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de Bio 3 (bloque 6, conceptos 24 a 27, diapositivas 49 a 57). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Media vieja, media nueva",
+    "caso": "Una célula va a dividirse y cada hija necesita una copia completa del ADN. Al analizar las moléculas nuevas, cada doble hélice tiene una cadena que ya existía y otra recién fabricada.",
+    "pregunta": "¿Cómo se llama esta forma de copiar el ADN, y en qué momento del ciclo ocurre?",
+    "solucion": "Es la replicación, y es semiconservativa: una hebra viene de la molécula original y la otra se sintetiza. Ocurre en la fase S de la interfase, cuando la célula se prepara para dividirse por mitosis o meiosis.",
+    "claves": [
+      "Replicación = ADN → 2 ADN idénticos",
+      "Semiconservativa",
+      "Fase S de la interfase"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "bio3.c24",
+      "n": 24,
+      "titulo": "El flujo de la información",
+      "diapositivas": "49 y 52",
+      "gancho": "Para usar una receta de un libro que no puede salir de la biblioteca, ¿qué harías primero?",
+      "profe": {
+        "dice": "<p><strong>DOGMA CENTRAL DE LA BIOLOGÍA</strong>: Del GEN a la PROTEÍNA.</p><p>El ADN almacena la información genética de un individuo, la transmite a los descendientes y dirige la síntesis de proteínas. Para llevar esto a cabo se dan distintos procesos:</p><ul><li><strong>Replicación</strong>: Duplicación del material genético, ADN (para la división celular: mitosis y meiosis).</li><li><strong>Transcripción</strong>: Síntesis de ARNm partiendo de ADN.</li><li><strong>Traducción</strong>: Síntesis de proteínas partiendo de ARNm.</li></ul>",
+        "entiende": "Copiar el libro entero (replicación), fotocopiar una receta (transcripción) y cocinarla (traducción).",
+        "truco": "<strong>Re-Trans-Tra</strong>: ADN→ADN, ADN→ARN, ARN→proteína."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hacen falta tres procesos y no uno?",
+        "respuesta": "Porque son tres trabajos distintos: duplicar el ADN para la división (replicación), sacar una copia en ARNm (transcripción) y fabricar la proteína a partir del ARNm (traducción)."
+      },
+      "aplica": [
+        {
+          "caso": "Síntesis de ARNm partiendo de ADN.",
+          "opciones": [
+            "Transcripción",
+            "Traducción"
+          ],
+          "buena": 0,
+          "porque": "Transcripción."
+        },
+        {
+          "caso": "Síntesis de proteínas partiendo de ARNm.",
+          "opciones": [
+            "Traducción",
+            "Replicación"
+          ],
+          "buena": 0,
+          "porque": "Traducción."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 3 procesos del flujo de la información.",
+        "puntos": [
+          "Dogma central: del gen a la proteína",
+          "Replicación: duplicación del ADN (mitosis y meiosis)",
+          "Transcripción: ARNm a partir de ADN",
+          "Traducción: proteínas a partir de ARNm"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c25",
+      "n": 25,
+      "titulo": "La replicación",
+      "diapositivas": "53",
+      "gancho": "¿En qué momento crees que la célula fotocopia su ADN: antes, durante o después de dividirse?",
+      "profe": {
+        "dice": "<p>Proceso por el cual una molécula de ADN se duplica para dar lugar a <strong>dos moléculas de ADN idénticas</strong>. Ocurre en la <strong>fase S de la interfase</strong>, cuando la célula se prepara para dividirse por mitosis o meiosis.</p>",
+        "entiende": "Antes de dividirse, la célula fotocopia todo su ADN para que cada hija se lleve una copia completa.",
+        "truco": "Fase <strong>S</strong> = <strong>S</strong>íntesis del ADN."
+      },
+      "porque": {
+        "pregunta": "¿Por qué tiene que ocurrir antes de la división?",
+        "respuesta": "Porque cada célula hija necesita una copia idéntica: por eso la replicación ocurre en la fase S de la interfase, cuando la célula se prepara para dividirse."
+      },
+      "aplica": [
+        {
+          "caso": "La replicación ocurre en…",
+          "opciones": [
+            "La fase S de la interfase",
+            "La metafase"
+          ],
+          "buena": 0,
+          "porque": "Fase S."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es la replicación y cuándo ocurre?",
+        "puntos": [
+          "Una molécula de ADN se duplica en dos idénticas",
+          "En la fase S de la interfase",
+          "Antes de dividirse por mitosis o meiosis"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Mitosis y meiosis, en Bio 2 («Cuántos cromosomas»).",
+          "ruta": "#/sesion/bio2-numero"
+        }
+      ]
+    },
+    {
+      "id": "bio3.c26",
+      "n": 26,
+      "titulo": "Semiconservativa y con orígenes",
+      "diapositivas": "54",
+      "gancho": "Un cromosoma humano es enorme. ¿Empezarías a copiarlo por un solo punto o por varios a la vez?",
+      "profe": {
+        "dice": "<p>Características generales de la replicación:</p><ol><li><strong>Semiconservativa:</strong> Una hebra viene de la molécula original y la otra se sintetiza.</li><li><strong>Comienza en un origen de replicación:</strong> el inicio de la replicación se da en puntos concretos.<ul><li>En procariotas: un <strong>único</strong> origen de replicación.</li><li>En eucariotas: <strong>más de un</strong> origen de replicación</li></ul></li></ol>",
+        "entiende": "Las dos cadenas se separan y cada una sirve de molde: al final, cada molécula conserva la mitad de la original.",
+        "truco": "<strong>Semi = la mitad</strong> se conserva. Bacteria = 1 origen; eucariota = muchos."
+      },
+      "porque": {
+        "pregunta": "¿Qué significa «semiconservativa»?",
+        "respuesta": "Que en cada molécula nueva una hebra viene de la original y la otra se sintetiza."
+      },
+      "aplica": [
+        {
+          "caso": "Orígenes de replicación en procariotas.",
+          "opciones": [
+            "Uno único",
+            "Varios"
+          ],
+          "buena": 0,
+          "porque": "En eucariotas, más de uno."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las dos primeras características de la replicación.",
+        "puntos": [
+          "Semiconservativa: una hebra original y otra nueva",
+          "Comienza en un origen de replicación (puntos concretos)",
+          "Procariotas: un único origen · eucariotas: más de uno"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "bio3.c27",
+      "n": 27,
+      "titulo": "Bidireccional y semidiscontinua",
+      "diapositivas": "55 a 57",
+      "gancho": "Si solo pudieras escribir en un sentido y las dos cadenas van al revés una de otra, ¿cómo copiarías las dos a la vez?",
+      "profe": {
+        "img": "../bio3/repaso/img/d057.jpg",
+        "imgAlt": "Hebra continua y retardada (diap. 57)",
+        "dice": "<ol start=\"3\"><li><strong>Bidireccional:</strong> La síntesis de las nuevas cadenas se produce en ambos sentidos usando las 2 cadenas de ADN como molde.</li><li><strong>Semidiscontinua:</strong> La síntesis de las cadenas nuevas se produce siempre en dirección 5’ → 3’. Problema: las hebras de ADN son antiparalelas.<ul><li>Se forma la <strong>burbuja de replicación</strong>, y el proceso ocurre hacia ambos lados y en las dos cadenas a la vez.</li><li>Una de las cadenas se sintetiza de manera <strong>continua</strong> (5’-3’): Cadena <strong>líder, conductora o continua</strong>.</li><li>La otra hebra se sintetiza de manera <strong>discontinua</strong>, en forma de fragmentos (<strong>fragmentos de Okazaki</strong>): Hebra <strong>retardada</strong>.</li></ul></li></ol>",
+        "entiende": "Solo se puede copiar en sentido 5’→3’. Como las cadenas van al revés una de otra, una se copia seguida y la otra «marcha atrás», a trocitos.",
+        "truco": "<strong>Semi-dis-continua</strong>: una continua + una discontinua = media y media."
+      },
+      "porque": {
+        "pregunta": "¿Por qué una de las hebras se copia a trozos?",
+        "respuesta": "Porque la síntesis es siempre 5’→3’ y las hebras son antiparalelas: una se sintetiza de forma continua y la otra, la retardada, en fragmentos de Okazaki."
+      },
+      "aplica": [
+        {
+          "caso": "Hebra que se sintetiza en fragmentos de Okazaki.",
+          "opciones": [
+            "Retardada",
+            "Conductora"
+          ],
+          "buena": 0,
+          "porque": "La conductora (líder, continua) va seguida."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica por qué la replicación es bidireccional y semidiscontinua.",
+        "puntos": [
+          "Bidireccional: en ambos sentidos, con las 2 cadenas como molde",
+          "Semidiscontinua: síntesis siempre 5’→3’ y hebras antiparalelas",
+          "Burbuja de replicación",
+          "Hebra líder/conductora continua; hebra retardada en fragmentos de Okazaki"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "bio2",
+      "bloques": []
+    },
+    {
+      "unidad": "bio1",
+      "bloques": []
+    }
+  ]
+}
