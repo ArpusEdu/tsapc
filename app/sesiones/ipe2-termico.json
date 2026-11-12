@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "ipe2-termico",
+  "unidad": "ipe2",
+  "bloque": 4,
+  "titulo": "El ambiente térmico",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de IPE 2 (bloque 4, conceptos 10 a 12, diapositiva 6). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "La panadería a 38 °C",
+    "caso": "En el obrador de una panadería se trabaja de pie y en movimiento junto a los hornos. El termómetro marca 38 °C.",
+    "pregunta": "¿Está dentro de lo permitido? ¿Qué le puede pasar a quien trabaja ahí?",
+    "solucion": "No. Para un trabajo ligero el rango es de 14 a 25 °C (y para uno sedentario, de 17 a 27 °C): 38 °C supera los límites. Hay estrés térmico por calor: sobrecarga térmica, deshidratación, lipotimia, agotamiento o golpe de calor y más accidentes por falta de atención.",
+    "claves": [
+      "Ligero 14-25 °C · sedentario 17-27 °C",
+      "Estrés térmico por calor",
+      "Lipotimia, golpe de calor, accidentes"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe2.c10",
+      "n": 10,
+      "titulo": "Ambiente térmico y temperaturas",
+      "diapositivas": "6",
+      "gancho": "¿Por qué crees que la temperatura permitida es distinta si trabajas sentado o moviéndote?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Ambiente térmico</strong> = conjunto de <strong>variables termohigrométricas</strong> (temperatura, humedad relativa, velocidad del aire…) que, junto al <strong>esfuerzo físico</strong> de la tarea, las <strong>características individuales</strong> y la <strong>indumentaria</strong>, pueden afectar a la seguridad y la salud.</li>\n<li>El ambiente térmico <strong>no depende del ruido</strong> (test 7).</li>\n<li>Las condiciones no deben suponer un riesgo ni una fuente de <strong>incomodidad o molestia</strong>.</li>\n</ul>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo de trabajo</th>\n<th>Temperatura</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Sedentario</strong> (sentado: oficina, clase)</td>\n<td><strong>17-27 °C</strong></td>\n</tr>\n<tr>\n<td><strong>Ligero</strong> (con algo de movimiento; \"no sedentario\" en el test)</td>\n<td><strong>14-25 °C</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li>Dentro del rango <strong>no hay queja</strong> (26 °C sentado es legal); fuera de <strong>17-27 °C</strong> en trabajo sedentario <strong>sí se puede reclamar</strong>. De la tabla solo importa la <strong>temperatura</strong>.</li>\n</ul>",
+        "entiende": "si te mueves, generas calor; por eso el trabajo <strong>ligero</strong> tiene temperaturas <strong>más bajas</strong> que el sentado.",
+        "truco": "<strong>\"Sentado, 17-27\"</strong> (las dos acaban en <strong>7</strong>: \"<strong>7</strong> de sentado\") · <strong>\"Ligero, 14-25\"</strong> (más fresco porque te mueves)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el trabajo ligero tiene un rango más bajo?",
+        "respuesta": "Porque al moverte generas calor."
+      },
+      "aplica": [
+        {
+          "caso": "Oficina a 26 °C.",
+          "opciones": [
+            "Dentro del rango sedentario",
+            "Se puede reclamar"
+          ],
+          "buena": 0,
+          "porque": "Sedentario: 17-27 °C."
+        },
+        {
+          "caso": "¿Depende el ambiente térmico del ruido?",
+          "opciones": [
+            "No",
+            "Sí"
+          ],
+          "buena": 0,
+          "porque": "No depende del ruido."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define ambiente térmico y di los rangos de temperatura.",
+        "puntos": [
+          "Variables termohigrométricas (temperatura, humedad, velocidad del aire)",
+          "Junto al esfuerzo, las características individuales y la ropa",
+          "Sedentario: 17-27 °C",
+          "Ligero: 14-25 °C"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c11",
+      "n": 11,
+      "titulo": "Estrés térmico, confort y sobrecarga",
+      "diapositivas": "6",
+      "gancho": "Hace muchísimo calor y sudas sin parar. ¿Cuál de las dos cosas es el «estrés» y cuál la «sobrecarga»?",
+      "profe": {
+        "dice": "<ul>\n<li>En situaciones extremas, cuando el organismo <strong>no puede regularse</strong>, se produce <strong>estrés térmico por calor o por frío</strong>.</li>\n<li>Si hay <strong>equilibrio</strong> entre el calor producido por el organismo y el que se cede al ambiente → <strong>confort térmico</strong>; si no → <strong>estrés térmico</strong>.</li>\n<li><strong>Sobrecarga térmica</strong> = <strong>respuesta fisiológica</strong> del cuerpo al estrés térmico.</li>\n</ul>",
+        "entiende": "<strong>estrés</strong> = lo que te pasa desde <strong>fuera</strong> (hace mucho calor); <strong>sobrecarga</strong> = cómo <strong>reacciona tu cuerpo</strong> (sudas, se te acelera el corazón).",
+        "truco": "<strong>\"El estrés viene de fuera, la sobrecarga es tu respuesta\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuándo hay confort térmico?",
+        "respuesta": "Cuando hay equilibrio entre el calor que produce el organismo y el que cede al ambiente."
+      },
+      "aplica": [
+        {
+          "caso": "Respuesta fisiológica del cuerpo al estrés térmico.",
+          "opciones": [
+            "Sobrecarga térmica",
+            "Confort térmico"
+          ],
+          "buena": 0,
+          "porque": "Sobrecarga = tu respuesta."
+        }
+      ],
+      "recuerda": {
+        "pide": "Diferencia estrés térmico, confort y sobrecarga.",
+        "puntos": [
+          "Estrés térmico: el organismo no puede regularse (calor o frío)",
+          "Confort: equilibrio entre calor producido y cedido",
+          "Sobrecarga térmica: respuesta fisiológica al estrés"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c12",
+      "n": 12,
+      "titulo": "Lipotimia e hipotermia",
+      "diapositivas": "6",
+      "gancho": "¿Por qué crees que importa tener la piel limpia para no recalentarse?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Lipotimia</strong></th>\n<th><strong>Hipotermia</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Tipo</td>\n<td>Estrés térmico <strong>por calor</strong></td>\n<td>Estrés térmico <strong>por frío</strong></td>\n</tr>\n<tr>\n<td>Qué es</td>\n<td><strong>Aumento brusco y sostenido</strong> de la temperatura del cuerpo</td>\n<td><strong>Pérdida de calor excesiva</strong></td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td>Inyección de plástico; desmayarse en un concierto deshidratado</td>\n<td><strong>Cámaras frigoríficas</strong> de la alimentación en Navarra</td>\n</tr>\n<tr>\n<td>Prevención</td>\n<td>1) <strong>Evitar cambios de temperatura</strong> 2) <strong>Ropa de trabajo adecuada</strong> 3) <strong>Limitar el tiempo de trabajo</strong> 4) <strong>Piel limpia e hidratada</strong> (poros abiertos → se suda → el cuerpo se refrigera)</td>\n<td>1) <strong>Ropa de trabajo adecuada</strong> 2) <strong>Limitar el tiempo de trabajo</strong> (rotación, <strong>turnos de menos de 8 h</strong>)</td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Ejercicio 6: panadería a 38 °C</strong> → supera los límites → <strong>estrés térmico por calor</strong>: <strong>sobrecarga térmica, deshidratación, lipotimia</strong>, <strong>agotamiento o golpe de calor</strong> y más <strong>accidentes</strong> por falta de atención.</li>\n</ul>",
+        "entiende": "la <strong>piel limpia e hidratada</strong> importa porque el cuerpo se enfría <strong>sudando</strong>; si los poros están tapados, no suda y se recalienta.",
+        "truco": "<strong>\"HIPO-termia = HIelo, POca temperatura\"</strong> → frío. La otra (lipotimia) es la del <strong>calor</strong>. Las dos comparten <strong>ropa adecuada + limitar tiempo</strong>; la lipotimia añade <strong>2 extra</strong>: <strong>cambios de temperatura</strong> y <strong>piel</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la piel limpia e hidratada previene la lipotimia?",
+        "respuesta": "Porque con los poros abiertos se suda y el cuerpo se refrigera."
+      },
+      "aplica": [
+        {
+          "caso": "Cámara frigorífica.",
+          "opciones": [
+            "Hipotermia",
+            "Lipotimia"
+          ],
+          "buena": 0,
+          "porque": "Estrés por frío."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara la lipotimia y la hipotermia.",
+        "puntos": [
+          "Lipotimia: estrés por calor, aumento brusco de la temperatura del cuerpo",
+          "Prevención: evitar cambios de temperatura, ropa, limitar tiempo, piel limpia e hidratada",
+          "Hipotermia: estrés por frío, pérdida de calor excesiva",
+          "Prevención: ropa adecuada y limitar el tiempo (rotación)"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

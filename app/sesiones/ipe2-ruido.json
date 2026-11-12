@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "id": "ipe2-ruido",
+  "unidad": "ipe2",
+  "bloque": 2,
+  "titulo": "Riesgos físicos y el ruido",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE 2 (bloques 1 y 2, conceptos 1 a 5, diapositivas 2 y 3). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Un taller a 86 decibelios",
+    "caso": "Mides el ruido de un taller y el nivel diario equivalente da 86 dB(A). La empresa ya da información y formación, y tiene tapones a disposición de quien los quiera.",
+    "pregunta": "¿Es suficiente? ¿Qué más está obligada a hacer?",
+    "solucion": "No es suficiente. 86 dB(A) supera los 85 dB(A) (nivel «naranja»): el EPI pasa a ser OBLIGATORIO, el riesgo tiene que estar señalizado y hay que poner en marcha un programa de medidas técnicas y organizativas (rotar, limitar el uso de la máquina, cambiar maquinaria). Además siguen la información, la formación y la vigilancia de la salud. No llega a 87 dB(A), el valor límite que nunca se puede superar.",
+    "claves": [
+      "80 · 85 · 87 dB(A)",
+      "Desde 85: EPI obligatorio y señalizar",
+      "87: nunca se supera"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe2.c1",
+      "n": 1,
+      "titulo": "Agentes contaminantes y riesgos físicos",
+      "diapositivas": "2",
+      "gancho": "El ruido, el calor o una radiación no son sustancias ni seres vivos. Entonces, ¿qué son?",
+      "profe": {
+        "dice": "<ul>\n<li>En el entorno laboral hay numerosos <strong>agentes contaminantes</strong> que pueden dañar la salud y generar <strong>enfermedades profesionales</strong> a <strong>corto, medio o largo plazo</strong>, y también originar <strong>accidentes de trabajo</strong>.</li>\n<li>Los <strong>riesgos físicos</strong> se producen por la <strong>exposición a agentes físicos</strong>: manifestaciones de distinto tipo de <strong>energía</strong> capaces de afectar a la salud y la seguridad de las personas en su trabajo y causarles enfermedades profesionales.</li>\n</ul>",
+        "entiende": "un agente físico <strong>no es una sustancia ni un ser vivo</strong>: es <strong>energía</strong> que te llega (sonido, temblor, calor, radiación)."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia una enfermedad profesional de un accidente de trabajo?",
+        "respuesta": "La enfermedad profesional aparece poco a poco por estar expuesto a un agente; el accidente es una lesión repentina."
+      },
+      "aplica": [
+        {
+          "caso": "Sordera tras años junto a una máquina ruidosa.",
+          "opciones": [
+            "Enfermedad profesional",
+            "Accidente de trabajo"
+          ],
+          "buena": 0,
+          "porque": "Aparece poco a poco."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué son los agentes contaminantes y los riesgos físicos?",
+        "puntos": [
+          "Agentes que pueden dañar la salud y causar enfermedades profesionales o accidentes",
+          "Riesgos físicos: exposición a agentes físicos",
+          "Agente físico: manifestaciones de energía que afectan a la salud y la seguridad"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c2",
+      "n": 2,
+      "titulo": "Los 4 riesgos físicos",
+      "diapositivas": "2",
+      "gancho": "Si todos los riesgos físicos son energía, ¿qué tipos de energía se te ocurren?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Energía</th>\n<th>Riesgo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Mecánica</strong></td>\n<td><strong>Ruido</strong> y <strong>vibraciones</strong></td>\n</tr>\n<tr>\n<td><strong>Térmica</strong></td>\n<td><strong>Ambiente térmico</strong> (ojo: <strong>no es solo calor, también frío</strong>)</td>\n</tr>\n<tr>\n<td><strong>Electromagnética</strong></td>\n<td><strong>Radiaciones</strong>: <strong>ionizantes</strong> (alteran los <strong>átomos</strong>) y <strong>no ionizantes</strong> (nivel <strong>molecular</strong>)</td>\n</tr>\n</tbody>\n</table></div>",
+        "entiende": "el ruido y la vibración son <strong>movimiento</strong> (mecánica): el ruido mueve el aire y la vibración mueve tu cuerpo.",
+        "truco": "<strong>\"Me-Te-El\"</strong> → <strong>Me</strong>cánica (ruido + vibración), <strong>Te</strong>rmica (frío y calor), <strong>El</strong>ectromagnética (radiaciones). <strong>Ionizantes = átomos</strong> (las dos palabras con \"a\" dentro: \"ionizAntes\" y \"Átomos\")."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ruido y las vibraciones van juntos?",
+        "respuesta": "Porque los dos son energía mecánica: el ruido mueve el aire y la vibración mueve el cuerpo."
+      },
+      "aplica": [
+        {
+          "caso": "Radiaciones que alteran los átomos.",
+          "opciones": [
+            "Ionizantes",
+            "No ionizantes"
+          ],
+          "buena": 0,
+          "porque": "Las no ionizantes actúan a nivel molecular."
+        },
+        {
+          "caso": "El frío de una cámara frigorífica.",
+          "opciones": [
+            "Ambiente térmico",
+            "Vibraciones"
+          ],
+          "buena": 0,
+          "porque": "Térmico: calor y también frío."
+        }
+      ],
+      "recuerda": {
+        "pide": "Clasifica los riesgos físicos según la energía.",
+        "puntos": [
+          "Mecánica: ruido y vibraciones",
+          "Térmica: ambiente térmico (calor y frío)",
+          "Electromagnética: radiaciones ionizantes (átomos) y no ionizantes (moléculas)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c3",
+      "n": 3,
+      "titulo": "El ruido y sus efectos",
+      "diapositivas": "3",
+      "gancho": "¿Crees que el ruido solo daña el oído?",
+      "profe": {
+        "dice": "<ul>\n<li>Es uno de los riesgos <strong>más extendidos</strong> en el ambiente laboral; para la profe, <strong>el agente laboral más extendido que existe</strong>.</li>\n<li><strong>Efectos:</strong> <strong>reducción de la capacidad auditiva</strong> (<strong>sordera o hipoacusia laboral</strong>) · alteración de los sistemas <strong>respiratorio y cardiovascular</strong> · <strong>trastornos digestivos y del sueño</strong> · <strong>aumento del riesgo de accidentes laborales</strong> (baja la <strong>atención</strong> y el <strong>tiempo de reacción</strong>).</li>\n<li>La <strong>hipoacusia laboral</strong> es una sordera muy específica, de <strong>leve a muy grave</strong>, hasta <strong>perder el oído</strong>.</li>\n<li>La normativa fija los <strong>valores de referencia</strong> que determinan la posibilidad de sufrir daño auditivo; la empresa debe <strong>adoptar medidas</strong> si se superan los valores que dan lugar a una <strong>acción</strong> o el <strong>valor límite</strong>.</li>\n</ul>",
+        "entiende": "el ruido no solo daña el oído: te estresa (corazón, respiración), te quita el sueño, te revuelve el estómago y te distrae, así que tienes más accidentes.",
+        "truco": "<strong>Truco de efectos:</strong> <strong>\"O-C-D-A\"</strong> → <strong>O</strong>ído, <strong>C</strong>orazón y respiración, <strong>D</strong>igestión y sueño, <strong>A</strong>ccidentes."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el ruido aumenta los accidentes?",
+        "respuesta": "Porque baja la atención y el tiempo de reacción."
+      },
+      "aplica": [
+        {
+          "caso": "Sordera laboral.",
+          "opciones": [
+            "Hipoacusia",
+            "Lipotimia"
+          ],
+          "buena": 0,
+          "porque": "Hipo = poco, acusia = oír."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los efectos del ruido.",
+        "puntos": [
+          "Reducción de la capacidad auditiva (hipoacusia laboral)",
+          "Alteración respiratoria y cardiovascular",
+          "Trastornos digestivos y del sueño",
+          "Más accidentes (menos atención y reacción)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c4",
+      "n": 4,
+      "titulo": "Nivel diario equivalente y nivel de pico",
+      "diapositivas": "3",
+      "gancho": "No es lo mismo una máquina sonando todo el día que una explosión de un segundo. ¿Cómo medirías cada una?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Nivel diario equivalente</strong></th>\n<th><strong>Nivel de pico</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Qué es</td>\n<td>Exposición <strong>continuada</strong> durante una <strong>jornada de 8 horas</strong></td>\n<td><strong>Valor máximo de presión sonora</strong> en un <strong>periodo muy breve</strong></td>\n</tr>\n<tr>\n<td>Unidad</td>\n<td><strong>dB(A)</strong></td>\n<td><strong>dB(C)</strong></td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td>Una máquina toda la jornada; maquinista de tren toda su vida laboral</td>\n<td>Una <strong>explosión</strong></td>\n</tr>\n<tr>\n<td>Para qué</td>\n<td>Ruido de la jornada o de muchas horas al día</td>\n<td>Pérdida auditiva por un <strong>accidente</strong> o hecho puntual</td>\n</tr>\n</tbody>\n</table></div>\n<p>El <strong>pico</strong> es muy difícil de medir (el sonido máximo dura <strong>1-2 segundos</strong>); por eso el rojo se mide mejor en diario equivalente.</p>",
+        "entiende": "el <strong>diario</strong> es como la <strong>media</strong> de ruido de todo tu día; el <strong>pico</strong> es el <strong>golpe más fuerte</strong> en un instante.",
+        "truco": "<strong>Truco de unidades:</strong> <strong>A de \"A diario\"</strong> → dB(A) · <strong>C de \"Cañonazo\"</strong> → dB(C). ¡<strong>Nunca las mezcles</strong>!"
+      },
+      "porque": {
+        "pregunta": "¿Por qué se usan unidades distintas?",
+        "respuesta": "Porque miden cosas distintas: el diario equivalente, la exposición de toda la jornada en dB(A); el pico, el máximo de un instante en dB(C)."
+      },
+      "aplica": [
+        {
+          "caso": "Una explosión.",
+          "opciones": [
+            "Nivel de pico, dB(C)",
+            "Nivel diario, dB(A)"
+          ],
+          "buena": 0,
+          "porque": "C de cañonazo."
+        },
+        {
+          "caso": "Una máquina toda la jornada.",
+          "opciones": [
+            "Nivel diario equivalente, dB(A)",
+            "Nivel de pico, dB(C)"
+          ],
+          "buena": 0,
+          "porque": "A de a diario."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara el nivel diario equivalente y el de pico.",
+        "puntos": [
+          "Diario: exposición continuada en 8 h, dB(A)",
+          "Pico: máximo de presión sonora en un instante, dB(C)",
+          "Diario: ruido de la jornada · pico: hecho puntual",
+          "El pico es muy difícil de medir"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c5",
+      "n": 5,
+      "titulo": "El semáforo del ruido",
+      "diapositivas": "3",
+      "gancho": "Si el ruido fuera un semáforo, ¿qué pasaría en amarillo, en naranja y en rojo?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Semáforo</th>\n<th>Diario equivalente</th>\n<th>Pico</th>\n<th>Qué obliga (cada nivel incluye el anterior)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Amarillo</strong></td>\n<td><strong>80 dB(A)</strong></td>\n<td><strong>135 dB(C)</strong></td>\n<td><strong>Información · formación · vigilancia de la salud con audiometrías · EPI a disposición, NO obligatorio</strong></td>\n</tr>\n<tr>\n<td><strong>Naranja</strong></td>\n<td><strong>85 dB(A)</strong></td>\n<td><strong>137 dB(C)</strong></td>\n<td><strong>EPI OBLIGATORIO</strong> · riesgo <strong>señalizado</strong> (paneles <strong>amarillos y azules</strong>) · <strong>programa de medidas técnicas y organizativas</strong> (rotar, limitar el uso de la máquina, cambiar maquinaria)</td>\n</tr>\n<tr>\n<td><strong>Rojo</strong></td>\n<td><strong>87 dB(A)</strong></td>\n<td><strong>140 dB(C)</strong></td>\n<td><strong>Nunca se puede superar</strong>: se <strong>deja de trabajar</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Información, formación y entrega de EPI</strong> están en <strong>todos los niveles</strong>.</li>\n<li><strong>Por debajo de 80 dB(A) no hay riesgo</strong>: no es obligatorio adoptar medidas (ejercicio 2: 74 dB(A)).</li>\n<li><strong>Audiometrías:</strong> en el ejemplo de 80-85 dB(A) la profe dijo <strong>audiometría cada 3 años</strong>. Según la norma: de <strong>80 a 85</strong> → <strong>evaluación cada 3 años</strong> y <strong>audiometría cada 5</strong>; <strong>por encima de 85</strong> → <strong>evaluación anual</strong> y <strong>audiometría cada 3</strong>. (Compruébalo en la tabla de tu diapositiva.)</li>\n<li><strong>Reclamaciones:</strong> de 80 a 85, si el trabajador pierde oído <strong>sin usar el EPI</strong>, <strong>se puede recurrir</strong> (no era obligatorio). Desde 85, si no se lo puso, <strong>la reclamación no prospera</strong>.</li>\n<li>Si se <strong>sobrepasa el valor límite</strong> → <strong>adoptar medidas inmediatas para reducir la exposición</strong> (test 5).</li>\n</ul>",
+        "entiende": "es un <strong>semáforo</strong>: en amarillo te avisan y te ofrecen tapones; en naranja te obligan a ponértelos; en rojo <strong>paras</strong>. Por eso, si te quedas sordo en amarillo sin tapones, la empresa tiene culpa (no era obligatorio, puedes recurrir); en naranja la culpa es tuya (era obligatorio).",
+        "truco": "<strong>Truco de números:</strong>"
+      },
+      "porque": {
+        "pregunta": "¿Por qué entre 80 y 85 se puede reclamar si pierdes oído sin tapones, y desde 85 no?",
+        "respuesta": "Porque entre 80 y 85 el EPI está a disposición pero no es obligatorio; desde 85 es obligatorio, así que si no te lo pusiste la reclamación no prospera."
+      },
+      "aplica": [
+        {
+          "caso": "74 dB(A).",
+          "opciones": [
+            "No es obligatorio adoptar medidas",
+            "EPI obligatorio"
+          ],
+          "buena": 0,
+          "porque": "Por debajo de 80 no hay riesgo."
+        },
+        {
+          "caso": "Pico de 140 dB(C).",
+          "opciones": [
+            "Valor límite: se deja de trabajar",
+            "Solo información"
+          ],
+          "buena": 0,
+          "porque": "Rojo."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los valores de ruido y qué obliga cada uno.",
+        "puntos": [
+          "Amarillo 80 dB(A) / 135 dB(C): información, formación, audiometrías, EPI a disposición",
+          "Naranja 85 / 137: EPI obligatorio, señalizar, programa de medidas",
+          "Rojo 87 / 140: nunca se supera, se deja de trabajar",
+          "Si se supera el límite: medidas inmediatas"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

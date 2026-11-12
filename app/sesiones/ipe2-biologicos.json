@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "id": "ipe2-biologicos",
+  "unidad": "ipe2",
+  "bloque": 7,
+  "titulo": "Los riesgos biológicos",
+  "minutos": 30,
+  "nota": "«profe»: copiado tal cual del repaso de IPE 2 (bloque 7, conceptos 24 a 29, diapositivas 14 a 16). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El pinchazo en Anatomía Patológica",
+    "caso": "Una técnica de Anatomía Patológica se pincha con una aguja mal desechada que se había usado con una muestra de un paciente con hepatitis.",
+    "pregunta": "¿Por qué vía ha entrado el agente, en qué grupo está y qué medidas tocan ahora?",
+    "solucion": "Ha entrado por vía parenteral: inoculación en las capas profundas de la piel (pinchazo). La hepatitis está en el grupo 3: enfermedad grave, serio peligro para los trabajadores y contagio bastante fácil. Ya ha llegado a la persona, así que toca actuar sobre el receptor: vacunas, tratamiento, aislamiento y control. Antes, las medidas habrían ido sobre el foco y el medio.",
+    "claves": [
+      "Pinchazo = parenteral (inoculación)",
+      "Hepatitis = grupo 3",
+      "Foco → medio → receptor"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe2.c24",
+      "n": 24,
+      "titulo": "Riesgo biológico",
+      "diapositivas": "14",
+      "gancho": "¿Te puedes contagiar fuera del trabajo y llevar el riesgo al laboratorio?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Riesgo biológico</strong> = posibilidad de sufrir cualquier tipo de <strong>infección, alergia o intoxicación</strong> derivada de la <strong>exposición o contacto con agentes biológicos</strong> (<strong>seres vivos</strong> que pueden causar enfermedades) en una actividad laboral.</li>\n<li>Son riesgos por <strong>seres vivos</strong> (virus, bacterias, protozoos…). Ojo: <strong>no todo pasa en el trabajo</strong>; en casa, con amigos, en el gimnasio o con <strong>mascotas</strong> te puedes contagiar y llevarlo al trabajo.</li>\n<li>El <strong>virus</strong> es el riesgo <strong>no generado por una forma de energía</strong> (test 2).</li>\n</ul>",
+        "truco": "<strong>\"I-A-I\" = Infección, Alergia, Intoxicación</strong> (la definición tiene esas 3)."
+      },
+      "porque": {
+        "pregunta": "¿Qué riesgo no está generado por una forma de energía?",
+        "respuesta": "El de un virus: los riesgos biológicos son seres vivos, no energía."
+      },
+      "aplica": [
+        {
+          "caso": "Las 3 cosas que puede causar según la definición.",
+          "opciones": [
+            "Infección, alergia o intoxicación",
+            "Ruido, calor o radiación"
+          ],
+          "buena": 0,
+          "porque": "I-A-I."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define riesgo biológico.",
+        "puntos": [
+          "Posibilidad de sufrir infección, alergia o intoxicación",
+          "Por exposición a agentes biológicos (seres vivos) en el trabajo",
+          "Virus, bacterias, protozoos…",
+          "También te puedes contagiar fuera y llevarlo al trabajo"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c25",
+      "n": 25,
+      "titulo": "Vías de entrada",
+      "diapositivas": "14",
+      "gancho": "Una salpicadura y un pinchazo: ¿entran por la misma vía?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Vía</th>\n<th>Cómo entra</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Respiratoria</strong></td>\n<td>Inhalando <strong>aerosoles</strong> del aire del ambiente laboral</td>\n</tr>\n<tr>\n<td><strong>Digestiva</strong></td>\n<td>Ingiriendo <strong>alimentos, agua</strong>, etc. contaminados</td>\n</tr>\n<tr>\n<td><strong>Dérmica</strong></td>\n<td>Cuando la <strong>piel o las mucosas</strong> entran en contacto con el agente</td>\n</tr>\n<tr>\n<td><strong>Parenteral</strong></td>\n<td>Por <strong>inoculación</strong> en las <strong>capas profundas de la piel</strong>: heridas, <strong>pinchazos, cortes, mordeduras</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>La <strong>parenteral</strong> es la que más se confunde con la de químicos: <strong>parenteral = inoculación</strong>, el agente entra <strong>en profundidad</strong>.\nVocabulario: solo los términos que la profe <strong>marcó en tu hoja</strong> (en la grabación no se entiende cuáles; la lista completa no entra).</p>",
+        "truco": "son <strong>las mismas 4 vías que en químicos</strong> (\"Respiro, me Ducho, Digiero y me Pincho\"). <strong>Dérmica = superficie</strong> (salpicadura) · <strong>Parenteral = profundidad</strong> (pinchazo)."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia la vía dérmica de la parenteral?",
+        "respuesta": "La dérmica es contacto con la piel o las mucosas (superficie); la parenteral, inoculación en las capas profundas (pinchazos, cortes, mordeduras)."
+      },
+      "aplica": [
+        {
+          "caso": "Mordedura de una rata de laboratorio.",
+          "opciones": [
+            "Parenteral",
+            "Dérmica"
+          ],
+          "buena": 0,
+          "porque": "Inoculación."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 4 vías de entrada de los biológicos.",
+        "puntos": [
+          "Respiratoria: aerosoles",
+          "Digestiva: alimentos o agua contaminados",
+          "Dérmica: contacto con piel o mucosas",
+          "Parenteral: inoculación (heridas, pinchazos, cortes, mordeduras)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c26",
+      "n": 26,
+      "titulo": "Efectos para la salud",
+      "diapositivas": "15",
+      "gancho": "El mismo microbio, ¿afecta igual a una persona sana que a una embarazada?",
+      "profe": {
+        "dice": "<ul>\n<li>Dependen de: la <strong>naturaleza del agente biológico</strong> · las <strong>condiciones de la exposición</strong> · las <strong>condiciones del trabajador</strong> (estado <strong>inmunológico</strong> o de salud y <strong>embarazo</strong>).</li>\n<li>Producen <strong>infecciones, alergias, efectos tóxicos y cáncer</strong> (ojo con el cáncer).</li>\n<li><strong>Infección:</strong> se puede <strong>contagiar</strong> a otros (puede llegar a <strong>epidemia o pandemia</strong>). <strong>Alergia:</strong> <strong>solo te afecta a ti</strong>; como mucho, la tendencia la hereda tu descendencia.</li>\n</ul>",
+        "entiende": "el daño depende de <strong>quién ataca</strong> (el agente), <strong>cómo ataca</strong> (la exposición) y <strong>a quién ataca</strong> (el trabajador: no es lo mismo una persona sana que una embarazada).",
+        "truco": "<strong>\"Quién, Cómo y A quién\"</strong>. <strong>Infección = se pega a otros · Alergia = solo tuya</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia una infección de una alergia?",
+        "respuesta": "La infección se puede contagiar a otros (hasta epidemia o pandemia); la alergia solo te afecta a ti."
+      },
+      "aplica": [
+        {
+          "caso": "Efecto de los agentes biológicos con el que hay que tener «ojo».",
+          "opciones": [
+            "Cáncer",
+            "Hipoacusia"
+          ],
+          "buena": 0,
+          "porque": "Infecciones, alergias, efectos tóxicos y cáncer."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿De qué dependen los efectos y cuáles son?",
+        "puntos": [
+          "Dependen del agente, de la exposición y del trabajador (inmunidad, embarazo)",
+          "Infecciones, alergias, efectos tóxicos y cáncer",
+          "Infección: contagiosa · alergia: solo tuya"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c27",
+      "n": 27,
+      "titulo": "Los 4 grupos",
+      "diapositivas": "15",
+      "gancho": "¿Qué dos cosas mirarías para decidir lo peligroso que es un microbio?",
+      "profe": {
+        "dice": "<p>El grupo depende de <strong>si existe tratamiento o profilaxis</strong> y de <strong>lo grave que se ponga la persona</strong>. Del <strong>1 (afecta menos)</strong> al <strong>4 (más mortal)</strong>:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Qué significa</th>\n<th>Ejemplo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1</strong></td>\n<td><strong>Poco probable</strong> que cause una enfermedad infecciosa</td>\n<td>Probablemente <strong><em>Bacillus subtilis</em></strong> (compruébalo en tu diapositiva)</td>\n</tr>\n<tr>\n<td><strong>2</strong></td>\n<td><strong>Puede causar</strong> enfermedad y ser un peligro para los trabajadores; <strong>hay tratamiento</strong></td>\n<td><strong>Gripe</strong></td>\n</tr>\n<tr>\n<td><strong>3</strong></td>\n<td>Enfermedad <strong>grave</strong>, <strong>serio peligro</strong> para los trabajadores, contagio <strong>bastante fácil</strong></td>\n<td><strong>Hepatitis</strong></td>\n</tr>\n<tr>\n<td><strong>4</strong></td>\n<td><strong>Mortal</strong>, <strong>muy contagiosa</strong> y <strong>sin tratamiento eficaz</strong></td>\n<td><strong>Ébola</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>Sin tratamiento eficaz = grupo 4</strong> (test 16).</p>",
+        "entiende": "es una <strong>escalera de peligro</strong>: 1 casi nada, 2 te pones malo pero hay cura, 3 grave y se pega fácil, 4 te mata y no hay cura.",
+        "truco": "<strong>\"Bacilo, Gripe, Hepatitis, Ébola\" van en orden B-G-H-E</strong>: piensa en una historia que empeora: <strong>un bacilo inofensivo → una gripe con cura → un hígado enfermo → el ébola mortal</strong>. Y el <strong>4 = sin cura</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Qué decide el grupo?",
+        "respuesta": "Si existe tratamiento o profilaxis y lo grave que se pone la persona."
+      },
+      "aplica": [
+        {
+          "caso": "Ébola.",
+          "opciones": [
+            "Grupo 4",
+            "Grupo 3"
+          ],
+          "buena": 0,
+          "porque": "Sin tratamiento eficaz."
+        },
+        {
+          "caso": "Gripe.",
+          "opciones": [
+            "Grupo 2",
+            "Grupo 4"
+          ],
+          "buena": 0,
+          "porque": "Hay tratamiento."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 grupos de agentes biológicos.",
+        "puntos": [
+          "1: poco probable que cause enfermedad",
+          "2: puede causarla; hay tratamiento (gripe)",
+          "3: grave, serio peligro, contagio fácil (hepatitis)",
+          "4: mortal, muy contagioso, sin tratamiento (ébola)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c28",
+      "n": 28,
+      "titulo": "Medidas preventivas",
+      "diapositivas": "16",
+      "gancho": "Un mono infectado en el laboratorio: ¿sobre qué actuarías primero?",
+      "profe": {
+        "dice": "<p>La empresa aplica medidas para <strong>romper la cadena de transmisión</strong>: primero en el <strong>foco u origen</strong>, después en el <strong>medio de difusión</strong> y por último <strong>medidas de protección individual</strong> sobre las personas.</p>\n<ol>\n<li><strong>Sobre el foco: limitar la proliferación</strong> del agente. Ej.: un <strong>mono infectado</strong> en un laboratorio; se actúa sobre él antes de que contamine.</li>\n<li><strong>Sobre el medio: evitar la dispersión</strong> cuando el agente ya ha salido del foco (el virus ya está por el laboratorio).</li>\n<li><strong>Sobre el receptor:</strong> proteger a la persona con <strong>vacunas</strong>, tratamiento, <strong>aislamiento</strong> y control. Ej.: el mono ha <strong>mordido</strong> a una trabajadora.</li>\n</ol>\n<ul>\n<li><strong>Actividades laborales con riesgo biológico</strong> (era una imagen): <strong>industria de alimentos</strong> · <strong>agricultura</strong> · <strong>trabajo con animales</strong> o productos de origen animal · <strong>trabajos sanitarios y post mortem</strong> · <strong>laboratorios clínicos, veterinarios y de diagnóstico</strong> · <strong>eliminación de residuos</strong> · <strong>depuración de aguas residuales</strong>.</li>\n<li>En el ejercicio hay que decir, para <strong>cada actividad laboral</strong>, <strong>qué medida de las 3</strong> corresponde.</li>\n<li>Caso práctico del libro: <strong>riesgo biológico (p. 55)</strong>.</li>\n</ul>",
+        "entiende": "💡 <strong>Entiéndelo con la historia del mono:</strong> el mono está infectado → actúas <strong>sobre el mono</strong> (foco: que el virus no se multiplique). El virus se escapa por el laboratorio → actúas <strong>sobre el laboratorio</strong> (medio: que no se disperse). El mono muerde a una trabajadora → actúas <strong>sobre ella</strong> (receptor: vacuna, aislamiento).",
+        "truco": "<strong>\"Mono enfermo → laboratorio sucio → trabajadora mordida\"</strong> = <strong>Foco → Medio → Receptor</strong>. Verbos: <strong>Limitar, Evitar, Proteger</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Para qué son las medidas?",
+        "respuesta": "Para romper la cadena de transmisión: primero en el foco, después en el medio y por último sobre las personas."
+      },
+      "aplica": [
+        {
+          "caso": "El virus ya se ha escapado por el laboratorio.",
+          "opciones": [
+            "Sobre el medio",
+            "Sobre el foco"
+          ],
+          "buena": 0,
+          "porque": "Evitar la dispersión."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las 3 medidas preventivas.",
+        "puntos": [
+          "Foco: limitar la proliferación del agente",
+          "Medio: evitar la dispersión",
+          "Receptor: vacunas, tratamiento, aislamiento y control",
+          "Actividades: alimentos, agricultura, animales, sanitarios, laboratorios, residuos, aguas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c29",
+      "n": 29,
+      "titulo": "En nuestro sector",
+      "diapositivas": "16",
+      "gancho": "Cuando talles una biopsia con el bisturí, ¿de qué tres formas te podría entrar un agente?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Sí hay exposición en Anatomía Patológica</strong>: muestras, <strong>biopsias</strong>, <strong>citologías</strong>, <strong>tallado</strong>, <strong>autopsias</strong> y laboratorio.</li>\n<li>Agentes: <strong>hepatitis B y C</strong>, <strong>VIH</strong>, <strong>tuberculosis</strong>, <strong>hongos</strong>, <strong>priones</strong>.</li>\n<li>Vías: <strong>parenteral</strong> (pinchazos, cortes), <strong>dérmica</strong> (salpicaduras) y <strong>respiratoria</strong> (aerosoles).</li>\n</ul>",
+        "entiende": "es <strong>tu futuro trabajo</strong>: cuando talles una biopsia con el bisturí te puedes <strong>cortar</strong> (parenteral), te puede <strong>salpicar</strong> (dérmica) o puedes <strong>respirar</strong> gotitas (respiratoria)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué hay riesgo biológico en Anatomía Patológica?",
+        "respuesta": "Porque se trabaja con muestras, biopsias, citologías, tallado, autopsias y laboratorio."
+      },
+      "aplica": [
+        {
+          "caso": "Agente biológico del sector.",
+          "opciones": [
+            "Hepatitis B y C",
+            "Radiofrecuencias"
+          ],
+          "buena": 0,
+          "porque": "También VIH, tuberculosis, hongos y priones."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué agentes y vías hay en Anatomía Patológica?",
+        "puntos": [
+          "Exposición: muestras, biopsias, citologías, tallado, autopsias, laboratorio",
+          "Agentes: hepatitis B y C, VIH, tuberculosis, hongos, priones",
+          "Vías: parenteral, dérmica y respiratoria"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Qué hacer tras un pinchazo, en Lab 2 («Accidentes»).",
+          "ruta": "#/sesion/lab2-accidentes"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

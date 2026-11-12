@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "id": "ipe2-radiaciones",
+  "unidad": "ipe2",
+  "bloque": 5,
+  "titulo": "Las radiaciones",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de IPE 2 (bloque 5, conceptos 13 a 15, diapositiva 7). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El delantal de la radiografía",
+    "caso": "Cuando te hacen una radiografía, te ponen un delantal pesado, el personal sale de la sala y en la puerta hay una señal de color. Con el microondas de casa no se toma ninguna de estas precauciones.",
+    "pregunta": "¿Por qué tanta protección con los rayos X? ¿De qué está hecho el delantal?",
+    "solucion": "Los rayos X son radiaciones ionizantes: tienen muchísima energía, provocan cambios atómicos y son las más peligrosas, con efectos agudos, tardíos (cataratas, enfermedades de la sangre, cáncer) y genéticos. Se protegen con recubrimientos de plomo, EPI, zonas clasificadas y señalizadas por colores, formación y vigilancia de la salud. El microondas emite radiaciones no ionizantes (CEM), que actúan a nivel molecular.",
+    "claves": [
+      "Rayos X = ionizante",
+      "Plomo y zonas por colores",
+      "Efectos agudos, tardíos y genéticos"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe2.c13",
+      "n": 13,
+      "titulo": "Origen y clasificación",
+      "diapositivas": "7",
+      "gancho": "¿Conoces alguna radiación natural a la que te expones todos los días?",
+      "profe": {
+        "dice": "<ul>\n<li>Algunas radiaciones tienen <strong>origen natural</strong> (como la <strong>radiación solar</strong>) y otras son <strong>artificiales</strong>. Son un riesgo muy extendido en la vida laboral y personal.</li>\n<li>Se clasifican <strong>según los efectos biológicos</strong> que provocan en <strong>no ionizantes</strong> e <strong>ionizantes</strong>.</li>\n<li><strong>Radiación</strong> = <strong>ondas y partículas electromagnéticas</strong> emitidas por determinadas materias o equipos.</li>\n<li>Las <strong>no ionizantes</strong> son las más importantes para vosotros (las usaréis en el <strong>laboratorio de prácticas</strong>). Los <strong>efectos para la salud sí entran</strong>.</li>\n</ul>"
+      },
+      "porque": {
+        "pregunta": "¿Según qué se clasifican?",
+        "respuesta": "Según los efectos biológicos que provocan: no ionizantes e ionizantes."
+      },
+      "aplica": [
+        {
+          "caso": "La radiación solar.",
+          "opciones": [
+            "Origen natural",
+            "Origen artificial"
+          ],
+          "buena": 0,
+          "porque": "Natural."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué es una radiación y cómo se clasifican?",
+        "puntos": [
+          "Ondas y partículas electromagnéticas emitidas por materias o equipos",
+          "Origen natural (solar) o artificial",
+          "No ionizantes e ionizantes, según sus efectos biológicos"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c14",
+      "n": 14,
+      "titulo": "No ionizantes",
+      "diapositivas": "7",
+      "gancho": "¿Qué crees que puede pasarte en los ojos si miras un eclipse sin gafas?",
+      "profe": {
+        "dice": "<ul>\n<li>Producen cambios a <strong>nivel molecular</strong>. Dos tipos:</li>\n<li><strong>CEM (campos electromagnéticos):</strong> las más conocidas son las <strong>microondas</strong> (concentran la energía en un punto para calentar). También las <strong>radiofrecuencias</strong> (test 10).</li>\n<li><strong>RO (radiaciones ópticas):</strong> luz <strong>visible</strong>, <strong>ultravioleta</strong>, <strong>infrarrojos</strong> y <strong>láser</strong>.</li>\n<li><strong>Efectos para la salud</strong> ★:</li>\n<li><strong>CEM, a corto plazo:</strong> <strong>calentamiento de los tejidos</strong> (como un quemazo), <strong>fallo del sistema nervioso</strong>, <strong>quemaduras con ampollas</strong>, <strong>náuseas</strong>, <strong>dolor de cabeza</strong>, <strong>fatiga y cansancio</strong>. También efectos a <strong>largo plazo</strong>.</li>\n<li><strong>RO:</strong> daños en la <strong>piel</strong> (quemaduras, lesiones) y en los <strong>ojos</strong>: desde <strong>conjuntivitis</strong> hasta <strong>cataratas</strong> o <strong>quemaduras de retina</strong> (mirar el <strong>eclipse sin gafas</strong>).</li>\n<li><strong>Medidas preventivas</strong> ★ (importantísimo):</li>\n<li><strong>Sobre el medio (importantísimo):</strong> <strong>barreras físicas</strong>, <strong>separar las zonas de trabajo</strong> y <strong>señalizar</strong> con <strong>señales amarillas de peligro</strong> (ionizantes, óptica/láser y no ionizantes, parecida al <strong>símbolo del wifi</strong>).</li>\n<li><strong>Organizativas:</strong> <strong>rotar a los trabajadores</strong>, para que no sea siempre la misma persona la expuesta; los efectos a largo plazo pueden ser <strong>mortales</strong>.</li>\n<li><strong>Sobre las personas:</strong> <strong>formación, información, EPI y vigilancia de la salud</strong> (revisiones médicas).</li>\n</ul>",
+        "entiende": "los <strong>CEM</strong> funcionan como un <strong>microondas</strong>: calientan por dentro (por eso queman y dan náuseas). Las <strong>RO</strong> son <strong>luz</strong>: dañan lo que la luz toca, la <strong>piel y los ojos</strong>.",
+        "truco": "<strong>CEM = \"Cocina\" (microondas y radio)</strong> · <strong>RO = \"Rayos de luz que dañan piel y Ojos\"</strong> (visible, UV, IR, láser = <strong>\"VUIL\"</strong>)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué los CEM queman?",
+        "respuesta": "Porque calientan los tejidos, como un microondas: concentran la energía en un punto."
+      },
+      "aplica": [
+        {
+          "caso": "Ultravioleta y láser.",
+          "opciones": [
+            "RO (radiaciones ópticas)",
+            "CEM"
+          ],
+          "buena": 0,
+          "porque": "RO: visible, UV, infrarrojos y láser."
+        },
+        {
+          "caso": "Medida «importantísima».",
+          "opciones": [
+            "Sobre el medio: barreras, separar zonas y señalizar",
+            "Solo dar EPI"
+          ],
+          "buena": 0,
+          "porque": "Sobre el medio."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las radiaciones no ionizantes.",
+        "puntos": [
+          "Cambios a nivel molecular",
+          "CEM (microondas, radiofrecuencias): calentamiento, quemaduras, náuseas, fatiga",
+          "RO (visible, UV, IR, láser): piel y ojos (conjuntivitis, cataratas, retina)",
+          "Medidas: sobre el medio, organizativas (rotar) y sobre las personas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c15",
+      "n": 15,
+      "titulo": "Ionizantes",
+      "diapositivas": "7",
+      "gancho": "¿Por qué crees que una radiación puede afectar incluso a tus futuros hijos?",
+      "profe": {
+        "dice": "<ul>\n<li>Tienen <strong>muchísima energía</strong> y provocan <strong>cambios atómicos</strong>. Son <strong>las más peligrosas</strong> (test 9).</li>\n<li><strong>De ondas:</strong> rayos <strong>X</strong> y rayos <strong>gamma</strong>. <strong>De partículas:</strong> rayos <strong>alfa</strong> y rayos <strong>beta</strong>.</li>\n<li><strong>Efectos para la salud</strong> (a nosotros y a la <strong>descendencia</strong>):\n  1. <strong>Agudos:</strong> <strong>vómitos</strong>, <strong>caída del pelo</strong>, afectación de las <strong>uñas</strong>, <strong>síntomas intestinales</strong>.\n  2. <strong>Tardíos:</strong> aparecen <strong>años después</strong>: <strong>cataratas</strong>, enfermedades de la <strong>sangre</strong>, distintos tipos de <strong>cáncer</strong>.\n  3. <strong>Genéticos:</strong> afectan al <strong>sistema reproductivo</strong>.</li>\n<li><strong>Medidas preventivas</strong> (importantísimo):</li>\n<li><strong>Clasificar y señalizar las zonas por colores</strong>, como un semáforo: <strong>gris la más leve</strong> y <strong>roja la más grave</strong>.</li>\n<li><strong>Recubrimientos de plomo</strong>, equipos, <strong>EPI</strong>, <strong>formación e información</strong>, <strong>vigilancia de la salud</strong> y <strong>clasificación de las personas trabajadoras</strong>.</li>\n</ul>",
+        "entiende": "son las de la <strong>radioterapia</strong> y las <strong>bombas atómicas</strong>: tanta energía que rompen los átomos y el ADN. Por eso dan <strong>cáncer</strong> y llegan a los <strong>hijos</strong> (genéticos). El <strong>plomo</strong> las frena (como el delantal de la radiografía).",
+        "truco": "<strong>Truco de tipos:</strong> <strong>\"X-Gamma son Ondas, Alfa-Beta son Bolitas (partículas)\"</strong> → las dos primeras letras del alfabeto griego son partículas."
+      },
+      "porque": {
+        "pregunta": "¿Por qué son las más peligrosas?",
+        "respuesta": "Porque tienen muchísima energía y provocan cambios atómicos."
+      },
+      "aplica": [
+        {
+          "caso": "Rayos alfa y beta.",
+          "opciones": [
+            "De partículas",
+            "De ondas"
+          ],
+          "buena": 0,
+          "porque": "X y gamma son ondas."
+        },
+        {
+          "caso": "Cáncer años después.",
+          "opciones": [
+            "Efecto tardío",
+            "Efecto agudo"
+          ],
+          "buena": 0,
+          "porque": "Agudos: vómitos, pelo, uñas, intestino."
+        }
+      ],
+      "recuerda": {
+        "pide": "Explica las radiaciones ionizantes.",
+        "puntos": [
+          "Muchísima energía, cambios atómicos: las más peligrosas",
+          "Ondas: X y gamma · partículas: alfa y beta",
+          "Efectos agudos, tardíos (cataratas, sangre, cáncer) y genéticos",
+          "Zonas por colores, plomo, EPI, formación, vigilancia de la salud"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

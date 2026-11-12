@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "id": "ipe2-quimicos",
+  "unidad": "ipe2",
+  "bloque": 6,
+  "titulo": "Riesgos químicos (I): cómo entran y qué hacen",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE 2 (bloque 6, conceptos 16 a 19, diapositivas 8 a 10). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "El rasguño y la mesa",
+    "caso": "Te rozas el brazo con el borde de una mesa del laboratorio que se limpió hace dos horas con un disolvente. Tenías un rasguño de ayer, y el disolvente entra por ahí.",
+    "pregunta": "¿Por qué vía ha entrado? ¿Sería la misma vía si fuera un microbio que entra con un pinchazo?",
+    "solucion": "Ha entrado por vía parenteral, en su versión química: el agente químico entra por una herida o discontinuidad de la piel que ya tenías, sin necesidad de pincharse. En los agentes biológicos la vía parenteral es distinta: entra un agente vivo por inoculación, con un pinchazo o un mordisco. La profe insistió en no confundirlas.",
+    "claves": [
+      "Parenteral química: herida que ya tenías",
+      "Parenteral biológica: inoculación",
+      "4 vías: respiratoria, dérmica, digestiva, parenteral"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe2.c16",
+      "n": 16,
+      "titulo": "Riesgo químico y exposición",
+      "diapositivas": "8",
+      "gancho": "¿Hace falta tocar un producto químico para estar expuesto a él?",
+      "profe": {
+        "dice": "<blockquote>\n<p><strong>Actualizado con lo que explicó la profe en clase (audio transcrito):</strong> las medidas de control son <strong>5</strong> (no 6), la <strong>diapositiva 12 (evaluación) no entra</strong> (\"no os lo pregunto\") y el <strong>Reglamento CLP no entra</strong> (\"no os lo voy a pedir\"). Aquí manda lo que dijo ella.</p>\n</blockquote>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Diap.</th>\n<th>Contenido</th>\n<th>¿Entra?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>8</td>\n<td>Definición y 4 vías de penetración</td>\n<td><strong>Entera</strong> (salvo el nº del Real Decreto)</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Los 3 grandes grupos de peligros</td>\n<td><strong>Parcial</strong>: los 3 grupos y lo <strong>verde</strong> de la tabla. CLP y lo blanco, no</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Etiqueta y pictogramas</td>\n<td><strong>Entera</strong>: \"esta sí que me interesa\"</td>\n</tr>\n<tr>\n<td>11</td>\n<td>Las fases de la prevención</td>\n<td><strong>Casi entera</strong> (la normativa no)</td>\n</tr>\n<tr>\n<td>12</td>\n<td>Evaluación del riesgo químico</td>\n<td><strong>NO ENTRA</strong></td>\n</tr>\n<tr>\n<td>13</td>\n<td>Las 5 medidas de control</td>\n<td><strong>Entera</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Riesgo químico</strong> = posibilidad de que una persona sufra un daño derivado de la <strong>exposición a agentes químicos</strong>.</li>\n<li>La exposición se produce al <strong>manipular</strong> productos químicos de manera deliberada en estado <strong>líquido, sólido o gaseoso</strong>, o cuando estos <strong>se emiten</strong> durante una actividad (en forma de <strong>polvo, humo, gas, vapores</strong>…).</li>\n<li><strong>Ejemplos de agentes químicos</strong> (clase): <strong>lejía, amoníaco, productos de esterilización, carburantes y comburentes</strong> (aceleradores del fuego).</li>\n</ul>",
+        "entiende": "o <strong>lo usas tú</strong> (manipular: limpiar con lejía) o <strong>te llega sin querer</strong> (se emite: el humo del asfalto)."
+      },
+      "porque": {
+        "pregunta": "¿De qué dos formas se produce la exposición?",
+        "respuesta": "Al manipular productos químicos de forma deliberada, o cuando se emiten durante una actividad (polvo, humo, gas, vapores…)."
+      },
+      "aplica": [
+        {
+          "caso": "Agente químico de los ejemplos de clase.",
+          "opciones": [
+            "Lejía",
+            "Un virus"
+          ],
+          "buena": 0,
+          "porque": "También amoníaco, carburantes, esterilizantes."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define riesgo químico y sus formas de exposición.",
+        "puntos": [
+          "Posibilidad de sufrir un daño por exposición a agentes químicos",
+          "Manipular de forma deliberada (líquido, sólido o gas)",
+          "O emitirse durante una actividad: polvo, humo, gas, vapores"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c17",
+      "n": 17,
+      "titulo": "Vías de penetración",
+      "diapositivas": "8",
+      "gancho": "¿Por qué partes de tu cuerpo podría entrar un químico?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Vía</th>\n<th>Cómo entra el químico</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Respiratoria</strong></td>\n<td>Al respirar gases, vapores, polvo o humos. <strong>Es la más frecuente</strong>; se evita, por ejemplo, con <strong>mascarilla</strong></td>\n</tr>\n<tr>\n<td><strong>Dérmica</strong></td>\n<td>A través de la <strong>piel y las mucosas</strong></td>\n</tr>\n<tr>\n<td><strong>Digestiva</strong></td>\n<td>Por la <strong>boca</strong> → esófago → estómago (con un alimento, agua; comer, beber o fumar con las manos contaminadas)</td>\n</tr>\n<tr>\n<td><strong>Parenteral</strong></td>\n<td>A través de <strong>heridas o discontinuidades de la piel</strong> que <strong>ya tenías</strong>: herida abierta, rasguño, postilla, fractura abierta (test 14)</td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>⚠️ OJO, la profe insistió (se confunde en el examen): la vía parenteral NO es igual en químicos que en biológicos.</strong></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Parenteral en QUÍMICOS</strong></th>\n<th><strong>Parenteral en BIOLÓGICOS</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Qué entra</td>\n<td>Un <strong>agente químico</strong></td>\n<td>Un <strong>agente vivo</strong> (microbio)</td>\n</tr>\n<tr>\n<td>Cómo</td>\n<td>Por una <strong>herida que ya tenías</strong>; no hace falta pincharse</td>\n<td>Por <strong>inoculación</strong>: un <strong>pinchazo o un mordisco</strong></td>\n</tr>\n<tr>\n<td>Ejemplo de clase</td>\n<td>Te raspas el brazo con una mesa limpiada hace 2 horas con un <strong>disolvente</strong>, y entra por la herida</td>\n<td>Te pinchas con una <strong>aguja</strong> mal desechada o te muerde una <strong>rata</strong> del laboratorio</td>\n</tr>\n</tbody>\n</table></div>",
+        "truco": "<strong>\"Res-Der-Dig-Par\"</strong> → \"<strong>R</strong>espiro, me <strong>D</strong>ucho, <strong>D</strong>igiero y me <strong>P</strong>incho\". Y para la parenteral: <strong>químico → \"herida\" (ya estaba abierta)</strong> · <strong>biológico → \"inoculación\" (te la hacen: pinchazo o mordisco)</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Cuál es la vía más frecuente?",
+        "respuesta": "La respiratoria: al respirar gases, vapores, polvo o humos."
+      },
+      "aplica": [
+        {
+          "caso": "Comer con las manos contaminadas.",
+          "opciones": [
+            "Digestiva",
+            "Dérmica"
+          ],
+          "buena": 0,
+          "porque": "Por la boca."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 4 vías de penetración de los químicos.",
+        "puntos": [
+          "Respiratoria: la más frecuente",
+          "Dérmica: piel y mucosas",
+          "Digestiva: por la boca",
+          "Parenteral: por una herida que ya tenías"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c18",
+      "n": 18,
+      "titulo": "Los 3 grandes grupos de peligros",
+      "diapositivas": "9",
+      "gancho": "Un químico puede hacer daño a algo más que a las personas. ¿A qué más?",
+      "profe": {
+        "dice": "<p>los agentes químicos son un riesgo para la <strong>salud</strong> de las personas, los <strong>lugares de trabajo</strong> y el <strong>medio ambiente</strong>. Se clasifican en <strong>3 grandes grupos</strong>: <strong>1) peligros físicos, 2) peligros para la salud, 3) peligros para el medio ambiente</strong>. De la tabla, <strong>solo lo verde</strong> (\"lo blanco, ni de palo\"):</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Peligros que explicó en clase</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Físicos</strong></td>\n<td><strong>Incendio</strong> · <strong>explosión</strong> · <strong>corrosión para los metales</strong> (ej.: el <strong>óxido</strong> de los edificios, sobre todo cerca de la playa)</td>\n</tr>\n<tr>\n<td><strong>2. Para la salud</strong></td>\n<td><strong>Toxicidad aguda</strong> · <strong>corrosivos</strong> para piel y ojos (hacen una llaga o un agujero) · <strong>irritantes</strong> para piel y ojos · <strong>sensibilizantes respiratorios</strong> (dañan las vías respiratorias al inhalarlos; ej.: mucho rato con un disolvente) · <strong>carcinógenos</strong> (cáncer) · <strong>mutágenos</strong> (mutación en los genes, puede pasar a la <strong>descendencia</strong>) · <strong>tóxicos para la reproducción</strong> (hombres y mujeres; ej.: tabaco, algunos aerosoles) · <strong>tóxicos específicos en determinados órganos</strong> (ej.: un niño que bebe detergente del lavavajillas se quema el estómago) · <strong>peligro por aspiración</strong> (llega al pulmón) · <strong>alteración del sistema endocrino</strong> (ej.: el tiroides; altera el crecimiento y el desarrollo)</td>\n</tr>\n<tr>\n<td><strong>3. Para el medio ambiente</strong></td>\n<td>Prácticamente <strong>todos los químicos son contaminantes</strong>, se echen al agua, al monte, como gas o como líquido</td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li>Los <strong>corrosivos</strong> tienen <strong>peligro físico (metales) y para la salud (piel y ojos)</strong> (test 12).</li>\n<li><strong>Comprueba en tu diapositiva cuáles están en verde</strong>: son los que entran.</li>\n</ul>",
+        "entiende": "<strong>físico</strong> = lo que le pasa a las <strong>cosas</strong> (arde, explota, se oxida); <strong>salud</strong> = lo que le pasa a tu <strong>cuerpo</strong>; <strong>medio ambiente</strong> = lo que le pasa a la <strong>naturaleza</strong>.",
+        "truco": "<strong>\"F-S-M\"</strong> → <strong>F</strong>ísicos, <strong>S</strong>alud, <strong>M</strong>edio ambiente. Físicos: <strong>\"Fuego, Bum y Óxido\"</strong>. <strong>Carcinógeno = cáncer</strong>, <strong>mutágeno = mutación</strong> (genes y descendencia)."
+      },
+      "porque": {
+        "pregunta": "¿Por qué los corrosivos están en dos grupos?",
+        "respuesta": "Porque tienen peligro físico (corroen metales) y para la salud (piel y ojos)."
+      },
+      "aplica": [
+        {
+          "caso": "Mutágeno.",
+          "opciones": [
+            "Peligro para la salud",
+            "Peligro físico"
+          ],
+          "buena": 0,
+          "porque": "Mutación en los genes."
+        },
+        {
+          "caso": "Explosión.",
+          "opciones": [
+            "Peligro físico",
+            "Peligro para el medio ambiente"
+          ],
+          "buena": 0,
+          "porque": "Fuego, bum y óxido."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 3 grandes grupos de peligros.",
+        "puntos": [
+          "Físicos: incendio, explosión, corrosión de metales",
+          "Para la salud: toxicidad aguda, corrosivos, irritantes, sensibilizantes, carcinógenos, mutágenos…",
+          "Para el medio ambiente: prácticamente todos contaminan"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c19",
+      "n": 19,
+      "titulo": "La etiqueta",
+      "diapositivas": "10",
+      "gancho": "Si encuentras un bote sin saber qué es, ¿qué te gustaría que dijera su etiqueta?",
+      "profe": {
+        "dice": "<ul>\n<li>La normativa obliga a que los productos con sustancias peligrosas tengan una <strong>etiqueta</strong> y una <strong>ficha de seguridad</strong> que informen de los <strong>riesgos</strong> y de las <strong>medidas preventivas</strong>, para trabajar de forma segura.</li>\n<li>La etiqueta se usa para <strong>indicar los peligros químicos y su naturaleza</strong> (test 13; la profe dijo que la b) \"se podría dar\", pero la c) es <strong>la más completa</strong>).</li>\n<li><strong>La etiqueta debe contener (7):</strong> 1) <strong>identificación del producto</strong> · 2) <strong>cantidad nominal</strong> de la sustancia o mezcla · 3) <strong>información del proveedor</strong> · 4) <strong>pictogramas de peligro</strong> · 5) <strong>palabras de advertencia</strong> · 6) <strong>indicaciones de peligro (H)</strong> · 7) <strong>consejos de prudencia (P)</strong>. Las frases <strong>H y P: \"muy importante\"</strong>.</li>\n<li><strong>Todos</strong> los productos químicos (sustancias y mezclas) deben llevar etiqueta de peligro.</li>\n<li><strong>La profe:</strong> todos los químicos tienen que estar <strong>bien ordenados, bien guardados y bien etiquetados</strong>. La etiqueta dice el <strong>nombre del compuesto</strong>, <strong>quién lo produce, lo vende y lo distribuye</strong> y <strong>en qué país se ha hecho</strong>: <strong>cuanta más información, más fácil controlar un accidente</strong>. Es <strong>internacional</strong>: los pictogramas identifican el riesgo <strong>aunque no conozcas el idioma</strong> (Sistema Mundialmente Armonizado, <strong>GHS</strong>).</li>\n<li>Ejemplos de productos químicos: <strong>fitosanitarios</strong> (pesticidas, plaguicidas, los que echa el abuelo en el huerto), <strong>lacas, aerosoles, acetonas</strong>…</li>\n</ul>",
+        "entiende": "la etiqueta es el <strong>DNI del producto</strong>: qué es, cuánto hay, quién lo vende, qué peligro tiene y qué hacer.",
+        "truco": "<strong>Truco de la H y la P:</strong> <strong>H = \"Hazard\" (peligro en inglés)</strong> · <strong>P = \"Prudencia\"</strong>. Las 7 en orden: <strong>\"Qué es → Cuánto → Quién → Dibujo → Aviso → H → P\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué la etiqueta es internacional?",
+        "respuesta": "Porque los pictogramas identifican el riesgo aunque no conozcas el idioma (Sistema Mundialmente Armonizado, GHS)."
+      },
+      "aplica": [
+        {
+          "caso": "Las frases H son…",
+          "opciones": [
+            "Indicaciones de peligro",
+            "Consejos de prudencia"
+          ],
+          "buena": 0,
+          "porque": "P = prudencia."
+        }
+      ],
+      "recuerda": {
+        "pide": "¿Qué debe contener la etiqueta?",
+        "puntos": [
+          "Identificación del producto y cantidad nominal",
+          "Información del proveedor",
+          "Pictogramas y palabras de advertencia",
+          "Indicaciones de peligro (H) y consejos de prudencia (P)"
+        ]
+      },
+      "conecta": [
+        {
+          "corte": true,
+          "texto": "Las etiquetas y los pictogramas en el laboratorio, en Lab 2.",
+          "ruta": "#/sesion/lab2-etiquetas"
+        }
+      ]
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

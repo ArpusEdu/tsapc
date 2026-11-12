@@ -1,0 +1,187 @@
+{
+  "schema": 1,
+  "id": "ipe2-vibraciones",
+  "unidad": "ipe2",
+  "bloque": 3,
+  "titulo": "Las vibraciones",
+  "minutos": 20,
+  "nota": "«profe»: copiado tal cual del repaso de IPE 2 (bloque 3, conceptos 6 a 9, diapositivas 4 y 5). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Los dedos blancos",
+    "caso": "Un obrero lleva años rompiendo aceras con un martillo neumático. Últimamente, se le quedan los dedos blancos, como si no les llegara sangre.",
+    "pregunta": "¿Qué tipo de exposición es, qué le pasa y cuáles son sus valores de referencia?",
+    "solucion": "Es una vibración del sistema mano-brazo (herramientas mecánicas portátiles como el martillo neumático). Los dedos blancos son el síndrome de Raynaud, una afección vascular por pérdida de circulación. Valores mano-brazo: 2,5 m/s² da lugar a una acción y 5 m/s² es el valor límite.",
+    "claves": [
+      "Herramienta en la mano → mano-brazo",
+      "Síndrome de Raynaud",
+      "2,5 → 5 m/s²"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe2.c6",
+      "n": 6,
+      "titulo": "Definición y modos",
+      "diapositivas": "4",
+      "gancho": "El ruido viaja por el aire. ¿Por dónde crees que viaja una vibración hasta tu cuerpo?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Vibración</strong> = todo <strong>movimiento oscilatorio</strong> transmitido al cuerpo humano <strong>por un elemento sólido</strong>, capaz de producir molestias o daños cuando parte de la <strong>energía</strong> generada es <strong>absorbida por el cuerpo humano</strong>.</li>\n<li>La definición <strong>entra</strong>. El daño depende de la energía transmitida y, muy importante, de la <strong>duración</strong>.</li>\n<li><strong>Dos modos de exposición</strong> (según la parte del cuerpo en contacto): <strong>sistema mano-brazo</strong> (a través de <strong>manos y brazos</strong> en <strong>tareas de agarre y sujeción</strong>) y <strong>cuerpo entero</strong> (a todo el cuerpo, <strong>sentado o de pie</strong>, a través de los <strong>asientos y plataformas</strong> de vehículos o máquinas).</li>\n</ul>",
+        "entiende": "el ruido viaja por el aire; la vibración viaja <strong>por algo sólido</strong> que tocas (el mango de una herramienta, el asiento de un camión).",
+        "truco": "<strong>\"lo que AGARRAS → mano-brazo; donde te SIENTAS o PISAS → cuerpo entero\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿De qué depende el daño?",
+        "respuesta": "De la energía transmitida y, muy importante, de la duración."
+      },
+      "aplica": [
+        {
+          "caso": "Conducir un camión.",
+          "opciones": [
+            "Cuerpo entero",
+            "Mano-brazo"
+          ],
+          "buena": 0,
+          "porque": "A través del asiento."
+        }
+      ],
+      "recuerda": {
+        "pide": "Define vibración y sus modos.",
+        "puntos": [
+          "Movimiento oscilatorio transmitido al cuerpo por un elemento sólido",
+          "Molestias o daños cuando el cuerpo absorbe energía",
+          "Mano-brazo: agarre y sujeción",
+          "Cuerpo entero: asientos y plataformas"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c7",
+      "n": 7,
+      "titulo": "Origen y efectos",
+      "diapositivas": "4 y 5",
+      "gancho": "¿Qué parte del cuerpo crees que sufre más un camionero tras años de baches?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Mano-brazo</strong></th>\n<th><strong>Cuerpo entero</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Origen</td>\n<td><strong>Herramientas mecánicas portátiles</strong>: martillo neumático, radiales, taladros, herramientas vibrátiles</td>\n<td><strong>Conducción de vehículos de transporte</strong> (camión, villavesa) y <strong>maquinaria industrial</strong> (tractores, cosechadoras)</td>\n</tr>\n<tr>\n<td>Efectos</td>\n<td>Afecciones <strong>vasculares</strong> (la más famosa, el <strong>síndrome de Raynaud</strong>: <strong>dedos blancos</strong> por pérdida de circulación), <strong>neurológicas</strong> y <strong>musculares</strong></td>\n<td>Afecciones de la <strong>columna vertebral</strong>, del sistema <strong>músculo-esquelético</strong> (<strong>hernias</strong>), del sistema <strong>circulatorio</strong>, <strong>malestar general</strong> y <strong>dolor de cabeza</strong></td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td>Romper una acera con martillo neumático</td>\n<td>Camionero con asiento de muelle que absorbe la vibración</td>\n</tr>\n</tbody>\n</table></div>\n<p>Como el cuerpo entero recibe toda la vibración, <strong>sus límites son mucho más bajos</strong>. Las <strong>herramientas manuales</strong> generan vibraciones del <strong>sistema mano-brazo</strong> (test 6).</p>",
+        "entiende": "la vibración en las manos <strong>aprieta los vasos sanguíneos</strong> y los dedos se quedan <strong>blancos</strong> (Raynaud). La del cuerpo entero machaca la <strong>espalda</strong> (columna, hernias).",
+        "truco": "<strong>Mano-brazo = \"Vasos, Nervios, Músculos\" (VNM)</strong> · <strong>Cuerpo entero = \"la espalda del camionero\"</strong>."
+      },
+      "porque": {
+        "pregunta": "¿Por qué los límites del cuerpo entero son más bajos?",
+        "respuesta": "Porque el cuerpo entero recibe toda la vibración."
+      },
+      "aplica": [
+        {
+          "caso": "Hernias y problemas de columna.",
+          "opciones": [
+            "Cuerpo entero",
+            "Mano-brazo"
+          ],
+          "buena": 0,
+          "porque": "Mano-brazo: vasos, nervios, músculos."
+        }
+      ],
+      "recuerda": {
+        "pide": "Compara el origen y los efectos de cada modo.",
+        "puntos": [
+          "Mano-brazo: herramientas portátiles (martillo neumático, radiales, taladros)",
+          "Efectos: vasculares (Raynaud), neurológicos, musculares",
+          "Cuerpo entero: vehículos y maquinaria (camión, tractores)",
+          "Efectos: columna, músculo-esquelético (hernias), circulatorio, malestar"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c8",
+      "n": 8,
+      "titulo": "Los valores de vibraciones",
+      "diapositivas": "5",
+      "gancho": "Si el cuerpo entero aguanta menos que la mano, ¿sus números serán más altos o más bajos?",
+      "profe": {
+        "dice": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Modo</th>\n<th>Valor que da lugar a una <strong>acción</strong></th>\n<th><strong>Valor límite</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Mano-brazo</strong></td>\n<td><strong>2,5 m/s²</strong></td>\n<td><strong>5 m/s²</strong></td>\n</tr>\n<tr>\n<td><strong>Cuerpo entero</strong></td>\n<td><strong>0,5 m/s²</strong></td>\n<td><strong>1,15 m/s²</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Valor de acción:</strong> lo que el cuerpo soporta mientras dura la tarea (levantar una acera, construir una pared).</li>\n<li><strong>Valor límite:</strong> <strong>no se puede pasar ni 2 segundos</strong>; si se supera, hay que <strong>parar</strong> o que lo haga otra persona, <strong>aunque se lleve EPI</strong>.</li>\n<li>Unidad siempre <strong>m/s²</strong>.</li>\n</ul>",
+        "truco": "<strong>Truco de números:</strong>"
+      },
+      "porque": {
+        "pregunta": "¿Qué pasa si se supera el valor límite?",
+        "respuesta": "No se puede pasar ni 2 segundos: hay que parar o que lo haga otra persona, aunque se lleve EPI."
+      },
+      "aplica": [
+        {
+          "caso": "Valor límite mano-brazo.",
+          "opciones": [
+            "5 m/s²",
+            "1,15 m/s²"
+          ],
+          "buena": 0,
+          "porque": "1,15 es el de cuerpo entero."
+        },
+        {
+          "caso": "Valor de acción cuerpo entero.",
+          "opciones": [
+            "0,5 m/s²",
+            "2,5 m/s²"
+          ],
+          "buena": 0,
+          "porque": "Cuerpo entero: números pequeños."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los valores de vibraciones.",
+        "puntos": [
+          "Mano-brazo: acción 2,5 m/s² · límite 5 m/s²",
+          "Cuerpo entero: acción 0,5 m/s² · límite 1,15 m/s²",
+          "Unidad siempre m/s²"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c9",
+      "n": 9,
+      "titulo": "Medidas frente a las vibraciones",
+      "diapositivas": "5",
+      "gancho": "Si no puedes quitar la vibración de la máquina, ¿qué otras cosas podrías hacer?",
+      "profe": {
+        "dice": "<ul>\n<li>Para prevenir la exposición y evitar o minimizar sus daños, se adoptan <strong>medidas de prevención y de protección</strong>.</li>\n<li>Primero, <strong>eliminar la vibración en su origen</strong>; si no se puede, <strong>reducirla al mínimo</strong> o <strong>reorganizar y rotar</strong>. <strong>Nunca hay riesgo 0</strong>: hay que adelantarse.</li>\n<li><strong>4 tipos de medidas:</strong>\n  1. <strong>Técnicas sobre el foco:</strong> controlar la vibración donde se genera; <strong>robots o brazos neumáticos</strong>; <strong>buen mantenimiento</strong> de herramientas y EPI.\n  2. <strong>Técnicas sobre el medio:</strong> <strong>aislantes</strong> y <strong>amortiguación</strong> (asientos, manguitos).\n  3. <strong>Organizativas:</strong> <strong>reducir el tiempo de exposición</strong>, cambiar tareas y <strong>aumentar los descansos</strong>.\n  4. <strong>Sobre las personas trabajadoras:</strong> la mejor <strong>formación</strong>, las mejores técnicas y los mejores <strong>EPI</strong>.</li>\n</ul>",
+        "truco": "<strong>\"F-M-O-P\"</strong> → <strong>F</strong>oco, <strong>M</strong>edio, <strong>O</strong>rganizativas, <strong>P</strong>ersonas (\"<strong>F</strong>ui a <strong>M</strong>adrid <strong>O</strong>tra <strong>P</strong>rimavera\"). Es la regla general origen → medio → receptor con las organizativas en medio."
+      },
+      "porque": {
+        "pregunta": "¿Por qué se empieza por el origen?",
+        "respuesta": "Porque lo primero es eliminar la vibración donde se genera; si no se puede, reducirla o reorganizar. Nunca hay riesgo 0."
+      },
+      "aplica": [
+        {
+          "caso": "Asientos amortiguados y manguitos.",
+          "opciones": [
+            "Técnicas sobre el medio",
+            "Organizativas"
+          ],
+          "buena": 0,
+          "porque": "Aislantes y amortiguación."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los 4 tipos de medidas.",
+        "puntos": [
+          "Técnicas sobre el foco: controlar donde se genera, mantenimiento",
+          "Técnicas sobre el medio: aislantes y amortiguación",
+          "Organizativas: menos tiempo, cambiar tareas, más descansos",
+          "Sobre las personas: formación, técnicas y EPI"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

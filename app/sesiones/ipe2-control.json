@@ -1,0 +1,196 @@
+{
+  "schema": 1,
+  "id": "ipe2-control",
+  "unidad": "ipe2",
+  "bloque": 6,
+  "titulo": "Riesgos químicos (II): pictogramas y control",
+  "minutos": 25,
+  "nota": "«profe»: copiado tal cual del repaso de IPE 2 (bloque 6, conceptos 20 a 23, diapositivas 10 a 13). «corte»: escrito a partir de ese mismo contenido.",
+  "misterio": {
+    "corte": true,
+    "titulo": "Lejía y amoníaco en el mismo armario",
+    "caso": "En un almacén, la lejía y el amoníaco están juntos en el suelo, un producto inflamable está al lado de un comburente y varios botes no tienen etiqueta.",
+    "pregunta": "¿Qué medidas está saltándose la empresa? ¿Y en qué orden debería controlar el riesgo químico?",
+    "solucion": "Se salta las medidas técnicas de almacenamiento: los productos deben estar bien etiquetados y guardados, no en el suelo (2-3 cm por encima, sobre una bandeja), separando los incompatibles (inflamable lejos de comburente), en armarios adecuados con ventilación y sin mezclar productos (lejía y amoníaco juntos son tóxicos). El orden de control es: eliminar, sustituir, medidas técnicas, organizativas y EPI.",
+    "claves": [
+      "E-S-T-O-E",
+      "No en el suelo; separar incompatibles",
+      "Lejía + amoníaco: tóxico"
+    ]
+  },
+  "conceptos": [
+    {
+      "id": "ipe2.c20",
+      "n": 20,
+      "titulo": "Los pictogramas",
+      "diapositivas": "10",
+      "gancho": "Una llama sola y una llama sobre un círculo. ¿Crees que significan lo mismo?",
+      "profe": {
+        "dice": "<p><strong>Rombo rojo con símbolo negro.</strong> Con saber <strong>un ejemplo</strong> de cada uno es suficiente.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Pictograma (nombre)</th>\n<th>Dibujo</th>\n<th>Dónde está presente (ejemplos de clase)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Explosivo</strong></td>\n<td><strong>Bomba explotando</strong></td>\n<td>Fuegos artificiales, municiones</td>\n</tr>\n<tr>\n<td><strong>Inflamable</strong></td>\n<td><strong>Llama</strong></td>\n<td>Aceites, <strong>aerosoles</strong> (el antimosquitos de casa)</td>\n</tr>\n<tr>\n<td><strong>Comburente</strong></td>\n<td><strong>Llama sobre un círculo</strong></td>\n<td>Aceleradores del fuego: <strong>cerillas</strong>, <strong>oxígeno de uso médico</strong></td>\n</tr>\n<tr>\n<td><strong>Gas a presión</strong></td>\n<td><strong>Bombona de gas</strong></td>\n<td>Bombonas, <strong>extintores</strong></td>\n</tr>\n<tr>\n<td><strong>Corrosivo</strong></td>\n<td><strong>Corrosión</strong> (gota que cae sobre una mano y sobre una superficie)</td>\n<td><strong>Desatascadores de tuberías</strong>, ácidos. Hace un agujero; afecta a personas y metales</td>\n</tr>\n<tr>\n<td><strong>Toxicidad aguda</strong></td>\n<td><strong>Calavera y tibias</strong></td>\n<td><strong>Plaguicidas</strong>, biocidas, <strong>metanol</strong></td>\n</tr>\n<tr>\n<td><strong>Peligro grave para la salud</strong></td>\n<td><strong>Silueta con estrella en el pecho</strong></td>\n<td><strong>Trementina</strong> (pintar al óleo), <strong>gasolina</strong> (cáncer, mutaciones…)</td>\n</tr>\n<tr>\n<td><strong>Peligro para la salud</strong> (irritante, nocivo, sensibilizante)</td>\n<td><strong>Signo de exclamación</strong></td>\n<td><strong>Limpiadores</strong>, líquidos refrigerantes</td>\n</tr>\n<tr>\n<td><strong>Peligro para el medio ambiente</strong></td>\n<td><strong>Árbol y pez muertos</strong></td>\n<td>Productos que contaminan el agua (plaguicidas)</td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Ejemplo de clase:</strong> un <strong>desatascador de tuberías</strong> lleva <strong>4 o 5 pictogramas</strong> a la vez (muy tóxico y muy corrosivo) y un <strong>tapón de seguridad</strong> para que no lo abra un niño.</li>\n<li><strong>Ejercicio 12 (desinfectante de Antonio):</strong> irrita vías respiratorias → <strong>signo de exclamación</strong> · lesiones oculares graves → <strong>corrosión</strong> · inflamable → <strong>llama</strong> · nocivo para organismos acuáticos → <strong>medio ambiente</strong>.</li>\n<li>El ejercicio 10 es un test online de pictogramas (hazlo en el móvil): pregunta estos mismos.</li>\n</ul>",
+        "truco": "<strong>Truco en 3 grupos:</strong> <strong>\"fuego\"</strong> → explosivo, inflamable, comburente, gas a presión · <strong>\"cuerpo\"</strong> → corrosivo, calavera, estrella en el pecho, exclamación · <strong>\"naturaleza\"</strong> → árbol y pez."
+      },
+      "porque": {
+        "pregunta": "¿Qué diferencia hay entre inflamable y comburente?",
+        "respuesta": "Inflamable (llama sola) arde; comburente (llama sobre un círculo) ayuda a que otro arda."
+      },
+      "aplica": [
+        {
+          "caso": "Calavera y tibias.",
+          "opciones": [
+            "Toxicidad aguda",
+            "Peligro grave para la salud"
+          ],
+          "buena": 0,
+          "porque": "Calavera = rápido; estrella en el pecho = lento."
+        },
+        {
+          "caso": "Árbol y pez muertos.",
+          "opciones": [
+            "Peligro para el medio ambiente",
+            "Corrosivo"
+          ],
+          "buena": 0,
+          "porque": "Medio ambiente."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los pictogramas con un ejemplo de cada uno.",
+        "puntos": [
+          "Fuego: explosivo, inflamable, comburente, gas a presión",
+          "Cuerpo: corrosivo, toxicidad aguda (calavera)",
+          "Peligro grave (estrella en el pecho), peligro para la salud (exclamación)",
+          "Naturaleza: medio ambiente (árbol y pez)"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c21",
+      "n": 21,
+      "titulo": "Las 3 fases de la prevención",
+      "diapositivas": "11",
+      "gancho": "Antes de tratar un riesgo, ¿qué dos cosas tendrías que saber?",
+      "profe": {
+        "dice": "<ul>\n<li>La empresa debe <strong>eliminar o reducir al mínimo</strong> el riesgo de exposición a agentes químicos peligrosos: determinar si existen, <strong>evaluarlos</strong> y, si hay riesgo, <strong>adoptar las medidas necesarias para controlarlos</strong>.</li>\n<li><strong>Las 3 fases:</strong>\n  1. <strong>Determinar</strong> la existencia del agente químico peligroso.\n  2. <strong>Evaluar</strong> el riesgo.\n  3. <strong>Controlar</strong> el riesgo.</li>\n<li>Sirven para que la empresa <strong>decida qué acciones de prevención</strong> va a llevar a cabo: que haya <strong>menos accidentes</strong> y, si ocurren (\"porque siempre ocurren\"), que sean <strong>lo menos graves posible</strong>.</li>\n</ul>",
+        "entiende": "como ir al médico: primero <strong>ves si tienes algo</strong> (determinar), luego <strong>miras lo grave que es</strong> (evaluar) y por último <strong>lo tratas</strong> (controlar).",
+        "truco": "<strong>\"D-E-C\"</strong> → <strong>D</strong>eterminar → <strong>E</strong>valuar → <strong>C</strong>ontrolar (\"<strong>DEC</strong>ide la empresa\")."
+      },
+      "porque": {
+        "pregunta": "¿Para qué sirven las fases?",
+        "respuesta": "Para que la empresa decida qué acciones de prevención llevar a cabo: menos accidentes y, si ocurren, lo menos graves posible."
+      },
+      "aplica": [
+        {
+          "caso": "Segunda fase.",
+          "opciones": [
+            "Evaluar el riesgo",
+            "Controlar el riesgo"
+          ],
+          "buena": 0,
+          "porque": "Determinar → evaluar → controlar."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 3 fases de la prevención del riesgo químico.",
+        "puntos": [
+          "1. Determinar la existencia del agente químico peligroso",
+          "2. Evaluar el riesgo",
+          "3. Controlar el riesgo"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c22",
+      "n": 22,
+      "titulo": "Las 5 medidas de control",
+      "diapositivas": "13",
+      "gancho": "¿Qué es mejor: dar mascarillas a todos o que ese producto no exista en el laboratorio?",
+      "profe": {
+        "dice": "<p>Cuando ya sabemos que existe el riesgo, la empresa adopta medidas para <strong>evitar o disminuir la exposición</strong>, siguiendo un <strong>orden de priorización</strong>:</p>\n<ol>\n<li><strong>Eliminar</strong> el agente químico (<strong>la primera</strong>, test 15). A veces no se puede, pero si el trabajo puede hacerse sin él, mejor.</li>\n<li><strong>Sustituir</strong> el agente <strong>por otro menos peligroso</strong>. Ej.: cambiar un producto de <strong>base alcohólica</strong> por uno de <strong>base acuosa</strong> (para esterilizar).</li>\n<li><strong>Medidas técnicas.</strong> La <strong>única nueva en químicos es el almacenamiento</strong>:\n   - <strong>Bien etiquetados, guardados y almacenados.</strong>\n   - <strong>No en el suelo</strong>: <strong>2 o 3 cm por encima</strong>, sobre una placa o bandeja, para que si se agujerea no contamine todo.\n   - <strong>Separar los incompatibles</strong>: no poner algo <strong>inflamable</strong> junto a un <strong>comburente</strong> (acelerador).\n   - En <strong>armarios adecuados</strong> y con <strong>buena ventilación</strong>.\n   - <strong>No mezclar productos</strong>: la <strong>lejía y el amoníaco</strong> juntos son tóxicos (\"fatal\").</li>\n<li><strong>Medidas organizativas</strong>: <strong>limitar el número de personas expuestas</strong>, <strong>rotar</strong> para que no sea siempre el mismo y <strong>más descansos</strong>.</li>\n<li><strong>EPI</strong> (equipos de protección individual): <strong>siempre lo último</strong>.</li>\n</ol>\n<p><strong>Regla general (test 11):</strong> frente a cualquier agente ambiental, el orden de las medidas es <strong>origen (foco) → medio → receptor</strong>.</p>",
+        "entiende": "va de <strong>lo más eficaz</strong> (que el químico no exista) a <strong>lo menos</strong> (proteger a la persona). Lo mejor es que el peligro <strong>no esté</strong>; si no, cámbialo por algo menos malo; si no, <strong>guárdalo bien</strong>; luego <strong>organiza</strong> a la gente y, al final, <strong>ponles el EPI</strong>.",
+        "truco": "<strong>\"E-S-T-O-E\"</strong> → <strong>E</strong>liminar → <strong>S</strong>ustituir → <strong>T</strong>écnicas → <strong>O</strong>rganizativas → <strong>E</strong>PI (\"<strong>ESTO E</strong>s lo que hay que hacer\")."
+      },
+      "porque": {
+        "pregunta": "¿Por qué el EPI va siempre el último?",
+        "respuesta": "Porque las medidas van de lo más eficaz (que el químico no exista) a lo menos (proteger a la persona)."
+      },
+      "aplica": [
+        {
+          "caso": "Cambiar un producto de base alcohólica por uno de base acuosa.",
+          "opciones": [
+            "Sustituir",
+            "Eliminar"
+          ],
+          "buena": 0,
+          "porque": "Por otro menos peligroso."
+        },
+        {
+          "caso": "Orden general frente a cualquier agente ambiental.",
+          "opciones": [
+            "Origen → medio → receptor",
+            "Receptor → medio → origen"
+          ],
+          "buena": 0,
+          "porque": "Origen (foco) → medio → receptor."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di las 5 medidas de control en orden.",
+        "puntos": [
+          "Eliminar el agente",
+          "Sustituir por otro menos peligroso",
+          "Medidas técnicas (almacenamiento)",
+          "Organizativas · EPI, siempre lo último"
+        ]
+      },
+      "conecta": []
+    },
+    {
+      "id": "ipe2.c23",
+      "n": 23,
+      "titulo": "Órganos que afectan",
+      "diapositivas": "13",
+      "gancho": "¿Cuánto tiempo crees que puede tardar en aparecer un cáncer por un químico?",
+      "profe": {
+        "dice": "<ul>\n<li><strong>Sistema nervioso</strong> → temblores, <strong>Parkinson</strong>, tumores cerebrales.</li>\n<li><strong>Aparato respiratorio</strong> → <strong>asma</strong>, neumonía, bronquitis, cáncer.</li>\n<li><strong>Riñones, vesícula e hígado</strong> → <strong>hepatitis</strong>, cáncer, enfermedades renales.</li>\n<li><strong>Piel y mucosas</strong> → irritaciones, <strong>alergias</strong>, úlceras.</li>\n<li><strong>Corazón y aparato circulatorio</strong> → <strong>anginas de pecho</strong>, <strong>infartos</strong>.</li>\n<li><strong>Sangre</strong> → <strong>anemia</strong>, <strong>leucemia</strong>.</li>\n<li>Los efectos pueden ser <strong>agudos</strong> o aparecer <strong>años después</strong> (<strong>cánceres hasta 40 años</strong>).</li>\n</ul>",
+        "truco": "recórrete el cuerpo <strong>de arriba abajo</strong>: <strong>cabeza</strong> (nervioso) → <strong>pecho</strong> (respiratorio, corazón) → <strong>barriga</strong> (hígado, riñones) → <strong>todo el cuerpo</strong> (piel, sangre)."
+      },
+      "porque": {
+        "pregunta": "¿Son siempre inmediatos los efectos?",
+        "respuesta": "No: pueden ser agudos o aparecer años después (cánceres hasta 40 años)."
+      },
+      "aplica": [
+        {
+          "caso": "Anemia y leucemia.",
+          "opciones": [
+            "Sangre",
+            "Sistema nervioso"
+          ],
+          "buena": 0,
+          "porque": "Sangre."
+        }
+      ],
+      "recuerda": {
+        "pide": "Di los órganos que afectan los químicos.",
+        "puntos": [
+          "Sistema nervioso: temblores, Parkinson, tumores",
+          "Respiratorio: asma, neumonía, bronquitis, cáncer · corazón: anginas, infartos",
+          "Riñones, vesícula e hígado · piel y mucosas",
+          "Sangre: anemia, leucemia"
+        ]
+      },
+      "conecta": []
+    }
+  ],
+  "otrosDias": [
+    {
+      "unidad": "lab2",
+      "bloques": []
+    },
+    {
+      "unidad": "ipe-tema5",
+      "bloques": []
+    }
+  ]
+}

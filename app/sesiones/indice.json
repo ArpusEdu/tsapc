@@ -70,6 +70,13 @@
     { "id": "fisio4-rinon", "unidad": "fisio4", "bloque": 10, "titulo": "El riñón y las vías urinarias", "minutos": 25, "pegatina": "corazon", "gancho": "un millón de filtros" },
     { "id": "fisio4-orina", "unidad": "fisio4", "bloque": 11, "titulo": "Formar orina y mucho más", "minutos": 25, "pegatina": "corazon", "gancho": "el riñón que fabrica sangre" },
     { "id": "fisio4-manifestaciones", "unidad": "fisio4", "bloque": 12, "titulo": "Lo que dice la orina y el cólico nefrítico", "minutos": 25, "pegatina": "corazon", "gancho": "muchas veces, pero poca" },
-    { "id": "fisio4-renal", "unidad": "fisio4", "bloque": 12, "titulo": "Infecciones, síndromes e insuficiencia renal", "minutos": 25, "pegatina": "corazon", "gancho": "fiebre y dolor en un lado" }
+    { "id": "fisio4-renal", "unidad": "fisio4", "bloque": 12, "titulo": "Infecciones, síndromes e insuficiencia renal", "minutos": 25, "pegatina": "corazon", "gancho": "fiebre y dolor en un lado" },
+    { "id": "ipe2-ruido", "unidad": "ipe2", "bloque": 2, "titulo": "Riesgos físicos y el ruido", "minutos": 25, "pegatina": "sonometro", "gancho": "un taller a 86 decibelios" },
+    { "id": "ipe2-vibraciones", "unidad": "ipe2", "bloque": 3, "titulo": "Las vibraciones", "minutos": 20, "pegatina": "sonometro", "gancho": "los dedos blancos" },
+    { "id": "ipe2-termico", "unidad": "ipe2", "bloque": 4, "titulo": "El ambiente térmico", "minutos": 20, "pegatina": "sonometro", "gancho": "la panadería a 38 °C" },
+    { "id": "ipe2-radiaciones", "unidad": "ipe2", "bloque": 5, "titulo": "Las radiaciones", "minutos": 20, "pegatina": "sonometro", "gancho": "el delantal de la radiografía" },
+    { "id": "ipe2-quimicos", "unidad": "ipe2", "bloque": 6, "titulo": "Riesgos químicos (I): cómo entran y qué hacen", "minutos": 25, "pegatina": "sonometro", "gancho": "el rasguño y la mesa" },
+    { "id": "ipe2-control", "unidad": "ipe2", "bloque": 6, "titulo": "Riesgos químicos (II): pictogramas y control", "minutos": 25, "pegatina": "sonometro", "gancho": "lejía y amoníaco en el mismo armario" },
+    { "id": "ipe2-biologicos", "unidad": "ipe2", "bloque": 7, "titulo": "Los riesgos biológicos", "minutos": 30, "pegatina": "sonometro", "gancho": "el pinchazo en Anatomía Patológica" }
   ]
 }
