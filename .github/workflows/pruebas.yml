@@ -13,6 +13,6 @@ jobs:
         with:
           node-version: 24
       - name: Pruebas
-        run: node --test tests/
+        run: node --test "tests/*.test.mjs"
       - name: Repasos generados al día
         run: for u in bio3 fisio4 ipe-tema4; do node scripts/repaso.mjs "$u" --comprobar; done
