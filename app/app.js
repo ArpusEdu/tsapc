@@ -162,13 +162,13 @@
       '<a class="nota-boton amarilla" href="#/agenda/calendario"><b>Calendario</b><span class="mano">mes y curso</span></a>' +
       '<a class="nota-boton" data-subject="lab" href="#/asignaturas"><b>Unidades</b><span class="mano">repaso y simulacro</span></a>' +
       '<a class="nota-boton lila" href="../centro/"><b>El centro</b><span class="mano">el pasillo y las salas en 3D</span></a></div></section>' +
-      "</div>";
+      "</div>" + (G ? '<p class="guia-pie"><a href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p>" : "");
     return { sec: "hoy", titulo: "Hoy", html: html, tic: true };
   }
 
   /* primer uso: una nota de bienvenida en Hoy hasta que se cierra (prefs.bienvenida). Si ya hay progreso guardado, no sale. */
   function bienvenida() {
-    if (prefs().bienvenida) return "";
+    if (prefs().bienvenida || prefs().guiaVista) return "";
     var u = leer("unidades", {}), pl = leer("personal.planta", []);
     if ((u && typeof u === "object" && Object.keys(u).length) || (Array.isArray(pl) && pl.length) || Object.keys(hechas()).length) return "";
     return '<section class="bienvenida recuadro" aria-labelledby="hBv"><span class="washi" aria-hidden="true"></span>' + pegatina("microscopio", "lab", "quieta") +
@@ -184,9 +184,9 @@
       var p = HOJAS[i], sz = 1 - i * 0.035;
       hojas += '<g class="hoja-p" transform="translate(' + p[0] + " " + p[1] + ") scale(" + (p[2] * sz) + " " + sz + ')"><path d="M0 0 C6 -12 20 -14 28 -10 C22 -2 12 4 0 0 Z"/><path class="vena" d="M1 -1 C9 -6 17 -9 25 -10"/></g>';
     }
-    return '<div class="planta" id="planta" data-subject="sost"><svg viewBox="0 0 118 150" role="img" aria-labelledby="plT"><title id="plT">Planta dibujada con ' + nd + (nd === 1 ? " hoja" : " hojas") + ': una por cada día con algo tachado</title>' +
+    return '<div class="planta" id="planta" data-subject="sost"><svg viewBox="0 0 118 150" role="img" aria-labelledby="plT"><title id="plT">Planta dibujada con ' + nd + (nd === 1 ? " hoja" : " hojas") + ': una por cada día con algo hecho</title>' +
       '<path class="tallo" d="M59 118 C57 98 63 84 58 66 C54 50 62 36 59 18"/><g>' + hojas + '</g><path class="maceta" d="M30 112 H88 L80 146 H38 Z"/><rect class="maceta-borde" x="26" y="106" width="66" height="12" rx="3"/></svg>' +
-      '<div><p class="racha num">' + nd + "<small>" + (nd === 1 ? "día" : "días") + "</small></p><p>Cada día que tachas algo, sale una hoja. Un mal día no la seca: la planta espera a que vuelvas.</p></div></div>";
+      '<div><p class="racha num">' + nd + "<small>" + (nd === 1 ? "día" : "días") + "</small></p><p>Cada día que estudias o tachas algo, sale una hoja. Un mal día no la seca: la planta espera a que vuelvas.</p></div></div>";
   }
 
   function tachar(btn) {
@@ -552,6 +552,7 @@
       '<div><h3>Android (Chrome)</h3><ol><li>Abre esta página en Chrome.</li><li>Toca el menú <b>⋮</b> de arriba a la derecha.</li><li>Elige <b>Instalar aplicación</b> o <b>Añadir a pantalla de inicio</b>.</li></ol></div>' +
       '<div><h3>Ordenador (Chrome o Edge)</h3><ol><li>En la barra de direcciones, pulsa el icono de instalar.</li><li>Confirma con <b>Instalar</b>.</li></ol></div></div>' +
       '<p class="sub">Después de la primera visita funciona sin conexión.</p></section>' +
+      (G ? '<section aria-labelledby="hGu"><h2 id="hGu">La guía</h2><p class="sub">Todo lo que hay en Corte y cómo se usa, en ocho páginas.</p><p><a class="boton secundario" href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p></section>" : "") +
       '<section aria-labelledby="hCr"><h2 id="hCr">Letras</h2><ul class="creditos"><li><b class="f-fraunces">Fraunces</b> · The Fraunces Project Authors (Undercase Type)</li><li><b>Atkinson Hyperlegible</b> · Braille Institute of America</li><li><b class="num">Atkinson Hyperlegible Mono</b> · The Atkinson Hyperlegible Mono Project Authors</li><li><b class="mano">Caveat</b> · The Caveat Project Authors</li></ul><p class="sub">Todas con licencia SIL Open Font License 1.1. <a href="../assets/corte/fuentes/OFL.txt">Leer la licencia</a>.</p></section>' +
       '<section aria-labelledby="hWe"><h2 id="hWe">La web de siempre</h2><p>La portada de antes sigue igual, con todos los repasos y simulacros.</p><p><a class="boton secundario" href="../">Ir a la portada de siempre</a></p></section>' +
       "</div>";
@@ -615,12 +616,15 @@
   }
   var SS = window.CorteSesion ? window.CorteSesion({ examen: examenGuia, D: D, A: A, esc: esc, ico: ico, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion, rico: E.rico,
     pintar: function (q) { pintar(q); }, repintar: repintar }) : null;
+  /* guía de bienvenida (app/bienvenida.js): sale sola la primera vez; #/guia para volver a verla */
+  var G = window.CorteGuia ? window.CorteGuia({ leer: leer, guardar: guardar, M: M, sesionHoy: function () { return SS && SS.sesionHoy ? SS.sesionHoy() : null; } }) : null;
+  function pGuia() { return G ? G.pantalla() : pNada(); }
   function pSesionE(id) { return SS ? SS.sesion(id) : pNada(); }
   function pPractica(id, a2) { return E.practica(id, a2) || pNada(); }
   function pTarjetas(id) { return E.tarjetas(id) || pNada(); }
 
   /* ================= rutas y pintado ================= */
-  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas, sesion: pSesionE };
+  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas, sesion: pSesionE, guia: pGuia };
   function leerRuta() {
     var h = location.hash.replace(/^#\/?/, ""), p = h.split("/");
     var arg = null, arg2 = null; try { arg = p[1] ? decodeURIComponent(p[1]) : null; arg2 = p[2] ? decodeURIComponent(p[2]) : null; } catch (_) {}
@@ -726,6 +730,7 @@
   /* ---------- arranque ---------- */
   aplicarTema(prefs().tema);
   if (!location.hash) history.replaceState(null, "", location.pathname + location.search + "#/hoy");
+  if (G && G.debeMostrar(location.hash)) history.replaceState(null, "", location.pathname + location.search + "#/guia");
   pintar(true);
   cargarAgenda();
   try { if (S.persistir) S.persistir(); } catch (_) {}

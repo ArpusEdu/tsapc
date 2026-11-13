@@ -449,7 +449,9 @@
       }).join("") + "</ol></section>";
     }
 
-    return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque };
+    /* el enlace de la sesión que toca hoy (lo usa la guía) */
+    function sesionHoy() { var s = siguienteGuiada(""); return s ? "#/sesion/" + encodeURIComponent(s.id) : null; }
+    return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque, sesionHoy: sesionHoy };
   }
 
   return { crear: crear, L: { nota: nota, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, siguienteSesion: siguienteSesion, siguienteParaExamen: siguienteParaExamen, PASOS: PASOS } };

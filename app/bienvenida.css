@@ -1,0 +1,121 @@
+/* Corte · la guía de bienvenida (#/guia). Sin capa: gana a las piezas sin !important.
+   Solo tokens --c-* y del sistema. Movimiento: solo transform y opacity, con las curvas del sistema. */
+
+/* mientras se ve la guía, la barra inferior se aparta: los mandos de la guía van abajo, al alcance del pulgar */
+html.en-guia .barra-inferior{display:none}
+html.en-guia body{padding-bottom:0}
+
+.guia{display:grid;grid-template-rows:auto 1fr auto;gap:var(--e-4);min-height:calc(100vh - 110px);min-height:calc(100dvh - 110px)}
+.guia-cab{display:flex;align-items:center;justify-content:space-between;gap:var(--e-3)}
+.guia-nombre{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-size:var(--t-lg);font-weight:600;color:var(--c-tinta-2)}
+.guia-nombre em{font-style:italic;font-weight:500}
+.guia-saltar{min-height:var(--toque);margin-right:calc(-1 * var(--e-2));--b-texto:var(--c-boli)}
+
+/* la zona que se desliza: el gesto horizontal es nuestro, el vertical sigue siendo scroll */
+.guia-zona{touch-action:pan-y;min-width:0}
+.guia-pagina{display:grid;gap:var(--e-4);align-content:start;max-width:var(--ancho-lectura);min-width:0}
+.guia-pag-cab{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--e-3);min-height:72px}
+.guia-peg{width:72px;height:72px;transform:rotate(-6deg)}
+.guia-folio{color:var(--c-tinta-3);font-size:22px}
+.guia-pagina h1{font-size:var(--t-2xl);line-height:var(--lh-titulo);hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.guia-pagina h1:focus{outline:none}   /* como el resto de títulos de la app: el foco llega aquí para leerlo, no para pulsarlo */
+.guia-pagina p,.guia-pagina li{font-size:var(--t-base);line-height:var(--lh-texto)}
+.guia-entrada{font-size:var(--t-lectura)}
+.guia-pagina p.guia-entrada{font-size:var(--t-lectura);line-height:var(--lh-lectura)}
+.guia-consejo{transform:rotate(-1.5deg);justify-self:start}
+
+/* mapa de secciones (página 1) y listas con icono (última) */
+.guia-mapa,.guia-lista{display:grid;gap:var(--e-2);margin:0;padding:0;list-style:none}
+.guia-mapa li,.guia-lista li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:var(--e-3);align-items:start;padding:var(--e-2) 0;border-bottom:1.5px dashed var(--c-linea-suave)}
+.guia-mapa .ico,.guia-lista .ico{width:24px;height:24px;margin-top:1px;color:var(--asig-texto)}
+.guia-lista a{color:var(--c-boli);font-weight:700;text-underline-offset:.2em;display:inline-block;min-height:24px}
+
+/* los cinco momentos: la lista numerada a mano del sistema */
+.guia-momentos>li{grid-template-columns:36px minmax(0,1fr)}
+
+/* herramientas de la unidad */
+.guia-herramientas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,128px),1fr));gap:var(--e-2);margin:0;padding:0;list-style:none}
+.guia-herramientas li{display:grid;gap:2px;padding:var(--e-3);border:1.5px solid var(--c-linea-suave);border-radius:var(--r-mano);background:var(--c-tarjeta)}
+.guia-herramientas b{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-size:var(--t-lg);color:var(--asig-texto)}
+.guia-herramientas span{font-size:var(--t-sm);color:var(--c-tinta-2)}
+
+/* ---------- las pruebas que se tocan ---------- */
+.guia-demo{position:relative;margin-top:var(--e-2);display:grid;gap:var(--e-3);padding:var(--e-5) var(--e-4) var(--e-4);border:1.5px dashed var(--asig-borde);border-radius:14px;background:var(--c-tarjeta)}
+.guia-demo-etq{position:absolute;top:-15px;left:14px;padding:0 6px;background:var(--c-hoja);font-size:20px;transform:rotate(-2deg)}
+.guia-demo-pie{font-size:var(--t-sm);color:var(--c-tinta-2)}
+.guia-pagina .guia-demo-pie{font-size:var(--t-sm)}
+.guia-demo .tarea .titulo{font-size:20px}
+
+/* tapar y destapar: una nota adhesiva encima de la respuesta */
+.guia-preg{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:600}
+.guia-pagina .guia-preg{font-size:var(--t-lg);line-height:var(--lh-titulo)}
+.guia-caja{position:relative;min-height:104px;display:grid;align-items:center}
+.guia-resp{padding:var(--e-3) var(--e-3);border-left:3px solid var(--asig);font-size:var(--t-lectura);line-height:var(--lh-texto)}
+.guia-resp:focus{outline:none}
+.guia-tapar.destapada .guia-resp{background:linear-gradient(100deg,transparent 0 1%,var(--c-fluor) 2% 97%,transparent 99%)}
+.guia-tapa{position:absolute;inset:-4px -6px;display:grid;align-content:center;justify-items:start;gap:4px;padding:var(--e-3) var(--e-4);
+  background:var(--nota-amarilla);color:var(--fijo-tinta);border:0;border-radius:var(--r-nota);box-shadow:var(--sombra-nota);text-align:left;cursor:pointer;
+  transform:rotate(-1.4deg);transition:transform var(--d-rapida) var(--ease-salida)}
+.guia-tapa::before{content:"";position:absolute;top:-10px;left:50%;width:78px;height:22px;transform:translateX(-50%) rotate(3deg);opacity:.9;
+  background-color:var(--s-tinte);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.35) 0 6px,transparent 6px 12px)}
+.guia-tapa .mano{color:var(--fijo-tinta);font-size:23px}
+.guia-tapa-acc{font-size:var(--t-sm);font-weight:700;color:var(--fijo-tinta-2)}
+@media (hover:hover){ .guia-tapa:hover{transform:rotate(-.6deg) translateY(-2px)} }
+.guia-tapa:active{transform:rotate(-.6deg) scale(.985)}
+.guia-tapa:focus-visible{outline:2.5px solid var(--c-foco);outline-offset:4px}
+.guia-retapar{justify-self:start;min-height:var(--toque)}
+
+/* la ficha que se gira: papel de verdad, igual de día y de noche */
+.guia-ficha{display:grid;gap:var(--e-3);width:100%;min-height:172px;padding:var(--e-4) var(--e-4) var(--e-4);text-align:left;border:0;border-radius:var(--r-2);cursor:pointer;
+  color:var(--fijo-tinta);background:var(--fijo-papel) repeating-linear-gradient(transparent 0 27px,rgba(40,70,168,.16) 27px 28px);background-position:0 40px;
+  box-shadow:var(--sombra-hoja);transform:rotate(-.6deg);transition:transform var(--d-rapida) var(--ease-salida)}
+.guia-ficha.girada{transform:rotate(.5deg);background-color:#fffdf6}
+.guia-ficha-meta{font-size:var(--t-min);font-weight:700;letter-spacing:var(--tr-versal);text-transform:uppercase;color:var(--fijo-tinta-2)}
+.guia-ficha-txt{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-size:var(--t-lg);font-weight:600;line-height:1.3}
+.guia-ficha.girada .guia-ficha-txt{font-family:var(--f-texto);font-weight:400;font-size:var(--t-base);line-height:var(--lh-texto)}
+.guia-ficha-acc{display:inline-flex;align-items:center;gap:6px;font-size:var(--t-sm);font-weight:700;color:#2846a8}
+.guia-ficha-acc .ico{width:18px;height:18px}
+.guia-ficha:focus-visible{outline:2.5px solid var(--c-foco);outline-offset:4px}
+.guia-ficha:active{transform:rotate(-.6deg) scale(.985)}
+
+.guia-nota{justify-self:start;max-width:30ch}
+.guia-insignias{display:flex;flex-wrap:wrap;gap:var(--e-2)}
+
+/* última página: la acción útil y la de explorar */
+.guia-final{display:flex;flex-wrap:wrap;gap:var(--e-3);margin-top:var(--e-2)}
+.guia-final .boton{flex:1 1 220px}
+.guia-final .guia-centro{flex:1 1 100%;--b-texto:var(--c-boli)}
+
+/* ---------- los mandos: abajo, pegados al pulgar ---------- */
+.guia-nav{position:sticky;bottom:0;z-index:2;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:var(--e-3);
+  margin:0 calc(-1 * var(--e-4)) -34px calc(-1 * (var(--margen-hoja) + 8px));padding:var(--e-3) var(--e-4) max(var(--e-3),env(safe-area-inset-bottom)) calc(var(--margen-hoja) + 8px);
+  background:var(--c-hoja);border-top:1.5px dashed var(--c-linea-suave);border-radius:0 0 10px 4px}
+.guia-ant,.guia-sig{min-height:48px}
+.guia-sig[hidden]{display:inline-flex;visibility:hidden}
+.guia-cuenta{display:grid;justify-items:center;gap:6px;min-width:0;font-size:var(--t-sm);color:var(--c-tinta-2)}
+.guia-cuenta b{color:var(--c-tinta)}
+.guia-puntos{display:flex;gap:6px;margin:0;padding:0;list-style:none}
+.guia-puntos li{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--c-tinta-3)}
+.guia-puntos li.es-vista{background:var(--c-tinta-3)}
+.guia-puntos li.es-actual{background:var(--c-tinta);border-color:var(--c-tinta);transform:scale(1.25)}
+@media (max-width:420px){
+  .guia-ant{width:48px;padding:0;border-radius:50%}
+  .guia-ant .guia-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .guia-sig{padding:0 var(--e-4)}
+  .guia-nav{gap:var(--e-2)}
+  .guia-puntos{gap:3px}
+  .guia-puntos li{width:6px;height:6px}
+  .guia-cuenta{white-space:nowrap}
+}
+@media (min-width:760px){
+  .guia-nav{margin:0 -44px -50px calc(-1 * (var(--margen-hoja) + 17px));padding:var(--e-4) 44px max(var(--e-4),env(safe-area-inset-bottom)) calc(var(--margen-hoja) + 17px)}
+  .guia-peg{width:88px;height:88px}
+}
+
+/* enlaces discretos para volver a verla (Hoy y Mi mesa) */
+.guia-pie{margin-top:var(--e-6);text-align:center;font-size:var(--t-sm);color:var(--c-tinta-2)}
+.guia-pie a{display:inline-flex;align-items:center;gap:6px;min-height:var(--toque);padding:0 var(--e-2);color:var(--c-boli);font-weight:700;text-underline-offset:.2em}
+
+@media (prefers-reduced-motion:reduce){
+  .guia-tapa,.guia-ficha{transition:none}
+}
