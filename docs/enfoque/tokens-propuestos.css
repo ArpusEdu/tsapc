@@ -1,0 +1,134 @@
+/* =========================================================
+   Enfoque · tokens PROPUESTOS (pendientes de aprobación)
+   No sustituye a assets/corte/tokens.css. Cuando se apruebe, estos
+   valores pasan a los primitivos --p-* y --n-* de ese archivo y los
+   --c-* de las piezas siguen funcionando sin tocar componentes.
+
+   De dónde sale cada color: del laboratorio.
+   · Hematoxilina: tiñe los núcleos de azul violáceo. Es la tinta.
+   · Eosina: tiñe el citoplasma de rosa. Es la célula del logo.
+   · PAS: magenta del glucógeno y las mucinas. Es el rotulador.
+   · Luz del campo y lámpara halógena: lo iluminado y el foco en noche.
+   · Vidrio: el portaobjetos y su canto verde. La etiqueta esmerilada.
+
+   Contraste: cociente WCAG 2.2 calculado con la luminancia relativa
+   (scripts en el scratchpad de la sesión, marca/paleta.mjs).
+   102 parejas comprobadas, 0 por debajo del mínimo.
+   Las más justas con texto normal:
+   papel: ok sobre hoja-2 5,63:1 · papel: ing-oscuro sobre hoja 5,76:1 · papel: sost-oscuro sobre hoja 5,77:1
+   noche: tinta-3 sobre hoja-2 6,77:1 · noche: tinta-3 sobre hoja 7,34:1 · noche: error sobre hoja-2 7,57:1
+   ========================================================= */
+
+@layer tokens{
+  :root{
+    /* ---------- marca: primitivos de tinción, luz y vidrio ---------- */
+    --e-hema-950:#121027; /* hematoxilina casi negra: fondo de noche, texto sobre luz */
+    --e-hema-900:#1b1840; /* hematoxilina profunda: la tinta, el anillo del logo */
+    --e-hema-800:#25215a; /* acción pulsada */
+    --e-hema-700:#2f2a7c; /* acción principal en papel */
+    --e-hema-600:#3b2f9e; /* el núcleo: enlaces, foco, marcas de marca */
+    --e-hema-400:#7d72d6; /* marcas en noche (no texto pequeño) */
+    --e-hema-300:#b9b2f5; /* enlaces y texto de marca en noche */
+    --e-hema-100:#e8e5fa; /* fondo suave de marca en papel */
+    --e-eos-800:#8f1d47; /* eosina para texto en papel */
+    --e-eos-500:#e85d8c; /* el citoplasma: la célula del logo, marcas */
+    --e-eos-300:#f6bccd; /* tejido vecino del logo, subrayado «teñido» */
+    --e-eos-100:#fce9ef; /* fondo suave de eosina */
+    --e-pas-700:#8a1466; /* PAS: el rotulador de «hoy» y «ahora» en papel */
+    --e-pas-300:#f19bd3; /* PAS en noche */
+    --e-luz:#fff3dc; /* luz del campo: lo iluminado */
+    --e-lampara:#ffcf8a; /* lámpara halógena: foco y acción principal en noche */
+    --e-vidrio:#e4eeea; /* portaobjetos: la etiqueta esmerilada */
+    --e-vidrio-canto:#8fbcaa; /* canto verde del vidrio: filetes finos */
+    --e-crema:#f4ede2; /* el anillo del logo en noche, texto en noche */
+
+    /* ---------- papel: el cuaderno de día ---------- */
+    --pe-fondo:#ece6d8;
+    --pe-hoja:#fbf8f1;
+    --pe-hoja-2:#f3eee4;
+    --pe-tarjeta:#fffdf8;
+    --pe-tinta:#1b1840; /* 15,82:1 sobre hoja · 14,51:1 sobre hoja-2 */
+    --pe-tinta-2:#48455f; /* 8,64:1 sobre hoja · 7,92:1 sobre hoja-2 */
+    --pe-tinta-3:#5a5770; /* 6,53:1 sobre hoja */
+    --pe-enlace:#3b2f9e; /* 9,49:1 sobre hoja · 8,70:1 sobre hoja-2 */
+    --pe-foco:#3b2f9e; /* 9,49:1 sobre hoja (mín. 3:1) */
+    --pe-accion:#2f2a7c;
+    --pe-sobre-accion:#ffffff; /* 12,05:1 sobre la acción */
+    --pe-accion-pulsada:#25215a;
+    --pe-rotulador:#8a1466; /* 8,34:1 sobre hoja · 7,65:1 sobre hoja-2 */
+    --pe-eosina-texto:#8f1d47; /* 8,13:1 sobre hoja · 7,46:1 sobre hoja-2 */
+    --pe-linea:#8a86a0; /* 3,30:1 sobre hoja (mín. 3:1) */
+    --pe-ok:#0d6b4c; /* 6,14:1 sobre hoja · 5,63:1 sobre hoja-2 */
+    --pe-aviso:#7a4f00; /* 6,72:1 sobre hoja · 6,16:1 sobre hoja-2 */
+    --pe-error:#a8201a; /* 6,86:1 sobre hoja · 6,29:1 sobre hoja-2 */
+
+    /* ---------- noche: mirar por el ocular ---------- */
+    --ne-fondo:#0c0b1a;
+    --ne-hoja:#14132a;
+    --ne-hoja-2:#1c1a38;
+    --ne-tarjeta:#191831;
+    --ne-tinta:#f4ede2; /* 15,62:1 sobre hoja · 14,40:1 sobre hoja-2 */
+    --ne-tinta-2:#d3ccc1; /* 11,40:1 sobre hoja · 10,51:1 sobre hoja-2 */
+    --ne-tinta-3:#aaa49b; /* 7,34:1 sobre hoja */
+    --ne-enlace:#b9b2f5; /* 9,30:1 sobre hoja · 8,57:1 sobre hoja-2 */
+    --ne-foco:#ffcf8a; /* 12,58:1 sobre hoja (mín. 3:1) */
+    --ne-accion:#ffcf8a;
+    --ne-sobre-accion:#121027; /* 12,88:1 sobre la acción */
+    --ne-accion-pulsada:#f2b866;
+    --ne-rotulador:#f19bd3; /* 8,97:1 sobre hoja · 8,27:1 sobre hoja-2 */
+    --ne-eosina-texto:#f6a3bf; /* 9,43:1 sobre hoja · 8,70:1 sobre hoja-2 */
+    --ne-linea:#6f6b8c; /* 3,60:1 sobre hoja (mín. 3:1) */
+    --ne-ok:#86e4c3; /* 12,02:1 sobre hoja · 11,08:1 sobre hoja-2 */
+    --ne-aviso:#ffd166; /* 12,60:1 sobre hoja · 11,61:1 sobre hoja-2 */
+    --ne-error:#ff8f80; /* 8,21:1 sobre hoja · 7,57:1 sobre hoja-2 */
+
+    /* ---------- canales: una asignatura, un color (los de siempre) ----------
+       Como el anillo de color de cada objetivo, que dice su aumento sin leer
+       nada, cada asignatura conserva su color. Base, tinte y oscuro no
+       cambian. Solo se recalcula el fondo de celda en noche: 26 % de la base
+       sobre la nueva hoja de noche. */
+    --bio-noche-e:#33265f; /* tinta 11,41:1 · tinte como texto 9,29:1 */
+    --lab-noche-e:#1b4246; /* tinta 9,43:1 · tinte como texto 12,02:1 */
+    --fisio-noche-e:#512a37; /* tinta 10,40:1 · tinte como texto 9,34:1 */
+    --gest-noche-e:#4f3b26; /* tinta 9,09:1 · tinte como texto 12,60:1 */
+    --ipe-noche-e:#1e305f; /* tinta 10,99:1 · tinte como texto 9,86:1 */
+    --ing-noche-e:#51322f; /* tinta 9,78:1 · tinte como texto 10,62:1 */
+    --digi-noche-e:#262f49; /* tinta 11,39:1 · tinte como texto 10,03:1 */
+    --sost-noche-e:#283e2e; /* tinta 9,93:1 · tinte como texto 11,52:1 */
+
+    /* ---------- tipografía de marca ---------- */
+    --e-f-marca:"Fraunces","Fraunces respaldo",Georgia,serif; /* cursiva 500, opsz 144: la palabra «enfoque» */
+    --e-f-etiqueta:"Atkinson Hyperlegible Mono","Mono respaldo",ui-monospace,monospace; /* la etiqueta del portaobjetos: códigos y diapositivas */
+
+    /* ---------- movimiento de marca: enfocar ---------- */
+    --e-d-enfoque:1300ms;                         /* entrada del logo, una vez por sesión */
+    --e-d-nitido:260ms;                            /* cambio de pantalla: de 3 px de desenfoque a nítido */
+    --e-ease-enfoque:cubic-bezier(.22,1,.36,1);  /* gira rápido y asienta, como el macrométrico */
+  }
+
+  /* ---------- correspondencia con los --c-* actuales ---------- */
+  @supports (color:light-dark(#000,#fff)){
+    :root,[data-theme]{
+      --c-fondo:light-dark(var(--pe-fondo),var(--ne-fondo));
+      --c-hoja:light-dark(var(--pe-hoja),var(--ne-hoja));
+      --c-hoja-2:light-dark(var(--pe-hoja-2),var(--ne-hoja-2));
+      --c-tarjeta:light-dark(var(--pe-tarjeta),var(--ne-tarjeta));
+      --c-tinta:light-dark(var(--pe-tinta),var(--ne-tinta));
+      --c-tinta-2:light-dark(var(--pe-tinta-2),var(--ne-tinta-2));
+      --c-tinta-3:light-dark(var(--pe-tinta-3),var(--ne-tinta-3));
+      --c-boli:light-dark(var(--pe-enlace),var(--ne-enlace));
+      --c-foco:light-dark(var(--pe-foco),var(--ne-foco));
+      --c-rotulador:light-dark(var(--pe-rotulador),var(--ne-rotulador));
+      --c-fluor:light-dark(rgba(246,188,205,.75),rgba(232,93,140,.30)); /* subrayado «teñido» en eosina */
+      --c-relleno:light-dark(var(--pe-accion),var(--ne-accion));
+      --c-sobre-tinta:light-dark(var(--pe-sobre-accion),var(--ne-sobre-accion));
+      --c-ok:light-dark(var(--pe-ok),var(--ne-ok));
+      --c-aviso:light-dark(var(--pe-aviso),var(--ne-aviso));
+      --c-error:light-dark(var(--pe-error),var(--ne-error));
+      /* nuevos */
+      --c-marca:light-dark(var(--e-hema-600),var(--e-hema-300));
+      --c-eosina:light-dark(var(--pe-eosina-texto),var(--ne-eosina-texto));
+      --c-anillo-logo:light-dark(var(--e-hema-900),var(--e-crema));
+    }
+  }
+}
