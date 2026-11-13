@@ -18,6 +18,8 @@
   const PERMITIDAS = [
     /^(bio|fisio|gest|ipe|ing|lab)\d+-(repaso|simulacro)-v\d+$/,   /* bio1-repaso-v1, fisio2-simulacro-v2... */
     /^(eng|lab)-[a-z0-9-]+$/,                                       /* eng-u12-exam-v2, lab-u1-test50... */
+    /^bio\d+-(aprende|entender)-v\d+(:dias)?$/,                      /* bio3 aprende y entender */
+    /^mc-(done|plant)$/,                                             /* centro 3D antiguo (ya pasado a tsapc:v2) */
     /^plan-estudio-v\d+-[a-z0-9-]+$/,                                /* planificador de cada repaso */
     /^pos:\/tsapc\//,                                                /* posición de lectura */
     /^tsapc:/                                                        /* rediseño Corte (tsapc:v2…) */

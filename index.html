@@ -52,6 +52,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{o
 .brand{pointer-events:auto;display:inline-flex;align-items:center;gap:10px;min-height:44px;width:max-content;color:#fff;text-decoration:none;font:400 1.2rem/1 var(--f-display)}
 .brand img{display:block;width:44px;height:44px;border-radius:50%}
 h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.7rem,7vw,5rem);line-height:1;letter-spacing:-.025em}
+.to-app{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.to-app a{display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 20px;border-radius:999px;font-weight:700;text-decoration:none;color:#21124f;background:#fff}.to-app a+a{color:#fff;background:transparent;border:2px solid rgba(255,255,255,.7)}.to-app a:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .place{margin-top:8px;font-size:clamp(.92rem,1.5vw,1.05rem);max-width:46ch;color:#eee9f8}
 
 /* Acción principal: una sola cosa que hacer ahora */
@@ -165,7 +166,8 @@ summary:hover{color:var(--ink)}
     <a class="brand" href="./" aria-label="TSAPC, inicio"><img src="assets/logo.svg" alt="" width="44" height="44"><span>TSAPC</span></a>
     <div class="hero-copy">
       <h1>Mi carrera</h1>
-      <p class="place">Anatomía Patológica y Citodiagnóstico · 1.º · Impulsa Pamplona</p>
+      <p class="place">Anatomía Patológica y Citodiagnóstico · 1.º</p>
+      <p class="to-app"><a href="app/#/hoy">Tu sesión de hoy <span aria-hidden="true">→</span></a><a href="centro/">Entrar al centro</a></p>
     </div>
   </div>
 </header>

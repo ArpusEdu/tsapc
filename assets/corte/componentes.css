@@ -10,7 +10,7 @@
 .mano{font-family:var(--f-mano);font-weight:600;font-size:var(--t-mano);line-height:1.1;color:var(--c-boli)}
 .ruta{display:flex;flex-wrap:wrap;gap:2px 8px;margin:0 0 var(--e-2);padding:0;list-style:none;font-size:var(--t-sm);color:var(--c-tinta-2)}
 .ruta li+li::before{content:"/";margin-right:8px;color:var(--c-tinta-3)}
-.ruta a{color:inherit}
+.ruta a{color:inherit;display:inline-block;min-height:24px;padding-block:3px}
 .ruta [aria-current]{color:var(--asig-texto);font-weight:700}
 .lectura{font-size:var(--t-lectura);line-height:var(--lh-lectura);max-width:var(--ancho-lectura)}
 .lectura p+p{margin-top:var(--e-4)}

@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "fuente": "Horario semanal y calendario escolar de Impulsa Centro de Formación (Pamplona), pasados por el usuario el 2026-11-02",
+  "fuente": "Horario semanal y calendario escolar del centro, pasados por el usuario el 2026-11-02",
   "curso": {
     "nombre": "1.º Técnico Superior en Anatomía Patológica y Citodiagnóstico",
-    "centro": "Impulsa Centro de Formación · Pamplona",
+    "centro": "",
     "anio": "2026/27",
     "turno": "Tarde · 14:45–20:45",
     "inicio": "2026-09-16",
@@ -16,7 +16,7 @@
       "corto": "Muestras",
       "horas": 5,
       "canal": "gest",
-      "profesor": "Begoña Zabalza"
+      "profesor": "Begoña"
     },
     {
       "id": "lab",
@@ -32,7 +32,7 @@
       "corto": "Biología Molecular",
       "horas": 7,
       "canal": "bio",
-      "profesor": "Maider Delgado"
+      "profesor": "Maider"
     },
     {
       "id": "fisio",
@@ -40,7 +40,7 @@
       "corto": "Fisiopatología",
       "horas": 5,
       "canal": "fisio",
-      "profesor": "Ander Redín"
+      "profesor": "Ander"
     },
     {
       "id": "ingles",
@@ -48,7 +48,7 @@
       "corto": "Inglés",
       "horas": 2,
       "canal": "ingles",
-      "profesor": "Álvaro Arellano"
+      "profesor": "Álvaro"
     },
     {
       "id": "digi",
@@ -56,7 +56,7 @@
       "corto": "Digitalización",
       "horas": 1,
       "canal": "digi",
-      "profesor": "Marina Campo"
+      "profesor": "Marina"
     },
     {
       "id": "sost",
@@ -64,7 +64,7 @@
       "corto": "Sostenibilidad",
       "horas": 1,
       "canal": "sost",
-      "profesor": "Marina Campo"
+      "profesor": "Marina"
     },
     {
       "id": "ipe",
@@ -72,7 +72,7 @@
       "corto": "IPE I",
       "horas": 3,
       "canal": "ipe",
-      "profesor": "Marina Campo"
+      "profesor": "Marina"
     }
   ],
   "franjas": [

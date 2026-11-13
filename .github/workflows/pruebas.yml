@@ -1,0 +1,18 @@
+# Pruebas automáticas: se ejecutan en cada push y en cada pull request.
+# Si algo falla, GitHub lo marca en rojo antes de que llegue a la web.
+name: Pruebas
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Pruebas
+        run: node --test tests/
+      - name: Repasos generados al día
+        run: for u in bio3 fisio4 ipe-tema4; do node scripts/repaso.mjs "$u" --comprobar; done

@@ -265,7 +265,7 @@
     }).join("");
     var orden = D.ORDEN_ASIG;
     return '<header class="cab">' + titulo("Horario <em>de la semana</em>") +
-      '<p class="sub">' + esc(AG.curso.nombre) + " · " + esc(AG.curso.centro) + " · tarde, " + L.rango("14:45", "20:45", f) + "</p></header>" +
+      '<p class="sub">' + esc(AG.curso.nombre) + (AG.curso.centro ? " · " + esc(AG.curso.centro) : "") + " · tarde, " + L.rango("14:45", "20:45", f) + "</p></header>" +
       '<div class="fila-ctl"><span class="ctl-etq" id="etqHora">Ver la hora en</span>' + seg("hora", f, [["ambas", "Ambas"], ["24", "24 h"], ["12", "12 h"]], "Formato de la hora") + "</div>" +
       '<div class="horario-caja"><div class="horario" role="group" aria-label="Horario semanal" style="grid-template-rows:auto repeat(' + F.length + ',minmax(48px,auto))">' + out + "</div></div>" +
       '<ul class="leyenda" aria-label="Leyenda">' + orden.map(function (k) { return '<li data-subject="' + k + '"><i></i>' + A[k].nombre + (prof(k) ? " · " + esc(prof(k)) : "") + "</li>"; }).join("") + '<li data-subject="bio"><i class="l-lab"></i>Clase en el laboratorio</li></ul>' +
@@ -587,12 +587,28 @@
     return { sec: "", titulo: "No encontrada", html: '<header class="cab">' + titulo("Esta página <em>no está</em>") + '</header><div class="estado"><svg aria-hidden="true"><use href="' + SPR + 'i-info"/></svg><div><h2 class="estado-tit">No hay nada en esta dirección</h2><p>Puede que el enlace esté mal escrito o que la unidad aún no exista.</p><div class="acciones"><a class="boton" href="#/hoy">Ir a Hoy</a></div></div></div>' };
   }
 
+  /* tras responder: el foco no se queda fuera de la vista y el resultado se anuncia en una región viva fija */
+  function anunciar() {
+    var st = $("[role=status]", vista), t = st && (st.innerText || st.textContent).replace(/\s+/g, " ").trim(), c = $("#anuncio");
+    if (!t || !c) return;
+    c.textContent = ""; setTimeout(function () { c.textContent = t; }, 60);
+  }
+  function repintar(sel, arriba) {
+    pintar(!arriba);
+    var b = sel && $(sel, vista);
+    if (b) {
+      b.focus({ preventScroll: !arriba });
+      if (!arriba) { var r = b.getBoundingClientRect(); if (r.top < 0 || r.bottom > window.innerHeight) b.scrollIntoView({ block: "nearest" }); }
+    }
+    anunciar();
+  }
+
   /* ================= estudiar (app/estudio.js) ================= */
   var E = window.CorteEstudio({ D: D, A: A, esc: esc, ico: ico, SPR: SPR, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion,
-    pintar: function (q) { pintar(q); }, repintar: function (sel, arriba) { pintar(!arriba); var b = sel && $(sel, vista); if (b) b.focus({ preventScroll: !arriba }); } });
+    pintar: function (q) { pintar(q); }, repintar: repintar });
   /* sesión de estudio (app/sesion.js): misterio → descubre → sin mirar → resuelve → lo de otros días */
   var SS = window.CorteSesion ? window.CorteSesion({ D: D, A: A, esc: esc, ico: ico, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion, rico: E.rico,
-    pintar: function (q) { pintar(q); }, repintar: function (sel, arriba) { pintar(!arriba); var b = sel && $(sel, vista); if (b) b.focus({ preventScroll: !arriba }); } }) : null;
+    pintar: function (q) { pintar(q); }, repintar: repintar }) : null;
   function pSesionE(id) { return SS ? SS.sesion(id) : pNada(); }
   function pPractica(id, a2) { return E.practica(id, a2) || pNada(); }
   function pTarjetas(id) { return E.tarjetas(id) || pNada(); }

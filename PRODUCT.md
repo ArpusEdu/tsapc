@@ -32,7 +32,7 @@ Made by and for one histotechnology class, built on its own syllabus and slides,
 - Static PWA: HTML, CSS and JavaScript, no framework and no build step. Hosted from GitHub (ArpusEdu/tsapc).
 - No accounts and no server: progress lives on each device (localStorage), with export and import of a backup. Personal space = per-device data.
 - Must work offline after the first visit, including images.
-- 12 units in 1st year: bio1-3, fisio1-3, gest1-2, ingles1, ipe-tema5, ipe2, lab1.
+- 15 units in 1st year (the list lives in `app/datos.js`): bio1-3, fisio1-4, gest1-2, ingles1, ipe2, ipe-tema4, ipe-tema5, lab1-2.
 - Nothing that costs money: no paid services, fonts, components or APIs.
 - Academic content (questions, answers, syllabus) is not edited during redesign.
 - No progress data may be lost; old storage keys are migrated, never deleted without asking.

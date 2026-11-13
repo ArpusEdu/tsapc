@@ -2,7 +2,7 @@
 
 App de estudio del ciclo TSAPC (Anatomía Patológica y Citodiagnóstico), 1.º curso. Web estática publicada en GitHub Pages: https://arpusedu.github.io/tsapc/ (repo ArpusEdu/tsapc). El usuario es el estudiante que la usa: estudia en el móvil, en ratos cortos, a menudo sin conexión.
 
-Contexto de producto: `PRODUCT.md`. Plan del rediseño (fases 0–8): `docs/corte/encargo-v2.md`. Sistema de diseño: `docs/corte/DESIGN.md` (muestra viva en `docs/corte/sistema/index.html`).
+Contexto de producto: `PRODUCT.md`. Sistema de diseño vigente: `docs/corte/DESIGN.md` (cuaderno + espacios 3D; muestra viva en `docs/corte/sistema/index.html`). `docs/corte/encargo-v2.md` es el plan histórico de fases 0–8: su dirección «fluorescencia» quedó sustituida por DESIGN.md; vale solo para fases, reglas y criterios.
 
 ## Reglas que no se negocian
 
@@ -17,18 +17,19 @@ Contexto de producto: `PRODUCT.md`. Plan del rediseño (fases 0–8): `docs/cort
 
 ## Arquitectura
 
-- HTML, CSS y JS sin framework y **sin build**. PWA con `sw.js` (funciona sin conexión, imágenes incluidas).
+- HTML, CSS y JS sin framework y **sin build**. PWA con `sw.js`: las páginas funcionan sin conexión; las imágenes de los repasos se guardan la primera vez que se ven con conexión.
 - `index.html`: portada y datos de unidades (`EX`, `PROG`). `centro/`: el centro 3D (Three.js), una sala por asignatura.
-- `app/`: la app SPA con rutas hash (`app.js`, `logica.js`, `quiz.js`, `sm2.js`, `sesion.js`, `datos.js`). Sesiones de estudio en `app/sesiones/<id>.json`, índice en `app/sesiones/indice.json`.
+- `app/`: la app SPA con rutas hash (`app.js`, `logica.js`, `quiz.js`, `sm2.js`, `estudio.js` práctica y tarjetas, `sesion.js` sesiones de estudio, `mov.js` movimiento, `datos.js`). Sesiones de estudio en `app/sesiones/<id>.json`, índice en `app/sesiones/indice.json`.
 - Una carpeta por unidad (`bio1`…`ipe-tema5`) con `repaso/`, y a veces `simulacro/`, vocabulario y test. Fuentes de texto de los PDF en `docs/fuentes/<u>.txt`.
 - `assets/corte/`: tokens, base, texturas, componentes, iconos del sistema de diseño.
 
 ## Cómo se trabaja
 
-- Unidad nueva desde un PDF: texto con pdfjs → `docs/fuentes/<u>.txt` (+ `<u>-imagenes.txt`) → `<u>/repaso/contenido.json` → `node scripts/repaso.mjs <u>` → `node scripts/unidad-datos.mjs <u>` → `node scripts/extraer-preguntas.mjs`. Además: objeto en `app/datos.js`, entrada `EX` (con `"sim": {}`) y `PROG` en `index.html`, `UNIDADES` en `assets/store.js` y en `extraer-preguntas.mjs`, `sw.js` SHELL, sala en `centro/index.html`, número de unidades en `tests/app.test.mjs`.
+- Unidad nueva desde un PDF: texto con pdfjs → `docs/fuentes/<u>.txt` (+ `<u>-imagenes.txt`) → `<u>/repaso/contenido.json` → `node scripts/repaso.mjs <u>` → `node scripts/unidad-datos.mjs <u>` → `node scripts/extraer-preguntas.mjs`. Además: objeto en `app/datos.js`, entrada `EX` (con `"sim": {}`) y `PROG` en `index.html`, `UNIDADES` en `assets/store.js` y en `extraer-preguntas.mjs`, `sw.js` SHELL, sala en `centro/index.html`, número de unidades en `tests/app.test.mjs`. Si el prefijo de la clave no coincide con la carpeta (ipe4 → ipe-tema4), `ALIAS` en `assets/store.js`. Dibujo en `assets/especimen.js` y nombre corto en `SHORT` de `assets/repaso.js`. La clave de guardado debe cumplir `PERMITIDAS` de `assets/copia.js` (lo vigila `tests/copia.test.mjs`).
 - Sesión de estudio: escribir `app/sesiones/<id>.json` con `profe.dice` vacío → `node scripts/copiar-profe.mjs <u> <id>` → `node scripts/registrar-sesiones.mjs <ids…>`.
 - Tras tocar archivos del SHELL: `node scripts/sw-version.mjs`.
-- Siempre antes de dar algo por hecho: `node --test tests/` (todo en verde).
+- Siempre antes de dar algo por hecho: `node --test tests/` (todo en verde). GitHub las repite en cada push (`.github/workflows/pruebas.yml`).
+- Commits con el correo anónimo de GitHub (`git config user.email` ya lo tiene en este repo); nunca un correo personal.
 - `core.autocrlf=false`: los finales de línea CRLF rompen los tests y el hash del service worker.
 - En Windows, **no editar con `Get-Content`/`Set-Content` de PowerShell**: estropean los acentos. Usar node o las herramientas de edición.
 - Probar en navegador real a 360, 390 y 1280 px, en tema claro y oscuro, sin desbordes horizontales.

@@ -405,6 +405,7 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .tj-rejilla{display:grid;gap:var(--e-6)}
 .tj-cont{font-size:var(--t-sm);color:var(--c-tinta-2);margin-bottom:var(--e-3)}
 .tj-ficha{position:relative;min-height:14rem;padding:var(--e-5) var(--e-5) var(--e-6);border-radius:var(--r-2);color:var(--fijo-tinta);background:var(--fijo-papel) repeating-linear-gradient(transparent 0 31px,rgba(40,70,168,.16) 31px 32px);background-position:0 62px;box-shadow:var(--sombra-hoja);transform:rotate(-.6deg)}
+.tj-ficha :is(h1,h2,h3,h4,p,li){color:inherit}
 .tj-ficha::before{content:"";position:absolute;left:0;right:0;top:44px;height:2px;background:#e05a4d;opacity:.7;pointer-events:none}
 .tj-ficha.vuelta{transform:rotate(.4deg)}
 .tj-ficha.vuelta .tj-dorso{animation:tj-entra var(--d-lenta) var(--ease-salida)}
@@ -504,7 +505,7 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .ss-pasos li.hecho .ss-num{border-style:solid;border-color:var(--asig-texto);color:var(--asig-texto)}
 .ss-pasos li.ahora{color:var(--c-tinta);font-weight:700}
 .ss-pasos li.ahora .ss-num{border:2px solid var(--c-tinta);background:var(--asig-suave);color:var(--c-tinta)}
-@media (max-width:420px){ .ss-pasos .ss-nom{font-size:11px} }
+@media (max-width:420px){ .ss-pasos .ss-nom{font-size:12px} }
 .ss-cuerpo{display:grid;gap:var(--e-4);max-width:760px}
 .ss-cuerpo .acciones{display:flex;flex-wrap:wrap;gap:var(--e-2);margin-top:var(--e-3)}
 .ss-sello{display:inline-flex;align-items:center;gap:4px;margin-bottom:var(--e-2);padding:1px 8px 1px 6px;border-radius:var(--r-pildora);border:1.5px dashed var(--c-linea-suave);font-size:var(--t-min);font-weight:700;color:var(--c-tinta-2)}
@@ -520,6 +521,8 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .ss-cuerpo textarea[readonly]{opacity:.85;border-style:dashed}
 .ss-por{margin-top:var(--e-3);color:var(--c-tinta-2);font-size:19px}
 .ss-mini{font-size:var(--t-sm);color:var(--c-tinta-2);margin-top:var(--e-1)}
+.ss-gancho .ss-mini,.ss-gancho .ss-sello{color:var(--c-tinta)}
+.tj-ficha,.nota{--c-foco:var(--p-foco)}
 .ss-cuenta{font-size:var(--t-sm);color:var(--c-tinta-2)}
 .ss-concepto h2,.ss-recuerda h2{font-size:var(--t-xl);margin-bottom:var(--e-3)}
 .ss-gancho{padding:var(--e-4);border-radius:var(--r-mano);background:var(--asig-suave);border:1.5px solid var(--c-linea)}

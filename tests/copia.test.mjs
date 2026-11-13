@@ -140,3 +140,23 @@ test("repasos: las horas guardadas del plan se validan antes de pintarlas", () =
     ps.times[k] = ["09:30", "12:00"]; assert.deepEqual(times(0), ["09:30", "12:00"]);
   }
 });
+
+test("la copia guarda todas las claves que usan las páginas", () => {
+  const raiz = new URL("../", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
+  const claves = new Set(["mc-done", "mc-plant", "bio3-entender-v1:dias"]);
+  const recorrer = d => {
+    for (const e of readdirSync(d, { withFileTypes: true })) {
+      if ([".git", "node_modules", "tests", "scripts", "docs", "files"].includes(e.name)) continue;
+      const p = d + "/" + e.name;
+      if (e.isDirectory()) recorrer(p);
+      else if (/\.(html|js)$/.test(e.name)) {
+        const t = readFileSync(p, "utf8");
+        for (const m of t.matchAll(/\bKEY\s*=\s*["']([a-z0-9:_-]+)["']/g)) claves.add(m[1]);
+      }
+    }
+  };
+  recorrer(decodeURIComponent(raiz));
+  const fuera = [...claves].filter(k => !C.RUIDO.has(k) && !C.permitida(k));
+  assert.ok(claves.size > 20, "se encontraron pocas claves: " + claves.size);
+  assert.deepEqual(fuera, [], "claves que la copia no guardaría");
+});

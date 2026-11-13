@@ -586,6 +586,7 @@ html.flat.in-room .fhall{display:none}
 <div id="wipe" aria-hidden="true"></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="../assets/store.js"></script>
 <script>
 /* =========================================================
    Núcleo: datos, reloj, cuaderno, navegación y pasillo 2D.
@@ -606,13 +607,13 @@ var BASE = '../';
 /* ---------- asignaturas ---------- */
 var SUBJ = {
   lab:  {name:'Laboratorio',prof:'Rosalía',        full:'Técnicas generales de laboratorio', ab:'Lab',   c:'#2fc796', t:'#86e4c3', d:'#0d6b4c', st:'flask'},
-  bio:  {name:'Biología Molecular',prof:'Maider Delgado', full:'Biología molecular y citogenética', ab:'Bio',   c:'#8b5cf6', t:'#c3adff', d:'#5a2ec0', st:'dna'},
-  fisio:{name:'Fisiopatología',prof:'Ander Redín',     full:'Fisiopatología general',           ab:'Fisio', c:'#ff6b5b', t:'#ffa197', d:'#ad3326', st:'heart'},
-  gest: {name:'Gestión de Muestras',prof:'Begoña Zabalza',full:'Gestión de muestras biológicas',   ab:'Gest',  c:'#f5ad1b', t:'#ffd166', d:'#7a4f00', st:'tubes'},
-  ipe:  {name:'IPE I',prof:'Marina Campo',              full:'Itinerario personal para la empleabilidad I', ab:'IPE', c:'#3b82f6', t:'#9cc0ff', d:'#1a53b3', st:'kit'},
-  ing:  {name:'Inglés',prof:'Álvaro Arellano',             full:'Inglés profesional',               ab:'Ing',   c:'#ff8a3d', t:'#ffb685', d:'#a3460a', st:'hello'},
-  digi: {name:'Digitalización',prof:'Marina Campo',     full:'Digitalización aplicada a los sectores productivos', ab:'Digi', c:'#5b7fa3', t:'#adc3da', d:'#34557a', st:'screen'},
-  sost: {name:'Sostenibilidad',prof:'Marina Campo',     full:'Sostenibilidad aplicada al sistema productivo', ab:'Sost', c:'#5fb83a', t:'#a6dd88', d:'#336f1a', st:'leaf'}
+  bio:  {name:'Biología Molecular',prof:'Maider', full:'Biología molecular y citogenética', ab:'Bio',   c:'#8b5cf6', t:'#c3adff', d:'#5a2ec0', st:'dna'},
+  fisio:{name:'Fisiopatología',prof:'Ander',     full:'Fisiopatología general',           ab:'Fisio', c:'#ff6b5b', t:'#ffa197', d:'#ad3326', st:'heart'},
+  gest: {name:'Gestión de Muestras',prof:'Begoña',full:'Gestión de muestras biológicas',   ab:'Gest',  c:'#f5ad1b', t:'#ffd166', d:'#7a4f00', st:'tubes'},
+  ipe:  {name:'IPE I',prof:'Marina',              full:'Itinerario personal para la empleabilidad I', ab:'IPE', c:'#3b82f6', t:'#9cc0ff', d:'#1a53b3', st:'kit'},
+  ing:  {name:'Inglés',prof:'Álvaro',             full:'Inglés profesional',               ab:'Ing',   c:'#ff8a3d', t:'#ffb685', d:'#a3460a', st:'hello'},
+  digi: {name:'Digitalización',prof:'Marina',     full:'Digitalización aplicada a los sectores productivos', ab:'Digi', c:'#5b7fa3', t:'#adc3da', d:'#34557a', st:'screen'},
+  sost: {name:'Sostenibilidad',prof:'Marina',     full:'Sostenibilidad aplicada al sistema productivo', ab:'Sost', c:'#5fb83a', t:'#a6dd88', d:'#336f1a', st:'leaf'}
 };
 var AGMAP = {ingles:'ing'};
 function sid(a){ return AGMAP[a]||a; }
@@ -730,8 +731,24 @@ AG.ev.forEach(function(e){
 /* ---------- almacenamiento local (solo comodidad) ---------- */
 function load(k,def){ try{ var v=JSON.parse(localStorage.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
 function save(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
-var done = (function () { try { var v = JSON.parse(localStorage.getItem('tsapc:v2')); var e = v && v.personal && v.personal.entregadas; return e && typeof e === 'object' ? e : {}; } catch (e) { return {}; } })();
-var plantDays = load('mc-plant',[]);
+/* Entregas y planta: el mismo sitio que la app (tsapc:v2 › personal), así entran en la copia. */
+var ST = window.tsapcStore;
+function own(o,k){ return Object.prototype.hasOwnProperty.call(o,k); }
+function stGet(r,d){ try{ var v=ST?ST.get(r):undefined; return v==null?d:v; }catch(e){ return d; } }
+function stSet(r,v){ try{ return ST?ST.set(r,v):false; }catch(e){ return false; } }
+try{ if(ST) ST.migrar(); }catch(e){}
+/* Antes el centro guardaba aparte (mc-done, mc-plant). Se pasa una vez; las claves viejas no se borran. */
+(function(){
+  if(!ST || stGet('personal.centroMigrado',false)) return;
+  var od=load('mc-done',null), op=load('mc-plant',null), k;
+  if(od && typeof od==='object'){ var e=stGet('personal.entregadas',{}), n={}; for(k in e) if(own(e,k)) n[k]=e[k];
+    for(k in od) if(own(od,k) && od[k]===true && !n[k]) n[k]=new Date().toISOString(); stSet('personal.entregadas',n); }
+  if(Array.isArray(op)){ var p=stGet('personal.planta',[]); p=Array.isArray(p)?p.slice():[];
+    op.forEach(function(d){ if(typeof d==='string' && p.indexOf(d)<0) p.push(d); }); p.sort(); stSet('personal.planta',p); }
+  stSet('personal.centroMigrado',true);
+})();
+var done = (function(){ var e=stGet('personal.entregadas',{}), o={}; if(e && typeof e==='object') for(var k in e) if(own(e,k) && e[k]) o[k]=true; return o; })();
+var plantDays = (function(){ var p=stGet('personal.planta',[]); return Array.isArray(p) ? p.filter(function(x){ return typeof x==='string'; }) : []; })();
 
 /* ---------- pegatinas (trazo + rotulador) ---------- */
 var ST = {
@@ -886,13 +903,16 @@ function burst(el){
 }
 function onCheck(b){
   var li=b.closest('.task'), on=!li.classList.contains('done'), id=li.dataset.task;
+  var ent=stGet('personal.entregadas',{}), nn={}; for(var x in ent) if(own(ent,x) && x!==id) nn[x]=ent[x];
+  if(on) nn[id]=new Date().toISOString();
+  if(!stSet('personal.entregadas',nn)){ toast('No se pudo guardar. Revisa el espacio del navegador.'); return; }
   li.classList.toggle('done',on); b.setAttribute('aria-checked',String(on));
-  done[id]=on; save('mc-done',done);
+  done[id]=on;
   var k=key(now()), anyToday=$$('.task.done').length>0, had=plantDays.indexOf(k)>=0;
-  if(anyToday && !had){ plantDays.push(k); save('mc-plant',plantDays); renderLeaves(); var lf=$('#leaves').lastElementChild; if(lf&&G&&!RM) G.fromTo(lf.firstChild,{scale:0,transformOrigin:'0% 50%'},{scale:1,duration:.9,ease:'elastic.out(1,.5)'}); }
-  if(!anyToday && had){ plantDays.splice(plantDays.indexOf(k),1); save('mc-plant',plantDays); renderLeaves(); }
+  if(anyToday && !had){ plantDays.push(k); stSet('personal.planta',plantDays); renderLeaves(); var lf=$('#leaves').lastElementChild; if(lf&&G&&!RM) G.fromTo(lf.firstChild,{scale:0,transformOrigin:'0% 50%'},{scale:1,duration:.9,ease:'elastic.out(1,.5)'}); }
+  if(!anyToday && had){ plantDays.splice(plantDays.indexOf(k),1); stSet('personal.planta',plantDays); renderLeaves(); }
   var tname=li.querySelector('.title').textContent.trim();
-  if(on){ if(G&&!RM) G.fromTo(li,{rotate:0},{keyframes:[{rotate:-1.2,duration:.08},{rotate:.8,duration:.1},{rotate:0,duration:.25,ease:'power2.out'}]}); burst(b);
+  if(on){ if(G&&!RM) G.fromTo(li,{rotate:0},{keyframes:[{rotate:-1.2,duration:.08},{rotate:.8,duration:.1},{rotate:0,duration:.25,ease:'power2.out'}]});
     toast(tname+': hecho.'+(anyToday&&!had?' Sale una hoja en la planta.':'')); }
   else toast(tname+': otra vez pendiente.');
   tickHoy();
