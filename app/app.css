@@ -609,3 +609,20 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .ss-hoy-txt>span:last-child{color:var(--c-tinta-2);font-size:var(--t-sm)}
 .ss-hoy-tarjeta .boton{pointer-events:none}
 @media (max-width:560px){ .ss-hoy-tarjeta{grid-template-columns:auto minmax(0,1fr)} .ss-hoy-tarjeta .boton{grid-column:1/-1;justify-self:start} .ss-hoy-tarjeta .pegatina{width:56px;height:56px} }
+
+/* sesión: modo foco y cabecera compacta */
+html.ss-foco .barra-inferior{display:none}
+html.ss-foco{scroll-padding-bottom:16px}
+.ss-cab-fila{display:flex;align-items:baseline;justify-content:space-between;gap:var(--e-3);flex-wrap:wrap}
+.ss-salir{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;font-weight:700;color:var(--c-tinta-2);text-decoration:underline;text-underline-offset:3px}
+.ss-cab.compacta{margin-bottom:var(--e-3)}
+.ss-cab.compacta h1{font-size:var(--t-lg);line-height:1.2}
+.ss-cab.compacta + .ss-pasos{margin-bottom:var(--e-4)}
+.ss-cab.compacta + .ss-pasos .ss-nom{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ss-cab.compacta + .ss-pasos .ss-num{width:28px;height:28px;font-size:13px}
+.ss-pasos .ss-num svg{width:16px;height:16px}
+.ss-gancho input{width:100%;min-height:48px;margin-top:var(--e-1);padding:0 12px;font:inherit;font-size:16px;color:var(--c-tinta);background:var(--c-tarjeta);border:1.5px solid var(--c-linea-suave);border-radius:var(--r-1)}
+.ss-plegado{margin-block:var(--e-4)}
+.ss-plegado>summary{display:flex;align-items:center;gap:6px;min-height:44px;cursor:pointer;font-weight:700;color:var(--asig-texto)}
+.ss-falta{margin-top:var(--e-4);color:var(--c-tinta-2)}
+.ss-sigue{margin-top:var(--e-3)}

@@ -110,13 +110,31 @@
     function guardarS(id, e) { if (!ctx.guardar(rutaS(id), e)) ctx.aviso("No se pudo guardar. Revisa el espacio del navegador.", "error"); }
     function conceptos() { var c = ctx.leer(["personal", "conceptos"], {}); return c && typeof c === "object" ? c : {}; }
 
+    /* la siguiente sesión que conviene (guiada por el examen cercano), sin contar la actual */
+    function siguienteGuiada(sinId) {
+      try {
+        var li = indice(); if (!li) return null;
+        var exa = ctx.examen ? ctx.examen() : null;
+        return siguienteParaExamen(li.filter(function (x) { return x.id !== sinId; }), estadosTodas(), exa && exa.ex, function (u) { var U = D.unidad(u); return U ? U.s : ""; }).s;
+      } catch (_) { return null; }
+    }
+    /* estudiar también hace crecer la planta: una hoja por cada día con algo hecho */
+    function crecePlanta() {
+      var L2 = window.CorteLogica; if (!L2) return;
+      var a = ctx.leer(["personal", "planta"], []), d = L2.planta(a, L2.clave(ctx.ahora()), true);
+      if (d.length !== (Array.isArray(a) ? a.length : 0)) ctx.guardar(["personal", "planta"], d);
+    }
+    /* modo foco: sin la barra de abajo mientras se estudia */
+    function foco() { document.documentElement.classList.add("ss-foco"); }
+    window.addEventListener("hashchange", function () { if (!/^#\/sesion\//.test(location.hash)) document.documentElement.classList.remove("ss-foco"); });
+
     /* ---------- piezas ---------- */
     function sello(texto) { return '<span class="ss-sello">' + ico("info") + esc(texto) + "</span>"; }
     var DE_CORTE = sello("de Corte"), DE_PROFE = '<span class="ss-sello profe">' + ico("check") + "de tu profe</span>";
     function pasos(n) {
       return '<ol class="ss-pasos" aria-label="Momentos de la sesión">' + PASOS.map(function (p, k) {
         var cl = k < n ? "hecho" : k === n ? "ahora" : "";
-        return '<li class="' + cl + '"' + (k === n ? ' aria-current="step"' : "") + '><span class="ss-num num">' + (k < n ? "✓" : k + 1) + '</span><span class="ss-nom">' + p[1] + "</span></li>";
+        return '<li class="' + cl + '"' + (k === n ? ' aria-current="step"' : "") + '><span class="ss-num num">' + (k < n ? ico("check") : k + 1) + '</span><span class="ss-nom">' + p[1] + "</span></li>";
       }).join("") + "</ol>";
     }
     function boton(txt, attr, sec, icono) { return '<button type="button" class="boton' + (sec ? " secundario" : "") + '" ' + attr + ">" + (icono ? ico(icono) : "") + txt + "</button>"; }
@@ -136,19 +154,24 @@
       var c = S.conceptos[e.i], v = e.vistos[c.id] || {}, n = S.conceptos.length;
       var h = '<p class="ss-cuenta num">Concepto ' + (e.i + 1) + " de " + n + " · diapositiva " + esc(c.diapositivas) + "</p>" +
         '<article class="ss-concepto" aria-labelledby="ssC"><h2 id="ssC">' + esc(c.titulo) + "</h2>" +
-        '<div class="ss-gancho">' + DE_CORTE + '<p class="mano">' + esc(c.gancho) + '</p><p class="ss-mini">Piénsalo unos segundos antes de abrir. No hace falta acertar.</p></div>';
-      if (!v.profe) return h + '<div class="acciones">' + boton("Ver lo que dice la profe", 'data-ss="profe"', false, "abrir-fuera") + "</div></article>";
-      var p = c.profe;
-      h += '<section class="ss-profe" aria-label="Lo que dice la profe">' + DE_PROFE +
+        '<div class="ss-gancho">' + DE_CORTE + '<p class="mano">' + esc(c.gancho) + "</p>" +
+        (v.profe ? (v.gan ? '<p class="ss-tuya"><span>Tu idea</span> ' + esc(v.gan) + "</p>" : "")
+          : '<label class="ss-lbl" for="ssGan">Tu idea <span class="mano">(una palabra basta; no se corrige)</span></label><input id="ssGan" type="text" maxlength="300" autocomplete="off" data-ss-txt="gan:' + esc(c.id) + '" value="' + esc(v.gan || "") + '" placeholder="Yo diría que…">') + "</div>";
+      if (!v.profe) return h + '<div class="acciones">' + boton("Ver lo que dice la profe", 'data-ss="profe"', false, "siguiente") + "</div></article>";
+      var p = c.profe, hayAp = !!(c.aplica && c.aplica.length);
+      var respondidas = hayAp ? c.aplica.every(function (_, k) { return v.aplica && typeof v.aplica[k] === "number"; }) : true;
+      var plegar = v.porque && hayAp;
+      h += (plegar ? '<details class="ss-plegado"' + (respondidas ? " open" : "") + "><summary>Volver a mirar lo de la profe</summary>" : "") +
+        '<section class="ss-profe" aria-label="Lo que dice la profe">' + DE_PROFE +
         (p.glosario ? '<div class="ss-glos rico">' + rico(p.glosario) + "</div>" : "") +
         (p.img ? '<figure class="ss-fig"><img src="' + esc(p.img) + '" alt="' + esc(p.imgAlt || "") + '" loading="lazy"><figcaption>' + esc(p.imgAlt || "") + "</figcaption></figure>" : "") +
         '<div class="ss-dice rico">' + rico(p.dice) + "</div>" +
         (p.entiende ? '<div class="ss-ent"><b>Entiéndelo:</b> ' + rico(p.entiende) + "</div>" : "") +
-        (p.truco ? '<div class="ss-truco"><span class="mano">Truco:</span> ' + rico(p.truco) + "</div>" : "") + "</section>";
+        (p.truco ? '<div class="ss-truco"><span class="mano">Truco:</span> ' + rico(p.truco) + "</div>" : "") + "</section>" + (plegar ? "</details>" : "");
       h += '<section class="ss-porque nota" aria-labelledby="ssPq">' + DE_CORTE + '<h3 id="ssPq">¿Por qué?</h3><p>' + esc(c.porque.pregunta) + "</p>" +
         (v.porque ? '<p class="ss-resp">' + esc(c.porque.respuesta) + "</p>" : '<div class="acciones">' + boton("Lo he pensado: ver una respuesta", 'data-ss="porque"', true) + "</div>") + "</section>";
       if (c.aplica && c.aplica.length) {
-        h += '<section class="ss-aplica" aria-labelledby="ssAp">' + DE_CORTE + '<h3 id="ssAp">Úsalo</h3><ol>' + c.aplica.map(function (a, k) {
+        h += '<section class="ss-aplica" aria-labelledby="ssAp">' + DE_CORTE + '<h3 id="ssAp">Úsalo</h3>' + (respondidas ? "" : '<p class="ss-mini">Sin mirar arriba. Si dudas, abre «Volver a mirar».</p>') + "<ol>" + c.aplica.map(function (a, k) {
           var r = v.aplica && typeof v.aplica[k] === "number" ? v.aplica[k] : null;
           return '<li><p>' + esc(a.caso) + '</p><div class="ss-ops" role="group" aria-label="Elige">' + a.opciones.map(function (o, j) {
             var cl = r === null ? "" : j === a.buena ? " buena" : j === r ? " mala" : "";
@@ -157,6 +180,7 @@
         }).join("") + "</ol></section>";
       }
       var ult = e.i === n - 1;
+      if (!v.porque || !respondidas) return h + '<p class="ss-falta mano">' + (!v.porque ? "Para seguir: piensa el «¿por qué?» y ábrelo." : "Para seguir: responde «Úsalo».") + "</p></article>";
       return h + '<div class="acciones ss-sig">' + (ult ? boton("Ahora, sin mirar", 'data-ss="sig"', false, "siguiente") : boton("Siguiente concepto", 'data-ss="sig"', false, "siguiente")) + "</div></article>";
     }
     /* ---------- 3 · sin mirar ---------- */
@@ -210,6 +234,7 @@
           : '<div class="tj-botones">' + boton("Ver la respuesta", 'data-ss="girar"') + "</div>");
     }
     function vFin(S, e) {
+      var sigS = siguienteGuiada(S.id);
       var cs = conceptos(), filas = S.conceptos.map(function (c) {
         var r = e.recuerdo[c.id] || {}, m = (r.marcas || []).filter(Boolean).length, st = cs[c.id];
         return "<li><b>" + esc(c.titulo) + '</b><span class="num">' + m + " / " + c.recuerda.puntos.length + "</span><span>" + (st && st.due ? "vuelve " + vuelve(st, hoy(), S2) : "") + "</span></li>";
@@ -218,7 +243,8 @@
         '<h2 id="ssFin">Sesión hecha</h2><p>' + (e.hecha === hoy() ? "Has estudiado para entender, no solo para aprobar. " : "") + "Esto es lo que te llevas y cuándo vuelve:</p>" +
         '<ul class="ss-resumen">' + filas + "</ul>" +
         '<p class="mano">No hace falta repasarlo antes: cuando toque, en Hoy aparecerá «Tu repaso de hoy» y te lo pediré otra vez sin mirar.</p>' +
-        '<div class="acciones"><a class="boton" href="#/hoy">Volver a Hoy</a><button type="button" class="boton secundario" data-ss="reiniciar">Repetir la sesión desde el principio</button></div></section>';
+        (sigS ? '<p class="ss-sigue">Lo siguiente: <b>' + esc(sigS.titulo) + "</b>. Mañana, o ahora si te quedan ganas.</p>" : "") +
+        '<div class="acciones"><a class="boton" href="#/hoy">Volver a Hoy</a>' + (sigS ? '<a class="boton secundario" href="#/sesion/' + encodeURIComponent(sigS.id) + '">Empezar la siguiente</a>' : "") + '<button type="button" class="boton secundario" data-ss="reiniciar">Repetir la sesión desde el principio</button></div></section>';
     }
     /* ================= el repaso de los días siguientes: #/sesion/repaso =================
        Lo que vuelve hoy: los conceptos de tus sesiones que ya tocan (otra vez sin mirar) y tus tarjetas vencidas.
@@ -250,7 +276,7 @@
         r = { fecha: hoy(), cola: cola, k: 0 }; guardarR(r);
       }
       var html;
-      if (!r.cola.length) html = '<div class="estado">' + ctx.pegatina("gafas", "lab", "quieta") + '<div><h2 class="estado-tit">Hoy no vuelve nada</h2><p>Todo lo que has estudiado está fresco. Puedes hacer una sesión nueva o descansar: también cuenta.</p><div class="acciones"><a class="boton" href="#/hoy">Volver a Hoy</a></div></div></div>';
+      if (!r.cola.length) html = '<div class="estado">' + ctx.pegatina("gafas", "lab", "quieta") + '<div><h2 class="estado-tit">Hoy no vuelve nada</h2><p>Todo lo que has estudiado está fresco. Puedes hacer una sesión nueva o descansar: también cuenta.</p><div class="acciones">' + (function () { var s = siguienteGuiada(""); return s ? '<a class="boton" href="#/sesion/' + encodeURIComponent(s.id) + '">Hacer «' + esc(s.titulo) + '»</a><a class="boton secundario" href="#/hoy">Volver a Hoy</a>' : '<a class="boton" href="#/hoy">Volver a Hoy</a>'; })() + "</div></div></div>";
       else if (r.k >= r.cola.length) html = '<section class="ss-fin recuadro"><span class="washi" aria-hidden="true"></span>' + ctx.pegatina("matraz", "lab", "") + '<h2>Repaso hecho</h2><p>' + r.cola.length + (r.cola.length === 1 ? " cosa repasada" : " cosas repasadas") + ". Lo que te costó vuelve antes; lo que dominas, cada vez más tarde.</p><div class=\"acciones\"><a class=\"boton\" href=\"#/hoy\">Volver a Hoy</a></div></section>";
       else {
         var it = r.cola[r.k], cuenta = '<p class="ss-cuenta num">' + (r.k + 1) + " de " + r.cola.length + "</p>";
@@ -268,7 +294,7 @@
             (r.vuelta ? '<div class="tj-botones" role="group" aria-label="¿Cómo te ha ido?">' + boton("Otra vez", 'data-rp-tj="otra"', true) + boton("Bien", 'data-rp-tj="bien"') + boton("Fácil", 'data-rp-tj="facil"', true) + "</div>" : '<div class="tj-botones">' + boton("Ver la respuesta", 'data-rp="girar"') + "</div>");
         }
       }
-      return { sec: "hoy", titulo: "Repaso de hoy", html: cab + '<div class="ss-cuerpo" id="ssCuerpo">' + html + "</div>", animar: function (M) { var f = EF; EF = null; var c2 = $("#ssCuerpo"); if (f && c2) M.animar(c2, [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 260, easing: M.CURVA.salida }, "ss"); } };
+      return { sec: "hoy", titulo: "Repaso de hoy", html: cab + '<div class="ss-cuerpo" id="ssCuerpo">' + html + "</div>", montar: foco, animar: function (M) { var f = EF; EF = null; var c2 = $("#ssCuerpo"); if (f && c2) M.animar(c2, [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 260, easing: M.CURVA.salida }, "ss"); } };
     }
     function clicRepaso(t) {
       var r = leerR(); if (!r || r.k >= r.cola.length) return;
@@ -277,14 +303,14 @@
       if (a === "puntuar") {
         var idx = indiceConceptos(todas() || []), x = idx[it.id]; if (!x) return;
         var m = x.c.recuerda.puntos.map(function (_, k) { var el = document.querySelector('[data-rp-marca="' + k + '"]'); return !!(el && el.checked); });
-        var todos = conceptos(); todos[it.id] = S2.puntuar(todos[it.id] || null, nota(m, m.length), hoy()); ctx.guardar(["personal", "conceptos"], todos);
+        var todos = conceptos(); todos[it.id] = S2.puntuar(todos[it.id] || null, nota(m, m.length), hoy()); ctx.guardar(["personal", "conceptos"], todos); crecePlanta();
         ctx.refrescar && ctx.refrescar(x.S.unidad);
         r.k++; r.comparado = false; r.marcas = []; r.txt = ""; EF = "x"; guardarR(r); return ctx.repintar("#titulo", true);
       }
       if (a === "girar") { r.vuelta = true; EF = "x"; guardarR(r); return ctx.repintar('[data-rp-tj="bien"]'); }
       if (t.hasAttribute("data-rp-tj")) {
         var est = ctx.leer(["unidades", it.u, "tarjetas"], {}) || {};
-        est[it.id] = S2.puntuar(est[it.id] || null, t.getAttribute("data-rp-tj"), hoy()); ctx.guardar(["unidades", it.u, "tarjetas"], est); ctx.refrescar && ctx.refrescar(it.u);
+        est[it.id] = S2.puntuar(est[it.id] || null, t.getAttribute("data-rp-tj"), hoy()); ctx.guardar(["unidades", it.u, "tarjetas"], est); ctx.refrescar && ctx.refrescar(it.u); crecePlanta();
         r.k++; r.vuelta = false; EF = "x"; guardarR(r); return ctx.repintar('[data-rp="girar"], [data-rp="comparar"], .ss-fin .boton');
       }
     }
@@ -310,10 +336,11 @@
       var U = D.unidad(S.unidad), e = leerS(id);
       if (!e.inicio) { e.inicio = hoy(); guardarS(id, e); }
       var cuerpo = e.paso === 0 ? vMisterio(S, e) : e.paso === 1 ? vDescubre(S, e) : e.paso === 2 ? vSinMirar(S, e) : e.paso === 3 ? vResuelve(S, e) : vOtros(S, e, id);
-      var html = ctx.ruta([["Asignaturas", "#/asignaturas"], [A[U.s].nombre, "#/asignatura/" + U.s], [U.codigo, "#/unidad/" + U.id], ["Sesión"]]) +
-        '<header class="cab ss-cab"><p class="ss-k mano">Sesión de estudio · ' + esc(U.codigo) + " · bloque " + S.bloque + " · unos " + S.minutos + " min</p>" + ctx.titulo('<span class="fluor asig">' + esc(S.titulo) + "</span>") + "</header>" +
+      var compacta = e.paso > 0;
+      var html = (compacta ? "" : ctx.ruta([["Asignaturas", "#/asignaturas"], [A[U.s].nombre, "#/asignatura/" + U.s], [U.codigo, "#/unidad/" + U.id], ["Sesión"]])) +
+        '<header class="cab ss-cab' + (compacta ? " compacta" : "") + '"><div class="ss-cab-fila"><p class="ss-k mano">Sesión · ' + esc(U.codigo) + (compacta ? "" : " · bloque " + S.bloque + " · unos " + S.minutos + "\u00a0min") + '</p><a class="ss-salir" href="#/hoy">Salir <span class="mano">(se guarda)</span></a></div>' + ctx.titulo('<span class="fluor asig">' + esc(S.titulo) + "</span>") + "</header>" +
         pasos(Math.min(e.paso, 4) + (e.paso === 4 && e.cola && e.k >= e.cola.length ? 1 : 0)) + '<div class="ss-cuerpo" id="ssCuerpo">' + cuerpo + "</div>";
-      return { sec: "asignaturas", titulo: "Sesión · " + S.titulo, subject: U.s, html: html, montar: etiquetarTablas, animar: function (M) { var f = EF; EF = null; var c = $("#ssCuerpo"); if (f && c) M.animar(f === "abajo" ? (c.querySelector(".ss-profe, .ss-resp, .ss-puntos, .ss-fb, .tj-dorso") || c) : c, [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 280, easing: M.CURVA.salida }, "ss"); } };
+      return { sec: "hoy", titulo: "Sesión · " + S.titulo, subject: U.s, html: html, montar: function () { foco(); etiquetarTablas(); }, animar: function (M) { var f = EF; EF = null; var c = $("#ssCuerpo"); if (f && c) M.animar(f === "abajo" ? (c.querySelector(".ss-profe, .ss-resp, .ss-puntos, .ss-fb, .tj-dorso") || c) : c, [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 280, easing: M.CURVA.salida }, "ss"); } };
     }
 
     /* ---------- acciones ---------- */
@@ -331,7 +358,7 @@
       var S = DATOS[id]; if (!S) return;
       var e = leerS(id), c = S.conceptos[e.i], a = t.getAttribute("data-ss");
       if (a === "apostar") { var ta = $("#ssApuesta"); e.apuesta = ta ? ta.value.slice(0, 2000) : e.apuesta; e.paso = 1; e.i = 0; EF = "pagina"; guardarS(id, e); return ctx.repintar("#titulo", true); }
-      if (a === "profe") { (e.vistos[c.id] = e.vistos[c.id] || {}).profe = true; EF = "abajo"; guardarS(id, e); return ctx.repintar('[data-ss="porque"]'); }
+      if (a === "profe") { var gi = $("#ssGan"), vv = e.vistos[c.id] = e.vistos[c.id] || {}; if (gi) vv.gan = gi.value.slice(0, 300); vv.profe = true; EF = "abajo"; guardarS(id, e); return ctx.repintar('[data-ss="porque"]'); }
       if (a === "porque") { (e.vistos[c.id] = e.vistos[c.id] || {}).porque = true; EF = "abajo"; guardarS(id, e); return ctx.repintar(".ss-aplica .ss-op, [data-ss=sig]"); }
       if (t.hasAttribute("data-ss-ap")) {
         var p = t.getAttribute("data-ss-ap").split(":"), k = +p[0], j = +p[1], v = e.vistos[c.id] = e.vistos[c.id] || {};
@@ -346,7 +373,7 @@
         r2.marcas = c.recuerda.puntos.map(function (_, k2) { var x = document.querySelector('[data-ss-marca="' + k2 + '"]'); return !!(x && x.checked); });
         r2.guardado = true;
         var todos = conceptos(); todos[c.id] = S2.puntuar(todos[c.id] || null, nota(r2.marcas, c.recuerda.puntos.length), hoy());
-        ctx.guardar(["personal", "conceptos"], todos); ctx.refrescar && ctx.refrescar(S.unidad);
+        ctx.guardar(["personal", "conceptos"], todos); ctx.refrescar && ctx.refrescar(S.unidad); crecePlanta();
         EF = "abajo"; guardarS(id, e); return ctx.repintar("[data-ss=sig]");
       }
       if (t.hasAttribute("data-ss-ac")) { e.acierto = t.getAttribute("data-ss-ac"); EF = "abajo"; guardarS(id, e); return ctx.repintar("[data-ss=sig]"); }
@@ -369,6 +396,7 @@
       clearTimeout(tm); tm = setTimeout(function () {
         var e = leerS(id), k = t.getAttribute("data-ss-txt");
         if (k === "apuesta") e.apuesta = t.value.slice(0, 2000);
+        else if (k.indexOf("gan:") === 0) { var gid = k.slice(4); (e.vistos[gid] = e.vistos[gid] || {}).gan = t.value.slice(0, 300); }
         else if (k.indexOf("rec:") === 0) { var cid = k.slice(4); (e.recuerdo[cid] = e.recuerdo[cid] || {}).txt = t.value.slice(0, 4000); }
         guardarS(id, e);
       }, 300);
