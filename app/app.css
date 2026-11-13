@@ -626,3 +626,23 @@ html.ss-foco{scroll-padding-bottom:16px}
 .ss-plegado>summary{display:flex;align-items:center;gap:6px;min-height:44px;cursor:pointer;font-weight:700;color:var(--asig-texto)}
 .ss-falta{margin-top:var(--e-4);color:var(--c-tinta-2)}
 .ss-sigue{margin-top:var(--e-3)}
+
+/* organizador: avisos y plan del examen */
+.avisos-hoy{margin-bottom:var(--e-5)}
+.avisos-hoy ul{display:grid;gap:var(--e-3);margin:0;padding:0;list-style:none}
+.aviso-hoy{display:grid;gap:var(--e-3);padding:var(--e-4);border-radius:var(--r-2);background:var(--c-tarjeta);border:1.5px solid var(--c-linea-suave);border-left:6px solid var(--asig-texto,var(--c-tinta))}
+.aviso-hoy.nivel-hoy{border-color:var(--c-error);border-left-color:var(--c-error)}
+.aviso-hoy.nivel-manana{border-left-color:var(--c-aviso)}
+.aviso-hoy p{margin:0}
+.av-k{font-size:var(--t-xs);font-weight:700;color:var(--c-tinta-2)}
+.av-t{font-size:var(--t-lg);line-height:1.25;margin-block:2px 4px!important}
+.av-acc{display:flex;flex-wrap:wrap;gap:var(--e-2)}
+@media (min-width:640px){ .aviso-hoy{grid-template-columns:1fr auto;align-items:center} }
+.plan-ex{margin-block:var(--e-4);padding:var(--e-3) var(--e-4);border-radius:var(--r-1);background:var(--asig-suave,var(--c-tarjeta));color:var(--c-tinta)}
+.plan-ex p{margin:0 0 var(--e-2)}
+.plan-k{font-size:18px;color:var(--c-tinta)!important}
+.plan-ex.ritmo-apretado{outline:2px dashed var(--c-aviso);outline-offset:-2px}
+.plan-sub{font-weight:700;margin-bottom:4px!important}
+.plan-hoy{margin:0;padding-left:1.4em}
+.plan-hoy li{margin-block:6px}
+.plan-hoy a{display:inline-block;min-height:24px;font-weight:700;color:var(--c-tinta)}

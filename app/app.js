@@ -129,6 +129,7 @@
         '<h3 class="ex-nombre"><span class="fluor asig">' + esc(nom) + "</span></h3>" + (ex.provisional ? '<p class="ex-prov">' + provisional(ex) + "</p>" : "") +
         '<p class="ex-det">' + L.may(L.fechaLarga(ex.date)) + (ex.claseHora ? ", en tu hora de clase: " + L.hora(ex.claseHora, fmtHora()) : "") + "." + (prof(ex.s) ? " Con " + esc(prof(ex.s)) + "." : "") + "</p>" + (ex.nota && ex.provisional ? '<p class="ex-nota">' + ico("info") + "<span>" + esc(ex.nota) + "</span>" + "</p>" : "") +
         '<div class="ex-fila"><div class="lcd" role="timer" aria-label="Cuenta atrás hasta el ' + (ex.tipo === "oral" ? "oral" : "examen") + '"><div class="lcd-pantalla"><span data-lcd="0">--</span><span class="u" data-lcdu="0">h</span><span data-lcd="1">--</span><span class="u" data-lcdu="1">m</span><span data-lcd="2">--</span><span class="u" data-lcdu="2">s</span></div><div class="lcd-pie"><span>LAB TIMER</span><span>' + L.DIAS[ex.date.getDay()].slice(0, 3).toUpperCase() + " → " + (ex.claseHora || "") + (ex.provisional ? " · PROV." : "") + '</span></div></div><span class="mano">hasta el ' + (ex.tipo === "oral" ? "oral" : "examen") + "</span></div>" +
+        planHTML(ex, n) +
         (ex.unidad && D.unidad(ex.unidad) ? '<a class="boton" href="#/unidad/' + esc(ex.unidad) + '">Preparar ' + esc(D.unidad(ex.unidad).titulo) + ico("siguiente") + "</a>" : "") + "</div>";
     } else {
       var sinF = D.UNIDADES.filter(function (u) { return !examenDe(u); });
@@ -148,7 +149,7 @@
     }).join("");
 
     var html = '<header class="cab">' + cab + '<p class="mano resumen" id="resumen">' + esc(L.resumenHoy(EVS, h, n, ex)) + "</p></header>" +
-      bienvenida() +
+      bienvenida() + avisosHTML(n) +
       '<div class="urgente">' + pild + "</div>" +
       '<div class="rejilla rejilla-hoy">' + (SS ? SS.hoyBloque() : "") +
       '<section aria-labelledby="hHoy"><div class="sec-cab"><h2 id="hHoy"><span class="fluor">Para hoy</span></h2><span class="mano">tacha al terminar</span></div>' +
@@ -164,6 +165,47 @@
       '<a class="nota-boton lila" href="../centro/"><b>El centro</b><span class="mano">el pasillo y las salas en 3D</span></a></div></section>' +
       "</div>" + (G ? '<p class="guia-pie"><a href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p>" : "");
     return { sec: "hoy", titulo: "Hoy", html: html, tic: true };
+  }
+
+  /* ---------- organizador (app/plan.js): avisos que insisten y plan hasta el examen ---------- */
+  var PL = window.EnfoquePlan;
+  function hoyClave(n) { return L.clave(n); }
+  function estudioHoyPara(e, n) {
+    var d = SS && SS.paraExamen ? SS.paraExamen(e) : null, k = hoyClave(n);
+    return !!(d && d.sesiones.some(function (x) { var s = d.estados[x.id]; return s && s.hecha === k; }));
+  }
+  function avisosHTML(n) {
+    if (!PL) return "";
+    var lista = PL.avisos({ evs: EVS, entregadas: hechas(), descartados: leer("personal.avisos", {}) || {}, hoy: n, estudioHoy: function (e) { return estudioHoyPara(e, n); } });
+    if (!lista.length) return "";
+    return '<section class="avisos-hoy" aria-labelledby="hAv"><div class="sec-cab"><h2 id="hAv">Avisos</h2><span class="mano">hasta que lo hagas</span></div><ul>' + lista.map(function (a) {
+      var S1 = A[a.evento.s] || {}, ir = a.tipo === "estudio" ? (SS && SS.sesionHoy ? SS.sesionHoy() : null) : null;
+      return '<li class="aviso-hoy nivel-' + a.nivel + '" data-subject="' + esc(a.evento.s) + '"><div><p class="av-k">' + esc((S1.ab || "") + " · " + (a.tipo === "entrega" ? "entrega" : "examen")) + '</p><p class="av-t"><b>' + esc(a.titulo) + "</b></p><p>" + esc(a.texto) + "</p></div>" +
+        '<div class="av-acc">' + (ir ? '<a class="boton" href="' + esc(ir) + '">Estudiar ahora</a>' : "") + '<button type="button" class="boton secundario" data-aviso="' + esc(a.id) + '">' + esc(a.accion) + "</button></div></li>";
+    }).join("") + "</ul></section>";
+  }
+  function planHTML(ex, n) {
+    if (!PL || !SS || !SS.paraExamen) return "";
+    var d = SS.paraExamen(ex); if (!d || !d.sesiones.length) return "";
+    var p = PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: d.estados, hoy: n }); if (!p) return "";
+    var lista = p.hoyToca.length ? '<ol class="plan-hoy">' + p.hoyToca.map(function (x) { return '<li><a href="#/sesion/' + encodeURIComponent(x.id) + '">' + esc(x.titulo) + "</a> <span class=\"num\">" + (+x.minutos || 0) + "\u00a0min</span></li>"; }).join("") + "</ol>" : "";
+    return '<div class="plan-ex ritmo-' + p.ritmo + '"><p class="plan-k mano">Tu plan hasta el examen · ' + p.hechas + " de " + p.total + " sesiones</p><p>" + esc(p.mensaje) + "</p>" + (lista ? '<p class="plan-sub">Hoy:</p>' + lista : "") + "</div>";
+  }
+  function avisoHecho(id) {
+    var n = ahora();
+    if (id.indexOf("entrega:") === 0) {
+      var eid = id.slice(8), h = hechas(), o = {};
+      for (var x in h) if (tiene(h, x)) o[x] = h[x];
+      o[eid] = n.toISOString();
+      if (!guardar("personal.entregadas", o)) { aviso("No se pudo guardar. Revisa el espacio del navegador.", "error"); return; }
+      var hay = EVS.some(function (e) { return e.tipo === "entrega" && e.fecha === L.clave(n) && o[e.id]; });
+      guardar("personal.planta", L.planta(leer("personal.planta", []), L.clave(n), hay || true));
+      aviso("Entregado. Este aviso ya no saldrá.");
+    } else {
+      guardar("personal.avisos", PL.descartar(leer("personal.avisos", {}) || {}, id, n));
+      aviso("Apuntado. Mañana te lo vuelvo a recordar si el examen sigue cerca.");
+    }
+    pintar(false);
   }
 
   /* primer uso: una nota de bienvenida en Hoy hasta que se cierra (prefs.bienvenida). Si ya hay progreso guardado, no sale. */
@@ -695,6 +737,7 @@
     var t = ev.target.closest ? ev.target.closest("button") : null;
     if (!t || !vista.contains(t) && !t.closest(".mesa")) return;
     if (t.hasAttribute("data-tarea")) return tachar(t);
+    if (t.hasAttribute("data-aviso")) return avisoHecho(t.getAttribute("data-aviso"));
     if (t.getAttribute("data-accion") === "reintentar") { vista.innerHTML = cargando("Cargando la agenda"); return cargarAgenda(); }
     if (t.getAttribute("data-accion") === "bienvenida") {
       ponerPref("bienvenida", true);

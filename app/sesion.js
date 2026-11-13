@@ -449,9 +449,16 @@
       }).join("") + "</ol></section>";
     }
 
+    /* las sesiones que cuentan para un examen: las de su unidad o, si no hay, las de su asignatura */
+    function paraExamen(ex) {
+      var li = indice(); if (!li || !ex) return null;
+      var deU = ex.unidad ? li.filter(function (x) { return x.unidad === ex.unidad; }) : [];
+      var base = deU.length ? deU : li.filter(function (x) { var U = D.unidad(x.unidad); return U && U.s === ex.s; });
+      return { sesiones: base, estados: estadosTodas() };
+    }
     /* el enlace de la sesión que toca hoy (lo usa la guía) */
     function sesionHoy() { var s = siguienteGuiada(""); return s ? "#/sesion/" + encodeURIComponent(s.id) : null; }
-    return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque, sesionHoy: sesionHoy };
+    return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque, sesionHoy: sesionHoy, paraExamen: paraExamen };
   }
 
   return { crear: crear, L: { nota: nota, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, siguienteSesion: siguienteSesion, siguienteParaExamen: siguienteParaExamen, PASOS: PASOS } };
