@@ -541,7 +541,7 @@ var TEMAS=[
 {n:5,t:"Maduración del ARN",lab:["mad"]},
 {n:6,t:"Código genético y traducción",lab:["trad"]},
 {n:7,t:"Mutaciones",lab:["mut"]}];
-function hero(t,p){return '<a class="back" id="back" href="../../" hidden>← Menú · Mi carrera</a><header class="hero"><p class="eb">🧬 Biología Molecular · 3er examen · Tema 4</p><h1>'+t+'</h1><p>'+p+'</p></header>'}
+function hero(t,p){return '<a class="back" id="back" href="../../app/#/unidad/bio3" hidden>← Volver a la unidad</a><header class="hero"><p class="eb">🧬 Biología Molecular · 3er examen · Tema 4</p><h1>'+t+'</h1><p>'+p+'</p></header>'}
 function viewInicio(){
   var tot=LAB.length+HIST.length+CASOS.length+EXP.length,hc=Object.keys(S.lab).length+Object.keys(S.hist).length+Object.keys(S.casos).length+Object.keys(S.exp).length;
   app.innerHTML=hero("Aprende el Tema 4 haciendo","Ácidos nucleicos y enzimas asociadas, las 110 diapositivas. Nada de leer y subrayar: aquí montas, decides, resuelves y explicas.")+

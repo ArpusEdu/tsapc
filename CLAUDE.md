@@ -18,7 +18,7 @@ Contexto de producto: `PRODUCT.md`. Sistema de diseño vigente: `docs/corte/DESI
 ## Arquitectura
 
 - HTML, CSS y JS sin framework y **sin build**. PWA con `sw.js`: las páginas funcionan sin conexión; las imágenes de los repasos se guardan la primera vez que se ven con conexión.
-- `index.html`: portada y datos de unidades (`EX`, `PROG`). `centro/`: el centro 3D (Three.js), una sala por asignatura.
+- **La entrada es la app** (`app/`, Hoy, con la guía de bienvenida `app/bienvenida.js` la primera vez). `index.html` redirige a la app; la portada antigua (con los datos `EX`, `PROG` que usan los scripts) sigue en `?portada`. El «volver» de repasos y simulacros lleva a la unidad en la app. `centro/`: el centro 3D (Three.js, librerías locales en `assets/vendor/`), una sala por asignatura, con botón «Ver sin 3D».
 - `app/`: la app SPA con rutas hash (`app.js`, `logica.js`, `quiz.js`, `sm2.js`, `estudio.js` práctica y tarjetas, `sesion.js` sesiones de estudio, `mov.js` movimiento, `datos.js`). Sesiones de estudio en `app/sesiones/<id>.json`, índice en `app/sesiones/indice.json`.
 - Una carpeta por unidad (`bio1`…`ipe-tema5`) con `repaso/`, y a veces `simulacro/`, vocabulario y test. Fuentes de texto de los PDF en `docs/fuentes/<u>.txt`.
 - `assets/corte/`: tokens, base, texturas, componentes, iconos del sistema de diseño.
