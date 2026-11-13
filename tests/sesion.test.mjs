@@ -105,3 +105,9 @@ test("sesión de hoy: la guía el examen más cercano", () => {
   assert.equal(L.siguienteParaExamen(l, {}, { s: "ipe" }, asig).s.id, "ipe2-a", "examen sin unidad: su asignatura");
   assert.equal(L.siguienteParaExamen(l, {}, { unidad: "ipe2", s: "ipe" }, asig).de.length, 2);
 });
+
+test("sesión de hoy: si el examen dice qué sesiones entran, solo esas", () => {
+  const l = [{ id: "u-a", unidad: "u" }, { id: "u-b", unidad: "u" }, { id: "u-c", unidad: "u" }];
+  const r = L.siguienteParaExamen(l, {}, { unidad: "u", s: "x", sesiones: ["u-b", "u-c"] }, () => "x");
+  assert.equal(r.s.id, "u-b"); assert.equal(r.de.length, 2);
+});

@@ -42,7 +42,8 @@
   /* guiada por el examen más cercano: primero las sesiones de esa unidad; si no quedan, las de su asignatura; si no, el recorrido */
   function siguienteParaExamen(lista, estados, ex, asigDe) {
     if (ex) {
-      var deU = ex.unidad ? lista.filter(function (x) { return x.unidad === ex.unidad; }) : [];
+      /* si el examen dice qué sesiones entran (por diapositivas), solo esas */
+      var deU = Array.isArray(ex.sesiones) && ex.sesiones.length ? lista.filter(function (x) { return ex.sesiones.indexOf(x.id) >= 0; }) : ex.unidad ? lista.filter(function (x) { return x.unidad === ex.unidad; }) : [];
       var r = deU.length ? siguienteSesion(deU, estados) : null;
       if (r) return { s: r, de: deU };
       var deA = ex.s ? lista.filter(function (x) { return asigDe(x.unidad) === ex.s; }) : [];
@@ -452,7 +453,7 @@
     /* las sesiones que cuentan para un examen: las de su unidad o, si no hay, las de su asignatura */
     function paraExamen(ex) {
       var li = indice(); if (!li || !ex) return null;
-      var deU = ex.unidad ? li.filter(function (x) { return x.unidad === ex.unidad; }) : [];
+      var deU = Array.isArray(ex.sesiones) && ex.sesiones.length ? li.filter(function (x) { return ex.sesiones.indexOf(x.id) >= 0; }) : ex.unidad ? li.filter(function (x) { return x.unidad === ex.unidad; }) : [];
       var base = deU.length ? deU : li.filter(function (x) { var U = D.unidad(x.unidad); return U && U.s === ex.s; });
       return { sesiones: base, estados: estadosTodas() };
     }

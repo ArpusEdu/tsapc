@@ -422,11 +422,14 @@
       "id": "ipe-examen-u1",
       "tipo": "examen",
       "asig": "ipe",
-      "titulo": "Examen · Unidad 1",
+      "titulo": "Examen · Tema 4: riesgos ergonómicos y psicosociales",
+      "unidad": "ipe-tema4",
+      "diapositivas": "11-17",
+      "sesiones": ["ipe-tema4-ergonomia", "ipe-tema4-cargas", "ipe-tema4-psicosociales"],
       "fecha": "2026-11-17",
       "hora": null,
       "provisional": true,
-      "nota": "Fecha provisional, puede cambiar. Si da tiempo, entran también los puntos 2 y 3."
+      "nota": "Fecha provisional, puede cambiar. Entra el tema 4 de la diapositiva 11 al final (puntos 2 y 3: riesgos ergonómicos y psicosociales), confirmado por el usuario el 2026-11-13."
     },
     {
       "id": "ipe-examen-nomina",
