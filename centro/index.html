@@ -81,6 +81,7 @@ html.ready #boot{display:none}
 #hot.hide .hs{opacity:0;visibility:hidden;pointer-events:none}
 
 /* ---------- barra superior ---------- */
+.vista-btn{pointer-events:auto;min-height:44px;padding:0 14px;border-radius:999px;font:inherit;font-size:14px;font-weight:700;color:inherit;background:rgba(255,255,255,.12);border:1.5px solid currentColor;cursor:pointer;margin-left:auto}.vista-btn:focus-visible{outline:3px solid currentColor;outline-offset:3px}
 .top{position:fixed;top:0;left:0;right:0;z-index:70;display:flex;align-items:center;gap:10px;justify-content:space-between;padding:max(10px,env(safe-area-inset-top)) max(var(--gut),env(safe-area-inset-right)) 8px max(var(--gut),env(safe-area-inset-left));pointer-events:none}
 .top>*{pointer-events:auto}
 .top::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,13,18,.96) 0%,rgba(11,13,18,.9) 70%,rgba(11,13,18,0) 100%);opacity:0;transition:opacity .3s;pointer-events:none}
@@ -539,6 +540,7 @@ html.flat.in-room .fhall{display:none}
     <span id="homeLbl">Pasillo</span>
   </button>
   <a class="brand" id="brand" href="../app/#/hoy" aria-label="Corte: volver al cuaderno" style="text-decoration:none"><i></i><span>Corte</span> <small>← cuaderno</small></a>
+  <button class="vista-btn" id="vistaBtn" type="button">Ver sin 3D</button>
   <button class="hoy-pill" id="hoyPill" type="button" aria-label="Abrir la página de hoy">
     <span class="dot" aria-hidden="true"></span><span class="lbl">Hoy</span><span class="what" id="pillWhat">…</span><span class="cd" id="pillCd"></span>
   </button>
@@ -732,14 +734,14 @@ AG.ev.forEach(function(e){
 function load(k,def){ try{ var v=JSON.parse(localStorage.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
 function save(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
 /* Entregas y planta: el mismo sitio que la app (tsapc:v2 › personal), así entran en la copia. */
-var ST = window.tsapcStore;
+var TSTORE = window.tsapcStore;
 function own(o,k){ return Object.prototype.hasOwnProperty.call(o,k); }
-function stGet(r,d){ try{ var v=ST?ST.get(r):undefined; return v==null?d:v; }catch(e){ return d; } }
-function stSet(r,v){ try{ return ST?ST.set(r,v):false; }catch(e){ return false; } }
-try{ if(ST) ST.migrar(); }catch(e){}
+function stGet(r,d){ try{ var v=TSTORE?TSTORE.get(r):undefined; return v==null?d:v; }catch(e){ return d; } }
+function stSet(r,v){ try{ return TSTORE?TSTORE.set(r,v):false; }catch(e){ return false; } }
+try{ if(TSTORE) TSTORE.migrar(); }catch(e){}
 /* Antes el centro guardaba aparte (mc-done, mc-plant). Se pasa una vez; las claves viejas no se borran. */
 (function(){
-  if(!ST || stGet('personal.centroMigrado',false)) return;
+  if(!TSTORE || stGet('personal.centroMigrado',false)) return;
   var od=load('mc-done',null), op=load('mc-plant',null), k;
   if(od && typeof od==='object'){ var e=stGet('personal.entregadas',{}), n={}; for(k in e) if(own(e,k)) n[k]=e[k];
     for(k in od) if(own(od,k) && od[k]===true && !n[k]) n[k]=new Date().toISOString(); stSet('personal.entregadas',n); }
@@ -1460,7 +1462,13 @@ $('#flat').addEventListener('click',function(ev){
 });
 
 /* ---------- arranque ---------- */
-var forceFlat = /[?&]2d\b/.test(location.search) || RM;
+/* 2D si se pide, con movimiento reducido o, por defecto, en móviles modestos (el 3D tarda); la elección se recuerda */
+var vistaPref = stGet('personal.prefs.centroVista', ''), pide3d = /[?&]3d\b/.test(location.search);
+var modesto = (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) || (navigator.deviceMemory && navigator.deviceMemory <= 4);
+var forceFlat = /[?&]2d\b/.test(location.search) || RM || (!pide3d && (vistaPref === '2d' || (modesto && vistaPref !== '3d')));
+(function(){ var vb = document.getElementById('vistaBtn'); if (!vb) return; var plano = forceFlat;
+  vb.textContent = plano ? 'Ver en 3D' : 'Ver sin 3D'; if (RM && plano) vb.hidden = true;
+  vb.addEventListener('click', function(){ stSet('personal.prefs.centroVista', plano ? '3d' : '2d'); location.replace(location.pathname + (plano ? '?3d' : '?2d')); }); })();
 var hasGL=false; try{ var c=document.createElement('canvas'); hasGL=!!(c.getContext('webgl2')||c.getContext('webgl')); }catch(e){}
 var saveData = navigator.connection && navigator.connection.saveData;
 function goFlat(){ document.documentElement.classList.add('flat'); buildFlat(); }
