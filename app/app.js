@@ -154,7 +154,7 @@
       '<section aria-labelledby="hHoy"><div class="sec-cab"><h2 id="hHoy"><span class="fluor">Para hoy</span></h2><span class="mano">tacha al terminar</span></div>' +
       (tareas ? '<ul class="tareas" id="tareas">' + tareas + "</ul>" : '<div class="nota"><span class="mano">Hoy no hay entregas. ' + (ex && L.clave(ex.date) === k ? "Hoy toca examen: a por él." : "Buen día para repasar.") + "</span></div>") + "</section>" +
       '<section aria-labelledby="hEx"><div class="sec-cab"><h2 id="hEx">Próximo examen</h2></div>' + bloqueEx + "</section>" +
-      '<section class="ancho" aria-labelledby="hSem"><div class="sec-cab"><h2 id="hSem">Esta semana</h2><span class="mano">de lunes a viernes</span></div><ol class="semana">' + semana + "</ol></section>" +
+      '<section class="ancho" aria-labelledby="hSem"><div class="sec-cab"><h2 id="hSem">Próximos días</h2><span class="mano">cinco días de clase</span></div><ol class="semana">' + semana + "</ol></section>" +
       E.hoyTarjetas() +
       '<section aria-labelledby="hPl"><div class="sec-cab"><h2 id="hPl">Tu planta</h2><span class="mano">crece contigo</span></div>' + plantaHTML() + "</section>" +
       '<section aria-labelledby="hAt"><div class="sec-cab"><h2 id="hAt">Atajos</h2></div><div class="notas-fila">' +
@@ -607,7 +607,13 @@
   var E = window.CorteEstudio({ D: D, A: A, esc: esc, ico: ico, SPR: SPR, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion,
     pintar: function (q) { pintar(q); }, repintar: repintar });
   /* sesión de estudio (app/sesion.js): misterio → descubre → sin mirar → resuelve → lo de otros días */
-  var SS = window.CorteSesion ? window.CorteSesion({ D: D, A: A, esc: esc, ico: ico, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion, rico: E.rico,
+  /* el examen que guía «Tu sesión de hoy»: solo si cae en los próximos 14 días */
+  function examenGuia() {
+    if (!AG) return null; var n = ahora(), ex = L.proximoExamen(EVS, D.UNIDADES, AG.horario, n);
+    if (!ex || L.difDias(ex.date, n) > 14) return null;
+    return { ex: ex, cuando: L.diaRelativo(ex.date, n) };
+  }
+  var SS = window.CorteSesion ? window.CorteSesion({ examen: examenGuia, D: D, A: A, esc: esc, ico: ico, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: pegatina, refrescar: refrescarColeccion, rico: E.rico,
     pintar: function (q) { pintar(q); }, repintar: repintar }) : null;
   function pSesionE(id) { return SS ? SS.sesion(id) : pNada(); }
   function pPractica(id, a2) { return E.practica(id, a2) || pNada(); }

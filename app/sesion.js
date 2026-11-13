@@ -39,6 +39,18 @@
     var e = function (x) { return estado(estados && estados[x.id]); };
     return lista.filter(function (x) { var s = e(x); return s.inicio && !s.hecha && s.paso > 0; })[0] || lista.filter(function (x) { return !e(x).hecha; })[0] || null;
   }
+  /* guiada por el examen más cercano: primero las sesiones de esa unidad; si no quedan, las de su asignatura; si no, el recorrido */
+  function siguienteParaExamen(lista, estados, ex, asigDe) {
+    if (ex) {
+      var deU = ex.unidad ? lista.filter(function (x) { return x.unidad === ex.unidad; }) : [];
+      var r = deU.length ? siguienteSesion(deU, estados) : null;
+      if (r) return { s: r, de: deU };
+      var deA = ex.s ? lista.filter(function (x) { return asigDe(x.unidad) === ex.s; }) : [];
+      r = deA.length ? siguienteSesion(deA, estados) : null;
+      if (r) return { s: r, de: deA };
+    }
+    return { s: siguienteSesion(lista, estados), de: null };
+  }
   /* los conceptos que vuelven hoy: ya tocan y no se estudiaron hoy mismo (lo de hoy vuelve, como pronto, mañana) */
   function conceptosHoy(estados, hoy) {
     var out = [];
@@ -381,14 +393,18 @@
             repHecho ? "Lo que te costó volverá antes. Mañana, más." : "Explícalo otra vez sin mirar. Si lo recuerdas, tardará más en volver.", repHecho ? "Verlo" : "Repasar");
       }
       if (!lista) return '<section class="ancho ss-hoy" aria-label="Estudio de hoy">' + html + "</section>";
-      var sig = siguienteSesion(lista, est), hechas = lista.filter(function (x) { return est[x.id] && est[x.id].hecha; }).length;
+      var exa = null; try { exa = ctx.examen ? ctx.examen() : null; } catch (_) {}
+      var guia = siguienteParaExamen(lista, est, exa && exa.ex, function (u) { var U = D.unidad(u); return U ? U.s : ""; });
+      var sig = guia.s, base = guia.de || lista;
+      var hechas = base.filter(function (x) { return est[x.id] && est[x.id].hecha; }).length;
       var hoyHecha = lista.filter(function (x) { return est[x.id] && est[x.id].hecha === h; })[0];
-      var prog = '<span class="ss-recorrido" aria-label="' + hechas + " de " + lista.length + ' sesiones hechas"><i style="width:' + Math.round(hechas / Math.max(1, lista.length) * 100) + '%"></i></span><span class="ss-mini">' + hechas + " de " + lista.length + " sesiones del recorrido</span>";
+      var deQue = guia.de ? " de " + (exa.ex.unidad && D.unidad(exa.ex.unidad) ? D.unidad(exa.ex.unidad).codigo : (A[exa.ex.s] ? A[exa.ex.s].ab : "esta asignatura")) : " del recorrido";
+      var prog = '<span class="ss-recorrido" aria-label="' + hechas + " de " + base.length + ' sesiones hechas"><i style="width:' + Math.round(hechas / Math.max(1, base.length) * 100) + '%"></i></span><span class="ss-mini">' + hechas + " de " + base.length + " sesiones" + deQue + "</span>";
       html += '<div class="sec-cab"><h2 id="hSs">Tu sesión de hoy</h2><span class="mano">' + (sig ? "unos " + sig.minutos + " min" : "recorrido completo") + "</span></div>";
       if (!sig) html += tarjetaHoy("#/asignaturas", "gafas", "lab", "todas hechas", "Has terminado el recorrido", "Lo que estudiaste seguirá volviendo en tu repaso. Pronto llegarán más sesiones.", "Ver unidades", prog);
       else {
         var U = D.unidad(sig.unidad), e = estado(est[sig.id]), empezada = e.inicio && !e.hecha && e.paso > 0;
-        var k = (U ? U.codigo : "") + " · bloque " + sig.bloque + " · " + (sig.gancho || "empieza con un misterio");
+        var k = guia.de ? "para tu examen · " + exa.cuando.toLowerCase() : (U ? U.codigo : "") + " · bloque " + sig.bloque + " · " + (sig.gancho || "empieza con un misterio");
         var txt = hoyHecha && !empezada ? "Ya hiciste una hoy (" + hoyHecha.titulo + "). Si te apetece, sigue con la siguiente; si no, mañana." : empezada ? "La dejaste a medias: sigue donde ibas." : "Un caso real, unos pocos conceptos y lo de otros días. Sin tener que organizarte.";
         html += tarjetaHoy("#/sesion/" + encodeURIComponent(sig.id), sig.pegatina || (U ? U.pegatina : "matraz"), U ? U.s : "lab", k, sig.titulo, txt, empezada ? "Seguir" : "Empezar", prog);
       }
@@ -408,5 +424,5 @@
     return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque };
   }
 
-  return { crear: crear, L: { nota: nota, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, siguienteSesion: siguienteSesion, PASOS: PASOS } };
+  return { crear: crear, L: { nota: nota, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, siguienteSesion: siguienteSesion, siguienteParaExamen: siguienteParaExamen, PASOS: PASOS } };
 });

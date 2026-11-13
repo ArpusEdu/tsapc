@@ -109,10 +109,11 @@
   }
   function fechaLarga(d) { return DIAS[d.getDay()] + " " + d.getDate() + " de " + MESES[d.getMonth()]; }
 
-  /* lunes a viernes de esta semana; en fin de semana, la que viene */
+  /* los próximos cinco días de clase (lunes a viernes) empezando hoy: así un viernes ya enseña lo que viene */
   function semana(n) {
-    var wd = (n.getDay() + 6) % 7, lunes = new Date(n.getFullYear(), n.getMonth(), n.getDate() - wd + (wd > 4 ? 7 : 0));
-    return [0, 1, 2, 3, 4].map(function (i) { return new Date(lunes.getFullYear(), lunes.getMonth(), lunes.getDate() + i); });
+    var out = [], d = new Date(n.getFullYear(), n.getMonth(), n.getDate());
+    while (out.length < 5) { var w = d.getDay(); if (w !== 0 && w !== 6) out.push(new Date(d)); d.setDate(d.getDate() + 1); }
+    return out;
   }
 
   var TIPO = { "festivo": "Festivo", "no-lectivo": "Sin clase", "sin-clases": "Sin clases", "inicio": "Empieza el curso", "fin": "Último día de clase", "fin-trimestre": "Fin de trimestre", "recuperaciones": "Recuperaciones", "practicas": "Prácticas en empresa", "notas": "Entrega de notas", "reclamaciones": "Reclamaciones" };

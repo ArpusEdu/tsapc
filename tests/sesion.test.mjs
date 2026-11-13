@@ -94,3 +94,14 @@ for (const entrada of INDICE) test("sesión " + entrada.id + ": todo lo marcado 
   }
   assert.ok(S.conceptos.every((c) => c.profe.dice), "algún concepto sin «Lo que dice la profe» (¿falta node scripts/copiar-profe.mjs?)");
 });
+
+test("sesión de hoy: la guía el examen más cercano", () => {
+  const l = [{ id: "lab1-a", unidad: "lab1" }, { id: "ipe2-a", unidad: "ipe2" }, { id: "ipe2-b", unidad: "ipe2" }, { id: "ipe5-a", unidad: "ipe-tema5" }];
+  const asig = (u) => (u.startsWith("ipe") ? "ipe" : "lab");
+  assert.equal(L.siguienteParaExamen(l, {}, null, asig).s.id, "lab1-a", "sin examen: el recorrido");
+  assert.equal(L.siguienteParaExamen(l, {}, { unidad: "ipe2", s: "ipe" }, asig).s.id, "ipe2-a", "con examen: su unidad");
+  const hechas = { "ipe2-a": { hecha: "x", inicio: "x", paso: 4 }, "ipe2-b": { hecha: "x", inicio: "x", paso: 4 } };
+  assert.equal(L.siguienteParaExamen(l, hechas, { unidad: "ipe2", s: "ipe" }, asig).s.id, "ipe5-a", "unidad hecha: su asignatura");
+  assert.equal(L.siguienteParaExamen(l, {}, { s: "ipe" }, asig).s.id, "ipe2-a", "examen sin unidad: su asignatura");
+  assert.equal(L.siguienteParaExamen(l, {}, { unidad: "ipe2", s: "ipe" }, asig).de.length, 2);
+});

@@ -23,11 +23,11 @@ test("fechas: clave, parseo y ?hoy=", () => {
   assert.equal(L.diaRelativo(at("2026-11-12"), at("2026-11-09T20:00")), "Jueves 12");
 });
 
-test("semana de lunes a viernes; en fin de semana, la siguiente", () => {
-  assert.deepEqual(L.semana(at("2026-11-11")).map(L.clave), ["2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13"]);
+test("los próximos cinco días de clase, empezando hoy", () => {
+  assert.deepEqual(L.semana(at("2026-11-11")).map(L.clave), ["2026-11-11", "2026-11-12", "2026-11-13", "2026-11-16", "2026-11-17"]);
   assert.deepEqual(L.semana(at("2026-11-08")).map(L.clave)[0], "2026-11-09");   // domingo
   assert.deepEqual(L.semana(at("2026-11-07")).map(L.clave)[0], "2026-11-09");   // sábado
-  assert.deepEqual(L.semana(at("2026-11-13")).map(L.clave)[4], "2026-11-13");   // viernes
+  assert.deepEqual(L.semana(at("2026-11-13")).map(L.clave), ["2026-11-13", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19"]);   // viernes
 });
 
 test("eventos: vencimiento por hora, cierre o primera clase del día", () => {
