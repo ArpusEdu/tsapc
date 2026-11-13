@@ -1,0 +1,786 @@
+{
+ "unidad": "gest1",
+ "titulo": "Gestión 1 · Sector sanitario",
+ "eyebrow": "🧫 Gestión de Muestras · 1er examen",
+ "h1": "Repaso completo: estructura organizativa del sector sanitario",
+ "sub": "Tema 1 · 10 bloques · 75 conceptos",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>\n<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div>",
+ "clave": "gest1-repaso-v1",
+ "examen": {
+  "em": "🧫",
+  "asig": "Gestión de Muestras",
+  "examen": "1er examen",
+  "fecha": "2026-10-15"
+ },
+ "simulacro": "gest1/simulacro/",
+ "tipografia": "Barlow+Condensed:wght@700",
+ "buscar": [
+  [
+   "#hoja",
+   "20 preguntas de la hoja"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "plan": {
+  "repaso": "[\n {t:\"🔁 Tarjetas: solo las que fallé\",d:\"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.\",m:20,u:\"#fc\",rev:1},\n {t:\"📝 Simulacro completo\",d:\"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.\",m:100,u:EXAM.simulacro,rev:1},\n {t:\"🩹 Repasa lo que fallaste en el Simulacro\",d:\"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».\",m:30,u:EXAM.simulacro,rev:1},\n {t:\"🃏 Tarjetas: definiciones\",d:\"🃏 Tarjetas → «Definiciones de la diapositiva». Son las que tienes que dar en el examen.\",m:25,u:\"#fc\",rev:1},\n {t:\"🔴 Repaso de lo imprescindible\",d:\"En el Repaso, filtra 🔴 Imprescindibles y responde «Ponte a prueba» sin mirar.\",m:20,u:\"#fc\",rev:1},\n {t:\"⚡ Lo imprescindible\",d:\"Pregunta → respuesta corta. Lo último antes de dormir.\",m:20,u:\"#impres\",rev:1}]"
+ },
+ "bloques": [
+  {
+   "titulo": "Sistema sanitario y salud",
+   "conceptos": [
+    {
+     "titulo": "Sistema sanitario",
+     "lv": 1,
+     "fuente": "Bloque 1 · Sistema sanitario y salud",
+     "prof": "<p>No solo hospitales, médicos y enfermería: es el <strong>conjunto de todos los elementos que contribuyen a cuidar la salud</strong> de los ciudadanos.\nDefinición de la <strong>OMS</strong>: <strong>conjunto de elementos interrelacionados que contribuyen a la salud</strong> en hogares, lugares de trabajo, lugares públicos y comunidades, y en el medio físico y psicosocial.</p>",
+     "q": "¿Cómo define la OMS el sistema sanitario?",
+     "n": 1
+    },
+    {
+     "titulo": "Para qué existe el sistema sanitario (esquema de la diapositiva 3)",
+     "lv": 2,
+     "fuente": "Bloque 1 · Sistema sanitario y salud",
+     "prof": "<p>La <strong>persona y su salud</strong> en el centro, rodeada de: legislación para sostener el derecho a la salud; cuidar la igualdad de trato y dignidad en el <strong>acceso</strong> a la sanidad; organizar la administración sanitaria, desde la gestión hasta las profesiones sanitarias.</p>",
+     "q": "¿Qué tres cosas rodean a la persona y su salud en el esquema del sistema sanitario?",
+     "n": 2
+    },
+    {
+     "titulo": "Principios de un sistema sanitario según la OMS",
+     "lv": 1,
+     "fuente": "Bloque 1 · Sistema sanitario y salud",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Principio</th>\n<th>Qué significa</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. Universalidad ★</td>\n<td><strong>Todas las personas tienen derecho a recibir atención</strong>, sin importar su situación económica o social</td>\n</tr>\n<tr>\n<td>2. Equidad ★</td>\n<td>No es dar lo mismo a todos: es <strong>dar a cada persona la atención que necesita</strong> (un crónico necesita más recursos)</td>\n</tr>\n<tr>\n<td>3. Eficiencia ★</td>\n<td><strong>Mejores resultados en salud usando bien los recursos</strong>, sin gastos ni pruebas innecesarias. No es \"gastar poco\"</td>\n</tr>\n<tr>\n<td>4. Atención integral ★</td>\n<td>La <strong>persona como un todo</strong>: aspectos físicos, psicológicos y sociales + prevención, diagnóstico, tratamiento y rehabilitación</td>\n</tr>\n<tr>\n<td>5. Adaptación a las necesidades ★</td>\n<td><strong>Detectar los problemas y necesidades de salud</strong> nuevos y adaptarse; <strong>intentar prevenir los problemas</strong> antes de que aparezcan o disminuir sus consecuencias</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Cuáles son los 5 principios de un sistema sanitario según la OMS y qué significa cada uno?",
+     "n": 3
+    },
+    {
+     "titulo": "Equidad frente a igualdad",
+     "lv": 1,
+     "fuente": "Bloque 1 · Sistema sanitario y salud",
+     "prof": "<p>Equidad <strong>no</strong> es dar exactamente lo mismo a todos, sino dar a cada uno lo que necesita para alcanzar el mejor nivel de salud.</p>",
+     "q": "¿Por qué equidad no es lo mismo que dar lo mismo a todos?",
+     "n": 4
+    },
+    {
+     "titulo": "Definición de salud",
+     "lv": 1,
+     "fuente": "Bloque 1 · Sistema sanitario y salud",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Fuente</th>\n<th>Definición</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>OMS (1948) ★</td>\n<td><strong>Estado de completo bienestar físico, mental y social, y no solamente la ausencia de enfermedad</strong></td>\n</tr>\n<tr>\n<td>Alma-Ata (1978) ★</td>\n<td>La salud es un <strong>derecho humano fundamental</strong>; destaca la <strong>atención primaria</strong></td>\n</tr>\n<tr>\n<td>Concepto ampliado ★</td>\n<td>El nivel de salud <strong>está condicionado por los factores sociales y por la capacidad de funcionamiento</strong> de la persona</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué definió la OMS en 1948, qué aportó Alma-Ata en 1978 y qué añade el concepto ampliado de salud?",
+     "n": 5
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Determinantes de la salud",
+   "conceptos": [
+    {
+     "titulo": "Determinantes de la salud",
+     "lv": 1,
+     "fuente": "Bloque 2 · Determinantes de la salud",
+     "prof": "<p>Factores que influyen en la salud: biología, hábitos de vida, entorno social y cultural y sistema sanitario. La salud de una persona afecta también a su familia (cuidados, trabajo, economía).</p>",
+     "q": "¿Qué son los determinantes de la salud?",
+     "n": 6
+    },
+    {
+     "titulo": "Modelo de Lalonde (1974): los 4 determinantes y su peso",
+     "lv": 2,
+     "fuente": "Bloque 2 · Determinantes de la salud",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Determinante</th>\n<th>Peso en la salud</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Estilo de vida</td>\n<td><strong>43 %</strong> (el que más)</td>\n</tr>\n<tr>\n<td>Biología humana y herencia</td>\n<td><strong>27 %</strong></td>\n</tr>\n<tr>\n<td>Medio ambiente y entorno</td>\n<td><strong>19 %</strong></td>\n</tr>\n<tr>\n<td>Sistema de asistencia sanitaria</td>\n<td><strong>11 %</strong> (el que menos)</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Cuáles son los 4 determinantes de Lalonde, de qué año es y cuál pesa más y cuál menos?",
+     "n": 7
+    },
+    {
+     "titulo": "Biología humana",
+     "lv": 1,
+     "fuente": "Bloque 2 · Determinantes de la salud",
+     "prof": "<p><strong>Características propias del organismo de cada persona</strong>: edad, sexo, genética y herencia, constitución física, envejecimiento, funcionamiento de órganos. Ejemplo: antecedentes familiares de diabetes. <strong>Es cómo somos biológicamente.</strong></p>",
+     "q": "¿Qué es la biología humana como determinante y qué incluye?",
+     "n": 8
+    },
+    {
+     "titulo": "Estilos de vida",
+     "lv": 1,
+     "fuente": "Bloque 2 · Determinantes de la salud",
+     "prof": "<p><strong>Hábitos y comportamientos que favorecen o perjudican la salud</strong>: alimentación, actividad física, tabaco y alcohol, higiene, sueño, conducta sexual, estrés, seguridad. Ejemplo: fumar. <strong>Es lo que hacemos y cómo vivimos.</strong>\n★ <strong>No todas las conductas dependen solo de decisiones individuales</strong>: las <strong>condiciones sociales y económicas pueden facilitar o dificultar</strong> hábitos saludables.</p>",
+     "q": "¿Qué son los estilos de vida? ¿Dependen solo de la persona?",
+     "n": 9
+    },
+    {
+     "titulo": "Medio ambiente",
+     "lv": 1,
+     "fuente": "Bloque 2 · Determinantes de la salud",
+     "prof": "<p><strong>Condiciones externas que rodean a la persona.</strong> Lalonde distingue:</p>\n<ul>\n<li><strong>Medio físico:</strong> contaminación, agua, ruido, temperatura, vivienda, condiciones de trabajo.</li>\n<li><strong>Medio social:</strong> familia, comunidad, relaciones, economía, educación, condiciones laborales.</li>\n</ul>\n<p><strong>Es lo que nos rodea.</strong> Ejemplo: vivir en zona contaminada.</p>",
+     "q": "¿Qué es el medio ambiente como determinante y qué dos tipos distingue Lalonde?",
+     "n": 10
+    },
+    {
+     "titulo": "Sistema de asistencia sanitaria (como determinante)",
+     "lv": 1,
+     "fuente": "Bloque 2 · Determinantes de la salud",
+     "prof": "<p><strong>Conjunto de servicios, recursos y profesionales sanitarios</strong> para proteger y mejorar la salud: atención primaria, hospitales, urgencias, vacunación, prevención, diagnóstico, tratamiento, rehabilitación. <strong>Es la atención sanitaria que tenemos y recibimos.</strong></p>",
+     "q": "¿Qué incluye el sistema de asistencia sanitaria como determinante?",
+     "n": 11
+    },
+    {
+     "titulo": "Modelo de Dahlgren y Whitehead (1991)",
+     "lv": 1,
+     "fuente": "Bloque 2 · Determinantes de la salud",
+     "prof": "<p><strong>Uno de los modelos más importantes después de Lalonde.</strong> Representa los determinantes en <strong>capas concéntricas</strong> alrededor de la persona: en el centro edad, sexo y herencia → estilos de vida individuales → redes sociales y comunitarias → condiciones de vida y trabajo → condiciones socioeconómicas, culturales y ambientales.\n★ <strong>Cuanto más externas son las capas, menos dependen de las decisiones individuales</strong> y más de las condiciones sociales y económicas.</p>",
+     "q": "¿Cómo representa el modelo de Dahlgren y Whitehead los determinantes y qué pasa con las capas externas?",
+     "n": 12
+    },
+    {
+     "titulo": "Dónde naces importa",
+     "lv": 1,
+     "fuente": "Bloque 2 · Determinantes de la salud",
+     "prof": "<p>El riesgo de enfermar, el acceso al diagnóstico y la curación <strong>varían entre países desarrollados y en vías de desarrollo</strong>.</p>\n<ul>\n<li><strong>Países ricos:</strong> predominan las <strong>enfermedades crónicas</strong> (cardiovasculares, cáncer, diabetes).</li>\n<li><strong>Países pobres:</strong> pesan las <strong>enfermedades infecciosas y la mortalidad infantil</strong>.</li>\n</ul>\n<p>Ejemplo: el cáncer de cérvix es raro donde hay cribado y vacuna del VPH.</p>",
+     "q": "¿Qué enfermedades predominan en países ricos y cuáles en países pobres?",
+     "n": 13
+    }
+   ],
+   "min": 30
+  },
+  {
+   "titulo": "Qué hace un sistema sanitario y cómo se organiza",
+   "conceptos": [
+    {
+     "titulo": "El sistema sanitario no actúa solo cuando estamos enfermos",
+     "lv": 1,
+     "fuente": "Bloque 3 · Qué hace un sistema sanitario y cómo se organiza",
+     "prof": "<p>Es el <strong>conjunto de organizaciones, profesionales, recursos y servicios que una sociedad pone en marcha para proteger, mantener y recuperar la salud</strong>. La salud está condicionada por <strong>múltiples factores</strong>, no solo por tener o no una enfermedad.</p>",
+     "q": "¿El sistema sanitario actúa solo cuando estamos enfermos? Justifica.",
+     "n": 14
+    },
+    {
+     "titulo": "Actuaciones del sistema sanitario",
+     "lv": 1,
+     "fuente": "Bloque 3 · Qué hace un sistema sanitario y cómo se organiza",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Actuación</th>\n<th>Ejemplo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Prevención ★</td>\n<td>Vacunas, cribados, educación sanitaria</td>\n</tr>\n<tr>\n<td>Detección precoz ★</td>\n<td>Diagnosticar antes de que haya complicaciones</td>\n</tr>\n<tr>\n<td>Tratamiento ★</td>\n<td>Atender a los enfermos</td>\n</tr>\n<tr>\n<td>Rehabilitación ★</td>\n<td>Recuperar o mantener la capacidad funcional; también vigilancia epidemiológica</td>\n</tr>\n<tr>\n<td>Promoción de la salud ★</td>\n<td>Mejorar el bienestar y favorecer hábitos saludables</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué cinco tipos de actuaciones realiza el sistema sanitario?",
+     "n": 15
+    },
+    {
+     "titulo": "¿Por qué cada país lo organiza distinto?",
+     "lv": 1,
+     "fuente": "Bloque 3 · Qué hace un sistema sanitario y cómo se organiza",
+     "prof": "<p>El objetivo es el mismo (mejorar la salud), pero <strong>cada sociedad tiene una situación económica, política, social y cultural diferente</strong>. Unos se financian con impuestos, otros con cotizaciones y otros con seguros privados.</p>",
+     "q": "¿Por qué los países organizan su sanidad de forma distinta si el objetivo es el mismo?",
+     "n": 16
+    },
+    {
+     "titulo": "Modelos sanitarios",
+     "lv": 1,
+     "fuente": "Bloque 3 · Qué hace un sistema sanitario y cómo se organiza",
+     "prof": "<p>Dentro del sistema sanitario <strong>se emplazan los modelos sanitarios</strong>: los <strong>criterios doctrinales e ideológicos</strong> sobre los que se basa cada sistema.</p>",
+     "q": "¿Qué son los modelos sanitarios?",
+     "n": 17
+    },
+    {
+     "titulo": "Las 3 preguntas de todo sistema sanitario",
+     "lv": 2,
+     "fuente": "Bloque 3 · Qué hace un sistema sanitario y cómo se organiza",
+     "prof": "<ol>\n<li><strong>¿Quién paga?</strong> → <strong>financiación</strong> (el individuo, el Estado con impuestos o cotizaciones).</li>\n<li><strong>¿Quién presta el servicio?</strong> → <strong>provisión</strong> (público, privado o ambos).</li>\n<li><strong>¿Quién puede usarlo?</strong> → <strong>acceso</strong> (todos, o solo quien paga o está asegurado).</li>\n</ol>",
+     "q": "¿A qué tres preguntas responde todo sistema sanitario?",
+     "n": 18
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "Modelos sanitarios",
+   "conceptos": [
+    {
+     "titulo": "Modelo liberal o de libre mercado",
+     "lv": 1,
+     "fuente": "Bloque 4 · Modelos sanitarios",
+     "prof": "<p><em>Ningún país tiene un modelo puro: todos combinan elementos.</em></p>\n<ul>\n<li>La salud <strong>se trata como un bien que se compra y se vende</strong>. El Estado interviene lo mínimo.</li>\n<li>★ Funcionamiento: personas o empresas pagan un <strong>seguro privado</strong> (o directamente) y el seguro paga a proveedores privados.</li>\n<li>★ <strong>El acceso depende de la capacidad económica o de la póliza.</strong></li>\n<li>★ Ejemplo: <strong>Estados Unidos</strong> (Medicare: mayores de 65; Medicaid: pocos recursos; Obamacare en 2010).</li>\n</ul>",
+     "q": "¿Cómo funciona el modelo liberal y de qué depende el acceso? Pon un ejemplo.",
+     "n": 19
+    },
+    {
+     "titulo": "Ventajas e inconvenientes del modelo liberal",
+     "lv": 1,
+     "fuente": "Bloque 4 · Modelos sanitarios",
+     "prof": "<ul>\n<li>★ <strong>Principal beneficio: avances tecnológicos</strong> por la competencia entre proveedores.</li>\n<li>★ <strong>Carece de universalidad y equidad</strong> (principios de la OMS).</li>\n<li>Ventajas: libertad de elección, innovación, menos esperas si tienes buen seguro, menos impuestos.</li>\n<li>Inconvenientes: exclusión, endeudamiento (es el sistema más caro del mundo y ★ <strong>su esperanza de vida es inferior</strong> a la de países con sanidad universal), selección de riesgos, sobrediagnóstico.</li>\n</ul>",
+     "q": "¿Cuál es el principal beneficio del modelo liberal y qué principios de la OMS no cumple?",
+     "n": 20
+    },
+    {
+     "titulo": "Modelo social (socialista o Semashko)",
+     "lv": 1,
+     "fuente": "Bloque 4 · Modelos sanitarios",
+     "prof": "<ul>\n<li>La salud <strong>es responsabilidad exclusiva del Estado</strong>: la planifica, la financia y <strong>la gestiona toda</strong>.</li>\n<li>★ El <strong>Estado financia todo</strong>, es dueño de los centros y los <strong>profesionales son empleados públicos</strong>.</li>\n<li>★ <strong>Acceso universal y gratuito</strong> en el momento de uso.</li>\n<li>Lo diseñó <strong>Nikolái Semashko</strong> en la URSS tras 1917. ★ <strong>Hoy el ejemplo más citado es Cuba.</strong></li>\n</ul>",
+     "q": "¿Quién gestiona y financia el modelo social, quién lo creó y cuál es el ejemplo actual?",
+     "n": 21
+    },
+    {
+     "titulo": "Ventajas e inconvenientes del modelo social",
+     "lv": 2,
+     "fuente": "Bloque 4 · Modelos sanitarios",
+     "prof": "<ul>\n<li>Ventajas: universalidad real; ★ <strong>campañas masivas de vacunación o cribado</strong>; ★ Cuba tiene <strong>una de las tasas de médicos por habitante más altas</strong>; igualdad.</li>\n<li>Inconvenientes: falta de recursos y tecnología, burocracia, <strong>nula libertad de elección</strong>, poca motivación, ★ <strong>vinculado a regímenes no democráticos</strong> (datos poco fiables).</li>\n</ul>",
+     "q": "Cita dos ventajas y dos inconvenientes del modelo social.",
+     "n": 22
+    },
+    {
+     "titulo": "Modelo mixto",
+     "lv": 1,
+     "fuente": "Bloque 4 · Modelos sanitarios",
+     "prof": "<ul>\n<li>★ Presente en <strong>la mayoría de los países occidentales</strong>.</li>\n<li>★ <strong>Financia el Estado</strong>, pero <strong>necesita la intervención privada</strong> para algunos servicios.</li>\n<li>★ Garantiza <strong>parámetros de calidad asistencial</strong> sea la provisión pública o privada.</li>\n<li>★ Se basa en <strong>la promoción, la prevención y la atención primaria</strong>.</li>\n<li>Tiene <strong>dos variantes: Bismarck y Beveridge.</strong></li>\n</ul>",
+     "q": "¿Qué caracteriza al modelo mixto y cuáles son sus dos variantes?",
+     "n": 23
+    },
+    {
+     "titulo": "Modelo Bismarck",
+     "lv": 1,
+     "fuente": "Bloque 4 · Modelos sanitarios",
+     "prof": "<ul>\n<li>Origen: <strong>Alemania, 1883</strong> (Otto von Bismarck, primer seguro obligatorio de enfermedad).</li>\n<li>★ Se financia con <strong>cotizaciones sociales</strong> obligatorias de trabajadores y empresas (cajas o fondos de enfermedad).</li>\n<li>★ Es un <strong>sistema mutualista</strong>; a los desempleados los cubre la ★ <strong>beneficencia</strong>.</li>\n<li>★ El Estado asegura una sanidad <strong>gratuita, universal y equitativa</strong>.</li>\n<li>Países: Alemania, Austria, Bélgica, Francia.</li>\n<li>Ventajas: alta calidad y elección, listas de espera más cortas, \"derecho ganado\", menos dependencia del gobierno.</li>\n<li>Inconvenientes: nació ligado al empleo (★ <strong>quien no trabajaba quedaba desprotegido</strong>), encarece el empleo, caro de administrar, desigualdad entre cajas.</li>\n</ul>",
+     "q": "¿Cómo se financia el modelo Bismarck, dónde y cuándo nació y qué países lo usan?",
+     "n": 24
+    },
+    {
+     "titulo": "Modelo Beveridge (sistemas públicos)",
+     "lv": 1,
+     "fuente": "Bloque 4 · Modelos sanitarios",
+     "prof": "<ul>\n<li>Origen: <strong>Reino Unido</strong>. Informe Beveridge (<strong>1942</strong>) → <strong>NHS</strong> (<strong>1948</strong>).</li>\n<li>★ Se financia con <strong>impuestos generales</strong> y la <strong>cobertura es universal</strong> por ser ciudadano o residente.</li>\n<li>Provisión mayoritariamente pública, aunque ★ <strong>se puede concertar con centros privados</strong>.</li>\n<li>Ejemplos: Reino Unido, ★ <strong>España</strong>, Italia, Portugal, países nórdicos.</li>\n<li>Ventajas: universal y equitativo, gratuito en el uso (salvo copago farmacéutico), buen control del gasto, fuerte atención primaria y cribados.</li>\n<li>Inconvenientes: <strong>listas de espera</strong> (la gran crítica), depende de presupuestos políticos, menos elección, <strong>doble aseguramiento</strong>, uso excesivo de urgencias.</li>\n</ul>",
+     "q": "¿Cómo se financia el modelo Beveridge, de dónde viene y qué país de los nuestros lo sigue?",
+     "n": 25
+    },
+    {
+     "titulo": "Tabla resumen de los modelos",
+     "lv": 2,
+     "fuente": "Bloque 4 · Modelos sanitarios",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Liberal</th>\n<th>Social</th>\n<th>Bismarck</th>\n<th>Beveridge</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Paga</td>\n<td>Individuo / seguro privado</td>\n<td>Estado (todo)</td>\n<td>Cotizaciones</td>\n<td>Impuestos</td>\n</tr>\n<tr>\n<td>Acceso</td>\n<td>Según dinero o póliza</td>\n<td>Universal y gratuito</td>\n<td>Trabajadores cotizantes (+ beneficencia)</td>\n<td>Universal</td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td>EE. UU.</td>\n<td>Cuba</td>\n<td>Alemania, Francia</td>\n<td>Reino Unido, España</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "Para cada modelo: ¿quién paga, quién tiene acceso y qué país es el ejemplo?",
+     "n": 26
+    }
+   ],
+   "min": 30
+  },
+  {
+   "titulo": "El Sistema Nacional de Salud (SNS) en España",
+   "conceptos": [
+    {
+     "titulo": "Modelo de España",
+     "lv": 1,
+     "fuente": "Bloque 5 · El Sistema Nacional de Salud (SNS) en España",
+     "prof": "<p>España <strong>sigue el modelo Beveridge</strong>: ★ <strong>impuestos generales, cobertura universal y servicios mayoritariamente públicos</strong>.\nHasta los años 80 era <strong>Bismarck</strong> (\"el médico del seguro\"). La transición empezó con ★ <strong>la Ley General de Sanidad de 1986</strong> y terminó a principios de los 2000.</p>",
+     "q": "¿Qué modelo sigue España, cuál tenía antes y qué ley inició el cambio?",
+     "n": 27
+    },
+    {
+     "titulo": "Marco legal internacional",
+     "lv": 1,
+     "fuente": "Bloque 5 · El Sistema Nacional de Salud (SNS) en España",
+     "prof": "<ul>\n<li><strong>Constitución de la OMS (1946):</strong> la ★ <strong>salud es un derecho fundamental</strong> de todo ser humano.</li>\n<li><strong>Declaración Universal de Derechos Humanos (1948):</strong> incluye la asistencia médica.</li>\n</ul>",
+     "q": "¿Qué documento internacional reconoció la salud como derecho fundamental y en qué año?",
+     "n": 28
+    },
+    {
+     "titulo": "Leyes clave en España (en orden)",
+     "lv": 1,
+     "fuente": "Bloque 5 · El Sistema Nacional de Salud (SNS) en España",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Norma</th>\n<th>Qué hace</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Constitución 1978, <strong>artículo 43</strong> ★</td>\n<td>Reconoce el <strong>derecho a la protección de la salud</strong></td>\n</tr>\n<tr>\n<td><strong>Ley 14/1986, de 25 de abril, General de Sanidad</strong> ★</td>\n<td><strong>Crea el SNS</strong> y sus principios. Ley base</td>\n</tr>\n<tr>\n<td><strong>Ley 16/2003, de 28 de mayo, de cohesión y calidad del SNS</strong> ★</td>\n<td>Prestaciones comunes en todas las CC. AA.; define la <strong>cartera común de servicios</strong></td>\n</tr>\n<tr>\n<td><strong>Real Decreto-ley 16/2012</strong> ★</td>\n<td>Crisis: restringe el acceso a \"asegurados\" (deja fuera a inmigrantes irregulares) y amplía el copago</td>\n</tr>\n<tr>\n<td><strong>Real Decreto-ley 7/2018, de 27 de julio</strong> ★</td>\n<td><strong>Recupera la universalidad</strong>: el derecho depende de la <strong>residencia</strong>, no de cotizar</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué hace cada una: art. 43 CE, Ley 14/1986, Ley 16/2003, RDL 16/2012 y RDL 7/2018?",
+     "n": 29
+    },
+    {
+     "titulo": "Principios del SNS",
+     "lv": 1,
+     "fuente": "Bloque 5 · El Sistema Nacional de Salud (SNS) en España",
+     "tituloHtml": "Principios del SNS <span class=\"note\">los establece la **Ley General de Sanidad**</span>",
+     "prof": "<ul>\n<li><strong>Universal:</strong> toda la población residente.</li>\n<li><strong>Equitativo:</strong> igualdad en acceso y trato.</li>\n<li><strong>Financiado con fondos públicos</strong> (impuestos).</li>\n<li><strong>Gratuito en el momento de uso</strong> (hay copagos en farmacia, algunas prótesis y transporte no urgente; la odontología está poco cubierta).</li>\n<li><strong>Integral:</strong> promoción, prevención, asistencia, rehabilitación y reinserción.</li>\n<li><strong>De calidad:</strong> eficacia, eficiencia y evaluación.</li>\n<li><strong>Descentralizado:</strong> lo gestionan las comunidades autónomas.</li>\n</ul>",
+     "q": "Cita los 7 principios del SNS.",
+     "n": 30
+    },
+    {
+     "titulo": "Reparto de competencias",
+     "lv": 1,
+     "fuente": "Bloque 5 · El Sistema Nacional de Salud (SNS) en España",
+     "prof": "<p>La ★ <strong>Constitución reparte las competencias entre Estado y CC. AA.</strong> (artículos 148 y 149).</p>\n<ul>\n<li><strong>Estado (Ministerio de Sanidad):</strong> bases y coordinación, legislación de medicamentos, <strong>sanidad exterior</strong> (puertos, aeropuertos, fronteras), relaciones internacionales.</li>\n<li>★ <strong>CC. AA.: gestionan la asistencia</strong> con su servicio de salud. Ejemplos: SERMAS (Madrid), SAS (Andalucía), Osakidetza (País Vasco), SERGAS (Galicia), <strong>Osasunbidea (Navarra)</strong>.</li>\n<li><strong>Ceuta y Melilla:</strong> el Estado, a través del ★ <strong>INGESA</strong>.</li>\n<li>★ <strong>Consejo Interterritorial del SNS:</strong> <strong>conecta ambos niveles</strong>. Reúne al Ministerio y a los <strong>consejeros de sanidad de las CC. AA.</strong> (muy visible en la COVID-19).</li>\n</ul>",
+     "q": "¿Qué competencias tiene el Estado, cuáles las CC. AA., quién gestiona Ceuta y Melilla y qué hace el Consejo Interterritorial?",
+     "n": 31
+    },
+    {
+     "titulo": "AEMPS",
+     "lv": 1,
+     "fuente": "Bloque 5 · El Sistema Nacional de Salud (SNS) en España",
+     "prof": "<p><strong>Agencia Española de Medicamentos y Productos Sanitarios.</strong> ★ <strong>Depende del Ministerio de Sanidad</strong> y garantiza <strong>calidad, seguridad, eficacia e información</strong> de medicamentos y productos sanitarios.\nControla todo: investigación, ensayos, autorización, comercialización y vigilancia posterior ★ (<strong>farmacovigilancia</strong>). También cosméticos y productos de diagnóstico in vitro (reactivos de inmunohistoquímica).</p>",
+     "q": "¿Qué es la AEMPS, de quién depende y cómo se llama la vigilancia de los medicamentos tras su venta?",
+     "n": 32
+    },
+    {
+     "titulo": "Dimensión internacional",
+     "lv": 1,
+     "fuente": "Bloque 5 · El Sistema Nacional de Salud (SNS) en España",
+     "prof": "<ul>\n<li>★ <strong>Tarjeta Sanitaria Europea:</strong> asistencia necesaria en estancias temporales en la UE, EEE, Suiza y Reino Unido. Con otros países, ★ <strong>convenios bilaterales</strong>.</li>\n<li>★ Ante <strong>epidemias y crisis sanitarias</strong>, cooperación: España participa en la <strong>OMS</strong> y el <strong>ECDC</strong>.</li>\n</ul>",
+     "q": "¿Qué permite la Tarjeta Sanitaria Europea y qué hay con países fuera de ella?",
+     "n": 33
+    }
+   ],
+   "min": 30
+  },
+  {
+   "titulo": "Organización asistencial y cartera de servicios",
+   "conceptos": [
+    {
+     "titulo": "Los dos niveles de atención",
+     "lv": 1,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Atención primaria</th>\n<th>Atención especializada</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>★ <strong>Puerta de entrada al sistema</strong> (primer nivel)</td>\n<td>★ <strong>En hospitales y centros de especialidades</strong></td>\n</tr>\n<tr>\n<td>Centros de salud y consultorios: médicos de familia, pediatras, enfermería</td>\n<td>Normalmente tras <strong>derivación desde primaria</strong> o por urgencias</td>\n</tr>\n<tr>\n<td>★ <strong>Prevención, promoción de la salud y problemas frecuentes</strong></td>\n<td>Especialistas, pruebas complejas, cirugía, hospitalización</td>\n</tr>\n<tr>\n<td>★ <strong>Acompaña al paciente toda su vida</strong> y coordina su atención</td>\n<td>★ Aquí está <strong>Anatomía Patológica</strong>. ★ Tras el tratamiento, el paciente <strong>vuelve a primaria</strong> (continuidad asistencial)</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué es la atención primaria y la especializada, y en qué nivel está Anatomía Patológica?",
+     "n": 34
+    },
+    {
+     "titulo": "Funciones de atención primaria",
+     "lv": 1,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<p>Coordinación (horizontal con su equipo y vertical con el sistema), accesibilidad (el paciente acude a su médico cuando lo necesita), <strong>continuidad</strong> (sigue al paciente aunque lo deriven), labor asistencial, labor docente, investigación y atención integral de la persona.</p>",
+     "q": "Cita las funciones de la atención primaria.",
+     "n": 35
+    },
+    {
+     "titulo": "Funciones de atención especializada",
+     "lv": 1,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<p>Coordinación (por <strong>áreas de salud</strong>), accesibilidad (llega <strong>derivado por su médico de primaria</strong> y vuelve a él), <strong>servicio de medios</strong> (más tecnología y métodos diagnósticos), labor asistencial, docente, investigación (completa a la primaria) y atención integral.</p>",
+     "q": "¿Qué función tiene la especializada que no tiene la primaria?* (servicio de medios)",
+     "n": 36
+    },
+    {
+     "titulo": "Organización territorial",
+     "lv": 1,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<p>El territorio se divide en ★ <strong>áreas de salud</strong> (vinculadas a un <strong>hospital de referencia</strong>) y estas en <strong>zonas básicas de salud</strong> (cada una con su <strong>centro de salud</strong>).\nA cada persona le toca médico y hospital ★ <strong>según donde está empadronada</strong>, y se identifica con la ★ <strong>tarjeta sanitaria individual</strong>.</p>",
+     "q": "¿Cómo se divide el territorio sanitario y qué determina tu médico y hospital?",
+     "n": 37
+    },
+    {
+     "titulo": "Cartera de servicios del SNS",
+     "lv": 1,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<p>★ <strong>Conjunto de técnicas, tecnologías y procedimientos que ofrece el SNS</strong>: el \"catálogo\" de lo que garantiza. Normativa: ★ <strong>Ley 16/2003 y Real Decreto 1030/2006</strong>. Se actualiza periódicamente.</p>",
+     "q": "¿Qué es la cartera de servicios y qué normas la regulan?",
+     "n": 38
+    },
+    {
+     "titulo": "Tipos de cartera",
+     "lv": 2,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Qué es</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Común básica</td>\n<td><strong>Totalmente gratuita</strong></td>\n</tr>\n<tr>\n<td>Común suplementaria</td>\n<td><strong>Con aportación del usuario</strong> (farmacia, prótesis, dietéticos, transporte no urgente)</td>\n</tr>\n<tr>\n<td>Común de servicios accesorios</td>\n<td>Actividades de apoyo</td>\n</tr>\n<tr>\n<td>Complementaria</td>\n<td>Servicios extra de <strong>cada comunidad autónoma</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué tipos de cartera hay y cuál es totalmente gratuita?",
+     "n": 39
+    },
+    {
+     "titulo": "Prestaciones de la cartera común (8)",
+     "lv": 2,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<p>Salud pública · atención primaria · atención especializada · urgencias · farmacéutica · productos dietéticos · ortoprotésica · transporte sanitario.</p>",
+     "q": "Cita las 8 prestaciones de la cartera común.",
+     "n": 40
+    },
+    {
+     "titulo": "Salud pública",
+     "lv": 1,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<p>★ <strong>Protege, promueve y preserva la salud de toda la comunidad, no solo del individuo.</strong> Incluye vigilancia epidemiológica, vacunas, control de brotes, seguridad alimentaria, salud ambiental y <strong>cribados de cáncer</strong> (mama, cérvix y colorrectal). El cribado de cérvix genera gran parte del trabajo de citología.</p>",
+     "q": "¿Qué hace la salud pública y qué cribados de cáncer incluye?",
+     "n": 41
+    },
+    {
+     "titulo": "Urgencias y triaje",
+     "lv": 1,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<ul>\n<li>Urgencias ★ <strong>24 horas</strong>: extrahospitalarias (centros de salud, puntos de atención continuada, <strong>112</strong>) y hospitalarias.</li>\n<li>★ Al llegar, <strong>triaje</strong> (normalmente enfermería): ★ <strong>clasifica la prioridad según la gravedad</strong>.</li>\n<li>★ <strong>Todos los pacientes son atendidos</strong>: el triaje no decide si se atiende.</li>\n<li>★ <strong>5 niveles</strong> (Sistema Español de Triaje, Manchester): de \"atención inmediata\" a \"no urgente\".</li>\n</ul>",
+     "q": "¿Qué es el triaje, quién lo hace y cuántos niveles tiene?",
+     "n": 42
+    },
+    {
+     "titulo": "Prestación farmacéutica",
+     "lv": 1,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<p>★ <strong>Medicamentos necesarios al menor coste posible para el paciente.</strong></p>\n<ul>\n<li>Farmacia hospitalaria: <strong>gratuita</strong>.</li>\n<li>Oficina de farmacia: con receta y <strong>copago según renta</strong>.</li>\n<li>★ <strong>La AEMPS autoriza los medicamentos; el Ministerio de Sanidad decide cuáles se financian y a qué precio.</strong></li>\n</ul>",
+     "q": "¿Quién autoriza los medicamentos y quién decide su financiación y precio?",
+     "n": 43
+    },
+    {
+     "titulo": "Dietéticos, ortoprótesis y transporte",
+     "lv": 2,
+     "fuente": "Bloque 6 · Organización asistencial y cartera de servicios",
+     "prof": "<ul>\n<li><strong>Productos dietéticos:</strong> para quien necesita ★ <strong>alimentación especial</strong> (trastornos metabólicos congénitos, ★ <strong>nutrición enteral</strong>, también domiciliaria).</li>\n<li><strong>Ortoprotésica:</strong> <strong>prótesis</strong> (sustituyen una parte del cuerpo: cadera, mama), <strong>ortesis</strong> (corrigen o apoyan: férulas, corsés), sillas de ruedas. Algunas con aportación.</li>\n<li><strong>Transporte sanitario:</strong> urgente (ambulancias) y no urgente (por motivos clínicos: diálisis, radioterapia). Siempre con prescripción.</li>\n</ul>",
+     "q": "¿Qué diferencia hay entre prótesis y ortesis?",
+     "n": 44
+    }
+   ],
+   "min": 40
+  },
+  {
+   "titulo": "Deontología y bioética",
+   "conceptos": [
+    {
+     "titulo": "Código deontológico",
+     "lv": 1,
+     "fuente": "Bloque 7 · Deontología y bioética",
+     "prof": "<p>★ <strong>Conjunto de principios éticos, deberes y normas que rigen la conducta de los profesionales</strong>, ★ <strong>estableciendo pautas de comportamiento</strong>. ★ <strong>No siempre son legalmente vinculantes</strong>; los aplican los colegios profesionales.</p>",
+     "q": "¿Qué es un código deontológico y es siempre legalmente vinculante?",
+     "n": 45
+    },
+    {
+     "titulo": "Deontología y bioética",
+     "lv": 1,
+     "fuente": "Bloque 7 · Deontología y bioética",
+     "prof": "<ul>\n<li>La deontología ★ <strong>une la ética personal a la normativa legal</strong>. Algunos comportamientos ★ <strong>exigen una legislación que los regule</strong>.</li>\n<li>La <strong>bioética</strong> ★ <strong>engloba la ética, la deontología y el derecho</strong>.</li>\n<li>★ El término <strong>bioética</strong> lo acuñó <strong>Van Rensselaer Potter (1971)</strong>.</li>\n</ul>",
+     "q": "¿Quién acuñó el término bioética y en qué año?",
+     "n": 46
+    },
+    {
+     "titulo": "Principios de la bioética",
+     "lv": 1,
+     "fuente": "Bloque 7 · Deontología y bioética",
+     "tituloHtml": "Principios de la bioética <span class=\"note\">**Tom Beauchamp y James Childress**</span>",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Principio</th>\n<th>Significado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Autonomía</td>\n<td>Respetar la capacidad de decidir de forma informada y libre: <strong>consentimiento informado</strong> (Ley 41/2002, 14 de noviembre)</td>\n</tr>\n<tr>\n<td>Justicia</td>\n<td>Equidad e imparcialidad: acceso a la atención <strong>sin discriminación</strong></td>\n</tr>\n<tr>\n<td>Beneficencia</td>\n<td>Obligación de <strong>actuar en beneficio</strong> del paciente</td>\n</tr>\n<tr>\n<td>No maleficencia</td>\n<td><strong>No causar daño</strong> intencionado (\"primero, no hacer daño\", principio hipocrático)</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Cuáles son los 4 principios de la bioética, quién los estableció y qué ley regula el consentimiento informado?",
+     "n": 47
+    },
+    {
+     "titulo": "Código de Deontología Médica",
+     "lv": 1,
+     "fuente": "Bloque 7 · Deontología y bioética",
+     "prof": "<p>★ <strong>Publicado en 2011.</strong> Tres bloques:</p>\n<ol>\n<li>★ <strong>Comportamiento del médico</strong>, secreto profesional y final de la vida.</li>\n<li>★ <strong>Relaciones con otras profesiones</strong> sanitarias.</li>\n<li>★ <strong>Relación con el sistema sanitario</strong> e instituciones del SNS.</li>\n</ol>\n<p>Capítulos ★: reproducción humana, investigación, dopaje, vejación y torturas, trasplantes, genética, gestión, formación de conciencia, economía y docencia.</p>",
+     "q": "¿En qué año se publicó el Código de Deontología Médica y cuáles son sus tres bloques?",
+     "n": 48
+    },
+    {
+     "titulo": "Novedades del código 2011",
+     "lv": 1,
+     "fuente": "Bloque 7 · Deontología y bioética",
+     "prof": "<ol>\n<li>Historia clínica <strong>registrada informáticamente</strong>.</li>\n<li><strong>Protección de datos</strong> clínicos.</li>\n<li><strong>Seguridad del paciente</strong> e información de riesgos (<strong>consentimiento informado</strong>).</li>\n<li><strong>Combatir la violencia</strong> (mujeres, menores, ancianos, discapacidad): denunciarla.</li>\n<li>\n<p><strong>Responsabilidad en la relación médico-paciente</strong> (veraz, honesto, leal).\nAdemás: los directivos de los colegios oficiales deben cumplir su responsabilidad <strong>sin fraude</strong>.</p>\n</li>\n<li>\n<p><strong>Formación continua.</strong></p>\n</li>\n</ol>",
+     "q": "Cita las seis novedades del código de 2011.",
+     "n": 49
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Ley de Ordenación de las Profesiones Sanitarias (LOPS)",
+   "conceptos": [
+    {
+     "titulo": "LOPS",
+     "lv": 1,
+     "fuente": "Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)",
+     "prof": "<p><strong>Ley 44/2003, de 21 de noviembre.</strong> La Hasta 2003 no había una norma que definiera quién es profesional sanitario, qué puede hacer y cómo se forma. La Ley General de Sanidad (1986) crea el sistema; ★ <strong>la LOPS (2003) regula a las personas que trabajan en él</strong>.\n★ <strong>Regula el ejercicio de las profesiones sanitarias en la sanidad pública y privada</strong>, para garantizar que quien atiende ★ <strong>está debidamente cualificado</strong>.</p>",
+     "q": "¿Qué diferencia hay entre la Ley General de Sanidad y la LOPS?",
+     "n": 50
+    },
+    {
+     "titulo": "Clasificación de profesionales",
+     "lv": 1,
+     "fuente": "Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)",
+     "tituloHtml": "Clasificación de profesionales <span class=\"note\">**dos grandes grupos**</span>",
+     "prof": "<ul>\n<li>★ <strong>A. Profesiones tituladas (universitarias), art. 2</strong>, con colegio profesional:<ul>\n<li><strong>Licenciado / grado + máster:</strong> Medicina, Farmacia, Odontología, Veterinaria (+ Biología, Química, Bioquímica, Física con especialidad sanitaria; Psicología General Sanitaria).</li>\n<li><strong>Diplomado / grado:</strong> Enfermería, Fisioterapia, Terapia Ocupacional, Podología, Óptica, Logopedia, Nutrición.</li>\n</ul>\n</li>\n<li>★ <strong>B. Formación profesional, art. 3:</strong><ul>\n<li><strong>Técnicos superiores:</strong> <strong>Anatomía Patológica y Citodiagnóstico</strong>, Laboratorio Clínico, Imagen para el Diagnóstico, Radioterapia, Higiene Bucodental, Documentación Sanitaria, Dietética, Audiología/Audioprótesis, Prótesis Dentales, Ortoprótesis, Salud Ambiental.</li>\n<li><strong>Técnicos (grado medio):</strong> Cuidados Auxiliares de Enfermería, Farmacia y Parafarmacia, Emergencias Sanitarias (título de 2009).</li>\n</ul>\n</li>\n</ul>",
+     "q": "¿En qué dos grupos clasifica la LOPS a los profesionales y en cuál está el Técnico Superior en Anatomía Patológica?",
+     "n": 51
+    },
+    {
+     "titulo": "Principios del ejercicio profesional",
+     "lv": 2,
+     "fuente": "Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)",
+     "prof": "<p>Ejercer solo con la <strong>titulación</strong> · actuar según la <strong>evidencia científica</strong>, ★ <strong>siguiendo guías y protocolos</strong> · respetar <strong>autonomía, intimidad y dignidad</strong> · ★ <strong>formación continuada</strong> · ★ <strong>trabajo coordinado en equipo</strong>: ★ <strong>interdisciplinar, basado en la cooperación y no en la jerarquía rígida</strong>.</p>",
+     "q": "¿Qué principios del ejercicio profesional fija la LOPS?",
+     "n": 52
+    },
+    {
+     "titulo": "Formación de los profesionales",
+     "lv": 1,
+     "fuente": "Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)",
+     "tituloHtml": "Formación de los profesionales <span class=\"note\">**en varias etapas**</span>",
+     "prof": "<ol>\n<li><strong>Pregrado:</strong> carrera o ciclo.</li>\n<li><strong>Especializada:</strong> residencia (MIR, FIR, BIR, QIR, EIR, PIR). El patólogo: 4 años de residente tras el MIR.</li>\n<li><strong>Continuada:</strong> cursos acreditados.</li>\n<li><strong>Desarrollo profesional:</strong> carrera por grados.</li>\n</ol>",
+     "q": "¿Cuáles son las cuatro etapas de formación que establece la LOPS?",
+     "n": 53
+    },
+    {
+     "titulo": "Otros aspectos de la LOPS",
+     "lv": 2,
+     "fuente": "Bloque 8 · Ley de Ordenación de las Profesiones Sanitarias (LOPS)",
+     "prof": "<ul>\n<li><strong>Ejercicio privado:</strong> por cuenta propia o ajena, con las mismas garantías.</li>\n<li><strong>Registro Estatal de Profesionales Sanitarios:</strong> comprobar quién está habilitado.</li>\n<li><strong>Comisión Consultiva Profesional:</strong> participación de las profesiones en las decisiones.</li>\n</ul>",
+     "q": "¿Para qué sirve el Registro Estatal de Profesionales Sanitarios?",
+     "n": 54
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Economía de la salud y sostenibilidad",
+   "conceptos": [
+    {
+     "titulo": "Cambios en la sociedad",
+     "lv": 1,
+     "fuente": "Bloque 9 · Economía de la salud y sostenibilidad",
+     "prof": "<p>La sociedad vive ★ <strong>grandes cambios, rápidos</strong>. Los expertos estudian ★ <strong>situaciones demográficas, económicas y sociales futuras</strong>, que influyen en el ★ <strong>diseño de sistemas y la planificación de leyes</strong>. Futuro: ★ <strong>población envejecida, con enfermedades antes mortales que ahora son crónicas</strong>.</p>",
+     "q": "¿Qué tipo de población se prevé y por qué importa al sistema sanitario?",
+     "n": 55
+    },
+    {
+     "titulo": "Hacia dónde van las mejoras",
+     "lv": 1,
+     "fuente": "Bloque 9 · Economía de la salud y sostenibilidad",
+     "prof": "<p>★ <strong>Gestionar los recursos humanos y financieros</strong> · ★ <strong>sostenibilidad del sistema</strong> · ★ <strong>atención integral del paciente</strong> · ★ <strong>nuevas herramientas digitales</strong> y ★ <strong>formación en las especialidades cada vez más fluida</strong>.</p>",
+     "q": "¿Hacia dónde van enfocadas las mejoras del sistema sanitario?",
+     "n": 56
+    },
+    {
+     "titulo": "Economía de la salud",
+     "lv": 1,
+     "fuente": "Bloque 9 · Economía de la salud y sostenibilidad",
+     "prof": "<p>★ <strong>Estudia cómo repartir unos recursos limitados para obtener el máximo nivel de salud posible.</strong>\n<strong>Coste de oportunidad:</strong> cada euro gastado en algo deja de gastarse en otra cosa.</p>",
+     "q": "¿Qué es la economía de la salud y qué es el coste de oportunidad?",
+     "n": 57
+    },
+    {
+     "titulo": "Eficacia, efectividad, eficiencia y equidad",
+     "lv": 2,
+     "fuente": "Bloque 9 · Economía de la salud y sostenibilidad",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Concepto</th>\n<th>Pregunta que responde</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Eficacia</strong></td>\n<td>¿Funciona en <strong>condiciones ideales</strong>?</td>\n</tr>\n<tr>\n<td><strong>Efectividad</strong></td>\n<td>¿Funciona en la <strong>práctica real</strong>?</td>\n</tr>\n<tr>\n<td><strong>Eficiencia</strong></td>\n<td>¿Mejor resultado con el <strong>menor coste</strong>?</td>\n</tr>\n<tr>\n<td><strong>Equidad</strong></td>\n<td>¿Llega a todos <strong>según sus necesidades</strong>?</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué diferencia hay entre eficacia, efectividad y eficiencia?",
+     "n": 58
+    },
+    {
+     "titulo": "Sostenibilidad del SNS",
+     "lv": 1,
+     "fuente": "Bloque 9 · Economía de la salud y sostenibilidad",
+     "prof": "<p>★ <strong>El gasto sanitario crece más deprisa que los recursos.</strong> España dedica ★ <strong>alrededor del 10 % del PIB a sanidad</strong>; unas tres cuartas partes es gasto público.</p>",
+     "q": "¿Qué porcentaje del PIB dedica España a sanidad?",
+     "n": 59
+    },
+    {
+     "titulo": "Causas del aumento del gasto",
+     "lv": 2,
+     "fuente": "Bloque 9 · Economía de la salud y sostenibilidad",
+     "prof": "<p><strong>Envejecimiento</strong> (más de 1 de cada 5 españoles tiene más de 65) · <strong>descenso de la natalidad</strong> · <strong>cronicidad</strong> · tecnologías y fármacos caros (inmunoterapia, terapias génicas) · ★ <strong>mayores expectativas de la población</strong>.\nEl envejecimiento es un logro, pero ★ <strong>obliga a replantear el modelo</strong> (crónicos, servicios sociales, atención domiciliaria, prevención). Objetivo: ★ <strong>mejor calidad de vida de los mayores sin poner en riesgo el sistema</strong>.</p>",
+     "q": "Cita cinco causas del aumento del gasto sanitario.",
+     "n": 60
+    },
+    {
+     "titulo": "En qué se gasta el dinero",
+     "lv": 2,
+     "fuente": "Bloque 9 · Economía de la salud y sostenibilidad",
+     "prof": "<p><strong>Personal sanitario: la partida más importante</strong> (casi la mitad del gasto público) · infraestructuras · alta tecnología · quirófanos y material estéril · fármacos · prevención · vigilancia epidemiológica · investigación · reducción de listas de espera · trasplantes.\n★ <strong>España es líder mundial en donación de órganos (ONT).</strong></p>",
+     "q": "¿Cuál es la mayor partida del gasto sanitario y en qué es líder mundial España?",
+     "n": 61
+    },
+    {
+     "titulo": "El coste de no diagnosticar",
+     "lv": 1,
+     "fuente": "Bloque 9 · Economía de la salud y sostenibilidad",
+     "prof": "<p>★ <strong>Un diagnóstico tardío es mucho más caro que uno precoz</strong> (más tratamientos, ingresos, peor pronóstico). Ejemplo: quitar un pólipo en el cribado colorrectal frente a tratar un cáncer avanzado. ★ <strong>La Anatomía Patológica es clave</strong>: diagnóstico rápido y preciso.</p>",
+     "q": "¿Por qué el diagnóstico precoz ahorra dinero?",
+     "n": 62
+    }
+   ],
+   "min": 25
+  },
+  {
+   "titulo": "Calidad asistencial y evaluación",
+   "conceptos": [
+    {
+     "titulo": "Calidad en la Ley 16/2003",
+     "lv": 1,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p>No basta con atender a todos: hay que atender <strong>bien y de forma parecida en todo el territorio</strong>. ★ <strong>Calidad = hacer lo correcto, de la forma correcta, en el momento adecuado, para el paciente adecuado, con seguridad y al menor coste posible.</strong></p>",
+     "q": "¿Cómo define la calidad asistencial la Ley 16/2003?",
+     "n": 63
+    },
+    {
+     "titulo": "Garantías de las prestaciones (Ley 16/2003)",
+     "lv": 2,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p><strong>Accesibilidad</strong> (igualdad de acceso) · <strong>movilidad</strong> (atención en cualquier comunidad) · <strong>tiempo</strong> (plazos razonables, tiempos máximos) · <strong>información</strong> · <strong>seguridad</strong> (centros autorizados) · <strong>calidad</strong> (estándares y <strong>CSUR</strong>: centros de referencia para casos complejos o raros).</p>",
+     "q": "Cita las seis garantías de las prestaciones y qué son los CSUR.",
+     "n": 64
+    },
+    {
+     "titulo": "Infraestructura de la calidad",
+     "lv": 2,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p><strong>Normas de calidad y seguridad</strong> · <strong>indicadores</strong> (tiempos de espera, infecciones, reingresos, mortalidad) · <strong>guías de práctica clínica</strong> (programa <strong>GuíaSalud</strong>) · <strong>registro de buenas prácticas</strong> · <strong>registro de acontecimientos adversos</strong> (errores e incidentes).</p>",
+     "q": "¿Qué incluye la infraestructura de la calidad y qué es GuíaSalud?",
+     "n": 65
+    },
+    {
+     "titulo": "Instrumentos para mejorar",
+     "lv": 2,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p><strong>Planes de calidad del SNS</strong> (de ahí la Estrategia de Seguridad del Paciente) · <strong>evaluación externa</strong> (auditorías y acreditación) · <strong>Agencia de Calidad del SNS</strong> (hoy sus funciones las asume el Ministerio) · <strong>Observatorio del SNS</strong> (compara comunidades).</p>",
+     "q": "¿Qué instrumentos de mejora de la calidad creó la ley?",
+     "n": 66
+    },
+    {
+     "titulo": "Definición de calidad de Donabedian",
+     "lv": 1,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p><strong>Avedis Donabedian (1980)</strong> propuso una ★ <strong>definición de calidad asistencial</strong>: la que ★ <strong>se espera que proporcione al usuario el máximo y más completo bienestar</strong>, tras valorar el ★ <strong>balance de ganancias y pérdidas</strong> del proceso.</p>",
+     "q": "¿Quién definió la calidad asistencial en 1980 y cómo?",
+     "n": 67
+    },
+    {
+     "titulo": "Los 7 pilares de la calidad (Donabedian)",
+     "lv": 2,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p><strong>Eficacia · efectividad · eficiencia · optimización · equidad · aceptabilidad · legitimidad.</strong></p>",
+     "q": "Cita los 7 pilares de la calidad de Donabedian.",
+     "n": 68
+    },
+    {
+     "titulo": "Las 3 dimensiones de Donabedian: estructura, proceso y resultado",
+     "lv": 2,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Estructura</th>\n<th>Proceso</th>\n<th>Resultado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Personal, equipos, recursos financieros, instalaciones, normas, procedimientos, sistemas de información</td>\n<td>Acciones del personal y de los pacientes, oportunidad, comunicación, aplicación de procedimientos</td>\n<td>Indicadores, gasto adecuado, acreditación, mejora de la salud, satisfacción de los usuarios</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Cuáles son las tres dimensiones del modelo de calidad de Donabedian?",
+     "n": 69
+    },
+    {
+     "titulo": "Atributos de la calidad asistencial",
+     "lv": 2,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p>Accesibilidad, aceptabilidad (satisfacción del paciente), adecuación, calidad científico-técnica, competencia profesional, continuidad, cooperación del paciente, disponibilidad, efectividad, eficiencia, satisfacción del profesional y <strong>seguridad</strong> (minimizar riesgos y daños).</p>",
+     "q": "¿Qué es la aceptabilidad y qué es la seguridad como atributos de calidad?",
+     "n": 70
+    },
+    {
+     "titulo": "Tipos de costes sanitarios",
+     "lv": 1,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Qué son</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>★ <strong>Directos</strong></td>\n<td>Se originan <strong>directamente por la atención</strong> y se miden en dinero</td>\n<td><strong>Sanitarios:</strong> hospitalización, fármacos, consultas, pruebas, rehabilitación. <strong>No sanitarios:</strong> transporte, ayuda en el domicilio</td>\n</tr>\n<tr>\n<td>★ <strong>Indirectos</strong></td>\n<td>★ <strong>Surgen a raíz de la enfermedad</strong> y afectan a la <strong>capacidad de trabajar o de realizar las actividades habituales</strong></td>\n<td>★ <strong>Pérdida de productividad</strong> (absentismo, salarios) y ★ <strong>tiempo de cuidado informal</strong> de familiares</td>\n</tr>\n<tr>\n<td>★ <strong>Intangibles</strong></td>\n<td>★ <strong>Los más difíciles de medir</strong></td>\n<td>★ <strong>Dolor y sufrimiento</strong>, ★ <strong>ansiedad y estrés</strong>, ★ <strong>menor calidad de vida</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué tres tipos de costes sanitarios hay? Pon un ejemplo de cada uno.",
+     "n": 71
+    },
+    {
+     "titulo": "Modelos de gestión de calidad",
+     "lv": 1,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p>★ <strong>Referente permanente e instrumento para mejorar los productos o servicios</strong> de una organización. ★ <strong>Ayuda a comprender sus dimensiones</strong> y a compararse con otras.\nLos de calidad total más difundidos: <strong>Deming (1951)</strong>, <strong>Malcolm Baldrige (1987)</strong> y <strong>EFQM (1992)</strong>.\n★ <strong>Los más usados en salud:</strong> <strong>EFQM</strong> (autoevaluación), <strong>Euskalit</strong> (Fundación Vasca para la Calidad), <strong>ISO 9001:2015</strong> y <strong>Joint Commission (JCAHO)</strong>.</p>",
+     "q": "¿Qué modelos de gestión de calidad son los más usados en salud?",
+     "n": 72
+    },
+    {
+     "titulo": "Modelo Deming (ciclo PDCA)",
+     "lv": 1,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<p>Ciclo de 4 fases que se repite: <strong>Planificar</strong> (objetivos, recursos) → <strong>Hacer</strong> (procesos, actividades) → <strong>Verificar</strong> (análisis, medidas) → <strong>Actuar</strong> (acciones correctivas, nuevo estándar).</p>",
+     "q": "¿Cuáles son las cuatro fases del ciclo de Deming?",
+     "n": 73
+    },
+    {
+     "titulo": "Modelo EFQM y Euskalit",
+     "lv": 1,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<ul>\n<li><strong>EFQM:</strong> liderazgo → personas, política y estrategia, alianzas y recursos → procesos → resultados en personas, clientes y sociedad → <strong>resultados clave</strong>. Se divide en <strong>agentes</strong> (lo que se hace) y <strong>resultados</strong> (lo que se logra). Versión actual: dirección, ejecución y resultados.</li>\n<li><strong>Euskalit:</strong> <strong>resultados</strong> en el centro, rodeados de <strong>estrategia, clientes, personas, sociedad e innovación</strong>.</li>\n</ul>",
+     "q": "¿En qué dos grandes partes se divide el modelo EFQM y qué hay en el centro del modelo Euskalit?",
+     "n": 74
+    },
+    {
+     "titulo": "Tipos de evaluaciones económicas",
+     "lv": 1,
+     "fuente": "Bloque 10 · Calidad asistencial y evaluación",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Análisis</th>\n<th>Qué compara</th>\n<th>Cómo mide el resultado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Coste-beneficio (ACB)</strong></td>\n<td>★ Costes con <strong>beneficios</strong></td>\n<td>★ <strong>En dinero (€)</strong></td>\n</tr>\n<tr>\n<td><strong>Coste-efectividad (ACE)</strong></td>\n<td>★ Costes con <strong>resultados en salud</strong></td>\n<td>Efectos: años de vida, casos evitados</td>\n</tr>\n<tr>\n<td><strong>Coste-utilidad (ACU)</strong></td>\n<td>★ Costes con <strong>años de vida ajustados por calidad (QALY)</strong></td>\n<td>En <strong>QALY</strong></td>\n</tr>\n<tr>\n<td><strong>Coste-minimización (ACM)</strong></td>\n<td>★ Dos tratamientos <strong>igual de efectivos</strong></td>\n<td>★ <strong>Se elige el más barato</strong> (€)</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué compara y cómo mide cada tipo de análisis: ACB, ACE, ACU y ACM?",
+     "n": 75
+    }
+   ],
+   "min": 45
+  }
+ ],
+ "impres": [
+  {
+   "titulo": "Sistema sanitario y salud",
+   "items": [
+    [
+     "¿Sistema sanitario según la OMS?",
+     "<strong>Conjunto de elementos interrelacionados que contribuyen a la salud</strong> (hogares, trabajo, lugares públicos, comunidades)."
+    ],
+    [
+     "¿5 principios de la OMS?",
+     "<strong>Universalidad</strong> (todos tienen derecho) · <strong>Equidad</strong> (a cada uno lo que <strong>necesita</strong>, no lo mismo) · <strong>Eficiencia</strong> (mejores resultados usando bien los recursos, no \"gastar poco\") · <strong>Atención integral</strong> (física, psicológica y social) · <strong>Adaptación a las necesidades</strong> (detectar y <strong>prevenir</strong>)."
+    ],
+    [
+     "¿Salud según la OMS (1948)?",
+     "<strong>Completo bienestar físico, mental y social, y no solo ausencia de enfermedad.</strong>"
+    ],
+    [
+     "¿Alma-Ata (1978)?",
+     "Salud = <strong>derecho humano fundamental</strong>; destaca la <strong>atención primaria</strong>."
+    ],
+    [
+     "¿Concepto ampliado?",
+     "La salud está condicionada por <strong>factores sociales y capacidad de funcionamiento</strong>."
+    ]
+   ]
+  },
+  {
+   "titulo": "Determinantes de la salud",
+   "items": [
+    [
+     "¿Modelo de Lalonde (1974)?",
+     "<strong>Estilo de vida 43 %</strong> (el que más) · <strong>Biología 27 %</strong> · <strong>Medio ambiente 19 %</strong> · <strong>Sistema sanitario 11 %</strong> (el que menos)."
+    ],
+    [
+     "¿Biología / estilo de vida / medio ambiente / sistema sanitario?",
+     "<strong>Cómo somos</strong> (edad, sexo, genética) / <strong>lo que hacemos</strong> (dieta, tabaco, ejercicio) / <strong>lo que nos rodea</strong> (medio <strong>físico</strong> y <strong>social</strong>) / <strong>la atención que recibimos</strong>."
+    ],
+    [
+     "¿Los estilos de vida dependen solo de la persona?",
+     "<strong>No</strong>: las condiciones sociales y económicas facilitan o dificultan los hábitos."
+    ],
+    [
+     "¿Dahlgren y Whitehead (1991)?",
+     "<strong>Capas concéntricas</strong> alrededor de la persona; <strong>cuanto más externa la capa, menos depende de la persona</strong>."
+    ],
+    [
+     "¿Países ricos vs pobres?",
+     "Ricos: <strong>enfermedades crónicas</strong>. Pobres: <strong>infecciosas y mortalidad infantil</strong>."
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué hace el sistema y cómo se organiza",
+   "items": [
+    [
+     "¿Actúa solo cuando enfermamos?",
+     "<strong>No</strong>: protege, mantiene y recupera la salud."
+    ],
+    [
+     "¿5 actuaciones?",
+     "<strong>Prevención · detección precoz · tratamiento · rehabilitación · promoción de la salud.</strong>"
+    ],
+    [
+     "¿Por qué cada país lo organiza distinto?",
+     "Distinta situación <strong>económica, política, social y cultural</strong>."
+    ],
+    [
+     "¿Modelos sanitarios?",
+     "Los <strong>criterios doctrinales e ideológicos</strong> de cada sistema."
+    ],
+    [
+     "¿3 preguntas de todo sistema?",
+     "<strong>¿Quién paga?</strong> (financiación) · <strong>¿quién presta?</strong> (provisión) · <strong>¿quién lo usa?</strong> (acceso)."
+    ]
+   ]
+  },
+  {
+   "titulo": "Modelos sanitarios",
+   "items": []
+  }
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "impres",
+   "fin": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Modelo</th>\n<th>Quién paga</th>\n<th>Acceso</th>\n<th>Ejemplo</th>\n<th>Lo clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Liberal</strong></td>\n<td>Seguro privado / individuo</td>\n<td>Según <strong>dinero o póliza</strong></td>\n<td><strong>EE. UU.</strong></td>\n<td><strong>Avances tecnológicos</strong>; <strong>sin universalidad ni equidad</strong>; esperanza de vida menor</td>\n</tr>\n<tr>\n<td><strong>Social (Semashko)</strong></td>\n<td><strong>Estado (todo)</strong></td>\n<td><strong>Universal y gratuito</strong></td>\n<td><strong>Cuba</strong> (antes URSS, 1917)</td>\n<td>Profesionales = empleados públicos; vacunaciones masivas; regímenes no democráticos</td>\n</tr>\n<tr>\n<td><strong>Mixto</strong></td>\n<td>Estado + privado</td>\n<td>—</td>\n<td><strong>Mayoría de países occidentales</strong></td>\n<td>Calidad asistencial; <strong>promoción, prevención y primaria</strong>; 2 variantes</td>\n</tr>\n<tr>\n<td><strong>Bismarck</strong></td>\n<td><strong>Cotizaciones</strong></td>\n<td>Trabajadores (+ <strong>beneficencia</strong>)</td>\n<td><strong>Alemania 1883</strong>, Francia</td>\n<td><strong>Mutualista</strong>; quien no trabajaba quedaba desprotegido</td>\n</tr>\n<tr>\n<td><strong>Beveridge</strong></td>\n<td><strong>Impuestos</strong></td>\n<td><strong>Universal</strong></td>\n<td><strong>Reino Unido</strong> (1942→NHS 1948), <strong>España</strong></td>\n<td>Se puede concertar con privados; <strong>listas de espera</strong></td>\n</tr>\n</tbody>\n</table></div><details class=\"pq\"><summary>¿Qué modelo sigue España?</summary><div class=\"pa\"><p><strong>Beveridge.</strong> Antes era <strong>Bismarck</strong>; el cambio empezó con la <strong>Ley General de Sanidad de 1986</strong>.</p></div></details><h3 class='ih'>5 · El SNS en España</h3><p><strong>¿Leyes clave?</strong></p><ul>\n<li><strong>Constitución 1978, art. 43</strong> → <strong>derecho a la protección de la salud</strong>.</li>\n<li><strong>Ley 14/1986 General de Sanidad</strong> → <strong>crea el SNS</strong>.</li>\n<li><strong>Ley 16/2003 de cohesión y calidad</strong> → <strong>cartera común</strong> en todas las CC. AA.</li>\n<li><strong>RDL 16/2012</strong> → restringe a \"asegurados\" y amplía el copago.</li>\n<li><strong>RDL 7/2018</strong> → <strong>recupera la universalidad</strong> (por <strong>residencia</strong>).</li>\n</ul><details class=\"pq\"><summary>¿Salud como derecho fundamental (internacional)?</summary><div class=\"pa\"><p><strong>Constitución de la OMS, 1946.</strong></p></div></details><details class=\"pq\"><summary>¿7 principios del SNS?</summary><div class=\"pa\"><p><strong>Universal · equitativo · financiado con fondos públicos · gratuito en el uso · integral · de calidad · descentralizado.</strong></p></div></details><details class=\"pq\"><summary>¿Quién reparte competencias?</summary><div class=\"pa\"><p>La <strong>Constitución</strong> (arts. 148 y 149). <strong>Estado:</strong> bases, medicamentos, <strong>sanidad exterior</strong>. <strong>CC. AA.:</strong> <strong>gestionan la asistencia</strong> (Navarra: <strong>Osasunbidea</strong>). <strong>Ceuta y Melilla:</strong> <strong>INGESA</strong>.</p></div></details><details class=\"pq\"><summary>¿Consejo Interterritorial?</summary><div class=\"pa\"><p><strong>Conecta Estado y CC. AA.</strong> (Ministerio + consejeros).</p></div></details><details class=\"pq\"><summary>¿AEMPS?</summary><div class=\"pa\"><p>Agencia de Medicamentos; <strong>depende del Ministerio de Sanidad</strong>; vigilancia tras la venta = <strong>farmacovigilancia</strong>.</p></div></details><details class=\"pq\"><summary>¿Tarjeta Sanitaria Europea?</summary><div class=\"pa\"><p>Asistencia en estancias temporales en la UE; con otros países, <strong>convenios bilaterales</strong>. Epidemias: <strong>OMS y ECDC</strong>.</p></div></details><h3 class='ih'>6 · Organización asistencial y cartera</h3><details class=\"pq\"><summary>¿Atención primaria?</summary><div class=\"pa\"><p><strong>Puerta de entrada</strong>; prevención y problemas frecuentes; <strong>acompaña toda la vida</strong>.</p></div></details><details class=\"pq\"><summary>¿Atención especializada?</summary><div class=\"pa\"><p>Hospitales; llega <strong>derivado</strong>; aquí está <strong>Anatomía Patológica</strong>; luego <strong>vuelve a primaria</strong>. Función propia: <strong>servicio de medios</strong>.</p></div></details><details class=\"pq\"><summary>¿Organización territorial?</summary><div class=\"pa\"><p><strong>Áreas de salud</strong> (hospital de referencia) → <strong>zonas básicas</strong> (centro de salud). Te toca según dónde estás <strong>empadronado</strong>; <strong>tarjeta sanitaria individual</strong>.</p></div></details><details class=\"pq\"><summary>¿Cartera de servicios?</summary><div class=\"pa\"><p><strong>Técnicas, tecnologías y procedimientos que ofrece el SNS</strong> (Ley 16/2003 y <strong>RD 1030/2006</strong>). <strong>Básica = gratuita</strong>; <strong>suplementaria = con aportación</strong>; <strong>complementaria = de cada CC. AA.</strong></p></div></details><details class=\"pq\"><summary>¿Salud pública?</summary><div class=\"pa\"><p>Protege la salud de <strong>toda la comunidad</strong>; incluye <strong>cribados</strong> de mama, cérvix y colorrectal.</p></div></details><details class=\"pq\"><summary>¿Triaje?</summary><div class=\"pa\"><p><strong>Clasifica la prioridad según la gravedad</strong> (enfermería), <strong>5 niveles</strong>; <strong>todos son atendidos</strong>.</p></div></details><details class=\"pq\"><summary>¿Medicamentos?</summary><div class=\"pa\"><p><strong>La AEMPS autoriza; el Ministerio decide la financiación y el precio.</strong></p></div></details><details class=\"pq\"><summary>¿Prótesis vs ortesis?</summary><div class=\"pa\"><p>Prótesis <strong>sustituye</strong> (cadera); ortesis <strong>corrige o apoya</strong> (férula, corsé).</p></div></details><h3 class='ih'>7 · Deontología y bioética</h3><details class=\"pq\"><summary>¿Código deontológico?</summary><div class=\"pa\"><p><strong>Principios éticos y normas de conducta</strong> de los profesionales; <strong>no siempre legalmente vinculante</strong>.</p></div></details><details class=\"pq\"><summary>¿Bioética?</summary><div class=\"pa\"><p>Engloba <strong>ética, deontología y derecho</strong>; término de <strong>Van Rensselaer Potter (1971)</strong>.</p></div></details><details class=\"pq\"><summary>¿4 principios (Beauchamp y Childress)?</summary><div class=\"pa\"><p><strong>Autonomía</strong> (consentimiento informado, <strong>Ley 41/2002</strong>) · <strong>Justicia</strong> (sin discriminación) · <strong>Beneficencia</strong> (hacer el bien) · <strong>No maleficencia</strong> (no hacer daño).</p></div></details><details class=\"pq\"><summary>¿Código de Deontología Médica?</summary><div class=\"pa\"><p><strong>2011</strong>; 3 bloques: <strong>comportamiento del médico</strong>, <strong>relación con otras profesiones</strong>, <strong>relación con el sistema sanitario</strong>. Novedades: historia clínica informatizada, protección de datos, seguridad del paciente, combatir la violencia, relación médico-paciente, formación continua.</p></div></details><h3 class='ih'>8 · LOPS</h3><details class=\"pq\"><summary>¿Qué es?</summary><div class=\"pa\"><p><strong>Ley 44/2003</strong>: regula <strong>a las personas</strong> (profesiones sanitarias, pública y privada) para que estén <strong>cualificadas</strong>. La LGS de 1986 crea <strong>el sistema</strong>.</p></div></details><details class=\"pq\"><summary>¿Dos grupos de profesionales?</summary><div class=\"pa\"><p><strong>A. Titulados universitarios (art. 2)</strong> y <strong>B. Formación profesional (art. 3)</strong>. El <strong>TS en Anatomía Patológica</strong> está en <strong>FP</strong>.</p></div></details><details class=\"pq\"><summary>¿Trabajo en equipo según la LOPS?</summary><div class=\"pa\"><p><strong>Interdisciplinar, basado en la cooperación y no en la jerarquía</strong>; seguir <strong>guías y protocolos</strong>; <strong>formación continuada</strong>.</p></div></details><details class=\"pq\"><summary>¿Etapas de formación?</summary><div class=\"pa\"><p><strong>Pregrado · especializada (MIR, BIR…) · continuada · desarrollo profesional.</strong></p></div></details><h3 class='ih'>9 · Economía y sostenibilidad</h3><details class=\"pq\"><summary>¿Futuro de la población?</summary><div class=\"pa\"><p><strong>Envejecida</strong>, con enfermedades antes mortales ahora <strong>crónicas</strong>.</p></div></details><details class=\"pq\"><summary>¿Hacia dónde van las mejoras?</summary><div class=\"pa\"><p>Gestionar recursos humanos y financieros · <strong>sostenibilidad</strong> · atención integral · <strong>herramientas digitales</strong> · formación más fluida.</p></div></details><details class=\"pq\"><summary>¿Economía de la salud?</summary><div class=\"pa\"><p>Repartir <strong>recursos limitados</strong> para el <strong>máximo nivel de salud</strong>.</p></div></details><details class=\"pq\"><summary>¿Eficacia / efectividad / eficiencia?</summary><div class=\"pa\"><p>Funciona en <strong>condiciones ideales</strong> / en la <strong>práctica real</strong> / <strong>mejor resultado al menor coste</strong>.</p></div></details><details class=\"pq\"><summary>¿Gasto sanitario?</summary><div class=\"pa\"><p>Crece más que los recursos; España ≈ <strong>10 % del PIB</strong>. Mayor partida: <strong>personal</strong>. España: <strong>líder en donación de órganos (ONT)</strong>.</p></div></details><details class=\"pq\"><summary>¿Por qué el diagnóstico precoz ahorra?</summary><div class=\"pa\"><p>El <strong>diagnóstico tardío es mucho más caro</strong>; la <strong>Anatomía Patológica es clave</strong>.</p></div></details><h3 class='ih'>10 · Calidad y evaluación</h3><details class=\"pq\"><summary>¿Calidad (Ley 16/2003)?</summary><div class=\"pa\"><p><strong>Hacer lo correcto, de la forma correcta, en el momento adecuado, al paciente adecuado, con seguridad y al menor coste.</strong></p></div></details><details class=\"pq\"><summary>¿Calidad según Donabedian (1980)?</summary><div class=\"pa\"><p>La que da al usuario el <strong>máximo y más completo bienestar</strong> tras valorar el <strong>balance de ganancias y pérdidas</strong>. Dimensiones: <strong>estructura, proceso y resultado</strong>.</p></div></details><details class=\"pq\"><summary>¿Tipos de costes?</summary><div class=\"pa\"><p><strong>Directos</strong> (por la atención: consultas, fármacos) · <strong>Indirectos</strong> (por la enfermedad: <strong>pérdida de productividad</strong>, cuidado informal) · <strong>Intangibles</strong> (<strong>los más difíciles de medir</strong>: dolor, ansiedad, calidad de vida).</p></div></details><details class=\"pq\"><summary>¿Modelos de gestión de calidad más usados en salud?</summary><div class=\"pa\"><p><strong>EFQM, Euskalit, ISO 9001:2015 y Joint Commission.</strong></p></div></details><details class=\"pq\"><summary>¿Ciclo de Deming (PDCA)?</summary><div class=\"pa\"><p><strong>Planificar → Hacer → Verificar → Actuar.</strong></p></div></details><details class=\"pq\"><summary>¿Evaluaciones económicas?</summary><div class=\"pa\"><p><strong>ACB:</strong> costes vs beneficios <strong>en €</strong> · <strong>ACE:</strong> costes vs resultados en salud · <strong>ACU:</strong> costes vs <strong>QALY</strong> · <strong>ACM:</strong> dos tratamientos <strong>igual de efectivos → el más barato</strong>.</p></div></details><h3 class='ih'>Las 15 que no puedes fallar</h3><ol>\n<li>5 principios de la OMS (<strong>equidad ≠ igualdad</strong>).</li>\n<li>Salud OMS 1948 y Alma-Ata 1978.</li>\n<li>Lalonde: <strong>43-27-19-11</strong>.</li>\n<li>Liberal = EE. UU., avances, sin universalidad.</li>\n<li>Social = Estado todo, <strong>Cuba</strong>.</li>\n<li>Bismarck = <strong>cotizaciones</strong>, Alemania 1883.</li>\n<li>Beveridge = <strong>impuestos</strong>, Reino Unido → <strong>España</strong>.</li>\n<li>Art. 43 CE · LGS 1986 crea el SNS · Ley 16/2003 cartera · RDL 7/2018 universalidad.</li>\n<li>CC. AA. gestionan la asistencia · Consejo Interterritorial · INGESA.</li>\n<li>Primaria = puerta de entrada · <strong>Anatomía Patológica en especializada</strong>.</li>\n<li>Triaje = prioridad por gravedad, 5 niveles.</li>\n<li>Bioética: autonomía, justicia, beneficencia, no maleficencia.</li>\n<li>LOPS 2003: TS en AP = <strong>formación profesional</strong>.</li>\n<li>Costes directos / indirectos / <strong>intangibles</strong> (los más difíciles).</li>\n<li>ACB (€), ACE, ACU (QALY), ACM (el más barato) · Deming PDCA.</li>\n</ol>",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  }
+ ]
+}

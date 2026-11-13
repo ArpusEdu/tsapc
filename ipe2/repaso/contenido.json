@@ -1,0 +1,1369 @@
+{
+ "unidad": "ipe2",
+ "titulo": "IPE 2 · Riesgos ambientales",
+ "eyebrow": "🦺 IPE 1 · 2º examen",
+ "h1": "Repaso completo: los riesgos ambientales en el trabajo",
+ "sub": "Tema 3 · 16 diapositivas + lo que explicó la profe + test y ejercicios resueltos · 7 bloques · 29 conceptos",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>\n<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div>",
+ "clave": "ipe2-repaso-v1",
+ "examen": {
+  "em": "🦺",
+  "asig": "IPE 1",
+  "examen": "2º examen",
+  "fecha": "2026-10-13"
+ },
+ "simulacro": "ipe2/simulacro/",
+ "tipografia": "Anton",
+ "buscar": [
+  [
+   "#hoja",
+   "20 preguntas de la hoja"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "etiquetas": {
+  "facil": "💡 Qué significa"
+ },
+ "bloques": [
+  {
+   "titulo": "Riesgos físicos: introducción (diap. 2)",
+   "conceptos": [
+    {
+     "titulo": "Agentes contaminantes y riesgos físicos",
+     "lv": 2,
+     "fuente": "Diapositiva 2",
+     "defs": [
+      {
+       "t": "Agente contaminante",
+       "facil": "Cualquier elemento <strong>físico, químico o biológico</strong> presente en el ambiente de trabajo que puede <strong>dañar la salud</strong> de los trabajadores (el ruido, un disolvente, un virus…)."
+      },
+      {
+       "t": "Enfermedad profesional",
+       "facil": "Enfermedad que aparece <strong>poco a poco</strong> por estar expuesto a un agente del trabajo (ej.: sordera por ruido)."
+      },
+      {
+       "t": "Accidente de trabajo",
+       "facil": "Lesión <strong>repentina</strong> que sufre el trabajador con ocasión o a consecuencia de su trabajo (ej.: un corte, una caída)."
+      },
+      {
+       "t": "Agente físico",
+       "facil": "Forma de <strong>energía</strong> que puede dañar la salud. ⚠️ La diapositiva solo pone \"vocabulario: agente contaminante\" sin definirlo; estas definiciones son las generales de prevención de riesgos."
+      }
+     ],
+     "prof": "<ul>\n<li>En el entorno laboral hay numerosos <strong>agentes contaminantes</strong> que pueden dañar la salud y generar <strong>enfermedades profesionales</strong> a <strong>corto, medio o largo plazo</strong>, y también originar <strong>accidentes de trabajo</strong>.</li>\n<li>Los <strong>riesgos físicos</strong> se producen por la <strong>exposición a agentes físicos</strong>: manifestaciones de distinto tipo de <strong>energía</strong> capaces de afectar a la salud y la seguridad de las personas en su trabajo y causarles enfermedades profesionales.</li>\n</ul>",
+     "entiende": "un agente físico <strong>no es una sustancia ni un ser vivo</strong>: es <strong>energía</strong> que te llega (sonido, temblor, calor, radiación).",
+     "q": "¿Qué son los riesgos físicos y qué pueden provocar los agentes contaminantes?",
+     "n": 1
+    },
+    {
+     "titulo": "Los 4 riesgos físicos según la energía",
+     "lv": 1,
+     "fuente": "Diapositiva 2 + explicación de la profe en clase",
+     "defs": [
+      {
+       "t": "Átomo",
+       "facil": "La pieza más pequeña de la materia. <strong>Molecular:</strong> de las moléculas (grupos de átomos unidos). Las ionizantes rompen átomos (más energía, más peligro); las no ionizantes solo afectan a las moléculas."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Energía</th>\n<th>Riesgo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Mecánica</strong></td>\n<td><strong>Ruido</strong> y <strong>vibraciones</strong></td>\n</tr>\n<tr>\n<td><strong>Térmica</strong></td>\n<td><strong>Ambiente térmico</strong> (ojo: <strong>no es solo calor, también frío</strong>)</td>\n</tr>\n<tr>\n<td><strong>Electromagnética</strong></td>\n<td><strong>Radiaciones</strong>: <strong>ionizantes</strong> (alteran los <strong>átomos</strong>) y <strong>no ionizantes</strong> (nivel <strong>molecular</strong>)</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "el ruido y la vibración son <strong>movimiento</strong> (mecánica): el ruido mueve el aire y la vibración mueve tu cuerpo.",
+     "truco": "<strong>\"Me-Te-El\"</strong> → <strong>Me</strong>cánica (ruido + vibración), <strong>Te</strong>rmica (frío y calor), <strong>El</strong>ectromagnética (radiaciones). <strong>Ionizantes = átomos</strong> (las dos palabras con \"a\" dentro: \"ionizAntes\" y \"Átomos\").",
+     "q": "¿Cuáles son los 4 riesgos físicos y de qué energía viene cada uno?",
+     "n": 2
+    }
+   ],
+   "min": 10
+  },
+  {
+   "titulo": "El ruido (diap. 3)",
+   "conceptos": [
+    {
+     "titulo": "Qué es y efectos",
+     "lv": 2,
+     "fuente": "Diapositiva 3 + explicación de la profe",
+     "defs": [
+      {
+       "t": "Hipoacusia",
+       "facil": "Pérdida de audición (<em>hipo</em> = poco, <em>acusia</em> = oír)."
+      },
+      {
+       "t": "Valores de referencia",
+       "facil": "Cifras que marca la norma para saber cuándo el ruido es peligroso."
+      },
+      {
+       "t": "Valor que da lugar a una acción",
+       "facil": "Nivel a partir del cual la empresa <strong>tiene que hacer algo</strong>."
+      },
+      {
+       "t": "Valor límite",
+       "facil": "Nivel que <strong>nunca</strong> se puede superar."
+      }
+     ],
+     "prof": "<ul>\n<li>Es uno de los riesgos <strong>más extendidos</strong> en el ambiente laboral; para la profe, <strong>el agente laboral más extendido que existe</strong>.</li>\n<li><strong>Efectos:</strong> <strong>reducción de la capacidad auditiva</strong> (<strong>sordera o hipoacusia laboral</strong>) · alteración de los sistemas <strong>respiratorio y cardiovascular</strong> · <strong>trastornos digestivos y del sueño</strong> · <strong>aumento del riesgo de accidentes laborales</strong> (baja la <strong>atención</strong> y el <strong>tiempo de reacción</strong>).</li>\n<li>La <strong>hipoacusia laboral</strong> es una sordera muy específica, de <strong>leve a muy grave</strong>, hasta <strong>perder el oído</strong>.</li>\n<li>La normativa fija los <strong>valores de referencia</strong> que determinan la posibilidad de sufrir daño auditivo; la empresa debe <strong>adoptar medidas</strong> si se superan los valores que dan lugar a una <strong>acción</strong> o el <strong>valor límite</strong>.</li>\n</ul>",
+     "entiende": "el ruido no solo daña el oído: te estresa (corazón, respiración), te quita el sueño, te revuelve el estómago y te distrae, así que tienes más accidentes.",
+     "truco": "<strong>Truco de efectos:</strong> <strong>\"O-C-D-A\"</strong> → <strong>O</strong>ído, <strong>C</strong>orazón y respiración, <strong>D</strong>igestión y sueño, <strong>A</strong>ccidentes.",
+     "q": "¿Qué efectos tiene el ruido sobre la salud? ¿Qué es la hipoacusia laboral?",
+     "n": 3
+    },
+    {
+     "titulo": "Nivel diario equivalente vs nivel de pico",
+     "lv": 1,
+     "fuente": "Explicación de la profe en clase (NO está en la diapositiva 3: \"coged apuntes\")",
+     "tituloHtml": "Nivel diario equivalente vs nivel de pico <span class=\"note\">no está en la diapositiva: &quot;coged apuntes&quot;</span>",
+     "defs": [
+      {
+       "t": "Decibelio (dB)",
+       "facil": "Unidad con la que se mide la intensidad del ruido."
+      },
+      {
+       "t": "Presión sonora",
+       "facil": "La fuerza con la que el sonido empuja el aire (lo que mide el ruido)."
+      },
+      {
+       "t": "Jornada de 8 horas",
+       "facil": "Un día normal de trabajo."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Nivel diario equivalente</strong></th>\n<th><strong>Nivel de pico</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Qué es</td>\n<td>Exposición <strong>continuada</strong> durante una <strong>jornada de 8 horas</strong></td>\n<td><strong>Valor máximo de presión sonora</strong> en un <strong>periodo muy breve</strong></td>\n</tr>\n<tr>\n<td>Unidad</td>\n<td><strong>dB(A)</strong></td>\n<td><strong>dB(C)</strong></td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td>Una máquina toda la jornada; maquinista de tren toda su vida laboral</td>\n<td>Una <strong>explosión</strong></td>\n</tr>\n<tr>\n<td>Para qué</td>\n<td>Ruido de la jornada o de muchas horas al día</td>\n<td>Pérdida auditiva por un <strong>accidente</strong> o hecho puntual</td>\n</tr>\n</tbody>\n</table></div>\n<p>El <strong>pico</strong> es muy difícil de medir (el sonido máximo dura <strong>1-2 segundos</strong>); por eso el rojo se mide mejor en diario equivalente.</p>",
+     "entiende": "el <strong>diario</strong> es como la <strong>media</strong> de ruido de todo tu día; el <strong>pico</strong> es el <strong>golpe más fuerte</strong> en un instante.",
+     "truco": "<strong>Truco de unidades:</strong> <strong>A de \"A diario\"</strong> → dB(A) · <strong>C de \"Cañonazo\"</strong> → dB(C). ¡<strong>Nunca las mezcles</strong>!",
+     "q": "Diferencia el nivel diario equivalente del nivel de pico: qué mide cada uno, su unidad y un ejemplo.",
+     "n": 4
+    },
+    {
+     "titulo": "Los valores de ruido (semáforo)",
+     "lv": 1,
+     "fuente": "Diapositiva 3 (tabla de valores) + explicación de la profe + ejercicio 2",
+     "tituloHtml": "Los valores de ruido (semáforo) <span class=\"note\">de memoria · casos prácticos</span>",
+     "defs": [
+      {
+       "t": "EPI",
+       "facil": "Equipo de Protección Individual; en ruido, <strong>tapones u orejeras</strong>."
+      },
+      {
+       "t": "Audiometría",
+       "facil": "Prueba que mide <strong>cuánto oyes</strong>."
+      },
+      {
+       "t": "Vigilancia de la salud",
+       "facil": "<strong>revisiones médicas</strong> periódicas a los trabajadores expuestos."
+      },
+      {
+       "t": "Señalizar",
+       "facil": "Poner carteles o paneles que avisan del riesgo."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Semáforo</th>\n<th>Diario equivalente</th>\n<th>Pico</th>\n<th>Qué obliga (cada nivel incluye el anterior)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Amarillo</strong></td>\n<td><strong>80 dB(A)</strong></td>\n<td><strong>135 dB(C)</strong></td>\n<td><strong>Información · formación · vigilancia de la salud con audiometrías · EPI a disposición, NO obligatorio</strong></td>\n</tr>\n<tr>\n<td><strong>Naranja</strong></td>\n<td><strong>85 dB(A)</strong></td>\n<td><strong>137 dB(C)</strong></td>\n<td><strong>EPI OBLIGATORIO</strong> · riesgo <strong>señalizado</strong> (paneles <strong>amarillos y azules</strong>) · <strong>programa de medidas técnicas y organizativas</strong> (rotar, limitar el uso de la máquina, cambiar maquinaria)</td>\n</tr>\n<tr>\n<td><strong>Rojo</strong></td>\n<td><strong>87 dB(A)</strong></td>\n<td><strong>140 dB(C)</strong></td>\n<td><strong>Nunca se puede superar</strong>: se <strong>deja de trabajar</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Información, formación y entrega de EPI</strong> están en <strong>todos los niveles</strong>.</li>\n<li><strong>Por debajo de 80 dB(A) no hay riesgo</strong>: no es obligatorio adoptar medidas (ejercicio 2: 74 dB(A)).</li>\n<li><strong>Audiometrías:</strong> en el ejemplo de 80-85 dB(A) la profe dijo <strong>audiometría cada 3 años</strong>. Según la norma: de <strong>80 a 85</strong> → <strong>evaluación cada 3 años</strong> y <strong>audiometría cada 5</strong>; <strong>por encima de 85</strong> → <strong>evaluación anual</strong> y <strong>audiometría cada 3</strong>. (Compruébalo en la tabla de tu diapositiva.)</li>\n<li><strong>Reclamaciones:</strong> de 80 a 85, si el trabajador pierde oído <strong>sin usar el EPI</strong>, <strong>se puede recurrir</strong> (no era obligatorio). Desde 85, si no se lo puso, <strong>la reclamación no prospera</strong>.</li>\n<li>Si se <strong>sobrepasa el valor límite</strong> → <strong>adoptar medidas inmediatas para reducir la exposición</strong> (test 5).</li>\n</ul>",
+     "entiende": "es un <strong>semáforo</strong>: en amarillo te avisan y te ofrecen tapones; en naranja te obligan a ponértelos; en rojo <strong>paras</strong>. Por eso, si te quedas sordo en amarillo sin tapones, la empresa tiene culpa (no era obligatorio, puedes recurrir); en naranja la culpa es tuya (era obligatorio).",
+     "q": "Di los 3 valores de diario equivalente y de pico con su unidad, y qué obliga cada uno.",
+     "extra": [
+      {
+       "tras": "entiende",
+       "html": "<div class=\"box tip\"><p class=\"lbl\">🧠 Truco para recordarlo</p><p><strong>Truco de números:</strong></p>\n<ul>\n<li><strong>Diario: 80 → 85 → 87</strong> (\"ochenta, ochenta y cinco y <strong>dos más</strong>\").</li>\n<li><strong>Pico: 135 → 137 → 140</strong> (\"<strong>135 y suma 2, luego 3</strong>\").</li>\n<li>Los dos van <strong>de 5 en 5 y luego un salto pequeño</strong>: 80-<strong>85</strong> / 135-<strong>137</strong>.</li>\n</ul></div>"
+      }
+     ],
+     "n": 5
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Las vibraciones mecánicas (diap. 4 y 5)",
+   "conceptos": [
+    {
+     "titulo": "Definición y modos",
+     "lv": 1,
+     "fuente": "Diapositiva 4 + explicación de la profe",
+     "defs": [
+      {
+       "t": "Movimiento oscilatorio",
+       "facil": "Movimiento de <strong>ida y vuelta</strong> que se repite (como el martillo neumático que tiembla)."
+      },
+      {
+       "t": "Elemento sólido",
+       "facil": "Algo duro que tocas: el mango de la herramienta, el asiento, el suelo de la máquina."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Vibración</strong> = todo <strong>movimiento oscilatorio</strong> transmitido al cuerpo humano <strong>por un elemento sólido</strong>, capaz de producir molestias o daños cuando parte de la <strong>energía</strong> generada es <strong>absorbida por el cuerpo humano</strong>.</li>\n<li>La definición <strong>entra</strong>. El daño depende de la energía transmitida y, muy importante, de la <strong>duración</strong>.</li>\n<li><strong>Dos modos de exposición</strong> (según la parte del cuerpo en contacto): <strong>sistema mano-brazo</strong> (a través de <strong>manos y brazos</strong> en <strong>tareas de agarre y sujeción</strong>) y <strong>cuerpo entero</strong> (a todo el cuerpo, <strong>sentado o de pie</strong>, a través de los <strong>asientos y plataformas</strong> de vehículos o máquinas).</li>\n</ul>",
+     "entiende": "el ruido viaja por el aire; la vibración viaja <strong>por algo sólido</strong> que tocas (el mango de una herramienta, el asiento de un camión).",
+     "truco": "<strong>\"lo que AGARRAS → mano-brazo; donde te SIENTAS o PISAS → cuerpo entero\"</strong>.",
+     "q": "Define vibración. ¿De qué depende el daño? ¿Cuáles son los dos modos de exposición?",
+     "n": 6
+    },
+    {
+     "titulo": "Origen y efectos de cada modo",
+     "lv": 1,
+     "fuente": "Explicación de la profe en clase (NO está en la diapositiva 4: \"cogedlo en apuntes\")",
+     "tituloHtml": "Origen y efectos de cada modo <span class=\"note\">no está en la diapositiva: &quot;cogedlo en apuntes&quot;</span>",
+     "defs": [
+      {
+       "t": "Vascular",
+       "facil": "De los <strong>vasos sanguíneos</strong> (venas y arterias)."
+      },
+      {
+       "t": "Neurológico",
+       "facil": "De los <strong>nervios</strong>."
+      },
+      {
+       "t": "Músculo-esquelético",
+       "facil": "De <strong>músculos, huesos y articulaciones</strong>."
+      },
+      {
+       "t": "Síndrome de Raynaud",
+       "facil": "Los dedos se quedan <strong>blancos</strong> porque les llega poca sangre."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Mano-brazo</strong></th>\n<th><strong>Cuerpo entero</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Origen</td>\n<td><strong>Herramientas mecánicas portátiles</strong>: martillo neumático, radiales, taladros, herramientas vibrátiles</td>\n<td><strong>Conducción de vehículos de transporte</strong> (camión, villavesa) y <strong>maquinaria industrial</strong> (tractores, cosechadoras)</td>\n</tr>\n<tr>\n<td>Efectos</td>\n<td>Afecciones <strong>vasculares</strong> (la más famosa, el <strong>síndrome de Raynaud</strong>: <strong>dedos blancos</strong> por pérdida de circulación), <strong>neurológicas</strong> y <strong>musculares</strong></td>\n<td>Afecciones de la <strong>columna vertebral</strong>, del sistema <strong>músculo-esquelético</strong> (<strong>hernias</strong>), del sistema <strong>circulatorio</strong>, <strong>malestar general</strong> y <strong>dolor de cabeza</strong></td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td>Romper una acera con martillo neumático</td>\n<td>Camionero con asiento de muelle que absorbe la vibración</td>\n</tr>\n</tbody>\n</table></div>\n<p>Como el cuerpo entero recibe toda la vibración, <strong>sus límites son mucho más bajos</strong>. Las <strong>herramientas manuales</strong> generan vibraciones del <strong>sistema mano-brazo</strong> (test 6).</p>",
+     "entiende": "la vibración en las manos <strong>aprieta los vasos sanguíneos</strong> y los dedos se quedan <strong>blancos</strong> (Raynaud). La del cuerpo entero machaca la <strong>espalda</strong> (columna, hernias).",
+     "truco": "<strong>Mano-brazo = \"Vasos, Nervios, Músculos\" (VNM)</strong> · <strong>Cuerpo entero = \"la espalda del camionero\"</strong>.",
+     "q": "¿Qué origen y efectos tiene cada modo de vibración? ¿Qué es el síndrome de Raynaud? ¿Por qué el cuerpo entero tiene límites más bajos?",
+     "n": 7
+    },
+    {
+     "titulo": "Valores de vibraciones",
+     "lv": 1,
+     "fuente": "Diapositiva 5 (valores dados por la profe en clase)",
+     "tituloHtml": "Valores de vibraciones <span class=\"note\">de memoria · casos prácticos</span>",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Modo</th>\n<th>Valor que da lugar a una <strong>acción</strong></th>\n<th><strong>Valor límite</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Mano-brazo</strong></td>\n<td><strong>2,5 m/s²</strong></td>\n<td><strong>5 m/s²</strong></td>\n</tr>\n<tr>\n<td><strong>Cuerpo entero</strong></td>\n<td><strong>0,5 m/s²</strong></td>\n<td><strong>1,15 m/s²</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Valor de acción:</strong> lo que el cuerpo soporta mientras dura la tarea (levantar una acera, construir una pared).</li>\n<li><strong>Valor límite:</strong> <strong>no se puede pasar ni 2 segundos</strong>; si se supera, hay que <strong>parar</strong> o que lo haga otra persona, <strong>aunque se lleve EPI</strong>.</li>\n<li>Unidad siempre <strong>m/s²</strong>.</li>\n</ul>",
+     "q": "Di los valores de acción y límite de mano-brazo y de cuerpo entero con su unidad. ¿Qué pasa si se supera el límite?",
+     "extra": [
+      {
+       "tras": "prof",
+       "html": "<div class=\"box tip\"><p class=\"lbl\">🧠 Truco para recordarlo</p><p><strong>Truco de números:</strong></p>\n<ul>\n<li><strong>Mano-brazo: 2,5 → 5</strong> (el límite es <strong>el doble</strong> de la acción).</li>\n<li><strong>Cuerpo entero: 0,5 → 1,15</strong> (es como mano-brazo <strong>dividido entre 5</strong>: 2,5 ÷ 5 = 0,5; y el límite, <strong>\"uno-quince\"</strong>).</li>\n<li>Recuerda: <strong>cuerpo entero = números pequeños</strong> (porque aguanta menos).</li>\n</ul></div>"
+      }
+     ],
+     "n": 8
+    },
+    {
+     "titulo": "Medidas frente a las vibraciones",
+     "lv": 2,
+     "fuente": "Diapositiva 5 + explicación de la profe",
+     "prof": "<ul>\n<li>Para prevenir la exposición y evitar o minimizar sus daños, se adoptan <strong>medidas de prevención y de protección</strong>.</li>\n<li>Primero, <strong>eliminar la vibración en su origen</strong>; si no se puede, <strong>reducirla al mínimo</strong> o <strong>reorganizar y rotar</strong>. <strong>Nunca hay riesgo 0</strong>: hay que adelantarse.</li>\n<li><strong>4 tipos de medidas:</strong>\n  1. <strong>Técnicas sobre el foco:</strong> controlar la vibración donde se genera; <strong>robots o brazos neumáticos</strong>; <strong>buen mantenimiento</strong> de herramientas y EPI.\n  2. <strong>Técnicas sobre el medio:</strong> <strong>aislantes</strong> y <strong>amortiguación</strong> (asientos, manguitos).\n  3. <strong>Organizativas:</strong> <strong>reducir el tiempo de exposición</strong>, cambiar tareas y <strong>aumentar los descansos</strong>.\n  4. <strong>Sobre las personas trabajadoras:</strong> la mejor <strong>formación</strong>, las mejores técnicas y los mejores <strong>EPI</strong>.</li>\n</ul>",
+     "truco": "<strong>\"F-M-O-P\"</strong> → <strong>F</strong>oco, <strong>M</strong>edio, <strong>O</strong>rganizativas, <strong>P</strong>ersonas (\"<strong>F</strong>ui a <strong>M</strong>adrid <strong>O</strong>tra <strong>P</strong>rimavera\"). Es la regla general origen → medio → receptor con las organizativas en medio.",
+     "q": "¿Cuáles son los 4 tipos de medidas frente a las vibraciones? Pon un ejemplo de cada una.",
+     "n": 9
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "El ambiente térmico (diap. 6)",
+   "conceptos": [
+    {
+     "titulo": "Definición y límites de temperatura",
+     "lv": 2,
+     "fuente": "Diapositiva 6 (tabla de temperaturas) + test 7 y 8",
+     "defs": [
+      {
+       "t": "Variables termohigrométricas",
+       "facil": "Las condiciones del aire: <strong>temperatura, humedad y velocidad del aire</strong> (<em>termo</em> = calor, <em>higro</em> = humedad)."
+      },
+      {
+       "t": "Indumentaria",
+       "facil": "La <strong>ropa</strong> de trabajo."
+      },
+      {
+       "t": "Sedentario",
+       "facil": "Trabajo <strong>sentado</strong>, sin moverse."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Ambiente térmico</strong> = conjunto de <strong>variables termohigrométricas</strong> (temperatura, humedad relativa, velocidad del aire…) que, junto al <strong>esfuerzo físico</strong> de la tarea, las <strong>características individuales</strong> y la <strong>indumentaria</strong>, pueden afectar a la seguridad y la salud.</li>\n<li>El ambiente térmico <strong>no depende del ruido</strong> (test 7).</li>\n<li>Las condiciones no deben suponer un riesgo ni una fuente de <strong>incomodidad o molestia</strong>.</li>\n</ul>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo de trabajo</th>\n<th>Temperatura</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Sedentario</strong> (sentado: oficina, clase)</td>\n<td><strong>17-27 °C</strong></td>\n</tr>\n<tr>\n<td><strong>Ligero</strong> (con algo de movimiento; \"no sedentario\" en el test)</td>\n<td><strong>14-25 °C</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li>Dentro del rango <strong>no hay queja</strong> (26 °C sentado es legal); fuera de <strong>17-27 °C</strong> en trabajo sedentario <strong>sí se puede reclamar</strong>. De la tabla solo importa la <strong>temperatura</strong>.</li>\n</ul>",
+     "entiende": "si te mueves, generas calor; por eso el trabajo <strong>ligero</strong> tiene temperaturas <strong>más bajas</strong> que el sentado.",
+     "truco": "<strong>\"Sentado, 17-27\"</strong> (las dos acaban en <strong>7</strong>: \"<strong>7</strong> de sentado\") · <strong>\"Ligero, 14-25\"</strong> (más fresco porque te mueves).",
+     "q": "¿Qué es el ambiente térmico? ¿Qué temperaturas corresponden a un trabajo sedentario y a uno ligero?",
+     "n": 10
+    },
+    {
+     "titulo": "Estrés térmico, confort y sobrecarga",
+     "lv": 2,
+     "fuente": "Diapositiva 6 (\"¿Sabías que…?\")",
+     "defs": [
+      {
+       "t": "Estrés térmico",
+       "facil": "Cuando el cuerpo <strong>no consigue mantener su temperatura</strong> por mucho calor o mucho frío."
+      },
+      {
+       "t": "Confort térmico",
+       "facil": "Cuando estás <strong>a gusto</strong>, ni frío ni calor."
+      },
+      {
+       "t": "Sobrecarga térmica",
+       "facil": "La <strong>reacción del cuerpo</strong> al estrés térmico (sudar, acelerarse el corazón…)."
+      }
+     ],
+     "prof": "<ul>\n<li>En situaciones extremas, cuando el organismo <strong>no puede regularse</strong>, se produce <strong>estrés térmico por calor o por frío</strong>.</li>\n<li>Si hay <strong>equilibrio</strong> entre el calor producido por el organismo y el que se cede al ambiente → <strong>confort térmico</strong>; si no → <strong>estrés térmico</strong>.</li>\n<li><strong>Sobrecarga térmica</strong> = <strong>respuesta fisiológica</strong> del cuerpo al estrés térmico.</li>\n</ul>",
+     "entiende": "<strong>estrés</strong> = lo que te pasa desde <strong>fuera</strong> (hace mucho calor); <strong>sobrecarga</strong> = cómo <strong>reacciona tu cuerpo</strong> (sudas, se te acelera el corazón).",
+     "truco": "<strong>\"El estrés viene de fuera, la sobrecarga es tu respuesta\"</strong>.",
+     "q": "Diferencia confort térmico, estrés térmico y sobrecarga térmica.",
+     "n": 11
+    },
+    {
+     "titulo": "Lipotimia e hipotermia",
+     "lv": 1,
+     "fuente": "Explicación de la profe en clase (NO está en la diapositiva 6) + ejercicio 6",
+     "tituloHtml": "Lipotimia e hipotermia <span class=\"note\">no está en la diapositiva · caerá en el test</span>",
+     "defs": [
+      {
+       "t": "Lipotimia",
+       "facil": "<strong>desmayo</strong> por subida brusca de la temperatura del cuerpo."
+      },
+      {
+       "t": "Hipotermia",
+       "facil": "El cuerpo <strong>pierde demasiado calor</strong> (<em>hipo</em> = poco, <em>termia</em> = calor)."
+      },
+      {
+       "t": "Deshidratación",
+       "facil": "Pérdida de agua del cuerpo."
+      },
+      {
+       "t": "Golpe de calor",
+       "facil": "Subida peligrosa de la temperatura corporal."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Lipotimia</strong></th>\n<th><strong>Hipotermia</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Tipo</td>\n<td>Estrés térmico <strong>por calor</strong></td>\n<td>Estrés térmico <strong>por frío</strong></td>\n</tr>\n<tr>\n<td>Qué es</td>\n<td><strong>Aumento brusco y sostenido</strong> de la temperatura del cuerpo</td>\n<td><strong>Pérdida de calor excesiva</strong></td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td>Inyección de plástico; desmayarse en un concierto deshidratado</td>\n<td><strong>Cámaras frigoríficas</strong> de la alimentación en Navarra</td>\n</tr>\n<tr>\n<td>Prevención</td>\n<td>1) <strong>Evitar cambios de temperatura</strong> 2) <strong>Ropa de trabajo adecuada</strong> 3) <strong>Limitar el tiempo de trabajo</strong> 4) <strong>Piel limpia e hidratada</strong> (poros abiertos → se suda → el cuerpo se refrigera)</td>\n<td>1) <strong>Ropa de trabajo adecuada</strong> 2) <strong>Limitar el tiempo de trabajo</strong> (rotación, <strong>turnos de menos de 8 h</strong>)</td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Ejercicio 6: panadería a 38 °C</strong> → supera los límites → <strong>estrés térmico por calor</strong>: <strong>sobrecarga térmica, deshidratación, lipotimia</strong>, <strong>agotamiento o golpe de calor</strong> y más <strong>accidentes</strong> por falta de atención.</li>\n</ul>",
+     "entiende": "la <strong>piel limpia e hidratada</strong> importa porque el cuerpo se enfría <strong>sudando</strong>; si los poros están tapados, no suda y se recalienta.",
+     "truco": "<strong>\"HIPO-termia = HIelo, POca temperatura\"</strong> → frío. La otra (lipotimia) es la del <strong>calor</strong>. Las dos comparten <strong>ropa adecuada + limitar tiempo</strong>; la lipotimia añade <strong>2 extra</strong>: <strong>cambios de temperatura</strong> y <strong>piel</strong>.",
+     "q": "¿Qué es la lipotimia y la hipotermia, y cómo se previene cada una? ¿Qué le pasa a un trabajador de una panadería a 38 °C?",
+     "n": 12
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "Las radiaciones electromagnéticas (diap. 7)",
+   "conceptos": [
+    {
+     "titulo": "Origen y clasificación",
+     "lv": 2,
+     "fuente": "Diapositiva 7 + explicación de la profe",
+     "defs": [
+      {
+       "t": "Radiación",
+       "facil": "Energía que viaja en forma de <strong>ondas o partículas</strong>."
+      },
+      {
+       "t": "Efectos biológicos",
+       "facil": "Los daños que causa en el cuerpo."
+      }
+     ],
+     "prof": "<ul>\n<li>Algunas radiaciones tienen <strong>origen natural</strong> (como la <strong>radiación solar</strong>) y otras son <strong>artificiales</strong>. Son un riesgo muy extendido en la vida laboral y personal.</li>\n<li>Se clasifican <strong>según los efectos biológicos</strong> que provocan en <strong>no ionizantes</strong> e <strong>ionizantes</strong>.</li>\n<li><strong>Radiación</strong> = <strong>ondas y partículas electromagnéticas</strong> emitidas por determinadas materias o equipos.</li>\n<li>Las <strong>no ionizantes</strong> son las más importantes para vosotros (las usaréis en el <strong>laboratorio de prácticas</strong>). Los <strong>efectos para la salud sí entran</strong>.</li>\n</ul>",
+     "q": "¿Qué es una radiación y cómo se clasifican?",
+     "n": 13
+    },
+    {
+     "titulo": "Radiaciones no ionizantes",
+     "lv": 1,
+     "fuente": "Diapositiva 7, parte de arriba del cuadro (no ionizantes) + explicación de la profe",
+     "defs": [
+      {
+       "t": "CEM",
+       "facil": "Campos ElectroMagnéticos (microondas, radiofrecuencias)."
+      },
+      {
+       "t": "RO",
+       "facil": "Radiaciones Ópticas (luz visible, ultravioleta, infrarrojos y láser)."
+      },
+      {
+       "t": "Radiofrecuencias",
+       "facil": "Las ondas de la radio, la televisión o el móvil."
+      },
+      {
+       "t": "Conjuntivitis",
+       "facil": "Inflamación de la capa que cubre el ojo."
+      },
+      {
+       "t": "Cataratas",
+       "facil": "El cristalino del ojo se vuelve opaco y se ve borroso."
+      }
+     ],
+     "prof": "<ul>\n<li>Producen cambios a <strong>nivel molecular</strong>. Dos tipos:</li>\n<li><strong>CEM (campos electromagnéticos):</strong> las más conocidas son las <strong>microondas</strong> (concentran la energía en un punto para calentar). También las <strong>radiofrecuencias</strong> (test 10).</li>\n<li><strong>RO (radiaciones ópticas):</strong> luz <strong>visible</strong>, <strong>ultravioleta</strong>, <strong>infrarrojos</strong> y <strong>láser</strong>.</li>\n<li><strong>Efectos para la salud</strong> ★:</li>\n<li><strong>CEM, a corto plazo:</strong> <strong>calentamiento de los tejidos</strong> (como un quemazo), <strong>fallo del sistema nervioso</strong>, <strong>quemaduras con ampollas</strong>, <strong>náuseas</strong>, <strong>dolor de cabeza</strong>, <strong>fatiga y cansancio</strong>. También efectos a <strong>largo plazo</strong>.</li>\n<li><strong>RO:</strong> daños en la <strong>piel</strong> (quemaduras, lesiones) y en los <strong>ojos</strong>: desde <strong>conjuntivitis</strong> hasta <strong>cataratas</strong> o <strong>quemaduras de retina</strong> (mirar el <strong>eclipse sin gafas</strong>).</li>\n<li><strong>Medidas preventivas</strong> ★ (importantísimo):</li>\n<li><strong>Sobre el medio (importantísimo):</strong> <strong>barreras físicas</strong>, <strong>separar las zonas de trabajo</strong> y <strong>señalizar</strong> con <strong>señales amarillas de peligro</strong> (ionizantes, óptica/láser y no ionizantes, parecida al <strong>símbolo del wifi</strong>).</li>\n<li><strong>Organizativas:</strong> <strong>rotar a los trabajadores</strong>, para que no sea siempre la misma persona la expuesta; los efectos a largo plazo pueden ser <strong>mortales</strong>.</li>\n<li><strong>Sobre las personas:</strong> <strong>formación, información, EPI y vigilancia de la salud</strong> (revisiones médicas).</li>\n</ul>",
+     "entiende": "los <strong>CEM</strong> funcionan como un <strong>microondas</strong>: calientan por dentro (por eso queman y dan náuseas). Las <strong>RO</strong> son <strong>luz</strong>: dañan lo que la luz toca, la <strong>piel y los ojos</strong>.",
+     "truco": "<strong>CEM = \"Cocina\" (microondas y radio)</strong> · <strong>RO = \"Rayos de luz que dañan piel y Ojos\"</strong> (visible, UV, IR, láser = <strong>\"VUIL\"</strong>).",
+     "q": "¿Qué dos tipos de radiaciones no ionizantes hay y qué efectos tienen? ¿Qué medidas preventivas se aplican?",
+     "n": 14
+    },
+    {
+     "titulo": "Radiaciones ionizantes",
+     "lv": 1,
+     "fuente": "Diapositiva 7, parte de abajo del cuadro (ionizantes) + explicación de la profe",
+     "tituloHtml": "Radiaciones ionizantes <span class=\"note\">test con preguntas más específicas</span>",
+     "defs": [
+      {
+       "t": "Ionizante",
+       "facil": "Que tiene tanta energía que <strong>arranca partes de los átomos</strong> (los \"ioniza\")."
+      },
+      {
+       "t": "Rayos X y gamma",
+       "facil": "Ondas de mucha energía (radiografías, radioterapia)."
+      },
+      {
+       "t": "Alfa y beta",
+       "facil": "<strong>partículas</strong> que salen de materiales radiactivos."
+      },
+      {
+       "t": "Plomo",
+       "facil": "Metal pesado que <strong>frena</strong> las radiaciones."
+      }
+     ],
+     "prof": "<ul>\n<li>Tienen <strong>muchísima energía</strong> y provocan <strong>cambios atómicos</strong>. Son <strong>las más peligrosas</strong> (test 9).</li>\n<li><strong>De ondas:</strong> rayos <strong>X</strong> y rayos <strong>gamma</strong>. <strong>De partículas:</strong> rayos <strong>alfa</strong> y rayos <strong>beta</strong>.</li>\n<li><strong>Efectos para la salud</strong> (a nosotros y a la <strong>descendencia</strong>):\n  1. <strong>Agudos:</strong> <strong>vómitos</strong>, <strong>caída del pelo</strong>, afectación de las <strong>uñas</strong>, <strong>síntomas intestinales</strong>.\n  2. <strong>Tardíos:</strong> aparecen <strong>años después</strong>: <strong>cataratas</strong>, enfermedades de la <strong>sangre</strong>, distintos tipos de <strong>cáncer</strong>.\n  3. <strong>Genéticos:</strong> afectan al <strong>sistema reproductivo</strong>.</li>\n<li><strong>Medidas preventivas</strong> (importantísimo):</li>\n<li><strong>Clasificar y señalizar las zonas por colores</strong>, como un semáforo: <strong>gris la más leve</strong> y <strong>roja la más grave</strong>.</li>\n<li><strong>Recubrimientos de plomo</strong>, equipos, <strong>EPI</strong>, <strong>formación e información</strong>, <strong>vigilancia de la salud</strong> y <strong>clasificación de las personas trabajadoras</strong>.</li>\n</ul>",
+     "entiende": "son las de la <strong>radioterapia</strong> y las <strong>bombas atómicas</strong>: tanta energía que rompen los átomos y el ADN. Por eso dan <strong>cáncer</strong> y llegan a los <strong>hijos</strong> (genéticos). El <strong>plomo</strong> las frena (como el delantal de la radiografía).",
+     "truco": "<strong>Truco de tipos:</strong> <strong>\"X-Gamma son Ondas, Alfa-Beta son Bolitas (partículas)\"</strong> → las dos primeras letras del alfabeto griego son partículas.",
+     "q": "¿Qué tipos de radiaciones ionizantes hay? ¿Cuáles son sus efectos agudos, tardíos y genéticos? ¿Cómo se señalizan las zonas?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box tip\"><p class=\"lbl\">🧠 Truco para recordarlo</p><p><strong>Truco de efectos:</strong> <strong>\"A-T-G\" = \"Ahora, Tarde y en tus Genes\"</strong> → <strong>A</strong>gudos (ahora: vómitos, pelo, uñas, intestino), <strong>T</strong>ardíos (años después: cataratas, sangre, cáncer), <strong>G</strong>enéticos (reproductivo).</p></div>"
+      }
+     ],
+     "n": 15
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Los riesgos químicos (diap. 8-13)",
+   "conceptos": [
+    {
+     "titulo": "Riesgo químico y formas de exposición",
+     "lv": 2,
+     "fuente": "Diapositiva 8 + explicación de la profe en clase",
+     "defs": [
+      {
+       "t": "Agente químico",
+       "facil": "Cualquier sustancia química, sola o mezclada, a la que se puede estar expuesto en el trabajo."
+      },
+      {
+       "t": "Agente químico peligroso",
+       "facil": "El que puede <strong>dañar la seguridad o la salud</strong> de los trabajadores."
+      },
+      {
+       "t": "Exposición a un agente químico",
+       "facil": "<strong>contacto</strong> con el agente, normalmente al respirarlo o por la piel. (Definiciones del glosario del repaso de químicos; la diapositiva 9 las pone como vocabulario.)"
+      },
+      {
+       "t": "Comburente",
+       "facil": "Acelerador del fuego."
+      }
+     ],
+     "prof": "<blockquote>\n<p><strong>Actualizado con lo que explicó la profe en clase (audio transcrito):</strong> las medidas de control son <strong>5</strong> (no 6), la <strong>diapositiva 12 (evaluación) no entra</strong> (\"no os lo pregunto\") y el <strong>Reglamento CLP no entra</strong> (\"no os lo voy a pedir\"). Aquí manda lo que dijo ella.</p>\n</blockquote>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Diap.</th>\n<th>Contenido</th>\n<th>¿Entra?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>8</td>\n<td>Definición y 4 vías de penetración</td>\n<td><strong>Entera</strong> (salvo el nº del Real Decreto)</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Los 3 grandes grupos de peligros</td>\n<td><strong>Parcial</strong>: los 3 grupos y lo <strong>verde</strong> de la tabla. CLP y lo blanco, no</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Etiqueta y pictogramas</td>\n<td><strong>Entera</strong>: \"esta sí que me interesa\"</td>\n</tr>\n<tr>\n<td>11</td>\n<td>Las fases de la prevención</td>\n<td><strong>Casi entera</strong> (la normativa no)</td>\n</tr>\n<tr>\n<td>12</td>\n<td>Evaluación del riesgo químico</td>\n<td><strong>NO ENTRA</strong></td>\n</tr>\n<tr>\n<td>13</td>\n<td>Las 5 medidas de control</td>\n<td><strong>Entera</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Riesgo químico</strong> = posibilidad de que una persona sufra un daño derivado de la <strong>exposición a agentes químicos</strong>.</li>\n<li>La exposición se produce al <strong>manipular</strong> productos químicos de manera deliberada en estado <strong>líquido, sólido o gaseoso</strong>, o cuando estos <strong>se emiten</strong> durante una actividad (en forma de <strong>polvo, humo, gas, vapores</strong>…).</li>\n<li><strong>Ejemplos de agentes químicos</strong> (clase): <strong>lejía, amoníaco, productos de esterilización, carburantes y comburentes</strong> (aceleradores del fuego).</li>\n</ul>",
+     "entiende": "o <strong>lo usas tú</strong> (manipular: limpiar con lejía) o <strong>te llega sin querer</strong> (se emite: el humo del asfalto).",
+     "q": "¿Qué es el riesgo químico, cómo se produce la exposición y qué ejemplos de agentes químicos dio la profe?",
+     "n": 16
+    },
+    {
+     "titulo": "Vías de penetración de los químicos",
+     "lv": 1,
+     "fuente": "Diapositiva 8 (tabla de vías) + explicación de la profe + test 14",
+     "defs": [
+      {
+       "t": "Mucosas",
+       "facil": "Capas húmedas que recubren por dentro la <strong>boca, la nariz, los ojos</strong> y los genitales."
+      },
+      {
+       "t": "Vía de penetración",
+       "facil": "El <strong>camino</strong> por el que el químico entra en el cuerpo."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Vía</th>\n<th>Cómo entra el químico</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Respiratoria</strong></td>\n<td>Al respirar gases, vapores, polvo o humos. <strong>Es la más frecuente</strong>; se evita, por ejemplo, con <strong>mascarilla</strong></td>\n</tr>\n<tr>\n<td><strong>Dérmica</strong></td>\n<td>A través de la <strong>piel y las mucosas</strong></td>\n</tr>\n<tr>\n<td><strong>Digestiva</strong></td>\n<td>Por la <strong>boca</strong> → esófago → estómago (con un alimento, agua; comer, beber o fumar con las manos contaminadas)</td>\n</tr>\n<tr>\n<td><strong>Parenteral</strong></td>\n<td>A través de <strong>heridas o discontinuidades de la piel</strong> que <strong>ya tenías</strong>: herida abierta, rasguño, postilla, fractura abierta (test 14)</td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>⚠️ OJO, la profe insistió (se confunde en el examen): la vía parenteral NO es igual en químicos que en biológicos.</strong></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Parenteral en QUÍMICOS</strong></th>\n<th><strong>Parenteral en BIOLÓGICOS</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Qué entra</td>\n<td>Un <strong>agente químico</strong></td>\n<td>Un <strong>agente vivo</strong> (microbio)</td>\n</tr>\n<tr>\n<td>Cómo</td>\n<td>Por una <strong>herida que ya tenías</strong>; no hace falta pincharse</td>\n<td>Por <strong>inoculación</strong>: un <strong>pinchazo o un mordisco</strong></td>\n</tr>\n<tr>\n<td>Ejemplo de clase</td>\n<td>Te raspas el brazo con una mesa limpiada hace 2 horas con un <strong>disolvente</strong>, y entra por la herida</td>\n<td>Te pinchas con una <strong>aguja</strong> mal desechada o te muerde una <strong>rata</strong> del laboratorio</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>\"Res-Der-Dig-Par\"</strong> → \"<strong>R</strong>espiro, me <strong>D</strong>ucho, <strong>D</strong>igiero y me <strong>P</strong>incho\". Y para la parenteral: <strong>químico → \"herida\" (ya estaba abierta)</strong> · <strong>biológico → \"inoculación\" (te la hacen: pinchazo o mordisco)</strong>.",
+     "q": "¿Cuáles son las 4 vías de entrada de los químicos y cuál es la más frecuente? ¿En qué se diferencia la vía parenteral en químicos y en biológicos?",
+     "n": 17
+    },
+    {
+     "titulo": "Los efectos: los 3 grandes grupos de peligros",
+     "lv": 1,
+     "fuente": "Diapositiva 9 + explicación de la profe (\"quiero que sepáis esos 3 grupos\") + test 12",
+     "defs": [
+      {
+       "t": "Toxicidad aguda",
+       "facil": "Daño grave tras una exposición <strong>corta</strong>."
+      },
+      {
+       "t": "Irritante",
+       "facil": "Enrojece o inflama la piel o los ojos."
+      },
+      {
+       "t": "Sensibilizante respiratorio",
+       "facil": "Al inhalarlo daña las vías respiratorias."
+      },
+      {
+       "t": "Carcinógeno",
+       "facil": "Provoca <strong>cáncer</strong>."
+      },
+      {
+       "t": "Mutágeno",
+       "facil": "Provoca <strong>mutaciones</strong> (cambios en los genes)."
+      },
+      {
+       "t": "Sistema endocrino",
+       "facil": "Las glándulas que fabrican <strong>hormonas</strong> (como el tiroides); un químico que lo altera se llama <strong>disruptor endocrino</strong>."
+      },
+      {
+       "t": "Aspiración",
+       "facil": "Que la sustancia llegue al <strong>pulmón</strong>."
+      }
+     ],
+     "prof": "<p>los agentes químicos son un riesgo para la <strong>salud</strong> de las personas, los <strong>lugares de trabajo</strong> y el <strong>medio ambiente</strong>. Se clasifican en <strong>3 grandes grupos</strong>: <strong>1) peligros físicos, 2) peligros para la salud, 3) peligros para el medio ambiente</strong>. De la tabla, <strong>solo lo verde</strong> (\"lo blanco, ni de palo\"):</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Peligros que explicó en clase</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Físicos</strong></td>\n<td><strong>Incendio</strong> · <strong>explosión</strong> · <strong>corrosión para los metales</strong> (ej.: el <strong>óxido</strong> de los edificios, sobre todo cerca de la playa)</td>\n</tr>\n<tr>\n<td><strong>2. Para la salud</strong></td>\n<td><strong>Toxicidad aguda</strong> · <strong>corrosivos</strong> para piel y ojos (hacen una llaga o un agujero) · <strong>irritantes</strong> para piel y ojos · <strong>sensibilizantes respiratorios</strong> (dañan las vías respiratorias al inhalarlos; ej.: mucho rato con un disolvente) · <strong>carcinógenos</strong> (cáncer) · <strong>mutágenos</strong> (mutación en los genes, puede pasar a la <strong>descendencia</strong>) · <strong>tóxicos para la reproducción</strong> (hombres y mujeres; ej.: tabaco, algunos aerosoles) · <strong>tóxicos específicos en determinados órganos</strong> (ej.: un niño que bebe detergente del lavavajillas se quema el estómago) · <strong>peligro por aspiración</strong> (llega al pulmón) · <strong>alteración del sistema endocrino</strong> (ej.: el tiroides; altera el crecimiento y el desarrollo)</td>\n</tr>\n<tr>\n<td><strong>3. Para el medio ambiente</strong></td>\n<td>Prácticamente <strong>todos los químicos son contaminantes</strong>, se echen al agua, al monte, como gas o como líquido</td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li>Los <strong>corrosivos</strong> tienen <strong>peligro físico (metales) y para la salud (piel y ojos)</strong> (test 12).</li>\n<li><strong>Comprueba en tu diapositiva cuáles están en verde</strong>: son los que entran.</li>\n</ul>",
+     "entiende": "<strong>físico</strong> = lo que le pasa a las <strong>cosas</strong> (arde, explota, se oxida); <strong>salud</strong> = lo que le pasa a tu <strong>cuerpo</strong>; <strong>medio ambiente</strong> = lo que le pasa a la <strong>naturaleza</strong>.",
+     "truco": "<strong>\"F-S-M\"</strong> → <strong>F</strong>ísicos, <strong>S</strong>alud, <strong>M</strong>edio ambiente. Físicos: <strong>\"Fuego, Bum y Óxido\"</strong>. <strong>Carcinógeno = cáncer</strong>, <strong>mutágeno = mutación</strong> (genes y descendencia).",
+     "q": "¿Cuáles son los 3 grandes grupos de peligros químicos? Di 3 peligros físicos y 5 para la salud. ¿Por qué los corrosivos están en dos grupos?",
+     "n": 18
+    },
+    {
+     "titulo": "La etiqueta y la ficha de seguridad",
+     "lv": 1,
+     "fuente": "Diapositiva 10 + explicación de la profe + test 13",
+     "tituloHtml": "La etiqueta y la ficha de seguridad <span class=\"note\">&quot;esta sí que me interesa&quot;</span>",
+     "defs": [
+      {
+       "t": "Etiqueta",
+       "facil": "La información <strong>obligatoria pegada al envase</strong>."
+      },
+      {
+       "t": "Ficha de seguridad",
+       "facil": "Documento <strong>más completo</strong> que la etiqueta, con los riesgos y las medidas preventivas."
+      },
+      {
+       "t": "Palabras de advertencia",
+       "facil": "\"Peligro\" o \"Atención\"."
+      },
+      {
+       "t": "Cantidad nominal",
+       "facil": "Cuánto producto hay en el envase."
+      },
+      {
+       "t": "GHS",
+       "facil": "Sistema Mundialmente Armonizado: las mismas normas y dibujos en todo el mundo."
+      },
+      {
+       "t": "Fitosanitarios",
+       "facil": "Productos para proteger cultivos (pesticidas, plaguicidas)."
+      }
+     ],
+     "prof": "<ul>\n<li>La normativa obliga a que los productos con sustancias peligrosas tengan una <strong>etiqueta</strong> y una <strong>ficha de seguridad</strong> que informen de los <strong>riesgos</strong> y de las <strong>medidas preventivas</strong>, para trabajar de forma segura.</li>\n<li>La etiqueta se usa para <strong>indicar los peligros químicos y su naturaleza</strong> (test 13; la profe dijo que la b) \"se podría dar\", pero la c) es <strong>la más completa</strong>).</li>\n<li><strong>La etiqueta debe contener (7):</strong> 1) <strong>identificación del producto</strong> · 2) <strong>cantidad nominal</strong> de la sustancia o mezcla · 3) <strong>información del proveedor</strong> · 4) <strong>pictogramas de peligro</strong> · 5) <strong>palabras de advertencia</strong> · 6) <strong>indicaciones de peligro (H)</strong> · 7) <strong>consejos de prudencia (P)</strong>. Las frases <strong>H y P: \"muy importante\"</strong>.</li>\n<li><strong>Todos</strong> los productos químicos (sustancias y mezclas) deben llevar etiqueta de peligro.</li>\n<li><strong>La profe:</strong> todos los químicos tienen que estar <strong>bien ordenados, bien guardados y bien etiquetados</strong>. La etiqueta dice el <strong>nombre del compuesto</strong>, <strong>quién lo produce, lo vende y lo distribuye</strong> y <strong>en qué país se ha hecho</strong>: <strong>cuanta más información, más fácil controlar un accidente</strong>. Es <strong>internacional</strong>: los pictogramas identifican el riesgo <strong>aunque no conozcas el idioma</strong> (Sistema Mundialmente Armonizado, <strong>GHS</strong>).</li>\n<li>Ejemplos de productos químicos: <strong>fitosanitarios</strong> (pesticidas, plaguicidas, los que echa el abuelo en el huerto), <strong>lacas, aerosoles, acetonas</strong>…</li>\n</ul>",
+     "entiende": "la etiqueta es el <strong>DNI del producto</strong>: qué es, cuánto hay, quién lo vende, qué peligro tiene y qué hacer.",
+     "truco": "<strong>Truco de la H y la P:</strong> <strong>H = \"Hazard\" (peligro en inglés)</strong> · <strong>P = \"Prudencia\"</strong>. Las 7 en orden: <strong>\"Qué es → Cuánto → Quién → Dibujo → Aviso → H → P\"</strong>.",
+     "q": "¿Qué 7 elementos lleva la etiqueta? ¿Qué significan la H y la P? ¿Por qué los pictogramas son internacionales?",
+     "n": 19
+    },
+    {
+     "titulo": "Pictogramas (GHS)",
+     "lv": 1,
+     "fuente": "Diapositiva 10 (imagen de pictogramas) + ejemplos de la profe en clase + ejercicio 12",
+     "tituloHtml": "Pictogramas (GHS) <span class=\"note\">&quot;os tenéis que saber el nombre, el dibujo y dónde está presente&quot;</span>",
+     "defs": [
+      {
+       "t": "Pictograma",
+       "facil": "<strong>dibujo</strong> de aviso (rombo rojo con símbolo negro)."
+      },
+      {
+       "t": "Biocida",
+       "facil": "Producto que mata seres vivos dañinos (insectos, bacterias)."
+      },
+      {
+       "t": "Metanol",
+       "facil": "Un alcohol muy tóxico."
+      },
+      {
+       "t": "Trementina",
+       "facil": "Disolvente de pinturas al óleo."
+      }
+     ],
+     "prof": "<p><strong>Rombo rojo con símbolo negro.</strong> Con saber <strong>un ejemplo</strong> de cada uno es suficiente.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Pictograma (nombre)</th>\n<th>Dibujo</th>\n<th>Dónde está presente (ejemplos de clase)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Explosivo</strong></td>\n<td><strong>Bomba explotando</strong></td>\n<td>Fuegos artificiales, municiones</td>\n</tr>\n<tr>\n<td><strong>Inflamable</strong></td>\n<td><strong>Llama</strong></td>\n<td>Aceites, <strong>aerosoles</strong> (el antimosquitos de casa)</td>\n</tr>\n<tr>\n<td><strong>Comburente</strong></td>\n<td><strong>Llama sobre un círculo</strong></td>\n<td>Aceleradores del fuego: <strong>cerillas</strong>, <strong>oxígeno de uso médico</strong></td>\n</tr>\n<tr>\n<td><strong>Gas a presión</strong></td>\n<td><strong>Bombona de gas</strong></td>\n<td>Bombonas, <strong>extintores</strong></td>\n</tr>\n<tr>\n<td><strong>Corrosivo</strong></td>\n<td><strong>Corrosión</strong> (gota que cae sobre una mano y sobre una superficie)</td>\n<td><strong>Desatascadores de tuberías</strong>, ácidos. Hace un agujero; afecta a personas y metales</td>\n</tr>\n<tr>\n<td><strong>Toxicidad aguda</strong></td>\n<td><strong>Calavera y tibias</strong></td>\n<td><strong>Plaguicidas</strong>, biocidas, <strong>metanol</strong></td>\n</tr>\n<tr>\n<td><strong>Peligro grave para la salud</strong></td>\n<td><strong>Silueta con estrella en el pecho</strong></td>\n<td><strong>Trementina</strong> (pintar al óleo), <strong>gasolina</strong> (cáncer, mutaciones…)</td>\n</tr>\n<tr>\n<td><strong>Peligro para la salud</strong> (irritante, nocivo, sensibilizante)</td>\n<td><strong>Signo de exclamación</strong></td>\n<td><strong>Limpiadores</strong>, líquidos refrigerantes</td>\n</tr>\n<tr>\n<td><strong>Peligro para el medio ambiente</strong></td>\n<td><strong>Árbol y pez muertos</strong></td>\n<td>Productos que contaminan el agua (plaguicidas)</td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Ejemplo de clase:</strong> un <strong>desatascador de tuberías</strong> lleva <strong>4 o 5 pictogramas</strong> a la vez (muy tóxico y muy corrosivo) y un <strong>tapón de seguridad</strong> para que no lo abra un niño.</li>\n<li><strong>Ejercicio 12 (desinfectante de Antonio):</strong> irrita vías respiratorias → <strong>signo de exclamación</strong> · lesiones oculares graves → <strong>corrosión</strong> · inflamable → <strong>llama</strong> · nocivo para organismos acuáticos → <strong>medio ambiente</strong>.</li>\n<li>El ejercicio 10 es un test online de pictogramas (hazlo en el móvil): pregunta estos mismos.</li>\n</ul>",
+     "truco": "<strong>Truco en 3 grupos:</strong> <strong>\"fuego\"</strong> → explosivo, inflamable, comburente, gas a presión · <strong>\"cuerpo\"</strong> → corrosivo, calavera, estrella en el pecho, exclamación · <strong>\"naturaleza\"</strong> → árbol y pez.",
+     "q": "Di el nombre, el dibujo y un ejemplo de dónde está presente cada uno de los 9 pictogramas.",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box tip\"><p class=\"lbl\">🧠 Truco para recordarlo</p><p><strong>Trampa:</strong> <strong>llama sola = inflamable (arde)</strong>; <strong>llama sobre círculo = comburente (ayuda a que OTRO arda)</strong>. <strong>Calavera = rápido (aguda)</strong>; <strong>estrella en el pecho = lento (cáncer)</strong>.</p></div>"
+      }
+     ],
+     "n": 20
+    },
+    {
+     "titulo": "Prevención del riesgo químico: las 3 fases",
+     "lv": 1,
+     "fuente": "Diapositiva 11 + explicación de la profe. (La diapositiva 12, evaluación del riesgo, NO entra: \"no os lo pregunto\".)",
+     "tituloHtml": "Prevención del riesgo químico: las 3 fases <span class=\"note\">&quot;las fases son importantísimas&quot;</span>",
+     "meta": "<span class=\"tag lv1\">🔴 IMPRESCINDIBLE</span><span class=\"srcl\">📍 Diapositiva 11 + explicación de la profe. (La <strong>diapositiva 12, evaluación del riesgo, NO entra</strong>: \"no os lo pregunto\".)</span>",
+     "defs": [
+      {
+       "t": "Prevención",
+       "facil": "Las acciones para que <strong>no ocurra</strong> el daño."
+      },
+      {
+       "t": "Determinar",
+       "facil": "<strong>comprobar si existe</strong> el agente químico peligroso en el trabajo."
+      },
+      {
+       "t": "Evaluar",
+       "facil": "Medir <strong>lo grave</strong> que es el riesgo."
+      },
+      {
+       "t": "Controlar",
+       "facil": "<strong>poner medidas</strong> para eliminarlo o reducirlo."
+      }
+     ],
+     "prof": "<ul>\n<li>La empresa debe <strong>eliminar o reducir al mínimo</strong> el riesgo de exposición a agentes químicos peligrosos: determinar si existen, <strong>evaluarlos</strong> y, si hay riesgo, <strong>adoptar las medidas necesarias para controlarlos</strong>.</li>\n<li><strong>Las 3 fases:</strong>\n  1. <strong>Determinar</strong> la existencia del agente químico peligroso.\n  2. <strong>Evaluar</strong> el riesgo.\n  3. <strong>Controlar</strong> el riesgo.</li>\n<li>Sirven para que la empresa <strong>decida qué acciones de prevención</strong> va a llevar a cabo: que haya <strong>menos accidentes</strong> y, si ocurren (\"porque siempre ocurren\"), que sean <strong>lo menos graves posible</strong>.</li>\n</ul>",
+     "entiende": "como ir al médico: primero <strong>ves si tienes algo</strong> (determinar), luego <strong>miras lo grave que es</strong> (evaluar) y por último <strong>lo tratas</strong> (controlar).",
+     "truco": "<strong>\"D-E-C\"</strong> → <strong>D</strong>eterminar → <strong>E</strong>valuar → <strong>C</strong>ontrolar (\"<strong>DEC</strong>ide la empresa\").",
+     "q": "¿Cuáles son las 3 fases de la prevención del riesgo químico y para qué sirven?",
+     "n": 21
+    },
+    {
+     "titulo": "Control del riesgo químico: las 5 medidas en orden",
+     "lv": 1,
+     "fuente": "Diapositiva 13 + explicación de la profe + test 11 y 15. (Corrige el resumen anterior: la profe cuenta 5 medidas, con una sola medida técnica.)",
+     "meta": "<span class=\"tag lv1\">🔴 IMPRESCINDIBLE</span><span class=\"srcl\">📍 Diapositiva 13 + explicación de la profe + test 11 y 15. (<strong>Corrige el resumen anterior</strong>: la profe cuenta <strong>5 medidas</strong>, con <strong>una sola medida técnica</strong>.)</span>",
+     "defs": [
+      {
+       "t": "Orden de priorización",
+       "facil": "El orden en que hay que aplicar las medidas, <strong>de la mejor a la peor</strong>."
+      },
+      {
+       "t": "Medidas técnicas",
+       "facil": "Cambios en las instalaciones o en cómo se guardan las cosas."
+      },
+      {
+       "t": "Medidas organizativas",
+       "facil": "Cambios en <strong>cómo se organiza el trabajo</strong> (quién, cuánto tiempo)."
+      },
+      {
+       "t": "Incompatibles",
+       "facil": "Productos que <strong>no pueden estar juntos</strong> porque reaccionan."
+      }
+     ],
+     "prof": "<p>Cuando ya sabemos que existe el riesgo, la empresa adopta medidas para <strong>evitar o disminuir la exposición</strong>, siguiendo un <strong>orden de priorización</strong>:</p>\n<ol>\n<li><strong>Eliminar</strong> el agente químico (<strong>la primera</strong>, test 15). A veces no se puede, pero si el trabajo puede hacerse sin él, mejor.</li>\n<li><strong>Sustituir</strong> el agente <strong>por otro menos peligroso</strong>. Ej.: cambiar un producto de <strong>base alcohólica</strong> por uno de <strong>base acuosa</strong> (para esterilizar).</li>\n<li><strong>Medidas técnicas.</strong> La <strong>única nueva en químicos es el almacenamiento</strong>:\n   - <strong>Bien etiquetados, guardados y almacenados.</strong>\n   - <strong>No en el suelo</strong>: <strong>2 o 3 cm por encima</strong>, sobre una placa o bandeja, para que si se agujerea no contamine todo.\n   - <strong>Separar los incompatibles</strong>: no poner algo <strong>inflamable</strong> junto a un <strong>comburente</strong> (acelerador).\n   - En <strong>armarios adecuados</strong> y con <strong>buena ventilación</strong>.\n   - <strong>No mezclar productos</strong>: la <strong>lejía y el amoníaco</strong> juntos son tóxicos (\"fatal\").</li>\n<li><strong>Medidas organizativas</strong>: <strong>limitar el número de personas expuestas</strong>, <strong>rotar</strong> para que no sea siempre el mismo y <strong>más descansos</strong>.</li>\n<li><strong>EPI</strong> (equipos de protección individual): <strong>siempre lo último</strong>.</li>\n</ol>\n<p><strong>Regla general (test 11):</strong> frente a cualquier agente ambiental, el orden de las medidas es <strong>origen (foco) → medio → receptor</strong>.</p>",
+     "entiende": "va de <strong>lo más eficaz</strong> (que el químico no exista) a <strong>lo menos</strong> (proteger a la persona). Lo mejor es que el peligro <strong>no esté</strong>; si no, cámbialo por algo menos malo; si no, <strong>guárdalo bien</strong>; luego <strong>organiza</strong> a la gente y, al final, <strong>ponles el EPI</strong>.",
+     "truco": "<strong>\"E-S-T-O-E\"</strong> → <strong>E</strong>liminar → <strong>S</strong>ustituir → <strong>T</strong>écnicas → <strong>O</strong>rganizativas → <strong>E</strong>PI (\"<strong>ESTO E</strong>s lo que hay que hacer\").",
+     "q": "Ordena las 5 medidas de control del riesgo químico. ¿Qué medida técnica es nueva en químicos? ¿Qué dos productos no se mezclan nunca?",
+     "n": 22
+    },
+    {
+     "titulo": "Órganos que afectan los químicos (ejercicio 8)",
+     "lv": 2,
+     "fuente": "Ejercicio 8 (no está en las diapositivas)",
+     "defs": [
+      {
+       "t": "Parkinson",
+       "facil": "Enfermedad del sistema nervioso que produce temblores."
+      },
+      {
+       "t": "Hepatitis",
+       "facil": "Inflamación del <strong>hígado</strong>."
+      },
+      {
+       "t": "Leucemia",
+       "facil": "Cáncer de la <strong>sangre</strong>."
+      },
+      {
+       "t": "Anemia",
+       "facil": "Falta de glóbulos rojos."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Sistema nervioso</strong> → temblores, <strong>Parkinson</strong>, tumores cerebrales.</li>\n<li><strong>Aparato respiratorio</strong> → <strong>asma</strong>, neumonía, bronquitis, cáncer.</li>\n<li><strong>Riñones, vesícula e hígado</strong> → <strong>hepatitis</strong>, cáncer, enfermedades renales.</li>\n<li><strong>Piel y mucosas</strong> → irritaciones, <strong>alergias</strong>, úlceras.</li>\n<li><strong>Corazón y aparato circulatorio</strong> → <strong>anginas de pecho</strong>, <strong>infartos</strong>.</li>\n<li><strong>Sangre</strong> → <strong>anemia</strong>, <strong>leucemia</strong>.</li>\n<li>Los efectos pueden ser <strong>agudos</strong> o aparecer <strong>años después</strong> (<strong>cánceres hasta 40 años</strong>).</li>\n</ul>",
+     "truco": "recórrete el cuerpo <strong>de arriba abajo</strong>: <strong>cabeza</strong> (nervioso) → <strong>pecho</strong> (respiratorio, corazón) → <strong>barriga</strong> (hígado, riñones) → <strong>todo el cuerpo</strong> (piel, sangre).",
+     "q": "¿Qué órganos pueden dañar los químicos y con qué enfermedades?",
+     "n": 23
+    }
+   ],
+   "min": 55
+  },
+  {
+   "titulo": "Los riesgos biológicos (diap. 14-16)",
+   "conceptos": [
+    {
+     "titulo": "Definición",
+     "lv": 1,
+     "fuente": "Diapositiva 14 + explicación de la profe + test 2",
+     "tituloHtml": "Definición <span class=\"note\">la definición sí entra</span>",
+     "defs": [
+      {
+       "t": "Agente biológico",
+       "facil": "<strong>ser vivo</strong> (virus, bacteria, hongo, protozoo…) que puede causar enfermedades."
+      },
+      {
+       "t": "Infección",
+       "facil": "Enfermedad causada por un microbio que se puede contagiar."
+      },
+      {
+       "t": "Intoxicación",
+       "facil": "Daño por una sustancia tóxica (en biológicos, la que fabrica el microbio)."
+      },
+      {
+       "t": "Protozoo",
+       "facil": "Ser vivo de una sola célula (ej.: el que causa la malaria)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Riesgo biológico</strong> = posibilidad de sufrir cualquier tipo de <strong>infección, alergia o intoxicación</strong> derivada de la <strong>exposición o contacto con agentes biológicos</strong> (<strong>seres vivos</strong> que pueden causar enfermedades) en una actividad laboral.</li>\n<li>Son riesgos por <strong>seres vivos</strong> (virus, bacterias, protozoos…). Ojo: <strong>no todo pasa en el trabajo</strong>; en casa, con amigos, en el gimnasio o con <strong>mascotas</strong> te puedes contagiar y llevarlo al trabajo.</li>\n<li>El <strong>virus</strong> es el riesgo <strong>no generado por una forma de energía</strong> (test 2).</li>\n</ul>",
+     "truco": "<strong>\"I-A-I\" = Infección, Alergia, Intoxicación</strong> (la definición tiene esas 3).",
+     "q": "Define riesgo biológico.",
+     "n": 24
+    },
+    {
+     "titulo": "Vías de entrada de los biológicos",
+     "lv": 1,
+     "fuente": "Diapositiva 14 (vías, explicadas por la profe)",
+     "defs": [
+      {
+       "t": "Aerosoles",
+       "facil": "<strong>gotitas</strong> muy pequeñas que flotan en el aire (al toser, al centrifugar…)."
+      },
+      {
+       "t": "Inoculación",
+       "facil": "<strong>meter</strong> el agente dentro del cuerpo por un pinchazo, corte o mordedura."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Vía</th>\n<th>Cómo entra</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Respiratoria</strong></td>\n<td>Inhalando <strong>aerosoles</strong> del aire del ambiente laboral</td>\n</tr>\n<tr>\n<td><strong>Digestiva</strong></td>\n<td>Ingiriendo <strong>alimentos, agua</strong>, etc. contaminados</td>\n</tr>\n<tr>\n<td><strong>Dérmica</strong></td>\n<td>Cuando la <strong>piel o las mucosas</strong> entran en contacto con el agente</td>\n</tr>\n<tr>\n<td><strong>Parenteral</strong></td>\n<td>Por <strong>inoculación</strong> en las <strong>capas profundas de la piel</strong>: heridas, <strong>pinchazos, cortes, mordeduras</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>La <strong>parenteral</strong> es la que más se confunde con la de químicos: <strong>parenteral = inoculación</strong>, el agente entra <strong>en profundidad</strong>.\nVocabulario: solo los términos que la profe <strong>marcó en tu hoja</strong> (en la grabación no se entiende cuáles; la lista completa no entra).</p>",
+     "truco": "son <strong>las mismas 4 vías que en químicos</strong> (\"Respiro, me Ducho, Digiero y me Pincho\"). <strong>Dérmica = superficie</strong> (salpicadura) · <strong>Parenteral = profundidad</strong> (pinchazo).",
+     "q": "¿Por qué vías entran los agentes biológicos? ¿Qué es la vía parenteral?",
+     "n": 25
+    },
+    {
+     "titulo": "Efectos para la salud",
+     "lv": 2,
+     "fuente": "Diapositiva 15 + explicación de la profe",
+     "tituloHtml": "Efectos para la salud <span class=\"note\">diap. 15</span>",
+     "defs": [
+      {
+       "t": "Estado inmunológico",
+       "facil": "Cómo están tus <strong>defensas</strong>."
+      },
+      {
+       "t": "Epidemia",
+       "facil": "Muchos casos de una enfermedad en una zona."
+      },
+      {
+       "t": "Pandemia",
+       "facil": "Epidemia que se extiende <strong>por todo el mundo</strong>."
+      }
+     ],
+     "prof": "<ul>\n<li>Dependen de: la <strong>naturaleza del agente biológico</strong> · las <strong>condiciones de la exposición</strong> · las <strong>condiciones del trabajador</strong> (estado <strong>inmunológico</strong> o de salud y <strong>embarazo</strong>).</li>\n<li>Producen <strong>infecciones, alergias, efectos tóxicos y cáncer</strong> (ojo con el cáncer).</li>\n<li><strong>Infección:</strong> se puede <strong>contagiar</strong> a otros (puede llegar a <strong>epidemia o pandemia</strong>). <strong>Alergia:</strong> <strong>solo te afecta a ti</strong>; como mucho, la tendencia la hereda tu descendencia.</li>\n</ul>",
+     "entiende": "el daño depende de <strong>quién ataca</strong> (el agente), <strong>cómo ataca</strong> (la exposición) y <strong>a quién ataca</strong> (el trabajador: no es lo mismo una persona sana que una embarazada).",
+     "truco": "<strong>\"Quién, Cómo y A quién\"</strong>. <strong>Infección = se pega a otros · Alergia = solo tuya</strong>.",
+     "q": "¿De qué dependen los efectos de los agentes biológicos? Diferencia infección y alergia.",
+     "n": 26
+    },
+    {
+     "titulo": "Clasificación en 4 grupos",
+     "lv": 1,
+     "fuente": "Diapositiva 15 (clasificación en 4 grupos) + test 16",
+     "tituloHtml": "Clasificación en 4 grupos <span class=\"note\">&quot;esto es muy importante&quot;</span>",
+     "defs": [
+      {
+       "t": "Profilaxis",
+       "facil": "Medidas para <strong>prevenir</strong> una enfermedad antes de que aparezca (ej.: <strong>vacunas</strong>)."
+      },
+      {
+       "t": "Tratamiento eficaz",
+       "facil": "Medicina o terapia que <strong>cura</strong>."
+      }
+     ],
+     "prof": "<p>El grupo depende de <strong>si existe tratamiento o profilaxis</strong> y de <strong>lo grave que se ponga la persona</strong>. Del <strong>1 (afecta menos)</strong> al <strong>4 (más mortal)</strong>:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Qué significa</th>\n<th>Ejemplo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1</strong></td>\n<td><strong>Poco probable</strong> que cause una enfermedad infecciosa</td>\n<td>Probablemente <strong><em>Bacillus subtilis</em></strong> (compruébalo en tu diapositiva)</td>\n</tr>\n<tr>\n<td><strong>2</strong></td>\n<td><strong>Puede causar</strong> enfermedad y ser un peligro para los trabajadores; <strong>hay tratamiento</strong></td>\n<td><strong>Gripe</strong></td>\n</tr>\n<tr>\n<td><strong>3</strong></td>\n<td>Enfermedad <strong>grave</strong>, <strong>serio peligro</strong> para los trabajadores, contagio <strong>bastante fácil</strong></td>\n<td><strong>Hepatitis</strong></td>\n</tr>\n<tr>\n<td><strong>4</strong></td>\n<td><strong>Mortal</strong>, <strong>muy contagiosa</strong> y <strong>sin tratamiento eficaz</strong></td>\n<td><strong>Ébola</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>Sin tratamiento eficaz = grupo 4</strong> (test 16).</p>",
+     "entiende": "es una <strong>escalera de peligro</strong>: 1 casi nada, 2 te pones malo pero hay cura, 3 grave y se pega fácil, 4 te mata y no hay cura.",
+     "truco": "<strong>\"Bacilo, Gripe, Hepatitis, Ébola\" van en orden B-G-H-E</strong>: piensa en una historia que empeora: <strong>un bacilo inofensivo → una gripe con cura → un hígado enfermo → el ébola mortal</strong>. Y el <strong>4 = sin cura</strong>.",
+     "q": "Explica los 4 grupos de agentes biológicos con un ejemplo de cada uno. ¿De qué depende el grupo?",
+     "n": 27
+    },
+    {
+     "titulo": "Medidas preventivas y actividades",
+     "lv": 1,
+     "fuente": "Diapositiva 16 (las actividades eran una imagen)",
+     "tituloHtml": "Medidas preventivas y actividades <span class=\"note\">diap. 16 · las 3 medidas y sus definiciones</span>",
+     "defs": [
+      {
+       "t": "Cadena de transmisión",
+       "facil": "El camino del microbio: <strong>foco → medio → receptor</strong>."
+      },
+      {
+       "t": "Proliferación",
+       "facil": "Que el agente se <strong>multiplique</strong>."
+      },
+      {
+       "t": "Dispersión",
+       "facil": "Que se <strong>extienda</strong> por el ambiente."
+      },
+      {
+       "t": "Receptor",
+       "facil": "La <strong>persona</strong> que puede infectarse."
+      },
+      {
+       "t": "Aislamiento",
+       "facil": "Separar a la persona para que no contagie."
+      },
+      {
+       "t": "Post mortem",
+       "facil": "Después de la muerte (autopsias)."
+      }
+     ],
+     "prof": "<p>La empresa aplica medidas para <strong>romper la cadena de transmisión</strong>: primero en el <strong>foco u origen</strong>, después en el <strong>medio de difusión</strong> y por último <strong>medidas de protección individual</strong> sobre las personas.</p>\n<ol>\n<li><strong>Sobre el foco: limitar la proliferación</strong> del agente. Ej.: un <strong>mono infectado</strong> en un laboratorio; se actúa sobre él antes de que contamine.</li>\n<li><strong>Sobre el medio: evitar la dispersión</strong> cuando el agente ya ha salido del foco (el virus ya está por el laboratorio).</li>\n<li><strong>Sobre el receptor:</strong> proteger a la persona con <strong>vacunas</strong>, tratamiento, <strong>aislamiento</strong> y control. Ej.: el mono ha <strong>mordido</strong> a una trabajadora.</li>\n</ol>\n<ul>\n<li><strong>Actividades laborales con riesgo biológico</strong> (era una imagen): <strong>industria de alimentos</strong> · <strong>agricultura</strong> · <strong>trabajo con animales</strong> o productos de origen animal · <strong>trabajos sanitarios y post mortem</strong> · <strong>laboratorios clínicos, veterinarios y de diagnóstico</strong> · <strong>eliminación de residuos</strong> · <strong>depuración de aguas residuales</strong>.</li>\n<li>En el ejercicio hay que decir, para <strong>cada actividad laboral</strong>, <strong>qué medida de las 3</strong> corresponde.</li>\n<li>Caso práctico del libro: <strong>riesgo biológico (p. 55)</strong>.</li>\n</ul>",
+     "entiende": "💡 <strong>Entiéndelo con la historia del mono:</strong> el mono está infectado → actúas <strong>sobre el mono</strong> (foco: que el virus no se multiplique). El virus se escapa por el laboratorio → actúas <strong>sobre el laboratorio</strong> (medio: que no se disperse). El mono muerde a una trabajadora → actúas <strong>sobre ella</strong> (receptor: vacuna, aislamiento).",
+     "truco": "<strong>\"Mono enfermo → laboratorio sucio → trabajadora mordida\"</strong> = <strong>Foco → Medio → Receptor</strong>. Verbos: <strong>Limitar, Evitar, Proteger</strong>.",
+     "q": "¿Cuáles son las 3 medidas frente al riesgo biológico y qué significa cada una? Nombra 5 actividades con riesgo biológico.",
+     "n": 28
+    },
+    {
+     "titulo": "Agentes biológicos en nuestro sector (ejercicio 15)",
+     "lv": 2,
+     "fuente": "Ejercicio 15 (no está en las diapositivas)",
+     "defs": [
+      {
+       "t": "Biopsia",
+       "facil": "Trozo de tejido sacado de un paciente para estudiarlo."
+      },
+      {
+       "t": "Citología",
+       "facil": "Estudio de <strong>células sueltas</strong>."
+      },
+      {
+       "t": "Tallado",
+       "facil": "<strong>cortar y examinar</strong> la pieza que llega al laboratorio de Anatomía Patológica."
+      },
+      {
+       "t": "Priones",
+       "facil": "Proteínas infecciosas (causan enfermedades como la de las \"vacas locas\")."
+      },
+      {
+       "t": "VIH",
+       "facil": "Virus del sida."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Sí hay exposición en Anatomía Patológica</strong>: muestras, <strong>biopsias</strong>, <strong>citologías</strong>, <strong>tallado</strong>, <strong>autopsias</strong> y laboratorio.</li>\n<li>Agentes: <strong>hepatitis B y C</strong>, <strong>VIH</strong>, <strong>tuberculosis</strong>, <strong>hongos</strong>, <strong>priones</strong>.</li>\n<li>Vías: <strong>parenteral</strong> (pinchazos, cortes), <strong>dérmica</strong> (salpicaduras) y <strong>respiratoria</strong> (aerosoles).</li>\n</ul>",
+     "entiende": "es <strong>tu futuro trabajo</strong>: cuando talles una biopsia con el bisturí te puedes <strong>cortar</strong> (parenteral), te puede <strong>salpicar</strong> (dérmica) o puedes <strong>respirar</strong> gotitas (respiratoria).",
+     "q": "¿Hay riesgo biológico en Anatomía Patológica? ¿Con qué agentes y por qué vías?",
+     "n": 29
+    }
+   ],
+   "min": 35
+  }
+ ],
+ "trampas": [
+  [
+   "<strong>dB(A)</strong> (diario)",
+   "<strong>dB(C)</strong> (pico)",
+   "<strong>A de \"A diario\"</strong>, <strong>C de \"Cañonazo\"</strong>"
+  ],
+  [
+   "<strong>80 dB(A)</strong>: EPI <strong>a disposición</strong>",
+   "<strong>85 dB(A)</strong>: EPI <strong>obligatorio</strong>",
+   "Amarillo ofrece, naranja obliga"
+  ],
+  [
+   "<strong>Mano-brazo 2,5 / 5</strong>",
+   "<strong>Cuerpo entero 0,5 / 1,15</strong>",
+   "Cuerpo entero = números <strong>pequeños</strong>"
+  ],
+  [
+   "<strong>Sedentario 17-27 °C</strong>",
+   "<strong>Ligero 14-25 °C</strong>",
+   "Si te mueves, más fresco"
+  ],
+  [
+   "<strong>Lipotimia</strong> (calor)",
+   "<strong>Hipotermia</strong> (frío)",
+   "<strong>HIPO = HIelo</strong>"
+  ],
+  [
+   "<strong>Estrés térmico</strong>",
+   "<strong>Sobrecarga térmica</strong>",
+   "Estrés = de fuera · sobrecarga = respuesta del cuerpo"
+  ],
+  [
+   "<strong>No ionizantes</strong> (molecular)",
+   "<strong>Ionizantes</strong> (atómico, las más peligrosas)",
+   "Ionizantes = átomos"
+  ],
+  [
+   "<strong>Llama</strong> (inflamable)",
+   "<strong>Llama sobre círculo</strong> (comburente)",
+   "El círculo aviva el fuego"
+  ],
+  [
+   "<strong>Calavera</strong> (toxicidad aguda)",
+   "<strong>Estrella en el pecho</strong> (grave, cáncer)",
+   "Rápido vs a largo plazo"
+  ],
+  [
+   "<strong>Dérmica</strong> (piel, superficie)",
+   "<strong>Parenteral</strong> (heridas, profundidad)",
+   "Salpicadura vs pinchazo"
+  ],
+  [
+   "Parenteral en <strong>químicos</strong> (herida que <strong>ya tenías</strong>)",
+   "Parenteral en <strong>biológicos</strong> (<strong>inoculación</strong>: pinchazo o mordisco)",
+   "Químico = herida · Biológico = te la hacen"
+  ],
+  [
+   "<strong>5 medidas</strong> químicas (E-S-T-O-E)",
+   "Las 6 del resumen antiguo",
+   "La profe cuenta <strong>una sola medida técnica</strong> (el almacenamiento)"
+  ],
+  [
+   "<strong>Peligro grave para la salud</strong> (estrella: gasolina)",
+   "<strong>Peligro para la salud</strong> (exclamación: limpiadores)",
+   "Grave = estrella; leve = exclamación"
+  ],
+  [
+   "<strong>Infección</strong> (se contagia)",
+   "<strong>Alergia</strong> (solo a ti)",
+   ""
+  ],
+  [
+   "<strong>Grupo 3</strong> (hay tratamiento, grave)",
+   "<strong>Grupo 4</strong> (sin tratamiento eficaz)",
+   "Sin cura = 4"
+  ],
+  [
+   "<strong>Ergonómicos</strong>",
+   "Riesgos <strong>ambientales</strong>",
+   "Los ergonómicos <strong>no</strong> son ambientales"
+  ]
+ ],
+ "numeros": [
+  [
+   "80 / 85 / 87 dB(A)",
+   "Diario equivalente: amarillo / naranja / rojo"
+  ],
+  [
+   "135 / 137 / 140 dB(C)",
+   "Pico: amarillo / naranja / rojo"
+  ],
+  [
+   "8 horas",
+   "Jornada del nivel diario equivalente"
+  ],
+  [
+   "1-2 segundos",
+   "Lo que dura el pico (difícil de medir)"
+  ],
+  [
+   "Cada 3 años",
+   "Audiometría en el ejemplo de 80-85 de la profe"
+  ],
+  [
+   "2,5 / 5 m/s²",
+   "Mano-brazo: acción / límite"
+  ],
+  [
+   "0,5 / 1,15 m/s²",
+   "Cuerpo entero: acción / límite"
+  ],
+  [
+   "Ni 2 segundos",
+   "Tiempo que se puede pasar el valor límite de vibración"
+  ],
+  [
+   "17-27 °C",
+   "Trabajo sedentario"
+  ],
+  [
+   "14-25 °C",
+   "Trabajo ligero (no sedentario)"
+  ],
+  [
+   "Menos de 8 h",
+   "Turnos para prevenir la hipotermia"
+  ],
+  [
+   "4 vías",
+   "Respiratoria, dérmica, digestiva, parenteral"
+  ],
+  [
+   "3 grupos de peligros",
+   "Físicos, salud, medio ambiente"
+  ],
+  [
+   "7 elementos",
+   "Etiqueta"
+  ],
+  [
+   "9 pictogramas",
+   "GHS (rombo rojo, símbolo negro)"
+  ],
+  [
+   "3 fases",
+   "Prevención química: determinar → evaluar → controlar"
+  ],
+  [
+   "5 medidas",
+   "Control químico: eliminar → sustituir → técnicas → organizativas → EPI"
+  ],
+  [
+   "2-3 cm",
+   "Altura sobre el suelo a la que se almacenan los químicos"
+  ],
+  [
+   "40 años",
+   "Hasta cuándo pueden aparecer cánceres por químicos"
+  ],
+  [
+   "4 grupos",
+   "Agentes biológicos"
+  ],
+  [
+   "3 medidas",
+   "Biológicos: foco, medio, receptor"
+  ]
+ ],
+ "chequeo": [
+  "Los 4 riesgos físicos y su energía (Me-Te-El).",
+  "Semáforo de ruido: 80/135 · 85/137 · 87/140 con unidades y qué obliga cada uno.",
+  "Diario equivalente vs pico (8 h, dB(A) / explosión, dB(C)).",
+  "Vibraciones: definición, 2 modos, origen y efectos (Raynaud), 2,5/5 y 0,5/1,15.",
+  "Resuelve: 74 dB(A), 84 dB(A), 86 dB(A), pulidora 4 m/s², carretilla 1,27 m/s².",
+  "4 medidas frente a vibraciones (F-M-O-P).",
+  "17-27 / 14-25 °C; lipotimia vs hipotermia y su prevención.",
+  "No ionizantes (CEM y RO): efectos y medidas. Ionizantes: tipos, A-T-G, gris a rojo, plomo.",
+  "Químicos: 4 vías (parenteral = herida que ya tenías), 3 grupos de peligros (F-S-M), 7 elementos de la etiqueta, 9 pictogramas con su ejemplo, fases D-E-C y 5 medidas E-S-T-O-E (almacenamiento; lejía + amoníaco no).",
+  "Biológicos: definición (I-A-I), vías, 4 grupos con ejemplos, 3 medidas con la historia del mono."
+ ],
+ "impres": [
+  {
+   "titulo": "Riesgos físicos",
+   "items": [
+    [
+     "¿4 riesgos físicos?",
+     "Energía <strong>mecánica</strong>: <strong>ruido y vibraciones</strong> · <strong>térmica</strong>: <strong>ambiente térmico</strong> (calor <strong>y frío</strong>) · <strong>electromagnética</strong>: <strong>radiaciones</strong> ionizantes (<strong>átomos</strong>) y no ionizantes (<strong>molecular</strong>)."
+    ]
+   ]
+  },
+  {
+   "titulo": "Ruido (casos prácticos)",
+   "items": [
+    [
+     "¿Diario equivalente vs pico?",
+     "<strong>Diario:</strong> jornada de <strong>8 h</strong>, en <strong>dB(A)</strong> (máquina toda la jornada). <strong>Pico:</strong> valor <strong>máximo en un instante</strong>, en <strong>dB(C)</strong> (<strong>explosión</strong>)."
+    ]
+   ]
+  }
+ ],
+ "glosario": [
+  [
+   "Accidente de trabajo",
+   "Lesión que sufre el trabajador con ocasión o a consecuencia de su trabajo"
+  ],
+  [
+   "Aerosol",
+   "Partículas muy pequeñas suspendidas en el aire; vía respiratoria de los biológicos"
+  ],
+  [
+   "Agente biológico",
+   "Ser vivo (virus, bacteria, hongo, protozoo…) que puede causar enfermedades"
+  ],
+  [
+   "Agente contaminante",
+   "Elemento del entorno laboral que puede dañar la salud"
+  ],
+  [
+   "Agente físico",
+   "Manifestación de energía (mecánica, térmica, electromagnética) que puede dañar la salud"
+  ],
+  [
+   "Agente químico peligroso",
+   "El que puede dañar la seguridad o la salud de los trabajadores"
+  ],
+  [
+   "Agente químico",
+   "Sustancia química, sola o mezclada, que puede dañar la salud en el trabajo"
+  ],
+  [
+   "Alergia",
+   "Reacción que solo afecta a la persona expuesta; no se contagia"
+  ],
+  [
+   "Audiometría",
+   "Prueba que mide la capacidad auditiva; forma parte de la vigilancia de la salud por ruido"
+  ],
+  [
+   "Cadena de transmisión",
+   "Recorrido del agente biológico: foco → medio → receptor; las medidas buscan romperla"
+  ],
+  [
+   "Campos electromagnéticos (CEM)",
+   "Radiaciones no ionizantes como microondas y radiofrecuencias"
+  ],
+  [
+   "Carcinógeno",
+   "Químico que provoca cáncer"
+  ],
+  [
+   "Cataratas",
+   "Opacidad del cristalino del ojo; efecto de radiaciones ópticas y efecto tardío de las ionizantes"
+  ],
+  [
+   "Comburente",
+   "Sustancia que aviva el fuego (pictograma: llama sobre un círculo)"
+  ],
+  [
+   "Confort térmico",
+   "Equilibrio entre el calor producido por el cuerpo y el cedido al ambiente"
+  ],
+  [
+   "Consejos de prudencia (P)",
+   "Frases de la etiqueta que indican cómo manipular el producto con seguridad"
+  ],
+  [
+   "Corrosivo",
+   "Sustancia que destruye tejidos y metales; tiene peligro físico y para la salud"
+  ],
+  [
+   "Cuerpo entero",
+   "Modo de vibración que se transmite a todo el cuerpo a través de asientos y plataformas"
+  ],
+  [
+   "dB(A)",
+   "Unidad del nivel diario equivalente de ruido"
+  ],
+  [
+   "dB(C)",
+   "Unidad del nivel de pico de ruido"
+  ],
+  [
+   "Dérmica (vía)",
+   "Entrada a través de la piel y las mucosas"
+  ],
+  [
+   "Digestiva (vía)",
+   "Entrada por la boca (comer, beber o fumar con las manos contaminadas)"
+  ],
+  [
+   "Disruptor endocrino",
+   "Químico que altera las glándulas hormonales (tiroides), el crecimiento y el desarrollo"
+  ],
+  [
+   "Enfermedad profesional",
+   "Enfermedad causada por la exposición a agentes del trabajo"
+  ],
+  [
+   "EPI",
+   "Equipo de Protección Individual (tapones, guantes, mascarilla…); último recurso"
+  ],
+  [
+   "Ergonómicos (riesgos)",
+   "Riesgos por posturas, cargas o movimientos; no son riesgos ambientales"
+  ],
+  [
+   "Estrés térmico",
+   "Situación en la que el cuerpo no puede regular su temperatura, por calor o por frío"
+  ],
+  [
+   "Evaluación del riesgo",
+   "2ª fase de la prevención química (determinar → evaluar → controlar). La diapositiva 12 no entra"
+  ],
+  [
+   "Exposición a un agente químico",
+   "Presencia de un agente químico en el trabajo que implica contacto con el trabajador"
+  ],
+  [
+   "Ficha de seguridad",
+   "Documento que acompaña al producto químico con sus riesgos y medidas preventivas"
+  ],
+  [
+   "Fitosanitario",
+   "Producto para proteger cultivos: pesticidas, plaguicidas"
+  ],
+  [
+   "Foco",
+   "Origen del agente contaminante; primer lugar donde se actúa"
+  ],
+  [
+   "GHS",
+   "Sistema Mundialmente Armonizado: establece los pictogramas de peligro"
+  ],
+  [
+   "Hipoacusia laboral",
+   "Pérdida de audición causada por el ruido del trabajo, de leve a muy grave"
+  ],
+  [
+   "Hipotermia",
+   "Pérdida excesiva de calor del cuerpo (estrés térmico por frío)"
+  ],
+  [
+   "Indicaciones de peligro (H)",
+   "Frases de la etiqueta que describen la naturaleza del peligro"
+  ],
+  [
+   "Infección",
+   "Enfermedad por un agente biológico que se puede contagiar (epidemia, pandemia)"
+  ],
+  [
+   "Inflamable",
+   "Sustancia que arde con facilidad (pictograma: llama)"
+  ],
+  [
+   "Inoculación",
+   "Introducción del agente en las capas profundas de la piel (vía parenteral)"
+  ],
+  [
+   "Ionizantes",
+   "Radiaciones con muchísima energía que producen cambios atómicos (X, gamma, alfa, beta)"
+  ],
+  [
+   "Lipotimia",
+   "Desmayo por aumento brusco y sostenido de la temperatura corporal (estrés por calor)"
+  ],
+  [
+   "m/s²",
+   "Unidad de los valores de vibración"
+  ],
+  [
+   "Mano-brazo",
+   "Modo de vibración que se transmite por manos y brazos en tareas de agarre"
+  ],
+  [
+   "Medio",
+   "Espacio por donde se difunde el contaminante entre el foco y el trabajador"
+  ],
+  [
+   "Mutágeno",
+   "Químico que provoca mutaciones en los genes, transmisibles a la descendencia"
+  ],
+  [
+   "Nivel de pico",
+   "Valor máximo de presión sonora en un periodo muy breve (explosión), en dB(C)"
+  ],
+  [
+   "Nivel diario equivalente",
+   "Exposición continuada al ruido en una jornada de 8 horas, en dB(A)"
+  ],
+  [
+   "No ionizantes",
+   "Radiaciones que producen cambios a nivel molecular (CEM y radiaciones ópticas)"
+  ],
+  [
+   "Parenteral (vía)",
+   "Entrada por heridas, pinchazos, cortes o mordeduras (inoculación en profundidad)"
+  ],
+  [
+   "Peligro por aspiración",
+   "La sustancia llega al pulmón y lo daña"
+  ],
+  [
+   "Pictograma",
+   "Rombo rojo con símbolo negro que indica el tipo de peligro de un químico"
+  ],
+  [
+   "Priones",
+   "Proteínas infecciosas; agente biológico presente en Anatomía Patológica"
+  ],
+  [
+   "Profilaxis",
+   "Medidas para prevenir una enfermedad (por ejemplo, vacunas)"
+  ],
+  [
+   "Radiación",
+   "Ondas y partículas electromagnéticas emitidas por materias o equipos"
+  ],
+  [
+   "Radiaciones ópticas (RO)",
+   "Luz visible, ultravioleta, infrarrojos y láser"
+  ],
+  [
+   "Receptor",
+   "La persona trabajadora expuesta; último eslabón donde se actúa"
+  ],
+  [
+   "Riesgo biológico",
+   "Posibilidad de sufrir infección, alergia o intoxicación por exposición a agentes biológicos"
+  ],
+  [
+   "Riesgo químico",
+   "Posibilidad de sufrir un daño por exposición a agentes químicos"
+  ],
+  [
+   "Sensibilizante respiratorio",
+   "Químico que, al inhalarlo, daña las vías respiratorias"
+  ],
+  [
+   "Síndrome de Raynaud",
+   "Dedos blancos por pérdida de circulación; efecto vascular de las vibraciones mano-brazo"
+  ],
+  [
+   "Sobrecarga térmica",
+   "Respuesta fisiológica del cuerpo al estrés térmico"
+  ],
+  [
+   "Toxicidad aguda",
+   "Daño grave tras una exposición corta (pictograma: calavera)"
+  ],
+  [
+   "Tóxicos específicos en determinados órganos",
+   "Químico que daña un órgano concreto (estómago, ojos…)"
+  ],
+  [
+   "Tóxicos para la reproducción",
+   "Afecta a la fertilidad o al embarazo, en hombres y mujeres"
+  ],
+  [
+   "Valor de acción",
+   "Nivel a partir del cual la empresa debe adoptar medidas"
+  ],
+  [
+   "Valor límite",
+   "Nivel que nunca se puede superar; si se supera, se para"
+  ],
+  [
+   "Variables termohigrométricas",
+   "Temperatura, humedad relativa, velocidad del aire…"
+  ],
+  [
+   "Vibración",
+   "Movimiento oscilatorio transmitido al cuerpo por un elemento sólido"
+  ],
+  [
+   "Vigilancia de la salud",
+   "Revisiones médicas periódicas de los trabajadores expuestos"
+  ]
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "x1",
+   "html": "<section class=\"xs\" id=\"x1\"><h2 class=\"xs-h\">🧮 Casos prácticos resueltos (ruido y vibraciones)</h2><p>📍 <strong>Fuente:</strong> diapositivas 3 y 5 + caso de la peluquera (clase) + ejercicios 2, 3 y 5.</p>\n<p><strong>Método en 3 pasos para cualquier caso:</strong></p>\n<ol>\n<li><strong>¿Qué es?</strong> Ruido (dB) o vibración (m/s²). Si es vibración: ¿se <strong>agarra</strong> (mano-brazo) o se <strong>conduce/sienta</strong> (cuerpo entero)?</li>\n<li><strong>¿Dónde cae?</strong> Compáralo con los valores: por debajo de acción / entre acción y límite / por encima del límite.</li>\n<li><strong>¿Qué obliga?</strong> Di las medidas de ese nivel.</li>\n</ol>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Caso</th>\n<th>Paso 1</th>\n<th>Paso 2</th>\n<th>Paso 3: solución</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Puesto a 74 dB(A)</strong> (ej. 2)</td>\n<td>Ruido diario</td>\n<td>&lt; 80</td>\n<td><strong>No hay riesgo</strong>: no es obligatorio adoptar medidas</td>\n</tr>\n<tr>\n<td><strong>Peluquera a 84 dB(A)</strong> (clase)</td>\n<td>Ruido diario</td>\n<td>Entre 80 y 85</td>\n<td><strong>Amarillo</strong>: información, formación, vigilancia de la salud y EPI a disposición</td>\n</tr>\n<tr>\n<td><strong>Trabajador a 86 dB(A)</strong></td>\n<td>Ruido diario</td>\n<td>Entre 85 y 87</td>\n<td><strong>Naranja</strong>: el EPI ya es <strong>obligatorio</strong>, señalizar, programa de medidas</td>\n</tr>\n<tr>\n<td><strong>Más de 87 dB(A)</strong></td>\n<td>Ruido diario</td>\n<td>&gt; límite</td>\n<td><strong>Rojo</strong>: dejar de trabajar, <strong>medidas inmediatas</strong></td>\n</tr>\n<tr>\n<td><strong>Pulidora en un taller, 4 m/s²</strong> (ej. 3)</td>\n<td>Herramienta portátil → <strong>mano-brazo</strong></td>\n<td>Supera la acción (<strong>2,5</strong>) sin llegar al límite (<strong>5</strong>)</td>\n<td><strong>Sí hay riesgo</strong>: hay que adoptar medidas</td>\n</tr>\n<tr>\n<td><strong>Construcción naval: carretilla 1,27 m/s²</strong> (ej. 5)</td>\n<td>Se conduce → <strong>cuerpo entero</strong></td>\n<td><strong>Supera el límite 1,15</strong></td>\n<td><strong>Medidas inmediatas</strong> (parar)</td>\n</tr>\n<tr>\n<td><strong>Soldador 0,14 m/s²</strong> (ej. 5)</td>\n<td><strong>Mano-brazo</strong></td>\n<td>No llega a 2,5</td>\n<td><strong>Sin riesgo</strong></td>\n</tr>\n<tr>\n<td><strong>Puente grúa 0,39 m/s²</strong> (ej. 5)</td>\n<td><strong>Cuerpo entero</strong></td>\n<td>No llega a 0,5</td>\n<td><strong>Sin riesgo</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>Casos prácticos del libro: <strong>exposición al ruido (p. 46)</strong> y <strong>exposición a vibraciones (p. 46)</strong>.\n❓ <strong>Pregunta:</strong> <em>Una pulidora da 4 m/s²: ¿qué modo es y qué hay que hacer? Una carretilla da 1,27 m/s²: ¿qué ocurre? ¿Qué le toca a una peluquera a 84 dB(A)? ¿Y a 86?</em></p></section>",
+   "opcion": "🧮 Casos prácticos resueltos (ruido y vibraciones)",
+   "indice": "🧮 Casos prácticos resueltos (ruido y vibraciones)"
+  },
+  {
+   "id": "trampas",
+   "opcion": "⚠️ Trampas típicas del examen",
+   "indice": "⚠️ Trampas típicas del examen"
+  },
+  {
+   "id": "numeros",
+   "titulo": "🔢 Números clave",
+   "opcion": "🔢 Números clave",
+   "indice": "🔢 Números clave"
+  },
+  {
+   "id": "chequeo",
+   "fin": "<blockquote>\n<p><strong>Pendiente de comprobar en tu hoja:</strong> 1) el ejemplo del <strong>grupo 1</strong> de biológicos (diap. 15): en la grabación se oye \"bacillus\"; el típico es <strong><em>Bacillus subtilis</em></strong>. 2) Los <strong>términos de vocabulario</strong> de biológicos que la profe marcó (diap. 14): si en tu hoja hay alguno marcado, apréndete esos. 3) Qué peligros de la tabla de la <strong>diapositiva 9</strong> están <strong>en verde</strong> (son los que entran).</p>\n</blockquote>",
+   "opcion": "✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)",
+   "indice": "✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)"
+  },
+  {
+   "id": "x5",
+   "html": "<section class=\"xs\" id=\"x5\"><h2 class=\"xs-h\">📝 Parte exclusiva: test y ejercicios de la profe, resueltos</h2><p><strong>Cómo usarla:</strong> tapa la respuesta, contesta en voz alta o por escrito y luego destapa. Repítela hasta acertarlas todas: estas preguntas las mandó la profe y se corrigen en clase.</p>\n<h3 class=\"ih\">Test (16 preguntas)</h3>\n<p><strong>T1. No son riesgos derivados de las condiciones ambientales</strong>\n→ <strong>Los ergonómicos</strong> (posturas y cargas; el tema solo trata físicos, químicos y biológicos).</p>\n<p><strong>T2. Riesgo no generado por una forma de energía</strong>\n→ <strong>Virus</strong> (es biológico, un ser vivo).</p>\n<p><strong>T3. La exposición al ruido es un riesgo…</strong>\n→ <strong>Físico</strong> (energía mecánica).</p>\n<p><strong>T4. Nivel diario equivalente a partir del cual se adoptan medidas</strong>\n→ <strong>80 dB(A)</strong>.</p>\n<p><strong>T5. Si se sobrepasa el valor límite de ruido</strong>\n→ <strong>Adoptar medidas inmediatas para reducir la exposición</strong>.</p>\n<p><strong>T6. Las herramientas manuales generan vibraciones de…</strong>\n→ <strong>El sistema mano-brazo</strong>.</p>\n<p><strong>T7. El ambiente térmico no depende de…</strong>\n→ <strong>El ruido</strong>.</p>\n<p><strong>T8. Temperatura en actividad no sedentaria</strong>\n→ <strong>14 y 25 °C</strong> (trabajo ligero).</p>\n<p><strong>T9. Las radiaciones más peligrosas</strong>\n→ <strong>Las ionizantes</strong>.</p>\n<p><strong>T10. Son campos electromagnéticos (CEM)</strong>\n→ <strong>Las radiofrecuencias</strong> (y las microondas).</p>\n<p><strong>T11. Orden de las medidas frente a cualquier agente ambiental</strong>\n→ <strong>Origen (foco) – Medio – Receptor</strong>.</p>\n<p><strong>T12. Químicos con peligro físico y para la salud</strong>\n→ <strong>Corrosivos</strong> (corroen metales y dañan piel y ojos).</p>\n<p><strong>T13. La etiqueta de seguridad se utiliza para…</strong>\n→ <strong>Indicar los peligros químicos y su naturaleza</strong> (la profe: la b) \"se podría dar\", pero la c) es la más completa).</p>\n<p><strong>T14. Penetración por heridas o discontinuidades de la piel</strong>\n→ <strong>Vía parenteral</strong>.</p>\n<p><strong>T15. Primera medida de control del riesgo químico</strong>\n→ <strong>Eliminar el agente químico peligroso</strong> (1ª de las 5: E-S-T-O-E).</p>\n<p><strong>T16. Sin tratamiento eficaz</strong>\n→ <strong>Grupo 4</strong> (ej.: ébola).</p>\n<h3 class=\"ih\">Ejercicios</h3>\n<p><strong>Ejercicio 1. Identifica los contaminantes de 3 fotos: a) persona manipulando productos con etiqueta de \"corrosivo\" en un laboratorio; b) operario conduciendo una apisonadora de asfalto al sol; c) personal con bata y mascarilla en una granja de cerdos.</strong></p>\n<p><strong>Respuesta:</strong> a) <strong>Químico</strong> (productos corrosivos). b) <strong>Físico</strong>: <strong>vibraciones de cuerpo entero</strong>, <strong>ruido</strong>, <strong>calor</strong> y <strong>radiación solar</strong>; también <strong>químico</strong> por los <strong>humos del asfalto</strong>. c) <strong>Biológico</strong> (contacto con <strong>animales</strong>).\n🧠 Pregúntate en cada foto: <strong>\"¿Energía, Sustancia o Bicho?\"</strong>. Puede haber varios a la vez.</p>\n<p><strong>Ejercicio 2. Un puesto de trabajo tiene un ruido diario equivalente de 74 dB(A). ¿Hay riesgo? ¿Qué hay que hacer?</strong></p>\n<p><strong>Respuesta:</strong> Está <strong>por debajo de 80 dB(A)</strong> → <strong>no hay riesgo</strong> según los valores de referencia; <strong>no es obligatorio adoptar medidas</strong>.</p>\n<p><strong>Ejercicio 3. Una pulidora en un taller transmite 4 m/s². ¿Qué modo de vibración es y hay riesgo?</strong></p>\n<p><strong>Respuesta:</strong> Herramienta portátil → <strong>mano-brazo</strong>. Supera el valor de <strong>acción (2,5)</strong> sin llegar al <strong>límite (5)</strong> → <strong>sí hay riesgo</strong>: hay que <strong>adoptar medidas</strong>.</p>\n<p><strong>Ejercicio 5. Construcción naval: carretilla 1,27 m/s², soldador 0,14 m/s², puente grúa 0,39 m/s². Valora cada puesto.</strong></p>\n<p><strong>Respuesta:</strong> <strong>Carretilla</strong> (cuerpo entero): <strong>supera el límite 1,15</strong> → <strong>medidas inmediatas</strong> (parar). <strong>Soldador</strong> (mano-brazo): no llega a 2,5 → <strong>sin riesgo</strong>. <strong>Puente grúa</strong> (cuerpo entero): no llega a 0,5 → <strong>sin riesgo</strong>.</p>\n<p><strong>Ejercicio 6. Una panadería está a 38 °C. ¿Qué riesgo hay y qué efectos puede tener?</strong></p>\n<p><strong>Respuesta:</strong> Supera los límites de temperatura → <strong>estrés térmico por calor</strong>: <strong>sobrecarga térmica</strong>, <strong>deshidratación</strong>, <strong>lipotimia</strong>, <strong>agotamiento o golpe de calor</strong> y más <strong>accidentes</strong> por falta de atención.</p>\n<p><strong>Ejercicio 8. ¿Qué órganos pueden afectar los agentes químicos y con qué enfermedades?</strong></p>\n<p><strong>Respuesta:</strong> <strong>Sistema nervioso</strong> → temblores, Parkinson, tumores cerebrales · <strong>aparato respiratorio</strong> → asma, neumonía, bronquitis, cáncer · <strong>riñones, vesícula e hígado</strong> → hepatitis, cáncer, enfermedades renales · <strong>piel y mucosas</strong> → irritaciones, alergias, úlceras · <strong>corazón y aparato circulatorio</strong> → anginas de pecho, infartos · <strong>sangre</strong> → anemia, leucemia. Los efectos pueden ser <strong>agudos</strong> o aparecer <strong>años después</strong> (<strong>cánceres hasta 40 años</strong>).</p>\n<p><strong>Ejercicio 12. El desinfectante de Antonio: irrita las vías respiratorias, provoca lesiones oculares graves, es inflamable y nocivo para los organismos acuáticos. ¿Qué pictogramas lleva?</strong></p>\n<p><strong>Respuesta:</strong> Irrita vías respiratorias → <strong>signo de exclamación</strong> · lesiones oculares graves → <strong>corrosión</strong> · inflamable → <strong>llama</strong> · nocivo para organismos acuáticos → <strong>medio ambiente</strong> (árbol y pez).</p>\n<p><strong>Ejercicio 15. ¿Hay exposición a agentes biológicos en nuestro sector (Anatomía Patológica)? ¿Qué agentes y por qué vías?</strong></p>\n<p><strong>Respuesta:</strong> <strong>Sí</strong>: muestras, <strong>biopsias</strong>, <strong>citologías</strong>, <strong>tallado</strong>, <strong>autopsias</strong> y laboratorio. Agentes: <strong>hepatitis B y C, VIH, tuberculosis, hongos y priones</strong>. Vías: <strong>parenteral</strong> (pinchazos, cortes), <strong>dérmica</strong> (salpicaduras) y <strong>respiratoria</strong> (aerosoles).</p>\n<p><strong>Ejercicio 10. Test online de pictogramas (enlace de la profe).</strong></p>\n<p><strong>Respuesta:</strong> Se hace en el móvil o el ordenador. Los pictogramas que pregunta son los <strong>9 del GHS</strong> del concepto 20.</p></section>",
+   "opcion": "📝 Parte exclusiva: test y ejercicios de la profe, resueltos",
+   "indice": "📝 Parte exclusiva: test y ejercicios de la profe, resueltos"
+  },
+  {
+   "id": "impres",
+   "fin": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Diario</th>\n<th>Pico</th>\n<th>Qué obliga</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Amarillo</strong></td>\n<td><strong>80 dB(A)</strong></td>\n<td><strong>135 dB(C)</strong></td>\n<td>Información · formación · vigilancia de la salud (audiometrías) · <strong>EPI a disposición</strong></td>\n</tr>\n<tr>\n<td><strong>Naranja</strong></td>\n<td><strong>85 dB(A)</strong></td>\n<td><strong>137 dB(C)</strong></td>\n<td><strong>EPI obligatorio</strong> · <strong>señalizar</strong> · <strong>programa de medidas técnicas y organizativas</strong></td>\n</tr>\n<tr>\n<td><strong>Rojo</strong></td>\n<td><strong>87 dB(A)</strong></td>\n<td><strong>140 dB(C)</strong></td>\n<td><strong>Nunca se supera</strong>: se deja de trabajar</td>\n</tr>\n</tbody>\n</table></div><p><strong>Casos:</strong> &lt; 80 → sin riesgo (74 dB(A)) · <strong>84 dB(A)</strong> → amarillo · <strong>86 dB(A)</strong> → EPI obligatorio. De 80 a 85 sin EPI <strong>se puede recurrir</strong>; desde 85 <strong>no prospera</strong>.</p><details class=\"pq\"><summary>¿Efectos?</summary><div class=\"pa\"><p><strong>Hipoacusia</strong> · respiratorio y cardiovascular · digestivos y sueño · <strong>accidentes</strong> (menos atención).</p></div></details><h3 class='ih'>3 · Vibraciones (casos prácticos)</h3><details class=\"pq\"><summary>¿Definición?</summary><div class=\"pa\"><p><strong>Movimiento oscilatorio</strong> transmitido <strong>por un elemento sólido</strong>; el daño depende de la energía y de la <strong>duración</strong>.</p></div></details><div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Mano-brazo</strong></th>\n<th><strong>Cuerpo entero</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Origen</td>\n<td>Herramientas portátiles (martillo neumático, radial, taladro)</td>\n<td>Vehículos (camión, villavesa) y maquinaria (tractor, cosechadora)</td>\n</tr>\n<tr>\n<td>Efectos</td>\n<td><strong>Vasculares (Raynaud: dedos blancos)</strong>, neurológicos, musculares</td>\n<td><strong>Columna</strong>, hernias, circulatorio, malestar, dolor de cabeza</td>\n</tr>\n<tr>\n<td><strong>Acción</strong></td>\n<td><strong>2,5 m/s²</strong></td>\n<td><strong>0,5 m/s²</strong></td>\n</tr>\n<tr>\n<td><strong>Límite</strong></td>\n<td><strong>5 m/s²</strong></td>\n<td><strong>1,15 m/s²</strong></td>\n</tr>\n</tbody>\n</table></div><p><strong>Límite:</strong> <strong>ni 2 segundos</strong>; se para <strong>aunque se lleve EPI</strong>. <strong>Casos:</strong> pulidora <strong>4</strong> → mano-brazo, riesgo · carretilla <strong>1,27</strong> → supera límite · soldador <strong>0,14</strong> y grúa <strong>0,39</strong> → sin riesgo.</p><details class=\"pq\"><summary>¿4 medidas?</summary><div class=\"pa\"><p><strong>Foco</strong> (robots, mantenimiento) · <strong>medio</strong> (aislantes, amortiguación) · <strong>organizativas</strong> (menos tiempo, más descansos) · <strong>personas</strong> (formación, EPI).</p></div></details><h3 class='ih'>4 · Ambiente térmico (cae en el test)</h3><details class=\"pq\"><summary>¿Temperaturas?</summary><div class=\"pa\"><p><strong>Sedentario 17-27 °C</strong> · <strong>ligero 14-25 °C</strong>. No depende del <strong>ruido</strong>.</p></div></details><details class=\"pq\"><summary>¿Lipotimia?</summary><div class=\"pa\"><p>Estrés por <strong>calor</strong>: <strong>aumento brusco y sostenido</strong> de temperatura. Prevención: evitar cambios de temperatura, ropa adecuada, limitar tiempo, <strong>piel limpia e hidratada</strong>.</p></div></details><details class=\"pq\"><summary>¿Hipotermia?</summary><div class=\"pa\"><p>Estrés por <strong>frío</strong>: <strong>pérdida de calor excesiva</strong> (cámaras frigoríficas). Prevención: ropa adecuada, <strong>limitar tiempo</strong> (turnos &lt; 8 h).</p></div></details><p><strong>Confort</strong> = equilibrio · <strong>sobrecarga</strong> = respuesta fisiológica al estrés.</p><h3 class='ih'>5 · Radiaciones</h3><details class=\"pq\"><summary>¿No ionizantes?</summary><div class=\"pa\"><p><strong>CEM</strong> (microondas, radiofrecuencias): calentamiento, quemaduras con ampollas, náuseas, cefalea, fatiga · <strong>RO</strong> (visible, UV, IR, láser): piel y <strong>ojos</strong> (conjuntivitis → cataratas, retina). Medidas: <strong>medio</strong> (barreras, separar, <strong>señales amarillas</strong>) · <strong>rotar</strong> · formación, EPI, vigilancia.</p></div></details><details class=\"pq\"><summary>¿Ionizantes?</summary><div class=\"pa\"><p><strong>Las más peligrosas</strong>. Ondas: <strong>X y gamma</strong>; partículas: <strong>alfa y beta</strong>. Efectos: <strong>agudos</strong> (vómitos, pelo, uñas, intestino) · <strong>tardíos</strong> (cataratas, sangre, cáncer) · <strong>genéticos</strong> (reproductivo). Zonas de <strong>gris (leve) a rojo (grave)</strong>, <strong>plomo</strong>, EPI, vigilancia.</p></div></details><h3 class='ih'>6 · Químicos (explicados en clase)</h3><details class=\"pq\"><summary>¿Qué no entra?</summary><div class=\"pa\"><p>El <strong>Reglamento CLP</strong>, lo <strong>blanco</strong> de la tabla de la diap. 9 y la <strong>diapositiva 12</strong> entera.</p></div></details><details class=\"pq\"><summary>¿Ejemplos de agentes químicos?</summary><div class=\"pa\"><p>Lejía, amoníaco, productos de esterilización, carburantes y comburentes.</p></div></details><details class=\"pq\"><summary>¿Vías?</summary><div class=\"pa\"><p><strong>Respiratoria (la más frecuente)</strong> · dérmica · digestiva · <strong>parenteral</strong>.</p></div></details><details class=\"pq\"><summary>¿Parenteral químicos vs biológicos?</summary><div class=\"pa\"><p>Químicos: entra por una <strong>herida que ya tenías</strong> (rasguño, postilla). Biológicos: <strong>inoculación</strong> (pinchazo o mordisco).</p></div></details><details class=\"pq\"><summary>¿3 grupos de peligros?</summary><div class=\"pa\"><p><strong>Físicos</strong> (incendio, explosión, corrosión de metales) · <strong>salud</strong> (toxicidad aguda, corrosivos, irritantes, sensibilizantes, <strong>carcinógenos</strong>, <strong>mutágenos</strong>, tóxicos para la reproducción, para órganos, aspiración, endocrino) · <strong>medio ambiente</strong>. <strong>Corrosivos</strong> = físico + salud.</p></div></details><details class=\"pq\"><summary>¿Etiqueta?</summary><div class=\"pa\"><p>Identificación · cantidad · proveedor · <strong>pictogramas</strong> · palabras de advertencia · <strong>H (peligro)</strong> · <strong>P (prudencia)</strong>. Es <strong>internacional</strong> (GHS).</p></div></details><details class=\"pq\"><summary>¿Pictogramas con ejemplo?</summary><div class=\"pa\"><p>Bomba = explosivo (fuegos artificiales) · llama = inflamable (aerosol antimosquitos) · <strong>llama sobre círculo = comburente</strong> (cerillas, oxígeno médico) · bombona = gas a presión (extintores) · corrosión = corrosivo (<strong>desatascador</strong>) · calavera = toxicidad aguda (plaguicidas, metanol) · <strong>estrella en el pecho = grave para la salud</strong> (gasolina, trementina) · exclamación = peligro para la salud (limpiadores) · árbol y pez = medio ambiente.</p></div></details><p><strong>¿Fases de la prevención? ★</strong> → <strong>Determinar → Evaluar → Controlar</strong> (D-E-C).\n<strong>¿Control? ★</strong> → <strong>5 medidas: Eliminar → Sustituir → Técnicas (almacenamiento: a 2-3 cm del suelo, separar incompatibles, armarios ventilados, no mezclar lejía y amoníaco) → Organizativas → EPI</strong> (E-S-T-O-E).</p><h3 class='ih'>7 · Biológicos</h3><details class=\"pq\"><summary>¿Definición?</summary><div class=\"pa\"><p>Posibilidad de <strong>infección, alergia o intoxicación</strong> por <strong>seres vivos</strong>.</p></div></details><details class=\"pq\"><summary>¿Parenteral?</summary><div class=\"pa\"><p><strong>Inoculación en profundidad</strong>: pinchazos, cortes, mordeduras.</p></div></details><details class=\"pq\"><summary>¿4 grupos?</summary><div class=\"pa\"><p><strong>1</strong> poco probable (<em>Bacillus subtilis</em>) · <strong>2</strong> hay tratamiento (<strong>gripe</strong>) · <strong>3</strong> grave, contagio fácil (<strong>hepatitis</strong>) · <strong>4</strong> mortal, <strong>sin tratamiento</strong> (<strong>ébola</strong>).</p></div></details><details class=\"pq\"><summary>¿3 medidas?</summary><div class=\"pa\"><p><strong>Foco: limitar la proliferación</strong> · <strong>medio: evitar la dispersión</strong> · <strong>receptor: vacunas, aislamiento</strong>.</p></div></details><p><strong>Regla general:</strong> <strong>Origen → Medio → Receptor</strong>.</p><h3 class='ih'>Los 10 que no puedes fallar</h3><ol>\n<li><strong>80/135 · 85/137 · 87/140</strong> con <strong>dB(A)</strong> y <strong>dB(C)</strong>.</li>\n<li>Amarillo = EPI a disposición · naranja = <strong>obligatorio</strong> · rojo = parar.</li>\n<li><strong>2,5/5</strong> mano-brazo · <strong>0,5/1,15</strong> cuerpo entero (<strong>m/s²</strong>).</li>\n<li>Raynaud = mano-brazo · columna = cuerpo entero.</li>\n<li><strong>17-27</strong> sedentario · <strong>14-25</strong> ligero.</li>\n<li>Lipotimia (calor) vs hipotermia (frío) y su prevención.</li>\n<li>Ionizantes: X, gamma, alfa, beta; agudos, tardíos, genéticos.</li>\n<li>Parenteral = heridas / inoculación.</li>\n<li>Químicos: parenteral = <strong>herida que ya tenías</strong> · fases <strong>D-E-C</strong> · <strong>5 medidas E-S-T-O-E</strong> (eliminar primero, EPI último).</li>\n<li>Biológicos: <strong>4 grupos</strong> y <strong>3 medidas</strong> (foco, medio, receptor).</li>\n</ol>",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "titulo": "📖 Glosario",
+   "cab": [
+    "Término",
+    "Significado"
+   ],
+   "opcion": "📖 Glosario",
+   "indice": "📖 Glosario"
+  }
+ ]
+}

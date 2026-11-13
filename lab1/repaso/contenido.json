@@ -1,0 +1,1195 @@
+{
+ "unidad": "lab1",
+ "titulo": "Lab 1 · Unidad 1",
+ "eyebrow": "🧪 Técnicas Generales de Laboratorio · 1er examen",
+ "h1": "Repaso completo: Técnicas Generales de Laboratorio, Unidad 1",
+ "sub": "Unidad 1 · material, limpieza, agua, reactivos, equipos y PNT · 7 bloques · 47 conceptos",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>\n<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div>",
+ "clave": "lab1-repaso-v1",
+ "examen": {
+  "em": "🧪",
+  "asig": "Técnicas Generales de Laboratorio",
+  "examen": "1er examen",
+  "fecha": "2026-10-22"
+ },
+ "simulacro": "lab1/banco/",
+ "tipografia": "JetBrains+Mono:wght@700",
+ "buscar": [
+  [
+   "#hoja",
+   "20 preguntas de la hoja"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "etiquetas": {
+  "facil": "💡 Qué significa"
+ },
+ "bloques": [
+  {
+   "titulo": "Tipos de materiales y utilización",
+   "conceptos": [
+    {
+     "titulo": "Los 4 materiales y su uso",
+     "lv": 1,
+     "fuente": "Diapositiva 5",
+     "defs": [
+      {
+       "t": "Inerte",
+       "facil": "Que no reacciona con lo que contiene. <strong>Desechable:</strong> de un solo uso; se tira después. <strong>Soporte:</strong> pieza que sujeta o aguanta a otras."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Característica</th>\n<th>Uso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Vidrio</strong></td>\n<td><strong>Inerte</strong> y resistente a la temperatura</td>\n<td>De trabajo</td>\n</tr>\n<tr>\n<td><strong>Plástico</strong></td>\n<td><strong>Económico y desechable</strong></td>\n<td>De trabajo</td>\n</tr>\n<tr>\n<td><strong>Porcelana</strong></td>\n<td>Resiste <strong>temperaturas muy elevadas</strong> y ataques químicos</td>\n<td>Para calentar</td>\n</tr>\n<tr>\n<td><strong>Metal</strong></td>\n<td>—</td>\n<td><strong>Material de soporte</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "el vidrio es como un vaso de cristal de calidad (no se mancha, aguanta calor), el plástico es como un vaso de usar y tirar, la porcelana es como una cazuela de barro para el horno, y el metal es la \"estantería\" que lo sujeta todo.",
+     "truco": "<strong>\"Vi-Pla-Por-Me\" = Inerte, Barato, Caliente, Sujeta</strong>.",
+     "q": "¿En qué 4 materiales se fabrica el material de laboratorio y cuál es la característica de cada uno?",
+     "extra": [
+      {
+       "tras": "q",
+       "html": "<div class=\"prof-t\"><p><strong>1.1 Material de vidrio</strong></p></div>"
+      }
+     ],
+     "n": 1
+    },
+    {
+     "titulo": "Propiedades del vidrio",
+     "lv": 1,
+     "fuente": "Diapositiva 6",
+     "prof": "<p>es <strong>el material más utilizado</strong> en el laboratorio porque es:</p>\n<ul>\n<li><strong>Inerte:</strong> no interfiere ni reacciona con la mayoría de compuestos químicos.</li>\n<li><strong>Transparente:</strong> podemos ver qué pasa dentro del recipiente.</li>\n<li><strong>Manejable.</strong></li>\n<li><strong>Moldeable:</strong> se pueden reparar o diseñar piezas nuevas con el material roto.</li>\n<li><strong>Resistente a los cambios bruscos de temperatura:</strong> no cambia significativamente su forma ni su volumen.</li>\n</ul>",
+     "truco": "<strong>\"I-T-M-M-R\"</strong> → \"<strong>I</strong>nés <strong>T</strong>iene <strong>M</strong>uchos <strong>M</strong>uñecos <strong>R</strong>otos\" (Inerte, Transparente, Manejable, Moldeable, Resistente).",
+     "q": "¿Por qué el vidrio es el material más usado? Di sus 5 propiedades.",
+     "n": 2
+    },
+    {
+     "titulo": "Tipos de vidrio según su composición",
+     "lv": 1,
+     "fuente": "Diapositiva 7",
+     "defs": [
+      {
+       "t": "Óxido",
+       "facil": "Compuesto de un elemento con oxígeno. <strong>Espectrofotométrico:</strong> ensayo que mide cuánta luz absorbe una muestra (lo verás en el concepto 50). <strong>Luz UV (ultravioleta):</strong> luz invisible de más energía que la violeta."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Composición</th>\n<th>Dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Cuarzo</strong></td>\n<td><strong>Óxido de silicio</strong></td>\n<td>Lo ideal, pero <strong>muy caro</strong>: se reserva para ensayos específicos, como los <strong>espectrofotométricos</strong> (deja pasar la <strong>luz UV</strong>)</td>\n</tr>\n<tr>\n<td><strong>Borosilicatos</strong></td>\n<td><strong>Óxido de boro + óxido de silicio</strong></td>\n<td>La alternativa <strong>más frecuente y económica</strong></td>\n</tr>\n<tr>\n<td><strong>Aluminosilicatos</strong></td>\n<td><strong>Óxido de aluminio + óxido de silicio</strong></td>\n<td>También muy usados como alternativa al cuarzo</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "<strong>los tres llevan silicio</strong> (el vidrio es básicamente arena fundida). Lo que cambia es el \"acompañante\": nada (cuarzo, el puro), boro o aluminio.",
+     "truco": "<strong>\"Todos llevan Silicio; el apellido dice el otro\"</strong>: <strong>Boro</strong>-silicato = boro · <strong>Alumino</strong>-silicato = aluminio · <strong>Cuarzo</strong> = silicio solo, <strong>caro y para la luz UV</strong>.",
+     "q": "¿Qué tipos de vidrio hay según su composición y cuál se usa en espectrofotometría y por qué?",
+     "extra": [
+      {
+       "tras": "q",
+       "html": "<div class=\"prof-t\"><p><strong>1.2 Material de plástico</strong></p></div>"
+      }
+     ],
+     "n": 3
+    },
+    {
+     "titulo": "El plástico y sus tipos",
+     "lv": 2,
+     "fuente": "Diapositiva 8",
+     "defs": [
+      {
+       "t": "Polímero",
+       "facil": "Molécula muy larga formada por muchas piezas iguales repetidas. <strong>Halógenos:</strong> grupo de elementos de la tabla periódica (flúor, cloro, bromo, yodo). <strong>Contaminante:</strong> cualquier sustancia ajena que se cuela en la muestra."
+      }
+     ],
+     "prof": "<p>es muy fácil introducir contaminantes en una muestra al manipularla. El plástico tiene una ventaja frente al vidrio: al ser <strong>más barato</strong>, se fabrica como <strong>material desechable</strong>, y así <strong>evita muchas contaminaciones</strong>. Tipos:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Composición</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>PE / PP</strong> (polietileno / polipropileno)</td>\n<td>Polímeros puros de <strong>hidrógeno y carbono</strong></td>\n</tr>\n<tr>\n<td><strong>Policarbonatos</strong></td>\n<td>Hidrógeno y carbono <strong>con oxígeno</strong> (p. ej. <strong>bisfenol</strong>)</td>\n</tr>\n<tr>\n<td><strong>PVC</strong></td>\n<td>Hidrógeno y carbono <strong>con halógenos</strong></td>\n</tr>\n<tr>\n<td><strong>PTFE (teflón)</strong></td>\n<td>Politetrafluoroetileno: hidrógeno, carbono y <strong>halógenos</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "todos los plásticos tienen la base de <strong>carbono + hidrógeno</strong>. Se diferencian en lo que se les añade: nada (PE/PP), oxígeno (policarbonatos) o halógenos (PVC y teflón). El <strong>teflón</strong> es el de las sartenes antiadherentes.",
+     "truco": "<strong>\"Puro, con O, con Halógeno, con Halógeno\"</strong> → PE/PP puro · P<strong>O</strong>licarbonato con <strong>O</strong>xígeno · PVC y PTFE con halógenos (el <strong>F</strong> de PT<strong>F</strong>E es de <strong>F</strong>lúor, un halógeno).",
+     "q": "¿Qué ventaja tiene el plástico frente al vidrio y qué tipos de plástico hay?",
+     "n": 4
+    },
+    {
+     "titulo": "Vidrio vs. plástico",
+     "lv": 1,
+     "fuente": "Diapositiva 9",
+     "defs": [
+      {
+       "t": "HF",
+       "facil": "Ácido fluorhídrico, el único ácido común que disuelve el vidrio. <strong>Contaminación cruzada:</strong> restos de una muestra que pasan a la siguiente. <strong>Ion:</strong> átomo o molécula con carga eléctrica. <strong>Fase:</strong> cada parte de una mezcla con estado distinto (sólida, líquida…)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Vidrio</strong></th>\n<th><strong>Plástico</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Ventajas</strong></td>\n<td>Inerte a la mayoría de interacciones · soporta temperatura · transparente · <strong>poca adsorción/desorción</strong> · moldeable</td>\n<td><strong>Más económico</strong> · <strong>desechable</strong> (reduce contaminaciones cruzadas)</td>\n</tr>\n<tr>\n<td><strong>Desventajas</strong></td>\n<td>Más caro · no desechable (<strong>más contaminación cruzada</strong>) · <strong>puede atacarlo el HF</strong></td>\n<td>Más interacción con compuestos químicos · no soporta grandes cambios de temperatura sin deformarse · suele ser <strong>opaco</strong> · <strong>mucha adsorción/desorción</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ul>\n<li><strong>Adsorción:</strong> las moléculas o iones <strong>quedan retenidos por el material</strong>, entre una fase sólida (el material) y una líquida (la muestra).</li>\n<li><strong>Desorción:</strong> el proceso inverso: la sustancia retenida <strong>vuelve a pasar a la disolución</strong>.</li>\n</ul>",
+     "entiende": "<strong>adsorción</strong> (con <strong>d</strong>) es que la sustancia se queda <strong>pegada a la superficie</strong> del recipiente, como la grasa que se queda en un táper de plástico. <strong>Desorción</strong> es cuando esa grasa <strong>se suelta</strong> en la comida siguiente y la contamina. Por eso el plástico (mucha adsorción) se tira tras usarlo.",
+     "truco": "<strong>a</strong>D<strong>sorción = se a</strong>D<strong>hiere a la superficie</strong> (no confundir con <strong>absorción</strong>, que es meterse dentro, como una esponja). <strong>Vidrio = caro pero limpio; plástico = barato pero \"pegajoso\"</strong>.",
+     "q": "Compara vidrio y plástico (2 ventajas y 2 desventajas de cada uno) y define adsorción y desorción.",
+     "extra": [
+      {
+       "tras": "q",
+       "html": "<div class=\"prof-t\"><p><strong>1.3 Clasificación por volumen</strong></p></div>"
+      }
+     ],
+     "n": 5
+    },
+    {
+     "titulo": "Material volumétrico y no volumétrico",
+     "lv": 1,
+     "fuente": "Diapositiva 10",
+     "defs": [
+      {
+       "t": "Volumen",
+       "facil": "El espacio que ocupa un líquido (se mide en ml o l). <strong>Transferir:</strong> pasar de un recipiente a otro."
+      }
+     ],
+     "prof": "<p>da igual que sea de vidrio o de plástico; se divide según si mide el volumen con precisión:</p>\n<ul>\n<li><strong>Volumétrico</strong> (plástico · vidrio): preparado para <strong>medir y transferir volúmenes</strong>: <strong>bureta, probeta, matraz y pipeta</strong>.</li>\n<li><strong>No volumétrico</strong> (plástico · vidrio · <strong>metal</strong> · <strong>porcelana</strong>): <strong>no es apto para medir volúmenes con exactitud</strong>, aunque puede tener otros usos.</li>\n</ul>",
+     "entiende": "fíjate en que <strong>solo el vidrio y el plástico pueden ser volumétricos</strong>. El metal y la porcelana nunca miden volúmenes.",
+     "truco": "<strong>\"Bu-Pro-Ma-Pi miden\"</strong> (Bureta, Probeta, Matraz aforado, Pipeta). Y <strong>porcelana y metal nunca miden</strong>.",
+     "q": "¿Qué diferencia hay entre material volumétrico y no volumétrico? Pon ejemplos y di de qué materiales puede ser cada uno.",
+     "n": 6
+    },
+    {
+     "titulo": "Bureta, probeta y pipeta",
+     "lv": 1,
+     "fuente": "Diapositivas 11 y 12",
+     "defs": [
+      {
+       "t": "Graduado",
+       "facil": "Con rayas que marcan distintos volúmenes. <strong>Llave:</strong> grifo pequeño que abre o cierra el paso del líquido. <strong>Pico:</strong> la boquilla por donde se vierte."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/001.jpg\" width=\"147\" height=\"383\" loading=\"lazy\" decoding=\"async\" alt=\"Bureta (con llave)\" loading=\"lazy\"><figcaption>Bureta (con llave)</figcaption></figure><figure><img src=\"img/002.jpg\" width=\"504\" height=\"360\" loading=\"lazy\" decoding=\"async\" alt=\"Bureta · Probeta · Matraz aforado\" loading=\"lazy\"><figcaption>Bureta · Probeta · Matraz aforado</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Cómo es y para qué sirve</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Bureta</strong></td>\n<td><strong>Tubo alargado graduado con una llave al final</strong>, que permite abrir o cerrar el flujo del líquido según la necesidad</td>\n</tr>\n<tr>\n<td><strong>Probeta</strong></td>\n<td><strong>Tubo cilíndrico graduado con base</strong> para apoyarlo. Mide volúmenes y los <strong>vierte gracias a su pico</strong>. <strong>No se mezclan volúmenes dentro de ella</strong></td>\n</tr>\n<tr>\n<td><strong>Pipeta</strong></td>\n<td>Para <strong>transferir un volumen pequeño</strong> de líquido de forma <strong>precisa y exacta</strong>: desde la pipeta Pasteur hasta la electrónica</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "la <strong>bureta</strong> es un \"grifo con regla\" (sueltas gota a gota). La <strong>probeta</strong> es una \"jarra medidora\" alta y estrecha (mides y viertes, pero no mezclas dentro). La <strong>pipeta</strong> es una \"pajita de precisión\" para volúmenes pequeños.",
+     "truco": "<strong>Bureta = llave (grifo)</strong> · <strong>Probeta = pie y pico</strong> · <strong>Pipeta = poquito</strong>.",
+     "q": "¿Cómo distingues una bureta de una probeta? ¿Para qué sirve la pipeta?",
+     "n": 7
+    },
+    {
+     "titulo": "Los 4 matraces",
+     "lv": 1,
+     "fuente": "Diapositivas 13 y 14",
+     "defs": [
+      {
+       "t": "Disolución",
+       "facil": "Mezcla de una sustancia (soluto) disuelta en un líquido (disolvente). <strong>Esmerilada:</strong> zona de vidrio rugosa, mate, donde se puede escribir o que encaja con un tapón. <strong>Vacío:</strong> espacio del que se ha sacado el aire, para \"chupar\" el líquido."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/003.jpg\" width=\"482\" height=\"278\" loading=\"lazy\" decoding=\"async\" alt=\"Base redonda · Erlenmeyer · Kitasato\" loading=\"lazy\"><figcaption>Base redonda · Erlenmeyer · Kitasato</figcaption></figure><figure><img src=\"img/002.jpg\" width=\"504\" height=\"360\" loading=\"lazy\" decoding=\"async\" alt=\"El 3º es el matraz aforado\" loading=\"lazy\"><figcaption>El 3º es el matraz aforado</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Matraz</th>\n<th>Cómo es / para qué</th>\n<th>¿Volumétrico?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Aforado</strong></td>\n<td><strong>Señal que marca un volumen determinado</strong>. Para preparar <strong>disoluciones de volumen concreto</strong></td>\n<td><strong>VOLUMÉTRICO</strong></td>\n</tr>\n<tr>\n<td><strong>Base redonda</strong></td>\n<td>Parecido al aforado, con <strong>base redonda</strong> y <strong>marca esmerilada</strong></td>\n<td>NO volumétrico</td>\n</tr>\n<tr>\n<td><strong>Erlenmeyer</strong></td>\n<td><strong>Mucha base, cuello largo</strong>. Para <strong>agitación fuerte sin salpicar</strong></td>\n<td>NO volumétrico</td>\n</tr>\n<tr>\n<td><strong>Kitasato</strong></td>\n<td><strong>Boca de vacío con saliente para goma</strong>. Útil para <strong>filtrar disoluciones</strong></td>\n<td>NO volumétrico</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "<strong>solo el aforado es volumétrico</strong>, porque solo él tiene una raya que marca un volumen exacto. El <strong>Erlenmeyer</strong> es triangular: por su base ancha y cuello estrecho puedes agitar sin que salte el líquido. El <strong>Kitasato</strong> se parece al Erlenmeyer pero tiene un <strong>tubito lateral</strong> para conectar una goma de vacío.",
+     "truco": "<strong>\"A-B-E-K\"</strong> y <strong>solo la A mide</strong> (Aforado). <strong>Erlenmeyer = Embudo al revés (triángulo)</strong> · <strong>Kitasato = el que tiene \"oreja\"</strong> (el tubito lateral).",
+     "q": "¿Qué tipos de matraz hay, para qué sirve cada uno y cuál es volumétrico?",
+     "n": 8
+    },
+    {
+     "titulo": "Pipetas manuales: aforadas, graduadas y Pasteur",
+     "lv": 1,
+     "fuente": "Diapositiva 15",
+     "defs": [
+      {
+       "t": "Pera / pipeteador",
+       "facil": "Accesorio de goma que se pone arriba de la pipeta para aspirar sin usar la boca. <strong>Aspirar:</strong> chupar el líquido hacia dentro. <strong>Expulsar:</strong> soltarlo."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/004.jpg\" width=\"304\" height=\"166\" loading=\"lazy\" decoding=\"async\" alt=\"Pipetas aforadas (volumétricas)\" loading=\"lazy\"><figcaption>Pipetas aforadas (volumétricas)</figcaption></figure><figure><img src=\"img/005.jpg\" width=\"208\" height=\"243\" loading=\"lazy\" decoding=\"async\" alt=\"Pipetas Pasteur (no volumétricas)\" loading=\"lazy\"><figcaption>Pipetas Pasteur (no volumétricas)</figcaption></figure><figure><img src=\"img/006.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Pipeta Pasteur en uso\" loading=\"lazy\"><figcaption>Pipeta Pasteur en uso</figcaption></figure></div>\n\n<ul>\n<li>La aspiración y expulsión se hace <strong>con la mano</strong>, con ayuda de <strong>peras o pipeteadores</strong>.</li>\n<li>Son <strong>parecidas a las buretas, pero sin llave</strong>. Suelen ser <strong>de vidrio</strong> y <strong>se lavan cada vez que se usan</strong>.</li>\n<li>Pueden ser <strong>aforadas o graduadas (volumétricas)</strong>, o <strong>pipetas Pasteur (no volumétricas)</strong>, con un <strong>chupete parecido a un cuentagotas</strong>.</li>\n</ul>",
+     "entiende": "la <strong>Pasteur</strong> es un <strong>cuentagotas</strong>: sirve para pasar unas gotas, pero <strong>no mide</strong>. Las aforadas y graduadas sí miden.",
+     "truco": "<strong>\"Pasteur = cuentagotas = no mide\"</strong>.",
+     "q": "¿Cómo se usan las pipetas manuales, qué tipos hay y cuál no es volumétrica?",
+     "n": 9
+    },
+    {
+     "titulo": "Pipetas automáticas (micropipetas) y electrónicas",
+     "lv": 1,
+     "fuente": "Diapositivas 16, 17 y 8",
+     "defs": [
+      {
+       "t": "Émbolo",
+       "facil": "El botón que aprietas con el pulgar y que empuja el aire dentro de la pipeta. <strong>Punta:</strong> la pieza de plástico desechable que se pone en la parte de abajo."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/007.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Micropipetas (automáticas)\" loading=\"lazy\"><figcaption>Micropipetas (automáticas)</figcaption></figure><figure><img src=\"img/008.jpg\" width=\"520\" height=\"300\" loading=\"lazy\" decoding=\"async\" alt=\"Pipetas electrónicas\" loading=\"lazy\"><figcaption>Pipetas electrónicas</figcaption></figure></div>\n\n<ul>\n<li><strong>Automáticas (micropipetas):</strong> la aspiración y expulsión se hace <strong>mediante émbolo</strong>, una vez marcado el volumen deseado. <strong>Se cambia de punta cada vez que se recoge una nueva muestra</strong>, para evitar contaminaciones.</li>\n<li><strong>Electrónicas:</strong> la aspiración y expulsión se hace <strong>de modo electrónico</strong>, una vez marcado el volumen, <strong>sin intervención humana</strong>.</li>\n</ul>",
+     "truco": "<strong>Manual = mano y pera · Automática = émbolo (pulgar) · Electrónica = botón (máquina)</strong>. Y <strong>\"una muestra, una punta\"</strong>.",
+     "q": "¿Qué diferencia hay entre una micropipeta y una pipeta electrónica? ¿Por qué se cambia la punta?",
+     "n": 10
+    },
+    {
+     "titulo": "Aforado, graduado y enrase",
+     "lv": 1,
+     "fuente": "Diapositiva 18",
+     "tituloHtml": "Aforado, graduado y enrase <span class=\"note\">Concepto clave</span>",
+     "defs": [
+      {
+       "t": "Menisco",
+       "facil": "La curva que forma la superficie del líquido dentro de un tubo estrecho. <strong>Cóncavo:</strong> curvado hacia dentro, como una cuchara (más bajo en el centro)."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/009.jpg\" width=\"99\" height=\"103\" loading=\"lazy\" decoding=\"async\" alt=\"Enrase: se lee por la parte baja del menisco\" loading=\"lazy\"><figcaption>Enrase: se lee por la parte baja del menisco</figcaption></figure></div>\n\n<ul>\n<li>El material volumétrico puede ser <strong>aforado</strong> (marca <strong>un volumen concreto</strong>) o <strong>graduado</strong> (marca <strong>un rango graduado</strong> de volumen).</li>\n<li><strong>Enrase:</strong> <strong>llenar el recipiente hasta una marca</strong> que indica un volumen concreto. Es importante saber dónde está el límite: el volumen <strong>se mide por el menisco</strong>, la <strong>forma cóncava</strong> que forma la disolución.</li>\n</ul>",
+     "entiende": "el agua \"se sube\" un poco por las paredes del tubo y forma una sonrisa (U). ⚠️ (la profe no lo detalla) <strong>Se lee por la parte de abajo de esa curva</strong>, con los ojos a la altura de la marca.",
+     "truco": "<strong>Aforado = 1 raya (un volumen) · Graduado = muchas rayas (una regla)</strong>. <strong>Enrase = el fondo de la sonrisa toca la raya</strong>.",
+     "q": "¿Qué diferencia hay entre aforado y graduado? ¿Qué es enrasar y cómo se lee el volumen?",
+     "n": 11
+    },
+    {
+     "titulo": "Recapitulación: volumétrico y no volumétrico",
+     "lv": 1,
+     "fuente": "Diapositiva 19",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Volumétrico</th>\n<th>No volumétrico</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bureta</td>\n<td>Matraz de <strong>base redonda / destilación</strong></td>\n</tr>\n<tr>\n<td>Probeta</td>\n<td>Matraz <strong>Erlenmeyer</strong></td>\n</tr>\n<tr>\n<td>Matraz <strong>aforado</strong></td>\n<td>Matraz <strong>Kitasato</strong></td>\n</tr>\n<tr>\n<td>Pipetas <strong>aforadas / graduadas / automáticas / electrónicas</strong></td>\n<td>Pipetas <strong>Pasteur</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "de los matraces <strong>solo mide el aforado</strong>; de las pipetas <strong>solo NO mide la Pasteur</strong>. Son las dos \"excepciones\" que preguntan.",
+     "q": "Clasifica en volumétrico o no: Erlenmeyer, probeta, Pasteur, matraz aforado, Kitasato, micropipeta.",
+     "n": 12
+    },
+    {
+     "titulo": "Material no volumétrico (I): tubos, vasos, cristalizador",
+     "lv": 1,
+     "fuente": "Diapositivas 20 y 21",
+     "defs": [
+      {
+       "t": "Fuerza centrífuga",
+       "facil": "La fuerza que empuja hacia fuera al girar muy rápido. <strong>Evaporar:</strong> pasar de líquido a gas. <strong>Cristalizar:</strong> formarse cristales sólidos al quedarse sin líquido. <strong>Soluto:</strong> la sustancia que está disuelta."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/010.jpg\" width=\"240\" height=\"116\" loading=\"lazy\" decoding=\"async\" alt=\"Tubo de centrífuga\" loading=\"lazy\"><figcaption>Tubo de centrífuga</figcaption></figure><figure><img src=\"img/011.jpg\" width=\"171\" height=\"217\" loading=\"lazy\" decoding=\"async\" alt=\"Vaso de precipitados\" loading=\"lazy\"><figcaption>Vaso de precipitados</figcaption></figure><figure><img src=\"img/012.jpg\" width=\"265\" height=\"175\" loading=\"lazy\" decoding=\"async\" alt=\"Tubos de ensayo (en gradilla)\" loading=\"lazy\"><figcaption>Tubos de ensayo (en gradilla)</figcaption></figure><figure><img src=\"img/013.jpg\" width=\"254\" height=\"199\" loading=\"lazy\" decoding=\"async\" alt=\"Cristalizador\" loading=\"lazy\"><figcaption>Cristalizador</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Cómo es y para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Tubos de centrífuga</strong></td>\n<td>Recipientes <strong>aptos para someterlos a una fuerza centrífuga</strong>. De diferentes tamaños y formas</td>\n</tr>\n<tr>\n<td><strong>Vaso de precipitados</strong></td>\n<td><strong>Forma de vaso</strong>, pero <strong>graduado</strong> y con <strong>pico</strong> para verter sin derramar. Para <strong>calentar, mezclar sin mucha exactitud, retener…</strong></td>\n</tr>\n<tr>\n<td><strong>Tubos de ensayo</strong></td>\n<td>Tubos cilíndricos de vidrio o plástico, con o sin tapón. Hay graduados, <strong>pero lo normal es que no lo estén</strong>. Para <strong>mezclas, variaciones de temperatura u otras pruebas</strong></td>\n</tr>\n<tr>\n<td><strong>Cristalizador</strong></td>\n<td><strong>Vidrio grueso, base ancha y poca altura</strong>. Para que un disolvente <strong>se evapore</strong> y el sólido o soluto <strong>cristalice</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "el <strong>vaso de precipitados</strong> tiene rayas, pero es <strong>no volumétrico</strong>: sus rayas son orientativas, \"sin mucha exactitud\". ¡Es pregunta trampa típica!",
+     "truco": "<strong>\"El vaso tiene rayas pero miente\"</strong> (no volumétrico). <strong>Cristalizador = plato hondo para que se seque y salgan cristales</strong> (como las salinas).",
+     "q": "¿Para qué sirve el cristalizador? ¿Es volumétrico el vaso de precipitados aunque esté graduado?",
+     "n": 13
+    },
+    {
+     "titulo": "Embudos",
+     "lv": 1,
+     "fuente": "Diapositiva 22",
+     "defs": [
+      {
+       "t": "Trasvasar",
+       "facil": "Pasar un líquido de un recipiente a otro. <strong>Filtrar:</strong> separar un sólido de un líquido haciéndolo pasar por un filtro."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/014.jpg\" width=\"224\" height=\"224\" loading=\"lazy\" decoding=\"async\" alt=\"Embudo\" loading=\"lazy\"><figcaption>Embudo</figcaption></figure><figure><img src=\"img/015.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Embudo Büchner (porcelana)\" loading=\"lazy\"><figcaption>Embudo Büchner (porcelana)</figcaption></figure></div>\n\n<ul>\n<li><strong>De vidrio, de plástico o de porcelana.</strong></li>\n<li>Sirven para <strong>trasvasar líquidos a matraces de cuello estrecho</strong>.</li>\n<li>También para <strong>filtrar</strong>, con un <strong>papel de filtro</strong> que separa las partículas sólidas del líquido.</li>\n<li>El <strong>Büchner</strong> (de porcelana, con agujeritos) <strong>filtra sustancias con vacío</strong> (diapositiva 29).</li>\n</ul>",
+     "entiende": "el <strong>Büchner + Kitasato</strong> van juntos: el Büchner se pone encima del Kitasato y la goma de vacío \"chupa\" el líquido. ⚠️ (la profe no los une en una diapositiva; es como se usan en la práctica)",
+     "truco": "<strong>Büchner = Bandeja con agujeros</strong>. <strong>Büchner arriba, Kitasato abajo</strong>.",
+     "q": "¿Para qué se usan los embudos y qué tiene de especial el Büchner?",
+     "n": 14
+    },
+    {
+     "titulo": "Cristalería auxiliar: refrigerante, vidrio de reloj, frasco lavador, termómetro",
+     "lv": 1,
+     "fuente": "Diapositivas 23 y 24",
+     "defs": [
+      {
+       "t": "Destilación",
+       "facil": "Separar líquidos calentándolos hasta que se evaporan y luego enfriando el vapor. <strong>Cóncavo-convexo:</strong> curvado hacia dentro por un lado y hacia fuera por el otro (como una lente). <strong>Precipitado:</strong> el sólido que se forma y queda en el fondo. <strong>Agua destilada:</strong> agua purificada por destilación."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/016.jpg\" width=\"275\" height=\"183\" loading=\"lazy\" decoding=\"async\" alt=\"Tubo refrigerante\" loading=\"lazy\"><figcaption>Tubo refrigerante</figcaption></figure><figure><img src=\"img/017.jpg\" width=\"212\" height=\"243\" loading=\"lazy\" decoding=\"async\" alt=\"Montaje de destilación\" loading=\"lazy\"><figcaption>Montaje de destilación</figcaption></figure><figure><img src=\"img/018.jpg\" width=\"225\" height=\"90\" loading=\"lazy\" decoding=\"async\" alt=\"Vidrio de reloj\" loading=\"lazy\"><figcaption>Vidrio de reloj</figcaption></figure><figure><img src=\"img/019.jpg\" width=\"275\" height=\"250\" loading=\"lazy\" decoding=\"async\" alt=\"Frasco lavador\" loading=\"lazy\"><figcaption>Frasco lavador</figcaption></figure><figure><img src=\"img/020.jpg\" width=\"254\" height=\"257\" loading=\"lazy\" decoding=\"async\" alt=\"Termómetro\" loading=\"lazy\"><figcaption>Termómetro</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Tubo refrigerante</strong></td>\n<td>De vidrio. <strong>Transforma a fase líquida los gases generados en la destilación</strong></td>\n</tr>\n<tr>\n<td><strong>Vidrio de reloj</strong></td>\n<td><strong>Lámina de vidrio cóncavo-convexa</strong> para <strong>pesar sólidos</strong> y <strong>recoger el precipitado</strong> de la evaporación de un disolvente</td>\n</tr>\n<tr>\n<td><strong>Frasco lavador</strong></td>\n<td><strong>Bote de plástico con boquilla</strong> para <strong>enjuagar con agua destilada</strong> el instrumental de vidrio</td>\n</tr>\n<tr>\n<td><strong>Termómetro</strong></td>\n<td>Para <strong>conocer la temperatura</strong> de la sustancia de estudio</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "el <strong>refrigerante</strong> es un tubo con agua fría alrededor: el vapor caliente pasa por dentro, se enfría y <strong>vuelve a ser líquido</strong> (como el vaho en el espejo del baño).",
+     "truco": "<strong>Refrigerante = \"nevera\" del vapor</strong> · <strong>Vidrio de reloj = parece el cristal de un reloj</strong> · <strong>Frasco lavador = el bote de ketchup del laboratorio</strong>.",
+     "q": "¿Para qué sirven el tubo refrigerante, el vidrio de reloj y el frasco lavador?",
+     "n": 15
+    },
+    {
+     "titulo": "Porcelana y metal: cápsula, crisol, cuchara espátula",
+     "lv": 1,
+     "fuente": "Diapositivas 25 y 26",
+     "defs": [
+      {
+       "t": "Vitrificado",
+       "facil": "Con una capa brillante como de vidrio. <strong>Fundir:</strong> pasar de sólido a líquido con calor. <strong>Calcinar:</strong> calentar a muy alta temperatura hasta reducir a cenizas. <strong>Grafito:</strong> forma de carbono (la mina del lápiz)."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/021.jpg\" width=\"217\" height=\"97\" loading=\"lazy\" decoding=\"async\" alt=\"Cápsulas de porcelana\" loading=\"lazy\"><figcaption>Cápsulas de porcelana</figcaption></figure><figure><img src=\"img/022.jpg\" width=\"259\" height=\"216\" loading=\"lazy\" decoding=\"async\" alt=\"Crisol\" loading=\"lazy\"><figcaption>Crisol</figcaption></figure><figure><img src=\"img/023.jpg\" width=\"264\" height=\"261\" loading=\"lazy\" decoding=\"async\" alt=\"Cuchara espátula\" loading=\"lazy\"><figcaption>Cuchara espátula</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Cómo es y para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Cápsula de porcelana</strong></td>\n<td><strong>Cerámica vitrificada</strong>, con o sin pico. Para <strong>calentar o fundir</strong> sustancias, o <strong>separar mezclas por evaporación</strong></td>\n</tr>\n<tr>\n<td><strong>Crisol</strong></td>\n<td>De <strong>porcelana, cuarzo y grafito</strong>, con o sin tapa. <strong>Soporta más de 500 ºC</strong>. Para <strong>calentar, fundir, quemar y calcinar</strong></td>\n</tr>\n<tr>\n<td><strong>Cuchara espátula</strong></td>\n<td><strong>Espátula por un lado y cuchara por el otro</strong>. Para <strong>trasvasar sólidos</strong> y <strong>pesar pequeñas cantidades</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "la <strong>cápsula</strong> es un \"cuenco bajito\" y el <strong>crisol</strong> un \"vasito alto con tapa\" para el fuego más fuerte.",
+     "truco": "<strong>Crisol = Calcinar</strong> (las dos con C) y <strong>\"+500 ºC\"</strong>.",
+     "q": "¿Qué diferencia hay entre la cápsula de porcelana y el crisol? ¿A qué temperatura resiste el crisol?",
+     "n": 16
+    },
+    {
+     "titulo": "Microbiología y microscopio: placa Petri, mechero, portaobjetos, asa",
+     "lv": 1,
+     "fuente": "Diapositivas 26, 27 y 28",
+     "defs": [
+      {
+       "t": "Colonia",
+       "facil": "Grupo de microorganismos que crecen juntos a partir de uno. <strong>Microorganismo:</strong> ser vivo microscópico (bacteria, hongo…). <strong>Sembrar:</strong> poner la muestra en el medio de cultivo para que crezca."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/024.jpg\" width=\"354\" height=\"209\" loading=\"lazy\" decoding=\"async\" alt=\"Placa Petri\" loading=\"lazy\"><figcaption>Placa Petri</figcaption></figure><figure><img src=\"img/025.jpg\" width=\"224\" height=\"303\" loading=\"lazy\" decoding=\"async\" alt=\"Mechero Bunsen\" loading=\"lazy\"><figcaption>Mechero Bunsen</figcaption></figure><figure><img src=\"img/026.jpg\" width=\"252\" height=\"255\" loading=\"lazy\" decoding=\"async\" alt=\"Portaobjetos\" loading=\"lazy\"><figcaption>Portaobjetos</figcaption></figure><figure><img src=\"img/027.jpg\" width=\"207\" height=\"117\" loading=\"lazy\" decoding=\"async\" alt=\"Asa de siembra\" loading=\"lazy\"><figcaption>Asa de siembra</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Material</th>\n<th>Cómo es y para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Placa Petri</strong></td>\n<td><strong>Redonda, de vidrio o plástico, con tapa</strong>. Para el <strong>cultivo de colonias de microorganismos</strong></td>\n</tr>\n<tr>\n<td><strong>Mechero Bunsen</strong></td>\n<td><strong>Fuente de calor</strong> para <strong>calentar o esterilizar</strong> muestras o reactivos químicos</td>\n</tr>\n<tr>\n<td><strong>Portaobjetos</strong></td>\n<td><strong>Hoja fina y rectangular</strong> de material transparente donde se coloca lo que se va a <strong>observar al microscopio</strong></td>\n</tr>\n<tr>\n<td><strong>Asa de siembra</strong> ⚠️</td>\n<td>Material con un <strong>filamento con un aro de 5 mm en la punta</strong>. Para <strong>sembrar muestras de microorganismos</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>⚠️ <strong>Ojo:</strong> en la diapositiva 28 la profe describe el material pero <strong>no escribe su nombre</strong>: es el <strong>asa de siembra</strong> (o asa de Kolle). Apréndete el nombre y el dato del <strong>aro de 5 mm</strong>.</p>",
+     "truco": "<strong>Petri = \"plato con tapa\"</strong> · <strong>Mechero = \"fuego que esteriliza\"</strong> · <strong>Asa = \"aro de 5 mm para sembrar\"</strong>.",
+     "q": "¿Para qué sirven la placa Petri, el mechero Bunsen, el portaobjetos y el asa de siembra?",
+     "extra": [
+      {
+       "tras": "q",
+       "html": "<div class=\"prof-t\"><p><strong>1.4 Material de porcelana y de metal</strong></p></div>"
+      }
+     ],
+     "n": 17
+    },
+    {
+     "titulo": "Material de porcelana",
+     "lv": 1,
+     "fuente": "Diapositiva 29",
+     "defs": [
+      {
+       "t": "Poroso",
+       "facil": "Con muchos agujeritos diminutos en su superficie."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/015.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Embudo Büchner: filtra con vacío\" loading=\"lazy\"><figcaption>Embudo Büchner: filtra con vacío</figcaption></figure><figure><img src=\"img/022.jpg\" width=\"259\" height=\"216\" loading=\"lazy\" decoding=\"async\" alt=\"Crisol: para calcinar\" loading=\"lazy\"><figcaption>Crisol: para calcinar</figcaption></figure></div>\n\n<ul>\n<li>Preparado para <strong>calentar sustancias a temperaturas elevadas</strong>.</li>\n<li>Es <strong>poroso</strong>: eso es clave para soportar el calor, <strong>pero a la vez produce contaminaciones</strong> por retención de la sustancia (<strong>adsorción/desorción</strong>).</li>\n<li>Esta gran desventaja hace que <strong>su uso sea cada vez menos frecuente</strong>.</li>\n</ul>",
+     "entiende": "los poros son como los de una esponja: aguantan el calor, pero <strong>se quedan restos dentro</strong> que luego salen en la siguiente muestra.",
+     "truco": "<strong>Porcelana = Poros = Pros (calor) y contras (contamina)</strong>.",
+     "q": "¿Por qué la porcelana se usa cada vez menos?",
+     "n": 18
+    },
+    {
+     "titulo": "Material de metal: de soporte",
+     "lv": 2,
+     "fuente": "Diapositiva 30",
+     "defs": [
+      {
+       "t": "Nuez",
+       "facil": "Pieza que une una pinza o un aro a la varilla del soporte. <strong>Gradilla:</strong> soporte con agujeros para colocar tubos de ensayo de pie. <strong>Escobilla:</strong> cepillo para limpiar el interior de tubos y frascos. <strong>Trípode:</strong> soporte de tres patas para calentar encima."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/028.jpg\" width=\"265\" height=\"190\" loading=\"lazy\" decoding=\"async\" alt=\"Trípode\" loading=\"lazy\"><figcaption>Trípode</figcaption></figure><figure><img src=\"img/029.jpg\" width=\"266\" height=\"190\" loading=\"lazy\" decoding=\"async\" alt=\"Gradilla\" loading=\"lazy\"><figcaption>Gradilla</figcaption></figure></div>\n\n<p>el metal está enfocado a <strong>ayudar como soporte</strong>: <strong>aros, trípodes, nuez, pinzas, soportes de pie, espátulas, gradillas y escobillas</strong>.</p>",
+     "truco": "<strong>Truco (8 objetos):</strong> <strong>\"A-T-N-P-S-E-G-E\"</strong> → \"<strong>A</strong>na <strong>T</strong>iene <strong>N</strong>ueve <strong>P</strong>erros <strong>S</strong>in <strong>E</strong>scoba, <strong>G</strong>atos y <strong>E</strong>rizos\".",
+     "q": "¿Para qué se usa el material de metal? Di 5 ejemplos.",
+     "n": 19
+    },
+    {
+     "titulo": "Vocabulario imprescindible",
+     "lv": 1,
+     "fuente": "Diapositiva 31",
+     "tituloHtml": "Vocabulario imprescindible <span class=\"note\">Conceptos clave</span>",
+     "defs": [
+      {
+       "t": "Reproducibilidad",
+       "facil": "Que al repetir la medida sale siempre lo mismo."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Concepto</th>\n<th>Definición de la profe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Adsorción</strong></td>\n<td>Retención de moléculas/iones por el material, entre una fase sólida y una líquida</td>\n</tr>\n<tr>\n<td><strong>Desorción</strong></td>\n<td>Proceso inverso: la sustancia retenida pasa de nuevo a la disolución</td>\n</tr>\n<tr>\n<td><strong>Enrase</strong></td>\n<td>Llenar el recipiente hasta la marca que indica un volumen concreto (<strong>se mide por el menisco</strong>)</td>\n</tr>\n<tr>\n<td><strong>Aforado / graduado</strong></td>\n<td>Marca un volumen concreto / marca un rango graduado de volumen</td>\n</tr>\n<tr>\n<td><strong>Exactitud</strong></td>\n<td><strong>Valor verdadero o real</strong> de una medida</td>\n</tr>\n<tr>\n<td><strong>Precisión</strong></td>\n<td><strong>Reproducibilidad</strong> de una medida; <strong>no implica que sea el valor verdadero</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "💡 <strong>Entiéndelo con una diana:</strong> <strong>exacto</strong> = das en el centro. <strong>Preciso</strong> = todos los dardos caen juntos, aunque sea lejos del centro. Puedes ser <strong>muy preciso y poco exacto</strong> (siempre fallas igual).",
+     "truco": "<strong>Exactitud = Exactamente el valor real</strong> · <strong>Precisión = Parecido cada vez (se repite)</strong>.",
+     "q": "¿Qué diferencia hay entre exactitud y precisión? Pon el ejemplo de la diana.",
+     "n": 20
+    }
+   ],
+   "min": 185
+  },
+  {
+   "titulo": "Limpieza, desinfección y esterilización",
+   "conceptos": [
+    {
+     "titulo": "Los tres procesos",
+     "lv": 1,
+     "fuente": "Diapositivas 32, 33 y 35",
+     "defs": [
+      {
+       "t": "Protocolo",
+       "facil": "Serie de pasos escritos que hay que seguir siempre igual."
+      }
+     ],
+     "prof": "<p><strong>Limpieza → Desinfección → Esterilización</strong>.</p>\n<ul>\n<li>La limpieza es <strong>fundamental</strong> y forma parte de un <strong>protocolo adecuado de trabajo</strong>.</li>\n<li>Las contaminaciones por falta de limpieza <strong>interfieren en los resultados</strong> (recuerda la <strong>adsorción/desorción</strong>).</li>\n<li><strong>No es la limpieza de tu casa</strong>: es un procedimiento de trabajo <strong>por ti, por tus compañeros y por los resultados</strong>.</li>\n<li>En los laboratorios clínicos se usa mucho <strong>plástico desechable</strong> para evitar contaminaciones, pero hay material básico (<strong>pipetas, vasos de precipitados, buretas…</strong>) que <strong>hay que limpiar cada vez que se usa</strong>.</li>\n</ul>",
+     "truco": "<strong>\"Li-Des-Es\"</strong> en orden de <strong>menos a más</strong>: quitas la suciedad → matas la mayoría → matas <strong>todo</strong>.",
+     "q": "¿Cuáles son los tres procesos para dejar el material en condiciones y en qué orden?",
+     "n": 21
+    },
+    {
+     "titulo": "Caso práctico: el antidopaje",
+     "lv": 1,
+     "fuente": "Diapositiva 34",
+     "defs": [
+      {
+       "t": "µg/ml (microgramos por mililitro)",
+       "facil": "Cantidad de sustancia por cada mililitro; un microgramo es la millonésima parte de un gramo. <strong>Betabloqueante:</strong> tipo de medicamento para el corazón, prohibido en algunos deportes."
+      }
+     ],
+     "prof": "<p>en un análisis antidopaje se mide el betabloqueante \"X\" en orina. <strong>Por encima de 4 µg/ml es dopaje</strong>. El técnico obtiene <strong>4,05 µg/ml</strong>, pero dice que es un error por <strong>falta de limpieza del material</strong> del compañero que lo usó antes. Resultado: <strong>el deportista no puede competir</strong> por un error de protocolo, y <strong>no hay solución</strong>: <strong>los análisis antidopaje solo se pueden hacer una vez</strong>.</p>",
+     "entiende": "0,05 µg/ml de restos (una cantidad diminuta) bastaron para cambiar el resultado. <strong>Moraleja:</strong> una mala limpieza tiene consecuencias reales e irreversibles.",
+     "q": "¿Qué enseña el caso del antidopaje sobre la limpieza del material?",
+     "n": 22
+    },
+    {
+     "titulo": "Limpieza a tres niveles",
+     "lv": 1,
+     "fuente": "Diapositiva 36",
+     "defs": [
+      {
+       "t": "Soluble en agua",
+       "facil": "Que se disuelve en agua. <strong>Disolvente:</strong> líquido capaz de disolver otras sustancias. <strong>Orgánico:</strong> compuesto basado en carbono (ver concepto 37)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Nivel</th>\n<th>Qué incluye</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Personal</strong></td>\n<td><strong>Bata o mono</strong> de seguridad. La ropa <strong>se lava en el propio centro</strong> (lavado agresivo, evita traer contaminantes de casa). <strong>Pelo largo recogido</strong>. <strong>Lavado de manos y guantes</strong></td>\n</tr>\n<tr>\n<td><strong>Laboratorio</strong></td>\n<td>Mesa, estanterías y zonas comunes <strong>ordenadas y limpias</strong> → <strong>menos interferencias</strong> en el análisis y <strong>más seguridad</strong></td>\n</tr>\n<tr>\n<td><strong>Material</strong></td>\n<td>Lo más común es <strong>a mano</strong>, aunque cada vez se usan más <strong>máquinas de lavado</strong> (conviene <strong>enjuagar antes</strong>). Los compuestos <strong>solubles en agua no requieren disolventes agresivos</strong>. <strong>Restos orgánicos: etanol o acetona</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>\"Yo, mi mesa y mis cosas\"</strong> (Personal, Laboratorio, Material). Y <strong>\"lo orgánico se va con E o A\"</strong> (Etanol o Acetona).",
+     "q": "¿En qué tres niveles se mantiene la limpieza y qué se usa para limpiar restos orgánicos?",
+     "n": 23
+    },
+    {
+     "titulo": "Desinfección",
+     "lv": 1,
+     "fuente": "Diapositiva 38",
+     "defs": [
+      {
+       "t": "Espora",
+       "facil": "Forma de resistencia de algunas bacterias y hongos, como una \"semilla blindada\" que aguanta casi todo. <strong>Proliferación:</strong> multiplicación rápida."
+      }
+     ],
+     "prof": "<ul>\n<li>Elimina <strong>la mayoría</strong> de los microorganismos, <strong>excepto las esporas</strong>.</li>\n<li>Suele hacerse con <strong>agentes químicos</strong>.</li>\n<li>Aun así, <strong>la limpieza y el orden son la mayor garantía</strong> para evitar la proliferación de gérmenes y bacterias.</li>\n</ul>",
+     "q": "¿Qué elimina la desinfección y qué no? ¿Con qué se hace?",
+     "n": 24
+    },
+    {
+     "titulo": "Esterilización",
+     "lv": 1,
+     "fuente": "Diapositivas 39 y 40",
+     "defs": [
+      {
+       "t": "Autoclave",
+       "facil": "Aparato como una olla a presión gigante que esteriliza con vapor de agua caliente a presión. <strong>Calor húmedo:</strong> calor con vapor de agua."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/030.jpg\" width=\"237\" height=\"198\" loading=\"lazy\" decoding=\"async\" alt=\"Autoclave con frascos dentro\" loading=\"lazy\"><figcaption>Autoclave con frascos dentro</figcaption></figure></div>\n\n<ul>\n<li>Elimina <strong>todos</strong> los microorganismos (<strong>también las esporas</strong>).</li>\n<li>Con <strong>agentes químicos y/o físicos</strong>.</li>\n<li>Lo más habitual: <strong>calor húmedo</strong> con <strong>autoclave</strong>, que usa <strong>calor húmedo a alta presión</strong>.</li>\n<li>El autoclave no solo destruye microorganismos en material limpio: a veces interesa <strong>eliminar toda forma de vida de una disolución</strong>.</li>\n<li>Es <strong>el último proceso</strong> para una limpieza completa, pero <strong>no siempre hace falta llegar a esterilizar</strong>: casi nunca hay que eliminar contaminantes de microorganismos. <strong>Todo depende del ensayo</strong>.</li>\n</ul>",
+     "truco": "<strong>Desinfección = Deja las esporas</strong> · <strong>Esterilización = Elimina todo</strong>. <strong>Autoclave = olla exprés</strong>.",
+     "q": "¿Qué diferencia hay entre desinfectar y esterilizar? ¿Cómo funciona el autoclave? ¿Siempre hay que esterilizar?",
+     "n": 25
+    }
+   ],
+   "min": 25
+  },
+  {
+   "titulo": "El agua del laboratorio",
+   "conceptos": [
+    {
+     "titulo": "El agua: el disolvente más usado",
+     "lv": 1,
+     "fuente": "Diapositiva 42",
+     "defs": [
+      {
+       "t": "Incolora, inodora, insípida",
+       "facil": "Sin color, sin olor, sin sabor. <strong>Impureza:</strong> cualquier sustancia que no debería estar."
+      }
+     ],
+     "prof": "<ul>\n<li>El agua líquida es <strong>incolora, inodora e insípida</strong>.</li>\n<li>Pura, es <strong>uno de los disolventes más utilizados</strong>.</li>\n<li><strong>No se usa agua corriente</strong>: el agua apta para el consumo humano <strong>contiene sales</strong>.</li>\n<li>El agua para análisis debe estar <strong>libre de impurezas</strong>, para evitar interacciones químicas → por eso se usan <strong>equipos de purificación</strong>.</li>\n</ul>",
+     "truco": "<strong>\"Grifo = sales = prohibido\"</strong>.",
+     "q": "¿Por qué no se usa agua del grifo en el laboratorio?",
+     "n": 26
+    },
+    {
+     "titulo": "Los 4 tipos de agua",
+     "lv": 1,
+     "fuente": "Diapositivas 43 y 44",
+     "defs": [
+      {
+       "t": "pH",
+       "facil": "Escala de 0 a 14 que mide lo ácido o básico que es algo (7 = neutro). <strong>Cuantitativo:</strong> que mide <strong>cuánto</strong> hay de un compuesto. <strong>Cualitativo:</strong> que mira <strong>qué</strong> cualidades tiene (si está o no, de qué tipo es)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Nombre</th>\n<th>pH</th>\n<th>Uso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>I</strong></td>\n<td><strong>Ultrapura</strong></td>\n<td><strong>7</strong> (neutro)</td>\n<td>Ensayos <strong>cuantitativos</strong>; experimentos con <strong>el mínimo de interferencias</strong></td>\n</tr>\n<tr>\n<td><strong>II</strong></td>\n<td><strong>Analítica</strong></td>\n<td><strong>7</strong></td>\n<td>Ensayos <strong>cuantitativos</strong>, <strong>libre de impurezas orgánicas</strong>. <strong>La que más se consume</strong> en los experimentos analíticos</td>\n</tr>\n<tr>\n<td><strong>III</strong></td>\n<td><strong>General</strong></td>\n<td><strong>7</strong></td>\n<td>Ensayos <strong>cualitativos</strong>. Para <strong>ensayos generales y limpieza del material</strong></td>\n</tr>\n<tr>\n<td><strong>IV</strong></td>\n<td>—</td>\n<td><strong>entre 5 y 8</strong></td>\n<td><strong>Máquinas de lavado (lavavajillas) y autoclave</strong>. <strong>La menos pura</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>Orden de pureza: Tipo I &gt; Tipo II &gt; Tipo III &gt; Tipo IV.</strong></p>",
+     "entiende": "cuanto más fino es el análisis, más pura tiene que ser el agua. Para <strong>medir cantidades</strong> (cuantitativo) → tipo I o II. Para <strong>saber qué es</strong> (cualitativo) → tipo III. Para <strong>la máquina</strong> → tipo IV.",
+     "truco": "<strong>\"Ultra-Ana-Gene-Máquina\"</strong> (I, II, III, IV). <strong>CuaNtitativo = Número (cuánto)</strong> · <strong>CuaLitativo = cuaLidad (qué)</strong>. Y <strong>solo el IV no tiene pH 7</strong> (5-8).",
+     "q": "¿Cuáles son los 4 tipos de agua, su pH y su uso? ¿Cuál es la más consumida y cuál la menos pura?",
+     "n": 27
+    },
+    {
+     "titulo": "Métodos de purificación del agua",
+     "lv": 1,
+     "fuente": "Diapositivas 45 y 46",
+     "defs": [
+      {
+       "t": "Punto de ebullición",
+       "facil": "Temperatura a la que un líquido hierve. <strong>Condensar:</strong> pasar de vapor a líquido. <strong>No volátil:</strong> que no se evapora fácilmente. <strong>Intercambio iónico:</strong> cambiar los iones del agua (sales) por otros inofensivos. <strong>Carbón activo:</strong> carbón muy poroso que atrapa sustancias. <strong>Membrana semipermeable:</strong> lámina que deja pasar unas cosas (el agua) y otras no."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/031.jpg\" width=\"520\" height=\"277\" loading=\"lazy\" decoding=\"async\" alt=\"Ósmosis y ósmosis inversa (con presión)\" loading=\"lazy\"><figcaption>Ósmosis y ósmosis inversa (con presión)</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Método</th>\n<th>Separa el agua por…</th>\n<th>Dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Destilación</strong></td>\n<td>Su <strong>punto de ebullición</strong>: se calienta, se vuelve vapor y se condensa</td>\n<td>Queda libre de impurezas <strong>no volátiles, materia orgánica y bacterias</strong></td>\n</tr>\n<tr>\n<td><strong>Desionización</strong></td>\n<td><strong>Intercambio iónico</strong></td>\n<td><strong>NO elimina la materia orgánica ni los microorganismos</strong></td>\n</tr>\n<tr>\n<td><strong>Adsorción</strong></td>\n<td><strong>Carbón activo</strong>, que adsorbe y retiene partículas</td>\n<td>Sobre todo <strong>impurezas orgánicas</strong></td>\n</tr>\n<tr>\n<td><strong>Filtración</strong></td>\n<td>El <strong>tamaño de la partícula</strong>, con filtros de distinto tamaño de <strong>poro</strong></td>\n<td>—</td>\n</tr>\n<tr>\n<td><strong>Ósmosis inversa</strong></td>\n<td>Una <strong>membrana semipermeable</strong>, gracias a la <strong>presión aplicada</strong></td>\n<td>La membrana deja pasar el agua pero <strong>detiene los contaminantes</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "la <strong>ósmosis</strong> normal es el agua yendo <strong>sola</strong> hacia donde hay más sales. En la <strong>inversa</strong> <strong>empujas con presión</strong> para obligar al agua a ir al revés y dejar las sales atrás (como apretar un colador muy fino).",
+     "truco": "<strong>\"De-De-A-Fi-Os\"</strong>: <strong>De</strong>stilación = hervir · <strong>De</strong>sionización = iones (pero <strong>deja bichos y materia orgánica</strong>) · <strong>A</strong>dsorción = carbón · <strong>Fi</strong>ltración = tamaño · <strong>Ós</strong>mosis inversa = presión + membrana.",
+     "q": "Explica los 5 métodos de purificación del agua. ¿Cuál no elimina la materia orgánica ni los microorganismos?",
+     "n": 28
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Reactivos químicos",
+   "conceptos": [
+    {
+     "titulo": "Cómo se clasifican los reactivos",
+     "lv": 1,
+     "fuente": "Diapositiva 48",
+     "defs": [
+      {
+       "t": "Reactivo",
+       "facil": "Sustancia química que se usa en un análisis para que reaccione o para preparar la muestra."
+      }
+     ],
+     "prof": "<p>según el análisis se usan unos u otros. Se clasifican por:</p>\n<ol>\n<li><strong>Naturaleza química</strong></li>\n<li><strong>Funcionalidad</strong></li>\n<li><strong>Peligrosidad</strong> (se estudiará en la <strong>Unidad 2</strong>, con la seguridad)</li>\n<li><strong>Pureza</strong></li>\n</ol>",
+     "truco": "<strong>\"Na-Fu-Pe-Pu\"</strong> → \"<strong>Na</strong>cho <strong>Fu</strong>ma <strong>Pe</strong>ro <strong>Pu</strong>ro\".",
+     "q": "¿Según qué 4 criterios se clasifican los reactivos? ¿Cuál se estudia en la Unidad 2?",
+     "n": 29
+    },
+    {
+     "titulo": "Según la naturaleza química: orgánicos e inorgánicos",
+     "lv": 1,
+     "fuente": "Diapositiva 50",
+     "defs": [
+      {
+       "t": "Enlace",
+       "facil": "Unión entre átomos. <strong>Esqueleto:</strong> la \"columna\" principal de la molécula."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Orgánicos:</strong> su estructura base es <strong>carbono</strong> y los enlaces que crea con el <strong>hidrógeno y el oxígeno</strong> principalmente (también puede unirse a <strong>halógenos y nitrógeno</strong>).</li>\n<li><strong>Inorgánicos:</strong> combinación de elementos de la tabla periódica cuyo <strong>esqueleto principal no es el carbono</strong>. Por ejemplo, la <strong>sal común (NaCl)</strong> o el <strong>agua (H₂O)</strong>.</li>\n</ul>",
+     "truco": "<strong>¿Tiene una cadena de C con H? → orgánico</strong>. Si no → inorgánico.",
+     "q": "¿Qué diferencia hay entre un compuesto orgánico y uno inorgánico? Pon un ejemplo de cada uno.",
+     "n": 30
+    },
+    {
+     "titulo": "Según la funcionalidad: ácidos, bases, sales y disolventes",
+     "lv": 1,
+     "fuente": "Diapositiva 51",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Ejemplos de la profe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Ácidos</strong></td>\n<td><strong>Ácido clorhídrico (HCl)</strong>, ácido sulfúrico (<strong>H₂SO₄</strong>), ácido fluorhídrico (<strong>HF</strong>)</td>\n</tr>\n<tr>\n<td><strong>Bases</strong></td>\n<td><strong>Hidróxido de sodio (NaOH)</strong>, hidróxido de amonio (<strong>NH₄OH</strong>)</td>\n</tr>\n<tr>\n<td><strong>Sales</strong></td>\n<td><strong>Cloruro de sodio (NaCl)</strong>, fluoruro potásico (<strong>KF</strong>)</td>\n</tr>\n<tr>\n<td><strong>Disolventes</strong></td>\n<td><strong>Agua, acetona, etanol</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>Truco para reconocerlos por la fórmula:</strong> <strong>empieza por H → ácido</strong> (HCl, H₂SO₄, HF) · <strong>acaba en OH → base</strong> (NaOH, NH₄OH) · <strong>metal + no metal sin H ni OH → sal</strong> (NaCl, KF).",
+     "q": "Clasifica según su funcionalidad: NaOH, HCl, acetona, KF, H₂SO₄, NH₄OH.",
+     "n": 31
+    },
+    {
+     "titulo": "Según la pureza: purísimos, generales y especiales",
+     "lv": 1,
+     "fuente": "Diapositivas 52, 53 y 54",
+     "defs": [
+      {
+       "t": "Sintetizar",
+       "facil": "Fabricar un compuesto en el laboratorio. <strong>Cálculo estequiométrico:</strong> cálculo de las cantidades exactas de cada sustancia que reaccionan entre sí."
+      }
+     ],
+     "prof": "<p><strong>todos los compuestos tienen impurezas</strong>, que vienen de cómo se extraen de la naturaleza o se sintetizan. Según la pureza:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Pureza</th>\n<th>Uso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Purísimos</strong></td>\n<td><strong>Alta</strong>, pero <strong>nunca llega al 100 %</strong></td>\n<td>Experimentos con el <strong>mínimo contenido de impurezas</strong></td>\n</tr>\n<tr>\n<td><strong>Generales para análisis</strong></td>\n<td><strong>Media</strong></td>\n<td>Se tienen en cuenta en los <strong>cálculos estequiométricos</strong>, pero <strong>las impurezas no interfieren</strong> en el experimento</td>\n</tr>\n<tr>\n<td><strong>Especiales</strong></td>\n<td><strong>Los más puros</strong></td>\n<td><strong>Equipos instrumentales</strong>, donde las impurezas pueden <strong>interferir</strong> en el análisis o <strong>ensuciar el equipo</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>La pureza viene en la etiqueta:</strong></p>\n<ul>\n<li><strong>Sólido:</strong> <strong>peso</strong> del compuesto puro / peso total (<strong>masa</strong>).</li>\n<li><strong>Líquido y gas:</strong> <strong>volumen</strong> del compuesto puro / volumen total.</li>\n</ul>\n<p>Es importante saber cuánto compuesto puro tienes para hacer los <strong>cálculos estequiométricos</strong>: para que una reacción se complete hay que saber <strong>de qué partimos, sin contar las impurezas</strong>.</p>",
+     "entiende": "ojo con la trampa: los <strong>más puros son los especiales</strong>, no los \"purísimos\" (que suena a más pero va en medio).",
+     "truco": "orden de pureza <strong>\"E &gt; P &gt; G\"</strong> → \"<strong>E</strong>l <strong>P</strong>apa <strong>G</strong>ana\" (Especiales &gt; Purísimos &gt; Generales). Y <strong>\"Sólido = Peso · Líquido = Litros (volumen)\"</strong>.",
+     "q": "¿Cómo se clasifican los reactivos según su pureza? ¿Cuáles son los más puros? ¿Cómo se indica la pureza en la etiqueta de un sólido y de un líquido?",
+     "n": 32
+    },
+    {
+     "titulo": "Reactivos en anatomía patológica",
+     "lv": 1,
+     "fuente": "Diapositiva 56",
+     "defs": [
+      {
+       "t": "Deshidratar",
+       "facil": "Quitar el agua. <strong>Aclarar:</strong> volver transparente el tejido. <strong>Fijar:</strong> conservar el tejido tal como estaba, para que no se degrade. <strong>Caracterizar:</strong> describir cómo es algo."
+      }
+     ],
+     "prof": "<p>en anatomía patológica se estudian los tejidos para el diagnóstico, y se usan reactivos para procesarlos:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Reactivo</th>\n<th>Para qué (según la profe)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Parafina</strong></td>\n<td><strong>Polímero que da consistencia</strong> al tejido</td>\n</tr>\n<tr>\n<td><strong>Xilol</strong></td>\n<td><strong>Elimina el agua</strong> del tejido y <strong>aclara</strong> la muestra: <strong>deshidrata y lo hace transparente</strong></td>\n</tr>\n<tr>\n<td><strong>Etanol</strong></td>\n<td>Alcohol que <strong>elimina el agua</strong> del tejido: <strong>fija y deshidrata</strong></td>\n</tr>\n<tr>\n<td><strong>Tinte</strong></td>\n<td>Los tejidos <strong>se tiñen</strong> para verlos al microscopio y <strong>caracterizarlos</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>⚠️ <strong>Ojo:</strong> la diapositiva llama al xilol \"alcohol\", pero en química el <strong>xilol (xileno)</strong> es un <strong>hidrocarburo aromático</strong>, no un alcohol. En el examen, da la función tal como la dice la profe.</p>",
+     "truco": "<strong>Truco (orden real del procesado):</strong> <strong>E → X → P → T</strong> → \"<strong>E</strong>l <strong>X</strong>ilófono <strong>P</strong>ara <strong>T</strong>ocar\": <strong>E</strong>tanol (quita agua) → <strong>X</strong>ilol (aclara) → <strong>P</strong>arafina (da consistencia) → <strong>T</strong>inte (para ver).",
+     "q": "¿Qué hacen la parafina, el xilol, el etanol y los tintes en anatomía patológica?",
+     "n": 33
+    }
+   ],
+   "min": 25
+  },
+  {
+   "titulo": "Equipos básicos del laboratorio",
+   "conceptos": [
+    {
+     "titulo": "Mobiliario del laboratorio",
+     "lv": 1,
+     "fuente": "Diapositiva 58",
+     "defs": [
+      {
+       "t": "Poyata",
+       "facil": "La mesa fija de trabajo del laboratorio. <strong>Vial:</strong> frasquito pequeño. <strong>Inhalación:</strong> respirar un gas o vapor. <strong>N₂ líquido:</strong> nitrógeno enfriado hasta volverse líquido."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Mueble</th>\n<th>Para qué / dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Mesas / poyatas</strong></td>\n<td>Donde trabaja el personal: frascos, pipetas automáticas, viales, reactivos, puntas, guantes, rotuladores…</td>\n</tr>\n<tr>\n<td><strong>Vitrinas extractoras</strong></td>\n<td>Protegen de <strong>salpicaduras e inhalaciones</strong> con productos que <strong>desprenden vapores, como los ácidos</strong></td>\n</tr>\n<tr>\n<td><strong>Frigoríficos</strong></td>\n<td>Muestras y reactivos a <strong>4-10 ºC</strong></td>\n</tr>\n<tr>\n<td><strong>Congeladores</strong></td>\n<td><strong>Bajo -18 ºC</strong> (primer nivel, como los de casa) o <strong>hasta -80 ºC</strong> para conservar mejor</td>\n</tr>\n<tr>\n<td><strong>Tanques de N₂ líquido</strong></td>\n<td>Para guardar <strong>células o tejidos</strong>. Hasta <strong>-200 ºC</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>Truco de temperaturas (de calor a frío):</strong> <strong>\"4-10 → -18 → -80 → -200\"</strong> = nevera → congelador de casa → ultracongelador → nitrógeno.",
+     "q": "¿Para qué sirven las vitrinas extractoras? ¿A qué temperatura están frigoríficos, congeladores y tanques de nitrógeno?",
+     "n": 34
+    },
+    {
+     "titulo": "Balanzas: granatario y analítica",
+     "lv": 1,
+     "fuente": "Diapositiva 59",
+     "defs": [
+      {
+       "t": "Sensible",
+       "facil": "Que detecta diferencias de peso muy pequeñas. <strong>Error instrumental:</strong> el fallo que comete el propio aparato al medir."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/032.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Granatario\" loading=\"lazy\"><figcaption>Granatario</figcaption></figure><figure><img src=\"img/033.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Balanza analítica (con urna de vidrio)\" loading=\"lazy\"><figcaption>Balanza analítica (con urna de vidrio)</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Balanza</th>\n<th>Para qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Granatario</strong></td>\n<td><strong>Pesadas grandes</strong>. <strong>No es muy sensible</strong>. Ideal para <strong>gran cantidad de reactivo</strong></td>\n</tr>\n<tr>\n<td><strong>Balanza analítica</strong></td>\n<td><strong>Pesadas precisas</strong>, <strong>muy sensible</strong>, <strong>error instrumental mínimo</strong>: fundamental para <strong>pequeñas cantidades</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>Si la pesada debe ser exacta, el reactivo se pesa <strong>dentro de una cavidad de vidrio transparente, resguardado del aire</strong>.</p>",
+     "truco": "<strong>Granatario = Grande</strong> · <strong>Analítica = Al miligramo, en urna de cristal</strong> (el aire movería el plato).",
+     "q": "¿Qué diferencia hay entre un granatario y una balanza analítica? ¿Por qué la analítica tiene urna de vidrio?",
+     "n": 35
+    },
+    {
+     "titulo": "pHmetro y desecadores",
+     "lv": 1,
+     "fuente": "Diapositiva 60",
+     "defs": [
+      {
+       "t": "Anhidro",
+       "facil": "Sin agua. <strong>Desecante:</strong> sustancia que absorbe la humedad (como las bolsitas de gel de sílice de las cajas de zapatos)."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/034.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"pHmetro\" loading=\"lazy\"><figcaption>pHmetro</figcaption></figure><figure><img src=\"img/035.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Desecador\" loading=\"lazy\"><figcaption>Desecador</figcaption></figure></div>\n\n<ul>\n<li><strong>pHmetro:</strong> aparato electrónico que mide la <strong>cantidad de iones hidrógeno</strong> (cargas positivas) de la solución, es decir, <strong>mide el pH</strong>. Permite caracterizar las muestras por su <strong>acidez y basicidad</strong>.</li>\n<li><strong>Desecadores:</strong> recipientes de vidrio con un compuesto que <strong>atrapa las moléculas de agua</strong>. <strong>Deshidratan</strong> una sustancia o <strong>guardan reactivos en ambiente anhidro</strong>, normalmente <strong>creando vacío</strong>. <strong>Las sustancias arriba y el desecante debajo.</strong></li>\n</ul>",
+     "truco": "<strong>desecador = \"la caja de zapatos con bolsita\"</strong>, y <strong>el desecante abajo, la muestra arriba</strong>.",
+     "q": "¿Qué mide el pHmetro? ¿Para qué sirve un desecador y dónde va el desecante?",
+     "n": 36
+    },
+    {
+     "titulo": "Agitadores: magnético, de tubos y vórtex",
+     "lv": 1,
+     "fuente": "Diapositiva 61",
+     "defs": [
+      {
+       "t": "Miscibilidad",
+       "facil": "Capacidad de dos líquidos para mezclarse entre sí."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/036.jpg\" width=\"211\" height=\"239\" loading=\"lazy\" decoding=\"async\" alt=\"Agitador magnético\" loading=\"lazy\"><figcaption>Agitador magnético</figcaption></figure><figure><img src=\"img/037.jpg\" width=\"251\" height=\"201\" loading=\"lazy\" decoding=\"async\" alt=\"Agitador de tubos de centrífuga\" loading=\"lazy\"><figcaption>Agitador de tubos de centrífuga</figcaption></figure><figure><img src=\"img/038.jpg\" width=\"184\" height=\"274\" loading=\"lazy\" decoding=\"async\" alt=\"Vórtex\" loading=\"lazy\"><figcaption>Vórtex</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Agitador</th>\n<th>Cómo funciona</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Magnético</strong></td>\n<td>Un <strong>imán en la placa hace rotar otro imán dentro del matraz</strong>. Puede ser <strong>con o sin calor</strong> (el calor ayuda a la <strong>miscibilidad</strong>)</td>\n</tr>\n<tr>\n<td><strong>De tubos de centrífuga</strong></td>\n<td><strong>Placa con base</strong> donde se meten los tubos; agita por <strong>vibración de la placa</strong></td>\n</tr>\n<tr>\n<td><strong>Vórtex</strong></td>\n<td>Agita <strong>un solo tubo</strong> por vibración, <strong>sujetándolo con la mano</strong>. Para <strong>agitaciones breves</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>Magnético = 2 imanes</strong> · <strong>Tubos = muchos tubos</strong> · <strong>Vórtex = 1 tubo en la mano</strong>.",
+     "q": "¿Cómo funciona el agitador magnético y en qué se diferencia del vórtex?",
+     "n": 37
+    },
+    {
+     "titulo": "Centrífugas",
+     "lv": 1,
+     "fuente": "Diapositiva 62",
+     "defs": [
+      {
+       "t": "Densidad",
+       "facil": "Lo \"pesado\" que es algo para su tamaño. <strong>Plasma:</strong> la parte líquida de la sangre."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/039.jpg\" width=\"144\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Centrífuga\" loading=\"lazy\"><figcaption>Centrífuga</figcaption></figure></div>\n\n<ul>\n<li>Separan una <strong>mezcla líquida en función de su densidad</strong>.</li>\n<li>Se controla la <strong>velocidad</strong> de la fuerza centrífuga y la <strong>temperatura</strong>.</li>\n<li><strong>¿Sabías que…?</strong> La <strong>sangre</strong> se centrifuga para separar el <strong>plasma</strong> (arriba, donde se hacen la mayoría de los análisis) y las <strong>células rojas</strong> (abajo, porque son <strong>más densas</strong>).</li>\n</ul>",
+     "truco": "<strong>\"Lo denso se hunde\"</strong>: lo más pesado (células rojas) abajo, lo ligero (plasma) arriba.",
+     "q": "¿En qué se basa la centrífuga? ¿Qué pasa al centrifugar la sangre?",
+     "n": 38
+    },
+    {
+     "titulo": "Baños, estufas y mantas calefactoras",
+     "lv": 1,
+     "fuente": "Diapositivas 63 y 64",
+     "defs": [
+      {
+       "t": "Baño maría",
+       "facil": "Calentar algo metiéndolo en agua caliente. <strong>kHz (kilohercio):</strong> unidad de frecuencia; mil vibraciones por segundo. <strong>Ultrasonido:</strong> sonido tan agudo que no lo oímos. <strong>Interacción molecular:</strong> las fuerzas que mantienen unidas las moléculas."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/040.jpg\" width=\"254\" height=\"199\" loading=\"lazy\" decoding=\"async\" alt=\"Baño de agua\" loading=\"lazy\"><figcaption>Baño de agua</figcaption></figure><figure><img src=\"img/041.jpg\" width=\"250\" height=\"200\" loading=\"lazy\" decoding=\"async\" alt=\"Baño de ultrasonidos\" loading=\"lazy\"><figcaption>Baño de ultrasonidos</figcaption></figure><figure><img src=\"img/042.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Estufa\" loading=\"lazy\"><figcaption>Estufa</figcaption></figure><figure><img src=\"img/043.jpg\" width=\"257\" height=\"258\" loading=\"lazy\" decoding=\"async\" alt=\"Manta calefactora\" loading=\"lazy\"><figcaption>Manta calefactora</figcaption></figure></div>\n\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Equipo</th>\n<th>Para qué / dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Baño de agua</strong></td>\n<td><strong>Agua destilada calentada</strong> (normalmente a <strong>37 ºC</strong>): un <strong>\"baño maría\"</strong> para mantener disoluciones a una temperatura determinada</td>\n</tr>\n<tr>\n<td><strong>Baño de ultrasonidos</strong></td>\n<td>Agua destilada a la que se aplica una frecuencia de <strong>15 a 400 kHz</strong> para <strong>romper las interacciones moleculares</strong></td>\n</tr>\n<tr>\n<td><strong>Estufa</strong></td>\n<td>Como un <strong>horno</strong>. Para <strong>cultivos celulares (hasta 60 ºC)</strong> o para <strong>secar material de vidrio (hasta 300 ºC)</strong></td>\n</tr>\n<tr>\n<td><strong>Manta calefactora</strong></td>\n<td>Recipiente <strong>hecho con hilo</strong> donde se coloca el <strong>matraz</strong> para <strong>calentarlo sin agitación</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>Truco de números:</strong> <strong>\"Baño 37 · Ultrasonidos 15-400 · Estufa 60/300\"</strong>. <strong>Manta = abrigo del matraz (calienta sin agitar)</strong>.",
+     "q": "¿Para qué sirven el baño de agua, el de ultrasonidos, la estufa y la manta calefactora? Di sus temperaturas o frecuencias.",
+     "n": 39
+    },
+    {
+     "titulo": "Espectrofotómetros",
+     "lv": 1,
+     "fuente": "Diapositivas 65, 66 y 67",
+     "defs": [
+      {
+       "t": "Concentración",
+       "facil": "Cuánta sustancia hay en un volumen de disolución. <strong>Absorción:</strong> la sustancia \"se queda\" con parte de la luz. <strong>Longitud de onda:</strong> distancia entre dos crestas de una onda (se mide en nm, nanómetros). <strong>Oscilar:</strong> moverse de un lado a otro repetidamente."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/044.jpg\" width=\"520\" height=\"276\" loading=\"lazy\" decoding=\"async\" alt=\"Espectro electromagnético (la zona visible va de 400 a 700 nm)\" loading=\"lazy\"><figcaption>Espectro electromagnético (la zona visible va de 400 a 700 nm)</figcaption></figure></div>\n\n<ul>\n<li>Miden la <strong>concentración</strong> de una sustancia en una disolución.</li>\n<li>Se basan en la <strong>absorción molecular</strong> en la región <strong>ultravioleta-visible</strong> del espectro electromagnético.</li>\n<li><strong>Espectro electromagnético:</strong> conjunto de <strong>radiaciones electromagnéticas</strong>, producidas por la <strong>oscilación de los campos eléctrico y magnético</strong>, que se propagan por el espacio.</li>\n<li>En las imágenes (diapositivas 66 y 67): de menor a mayor longitud de onda: <strong>rayos gamma → rayos X → ultravioleta → visible (400 nm azul, 500 nm verde, 600-700 nm rojo) → infrarrojo → microondas → radio</strong>.</li>\n</ul>",
+     "entiende": "cuanto <strong>más concentrada</strong> está una disolución, <strong>más luz absorbe</strong> (un zumo más cargado deja pasar menos luz). El aparato mide esa luz y calcula la concentración. Por eso las cubetas son de <strong>cuarzo</strong>: dejan pasar la luz UV (concepto 3).",
+     "truco": "<strong>Truco del espectro:</strong> <strong>\"Gamma Xavi Usa Ves Infra Micro Radio\"</strong>. Y <strong>visible = 400-700 nm (azul → rojo)</strong>.",
+     "q": "¿Qué mide un espectrofotómetro y en qué se basa? ¿Qué es el espectro electromagnético?",
+     "n": 40
+    },
+    {
+     "titulo": "Microscopios y microtomos",
+     "lv": 1,
+     "fuente": "Diapositiva 68",
+     "defs": [
+      {
+       "t": "Principio físico",
+       "facil": "La ley de la física en la que se basa el aparato (por ejemplo, la luz o los electrones)."
+      }
+     ],
+     "prof": "<div class=\"gal\"><figure><img src=\"img/045.jpg\" width=\"225\" height=\"225\" loading=\"lazy\" decoding=\"async\" alt=\"Microscopio\" loading=\"lazy\"><figcaption>Microscopio</figcaption></figure><figure><img src=\"img/046.jpg\" width=\"279\" height=\"181\" loading=\"lazy\" decoding=\"async\" alt=\"Microtomo\" loading=\"lazy\"><figcaption>Microtomo</figcaption></figure></div>\n\n<ul>\n<li><strong>Microscopios:</strong> instrumentos que <strong>amplían la imagen</strong>. Hay varios tipos según el <strong>principio físico</strong> en que se basan.</li>\n<li><strong>Microtomos:</strong> instrumentos que <strong>cortan tejidos en láminas muy finas</strong> para analizarlos. <strong>Propios del laboratorio de anatomía patológica.</strong></li>\n</ul>",
+     "truco": "<strong>Microscopio = mira</strong> · <strong>Microtomo = corta</strong> (<em>tomo</em> = cortar, como en \"tomografía\", imágenes \"en cortes\").",
+     "q": "¿Qué diferencia hay entre un microscopio y un microtomo? ¿En qué laboratorio es típico el microtomo?",
+     "n": 41
+    }
+   ],
+   "min": 80
+  },
+  {
+   "titulo": "Uso eficiente de los recursos",
+   "conceptos": [
+    {
+     "titulo": "Uso eficiente de los recursos",
+     "lv": 1,
+     "fuente": "Diapositiva 70",
+     "prof": "<p>es esencial conocer los recursos y usarlos bien. <strong>¿Qué garantizamos?</strong></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Que lo hacemos <strong>correctamente</strong></th>\n<th>Que lo <strong>valoramos</strong></th>\n<th>Que <strong>ahorramos</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Aplicando bien <strong>normas, procedimientos y protocolos</strong></td>\n<td>Poniendo <strong>interés</strong> en lo que hacemos, <strong>sin distraernos</strong></td>\n<td>Usando material y equipos pensando en la <strong>economía del laboratorio</strong>: <strong>repetir un experimento cuesta tiempo y dinero</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>Además:</p>\n<ul>\n<li>Conocer las <strong>normas de seguridad e higiene</strong> y los procedimientos <strong>antes de trabajar</strong>.</li>\n<li>Conocer el <strong>uso correcto</strong> de los compuestos químicos y el funcionamiento del material y los equipos <strong>antes de usarlos</strong>.</li>\n<li>Usar con <strong>responsabilidad</strong> la instrumentación y <strong>eliminar bien los residuos</strong>, sin dañar el medio ambiente.</li>\n<li>Garantizar <strong>nuestra seguridad y la de los compañeros</strong>.</li>\n</ul>",
+     "truco": "<strong>\"Co-Va-Ah\"</strong> → <strong>Co</strong>rrectamente, <strong>Va</strong>loramos, <strong>Ah</strong>orramos.",
+     "q": "¿Qué garantizamos con un uso eficiente de los recursos?",
+     "n": 42
+    }
+   ],
+   "min": 10
+  },
+  {
+   "titulo": "Procedimientos normalizados de trabajo (PNT)",
+   "conceptos": [
+    {
+     "titulo": "Qué son los PNT",
+     "lv": 1,
+     "fuente": "Diapositiva 71",
+     "defs": [
+      {
+       "t": "PNT",
+       "facil": "Procedimiento Normalizado de Trabajo, las \"instrucciones oficiales\" del laboratorio. <strong>Normalizado:</strong> hecho siempre según una norma, igual para todos. <strong>Comité:</strong> grupo de personas que revisa y aprueba."
+      }
+     ],
+     "prof": "<ul>\n<li>Describen el <strong>protocolo de trabajo</strong>, las <strong>características de un instrumento según el fabricante</strong> y sus <strong>aplicaciones</strong> en el laboratorio.</li>\n<li>Deben ser <strong>escritos y aprobados por un comité</strong> de la empresa, y <strong>se leen antes de empezar a trabajar</strong>.</li>\n<li>Se pueden hacer de todos los procedimientos, pero <strong>lo más habitual es para los equipos instrumentales</strong>.</li>\n</ul>\n<p><strong>Partes de un PNT (6):</strong></p>\n<ol>\n<li><strong>Título</strong></li>\n<li><strong>Descripción del equipo</strong></li>\n<li><strong>Fundamento físico</strong> en que se apoya</li>\n<li><strong>Normas del buen funcionamiento</strong></li>\n<li><strong>Aplicaciones concretas</strong></li>\n<li><strong>Documentos que lo acompañan</strong> (fabricante, garantía de calidad)</li>\n</ol>",
+     "truco": "<strong>Truco de las 6 partes:</strong> <strong>\"Ti-De-Fu-No-A-Do\"</strong> → \"<strong>Ti</strong>to <strong>De</strong>be <strong>Fu</strong>mar <strong>No</strong>, <strong>A</strong>sí <strong>Do</strong>rmirá\".",
+     "q": "¿Qué es un PNT, quién lo aprueba y cuáles son sus 6 partes?",
+     "n": 43
+    },
+    {
+     "titulo": "Por qué son importantes los PNT",
+     "lv": 1,
+     "fuente": "Diapositiva 72",
+     "defs": [
+      {
+       "t": "Propiedad intelectual",
+       "facil": "Algo creado por el laboratorio que le pertenece, como una receta secreta."
+      }
+     ],
+     "prof": "<ul>\n<li>Son <strong>parte de la propiedad intelectual del laboratorio</strong>; se trabaja con ellos para <strong>cometer el mínimo de errores</strong>.</li>\n<li>Es <strong>obligado leerlos bien</strong> y tenerlos presentes <strong>siempre antes de trabajar</strong>.</li>\n<li>Si se <strong>modifica algo</strong>, hay que <strong>comunicarlo al comité que lo autorizó</strong>.</li>\n<li>Si se ha <strong>modificado mucho</strong>, lo mejor es hacer <strong>una versión nueva del PNT</strong>.</li>\n</ul>",
+     "truco": "<strong>\"Poco cambio → avisa al comité · Mucho cambio → PNT nuevo\"</strong>.",
+     "q": "¿Por qué son importantes los PNT y qué se hace si se modifican?",
+     "n": 44
+    },
+    {
+     "titulo": "Ejemplo de PNT: colector de fracciones de cromatografía",
+     "lv": 2,
+     "fuente": "Diapositivas 73, 74 y 75",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Parte</th>\n<th>En el ejemplo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Objetivo</strong></td>\n<td>Modo colector del <strong>nanoHPLC</strong> conectado en línea, para colectar fracciones en placa y analizarlas por <strong>espectrometría de masas con fuente MALDI</strong></td>\n</tr>\n<tr>\n<td><strong>2. Definiciones y descripción</strong></td>\n<td>El <strong>Probot Micro Fraction Collector</strong> es un equipo incorporado a un sistema de <strong>LC/MS</strong></td>\n</tr>\n<tr>\n<td><strong>3. Fundamento físico</strong></td>\n<td><strong>Recoge la muestra del equipo de LC y la deposita en placa</strong></td>\n</tr>\n<tr>\n<td><strong>4. Normas del buen funcionamiento</strong> (flujo de trabajo)</td>\n<td>Encender equipo → encender software → llenar viales → placa bien alineada → llenado de jeringa → preparar para dispensar alícuota → señal recibida del HPLC → spoteo matriz + muestra → limpieza del equipo</td>\n</tr>\n<tr>\n<td><strong>5. Aplicaciones</strong></td>\n<td>Técnica para recolectar en línea del nanoHPLC. <strong>Matriz CHCA</strong></td>\n</tr>\n<tr>\n<td><strong>6. Documentos</strong></td>\n<td><strong>User's Manual</strong> Probot Micro Fraction Collector P/Nxxxx</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "no hace falta memorizar el aparato; lo importante es <strong>reconocer las 6 partes del PNT</strong> en un ejemplo real. Fíjate en que el \"Título\" aquí aparece como <strong>Objetivo</strong>.",
+     "truco": "el flujo de trabajo es <strong>\"Encender → Preparar → Recibir → Limpiar\"</strong>.",
+     "q": "En el ejemplo del colector de fracciones, ¿qué va en el fundamento físico y qué en los documentos?",
+     "n": 45
+    },
+    {
+     "titulo": "Mapa conceptual de la unidad",
+     "lv": 1,
+     "fuente": "Diapositiva 76",
+     "tituloHtml": "Mapa conceptual de la unidad <span class=\"note\">Síntesis</span>",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tema</th>\n<th>Resumen</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Material de laboratorio</strong></td>\n<td>Volumétrico y no volumétrico · de trabajo (vidrio/plástico) y de soporte (porcelana/metal)</td>\n</tr>\n<tr>\n<td><strong>Limpieza, desinfección, esterilización</strong></td>\n<td>Limpiar → Desinfectar → Esterilizar</td>\n</tr>\n<tr>\n<td><strong>Agua de laboratorio</strong></td>\n<td>Tipos I-IV según pureza · destilación, desionización, adsorción, ósmosis inversa, filtración</td>\n</tr>\n<tr>\n<td><strong>Reactivos químicos</strong></td>\n<td>Naturaleza química · funcionalidad · peligrosidad · pureza</td>\n</tr>\n<tr>\n<td><strong>Equipos de laboratorio</strong></td>\n<td>Mobiliario e instrumentación · equipos de análisis</td>\n</tr>\n<tr>\n<td><strong>Trabajo en el laboratorio</strong></td>\n<td>Uso eficiente de los recursos · PNT</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "Sin mirar, di una frase de resumen de cada uno de los 6 temas del mapa.",
+     "n": 46
+    },
+    {
+     "titulo": "Portada, índice y objetivos",
+     "lv": 2,
+     "fuente": "Diapositivas 1, 2, 3, 4, 32, 41, 47, 57, 69 y 77 (portadas de bloque y cierre)",
+     "prof": "<p><strong>Objetivos de la unidad:</strong> identificar el <strong>tipo de material</strong>; conocer las técnicas de <strong>limpieza, desinfección y esterilización</strong>; determinar los <strong>tipos de agua y sus métodos de obtención</strong>; distinguir los <strong>reactivos</strong> según su <strong>naturaleza química y su pureza</strong>; reconocer los <strong>equipos básicos</strong> y sus aplicaciones; e <strong>interpretar los PNT</strong> de uso y mantenimiento de equipos.</p>",
+     "entiende": "los objetivos te dicen <strong>qué te van a preguntar</strong>: casi todo es <strong>\"identifica / distingue / reconoce\"</strong> → preguntas de clasificar y de reconocer material.",
+     "q": "Explica sin mirar: Portada, índice y objetivos.",
+     "n": 47
+    }
+   ],
+   "min": 20
+  }
+ ],
+ "chequeo": [
+  "¿Qué tipo de vidrio es el más usado y cuál deja pasar la luz UV? (3)",
+  "Di 3 materiales volumétricos y 3 no volumétricos. (6, 12)",
+  "¿Para qué sirve el Kitasato? ¿Y el Erlenmeyer? (8)",
+  "¿Qué es enrasar y cómo se lee el volumen? (11)",
+  "¿Para qué sirve el cristalizador? ¿Y el vidrio de reloj? (13, 15)",
+  "¿Qué diferencia hay entre exactitud y precisión? (20)",
+  "¿Qué no elimina la desinfección? (24)",
+  "¿Cuál es el agua más pura y cuál la más consumida? (27)",
+  "¿Qué método de purificación usa una membrana y presión? (28)",
+  "¿Cómo se indica la pureza en un reactivo sólido? (32)",
+  "¿Qué hace el xilol en anatomía patológica? (33)",
+  "¿Dónde se coloca el desecante en un desecador? (36)",
+  "¿Qué queda arriba al centrifugar la sangre? (38)",
+  "¿Qué mide un espectrofotómetro? (40)",
+  "¿Qué es un microtomo? (41)",
+  "¿Quién aprueba un PNT? (43)"
+ ],
+ "glosario": [
+  [
+   "Absorción",
+   "Que una sustancia se mete dentro de otra, como el agua en una esponja (no confundir con adsorción)"
+  ],
+  [
+   "Ácido",
+   "Sustancia que libera iones H⁺; pH menor de 7 (HCl, H₂SO₄, HF)"
+  ],
+  [
+   "Aclarar",
+   "Volver transparente un tejido (lo hace el xilol)"
+  ],
+  [
+   "Adsorción",
+   "Retención de moléculas o iones en la superficie del material, entre una fase sólida y una líquida"
+  ],
+  [
+   "Aforado",
+   "Material que marca un volumen concreto con una sola raya"
+  ],
+  [
+   "Agua destilada",
+   "Agua purificada por destilación"
+  ],
+  [
+   "Alícuota",
+   "Porción medida de una muestra"
+  ],
+  [
+   "Anhidro",
+   "Sin agua"
+  ],
+  [
+   "Asa de siembra",
+   "Filamento con un aro de 5 mm en la punta para sembrar microorganismos"
+  ],
+  [
+   "Autoclave",
+   "Aparato que esteriliza con calor húmedo a alta presión"
+  ],
+  [
+   "Base",
+   "Sustancia que libera iones OH⁻; pH mayor de 7 (NaOH, NH₄OH)"
+  ],
+  [
+   "Borosilicato",
+   "Vidrio de óxido de boro y óxido de silicio; el más frecuente y económico"
+  ],
+  [
+   "Bureta",
+   "Tubo graduado con llave para soltar líquido de forma controlada"
+  ],
+  [
+   "Calcinar",
+   "Calentar a muy alta temperatura hasta reducir a cenizas"
+  ],
+  [
+   "Cálculo estequiométrico",
+   "Cálculo de las cantidades exactas que reaccionan entre sí"
+  ],
+  [
+   "Carbón activo",
+   "Carbón muy poroso que adsorbe impurezas orgánicas del agua"
+  ],
+  [
+   "Centrífuga",
+   "Aparato que separa una mezcla líquida según su densidad, haciéndola girar"
+  ],
+  [
+   "Colonia",
+   "Grupo de microorganismos que crecen juntos a partir de uno"
+  ],
+  [
+   "Concentración",
+   "Cantidad de sustancia en un volumen de disolución"
+  ],
+  [
+   "Condensar",
+   "Pasar de vapor a líquido"
+  ],
+  [
+   "Contaminación cruzada",
+   "Restos de una muestra que pasan a la siguiente"
+  ],
+  [
+   "Cualitativo",
+   "Ensayo que estudia qué cualidades tiene un compuesto"
+  ],
+  [
+   "Cuantitativo",
+   "Ensayo que mide cuánta cantidad hay de un compuesto"
+  ],
+  [
+   "Cuarzo",
+   "Vidrio de óxido de silicio; muy caro; deja pasar la luz UV"
+  ],
+  [
+   "Densidad",
+   "Lo pesado que es algo para su tamaño"
+  ],
+  [
+   "Desecador",
+   "Recipiente de vidrio con desecante para deshidratar o guardar en ambiente anhidro"
+  ],
+  [
+   "Desecante",
+   "Sustancia que atrapa las moléculas de agua"
+  ],
+  [
+   "Deshidratar",
+   "Quitar el agua"
+  ],
+  [
+   "Desinfección",
+   "Eliminación de la mayoría de los microorganismos, excepto las esporas"
+  ],
+  [
+   "Desionización",
+   "Purificación del agua por intercambio iónico; no elimina la materia orgánica ni los microorganismos"
+  ],
+  [
+   "Desorción",
+   "Proceso inverso a la adsorción: la sustancia retenida vuelve a la disolución"
+  ],
+  [
+   "Destilación",
+   "Separar por el punto de ebullición: calentar, evaporar y condensar"
+  ],
+  [
+   "Disolución",
+   "Mezcla de un soluto disuelto en un disolvente"
+  ],
+  [
+   "Disolvente",
+   "Líquido que disuelve otras sustancias (agua, acetona, etanol)"
+  ],
+  [
+   "Émbolo",
+   "Botón de la micropipeta que aspira y expulsa el líquido"
+  ],
+  [
+   "Enrase",
+   "Llenar un recipiente hasta la marca de un volumen concreto, leyendo el menisco"
+  ],
+  [
+   "Erlenmeyer",
+   "Matraz de base ancha y cuello largo para agitar sin salpicar"
+  ],
+  [
+   "Espectro electromagnético",
+   "Conjunto de radiaciones producidas por la oscilación de los campos eléctrico y magnético"
+  ],
+  [
+   "Espectrofotómetro",
+   "Aparato que mide la concentración de una sustancia por la luz UV-visible que absorbe"
+  ],
+  [
+   "Espora",
+   "Forma de resistencia de algunos microorganismos; solo la elimina la esterilización"
+  ],
+  [
+   "Esterilización",
+   "Eliminación de todos los microorganismos"
+  ],
+  [
+   "Estufa",
+   "Horno para cultivos (hasta 60 ºC) o para secar vidrio (hasta 300 ºC)"
+  ],
+  [
+   "Exactitud",
+   "Cercanía de una medida al valor verdadero o real"
+  ],
+  [
+   "Filtración",
+   "Separación por el tamaño de la partícula, con filtros de distinto poro"
+  ],
+  [
+   "Fijar",
+   "Conservar un tejido tal como estaba, para que no se degrade"
+  ],
+  [
+   "Granatario",
+   "Balanza para pesadas grandes, poco sensible"
+  ],
+  [
+   "Graduado",
+   "Material que marca un rango de volúmenes con varias rayas"
+  ],
+  [
+   "Halógenos",
+   "Grupo de elementos químicos: flúor, cloro, bromo, yodo"
+  ],
+  [
+   "HF",
+   "Ácido fluorhídrico; ataca el vidrio"
+  ],
+  [
+   "Impureza",
+   "Sustancia que no debería estar en un compuesto o en el agua"
+  ],
+  [
+   "Inerte",
+   "Que no reacciona con lo que contiene"
+  ],
+  [
+   "Inorgánico",
+   "Compuesto cuyo esqueleto principal no es el carbono (NaCl, H₂O)"
+  ],
+  [
+   "Ion",
+   "Átomo o molécula con carga eléctrica"
+  ],
+  [
+   "Kitasato",
+   "Matraz con salida lateral para vacío; sirve para filtrar"
+  ],
+  [
+   "Manta calefactora",
+   "Recipiente de hilo para calentar un matraz sin agitación"
+  ],
+  [
+   "Matraz aforado",
+   "Matraz con una marca de volumen exacto; para preparar disoluciones; el único matraz volumétrico"
+  ],
+  [
+   "Menisco",
+   "Curva cóncava de la superficie de un líquido en un tubo; por ella se lee el volumen"
+  ],
+  [
+   "Microorganismo",
+   "Ser vivo microscópico (bacteria, hongo, virus…)"
+  ],
+  [
+   "Micropipeta",
+   "Pipeta automática con émbolo y puntas desechables"
+  ],
+  [
+   "Microtomo",
+   "Instrumento que corta tejidos en láminas finísimas; propio de anatomía patológica"
+  ],
+  [
+   "Miscibilidad",
+   "Capacidad de dos líquidos para mezclarse"
+  ],
+  [
+   "Orgánico",
+   "Compuesto con esqueleto de carbono unido a hidrógeno y oxígeno"
+  ],
+  [
+   "Ósmosis inversa",
+   "Purificación con una membrana semipermeable y presión"
+  ],
+  [
+   "Parafina",
+   "Polímero que da consistencia al tejido"
+  ],
+  [
+   "pH",
+   "Escala de 0 a 14 de acidez o basicidad (7 = neutro)"
+  ],
+  [
+   "pHmetro",
+   "Aparato que mide la cantidad de iones hidrógeno, es decir, el pH"
+  ],
+  [
+   "Pipeta Pasteur",
+   "Pipeta con chupete tipo cuentagotas; no volumétrica"
+  ],
+  [
+   "Placa Petri",
+   "Recipiente redondo con tapa para cultivar colonias de microorganismos"
+  ],
+  [
+   "PNT",
+   "Procedimiento normalizado de trabajo: protocolo escrito y aprobado por un comité"
+  ],
+  [
+   "Polímero",
+   "Molécula larga formada por muchas unidades repetidas"
+  ],
+  [
+   "Poroso",
+   "Con muchos poros o agujeritos"
+  ],
+  [
+   "Poyata",
+   "Mesa fija de trabajo del laboratorio"
+  ],
+  [
+   "Precipitado",
+   "Sólido que se forma y se deposita"
+  ],
+  [
+   "Precisión",
+   "Reproducibilidad de una medida; no implica que sea el valor verdadero"
+  ],
+  [
+   "Probeta",
+   "Tubo graduado con base y pico para medir y verter"
+  ],
+  [
+   "Protocolo",
+   "Serie de pasos escritos que se siguen siempre igual"
+  ],
+  [
+   "Purísimos",
+   "Reactivos de alta pureza que nunca llega al 100 %"
+  ],
+  [
+   "Reactivo",
+   "Sustancia química usada en un análisis"
+  ],
+  [
+   "Sal",
+   "Compuesto que resulta de la reacción de un ácido y una base (NaCl, KF)"
+  ],
+  [
+   "Soluto",
+   "Sustancia disuelta en una disolución"
+  ],
+  [
+   "Tubo refrigerante",
+   "Tubo que convierte en líquido los gases de la destilación"
+  ],
+  [
+   "Vidrio de reloj",
+   "Lámina de vidrio cóncavo-convexa para pesar sólidos y recoger precipitados"
+  ],
+  [
+   "Vitrina extractora",
+   "Mueble que protege de salpicaduras y vapores"
+  ],
+  [
+   "Volumétrico",
+   "Material preparado para medir y transferir volúmenes con exactitud"
+  ],
+  [
+   "Vórtex",
+   "Agitador por vibración de un solo tubo sujeto con la mano"
+  ],
+  [
+   "Xilol",
+   "Reactivo que elimina el agua del tejido y lo aclara (lo hace transparente)"
+  ]
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "x1",
+   "html": "<section class=\"xs\" id=\"x1\"><h2 class=\"xs-h\">📝 Actividades de clase resueltas</h2><h3 class=\"ih\">Actividad 1 · Limpieza, desinfección o esterilización (diapositiva 37)</h3>\n<p><strong>Enunciado:</strong> coloca cada acción o agente en su columna (Limpieza / Desinfección / Esterilización).</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Limpieza</th>\n<th>Desinfección</th>\n<th>Esterilización</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Agua y jabón</td>\n<td>Agentes químicos (hipoclorito de sodio, etanol, peróxido de hidrógeno…)</td>\n<td>Autoclave</td>\n</tr>\n<tr>\n<td>Lavado de manos</td>\n<td>Alcohol etílico al 70 %</td>\n<td>Calor húmedo a alta presión</td>\n</tr>\n<tr>\n<td>Bata limpia</td>\n<td>Radiación ultravioleta ⚠️</td>\n<td>Calor seco en estufa</td>\n</tr>\n<tr>\n<td>Orden en la mesa de trabajo</td>\n<td>Peróxido de hidrógeno ⚠️</td>\n<td>Óxido de etileno</td>\n</tr>\n<tr>\n<td>Uso de escobilla</td>\n<td></td>\n<td>Radiación ionizante</td>\n</tr>\n<tr>\n<td>Pelo recogido</td>\n<td></td>\n<td>Ácido peracético ⚠️</td>\n</tr>\n<tr>\n<td>Aclarado con agua destilada</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Secado al aire</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Uso de guantes</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Detergente enzimático</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>Por qué:</strong></p>\n<ul>\n<li><strong>Limpieza</strong> = todo lo que <strong>quita suciedad</strong> o es <strong>higiene personal y orden</strong> (diapositiva 36: bata, pelo recogido, lavado de manos, guantes, orden, lavado del material).</li>\n<li><strong>Desinfección</strong> = <strong>agentes químicos</strong> que eliminan <strong>la mayoría</strong> de los microorganismos (diapositiva 38).</li>\n<li><strong>Esterilización</strong> = elimina <strong>todo</strong>: <strong>autoclave/calor húmedo</strong> (diapositiva 39), <strong>calor seco</strong>, <strong>gas (óxido de etileno)</strong> y <strong>radiación ionizante</strong>.</li>\n</ul>\n<p>⚠️ <strong>Ojo con los dudosos</strong> (la profe no los clasifica en las diapositivas; esto es lo general):</p>\n<ul>\n<li><strong>Radiación UV:</strong> se suele clasificar como <strong>desinfección</strong> (solo actúa en superficies y no garantiza matar las esporas).</li>\n<li><strong>Peróxido de hidrógeno:</strong> líquido es <strong>desinfectante</strong>; en forma de <strong>vapor o plasma</strong> se usa para <strong>esterilizar</strong>.</li>\n<li><strong>Ácido peracético:</strong> se considera <strong>esterilizante</strong> químico (también desinfectante de alto nivel).</li>\n</ul>\n<p>Si en el examen sale uno de estos, <strong>justifica</strong> tu respuesta en una línea.\n<strong>📘 Qué significa:</strong> <strong>Hipoclorito de sodio:</strong> la lejía. <strong>Peróxido de hidrógeno:</strong> el agua oxigenada. <strong>Óxido de etileno:</strong> gas que esteriliza material que no aguanta el calor. <strong>Radiación ionizante:</strong> radiación de mucha energía (rayos gamma, rayos X). <strong>Detergente enzimático:</strong> jabón con enzimas que \"se comen\" los restos orgánicos.</p>\n<h3 class=\"ih\">Actividad 6 · Orgánico o inorgánico y agente de limpieza (diapositiva 49)</h3>\n<p><strong>Enunciado:</strong> relaciona la naturaleza química de cada compuesto para elegir el agente de limpieza adecuado. La regla de la profe: <strong>solubles en agua → no hacen falta disolventes agresivos (agua)</strong>; <strong>restos orgánicos → disolvente orgánico (etanol o acetona)</strong>.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Nº</th>\n<th>Compuesto</th>\n<th>¿Orgánico o inorgánico?</th>\n<th>¿Por qué?</th>\n<th>Agente de limpieza</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>HCl</strong> (ácido clorhídrico)</td>\n<td><strong>Inorgánico</strong></td>\n<td>No tiene carbono</td>\n<td><strong>Agua</strong></td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Etanol</strong></td>\n<td><strong>Orgánico</strong></td>\n<td>Cadena de C con H y O</td>\n<td><strong>Etanol o acetona</strong></td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>NaCl</strong> (sal común)</td>\n<td><strong>Inorgánico</strong></td>\n<td>Sodio + cloro, sin carbono</td>\n<td><strong>Agua</strong></td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>CH₃OH</strong> (metanol)</td>\n<td><strong>Orgánico</strong></td>\n<td>Lleva C unido a H y O</td>\n<td><strong>Etanol o acetona</strong></td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>H₂O</strong> (agua)</td>\n<td><strong>Inorgánico</strong></td>\n<td>Sin carbono (ejemplo de la profe)</td>\n<td><strong>Agua</strong></td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>Xilol</strong></td>\n<td><strong>Orgánico</strong></td>\n<td>Hidrocarburo (C y H)</td>\n<td><strong>Etanol o acetona</strong></td>\n</tr>\n<tr>\n<td>7</td>\n<td><strong>NaOH</strong> (hidróxido de sodio)</td>\n<td><strong>Inorgánico</strong></td>\n<td>Sin carbono</td>\n<td><strong>Agua</strong></td>\n</tr>\n<tr>\n<td>8</td>\n<td><strong>COOH</strong> (grupo carboxilo)</td>\n<td><strong>Orgánico</strong></td>\n<td>Grupo de los ácidos orgánicos (C, O, H)</td>\n<td><strong>Etanol o acetona</strong></td>\n</tr>\n<tr>\n<td>9</td>\n<td><strong>Acetona</strong></td>\n<td><strong>Orgánico</strong></td>\n<td>Cadena de C con H y O</td>\n<td><strong>Etanol o acetona</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>🧠 <strong>Truco:</strong> <strong>¿Ves una C (carbono) en la fórmula? → orgánico</strong>. Las únicas sin C son <strong>HCl, NaCl, H₂O y NaOH</strong> → inorgánicos → agua.\n⚠️ <strong>Ojo:</strong> en la diapositiva pone \"COOH\", que no es un compuesto completo, sino el <strong>grupo carboxilo</strong> de los ácidos orgánicos (como el ácido acético, CH₃COOH). Por eso es orgánico.</p>\n<h3 class=\"ih\">Actividad de la diapositiva 55 · Ficha de los reactivos de cada grupo</h3>\n<p><strong>Enunciado:</strong> para cada reactivo: nombre, fórmula, orgánico/inorgánico, si es ácido, base, sal, disolvente u otro, la pureza que indica la etiqueta y si es sólido o líquido.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Reactivo</th>\n<th>Fórmula ⚠️</th>\n<th>Org./Inorg.</th>\n<th>Función</th>\n<th>Pureza en la etiqueta</th>\n<th>Estado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Etanol</strong></td>\n<td>C₂H₅OH</td>\n<td>Orgánico</td>\n<td>Disolvente</td>\n<td>% en <strong>volumen</strong> (líquido)</td>\n<td>Líquido</td>\n</tr>\n<tr>\n<td>1</td>\n<td><strong>Ácido clorhídrico</strong></td>\n<td>HCl</td>\n<td>Inorgánico</td>\n<td><strong>Ácido</strong></td>\n<td>% (disolución en agua)</td>\n<td>Líquido</td>\n</tr>\n<tr>\n<td>1</td>\n<td><strong>Parafina</strong> (extra)</td>\n<td>CₙH₂ₙ₊₂ (mezcla)</td>\n<td>Orgánico</td>\n<td>Otro (inclusión: da consistencia)</td>\n<td>% en <strong>peso</strong> (sólido)</td>\n<td>Sólido</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Xilol</strong></td>\n<td>C₈H₁₀</td>\n<td>Orgánico</td>\n<td>Disolvente (aclarante)</td>\n<td>% en volumen</td>\n<td>Líquido</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Ácido acético</strong></td>\n<td>CH₃COOH</td>\n<td>Orgánico</td>\n<td><strong>Ácido</strong></td>\n<td>% en volumen</td>\n<td>Líquido</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Metanol</strong> (extra)</td>\n<td>CH₃OH</td>\n<td>Orgánico</td>\n<td>Disolvente</td>\n<td>% en volumen</td>\n<td>Líquido</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Formaldehído (formol)</strong></td>\n<td>HCHO</td>\n<td>Orgánico</td>\n<td>Otro (<strong>fijador</strong>)</td>\n<td>% (disolución en agua)</td>\n<td>Líquido (el formol)</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Hidróxido de sodio</strong></td>\n<td>NaOH</td>\n<td>Inorgánico</td>\n<td><strong>Base</strong></td>\n<td>% en peso</td>\n<td>Sólido (lentejas)</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Glutaraldehído</strong> (extra)</td>\n<td>C₅H₈O₂</td>\n<td>Orgánico</td>\n<td>Otro (<strong>fijador</strong>)</td>\n<td>% (disolución)</td>\n<td>Líquido</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Hematoxilina</strong></td>\n<td>C₁₆H₁₄O₆</td>\n<td>Orgánico</td>\n<td>Otro (<strong>colorante</strong>)</td>\n<td>% en peso</td>\n<td>Sólido (polvo)</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Cloruro de sodio</strong></td>\n<td>NaCl</td>\n<td>Inorgánico</td>\n<td><strong>Sal</strong></td>\n<td>% en peso</td>\n<td>Sólido</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Alcohol isopropílico</strong> (extra)</td>\n<td>C₃H₇OH</td>\n<td>Orgánico</td>\n<td>Disolvente</td>\n<td>% en volumen</td>\n<td>Líquido</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Eosina</strong></td>\n<td>C₂₀H₆Br₄Na₂O₅</td>\n<td>Orgánico</td>\n<td>Otro (<strong>colorante</strong>)</td>\n<td>% en peso</td>\n<td>Sólido (polvo)</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Acetona</strong></td>\n<td>C₃H₆O (CH₃COCH₃)</td>\n<td>Orgánico</td>\n<td>Disolvente</td>\n<td>% en volumen</td>\n<td>Líquido</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Azul de metileno</strong> (extra)</td>\n<td>C₁₆H₁₈ClN₃S</td>\n<td>Orgánico</td>\n<td>Otro (<strong>colorante</strong>)</td>\n<td>% en peso</td>\n<td>Sólido (polvo)</td>\n</tr>\n</tbody>\n</table></div>\n<p>⚠️ <strong>Ojo:</strong> la profe dejó la tabla vacía para rellenarla en clase, así que <strong>las fórmulas y los estados son los generales de química</strong>, no salen de las diapositivas. La regla de la pureza <strong>sí es de la profe</strong> (diapositivas 53-54): <strong>sólido → peso/peso; líquido → volumen/volumen</strong>. El porcentaje exacto depende del frasco real (por ejemplo, el HCl concentrado suele venir al 37 %).\n🧠 <strong>Truco:</strong> de los 15, <strong>solo 3 son inorgánicos: HCl, NaOH y NaCl</strong> (un ácido, una base y una sal: ¡uno de cada!). Todo lo demás lleva carbono → orgánico.\n📘 <strong>Qué significa:</strong> <strong>Fijador:</strong> líquido que conserva el tejido (el formol es el más usado en anatomía patológica). <strong>Colorante:</strong> sustancia que tiñe. <strong>Hematoxilina y eosina:</strong> la pareja de tintes más famosa de la anatomía patológica (la hematoxilina tiñe los núcleos de azul-morado y la eosina el citoplasma de rosa) ⚠️ (general).</p></section>",
+   "opcion": "📝 Actividades de clase resueltas",
+   "indice": "📝 Actividades de clase resueltas"
+  },
+  {
+   "id": "trampas",
+   "html": "<section class=\"xs\" id=\"trampas\"><h2 class=\"xs-h\">⚠️ Trampas típicas del examen</h2><ol>\n<li><strong>El vaso de precipitados está graduado pero NO es volumétrico.</strong></li>\n<li><strong>De los matraces, solo el aforado es volumétrico.</strong> El de base redonda, el Erlenmeyer y el Kitasato, no.</li>\n<li><strong>La pipeta Pasteur NO es volumétrica.</strong> Las demás pipetas, sí.</li>\n<li><strong>Porcelana y metal nunca son volumétricos.</strong></li>\n<li><strong>Adsorción ≠ absorción.</strong> La adsorción es quedarse <strong>pegado a la superficie</strong>.</li>\n<li><strong>Precisión ≠ exactitud.</strong> Puedes ser preciso (repites) sin ser exacto (sin dar en el valor real).</li>\n<li><strong>La desinfección NO mata las esporas.</strong> La esterilización sí.</li>\n<li><strong>No siempre hay que esterilizar:</strong> depende del ensayo.</li>\n<li><strong>El agua tipo II es la más consumida</strong>, pero <strong>la más pura es la tipo I</strong>.</li>\n<li><strong>Solo el agua tipo IV tiene pH 5-8</strong>; las demás, pH 7.</li>\n<li><strong>La desionización NO elimina la materia orgánica ni los microorganismos.</strong></li>\n<li><strong>Los reactivos más puros son los \"especiales\"</strong>, no los \"purísimos\".</li>\n<li><strong>Los purísimos nunca llegan al 100 %.</strong></li>\n<li><strong>La peligrosidad de los reactivos es de la Unidad 2.</strong></li>\n<li><strong>El HF (ácido fluorhídrico) ataca el vidrio.</strong></li>\n<li><strong>Granatario = poco sensible</strong>; analítica = muy sensible, con urna de vidrio.</li>\n<li><strong>En el desecador, el desecante va abajo</strong> y la sustancia arriba.</li>\n<li><strong>Cuarzo = el único vidrio que deja pasar la luz UV</strong> (espectrofotometría).</li>\n</ol></section>",
+   "opcion": "⚠️ Trampas típicas del examen",
+   "indice": "⚠️ Trampas típicas del examen"
+  },
+  {
+   "id": "numeros",
+   "html": "<section class=\"xs\" id=\"numeros\"><h2 class=\"xs-h\">🔢 Números clave</h2><div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Dato</th>\n<th>Número</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Crisol: soporta más de</td>\n<td><strong>500 ºC</strong></td>\n</tr>\n<tr>\n<td>Aro del asa de siembra</td>\n<td><strong>5 mm</strong></td>\n</tr>\n<tr>\n<td>Antidopaje: límite / resultado</td>\n<td><strong>4 µg/ml</strong> / <strong>4,05 µg/ml</strong></td>\n</tr>\n<tr>\n<td>pH del agua tipos I, II y III</td>\n<td><strong>7</strong></td>\n</tr>\n<tr>\n<td>pH del agua tipo IV</td>\n<td><strong>5-8</strong></td>\n</tr>\n<tr>\n<td>Frigoríficos</td>\n<td><strong>4-10 ºC</strong></td>\n</tr>\n<tr>\n<td>Congeladores</td>\n<td><strong>bajo -18 ºC</strong> o <strong>hasta -80 ºC</strong></td>\n</tr>\n<tr>\n<td>Tanques de N₂ líquido</td>\n<td><strong>hasta -200 ºC</strong></td>\n</tr>\n<tr>\n<td>Baño de agua</td>\n<td><strong>37 ºC</strong></td>\n</tr>\n<tr>\n<td>Baño de ultrasonidos</td>\n<td><strong>15-400 kHz</strong></td>\n</tr>\n<tr>\n<td>Estufa: cultivos / secar vidrio</td>\n<td><strong>hasta 60 ºC</strong> / <strong>hasta 300 ºC</strong></td>\n</tr>\n<tr>\n<td>Luz visible</td>\n<td><strong>400-700 nm</strong> (azul 400, verde 500, rojo 600-700)</td>\n</tr>\n<tr>\n<td>Partes de un PNT</td>\n<td><strong>6</strong></td>\n</tr>\n<tr>\n<td>Criterios de clasificación de reactivos</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td>Tipos de agua</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td>Métodos de purificación</td>\n<td><strong>5</strong></td>\n</tr>\n</tbody>\n</table></div></section>",
+   "opcion": "🔢 Números clave",
+   "indice": "🔢 Números clave"
+  },
+  {
+   "id": "x4",
+   "html": "<section class=\"xs\" id=\"x4\"><h2 class=\"xs-h\">🔑 Los 5 temas que más preguntas dan en el test</h2><ol>\n<li><strong>Compara el vidrio y el plástico</strong> (ventajas y desventajas) y explica la adsorción/desorción.</li>\n<li><strong>Diferencia entre limpieza, desinfección y esterilización</strong>, con ejemplos de cada una.</li>\n<li><strong>Los 4 tipos de agua</strong> (pureza, pH y uso) y <strong>los 5 métodos de purificación</strong>.</li>\n<li><strong>Clasificación de los reactivos</strong> según su naturaleza química, su funcionalidad y su pureza.</li>\n<li><strong>Qué es un PNT</strong>, sus 6 partes y qué se hace si se modifica.</li>\n</ol></section>",
+   "opcion": "🔑 Los 5 temas que más preguntas dan en el test",
+   "indice": "🔑 Los 5 temas que más preguntas dan en el test"
+  },
+  {
+   "id": "chequeo",
+   "titulo": "✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su concepto)",
+   "opcion": "✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su concepto)",
+   "indice": "✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su concepto)"
+  },
+  {
+   "id": "impres",
+   "html": "<section class=\"xs\" id=\"impres\"><h2 class=\"xs-h\">⚡ Lo imprescindible (repaso exprés)</h2><p class=\"meta\">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><h3 class='ih'>1 · Materiales</h3><details class=\"pq\"><summary>¿4 materiales?</summary><div class=\"pa\"><p><strong>Vidrio</strong> (inerte, resiste temperatura) · <strong>plástico</strong> (económico, desechable) · <strong>porcelana</strong> (muy altas temperaturas y ataques químicos) · <strong>metal</strong> (soporte).</p></div></details><details class=\"pq\"><summary>¿5 propiedades del vidrio?</summary><div class=\"pa\"><p><strong>Inerte · transparente · manejable · moldeable · resistente a cambios bruscos de temperatura</strong>. Es el más usado.</p></div></details><details class=\"pq\"><summary>¿Tipos de vidrio?</summary><div class=\"pa\"><p><strong>Cuarzo</strong> (óxido de silicio, caro, deja pasar la <strong>UV</strong> → espectrofotometría) · <strong>borosilicato</strong> (boro + silicio, <strong>el más frecuente y económico</strong>) · <strong>aluminosilicato</strong> (aluminio + silicio).</p></div></details><details class=\"pq\"><summary>¿Tipos de plástico?</summary><div class=\"pa\"><p><strong>PE/PP</strong> (H y C) · <strong>policarbonatos</strong> (H, C y <strong>O</strong>, bisfenol) · <strong>PVC</strong> (H, C y halógenos) · <strong>PTFE/teflón</strong> (H, C y halógenos).</p></div></details><details class=\"pq\"><summary>¿Vidrio vs. plástico?</summary><div class=\"pa\"><p>Vidrio: inerte, aguanta calor, transparente, <strong>poca adsorción</strong>; pero caro, no desechable y <strong>lo ataca el HF</strong>. Plástico: barato, <strong>desechable</strong> (menos contaminación cruzada); pero interactúa más, se deforma, opaco, <strong>mucha adsorción</strong>.</p></div></details><details class=\"pq\"><summary>¿Adsorción / desorción?</summary><div class=\"pa\"><p>Retención de moléculas por el material (sólido-líquido) / la sustancia retenida <strong>vuelve a la disolución</strong>.</p></div></details><details class=\"pq\"><summary>¿Volumétrico?</summary><div class=\"pa\"><p>Mide y transfiere volúmenes (solo <strong>vidrio y plástico</strong>): <strong>bureta, probeta, matraz aforado, pipetas</strong> (menos Pasteur).</p></div></details><details class=\"pq\"><summary>¿No volumétrico?</summary><div class=\"pa\"><p>Vidrio, plástico, <strong>metal y porcelana</strong>: base redonda, <strong>Erlenmeyer, Kitasato, Pasteur, vaso de precipitados</strong> (graduado pero no volumétrico), tubos…</p></div></details><details class=\"pq\"><summary>¿Bureta / probeta / pipeta?</summary><div class=\"pa\"><p>Tubo graduado <strong>con llave</strong> / tubo graduado <strong>con base y pico</strong>, no se mezcla dentro / transfiere volumen <strong>pequeño, preciso y exacto</strong>.</p></div></details><details class=\"pq\"><summary>¿4 matraces?</summary><div class=\"pa\"><p><strong>Aforado</strong> (volumen concreto, <strong>el único volumétrico</strong>) · <strong>base redonda</strong> (marca esmerilada) · <strong>Erlenmeyer</strong> (agitar sin salpicar) · <strong>Kitasato</strong> (vacío, filtrar).</p></div></details><details class=\"pq\"><summary>¿Pipetas?</summary><div class=\"pa\"><p><strong>Manuales</strong> (mano + pera; aforadas, graduadas, <strong>Pasteur no volumétrica</strong>) · <strong>automáticas</strong> (<strong>émbolo</strong>, cambiar punta) · <strong>electrónicas</strong> (sin intervención humana).</p></div></details><details class=\"pq\"><summary>¿Aforado / graduado / enrase?</summary><div class=\"pa\"><p>Un volumen / un rango / llenar hasta la marca, leyendo el <strong>menisco</strong> (forma cóncava).</p></div></details><details class=\"pq\"><summary>¿Exactitud / precisión?</summary><div class=\"pa\"><p><strong>Valor verdadero</strong> / <strong>reproducibilidad</strong> (no implica valor verdadero).</p></div></details><details class=\"pq\"><summary>¿Cristalizador?</summary><div class=\"pa\"><p>Base ancha y poca altura: <strong>evaporar y cristalizar</strong>.</p></div></details><details class=\"pq\"><summary>¿Embudos?</summary><div class=\"pa\"><p>Trasvasar a cuello estrecho y <strong>filtrar</strong>. <strong>Büchner</strong> = filtra <strong>con vacío</strong>.</p></div></details><details class=\"pq\"><summary>¿Refrigerante / vidrio de reloj / frasco lavador?</summary><div class=\"pa\"><p><strong>Gases de destilación a líquido</strong> / <strong>pesar sólidos</strong> y recoger precipitado / <strong>enjuagar con agua destilada</strong>.</p></div></details><details class=\"pq\"><summary>¿Cápsula / crisol?</summary><div class=\"pa\"><p>Calentar, fundir, evaporar / <strong>&gt;500 ºC</strong>: calentar, fundir, quemar, <strong>calcinar</strong>.</p></div></details><details class=\"pq\"><summary>¿Cuchara espátula / Petri / mechero / portaobjetos / asa?</summary><div class=\"pa\"><p>Trasvasar y pesar sólidos / <strong>cultivo de colonias</strong> / <strong>calentar o esterilizar</strong> / observar al microscopio / <strong>aro de 5 mm para sembrar</strong>.</p></div></details><details class=\"pq\"><summary>¿Porcelana: problema?</summary><div class=\"pa\"><p><strong>Porosa</strong> → contaminaciones por adsorción/desorción → cada vez se usa menos.</p></div></details><details class=\"pq\"><summary>¿Metal?</summary><div class=\"pa\"><p><strong>Soporte</strong>: aros, trípodes, nuez, pinzas, soportes, espátulas, gradillas, escobillas.</p></div></details><h3 class='ih'>2 · Limpieza, desinfección y esterilización</h3><details class=\"pq\"><summary>¿Orden?</summary><div class=\"pa\"><p><strong>Limpiar → desinfectar → esterilizar</strong>.</p></div></details><details class=\"pq\"><summary>¿Antidopaje?</summary><div class=\"pa\"><p>Límite <strong>4 µg/ml</strong>, resultado <strong>4,05</strong> por mala limpieza; <strong>el análisis solo se hace una vez</strong>.</p></div></details><details class=\"pq\"><summary>¿Limpieza a 3 niveles?</summary><div class=\"pa\"><p><strong>Personal</strong> (bata lavada en el centro, pelo recogido, manos y guantes) · <strong>laboratorio</strong> (orden) · <strong>material</strong> (a mano o máquina; restos orgánicos → <strong>etanol o acetona</strong>).</p></div></details><details class=\"pq\"><summary>¿Desinfección?</summary><div class=\"pa\"><p>La <strong>mayoría</strong> de microorganismos, <strong>menos las esporas</strong>; agentes <strong>químicos</strong>.</p></div></details><details class=\"pq\"><summary>¿Esterilización?</summary><div class=\"pa\"><p><strong>Todos</strong>; químicos y/o físicos; lo habitual, <strong>autoclave (calor húmedo a alta presión)</strong>. <strong>No siempre hace falta</strong>: depende del ensayo.</p></div></details><h3 class='ih'>3 · Agua</h3><details class=\"pq\"><summary>¿Por qué no del grifo?</summary><div class=\"pa\"><p>Lleva <strong>sales</strong>.</p></div></details><details class=\"pq\"><summary>¿4 tipos?</summary><div class=\"pa\"><p><strong>I ultrapura</strong> (pH 7, cuantitativos, mínimas interferencias) · <strong>II analítica</strong> (pH 7, cuantitativos, sin impurezas orgánicas, <strong>la más consumida</strong>) · <strong>III general</strong> (pH 7, <strong>cualitativos</strong>, limpieza) · <strong>IV</strong> (lavavajillas y autoclave, <strong>pH 5-8</strong>, la menos pura).</p></div></details><details class=\"pq\"><summary>¿Purificación?</summary><div class=\"pa\"><p><strong>Destilación</strong> (ebullición) · <strong>desionización</strong> (intercambio iónico; <strong>no quita materia orgánica ni microorganismos</strong>) · <strong>adsorción</strong> (carbón activo) · <strong>filtración</strong> (tamaño de poro) · <strong>ósmosis inversa</strong> (membrana semipermeable + <strong>presión</strong>).</p></div></details><h3 class='ih'>4 · Reactivos</h3><details class=\"pq\"><summary>¿4 criterios?</summary><div class=\"pa\"><p>Naturaleza química · funcionalidad · <strong>peligrosidad (Unidad 2)</strong> · pureza.</p></div></details><details class=\"pq\"><summary>¿Orgánico / inorgánico?</summary><div class=\"pa\"><p>Esqueleto de <strong>carbono</strong> con H y O / sin carbono (<strong>NaCl, H₂O</strong>).</p></div></details><details class=\"pq\"><summary>¿Funcionalidad?</summary><div class=\"pa\"><p><strong>Ácidos</strong> (HCl, H₂SO₄, HF) · <strong>bases</strong> (NaOH, NH₄OH) · <strong>sales</strong> (NaCl, KF) · <strong>disolventes</strong> (agua, acetona, etanol).</p></div></details><details class=\"pq\"><summary>¿Pureza?</summary><div class=\"pa\"><p><strong>Purísimos</strong> (alta, nunca 100 %) · <strong>generales</strong> (media, no interfieren) · <strong>especiales</strong> (<strong>los más puros</strong>, equipos instrumentales).</p></div></details><details class=\"pq\"><summary>¿Etiqueta?</summary><div class=\"pa\"><p><strong>Sólido: peso/peso</strong> · <strong>líquido y gas: volumen/volumen</strong> → para los <strong>cálculos estequiométricos</strong>.</p></div></details><details class=\"pq\"><summary>¿Anatomía patológica?</summary><div class=\"pa\"><p><strong>Parafina</strong> (consistencia) · <strong>xilol</strong> (deshidrata y <strong>aclara</strong>) · <strong>etanol</strong> (<strong>fija</strong> y deshidrata) · <strong>tinte</strong> (ver al microscopio).</p></div></details><h3 class='ih'>5 · Equipos</h3><details class=\"pq\"><summary>¿Mobiliario?</summary><div class=\"pa\"><p>Poyatas · <strong>vitrinas extractoras</strong> (vapores, ácidos) · frigoríficos <strong>4-10 ºC</strong> · congeladores <strong>-18 / -80 ºC</strong> · N₂ líquido <strong>-200 ºC</strong>.</p></div></details><details class=\"pq\"><summary>¿Balanzas?</summary><div class=\"pa\"><p><strong>Granatario</strong> (grandes, poco sensible) · <strong>analítica</strong> (precisa, en urna de vidrio).</p></div></details><details class=\"pq\"><summary>¿pHmetro / desecador?</summary><div class=\"pa\"><p>Mide el <strong>pH</strong> (iones H⁺) / ambiente <strong>anhidro</strong>, <strong>desecante abajo</strong>.</p></div></details><details class=\"pq\"><summary>¿Agitadores?</summary><div class=\"pa\"><p><strong>Magnético</strong> (2 imanes, con o sin calor) · <strong>de tubos</strong> (placa vibra) · <strong>vórtex</strong> (1 tubo en la mano).</p></div></details><details class=\"pq\"><summary>¿Centrífuga?</summary><div class=\"pa\"><p>Separa por <strong>densidad</strong>; sangre: <strong>plasma arriba</strong>, células rojas abajo.</p></div></details><details class=\"pq\"><summary>¿Baños / estufa / manta?</summary><div class=\"pa\"><p>Agua <strong>37 ºC</strong> · ultrasonidos <strong>15-400 kHz</strong> · estufa <strong>60 ºC cultivos / 300 ºC secar vidrio</strong> · manta: calienta el matraz <strong>sin agitar</strong>.</p></div></details><details class=\"pq\"><summary>¿Espectrofotómetro?</summary><div class=\"pa\"><p>Mide la <strong>concentración</strong>; absorción <strong>UV-visible</strong>.</p></div></details><details class=\"pq\"><summary>¿Microscopio / microtomo?</summary><div class=\"pa\"><p>Amplía la imagen / <strong>corta tejidos</strong> en láminas (anatomía patológica).</p></div></details><h3 class='ih'>6 y 7 · Recursos y PNT</h3><details class=\"pq\"><summary>¿Uso eficiente?</summary><div class=\"pa\"><p>Garantizamos que lo hacemos <strong>correctamente</strong>, que lo <strong>valoramos</strong> y que <strong>ahorramos</strong> (repetir cuesta tiempo y dinero).</p></div></details><details class=\"pq\"><summary>¿PNT?</summary><div class=\"pa\"><p>Escritos y <strong>aprobados por un comité</strong>; se leen <strong>antes</strong> de trabajar; sobre todo para <strong>equipos</strong>.</p></div></details><details class=\"pq\"><summary>¿6 partes?</summary><div class=\"pa\"><p><strong>Título · descripción del equipo · fundamento físico · normas del buen funcionamiento · aplicaciones · documentos</strong>.</p></div></details><details class=\"pq\"><summary>¿Si se modifica?</summary><div class=\"pa\"><p>Comunicarlo al <strong>comité</strong>; si es mucho, <strong>versión nueva</strong>. Son <strong>propiedad intelectual</strong> del laboratorio.</p></div></details><h3 class='ih'>Los 10 que no puedes fallar</h3><ol>\n<li><strong>Solo el matraz aforado</strong> es volumétrico; <strong>la Pasteur no</strong>; <strong>el vaso de precipitados no</strong> (aunque esté graduado).</li>\n<li><strong>Cuarzo = UV</strong>; <strong>borosilicato = el más frecuente</strong>.</li>\n<li><strong>HF ataca el vidrio</strong>.</li>\n<li><strong>Adsorción = se pega a la superficie</strong>; desorción = vuelve a la disolución.</li>\n<li><strong>Exactitud = valor real</strong>; <strong>precisión = se repite</strong>.</li>\n<li><strong>Desinfección deja las esporas</strong>; esterilización = todo (autoclave).</li>\n<li><strong>Agua: I la más pura, II la más consumida, IV pH 5-8</strong>.</li>\n<li><strong>Desionización no quita materia orgánica ni microorganismos</strong>.</li>\n<li><strong>Reactivos especiales = los más puros</strong>; purísimos nunca 100 %.</li>\n<li><strong>PNT: 6 partes, aprobado por un comité</strong>.</li>\n</ol></section>",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "titulo": "📖 Glosario",
+   "cab": [
+    "Término",
+    "Significado"
+   ],
+   "opcion": "📖 Glosario",
+   "indice": "📖 Glosario"
+  }
+ ]
+}

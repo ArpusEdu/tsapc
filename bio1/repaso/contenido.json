@@ -1,0 +1,791 @@
+{
+ "unidad": "bio1",
+ "titulo": "Bio 1 · Cultivos celulares",
+ "eyebrow": "🧬 Biología Molecular · 1er examen",
+ "h1": "Repaso completo: cultivos celulares",
+ "sub": "Tema 2 · 32 diapositivas + preguntas llave · 8 bloques · 32 conceptos",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>\n<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div>",
+ "clave": "bio1-repaso-v1",
+ "examen": {
+  "em": "🧬",
+  "asig": "Biología Molecular",
+  "examen": "1er examen",
+  "fecha": "2026-10-19"
+ },
+ "simulacro": "bio1/simulacro/",
+ "tipografia": "Fredoka:wght@600",
+ "bloques": [
+  {
+   "titulo": "Qué es un cultivo celular y con qué se hace",
+   "conceptos": [
+    {
+     "titulo": "Definición de cultivo celular",
+     "lv": 1,
+     "fuente": "Bloque 1 · Qué es un cultivo celular y con qué se hace",
+     "prof": "<p>es el <strong>conjunto de procedimientos que hacen posible el mantenimiento de células vivas <em>in vitro</em></strong>.</p>",
+     "entiende": "<em>in vitro</em> = \"en vidrio\", fuera del cuerpo. Es como tener una \"granja de células\" en el laboratorio: les das comida, temperatura y limpieza para que sigan vivas.",
+     "truco": "la definición tiene 3 piezas: <strong>procedimientos + células vivas + in vitro</strong>. Si dices las tres, la tienes bien.",
+     "q": "¿Qué es un cultivo celular?",
+     "n": 1
+    },
+    {
+     "titulo": "Equipos del laboratorio de cultivos",
+     "lv": 2,
+     "fuente": "Bloque 1 · Qué es un cultivo celular y con qué se hace",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Equipo</th>\n<th>Para qué / dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Campanas de flujo laminar</td>\n<td>Trabajar en estéril</td>\n</tr>\n<tr>\n<td>Incubadores de CO2</td>\n<td>Mantener las células (37 ºC, 5 % CO2)</td>\n</tr>\n<tr>\n<td>Microscopio invertido</td>\n<td>Ver las células desde abajo del frasco</td>\n</tr>\n<tr>\n<td>Depósito de N líquido</td>\n<td><strong>-200 ºC</strong> (dato de la diapositiva)</td>\n</tr>\n<tr>\n<td>Neveras y congeladores</td>\n<td>Neveras <strong>4 ºC</strong>; congeladores <strong>-20 ºC y -80 ºC</strong></td>\n</tr>\n<tr>\n<td>Equipo de esterilización</td>\n<td><strong>Autoclave, sistema de filtración, luz UV</strong></td>\n</tr>\n<tr>\n<td>Otros</td>\n<td>Contadores, pHmetro, placa calefactora, pipeta automática…</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "el <strong>incubador</strong> imita el cuerpo humano (37 ºC). El <strong>microscopio invertido</strong> tiene el objetivo abajo porque las células están pegadas al <strong>fondo</strong> del frasco. La <strong>campana</strong> es una mesa con aire filtrado para que no entren bichos.",
+     "truco": "<strong>Truco de temperaturas (de calor a frío):</strong> <strong>37 → 4 → -20 → -80 → -200</strong>. Piensa: <strong>cuerpo → nevera → congelador de casa → ultracongelador → nitrógeno</strong>.",
+     "q": "¿Qué equipos necesita un laboratorio de cultivos y a qué temperaturas están la nevera, los congeladores y el N líquido?",
+     "n": 2
+    },
+    {
+     "titulo": "Fotos de equipos (diapositivas 3 y 4, solo imágenes)",
+     "lv": 2,
+     "fuente": "Bloque 1 · Qué es un cultivo celular y con qué se hace",
+     "prof": "<p>reconócelos a la vista: tanque de N líquido, incubador de CO2, microscopio invertido, caja de criotubos, ultracongelador (-80 ºC), microscopio con cámara; pipeteador automático, micropipeta, pipeta multicanal, aspirador de medio, <strong>baño termostático</strong>, <strong>autoclave</strong> (olla metálica con manómetro) y <strong>campana de flujo laminar</strong>.</p>",
+     "entiende": "el <strong>autoclave</strong> es una olla a presión gigante (vapor caliente que mata todo). Los <strong>criotubos</strong> son tubitos pequeños para congelar células. La <strong>multicanal</strong> es una pipeta con varias puntas a la vez.",
+     "truco": "<strong>olla con reloj = autoclave</strong> · <strong>cabina con cristal delante = campana</strong> · <strong>cubo de agua caliente = baño termostático</strong>.",
+     "q": "Si te muestran una olla metálica con manómetro y una cabina con cristal frontal, ¿qué equipos son y para qué sirven?",
+     "n": 3
+    }
+   ],
+   "min": 10
+  },
+  {
+   "titulo": "Tipos de cultivo",
+   "conceptos": [
+    {
+     "titulo": "Los 3 tipos de cultivo",
+     "lv": 1,
+     "fuente": "Bloque 2 · Tipos de cultivo",
+     "prof": "<p>1) cultivo de <strong>órganos</strong> (o fragmentos de órganos). 2) cultivo de <strong>tejidos</strong> (explantes). 3) cultivo de <strong>células</strong>.</p>",
+     "entiende": "van de <strong>más grande a más pequeño</strong>: un trozo de órgano → un trozo de tejido → células sueltas.",
+     "truco": "<strong>\"O-T-C\"</strong> = <strong>O</strong>rganizo <strong>T</strong>odo <strong>C</strong>ompleto: <strong>Ó</strong>rganos, <strong>T</strong>ejidos, <strong>C</strong>élulas (de grande a pequeño).",
+     "q": "¿Cuáles son los tres tipos de cultivo?",
+     "n": 4
+    },
+    {
+     "titulo": "Cultivo de órganos",
+     "lv": 2,
+     "fuente": "Bloque 2 · Tipos de cultivo",
+     "prof": "<p>parte de un <strong>fragmento de órgano</strong>; los tejidos <strong>retienen parte o todas las características histológicas</strong> del tejido <em>in vivo</em>. El fragmento se mantiene en la <strong>interfase entre el medio de cultivo y una atmósfera controlada</strong> (esquema: queratinocitos sumergidos → tras semanas, interfase aire-líquido → epitelio de piel).</p>",
+     "entiende": "el trozo de órgano se pone \"a flote\", con la parte de abajo tocando el medio (comida) y la de arriba tocando el aire, como la piel real, que por dentro recibe sangre y por fuera toca el aire. Así conserva su estructura (histología).",
+     "truco": "<strong>órgano = \"medio y aire\"</strong> (interfase).",
+     "q": "¿Qué caracteriza al cultivo de órganos y dónde se coloca el fragmento?",
+     "n": 5
+    },
+    {
+     "titulo": "Cultivo de explantes (tejidos)",
+     "lv": 2,
+     "fuente": "Bloque 2 · Tipos de cultivo",
+     "prof": "<p>los <strong>fragmentos de tejido se adhieren a una superficie</strong> y se les añade el medio de cultivo apropiado (foto: trozos de tejido en placa de 6 pocillos).</p>",
+     "entiende": "el trocito de tejido se <strong>pega</strong> al fondo de la placa y las células van saliendo de él hacia los lados.",
+     "truco": "<strong>explante = trozo pegado</strong>.",
+     "q": "¿En qué consiste un cultivo de explantes?",
+     "n": 6
+    },
+    {
+     "titulo": "Cultivo de células",
+     "lv": 1,
+     "fuente": "Bloque 2 · Tipos de cultivo",
+     "prof": "<p><strong>es el más utilizado.</strong> Se introduce la <strong>suspensión de células</strong> en un recipiente con medio y se incuban en condiciones óptimas para que <strong>proliferen</strong>.</p>\n<ul>\n<li><strong>Investigación básica:</strong> metabolismo celular, interacciones celulares.</li>\n<li><strong>Investigación aplicada:</strong> anticuerpos, vacunas, fármacos, estudios de toxicidad, células madre para terapia celular, ingeniería y producción de tejidos y órganos <em>in vitro</em>.</li>\n</ul>",
+     "entiende": "<strong>básica</strong> = entender <strong>cómo funciona</strong> la célula. <strong>Aplicada</strong> = <strong>fabricar algo útil</strong> (vacunas, fármacos, tejidos).",
+     "truco": "<strong>básica = \"¿cómo funciona?\"</strong> · <strong>aplicada = \"¿para qué me sirve?\"</strong>.",
+     "q": "¿Cuál es el tipo de cultivo más usado, cómo se hace y qué aplicaciones tiene?",
+     "n": 7
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "Cultivo primario vs secundario",
+   "conceptos": [
+    {
+     "titulo": "Diferencias según la procedencia",
+     "lv": 1,
+     "fuente": "Bloque 3 · Cultivo primario vs secundario",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Cultivo PRIMARIO</th>\n<th>Cultivo SECUNDARIO</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Origen</td>\n<td><strong>Directamente de un tejido</strong>, disgregando sus células</td>\n<td>De un <strong>primario o de otro secundario</strong>, mediante <strong>subcultivo o \"pase\"</strong></td>\n</tr>\n<tr>\n<td>Tipos celulares</td>\n<td>Normalmente <strong>varios</strong> tipos de células</td>\n<td>Normalmente un <strong>único tipo</strong> de células</td>\n</tr>\n<tr>\n<td>Ejemplo</td>\n<td><strong>Cultivo de vellosidades coriónicas</strong></td>\n<td>—</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "el <strong>primario</strong> es la <strong>primera generación</strong>: sale del tejido y trae de todo (varios tipos de células, como una sopa). El <strong>secundario</strong> sale <strong>de otro cultivo</strong>: tras las mudanzas (pases) sobrevive el tipo que mejor crece, y queda <strong>uno solo</strong>.",
+     "truco": "<strong>Primario = Primero, del tejido, Plural (varios)</strong> · <strong>Secundario = Sale de otro cultivo, Solo uno</strong>.",
+     "q": "¿En qué se diferencia un cultivo primario de uno secundario (origen, tipos celulares y ejemplo)?",
+     "n": 8
+    }
+   ],
+   "min": 10
+  },
+  {
+   "titulo": "Crecimiento y pase",
+   "conceptos": [
+    {
+     "titulo": "Curva de crecimiento (sigmoide)",
+     "lv": 1,
+     "fuente": "Bloque 4 · Crecimiento y pase",
+     "prof": "<p>tras añadir el medio, las células se meten en un frasco y se incuban en condiciones óptimas. Fases:</p>\n<ol>\n<li><strong>Latencia</strong> (<em>lag</em>): se adaptan, casi no se dividen.</li>\n<li><strong>Exponencial</strong> (<em>log</em>): se dividen al máximo.</li>\n<li><strong>Estacionaria</strong>: el crecimiento se frena (meseta).</li>\n</ol>\n<p>Gráfica: eje Y = nº de células (log), eje X = tiempo (días). Tiene forma de <strong>S</strong> (sigmoide).</p>",
+     "entiende": "es como <strong>mudarte a un piso nuevo</strong>: los primeros días te adaptas (latencia), luego vives a tope (exponencial) y al final el piso se llena y ya no cabe nadie más (estacionaria).",
+     "truco": "<strong>\"L-E-E\"</strong> = <strong>L</strong>lego, <strong>E</strong>xploto, <strong>E</strong>stanco. Y la curva es una <strong>S</strong> de <strong>S</strong>igmoide.",
+     "q": "¿Cuáles son las fases de la curva de crecimiento y qué pasa en cada una?",
+     "n": 9
+    },
+    {
+     "titulo": "Formas de crecimiento",
+     "lv": 1,
+     "fuente": "Bloque 4 · Crecimiento y pase",
+     "prof": "<ul>\n<li><strong>Monocapa:</strong> células que <strong>necesitan adherirse</strong> a una superficie sólida → <strong>la mayoría</strong>.</li>\n<li><strong>Suspensión:</strong> <strong>no necesitan adherirse</strong> → <strong>células sanguíneas, células madre…</strong></li>\n</ul>",
+     "entiende": "las de la sangre viajan flotando por el cuerpo, así que en el frasco también <strong>flotan</strong> (suspensión). Las de los tejidos están pegadas unas a otras, así que en el frasco <strong>se pegan al fondo</strong> en una sola capa (monocapa).",
+     "truco": "<strong>la sangre flota</strong> → suspensión. <strong>Todo lo demás se pega</strong> → monocapa (la mayoría).",
+     "q": "¿Qué dos formas de crecimiento hay y qué células crecen en cada una?",
+     "n": 10
+    },
+    {
+     "titulo": "Subcultivo o pase",
+     "lv": 1,
+     "fuente": "Bloque 4 · Crecimiento y pase",
+     "tituloHtml": "Subcultivo o pase <span class=\"note\">recuadro azul</span>",
+     "prof": "<p>en monocapa y en suspensión llega un momento en que se <strong>inhibe el crecimiento (fase estacionaria)</strong>. Para reanudarlo se hace un <strong>subcultivo o pase</strong>: <strong>coger parte de las células y pasarlas a un nuevo frasco con medio</strong>. Se hace <strong>al final de la fase exponencial</strong> (≈ <strong>70-80 % de confluencia</strong>).</p>",
+     "entiende": "es como <strong>trasplantar una planta</strong> que ya no cabe en la maceta: coges una parte y la pasas a una maceta nueva con tierra (medio). Se hace <strong>justo antes</strong> de que se llene del todo, mientras aún crece con fuerza.",
+     "truco": "<strong>pase = mudanza al 70-80 %</strong> (\"no esperes a que el piso esté lleno\").",
+     "q": "¿Qué es un pase, para qué sirve y en qué momento se hace?",
+     "n": 11
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "Líneas celulares (en azul)",
+   "conceptos": [
+    {
+     "titulo": "Línea celular",
+     "lv": 1,
+     "fuente": "Bloque 5 · Líneas celulares (en azul)",
+     "prof": "<p>tras sucesivos pases, el cultivo primario da origen a una línea celular: <strong>colonia de células obtenidas tras varios subcultivos o pases a partir de un cultivo primario</strong>.</p>\n<ul>\n<li><strong>Líneas primarias:</strong> se mantienen mediante pases <strong>durante un tiempo limitado</strong>.</li>\n<li><strong>Líneas continuas:</strong> se mantienen mediante pases <strong>durante un tiempo ilimitado</strong>.</li>\n</ul>",
+     "entiende": "una línea celular es como una <strong>familia</strong> que viene del mismo cultivo primario. Si la familia <strong>envejece y se acaba</strong>, es primaria; si <strong>no muere nunca</strong>, es continua.",
+     "truco": "<strong>Primaria = Perecedera</strong> (caduca) · <strong>Continua = Continúa para siempre</strong>.",
+     "q": "¿Qué es una línea celular y qué la diferencia si es primaria o continua?",
+     "n": 12
+    },
+    {
+     "titulo": "Líneas celulares primarias",
+     "lv": 1,
+     "fuente": "Bloque 5 · Líneas celulares (en azul)",
+     "tituloHtml": "Líneas celulares primarias <span class=\"note\">título azul</span>",
+     "prof": "<ul>\n<li>Tras los <strong>2 o 3 primeros pases</strong> la población <strong>se estabiliza</strong> (morfología y fisiología estables).</li>\n<li>Tras <strong>20-100 pases</strong> (según el tipo celular) entra en <strong>senescencia</strong> (foto: célula senescente teñida de azul, grande y aplanada).</li>\n</ul>",
+     "entiende": "<strong>senescencia</strong> = envejecimiento: la célula deja de dividirse, como una persona mayor que ya no tiene hijos.",
+     "truco": "<strong>Truco de números:</strong> <strong>\"2-3 se asienta, 20-100 se jubila\"</strong>.",
+     "q": "¿Qué les ocurre a las líneas primarias tras 2-3 pases y tras 20-100 pases?",
+     "n": 13
+    },
+    {
+     "titulo": "Líneas celulares continuas",
+     "lv": 1,
+     "fuente": "Bloque 5 · Líneas celulares (en azul)",
+     "tituloHtml": "Líneas celulares continuas <span class=\"note\">título azul</span>",
+     "prof": "<ul>\n<li>Tras varios pases <strong>pierden los mecanismos de control de la división</strong>, de forma <strong>espontánea o inducida</strong>.</li>\n<li>Características de <strong>células cancerosas</strong>: <strong>inmortales, pérdida de inhibición por contacto, indiferenciadas</strong>.</li>\n<li>Ejemplo: <strong>Henrietta Lacks y las células HeLa</strong>.</li>\n</ul>",
+     "entiende": "una célula normal, cuando toca a sus vecinas, <strong>deja de dividirse</strong> (inhibición por contacto). Las continuas <strong>han perdido ese freno</strong>: se dividen sin parar, se amontonan y no se especializan (indiferenciadas), igual que un cáncer. Las <strong>HeLa</strong> vienen del cáncer de cuello de útero de Henrietta Lacks (1951) y todavía hoy se usan en todo el mundo.",
+     "truco": "<strong>\"I-P-I\"</strong> = <strong>I</strong>nmortales, <strong>P</strong>ierden la inhibición por contacto, <strong>I</strong>ndiferenciadas. Y <strong>HeLa = HEnrietta LAcks</strong>.",
+     "q": "¿Qué son las líneas continuas, qué características tienen y qué ejemplo famoso hay?",
+     "n": 14
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "Procedimientos del cultivo celular",
+   "conceptos": [
+    {
+     "titulo": "Los 6 procedimientos, en orden",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<p>1) <strong>Disgregación</strong> → 2) <strong>Recuento y viabilidad</strong> → 3) <strong>Siembra</strong> (inicio del cultivo) → 4) <strong>Mantenimiento</strong> → 5) <strong>Conservación</strong> → 6) <strong>Descongelación</strong>.</p>",
+     "entiende": "es la historia de la célula del mapa: <strong>separar → contar → plantar → cuidar → guardar → despertar</strong>.",
+     "truco": "<strong>\"Di-Re-Si-Man-Con-Des\"</strong> → \"<strong>Di</strong>le a <strong>Re</strong>mi que <strong>Si</strong> <strong>Man</strong>da la <strong>Con</strong>gelada, la <strong>Des</strong>congele\".",
+     "q": "¿Cuáles son los procedimientos de cultivo celular, en orden?",
+     "n": 15
+    },
+    {
+     "titulo": "Disgregación celular",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "tituloHtml": "Disgregación celular <span class=\"note\">la única diapositiva con &quot;Def:&quot;</span>",
+     "prof": "<p><strong>Definición:</strong> procedimiento para <strong>obtener una suspensión del tipo celular que nos interesa</strong>.</p>\n<ul>\n<li><strong>Mecánicos:</strong> <strong>cortar o triturar</strong> fragmentos de tejido en una placa con medio y <strong>filtrarlos</strong> para eliminar restos.</li>\n<li><strong>Enzimáticos:</strong> tratar con <strong>enzimas proteolíticas</strong> → <strong>digestión de la matriz extracelular</strong> y liberación de las células.</li>\n</ul>\n<p>Tras la disgregación hay <strong>una mezcla de varios tipos celulares</strong> → hace falta <strong>selección celular</strong>.</p>",
+     "entiende": "las células de un tejido están unidas por un \"cemento\" (la <strong>matriz extracelular</strong>, hecha de proteínas). Para soltarlas puedes <strong>romper a lo bruto</strong> (cortar, triturar) o <strong>disolver el cemento</strong> con enzimas que comen proteínas (<strong>proteolíticas</strong>: <em>proteo</em> = proteína, <em>lisis</em> = romper).",
+     "truco": "<strong>mecánica = tijera</strong> · <strong>enzimática = disolvente</strong>. Y \"proteolítica = <strong>rompe proteínas</strong>\".",
+     "q": "¿Qué es la disgregación, qué métodos hay y qué se obtiene al terminar?",
+     "n": 16
+    },
+    {
+     "titulo": "Selección de células",
+     "lv": 2,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<p>Dos maneras:</p>\n<ul>\n<li><strong>Propiedades específicas:</strong> distinta <strong>adhesión a sustratos/materiales</strong>.</li>\n<li><strong>Métodos inmunológicos:</strong> <strong>anticuerpos</strong> que reconocen un tipo concreto de células → <strong>CELL SORTING</strong> (esquema: un láser analiza cada gota y unas placas de deflexión separan las células marcadas en tubos distintos).</li>\n</ul>",
+     "entiende": "después de disgregar tienes una mezcla. Puedes separarlas porque <strong>unas se pegan y otras no</strong>, o <strong>\"marcando\" con anticuerpos</strong> solo las que quieres: el <strong>cell sorting</strong> las ve con un láser y las desvía a otro tubo, como un <strong>control de aeropuerto</strong> que separa a los que llevan etiqueta.",
+     "truco": "<strong>pegarse o etiquetarse</strong> (adhesión o anticuerpos).",
+     "q": "¿De qué dos formas se seleccionan las células y qué es el cell sorting?",
+     "n": 17
+    },
+    {
+     "titulo": "Recuento: densidad celular",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<p>con la suspensión hecha hay que saber cuántas células hay → <strong>densidad celular = nº de células/ml de suspensión</strong>.</p>",
+     "entiende": "es como saber <strong>cuánta gente hay por metro cuadrado</strong> en un concierto, pero con células por mililitro.",
+     "truco": "densidad = <strong>células/ml</strong>.",
+     "q": "¿Qué es la densidad celular y en qué unidades se expresa?",
+     "n": 18
+    },
+    {
+     "titulo": "Viabilidad: colorante vital",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<p>el colorante vital <strong>distingue células vivas y muertas</strong>. El más habitual: <strong>azul tripán (<em>Trypan blue</em>)</strong>.\nFoto: <strong>viables = blancas/claras</strong> (no captan el colorante); <strong>no viables = azules</strong>.</p>",
+     "entiende": "una célula viva tiene la <strong>membrana intacta</strong>, como una puerta cerrada, y el colorante no entra: se ve <strong>blanca</strong>. Una muerta tiene la membrana rota, el colorante entra y se ve <strong>azul</strong>.",
+     "truco": "<strong>\"Azul = adiós\"</strong> (muerta). <strong>Blanca = bien</strong> (viva).",
+     "q": "¿Para qué sirve el azul tripán y de qué color se ven las células vivas y las muertas?",
+     "n": 19
+    },
+    {
+     "titulo": "Cámara de Neubauer",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<p>el recuento consiste en contar las <strong>viables (blancas) y no viables (azules)</strong> en una <strong>cámara de recuento o hemocitómetro → cámara de Neubauer</strong> (foto: portaobjetos grueso con rejilla; las flechas señalan los <strong>4 cuadrantes de las esquinas</strong> donde se cuenta).</p>",
+     "entiende": "es un portaobjetos con una <strong>cuadrícula grabada</strong>, como un tablero. Cuentas las células de las 4 esquinas y con eso calculas cuántas hay en total.",
+     "truco": "<strong>Neubauer = tablero de 4 esquinas</strong>.",
+     "q": "¿Dónde se hace el recuento celular y qué células se cuentan?",
+     "n": 20
+    },
+    {
+     "titulo": "Siembra (inicio del cultivo)",
+     "lv": 2,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<ol>\n<li>Tras contar y hacer cálculos, <strong>transferir el volumen con el nº de células deseado a un falcon</strong> con medio previamente añadido para <strong>atemperar</strong>.</li>\n<li>Coger el volumen adecuado de células con medio y <strong>sembrarlo</strong> en el recipiente elegido.</li>\n<li><strong>Incubar en incubador de CO2 a 37 ºC</strong> (condiciones óptimas).</li>\n</ol>",
+     "entiende": "<strong>atemperar</strong> = poner el medio a la temperatura del cuerpo antes, para que la célula no \"pase frío\" al llegar.",
+     "truco": "<strong>\"calcular → falcon caliente → sembrar → 37 ºC\"</strong>.",
+     "q": "¿Cuáles son los pasos de la siembra?",
+     "n": 21
+    },
+    {
+     "titulo": "Mantenimiento 1: control microscópico",
+     "lv": 2,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<p><strong>cada 1-3 días</strong> se observan los cultivos en el <strong>microscopio invertido</strong> → cambios en apariencia y crecimiento.</p>",
+     "q": "¿Cada cuánto y con qué se controlan los cultivos?",
+     "n": 22
+    },
+    {
+     "titulo": "Mantenimiento 2: cambio de medio",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<ul>\n<li><strong>Para qué:</strong> renovar <strong>nutrientes</strong> y retirar <strong>productos de desecho</strong> del metabolismo.</li>\n<li><strong>Cuándo:</strong> <strong>cada 2-3 días</strong> o si el medio <strong>cambia de color</strong> (variación de <strong>pH</strong>).</li>\n<li><strong>Monocapa:</strong> aspirar con pipeta y cambiar <strong>2/3 del volumen</strong> (para conservar sustancias beneficiosas secretadas por las células).</li>\n<li><strong>Suspensión:</strong> recoger medio + células en <strong>falcon de 15 ml</strong>, <strong>centrifugar 5 min a 1500 rpm</strong>, eliminar <strong>sobrenadante</strong> y resuspender el <strong>pellet</strong> en medio fresco.</li>\n</ul>",
+     "entiende": "el medio es <strong>comida + agua del váter</strong> a la vez: las células comen y ensucian. Cuando se ensucia, el pH cambia y el color también (el medio tiene un indicador). En <strong>monocapa</strong> es fácil: las células están pegadas, así que quitas líquido sin perderlas (y dejas 1/3 porque tiene \"cosas buenas\" que fabrican ellas). En <strong>suspensión</strong> las células flotan en el líquido, así que primero hay que <strong>centrifugarlas</strong> para que bajen al fondo (<strong>pellet</strong>) y luego tirar el líquido de arriba (<strong>sobrenadante</strong>).",
+     "truco": "<strong>\"Mira cada 1-3, cambia cada 2-3\"</strong>. <strong>Monocapa = 2/3</strong> · <strong>Suspensión = centrifuga</strong>.",
+     "q": "¿Por qué, cuándo y cómo se cambia el medio en monocapa y en suspensión?",
+     "n": 23
+    },
+    {
+     "titulo": "Mantenimiento 3: preparación del medio",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<ul>\n<li>Botella de medio (<strong>DMEM, RPMI…</strong>) de <strong>500 ml</strong>.</li>\n<li><strong>FBS</strong> (suero fetal bovino) <strong>descomplementado con calor</strong> al <strong>10 %</strong>.</li>\n<li>Antibióticos <strong>Pen/Strep 1/1000</strong>.</li>\n</ul>",
+     "entiende": "el <strong>DMEM/RPMI</strong> es la comida base. El <strong>FBS</strong> es como un \"batido de proteínas\" con factores de crecimiento (se calienta antes para inactivar el complemento, unas proteínas que podrían dañar a las células). <strong>Pen/Strep</strong> = penicilina + estreptomicina, contra las bacterias.",
+     "truco": "<strong>\"500 · 10 · 1000\"</strong> → <strong>500</strong> ml de medio, <strong>10 %</strong> de suero, <strong>1/1000</strong> de antibiótico.",
+     "q": "¿Cómo se prepara el medio de cultivo?",
+     "n": 24
+    },
+    {
+     "titulo": "Mantenimiento 4: confluencia",
+     "lv": 2,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<p>fotos: <strong>no confluente</strong> (islotes sueltos) → <strong>subconfluente</strong> (huecos) → <strong>confluente</strong> (toda la superficie cubierta). El pase se hace a <strong>70-80 % de confluencia</strong> (subconfluente, final de la exponencial).</p>",
+     "entiende": "la confluencia es <strong>cuánto del suelo del frasco está ocupado</strong>, como las baldosas de un suelo cubiertas por gente.",
+     "q": "¿Qué significa confluencia y a qué porcentaje se hace el pase?",
+     "n": 25
+    },
+    {
+     "titulo": "Protocolo del pase (12 pasos)",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "tituloHtml": "Protocolo del pase (12 pasos) <span class=\"note\">con **CUIDADO** en rojo</span>",
+     "prof": "<p>Como la mayoría crece en monocapa, hay que <strong>despegarlas con tripsina</strong>.</p>\n<ol>\n<li>Aspirar el medio.</li>\n<li>Lavar con <strong>PBS</strong> (normalmente <strong>dos lavados</strong>).</li>\n<li>Añadir <strong>tripsina 3 ml</strong> e incubar <strong>37 ºC 2-3 min</strong> para despegarlas → <strong>¡CUIDADO!</strong> (si te pasas de tiempo, la tripsina daña las células).</li>\n<li>Observar al microscopio si se han despegado.</li>\n<li><strong>Inactivar la tripsina con medio de cultivo 10 ml.</strong></li>\n<li>Pasar el contenido a un <strong>falcon de 15 ml</strong>.</li>\n<li><strong>Centrifugar 1500 rpm, 5 min.</strong></li>\n<li>Eliminar sobrenadante y <strong>resuspender el pellet</strong> en medio.</li>\n<li><strong>Recuento con cámara de Neubauer</strong> + cálculos.</li>\n<li>Preparar frascos nuevos con medio.</li>\n<li>Añadir las células deseadas.</li>\n<li><strong>Incubar a 37 ºC, 5 % CO2.</strong></li>\n</ol>\n<p>Esquema del vídeo (resumen en 5): aspirar medio → 2 lavados PBS → <strong>tripsina-EDTA</strong> poco tiempo → inactivar tripsina (<strong>medio con suero</strong>) → pasar a nueva placa.</p>",
+     "entiende": "la <strong>tripsina</strong> es una enzima que corta las proteínas que pegan la célula al fondo. Pero <strong>también puede romper la célula</strong> si la dejas demasiado: por eso el <strong>cuidado</strong> con los 2-3 min. El <strong>PBS</strong> lava los restos de suero, porque el suero frena la tripsina. Después se añade <strong>medio con suero</strong> precisamente para <strong>frenarla</strong> (inactivarla).",
+     "truco": "<strong>Números del pase:</strong> <strong>\"2 lavados · 3 ml · 2-3 min · 10 ml · 15 ml · 1500 rpm · 5 min\"</strong>.",
+     "q": "Explica paso a paso cómo se hace un pase de células en monocapa. ¿Dónde está el \"cuidado\"?",
+     "extra": [
+      {
+       "tras": "entiende",
+       "html": "<div class=\"box tip\"><p class=\"lbl\">🧠 Truco para recordarlo</p><p><strong>Truco en 4 frases (cuéntalo como una historia):</strong></p>\n<ol>\n<li><strong>Limpio</strong> → aspirar + 2 lavados de PBS.</li>\n<li><strong>Despego</strong> → tripsina 3 ml, 37 ºC, 2-3 min, ¡cuidado!, miro al microscopio.</li>\n<li><strong>Freno y bajo</strong> → 10 ml de medio, falcon de 15, centrifugo 1500 rpm 5 min, tiro el sobrenadante, resuspendo.</li>\n<li><strong>Cuento y siembro</strong> → Neubauer, frascos nuevos, células, 37 ºC y 5 % CO2.</li>\n</ol></div>"
+      }
+     ],
+     "n": 26
+    },
+    {
+     "titulo": "Conservación de células",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "tituloHtml": "Conservación de células <span class=\"note\">texto en morado</span>",
+     "prof": "<ul>\n<li>Método más habitual: <strong>congelación</strong>.</li>\n<li>Se añade <strong>DMSO (dimetil sulfóxido)</strong>, <strong>agente crioprotector → ¡tóxico!</strong></li>\n<li><strong>Una vez añadido el DMSO, se congelan inmediatamente con N líquido y se conservan a -80 ºC indefinidamente.</strong></li>\n</ul>",
+     "entiende": "al congelar, el agua de dentro de la célula forma <strong>cristales de hielo que la pinchan y la rompen</strong>. El <strong>DMSO</strong> (crio = frío, protector) lo evita, pero es <strong>tóxico</strong>: por eso, en cuanto lo pones, hay que congelar <strong>ya</strong>, sin esperar.",
+     "truco": "<strong>\"DMSO = Defiende del hielo, pero Mata Si Olvidas congelar\"</strong>.",
+     "q": "¿Cómo se conservan las células, qué es el DMSO y qué hay que hacer justo después de añadirlo?",
+     "n": 27
+    },
+    {
+     "titulo": "Descongelación de células",
+     "lv": 1,
+     "fuente": "Bloque 6 · Procedimientos del cultivo celular",
+     "prof": "<ol>\n<li>Sacar del congelador de <strong>-80 ºC o del N líquido</strong> y descongelar ligeramente <strong>con las manos</strong>.</li>\n<li>Pasar al <strong>baño termostático a 37 ºC</strong>.</li>\n<li>El <strong>DMSO</strong> (medio de congelación = <strong>Suero Fetal Bovino + DMSO 10 %</strong>) es <strong>muy tóxico</strong> → hay que <strong>eliminarlo antes de sembrar</strong>.</li>\n<li>Mezclar el medio de congelación (con las células) con <strong>10 ml de medio atemperado</strong> y <strong>centrifugar 1500 rpm 5 min</strong>.</li>\n<li><strong>Eliminar sobrenadante</strong>, resuspender en medio y <strong>sembrar</strong>.</li>\n</ol>",
+     "entiende": "las células se despiertan con calor (manos → baño a 37 ºC). Luego hay que <strong>quitarles el DMSO</strong> antes de sembrarlas: lo <strong>diluyes</strong> en 10 ml de medio, <strong>centrifugas</strong> para que las células bajen y <strong>tiras el líquido de arriba</strong>, que es donde está el DMSO.",
+     "truco": "<strong>\"Manos → baño → diluyo → centrifugo → tiro el DMSO → siembro\"</strong>. Fíjate: <strong>centrifugar 1500 rpm 5 min</strong> sale <strong>3 veces</strong> en el tema (cambio de medio en suspensión, pase y descongelación).",
+     "q": "¿Cómo se descongelan las células y por qué hay que centrifugar antes de sembrar?",
+     "n": 28
+    }
+   ],
+   "min": 60
+  },
+  {
+   "titulo": "Contaminación y cuidados",
+   "conceptos": [
+    {
+     "titulo": "Contaminaciones",
+     "lv": 1,
+     "fuente": "Bloque 7 · Contaminación y cuidados",
+     "prof": "<ul>\n<li>Los microorganismos pueden <strong>alterar el crecimiento</strong> del cultivo.</li>\n<li><strong>Tres grupos:</strong> <strong>bacterias, levaduras y hongos</strong>.</li>\n<li>Normas de limpieza: <strong>campanas, etanol, rayos UV</strong>, etc.</li>\n<li><strong>Virus:</strong> la contaminación <strong>más grave</strong>; suele venir de <strong>sueros animales</strong>.</li>\n</ul>",
+     "entiende": "las bacterias, levaduras y hongos <strong>se ven</strong> (el medio se enturbia o cambia de color). Los <strong>virus no se ven</strong> y viven dentro de las células: por eso son <strong>los más graves</strong>. Entran con el <strong>suero animal</strong> (el FBS viene de vacas).",
+     "truco": "<strong>\"B-L-H y el Virus es el Villano\"</strong> (Bacterias, Levaduras, Hongos; el Virus, lo peor).",
+     "q": "¿Qué contaminantes hay, cuál es el más grave y de dónde viene?",
+     "n": 29
+    },
+    {
+     "titulo": "Cuidados al trabajar con cultivos",
+     "lv": 1,
+     "fuente": "Bloque 7 · Contaminación y cuidados",
+     "prof": "<ul>\n<li><strong>Antibióticos y antifúngicos</strong> en el medio.</li>\n<li>Condiciones estrictas de <strong>asepsia</strong> y <strong>cabinas de seguridad biológica 2</strong>.</li>\n<li>Cuidado especial <strong>fuera del ambiente estéril</strong> (p. ej., al mirar al microscopio).</li>\n<li>Limpiar el exterior de viales y recipientes que entren en la cabina con <strong>etanol 70 %</strong>.</li>\n<li><strong>EPIS:</strong> <strong>bata estéril solo para cultivos, guantes</strong>, y rociarlos con etanol en cada manipulación.</li>\n</ul>",
+     "truco": "<strong>\"A-C-E-E\"</strong> = <strong>A</strong>ntibióticos, <strong>C</strong>abina nivel 2, <strong>E</strong>tanol 70 %, <strong>E</strong>PIS.",
+     "q": "¿Qué cuidados hay que tener al trabajar con cultivos celulares? Di al menos cuatro.",
+     "n": 30
+    }
+   ],
+   "min": 10
+  },
+  {
+   "titulo": "Aplicaciones",
+   "conceptos": [
+    {
+     "titulo": "Investigación aplicada (5 áreas)",
+     "lv": 2,
+     "fuente": "Bloque 8 · Aplicaciones",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Área</th>\n<th>Qué se hace</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Virología</strong></td>\n<td>Cultivo de virus animales y de plantas, <strong>producción de vacunas</strong></td>\n</tr>\n<tr>\n<td><strong>Biotecnología</strong></td>\n<td>Fármacos en <strong>biorreactores</strong> (<strong>interferón, insulina, hormona de crecimiento</strong>)</td>\n</tr>\n<tr>\n<td><strong>Inmunología</strong></td>\n<td><strong>Anticuerpos monoclonales</strong>, señalización, inflamación</td>\n</tr>\n<tr>\n<td><strong>Farmacología</strong></td>\n<td>Efecto de fármacos, interacción con el receptor, <strong>resistencia</strong></td>\n</tr>\n<tr>\n<td><strong>Ingeniería de tejidos</strong></td>\n<td>Tejidos artificiales (<strong>piel, cartílago</strong>) para <strong>grandes quemados</strong>, injertos, autotrasplantes; desdiferenciación y diferenciación inducida</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>\"VaBIFI\"</strong> → <strong>V</strong>irología (vacunas), <strong>B</strong>iotecnología (insulina), <strong>I</strong>nmunología (anticuerpos), <strong>F</strong>armacología (resistencia), <strong>I</strong>ngeniería (piel para quemados).",
+     "q": "Nombra las 5 áreas de investigación aplicada y un ejemplo de cada una.",
+     "n": 31
+    },
+    {
+     "titulo": "Investigación básica (5 fenómenos)",
+     "lv": 2,
+     "fuente": "Bloque 8 · Aplicaciones",
+     "prof": "<ol>\n<li><strong>Actividad intracelular:</strong> transcripción de DNA, síntesis de proteínas, metabolismo energético, ciclo celular, diferenciación, apoptosis.</li>\n<li><strong>Flujo intracelular de biomoléculas:</strong> procesamiento del ARN, su paso del núcleo al citoplasma, movimiento de proteínas a orgánulos, ensamblaje y desensamblaje de microtúbulos.</li>\n<li><strong>Genómica y proteómica:</strong> análisis genético, infección, transformación celular, inmortalización, senescencia, expresión génica, rutas metabólicas.</li>\n<li><strong>Ecología celular:</strong> condiciones ambientales que mantienen la función y diferenciación, necesidades nutricionales, cinética de la población.</li>\n<li><strong>Interacciones celulares:</strong> morfogénesis, proliferación, adhesión, interacciones con la matriz, invasión celular.</li>\n</ol>",
+     "entiende": "van de <strong>dentro hacia fuera</strong>: lo que pasa <strong>dentro</strong> de la célula (actividad) → lo que <strong>se mueve</strong> dentro (flujo) → sus <strong>genes y proteínas</strong> (genómica) → su <strong>ambiente</strong> (ecología) → su <strong>relación con otras</strong> (interacciones).",
+     "truco": "<strong>\"A-F-G-E-I\"</strong> → \"<strong>A</strong>ndrés <strong>F</strong>ue a <strong>G</strong>ranada <strong>E</strong>n <strong>I</strong>nvierno\".",
+     "q": "¿Qué fenómenos permite estudiar el cultivo celular en investigación básica?",
+     "n": 32
+    }
+   ],
+   "min": 10
+  }
+ ],
+ "trampas": [
+  [
+   "<strong>Cultivo primario</strong>",
+   "<strong>Línea primaria</strong>",
+   "El cultivo primario sale del <strong>tejido</strong>; la línea primaria sale <strong>tras varios pases</strong> y tiene tiempo limitado"
+  ],
+  [
+   "<strong>Pase</strong> al <strong>final de la exponencial</strong>",
+   "Pase en la <strong>estacionaria</strong>",
+   "Se hace <strong>antes</strong> de que se pare (70-80 %), no cuando ya está lleno"
+  ],
+  [
+   "<strong>Vivas = blancas</strong>",
+   "<strong>Muertas = azules</strong>",
+   "El colorante solo entra si la membrana está rota"
+  ],
+  [
+   "<strong>-80 ºC</strong> (conservación)",
+   "<strong>-200 ºC</strong> (N líquido)",
+   "Se congela <strong>con N líquido</strong> y se <strong>conserva a -80 ºC</strong>"
+  ],
+  [
+   "<strong>Monocapa: 2/3</strong> del medio",
+   "<strong>Suspensión: centrifugar</strong>",
+   "En suspensión las células están en el líquido"
+  ],
+  [
+   "<strong>Virus</strong> (el más grave)",
+   "Bacterias, levaduras, hongos",
+   "El virus viene de <strong>sueros animales</strong>"
+  ],
+  [
+   "<strong>Inactivar la tripsina</strong> (10 ml de medio)",
+   "<strong>Diluir el DMSO</strong> (10 ml de medio)",
+   "Los dos usan 10 ml, pero son pasos distintos (pase / descongelación)"
+  ]
+ ],
+ "numeros": [
+  [
+   "37 ºC y 5 % CO2",
+   "Incubador"
+  ],
+  [
+   "4 / -20 / -80 / -200 ºC",
+   "Nevera / congelador / ultracongelador / N líquido"
+  ],
+  [
+   "70-80 %",
+   "Confluencia para hacer el pase"
+  ],
+  [
+   "2-3 pases",
+   "La línea primaria se estabiliza"
+  ],
+  [
+   "20-100 pases",
+   "La línea primaria entra en senescencia"
+  ],
+  [
+   "1-3 días",
+   "Control al microscopio"
+  ],
+  [
+   "2-3 días",
+   "Cambio de medio"
+  ],
+  [
+   "2/3",
+   "Volumen de medio que se cambia en monocapa"
+  ],
+  [
+   "500 ml · 10 % · 1/1000",
+   "Medio · FBS · Pen/Strep"
+  ],
+  [
+   "3 ml · 2-3 min",
+   "Tripsina"
+  ],
+  [
+   "10 ml",
+   "Medio para inactivar la tripsina / para diluir el DMSO"
+  ],
+  [
+   "15 ml",
+   "Falcon"
+  ],
+  [
+   "1500 rpm · 5 min",
+   "Centrifugación"
+  ],
+  [
+   "DMSO 10 %",
+   "Medio de congelación (con FBS)"
+  ],
+  [
+   "Etanol 70 %",
+   "Limpieza de viales"
+  ],
+  [
+   "Nivel 2",
+   "Cabina de seguridad biológica"
+  ]
+ ],
+ "chequeo": [
+  "Los 6 procedimientos en orden (Di-Re-Si-Man-Con-Des).",
+  "Las 3 fases de la curva (L-E-E).",
+  "Primario vs secundario (origen, nº de tipos, ejemplo).",
+  "Línea primaria vs continua (2-3 / 20-100, I-P-I, HeLa).",
+  "Los 12 pasos del pase en 4 frases (limpio, despego, freno y bajo, cuento y siembro).",
+  "Composición del medio (500 · 10 · 1000) y del medio de congelación (FBS + DMSO 10 %).",
+  "Los 3 contaminantes y el más grave (B-L-H y el Virus).",
+  "Temperaturas: 37 / 4 / -20 / -80 / -200 ºC.",
+  "Las 5 áreas aplicadas (VaBIFI) y los 5 fenómenos básicos (A-F-G-E-I).",
+  "Vivas blancas, muertas azules, en la cámara de Neubauer."
+ ],
+ "impres": [
+  {
+   "titulo": "Qué es y con qué se hace",
+   "items": [
+    [
+     "¿Qué es un cultivo celular?",
+     "<strong>Conjunto de procedimientos que hacen posible el mantenimiento de células vivas <em>in vitro</em>.</strong>"
+    ],
+    [
+     "¿Equipos del laboratorio?",
+     "Campana de flujo laminar · incubador de CO2 · <strong>microscopio invertido</strong> · N líquido (<strong>-200 ºC</strong>) · neveras (<strong>4 ºC</strong>) y congeladores (<strong>-20 y -80 ºC</strong>) · esterilización (<strong>autoclave, filtración, luz UV</strong>) · contadores, pHmetro, placa calefactora, pipeta automática."
+    ]
+   ]
+  },
+  {
+   "titulo": "Tipos de cultivo",
+   "items": [
+    [
+     "¿3 tipos?",
+     "<strong>Órganos</strong> (fragmento que conserva la histología, en la <strong>interfase medio/atmósfera</strong>) · <strong>Tejidos/explantes</strong> (fragmentos <strong>adheridos</strong> a una superficie con medio) · <strong>Células</strong> (<strong>el más usado</strong>: suspensión en medio, incubar para que proliferen)."
+    ],
+    [
+     "¿Aplicaciones?",
+     "<strong>Básica:</strong> metabolismo e interacciones celulares. <strong>Aplicada:</strong> anticuerpos, vacunas, fármacos, toxicidad, células madre, ingeniería de tejidos."
+    ]
+   ]
+  }
+ ],
+ "glosario": [
+  [
+   "Adherente (célula)",
+   "Célula que necesita pegarse a una superficie para crecer (crece en monocapa)"
+  ],
+  [
+   "Anticuerpo monoclonal",
+   "Anticuerpo idéntico producido por un solo clon de células; se fabrica con cultivos celulares"
+  ],
+  [
+   "Apoptosis",
+   "Muerte celular programada (\"suicidio\" ordenado de la célula)"
+  ],
+  [
+   "Asepsia",
+   "Trabajar sin microorganismos que contaminen (material estéril, cabina, etanol)"
+  ],
+  [
+   "Atemperar",
+   "Poner el medio a la temperatura adecuada (37 ºC) antes de usarlo"
+  ],
+  [
+   "Autoclave",
+   "Aparato que esteriliza con vapor de agua a presión y alta temperatura"
+  ],
+  [
+   "Azul tripán (Trypan blue)",
+   "Colorante vital: las células muertas se tiñen de azul y las vivas quedan blancas"
+  ],
+  [
+   "Biorreactor",
+   "Recipiente donde se cultivan células a gran escala para fabricar productos (insulina, interferón)"
+  ],
+  [
+   "Cabina de seguridad biológica / campana de flujo laminar",
+   "Mesa cerrada con aire filtrado que protege la muestra y al trabajador"
+  ],
+  [
+   "Cámara de Neubauer (hemocitómetro)",
+   "Portaobjetos con rejilla para contar células al microscopio"
+  ],
+  [
+   "Cell sorting",
+   "Separación de células marcadas con anticuerpos fluorescentes, gota a gota, con un láser"
+  ],
+  [
+   "Centrifugar",
+   "Girar a alta velocidad para que las células bajen al fondo (pellet)"
+  ],
+  [
+   "Confluencia",
+   "% de la superficie del frasco cubierta por células (pase al 70-80 %)"
+  ],
+  [
+   "Crioprotector",
+   "Sustancia que protege a las células al congelarlas (DMSO)"
+  ],
+  [
+   "Criotubo",
+   "Tubito pequeño para congelar células"
+  ],
+  [
+   "Cultivo celular",
+   "Conjunto de procedimientos que hacen posible el mantenimiento de células vivas in vitro"
+  ],
+  [
+   "Cultivo primario",
+   "Obtenido directamente de un tejido por disgregación; varios tipos celulares"
+  ],
+  [
+   "Cultivo secundario",
+   "Obtenido de otro cultivo mediante un pase; normalmente un solo tipo celular"
+  ],
+  [
+   "Densidad celular",
+   "Número de células por ml de suspensión"
+  ],
+  [
+   "Descomplementar",
+   "Calentar el suero para inactivar el complemento (proteínas que dañarían las células)"
+  ],
+  [
+   "Disgregación",
+   "Separar las células de un tejido para obtener una suspensión (mecánica o enzimática)"
+  ],
+  [
+   "DMEM / RPMI",
+   "Medios de cultivo (la \"comida\" de las células)"
+  ],
+  [
+   "DMSO",
+   "Dimetil sulfóxido: crioprotector, muy tóxico; se elimina al descongelar"
+  ],
+  [
+   "EDTA",
+   "Sustancia que se añade a la tripsina para ayudar a despegar las células"
+  ],
+  [
+   "Enzimas proteolíticas",
+   "Enzimas que rompen proteínas (digieren la matriz extracelular)"
+  ],
+  [
+   "Explante",
+   "Fragmento de tejido que se pega a una superficie y se cultiva con medio"
+  ],
+  [
+   "Falcon",
+   "Tubo cónico de plástico (15 ml) para centrifugar"
+  ],
+  [
+   "Fase de latencia / exponencial / estacionaria",
+   "Adaptación / máxima división / el crecimiento se frena"
+  ],
+  [
+   "FBS (suero fetal bovino)",
+   "Suero que se añade al medio (10 %) con nutrientes y factores de crecimiento; descomplementado con calor"
+  ],
+  [
+   "HeLa",
+   "Primera línea celular continua humana (Henrietta Lacks)"
+  ],
+  [
+   "In vitro / in vivo",
+   "Fuera del organismo, en el laboratorio / dentro del organismo vivo"
+  ],
+  [
+   "Indiferenciada",
+   "Célula que no se ha especializado en una función concreta"
+  ],
+  [
+   "Inhibición por contacto",
+   "Las células normales dejan de dividirse cuando se tocan; las continuas la pierden"
+  ],
+  [
+   "Ingeniería de tejidos",
+   "Fabricar tejidos artificiales (piel, cartílago) para quemados o injertos"
+  ],
+  [
+   "Interfase (cultivo de órganos)",
+   "Zona de contacto entre el medio de cultivo y la atmósfera controlada"
+  ],
+  [
+   "Línea celular",
+   "Colonia de células obtenida tras varios pases de un cultivo primario"
+  ],
+  [
+   "Línea continua",
+   "Línea que se mantiene tiempo ilimitado (inmortal, como cancerosa)"
+  ],
+  [
+   "Línea primaria",
+   "Línea de tiempo limitado; se estabiliza tras 2-3 pases y envejece tras 20-100"
+  ],
+  [
+   "Matriz extracelular",
+   "\"Cemento\" de proteínas que une las células de un tejido"
+  ],
+  [
+   "Microscopio invertido",
+   "Microscopio con la luz arriba y el objetivo abajo, para mirar frascos desde la base"
+  ],
+  [
+   "Monocapa",
+   "Crecimiento en una sola capa de células pegadas al fondo"
+  ],
+  [
+   "N líquido (nitrógeno líquido)",
+   "Líquido muy frío (-200 ºC) para congelar y guardar células"
+  ],
+  [
+   "Pase (subcultivo)",
+   "Coger parte de las células y pasarlas a un frasco nuevo con medio"
+  ],
+  [
+   "PBS",
+   "Solución salina tamponada para lavar las células"
+  ],
+  [
+   "Pellet",
+   "\"Bolita\" de células que queda en el fondo tras centrifugar"
+  ],
+  [
+   "Pen/Strep",
+   "Antibióticos penicilina + estreptomicina (1/1000) para evitar bacterias"
+  ],
+  [
+   "pH",
+   "Medida de acidez; si cambia, el medio cambia de color y hay que renovarlo"
+  ],
+  [
+   "Proliferar",
+   "Multiplicarse, dividirse"
+  ],
+  [
+   "Senescencia",
+   "Envejecimiento celular: dejan de dividirse"
+  ],
+  [
+   "Siembra",
+   "Poner el volumen de células calculado en el recipiente de cultivo"
+  ],
+  [
+   "Sobrenadante",
+   "Líquido que queda arriba tras centrifugar (se desecha)"
+  ],
+  [
+   "Suspensión (crecimiento en)",
+   "Células que crecen flotando en el medio (sanguíneas, madre)"
+  ],
+  [
+   "Tripsina",
+   "Enzima que despega las células del fondo del frasco (2-3 min, ¡cuidado!)"
+  ],
+  [
+   "Viabilidad",
+   "Proporción de células vivas"
+  ]
+ ],
+ "extras": [
+  {
+   "id": "llave",
+   "html": "<section class=\"xs\" id=\"llave\"><h2 class=\"xs-h\">🔑 Bloque 9 · Preguntas llave</h2><p>La profe hace una <strong>pregunta llave</strong>: si no la contestas, el resto del examen no cuenta. Estas son las candidatas, de más a menos probable. <strong>Escríbelas de memoria al menos una vez.</strong></p><details class=\"pq\"><summary><span class=\"pn\">🔑 1</span> ¿Qué es un subcultivo o pase, cuándo se realiza y cuáles son sus pasos?</summary><div class=\"pa\"><p><em>Por qué:</em> recuadro azul, se repite en varias diapositivas, tiene vídeos y es la única con <strong>CUIDADO en rojo</strong>.</p>\n<p><strong>Respuesta modelo:</strong> el pase consiste en coger parte de las células de un cultivo y pasarlas a un nuevo frasco con medio para reanudar el crecimiento, que se inhibe en la fase estacionaria. Se hace al final de la fase exponencial, a un 70-80 % de confluencia. Pasos (monocapa): aspirar el medio; lavar dos veces con PBS; añadir 3 ml de tripsina e incubar a 37 ºC 2-3 min (¡cuidado con el tiempo!); comprobar al microscopio que se han despegado; inactivar la tripsina con 10 ml de medio; pasar a un falcon de 15 ml; centrifugar a 1500 rpm 5 min; eliminar el sobrenadante y resuspender el pellet; contar en cámara de Neubauer; preparar frascos con medio; añadir las células; incubar a 37 ºC y 5 % CO2.</p></div></details><details class=\"pq\"><summary><span class=\"pn\">🔑 2</span> ¿Qué es una línea celular? Diferencia las primarias de las continuas.</summary><div class=\"pa\"><p><em>Por qué:</em> es la única definición escrita <strong>en azul</strong>, con títulos azules.</p>\n<p><strong>Respuesta modelo:</strong> colonia de células obtenidas tras varios subcultivos o pases a partir de un cultivo primario. <strong>Primarias:</strong> tiempo limitado; se estabilizan tras 2-3 pases y entran en senescencia tras 20-100 pases. <strong>Continuas:</strong> tiempo ilimitado; pierden los mecanismos de control de la división (de forma espontánea o inducida) y tienen características de células cancerosas: inmortales, pérdida de inhibición por contacto, indiferenciadas. Ejemplo: células HeLa (Henrietta Lacks).</p></div></details><details class=\"pq\"><summary><span class=\"pn\">🔑 3</span> ¿Qué es la disgregación celular? Métodos.</summary><div class=\"pa\"><p><em>Por qué:</em> es la única diapositiva con <strong>\"Def:\"</strong>, recuadro verde y \"enzimas proteolíticas\" subrayado.</p>\n<p><strong>Respuesta modelo:</strong> procedimiento para obtener una suspensión del tipo celular que nos interesa. <strong>Mecánicos:</strong> cortar o triturar fragmentos de tejido en una placa con medio y filtrarlos para eliminar restos. <strong>Enzimáticos:</strong> tratar el fragmento con enzimas proteolíticas, que digieren la matriz extracelular y liberan las células. Se obtiene una mezcla de varios tipos celulares, por lo que se hace una selección: por propiedades específicas (adhesión a sustratos) o por métodos inmunológicos (anticuerpos → cell sorting).</p></div></details><details class=\"pq\"><summary><span class=\"pn\">🔑 4</span> ¿Cómo se conservan y descongelan las células? ¿Qué es el DMSO?</summary><div class=\"pa\"><p><em>Por qué:</em> es el único texto <strong>en morado</strong>, con \"muy tóxico\" subrayado y un vídeo.</p>\n<p><strong>Respuesta modelo:</strong> el método más habitual es la congelación. Se añade DMSO (dimetil sulfóxido), un agente crioprotector tóxico; una vez añadido, las células se congelan inmediatamente con N líquido y se conservan a -80 ºC indefinidamente. Para descongelar: descongelar ligeramente con las manos, pasar al baño a 37 ºC, mezclar con 10 ml de medio atemperado, centrifugar a 1500 rpm 5 min, eliminar el sobrenadante (con el DMSO, muy tóxico) y resuspender en medio para sembrar.</p></div></details><details class=\"pq\"><summary><span class=\"pn\">🔑 5</span> ¿Qué es un cultivo celular y cuáles son sus procedimientos?</summary><div class=\"pa\"><p><em>Por qué:</em> es lo más básico del tema.</p>\n<p><strong>Respuesta modelo:</strong> conjunto de procedimientos que hacen posible el mantenimiento de células vivas <em>in vitro</em>. Procedimientos, en orden: 1) disgregación, 2) recuento y viabilidad, 3) siembra, 4) mantenimiento, 5) conservación, 6) descongelación.</p></div></details><p><strong>Estrategia:</strong> la Nº 5 contiene a la 1, la 3 y la 4. Con estas 5 cubres alrededor del <strong>85 %</strong> de lo que puede ser la pregunta llave.</p></section>",
+   "opcion": "🔑 Bloque 9 · Preguntas llave",
+   "arriba": "<a class=\"dl bll\" href=\"#llave\"><span class=\"dn\">9</span>🔑 Preguntas llave</a>"
+  },
+  "empty",
+  {
+   "id": "trampas",
+   "opcion": "⚠️ Trampas típicas del examen",
+   "indice": "⚠️ Trampas típicas del examen"
+  },
+  {
+   "id": "numeros",
+   "fin": "<style>blockquote{page-break-inside:auto}</style>",
+   "opcion": "🔢 Números clave (apréndelos como una tabla de multiplicar)",
+   "indice": "🔢 Números clave (apréndelos como una tabla de multiplicar)"
+  },
+  {
+   "id": "chequeo",
+   "opcion": "✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)",
+   "indice": "✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)"
+  },
+  {
+   "id": "impres",
+   "fin": "<p><strong>¿Primario vs secundario?</strong></p><div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Primario</th>\n<th>Secundario</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Directamente del tejido</strong> (disgregando)</td>\n<td>De otro cultivo mediante <strong>pase</strong></td>\n</tr>\n<tr>\n<td><strong>Varios</strong> tipos celulares</td>\n<td><strong>Un único</strong> tipo celular</td>\n</tr>\n<tr>\n<td>Ej.: vellosidades coriónicas</td>\n<td>—</td>\n</tr>\n</tbody>\n</table></div><h3 class='ih'>3 · Crecimiento y pase</h3><details class=\"pq\"><summary>¿Fases de la curva sigmoide?</summary><div class=\"pa\"><p><strong>Latencia</strong> (adaptación) → <strong>Exponencial</strong> (máxima división) → <strong>Estacionaria</strong> (se frena).</p></div></details><details class=\"pq\"><summary>¿Formas de crecimiento?</summary><div class=\"pa\"><p><strong>Monocapa</strong> (adherentes, <strong>la mayoría</strong>) · <strong>Suspensión</strong> (sanguíneas, células madre).</p></div></details><details class=\"pq\"><summary>¿Qué es el pase y cuándo se hace?</summary><div class=\"pa\"><p>Coger parte de las células y pasarlas a un <strong>frasco nuevo con medio</strong>. Al <strong>final de la fase exponencial</strong> (<strong>70-80 % de confluencia</strong>).</p></div></details><h3 class='ih'>4 · Líneas celulares (en azul)</h3><details class=\"pq\"><summary>¿Línea celular?</summary><div class=\"pa\"><p><strong>Colonia de células obtenida tras varios pases de un cultivo primario.</strong></p></div></details><p><strong>¿Primarias vs continuas?</strong></p><div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Primarias</th>\n<th>Continuas</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Tiempo <strong>limitado</strong></td>\n<td>Tiempo <strong>ilimitado</strong></td>\n</tr>\n<tr>\n<td>Estables tras <strong>2-3 pases</strong></td>\n<td>Pierden el <strong>control de la división</strong> (espontáneo o inducido)</td>\n</tr>\n<tr>\n<td><strong>Senescencia</strong> tras <strong>20-100 pases</strong></td>\n<td>Como cancerosas: <strong>inmortales, sin inhibición por contacto, indiferenciadas</strong></td>\n</tr>\n<tr>\n<td>—</td>\n<td>Ej.: <strong>HeLa (Henrietta Lacks)</strong></td>\n</tr>\n</tbody>\n</table></div><h3 class='ih'>5 · Los 6 procedimientos (en orden)</h3><p><strong>Disgregación → Recuento y viabilidad → Siembra → Mantenimiento → Conservación → Descongelación</strong> (truco: \"Di-Re-Si-Man-Con-Des\").</p><details class=\"pq\"><summary>¿Disgregación?</summary><div class=\"pa\"><p>Obtener una <strong>suspensión del tipo celular que interesa</strong>. <strong>Mecánica</strong> (cortar/triturar + filtrar) o <strong>enzimática</strong> (<strong>enzimas proteolíticas</strong> que digieren la matriz extracelular). Queda una <strong>mezcla</strong> → <strong>selección</strong>: por <strong>adhesión</strong> o <strong>inmunológica (cell sorting)</strong>.</p></div></details><details class=\"pq\"><summary>¿Recuento y viabilidad?</summary><div class=\"pa\"><p><strong>Densidad celular</strong> = nº células/ml. Colorante vital <strong>azul tripán</strong>: <strong>vivas blancas, muertas azules</strong>. Se cuenta en la <strong>cámara de Neubauer</strong>.</p></div></details><details class=\"pq\"><summary>¿Siembra?</summary><div class=\"pa\"><p>Pasar el volumen calculado a un <strong>falcon con medio atemperado</strong> → sembrar → incubar a <strong>37 ºC en incubador de CO2</strong>.</p></div></details><details class=\"pq\"><summary>¿Mantenimiento?</summary><div class=\"pa\"><p>Control al <strong>microscopio invertido cada 1-3 días</strong> · <strong>cambio de medio cada 2-3 días</strong> o si cambia de color (pH): en <strong>monocapa</strong> se cambian <strong>2/3</strong>; en <strong>suspensión</strong>: falcon 15 ml → <strong>centrifugar 1500 rpm 5 min</strong> → quitar sobrenadante → resuspender.</p></div></details><details class=\"pq\"><summary>¿Preparación del medio?</summary><div class=\"pa\"><p><strong>DMEM/RPMI 500 ml + FBS 10 % (descomplementado) + Pen/Strep 1/1000.</strong></p></div></details><p><strong>¿Conservación? (morado)</strong> → Congelación con <strong>DMSO</strong> (crioprotector, <strong>¡tóxico!</strong>). <strong>Una vez añadido, se congelan inmediatamente con N líquido y se conservan a -80 ºC indefinidamente.</strong></p><details class=\"pq\"><summary>¿Descongelación?</summary><div class=\"pa\"><p>Manos → <strong>baño a 37 ºC</strong> → mezclar con <strong>10 ml de medio</strong> → <strong>centrifugar 1500 rpm 5 min</strong> → <strong>quitar el sobrenadante (con el DMSO)</strong> → resuspender y sembrar. Medio de congelación = <strong>FBS + DMSO 10 %</strong>.</p></div></details><h3 class='ih'>6 · Contaminación y cuidados</h3><details class=\"pq\"><summary>¿Contaminantes?</summary><div class=\"pa\"><p><strong>Bacterias, levaduras y hongos.</strong> El <strong>más grave: virus</strong> (de <strong>sueros animales</strong>).</p></div></details><details class=\"pq\"><summary>¿Cuidados?</summary><div class=\"pa\"><p>Antibióticos y antifúngicos · <strong>cabina de seguridad biológica 2</strong> · asepsia · <strong>etanol 70 %</strong> en viales · <strong>EPIS</strong> (bata estéril, guantes con etanol).</p></div></details><details class=\"pq\"><summary>¿Aplicada (5 áreas)?</summary><div class=\"pa\"><p><strong>Virología</strong> (vacunas) · <strong>Biotecnología</strong> (interferón, insulina, hormona de crecimiento) · <strong>Inmunología</strong> (anticuerpos monoclonales) · <strong>Farmacología</strong> (resistencia) · <strong>Ingeniería de tejidos</strong> (piel para grandes quemados).</p></div></details><h3 class='ih'>Números que no puedes olvidar</h3><p><strong>-200 ºC</strong> N líquido · <strong>4 / -20 / -80 ºC</strong> · <strong>37 ºC y 5 % CO2</strong> · <strong>70-80 %</strong> confluencia · <strong>2-3</strong> pases (estable) · <strong>20-100</strong> pases (senescencia) · <strong>1-3 días</strong> control · <strong>2-3 días</strong> cambio de medio · <strong>2/3</strong> del medio · <strong>1500 rpm 5 min</strong> · <strong>FBS 10 %</strong> · <strong>Pen/Strep 1/1000</strong> · <strong>tripsina 3 ml, 2-3 min</strong> · <strong>10 ml</strong> para inactivar · <strong>DMSO 10 %</strong> · <strong>etanol 70 %</strong>.</p><style>blockquote{page-break-inside:auto}</style><link rel=\"stylesheet\" href=\"../../assets/repaso.css\"><link rel=\"stylesheet\" href=\"../../assets/unidades.css\"><div style=\"page-break-before:always\"></div><h3 class='ih'>🔑 Posibles preguntas llave (apréndelas de memoria)</h3><blockquote>\n<p><strong>Nº 1 (la más probable): ¿Qué es un subcultivo o pase, cuándo se realiza y cuáles son sus pasos?</strong>\n<em>Por qué:</em> recuadro azul, se repite en 5 diapositivas, 2 vídeos y el único <strong>CUIDADO en rojo</strong>.</p>\n<p><strong>Respuesta:</strong> El pase consiste en coger parte de las células y pasarlas a un frasco nuevo con medio, para reanudar el crecimiento que se frena en la fase estacionaria. Se hace <strong>al final de la fase exponencial (70-80 % de confluencia)</strong>. Pasos (monocapa, con tripsina):\n1. Aspirar el medio. 2. Lavar con PBS (2 veces). 3. Añadir <strong>3 ml de tripsina</strong>, 37 ºC <strong>2-3 min</strong> (<strong>¡cuidado con el tiempo!</strong>). 4. Comprobar al microscopio que se han despegado. 5. <strong>Inactivar la tripsina con 10 ml de medio.</strong> 6. Pasar a un falcon de 15 ml. 7. <strong>Centrifugar 1500 rpm 5 min.</strong> 8. Quitar el sobrenadante y resuspender el pellet. 9. <strong>Contar en la cámara de Neubauer.</strong> 10. Preparar frascos con medio. 11. Añadir las células. 12. <strong>Incubar a 37 ºC y 5 % CO2.</strong></p>\n<p><strong>Nº 2: ¿Qué es una línea celular? Diferencia las primarias de las continuas.</strong>\n<em>Por qué:</em> es la única definición que la profe escribió <strong>en azul</strong>, con títulos azules.</p>\n<p><strong>Respuesta:</strong> Línea celular = colonia de células obtenida tras varios subcultivos o pases a partir de un cultivo primario. <strong>Primarias:</strong> se mantienen un tiempo <strong>limitado</strong>; se estabilizan tras 2-3 pases y entran en <strong>senescencia</strong> tras 20-100 pases. <strong>Continuas:</strong> tiempo <strong>ilimitado</strong>; pierden los mecanismos de control de la división (de forma espontánea o inducida) y tienen características de células cancerosas: <strong>inmortales, pérdida de inhibición por contacto, indiferenciadas</strong>. Ejemplo: <strong>células HeLa (Henrietta Lacks)</strong>.</p>\n<p><strong>Nº 3: ¿Qué es la disgregación celular? Métodos.</strong>\n<em>Por qué:</em> es la única diapositiva con <strong>\"Def:\"</strong>, tiene recuadro verde y \"enzimas proteolíticas\" subrayado.</p>\n<p><strong>Respuesta:</strong> Es el procedimiento para <strong>obtener una suspensión del tipo celular que nos interesa</strong>. <strong>Métodos mecánicos:</strong> cortar o triturar fragmentos de tejido en una placa con medio y filtrarlos para eliminar restos. <strong>Métodos enzimáticos:</strong> tratar el fragmento con <strong>enzimas proteolíticas</strong>, que digieren la matriz extracelular y liberan las células. Al terminar se obtiene una <strong>mezcla de varios tipos celulares</strong>, por lo que se hace una <strong>selección</strong>: por propiedades específicas (distinta adhesión a sustratos) o por métodos inmunológicos (anticuerpos → <strong>cell sorting</strong>).</p>\n<p><strong>Nº 4: ¿Cómo se conservan y descongelan las células? ¿Qué es el DMSO?</strong>\n<em>Por qué:</em> es el único texto <strong>en morado</strong>, con \"muy tóxico\" subrayado y un vídeo.</p>\n<p><strong>Respuesta:</strong> El método más habitual es la <strong>congelación</strong>. Se añade <strong>DMSO (dimetil sulfóxido)</strong>, un <strong>agente crioprotector tóxico</strong>; una vez añadido, las células se <strong>congelan inmediatamente con N líquido y se conservan a -80 ºC indefinidamente</strong>. Para <strong>descongelar</strong>: sacarlas del congelador, descongelar ligeramente con las manos, pasarlas al <strong>baño a 37 ºC</strong>, mezclar con <strong>10 ml de medio atemperado</strong>, <strong>centrifugar a 1500 rpm 5 min</strong>, <strong>eliminar el sobrenadante</strong> (así se quita el DMSO, que es muy tóxico) y resuspender en medio para sembrar.</p>\n<p><strong>Nº 5: ¿Qué es un cultivo celular y cuáles son sus procedimientos?</strong>\n<em>Por qué:</em> es lo más básico del tema, justo lo que suele buscar una \"pregunta llave\".</p>\n<p><strong>Respuesta:</strong> Conjunto de procedimientos que hacen posible el <strong>mantenimiento de células vivas <em>in vitro</em></strong>. Procedimientos, en orden: <strong>1) disgregación, 2) recuento y viabilidad, 3) siembra, 4) mantenimiento, 5) conservación, 6) descongelación.</strong> (Si te lo piden desarrollado, explica cada uno con las respuestas de arriba.)</p>\n</blockquote><p><strong>Estrategia:</strong> la Nº 5 contiene a la 1, la 3 y la 4. Si te sabes estas 5 de memoria, tienes cubierto alrededor del <strong>85 %</strong> de lo que puede ser la pregunta llave.</p>",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "opcion": "📖 Glosario (palabras importantes, por orden alfabético)",
+   "indice": "📖 Glosario (palabras importantes, por orden alfabético)"
+  }
+ ]
+}

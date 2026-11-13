@@ -1,0 +1,3443 @@
+{
+ "unidad": "fisio3",
+ "titulo": "Fisio 3 · La patología",
+ "eyebrow": "🫀 Fisiopatología · 3er examen",
+ "h1": "Repaso completo: la patología, estudio de la enfermedad",
+ "sub": "Unidad 3 · las 106 diapositivas en el mismo orden que el PowerPoint + 20 preguntas tipo examen resueltas · 13 bloques · 90 conceptos",
+ "subHtml": "Unidad 3 · las <b>106 diapositivas</b> en el mismo orden que el PowerPoint + 20 preguntas tipo examen resueltas · 13 bloques · 90 conceptos",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene siempre las mismas partes, en este orden:</b></p>\n<ul><li><b>📍 Diapositiva</b>: de dónde sale.</li>\n<li><b>📘 Qué significa cada palabra</b>: primero <b>💡 Para entenderlo</b> (fácil) y después <b>📌 Definición de la diapositiva</b>, que es <b>la que tienes que dar en el examen</b>. Si pone <b>⚠️ La diapositiva no la define</b>, vale la definición general.</li>\n<li><b>📋 Lo que dice la profe</b>: el contenido del PowerPoint, completo.</li>\n<li><b>💡 Entiéndelo</b> y <b>🧠 Truco</b>: para comprenderlo y no olvidarlo.</li>\n<li><b>❓ Ponte a prueba</b>: contesta sin mirar. Si te sale, marca <b>Lo domino</b>.</li></ul>\n<p><b>Colores:</b> 🔴 imprescindible (sí o sí) · 🟠 importante · 🔵 basta con leerlo una vez. En este PowerPoint la profe no marcó nada en rojo ni azul: los colores los he puesto yo.</p><p><b>Botones de la página:</b></p>\n<ul><li><b>☰ Índice</b> (abajo a la izquierda): todos los bloques y conceptos; toca uno para ir directo.</li>\n<li><b>💡 Tapar</b> (abajo a la derecha): tapa todas las definiciones; toca cada una para destaparla.</li>\n<li><b>🃏 Tarjetas</b>: pregunta por delante, respuesta por detrás. Elige bloque y practica.</li>\n<li><b>🔎 Buscar</b> (arriba): escribe cualquier palabra y toca el resultado.</li>\n<li><b>Ponte a prueba</b> (arriba): esconde las respuestas y deja solo las preguntas.</li></ul>\n<p><b>Orden recomendado:</b> bloques en orden → tarjetas de cada bloque → <b>📝 Simulacro</b> → <b>20 preguntas tipo examen</b> (de memoria) → trampas → Lo imprescindible.</p></div>",
+ "clave": "fisio3-repaso-v1",
+ "examen": {
+  "em": "🫀",
+  "asig": "Fisiopatología",
+  "examen": "3er examen",
+  "fecha": ""
+ },
+ "simulacro": "fisio3/simulacro/",
+ "tipografia": "Archivo+Black",
+ "buscar": [
+  [
+   "#hoja",
+   "20 preguntas tipo examen"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "plan": {
+  "repaso": "[\n {t:\"🔁 Tarjetas: solo las que fallé\",d:\"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.\",m:20,u:\"#fc\",rev:1},\n {t:\"📝 Simulacro completo\",d:\"Las 9 partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.\",m:100,u:EXAM.simulacro,rev:1},\n {t:\"🩹 Repasa lo que fallaste en el Simulacro\",d:\"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».\",m:30,u:EXAM.simulacro,rev:1},\n {t:\"📝 Las 20 preguntas tipo examen\",d:\"Contéstalas en voz alta antes de abrir cada respuesta.\",m:40,u:\"#hoja\",rev:1},\n {t:\"⚠️ Trampas y 🔢 números clave\",d:\"Las parejas que se confunden y las cifras (%, µm, mm/h…).\",m:20,u:\"#trampas\",rev:1},\n {t:\"⚡ Lo imprescindible\",d:\"Pregunta → respuesta corta. Lo último antes de dormir.\",m:20,u:\"#impres\",rev:1}]",
+  "unDia": "⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴, las 20 preguntas tipo examen y \"Lo imprescindible\"."
+ },
+ "bloques": [
+  {
+   "titulo": "Los procesos patológicos y los agentes patógenos",
+   "conceptos": [
+    {
+     "titulo": "Proceso patológico",
+     "lv": 1,
+     "fuente": "Diapositivas 1 y 2",
+     "defs": [
+      {
+       "t": "Proceso patológico",
+       "facil": "Cualquier cosa que «estropea» el organismo y lo cambia por dentro.",
+       "diapo": "Proceso que provoca cambios estructurales, bioquímicos o funcionales del organismo.",
+       "n": 2
+      },
+      {
+       "t": "Patología",
+       "facil": "El estudio de la enfermedad (nombre de la unidad).",
+       "diapo": "Rama de la medicina encargada de los procesos patológicos.",
+       "n": 56
+      }
+     ],
+     "prof": "<p>La unidad tiene tres partes: <strong>3.1. Los procesos patológicos</strong> (3.1.1. Agentes causantes, 3.1.2. A nivel celular, 3.1.3. A nivel anatómico), <strong>3.2. El estudio de los procesos patológicos</strong> y <strong>3.3. La enfermedad</strong>.\n<strong>Proceso patológico:</strong> proceso que provoca <strong>cambios estructurales, bioquímicos o funcionales</strong> del organismo.</p>",
+     "entiende": "Un proceso patológico es lo que pasa cuando algo daña el cuerpo: puede cambiar su <strong>forma</strong> (estructural), su <strong>química</strong> (bioquímico) o <strong>cómo funciona</strong> (funcional). La fiebre de la foto es un ejemplo.",
+     "truco": "Los 3 cambios son <strong>«E-B-F»: Estructura, Bioquímica, Función</strong>.",
+     "q": "Define proceso patológico.",
+     "n": 1
+    },
+    {
+     "titulo": "Agentes y factores patógenos",
+     "lv": 1,
+     "fuente": "Diapositiva 3",
+     "defs": [
+      {
+       "t": "Agentes patógenos",
+       "facil": "Cosas de fuera (virus, químicos, radiación) que atacan a la célula directamente.",
+       "diapo": "Virus, sustancia química, radiación… Actúan directamente sobre la célula. Externos. (diap. 3-4)"
+      },
+      {
+       "t": "Factores patógenos",
+       "facil": "Problemas que nacen de otro proceso del propio cuerpo y que acaban dañando la célula.",
+       "diapo": "Se generan a partir de otros procesos. Por ejemplo la hipoxia debida a la falta de irrigación por una trombosis.",
+       "n": 3
+      },
+      {
+       "t": "Hipoxia",
+       "facil": "Falta de oxígeno.",
+       "diapo": "Falta de oxígeno → muerte celular.",
+       "n": 13
+      },
+      {
+       "t": "Trombosis",
+       "facil": "Un coágulo que tapa un vaso sanguíneo.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Procesos manifestados a nivel de organismo, alteraciones a nivel celular.</strong> Se pueden desencadenar por:</p>\n<ul>\n<li><strong>Agentes patógenos:</strong> virus, sustancia química, radiación… <strong>Actúan directamente sobre la célula.</strong></li>\n<li><strong>Factores patógenos:</strong> <strong>se generan a partir de otros procesos.</strong> Por ejemplo, la <strong>hipoxia</strong> debida a la falta de irrigación por una <strong>trombosis</strong>.</li>\n</ul>",
+     "entiende": "El <strong>agente</strong> viene de fuera y golpea la célula él mismo. El <strong>factor</strong> es una consecuencia de otra cosa: el trombo no daña la célula, pero corta la sangre → falta oxígeno (hipoxia) → la célula sufre.",
+     "truco": "<strong>Agente = Ataca directo. Factor = Fruto de otro proceso.</strong>",
+     "q": "¿Qué diferencia hay entre un agente patógeno y un factor patógeno? Pon un ejemplo de cada uno.",
+     "n": 2
+    },
+    {
+     "titulo": "Los agentes patógenos: 3 tipos",
+     "lv": 1,
+     "fuente": "Diapositiva 4",
+     "defs": [
+      {
+       "t": "Externo",
+       "facil": "Que viene de fuera del organismo.",
+       "diapo": "Agentes patógenos: externos, actúan directamente sobre células.",
+       "n": 4
+      }
+     ],
+     "prof": "<p>Los agentes patógenos son <strong>externos</strong> y <strong>actúan directamente sobre las células</strong>. Hay 3 tipos:</p>\n<ul>\n<li><strong>Físicos</strong></li>\n<li><strong>Químicos</strong></li>\n<li><strong>Biológicos</strong>\nImagen: señales de peligro (radiación, caída, químico, riesgo biológico) y fotos de <strong>bacterias, virus, hongos y parásitos</strong>.</li>\n</ul>",
+     "entiende": "Piensa en las <strong>señales de peligro</strong> de la diapositiva: algo <strong>físico</strong> (calor, electricidad, radiación, un golpe), algo <strong>químico</strong> (un ácido) o algo <strong>vivo</strong> (bacterias, virus, hongos, parásitos).",
+     "truco": "<strong>«FQB» = Físicos, Químicos, Biológicos</strong> (como las asignaturas: Física, Química, Biología).",
+     "q": "¿Qué tipos de agentes patógenos hay?",
+     "n": 3
+    },
+    {
+     "titulo": "Agentes físicos: temperatura y presión atmosférica",
+     "lv": 2,
+     "fuente": "Diapositiva 5",
+     "defs": [
+      {
+       "t": "Presión atmosférica",
+       "facil": "La fuerza que hace el aire sobre el cuerpo (cambia con la altura o al bucear).",
+       "diapo": "P. atmosférica: fuera de rango → lesiones celulares.",
+       "n": 5
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Temperatura:</strong> las células aguantan entre <strong>31 y 41 ºC</strong>; <strong>fuera de ese intervalo → lesiones</strong>.</li>\n<li><strong>Presión atmosférica:</strong> <strong>fuera de rango → lesiones celulares</strong>.\nImagen: dibujo de una célula <strong>normal</strong>, con <strong>alteraciones reversibles</strong> (dispersión de ribosomas, dilatación del retículo, marginación de la cromatina, tumefacción mitocondrial) y con <strong>alteraciones irreversibles</strong> (floculaciones de la matriz mitocondrial, ruptura de lisosomas, ruptura de la membrana celular, cariolisis).</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/001.jpg",
+       "alt": "Célula normal, alteraciones reversibles e irreversibles (diap. 5)",
+       "img": "<img src=\"img/001.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Célula normal, alteraciones reversibles e irreversibles (diap. 5)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Si hace demasiado frío o demasiado calor (o la presión cambia mucho, como en la montaña o buceando), la célula se daña. Primero el daño es <strong>reversible</strong>, pero si sigue, se vuelve <strong>irreversible</strong>.",
+     "truco": "<strong>«31-41»</strong>: casi 10 grados por debajo y 4 por encima de tus 37 ºC.",
+     "q": "¿Entre qué temperaturas funcionan bien las células? ¿Qué pasa fuera de ese intervalo?",
+     "n": 4
+    },
+    {
+     "titulo": "Agentes físicos: electricidad",
+     "lv": 2,
+     "fuente": "Diapositiva 6",
+     "defs": [
+      {
+       "t": "Electroporación",
+       "facil": "La corriente «agujerea» la membrana de la célula.",
+       "diapo": "Corriente daña integridad celular, altera potencial de membranas → edema celular.",
+       "n": 6
+      },
+      {
+       "t": "Potencial de membrana",
+       "facil": "La pequeña carga eléctrica que tiene la membrana de la célula.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Edema celular",
+       "facil": "La célula se hincha de agua.",
+       "diapo": "Electroporación → edema celular; lesiones reversibles: edema celular, bomba Na/K, síntesis de ATP. (diap. 6 y 24)"
+      },
+      {
+       "t": "Lesión térmica",
+       "facil": "Quemadura por calor.",
+       "diapo": "Conversión de energía eléctrica en térmica provoca destrucción tisular masiva, coagulación y necrosis.",
+       "n": 6
+      },
+      {
+       "t": "Coagulación",
+       "facil": "Las proteínas se «cuajan» como la clara de un huevo al freírlo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Necrosis",
+       "facil": "Muerte de las células.",
+       "diapo": "Muerte celular en esa parte del tejido.",
+       "n": 46
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Electricidad:</strong> los efectos <strong>varían según tipo, intensidad, voltaje, tiempo…</strong></li>\n<li><strong>Electroporación:</strong> la corriente <strong>daña la integridad celular, altera el potencial de membranas → edema celular</strong>.</li>\n<li><strong>Lesión térmica:</strong> la <strong>conversión de energía eléctrica en térmica</strong> provoca <strong>destrucción tisular masiva, coagulación y necrosis</strong>.\nImagen: quemadura eléctrica en la palma de la mano.</li>\n</ul>",
+     "entiende": "La electricidad hace dos daños: <strong>abre poros</strong> en la membrana (electroporación → entra agua → la célula se hincha) y <strong>se convierte en calor</strong> que quema el tejido (lesión térmica).",
+     "truco": "<strong>electroPORAción = abre POROS</strong>; <strong>TÉRMICA = Temperatura</strong> (quema).",
+     "q": "¿Qué dos lesiones produce la electricidad en las células? Explícalas.",
+     "n": 5
+    },
+    {
+     "titulo": "Agentes físicos: radiaciones",
+     "lv": 2,
+     "fuente": "Diapositivas 7 y 8",
+     "defs": [
+      {
+       "t": "Proliferación celular",
+       "facil": "Que las células se dividan y se multipliquen.",
+       "diapo": "Nuevas células sustituyen a las necrosadas.",
+       "n": 50
+      },
+      {
+       "t": "Lisis celular",
+       "facil": "Que la célula se rompa y muera.",
+       "diapo": "Pueden inhibir proliferación celular o causar lisis celular (terapias).",
+       "n": 7
+      },
+      {
+       "t": "Mutación",
+       "facil": "Cambio en el ADN.",
+       "diapo": "Mutaciones o alteraciones cromosómicas pueden ser causa directa o indirecta de lesiones celulares.",
+       "n": 18
+      },
+      {
+       "t": "Teratogénico",
+       "facil": "Que causa malformaciones en el feto.",
+       "diapo": "Efectos teratogénicos en células fetales.",
+       "n": 7
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Radiaciones:</strong> distintos tipos y efectos.</li>\n<li>Pueden <strong>inhibir la proliferación celular</strong> o <strong>causar lisis celular</strong> (se usa en <strong>terapias</strong>).</li>\n<li>Pueden causar <strong>mutaciones, aparición de tumores</strong> y <strong>efectos teratogénicos en células fetales</strong>.\nDiapositiva 8 (noticia): <strong>«La radiación de Fukushima ya causa mutaciones en mariposas»</strong>: científicos japoneses encuentran mutaciones en mariposas con <strong>alas más pequeñas y ojos dañados</strong>.</li>\n</ul>",
+     "entiende": "La radiación es un arma de doble filo: en la <strong>radioterapia</strong> se usa para <strong>frenar o matar</strong> células del cáncer, pero sin control <strong>cambia el ADN</strong> (mutaciones, tumores) y daña a los fetos (malformaciones).",
+     "truco": "<strong>radiación = «MTT»: Mutaciones, Tumores, Teratogenia</strong> (y en terapia: frena o rompe células).",
+     "q": "¿Qué efectos pueden tener las radiaciones sobre las células? ¿Qué ejemplo real pone la diapositiva?",
+     "n": 6
+    },
+    {
+     "titulo": "Agentes físicos: traumatismos",
+     "lv": 3,
+     "fuente": "Diapositiva 9",
+     "defs": [
+      {
+       "t": "Traumatismo",
+       "facil": "Golpe o herida.",
+       "diapo": "Traumatismos: células también resultan afectadas y sufren alteraciones morfológicas y de funcionamiento.",
+       "n": 9
+      },
+      {
+       "t": "Morfológico",
+       "facil": "De la forma.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Traumatismos:</strong> las <strong>células también resultan afectadas</strong> y sufren <strong>alteraciones morfológicas y de funcionamiento</strong>.\nImagen (en inglés): radiación, fármacos, isquemia-reperfusión y otros estímulos → <strong>radicales libres</strong> (producción excesiva o eliminación inadecuada) → <strong>peroxidación lipídica de membranas, modificación oxidativa de proteínas, daño del ADN</strong> → <strong>célula muerta</strong>.</li>\n</ul>",
+     "entiende": "Un golpe no solo rompe el tejido que se ve: las células de la zona <strong>cambian de forma y dejan de funcionar bien</strong>.",
+     "truco": "<strong>trauma = cambia la Forma y la Función</strong> (las dos F).",
+     "q": "¿Cómo afectan los traumatismos a las células?",
+     "n": 7
+    },
+    {
+     "titulo": "Agentes químicos",
+     "lv": 3,
+     "fuente": "Diapositiva 10",
+     "defs": [
+      {
+       "t": "Reactivo",
+       "facil": "Sustancia química del laboratorio.",
+       "diapo": "Químicos: cualquier sustancia que pueda causar lesión celular directa (fármacos, reactivos, desinfectantes, pesticidas, humos, etc.).",
+       "n": 10
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Químicos:</strong> <strong>cualquier sustancia que pueda causar lesión celular directa</strong> (<strong>fármacos, reactivos, desinfectantes, pesticidas, humos, etc.</strong>).\nImagen: un matraz con <strong>ácido sulfúrico</strong> y el pictograma de corrosivo.</li>\n</ul>",
+     "entiende": "Cualquier sustancia puede ser un agente químico si daña la célula, incluso un <strong>medicamento</strong>.",
+     "truco": "<strong>«FaReDePeHu»</strong>: <strong>Fá</strong>rmacos, <strong>Re</strong>activos, <strong>De</strong>sinfectantes, <strong>Pe</strong>sticidas, <strong>Hu</strong>mos.",
+     "q": "¿Qué es un agente patógeno químico? Pon 3 ejemplos.",
+     "n": 8
+    },
+    {
+     "titulo": "Agentes biológicos",
+     "lv": 2,
+     "fuente": "Diapositiva 11",
+     "defs": [
+      {
+       "t": "Microorganismo",
+       "facil": "Ser vivo que solo se ve al microscopio (bacterias, virus, hongos).",
+       "diapo": "Biológicos: microorganismos, endoparásitos, sus sustancias o secreciones. Provocan infección, alergia o toxicidad.",
+       "n": 11
+      },
+      {
+       "t": "Endoparásito",
+       "facil": "Parásito que vive dentro del cuerpo (por ejemplo, el anisakis del pescado).",
+       "diapo": "Biológicos: microorganismos, endoparásitos, sus sustancias o secreciones.",
+       "n": 11
+      },
+      {
+       "t": "Toxicidad",
+       "facil": "Daño por un veneno.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Biológicos:</strong> <strong>microorganismos, endoparásitos, sus sustancias o secreciones</strong>.</li>\n<li><strong>Provocan infección, alergia o toxicidad.</strong>\nImágenes: un gusano (anisakis) en pescado y un frotis con microorganismos.</li>\n</ul>",
+     "entiende": "Son los seres vivos que nos enferman (o lo que fabrican, como sus toxinas).",
+     "truco": "<strong>biológicos = «IAT»: Infección, Alergia, Toxicidad.</strong>",
+     "q": "¿Qué son los agentes biológicos y qué pueden provocar?",
+     "n": 9
+    }
+   ],
+   "min": 70
+  },
+  {
+   "titulo": "Los factores patógenos",
+   "conceptos": [
+    {
+     "titulo": "Los factores patógenos: cuáles son",
+     "lv": 1,
+     "fuente": "Diapositiva 12",
+     "defs": [
+      {
+       "t": "Oxidación",
+       "facil": "Daño químico por oxígeno muy reactivo (como cuando se oxida el hierro).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Factores patógenos:</strong> procesos que desencadenan en <strong>daño celular</strong>, dado que provocan:</p>\n<ul>\n<li><strong>Hipoxia</strong></li>\n<li>\n<p><strong>Oxidación</strong>\nOtros factores patógenos importantes son:</p>\n</li>\n<li>\n<p><strong>Inmunológicos</strong></p>\n</li>\n<li><strong>Genéticos</strong></li>\n<li><strong>Nutricionales</strong>\nImagen: esquema de la célula normal → lesión reversible (edema, bullas) → lesión irreversible → <strong>necrosis</strong> o <strong>apoptosis</strong>.</li>\n</ul>",
+     "entiende": "Los dos grandes son la <strong>falta de oxígeno</strong> y el <strong>exceso de oxidación</strong>; y además hay tres «otros»: el sistema inmune, los genes y la alimentación.",
+     "truco": "<strong>«HO + IGN»</strong>: <strong>H</strong>ipoxia y <strong>O</strong>xidación + <strong>I</strong>nmunológicos, <strong>G</strong>enéticos, <strong>N</strong>utricionales.",
+     "q": "Enumera los factores patógenos.",
+     "n": 10
+    },
+    {
+     "titulo": "Hipoxia",
+     "lv": 1,
+     "fuente": "Diapositiva 13",
+     "defs": [
+      {
+       "t": "Riego sanguíneo",
+       "facil": "La sangre que llega a un tejido.",
+       "diapo": "Causa de hipoxia: pérdida de riego sanguíneo (traumatismo, trombosis, embolia…).",
+       "n": 13
+      },
+      {
+       "t": "Embolia",
+       "facil": "Un trozo (coágulo, grasa, aire) que viaja por la sangre y tapa un vaso.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Anemia",
+       "facil": "Falta de glóbulos rojos o de hemoglobina.",
+       "diapo": "Pérdida de capacidad transportadora de O2 de la sangre (anemia, alteraciones enzimáticas…).",
+       "n": 13
+      },
+      {
+       "t": "Insuficiencia respiratoria o cardiaca",
+       "facil": "Cuando los pulmones o el corazón no hacen bien su trabajo.",
+       "diapo": "Oxigenación inadecuada del organismo (insuficiencia respiratoria o cardiaca).",
+       "n": 13
+      }
+     ],
+     "prof": "<p><strong>Hipoxia:</strong> <strong>falta de oxígeno → muerte celular</strong>. Causas:</p>\n<ul>\n<li><strong>Pérdida de riego sanguíneo</strong> (traumatismo, trombosis, embolia…).</li>\n<li><strong>Pérdida de capacidad transportadora de O2 de la sangre</strong> (anemia, alteraciones enzimáticas…).</li>\n<li><strong>Oxigenación inadecuada del organismo</strong> (insuficiencia respiratoria o cardiaca).</li>\n</ul>",
+     "entiende": "Para que el oxígeno llegue a la célula hacen falta 3 cosas: que <strong>llegue sangre</strong>, que la sangre <strong>pueda llevar oxígeno</strong> y que el cuerpo <strong>coja oxígeno</strong>. Si falla cualquiera → hipoxia.",
+     "truco": "<strong>«Tubería, Camión, Fábrica»</strong>: la tubería se tapa (trombosis), el camión no carga (anemia) o la fábrica no produce (pulmón/corazón).",
+     "q": "¿Qué es la hipoxia y cuáles son sus tres causas? Pon un ejemplo de cada una.",
+     "n": 11
+    },
+    {
+     "titulo": "Oxidación: los radicales libres",
+     "lv": 1,
+     "fuente": "Diapositivas 14 y 15",
+     "defs": [
+      {
+       "t": "Radicales libres",
+       "facil": "Moléculas «locas» a las que les falta un electrón y lo roban de otras, dañándolas.",
+       "diapo": "Sustancias químicas muy reactivas que introducen oxígeno en las células, produciendo oxidación y alteraciones en el ADN.",
+       "n": 14
+      },
+      {
+       "t": "Radiación ionizante",
+       "facil": "Radiación con mucha energía (rayos X, radiactividad).",
+       "diapo": "Organismo forma radicales libres ante radiaciones ionizantes; radioterapia: radiaciones ionizantes. (diap. 15 y 103)"
+      },
+      {
+       "t": "Isquémico",
+       "facil": "Que no le llega sangre.",
+       "diapo": "Organismo forma radicales libres ante: radiaciones ionizantes, traumatismo, tejidos isquémicos.",
+       "n": 15
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Radicales libres:</strong> <strong>sustancias químicas muy reactivas que introducen oxígeno en las células, produciendo oxidación y alteraciones en el ADN</strong>.</li>\n<li>El organismo forma radicales libres ante:<ul>\n<li><strong>Radiaciones ionizantes</strong></li>\n<li><strong>Traumatismo</strong></li>\n<li><strong>Tejidos isquémicos</strong>\nImágenes: <strong>átomo sano</strong> vs <strong>radical libre</strong>; célula normal → atacada por radicales libres → <strong>necrosis celular</strong>; la radiación rompe el agua (<strong>radiólisis</strong>) y forma el radical OH· que daña el ADN (<strong>efecto indirecto</strong>) o lo daña directamente (<strong>efecto directo</strong>).</li>\n</ul>\n</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/002.jpg",
+       "alt": "Radicales libres: efecto directo e indirecto sobre el ADN (diap. 15)",
+       "img": "<img src=\"img/002.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Radicales libres: efecto directo e indirecto sobre el ADN (diap. 15)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Un radical libre es como una persona a la que le falta algo y se lo roba al vecino: al robar electrones <strong>oxida</strong> las membranas, las proteínas y el <strong>ADN</strong>.",
+     "truco": "Se forman por <strong>«RTI»: Radiaciones, Traumatismo, Isquemia.</strong>",
+     "q": "¿Qué son los radicales libres y ante qué situaciones los forma el organismo?",
+     "n": 12
+    },
+    {
+     "titulo": "Oxidación: cuando falla la protección",
+     "lv": 1,
+     "fuente": "Diapositiva 16 («peroxidación lipídica» está en azul porque es un enlace)",
+     "defs": [
+      {
+       "t": "Peroxidación lipídica",
+       "facil": "Los radicales libres «oxidan» las grasas de la membrana y la rompen.",
+       "diapo": "Daños en membrana (peroxidación lipídica).",
+       "n": 16
+      },
+      {
+       "t": "Enzima",
+       "facil": "Proteína que hace funcionar una reacción química de la célula.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Fragmentación del ADN",
+       "facil": "El ADN se rompe en trozos.",
+       "diapo": "Fragmentación del ADN celular.",
+       "n": 16
+      }
+     ],
+     "prof": "<p>Las células tienen un <strong>sistema de protección frente a radicales libres</strong>. <strong>Si falla</strong> provoca <strong>daño o incluso muerte celular</strong> por:</p>\n<ul>\n<li><strong>Daños en membrana (peroxidación lipídica).</strong></li>\n<li><strong>Inactivación de enzimas protectoras de oxidantes derivados del O2.</strong></li>\n<li><strong>Fragmentación del ADN celular.</strong>\nImagen: radical libre → daña los <strong>lípidos</strong> (pierde la integridad de la membrana), el <strong>ADN</strong> (daño del ADN) y las <strong>proteínas</strong> (inactivación de enzimas).</li>\n</ul>",
+     "entiende": "La célula tiene «bomberos» (antioxidantes). Si no dan abasto, los radicales atacan <strong>3 sitios</strong>: la membrana (grasas), las enzimas (proteínas) y el ADN.",
+     "truco": "<strong>«Membrana, Enzimas, ADN» = «MEA»</strong>: grasas, proteínas y genes.",
+     "q": "¿Qué daños producen los radicales libres cuando falla el sistema de protección de la célula?",
+     "n": 13
+    },
+    {
+     "titulo": "Factores inmunológicos",
+     "lv": 2,
+     "fuente": "Diapositiva 17",
+     "defs": [
+      {
+       "t": "Enfermedad autoinmune",
+       "facil": "El sistema de defensa ataca al propio cuerpo.",
+       "diapo": "Respuesta inmunitaria inadecuada: enfermedades autoinmunes.",
+       "n": 17
+      },
+      {
+       "t": "Inmunodeficiencia",
+       "facil": "Las defensas están bajas.",
+       "diapo": "Inmunodeficiencia → sensibilidad a agentes.",
+       "n": 17
+      }
+     ],
+     "prof": "<p><strong>Respuesta inmunitaria inadecuada:</strong></p>\n<ul>\n<li><strong>Enfermedades autoinmunes.</strong></li>\n<li><strong>Inmunodeficiencia → sensibilidad a agentes.</strong>\nImagen: las células inmunitarias destruyen la <strong>mielina</strong> de las neuronas (esclerosis múltiple: «myelin destroyed by body's own immune cells»).</li>\n</ul>",
+     "entiende": "El sistema inmune puede fallar de dos formas: <strong>pasarse</strong> (ataca lo propio = autoinmune) o <strong>quedarse corto</strong> (inmunodeficiencia → te infectas con facilidad).",
+     "truco": "<strong>«Se pasa o se queda corto»</strong>: autoinmune (se pasa) / inmunodeficiencia (se queda corto).",
+     "q": "¿De qué dos formas puede un factor inmunológico dañar al organismo?",
+     "n": 14
+    },
+    {
+     "titulo": "Factores genéticos",
+     "lv": 2,
+     "fuente": "Diapositiva 18",
+     "defs": [
+      {
+       "t": "Alteración cromosómica",
+       "facil": "Cromosomas de más, de menos o rotos (como en el síndrome de Down).",
+       "diapo": "Mutaciones o alteraciones cromosómicas pueden ser causa directa o indirecta de lesiones celulares.",
+       "n": 18
+      },
+      {
+       "t": "Innato",
+       "facil": "De nacimiento.",
+       "diapo": "Pueden ser innatas o adquiridas.",
+       "n": 18
+      },
+      {
+       "t": "Adquirido",
+       "facil": "Que aparece a lo largo de la vida.",
+       "diapo": "Adquirida: la enfermedad no tiene base genética.",
+       "n": 67
+      },
+      {
+       "t": "Agente mutagénico",
+       "facil": "Lo que causa mutaciones en el ADN.",
+       "diapo": "Pueden ser innatas o adquiridas por acción de agentes mutagénicos o teratogénicos.",
+       "n": 18
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Mutaciones o alteraciones cromosómicas</strong> pueden ser <strong>causa directa o indirecta de lesiones celulares</strong>.</li>\n<li>Pueden ser <strong>innatas</strong> o <strong>adquiridas</strong> por acción de <strong>agentes mutagénicos o teratogénicos</strong>.\nImagen: ejemplos de agentes que causan mutaciones: <strong>radiación</strong> (rayos UV, rayos X), <strong>químicos</strong> (humo del tabaco, nitratos y conservantes, asados) y <strong>agentes infecciosos</strong> (virus del papiloma humano, <em>Helicobacter pylori</em>).</li>\n</ul>",
+     "entiende": "Un error en los genes puede venir <strong>de nacimiento</strong> o aparecer después porque algo (radiación, tabaco, un virus) <strong>cambia el ADN</strong>.",
+     "truco": "<strong>genéticos = «de fábrica» (innatos) o «por el camino» (adquiridos).</strong>",
+     "q": "¿Cómo pueden los factores genéticos causar lesiones celulares? ¿Pueden ser adquiridos?",
+     "n": 15
+    },
+    {
+     "titulo": "Factores nutricionales",
+     "lv": 3,
+     "fuente": "Diapositiva 19",
+     "defs": [
+      {
+       "t": "Nutrición",
+       "facil": "Lo que comemos y cómo lo aprovecha el cuerpo.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Alteraciones en la nutrición</strong> tienen <strong>efectos muy diversos en las células</strong>.</li>\n</ul>",
+     "entiende": "Comer de menos (desnutrición, falta de vitaminas) o de más (obesidad) afecta a las células de muchas formas.",
+     "truco": "<strong>«Eres lo que comes»</strong>: si la comida falla, la célula falla.",
+     "q": "¿Qué dice la diapositiva sobre los factores nutricionales?",
+     "n": 16
+    }
+   ],
+   "min": 60
+  },
+  {
+   "titulo": "La célula: salud y lesión",
+   "conceptos": [
+    {
+     "titulo": "Estado de salud de la célula: la homeostasis",
+     "lv": 2,
+     "fuente": "Diapositiva 20",
+     "defs": [
+      {
+       "t": "Homeostasis",
+       "facil": "Equilibrio interno estable de la célula o del cuerpo.",
+       "diapo": "Estado de salud: homeostasis, mantenido por membrana, secreción de sustancias, producción y almacenamiento de energía y multiplicación (mitosis).",
+       "n": 20
+      },
+      {
+       "t": "Mitosis",
+       "facil": "División de una célula en dos iguales.",
+       "diapo": "Multiplicación (mitosis) para mantener estructura y funcionamiento del tejido.",
+       "n": 20
+      }
+     ],
+     "prof": "<p><strong>Estado de salud: homeostasis</strong>, mantenido por:</p>\n<ul>\n<li><strong>Membrana</strong> que <strong>delimita el medio y regula el intercambio</strong>.</li>\n<li><strong>Secreción de sustancias.</strong></li>\n<li><strong>Producción y almacenamiento de energía (autonomía).</strong></li>\n<li><strong>Multiplicación (mitosis)</strong> para <strong>mantener la estructura y el funcionamiento del tejido</strong>.</li>\n</ul>",
+     "entiende": "Una célula sana está «en equilibrio» gracias a 4 cosas: una <strong>frontera</strong> que controla qué entra y sale, <strong>fabricar y soltar</strong> sustancias, tener <strong>energía propia</strong> y <strong>dividirse</strong> para reponer el tejido.",
+     "truco": "<strong>«MSEM»: Membrana, Secreción, Energía, Mitosis.</strong>",
+     "q": "¿Qué mantiene la homeostasis (estado de salud) de la célula?",
+     "n": 17
+    },
+    {
+     "titulo": "Respuesta fisiológica y fisiopatológica",
+     "lv": 2,
+     "fuente": "Diapositiva 21",
+     "defs": [
+      {
+       "t": "Fisiológico",
+       "facil": "Normal, como funciona un cuerpo sano.",
+       "diapo": "De forma fisiológica: mecanismos de regulación o adaptación para mantener homeostasis.",
+       "n": 21
+      },
+      {
+       "t": "Fisiopatológico",
+       "facil": "Cuando el funcionamiento se altera por una enfermedad.",
+       "diapo": "De forma fisiopatológica: mecanismos no funcionan, respuesta anormal y sufre lesiones.",
+       "n": 21
+      }
+     ],
+     "prof": "<p>La célula responde a agentes externos:</p>\n<ul>\n<li><strong>De forma fisiológica:</strong> <strong>mecanismos de regulación o adaptación</strong> para <strong>mantener la homeostasis</strong>.</li>\n<li><strong>De forma fisiopatológica:</strong> los <strong>mecanismos no funcionan</strong>, <strong>respuesta anormal</strong> y <strong>sufre lesiones</strong>.\nImagen: una célula normal que se va dañando hasta romperse.</li>\n</ul>",
+     "entiende": "Si la célula <strong>se adapta</strong> y sigue en equilibrio → fisiológica. Si <strong>no puede</strong> y se daña → fisiopatológica.",
+     "truco": "<strong>fisio = funciona; fisioPATO = falla.</strong>",
+     "q": "Diferencia la respuesta fisiológica de la fisiopatológica de una célula.",
+     "n": 18
+    },
+    {
+     "titulo": "Estímulos y agentes patógenos",
+     "lv": 2,
+     "fuente": "Diapositiva 22",
+     "defs": [
+      {
+       "t": "Estímulo",
+       "facil": "Un cambio pequeño del entorno al que la célula responde con normalidad.",
+       "diapo": "Estímulos: producen respuesta fisiológica (cambios moderados de Tª, pH, [sustancias]...).",
+       "n": 22
+      },
+      {
+       "t": "pH",
+       "facil": "Lo ácido o básico que es un medio.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Agentes que afectan a las células:</p>\n<ul>\n<li><strong>Estímulos:</strong> producen <strong>respuesta fisiológica</strong> (<strong>cambios moderados de Tª, pH, [sustancias]...</strong>).</li>\n<li><strong>Agentes o factores patógenos:</strong> producen <strong>respuesta fisiopatológica</strong>.\nImagen (esquema): <strong>célula normal (homeostasis)</strong> → con un <strong>estímulo</strong> se <strong>adapta</strong> (adaptación); con un <strong>estímulo lesivo</strong> → <strong>lesión celular</strong>. Si es <strong>leve y transitoria</strong> → <strong>lesión reversible</strong> (vuelve a la normalidad); si hay <strong>incapacidad de adaptación</strong> o es <strong>grave y progresiva</strong> → <strong>lesión irreversible</strong> → <strong>muerte celular</strong>: <strong>necrosis</strong> o <strong>apoptosis</strong>.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/003.jpg",
+       "alt": "De la célula normal a la lesión y la muerte celular (diap. 22)",
+       "img": "<img src=\"img/003.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"De la célula normal a la lesión y la muerte celular (diap. 22)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Un cambio <strong>moderado</strong> (un poco más de calor) es un <strong>estímulo</strong> y la célula se adapta. Un cambio <strong>dañino</strong> es un <strong>agente patógeno</strong> y la célula se lesiona.",
+     "truco": "<strong>estímulo → se adapta; agente patógeno → se lesiona.</strong>",
+     "q": "¿Qué diferencia hay entre un estímulo y un agente patógeno? Explica el esquema de la célula normal hasta la muerte celular.",
+     "n": 19
+    },
+    {
+     "titulo": "Las lesiones celulares",
+     "lv": 2,
+     "fuente": "Diapositiva 23",
+     "defs": [
+      {
+       "t": "Respiración celular",
+       "facil": "El proceso con el que la célula saca energía del oxígeno y la glucosa.",
+       "diapo": "Respiración celular: bloqueo del metabolismo (falta energía).",
+       "n": 23
+      },
+      {
+       "t": "Metabolismo",
+       "facil": "Todas las reacciones químicas de la célula.",
+       "diapo": "Respiración celular: bloqueo del metabolismo (falta energía).",
+       "n": 23
+      },
+      {
+       "t": "Síntesis de proteínas",
+       "facil": "Fabricar proteínas.",
+       "diapo": "Lesiones celulares: síntesis de proteínas.",
+       "n": 23
+      }
+     ],
+     "prof": "<p><strong>Lesiones celulares:</strong></p>\n<ul>\n<li><strong>Membrana plasmática:</strong> <strong>pérdida de integridad → pérdida de homeostasis</strong>.</li>\n<li><strong>Respiración celular:</strong> <strong>bloqueo del metabolismo (falta energía)</strong>.</li>\n<li><strong>Síntesis de proteínas.</strong></li>\n<li><strong>Reproducción:</strong> la <strong>alteración del material genético</strong> pone en riesgo la <strong>renovación del tejido</strong>.\n<strong>Pueden ser reversibles o irreversibles.</strong></li>\n</ul>",
+     "entiende": "Son las 4 cosas de la homeostasis que se pueden estropear: la <strong>frontera</strong> (membrana), la <strong>energía</strong> (respiración), la <strong>fabricación</strong> (proteínas) y la <strong>división</strong> (reproducción).",
+     "truco": "<strong>«MeRe-SiRe»: Membrana, Respiración, Síntesis, Reproducción.</strong>",
+     "q": "¿En qué cuatro puntos de la célula se producen las lesiones celulares?",
+     "n": 20
+    },
+    {
+     "titulo": "Lesiones reversibles",
+     "lv": 1,
+     "fuente": "Diapositiva 24",
+     "defs": [
+      {
+       "t": "Reversible",
+       "facil": "Que tiene vuelta atrás.",
+       "diapo": "Lesiones reversibles: desaparecen cuando agente o factor patógeno deja de actuar.",
+       "n": 24
+      },
+      {
+       "t": "Bomba Na/K",
+       "facil": "«puerta» de la membrana que saca sodio e introduce potasio gastando energía (ATP).",
+       "diapo": "Lesiones reversibles: edema celular, bomba Na/K, síntesis de ATP.",
+       "n": 24
+      },
+      {
+       "t": "ATP",
+       "facil": "La «moneda de energía» de la célula.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Lesiones reversibles:</strong> <strong>desaparecen cuando el agente o factor patógeno deja de actuar.</strong></li>\n<li>Ejemplos: <strong>edema celular, bomba Na/K, síntesis de ATP.</strong>\nImagen: célula normal → <strong>lesión reversible</strong> (la membrana hace burbujas, se sueltan los ribosomas, se hincha el retículo y la mitocondria, se agrupa la cromatina) → <strong>lesión irreversible</strong>.</li>\n</ul>",
+     "entiende": "Si falta energía (<strong>ATP</strong>), la <strong>bomba Na/K</strong> se para, entra sodio y agua y la célula <strong>se hincha (edema celular)</strong>. Si el problema se quita a tiempo, todo vuelve a la normalidad.",
+     "truco": "<strong>«sin ATP no hay bomba, y sin bomba la célula se hincha»</strong>: ATP → bomba Na/K → edema.",
+     "q": "¿Qué es una lesión reversible? Pon ejemplos.",
+     "n": 21
+    },
+    {
+     "titulo": "Lesiones irreversibles",
+     "lv": 1,
+     "fuente": "Diapositivas 25 y 26",
+     "defs": [
+      {
+       "t": "Irreversible",
+       "facil": "Que no tiene vuelta atrás.",
+       "diapo": "Lesión reversible mantenida puede hacerse irreversible. También hay lesiones que son de por sí irreversibles. Algunas conducen inevitablemente a muerte celular.",
+       "n": 25
+      },
+      {
+       "t": "Lisis",
+       "facil": "Rotura o destrucción.",
+       "diapo": "Lisis del retículo endoplasmático.",
+       "n": 26
+      },
+      {
+       "t": "Retículo endoplasmático",
+       "facil": "La «fábrica» de proteínas y lípidos de la célula.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Mitocondria",
+       "facil": "La «central de energía» de la célula.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Una <strong>lesión reversible mantenida puede hacerse irreversible</strong>. También hay lesiones que son <strong>de por sí irreversibles</strong>.</li>\n<li>\n<p><strong>Algunas conducen inevitablemente a muerte celular.</strong>\nLesiones irreversibles:</p>\n</li>\n<li>\n<p><strong>Fragmentación de la membrana.</strong></p>\n</li>\n<li><strong>Lisis del retículo endoplasmático.</strong></li>\n<li><strong>Disfunción mitocondrial.</strong></li>\n<li><strong>Alteraciones en el núcleo</strong> (picnosis, cariolisis, cariorrexis → concepto 23).\nImagen («Cell injury»): célula normal → lesión reversible → <strong>lesión irreversible</strong> (rotura de lisosomas y de la membrana, mitocondrias dañadas y cambios en el núcleo).</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/004.jpg",
+       "alt": "Lesión reversible → irreversible (diap. 25)",
+       "img": "<img src=\"img/004.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Lesión reversible → irreversible (diap. 25)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Si el daño dura mucho o es muy fuerte, la célula <strong>ya no se recupera</strong>: se rompe la membrana, se deshacen sus «fábricas» y su «central de energía» y el núcleo se destruye.",
+     "truco": "<strong>«Me-Re-Mi-Nú»: Membrana, Retículo, Mitocondria, Núcleo</strong> (de fuera a dentro).",
+     "q": "¿Puede una lesión reversible volverse irreversible? ¿Qué lesiones irreversibles hay?",
+     "n": 22
+    },
+    {
+     "titulo": "Alteraciones del núcleo: picnosis, cariolisis y cariorrexis",
+     "lv": 1,
+     "fuente": "Diapositivas 26 y 27 («Alteraciones nucleares»)",
+     "tituloHtml": "Alteraciones del núcleo: picnosis, cariolisis y cariorrexis <span class=\"note\">⚠️ ojo con la diapositiva 26</span>",
+     "defs": [
+      {
+       "t": "Picnosis",
+       "facil": "El núcleo se encoge y se pone muy oscuro.",
+       "diapo": "Retracción del núcleo con condensación de la cromatina.",
+       "n": 26
+      },
+      {
+       "t": "Cariolisis",
+       "facil": "El núcleo se va borrando hasta desaparecer.",
+       "diapo": "Fragmentación de la cromatina. (diap. 26; ⚠️ sus imágenes muestran disolución del núcleo)"
+      },
+      {
+       "t": "Cariorrexis",
+       "facil": "El núcleo se rompe en trozos.",
+       "diapo": "Desaparición del núcleo. (diap. 26; ⚠️ sus imágenes muestran fragmentación del núcleo)"
+      },
+      {
+       "t": "Cromatina",
+       "facil": "El ADN del núcleo.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Lo que pone la diapositiva 26:</p>\n<ul>\n<li><strong>Picnosis:</strong> <strong>retracción del núcleo con condensación de la cromatina.</strong></li>\n<li><strong>Cariolisis:</strong> <strong>fragmentación de la cromatina.</strong></li>\n<li><strong>Cariorrexis:</strong> <strong>desaparición del núcleo.</strong></li>\n<li>Las tres llevan a la <strong>necrosis celular</strong> (imagen: núcleo que se disuelve, núcleo que se encoge, núcleo que se fragmenta → <strong>célula necrótica sin núcleo</strong>).\n⚠️ <strong>Cuidado:</strong> el texto de la diapositiva 26 tiene <strong>cruzadas la cariolisis y la cariorrexis</strong>. Sus propias imágenes (diapositivas 26 y 27) y los libros dicen lo contrario: <strong>cariorrexis = el núcleo se fragmenta</strong> y <strong>cariolisis = el núcleo se disuelve y desaparece</strong>. <strong>Pregúntale a la profe cuál quiere en el examen.</strong> Si no puedes, escribe la correcta (la de las imágenes).\nDiapositiva 27 (imagen): célula <strong>normal</strong> → <strong>picnosis</strong> (núcleo pequeño y negro), <strong>cariorrexis</strong> (núcleo en trozos) y <strong>cariolisis</strong> (núcleo desvaído); al lado, una foto al microscopio de <strong>necrosis</strong> con los tres.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/005.jpg",
+       "alt": "Alteraciones nucleares: picnosis, cariorrexis y cariolisis (diap. 27)",
+       "img": "<img src=\"img/005.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Alteraciones nucleares: picnosis, cariorrexis y cariolisis (diap. 27)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Cuando la célula muere, el núcleo pasa por 3 cambios: primero <strong>se encoge</strong> (picnosis), luego <strong>se rompe</strong> (cariorrexis) y al final <strong>se disuelve</strong> (cariolisis).",
+     "truco": "<strong>picnosis = Pequeño</strong> (se encoge); <strong>cariorRexis = Rompe</strong> (fragmenta); <strong>cariolisis = se Lisa, se diLuye</strong> (desaparece). Orden: <strong>Picnosis → Rexis → Lisis</strong>.",
+     "q": "Explica las tres alteraciones del núcleo en la lesión irreversible: picnosis, cariolisis y cariorrexis.",
+     "n": 23
+    },
+    {
+     "titulo": "La necrosis celular",
+     "lv": 1,
+     "fuente": "Diapositiva 28",
+     "defs": [
+      {
+       "t": "Desnaturalización",
+       "facil": "Las proteínas pierden su forma y dejan de funcionar (como el huevo cocido).",
+       "diapo": "Desnaturalización de las proteínas celulares (uno de los 2 mecanismos de la necrosis).",
+       "n": 28
+      },
+      {
+       "t": "Autolisis",
+       "facil": "La célula se digiere con sus propias enzimas.",
+       "diapo": "Autolisis: sus propias enzimas lisosomales.",
+       "n": 28
+      },
+      {
+       "t": "Heterólisis",
+       "facil": "La célula es digerida por enzimas de otras células.",
+       "diapo": "Heterólisis: enzimas de otras células.",
+       "n": 28
+      },
+      {
+       "t": "Lisosoma",
+       "facil": "La «bolsa de basura» de la célula, llena de enzimas digestivas.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Necrosis celular:</strong> <strong>proceso no fisiológico causado por la acción de un agente externo, que conduce a la muerte celular.</strong>\n<strong>2 mecanismos:</strong></p>\n<ul>\n<li><strong>Desnaturalización de las proteínas celulares.</strong></li>\n<li><strong>Digestión enzimática de la célula:</strong><ul>\n<li><strong>Autolisis:</strong> sus <strong>propias enzimas lisosomales</strong>.</li>\n<li><strong>Heterólisis:</strong> <strong>enzimas de otras células</strong>.\nImagen: esquema de cómo la falta de oxígeno y glucosa lleva a la necrosis, y dibujo de una célula que se hincha y se rompe.</li>\n</ul>\n</li>\n</ul>",
+     "entiende": "En la necrosis la célula muere <strong>«de forma violenta»</strong> por algo de fuera: sus proteínas se «cuecen» o la célula es <strong>digerida</strong>, por sus propias enzimas o por las de otras células.",
+     "truco": "<strong>AUTOlisis = AUTO (yo mismo)</strong>; <strong>HETEROlisis = HETERO (otro)</strong>.",
+     "q": "Define necrosis celular y explica sus dos mecanismos.",
+     "n": 24
+    },
+    {
+     "titulo": "Necrosis vs. apoptosis",
+     "lv": 1,
+     "fuente": "Diapositiva 29 (título en azul: es un enlace)",
+     "defs": [
+      {
+       "t": "Apoptosis",
+       "facil": "Muerte celular programada, «ordenada», sin inflamación.",
+       "diapo": "Encogimiento celular, condensación de la cromatina, colapso del núcleo, globulación de la membrana, formación de cuerpos apoptóticos y fagocitosis. (diap. 29, imagen)"
+      },
+      {
+       "t": "Inflamación",
+       "facil": "La respuesta de defensa del cuerpo (hinchazón, dolor, calor, rojez).",
+       "diapo": "Respuesta defensiva local. Hinchazón, dolor, calor y enrojecimiento.",
+       "n": 46
+      },
+      {
+       "t": "Orgánulo",
+       "facil": "Cada «órgano» pequeño de la célula.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Fagocitosis",
+       "facil": "Cuando una célula «se come» a otra.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Comparación entre necrosis y apoptosis (imagen):</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Necrosis</th>\n<th>Apoptosis</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Inflamación celular</strong> (la célula se hincha)</td>\n<td><strong>Encogimiento celular</strong> y <strong>condensación de la cromatina</strong></td>\n</tr>\n<tr>\n<td><strong>Filtración del contenido</strong> y <strong>descomposición de orgánulos</strong></td>\n<td><strong>Colapso del núcleo</strong> y <strong>globulación de la membrana</strong></td>\n</tr>\n<tr>\n<td>Termina en <strong>inflamación</strong></td>\n<td><strong>Formación de cuerpos apoptóticos</strong> y <strong>fagocitosis</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/006.jpg",
+       "alt": "Necrosis vs. apoptosis (diap. 29)",
+       "img": "<img src=\"img/006.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Necrosis vs. apoptosis (diap. 29)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "La <strong>necrosis</strong> es un <strong>«accidente»</strong>: la célula se hincha, revienta, suelta su contenido y causa <strong>inflamación</strong>. La <strong>apoptosis</strong> es un <strong>«suicidio ordenado»</strong>: la célula se encoge, se empaqueta en trocitos y otras células se la comen <strong>sin inflamación</strong>.",
+     "truco": "<strong>Necrosis = eNorme y revienta</strong> (se hincha); <strong>Apoptosis = se Achica</strong> (se encoge).",
+     "q": "Compara la necrosis con la apoptosis.",
+     "n": 25
+    }
+   ],
+   "min": 90
+  },
+  {
+   "titulo": "Las respuestas celulares adaptativas",
+   "conceptos": [
+    {
+     "titulo": "Respuestas celulares adaptativas",
+     "lv": 1,
+     "fuente": "Diapositiva 30",
+     "defs": [
+      {
+       "t": "Adaptación",
+       "facil": "Cambio de la célula para sobrevivir a una situación nueva.",
+       "diapo": "Células se adaptan para recuperar equilibrio. Reversible e irreversible.",
+       "n": 30
+      }
+     ],
+     "prof": "<ul>\n<li>Las <strong>células se adaptan para recuperar el equilibrio.</strong> Puede ser <strong>reversible e irreversible</strong>.</li>\n<li><strong>Principales mecanismos:</strong><ul>\n<li><strong>Atrofia</strong></li>\n<li><strong>Hipertrofia</strong></li>\n<li><strong>Metaplasia</strong></li>\n<li><strong>Displasia</strong>\nImagen: <strong>célula normal</strong>, <strong>atrofia</strong> (más pequeña), <strong>hipertrofia</strong> (más grande), <strong>metaplasia</strong> (otra forma) y <strong>displasia</strong> (forma anormal).</li>\n</ul>\n</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/007.jpg",
+       "alt": "Atrofia, hipertrofia, metaplasia y displasia (diap. 30)",
+       "img": "<img src=\"img/007.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Atrofia, hipertrofia, metaplasia y displasia (diap. 30)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Ante un cambio, la célula puede <strong>encogerse</strong>, <strong>crecer</strong>, <strong>cambiar de tipo</strong> o <strong>crecer desordenada</strong>.",
+     "truco": "<strong>«A-H-M-D»: Atrofia, Hipertrofia, Metaplasia, Displasia</strong> (de menos a más grave).",
+     "q": "¿Cuáles son los cuatro mecanismos de adaptación celular?",
+     "n": 26
+    },
+    {
+     "titulo": "Atrofia",
+     "lv": 1,
+     "fuente": "Diapositiva 31",
+     "defs": [
+      {
+       "t": "Atrofia",
+       "facil": "La célula se hace más pequeña y trabaja menos.",
+       "diapo": "Disminución de tamaño y de función celular por pérdida de sustancia. Disminuyen necesidades energéticas para seguir viviendo.",
+       "n": 31
+      },
+      {
+       "t": "Demanda funcional",
+       "facil": "Cuánto trabajo se le pide a la célula.",
+       "diapo": "Aumento de demanda funcional (compensar falta de funcionalidad de otras células).",
+       "n": 32
+      },
+      {
+       "t": "Isquemia",
+       "facil": "Falta de riego sanguíneo.",
+       "diapo": "Causas de atrofia: … isquemia …",
+       "n": 31
+      },
+      {
+       "t": "Señales tróficas",
+       "facil": "Las «órdenes» (hormonas, nervios) que mantienen viva y activa a una célula.",
+       "diapo": "Causas de atrofia: … interrupción señales tróficas …",
+       "n": 31
+      }
+     ],
+     "prof": "<p><strong>Atrofia:</strong> <strong>disminución de tamaño y de función celular por pérdida de sustancia.</strong> <strong>Disminuyen las necesidades energéticas para seguir viviendo.</strong>\n<strong>Causas:</strong> <strong>disminución de la demanda funcional, nutrición inadecuada, isquemia, interrupción de señales tróficas, lesión celular persistente, envejecimiento de la célula.</strong>\nImágenes: una arteria con placa (isquemia) y cortes de páncreas: control, diabetes y diabetes + ejercicio.</p>",
+     "entiende": "La célula «ahorra»: se hace pequeña para gastar menos energía. Ejemplo: el músculo de una pierna escayolada (no se usa → se atrofia).",
+     "truco": "Causas = <strong>«DeNIS LE»</strong>: <strong>De</strong>manda baja, <strong>N</strong>utrición mala, <strong>I</strong>squemia, <strong>S</strong>eñales cortadas, <strong>L</strong>esión persistente, <strong>E</strong>nvejecimiento.",
+     "q": "Define atrofia y di sus causas.",
+     "n": 27
+    },
+    {
+     "titulo": "Hipertrofia",
+     "lv": 1,
+     "fuente": "Diapositiva 32",
+     "defs": [
+      {
+       "t": "Hipertrofia",
+       "facil": "La célula se hace más grande.",
+       "diapo": "Aumento de tamaño celular por aumento de masa protoplasmática, con incremento de función.",
+       "n": 32
+      },
+      {
+       "t": "Masa protoplasmática",
+       "facil": "El «contenido» de la célula.",
+       "diapo": "Hipertrofia: aumento de tamaño celular por aumento de masa protoplasmática.",
+       "n": 32
+      },
+      {
+       "t": "Estímulo endocrino",
+       "facil": "Una hormona que manda crecer.",
+       "diapo": "Aumento estímulo endocrino (en gl. endocrinas o en mecanismo de regulación).",
+       "n": 32
+      }
+     ],
+     "prof": "<p><strong>Hipertrofia:</strong> <strong>aumento de tamaño celular por aumento de masa protoplasmática, con incremento de función.</strong>\n<strong>Causas:</strong></p>\n<ul>\n<li><strong>Aumento de demanda funcional</strong> (compensar la falta de funcionalidad de otras células).</li>\n<li><strong>Aumento de estímulo endocrino</strong> (en glándulas endocrinas o en mecanismos de regulación).\nImagen: células normales → <strong>hipertrofia</strong> (las mismas células, pero más grandes).</li>\n</ul>",
+     "entiende": "La célula <strong>crece porque trabaja más</strong>: el músculo del gimnasio o el corazón que tiene que bombear más fuerte.",
+     "truco": "<strong>hiPERtrofia = más PESO (más grande)</strong>; causas: <strong>«trabajo extra u hormonas»</strong>.",
+     "q": "Define hipertrofia y explica sus dos causas.",
+     "n": 28
+    },
+    {
+     "titulo": "Metaplasia",
+     "lv": 1,
+     "fuente": "Diapositiva 33",
+     "defs": [
+      {
+       "t": "Metaplasia",
+       "facil": "Una célula adulta se convierte en otro tipo de célula.",
+       "diapo": "Transformación de un tipo celular adulto en otro.",
+       "n": 33
+      },
+      {
+       "t": "Estrés celular",
+       "facil": "Agresión continua sobre la célula.",
+       "diapo": "Causa [de la metaplasia]: estrés celular, reversible si cesa estímulo agresor.",
+       "n": 33
+      }
+     ],
+     "prof": "<p><strong>Metaplasia:</strong> <strong>transformación de un tipo celular adulto en otro.</strong>\n<strong>Causa:</strong> <strong>estrés celular</strong>; <strong>reversible si cesa el estímulo agresor</strong>.\nImágenes: endoscopia de <strong>metaplasia intestinal gástrica</strong> y esquema: el <strong>tabaquismo</strong> y la <strong>contaminación ambiental</strong> dañan el epitelio respiratorio (estrés oxidativo, inflamación) → <strong>metaplasia</strong> → <strong>displasia</strong>.</p>",
+     "entiende": "La célula «cambia de uniforme» para aguantar mejor. Ejemplo: en los fumadores, el epitelio de los bronquios (con cilios) se cambia por uno más resistente (plano), pero pierde su función.",
+     "truco": "<strong>META = cambio</strong> (como en «metamorfosis»): una célula se convierte en otra.",
+     "q": "¿Qué es la metaplasia? ¿Es reversible?",
+     "n": 29
+    },
+    {
+     "titulo": "Displasia",
+     "lv": 1,
+     "fuente": "Diapositiva 34",
+     "defs": [
+      {
+       "t": "Displasia",
+       "facil": "Células con forma y tamaño anormales porque no han madurado bien.",
+       "diapo": "Anormalidad en aspecto de células, debida a alteraciones en proceso de maduración. Modificación irreversible del ADN causa alteración morfológica, funcional o ambas.",
+       "n": 34
+      },
+      {
+       "t": "Maduración",
+       "facil": "Proceso por el que una célula joven se convierte en adulta.",
+       "diapo": "Displasia: debida a alteraciones en proceso de maduración.",
+       "n": 34
+      }
+     ],
+     "prof": "<p><strong>Displasia:</strong> <strong>anormalidad en el aspecto de las células, debida a alteraciones en el proceso de maduración.</strong> <strong>Modificación irreversible del ADN</strong> causa <strong>alteración morfológica, funcional o ambas.</strong>\nImágenes: cuello uterino <strong>normal → CIN1 → CIN2-CIN3 → cáncer invasivo</strong>; y <strong>normal → hiperplasia → displasia → cáncer</strong>.</p>",
+     "imgs": [
+      {
+       "src": "img/008.jpg",
+       "alt": "Displasia: de lo normal al cáncer (diap. 34)",
+       "img": "<img src=\"img/008.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Displasia: de lo normal al cáncer (diap. 34)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Las células crecen «desordenadas» porque <strong>su ADN ha cambiado</strong>. Es un paso previo al cáncer (aunque todavía no lo es).",
+     "truco": "<strong>DIS = mal</strong> (como en «disfunción»): células <strong>mal formadas</strong>. Escalera: <strong>normal → hiperplasia → displasia → cáncer</strong>.",
+     "q": "Define displasia. ¿Qué la causa?",
+     "n": 30
+    }
+   ],
+   "min": 55
+  },
+  {
+   "titulo": "Nivel anatómico: la necrosis tisular",
+   "conceptos": [
+    {
+     "titulo": "Procesos patológicos a nivel anatómico",
+     "lv": 3,
+     "fuente": "Diapositiva 35",
+     "defs": [
+      {
+       "t": "Anatómico",
+       "facil": "A nivel de tejidos y órganos (lo que se ve).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Procesos patológicos a nivel anatómico:</p>\n<ul>\n<li><strong>Necrosis tisular</strong></li>\n<li><strong>Respuestas tisulares adaptativas</strong></li>\n<li><strong>Procesos patológicos fundamentales</strong></li>\n<li><strong>Reparación del daño tisular:</strong><ul>\n<li><strong>Proliferación celular</strong></li>\n<li><strong>Fibrosis</strong>\nImágenes: una úlcera con costra negra y dibujos de inflamación con mastocitos, histamina y fagocitos.</li>\n</ul>\n</li>\n</ul>",
+     "entiende": "Lo mismo que pasa en una célula, pero en <strong>muchas a la vez</strong> → se ve en el tejido.",
+     "truco": "<strong>«Muere, se adapta, enferma, se repara»</strong>: necrosis, respuestas adaptativas, procesos fundamentales y reparación.",
+     "q": "¿Qué procesos patológicos ocurren a nivel anatómico?",
+     "n": 31
+    },
+    {
+     "titulo": "Necrosis tisular",
+     "lv": 2,
+     "fuente": "Diapositiva 36",
+     "defs": [
+      {
+       "t": "Tejido necrótico",
+       "facil": "Tejido muerto.",
+       "diapo": "Necrosis tisular: necrosis de muchas células → tejido necrótico.",
+       "n": 36
+      },
+      {
+       "t": "Calcificación",
+       "facil": "Depósito de calcio que endurece la zona.",
+       "diapo": "Aislamiento (calcificación o encapsulación del tejido).",
+       "n": 36
+      },
+      {
+       "t": "Encapsulación",
+       "facil": "Rodear algo con una «cápsula» de tejido para aislarlo.",
+       "diapo": "Aislamiento (calcificación o encapsulación del tejido).",
+       "n": 36
+      }
+     ],
+     "prof": "<p><strong>Necrosis tisular:</strong> <strong>necrosis de muchas células → tejido necrótico.</strong> El organismo puede:</p>\n<ul>\n<li><strong>Expulsarlo</strong> del organismo.</li>\n<li><strong>Repararlo</strong> (<strong>fagocitosis + renovación</strong>).</li>\n<li><strong>Aislarlo</strong> (<strong>calcificación o encapsulación</strong> del tejido).\nImagen: mano con dedos necróticos (negros).</li>\n</ul>",
+     "entiende": "Con el tejido muerto el cuerpo hace una de tres cosas: <strong>echarlo fuera</strong>, <strong>limpiarlo y reponerlo</strong> o <strong>encerrarlo</strong>.",
+     "truco": "<strong>«ERA»: Expulsión, Reparación, Aislamiento.</strong>",
+     "q": "¿Qué es la necrosis tisular y qué puede hacer el organismo con el tejido necrótico?",
+     "n": 32
+    },
+    {
+     "titulo": "Necrosis coagulativa y necrosis gangrenosa",
+     "lv": 1,
+     "fuente": "Diapositiva 37",
+     "defs": [
+      {
+       "t": "Isquemia tisular",
+       "facil": "Falta de riego sanguíneo en un tejido.",
+       "diapo": "Necrosis coagulativa: coagulación de proteínas intracelulares por isquemia tisular.",
+       "n": 37
+      },
+      {
+       "t": "Gangrena",
+       "facil": "Tejido muerto que se pudre por una infección.",
+       "diapo": "Cuando necrosis avanzada se agrava con infección bacteriana → necrosis gangrenosa.",
+       "n": 37
+      }
+     ],
+     "prof": "<p>Según el <strong>mecanismo de acción</strong>, hay <strong>distintos tipos de necrosis</strong>:</p>\n<ul>\n<li><strong>Necrosis coagulativa:</strong> <strong>coagulación de proteínas intracelulares por isquemia tisular.</strong> Cuando la <strong>necrosis avanzada se agrava con infección bacteriana → necrosis gangrenosa</strong>.\nImagen: pie con un dedo gangrenoso (negro) junto a tejido sano.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/009.jpg",
+       "alt": "Necrosis coagulativa y gangrenosa (diap. 37)",
+       "img": "<img src=\"img/009.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Necrosis coagulativa y gangrenosa (diap. 37)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Sin sangre, las proteínas de las células se «cuajan» (<strong>coagulativa</strong>). Si encima se infecta con bacterias, se pudre y se pone negro (<strong>gangrenosa</strong>).",
+     "truco": "<strong>coagulativa = cuajada por falta de sangre</strong>; <strong>+ bacterias = gangrena</strong>.",
+     "q": "¿Qué es la necrosis coagulativa? ¿Cuándo se convierte en gangrenosa?",
+     "n": 33
+    },
+    {
+     "titulo": "Necrosis licuefactiva",
+     "lv": 1,
+     "fuente": "Diapositiva 38",
+     "defs": [
+      {
+       "t": "Licuefactiva",
+       "facil": "Que se vuelve líquida.",
+       "diapo": "Necrosis licuefactiva: degeneración rápida del tejido, zona necrosada líquida y viscosa.",
+       "n": 38
+      },
+      {
+       "t": "Viscoso",
+       "facil": "Espeso, como la miel.",
+       "diapo": "Necrosis licuefactiva: zona necrosada líquida y viscosa.",
+       "n": 38
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Necrosis licuefactiva:</strong> <strong>degeneración rápida del tejido</strong>, <strong>zona necrosada líquida y viscosa</strong>.\nImagen: un absceso abierto con contenido líquido y espeso.</li>\n</ul>",
+     "entiende": "El tejido muerto se «deshace» y queda <strong>líquido y espeso</strong> (como el pus de un absceso).",
+     "truco": "<strong>LICUEfactiva = LÍQUIDA</strong> (como la licuadora).",
+     "q": "Describe la necrosis licuefactiva.",
+     "n": 34
+    },
+    {
+     "titulo": "Necrosis grasa",
+     "lv": 1,
+     "fuente": "Diapositiva 39",
+     "defs": [
+      {
+       "t": "Adipocito",
+       "facil": "Célula de grasa.",
+       "diapo": "Necrosis grasa: rotura de adipocitos (trauma o acción enzimática) provoca liberación de A.G. → acidificación del entorno.",
+       "n": 39
+      },
+      {
+       "t": "A.G. (ácidos grasos)",
+       "facil": "Las moléculas que forman la grasa.",
+       "diapo": "Rotura de adipocitos provoca liberación de A.G. → acidificación del entorno daña membranas de las células de la zona.",
+       "n": 39
+      },
+      {
+       "t": "Acidificación",
+       "facil": "El medio se vuelve ácido.",
+       "diapo": "Liberación de A.G. → acidificación del entorno daña membranas de las células de la zona.",
+       "n": 39
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Necrosis grasa:</strong> la <strong>rotura de adipocitos</strong> (por <strong>trauma o acción enzimática</strong>) provoca la <strong>liberación de A.G. → acidificación del entorno</strong> que <strong>daña las membranas de las células de la zona</strong>.\nImágenes: corte al microscopio de tejido graso dañado y dibujo del páncreas.</li>\n</ul>",
+     "entiende": "Cuando se rompen las células de grasa (por un golpe o por enzimas, como en la pancreatitis), sueltan <strong>ácidos grasos</strong> que vuelven la zona <strong>ácida</strong> y dañan a las células vecinas.",
+     "truco": "<strong>grasa rota → ácidos grasos → ácido → daño</strong> («la grasa se vuelve ácida»).",
+     "q": "Explica la necrosis grasa.",
+     "n": 35
+    },
+    {
+     "titulo": "Necrosis caseosa",
+     "lv": 1,
+     "fuente": "Diapositiva 40",
+     "defs": [
+      {
+       "t": "Caseosa",
+       "facil": "Con aspecto de queso.",
+       "diapo": "Necrosis caseosa: características de necrosis coagulativa y licuefactiva, típica de infecciones como la tuberculosis.",
+       "n": 40
+      },
+      {
+       "t": "Tuberculosis",
+       "facil": "Infección por la bacteria <em>Mycobacterium tuberculosis</em>, sobre todo en el pulmón.",
+       "diapo": "Necrosis caseosa: típica de infecciones como la tuberculosis.",
+       "n": 40
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Necrosis caseosa:</strong> tiene <strong>características de la necrosis coagulativa y licuefactiva</strong>; es <strong>típica de infecciones como la tuberculosis</strong>.\nImagen: órgano con zonas blancas amarillentas de aspecto de queso.</li>\n</ul>",
+     "entiende": "Es una <strong>mezcla</strong>: ni sólida ni líquida, blanda y blanquecina como el <strong>queso</strong>.",
+     "truco": "<strong>CASEosa = queso (caseína)</strong>; <strong>queso = Tuberculosis</strong>. Es <strong>coagulativa + licuefactiva</strong>.",
+     "q": "¿Qué es la necrosis caseosa y en qué enfermedad es típica?",
+     "n": 36
+    }
+   ],
+   "min": 50
+  },
+  {
+   "titulo": "Las respuestas tisulares adaptativas",
+   "conceptos": [
+    {
+     "titulo": "Reducción del tamaño del tejido",
+     "lv": 1,
+     "fuente": "Diapositiva 41",
+     "defs": [
+      {
+       "t": "Atrofia simple",
+       "facil": "El tejido se hace pequeño porque sus células se hacen pequeñas.",
+       "diapo": "Atrofia celular → atrofia tisular.",
+       "n": 41
+      },
+      {
+       "t": "Atrofia numérica",
+       "facil": "El tejido se hace pequeño porque hay menos células.",
+       "diapo": "Disminución nº de células.",
+       "n": 41
+      },
+      {
+       "t": "Pseudoatrofia",
+       "facil": "El tejido parece más pequeño porque parte de él ha muerto.",
+       "diapo": "Parte del tejido necrosado.",
+       "n": 41
+      }
+     ],
+     "prof": "<p><strong>Respuestas tisulares adaptativas. Reducción del tamaño:</strong></p>\n<ul>\n<li><strong>Atrofia simple:</strong> <strong>atrofia celular → atrofia tisular</strong>.</li>\n<li><strong>Atrofia numérica:</strong> <strong>disminución del nº de células</strong>.</li>\n<li><strong>Pseudoatrofia:</strong> <strong>parte del tejido necrosado</strong>.\nImagen: <strong>atrofia simple</strong> (células pequeñas), <strong>numérica</strong> (menos células) y <strong>pseudoatrofia</strong> (células muertas).</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/010.jpg",
+       "alt": "Atrofia simple, numérica y pseudoatrofia (diap. 41)",
+       "img": "<img src=\"img/010.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Atrofia simple, numérica y pseudoatrofia (diap. 41)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Un tejido puede encoger porque sus células <strong>se encogen</strong>, porque <strong>hay menos</strong> o porque <strong>una parte está muerta</strong>.",
+     "truco": "<strong>simple = más pequeñas; numérica = menos número; pseudo = falsa</strong> (en realidad es necrosis).",
+     "q": "¿Qué tipos de reducción del tamaño de un tejido hay? Explícalos.",
+     "n": 37
+    },
+    {
+     "titulo": "Aumento del tamaño del tejido",
+     "lv": 1,
+     "fuente": "Diapositivas 42 y 43",
+     "defs": [
+      {
+       "t": "Hipertrofia estricta",
+       "facil": "El tejido crece porque sus células crecen.",
+       "diapo": "Hipertrofia celular.",
+       "n": 42
+      },
+      {
+       "t": "Hiperplasia",
+       "facil": "El tejido crece porque hay más células.",
+       "diapo": "Hiperplasia o hipertrofia numérica: aumento nº de células.",
+       "n": 42
+      },
+      {
+       "t": "Pseudohipertrofia",
+       "facil": "El tejido parece más grande, pero es por grasa, líquido o células tumorales.",
+       "diapo": "Invasión de grasa o líquido (edema) o células neoplásicas.",
+       "n": 42
+      },
+      {
+       "t": "Neoplásico",
+       "facil": "De un tumor.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Aumento del tamaño:</strong></p>\n<ul>\n<li><strong>Hipertrofia estricta:</strong> <strong>hipertrofia celular</strong>.</li>\n<li><strong>Hiperplasia o hipertrofia numérica:</strong> <strong>aumento del nº de células</strong>.</li>\n<li><strong>Pseudohipertrofia:</strong> <strong>invasión de grasa o líquido (edema) o células neoplásicas</strong>.\nImagen: <strong>estricta</strong> (células grandes), <strong>hiperplasia</strong> (más células) y <strong>pseudohiperplasia</strong> (células invadidas).\nDiapositiva 43: <strong>pseudohipertrofia gemelar</strong> (gemelos de las piernas engrosados por grasa, con resonancia y biopsia).</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/011.jpg",
+       "alt": "Hipertrofia estricta, hiperplasia y pseudohiperplasia (diap. 42)",
+       "img": "<img src=\"img/011.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Hipertrofia estricta, hiperplasia y pseudohiperplasia (diap. 42)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Es el espejo del concepto 37: el tejido crece porque sus células <strong>crecen</strong>, porque <strong>hay más</strong> o porque <strong>se «rellena»</strong> de otra cosa (grasa, agua o tumor).",
+     "truco": "<strong>hiperPLASIA = PLAS = más células (multiplica)</strong>; <strong>hiperTROFIA = más grandes</strong>; <strong>pseudo = falsa</strong>.",
+     "q": "Diferencia hipertrofia estricta, hiperplasia y pseudohipertrofia. ¿Qué ejemplo de pseudohipertrofia da la diapositiva?",
+     "n": 38
+    },
+    {
+     "titulo": "Metaplasia tisular",
+     "lv": 2,
+     "fuente": "Diapositiva 44",
+     "defs": [
+      {
+       "t": "Neoplasia",
+       "facil": "Tumor (crecimiento descontrolado de células).",
+       "diapo": "Metaplasia: no se considera neoplasia.",
+       "n": 44
+      },
+      {
+       "t": "Mitóticamente activo",
+       "facil": "Que se divide mucho.",
+       "diapo": "Zona de transición normal/metaplásico es muy activa mitóticamente, podría servir para la generación de células displásicas.",
+       "n": 44
+      },
+      {
+       "t": "Esófago de Barrett",
+       "facil": "Metaplasia del esófago por el ácido del estómago (reflujo).",
+       "diapo": "Metaplasia: imagen del esófago de Barrett.",
+       "n": 44
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Metaplasia:</strong> <strong>presencia de un grupo de células metaplásicas.</strong></li>\n<li><strong>No se considera neoplasia</strong>, pero la <strong>zona de transición normal/metaplásico</strong> es <strong>muy activa mitóticamente</strong> y <strong>podría servir para la generación de células displásicas</strong>.\nImagen: <strong>esófago de Barrett</strong>.</li>\n</ul>",
+     "entiende": "La metaplasia <strong>no es un tumor</strong>, pero en el <strong>borde</strong> entre lo normal y lo cambiado las células se dividen mucho, y ahí pueden aparecer células <strong>displásicas</strong>.",
+     "truco": "<strong>«Barrett = barrera rota»</strong>: el reflujo cambia el esófago (metaplasia) → riesgo de displasia.",
+     "q": "¿Es la metaplasia una neoplasia? ¿Por qué es peligrosa su zona de transición?",
+     "n": 39
+    },
+    {
+     "titulo": "Displasia tisular",
+     "lv": 2,
+     "fuente": "Diapositiva 45",
+     "defs": [
+      {
+       "t": "Lesión neoplásica",
+       "facil": "Un tumor.",
+       "diapo": "Displasia: no es una lesión neoplásica pero puede evolucionar a esto.",
+       "n": 45
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Displasia:</strong> <strong>presencia de un grupo de células displásicas.</strong></li>\n<li>Las <strong>células displásicas no se recuperan</strong>, pero <strong>a nivel tisular puede ser reversible</strong>.</li>\n<li><strong>No es una lesión neoplásica pero puede evolucionar a esto.</strong>\nImágenes: cuello uterino normal y <strong>displasia cervical</strong> (células cervicales normales y precancerosas).</li>\n</ul>",
+     "entiende": "Cada célula displásica ya está estropeada para siempre, pero el <strong>tejido</strong> puede curarse si se eliminan. Todavía <strong>no es cáncer</strong>, pero <strong>puede llegar a serlo</strong>.",
+     "truco": "<strong>«célula: no vuelve; tejido: puede volver»</strong>.",
+     "q": "¿La displasia es reversible? ¿Es una lesión neoplásica?",
+     "n": 40
+    }
+   ],
+   "min": 40
+  },
+  {
+   "titulo": "Procesos patológicos fundamentales y reparación",
+   "conceptos": [
+    {
+     "titulo": "Los 5 procesos patológicos fundamentales",
+     "lv": 1,
+     "fuente": "Diapositivas 46, 47 y 48",
+     "defs": [
+      {
+       "t": "Edema",
+       "facil": "Acumulación de líquido en un tejido (hinchazón).",
+       "diapo": "Acumulación anormal de líquidos en tejido.",
+       "n": 46
+      },
+      {
+       "t": "Tumoración",
+       "facil": "Bulto.",
+       "diapo": "Crecimiento anormal de tejido. De forma localizada → nódulos malignos o benignos.",
+       "n": 46
+      },
+      {
+       "t": "Nódulo",
+       "facil": "Bulto pequeño y redondeado.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Úlcera",
+       "facil": "Herida abierta que no cierra.",
+       "diapo": "Ulceración: lesión abierta con pérdida de sustancia en piel o mucosas.",
+       "n": 46
+      },
+      {
+       "t": "Mucosa",
+       "facil": "La «piel» húmeda que recubre por dentro la boca, el estómago, etc.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Procesos patológicos fundamentales:</strong></p>\n<ul>\n<li><strong>Edema:</strong> <strong>acumulación anormal de líquidos en el tejido.</strong></li>\n<li><strong>Inflamación:</strong> <strong>respuesta defensiva local.</strong> <strong>Hinchazón, dolor, calor y enrojecimiento.</strong></li>\n<li><strong>Tumoración:</strong> <strong>crecimiento anormal de tejido.</strong> De forma localizada → <strong>nódulos malignos o benignos</strong>.</li>\n<li><strong>Necrosis:</strong> <strong>muerte celular en esa parte del tejido.</strong></li>\n<li><strong>Ulceración:</strong> <strong>lesión abierta con pérdida de sustancia en piel o mucosas.</strong>\nImágenes: piernas con <strong>edema</strong> (la huella del dedo), encía inflamada, <strong>tumoración</strong> en la nariz, <strong>necrosis</strong> (costra negra) y <strong>ulceraciones</strong> (úlcera duodenal, úlcera gástrica, úlcera en la boca y en el pie).</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/012.jpg",
+       "alt": "Procesos patológicos fundamentales (diap. 46)",
+       "img": "<img src=\"img/012.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Procesos patológicos fundamentales (diap. 46)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Son las 5 «caras» que puede tener un tejido enfermo: <strong>hinchado de agua</strong>, <strong>inflamado</strong>, <strong>con un bulto</strong>, <strong>muerto</strong> o <strong>con una herida abierta</strong>.",
+     "truco": "<strong>«E-I-T-N-U» → «EITNU»</strong>: Edema, Inflamación, Tumoración, Necrosis, Ulceración. Los 4 signos de la inflamación: <strong>«HDCE»: Hinchazón, Dolor, Calor, Enrojecimiento.</strong>",
+     "q": "Define los cinco procesos patológicos fundamentales. ¿Cuáles son los signos de la inflamación?",
+     "n": 41
+    },
+    {
+     "titulo": "Reparación del daño tisular",
+     "lv": 1,
+     "fuente": "Diapositivas 49 y 50",
+     "defs": [
+      {
+       "t": "Proliferación celular",
+       "facil": "Nuevas células ocupan el sitio de las muertas.",
+       "diapo": "Nuevas células sustituyen a las necrosadas.",
+       "n": 50
+      },
+      {
+       "t": "Regeneración",
+       "facil": "El tejido vuelve a ser como antes.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cicatriz",
+       "facil": "Tejido fibroso que «tapa» la zona dañada.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Reparación del daño tisular:</strong></p>\n<ul>\n<li><strong>Proliferación celular</strong></li>\n<li>\n<p><strong>Fibrosis</strong>\nImagen: lesión <strong>leve y superficial → regeneración</strong>; lesión <strong>grave → formación de cicatriz</strong>.\n<strong>Proliferación celular:</strong> <strong>nuevas células sustituyen a las necrosadas.</strong> Según la <strong>capacidad de proliferación</strong> hay tejidos:</p>\n</li>\n<li>\n<p><strong>Lábiles</strong></p>\n</li>\n<li><strong>Quiescentes</strong></li>\n<li><strong>Permanentes</strong>\nImagen: población celular basal → proliferación, diferenciación y muerte celular (apoptosis); las células madre la renuevan.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/013.jpg",
+       "alt": "Regeneración vs cicatriz (diap. 49)",
+       "img": "<img src=\"img/013.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Regeneración vs cicatriz (diap. 49)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "El cuerpo repara de dos formas: <strong>reponiendo las células</strong> (si puede) o <strong>tapando con cicatriz</strong> (fibrosis) si no puede.",
+     "truco": "Según si se dividen: <strong>«Lábil = Lanza (siempre); Quiescente = Quieta pero puede; Permanente = Para (nunca)»</strong>.",
+     "q": "¿Cómo se repara el daño tisular? ¿Qué tipos de tejidos hay según su capacidad de proliferación?",
+     "n": 42
+    },
+    {
+     "titulo": "Tejidos lábiles",
+     "lv": 1,
+     "fuente": "Diapositiva 51",
+     "defs": [
+      {
+       "t": "Lábil",
+       "facil": "Que cambia mucho, inestable.",
+       "diapo": "Tejidos lábiles: células se dividen constantemente para sustituir a las que se destruyen. Derivan de células madre que pueden diferenciarse en varios tipos celulares.",
+       "n": 51
+      },
+      {
+       "t": "Célula madre",
+       "facil": "Célula que puede convertirse en otros tipos de células.",
+       "diapo": "Derivan de células madre que pueden diferenciarse en varios tipos celulares.",
+       "n": 51
+      },
+      {
+       "t": "Tejido hematopoyético",
+       "facil": "El que fabrica las células de la sangre (médula ósea).",
+       "diapo": "Tejidos lábiles: tejidos epiteliales… también tejido hematopoyético.",
+       "n": 51
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Tejidos lábiles:</strong> sus <strong>células se dividen constantemente para sustituir a las que se destruyen.</strong> <strong>Derivan de células madre que pueden diferenciarse en varios tipos celulares.</strong></li>\n<li><strong>Tejidos epiteliales:</strong> <strong>piel, mucosa oral, vagina, útero, mucosa digestiva, glándulas…</strong> También el <strong>tejido hematopoyético</strong>.\nImagen: los estratos de la piel (estrato basal, espinoso, granuloso, lúcido y córneo).</li>\n</ul>",
+     "entiende": "Son los tejidos que <strong>se gastan todo el rato</strong> y por eso <strong>se renuevan sin parar</strong>: la piel se descama, la mucosa del intestino se cambia en pocos días, la médula fabrica sangre continuamente.",
+     "truco": "<strong>lábil = «la piel y las mucosas, que se cambian a diario» + la sangre.</strong>",
+     "q": "¿Qué son los tejidos lábiles? Pon ejemplos.",
+     "n": 43
+    },
+    {
+     "titulo": "Tejidos quiescentes",
+     "lv": 1,
+     "fuente": "Diapositiva 52",
+     "defs": [
+      {
+       "t": "Quiescente",
+       "facil": "En reposo, pero que puede activarse.",
+       "diapo": "Tejidos quiescentes: células permanecen estables pero pueden dividirse en respuesta a estímulos.",
+       "n": 52
+      },
+      {
+       "t": "Fibroblasto",
+       "facil": "Célula que fabrica las fibras del tejido conectivo.",
+       "diapo": "Tejidos quiescentes: células hepáticas, renales y pancreáticas, fibroblastos, células endoteliales…",
+       "n": 52
+      },
+      {
+       "t": "Endotelial",
+       "facil": "La que recubre los vasos por dentro.",
+       "diapo": "Tejidos quiescentes: … células endoteliales …",
+       "n": 52
+      },
+      {
+       "t": "Condrocito",
+       "facil": "Célula del cartílago.",
+       "diapo": "Tejidos quiescentes: … condrocitos, osteocitos, etc.",
+       "n": 52
+      },
+      {
+       "t": "Osteocito",
+       "facil": "Célula del hueso.",
+       "diapo": "Tejidos quiescentes: … condrocitos, osteocitos, etc.",
+       "n": 52
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Tejidos quiescentes:</strong> sus <strong>células permanecen estables pero pueden dividirse en respuesta a estímulos.</strong></li>\n<li><strong>Células hepáticas, renales y pancreáticas, fibroblastos, células endoteliales, células musculares lisas, condrocitos, osteocitos, etc.</strong>\nImagen: hígado normal y con lesión (los hepatocitos se reactivan).</li>\n</ul>",
+     "entiende": "Están «dormidas», pero <strong>si hay daño, se despiertan y se dividen</strong>. Ejemplo: el <strong>hígado</strong> puede regenerarse si se quita un trozo.",
+     "truco": "<strong>quiescentes = «quietas pero listas»</strong>: hígado, riñón, páncreas + fibroblastos, endotelio, músculo liso, cartílago y hueso.",
+     "q": "¿Qué son los tejidos quiescentes? Pon ejemplos.",
+     "n": 44
+    },
+    {
+     "titulo": "Tejidos permanentes",
+     "lv": 1,
+     "fuente": "Diapositiva 53",
+     "defs": [
+      {
+       "t": "G0",
+       "facil": "La fase del ciclo celular en la que la célula «se jubila» y ya no se divide.",
+       "diapo": "Tejidos permanentes: sus células están en G0 y no sufren mitosis; son las neuronas y las células musculares estriadas.",
+       "n": 53
+      },
+      {
+       "t": "Músculo estriado",
+       "facil": "El esquelético y el cardíaco.",
+       "diapo": "Tejidos permanentes: neuronas y células musculares estriadas.",
+       "n": 53
+      },
+      {
+       "t": "Tejido cicatricial",
+       "facil": "Tejido de cicatriz.",
+       "diapo": "La lesión cardíaca deriva en sustitución por tejido cicatricial.",
+       "n": 53
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Tejidos permanentes:</strong> sus <strong>células están en G0 y no sufren mitosis</strong>; son las <strong>neuronas</strong> y las <strong>células musculares estriadas</strong>.</li>\n<li>La <strong>lesión cardíaca</strong> deriva en <strong>sustitución por tejido cicatricial</strong>.</li>\n<li><strong>Algunas neuronas implicadas en el aprendizaje conservan la capacidad mitótica.</strong>\nImágenes: neuronas y un corazón con una cicatriz de infarto.</li>\n</ul>",
+     "entiende": "Si se mueren, <strong>no se reponen</strong>. Por eso después de un <strong>infarto</strong> el músculo del corazón se cambia por <strong>cicatriz</strong> (que no se contrae).",
+     "truco": "<strong>Permanentes = «Neuronas y Músculo estriado» = «NoMe divido»</strong>. Excepción: algunas neuronas del aprendizaje.",
+     "q": "¿Qué son los tejidos permanentes? ¿Qué pasa tras una lesión cardíaca? ¿Hay alguna excepción?",
+     "n": 45
+    },
+    {
+     "titulo": "Fibrosis",
+     "lv": 1,
+     "fuente": "Diapositivas 54 y 55",
+     "defs": [
+      {
+       "t": "Fibrosis",
+       "facil": "Se forma demasiado tejido fibroso (de cicatriz) en un órgano.",
+       "diapo": "Desarrollo en exceso de tejido conectivo fibroso en órgano o tejido fruto de proceso reparativo. Cuando proliferación celular falla.",
+       "n": 54
+      },
+      {
+       "t": "Tejido conectivo fibroso",
+       "facil": "Tejido duro con muchas fibras de colágeno.",
+       "diapo": "Fibrosis: desarrollo en exceso de tejido conectivo fibroso en órgano o tejido fruto de proceso reparativo.",
+       "n": 54
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Fibrosis:</strong> <strong>desarrollo en exceso de tejido conectivo fibroso en un órgano o tejido, fruto de un proceso reparativo.</strong> Ocurre <strong>cuando la proliferación celular falla</strong>.</li>\n<li>El <strong>órgano o tejido pierde parte de su funcionalidad</strong> por la <strong>aparición de tejido fibroso</strong>.\nImágenes: pulmón normal y <strong>fibrosis quística</strong>, hígado con cirrosis y diapositiva 55: <strong>fibrosis en corazón</strong> (al microscopio).</li>\n</ul>",
+     "entiende": "Si las células no se pueden reponer, el cuerpo <strong>rellena con «cemento»</strong> (tejido fibroso). Tapa el hueco, pero <strong>no funciona</strong> como el tejido original.",
+     "truco": "<strong>fibrosis = cicatriz «de relleno»: tapa pero no trabaja.</strong>",
+     "q": "Define fibrosis. ¿Cuándo aparece y qué consecuencia tiene?",
+     "n": 46
+    }
+   ],
+   "min": 70
+  },
+  {
+   "titulo": "El estudio de los procesos patológicos",
+   "conceptos": [
+    {
+     "titulo": "La patología",
+     "lv": 1,
+     "fuente": "Diapositiva 56",
+     "defs": [
+      {
+       "t": "Patología",
+       "facil": "La parte de la medicina que estudia las enfermedades.",
+       "diapo": "Rama de la medicina encargada de los procesos patológicos.",
+       "n": 56
+      },
+      {
+       "t": "Morfológico",
+       "facil": "De la forma.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Patología:</strong> <strong>rama de la medicina encargada de los procesos patológicos.</strong></li>\n<li>Usa <strong>herramientas moleculares, microbiológicas, inmunológicas y morfológicas</strong> para <strong>explicar causas y manifestaciones</strong>, así como las <strong>bases del tratamiento</strong>.</li>\n</ul>",
+     "entiende": "La patología estudia la enfermedad <strong>de principio a fin</strong>: por qué aparece, cómo se manifiesta y en qué se basa su tratamiento.",
+     "truco": "Herramientas = <strong>«MoMIM»: Moleculares, Microbiológicas, Inmunológicas, Morfológicas.</strong>",
+     "q": "Define patología. ¿Qué herramientas usa?",
+     "n": 47
+    },
+    {
+     "titulo": "Las ramas de la patología",
+     "lv": 1,
+     "fuente": "Diapositiva 57 (título en azul: es un enlace)",
+     "defs": [
+      {
+       "t": "Etiología",
+       "facil": "El estudio de la causa.",
+       "diapo": "Causa u origen del proceso.",
+       "n": 57
+      },
+      {
+       "t": "Patogenia",
+       "facil": "El estudio del mecanismo.",
+       "diapo": "Mecanismo de acción del agente. Estudia la forma en la que un agente produce las alteraciones morfológicas y/o funcionales observadas. (diap. 57 y 59)"
+      },
+      {
+       "t": "Semiología",
+       "facil": "El estudio de los síntomas y signos.",
+       "diapo": "Manifestaciones clínicas.",
+       "n": 57
+      },
+      {
+       "t": "Anatomía patológica",
+       "facil": "El estudio de los cambios de estructura (tu carrera).",
+       "diapo": "Estudia alteraciones estructurales y orgánicas provocadas por el proceso.",
+       "n": 57
+      },
+      {
+       "t": "Fisiopatología",
+       "facil": "El estudio de los cambios de función.",
+       "diapo": "Estudia alteraciones en funciones fisiológicas.",
+       "n": 57
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Etiología:</strong> <strong>causa u origen del proceso.</strong></li>\n<li><strong>Patogenia:</strong> <strong>mecanismo de acción del agente.</strong></li>\n<li><strong>Semiología:</strong> <strong>manifestaciones clínicas.</strong></li>\n<li><strong>Anatomía patológica:</strong> <strong>estudia alteraciones estructurales y orgánicas provocadas por el proceso.</strong></li>\n<li><strong>Fisiopatología:</strong> <strong>estudia alteraciones en funciones fisiológicas.</strong></li>\n</ul>",
+     "entiende": "Ante una enfermedad nos preguntamos: <strong>¿por qué?</strong> (etiología), <strong>¿cómo?</strong> (patogenia), <strong>¿qué se nota?</strong> (semiología), <strong>¿qué cambia en la forma?</strong> (anatomía patológica) y <strong>¿qué cambia en el funcionamiento?</strong> (fisiopatología).",
+     "truco": "<strong>«EPSAF»</strong>: <strong>E</strong>tiología = por qué · <strong>P</strong>atogenia = cómo · <strong>S</strong>emiología = señales · <strong>A</strong>natomía patológica = forma · <strong>F</strong>isiopatología = función.",
+     "q": "Nombra y define las cinco ramas de la patología.",
+     "n": 48
+    },
+    {
+     "titulo": "Etiología",
+     "lv": 2,
+     "fuente": "Diapositiva 58",
+     "defs": [
+      {
+       "t": "Agente etiológico",
+       "facil": "La causa concreta de una enfermedad.",
+       "diapo": "Cuando identificamos agente concreto → agente etiológico.",
+       "n": 58
+      },
+      {
+       "t": "Concurrencia",
+       "facil": "Que coinciden varias cosas a la vez.",
+       "diapo": "Cuando no podemos [identificar el agente], hablamos de concurrencia de varios agentes.",
+       "n": 58
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Etiología:</strong> las causas son <strong>muy diversas</strong>, <strong>propias del organismo y/o externas</strong>.</li>\n<li><strong>Cuando identificamos un agente concreto → agente etiológico.</strong></li>\n<li><strong>Cuando no podemos</strong>, hablamos de <strong>concurrencia de varios agentes</strong>.\nImagen: herpes labial (su agente etiológico es el virus del herpes).</li>\n</ul>",
+     "entiende": "Si sabemos <strong>qué</strong> causa la enfermedad (por ejemplo, el virus del herpes), ese es el <strong>agente etiológico</strong>. Si no hay una sola causa clara, decimos que <strong>se juntan varias</strong>.",
+     "truco": "<strong>ETIOlogía = «¿Y esTO por qué?»</strong> → la causa.",
+     "q": "¿Qué es la etiología? ¿Qué es un agente etiológico?",
+     "n": 49
+    },
+    {
+     "titulo": "Patogenia",
+     "lv": 2,
+     "fuente": "Diapositiva 59",
+     "defs": [
+      {
+       "t": "Patogenia",
+       "facil": "Cómo actúa la causa para producir la enfermedad, paso a paso.",
+       "diapo": "Mecanismo de acción del agente. Estudia la forma en la que un agente produce las alteraciones morfológicas y/o funcionales observadas. (diap. 57 y 59)"
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Patogenia:</strong> <strong>estudia la forma en la que un agente produce las alteraciones morfológicas y/o funcionales observadas.</strong></li>\n<li><strong>Estudia la secuencia de acontecimientos</strong> que constituyen la <strong>respuesta de las células o los tejidos durante el proceso patológico</strong>.</li>\n<li><strong>Condicionada por:</strong><ul>\n<li><strong>Tipo de agente</strong></li>\n<li><strong>Intensidad con que se desarrolla el proceso</strong></li>\n<li><strong>Tiempo de actuación del agente</strong></li>\n<li><strong>Tejido afectado</strong></li>\n<li><strong>Características de la persona</strong>\nImagen: esquema de la patogenia de una infección por inhalación de aerosoles contaminados.</li>\n</ul>\n</li>\n</ul>",
+     "entiende": "La etiología es <strong>«el culpable»</strong>; la patogenia es <strong>«cómo lo hizo»</strong>, paso a paso.",
+     "truco": "Condicionantes = <strong>«TITTC»</strong>: <strong>T</strong>ipo, <strong>I</strong>ntensidad, <strong>T</strong>iempo, <strong>T</strong>ejido, <strong>C</strong>aracterísticas de la persona.",
+     "q": "¿Qué estudia la patogenia y de qué factores depende?",
+     "n": 50
+    },
+    {
+     "titulo": "Semiología: signos, síntomas, cuadro clínico y síndrome",
+     "lv": 1,
+     "fuente": "Diapositiva 60",
+     "defs": [
+      {
+       "t": "Signo",
+       "facil": "Lo que se puede ver o medir (fiebre de 38,3 ºC).",
+       "diapo": "Signos son objetivos y suelen ser cuantificables.",
+       "n": 60
+      },
+      {
+       "t": "Síntoma",
+       "facil": "Lo que siente el paciente (dolor, náuseas).",
+       "diapo": "Síntomas son sensaciones.",
+       "n": 60
+      },
+      {
+       "t": "Cuadro clínico",
+       "facil": "El conjunto de signos y síntomas de un paciente.",
+       "diapo": "Conjunto de signos y síntomas → cuadro clínico.",
+       "n": 60
+      },
+      {
+       "t": "Síndrome",
+       "facil": "Conjunto de signos y síntomas que no encaja con una enfermedad concreta conocida.",
+       "diapo": "Cuando [los cuadros clínicos] no se corresponden [con una enfermedad conocida], hablamos de síndrome.",
+       "n": 60
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Semiología:</strong> las <strong>manifestaciones</strong> pueden ser <strong>signos</strong> o <strong>síntomas</strong>.</li>\n<li><strong>Signos:</strong> son <strong>objetivos</strong> y <strong>suelen ser cuantificables</strong>.</li>\n<li><strong>Síntomas:</strong> son <strong>sensaciones</strong>.</li>\n<li><strong>Conjunto de signos y síntomas → cuadro clínico.</strong></li>\n<li>Los <strong>cuadros clínicos se corresponden con una enfermedad conocida.</strong> <strong>Cuando no se corresponden</strong>, hablamos de <strong>síndrome</strong>.\nImagen: termómetro con <strong>38,3 ºC</strong> (un signo).</li>\n</ul>",
+     "entiende": "El <strong>signo</strong> lo comprueba el médico (fiebre en el termómetro); el <strong>síntoma</strong> solo lo nota el paciente (le duele la cabeza).",
+     "truco": "<strong>SIGNO = Se mIde; SÍNTOMA = lo SIENTO.</strong>",
+     "q": "Diferencia signo y síntoma. ¿Qué es un cuadro clínico y qué es un síndrome?",
+     "n": 51
+    },
+    {
+     "titulo": "La terminología clínica: prefijos, raíces y sufijos",
+     "lv": 3,
+     "fuente": "Diapositiva 61",
+     "defs": [
+      {
+       "t": "Prefijo",
+       "facil": "Trocito que va delante de la palabra.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Raíz o lexema",
+       "facil": "La parte principal de la palabra.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Sufijo",
+       "facil": "Trocito que va detrás.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Los términos clínicos se forman con <strong>raíces, prefijos y sufijos</strong>:</p>\n<ul>\n<li><strong>Prefijo + raíz/lexema:</strong> <strong>Poli- + -uria</strong> → <strong>poliuria</strong>.</li>\n<li><strong>Raíz/lexema + sufijo:</strong> <strong>-artr- + -itis</strong> → <strong>artritis</strong>.\nImágenes: el riñón y la hormona ADH (la diuresis) y manos con <strong>artritis reumatoide</strong>.</li>\n</ul>",
+     "entiende": "Las palabras médicas son «piezas de Lego»: <strong>poli</strong> (mucho) + <strong>uria</strong> (orina) = <strong>orinar mucho</strong>; <strong>artr</strong> (articulación) + <strong>itis</strong> (inflamación) = <strong>inflamación de la articulación</strong>.",
+     "truco": "<strong>-itis = inflamación</strong> (artritis, apendicitis, gastritis).",
+     "q": "¿Cómo se forman los términos clínicos? Pon un ejemplo con prefijo y otro con sufijo.",
+     "n": 52
+    },
+    {
+     "titulo": "Las raíces",
+     "lv": 3,
+     "fuente": "Diapositiva 62",
+     "defs": [
+      {
+       "t": "Raíz",
+       "facil": "La parte de la palabra que indica el órgano o la función.",
+       "diapo": "Raíces: estructuras anatómicas o funciones fisiológicas, también al nivel celular o molecular.",
+       "n": 62
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Raíces:</strong> <strong>estructuras anatómicas o funciones fisiológicas, también al nivel celular o molecular.</strong></li>\n</ul>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Raíz</th>\n<th>Estructura anatómica</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>-aden-</strong></td>\n<td>Glándulas</td>\n<td>Adenoma, adenopatía…</td>\n</tr>\n<tr>\n<td><strong>-adipo-/-lipo-</strong></td>\n<td>Grasa</td>\n<td>Adipocito, liposucción…</td>\n</tr>\n<tr>\n<td><strong>-ancon-</strong></td>\n<td>Codo</td>\n<td>Anconitis, anconalgia…</td>\n</tr>\n<tr>\n<td><strong>-apend-</strong></td>\n<td>Apéndice vermiforme</td>\n<td>Apendicitis, apendicectomía…</td>\n</tr>\n<tr>\n<td><strong>-arter-</strong></td>\n<td>Arterias</td>\n<td>Arteriosclerosis, arteriografía…</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Si sabes la raíz, adivinas la palabra: <strong>adenoma</strong> = tumor de una glándula; <strong>anconalgia</strong> = dolor de codo (-algia = dolor); <strong>apendicectomía</strong> = quitar el apéndice (-ectomía = extirpar).",
+     "truco": "<strong>«ADEN-ADIPO-ANCON-APEND-ARTER»</strong> van por orden alfabético: <strong>glándula, grasa, codo, apéndice, arteria</strong>.",
+     "q": "¿Qué indican las raíces? ¿Qué significan -aden-, -adipo-, -ancon-, -apend- y -arter-?",
+     "n": 53
+    },
+    {
+     "titulo": "Epónimos, siglas y acrónimos",
+     "lv": 3,
+     "fuente": "Diapositiva 63",
+     "defs": [
+      {
+       "t": "Epónimo",
+       "facil": "Palabra que viene del nombre de una persona o de un lugar.",
+       "diapo": "Epónimos: términos que se asocian a un nombre de persona o lugar.",
+       "n": 63
+      },
+      {
+       "t": "Sigla",
+       "facil": "Palabra formada con las iniciales (ECG).",
+       "diapo": "Siglas y acrónimos: puede dar lugar a errores.",
+       "n": 63
+      },
+      {
+       "t": "Acrónimo",
+       "facil": "Palabra formada con trozos de otras (por ejemplo, «sida»).",
+       "diapo": "Siglas y acrónimos: puede dar lugar a errores.",
+       "n": 63
+      }
+     ],
+     "prof": "<p>Otras formas de generar términos clínicos:</p>\n<ul>\n<li><strong>Epónimos:</strong> <strong>términos que se asocian a un nombre de persona o lugar.</strong></li>\n<li><strong>Siglas y acrónimos:</strong> <strong>pueden dar lugar a errores.</strong>\nImagen: una niña con <strong>síndrome de Down</strong> (un epónimo: se llama así por el médico John Langdon Down).</li>\n</ul>",
+     "entiende": "<strong>síndrome de Down</strong>, <strong>enfermedad de Parkinson</strong> o <strong>esófago de Barrett</strong> llevan el nombre de una persona. Las siglas se confunden fácilmente (una misma sigla puede significar cosas distintas).",
+     "truco": "<strong>EPÓnimo = nombre PrOpio.</strong>",
+     "q": "¿Qué son los epónimos? ¿Qué problema tienen las siglas y acrónimos?",
+     "n": 54
+    }
+   ],
+   "min": 60
+  },
+  {
+   "titulo": "La enfermedad y su clasificación",
+   "conceptos": [
+    {
+     "titulo": "La enfermedad",
+     "lv": 1,
+     "fuente": "Diapositiva 64",
+     "defs": [
+      {
+       "t": "Enfermedad",
+       "facil": "Pérdida de la salud con causas, signos y síntomas propios y una evolución esperable.",
+       "diapo": "Alteración o desviación del estado fisiológico en una o varias partes del cuerpo, por causas en general conocidas, manifestada por síntomas y signos característicos, y cuya evolución es más o menos previsible.",
+       "n": 64
+      },
+      {
+       "t": "Previsible",
+       "facil": "Que se puede saber por adelantado.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Enfermedad:</strong> <strong>alteración o desviación del estado fisiológico en una o varias partes del cuerpo, por causas en general conocidas, manifestada por síntomas y signos característicos, y cuya evolución es más o menos previsible.</strong></p>",
+     "entiende": "Una enfermedad tiene <strong>4 cosas</strong>: algo <strong>se altera</strong>, tiene una <strong>causa</strong> (normalmente conocida), da <strong>síntomas y signos</strong> típicos y <strong>sabemos más o menos cómo va a evolucionar</strong>.",
+     "truco": "<strong>«Alteración + Causa + Signos/Síntomas + Evolución» = «ACSE»</strong>.",
+     "q": "Define enfermedad.",
+     "n": 55
+    },
+    {
+     "titulo": "La enfermedad: un proceso dinámico",
+     "lv": 3,
+     "fuente": "Diapositiva 65",
+     "defs": [
+      {
+       "t": "Multidimensionalidad",
+       "facil": "Que la persona tiene varias dimensiones (cuerpo, mente y relaciones).",
+       "diapo": "Multidimensionalidad humana: componente biológico, psíquico y social.",
+       "n": 65
+      },
+      {
+       "t": "Dinámico",
+       "facil": "Que cambia con el tiempo.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Hay que tener presente la <strong>multidimensionalidad humana:</strong><ul>\n<li><strong>Componente biológico</strong></li>\n<li><strong>Componente psíquico</strong></li>\n<li><strong>Componente social</strong></li>\n</ul>\n</li>\n<li><strong>Salud y enfermedad forman parte de una misma línea continua.</strong> <strong>Grados de salud y enfermedad.</strong>\nImagen (la línea): <strong>Muerte</strong> ← <strong>Pérdida de salud</strong> ← <strong>Zona neutra</strong> → <strong>Salud positiva</strong> → <strong>Máximo grado de salud</strong>.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/014.jpg",
+       "alt": "La línea salud-enfermedad (diap. 65)",
+       "img": "<img src=\"img/014.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"La línea salud-enfermedad (diap. 65)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "No hay «sano» o «enfermo» como dos cajas: hay una <strong>línea</strong> con muchos grados, y en ella influyen el <strong>cuerpo</strong>, la <strong>mente</strong> y el <strong>entorno social</strong>.",
+     "truco": "<strong>«Bio-Psico-Social»</strong> y la línea <strong>«Muerte ← neutra → máxima salud»</strong>.",
+     "q": "¿Por qué se dice que la enfermedad es un proceso dinámico? ¿Qué componentes tiene la persona?",
+     "n": 56
+    },
+    {
+     "titulo": "Nosología",
+     "lv": 1,
+     "fuente": "Diapositiva 66",
+     "defs": [
+      {
+       "t": "Nosología",
+       "facil": "La parte de la medicina que ordena y clasifica las enfermedades.",
+       "diapo": "Parte de la medicina que describe, explica, diferencia y clasifica las enfermedades.",
+       "n": 66
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Nosología:</strong> <strong>parte de la medicina que describe, explica, diferencia y clasifica las enfermedades.</strong></li>\n<li>Hay <strong>distintos criterios</strong>; los <strong>más comunes</strong> son las <strong>características del agente causante</strong> y las <strong>de la enfermedad</strong>.</li>\n</ul>",
+     "entiende": "La nosología es el <strong>«catálogo»</strong> de las enfermedades: las describe y las ordena por grupos.",
+     "truco": "<strong>NOSOlogía = «NOS Ordena»</strong> las enfermedades. 4 verbos: <strong>describe, explica, diferencia y clasifica</strong>.",
+     "q": "¿Qué es la nosología? ¿Cuáles son los criterios de clasificación más comunes?",
+     "n": 57
+    },
+    {
+     "titulo": "Clasificación según las características del agente",
+     "lv": 1,
+     "fuente": "Diapositiva 67",
+     "defs": [
+      {
+       "t": "Intrínseco",
+       "facil": "De dentro.",
+       "diapo": "Intrínseca: el agente pertenece al organismo.",
+       "n": 67
+      },
+      {
+       "t": "Extrínseco",
+       "facil": "De fuera.",
+       "diapo": "Extrínseca: el agente es externo al organismo.",
+       "n": 67
+      },
+      {
+       "t": "Unifactorial",
+       "facil": "Con una sola causa.",
+       "diapo": "Hay un solo agente causal.",
+       "n": 67
+      },
+      {
+       "t": "Multifactorial",
+       "facil": "Con varias causas.",
+       "diapo": "La enfermedad se debe a la confluencia de varias causas.",
+       "n": 67
+      },
+      {
+       "t": "Predisponente",
+       "facil": "Que facilita que aparezca la enfermedad.",
+       "diapo": "Indirecta: el agente no causa directamente la enfermedad, sino que actúa como su agente predisponente o desencadenante.",
+       "n": 67
+      },
+      {
+       "t": "Desencadenante",
+       "facil": "Que la hace empezar.",
+       "diapo": "Indirecta: el agente no causa directamente la enfermedad, sino que actúa como su agente predisponente o desencadenante.",
+       "n": 67
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Criterio de clasificación</th>\n<th>Tipo de enfermedad</th>\n<th>Definición</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Según el origen del agente</strong></td>\n<td><strong>Intrínseca</strong></td>\n<td>El agente <strong>pertenece al organismo</strong>.</td>\n</tr>\n<tr>\n<td></td>\n<td><strong>Extrínseca</strong></td>\n<td>El agente <strong>es externo</strong> al organismo.</td>\n</tr>\n<tr>\n<td><strong>Según la causa esté en el propio material genético o no</strong></td>\n<td><strong>Genética</strong></td>\n<td>La enfermedad está determinada en la <strong>carga genética</strong> de la persona.</td>\n</tr>\n<tr>\n<td></td>\n<td><strong>Adquirida</strong></td>\n<td>La enfermedad <strong>no tiene base genética</strong>.</td>\n</tr>\n<tr>\n<td><strong>Según se deba a un agente o a un cúmulo de condiciones</strong></td>\n<td><strong>Unifactorial</strong></td>\n<td>Hay <strong>un solo agente causal</strong>.</td>\n</tr>\n<tr>\n<td></td>\n<td><strong>Multifactorial</strong></td>\n<td>La enfermedad se debe a la <strong>confluencia de varias causas</strong>.</td>\n</tr>\n<tr>\n<td><strong>Según el agente causal esté o no identificado</strong></td>\n<td><strong>De agente causal conocido</strong></td>\n<td>Está identificado el agente que causa la enfermedad: <strong>agente etiológico</strong>.</td>\n</tr>\n<tr>\n<td></td>\n<td><strong>De agente causal desconocido</strong></td>\n<td><strong>No se sabe con exactitud</strong> cuál es el agente que desencadena la enfermedad.</td>\n</tr>\n<tr>\n<td><strong>Según el tiempo que tarda el agente en provocar signos y síntomas</strong></td>\n<td><strong>De efecto inmediato</strong></td>\n<td>Las consecuencias se perciben <strong>en poco tiempo</strong> tras la exposición al agente.</td>\n</tr>\n<tr>\n<td></td>\n<td><strong>De efecto tardío</strong></td>\n<td><strong>Transcurre tiempo, incluso años</strong>, entre la exposición y los efectos.</td>\n</tr>\n<tr>\n<td><strong>Según la relación entre el agente y la enfermedad</strong></td>\n<td><strong>Directa</strong></td>\n<td>Existe una <strong>relación directa</strong> entre el agente causal y la enfermedad.</td>\n</tr>\n<tr>\n<td></td>\n<td><strong>Indirecta</strong></td>\n<td>El agente <strong>no causa directamente</strong> la enfermedad, sino que actúa como su <strong>agente predisponente o desencadenante</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/015.jpg",
+       "alt": "Clasificación según el agente (diap. 67)",
+       "img": "<img src=\"img/015.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Clasificación según el agente (diap. 67)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Son <strong>6 preguntas sobre el agente</strong>, y cada una tiene <strong>2 respuestas</strong>: ¿de dentro o de fuera? ¿genes o no? ¿una causa o varias? ¿se conoce o no? ¿rápido o tarde? ¿directo o indirecto?",
+     "truco": "<strong>6 parejas: «In/Ex, Gen/Adq, Uni/Multi, Cono/Desco, Inme/Tardío, Directa/Indirecta»</strong>.",
+     "q": "Clasifica las enfermedades según las características del agente (los 6 criterios con sus dos tipos).",
+     "n": 58
+    },
+    {
+     "titulo": "Clasificación según las características de la enfermedad",
+     "lv": 1,
+     "fuente": "Diapositiva 68",
+     "defs": [
+      {
+       "t": "Sistémica",
+       "facil": "Que afecta a todo el cuerpo.",
+       "diapo": "Extensión del organismo que afecta: sistémica / localizada.",
+       "n": 68
+      },
+      {
+       "t": "Localizada",
+       "facil": "En una sola zona.",
+       "diapo": "Extensión del organismo que afecta: sistémica / localizada.",
+       "n": 68
+      },
+      {
+       "t": "Etiopatogenia",
+       "facil": "La causa y el mecanismo juntos.",
+       "diapo": "Etiopatogenia: endógenas, exógenas, ambientales, de etiología multifactorial.",
+       "n": 68
+      },
+      {
+       "t": "Endógena",
+       "facil": "Con origen dentro del cuerpo.",
+       "diapo": "Etiopatogenia: endógenas.",
+       "n": 68
+      },
+      {
+       "t": "Exógena",
+       "facil": "Con origen fuera.",
+       "diapo": "Etiopatogenia: exógenas.",
+       "n": 68
+      },
+      {
+       "t": "Endémica",
+       "facil": "Que está siempre presente en una región.",
+       "diapo": "Frecuencia de aparición en una región: endémica / esporádica.",
+       "n": 68
+      },
+      {
+       "t": "Esporádica",
+       "facil": "Que aparece de vez en cuando.",
+       "diapo": "Frecuencia de aparición en una región: endémica / esporádica.",
+       "n": 68
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Criterio</th>\n<th>Tipos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Duración</strong></td>\n<td><strong>Aguda (&lt; 3 meses)</strong> · <strong>Subaguda (entre 3 y 6 meses)</strong> · <strong>Crónica (&gt; 6 meses)</strong></td>\n</tr>\n<tr>\n<td><strong>Extensión del organismo que afecta</strong></td>\n<td><strong>Sistémica</strong> · <strong>Localizada</strong></td>\n</tr>\n<tr>\n<td><strong>Etiopatogenia</strong></td>\n<td><strong>Endógenas</strong> · <strong>Exógenas</strong> · <strong>Ambientales</strong> · <strong>De etiología multifactorial</strong></td>\n</tr>\n<tr>\n<td><strong>Frecuencia de aparición en una región</strong></td>\n<td><strong>Endémica</strong> · <strong>Esporádica</strong></td>\n</tr>\n<tr>\n<td><strong>Funciones fisiológicas que afecta</strong></td>\n<td><strong>Nerviosa, cardiovasculares, mentales, metabólicas…</strong></td>\n</tr>\n<tr>\n<td><strong>Edad de las personas afectadas</strong></td>\n<td><strong>Neonatales, pediátricas, geriátricas</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/016.jpg",
+       "alt": "Clasificación según la enfermedad (diap. 68)",
+       "img": "<img src=\"img/016.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Clasificación según la enfermedad (diap. 68)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Ahora se clasifica <strong>la enfermedad</strong>: cuánto dura, cuánto cuerpo afecta, de dónde viene, cada cuánto aparece en un lugar, qué función daña y a qué edad.",
+     "truco": "<strong>duración «3-6»: menos de 3 = aguda; de 3 a 6 = subaguda; más de 6 = crónica.</strong> Los 6 criterios: <strong>«DEEFFE»: Duración, Extensión, Etiopatogenia, Frecuencia, Funciones, Edad.</strong>",
+     "q": "Clasifica las enfermedades según sus características. ¿Cuánto dura una enfermedad aguda, una subaguda y una crónica?",
+     "n": 59
+    }
+   ],
+   "min": 65
+  },
+  {
+   "titulo": "El desarrollo de la enfermedad",
+   "conceptos": [
+    {
+     "titulo": "Las etapas de la enfermedad",
+     "lv": 1,
+     "fuente": "Diapositiva 69",
+     "defs": [
+      {
+       "t": "Etapa o fase",
+       "facil": "Cada parte del desarrollo de la enfermedad.",
+       "diapo": "Etapas con duración y características distintas según enfermedad.",
+       "n": 69
+      }
+     ],
+     "prof": "<p>Etapas con <strong>duración y características distintas según la enfermedad</strong>:</p>\n<ol>\n<li><strong>Fase prepatogénica</strong></li>\n<li><strong>Fase patogénica</strong>\n   - a. <strong>Periodo subclínico (incubación)</strong>\n   - b. <strong>Periodo de latencia</strong></li>\n<li><strong>Fase clínica</strong>\n   - a. <strong>Periodo prodrómico</strong>\n   - b. <strong>Periodo clínico</strong>\n   - c. <strong>Periodo de resolución</strong>\nImagen: esquema de flechas: fase prepatogénica → fase patogénica (enfermedad infecciosa: fase de incubación; enfermedad degenerativa: fase de latencia) → fase clínica (periodo prodrómico, clínico y de resolución).</li>\n</ol>",
+     "imgs": [
+      {
+       "src": "img/017.jpg",
+       "alt": "Fases del desarrollo de la enfermedad (diap. 69)",
+       "img": "<img src=\"img/017.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Fases del desarrollo de la enfermedad (diap. 69)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "<strong>pre</strong> (todavía no hay cambios) → <strong>patogénica</strong> (hay cambios pero no se notan) → <strong>clínica</strong> (se notan).",
+     "truco": "<strong>«Pre-Pato-Clí»</strong> y dentro: <strong>«Sub-Lat»</strong> y <strong>«Pro-Clí-Reso»</strong>.",
+     "q": "Enumera las fases y los periodos del desarrollo de una enfermedad.",
+     "n": 60
+    },
+    {
+     "titulo": "Fase prepatogénica",
+     "lv": 3,
+     "fuente": "Diapositiva 70",
+     "defs": [
+      {
+       "t": "Manifestación clínica",
+       "facil": "Signo o síntoma que se nota.",
+       "diapo": "Fase prepatogénica: enfermedad ha iniciado pero aún no hay manifestaciones clínicas, ni cambios celulares, tisulares u orgánicos.",
+       "n": 70
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Fase prepatogénica:</strong> la <strong>enfermedad ha iniciado</strong> pero <strong>aún no hay manifestaciones clínicas, ni cambios celulares, tisulares u orgánicos</strong>.\nImagen: una balanza con el <strong>agente</strong>, el <strong>huésped</strong> y el <strong>medio ambiente</strong> en equilibrio.</li>\n</ul>",
+     "entiende": "El agente y la persona ya están «en contacto», pero <strong>todavía no ha pasado nada</strong> en el cuerpo: la balanza está equilibrada.",
+     "truco": "<strong>PRE = antes de todo: ni síntomas ni cambios.</strong>",
+     "q": "¿Qué caracteriza a la fase prepatogénica?",
+     "n": 61
+    },
+    {
+     "titulo": "Fase patogénica",
+     "lv": 1,
+     "fuente": "Diapositiva 71",
+     "defs": [
+      {
+       "t": "Periodo de incubación",
+       "facil": "Tiempo desde que entra un microbio hasta que aparecen los síntomas.",
+       "diapo": "Periodo subclínico (incubación). Enfermedades infecciosas, MO se están multiplicando y/o produciendo toxinas. Evolución rápida (horas, días).",
+       "n": 71
+      },
+      {
+       "t": "Toxina",
+       "facil": "Veneno fabricado por un microorganismo.",
+       "diapo": "MO se están multiplicando y/o produciendo toxinas.",
+       "n": 71
+      },
+      {
+       "t": "Enfermedad degenerativa",
+       "facil": "La que va estropeando poco a poco un órgano (por ejemplo, el alzhéimer).",
+       "diapo": "Periodo de latencia. Enfermedades degenerativas. Fase larga.",
+       "n": 71
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Fase patogénica:</strong> <strong>cambios celulares, tisulares u orgánicos</strong>, pero <strong>aún no hay síntomas o signos</strong>.</li>\n<li><strong>Periodo subclínico (incubación):</strong> en <strong>enfermedades infecciosas</strong>, los <strong>MO se están multiplicando y/o produciendo toxinas</strong>. <strong>Evolución rápida (horas, días).</strong></li>\n<li><strong>Periodo de latencia:</strong> en <strong>enfermedades degenerativas</strong>. <strong>Fase larga.</strong>\nImagen: la balanza ya <strong>desequilibrada</strong> (gana el agente frente al huésped).</li>\n</ul>",
+     "entiende": "Ya hay daño por dentro, pero <strong>la persona no nota nada</strong>. En una <strong>infección</strong> dura poco (incubación); en una <strong>enfermedad degenerativa</strong> dura mucho (latencia).",
+     "truco": "<strong>Incubación = Infecciosa (rápida); Latencia = Larga (degenerativa).</strong>",
+     "q": "¿Qué ocurre en la fase patogénica? Diferencia el periodo de incubación del de latencia.",
+     "n": 62
+    },
+    {
+     "titulo": "Fase clínica",
+     "lv": 1,
+     "fuente": "Diapositiva 72",
+     "defs": [
+      {
+       "t": "Inespecífico",
+       "facil": "Que puede aparecer en muchas enfermedades.",
+       "diapo": "Periodo prodrómico: signos y síntomas inespecíficos (fiebre, malestar, cefalea…).",
+       "n": 72
+      },
+      {
+       "t": "Cefalea",
+       "facil": "Dolor de cabeza.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Pródromos",
+       "facil": "Los primeros síntomas, vagos, antes de la enfermedad «de verdad».",
+       "diapo": "Periodo prodrómico: signos y síntomas inespecíficos (fiebre, malestar, cefalea…) → pródromos.",
+       "n": 72
+      },
+      {
+       "t": "Cronificación",
+       "facil": "Que la enfermedad se vuelve crónica.",
+       "diapo": "Periodo de resolución: etapa final; desaparición, cronificación o muerte.",
+       "n": 72
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Fase clínica:</strong> <strong>signos o síntomas clínicos</strong>; la persona <strong>demanda ayuda sanitaria</strong>.</li>\n<li><strong>Periodo prodrómico:</strong> <strong>signos y síntomas inespecíficos</strong> (<strong>fiebre, malestar, cefalea…</strong>) → <strong>pródromos</strong>.</li>\n<li><strong>Periodo clínico:</strong> <strong>aparecen los síntomas y signos de la enfermedad.</strong></li>\n<li><strong>Periodo de resolución:</strong> <strong>etapa final</strong>; <strong>desaparición, cronificación o muerte</strong>.</li>\n</ul>",
+     "entiende": "Primero te encuentras <strong>«raro»</strong> (fiebre, malestar: pródromos), luego aparecen <strong>los síntomas típicos</strong> de esa enfermedad y al final <strong>te curas, se queda crónica o mueres</strong>.",
+     "truco": "<strong>resolución = «3 finales»: Desaparece, se Cronifica o Muerte («DCM»).</strong>",
+     "q": "Explica los tres periodos de la fase clínica. ¿Qué son los pródromos?",
+     "n": 63
+    },
+    {
+     "titulo": "Evolución de la enfermedad y complicaciones",
+     "lv": 3,
+     "fuente": "Diapositiva 73",
+     "defs": [
+      {
+       "t": "Complicación",
+       "facil": "Un problema nuevo que aparece durante una enfermedad o un tratamiento.",
+       "diapo": "Problema médico que se presenta durante el curso de una enfermedad o después de un procedimiento o tratamiento.",
+       "n": 73
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Evolución de la enfermedad: previsible vs real.</strong></li>\n<li>El <strong>curso de la enfermedad depende de multitud de factores.</strong></li>\n<li><strong>Complicaciones:</strong> <strong>problema médico que se presenta durante el curso de una enfermedad o después de un procedimiento o tratamiento.</strong>\nImagen: <strong>diabetes mellitus: complicaciones crónicas</strong>, macrovasculares (cerebro, corazón, piernas) y microvasculares (ojo, riñón, nervios).</li>\n</ul>",
+     "entiende": "Sabemos más o menos cómo <strong>debería</strong> ir una enfermedad, pero <strong>en la realidad</strong> puede cambiar. Si aparece algo nuevo por el camino, es una <strong>complicación</strong> (como los problemas del ojo o del riñón en la diabetes).",
+     "truco": "<strong>complicación = «algo más que se complica»</strong> durante la enfermedad o tras el tratamiento.",
+     "q": "¿Qué es una complicación? Pon un ejemplo.",
+     "n": 64
+    }
+   ],
+   "min": 40
+  },
+  {
+   "titulo": "El diagnóstico de la enfermedad",
+   "conceptos": [
+    {
+     "titulo": "Diagnóstico, signos patognomónicos y pronóstico",
+     "lv": 1,
+     "fuente": "Diapositivas 74 y 75",
+     "defs": [
+      {
+       "t": "Diagnóstico",
+       "facil": "Saber qué enfermedad tiene la persona.",
+       "diapo": "Identificación de la enfermedad.",
+       "n": 74
+      },
+      {
+       "t": "Signo patognomónico",
+       "facil": "Signo que solo aparece en una enfermedad y basta para diagnosticarla.",
+       "diapo": "Característicos de una enfermedad, permiten diagnóstico directo.",
+       "n": 74
+      },
+      {
+       "t": "Pronóstico",
+       "facil": "Lo que se espera que pase con la enfermedad.",
+       "diapo": "Juicio hipotético acerca de la terminación probable de una enfermedad.",
+       "n": 74
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Diagnóstico:</strong> <strong>identificación de la enfermedad.</strong></li>\n<li><strong>Signos patognomónicos:</strong> <strong>característicos de una enfermedad, permiten diagnóstico directo.</strong></li>\n<li>\n<p><strong>Pronóstico:</strong> <strong>juicio hipotético acerca de la terminación probable de una enfermedad.</strong>\nEjemplos de signos patognomónicos (imágenes):</p>\n</li>\n<li>\n<p><strong>Manchas de Koplik → sarampión.</strong></p>\n</li>\n<li><strong>Cuerpos de Negri → rabia.</strong></li>\n<li><strong>Tofo → gota.</strong></li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/018.jpg",
+       "alt": "Manchas de Koplik: sarampión (diap. 74)",
+       "img": "<img src=\"img/018.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Manchas de Koplik: sarampión (diap. 74)\" loading=\"lazy\">"
+      },
+      {
+       "src": "img/019.jpg",
+       "alt": "Cuerpos de Negri (rabia) y tofo (gota) (diap. 75)",
+       "img": "<img src=\"img/019.jpg\" width=\"1000\" height=\"563\" loading=\"lazy\" decoding=\"async\" alt=\"Cuerpos de Negri (rabia) y tofo (gota) (diap. 75)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Un signo <strong>patognomónico</strong> es como una <strong>«huella dactilar»</strong>: si lo ves, ya sabes qué enfermedad es. El <strong>pronóstico</strong> es la «predicción» de cómo acabará.",
+     "truco": "<strong>«Koplik-Sarampión, Negri-Rabia, Tofo-Gota»</strong> → <strong>«KoSa, NeRa, ToGo»</strong>.",
+     "q": "Define diagnóstico, signo patognomónico y pronóstico. Pon tres ejemplos de signos patognomónicos.",
+     "n": 65
+    },
+    {
+     "titulo": "Métodos clínicos de diagnóstico: la anamnesis",
+     "lv": 1,
+     "fuente": "Diapositivas 76 y 77",
+     "defs": [
+      {
+       "t": "Anamnesis",
+       "facil": "La entrevista con el paciente (preguntas).",
+       "diapo": "Preguntas sobre historia clínica, hábitos de vida, antecedentes familiares… Persona ha de informar de cualquier medida adoptada.",
+       "n": 77
+      },
+      {
+       "t": "Historia clínica",
+       "facil": "El documento con toda la información médica del paciente.",
+       "diapo": "Anamnesis: preguntas sobre historia clínica, hábitos de vida, antecedentes familiares…",
+       "n": 77
+      },
+      {
+       "t": "Diagnóstico presuntivo",
+       "facil": "El diagnóstico que «se sospecha».",
+       "diapo": "Anamnesis + examen físico → diagnóstico clínico o presuntivo.",
+       "n": 77
+      }
+     ],
+     "prof": "<ul>\n<li>El diagnóstico se hace mediante <strong>métodos clínicos</strong> y <strong>métodos complementarios</strong>.</li>\n<li><strong>Métodos clínicos de diagnóstico:</strong><ul>\n<li><strong>Anamnesis</strong></li>\n<li><strong>Examen físico</strong></li>\n</ul>\n</li>\n<li><strong>Anamnesis + examen físico → diagnóstico clínico o presuntivo.</strong></li>\n<li><strong>Anamnesis:</strong> <strong>preguntas sobre historia clínica, hábitos de vida, antecedentes familiares…</strong> La <strong>persona ha de informar de cualquier medida adoptada</strong>.\nImagen (diapositiva 76): cuadro antiguo de un médico visitando a una paciente.</li>\n</ul>",
+     "entiende": "Primero el médico <strong>pregunta</strong> (anamnesis) y <strong>explora</strong> (examen físico). Con eso ya tiene una <strong>sospecha</strong> (diagnóstico presuntivo).",
+     "truco": "<strong>ANAMNESIS = «ANA, ¿qué te pasa?»</strong> (preguntas).",
+     "q": "¿Qué es la anamnesis? ¿Qué diagnóstico se obtiene con la anamnesis y el examen físico?",
+     "n": 66
+    },
+    {
+     "titulo": "El examen físico",
+     "lv": 1,
+     "fuente": "Diapositiva 78",
+     "defs": [
+      {
+       "t": "Inspección",
+       "facil": "Mirar.",
+       "diapo": "Examen físico: inspección, palpación, auscultación, percusión.",
+       "n": 78
+      },
+      {
+       "t": "Palpación",
+       "facil": "Tocar con las manos.",
+       "diapo": "Examen físico: inspección, palpación, auscultación, percusión.",
+       "n": 78
+      },
+      {
+       "t": "Auscultación",
+       "facil": "Escuchar (con el fonendo).",
+       "diapo": "Examen físico: inspección, palpación, auscultación, percusión.",
+       "n": 78
+      },
+      {
+       "t": "Percusión",
+       "facil": "Dar golpecitos y escuchar el sonido.",
+       "diapo": "Percusión: tipo de sonidos que se generan (sonoro, hipersonoro, timpánico, mate).",
+       "n": 79
+      },
+      {
+       "t": "Constantes vitales",
+       "facil": "Temperatura, pulso, tensión y respiración.",
+       "diapo": "Examen físico: también constantes vitales.",
+       "n": 78
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Examen físico:</strong> <strong>se centra en una zona u otra según la información obtenida en la anamnesis.</strong><ul>\n<li><strong>Inspección</strong></li>\n<li><strong>Palpación</strong></li>\n<li><strong>Auscultación</strong></li>\n<li><strong>Percusión</strong></li>\n</ul>\n</li>\n<li><strong>También constantes vitales.</strong></li>\n</ul>",
+     "entiende": "El médico usa sus sentidos: <strong>mira, toca, escucha y golpea</strong>. Y mide las constantes vitales.",
+     "truco": "<strong>«IPAP»: Inspección, Palpación, Auscultación, Percusión</strong> (mirar, tocar, escuchar, golpear).",
+     "q": "¿En qué consiste el examen físico? ¿Qué técnicas usa?",
+     "n": 67
+    },
+    {
+     "titulo": "La percusión: los sonidos",
+     "lv": 2,
+     "fuente": "Diapositiva 79",
+     "defs": [
+      {
+       "t": "Enfisema",
+       "facil": "Enfermedad del pulmón que lo deja con demasiado aire atrapado.",
+       "diapo": "Hipersonoro (hiperresonante): más alto tono (pulmón enfisematoso o neumotórax).",
+       "n": 79
+      },
+      {
+       "t": "Neumotórax",
+       "facil": "Aire entre el pulmón y la pared del tórax (el pulmón se colapsa).",
+       "diapo": "Timpánico: frecuencia más elevada (neumotórax).",
+       "n": 79
+      },
+      {
+       "t": "Neumonía",
+       "facil": "Infección del pulmón que lo llena de líquido.",
+       "diapo": "Mate: ruido opaco al percutir estructuras macizas (neumonía).",
+       "n": 79
+      }
+     ],
+     "prof": "<p><strong>Percusión:</strong> tipo de sonidos que se generan:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Sonido</th>\n<th>Cómo es</th>\n<th>Ejemplo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Sonoro (resonante)</strong></td>\n<td>Normal</td>\n<td><strong>Pulmón normal</strong></td>\n</tr>\n<tr>\n<td><strong>Hipersonoro (hiperresonante)</strong></td>\n<td><strong>Más alto tono</strong></td>\n<td><strong>Pulmón enfisematoso o neumotórax</strong></td>\n</tr>\n<tr>\n<td><strong>Timpánico</strong></td>\n<td><strong>Frecuencia más elevada</strong></td>\n<td><strong>Neumotórax</strong></td>\n</tr>\n<tr>\n<td><strong>Mate</strong></td>\n<td><strong>Ruido opaco al percutir estructuras macizas</strong></td>\n<td><strong>Neumonía</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Cuanto <strong>más aire</strong>, más <strong>suena</strong> (como un tambor = timpánico); cuanto <strong>más macizo o lleno de líquido</strong>, más <strong>apagado</strong> (mate).",
+     "truco": "<strong>TIMPÁNICO = TAMBOR (mucho aire); MATE = MACIZO (sin aire).</strong>",
+     "q": "¿Qué sonidos se pueden obtener en la percusión? Pon un ejemplo de cada uno.",
+     "n": 68
+    },
+    {
+     "titulo": "Métodos complementarios de diagnóstico",
+     "lv": 1,
+     "fuente": "Diapositivas 80 y 81",
+     "defs": [
+      {
+       "t": "Diagnóstico diferencial",
+       "facil": "Distinguir entre enfermedades parecidas.",
+       "diapo": "Métodos complementarios: realizar diagnóstico diferencial.",
+       "n": 80
+      },
+      {
+       "t": "Diagnóstico definitivo",
+       "facil": "El diagnóstico seguro.",
+       "diapo": "Diagnóstico definitivo (conclusión diagnóstica), establece con certeza la enfermedad.",
+       "n": 80
+      }
+     ],
+     "prof": "<p><strong>Métodos complementarios de diagnóstico</strong> (para qué sirven):</p>\n<ul>\n<li><strong>Confirmar o descartar el diagnóstico clínico.</strong></li>\n<li><strong>Obtener más datos.</strong></li>\n<li>\n<p><strong>Realizar diagnóstico diferencial.</strong>\n<strong>Objetivo:</strong> <strong>diagnóstico definitivo (conclusión diagnóstica)</strong>, <strong>establece con certeza la enfermedad</strong>.\n<strong>Estudios complementarios</strong> para llegar al diagnóstico:</p>\n</li>\n<li>\n<p><strong>Análisis clínicos</strong></p>\n</li>\n<li><strong>Estudios citológicos y anatomopatológicos</strong></li>\n<li><strong>Técnicas de diagnóstico por imagen</strong></li>\n<li><strong>Técnicas de electrodiagnóstico</strong></li>\n</ul>",
+     "entiende": "La anamnesis y la exploración dan una <strong>sospecha</strong>; las <strong>pruebas</strong> la <strong>confirman</strong> y dan el <strong>diagnóstico definitivo</strong>.",
+     "truco": "Objetivos <strong>«CODI»</strong>: <strong>CO</strong>nfirmar/descartar, <strong>O</strong>btener datos, <strong>DI</strong>ferencial. Estudios: <strong>«Análisis, Cito, Imagen, Electro»</strong>.",
+     "q": "¿Para qué sirven los métodos complementarios? ¿Qué tipos de estudios complementarios hay?",
+     "n": 69
+    },
+    {
+     "titulo": "Análisis clínicos",
+     "lv": 3,
+     "fuente": "Diapositiva 82",
+     "defs": [
+      {
+       "t": "Muestra biológica",
+       "facil": "Sangre, orina, tejido… que se analiza.",
+       "diapo": "Análisis clínicos: a partir de muestras biológicas.",
+       "n": 82
+      },
+      {
+       "t": "Bioquímica clínica",
+       "facil": "Análisis químicos de las muestras (glucosa, proteínas…).",
+       "diapo": "Métodos químicos y bioquímicos para estudiar procesos metabólicos (pH, [glucosa], [proteínas], [hormonas]...).",
+       "n": 82
+      },
+      {
+       "t": "Inmunología",
+       "facil": "Estudio de las defensas.",
+       "diapo": "Información sobre respuesta inmunitaria.",
+       "n": 82
+      },
+      {
+       "t": "Microbiología/parasitología",
+       "facil": "Estudio de los microbios y los parásitos.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Análisis clínicos:</strong> a partir de <strong>muestras biológicas</strong>:</p>\n<ul>\n<li><strong>Bioquímica clínica:</strong> <strong>métodos químicos y bioquímicos para estudiar procesos metabólicos</strong> (<strong>pH, [glucosa], [proteínas], [hormonas]...</strong>).</li>\n<li><strong>Inmunología:</strong> <strong>información sobre la respuesta inmunitaria.</strong></li>\n<li><strong>Genética.</strong></li>\n<li><strong>Microbiología/parasitología.</strong></li>\n</ul>",
+     "entiende": "Es el <strong>laboratorio clínico</strong>: con una muestra se mide la química, las defensas, los genes o los microbios.",
+     "truco": "<strong>«BIGM»: Bioquímica, Inmunología, Genética, Microbiología.</strong>",
+     "q": "¿Qué tipos de análisis clínicos hay? ¿Qué estudia la bioquímica clínica?",
+     "n": 70
+    },
+    {
+     "titulo": "Estudios citológicos y anatomopatológicos",
+     "lv": 2,
+     "fuente": "Diapositiva 83",
+     "defs": [
+      {
+       "t": "Citología",
+       "facil": "Estudio de células sueltas.",
+       "diapo": "Muestras biológicas son células.",
+       "n": 83
+      },
+      {
+       "t": "Biopsia",
+       "facil": "Trocito de tejido para estudiarlo.",
+       "diapo": "Biopsias: fragmentos de tejidos.",
+       "n": 83
+      },
+      {
+       "t": "Técnicas morfológicas",
+       "facil": "Las que estudian la forma (al microscopio).",
+       "diapo": "Estudios de causas, desarrollo y consecuencias de la enfermedad por medio de técnicas morfológicas.",
+       "n": 83
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Estudios citológicos y anatomopatológicos:</strong> estudios de <strong>causas, desarrollo y consecuencias de la enfermedad</strong> por medio de <strong>técnicas morfológicas</strong>.</li>\n<li><strong>Citología:</strong> las <strong>muestras biológicas son células</strong>.</li>\n<li><strong>Biopsias:</strong> <strong>fragmentos de tejidos</strong>.\nImágenes: toma de una citología del cuello uterino y extensión teñida al microscopio.</li>\n</ul>",
+     "entiende": "Es <strong>tu futuro trabajo</strong>: mirar al microscopio <strong>células</strong> (citología) o <strong>trozos de tejido</strong> (biopsia).",
+     "truco": "<strong>CITOlogía = CÉLULAS; BIOPSIA = trozo de tejido.</strong>",
+     "q": "Diferencia citología y biopsia.",
+     "n": 71
+    }
+   ],
+   "min": 75
+  },
+  {
+   "titulo": "Diagnóstico por imagen y electrodiagnóstico",
+   "conceptos": [
+    {
+     "titulo": "Técnicas de diagnóstico por imagen",
+     "lv": 1,
+     "fuente": "Diapositiva 84",
+     "defs": [
+      {
+       "t": "Diagnóstico por imagen",
+       "facil": "Pruebas que hacen «fotos» del interior del cuerpo.",
+       "diapo": "Técnicas de diagnóstico por imagen: radiografías, ecografías, resonancias magnéticas, tomografías computarizadas, endoscopias.",
+       "n": 84
+      }
+     ],
+     "prof": "<p><strong>Técnicas de diagnóstico por imagen:</strong></p>\n<ul>\n<li><strong>Radiografías</strong></li>\n<li><strong>Ecografías</strong></li>\n<li><strong>Resonancias magnéticas</strong></li>\n<li><strong>Tomografías computarizadas</strong></li>\n<li><strong>Endoscopias</strong>\nImágenes: radiografías de un codo y ecografías 3D de un feto.</li>\n</ul>",
+     "entiende": "Son 5 formas de «ver por dentro» sin abrir (o abriendo muy poco, como la endoscopia).",
+     "truco": "<strong>«RERTE»: Radiografía, Ecografía, Resonancia, Tomografía, Endoscopia.</strong>",
+     "q": "Enumera las técnicas de diagnóstico por imagen.",
+     "n": 72
+    },
+    {
+     "titulo": "Radiografías",
+     "lv": 3,
+     "fuente": "Diapositivas 85, 86 y 87",
+     "defs": [
+      {
+       "t": "Radiografía",
+       "facil": "Imagen hecha con rayos X.",
+       "diapo": "Radiografías: problema por radiaciones ionizantes. Simples: toma directamente por exposición. Con contraste: se administra sustancia contraste.",
+       "n": 85
+      },
+      {
+       "t": "Radiación ionizante",
+       "facil": "Radiación con mucha energía que puede dañar las células.",
+       "diapo": "Organismo forma radicales libres ante radiaciones ionizantes; radioterapia: radiaciones ionizantes. (diap. 15 y 103)"
+      },
+      {
+       "t": "Contraste",
+       "facil": "Sustancia que se ve muy bien en la imagen y que se da para resaltar un órgano.",
+       "diapo": "Con contraste: se administra sustancia contraste.",
+       "n": 85
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Radiografías:</strong> el <strong>problema</strong> son las <strong>radiaciones ionizantes</strong>.<ul>\n<li><strong>Simples:</strong> la toma se hace <strong>directamente por exposición</strong>.</li>\n<li><strong>Con contraste:</strong> <strong>se administra una sustancia de contraste</strong>.</li>\n</ul>\n</li>\n<li>Diapositiva 86: <strong>primera radiografía médica</strong>, de <strong>Wilhelm Röntgen</strong>, de la <strong>mano de su esposa Anna Bertha Ludwig</strong> (con el anillo).</li>\n<li>Diapositiva 87: foto antigua de un puesto ambulante de rayos X («X-ray now»).\nImágenes (diapositiva 85): radiografía simple del cráneo y radiografía con contraste del aparato digestivo.</li>\n</ul>",
+     "entiende": "La radiografía es rápida y barata, pero <strong>usa radiación</strong>. Si se quiere ver un órgano hueco (estómago, intestino), se da <strong>contraste</strong>.",
+     "truco": "<strong>Röntgen = rayos X</strong>; <strong>«simple o con contraste»</strong>.",
+     "q": "¿Cuál es el problema de las radiografías? ¿Qué tipos hay? ¿De quién fue la primera radiografía médica?",
+     "n": 73
+    },
+    {
+     "titulo": "Ecografías",
+     "lv": 3,
+     "fuente": "Diapositiva 88",
+     "defs": [
+      {
+       "t": "Ultrasonidos",
+       "facil": "Sonidos tan agudos que no los oímos.",
+       "diapo": "Ecografías: mediante ultrasonidos. Muestra en tiempo real estructura y movimientos de la zona en estudio. Sin riesgo.",
+       "n": 88
+      },
+      {
+       "t": "En tiempo real",
+       "facil": "En directo.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Ecografías:</strong> <strong>mediante ultrasonidos.</strong> <strong>Muestra en tiempo real la estructura y los movimientos de la zona en estudio.</strong> <strong>Sin riesgo.</strong>\nImágenes: ecografía de un feto y dibujo de una ecografía del abdomen (transductor y ecógrafo).</li>\n</ul>",
+     "entiende": "Funciona como el <strong>sonar</strong> de un murciélago: manda sonido y recoge el eco. Por eso se usa en el <strong>embarazo</strong>: <strong>no tiene radiación</strong>.",
+     "truco": "<strong>ECOgrafía = ECO del sonido → sin riesgo y en directo.</strong>",
+     "q": "¿Cómo funciona la ecografía y qué ventajas tiene?",
+     "n": 74
+    },
+    {
+     "titulo": "Resonancia magnética (RM)",
+     "lv": 3,
+     "fuente": "Diapositiva 89 (título en azul: es un enlace)",
+     "defs": [
+      {
+       "t": "Resonancia magnética",
+       "facil": "Prueba con un imán gigante que hace imágenes muy claras.",
+       "diapo": "Utiliza imanes y ondas de radio para generar imágenes 2D y 3D. Visión muy clara y sin radiaciones. Muy caro y disponibilidad limitada.",
+       "n": 89
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Resonancias magnéticas (RM):</strong> <strong>utiliza imanes y ondas de radio para generar imágenes 2D y 3D.</strong> <strong>Visión muy clara y sin radiaciones.</strong> <strong>Muy caro y disponibilidad limitada.</strong>\nImágenes: máquina de RM y RM de la cabeza.</li>\n</ul>",
+     "entiende": "Es la que <strong>mejor se ve</strong> y <strong>no tiene radiación</strong>, pero es <strong>cara</strong> y <strong>hay pocas</strong> (lista de espera).",
+     "truco": "<strong>RM = «imán y radio»</strong>: muy clara, sin radiación, pero cara y escasa.",
+     "q": "¿Cómo funciona la resonancia magnética? ¿Ventajas e inconvenientes?",
+     "n": 75
+    },
+    {
+     "titulo": "Tomografía computarizada (TC)",
+     "lv": 3,
+     "fuente": "Diapositiva 90 (título en azul: es un enlace)",
+     "defs": [
+      {
+       "t": "Tomografía computarizada (TC o TAC)",
+       "facil": "Rayos X + ordenador que hacen «cortes» del cuerpo.",
+       "diapo": "Utiliza rayos X y sistema informático que procesa imágenes y hace posible observar secciones o cortes del organismo o, incluso, imágenes tridimensionales de los órganos o de las estructuras orgánicas.",
+       "n": 90
+      },
+      {
+       "t": "Sección",
+       "facil": "Corte.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Tomografías computarizadas:</strong> <strong>utiliza rayos X y un sistema informático que procesa imágenes</strong> y hace posible <strong>observar secciones o cortes del organismo</strong> o, incluso, <strong>imágenes tridimensionales de los órganos o de las estructuras orgánicas</strong>.\nImágenes: máquina de TC (el «donut»).</li>\n</ul>",
+     "entiende": "Es como una radiografía <strong>pero en rodajas</strong>: el ordenador junta muchas imágenes y te enseña el cuerpo <strong>cortado en lonchas</strong> o en 3D.",
+     "truco": "<strong>TC = «Tostadas Cortadas»</strong>: rayos X + ordenador = cortes. <strong>RM = imán (sin radiación); TC = rayos X (con radiación).</strong>",
+     "q": "¿Cómo funciona la tomografía computarizada? ¿En qué se diferencia de la RM?",
+     "n": 76
+    },
+    {
+     "titulo": "Endoscopias",
+     "lv": 2,
+     "fuente": "Diapositivas 91 y 92",
+     "defs": [
+      {
+       "t": "Endoscopia",
+       "facil": "Meter un tubo con cámara para ver por dentro.",
+       "diapo": "Para ver dentro del organismo. Existen rígidos (zonas de fácil acceso) y flexibles (fibroscopios).",
+       "n": 91
+      },
+      {
+       "t": "Fibroscopio",
+       "facil": "Endoscopio flexible con fibra óptica.",
+       "diapo": "Fibroscopio tiene fibra óptica, 1 o varios canales para introducir micropinzas, microtijeras... para realizar procedimientos.",
+       "n": 91
+      },
+      {
+       "t": "Exudado",
+       "facil": "Líquido que sale de un tejido inflamado.",
+       "diapo": "Observación directa de la zona (lesiones, exudados…).",
+       "n": 92
+      },
+      {
+       "t": "Pólipo",
+       "facil": "Bultito que crece en una mucosa.",
+       "diapo": "Acción terapéutica: eliminar pólipos.",
+       "n": 92
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Endoscopias:</strong> <strong>para ver dentro del organismo.</strong></li>\n<li>Existen <strong>rígidos</strong> (zonas de <strong>fácil acceso</strong>) y <strong>flexibles</strong> (<strong>fibroscopios</strong>).</li>\n<li>\n<p>El <strong>fibroscopio</strong> tiene <strong>fibra óptica</strong> y <strong>1 o varios canales</strong> para <strong>introducir micropinzas, microtijeras...</strong> para <strong>realizar procedimientos</strong>.\n<strong>Se realizan para:</strong></p>\n</li>\n<li>\n<p><strong>Observación directa de la zona</strong> (lesiones, exudados…).</p>\n</li>\n<li><strong>Toma de muestras</strong> (líquidos, biopsias, citología…).</li>\n<li><strong>Acción terapéutica</strong> (<strong>aspirar secreciones o exudados, eliminar pólipos, coagular hemorragias, eliminar cuerpos extraños</strong>, etc.).</li>\n</ul>",
+     "entiende": "Con la endoscopia <strong>ves, coges muestra y hasta tratas</strong> en el mismo momento (por ejemplo, quitar un pólipo del colon).",
+     "truco": "<strong>«Ver, Coger, Curar»</strong>: observación, toma de muestras y acción terapéutica.",
+     "q": "¿Qué tipos de endoscopios hay? ¿Para qué se realizan las endoscopias?",
+     "n": 77
+    },
+    {
+     "titulo": "Técnicas de electrodiagnóstico",
+     "lv": 3,
+     "fuente": "Diapositivas 93 y 94",
+     "defs": [
+      {
+       "t": "Célula excitable",
+       "facil": "La que puede producir electricidad (neuronas y células musculares).",
+       "diapo": "Células excitables pueden producir potenciales bioeléctricos tras actividad electroquímica en sus membranas.",
+       "n": 93
+      },
+      {
+       "t": "Potencial bioeléctrico",
+       "facil": "Pequeña señal eléctrica que produce una célula.",
+       "diapo": "Células excitables pueden producir potenciales bioeléctricos tras actividad electroquímica en sus membranas.",
+       "n": 93
+      },
+      {
+       "t": "Electrodo",
+       "facil": "Pegatina o pinza que capta la electricidad.",
+       "diapo": "Electrodos en zonas específicas del cuerpo conectados a equipo que capta señales y transforma en líneas onduladas.",
+       "n": 93
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Técnicas de electrodiagnóstico:</strong> las <strong>células excitables pueden producir potenciales bioeléctricos tras actividad electroquímica en sus membranas.</strong> <strong>Cada célula presenta una actividad eléctrica característica.</strong></li>\n<li><strong>Electrodos en zonas específicas del cuerpo conectados a un equipo que capta señales y las transforma en líneas onduladas.</strong></li>\n<li>Son: <strong>electrocardiograma, electroencefalograma, electromiograma.</strong></li>\n</ul>",
+     "entiende": "El corazón, el cerebro y los músculos <strong>funcionan con electricidad</strong>. Con electrodos la «escuchamos» y la dibujamos como <strong>ondas</strong>.",
+     "truco": "<strong>«Cardio-Encéfalo-Mio» = corazón, cerebro, músculo.</strong>",
+     "q": "¿En qué se basan las técnicas de electrodiagnóstico? ¿Cuáles son?",
+     "n": 78
+    },
+    {
+     "titulo": "Electrocardiograma (ECG)",
+     "lv": 3,
+     "fuente": "Diapositiva 95",
+     "defs": [
+      {
+       "t": "Electrocardiógrafo",
+       "facil": "El aparato que hace el electrocardiograma.",
+       "diapo": "Electrocardiograma (ECG): registramos actividad del corazón con electrocardiógrafo (despolarización y repolarización de cámaras cardíacas).",
+       "n": 95
+      },
+      {
+       "t": "Despolarización y repolarización",
+       "facil": "La «carga y descarga» eléctrica que hace contraerse y relajarse al corazón.",
+       "diapo": "Registramos actividad del corazón con electrocardiógrafo (despolarización y repolarización de cámaras cardíacas).",
+       "n": 95
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Electrocardiograma (ECG):</strong> <strong>registramos la actividad del corazón con un electrocardiógrafo</strong> (<strong>despolarización y repolarización de las cámaras cardíacas</strong>).\nImagen: un registro de ECG en papel.</li>\n</ul>",
+     "entiende": "El ECG dibuja la <strong>electricidad del corazón</strong> en cada latido.",
+     "truco": "<strong>CARDIO = corazón.</strong>",
+     "q": "¿Qué registra el electrocardiograma?",
+     "n": 79
+    },
+    {
+     "titulo": "Electroencefalograma (EEG)",
+     "lv": 3,
+     "fuente": "Diapositiva 96",
+     "defs": [
+      {
+       "t": "Encéfalo",
+       "facil": "El cerebro y lo que hay dentro del cráneo.",
+       "diapo": "EEG: registra actividad eléctrica de neuronas del encéfalo.",
+       "n": 96
+      },
+      {
+       "t": "Epilepsia",
+       "facil": "Enfermedad con crisis por descargas eléctricas anormales del cerebro.",
+       "diapo": "EEG: para epilepsia, detección, localización y medida de la extensión de la lesión en tumores.",
+       "n": 96
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Electroencefalograma (EEG):</strong> <strong>registra la actividad eléctrica de las neuronas del encéfalo.</strong></li>\n<li>Sirve para: <strong>epilepsia</strong>, <strong>detección, localización y medida de la extensión de la lesión en tumores</strong>, <strong>medida del grado de anestesia</strong>, <strong>estudios sobre trastornos del sueño…</strong>\nImagen: electrodos en la cabeza y el trazado del EEG.</li>\n</ul>",
+     "entiende": "El EEG dibuja la <strong>electricidad del cerebro</strong>.",
+     "truco": "Usos = <strong>«ETAS»: Epilepsia, Tumores, Anestesia, Sueño.</strong>",
+     "q": "¿Qué registra el electroencefalograma y para qué se usa?",
+     "n": 80
+    },
+    {
+     "titulo": "Electromiografía (EMG)",
+     "lv": 3,
+     "fuente": "Diapositiva 97",
+     "defs": [
+      {
+       "t": "Mio",
+       "facil": "Músculo.",
+       "diapo": "Electromiografía (EMG): estudia actividad eléctrica muscular de un grupo concreto de músculos.",
+       "n": 97
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Electromiografía (EMG):</strong> <strong>estudia la actividad eléctrica muscular de un grupo concreto de músculos.</strong>\nImagen: electromiografía de la mano.</li>\n</ul>",
+     "entiende": "La EMG dibuja la <strong>electricidad de los músculos</strong>.",
+     "truco": "<strong>MIO = músculo</strong> (como en miocardio, miocito).",
+     "q": "¿Qué estudia la electromiografía?",
+     "n": 81
+    }
+   ],
+   "min": 55
+  },
+  {
+   "titulo": "El tratamiento de la enfermedad",
+   "conceptos": [
+    {
+     "titulo": "El tratamiento y la secuela",
+     "lv": 1,
+     "fuente": "Diapositiva 98",
+     "defs": [
+      {
+       "t": "Secuela",
+       "facil": "Algo que se queda después de curarse.",
+       "diapo": "Trastorno que persiste después de curación.",
+       "n": 98
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Conociendo la etiología y la patogenia</strong> podemos <strong>adoptar medidas específicas para interrumpir el proceso patológico</strong>.</li>\n<li><strong>Objetivo del tratamiento:</strong> <strong>conseguir que la persona recupere su estado de salud previo a la enfermedad</strong>, aunque la <strong>enfermedad o el tratamiento pueden provocar secuelas</strong>.</li>\n<li><strong>Secuela:</strong> <strong>trastorno que persiste después de la curación.</strong>\nImagen: una persona con una bolsa de colostomía (una secuela).</li>\n</ul>",
+     "entiende": "Si sabemos <strong>la causa</strong> y <strong>cómo actúa</strong>, podemos <strong>cortarla</strong>. Lo ideal es volver a estar como antes, pero a veces <strong>queda algo</strong> (secuela).",
+     "truco": "<strong>secuela = «lo que se queda después»</strong> (como la secuela de una película: viene después).",
+     "q": "¿Cuál es el objetivo del tratamiento? ¿Qué es una secuela?",
+     "n": 82
+    },
+    {
+     "titulo": "El plan de tratamiento y los tipos de medidas",
+     "lv": 1,
+     "fuente": "Diapositiva 99",
+     "defs": [
+      {
+       "t": "Curativa",
+       "facil": "Que cura.",
+       "diapo": "Tipos de medidas: curativas/paliativas.",
+       "n": 99
+      },
+      {
+       "t": "Paliativa",
+       "facil": "Que alivia sin curar.",
+       "diapo": "Tipos de medidas: curativas/paliativas.",
+       "n": 99
+      },
+      {
+       "t": "Específica",
+       "facil": "Que va contra la causa.",
+       "diapo": "Tipos de medidas: específicas/sintomáticas.",
+       "n": 99
+      },
+      {
+       "t": "Sintomática",
+       "facil": "Que quita los síntomas.",
+       "diapo": "Tipos de medidas: específicas/sintomáticas.",
+       "n": 99
+      },
+      {
+       "t": "Invasiva",
+       "facil": "Que entra en el cuerpo (cortando o pinchando).",
+       "diapo": "Tipos de medidas: invasivas/no invasivas.",
+       "n": 99
+      },
+      {
+       "t": "Conservadora",
+       "facil": "Que intenta conservar el órgano.",
+       "diapo": "Tipos de medidas: conservadoras/radicales.",
+       "n": 99
+      },
+      {
+       "t": "Radical",
+       "facil": "Que quita todo lo afectado.",
+       "diapo": "Tipos de medidas: conservadoras/radicales.",
+       "n": 99
+      }
+     ],
+     "prof": "<ul>\n<li><strong>El plan de tratamiento:</strong> <strong>planificación de todas las medidas terapéuticas que se deberán aplicar para resolver un problema de salud.</strong></li>\n<li><strong>Tipos de medidas</strong> (8 parejas):<ul>\n<li><strong>Curativas/paliativas</strong></li>\n<li><strong>Específicas/sintomáticas</strong></li>\n<li><strong>Locales/sistémicas</strong></li>\n<li><strong>Invasivas/no invasivas</strong></li>\n<li><strong>Conservadoras/radicales</strong></li>\n<li><strong>Farmacológicas/no farmacológicas</strong></li>\n<li><strong>Convencionales/alternativas</strong></li>\n<li><strong>Individuales/grupales</strong></li>\n</ul>\n</li>\n</ul>",
+     "entiende": "Cada medida se puede describir con <strong>parejas de opuestos</strong>: ¿cura o alivia? ¿va a la causa o al síntoma? ¿en una zona o en todo el cuerpo?…",
+     "truco": "<strong>8 parejas: «Cu-Es-Lo-In-Con-Far-Conv-Indi»</strong> (curativas, específicas, locales, invasivas, conservadoras, farmacológicas, convencionales, individuales) y cada una con su contrario.",
+     "q": "¿Qué es el plan de tratamiento? Enumera los tipos de medidas terapéuticas.",
+     "n": 83
+    },
+    {
+     "titulo": "Medidas higiénicas",
+     "lv": 3,
+     "fuente": "Diapositiva 100",
+     "defs": [
+      {
+       "t": "Higiene",
+       "facil": "Parte de la medicina que cuida la salud y previene enfermedades.",
+       "diapo": "Higiene es la parte de la medicina que tiene por objeto la conservación de la salud y prevención de enfermedades.",
+       "n": 100
+      }
+     ],
+     "prof": "<p><strong>Principales recursos terapéuticos:</strong></p>\n<ul>\n<li><strong>Medidas higiénicas:</strong> <strong>cambio de dieta, reposo, hidratación, no fumar, ejercicio…</strong></li>\n<li><strong>Higiene:</strong> <strong>es la parte de la medicina que tiene por objeto la conservación de la salud y la prevención de enfermedades.</strong> <strong>Se aplica en diversos ámbitos.</strong>\nImagen: los 12 consejos del <strong>Código Europeo contra el Cáncer</strong>.</li>\n</ul>",
+     "entiende": "Son los <strong>hábitos de vida</strong>: comer bien, descansar, beber agua, no fumar y moverse.",
+     "truco": "<strong>higiene = «conservar y prevenir».</strong>",
+     "q": "¿Qué son las medidas higiénicas? Define higiene.",
+     "n": 84
+    },
+    {
+     "titulo": "Farmacoterapia",
+     "lv": 3,
+     "fuente": "Diapositiva 101",
+     "defs": [
+      {
+       "t": "Posología",
+       "facil": "Cuánto, cada cuánto y durante cuánto tiempo se toma un medicamento.",
+       "diapo": "Farmacoterapia: tratamiento con medicamentos. Información sobre posología, también sobre interacciones y reacciones adversas.",
+       "n": 101
+      },
+      {
+       "t": "Interacción",
+       "facil": "Cuando un medicamento cambia el efecto de otro.",
+       "diapo": "Información sobre posología, también sobre interacciones y reacciones adversas.",
+       "n": 101
+      },
+      {
+       "t": "Reacción adversa",
+       "facil": "Efecto no deseado de un medicamento.",
+       "diapo": "Información sobre posología, también sobre interacciones y reacciones adversas.",
+       "n": 101
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Farmacoterapia:</strong> <strong>tratamiento con medicamentos.</strong></li>\n<li><strong>Información sobre posología</strong>, también <strong>sobre interacciones y reacciones adversas</strong>.</li>\n</ul>",
+     "entiende": "Tratar con <strong>medicamentos</strong>, sabiendo <strong>la dosis</strong>, <strong>con qué no se mezclan</strong> y <strong>qué efectos malos</strong> pueden dar.",
+     "truco": "<strong>«PIR»: Posología, Interacciones, Reacciones adversas.</strong>",
+     "q": "¿Qué es la farmacoterapia? ¿Qué es la posología?",
+     "n": 85
+    },
+    {
+     "titulo": "Quimioterapia",
+     "lv": 3,
+     "fuente": "Diapositiva 102",
+     "defs": [
+      {
+       "t": "Antineoplásico",
+       "facil": "Medicamento contra el cáncer.",
+       "diapo": "Quimioterapia: tratamiento farmacológico que consiste en la administración de medicamentos antineoplásicos.",
+       "n": 102
+      },
+      {
+       "t": "Médula ósea",
+       "facil": "Donde se fabrica la sangre.",
+       "diapo": "Pueden dañar también células de la médula ósea, de la mucosa intestinal o de los folículos pilosos.",
+       "n": 102
+      },
+      {
+       "t": "Folículo piloso",
+       "facil": "La raíz del pelo.",
+       "diapo": "Pueden dañar también células de … los folículos pilosos.",
+       "n": 102
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Quimioterapia:</strong> <strong>tratamiento farmacológico que consiste en la administración de medicamentos antineoplásicos.</strong></li>\n<li><strong>Pueden dañar también células de la médula ósea, de la mucosa intestinal o de los folículos pilosos.</strong></li>\n</ul>",
+     "entiende": "La quimio ataca a las células que <strong>se dividen mucho</strong> (las del cáncer), pero también a otras que se dividen mucho: por eso da <strong>anemia, diarrea y caída del pelo</strong>. (¡Son tejidos <strong>lábiles</strong>!)",
+     "truco": "Efectos = <strong>«Sangre, Tripa, Pelo»</strong> (médula, mucosa intestinal, folículos).",
+     "q": "¿Qué es la quimioterapia? ¿Qué células sanas puede dañar?",
+     "n": 86
+    },
+    {
+     "titulo": "Radioterapia y sueroterapia",
+     "lv": 3,
+     "fuente": "Diapositiva 103",
+     "defs": [
+      {
+       "t": "Radioterapia",
+       "facil": "Tratamiento con radiación.",
+       "diapo": "Radiaciones ionizantes (pilar del tratamiento del cáncer).",
+       "n": 103
+      },
+      {
+       "t": "Sueroterapia",
+       "facil": "Tratamiento con suero (gotero).",
+       "diapo": "Suero como sustituto de la sangre y para administración de sustancias.",
+       "n": 103
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Radioterapia:</strong> <strong>radiaciones ionizantes</strong> (<strong>pilar del tratamiento del cáncer</strong>).</li>\n<li><strong>Sueroterapia:</strong> <strong>suero como sustituto de la sangre y para la administración de sustancias.</strong>\nImágenes: acelerador de radioterapia y un gotero de suero.</li>\n</ul>",
+     "entiende": "La <strong>radioterapia</strong> usa la radiación (la del concepto 6) para <strong>matar células del cáncer</strong>. La <strong>sueroterapia</strong> es el <strong>gotero</strong>: repone líquido o mete medicamentos.",
+     "truco": "<strong>RADIO = radiación (cáncer); SUERO = gotero.</strong>",
+     "q": "¿Qué es la radioterapia? ¿Para qué se usa la sueroterapia?",
+     "n": 87
+    },
+    {
+     "titulo": "Dietoterapia y fisioterapia",
+     "lv": 3,
+     "fuente": "Diapositiva 104",
+     "defs": [
+      {
+       "t": "Trastorno metabólico congénito",
+       "facil": "Enfermedad de nacimiento en la que el cuerpo no puede procesar algún alimento (por ejemplo, la fenilcetonuria).",
+       "diapo": "Dietoterapia: dietas terapéuticas para personas con trastornos metabólicos congénitos. Precisan de preparados nutricionales con prescripción.",
+       "n": 104
+      },
+      {
+       "t": "Paliar",
+       "facil": "Aliviar.",
+       "diapo": "Fisioterapia: paliar síntomas de múltiples dolencias por medio del ejercicio terapéutico, calor, frío, luz, agua, masaje y electricidad.",
+       "n": 104
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Dietoterapia:</strong> <strong>dietas terapéuticas para personas con trastornos metabólicos congénitos.</strong> <strong>Precisan de preparados nutricionales con prescripción.</strong></li>\n<li><strong>Fisioterapia:</strong> <strong>paliar síntomas de múltiples dolencias por medio del ejercicio terapéutico, calor, frío, luz, agua, masaje y electricidad.</strong>\nImagen: el símbolo de la fisioterapia.</li>\n</ul>",
+     "entiende": "La <strong>dietoterapia</strong> usa la <strong>comida como tratamiento</strong>; la <strong>fisioterapia</strong> usa <strong>agentes físicos</strong> (ejercicio, calor, frío, luz, agua, masaje y electricidad).",
+     "truco": "Fisioterapia = <strong>«ECFLAME»: Ejercicio, Calor, Frío, Luz, Agua, Masaje, Electricidad.</strong>",
+     "q": "¿Qué es la dietoterapia? ¿Con qué medios trabaja la fisioterapia?",
+     "n": 88
+    },
+    {
+     "titulo": "Cirugía",
+     "lv": 3,
+     "fuente": "Diapositiva 105",
+     "defs": [
+      {
+       "t": "Cirugía",
+       "facil": "Operar.",
+       "diapo": "Manipulación mecánica de las estructuras anatómicas con fin médico.",
+       "n": 105
+      },
+      {
+       "t": "Laparoscopia",
+       "facil": "Cirugía del abdomen por agujeros pequeños con una cámara.",
+       "diapo": "Técnicas tradicionales (invasivas) o mínimamente invasivas (endoscopia). Imagen: laparoscopia.",
+       "n": 105
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Cirugía:</strong> <strong>manipulación mecánica de las estructuras anatómicas con fin médico.</strong></li>\n<li><strong>Técnicas tradicionales (invasivas)</strong> o <strong>mínimamente invasivas (endoscopia)</strong>.\nImagen: <strong>laparoscopia</strong>.</li>\n</ul>",
+     "entiende": "Operar puede ser <strong>«abriendo»</strong> (tradicional) o <strong>por agujeritos con cámara</strong> (mínimamente invasiva, como la laparoscopia).",
+     "truco": "<strong>cirugía = «manos» (cheir = mano en griego)</strong>: manipulación mecánica.",
+     "q": "Define cirugía. ¿Qué tipos de técnicas hay?",
+     "n": 89
+    },
+    {
+     "titulo": "Ortoprótesis y otras terapias",
+     "lv": 3,
+     "fuente": "Diapositiva 106",
+     "defs": [
+      {
+       "t": "Ortoprótesis",
+       "facil": "Aparato que sustituye o ayuda a una parte del cuerpo (prótesis de pierna, plantillas, audífono).",
+       "diapo": "Productos sanitarios implantables o no con la finalidad de sustituir total o parcialmente una estructura corporal, o bien modificar, corregir o facilitar su función.",
+       "n": 106
+      },
+      {
+       "t": "Implantable",
+       "facil": "Que se mete dentro del cuerpo.",
+       "diapo": "Ortoprótesis: productos sanitarios implantables o no.",
+       "n": 106
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Ortoprótesis:</strong> <strong>productos sanitarios implantables o no con la finalidad de sustituir total o parcialmente una estructura corporal, o bien modificar, corregir o facilitar su función.</strong></li>\n<li><strong>Otras terapias:</strong> <strong>psicoterapia, terapia ocupacional, hidroterapia, musicoterapia, fitoterapia, acupuntura…</strong>\nImagen: una persona con una prótesis de pierna.</li>\n</ul>",
+     "entiende": "Las ortoprótesis <strong>sustituyen</strong> una parte (prótesis) o <strong>ayudan</strong> a que funcione mejor (órtesis, como una férula).",
+     "truco": "<strong>ORTO = corregir; PRÓTESIS = sustituir.</strong>",
+     "q": "Define ortoprótesis y nombra otras terapias.",
+     "n": 90
+    }
+   ],
+   "min": 60
+  }
+ ],
+ "trampas": [
+  [
+   "<strong>Agente patógeno</strong> (externo, directo)",
+   "<strong>Factor patógeno</strong> (nace de otro proceso)",
+   "Agente = ataca directo"
+  ],
+  [
+   "<strong>Estímulo</strong> (respuesta fisiológica)",
+   "<strong>Agente patógeno</strong> (respuesta fisiopatológica)",
+   "Moderado vs dañino"
+  ],
+  [
+   "<strong>Necrosis</strong> (se hincha, inflamación)",
+   "<strong>Apoptosis</strong> (se encoge, sin inflamación)",
+   "eNorme vs se Achica"
+  ],
+  [
+   "<strong>Autolisis</strong> (sus propias enzimas)",
+   "<strong>Heterólisis</strong> (enzimas de otras células)",
+   "Auto = yo; hetero = otro"
+  ],
+  [
+   "<strong>Cariorrexis</strong> (fragmentación, según las imágenes)",
+   "<strong>Cariolisis</strong> (disolución)",
+   "⚠️ La diapositiva 26 las tiene cruzadas"
+  ],
+  [
+   "<strong>Hipertrofia</strong> (células más grandes)",
+   "<strong>Hiperplasia</strong> (más células)",
+   "TROFIA = tamaño; PLASIA = número"
+  ],
+  [
+   "<strong>Metaplasia</strong> (un tipo adulto se cambia por otro, reversible)",
+   "<strong>Displasia</strong> (maduración anormal, ADN alterado)",
+   "Meta = cambio; Dis = mal"
+  ],
+  [
+   "<strong>Metaplasia y displasia: no son neoplasias</strong>",
+   "Cáncer",
+   "Pero pueden evolucionar a él"
+  ],
+  [
+   "<strong>Necrosis caseosa</strong> (tuberculosis)",
+   "<strong>Necrosis grasa</strong> (adipocitos)",
+   "Caseosa = queso"
+  ],
+  [
+   "<strong>Coagulativa</strong> + infección bacteriana",
+   "= <strong>gangrenosa</strong>",
+   ""
+  ],
+  [
+   "<strong>Quiescentes</strong> (hígado, riñón…)",
+   "<strong>Permanentes</strong> (neuronas, músculo estriado)",
+   "Quietas pero pueden vs nunca"
+  ],
+  [
+   "<strong>Músculo liso</strong> = quiescente",
+   "<strong>Músculo estriado</strong> = permanente",
+   ""
+  ],
+  [
+   "<strong>Etiología</strong> (causa)",
+   "<strong>Patogenia</strong> (mecanismo)",
+   "Por qué vs cómo"
+  ],
+  [
+   "<strong>Signo</strong> (objetivo, se mide)",
+   "<strong>Síntoma</strong> (sensación)",
+   "Se mide vs lo siento"
+  ],
+  [
+   "<strong>Cuadro clínico</strong> (enfermedad conocida)",
+   "<strong>Síndrome</strong> (no se corresponde)",
+   ""
+  ],
+  [
+   "<strong>Aguda &lt; 3 meses</strong>",
+   "<strong>Subaguda 3-6 · Crónica &gt; 6</strong>",
+   ""
+  ],
+  [
+   "<strong>Incubación</strong> (infecciosas, rápida)",
+   "<strong>Latencia</strong> (degenerativas, larga)",
+   ""
+  ],
+  [
+   "<strong>Diagnóstico presuntivo</strong> (anamnesis + examen físico)",
+   "<strong>Diagnóstico definitivo</strong> (pruebas complementarias)",
+   ""
+  ],
+  [
+   "<strong>Timpánico</strong> (neumotórax)",
+   "<strong>Mate</strong> (neumonía)",
+   "Tambor vs macizo"
+  ],
+  [
+   "<strong>RM</strong> (imanes, sin radiación)",
+   "<strong>TC</strong> (rayos X + ordenador)",
+   ""
+  ],
+  [
+   "<strong>Citología</strong> (células)",
+   "<strong>Biopsia</strong> (fragmentos de tejido)",
+   ""
+  ],
+  [
+   "<strong>Curativa</strong>",
+   "<strong>Paliativa</strong> (alivia)",
+   ""
+  ]
+ ],
+ "numeros": [
+  [
+   "31-41 ºC",
+   "Intervalo de temperatura que toleran las células"
+  ],
+  [
+   "3",
+   "Tipos de agentes patógenos (físicos, químicos, biológicos)"
+  ],
+  [
+   "2 + 3",
+   "Factores patógenos: hipoxia y oxidación + inmunológicos, genéticos y nutricionales"
+  ],
+  [
+   "3",
+   "Causas de hipoxia"
+  ],
+  [
+   "4",
+   "Respuestas celulares adaptativas (atrofia, hipertrofia, metaplasia, displasia)"
+  ],
+  [
+   "4",
+   "Tipos de necrosis tisular (coagulativa, licuefactiva, grasa, caseosa)"
+  ],
+  [
+   "5",
+   "Procesos patológicos fundamentales"
+  ],
+  [
+   "3",
+   "Tipos de tejido según la proliferación (lábiles, quiescentes, permanentes)"
+  ],
+  [
+   "5",
+   "Ramas de la patología"
+  ],
+  [
+   "&lt; 3 meses / 3-6 meses / &gt; 6 meses",
+   "Aguda / subaguda / crónica"
+  ],
+  [
+   "3 fases",
+   "Prepatogénica, patogénica (2 periodos) y clínica (3 periodos)"
+  ],
+  [
+   "4",
+   "Técnicas del examen físico (inspección, palpación, auscultación, percusión)"
+  ],
+  [
+   "4",
+   "Sonidos de la percusión (sonoro, hipersonoro, timpánico, mate)"
+  ],
+  [
+   "5",
+   "Técnicas de imagen"
+  ],
+  [
+   "3",
+   "Técnicas de electrodiagnóstico (ECG, EEG, EMG)"
+  ],
+  [
+   "8 parejas",
+   "Tipos de medidas terapéuticas"
+  ]
+ ],
+ "chequeo": [
+  "¿Qué tres tipos de cambios provoca un proceso patológico? (Bloque 1)",
+  "¿Agente o factor patógeno: la hipoxia por una trombosis? (Bloque 1)",
+  "¿Cuáles son las tres causas de la hipoxia? (Bloque 2)",
+  "¿Qué tres daños hacen los radicales libres cuando falla la protección? (Bloque 2)",
+  "¿Qué 4 cosas mantienen la homeostasis de la célula? (Bloque 3)",
+  "¿Qué es la autolisis? ¿Y la heterólisis? (Bloque 3)",
+  "¿En qué se diferencia la metaplasia de la displasia? (Bloque 4)",
+  "¿Qué necrosis es típica de la tuberculosis? (Bloque 5)",
+  "¿Qué es la pseudohipertrofia? (Bloque 6)",
+  "¿Cuáles son los signos de la inflamación? ¿Qué son los tejidos permanentes? (Bloque 7)",
+  "¿Qué diferencia hay entre etiología y patogenia? ¿Y entre signo y síntoma? (Bloque 8)",
+  "¿Cuánto dura una enfermedad subaguda? ¿Qué es una enfermedad endémica? (Bloque 9)",
+  "¿Qué es el periodo prodrómico? (Bloque 10)",
+  "¿Qué sonido da la percusión en la neumonía? (Bloque 11)",
+  "¿Qué técnica de imagen no tiene radiación y se usa en tiempo real? (Bloque 12)",
+  "¿Qué es una secuela? ¿Qué células sanas daña la quimioterapia? (Bloque 13)"
+ ],
+ "impres": [
+  {
+   "titulo": "Agentes y factores patógenos",
+   "items": [
+    [
+     "¿Proceso patológico?",
+     "Proceso que provoca <strong>cambios estructurales, bioquímicos o funcionales</strong> del organismo."
+    ],
+    [
+     "¿Agente patógeno?",
+     "<strong>Externo</strong>, actúa <strong>directamente sobre la célula</strong>: <strong>físicos, químicos, biológicos</strong>."
+    ],
+    [
+     "¿Factor patógeno?",
+     "<strong>Se genera a partir de otros procesos</strong> (hipoxia por trombosis). Son <strong>hipoxia, oxidación</strong> + <strong>inmunológicos, genéticos, nutricionales</strong>."
+    ],
+    [
+     "¿Agentes físicos?",
+     "<strong>Temperatura</strong> (31-41 ºC), <strong>presión atmosférica</strong>, <strong>electricidad</strong> (electroporación → edema; lesión térmica → necrosis), <strong>radiaciones</strong> (mutaciones, tumores, teratogenia) y <strong>traumatismos</strong>."
+    ],
+    [
+     "¿Químicos y biológicos?",
+     "<strong>Químicos:</strong> fármacos, reactivos, desinfectantes, pesticidas, humos. <strong>Biológicos:</strong> microorganismos, endoparásitos y sus secreciones → <strong>infección, alergia o toxicidad</strong>."
+    ],
+    [
+     "¿Hipoxia y sus causas?",
+     "<strong>Falta de oxígeno → muerte celular.</strong> Pérdida de <strong>riego</strong> · pérdida de <strong>capacidad transportadora de O2</strong> (anemia) · <strong>oxigenación inadecuada</strong> (insuficiencia respiratoria o cardiaca)."
+    ],
+    [
+     "¿Radicales libres?",
+     "<strong>Muy reactivos, introducen oxígeno</strong> → oxidación y daño del <strong>ADN</strong>. Se forman ante <strong>radiaciones ionizantes, traumatismo, tejidos isquémicos</strong>. Dañan <strong>membrana (peroxidación lipídica), enzimas y ADN</strong>."
+    ]
+   ]
+  },
+  {
+   "titulo": "La célula: salud, lesión y muerte",
+   "items": [
+    [
+     "¿Homeostasis celular?",
+     "Mantenida por <strong>membrana, secreción, energía (autonomía) y mitosis</strong>."
+    ],
+    [
+     "¿Estímulo vs agente patógeno?",
+     "<strong>Estímulo:</strong> respuesta <strong>fisiológica</strong> (cambios moderados). <strong>Agente:</strong> respuesta <strong>fisiopatológica</strong> (lesión)."
+    ],
+    [
+     "¿Dónde se lesiona la célula?",
+     "<strong>Membrana, respiración celular, síntesis de proteínas, reproducción.</strong>"
+    ],
+    [
+     "¿Lesión reversible?",
+     "<strong>Desaparece cuando el agente deja de actuar</strong> (edema celular, bomba Na/K, ATP)."
+    ],
+    [
+     "¿Lesión irreversible?",
+     "Fragmentación de la <strong>membrana</strong>, lisis del <strong>retículo</strong>, disfunción <strong>mitocondrial</strong>, alteraciones del <strong>núcleo</strong>."
+    ],
+    [
+     "¿Picnosis, cariorrexis, cariolisis?",
+     "<strong>Picnosis:</strong> núcleo se retrae y condensa. <strong>Cariorrexis:</strong> se fragmenta. <strong>Cariolisis:</strong> se disuelve. ⚠️ La diapositiva 26 tiene cruzadas las dos últimas."
+    ],
+    [
+     "¿Necrosis celular?",
+     "Proceso <strong>no fisiológico</strong> por un <strong>agente externo</strong> que lleva a la muerte celular: <strong>desnaturalización de proteínas</strong> + <strong>digestión enzimática</strong> (<strong>autolisis</strong> propias / <strong>heterólisis</strong> de otras células)."
+    ],
+    [
+     "¿Necrosis vs apoptosis?",
+     "<strong>Necrosis:</strong> se <strong>hincha</strong>, se rompe → <strong>inflamación</strong>. <strong>Apoptosis:</strong> se <strong>encoge</strong> → cuerpos apoptóticos → <strong>fagocitosis</strong>."
+    ]
+   ]
+  },
+  {
+   "titulo": "Adaptaciones celulares y tisulares",
+   "items": [
+    [
+     "¿Atrofia?",
+     "<strong>Disminución de tamaño y función</strong> por pérdida de sustancia."
+    ],
+    [
+     "¿Hipertrofia?",
+     "<strong>Aumento de tamaño</strong> por aumento de <strong>masa protoplasmática</strong>, con más función (más demanda o estímulo endocrino)."
+    ],
+    [
+     "¿Metaplasia?",
+     "<strong>Un tipo celular adulto se transforma en otro</strong>; reversible si cesa el estímulo. <strong>No es neoplasia.</strong>"
+    ],
+    [
+     "¿Displasia?",
+     "<strong>Aspecto anormal</strong> por alteración de la <strong>maduración</strong> (ADN alterado). No es neoplasia pero <strong>puede evolucionar</strong> a ella."
+    ],
+    [
+     "¿Reducción del tejido?",
+     "<strong>Atrofia simple</strong> (células pequeñas) · <strong>numérica</strong> (menos células) · <strong>pseudoatrofia</strong> (parte necrosada)."
+    ],
+    [
+     "¿Aumento del tejido?",
+     "<strong>Hipertrofia estricta</strong> (células grandes) · <strong>hiperplasia</strong> (más células) · <strong>pseudohipertrofia</strong> (grasa, edema o células neoplásicas; ej. gemelar)."
+    ]
+   ]
+  },
+  {
+   "titulo": "Necrosis tisular y reparación",
+   "items": [
+    [
+     "¿Destinos del tejido necrótico?",
+     "<strong>Expulsión</strong>, <strong>reparación</strong> (fagocitosis + renovación) o <strong>aislamiento</strong> (calcificación o encapsulación)."
+    ],
+    [
+     "¿Tipos de necrosis?",
+     "<strong>Coagulativa</strong> (isquemia; + bacterias = <strong>gangrenosa</strong>) · <strong>licuefactiva</strong> (líquida y viscosa) · <strong>grasa</strong> (adipocitos → ácidos grasos) · <strong>caseosa</strong> (coagulativa + licuefactiva; <strong>tuberculosis</strong>)."
+    ],
+    [
+     "¿5 procesos fundamentales?",
+     "<strong>Edema, inflamación</strong> (hinchazón, dolor, calor, enrojecimiento), <strong>tumoración, necrosis, ulceración</strong>."
+    ],
+    [
+     "¿Tejidos según proliferación?",
+     "<strong>Lábiles</strong> (siempre: piel, mucosas, médula) · <strong>quiescentes</strong> (si hay estímulo: hígado, riñón…) · <strong>permanentes</strong> (G0: neuronas y músculo estriado)."
+    ],
+    [
+     "¿Fibrosis?",
+     "<strong>Exceso de tejido conectivo fibroso</strong> por reparación <strong>cuando falla la proliferación</strong>; el órgano <strong>pierde función</strong>."
+    ]
+   ]
+  },
+  {
+   "titulo": "Estudio de la enfermedad",
+   "items": [
+    [
+     "¿Patología?",
+     "<strong>Rama de la medicina encargada de los procesos patológicos.</strong>"
+    ],
+    [
+     "¿Ramas?",
+     "<strong>Etiología</strong> (causa) · <strong>patogenia</strong> (mecanismo) · <strong>semiología</strong> (manifestaciones) · <strong>anatomía patológica</strong> (alteraciones estructurales) · <strong>fisiopatología</strong> (alteraciones funcionales)."
+    ],
+    [
+     "¿Signo, síntoma, cuadro clínico, síndrome?",
+     "<strong>Signo:</strong> objetivo, cuantificable. <strong>Síntoma:</strong> sensación. <strong>Cuadro clínico:</strong> conjunto → enfermedad conocida. <strong>Síndrome:</strong> no se corresponde."
+    ],
+    [
+     "¿Términos clínicos?",
+     "<strong>Prefijo + raíz</strong> (poli-uria) · <strong>raíz + sufijo</strong> (artr-itis) · <strong>epónimos</strong> (nombres de persona o lugar) · <strong>siglas y acrónimos</strong> (pueden dar errores)."
+    ]
+   ]
+  },
+  {
+   "titulo": "La enfermedad",
+   "items": [
+    [
+     "¿Enfermedad?",
+     "<strong>Alteración o desviación del estado fisiológico</strong> en una o varias partes del cuerpo, por <strong>causas en general conocidas</strong>, con <strong>síntomas y signos característicos</strong> y <strong>evolución más o menos previsible</strong>."
+    ],
+    [
+     "¿Nosología?",
+     "Parte de la medicina que <strong>describe, explica, diferencia y clasifica</strong> las enfermedades."
+    ],
+    [
+     "¿Clasificación por el agente?",
+     "Intrínseca/extrínseca · genética/adquirida · uni/multifactorial · agente conocido/desconocido · efecto inmediato/tardío · directa/indirecta."
+    ],
+    [
+     "¿Por duración?",
+     "<strong>Aguda &lt; 3 meses · subaguda 3-6 · crónica &gt; 6.</strong>"
+    ],
+    [
+     "¿Fases?",
+     "<strong>Prepatogénica</strong> (sin cambios) → <strong>patogénica</strong> (cambios sin síntomas: <strong>incubación</strong> en infecciosas / <strong>latencia</strong> en degenerativas) → <strong>clínica</strong> (<strong>prodrómico</strong>, <strong>clínico</strong>, <strong>resolución</strong>)."
+    ]
+   ]
+  },
+  {
+   "titulo": "Diagnóstico y tratamiento",
+   "items": [
+    [
+     "¿Diagnóstico, patognomónico, pronóstico?",
+     "<strong>Identificación</strong> de la enfermedad · signo que <strong>permite diagnóstico directo</strong> (Koplik-sarampión, Negri-rabia, tofo-gota) · <strong>juicio hipotético</strong> sobre cómo terminará."
+    ],
+    [
+     "¿Métodos clínicos?",
+     "<strong>Anamnesis + examen físico</strong> (inspección, palpación, auscultación, percusión) → <strong>diagnóstico presuntivo</strong>."
+    ],
+    [
+     "¿Percusión?",
+     "<strong>Sonoro</strong> (normal) · <strong>hipersonoro</strong> (enfisema) · <strong>timpánico</strong> (neumotórax) · <strong>mate</strong> (neumonía)."
+    ],
+    [
+     "¿Métodos complementarios?",
+     "Confirmar/descartar, más datos, diagnóstico diferencial → <strong>diagnóstico definitivo</strong>. Son: <strong>análisis clínicos, citología/anatomía patológica, imagen, electrodiagnóstico</strong>."
+    ],
+    [
+     "¿Imagen?",
+     "<strong>Radiografía</strong> (rayos X) · <strong>ecografía</strong> (ultrasonidos, sin riesgo) · <strong>RM</strong> (imanes, sin radiación, cara) · <strong>TC</strong> (rayos X + ordenador, cortes) · <strong>endoscopia</strong> (ver, muestras, tratar)."
+    ],
+    [
+     "¿Electrodiagnóstico?",
+     "<strong>ECG</strong> (corazón) · <strong>EEG</strong> (encéfalo: epilepsia, tumores, anestesia, sueño) · <strong>EMG</strong> (músculos)."
+    ],
+    [
+     "¿Secuela?",
+     "<strong>Trastorno que persiste después de la curación.</strong>"
+    ],
+    [
+     "¿Recursos terapéuticos?",
+     "Medidas higiénicas, farmacoterapia, quimioterapia, radioterapia, sueroterapia, dietoterapia, fisioterapia, cirugía, ortoprótesis y otras."
+    ]
+   ]
+  }
+ ],
+ "glosario": [
+  [
+   "Acrónimo",
+   "Palabra formada con trozos de otras palabras."
+  ],
+  [
+   "Adaptación celular",
+   "Cambio de la célula para recuperar el equilibrio (atrofia, hipertrofia, metaplasia, displasia)."
+  ],
+  [
+   "Agente etiológico",
+   "El agente concreto identificado como causa de una enfermedad."
+  ],
+  [
+   "Agente patógeno",
+   "Agente externo que actúa directamente sobre la célula (físico, químico o biológico)."
+  ],
+  [
+   "Anamnesis",
+   "Preguntas sobre historia clínica, hábitos de vida y antecedentes familiares."
+  ],
+  [
+   "Anatomía patológica",
+   "Rama que estudia las alteraciones estructurales y orgánicas provocadas por el proceso."
+  ],
+  [
+   "Apoptosis",
+   "Muerte celular programada: la célula se encoge y forma cuerpos apoptóticos que se fagocitan, sin inflamación."
+  ],
+  [
+   "Atrofia",
+   "Disminución de tamaño y de función celular por pérdida de sustancia."
+  ],
+  [
+   "Auscultación",
+   "Escuchar los ruidos del cuerpo (con el fonendo)."
+  ],
+  [
+   "Autolisis",
+   "Digestión de la célula por sus propias enzimas lisosomales."
+  ],
+  [
+   "Biopsia",
+   "Fragmento de tejido para su estudio."
+  ],
+  [
+   "Cariolisis",
+   "Disolución y desaparición del núcleo (⚠️ la diapositiva 26 la llama «fragmentación de la cromatina»)."
+  ],
+  [
+   "Cariorrexis",
+   "Fragmentación del núcleo (⚠️ la diapositiva 26 la llama «desaparición del núcleo»)."
+  ],
+  [
+   "Citología",
+   "Estudio de muestras biológicas formadas por células."
+  ],
+  [
+   "Complicación",
+   "Problema médico que aparece durante una enfermedad o tras un procedimiento o tratamiento."
+  ],
+  [
+   "Cuadro clínico",
+   "Conjunto de signos y síntomas."
+  ],
+  [
+   "Diagnóstico",
+   "Identificación de la enfermedad."
+  ],
+  [
+   "Diagnóstico definitivo",
+   "Conclusión diagnóstica: establece con certeza la enfermedad."
+  ],
+  [
+   "Diagnóstico diferencial",
+   "Distinguir entre enfermedades parecidas."
+  ],
+  [
+   "Diagnóstico presuntivo (clínico)",
+   "El que se obtiene con la anamnesis y el examen físico."
+  ],
+  [
+   "Displasia",
+   "Anormalidad en el aspecto de las células por alteración de la maduración."
+  ],
+  [
+   "Edema",
+   "Acumulación anormal de líquidos en el tejido."
+  ],
+  [
+   "Electroporación",
+   "Daño de la membrana por la corriente eléctrica → edema celular."
+  ],
+  [
+   "Endémica",
+   "Enfermedad que aparece de forma habitual en una región."
+  ],
+  [
+   "Epónimo",
+   "Término asociado al nombre de una persona o lugar."
+  ],
+  [
+   "Esporádica",
+   "Enfermedad que aparece de vez en cuando."
+  ],
+  [
+   "Etiología",
+   "Causa u origen del proceso."
+  ],
+  [
+   "Factor patógeno",
+   "Proceso que se genera a partir de otro y causa daño celular (hipoxia, oxidación…)."
+  ],
+  [
+   "Fibrosis",
+   "Desarrollo en exceso de tejido conectivo fibroso fruto de un proceso reparativo."
+  ],
+  [
+   "Fisiopatología",
+   "Rama que estudia las alteraciones en las funciones fisiológicas."
+  ],
+  [
+   "Heterólisis",
+   "Digestión de la célula por enzimas de otras células."
+  ],
+  [
+   "Hiperplasia",
+   "Aumento del número de células (hipertrofia numérica)."
+  ],
+  [
+   "Hipertrofia",
+   "Aumento del tamaño celular por aumento de la masa protoplasmática."
+  ],
+  [
+   "Hipoxia",
+   "Falta de oxígeno."
+  ],
+  [
+   "Homeostasis",
+   "Equilibrio interno: el estado de salud de la célula."
+  ],
+  [
+   "Inflamación",
+   "Respuesta defensiva local: hinchazón, dolor, calor y enrojecimiento."
+  ],
+  [
+   "Isquemia",
+   "Falta de riego sanguíneo."
+  ],
+  [
+   "Lábil (tejido)",
+   "Tejido cuyas células se dividen constantemente."
+  ],
+  [
+   "Metaplasia",
+   "Transformación de un tipo celular adulto en otro."
+  ],
+  [
+   "Necrosis",
+   "Muerte celular no fisiológica causada por un agente externo."
+  ],
+  [
+   "Neoplasia",
+   "Tumor."
+  ],
+  [
+   "Nosología",
+   "Parte de la medicina que describe, explica, diferencia y clasifica las enfermedades."
+  ],
+  [
+   "Palpación",
+   "Explorar tocando con las manos."
+  ],
+  [
+   "Paliativo",
+   "Que alivia sin curar."
+  ],
+  [
+   "Patogenia",
+   "Mecanismo de acción del agente."
+  ],
+  [
+   "Patognomónico",
+   "Signo característico de una enfermedad que permite el diagnóstico directo."
+  ],
+  [
+   "Patología",
+   "Rama de la medicina encargada de los procesos patológicos."
+  ],
+  [
+   "Percusión",
+   "Golpear con los dedos para escuchar el sonido (sonoro, hipersonoro, timpánico, mate)."
+  ],
+  [
+   "Permanente (tejido)",
+   "Tejido cuyas células están en G0 y no hacen mitosis."
+  ],
+  [
+   "Peroxidación lipídica",
+   "Daño de las grasas de la membrana por los radicales libres."
+  ],
+  [
+   "Picnosis",
+   "Retracción del núcleo con condensación de la cromatina."
+  ],
+  [
+   "Posología",
+   "Dosis, frecuencia y duración de un medicamento."
+  ],
+  [
+   "Pródromos",
+   "Síntomas inespecíficos del inicio (fiebre, malestar, cefalea)."
+  ],
+  [
+   "Pronóstico",
+   "Juicio hipotético sobre la terminación probable de una enfermedad."
+  ],
+  [
+   "Pseudohipertrofia",
+   "Aumento de tamaño por invasión de grasa, líquido o células neoplásicas."
+  ],
+  [
+   "Quiescente (tejido)",
+   "Tejido de células estables que pueden dividirse ante estímulos."
+  ],
+  [
+   "Radicales libres",
+   "Sustancias muy reactivas que oxidan las células y alteran el ADN."
+  ],
+  [
+   "Secuela",
+   "Trastorno que persiste después de la curación."
+  ],
+  [
+   "Semiología",
+   "Rama que estudia las manifestaciones clínicas."
+  ],
+  [
+   "Signo",
+   "Manifestación objetiva y cuantificable."
+  ],
+  [
+   "Síndrome",
+   "Cuadro clínico que no se corresponde con una enfermedad conocida."
+  ],
+  [
+   "Síntoma",
+   "Manifestación que es una sensación."
+  ],
+  [
+   "Teratogénico",
+   "Que causa malformaciones en el feto."
+  ],
+  [
+   "Tumoración",
+   "Crecimiento anormal de tejido."
+  ],
+  [
+   "Ulceración",
+   "Lesión abierta con pérdida de sustancia en piel o mucosas."
+  ]
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "hoja",
+   "html": "<section class=\"xs\" id=\"hoja\"><h2 class=\"xs-h\">📝 Preguntas tipo examen, resueltas</h2><p><strong>Ojo:</strong> para esta unidad no hay hoja de preguntas de la profe. Estas son las preguntas más probables, con respuesta modelo. Contéstalas de memoria antes de abrir cada respuesta.</p><details class=\"pq\"><summary><span class=\"pn\">P1</span> Define proceso patológico y diferencia agente patógeno de factor patógeno.</summary><div class=\"pa\"><p><strong>Proceso patológico:</strong> proceso que provoca <strong>cambios estructurales, bioquímicos o funcionales</strong> del organismo. <strong>Agentes patógenos:</strong> externos, <strong>actúan directamente sobre la célula</strong> (virus, sustancia química, radiación). <strong>Factores patógenos:</strong> <strong>se generan a partir de otros procesos</strong> (hipoxia por falta de irrigación por una trombosis). <span class=\"ref\">→ conceptos 1 y 2.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P2</span> Clasifica los agentes patógenos y pon ejemplos.</summary><div class=\"pa\"><p><strong>Físicos:</strong> temperatura (fuera de 31-41 ºC), presión atmosférica, electricidad (electroporación y lesión térmica), radiaciones (mutaciones, tumores, teratogenia) y traumatismos. <strong>Químicos:</strong> cualquier sustancia que cause lesión celular directa (fármacos, reactivos, desinfectantes, pesticidas, humos). <strong>Biológicos:</strong> microorganismos, endoparásitos y sus sustancias o secreciones; provocan infección, alergia o toxicidad. <span class=\"ref\">→ conceptos 3-9.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P3</span> ¿Qué es la hipoxia? Explica sus causas.</summary><div class=\"pa\"><p><strong>Falta de oxígeno → muerte celular.</strong> Causas: <strong>pérdida de riego sanguíneo</strong> (traumatismo, trombosis, embolia), <strong>pérdida de capacidad transportadora de O2 de la sangre</strong> (anemia, alteraciones enzimáticas) y <strong>oxigenación inadecuada del organismo</strong> (insuficiencia respiratoria o cardiaca). <span class=\"ref\">→ concepto 11.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P4</span> ¿Qué son los radicales libres? ¿Qué daños producen?</summary><div class=\"pa\"><p><strong>Sustancias químicas muy reactivas que introducen oxígeno en las células, produciendo oxidación y alteraciones en el ADN.</strong> Se forman ante radiaciones ionizantes, traumatismos y tejidos isquémicos. Si falla la protección: <strong>daños en membrana (peroxidación lipídica)</strong>, <strong>inactivación de enzimas protectoras</strong> y <strong>fragmentación del ADN</strong>. <span class=\"ref\">→ conceptos 12 y 13.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P5</span> Diferencia lesión reversible e irreversible y pon ejemplos.</summary><div class=\"pa\"><p><strong>Reversible:</strong> desaparece cuando el agente deja de actuar (edema celular, bomba Na/K, síntesis de ATP). <strong>Irreversible:</strong> una reversible mantenida puede hacerse irreversible, y otras lo son de por sí; algunas llevan a la muerte celular: fragmentación de la membrana, lisis del retículo, disfunción mitocondrial, alteraciones del núcleo (picnosis, cariolisis, cariorrexis). <span class=\"ref\">→ conceptos 21-23.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P6</span> Define necrosis celular y compárala con la apoptosis.</summary><div class=\"pa\"><p><strong>Necrosis:</strong> proceso <strong>no fisiológico</strong> causado por un <strong>agente externo</strong> que conduce a la muerte celular; mecanismos: <strong>desnaturalización de proteínas</strong> y <strong>digestión enzimática</strong> (autolisis: enzimas propias; heterólisis: de otras células). <strong>Necrosis:</strong> la célula <strong>se hincha</strong>, se filtra el contenido → <strong>inflamación</strong>. <strong>Apoptosis:</strong> <strong>se encoge</strong>, condensa la cromatina, colapsa el núcleo → <strong>cuerpos apoptóticos</strong> y <strong>fagocitosis</strong>, sin inflamación. <span class=\"ref\">→ conceptos 24 y 25.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P7</span> Explica las cuatro respuestas celulares adaptativas.</summary><div class=\"pa\"><p><strong>Atrofia:</strong> disminución de tamaño y función por pérdida de sustancia. <strong>Hipertrofia:</strong> aumento de tamaño por aumento de masa protoplasmática, con más función. <strong>Metaplasia:</strong> transformación de un tipo celular adulto en otro (reversible si cesa el estímulo). <strong>Displasia:</strong> anormalidad en el aspecto de las células por alteración de la maduración (modificación irreversible del ADN). <span class=\"ref\">→ conceptos 26-30.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P8</span> Tipos de necrosis tisular según su mecanismo.</summary><div class=\"pa\"><p><strong>Coagulativa:</strong> coagulación de proteínas por isquemia (+ infección bacteriana → <strong>gangrenosa</strong>). <strong>Licuefactiva:</strong> degeneración rápida, zona líquida y viscosa. <strong>Grasa:</strong> rotura de adipocitos → liberación de ácidos grasos → acidificación que daña membranas. <strong>Caseosa:</strong> mezcla de coagulativa y licuefactiva, típica de la <strong>tuberculosis</strong>. <span class=\"ref\">→ conceptos 33-36.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P9</span> Diferencia atrofia simple, numérica y pseudoatrofia; e hipertrofia estricta, hiperplasia y pseudohipertrofia.</summary><div class=\"pa\"><p><strong>Atrofia simple:</strong> atrofia celular → tisular. <strong>Numérica:</strong> menos células. <strong>Pseudoatrofia:</strong> parte del tejido necrosado. <strong>Hipertrofia estricta:</strong> hipertrofia celular. <strong>Hiperplasia:</strong> más células. <strong>Pseudohipertrofia:</strong> invasión de grasa, líquido (edema) o células neoplásicas (ejemplo: pseudohipertrofia gemelar). <span class=\"ref\">→ conceptos 37 y 38.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P10</span> Define los 5 procesos patológicos fundamentales.</summary><div class=\"pa\"><p><strong>Edema:</strong> acumulación anormal de líquidos en el tejido. <strong>Inflamación:</strong> respuesta defensiva local (hinchazón, dolor, calor y enrojecimiento). <strong>Tumoración:</strong> crecimiento anormal de tejido (nódulos benignos o malignos). <strong>Necrosis:</strong> muerte celular en esa parte del tejido. <strong>Ulceración:</strong> lesión abierta con pérdida de sustancia en piel o mucosas. <span class=\"ref\">→ concepto 41.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P11</span> Clasifica los tejidos según su capacidad de proliferación, con ejemplos.</summary><div class=\"pa\"><p><strong>Lábiles:</strong> se dividen constantemente (piel, mucosas, glándulas, tejido hematopoyético). <strong>Quiescentes:</strong> estables, se dividen ante estímulos (hígado, riñón, páncreas, fibroblastos, endotelio, músculo liso, condrocitos, osteocitos). <strong>Permanentes:</strong> en G0, no hacen mitosis (neuronas y músculo estriado; la lesión cardíaca se sustituye por cicatriz). Si la proliferación falla → <strong>fibrosis</strong>. <span class=\"ref\">→ conceptos 42-46.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P12</span> Define las ramas de la patología.</summary><div class=\"pa\"><p><strong>Etiología:</strong> causa u origen. <strong>Patogenia:</strong> mecanismo de acción del agente. <strong>Semiología:</strong> manifestaciones clínicas. <strong>Anatomía patológica:</strong> alteraciones estructurales y orgánicas. <strong>Fisiopatología:</strong> alteraciones en funciones fisiológicas. <span class=\"ref\">→ concepto 48.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P13</span> Diferencia signo, síntoma, cuadro clínico y síndrome.</summary><div class=\"pa\"><p><strong>Signos:</strong> objetivos y cuantificables. <strong>Síntomas:</strong> sensaciones. <strong>Cuadro clínico:</strong> conjunto de signos y síntomas; se corresponde con una enfermedad conocida. <strong>Síndrome:</strong> cuando no se corresponde con una enfermedad conocida. <span class=\"ref\">→ concepto 51.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P14</span> Define enfermedad y nosología.</summary><div class=\"pa\"><p><strong>Enfermedad:</strong> alteración o desviación del estado fisiológico en una o varias partes del cuerpo, por causas en general conocidas, manifestada por síntomas y signos característicos, y cuya evolución es más o menos previsible. <strong>Nosología:</strong> parte de la medicina que describe, explica, diferencia y clasifica las enfermedades. <span class=\"ref\">→ conceptos 55 y 57.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P15</span> Clasifica las enfermedades según su duración y según el agente.</summary><div class=\"pa\"><p><strong>Duración:</strong> aguda (&lt; 3 meses), subaguda (3-6 meses), crónica (&gt; 6 meses). <strong>Agente:</strong> intrínseca/extrínseca, genética/adquirida, unifactorial/multifactorial, de agente conocido/desconocido, de efecto inmediato/tardío, directa/indirecta. <span class=\"ref\">→ conceptos 58 y 59.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P16</span> Explica las fases del desarrollo de la enfermedad.</summary><div class=\"pa\"><p><strong>Prepatogénica:</strong> ha iniciado pero sin manifestaciones ni cambios. <strong>Patogénica:</strong> cambios celulares/tisulares/orgánicos sin síntomas: <strong>subclínico (incubación</strong>, infecciosas, rápido) y <strong>latencia</strong> (degenerativas, largo). <strong>Clínica:</strong> signos y síntomas, se pide ayuda: <strong>prodrómico</strong> (síntomas inespecíficos: pródromos), <strong>clínico</strong> y <strong>resolución</strong> (desaparición, cronificación o muerte). <span class=\"ref\">→ conceptos 60-63.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P17</span> Define diagnóstico, signo patognomónico y pronóstico, con ejemplos.</summary><div class=\"pa\"><p><strong>Diagnóstico:</strong> identificación de la enfermedad. <strong>Signo patognomónico:</strong> característico de una enfermedad, permite diagnóstico directo (manchas de Koplik → sarampión; cuerpos de Negri → rabia; tofo → gota). <strong>Pronóstico:</strong> juicio hipotético acerca de la terminación probable de una enfermedad. <span class=\"ref\">→ concepto 65.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P18</span> Explica los métodos clínicos de diagnóstico y los sonidos de la percusión.</summary><div class=\"pa\"><p><strong>Anamnesis</strong> (preguntas sobre historia clínica, hábitos, antecedentes familiares) + <strong>examen físico</strong> (inspección, palpación, auscultación, percusión y constantes vitales) → <strong>diagnóstico clínico o presuntivo</strong>. Percusión: <strong>sonoro</strong> (pulmón normal), <strong>hipersonoro</strong> (enfisema o neumotórax), <strong>timpánico</strong> (neumotórax), <strong>mate</strong> (neumonía). <span class=\"ref\">→ conceptos 66-68.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P19</span> Compara las técnicas de diagnóstico por imagen.</summary><div class=\"pa\"><p><strong>Radiografía:</strong> rayos X (radiación ionizante), simple o con contraste. <strong>Ecografía:</strong> ultrasonidos, en tiempo real, sin riesgo. <strong>RM:</strong> imanes y ondas de radio, 2D y 3D, muy clara y sin radiación, cara y poco disponible. <strong>TC:</strong> rayos X + ordenador, cortes e imágenes 3D. <strong>Endoscopia:</strong> ver por dentro (rígida o flexible): observar, tomar muestras y tratar. <span class=\"ref\">→ conceptos 72-77.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P20</span> Define secuela, plan de tratamiento y cita los principales recursos terapéuticos.</summary><div class=\"pa\"><p><strong>Secuela:</strong> trastorno que persiste después de la curación. <strong>Plan de tratamiento:</strong> planificación de todas las medidas terapéuticas que se deberán aplicar para resolver un problema de salud. <strong>Recursos:</strong> medidas higiénicas, farmacoterapia, quimioterapia, radioterapia, sueroterapia, dietoterapia, fisioterapia, cirugía, ortoprótesis y otras terapias. <span class=\"ref\">→ conceptos 82-90.</span></p></div></details></section>",
+   "opcion": "📝 20 preguntas tipo examen",
+   "indice": "📝 20 preguntas tipo examen"
+  },
+  {
+   "id": "trampas",
+   "opcion": "⚠️ Trampas",
+   "indice": "⚠️ Trampas"
+  },
+  {
+   "id": "numeros",
+   "titulo": "🔢 Números clave",
+   "opcion": "🔢 Números clave",
+   "indice": "🔢 Números clave"
+  },
+  {
+   "id": "chequeo",
+   "opcion": "✅ Chequeo final",
+   "indice": "✅ Chequeo final"
+  },
+  {
+   "id": "impres",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "titulo": "📖 Glosario",
+   "opcion": "📖 Glosario",
+   "indice": "📖 Glosario"
+  }
+ ]
+}

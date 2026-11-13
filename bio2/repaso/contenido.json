@@ -1,0 +1,1713 @@
+{
+ "unidad": "bio2",
+ "titulo": "Bio 2 · Citogenética",
+ "eyebrow": "🧬 Biología Molecular · 2º examen",
+ "h1": "Repaso completo: citogenética y análisis cromosómico",
+ "sub": "Tema 3 · las 28 diapositivas en el mismo orden que el PowerPoint + casos prácticos resueltos · 9 bloques · 37 conceptos + 🔑 Bloque 10: preguntas llave",
+ "subHtml": "Tema 3 · las <b>28 diapositivas</b> en el mismo orden que el PowerPoint + casos prácticos resueltos · 9 bloques · 37 conceptos + 🔑 Bloque 10: preguntas llave",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene siempre las mismas partes, en este orden:</b></p>\n<ul><li><b>📍 Diapositiva</b>: de dónde sale.</li>\n<li><b>📘 Qué significa cada palabra</b>: primero <b>💡 Para entenderlo</b> (fácil) y después <b>📌 Definición de la diapositiva</b>, que es <b>la que tienes que dar en el examen</b>. Si pone <b>⚠️ La diapositiva no la define</b>, vale la definición general.</li>\n<li><b>📋 Lo que dice la profe</b>: el contenido del PowerPoint, completo.</li>\n<li><b>💡 Entiéndelo</b> y <b>🧠 Truco</b>: para comprenderlo y no olvidarlo.</li>\n<li><b>❓ Ponte a prueba</b>: contesta sin mirar. Si te sale, marca <b>Lo domino</b>.</li></ul>\n<p><b>Colores:</b> 🔴 imprescindible (sí o sí) · 🟠 importante · 🔵 basta con leerlo una vez.</p><p><b>Botones de la página:</b></p>\n<ul><li><b>☰ Índice</b> (abajo a la izquierda): todos los bloques y conceptos; toca uno para ir directo.</li>\n<li><b>💡 Tapar</b> (abajo a la derecha): tapa todas las definiciones; toca cada una para destaparla.</li>\n<li><b>🃏 Tarjetas</b>: pregunta por delante, respuesta por detrás. Elige bloque y practica.</li>\n<li><b>🔎 Buscar</b> (arriba): escribe cualquier palabra y toca el resultado.</li>\n<li><b>Ponte a prueba</b> (arriba): esconde las respuestas y deja solo las preguntas.</li></ul>\n<p><b>Orden recomendado:</b> bloques en orden → tarjetas de cada bloque → <b>🔑 Bloque 10 · preguntas llave</b> (de memoria) → trampas → Lo imprescindible.</p></div>",
+ "clave": "bio2-repaso-v1",
+ "examen": {
+  "em": "🧬",
+  "asig": "Biología Molecular",
+  "examen": "2º examen",
+  "fecha": ""
+ },
+ "simulacro": "bio2/simulacro/",
+ "tipografia": "Syne:wght@700",
+ "css": ".dl.b10{display:flex;align-items:center;gap:10px;margin-top:6px;background:#fff4d6;border-radius:10px;color:#8a5f00;font-weight:700}\n.dl.b10 .dn{background:#b07a00;color:#fff}\n@media (prefers-color-scheme:dark){:root:not([data-theme=\"light\"]) .dl.b10{background:#33270a;color:#ffc94d}}",
+ "buscar": [
+  [
+   "#hoja",
+   "Casos prácticos"
+  ],
+  [
+   "#llave",
+   "🔑 Preguntas llave"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "plan": {
+  "repaso": "[\n {t:\"🔁 Tarjetas: solo las que fallé\",d:\"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.\",m:20,u:\"#fc\",rev:1},\n {t:\"🔑 Preguntas llave de memoria\",d:\"Escribe las 5 preguntas llave <b>sin mirar</b> y corrígelas. Si no contestas la llave, el examen no vale.\",m:40,u:\"#llave\",rev:1},\n {t:\"🩹 Repasa lo que fallaste\",d:\"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a leer ese concepto.\",m:20,u:\"#hoja\",rev:1},\n {t:\"🧩 Casos prácticos de la profe\",d:\"Resuélvelos antes de abrir la respuesta. Es lo más parecido al examen.\",m:25,u:\"#hoja\",rev:1},\n {t:\"⚠️ Trampas y 🔢 números clave\",d:\"Las parejas que se confunden y las cifras (%, µm, mm/h…).\",m:20,u:\"#trampas\",rev:1},\n {t:\"⚡ Lo imprescindible\",d:\"Pregunta → respuesta corta. Lo último antes de dormir.\",m:20,u:\"#impres\",rev:1}]",
+  "unDia": "⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴, las 🔑 preguntas llave y \"Lo imprescindible\".",
+  "ultimoDia": [
+   " + Repaso final",
+   "Repaso final: preguntas llave y trampas"
+  ]
+ },
+ "bloques": [
+  {
+   "titulo": "El cromosoma",
+   "conceptos": [
+    {
+     "titulo": "Citogenética (portada)",
+     "lv": 3,
+     "fuente": "Diapositiva 1 (portada)",
+     "defs": [
+      {
+       "t": "Citogenética",
+       "facil": "Rama de la genética que estudia los cromosomas.",
+       "diapo": "Tema 3: Citogenética y análisis cromosómico."
+      },
+      {
+       "t": "Análisis cromosómico",
+       "facil": "Estudio del número y la forma de los cromosomas de una persona.",
+       "diapo": "Tema 3: Citogenética y análisis cromosómico."
+      }
+     ],
+     "prof": "<p>El Tema 3 es <strong>citogenética y análisis cromosómico</strong>: el estudio de los <strong>cromosomas</strong> (su número, forma y estructura) al microscopio.</p>",
+     "entiende": "La citogenética es la parte de la genética que <strong>mira los cromosomas al microscopio</strong>: cuántos hay y qué forma tienen, para detectar enfermedades (por ejemplo, el síndrome de Down tiene un cromosoma 21 de más).",
+     "truco": "<strong>cito = célula, genética = genes</strong> → «los genes vistos en la célula», es decir, los <strong>cromosomas</strong>.",
+     "q": "¿Qué estudia la citogenética?",
+     "n": 1
+    },
+    {
+     "titulo": "Definición de cromosoma",
+     "lv": 1,
+     "fuente": "Diapositiva 2",
+     "defs": [
+      {
+       "t": "ADN",
+       "facil": "La molécula que lleva la información genética.",
+       "diapo": "Cromosoma: material genético organizado que se compone de una molécula de ADN en interacción con proteínas."
+      },
+      {
+       "t": "Proteínas",
+       "facil": "Moléculas que forman y hacen funcionar la célula.",
+       "diapo": "Cromosoma: material genético organizado que se compone de una molécula de ADN en interacción con proteínas."
+      },
+      {
+       "t": "Histonas",
+       "facil": "Proteínas alrededor de las que se enrolla el ADN.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Nucleosoma",
+       "facil": "Cada \"perla\" formada por ADN enrollado en histonas.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Cromosoma:</strong> material genético organizado que se compone de <strong>una molécula de ADN en interacción con proteínas</strong>.\nImagen: la <strong>doble hélice de ADN</strong> se enrolla alrededor de <strong>histonas</strong> formando <strong>nucleosomas</strong> (\"collar de perlas\"); estos se pliegan más y más hasta formar el <strong>cromosoma</strong> compacto.</p>",
+     "imgs": [
+      {
+       "src": "img/001.jpg",
+       "alt": "Del ADN al cromosoma (diap. 2)",
+       "img": "<img src=\"img/001.jpg\" width=\"900\" height=\"524\" loading=\"lazy\" decoding=\"async\" alt=\"Del ADN al cromosoma (diap. 2)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "El ADN es un hilo larguísimo (unos 2 m por célula). Para que quepa en el núcleo se <strong>enrolla en histonas</strong> como hilo en carretes (nucleosomas) y luego se pliega una y otra vez hasta formar el cromosoma compacto.",
+     "truco": "<strong>Cromosoma = ADN + proteínas</strong>. Imagen: <strong>«hilo enrollado en carretes»</strong> (ADN en histonas = nucleosomas, «collar de perlas»).",
+     "q": "¿Qué es un cromosoma y cómo se empaqueta el ADN para formarlo?",
+     "n": 2
+    },
+    {
+     "titulo": "Cuándo se ven los cromosomas: la metafase",
+     "lv": 1,
+     "fuente": "Diapositiva 3 (imagen)",
+     "tituloHtml": "Cuándo se ven los cromosomas: la metafase <span class=\"note\">círculo rojo</span>",
+     "defs": [
+      {
+       "t": "Mitosis",
+       "facil": "División de una célula en dos células hijas iguales.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Metafase",
+       "facil": "Fase de la mitosis en la que los cromosomas están más condensados y alineados en el centro.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Condensado",
+       "facil": "Muy enrollado y compacto.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cariotipo",
+       "facil": "El conjunto de cromosomas de una persona ordenados por pares.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cromatina",
+       "facil": "El ADN \"suelto\" del núcleo cuando la célula no se divide.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Interfase",
+       "facil": "Periodo entre dos divisiones.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Imagen: un ojo + un microscopio sobre el ciclo de la mitosis, con la <strong>metafase rodeada en rojo</strong>.</p>\n<ul>\n<li>Los cromosomas <strong>se observan al microscopio en metafase</strong>, porque es cuando están <strong>más condensados</strong> y <strong>alineados en el centro</strong> de la célula (placa metafásica). Por eso el análisis cromosómico (cariotipo) se hace en metafase.</li>\n<li>Fases del esquema: <strong>interfase</strong> (cromatina duplicada, 46 cromosomas) → <strong>profase</strong> → <strong>prometafase</strong> → <strong>metafase</strong> → <strong>anafase</strong> → <strong>telofase</strong> → <strong>2 células hijas con 46 cromosomas</strong> cada una.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/002.jpg",
+       "alt": "Mitosis con la metafase en círculo rojo (diap. 3)",
+       "img": "<img src=\"img/002.jpg\" width=\"900\" height=\"520\" loading=\"lazy\" decoding=\"async\" alt=\"Mitosis con la metafase en círculo rojo (diap. 3)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "En la interfase el ADN está suelto (cromatina) y no se distinguen los cromosomas. En <strong>metafase</strong> están <strong>lo más enrollados posible y en fila</strong> en el centro: es la «foto» perfecta para contarlos y ver su forma.",
+     "truco": "<strong>«Meta-fase = la Mejor foto»</strong>. Orden de la mitosis: <strong>«PPMAT»</strong> → Profase, Prometafase, Metafase, Anafase, Telofase.",
+     "q": "¿En qué fase de la división se analizan los cromosomas y por qué? Ordena las fases de la mitosis.",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "titulo": "Estructura del cromosoma",
+   "conceptos": [
+    {
+     "titulo": "Partes del cromosoma",
+     "lv": 1,
+     "fuente": "Diapositiva 4",
+     "defs": [
+      {
+       "t": "Centrómero",
+       "facil": "El estrechamiento que une las dos cromátidas.",
+       "diapo": "El centrómero divide el cromosoma en dos brazos: brazo p (corto) y brazo q (largo)."
+      },
+      {
+       "t": "Telómero",
+       "facil": "Cada extremo del cromosoma.",
+       "diapo": "Telómeros: los extremos del cromosoma (diapositiva 4, imagen)."
+      },
+      {
+       "t": "Cromátida",
+       "facil": "Cada una de las dos copias idénticas que forman el cromosoma en metafase.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Centrómero:</strong> el punto de unión central (estrangulamiento). <strong>Divide el cromosoma en dos brazos.</strong></li>\n<li><strong>Brazo p = corto. Brazo q = largo.</strong> (Truco: <strong>p de \"petit\"</strong> = pequeño.)</li>\n<li><strong>Telómeros:</strong> los <strong>extremos</strong> del cromosoma.\nEn el dibujo se ven las <strong>dos cromátidas</strong> (dos líneas paralelas) unidas por el centrómero.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/003.jpg",
+       "alt": "Telómeros y centrómero (diap. 4)",
+       "img": "<img src=\"img/003.jpg\" width=\"900\" height=\"635\" loading=\"lazy\" decoding=\"async\" alt=\"Telómeros y centrómero (diap. 4)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "El cromosoma en metafase parece una <strong>X</strong>: las dos mitades son <strong>cromátidas</strong> iguales, el <strong>centrómero</strong> es la «cintura» y los <strong>telómeros</strong> son las puntas.",
+     "truco": "<strong>p = petit (pequeño, arriba)</strong> y <strong>q = la letra que va después (largo, abajo)</strong>. <strong>Telómero = Terminal</strong> (los extremos).",
+     "q": "Dibuja un cromosoma y señala el centrómero, los telómeros, el brazo p y el brazo q. ¿Cuál es el corto?",
+     "n": 4
+    }
+   ],
+   "min": 10
+  },
+  {
+   "titulo": "Clasificación según el centrómero",
+   "conceptos": [
+    {
+     "titulo": "Los 4 tipos de cromosoma",
+     "lv": 1,
+     "fuente": "Diapositiva 5",
+     "defs": [
+      {
+       "t": "Índice centromérico (IC)",
+       "facil": "Número que indica dónde está el centrómero (longitud del brazo corto ÷ longitud total × 100).",
+       "diapo": "Metacéntricos: próximo a 50 · Submetacéntricos: 25-45 · Acrocéntricos: &lt;25 · Telocéntricos: 0."
+      },
+      {
+       "t": "Distal",
+       "facil": "Lejos del centro, hacia el extremo.",
+       "diapo": "Acrocéntricos: centrómero en posición muy distal; brazo corto muy pequeño."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Descripción</th>\n<th>IC (índice centromérico)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Metacéntricos</strong></td>\n<td>Centrómero en <strong>posición media</strong>; <strong>brazos iguales</strong></td>\n<td><strong>Próximo a 50</strong></td>\n</tr>\n<tr>\n<td><strong>Submetacéntricos</strong></td>\n<td>Centrómero <strong>desplazado</strong>; un brazo <strong>corto y otro largo</strong></td>\n<td><strong>25-45</strong></td>\n</tr>\n<tr>\n<td><strong>Acrocéntricos</strong></td>\n<td>Centrómero en posición <strong>muy distal</strong>; brazo corto <strong>muy pequeño</strong></td>\n<td><strong>&lt; 25</strong></td>\n</tr>\n<tr>\n<td><strong>Telocéntricos</strong></td>\n<td>Centrómero en <strong>un extremo</strong>; <strong>solo un brazo largo</strong></td>\n<td><strong>0</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>Truco del orden (del centro al extremo): <strong>\"Me Su Acro Telo\"</strong> → el IC baja: <strong>50 → 25-45 → &lt; 25 → 0</strong>.\n<em>(Aclaración, no viene en el PowerPoint: el IC = longitud del brazo corto ÷ longitud total × 100. Por eso, cuanto más al extremo está el centrómero, más bajo es el IC.)</em></p>",
+     "entiende": "Lo que cambia es <strong>dónde está la cintura</strong> (centrómero): en el medio, un poco desplazada, casi en la punta o justo en la punta. El <strong>IC</strong> lo mide: cuanto más al extremo, más pequeño es el brazo corto y <strong>más baja el IC</strong>.",
+     "truco": "<strong>«Me Su Acro Telo»</strong> con el IC bajando: <strong>50 → 25-45 → &lt; 25 → 0</strong>.",
+     "q": "Clasifica los cromosomas según la posición del centrómero, con su descripción y su índice centromérico.",
+     "n": 5
+    },
+    {
+     "titulo": "Reconocerlos en el dibujo (diapositiva 6, imagen)",
+     "lv": 3,
+     "fuente": "Diapositiva 6 (imagen)",
+     "prof": "<ul>\n<li><strong>Metacéntrico:</strong> forma de <strong>X simétrica</strong> (centrómero en el medio).</li>\n<li><strong>Submetacéntrico:</strong> X con los brazos de <strong>arriba más cortos</strong>.</li>\n<li><strong>Acrocéntrico:</strong> brazos de arriba <strong>muy cortitos</strong>, casi una \"Λ\" con dos pelitos.</li>\n<li><strong>Telocéntrico:</strong> forma de <strong>U invertida / \"∩\"</strong>; el centrómero está <strong>en la punta</strong>, sin brazo corto.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/004.jpg",
+       "alt": "Metacéntrico, submetacéntrico, acrocéntrico y telocéntrico (diap. 6)",
+       "img": "<img src=\"img/004.jpg\" width=\"900\" height=\"418\" loading=\"lazy\" decoding=\"async\" alt=\"Metacéntrico, submetacéntrico, acrocéntrico y telocéntrico (diap. 6)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "En el dibujo, fíjate en la <strong>bolita morada</strong> (centrómero): en el centro (X simétrica), un poco arriba, casi arriba del todo o en la misma punta (como una «∩»).",
+     "truco": "<strong>Metacéntrico = X · Submetacéntrico = X con cabeza corta · Acrocéntrico = casi sin cabeza · Telocéntrico = ∩</strong>.",
+     "q": "Si ves un cromosoma en forma de \"∩\" con el centrómero en la punta, ¿qué tipo es y qué IC tiene?",
+     "n": 6
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "Número de cromosomas: diploide y haploide",
+   "conceptos": [
+    {
+     "titulo": "Regla general",
+     "lv": 2,
+     "fuente": "Diapositiva 7",
+     "defs": [
+      {
+       "t": "Eucariota",
+       "facil": "Ser vivo cuyas células tienen núcleo.",
+       "diapo": "En un organismo eucariota, el nº de cromosomas es el mismo en todas las células somáticas, ya que son diploides, y se reduce a la mitad en sus gametos por tratarse de células haploides."
+      },
+      {
+       "t": "Células somáticas",
+       "facil": "Todas las células del cuerpo menos los gametos.",
+       "diapo": "El nº de cromosomas es el mismo en todas las células somáticas, ya que son diploides."
+      },
+      {
+       "t": "Gameto",
+       "facil": "Célula sexual (óvulo o espermatozoide).",
+       "diapo": "Los gametos son células haploides."
+      },
+      {
+       "t": "Diploide",
+       "facil": "Con dos juegos de cromosomas (2n).",
+       "diapo": "Células diploides: contienen 2n cromosomas."
+      },
+      {
+       "t": "Haploide",
+       "facil": "Con un solo juego (n).",
+       "diapo": "Células haploides: poseen n cromosomas. Los gametos son células haploides. Resultan de un proceso de división celular → meiosis."
+      }
+     ],
+     "prof": "<p>En un organismo eucariota, el <strong>nº de cromosomas es el mismo en todas las células somáticas</strong>, porque son <strong>diploides</strong>, y <strong>se reduce a la mitad en los gametos</strong>, porque son <strong>haploides</strong>.</p>",
+     "entiende": "Todas tus células del cuerpo vienen de la misma célula inicial por mitosis, así que tienen los mismos cromosomas (46). Los gametos llevan <strong>la mitad</strong> para que, al unirse óvulo y espermatozoide, salgan otra vez 46.",
+     "truco": "<strong>Somáticas = 2n (46) · Gametos = n (23)</strong>: <strong>«23 + 23 = 46»</strong>.",
+     "q": "¿Por qué todas las células somáticas tienen el mismo número de cromosomas y los gametos la mitad?",
+     "n": 7
+    },
+    {
+     "titulo": "Diploides vs haploides",
+     "lv": 1,
+     "fuente": "Diapositiva 7",
+     "defs": [
+      {
+       "t": "Cromosoma homólogo",
+       "facil": "Cada uno de los dos cromosomas de una pareja (uno del padre y otro de la madre).",
+       "diapo": "Cada uno de los cromosomas de cada pareja se denomina cromosoma homólogo."
+      },
+      {
+       "t": "Meiosis",
+       "facil": "División celular que produce gametos con la mitad de cromosomas.",
+       "diapo": "Las células haploides resultan de un proceso de división celular → meiosis."
+      },
+      {
+       "t": "Autosoma",
+       "facil": "Cromosoma que no determina el sexo.",
+       "diapo": "En humanos, hay 23 pares de cromosomas: 22 autosomas y 2 cromosomas sexuales."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th><strong>Células diploides (2n)</strong></th>\n<th><strong>Células haploides (n)</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Contienen <strong>2n</strong> cromosomas</td>\n<td>Poseen <strong>n</strong> cromosomas</td>\n</tr>\n<tr>\n<td>Cada cromosoma de cada pareja se llama <strong>cromosoma homólogo</strong></td>\n<td><strong>Los gametos son células haploides</strong></td>\n</tr>\n<tr>\n<td>En humanos: <strong>23 pares</strong> de cromosomas: <strong>22 autosomas y 2 cromosomas sexuales</strong> (es decir, 22 pares de autosomas + 1 par sexual = <strong>46</strong>)</td>\n<td>Resultan de un proceso de división celular → <strong>meiosis</strong></td>\n</tr>\n<tr>\n<td>Ej.: células somáticas (piel, músculo…)</td>\n<td>Ej.: óvulos y espermatozoides (<strong>23</strong> cromosomas)</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Tienes <strong>dos copias</strong> de cada cromosoma (una de tu madre y otra de tu padre): son los <strong>homólogos</strong>. Por eso la célula es <strong>diploide</strong> (2n). El gameto solo lleva una copia de cada uno: <strong>haploide</strong> (n).",
+     "truco": "<strong>Di = dos, Haplo = sencillo</strong>. <strong>«22 + 2 = 23 pares»</strong> (22 pares de autosomas + el par sexual).",
+     "q": "Diferencia célula diploide y haploide. ¿Cuántos cromosomas tiene una célula humana somática y un gameto? ¿Qué es un cromosoma homólogo?",
+     "n": 8
+    },
+    {
+     "titulo": "Autosomas y cromosomas sexuales",
+     "lv": 3,
+     "fuente": "Diapositiva 7 ⚠️ (la profe solo da el número: 22 autosomas y 2 sexuales; XX/XY es general)",
+     "defs": [
+      {
+       "t": "Cromosomas sexuales",
+       "facil": "El par que determina el sexo (X e Y).",
+       "diapo": "En humanos, hay 23 pares de cromosomas: 22 autosomas y 2 cromosomas sexuales."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Autosomas:</strong> los 22 pares que <strong>no</strong> determinan el sexo.</li>\n<li><strong>Cromosomas sexuales:</strong> el par 23 (<strong>XX</strong> mujer, <strong>XY</strong> hombre).</li>\n</ul>",
+     "entiende": "Los <strong>autosomas</strong> (1 al 22) llevan genes de todo el cuerpo; el <strong>par 23</strong> decide el sexo: <strong>XX</strong> mujer, <strong>XY</strong> hombre.",
+     "truco": "<strong>Auto = los «normales» (1-22)</strong>; <strong>sexuales = par 23 (XX/XY)</strong>.",
+     "q": "¿Qué diferencia hay entre autosomas y cromosomas sexuales?",
+     "n": 9
+    },
+    {
+     "titulo": "Mitosis vs meiosis (relación con el tema)",
+     "lv": 3,
+     "fuente": "Diapositivas 3 y 7",
+     "prof": "<ul>\n<li><strong>Mitosis</strong> (diapositiva 3): 1 célula diploide → <strong>2 células hijas iguales con 46</strong> cromosomas (células somáticas).</li>\n<li><strong>Meiosis</strong> (diapositiva 7): da <strong>gametos haploides (n = 23)</strong>.</li>\n</ul>",
+     "entiende": "La <strong>mitosis</strong> hace <strong>copias</strong> para crecer y reparar (46 → 46); la <strong>meiosis</strong> hace <strong>gametos</strong> para reproducirse (46 → 23).",
+     "truco": "<strong>MiTosis = Te copio igual · MeiOsis = Óvulo y espermatozoide (la mitad)</strong>.",
+     "q": "¿Qué división da células con 46 cromosomas y cuál da gametos con 23?",
+     "n": 10
+    }
+   ],
+   "min": 30
+  },
+  {
+   "titulo": "Obtención de extensiones cromosómicas (los 7 pasos)",
+   "conceptos": [
+    {
+     "titulo": "Muestra de partida",
+     "lv": 2,
+     "fuente": "Diapositiva 8",
+     "defs": [
+      {
+       "t": "Sangre periférica",
+       "facil": "La sangre que circula por las venas, la que se saca en un análisis normal.",
+       "diapo": "Como la sangre periférica es el tejido humano más fácil de obtener, actualmente se utilizan las células blancas de la sangre para el estudio de cromosomas."
+      },
+      {
+       "t": "Leucocitos",
+       "facil": "Glóbulos blancos.",
+       "diapo": "Se utilizan las células blancas de la sangre para el estudio de cromosomas."
+      }
+     ],
+     "prof": "<p>Como la <strong>sangre periférica</strong> es el tejido humano <strong>más fácil de obtener</strong>, se usan las <strong>células blancas de la sangre</strong> (leucocitos) para el estudio de cromosomas.</p>",
+     "entiende": "Para ver cromosomas necesitas células <strong>con núcleo que se puedan dividir</strong>. Los glóbulos blancos de la sangre cumplen y la sangre se saca con un simple pinchazo.",
+     "truco": "<strong>«Sangre del brazo → glóbulos blancos»</strong> (los rojos no tienen núcleo).",
+     "q": "¿Qué tejido y qué células se usan para estudiar los cromosomas y por qué?",
+     "n": 11
+    },
+    {
+     "titulo": "Los 7 pasos, en orden",
+     "lv": 1,
+     "fuente": "Diapositivas 8 a 15",
+     "defs": [
+      {
+       "t": "Extensión cromosómica",
+       "facil": "Preparación en un portaobjetos con las células extendidas para ver sus cromosomas al microscopio.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>1) <strong>Obtención de la muestra</strong> → 2) <strong>Siembra</strong> → 3) <strong>Cultivo celular</strong> → 4) <strong>Sacrificio del cultivo</strong> → 5) <strong>Choque hipotónico</strong> → 6) <strong>Fijación</strong> → 7) <strong>Obtención de la extensión</strong>. (Después: <strong>tinción y bandeo</strong>.)\nTruco: <strong>\"Mu-Sie-Cul-Sa-Cho-Fi-Ex\"</strong> → \"<strong>Mu</strong>cho <strong>Sie</strong>mpre <strong>Cul</strong>tivo, <strong>Sa</strong>le <strong>Cho</strong>colate <strong>Fi</strong>no <strong>Ex</strong>tra\".</p>",
+     "entiende": "Es una receta en orden: sacas la sangre, la pones en un medio con nutrientes, la dejas crecer, la paras justo en metafase, la hinchas para separar los cromosomas, la conservas y la extiendes en el cristal.",
+     "truco": "<strong>«Mu-Sie-Cul-Sa-Cho-Fi-Ex»</strong> → «<strong>Mu</strong>cho <strong>Sie</strong>mpre <strong>Cul</strong>tivo, <strong>Sa</strong>le <strong>Cho</strong>colate <strong>Fi</strong>no <strong>Ex</strong>tra».",
+     "q": "Enumera en orden las etapas de obtención de extensiones cromosómicas.",
+     "n": 12
+    },
+    {
+     "titulo": "Paso 1 · Obtención de la muestra",
+     "lv": 1,
+     "fuente": "Diapositiva 9",
+     "tituloHtml": "Paso 1 · Obtención de la muestra <span class=\"note\">recuadro rojo</span>",
+     "defs": [
+      {
+       "t": "Venopunción",
+       "facil": "Pinchar una vena para sacar sangre.",
+       "diapo": "Las muestras de sangre periférica suelen obtenerse por venopunción en tubo estéril con heparina sódica."
+      },
+      {
+       "t": "Estéril",
+       "facil": "Sin ningún microorganismo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Heparina sódica / EDTA",
+       "facil": "Anticoagulantes, sustancias que impiden que la sangre se coagule.",
+       "diapo": "Tubo estéril con heparina sódica. Nunca debe utilizarse como anticoagulante el EDTA ya que tiene efecto tóxico sobre las células."
+      }
+     ],
+     "prof": "<ul>\n<li>Sangre periférica por <strong>venopunción</strong> en tubo <strong>estéril</strong> con <strong>heparina sódica</strong>.</li>\n<li>Procesar <strong>lo antes posible</strong>; <strong>nunca congelar ni mantener a altas temperaturas</strong> (mueren las células).</li>\n<li>🟥 <strong>Nunca usar EDTA como anticoagulante: es tóxico para las células.</strong></li>\n</ul>",
+     "entiende": "La <strong>heparina</strong> impide la coagulación sin dañar las células; el <strong>EDTA</strong> sí las daña (son células que necesitamos vivas para que se dividan). Por eso <strong>nunca EDTA</strong> y nunca congelar ni calentar.",
+     "truco": "<strong>«Heparina sí, EDTA nunca (es tóxico)»</strong>: el recuadro rojo de la profe.",
+     "q": "¿Cómo se obtiene la muestra, qué anticoagulante se usa y cuál está prohibido y por qué?",
+     "n": 13
+    },
+    {
+     "titulo": "Paso 2 · Siembra",
+     "lv": 1,
+     "fuente": "Diapositiva 10",
+     "tituloHtml": "Paso 2 · Siembra <span class=\"note\">resaltado amarillo</span>",
+     "defs": [
+      {
+       "t": "Inoculación",
+       "facil": "Introducir la muestra en el medio.",
+       "diapo": "Siembra: consiste en la inoculación de la muestra con medio de cultivo."
+      },
+      {
+       "t": "Medio de cultivo",
+       "facil": "Líquido con los nutrientes que necesitan las células.",
+       "diapo": "Siembra: consiste en la inoculación de la muestra con medio de cultivo. Se añade 1.5-10 ml de medio."
+      },
+      {
+       "t": "RPMI 1640, DMEM, Ham F10",
+       "facil": "Nombres de medios de cultivo comerciales.",
+       "diapo": "Medios: RPMI 1640 · DMEM y Ham F10."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Consiste en la inoculación de la muestra con medio de cultivo.</strong></li>\n<li>Se añade <strong>1,5-10 ml de medio</strong>.</li>\n<li>Medio: 🟨 <strong>RPMI 1640</strong> (el resaltado); también <strong>DMEM y Ham F10</strong>.</li>\n</ul>",
+     "entiende": "Sembrar = <strong>poner la sangre en un medio de cultivo</strong> (un «caldo» con nutrientes) para que las células puedan vivir y dividirse.",
+     "truco": "<strong>RPMI 1640</strong> (lo que la profe resaltó en amarillo): <strong>«R de Receta principal»</strong>. Cantidad: <strong>1,5-10 ml</strong>.",
+     "q": "¿En qué consiste la siembra y qué medio se usa principalmente?",
+     "n": 14
+    },
+    {
+     "titulo": "Paso 3 · Cultivo celular",
+     "lv": 1,
+     "fuente": "Diapositiva 11",
+     "defs": [
+      {
+       "t": "CO₂",
+       "facil": "Dióxido de carbono; en el incubador ayuda a mantener el pH del medio.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Agotar el medio",
+       "facil": "Que las células se coman todos los nutrientes.",
+       "diapo": "No se aconseja sobrepasar las 72 h ya que empieza a agotarse el medio de cultivo."
+      }
+     ],
+     "prof": "<ul>\n<li>A <strong>37 ºC y 5 % de CO2</strong> durante <strong>72 h</strong>.</li>\n<li><strong>No sobrepasar las 72 h</strong>: se empieza a <strong>agotar el medio</strong>.</li>\n<li><strong>Agitar los tubos a las 24 y a las 48 h</strong> para que las células de la <strong>fase inferior</strong> accedan a los nutrientes.</li>\n</ul>",
+     "entiende": "Las células crecen como en el cuerpo: <strong>37 ºC y 5 % de CO₂</strong>, durante <strong>72 h</strong>. Si te pasas, se acaba la comida del medio. Se agitan porque las células del fondo no llegan a los nutrientes.",
+     "truco": "<strong>«37-5-72»</strong> (temperatura, CO₂, horas) y <strong>agitar a las 24 y 48 h</strong>.",
+     "q": "¿En qué condiciones y cuánto tiempo se cultiva? ¿Por qué se agitan los tubos y cuándo?",
+     "n": 15
+    },
+    {
+     "titulo": "Paso 4 · Sacrificio del cultivo",
+     "lv": 1,
+     "fuente": "Diapositiva 12",
+     "tituloHtml": "Paso 4 · Sacrificio del cultivo <span class=\"note\">colchicina en rojo</span>",
+     "defs": [
+      {
+       "t": "Colchicina",
+       "facil": "Sustancia que impide que la célula siga dividiéndose y la deja parada en metafase.",
+       "diapo": "Se añade colchicina, que inhibe la polimerización de los microtúbulos, por lo que se destruye el huso mitótico y se detienen las células en metafase."
+      },
+      {
+       "t": "Microtúbulos",
+       "facil": "Tubitos de proteína (tubulina) que forman el huso.",
+       "diapo": "La colchicina inhibe la polimerización de los microtúbulos."
+      },
+      {
+       "t": "Polimerización",
+       "facil": "Unión de muchas piezas iguales para formar una cadena.",
+       "diapo": "La colchicina inhibe la polimerización de los microtúbulos."
+      },
+      {
+       "t": "Huso mitótico",
+       "facil": "Las \"cuerdas\" de microtúbulos que separan los cromosomas al dividirse la célula.",
+       "diapo": "Se destruye el huso mitótico y se detienen las células en metafase."
+      },
+      {
+       "t": "Tubulina",
+       "facil": "La proteína de la que están hechos los microtúbulos.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Es la <strong>parada del cultivo en metafase</strong>.</li>\n<li>Tras las 72 h se añade 🟥 <strong>colchicina</strong>, que <strong>inhibe la polimerización de los microtúbulos</strong> → <strong>destruye el huso mitótico</strong> → las células <strong>se detienen en metafase</strong>.</li>\n<li>🟨 <strong>45-60 minutos a 37 º.</strong>\nImagen: microtúbulo formado por <strong>α- y β-tubulina</strong> (22 nm de diámetro).</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/005.jpg",
+       "alt": "Microtúbulo de α- y β-tubulina (diap. 12)",
+       "img": "<img src=\"img/005.jpg\" width=\"900\" height=\"338\" loading=\"lazy\" decoding=\"async\" alt=\"Microtúbulo de α- y β-tubulina (diap. 12)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "La <strong>colchicina</strong> rompe el «andamio» (huso mitótico) que separa los cromosomas: la célula queda <strong>congelada en metafase</strong>, justo cuando los cromosomas se ven mejor.",
+     "truco": "<strong>«Colchicina = Congela en metafase»</strong> · <strong>45-60 min a 37 º</strong> (recuadro amarillo de la profe).",
+     "q": "¿Qué es el sacrificio del cultivo, qué se añade, cómo actúa y cuánto tiempo?",
+     "n": 16
+    },
+    {
+     "titulo": "Paso 5 · Choque hipotónico",
+     "lv": 1,
+     "fuente": "Diapositiva 13",
+     "defs": [
+      {
+       "t": "Solución hipotónica",
+       "facil": "Líquido con menos sales que el interior de la célula, por lo que el agua entra en ella.",
+       "diapo": "Choque hipotónico: tratamiento que se aplica a las células en metafase para hincharlas con una solución hipotónica (KCl 0.075M)."
+      },
+      {
+       "t": "KCl",
+       "facil": "Cloruro de potasio.",
+       "diapo": "Solución hipotónica (KCl 0.075M)."
+      },
+      {
+       "t": "M (molar)",
+       "facil": "Unidad de concentración.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Ósmosis",
+       "facil": "Paso del agua a través de una membrana hacia donde hay más sales.",
+       "diapo": "Esto hace que entre agua en la célula y los cromosomas se separen mejor, facilitando su observación."
+      }
+     ],
+     "prof": "<ul>\n<li>Tratamiento a las células en metafase para <strong>hincharlas</strong> con una <strong>solución hipotónica (KCl 0,075 M)</strong>.</li>\n<li><strong>Entra agua</strong> en la célula (ósmosis) → los cromosomas <strong>se separan mejor</strong> → se observan mejor.</li>\n<li><strong>Tiempo clave: 20-40 min.</strong> Si es <strong>poco</strong>, <strong>no se liberan bien</strong> los cromosomas; si es <strong>mucho</strong>, <strong>se deshace la estructura de la metafase</strong>.</li>\n</ul>",
+     "entiende": "La solución <strong>hipotónica</strong> tiene menos sales que la célula, así que <strong>entra agua</strong> y la célula se hincha como un globo: los cromosomas se separan y se ven mejor. Ni poco tiempo (no se separan) ni mucho (se rompe todo).",
+     "truco": "<strong>«KCl 0,075 M, 20-40 min: hincha el globo»</strong>.",
+     "q": "¿Para qué sirve el choque hipotónico, con qué solución, cuánto dura y qué pasa si te pasas o te quedas corto?",
+     "n": 17
+    },
+    {
+     "titulo": "Paso 6 · Fijación",
+     "lv": 2,
+     "fuente": "Diapositiva 14",
+     "defs": [
+      {
+       "t": "Fijación",
+       "facil": "Conservar las células tal como están para que no se estropeen.",
+       "diapo": "Fijación: lavado con Carnoy."
+      },
+      {
+       "t": "Carnoy",
+       "facil": "Líquido fijador hecho de metanol y ácido acético.",
+       "diapo": "Lavado con Carnoy: metanol 100% + ácido acético glaciar 3:1."
+      },
+      {
+       "t": "Ácido acético glacial",
+       "facil": "Ácido acético casi puro, sin agua.",
+       "diapo": "Carnoy: metanol 100% + ácido acético glaciar 3:1."
+      }
+     ],
+     "prof": "<p><strong>Lavado con Carnoy</strong> (subrayado) = <strong>metanol 100 % + ácido acético glaciar 3:1</strong>.</p>",
+     "entiende": "Fijar = <strong>«congelar» la célula tal cual</strong> para que no se estropee. Se hace con <strong>Carnoy</strong>, una mezcla de metanol y ácido acético.",
+     "truco": "<strong>Carnoy «3:1» = 3 de metanol por 1 de ácido acético</strong>.",
+     "q": "¿Con qué se fija y cuál es la composición del Carnoy?",
+     "n": 18
+    },
+    {
+     "titulo": "Paso 7 · Obtención de la extensión",
+     "lv": 2,
+     "fuente": "Diapositiva 15",
+     "defs": [
+      {
+       "t": "Portaobjetos",
+       "facil": "Lámina de vidrio donde se coloca la muestra para el microscopio.",
+       "diapo": "Las células se extienden sobre portaobjetos."
+      },
+      {
+       "t": "Técnica de goteo",
+       "facil": "Dejar caer gotas desde cierta altura para que las células se rompan y los cromosomas se extiendan.",
+       "diapo": "Técnica de goteo que consiste en dejar caer una o dos gotas de la suspensión celular desde una altura de 30 cm aprox."
+      }
+     ],
+     "prof": "<ul>\n<li>Las células se <strong>extienden sobre portaobjetos</strong>.</li>\n<li><strong>Técnica de goteo</strong>: dejar caer <strong>1 o 2 gotas</strong> de la suspensión desde <strong>unos 30 cm</strong> de altura.</li>\n</ul>",
+     "entiende": "Se deja caer la gota <strong>desde alto (30 cm)</strong> para que, al chocar con el cristal, la célula hinchada <strong>reviente</strong> y los cromosomas queden repartidos.",
+     "truco": "<strong>«1-2 gotas desde 30 cm»</strong> (como un palmo y medio).",
+     "q": "¿Cómo se hace la extensión y desde qué altura se deja caer la gota?",
+     "n": 19
+    },
+    {
+     "titulo": "Tabla resumen del proceso",
+     "lv": 1,
+     "fuente": "Resumen propio de las diapositivas 9 a 15",
+     "tituloHtml": "Tabla resumen del proceso <span class=\"note\">= respuesta del caso práctico</span>",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Paso</th>\n<th>Qué se hace</th>\n<th>Dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. Muestra</td>\n<td>Venopunción, sangre periférica</td>\n<td>Heparina sódica; <strong>nunca EDTA</strong>; no congelar</td>\n</tr>\n<tr>\n<td>2. Siembra</td>\n<td>Inocular la muestra en medio</td>\n<td>1,5-10 ml; <strong>RPMI 1640</strong> (DMEM, Ham F10)</td>\n</tr>\n<tr>\n<td>3. Cultivo</td>\n<td>Incubar</td>\n<td>37 ºC, 5 % CO2, <strong>72 h</strong>; agitar a 24 y 48 h</td>\n</tr>\n<tr>\n<td>4. Sacrificio</td>\n<td><strong>Colchicina</strong> → para en metafase</td>\n<td><strong>45-60 min, 37 º</strong></td>\n</tr>\n<tr>\n<td>5. Choque hipotónico</td>\n<td><strong>KCl 0,075 M</strong> → hincha la célula</td>\n<td><strong>20-40 min</strong></td>\n</tr>\n<tr>\n<td>6. Fijación</td>\n<td><strong>Carnoy</strong></td>\n<td>Metanol 100 % + ácido acético glaciar <strong>3:1</strong></td>\n</tr>\n<tr>\n<td>7. Extensión</td>\n<td>Goteo en portaobjetos</td>\n<td>1-2 gotas desde <strong>30 cm</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Esta tabla es la <strong>respuesta del caso práctico 1</strong> y la pregunta llave más probable: apréndela entera con sus números.",
+     "truco": "Recorre los 7 pasos con sus números: <strong>«heparina · RPMI · 37-5-72 · colchicina 45-60 · KCl 20-40 · Carnoy 3:1 · 30 cm»</strong>.",
+     "q": "Haz el esquema de las etapas del proceso de obtención de extensiones cromosómicas (caso práctico).",
+     "n": 20
+    }
+   ]
+  },
+  {
+   "titulo": "Casos prácticos de la profe",
+   "conceptos": [
+    {
+     "titulo": "Caso práctico 1 · Procedimiento estándar de cariotipo",
+     "lv": 1,
+     "fuente": "Diapositiva 16",
+     "prof": "<p>\"En el laboratorio realizas cariotipos estándar a partir de sangre periférica. Haz un <strong>esquema descriptivo de las etapas</strong> del proceso de obtención de extensiones cromosómicas.\" → Respuesta: la <strong>tabla del concepto 20</strong> (7 pasos con sus datos).</p>",
+     "entiende": "Te piden escribir el <strong>procedimiento</strong> como si fueras el técnico del laboratorio: los 7 pasos en orden con todos sus datos (la tabla del concepto 20).",
+     "truco": "Escríbelo como una <strong>receta numerada del 1 al 7</strong>, cada paso con su dato estrella.",
+     "q": "Redacta el procedimiento estándar de obtención de extensiones cromosómicas a partir de sangre periférica.",
+     "n": 21
+    },
+    {
+     "titulo": "Caso práctico 2 · ADN fetal libre en sangre materna",
+     "lv": 2,
+     "fuente": "Diapositiva 17",
+     "defs": [
+      {
+       "t": "ADN fetal libre",
+       "facil": "Trocitos de ADN del bebé (de la placenta) que circulan en la sangre de la madre.",
+       "diapo": "El aislamiento del ADN fetal libre en sangre materna en embarazos de riesgo evita la realización de pruebas invasivas como la amniocentesis."
+      },
+      {
+       "t": "Prueba invasiva",
+       "facil": "Prueba que entra en el cuerpo y tiene algún riesgo.",
+       "diapo": "Evita la realización de pruebas invasivas como la amniocentesis."
+      },
+      {
+       "t": "Amniocentesis",
+       "facil": "Sacar líquido amniótico con una aguja para estudiar al feto.",
+       "diapo": "Pruebas invasivas como la amniocentesis."
+      },
+      {
+       "t": "Trisomía",
+       "facil": "Tener tres copias de un cromosoma en vez de dos.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "NGS",
+       "facil": "Secuenciación masiva, lectura de millones de fragmentos de ADN a la vez.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "PCR",
+       "facil": "Técnica que copia millones de veces un trozo de ADN.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>El aislamiento del <strong>ADN fetal libre en sangre materna</strong> en embarazos de riesgo <strong>evita pruebas invasivas como la amniocentesis</strong>.\n<em>(La respuesta no viene en el PowerPoint; es lo que pide \"busca información\":)</em></p>\n<ul>\n<li><strong>Metodología:</strong> extracción de <strong>sangre materna</strong> (desde la semana 10 aprox.) → <strong>centrifugación</strong> para separar el <strong>plasma</strong> → <strong>extracción del ADN libre circulante</strong> del plasma (fragmentos cortos; una parte, alrededor del 10 %, es fetal y procede de la <strong>placenta</strong>) → <strong>secuenciación masiva (NGS) o PCR</strong> y análisis bioinformático (se cuentan los fragmentos de cada cromosoma).</li>\n<li><strong>Aplicaciones clínicas:</strong> <strong>cribado prenatal no invasivo</strong> de <strong>trisomías 21 (Down), 18 (Edwards) y 13 (Patau)</strong>; alteraciones de <strong>cromosomas sexuales</strong> (Turner, Klinefelter); <strong>sexo fetal</strong>; <strong>Rh fetal</strong> en madres Rh negativas; algunas microdeleciones y enfermedades monogénicas. Si sale positivo, se <strong>confirma con prueba invasiva</strong>.</li>\n</ul>",
+     "entiende": "La placenta suelta trocitos de ADN del bebé en la sangre de la madre. Con un <strong>simple análisis de sangre</strong> se puede estudiar al feto <strong>sin pinchar el útero</strong>.",
+     "truco": "<strong>«Sangre de la madre → plasma → ADN libre → secuenciar»</strong>. Detecta trisomías <strong>21, 18 y 13</strong>.",
+     "q": "¿Qué ventaja tiene el estudio del ADN fetal libre, cómo se procesa y para qué sirve?",
+     "n": 22
+    },
+    {
+     "titulo": "Caso práctico 3 · Anemia falciforme (gen HBB)",
+     "lv": 1,
+     "fuente": "Diapositiva 27",
+     "defs": [
+      {
+       "t": "Gen",
+       "facil": "Trozo de ADN con la instrucción para fabricar una proteína.",
+       "diapo": "La anemia falciforme o drepanocítica está causada por mutaciones en el gen HBB."
+      },
+      {
+       "t": "Hemoglobina",
+       "facil": "Proteína de los glóbulos rojos que transporta el oxígeno.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Autosómica recesiva",
+       "facil": "Se hereda en un autosoma y solo aparece la enfermedad si las dos copias del gen están alteradas.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Mutación",
+       "facil": "Cambio en el ADN.",
+       "diapo": "La anemia falciforme o drepanocítica está causada por mutaciones en el gen HBB."
+      }
+     ],
+     "prof": "<p><em>(Respuesta fuera del PowerPoint:)</em> El gen <strong>HBB</strong> (cadena <strong>β de la hemoglobina</strong>) está en el <strong>cromosoma 11</strong>, en el <strong>brazo corto</strong>: <strong>locus 11p15.4</strong>. Herencia <strong>autosómica recesiva</strong>: la enfermedad aparece cuando <strong>las dos copias del cromosoma 11</strong> llevan la mutación (cambio de ácido glutámico por valina → hemoglobina S).\nLéelo con la nomenclatura ISCN: <strong>11 = cromosoma, p = brazo corto, 1 = región, 5 = banda, .4 = subbanda.</strong></p>",
+     "entiende": "La anemia falciforme es un fallo del gen <strong>HBB</strong>, que fabrica parte de la hemoglobina. El gen está en el <strong>cromosoma 11</strong>, brazo corto: <strong>11p15.4</strong>.",
+     "truco": "<strong>«HBB en el 11p15.4»</strong>: «11 = cromosoma, p = corto, 1 = región, 5 = banda, .4 = subbanda».",
+     "q": "¿Qué cromosoma está afectado en la anemia falciforme y cuál es el locus del gen HBB? Desglosa el locus.",
+     "n": 23
+    }
+   ],
+   "min": 25
+  },
+  {
+   "titulo": "Tinción y bandeo cromosómico",
+   "conceptos": [
+    {
+     "titulo": "Tinción convencional",
+     "lv": 2,
+     "fuente": "Diapositiva 18",
+     "tituloHtml": "Tinción convencional <span class=\"note\">recuadro verde</span>",
+     "defs": [
+      {
+       "t": "Tinción",
+       "facil": "Teñir con colorante para poder verlo al microscopio.",
+       "diapo": "Tinción convencional, 10 min → sol. Giemsa 2-3 % u orceína. Permiten contar y agrupar los cromosomas por características morfológicas comunes."
+      },
+      {
+       "t": "Giemsa / orceína",
+       "facil": "Colorantes.",
+       "diapo": "Tinción convencional, 10 min → sol. Giemsa 2-3 % u orceína."
+      },
+      {
+       "t": "Morfológico",
+       "facil": "Relativo a la forma.",
+       "diapo": "Permiten contar y agrupar los cromosomas por características morfológicas comunes."
+      },
+      {
+       "t": "Bandeo",
+       "facil": "Técnica que tiñe los cromosomas con un patrón de rayas claras y oscuras.",
+       "diapo": "La identificación detallada de cada cromosoma solo se puede obtener a través de alguna de las técnicas de bandeo cromosómico."
+      }
+     ],
+     "prof": "<p>Una vez secas las extensiones:</p>\n<ul>\n<li><strong>Tinción convencional, 10 min</strong> → solución <strong>Giemsa 2-3 % u orceína</strong>.</li>\n<li><strong>Lavar</strong> → <strong>agua destilada</strong> → <strong>secar</strong>.</li>\n<li>🟩 <strong>Permiten contar y agrupar los cromosomas por características morfológicas comunes.</strong></li>\n<li>Se tiñen <strong>de manera uniforme</strong>; la <strong>identificación detallada</strong> de cada cromosoma <strong>solo se consigue con técnicas de bandeo</strong>.</li>\n</ul>",
+     "entiende": "Con la tinción convencional <strong>todos los cromosomas salen del mismo color</strong>: puedes <strong>contarlos</strong> y agruparlos por forma, pero no saber exactamente cuál es cada uno. Para eso hace falta <strong>bandeo</strong>.",
+     "truco": "<strong>«Convencional = cuento; bandeo = reconozco»</strong> · Giemsa <strong>2-3 %</strong>, <strong>10 min</strong>.",
+     "q": "¿Cómo es la tinción convencional, qué permite y qué no permite?",
+     "n": 24
+    },
+    {
+     "titulo": "Banda, región y marca",
+     "lv": 2,
+     "fuente": "Diapositiva 19",
+     "defs": [
+      {
+       "t": "Banda cromosómica",
+       "facil": "Cada raya clara u oscura del cromosoma teñido.",
+       "diapo": "Parte del cromosoma que tiene una apariencia más oscura o más clara."
+      },
+      {
+       "t": "Región cromosómica",
+       "facil": "Trozo del cromosoma entre dos señales de referencia.",
+       "diapo": "Área del cromosoma comprendida entre dos marcas y puede contener varias bandas."
+      },
+      {
+       "t": "Marca cromosómica",
+       "facil": "Señal que sirve para reconocer un cromosoma.",
+       "diapo": "Característica morfológica importante en la identificación de un cromosoma: puntos de referencia, extremos de los brazos, centrómeros, ciertas bandas."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Banda cromosómica:</strong> parte del cromosoma con apariencia <strong>más oscura o más clara</strong>.</li>\n<li><strong>Región cromosómica:</strong> área <strong>entre dos marcas</strong>; puede contener <strong>varias bandas</strong>.</li>\n<li><strong>Marca cromosómica:</strong> característica morfológica importante para <strong>identificar</strong> un cromosoma: <strong>puntos de referencia, extremos de los brazos, centrómeros y ciertas bandas</strong>.\nImagen: cromosoma con brazo p arriba, centrómero, brazo q abajo; regiones 1, 2, 3; banda 4; subbanda 2.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/006.jpg",
+       "alt": "Brazo p, centrómero, brazo q, regiones, bandas y subbandas (diap. 19)",
+       "img": "<img src=\"img/006.jpg\" width=\"900\" height=\"609\" loading=\"lazy\" decoding=\"async\" alt=\"Brazo p, centrómero, brazo q, regiones, bandas y subbandas (diap. 19)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Con el bandeo el cromosoma parece un <strong>código de barras</strong>: cada raya es una <strong>banda</strong>; entre dos «señales» (marcas) hay una <strong>región</strong>, que puede tener varias bandas.",
+     "truco": "<strong>Banda = una raya · Región = entre dos marcas · Marca = señal para identificarlo</strong> (centrómero, extremos, ciertas bandas).",
+     "q": "Diferencia banda, región y marca cromosómica.",
+     "n": 25
+    },
+    {
+     "titulo": "Bandas G (Giemsa)",
+     "lv": 1,
+     "fuente": "Diapositiva 20",
+     "defs": [
+      {
+       "t": "Tripsina",
+       "facil": "Enzima que corta proteínas.",
+       "diapo": "Tripsina → degrada proteínas y produce bandas claras y oscuras en función del nivel de digestión."
+      },
+      {
+       "t": "AT / CG",
+       "facil": "Las parejas de \"letras\" del ADN (adenina-timina y citosina-guanina).",
+       "diapo": "Bandas oscuras (G+) → ricas en AT. Bandas claras (G-) → ricas en CG."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>La técnica de bandeo más utilizada para el cariotipo.</strong></li>\n<li>1) <strong>Tripsina</strong> → <strong>degrada proteínas</strong> y produce bandas claras y oscuras según la digestión. 2) <strong>Giemsa.</strong></li>\n<li><strong>Bandas oscuras (G+) → ricas en AT. Bandas claras (G−) → ricas en CG.</strong>\nImagen: cariotipo femenino con bandas G (1-22 + X).</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/007.jpg",
+       "alt": "Cariotipo femenino con bandas G (diap. 20)",
+       "img": "<img src=\"img/007.jpg\" width=\"818\" height=\"618\" loading=\"lazy\" decoding=\"async\" alt=\"Cariotipo femenino con bandas G (diap. 20)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "La <strong>tripsina</strong> «come» un poco de las proteínas del cromosoma y, al teñir con <strong>Giemsa</strong>, salen rayas oscuras y claras. Es la técnica <strong>más usada</strong> para el cariotipo.",
+     "truco": "<strong>G = Giemsa</strong> · <strong>«Oscura = AT (A de oscurA) · Clara = CG»</strong>.",
+     "q": "¿Cómo se obtienen las bandas G y qué significan las bandas oscuras y claras?",
+     "n": 26
+    },
+    {
+     "titulo": "Bandas Q (quinacrina)",
+     "lv": 2,
+     "fuente": "Diapositiva 21",
+     "defs": [
+      {
+       "t": "Quinacrina (acridina)",
+       "facil": "Colorante fluorescente.",
+       "diapo": "Bandas Q: se utiliza acridina y las preparaciones deben observarse con microscopio de fluorescencia."
+      },
+      {
+       "t": "Microscopio de fluorescencia",
+       "facil": "Microscopio que ilumina con una luz especial que hace brillar los colorantes fluorescentes.",
+       "diapo": "Las preparaciones deben observarse con microscopio de fluorescencia."
+      }
+     ],
+     "prof": "<ul>\n<li>Se usa <strong>acridina</strong> (quinacrina) y se observan con <strong>microscopio de fluorescencia</strong>.</li>\n<li><strong>Bandas brillantes → G+.</strong></li>\n<li>🟩 <strong>Ventaja: rápido.</strong> 🟥 <strong>Desventaja: poco duradero (≈ 1 min).</strong></li>\n</ul>",
+     "entiende": "La <strong>quinacrina</strong> brilla con luz especial (fluorescencia): es <strong>rápida</strong>, pero el brillo <strong>dura solo 1 minuto</strong>.",
+     "truco": "<strong>Q = Quinacrina = brillo rápido que se apaga (1 min)</strong>.",
+     "q": "¿Qué necesitan las bandas Q para observarse y cuál es su ventaja y su desventaja?",
+     "n": 27
+    },
+    {
+     "titulo": "Bandas R (reverse)",
+     "lv": 2,
+     "fuente": "Diapositiva 22",
+     "defs": [
+      {
+       "t": "Reverse",
+       "facil": "\"al revés\" en inglés.",
+       "diapo": "Se denomina así porque el patrón de bandas que se obtiene es el negativo de las bandas G."
+      },
+      {
+       "t": "Negativo",
+       "facil": "Lo claro sale oscuro y al revés.",
+       "diapo": "El patrón de bandas que se obtiene es el negativo de las bandas G."
+      }
+     ],
+     "prof": "<ul>\n<li>Patrón de bandas = <strong>negativo de las bandas G</strong>.</li>\n<li>Se obtienen de forma similar al G: 1) <strong>calor</strong>; 2) <strong>Giemsa</strong>.</li>\n</ul>",
+     "entiende": "<strong>reverse = al revés</strong>: donde las G salen oscuras, las R salen claras, y al contrario. En vez de tripsina se usa <strong>calor</strong>.",
+     "truco": "<strong>R = Reverse = negativo de las G</strong> · <strong>«Calor + Giemsa»</strong>.",
+     "q": "¿Por qué se llaman bandas R y cómo se obtienen?",
+     "n": 28
+    },
+    {
+     "titulo": "Bandas NOR (Nucleolar Organizer Region)",
+     "lv": 2,
+     "fuente": "Diapositiva 23",
+     "defs": [
+      {
+       "t": "ARN ribosómico",
+       "facil": "El ARN que forma los ribosomas, las \"fábricas\" de proteínas de la célula.",
+       "diapo": "Bandas NOR: zonas de los cromosomas donde se encuentran los genes que producen ARN ribosómico."
+      },
+      {
+       "t": "Nitrato de plata",
+       "facil": "Sustancia que tiñe estas regiones de negro.",
+       "diapo": "Estas regiones se ven como bandas cuando se tiñen con nitrato de plata."
+      },
+      {
+       "t": "Nucléolo",
+       "facil": "Zona del núcleo donde se fabrican los ribosomas.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Zonas donde están los <strong>genes que producen ARN ribosómico</strong>.</li>\n<li>Se ven como bandas al teñir con <strong>nitrato de plata</strong>.</li>\n<li>Suelen estar en el <strong>brazo corto de los cromosomas acrocéntricos</strong>.</li>\n<li>No todos los cromosomas las tienen → <strong>cada persona tiene un patrón NOR único</strong>.</li>\n</ul>",
+     "entiende": "Son las zonas donde están los genes del <strong>ARN ribosómico</strong> (los que fabrican las «fábricas» de proteínas). Se tiñen de negro con <strong>plata</strong>.",
+     "truco": "<strong>NOR = Nitrato de plata, ARN Ribosómico</strong> · en el brazo corto de los <strong>acrocéntricos</strong>.",
+     "q": "¿Qué son las bandas NOR, con qué se tiñen y dónde están?",
+     "n": 29
+    },
+    {
+     "titulo": "Bandas T",
+     "lv": 2,
+     "fuente": "Diapositiva 24",
+     "defs": [
+      {
+       "t": "Incubación",
+       "facil": "Tiempo que la muestra pasa a una temperatura controlada.",
+       "diapo": "Bandas T: se prolongan los tiempos de incubación; los cromosomas se visualizan más débilmente teñidos, excepto en sus regiones terminales (telómeros)."
+      }
+     ],
+     "prof": "<ul>\n<li>Permiten la <strong>tinción de los telómeros</strong>.</li>\n<li>Son una <strong>variante del bandeo R</strong>.</li>\n<li>Se <strong>prolongan los tiempos de incubación</strong>: el cromosoma se ve <strong>débil</strong>, excepto los <strong>telómeros, muy teñidos</strong>.</li>\n</ul>",
+     "entiende": "Se deja incubar más tiempo: casi todo el cromosoma se ve flojito y <strong>solo las puntas (telómeros) salen muy teñidas</strong>.",
+     "truco": "<strong>T = Telómeros</strong> · <strong>variante de la R</strong>.",
+     "q": "¿Qué tiñen las bandas T y de qué bandeo son variante?",
+     "n": 30
+    },
+    {
+     "titulo": "Tabla comparativa del bandeo",
+     "lv": 1,
+     "fuente": "Resumen propio de las diapositivas 20 a 24",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Bandas</th>\n<th>Reactivo / paso clave</th>\n<th>Qué muestran</th>\n<th>Dato estrella</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>G</strong></td>\n<td>Tripsina + Giemsa</td>\n<td>G+ oscuras (AT), G− claras (CG)</td>\n<td><strong>La más usada</strong> para el cariotipo</td>\n</tr>\n<tr>\n<td><strong>Q</strong></td>\n<td>Quinacrina (acridina)</td>\n<td>Bandas brillantes = G+</td>\n<td>Fluorescencia; + rápido / − poco duradero (1 min)</td>\n</tr>\n<tr>\n<td><strong>R</strong></td>\n<td>Calor + Giemsa</td>\n<td><strong>Negativo de las G</strong></td>\n<td>Reverse</td>\n</tr>\n<tr>\n<td><strong>NOR</strong></td>\n<td><strong>Nitrato de plata</strong></td>\n<td>Genes de <strong>ARN ribosómico</strong></td>\n<td>Brazo corto de <strong>acrocéntricos</strong>; patrón único</td>\n</tr>\n<tr>\n<td><strong>T</strong></td>\n<td>Variante de R, incubación larga</td>\n<td><strong>Telómeros</strong></td>\n<td>Resto del cromosoma débil</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "La tabla resume las 5 técnicas: qué reactivo usan y qué muestra cada una. Es una pregunta típica de desarrollo.",
+     "truco": "<strong>«G-Q-R-NOR-T» = «Giemsa, Quinacrina, Reverse, Nitrato, Telómeros»</strong>.",
+     "q": "Compara las bandas G, Q, R, NOR y T.",
+     "n": 31
+    }
+   ],
+   "min": 65
+  },
+  {
+   "titulo": "Nomenclatura y locus",
+   "conceptos": [
+    {
+     "titulo": "Ideograma y nomenclatura ISCN",
+     "lv": 1,
+     "fuente": "Diapositiva 25",
+     "defs": [
+      {
+       "t": "Ideograma",
+       "facil": "Dibujo esquemático de un cromosoma con todas sus bandas.",
+       "diapo": "El cromosoma se representa con el brazo corto (p) en posición superior y el largo (q) en posición inferior."
+      },
+      {
+       "t": "ISCN",
+       "facil": "Sistema internacional para nombrar los cromosomas y sus bandas.",
+       "diapo": "Ideograma y nomenclatura de bandas (ISCN): es una forma estandarizada de nombrar regiones de los cromosomas."
+      },
+      {
+       "t": "Subbanda",
+       "facil": "División más fina de una banda.",
+       "diapo": "El nombre incluye: nº cromosoma, brazo, región, banda y subbanda."
+      }
+     ],
+     "prof": "<ul>\n<li>Forma <strong>estandarizada</strong> de nombrar regiones de los cromosomas.</li>\n<li>Se dibuja con el <strong>brazo corto (p) arriba</strong> y el <strong>largo (q) abajo</strong>.</li>\n<li>Las regiones se numeran <strong>desde el centrómero hacia el telómero</strong>.</li>\n<li>El nombre incluye: <strong>nº de cromosoma, brazo, región, banda y subbanda</strong>.</li>\n<li>Ejemplo <strong>7q31.2</strong> → cromosoma <strong>7</strong>, brazo <strong>q</strong>, región <strong>3</strong>, banda <strong>1</strong>, subbanda <strong>2</strong> (se lee \"siete q tres uno punto dos\").</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/008.jpg",
+       "alt": "Nomenclatura ISCN: 7q31.2 (diap. 25)",
+       "img": "<img src=\"img/008.jpg\" width=\"600\" height=\"400\" loading=\"lazy\" decoding=\"async\" alt=\"Nomenclatura ISCN: 7q31.2 (diap. 25)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Es como una <strong>dirección postal</strong> del cromosoma: número de cromosoma, brazo, región, banda y subbanda. Se cuenta <strong>desde el centrómero hacia la punta</strong>.",
+     "truco": "<strong>7q31.2</strong> → «<strong>7</strong> cromosoma, <strong>q</strong> brazo largo, <strong>3</strong> región, <strong>1</strong> banda, <strong>.2</strong> subbanda».",
+     "q": "¿Qué es la nomenclatura ISCN y qué significa cada parte de 7q31.2?",
+     "n": 32
+    },
+    {
+     "titulo": "Locus",
+     "lv": 2,
+     "fuente": "Diapositivas 26 y 28",
+     "defs": [
+      {
+       "t": "Locus",
+       "facil": "La «dirección» de un gen en el cromosoma.",
+       "diapo": "Lugar que ocupa un determinado gen o marcador genético en un cromosoma."
+      },
+      {
+       "t": "Marcador genético",
+       "facil": "Trozo de ADN conocido que sirve de \"señal\" en un cromosoma.",
+       "diapo": "Locus → lugar que ocupa un determinado gen o marcador genético en un cromosoma."
+      },
+      {
+       "t": "Loci",
+       "facil": "Plural de locus.",
+       "diapo": "¿Qué locus o loci tiene el gen HBB? (caso práctico)"
+      }
+     ],
+     "prof": "<p><strong>Locus:</strong> lugar que ocupa un <strong>gen o marcador genético</strong> en un cromosoma (plural: <strong>loci</strong>). Imagen: ideograma de los cromosomas 1-22, X e Y con sus bandas (diapositivas 26 y 28).</p>",
+     "entiende": "El <strong>locus</strong> es la <strong>dirección exacta</strong> de un gen en el cromosoma (por ejemplo, el gen HBB está en 11p15.4).",
+     "truco": "<strong>Locus = Lugar</strong> (en latín); plural <strong>loci</strong>.",
+     "q": "¿Qué es un locus? Pon un ejemplo con la nomenclatura ISCN.",
+     "n": 33
+    }
+   ],
+   "min": 25
+  },
+  {
+   "titulo": "Cómo resolver un cariotipo (ejercicio de la profe)",
+   "conceptos": [
+    {
+     "titulo": "Los grupos del cariotipo (A-G)",
+     "lv": 1,
+     "fuente": "Hoja «Cariotipo» de la profe ⚠️ (los grupos no vienen en el PowerPoint; es la clasificación general)",
+     "defs": [
+      {
+       "t": "Cariotipo",
+       "facil": "Los cromosomas de una persona ordenados por parejas, de mayor a menor.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Satélites",
+       "facil": "Las «bolitas» unidas por un hilo al brazo corto de algunos acrocéntricos.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Grupos de Denver",
+       "facil": "La forma clásica de agrupar los 46 cromosomas en 7 grupos (A-G) por tamaño y posición del centrómero.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Te da una hoja con los cromosomas <strong>desordenados</strong> y hay que <strong>ordenarlos</strong> para ver si son normales. Para ordenarlos se usan su <strong>tamaño</strong>, la <strong>posición del centrómero</strong> (concepto 5) y el <strong>patrón de bandas</strong> (conceptos 25-26).</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Cromosomas</th>\n<th>Cómo son</th>\n<th>Cuántos hay (normal)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>A</strong></td>\n<td>1, 2, 3</td>\n<td>Los más grandes, metacéntricos</td>\n<td>6</td>\n</tr>\n<tr>\n<td><strong>B</strong></td>\n<td>4, 5</td>\n<td>Grandes, submetacéntricos</td>\n<td>4</td>\n</tr>\n<tr>\n<td><strong>C</strong></td>\n<td>6 al 12 + <strong>X</strong></td>\n<td>Medianos, submetacéntricos</td>\n<td><strong>16 en mujer</strong> (14 + XX) · <strong>15 en hombre</strong> (14 + X)</td>\n</tr>\n<tr>\n<td><strong>D</strong></td>\n<td>13, 14, 15</td>\n<td>Medianos, <strong>acrocéntricos con satélites</strong></td>\n<td>6</td>\n</tr>\n<tr>\n<td><strong>E</strong></td>\n<td>16, 17, 18</td>\n<td>Pequeños, meta- o submetacéntricos</td>\n<td>6</td>\n</tr>\n<tr>\n<td><strong>F</strong></td>\n<td>19, 20</td>\n<td>Muy pequeños, metacéntricos</td>\n<td>4</td>\n</tr>\n<tr>\n<td><strong>G</strong></td>\n<td>21, 22 + <strong>Y</strong></td>\n<td>Los más pequeños, <strong>acrocéntricos con satélites</strong> (el <strong>Y</strong>, sin satélites)</td>\n<td>4 (+ el Y en hombre)</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Es como ordenar a un grupo de personas en una foto: primero <strong>por altura</strong> (grandes delante, pequeños detrás) y luego <strong>por cómo son</strong> (dónde tienen la «cintura», el centrómero). Los únicos que llevan <strong>bolitas</strong> (satélites) son los acrocéntricos de los grupos <strong>D y G</strong>: son la pista más fácil para empezar.",
+     "truco": "<strong>«A-B-C-D-E-F-G = 3-2-7-3-3-2-2»</strong> (cuántos tipos de cromosoma hay en cada grupo). <strong>«Bolitas = D y G»</strong>. <strong>X en el C, Y en el G</strong>.",
+     "q": "¿Cuáles son los 7 grupos del cariotipo, qué cromosomas tiene cada uno y en cuáles hay satélites?",
+     "n": 34
+    },
+    {
+     "titulo": "Cómo se resuelve un cariotipo, paso a paso",
+     "lv": 1,
+     "fuente": "Hoja «Cariotipo» de la profe ⚠️ (método general)",
+     "defs": [
+      {
+       "t": "Trisomía",
+       "facil": "Tener 3 copias de un cromosoma en vez de 2.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Monosomía",
+       "facil": "Tener solo 1 copia.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Aneuploidía",
+       "facil": "Número de cromosomas distinto de 46.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>El ejercicio es ordenar el cariotipo y decir el <strong>diagnóstico</strong>. Los pasos:</p>\n<ol>\n<li><strong>Contar</strong> todos los cromosomas. Lo normal son <strong>46</strong>. Si hay 47 → sobra uno (<strong>trisomía</strong>); si hay 45 → falta uno (<strong>monosomía</strong>).</li>\n<li><strong>Separar por tamaño y por la posición del centrómero</strong> en los 7 grupos (concepto 34).</li>\n<li><strong>Contar cuántos hay en cada grupo</strong> y compararlo con lo normal: el grupo que tiene <strong>uno de más o de menos</strong> es el alterado.</li>\n<li><strong>Dentro de ese grupo, mirar las bandas</strong> para saber <strong>qué cromosoma exacto</strong> está repetido o falta.</li>\n<li><strong>Mirar los cromosomas sexuales:</strong> si hay <strong>Y</strong> (pequeño, sin satélites) → hombre; si no hay Y y el grupo C tiene 16 → <strong>XX</strong> (mujer).</li>\n<li><strong>Escribir la fórmula:</strong> <strong>nº total, sexo, alteración</strong> (concepto 36) y el <strong>nombre del síndrome</strong>.</li>\n</ol>",
+     "entiende": "No hace falta identificar los 46 uno por uno: basta con <strong>contar por grupos</strong> y encontrar <strong>el grupo que no cuadra</strong>. Después solo miras ese grupo con lupa.",
+     "truco": "<strong>«Cuento, Agrupo, Comparo, Miro bandas, Sexo, Fórmula»</strong> → <strong>«CA-CO-MI-SE-FO»</strong>.",
+     "q": "Explica en orden los pasos para resolver un cariotipo.",
+     "n": 35
+    },
+    {
+     "titulo": "La fórmula del cariotipo y las alteraciones más típicas",
+     "lv": 1,
+     "fuente": "Hoja «Cariotipo» de la profe ⚠️ (nomenclatura ISCN general; el PowerPoint solo da la nomenclatura de las bandas)",
+     "defs": [
+      {
+       "t": "Fórmula del cariotipo",
+       "facil": "Forma corta de escribir el resultado: número total de cromosomas, cromosomas sexuales y la alteración.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Síndrome",
+       "facil": "Conjunto de rasgos que aparecen juntos por una misma causa.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>El resultado se escribe con la nomenclatura <strong>ISCN</strong> (concepto 32): <strong>número total, cromosomas sexuales, alteración</strong>.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Fórmula</th>\n<th>Qué significa</th>\n<th>Nombre</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>46,XX</strong> / <strong>46,XY</strong></td>\n<td>Normal (mujer / hombre)</td>\n<td>Cariotipo normal</td>\n</tr>\n<tr>\n<td><strong>47,XX,+21</strong> / <strong>47,XY,+21</strong></td>\n<td>Tres cromosomas <strong>21</strong></td>\n<td><strong>Síndrome de Down</strong></td>\n</tr>\n<tr>\n<td><strong>47,XX,+18</strong> / <strong>47,XY,+18</strong></td>\n<td>Tres cromosomas <strong>18</strong> (grupo E)</td>\n<td>Síndrome de <strong>Edwards</strong></td>\n</tr>\n<tr>\n<td><strong>47,XX,+13</strong> / <strong>47,XY,+13</strong></td>\n<td>Tres cromosomas <strong>13</strong> (grupo D)</td>\n<td>Síndrome de <strong>Patau</strong></td>\n</tr>\n<tr>\n<td><strong>45,X</strong></td>\n<td>Solo un X (falta el segundo sexual)</td>\n<td>Síndrome de <strong>Turner</strong> (mujer)</td>\n</tr>\n<tr>\n<td><strong>47,XXY</strong></td>\n<td>Un X de más en un hombre</td>\n<td>Síndrome de <strong>Klinefelter</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "La fórmula se lee como una frase: «<strong>47</strong> cromosomas, <strong>XX</strong> mujer, <strong>+21</strong> tiene un 21 de más». El <strong>+</strong> significa «de más».",
+     "truco": "<strong>«21 Down, 18 Edwards, 13 Patau»</strong> → <strong>«Dos-Uno Down, Ocho-Edwards, Trece-Patau»</strong>. <strong>Turner = 45 (le falta)</strong>, <strong>Klinefelter = XXY (le sobra una X)</strong>.",
+     "q": "¿Cómo se escribe la fórmula de un cariotipo? Da la fórmula y el nombre de las trisomías 21, 18 y 13, del Turner y del Klinefelter.",
+     "n": 36
+    },
+    {
+     "titulo": "Ejercicio resuelto: el cariotipo de la hoja de la profe",
+     "lv": 1,
+     "fuente": "Hoja «Cariotipo» de la profe",
+     "defs": [
+      {
+       "t": "Diagnóstico",
+       "facil": "El nombre de lo que tiene la persona según su cariotipo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Trisomía 21 libre",
+       "facil": "Hay un cromosoma 21 entero de más, suelto (no pegado a otro).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Ordena el cariotipo de la hoja y da el diagnóstico.\n<strong>Solución, siguiendo los pasos del concepto 35:</strong></p>\n<ol>\n<li><strong>Contar:</strong> hay <strong>47 cromosomas</strong> (46 completos y uno cortado en el borde de abajo de la hoja) → <strong>uno de más: trisomía</strong>.</li>\n<li><strong>Agrupar:</strong> en la imagen de abajo están todos ordenados por grupos (el número gris es el que tenía cada uno en la hoja).</li>\n<li><strong>Comparar con lo normal:</strong></li>\n</ol>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Normal</th>\n<th>En esta hoja</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A (1-3)</td>\n<td>6</td>\n<td>6</td>\n</tr>\n<tr>\n<td>B (4-5)</td>\n<td>4</td>\n<td>4</td>\n</tr>\n<tr>\n<td>C (6-12 + X)</td>\n<td>16 en mujer</td>\n<td>15 completos + 1 cortado</td>\n</tr>\n<tr>\n<td>D (13-15)</td>\n<td>6</td>\n<td>6</td>\n</tr>\n<tr>\n<td>E (16-18)</td>\n<td>6</td>\n<td>6</td>\n</tr>\n<tr>\n<td>F (19-20)</td>\n<td>4</td>\n<td>4</td>\n</tr>\n<tr>\n<td><strong>G (21-22)</strong></td>\n<td><strong>4</strong></td>\n<td><strong>5 → aquí está el de más</strong></td>\n</tr>\n</tbody>\n</table></div>\n<ol start=\"4\">\n<li><strong>Mirar las bandas del grupo G:</strong> tres de los cinco tienen la <strong>banda oscura en mitad del brazo largo</strong>, que es lo típico del <strong>cromosoma 21</strong> → hay <strong>tres cromosomas 21</strong>.</li>\n<li><strong>Sexo:</strong> <strong>no hay ningún Y</strong> (no aparece ningún cromosoma pequeño sin satélites) y el grupo C tiene 15 completos + el cortado → <strong>XX, mujer</strong>.</li>\n<li><strong>Fórmula y diagnóstico:</strong> <strong>47,XX,+21 → trisomía 21 libre → síndrome de Down</strong>.</li>\n</ol>\n<p>⚠️ <strong>Aviso:</strong> el cromosoma de abajo del todo sale <strong>cortado por el borde</strong> de la hoja escaneada. Si en tu hoja de papel es <strong>mediano</strong> (como los del grupo C), es el segundo <strong>X</strong> → <strong>47,XX,+21 (mujer)</strong>. Si fuera <strong>pequeño y sin satélites</strong>, sería un <strong>Y</strong> → <strong>47,XY,+21 (hombre)</strong>. <strong>El diagnóstico (síndrome de Down) es el mismo en los dos casos.</strong> El orden dentro de cada grupo de la imagen es aproximado (por tamaño).</p>\n<p><strong>¿Cuál es el cromosoma sexual?</strong> Los cromosomas sexuales son el <strong>par 23</strong> (no llevan número, se llaman <strong>X</strong> e <strong>Y</strong>). En la hoja de la profe son <strong>los cromosomas 41 y 20</strong> (marcados en verde en la imagen): son <strong>los dos X</strong> → <strong>mujer, XX</strong>. Cómo se reconocen entre los 15 medianos del grupo C: <strong>1)</strong> son <strong>iguales entre sí</strong> y con el <strong>centrómero en el tercio de arriba</strong>; <strong>2)</strong> el <strong>brazo corto</strong> tiene <strong>una sola banda oscura en el medio</strong> (Xp21); <strong>3)</strong> el <strong>brazo largo</strong> tiene <strong>una banda oscura grande justo debajo del centrómero</strong> (Xq21). El cromosoma <strong>cortado (47) no es el sexual</strong>: es uno mediano que la hoja no muestra entero. ⚠️ El dibujo tiene poca resolución: 41 y 20 son la identificación más probable, no segura al 100 %.</p>",
+     "imgs": [
+      {
+       "src": "img/009.jpg",
+       "alt": "La hoja de la profe: los cromosomas desordenados",
+       "img": "<img src=\"img/009.jpg\" width=\"900\" height=\"1253\" loading=\"lazy\" decoding=\"async\" alt=\"La hoja de la profe: los cromosomas desordenados\" loading=\"lazy\">"
+      },
+      {
+       "src": "img/010.jpg",
+       "alt": "Los mismos cromosomas ordenados por grupos A-G (el número gris es el que tenían en la hoja)",
+       "img": "<img src=\"img/010.jpg\" width=\"900\" height=\"2177\" loading=\"lazy\" decoding=\"async\" alt=\"Los mismos cromosomas ordenados por grupos A-G (el número gris es el que tenían en la hoja)\" loading=\"lazy\">"
+      },
+      {
+       "src": "img/011.jpg",
+       "alt": "Los dos cromosomas sexuales (X) de la hoja: el 41 y el 20 → par 23 = XX, mujer",
+       "img": "<img src=\"img/011.jpg\" width=\"900\" height=\"727\" loading=\"lazy\" decoding=\"async\" alt=\"Los dos cromosomas sexuales (X) de la hoja: el 41 y el 20 → par 23 = XX, mujer\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "La clave del ejercicio son las <strong>bolitas (satélites)</strong>: solo las tienen los grupos D y G. Al contarlas salen <strong>6 grandes</strong> (D, normal) y <strong>5 pequeños</strong> (G, uno de más). Como el de más es un <strong>21</strong>, es un <strong>Down</strong>.",
+     "truco": "<strong>«47 y cinco pequeños con bolitas = Down»</strong>.",
+     "q": "¿Cuál es el diagnóstico del cariotipo de la hoja de la profe y cómo llegas a él? Escribe la fórmula.",
+     "n": 37
+    }
+   ],
+   "min": 30
+  }
+ ],
+ "trampas": [
+  [
+   "<strong>Heparina sódica</strong> (sí)",
+   "<strong>EDTA</strong> (nunca, tóxico)",
+   "Recuadro rojo de la profe"
+  ],
+  [
+   "<strong>Brazo p</strong> (corto, arriba)",
+   "<strong>Brazo q</strong> (largo, abajo)",
+   "p de <em>petit</em>"
+  ],
+  [
+   "<strong>IC próximo a 50</strong> (metacéntrico)",
+   "<strong>IC 0</strong> (telocéntrico)",
+   "Cuanto más al extremo, más bajo"
+  ],
+  [
+   "<strong>Acrocéntrico</strong> (&lt; 25)",
+   "<strong>Submetacéntrico</strong> (25-45)",
+   "Acro = casi en la punta"
+  ],
+  [
+   "<strong>Diploide 2n = 46</strong> (somáticas)",
+   "<strong>Haploide n = 23</strong> (gametos)",
+   "23 + 23 = 46"
+  ],
+  [
+   "<strong>22 autosomas + 2 sexuales</strong>",
+   "23 autosomas",
+   "22 pares + 1 par sexual"
+  ],
+  [
+   "<strong>Colchicina 45-60 min</strong>",
+   "<strong>KCl 20-40 min</strong>",
+   "Sacrificio vs choque hipotónico"
+  ],
+  [
+   "<strong>Choque corto:</strong> no se liberan los cromosomas",
+   "<strong>Choque largo:</strong> se deshace la metafase",
+   ""
+  ],
+  [
+   "<strong>Carnoy 3:1</strong>",
+   "1:3",
+   "3 de metanol : 1 de ácido acético"
+  ],
+  [
+   "<strong>G+ oscuras = AT</strong>",
+   "<strong>G− claras = CG</strong>",
+   "A de oscurA"
+  ],
+  [
+   "<strong>Bandas Q brillantes = G+</strong>",
+   "Bandas R = negativo de las G",
+   ""
+  ],
+  [
+   "<strong>R: calor + Giemsa</strong>",
+   "<strong>G: tripsina + Giemsa</strong>",
+   ""
+  ],
+  [
+   "<strong>T: variante de la R</strong>",
+   "Variante de la G",
+   "T tiñe telómeros"
+  ],
+  [
+   "<strong>NOR: nitrato de plata</strong>",
+   "Giemsa",
+   "NOR en el brazo corto de acrocéntricos"
+  ],
+  [
+   "<strong>Regiones desde el centrómero hacia el telómero</strong>",
+   "Desde el telómero",
+   ""
+  ],
+  [
+   "<strong>Tinción convencional:</strong> contar y agrupar",
+   "Identificar cada cromosoma",
+   "Para identificar hace falta bandeo"
+  ]
+ ],
+ "numeros": [
+  [
+   "50 / 25-45 / &lt; 25 / 0",
+   "IC de meta-, submeta-, acro- y telocéntricos"
+  ],
+  [
+   "46 (2n) / 23 (n)",
+   "Cromosomas de células somáticas / gametos"
+  ],
+  [
+   "23 pares = 22 autosomas + 1 par sexual",
+   "Cromosomas humanos"
+  ],
+  [
+   "1,5-10 ml",
+   "Medio de cultivo en la siembra"
+  ],
+  [
+   "37 ºC · 5 % CO2 · 72 h",
+   "Condiciones del cultivo"
+  ],
+  [
+   "24 y 48 h",
+   "Cuándo se agitan los tubos"
+  ],
+  [
+   "45-60 min, 37 º",
+   "Colchicina (sacrificio)"
+  ],
+  [
+   "KCl 0,075 M",
+   "Solución hipotónica"
+  ],
+  [
+   "20-40 min",
+   "Choque hipotónico"
+  ],
+  [
+   "100 % · 3:1",
+   "Carnoy: metanol 100 % + ácido acético glaciar 3:1"
+  ],
+  [
+   "1-2 gotas · 30 cm",
+   "Goteo de la extensión"
+  ],
+  [
+   "10 min · 2-3 %",
+   "Tinción convencional con Giemsa"
+  ],
+  [
+   "1 min",
+   "Duración del brillo de las bandas Q"
+  ],
+  [
+   "7q31.2",
+   "Ejemplo ISCN de la profe"
+  ],
+  [
+   "11p15.4",
+   "Locus del gen HBB"
+  ]
+ ],
+ "chequeo": [
+  "Definición de cromosoma, metafase y partes del cromosoma.",
+  "Los 4 tipos según el centrómero, con su IC.",
+  "Diploide y haploide; 22 autosomas + 2 sexuales.",
+  "Los 7 pasos con TODOS sus datos (heparina, no EDTA, RPMI, 37-5-72, 24/48 h, colchicina 45-60 min, KCl 0,075 M 20-40 min, Carnoy 3:1, 30 cm).",
+  "Tinción convencional: Giemsa 2-3 %, 10 min; qué permite y qué no.",
+  "Banda, región y marca.",
+  "Bandas G, Q, R, NOR y T.",
+  "ISCN 7q31.2 y locus (HBB 11p15.4).",
+  "ADN fetal libre: metodología y aplicaciones.",
+  "Las 5 preguntas llave, de memoria.",
+  "Cómo se resuelve un cariotipo y el diagnóstico de la hoja de la profe (47,XX,+21)."
+ ],
+ "impres": [
+  {
+   "titulo": "El cromosoma",
+   "items": [
+    [
+     "¿Cromosoma?",
+     "Material genético organizado: <strong>una molécula de ADN en interacción con proteínas</strong>."
+    ],
+    [
+     "¿Cuándo se analizan?",
+     "En <strong>metafase</strong> (más condensados y alineados)."
+    ],
+    [
+     "¿Partes?",
+     "<strong>Centrómero</strong> (divide en brazo <strong>p corto</strong> y <strong>q largo</strong>) y <strong>telómeros</strong> (extremos)."
+    ],
+    [
+     "¿Tipos según el centrómero?",
+     "<strong>Metacéntrico</strong> (medio, IC ≈ 50) · <strong>submetacéntrico</strong> (desplazado, 25-45) · <strong>acrocéntrico</strong> (muy distal, &lt; 25) · <strong>telocéntrico</strong> (extremo, 0)."
+    ],
+    [
+     "¿Diploide / haploide?",
+     "<strong>2n</strong> (somáticas; 23 pares = <strong>22 autosomas + 2 sexuales</strong>; homólogos) / <strong>n</strong> (gametos; por <strong>meiosis</strong>)."
+    ]
+   ]
+  },
+  {
+   "titulo": "Extensiones cromosómicas (🔑 la pregunta llave más probable)",
+   "items": [
+    [
+     "¿Muestra?",
+     "Sangre periférica (leucocitos) por <strong>venopunción</strong>, tubo estéril con <strong>heparina sódica</strong>. <strong>Nunca EDTA (tóxico).</strong> No congelar ni calentar."
+    ],
+    [
+     "¿Siembra?",
+     "Inocular en <strong>1,5-10 ml</strong> de <strong>RPMI 1640</strong> (DMEM, Ham F10)."
+    ],
+    [
+     "¿Cultivo?",
+     "<strong>37 ºC, 5 % CO2, 72 h</strong>; agitar a las <strong>24 y 48 h</strong>."
+    ],
+    [
+     "¿Sacrificio?",
+     "<strong>Colchicina 45-60 min, 37 º</strong>: inhibe microtúbulos, destruye el huso, <strong>para en metafase</strong>."
+    ],
+    [
+     "¿Choque hipotónico?",
+     "<strong>KCl 0,075 M, 20-40 min</strong>: hincha la célula. Poco: no se liberan; mucho: se deshace la metafase."
+    ],
+    [
+     "¿Fijación?",
+     "<strong>Carnoy</strong>: metanol 100 % + ácido acético glaciar <strong>3:1</strong>."
+    ],
+    [
+     "¿Extensión?",
+     "<strong>Goteo</strong>: 1-2 gotas desde <strong>30 cm</strong> sobre portaobjetos."
+    ]
+   ]
+  },
+  {
+   "titulo": "Tinción y bandeo",
+   "items": [
+    [
+     "¿Tinción convencional?",
+     "<strong>Giemsa 2-3 % u orceína, 10 min</strong>: permite <strong>contar y agrupar</strong>, no identificar en detalle."
+    ],
+    [
+     "¿Banda / región / marca?",
+     "Parte más oscura o clara / área entre dos marcas / característica para identificar (puntos de referencia, extremos, centrómeros, ciertas bandas)."
+    ],
+    [
+     "¿Bandas G?",
+     "<strong>Tripsina + Giemsa</strong>; la más usada; <strong>G+ oscuras = AT</strong>, G− claras = CG."
+    ],
+    [
+     "¿Bandas Q?",
+     "<strong>Quinacrina</strong> (acridina), fluorescencia; brillantes = G+; <strong>rápido, dura 1 min</strong>."
+    ],
+    [
+     "¿Bandas R?",
+     "<strong>Negativo de las G</strong>; <strong>calor + Giemsa</strong>."
+    ],
+    [
+     "¿Bandas NOR?",
+     "Genes de <strong>ARN ribosómico</strong>; <strong>nitrato de plata</strong>; brazo corto de <strong>acrocéntricos</strong>; patrón único."
+    ],
+    [
+     "¿Bandas T?",
+     "<strong>Telómeros</strong>; variante de la <strong>R</strong>; incubación larga."
+    ]
+   ]
+  },
+  {
+   "titulo": "Nomenclatura y casos",
+   "items": [
+    [
+     "¿ISCN?",
+     "Forma estandarizada de nombrar regiones: <strong>p arriba, q abajo</strong>, regiones <strong>desde el centrómero hacia el telómero</strong>; nº cromosoma, brazo, región, banda, subbanda."
+    ],
+    [
+     "¿7q31.2?",
+     "Cromosoma <strong>7</strong>, brazo <strong>q</strong>, región <strong>3</strong>, banda <strong>1</strong>, subbanda <strong>2</strong>."
+    ],
+    [
+     "¿Locus?",
+     "Lugar que ocupa un <strong>gen o marcador genético</strong> en un cromosoma."
+    ],
+    [
+     "¿HBB?",
+     "<strong>11p15.4</strong> (anemia falciforme; cromosoma 11)."
+    ],
+    [
+     "¿ADN fetal libre?",
+     "Sangre materna → plasma → ADN libre → NGS/PCR; cribado de trisomías <strong>21, 18 y 13</strong> sin amniocentesis."
+    ]
+   ]
+  }
+ ],
+ "glosario": [
+  [
+   "Acrocéntrico",
+   "Cromosoma con el centrómero casi en un extremo; brazo p muy pequeño. IC &lt; 25"
+  ],
+  [
+   "ADN",
+   "Ácido desoxirribonucleico: la molécula que guarda la información genética (doble hélice)"
+  ],
+  [
+   "ADN fetal libre",
+   "Fragmentos de ADN del feto (de la placenta) que circulan en la sangre de la madre; permiten diagnóstico prenatal sin pinchar el útero"
+  ],
+  [
+   "Amniocentesis",
+   "Prueba invasiva: se pincha el útero para sacar líquido amniótico y estudiar los cromosomas del feto"
+  ],
+  [
+   "Anafase",
+   "Fase de la mitosis en la que las cromátidas se separan hacia los polos (va justo después de la metafase)"
+  ],
+  [
+   "Anemia falciforme",
+   "Enfermedad hereditaria por mutación del gen HBB: los glóbulos rojos toman forma de hoz"
+  ],
+  [
+   "Anticoagulante",
+   "Sustancia que impide que la sangre coagule en el tubo (aquí: heparina sódica)"
+  ],
+  [
+   "ARN ribosómico",
+   "ARN que forma los ribosomas; sus genes están en las regiones NOR"
+  ],
+  [
+   "Autosoma",
+   "Cromosoma que no determina el sexo (pares 1 al 22)"
+  ],
+  [
+   "Banda cromosómica",
+   "Zona del cromosoma que se ve más oscura o más clara tras teñir"
+  ],
+  [
+   "Bandeo",
+   "Técnica de tinción que produce un patrón de bandas para identificar cada cromosoma"
+  ],
+  [
+   "Bandas G",
+   "Bandeo con tripsina + Giemsa; el más usado para el cariotipo. G+ oscuras (ricas en AT), G− claras (ricas en CG)"
+  ],
+  [
+   "Bandas NOR",
+   "Regiones organizadoras del nucléolo (genes de ARNr); se tiñen con nitrato de plata; en el brazo corto de los acrocéntricos"
+  ],
+  [
+   "Bandas Q",
+   "Bandeo con quinacrina (acridina) visto con fluorescencia; rápido pero dura ≈ 1 min"
+  ],
+  [
+   "Bandas R",
+   "\"Reverse\": patrón inverso a las G; se hacen con calor + Giemsa"
+  ],
+  [
+   "Bandas T",
+   "Variante de las R que tiñe los telómeros"
+  ],
+  [
+   "Brazo p",
+   "Brazo corto del cromosoma (p de <em>petit</em>); va arriba en el ideograma"
+  ],
+  [
+   "Brazo q",
+   "Brazo largo del cromosoma; va abajo en el ideograma"
+  ],
+  [
+   "Cariotipo",
+   "Conjunto de cromosomas de una célula ordenados por parejas según tamaño y centrómero. Normal: 46,XX o 46,XY"
+  ],
+  [
+   "Carnoy",
+   "Fijador: metanol 100 % + ácido acético glaciar en proporción 3:1"
+  ],
+  [
+   "Centrómero",
+   "Estrangulamiento del cromosoma que une las cromátidas y lo divide en brazo p y brazo q"
+  ],
+  [
+   "Choque hipotónico",
+   "Paso 5: se hincha la célula con KCl 0,075 M (20-40 min) para que los cromosomas se separen"
+  ],
+  [
+   "Citogenética",
+   "Ciencia que estudia los cromosomas: su número, forma y estructura"
+  ],
+  [
+   "Colchicina",
+   "Sustancia que impide formar microtúbulos, destruye el huso y para las células en metafase (45-60 min, 37 º)"
+  ],
+  [
+   "Cromátida",
+   "Cada una de las dos \"copias\" iguales que forman un cromosoma duplicado, unidas por el centrómero"
+  ],
+  [
+   "Cromosoma",
+   "Material genético organizado: una molécula de ADN unida a proteínas (histonas)"
+  ],
+  [
+   "Cromosoma homólogo",
+   "Cada uno de los dos cromosomas de una pareja (uno del padre y otro de la madre)"
+  ],
+  [
+   "Cromosomas sexuales",
+   "Par 23: XX en mujeres y XY en hombres"
+  ],
+  [
+   "Diploide (2n)",
+   "Célula con los cromosomas en parejas; en humanos 46. Son las células somáticas"
+  ],
+  [
+   "DMEM / Ham F10",
+   "Otros medios de cultivo que pueden usarse en la siembra"
+  ],
+  [
+   "EDTA",
+   "Anticoagulante que NUNCA se usa para cariotipo porque es tóxico para las células"
+  ],
+  [
+   "Eucariota",
+   "Organismo cuyas células tienen núcleo (como los humanos)"
+  ],
+  [
+   "Extensión cromosómica",
+   "Preparación en portaobjetos con los cromosomas esparcidos para verlos al microscopio"
+  ],
+  [
+   "Fijación",
+   "Paso 6: conservar las células con Carnoy para que no se estropeen"
+  ],
+  [
+   "Fluorescencia (microscopio de)",
+   "Microscopio que ilumina con luz especial para ver sustancias que brillan, como la quinacrina"
+  ],
+  [
+   "Gameto",
+   "Célula sexual (óvulo o espermatozoide); haploide, con 23 cromosomas"
+  ],
+  [
+   "Giemsa",
+   "Colorante usado en la tinción convencional (2-3 %, 10 min) y en las bandas G y R"
+  ],
+  [
+   "Goteo",
+   "Técnica de extensión: dejar caer 1-2 gotas desde unos 30 cm sobre el portaobjetos"
+  ],
+  [
+   "Haploide (n)",
+   "Célula con un solo juego de cromosomas (23 en humanos): los gametos; se forman por meiosis"
+  ],
+  [
+   "HBB",
+   "Gen de la cadena β de la hemoglobina; locus 11p15.4; mutado en la anemia falciforme"
+  ],
+  [
+   "Heparina sódica",
+   "Anticoagulante correcto para la muestra de cariotipo"
+  ],
+  [
+   "Hipotónica (solución)",
+   "Solución con menos sales que el interior de la célula: entra agua y la célula se hincha"
+  ],
+  [
+   "Histonas",
+   "Proteínas sobre las que se enrolla el ADN"
+  ],
+  [
+   "Huso mitótico",
+   "\"Andamio\" de microtúbulos que separa los cromosomas en la división; la colchicina lo destruye"
+  ],
+  [
+   "Ideograma",
+   "Dibujo esquemático de los cromosomas con sus bandas, p arriba y q abajo"
+  ],
+  [
+   "Índice centromérico (IC)",
+   "Número que indica dónde está el centrómero: <strong>IC = (longitud del brazo corto ÷ longitud total del cromosoma) × 100</strong>. Si el centrómero está en el medio, los brazos son iguales y el IC es ≈ 50 (metacéntrico); cuanto más hacia el extremo, más pequeño es el brazo corto y más baja el IC: 25-45 submetacéntrico, &lt; 25 acrocéntrico, 0 telocéntrico (no hay brazo corto). Ejemplo: brazo corto 2 µm y cromosoma total 10 µm → IC = 2/10 × 100 = 20 → acrocéntrico"
+  ],
+  [
+   "Interfase",
+   "Etapa en que la célula no se divide; los cromosomas no se ven (cromatina)"
+  ],
+  [
+   "ISCN",
+   "Sistema internacional estandarizado para nombrar regiones cromosómicas (ej.: 7q31.2)"
+  ],
+  [
+   "KCl 0,075 M",
+   "Cloruro de potasio muy diluido: la solución hipotónica del paso 5"
+  ],
+  [
+   "Leucocitos",
+   "Células blancas de la sangre; tienen núcleo, por eso se usan para estudiar los cromosomas"
+  ],
+  [
+   "Locus (plural: loci)",
+   "Lugar exacto que ocupa un gen o marcador en un cromosoma"
+  ],
+  [
+   "Marca cromosómica",
+   "Rasgo que sirve de referencia para identificar un cromosoma: puntos de referencia, extremos de los brazos, centrómeros, ciertas bandas"
+  ],
+  [
+   "Meiosis",
+   "División que produce gametos haploides (n)"
+  ],
+  [
+   "Metacéntrico",
+   "Cromosoma con el centrómero en el medio y brazos iguales. IC ≈ 50"
+  ],
+  [
+   "Metafase",
+   "Fase de la mitosis con los cromosomas más condensados y alineados en el centro: la fase en la que se estudian"
+  ],
+  [
+   "Microtúbulo",
+   "Tubito de α- y β-tubulina que forma el huso mitótico"
+  ],
+  [
+   "Mitosis",
+   "División que da 2 células hijas iguales con 46 cromosomas cada una"
+  ],
+  [
+   "Nitrato de plata",
+   "Colorante de las bandas NOR"
+  ],
+  [
+   "Nucleosoma",
+   "ADN enrollado alrededor de histonas (\"collar de perlas\")"
+  ],
+  [
+   "Orceína",
+   "Colorante alternativo al Giemsa en la tinción convencional"
+  ],
+  [
+   "Ósmosis",
+   "Paso de agua a través de la membrana hacia donde hay más sales"
+  ],
+  [
+   "Portaobjetos",
+   "Cristal rectangular sobre el que se hace la extensión para el microscopio"
+  ],
+  [
+   "Profase / prometafase",
+   "Primeras fases de la mitosis: los cromosomas empiezan a condensarse"
+  ],
+  [
+   "Quinacrina (acridina)",
+   "Colorante fluorescente de las bandas Q"
+  ],
+  [
+   "Región cromosómica",
+   "Zona entre dos marcas; puede contener varias bandas"
+  ],
+  [
+   "RPMI 1640",
+   "Medio de cultivo principal de la siembra (resaltado por la profe)"
+  ],
+  [
+   "Sacrificio del cultivo",
+   "Paso 4: parar las células en metafase con colchicina"
+  ],
+  [
+   "Sangre periférica",
+   "Sangre de las venas del brazo; el tejido más fácil de obtener"
+  ],
+  [
+   "Siembra",
+   "Paso 2: inocular la muestra en medio de cultivo (1,5-10 ml)"
+  ],
+  [
+   "Célula somática",
+   "Cualquier célula del cuerpo que no es gameto; diploide (46)"
+  ],
+  [
+   "Subbanda",
+   "Subdivisión de una banda (en 7q31.2, el \"2\")"
+  ],
+  [
+   "Submetacéntrico",
+   "Cromosoma con el centrómero algo desplazado; brazo corto y largo. IC 25-45"
+  ],
+  [
+   "Telocéntrico",
+   "Cromosoma con el centrómero en un extremo; solo brazo largo. IC 0"
+  ],
+  [
+   "Telofase",
+   "Última fase de la mitosis: se forman los dos núcleos hijos"
+  ],
+  [
+   "Telómero",
+   "Extremo de cada brazo del cromosoma"
+  ],
+  [
+   "Tinción convencional",
+   "Teñido uniforme con Giemsa u orceína: permite contar y agrupar, pero no identificar en detalle"
+  ],
+  [
+   "Trisomía",
+   "Tener 3 copias de un cromosoma en lugar de 2 (ej.: trisomía 21 = síndrome de Down)"
+  ],
+  [
+   "Tripsina",
+   "Enzima que degrada proteínas; en las bandas G produce el patrón de bandas"
+  ],
+  [
+   "Venopunción",
+   "Pinchar una vena para sacar sangre"
+  ]
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "llave",
+   "html": "<section class=\"xs\" id=\"llave\"><h2 class=\"xs-h\">🔑 Bloque 10 · Preguntas llave</h2><p><strong>Recuerda:</strong> en Biología Molecular la profe pone una <strong>pregunta llave</strong>: si no la contestas, el resto del examen no vale. Estas son las candidatas, <strong>de la más a la menos probable</strong>, con su respuesta modelo. <strong>Apréndelas de memoria</strong> y escríbelas al menos una vez.</p><details class=\"pq\"><summary><span class=\"pn\">🔑 1</span> Haz un esquema de las etapas del proceso de obtención de extensiones cromosómicas.</summary><div class=\"pa\"><p>1) <strong>Muestra:</strong> sangre periférica por <strong>venopunción</strong> en tubo estéril con <strong>heparina sódica</strong> (<strong>nunca EDTA</strong>, es tóxico; no congelar ni calentar). 2) <strong>Siembra:</strong> inocular en <strong>1,5-10 ml</strong> de medio <strong>RPMI 1640</strong> (o DMEM, Ham F10). 3) <strong>Cultivo:</strong> <strong>37 ºC, 5 % CO2, 72 h</strong>, agitando a las <strong>24 y 48 h</strong>. 4) <strong>Sacrificio:</strong> <strong>colchicina 45-60 min a 37 º</strong>; inhibe los microtúbulos, destruye el huso y <strong>para en metafase</strong>. 5) <strong>Choque hipotónico:</strong> <strong>KCl 0,075 M, 20-40 min</strong>; hincha la célula y separa los cromosomas. 6) <strong>Fijación:</strong> <strong>Carnoy</strong> (metanol 100 % + ácido acético glaciar <strong>3:1</strong>). 7) <strong>Extensión:</strong> goteo de <strong>1-2 gotas desde 30 cm</strong> sobre portaobjetos. Después: tinción y bandeo. Por qué es la más probable: es literalmente el caso práctico de la profe y concentra casi todas sus marcas. <span class=\"ref\">→ conceptos 12-21.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">🔑 2</span> Explica las técnicas de bandeo cromosómico (G, Q, R, NOR y T).</summary><div class=\"pa\"><p><strong>G:</strong> tripsina + Giemsa; la más usada para el cariotipo; G+ oscuras ricas en AT, G− claras ricas en CG. <strong>Q:</strong> quinacrina (acridina), microscopio de fluorescencia; bandas brillantes = G+; rápida pero poco duradera (≈ 1 min). <strong>R (reverse):</strong> negativo de las G; calor + Giemsa. <strong>NOR:</strong> genes de ARN ribosómico; nitrato de plata; brazo corto de los acrocéntricos; patrón único en cada persona. <strong>T:</strong> variante de la R con incubación larga; tiñe los telómeros. <span class=\"ref\">→ conceptos 26-31.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">🔑 3</span> Nomenclatura ISCN: desglosa 7q31.2. ¿Qué locus tiene el gen HBB?</summary><div class=\"pa\"><p><strong>7q31.2</strong> = cromosoma <strong>7</strong>, brazo <strong>q</strong> (largo), región <strong>3</strong>, banda <strong>1</strong>, subbanda <strong>2</strong>. Las regiones se numeran <strong>desde el centrómero hacia el telómero</strong>; p arriba y q abajo. <strong>HBB = 11p15.4</strong>: cromosoma 11, brazo corto, región 1, banda 5, subbanda 4. <span class=\"ref\">→ conceptos 23, 32 y 33.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">🔑 4</span> Clasifica los cromosomas según la posición del centrómero.</summary><div class=\"pa\"><p><strong>Metacéntricos:</strong> centrómero en posición media, brazos iguales, IC próximo a 50. <strong>Submetacéntricos:</strong> centrómero desplazado, brazo corto y largo, IC 25-45. <strong>Acrocéntricos:</strong> centrómero muy distal, brazo corto muy pequeño, IC &lt; 25. <strong>Telocéntricos:</strong> centrómero en un extremo, solo un brazo largo, IC 0. <span class=\"ref\">→ concepto 5.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">🔑 5</span> ¿Para qué sirve la colchicina? ¿Por qué nunca se usa EDTA?</summary><div class=\"pa\"><p>La <strong>colchicina</strong> inhibe la polimerización de los microtúbulos, destruye el huso mitótico y <strong>detiene las células en metafase</strong> (45-60 min, 37 º). El <strong>EDTA</strong> nunca se usa como anticoagulante porque es <strong>tóxico para las células</strong>; se usa <strong>heparina sódica</strong>. <span class=\"ref\">→ conceptos 13 y 16.</span></p></div></details></section>",
+   "opcion": "🔑 Bloque 10 · Preguntas llave",
+   "arriba": "<a class=\"dl llv b10\" href=\"#llave\"><span class=\"dn\">10</span>🔑 Preguntas llave</a>"
+  },
+  {
+   "id": "hoja",
+   "html": "<section class=\"xs\" id=\"hoja\"><h2 class=\"xs-h\">📝 Casos prácticos y ejercicio de la profe, resueltos</h2><p>Resuélvelos antes de abrir la respuesta.</p><details class=\"pq\"><summary><span class=\"pn\">P1</span> Caso práctico 2 · ADN fetal libre en sangre materna: metodología y aplicaciones.</summary><div class=\"pa\"><p>⚠️ No viene en el PowerPoint. <strong>Metodología:</strong> extracción de sangre materna (desde la semana 10 aprox.) → centrifugación para separar el plasma → extracción del ADN libre circulante (una parte, ≈ 10 %, es fetal y procede de la placenta) → secuenciación masiva (NGS) o PCR y análisis bioinformático. <strong>Aplicaciones:</strong> cribado prenatal no invasivo de las trisomías <strong>21, 18 y 13</strong>, alteraciones de los cromosomas sexuales, sexo fetal y Rh fetal. Si sale positivo, se confirma con una prueba invasiva. <span class=\"ref\">→ concepto 22.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P2</span> Caso práctico 3 · Anemia falciforme: ¿qué cromosoma está afectado y qué locus tiene el gen HBB?</summary><div class=\"pa\"><p>⚠️ No viene en el PowerPoint. El <strong>cromosoma 11</strong> (las dos copias, herencia autosómica recesiva). El gen <strong>HBB</strong> (cadena β de la hemoglobina) está en el <strong>locus 11p15.4</strong>. <span class=\"ref\">→ concepto 23.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P3</span> 🧪 Ejercicio de la profe · Ordena el cariotipo de la hoja «Cariotipo» y da el diagnóstico.</summary><div class=\"pa\"><p><strong>47 cromosomas con tres cromosomas 21 → trisomía 21 = síndrome de Down: 47,XX,+21</strong> (o 47,XY,+21 si el cromosoma cortado del borde fuera un Y). La explicación completa, con las imágenes, está en el <strong>Bloque 9</strong> <span class=\"ref\">→ conceptos 34-37.</span></p></div></details></section>",
+   "opcion": "📝 Casos prácticos y ejercicio",
+   "indice": "📝 Casos prácticos y ejercicio"
+  },
+  {
+   "id": "trampas",
+   "opcion": "⚠️ Trampas",
+   "indice": "⚠️ Trampas"
+  },
+  {
+   "id": "numeros",
+   "titulo": "🔢 Números clave",
+   "opcion": "🔢 Números clave",
+   "indice": "🔢 Números clave"
+  },
+  {
+   "id": "chequeo",
+   "opcion": "✅ Chequeo final",
+   "indice": "✅ Chequeo final"
+  },
+  {
+   "id": "impres",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "titulo": "📖 Glosario",
+   "opcion": "📖 Glosario",
+   "indice": "📖 Glosario"
+  }
+ ]
+}

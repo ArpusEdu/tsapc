@@ -1,0 +1,2879 @@
+{
+ "unidad": "fisio2",
+ "titulo": "Fisio 2 · Repaso de tejidos",
+ "eyebrow": "🫀 Fisiopatología · 2º examen · 28 de octubre",
+ "h1": "Repaso completo: los tejidos y la anatomía",
+ "sub": "Unidad 2 · El nivel anatómico · las 102 diapositivas, en el mismo orden que el PowerPoint · 13 bloques · 70 conceptos",
+ "subHtml": "Unidad 2 · El nivel anatómico · las <b>102 diapositivas</b>, en el mismo orden que el PowerPoint · 13 bloques · 70 conceptos",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene siempre las mismas partes, en este orden:</b></p>\n<ul><li><b>📍 Diapositiva</b>: de dónde sale.</li>\n<li><b>📘 Qué significa cada palabra</b>: primero <b>💡 Para entenderlo</b> (fácil) y después <b>📌 Definición de la diapositiva</b>, que es <b>la que tienes que dar en el examen</b>. Si pone <b>⚠️ La diapositiva no la define</b>, vale la definición general.</li>\n<li><b>📋 Lo que dice la profe</b>: el contenido del PowerPoint, completo.</li>\n<li><b>💡 Entiéndelo</b> y <b>🧠 Truco</b>: para comprenderlo y no olvidarlo.</li>\n<li><b>❓ Ponte a prueba</b>: contesta sin mirar. Si te sale, marca <b>Lo domino</b>.</li></ul>\n<p><b>Colores:</b> 🔴 imprescindible (sí o sí) · 🟠 importante · 🔵 basta con leerlo una vez.</p><p><b>Botones de la página:</b></p>\n<ul><li><b>☰ Índice</b> (abajo a la izquierda): todos los bloques y conceptos; toca uno para ir directo.</li>\n<li><b>💡 Tapar</b> (abajo a la derecha): tapa todas las definiciones; toca cada una para destaparla.</li>\n<li><b>🃏 Tarjetas</b>: pregunta por delante, respuesta por detrás. Elige bloque y practica.</li>\n<li><b>🔎 Buscar</b> (arriba): escribe cualquier palabra y toca el resultado.</li>\n<li><b>Ponte a prueba</b> (arriba): esconde las respuestas y deja solo las preguntas.</li></ul>\n<p><b>Orden recomendado:</b> bloques en orden → tarjetas de cada bloque → las 20 preguntas de la hoja → trampas → <b>Simulacro</b>.</p></div>",
+ "clave": "fisio2-repaso-v3",
+ "examen": {
+  "em": "🫀",
+  "asig": "Fisiopatología",
+  "examen": "2º examen",
+  "fecha": "2026-10-28"
+ },
+ "simulacro": "fisio2/simulacro/",
+ "tipografia": "Young+Serif",
+ "buscar": [
+  [
+   "#hoja",
+   "20 preguntas de la hoja"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "plan": {
+  "repaso": "[\n {t:\"🔁 Tarjetas: solo las que fallé\",d:\"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.\",m:20,u:\"#fc\",rev:1},\n {t:\"📝 Simulacro completo\",d:\"Las 9 partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.\",m:100,u:EXAM.simulacro,rev:1},\n {t:\"🩹 Repasa lo que fallaste en el Simulacro\",d:\"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».\",m:30,u:EXAM.simulacro,rev:1},\n {t:\"📝 Las 20 preguntas de la hoja de la profe\",d:\"Contéstalas en voz alta antes de abrir cada respuesta. Es lo más parecido al examen.\",m:40,u:\"#hoja\",rev:1},\n {t:\"⚠️ Trampas y 🔢 números clave\",d:\"Las parejas que se confunden y las cifras (%, µm, mm/h…).\",m:20,u:\"#trampas\",rev:1},\n {t:\"⚡ Lo imprescindible\",d:\"Pregunta → respuesta corta. Lo último antes de dormir.\",m:20,u:\"#impres\",rev:1}]",
+  "unDia": "⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴, las 20 preguntas de la hoja y \"Lo imprescindible\"."
+ },
+ "bloques": [
+  {
+   "titulo": "Histología: conceptos base",
+   "conceptos": [
+    {
+     "titulo": "De qué trata la unidad: histología y anatomía",
+     "lv": 2,
+     "fuente": "Diapositiva 1 (portada e índice)",
+     "defs": [
+      {
+       "t": "Histología",
+       "facil": "Ciencia que estudia los <strong>tejidos</strong> (cómo son al microscopio, cómo se forman y qué hacen).",
+       "diapo": "Ciencia que estudia la estructura microscópica, el desarrollo y las funciones de los tejidos."
+      },
+      {
+       "t": "Anatomía",
+       "facil": "Ciencia que estudia la <strong>estructura del cuerpo</strong> (órganos, sistemas y aparatos, y dónde está cada cosa).",
+       "diapo": "Anatomía es la ciencia que estudia la estructura del organismo."
+      },
+      {
+       "t": "Tejido",
+       "facil": "Conjunto de células que hacen la misma función.",
+       "diapo": "Conjunto de células que cumple la misma función en el organismo (boca y piel)."
+      }
+     ],
+     "prof": "<p>La unidad 2 («El nivel anatómico») tiene <strong>dos partes</strong>:</p>\n<ol>\n<li><strong>Histología</strong> → estudia los <strong>4 tejidos básicos</strong>:<ul>\n<li>a) <strong>Tejido epitelial:</strong> reviste las superficies del cuerpo y forma las glándulas.</li>\n<li>b) <strong>Tejido muscular:</strong> sus células se contraen y producen el movimiento.</li>\n<li>c) <strong>Tejido nervioso:</strong> transmite impulsos nerviosos (órdenes e información).</li>\n<li>d) <strong>Tejido conectivo:</strong> rellena y sostiene; incluye conjuntivo, cartílago, hueso, grasa, sangre, tejido hematopoyético y linfático.</li>\n</ul>\n</li>\n<li><strong>Anatomía</strong> → cómo esos tejidos forman <strong>órganos</strong>, <strong>sistemas</strong> y <strong>aparatos</strong>, y los <strong>planos y direcciones</strong> para describir el cuerpo.</li>\n</ol>\n<p>Imagen de portada: un cuerpo con <strong>8 ejemplos de tejido</strong>: <strong>cartilaginoso</strong> (oreja, nariz), <strong>nervioso</strong> (cerebro y nervios), <strong>adiposo</strong> (grasa), <strong>óseo</strong> (huesos), <strong>sangre</strong>, <strong>muscular</strong>, <strong>conjuntivo</strong> y <strong>epitelial</strong> (piel). Cartilaginoso, adiposo, óseo, sangre y conjuntivo son tipos de <strong>tejido conectivo</strong>.</p>",
+     "entiende": "La unidad va <strong>de lo pequeño a lo grande</strong>: célula → <strong>tejido</strong> (histología) → <strong>órgano</strong> → <strong>sistema / aparato</strong> (anatomía). Primero aprendes las \"piezas\" (tejidos) y luego cómo se montan (órganos y aparatos).",
+     "truco": "<strong>Histo = tejido</strong> («histología = estudio de los tejidos»); <strong>Anatomía = el mapa del cuerpo</strong>. Los 4 tejidos: <strong>CEMN</strong> (Conectivo, Epitelial, Muscular, Nervioso).",
+     "q": "¿En qué dos partes se divide la unidad, qué estudia cada una y cuáles son los 4 tejidos de la histología?",
+     "n": 1
+    },
+    {
+     "titulo": "Datos del cuerpo",
+     "lv": 3,
+     "fuente": "Diapositiva 2",
+     "defs": [
+      {
+       "t": "Célula",
+       "facil": "La unidad más pequeña de un ser vivo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Tipo celular",
+       "facil": "Cada clase de célula según su forma y función (neurona, glóbulo rojo…).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>El cuerpo tiene <strong>aprox. 30 billones de células</strong> y <strong>unos 200 tipos celulares</strong>.</p>",
+     "entiende": "<strong>30 billones</strong> de células, pero solo <strong>unos 200 tipos</strong>: muchas células son iguales entre sí y se agrupan en <strong>tejidos</strong> según su función.",
+     "truco": "<strong>\"30 billones y 200 tipos\"</strong> → piensa en <strong>30 días</strong> del mes y <strong>200</strong> como el doble de 100.",
+     "q": "¿Cuántas células y cuántos tipos celulares tiene aproximadamente el cuerpo humano?",
+     "n": 2
+    },
+    {
+     "titulo": "Tejido e histología",
+     "lv": 2,
+     "fuente": "Diapositiva 2",
+     "prof": "<ul>\n<li><strong>Tejido:</strong> conjunto de células que cumple la <strong>misma función</strong> en el organismo (ej.: boca y piel).</li>\n<li><strong>Histología:</strong> ciencia que estudia la <strong>estructura microscópica, el desarrollo y las funciones de los tejidos</strong>.</li>\n</ul>",
+     "entiende": "<em>histo</em> = tejido, <em>logía</em> = estudio. Un tejido es un <strong>equipo de células</strong> que hacen el mismo trabajo.",
+     "truco": "La histología estudia <strong>3 cosas de los tejidos</strong>: <strong>\"Estructura, Desarrollo, Función\" (EDF)</strong>.",
+     "q": "¿Qué es un tejido y qué estudia la histología?",
+     "n": 3
+    },
+    {
+     "titulo": "Los cuatro tipos de tejido",
+     "lv": 1,
+     "fuente": "Diapositiva 3 (imagen)",
+     "tituloHtml": "Los cuatro tipos de tejido <span class=\"note\">📷 con imagen</span>",
+     "prof": "<p>Hay <strong>4 tipos básicos de tejido</strong>: <strong>conectivo, epitelial, muscular y nervioso.</strong></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tejido</th>\n<th>Qué hace (en una frase)</th>\n<th>Ejemplo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Epitelial</strong></td>\n<td><strong>Reviste</strong> superficies y forma <strong>glándulas</strong></td>\n<td>Piel, interior del intestino</td>\n</tr>\n<tr>\n<td><strong>Muscular</strong></td>\n<td>Se <strong>contrae</strong> y produce el movimiento</td>\n<td>Bíceps, corazón</td>\n</tr>\n<tr>\n<td><strong>Nervioso</strong></td>\n<td><strong>Transmite</strong> impulsos nerviosos</td>\n<td>Cerebro, nervios</td>\n</tr>\n<tr>\n<td><strong>Conectivo</strong></td>\n<td><strong>Rellena y sostiene</strong> a los demás</td>\n<td>Hueso, cartílago, grasa, sangre</td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/001.jpg",
+       "alt": "Los 4 tejidos (diap. 3)",
+       "img": "<img src=\"img/001.jpg\" width=\"760\" height=\"545\" loading=\"lazy\" decoding=\"async\" alt=\"Los 4 tejidos (diap. 3)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Todo el cuerpo está hecho solo con estos 4 tejidos combinados. Cada órgano mezcla varios: el estómago tiene epitelio por dentro, músculo en la pared, nervios y conectivo que lo une todo.",
+     "truco": "<strong>\"CEMN\"</strong> → <strong>C</strong>onectivo, <strong>E</strong>pitelial, <strong>M</strong>uscular, <strong>N</strong>ervioso. Piensa en un <strong>edificio</strong>: el <strong>epitelial</strong> es la <strong>pintura y las paredes</strong> (reviste), el <strong>conectivo</strong> es el <strong>cemento y las vigas</strong> (rellena y sostiene), el <strong>muscular</strong> son los <strong>motores</strong> (mueve) y el <strong>nervioso</strong> son los <strong>cables</strong> (transmite).",
+     "q": "¿Cuáles son los cuatro tipos básicos de tejido y qué hace cada uno?",
+     "n": 4
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Tejido epitelial",
+   "conceptos": [
+    {
+     "titulo": "Características generales",
+     "lv": 1,
+     "fuente": "Diapositivas 4 y 5",
+     "defs": [
+      {
+       "t": "Membrana basal (lámina basal)",
+       "facil": "Capa fina que une el epitelio al tejido conectivo de debajo.",
+       "diapo": "El tejido epitelial está unido al tejido conectivo mediante la membrana basal."
+      },
+      {
+       "t": "Difusión",
+       "facil": "Paso de sustancias de donde hay más a donde hay menos, sin gastar energía.",
+       "diapo": "El epitelio no contiene vasos sanguíneos: obtiene nutrientes por difusión desde el tejido conectivo."
+      },
+      {
+       "t": "Revestimiento",
+       "facil": "Que cubre o tapiza una superficie.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Función básica <strong>protectora</strong>.</li>\n<li><strong>Una o varias capas</strong> de células <strong>muy unidas</strong>.</li>\n<li>Unido al tejido conectivo mediante la <strong>membrana basal</strong> (lámina basal).</li>\n<li><strong>No contiene vasos sanguíneos:</strong> obtiene nutrientes <strong>por difusión desde el tejido conectivo</strong>.</li>\n<li>Dos tipos: <strong>epitelio de revestimiento</strong> y <strong>epitelio glandular</strong>.</li>\n</ul>\n<p>Esquema: epitelio → lámina basal → tejido conectivo (fibras colágenas y elásticas, macrófago, capilar, fibroblasto, mastocito, matriz de proteoglicanos).</p>",
+     "entiende": "El epitelio es como las <strong>baldosas de un suelo</strong>: muy juntas, sin nada entre ellas, pegadas sobre un <strong>cemento</strong> (la membrana basal). No tiene tuberías propias (vasos): la comida le llega \"por debajo\", desde el conectivo.",
+     "truco": "<strong>\"Epitelio = Pegado, Protege y Pasa hambre\"</strong> (sin vasos → difusión).",
+     "q": "¿Cómo es el tejido epitelial, cómo se une al conectivo y cómo se nutre si no tiene vasos?",
+     "n": 5
+    },
+    {
+     "titulo": "Epitelios de revestimiento: características",
+     "lv": 3,
+     "fuente": "Diapositiva 6",
+     "defs": [
+      {
+       "t": "Uniones ocluyentes",
+       "facil": "Uniones que <strong>sellan</strong> el espacio entre células para que nada pase entre ellas.",
+       "diapo": "Las células de los epitelios de revestimiento están estrechamente unidas mediante uniones ocluyentes y uniones de anclaje."
+      },
+      {
+       "t": "Uniones de anclaje",
+       "facil": "Uniones que <strong>sujetan</strong> las células entre sí.",
+       "diapo": "Las células de los epitelios de revestimiento están estrechamente unidas mediante uniones ocluyentes y uniones de anclaje."
+      },
+      {
+       "t": "Matriz extracelular (MEC)",
+       "facil": "El material que hay <strong>entre</strong> las células.",
+       "diapo": "En los epitelios de revestimiento no existe matriz extracelular entre las células."
+      },
+      {
+       "t": "Citoesqueleto",
+       "facil": "El \"esqueleto\" interno de la célula.",
+       "diapo": "Los epitelios de revestimiento soportan bien tensiones mecánicas (citoesqueleto)."
+      },
+      {
+       "t": "Cilios",
+       "facil": "Pelitos móviles.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Queratina",
+       "facil": "Proteína dura e impermeable.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Células <strong>estrechamente unidas</strong> por <strong>uniones ocluyentes y de anclaje</strong>.</li>\n<li><strong>No hay matriz extracelular</strong> entre ellas.</li>\n<li>Soportan bien <strong>tensiones mecánicas</strong> (citoesqueleto).</li>\n<li>Algunas tienen <strong>cilios o queratina</strong>.</li>\n<li><strong>Tapizan todas las superficies del cuerpo.</strong></li>\n</ul>\n<p>Fig. 2.1: epidermis (a) y epitelio de la tráquea (b).</p>",
+     "entiende": "El epitelio de revestimiento es una <strong>\"pared de ladrillos sin cemento entre ellos\"</strong>: las células se tocan directamente (uniones), no hay matriz en medio. Por eso es una buena <strong>barrera</strong> y aguanta tirones gracias a su citoesqueleto.",
+     "truco": "<strong>\"Pegadas, sin relleno, resistentes y por todas partes\"</strong>: uniones fuertes, <strong>sin MEC</strong>, aguantan tensiones y <strong>tapizan todo</strong> el cuerpo.",
+     "q": "¿Qué características tienen los epitelios de revestimiento?",
+     "n": 6
+    },
+    {
+     "titulo": "Clasificación del epitelio de revestimiento",
+     "lv": 1,
+     "fuente": "Diapositiva 7",
+     "defs": [
+      {
+       "t": "Simple",
+       "facil": "Una sola capa de células.",
+       "diapo": "Simples: planos, cúbicos, cilíndricos."
+      },
+      {
+       "t": "Estratificado",
+       "facil": "Varias capas.",
+       "diapo": "Estratificados: planas, cúbicas o cilíndricas."
+      },
+      {
+       "t": "Pseudoestratificado",
+       "facil": "Una capa que parece varias.",
+       "diapo": "Pseudoestratificados: cilíndricos."
+      },
+      {
+       "t": "Escamoso / prismático",
+       "facil": "Otros nombres de plano / cilíndrico.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Simples</strong> (una capa): planos, cúbicos, cilíndricos.</li>\n<li><strong>Pseudoestratificados</strong>: cilíndricos (parecen varias capas, pero es una).</li>\n<li><strong>Estratificados</strong> (varias capas): planos, cúbicos o cilíndricos.</li>\n</ul>\n<p>Imagen: simple escamoso, simple cúbico, simple prismático, pseudoestratificado, estratificado plano, estratificado plano queratinizado, estratificado prismático, estratificado cúbico y de transición.</p>",
+     "imgs": [
+      {
+       "src": "img/002.jpg",
+       "alt": "Tipos de epitelio de revestimiento (diap. 7)",
+       "img": "<img src=\"img/002.jpg\" width=\"760\" height=\"526\" loading=\"lazy\" decoding=\"async\" alt=\"Tipos de epitelio de revestimiento (diap. 7)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Se nombran con <strong>2 apellidos</strong>: <strong>nº de capas</strong> (simple / estratificado) + <strong>forma de la célula de arriba</strong> (plana, cúbica, cilíndrica). <em>Pseudo</em> = falso: <strong>parece</strong> que tiene varias capas porque los núcleos están a distintas alturas, pero todas las células tocan la membrana basal.",
+     "truco": "<strong>plano = huevo frito</strong>, <strong>cúbico = dado</strong>, <strong>cilíndrico = lata de refresco</strong>.",
+     "q": "¿Cómo se clasifican los epitelios de revestimiento según sus capas y la forma de sus células?",
+     "n": 7
+    },
+    {
+     "titulo": "Epitelio simple (monoestratificado): dónde está",
+     "lv": 1,
+     "fuente": "Diapositiva 8 (tabla en imagen)",
+     "defs": [
+      {
+       "t": "Alvéolos pulmonares",
+       "facil": "Saquitos del pulmón donde se intercambian los gases.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Neumocito",
+       "facil": "Célula del alvéolo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Endotelio",
+       "facil": "Epitelio que reviste por dentro los vasos sanguíneos.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Mesotelio",
+       "facil": "Epitelio de la pleura (pulmón), el peritoneo (abdomen) y el pericardio (corazón).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Plexos coroideos",
+       "facil": "Zonas del cerebro que fabrican el líquido cefalorraquídeo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cardias",
+       "facil": "Entrada del estómago.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Microvellosidades",
+       "facil": "Pliegues diminutos que aumentan la superficie de absorción.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Enterocito",
+       "facil": "Célula del intestino.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Epéndimo",
+       "facil": "Capa que reviste las cavidades del cerebro y la médula.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Localización</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Plano</strong></td>\n<td>Pared de los <strong>alvéolos pulmonares</strong> (células = <strong>neumocitos</strong>); <strong>endotelio</strong> (interior de los vasos); <strong>mesotelios</strong> (pleura, peritoneo y pericardio)</td>\n</tr>\n<tr>\n<td><strong>Cúbico</strong></td>\n<td>Conductos secretores de glándulas; <em>rete testis</em> (red de Haller); folículos tiroideos; plexos coroideos; epitelio germinal del ovario; epitelio pigmentario de la retina</td>\n</tr>\n<tr>\n<td><strong>Cilíndrico no ciliado</strong></td>\n<td>Tubo digestivo <strong>desde el cardias hasta el ano</strong> (en el intestino tiene microvellosidades; células = <strong>enterocitos</strong>)</td>\n</tr>\n<tr>\n<td><strong>Cilíndrico ciliado</strong></td>\n<td>Bronquios, senos paranasales, trompas de Falopio, epéndimo</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Una sola capa se pone donde algo tiene que <strong>pasar</strong> rápido: gases (alvéolo), sustancias (vasos), nutrientes (intestino).",
+     "truco": "<strong>simple plano = \"ALVÉOLO, ENDOTELIO, MESOTELIO\"</strong> (los 3 sitios por donde las cosas <strong>atraviesan</strong>). <strong>Cilíndrico no ciliado = \"del cardias al ano\"</strong>.",
+     "q": "¿Dónde encontramos epitelio simple plano, cúbico, cilíndrico no ciliado y cilíndrico ciliado?",
+     "n": 8
+    },
+    {
+     "titulo": "Epitelio pseudoestratificado",
+     "lv": 2,
+     "fuente": "Diapositiva 9 (tabla en imagen)",
+     "defs": [
+      {
+       "t": "Parótida",
+       "facil": "La glándula salival más grande, delante de la oreja.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Trompa de Eustaquio",
+       "facil": "Conducto que une el oído con la garganta.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Localización</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Cilíndrico <strong>no ciliado</strong></td>\n<td>Conductos secretores de las <strong>parótidas</strong></td>\n</tr>\n<tr>\n<td>Cilíndrico <strong>ciliado</strong></td>\n<td><strong>Tráquea</strong>, bronquios principales, trompas de Eustaquio</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>\"Pseudo ciliado = Tráquea\"</strong> (el típico epitelio respiratorio). <strong>Pseudo NO ciliado = Parótida</strong> (la glándula de la saliva).",
+     "q": "¿Dónde hay epitelio pseudoestratificado ciliado y dónde no ciliado?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>El <strong>ciliado</strong> de la tráquea lleva cilios que <strong>barren el moco</strong> con el polvo hacia la garganta; el <strong>no ciliado</strong> de la parótida solo <strong>conduce la saliva</strong>, no necesita barrer.</p></div>"
+      }
+     ],
+     "n": 9
+    },
+    {
+     "titulo": "Epitelio estratificado",
+     "lv": 1,
+     "fuente": "Diapositiva 10 (tabla en imagen)",
+     "defs": [
+      {
+       "t": "Queratinizado",
+       "facil": "Con una capa superficial de células muertas cargadas de queratina.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Urotelio",
+       "facil": "Epitelio de transición del aparato urinario; se estira cuando se llena la vejiga.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cálices renales",
+       "facil": "Las primeras \"copas\" del riñón donde se recoge la orina.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Proximal / distal",
+       "facil": "Más cerca / más lejos del origen.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Localización</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Plano <strong>no queratinizado</strong></td>\n<td>Esófago, boca, porción distal de la uretra, vagina</td>\n</tr>\n<tr>\n<td>Plano <strong>queratinizado</strong></td>\n<td><strong>Epidermis</strong></td>\n</tr>\n<tr>\n<td>Cúbico <strong>biestratificado</strong></td>\n<td>Canales secretores de glándulas sudoríparas y mamarias</td>\n</tr>\n<tr>\n<td>Cúbico <strong>estratificado</strong></td>\n<td>Conjuntiva, uretra peneana</td>\n</tr>\n<tr>\n<td><strong>De transición (urotelio)</strong></td>\n<td>Aparato urinario, desde los <strong>cálices renales</strong> hasta la porción <strong>proximal</strong> de la uretra</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Varias capas = donde hay <strong>roce</strong>. Si la zona está <strong>seca</strong> (piel), lleva <strong>queratina</strong> (capa de células muertas, impermeable). Si está <strong>húmeda</strong> (boca, esófago, vagina), <strong>no</strong> lleva queratina. El <strong>urotelio</strong> se estira y encoge según se llena la vejiga.",
+     "truco": "<strong>\"Queratina = la piel seca; sin queratina = lo húmedo por dentro\"</strong>. <strong>Urotelio = urinario</strong>.",
+     "q": "¿Dónde está el epitelio estratificado plano queratinizado, el no queratinizado y el de transición?",
+     "n": 10
+    },
+    {
+     "titulo": "Relación tipo de epitelio / función",
+     "lv": 1,
+     "fuente": "Diapositiva 11 (preguntas de la profe)",
+     "tituloHtml": "Relación tipo de epitelio / función <span class=\"note\">❓ preguntas de la profe</span>",
+     "defs": [
+      {
+       "t": "Monoestratificado",
+       "facil": "De una sola capa (= simple).",
+       "diapo": "¿Por qué el epitelio de alvéolos pulmonares es monoestratificado? (pregunta de la profe)"
+      },
+      {
+       "t": "Células parietales y peptídicas",
+       "facil": "Células del estómago que fabrican el ácido y las enzimas digestivas.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Células receptoras",
+       "facil": "Células que captan estímulos (tacto, presión).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>¿Por qué el epitelio de los alvéolos es monoestratificado?</strong> Porque una sola capa fina permite el <strong>intercambio de gases por difusión</strong>.</li>\n<li><strong>¿Por qué hay cilios en la tráquea?</strong> Para <strong>mover el moco</strong> con las partículas atrapadas hacia fuera (limpieza).</li>\n<li>Algunos epitelios tienen <strong>células especializadas</strong>: <strong>moco</strong> en el respiratorio; <strong>parietales y peptídicas</strong> en el estómago; <strong>células receptoras</strong> en la piel.</li>\n</ul>",
+     "truco": "<strong>la forma sigue a la función</strong>: fino para <strong>dejar pasar</strong>, grueso para <strong>proteger</strong>, con cilios para <strong>barrer</strong>.",
+     "q": "¿Por qué el alvéolo tiene una sola capa y la tráquea tiene cilios? Pon ejemplos de células especializadas.",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Cada epitelio tiene la forma que necesita su trabajo: en el <strong>alvéolo</strong> el oxígeno tiene que <strong>atravesar</strong> la pared, así que cuanto más fina mejor (1 capa); en la <strong>tráquea</strong> hay que <strong>limpiar</strong> el aire, así que hay cilios que barren el moco.</p></div>"
+      }
+     ],
+     "n": 11
+    },
+    {
+     "titulo": "Funciones de los epitelios",
+     "lv": 1,
+     "fuente": "Diapositiva 12",
+     "defs": [
+      {
+       "t": "Glucocálix",
+       "facil": "Capa de azúcares que cubre la membrana del epitelio.",
+       "diapo": "Protección frente a agresiones químicas y físicas (glucocálix, queratinización y uniones celulares). Digerir sustancias (enzimas en glucocálix)."
+      },
+      {
+       "t": "Transcitosis",
+       "facil": "Transporte de una sustancia <strong>a través</strong> de la célula (entra por un lado y sale por el otro).",
+       "diapo": "Transporte de sustancias (transcitosis)."
+      },
+      {
+       "t": "Receptor",
+       "facil": "Estructura que capta un estímulo.",
+       "diapo": "Recibir estímulos (receptores)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Función</th>\n<th>Cómo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Protección</strong> frente a agresiones químicas y físicas</td>\n<td>Glucocálix, queratinización, uniones celulares</td>\n</tr>\n<tr>\n<td><strong>Transporte</strong> de sustancias</td>\n<td>Transcitosis</td>\n</tr>\n<tr>\n<td><strong>Digerir</strong> sustancias</td>\n<td>Enzimas en el glucocálix</td>\n</tr>\n<tr>\n<td><strong>Limpiar</strong> superficies externas</td>\n<td>Movimiento de cilios</td>\n</tr>\n<tr>\n<td><strong>Trasladar</strong> espermatozoides y óvulos</td>\n<td>Movimiento ciliar</td>\n</tr>\n<tr>\n<td><strong>Recibir</strong> estímulos</td>\n<td>Receptores</td>\n</tr>\n</tbody>\n</table></div>\n<p>Esquema del glucocálix: glucolípidos, glucoproteínas y proteoglicanos transmembrana sobre la bicapa lipídica.</p>",
+     "truco": "<strong>\"Pro-Tra-Di-Lim-Tras-Re\"</strong> → \"<strong>Pro</strong>fe, <strong>Tra</strong>e <strong>Di</strong>ez <strong>Lim</strong>ones <strong>Tras</strong> el <strong>Re</strong>creo\".",
+     "q": "Di las 6 funciones de los epitelios y cómo se realiza cada una.",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>El epitelio no solo <strong>cubre</strong>: también <strong>transporta</strong> (pasa sustancias a través de la célula), <strong>digiere</strong> (enzimas en su superficie), <strong>limpia</strong> y <strong>mueve</strong> cosas (cilios) y <strong>siente</strong> (receptores).</p></div>"
+      }
+     ],
+     "n": 12
+    }
+   ],
+   "min": 60
+  },
+  {
+   "titulo": "Epitelio glandular",
+   "conceptos": [
+    {
+     "titulo": "Glándula",
+     "lv": 1,
+     "fuente": "Diapositiva 13",
+     "defs": [
+      {
+       "t": "Secretora",
+       "facil": "Que fabrica y suelta una sustancia.",
+       "diapo": "Glándula: especialización del tejido epitelial con función secretora."
+      },
+      {
+       "t": "Exocrina",
+       "facil": "Secreta hacia fuera por un conducto.",
+       "diapo": "Glándulas exocrinas: secreción al medio externo. Dentro del epitelio o fuera."
+      },
+      {
+       "t": "Endocrina",
+       "facil": "Secreta hormonas a la sangre.",
+       "diapo": "Glándulas endocrinas: sin conductos excretores, secretan a la sangre."
+      },
+      {
+       "t": "Hormona",
+       "facil": "Mensajero químico que viaja por la sangre.",
+       "diapo": "Glándulas endocrinas: estructuras cuya única función es la secreción de hormonas."
+      }
+     ],
+     "prof": "<p><strong>especialización del tejido epitelial con función secretora.</strong> Pueden ser <strong>unicelulares o pluricelulares</strong>, y <strong>endocrinas o exocrinas</strong>.\nEsquema: la <strong>exocrina</strong> tiene conducto y vierte sus productos al exterior; la <strong>endocrina</strong> vierte hormonas al <strong>vaso sanguíneo</strong>.</p>",
+     "entiende": "La <strong>exocrina</strong> es como un <strong>grifo con tubería</strong>: echa su producto <strong>fuera</strong> (a la piel, a la boca, al intestino). La <strong>endocrina</strong> no tiene tubería: echa sus <strong>hormonas a la sangre</strong>, que las reparte por todo el cuerpo.",
+     "truco": "<strong>EXO = EXterior (con conducto)</strong> · <strong>ENDO = ENtra en la sangre (sin conducto)</strong>.",
+     "q": "¿Qué es una glándula y qué diferencia a una exocrina de una endocrina?",
+     "n": 13
+    },
+    {
+     "titulo": "Glándulas exocrinas",
+     "lv": 1,
+     "fuente": "Diapositiva 14",
+     "defs": [
+      {
+       "t": "Adenómero",
+       "facil": "Parte de la glándula que <strong>fabrica</strong> la secreción.",
+       "diapo": "Adenómero (parte secretora)."
+      },
+      {
+       "t": "Lumen (luz)",
+       "facil": "El hueco interior por donde sale.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Conducto",
+       "facil": "El tubo que lleva la secreción hacia fuera.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Secreción <strong>al medio externo</strong>.</li>\n<li>Pueden estar <strong>dentro del epitelio o fuera</strong>.</li>\n<li>Las situadas fuera tienen <strong>adenómero</strong> (parte <strong>secretora</strong>) y <strong>lumen</strong>, además de <strong>conductos</strong>.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/003.jpg",
+       "alt": "Glándula exocrina: adenómero, conducto y lumen (diap. 14)",
+       "img": "<img src=\"img/003.jpg\" width=\"760\" height=\"560\" loading=\"lazy\" decoding=\"async\" alt=\"Glándula exocrina: adenómero, conducto y lumen (diap. 14)\" loading=\"lazy\">"
+      }
+     ],
+     "truco": "<strong>adenómero = \"la fábrica\"</strong> (fabrica la secreción); <strong>conducto = \"la tubería\"</strong>; <strong>lumen = \"el hueco\"</strong> por donde sale.",
+     "q": "¿Adónde secretan las exocrinas y qué partes tienen?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Una glándula exocrina es como una <strong>fábrica con tubería</strong>: el <strong>adenómero</strong> fabrica, el <strong>lumen</strong> es el hueco donde se acumula y el <strong>conducto</strong> lo saca fuera.</p></div>"
+      }
+     ],
+     "n": 14
+    },
+    {
+     "titulo": "Clasificación por adenómeros y conductos",
+     "lv": 2,
+     "fuente": "Diapositivas 15 y 16 (imagen)",
+     "defs": [
+      {
+       "t": "Acinar (alveolar)",
+       "facil": "Adenómero redondo, como una uva.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Tubular",
+       "facil": "Adenómero en forma de tubo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Simple / compuesta",
+       "facil": "Con un conducto sin ramificar / ramificado.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Según el <strong>adenómero</strong>: <strong>acinares, tubulares y mixtas</strong> (tubuloacinares).</li>\n<li>Según los <strong>conductos</strong>: <strong>simples</strong> y <strong>compuestas</strong>.</li>\n</ul>\n<p>Tabla de imágenes: tubulosas / alveolares / acinares × simples / simples ramificadas / compuestas.</p>",
+     "entiende": "<strong>acinar</strong> = fábrica en forma de <strong>uva</strong> (redonda); <strong>tubular</strong> = en forma de <strong>tubo</strong>. <strong>Simple</strong> = un solo conducto; <strong>compuesta</strong> = conducto <strong>ramificado</strong> como un árbol.",
+     "truco": "El adenómero por su <strong>forma</strong> (<strong>uva</strong> = acinar, <strong>tubo</strong> = tubular, las dos = mixta) y el conducto por sus <strong>ramas</strong> (<strong>simple</strong> = un tubo, <strong>compuesta</strong> = árbol).",
+     "q": "¿Cómo se clasifican las glándulas exocrinas según su adenómero y según sus conductos?",
+     "n": 15
+    },
+    {
+     "titulo": "Según el producto secretado",
+     "lv": 2,
+     "fuente": "Diapositiva 17",
+     "defs": [
+      {
+       "t": "Mucina",
+       "facil": "Sustancia que forma el moco.",
+       "diapo": "Mucosas: segregan mucina, compuesta por ácido hialurónico, proteoglicanos y GAG."
+      },
+      {
+       "t": "Células caliciformes",
+       "facil": "Células en forma de copa que fabrican moco.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Lípidos",
+       "facil": "Grasas.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Características</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Serosas</strong></td>\n<td>Secreción <strong>acuosa rica en enzimas</strong></td>\n<td>Gl. parótida, gl. lacrimales</td>\n</tr>\n<tr>\n<td><strong>Mucosas</strong></td>\n<td>Segregan <strong>mucina</strong> (ácido hialurónico, proteoglicanos y GAG)</td>\n<td>Células caliciformes de las mucosas respiratoria y digestiva; partes de la gl. sublingual</td>\n</tr>\n<tr>\n<td><strong>Sebáceas</strong></td>\n<td>Secretan <strong>lípidos</strong></td>\n<td>Gl. sebáceas, gl. mamarias (lactancia)</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>serosa = \"suero\" (agüita: lágrimas, saliva)</strong> · <strong>mucosa = \"moco\"</strong> · <strong>sebácea = \"sebo\" (grasa)</strong>.",
+     "q": "¿Qué secretan las glándulas serosas, mucosas y sebáceas? Da un ejemplo de cada una.",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Se clasifican por <strong>lo que sale</strong>: agua con enzimas (serosas), moco espeso (mucosas) o grasa (sebáceas).</p></div>"
+      }
+     ],
+     "n": 16
+    },
+    {
+     "titulo": "Según el mecanismo de secreción",
+     "lv": 1,
+     "fuente": "Diapositiva 18",
+     "defs": [
+      {
+       "t": "Exocitosis",
+       "facil": "La célula expulsa la sustancia en una vesícula sin romperse.",
+       "diapo": "Merocrinas o ecrinas: liberan la sustancia que sintetizan por exocitosis."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Cómo secretan</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Merocrinas o ecrinas</strong></td>\n<td>Liberan la sustancia por <strong>exocitosis</strong></td>\n<td>Mayoría de gl. sudoríparas</td>\n</tr>\n<tr>\n<td><strong>Apocrinas</strong></td>\n<td>Al liberar, la célula <strong>pierde parte del citoplasma</strong></td>\n<td>Gl. mamarias, algunas sudoríparas</td>\n</tr>\n<tr>\n<td><strong>Holocrinas</strong></td>\n<td>Liberan por <strong>destrucción de la célula</strong></td>\n<td>Gl. sebáceas</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Imagina que la célula manda un paquete: la <strong>merocrina</strong> lo envía <strong>por correo</strong> (exocitosis, la célula queda intacta); la <strong>apocrina</strong> <strong>arranca un trozo de sí misma</strong> con el paquete; la <strong>holocrina</strong> <strong>se manda entera</strong> (muere y se convierte en la secreción).",
+     "truco": "<strong>Mero = mínimo (exocitosis) · Apo = una parte · Holo = todo (la célula entera)</strong>. Y el orden de ejemplos: <strong>\"Sudor, Mama, Sebo\"</strong>.",
+     "q": "Diferencia las glándulas merocrinas, apocrinas y holocrinas y da un ejemplo de cada una.",
+     "n": 17
+    },
+    {
+     "titulo": "Glándulas endocrinas",
+     "lv": 2,
+     "fuente": "Diapositiva 19",
+     "prof": "<p><strong>Sin conductos excretores; secretan a la sangre.</strong> Según su complejidad:</p>\n<ol>\n<li><strong>Células aisladas</strong></li>\n<li><strong>Pequeñas agrupaciones</strong></li>\n<li><strong>Agrupaciones temporales</strong></li>\n<li><strong>Glándulas mixtas</strong></li>\n<li><strong>Glándulas endocrinas</strong></li>\n</ol>\n<p>Foto: islotes de Langerhans.</p>",
+     "truco": "Van <strong>de menos a más</strong>, como <strong>personas → grupitos → grupo de verano → trabajo doble → empresa entera</strong>.",
+     "q": "¿Cómo secretan las endocrinas y cómo se clasifican según su complejidad?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Las endocrinas <strong>no tienen tubería</strong>: sueltan sus hormonas directamente a la <strong>sangre</strong>. Pueden ir desde <strong>una sola célula suelta</strong> hasta un <strong>órgano entero</strong> (hipófisis, tiroides).</p></div>"
+      }
+     ],
+     "n": 18
+    },
+    {
+     "titulo": "Ejemplos de cada nivel de complejidad",
+     "lv": 2,
+     "fuente": "Diapositivas 20 a 24",
+     "defs": [
+      {
+       "t": "Somatostatina, serotonina, grelina, glucagón, insulina",
+       "facil": "Hormonas (la insulina baja el azúcar, el glucagón lo sube, la grelina da hambre).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Células de Leydig",
+       "facil": "Células del testículo que fabrican testosterona.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cuerpo lúteo",
+       "facil": "Estructura temporal del ovario tras la ovulación.",
+       "diapo": "Agrupación celular temporal. Produce progesterona y estrógeno ante un posible embarazo."
+      },
+      {
+       "t": "Progesterona y estrógeno",
+       "facil": "Hormonas femeninas.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Hepatocito",
+       "facil": "Célula del hígado.",
+       "diapo": "Los hepatocitos secretan bilis (exocrina) y somatomedinas (endocrina)."
+      },
+      {
+       "t": "Bilis",
+       "facil": "Líquido del hígado que ayuda a digerir las grasas.",
+       "diapo": "Los hepatocitos secretan bilis (exocrina)."
+      },
+      {
+       "t": "Somatomedinas",
+       "facil": "Hormonas del hígado que estimulan el crecimiento.",
+       "diapo": "Los hepatocitos secretan somatomedinas (endocrina)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Nivel</th>\n<th>Ejemplo</th>\n<th>Dato clave</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Células aisladas</td>\n<td><strong>Estómago y duodeno</strong></td>\n<td>Regulan el proceso digestivo (esquema de glándula gástrica: células parietales, D [somatostatina], ECL, EC [serotonina], X [grelina], principales)</td>\n</tr>\n<tr>\n<td>Pequeñas agrupaciones</td>\n<td><strong>Islotes de Langerhans</strong> o <strong>células de Leydig</strong></td>\n<td>Islote: α → glucagón; β → insulina; δ → somatostatina; F → polipéptido pancreático. Rodeado de páncreas exocrino. Esquema del testículo: tubo seminífero, células de Sertoli</td>\n</tr>\n<tr>\n<td>Agrupaciones temporales</td>\n<td><strong>Cuerpo lúteo</strong></td>\n<td>Produce <strong>progesterona y estrógeno</strong> ante un posible embarazo (esquema del ovario: folículos primordial, primario, secundario y de Graaf, ovulación, cuerpo lúteo y cuerpo albicans)</td>\n</tr>\n<tr>\n<td>Glándulas mixtas</td>\n<td><strong>Hígado y páncreas</strong></td>\n<td>Secreción endo y exocrina. Hepatocitos: <strong>bilis (exocrina)</strong> y <strong>somatomedinas (endocrina)</strong> (esquema del lobulillo hepático: vena porta, arteria hepática, conducto biliar, sinusoide, vena central, célula de Kupffer)</td>\n</tr>\n<tr>\n<td>Glándulas endocrinas</td>\n<td><strong>Hipófisis, tiroides, gl. suprarrenales…</strong></td>\n<td>Su <strong>única función es secretar hormonas</strong> (mapa: hipotálamo, hipófisis, tiroides, paratiroides, suprarrenales, páncreas, ovarios, testículos)</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "El <strong>cuerpo lúteo</strong> es \"temporal\" porque solo existe tras la ovulación y desaparece si no hay embarazo. El <strong>hígado</strong> es \"mixto\" porque hace <strong>dos trabajos</strong>: bilis hacia fuera (exocrina) y hormonas a la sangre (endocrina).",
+     "truco": "<strong>Truco de ejemplos en orden:</strong> <strong>\"Estómago, Islote, Lúteo, Hígado, Hipófisis\" = \"El Indio Luchó Hasta Hoy\"</strong>. En el islote: <strong>Alfa = Azúcar sube (glucagón), Beta = Baja (insulina)</strong>.",
+     "q": "Da un ejemplo de cada tipo de glándula endocrina según su complejidad. ¿Qué secretan los hepatocitos?",
+     "n": 19
+    }
+   ]
+  },
+  {
+   "titulo": "Tejido muscular",
+   "conceptos": [
+    {
+     "titulo": "Definición y tipos",
+     "lv": 1,
+     "fuente": "Diapositiva 25",
+     "defs": [
+      {
+       "t": "Contráctil",
+       "facil": "Capaz de acortarse (contraerse).",
+       "diapo": "Tejido muscular: células con capacidad contráctil, forma músculos."
+      }
+     ],
+     "prof": "<p>Formado por <strong>células con capacidad contráctil</strong>; forma los músculos. Tres tipos: <strong>liso, cardíaco y esquelético</strong>.</p>",
+     "entiende": "Los tres se <strong>contraen</strong>, pero cada uno está en un sitio: <strong>esquelético</strong> pegado a los huesos (movimiento voluntario), <strong>cardíaco</strong> en el corazón, <strong>liso</strong> en la pared de los órganos y los vasos.",
+     "truco": "<strong>\"LiCaE\"</strong> → <strong>Li</strong>so, <strong>Ca</strong>rdíaco, <strong>E</strong>squelético.",
+     "q": "¿Qué caracteriza al tejido muscular y qué tipos hay?",
+     "n": 20
+    },
+    {
+     "titulo": "Miocito o fibra muscular",
+     "lv": 2,
+     "fuente": "Diapositiva 26",
+     "defs": [
+      {
+       "t": "Fusiforme",
+       "facil": "Con forma de huso (más ancha en el centro).",
+       "diapo": "Miocitos o fibras musculares: célula fusiforme con capacidad contráctil."
+      },
+      {
+       "t": "Actina y miosina",
+       "facil": "Las dos proteínas que producen la contracción.",
+       "diapo": "Miocito: complejo entramado de fibras de actina y miosina."
+      },
+      {
+       "t": "Miofibrilla",
+       "facil": "Cada \"hilo\" contráctil dentro de la fibra.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Sarcolema / sarcoplasma",
+       "facil": "La membrana / el citoplasma de la fibra muscular.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Retículo sarcoplasmático",
+       "facil": "El almacén de calcio de la fibra.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Célula fusiforme con capacidad contráctil</strong>, con un entramado de fibras de <strong>actina y miosina</strong>.\nEsquema de la fibra: núcleo, banda I, banda A, línea Z, mitocondria, túbulos T, retículo sarcoplasmático, cisterna terminal, <strong>sarcolema</strong> (membrana), <strong>sarcoplasma</strong> (citoplasma), <strong>miofibrillas</strong>.</p>",
+     "entiende": "En el músculo todo lleva el prefijo <strong>sarco-</strong> (carne): <strong>sarcolema</strong> = la membrana, <strong>sarcoplasma</strong> = el citoplasma, <strong>retículo sarcoplasmático</strong> = el almacén de calcio.",
+     "truco": "<strong>\"sarco- = músculo\"</strong>: cambia el nombre normal por \"sarco\" y ya lo tienes.",
+     "q": "¿Qué es un miocito y de qué proteínas está hecho su entramado contráctil?",
+     "n": 21
+    },
+    {
+     "titulo": "Músculo esquelético: la célula",
+     "lv": 1,
+     "fuente": "Diapositivas 27 y 28",
+     "defs": [
+      {
+       "t": "Multinucleado",
+       "facil": "Con muchos núcleos.",
+       "diapo": "Músculo esquelético: multinucleados, núcleos bajo membrana basal."
+      },
+      {
+       "t": "Periférico",
+       "facil": "En el borde.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Endomisio",
+       "facil": "Capa de conjuntivo que envuelve cada fibra.",
+       "diapo": "Células (del músculo esquelético) rodeadas de endomisio (conjuntivo)."
+      },
+      {
+       "t": "Estrías",
+       "facil": "Rayas que se ven al microscopio.",
+       "diapo": "Haces de filamentos de actina y miosina dispuestos de forma regular y ordenada → estrías."
+      },
+      {
+       "t": "µm (micra)",
+       "facil": "Milésima de milímetro.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Miocitos <strong>muy alargados</strong>: <strong>10-80 µm de ancho</strong> y hasta <strong>25 cm de largo</strong>.</li>\n<li><strong>Multinucleados</strong>, con los núcleos <strong>bajo la membrana</strong> (periféricos).</li>\n<li>Cada célula rodeada de <strong>endomisio</strong> (conjuntivo).</li>\n<li>Haces de actina y miosina <strong>regulares y ordenados → estrías</strong> (músculo estriado).</li>\n</ul>",
+     "entiende": "Las estrías se ven porque la actina y la miosina están <strong>ordenadas en filas</strong>, como las <strong>rayas de un código de barras</strong>.",
+     "truco": "El esquelético es la célula <strong>\"gigante, con muchos núcleos al borde y a rayas\"</strong>: hasta <strong>25 cm</strong>, <strong>multinucleada periférica</strong> y <strong>estriada</strong>.",
+     "q": "¿Cómo son las células del músculo esquelético (tamaño, núcleos, envoltura) y por qué tiene estrías?",
+     "n": 22
+    },
+    {
+     "titulo": "Sarcómero",
+     "lv": 1,
+     "fuente": "Diapositiva 29 (\"Contracción\" en azul)",
+     "tituloHtml": "Sarcómero <span class=\"note\">🔵 «Contracción» marcado en azul por la profe</span>",
+     "defs": [
+      {
+       "t": "Sarcómero",
+       "facil": "La unidad que se acorta al contraerse, de línea Z a línea Z.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Banda A",
+       "facil": "Zona oscura (miosina).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Banda I",
+       "facil": "Zona clara (solo actina).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Miomesina y conectina",
+       "facil": "Proteínas que sujetan los filamentos.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Es la <strong>unidad funcional</strong> de la miofibrilla, la que se acorta en la contracción. Va de <strong>línea Z a línea Z</strong>.</p>\n<ul>\n<li><strong>Banda A</strong> (oscura; miosina), <strong>banda I</strong> (clara; solo actina), <strong>zona H</strong> (centro de la A), <strong>línea M</strong> (centro).</li>\n<li>Proteínas: <strong>actina</strong> (filamento fino), <strong>miosina</strong> (filamento grueso), <strong>miomesina</strong>, <strong>conectina</strong>.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/004.jpg",
+       "alt": "El sarcómero (diap. 29)",
+       "img": "<img src=\"img/004.jpg\" width=\"760\" height=\"581\" loading=\"lazy\" decoding=\"async\" alt=\"El sarcómero (diap. 29)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Al contraerse, la miosina <strong>tira</strong> de la actina y las líneas Z se <strong>acercan</strong>: el sarcómero se acorta, como cuando <strong>cierras un acordeón</strong>.",
+     "truco": "<strong>\"A de oscurA\" (banda A = oscura)</strong> e <strong>\"I de clarIta\" (banda I = clara)</strong>. <strong>Z a Z</strong> = de punta a punta.",
+     "q": "¿Qué es el sarcómero, entre qué líneas está y qué bandas y proteínas tiene?",
+     "n": 23
+    },
+    {
+     "titulo": "Envolturas del músculo esquelético",
+     "lv": 1,
+     "fuente": "Diapositivas 27 y 30",
+     "defs": [
+      {
+       "t": "Fascículo",
+       "facil": "Grupo de fibras musculares.",
+       "diapo": "Los miocitos se agrupan en fascículos, que se rodean de perimisio."
+      },
+      {
+       "t": "Perimisio",
+       "facil": "Envoltura del fascículo.",
+       "diapo": "Los fascículos se rodean de perimisio (vasos sanguíneos y nervios)."
+      },
+      {
+       "t": "Epimisio",
+       "facil": "Envoltura del músculo entero.",
+       "diapo": "Los fascículos se agrupan formando el músculo, rodeado por epimisio."
+      },
+      {
+       "t": "Tendón",
+       "facil": "Cordón que une el músculo al hueso.",
+       "diapo": "En los extremos, las 3 capas se agrupan → tendón."
+      }
+     ],
+     "prof": "<p><strong>Endomisio</strong> (cada fibra) → fibras agrupadas en <strong>fascículos</strong>, rodeados de <strong>perimisio</strong> (lleva vasos y nervios) → fascículos agrupados en el <strong>músculo</strong>, rodeado de <strong>epimisio</strong>. En los extremos, las <strong>3 capas se unen → tendón</strong> (que se inserta en el hueso).</p>",
+     "imgs": [
+      {
+       "src": "img/005.jpg",
+       "alt": "Envolturas: epimisio, perimisio, endomisio (diap. 27)",
+       "img": "<img src=\"img/005.jpg\" width=\"539\" height=\"760\" loading=\"lazy\" decoding=\"async\" alt=\"Envolturas: epimisio, perimisio, endomisio (diap. 27)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Es como un <strong>cable eléctrico</strong>: cada hilo tiene su funda (endomisio), varios hilos forman un grupo con otra funda (perimisio) y todo el cable va dentro de la funda exterior (epimisio).",
+     "truco": "<strong>\"Endo-Peri-Epi\" = de dentro a fuera</strong> (<strong>endo</strong> = dentro, <strong>peri</strong> = alrededor, <strong>epi</strong> = encima).",
+     "q": "¿Qué envuelve a la fibra, al fascículo y al músculo entero? ¿Qué se forma en los extremos?",
+     "n": 24
+    },
+    {
+     "titulo": "Tipos de fibras esqueléticas",
+     "lv": 2,
+     "fuente": "Diapositiva 31",
+     "defs": [
+      {
+       "t": "Mitocondria",
+       "facil": "La \"central de energía\" de la célula.",
+       "diapo": "Fibras rojas: muchas mitocondrias y mioglobina. Fibras blancas: pocas mitocondrias y mioglobina."
+      },
+      {
+       "t": "Mioglobina",
+       "facil": "Proteína roja que guarda oxígeno en el músculo.",
+       "diapo": "Fibras rojas: muchas mitocondrias y mioglobina. Fibras blancas: pocas mitocondrias y mioglobina."
+      },
+      {
+       "t": "Aeróbica / anaeróbica",
+       "facil": "Que usa / no usa oxígeno.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Glucógeno",
+       "facil": "Reserva de azúcar.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Rojas</strong> (tipo I)</th>\n<th><strong>Blancas</strong> (tipo IIx)</th>\n<th><strong>Intermedias</strong> (tipo IIa)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Tamaño</td>\n<td>Pequeñas y finas</td>\n<td>Más grandes</td>\n<td>Medianas</td>\n</tr>\n<tr>\n<td>Mitocondrias y mioglobina</td>\n<td><strong>Muchas</strong></td>\n<td><strong>Pocas</strong></td>\n<td>Intermedio</td>\n</tr>\n<tr>\n<td>Contracción</td>\n<td><strong>Lenta</strong></td>\n<td><strong>Rápida</strong></td>\n<td>Intermedia</td>\n</tr>\n<tr>\n<td>Fatiga</td>\n<td><strong>Resistentes</strong></td>\n<td><strong>Se fatigan con facilidad</strong></td>\n<td>Intermedia</td>\n</tr>\n<tr>\n<td>Imagen (kenhub)</td>\n<td>Roja brillante, capilares altos, aeróbica</td>\n<td>Rosa pálida, capilares bajos, anaeróbica (glucógeno)</td>\n<td>Roja pálida, aeróbica/anaeróbica</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "La <strong>mioglobina</strong> guarda oxígeno y es <strong>roja</strong>: por eso las fibras con mucha son rojas. <strong>Rojas = maratoniano</strong> (lento pero aguanta horas). <strong>Blancas = velocista</strong> (muy rápido pero se cansa enseguida).",
+     "truco": "<strong>\"Roja = Resistente y lenta (tortuga)\" · \"Blanca = Breve y rápida (liebre)\"</strong>.",
+     "q": "Compara las fibras musculares rojas, blancas e intermedias.",
+     "n": 25
+    },
+    {
+     "titulo": "ACTIVIDAD de la profe",
+     "lv": 1,
+     "fuente": "Diapositiva 32 (ACTIVIDAD)",
+     "tituloHtml": "ACTIVIDAD de la profe <span class=\"note\">🔴 apréndela entera</span>",
+     "defs": [
+      {
+       "t": "Mioblasto",
+       "facil": "Célula precursora del músculo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Tropomiosina y troponina",
+       "facil": "Proteínas que tapan la actina en reposo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Ion",
+       "facil": "Átomo con carga eléctrica (el calcio, Ca²⁺).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>a) <strong>¿Por qué tienen tantos núcleos las fibras esqueléticas?</strong> Porque cada fibra se forma por <strong>fusión de muchas células precursoras (mioblastos)</strong> y es <strong>enorme</strong> (hasta 25 cm): necesita muchos núcleos para controlar y sintetizar proteínas en todo su volumen.\nb) <strong>Filamentos finos → actina. Filamentos gruesos → miosina.</strong>\nc) <strong>Unidad funcional básica de las miofibrillas → el sarcómero.</strong>\nd) <strong>Función de la tropomiosina:</strong> en reposo <strong>tapa los sitios de unión de la miosina en la actina</strong> (junto con la troponina), así que impide la contracción; cuando llega el calcio, se desplaza y deja que la miosina se una.\ne) <strong>Ion que induce la contracción → el calcio (Ca²⁺)</strong>, liberado del retículo sarcoplasmático.</p>",
+     "entiende": "La <strong>tropomiosina</strong> es como una <strong>tapa</strong> sobre los enchufes de la actina. El <strong>calcio</strong> es la <strong>llave</strong> que quita la tapa: entonces la miosina se engancha y tira.",
+     "truco": "<strong>\"Fina = Actina\" (las dos con \"a\" e \"i\")</strong> · <strong>\"Gruesa = Miosina\" (la Mayor)</strong> · <strong>\"Tropo-tapa, calcio-llave\"</strong>.",
+     "q": "Responde las 5 preguntas de la ACTIVIDAD: núcleos, actina/miosina, sarcómero, tropomiosina y calcio.",
+     "n": 26
+    },
+    {
+     "titulo": "Músculo cardíaco",
+     "lv": 1,
+     "fuente": "Diapositivas 33 y 34",
+     "defs": [
+      {
+       "t": "Desmosomas maculares",
+       "facil": "Uniones que sujetan fuerte las células.",
+       "diapo": "Miocitos cardíacos unidos mediante desmosomas maculares y uniones gap → discos intercalares."
+      },
+      {
+       "t": "Uniones gap",
+       "facil": "Canales que dejan pasar la corriente entre células.",
+       "diapo": "Miocitos cardíacos unidos mediante desmosomas maculares y uniones gap → discos intercalares."
+      },
+      {
+       "t": "Discos intercalares",
+       "facil": "Las uniones entre células del corazón.",
+       "diapo": "Miocitos cardíacos unidos mediante desmosomas maculares y uniones gap → discos intercalares."
+      },
+      {
+       "t": "Miocardio",
+       "facil": "El músculo del corazón.",
+       "diapo": "El tejido cardíaco forma el miocardio. Contracción involuntaria."
+      },
+      {
+       "t": "Involuntario",
+       "facil": "No se controla a voluntad.",
+       "diapo": "Tejido muscular cardíaco: contracción involuntaria."
+      }
+     ],
+     "prof": "<ul>\n<li>Miocitos <strong>más cortos</strong> que los esqueléticos.</li>\n<li><strong>Un solo núcleo central alargado.</strong></li>\n<li>Filamentos ocupan casi toda la célula, <strong>no agrupados en haces de miofibrillas</strong>.</li>\n<li>Unidos por <strong>desmosomas maculares y uniones gap → discos intercalares</strong>.</li>\n<li>Forma el <strong>miocardio</strong>. Contracción <strong>involuntaria</strong>.</li>\n</ul>",
+     "entiende": "Los <strong>discos intercalares</strong> son los \"enchufes\" entre células del corazón: los <strong>desmosomas</strong> las sujetan fuerte y las <strong>uniones gap</strong> dejan pasar la corriente, para que <strong>todo el corazón se contraiga a la vez</strong>.",
+     "truco": "<strong>cardíaco = \"Corazón con Discos\"</strong> (lo único que tiene discos intercalares).",
+     "q": "¿Cómo son los miocitos cardíacos y qué son los discos intercalares?",
+     "n": 27
+    },
+    {
+     "titulo": "Músculo liso",
+     "lv": 1,
+     "fuente": "Diapositivas 35 a 37",
+     "defs": [
+      {
+       "t": "Piloerección",
+       "facil": "Se pone la piel de gallina (se erizan los pelos).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Túnica media",
+       "facil": "Capa intermedia de la pared de la arteria.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Subcutáneo",
+       "facil": "Debajo de la piel.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Miocitos <strong>fusiformes</strong>, <strong>un único núcleo central y alargado</strong>.</li>\n<li>Los miofilamentos forman una <strong>trama tridimensional → no se ven bandas</strong> (no es estriado).</li>\n<li>Puede formar <strong>pequeños músculos individuales</strong> (<strong>erectores del pelo</strong> → piloerección) o <strong>la mayor parte de la pared de un órgano</strong> (<strong>útero</strong>).</li>\n<li>Se dispone <strong>en capas</strong> en:<ul>\n<li><strong>paredes de órganos huecos y conductos</strong> (digestivo, vasos sanguíneos: túnica media de la arteria);</li>\n<li><strong>conjuntivo que reviste órganos</strong> (próstata y vesículas seminales);</li>\n<li><strong>tejido subcutáneo</strong> (escroto o pezones).</li>\n</ul>\n</li>\n</ul>",
+     "entiende": "<strong>liso</strong> = \"sin rayas\": sus filamentos van <strong>en todas direcciones</strong> (como una red), no en filas. Es el músculo de los <strong>órganos por dentro</strong>, que trabajan solos sin que tú lo mandes.",
+     "truco": "<strong>liso = Lento, Involuntario, Sin rayas, Órganos (LISO)</strong>. <strong>Fusiforme = forma de huso</strong> (gordo en el medio, fino en las puntas).",
+     "q": "¿Cómo son las células del músculo liso, por qué no tiene bandas y dónde lo encontramos?",
+     "n": 28
+    },
+    {
+     "titulo": "Comparativa de los 3 músculos",
+     "lv": 1,
+     "fuente": "Resumen propio de las diapositivas 27 a 37",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Esquelético</th>\n<th>Cardíaco</th>\n<th>Liso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Forma</td>\n<td>Muy alargada</td>\n<td>Más corta, ramificada</td>\n<td>Fusiforme</td>\n</tr>\n<tr>\n<td>Núcleos</td>\n<td><strong>Muchos, periféricos</strong></td>\n<td><strong>Uno, central</strong></td>\n<td><strong>Uno, central</strong></td>\n</tr>\n<tr>\n<td>Estrías</td>\n<td>Sí</td>\n<td>Sí</td>\n<td><strong>No</strong></td>\n</tr>\n<tr>\n<td>Uniones</td>\n<td>—</td>\n<td>Discos intercalares</td>\n<td>—</td>\n</tr>\n<tr>\n<td>Control</td>\n<td>Voluntario</td>\n<td><strong>Involuntario</strong></td>\n<td>Involuntario</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>solo el esquelético es \"el raro\"</strong>: muchos núcleos y voluntario. Los otros dos tienen <strong>un núcleo central</strong> y son <strong>involuntarios</strong>.",
+     "q": "Haz una tabla que compare los tres tipos de músculo.",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>La tabla resume lo que distingue a cada músculo: fíjate en <strong>núcleos</strong>, <strong>estrías</strong> y <strong>control</strong>; son las tres cosas que más pregunta la profe.</p></div>"
+      }
+     ],
+     "n": 29
+    }
+   ],
+   "min": 85
+  },
+  {
+   "titulo": "Tejido nervioso",
+   "conceptos": [
+    {
+     "titulo": "Definición",
+     "lv": 2,
+     "fuente": "Diapositiva 38",
+     "defs": [
+      {
+       "t": "Impulso nervioso",
+       "facil": "Señal eléctrica que viaja por la neurona.",
+       "diapo": "Tejido nervioso: formado por células con capacidad para transmitir impulsos nerviosos. Sistema que transmite órdenes e información de unas zonas a otras del organismo."
+      },
+      {
+       "t": "Grumos de Nissl",
+       "facil": "Acúmulos de retículo endoplasmático en el soma de la neurona.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Formado por células con capacidad para <strong>transmitir impulsos nerviosos</strong>. Es el sistema que <strong>transmite órdenes e información</strong> de unas zonas a otras del organismo. Foto: axones, glía, neuronas, <strong>grumos de Nissl</strong>.</p>",
+     "entiende": "El tejido nervioso es el <strong>\"cableado\" y el ordenador</strong> del cuerpo: recoge información, la procesa y manda órdenes. Los <strong>grumos de Nissl</strong> de la foto son las zonas del soma donde la neurona fabrica proteínas.",
+     "truco": "El nervioso <strong>transmite</strong>: <strong>órdenes e información</strong> de unas zonas a otras.",
+     "q": "¿Qué es el tejido nervioso y para qué sirve?",
+     "n": 30
+    },
+    {
+     "titulo": "Células: neuronas y glía",
+     "lv": 3,
+     "fuente": "Diapositiva 39",
+     "defs": [
+      {
+       "t": "Neurona",
+       "facil": "Célula que transmite el impulso nervioso.",
+       "diapo": "Neuronas: reciben, procesan y transmiten información."
+      },
+      {
+       "t": "Glía",
+       "facil": "Células de soporte del tejido nervioso.",
+       "diapo": "Células de la glía: proporcionan soporte a las neuronas, tanto a nivel espacial como metabólico, endocrino e inmunitario."
+      }
+     ],
+     "prof": "<p>Dos tipos de células: <strong>neuronas</strong> y <strong>células de la glía</strong>. Esquema: neurona, oligodendrocito con vaina de mielina, astrocito, sinapsis.</p>",
+     "entiende": "Las <strong>neuronas</strong> son las que <strong>trabajan</strong> (transmiten); la <strong>glía</strong> es el <strong>equipo de apoyo</strong> (las cuida, alimenta, protege y aísla).",
+     "truco": "<strong>Neurona = la que trabaja · Glía = el equipo de apoyo</strong> (glía viene del griego «pegamento»).",
+     "q": "¿Qué dos tipos de células forman el tejido nervioso?",
+     "n": 31
+    },
+    {
+     "titulo": "Partes de la neurona",
+     "lv": 1,
+     "fuente": "Diapositiva 40",
+     "defs": [
+      {
+       "t": "Soma",
+       "facil": "Cuerpo de la neurona.",
+       "diapo": "Soma: núcleo y orgánulos."
+      },
+      {
+       "t": "Dendrita",
+       "facil": "Prolongación que recibe información.",
+       "diapo": "Dendritas: canal de entrada."
+      },
+      {
+       "t": "Axón",
+       "facil": "Prolongación que la envía.",
+       "diapo": "Axón: comienza en el cono axónico. Botones sinápticos liberan neurotransmisores. Vainas de mielina."
+      },
+      {
+       "t": "Cono axónico",
+       "facil": "Donde nace el axón.",
+       "diapo": "Axón: comienza en el cono axónico."
+      },
+      {
+       "t": "Botones sinápticos",
+       "facil": "Extremos del axón.",
+       "diapo": "Botones sinápticos liberan neurotransmisores."
+      },
+      {
+       "t": "Neurotransmisor",
+       "facil": "Sustancia química que pasa el mensaje a la siguiente célula.",
+       "diapo": "Botones sinápticos liberan neurotransmisores."
+      },
+      {
+       "t": "Mielina",
+       "facil": "Vaina aislante que acelera el impulso.",
+       "diapo": "Células de Schwann (SNP) y oligodendrocitos (SNC): vainas de mielina."
+      },
+      {
+       "t": "Nodo de Ranvier",
+       "facil": "Hueco entre vainas de mielina.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Sinapsis",
+       "facil": "Unión entre dos neuronas.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Las neuronas <strong>reciben, procesan y transmiten información</strong>.</p>\n<ul>\n<li><strong>Soma:</strong> núcleo y orgánulos.</li>\n<li><strong>Dendritas:</strong> <strong>canal de entrada</strong>.</li>\n<li><strong>Axón:</strong> empieza en el <strong>cono axónico</strong>; los <strong>botones sinápticos</strong> liberan <strong>neurotransmisores</strong>; tiene <strong>vainas de mielina</strong> (con <strong>nodos de Ranvier</strong>). El impulso va de dendrita → soma → axón → sinapsis.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/006.jpg",
+       "alt": "Partes de la neurona (diap. 40)",
+       "img": "<img src=\"img/006.jpg\" width=\"578\" height=\"760\" loading=\"lazy\" decoding=\"async\" alt=\"Partes de la neurona (diap. 40)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "La neurona es como un <strong>árbol</strong>: las <strong>dendritas</strong> son las <strong>raíces</strong> (recogen), el <strong>soma</strong> es el <strong>tronco</strong> (procesa) y el <strong>axón</strong> es la <strong>rama larga</strong> que lleva el mensaje hasta la siguiente célula. La <strong>mielina</strong> es el <strong>aislante</strong> del cable: hace que el impulso vaya más rápido, saltando de nodo en nodo.",
+     "truco": "<strong>Truco del recorrido:</strong> <strong>\"De-So-A-Si\"</strong> → <strong>De</strong>ndrita → <strong>So</strong>ma → <strong>A</strong>xón → <strong>Si</strong>napsis.",
+     "q": "¿Cuáles son las partes de una neurona y qué hace cada una?",
+     "n": 32
+    },
+    {
+     "titulo": "Clasificación de las neuronas",
+     "lv": 2,
+     "fuente": "Diapositivas 41 a 43",
+     "defs": [
+      {
+       "t": "Multipolar / bipolar / pseudomonopolar",
+       "facil": "Según cuántas prolongaciones salen del soma.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "SNC",
+       "facil": "Sistema nervioso central (encéfalo y médula).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Aferente / eferente",
+       "facil": "Que va <strong>hacia</strong> el SNC / que <strong>sale</strong> del SNC.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Interneurona",
+       "facil": "Neurona que conecta otras neuronas dentro del SNC.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Criterio</th>\n<th>Tipos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Según la forma</strong></td>\n<td>Multipolar, pseudomonopolar, bipolar, piramidal (de la corteza), granular (del hipocampo). Imagen: también Purkinje (cerebelo) y monopolar</td>\n</tr>\n<tr>\n<td><strong>Según el sentido del impulso</strong></td>\n<td><strong>Aferentes</strong> (llevan la información <strong>hacia</strong> el SNC: piel → médula) y <strong>eferentes</strong> (<strong>desde</strong> el SNC: médula → músculo)</td>\n</tr>\n<tr>\n<td><strong>Según el tipo de información</strong></td>\n<td><strong>Motoras</strong> (eferentes), <strong>sensitivas</strong> (aferentes), <strong>integradoras, interneuronas o de asociación</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "<strong>sensitivas = aferentes</strong> (te traen lo que <strong>sientes</strong> al cerebro). <strong>Motoras = eferentes</strong> (llevan la orden al <strong>músculo</strong> para que se <strong>mueva</strong>). Las <strong>interneuronas</strong> conectan unas con otras dentro del SNC.",
+     "truco": "<strong>\"Aferente = Arriba (Al SNC)\"</strong>, <strong>\"Eferente = Exit (sale del SNC)\"</strong>.",
+     "q": "¿Cómo se clasifican las neuronas según su forma, el sentido del impulso y el tipo de información?",
+     "n": 33
+    },
+    {
+     "titulo": "Células de la glía",
+     "lv": 1,
+     "fuente": "Diapositivas 44 a 46",
+     "defs": [
+      {
+       "t": "SNP",
+       "facil": "Sistema nervioso periférico (nervios y ganglios).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Ganglio",
+       "facil": "Grupo de somas fuera del SNC.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Barrera hematoencefálica",
+       "facil": "Filtro que controla qué pasa de la sangre al cerebro.",
+       "diapo": "Astrocitos: sostén, barrera hematoencefálica."
+      },
+      {
+       "t": "Microglía",
+       "facil": "Glía de defensa del SNC.",
+       "diapo": "Microglía: protección SNC."
+      },
+      {
+       "t": "Ependimarias",
+       "facil": "Revisten las cavidades del encéfalo y la médula.",
+       "diapo": "Células ependimarias: epitelio cúbico simple, reviste cavidades del encéfalo y la médula."
+      }
+     ],
+     "prof": "<p>Dan <strong>soporte</strong> a las neuronas a nivel <strong>espacial, metabólico, endocrino e inmunitario</strong>. Las hay en el <strong>SNP y en el SNC</strong>.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>SNP</th>\n<th>SNC</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Células de Schwann:</strong> vainas de mielina</td>\n<td><strong>Oligodendrocitos:</strong> vainas de mielina</td>\n</tr>\n<tr>\n<td><strong>Células satélites:</strong> rodean los somas en los ganglios</td>\n<td><strong>Astrocitos:</strong> sostén, <strong>barrera hematoencefálica</strong></td>\n</tr>\n<tr>\n<td></td>\n<td><strong>Microglía:</strong> protección del SNC</td>\n</tr>\n<tr>\n<td></td>\n<td><strong>Células ependimarias:</strong> epitelio cúbico simple que reviste las cavidades del encéfalo y la médula</td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/007.jpg",
+       "alt": "Células de la glía (diap. 44)",
+       "img": "<img src=\"img/007.jpg\" width=\"760\" height=\"469\" loading=\"lazy\" decoding=\"async\" alt=\"Células de la glía (diap. 44)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "La <strong>microglía</strong> es la \"<strong>policía</strong>\" del cerebro (defensa). Los <strong>astrocitos</strong> (forma de estrella) son el \"<strong>andamio</strong>\" y el <strong>portero</strong> (barrera hematoencefálica: deciden qué pasa de la sangre al cerebro).",
+     "truco": "<strong>mielina en el SNP = Schwann; en el SNC = oligodendrocito</strong> (\"<strong>P</strong>eriférico = <strong>P</strong>rimo <strong>S</strong>chwann\"). Glía del SNC: <strong>\"O-A-M-E\"</strong> → <strong>O</strong>ligodendrocito, <strong>A</strong>strocito, <strong>M</strong>icroglía, <strong>E</strong>pendimaria.",
+     "q": "¿Qué glía hay en el SNP y en el SNC y cuál es la función de cada una?",
+     "n": 34
+    },
+    {
+     "titulo": "Sustancia blanca y gris",
+     "lv": 2,
+     "fuente": "Diapositivas 47 y 48",
+     "defs": [
+      {
+       "t": "Mielinizado / amielínico",
+       "facil": "Con / sin mielina.",
+       "diapo": "Sustancia blanca: axones mielinizados. Sustancia gris: somas neuronales, dendritas amielínicas y células de la glía."
+      },
+      {
+       "t": "Corteza",
+       "facil": "Capa externa del cerebro.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Sustancia blanca:</strong> <strong>axones mielinizados</strong>. Funciones <strong>moduladoras de la respuesta y de coordinación</strong> entre zonas del SNC.</li>\n<li><strong>Sustancia gris:</strong> <strong>somas neuronales, dendritas amielínicas y glía</strong>. Función de <strong>procesamiento y almacenamiento</strong> de información.</li>\n</ul>\n<p>Imagen: en la <strong>médula</strong> la gris está <strong>dentro</strong> (forma de mariposa); en el <strong>cerebro</strong> la gris está <strong>fuera</strong> (corteza).</p>",
+     "entiende": "La <strong>mielina es grasa y blanca</strong>: por eso donde hay axones mielinizados se ve blanco. La <strong>gris</strong> es donde están los \"cerebros\" de las neuronas (somas): ahí se <strong>piensa y se guarda</strong>. La <strong>blanca</strong> son los <strong>cables</strong> que conectan.",
+     "truco": "<strong>\"Gris = Guarda y piensa · Blanca = Bus de cables\"</strong>. <strong>\"Médula: mariposa gris dentro · Cerebro: corteza gris fuera\"</strong>.",
+     "q": "¿Qué contiene la sustancia blanca y la gris, qué función tiene cada una y dónde están en la médula y en el cerebro?",
+     "n": 35
+    }
+   ],
+   "min": 60
+  },
+  {
+   "titulo": "Tejido conectivo: general y conjuntivo",
+   "conceptos": [
+    {
+     "titulo": "Tejido conectivo",
+     "lv": 1,
+     "fuente": "Diapositiva 49",
+     "defs": [
+      {
+       "t": "Conectivo",
+       "facil": "Tejido que une, rellena y sostiene.",
+       "diapo": "Tejido conectivo: función de relleno y sostén. MEC clave."
+      },
+      {
+       "t": "MEC (matriz extracelular)",
+       "facil": "Lo que hay entre las células (fibras + sustancia fundamental).",
+       "diapo": "Tejido conectivo: MEC clave. Tejido conjuntivo: MEC = red de polisacáridos y proteínas."
+      },
+      {
+       "t": "Fibroblasto",
+       "facil": "Célula que fabrica colágeno.",
+       "diapo": "Fibroblasto: tipo celular más común. Secreta colágeno."
+      },
+      {
+       "t": "Colágeno",
+       "facil": "Proteína resistente en forma de fibras.",
+       "diapo": "Fibroblasto: secreta colágeno."
+      }
+     ],
+     "prof": "<p>Función de <strong>relleno y sostén</strong>; la <strong>MEC (matriz extracelular) es clave</strong>. <strong>Fibroblasto:</strong> el tipo celular <strong>más común</strong>; <strong>secreta colágeno</strong> (esquema: núcleo, RE, Golgi, mitocondria).</p>",
+     "entiende": "Al revés que el epitelio, aquí las células están <strong>separadas</strong> y lo importante es lo que hay <strong>entre ellas</strong> (la MEC: fibras + sustancia fundamental). El <strong>fibroblasto</strong> es el \"<strong>albañil</strong>\" que fabrica esa matriz (colágeno).",
+     "truco": "<strong>\"Fibroblasto = fabrica fibras\"</strong>.",
+     "q": "¿Qué función tiene el tejido conectivo y cuál es su célula más común?",
+     "n": 36
+    },
+    {
+     "titulo": "Tipos de tejido conectivo",
+     "lv": 1,
+     "fuente": "Diapositiva 50",
+     "prof": "<p><strong>Conjuntivo, cartilaginoso, óseo, adiposo, sanguíneo, hematopoyético y linfático</strong> (7).</p>",
+     "truco": "<strong>\"Con-Car-Ó-A-San-He-Lin\"</strong> → \"<strong>Con</strong> el <strong>Car</strong>ro <strong>Ó</strong>scar <strong>A</strong>ndaba <strong>San</strong>o <strong>He</strong>cho un <strong>Lin</strong>ce\".",
+     "q": "¿Cuáles son los 7 tipos de tejido conectivo?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Todos son conectivos porque <strong>rellenan, unen y sostienen</strong> y tienen mucha <strong>matriz extracelular</strong> entre sus células. Lo que cambia es su matriz: blanda (conjuntivo), firme (cartílago), dura (hueso), grasa (adiposo) o líquida (sangre).</p></div>"
+      }
+     ],
+     "n": 37
+    },
+    {
+     "titulo": "Tejido conjuntivo",
+     "lv": 2,
+     "fuente": "Diapositiva 51",
+     "defs": [
+      {
+       "t": "Polisacáridos",
+       "facil": "Azúcares largos.",
+       "diapo": "MEC = red de polisacáridos y proteínas."
+      },
+      {
+       "t": "Miofibroblasto",
+       "facil": "Fibroblasto con capacidad de contraerse.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Células mesenquimatosas",
+       "facil": "Células \"madre\" del conectivo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Adipocito",
+       "facil": "Célula de grasa.",
+       "diapo": "Adipocitos: 95% lípidos."
+      },
+      {
+       "t": "Macrófago",
+       "facil": "Célula que se \"come\" restos y microbios.",
+       "diapo": "Monocitos: al pasar a los tejidos se convierten en macrófagos que fagocitan bacterias."
+      }
+     ],
+     "prof": "<p>Soporte y relleno. <strong>MEC = red de polisacáridos y proteínas.</strong> <strong>Sin células específicas</strong>: fibroblasto, miofibroblasto, células mesenquimatosas, adipocitos (en el esquema también hay macrófago, linfocito, fibras de colágeno y elásticas, capilar).</p>",
+     "entiende": "El conjuntivo es el <strong>\"relleno\"</strong> que hay entre órganos y tejidos. Su matriz (MEC) es una <strong>red</strong> de azúcares largos y proteínas, y entre ella viven varias células; la más común es el <strong>fibroblasto</strong>.",
+     "truco": "El conjuntivo es el <strong>\"relleno con red\"</strong>: <strong>MEC de polisacáridos y proteínas</strong> y <strong>sin células específicas</strong> (la estrella es el <strong>fibroblasto</strong>).",
+     "q": "¿Qué es la MEC del conjuntivo y qué células tiene?",
+     "n": 38
+    },
+    {
+     "titulo": "Conjuntivo laxo vs denso",
+     "lv": 2,
+     "fuente": "Diapositiva 52",
+     "defs": [
+      {
+       "t": "Laxo",
+       "facil": "Flojo, con muchas células y espacio.",
+       "diapo": "Tejido conjuntivo laxo: el más abundante. Muchas células. Entre tejidos."
+      },
+      {
+       "t": "Denso",
+       "facil": "Apretado, casi todo fibras.",
+       "diapo": "Tejido conjuntivo denso: muchas fibras, pocas células."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th><strong>Laxo</strong></th>\n<th><strong>Denso</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>El más abundante</strong></td>\n<td><strong>Muchas fibras, pocas células</strong></td>\n</tr>\n<tr>\n<td><strong>Muchas células</strong></td>\n<td></td>\n</tr>\n<tr>\n<td>Está <strong>entre tejidos</strong></td>\n<td></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "<strong>laxo</strong> = \"flojo\" (como una <strong>esponja</strong> con mucho espacio y muchas células); <strong>denso</strong> = \"apretado\" (como una <strong>cuerda</strong>, casi todo fibras).",
+     "truco": "<strong>\"Laxo = Lleno de células · Denso = Duro de fibras\"</strong>.",
+     "q": "¿Qué diferencia al conjuntivo laxo del denso?",
+     "n": 39
+    },
+    {
+     "titulo": "Tipos de conjuntivo denso",
+     "lv": 2,
+     "fuente": "Diapositiva 53",
+     "defs": [
+      {
+       "t": "Dermis",
+       "facil": "Capa de la piel bajo la epidermis.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cápsula",
+       "facil": "Envoltura de un órgano.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Pericondrio / periostio",
+       "facil": "Envoltura del cartílago / del hueso.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Epineuro",
+       "facil": "Envoltura de un nervio.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Duramadre",
+       "facil": "La membrana más externa que cubre el cerebro.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Aponeurosis",
+       "facil": "Lámina de tejido que une músculos.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Ligamento",
+       "facil": "Une hueso con hueso.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Estructura</th>\n<th>Función</th>\n<th>Dónde</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Irregular</strong></td>\n<td>Red <strong>tridimensional</strong> de colágeno</td>\n<td><strong>Protección</strong></td>\n<td><strong>Dermis</strong>, cápsulas de órganos, pericondrio, periostio, epineuro, duramadre</td>\n</tr>\n<tr>\n<td><strong>Regular</strong></td>\n<td>Fibras en <strong>haces paralelos</strong></td>\n<td><strong>Estiramiento</strong></td>\n<td><strong>Tendones</strong>, aponeurosis, ligamentos</td>\n</tr>\n<tr>\n<td><strong>Elástico</strong></td>\n<td>Haces de <strong>fibras elásticas</strong> unidas por t. c. laxo</td>\n<td>Elasticidad</td>\n<td><strong>Pared de arterias</strong> y órganos huecos, ligamentos vertebrales, cuerdas vocales</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "<strong>regular</strong> = fibras <strong>en la misma dirección</strong> porque el tendón solo tira <strong>en un sentido</strong>. <strong>Irregular</strong> = fibras <strong>en todas direcciones</strong> porque la piel recibe tirones <strong>por todos lados</strong>.",
+     "truco": "<strong>\"Regular = Recto (tendón)\" · \"Irregular = en todas direcciones (dermis)\" · \"Elástico = arterias y cuerdas vocales (se estiran y vuelven)\"</strong>.",
+     "q": "Diferencia el conjuntivo denso irregular, el regular y el elástico, con un ejemplo de cada uno.",
+     "n": 40
+    }
+   ],
+   "min": 35
+  },
+  {
+   "titulo": "Tejido adiposo",
+   "conceptos": [
+    {
+     "titulo": "Características",
+     "lv": 2,
+     "fuente": "Diapositiva 54",
+     "defs": [
+      {
+       "t": "Lípidos",
+       "facil": "Grasas.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Capilar",
+       "facil": "El vaso sanguíneo más fino.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Especializado en <strong>almacenamiento de lípidos</strong>. <strong>Adipocitos: 95 % lípidos</strong> (una gran <strong>gota de grasa</strong>, núcleo desplazado). Tejido <strong>de reserva</strong>, con <strong>abundantes capilares</strong>.</p>",
+     "entiende": "El adipocito es como un <strong>globo lleno de aceite</strong>: la gota de grasa ocupa casi todo y <strong>empuja el núcleo</strong> hacia un lado. Tiene muchos capilares porque tiene que <strong>meter y sacar</strong> grasa de la sangre.",
+     "truco": "El adipocito es un <strong>\"globo de aceite\"</strong>: <strong>95 % lípidos</strong>, una gota que <strong>empuja el núcleo</strong> a un lado.",
+     "q": "¿Qué hace el tejido adiposo y cómo es un adipocito?",
+     "n": 41
+    },
+    {
+     "titulo": "Blanco vs pardo",
+     "lv": 2,
+     "fuente": "Diapositiva 55",
+     "defs": [
+      {
+       "t": "Unilocular / multilocular",
+       "facil": "Con una sola gota / con muchas gotas de grasa.",
+       "diapo": "Tejido adiposo blanco: adipocitos con estructura clásica. Tejido adiposo pardo: adipocitos con muchas gotas de grasa en vez de 1."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Blanco:</strong> en <strong>adultos</strong>; adipocito clásico (<strong>una gota</strong>, unilocular).</li>\n<li><strong>Pardo:</strong> en <strong>fetos y recién nacidos</strong>; adipocitos con <strong>muchas gotas de grasa</strong> en vez de una.</li>\n</ul>",
+     "entiende": "El <strong>pardo</strong> sirve para <strong>dar calor</strong> al bebé (tiene muchas mitocondrias, por eso es más oscuro).",
+     "truco": "<strong>\"Pardo = Pequeños (bebés), Plural (muchas gotas)\" · \"Blanco = adulto, una gota\"</strong>.",
+     "q": "¿Qué diferencia al tejido adiposo blanco del pardo?",
+     "n": 42
+    },
+    {
+     "titulo": "Localización",
+     "lv": 3,
+     "fuente": "Diapositiva 56",
+     "defs": [
+      {
+       "t": "Hipodermis",
+       "facil": "Capa más profunda de la piel.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Panículo adiposo",
+       "facil": "La capa de grasa bajo la piel.",
+       "diapo": "Bajo hipodermis: panículo adiposo."
+      },
+      {
+       "t": "Mesenterio",
+       "facil": "Membrana que sujeta el intestino.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Médula ósea amarilla",
+       "facil": "Médula de los huesos llena de grasa.",
+       "diapo": "Médula ósea amarilla (huesos largos, reserva energética)."
+      },
+      {
+       "t": "Articulación sinovial",
+       "facil": "Articulación móvil (rodilla, cadera).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>Bajo la hipodermis: <strong>panículo adiposo</strong>.</li>\n<li>Distintas zonas del <strong>mesenterio</strong>.</li>\n<li><strong>Médula ósea amarilla</strong> (huesos largos, reserva energética).</li>\n<li><strong>Articulaciones sinoviales grandes.</strong></li>\n</ul>",
+     "entiende": "La grasa se guarda <strong>bajo la piel</strong> (abrigo), <strong>alrededor del intestino</strong> (mesenterio), <strong>dentro de los huesos</strong> (médula amarilla) y en las <strong>articulaciones grandes</strong> (cojín).",
+     "truco": "Grasa en <strong>\"PaMeMeAr\"</strong> → <strong>Pa</strong>nículo adiposo, <strong>Me</strong>senterio, <strong>Mé</strong>dula ósea amarilla y <strong>Ar</strong>ticulaciones sinoviales grandes.",
+     "q": "¿Dónde se localiza el tejido adiposo?",
+     "n": 43
+    },
+    {
+     "titulo": "Funciones",
+     "lv": 2,
+     "fuente": "Diapositiva 57",
+     "defs": [
+      {
+       "t": "Lipólisis",
+       "facil": "Rotura de la grasa para usarla como energía.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "TAG (triglicéridos)",
+       "facil": "La forma en que se guarda la grasa.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Almacén energético, aislamiento térmico y amortiguación.</strong>\nEsquema de lipólisis: con <strong>adrenalina, ayuno o ejercicio</strong>, los TAG → DAG → MAG → <strong>ácido graso + glicerol</strong> (enzimas: LTA, <strong>lipasa sensible a hormonas</strong> y MAGL).</p>",
+     "entiende": "La grasa es la <strong>despensa</strong> (energía), el <strong>abrigo</strong> (calor) y el <strong>cojín</strong> (golpes). La <strong>lipólisis</strong> es \"romper la grasa\" para usarla cuando hace falta (ayuno, ejercicio).",
+     "truco": "<strong>\"Despensa, Abrigo y Cojín\"</strong>.",
+     "q": "¿Cuáles son las tres funciones del tejido adiposo?",
+     "n": 44
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "Tejido cartilaginoso",
+   "conceptos": [
+    {
+     "titulo": "Características",
+     "lv": 2,
+     "fuente": "Diapositivas 58 y 59",
+     "defs": [
+      {
+       "t": "Pericondrio",
+       "facil": "Envoltura que nutre al cartílago.",
+       "diapo": "Sin vasos sanguíneos → cubierto por pericondrio (tejido conjuntivo denso + capa celular interna) → nutrición."
+      },
+      {
+       "t": "Condrocito",
+       "facil": "Célula del cartílago.",
+       "diapo": "Condrocitos sintetizan colágeno y proteoglicanos que forman la MEC. Se ubican en las lagunas del cartílago."
+      },
+      {
+       "t": "Proteoglicanos",
+       "facil": "Moléculas que retienen agua.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Lagunas",
+       "facil": "Huecos donde viven las células.",
+       "diapo": "Los condrocitos se ubican en las lagunas del cartílago."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Resistente a estiramiento y compresión.</strong></li>\n<li>Los cartílagos son estructuras de <strong>soporte</strong>; a veces dan <strong>movilidad</strong>.</li>\n<li><strong>Sin vasos sanguíneos</strong> → cubierto por <strong>pericondrio</strong> (conjuntivo denso + capa celular interna), que le da la <strong>nutrición</strong>.</li>\n<li>Composición: <strong>95 % MEC y 5 % condrocitos</strong>. Los condrocitos sintetizan <strong>colágeno y proteoglicanos</strong> (la MEC) y están en las <strong>lagunas del cartílago</strong>.</li>\n</ul>",
+     "entiende": "Como no tiene vasos, el cartílago \"come\" a través de su <strong>funda</strong> (el <strong>pericondrio</strong>). Por eso se cura tan mal cuando se rompe.",
+     "truco": "<strong>\"peri-CONDRIO = alrededor del cartílago\" (condro = cartílago)</strong>. <strong>95/5</strong>: casi todo matriz, pocas células.",
+     "q": "¿Cómo se nutre el cartílago, cuál es su composición y dónde están los condrocitos?",
+     "n": 45
+    },
+    {
+     "titulo": "Tres tipos de cartílago",
+     "lv": 1,
+     "fuente": "Diapositivas 60 a 63",
+     "defs": [
+      {
+       "t": "Hialino",
+       "facil": "\"como el vidrio\", el cartílago más rígido.",
+       "diapo": "Cartílago hialino: pocas fibras elásticas → el más rígido."
+      },
+      {
+       "t": "Grupos isogénicos",
+       "facil": "Grupos de condrocitos que vienen de la misma célula.",
+       "diapo": "Cartílago hialino: condrocitos organizados en grupos."
+      },
+      {
+       "t": "Epiglotis",
+       "facil": "Tapa que cierra la tráquea al tragar.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Sínfisis pubiana",
+       "facil": "Unión de los dos huesos del pubis.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Menisco",
+       "facil": "Almohadilla de cartílago de la rodilla.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cartílagos costales",
+       "facil": "Unen las costillas al esternón.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Elástico</strong></th>\n<th><strong>Fibrocartílago</strong></th>\n<th><strong>Hialino</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Fibras</td>\n<td><strong>Muchas elásticas</strong> → flexibilidad y elasticidad</td>\n<td><strong>Haces de fibras paralelas</strong> con hileras de condrocitos</td>\n<td><strong>Pocas fibras elásticas → el más rígido</strong></td>\n</tr>\n<tr>\n<td>Condrocitos</td>\n<td>En <strong>filas paralelas</strong> a las fibras de colágeno</td>\n<td>En <strong>hileras</strong></td>\n<td>En <strong>grupos</strong> (isogénicos)</td>\n</tr>\n<tr>\n<td>Pericondrio</td>\n<td><strong>Sí</strong></td>\n<td><strong>No: sin pericondrio</strong></td>\n<td><strong>Sí, excepto los articulares</strong></td>\n</tr>\n<tr>\n<td>Propiedad</td>\n<td>Flexible</td>\n<td><strong>Gran resistencia y rigidez</strong></td>\n<td>Rígido</td>\n</tr>\n<tr>\n<td>Dónde</td>\n<td><strong>Pabellón auditivo</strong>, conducto auditivo externo, parte de la trompa de Eustaquio, <strong>epiglotis</strong> y laringe</td>\n<td><strong>Discos intervertebrales</strong>, art. temporomaxilar, esternocostoclavicular y acromioclavicular, <strong>sínfisis pubiana</strong>, <strong>meniscos</strong> de la rodilla</td>\n<td><strong>Articulaciones</strong>, laringe, <strong>tráquea</strong>, bronquios, <strong>cartílagos costales</strong> y nasales</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "Tócate la <strong>oreja</strong>: se dobla y vuelve → <strong>elástico</strong>. Los <strong>discos de la columna</strong> y los <strong>meniscos</strong> aguantan peso y golpes → <strong>fibrocartílago</strong>. La <strong>nariz</strong> y los anillos de la <strong>tráquea</strong> son firmes → <strong>hialino</strong> (<em>hialino</em> = como el vidrio).",
+     "truco": "<strong>\"Oreja Elástica, Disco Fibroso, Nariz Hialina\"</strong>. Y <strong>\"el FIBRO no tiene funda\"</strong> (sin pericondrio).",
+     "q": "Compara los tres tipos de cartílago (fibras, pericondrio y localización).",
+     "n": 46
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Tejido óseo y el hueso",
+   "conceptos": [
+    {
+     "titulo": "Tejido óseo",
+     "lv": 2,
+     "fuente": "Diapositivas 64 y 65",
+     "defs": [
+      {
+       "t": "Calcificación",
+       "facil": "Depósito de calcio que endurece la matriz.",
+       "diapo": "Tejido óseo: tejido duro y rígido gracias a la calcificación de su MEC."
+      },
+      {
+       "t": "Inorgánico",
+       "facil": "Mineral, no vivo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Fosfato cálcico",
+       "facil": "El mineral que da dureza al hueso.",
+       "diapo": "Parte inorgánica (cristales de fosfato cálcico)."
+      },
+      {
+       "t": "Sustancia fundamental",
+       "facil": "La parte sin forma de la matriz.",
+       "diapo": "Tejido óseo: 10% de sustancia fundamental."
+      },
+      {
+       "t": "Tracción / presión",
+       "facil": "Fuerza que estira / que aplasta.",
+       "diapo": "Fibras → resistencia a tracciones. Cristales → resistencia a presiones."
+      }
+     ],
+     "prof": "<p><strong>Duro y rígido</strong> por la <strong>calcificación de su MEC</strong>. Forma los huesos → <strong>soporte y protección</strong>.</p>\n<ul>\n<li><strong>Composición:</strong> principalmente <strong>colágeno</strong>; parte <strong>inorgánica</strong> (<strong>cristales de fosfato cálcico</strong>); <strong>10 % de sustancia fundamental</strong>.</li>\n<li><strong>Fibras → resistencia a tracciones. Cristales → resistencia a presiones.</strong></li>\n</ul>",
+     "entiende": "El hueso es como el <strong>hormigón armado</strong>: el <strong>colágeno</strong> son las <strong>varillas de hierro</strong> (aguantan tirones) y los <strong>cristales de calcio</strong> son el <strong>cemento</strong> (aguantan peso).",
+     "truco": "<strong>\"Colágeno = Cuerda (tracción) · Cristal = Columna (presión)\"</strong>.",
+     "q": "¿De qué está compuesto el tejido óseo y qué aporta cada componente?",
+     "n": 47
+    },
+    {
+     "titulo": "Células del hueso",
+     "lv": 1,
+     "fuente": "Diapositivas 66 a 68",
+     "defs": [
+      {
+       "t": "Osteógena (osteoprogenitora)",
+       "facil": "Célula madre del hueso.",
+       "diapo": "Osteoblastos y osteocitos: por maduración de células osteógenas."
+      },
+      {
+       "t": "Osteoblasto",
+       "facil": "Forma hueso.",
+       "diapo": "Osteoblastos forman matriz ósea. Unidos entre ellos por uniones gap."
+      },
+      {
+       "t": "Osteocito",
+       "facil": "Osteoblasto encerrado en la matriz.",
+       "diapo": "Al quedar rodeados de matriz → osteocitos, conectados por canales en MEC."
+      },
+      {
+       "t": "Osteoclasto",
+       "facil": "Destruye hueso.",
+       "diapo": "Osteoclastos: resorción ósea. Polinucleados, ubicados en lagunas de Howship."
+      },
+      {
+       "t": "Resorción",
+       "facil": "Destrucción del hueso viejo.",
+       "diapo": "Osteoclastos: resorción ósea."
+      },
+      {
+       "t": "Polinucleado",
+       "facil": "Con varios núcleos.",
+       "diapo": "Osteoclastos: polinucleados."
+      },
+      {
+       "t": "Canalículos",
+       "facil": "Canales finos que comunican las células.",
+       "diapo": "Osteocitos conectados por canales en MEC."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Célula</th>\n<th>Qué hace</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Células osteógenas</strong> (osteoprogenitoras)</td>\n<td>Por <strong>maduración</strong> dan osteoblastos</td>\n</tr>\n<tr>\n<td><strong>Osteoblastos</strong></td>\n<td><strong>Forman la matriz ósea</strong> (sintetizan tejido óseo); unidos por <strong>uniones gap</strong></td>\n</tr>\n<tr>\n<td><strong>Osteocitos</strong></td>\n<td>Osteoblastos <strong>rodeados de matriz</strong>; conectados por <strong>canales (canalículos)</strong> en la MEC; viven en <strong>lagunas</strong></td>\n</tr>\n<tr>\n<td><strong>Osteoclastos</strong></td>\n<td><strong>Resorción ósea</strong> (degradan hueso); <strong>polinucleados</strong>; en las <strong>lagunas de Howship</strong>; tienen <strong>borde rugoso</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "El <strong>osteoblasto</strong> es el <strong>albañil</strong> que pone ladrillos; cuando se queda <strong>encerrado</strong> entre sus propios ladrillos se convierte en <strong>osteocito</strong> (el <strong>vigilante</strong> que vive dentro del hueso). El <strong>osteoclasto</strong> es el <strong>demoledor</strong> que quita hueso viejo.",
+     "truco": "<strong>osteoBlasto = Build (construye) · osteoClasto = Corta (destruye) · osteoCito = \"Citado\" en casa (vive dentro)</strong>.",
+     "q": "¿Qué hacen los osteoblastos, osteocitos y osteoclastos? ¿Dónde están los osteoclastos?",
+     "n": 48
+    },
+    {
+     "titulo": "El hueso (órgano)",
+     "lv": 2,
+     "fuente": "Diapositivas 69 y 70",
+     "defs": [
+      {
+       "t": "Epífisis",
+       "facil": "Extremos del hueso largo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Diáfisis",
+       "facil": "Parte central.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Hematopoyético",
+       "facil": "Que fabrica células de la sangre.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Hueso = <strong>tejido óseo + conjuntivo + cartilaginoso + hematopoyético</strong>. Tipos: <strong>largos</strong> (epífisis y diáfisis), <strong>cortos</strong> y <strong>planos</strong>.\nPartes: <strong>periostio, tejido óseo compacto, endostio y tejido óseo esponjoso</strong>.</p>",
+     "imgs": [
+      {
+       "src": "img/008.jpg",
+       "alt": "Epífisis y diáfisis (diap. 69)",
+       "img": "<img src=\"img/008.jpg\" width=\"435\" height=\"510\" loading=\"lazy\" decoding=\"async\" alt=\"Epífisis y diáfisis (diap. 69)\" loading=\"lazy\">"
+      },
+      {
+       "src": "img/009.jpg",
+       "alt": "Partes del hueso largo (diap. 76)",
+       "img": "<img src=\"img/009.jpg\" width=\"245\" height=\"510\" loading=\"lazy\" decoding=\"async\" alt=\"Partes del hueso largo (diap. 76)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "<strong>diáfisis</strong> = el palo del medio; <strong>epífisis</strong> = las cabezas de los extremos.",
+     "truco": "<strong>Truco de las partes (de fuera a dentro):</strong> <strong>\"Peri-Compacto-Endo-Esponjoso\"</strong> = <strong>piel → corteza → forro interior → miga</strong>.",
+     "q": "¿Qué tejidos forman un hueso, qué tipos de hueso hay y cuáles son sus partes?",
+     "n": 49
+    },
+    {
+     "titulo": "Periostio",
+     "lv": 2,
+     "fuente": "Diapositiva 71",
+     "defs": [
+      {
+       "t": "Periostio",
+       "facil": "Envoltura exterior del hueso.",
+       "diapo": "Periostio: capa exterior de tejido conjuntivo denso, capa interior laxo. La capa interna contiene células osteoprogenitoras (dan osteoblastos)."
+      }
+     ],
+     "prof": "<ul>\n<li>Capa <strong>exterior</strong>: conjuntivo <strong>denso</strong> (capa fibrosa).</li>\n<li>Capa <strong>interior</strong>: <strong>laxo</strong> (capa celular); contiene células <strong>osteoprogenitoras</strong> (dan osteoblastos).</li>\n</ul>",
+     "truco": "<strong>\"fuera Duro (denso), dentro bLando (laxo) con las células\"</strong>.",
+     "q": "¿Qué capas tiene el periostio y qué células contiene?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>El periostio es la <strong>\"funda\" del hueso</strong>: por fuera es dura (protege) y por dentro guarda las <strong>células que fabrican hueso nuevo</strong> (por eso un hueso roto puede soldarse).</p></div>"
+      }
+     ],
+     "n": 50
+    },
+    {
+     "titulo": "Hueso compacto: la osteona",
+     "lv": 1,
+     "fuente": "Diapositivas 72 y 73",
+     "defs": [
+      {
+       "t": "Laminillas (lamelas)",
+       "facil": "Capas de matriz ósea.",
+       "diapo": "Tejido óseo compacto: laminillas óseas concéntricas entre las que se localizan canales de Havers."
+      },
+      {
+       "t": "Canal de Havers",
+       "facil": "Canal central con vasos y nervios.",
+       "diapo": "Laminillas óseas concéntricas entre las que se localizan canales de Havers."
+      },
+      {
+       "t": "Osteona (sistema de Havers)",
+       "facil": "La unidad del hueso compacto.",
+       "diapo": "Sistema de Havers = osteona: unidad anatómica y funcional del hueso."
+      },
+      {
+       "t": "Conductos de Volkmann",
+       "facil": "Canales transversales que unen las osteonas.",
+       "diapo": "Osteonas unidas por conductos de Volkmann."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Laminillas óseas concéntricas</strong> con los <strong>canales de Havers</strong> (vasos y nervios).</li>\n<li><strong>Sistema de Havers = osteona: unidad anatómica y funcional del hueso.</strong></li>\n<li>Osteonas unidas por <strong>conductos de Volkmann</strong>.</li>\n<li>Esquema de la osteona: laminillas (lamelas), conducto de Havers en el centro, osteocitos en lagunas y <strong>canalículos óseos</strong>.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/010.jpg",
+       "alt": "La osteona al microscopio (diap. 72)",
+       "img": "<img src=\"img/010.jpg\" width=\"760\" height=\"574\" loading=\"lazy\" decoding=\"async\" alt=\"La osteona al microscopio (diap. 72)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "La osteona es como el <strong>tronco de un árbol cortado</strong>: anillos (laminillas) alrededor de un agujero central (Havers) por donde pasan vasos y nervios. Los <strong>Volkmann</strong> son los \"<strong>pasillos transversales</strong>\" que comunican unas osteonas con otras.",
+     "truco": "<strong>\"Havers = Hueco central (vertical) · Volkmann = Vía transversal\"</strong>.",
+     "q": "¿Qué es una osteona, qué tiene en el centro y qué une unas osteonas con otras?",
+     "n": 51
+    },
+    {
+     "titulo": "Endostio",
+     "lv": 3,
+     "fuente": "Diapositiva 74",
+     "defs": [
+      {
+       "t": "Endostio",
+       "facil": "Capa que reviste el interior del hueso.",
+       "diapo": "Endostio: reviste las superficies internas del hueso. Contiene células osteogénicas y se continúa con la capa interna del periostio en los orificios de desembocadura de los conductos vasculares que perforan el hueso."
+      },
+      {
+       "t": "Fibras de Sharpey",
+       "facil": "Fibras que sujetan el periostio al hueso.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Reviste las superficies internas del hueso.</strong> Contiene <strong>células osteogénicas</strong> y se <strong>continúa con la capa interna del periostio</strong> en los orificios de los conductos vasculares que perforan el hueso (imagen: médula ósea amarilla, fibras de Sharpey, arterias).</p>",
+     "imgs": [
+      {
+       "src": "img/011.jpg",
+       "alt": "Periostio, endostio y fibras de Sharpey (diap. 74)",
+       "img": "<img src=\"img/011.jpg\" width=\"653\" height=\"760\" loading=\"lazy\" decoding=\"async\" alt=\"Periostio, endostio y fibras de Sharpey (diap. 74)\" loading=\"lazy\">"
+      }
+     ],
+     "truco": "<strong>\"ENDOstio = dENtro\" · \"PERIostio = PERIferia (fuera)\"</strong>.",
+     "q": "¿Qué es el endostio y con qué se continúa?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>El endostio es el <strong>\"forro interior\"</strong> del hueso: tapiza el hueco de dentro y también tiene células que fabrican hueso. Las <strong>fibras de Sharpey</strong> son las \"grapas\" que pegan el periostio al hueso.</p></div>"
+      }
+     ],
+     "n": 52
+    },
+    {
+     "titulo": "Hueso esponjoso",
+     "lv": 2,
+     "fuente": "Diapositivas 75 y 76",
+     "defs": [
+      {
+       "t": "Trabéculas",
+       "facil": "Láminas irregulares del hueso esponjoso.",
+       "diapo": "Tejido óseo esponjoso: laminillas dispuestas de forma irregular formando trabéculas."
+      },
+      {
+       "t": "Cavidad medular",
+       "facil": "El hueco central del hueso largo, con médula.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>No tiene verdaderas osteonas.</strong></li>\n<li>Laminillas <strong>irregulares</strong> formando <strong>trabéculas</strong>, con <strong>osteocitos en lagunas</strong>.</li>\n<li>Forma la <strong>mayor parte de los huesos cortos, planos e irregulares</strong> y las <strong>epífisis de los huesos largos</strong>.</li>\n</ul>\n<p>Imagen del fémur: hueso esponjoso en los extremos, compacto en la diáfisis y <strong>cavidad medular</strong> en el centro.</p>",
+     "entiende": "El esponjoso es como un <strong>panal</strong>: láminas (trabéculas) con huecos entre ellas. Así el hueso es <strong>ligero</strong> pero resistente; los huecos están llenos de médula.",
+     "truco": "<strong>esponjoso = esponja de trabéculas, sin osteonas</strong>, en los <strong>extremos</strong> (epífisis) y en los huesos <strong>cortos, planos e irregulares</strong>.",
+     "q": "¿Cómo es el hueso esponjoso y dónde se encuentra?",
+     "n": 53
+    },
+    {
+     "titulo": "Compacto vs esponjoso",
+     "lv": 2,
+     "fuente": "Resumen propio de las diapositivas 72 a 76",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Compacto</th>\n<th>Esponjoso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Osteonas (Havers + Volkmann)</td>\n<td><strong>Sin</strong> verdaderas osteonas</td>\n</tr>\n<tr>\n<td>Laminillas concéntricas</td>\n<td>Laminillas irregulares → <strong>trabéculas</strong></td>\n</tr>\n<tr>\n<td>Diáfisis y capa externa</td>\n<td>Epífisis, huesos cortos, planos e irregulares</td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/012.jpg",
+       "alt": "Hueso compacto y esponjoso (diap. 76)",
+       "img": "<img src=\"img/012.jpg\" width=\"620\" height=\"657\" loading=\"lazy\" decoding=\"async\" alt=\"Hueso compacto y esponjoso (diap. 76)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "<strong>compacto</strong> = macizo, como una <strong>pared</strong>; <strong>esponjoso</strong> = lleno de huecos, como una <strong>esponja</strong> o un <strong>panal</strong> (más ligero).",
+     "truco": "<strong>Compacto = Columnas (osteonas) en la diáfisis · Esponjoso = Esponja (trabéculas) en las epífisis</strong>.",
+     "q": "¿En qué se diferencia el hueso compacto del esponjoso?",
+     "n": 54
+    }
+   ],
+   "min": 75
+  },
+  {
+   "titulo": "Tejido sanguíneo",
+   "conceptos": [
+    {
+     "titulo": "La sangre",
+     "lv": 2,
+     "fuente": "Diapositiva 77",
+     "defs": [
+      {
+       "t": "Plasma",
+       "facil": "La parte líquida de la sangre.",
+       "diapo": "Plasma: 90% H2O, iones, proteínas, lípidos y glúcidos."
+      },
+      {
+       "t": "Coagulación",
+       "facil": "La sangre se vuelve sólida (coágulo) para tapar una herida.",
+       "diapo": "Cuando el plasma sale de los vasos sanguíneos → coagulación."
+      }
+     ],
+     "prof": "<p><strong>Único tejido cuya MEC es líquida.</strong></p>\n<ul>\n<li><strong>Plasma:</strong> <strong>90 % H₂O</strong>, iones, proteínas, lípidos y glúcidos. Cuando sale de los vasos → <strong>coagulación</strong>.</li>\n<li><strong>Células:</strong> <strong>eritrocitos, leucocitos y plaquetas</strong> (estas son fragmentos).</li>\n</ul>",
+     "entiende": "La sangre es un tejido <strong>conectivo</strong> aunque sea líquida: el <strong>plasma</strong> es su \"matriz\" y las células flotan en él.",
+     "truco": "<strong>\"Rojos, Blancos y Trocitos\"</strong> = eritrocitos, leucocitos y plaquetas (fragmentos).",
+     "q": "¿Por qué la sangre es un tejido especial y cuál es su composición?",
+     "n": 55
+    },
+    {
+     "titulo": "Eritrocitos",
+     "lv": 1,
+     "fuente": "Diapositiva 78",
+     "defs": [
+      {
+       "t": "Bicóncavo",
+       "facil": "Hundido por los dos lados.",
+       "diapo": "Eritrocitos: disco bicóncavo, anucleado."
+      },
+      {
+       "t": "Anucleado",
+       "facil": "Sin núcleo.",
+       "diapo": "Eritrocitos: disco bicóncavo, anucleado."
+      },
+      {
+       "t": "Hemoglobina",
+       "facil": "Proteína que transporta el oxígeno.",
+       "diapo": "Eritrocitos: contienen hemoglobina (transporte O2)."
+      },
+      {
+       "t": "Hematocrito",
+       "facil": "% de la sangre que son glóbulos rojos.",
+       "diapo": "Hematocrito: volumen de eritrocitos en relación con volumen sanguíneo."
+      },
+      {
+       "t": "VSG",
+       "facil": "Velocidad a la que bajan los glóbulos rojos en un tubo (2-12 mm/h).",
+       "diapo": "Eritrosedimentación o VSG: velocidad con que los eritrocitos sedimentan (2-12 mm/h)."
+      },
+      {
+       "t": "Anemia",
+       "facil": "Falta de glóbulos rojos o de hemoglobina.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Disco bicóncavo, anucleado</strong>, con <strong>hemoglobina</strong> (transporte de O₂).</li>\n<li><strong>Hematocrito:</strong> volumen de eritrocitos en relación con el volumen sanguíneo.</li>\n<li><strong>Eritrosedimentación o VSG:</strong> velocidad con la que sedimentan los eritrocitos (<strong>2-12 mm/h</strong>).</li>\n</ul>\n<p>Imagen: sangre normal frente a anemia (menos eritrocitos).</p>",
+     "entiende": "Sin núcleo y con forma de <strong>donut sin agujero</strong> caben más hemoglobina y pasan por capilares estrechos.",
+     "truco": "<strong>\"Hematocrito = Cuánto rojo hay\" · \"VSG = qué rápido baja el rojo (2-12)\"</strong>.",
+     "q": "¿Cómo es un eritrocito y qué son el hematocrito y la VSG?",
+     "n": 56
+    },
+    {
+     "titulo": "Leucocitos: clasificación",
+     "lv": 1,
+     "fuente": "Diapositiva 79",
+     "defs": [
+      {
+       "t": "Leucocito",
+       "facil": "Glóbulo blanco.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Granulocito / agranulocito",
+       "facil": "Con / sin gránulos visibles en el citoplasma.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Granulocitos:</strong> neutrófilos, eosinófilos, basófilos.</li>\n<li><strong>Agranulocitos:</strong> linfocitos, monocitos.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/013.jpg",
+       "alt": "Los 5 leucocitos (diap. 79)",
+       "img": "<img src=\"img/013.jpg\" width=\"760\" height=\"630\" loading=\"lazy\" decoding=\"async\" alt=\"Los 5 leucocitos (diap. 79)\" loading=\"lazy\">"
+      }
+     ],
+     "truco": "<strong>granulocitos acaban en \"-ófilos\" (NEB)</strong> · <strong>agranulocitos acaban en \"-citos\" (Linfo y Mono)</strong>.",
+     "q": "¿Cómo se clasifican los leucocitos?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Los <strong>granulocitos</strong> tienen <strong>gránulos</strong> en el citoplasma (se ven como puntitos al teñirlos); los <strong>agranulocitos</strong> no los tienen.</p></div>"
+      }
+     ],
+     "n": 57
+    },
+    {
+     "titulo": "Cada leucocito",
+     "lv": 1,
+     "fuente": "Diapositivas 80 a 86",
+     "defs": [
+      {
+       "t": "Fagocitar",
+       "facil": "\"comerse\" un microbio o un resto.",
+       "diapo": "Neutrófilos: fagocitan bacterias."
+      },
+      {
+       "t": "Pus",
+       "facil": "Restos de bacterias y neutrófilos muertos.",
+       "diapo": "Restos de digestión bacteriana + neutrófilos muertos = pus."
+      },
+      {
+       "t": "Histamina",
+       "facil": "Sustancia que provoca la alergia (picor, hinchazón).",
+       "diapo": "Basófilos: sus gránulos contienen histamina y heparina, liberadas en las reacciones alérgicas."
+      },
+      {
+       "t": "Heparina",
+       "facil": "Anticoagulante.",
+       "diapo": "Basófilos: sus gránulos contienen histamina y heparina, liberadas en las reacciones alérgicas."
+      },
+      {
+       "t": "Inmunidad celular / humoral",
+       "facil": "Defensa por células que matan / por anticuerpos.",
+       "diapo": "Linfocitos T: intervienen en inmunidad celular. Linfocitos B: respuesta humoral (anticuerpos)."
+      },
+      {
+       "t": "Células plasmáticas",
+       "facil": "Linfocitos B activados que fabrican anticuerpos.",
+       "diapo": "Linfocitos B: al activarse se denominan células plasmáticas."
+      },
+      {
+       "t": "Anticuerpo",
+       "facil": "Proteína que reconoce y marca a un invasor.",
+       "diapo": "Linfocitos B: respuesta humoral (anticuerpos)."
+      },
+      {
+       "t": "NK",
+       "facil": "<em>natural killer</em>, linfocitos que matan células infectadas o tumorales.",
+       "diapo": "Linfocitos NK: inmunidad antitumoral."
+      },
+      {
+       "t": "Macrófago",
+       "facil": "Monocito ya dentro de los tejidos.",
+       "diapo": "Monocitos: al pasar a los tejidos se convierten en macrófagos que fagocitan bacterias."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Leucocito</th>\n<th>%</th>\n<th>Núcleo</th>\n<th>Función</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Neutrófilo</strong></td>\n<td><strong>60-70 %</strong></td>\n<td>En <strong>lóbulos</strong>; gránulos</td>\n<td><strong>Fagocitan bacterias</strong>. Restos bacterianos + neutrófilos muertos = <strong>pus</strong></td>\n</tr>\n<tr>\n<td><strong>Eosinófilo</strong></td>\n<td><strong>1-4 %</strong></td>\n<td><strong>Bilobulado</strong>; gránulos</td>\n<td>Pocos en sangre (pasan <strong>rápido al conjuntivo</strong>); reacciones <strong>alérgicas y antiparasitarias</strong></td>\n</tr>\n<tr>\n<td><strong>Basófilo</strong></td>\n<td><strong>&lt; 1 %</strong></td>\n<td><strong>Oculto por gránulos</strong> (tinción intensa)</td>\n<td>Gránulos con <strong>histamina y heparina</strong>, liberadas en reacciones <strong>alérgicas</strong></td>\n</tr>\n<tr>\n<td><strong>Linfocito</strong></td>\n<td><strong>20-30 %</strong></td>\n<td><strong>Muy grande</strong></td>\n<td><strong>T:</strong> inmunidad <strong>celular</strong>. <strong>B:</strong> al activarse = <strong>células plasmáticas</strong>, respuesta <strong>humoral (anticuerpos)</strong>. <strong>NK:</strong> inmunidad <strong>antitumoral</strong></td>\n</tr>\n<tr>\n<td><strong>Monocito</strong></td>\n<td><strong>5-8 %</strong></td>\n<td>Grande (arriñonado)</td>\n<td><strong>Las células más grandes de la sangre</strong>; en los tejidos → <strong>macrófagos</strong> que fagocitan bacterias</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>Truco del orden de abundancia:</strong> <strong>\"Nunca Lleves Monos En Bolsas\"</strong> → Neutrófilos &gt; Linfocitos &gt; Monocitos &gt; Eosinófilos &gt; Basófilos.",
+     "q": "Da el porcentaje, el núcleo y la función de cada leucocito. ¿Qué es el pus?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box tip\"><p class=\"lbl\">🧠 Truco para recordarlo</p><p><strong>Truco de funciones:</strong> <strong>Neutrófilo = Ninja de bacterias (pus)</strong> · <strong>Eosinófilo = alergias y parásitos</strong> · <strong>Basófilo = Bomba de histamina</strong> · <strong>Linfocito = T (mata células), B (anticuerpos), NK (tumores)</strong> · <strong>Monocito = el Mayor → Macrófago</strong>.</p></div>"
+      },
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>El <strong>neutrófilo</strong> es el soldado más numeroso (primero en llegar a una infección); el <strong>eosinófilo</strong> y el <strong>basófilo</strong> actúan en <strong>alergias</strong>; el <strong>linfocito</strong> es la defensa \"inteligente\" (reconoce a cada invasor); el <strong>monocito</strong> sale de la sangre y se convierte en <strong>macrófago</strong>, el \"basurero\" de los tejidos.</p></div>"
+      }
+     ],
+     "n": 58
+    },
+    {
+     "titulo": "Imágenes de defensa (diapositivas 81, 85 y 87)",
+     "lv": 3,
+     "fuente": "Diapositivas 81, 85 y 87 (imágenes)",
+     "defs": [
+      {
+       "t": "Antígeno",
+       "facil": "La \"marca\" de un invasor que reconoce el sistema inmunitario.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "CD8+",
+       "facil": "Tipo de linfocito T que mata células infectadas.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "MHC-I",
+       "facil": "Molécula de \"identificación\" de las células normales.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Perforinas y granzimas",
+       "facil": "Sustancias que hacen agujeros y destruyen la célula.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Placa aterosclerótica",
+       "facil": "Acumulación de grasa y células en la pared de una arteria.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li>81: un <strong>leucocito fagocitando</strong> un virus entre los eritrocitos.</li>\n<li>85: el <strong>linfocito T CD8+</strong> reconoce el antígeno de una célula infectada y la <strong>mata</strong>; los <strong>anticuerpos</strong> de los linfocitos se unen a los antígenos de las bacterias; la célula <strong>NK</strong> no mata a la célula normal (MHC-I la inhibe), pero a la infectada la <strong>lisa con perforinas y granzimas</strong>.</li>\n<li>87: los <strong>monocitos</strong> circulantes se <strong>adhieren al endotelio</strong>, <strong>migran</strong> a la íntima y se <strong>diferencian en macrófagos</strong> (formación de la <strong>placa aterosclerótica</strong> en una arteria coronaria inflamada).</li>\n</ul>",
+     "entiende": "Las <strong>perforinas</strong> hacen <strong>agujeros</strong> en la célula infectada y las <strong>granzimas</strong> entran por ellos y la destruyen.",
+     "truco": "Las 3 imágenes son <strong>\"comer, matar y colarse\"</strong>: el leucocito <strong>fagocita</strong>, el linfocito T y la NK <strong>matan</strong> y el monocito <strong>se cuela</strong> en la pared de la arteria.",
+     "q": "¿Cómo mata un linfocito NK a una célula infectada y qué hacen los monocitos en una arteria inflamada?",
+     "n": 59
+    },
+    {
+     "titulo": "Plaquetas (trombocitos)",
+     "lv": 2,
+     "fuente": "Diapositiva 88",
+     "defs": [
+      {
+       "t": "Megacariocito",
+       "facil": "Célula gigante de la médula que se rompe en plaquetas.",
+       "diapo": "Plaquetas (trombocitos): fragmentos de citoplasma de megacariocitos, presentes en médula ósea."
+      },
+      {
+       "t": "HSC",
+       "facil": "Célula madre hematopoyética.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>Fragmentos de citoplasma de megacariocitos</strong> (en la <strong>médula ósea</strong>). Intervienen en la <strong>coagulación</strong>.\nEsquema (5-7 días): HSC → progenitores multipotenciales → MEP → promegacariocito → megacarioblasto → <strong>megacariocito</strong> → proplaquetas → <strong>plaquetas</strong> en los vasos.</p>",
+     "truco": "<strong>\"Mega-cariocito = célula MEGA que se rompe en trocitos (plaquetas)\"</strong>.",
+     "q": "¿Qué son las plaquetas, de dónde salen y para qué sirven?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Cuando te cortas, las plaquetas se <strong>amontonan</strong> en la herida y ayudan a formar el <strong>coágulo</strong> que tapa el agujero.</p></div>"
+      }
+     ],
+     "n": 60
+    },
+    {
+     "titulo": "Funciones de la sangre",
+     "lv": 2,
+     "fuente": "Diapositiva 89",
+     "prof": "<ol>\n<li>Transporte de <strong>O₂ y CO₂</strong>.</li>\n<li>Transporte de <strong>nutrientes</strong>.</li>\n<li><strong>Defensa</strong> (coagulación/cicatrización y respuesta inmunitaria).</li>\n<li>Transporte de <strong>hormonas</strong>.</li>\n</ol>",
+     "truco": "<strong>\"Gases, Comida, Defensa, Mensajes\"</strong>.",
+     "q": "¿Cuáles son las 4 funciones del tejido sanguíneo?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>La sangre es el <strong>\"camión de reparto\"</strong> del cuerpo: lleva gases, comida y hormonas, y también lleva a los <strong>defensores</strong> y las plaquetas.</p></div>"
+      }
+     ],
+     "n": 61
+    }
+   ],
+   "min": 70
+  },
+  {
+   "titulo": "Tejido hematopoyético",
+   "conceptos": [
+    {
+     "titulo": "Definición",
+     "lv": 1,
+     "fuente": "Diapositivas 90 a 92",
+     "defs": [
+      {
+       "t": "Célula madre",
+       "facil": "Célula capaz de dividirse y convertirse en otros tipos.",
+       "diapo": "Tejido hematopoyético: responsable de la producción de células sanguíneas, a partir de células madre con capacidad de división y de diferenciación."
+      },
+      {
+       "t": "Diferenciación",
+       "facil": "Especializarse en un tipo concreto.",
+       "diapo": "Células madre con capacidad de división y de diferenciación."
+      },
+      {
+       "t": "Multipotencial",
+       "facil": "Que puede dar varios tipos de células.",
+       "diapo": "Células multipotenciales linfoides (UFC-L) y células multipotenciales mieloides (UFC-M)."
+      },
+      {
+       "t": "UFC",
+       "facil": "Unidad formadora de colonias (célula progenitora).",
+       "diapo": "Células multipotenciales linfoides (UFC-L) y mieloides (UFC-M)."
+      },
+      {
+       "t": "Linfoide / mieloide",
+       "facil": "Línea que da linfocitos / línea que da el resto.",
+       "diapo": "Linfoides (UFC-L): formación de linfocitos; inicia en médula ósea y se completa en órganos linfáticos (médula ósea y timo). Mieloides (UFC-M): forman eritrocitos, granulocitos, monocitos y plaquetas; íntegramente en médula ósea."
+      },
+      {
+       "t": "Timo",
+       "facil": "Órgano del pecho donde maduran los linfocitos T.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Responsable de la <strong>producción de células sanguíneas</strong> a partir de <strong>células madre</strong> con capacidad de <strong>división y diferenciación</strong>.</p>\n<ul>\n<li><strong>Células multipotenciales linfoides (UFC-L):</strong> forman <strong>linfocitos</strong>. Empieza en la <strong>médula ósea</strong> y <strong>se completa en órganos linfáticos (médula ósea y timo)</strong>. Los B maduran en la médula → células plasmáticas → anticuerpos; los T en el timo.</li>\n<li><strong>Células multipotenciales mieloides (UFC-M):</strong> forman <strong>eritrocitos, granulocitos, monocitos y plaquetas</strong>. <strong>Íntegramente en la médula ósea.</strong></li>\n</ul>",
+     "entiende": "<em>hemato</em> = sangre, <em>poyesis</em> = fabricar. Es la <strong>fábrica de sangre</strong>. De una célula madre salen <strong>2 familias</strong>: la <strong>linfoide</strong> (solo linfocitos) y la <strong>mieloide</strong> (todo lo demás).",
+     "truco": "<strong>\"Linfoide = solo Linfocitos (y maduran en médula y Timo)\" · \"Mieloide = el resto, todo en la Médula\"</strong>. <strong>\"B de Bone (médula), T de Timo\"</strong>.",
+     "q": "¿Qué diferencia a las células multipotenciales linfoides de las mieloides (qué forman y dónde)?",
+     "n": 62
+    },
+    {
+     "titulo": "Dónde está",
+     "lv": 2,
+     "fuente": "Diapositiva 93",
+     "defs": [
+      {
+       "t": "Bazo",
+       "facil": "Órgano del abdomen que filtra la sangre.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Ganglio linfático",
+       "facil": "\"filtro\" del sistema linfático.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Médula ósea roja",
+       "facil": "La que fabrica la sangre.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>En el <strong>bazo, ganglios linfáticos, timo y médula ósea roja</strong>.</p>",
+     "truco": "<strong>\"Bazo, Ganglios, Timo, Médula roja\" = \"Buenos Genes Tiene María\"</strong>.",
+     "q": "¿En qué órganos se encuentra el tejido hematopoyético?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Son los órganos donde se <strong>fabrican o maduran</strong> las células de la sangre y de la defensa; el principal es la <strong>médula ósea roja</strong> (dentro de los huesos).</p></div>"
+      }
+     ],
+     "n": 63
+    },
+    {
+     "titulo": "Árbol de la hematopoyesis (diapositiva 94, imagen)",
+     "lv": 3,
+     "fuente": "Diapositiva 94 (imagen)",
+     "defs": [
+      {
+       "t": "Progenitora / precursora",
+       "facil": "Fases intermedias entre la célula madre y la célula sanguínea madura.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "-blasto",
+       "facil": "Célula joven, en formación.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Células madre:</strong> UFC-LM → <strong>UFC-M</strong> (mieloide) y <strong>UFC-L</strong> (linfoide).</li>\n<li><strong>Progenitoras:</strong> UFC-GEMM → UFC-E, UFC-MEG, UFC-GM (→ UFC-M y UFC-G), UFC-EO, UFC-BA; y Pro-B, Pro-T.</li>\n<li><strong>Precursoras:</strong> proeritroblasto, megacarioblasto, monoblasto, mieloblastos (neutrófilo, eosinófilo, basófilo), linfoblastos B y T.</li>\n<li><strong>Células sanguíneas:</strong> eritrocito, plaquetas, monocito, neutrófilo, eosinófilo, basófilo, linfocito B, linfocito T y NK.</li>\n</ul>",
+     "entiende": "Los nombres con <strong>-blasto</strong> son las células \"<strong>bebé</strong>\" (precursoras) de cada tipo: <strong>eritro</strong>blasto → eritrocito, <strong>mega</strong>carioblasto → plaquetas, <strong>mono</strong>blasto → monocito, <strong>linfo</strong>blasto → linfocito.",
+     "truco": "El árbol baja en <strong>4 pisos</strong>: <strong>madre → progenitora (UFC) → precursora (-blasto) → célula de la sangre</strong>. Dos ramas: <strong>mieloide</strong> (casi todo) y <strong>linfoide</strong> (linfocitos).",
+     "q": "¿De qué línea (mieloide o linfoide) salen el eritrocito, las plaquetas, el monocito, los granulocitos, los linfocitos y las NK?",
+     "n": 64
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Tejido linfático",
+   "conceptos": [
+    {
+     "titulo": "Características",
+     "lv": 2,
+     "fuente": "Diapositivas 95 y 96",
+     "defs": [
+      {
+       "t": "Sistema inmunitario",
+       "facil": "El sistema de defensa.",
+       "diapo": "Tejido linfático: especializado, forma parte del sistema inmunitario."
+      },
+      {
+       "t": "MALT",
+       "facil": "Tejido linfoide asociado a mucosas.",
+       "diapo": "Tejido linfoide asociado a mucosas (MALT): agrupaciones de células del tejido linfático formando parte de la mucosa de algunos órganos de los sistemas digestivo, respiratorio, urinario y reproductor."
+      },
+      {
+       "t": "Células reticulares",
+       "facil": "Células que forman la red del tejido linfático.",
+       "diapo": "Red tridimensional de células reticulares junto con fibras."
+      },
+      {
+       "t": "Células dendríticas",
+       "facil": "Células que presentan los antígenos a los linfocitos.",
+       "diapo": "Los espacios libres de la red están ocupados por linfocitos y células dendríticas."
+      },
+      {
+       "t": "Linfa",
+       "facil": "Líquido que circula por los vasos linfáticos.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Especializado; forma parte del <strong>sistema inmunitario</strong>. Está en:</p>\n<ul>\n<li><strong>Órganos linfáticos:</strong> <strong>timo, bazo y ganglios linfáticos</strong>.</li>\n<li><strong>MALT (tejido linfoide asociado a mucosas):</strong> agrupaciones de tejido linfático en la mucosa de órganos de los sistemas <strong>digestivo, respiratorio, urinario y reproductor</strong>.</li>\n</ul>\n<p>Estructura: <strong>red tridimensional de células reticulares con fibras</strong>; los huecos los ocupan <strong>linfocitos y células dendríticas</strong>. <strong>Funciona como un filtro que atrapa los antígenos</strong> de la sangre y la linfa (esquema: capilares arterial, venoso y linfático, líquido tisular).</p>",
+     "entiende": "Es como un <strong>colador</strong> con <strong>policías</strong> dentro: la red atrapa los \"intrusos\" (antígenos) y los linfocitos los atacan. El <strong>MALT</strong> son \"<strong>puestos de control</strong>\" en las <strong>puertas de entrada</strong> del cuerpo (boca, intestino, vías respiratorias…).",
+     "truco": "El linfático es el <strong>\"filtro de la defensa\"</strong>: está en <strong>timo, bazo, ganglios y MALT</strong> y atrapa los antígenos.",
+     "q": "¿Dónde está el tejido linfático, cómo es su estructura y qué función tiene?",
+     "n": 65
+    },
+    {
+     "titulo": "Linfático denso vs laxo",
+     "lv": 2,
+     "fuente": "Diapositivas 97 y 98",
+     "defs": [
+      {
+       "t": "Nódulo linfático",
+       "facil": "Acumulación de linfocitos en forma de bolita.",
+       "diapo": "Tejido linfático denso: nódulos linfáticos, agrupaciones de linfocitos."
+      },
+      {
+       "t": "Placas de Peyer",
+       "facil": "Nódulos linfáticos del íleon (intestino).",
+       "diapo": "Tejido linfático denso en algunas mucosas (amígdalas, placas de Peyer del íleon…)."
+      },
+      {
+       "t": "Íleon",
+       "facil": "Última parte del intestino delgado.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Bronquiolo",
+       "facil": "Bronquio pequeño.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Denso:</strong> <strong>nódulos linfáticos</strong> (agrupaciones de linfocitos); <strong>bordes más oscuros</strong> (muchos linfocitos) y <strong>zona central clara</strong>. En el bazo, los ganglios y algunas mucosas (<strong>amígdalas, placas de Peyer del íleon</strong>, ciego, apéndice, árbol bronquial, vejiga y útero).</li>\n<li><strong>Laxo:</strong> en el <strong>MALT</strong>; <strong>sin ordenamiento</strong>, se confunde con el conectivo donde está (imagen: MALT junto a un bronquiolo, en el pulmón).</li>\n</ul>",
+     "truco": "<strong>\"Denso = nódulos ordenados (bolitas)\" · \"Laxo = desordenado, camuflado (MALT)\"</strong>.",
+     "q": "¿Qué diferencia al tejido linfático denso del laxo y dónde está cada uno?",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>El <strong>denso</strong> forma <strong>bolitas</strong> (nódulos) bien visibles: borde oscuro lleno de linfocitos y centro claro. El <strong>laxo</strong> está <strong>desperdigado</strong> y casi no se distingue del conectivo de alrededor.</p></div>"
+      }
+     ],
+     "n": 66
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Anatomía",
+   "conceptos": [
+    {
+     "titulo": "Anatomía, órgano, sistema y aparato",
+     "lv": 1,
+     "fuente": "Diapositiva 99",
+     "defs": [
+      {
+       "t": "Anatomía",
+       "facil": "Ciencia que estudia la estructura del cuerpo.",
+       "diapo": "Anatomía es la ciencia que estudia la estructura del organismo."
+      },
+      {
+       "t": "Fisiológica",
+       "facil": "Relacionada con el funcionamiento del cuerpo.",
+       "diapo": "Sistema: agrupación de órganos formados por los mismos tipos de tejidos, para desarrollar una determinada función fisiológica."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Anatomía:</strong> ciencia que estudia la <strong>estructura del organismo</strong>.</li>\n<li><strong>Órgano:</strong> conjunto de tejidos <strong>anatómicamente identificable</strong> con una <strong>función específica</strong>.</li>\n<li><strong>Sistema:</strong> órganos formados por <strong>los MISMOS tipos de tejidos</strong> para una función fisiológica.</li>\n<li><strong>Aparato:</strong> órganos formados por <strong>DIFERENTES tipos de tejidos</strong> que actúan <strong>coordinadamente</strong>.</li>\n</ul>",
+     "entiende": "El <strong>sistema óseo</strong> son todos los huesos: <strong>el mismo tejido</strong> repetido. El <strong>aparato digestivo</strong> mezcla <strong>tejidos distintos</strong> (epitelio, músculo liso, glándulas…) que trabajan en equipo.",
+     "truco": "<strong>Sistema = Same (mismo tejido); Aparato = Agrupación de distintos</strong>.",
+     "q": "Define órgano, sistema y aparato. ¿Qué diferencia un sistema de un aparato?",
+     "n": 67
+    },
+    {
+     "titulo": "Sistemas y su tejido",
+     "lv": 2,
+     "fuente": "Diapositiva 100",
+     "defs": [
+      {
+       "t": "Tegumentario",
+       "facil": "La piel y sus anejos (pelo, uñas).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Sistema</th>\n<th>Tejido</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Muscular</td>\n<td>Muscular</td>\n</tr>\n<tr>\n<td>Óseo</td>\n<td>Óseo</td>\n</tr>\n<tr>\n<td><strong>Circulatorio</strong></td>\n<td><strong>Epitelial de revestimiento</strong></td>\n</tr>\n<tr>\n<td>Nervioso</td>\n<td>Nervioso</td>\n</tr>\n<tr>\n<td><strong>Tegumentario</strong></td>\n<td><strong>Epitelial de revestimiento</strong></td>\n</tr>\n<tr>\n<td><strong>Endocrino</strong></td>\n<td><strong>Epitelial glandular</strong></td>\n</tr>\n<tr>\n<td>Linfático</td>\n<td>Linfático</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "Casi todos se llaman <strong>igual que su tejido</strong>. Las <strong>3 trampas</strong>: <strong>circulatorio y tegumentario = epitelial de revestimiento</strong> (el endotelio y la piel), <strong>endocrino = epitelial glandular</strong>.",
+     "q": "¿Qué tejido forma cada sistema? (Cuidado con el circulatorio, el tegumentario y el endocrino.)",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Un <strong>sistema</strong> se forma con <strong>un solo tipo de tejido</strong>, por eso casi todos se llaman como su tejido. Las excepciones son las que caen en el examen.</p></div>"
+      }
+     ],
+     "n": 68
+    },
+    {
+     "titulo": "Aparatos y sus órganos",
+     "lv": 2,
+     "fuente": "Diapositiva 101",
+     "defs": [
+      {
+       "t": "Uréter",
+       "facil": "Tubo del riñón a la vejiga.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Epidídimo",
+       "facil": "Conducto del testículo donde maduran los espermatozoides.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Conducto deferente",
+       "facil": "Lleva los espermatozoides.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Vesículas seminales y próstata",
+       "facil": "Glándulas que fabrican el semen.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Aparato</th>\n<th>Órganos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Respiratorio</strong></td>\n<td>Fosas nasales, faringe, laringe, tráquea, bronquios, bronquiolos, pulmones</td>\n</tr>\n<tr>\n<td><strong>Digestivo</strong></td>\n<td>Boca, faringe, esófago, estómago, intestinos, recto, ano + glándulas salivales, hígado y páncreas</td>\n</tr>\n<tr>\n<td><strong>Urinario</strong></td>\n<td>Riñones, uréteres, vejiga urinaria, uretra</td>\n</tr>\n<tr>\n<td><strong>Reproductor</strong></td>\n<td>♀ Ovarios, trompas uterinas, útero, vagina, glándulas mamarias. ♂ Testículos, epidídimos, conductos deferentes, conductos eyaculatorios, uretra prostática, pene, vesículas seminales y próstata</td>\n</tr>\n<tr>\n<td><strong>Cardiovascular</strong></td>\n<td>Corazón, vasos sanguíneos y sangre</td>\n</tr>\n<tr>\n<td><strong>Locomotor</strong></td>\n<td>Huesos, músculos, cartílagos</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "Recorre el camino: <strong>el aire</strong> (nariz → pulmones), <strong>la comida</strong> (boca → ano), <strong>el pis</strong> (riñón → uretra). Los 6 aparatos: <strong>\"Respiro, Digiero, Orino, Me Reproduzco, Bombeo y Me Muevo\"</strong>.",
+     "q": "Nombra los 6 aparatos y los órganos de cada uno.",
+     "extra": [
+      {
+       "tras": "truco",
+       "html": "<div class=\"box und\"><p class=\"lbl\">💡 Entiéndelo</p><p>Un <strong>aparato</strong> junta órganos de <strong>tejidos distintos</strong> que trabajan en equipo para una función: respirar, digerir, orinar, reproducirse, bombear la sangre o moverse.</p></div>"
+      }
+     ],
+     "n": 69
+    },
+    {
+     "titulo": "Planos y direcciones anatómicas (diapositiva 102, imagen)",
+     "lv": 1,
+     "fuente": "Diapositiva 102 (imagen)",
+     "defs": [
+      {
+       "t": "Plano",
+       "facil": "Corte imaginario del cuerpo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Craneal / caudal",
+       "facil": "Hacia la cabeza / hacia los pies.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Ventral / dorsal",
+       "facil": "Hacia delante (barriga) / hacia atrás (espalda).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Lateral",
+       "facil": "Hacia los lados.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Planos:</strong> <strong>frontal</strong> (divide en delante y detrás), <strong>sagital</strong> (en derecha e izquierda) y <strong>transversal</strong> (en arriba y abajo).</li>\n<li><strong>Direcciones:</strong> <strong>superior, craneal o cefálica</strong>; <strong>inferior o caudal</strong>; <strong>anterior o ventral</strong>; <strong>posterior o dorsal</strong>; <strong>lateral derecha / izquierda</strong>.</li>\n</ul>",
+     "imgs": [
+      {
+       "src": "img/014.jpg",
+       "alt": "Planos y direcciones (diap. 102)",
+       "img": "<img src=\"img/014.jpg\" width=\"590\" height=\"760\" loading=\"lazy\" decoding=\"async\" alt=\"Planos y direcciones (diap. 102)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "<strong>frontal</strong> = como mirar a alguien <strong>de frente</strong> (corta en cara y espalda); <strong>sagital</strong> = como una <strong>flecha</strong> (<em>sagitta</em>) que te atraviesa por el medio de la nariz (derecha/izquierda); <strong>transversal</strong> = como <strong>cortar un pan en rodajas</strong> (arriba/abajo).",
+     "truco": "<strong>craneal = hacia el cráneo (arriba)</strong> · <strong>caudal = hacia la cola (abajo)</strong> · <strong>ventral = hacia la barriga (delante)</strong> · <strong>dorsal = hacia la espalda (detrás)</strong>.",
+     "q": "¿Qué tres planos anatómicos hay y qué sinónimos tienen superior, inferior, anterior y posterior?",
+     "n": 70
+    }
+   ],
+   "min": 20
+  }
+ ],
+ "trampas": [
+  [
+   "<strong>Pseudoestratificado</strong>",
+   "<strong>Estratificado</strong>",
+   "Pseudo = <strong>una sola capa</strong> que lo parece"
+  ],
+  [
+   "Simple plano (<strong>alvéolo</strong>)",
+   "Estratificado plano queratinizado (<strong>epidermis</strong>)",
+   "Fino para pasar / grueso para proteger"
+  ],
+  [
+   "<strong>Exocrina</strong> (conducto, al exterior)",
+   "<strong>Endocrina</strong> (sin conducto, a la sangre)",
+   "EXO = EXterior"
+  ],
+  [
+   "<strong>Apocrina</strong> (pierde parte)",
+   "<strong>Holocrina</strong> (la célula entera)",
+   "Apo = una parte, Holo = todo"
+  ],
+  [
+   "<strong>Serosa</strong> (agua y enzimas)",
+   "<strong>Mucosa</strong> (mucina)",
+   "Suero vs moco"
+  ],
+  [
+   "Esquelético: <strong>muchos núcleos periféricos</strong>",
+   "Cardíaco y liso: <strong>un núcleo central</strong>",
+   "Solo el esquelético es multinucleado"
+  ],
+  [
+   "<strong>Banda A</strong> (oscura, miosina)",
+   "<strong>Banda I</strong> (clara, actina)",
+   "A de oscurA, I de clarIta"
+  ],
+  [
+   "<strong>Aferente</strong> (al SNC, sensitiva)",
+   "<strong>Eferente</strong> (sale del SNC, motora)",
+   "Eferente = Exit"
+  ],
+  [
+   "<strong>Schwann</strong> (mielina en el SNP)",
+   "<strong>Oligodendrocito</strong> (mielina en el SNC)",
+   "P de Periférico, Primo Schwann"
+  ],
+  [
+   "Médula: <strong>gris dentro</strong>",
+   "Cerebro: <strong>gris fuera</strong>",
+   "Mariposa vs corteza"
+  ],
+  [
+   "<strong>Laxo</strong> (muchas células)",
+   "<strong>Denso</strong> (muchas fibras)",
+   ""
+  ],
+  [
+   "Denso <strong>regular</strong> (tendón)",
+   "Denso <strong>irregular</strong> (dermis)",
+   "Una dirección vs todas"
+  ],
+  [
+   "<strong>Fibrocartílago sin pericondrio</strong>",
+   "Hialino sin pericondrio <strong>solo en articulaciones</strong>",
+   ""
+  ],
+  [
+   "<strong>Osteoblasto</strong> (construye)",
+   "<strong>Osteoclasto</strong> (destruye, Howship)",
+   "Blasto = Build, Clasto = Corta"
+  ],
+  [
+   "<strong>Havers</strong> (central)",
+   "<strong>Volkmann</strong> (une osteonas)",
+   ""
+  ],
+  [
+   "<strong>Sistema</strong> (mismo tejido)",
+   "<strong>Aparato</strong> (tejidos distintos)",
+   "Sistema = Same"
+  ],
+  [
+   "Circulatorio / tegumentario",
+   "Epitelial <strong>de revestimiento</strong> (no \"circulatorio\")",
+   "Las trampas de la tabla"
+  ]
+ ],
+ "numeros": [
+  [
+   "30 billones",
+   "Células del cuerpo"
+  ],
+  [
+   "200",
+   "Tipos celulares"
+  ],
+  [
+   "4",
+   "Tipos de tejido"
+  ],
+  [
+   "7",
+   "Tipos de tejido conectivo"
+  ],
+  [
+   "6",
+   "Funciones de los epitelios"
+  ],
+  [
+   "5",
+   "Niveles de complejidad de las endocrinas"
+  ],
+  [
+   "10-80 µm / 25 cm",
+   "Ancho / largo de la fibra esquelética"
+  ],
+  [
+   "95 %",
+   "Lípidos del adipocito / MEC del cartílago"
+  ],
+  [
+   "5 %",
+   "Condrocitos del cartílago"
+  ],
+  [
+   "10 %",
+   "Sustancia fundamental del hueso"
+  ],
+  [
+   "90 %",
+   "Agua del plasma"
+  ],
+  [
+   "2-12 mm/h",
+   "VSG normal"
+  ],
+  [
+   "60-70 %",
+   "Neutrófilos"
+  ],
+  [
+   "20-30 %",
+   "Linfocitos"
+  ],
+  [
+   "5-8 %",
+   "Monocitos"
+  ],
+  [
+   "1-4 %",
+   "Eosinófilos"
+  ],
+  [
+   "&lt; 1 %",
+   "Basófilos"
+  ],
+  [
+   "5-7 días",
+   "Formación de plaquetas"
+  ],
+  [
+   "3",
+   "Planos anatómicos"
+  ]
+ ],
+ "chequeo": [
+  "Los 4 tejidos (CEMN) y qué estudia la histología.",
+  "Epitelio de cada sitio: alvéolo, tráquea, epidermis, esófago, vejiga, intestino.",
+  "Exocrina/endocrina + mero/apo/holocrina + serosa/mucosa/sebácea.",
+  "Los 5 niveles endocrinos con ejemplo (\"El Indio Luchó Hasta Hoy\").",
+  "Esquelético/cardíaco/liso + endo/peri/epimisio + fibras rojas/blancas.",
+  "La ACTIVIDAD (núcleos, actina/miosina, sarcómero, tropomiosina, calcio).",
+  "Partes de la neurona (De-So-A-Si) + glía del SNP/SNC + sustancia blanca/gris.",
+  "Los 7 conectivos + laxo/denso + regular/irregular/elástico.",
+  "Los 3 cartílagos (oreja, disco, nariz).",
+  "Células del hueso + osteona + compacto/esponjoso.",
+  "Los 5 leucocitos con su % y función (\"Nunca Lleves Monos En Bolsas\").",
+  "Linfoide/mieloide y dónde está el hematopoyético.",
+  "Órgano/sistema/aparato + tablas + planos + posición anatómica."
+ ],
+ "impres": [
+  {
+   "titulo": "Base",
+   "items": [
+    [
+     "¿Histología?",
+     "Ciencia que estudia la <strong>estructura microscópica, el desarrollo y las funciones de los tejidos</strong>."
+    ],
+    [
+     "¿Tejido?",
+     "Conjunto de células con la <strong>misma función</strong>."
+    ],
+    [
+     "¿4 tejidos?",
+     "<strong>Conectivo, epitelial, muscular y nervioso</strong> (CEMN)."
+    ]
+   ]
+  },
+  {
+   "titulo": "Epitelial",
+   "items": [
+    [
+     "¿Características?",
+     "Células <strong>muy unidas</strong>, <strong>sin MEC</strong>, sobre la <strong>membrana basal</strong>, <strong>sin vasos</strong> (nutrición <strong>por difusión</strong> desde el conectivo). Función <strong>protectora</strong>."
+    ]
+   ]
+  }
+ ],
+ "glosario": [
+  [
+   "Actina",
+   "Proteína del filamento fino del músculo"
+  ],
+  [
+   "Adenómero",
+   "Parte secretora de una glándula exocrina"
+  ],
+  [
+   "Adipocito",
+   "Célula del tejido adiposo; 95 % lípidos"
+  ],
+  [
+   "Aferente",
+   "Que lleva información hacia el SNC (sensitiva)"
+  ],
+  [
+   "Agranulocito",
+   "Leucocito sin gránulos visibles: linfocito y monocito"
+  ],
+  [
+   "Anucleado",
+   "Sin núcleo (como el eritrocito)"
+  ],
+  [
+   "Apocrina",
+   "Glándula que pierde parte del citoplasma al secretar (mamaria)"
+  ],
+  [
+   "Aponeurosis",
+   "Lámina de conjuntivo denso regular que une músculos"
+  ],
+  [
+   "Astrocito",
+   "Glía del SNC con forma de estrella; sostén y barrera hematoencefálica"
+  ],
+  [
+   "Axón",
+   "Prolongación de la neurona que transmite el impulso hacia la sinapsis"
+  ],
+  [
+   "Barrera hematoencefálica",
+   "Filtro que controla qué pasa de la sangre al cerebro"
+  ],
+  [
+   "Basófilo",
+   "Granulocito (&lt; 1 %) con histamina y heparina; alergias"
+  ],
+  [
+   "Células de Schwann",
+   "Glía del SNP que forma la mielina"
+  ],
+  [
+   "Células ependimarias",
+   "Glía del SNC; epitelio cúbico simple de las cavidades del encéfalo y la médula"
+  ],
+  [
+   "Cilios",
+   "Prolongaciones móviles que barren (tráquea, trompas)"
+  ],
+  [
+   "Condrocito",
+   "Célula del cartílago; vive en lagunas"
+  ],
+  [
+   "Cuerpo lúteo",
+   "Glándula endocrina temporal del ovario; progesterona y estrógeno"
+  ],
+  [
+   "Dendrita",
+   "Prolongación de la neurona que recibe información (entrada)"
+  ],
+  [
+   "Diáfisis / epífisis",
+   "Parte central / extremos de un hueso largo"
+  ],
+  [
+   "Discos intercalares",
+   "Uniones entre células cardíacas (desmosomas + uniones gap)"
+  ],
+  [
+   "Eferente",
+   "Que lleva información desde el SNC (motora)"
+  ],
+  [
+   "Endocrina",
+   "Glándula sin conductos que secreta hormonas a la sangre"
+  ],
+  [
+   "Endomisio / perimisio / epimisio",
+   "Envolturas de la fibra, el fascículo y el músculo"
+  ],
+  [
+   "Endostio",
+   "Capa que reviste el interior del hueso"
+  ],
+  [
+   "Endotelio",
+   "Epitelio simple plano del interior de los vasos"
+  ],
+  [
+   "Eosinófilo",
+   "Granulocito (1-4 %), núcleo bilobulado; alergias y parásitos"
+  ],
+  [
+   "Eritrocito",
+   "Glóbulo rojo: disco bicóncavo sin núcleo con hemoglobina"
+  ],
+  [
+   "Estriado",
+   "Músculo con bandas (esquelético y cardíaco)"
+  ],
+  [
+   "Exocrina",
+   "Glándula con conductos que secreta al exterior"
+  ],
+  [
+   "Fibroblasto",
+   "Célula más común del conectivo; secreta colágeno"
+  ],
+  [
+   "Fusiforme",
+   "Con forma de huso (más ancha en el centro)"
+  ],
+  [
+   "Glía",
+   "Células de soporte del tejido nervioso"
+  ],
+  [
+   "Glucocálix",
+   "Capa de azúcares sobre la membrana del epitelio"
+  ],
+  [
+   "Granulocito",
+   "Leucocito con gránulos: neutrófilo, eosinófilo y basófilo"
+  ],
+  [
+   "Hematocrito",
+   "Volumen de eritrocitos respecto al volumen de sangre"
+  ],
+  [
+   "Hematopoyesis",
+   "Formación de las células de la sangre"
+  ],
+  [
+   "Histología",
+   "Ciencia que estudia la estructura microscópica, el desarrollo y las funciones de los tejidos"
+  ],
+  [
+   "Holocrina",
+   "Glándula que secreta por destrucción de la célula (sebácea)"
+  ],
+  [
+   "Lagunas de Howship",
+   "Huecos donde están los osteoclastos"
+  ],
+  [
+   "Laminillas (lamelas)",
+   "Capas de matriz ósea"
+  ],
+  [
+   "Leucocito",
+   "Glóbulo blanco"
+  ],
+  [
+   "Linfocito",
+   "Agranulocito (20-30 %): T (celular), B (anticuerpos), NK (antitumoral)"
+  ],
+  [
+   "MALT",
+   "Tejido linfoide asociado a mucosas"
+  ],
+  [
+   "MEC (matriz extracelular)",
+   "Lo que hay entre las células: fibras y sustancia fundamental"
+  ],
+  [
+   "Megacariocito",
+   "Célula gigante de la médula que se fragmenta en plaquetas"
+  ],
+  [
+   "Membrana basal",
+   "Lámina que une el epitelio al conectivo"
+  ],
+  [
+   "Merocrina (ecrina)",
+   "Glándula que secreta por exocitosis (sudoríparas)"
+  ],
+  [
+   "Mesotelio",
+   "Epitelio simple plano de pleura, peritoneo y pericardio"
+  ],
+  [
+   "Microglía",
+   "Glía del SNC que lo protege (defensa)"
+  ],
+  [
+   "Mielina",
+   "Vaina aislante del axón que acelera el impulso"
+  ],
+  [
+   "Mioglobina",
+   "Proteína que guarda oxígeno en el músculo (fibras rojas)"
+  ],
+  [
+   "Miosina",
+   "Proteína del filamento grueso del músculo"
+  ],
+  [
+   "Monocito",
+   "La célula más grande de la sangre (5-8 %); en tejidos → macrófago"
+  ],
+  [
+   "Neumocito",
+   "Célula del alvéolo pulmonar"
+  ],
+  [
+   "Neutrófilo",
+   "Granulocito más abundante (60-70 %); fagocita bacterias; forma el pus"
+  ],
+  [
+   "Nodo de Ranvier",
+   "Hueco entre vainas de mielina donde salta el impulso"
+  ],
+  [
+   "Oligodendrocito",
+   "Glía del SNC que forma la mielina"
+  ],
+  [
+   "Órgano",
+   "Conjunto de tejidos anatómicamente identificable con una función específica"
+  ],
+  [
+   "Osteoblasto",
+   "Célula que forma la matriz ósea"
+  ],
+  [
+   "Osteocito",
+   "Osteoblasto rodeado de matriz, en una laguna"
+  ],
+  [
+   "Osteoclasto",
+   "Célula polinucleada que degrada hueso (resorción)"
+  ],
+  [
+   "Osteona (sistema de Havers)",
+   "Unidad anatómica y funcional del hueso compacto"
+  ],
+  [
+   "Pericondrio",
+   "Envoltura que nutre al cartílago"
+  ],
+  [
+   "Periostio",
+   "Envoltura exterior del hueso (capa densa y capa laxa)"
+  ],
+  [
+   "Plaqueta",
+   "Fragmento de megacariocito; coagulación"
+  ],
+  [
+   "Posición anatómica",
+   "De pie, cara al frente, brazos a los lados con palmas hacia delante"
+  ],
+  [
+   "Pseudoestratificado",
+   "Epitelio de una capa que parece de varias"
+  ],
+  [
+   "Queratina",
+   "Proteína dura de la epidermis que protege e impermeabiliza"
+  ],
+  [
+   "Sarcolema / sarcoplasma",
+   "Membrana / citoplasma de la fibra muscular"
+  ],
+  [
+   "Sarcómero",
+   "Unidad funcional de la miofibrilla, de línea Z a línea Z"
+  ],
+  [
+   "Sinapsis",
+   "Unión entre neuronas donde se liberan neurotransmisores"
+  ],
+  [
+   "Sistema / aparato",
+   "Órganos con el mismo tejido / con tejidos distintos coordinados"
+  ],
+  [
+   "Soma",
+   "Cuerpo de la neurona (núcleo y orgánulos)"
+  ],
+  [
+   "Sustancia fundamental",
+   "Parte amorfa de la MEC (agua, proteoglicanos, glucoproteínas)"
+  ],
+  [
+   "Trabéculas",
+   "Láminas irregulares del hueso esponjoso"
+  ],
+  [
+   "Tropomiosina",
+   "Proteína que tapa la actina en reposo; el calcio la desplaza"
+  ],
+  [
+   "Urotelio",
+   "Epitelio de transición del aparato urinario"
+  ],
+  [
+   "VSG (eritrosedimentación)",
+   "Velocidad de sedimentación de los eritrocitos (2-12 mm/h)"
+  ]
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "hoja",
+   "html": "<section class=\"xs\" id=\"hoja\"><h2 class=\"xs-h\">📝 Las 20 preguntas de la hoja de la profe, resueltas</h2><p>Esta hoja es lo más parecido al examen. <strong>Escríbelas de memoria</strong> y corrígelas con estas respuestas. Las marcadas con ⚠️ <strong>no están en el PowerPoint</strong>: la respuesta es de conocimiento general de histología; compruébala con tus apuntes de clase.</p><details class=\"pq\"><summary><span class=\"pn\">P1</span> Explica qué es la histología y cuál es su materia de estudio.</summary><div class=\"pa\"><p>Es la <strong>ciencia que estudia la estructura microscópica, el desarrollo y las funciones de los tejidos</strong>. Su materia de estudio son los <strong>tejidos</strong>: conjuntos de células que cumplen la <strong>misma función</strong> (epitelial, muscular, nervioso y conectivo). <span class=\"ref\">→ concepto 3.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P2</span> ¿Qué características tienen en el tejido epitelial: a) células, b) matriz extracelular, c) membrana basal?</summary><div class=\"pa\"><p>a) <strong>Células</strong> muy unidas (uniones ocluyentes y de anclaje), en <strong>una o varias capas</strong>; algunas con cilios o queratina. b) <strong>No hay matriz extracelular</strong> entre ellas (o casi nada). c) Se apoyan en la <strong>membrana basal</strong> (lámina basal), que las <strong>une al tejido conectivo</strong>; como no tienen vasos, se nutren <strong>por difusión desde el conectivo</strong>. <span class=\"ref\">→ conceptos 5 y 6.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P3</span> Ejemplo de estructura anatómica y relación forma-función: a) epitelio simple plano, b) estratificado plano queratinizado.</summary><div class=\"pa\"><p>a) <strong>Simple plano:</strong> <strong>alvéolos pulmonares</strong> (neumocitos), endotelio, mesotelios. Una sola capa de células <strong>planas y finas</strong> → el <strong>intercambio de gases por difusión</strong> es rápido. b) <strong>Estratificado plano queratinizado:</strong> <strong>epidermis</strong>. Muchas capas y queratina → <strong>protección</strong> frente a roces y agresiones físicas y químicas, e impermeabilidad. <span class=\"ref\">→ conceptos 8, 10 y 11.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P4</span> ¿Qué diferencias hay entre una glándula endocrina y una exocrina?</summary><div class=\"pa\"><p><strong>Exocrina:</strong> tiene <strong>conductos</strong>; secreta <strong>al medio externo</strong> (o a una cavidad); tiene <strong>adenómero, lumen y conductos</strong>. Ej.: sudoríparas, parótida, sebáceas. <strong>Endocrina:</strong> <strong>sin conductos excretores</strong>; secreta <strong>hormonas a la sangre</strong>. Ej.: hipófisis, tiroides, islotes de Langerhans. <span class=\"ref\">→ conceptos 13, 14 y 18.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P5</span> Diferencias entre el músculo estriado voluntario (esquelético) y el cardíaco.</summary><div class=\"pa\"><p><strong>Esquelético:</strong> células <strong>muy alargadas</strong> (hasta 25 cm), <strong>muchos núcleos periféricos</strong>, estriado, rodeado de endomisio/perimisio/epimisio, contracción <strong>voluntaria</strong>. <strong>Cardíaco:</strong> células <strong>más cortas</strong> y ramificadas, <strong>un solo núcleo central</strong>, estriado, unidas por <strong>discos intercalares</strong> (desmosomas + uniones gap), forma el <strong>miocardio</strong>, contracción <strong>involuntaria</strong>. <span class=\"ref\">→ conceptos 22, 27 y 29.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P6</span> Explica a través de qué estructuras recibe y transmite impulsos la neurona.</summary><div class=\"pa\"><p>Recibe por las <strong>dendritas</strong> (canal de entrada) → el <strong>soma</strong> procesa → el impulso sale por el <strong>axón</strong> desde el <strong>cono axónico</strong>, recubierto de <strong>mielina</strong> (salta por los <strong>nodos de Ranvier</strong>) → en los <strong>botones sinápticos</strong> libera <strong>neurotransmisores</strong> en la <strong>sinapsis</strong>. <span class=\"ref\">→ concepto 32.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P7</span> ¿Dónde se localizan la sustancia blanca y la gris y en qué se diferencian?</summary><div class=\"pa\"><p><strong>Blanca:</strong> <strong>axones mielinizados</strong>; modula la respuesta y <strong>coordina</strong> zonas del SNC. <strong>Gris:</strong> <strong>somas, dendritas amielínicas y glía</strong>; <strong>procesa y almacena</strong> información. En la <strong>médula</strong>, la gris está <strong>dentro</strong> (mariposa) y la blanca fuera; en el <strong>cerebro</strong>, la gris está <strong>fuera</strong> (corteza) y la blanca dentro. <span class=\"ref\">→ concepto 35.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P8</span> Cita los tipos de tejido conectivo y explica qué tienen en común.</summary><div class=\"pa\"><p><strong>Conjuntivo, cartilaginoso, óseo, adiposo, sanguíneo, hematopoyético y linfático.</strong> En común: función de <strong>relleno y sostén</strong> (unir y soportar otros tejidos) y una <strong>matriz extracelular abundante y clave</strong>, con células separadas por ella. ⚠️ Además, todos tienen <strong>origen mesenquimal</strong> (el mesénquima del embrión): esto no está en el PowerPoint. <span class=\"ref\">→ conceptos 36-37.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P9</span> Explica qué es la sustancia fundamental del conjuntivo y cuál es el tipo celular más abundante.</summary><div class=\"pa\"><p>⚠️ La <strong>sustancia fundamental</strong> es la parte <strong>amorfa</strong> (sin forma) de la <strong>MEC</strong>, un gel de <strong>agua, proteoglicanos/GAG y glucoproteínas</strong> donde están embebidas las <strong>fibras y las células</strong>. El PowerPoint lo resume como <strong>MEC = red de polisacáridos y proteínas</strong>. El tipo celular más abundante es el <strong>fibroblasto</strong>, que <strong>secreta colágeno</strong>. <span class=\"ref\">→ conceptos 36 y 38.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P10</span> Diferencias entre el conjuntivo laxo y el denso. ¿Dónde se localizan?</summary><div class=\"pa\"><p><strong>Laxo:</strong> el <strong>más abundante</strong>, <strong>muchas células</strong>, pocas fibras; está <strong>entre tejidos</strong>. <strong>Denso:</strong> <strong>muchas fibras, pocas células</strong>. <strong>Irregular</strong> (dermis, cápsulas de órganos, periostio, pericondrio…), <strong>regular</strong> (tendones, ligamentos, aponeurosis) y <strong>elástico</strong> (pared de arterias, cuerdas vocales). <span class=\"ref\">→ conceptos 39-40.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P11</span> ¿Qué funciones tiene el tejido adiposo? Explica cómo se llama su célula y qué características le permiten cumplir sus funciones.</summary><div class=\"pa\"><p>Funciones: <strong>almacén energético, aislamiento térmico y amortiguación</strong>. La célula es el <strong>adipocito</strong>: <strong>95 % lípidos</strong> en una <strong>gran gota de grasa</strong> (núcleo desplazado) → puede <strong>guardar mucha energía</strong>; tejido con <strong>abundantes capilares</strong> → puede <strong>meter y sacar grasa</strong> de la sangre. Tipos: <strong>blanco</strong> (adultos, una gota) y <strong>pardo</strong> (fetos y recién nacidos, muchas gotas). <span class=\"ref\">→ conceptos 41-44.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P12</span> Diferencias entre el cartílago hialino, el elástico y el fibrocartílago, con un ejemplo de cada uno.</summary><div class=\"pa\"><p><strong>Hialino:</strong> pocas fibras elásticas → <strong>el más rígido</strong>; condrocitos en <strong>grupos isogénicos</strong>; con pericondrio <strong>excepto los articulares</strong>. Ej.: <strong>tráquea</strong>, cartílagos costales, nariz. <strong>Elástico:</strong> <strong>muchas fibras elásticas</strong> → flexible; con pericondrio. Ej.: <strong>pabellón auditivo</strong>, epiglotis. <strong>Fibrocartílago:</strong> <strong>haces de fibras paralelas</strong> con hileras de condrocitos, <strong>sin pericondrio</strong>, gran resistencia. Ej.: <strong>discos intervertebrales</strong>, meniscos, sínfisis pubiana. <span class=\"ref\">→ concepto 46.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P13</span> ¿Qué son los osteoblastos y los osteocitos? ¿En qué se diferencian? ¿Cómo forman el tejido óseo?</summary><div class=\"pa\"><p>Los <strong>osteoblastos</strong> salen de las <strong>células osteógenas</strong> y <strong>forman la matriz ósea</strong> (sintetizan colágeno, que luego se calcifica); están unidos por <strong>uniones gap</strong>. Cuando quedan <strong>rodeados de su propia matriz</strong>, se convierten en <strong>osteocitos</strong>, que viven en <strong>lagunas</strong> y se comunican por <strong>canalículos</strong>. Diferencia: el osteoblasto <strong>construye</strong> en la superficie; el osteocito ya está <strong>encerrado</strong> y mantiene el hueso. (El <strong>osteoclasto</strong> hace lo contrario: <strong>resorción</strong>.) <span class=\"ref\">→ concepto 48.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P14</span> Describe cómo es una osteona y dónde la localizamos.</summary><div class=\"pa\"><p>Es el <strong>sistema de Havers</strong>, la <strong>unidad anatómica y funcional del hueso</strong>: <strong>laminillas óseas concéntricas</strong> alrededor de un <strong>conducto de Havers</strong> central (vasos y nervios), con <strong>osteocitos en lagunas</strong> comunicados por <strong>canalículos</strong>. Las osteonas se unen por <strong>conductos de Volkmann</strong>. Está en el <strong>hueso compacto</strong> (diáfisis de los huesos largos y capa externa de los huesos); el esponjoso <strong>no</strong> tiene verdaderas osteonas. <span class=\"ref\">→ conceptos 51 y 54.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P15</span> Elabora un esquema de los tipos celulares de la sangre.</summary><div class=\"pa\"><ul>\n<li><strong>Eritrocitos</strong> (glóbulos rojos): disco bicóncavo, sin núcleo, hemoglobina.</li>\n<li><strong>Leucocitos</strong> (glóbulos blancos):<ul>\n<li><strong>Granulocitos:</strong> <strong>neutrófilos</strong> (60-70 %), <strong>eosinófilos</strong> (1-4 %), <strong>basófilos</strong> (&lt; 1 %).</li>\n<li><strong>Agranulocitos:</strong> <strong>linfocitos</strong> (20-30 %; T, B y NK) y <strong>monocitos</strong> (5-8 %; → macrófagos).</li>\n</ul>\n</li>\n<li><strong>Plaquetas</strong> (trombocitos): fragmentos de megacariocitos. <span class=\"ref\">→ conceptos 55-60.</span></li>\n</ul></div></details><details class=\"pq\"><summary><span class=\"pn\">P16</span> ¿Cómo y dónde se forman las células sanguíneas?</summary><div class=\"pa\"><p>En el <strong>tejido hematopoyético</strong>, a partir de <strong>células madre</strong> con capacidad de <strong>división y diferenciación</strong>. La línea <strong>mieloide (UFC-M)</strong> forma <strong>eritrocitos, granulocitos, monocitos y plaquetas</strong>, <strong>íntegramente en la médula ósea roja</strong>. La línea <strong>linfoide (UFC-L)</strong> forma <strong>linfocitos</strong>: empieza en la <strong>médula ósea</strong> y se completa en <strong>órganos linfáticos</strong> (B en la médula, T en el <strong>timo</strong>). Hay tejido hematopoyético en <strong>bazo, ganglios, timo y médula ósea roja</strong>. <span class=\"ref\">→ conceptos 62-64.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P17</span> ¿Qué tipo de tejido forma: a) el nervio óptico, b) el interior del pabellón auricular?</summary><div class=\"pa\"><p>a) ⚠️ <strong>Tejido nervioso</strong> (axones mielinizados y glía; envuelto por conjuntivo). El PowerPoint no nombra el nervio óptico. b) <strong>Cartílago elástico</strong> (pabellón auditivo). <span class=\"ref\">→ conceptos 30 y 46.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P18</span> Define órgano y pon cinco ejemplos de órganos humanos.</summary><div class=\"pa\"><p><strong>Órgano:</strong> conjunto de tejidos <strong>anatómicamente identificable</strong> con una <strong>función específica</strong>. Ejemplos: <strong>corazón, pulmón, estómago, hígado, riñón</strong> (también cerebro, piel, útero…). <span class=\"ref\">→ conceptos 67 y 69.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P19</span> Diferencias entre sistema y aparato. Tres ejemplos de cada uno y las estructuras que lo forman.</summary><div class=\"pa\"><p><strong>Sistema:</strong> órganos con <strong>los mismos tipos de tejido</strong>. Ej.: <strong>óseo</strong> (huesos: tejido óseo), <strong>muscular</strong> (músculos: tejido muscular), <strong>nervioso</strong> (encéfalo, médula, nervios: tejido nervioso). <strong>Aparato:</strong> órganos con <strong>tejidos diferentes</strong> que actúan <strong>coordinadamente</strong>. Ej.: <strong>respiratorio</strong> (fosas nasales, faringe, laringe, tráquea, bronquios, bronquiolos, pulmones), <strong>digestivo</strong> (boca, faringe, esófago, estómago, intestinos, recto, ano, gl. salivales, hígado, páncreas), <strong>urinario</strong> (riñones, uréteres, vejiga, uretra). <span class=\"ref\">→ conceptos 67-69.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P20</span> Describe la posición anatómica estándar y explica qué interés tiene en anatomía.</summary><div class=\"pa\"><p>⚠️ <strong>Posición anatómica:</strong> persona <strong>de pie y erguida</strong>, <strong>cara y mirada al frente</strong>, <strong>brazos a lo largo del cuerpo</strong> con las <strong>palmas hacia delante</strong>, <strong>piernas juntas</strong> y <strong>pies hacia delante</strong>. <strong>Interés:</strong> es una <strong>referencia universal</strong>: todos los <strong>planos</strong> (frontal, sagital, transversal) y <strong>direcciones</strong> (craneal/caudal, ventral/dorsal, lateral) se describen <strong>respecto a esa posición</strong>, así se evitan confusiones al localizar estructuras. El PowerPoint solo trae los planos y las direcciones. <span class=\"ref\">→ concepto 70.</span></p></div></details></section>",
+   "opcion": "📝 Las 20 preguntas de la hoja",
+   "indice": "📝 Las 20 preguntas de la hoja"
+  },
+  {
+   "id": "trampas",
+   "opcion": "⚠️ Trampas",
+   "indice": "⚠️ Trampas"
+  },
+  {
+   "id": "numeros",
+   "titulo": "🔢 Números clave",
+   "opcion": "🔢 Números clave",
+   "indice": "🔢 Números clave"
+  },
+  {
+   "id": "chequeo",
+   "opcion": "✅ Chequeo final",
+   "indice": "✅ Chequeo final"
+  },
+  {
+   "id": "impres",
+   "fin": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Dónde</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Simple plano</strong></td>\n<td><strong>Alvéolos</strong> (neumocitos), endotelio, mesotelios</td>\n</tr>\n<tr>\n<td><strong>Simple cilíndrico no ciliado</strong></td>\n<td>Tubo digestivo, <strong>del cardias al ano</strong></td>\n</tr>\n<tr>\n<td><strong>Pseudoestratificado ciliado</strong></td>\n<td><strong>Tráquea</strong>, bronquios principales</td>\n</tr>\n<tr>\n<td><strong>Estratificado plano queratinizado</strong></td>\n<td><strong>Epidermis</strong></td>\n</tr>\n<tr>\n<td><strong>Estratificado plano no queratinizado</strong></td>\n<td>Esófago, boca, vagina</td>\n</tr>\n<tr>\n<td><strong>De transición (urotelio)</strong></td>\n<td>Aparato <strong>urinario</strong></td>\n</tr>\n</tbody>\n</table></div><details class=\"pq\"><summary>¿Por qué?</summary><div class=\"pa\"><p>Alvéolo: <strong>una capa</strong> para el <strong>intercambio de gases</strong>. Tráquea: <strong>cilios</strong> para <strong>mover el moco</strong>.</p></div></details><h3 class='ih'>3 · Glándulas</h3><details class=\"pq\"><summary>¿Exocrina vs endocrina?</summary><div class=\"pa\"><p><strong>Exo:</strong> con <strong>conducto</strong>, al <strong>exterior</strong>. <strong>Endo:</strong> <strong>sin conducto</strong>, hormonas <strong>a la sangre</strong>.</p></div></details><details class=\"pq\"><summary>¿Según el producto?</summary><div class=\"pa\"><p><strong>Serosa</strong> (agua y enzimas: parótida) · <strong>mucosa</strong> (mucina: caliciformes) · <strong>sebácea</strong> (lípidos).</p></div></details><details class=\"pq\"><summary>¿Según el mecanismo?</summary><div class=\"pa\"><p><strong>Merocrina</strong> (exocitosis: <strong>sudoríparas</strong>) · <strong>apocrina</strong> (pierde <strong>parte</strong> del citoplasma: <strong>mamarias</strong>) · <strong>holocrina</strong> (la célula <strong>entera</strong>: <strong>sebáceas</strong>).</p></div></details><details class=\"pq\"><summary>¿5 niveles endocrinos?</summary><div class=\"pa\"><p>Células aisladas (<strong>estómago</strong>) · pequeñas agrupaciones (<strong>islotes de Langerhans</strong>) · temporales (<strong>cuerpo lúteo</strong>) · mixtas (<strong>hígado y páncreas</strong>) · glándulas endocrinas (<strong>hipófisis, tiroides</strong>).</p></div></details><h3 class='ih'>4 · Muscular</h3><div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th>Esquelético</th>\n<th>Cardíaco</th>\n<th>Liso</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Núcleos</td>\n<td><strong>Muchos, periféricos</strong></td>\n<td><strong>Uno, central</strong></td>\n<td><strong>Uno, central</strong></td>\n</tr>\n<tr>\n<td>Estrías</td>\n<td>Sí</td>\n<td>Sí</td>\n<td><strong>No</strong></td>\n</tr>\n<tr>\n<td>Especial</td>\n<td>Endo-peri-<strong>epimisio</strong> → tendón</td>\n<td><strong>Discos intercalares</strong></td>\n<td>Órganos huecos, útero, vasos</td>\n</tr>\n<tr>\n<td>Control</td>\n<td><strong>Voluntario</strong></td>\n<td>Involuntario</td>\n<td>Involuntario</td>\n</tr>\n</tbody>\n</table></div><details class=\"pq\"><summary>¿Fibras?</summary><div class=\"pa\"><p><strong>Rojas</strong> (lentas, resistentes, mucha mioglobina) · <strong>blancas</strong> (rápidas, se fatigan).</p></div></details><p><strong>ACTIVIDAD (apréndela entera)</strong> → a) muchos núcleos por <strong>fusión de mioblastos</strong> y célula enorme · b) <strong>finos = actina, gruesos = miosina</strong> · c) <strong>sarcómero</strong> (de Z a Z) · d) <strong>tropomiosina tapa la actina</strong> en reposo · e) <strong>calcio</strong>.</p><h3 class='ih'>5 · Nervioso</h3><details class=\"pq\"><summary>¿Neurona?</summary><div class=\"pa\"><p><strong>Dendritas</strong> (entrada) → <strong>soma</strong> → <strong>axón</strong> (cono axónico, <strong>mielina</strong>, nodos de <strong>Ranvier</strong>) → <strong>botones sinápticos</strong> (neurotransmisores).</p></div></details><details class=\"pq\"><summary>¿Glía?</summary><div class=\"pa\"><p>SNP: <strong>Schwann</strong> (mielina), satélites. SNC: <strong>oligodendrocitos</strong> (mielina), <strong>astrocitos</strong> (barrera hematoencefálica), <strong>microglía</strong> (defensa), <strong>ependimarias</strong>.</p></div></details><details class=\"pq\"><summary>¿Blanca vs gris?</summary><div class=\"pa\"><p><strong>Blanca</strong> = axones <strong>mielinizados</strong> (coordinación). <strong>Gris</strong> = <strong>somas</strong> (procesa y almacena). Médula: <strong>gris dentro</strong>. Cerebro: <strong>gris fuera</strong>.</p></div></details><h3 class='ih'>6 · Conectivo</h3><details class=\"pq\"><summary>¿7 tipos?</summary><div class=\"pa\"><p>Conjuntivo, cartilaginoso, óseo, adiposo, sanguíneo, hematopoyético, linfático. En común: <strong>relleno y sostén</strong> y <strong>MEC abundante</strong>. Célula más común: <strong>fibroblasto</strong> (colágeno).</p></div></details><details class=\"pq\"><summary>¿Laxo vs denso?</summary><div class=\"pa\"><p><strong>Laxo:</strong> muchas células, el más abundante. <strong>Denso:</strong> muchas fibras: <strong>irregular</strong> (dermis), <strong>regular</strong> (tendones), <strong>elástico</strong> (arterias).</p></div></details><details class=\"pq\"><summary>¿Adiposo?</summary><div class=\"pa\"><p><strong>Adipocito 95 % lípidos</strong>, una gota. Funciones: <strong>energía, aislamiento térmico, amortiguación</strong>. Pardo en <strong>bebés</strong>.</p></div></details><details class=\"pq\"><summary>¿Cartílagos?</summary><div class=\"pa\"><p><strong>Hialino</strong> (el más rígido: tráquea, costales, nariz) · <strong>elástico</strong> (<strong>oreja</strong>, epiglotis) · <strong>fibrocartílago</strong> (<strong>discos intervertebrales</strong>, meniscos; <strong>sin pericondrio</strong>).</p></div></details><details class=\"pq\"><summary>¿Hueso?</summary><div class=\"pa\"><p><strong>Osteoblastos</strong> forman matriz → rodeados de matriz = <strong>osteocitos</strong> (lagunas, canalículos) · <strong>osteoclastos</strong> destruyen (<strong>Howship</strong>). <strong>Osteona</strong> = sistema de <strong>Havers</strong>, unidad del hueso <strong>compacto</strong>; se unen por <strong>Volkmann</strong>. <strong>Esponjoso</strong> = <strong>trabéculas</strong>, sin osteonas.</p></div></details><h3 class='ih'>7 · Sangre y defensa</h3><details class=\"pq\"><summary>¿Composición?</summary><div class=\"pa\"><p><strong>Plasma (90 % agua)</strong> + <strong>eritrocitos</strong> (sin núcleo, hemoglobina) + <strong>leucocitos</strong> + <strong>plaquetas</strong> (fragmentos de <strong>megacariocito</strong>).</p></div></details><details class=\"pq\"><summary>¿Leucocitos?</summary><div class=\"pa\"><p><strong>Neutrófilos 60-70 %</strong> (bacterias, <strong>pus</strong>) · <strong>linfocitos 20-30 %</strong> (T celular, <strong>B anticuerpos</strong>, NK tumores) · <strong>monocitos 5-8 %</strong> (→ <strong>macrófagos</strong>) · <strong>eosinófilos 1-4 %</strong> (alergia, parásitos) · <strong>basófilos &lt; 1 %</strong> (histamina).</p></div></details><details class=\"pq\"><summary>¿Hematopoyesis?</summary><div class=\"pa\"><p><strong>Mieloide:</strong> todo menos linfocitos, <strong>en la médula ósea</strong>. <strong>Linfoide:</strong> linfocitos (B en la médula, <strong>T en el timo</strong>).</p></div></details><details class=\"pq\"><summary>¿Linfático?</summary><div class=\"pa\"><p>Timo, bazo, ganglios y <strong>MALT</strong>; filtro que <strong>atrapa antígenos</strong>.</p></div></details><h3 class='ih'>8 · Anatomía</h3><details class=\"pq\"><summary>¿Órgano?</summary><div class=\"pa\"><p>Conjunto de tejidos <strong>identificable</strong> con <strong>función específica</strong>.</p></div></details><details class=\"pq\"><summary>¿Sistema vs aparato?</summary><div class=\"pa\"><p><strong>Sistema = mismos tejidos</strong> (óseo, muscular, nervioso). <strong>Aparato = tejidos distintos coordinados</strong> (respiratorio, digestivo, urinario).</p></div></details><details class=\"pq\"><summary>¿Planos?</summary><div class=\"pa\"><p><strong>Frontal</strong> (delante/detrás) · <strong>sagital</strong> (derecha/izquierda) · <strong>transversal</strong> (arriba/abajo).</p></div></details><details class=\"pq\"><summary>¿Posición anatómica?</summary><div class=\"pa\"><p>De pie, cara al frente, brazos a los lados con <strong>palmas hacia delante</strong>: referencia para describirlo todo.</p></div></details><h3 class='ih'>Las 10 que no puedes fallar</h3><ol>\n<li>Los <strong>4 tejidos</strong> y qué hace cada uno.</li>\n<li><strong>Alvéolo</strong> = simple plano · <strong>tráquea</strong> = pseudoestratificado ciliado · <strong>epidermis</strong> = estratificado queratinizado.</li>\n<li><strong>Exo/endocrina</strong> y <strong>mero/apo/holocrina</strong>.</li>\n<li><strong>Esquelético vs cardíaco</strong> (núcleos, discos intercalares, voluntario).</li>\n<li><strong>La ACTIVIDAD</strong> completa.</li>\n<li><strong>Neurona</strong> (dendrita → axón) y <strong>blanca/gris</strong>.</li>\n<li><strong>Laxo/denso</strong> y los <strong>3 cartílagos</strong> con ejemplo.</li>\n<li><strong>Osteoblasto/osteocito/osteoclasto</strong> y <strong>osteona</strong>.</li>\n<li><strong>Los 5 leucocitos</strong> y <strong>mieloide/linfoide</strong>.</li>\n<li><strong>Órgano, sistema, aparato</strong> y <strong>posición anatómica</strong>.</li>\n</ol>",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "titulo": "📖 Glosario",
+   "cab": [
+    "Término",
+    "Significado"
+   ],
+   "opcion": "📖 Glosario",
+   "indice": "📖 Glosario"
+  }
+ ]
+}

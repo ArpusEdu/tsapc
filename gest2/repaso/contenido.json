@@ -1,0 +1,642 @@
+{
+ "unidad": "gest2",
+ "titulo": "Gestión 2 · El laboratorio",
+ "eyebrow": "🧫 Gestión de Muestras · 2º examen",
+ "h1": "Repaso completo: funciones, áreas y organización del laboratorio",
+ "sub": "Tema 2 · 35 diapositivas · 7 bloques · 31 conceptos",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>\n<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div>",
+ "clave": "gest2-repaso-v1",
+ "examen": {
+  "em": "🧫",
+  "asig": "Gestión de Muestras",
+  "examen": "2º examen",
+  "fecha": ""
+ },
+ "simulacro": "gest2/simulacro/",
+ "tipografia": "IBM+Plex+Mono:wght@600",
+ "buscar": [
+  [
+   "#hoja",
+   "20 preguntas de la hoja"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "plan": {
+  "repaso": "[\n {t:\"🔁 Tarjetas: solo las que fallé\",d:\"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.\",m:20,u:\"#fc\",rev:1},\n {t:\"📝 Simulacro completo\",d:\"Todas las partes, <b>sin mirar el Repaso</b>. Corrige cada parte con su botón.\",m:100,u:EXAM.simulacro,rev:1},\n {t:\"🩹 Repasa lo que fallaste en el Simulacro\",d:\"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a hacer esa parte con «Repetir esta parte».\",m:30,u:EXAM.simulacro,rev:1},\n {t:\"🃏 Tarjetas: definiciones\",d:\"🃏 Tarjetas → «Definiciones de la diapositiva». Son las que tienes que dar en el examen.\",m:25,u:\"#fc\",rev:1},\n {t:\"🔴 Repaso de lo imprescindible\",d:\"En el Repaso, filtra 🔴 Imprescindibles y responde «Ponte a prueba» sin mirar.\",m:20,u:\"#fc\",rev:1},\n {t:\"⚡ Lo imprescindible\",d:\"Pregunta → respuesta corta. Lo último antes de dormir.\",m:20,u:\"#impres\",rev:1}]"
+ },
+ "bloques": [
+  {
+   "titulo": "TSLCB: qué hace y para qué",
+   "conceptos": [
+    {
+     "titulo": "Funciones del TSLCB",
+     "lv": 1,
+     "fuente": "Bloque 1 · TSLCB: qué hace y para qué",
+     "prof": "<ul>\n<li>Sus funciones son de <strong>diagnóstico, tratamiento, seguimiento e investigación</strong>, siempre <strong>bajo supervisión y dirección del titulado universitario</strong>.</li>\n<li>Debe aplicar las técnicas garantizando la <strong>máxima fiabilidad, reproducibilidad y calidad</strong>.</li>\n<li><strong>Competencia general:</strong> <strong>realizar estudios analíticos de muestras biológicas</strong> (fluidos, tejidos, células…) mediante <strong>protocolos normalizados de trabajo</strong>, aplicando las <strong>normas de calidad, seguridad y medioambientales vigentes</strong>.</li>\n</ul>",
+     "q": "¿Cuáles son las funciones del TSLCB, bajo qué supervisión trabaja y cuál es su competencia general?",
+     "n": 1
+    },
+    {
+     "titulo": "Resultados ciertos: para qué sirven",
+     "lv": 1,
+     "fuente": "Bloque 1 · TSLCB: qué hace y para qué",
+     "tituloHtml": "Resultados ciertos: para qué sirven <span class=\"note\">azul</span>",
+     "prof": "<p>Debe estar <strong>pendiente y garantizar que los resultados obtenidos son ciertos</strong>, para que sirvan de soporte a: <strong>prevención, diagnóstico, control de evolución de la enfermedad, posible tratamiento e investigación</strong> (5).\nTruco: <strong>\"PreDiCoTrI\"</strong>.</p>",
+     "q": "¿A qué 5 cosas sirven de soporte los resultados del laboratorio?",
+     "n": 2
+    },
+    {
+     "titulo": "Los 3 grupos de funciones",
+     "lv": 2,
+     "fuente": "Bloque 1 · TSLCB: qué hace y para qué",
+     "prof": "<p><strong>Profesionales, personales y sociales.</strong></p>",
+     "q": "¿En qué tres grupos se dividen las funciones del TSLCB?",
+     "n": 3
+    }
+   ],
+   "min": 10
+  },
+  {
+   "titulo": "TSLCB: funciones profesionales, personales y sociales",
+   "conceptos": [
+    {
+     "titulo": "Funciones profesionales (10)",
+     "lv": 1,
+     "fuente": "Bloque 2 · TSLCB: funciones profesionales, personales y sociales",
+     "tituloHtml": "Funciones profesionales (10) <span class=\"note\">azul</span>",
+     "prof": "<ol>\n<li><strong>Organización del laboratorio</strong> (área de trabajo).</li>\n<li><strong>Gestión del control</strong> de <strong>existencias de almacén y equipos</strong> (según procedimientos establecidos).</li>\n<li><strong>Recepción de muestras biológicas</strong>; la <strong>obtención</strong> la hacen <strong>otros profesionales</strong>.</li>\n<li><strong>Distribución de las muestras</strong> según las demandas clínicas y/o analíticas.</li>\n<li><strong>Conservación de las muestras</strong> a lo largo del proceso.</li>\n<li><strong>Preparar la muestra para el análisis</strong> (tratamiento <strong>preanalítico o pretratamiento</strong>, dentro de los parámetros de calidad).</li>\n<li><strong>Asegurar las normas de seguridad</strong> durante todo el proceso.</li>\n<li><strong>Verificar el funcionamiento de los equipos instrumentales.</strong></li>\n<li><strong>Determinaciones analíticas siguiendo los protocolos (PNT)</strong> y las normas de calidad.</li>\n<li><strong>Trazabilidad y protocolos establecidos</strong>, garantizando la calidad.\nTruco del orden de la muestra: <strong>Recibir → Distribuir → Conservar → Preparar → Analizar</strong>.</li>\n</ol>",
+     "q": "Enumera las funciones profesionales. ¿Quién obtiene la muestra?",
+     "n": 4
+    },
+    {
+     "titulo": "Funciones a nivel personal",
+     "lv": 1,
+     "fuente": "Bloque 2 · TSLCB: funciones profesionales, personales y sociales",
+     "prof": "<ul>\n<li>Evaluar la <strong>coherencia, reproducibilidad y fiabilidad</strong> de los resultados (azul).</li>\n<li><strong>Utilizar las aplicaciones informáticas</strong> → <strong>mayor fiabilidad</strong> y <strong>menos manipulación</strong> de los resultados (azul).</li>\n<li>Identificar la <strong>normativa de protección ambiental y personal</strong> (azul).</li>\n<li><strong>Adaptarse a las nuevas situaciones</strong> (azul). Para ello (en <strong>rojo</strong>):</li>\n<li>🔴 <strong>Mantenerse actualizado en conocimientos</strong> científicos, técnicos y tecnológicos.</li>\n<li>🔴 <strong>Formación continua</strong>, aprovechando los recursos.</li>\n<li>🔴 <strong>Uso de las tecnologías</strong> de la información y la comunicación (<strong>TIC</strong>).</li>\n</ul>",
+     "q": "¿Cuáles son las funciones personales y qué 3 cosas hacen falta para adaptarse a nuevas situaciones?",
+     "n": 5
+    },
+    {
+     "titulo": "Funciones a nivel social (1ª parte)",
+     "lv": 1,
+     "fuente": "Bloque 2 · TSLCB: funciones profesionales, personales y sociales",
+     "tituloHtml": "Funciones a nivel social (1ª parte) <span class=\"note\">azul</span>",
+     "prof": "<ul>\n<li><strong>Habilidades para resolver situaciones</strong> y problemas → hace falta <strong>iniciativa y autonomía</strong>.</li>\n<li>Habilidades en su ámbito con <strong>creatividad, fomentando la innovación</strong> y espíritu de mejora.</li>\n<li><strong>Organizar y coordinar equipos de trabajo.</strong></li>\n<li><strong>Uso eficiente de los recursos.</strong></li>\n<li>Actuar con <strong>responsabilidad</strong>.</li>\n<li>Relaciones fluidas y asumir el <strong>liderazgo</strong>.</li>\n<li><strong>Soluciones a los conflictos</strong> del trabajo en equipo.</li>\n<li><strong>Comunicar con sus iguales</strong>, superiores y personas ajenas o clientes.</li>\n<li><strong>Vías eficaces de comunicación.</strong></li>\n</ul>",
+     "q": "¿Qué hace falta para resolver situaciones y problemas? Di 5 funciones sociales.",
+     "n": 6
+    },
+    {
+     "titulo": "Funciones a nivel social (2ª parte)",
+     "lv": 1,
+     "fuente": "Bloque 2 · TSLCB: funciones profesionales, personales y sociales",
+     "tituloHtml": "Funciones a nivel social (2ª parte) <span class=\"note\">azul</span>",
+     "prof": "<ul>\n<li><strong>Respetar las opiniones, la autonomía</strong> y la competencia del equipo.</li>\n<li>Generar <strong>entornos seguros de trabajo</strong>.</li>\n<li><strong>Supervisar y aplicar</strong> procedimientos de <strong>prevención de riesgos laborales y ambientales</strong>.</li>\n<li>Procedimientos de <strong>gestión de calidad</strong>.</li>\n<li>Procedimientos de <strong>accesibilidad universal para todas las personas</strong>.</li>\n<li><strong>Gestión inicial básica</strong> para el funcionamiento de la empresa.</li>\n<li><strong>Iniciativa en su actividad profesional.</strong></li>\n<li>Sentido de la <strong>responsabilidad social</strong>.</li>\n<li>Ejercer sus <strong>derechos</strong> y cumplir las <strong>obligaciones</strong> profesionales.</li>\n<li><strong>Principios éticos de salud.</strong></li>\n<li><strong>Participar activamente</strong> en la vida social, económica y cultural.\nImagen: \"<strong>Cultura en valores y ética</strong>\".</li>\n</ul>",
+     "q": "¿Qué procedimientos debe supervisar y aplicar el técnico (3)? Di otras 4 funciones sociales.",
+     "n": 7
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "TSLCB: áreas, puestos y ambiente profesional",
+   "conceptos": [
+    {
+     "titulo": "Sectores donde trabaja el TSLCB",
+     "lv": 1,
+     "fuente": "Bloque 3 · TSLCB: áreas, puestos y ambiente profesional",
+     "tituloHtml": "Sectores donde trabaja el TSLCB <span class=\"note\">rojo/azul</span>",
+     "prof": "<p>🔴 <strong>Las personas con el título de laboratorio clínico y biomédico ejercen su actividad</strong> en estos sectores <strong>sanitarios</strong>:</p>\n<ol>\n<li><strong>Ámbito público</strong> (organismos e instituciones).</li>\n<li><strong>Empresas privadas</strong> (farmacéuticas o biotecnológicas).</li>\n<li><strong>Área del laboratorio</strong> de análisis clínicos y diagnóstico.</li>\n<li><strong>Servicio de tratamiento</strong> realizando preparaciones.\n🔴 <strong>Otros entornos laborales:</strong> <strong>puestos de gestión</strong> e <strong>investigación</strong>.</li>\n</ol>",
+     "q": "¿En qué 4 sectores trabaja el TSLCB y cuáles son los otros 2 entornos?",
+     "n": 8
+    },
+    {
+     "titulo": "Regulación y puestos del TSLCB",
+     "lv": 1,
+     "fuente": "Bloque 3 · TSLCB: áreas, puestos y ambiente profesional",
+     "prof": "<ul>\n<li>🔴 <strong>La actividad profesional</strong> está <strong>regulada por la administración sanitaria estatal</strong> (azul).</li>\n<li><strong>Puestos de trabajo (5):</strong>\n  1. Técnico superior en <strong>laboratorio de diagnóstico clínico</strong>.\n  2. Técnico <strong>especialista en laboratorio</strong>.\n  3. <strong>Ayudante técnico en laboratorio de investigación y experimentación</strong>.\n  4. <strong>Ayudante técnico de toxicología</strong>.\n  5. <strong>Delegado comercial</strong> de productos hospitalarios y farmacéuticos.</li>\n</ul>",
+     "q": "¿Quién regula la actividad del TSLCB y cuáles son sus 5 puestos de trabajo?",
+     "n": 9
+    },
+    {
+     "titulo": "Ambiente profesional",
+     "lv": 1,
+     "fuente": "Bloque 3 · TSLCB: áreas, puestos y ambiente profesional",
+     "prof": "<ul>\n<li>🔴 <strong>Ambiente profesional</strong>: un <strong>laboratorio con una responsabilidad grande, esfuerzo y trabajo</strong> (azul).</li>\n<li>Se requieren <strong>profesionales versátiles</strong> (azul), capaces de desarrollar <strong>diferentes metodologías analíticas</strong>.</li>\n<li>La labor <strong>no consiste solo en repetir ensayos y metodologías de puesta a punto</strong> (azul): debe 🔴 <strong>adaptarse a la rapidez en el avance de las nuevas técnicas</strong> y proponer otras nuevas con la 🔴 <strong>constante formación</strong>, que él mismo debe incentivar.</li>\n</ul>",
+     "q": "¿Cómo es el ambiente profesional? ¿En qué consiste (y en qué no) la labor del técnico?",
+     "n": 10
+    },
+    {
+     "titulo": "Avances tecnológicos e informática",
+     "lv": 1,
+     "fuente": "Bloque 3 · TSLCB: áreas, puestos y ambiente profesional",
+     "prof": "<ul>\n<li>🔴 <strong>Los avances tecnológicos</strong> (métodos de diagnóstico, <strong>automatización</strong>, <strong>robótica</strong>, <strong>autoanalizadores</strong>, <strong>inyectores automáticos</strong>) <strong>requieren que formadores y alumnos estén actualizados y formados en nuevos programas informáticos</strong> (azul), para la gestión y el manejo de tecnologías. <strong>Es necesario</strong> (rosa):\n  1. <strong>Manejar y aplicar</strong> estos programas.\n  2. <strong>Actualizarlos</strong> y estar pendiente de las actualizaciones.\n  3. <strong>Conocer el avance</strong> de las casas comerciales y <strong>resolver incidencias</strong> (gestión del laboratorio: <strong>desde la solicitud del análisis hasta el envío del resultado</strong>).\n  4. <strong>Conocer la digitalización de imágenes</strong> (laboratorios de imagen) y los documentos de seguimiento del análisis.</li>\n</ul>",
+     "q": "¿Qué avances tecnológicos cita la profe y qué 4 cosas son necesarias respecto a los programas informáticos?",
+     "n": 11
+    },
+    {
+     "titulo": "Mejora de la calidad",
+     "lv": 1,
+     "fuente": "Bloque 3 · TSLCB: áreas, puestos y ambiente profesional",
+     "tituloHtml": "Mejora de la calidad <span class=\"note\">rojo</span>",
+     "prof": "<p>🔴 <strong>En los laboratorios es muy importante la mejora de calidad</strong>; por ello es necesario:</p>\n<ul>\n<li><strong>Revisar los protocolos de trabajo</strong>, <strong>desde la preparación del paciente</strong> para la obtención de muestra <strong>hasta el envío de los informes</strong> de resultado (azul).</li>\n<li><strong>Que el técnico sea autosuficiente y capaz de aplicar</strong> correctamente los procedimientos (azul).\nImagen \"<strong>Protocolos de bioseguridad</strong>\": medidas contra el contagio, reportar casos, cuidar la salud, <strong>lavarse las manos 20 s cada 2 h</strong>, distancia, tapabocas, guantes en aseo/residuos; quien incumpla tendrá sanciones.</li>\n</ul>",
+     "q": "¿Qué hay que revisar para mejorar la calidad y desde dónde hasta dónde?",
+     "n": 12
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "TSLCB: objetivos",
+   "conceptos": [
+    {
+     "titulo": "Objetivos relacionados con la patología",
+     "lv": 1,
+     "fuente": "Bloque 4 · TSLCB: objetivos",
+     "tituloHtml": "Objetivos relacionados con la patología <span class=\"note\">rojo</span>",
+     "prof": "<ul>\n<li>Conocer la patología y relacionarla con la <strong>fisiopatología</strong> del proceso, <strong>aplicando terminología científico-técnica</strong> (azul).</li>\n<li><strong>Conocer la patología</strong> y relacionarla con los <strong>patrones de alteración morfológica</strong> (tejido) <strong>o bioquímica</strong>.</li>\n<li>Después, los objetivos se centran en <strong>la gestión, el análisis y los objetivos personales</strong> (rosa).</li>\n</ul>",
+     "q": "¿Cuáles son los objetivos relacionados con la patología y en qué se centran después?",
+     "n": 13
+    },
+    {
+     "titulo": "Objetivos personales del TSLCB (6 cajas)",
+     "lv": 2,
+     "fuente": "Bloque 4 · TSLCB: objetivos",
+     "prof": "<ol>\n<li>Aplicaciones informáticas para <strong>gestionar documentos</strong>.</li>\n<li>Aplicaciones informáticas para el <strong>control de existencias</strong>.</li>\n<li>Aplicaciones informáticas para <strong>organizar y gestionar el área de trabajo</strong>.</li>\n<li><strong>Gestionar la documentación</strong> del procesamiento de muestras: <strong>codificación y registro, sin perder la trazabilidad</strong>.</li>\n<li><strong>Preparar y gestionar reactivos y equipos</strong> en condiciones óptimas.</li>\n<li>Distribución de <strong>hemoderivados</strong> y otras muestras de interés biológico con protocolos de calidad.</li>\n</ol>",
+     "q": "Di los objetivos personales. ¿Qué exige gestionar la documentación de las muestras?",
+     "n": 14
+    },
+    {
+     "titulo": "Objetivos de análisis (4 cajas)",
+     "lv": 2,
+     "fuente": "Bloque 4 · TSLCB: objetivos",
+     "prof": "<ol>\n<li>Tener en cuenta los <strong>errores que influyen en la variabilidad de los resultados</strong>: variables de <strong>extracción, transporte, conservación y análisis</strong>.</li>\n<li><strong>Puesta en marcha de los equipos</strong> y su <strong>mantenimiento</strong>.</li>\n<li><strong>Pretratamiento</strong> de las muestras.</li>\n<li><strong>Seleccionar técnicas instrumentales</strong> apropiadas según el análisis.</li>\n</ol>",
+     "q": "¿Qué 4 variables influyen en la variabilidad de los resultados? Di los 4 objetivos de análisis.",
+     "n": 15
+    },
+    {
+     "titulo": "Objetivos de la fase post analítica (6)",
+     "lv": 1,
+     "fuente": "Bloque 4 · TSLCB: objetivos",
+     "tituloHtml": "Objetivos de la fase post analítica (6) <span class=\"note\">azul</span>",
+     "prof": "<ol>\n<li><strong>Aplicar protocolos</strong> (diseño y proceso analítico).</li>\n<li><strong>Supervisar y mejorar procedimientos</strong> de gestión de calidad.</li>\n<li><strong>Tratamiento de datos</strong> de los análisis con <strong>estudio estadístico</strong>.</li>\n<li><strong>Programas informáticos</strong> de tratamiento de datos.</li>\n<li>Criterios para <strong>dar un informe verídico</strong>.</li>\n<li><strong>Aceptar los riesgos y la posibilidad de error.</strong>\nImagen: \"estrategias para abordar errores en la fase postanalítica\".</li>\n</ol>",
+     "q": "Enumera los objetivos de la fase post analítica.",
+     "n": 16
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "TSAPC (tu título): funciones",
+   "conceptos": [
+    {
+     "titulo": "Funciones del TSAPC",
+     "lv": 1,
+     "fuente": "Bloque 5 · TSAPC (tu título): funciones",
+     "prof": "<ul>\n<li>Son <strong>funciones de AYUDA</strong> en el <strong>diagnóstico, tratamiento, seguimiento e investigación</strong>, siempre <strong>bajo supervisión y dirección del titulado universitario</strong>.</li>\n<li>Garantizar la <strong>máxima fiabilidad, reproducibilidad y calidad</strong> de las técnicas.\n<strong>Diferencia clave con el TSLCB:</strong> el TSAPC hace funciones \"<strong>de ayuda</strong>\" en el diagnóstico.</li>\n</ul>",
+     "q": "¿Qué funciones tiene el TSAPC y en qué se diferencian de las del TSLCB?",
+     "n": 17
+    },
+    {
+     "titulo": "Competencia general del TSAPC (5 cajas)",
+     "lv": 1,
+     "fuente": "Bloque 5 · TSAPC (tu título): funciones",
+     "prof": "<ol>\n<li><strong>Procesar muestras histológicas y citológicas.</strong></li>\n<li><strong>Seleccionar citologías ginecológicas y generales.</strong></li>\n<li><strong>Colaborar en las necropsias clínicas y forenses.</strong></li>\n<li><strong>Organizar el trabajo y cumplir los criterios de calidad.</strong></li>\n<li><strong>Optimizar los recursos.</strong>\nTruco: <strong>\"Pro-Se-Ne-Or-Op\"</strong> (Procesar, Seleccionar, Necropsias, Organizar, Optimizar).</li>\n</ol>",
+     "q": "¿Cuáles son las 5 funciones basadas en la competencia general del TSAPC?",
+     "n": 18
+    },
+    {
+     "titulo": "Funciones a nivel profesional del TSAPC",
+     "lv": 1,
+     "fuente": "Bloque 5 · TSAPC (tu título): funciones",
+     "tituloHtml": "Funciones a nivel profesional del TSAPC <span class=\"note\">azul</span>",
+     "prof": "<ul>\n<li><strong>Organización del laboratorio</strong>; <strong>gestión del control</strong> de existencias de almacén y equipos.</li>\n<li><strong>Recepción de muestras</strong> (la <strong>obtención NO la suele realizar el técnico</strong>), <strong>según protocolo de unidad</strong>.</li>\n<li><strong>Distribución</strong> de muestras; <strong>conservación</strong> de muestras <strong>desde la solicitud hasta el informe final</strong>.</li>\n<li><strong>Preparar la muestra</strong> (pretratamiento); <strong>normas de seguridad</strong>; <strong>verificar los equipos</strong>.</li>\n<li><strong>Determinaciones analíticas con PNT:</strong> ✓ <strong>parámetros bioquímicos</strong> ✓ <strong>análisis microbiológico</strong> (muestras y cultivos) ✓ <strong>inmunológicos</strong> ✓ <strong>hematológicos</strong> ✓ <strong>técnicas de análisis genéticos</strong> (muestras y cultivos celulares).</li>\n<li><strong>Garantizar la calidad</strong> desde que sale la <strong>solicitud de los clínicos</strong> hasta que se <strong>envía el informe final</strong>, con <strong>trazabilidad</strong>.</li>\n</ul>",
+     "q": "¿Qué 5 tipos de determinaciones analíticas hace el técnico con PNT? ¿Desde cuándo hasta cuándo garantiza la calidad?",
+     "n": 19
+    },
+    {
+     "titulo": "Funciones específicas del TSAPC (8 cajas)",
+     "lv": 1,
+     "fuente": "Bloque 5 · TSAPC (tu título): funciones",
+     "prof": "<ol>\n<li><strong>Técnicas de análisis genético</strong> a muestras biológicas y cultivos celulares.</li>\n<li>Relacionar el resultado de <strong>citologías ginecológicas</strong> con un <strong>patrón control</strong>.</li>\n<li>Relacionar el resultado de <strong>citologías no ginecológicas</strong> con un <strong>patrón control</strong>.</li>\n<li><strong>Procesado de muestras histológicas y citológicas</strong> para el microscopio.</li>\n<li><strong>Técnicas inmunohistoquímicas y de biología molecular.</strong></li>\n<li><strong>Protocolos en preparación de necropsias</strong> clínicas o médico-legales.</li>\n<li><strong>Registrar los datos de necropsias</strong> clínicas legales.</li>\n<li>Procedimientos técnicos necrópsicos <strong>bajo la supervisión siempre del patólogo</strong>.</li>\n</ol>",
+     "q": "Di las funciones específicas del TSAPC. ¿Bajo la supervisión de quién hace las técnicas necrópsicas?",
+     "n": 20
+    },
+    {
+     "titulo": "Funciones personales y sociales del TSAPC",
+     "lv": 1,
+     "fuente": "Bloque 5 · TSAPC (tu título): funciones",
+     "prof": "<p>Son <strong>las mismas que las del TSLCB</strong> (conceptos 5, 6 y 7), con estos matices:</p>\n<ul>\n<li>Personales: aplicaciones informáticas → <strong>menor manipulación manual</strong>; <strong>para ello es necesario</strong> (azul): 🔴 <strong>mantenerse actualizado</strong>, 🔴 <strong>formación continua</strong>, 🔴 <strong>tecnologías de la información</strong>.</li>\n<li>Sociales (la profe las numera \"<strong>5.</strong>\", saltándose el 4): resolver situaciones (iniciativa y autonomía), <strong>habilidades en su ámbito</strong> (creatividad/innovación), <strong>organizar y coordinar equipos</strong>, uso eficiente de recursos, <strong>actuar con responsabilidad</strong>, relaciones fluidas y liderazgo, <strong>soluciones a los conflictos al trabajar en grupo</strong>, <strong>saber comunicar</strong>, vías eficaces de comunicación, <strong>respetar opiniones, autonomía y competencia</strong>, entornos seguros, PRL y ambientales, gestión de calidad, accesibilidad universal, gestión inicial básica, <strong>tener iniciativa</strong>, derechos y obligaciones, <strong>responsabilidad social y principios éticos</strong>, <strong>participar activamente</strong> en la vida económica, social y cultural.</li>\n</ul>",
+     "q": "¿Qué funciones personales y sociales comparten el TSAPC y el TSLCB?",
+     "n": 21
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "TSAPC: áreas, puestos, ambiente y calidad",
+   "conceptos": [
+    {
+     "titulo": "Sectores donde trabaja el TSAPC",
+     "lv": 1,
+     "fuente": "Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad",
+     "prof": "<p>🔴 <strong>El título de técnico de anatomía patológica y citodiagnóstico</strong> ejerce en:</p>\n<ul>\n<li><strong>Ámbito público.</strong></li>\n<li><strong>Sector sanitario</strong>, en <strong>atención primaria y especializada</strong> ← (<strong>esto NO aparece en el TSLCB</strong>).</li>\n<li><strong>Empresas privadas</strong> (farmacéuticas o biotecnológicas).</li>\n<li><strong>Laboratorio de análisis clínicos</strong> y diagnóstico.</li>\n<li><strong>Servicio de tratamiento</strong> realizando preparaciones.\nOtros entornos: <strong>puestos de gestión</strong> e <strong>investigación</strong>.</li>\n</ul>",
+     "q": "¿En qué sectores trabaja el TSAPC? ¿Qué sector tiene que el TSLCB no tiene?",
+     "n": 22
+    },
+    {
+     "titulo": "Regulación y puestos del TSAPC (8)",
+     "lv": 1,
+     "fuente": "Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad",
+     "prof": "<p>🔴 <strong>La actividad profesional del técnico</strong> está <strong>regulada por la Administración sanitaria estatal</strong>. Puestos:</p>\n<ol>\n<li><strong>Técnico superior en anatomía patológica y citología.</strong></li>\n<li><strong>Técnico especialista en anatomía patológica y citología.</strong></li>\n<li><strong>Citotécnico.</strong></li>\n<li><strong>Ayudante de forense.</strong></li>\n<li><strong>Prosector de autopsias clínicas y médico-legales.</strong></li>\n<li><strong>Tanatopractor.</strong></li>\n<li><strong>Colaborador y asistente en biología molecular.</strong></li>\n<li><strong>Colaborador y asistente de investigación.</strong></li>\n</ol>",
+     "q": "¿Quién regula la actividad del TSAPC? Di sus 8 puestos de trabajo.",
+     "n": 23
+    },
+    {
+     "titulo": "Comparativa de puestos TSLCB vs TSAPC",
+     "lv": 1,
+     "fuente": "Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>TSLCB (5 puestos)</th>\n<th>TSAPC (8 puestos)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>TS en laboratorio de diagnóstico clínico</td>\n<td>TS en anatomía patológica y citología</td>\n</tr>\n<tr>\n<td>Técnico especialista en laboratorio</td>\n<td>Técnico especialista en AP y citología</td>\n</tr>\n<tr>\n<td>Ayudante técnico en laboratorio de investigación y experimentación</td>\n<td>Citotécnico</td>\n</tr>\n<tr>\n<td>Ayudante técnico de toxicología</td>\n<td>Ayudante de forense</td>\n</tr>\n<tr>\n<td>Delegado comercial de productos hospitalarios y farmacéuticos</td>\n<td>Prosector de autopsias · Tanatopractor · Colaborador en biología molecular · Colaborador de investigación</td>\n</tr>\n</tbody>\n</table></div>\n<p>Truco: <strong>forense, autopsias, tanatopractor y citotécnico → solo TSAPC. Toxicología y delegado comercial → solo TSLCB.</strong></p>",
+     "q": "¿De qué título son el citotécnico, el tanatopractor, el ayudante de toxicología y el delegado comercial?",
+     "n": 24
+    },
+    {
+     "titulo": "Ambiente y avances en anatomía patológica",
+     "lv": 1,
+     "fuente": "Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad",
+     "tituloHtml": "Ambiente y avances en anatomía patológica <span class=\"note\">azul</span>",
+     "prof": "<ul>\n<li><strong>Responsabilidad grande</strong> que requiere esfuerzo y trabajo.</li>\n<li>Se <strong>requieren profesionales versátiles</strong> (metodologías aplicadas a la anatomía patológica).</li>\n<li>Los <strong>avances en las investigaciones</strong> permiten descubrir <strong>moléculas implicadas en procesos patológicos</strong>.</li>\n<li>Por ello <strong>la biología molecular, la citogenética y la bioinformática</strong> son <strong>disciplinas con entidad propia</strong>.</li>\n<li>El técnico debe <strong>aplicar las técnicas que van actualizando</strong> las tareas.</li>\n<li>La <strong>incorporación de la robótica</strong> en el <strong>procesamiento de muestras citológicas e histológicas</strong> permite <strong>diagnósticos con fluidez</strong>.</li>\n</ul>",
+     "q": "¿Qué 3 disciplinas tienen entidad propia y qué aporta la robótica?",
+     "n": 25
+    },
+    {
+     "titulo": "Calidad y sector funerario (TSAPC)",
+     "lv": 1,
+     "fuente": "Bloque 6 · TSAPC: áreas, puestos, ambiente y calidad",
+     "tituloHtml": "Calidad y sector funerario (TSAPC) <span class=\"note\">rojo</span>",
+     "prof": "<p>🔴 <strong>Otro punto importante es la calidad:</strong></p>\n<ul>\n<li><strong>Revisión frecuente de los procedimientos</strong>, garantizando la calidad en todo el procesado.</li>\n<li>Desde la <strong>preparación del paciente por parte de otros</strong> servicios <strong>hasta el informe de los resultados</strong>.</li>\n<li><strong>Cumplir los protocolos de calidad</strong> + conocer las mejoras en <strong>riesgos laborales y medioambiental</strong>.</li>\n<li>El <strong>sector funerario requiere técnicos</strong> que sepan <strong>extraer del cadáver: tejidos, prótesis, marcapasos y otros contaminantes</strong> (imagen: radiografía de tórax con marcapasos).</li>\n</ul>",
+     "q": "¿Qué incluye la calidad y qué debe saber extraer el técnico del cadáver en el sector funerario?",
+     "n": 26
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "TSAPC: objetivos (4 grupos)",
+   "conceptos": [
+    {
+     "titulo": "Objetivos relacionados con la patología",
+     "lv": 1,
+     "fuente": "Bloque 7 · TSAPC: objetivos (4 grupos)",
+     "prof": "<ol>\n<li>Conocer la patología y saber <strong>fisiopatología</strong>.</li>\n<li>Relacionar con el <strong>proceso fisiológico</strong>.</li>\n<li>Relacionar con el <strong>patrón morfológico y bioquímico</strong>.</li>\n<li><strong>Pasos que deben ser dados por el TSAPC.</strong></li>\n</ol>",
+     "q": "¿Cuáles son los objetivos del TSAPC relacionados con la patología?",
+     "n": 27
+    },
+    {
+     "titulo": "Objetivos relacionados con la gestión (6)",
+     "lv": 1,
+     "fuente": "Bloque 7 · TSAPC: objetivos (4 grupos)",
+     "prof": "<ol>\n<li>Aplicaciones informáticas para <strong>gestión de documentos</strong>.</li>\n<li>Aplicaciones informáticas para <strong>gestión de existencias</strong>.</li>\n<li>Aplicaciones informáticas para <strong>organización y gestión del área de trabajo</strong>.</li>\n<li><strong>Procesamiento de muestras: codificación y registro sin perder la trazabilidad.</strong></li>\n<li><strong>Reactivos y equipos</strong> en condiciones óptimas.</li>\n<li><strong>Distribución de muestras de interés biológico</strong> con protocolos de calidad.\n(Son los mismos que los \"objetivos personales\" del TSLCB.)</li>\n</ol>",
+     "q": "Di los objetivos de gestión del TSAPC.",
+     "n": 28
+    },
+    {
+     "titulo": "Objetivos de análisis: específicos y post analíticos",
+     "lv": 1,
+     "fuente": "Bloque 7 · TSAPC: objetivos (4 grupos)",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th><strong>Específicos (5)</strong></th>\n<th><strong>Fase post analítica (6)</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Tinción</strong></td>\n<td>Aplicar protocolos</td>\n</tr>\n<tr>\n<td><strong>Extensión</strong></td>\n<td>Supervisar procedimientos de calidad</td>\n</tr>\n<tr>\n<td><strong>Disección</strong></td>\n<td>Realizar el tratamiento de datos</td>\n</tr>\n<tr>\n<td><strong>Extracción</strong></td>\n<td>Programas informáticos de tratamiento de datos</td>\n</tr>\n<tr>\n<td><strong>Detección</strong></td>\n<td>Informe verídico de los resultados</td>\n</tr>\n<tr>\n<td></td>\n<td>Aceptar los riesgos y la posibilidad de error</td>\n</tr>\n</tbody>\n</table></div>\n<p>Truco de los específicos: <strong>\"TEDED\"</strong> → <strong>T</strong>inción, <strong>E</strong>xtensión, <strong>D</strong>isección, <strong>E</strong>xtracción, <strong>D</strong>etección.</p>",
+     "q": "¿Cuáles son los 5 objetivos específicos de análisis y los 6 de la fase post analítica?",
+     "n": 29
+    },
+    {
+     "titulo": "Objetivos de desarrollo personal (8)",
+     "lv": 1,
+     "fuente": "Bloque 7 · TSAPC: objetivos (4 grupos)",
+     "prof": "<ol>\n<li><strong>Liderazgo</strong> para facilitar la <strong>coordinación</strong> de equipos.</li>\n<li><strong>Motivación</strong> para facilitar la <strong>organización</strong> de equipos.</li>\n<li><strong>Comunicación</strong> en contextos de trabajo en grupo.</li>\n<li><strong>Identificar situaciones de riesgo</strong> y aplicar protocolos de <strong>prevención de riesgos y protección ambiental</strong>.</li>\n<li><strong>Actividad emprendedora, empresarial y de iniciativa profesional.</strong></li>\n<li><strong>Marco legal</strong> como <strong>ciudadano democrático</strong> y profesional.</li>\n<li><strong>Aprendizaje y evolución científica y tecnológica.</strong></li>\n<li><strong>Creatividad para poder innovar.</strong>\nOjo: <strong>liderazgo → coordinación</strong>; <strong>motivación → organización</strong>.</li>\n</ol>",
+     "q": "Enumera los objetivos de desarrollo personal. ¿Para qué sirve el liderazgo y para qué la motivación?",
+     "n": 30
+    },
+    {
+     "titulo": "Comparativa de objetivos TSLCB vs TSAPC",
+     "lv": 1,
+     "fuente": "Bloque 7 · TSAPC: objetivos (4 grupos)",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>TSLCB</th>\n<th>TSAPC</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. Relacionados con la patología</td>\n<td>1. Relacionados con la patología</td>\n</tr>\n<tr>\n<td>Objetivos personales (= gestión)</td>\n<td>2. Relacionados con la gestión</td>\n</tr>\n<tr>\n<td>Objetivos de análisis</td>\n<td>3. De análisis (específicos + post analítica)</td>\n</tr>\n<tr>\n<td>Objetivos de la fase post analítica</td>\n<td>4. De desarrollo personal</td>\n</tr>\n</tbody>\n</table></div>",
+     "q": "¿Qué grupos de objetivos tiene cada título?",
+     "n": 31
+    }
+   ],
+   "min": 20
+  }
+ ],
+ "chequeo": [
+  "Funciones TSLCB y TSAPC. 2. Competencia general de cada uno. 3. 10 funciones profesionales. 4. Funciones personales + 3 rojas. 5. 5 funciones sociales. 6. Sectores de cada título (y el extra del TSAPC). 7. Puestos de cada título. 8. Avances tecnológicos y 4 necesidades informáticas. 9. Calidad. 10. Objetivos de cada título."
+ ],
+ "impres": [
+  {
+   "titulo": "Funciones",
+   "items": [
+    [
+     "¿Qué funciones tiene el TSLCB?",
+     "<strong>Diagnóstico, tratamiento, seguimiento e investigación</strong>, siempre bajo <strong>supervisión del titulado universitario</strong>."
+    ],
+    [
+     "¿Y el TSAPC?",
+     "Las mismas, pero son funciones <strong>\"DE AYUDA\"</strong> en el diagnóstico, tratamiento, seguimiento e investigación (también bajo el titulado universitario)."
+    ],
+    [
+     "¿Qué debe garantizar al aplicar las técnicas?",
+     "<strong>Máxima fiabilidad, reproducibilidad y calidad.</strong>"
+    ],
+    [
+     "¿Competencia general del TSLCB?",
+     "<strong>Realizar estudios analíticos de muestras biológicas</strong> (fluidos, tejidos, células) con <strong>protocolos normalizados</strong> y normas de <strong>calidad, seguridad y medioambientales</strong>."
+    ],
+    [
+     "¿Competencia general del TSAPC (5)?",
+     "<strong>Procesar</strong> muestras histológicas y citológicas · <strong>Seleccionar</strong> citologías ginecológicas y generales · Colaborar en <strong>necropsias</strong> clínicas y forenses · <strong>Organizar</strong> el trabajo con calidad · <strong>Optimizar</strong> los recursos."
+    ],
+    [
+     "¿A qué sirven de soporte los resultados ciertos (5)?",
+     "<strong>Prevención, diagnóstico, control de evolución, tratamiento e investigación.</strong>"
+    ],
+    [
+     "¿En qué 3 grupos se dividen las funciones?",
+     "<strong>Profesionales, personales y sociales.</strong>"
+    ]
+   ]
+  },
+  {
+   "titulo": "Funciones profesionales",
+   "items": [
+    [
+     "¿Cuáles son las principales?",
+     "Organizar el laboratorio · <strong>gestión del control de existencias</strong> de almacén y equipos · <strong>recepción</strong> · <strong>distribución</strong> · <strong>conservación</strong> · <strong>preparar la muestra (pretratamiento/preanalítico)</strong> · normas de seguridad · <strong>verificar los equipos</strong> · <strong>determinaciones con PNT</strong> · <strong>trazabilidad</strong>."
+    ],
+    [
+     "¿Quién obtiene la muestra?",
+     "<strong>Otros profesionales.</strong> El técnico hace la <strong>recepción</strong> (según protocolo de unidad)."
+    ],
+    [
+     "¿Qué es el PNT?",
+     "<strong>Procedimiento Normalizado de Trabajo</strong> (el protocolo escrito de cada técnica)."
+    ],
+    [
+     "¿Qué es la trazabilidad?",
+     "Poder seguir la muestra <strong>desde la solicitud hasta el informe final</strong> sin perderla."
+    ],
+    [
+     "¿Qué determinaciones hace con PNT?",
+     "<strong>Bioquímicas, microbiológicas, inmunológicas, hematológicas y genéticas.</strong>"
+    ]
+   ]
+  },
+  {
+   "titulo": "Funciones personales y sociales",
+   "items": [
+    [
+     "¿Funciones personales?",
+     "Evaluar la <strong>coherencia, reproducibilidad y fiabilidad</strong> · usar <strong>aplicaciones informáticas</strong> (más fiabilidad, <strong>menos manipulación</strong>) · conocer la <strong>normativa de protección ambiental y personal</strong> · <strong>adaptarse</strong> a nuevas situaciones."
+    ]
+   ]
+  }
+ ],
+ "glosario": [
+  [
+   "Accesibilidad universal",
+   "Que instalaciones, servicios y procedimientos puedan ser usados por todas las personas, incluidas las que tienen discapacidad"
+  ],
+  [
+   "Administración sanitaria estatal",
+   "Organismo del Estado (Ministerio de Sanidad) que regula la actividad profesional de estos técnicos"
+  ],
+  [
+   "Autoanalizador",
+   "Equipo automático que realiza análisis de muestras sin intervención manual en cada paso"
+  ],
+  [
+   "Automatización",
+   "Uso de máquinas para hacer tareas de forma automática, reduciendo errores y manipulación"
+  ],
+  [
+   "Bioinformática",
+   "Uso de la informática para analizar datos biológicos (por ejemplo, secuencias de ADN)"
+  ],
+  [
+   "Biología molecular",
+   "Estudio de las moléculas de la vida (ADN, ARN, proteínas) y sus técnicas de análisis"
+  ],
+  [
+   "Citodiagnóstico / citología",
+   "Estudio de las células para diagnosticar enfermedades"
+  ],
+  [
+   "Citogenética",
+   "Estudio de los cromosomas"
+  ],
+  [
+   "Citología ginecológica",
+   "Estudio de células del aparato genital femenino (p. ej., la del cuello del útero)"
+  ],
+  [
+   "Citotécnico",
+   "Técnico especializado en preparar y seleccionar citologías (puesto del TSAPC)"
+  ],
+  [
+   "Codificación",
+   "Asignar un código único a cada muestra para identificarla sin errores"
+  ],
+  [
+   "Coherencia",
+   "Que los resultados tengan sentido y encajen entre sí y con el paciente"
+  ],
+  [
+   "Competencia general",
+   "Resumen de lo que un título capacita para hacer"
+  ],
+  [
+   "Conservación de muestras",
+   "Mantener la muestra en condiciones adecuadas (temperatura, tiempo…) para que no se altere"
+  ],
+  [
+   "Delegado comercial",
+   "Persona que vende y asesora sobre productos hospitalarios y farmacéuticos (puesto del TSLCB)"
+  ],
+  [
+   "Determinación analítica",
+   "Medición concreta que se hace sobre una muestra (glucosa, hemograma…)"
+  ],
+  [
+   "Disección",
+   "Cortar y separar tejidos u órganos para estudiarlos"
+  ],
+  [
+   "Distribución de muestras",
+   "Enviar cada muestra a la sección o equipo que corresponde según lo solicitado"
+  ],
+  [
+   "Existencias",
+   "Material almacenado en el laboratorio (reactivos, fungibles…)"
+  ],
+  [
+   "Extensión",
+   "Repartir una muestra en capa fina sobre un portaobjetos para verla al microscopio"
+  ],
+  [
+   "Fase post analítica",
+   "Lo que ocurre después del análisis: revisión, tratamiento de datos e informe de resultados"
+  ],
+  [
+   "Fase preanalítica / pretratamiento",
+   "Lo que se hace a la muestra antes de analizarla (preparación, centrifugado, etc.)"
+  ],
+  [
+   "Fiabilidad",
+   "Que el resultado sea correcto y se pueda confiar en él"
+  ],
+  [
+   "Fisiopatología",
+   "Estudio de cómo funciona el organismo cuando está enfermo"
+  ],
+  [
+   "Forense",
+   "Médico que estudia cadáveres para fines legales (el técnico puede ser su ayudante)"
+  ],
+  [
+   "Formación continua",
+   "Seguir formándose durante toda la vida profesional"
+  ],
+  [
+   "Gestión de calidad",
+   "Conjunto de procedimientos para asegurar y mejorar la calidad del trabajo"
+  ],
+  [
+   "Hemoderivados",
+   "Productos obtenidos de la sangre (plasma, plaquetas, factores de coagulación…)"
+  ],
+  [
+   "Histología / muestra histológica",
+   "Estudio de los tejidos / muestra de tejido"
+  ],
+  [
+   "Informe verídico",
+   "Informe de resultados fiel a la realidad, sin errores"
+  ],
+  [
+   "Inmunohistoquímica",
+   "Técnica que usa anticuerpos para detectar sustancias concretas en los tejidos"
+  ],
+  [
+   "Inyector automático",
+   "Equipo que introduce muestras de forma automática en un analizador"
+  ],
+  [
+   "Marcapasos",
+   "Aparato implantado que regula el ritmo del corazón; debe extraerse del cadáver en el sector funerario"
+  ],
+  [
+   "Necropsia / autopsia",
+   "Estudio del cadáver; clínica (causa médica de la muerte) o médico-legal/forense (fines judiciales)"
+  ],
+  [
+   "Obtención de muestras",
+   "Extraer la muestra del paciente; la hacen otros profesionales, no el técnico"
+  ],
+  [
+   "Patólogo",
+   "Médico especialista en anatomía patológica; supervisa al TSAPC"
+  ],
+  [
+   "Patrón control",
+   "Referencia \"normal\" con la que se compara un resultado"
+  ],
+  [
+   "PNT",
+   "Procedimiento Normalizado de Trabajo: protocolo escrito y estandarizado de cómo hacer cada técnica"
+  ],
+  [
+   "Prevención de riesgos laborales (PRL)",
+   "Medidas para evitar accidentes y enfermedades en el trabajo"
+  ],
+  [
+   "Prosector",
+   "Persona que prepara y realiza la disección del cadáver en las autopsias"
+  ],
+  [
+   "Protocolo de unidad",
+   "Normas propias de cada servicio sobre cómo hacer las cosas"
+  ],
+  [
+   "Recepción de muestras",
+   "Recibir, comprobar e identificar las muestras que llegan al laboratorio"
+  ],
+  [
+   "Reproducibilidad",
+   "Que al repetir el análisis se obtenga el mismo resultado"
+  ],
+  [
+   "Robótica",
+   "Uso de robots para procesar muestras de forma automática"
+  ],
+  [
+   "Tanatopractor",
+   "Técnico que prepara y conserva el cadáver (higiene, estética, conservación)"
+  ],
+  [
+   "TIC",
+   "Tecnologías de la Información y la Comunicación"
+  ],
+  [
+   "Titulado universitario",
+   "Profesional con carrera universitaria (médico, biólogo…) que supervisa al técnico"
+  ],
+  [
+   "Toxicología",
+   "Estudio de los tóxicos y venenos (el TSLCB puede ser ayudante técnico de toxicología)"
+  ],
+  [
+   "Trazabilidad",
+   "Poder seguir el recorrido completo de una muestra, desde la solicitud hasta el informe, sin perderla"
+  ],
+  [
+   "TSAPC",
+   "Técnico Superior en Anatomía Patológica y Citodiagnóstico"
+  ],
+  [
+   "TSLCB",
+   "Técnico Superior en Laboratorio Clínico y Biomédico"
+  ],
+  [
+   "Variabilidad de resultados",
+   "Diferencias en los resultados causadas por errores en la extracción, transporte, conservación o análisis"
+  ]
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "x1",
+   "html": "<section class=\"xs\" id=\"x1\"><h2 class=\"xs-h\">🎯 Lo que más probablemente caerá (según los colores)</h2><ol>\n<li>Funciones del TSLCB vs TSAPC (\"<strong>de ayuda</strong>\"), siempre bajo el <strong>titulado universitario</strong>.</li>\n<li>Los <strong>5 soportes</strong> de los resultados (prevención, diagnóstico, control de evolución, tratamiento, investigación).</li>\n<li>Funciones profesionales: <strong>recepción</strong> (la <strong>obtención no la hace el técnico</strong>), distribución, conservación, <strong>pretratamiento</strong>, <strong>PNT</strong>, <strong>trazabilidad</strong>.</li>\n<li>Para adaptarse: <strong>actualizado, formación continua, TIC</strong> (rojo).</li>\n<li>Sectores y <strong>regulación por la administración sanitaria estatal</strong> (rojo) + puestos de cada título.</li>\n<li><strong>Calidad</strong> (rojo): revisar protocolos <strong>desde la preparación del paciente hasta el informe</strong>.</li>\n<li>Objetivos: post analítica (6), específicos <strong>TEDED</strong>, desarrollo personal (8).</li>\n</ol></section>",
+   "opcion": "🎯 Lo que más probablemente caerá (según los colores)",
+   "indice": "🎯 Lo que más probablemente caerá (según los colores)"
+  },
+  {
+   "id": "chequeo",
+   "titulo": "Chequeo final (contesta sin mirar)",
+   "opcion": "Chequeo final (contesta sin mirar)",
+   "indice": "Chequeo final (contesta sin mirar)"
+  },
+  {
+   "id": "impres",
+   "intro": "<p class=\"meta\">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><p><strong>Clave del tema:</strong> se comparan 2 títulos. <strong>TSLCB</strong> = Laboratorio Clínico y Biomédico. <strong>TSAPC</strong> = Anatomía Patológica y Citodiagnóstico (el tuyo).</p>",
+   "fin": "<p><strong>¿Qué hace falta para adaptarse? (ROJO)</strong> → <strong>Mantenerse actualizado · formación continua · uso de las TIC.</strong></p><details class=\"pq\"><summary>¿Qué hace falta para resolver problemas?</summary><div class=\"pa\"><p><strong>Iniciativa y autonomía.</strong></p></div></details><details class=\"pq\"><summary>¿Funciones sociales clave?</summary><div class=\"pa\"><p><strong>Organizar y coordinar equipos</strong> · uso eficiente de recursos · <strong>responsabilidad</strong> · <strong>liderazgo</strong> · resolver <strong>conflictos</strong> · <strong>comunicar</strong> · respetar opiniones · <strong>entornos seguros</strong> · <strong>supervisar y aplicar PRL, calidad y accesibilidad universal</strong> · <strong>principios éticos</strong> · participar en la vida social, económica y cultural.</p></div></details><h3 class='ih'>4 · Dónde trabaja y quién lo regula</h3><p><strong>¿Quién regula la actividad? (ROJO)</strong> → <strong>La administración sanitaria estatal</strong> (los dos títulos).</p><details class=\"pq\"><summary>¿Sectores?</summary><div class=\"pa\"><p><strong>Ámbito público · empresas privadas (farmacéuticas/biotecnológicas) · laboratorio de análisis clínicos · servicio de tratamiento.</strong> Otros entornos: <strong>gestión e investigación</strong>.</p></div></details><details class=\"pq\"><summary>¿Qué sector tiene solo el TSAPC?</summary><div class=\"pa\"><p><strong>Sector sanitario: atención primaria y especializada.</strong></p></div></details><details class=\"pq\"><summary>¿Puestos propios del TSLCB?</summary><div class=\"pa\"><p><strong>TS en laboratorio de diagnóstico clínico · técnico especialista en laboratorio · ayudante en investigación y experimentación · ayudante de toxicología · delegado comercial.</strong></p></div></details><details class=\"pq\"><summary>¿Puestos propios del TSAPC?</summary><div class=\"pa\"><p><strong>TS y técnico especialista en anatomía patológica y citología · citotécnico · ayudante de forense · prosector de autopsias · tanatopractor · colaborador en biología molecular · colaborador de investigación.</strong></p></div></details><h3 class='ih'>5 · Ambiente, avances y calidad</h3><details class=\"pq\"><summary>¿Cómo es el ambiente profesional?</summary><div class=\"pa\"><p>Laboratorio con <strong>responsabilidad grande, esfuerzo y trabajo</strong>. Se piden <strong>profesionales versátiles</strong>.</p></div></details><details class=\"pq\"><summary>¿Su labor es solo repetir ensayos?</summary><div class=\"pa\"><p><strong>No.</strong> Debe <strong>adaptarse a la rapidez del avance de nuevas técnicas</strong> y proponer otras con <strong>constante formación</strong> (ROJO).</p></div></details><p><strong>¿Qué avances tecnológicos hay? (ROJO)</strong> → <strong>Automatización, robótica, autoanalizadores, inyectores automáticos.</strong> Exigen estar formado en <strong>programas informáticos</strong>: manejarlos, actualizarlos, resolver incidencias y conocer la <strong>digitalización de imágenes</strong>.</p><details class=\"pq\"><summary>¿Qué disciplinas tienen entidad propia?</summary><div class=\"pa\"><p><strong>Biología molecular, citogenética y bioinformática.</strong></p></div></details><details class=\"pq\"><summary>¿Qué aporta la robótica en anatomía patológica?</summary><div class=\"pa\"><p><strong>Diagnósticos con fluidez.</strong></p></div></details><p><strong>¿Qué exige la calidad? (ROJO)</strong> → <strong>Revisar los protocolos desde la preparación del paciente hasta el envío del informe</strong>, que el técnico sea <strong>autosuficiente</strong>, y conocer mejoras en <strong>riesgos laborales y medioambientales</strong>.</p><details class=\"pq\"><summary>¿Qué extrae del cadáver en el sector funerario?</summary><div class=\"pa\"><p><strong>Tejidos, prótesis, marcapasos y otros contaminantes.</strong></p></div></details><h3 class='ih'>6 · Objetivos</h3><details class=\"pq\"><summary>¿Variables que influyen en la variabilidad de resultados?</summary><div class=\"pa\"><p><strong>Extracción, transporte, conservación y análisis.</strong></p></div></details><details class=\"pq\"><summary>¿Objetivos de la fase post analítica (6)?</summary><div class=\"pa\"><p>Aplicar protocolos · supervisar calidad · <strong>tratamiento de datos (estadística)</strong> · programas informáticos · <strong>informe verídico</strong> · <strong>aceptar los riesgos y la posibilidad de error</strong>.</p></div></details><details class=\"pq\"><summary>¿Objetivos específicos de análisis del TSAPC?</summary><div class=\"pa\"><p><strong>Tinción, extensión, disección, extracción y detección</strong> (truco <strong>TEDED</strong>).</p></div></details><details class=\"pq\"><summary>¿Liderazgo y motivación sirven para…?</summary><div class=\"pa\"><p><strong>Liderazgo → coordinación</strong> de equipos. <strong>Motivación → organización</strong> de equipos.</p></div></details><details class=\"pq\"><summary>¿Qué exige gestionar la documentación de las muestras?</summary><div class=\"pa\"><p><strong>Codificación y registro sin perder la trazabilidad.</strong></p></div></details><h3 class='ih'>Las 10 que no puedes fallar</h3><ol>\n<li>TSAPC = funciones <strong>de ayuda</strong>; los dos, bajo el <strong>titulado universitario</strong>.</li>\n<li>Fiabilidad, reproducibilidad y calidad.</li>\n<li>La obtención de la muestra <strong>no</strong> la hace el técnico.</li>\n<li><strong>PNT</strong> y <strong>trazabilidad</strong>.</li>\n<li>Adaptarse = <strong>actualizado + formación continua + TIC</strong>.</li>\n<li>Regulado por la <strong>administración sanitaria estatal</strong>.</li>\n<li>Solo TSAPC: <strong>atención primaria y especializada</strong>; citotécnico, forense, prosector, tanatopractor.</li>\n<li>Solo TSLCB: <strong>toxicología</strong> y <strong>delegado comercial</strong>.</li>\n<li>Calidad: <strong>desde la preparación del paciente hasta el informe</strong>.</li>\n<li><strong>TEDED</strong> + post analítica (aceptar riesgos y error).</li>\n</ol>",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "opcion": "📖 Glosario (palabras importantes, por orden alfabético)",
+   "indice": "📖 Glosario (palabras importantes, por orden alfabético)"
+  }
+ ]
+}

@@ -1,0 +1,674 @@
+{
+ "unidad": "ingles1",
+ "titulo": "Inglés 1 · Verbs and Present",
+ "eyebrow": "🇬🇧 Inglés · 1er examen",
+ "h1": "Repaso completo: verbos y los 4 presentes",
+ "sub": "Unit 1 (verbos regulares e irregulares) + Unit 2 (presentes) · 5 bloques · 26 conceptos",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene las mismas partes:</b> 📍 de dónde sale · 📘 qué significa cada palabra · 📋 lo que dice la profe · 💡 entiéndelo · 🧠 truco · ❓ ponte a prueba (si te sale, marca <b>Lo domino</b>).</p>\n<p><b>Colores:</b> 🔴 lo que la profe destacó (★ en el repaso original) · 🟠 el resto.</p><p><b>Botones:</b> ☰ <b>Índice</b> (abajo a la izquierda) · 💡 <b>Tapar</b> (tapa las respuestas) · 🃏 <b>Tarjetas</b> · 🔎 <b>Buscar</b> · <b>Ponte a prueba</b> · 📅 <b>Mi plan</b>.</p></div>",
+ "clave": "ing1-repaso-v1",
+ "examen": {
+  "em": "🇬🇧",
+  "asig": "Inglés",
+  "examen": "1er examen",
+  "fecha": "2026-10-23",
+  "id": "ing1"
+ },
+ "simulacro": "ingles1/simulacro/",
+ "tipografia": "DM+Serif+Display",
+ "buscar": [
+  [
+   "#hoja",
+   "20 preguntas de la hoja"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "etiquetas": {
+  "facil": "💡 Qué significa"
+ },
+ "bloques": [
+  {
+   "titulo": "Unit 1: Regular and Irregular Verbs",
+   "conceptos": [
+    {
+     "titulo": "Índice del curso",
+     "lv": 2,
+     "fuente": "U1, diapositiva 1; U2, diapositiva 1",
+     "prof": "<p>el curso tiene 9 unidades: <strong>1</strong> Regular and Irregular Verbs · <strong>2</strong> Present · <strong>3</strong> Modal Verbs · <strong>4</strong> Comparative and Superlative · <strong>5</strong> Past · <strong>6</strong> Future · <strong>7</strong> Conditionals · <strong>8</strong> Relative Clauses · <strong>9</strong> Passive Voice. En este examen entran la <strong>1</strong> y la <strong>2</strong>.</p>",
+     "entiende": "la Unidad 1 (verbos) es la base de todo: sin el <strong>participio</strong> no puedes formar el <em>Present Perfect</em> de la Unidad 2.",
+     "q": "Explica sin mirar: Índice del curso.",
+     "n": 1
+    },
+    {
+     "titulo": "Verbos regulares",
+     "lv": 1,
+     "fuente": "U1, diapositiva 3",
+     "defs": [
+      {
+       "t": "Infinitivo",
+       "facil": "La forma básica del verbo, la del diccionario (<em>work</em>, trabajar). <strong>Pasado (past simple):</strong> la forma para acciones terminadas (<em>worked</em>, trabajé). <strong>Participio (past participle):</strong> la forma que va con <em>have</em> en el <em>Present Perfect</em> (<em>worked</em>, trabajado). <strong>Persona:</strong> quién hace la acción (I, you, he, she, it, we, they)."
+      }
+     ],
+     "prof": "<p>un verbo es <strong>regular</strong> cuando forma el <strong>pasado</strong> y el <strong>participio</strong> de la misma manera: <strong>añadiendo \"-ed\" al infinitivo</strong>. La forma es <strong>idéntica para todas las personas</strong>.</p>\n<ul>\n<li><em>work &gt; worked &gt; worked</em> · <em>play &gt; played &gt; played</em></li>\n</ul>",
+     "entiende": "en los regulares, <strong>pasado = participio</strong> y los dos terminan en <em>-ed</em>. Y no cambian con la persona: <em>I worked, she worked, they worked</em>.",
+     "truco": "<strong>regular = \"-ed\" para todo y para todos</strong>.",
+     "q": "¿Qué es un verbo regular? Di las tres formas de \"play\" y de \"work\".",
+     "n": 2
+    },
+    {
+     "titulo": "Ortografía del \"-ed\"",
+     "lv": 1,
+     "fuente": "U1, diapositiva 4",
+     "defs": [
+      {
+       "t": "Consonante",
+       "facil": "Letra que no es vocal (b, c, d, f…). <strong>Vocal:</strong> a, e, i, o, u. <strong>Sílaba acentuada / tónica:</strong> la que suena más fuerte al decir la palabra (pre-<strong>FER</strong>). <strong>Átona:</strong> la que suena débil (<strong>VI</strong>-sit: el golpe va en <em>vi</em>, así que <em>-sit</em> es átona)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Caso</th>\n<th>Regla</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Acaba en <strong>-e</strong></td>\n<td>Solo se añade <strong>-d</strong></td>\n<td>change &gt; chang<strong>ed</strong> · believe &gt; believ<strong>ed</strong></td>\n</tr>\n<tr>\n<td><strong>Consonante + y</strong></td>\n<td>La <strong>y</strong> pasa a <strong>i + -ed</strong></td>\n<td>study &gt; stud<strong>ied</strong> · try &gt; tr<strong>ied</strong></td>\n</tr>\n<tr>\n<td><strong>Vocal + y</strong></td>\n<td>Se <strong>mantiene</strong> la <strong>y</strong> + -ed</td>\n<td>play &gt; play<strong>ed</strong> · enjoy &gt; enjoy<strong>ed</strong></td>\n</tr>\n<tr>\n<td><strong>Consonante + vocal + consonante</strong>, con la <strong>última sílaba acentuada</strong></td>\n<td>Se <strong>dobla</strong> la consonante final</td>\n<td>stop &gt; sto<strong>pp</strong>ed · prefer &gt; prefe<strong>rr</strong>ed · plan &gt; pla<strong>nn</strong>ed</td>\n</tr>\n</tbody>\n</table></div>\n<p>🟥 <strong>Pero: visit &gt; visited · open &gt; opened</strong> (la última sílaba es <strong>átona</strong>, no lleva el acento → <strong>no se dobla</strong>).</p>",
+     "entiende": "<em>prefer</em> se pronuncia pre-<strong>FER</strong> (fuerza al final) → <em>preferred</em>. <em>Visit</em> se pronuncia <strong>VI</strong>-sit (fuerza al principio) → <em>visited</em>, sin doblar. Los verbos de una sílaba (<em>stop, plan</em>) siempre llevan la fuerza en esa sílaba → se dobla.",
+     "truco": "<strong>\"C-V-C con golpe al final → dobla\"</strong>. Y <strong>\"la y se queda si tiene una vocal delante\"</strong> (pl<strong>ay</strong>, enj<strong>oy</strong>); si tiene consonante, se va (st<strong>udy</strong> → studied).",
+     "q": "Escribe el pasado de: change, cry, stay, stop, prefer, open, visit, plan.",
+     "n": 3
+    },
+    {
+     "titulo": "Pronunciación del \"-ed\"",
+     "lv": 1,
+     "fuente": "U1, diapositiva 5",
+     "defs": [
+      {
+       "t": "Sonido sonoro",
+       "facil": "Al decirlo, la garganta <strong>vibra</strong> (pon la mano en el cuello y di \"mmm\": vibra). <strong>Sonido sordo:</strong> la garganta <strong>no vibra</strong> (di \"sss\": no vibra). <strong>Sílaba:</strong> cada golpe de voz de una palabra (<em>wait-ed</em> = 2 sílabas)."
+      }
+     ],
+     "prof": "<p>la terminación <strong>-ed</strong> se pronuncia de <strong>tres formas</strong> según el <strong>sonido final</strong> del infinitivo:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Se pronuncia</th>\n<th>Cuándo</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>/d/</strong></td>\n<td>Tras <strong>sonido sonoro</strong>: b, g, l, m, n, v, z, r o vocal</td>\n<td>cleaned [klind] · yelled [jeld] · played [pleid]</td>\n</tr>\n<tr>\n<td><strong>/t/</strong></td>\n<td>Tras <strong>sonido sordo</strong>: p, f, k, s, sh, ch</td>\n<td>looked [lukt] · kissed [kist] · washed [wɒʃt]</td>\n</tr>\n<tr>\n<td><strong>/ɪd/</strong></td>\n<td>Tras los sonidos <strong>d</strong> o <strong>t</strong></td>\n<td>ended [endid] · waited [weitid] · decided [disaidid]</td>\n</tr>\n</tbody>\n</table></div>\n<p>🟥 <strong>Truco de la profe: solo se añade una sílaba extra cuando el verbo ya acaba en \"d\" o \"t\".</strong></p>",
+     "entiende": "<em>looked</em> se dice \"lukt\" (<strong>una sílaba</strong>), no \"lu-ked\". Solo <em>wait-ed</em>, <em>end-ed</em>, <em>de-ci-ded</em> ganan una sílaba, porque no se pueden decir dos \"t\" o dos \"d\" seguidas.",
+     "truco": "<strong>\"Si acaba en T o D → /ɪd/ (una sílaba más). Si no, la -ed casi no se oye\"</strong>: /t/ tras sonidos \"de soplar\" (p, f, k, s, sh, ch) y /d/ tras el resto.",
+     "q": "¿Cómo se pronuncia la -ed de wanted, watched y lived? ¿Cuál tiene una sílaba más?",
+     "n": 4
+    },
+    {
+     "titulo": "Verbos irregulares",
+     "lv": 1,
+     "fuente": "U1, diapositiva 6",
+     "defs": [
+      {
+       "t": "Past participle",
+       "facil": "El participio, la 3ª columna de la lista (<em>gone, written</em>). <strong>Patrón:</strong> forma que se repite en varios verbos."
+      }
+     ],
+     "prof": "<p>son los verbos que <strong>no siguen la regla del \"-ed\"</strong>. Cada uno tiene su <strong>propia forma de pasado y de participio</strong> y hay que aprenderlas. <strong>No hay reglas fijas, pero sí patrones</strong> que facilitan mucho el estudio. Orden: <strong>infinitivo &gt; past &gt; past participle</strong>.</p>",
+     "truco": "recítalos <strong>siempre en el mismo orden y en voz alta</strong>, como una canción: <em>go – went – gone</em>.",
+     "q": "¿Qué es un verbo irregular? Di las 3 formas de go, write y be.",
+     "n": 5
+    },
+    {
+     "titulo": "Estrategia: aprenderlos por patrones",
+     "lv": 1,
+     "fuente": "U1, diapositiva 7",
+     "prof": "<p>en lugar de memorizar una lista larga, <strong>agrupa los verbos por patrón</strong>:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Patrón</th>\n<th>Ejemplos de la profe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Las tres formas iguales</strong> (A-A-A)</td>\n<td>cut &gt; cut &gt; cut · put &gt; put &gt; put · hit &gt; hit &gt; hit · cost &gt; cost &gt; cost · let &gt; let &gt; let · shut &gt; shut &gt; shut</td>\n</tr>\n<tr>\n<td><strong>2. Pasado y participio iguales</strong> (A-B-B)</td>\n<td>buy &gt; bought &gt; bought · teach &gt; taught &gt; taught · find &gt; found &gt; found</td>\n</tr>\n<tr>\n<td><strong>3. Las tres formas distintas</strong> (A-B-C)</td>\n<td>sing &gt; sang &gt; sung · drive &gt; drove &gt; driven · write &gt; wrote &gt; written</td>\n</tr>\n<tr>\n<td><strong>4. Infinitivo y participio iguales</strong> (A-B-A)</td>\n<td>come &gt; came &gt; come · run &gt; ran &gt; run · become &gt; became &gt; become</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "el <strong>grupo 2 (A-B-B)</strong> es el más grande: si aprendes el pasado, ya tienes el participio. El <strong>grupo 1 (A-A-A)</strong> es el más fácil: no cambia nada. El <strong>grupo 3</strong> es el difícil: tres formas distintas. En el <strong>anexo</strong> tienes <strong>los 198 verbos de la lista de la profe ordenados por estos patrones</strong>.",
+     "q": "¿Cuáles son los 4 patrones de los verbos irregulares? Pon 2 ejemplos de cada uno.",
+     "extra": [
+      {
+       "tras": "entiende",
+       "html": "<div class=\"box tip\"><p class=\"lbl\">🧠 Truco para recordarlo</p><p><strong>Trucos por grupo:</strong></p>\n<ul>\n<li><strong>A-A-A:</strong> casi todos son <strong>cortos y acaban en -t o -d</strong> (cut, put, hit, let, set, shut, hurt, cost, spread).</li>\n<li><strong>A-B-B:</strong> muchos acaban en <strong>-ought / -aught</strong> (bought, brought, thought, fought, caught, taught) o cambian a <strong>-t</strong> (keep &gt; kept, sleep &gt; slept, feel &gt; felt).</li>\n<li><strong>A-B-C:</strong> muchos tienen <strong>vocal i – a – u</strong> (sing–sang–sung, drink–drank–drunk, swim–swam–swum, begin–began–begun) o el participio en <strong>-en / -n</strong> (written, driven, taken, eaten, given, known).</li>\n<li><strong>A-B-A:</strong> solo hay <strong>4 muy comunes</strong>: <strong>come, become, run, overcome</strong>.</li>\n</ul></div>"
+      }
+     ],
+     "n": 6
+    },
+    {
+     "titulo": "Los verbos irregulares más comunes",
+     "lv": 1,
+     "fuente": "U1, diapositiva 8",
+     "prof": "<p><strong>Lo que dice la profe (los 30 que tienes que saber sí o sí):</strong></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Infinitivo</th>\n<th>Past</th>\n<th>Participle</th>\n<th>Significado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>be</td>\n<td>was / were</td>\n<td>been</td>\n<td>ser / estar</td>\n</tr>\n<tr>\n<td>have</td>\n<td>had</td>\n<td>had</td>\n<td>tener / haber</td>\n</tr>\n<tr>\n<td>do</td>\n<td>did</td>\n<td>done</td>\n<td>hacer</td>\n</tr>\n<tr>\n<td>go</td>\n<td>went</td>\n<td>gone</td>\n<td>ir</td>\n</tr>\n<tr>\n<td>make</td>\n<td>made</td>\n<td>made</td>\n<td>hacer / fabricar</td>\n</tr>\n<tr>\n<td>say</td>\n<td>said</td>\n<td>said</td>\n<td>decir</td>\n</tr>\n<tr>\n<td>get</td>\n<td>got</td>\n<td>got</td>\n<td>conseguir / llegar</td>\n</tr>\n<tr>\n<td>know</td>\n<td>knew</td>\n<td>known</td>\n<td>saber / conocer</td>\n</tr>\n<tr>\n<td>think</td>\n<td>thought</td>\n<td>thought</td>\n<td>pensar</td>\n</tr>\n<tr>\n<td>take</td>\n<td>took</td>\n<td>taken</td>\n<td>tomar / coger</td>\n</tr>\n<tr>\n<td>see</td>\n<td>saw</td>\n<td>seen</td>\n<td>ver</td>\n</tr>\n<tr>\n<td>come</td>\n<td>came</td>\n<td>come</td>\n<td>venir</td>\n</tr>\n<tr>\n<td>give</td>\n<td>gave</td>\n<td>given</td>\n<td>dar</td>\n</tr>\n<tr>\n<td>find</td>\n<td>found</td>\n<td>found</td>\n<td>encontrar</td>\n</tr>\n<tr>\n<td>tell</td>\n<td>told</td>\n<td>told</td>\n<td>contar / decir</td>\n</tr>\n<tr>\n<td>become</td>\n<td>became</td>\n<td>become</td>\n<td>llegar a ser</td>\n</tr>\n<tr>\n<td>leave</td>\n<td>left</td>\n<td>left</td>\n<td>dejar / irse</td>\n</tr>\n<tr>\n<td>feel</td>\n<td>felt</td>\n<td>felt</td>\n<td>sentir</td>\n</tr>\n<tr>\n<td>put</td>\n<td>put</td>\n<td>put</td>\n<td>poner</td>\n</tr>\n<tr>\n<td>bring</td>\n<td>brought</td>\n<td>brought</td>\n<td>traer</td>\n</tr>\n<tr>\n<td>begin</td>\n<td>began</td>\n<td>begun</td>\n<td>empezar</td>\n</tr>\n<tr>\n<td>keep</td>\n<td>kept</td>\n<td>kept</td>\n<td>guardar / mantener</td>\n</tr>\n<tr>\n<td>hold</td>\n<td>held</td>\n<td>held</td>\n<td>sostener</td>\n</tr>\n<tr>\n<td>write</td>\n<td>wrote</td>\n<td>written</td>\n<td>escribir</td>\n</tr>\n<tr>\n<td>stand</td>\n<td>stood</td>\n<td>stood</td>\n<td>estar de pie</td>\n</tr>\n<tr>\n<td>hear</td>\n<td>heard</td>\n<td>heard</td>\n<td>oír</td>\n</tr>\n<tr>\n<td>let</td>\n<td>let</td>\n<td>let</td>\n<td>dejar / permitir</td>\n</tr>\n<tr>\n<td>mean</td>\n<td>meant</td>\n<td>meant</td>\n<td>significar</td>\n</tr>\n<tr>\n<td>meet</td>\n<td>met</td>\n<td>met</td>\n<td>conocer / quedar</td>\n</tr>\n<tr>\n<td>run</td>\n<td>ran</td>\n<td>run</td>\n<td>correr</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "<strong>be</strong> es el único con <strong>dos pasados</strong>: <strong>was</strong> (I, he, she, it) y <strong>were</strong> (you, we, they).",
+     "truco": "divídelos en <strong>3 tandas de 10</strong> y repite cada tanda tapando las columnas 2 y 3 hasta decirla sin fallos.",
+     "q": "Di el pasado y el participio de: be, go, see, take, write, think, bring, begin, know, give.",
+     "n": 7
+    }
+   ],
+   "min": 40
+  },
+  {
+   "titulo": "Unit 2: Present Simple",
+   "conceptos": [
+    {
+     "titulo": "Present Simple: forma y significado",
+     "lv": 1,
+     "fuente": "U2, diapositiva 3; Infografía, página 1",
+     "defs": [
+      {
+       "t": "Infinitivo sin \"to\"",
+       "facil": "El verbo \"pelado\" (<em>work</em>, no <em>to work</em>). <strong>Tercera persona del singular:</strong> he (él), she (ella), it (ello, para cosas y animales)."
+      }
+     ],
+     "prof": "<p>se forma con el <strong>infinitivo sin \"to\"</strong> para <strong>I, you, we, they</strong>, y se añade <strong>\"-s\"</strong> en la <strong>tercera persona del singular (he, she, it)</strong>. Es el tiempo de <strong>lo habitual, lo permanente y lo que siempre es verdad</strong>.</p>\n<ul>\n<li><em>I work · She works</em></li>\n</ul>",
+     "truco": "<strong>\"He, She, It → la -s se lleva\"</strong>.",
+     "q": "¿Cómo se forma el Present Simple? Conjuga \"play\" con I, she, they.",
+     "n": 8
+    },
+    {
+     "titulo": "Present Simple: los 6 usos",
+     "lv": 1,
+     "fuente": "U2, diapositiva 4; Infografía, página 1",
+     "defs": [
+      {
+       "t": "Imperativo",
+       "facil": "La forma de dar órdenes (<em>Open!</em>, ¡Abre!). <strong>Horario / programación:</strong> algo fijado por un calendario oficial (trenes, películas, clases). <strong>Adverbio de frecuencia:</strong> palabra que dice <strong>cada cuánto</strong> pasa algo."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Uso</th>\n<th>Ejemplos de la profe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Hábitos y rutinas</strong></td>\n<td><em>I get up at seven every day.</em> · <em>She never drinks coffee.</em></td>\n</tr>\n<tr>\n<td><strong>2. Verdades generales y hechos</strong></td>\n<td><em>Water boils at 100 degrees.</em> · <em>My sister lives in Bilbao.</em></td>\n</tr>\n<tr>\n<td><strong>3. Horarios y programaciones</strong></td>\n<td><em>The train leaves at 10:00.</em> · <em>The film starts at eight.</em></td>\n</tr>\n<tr>\n<td><strong>4. Instrucciones e imperativo</strong></td>\n<td><em>Open the window, please.</em> · <em>Turn left at the corner.</em></td>\n</tr>\n<tr>\n<td><strong>5. Opiniones y gustos</strong></td>\n<td><em>I think it's a good idea.</em> · <em>They love Italian food.</em></td>\n</tr>\n<tr>\n<td><strong>6. Narraciones y resúmenes</strong></td>\n<td><em>The book tells the story of…</em> · <em>Then he opens the door and…</em></td>\n</tr>\n</tbody>\n</table></div>\n<p>Se usa mucho con <strong>adverbios de frecuencia</strong>: always · usually · often · sometimes · rarely · hardly ever · never.</p>",
+     "entiende": "aunque <em>The train leaves at 10:00</em> es futuro, va en <strong>presente simple</strong> porque es un <strong>horario fijo</strong>.",
+     "truco": "<strong>Truco de los 6 usos:</strong> <strong>\"Hábito, Verdad, Horario, Orden, Opinión, Historia\"</strong> → \"<strong>H</strong>oy <strong>V</strong>eo <strong>H</strong>oras <strong>O</strong>cupadas <strong>O</strong>tra <strong>H</strong>ora\".",
+     "q": "Di los 6 usos del Present Simple con un ejemplo de cada uno.",
+     "n": 9
+    },
+    {
+     "titulo": "Adverbios de frecuencia: dónde van",
+     "lv": 1,
+     "fuente": "U2, diapositiva 5; Infografía, página 1",
+     "defs": [
+      {
+       "t": "Verbo principal",
+       "facil": "El que lleva el significado (<em>eat, talk</em>). <strong>To be:</strong> ser/estar (am, is, are). <strong>Once / twice:</strong> una vez / dos veces."
+      }
+     ],
+     "prof": "<ul>\n<li>Van <strong>delante del verbo principal</strong>: <em>I </em><em>always</em><em> talk too much.</em> · <em>He </em><em>never</em><em> eats vegetables.</em></li>\n<li>Pero <strong>detrás del verbo \"to be\"</strong>: <em>I am </em><em>always</em><em> happy.</em> · <em>He is </em><em>often</em><em> sick.</em></li>\n<li>Escala: <strong>100 %</strong> always · usually · often · sometimes → <strong>0 %</strong> rarely · hardly ever · never.</li>\n<li>Las expresiones como <strong>every day, once a week, twice a month</strong> van <strong>al final</strong> de la frase.</li>\n</ul>",
+     "entiende": "<em>always, often, never</em> son <strong>palabras sueltas</strong> que se meten <strong>dentro</strong> de la frase; <em>every day, once a week</em> son <strong>expresiones de varias palabras</strong> que se ponen <strong>al final</strong>.",
+     "truco": "<strong>\"El adverbio se pone delante del verbo, pero al be le deja pasar primero\"</strong> (<em>I </em><em>am</em><em> always…</em>). Y la escala, de más a menos: <strong>\"Al-Us-Of-Som | Ra-Har-Nev\"</strong>.",
+     "q": "Ordena: (always / is / she / late) y (coffee / never / I / drink). ¿Dónde va \"every day\"?",
+     "n": 10
+    },
+    {
+     "titulo": "Present Simple: afirmativa, negativa y pregunta",
+     "lv": 1,
+     "fuente": "U2, diapositiva 6; Infografía, página 1",
+     "defs": [
+      {
+       "t": "Sujeto",
+       "facil": "Quién hace la acción (I, he, my sister…). <strong>Auxiliar:</strong> verbo de ayuda que sirve para negar o preguntar (<em>do / does</em>). <strong>Don't</strong> = do not"
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Afirmativa</th>\n<th>Negativa</th>\n<th>Pregunta</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sujeto + verbo</td>\n<td>Sujeto + <strong>don't / doesn't</strong> + verbo</td>\n<td><strong>Do / Does</strong> + sujeto + verbo + ?</td>\n</tr>\n<tr>\n<td>I talk</td>\n<td>I don't talk</td>\n<td>Do you talk?</td>\n</tr>\n<tr>\n<td>He eats</td>\n<td>He doesn't eat</td>\n<td>Does he eat?</td>\n</tr>\n<tr>\n<td>They learn</td>\n<td>They don't learn</td>\n<td>Do they learn?</td>\n</tr>\n</tbody>\n</table></div>\n<p>🟥 <strong>¡Atención! Si la frase lleva does o doesn't, el verbo principal pierde la \"-s\".</strong> <em>He doesn't play tennis.</em> · <em>Does he play tennis?</em> (nunca <em>He doesn't plays</em>).</p>",
+     "entiende": "la <strong>-s</strong> de he/she/it <strong>se pasa al auxiliar</strong>: <em>does</em> ya lleva la -s, así que el verbo vuelve a su forma básica. <strong>La -s solo puede ir en un sitio.</strong>",
+     "truco": "<strong>\"Una sola -s por frase\"</strong>: o en el verbo (<em>He plays</em>) o en el auxiliar (<em>He doe</em><em>s</em><em>n't play</em>). Nunca en los dos.",
+     "q": "Pon en negativa y en pregunta: \"She works on Saturdays\".",
+     "n": 11
+    },
+    {
+     "titulo": "La \"-s\" de la tercera persona",
+     "lv": 1,
+     "fuente": "U2, diapositiva 7; Infografía, página 1",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Caso</th>\n<th>Regla</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Regla general</strong></td>\n<td>Se añade <strong>-s</strong></td>\n<td>work &gt; works · live &gt; lives</td>\n</tr>\n<tr>\n<td>Acaba en <strong>s, ss, sh, ch, x, o</strong></td>\n<td>Se añade <strong>-es</strong></td>\n<td>watch &gt; watches · go &gt; goes · mix &gt; mixes</td>\n</tr>\n<tr>\n<td><strong>Consonante + y</strong></td>\n<td>La <strong>y</strong> pasa a <strong>-ies</strong></td>\n<td>study &gt; studies · fly &gt; flies</td>\n</tr>\n<tr>\n<td><strong>Vocal + y</strong></td>\n<td>Se mantiene la <strong>y</strong> + <strong>-s</strong></td>\n<td>play &gt; plays · enjoy &gt; enjoys</td>\n</tr>\n<tr>\n<td><strong>Irregulares</strong></td>\n<td><strong>Solo hay tres</strong></td>\n<td>have &gt; <strong>has</strong> · do &gt; <strong>does</strong> · be &gt; <strong>is</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p>🟥 <strong>Recuerda: la \"-s\" es solo para he, she, it.</strong> <em>She works.</em> · <em>We work.</em></p>",
+     "entiende": "se añade <strong>-es</strong> cuando con una sola -s no se podría pronunciar (<em>watchs</em> no se puede decir → <em>watches</em>).",
+     "truco": "las letras del <strong>-es</strong> → <strong>\"O-S-SS-SH-CH-X\"</strong> → \"<strong>O</strong>so, <strong>S</strong>í, <strong>S</strong>ss<strong>H</strong>h, <strong>CH</strong>ico e<strong>X</strong>tra\". Y la <strong>y</strong> igual que en el pasado: <strong>consonante + y → ies; vocal + y → ys</strong>.",
+     "q": "Escribe con \"she\": watch, go, study, play, have, fix, do, kiss.",
+     "n": 12
+    }
+   ],
+   "min": 25
+  },
+  {
+   "titulo": "Unit 2: Present Continuous",
+   "conceptos": [
+    {
+     "titulo": "Present Continuous: forma y significado",
+     "lv": 1,
+     "fuente": "U2, diapositiva 8; Infografía, página 1",
+     "defs": [
+      {
+       "t": "-ing",
+       "facil": "Terminación que equivale al gerundio español (-ando, -iendo: <em>working</em> = trabajando). <strong>Temporal:</strong> que dura un tiempo y luego acaba."
+      }
+     ],
+     "prof": "<p>se forma con el verbo <strong>to be (am / is / are)</strong> + el verbo principal acabado en <strong>\"-ing\"</strong>. Es el tiempo de <strong>lo que está pasando ahora</strong> o de <strong>lo temporal</strong>.</p>\n<ul>\n<li><em>I am working · They are studying</em></li>\n</ul>\n<p>🟥 <strong>Ojo (infografía): no te olvides del verbo to be</strong> → <del>She working</del> → <strong><em>She is working.</em></strong></p>",
+     "entiende": "es como el español <strong>\"estar + -ando\"</strong>: <em>I am working</em> = estoy trabajando. Igual que en español no dices \"yo trabajando\", en inglés <strong>siempre</strong> hace falta <em>am/is/are</em>.",
+     "truco": "<strong>I → am · he/she/it → is · you/we/they → are</strong>.",
+     "q": "¿Cómo se forma el Present Continuous? Traduce: \"Ella está leyendo\" y \"Están jugando\".",
+     "n": 13
+    },
+    {
+     "titulo": "Present Continuous: los 3 usos",
+     "lv": 1,
+     "fuente": "U2, diapositiva 9; Infografía, página 1",
+     "defs": [
+      {
+       "t": "Plan de futuro cerrado",
+       "facil": "Algo ya organizado, con hora o día y normalmente con otra persona (ya has quedado, ya tienes el billete). <strong>Waiter:</strong> camarero."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Uso</th>\n<th>Ejemplos de la profe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Acciones en este momento</strong></td>\n<td><em>She is watching TV now.</em> · <em>They are eating right now.</em></td>\n</tr>\n<tr>\n<td><strong>2. Situaciones temporales</strong></td>\n<td><em>I am living in Madrid this year.</em> · <em>He is working as a waiter.</em></td>\n</tr>\n<tr>\n<td><strong>3. Planes de futuro cerrados</strong></td>\n<td><em>We are meeting Ana at three.</em> · <em>I am flying to Rome on Friday.</em></td>\n</tr>\n</tbody>\n</table></div>\n<p>Se usa con <strong>expresiones de momento concreto</strong>: now · right now · at the moment · today · this week · at five o'clock. La infografía añade <strong>this year</strong> y <strong>Look! · Listen! · Be quiet!</strong>, que <strong>avisan de que algo pasa justo ahora</strong>: <em>Listen! Someone is singing.</em></p>",
+     "entiende": "<em>I am living in Madrid this year</em> = <strong>temporal</strong> (este año, luego me iré). <em>I live in Madrid</em> = <strong>permanente</strong>.",
+     "truco": "<strong>\"Ahora, Temporal, Agenda\"</strong> (los 3 usos): si lo puedes <strong>apuntar en la agenda</strong>, va en continuo.",
+     "q": "Di los 3 usos del Present Continuous con un ejemplo de cada uno. ¿Qué indican \"Look!\" y \"Listen!\"?",
+     "n": 14
+    },
+    {
+     "titulo": "Ortografía del \"-ing\"",
+     "lv": 1,
+     "fuente": "U2, diapositiva 10; Infografía, página 1",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Caso</th>\n<th>Regla</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Regla general</strong></td>\n<td>Se añade <strong>-ing</strong></td>\n<td>work &gt; working · play &gt; playing</td>\n</tr>\n<tr>\n<td>Acaba en <strong>-e</strong></td>\n<td><strong>Se pierde la \"e\"</strong></td>\n<td>write &gt; writing · make &gt; making</td>\n</tr>\n<tr>\n<td><strong>Consonante + vocal + consonante</strong></td>\n<td><strong>Se dobla</strong> la consonante final</td>\n<td>run &gt; running · sit &gt; sitting</td>\n</tr>\n<tr>\n<td>Acaba en <strong>-ie</strong></td>\n<td><strong>\"-ie\" pasa a \"-y\"</strong></td>\n<td>lie &gt; lying · die &gt; dying</td>\n</tr>\n<tr>\n<td>Acaba en <strong>-ee</strong></td>\n<td><strong>No cambian</strong></td>\n<td>see &gt; seeing · agree &gt; agreeing</td>\n</tr>\n<tr>\n<td>Acaba en <strong>-y</strong></td>\n<td><strong>Nunca cambian</strong></td>\n<td>study &gt; studying · enjoy &gt; enjoying</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "con <em>-ing</em> la <strong>y nunca se toca</strong> (<em>studying</em>), al revés que con la -s (<em>studies</em>) y el -ed (<em>studied</em>), porque \"studiing\" tendría dos \"i\" seguidas.",
+     "truco": "<strong>\"La e se va (write → writing), pero la doble ee se queda (see → seeing)\"</strong>. <strong>\"ie → y (lie → lying)\"</strong>. <strong>\"La y del -ing es intocable\"</strong>.",
+     "q": "Escribe en -ing: write, swim, lie, see, study, make, sit, die.",
+     "n": 15
+    },
+    {
+     "titulo": "Present Continuous: afirmativa, negativa y pregunta",
+     "lv": 1,
+     "fuente": "U2, diapositiva 11; Infografía, página 1",
+     "defs": [
+      {
+       "t": "Contracción",
+       "facil": "Unir dos palabras con un apóstrofo: <em>is not</em> → <em>isn't</em>, <em>are not</em> → <em>aren't</em>, <em>I am</em> → <em>I'm</em>. ⚠️ (<em>am not</em> no se contrae como \"amn't\": se dice <em>I'm not</em>)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Afirmativa</th>\n<th>Negativa</th>\n<th>Pregunta</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sujeto + am/is/are + verbo-ing</td>\n<td>Sujeto + am/is/are + <strong>not</strong> + verbo-ing</td>\n<td><strong>Am/Is/Are</strong> + sujeto + verbo-ing + ?</td>\n</tr>\n<tr>\n<td>I am working.</td>\n<td>I am not working.</td>\n<td>Am I working?</td>\n</tr>\n<tr>\n<td>She is reading.</td>\n<td>She isn't reading.</td>\n<td>Is she reading?</td>\n</tr>\n<tr>\n<td>They are playing.</td>\n<td>They aren't playing.</td>\n<td>Are they playing?</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "aquí <strong>no se usa do/does</strong>: el propio <em>am/is/are</em> sirve para negar (añadiendo <em>not</em>) y para preguntar (poniéndolo delante).",
+     "truco": "<strong>\"El be hace todo el trabajo\"</strong>: para preguntar, solo <strong>le das la vuelta</strong> (<em>She is → Is she?</em>).",
+     "q": "Pon en negativa y en pregunta: \"They are playing football\".",
+     "n": 16
+    },
+    {
+     "titulo": "¿Present Simple o Present Continuous?",
+     "lv": 1,
+     "fuente": "Infografía, página 1",
+     "prof": "<p><em>I </em><em>usually go</em><em> to school by bus… but today </em><em>I am walking</em><em>.</em> → <strong>Busca la pista: usually → Simple · today / now → Continuous.</strong></p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Present Simple</th>\n<th>Present Continuous</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Lo <strong>habitual</strong>, lo <strong>permanente</strong> y lo que <strong>siempre es verdad</strong></td>\n<td>Lo que <strong>está pasando ahora</strong> o es <strong>temporal</strong></td>\n</tr>\n<tr>\n<td>always, usually, often, sometimes, rarely, hardly ever, never, <strong>every day, once a week, twice a month, on Mondays</strong></td>\n<td>now, right now, at the moment, today, this week, this year, at five o'clock, Look!, Listen!, Be quiet!</td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "la misma persona puede usar los dos en la misma frase: lo <strong>normal</strong> (Simple) frente a lo de <strong>hoy</strong> (Continuous).",
+     "truco": "<strong>busca la palabra pista</strong> antes de mirar el verbo. Y ojo con los <strong>stative verbs</strong> (concepto 26): <em>know, like, love, want…</em> <strong>siempre en Simple</strong>, aunque diga <em>now</em>: <em>I </em><em>know</em><em> the answer now</em> (no <del>I am knowing</del>).",
+     "q": "Completa: \"My dad usually (drive) to work, but this week he (take) the bus.\"",
+     "n": 17
+    }
+   ],
+   "min": 25
+  },
+  {
+   "titulo": "Unit 2: Present Perfect Simple",
+   "conceptos": [
+    {
+     "titulo": "Present Perfect Simple: forma y significado",
+     "lv": 1,
+     "fuente": "U2, diapositiva 12; Infografía, página 2",
+     "defs": [
+      {
+       "t": "Have / has",
+       "facil": "Aquí no significa \"tener\"; es el auxiliar <strong>haber</strong> (<em>I have worked</em> = <strong>he</strong> trabajado). <strong>Has</strong> se usa con he, she, it."
+      }
+     ],
+     "prof": "<p>se forma con <strong>have / has + el participio</strong> del verbo principal. <strong>Conecta el pasado con el presente</strong>: la acción ocurrió antes, <strong>pero nos interesa ahora</strong>.</p>\n<ul>\n<li><em>I have worked · She has gone</em></li>\n<li><strong>Participio = 3ª columna</strong> (infografía): <em>go – went – </em><em>gone</em><strong> · <em>write – wrote – **written</em></strong> · <em>be – was – </em><em>been</em><strong> · regulares: <em>work → **worked</em></strong>.</li>\n</ul>",
+     "entiende": "aquí es donde la <strong>Unidad 1</strong> sirve: para este tiempo <strong>necesitas la 3ª columna</strong> de los irregulares.",
+     "truco": "<strong>have/has = \"he/ha\" en español</strong> → <em>I have eaten</em> = <strong>he</strong> comido · <em>She has gone</em> = <strong>ha</strong> ido.",
+     "q": "¿Cómo se forma el Present Perfect Simple? Traduce: \"He comido\", \"Ella ha escrito una carta\".",
+     "n": 18
+    },
+    {
+     "titulo": "Present Perfect Simple: los 3 usos",
+     "lv": 1,
+     "fuente": "U2, diapositiva 13; Infografía, página 2",
+     "defs": [
+      {
+       "t": "Pretérito perfecto",
+       "facil": "El tiempo español \"he + participio\" (he comido, ha llegado). <strong>Have been to:</strong> haber estado en un sitio (y haber vuelto)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Uso</th>\n<th>Ejemplos de la profe</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>1. Experiencias de la vida</strong> (sin decir cuándo)</td>\n<td><em>I have been to London.</em> · <em>She has never flown.</em></td>\n</tr>\n<tr>\n<td><strong>2. Resultado en el presente</strong> (lo que pasó se nota ahora)</td>\n<td><em>I have lost my keys.</em> · <em>He has broken his arm.</em></td>\n</tr>\n<tr>\n<td><strong>3. Acción que continúa</strong> (empezó antes y sigue)</td>\n<td><em>We have lived here for ten years.</em> · <em>I have known her since 2010.</em></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>En español se traduce casi siempre por el pretérito perfecto:</strong> he trabajado, ha ido, hemos vivido.</p>",
+     "entiende": "<em>I have lost my keys</em> → <strong>por eso ahora</strong> no puedo entrar en casa. <em>He has broken his arm</em> → <strong>por eso ahora</strong> lleva escayola. Si dices <strong>cuándo</strong> pasó (<em>yesterday, in 2019</em>), ya no es este tiempo: es el <strong>pasado</strong> (Unidad 5).",
+     "truco": "<strong>\"Experiencia, Efecto, Extensión\"</strong> (las 3 E): vida, resultado y lo que sigue.",
+     "q": "Di los 3 usos del Present Perfect Simple con un ejemplo de cada uno.",
+     "n": 19
+    },
+    {
+     "titulo": "Las palabras del Present Perfect: already, yet, just, ever, never, for, since",
+     "lv": 1,
+     "fuente": "U2, diapositiva 14; Infografía, página 2",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Palabra</th>\n<th>Significado</th>\n<th>Dónde va</th>\n<th>Ejemplo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>already</strong></td>\n<td>\"ya\"</td>\n<td><strong>Afirmativas</strong>, en medio</td>\n<td><em>I have </em><em>already</em><em> eaten.</em></td>\n</tr>\n<tr>\n<td><strong>yet</strong></td>\n<td>\"ya / todavía\"</td>\n<td><strong>Negativas y preguntas</strong>, <strong>al final</strong></td>\n<td><em>Have you finished </em><em>yet</em><em>?</em> · <em>I haven't finished </em><em>yet</em><em>.</em></td>\n</tr>\n<tr>\n<td><strong>just</strong></td>\n<td>\"acabar de\"</td>\n<td>En medio</td>\n<td><em>She has </em><em>just</em><em> arrived.</em> (= acaba de llegar)</td>\n</tr>\n<tr>\n<td><strong>ever / never</strong></td>\n<td>\"alguna vez\" / \"nunca\"</td>\n<td><em>ever</em> en <strong>preguntas</strong></td>\n<td><em>Have you </em><em>ever</em><em> tried sushi?</em></td>\n</tr>\n<tr>\n<td><strong>for</strong></td>\n<td>+ <strong>duración</strong> (cuánto tiempo)</td>\n<td></td>\n<td><em>for two years</em> · <em>for a week</em> · <em>for an hour</em></td>\n</tr>\n<tr>\n<td><strong>since</strong></td>\n<td>+ <strong>momento de inicio</strong> (desde cuándo)</td>\n<td></td>\n<td><em>since 2010</em> · <em>since Monday</em> · <em>since 9 o'clock</em></td>\n</tr>\n</tbody>\n</table></div>\n<p>La infografía añade <strong>three times</strong> (número de veces) y que <strong>for y since valen para los dos Perfect</strong>.</p>",
+     "entiende": "<em>already</em> y <em>yet</em> significan los dos \"ya\", pero <strong>already</strong> va en frases <strong>positivas</strong> y <strong>yet</strong> en <strong>negativas y preguntas</strong>, siempre al final.",
+     "q": "Completa con for o since: ___ three days, ___ last summer, ___ 2015, ___ an hour. Y con already o yet: \"I haven't done my homework ___\". \"She has ___ left.\"",
+     "extra": [
+      {
+       "tras": "entiende",
+       "html": "<div class=\"box tip\"><p class=\"lbl\">🧠 Truco para recordarlo</p><p><strong>Trucos:</strong></p>\n<ul>\n<li><strong>FOR = Fecha NO</strong> (un periodo: <em>for two years</em>) · <strong>SINCE = punto de inicio</strong> (<em>since 2010</em>). Pregúntate: ¿puedo decir \"<strong>durante</strong>\"? → <em>for</em>. ¿Puedo decir \"<strong>desde</strong>\"? → <em>since</em>.</li>\n<li><strong>\"Already en medio y en positivo; yet al final y en negativo o pregunta.\"</strong></li>\n<li><strong>Just = \"acabo de\"</strong>: <em>I have just eaten</em> = <strong>acabo de</strong> comer.</li>\n</ul></div>"
+      }
+     ],
+     "n": 20
+    },
+    {
+     "titulo": "Present Perfect Simple: afirmativa, negativa y pregunta",
+     "lv": 1,
+     "fuente": "U2, diapositiva 15; Infografía, página 2",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Afirmativa</th>\n<th>Negativa</th>\n<th>Pregunta</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sujeto + have/has + participio</td>\n<td>Sujeto + <strong>haven't/hasn't</strong> + participio</td>\n<td><strong>Have/Has</strong> + sujeto + participio + ?</td>\n</tr>\n<tr>\n<td>I have finished.</td>\n<td>I haven't finished.</td>\n<td>Have you finished?</td>\n</tr>\n<tr>\n<td>She has gone.</td>\n<td>She hasn't gone.</td>\n<td>Has she gone?</td>\n</tr>\n<tr>\n<td>They have already eaten.</td>\n<td>They haven't eaten yet.</td>\n<td>Have they eaten yet?</td>\n</tr>\n</tbody>\n</table></div>",
+     "truco": "<strong>\"El have hace todo el trabajo\"</strong>, igual que el <em>be</em> en el continuo: se niega con <em>not</em> y se pregunta poniéndolo delante.",
+     "q": "Pon en negativa (con yet) y en pregunta: \"They have eaten\".",
+     "n": 21
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "Unit 2: Present Perfect Continuous",
+   "conceptos": [
+    {
+     "titulo": "Present Perfect Continuous: forma y significado",
+     "lv": 1,
+     "fuente": "U2, diapositiva 16; Infografía, página 2",
+     "defs": [
+      {
+       "t": "Been",
+       "facil": "Participio de <em>be</em>. <strong>Duración:</strong> cuánto tiempo dura algo."
+      }
+     ],
+     "prof": "<p>se forma con <strong>have / has been + verbo acabado en \"-ing\"</strong>. <strong>Insiste en la duración</strong> de una acción que <strong>empezó en el pasado y sigue o acaba de terminar</strong>.</p>\n<ul>\n<li><em>I have been working · She has been running</em></li>\n</ul>\n<p><strong>Usos (infografía):</strong></p>\n<ul>\n<li><strong>Duración hasta ahora:</strong> <em>I have been waiting for an hour.</em></li>\n<li><strong>Acaba de parar y se nota:</strong> <em>She's tired: she has been running.</em></li>\n</ul>",
+     "entiende": "es <strong>\"llevar + tiempo + -ando\"</strong> del español: <em>I have been waiting for an hour</em> = <strong>llevo</strong> una hora <strong>esperando</strong>.",
+     "truco": "<strong>have/has + been + -ing = \"llevo … -ando\"</strong>. Fíjate en que <strong>been</strong> nunca cambia (no hay \"beens\" ni \"is been\").",
+     "q": "¿Cómo se forma el Present Perfect Continuous y qué expresa? Traduce: \"Llevo dos horas estudiando\".",
+     "n": 22
+    },
+    {
+     "titulo": "La trampa del español: \"Llevo dos horas esperando\"",
+     "lv": 1,
+     "fuente": "Infografía, página 2",
+     "prof": "<p>«Llevo dos horas esperando» → <del>I am waiting for two hours</del> → <strong><em>I have been waiting for two hours.</em></strong></p>",
+     "entiende": "en español usamos el <strong>presente</strong> (\"llevo\", \"hace dos horas que espero\"), pero en inglés, si la acción <strong>empezó en el pasado y sigue</strong>, va en <strong>Present Perfect</strong> (Continuous si importa la duración). Es uno de los errores más típicos de los hispanohablantes.",
+     "truco": "<strong>\"Si en español dices llevo… o hace… que…, en inglés va have been\"</strong>.",
+     "q": "Corrige: \"I am living here since 2018\" y \"She is studying English for three years\".",
+     "n": 23
+    },
+    {
+     "titulo": "Present Perfect Continuous: afirmativa, negativa y pregunta",
+     "lv": 1,
+     "fuente": "U2, diapositiva 17; Infografía, página 2",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Afirmativa</th>\n<th>Negativa</th>\n<th>Pregunta</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sujeto + have/has <strong>been</strong> + verbo-ing</td>\n<td>Sujeto + haven't/hasn't <strong>been</strong> + verbo-ing</td>\n<td><strong>Have/Has</strong> + sujeto + <strong>been</strong> + verbo-ing + ?</td>\n</tr>\n<tr>\n<td>I have been studying.</td>\n<td>I haven't been studying.</td>\n<td>Have you been studying?</td>\n</tr>\n<tr>\n<td>She has been running.</td>\n<td>She hasn't been running.</td>\n<td>Has she been running?</td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>Con for y since es muy frecuente:</strong> <em>I have been waiting for an hour.</em> Palabras pista (infografía): <strong>for · since · all day · all morning · How long…?</strong> → <em>How long…?</em> pregunta por la duración: <strong><em>How long have you been studying English?</em></strong></p>",
+     "truco": "<strong>\"How long…? → have been -ing\"</strong>.",
+     "q": "Haz la pregunta con \"How long\" para: \"She has been running for 40 minutes\".",
+     "n": 24
+    },
+    {
+     "titulo": "¿Present Perfect Simple o Continuous?",
+     "lv": 1,
+     "fuente": "U2, diapositiva 18; Infografía, página 2",
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Present Perfect Simple</th>\n<th>Present Perfect Continuous</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Interesa el resultado:</strong> qué se ha conseguido</td>\n<td><strong>Interesa la duración:</strong> cuánto tiempo llevo</td>\n</tr>\n<tr>\n<td><em>I have written three emails.</em> (importa <strong>cuántos</strong>, ya están hechos)</td>\n<td><em>I have been writing emails all morning.</em> (importa <strong>el tiempo</strong>, quizá sigo)</td>\n</tr>\n<tr>\n<td><em>She has painted the kitchen.</em> → <strong>ya está terminada</strong></td>\n<td><em>She has been painting the kitchen.</em> → <strong>por eso está manchada de pintura</strong></td>\n</tr>\n</tbody>\n</table></div>\n<p><strong>Infografía: con un número (three, two…) casi siempre va el Simple.</strong></p>",
+     "truco": "<strong>\"¿Cuántos? → Simple · ¿Cuánto tiempo? → Continuous\"</strong>. <strong>Número → Simple.</strong>",
+     "q": "Elige: \"I (read) three books this month\" / \"I (read) all afternoon\".",
+     "n": 25
+    },
+    {
+     "titulo": "Stative verbs: no admiten la forma continua",
+     "lv": 1,
+     "fuente": "U2, diapositiva 18 (en rojo)",
+     "tituloHtml": "Stative verbs: no admiten la forma continua <span class=\"note\">🟥</span>",
+     "defs": [
+      {
+       "t": "Stative verbs (verbos de estado)",
+       "facil": "Verbos que expresan un <strong>estado</strong> (lo que piensas, sientes, sabes o tienes), no una <strong>acción</strong>. ⚠️ Otros muy comunes (no salen en la diapositiva): <em>love, hate, want, need, believe, understand, remember, own, belong</em>."
+      }
+     ],
+     "prof": "<p>🟥 <strong>Los stative verbs (know, be, like…) no admiten la forma continua.</strong></p>\n<ul>\n<li><del>I have been knowing her for years</del> → <strong><em>I have known her for years.</em></strong> (ejemplo de la profe en la diap. 13: <em>I have known her since 2010</em>).</li>\n<li><del>I am liking this song</del> → <strong><em>I like this song.</em></strong></li>\n</ul>",
+     "entiende": "\"saber\" o \"gustar\" no son cosas que <strong>estés haciendo</strong> como correr; simplemente <strong>son así</strong>. Por eso no llevan -ing.",
+     "truco": "<strong>\"Si es de cabeza o de corazón (saber, creer, querer, gustar), no lleva -ing\"</strong>.",
+     "q": "Corrige: \"I am knowing the answer\" y \"She has been liking him for years\".",
+     "n": 26
+    }
+   ],
+   "min": 25
+  }
+ ],
+ "chequeo": [
+  "Las 3 formas de: be, go, write, take, see, bring, think, begin, come, run. (7)",
+  "Los 4 patrones de irregulares con 2 ejemplos cada uno. (6)",
+  "Pasado de: study, play, stop, prefer, visit, change. (3)",
+  "¿Cómo se pronuncia la -ed de wanted, looked, played? (4)",
+  "Con \"he\": watch, go, study, play, have, do. (12)",
+  "Los 6 usos del Present Simple. (9)",
+  "Coloca el adverbio: \"She (always) is late\" · \"I (never) eat meat\". (10)",
+  "En -ing: write, run, lie, see, study. (15)",
+  "Los 3 usos del Present Continuous. (14)",
+  "Los 3 usos del Present Perfect Simple. (19)",
+  "¿For o since?: three days, 2015, Monday, an hour. (20)",
+  "¿Already o yet?: \"Have you finished ___?\" \"I've ___ eaten.\" (20)",
+  "Traduce: \"Llevo una hora esperando\". (23)",
+  "¿Simple o Continuous?: \"I (write) three emails\" / \"I (write) emails all morning\". (25)",
+  "¿Por qué no se dice \"I am knowing\"? (26)"
+ ],
+ "glosario": [
+  [
+   "-ed",
+   "Terminación del pasado y del participio de los verbos regulares (<em>worked</em>)"
+  ],
+  [
+   "-ing",
+   "Terminación de los tiempos continuos; equivale a \"-ando / -iendo\" (<em>working</em>)"
+  ],
+  [
+   "A-A-A, A-B-B, A-B-C, A-B-A",
+   "Los 4 patrones de los verbos irregulares (qué formas se repiten)"
+  ],
+  [
+   "Adverbio de frecuencia",
+   "Palabra que dice cada cuánto pasa algo (<em>always, usually, often, sometimes, rarely, hardly ever, never</em>)"
+  ],
+  [
+   "Afirmativa",
+   "Frase que dice que algo sí pasa (<em>I work</em>)"
+  ],
+  [
+   "Already",
+   "\"Ya\", en frases afirmativas, en medio (<em>I have already eaten</em>)"
+  ],
+  [
+   "Átona (sílaba)",
+   "Sílaba que se pronuncia débil, sin el golpe de voz (<em>VI-sit</em>: <em>-sit</em> es átona)"
+  ],
+  [
+   "Auxiliar",
+   "Verbo de ayuda para negar, preguntar o formar tiempos (<em>do/does, am/is/are, have/has</em>)"
+  ],
+  [
+   "Consonante",
+   "Letra que no es vocal (b, c, d, f, g…)"
+  ],
+  [
+   "Contracción",
+   "Unión de dos palabras con apóstrofo (<em>don't, isn't, I've, she's</em>)"
+  ],
+  [
+   "Duración",
+   "Cuánto tiempo dura algo; la idea del <em>Present Perfect Continuous</em>"
+  ],
+  [
+   "Ever",
+   "\"Alguna vez\", en preguntas (<em>Have you ever tried sushi?</em>)"
+  ],
+  [
+   "For",
+   "+ duración, \"durante\" (<em>for two years</em>)"
+  ],
+  [
+   "Hardly ever",
+   "\"Casi nunca\""
+  ],
+  [
+   "How long…?",
+   "\"¿Cuánto tiempo…?\"; pregunta por la duración"
+  ],
+  [
+   "Imperativo",
+   "Forma para dar órdenes o instrucciones (<em>Open the window</em>)"
+  ],
+  [
+   "Infinitivo",
+   "Forma básica del verbo, la del diccionario (<em>work</em>, <em>go</em>)"
+  ],
+  [
+   "Interrogativa (pregunta)",
+   "Frase que pregunta (<em>Do you work?</em>)"
+  ],
+  [
+   "Just",
+   "\"Acabar de\" (<em>She has just arrived</em>)"
+  ],
+  [
+   "Negativa",
+   "Frase que dice que algo no pasa (<em>I don't work</em>)"
+  ],
+  [
+   "Never",
+   "\"Nunca\""
+  ],
+  [
+   "Participio (past participle)",
+   "3ª forma del verbo; va con <em>have/has</em> (<em>worked, gone, written</em>)"
+  ],
+  [
+   "Pasado (past simple)",
+   "2ª forma del verbo; para acciones terminadas (<em>worked, went</em>)"
+  ],
+  [
+   "Patrón",
+   "Forma que se repite en varios verbos y ayuda a memorizarlos"
+  ],
+  [
+   "Persona",
+   "Quién hace la acción (I, you, he, she, it, we, they)"
+  ],
+  [
+   "Plan de futuro cerrado",
+   "Algo ya organizado, con hora o día; va en <em>Present Continuous</em>"
+  ],
+  [
+   "Present Continuous",
+   "<em>am/is/are + -ing</em>: lo que pasa ahora o es temporal"
+  ],
+  [
+   "Present Perfect Continuous",
+   "<em>have/has been + -ing</em>: empezó antes y sigue; interesa la duración"
+  ],
+  [
+   "Present Perfect Simple",
+   "<em>have/has + participio</em>: pasado que importa ahora; interesa el resultado"
+  ],
+  [
+   "Present Simple",
+   "Verbo (+ -s con he/she/it): hábitos, lo permanente, verdades"
+  ],
+  [
+   "Pretérito perfecto",
+   "Tiempo español \"he + participio\" (he comido); equivale al <em>Present Perfect</em>"
+  ],
+  [
+   "Rarely",
+   "\"Raramente\""
+  ],
+  [
+   "Resultado",
+   "Lo conseguido; la idea del <em>Present Perfect Simple</em>"
+  ],
+  [
+   "Since",
+   "+ momento de inicio, \"desde\" (<em>since 2010</em>)"
+  ],
+  [
+   "Sílaba",
+   "Cada golpe de voz de una palabra (<em>wait-ed</em> tiene dos)"
+  ],
+  [
+   "Sílaba acentuada (tónica)",
+   "La que suena más fuerte (pre-<strong>FER</strong>)"
+  ],
+  [
+   "Sonido sonoro",
+   "Sonido que hace vibrar la garganta (b, g, l, m, n, v, z, r, vocales)"
+  ],
+  [
+   "Sonido sordo",
+   "Sonido que no hace vibrar la garganta (p, f, k, s, sh, ch)"
+  ],
+  [
+   "Stative verbs",
+   "Verbos de estado (<em>know, be, like…</em>) que no admiten la forma continua"
+  ],
+  [
+   "Sujeto",
+   "Quién hace la acción (<em>I, she, my sister</em>)"
+  ],
+  [
+   "Tercera persona del singular",
+   "He, she, it; la que lleva -s en el <em>Present Simple</em>"
+  ],
+  [
+   "To be",
+   "Ser / estar (<em>am, is, are</em>)"
+  ],
+  [
+   "Verbo irregular",
+   "Verbo que no forma el pasado y el participio con <em>-ed</em> (<em>go – went – gone</em>)"
+  ],
+  [
+   "Verbo principal",
+   "El que lleva el significado de la frase (<em>eat, work</em>)"
+  ],
+  [
+   "Verbo regular",
+   "Verbo que forma el pasado y el participio con <em>-ed</em> (<em>work – worked – worked</em>)"
+  ],
+  [
+   "Vocal",
+   "a, e, i, o, u"
+  ],
+  [
+   "Yet",
+   "\"Ya / todavía\", en negativas y preguntas, al final (<em>I haven't finished yet</em>)"
+  ]
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "x1",
+   "html": "<section class=\"xs\" id=\"x1\"><h2 class=\"xs-h\">📋 Tabla resumen de los 4 presentes</h2><div class=\"tw\"><table>\n<thead>\n<tr>\n<th></th>\n<th><strong>Present Simple</strong></th>\n<th><strong>Present Continuous</strong></th>\n<th><strong>Present Perfect Simple</strong></th>\n<th><strong>Present Perfect Continuous</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Idea</strong></td>\n<td>Hábito, permanente, siempre verdad</td>\n<td>Ahora, temporal, plan cerrado</td>\n<td>Pasado que importa ahora (<strong>resultado</strong>)</td>\n<td>Empezó antes y sigue (<strong>duración</strong>)</td>\n</tr>\n<tr>\n<td><strong>+</strong></td>\n<td>I work / She work<strong>s</strong></td>\n<td>I <strong>am</strong> working / She <strong>is</strong> working</td>\n<td>I <strong>have</strong> worked / She <strong>has</strong> gone</td>\n<td>I <strong>have been</strong> working / She <strong>has been</strong> running</td>\n</tr>\n<tr>\n<td><strong>–</strong></td>\n<td>I <strong>don't</strong> work / She <strong>doesn't</strong> work</td>\n<td>I'm <strong>not</strong> working / She <strong>isn't</strong> working</td>\n<td>I <strong>haven't</strong> worked / She <strong>hasn't</strong> gone</td>\n<td>I <strong>haven't been</strong> working</td>\n</tr>\n<tr>\n<td><strong>?</strong></td>\n<td><strong>Do</strong> you work? / <strong>Does</strong> she work?</td>\n<td><strong>Are</strong> you working? / <strong>Is</strong> she working?</td>\n<td><strong>Have</strong> you worked? / <strong>Has</strong> she gone?</td>\n<td><strong>Have</strong> you <strong>been</strong> working?</td>\n</tr>\n<tr>\n<td><strong>Pistas</strong></td>\n<td>always, usually, often, sometimes, rarely, hardly ever, never, every day, once a week, on Mondays</td>\n<td>now, right now, at the moment, today, this week, Look!, Listen!</td>\n<td>already, yet, just, ever, never, for, since, three times</td>\n<td>for, since, all day, all morning, How long…?</td>\n</tr>\n<tr>\n<td><strong>Español</strong></td>\n<td>trabajo</td>\n<td>estoy trabajando</td>\n<td>he trabajado</td>\n<td>llevo … trabajando</td>\n</tr>\n</tbody>\n</table></div>\n<p>🧠 <strong>Truco final:</strong> el auxiliar te dice el tiempo: <strong>do/does → Simple · am/is/are → Continuous · have/has → Perfect · have/has been → Perfect Continuous</strong>.</p></section>",
+   "opcion": "📋 Tabla resumen de los 4 presentes",
+   "indice": "📋 Tabla resumen de los 4 presentes"
+  },
+  {
+   "id": "trampas",
+   "html": "<section class=\"xs\" id=\"trampas\"><h2 class=\"xs-h\">⚠️ Trampas típicas del examen (y de los hispanohablantes)</h2><ol>\n<li>🟥 <del>He doesn't <strong>plays</strong></del> → <strong>He doesn't play.</strong> Con <em>does/doesn't</em> el verbo pierde la -s.</li>\n<li>🟥 <del>We <strong>works</strong></del> → <strong>We work.</strong> La -s es solo para he, she, it.</li>\n<li><del>She working</del> → <strong>She is working.</strong> En el continuo nunca falta <em>am/is/are</em>.</li>\n<li><del>I am waiting for two hours</del> → <strong>I have been waiting for two hours.</strong> \"Llevo… -ando\" = <em>have been -ing</em>.</li>\n<li><del>I live here since 2018</del> → <strong>I have lived here since 2018.</strong> Con <em>since/for</em> + \"hasta ahora\" → Perfect.</li>\n<li>🟥 <del>I am knowing / I have been liking</del> → <strong>I know / I have liked.</strong> Los <em>stative verbs</em> no van en continuo.</li>\n<li><del>for 2010 / since two years</del> → <strong>since 2010 / for two years.</strong> <em>For</em> = duración; <em>since</em> = punto de inicio.</li>\n<li><del>I have finished yesterday</del> → <strong>I finished yesterday.</strong> Si dices <strong>cuándo</strong> (yesterday, last week), no es <em>Present Perfect</em>.</li>\n<li><del>I have already not finished</del> → <strong>I haven't finished yet.</strong> <em>Already</em> en afirmativas; <em>yet</em> en negativas y preguntas, al final.</li>\n<li><del>I always am happy</del> → <strong>I am always happy.</strong> El adverbio va <strong>detrás</strong> de <em>be</em>.</li>\n<li><del>He every day plays</del> → <strong>He plays every day.</strong> <em>Every day, once a week…</em> van al final.</li>\n<li><del>studiing / lieing / writeing</del> → <strong>studying / lying / writing.</strong></li>\n<li><del>studys / plaies</del> → <strong>studies / plays.</strong> Consonante + y → ies; vocal + y → ys.</li>\n<li>🟥 <del>visitted / openned</del> → <strong>visited / opened.</strong> No se dobla si la última sílaba es átona.</li>\n<li><del>I have wrote / I have went</del> → <strong>I have written / I have gone.</strong> Con <em>have/has</em> va la <strong>3ª columna</strong> (participio), no la 2ª.</li>\n<li>🟥 <del>look-ed (dos sílabas)</del> → <strong>lookt</strong> (una sílaba). Solo hay sílaba extra tras <strong>d</strong> o <strong>t</strong> (<em>wait-ed</em>, <em>end-ed</em>).</li>\n<li><strong>Número → Present Perfect Simple:</strong> <em>I have written </em><em>three</em><em> emails</em> (no <em>have been writing three emails</em>).</li>\n<li><strong>Horarios → Present Simple</strong> aunque sean futuro: <em>The train </em><em>leaves</em><em> at 10:00.</em></li>\n</ol></section>",
+   "opcion": "⚠️ Trampas típicas del examen (y de los hispanohablantes)",
+   "indice": "⚠️ Trampas típicas del examen (y de los hispanohablantes)"
+  },
+  {
+   "id": "chequeo",
+   "titulo": "✅ Chequeo final (contesta sin mirar; si fallas, vuelve al concepto)",
+   "opcion": "✅ Chequeo final (contesta sin mirar; si fallas, vuelve al concepto)",
+   "indice": "✅ Chequeo final (contesta sin mirar; si fallas, vuelve al concepto)"
+  },
+  {
+   "id": "x4",
+   "html": "<section class=\"xs\" id=\"x4\"><h2 class=\"xs-h\">📚 Anexo 1 · Los 198 verbos irregulares de la lista de la profe, ordenados por patrón</h2><p>📍 <strong>Fuente:</strong> <em>Verbos Irregulares, lista completa</em> (5 páginas) + la estrategia de U1, diapositiva 7.</p>\n<p><strong>Cómo usarlo:</strong> ★ = uno de los 30 más comunes (U1, diap. 8): <strong>apréndete esos primero</strong>. Después, un patrón cada día. Tapa las columnas 2 y 3 y dilas en voz alta.</p>\n<p>⚠️ <strong>Erratas de la lista de la profe que he corregido:</strong> <em>light</em> (pone «Li», es <strong>lit</strong>), <em>wake up</em> (el participio es <strong>woken up</strong>), <em>chide</em> (<strong>chid / chidden</strong>), <em>forbear</em> (<strong>forbore / forborne</strong>). Muchos verbos de la lista son <strong>muy raros</strong> (<em>abide, beget, bestride, shrive, stave…</em>); no pierdas tiempo con ellos antes que con los ★.</p>\n<h3 class=\"ih\">Patrón 1 · Las tres formas iguales (A-A-A) · 26 verbos</h3>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Infinitivo</th>\n<th>Past</th>\n<th>Participle</th>\n<th>Significado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>★ <strong>Let</strong></td>\n<td>Let</td>\n<td>Let</td>\n<td>Permitir</td>\n</tr>\n<tr>\n<td>★ <strong>Put</strong></td>\n<td>Put</td>\n<td>Put</td>\n<td>Poner</td>\n</tr>\n<tr>\n<td><strong>Bet</strong></td>\n<td>Bet</td>\n<td>Bet</td>\n<td>Apostar</td>\n</tr>\n<tr>\n<td><strong>Bid</strong></td>\n<td>Bid / Bade</td>\n<td>Bid / Bidden</td>\n<td>Pujar / Ofertar</td>\n</tr>\n<tr>\n<td><strong>Broadcast</strong></td>\n<td>Broadcast</td>\n<td>Broadcast</td>\n<td>Radiar</td>\n</tr>\n<tr>\n<td><strong>Burst</strong></td>\n<td>Burst</td>\n<td>Burst</td>\n<td>Estallar</td>\n</tr>\n<tr>\n<td><strong>Cast</strong></td>\n<td>Cast</td>\n<td>Cast</td>\n<td>Arrojar</td>\n</tr>\n<tr>\n<td><strong>Cost</strong></td>\n<td>Cost</td>\n<td>Cost</td>\n<td>Costar</td>\n</tr>\n<tr>\n<td><strong>Cut</strong></td>\n<td>Cut</td>\n<td>Cut</td>\n<td>Cortar</td>\n</tr>\n<tr>\n<td><strong>Forecast</strong></td>\n<td>Forecast</td>\n<td>Forecast</td>\n<td>Predecir</td>\n</tr>\n<tr>\n<td><strong>Hit</strong></td>\n<td>Hit</td>\n<td>Hit</td>\n<td>Golpear</td>\n</tr>\n<tr>\n<td><strong>Hurt</strong></td>\n<td>Hurt</td>\n<td>Hurt</td>\n<td>Doler</td>\n</tr>\n<tr>\n<td><strong>Knit</strong></td>\n<td>Knit</td>\n<td>Knit</td>\n<td>Hacer punto</td>\n</tr>\n<tr>\n<td><strong>Quit</strong></td>\n<td>Quit</td>\n<td>Quit</td>\n<td>Parar / Dejar</td>\n</tr>\n<tr>\n<td><strong>Read</strong></td>\n<td>Read</td>\n<td>Read</td>\n<td>Leer</td>\n</tr>\n<tr>\n<td><strong>Rid</strong></td>\n<td>Rid</td>\n<td>Rid</td>\n<td>Eliminar</td>\n</tr>\n<tr>\n<td><strong>Set</strong></td>\n<td>Set</td>\n<td>Set</td>\n<td>Poner (se)</td>\n</tr>\n<tr>\n<td><strong>Shed</strong></td>\n<td>Shed</td>\n<td>Shed</td>\n<td>Mudar</td>\n</tr>\n<tr>\n<td><strong>Shut</strong></td>\n<td>Shut</td>\n<td>Shut</td>\n<td>Callar / Cerrar</td>\n</tr>\n<tr>\n<td><strong>Slit</strong></td>\n<td>Slit</td>\n<td>Slit</td>\n<td>Rajar</td>\n</tr>\n<tr>\n<td><strong>Split</strong></td>\n<td>Split</td>\n<td>Split</td>\n<td>Hender / Partir</td>\n</tr>\n<tr>\n<td><strong>Spread</strong></td>\n<td>Spread</td>\n<td>Spread</td>\n<td>Extenderse</td>\n</tr>\n<tr>\n<td><strong>Sweat</strong></td>\n<td>Sweat</td>\n<td>Sweat</td>\n<td>Sudar</td>\n</tr>\n<tr>\n<td><strong>Thrust</strong></td>\n<td>Thrust</td>\n<td>Thrust</td>\n<td>Empujar</td>\n</tr>\n<tr>\n<td><strong>Upset</strong></td>\n<td>Upset</td>\n<td>Upset</td>\n<td>Molestar / Volcar</td>\n</tr>\n<tr>\n<td><strong>Wet</strong></td>\n<td>Wet</td>\n<td>Wet</td>\n<td>Mojar</td>\n</tr>\n</tbody>\n</table></div>\n<h3 class=\"ih\">Patrón 2 · Pasado y participio iguales (A-B-B) · 94 verbos</h3>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Infinitivo</th>\n<th>Past</th>\n<th>Participle</th>\n<th>Significado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>★ <strong>Bring</strong></td>\n<td>Brought</td>\n<td>Brought</td>\n<td>Traer</td>\n</tr>\n<tr>\n<td>★ <strong>Feel</strong></td>\n<td>Felt</td>\n<td>Felt</td>\n<td>Sentir</td>\n</tr>\n<tr>\n<td>★ <strong>Find</strong></td>\n<td>Found</td>\n<td>Found</td>\n<td>Encontrar</td>\n</tr>\n<tr>\n<td>★ <strong>Get</strong></td>\n<td>Got</td>\n<td>Got / Gotten</td>\n<td>Obtener</td>\n</tr>\n<tr>\n<td>★ <strong>Have</strong></td>\n<td>Had</td>\n<td>Had</td>\n<td>Haber / Tener</td>\n</tr>\n<tr>\n<td>★ <strong>Hear</strong></td>\n<td>Heard</td>\n<td>Heard</td>\n<td>Oir</td>\n</tr>\n<tr>\n<td>★ <strong>Hold</strong></td>\n<td>Held</td>\n<td>Held</td>\n<td>Agarrar / Sostener</td>\n</tr>\n<tr>\n<td>★ <strong>Keep</strong></td>\n<td>Kept</td>\n<td>Kept</td>\n<td>Conservar</td>\n</tr>\n<tr>\n<td>★ <strong>Leave</strong></td>\n<td>Left</td>\n<td>Left</td>\n<td>Dejar / Salir</td>\n</tr>\n<tr>\n<td>★ <strong>Make</strong></td>\n<td>Made</td>\n<td>Made</td>\n<td>Hacer</td>\n</tr>\n<tr>\n<td>★ <strong>Mean</strong></td>\n<td>Meant</td>\n<td>Meant</td>\n<td>Significar</td>\n</tr>\n<tr>\n<td>★ <strong>Meet</strong></td>\n<td>Met</td>\n<td>Met</td>\n<td>Encontrar</td>\n</tr>\n<tr>\n<td>★ <strong>Say</strong></td>\n<td>Said</td>\n<td>Said</td>\n<td>Decir</td>\n</tr>\n<tr>\n<td>★ <strong>Stand</strong></td>\n<td>Stood</td>\n<td>Stood</td>\n<td>Estar de pie</td>\n</tr>\n<tr>\n<td>★ <strong>Tell</strong></td>\n<td>Told</td>\n<td>Told</td>\n<td>Decir</td>\n</tr>\n<tr>\n<td>★ <strong>Think</strong></td>\n<td>Thought</td>\n<td>Thought</td>\n<td>Pensar</td>\n</tr>\n<tr>\n<td><strong>Abide</strong></td>\n<td>Abode</td>\n<td>Abode</td>\n<td>Soportar / Aguantar</td>\n</tr>\n<tr>\n<td><strong>Behold</strong></td>\n<td>Beheld</td>\n<td>Beheld</td>\n<td>Contemplar</td>\n</tr>\n<tr>\n<td><strong>Bend</strong></td>\n<td>Bent</td>\n<td>Bent</td>\n<td>Doblar / Curvar</td>\n</tr>\n<tr>\n<td><strong>Bereave</strong></td>\n<td>Bereft</td>\n<td>Bereft</td>\n<td>Privar</td>\n</tr>\n<tr>\n<td><strong>Beseech</strong></td>\n<td>Besought</td>\n<td>Besought</td>\n<td>Implorar / Suplicar</td>\n</tr>\n<tr>\n<td><strong>Bind</strong></td>\n<td>Bound</td>\n<td>Bound</td>\n<td>Atar / Encuadernar</td>\n</tr>\n<tr>\n<td><strong>Bleed</strong></td>\n<td>Bled</td>\n<td>Bled</td>\n<td>Sangrar</td>\n</tr>\n<tr>\n<td><strong>Breed</strong></td>\n<td>Bred</td>\n<td>Bred</td>\n<td>Criar</td>\n</tr>\n<tr>\n<td><strong>Build</strong></td>\n<td>Built</td>\n<td>Built</td>\n<td>Edificar</td>\n</tr>\n<tr>\n<td><strong>Burn</strong></td>\n<td>Burnt / Burned</td>\n<td>Burnt / Burned</td>\n<td>Quemar</td>\n</tr>\n<tr>\n<td><strong>Buy</strong></td>\n<td>Bought</td>\n<td>Bought</td>\n<td>Comprar</td>\n</tr>\n<tr>\n<td><strong>Catch</strong></td>\n<td>Caught</td>\n<td>Caught</td>\n<td>Coger</td>\n</tr>\n<tr>\n<td><strong>Chide</strong></td>\n<td>Chid</td>\n<td>Chid / Chidden</td>\n<td>Regañar · ⚠️ la lista pone «Chide / Chidden»; es <em>chid / chidden</em></td>\n</tr>\n<tr>\n<td><strong>Cling</strong></td>\n<td>Clung</td>\n<td>Clung</td>\n<td>Agarrarse</td>\n</tr>\n<tr>\n<td><strong>Clothe</strong></td>\n<td>Clad</td>\n<td>Clad</td>\n<td>Vestir</td>\n</tr>\n<tr>\n<td><strong>Creep</strong></td>\n<td>Crept</td>\n<td>Crept</td>\n<td>Arrastrarse / Trepar</td>\n</tr>\n<tr>\n<td><strong>Deal</strong></td>\n<td>Dealt</td>\n<td>Dealt</td>\n<td>Tratar</td>\n</tr>\n<tr>\n<td><strong>Dig</strong></td>\n<td>Dug</td>\n<td>Dug</td>\n<td>Cavar</td>\n</tr>\n<tr>\n<td><strong>Dream</strong></td>\n<td>Dreamt</td>\n<td>Dreamt</td>\n<td>Soñar</td>\n</tr>\n<tr>\n<td><strong>Dwell</strong></td>\n<td>Dwelt</td>\n<td>Dwelt</td>\n<td>Morar / Residir</td>\n</tr>\n<tr>\n<td><strong>Feed</strong></td>\n<td>Fed</td>\n<td>Fed</td>\n<td>Alimentar</td>\n</tr>\n<tr>\n<td><strong>Fight</strong></td>\n<td>Fought</td>\n<td>Fought</td>\n<td>Luchar</td>\n</tr>\n<tr>\n<td><strong>Flee</strong></td>\n<td>Fled</td>\n<td>Fled</td>\n<td>Huir</td>\n</tr>\n<tr>\n<td><strong>Fling</strong></td>\n<td>Flung</td>\n<td>Flung</td>\n<td>Arrojar / Lanzar</td>\n</tr>\n<tr>\n<td><strong>Gainsay</strong></td>\n<td>Gainsaid</td>\n<td>Gainsaid</td>\n<td>Contradecir / Negar</td>\n</tr>\n<tr>\n<td><strong>Gild</strong></td>\n<td>Gilt</td>\n<td>Gilt</td>\n<td>Dorar</td>\n</tr>\n<tr>\n<td><strong>Grind</strong></td>\n<td>Ground</td>\n<td>Ground</td>\n<td>Moler</td>\n</tr>\n<tr>\n<td><strong>Hang</strong></td>\n<td>Hung</td>\n<td>Hung</td>\n<td>Colgar</td>\n</tr>\n<tr>\n<td><strong>Inlay</strong></td>\n<td>Inlaid</td>\n<td>Inlaid</td>\n<td>Incrustar</td>\n</tr>\n<tr>\n<td><strong>Kneel</strong></td>\n<td>Knelt</td>\n<td>Knelt</td>\n<td>Arrodillarse</td>\n</tr>\n<tr>\n<td><strong>Lay</strong></td>\n<td>Laid</td>\n<td>Laid</td>\n<td>Poner</td>\n</tr>\n<tr>\n<td><strong>Lead</strong></td>\n<td>Led</td>\n<td>Led</td>\n<td>Guiar</td>\n</tr>\n<tr>\n<td><strong>Lean</strong></td>\n<td>Leant</td>\n<td>Leant</td>\n<td>Apoyarse</td>\n</tr>\n<tr>\n<td><strong>Leap</strong></td>\n<td>Leapt</td>\n<td>Leapt</td>\n<td>Saltar</td>\n</tr>\n<tr>\n<td><strong>Learn</strong></td>\n<td>Learnt</td>\n<td>Learnt</td>\n<td>Aprender</td>\n</tr>\n<tr>\n<td><strong>Lend</strong></td>\n<td>Lent</td>\n<td>Lent</td>\n<td>Prestar</td>\n</tr>\n<tr>\n<td><strong>Light</strong></td>\n<td>Lit</td>\n<td>Lit</td>\n<td>Encender · ⚠️ en la lista pone «Li»; es <em>lit</em></td>\n</tr>\n<tr>\n<td><strong>Lose</strong></td>\n<td>Lost</td>\n<td>Lost</td>\n<td>Perder</td>\n</tr>\n<tr>\n<td><strong>Mislay</strong></td>\n<td>Mislaid</td>\n<td>Mislaid</td>\n<td>Extraviar</td>\n</tr>\n<tr>\n<td><strong>Mislead</strong></td>\n<td>Misled</td>\n<td>Misled</td>\n<td>Engañar / Cofundir</td>\n</tr>\n<tr>\n<td><strong>Pay</strong></td>\n<td>Paid</td>\n<td>Paid</td>\n<td>Pagar</td>\n</tr>\n<tr>\n<td><strong>Rend</strong></td>\n<td>Rent</td>\n<td>Rent</td>\n<td>Desgarrar / Rasgar</td>\n</tr>\n<tr>\n<td><strong>Seek</strong></td>\n<td>Sought</td>\n<td>Sought</td>\n<td>Buscar</td>\n</tr>\n<tr>\n<td><strong>Sell</strong></td>\n<td>Sold</td>\n<td>Sold</td>\n<td>Vender</td>\n</tr>\n<tr>\n<td><strong>Send</strong></td>\n<td>Sent</td>\n<td>Sent</td>\n<td>Enviar</td>\n</tr>\n<tr>\n<td><strong>Shine</strong></td>\n<td>Shone</td>\n<td>Shone</td>\n<td>Brillar</td>\n</tr>\n<tr>\n<td><strong>Shoe</strong></td>\n<td>Shod</td>\n<td>Shod</td>\n<td>Herrar</td>\n</tr>\n<tr>\n<td><strong>Shoot</strong></td>\n<td>Shot</td>\n<td>Shot</td>\n<td>Disparar</td>\n</tr>\n<tr>\n<td><strong>Shrive</strong></td>\n<td>Shrove</td>\n<td>Shrove</td>\n<td>Confesarse</td>\n</tr>\n<tr>\n<td><strong>Sit</strong></td>\n<td>Sat</td>\n<td>Sat</td>\n<td>Sentarse</td>\n</tr>\n<tr>\n<td><strong>Sleep</strong></td>\n<td>Slept</td>\n<td>Slept</td>\n<td>Dormir</td>\n</tr>\n<tr>\n<td><strong>Slide</strong></td>\n<td>Slid</td>\n<td>Slid</td>\n<td>Resbalar</td>\n</tr>\n<tr>\n<td><strong>Sling</strong></td>\n<td>Slung</td>\n<td>Slung</td>\n<td>Tirar / Arrojar</td>\n</tr>\n<tr>\n<td><strong>Slink</strong></td>\n<td>Slunk</td>\n<td>Slunk</td>\n<td>Escabullirse</td>\n</tr>\n<tr>\n<td><strong>Smell</strong></td>\n<td>Smelt</td>\n<td>Smelt</td>\n<td>Oler</td>\n</tr>\n<tr>\n<td><strong>Speed</strong></td>\n<td>Sped</td>\n<td>Sped</td>\n<td>Acelerar</td>\n</tr>\n<tr>\n<td><strong>Spell</strong></td>\n<td>Spelt</td>\n<td>Spelt</td>\n<td>Deletrear</td>\n</tr>\n<tr>\n<td><strong>Spend</strong></td>\n<td>Spent</td>\n<td>Spent</td>\n<td>Gastar</td>\n</tr>\n<tr>\n<td><strong>Spill</strong></td>\n<td>Spilt</td>\n<td>Spilt</td>\n<td>Derramar</td>\n</tr>\n<tr>\n<td><strong>Spit</strong></td>\n<td>Spat</td>\n<td>Spat</td>\n<td>Escupir</td>\n</tr>\n<tr>\n<td><strong>Spoil</strong></td>\n<td>Spoilt</td>\n<td>Spoilt</td>\n<td>Estropear</td>\n</tr>\n<tr>\n<td><strong>Stave</strong></td>\n<td>Stove</td>\n<td>Stove</td>\n<td>Desfondar</td>\n</tr>\n<tr>\n<td><strong>Stick</strong></td>\n<td>Stuck</td>\n<td>Stuck</td>\n<td>Pegar / Engomar</td>\n</tr>\n<tr>\n<td><strong>Sting</strong></td>\n<td>Stung</td>\n<td>Stung</td>\n<td>Picar</td>\n</tr>\n<tr>\n<td><strong>Strike</strong></td>\n<td>Struck</td>\n<td>Struck</td>\n<td>Golpear</td>\n</tr>\n<tr>\n<td><strong>String</strong></td>\n<td>Strung</td>\n<td>Strung</td>\n<td>Encordar</td>\n</tr>\n<tr>\n<td><strong>Sweep</strong></td>\n<td>Swept</td>\n<td>Swept</td>\n<td>Barrer</td>\n</tr>\n<tr>\n<td><strong>Swing</strong></td>\n<td>Swung</td>\n<td>Swung</td>\n<td>Balancearse</td>\n</tr>\n<tr>\n<td><strong>Teach</strong></td>\n<td>Taught</td>\n<td>Taught</td>\n<td>Enseñar</td>\n</tr>\n<tr>\n<td><strong>Tread</strong></td>\n<td>Trod</td>\n<td>Trod / Trodden</td>\n<td>Pisar / Hollar</td>\n</tr>\n<tr>\n<td><strong>Understand</strong></td>\n<td>Understood</td>\n<td>Understood</td>\n<td>Entender</td>\n</tr>\n<tr>\n<td><strong>Waylay</strong></td>\n<td>Waylaid</td>\n<td>Waylaid</td>\n<td>Abordar / Atacar</td>\n</tr>\n<tr>\n<td><strong>Weep</strong></td>\n<td>Wept</td>\n<td>Wept</td>\n<td>Llorar / LLoriquear</td>\n</tr>\n<tr>\n<td><strong>Win</strong></td>\n<td>Won</td>\n<td>Won</td>\n<td>Ganar</td>\n</tr>\n<tr>\n<td><strong>Wind</strong></td>\n<td>Wound</td>\n<td>Wound</td>\n<td>Enrollar</td>\n</tr>\n<tr>\n<td><strong>Withhold</strong></td>\n<td>Withheld</td>\n<td>Withheld</td>\n<td>Retener / Ocultar</td>\n</tr>\n<tr>\n<td><strong>Withstand</strong></td>\n<td>Withstood</td>\n<td>Withstood</td>\n<td>Resistir / Aguantar</td>\n</tr>\n<tr>\n<td><strong>Wring</strong></td>\n<td>Wrung</td>\n<td>Wrung</td>\n<td>Torcer</td>\n</tr>\n</tbody>\n</table></div>\n<h3 class=\"ih\">Patrón 3 · Las tres formas distintas (A-B-C) · 74 verbos</h3>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Infinitivo</th>\n<th>Past</th>\n<th>Participle</th>\n<th>Significado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>★ <strong>Be</strong></td>\n<td>Was / Were</td>\n<td>Been</td>\n<td>Ser / Estar</td>\n</tr>\n<tr>\n<td>★ <strong>Begin</strong></td>\n<td>Began</td>\n<td>Begun</td>\n<td>Empezar</td>\n</tr>\n<tr>\n<td>★ <strong>Do</strong></td>\n<td>Did</td>\n<td>Done</td>\n<td>Hacer</td>\n</tr>\n<tr>\n<td>★ <strong>Give</strong></td>\n<td>Gave</td>\n<td>Given</td>\n<td>Dar</td>\n</tr>\n<tr>\n<td>★ <strong>Go</strong></td>\n<td>Went</td>\n<td>Gone</td>\n<td>Ir</td>\n</tr>\n<tr>\n<td>★ <strong>Know</strong></td>\n<td>Knew</td>\n<td>Known</td>\n<td>Saber / Conocer</td>\n</tr>\n<tr>\n<td>★ <strong>See</strong></td>\n<td>Saw</td>\n<td>Seen</td>\n<td>Ver</td>\n</tr>\n<tr>\n<td>★ <strong>Take</strong></td>\n<td>Took</td>\n<td>Taken</td>\n<td>Coger / Tomar</td>\n</tr>\n<tr>\n<td>★ <strong>Write</strong></td>\n<td>Wrote</td>\n<td>Written</td>\n<td>Escribir</td>\n</tr>\n<tr>\n<td><strong>Arise</strong></td>\n<td>Arose</td>\n<td>Arisen</td>\n<td>Surgir / Levantarse</td>\n</tr>\n<tr>\n<td><strong>Awake</strong></td>\n<td>Awoke</td>\n<td>Awoken</td>\n<td>Despertarse</td>\n</tr>\n<tr>\n<td><strong>Bear</strong></td>\n<td>Bore</td>\n<td>Borne / Born</td>\n<td>Soportar</td>\n</tr>\n<tr>\n<td><strong>Beat</strong></td>\n<td>Beat</td>\n<td>Beaten</td>\n<td>Golpear</td>\n</tr>\n<tr>\n<td><strong>Befall</strong></td>\n<td>Befell</td>\n<td>Befallen</td>\n<td>Suceder / Ocurrir</td>\n</tr>\n<tr>\n<td><strong>Beget</strong></td>\n<td>Begot</td>\n<td>Begotten</td>\n<td>Engendrar</td>\n</tr>\n<tr>\n<td><strong>Bestride</strong></td>\n<td>Bestrode</td>\n<td>Bestridden</td>\n<td>Montar a horcajadas</td>\n</tr>\n<tr>\n<td><strong>Bite</strong></td>\n<td>Bit</td>\n<td>Bitten</td>\n<td>Morder</td>\n</tr>\n<tr>\n<td><strong>Blow</strong></td>\n<td>Blew</td>\n<td>Blown</td>\n<td>Soplar</td>\n</tr>\n<tr>\n<td><strong>Break</strong></td>\n<td>Broke</td>\n<td>Broken</td>\n<td>Romper</td>\n</tr>\n<tr>\n<td><strong>Choose</strong></td>\n<td>Chose</td>\n<td>Chosen</td>\n<td>Elegir / Escoger</td>\n</tr>\n<tr>\n<td><strong>Cleave</strong></td>\n<td>Clove / Cleft</td>\n<td>Cloven / Cleft</td>\n<td>Hender</td>\n</tr>\n<tr>\n<td><strong>Draw</strong></td>\n<td>Drew</td>\n<td>Drawn</td>\n<td>Dibujar</td>\n</tr>\n<tr>\n<td><strong>Drink</strong></td>\n<td>Drank</td>\n<td>Drunk</td>\n<td>Beber</td>\n</tr>\n<tr>\n<td><strong>Drive</strong></td>\n<td>Drove</td>\n<td>Driven</td>\n<td>Conducir</td>\n</tr>\n<tr>\n<td><strong>Eat</strong></td>\n<td>Ate</td>\n<td>Eaten</td>\n<td>Comer</td>\n</tr>\n<tr>\n<td><strong>Fall</strong></td>\n<td>Fell</td>\n<td>Fallen</td>\n<td>Caer</td>\n</tr>\n<tr>\n<td><strong>Fly</strong></td>\n<td>Flew</td>\n<td>Flown</td>\n<td>Volar</td>\n</tr>\n<tr>\n<td><strong>Forbear</strong></td>\n<td>Forbore</td>\n<td>Forborne</td>\n<td>Contenerse · ⚠️ la lista pone «Forebore / Foreborne»; es <em>forbore / forborne</em></td>\n</tr>\n<tr>\n<td><strong>Forbid</strong></td>\n<td>Forbade</td>\n<td>Forbidden</td>\n<td>Prohibir</td>\n</tr>\n<tr>\n<td><strong>Forego</strong></td>\n<td>Forewent</td>\n<td>Foregone</td>\n<td>Renunciar a</td>\n</tr>\n<tr>\n<td><strong>Forget</strong></td>\n<td>Forgot</td>\n<td>Forgotten</td>\n<td>Olvidar</td>\n</tr>\n<tr>\n<td><strong>Forgive</strong></td>\n<td>Forgave</td>\n<td>Forgiven</td>\n<td>Perdonar</td>\n</tr>\n<tr>\n<td><strong>Forsake</strong></td>\n<td>Forsook</td>\n<td>Forsaken</td>\n<td>Abandonar / Dejar</td>\n</tr>\n<tr>\n<td><strong>Freeze</strong></td>\n<td>Froze</td>\n<td>Frozen</td>\n<td>Helar</td>\n</tr>\n<tr>\n<td><strong>Grow</strong></td>\n<td>Grew</td>\n<td>Grown</td>\n<td>Crecer</td>\n</tr>\n<tr>\n<td><strong>Hide</strong></td>\n<td>Hid</td>\n<td>Hidden</td>\n<td>Esconder</td>\n</tr>\n<tr>\n<td><strong>Lade</strong></td>\n<td>Laded</td>\n<td>Laden</td>\n<td>Cargar</td>\n</tr>\n<tr>\n<td><strong>Lie</strong></td>\n<td>Lay</td>\n<td>Lain</td>\n<td>Echarse</td>\n</tr>\n<tr>\n<td><strong>Mistake</strong></td>\n<td>Mistook</td>\n<td>Mistaken</td>\n<td>Equivocar</td>\n</tr>\n<tr>\n<td><strong>Mow</strong></td>\n<td>Mowed</td>\n<td>Mown</td>\n<td>Segar / Cortar</td>\n</tr>\n<tr>\n<td><strong>Ride</strong></td>\n<td>Rode</td>\n<td>Ridden</td>\n<td>Montar</td>\n</tr>\n<tr>\n<td><strong>Ring</strong></td>\n<td>Rang</td>\n<td>Rung</td>\n<td>Sonar</td>\n</tr>\n<tr>\n<td><strong>Rise</strong></td>\n<td>Rose</td>\n<td>Risen</td>\n<td>Levantar / Subir</td>\n</tr>\n<tr>\n<td><strong>Saw</strong></td>\n<td>Sawed</td>\n<td>Sawn</td>\n<td>Serrar / Serruchar</td>\n</tr>\n<tr>\n<td><strong>Sew</strong></td>\n<td>Sewed</td>\n<td>Sewn</td>\n<td>Coser</td>\n</tr>\n<tr>\n<td><strong>Shake</strong></td>\n<td>Shook</td>\n<td>Shaken</td>\n<td>Sacudir</td>\n</tr>\n<tr>\n<td><strong>Shave</strong></td>\n<td>Shaved</td>\n<td>Shaven</td>\n<td>Afeitar / Rasurar</td>\n</tr>\n<tr>\n<td><strong>Shear</strong></td>\n<td>Sheared</td>\n<td>Shorn</td>\n<td>Esquilar</td>\n</tr>\n<tr>\n<td><strong>Show</strong></td>\n<td>Showed</td>\n<td>Shown</td>\n<td>Mostrar</td>\n</tr>\n<tr>\n<td><strong>Shrink</strong></td>\n<td>Shrank</td>\n<td>Shrunk</td>\n<td>Encoger</td>\n</tr>\n<tr>\n<td><strong>Sing</strong></td>\n<td>Sang</td>\n<td>Sung</td>\n<td>Cantar</td>\n</tr>\n<tr>\n<td><strong>Sink</strong></td>\n<td>Sank</td>\n<td>Sunk</td>\n<td>Hundir</td>\n</tr>\n<tr>\n<td><strong>Slay</strong></td>\n<td>Slew</td>\n<td>Slain</td>\n<td>Matar / Asesinar</td>\n</tr>\n<tr>\n<td><strong>Sow</strong></td>\n<td>Sowed</td>\n<td>Sown</td>\n<td>Sembrar</td>\n</tr>\n<tr>\n<td><strong>Speak</strong></td>\n<td>Spoke</td>\n<td>Spoken</td>\n<td>Hablar</td>\n</tr>\n<tr>\n<td><strong>Spin</strong></td>\n<td>Span</td>\n<td>Spun</td>\n<td>Hilar</td>\n</tr>\n<tr>\n<td><strong>Spring</strong></td>\n<td>Sprang</td>\n<td>Sprung</td>\n<td>Saltar</td>\n</tr>\n<tr>\n<td><strong>Steal</strong></td>\n<td>Stole</td>\n<td>Stolen</td>\n<td>Robar</td>\n</tr>\n<tr>\n<td><strong>Stink</strong></td>\n<td>Stank</td>\n<td>Stunk</td>\n<td>Apestar</td>\n</tr>\n<tr>\n<td><strong>Strew</strong></td>\n<td>Strewed</td>\n<td>Strewn</td>\n<td>Esparcir</td>\n</tr>\n<tr>\n<td><strong>Stride</strong></td>\n<td>Strode</td>\n<td>Stridden</td>\n<td>Dar zancadas</td>\n</tr>\n<tr>\n<td><strong>Strive</strong></td>\n<td>Strove</td>\n<td>Striven</td>\n<td>Esforzarse</td>\n</tr>\n<tr>\n<td><strong>Swear</strong></td>\n<td>Swore</td>\n<td>Sworn</td>\n<td>Jurar</td>\n</tr>\n<tr>\n<td><strong>Swell</strong></td>\n<td>Swelled</td>\n<td>Swollen</td>\n<td>Hinchar</td>\n</tr>\n<tr>\n<td><strong>Swim</strong></td>\n<td>Swam</td>\n<td>Swum</td>\n<td>Nadar</td>\n</tr>\n<tr>\n<td><strong>Tear</strong></td>\n<td>Tore</td>\n<td>Torn</td>\n<td>Rasgar</td>\n</tr>\n<tr>\n<td><strong>Thrive</strong></td>\n<td>Throve</td>\n<td>Thriven</td>\n<td>Prosperar / Florecer</td>\n</tr>\n<tr>\n<td><strong>Throw</strong></td>\n<td>Threw</td>\n<td>Thrown</td>\n<td>Arrojar / Tirar</td>\n</tr>\n<tr>\n<td><strong>Undergo</strong></td>\n<td>Underwent</td>\n<td>Undergone</td>\n<td>Sufrir</td>\n</tr>\n<tr>\n<td><strong>Undertake</strong></td>\n<td>Undertook</td>\n<td>Undertaken</td>\n<td>Emprender</td>\n</tr>\n<tr>\n<td><strong>Wake up</strong></td>\n<td>Woke up</td>\n<td>Woken up</td>\n<td>Despertarse · ⚠️ en la lista pone participio «woke up»; lo correcto es <em>woken up</em></td>\n</tr>\n<tr>\n<td><strong>Wear</strong></td>\n<td>Wore</td>\n<td>Worn</td>\n<td>Llevar puesto</td>\n</tr>\n<tr>\n<td><strong>Weave</strong></td>\n<td>Wove</td>\n<td>Woven</td>\n<td>Tejer</td>\n</tr>\n<tr>\n<td><strong>Withdraw</strong></td>\n<td>Withdrew</td>\n<td>Withdrawn</td>\n<td>Retirar</td>\n</tr>\n</tbody>\n</table></div>\n<h3 class=\"ih\">Patrón 4 · Infinitivo y participio iguales (A-B-A) · 4 verbos</h3>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Infinitivo</th>\n<th>Past</th>\n<th>Participle</th>\n<th>Significado</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>★ <strong>Become</strong></td>\n<td>Became</td>\n<td>Become</td>\n<td>Llegar a ser</td>\n</tr>\n<tr>\n<td>★ <strong>Come</strong></td>\n<td>Came</td>\n<td>Come</td>\n<td>Venir</td>\n</tr>\n<tr>\n<td>★ <strong>Run</strong></td>\n<td>Ran</td>\n<td>Run</td>\n<td>Correr</td>\n</tr>\n<tr>\n<td><strong>Overcome</strong></td>\n<td>Overcame</td>\n<td>Overcome</td>\n<td>Vencer</td>\n</tr>\n</tbody>\n</table></div></section>",
+   "opcion": "📚 Anexo 1 · Los 198 verbos irregulares de la lista de la profe, ordenados por patrón",
+   "indice": "📚 Anexo 1 · Los 198 verbos irregulares de la lista de la profe, ordenados por patrón"
+  },
+  {
+   "id": "x5",
+   "html": "<section class=\"xs\" id=\"x5\"><h2 class=\"xs-h\">📚 Anexo 2 · Los 202 verbos regulares de la lista, ordenados por regla de ortografía</h2><p>📍 <strong>Fuente:</strong> <em>Verbos Regulares, lista completa</em> (5 páginas) + U1, diapositiva 4.</p>\n<p><strong>Cómo usarlo:</strong> los regulares no hay que memorizarlos como los irregulares: basta con <strong>saber la regla</strong> y el <strong>significado</strong>. Fíjate sobre todo en los grupos pequeños (y → ied, doblan la consonante), que son los que caen en el examen.</p>\n<p>⚠️ <strong>Erratas de la lista que he corregido:</strong> <em>Advice → Adviced</em> (el verbo es <strong>advise → advised</strong>), <em>Notice → Notice</em> (es <strong>noticed</strong>, «notar / darse cuenta»), <em>spelled → spelled</em> (el infinitivo es <strong>spell</strong>).</p>\n<p><strong>Consonante + y → -ied (13):</strong> Carry → Carried (Llevar) · Copy → Copied (Copiar) · Cry → Cried (Llorar) · Deny → Denied (Denegar) · Dry → Dried (Secar) · Envy → Envied (Envidiar) · Fry → Fried (Freir) · Hurry → Hurried (Apurarse) · Marry → Married (Casarse) · Study → Studied (Estudiar) · Try → Tried (Intentar) · Vary → Varied (Variar) · Worry → Worried (Preocuparse)</p>\n<p><strong>Doblan la consonante final (6):</strong> Admit → Admitted (Admitir) · Beg → Begged (Suplicar) · Commit → Committed (Cometer) · Drop → Dropped (Dejar caer) · Plan → Planned (Planificar) · Stop → Stopped (Detener)</p>\n<p><strong>Vocal + y: + -ed (la y se queda) (7):</strong> Annoy → Annoyed (Molestar) · Delay → Delayed (Demorar / Retrasar) · Destroy → Destroyed (Destruir) · Enjoy → Enjoyed (Disfrutar) · Play → Played (Jugar) · Pray → Prayed (Rezar) · Stay → Stayed (Permanecer)</p>\n<p><strong>Acaban en -e: + -d (72):</strong> Abuse → Abused (Abusar) · Accede → Acceded (Acceder) · Accuse → Accused (Acusar) · Acquire → Acquired (Adquirir) · Admire → Admired (Admirar) · Adore → Adored (Adorar) · Advance → Advanced (Avanzar) · Advertise → Advertised (Anunciar) · Advise → Advised (Aconsejar; ⚠️ la lista pone «Advice → Adviced»; el verbo es <em>advise → advised</em> (<em>advice</em> es el sustantivo, «consejo»)) · Agree → Agreed (Acordar) · Amuse → Amused (Entretener) · Announce → Announced (Anunciar) · Apologize → Apologized (Disculparse) · Arrange → Arranged (Arreglar) · Arrive → Arrived (Llegar) · Assure → Assured (Asegurar) · Balance → Balanced (Equilibrar) · Behave → Behaved (Comportarse) · Believe → Believed (Creer) · Blame → Blamed (Culpar) · Breathe → Breathed (Respirar) · Care → Cared (Cuidar) · Change → Changed (Cambiar) · Charge → Charged (Cargar) · Close → Closed (Cerrar) · Combine → Combined (Combinar) · Compare → Compared (Comparar) · Complete → Completed (Completar) · Compose → Composed (Componer) · Continue → Continued (Continuar) · Dance → Danced (Bailar) · Declare → Declared (Declarar) · Devote → Devoted (Dedicar) · Die → Died (Morir) · Engage → Engaged (Comprometer) · File → Filed (Archivar) · Fire → Fired (Disparar) · Hope → Hoped (Desear) · Imagine → Imagined (Imaginar) · Judge → Judged (Juzgar) · Like → Liked (Gustar) · Manage → Managed (Administrar) · Massage → Massaged (Masajear) · Measure → Measured (Medir) · Move → Moved (Mover) · Name → Named (Nombrar) · Note → Noted (Notar) · Notice → Noticed (Notar / darse cuenta; ⚠️ la lista pone pasado «Notice» y significado «Notificar»; es <em>noticed</em> = notar) · Observe → Observed (Observar) · Phone → Phoned (Telefonear) · Please → Pleased (Complacer) · Practice → Practiced (Practicar) · Prepare → Prepared (Preparar) · Promise → Promised (Prometer) · Pronounce → Pronounced (Pronunciar) · Raise → Raised (Levantar) · Receive → Received (Recibir) · Refuse → Refused (Rechazar) · Require → Required (Requerir) · Reserve → Reserved (Reservar) · Resolve → Resolved (Resolver) · Save → Saved (Salvar) · Serve → Served (Servir) · Smile → Smiled (Sonreír) · Smoke → Smoked (Fumar) · Surprise → Surprised (Sorprender) · Taste → Tasted (Probar) · Tie → Tied (Atar) · Translate → Translated (Traducir) · Unite → United (Unir) · Use → Used (Usar) · Whistle → Whistled (Silbar)</p>\n<p><strong>Regla general: + -ed (104):</strong> Abandon → Abandoned (Abandonar) · Abolish → Abolished (Abolir) · Absorb → Absorbed (Absorber) · Accent → Accented (Acentuar) · Act → Acted (Actuar) · Add → Added (Añadir / Sumar) · Address → Addressed (Dirigirse) · Allow → Allowed (Permitir) · Answer → Answered (Responder) · Appear → Appeared (Aparecer) · Approach → Approached (Acercarse) · Arrest → Arrested (Arrestar) · Ask → Asked (Preguntar) · Assist → Assisted (Asistir) · Attack → Attacked (Atacar) · Attempt → Attempted (Intentar) · Avoid → Avoided (Evitar) · Belong → Belonged (Pertenecer) · Bless → Blessed (Bendecir) · Brush → Brushed (Cepillar) · Call → Called (Llamar) · Cash → Cashed (Cobrar) · Check → Checked (Comprobar) · Claim → Claimed (Reclamar) · Clean → Cleaned (Limpiar) · Climb → Climbed (Escalar) · Collect → Collected (Recolectar) · Command → Commanded (Mandar) · Consider → Considered (Considerar) · Consist → Consisted (Consistir) · Contain → Contained (Contener) · Cook → Cooked (Cocinar) · Count → Counted (Contar) · Cover → Covered (Cubrir) · Crash → Crashed (Chocar) · Cross → Crossed (Cruzar) · Crown → Crowned (Coronar) · Deliver → Delivered (Entregar) · Dress → Dressed (Vestir) · Exclaim → Exclaimed (Exclamar) · Explain → Explained (Explicar) · Express → Expressed (Expresar) · Fail → Failed (Fracasar) · Fill → Filled (Llenar) · Finish → Finished (Terminar) · Fish → Fished (Pescar) · Fix → Fixed (Arreglar) · Follow → Followed (Seguir) · Gain → Gained (Ganar) · Guess → Guessed (Adivinar) · Happen → Happened (Suceder) · Help → Helped (Ayudar) · Kill → Killed (Matar) · Kiss → Kissed (Besar) · Laugh → Laughed (Reir) · Look → Looked (Mirar) · Maintain → Maintained (Mantener) · Mark → Marked (Marcar) · Miss → Missed (Extrañar) · Number → Numbered (Enumerar) · Offer → Offered (Ofrecer) · Open → Opened (Abrir) · Order → Ordered (Ordenar) · Park → Parked (Aparcar) · Pass → Passed (Aprobar) · Perform → Performed (Llevar a cabo) · Pick → Picked (Recoger) · Prefer → Prefered (Preferir) · Punish → Punished (Castigar) · Push → Pushed (Empujar) · Rain → Rained (Llover) · Register → Registered (Registrar) · Remember → Remembered (Recordar) · Repair → Repaired (Reparar) · Repeat → Repeated (Repetir) · Report → Reported (Reportar) · Request → Requested (Solicitar) · Sail → Sailed (Navegar) · Search → Searched (Buscar) · Sign → Signed (Firmar) · Sound → Sounded (Sonar) · Spell → Spelled / Spelt (Deletrear; ⚠️ la lista pone «spelled» como infinitivo; el infinitivo es <em>spell</em> (también es irregular: <em>spelt</em>)) · Start → Started (Comenzar) · Suffer → Suffered (Sufrir) · Talk → Talked (Hablar) · Test → Tested (Testear) · Thank → Thanked (Agradecer) · Touch → Touched (Tocar) · Train → Trained (Entrenar) · Travel → Traveled (Viajar) · Trust → Trusted (Confiar) · Turn → Turned (Girar) · Visit → Visited (Visitar) · Wait → Waited (Esperar) · Walk → Walked (Caminar) · Want → Wanted (Querer) · Warm → Warmed (Calentar) · Wash → Washed (Lavar) · Watch → Watched (Observar (ver)) · Water → Watered (Regar) · Weigh → Weighed (Pesar) · Wish → Wished (Desear) · Work → Worked (Trabajar) · Wound → Wounded (Herir)</p></section>",
+   "opcion": "📚 Anexo 2 · Los 202 verbos regulares de la lista, ordenados por regla de ortografía",
+   "indice": "📚 Anexo 2 · Los 202 verbos regulares de la lista, ordenados por regla de ortografía"
+  },
+  {
+   "id": "impres",
+   "html": "<section class=\"xs\" id=\"impres\"><h2 class=\"xs-h\">⚡ Lo imprescindible (repaso exprés)</h2><p class=\"meta\">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p><h3 class='ih'>Verbos (Unit 1)</h3><details class=\"pq\"><summary>¿Verbo regular?</summary><div class=\"pa\"><p>Pasado y participio con <strong>-ed</strong>, igual para todas las personas: <em>work – worked – worked</em>.</p></div></details><details class=\"pq\"><summary>¿-ed con -e?</summary><div class=\"pa\"><p>Solo <strong>-d</strong>: change → changed.</p></div></details><details class=\"pq\"><summary>¿-ed con consonante + y?</summary><div class=\"pa\"><p><strong>-ied</strong>: study → studied, try → tried. <strong>Vocal + y</strong> → se queda: play → played.</p></div></details><details class=\"pq\"><summary>¿Cuándo se dobla?</summary><div class=\"pa\"><p><strong>C-V-C con la última sílaba acentuada</strong>: stop → stopped, prefer → preferred, plan → planned. 🟥 <strong>Pero visit → visited, open → opened</strong> (última sílaba átona).</p></div></details><details class=\"pq\"><summary>¿Cómo suena -ed?</summary><div class=\"pa\"><p><strong>/d/</strong> tras sonoro (cleaned, played) · <strong>/t/</strong> tras p, f, k, s, sh, ch (looked, kissed, washed) · <strong>/ɪd/</strong> tras <strong>d o t</strong> (ended, waited, decided). 🟥 <strong>Solo hay sílaba extra tras d o t.</strong></p></div></details><details class=\"pq\"><summary>¿Verbo irregular?</summary><div class=\"pa\"><p>No sigue el -ed. Orden: <strong>infinitivo &gt; past &gt; past participle</strong>.</p></div></details><details class=\"pq\"><summary>¿4 patrones?</summary><div class=\"pa\"><p><strong>A-A-A</strong> cut, put, hit, cost, let, shut · <strong>A-B-B</strong> buy–bought, teach–taught, find–found · <strong>A-B-C</strong> sing–sang–sung, drive–drove–driven, write–wrote–written · <strong>A-B-A</strong> come–came–come, run–ran–run, become–became–become.</p></div></details><details class=\"pq\"><summary>¿Los imprescindibles?</summary><div class=\"pa\"><p>be–was/were–been · go–went–gone · do–did–done · have–had–had · see–saw–seen · take–took–taken · write–wrote–written · know–knew–known · give–gave–given · begin–began–begun · think–thought–thought · bring–brought–brought.</p></div></details><h3 class='ih'>Present Simple</h3><details class=\"pq\"><summary>¿Forma?</summary><div class=\"pa\"><p>Verbo; <strong>+ -s con he/she/it</strong>. 🟥 <strong>La -s es solo para he, she, it.</strong></p></div></details><details class=\"pq\"><summary>¿Negativa y pregunta?</summary><div class=\"pa\"><p><strong>don't/doesn't + verbo</strong> · <strong>Do/Does + sujeto + verbo?</strong> 🟥 <strong>Con does/doesn't el verbo pierde la -s</strong> (He doesn't play).</p></div></details><details class=\"pq\"><summary>¿6 usos?</summary><div class=\"pa\"><p>Hábitos · verdades generales · horarios · instrucciones · opiniones y gustos · narraciones.</p></div></details><details class=\"pq\"><summary>¿-s?</summary><div class=\"pa\"><p>+s · <strong>-es</strong> tras s, ss, sh, ch, x, o (watches, goes) · consonante + y → <strong>-ies</strong> (studies) · vocal + y → <strong>-ys</strong> (plays) · <strong>has, does, is</strong>.</p></div></details><details class=\"pq\"><summary>¿Adverbios?</summary><div class=\"pa\"><p><strong>Delante del verbo</strong> (I always talk) · <strong>detrás de be</strong> (I am always happy) · <em>every day, once a week</em> <strong>al final</strong>.</p></div></details><details class=\"pq\"><summary>¿Pistas?</summary><div class=\"pa\"><p>always, usually, often, sometimes, rarely, hardly ever, never, every day, on Mondays.</p></div></details><h3 class='ih'>Present Continuous</h3><details class=\"pq\"><summary>¿Forma?</summary><div class=\"pa\"><p><strong>am/is/are + -ing</strong> (sin el <em>be</em> no vale: <del>She working</del>).</p></div></details><details class=\"pq\"><summary>¿3 usos?</summary><div class=\"pa\"><p>Ahora mismo · temporal (this year) · planes de futuro cerrados (We're meeting Ana at three).</p></div></details><details class=\"pq\"><summary>¿-ing?</summary><div class=\"pa\"><p>write → <strong>writing</strong> · run → <strong>running</strong> · lie → <strong>lying</strong> · see → <strong>seeing</strong> · study → <strong>studying</strong> (la y nunca cambia).</p></div></details><details class=\"pq\"><summary>¿Pistas?</summary><div class=\"pa\"><p>now, right now, at the moment, today, this week, at five o'clock, <strong>Look! Listen! Be quiet!</strong></p></div></details><details class=\"pq\"><summary>¿Simple o Continuous?</summary><div class=\"pa\"><p><em>I usually go by bus… but today I am walking</em> → <strong>usually = Simple · today/now = Continuous</strong>.</p></div></details><h3 class='ih'>Present Perfect Simple</h3><details class=\"pq\"><summary>¿Forma?</summary><div class=\"pa\"><p><strong>have/has + participio (3ª columna)</strong>.</p></div></details><details class=\"pq\"><summary>¿3 usos?</summary><div class=\"pa\"><p>Experiencias sin decir cuándo (I have been to London) · resultado que se nota ahora (I have lost my keys) · empezó antes y sigue (We have lived here for ten years).</p></div></details><details class=\"pq\"><summary>¿Palabras?</summary><div class=\"pa\"><p><strong>already</strong> (ya, afirmativa, en medio) · <strong>yet</strong> (ya/todavía, negativa y pregunta, al final) · <strong>just</strong> (acabar de) · <strong>ever</strong> (alguna vez, preguntas) · <strong>never</strong> · <strong>for + duración</strong> (for two years) · <strong>since + inicio</strong> (since 2010).</p></div></details><details class=\"pq\"><summary>¿En español?</summary><div class=\"pa\"><p>Pretérito perfecto: <strong>he trabajado, ha ido</strong>.</p></div></details><h3 class='ih'>Present Perfect Continuous</h3><details class=\"pq\"><summary>¿Forma?</summary><div class=\"pa\"><p><strong>have/has been + -ing</strong>.</p></div></details><details class=\"pq\"><summary>¿Usos?</summary><div class=\"pa\"><p>Duración hasta ahora (I have been waiting for an hour) · acaba de parar y se nota (She's tired: she has been running).</p></div></details><details class=\"pq\"><summary>¿Trampa?</summary><div class=\"pa\"><p>«Llevo dos horas esperando» = <strong>I have been waiting for two hours</strong> (no <del>I am waiting</del>).</p></div></details><details class=\"pq\"><summary>¿Pistas?</summary><div class=\"pa\"><p>for, since, all day, all morning, <strong>How long…?</strong></p></div></details><details class=\"pq\"><summary>¿Simple o Continuous?</summary><div class=\"pa\"><p><strong>Resultado / número → Simple</strong> (I have written three emails) · <strong>duración → Continuous</strong> (I have been writing emails all morning).</p></div></details><details class=\"pq\"><summary>¿Stative verbs?</summary><div class=\"pa\"><p>🟥 <strong>know, be, like… no van en continuo</strong>: I know, I have known (no <del>I am knowing</del>).</p></div></details><h3 class='ih'>Los 10 que no puedes fallar</h3><ol>\n<li><strong>He doesn't play</strong> (no <em>plays</em>).</li>\n<li><strong>We work</strong> (la -s solo con he/she/it).</li>\n<li><strong>She is working</strong> (con <em>be</em>).</li>\n<li><strong>I have been waiting for two hours</strong> (\"llevo\").</li>\n<li><strong>for</strong> duración · <strong>since</strong> inicio.</li>\n<li><strong>already</strong> afirmativa · <strong>yet</strong> negativa/pregunta al final.</li>\n<li><strong>visited / opened</strong> (no se dobla).</li>\n<li><strong>-ed extra sílaba solo tras d/t</strong>.</li>\n<li><strong>I know</strong> (stative, sin -ing).</li>\n<li><strong>Con have/has → 3ª columna</strong> (have gone, have written).</li>\n</ol></section>",
+   "opcion": "⚡ Lo imprescindible",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "titulo": "📖 Glosario",
+   "cab": [
+    "Término",
+    "Significado"
+   ],
+   "opcion": "📖 Glosario",
+   "indice": "📖 Glosario"
+  }
+ ]
+}

@@ -1,0 +1,1744 @@
+{
+ "unidad": "ipe-tema5",
+ "titulo": "IPE · Primeros auxilios",
+ "eyebrow": "🦺 IPE 1 · Tema 5",
+ "h1": "Repaso completo: los primeros auxilios en la empresa",
+ "sub": "Las 13 diapositivas en el mismo orden que el PowerPoint + vocabulario + test y actividades de la profe resueltos · 11 bloques · 35 conceptos + 🏭 Bloque 12: actividad «Accidente en la nave»",
+ "subHtml": "Las <b>13 diapositivas</b> en el mismo orden que el PowerPoint + vocabulario + test y actividades de la profe resueltos · 11 bloques · 35 conceptos + 🏭 Bloque 12: actividad «Accidente en la nave»",
+ "como": "<summary>🧭 Cómo usar este repaso</summary><div class=\"how-b\"><p><b>Cada concepto tiene siempre las mismas partes, en este orden:</b></p>\n<ul><li><b>📍 Diapositiva</b>: de dónde sale.</li>\n<li><b>📘 Qué significa cada palabra</b>: primero <b>💡 Para entenderlo</b> (fácil) y después <b>📌 Definición de la diapositiva</b>, que es <b>la que tienes que dar en el examen</b>. Si pone <b>⚠️ La diapositiva no la define</b>, vale la definición general.</li>\n<li><b>📋 Lo que dice la profe</b>: el contenido del PowerPoint, completo.</li>\n<li><b>💡 Entiéndelo</b> y <b>🧠 Truco</b>: para comprenderlo y no olvidarlo.</li>\n<li><b>❓ Ponte a prueba</b>: contesta sin mirar. Si te sale, marca <b>Lo domino</b>.</li></ul>\n<p><b>Colores:</b> 🔴 imprescindible (sí o sí) · 🟠 importante · 🔵 basta con leerlo una vez.</p><p><b>Botones de la página:</b></p>\n<ul><li><b>☰ Índice</b> (abajo a la izquierda): todos los bloques y conceptos; toca uno para ir directo.</li>\n<li><b>💡 Tapar</b> (abajo a la derecha): tapa todas las definiciones; toca cada una para destaparla.</li>\n<li><b>🃏 Tarjetas</b>: pregunta por delante, respuesta por detrás. Elige bloque y practica.</li>\n<li><b>🔎 Buscar</b> (arriba): escribe cualquier palabra y toca el resultado.</li>\n<li><b>Ponte a prueba</b> (arriba): esconde las respuestas y deja solo las preguntas.</li></ul>\n<p><b>Orden recomendado:</b> bloques en orden → tarjetas de cada bloque → <b>test y actividades de la profe</b> → trampas → Lo imprescindible.</p></div>",
+ "clave": "ipe5-repaso-v1",
+ "examen": {
+  "em": "🦺",
+  "asig": "IPE 1",
+  "examen": "Tema 5",
+  "fecha": "",
+  "id": "ipe5"
+ },
+ "simulacro": "ipe-tema5/simulacro/",
+ "tipografia": "Rubik:wght@800",
+ "css": "#nave{background:#e3f4f1;border:2px solid #0f7c74;border-radius:16px;padding:14px}\n#nave .xs-h{color:#fff;background:#0f7c74;border-radius:10px;padding:10px 12px;border:0}\n#nave .pq{border-left:5px solid #0f7c74}\n#nave .pn{background:#0f7c74;color:#fff}\n.dl.nave{color:#0f7c74;font-weight:700}\n.dl.b12{display:flex;align-items:center;gap:10px;margin-top:6px;background:#e3f4f1;border-radius:10px}\n.dl.b12 .dn{background:#0f7c74;color:#fff}\n@media (prefers-color-scheme:dark){:root:not([data-theme=\"light\"]) #nave{background:#10302c;border-color:#4fd1c5}}\n@media (prefers-color-scheme:dark){:root:not([data-theme=\"light\"]) #nave .xs-h,:root:not([data-theme=\"light\"]) #nave .pn{background:#4fd1c5;color:#10302c}}\n@media (prefers-color-scheme:dark){:root:not([data-theme=\"light\"]) .dl.nave{color:#4fd1c5}}",
+ "buscar": [
+  [
+   "#hoja",
+   "Test y actividades"
+  ],
+  [
+   "#nave",
+   "Bloque 12 · Accidente en la nave"
+  ],
+  [
+   "#impres",
+   "Lo imprescindible"
+  ]
+ ],
+ "plan": {
+  "repaso": "[\n {t:\"🔁 Tarjetas: solo las que fallé\",d:\"En el Repaso: 🃏 Tarjetas → «Solo las que fallé». Hasta que no quede ninguna.\",m:20,u:\"#fc\",rev:1},\n {t:\"📝 Test de la profe (17 preguntas)\",d:\"Contesta <b>sin mirar</b> y luego destapa cada respuesta.\",m:25,u:\"#hoja\",rev:1},\n {t:\"🩹 Repasa lo que fallaste\",d:\"Busca cada fallo en el Repaso (🔎 Buscar) y vuelve a leer ese concepto.\",m:20,u:\"#hoja\",rev:1},\n {t:\"🧩 Actividades de la profe (casos prácticos)\",d:\"Resuélvelas en voz alta o por escrito antes de abrir la respuesta. Es lo más parecido al examen.\",m:40,u:\"#hoja\",rev:1},\n {t:\"⚠️ Trampas y 🔢 números clave\",d:\"Las parejas que se confunden y las cifras (%, µm, mm/h…).\",m:20,u:\"#trampas\",rev:1},\n {t:\"⚡ Lo imprescindible\",d:\"Pregunta → respuesta corta. Lo último antes de dormir.\",m:20,u:\"#impres\",rev:1}]",
+  "unDia": "⚡ Con 1 solo día no da para todo: céntrate en los conceptos 🔴, el test y las actividades y \"Lo imprescindible\".",
+  "ultimoDia": [
+   " + Repaso final",
+   "Repaso final: test, actividades y trampas"
+  ]
+ },
+ "bloques": [
+  {
+   "titulo": "Los primeros auxilios",
+   "conceptos": [
+    {
+     "titulo": "De qué trata el tema",
+     "lv": 3,
+     "fuente": "Diapositiva 1 (portada)",
+     "defs": [
+      {
+       "t": "Primeros auxilios",
+       "facil": "La primera ayuda que se da a una persona herida o enferma antes de que llegue el médico.",
+       "diapo": "Medidas que se adoptan inicialmente, hasta que se puede conseguir asistencia sanitaria profesional, en el mismo lugar de los hechos, con una persona accidentada o enferma de manera repentina."
+      }
+     ],
+     "prof": "<p>El tema 5 se llama <strong>«Los primeros auxilios en la empresa»</strong> y tiene 4 apartados:</p>\n<ol>\n<li><strong>Los primeros auxilios:</strong> conducta PAS, triaje y botiquín.</li>\n<li><strong>El soporte vital básico</strong> (SVB): cadena de supervivencia y RCP.</li>\n<li><strong>La actuación ante atragantamientos.</strong></li>\n<li><strong>Las técnicas de actuación ante otras emergencias:</strong> hemorragias, quemaduras, traumatismos, heridas, pérdida de consciencia y transporte de heridos.</li>\n</ol>",
+     "entiende": "El tema te enseña <strong>qué hacer en los primeros minutos</strong> de un accidente en el trabajo, hasta que llegan los profesionales: primero el método general (PAS), luego cómo salvar a alguien que no respira (SVB) y después cada tipo de lesión.",
+     "truco": "<strong>\"Auxilios, Vida, Atragantamiento, Otras\"</strong> → 1 PAS · 2 RCP · 3 Heimlich · 4 lesiones.",
+     "q": "¿Cuáles son los 4 apartados del tema 5?",
+     "n": 1
+    },
+    {
+     "titulo": "Qué son los primeros auxilios y sus objetivos",
+     "lv": 1,
+     "fuente": "Diapositiva 2",
+     "defs": [
+      {
+       "t": "Primeros auxilios",
+       "facil": "Las medidas que se toman al momento, en el sitio del accidente, hasta que llega el personal sanitario.",
+       "diapo": "Medidas que se adoptan inicialmente, hasta que se puede conseguir asistencia sanitaria profesional, en el mismo lugar de los hechos, con una persona accidentada o enferma de manera repentina."
+      },
+      {
+       "t": "Asistencia sanitaria profesional",
+       "facil": "La atención de médicos, enfermeros o técnicos de emergencias.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Son las <strong>medidas que se adoptan inicialmente</strong>, hasta que se puede conseguir asistencia sanitaria profesional, <strong>en el mismo lugar de los hechos</strong>, con una persona accidentada o enferma de manera repentina.\n<strong>Objetivos</strong> de los primeros auxilios:</p>\n<ol>\n<li><strong>Mantener la vida</strong> de la persona accidentada.</li>\n<li><strong>Evitar que se agrave</strong> con nuevas lesiones o complicaciones.</li>\n<li><strong>Aliviar el dolor.</strong></li>\n<li><strong>Garantizar el traslado</strong> a un centro sanitario en condiciones adecuadas.</li>\n</ol>",
+     "entiende": "Tú no curas: <strong>aguantas la situación</strong> (mantienes viva a la persona, no dejas que empeore y le quitas dolor) hasta que llegan los profesionales y se la llevan bien.",
+     "truco": "Los 4 objetivos = <strong>\"Vida, No empeorar, Dolor, Traslado\"</strong> → <strong>\"Vi-No-Do-Tra\"</strong> (\"Vino de Trajano\").",
+     "q": "Define primeros auxilios y di sus 4 objetivos.",
+     "n": 2
+    },
+    {
+     "titulo": "Principios de los primeros auxilios",
+     "lv": 1,
+     "fuente": "Diapositiva 2 (recuadro «Recuerda»)",
+     "defs": [
+      {
+       "t": "Víctima inconsciente",
+       "facil": "Persona que no responde, como si estuviera dormida y no se despierta.",
+       "diapo": "Principio de los primeros auxilios: no dar de beber ni de comer a una víctima inconsciente."
+      },
+      {
+       "t": "Sistema de emergencia",
+       "facil": "Los servicios que acuden a ayudar (112).",
+       "diapo": "Principio de los primeros auxilios: activar urgentemente el sistema de emergencia."
+      }
+     ],
+     "prof": "<ol>\n<li><strong>Mantener la calma.</strong></li>\n<li><strong>Actuar con rapidez.</strong></li>\n<li><strong>Activar urgentemente el sistema de emergencia.</strong></li>\n<li><strong>No dar de beber ni de comer</strong> a una víctima inconsciente.</li>\n<li><strong>Mantener abrigada</strong> a la víctima.</li>\n<li><strong>No mover</strong> a la víctima, a menos que sea imprescindible.</li>\n<li><strong>Trasladar</strong> a la víctima de la forma adecuada.</li>\n</ol>",
+     "entiende": "Son las <strong>7 reglas de oro</strong> que valen para cualquier accidente. Si dudas en el examen qué hacer, casi siempre la respuesta está aquí: calma, rapidez, 112, nada por la boca, abrigo, no mover y traslado correcto.",
+     "truco": "<strong>\"Calma, Rápido, 112, Boca cerrada, Manta, Quieto, Traslado\"</strong> → cuenta con los dedos de una mano y dos de la otra: <strong>7 reglas</strong>.",
+     "q": "Di los 7 principios de los primeros auxilios.",
+     "n": 3
+    },
+    {
+     "titulo": "La conducta PAS (proteger, avisar y socorrer)",
+     "lv": 1,
+     "fuente": "Diapositiva 2 (texto y Fig. 5.1 «Cadena de socorro: sistema PAS»; caso práctico página 79)",
+     "defs": [
+      {
+       "t": "Conducta PAS",
+       "facil": "Los 3 pasos en orden ante un accidente: Proteger, Avisar, Socorrer.",
+       "diapo": "Proteger, avisar y socorrer. Técnica de primeros auxilios que debe activarse ante un accidente o una enfermedad repentina para evitar que el estado de la persona empeore."
+      },
+      {
+       "t": "Signos vitales",
+       "facil": "Las señales de que una persona está viva (consciencia y respiración).",
+       "diapo": "Evaluación primaria: reconocer los signos vitales, en este orden: consciencia y respiración."
+      },
+      {
+       "t": "Evaluación primaria / secundaria",
+       "facil": "Primera revisión, la de lo vital / segunda revisión, buscando otras lesiones.",
+       "diapo": "Evaluación primaria: reconocer los signos vitales, en este orden: consciencia y respiración. Evaluación secundaria: examinar otras posibles lesiones desde la cabeza hasta los pies."
+      }
+     ],
+     "prof": "<p>La conducta PAS es una <strong>técnica de primeros auxilios</strong> que debe activarse <strong>ante un accidente o una enfermedad repentina</strong> para evitar que el estado de la persona empeore.</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Proteger</th>\n<th>Avisar</th>\n<th>Socorrer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1. <strong>Alejar el peligro</strong> tanto de la persona accidentada como de nosotros mismos.</td>\n<td>1. Avisar a los <strong>servicios de socorro de la empresa</strong>.</td>\n<td>Una vez protegida la persona accidentada y avisados los servicios de socorro, se asiste a la víctima en <strong>dos fases</strong>:</td>\n</tr>\n<tr>\n<td>2. <strong>Observar si las causas</strong> que han provocado el accidente continúan activas e intentar eliminarlas para evitar nuevos accidentes.</td>\n<td>2. <strong>Llamar al 112</strong> y facilitar: datos de la persona que llama, <strong>lugar exacto</strong> de los hechos, <strong>tipo de accidente</strong>, <strong>número de personas heridas</strong> y su situación.</td>\n<td>1. <strong>Evaluación primaria:</strong> reconocer los <strong>signos vitales</strong>, en este orden: <strong>consciencia y respiración</strong>.</td>\n</tr>\n<tr>\n<td>3. <strong>Señalizar</strong> el lugar del accidente de forma adecuada. <strong>Solo si existe peligro</strong> para la persona accidentada se procederá a su traslado.</td>\n<td>3. <strong>Mantener libre la línea telefónica</strong> empleada para facilitar la comunicación con los servicios de ayuda.</td>\n<td>2. <strong>Evaluación secundaria:</strong> examinar otras posibles lesiones <strong>desde la cabeza hasta los pies</strong>.</td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/001.jpg",
+       "alt": "Fig. 5.1 Cadena de socorro: sistema PAS (diap. 2)",
+       "img": "<img src=\"img/001.jpg\" width=\"900\" height=\"320\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.1 Cadena de socorro: sistema PAS (diap. 2)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Primero <strong>tú y la víctima a salvo</strong> (si te electrocutas tú también, ya son dos heridos), luego <strong>pides ayuda</strong> dando datos claros y <strong>sin colgar la línea</strong>, y solo después <strong>atiendes</strong>: primero lo que mata (¿responde? ¿respira?) y luego el resto, de arriba abajo.",
+     "truco": "<strong>P-A-S = \"Primero yo a salvo, Aviso, Socorro\"</strong>. En socorrer: <strong>\"Con-Res\"</strong> (Consciencia → Respiración) y luego <strong>\"de la cabeza a los pies\"</strong>.",
+     "q": "¿Qué significa PAS, cuándo se activa y qué se hace en cada paso?",
+     "n": 4
+    }
+   ],
+   "min": 35
+  },
+  {
+   "titulo": "El triaje",
+   "conceptos": [
+    {
+     "titulo": "El triaje: qué es",
+     "lv": 1,
+     "fuente": "Diapositiva 3 (vocabulario: triaje)",
+     "defs": [
+      {
+       "t": "Triaje",
+       "facil": "Clasificar a los heridos por gravedad para atender primero a los más graves.",
+       "diapo": "Procedimiento empleado para clasificar a las personas heridas cuando hay un número indeterminado de ellas. Tiene como finalidad asegurar su supervivencia, priorizando las más graves."
+      },
+      {
+       "t": "Número indeterminado",
+       "facil": "Cuando no se sabe cuántos heridos hay (muchos).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>El <strong>triaje</strong> es un procedimiento empleado para <strong>clasificar</strong> a las personas heridas cuando hay un <strong>número indeterminado</strong> de ellas. Tiene como finalidad <strong>asegurar su supervivencia, priorizando las más graves</strong>.\nSu procedimiento consiste en <strong>asignar a cada víctima una tarjeta con un color</strong> (<strong>rojo, amarillo, verde o negro</strong>), dependiendo de la prioridad de atención.</p>",
+     "entiende": "Cuando hay muchos heridos y pocas manos, no atiendes al primero que ves ni al que más grita: <strong>pones una etiqueta de color a cada uno</strong> para saber a quién atender antes.",
+     "truco": "<strong>triaje = \"tri-ar\" = elegir</strong> (como \"triar\" las mejores frutas). Los colores son <strong>como un semáforo + negro</strong>.",
+     "q": "¿Qué es el triaje, para qué sirve y cómo se hace?",
+     "n": 5
+    },
+    {
+     "titulo": "Clasificación de heridos: triaje básico SHORT",
+     "lv": 1,
+     "fuente": "Diapositiva 3 (Fig. 5.2 «Clasificación de las personas accidentadas según el triaje básico SHORT»)",
+     "defs": [
+      {
+       "t": "Shock",
+       "facil": "Fallo grave de la circulación (la sangre no llega bien a los órganos).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Asfixia",
+       "facil": "Falta de aire en los pulmones.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Parada cardiorrespiratoria presenciada",
+       "facil": "La persona deja de respirar y el corazón se para delante de alguien.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Masa encefálica",
+       "facil": "El cerebro.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Se hacen 3 preguntas en orden:</p>\n<ol>\n<li><strong>¿Camina?</strong> → SÍ → <strong>VERDE</strong>. Si NO →</li>\n<li><strong>¿Habla sin dificultad y obedece órdenes sencillas?</strong> → SÍ → <strong>AMARILLO</strong>. Si NO →</li>\n<li><strong>¿Respira? (¿signos de circulación?)</strong> → SÍ → <strong>ROJO</strong> · NO → <strong>NEGRO</strong>.</li>\n</ol>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Color</th>\n<th>Ejemplos</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>🟢 <strong>Verde</strong></td>\n<td>Lesiones y fracturas menores · heridas menores</td>\n</tr>\n<tr>\n<td>🟡 <strong>Amarillo</strong></td>\n<td>Heridas en el abdomen · <strong>fracturas abiertas</strong> · dificultad respiratoria · riesgo de <em>shock</em> · personas quemadas con lesiones de <strong>menos del 20 %</strong></td>\n</tr>\n<tr>\n<td>🔴 <strong>Rojo</strong></td>\n<td><strong>Parada cardiorrespiratoria presenciada</strong> · <strong>asfixia</strong> u obstrucción mecánica de las vías respiratorias · <strong>hemorragia abundante</strong> · <strong>grandes quemados</strong></td>\n</tr>\n<tr>\n<td>⚫ <strong>Negro</strong></td>\n<td>Personas <strong>fallecidas</strong> · parada cardiorrespiratoria <strong>no presenciada</strong> · trauma craneal severo con <strong>salida de masa encefálica</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/002.jpg",
+       "alt": "Fig. 5.2 Triaje básico SHORT (diap. 3)",
+       "img": "<img src=\"img/002.jpg\" width=\"900\" height=\"333\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.2 Triaje básico SHORT (diap. 3)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "<strong>rojo = se atiende YA</strong> (se puede salvar si actúas rápido); <strong>amarillo = grave pero puede esperar un poco</strong>; <strong>verde = leve, camina solo</strong>; <strong>negro = ya no se puede hacer nada</strong>. Fíjate en la trampa: la PCR <strong>presenciada</strong> es <strong>roja</strong> (aún se puede salvar con RCP), la <strong>no presenciada</strong> es <strong>negra</strong> (no sabes cuánto tiempo lleva).",
+     "truco": "Las 3 preguntas = <strong>\"¿Camina? ¿Habla? ¿Respira?\"</strong> → <strong>\"Ca-Ha-Re\"</strong> → Verde, Amarillo, Rojo/Negro. <strong>\"Presenciada = Preferente (rojo); No presenciada = Negro\"</strong>.",
+     "q": "¿Qué 3 preguntas se hacen en el triaje SHORT y qué color recibe cada caso? Pon 2 ejemplos de cada color.",
+     "n": 6
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "El botiquín de primeros auxilios",
+   "conceptos": [
+    {
+     "titulo": "El botiquín: cuál debe tener la empresa y sus normas",
+     "lv": 1,
+     "fuente": "Diapositiva 4",
+     "defs": [
+      {
+       "t": "Botiquín portátil",
+       "facil": "Caja o maletín con material de primeros auxilios que se puede llevar al lugar del accidente.",
+       "diapo": "Las empresas deben tener desde un botiquín portátil hasta un local de primeros auxilios en aquellas con más de cincuenta personas trabajadoras. Ha de ser portátil y fácil de trasladar al lugar del accidente."
+      },
+      {
+       "t": "Local de primeros auxilios",
+       "facil": "Una sala preparada para atender heridos dentro de la empresa.",
+       "diapo": "Obligatorio en las empresas con más de cincuenta personas trabajadoras."
+      }
+     ],
+     "prof": "<p>En función del <strong>riesgo existente</strong>, de su <strong>tamaño</strong> y de las <strong>facilidades de acceso</strong> al centro de asistencia más cercano, las empresas deben tener desde un <strong>botiquín portátil</strong> hasta un <strong>local de primeros auxilios</strong> en aquellas con <strong>más de cincuenta personas trabajadoras</strong>.\nEl botiquín tiene que cumplir estas <strong>normas</strong>:</p>\n<ul>\n<li>Ha de ser <strong>portátil</strong> y fácil de trasladar al lugar del accidente.</li>\n<li>Debe <strong>revisarse periódicamente</strong> para reponer los elementos agotados o deteriorados.</li>\n<li>Tiene que estar <strong>debidamente señalizado</strong> y ubicado en un lugar de <strong>fácil acceso</strong>.</li>\n</ul>",
+     "entiende": "Lo que tenga la empresa depende de <strong>cuánto riesgo hay, cuánta gente trabaja y lo lejos que está el hospital</strong>. Con <strong>más de 50 trabajadores</strong>, además del botiquín hace falta una <strong>sala</strong> de primeros auxilios.",
+     "truco": "Las 3 normas = <strong>\"Se lleva, Se revisa, Se ve\"</strong> (portátil, revisado, señalizado). <strong>\"Más de 50 → local\"</strong>.",
+     "q": "¿De qué depende el tipo de botiquín de una empresa, cuándo hace falta un local y qué 3 normas cumple el botiquín?",
+     "n": 7
+    },
+    {
+     "titulo": "Contenido del botiquín portátil",
+     "lv": 2,
+     "fuente": "Diapositiva 4 (Fig. 5.3 «Contenido de un botiquín de primeros auxilios»)",
+     "defs": [
+      {
+       "t": "Antiséptico",
+       "facil": "Producto que mata los microbios de la piel o de una herida.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Gasas estériles",
+       "facil": "Gasas sin ningún microbio.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Algodón hidrófilo",
+       "facil": "Algodón que absorbe líquidos.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Esparadrapo",
+       "facil": "Cinta adhesiva para sujetar gasas.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Apósito",
+       "facil": "Tirita o almohadilla que cubre una herida.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Manta isotérmica",
+       "facil": "Manta fina plateada que conserva el calor.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Suero fisiológico",
+       "facil": "Agua con sal estéril para lavar heridas.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Torniquete",
+       "facil": "Banda que se aprieta en un brazo o pierna para cortar una hemorragia.",
+       "diapo": "Tercer método para detener las hemorragias externas (después de la compresión directa y la arterial)."
+      },
+      {
+       "t": "Férula",
+       "facil": "Pieza rígida para inmovilizar un hueso o articulación.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Analgésico",
+       "facil": "Producto que quita el dolor.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grupo</th>\n<th>Contenido</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Instrumental básico</strong></td>\n<td>Desinfectantes y antisépticos, gasas estériles, algodón hidrófilo, vendas, esparadrapo, apósitos adhesivos, tijeras, pinzas y guantes desechables</td>\n</tr>\n<tr>\n<td><strong>Material auxiliar</strong></td>\n<td>Manta isotérmica, botella de suero fisiológico, antiséptico yodado y torniquete</td>\n</tr>\n<tr>\n<td><strong>Otros</strong></td>\n<td>Férulas, analgésico (espray, pomada), etc.</td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/003.jpg",
+       "alt": "Fig. 5.3 Contenido de un botiquín (diap. 4)",
+       "img": "<img src=\"img/003.jpg\" width=\"500\" height=\"854\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.3 Contenido de un botiquín (diap. 4)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "El <strong>básico</strong> es lo de curar heridas (limpiar, tapar y sujetar); el <strong>auxiliar</strong> es para casos más serios (frío, lavar, hemorragias); <strong>otros</strong> son para golpes y dolor.",
+     "truco": "<strong>básico = \"lo de la tirita\"</strong>; <strong>auxiliar = \"M-S-A-T\"</strong> (<strong>M</strong>anta, <strong>S</strong>uero, <strong>A</strong>ntiséptico yodado, <strong>T</strong>orniquete); <strong>otros = \"Férula y analgésico\"</strong>.",
+     "q": "¿Qué contiene un botiquín portátil según sus 3 grupos?",
+     "n": 8
+    }
+   ],
+   "min": 20
+  },
+  {
+   "titulo": "El soporte vital básico",
+   "conceptos": [
+    {
+     "titulo": "Soporte vital básico (SVB), PCR y RCP",
+     "lv": 1,
+     "fuente": "Diapositiva 5 (vocabulario: parada cardiorrespiratoria (PCR) y reanimación cardiopulmonar básica (RCP))",
+     "defs": [
+      {
+       "t": "Soporte vital básico (SVB)",
+       "facil": "Conjunto de actuaciones para evitar y tratar una parada cardiorrespiratoria sin material médico.",
+       "diapo": "Integra tanto las medidas de prevención de la parada cardiorrespiratoria (PCR) como las medidas de reanimación cardiopulmonar (RCP), en caso de que esta se produzca. También incluye el conocimiento del sistema de emergencias y la desfibrilación precoz."
+      },
+      {
+       "t": "Parada cardiorrespiratoria (PCR)",
+       "facil": "El corazón deja de latir de forma eficaz y la persona deja de respirar.",
+       "diapo": "Vocabulario de la diapositiva 5: parada cardiorrespiratoria (PCR). El SVB integra las medidas de prevención de la PCR."
+      },
+      {
+       "t": "Reanimación cardiopulmonar (RCP)",
+       "facil": "Compresiones en el pecho y respiraciones para mantener la sangre y el oxígeno circulando.",
+       "diapo": "Vocabulario de la diapositiva 5: reanimación cardiopulmonar básica (RCP). Medidas que se aplican en caso de que se produzca la PCR."
+      },
+      {
+       "t": "Desfibrilación",
+       "facil": "Descarga eléctrica que intenta que el corazón vuelva a latir con ritmo normal (con el DEA).",
+       "diapo": "El SVB también incluye la desfibrilación precoz (3.er eslabón de la cadena de supervivencia)."
+      }
+     ],
+     "prof": "<p>El <strong>soporte vital básico (SVB)</strong> integra tanto las medidas de <strong>prevención de la parada cardiorrespiratoria (PCR)</strong> como las medidas de <strong>reanimación cardiopulmonar (RCP)</strong>, en caso de que esta se produzca. También incluye el <strong>conocimiento del sistema de emergencias</strong> y la <strong>desfibrilación precoz</strong>.</p>",
+     "entiende": "El SVB es el \"paquete\" completo: <strong>evitar</strong> que alguien entre en parada, <strong>reanimarlo</strong> si entra (RCP), <strong>saber llamar</strong> a emergencias y <strong>usar el desfibrilador</strong> cuanto antes.",
+     "truco": "<strong>SVB = \"Previene, Reanima, Llama y Desfibrila\"</strong>. <strong>PCR = el problema</strong> (Parada), <strong>RCP = la solución</strong> (Reanimación): son las mismas letras cambiadas de sitio.",
+     "q": "¿Qué es el soporte vital básico y qué significan PCR y RCP?",
+     "n": 9
+    },
+    {
+     "titulo": "La cadena de supervivencia",
+     "lv": 1,
+     "fuente": "Diapositiva 5 (Fig. 5.4 «Pasos de la cadena de supervivencia»)",
+     "defs": [
+      {
+       "t": "Cadena de supervivencia",
+       "facil": "Los 4 pasos seguidos que más salvan vidas en una parada.",
+       "diapo": "Compuesta por cuatro acciones o eslabones que hay que desarrollar para conseguir revertir la situación de PCR."
+      },
+      {
+       "t": "European Resuscitation Council (ERC)",
+       "facil": "El Consejo Europeo de Resucitación, que publica las guías de RCP.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Precoz",
+       "facil": "Lo antes posible.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Testigos",
+       "facil": "Las personas que están presentes.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Soporte vital avanzado",
+       "facil": "La atención con material médico que da el personal sanitario.",
+       "diapo": "4.º eslabón: soporte vital avanzado y cuidados posteriores a la RCP. Solo puede ser realizado por personal sanitario."
+      }
+     ],
+     "prof": "<p>Para salvar la vida de las personas que sufren una PCR se debe seguir la <strong>cadena de supervivencia</strong>, compuesta por <strong>cuatro acciones o eslabones</strong> para revertir la situación de PCR. Según el <strong>European Resuscitation Council (ERC)</strong>:</p>\n<ol>\n<li><strong>Reconocimiento precoz</strong> de la urgencia médica y <strong>llamada de auxilio</strong>.</li>\n<li><strong>Medidas de RCP precoz</strong> realizada por testigos.</li>\n<li><strong>Desfibrilación precoz.</strong></li>\n<li><strong>Soporte vital avanzado</strong> y cuidados posteriores a la RCP.</li>\n</ol>",
+     "imgs": [
+      {
+       "src": "img/004.jpg",
+       "alt": "Fig. 5.4 Pasos de la cadena de supervivencia (diap. 5)",
+       "img": "<img src=\"img/004.jpg\" width=\"900\" height=\"356\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.4 Pasos de la cadena de supervivencia (diap. 5)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Es una cadena: <strong>si falla un eslabón, se rompe</strong>. Cada minuto sin RCP ni desfibrilación baja mucho la posibilidad de sobrevivir; por eso los 3 primeros pasos tienen la palabra <strong>«precoz»</strong>.",
+     "truco": "<strong>\"Reconozco y llamo → Aprieto el pecho → Descarga → Hospital\"</strong> = <strong>\"Lla-Pe-Des-Hos\"</strong>. <strong>El 1.º siempre es reconocer y llamar al 112</strong> (pregunta típica del test).",
+     "q": "¿Cuáles son los 4 eslabones de la cadena de supervivencia y cuál es el primero?",
+     "n": 10
+    },
+    {
+     "titulo": "Quién puede hacer cada paso",
+     "lv": 3,
+     "fuente": "Diapositiva 6",
+     "defs": [
+      {
+       "t": "Técnicas de salvamento",
+       "facil": "Las maniobras para salvar una vida (RCP, PLS, Heimlich…).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Algoritmo",
+       "facil": "Lista de pasos en orden que se siguen siempre igual.",
+       "diapo": "El SVB se desarrolla de acuerdo con los pasos del algoritmo de las guías del año 2021 del European Resuscitation Council (ERC)."
+      }
+     ],
+     "prof": "<p>Los <strong>tres primeros pasos</strong> de la cadena de supervivencia pueden ser ejecutados por <strong>cualquier persona</strong> con conocimientos básicos sobre técnicas de salvamento y constituyen el <strong>soporte vital básico</strong>. <strong>El paso final solo puede ser realizado por personal sanitario.</strong>\nEl soporte vital básico se desarrolla de acuerdo con los pasos del <strong>algoritmo de las guías del año 2021 del European Resuscitation Council (ERC)</strong>.</p>",
+     "entiende": "Tú (o cualquier compañero) puedes hacer <strong>llamar, RCP y DEA</strong>; el <strong>4.º eslabón</strong> (soporte vital avanzado) es cosa de <strong>médicos y técnicos</strong>.",
+     "truco": "<strong>\"3 para todos, 1 para sanitarios\"</strong>. Guías <strong>ERC 2021</strong>.",
+     "q": "¿Qué pasos de la cadena de supervivencia puede hacer cualquier persona y cuál solo el personal sanitario?",
+     "n": 11
+    },
+    {
+     "titulo": "El algoritmo del soporte vital básico (RCP 30:2)",
+     "lv": 1,
+     "fuente": "Diapositiva 6 (Fig. 5.5 «Soporte vital básico (SVB)»)",
+     "defs": [
+      {
+       "t": "Compresiones torácicas",
+       "facil": "Apretar fuerte y rápido el centro del pecho para bombear la sangre.",
+       "diapo": "Da treinta compresiones torácicas."
+      },
+      {
+       "t": "Ventilaciones de rescate",
+       "facil": "Soplar aire en la boca de la víctima (boca a boca).",
+       "diapo": "Da dos ventilaciones de rescate."
+      },
+      {
+       "t": "30:2",
+       "facil": "30 compresiones seguidas de 2 ventilaciones, una y otra vez.",
+       "diapo": "Continúa RCP 30:2."
+      },
+      {
+       "t": "DEA",
+       "facil": "Desfibrilador externo automático, aparato que analiza el corazón y da la descarga si hace falta.",
+       "diapo": "En cuanto llegue el DEA, enciéndelo y sigue sus instrucciones."
+      }
+     ],
+     "prof": "<ol>\n<li><strong>Persona inconsciente con respiración ausente o anormal.</strong></li>\n<li><strong>Llama al servicio de emergencias.</strong></li>\n<li><strong>Da treinta compresiones torácicas.</strong></li>\n<li><strong>Da dos ventilaciones de rescate.</strong></li>\n<li><strong>Continúa RCP 30:2.</strong></li>\n<li><strong>En cuanto llegue el DEA, enciéndelo y sigue sus instrucciones.</strong></li>\n</ol>",
+     "imgs": [
+      {
+       "src": "img/005.jpg",
+       "alt": "Fig. 5.5 Soporte vital básico (diap. 6)",
+       "img": "<img src=\"img/005.jpg\" width=\"361\" height=\"569\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.5 Soporte vital básico (diap. 6)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Si <strong>no responde y no respira bien</strong>, no esperes: <strong>llama</strong> y empieza a <strong>apretar el pecho</strong>. Cada 30 compresiones, 2 soplos, sin parar, hasta que llegue el DEA (que te va diciendo en voz alta qué hacer) o los sanitarios.",
+     "truco": "<strong>\"30:2 como el 30 de febrero: 30 aprieto y 2 soplo\"</strong>. Orden: <strong>\"Mira, Llama, Aprieta, Sopla, Repite, DEA\"</strong>.",
+     "q": "Explica en orden los 6 pasos del algoritmo del SVB.",
+     "n": 12
+    },
+    {
+     "titulo": "Importante: cómo avisar si estás solo",
+     "lv": 1,
+     "fuente": "Diapositiva 6 (recuadro «Importante»)",
+     "defs": [
+      {
+       "t": "Servicios de Emergencias Médicas (112/061)",
+       "facil": "Los teléfonos de emergencias sanitarias.",
+       "diapo": "Ante una persona inconsciente y con una respiración ausente o anormal, se debe alertar inmediatamente a los Servicios de Emergencias Médicas (112/061)."
+      },
+      {
+       "t": "Teleoperador de emergencias",
+       "facil": "La persona del 112 que te guía por teléfono.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Manos libres",
+       "facil": "El altavoz del móvil, para hablar sin sujetarlo.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Ante una persona <strong>inconsciente</strong> y con una <strong>respiración ausente o anormal</strong>, se debe alertar inmediatamente a los <strong>Servicios de Emergencias Médicas (112/061)</strong>.</p>\n<ul>\n<li><strong>Socorrista solo y con móvil:</strong> marcar el número de emergencias, <strong>activar el altavoz</strong> u otra opción de manos libres e <strong>iniciar inmediatamente la RCP</strong>, asistido por el teleoperador.</li>\n<li><strong>Socorrista solo y sin teléfono:</strong> <strong>dejar a la víctima</strong> para avisar al sistema de emergencias y <strong>posteriormente iniciar la RCP</strong>.</li>\n</ul>",
+     "entiende": "Con móvil <strong>no te separas nunca</strong> de la víctima: altavoz y a hacer RCP mientras te guían. Sin móvil, primero <strong>vas a pedir ayuda</strong> y luego vuelves: sin el aviso no llegará el DEA ni la ambulancia.",
+     "truco": "<strong>\"Con móvil: altavoz y aprieto. Sin móvil: corro, aviso y vuelvo\"</strong>. Teléfonos: <strong>112 / 061</strong>.",
+     "q": "¿Qué debe hacer un socorrista que está solo ante una persona inconsciente que no respira, si tiene móvil y si no lo tiene?",
+     "n": 13
+    },
+    {
+     "titulo": "Casos prácticos: actuación en PCR y posición lateral de seguridad",
+     "lv": 2,
+     "fuente": "Diapositiva 6 (casos prácticos «Actuación en PCR» y «Posición lateral de seguridad», página 84 del libro)",
+     "defs": [
+      {
+       "t": "Posición lateral de seguridad (PLS)",
+       "facil": "Tumbar a la persona de lado, con la cabeza un poco hacia atrás, para que no se ahogue con la lengua o con un vómito.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Maniobra frente-mentón",
+       "facil": "Una mano en la frente y dos dedos bajo la barbilla para inclinar la cabeza hacia atrás y abrir la vía respiratoria.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>La diapositiva solo remite a los <strong>casos prácticos de la página 84</strong> (actuación en PCR y posición lateral de seguridad). ⚠️ Lo que sigue <strong>no está en la diapositiva</strong>; es lo general de las guías y lo que pregunta el test:</p>\n<ul>\n<li><strong>Consciencia:</strong> háblale y tócale los hombros. Es el <strong>primer signo vital</strong> que se evalúa.</li>\n<li><strong>Respiración:</strong> abre la vía aérea con la <strong>maniobra frente-mentón</strong> y <strong>mira, escucha y siente</strong> si respira (unos 10 segundos).</li>\n<li><strong>Si está inconsciente y respira → PLS</strong> y llamar al 112, vigilando que siga respirando.</li>\n<li><strong>Si está inconsciente y no respira (o respira mal) → 112 + RCP 30:2.</strong> Las compresiones, en el <strong>centro del pecho</strong>, a un ritmo de <strong>100-120 por minuto</strong> y unos <strong>5-6 cm</strong> de profundidad.</li>\n</ul>",
+     "entiende": "La <strong>PLS</strong> es para quien <strong>respira pero no responde</strong>: de lado no se atraganta con su lengua ni con el vómito. Si <strong>no respira</strong>, la PLS no sirve: hay que hacer <strong>RCP</strong>.",
+     "truco": "<strong>\"Respira → de lado (PLS) · No respira → RCP\"</strong>. Ritmo de compresiones: <strong>\"100-120, al ritmo de <em>Stayin' Alive</em>\"</strong>. <strong>\"Frente-mentón = abro para ver si respira\"</strong>.",
+     "q": "¿Cuándo se pone a alguien en posición lateral de seguridad, para qué sirve la maniobra frente-mentón y a qué ritmo se hacen las compresiones?",
+     "n": 14
+    }
+   ],
+   "min": 60
+  },
+  {
+   "titulo": "La actuación ante atragantamientos",
+   "conceptos": [
+    {
+     "titulo": "El atragantamiento y sus tipos",
+     "lv": 1,
+     "fuente": "Diapositiva 7",
+     "defs": [
+      {
+       "t": "Atragantamiento",
+       "facil": "Algo se queda atascado en la garganta o la tráquea y no deja pasar el aire.",
+       "diapo": "Obstrucción de las vías respiratorias que impide que el aire llegue a los pulmones, lo que puede provocar la pérdida de consciencia por la falta de oxígeno."
+      },
+      {
+       "t": "Vías respiratorias",
+       "facil": "El camino del aire (nariz, boca, garganta, tráquea, bronquios).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Obstrucción",
+       "facil": "Atasco, algo que tapa el paso.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>El <strong>atragantamiento</strong> es una <strong>obstrucción de las vías respiratorias</strong> que impide que el aire llegue a los pulmones, lo que puede provocar la <strong>pérdida de consciencia por la falta de oxígeno</strong>.\nGeneralmente se relaciona con <strong>comida o con otros cuerpos sólidos</strong>. Puede ser de dos tipos:</p>\n<ul>\n<li>Obstrucción <strong>incompleta o parcial</strong>.</li>\n<li>Obstrucción <strong>completa o total</strong>.\nLa <strong>actuación</strong> varía en función del tipo de obstrucción.</li>\n</ul>",
+     "entiende": "En la <strong>parcial</strong> todavía pasa algo de aire: la persona <strong>tose, habla o hace ruido</strong>. En la <strong>total</strong> no pasa nada de aire: <strong>no puede hablar, ni toser, ni respirar</strong> y se lleva las manos al cuello.",
+     "truco": "<strong>\"Si tose, hay aire (parcial). Si no tose ni habla, no hay aire (total)\"</strong>.",
+     "q": "¿Qué es un atragantamiento y qué tipos hay? ¿Cómo distingues uno de otro?",
+     "n": 15
+    },
+    {
+     "titulo": "Protocolo de actuación ante un atragantamiento",
+     "lv": 1,
+     "fuente": "Diapositiva 7 (Fig. 5.13 «Actuación en caso de obstrucción de las vías respiratorias»)",
+     "defs": [
+      {
+       "t": "Palmadas en la espalda",
+       "facil": "Golpes fuertes con la mano abierta entre los omóplatos, con la persona inclinada hacia delante.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cuerpo extraño",
+       "facil": "El objeto o la comida que se ha atascado.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Qué hacer</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Obstrucción incompleta o parcial</strong></td>\n<td>1. <strong>Animar a toser.</strong> 2. <strong>No golpear la espalda</strong>, ya que se podría producir una obstrucción completa o introducir más el cuerpo extraño.</td>\n</tr>\n<tr>\n<td><strong>Obstrucción completa, si está consciente</strong></td>\n<td>1. <strong>Revisar la boca.</strong> 2. <strong>Dar cinco palmadas fuertes en la espalda.</strong> 3. <strong>Realizar la maniobra de Heimlich.</strong></td>\n</tr>\n<tr>\n<td><strong>Obstrucción completa, si está inconsciente</strong></td>\n<td>1. <strong>Llamar al 112.</strong> 2. <strong>Iniciar la RCP.</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/006.jpg",
+       "alt": "Fig. 5.13 Actuación en obstrucción de las vías respiratorias (diap. 7)",
+       "img": "<img src=\"img/006.jpg\" width=\"900\" height=\"298\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.13 Actuación en obstrucción de las vías respiratorias (diap. 7)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Si tose, <strong>su tos es lo más fuerte</strong> que hay: tú solo le animas. Si no puede toser y sigue despierto, le ayudas tú (palmadas y Heimlich). Si se desmaya, ya es una <strong>parada</strong>: 112 y RCP.",
+     "truco": "<strong>\"Tose → anima. No tose → 5 palmadas + Heimlich. Se desmaya → 112 + RCP\"</strong>. Recuerda el <strong>5</strong> de las palmadas.",
+     "q": "¿Qué se hace en una obstrucción parcial, en una total con consciencia y en una total con inconsciencia?",
+     "n": 16
+    },
+    {
+     "titulo": "La maniobra de Heimlich",
+     "lv": 1,
+     "fuente": "Diapositiva 7 (texto y Fig. 5.14 «Maniobra de Heimlich»)",
+     "defs": [
+      {
+       "t": "Maniobra de Heimlich",
+       "facil": "Apretar fuerte hacia dentro y hacia arriba en la boca del estómago para que el aire de los pulmones expulse lo que atasca.",
+       "diapo": "Consiste en empujar el cuerpo extraño hacia la tráquea y, por tanto, hacia la salida, mediante la expulsión del aire que llena los pulmones."
+      },
+      {
+       "t": "Tráquea",
+       "facil": "El tubo que lleva el aire de la garganta a los pulmones.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>En caso de <strong>obstrucción completa</strong> se debe realizar la <strong>maniobra de Heimlich</strong>, que consiste en <strong>empujar el cuerpo extraño hacia la tráquea y, por tanto, hacia la salida</strong>, mediante la <strong>expulsión del aire que llena los pulmones</strong>.\nEn la figura: <strong>de pie</strong>, el socorrista <strong>detrás</strong> de la víctima rodeándola con los brazos y el puño en la boca del estómago; y <strong>tumbada</strong>, el socorrista <strong>a horcajadas</strong> sobre ella empujando con las manos.</p>",
+     "imgs": [
+      {
+       "src": "img/007.jpg",
+       "alt": "Fig. 5.14 Maniobra de Heimlich (diap. 7)",
+       "img": "<img src=\"img/007.jpg\" width=\"692\" height=\"334\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.14 Maniobra de Heimlich (diap. 7)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Es como <strong>apretar una botella de plástico</strong> con el tapón suelto: el aire de dentro sale de golpe y <strong>dispara el tapón</strong>. Los pulmones son la botella y la comida atascada es el tapón.",
+     "truco": "<strong>\"Heimlich = Hacia arriba y hacia dentro\"</strong>. Solo en la <strong>total y consciente</strong> (pregunta 12 del test).",
+     "q": "¿En qué consiste la maniobra de Heimlich y en qué caso se hace?",
+     "n": 17
+    }
+   ],
+   "min": 25
+  },
+  {
+   "titulo": "Las hemorragias",
+   "conceptos": [
+    {
+     "titulo": "Las hemorragias: qué son, tipos y objetivo",
+     "lv": 2,
+     "fuente": "Diapositiva 8 (y vocabulario del tema)",
+     "defs": [
+      {
+       "t": "Hemorragia",
+       "facil": "Salida de sangre de los vasos sanguíneos.",
+       "diapo": "Cualquier salida de la sangre de los vasos sanguíneos que la contiene."
+      },
+      {
+       "t": "Socorrista",
+       "facil": "La persona que da los primeros auxilios.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Las hemorragias pueden ser <strong>externas, internas o exteriorizadas</strong>. Ante una hemorragia, el objetivo del socorrista es <strong>evitar la pérdida de sangre</strong> o el <strong>empeoramiento del estado</strong> de la persona accidentada.</p>",
+     "entiende": "La diferencia está en <strong>por dónde va la sangre</strong>: sale por una <strong>herida</strong> (externa), <strong>se queda dentro</strong> (interna) o es interna pero <strong>sale por un orificio natural</strong> como la nariz o el oído (exteriorizada).",
+     "truco": "<strong>\"Fuera por herida, Dentro sin salida, Dentro y sale por un agujero natural\"</strong> = <strong>Externa, Interna, Exteriorizada</strong>.",
+     "q": "¿Qué es una hemorragia, qué tipos hay y cuál es el objetivo del socorrista?",
+     "n": 18
+    },
+    {
+     "titulo": "Hemorragias externas: los 3 métodos",
+     "lv": 1,
+     "fuente": "Diapositiva 8 (Fig. 5.16, 5.17 y 5.18) y diapositiva 9 (caso práctico «Realización de torniquete», página 87)",
+     "defs": [
+      {
+       "t": "Compresión directa",
+       "facil": "Apretar con gasas encima de la herida.",
+       "diapo": "Primer método, de los tres que se utilizan de manera consecutiva, para detener las hemorragias externas."
+      },
+      {
+       "t": "Compresión arterial",
+       "facil": "Apretar la arteria que lleva sangre a la herida, entre la herida y el corazón.",
+       "diapo": "Segundo método para detener las hemorragias externas; para hemorragias en las extremidades."
+      },
+      {
+       "t": "Torniquete",
+       "facil": "Apretar una banda alrededor del brazo o la pierna, por encima de la herida, para cortar el paso de la sangre.",
+       "diapo": "Tercer método para detener las hemorragias externas (después de la compresión directa y la arterial)."
+      }
+     ],
+     "prof": "<p>En las <strong>hemorragias externas</strong> la sangre <strong>sale a través de una herida</strong>. Para detenerlas se utilizan <strong>tres métodos de manera consecutiva</strong>:</p>\n<ol>\n<li><strong>Compresión directa</strong> (Fig. 5.16).</li>\n<li><strong>Compresión arterial</strong>, para hemorragias en las extremidades (Fig. 5.17).</li>\n<li><strong>Torniquete</strong> (Fig. 5.18).</li>\n</ol>\n<p>⚠️ La diapositiva no explica cómo se hace el torniquete (está en la página 87 del libro). Lo general: es el <strong>último recurso</strong>, se pone <strong>por encima de la herida</strong>, se anota la <strong>hora</strong> en que se puso y <strong>no se afloja</strong> hasta que lo hagan los sanitarios.</p>",
+     "imgs": [
+      {
+       "src": "img/008.jpg",
+       "alt": "Fig. 5.16-5.18 Compresión directa, arterial y torniquete (diap. 8)",
+       "img": "<img src=\"img/008.jpg\" width=\"900\" height=\"810\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.16-5.18 Compresión directa, arterial y torniquete (diap. 8)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "<strong>«consecutiva»</strong> quiere decir <strong>en orden</strong>: empiezas por lo más sencillo (apretar encima). Si no para, aprietas la arteria. Solo si sigue sangrando pones el torniquete, porque corta toda la sangre del miembro.",
+     "truco": "<strong>\"Encima → Arteria → Torniquete\"</strong> = <strong>\"de menos a más\"</strong>. Si la directa no funciona, <strong>el siguiente paso es la compresión arterial</strong> (pregunta 14 del test).",
+     "q": "¿Qué 3 métodos se usan, y en qué orden, para detener una hemorragia externa?",
+     "n": 19
+    },
+    {
+     "titulo": "Hemorragias internas",
+     "lv": 1,
+     "fuente": "Diapositiva 9",
+     "defs": [
+      {
+       "t": "Palidez",
+       "facil": "Piel muy blanca.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Tensión baja",
+       "facil": "Presión de la sangre baja.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Taquicardia",
+       "facil": "El corazón late muy rápido.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>La sangre <strong>no sale al exterior</strong>; se queda <strong>en el interior del cuerpo</strong>. Ante estas hemorragias <strong>no se debe intervenir</strong>; solo hay que:</p>\n<ul>\n<li><strong>Avisar urgentemente</strong> a los servicios de emergencia.</li>\n<li><strong>Colocar a la persona boca arriba con las piernas levantadas.</strong></li>\n<li><strong>Cubrirla</strong> para evitar que pierda calor.\n<strong>Síntomas:</strong> <strong>piel fría, palidez, mareo, tensión baja y taquicardia.</strong></li>\n</ul>",
+     "entiende": "No la ves, pero <strong>la notas por los síntomas</strong>: el cuerpo pierde sangre por dentro, así que la piel se enfría y palidece, baja la tensión y el corazón acelera para compensar. Tú no puedes pararla: <strong>solo avisar, piernas arriba y abrigo</strong>.",
+     "truco": "Síntomas = <strong>\"Fría, Pálida, Mareada, Baja y Rápida\"</strong>. Actuación = <strong>\"Aviso, Piernas arriba, Manta\"</strong>.",
+     "q": "¿Qué es una hemorragia interna, qué síntomas da y cómo se actúa?",
+     "n": 20
+    },
+    {
+     "titulo": "Hemorragias exteriorizadas: nariz y oído",
+     "lv": 1,
+     "fuente": "Diapositiva 9 (Fig. 5.21 y 5.22; vocabulario: epistaxis y otorragia)",
+     "defs": [
+      {
+       "t": "Epistaxis",
+       "facil": "Sangrado por la nariz.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Otorragia",
+       "facil": "Sangrado por el oído.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Orificio natural",
+       "facil": "Agujero que el cuerpo ya tiene (boca, nariz, oídos…).",
+       "diapo": "Hemorragias exteriorizadas: aun siendo internas, la sangre sale al exterior a través de un orificio natural del cuerpo: la boca, un oído, etc."
+      }
+     ],
+     "prof": "<p><strong>aun siendo internas, la sangre sale al exterior</strong> a través de un <strong>orificio natural</strong> del cuerpo: la boca, un oído, etc.</p>\n<ul>\n<li><strong>Fig. 5.21:</strong> en caso de hemorragia, <strong>el oído que sangra debe orientarse hacia el suelo</strong>.</li>\n<li><strong>Fig. 5.22:</strong> actuación en caso de hemorragia de nariz: ✅ <strong>correcto, cabeza inclinada hacia delante</strong> apretando la nariz; ❌ <strong>incorrecto, cabeza hacia atrás</strong>.</li>\n</ul>\n<p>⚠️ Lo general (no está escrito en la diapositiva): en la epistaxis se <strong>aprieta la parte blanda de la nariz</strong> (el ala nasal contra el tabique) unos 10 minutos. Una <strong>otorragia tras un golpe en la cabeza</strong> puede indicar una lesión grave: no se tapona el oído y se avisa al 112.</p>",
+     "imgs": [
+      {
+       "src": "img/009.jpg",
+       "alt": "Fig. 5.21-5.22 Oído hacia el suelo; nariz: cabeza hacia delante ✅, hacia atrás ❌ (diap. 9)",
+       "img": "<img src=\"img/009.jpg\" width=\"314\" height=\"900\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.21-5.22 Oído hacia el suelo; nariz: cabeza hacia delante ✅, hacia atrás ❌ (diap. 9)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "Si echas la cabeza <strong>hacia atrás</strong>, la sangre <strong>se va a la garganta</strong> y la persona se la traga o se atraganta. <strong>Hacia delante</strong>, la sangre sale y puedes apretar. El oído hacia el suelo es para que <strong>la sangre salga</strong> y no se quede dentro.",
+     "truco": "<strong>\"Nariz: cabeza para ALANTE, nunca para atrás\"</strong>. <strong>\"Oído que sangra, oído al suelo\"</strong>. <strong>Epi-staxis = nariz</strong> (como \"estornudo\"); <strong>Oto-rragia = oído</strong> (otorrino).",
+     "q": "¿Qué es una hemorragia exteriorizada? ¿Qué es la epistaxis y la otorragia y cómo se actúa en cada una?",
+     "n": 21
+    }
+   ],
+   "min": 35
+  },
+  {
+   "titulo": "Las quemaduras",
+   "conceptos": [
+    {
+     "titulo": "Las quemaduras: qué son y de qué depende su gravedad",
+     "lv": 2,
+     "fuente": "Diapositiva 10 (y vocabulario del tema)",
+     "defs": [
+      {
+       "t": "Quemadura",
+       "facil": "Lesión de la piel por calor, frío, electricidad o productos químicos.",
+       "diapo": "Lesiones de la piel y otros tejidos blandos debidas al contacto con el fuego, el frío, la electricidad, los productos químicos, líquidos hirviendo o el paso de la electricidad por el cuerpo."
+      },
+      {
+       "t": "Tejidos blandos",
+       "facil": "Piel, grasa y músculo (no hueso).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Son <strong>lesiones de la piel y otros tejidos blandos</strong> debidas al contacto con <strong>el fuego, el frío, la electricidad, los productos químicos, líquidos hirviendo</strong> o el paso de la electricidad por el cuerpo.\nLa <strong>gravedad</strong> de las quemaduras depende de su <strong>profundidad</strong> y de su <strong>extensión</strong>. <strong>Cuanto más extensas, más graves son.</strong></p>",
+     "entiende": "No solo quema el fuego: también <strong>el frío</strong> (congelación), <strong>la electricidad</strong> o <strong>un ácido</strong>. Para saber si es grave miras <strong>lo hondo</strong> que llega (grado) y <strong>cuánta piel</strong> ocupa (porcentaje).",
+     "truco": "Causas = <strong>\"Fuego, Frío, Luz (electricidad), Química y Agua hirviendo\"</strong>. Gravedad = <strong>\"Hondo y Ancho\"</strong> (profundidad y extensión).",
+     "q": "¿Qué son las quemaduras, qué las produce y de qué depende su gravedad?",
+     "n": 22
+    },
+    {
+     "titulo": "Quemaduras según su profundidad y protocolo",
+     "lv": 1,
+     "fuente": "Diapositiva 10 (Fig. 5.23 «Clasificación de las quemaduras según su profundidad»)",
+     "defs": [
+      {
+       "t": "Ampolla",
+       "facil": "Bolsa de líquido bajo la piel.",
+       "diapo": "Quemadura de segundo grado: la parte interior de la piel se quema; se forman ampollas; dolor fuerte."
+      },
+      {
+       "t": "Calcinada",
+       "facil": "Quemada hasta quedar negra o marrón.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Gasas humedecidas",
+       "facil": "Gasas mojadas.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Grado</th>\n<th>Cómo es</th>\n<th>Protocolo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Primer grado</strong></td>\n<td><strong>Enrojecimiento</strong> de la parte externa de la piel · ligera inflamación · <strong>dolor</strong></td>\n<td>Aplicar <strong>agua fría durante quince o veinte minutos</strong>, aproximadamente, <strong>sin que el chorro caiga directamente</strong> en la zona quemada, o <strong>sumergir</strong> la zona en un recipiente con agua fría</td>\n</tr>\n<tr>\n<td><strong>Segundo grado</strong></td>\n<td>La <strong>parte interior</strong> de la piel se quema · <strong>se forman ampollas</strong> · <strong>dolor fuerte</strong></td>\n<td>1. Agua fría 15-20 min. 2. <strong>No reventar las ampollas.</strong> 3. Si se han reventado, <strong>tratarlas como una herida</strong>: antiséptico y gasas estériles. 4. <strong>Acudir a un centro sanitario</strong></td>\n</tr>\n<tr>\n<td><strong>Tercer grado</strong></td>\n<td>Piel <strong>reseca o calcinada</strong> (color marrón) · lesión de los tejidos bajo la piel · <strong>destrucción de músculos y vasos</strong> sanguíneos · <strong>no duelen</strong></td>\n<td>1. Refrescar con agua 15-20 min. 2. Cubrir con <strong>gasas humedecidas con suero fisiológico</strong>. 3. <strong>No retirar los restos de ropa.</strong> 4. <strong>No aplicar pomadas ni cremas.</strong> 5. <strong>Acudir a un centro sanitario</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/010.jpg",
+       "alt": "Fig. 5.23 Quemaduras según su profundidad (diap. 10)",
+       "img": "<img src=\"img/010.jpg\" width=\"900\" height=\"443\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.23 Quemaduras según su profundidad (diap. 10)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "<strong>1.º = rojo y duele</strong> (como quemarse al sol); <strong>2.º = ampollas y duele mucho</strong>; <strong>3.º = negro/marrón y NO duele</strong>, porque se han quemado los nervios (¡la más grave es la que no duele!). En las tres, <strong>lo primero es agua fría 15-20 minutos</strong>.",
+     "truco": "<strong>\"Rojo, Ampolla, Carbón\"</strong> = 1.º, 2.º, 3.º. <strong>\"El que no duele es el peor\"</strong>. Primera actuación siempre: <strong>agua fría 15-20 min</strong> (pregunta 15 del test).",
+     "q": "Describe las quemaduras de 1.º, 2.º y 3.º grado y cómo se actúa en cada una.",
+     "n": 23
+    },
+    {
+     "titulo": "Quemaduras según su extensión: regla de los nueves (Wallace)",
+     "lv": 1,
+     "fuente": "Diapositiva 10 (Fig. 5.24 «Clasificación de las quemaduras según su extensión»)",
+     "defs": [
+      {
+       "t": "Superficie corporal",
+       "facil": "Toda la piel del cuerpo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Regla de los nueves o regla de Wallace",
+       "facil": "Forma rápida de calcular el porcentaje de piel quemada.",
+       "diapo": "Para valorar la extensión de una quemadura de forma rápida y lo más precisa posible, se expresa en porcentajes de la superficie corporal. La superficie del cuerpo se divide en once áreas, cada una de las cuales representa un 9 %."
+      }
+     ],
+     "prof": "<p>En los servicios de urgencias, para valorar la <strong>extensión</strong> de una quemadura de forma rápida y lo más precisa posible, se expresa en <strong>porcentajes de la superficie corporal</strong> mediante la <strong>«regla de los nueves» o «regla de Wallace»</strong>.\nSegún esta regla, la superficie del cuerpo se divide en <strong>once áreas</strong>, cada una de las cuales representa un <strong>9 %</strong>. En la figura: <strong>cabeza 9 %</strong>, cada <strong>brazo 9 %</strong>, <strong>tronco por delante 9 + 9 %</strong>, <strong>tronco por detrás 9 + 9 %</strong>, cada <strong>pierna 9 + 9 %</strong> y <strong>genitales 1 %</strong> (la <strong>palma de la mano</strong> equivale a un <strong>1 %</strong>).\nLas quemaduras que afectan a una superficie <strong>superior al 25 % en adultos</strong> deben considerarse <strong>graves</strong>, de igual forma que si se localizan en <strong>la cara, las manos o los genitales</strong>, así como las <strong>quemaduras eléctricas</strong> y en <strong>mujeres embarazadas</strong>.</p>",
+     "imgs": [
+      {
+       "src": "img/011.jpg",
+       "alt": "Fig. 5.24 Quemaduras según su extensión: regla de los nueves (diap. 10)",
+       "img": "<img src=\"img/011.jpg\" width=\"900\" height=\"262\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.24 Quemaduras según su extensión: regla de los nueves (diap. 10)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "11 trozos × 9 % = 99 % + 1 % de genitales = <strong>100 %</strong>. Para calcular, <strong>sumas los trozos quemados</strong>. Pero ojo: aunque sea poca piel, <strong>cara, manos, genitales, electricidad o embarazo = grave</strong> siempre.",
+     "truco": "<strong>\"11 × 9 + 1 = 100\"</strong>. Graves: <strong>\"más de 25 % o C-M-G-E-E\"</strong> (<strong>C</strong>ara, <strong>M</strong>anos, <strong>G</strong>enitales, <strong>E</strong>léctricas, <strong>E</strong>mbarazadas). La regla de Wallace mide la <strong>extensión</strong> (pregunta 16 del test).",
+     "q": "¿Qué es la regla de los nueves y cuándo se considera grave una quemadura?",
+     "n": 24
+    }
+   ],
+   "min": 30
+  },
+  {
+   "titulo": "Los traumatismos",
+   "conceptos": [
+    {
+     "titulo": "Los traumatismos: qué son",
+     "lv": 2,
+     "fuente": "Diapositiva 11 (y vocabulario del tema)",
+     "defs": [
+      {
+       "t": "Traumatismo",
+       "facil": "Lesión por un golpe o una fuerza de fuera.",
+       "diapo": "Lesiones del sistema musculoesquelético, producidas normalmente por una lesión mecánica externa, que afectan a los huesos, articulaciones y tendones."
+      },
+      {
+       "t": "Sistema musculoesquelético",
+       "facil": "Huesos, músculos, articulaciones, tendones y ligamentos.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Atrapamiento",
+       "facil": "Quedar una parte del cuerpo pillada entre dos objetos o una máquina.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Son <strong>lesiones del sistema musculoesquelético</strong>, producidas normalmente por una <strong>lesión mecánica externa</strong>, que afectan a los <strong>huesos, articulaciones y tendones</strong>.\nEn el trabajo se pueden producir accidentes por <strong>caídas, golpes y atrapamientos</strong> que originan <strong>fracturas, contusiones, esguinces y luxaciones</strong>.</p>",
+     "entiende": "Traumatismo = <strong>\"golpe\"</strong> que daña lo que te sostiene y te mueve (huesos y articulaciones). Hay 4 tipos según qué se rompe o se mueve.",
+     "truco": "Causas = <strong>\"Caer, Chocar, Pillarse\"</strong>. Tipos = <strong>\"Con-Es-Lu-Fra\"</strong> (Contusión, Esguince, Luxación, Fractura): de menos a más grave.",
+     "q": "¿Qué es un traumatismo, qué lo causa en el trabajo y qué tipos hay?",
+     "n": 25
+    },
+    {
+     "titulo": "Contusión y esguince",
+     "lv": 1,
+     "fuente": "Diapositiva 11 (Fig. 5.25 «Actuación en caso de traumatismo»)",
+     "defs": [
+      {
+       "t": "Contusión",
+       "facil": "Golpe sin herida.",
+       "diapo": "Lesión producida por un golpe sobre la piel sin causar una herida."
+      },
+      {
+       "t": "Hematoma",
+       "facil": "Moratón, sangre acumulada bajo la piel.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Edema",
+       "facil": "Hinchazón por líquido.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Esguince",
+       "facil": "Rotura o estiramiento de un ligamento al forzar una articulación.",
+       "diapo": "Desgarro de ligamentos que se produce cuando se fuerza una articulación."
+      },
+      {
+       "t": "Ligamento",
+       "facil": "Cinta que une un hueso con otro en la articulación.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cabestrillo",
+       "facil": "Pañuelo colgado del cuello que sujeta el brazo.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Traumatismo</th>\n<th>Qué es</th>\n<th>Síntomas</th>\n<th>Protocolo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Contusión</strong></td>\n<td>Lesión producida por un golpe sobre la piel <strong>sin causar una herida</strong></td>\n<td>Dolor, inflamación, <strong>hematoma y edema</strong>. En la cabeza provoca un <strong>chichón</strong></td>\n<td>1. <strong>Aplicar frío local.</strong> 2. <strong>Elevar la zona</strong> afectada por encima del corazón, cuando sea posible</td>\n</tr>\n<tr>\n<td><strong>Esguince</strong></td>\n<td><strong>Desgarro de ligamentos</strong> que se produce cuando se <strong>fuerza una articulación</strong></td>\n<td>Inflamación y dolor · amoratamiento · <strong>se conserva la movilidad</strong></td>\n<td>1. <strong>Aplicar frío local.</strong> 2. <strong>Levantar la extremidad</strong> lesionada. 3. <strong>Inmovilizar</strong> la zona: el brazo en <strong>cabestrillo</strong> y la pierna en <strong>horizontal</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/012.jpg",
+       "alt": "Fig. 5.25 Actuación en caso de traumatismo (diap. 11)",
+       "img": "<img src=\"img/012.jpg\" width=\"900\" height=\"584\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.25 Actuación en caso de traumatismo (diap. 11)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "En las dos, <strong>frío y levantar</strong>. La pista del esguince es que <strong>duele y se hincha, pero puedes moverlo</strong> (por ejemplo, un tobillo torcido con el que todavía caminas).",
+     "truco": "<strong>\"Contusión = golpe sin herida; Esguince = ligamento que se Estira\"</strong>. <strong>\"Si se mueve, es esguince\"</strong>.",
+     "q": "Diferencia contusión y esguince (qué son, síntomas y actuación).",
+     "n": 26
+    },
+    {
+     "titulo": "Luxación y fractura",
+     "lv": 1,
+     "fuente": "Diapositiva 11 (Fig. 5.25 «Actuación en caso de traumatismo»)",
+     "defs": [
+      {
+       "t": "Luxación",
+       "facil": "El hueso se sale de su sitio en la articulación (dislocación).",
+       "diapo": "Torcedura brusca y dolorosa de una articulación."
+      },
+      {
+       "t": "Fractura",
+       "facil": "Rotura del hueso.",
+       "diapo": "Rotura del hueso."
+      },
+      {
+       "t": "Fractura abierta / cerrada",
+       "facil": "Con herida en la piel / sin herida.",
+       "diapo": "Las fracturas pueden ser abiertas (si se produce una herida al romperse la piel) o cerradas (cuando no hay rotura de la piel)."
+      },
+      {
+       "t": "Material rígido",
+       "facil": "Algo duro que no se dobla (tabla, férula, cartón grueso).",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Traumatismo</th>\n<th>Qué es</th>\n<th>Síntomas</th>\n<th>Protocolo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Luxación</strong></td>\n<td><strong>Torcedura brusca y dolorosa</strong> de una articulación</td>\n<td><strong>Deformación</strong> de la articulación · dolor e <strong>imposibilidad de movimiento</strong></td>\n<td>1. <strong>Aplicar frío.</strong> 2. <strong>Mantener la articulación tal y como se encuentre.</strong> 3. <strong>No movilizar ni intentar recolocar</strong> el hueso en su sitio</td>\n</tr>\n<tr>\n<td><strong>Fractura</strong></td>\n<td><strong>Rotura del hueso.</strong> Puede ser <strong>abierta</strong> (si se produce una herida al romperse la piel) o <strong>cerrada</strong> (cuando no hay rotura de la piel)</td>\n<td><strong>Imposibilidad de mover</strong> el miembro · deformación y amoratamiento · sensación de dolor · <strong>hemorragias y fragmentos de hueso</strong> en las fracturas abiertas</td>\n<td>1. <strong>No intentar recolocar</strong> la fractura ni situar el hueso en su posición natural. 2. <strong>Aplicar frío local.</strong> 3. <strong>Inmovilizar</strong> con material rígido <strong>por encima y por debajo</strong> del punto de fractura. 4. Si hay una herida, <strong>protegerla con un paño o un trapo limpios</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "entiende": "En las dos <strong>NO se recoloca nada</strong>: lo dejas como está, frío e inmovilizado. La diferencia con el esguince es que aquí <strong>no se puede mover</strong>.",
+     "truco": "<strong>\"Luxación = hueso que se Larga de su sitio\"</strong>. <strong>\"Fractura: frío, férula arriba y abajo, y trapo limpio si sale\"</strong>. <strong>Regla de oro: \"nunca recolocar\"</strong>.",
+     "q": "Diferencia luxación y fractura (qué son, síntomas y actuación). ¿Qué es una fractura abierta?",
+     "n": 27
+    },
+    {
+     "titulo": "Importante: traumatismo grave en cabeza o columna",
+     "lv": 1,
+     "fuente": "Diapositiva 11 (recuadro «Importante» y caso práctico «Actuación en caso de traumatismo», página 89)",
+     "defs": [
+      {
+       "t": "Columna vertebral",
+       "facil": "La cadena de huesos de la espalda que protege la médula espinal.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Movilizar",
+       "facil": "Mover o cambiar de sitio a una persona.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>En caso de <strong>traumatismo grave</strong> que afecte a la <strong>cabeza o a la columna vertebral</strong>, <strong>no se debe movilizar a la persona accidentada</strong>.</p>",
+     "entiende": "Dentro de la columna va la <strong>médula espinal</strong>: si la mueves mal, una lesión que se podía curar puede dejar a la persona <strong>paralizada</strong>. Ante la duda (caída de altura, golpe fuerte en la cabeza o la espalda), <strong>no la mueves</strong> y llamas al 112.",
+     "truco": "<strong>\"Cabeza o columna: quieto todo el mundo\"</strong>. Es la respuesta de la pregunta 17 del test.",
+     "q": "¿Qué se hace si se sospecha un traumatismo grave en la cabeza o en la columna?",
+     "n": 28
+    }
+   ],
+   "min": 35
+  },
+  {
+   "titulo": "Las heridas",
+   "conceptos": [
+    {
+     "titulo": "Las heridas: leves y graves",
+     "lv": 1,
+     "fuente": "Diapositiva 12 (Fig. 5.26 «Tipos de heridas y protocolo de actuación»; Fig. 5.27 «Limpieza de heridas con agua»; y vocabulario del tema)",
+     "defs": [
+      {
+       "t": "Herida",
+       "facil": "Rotura de la piel por un golpe o un corte.",
+       "diapo": "Lesiones que se producen por la pérdida de continuidad de la piel como consecuencia de un traumatismo."
+      },
+      {
+       "t": "Epidermis",
+       "facil": "La capa más externa de la piel.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Antiséptico yodado",
+       "facil": "Desinfectante con yodo (como la povidona yodada).",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Cuerpo enclavado",
+       "facil": "Objeto clavado en la herida.",
+       "diapo": "En heridas graves: no extraer los cuerpos enclavados (solo sujetarlos para evitar que se muevan)."
+      },
+      {
+       "t": "Hurgar",
+       "facil": "Meter los dedos u objetos dentro de la herida.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Son <strong>lesiones</strong> que se producen por la <strong>pérdida de continuidad de la piel</strong> como consecuencia de un <strong>traumatismo</strong>. Una herida requiere una serie de cuidados:</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Tipo</th>\n<th>Cómo es</th>\n<th>Protocolo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Heridas leves</strong></td>\n<td>Solo afectan a la <strong>epidermis</strong> · se han producido hace <strong>menos de seis horas</strong></td>\n<td>1. <strong>Lavarse las manos.</strong> 2. <strong>Limpiar la herida con agua y jabón</strong> utilizando gasas estériles. 3. Aplicar un <strong>antiséptico yodado</strong> (salvo en personas alérgicas). 4. <strong>Cubrir</strong> la herida con gasas estériles</td>\n</tr>\n<tr>\n<td><strong>Heridas graves</strong></td>\n<td>Afectan a las <strong>capas internas</strong> de la piel · presentan <strong>hemorragia</strong> · se localizan en <strong>ojos, tórax y abdomen</strong> · son <strong>extensas y sucias</strong> · tienen <strong>cuerpos extraños</strong></td>\n<td>1. <strong>Evaluar los signos vitales.</strong> 2. <strong>No extraer los cuerpos enclavados</strong> (solo sujetarlos para evitar que se muevan). 3. <strong>No hurgar</strong> dentro de la herida. 4. Colocar un <strong>apósito o una gasa húmeda.</strong> 5. <strong>Acudir a un centro sanitario</strong></td>\n</tr>\n</tbody>\n</table></div>",
+     "imgs": [
+      {
+       "src": "img/013.jpg",
+       "alt": "Fig. 5.26 Tipos de heridas y protocolo (diap. 12)",
+       "img": "<img src=\"img/013.jpg\" width=\"784\" height=\"477\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.26 Tipos de heridas y protocolo (diap. 12)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "La <strong>leve</strong> la curas tú (manos limpias → lavar → desinfectar → tapar). La <strong>grave</strong> no la curas: la <strong>proteges</strong> y vas al hospital. Un objeto clavado <strong>tapona</strong> la herida: si lo sacas, puede sangrar muchísimo.",
+     "truco": "Leve = <strong>\"Lavo yo, Lavo herida, Yodo, Tapo\"</strong>. Grave = <strong>\"Signos, No saco, No hurgo, Gasa húmeda, Hospital\"</strong>. Leve si <strong>solo epidermis y menos de 6 h</strong>.",
+     "q": "¿Qué es una herida? Diferencia herida leve y grave y explica el protocolo de cada una.",
+     "n": 29
+    }
+   ],
+   "min": 15
+  },
+  {
+   "titulo": "La pérdida de consciencia",
+   "conceptos": [
+    {
+     "titulo": "La pérdida de consciencia: qué es y su origen",
+     "lv": 2,
+     "fuente": "Diapositiva 12",
+     "defs": [
+      {
+       "t": "Consciencia",
+       "facil": "Estar despierto y darse cuenta de lo que pasa.",
+       "diapo": "Una persona sufre pérdida de consciencia cuando no es capaz de responder a los estímulos externos."
+      },
+      {
+       "t": "Estímulos externos",
+       "facil": "Lo que viene de fuera (voz, tacto, dolor).",
+       "diapo": "Una persona sufre pérdida de consciencia cuando no es capaz de responder a los estímulos externos."
+      },
+      {
+       "t": "Lipotimia",
+       "facil": "Desmayo breve.",
+       "diapo": "Desmayo o mareo con pérdida del conocimiento durante unos segundos, debido a una disminución momentánea de la sangre que llega al cerebro."
+      },
+      {
+       "t": "Ataque epiléptico",
+       "facil": "Crisis de epilepsia con convulsiones.",
+       "diapo": "El origen de la pérdida de consciencia suele ser una lipotimia o un ataque epiléptico."
+      }
+     ],
+     "prof": "<p>Una persona sufre <strong>pérdida de consciencia</strong> cuando <strong>no es capaz de responder a los estímulos externos</strong>. El <strong>origen</strong> suele ser una <strong>lipotimia</strong> o un <strong>ataque epiléptico</strong>.</p>",
+     "entiende": "Le hablas, le tocas y <strong>no responde</strong>. Las dos causas típicas del tema son el <strong>desmayo</strong> (lipotimia) y la <strong>crisis epiléptica</strong>.",
+     "truco": "<strong>\"No responde = Lipo o Epi\"</strong>.",
+     "q": "¿Cuándo hay pérdida de consciencia y cuál suele ser su origen?",
+     "n": 30
+    },
+    {
+     "titulo": "Lipotimia",
+     "lv": 1,
+     "fuente": "Diapositiva 12 (Fig. 5.28 «Actuación en caso de pérdida de consciencia»)",
+     "defs": [
+      {
+       "t": "Lipotimia",
+       "facil": "Desmayo de pocos segundos porque llega poca sangre al cerebro.",
+       "diapo": "Desmayo o mareo con pérdida del conocimiento durante unos segundos, debido a una disminución momentánea de la sangre que llega al cerebro."
+      },
+      {
+       "t": "Constantes vitales",
+       "facil": "Consciencia, respiración, pulso.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "PLS",
+       "facil": "Posición lateral de seguridad.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p><strong>desmayo o mareo con pérdida del conocimiento durante unos segundos</strong>, debido a una <strong>disminución momentánea de la sangre que llega al cerebro</strong>.\n<strong>Protocolo:</strong></p>\n<ol>\n<li><strong>Tumbar a la persona con las piernas en alto</strong> para facilitar que la sangre llegue al cerebro.</li>\n<li><strong>Aflojar las prendas</strong> que compriman el cuello, el tórax o la cintura y quitar los calcetines, pero <strong>manteniendo la temperatura</strong> del cuerpo.</li>\n<li><strong>Aportar suficiente aire</strong> abriendo puertas y ventanas.</li>\n<li>Si la persona <strong>mantiene las constantes vitales</strong>, colocarla en <strong>PLS</strong>.</li>\n<li>Si <strong>no se detectan las constantes vitales</strong>, iniciar la <strong>RCP</strong>.</li>\n</ol>",
+     "imgs": [
+      {
+       "src": "img/014.jpg",
+       "alt": "Fig. 5.28 Actuación en caso de pérdida de consciencia (diap. 12)",
+       "img": "<img src=\"img/014.jpg\" width=\"900\" height=\"396\" loading=\"lazy\" decoding=\"async\" alt=\"Fig. 5.28 Actuación en caso de pérdida de consciencia (diap. 12)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "El problema es que <strong>falta sangre en la cabeza</strong>, así que <strong>subes las piernas</strong> para que la sangre baje hacia el cerebro, quitas lo que aprieta y das aire. Suele pasar con <strong>calor</strong>, de pie mucho rato o con un susto.",
+     "truco": "<strong>\"Piernas arriba, Ropa floja, Ventana abierta, PLS o RCP\"</strong> = <strong>\"Pi-Ro-Ve-Pe\"</strong>.",
+     "q": "¿Qué es una lipotimia y cómo se actúa?",
+     "n": 31
+    },
+    {
+     "titulo": "Epilepsia",
+     "lv": 2,
+     "fuente": "Diapositiva 12 (Fig. 5.28 «Actuación en caso de pérdida de consciencia»)",
+     "defs": [
+      {
+       "t": "Epilepsia",
+       "facil": "Enfermedad del cerebro que provoca crisis.",
+       "diapo": "Enfermedad que se caracteriza por la pérdida de conocimiento y convulsiones; en ocasiones, va acompañada de salida de espuma por la boca."
+      },
+      {
+       "t": "Convulsiones",
+       "facil": "Movimientos bruscos e involuntarios de todo el cuerpo.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "Crisis",
+       "facil": "El ataque.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Enfermedad que se caracteriza por la <strong>pérdida de conocimiento y convulsiones</strong>; en ocasiones va acompañada de <strong>salida de espuma por la boca</strong>.\n<strong>Protocolo:</strong></p>\n<ol>\n<li><strong>Despejar el entorno</strong> de cualquier objeto que pueda herir a la víctima.</li>\n<li><strong>No intentar sujetarla o inmovilizarla.</strong></li>\n<li>Colocarle <strong>una manta o ropa debajo</strong> para amortiguar los golpes.</li>\n<li>Colocar en <strong>PLS cuando cese la crisis</strong> o si aparecen vómitos.</li>\n<li><strong>Comprobar las constantes vitales.</strong></li>\n</ol>",
+     "entiende": "Durante la crisis <strong>no la paras tú</strong>: solo evitas que se haga daño contra algo. <strong>No se le sujeta</strong> ni se le mete nada en la boca. Cuando termina, de lado (PLS).",
+     "truco": "<strong>\"Aparta, No sujetes, Almohada, De lado después, Vigila\"</strong>.",
+     "q": "¿Cómo se actúa ante una crisis epiléptica?",
+     "n": 32
+    }
+   ]
+  },
+  {
+   "titulo": "El transporte de heridos",
+   "conceptos": [
+    {
+     "titulo": "Norma general: no mover a la persona accidentada",
+     "lv": 2,
+     "fuente": "Diapositiva 13",
+     "defs": [
+      {
+       "t": "Movilizar heridos",
+       "facil": "Cambiar de sitio a una persona herida.",
+       "diapo": "Como norma general, no se debe mover a las personas accidentadas, pues hacerlo de manera incorrecta puede conllevar graves consecuencias."
+      },
+      {
+       "t": "Agravar",
+       "facil": "Empeorar.",
+       "no": "Apréndete la de arriba (definición general)."
+      }
+     ],
+     "prof": "<p>Como norma general, <strong>no se debe mover a las personas accidentadas</strong>, pues hacerlo de manera incorrecta puede conllevar graves consecuencias, como <strong>agravar las lesiones</strong> del accidentado o <strong>provocarle otras nuevas, incluso la muerte</strong>. Aun así, existen varias técnicas para movilizar heridos, en función de si hay <strong>varias personas socorristas o una sola</strong>.</p>",
+     "entiende": "Solo se mueve a alguien si <strong>quedarse ahí es más peligroso</strong> (fuego, derrumbe, tráfico). Si hay que moverlo, la técnica depende de cuántos sois.",
+     "truco": "<strong>\"Primero no mover; si hay que mover, ¿cuántos somos?\"</strong>.",
+     "q": "¿Cuál es la norma general sobre mover a un herido y por qué?",
+     "n": 33
+    },
+    {
+     "titulo": "Si hay varias personas socorristas: protocolo de columna",
+     "lv": 1,
+     "fuente": "Diapositiva 13 (apartado A e imagen de tres socorristas)",
+     "defs": [
+      {
+       "t": "Eje cabeza-cuello-tronco",
+       "facil": "Mantener la cabeza, el cuello y la espalda en línea recta, sin doblarse.",
+       "diapo": "Con sospecha de lesión de columna: mantener la alineación del eje cabeza-cuello-tronco."
+      },
+      {
+       "t": "Puntos de apoyo",
+       "facil": "Sitios por donde se sujeta el cuerpo.",
+       "diapo": "Con sospecha de lesión de columna: tener como mínimo seis puntos de apoyo."
+      }
+     ],
+     "prof": "<p>En caso de <strong>sospecharse lesión de columna</strong>, se debe seguir siempre el siguiente <strong>protocolo</strong>:</p>\n<ol>\n<li>Mantener la <strong>alineación del eje cabeza-cuello-tronco</strong>.</li>\n<li>Tener como <strong>mínimo seis puntos de apoyo</strong>.</li>\n<li><strong>Sujetar la cabeza con dos manos.</strong></li>\n<li><strong>Mover el cuerpo de una sola vez.</strong></li>\n</ol>",
+     "imgs": [
+      {
+       "src": "img/015.jpg",
+       "alt": "Movilización con varios socorristas y arrastre a cuestas (diap. 13)",
+       "img": "<img src=\"img/015.jpg\" width=\"585\" height=\"608\" loading=\"lazy\" decoding=\"async\" alt=\"Movilización con varios socorristas y arrastre a cuestas (diap. 13)\" loading=\"lazy\">"
+      }
+     ],
+     "entiende": "El cuerpo se mueve <strong>como si fuera un tronco</strong>: todo a la vez, sin que el cuello ni la espalda se doblen. Por eso hacen falta <strong>varias personas</strong> (6 puntos de apoyo) y una que sujete la cabeza.",
+     "truco": "<strong>\"Recto, 6, 2 manos, 1 vez\"</strong> → <strong>\"Eje · 6 apoyos · cabeza con 2 manos · de una vez\"</strong>.",
+     "q": "¿Qué protocolo se sigue para mover a un herido con sospecha de lesión de columna?",
+     "n": 34
+    },
+    {
+     "titulo": "Si solo hay una persona socorrista",
+     "lv": 2,
+     "fuente": "Diapositiva 13 (apartado B e imagen «Arrastre a cuestas»)",
+     "defs": [
+      {
+       "t": "Arrastre",
+       "facil": "Mover a la víctima tirando de ella por el suelo.",
+       "diapo": "Los métodos de arrastre son útiles cuando sea necesario desplazar a una víctima pesada o corpulenta, y se podrá utilizar cuando esta no tenga ninguna fractura."
+      },
+      {
+       "t": "Corpulenta",
+       "facil": "Grande y pesada.",
+       "no": "Apréndete la de arriba (definición general)."
+      },
+      {
+       "t": "A cuestas",
+       "facil": "Llevar a alguien sobre la espalda.",
+       "diapo": "Si solo hay una persona socorrista: a hombros, si la distancia es corta, con una mano pasada por la espalda, o bien en brazos o a cuestas."
+      }
+     ],
+     "prof": "<ul>\n<li><strong>Arrastre:</strong> útil cuando sea necesario desplazar a una víctima <strong>pesada o corpulenta</strong>; se podrá utilizar cuando esta <strong>no tenga ninguna fractura</strong>.</li>\n<li><strong>A hombros</strong>, si la <strong>distancia es corta</strong>, con una mano pasada por la espalda.</li>\n<li><strong>En brazos</strong> o <strong>a cuestas</strong>.</li>\n</ul>",
+     "entiende": "Solo es tu fuerza: si pesa mucho, <strong>arrastras</strong> (pero solo si no tiene nada roto); si la distancia es corta y puede ayudarse, <strong>a hombros</strong>; si puedes con ella, <strong>en brazos o a cuestas</strong>.",
+     "truco": "<strong>\"A-H-B-C\"</strong>: <strong>A</strong>rrastre, <strong>H</strong>ombros, <strong>B</strong>razos, <strong>C</strong>uestas. Arrastre <strong>solo sin fracturas</strong>.",
+     "q": "¿Qué técnicas puede usar un solo socorrista para mover a un herido y cuándo se usa el arrastre?",
+     "n": 35
+    }
+   ]
+  }
+ ],
+ "trampas": [
+  [
+   "<strong>PCR presenciada</strong> (rojo)",
+   "<strong>PCR no presenciada</strong> (negro)",
+   "Presenciada = aún se puede salvar"
+  ],
+  [
+   "<strong>Fractura abierta</strong> (amarillo)",
+   "<strong>Hemorragia abundante</strong> (rojo)",
+   "Rojo = riesgo de muerte inmediata"
+  ],
+  [
+   "Quemados <strong>&lt; 20 %</strong> (amarillo)",
+   "<strong>Grandes quemados</strong> (rojo)",
+   ""
+  ],
+  [
+   "<strong>30:2</strong> (compresiones:ventilaciones)",
+   "<strong>100-120 por minuto</strong> (ritmo)",
+   "30:2 no es un ritmo"
+  ],
+  [
+   "Atragantamiento <strong>parcial</strong>: animar a toser",
+   "<strong>Total consciente</strong>: palmadas + Heimlich",
+   "<strong>Total inconsciente</strong>: 112 + RCP"
+  ],
+  [
+   "Hemorragia <strong>externa</strong> (por herida)",
+   "<strong>Exteriorizada</strong> (por orificio natural)",
+   "Herida vs agujero natural"
+  ],
+  [
+   "Epistaxis: cabeza <strong>hacia delante</strong>",
+   "Cabeza hacia atrás (incorrecto)",
+   "Atrás = se la traga"
+  ],
+  [
+   "<strong>Compresión directa → arterial → torniquete</strong>",
+   "Torniquete el primero",
+   "Siempre de menos a más"
+  ],
+  [
+   "Hemorragia <strong>interna</strong>: no intervenir",
+   "Hacer algo sobre la herida",
+   "Solo aviso, piernas arriba y abrigo"
+  ],
+  [
+   "Quemadura de <strong>3.er grado: no duele</strong>",
+   "La de 1.º y 2.º sí duelen",
+   "La que no duele es la peor"
+  ],
+  [
+   "<strong>Regla de Wallace = extensión</strong>",
+   "Profundidad = grados",
+   ""
+  ],
+  [
+   "<strong>Esguince: se conserva la movilidad</strong>",
+   "Luxación y fractura: no se puede mover",
+   ""
+  ],
+  [
+   "<strong>Luxación y fractura: no recolocar</strong>",
+   "Recolocar el hueso",
+   "Nunca recolocar"
+  ],
+  [
+   "Herida grave: <strong>no extraer</strong> cuerpos enclavados",
+   "Sacar el objeto",
+   "Sujetarlo para que no se mueva"
+  ],
+  [
+   "Lipotimia: <strong>piernas en alto</strong>",
+   "Hemorragia interna también piernas arriba",
+   "Las dos llevan piernas arriba"
+  ],
+  [
+   "Epilepsia: <strong>no sujetar</strong>",
+   "Inmovilizar",
+   "Solo apartar objetos y almohadillar"
+  ],
+  [
+   "<strong>Arrastre: solo sin fracturas</strong>",
+   "Arrastrar siempre",
+   ""
+  ],
+  [
+   "Cadena de supervivencia: <strong>3 primeros pasos cualquiera</strong>",
+   "El 4.º (avanzado)",
+   "Solo personal sanitario"
+  ]
+ ],
+ "numeros": [
+  [
+   "3",
+   "Pasos de la conducta PAS (proteger, avisar, socorrer)"
+  ],
+  [
+   "4",
+   "Objetivos de los primeros auxilios"
+  ],
+  [
+   "7",
+   "Principios de los primeros auxilios"
+  ],
+  [
+   "4",
+   "Colores del triaje (verde, amarillo, rojo, negro)"
+  ],
+  [
+   "20 %",
+   "Quemados con menos del 20 % → amarillo"
+  ],
+  [
+   "&gt; 50",
+   "Trabajadores a partir de los cuales hace falta un local de primeros auxilios"
+  ],
+  [
+   "4",
+   "Eslabones de la cadena de supervivencia"
+  ],
+  [
+   "2021",
+   "Guías del ERC"
+  ],
+  [
+   "112 / 061",
+   "Servicios de Emergencias Médicas"
+  ],
+  [
+   "30:2",
+   "30 compresiones : 2 ventilaciones"
+  ],
+  [
+   "100-120 / min",
+   "Ritmo de las compresiones ⚠️"
+  ],
+  [
+   "5",
+   "Palmadas en la espalda en el atragantamiento total consciente"
+  ],
+  [
+   "3",
+   "Métodos para hemorragias externas"
+  ],
+  [
+   "15-20 min",
+   "Agua fría en las quemaduras"
+  ],
+  [
+   "11 áreas × 9 %",
+   "Regla de los nueves (Wallace) + 1 % genitales"
+  ],
+  [
+   "1 %",
+   "Palma de la mano / genitales"
+  ],
+  [
+   "&gt; 25 %",
+   "Quemadura grave en adultos"
+  ],
+  [
+   "&lt; 6 h",
+   "Herida leve (producida hace menos de 6 horas)"
+  ],
+  [
+   "6",
+   "Puntos de apoyo mínimos para mover con sospecha de lesión de columna"
+  ],
+  [
+   "2",
+   "Manos para sujetar la cabeza"
+  ]
+ ],
+ "chequeo": [
+  "Definición de primeros auxilios, 4 objetivos y 7 principios.",
+  "PAS: los 3 pasos de proteger, los 3 de avisar y las 2 fases de socorrer.",
+  "Triaje: definición, las 3 preguntas y 2 ejemplos de cada color.",
+  "Botiquín: cuándo local (&gt; 50), 3 normas y los 3 grupos de contenido.",
+  "SVB, PCR y RCP; los 4 eslabones de la cadena; quién hace cada uno.",
+  "Algoritmo SVB (6 pasos, 30:2, DEA) y qué hacer si estás solo con o sin móvil.",
+  "Atragantamiento: tipos y actuación en los 3 casos; maniobra de Heimlich.",
+  "Hemorragias: 3 tipos, 3 métodos en orden, síntomas de la interna, nariz y oído.",
+  "Quemaduras: causas, 3 grados con su protocolo, regla de los nueves y cuándo es grave.",
+  "Traumatismos: los 4 tipos (qué son, síntomas, protocolo) y cabeza/columna.",
+  "Heridas leves y graves con su protocolo.",
+  "Lipotimia y epilepsia.",
+  "Transporte: norma general, protocolo de columna y técnicas con un solo socorrista."
+ ],
+ "impres": [
+  {
+   "titulo": "Primeros auxilios, PAS y triaje",
+   "items": [
+    [
+     "¿Primeros auxilios?",
+     "<strong>Medidas que se adoptan inicialmente</strong>, en el <strong>mismo lugar de los hechos</strong>, hasta que llega la asistencia sanitaria profesional."
+    ],
+    [
+     "¿4 objetivos?",
+     "Mantener la <strong>vida</strong> · evitar que se <strong>agrave</strong> · aliviar el <strong>dolor</strong> · garantizar el <strong>traslado</strong> adecuado."
+    ],
+    [
+     "¿7 principios?",
+     "Calma · rapidez · activar el sistema de emergencia · <strong>no dar de comer ni beber</strong> al inconsciente · abrigar · <strong>no mover</strong> (salvo imprescindible) · trasladar bien."
+    ],
+    [
+     "¿PAS?",
+     "<strong>Proteger</strong> (alejar el peligro, eliminar causas, señalizar) → <strong>Avisar</strong> (empresa + <strong>112</strong>: quién llama, lugar exacto, tipo de accidente, nº de heridos; línea libre) → <strong>Socorrer</strong> (primaria: <strong>consciencia y respiración</strong>; secundaria: <strong>cabeza a pies</strong>)."
+    ],
+    [
+     "¿Triaje?",
+     "<strong>Clasificar</strong> heridos cuando hay muchos, <strong>priorizando los más graves</strong>, con <strong>tarjetas de colores</strong>."
+    ],
+    [
+     "¿Preguntas SHORT?",
+     "¿Camina? → <strong>verde</strong> · ¿Habla y obedece? → <strong>amarillo</strong> · ¿Respira? sí → <strong>rojo</strong>, no → <strong>negro</strong>."
+    ],
+    [
+     "¿Ejemplos?",
+     "Verde: heridas menores · Amarillo: <strong>fractura abierta</strong>, abdomen, quemados &lt; 20 % · Rojo: <strong>PCR presenciada, asfixia, hemorragia abundante</strong>, grandes quemados · Negro: fallecidos, <strong>PCR no presenciada</strong>, trauma craneal con masa encefálica."
+    ]
+   ]
+  },
+  {
+   "titulo": "Botiquín",
+   "items": [
+    [
+     "¿Local de primeros auxilios?",
+     "Empresas con <strong>más de 50</strong> trabajadores."
+    ],
+    [
+     "¿3 normas?",
+     "<strong>Portátil</strong> · <strong>revisado</strong> periódicamente · <strong>señalizado</strong> y accesible."
+    ],
+    [
+     "¿Contenido?",
+     "Básico: antisépticos, gasas estériles, algodón, vendas, esparadrapo, apósitos, tijeras, pinzas, guantes · Auxiliar: <strong>manta isotérmica, suero, antiséptico yodado, torniquete</strong> · Otros: férulas, analgésico."
+    ]
+   ]
+  },
+  {
+   "titulo": "Soporte vital básico",
+   "items": [
+    [
+     "¿SVB?",
+     "Prevención de la <strong>PCR</strong> + <strong>RCP</strong> + sistema de emergencias + <strong>desfibrilación precoz</strong>."
+    ],
+    [
+     "¿Cadena de supervivencia (ERC)?",
+     "1) <strong>Reconocer y llamar al 112</strong> · 2) <strong>RCP precoz</strong> · 3) <strong>Desfibrilación precoz</strong> · 4) Soporte vital <strong>avanzado</strong> (solo sanitarios)."
+    ],
+    [
+     "¿Algoritmo?",
+     "Inconsciente y no respira bien → <strong>112</strong> → <strong>30 compresiones</strong> → <strong>2 ventilaciones</strong> → <strong>30:2</strong> → <strong>DEA</strong> en cuanto llegue."
+    ],
+    [
+     "¿Solo con móvil?",
+     "<strong>Altavoz</strong> y RCP guiada. <strong>¿Sin móvil?</strong> → Dejar a la víctima, avisar y luego RCP."
+    ],
+    [
+     "¿PLS?",
+     "Inconsciente <strong>que respira</strong> ⚠️. <strong>¿Ritmo?</strong> → <strong>100-120/min</strong> ⚠️ (30:2 no es ritmo)."
+    ]
+   ]
+  },
+  {
+   "titulo": "Atragantamiento",
+   "items": [
+    [
+     "¿Parcial?",
+     "<strong>Animar a toser</strong>, no golpear la espalda."
+    ],
+    [
+     "¿Total consciente?",
+     "Revisar boca · <strong>5 palmadas</strong> · <strong>Heimlich</strong>."
+    ],
+    [
+     "¿Total inconsciente?",
+     "<strong>112</strong> + <strong>RCP</strong>."
+    ],
+    [
+     "¿Heimlich?",
+     "Empujar el cuerpo extraño hacia la salida con el <strong>aire de los pulmones</strong>."
+    ]
+   ]
+  },
+  {
+   "titulo": "Hemorragias, quemaduras y traumatismos",
+   "items": [
+    [
+     "¿Tipos de hemorragia?",
+     "<strong>Externa</strong> (por herida) · <strong>interna</strong> (se queda dentro) · <strong>exteriorizada</strong> (sale por orificio natural)."
+    ],
+    [
+     "¿Externa?",
+     "<strong>Compresión directa → arterial → torniquete</strong>, en ese orden."
+    ],
+    [
+     "¿Interna?",
+     "<strong>No intervenir</strong>: 112, <strong>boca arriba piernas levantadas</strong>, abrigar. Síntomas: piel fría, palidez, mareo, tensión baja, taquicardia."
+    ],
+    [
+     "¿Nariz y oído?",
+     "Nariz: cabeza <strong>hacia delante</strong> (nunca atrás) · Oído que sangra <strong>hacia el suelo</strong>."
+    ],
+    [
+     "¿Quemaduras: gravedad?",
+     "<strong>Profundidad</strong> y <strong>extensión</strong>."
+    ],
+    [
+     "¿Grados?",
+     "1.º <strong>rojo y dolor</strong> · 2.º <strong>ampollas</strong> y dolor fuerte · 3.º <strong>calcinada, no duele</strong>. Siempre: <strong>agua fría 15-20 min</strong>. 2.º: no reventar ampollas. 3.º: gasas con suero, <strong>no quitar ropa</strong>, <strong>no pomadas</strong>."
+    ],
+    [
+     "¿Regla de Wallace?",
+     "<strong>Extensión</strong>: 11 áreas del <strong>9 %</strong>. Grave: <strong>&gt; 25 %</strong>, <strong>cara, manos, genitales</strong>, eléctricas, embarazadas."
+    ],
+    [
+     "¿Contusión?",
+     "Golpe <strong>sin herida</strong>: frío y elevar."
+    ],
+    [
+     "¿Esguince?",
+     "<strong>Desgarro de ligamentos</strong>; <strong>se conserva la movilidad</strong>: frío, elevar, inmovilizar."
+    ],
+    [
+     "¿Luxación?",
+     "Torcedura brusca: frío, <strong>dejarla como está, no recolocar</strong>."
+    ],
+    [
+     "¿Fractura?",
+     "Rotura del hueso (abierta/cerrada): <strong>no recolocar</strong>, frío, <strong>inmovilizar arriba y abajo</strong>, tapar la herida."
+    ],
+    [
+     "¿Cabeza o columna?",
+     "<strong>No mover</strong>."
+    ]
+   ]
+  },
+  {
+   "titulo": "Heridas, consciencia y transporte",
+   "items": [
+    [
+     "¿Herida leve?",
+     "Solo <strong>epidermis</strong>, <strong>&lt; 6 h</strong>: lavarse manos · agua y jabón con gasas · <strong>antiséptico yodado</strong> · cubrir."
+    ],
+    [
+     "¿Herida grave?",
+     "Signos vitales · <strong>no extraer</strong> cuerpos enclavados · <strong>no hurgar</strong> · gasa húmeda · centro sanitario."
+    ],
+    [
+     "¿Lipotimia?",
+     "Desmayo de <strong>segundos</strong> por <strong>falta de sangre en el cerebro</strong>: <strong>piernas en alto</strong>, aflojar ropa, aire, PLS o RCP."
+    ],
+    [
+     "¿Epilepsia?",
+     "Apartar objetos · <strong>no sujetar</strong> · manta debajo · <strong>PLS al acabar</strong> · constantes."
+    ],
+    [
+     "¿Norma general?",
+     "<strong>No mover</strong> al accidentado."
+    ],
+    [
+     "¿Columna con varios socorristas?",
+     "<strong>Eje cabeza-cuello-tronco</strong>, <strong>6 puntos de apoyo</strong>, cabeza con <strong>2 manos</strong>, <strong>de una vez</strong>."
+    ],
+    [
+     "¿Un solo socorrista?",
+     "<strong>Arrastre</strong> (solo <strong>sin fracturas</strong>) · a hombros · en brazos · a cuestas."
+    ]
+   ]
+  }
+ ],
+ "glosario": [
+  [
+   "Ampolla",
+   "Bolsa de líquido bajo la piel (quemadura de 2.º grado)"
+  ],
+  [
+   "Antiséptico",
+   "Producto que mata los microbios de la piel o de una herida"
+  ],
+  [
+   "Arrastre",
+   "Técnica para mover a una víctima pesada tirando de ella; solo sin fracturas"
+  ],
+  [
+   "Asfixia",
+   "Falta de aire en los pulmones"
+  ],
+  [
+   "Atragantamiento",
+   "Obstrucción de las vías respiratorias que impide que el aire llegue a los pulmones"
+  ],
+  [
+   "Botiquín portátil",
+   "Maletín con material de primeros auxilios que se lleva al lugar del accidente"
+  ],
+  [
+   "Cadena de supervivencia",
+   "Los 4 eslabones para revertir una PCR (llamar, RCP, desfibrilar, soporte avanzado)"
+  ],
+  [
+   "Compresión arterial",
+   "Apretar la arteria entre la herida y el corazón"
+  ],
+  [
+   "Compresión directa",
+   "Apretar con gasas encima de la herida"
+  ],
+  [
+   "Conducta PAS",
+   "Proteger, avisar y socorrer"
+  ],
+  [
+   "Consciencia",
+   "Capacidad de responder a los estímulos externos"
+  ],
+  [
+   "Contusión",
+   "Golpe sobre la piel sin herida"
+  ],
+  [
+   "DEA",
+   "Desfibrilador externo automático"
+  ],
+  [
+   "Desfibrilación",
+   "Descarga eléctrica para que el corazón recupere el ritmo"
+  ],
+  [
+   "Epilepsia",
+   "Enfermedad con pérdida de conocimiento y convulsiones"
+  ],
+  [
+   "Epistaxis",
+   "Hemorragia por la nariz"
+  ],
+  [
+   "Esguince",
+   "Desgarro de ligamentos al forzar una articulación; se conserva la movilidad"
+  ],
+  [
+   "ERC",
+   "European Resuscitation Council (Consejo Europeo de Resucitación)"
+  ],
+  [
+   "Evaluación primaria / secundaria",
+   "Signos vitales (consciencia y respiración) / resto de lesiones de cabeza a pies"
+  ],
+  [
+   "Fractura",
+   "Rotura del hueso; abierta (con herida) o cerrada"
+  ],
+  [
+   "Hemorragia",
+   "Salida de la sangre de los vasos sanguíneos"
+  ],
+  [
+   "Hemorragia exteriorizada",
+   "Interna, pero sale por un orificio natural"
+  ],
+  [
+   "Herida",
+   "Pérdida de continuidad de la piel por un traumatismo"
+  ],
+  [
+   "Lipotimia",
+   "Desmayo breve por falta momentánea de sangre en el cerebro"
+  ],
+  [
+   "Luxación",
+   "Torcedura brusca y dolorosa de una articulación; el hueso se sale de su sitio"
+  ],
+  [
+   "Maniobra de Heimlich",
+   "Empujar el cuerpo extraño hacia la salida expulsando el aire de los pulmones"
+  ],
+  [
+   "Maniobra frente-mentón",
+   "Inclinar la cabeza hacia atrás para abrir la vía aérea y comprobar la respiración"
+  ],
+  [
+   "Otorragia",
+   "Hemorragia por el oído"
+  ],
+  [
+   "PCR",
+   "Parada cardiorrespiratoria"
+  ],
+  [
+   "Primeros auxilios",
+   "Medidas iniciales en el lugar de los hechos hasta que llega la asistencia sanitaria"
+  ],
+  [
+   "PLS",
+   "Posición lateral de seguridad: de lado, para quien está inconsciente y respira"
+  ],
+  [
+   "Quemadura",
+   "Lesión de la piel y tejidos blandos por fuego, frío, electricidad, químicos o líquidos hirviendo"
+  ],
+  [
+   "RCP",
+   "Reanimación cardiopulmonar: 30 compresiones y 2 ventilaciones"
+  ],
+  [
+   "Regla de los nueves (Wallace)",
+   "Calcula la extensión de una quemadura: 11 áreas del 9 %"
+  ],
+  [
+   "Soporte vital básico (SVB)",
+   "Prevención de la PCR, RCP, sistema de emergencias y desfibrilación precoz"
+  ],
+  [
+   "Soporte vital avanzado",
+   "4.º eslabón; solo personal sanitario"
+  ],
+  [
+   "Torniquete",
+   "Banda que corta el paso de la sangre en un miembro; último recurso"
+  ],
+  [
+   "Traumatismo",
+   "Lesión del sistema musculoesquelético por una causa mecánica externa"
+  ],
+  [
+   "Triaje",
+   "Clasificar heridos por colores según su gravedad"
+  ]
+ ],
+ "extras": [
+  "empty",
+  {
+   "id": "nave",
+   "html": "<section class=\"xs\" id=\"nave\"><h2 class=\"xs-h\">🏭 Bloque 12 · Actividad de clase: «Accidente en la nave»</h2><p><strong>Actividad de la profe</strong> · IPE I · UD5 Primeros auxilios · diapositivas 1 a 6 · en parejas · 40 minutos. Se corrige en común en clase.</p>\n<p><strong>La situación:</strong> son las <strong>11:00</strong> en la nave de una <strong>empresa de distribución</strong> (<strong>polígono de Mutilva, calle C, nave 7</strong>). Se ha <strong>caído una estantería alta</strong>, hay cajas por el suelo, <strong>una carretilla elevadora sigue en marcha</strong> y hay <strong>cinco personas afectadas</strong>. Vosotros dos sois los primeros en llegar.</p>\n<p>Tapa cada respuesta, contesta en voz alta y luego destápala.</p><details class=\"pq\"><summary><span class=\"pn\">A1</span> Escena 1 · Proteger, avisar y socorrer (diap. 2) · Ordenad las seis acciones según la conducta PAS. Escribid solo las letras y, al lado de cada una, si es P, A o S.</summary><div class=\"pa\"><ul>\n<li><strong>A</strong> · Comprobar si las personas del suelo responden → <strong>S</strong> · <strong>6.º</strong></li>\n<li><strong>B</strong> · Apagar la carretilla elevadora, que sigue en marcha → <strong>P</strong> · <strong>1.º</strong></li>\n<li><strong>C</strong> · Llamar al 112 → <strong>A</strong> · <strong>4.º</strong></li>\n<li><strong>D</strong> · Avisar al responsable de emergencias de la empresa → <strong>A</strong> · <strong>3.º</strong></li>\n<li><strong>E</strong> · Señalizar la zona para que no entre nadie más → <strong>P</strong> · <strong>2.º</strong></li>\n<li><strong>F</strong> · Dejar libre el teléfono desde el que habéis llamado → <strong>A</strong> · <strong>5.º</strong></li>\n</ul>\n<p><strong>Orden final: B → E → D → C → F → A.</strong></p>\n<ul>\n<li><strong>Proteger:</strong> primero <strong>B, apagar la carretilla</strong>, porque es un peligro que sigue activo («observar si las causas continúan activas e intentar eliminarlas»). Después <strong>E, señalizar la zona</strong>.</li>\n<li><strong>Avisar:</strong> <strong>D, el responsable de emergencias de la empresa</strong> («avisar a los servicios de socorro de la empresa» es el 1.º), <strong>C, el 112</strong> (2.º) y <strong>F, dejar libre la línea</strong> (3.º).</li>\n<li><strong>Socorrer:</strong> <strong>A, comprobar si responden</strong> (evaluación primaria: consciencia y respiración).</li>\n</ul>\n<p>Ojo con dos fallos fáciles: señalizar antes de apagar la carretilla (el peligro sigue en marcha) y llamar al 112 antes que al servicio de la empresa (la diapositiva los pone al revés). <span class=\"ref\">→ concepto 4.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">A2</span> Escena 2 · La llamada al 112 (diap. 2) · Escribid lo que diríais al 112, en 4 o 5 líneas, con todos los datos que pide la diapositiva.</summary><div class=\"pa\"><p>Hay que dar los datos de la diapositiva: <strong>quién llama, lugar exacto, tipo de accidente y número de heridos con su situación</strong>. Ejemplo: «Hola, soy David (nombre). Estoy en el <strong>polígono de Mutilva, calle C, nave 7</strong>, una empresa de distribución. <strong>Se ha caído una estantería alta</strong> y hay <strong>cinco personas heridas</strong>: <strong>una tumbada que no responde pero respira</strong>, <strong>una que respira con dificultad</strong>, <strong>una que no puede levantarse por el dolor de una pierna</strong> y <strong>dos que caminan</strong> (una con dolor fuerte en la muñeca y otra mareada). Ya hemos apagado la carretilla y señalizado la zona.» Después <strong>no se cuelga hasta que lo diga el 112</strong> y se <strong>deja libre la línea</strong>. <span class=\"ref\">→ concepto 4.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">A3</span> Escena 3 · Triaje: ¿a quién atendemos primero? (diap. 3, triaje SHORT) · a) Para cada persona, contestad las preguntas del esquema en orden (sí / no / no hace falta) y poned su color y el orden en que la atenderíais.</summary><div class=\"pa\"><p>Cómo está cada uno (orden del archivo):</p>\n<ul>\n<li><strong>Luis:</strong> se acerca andando y gritando que le duele mucho la muñeca.</li>\n<li><strong>Ana:</strong> sentada en el suelo, no puede levantarse por el dolor de la pierna; habla con normalidad y hace lo que le pedís.</li>\n<li><strong>Iker:</strong> sentado en una caja, algo mareado, pero cuando se lo pedís se levanta y camina sin ayuda.</li>\n<li><strong>Marta:</strong> tumbada; no contesta ni hace lo que le pedís, pero respira.</li>\n<li><strong>Sara:</strong> tumbada, no puede levantarse; contesta y obedece, pero le cuesta respirar.</li>\n</ul>\n<p>(«—» = no hace falta preguntarlo)</p>\n<div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Persona</th>\n<th>Color · orden</th>\n<th>¿Camina?</th>\n<th>¿Habla?</th>\n<th>¿Respira?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Luis</strong></td>\n<td>🟢 4.º/5.º</td>\n<td>Sí</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td><strong>Ana</strong></td>\n<td>🟡 <strong>3.º</strong></td>\n<td>No</td>\n<td>Sí</td>\n<td>—</td>\n</tr>\n<tr>\n<td><strong>Iker</strong></td>\n<td>🟢 4.º/5.º</td>\n<td>Sí</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td><strong>Marta</strong></td>\n<td>🔴 <strong>1.º</strong></td>\n<td>No</td>\n<td>No</td>\n<td>Sí</td>\n</tr>\n<tr>\n<td><strong>Sara</strong></td>\n<td>🟡 <strong>2.º</strong></td>\n<td>No</td>\n<td>Sí</td>\n<td>—</td>\n</tr>\n</tbody>\n</table></div>\n<p>Por qué: <strong>Luis</strong> e <strong>Iker</strong> caminan → <strong>verde</strong> (Iker, aunque esté mareado, se levanta y camina solo). <strong>Ana</strong> y <strong>Sara</strong> no caminan pero hablan y obedecen → <strong>amarillo</strong>; Sara va antes que Ana porque <strong>le cuesta respirar</strong> (la dificultad respiratoria está en la lista del amarillo y puede empeorar). <strong>Marta</strong> no camina ni contesta pero respira → <strong>rojo</strong>, la primera.</p>\n<p><strong>b) ¿Por qué Luis no es el primero aunque grite más?</strong> Porque el triaje <strong>prioriza a los más graves</strong>, no a los que más se quejan. Si <strong>camina</strong> es <strong>verde</strong>: si grita, es que <strong>está consciente y respira</strong>. ⚠️ (el razonamiento es general; la regla de la diapositiva es «¿camina? → verde»).</p>\n<p><strong>c) ¿Cuándo se pone la tarjeta negra y por qué existe?</strong> A las <strong>personas fallecidas</strong>, en la <strong>parada cardiorrespiratoria no presenciada</strong> y en el <strong>trauma craneal severo con salida de masa encefálica</strong> (y, en el esquema, cuando <strong>no respira</strong>). Existe porque el triaje busca <strong>asegurar la supervivencia priorizando a los más graves que aún se pueden salvar</strong>: el tiempo y las manos se dedican a quien sí puede sobrevivir ⚠️. <span class=\"ref\">→ conceptos 5 y 6.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">A4</span> Escena 4 · El botiquín de la nave (diap. 4) · Está en un armario cerrado con llave en la oficina del primer piso, sin ninguna señal, y la última revisión fue hace dos años. Dentro hay gasas estériles, vendas, esparadrapo, tijeras, guantes desechables, una caja de ibuprofeno en pastillas y un frasco de colonia.</summary><div class=\"pa\"><p><strong>a) Normas que no se cumplen:</strong> 1) <strong>no es portátil ni fácil de trasladar / no está en un lugar de fácil acceso</strong> (cerrado con llave y en otro piso); 2) <strong>no está debidamente señalizado</strong>; 3) <strong>no se revisa periódicamente</strong> (hace dos años).</p>\n<p><strong>b) Lo que sobra:</strong> el <strong>ibuprofeno en pastillas</strong> (en el botiquín el analgésico es en <strong>espray o pomada</strong>, no medicamentos por boca) y el <strong>frasco de colonia</strong> (no está en la lista y no sirve para desinfectar) ⚠️.</p>\n<p><strong>c) Instrumental básico que falta</strong> (cualquiera de estos): <strong>desinfectantes y antisépticos</strong>, <strong>algodón hidrófilo</strong>, <strong>apósitos adhesivos</strong> y <strong>pinzas</strong>. <span class=\"ref\">→ conceptos 7 y 8.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">A5</span> Escena 5 · Marta deja de respirar con normalidad (diap. 5 y 6) · Solo hace alguna boqueada suelta. Tenéis un móvil y hay un desfibrilador (DEA) en la recepción.</summary><div class=\"pa\"><p><strong>a) Eslabones:</strong> os tocan los <strong>tres primeros</strong>: <strong>reconocimiento precoz y llamada de auxilio</strong>, <strong>RCP precoz por testigos</strong> y <strong>desfibrilación precoz</strong> (con el DEA), porque <strong>los puede hacer cualquier persona</strong> con conocimientos básicos. <strong>No os toca el 4.º, el soporte vital avanzado</strong>, que <strong>solo lo hace el personal sanitario</strong>. Las <strong>boqueadas no son respiración normal</strong>: es una <strong>respiración anormal</strong> → se actúa como en una parada.</p>\n<p><strong>b) Reparto y pasos (algoritmo SVB):</strong></p>\n<ol>\n<li>Los dos: <strong>persona inconsciente con respiración ausente o anormal</strong>.</li>\n<li><strong>Socorrista 1:</strong> <strong>llama al 112</strong> (o avisa de que Marta ha empeorado) y <strong>va a por el DEA</strong> a la recepción.</li>\n<li><strong>Socorrista 2:</strong> empieza ya: <strong>30 compresiones torácicas</strong>.</li>\n<li><strong>2 ventilaciones de rescate.</strong></li>\n<li><strong>Continúa la RCP 30:2</strong> sin parar.</li>\n<li><strong>En cuanto llega el DEA, se enciende y se siguen sus instrucciones.</strong> Los dos pueden turnarse en las compresiones ⚠️.</li>\n</ol>\n<p><strong>c) Si estuvieras solo y sin móvil:</strong> hay que <strong>dejar a la víctima para avisar al sistema de emergencias</strong> y <strong>después iniciar la RCP</strong>. (Solo y <strong>con</strong> móvil: llamar, <strong>poner el altavoz</strong> y <strong>empezar la RCP</strong> sin separarse.) <span class=\"ref\">→ conceptos 10-13.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">A6</span> Para terminar · Cataloga según el triaje (diap. 3) · Poned a cada situación su color (verde, amarillo, rojo o negro) usando el esquema SHORT y las listas de la diapositiva.</summary><div class=\"pa\"><div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Nº</th>\n<th>Situación</th>\n<th>Color</th>\n<th>Por qué</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Tobillo torcido, se acerca <strong>cojeando</strong></td>\n<td>🟢 <strong>Verde</strong></td>\n<td>Camina</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Atragantada: <strong>no puede hablar, toser ni respirar</strong></td>\n<td>🔴 <strong>Rojo</strong></td>\n<td><strong>Asfixia</strong> u obstrucción de las vías respiratorias</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Tumbado, contesta y obedece, pero <strong>le cuesta mucho respirar</strong></td>\n<td>🟡 <strong>Amarillo</strong></td>\n<td>Habla y obedece; <strong>dificultad respiratoria</strong></td>\n</tr>\n<tr>\n<td>4</td>\n<td>Quemadura en un brazo (<strong>menos del 20 %</strong>), no se levanta, habla normal</td>\n<td>🟡 <strong>Amarillo</strong></td>\n<td>Quemado <strong>&lt; 20 %</strong></td>\n</tr>\n<tr>\n<td>5</td>\n<td>Tumbado, <strong>no contesta ni obedece, pero respira</strong></td>\n<td>🔴 <strong>Rojo</strong></td>\n<td>No habla ni obedece y respira</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>Quemaduras en gran parte del cuerpo</strong> y no contesta</td>\n<td>🔴 <strong>Rojo</strong></td>\n<td><strong>Gran quemado</strong> (si además no respirara, negro)</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Pequeña rozadura en la rodilla, <strong>camina</strong></td>\n<td>🟢 <strong>Verde</strong></td>\n<td>Herida menor y camina</td>\n</tr>\n<tr>\n<td>8</td>\n<td>No responde, <strong>no respira</strong> y <strong>nadie le vio caer</strong></td>\n<td>⚫ <strong>Negro</strong></td>\n<td><strong>Parada cardiorrespiratoria no presenciada</strong></td>\n</tr>\n</tbody>\n</table></div></div></details></section>",
+   "arriba": "<a class=\"dl nave b12\" href=\"#nave\"><span class=\"dn\">12</span>🏭 Actividad: Accidente en la nave</a>"
+  },
+  {
+   "id": "hoja",
+   "html": "<section class=\"xs\" id=\"hoja\"><h2 class=\"xs-h\">📝 Parte exclusiva: test y actividades de la profe, resueltos</h2><p>Tapa la respuesta, contesta en voz alta y luego destapa. Las marcadas con ⚠️ se responden con conocimiento general porque la diapositiva no lo explica; compruébalo con lo que diga la profe en clase.</p><details class=\"pq\"><summary><span class=\"pn\">P1</span> Test 1 · Los primeros auxilios son medidas que se deben adoptar para: a) trasladar a las personas accidentadas a un centro médico; b) atender a las personas accidentadas hasta que llega la asistencia médica profesional; c) avisar a los servicios de emergencia.</summary><div class=\"pa\"><p><strong>b)</strong> Atender a las personas accidentadas hasta que llega la asistencia médica profesional. Son las medidas que se adoptan <strong>inicialmente</strong>, hasta que se consigue asistencia sanitaria profesional. <span class=\"ref\">→ concepto 2.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P2</span> Test 2 · La conducta PAS es la secuencia que ha de seguirse en caso de: a) parada cardiorrespiratoria; b) accidente o enfermedad repentina; c) atragantamiento.</summary><div class=\"pa\"><p><strong>b)</strong> Accidente o enfermedad repentina. <span class=\"ref\">→ concepto 4.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P3</span> Test 3 · En la conducta PAS, avisar significa que hay que alertar a: a) la policía; b) los servicios de emergencia; c) las demás personas que puedan pasar por el lugar.</summary><div class=\"pa\"><p><strong>b)</strong> Los servicios de emergencia (los de la empresa y el <strong>112</strong>). <span class=\"ref\">→ concepto 4.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P4</span> Test 4 · El triaje es: a) una técnica de primeros auxilios; b) una actuación en caso de PCR; c) una técnica para clasificar heridos de un accidente según su gravedad.</summary><div class=\"pa\"><p><strong>c)</strong> Una técnica para <strong>clasificar</strong> heridos según su gravedad. <span class=\"ref\">→ concepto 5.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P5</span> Test 5 · En caso de PCR, la técnica de primeros auxilios que se aplica se llama: a) conducta PAS; b) maniobra de Heimlich; c) soporte vital básico.</summary><div class=\"pa\"><p><strong>c)</strong> Soporte vital básico (que incluye la RCP). <span class=\"ref\">→ concepto 9.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P6</span> Test 6 · La primera actuación de la cadena de supervivencia según las guías del ERC es: a) la RCP precoz; b) la aplicación del DEA; c) el reconocimiento precoz y el aviso al 112.</summary><div class=\"pa\"><p><strong>c)</strong> El <strong>reconocimiento precoz y el aviso al 112</strong>. <span class=\"ref\">→ concepto 10.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P7</span> Test 7 · En caso de PCR, el primer signo vital que se evalúa es: a) la consciencia; b) la respiración; c) el pulso.</summary><div class=\"pa\"><p><strong>a)</strong> La <strong>consciencia</strong> (la evaluación primaria va en este orden: consciencia y respiración). <span class=\"ref\">→ conceptos 4 y 14.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P8</span> Test 8 · Hay que poner a la persona accidentada en posición lateral de seguridad: a) cuando está inconsciente y respira; b) cuando está inconsciente y no respira; c) cuando está consciente y respira.</summary><div class=\"pa\"><p><strong>a)</strong> Cuando está <strong>inconsciente y respira</strong>. ⚠️ (la diapositiva solo cita el caso práctico de la PLS). Si no respira → RCP. <span class=\"ref\">→ concepto 14.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P9</span> Test 9 · La maniobra frente-mentón se utiliza para: a) comprobar la consciencia; b) comprobar la respiración; c) comprobar el pulso.</summary><div class=\"pa\"><p><strong>b)</strong> Comprobar la <strong>respiración</strong>: abre la vía aérea para ver, oír y sentir si respira. ⚠️ <span class=\"ref\">→ concepto 14.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P10</span> Test 10 · En la RCP, el ritmo de las compresiones torácicas cuando solo hay un socorrista debe ser de: a) 30:2 por minuto; b) 100 por minuto; c) 50 por minuto.</summary><div class=\"pa\"><p><strong>b)</strong> <strong>100 por minuto</strong> (las guías ERC dicen 100-120). ⚠️ Trampa: <strong>30:2 no es un ritmo</strong>, es la relación compresiones/ventilaciones. <span class=\"ref\">→ conceptos 12 y 14.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P11</span> Test 11 · En caso de atragantamiento parcial se debe: a) dar golpes en la espalda; b) animar a toser; c) realizar la maniobra de Heimlich.</summary><div class=\"pa\"><p><strong>b)</strong> <strong>Animar a toser</strong> (y no golpear la espalda). <span class=\"ref\">→ concepto 16.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P12</span> Test 12 · La maniobra de Heimlich se realiza en caso de que la persona presente: a) atragantamiento parcial; b) atragantamiento total con consciencia; c) atragantamiento total con inconsciencia.</summary><div class=\"pa\"><p><strong>b)</strong> Atragantamiento <strong>total con consciencia</strong>. Si está inconsciente → 112 y RCP. <span class=\"ref\">→ conceptos 16 y 17.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P13</span> Test 13 · Las hemorragias en las que la sangre sale al exterior a través de una herida son: a) internas; b) externas; c) exteriorizadas.</summary><div class=\"pa\"><p><strong>b)</strong> <strong>Externas</strong>. Trampa: las <strong>exteriorizadas</strong> salen por un <strong>orificio natural</strong>, no por una herida. <span class=\"ref\">→ conceptos 18 y 19.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P14</span> Test 14 · Si la compresión directa no detiene una hemorragia, el siguiente paso es: a) hacer una compresión arterial; b) realizar un torniquete; c) echar agua en la herida.</summary><div class=\"pa\"><p><strong>a)</strong> Hacer una <strong>compresión arterial</strong> (los 3 métodos van en orden: directa → arterial → torniquete). <span class=\"ref\">→ concepto 19.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P15</span> Test 15 · En caso de quemadura, la primera actuación que se ha de realizar es: a) poner crema antiséptica; b) refrescar la zona quemada con agua; c) explotar las ampollas.</summary><div class=\"pa\"><p><strong>b)</strong> <strong>Refrescar con agua</strong> fría 15-20 minutos. <span class=\"ref\">→ concepto 23.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P16</span> Test 16 · La regla de Wallace clasifica las quemaduras según: a) su extensión; b) su profundidad; c) su gravedad.</summary><div class=\"pa\"><p><strong>a)</strong> Su <strong>extensión</strong> (regla de los nueves). <span class=\"ref\">→ concepto 24.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P17</span> Test 17 · En caso de accidente en el que se sospeche que hay fractura en la columna vertebral: a) se debe mover a la persona accidentada; b) no se debe mover a la persona accidentada; c) se pondrá a la persona en posición lateral de seguridad.</summary><div class=\"pa\"><p><strong>b)</strong> <strong>No se debe mover</strong> a la persona accidentada. <span class=\"ref\">→ conceptos 28 y 34.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P18</span> Actividad 1 · Se ha derrumbado una estructura y hay varios heridos. ¿Qué tarjeta de triaje asignas? a) Fractura abierta en una pierna. b) Trauma craneoencefálico. c) Asfixia. d) Contusiones.</summary><div class=\"pa\"><p>a) <strong>Amarillo</strong> (fractura abierta). b) <strong>Negro</strong>, según la tabla de la profe, si es un <strong>trauma craneal severo</strong> (con salida de masa encefálica). Si el herido camina o habla, se clasifica con las 3 preguntas (verde o amarillo). c) <strong>Rojo</strong> (asfixia). d) <strong>Verde</strong> (lesión menor, puede caminar). <span class=\"ref\">→ concepto 6.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P19</span> Actividad 2 · Un trabajador se ha cortado con la cuchilla de una máquina de despiezado. ¿Qué material del botiquín deben buscar?</summary><div class=\"pa\"><p><strong>Guantes desechables</strong> (para protegerse), <strong>gasas estériles</strong> (para apretar la herida y limpiarla), <strong>suero fisiológico</strong> (para lavarla), <strong>desinfectante o antiséptico yodado</strong>, <strong>vendas y esparadrapo</strong> o <strong>apósitos adhesivos</strong> (para cubrir y sujetar) y <strong>tijeras</strong>. Si la hemorragia no se detiene con la compresión, el <strong>torniquete</strong> (material auxiliar), como último recurso. <span class=\"ref\">→ conceptos 8 y 19.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P20</span> Actividad 3 · Completa la tabla: actuación según consciencia y respiración.</summary><div class=\"pa\"><div class=\"tw\"><table>\n<thead>\n<tr>\n<th>Consciente</th>\n<th>Respira</th>\n<th>Actuación</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sí</td>\n<td>Sí</td>\n<td><strong>Evaluación secundaria</strong> (de la cabeza a los pies), tranquilizarle, abrigarle, <strong>no darle de comer ni de beber</strong>, avisar al 112 si hace falta y vigilarle</td>\n</tr>\n<tr>\n<td>No</td>\n<td>Sí</td>\n<td><strong>Llamar al 112</strong> y colocarle en <strong>posición lateral de seguridad (PLS)</strong>, vigilando la respiración ⚠️</td>\n</tr>\n<tr>\n<td>No</td>\n<td>No</td>\n<td><strong>Llamar al 112</strong> e iniciar la <strong>RCP 30:2</strong>; usar el <strong>DEA</strong> en cuanto llegue</td>\n</tr>\n</tbody>\n</table></div></div></details><details class=\"pq\"><summary><span class=\"pn\">P21</span> Actividad 5 · Un compañero se ha atragantado con el tapón de una botella. No puede hablar ni toser. ¿Qué tipo de atragantamiento es y qué debe hacer Pedro?</summary><div class=\"pa\"><p>Es una <strong>obstrucción completa o total</strong> (no puede hablar ni toser), y está <strong>consciente</strong>. Pedro debe: 1) <strong>revisar la boca</strong>; 2) dar <strong>cinco palmadas fuertes en la espalda</strong>; 3) realizar la <strong>maniobra de Heimlich</strong>. Si el compañero <strong>pierde la consciencia</strong>: <strong>llamar al 112</strong> e <strong>iniciar la RCP</strong>. <span class=\"ref\">→ conceptos 15, 16 y 17.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P22</span> Actividad 6 · Una trabajadora se ha hecho un corte muy profundo en los dedos con la máquina de cortar embutido y sangra mucho. ¿Qué conducta de primeros auxilios hay que seguir?</summary><div class=\"pa\"><p>Conducta <strong>PAS</strong>: <strong>proteger</strong> (apagar y desenchufar la máquina), <strong>avisar</strong> (servicio de la empresa y 112) y <strong>socorrer</strong>. Es una <strong>hemorragia externa</strong> en una <strong>herida grave</strong>: ponerse <strong>guantes</strong>, hacer <strong>compresión directa</strong> con gasas estériles sobre la herida (con la mano elevada ⚠️); si no se detiene, <strong>compresión arterial</strong>; y solo como último recurso, <strong>torniquete</strong>. <strong>No hurgar</strong> en la herida, cubrirla y <strong>acudir a un centro sanitario</strong>. <span class=\"ref\">→ conceptos 4, 19 y 29.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P23</span> Actividad 7 · Una trabajadora sangra mucho por la nariz tras un golpe. Le han inclinado la cabeza hacia atrás. ¿Es correcto?</summary><div class=\"pa\"><p><strong>No es correcto.</strong> Es una <strong>epistaxis</strong> (hemorragia exteriorizada). La cabeza se inclina <strong>hacia delante</strong> (Fig. 5.22), porque hacia atrás la sangre baja a la garganta y puede tragarla o atragantarse. Se aprieta la nariz por la parte blanda ⚠️. <span class=\"ref\">→ concepto 21.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P24</span> Actividad 8 · ¿A qué tipo de hemorragia corresponde cada actuación? a) Torniquete. b) Presionar sobre la herida. c) Presionar sobre las arterias. d) Presionar sobre el tabique nasal. e) Colocar en PLS. f) Boca arriba con las piernas elevadas.</summary><div class=\"pa\"><p>a) <strong>Externa</strong> (3.º método). b) <strong>Externa</strong> (compresión directa). c) <strong>Externa</strong> (compresión arterial). d) <strong>Exteriorizada</strong> (epistaxis) ⚠️. e) <strong>Exteriorizada</strong> por el oído (otorragia): se coloca de lado con <strong>el oído que sangra hacia el suelo</strong> ⚠️. f) <strong>Interna</strong>. <span class=\"ref\">→ conceptos 19, 20 y 21.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P25</span> Actividad 9 · Un trabajador se ha caído de una plataforma a 2 metros. Tiene varias contusiones y sangra por un oído. ¿Qué deben hacer sus compañeros?</summary><div class=\"pa\"><p>Seguir la conducta <strong>PAS</strong> y <strong>llamar al 112</strong>. La caída de altura y la <strong>otorragia</strong> hacen sospechar un <strong>traumatismo grave en la cabeza o la columna</strong>, así que <strong>no se le debe mover</strong>. No se tapona el oído ⚠️; si hubiera que colocarle, sería con el <strong>protocolo de columna</strong> (eje cabeza-cuello-tronco, 6 puntos de apoyo, de una vez) y con <strong>el oído que sangra hacia el suelo</strong>. Se controlan sus <strong>signos vitales</strong> y se le abriga. En las <strong>contusiones</strong>, <strong>frío local</strong>. <span class=\"ref\">→ conceptos 21, 26, 28 y 34.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P26</span> Actividad 10 · Naiara se ha quemado las dos manos al sacar pan del horno. La piel está enrojecida y le duele. a) ¿Qué tipo de quemadura es según su profundidad? b) ¿Qué procedimiento se sigue?</summary><div class=\"pa\"><p>a) <strong>Primer grado</strong> (enrojecimiento y dolor). b) <strong>Agua fría durante 15-20 minutos</strong> sin que el chorro caiga directamente sobre la quemadura, o sumergir las manos en agua fría. Ojo: por su <strong>localización (las manos)</strong> se considera <strong>grave</strong>, así que debe acudir a un <strong>centro sanitario</strong>. <span class=\"ref\">→ conceptos 23 y 24.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P27</span> Actividad 11 · Un trabajador hacía tareas de lijado cuando un incendio prendió su ropa y se quemó el abdomen, la espalda y los brazos. Tiene ampollas y mucho dolor. a) ¿Qué tipo de quemadura tiene según su profundidad y su extensión? b) ¿Cómo se actúa?</summary><div class=\"pa\"><p>a) <strong>Segundo grado</strong> (ampollas y dolor fuerte). Extensión con la regla de los nueves: <strong>abdomen 9 % + espalda 18 % + brazos 18 % = unos 45 %</strong> ⚠️ (cálculo aproximado) → <strong>más del 25 %: grave</strong> (gran quemado). b) Primero <strong>proteger</strong> (apagar el fuego de la ropa) y <strong>avisar al 112</strong>. Después: <strong>agua fría 15-20 minutos</strong>, <strong>no reventar las ampollas</strong>, y si se han reventado, tratarlas como una herida (<strong>antiséptico y gasas estériles</strong>). <strong>Acudir a un centro sanitario.</strong> <span class=\"ref\">→ conceptos 4, 23 y 24.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P28</span> Actividad 12 · Una trabajadora se ha torcido el tobillo al tropezar con unos cables. Le duele mucho, pero puede caminar. ¿Qué traumatismo es?</summary><div class=\"pa\"><p>Un <strong>esguince</strong>: dolor e inflamación, pero <strong>se conserva la movilidad</strong>. Actuación: <strong>frío local</strong>, <strong>levantar la pierna</strong> e <strong>inmovilizarla en horizontal</strong>. <span class=\"ref\">→ concepto 26.</span></p></div></details><details class=\"pq\"><summary><span class=\"pn\">P29</span> Actividad 13 · Un cliente se ha desvanecido en una clase de zumba con calor; parece una lipotimia. ¿Qué es y cómo se actúa?</summary><div class=\"pa\"><p>Es un <strong>desmayo</strong> con pérdida de conocimiento <strong>durante unos segundos</strong> por una <strong>disminución momentánea de la sangre que llega al cerebro</strong>. Actuación: 1) <strong>tumbarle con las piernas en alto</strong>; 2) <strong>aflojar la ropa</strong> que apriete (cuello, tórax, cintura) y quitarle los calcetines, manteniendo la temperatura; 3) dar <strong>aire</strong> abriendo puertas y ventanas; 4) si mantiene las constantes vitales, <strong>PLS</strong>; 5) si no, <strong>RCP</strong>. <span class=\"ref\">→ concepto 31.</span></p></div></details></section>",
+   "indice": "📝 Test y actividades resueltos"
+  },
+  {
+   "id": "trampas",
+   "indice": "⚠️ Trampas"
+  },
+  {
+   "id": "numeros",
+   "titulo": "🔢 Números clave",
+   "indice": "🔢 Números clave"
+  },
+  {
+   "id": "chequeo",
+   "indice": "✅ Chequeo final"
+  },
+  {
+   "id": "impres",
+   "indice": "⚡ Lo imprescindible"
+  },
+  {
+   "id": "glosario",
+   "titulo": "📖 Glosario",
+   "cab": [
+    "Término",
+    "Significado"
+   ],
+   "indice": "📖 Glosario"
+  }
+ ],
+ "toc": "<option value=\"b0\">Bloque 1 · Los primeros auxilios</option><option value=\"b1\">Bloque 2 · El triaje</option><option value=\"b2\">Bloque 3 · El botiquín de primeros auxilios</option><option value=\"b3\">Bloque 4 · El soporte vital básico</option><option value=\"b4\">Bloque 5 · La actuación ante atragantamientos</option><option value=\"b5\">Bloque 6 · Las hemorragias</option><option value=\"b6\">Bloque 7 · Las quemaduras</option><option value=\"b7\">Bloque 8 · Los traumatismos</option><option value=\"b8\">Bloque 9 · Las heridas</option><option value=\"b9\">Bloque 10 · La pérdida de consciencia</option><option value=\"b10\">Bloque 11 · El transporte de heridos</option><option value=\"hoja\">📝 Test y actividades resueltos</option><option value=\"nave\">🏭 Bloque 12 · Accidente en la nave</option><option value=\"trampas\">⚠️ Trampas</option><option value=\"numeros\">🔢 Números clave</option><option value=\"chequeo\">✅ Chequeo final</option><option value=\"impres\">⚡ Lo imprescindible</option><option value=\"glosario\">📖 Glosario</option>"
+}
