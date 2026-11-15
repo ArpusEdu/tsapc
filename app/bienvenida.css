@@ -1,4 +1,4 @@
-/* Corte · la guía de bienvenida (#/guia). Sin capa: gana a las piezas sin !important.
+/* Enfoque · la bienvenida: la guía (#/guia) y la llegada (#/llegada). Sin capa: gana a las piezas sin !important.
    Solo tokens --c-* y del sistema. Movimiento: solo transform y opacity, con las curvas del sistema. */
 
 /* mientras se ve la guía, la barra inferior se aparta: los mandos de la guía van abajo, al alcance del pulgar */
@@ -41,7 +41,7 @@ html.en-guia body{padding-bottom:0}
 
 /* ---------- las pruebas que se tocan ---------- */
 .guia-demo{position:relative;margin-top:var(--e-2);display:grid;gap:var(--e-3);padding:var(--e-5) var(--e-4) var(--e-4);border:1.5px dashed var(--asig-borde);border-radius:14px;background:var(--c-tarjeta)}
-.guia-demo-etq{position:absolute;top:-15px;left:14px;padding:0 6px;background:var(--c-hoja);font-size:20px;transform:rotate(-2deg)}
+.guia-demo-etq{position:absolute;top:-12px;left:14px;padding:2px 8px;border-radius:4px;background:var(--c-hoja);border:1px solid var(--asig-borde);font:700 var(--t-min)/1.3 var(--f-mono);letter-spacing:.04em;color:var(--asig-texto)}
 .guia-demo-pie{font-size:var(--t-sm);color:var(--c-tinta-2)}
 .guia-pagina .guia-demo-pie{font-size:var(--t-sm)}
 .guia-demo .tarea .titulo{font-size:20px}
@@ -50,7 +50,7 @@ html.en-guia body{padding-bottom:0}
 .guia-preg{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:600}
 .guia-pagina .guia-preg{font-size:var(--t-lg);line-height:var(--lh-titulo)}
 .guia-caja{position:relative;min-height:104px;display:grid;align-items:center}
-.guia-resp{padding:var(--e-3) var(--e-3);border-left:3px solid var(--asig);font-size:var(--t-lectura);line-height:var(--lh-texto)}
+.guia-resp{padding:var(--e-3) var(--e-4);border-radius:var(--r-2);background:var(--c-hoja-2);font-size:var(--t-lectura);line-height:var(--lh-texto)}
 .guia-resp:focus{outline:none}
 .guia-tapar.destapada .guia-resp{background:linear-gradient(100deg,transparent 0 1%,var(--c-fluor) 2% 97%,transparent 99%)}
 .guia-tapa{position:absolute;inset:-4px -6px;display:grid;align-content:center;justify-items:start;gap:4px;padding:var(--e-3) var(--e-4);
@@ -58,7 +58,7 @@ html.en-guia body{padding-bottom:0}
   transform:rotate(-1.4deg);transition:transform var(--d-rapida) var(--ease-salida)}
 .guia-tapa::before{content:"";position:absolute;top:-10px;left:50%;width:78px;height:22px;transform:translateX(-50%) rotate(3deg);opacity:.9;
   background-color:var(--s-tinte);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.35) 0 6px,transparent 6px 12px)}
-.guia-tapa .mano{color:var(--fijo-tinta);font-size:23px}
+.guia-tapa .mano{font-family:var(--f-mano);font-style:normal;font-weight:600;color:var(--fijo-tinta);font-size:23px;line-height:1.1}
 .guia-tapa-acc{font-size:var(--t-sm);font-weight:700;color:var(--fijo-tinta-2)}
 @media (hover:hover){ .guia-tapa:hover{transform:rotate(-.6deg) translateY(-2px)} }
 .guia-tapa:active{transform:rotate(-.6deg) scale(.985)}
@@ -119,3 +119,65 @@ html.en-guia body{padding-bottom:0}
 @media (prefers-reduced-motion:reduce){
   .guia-tapa,.guia-ficha{transition:none}
 }
+
+/* ================= Enfoque · la guía con etiqueta de portaobjetos ================= */
+.guia-pag-cab{min-height:0;align-items:center}
+.guia-porta{display:inline-grid;grid-template-columns:auto auto;align-items:baseline;gap:var(--e-3);padding:7px 12px 7px 10px;border-radius:5px;color:var(--e-hema-900);background:var(--s-tinte);
+  box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--e-vidrio-canto) 70%,transparent),0 8px 16px -12px rgba(0,0,0,.5)}
+.guia-porta .porta-cod{font:700 var(--t-sm)/1.1 var(--f-mono)}
+.guia-porta .porta-diap{font:500 var(--t-min)/1.2 var(--f-mono);white-space:nowrap}
+.guia-consejo.lapiz{font-size:var(--t-mano)}
+
+/* ================= Enfoque · la pantalla de llegada (#/llegada) =================
+   Responde en un vistazo: qué es (logo + lema + una frase), dónde estás (la línea mono) y qué haces (tres pasos y un botón).
+   Entrada coreografiada: el logo enfoca (900 ms) y el texto llega escalonado debajo; todo termina antes de 900 ms.
+   Solo transform y opacity (más el desenfoque de 2,6 px del logo que aprueba marca.md). Nada bloquea: se puede pulsar desde el primer fotograma. */
+html.en-llegada .barra-inferior,html.en-llegada .marca-cab,html.en-llegada .anillas{display:none}
+html.en-llegada body{padding-bottom:0}
+html.en-llegada .vista{min-height:calc(100vh - 28px);min-height:calc(100dvh - 28px)}
+.llegada{position:relative;isolation:isolate;overflow:hidden;overflow:clip;display:grid;align-content:center;gap:0;max-width:34rem;min-height:calc(100vh - 110px);min-height:calc(100dvh - 110px);padding-block:var(--e-4) var(--e-5)}
+/* el ocular: la luz del campo y el anillo del objetivo, detrás de todo, sin captar toques */
+.ll-ocular{position:absolute;z-index:-1;top:-120px;right:-140px;width:320px;aspect-ratio:1;pointer-events:none}
+.ll-campo{display:none}
+.ll-luz{position:absolute;inset:12%;border-radius:50%;background:radial-gradient(closest-side,color-mix(in srgb,var(--e-luz) 92%,transparent),color-mix(in srgb,var(--e-luz) 0%,transparent));opacity:.9}
+.ll-anillo{position:absolute;inset:0;border-radius:50%;border:12px solid color-mix(in srgb,var(--c-anillo-logo) 6%,transparent);
+  -webkit-mask:conic-gradient(from 18deg,#000 0 342deg,transparent 342deg);mask:conic-gradient(from 18deg,#000 0 342deg,transparent 342deg)}
+[data-theme="noche"] .ll-luz{opacity:.09}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="papel"]) .ll-luz{opacity:.09} }
+.ll-marca{display:grid;gap:var(--e-3);justify-items:start}
+.ll-logo{width:min(232px,64vw);height:auto;color:var(--c-anillo-logo);overflow:visible}
+.ll-donde{font:600 var(--t-xs)/1.3 var(--f-mono);letter-spacing:.04em;color:var(--c-tinta-2)}
+.ll-titulo{margin:var(--e-6) 0 var(--e-4);font-size:clamp(2.5rem,1.6rem + 4.4vw,4rem);font-variation-settings:"opsz" 144,var(--suave);font-weight:600;line-height:1;letter-spacing:-.03em;text-wrap:balance}
+.ll-titulo em{font-weight:500;color:var(--c-eosina)}
+.ll-titulo:focus{outline:none}
+.ll-que{max-width:40ch;font-size:var(--t-lectura);line-height:var(--lh-lectura);color:var(--c-tinta-2)}
+.ll-pasos{display:grid;margin:var(--e-5) 0 var(--e-6);padding:0;list-style:none;counter-reset:none}
+.ll-pasos li{display:grid;grid-template-columns:2.4em minmax(0,1fr);gap:var(--e-3);align-items:baseline;padding:var(--e-3) 0;border-top:1px solid var(--c-linea-suave);line-height:1.45}
+.ll-pasos li:last-child{border-bottom:1px solid var(--c-linea-suave)}
+.ll-n{font:700 var(--t-sm)/1 var(--f-mono);color:var(--c-eosina);letter-spacing:.02em}
+.ll-pasos b{color:var(--c-tinta)}
+.ll-pasos li>span:last-child{color:var(--c-tinta-2)}
+.ll-acciones{display:flex;flex-wrap:wrap;gap:var(--e-3)}
+.ll-acciones .boton{flex:1 1 180px;min-height:52px}
+.ll-empezar svg{transition:transform var(--d-rapida) var(--ease-salida)}
+@media (hover:hover){ .ll-empezar:hover svg{transform:translateX(3px)} }
+.ll-pie{display:flex;gap:var(--e-2);align-items:flex-start;margin-top:var(--e-5);font-size:var(--t-sm);color:var(--c-tinta-2)}
+.ll-pie .ico{margin-top:1px;color:var(--c-marca)}
+/* en pantalla ancha, a la derecha, lo que se ve por el ocular: el símbolo grande dentro del anillo */
+@media (min-width:960px){
+  .llegada{max-width:none;grid-template-columns:minmax(0,34rem) minmax(0,1fr);column-gap:var(--e-8);padding-block:var(--e-6)}
+  .llegada>:not(.ll-ocular){grid-column:1}
+  .ll-ocular{position:relative;z-index:0;grid-column:2;grid-row:1/span 6;align-self:center;justify-self:center;top:auto;right:auto;width:min(100%,400px)}
+  .ll-anillo{border-width:16px;border-color:color-mix(in srgb,var(--c-anillo-logo) 10%,transparent)}
+  .ll-campo{position:absolute;inset:16%;display:grid;place-items:center;color:var(--c-anillo-logo)}
+  .ll-simbolo{width:100%;height:auto;overflow:visible}
+}
+
+/* la coreografía */
+.ll-e{animation:ll-entra 420ms var(--ease-salida) both;animation-delay:calc(140ms + var(--i,0) * 48ms)}
+@keyframes ll-entra{from{opacity:0;transform:translateY(10px)}}
+.ll-anillo{animation:ll-gira 900ms var(--e-ease-enfoque) both}
+@keyframes ll-gira{from{opacity:0;transform:rotate(-70deg) scale(.96)}}
+.ll-luz{animation:ll-luz 600ms ease-out both}
+@keyframes ll-luz{from{opacity:0}}
+@media (prefers-reduced-motion:reduce){ .ll-e,.ll-anillo,.ll-luz{animation:none} }

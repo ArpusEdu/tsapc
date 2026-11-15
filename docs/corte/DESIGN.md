@@ -225,7 +225,7 @@ El grano es un SVG de ruido de 180 px en línea, claro en noche y sepia en papel
 - Nada de texto de menos de 12 px.
 - Nada de gris sobre color: sobre un tinte, tinta.
 - Nada de la base de una asignatura como fondo de texto.
-- Nada de rosa eosina ni colores apagados: cada asignatura conserva su color vivo.
+- Nada de rosa eosina en las asignaturas ni colores apagados: cada asignatura conserva su color vivo. (Con la marca Enfoque, la eosina es color de marca solo para el logo y algún énfasis: ver `docs/enfoque/marca.md`.)
 - Nada de `!important` (solo en `.sr` y en el movimiento reducido).
 - Nada de emojis ni caracteres sueltos como iconos: todo sale del sprite.
 - Nada de tarjetas dentro de tarjetas.

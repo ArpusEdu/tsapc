@@ -18,7 +18,7 @@ A study app for the course units: a summary to review («repaso»), practice exa
 
 ## Positioning
 
-Made by and for one histotechnology class, built on its own syllabus and slides, with study tools tuned to how this course is examined. The new identity, «Corte», borrows the language of the histology lab the students are training for.
+Made by and for one histotechnology class, built on its own syllabus and slides, with study tools tuned to how this course is examined. The identity, «Enfoque», borrows the language of the microscope: the objective brings one cell into focus, and the app brings into focus what to study today (`docs/enfoque/marca.md`).
 
 ## Operating Context
 
@@ -41,7 +41,7 @@ Made by and for one histotechnology class, built on its own syllabus and slides,
 
 ## Brand Commitments
 
-- Name: **Corte**, signature «corte · 4 µm» (decided by the owner on 2026-11-02).
+- Name: **Enfoque**, tagline «Enfoca lo que toca.» (decided by the owner on 2026-11-13; replaces «Corte», 2026-11-02). Storage keys keep the `tsapc:` prefix.
 - Voice: a veteran lab technician. Precise, brief, warm, with real histotechnology vocabulary. Never childish, never guilt-inducing, no gamification (no coins, rankings or confetti).
 - Spanish (Spain) throughout; the English unit keeps its English content.
 

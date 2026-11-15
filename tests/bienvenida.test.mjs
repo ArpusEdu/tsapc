@@ -60,3 +60,29 @@ test("la guía está cargada en la app y guardada para usarla sin conexión", ()
   /* solo se guarda con leer/guardar de app.js: nada de localStorage directo */
   assert.doesNotMatch(leer("app/bienvenida.js"), /localStorage/);
 });
+
+test("la llegada sale una sola vez, antes de la guía, y no a quien ya conoce la app", () => {
+  assert.equal(G.debeLlegar({}, "#/hoy", false), true);
+  assert.equal(G.debeLlegar(null, "", false), true);
+  assert.equal(G.debeLlegar({}, "#/hoy", true), false);                 /* ya hay progreso guardado */
+  assert.equal(G.debeLlegar({ llegadaVista: "2026-11-15" }, "#/hoy", false), false);
+  assert.equal(G.debeLlegar({ guiaVista: "2026-11-13" }, "#/hoy", false), false);   /* quien ya vio la guía no la ve a la fuerza */
+  assert.equal(G.debeLlegar({ bienvenida: true }, "", false), false);
+  assert.equal(G.debeLlegar({}, "#/sesion/bio3-arn", false), false);    /* un enlace directo no se interrumpe */
+  assert.equal(G.esLlegada("#/llegada"), true);
+  assert.equal(G.esLlegada("#/hoy"), false);
+  const antes = { tema: "noche", guiaVista: "x" };
+  assert.deepEqual(G.conLlegada(antes, "f"), { tema: "noche", guiaVista: "x", llegadaVista: "f" });
+  assert.deepEqual(antes, { tema: "noche", guiaVista: "x" });
+});
+
+test("la llegada responde qué es, dónde estás y qué haces, con el lema y sin gamificación", () => {
+  const L = G.LLEGADA;
+  assert.match(L.titulo, /Enfoca lo que <em>toca<\/em>\./);
+  assert.equal(L.pasos.length, 3);
+  assert.match(L.que(15), /15 unidades/);
+  const texto = [L.donde, L.titulo, L.que(15), L.pie].concat(L.pasos.flat()).join(" ");
+  assert.doesNotMatch(texto, /puntos|monedas|ranking|racha|nivel|logro|enhorabuena|confeti|!/i);
+  assert.match(leer("sw.js"), /"app\/marca\.js"/);
+  assert.ok(leer("app/index.html").indexOf('src="marca.js"') < leer("app/index.html").indexOf('src="bienvenida.js"'));
+});

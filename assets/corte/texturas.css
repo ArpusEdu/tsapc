@@ -1,5 +1,5 @@
 /* =========================================================
-   Corte · texturas: grano de papel, cuadrícula, margen, cinta y rayas
+   Enfoque · texturas: grano de papel, cuadrícula, margen, cinta y rayas
    Todo con degradados y un SVG de ruido de 180 px. Sin imágenes.
    ========================================================= */
 @layer texturas{
@@ -19,9 +19,17 @@
     background-size:var(--cuadro) var(--cuadro);
   }
 
-  /* hoja completa: grano + margen rojo + cuadrícula */
+  /* hoja completa: grano + margen. Lisa, como la hoja de un cuaderno de prácticas (Enfoque) */
   .tx-hoja{
     background-color:var(--c-hoja);
+    background-image:
+      var(--tx-grano-tema,var(--tx-grano)),
+      linear-gradient(90deg,transparent calc(var(--margen-hoja) - 1px),var(--c-margen) calc(var(--margen-hoja) - 1px) calc(var(--margen-hoja) + .5px),transparent calc(var(--margen-hoja) + .5px));
+    background-size:180px 180px,100% 100%;
+    background-position:0 0,0 0;
+  }
+  /* la cuadrícula solo donde se mide algo (horario y calendario), como la retícula de un ocular micrométrico */
+  .tx-hoja.con-cuadricula,.tx-hoja[data-cuadricula]{
     background-image:
       var(--tx-grano-tema,var(--tx-grano)),
       linear-gradient(90deg,transparent calc(var(--margen-hoja) - 1px),var(--c-margen) calc(var(--margen-hoja) - 1px) calc(var(--margen-hoja) + .5px),transparent calc(var(--margen-hoja) + .5px)),

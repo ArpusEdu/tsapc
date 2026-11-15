@@ -1,5 +1,5 @@
 /* =========================================================
-   Corte · componentes
+   Enfoque · componentes (el sistema de «Corte», con la marca nueva)
    Cada pieza toma el color de la asignatura más cercana
    (data-subject="bio|lab|fisio|gest|ipe|ing|digi|sost").
    Objetivos táctiles de 44 px como mínimo. Sin !important.
@@ -7,7 +7,10 @@
 @layer componentes{
 
 /* ---------- texto de apoyo ---------- */
-.mano{font-family:var(--f-mano);font-weight:600;font-size:var(--t-mano);line-height:1.1;color:var(--c-boli)}
+/* nota al margen: lo que antes iba a mano. Regla del cuaderno: letra a mano como mucho una vez por pantalla,
+   así que .mano es una acotación discreta y solo .lapiz (y la nota adhesiva) se escriben con Caveat. */
+.mano{font-family:var(--f-texto);font-weight:400;font-style:italic;font-size:var(--t-sm);line-height:1.35;color:var(--c-tinta-2)}
+.lapiz,.mano.lapiz{font-family:var(--f-mano);font-weight:600;font-style:normal;font-size:var(--t-mano);line-height:1.1;color:var(--c-boli)}
 .ruta{display:flex;flex-wrap:wrap;gap:2px 8px;margin:0 0 var(--e-2);padding:0;list-style:none;font-size:var(--t-sm);color:var(--c-tinta-2)}
 .ruta li+li::before{content:"/";margin-right:8px;color:var(--c-tinta-3)}
 .ruta a{color:inherit;display:inline-block;min-height:24px;padding-block:3px}
@@ -16,6 +19,10 @@
 .lectura p+p{margin-top:var(--e-4)}
 
 /* ---------- botones ---------- */
+/* el canto de la tecla: fuera de una asignatura, hematoxilina profunda de día y lámpara tostada de noche; dentro, su color */
+:root{--b-canto:light-dark(var(--e-hema-950),#d99a45)}
+[data-subject]{--b-canto:var(--asig)}
+@supports not (color:light-dark(#000,#fff)){ :root{--b-canto:var(--e-hema-950)} [data-theme="noche"]{--b-canto:#d99a45} [data-subject]{--b-canto:var(--asig)} }
 .boton{
   --b-fondo:var(--asig-relleno);--b-texto:var(--c-sobre-tinta);--b-borde:transparent;
   position:relative;display:inline-flex;align-items:center;justify-content:center;gap:var(--e-2);
@@ -23,7 +30,7 @@
   border:1.5px solid var(--b-borde);border-radius:var(--r-3);
   background:var(--b-fondo);color:var(--b-texto);
   font-family:var(--f-texto);font-weight:700;font-size:var(--t-base);line-height:1.1;text-decoration:none;text-align:center;
-  box-shadow:inset 0 -4px 0 var(--asig),var(--sombra-tecla);   /* canto de tecla: franja interior que sigue el redondeo */
+  box-shadow:inset 0 -4px 0 var(--b-canto,var(--asig)),var(--sombra-tecla);   /* canto de tecla: franja interior que sigue el redondeo */
   transition:transform var(--d-rapida) var(--ease-salida),background-color var(--d-rapida) ease,box-shadow var(--d-rapida) ease;
 }
 .boton svg{width:20px;height:20px;flex:none}
@@ -52,7 +59,7 @@
 }
 .nota-boton.amarilla{--nota:var(--nota-amarilla);--giro:2.5deg}
 .nota-boton b{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-size:26px;font-weight:700;line-height:1}
-.nota-boton .mano{color:var(--fijo-tinta);font-size:20px}
+.nota-boton .mano{color:var(--fijo-tinta);font-size:var(--t-sm);font-style:normal}
 .nota-boton .ext{display:inline-flex;align-items:center;gap:4px;margin-top:auto;font-size:var(--t-xs);font-weight:700;color:var(--fijo-tinta-2)}
 .nota-boton .ext svg{width:14px;height:14px}
 .nota-boton::after{content:"";position:absolute;right:0;bottom:0;width:20px;height:20px;background:linear-gradient(135deg,transparent 50%,rgba(0,0,0,.12) 50%,rgba(255,255,255,.45) 62%);transition:width var(--d-media) var(--ease-salida),height var(--d-media) var(--ease-salida)}
@@ -63,7 +70,7 @@
 
 /* nota adhesiva de texto */
 .nota{position:relative;padding:14px var(--e-4) var(--e-4);background:var(--nota,var(--nota-amarilla));color:var(--fijo-tinta);border-radius:var(--r-nota);box-shadow:var(--sombra-nota);transform:rotate(var(--giro,-1.6deg))}
-.nota .mano{color:var(--fijo-tinta);font-size:22px}
+.nota .mano{font-family:var(--f-mano);font-weight:600;font-style:normal;line-height:1.15;color:var(--fijo-tinta);font-size:22px}
 
 /* ---------- píldora «Hoy» con cuenta atrás ---------- */
 .pildora-hoy{
@@ -101,12 +108,29 @@
 .pestana:focus-visible{outline-offset:-3px}
 .anillas{position:absolute;left:-2px;top:62px;bottom:14px;width:26px;z-index:3;pointer-events:none;background:radial-gradient(circle at 13px 50%,var(--c-anilla) 0 5px,transparent 5.5px) 0 0/26px 30px repeat-y}
 .hoja{position:relative;z-index:2;min-width:0;padding:22px var(--e-4) 34px calc(var(--margen-hoja) + 8px);border-radius:4px 10px 10px 4px;background-color:var(--c-hoja);color:var(--c-tinta);box-shadow:var(--sombra-hoja)}
+/* sin anillas ni agujeros en el móvil: menos objetos, más hoja */
+@media (max-width:759px){ .anillas{display:none} }
 @media (min-width:760px){
   .pestanas{left:56px;right:22px;gap:4px;height:66px}
   .pestana{height:66px;font-size:var(--t-sm);padding-top:10px}
   .anillas{width:34px;background-size:34px 34px;background-image:radial-gradient(circle at 17px 50%,var(--c-anilla) 0 6px,transparent 6.5px)}
   .hoja{padding:40px 44px 50px calc(var(--margen-hoja) + 17px)}
 }
+
+/* ---------- etiqueta de portaobjetos (Enfoque): cada unidad y asignatura abre con la suya ----------
+   A la izquierda, la zona esmerilada teñida del color de la asignatura, con el código y el tema en mono,
+   como los portaobjetos de colores con que se clasifican las muestras. Es un objeto: igual de día y de noche. */
+.porta{display:grid;grid-template-columns:minmax(92px,28%) minmax(0,1fr);min-width:0;border-radius:6px;overflow:hidden;background:var(--c-hoja-2);
+  box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--e-vidrio-canto) 70%,transparent),0 14px 26px -18px rgba(0,0,0,.45)}
+.porta-etq{position:relative;display:grid;align-content:space-between;gap:var(--e-2);min-width:0;padding:var(--e-3) var(--e-3) var(--e-3) 14px;color:var(--e-hema-900);background-color:var(--s-tinte);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27g%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%271.1%27 numOctaves=%272%27 stitchTiles=%27stitch%27/%3E%3CfeColorMatrix values=%270 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 .09 0%27/%3E%3C/filter%3E%3Crect width=%2790%27 height=%2790%27 filter=%27url(%23g)%27/%3E%3C/svg%3E")}
+.porta-etq::after{content:"";position:absolute;top:0;bottom:0;right:0;width:1px;background:color-mix(in srgb,var(--e-hema-900) 22%,transparent)}
+.porta-cod{font:700 var(--t-base)/1.1 var(--f-mono);letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.porta-diap{font:500 var(--t-min)/1.25 var(--f-mono);letter-spacing:.02em;overflow-wrap:anywhere}
+.porta-muestra{display:grid;align-content:center;gap:var(--e-1);min-width:0;padding:var(--e-4) var(--e-4) var(--e-4) var(--e-5)}
+.porta-muestra h1,.porta-muestra h2,.porta-muestra h3{margin:0}
+.porta-muestra p{margin:0;color:var(--c-tinta-2);font-size:var(--t-sm)}
+@supports not (color:color-mix(in srgb,red 50%,transparent)){ .porta{box-shadow:inset 0 0 0 1px var(--e-vidrio-canto)} .porta-etq::after{background:rgba(27,24,64,.22)} }
 
 /* ---------- tarjeta y lista de bloques ---------- */
 .tarjeta{position:relative;min-width:0;padding:var(--e-4) var(--e-4) 18px;background:var(--c-tarjeta);border:1.5px solid var(--c-linea);border-radius:var(--r-mano);color:var(--c-tinta)}
@@ -118,7 +142,7 @@ a.tarjeta:active,button.tarjeta:active{transform:scale(.98)}
 
 .bloques{display:grid;gap:var(--e-2);margin:0;padding:0;list-style:none;counter-reset:bloque}
 .bloques>li{counter-increment:bloque;display:grid;grid-template-columns:44px minmax(0,1fr);gap:var(--e-2);align-items:baseline;padding:var(--e-2) 10px var(--e-2) 4px;border-bottom:1.5px dashed var(--c-cuadricula-2);font-size:var(--t-base);line-height:1.35}
-.bloques>li::before{content:counter(bloque);font-family:var(--f-mano);font-weight:600;font-size:28px;line-height:1;color:var(--asig-texto);text-align:center}
+.bloques>li::before{content:counter(bloque,decimal-leading-zero);font-family:var(--f-mono);font-weight:700;font-size:var(--t-sm);line-height:1.6;color:var(--asig-texto);text-align:left;letter-spacing:.02em}
 .bloques>li>a{color:inherit;text-decoration:none;min-height:var(--toque);display:flex;align-items:center}
 @media (hover:hover){ .bloques>li>a:hover{text-decoration:underline;text-decoration-color:var(--asig)} }
 
@@ -133,7 +157,7 @@ a.tarjeta:active,button.tarjeta:active{transform:scale(.98)}
 .tarea .titulo-w{display:block;margin-top:4px}
 .tarea .queda{margin-top:4px;font-family:var(--f-mono);font-size:14px;font-weight:700;color:var(--asig-texto)}
 .tarea.hecha .titulo{background-size:100% 3px;color:var(--c-tinta-2)}
-.tarea .hecho{position:absolute;right:12px;top:8px;font-family:var(--f-mano);font-weight:600;font-size:24px;color:var(--asig-texto);transform:rotate(-8deg) scale(.4);opacity:0;transition:transform var(--d-lenta) var(--ease-muelle),opacity var(--d-rapida) ease;pointer-events:none}
+.tarea .hecho{position:absolute;right:12px;top:8px;font-family:var(--f-titulo);font-style:italic;font-weight:500;font-size:20px;color:var(--asig-texto);transform:rotate(-8deg) scale(.4);opacity:0;transition:transform var(--d-lenta) var(--ease-muelle),opacity var(--d-rapida) ease;pointer-events:none}
 .tarea.hecha .hecho{transform:rotate(-8deg) scale(1);opacity:1}
 .casilla{display:grid;place-items:center;width:48px;height:48px;border-radius:10px}
 .casilla svg{width:38px;height:38px;overflow:visible}
@@ -221,7 +245,7 @@ a.tarjeta:active,button.tarjeta:active{transform:scale(.98)}
 .celda.es-lab{border-style:dashed;background:repeating-linear-gradient(-45deg,var(--asig-suave) 0 7px,var(--c-hoja) 7px 12px)}
 .celda.es-lab::after{content:"LAB";position:absolute;right:3px;bottom:2px;padding:0 3px;border-radius:3px;background:var(--c-relleno);color:var(--c-sobre-tinta);font-family:var(--f-mono);font-size:var(--t-min);line-height:1.3;letter-spacing:.04em}
 .celda.es-ahora{box-shadow:0 0 0 3px var(--c-rotulador)}
-.recreo{grid-column:2/-1;display:flex;align-items:center;justify-content:center;min-height:28px;border-radius:6px;background:repeating-linear-gradient(90deg,rgba(255,214,64,.35) 0 10px,transparent 10px 14px);font-family:var(--f-mano);font-size:20px;color:var(--c-tinta-2)}
+.recreo{grid-column:2/-1;display:flex;align-items:center;justify-content:center;min-height:28px;border-radius:6px;background:repeating-linear-gradient(90deg,rgba(255,214,64,.35) 0 10px,transparent 10px 14px);font-family:var(--f-texto);font-style:italic;font-size:var(--t-xs);color:var(--c-tinta-2)}
 .horario .ab{display:inline}.horario .completo{display:none}
 @media (min-width:760px){
   .horario{grid-template-columns:78px repeat(5,minmax(0,1fr));gap:5px;font-size:14px}

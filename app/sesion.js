@@ -131,7 +131,7 @@
 
     /* ---------- piezas ---------- */
     function sello(texto) { return '<span class="ss-sello">' + ico("info") + esc(texto) + "</span>"; }
-    var DE_CORTE = sello("de Corte"), DE_PROFE = '<span class="ss-sello profe">' + ico("check") + "de tu profe</span>";
+    var DE_CORTE = sello("de Enfoque"), DE_PROFE = '<span class="ss-sello profe">' + ico("check") + "de tu profe</span>";
     function pasos(n) {
       return '<ol class="ss-pasos" aria-label="Momentos de la sesión">' + PASOS.map(function (p, k) {
         var cl = k < n ? "hecho" : k === n ? "ahora" : "";

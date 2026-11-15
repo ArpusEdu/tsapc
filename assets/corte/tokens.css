@@ -1,6 +1,8 @@
 /* =========================================================
-   Corte · tokens
+   Enfoque · tokens (antes «Corte»; los nombres --c-* no cambian)
    Orden de capas de todo el sistema. Este archivo va primero.
+   Los colores salen del laboratorio (docs/enfoque/marca.md): hematoxilina (la tinta),
+   eosina (la marca), PAS (el rotulador), la luz del campo, la lámpara y el vidrio.
    Uso: tokens.css → base.css → texturas.css → componentes.css
    ========================================================= */
 @layer tokens, base, texturas, componentes;
@@ -24,50 +26,61 @@
     color-scheme:light dark;
 
     /* ---------- primitivos: papel (claro, el cuaderno) ---------- */
-    --p-fondo:#e9e1d0;        /* la mesa bajo la hoja */
-    --p-hoja:#fbf7ee;         /* el papel */
-    --p-hoja-2:#f4eee1;       /* papel de segunda capa */
-    --p-tinta:#221d2e;
-    --p-tinta-2:#4f485c;
-    --p-tinta-3:#5d5669;
-    --p-boli:#2846a8;         /* bolígrafo azul: letra a mano y enlaces */
-    --p-foco:#2846a8;
-    --p-linea:rgba(34,29,46,.75);
-    --p-linea-suave:rgba(34,29,46,.18);
-    --p-cuadricula:rgba(52,96,150,.13);
-    --p-cuadricula-2:rgba(52,96,150,.24);
-    --p-margen:rgba(220,84,84,.38);
+    --p-fondo:#ece6d8;        /* la mesa bajo la hoja */
+    --p-hoja:#fbf8f1;         /* el papel */
+    --p-hoja-2:#f3eee4;       /* papel de segunda capa */
+    --p-tinta:#1b1840;        /* hematoxilina profunda: 15,82:1 sobre la hoja */
+    --p-tinta-2:#48455f;      /* 8,64:1 */
+    --p-tinta-3:#5a5770;      /* 6,53:1 */
+    --p-boli:#3b2f9e;         /* hematoxilina, el núcleo: enlaces y letra a mano (9,49:1) */
+    --p-foco:#3b2f9e;
+    --p-linea:rgba(27,24,64,.72);
+    --p-linea-suave:rgba(27,24,64,.17);
+    --p-cuadricula:rgba(59,47,158,.10);
+    --p-cuadricula-2:rgba(59,47,158,.22);
+    --p-margen:rgba(232,93,140,.42);   /* el margen, en eosina */
     --p-anilla:#8d8579;
-    --p-fluor:rgba(255,214,64,.62);
-    --p-sombra:rgba(52,36,20,.28);
-    --p-tarjeta:rgba(255,255,255,.62);
-    --p-rotulador:#ad3326;     /* boli rojo: rodea «hoy» y «ahora» */
+    --p-fluor:rgba(246,188,205,.75);   /* subrayado «teñido» en eosina clara */
+    --p-sombra:rgba(27,24,64,.24);
+    --p-tarjeta:#fffdf8;
+    --p-rotulador:#8a1466;     /* PAS: rodea «hoy» y «ahora» (8,34:1) */
     --p-ok:#0d6b4c;   --p-ok-suave:#dcf3ea;
     --p-aviso:#7a4f00; --p-aviso-suave:#fbedc8;
     --p-error:#a8201a; --p-error-suave:#fbe3df;
 
     /* ---------- primitivos: noche (oscuro, el pasillo) ---------- */
-    --n-fondo:#0b0d12;
-    --n-hoja:#141821;
-    --n-hoja-2:#1c2130;
-    --n-tinta:#f3ede2;
+    --n-fondo:#0c0b1a;
+    --n-hoja:#14132a;        /* el ocular */
+    --n-hoja-2:#1c1a38;
+    --n-tinta:#f4ede2;       /* 15,62:1 */
     --n-tinta-2:#d3cbbd;
     --n-tinta-3:#a9a296;
-    --n-boli:#a9c4ff;
+    --n-boli:#b9b2f5;        /* hematoxilina clara (9,30:1) */
     --n-foco:#ffcf8a;
-    --n-linea:rgba(243,237,226,.55);
-    --n-linea-suave:rgba(243,237,226,.16);
-    --n-cuadricula:rgba(156,192,255,.075);
-    --n-cuadricula-2:rgba(156,192,255,.17);
-    --n-margen:rgba(255,120,100,.34);
-    --n-anilla:#4a4f5c;
-    --n-fluor:rgba(255,207,138,.30);
+    --n-linea:rgba(244,237,226,.55);
+    --n-linea-suave:rgba(244,237,226,.16);
+    --n-cuadricula:rgba(185,178,245,.08);
+    --n-cuadricula-2:rgba(185,178,245,.18);
+    --n-margen:rgba(246,163,191,.30);
+    --n-anilla:#4a4766;
+    --n-fluor:rgba(232,93,140,.30);
     --n-sombra:rgba(0,0,0,.55);
-    --n-tarjeta:rgba(255,255,255,.045);
-    --n-rotulador:#ff8f80;
-    --n-ok:#86e4c3;   --n-ok-suave:#173a31;
-    --n-aviso:#ffd166; --n-aviso-suave:#3d3216;
-    --n-error:#ff8f80; --n-error-suave:#3e1f1f;
+    --n-tarjeta:#191831;
+    --n-rotulador:#f19bd3;    /* PAS en noche (8,97:1) */
+    --n-ok:#86e4c3;   --n-ok-suave:#15372f;
+    --n-aviso:#ffd166; --n-aviso-suave:#3a3018;
+    --n-error:#ff8f80; --n-error-suave:#3b1d24;
+
+    /* ---------- marca: tinción, luz y vidrio (docs/enfoque/tokens-propuestos.css) ---------- */
+    --e-hema-950:#121027; --e-hema-900:#1b1840; --e-hema-800:#25215a; --e-hema-700:#2f2a7c; --e-hema-600:#3b2f9e;
+    --e-hema-400:#7d72d6; --e-hema-300:#b9b2f5; --e-hema-100:#e8e5fa;
+    --e-eos-800:#8f1d47; --e-eos-500:#e85d8c; --e-eos-300:#f6bccd; --e-eos-100:#fce9ef;
+    --e-pas-700:#8a1466; --e-pas-300:#f19bd3;
+    --e-luz:#fff3dc; --e-lampara:#ffcf8a; --e-vidrio:#e4eeea; --e-vidrio-canto:#8fbcaa; --e-crema:#f4ede2;
+    --p-accion:#2f2a7c; --p-accion-pulsada:#25215a; --p-eosina-texto:#8f1d47;   /* botón principal en papel: 12,05:1 con blanco */
+    --n-accion:#ffcf8a; --n-accion-pulsada:#f2b866; --n-eosina-texto:#f6a3bf;   /* en noche, la lámpara encendida: 12,88:1 */
+    --e-f-marca:"Fraunces","Fraunces respaldo",Georgia,serif;
+    --e-d-enfoque:1300ms; --e-d-nitido:260ms; --e-ease-enfoque:cubic-bezier(.22,1,.36,1);
 
     /* ---------- fijos: objetos de papel que no cambian de tema ---------- */
     --fijo-tinta:#221d2e;
@@ -84,14 +97,14 @@
        tinte  → fondo de celdas y notas en papel; texto de color en noche.
        oscuro → texto de color en papel (AA sobre la hoja).
        noche  → fondo de celdas en noche (26 % de la base sobre la hoja oscura). */
-    --fisio-base:#ff6b5b; --fisio-tinte:#ffa197; --fisio-oscuro:#ad3326; --fisio-noche:#512e30;
-    --bio-base:#8b5cf6;   --bio-tinte:#c3adff;   --bio-oscuro:#5a2ec0;   --bio-noche:#332a58;
-    --lab-base:#2fc796;   --lab-tinte:#86e4c3;   --lab-oscuro:#0d6b4c;   --lab-noche:#1b463f;
-    --gest-base:#f5ad1b;  --gest-tinte:#ffd166;  --gest-oscuro:#7a4f00;  --gest-noche:#4f3f1f;
-    --ipe-base:#3b82f6;   --ipe-tinte:#9cc0ff;   --ipe-oscuro:#1a53b3;   --ipe-noche:#1e3458;
-    --ing-base:#ff8a3d;   --ing-tinte:#ffb685;   --ing-oscuro:#a3460a;   --ing-noche:#513628;
-    --digi-base:#5b7fa3;  --digi-tinte:#adc3da;  --digi-oscuro:#34557a;  --digi-noche:#263343;
-    --sost-base:#5fb83a;  --sost-tinte:#a6dd88;  --sost-oscuro:#336f1a;  --sost-noche:#284228;
+    --fisio-base:#ff6b5b; --fisio-tinte:#ffa197; --fisio-oscuro:#ad3326; --fisio-noche:#512a37;
+    --bio-base:#8b5cf6;   --bio-tinte:#c3adff;   --bio-oscuro:#5a2ec0;   --bio-noche:#33265f;
+    --lab-base:#2fc796;   --lab-tinte:#86e4c3;   --lab-oscuro:#0d6b4c;   --lab-noche:#1b4246;
+    --gest-base:#f5ad1b;  --gest-tinte:#ffd166;  --gest-oscuro:#7a4f00;  --gest-noche:#4f3b26;
+    --ipe-base:#3b82f6;   --ipe-tinte:#9cc0ff;   --ipe-oscuro:#1a53b3;   --ipe-noche:#1e305f;
+    --ing-base:#ff8a3d;   --ing-tinte:#ffb685;   --ing-oscuro:#a3460a;   --ing-noche:#51322f;
+    --digi-base:#5b7fa3;  --digi-tinte:#adc3da;  --digi-oscuro:#34557a;  --digi-noche:#262f49;
+    --sost-base:#5fb83a;  --sost-tinte:#a6dd88;  --sost-oscuro:#336f1a;  --sost-noche:#283e2e;
 
     /* asignatura por defecto (sin data-subject): el violeta de Biología */
     --s-base:var(--bio-base); --s-tinte:var(--bio-tinte); --s-oscuro:var(--bio-oscuro); --s-noche:var(--bio-noche);
@@ -189,16 +202,21 @@
       --c-ok:light-dark(var(--p-ok),var(--n-ok));           --c-ok-suave:light-dark(var(--p-ok-suave),var(--n-ok-suave));
       --c-aviso:light-dark(var(--p-aviso),var(--n-aviso));  --c-aviso-suave:light-dark(var(--p-aviso-suave),var(--n-aviso-suave));
       --c-error:light-dark(var(--p-error),var(--n-error));  --c-error-suave:light-dark(var(--p-error-suave),var(--n-error-suave));
-      --c-sobre-tinta:light-dark(#fff,var(--fijo-tinta));   /* texto sobre un relleno de tinta */
-      --c-relleno:light-dark(var(--p-tinta),var(--n-tinta));
+      --c-sobre-tinta:light-dark(#fff,var(--e-hema-950));   /* texto sobre el relleno de acción */
+      --c-relleno:light-dark(var(--p-accion),var(--n-accion)); /* hematoxilina de día, lámpara de noche */
+      --c-relleno-pulsado:light-dark(var(--p-accion-pulsada),var(--n-accion-pulsada));
+      --c-marca:light-dark(var(--e-hema-600),var(--e-hema-300));
+      --c-eosina:light-dark(var(--p-eosina-texto),var(--n-eosina-texto));
+      --c-anillo-logo:light-dark(var(--e-hema-900),var(--e-crema));
     }
     :root,[data-theme],[data-subject]{
       --asig:var(--s-base);
       --asig-suave:light-dark(var(--s-tinte),var(--s-noche));
       --asig-texto:light-dark(var(--s-oscuro),var(--s-tinte));
-      --asig-relleno:light-dark(var(--p-tinta),var(--s-tinte));   /* botón principal */
+      --asig-relleno:light-dark(var(--p-accion),var(--n-accion)); /* botón principal: hematoxilina / lámpara */
       --asig-borde:light-dark(var(--s-oscuro),var(--s-tinte));
     }
+    [data-subject]{--asig-relleno:light-dark(var(--p-accion),var(--s-tinte))}   /* dentro de una asignatura, de noche, su tinte (como siempre) */
   }
 
   /* respaldo sin light-dark() (Safari 15 a 17.4): mismo resultado con selectores */
@@ -210,10 +228,11 @@
       --c-cuadricula:var(--p-cuadricula); --c-cuadricula-2:var(--p-cuadricula-2); --c-margen:var(--p-margen); --c-anilla:var(--p-anilla);
       --c-fluor:var(--p-fluor); --c-sombra:var(--p-sombra); --c-tarjeta:var(--p-tarjeta); --c-rotulador:var(--p-rotulador);
       --c-ok:var(--p-ok); --c-ok-suave:var(--p-ok-suave); --c-aviso:var(--p-aviso); --c-aviso-suave:var(--p-aviso-suave); --c-error:var(--p-error); --c-error-suave:var(--p-error-suave);
-      --c-sobre-tinta:#fff; --c-relleno:var(--p-tinta);
+      --c-sobre-tinta:#fff; --c-relleno:var(--p-accion); --c-relleno-pulsado:var(--p-accion-pulsada);
+      --c-marca:var(--e-hema-600); --c-eosina:var(--p-eosina-texto); --c-anillo-logo:var(--e-hema-900);
     }
     :root,[data-theme="papel"],[data-subject]{
-      --asig:var(--s-base); --asig-suave:var(--s-tinte); --asig-texto:var(--s-oscuro); --asig-relleno:var(--p-tinta); --asig-borde:var(--s-oscuro);
+      --asig:var(--s-base); --asig-suave:var(--s-tinte); --asig-texto:var(--s-oscuro); --asig-relleno:var(--p-accion); --asig-borde:var(--s-oscuro);
     }
     [data-theme="noche"]{
       --c-fondo:var(--n-fondo); --c-hoja:var(--n-hoja); --c-hoja-2:var(--n-hoja-2);
@@ -222,11 +241,14 @@
       --c-cuadricula:var(--n-cuadricula); --c-cuadricula-2:var(--n-cuadricula-2); --c-margen:var(--n-margen); --c-anilla:var(--n-anilla);
       --c-fluor:var(--n-fluor); --c-sombra:var(--n-sombra); --c-tarjeta:var(--n-tarjeta); --c-rotulador:var(--n-rotulador);
       --c-ok:var(--n-ok); --c-ok-suave:var(--n-ok-suave); --c-aviso:var(--n-aviso); --c-aviso-suave:var(--n-aviso-suave); --c-error:var(--n-error); --c-error-suave:var(--n-error-suave);
-      --c-sobre-tinta:var(--fijo-tinta); --c-relleno:var(--n-tinta);
+      --c-sobre-tinta:var(--e-hema-950); --c-relleno:var(--n-accion); --c-relleno-pulsado:var(--n-accion-pulsada);
+      --c-marca:var(--e-hema-300); --c-eosina:var(--n-eosina-texto); --c-anillo-logo:var(--e-crema);
     }
     [data-theme="noche"],[data-theme="noche"] [data-subject]{
       --asig-suave:var(--s-noche); --asig-texto:var(--s-tinte); --asig-relleno:var(--s-tinte); --asig-borde:var(--s-tinte);
     }
+    [data-theme="noche"]{--asig-relleno:var(--n-accion)}
+    [data-theme="noche"] [data-subject]{--asig-relleno:var(--s-tinte)}
     @media (prefers-color-scheme:dark){
       :root:not([data-theme="papel"]){
         --c-fondo:var(--n-fondo); --c-hoja:var(--n-hoja); --c-hoja-2:var(--n-hoja-2);
@@ -235,11 +257,13 @@
         --c-cuadricula:var(--n-cuadricula); --c-cuadricula-2:var(--n-cuadricula-2); --c-margen:var(--n-margen); --c-anilla:var(--n-anilla);
         --c-fluor:var(--n-fluor); --c-sombra:var(--n-sombra); --c-tarjeta:var(--n-tarjeta); --c-rotulador:var(--n-rotulador);
         --c-ok:var(--n-ok); --c-ok-suave:var(--n-ok-suave); --c-aviso:var(--n-aviso); --c-aviso-suave:var(--n-aviso-suave); --c-error:var(--n-error); --c-error-suave:var(--n-error-suave);
-        --c-sobre-tinta:var(--fijo-tinta); --c-relleno:var(--n-tinta);
+        --c-sobre-tinta:var(--e-hema-950); --c-relleno:var(--n-accion); --c-relleno-pulsado:var(--n-accion-pulsada);
+      --c-marca:var(--e-hema-300); --c-eosina:var(--n-eosina-texto); --c-anillo-logo:var(--e-crema);
       }
       :root:not([data-theme="papel"]),:root:not([data-theme="papel"]) [data-subject]{
         --asig-suave:var(--s-noche); --asig-texto:var(--s-tinte); --asig-relleno:var(--s-tinte); --asig-borde:var(--s-tinte);
       }
+      :root:not([data-theme="papel"]){--asig-relleno:var(--n-accion)}
     }
   }
 

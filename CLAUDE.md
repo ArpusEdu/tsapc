@@ -1,13 +1,13 @@
-# tsapc · «Corte»
+# tsapc · «Enfoque»
 
 App de estudio del ciclo TSAPC (Anatomía Patológica y Citodiagnóstico), 1.º curso. Web estática publicada en GitHub Pages: https://arpusedu.github.io/tsapc/ (repo ArpusEdu/tsapc). El usuario es el estudiante que la usa: estudia en el móvil, en ratos cortos, a menudo sin conexión.
 
-Contexto de producto: `PRODUCT.md`. Sistema de diseño vigente: `docs/corte/DESIGN.md` (cuaderno + espacios 3D; muestra viva en `docs/corte/sistema/index.html`). `docs/corte/encargo-v2.md` es el plan histórico de fases 0–8: su dirección «fluorescencia» quedó sustituida por DESIGN.md; vale solo para fases, reglas y criterios.
+Contexto de producto: `PRODUCT.md`. Marca: `docs/enfoque/marca.md` (aprobada; manda sobre DESIGN.md donde choquen). Sistema de diseño: `docs/corte/DESIGN.md` (cuaderno + espacios 3D; muestra viva en `docs/corte/sistema/index.html`). `docs/corte/encargo-v2.md` es el plan histórico de fases 0–8: su dirección «fluorescencia» quedó sustituida por DESIGN.md; vale solo para fases, reglas y criterios.
 
 ## Reglas que no se negocian
 
 1. **El contenido de la profe va literal.** Todo lo marcado como «profe» (prof-t, `profe.dice`, definiciones de diapositiva) se copia tal cual del PDF. No se resume, no se corrige, no se reescribe. Las erratas del PDF solo se arreglan declarándolas en `correcciones` de `contenido.json`. `tests/fuentes.test.mjs` y `tests/sesion.test.mjs` lo comprueban.
-2. **Lo de «Corte»** (ganchos, «¿por qué?», casos, trucos) usa solo hechos que estén en el material de la profe. Nada inventado.
+2. **Lo de «Enfoque»** (marcado «de Enfoque»; antes «de Corte»: ganchos, «¿por qué?», casos, trucos) usa solo hechos que estén en el material de la profe. Nada inventado.
 3. **Nada de pago**: ni servicios, ni fuentes, ni componentes Premium (Skiper UI solo gratis), ni APIs.
 4. **No se pierde ni un dato de progreso.** El progreso vive en `localStorage` del dispositivo (`assets/store.js`, copia en `assets/copia.js`). Las claves viejas se migran; nunca se borran sin preguntar.
 5. **Sin push ni publicación sin el visto bueno del usuario.** Commits locales sí.

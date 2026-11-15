@@ -1,6 +1,6 @@
 # Enfoque · marca
 
-Propuesta de identidad para la app que se llamaba «Corte». **Pendiente de aprobación**: nada de lo que hay aquí sustituye todavía a Corte en la app. Muestra visual: `docs/enfoque/muestra.html`.
+Identidad de la app que antes se llamaba «Corte». **Aprobada por el usuario el 2026-11-13** (lema «Enfoca lo que toca.», reglas del cuaderno incluidas) y aplicada a la app. Muestra visual: `docs/enfoque/muestra.html`.
 
 ## El concepto
 

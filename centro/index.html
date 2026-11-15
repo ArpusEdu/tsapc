@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Centro · Corte</title>
-<meta name="description" content="Corte: el centro en 3D. Cada puerta es una asignatura; cada sala, sus unidades.">
+<title>Centro · Enfoque</title>
+<meta name="description" content="Enfoque: el centro en 3D. Cada puerta es una asignatura; cada sala, sus unidades.">
 <meta name="theme-color" content="#0b0d12">
 <link rel="manifest" href="../app/manifest.webmanifest">
-<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/enfoque/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../assets/corte/fuentes/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fuentes.css">
 <style>
@@ -115,6 +115,18 @@ html.nb-open .top{padding-bottom:14px}
 @media (max-height:499px){ #roomHead{top:calc(max(8px,env(safe-area-inset-top)) + 50px)} #roomHead b{font-size:28px} #roomHead .rh-p{font-size:18px} }
 html.flat #roomHead, html.nb-open #roomHead{display:none}
 .fdoor .plate small{display:block;font-weight:400;font-size:11.5px;color:var(--ink-soft);margin-top:2px}
+/* ---------- el cielo de Pamplona: una línea discreta (3D) y la ventana del pasillo ilustrado ---------- */
+#cieloLinea{position:fixed;z-index:21;left:max(var(--gut),env(safe-area-inset-left));top:calc(max(10px,env(safe-area-inset-top)) + 56px);margin:0;max-width:calc(100% - 2*var(--gut));display:inline-flex;align-items:center;gap:7px;min-height:30px;padding:3px 12px 3px 8px;border-radius:999px;background:rgba(12,14,20,.74);border:1px solid var(--line);font-size:13px;line-height:1.2;color:var(--ink-n2);pointer-events:none;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#cieloLinea svg,.fv-cap svg{width:16px;height:16px;flex:none;color:var(--lamp)}
+#cieloLinea .sol{color:var(--ink-n3)}
+@media (max-width:759px){ #cieloLinea .sol{display:none} }
+html.flat #cieloLinea, html.nb-open #cieloLinea, #roomHead:not([hidden]) ~ #cieloLinea{display:none}
+.fventana{position:relative;height:clamp(120px,24vw,190px);margin:0 0 6px;border-radius:12px;overflow:hidden;border:8px solid #d8d2c6;box-shadow:inset 0 0 0 1px rgba(0,0,0,.25),0 14px 30px -14px rgba(0,0,0,.7);background:linear-gradient(180deg,var(--fz,#2d4a8a) 0%,var(--fh,#e8a070) 72%)}
+.fventana::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:6px;margin-left:-3px;background:#d8d2c6;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
+.fventana svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.fv-cap{display:block;margin:0 0 16px;font-size:14px;line-height:1.45;color:var(--ink-n2)}
+.fv-cap svg{display:inline-block;vertical-align:-3px;margin-right:6px}
+.fv-cap .sol{color:var(--ink-n3)}
 /* ---------- tarjeta inferior (lo que tienes delante) ---------- */
 #dock{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:flex-end;justify-content:center;gap:8px;padding:0 max(10px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));pointer-events:none}
 #dock>*{pointer-events:auto}
@@ -378,7 +390,7 @@ html.flat #roomHead, html.nb-open #roomHead{display:none}
 
 /* ---------- pasillo ilustrado (sin WebGL o con movimiento reducido) ---------- */
 #flat{display:none;position:fixed;inset:0;z-index:3;overflow-y:auto;overflow-x:hidden;background:
-  radial-gradient(70% 40% at 80% 0%,rgba(255,170,90,.22),transparent 70%),
+  radial-gradient(70% 40% at 80% 0%,var(--fsun,rgba(255,170,90,.22)),transparent 70%),
   linear-gradient(180deg,#1b1f29 0%,#12151c 62%,#0b0d12 100%)}
 html.flat #flat{display:block}
 #flat .inner{max-width:1100px;margin:0 auto;padding:calc(var(--top-h) + 10px) var(--gut) 40px}
@@ -519,6 +531,8 @@ html.flat.in-room .fhall{display:none}
       <p class="kicker" style="color:var(--lamp)" id="flatDate">Martes, 3 de noviembre de 2026</p>
       <h1 class="intro-t" id="fhallT">El pasillo, <em>a última hora.</em></h1>
       <p class="lede">Cada puerta es una asignatura. En la pared tienes el horario, el calendario y la nota de hoy.</p>
+      <div class="fventana" id="fventana" aria-hidden="true"></div>
+      <p class="fv-cap" id="fventanaCap" hidden></p>
       <div class="fwall" id="fwall"></div>
     </section>
     <section class="froom" aria-labelledby="froomT">
@@ -539,7 +553,7 @@ html.flat.in-room .fhall{display:none}
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
     <span id="homeLbl">Pasillo</span>
   </button>
-  <a class="brand" id="brand" href="../app/#/hoy" aria-label="Corte: volver al cuaderno" style="text-decoration:none"><i></i><span>Corte</span> <small>← cuaderno</small></a>
+  <a class="brand" id="brand" href="../app/#/hoy" aria-label="Enfoque: volver al cuaderno" style="text-decoration:none"><i></i><span><em>enfoque</em></span> <small>← cuaderno</small></a>
   <button class="vista-btn" id="vistaBtn" type="button">Ver sin 3D</button>
   <button class="hoy-pill" id="hoyPill" type="button" aria-label="Abrir la página de hoy">
     <span class="dot" aria-hidden="true"></span><span class="lbl">Hoy</span><span class="what" id="pillWhat">…</span><span class="cd" id="pillCd"></span>
@@ -547,6 +561,7 @@ html.flat.in-room .fhall{display:none}
 </header>
 
 <div id="roomHead" hidden aria-live="polite"></div>
+<p id="cieloLinea" hidden></p>
 
 <nav id="dock" aria-label="Lo que tienes delante">
   <button class="arrow" id="prevBtn" type="button" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
@@ -708,9 +723,11 @@ var MON = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','se
 
 /* ---------- reloj: fecha y hora reales, dentro del curso (1 sep 2026 – 30 jun 2027) ---------- */
 var FORCE_DAY=(/[?&]hoy=(\d{4})-(\d\d)-(\d\d)/.exec(location.search)||null);   /* ?hoy=2026-11-03: ver otro día (pruebas) */
+var FORCE_HORA=(/[?&]hora=(\d{1,2}):(\d\d)/.exec(location.search)||null);   /* ?hora=21:30: ver otra hora (pruebas; también mueve el cielo) */
 function now(){
   var r = new Date(), a = new Date(2026,8,1), b = new Date(2027,5,30,23,59,59);
   if (FORCE_DAY) r = new Date(+FORCE_DAY[1],+FORCE_DAY[2]-1,+FORCE_DAY[3],17,0,r.getSeconds());
+  if (FORCE_HORA) r = new Date(r.getFullYear(),r.getMonth(),r.getDate(),+FORCE_HORA[1],+FORCE_HORA[2],r.getSeconds());
   return r < a ? new Date(2026,8,1,r.getHours(),r.getMinutes()) : (r > b ? b : r);
 }
 function parseD(s){ var p=s.split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
@@ -1504,7 +1521,7 @@ addEventListener('pageshow', function (e) { if (e.persisted && stack[stack.lengt
 })();
 window.MC = {
   SUBJ:SUBJ, UNITS:UNITS, ROOMS:ROOMS, AG:AG, now:now, pending:pending, whenTxt:whenTxt, countdown:countdown, relDay:relDay, nextExam:nextExam, DOW:DOW, MON:MON,
-  stickerSVG:stickerSVG, photo51SVG:photo51SVG, franklinSVG:franklinSVG, vinylSVG:vinylSVG, roomHead:roomHead, profsOf:profsOf, sticker:sticker, openNb:openNb, showNb:showNb, push:push, back:back, goHome:goHome, toast:toast, goFlat:goFlat,
+  stickerSVG:stickerSVG, photo51SVG:photo51SVG, franklinSVG:franklinSVG, vinylSVG:vinylSVG, roomHead:roomHead, profsOf:profsOf, sticker:sticker, openNb:openNb, showNb:showNb, push:push, back:back, goHome:goHome, toast:toast, goFlat:goFlat, stGet:stGet, stSet:stSet,
   nav:{ forward:forward, push:push, cancelled:cancelled, refresh:refresh, settle:settle, placeFocus:placeFocus,
     get trans(){ return trans; }, get state(){ return navState(); }, get want(){ return want; }, get hdepth(){ return hdepth; },
     set room(v){ curRoom=v; }, get room(){ return curRoom; },
@@ -1523,6 +1540,7 @@ window.MC = {
 import * as THREE from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import * as CI from './cielo.js';
 
 await window.MCready;
 const MC = window.MC, gsap = window.gsap;
@@ -1606,6 +1624,30 @@ function blob(w, d, op, x, y, z, parent) { const m = plane(w, d, basic(0x000000,
 const glowTex = canvasTex(128, 128, (g) => { const r = g.createRadialGradient(64, 64, 0, 64, 64, 64); r.addColorStop(0, 'rgba(255,255,255,1)'); r.addColorStop(.4, 'rgba(255,255,255,.35)'); r.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = r; g.fillRect(0, 0, 128, 128); });
 KEEP.add(glowTex);
 function glowSprite(color, size, x, y, z, parent, op = 0.6) { const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color, transparent: true, opacity: op, depthWrite: false, blending: THREE.AdditiveBlending })); s.scale.set(size, size, 1); s.position.set(x, y, z); if (parent) parent.add(s); return s; }
+
+/* ---------- el cielo de ahora (cielo.js) y la luz que entra por las ventanas ---------- */
+function cieloAhora() { return CI.estadoCielo(CI.instantePrueba(location.search), window.__cieloTiempo || null); }
+/* fachada al sur: azRel > 0 es sol del oeste (la luz entra hacia −x); sin sol de frente, solo luz difusa */
+function luzDe(e) {
+  const P = e.paleta, Wt = e.tiempo, mx = (a, b, t) => a.map((v, i) => v + (b[i] - v) * t), R = Math.PI / 180;
+  const azRel = (e.sol.az - 180) * R, alt = e.sol.alt * R;
+  const facing = Math.max(0, Math.min(1, (Math.cos(azRel) - 0.05) / 0.35));
+  const direct = Math.max(0, Math.min(1, P.luz * (1 - Wt.nubes * 0.92) * (1 - Wt.niebla))) * facing * (e.sol.alt > 0.5 ? 1 : 0);
+  const winK = Math.min(1, 0.08 + P.ambI * 0.9 + P.luz * 0.25);
+  const win = mx(mx(P.hor, P.zen, 0.35), P.sol, 0.25 * P.luz), win2 = mx(win, P.amb, 0.4);
+  const az2 = Math.max(-1.2, Math.min(1.2, azRel)), al2 = Math.max(alt, 0.1);
+  const beam = new THREE.Vector3(-Math.sin(az2) * Math.cos(al2), -Math.sin(al2), Math.cos(az2) * Math.cos(al2)).normalize();
+  return { win, win2, winK, sun: P.sol, direct, tanAlt: Math.tan(Math.max(alt, 4 * R)), sinAz: Math.sin(azRel), cosAz: Math.max(0.2, Math.cos(azRel)), sx: 0, beam, beamOp: direct + 0.1 * winK * (1 - Wt.nubes) * (1 - direct) };
+}
+/* colores del cielo de ahora para las ventanas de las salas (se pintan al entrar) */
+function cieloHex() {
+  const e = cieloAhora(), P = e.paleta, mx = (a, b, t) => a.map((v, i) => v + (b[i] - v) * t);
+  return { zen: CI.aHex(P.zen), mid: CI.aHex(mx(P.zen, P.hor, 0.75)), low: CI.aHex(mx(P.hor, P.sol, 0.3 * P.luz)), dia: P.luz, noche: P.noche, direct: luzDe(e).direct };
+}
+function luzCambia(a, b) {
+  const dc = (x, y) => Math.max(...x.map((v, i) => Math.abs(v - y[i])));
+  return dc(a.win, b.win) > 0.03 || dc(a.sun, b.sun) > 0.04 || Math.abs(a.direct - b.direct) > 0.04 || Math.abs(a.winK - b.winK) > 0.04 || Math.abs(a.tanAlt - b.tanAlt) / b.tanAlt > 0.05 || Math.abs(a.sinAz - b.sinAz) > 0.04;
+}
 
 /* ---------- bucle bajo demanda ---------- */
 let running = false, frozen = false, activeUntil = 0, last = 0, T = 0, space = null;
@@ -2120,12 +2162,17 @@ async function buildHall() {
     noise(g, w, h - zy, 500, 0.14, ['#0e2421', '#2f6a61']);
   });
   wallTile.wrapS = THREE.RepeatWrapping; wallTile.repeat.set(LEN / 2, 1);
-  const wallLM = canvasTex(1024 * RES, 128 * RES, (g, w, h) => {
+  /* la luz de fuera: color de la ventana, sol directo y su dirección (se recalcula con la hora y el tiempo) */
+  let LZ = luzDe(cieloAhora());
+  const rgbA = (c, a) => 'rgba(' + Math.round(c[0] * 255) + ',' + Math.round(c[1] * 255) + ',' + Math.round(c[2] * 255) + ',' + a.toFixed(3) + ')';
+  function drawWallLM(g, w, h) {
     const yy = Y => (1 - Y / WALL_H) * h, xx = X => u(X) * w, m = w / LEN;
+    g.globalCompositeOperation = 'source-over'; g.filter = 'none';
     g.fillStyle = 'rgb(96,88,82)'; g.fillRect(0, 0, w, h);
     g.globalCompositeOperation = 'lighter';
     TUBE_X.forEach(X => { const r = g.createRadialGradient(xx(X), yy(3.4), 0, xx(X), yy(3.4), 2.3 * m); r.addColorStop(0, 'rgba(250,236,214,.95)'); r.addColorStop(.45, 'rgba(210,190,165,.42)'); r.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = r; g.fillRect(0, 0, w, h); });
-    WINS.forEach(X => { const k = X === WIN_X ? 1 : 0.8; const wr = g.createRadialGradient(xx(X), yy(1.9), 0.4 * m, xx(X), yy(1.9), 4.6 * m * k); wr.addColorStop(0, 'rgba(255,170,96,' + (.95 * k) + ')'); wr.addColorStop(.35, 'rgba(240,120,60,' + (.45 * k) + ')'); wr.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = wr; g.fillRect(0, 0, w, h); });
+    const wc = LZ.win, wk = LZ.winK, c2 = LZ.win2;
+    WINS.forEach(X => { const k = (X === WIN_X ? 1 : 0.8) * wk; const wr = g.createRadialGradient(xx(X), yy(1.9), 0.4 * m, xx(X), yy(1.9), 4.6 * m * (X === WIN_X ? 1 : 0.8)); wr.addColorStop(0, rgbA(wc, .95 * k)); wr.addColorStop(.35, rgbA(c2, .45 * k)); wr.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = wr; g.fillRect(0, 0, w, h); });
     ART.forEach(([X, Y, aw, ah]) => { const r = g.createRadialGradient(xx(X), yy(Y + ah / 2 + 0.1), 0, xx(X), yy(Y + ah / 2 + 0.1), (aw * 0.9 + 0.35) * m); r.addColorStop(0, 'rgba(255,226,180,.85)'); r.addColorStop(.6, 'rgba(255,200,140,.25)'); r.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = r; g.fillRect(0, 0, w, h); });
     const rb = g.createLinearGradient(0, h, 0, h * 0.55); rb.addColorStop(0, 'rgba(150,132,112,.55)'); rb.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = rb; g.fillRect(0, h * 0.55, w, h * 0.45);   // la luz que rebota del suelo
     g.globalCompositeOperation = 'source-over';
@@ -2138,7 +2185,8 @@ async function buildHall() {
     g.fillRect(xx(5.45), yy(2.25), 0.8 * m, yy(1.15) - yy(2.25));                                         // calendario
     g.restore();
     const ends = g.createLinearGradient(0, 0, w, 0); ends.addColorStop(0, 'rgba(0,0,0,.55)'); ends.addColorStop(.12, 'rgba(0,0,0,0)'); ends.addColorStop(.9, 'rgba(0,0,0,0)'); ends.addColorStop(1, 'rgba(0,0,0,.5)'); g.fillStyle = ends; g.fillRect(0, 0, w, h);
-  });
+  }
+  const wallLM = canvasTex(1024 * RES, 128 * RES, drawWallLM);
   const wallMat = basic(0xffffff, { map: wallTile, lightMap: wallLM, lightMapIntensity: PI * 1.25 });
   plane(LEN, WALL_H, wallMat, CX, WALL_H / 2, 0, scene);
   /* pasamanos y rodapié por tramos: se cortan en cada marco para no cruzar por delante de la sala abierta */
@@ -2160,26 +2208,40 @@ async function buildHall() {
     g.globalAlpha = 1;
   });
   terr.wrapS = terr.wrapT = THREE.RepeatWrapping; terr.repeat.set(LEN / 1.4, 9 / 1.4);
-  const floorLM = canvasTex(1024 * RES, 384 * RES, (g, w, h) => {
+  /* la luz del sol en el suelo: la proyección de cada ventana según la altura y el azimut del sol,
+     con la sombra del parteluz; sin sol directo, solo el resplandor difuso del cielo */
+  const patchC = D.createElement('canvas');
+  function drawFloorLM(g, w, h) {
     const xx = X => u(X) * w, zz = Z => Z / 9 * h, m = w / LEN, mz = h / 9;
+    g.globalCompositeOperation = 'source-over'; g.filter = 'none';
     g.fillStyle = 'rgb(70,64,60)'; g.fillRect(0, 0, w, h);
     g.globalCompositeOperation = 'lighter';
     TUBE_X.forEach(X => { g.save(); g.translate(xx(X), zz(1.9)); g.scale(1, mz / m * 1.3); const r = g.createRadialGradient(0, 0, 0, 0, 0, 1.9 * m); r.addColorStop(0, 'rgba(240,228,206,.85)'); r.addColorStop(.5, 'rgba(190,172,150,.35)'); r.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = r; g.fillRect(-3 * m, -3 * m, 6 * m, 6 * m); g.restore(); });
-    g.save(); g.filter = 'blur(' + (10 * RES) + 'px)';                                           // la tarde entra en diagonal por la ventana
-    const sp = g.createLinearGradient(0, zz(0), 0, zz(3.6)); sp.addColorStop(0, 'rgba(255,170,90,.95)'); sp.addColorStop(1, 'rgba(255,120,60,0)'); g.fillStyle = sp;
-    g.beginPath(); g.moveTo(xx(WIN_X - 0.95), zz(0.05)); g.lineTo(xx(WIN_X + 0.95), zz(0.05)); g.lineTo(xx(WIN_X - 0.6), zz(3.4)); g.lineTo(xx(WIN_X - 2.5), zz(3.4)); g.closePath(); g.fill();
-    g.restore();
-    WINS.filter(X => X !== WIN_X).forEach(X => { g.save(); g.translate(xx(X - 0.5), zz(1.3)); g.scale(1, 0.7); const r = g.createRadialGradient(0, 0, 0, 0, 0, 1.6 * m); r.addColorStop(0, 'rgba(255,170,96,.6)'); r.addColorStop(1, 'rgba(255,120,60,0)'); g.fillStyle = r; g.fillRect(-2 * m, -2 * m, 4 * m, 4 * m); g.restore(); });
+    WINS.forEach(X => { g.save(); g.translate(xx(X - LZ.sx * 0.5), zz(1.3)); g.scale(1, 0.7); const r = g.createRadialGradient(0, 0, 0, 0, 0, 1.8 * m); r.addColorStop(0, rgbA(LZ.win, .6 * LZ.winK)); r.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = r; g.fillRect(-2.2 * m, -2.2 * m, 4.4 * m, 4.4 * m); g.restore(); });
+    if (LZ.direct > 0.02) {
+      patchC.width = w; patchC.height = h; const pg = patchC.getContext('2d'); pg.clearRect(0, 0, w, h);
+      const s1 = 1.125 / LZ.tanAlt, s2 = 2.675 / LZ.tanAlt, sa = LZ.sinAz, ca = LZ.cosAz;
+      const fp = (X, dx, s) => [xx(X + dx - s * sa), zz(Math.min(9.5, s * ca))];
+      WINS.forEach(X => {
+        const k = (X === WIN_X ? 1 : 0.85) * LZ.direct, q = [fp(X, -0.95, s1), fp(X, 0.95, s1), fp(X, 0.95, s2), fp(X, -0.95, s2)];
+        const gr = pg.createLinearGradient(0, q[0][1], 0, Math.max(q[0][1] + 1, q[3][1])); gr.addColorStop(0, rgbA(LZ.sun, .95 * k)); gr.addColorStop(1, rgbA(LZ.sun, .35 * k));
+        pg.fillStyle = gr; pg.beginPath(); q.forEach((p, i) => i ? pg.lineTo(p[0], p[1]) : pg.moveTo(p[0], p[1])); pg.closePath(); pg.fill();
+        pg.globalCompositeOperation = 'destination-out'; pg.strokeStyle = 'rgba(0,0,0,.85)'; pg.lineWidth = Math.max(2, 0.05 * m);
+        pg.beginPath(); pg.moveTo(...fp(X, 0, s1)); pg.lineTo(...fp(X, 0, s2)); pg.stroke(); pg.globalCompositeOperation = 'source-over';
+      });
+      g.save(); g.filter = 'blur(' + Math.round((3 + 4 / Math.max(0.3, LZ.tanAlt)) * RES) + 'px)'; g.drawImage(patchC, 0, 0); g.restore();
+    }
     Object.entries(DOOR_X).forEach(([id, X]) => { const S = SUBJ[ROOMS[id].subs[0]]; g.save(); g.translate(xx(X), zz(0.05)); g.scale(1, 0.55); const r = g.createRadialGradient(0, 0, 0, 0, 0, 0.8 * m); r.addColorStop(0, S.c + 'aa'); r.addColorStop(1, S.c + '00'); g.fillStyle = r; g.fillRect(-m, -m, 2 * m, 2 * m); g.restore(); });
     g.globalCompositeOperation = 'source-over';
     const ao = g.createLinearGradient(0, 0, 0, zz(0.45)); ao.addColorStop(0, 'rgba(6,5,4,.75)'); ao.addColorStop(1, 'rgba(6,5,4,0)'); g.fillStyle = ao; g.fillRect(0, 0, w, zz(0.45));
     const far = g.createLinearGradient(0, zz(3), 0, h); far.addColorStop(0, 'rgba(0,0,0,0)'); far.addColorStop(1, 'rgba(0,0,0,.5)'); g.fillStyle = far; g.fillRect(0, zz(3), w, h - zz(3));
-  });
+  }
+  const floorLM = canvasTex(1024 * RES, 384 * RES, drawFloorLM);
   const floorMat = basic(0xffffff, { map: terr, lightMap: floorLM, lightMapIntensity: PI * 1.3 });
   const floor = plane(LEN, 9, floorMat, CX, 0, 4.5, scene); floor.rotation.x = -Math.PI / 2;
   /* reflejo falso: tarjetas aditivas del cielo y de los tubos sobre el terrazo pulido */
   const refl = (w, d, c, x, z, op) => { const m = plane(w, d, basic(c, { map: glowTex, transparent: true, opacity: op, depthWrite: false, blending: THREE.AdditiveBlending }), x, 0.004, z, scene); m.rotation.x = -Math.PI / 2; return m; };
-  WINS.forEach(X => refl(1.6, 2.6, 0xff9a5a, X - 0.35, 0.9, X === WIN_X ? 0.3 : 0.2));
+  const winRefl = WINS.map(X => refl(1.6, 2.6, 0xff9a5a, X - 0.35, 0.9, X === WIN_X ? 0.3 : 0.2));
   TUBE_X.forEach(X => refl(1.5, 0.7, 0xfff0d8, X, 2.35, 0.09));
   /* techo: oscuro, con el halo de cada tubo pintado */
   const ceilLM = canvasTex(1024 * RES, 128 * RES, (g, w, h) => {
@@ -2200,56 +2262,292 @@ async function buildHall() {
   plane(0.62, 0.23, basic(0xffffff, { map: exitTex }), 18.4, 2.85, 0.02, scene);
   glowSprite(0x3dff9a, 1.2, 18.4, 2.85, 0.1, scene, 0.25);
 
-  /* ventanas con paisaje de Navarra al atardecer: cuatro capas a distinta profundidad (cielo, nubes,
-     Pirineo y colinas con Pamplona). Un plano y un shader por ventana: las capas se desplazan entre sí
-     con la cámara (paralaje real por rayo) y las nubes avanzan despacio. Texturas pintadas una sola vez. */
-  const LS = MOBILE ? 256 : 512;
-  const lay = (draw, wrap) => { const t = canvasTex(LS * 2, LS, (g, w, h) => { g.scale(w / 1024, h / 512); draw(g, 1024, 512); }); t.wrapS = THREE.RepeatWrapping; t.generateMipmaps = false; t.minFilter = THREE.LinearFilter; return t; };
-  const rnd = (() => { let s0 = 11; return () => (s0 = (s0 * 16807) % 2147483647) / 2147483647; })();
-  const L0 = lay((g, w, h) => {                                            // cielo y sol
-    const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#1f2350'); gr.addColorStop(0.3, '#563c78'); gr.addColorStop(0.47, '#b8577a'); gr.addColorStop(0.56, '#ff8a52'); gr.addColorStop(0.64, '#ffc27a'); gr.addColorStop(1, '#ffe0a8');
-    g.fillStyle = gr; g.fillRect(0, 0, w, h);
-    const sg = g.createRadialGradient(520, 172, 4, 520, 172, 240); sg.addColorStop(0, 'rgba(255,246,214,1)'); sg.addColorStop(0.06, 'rgba(255,236,190,1)'); sg.addColorStop(0.2, 'rgba(255,200,130,.55)'); sg.addColorStop(1, 'rgba(255,150,90,0)'); g.fillStyle = sg; g.fillRect(0, 0, w, h);
-    g.fillStyle = 'rgba(255,255,255,.75)'; for (let i = 0; i < 40; i++) { const x = rnd() * w, y = rnd() * h * 0.28; g.globalAlpha = 0.2 + rnd() * 0.6; g.fillRect(x, y, 1.6, 1.6); } g.globalAlpha = 1;
-  });
-  const L1 = lay((g, w, h) => {                                            // nubes (se repiten en horizontal)
-    for (let i = 0; i < 16; i++) { const cx = rnd() * w, cy = h * (0.14 + rnd() * 0.24), sw = 60 + rnd() * 120;
-      for (let k = 0; k < 7; k++) { const x = cx + (k - 3) * sw * 0.28 + rnd() * 14, y = cy + rnd() * 10 - (3 - Math.abs(k - 3)) * 5, r = sw * (0.16 + rnd() * 0.12);
-        g.save(); g.translate(x, y); g.scale(2.4, 0.8); const c = g.createRadialGradient(0, 0, 0, 0, 0, r); c.addColorStop(0, 'rgba(255,200,176,.42)'); c.addColorStop(0.55, 'rgba(220,140,158,.22)'); c.addColorStop(1, 'rgba(150,90,140,0)'); g.fillStyle = c; g.fillRect(-r, -r, r * 2, r * 2); g.restore(); }
+  /* ventanas vivas: el cielo real de Pamplona sobre el horizonte de la cuenca.
+     Un plano y un shader por ventana. El cielo (degradado cénit/horizonte, halo del sol, luna con su fase,
+     estrellas y dos capas de nubes con volumen) es procedural; el paisaje son cuatro panorámicas de 360°
+     pintadas una vez (montes lejanos, sierras cercanas con molinos, la ciudad con sus ventanas y los árboles
+     del patio) que el shader colorea con la luz de cada momento y la perspectiva atmosférica.
+     Las capas se desplazan entre sí con la cámara (paralaje por rayo) y cada ventana mira a otro azimut. */
+  const PW = MOBILE ? 1024 : 2048, h01 = v => Math.min(1, Math.max(0, v));
+  const mkCanvas = (w, h) => { const c = D.createElement('canvas'); c.width = w; c.height = h; return c; };
+  const dataTex = (c, wrap) => { const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.NoColorSpace; t.wrapS = wrap ? THREE.RepeatWrapping : THREE.ClampToEdgeWrapping; t.wrapT = THREE.ClampToEdgeWrapping; t.generateMipmaps = false; t.minFilter = THREE.LinearFilter; t.premultiplyAlpha = false; return t; };
+  const hsh = x => { const s = Math.sin(x * 127.1 + 311.7) * 43758.5453; return s - Math.floor(s); };
+  const rnd = (() => { let s0 = 11; return () => (s0 = (s0 * 16807) % 2147483647) / 2147483647; })();   // también la usan los cuadros
+  const rgbC = (r, g2, b) => 'rgb(' + Math.round(h01(r) * 255) + ',' + Math.round(h01(g2) * 255) + ',' + Math.round(h01(b) * 255) + ')';
+  /* montes: R luz de la ladera (alto = mira al este), G altura relativa (para la nieve), B vegetación, A cobertura */
+  function montes(capa, PH, E0, E1, extra) {
+    const c = mkCanvas(PW, PH), g = c.getContext('2d'), im = g.createImageData(PW, PH), d = im.data;
+    const hs = new Float32Array(PW); for (let x = 0; x < PW; x++) hs[x] = CI.perfil(capa, x / PW * 360);
+    let hmax = 0; hs.forEach(v => { if (v > hmax) hmax = v; });
+    const yOf = el => (1 - (el - E0) / (E1 - E0)) * PH, dpp = 360 / PW;
+    for (let x = 0; x < PW; x++) {
+      const h = hs[x], sl = (hs[(x + 3) % PW] - hs[(x - 3 + PW) % PW]) / (6 * dpp), top = yOf(h);
+      for (let y = Math.max(0, Math.floor(top)); y < PH; y++) {
+        const el = E0 + (1 - (y + 0.5) / PH) * (E1 - E0), dep = h - el, i = (y * PW + x) * 4;
+        const n = hsh(x * 0.37 + y * 13.1) * 0.1, gully = Math.sin(x * 0.11 * (2048 / PW) + Math.sin(y * 0.23) * 2.2) * 0.1 * Math.min(1, dep);
+        d[i] = 255 * h01(0.5 + sl * 0.9 + gully + n - dep * 0.015);
+        d[i + 1] = 255 * h01(el / Math.max(1, hmax) + n * 0.4);
+        d[i + 2] = 255 * h01(0.15 + dep * 0.22 + Math.sin(x * 0.027 * (2048 / PW) + y * 0.05) * 0.18 + n);
+        d[i + 3] = 255 * h01(y + 1 - top);
       }
-  }, true);
-  const L2 = lay((g, w, h) => {                                            // Pirineo azulado, con nieve
-    const ridge = (base, amp, f, ph, c0, c1) => { g.beginPath(); g.moveTo(0, h); for (let x = 0; x <= w; x += 6) { const y = base - amp * (0.55 * Math.abs(Math.sin(x * f + ph)) + 0.3 * Math.abs(Math.sin(x * f * 2.3 + ph * 2)) + 0.15 * Math.sin(x * f * 5.7)); g.lineTo(x, y); } g.lineTo(w, h); g.closePath();
-      const gr2 = g.createLinearGradient(0, base - amp, 0, base + 30); gr2.addColorStop(0, c0); gr2.addColorStop(1, c1); g.fillStyle = gr2; g.fill(); };
-    ridge(280, 105, 0.0098, 0.4, '#c78aa6', '#7a5f92'); ridge(300, 60, 0.0161, 1.7, '#8d6c9e', '#5f4a7c');
-    const haze = g.createLinearGradient(0, 200, 0, 330); haze.addColorStop(0, 'rgba(255,170,130,0)'); haze.addColorStop(1, 'rgba(255,160,120,.45)'); g.fillStyle = haze; g.fillRect(0, 200, w, 130);
-    g.fillStyle = '#5f4a7c'; g.fillRect(0, 326, w, h - 326);
+    }
+    g.putImageData(im, 0, 0);
+    if (extra) extra(g, yOf, PH / (E1 - E0));
+    return dataTex(c, true);
+  }
+  const tFar = montes('lejos', MOBILE ? 96 : 160, -1, 11);
+  const tMid = montes('medio', MOBILE ? 128 : 224, -2, 10, (g, yOf, ppd) => {
+    g.strokeStyle = rgbC(0.92, 0, 0); g.lineWidth = MOBILE ? 1 : 1.2; g.lineCap = 'round';      // molinos en el Perdón y en Alaiz
+    CI.molinos().forEach(([az, h], i) => { const x = az / 360 * PW, y = yOf(h) + 1, t = 1.5 * ppd, b = 0.6 * ppd, a = i * 1.7;
+      g.beginPath(); g.moveTo(x, y); g.lineTo(x, y - t); for (let k = 0; k < 3; k++) { const an = a + k * 2.094; g.moveTo(x, y - t); g.lineTo(x + Math.cos(an) * b, y - t + Math.sin(an) * b); } g.stroke(); });
   });
-  const L3 = lay((g, w, h) => {                                            // colinas, Pamplona y árboles
-    g.beginPath(); g.moveTo(0, h); for (let x = 0; x <= w; x += 8) g.lineTo(x, 318 + Math.sin(x * 0.006) * 20 + Math.sin(x * 0.019) * 8); g.lineTo(w, h); g.closePath(); g.fillStyle = '#4b3a55'; g.fill();
-    for (let x = 250; x < 820;) { const bw = 10 + rnd() * 22, bh = 12 + rnd() * 34 + (x > 470 && x < 560 ? 30 : 0); g.fillStyle = '#2c2034'; g.fillRect(x, 330 - bh, bw, bh + 20); g.fillStyle = '#ffcf7a'; for (let k = 0; k < bh / 9; k++) if (rnd() > 0.45) g.fillRect(x + 3 + rnd() * (bw - 6), 332 - bh + k * 8, 2.5, 3.5); x += bw + 1; }
-    g.fillStyle = '#2c2034'; g.fillRect(508, 268, 10, 40); g.beginPath(); g.moveTo(505, 268); g.lineTo(513, 252); g.lineTo(521, 268); g.fill(); g.fillRect(540, 274, 9, 34); g.beginPath(); g.moveTo(537, 274); g.lineTo(544.5, 260); g.lineTo(552, 274); g.fill();   // catedral
-    g.beginPath(); g.moveTo(0, h); for (let x = 0; x <= w; x += 8) g.lineTo(x, 372 + Math.sin(x * 0.009 + 2) * 18 + Math.sin(x * 0.031) * 6); g.lineTo(w, h); g.closePath(); g.fillStyle = '#2f3b2c'; g.fill();
-    for (let i = 0; i < 60; i++) { const x = rnd() * w, y = 372 + Math.sin(x * 0.009 + 2) * 18 + 6, s2 = 8 + rnd() * 16; g.fillStyle = i % 3 ? '#22301f' : '#1a2618'; g.beginPath(); g.ellipse(x, y - s2, s2 * 0.6, s2, 0, 0, 7); g.fill(); }
-    const rim = g.createLinearGradient(0, 300, 0, 380); rim.addColorStop(0, 'rgba(255,150,90,.25)'); rim.addColorStop(1, 'rgba(255,150,90,0)'); g.fillStyle = rim; g.fillRect(0, 300, w, 80);
-  });
-  const WV_FS = `uniform sampler2D t0; uniform sampler2D t1; uniform sampler2D t2; uniform sampler2D t3; uniform vec3 uCam; uniform float uTime; uniform float uOff; uniform vec2 uWH; varying vec3 vP;
-  vec2 at(vec3 d, float D) { float t = (-D - vP.z) / d.z; vec2 p = vP.xy + d.xy * t; float sx = uWH.x + 1.6 * D; return vec2(p.x / sx + 0.5 + uOff, p.y / (sx * 0.5) + 0.5); }
-  vec4 tx(sampler2D s, vec2 uv) { return texture2D(s, vec2(uv.x, clamp(uv.y, 0.002, 0.998))); }
+  /* la ciudad sobre las lomas: B indica qué es (campo < 0,47 · fachada < 0,72 · tejado); G = ventana (B = orden de encendido) */
+  const CA0 = 70, CA1 = 290, TA0 = 50, TA1 = 310;
+  const tCity = (() => {
+    const PH = MOBILE ? 192 : 320, E0 = -16, E1 = 6, c = mkCanvas(PW, PH), g = c.getContext('2d');
+    const sx = PW / (CA1 - CA0), X = az => (az - CA0) * sx, yOf = el => (1 - (el - E0) / (E1 - E0)) * PH, ppd = PH / (E1 - E0);
+    const im = g.createImageData(PW, PH), d = im.data;
+    for (let x = 0; x < PW; x++) {
+      const az = CA0 + x / sx, h = CI.perfil('cerca', az), top = yOf(h), sl = (CI.perfil('cerca', az + 0.6) - CI.perfil('cerca', az - 0.6)) / 1.2;
+      const edge = h01(Math.min(x, PW - 1 - x) / 6);
+      for (let y = Math.max(0, Math.floor(top)); y < PH; y++) {
+        const el = E0 + (1 - (y + 0.5) / PH) * (E1 - E0), i = (y * PW + x) * 4;
+        const field = hsh(Math.floor(az / 2.3 + Math.sin(el * 0.9) * 1.5) * 7.1 + Math.floor(el * 3.1) * 31.7), hedge = Math.abs(Math.sin(az * 2.7 + el * 0.8)) < 0.04 ? 0.25 : 0;
+        d[i] = 255 * h01(0.5 + sl * 0.8 - hedge + (field - 0.5) * 0.12); d[i + 1] = 0; d[i + 2] = 255 * (0.04 + field * 0.38); d[i + 3] = 255 * h01(y + 1 - top) * edge;
+      }
+    }
+    g.putImageData(im, 0, 0);
+    const rnd = (() => { let s0 = 29; return () => (s0 = (s0 * 16807) % 2147483647) / 2147483647; })();
+    const building = (az, w, base, ht, roof, row) => {
+      const x0 = X(az), bw = w * sx, y1 = yOf(base), y0 = yOf(base + ht), v = rnd();
+      const sh = 0.45 + v * 0.3 + (row === 2 ? 0.08 : 0);
+      g.fillStyle = rgbC(sh, 0, 0.5 + v * 0.18); g.fillRect(x0, y0, bw, y1 - y0 + 2);
+      g.fillStyle = rgbC(sh * 0.55, 0, 0.5 + v * 0.18); g.fillRect(x0 + bw * 0.82, y0, bw * 0.18, y1 - y0 + 2);    // la cara en sombra
+      if (roof) { g.fillStyle = rgbC(0.35 + rnd() * 0.3, 0, 0.8 + rnd() * 0.12); g.beginPath(); g.moveTo(x0 - 1, y0 + 0.5); g.lineTo(x0 + bw * (0.3 + rnd() * 0.4), y0 - Math.min(bw * 0.45, ppd * 0.9)); g.lineTo(x0 + bw + 1, y0 + 0.5); g.closePath(); g.fill(); }
+      const ws = Math.max(1, ppd * (row === 2 ? 0.32 : 0.2)), gap = ws * 2.3;
+      for (let yy = y0 + gap * 0.7; yy < y1 - ws; yy += gap) for (let xx = x0 + ws; xx < x0 + bw - ws * 1.5; xx += gap * 0.9) if (rnd() > 0.18) { g.fillStyle = rgbC(0.5, 1, rnd()); g.fillRect(Math.round(xx), Math.round(yy), Math.ceil(ws), Math.ceil(ws * 1.2)); }
+    };
+    /* tres filas: la del fondo, casi en el horizonte; la de delante, más grande y más abajo */
+    const rows = [[-2.4, 0.5, 2.0, 0.9, 2.6], [-6.5, 1.2, 3.8, 1.6, 4.4], [-13, 2.2, 6.5, 2.8, 7.5]];
+    rows.forEach(([base, hmin, hmax, wmin, wmax], row) => {
+      for (let az = 84 + rnd() * 3; az < 276;) {
+        const dens = Math.exp(-(((az - 180) / 70) ** 2)), w = wmin + rnd() * (wmax - wmin);
+        if (rnd() < 0.25 + dens * 0.75) building(az, w, base - rnd() * 0.6, hmin + rnd() * (hmax - hmin) * (0.5 + dens * 0.7), rnd() < 0.55, row);
+        az += w * (0.95 + rnd() * 0.4) + (rnd() < 0.15 ? w * 1.5 : 0);
+      }
+      if (row === 1) {   // la catedral: dos torres con su remate, y una torre de viviendas a la derecha
+        const cz = 166, b = -6.6; g.fillStyle = rgbC(0.62, 0, 0.62);
+        [[cz - 1.1, 5.6], [cz + 1.1, 5.6]].forEach(([a, ht]) => { g.fillRect(X(a - 0.55), yOf(b + ht), 1.1 * sx, yOf(b) - yOf(b + ht)); g.beginPath(); g.moveTo(X(a - 0.6), yOf(b + ht)); g.lineTo(X(a), yOf(b + ht + 1.4)); g.lineTo(X(a + 0.6), yOf(b + ht)); g.fill(); });
+        g.fillRect(X(cz - 1.7), yOf(b + 3.4), 3.4 * sx, yOf(b) - yOf(b + 3.4));
+        building(236, 2.4, -6.8, 7.4, false, 1); building(246, 1.8, -6.4, 5.8, false, 1);
+      }
+      if (row === 0) { g.fillStyle = rgbC(0.6, 0, 0.6); const a = 198, b = -2.6; g.fillRect(X(a - 0.3), yOf(b + 3.2), 0.6 * sx, yOf(b) - yOf(b + 3.2)); g.beginPath(); g.moveTo(X(a - 0.35), yOf(b + 3.2)); g.lineTo(X(a), yOf(b + 4.6)); g.lineTo(X(a + 0.35), yOf(b + 3.2)); g.fill(); }
+      /* farolas: puntos de luz en las calles, los primeros en encenderse */
+      for (let az = 86; az < 274; az += 0.7 + rnd()) if (rnd() < 0.5) { g.fillStyle = rgbC(0.5, 1, rnd() * 0.25); g.fillRect(X(az), yOf(base + 0.1) - 1, Math.max(1, ppd * 0.2), Math.max(1, ppd * 0.2)); }
+    });
+    g.fillStyle = rgbC(0.4, 0, 0.55); g.fillRect(X(84), yOf(-14.5), (276 - 84) * sx, PH);
+    g.clearRect(0, 0, 3, PH); g.clearRect(PW - 3, 0, 3, PH);
+    return dataTex(c, false);
+  })();
+  /* árboles del patio: B = 0 rama, B > 0 racimo de hojas (orden en que se caen); G = 1 flor, G = 0,5 perenne */
+  const tTree = (() => {
+    const PH = MOBILE ? 256 : 512, E0 = -18, E1 = 22, c = mkCanvas(PW, PH), g = c.getContext('2d');
+    const sx = PW / (TA1 - TA0), X = az => (az - TA0) * sx, Y = el => (1 - (el - E0) / (E1 - E0)) * PH, ppd = PH / (E1 - E0);
+    const rnd = (() => { let s0 = 41; return () => (s0 = (s0 * 16807) % 2147483647) / 2147483647; })();
+    const tips = [];
+    const branch = (x, y, a, len, wd, dep) => {
+      const x2 = x + Math.cos(a) * len, y2 = y + Math.sin(a) * len;
+      g.strokeStyle = rgbC(0.25 + rnd() * 0.15, 0, 0); g.lineWidth = Math.max(0.8, wd); g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo((x + x2) / 2 + (rnd() - 0.5) * len * 0.3, (y + y2) / 2, x2, y2); g.stroke();
+      if (dep <= 0 || len < 3) { tips.push([x2, y2]); return; }
+      const n = dep > 3 ? 2 : 2 + (rnd() < 0.4);
+      for (let k = 0; k < n; k++) branch(x2, y2, a + (k - (n - 1) / 2) * (0.55 + rnd() * 0.35) + (rnd() - 0.5) * 0.3, len * (0.68 + rnd() * 0.12), wd * 0.66, dep - 1);
+    };
+    const tree = (az, ht, spread, flor) => {
+      tips.length = 0; const x = X(az), y = Y(E0), len = ht * ppd * 0.34;
+      g.lineCap = 'round'; branch(x, y + 4, -Math.PI / 2 + (rnd() - 0.5) * 0.08, len, len * 0.13, 6);
+      const leaves = tips.slice();
+      /* copa: racimos alrededor de las puntas, más claros arriba a la izquierda */
+      const cr = spread * sx * 0.06;
+      leaves.forEach(([lx, ly]) => { for (let k = 0; k < 6; k++) { const r = cr * (0.35 + rnd() * 0.55), ox = (rnd() - 0.5) * cr * 1.6, oy = (rnd() - 0.5) * cr * 1.2, ord = 0.06 + rnd() * 0.94;
+        const gr = g.createRadialGradient(lx + ox - r * 0.4, ly + oy - r * 0.5, r * 0.1, lx + ox, ly + oy, r); gr.addColorStop(0, rgbC(0.95, 0, ord)); gr.addColorStop(1, rgbC(0.3, 0, ord));
+        g.fillStyle = gr; g.beginPath(); g.ellipse(lx + ox, ly + oy, r, r * 0.82, rnd() * 3, 0, 7); g.fill();
+        if (flor) for (let f = 0; f < 5; f++) { g.fillStyle = rgbC(0.9, 1, ord); g.fillRect(lx + ox + (rnd() - 0.5) * r * 1.4, ly + oy + (rnd() - 0.5) * r, 1.5, 1.5); } } });
+      /* el tronco y las ramas gruesas, por encima: se ven entre las hojas y en invierno */
+      tips.length = 0; branch(x, y + 4, -Math.PI / 2, len, len * 0.13, 2);
+    };
+    const cypress = (az, ht) => { const x = X(az), y = Y(E0), w = 1.4 * sx, top = Y(E0 + ht);
+      for (let k = 0; k < 26; k++) { const t = k / 25, yy = y + (top - y) * t, ww = w * (1 - t * 0.85) * (0.8 + rnd() * 0.4); const gr = g.createLinearGradient(x - ww, 0, x + ww, 0); gr.addColorStop(0, rgbC(0.8, 0.5, 0.5)); gr.addColorStop(1, rgbC(0.25, 0.5, 0.5)); g.fillStyle = gr; g.beginPath(); g.ellipse(x, yy, ww, (y - top) / 14, 0, 0, 7); g.fill(); } };
+    tree(88, 30, 24, false); cypress(150, 24); cypress(153.5, 19); tree(163, 20, 13, true); tree(213, 33, 26, false); tree(272, 28, 20, true); tree(300, 19, 16, false);
+    g.clearRect(0, 0, 3, PH); g.clearRect(PW - 3, 0, 3, PH);
+    return dataTex(c, false);
+  })();
+  /* ruido periódico para las nubes y las gotas: cuatro escalas en RGBA */
+  const tNoise = (() => {
+    const N = 128, c = mkCanvas(N, N), g = c.getContext('2d'), im = g.createImageData(N, N), d = im.data;
+    const lat = (f, seed) => { const a = new Float32Array(f * f); for (let i = 0; i < a.length; i++) a[i] = hsh(i * 1.37 + seed * 91.7); return a; };
+    const smp = (a, f, x, y) => { const fx = x * f, fy = y * f, x0 = Math.floor(fx), y0 = Math.floor(fy), tx = fx - x0, ty = fy - y0, sx2 = tx * tx * (3 - 2 * tx), sy = ty * ty * (3 - 2 * ty);
+      const q = (i, j) => a[((j % f) + f) % f * f + ((i % f) + f) % f]; return (q(x0, y0) * (1 - sx2) + q(x0 + 1, y0) * sx2) * (1 - sy) + (q(x0, y0 + 1) * (1 - sx2) + q(x0 + 1, y0 + 1) * sx2) * sy; };
+    const F = [4, 8, 16, 32], L4 = F.map((f, k) => lat(f, k + 1));
+    for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) { const i = (y * N + x) * 4; for (let k = 0; k < 4; k++) d[i + k] = 255 * smp(L4[k], F[k], x / N, y / N); }
+    g.putImageData(im, 0, 0);
+    const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.NoColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping; t.premultiplyAlpha = false; return t;
+  })();
+  [tFar, tMid, tCity, tTree, tNoise].forEach(t => KEEP.add(t));
+  const DEG = Math.PI / 180;
+  const SKY = {
+    uZen: { value: col(0) }, uHor: { value: col(0) }, uSunC: { value: col(0) }, uAmb: { value: col(0) }, uHaze: { value: col(0) }, uCloudLit: { value: col(0) }, uCloudDark: { value: col(0) },
+    uSun: { value: new THREE.Vector4() }, uMoon: { value: new THREE.Vector4() }, uWind: { value: new THREE.Vector2(-0.6, 0.2) },
+    uNight: { value: 0 }, uCover: { value: 0 }, uFog: { value: 0 }, uWet: { value: 0 }, uCityL: { value: 0 }, uFlash: { value: 0 }, uExpo: { value: 1 }, uSunW: { value: 0.5 },
+    uSnow: { value: 0 }, uLeaf: { value: 1 }, uBloom: { value: 0 }, uField: { value: col(0) }, uLeafC: { value: col(0) }, uRock: { value: col(0x77706a) }, uTime: { value: 0 },
+    tFar: { value: tFar }, tMid: { value: tMid }, tCity: { value: tCity }, tTree: { value: tTree }, tNoise: { value: tNoise },
+    uRC: { value: new THREE.Vector4(CA0 * DEG, CA1 * DEG, -16 * DEG, 6 * DEG) }, uRT: { value: new THREE.Vector4(TA0 * DEG, TA1 * DEG, -18 * DEG, 22 * DEG) }
+  };
+  const WV_FS = `uniform sampler2D tFar; uniform sampler2D tMid; uniform sampler2D tCity; uniform sampler2D tTree; uniform sampler2D tNoise;
+  uniform vec3 uCam; uniform float uAzC; uniform float uTime;
+  uniform vec3 uZen; uniform vec3 uHor; uniform vec3 uSunC; uniform vec3 uAmb; uniform vec3 uHaze; uniform vec3 uCloudLit; uniform vec3 uCloudDark;
+  uniform vec4 uSun; uniform vec4 uMoon; uniform vec2 uWind; uniform vec4 uRC; uniform vec4 uRT;
+  uniform float uNight; uniform float uCover; uniform float uFog; uniform float uWet; uniform float uCityL; uniform float uFlash; uniform float uExpo; uniform float uSunW;
+  uniform float uSnow; uniform float uLeaf; uniform float uBloom; uniform vec3 uField; uniform vec3 uLeafC; uniform vec3 uRock;
+  varying vec3 vP;
+  const float PI = 3.14159265, TAU = 6.2831853, K = 4.3, ELO = -0.087;
+  vec2 ang(vec3 d) { return vec2(atan(d.x, -d.z), atan(d.y, length(d.xz))); }
+  vec3 dirOf(vec2 a) { return vec3(cos(a.y) * sin(a.x), sin(a.y), cos(a.y) * cos(a.x)); }
+  float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+  vec4 nz(vec2 p) { return texture2D(tNoise, p); }
+  /* lámina de nubes: perspectiva de un plano horizontal, volumen con una muestra hacia el sol */
+  vec4 clouds(vec2 s, vec3 v, float cs) {
+    float el = s.y; if (el <= 0.0) return vec4(0.0);
+    float dist = 1.0 / (sin(el) + 0.035);
+    vec2 pc = vec2(sin(s.x), cos(s.x)) * dist * 0.11 + uWind * uTime * 0.004;
+    vec2 sd = vec2(sin(uSun.x), cos(uSun.x)) * 0.035;
+    float n = nz(pc * 0.5).r * 0.5 + nz(pc * 1.1 + 0.3).g * 0.3 + nz(pc * 2.3 + 0.7).b * 0.2;
+    float n2 = nz((pc + sd) * 0.5).r * 0.5 + nz((pc + sd) * 1.1 + 0.3).g * 0.3 + nz((pc + sd) * 2.3 + 0.7).b * 0.2;
+    float thr = mix(0.9, 0.3, uCover);
+    float dens = smoothstep(thr, thr + 0.2, n);
+    dens = max(dens, smoothstep(0.8, 1.0, uCover) * (0.82 + 0.18 * n));
+    float lit = clamp(0.62 + (n - n2) * 5.0, 0.0, 1.0);
+    vec3 c = mix(uCloudDark, uCloudLit, lit * (0.6 + 0.4 * uSun.z) + 0.15);
+    c += uSunC * pow(max(cs, 0.0), 10.0) * (1.0 - dens) * 1.6 * uSun.z;            // borde plateado junto al sol
+    c += vec3(0.95, 0.58, 0.32) * uCityL * 0.16 * (1.0 - lit) * smoothstep(0.6, 0.0, el);   // la ciudad ilumina las nubes por debajo
+    float fade = 1.0 - smoothstep(9.0, 26.0, dist);
+    /* cirros altos: estrías finas cuando hay pocas nubes */
+    vec2 pk = vec2(sin(s.x), cos(s.x)) * (1.0 / (sin(el) + 0.12)) * vec2(0.05, 0.2) + uWind * uTime * 0.0015;
+    float ci = smoothstep(0.62, 0.9, nz(pk).a) * smoothstep(0.08, 0.3, uCover) * (1.0 - smoothstep(0.45, 0.8, uCover)) * 0.4 * smoothstep(0.05, 0.3, el) * (1.0 - smoothstep(0.5, 0.9, el));
+    float a = clamp(dens * fade + ci, 0.0, 1.0);
+    return vec4(mix(c, uCloudLit, ci / max(a, 0.001) * 0.6), a);
+  }
+  vec4 layerUV(sampler2D t, vec2 sL, vec4 R) {
+    float u = (sL.x - R.x) / (R.y - R.x), v = (sL.y - R.z) / (R.w - R.z);
+    if (v < 0.0) return vec4(0.5, 0.0, 0.4, 1.0);
+    return texture2D(t, vec2(u, min(v, 0.999)));
+  }
   void main() {
-    vec3 d = normalize(vP - uCam);
-    vec3 col = tx(t0, at(d, 9.0)).rgb;
-    vec2 cu = at(d, 7.0); cu.x += uTime * 0.0035; vec4 c = tx(t1, cu); col = mix(col, c.rgb, c.a * step(0.0, cu.y) );
-    vec4 m = tx(t2, at(d, 5.0)); col = mix(col, m.rgb, m.a);
-    vec4 h = tx(t3, at(d, 1.6)); col = mix(col, h.rgb, h.a);
-    gl_FragColor = vec4(col * 1.05, 1.0);
+    vec3 d = normalize(vP - uCam), dr = normalize(vP - vec3(0.0, -0.45, 6.6));
+    vec2 aT = ang(d), aR = ang(dr), base = aR * K + vec2(uAzC, ELO), dl = aT - aR;
+    /* cielo */
+    vec2 s = base + dl;
+    float el = s.y, h = max(el, 0.0);
+    vec3 v = dirOf(s), sv = dirOf(uSun.xy);
+    float cs = dot(v, sv);
+    vec3 LA = uAmb * 0.62, LS = uSunC * 0.5 * uSun.z;
+    vec3 sky = mix(uHor, uZen, 1.0 - exp(-h * 2.4));
+    float twi = smoothstep(-0.3, -0.01, uSun.y) * (1.0 - smoothstep(0.06, 0.4, uSun.y));
+    float side = pow(max(dot(normalize(v.xz + 1e-4), normalize(sv.xz + 1e-4)), 0.0), 3.0);
+    sky += uSunC * twi * exp(-h * 5.0) * side * 0.55 * (1.0 - uCover * 0.7);
+    sky += uSunC * (pow(max(cs, 0.0), 8.0) * 0.14 + pow(max(cs, 0.0), 120.0) * 0.4) * (0.3 + 0.7 * uSun.z) * (1.0 - uCover * 0.75);
+    sky += vec3(1.0, 0.55, 0.25) * uCityL * 0.09 * exp(-h * 6.0);                 // resplandor de la ciudad de noche
+    /* estrellas */
+    vec2 sg = s * 95.0, id = floor(sg), f = fract(sg) - 0.5; float r = hash(id);
+    float st = step(0.972, r) * smoothstep(0.2, 0.0, length(f - (vec2(hash(id + 3.1), hash(id + 7.7)) - 0.5) * 0.6));
+    sky += vec3(0.85, 0.9, 1.0) * st * (r - 0.972) * 34.0 * uNight * (1.0 - uCover) * (1.0 - uFog) * smoothstep(0.03, 0.25, el) * (0.75 + 0.25 * sin(uTime * 1.7 + r * 90.0));
+    /* sol */
+    float disc = smoothstep(0.99925, 0.99948, cs) * uSun.w;
+    sky = mix(sky, mix(uSunC, vec3(1.0, 0.98, 0.93), 0.55) * 1.7, disc);
+    /* luna, con su fase: se ilumina la cara que mira al sol */
+    vec3 mv = dirOf(uMoon.xy); float cm = dot(v, mv);
+    if (uMoon.w > 0.0 && cm > 0.998) {
+      vec3 e1 = normalize(cross(vec3(0.0, 1.0, 0.0), mv)), e2 = cross(mv, e1);
+      vec2 q = vec2(dot(v, e1), dot(v, e2)) / 0.036; float rr = length(q);
+      if (rr < 1.0) {
+        vec3 n = vec3(q, sqrt(1.0 - rr * rr)), Ls = normalize(vec3(dot(sv, e1), dot(sv, e2), -dot(sv, mv)));
+        float lit = smoothstep(-0.06, 0.1, dot(n, Ls)), mar = nz(q * 0.18 + 0.4).g;
+        vec3 mc = vec3(0.96, 0.94, 0.88) * (0.78 + 0.3 * mar) * lit + vec3(0.05, 0.06, 0.09);
+        sky = mix(sky, mc * 1.3, smoothstep(1.0, 0.92, rr) * uMoon.w);
+      }
+    }
+    sky += vec3(0.55, 0.65, 0.85) * pow(max(cm, 0.0), 600.0) * 0.35 * uMoon.w * uMoon.z * uNight;
+    /* nubes */
+    vec4 cl = clouds(s, v, cs);
+    sky = mix(sky, cl.rgb, cl.a);
+    sky += vec3(0.75, 0.8, 1.0) * uFlash * (0.5 + cl.a);
+    sky = mix(sky, uHaze, exp(-h * 16.0) * (0.45 + 0.4 * uFog));
+    vec3 col = sky;
+    vec3 L = LA + LS;
+    /* montes lejanos (Pirineo, Leyre, Urbasa, Aralar) */
+    vec2 sF = base + dl * 0.9; vec4 m = layerUV(tFar, sF, vec4(0.0, TAU, -1.0 * PI / 180.0, 11.0 * PI / 180.0));
+    float lt = mix(m.r, 1.0 - m.r, uSunW);
+    vec3 alb = mix(uRock * vec3(0.9, 0.92, 1.0), uField * 0.7, m.b * 0.35);
+    alb = mix(alb, vec3(0.8, 0.84, 0.92), smoothstep(0.7 - uSnow * 0.35, 0.76 - uSnow * 0.35, m.g) * step(0.01, uSnow));
+    vec3 cF = alb * (LA + LS * (0.3 + 0.7 * lt));
+    cF = mix(cF, uHaze, clamp(0.58 + uFog * 0.42 + uWet * 0.15, 0.0, 1.0));
+    col = mix(col, cF, m.a * (1.0 - uFog * 0.6));
+    /* sierras de la cuenca: Higa, Alaiz, el Perdón */
+    vec2 sM = base + dl * 0.78; m = layerUV(tMid, sM, vec4(0.0, TAU, -2.0 * PI / 180.0, 10.0 * PI / 180.0));
+    lt = mix(m.r, 1.0 - m.r, uSunW);
+    alb = mix(uRock, mix(uField, vec3(0.05, 0.09, 0.035), 0.45), clamp(m.b * 1.1, 0.0, 1.0));
+    alb = mix(alb, vec3(0.78, 0.82, 0.9), smoothstep(0.72 - uSnow * 0.3, 0.78 - uSnow * 0.3, m.g) * step(0.5, uSnow));
+    vec3 cM = alb * (LA + LS * (0.25 + 0.75 * lt));
+    cM = mix(cM, uHaze, clamp(0.27 + uFog * 0.62 + uWet * 0.12, 0.0, 1.0));
+    col = mix(col, cM, m.a * (1.0 - uFog * 0.45));
+    /* lomas y ciudad: las ventanas se encienden al anochecer, cada una a su hora */
+    vec2 sC = base + dl * 0.55; m = layerUV(tCity, sC, uRC);
+    vec3 cC;
+    if (m.g > 0.5) {
+      float on = step(m.b, uCityL);
+      cC = mix(mix(vec3(0.03, 0.035, 0.05), uZen, 0.4) * L, vec3(1.0, 0.62, 0.26) * 1.6, on);
+    } else if (m.b < 0.47) {
+      cC = uField * (0.75 + 0.5 * m.b) * (LA + LS * (0.35 + 0.65 * m.r));
+    } else if (m.b < 0.72) {
+      cC = mix(vec3(0.34, 0.29, 0.24), vec3(0.52, 0.46, 0.37), (m.b - 0.5) * 4.0) * (LA * 0.9 + LS * (0.15 + 0.85 * m.r));
+    } else {
+      cC = mix(vec3(0.36, 0.11, 0.06), vec3(0.46, 0.2, 0.11), (m.b - 0.75) * 5.0) * (LA + LS * (0.3 + 0.7 * m.r));
+    }
+    cC = mix(cC, uHaze, clamp(0.09 + uFog * 0.72 + uWet * 0.1, 0.0, 1.0) * (m.g > 0.5 && m.b < uCityL ? 0.45 : 1.0));
+    col = mix(col, cC, m.a);
+    /* árboles del patio: ramas, hojas según la estación, flor en primavera */
+    vec2 sT = base + dl * 0.25; m = layerUV(tTree, sT, uRT);
+    if (m.a > 0.01) {
+      vec3 cT; float a = m.a;
+      if (m.b < 0.035) cT = vec3(0.06, 0.045, 0.035) * (LA + LS * (0.2 + 0.8 * m.r));
+      else if (abs(m.g - 0.5) < 0.2) cT = vec3(0.025, 0.06, 0.025) * (0.6 + 0.6 * m.r) * (LA + LS * (0.3 + 0.7 * m.r));
+      else {
+        a *= step(m.b, uLeaf);
+        vec3 lc = uLeafC * (0.55 + 0.7 * m.r);
+        lc = mix(lc, vec3(0.9, 0.62, 0.7), step(0.8, m.g) * uBloom);
+        cT = lc * (LA + LS * (0.25 + 0.75 * m.r));
+      }
+      cT = mix(cT, uHaze, clamp(0.04 + uFog * 0.4, 0.0, 1.0));
+      col = mix(col, cT, a);
+    }
+    /* gotas en el cristal cuando llueve */
+    if (uWet > 0.0) {
+      vec2 gp = vP.xy * vec2(26.0, 20.0), gi = floor(gp), gf = fract(gp) - 0.5;
+      float hr = hash(gi), rad = 0.12 + 0.22 * hash(gi + 5.3);
+      vec2 off = (vec2(hash(gi + 1.7), hash(gi + 9.1)) - 0.5) * (0.9 - 2.0 * rad);
+      float dd = length((gf - off) * vec2(1.0, 0.85)), drop = step(0.62, hr) * smoothstep(rad, rad * 0.7, dd) * uWet;
+      float hi = step(0.62, hr) * smoothstep(rad * 0.45, rad * 0.15, length(gf - off + vec2(rad * 0.3, -rad * 0.35))) * uWet;
+      col = mix(col, col * 0.72 + uHor * 0.22, drop) + vec3(0.18) * hi;
+      col = mix(col, col * 0.82 + uHaze * 0.18, uWet * 0.5);
+    }
+    gl_FragColor = vec4(col * uExpo, 1.0);
     #include <tonemapping_fragment>
     #include <colorspace_fragment>
   }`;
-  const winMats = [];
+  const winMats = [], winGlows = [];
+  const AZC = { [WINS[0]]: 112, [WINS[1]]: 180, [WINS[2]]: 246 };
   function viewWindow(x, w = 1.9, hh = 1.55) {
     const g = new THREE.Group(); g.position.set(x, 0, 0); scene.add(g);
-    const mat = new THREE.ShaderMaterial({ uniforms: { t0: { value: L0 }, t1: { value: L1 }, t2: { value: L2 }, t3: { value: L3 }, uCam: { value: V() }, uTime: { value: 0 }, uOff: { value: x * 0.037 }, uWH: { value: new THREE.Vector2(w, hh) } },
+    const mat = new THREE.ShaderMaterial({ uniforms: { ...SKY, uCam: { value: V() }, uAzC: { value: AZC[x] * DEG } },
       vertexShader: 'varying vec3 vP; void main(){ vP = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }', fragmentShader: WV_FS });
     const pane = plane(w, hh, mat, 0, 1.9, 0.01, g);
     pane.onBeforeRender = (r, sc, camera) => { const u = mat.uniforms.uCam.value; u.setFromMatrixPosition(camera.matrixWorld); pane.worldToLocal(u); };
@@ -2258,10 +2556,80 @@ async function buildHall() {
     const wf = std(0xd8d2c6, { roughness: 0.4, metalness: 0.2 }), hw = w / 2 + 0.03;
     box(w + 0.12, 0.07, 0.1, wf, 0, 1.9 + hh / 2 + 0.03, 0.04, g); box(w + 0.12, 0.07, 0.1, wf, 0, 1.9 - hh / 2 - 0.03, 0.04, g); box(0.07, hh + 0.07, 0.1, wf, -hw, 1.9, 0.04, g); box(0.07, hh + 0.07, 0.1, wf, hw, 1.9, 0.04, g); box(0.04, hh, 0.06, wf, 0, 1.9, 0.04, g);
     box(w + 0.2, 0.05, 0.22, wf, 0, 1.9 - hh / 2 - 0.06, 0.1, g);
-    glowSprite(0xff9a5a, w * 1.6, 0, 1.9, 0.25, g, 0.12);
+    winGlows.push(glowSprite(0xff9a5a, w * 1.6, 0, 1.9, 0.25, g, 0.12));
     return g;
   }
   const win = viewWindow(WIN_X); viewWindow(WINS[0]); const win3 = viewWindow(WINS[2]);
+
+  /* lluvia, nieve, hojas o pétalos: un solo «Points» dentro del marco de las ventanas, con tope */
+  const NPART = MOBILE ? 420 : 1100, pp = new Float32Array(NPART * 3), pseed = new Float32Array(NPART * 4);
+  for (let i = 0; i < NPART; i++) { pp[i * 3] = WINS[i % 3]; pp[i * 3 + 1] = 1.9; pp[i * 3 + 2] = 0.014 + Math.random() * 0.02; pseed.set([Math.random(), Math.random(), Math.random(), Math.random()], i * 4); }
+  const pgeo = new THREE.BufferGeometry(); pgeo.setAttribute('position', new THREE.BufferAttribute(pp, 3)); pgeo.setAttribute('seed', new THREE.BufferAttribute(pseed, 4));
+  const partMat = new THREE.ShaderMaterial({
+    uniforms: { uTime: { value: 0 }, uMode: { value: 0 }, uAmt: { value: 0 }, uWindX: { value: 0.2 }, uSize: { value: 26 * dpr }, uC: { value: col(0xdde6f0) }, uC2: { value: col(0xffffff) }, uLight: { value: 1 } },
+    vertexShader: `attribute vec4 seed; uniform float uTime; uniform float uMode; uniform float uAmt; uniform float uWindX; uniform float uSize; varying float vA; varying float vD; varying float vR; varying float vS;
+      void main(){
+        vec3 p = position; float dpt = 0.35 + seed.z * 0.65;
+        float sp = uMode < 0.5 ? 2.6 : uMode < 1.5 ? 0.16 : 0.09;
+        float fy = fract(seed.y - uTime * sp * dpt * 0.42);
+        float sway = uMode < 0.5 ? 0.0 : sin(uTime * (0.8 + seed.w) + seed.x * 30.0) * (uMode < 1.5 ? 0.03 : 0.08);
+        float fx = fract(seed.x + uWindX * (1.0 - fy) * (uMode < 0.5 ? 0.25 : 0.6) * dpt + sway);
+        p.x += (fx - 0.5) * 1.84; p.y += (fy - 0.5) * 1.48;
+        vA = step(seed.w, uAmt) * smoothstep(0.0, 0.08, fy) * smoothstep(1.0, 0.9, fy); vD = dpt; vR = seed.w; vS = seed.x;
+        vec4 mv = modelViewMatrix * vec4(p, 1.0);
+        gl_PointSize = uSize * (uMode < 0.5 ? 1.3 : uMode < 1.5 ? 0.24 : 0.3) * dpt / -mv.z * 6.0;
+        gl_Position = projectionMatrix * mv;
+      }`,
+    fragmentShader: `uniform float uMode; uniform float uWindX; uniform vec3 uC; uniform vec3 uC2; uniform float uLight; varying float vA; varying float vD; varying float vR; varying float vS;
+      void main(){
+        vec2 q = gl_PointCoord - 0.5; float a;
+        if (uMode < 0.5) { float x = q.x + q.y * uWindX * 0.35; a = (1.0 - smoothstep(0.0, 0.05 + 0.03 * vD, abs(x))) * (1.0 - smoothstep(0.25, 0.5, abs(q.y))) * 0.42 * vD; }
+        else if (uMode < 1.5) a = smoothstep(0.5, 0.1, length(q)) * (0.35 + 0.5 * vD);
+        else { float an = vS * 6.28 + vR * 3.0; mat2 R = mat2(cos(an), -sin(an), sin(an), cos(an)); vec2 r = R * q; a = smoothstep(0.5, 0.42, length(r * vec2(1.0, 2.4))); }
+        vec3 c = uMode > 1.5 ? mix(uC, uC2, vR) * uLight : uC * uLight;
+        gl_FragColor = vec4(c, a * vA);
+      }`,
+    transparent: true, depthWrite: false
+  });
+  const parts = new THREE.Points(pgeo, partMat); parts.frustumCulled = false; parts.renderOrder = 2; parts.visible = false; scene.add(parts);
+  let flashT = 0, nextFlash = 6;
+  /* aplica el cielo del momento a las ventanas, a las partículas y a la luz del pasillo */
+  const tmpC = new THREE.Color();
+  const setC = (u, c) => u.value.setRGB(c[0], c[1], c[2], THREE.SRGBColorSpace);
+  function aplicarCielo(e, repintar) {
+    const P = e.paleta, W = e.tiempo, Tm = e.temporada, U = SKY;
+    setC(U.uZen, P.zen); setC(U.uHor, P.hor); setC(U.uSunC, P.sol); U.uSunC.value.multiplyScalar(0.6 + 1.1 * P.luz);
+    setC(U.uAmb, P.amb); U.uAmb.value.multiplyScalar(P.ambI * 0.95); setC(U.uHaze, P.niebla.map((v, i) => v * 0.6 + P.hor[i] * 0.4));
+    const cl = P.hor.map((v, i) => (v * 0.55 + 0.45 * (P.ambI * 0.9 + P.luz * 0.4)) * (0.35 + 0.65 * Math.max(P.ambI, 0.12)));
+    setC(U.uCloudLit, cl.map((v, i) => v * (1 - W.nubes * 0.25) + P.sol[i] * 0.15 * P.luz));
+    setC(U.uCloudDark, P.zen.map((v, i) => (v * 0.5 + P.amb[i] * P.ambI * 0.5) * (0.65 - W.nubes * 0.15)));
+    const sunUp = e.sol.alt > -1, direct = h01(P.luz * (1 - W.nubes * 0.92) * (1 - W.niebla));
+    U.uSun.value.set(e.sol.az * DEG, e.sol.alt * DEG, direct, sunUp ? h01(1 - W.nubes * 1.05) : 0);
+    U.uMoon.value.set(e.luna.az * DEG, e.luna.alt * DEG, e.luna.ilum, e.luna.alt > -2 ? h01(1 - W.nubes * 1.1) * h01(1.2 - P.luz * 2) : 0);
+    U.uNight.value = P.noche; U.uCover.value = W.nubes; U.uFog.value = W.niebla;
+    U.uWet.value = W.tipo === 'lluvia' || W.tipo === 'llovizna' ? 0.4 + 0.6 * W.intensidad : 0;
+    const hl = CI.relojLocal(e.fecha).h, tarde = hl >= 1 && hl < 6 ? 0.22 : hl >= 6 && hl < 12 ? 0.4 : 0.55;
+    U.uCityL.value = h01((-e.sol.alt + 1.5) / 9) * tarde + (W.nubes > 0.85 && P.luz < 0.5 ? 0.06 : 0);
+    U.uExpo.value = 0.82 + 0.24 * h01(P.ambI * 1.1) + (P.expo - 1) * 0.5;
+    U.uSunW.value = h01(0.5 + Math.sin((e.sol.az - 180) * DEG) * 0.6);
+    U.uSnow.value = Tm.nieve; U.uLeaf.value = Tm.hojas; U.uBloom.value = Tm.flor;
+    setC(U.uField, W.tipo === 'nieve' ? Tm.campo.map(v => v + (0.9 - v) * (0.35 + 0.4 * W.intensidad)) : Tm.campo); setC(U.uLeafC, Tm.colorHoja);
+    const wv = W.viento || 8; U.uWind.value.set(-0.25 - wv / 30, 0.08);
+    /* partículas */
+    const modo = W.tipo === 'lluvia' || W.tipo === 'llovizna' ? 0 : W.tipo === 'nieve' ? 1 : Tm.caen ? 2 : Tm.petalos && W.nubes < 0.8 ? 3 : -1;
+    parts.visible = modo >= 0; const pu = partMat.uniforms;
+    pu.uMode.value = modo === 3 ? 2 : modo; pu.uAmt.value = modo === 0 ? (W.tipo === 'llovizna' ? 0.35 : 0.3 + 0.7 * W.intensidad) : modo === 1 ? 0.3 + 0.7 * W.intensidad : modo === 2 ? 0.012 + 0.02 * (1 - Tm.hojas) : 0.02;
+    if (tier === 0) pu.uAmt.value *= 0.5;
+    pu.uWindX.value = Math.min(1.2, wv / 25) * (modo === 0 ? 1 : 0.6);
+    if (modo === 2) { setC(pu.uC, Tm.colorHoja); setC(pu.uC2, [0.78, 0.45, 0.16]); } else if (modo === 3) { setC(pu.uC, [1, 0.9, 0.93]); setC(pu.uC2, [1, 0.97, 0.98]); } else setC(pu.uC, modo === 1 ? [0.97, 0.98, 1] : [0.8, 0.86, 0.94]);
+    pu.uLight.value = 0.5 + 0.8 * Math.max(P.ambI, P.luz * 0.8);
+    flashT = 0; SKY.uFlash.value = 0;
+    /* la luz dentro */
+    const nl = luzDe(e), cambia = repintar && luzCambia(LZ, nl); LZ = nl;
+    winRefl.forEach((m, i) => { m.material.color.setRGB(LZ.win[0], LZ.win[1], LZ.win[2], THREE.SRGBColorSpace); m.material.opacity = (i === 1 ? 0.3 : 0.2) * (0.25 + 0.75 * LZ.winK); });
+    winGlows.forEach(s => { s.material.color.setRGB(LZ.win[0], LZ.win[1], LZ.win[2], THREE.SRGBColorSpace); s.material.opacity = 0.03 + 0.06 * LZ.winK; });
+    if (cambia) { const job = () => { wallLM.userData.redraw(drawWallLM); floorLM.userData.redraw(drawFloorLM); if (space === MC._hall && !frozen) kick(0.1); }; (window.requestIdleCallback || setTimeout)(job, { timeout: 2000 }); }
+  }
   { const wood2 = std(0x9a6a40, { roughness: 0.5 }); box(1.7, 0.06, 0.42, wood2, 0, 0.46, 0.4, win3); [-0.75, 0.75].forEach(dx => box(0.06, 0.44, 0.38, std(0x2a2d33, { metalness: 0.6, roughness: 0.4 }), dx, 0.22, 0.4, win3)); blob(2.0, 0.8, 0.4, 0, 0.004, 0.45, win3); }
 
   /* cuadros enmarcados, cada uno con su lamparita */
@@ -2308,11 +2676,11 @@ async function buildHall() {
     glowSprite(0xffe2b0, w * 1.5, 0, h * 0.25, 0.08, g, 0.12);
   });
   /* haz de luz: dos planos cruzados con un degradado que respira; el polvo solo se ve dentro */
-  const BEAM_D = V(-0.42, -0.5, 1).normalize();
+  const BEAM_D = LZ.beam.clone();
   const beamMat = new THREE.ShaderMaterial({
-    uniforms: { uTime: { value: 0 }, uOp: { value: 0.0 } },
+    uniforms: { uTime: { value: 0 }, uOp: { value: 0.0 }, uC: { value: col(0xff9e52) } },
     vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
-    fragmentShader: 'uniform float uTime; uniform float uOp; varying vec2 vUv; void main(){ float along = 1.0 - vUv.y; float across = sin(vUv.x * 3.14159); float n = 0.82 + 0.18 * sin(vUv.y * 9.0 - uTime * 0.6) * sin(vUv.x * 7.0 + uTime * 0.35); float a = pow(across, 1.6) * pow(1.0 - along, 1.3) * smoothstep(0.0, 0.08, along) * n * uOp; gl_FragColor = vec4(vec3(1.0, 0.62, 0.32) * a, a); }',
+    fragmentShader: 'uniform float uTime; uniform float uOp; uniform vec3 uC; varying vec2 vUv; void main(){ float along = 1.0 - vUv.y; float across = sin(vUv.x * 3.14159); float n = 0.82 + 0.18 * sin(vUv.y * 9.0 - uTime * 0.6) * sin(vUv.x * 7.0 + uTime * 0.35); float a = pow(across, 1.6) * pow(1.0 - along, 1.3) * smoothstep(0.0, 0.08, along) * n * uOp; gl_FragColor = vec4(uC * a, a); }',
     transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide
   });
   const beam = new THREE.Group(); beam.position.set(0, 1.9, 0.05); win.add(beam);
@@ -2323,12 +2691,24 @@ async function buildHall() {
   for (let i = 0; i < NDUST; i++) { const t = Math.random() * 4.2, a = Math.random() * PI * 2, r = Math.sqrt(Math.random()) * 0.75; const p = V(0, 1.9, 0.05).addScaledVector(BEAM_D, t); dp[i * 3] = WIN_X + p.x + Math.cos(a) * r; dp[i * 3 + 1] = p.y + Math.sin(a) * r * 0.8; dp[i * 3 + 2] = p.z + Math.sin(a) * r * 0.6; ds[i] = Math.random(); }
   const dgeo = new THREE.BufferGeometry(); dgeo.setAttribute('position', new THREE.BufferAttribute(dp, 3)); dgeo.setAttribute('seed', new THREE.BufferAttribute(ds, 1));
   const dustMat = new THREE.ShaderMaterial({
-    uniforms: { uTime: { value: 0 }, uSize: { value: 42 * dpr }, uOp: { value: 0 }, uA: { value: V(WIN_X, 1.9, 0.05) }, uD: { value: BEAM_D } },
+    uniforms: { uTime: { value: 0 }, uSize: { value: 42 * dpr }, uOp: { value: 0 }, uA: { value: V(WIN_X, 1.9, 0.05) }, uD: { value: BEAM_D }, uC: { value: col(0xffd89e) } },
     vertexShader: 'attribute float seed; uniform float uTime; uniform float uSize; uniform vec3 uA; uniform vec3 uD; varying float vA; void main(){ vec3 p = position; p.x += sin(uTime*0.21 + seed*31.0)*0.14; p.y += sin(uTime*0.13 + seed*17.0)*0.12; p.z += cos(uTime*0.17 + seed*23.0)*0.12; vec3 v = p - uA; float t = dot(v, uD); float r = length(v - uD*t); vA = smoothstep(0.85, 0.15, r) * smoothstep(-0.1, 0.5, t) * smoothstep(4.6, 2.2, t) * (0.55 + 0.45*sin(uTime*1.1 + seed*40.0)); vec4 mv = modelViewMatrix * vec4(p, 1.0); gl_PointSize = uSize * (0.35 + seed*0.65) / -mv.z; gl_Position = projectionMatrix * mv; }',
-    fragmentShader: 'uniform float uOp; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5); float a = smoothstep(0.5, 0.0, d) * vA * uOp; gl_FragColor = vec4(vec3(1.0, 0.85, 0.62) * a, a); }',
+    fragmentShader: 'uniform float uOp; uniform vec3 uC; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5); float a = smoothstep(0.5, 0.0, d) * vA * uOp; gl_FragColor = vec4(uC * a, a); }',
     transparent: true, depthWrite: false, blending: THREE.AdditiveBlending
   });
   const dust = new THREE.Points(dgeo, dustMat); dust.frustumCulled = false; dust.renderOrder = 4; scene.add(dust);
+  /* el haz y el polvo siguen al sol: dirección, color y fuerza */
+  function orientarHaz() {
+    if (BEAM_D.angleTo(LZ.beam) > 0.02) {
+      BEAM_D.copy(LZ.beam); beam.quaternion.setFromUnitVectors(V(0, -1, 0), BEAM_D);
+      for (let i = 0; i < NDUST; i++) { const t = Math.random() * 4.2, a = Math.random() * PI * 2, r = Math.sqrt(Math.random()) * 0.75; const p = V(0, 1.9, 0.05).addScaledVector(BEAM_D, t); dp[i * 3] = WIN_X + p.x + Math.cos(a) * r; dp[i * 3 + 1] = p.y + Math.sin(a) * r * 0.8; dp[i * 3 + 2] = p.z + Math.sin(a) * r * 0.6; }
+      dgeo.attributes.position.needsUpdate = true;
+    }
+    beamMat.uniforms.uC.value.setRGB(LZ.sun[0], LZ.sun[1], LZ.sun[2], THREE.SRGBColorSpace).multiplyScalar(0.5 + 0.4 * (1 - LZ.tanAlt / (LZ.tanAlt + 1)));
+    dustMat.uniforms.uC.value.setRGB(LZ.sun[0], LZ.sun[1], LZ.sun[2], THREE.SRGBColorSpace).lerp(col(0xffffff), 0.3);
+    if (introDone) beamMat.uniforms.uOp.value = LZ.beamOp;
+  }
+  let introDone = false;
   // banco bajo la ventana
   const wood = std(0x9a6a40, { roughness: 0.5 });
   box(1.7, 0.06, 0.42, wood, 0, 0.46, 0.4, win); [-0.75, 0.75].forEach(dx => box(0.06, 0.44, 0.38, std(0x2a2d33, { metalness: 0.6, roughness: 0.4 }), dx, 0.22, 0.4, win));
@@ -2541,8 +2921,28 @@ async function buildHall() {
     { id: 'calendario', x: 5.85, anchor: V(5.85, 2.36, 0.1), color: '#86e4c3', label: 'Calendario', kicker: 'Colgado en la pared', title: 'Calendario', go: 'Abrir el calendario', btn: '#86e4c3', tint: '#86e4c3',
       sub: () => { const n = MC.now(), d0 = new Date(n.getFullYear(), n.getMonth(), n.getDate()), d7 = new Date(d0.getTime() + 7 * 864e5), ex = AG.ev.filter(e => e.tipo !== 'entrega' && e.due > n && e.date < d7).length;
         return ex ? 'En los próximos 7 días: ' + (ex === 1 ? 'una prueba' : ex + ' pruebas (exámenes u orales)') + '. El 6 de noviembre acaba el primer trimestre.' : 'Mes y curso, con todas las fechas clave.'; }, act: () => zoomTo('calendario') },
-    doorSpot('gest'), doorSpot('ipe'), doorSpot('ing'), doorSpot('digi'), doorSpot('sost')
+    doorSpot('gest'), doorSpot('ipe'),
+    { id: 'ventana', x: WIN_X, dx: 0.2, anchor: V(WIN_X + 0.6, 2.72, 0.1), color: '#9cc0ff', tint: '#9cc0ff', btn: '#9cc0ff', label: 'Ventana', kicker: 'Ventana · Pamplona, ahora', title: 'El cielo de fuera',
+      get go() { return asomado ? 'Volver al pasillo' : 'Asomarse'; }, aria: 'Asomarse a la ventana: el cielo y el tiempo de Pamplona ahora',
+      sub: () => { const e = estado || cieloAhora(), h = e.horas, t = +e.fecha, up = x => x.charAt(0).toUpperCase() + x.slice(1);
+        const tt = CI.lineaTiempo(window.__cieloTiempo || null, e.tiempo).replace(/^Pamplona · /, '');
+        const so = h.salida && t < +h.salida ? 'Sale el sol a las ' + CI.hhmm(h.salida) : h.puesta && t < +h.puesta ? 'Se pone el sol a las ' + CI.hhmm(h.puesta) : 'El sol se puso a las ' + CI.hhmm(h.puesta);
+        const est = { invierno: 'invierno', primavera: 'primavera', verano: 'verano', otono: 'otoño' }[e.temporada.nombre];
+        return up(tt) + '. ' + so + '. ' + up(e.luna.nombre) + (e.luna.alt > 3 && e.luna.ilum > 0.15 && e.sol.alt < 15 && e.tiempo.nubes < 0.8 ? ', a la vista' : '') + '. Es ' + est + '.'; },
+      act: () => asomarse() },
+    doorSpot('ing'), doorSpot('digi'), doorSpot('sost')
   ];
+  /* asomarse a la ventana: la cámara se acerca y mira afuera; el resto del pasillo queda detrás */
+  let asomado = false;
+  function asomarse(on = !asomado) {
+    if (isBusy() || space !== MC._hall) return;
+    asomado = on; const k = cfgFor(MC._hall.cfg), m = MOBILE || W < 760;
+    gsap.killTweensOf(rig);
+    gsap.to(beamMat.uniforms.uOp, { value: on ? LZ.beamOp * 0.12 : LZ.beamOp, duration: 0.6 });
+    if (on) anim(rig, { y: 1.78, ly: 1.9, z: m ? 2.7 : 3.0, fov: m ? 60 : 48, off: 0, duration: 0.9, ease: 'power3.inOut' });
+    else anim(rig, { y: k.y, ly: k.ly, z: k.z, fov: k.fov, off: k.off || 0, duration: 0.7, ease: 'power3.inOut' });
+    updateCard(); poke();
+  }
   const zoomTargets = { horario: [1.6, 1.66, 2.0], hoy: [3.05, 1.56, 1.25], calendario: [5.85, 1.66, 1.7] };
   const zoomTargetsM = { horario: [1.68, 1.5, 2.2], hoy: [3.05, 1.42, 1.3], calendario: [5.85, 1.5, 2.1] };
 
@@ -2564,19 +2964,39 @@ async function buildHall() {
       if (Math.abs(d.under.material.opacity - luz) > 0.01) anim(d.under.material, { opacity: luz, duration: 0.4 });
     }
   }
+  /* la sala responde a la luz de fuera: color y dirección de la luz de la ventana, ambiente, niebla y exposición */
+  let hallExpo = 1.0, estado = null;
+  const fog0 = col(0x0d0f14);
+  function luzSala() {
+    const w = tmpC.setRGB(LZ.win[0], LZ.win[1], LZ.win[2], THREE.SRGBColorSpace).clone(), sc = col(0).setRGB(LZ.sun[0], LZ.sun[1], LZ.sun[2], THREE.SRGBColorSpace);
+    dusk.color.copy(w).lerp(sc, LZ.direct); dusk.intensity = 0.2 + 0.75 * LZ.winK + 1.1 * LZ.direct;
+    dusk.position.set(4 + Math.max(-0.95, Math.min(0.95, LZ.sinAz)) * 22, 2.4 + 5 * Math.min(1, LZ.tanAlt * 0.6), 5);
+    sun.color.copy(w).lerp(sc, LZ.direct); sun.intensity = 1.2 + 2.2 * LZ.winK + 2.6 * LZ.direct;
+    hemi.color.set(0xb9c4ff).lerp(w, 0.45);
+    scene.fog.color.copy(fog0).lerp(w.clone().multiplyScalar(0.22), 0.5 * LZ.winK); scene.background.copy(scene.fog.color);
+    hallExpo = 0.95 + 0.07 * LZ.winK;
+  }
+  function aplicarTodo(repintar) { estado = cieloAhora(); aplicarCielo(estado, repintar); orientarHaz(); luzSala(); }
+  aplicarTodo(false);
+  win.traverse(o => { if (o.isMesh) o.userData.spot = 'ventana'; });
+  const alCambiar = () => { aplicarTodo(true); if (space === MC._hall && !frozen) kick(0.2); };
+  addEventListener('cielo:tiempo', alCambiar); addEventListener('cielo:reloj', alCambiar);
   const hall = {
-    name: 'hall', exposure: 1.0, scene, spots, doors, pick: [cork, noteG, calG, ...Object.values(doors).map(d => d.g)], range: [-3.0, 22.0],
+    name: 'hall', get exposure() { return hallExpo; }, scene, spots, doors, pick: [cork, noteG, calG, win, ...Object.values(doors).map(d => d.g)], asomarse, range: [-3.0, 22.0],
     cfg: { y: 1.3, z: 6.7, ly: 1.6, fov: 42, off: -1.6, m: { y: 1.42, z: 5.9, ly: 1.5, fov: 52, off: -0.5 } },
-    lights: { hemi, fluo, tubes, dusk, sun, baked, beamMat, dustMat },
+    lights: { hemi, fluo, tubes, dusk, sun, baked, beamMat, dustMat, beamOp: () => LZ.beamOp, endIntro: () => { introDone = true; orientarHaz(); } },
     hover(id, on) { if (doors[id]) { hoverDoor = on ? id : null; settleDoors(); } if (id === 'calendario' && on) anim(calPaper.rotation, { z: 0.06, duration: 0.25, yoyo: true, repeat: 1 }); },
-    onFocus(s) { focusDoor = doors[s.id] ? s.id : null; settleDoors(); },
+    onFocus(s) { focusDoor = doors[s.id] ? s.id : null; settleDoors(); if (asomado && s.id !== 'ventana') asomarse(false); },
+    onResize() { asomado = false; },
+    get cielo() { return estado; },
     doorRest,
     idle(t, dt, vr) {
       fluo.position.x = rig.x + 1; fluo.target.position.x = rig.x; fluo.target.updateMatrixWorld();
       for (const k in doors) { const d = doors[k]; d.inner.visible = d.pivot.rotation.y > 0.003; }
       if (!ambientOn()) return false;
-      beamMat.uniforms.uTime.value = t; dustMat.uniforms.uTime.value = t; winMats.forEach(m => { m.uniforms.uTime.value = t; });
-      dustMat.uniforms.uOp.value = tier > 0 ? 1 : 0;
+      beamMat.uniforms.uTime.value = t; dustMat.uniforms.uTime.value = t; SKY.uTime.value = t; partMat.uniforms.uTime.value = t;
+      if (estado && estado.tiempo.tormenta) { if (t > nextFlash) { flashT = 0.4; nextFlash = t + 5 + Math.random() * 11; } if (flashT > 0) { flashT = Math.max(0, flashT - dt); SKY.uFlash.value = flashT / 0.4 * (0.55 + 0.45 * Math.sin(flashT * 70)); } }
+      dustMat.uniforms.uOp.value = tier > 0 ? Math.min(1, LZ.direct * 1.5) : 0;
       Object.values(doors).forEach((d, k) => {
         if (d.x < vr[0] - 1 || d.x > vr[1] + 1) return;
         d.under.material.opacity = 0.32 + Math.sin(t * 1.3 + k * 1.7) * 0.1;
@@ -3066,12 +3486,13 @@ async function buildLabRoom() {
   examBoard(S, 0.2, 2.32, 1.6, 0.66, 'lab-examen-u2', 'examen de Lab 2 · Seguridad', '#0d6b4c', (g) => { g.fillStyle = '#ad3326'; g.font = '700 26px Caveat'; g.fillText('gafas · guantes · lavaojos', 24, 140); });
 
   /* ventana alta con la luz de la tarde y su haz */
-  const sky = canvasTex(256, 128, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#7b5a86'); gr.addColorStop(.6, '#ff9a5a'); gr.addColorStop(1, '#ffd08a'); g.fillStyle = gr; g.fillRect(0, 0, w, h); glowAt(g, 180, 90, 60, 'rgba(255,240,200,.9)'); g.fillStyle = '#3a2430'; for (let x = 0; x < w;) { const bw = 14 + Math.random() * 30, bh = 10 + Math.random() * 26; g.fillRect(x, h - bh, bw, bh); x += bw + 2; } });
+  const CH = cieloHex();   // la ventana alta enseña el cielo de ahora
+  const sky = canvasTex(256, 128, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, CH.zen); gr.addColorStop(.6, CH.mid); gr.addColorStop(1, CH.low); g.fillStyle = gr; g.fillRect(0, 0, w, h); if (CH.dia > 0.08) glowAt(g, 180, 90, 60, 'rgba(255,240,200,' + (0.9 * Math.min(1, CH.dia)).toFixed(2) + ')'); if (CH.noche > 0.3) { g.fillStyle = 'rgba(255,255,255,.8)'; for (let i = 0; i < 30; i++) g.fillRect(Math.random() * w, Math.random() * h * 0.6, 1.2, 1.2); } g.fillStyle = '#3a2430'; for (let x = 0; x < w;) { const bw = 14 + Math.random() * 30, bh = 10 + Math.random() * 26; g.fillRect(x, h - bh, bw, bh); x += bw + 2; } });
   const win = new THREE.Group(); win.position.set(4.3, 2.7, 0.01); S.add(win);
   plane(1.5, 0.62, basic(0xffffff, { map: sky }), 0, 0, 0, win);
   const wf = std(0x6b5640, { roughness: 0.5 }); [-0.75, -0.25, 0.25, 0.75].forEach(x => box(0.05, 0.68, 0.06, wf, x, 0, 0.02, win)); box(1.56, 0.05, 0.06, wf, 0, 0.33, 0.02, win); box(1.56, 0.05, 0.12, wf, 0, -0.33, 0.04, win);
   const beamT = canvasTex(64, 256, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, 'rgba(255,190,120,.9)'); gr.addColorStop(1, 'rgba(255,150,80,0)'); g.fillStyle = gr; g.fillRect(0, 0, w, h); const sx = g.createLinearGradient(0, 0, w, 0); sx.addColorStop(0, 'rgba(0,0,0,1)'); sx.addColorStop(.5, 'rgba(0,0,0,0)'); sx.addColorStop(1, 'rgba(0,0,0,1)'); g.globalCompositeOperation = 'destination-out'; g.fillStyle = sx; g.fillRect(0, 0, w, h); });
-  const beamM = basic(0xffc890, { map: beamT, transparent: true, opacity: 0.22, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide });
+  const beamM = basic(0xffc890, { map: beamT, transparent: true, opacity: 0.22 * (0.15 + 0.85 * CH.direct), depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide });
   const beam = plane(1.4, 3.2, beamM, 3.6, 1.4, 1.3, S); beam.rotation.set(-0.5, 0, -0.42);
   const dust = motes(S, MOBILE ? 50 : 110, [2.4, 4.8, 0.6, 2.6, 0.4, 2.2], 0xffd8a0, 30);
 
@@ -3754,7 +4175,8 @@ async function buildDigiRoom() {
     }, scene: S, pick: [desk], range: [-0.2, 0.2], spots: [prontoSpot('digi', 0, react, V(0, top + 0.66, 0.45))], cfg: { y: 1.45, z: 3.6, ly: 1.1, fov: 46, m: { y: 1.45, z: 3.5, ly: 1.12, fov: 54 } } };
 }
 async function buildSostRoom() {
-  const glassWall = canvasTex(512, 256, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#5d7f9e'); gr.addColorStop(0.7, '#ffb07a'); gr.addColorStop(1, '#ffd29a'); g.fillStyle = gr; g.fillRect(0, 0, w, h); g.fillStyle = 'rgba(40,70,40,.8)'; for (let x = 0; x < w; x += 12) { const hh = 30 + Math.sin(x * 0.05) * 14 + Math.random() * 20; g.fillRect(x, h - hh, 12, hh); } g.strokeStyle = 'rgba(240,248,240,.85)'; g.lineWidth = 6; for (let x = 0; x <= w; x += 64) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke(); } for (let y = 0; y <= h; y += 64) { g.beginPath(); g.moveTo(0, y); g.lineTo(w, y); g.stroke(); } });
+  const CH = cieloHex();   // el invernadero, con el cielo de ahora
+  const glassWall = canvasTex(512, 256, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, CH.zen); gr.addColorStop(0.7, CH.mid); gr.addColorStop(1, CH.low); g.fillStyle = gr; g.fillRect(0, 0, w, h); g.fillStyle = 'rgba(40,70,40,.8)'; for (let x = 0; x < w; x += 12) { const hh = 30 + Math.sin(x * 0.05) * 14 + Math.random() * 20; g.fillRect(x, h - hh, 12, hh); } g.strokeStyle = 'rgba(240,248,240,.85)'; g.lineWidth = 6; for (let x = 0; x <= w; x += 64) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke(); } for (let y = 0; y <= h; y += 64) { g.beginPath(); g.moveTo(0, y); g.lineTo(w, y); g.stroke(); } });
   glassWall.wrapS = THREE.RepeatWrapping; glassWall.repeat.set(2, 1);
   const sh = roomShell({ x0: -3, x1: 3, wallTex: glassWall, floor: '#7a6a52', bg: 0x0d140e, sky: 0xeaffd6, key: 0xffd9a0, fillC: 0xffc070, fillX: 0, poolX: 0.6, pool: 'rgba(255,200,120,.95)', amb: 'rgb(60,66,50)', exposure: 1.04, on: { hemi: 0.8, key: 1.5, fill: 2.4 } });
   const S = sh.scene, top = bench(S, -1.5, 1.5, { legs: true, topC: 0x9a6a40, rough: 0.6, top: 0.7, z: 0.55 });
@@ -3977,7 +4399,8 @@ async function leaveRoom(instant, id) {
    ========================================================= */
 const hall = await buildHall();
 if (MC.flat) { renderer.dispose(); return; }
-setSpace(hall, 2);
+/* se entra mirando a la ventana: lo primero es el cielo de Pamplona de ahora mismo */
+setSpace(hall, Math.max(0, hall.spots.findIndex(s => s.id === 'ventana')));
 gsap.set(['#dock', '#hot'], { autoAlpha: 0 }); uiOn = false;
 const L = hall.lights;
 const ON = { hemi: 0.3, fluo: 0.7 };
@@ -3995,6 +4418,8 @@ MC.three = {
   get space() { return space && space.name; }, get busy() { return isBusy(); },
   goSpot(id) { const i = space.spots.findIndex(s => s.id === id); if (i >= 0) setIndex(i, true); },
   get frames() { return frames; }, get dpr() { return dpr; },
+  /* para pruebas: asomarse a una ventana (x: -4.4 la del este, 10.8 la del sur, 21.4 la del oeste) */
+  asomarse(on, x) { const i = hall.spots.findIndex(s => s.id === 'ventana'); if (space === hall && i >= 0) { setIndex(i, true); if (x != null) rig.x = rig.tx = x; hall.asomarse(on); } },
   /* para pruebas: cuánto está abierta cada puerta del pasillo (radianes) */
   get puertas() { const o = {}; for (const k in hall.doors) o[k] = +hall.doors[k].pivot.rotation.y.toFixed(2); return o; }
 };
@@ -4012,12 +4437,12 @@ itl.to('#introT', { opacity: 1, duration: 0.5, ease: 'power2.out' }, 0.05)
   .to(L.hemi, { intensity: ON.hemi, duration: 0.9 }, 0.9).to(L.fluo, { intensity: ON.fluo, duration: 0.9 }, 0.95)
   .to(rig, { z: start0.z, y: start0.y, x: rig.tx, duration: 2.0, ease: 'power3.out' }, 0.2)
   .to(L.baked.map(m => m), { lightMapIntensity: (i, m) => m.userData.lmi, duration: 1.1, ease: 'power2.out', stagger: 0.08 }, 0.7)
-  .to(L.beamMat.uniforms.uOp, { value: 1, duration: 1.4, ease: 'power2.inOut' }, 1.3)
+  .to(L.beamMat.uniforms.uOp, { value: L.beamOp(), duration: 1.4, ease: 'power2.inOut' }, 1.3)
   .to('#introT', { opacity: 0, y: -10, duration: 0.45 }, 1.75);
 rig.lock = true; animTL(itl);
 function endIntro() {
   if (intro.hidden) return;
-  intro.hidden = true; skip.hidden = true; rig.lock = false; rig.x = rig.tx;
+  intro.hidden = true; skip.hidden = true; rig.lock = false; rig.x = rig.tx; L.endIntro();
   poke(); NAV.intro(false);
 }
 function skipIntro() { itl.progress(1); }
@@ -4032,6 +4457,117 @@ intro.addEventListener('click', skipIntro); skip.addEventListener('click', skipI
 })();
 addEventListener('keydown', e => { if (!intro.hidden && (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ')) skipIntro(); });
 }
+</script>
+
+<script type="module">
+/* =========================================================
+   El cielo de Pamplona: hora, estación y tiempo.
+   Calcula el sol y la luna en el dispositivo (cielo.js). El tiempo viene de Open-Meteo
+   (solo se envían las coordenadas de Pamplona), como mucho cada 20 min; sin red, lo último guardado.
+   Pinta la línea discreta del 3D y la ventana del pasillo ilustrado; avisa al 3D con «cielo:tiempo».
+   ========================================================= */
+import * as C from './cielo.js';
+await window.MCready;
+const MC = window.MC, D = document, S = location.search;
+const forzado = C.tiempoPrueba(S);
+const leer = () => MC.stGet('personal.prefs.tiempo', null), escribir = (v) => MC.stSet('personal.prefs.tiempo', v);
+let datos = forzado || C.tiempoVigente(leer(), Date.now());
+const ahora = () => C.instantePrueba(S);
+const ICO = {
+  sol: '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/>',
+  luna: '<path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/>',
+  nubes: '<path d="M7 18h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.2 11 3.5 3.5 0 0 0 7 18z"/>',
+  lluvia: '<path d="M7 14h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.2 7 3.5 3.5 0 0 0 7 14z"/><path d="M8 17l-1 3M12 17l-1 3M16 17l-1 3"/>',
+  nieve: '<path d="M7 13h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.2 6 3.5 3.5 0 0 0 7 13z"/><path d="M8 17v.01M12 19v.01M16 17v.01M10 21v.01M14 21v.01"/>',
+  niebla: '<path d="M4 9h16M3 13h18M5 17h14"/>',
+  tormenta: '<path d="M7 13h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.2 6 3.5 3.5 0 0 0 7 13z"/><path d="M12.5 14l-2 4h3l-2 4"/>'
+};
+const icono = (e) => {
+  const w = e.tiempo, k = w.tormenta ? 'tormenta' : w.tipo === 'lluvia' || w.tipo === 'llovizna' ? 'lluvia' : w.tipo === 'nieve' ? 'nieve' : w.tipo === 'niebla' ? 'niebla' : w.nubes > 0.75 ? 'nubes' : e.sol.alt > -0.8 ? 'sol' : 'luna';
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICO[k] + '</svg>';
+};
+function frasesSol(e) {
+  const t = +e.fecha, h = e.horas;
+  if (h.salida && t < +h.salida) return 'sale el sol a las ' + C.hhmm(h.salida);
+  if (h.puesta && t < +h.puesta) return 'se pone el sol a las ' + C.hhmm(h.puesta);
+  const m = C.horasSol(new Date(t + 864e5)); return 'mañana sale a las ' + C.hhmm(m.salida);
+}
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function linea(e) {
+  const txt = C.lineaTiempo(datos, e.tiempo), sol = frasesSol(e);
+  const htmlL = icono(e) + '<span>' + esc(txt) + '</span><span class="sol"> · ' + esc(sol) + '</span>';
+  const l = D.getElementById('cieloLinea'); if (l) { l.innerHTML = htmlL; l.hidden = false; l.title = txt + ', ' + sol; }
+  const c = D.getElementById('fventanaCap'); if (c) { c.innerHTML = htmlL; c.hidden = false; }
+}
+
+/* ---------- la ventana del pasillo ilustrado: el mismo cielo, en SVG ---------- */
+const mix = (a, b, t) => a.map((v, i) => v + (b[i] - v) * t);
+const hx = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
+const rnd = (s) => () => (s = (s * 16807) % 2147483647) / 2147483647;
+function ventana2d(e) {
+  const box = D.getElementById('fventana'); if (!box) return;
+  const P = e.paleta, T = e.temporada, W = e.tiempo, Wd = 1000, Hh = 260, HY = 196, KY = 9, A0 = 108, A1 = 252;
+  const X = (az) => (az - A0) / (A1 - A0) * Wd, Y = (el) => HY - el * KY;
+  const luz = (alb, k) => alb.map((v, i) => Math.min(1, v * (P.amb[i] * P.ambI * 0.6 + P.sol[i] * P.luz * k * 0.55 + 0.04)));
+  const haze = mix(P.hor, P.niebla, 0.5);
+  const capa = (alb, k, h) => C.aHex(mix(luz(alb, k), haze, Math.min(1, h * (0.6 + 0.4 * P.luz) + W.niebla * 0.6)));
+  box.style.setProperty('--fz', C.aHex(P.zen)); box.style.setProperty('--fh', C.aHex(mix(P.hor, P.zen, 0.15)));
+  const flat = D.getElementById('flat'); if (flat) flat.style.setProperty('--fsun', 'rgba(' + P.sol.map((v) => Math.round(v * 255)).join(',') + ',' + (0.06 + 0.2 * P.luz).toFixed(2) + ')');
+  const r = rnd(7); let s = '';
+  /* estrellas */
+  const est = P.noche * (1 - W.nubes) * (1 - W.niebla);
+  if (est > 0.05) for (let i = 0; i < 70; i++) s += '<circle cx="' + (r() * Wd).toFixed(0) + '" cy="' + (r() * 150).toFixed(0) + '" r="' + (0.6 + r() * 1.2).toFixed(1) + '" fill="#fff" opacity="' + (est * (0.3 + r() * 0.7)).toFixed(2) + '"/>';
+  /* sol o luna (la altura se limita para que quepa en la ventana) */
+  const astro = (az, alt, rr, fill, glow) => { if (az < A0 - 10 || az > A1 + 10 || alt < -4) return ''; const cy = Y(Math.min(alt, 14)); return '<circle cx="' + X(az).toFixed(0) + '" cy="' + cy.toFixed(0) + '" r="' + rr * 4 + '" fill="' + glow + '" opacity=".35" filter="url(#fvB)"/><circle cx="' + X(az).toFixed(0) + '" cy="' + cy.toFixed(0) + '" r="' + rr + '" fill="' + fill + '"/>'; };
+  if (W.nubes < 0.9) s += astro(e.sol.az, e.sol.alt, 16, C.aHex(mix(P.sol, [1, 1, 1], 0.5)), C.aHex(P.sol));
+  if (e.luna.alt > -2 && e.sol.alt < 2 && W.nubes < 0.9) s += astro(e.luna.az, e.luna.alt, 11, '#f3efe2', '#9fb0d8');
+  /* montes con perspectiva atmosférica: cuanto más lejos, más claros y azulados */
+  const ridge = (capaN, fill) => { let d = 'M0 ' + Hh; for (let x = 0; x <= Wd; x += 8) { const az = A0 + x / Wd * (A1 - A0); d += ' L' + x + ' ' + Y(C.perfil(capaN, az)).toFixed(1); } return '<path d="' + d + ' L' + Wd + ' ' + Hh + 'Z" fill="' + fill + '"/>'; };
+  const roca = hx('#7a8296'), campo = T.campo, nieve = T.nieve > 0;
+  s += '<defs><filter id="fvB" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter><filter id="fvN"><feGaussianBlur stdDeviation="14"/></filter>' +
+    '<linearGradient id="fvS1" gradientUnits="userSpaceOnUse" x1="0" y1="' + Y(10) + '" x2="0" y2="' + HY + '"><stop offset="0" stop-color="' + capa([.95, .96, 1], 1, .35) + '"/><stop offset="' + (nieve ? 0.42 : 0) + '" stop-color="' + capa([.95, .96, 1], 1, .35) + '"/><stop offset="' + (nieve ? 0.48 : 0) + '" stop-color="' + capa(roca, .8, .6) + '"/><stop offset="1" stop-color="' + capa(roca, .8, .6) + '"/></linearGradient>' +
+    '<linearGradient id="fvS2" gradientUnits="userSpaceOnUse" x1="0" y1="' + Y(9) + '" x2="0" y2="' + HY + '"><stop offset="0" stop-color="' + capa([.93, .94, .98], 1, .2) + '"/><stop offset="' + (T.nieve > 0.6 ? 0.45 : 0) + '" stop-color="' + capa([.93, .94, .98], 1, .2) + '"/><stop offset="' + (T.nieve > 0.6 ? 0.52 : 0) + '" stop-color="' + capa(mix(roca, campo, .45), .85, .38) + '"/><stop offset="1" stop-color="' + capa(mix(roca, campo, .45), .85, .38) + '"/></linearGradient></defs>';
+  s += ridge('lejos', nieve ? 'url(#fvS1)' : capa(roca, .8, .6)) + ridge('medio', T.nieve > 0.6 ? 'url(#fvS2)' : capa(mix(roca, campo, .45), .85, .38));
+  const mol = capa([.9, .9, .9], 1, .35);
+  C.molinos().forEach(([az, h]) => { if (az < A0 || az > A1) return; const x = X(az), y = Y(h); s += '<path d="M' + x.toFixed(1) + ' ' + y.toFixed(1) + 'v-12m0 0l-6 4m6-4l5 4m-5-4l1-8" stroke="' + mol + '" stroke-width="1.2" fill="none"/>'; });
+  s += ridge('cerca', capa(campo, .9, .16));
+  /* la ciudad: tejados y luces que se encienden al anochecer */
+  const casas = capa(hx('#5b4c44'), .8, .08), on = Math.max(0, Math.min(1, (P.noche - 0.05) * 1.6 + W.nubes * 0.2 * (P.luz < 0.4)));
+  let cx = 0; const rr = rnd(3);
+  const teja = capa(hx('#b0553a'), .9, .06), casas2 = capa(hx('#c8b6a0'), .9, .06);
+  while (cx < Wd) { const bw = 14 + rr() * 30, bh = 10 + rr() * 26 + (cx > 380 && cx < 470 ? 18 : 0), y0 = Hh - 36 - bh; s += '<rect x="' + cx.toFixed(0) + '" y="' + y0.toFixed(0) + '" width="' + bw.toFixed(0) + '" height="' + (bh + 40).toFixed(0) + '" fill="' + (rr() < 0.5 ? casas : casas2) + '"/>';
+    if (rr() < 0.6) s += '<path d="M' + (cx - 1).toFixed(0) + ' ' + y0.toFixed(0) + 'l' + (bw / 2 + 1).toFixed(0) + ' -' + (bw * 0.3).toFixed(0) + 'l' + (bw / 2 + 1).toFixed(0) + ' ' + (bw * 0.3).toFixed(0) + 'z" fill="' + teja + '"/>';
+    for (let k = 0; k < bh / 8; k++) if (rr() < on * 0.6) s += '<rect x="' + (cx + 3 + rr() * (bw - 7)).toFixed(0) + '" y="' + (Hh - 34 - bh + k * 7).toFixed(0) + '" width="3" height="3.5" fill="#ffcf7a"/>';
+    cx += bw + 1; }
+  s += '<rect x="420" y="' + (Hh - 92) + '" width="12" height="50" fill="' + casas + '"/><path d="M417 ' + (Hh - 92) + 'l9-16 9 16z" fill="' + casas + '"/><rect x="452" y="' + (Hh - 88) + '" width="11" height="46" fill="' + casas + '"/><path d="M449 ' + (Hh - 88) + 'l8.5-15 8.5 15z" fill="' + casas + '"/>';
+  /* nubes */
+  const nC = Math.round(W.nubes * 14), lit = C.aHex(mix(mix(P.hor, [1, 1, 1], 0.35), P.sol, 0.25 * P.luz)), dark = C.aHex(mix(P.zen, P.amb, 0.5));
+  const rc = rnd(11);
+  for (let i = 0; i < nC; i++) { const x = rc() * Wd, y = 20 + rc() * 110, w = 90 + rc() * 160; s += '<ellipse cx="' + x.toFixed(0) + '" cy="' + (y + 10).toFixed(0) + '" rx="' + w.toFixed(0) + '" ry="' + (w * 0.22).toFixed(0) + '" fill="' + dark + '" opacity=".55" filter="url(#fvN)"/><ellipse cx="' + (x - 8).toFixed(0) + '" cy="' + y.toFixed(0) + '" rx="' + (w * 0.8).toFixed(0) + '" ry="' + (w * 0.2).toFixed(0) + '" fill="' + lit + '" opacity="' + (0.35 + 0.4 * P.luz).toFixed(2) + '" filter="url(#fvN)"/>'; }
+  if (W.nubes > 0.85) s += '<rect width="' + Wd + '" height="' + Hh + '" fill="' + C.aHex(P.niebla) + '" opacity=".22"/>';
+  if (W.niebla > 0) s += '<rect width="' + Wd + '" height="' + Hh + '" fill="' + C.aHex(mix(P.niebla, [1, 1, 1], 0.2)) + '" opacity="' + (0.55 * W.niebla).toFixed(2) + '"/>';
+  /* lluvia y nieve: un estado estático (aquí no se anima) */
+  if (W.tipo === 'lluvia' || W.tipo === 'llovizna') { const n = Math.round(60 + 160 * W.intensidad), rl = rnd(5); for (let i = 0; i < n; i++) { const x = rl() * Wd, y = rl() * Hh, l = 10 + rl() * 16; s += '<path d="M' + x.toFixed(0) + ' ' + y.toFixed(0) + 'l-3 ' + l.toFixed(0) + '" stroke="#dfe8f2" stroke-width="1" opacity="' + (0.25 + rl() * 0.35).toFixed(2) + '"/>'; } }
+  if (W.tipo === 'nieve') { const n = Math.round(60 + 140 * W.intensidad), rl = rnd(9); for (let i = 0; i < n; i++) s += '<circle cx="' + (rl() * Wd).toFixed(0) + '" cy="' + (rl() * Hh).toFixed(0) + '" r="' + (1 + rl() * 2.2).toFixed(1) + '" fill="#fff" opacity="' + (0.5 + rl() * 0.5).toFixed(2) + '"/>'; }
+  /* reflejo del cristal */
+  s += '<path d="M0 0H260L60 ' + Hh + 'H0Z" fill="#fff" opacity=".05"/>';
+  box.innerHTML = '<svg viewBox="0 0 ' + Wd + ' ' + Hh + '" preserveAspectRatio="xMidYMid slice">' + s + '</svg>';
+  const em = D.querySelector('#fhallT em'), hh = C.relojLocal(e.fecha).h;
+  if (em) em.textContent = e.sol.alt < -6 ? 'de noche.' : e.sol.alt < 2 && hh < 12 ? 'al amanecer.' : e.sol.alt < 2 ? 'al anochecer.' : hh < 12 ? 'por la mañana.' : hh < 15 ? 'a mediodía.' : 'por la tarde.';
+}
+
+function pintar() { const e = C.estadoCielo(ahora(), datos); linea(e); ventana2d(e); return e; }
+function avisar() { window.__cieloTiempo = datos; window.dispatchEvent(new CustomEvent('cielo:tiempo', { detail: datos })); }
+pintar(); avisar();
+async function consultar() {
+  if (forzado || D.hidden) return;
+  const r = await C.obtenerTiempo({ leer, escribir, fetch: (u, o) => fetch(u, o) });
+  if (JSON.stringify(r.datos) !== JSON.stringify(datos)) { datos = r.datos; pintar(); avisar(); }
+}
+consultar();
+setInterval(() => { pintar(); window.dispatchEvent(new CustomEvent('cielo:reloj')); }, 60000);
+setInterval(consultar, C.ESPERA_TIEMPO + 5000);
+D.addEventListener('visibilitychange', () => { if (!D.hidden) { pintar(); consultar(); } });
 </script>
 
 <script src="../assets/sw-register.js" defer></script>
