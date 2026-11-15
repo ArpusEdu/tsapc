@@ -1,132 +1,87 @@
-/* Enfoque · la bienvenida: la guía (#/guia) y la llegada (#/llegada). Sin capa: gana a las piezas sin !important.
-   Solo tokens --c-* y del sistema. Movimiento: solo transform y opacity, con las curvas del sistema. */
+/* Enfoque · la bienvenida: la guía (#/guia), que es un recorrido sobre la app de verdad, y la llegada (#/llegada).
+   Sin capa: gana a las piezas sin !important. Solo tokens del sistema.
+   Movimiento: solo transform y opacity (y el desenfoque de 2,6 px como mucho que aprueba marca.md), con las curvas del sistema. */
 
-/* mientras se ve la guía, la barra inferior se aparta: los mandos de la guía van abajo, al alcance del pulgar */
-html.en-guia .barra-inferior{display:none}
-html.en-guia body{padding-bottom:0}
+/* ================= el recorrido =================
+   Un velo oscurece la app y deja un hueco iluminado alrededor de lo que se explica: el campo del microscopio.
+   El borde del hueco es luz de condensador y lleva la muesca del anillo de la marca. La tarjeta es una hoja del cuaderno
+   con su etiqueta de portaobjetos; su anillo, partido en un tramo por paso, dice por dónde vas. */
+html.en-recorrido .barra-inferior{display:none}
+/* aire al final de la página: así cualquier cosa puede subir hasta arriba y dejar sitio a la tarjeta debajo */
+html.en-recorrido body{padding-bottom:75vh}
+.rc-espera{min-height:50vh}
 
-.guia{display:grid;grid-template-rows:auto 1fr auto;gap:var(--e-4);min-height:calc(100vh - 110px);min-height:calc(100dvh - 110px)}
-.guia-cab{display:flex;align-items:center;justify-content:space-between;gap:var(--e-3)}
-.guia-nombre{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-size:var(--t-lg);font-weight:600;color:var(--c-tinta-2)}
-.guia-nombre em{font-style:italic;font-weight:500}
-.guia-saltar{min-height:var(--toque);margin-right:calc(-1 * var(--e-2));--b-texto:var(--c-boli)}
+.rc{position:fixed;inset:0;z-index:var(--z-dialogo);pointer-events:none;
+  --rc-velo:color-mix(in srgb,var(--e-hema-950) 66%,transparent);--rc-luz:var(--e-luz)}
+[data-theme="noche"] .rc{--rc-velo:color-mix(in srgb,#05040e 74%,transparent)}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="papel"]) .rc{--rc-velo:color-mix(in srgb,#05040e 74%,transparent)} }
+.rc[hidden]{display:none}
+.rc-velo{position:absolute;inset:0;width:100%;height:100%;overflow:visible;view-transition-name:rc-velo}
+.rc-sombra{fill:var(--rc-velo)}
+.rc-hueco,.rc-halo,.rc-borde{transform-box:fill-box;transform-origin:0 0}
+.rc-halo{stroke:var(--rc-luz);stroke-width:12;opacity:.2}
+.rc-borde{stroke:var(--rc-luz);stroke-width:2.5;stroke-linecap:round}
+/* en un paso de «hazlo tú», la luz late despacio sobre lo que hay que tocar */
+.rc.con-haz .rc-halo{animation:rc-late 1.9s ease-in-out infinite}
+@keyframes rc-late{50%{opacity:.5}}
+/* en el cierre no hay hueco: el campo se cierra */
+.rc.sin-hueco .rc-hueco,.rc.sin-hueco .rc-halo,.rc.sin-hueco .rc-borde{opacity:0}
 
-/* la zona que se desliza: el gesto horizontal es nuestro, el vertical sigue siendo scroll */
-.guia-zona{touch-action:pan-y;min-width:0}
-.guia-pagina{display:grid;gap:var(--e-4);align-content:start;max-width:var(--ancho-lectura);min-width:0}
-.guia-pag-cab{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--e-3);min-height:72px}
-.guia-peg{width:72px;height:72px;transform:rotate(-6deg)}
-.guia-folio{color:var(--c-tinta-3);font-size:22px}
-.guia-pagina h1{font-size:var(--t-2xl);line-height:var(--lh-titulo);hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
-.guia-pagina h1:focus{outline:none}   /* como el resto de títulos de la app: el foco llega aquí para leerlo, no para pulsarlo */
-.guia-pagina p,.guia-pagina li{font-size:var(--t-base);line-height:var(--lh-texto)}
-.guia-entrada{font-size:var(--t-lectura)}
-.guia-pagina p.guia-entrada{font-size:var(--t-lectura);line-height:var(--lh-lectura)}
-.guia-consejo{transform:rotate(-1.5deg);justify-self:start}
+/* la tarjeta: se coloca con transform (arriba o abajo del hueco, nunca encima) */
+.rc-tarjeta{position:absolute;left:0;top:0;width:min(400px,calc(100vw - 24px));pointer-events:auto;view-transition-name:rc-tarjeta}
+.rc-in{position:relative;display:grid;gap:10px;padding:12px 16px 12px;color:var(--c-tinta);background:var(--c-hoja);
+  border:1.5px solid var(--c-linea-suave);border-radius:16px;box-shadow:var(--sombra-hoja)}
+.rc-flecha{position:absolute;left:var(--fx,50%);width:16px;height:16px;margin-left:-8px;background:var(--c-hoja);border:1.5px solid var(--c-linea-suave);transform:rotate(45deg)}
+[data-pos="abajo"] .rc-flecha{top:-9px;border-right:0;border-bottom:0;border-top-left-radius:3px}
+[data-pos="arriba"] .rc-flecha{bottom:-9px;border-left:0;border-top:0;border-bottom-right-radius:3px}
+[data-pos="centro"] .rc-flecha{display:none}
 
-/* mapa de secciones (página 1) y listas con icono (última) */
-.guia-mapa,.guia-lista{display:grid;gap:var(--e-2);margin:0;padding:0;list-style:none}
-.guia-mapa li,.guia-lista li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:var(--e-3);align-items:start;padding:var(--e-2) 0;border-bottom:1.5px dashed var(--c-linea-suave)}
-.guia-mapa .ico,.guia-lista .ico{width:24px;height:24px;margin-top:1px;color:var(--asig-texto)}
-.guia-lista a{color:var(--c-boli);font-weight:700;text-underline-offset:.2em;display:inline-block;min-height:24px}
+.rc-cab{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:10px}
+/* el ocular: el símbolo de Enfoque con su anillo partido en pasos */
+.rc-ocular{position:relative;width:44px;height:44px;color:var(--c-anillo-logo)}
+.rc-ocular svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.rc-simbolo .e-anillo{display:none}
+.rc-simbolo .e-muestra{transform-box:view-box;transform-origin:24px 24px}
+.rc-anillo path{fill:none;stroke:currentColor;stroke-width:4;opacity:.2}
+.rc-anillo path.hecho{opacity:1}
+.rc-anillo path.ahora{opacity:1;stroke:var(--c-eosina)}
+.rc-giro{transform-box:view-box;transform-origin:24px 24px}
+/* la etiqueta esmerilada del portaobjetos: igual de día y de noche, como el vidrio */
+.rc-porta{justify-self:start;display:grid;gap:1px;min-width:0;padding:5px 10px 5px 9px;border-radius:5px;color:var(--e-hema-900);background:var(--e-vidrio);
+  box-shadow:inset 0 0 0 1px var(--e-vidrio-canto),0 8px 16px -12px rgba(0,0,0,.5)}
+.rc-cod{font:700 var(--t-sm)/1.1 var(--f-mono);letter-spacing:.02em}
+.rc-zona{font:500 var(--t-min)/1.25 var(--f-mono);overflow-wrap:anywhere}
+.rc-saltar{min-height:44px;padding:0 10px;margin-right:-6px;--b-texto:var(--c-boli)}
 
-/* los cinco momentos: la lista numerada a mano del sistema */
-.guia-momentos>li{grid-template-columns:36px minmax(0,1fr)}
+#rcT{margin:2px 0 0;font-family:var(--f-titulo);font-variation-settings:var(--suave);font-size:var(--t-xl);font-weight:600;line-height:var(--lh-titulo);letter-spacing:-.01em;text-wrap:balance}
+#rcT em{font-style:italic;font-weight:500;color:var(--c-eosina)}
+#rcT:focus{outline:none}
+.rc-c{display:grid;gap:8px}
+.rc-c p,.rc-c li{font-size:var(--t-base);line-height:var(--lh-texto);color:var(--c-tinta-2)}
+.rc-c b{color:var(--c-tinta)}
+.rc-momentos{display:grid;gap:3px;margin:0;padding:0;list-style:none;counter-reset:m}
+.rc-momentos li{counter-increment:m;display:grid;grid-template-columns:2em minmax(0,1fr);align-items:baseline}
+.rc-momentos li::before{content:"0" counter(m);font:700 var(--t-sm)/1 var(--f-mono);color:var(--c-eosina)}
+.rc-c .rc-mano{justify-self:start;font-family:var(--f-mano);font-size:var(--t-mano);line-height:1.15;color:var(--c-tinta-2);transform:rotate(-1.2deg)}
+/* lo que hay que hacer en un paso de «hazlo tú» */
+.rc-haz{display:flex;gap:8px;align-items:flex-start;padding:8px 10px;border-radius:10px;background:var(--c-hoja-2);box-shadow:inset 3px 0 0 var(--c-eosina);font-size:var(--t-sm);font-weight:700;line-height:1.35;color:var(--c-tinta)}
+.rc-haz .ico{flex:none;width:18px;height:18px;margin-top:1px;color:var(--c-eosina)}
 
-/* herramientas de la unidad */
-.guia-herramientas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,128px),1fr));gap:var(--e-2);margin:0;padding:0;list-style:none}
-.guia-herramientas li{display:grid;gap:2px;padding:var(--e-3);border:1.5px solid var(--c-linea-suave);border-radius:var(--r-mano);background:var(--c-tarjeta)}
-.guia-herramientas b{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-size:var(--t-lg);color:var(--asig-texto)}
-.guia-herramientas span{font-size:var(--t-sm);color:var(--c-tinta-2)}
-
-/* ---------- las pruebas que se tocan ---------- */
-.guia-demo{position:relative;margin-top:var(--e-2);display:grid;gap:var(--e-3);padding:var(--e-5) var(--e-4) var(--e-4);border:1.5px dashed var(--asig-borde);border-radius:14px;background:var(--c-tarjeta)}
-.guia-demo-etq{position:absolute;top:-12px;left:14px;padding:2px 8px;border-radius:4px;background:var(--c-hoja);border:1px solid var(--asig-borde);font:700 var(--t-min)/1.3 var(--f-mono);letter-spacing:.04em;color:var(--asig-texto)}
-.guia-demo-pie{font-size:var(--t-sm);color:var(--c-tinta-2)}
-.guia-pagina .guia-demo-pie{font-size:var(--t-sm)}
-.guia-demo .tarea .titulo{font-size:20px}
-
-/* tapar y destapar: una nota adhesiva encima de la respuesta */
-.guia-preg{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:600}
-.guia-pagina .guia-preg{font-size:var(--t-lg);line-height:var(--lh-titulo)}
-.guia-caja{position:relative;min-height:104px;display:grid;align-items:center}
-.guia-resp{padding:var(--e-3) var(--e-4);border-radius:var(--r-2);background:var(--c-hoja-2);font-size:var(--t-lectura);line-height:var(--lh-texto)}
-.guia-resp:focus{outline:none}
-.guia-tapar.destapada .guia-resp{background:linear-gradient(100deg,transparent 0 1%,var(--c-fluor) 2% 97%,transparent 99%)}
-.guia-tapa{position:absolute;inset:-4px -6px;display:grid;align-content:center;justify-items:start;gap:4px;padding:var(--e-3) var(--e-4);
-  background:var(--nota-amarilla);color:var(--fijo-tinta);border:0;border-radius:var(--r-nota);box-shadow:var(--sombra-nota);text-align:left;cursor:pointer;
-  transform:rotate(-1.4deg);transition:transform var(--d-rapida) var(--ease-salida)}
-.guia-tapa::before{content:"";position:absolute;top:-10px;left:50%;width:78px;height:22px;transform:translateX(-50%) rotate(3deg);opacity:.9;
-  background-color:var(--s-tinte);background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.35) 0 6px,transparent 6px 12px)}
-.guia-tapa .mano{font-family:var(--f-mano);font-style:normal;font-weight:600;color:var(--fijo-tinta);font-size:23px;line-height:1.1}
-.guia-tapa-acc{font-size:var(--t-sm);font-weight:700;color:var(--fijo-tinta-2)}
-@media (hover:hover){ .guia-tapa:hover{transform:rotate(-.6deg) translateY(-2px)} }
-.guia-tapa:active{transform:rotate(-.6deg) scale(.985)}
-.guia-tapa:focus-visible{outline:2.5px solid var(--c-foco);outline-offset:4px}
-.guia-retapar{justify-self:start;min-height:var(--toque)}
-
-/* la ficha que se gira: papel de verdad, igual de día y de noche */
-.guia-ficha{display:grid;gap:var(--e-3);width:100%;min-height:172px;padding:var(--e-4) var(--e-4) var(--e-4);text-align:left;border:0;border-radius:var(--r-2);cursor:pointer;
-  color:var(--fijo-tinta);background:var(--fijo-papel) repeating-linear-gradient(transparent 0 27px,rgba(40,70,168,.16) 27px 28px);background-position:0 40px;
-  box-shadow:var(--sombra-hoja);transform:rotate(-.6deg);transition:transform var(--d-rapida) var(--ease-salida)}
-.guia-ficha.girada{transform:rotate(.5deg);background-color:#fffdf6}
-.guia-ficha-meta{font-size:var(--t-min);font-weight:700;letter-spacing:var(--tr-versal);text-transform:uppercase;color:var(--fijo-tinta-2)}
-.guia-ficha-txt{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-size:var(--t-lg);font-weight:600;line-height:1.3}
-.guia-ficha.girada .guia-ficha-txt{font-family:var(--f-texto);font-weight:400;font-size:var(--t-base);line-height:var(--lh-texto)}
-.guia-ficha-acc{display:inline-flex;align-items:center;gap:6px;font-size:var(--t-sm);font-weight:700;color:#2846a8}
-.guia-ficha-acc .ico{width:18px;height:18px}
-.guia-ficha:focus-visible{outline:2.5px solid var(--c-foco);outline-offset:4px}
-.guia-ficha:active{transform:rotate(-.6deg) scale(.985)}
-
-.guia-nota{justify-self:start;max-width:30ch}
-.guia-insignias{display:flex;flex-wrap:wrap;gap:var(--e-2)}
-
-/* última página: la acción útil y la de explorar */
-.guia-final{display:flex;flex-wrap:wrap;gap:var(--e-3);margin-top:var(--e-2)}
-.guia-final .boton{flex:1 1 220px}
-.guia-final .guia-centro{flex:1 1 100%;--b-texto:var(--c-boli)}
-
-/* ---------- los mandos: abajo, pegados al pulgar ---------- */
-.guia-nav{position:sticky;bottom:0;z-index:2;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:var(--e-3);
-  margin:0 calc(-1 * var(--e-4)) -34px calc(-1 * (var(--margen-hoja) + 8px));padding:var(--e-3) var(--e-4) max(var(--e-3),env(safe-area-inset-bottom)) calc(var(--margen-hoja) + 8px);
-  background:var(--c-hoja);border-top:1.5px dashed var(--c-linea-suave);border-radius:0 0 10px 4px}
-.guia-ant,.guia-sig{min-height:48px}
-.guia-sig[hidden]{display:inline-flex;visibility:hidden}
-.guia-cuenta{display:grid;justify-items:center;gap:6px;min-width:0;font-size:var(--t-sm);color:var(--c-tinta-2)}
-.guia-cuenta b{color:var(--c-tinta)}
-.guia-puntos{display:flex;gap:6px;margin:0;padding:0;list-style:none}
-.guia-puntos li{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--c-tinta-3)}
-.guia-puntos li.es-vista{background:var(--c-tinta-3)}
-.guia-puntos li.es-actual{background:var(--c-tinta);border-color:var(--c-tinta);transform:scale(1.25)}
-@media (max-width:420px){
-  .guia-ant{width:48px;padding:0;border-radius:50%}
-  .guia-ant .guia-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-  .guia-sig{padding:0 var(--e-4)}
-  .guia-nav{gap:var(--e-2)}
-  .guia-puntos{gap:3px}
-  .guia-puntos li{width:6px;height:6px}
-  .guia-cuenta{white-space:nowrap}
-}
-@media (min-width:760px){
-  .guia-nav{margin:0 -44px -50px calc(-1 * (var(--margen-hoja) + 17px));padding:var(--e-4) 44px max(var(--e-4),env(safe-area-inset-bottom)) calc(var(--margen-hoja) + 17px)}
-  .guia-peg{width:88px;height:88px}
-}
+.rc-pie{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:10px;margin-top:2px;padding-top:10px;border-top:1.5px dashed var(--c-linea-suave)}
+.rc-ant,.rc-sig,.rc-final .boton{min-height:48px}
+.rc-ant{width:48px;padding:0;justify-content:center;border-radius:50%}
+.rc-ant .rc-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.rc-n{justify-self:center;font-size:var(--t-sm);color:var(--c-tinta-2);white-space:nowrap}
+.rc-n b{color:var(--c-tinta)}
+.rc-sig{padding:0 var(--e-4)}
+.rc-pie-fin{grid-template-columns:auto minmax(0,1fr);align-items:start}
+.rc-final{display:flex;flex-wrap:wrap;gap:8px}
+.rc-final .boton{flex:1 1 180px}
+@media (prefers-reduced-motion:reduce){ .rc.con-haz .rc-halo{animation:none;opacity:.4} }
 
 /* enlaces discretos para volver a verla (Hoy y Mi mesa) */
 .guia-pie{margin-top:var(--e-6);text-align:center;font-size:var(--t-sm);color:var(--c-tinta-2)}
 .guia-pie a{display:inline-flex;align-items:center;gap:6px;min-height:var(--toque);padding:0 var(--e-2);color:var(--c-boli);font-weight:700;text-underline-offset:.2em}
-
-@media (prefers-reduced-motion:reduce){
-  .guia-tapa,.guia-ficha{transition:none}
-}
-
-/* ================= Enfoque · la guía con etiqueta de portaobjetos ================= */
-.guia-pag-cab{min-height:0;align-items:center}
-.guia-porta{display:inline-grid;grid-template-columns:auto auto;align-items:baseline;gap:var(--e-3);padding:7px 12px 7px 10px;border-radius:5px;color:var(--e-hema-900);background:var(--s-tinte);
-  box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--e-vidrio-canto) 70%,transparent),0 8px 16px -12px rgba(0,0,0,.5)}
-.guia-porta .porta-cod{font:700 var(--t-sm)/1.1 var(--f-mono)}
-.guia-porta .porta-diap{font:500 var(--t-min)/1.2 var(--f-mono);white-space:nowrap}
-.guia-consejo.lapiz{font-size:var(--t-mano)}
 
 /* ================= Enfoque · la pantalla de llegada (#/llegada) =================
    Responde en un vistazo: qué es (logo + lema + una frase), dónde estás (la línea mono) y qué haces (tres pasos y un botón).

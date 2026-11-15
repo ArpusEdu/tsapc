@@ -616,7 +616,7 @@
       '<div><h3>Android (Chrome)</h3><ol><li>Abre esta página en Chrome.</li><li>Toca el menú <b>⋮</b> de arriba a la derecha.</li><li>Elige <b>Instalar aplicación</b> o <b>Añadir a pantalla de inicio</b>.</li></ol></div>' +
       '<div><h3>Ordenador (Chrome o Edge)</h3><ol><li>En la barra de direcciones, pulsa el icono de instalar.</li><li>Confirma con <b>Instalar</b>.</li></ol></div></div>' +
       '<p class="sub">Después de la primera visita funciona sin conexión.</p></section>' +
-      (G ? '<section aria-labelledby="hGu"><h2 id="hGu">La guía</h2><p class="sub">Todo lo que hay en Enfoque y cómo se usa, en ocho páginas.</p><p><a class="boton secundario" href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p></section>" : "") +
+      (G ? '<section aria-labelledby="hGu"><h2 id="hGu">La guía</h2><p class="sub">Un recorrido por la app de verdad, en diez pasos: qué hay en cada pantalla y para qué sirve.</p><p><a class="boton secundario" href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p></section>" : "") +
       '<section aria-labelledby="hCr"><h2 id="hCr">Letras</h2><ul class="creditos"><li><b class="f-fraunces">Fraunces</b> · The Fraunces Project Authors (Undercase Type)</li><li><b>Atkinson Hyperlegible</b> · Braille Institute of America</li><li><b class="num">Atkinson Hyperlegible Mono</b> · The Atkinson Hyperlegible Mono Project Authors</li><li><b class="mano">Caveat</b> · The Caveat Project Authors</li></ul><p class="sub">Todas con licencia SIL Open Font License 1.1. <a href="../assets/corte/fuentes/OFL.txt">Leer la licencia</a>.</p></section>' +
       '<section aria-labelledby="hWe"><h2 id="hWe">La web de siempre</h2><p>La portada de antes sigue igual, con todos los repasos y simulacros.</p><p><a class="boton secundario" href="../">Ir a la portada de siempre</a></p></section>' +
       "</div>";
@@ -682,7 +682,13 @@
     pintar: function (q) { pintar(q); }, repintar: repintar }) : null;
   /* bienvenida (app/bienvenida.js): la primera vez, llegada → guía → Hoy; #/guia para volver a ver la guía */
   var MARCA = window.EnfoqueMarca || null;
-  var G = window.CorteGuia ? window.CorteGuia({ leer: leer, guardar: guardar, M: M, unidades: D.UNIDADES.length, logo: MARCA ? MARCA.logo : null, simbolo: MARCA ? MARCA.simbolo : null, sesionHoy: function () { return SS && SS.sesionHoy ? SS.sesionHoy() : null; } }) : null;
+  var G = window.CorteGuia ? window.CorteGuia({ leer: leer, guardar: guardar, M: M, unidades: D.UNIDADES.length, logo: MARCA ? MARCA.logo : null, simbolo: MARCA ? MARCA.simbolo : null, sesionHoy: function () { return SS && SS.sesionHoy ? SS.sesionHoy() : null; }, unidadHoy: unidadHoy }) : null;
+  /* la unidad que la guía enseña: la de la sesión de hoy (o la primera con sesiones; si no hay, la primera) */
+  function unidadHoy() {
+    var h = SS && SS.sesionHoy ? SS.sesionHoy() : null, u = null;
+    if (SS && SS.unidadBloque) u = D.UNIDADES.filter(function (x) { var b = SS.unidadBloque(x.id); return h ? b.indexOf('href="' + h + '"') >= 0 : !!b; })[0];
+    return (u || D.UNIDADES[0]).id;
+  }
   function pGuia() { return G ? G.pantalla() : pNada(); }
   function pLlegada() { return G && G.llegada ? G.llegada() : pNada(); }
   /* ¿hay algo guardado ya? Entonces no es la primera vez */
