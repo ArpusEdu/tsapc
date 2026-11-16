@@ -1,21 +1,21 @@
 {
   "schema": 1,
   "unidad": "fisio1",
-  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Esta unidad va por entregas, así que la referencia es la entrega.",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Esta unidad va por entregas.",
   "preguntas": [
-    { "id": "p01", "n": 1, "diap": "Entrega 1", "tipo": "entender", "pregunta": "¿En cuál de los cinco niveles de organización trabajaremos más en anatomía patológica: el celular, el de tejido o el de órgano?", "porque": "Te sitúa desde el primer día en lo que vas a mirar en tu trabajo." },
-    { "id": "p02", "n": 10, "diap": "Entrega 1", "tipo": "laboratorio", "pregunta": "Al microscopio, ¿qué es lo primero que miro para saber si una célula es eucariota o procariota?", "porque": "Convierte la tabla de diferencias en algo que harás con los ojos." },
-    { "id": "p03", "n": 13, "diap": "Entrega 2", "tipo": "entender", "pregunta": "Si la matriz extracelular está fuera de las células, ¿por qué se dice que es tan importante para que un tejido funcione?", "porque": "Ayuda a no ver la matriz como «relleno» y prepara el tema de tejidos." },
-    { "id": "p04", "n": 17, "diap": "Entrega 2", "tipo": "entender", "pregunta": "¿Qué le pasa a la membrana de una célula si pierde fluidez? ¿Hay enfermedades relacionadas con eso?", "porque": "Une la teoría de la membrana con la patología." },
-    { "id": "p05", "n": 18, "diap": "Entrega 2", "tipo": "laboratorio", "pregunta": "El glucocálix, ¿se puede ver con alguna tinción de las que usaremos en el laboratorio?", "porque": "Conecta un concepto abstracto con las técnicas de tinción de tu ciclo." },
-    { "id": "p06", "n": 26, "diap": "Entrega 3", "tipo": "caso", "pregunta": "¿Qué ocurre en una célula cuando sus lisosomas no funcionan bien? ¿Hay enfermedades que se deban a eso?", "porque": "Pasa de «el lisosoma digiere» a ver qué pasa cuando falla." },
-    { "id": "p07", "n": 27, "diap": "Entrega 3", "tipo": "entender", "pregunta": "¿Por qué unas células tienen muchas más mitocondrias que otras? ¿Cuáles son las que más tienen?", "porque": "Relaciona la estructura con la función, la idea que más se repite en la unidad." },
-    { "id": "p08", "n": 29, "diap": "Entrega 3", "tipo": "examen", "pregunta": "¿Cuál es la manera más fácil de no confundir los tres tipos de filamentos del citoesqueleto?", "porque": "Son nombres que se mezclan con facilidad: una regla clara ayuda en el examen." },
-    { "id": "p09", "n": 35, "diap": "Entrega 4", "tipo": "laboratorio", "pregunta": "¿Por qué el núcleo se ve de otro color que el citoplasma en una tinción de hematoxilina y eosina?", "porque": "Es la base de casi todo lo que verás al microscopio en anatomía patológica." },
-    { "id": "p10", "n": 36, "diap": "Entrega 4", "tipo": "laboratorio", "pregunta": "Un nucléolo muy grande o muy visible, ¿puede indicar algo sobre cómo está la célula?", "porque": "Es un detalle que se mira en citología; preguntarlo te adelanta materia." },
-    { "id": "p11", "n": 42, "diap": "Entrega 5", "tipo": "entender", "pregunta": "Si el transporte activo gasta energía, ¿qué le pasa a la célula cuando se queda sin ella?", "porque": "Conecta la respiración celular con el transporte, que en clase van separados." },
-    { "id": "p12", "n": 44, "diap": "Entrega 5", "tipo": "caso", "pregunta": "¿Qué papel tienen las uniones celulares cuando un tumor empieza a extenderse a otros sitios?", "porque": "Une un tema de célula sana con lo que verás en patología." },
-    { "id": "p13", "n": 48, "diap": "Entrega 6", "tipo": "laboratorio", "pregunta": "En una preparación, ¿en qué fase de la mitosis es más fácil reconocer a la célula, y por qué?", "porque": "Ver mitosis al microscopio es algo que harás en el laboratorio." },
-    { "id": "p14", "n": 50, "diap": "Entrega 6", "tipo": "examen", "pregunta": "¿Cuál es la diferencia que más se pregunta entre mitosis y meiosis: el número de células, el de cromosomas o la variedad genética?", "porque": "Te dice dónde pone el foco la profe antes del examen." }
+    { "id": "p01", "n": 1, "diap": "Entrega 1", "tipo": "entender", "pregunta": "¿En qué nivel de organización trabajaremos más?", "porque": "Te sitúa desde el primer día." },
+    { "id": "p02", "n": 10, "diap": "Entrega 1", "tipo": "laboratorio", "pregunta": "¿Cómo sé al microscopio si una célula es procariota?", "porque": "La tabla, convertida en algo que harás." },
+    { "id": "p03", "n": 13, "diap": "Entrega 2", "tipo": "entender", "pregunta": "¿Por qué es tan importante la matriz extracelular?", "porque": "No es solo relleno." },
+    { "id": "p04", "n": 17, "diap": "Entrega 2", "tipo": "entender", "pregunta": "¿Qué pasa si la membrana pierde fluidez?", "porque": "De la membrana a la enfermedad." },
+    { "id": "p05", "n": 18, "diap": "Entrega 2", "tipo": "laboratorio", "pregunta": "¿El glucocálix se ve con alguna tinción?", "porque": "Une teoría y tinciones." },
+    { "id": "p06", "n": 26, "diap": "Entrega 3", "tipo": "caso", "pregunta": "¿Qué pasa cuando los lisosomas no funcionan?", "porque": "Ver qué ocurre cuando falla." },
+    { "id": "p07", "n": 27, "diap": "Entrega 3", "tipo": "entender", "pregunta": "¿Qué células tienen más mitocondrias y por qué?", "porque": "Estructura y función." },
+    { "id": "p08", "n": 29, "diap": "Entrega 3", "tipo": "examen", "pregunta": "¿Algún truco para los filamentos del citoesqueleto?", "porque": "Nombres que se mezclan." },
+    { "id": "p09", "n": 35, "diap": "Entrega 4", "tipo": "laboratorio", "pregunta": "¿Por qué el núcleo se tiñe distinto que el citoplasma?", "porque": "La base de lo que verás al microscopio." },
+    { "id": "p10", "n": 36, "diap": "Entrega 4", "tipo": "laboratorio", "pregunta": "¿Un nucléolo muy grande indica algo?", "porque": "Se mira en citología." },
+    { "id": "p11", "n": 42, "diap": "Entrega 5", "tipo": "entender", "pregunta": "¿Qué pasa si la célula se queda sin energía?", "porque": "Une respiración y transporte." },
+    { "id": "p12", "n": 44, "diap": "Entrega 5", "tipo": "caso", "pregunta": "¿Qué tienen que ver las uniones celulares con los tumores?", "porque": "De la célula sana a la patología." },
+    { "id": "p13", "n": 48, "diap": "Entrega 6", "tipo": "laboratorio", "pregunta": "¿Qué fase de la mitosis se reconoce mejor?", "porque": "Lo verás en el laboratorio." },
+    { "id": "p14", "n": 50, "diap": "Entrega 6", "tipo": "examen", "pregunta": "¿Qué diferencia entre mitosis y meiosis pregunta más?", "porque": "Dónde pone el foco la profe." }
   ]
 }

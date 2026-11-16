@@ -16,7 +16,9 @@ test("preguntas para clase: bien formadas y enlazadas a su concepto y diapositiv
     for (const q of j.preguntas) {
       assert.ok(!ids.has(q.id), "id repetido " + q.id); ids.add(q.id);
       assert.ok(["entender", "laboratorio", "caso", "examen"].includes(q.tipo), q.id + " tipo");
-      assert.ok(q.pregunta.endsWith("?") && q.porque.length > 20, q.id + " texto");
+      assert.ok(q.pregunta.startsWith("¿") && q.pregunta.endsWith("?"), q.id + " es una pregunta");
+      assert.ok(q.pregunta.length <= 70, q.id + ": pregunta corta, como se haría en clase (" + q.pregunta.length + ")");
+      assert.ok(q.porque.length >= 10 && q.porque.length <= 60, q.id + ": porqué breve");
       const k = conceptos[q.n - 1]; assert.ok(k, q.id + ": no existe el concepto " + q.n);
       const diaps = (k.fuente || "").match(/\d+/g) || [];
       for (const d of q.diap.match(/\d+/g)) assert.ok(diaps.includes(d), q.id + ": la diapositiva " + d + " no es del concepto " + q.n + " (" + k.fuente + ")");
