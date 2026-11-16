@@ -785,3 +785,19 @@ html.ss-foco .marca-cab{display:none}
 .ex-tj[open]{background:var(--fijo-papel);color:var(--fijo-tinta)}
 .ex-tj .rico{margin-top:var(--e-2);padding-bottom:var(--e-2)}
 .ex-pie{margin-top:var(--e-5);color:var(--c-tinta-2)}
+
+/* preguntas para hacer en clase (unidad) */
+.pp{margin-top:var(--e-6)}
+.pp-intro{color:var(--c-tinta-2);max-width:60ch}
+.pp-lista{margin:var(--e-4) 0 0;padding:0;list-style:none;display:grid;gap:var(--e-3)}
+.pp-item{padding:var(--e-4);border-radius:var(--r-2);background:var(--c-tarjeta);border:1.5px solid var(--c-linea-suave)}
+.pp-item.hecha{background:var(--c-ok-suave,var(--c-tarjeta))}
+.pp-item p{margin:0}
+.pp-k{font-size:var(--t-xs);font-weight:700;color:var(--c-tinta-2)}
+.pp-k a{color:inherit;display:inline-block;min-height:24px}
+.pp-tipo{text-transform:none}
+.pp-q{font-size:var(--t-lg);line-height:1.3;font-weight:700;margin-block:var(--e-1) var(--e-2)!important;color:var(--c-tinta)}
+.pp-por{color:var(--c-tinta-2);font-size:var(--t-sm)}
+.pp-boton{margin-top:var(--e-3)}
+.pp-lbl{display:block;margin-top:var(--e-3);font-weight:700;font-size:var(--t-sm)}
+.pp-item textarea{width:100%;margin-top:var(--e-1);padding:10px 12px;font:inherit;font-size:16px;color:var(--c-tinta);background:var(--c-hoja);border:1.5px solid var(--c-linea-suave);border-radius:var(--r-1)}

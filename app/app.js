@@ -522,6 +522,52 @@
   /* ================= UNIDAD ================= */
   /* lo que se escribe en la zona esmerilada: «Tema 3 · 2º examen» */
   function diapDe(u) { var t = String(u.tema || "").split(" · ")[0]; return t && t !== u.examen && t.length <= 14 ? t + " · " + u.examen : u.examen; }
+  /* ---------- preguntas para hacer en clase (app/profe/<u>.json): se marcan como hechas y se apunta la respuesta ---------- */
+  var PROFE = {}, PROFE_IDX = null, PROFE_CARGA = {};
+  var TIPO_PP = { entender: "Para entender", laboratorio: "Tu oficio en el laboratorio", caso: "Un caso real", examen: "Para el examen" };
+  function cargarProfe(clave, url, fin) {
+    if (PROFE_CARGA[clave]) return;
+    PROFE_CARGA[clave] = 1;
+    fetch(url, { credentials: "same-origin" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(fin).catch(function () { fin(null); })
+      .then(function () { if (/^#\/unidad\//.test(location.hash)) pintar(true); });
+  }
+  function preguntasProfe(u) {
+    if (PROFE_IDX === null) { cargarProfe("_idx", "profe/indice.json", function (j) { PROFE_IDX = j && Array.isArray(j.unidades) ? j.unidades : []; }); return null; }
+    if (PROFE_IDX.indexOf(u) < 0) return false;
+    if (!tiene(PROFE, u)) { cargarProfe(u, "profe/" + u + ".json", function (j) { PROFE[u] = j && Array.isArray(j.preguntas) ? j.preguntas : []; }); return null; }
+    return PROFE[u];
+  }
+  function profeEstado(u) { var o = leer(["personal", "preguntasProfe", u], {}); return o && typeof o === "object" ? o : {}; }
+  function preguntasProfeHTML(u) {
+    var l = preguntasProfe(u.id); if (!l || !l.length) return "";
+    var est = profeEstado(u.id), hechas = l.filter(function (q) { return est[q.id] && est[q.id].hecha; }).length;
+    return '<section class="pp" aria-labelledby="hPp"><div class="sec-cab"><h2 id="hPp">Para preguntar en clase</h2><span class="sec-nota">' + hechas + " de " + l.length + ' hechas</span></div>' +
+      '<p class="pp-intro">Preguntas para sacar más de cada clase. Salen de las diapositivas; no son de la profe. Cuando hagas una, márcala y apunta lo que te respondió.</p><ol class="pp-lista">' +
+      l.map(function (q) {
+        var e = est[q.id] || {}, on = !!e.hecha;
+        return '<li class="pp-item' + (on ? " hecha" : "") + '"><p class="pp-k"><span class="pp-tipo">' + esc(TIPO_PP[q.tipo] || q.tipo) + '</span> · <a href="../' + esc(u.id) + "/repaso/#c" + (+q.n) + '">diap. ' + esc(q.diap) + "</a></p>" +
+          '<p class="pp-q">' + esc(q.pregunta) + '</p><p class="pp-por">' + esc(q.porque) + "</p>" +
+          '<button type="button" class="boton secundario pp-boton" data-pp="' + esc(u.id) + ":" + esc(q.id) + '" aria-pressed="' + on + '">' + ico(on ? "check" : "info") + (on ? "La pregunté" : "Marcar como preguntada") + "</button>" +
+          (on ? '<label class="pp-lbl" for="pp-' + esc(q.id) + '">Lo que te respondió</label><textarea id="pp-' + esc(q.id) + '" rows="3" data-pp-nota="' + esc(u.id) + ":" + esc(q.id) + '" placeholder="Apúntalo con tus palabras.">' + esc(e.nota || "") + "</textarea>" : "") + "</li>";
+      }).join("") + "</ol></section>";
+  }
+  function profeMarcar(k) {
+    var p = k.split(":"), u = p[0], id = p[1]; if (!u || !id) return;
+    var o = profeEstado(u), e = o[id] && typeof o[id] === "object" ? o[id] : {};
+    if (e.hecha) delete e.hecha; else e.hecha = L.clave(ahora());
+    o[id] = e;
+    if (!guardar(["personal", "preguntasProfe", u], o)) { aviso("No se pudo guardar. Revisa el espacio del navegador.", "error"); return; }
+    aviso(e.hecha ? "Apuntada. Escribe debajo lo que te respondió." : "Desmarcada.");
+    pintar(false); var b = document.querySelector('[data-pp="' + k + '"]'); if (b) b.focus({ preventScroll: true });
+  }
+  var ppTm = null;
+  document.addEventListener("input", function (ev) {
+    var t = ev.target; if (!t || !t.getAttribute || !t.getAttribute("data-pp-nota")) return;
+    var p = t.getAttribute("data-pp-nota").split(":");
+    clearTimeout(ppTm); ppTm = setTimeout(function () { var o = profeEstado(p[0]), e = o[p[1]] && typeof o[p[1]] === "object" ? o[p[1]] : {}; e.nota = t.value.slice(0, 2000); o[p[1]] = e; guardar(["personal", "preguntasProfe", p[0]], o); }, 400);
+  });
+
   function pUnidad(id) {
     var u = D.unidad(id); if (!u) return pNada();
     var S1 = A[u.s], n = ahora(), pf = prof(u.s), p = progresoDe(u), ev = EVS.filter(function (e) { return e.unidad === u.id; })[0];
@@ -540,7 +586,7 @@
       '<section aria-labelledby="hEs"><div class="sec-cab"><h2 id="hEs">Para estudiar</h2><span class="sec-nota">empieza por el repaso</span></div><div class="notas-fila">' + notas + "</div>" +
       (ev && ev.nota ? '<div class="nota nota-ex"><span class="mano">' + esc(ev.titulo) + ". " + esc(ev.nota) + ".</span></div>" : "") +
       (mat.length ? '<h3 class="mat-tit">Material</h3><ul class="material">' + mat.map(function (m) { var pdf = /\.pdf$/i.test(m[1]); return '<li><a href="../' + esc(m[1]) + '">' + ico(pdf ? "descargar" : "abrir-fuera") + esc(m[0]) + (pdf ? ' <span class="tipo">PDF</span>' : "") + "</a></li>"; }).join("") + "</ul>" : "") +
-      "</section></div>";
+      "</section></div>" + preguntasProfeHTML(u);
     return { sec: "asignaturas", titulo: u.codigo + " · " + u.titulo, subject: u.s, html: html };
   }
 
@@ -812,6 +858,7 @@
     if (!t || !vista.contains(t) && !t.closest(".mesa")) return;
     if (t.hasAttribute("data-tarea")) return tachar(t);
     if (t.hasAttribute("data-aviso")) return avisoHecho(t.getAttribute("data-aviso"));
+    if (t.hasAttribute("data-pp")) return profeMarcar(t.getAttribute("data-pp"));
     if (t.getAttribute("data-accion") === "reintentar") { vista.innerHTML = cargando("Cargando la agenda"); return cargarAgenda(); }
     if (t.hasAttribute("data-ir")) { var d = document.getElementById(t.getAttribute("data-ir")); if (d) { d.scrollIntoView({ block: "center", behavior: M.modo() === "completo" ? "smooth" : "auto" }); var c = d.querySelector(".casilla"); if (c) c.focus({ preventScroll: true }); } return; }
     if (t.hasAttribute("data-hora")) {
