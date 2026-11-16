@@ -241,7 +241,8 @@
     var repasoU = ex.unidad || (d.sesiones[0] && d.sesiones[0].unidad);
     var minS = d.sesiones.filter(function (s) { return !s.hecha; }).reduce(function (a, s) { return a + s.minutos; }, 0);
     var minRep = 15, minTj = Math.max(5, Math.round(d.tarjetas.length * 0.7));
-    var pasos = d.sesiones.map(function (s) {
+    var repEx = ex.unidad && D.unidad(ex.unidad) && ex.diapositivas ? '<li class="ex-paso ex-destacado"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="../' + esc(ex.unidad) + '/examen/"><b>Repaso para el examen, todo en una página</b></a><small>lo de la profe, test, casos, tarjetas y chuleta</small></div></li>' : "";
+    var pasos = repEx + d.sesiones.map(function (s) {
       return '<li class="ex-paso' + (s.hecha ? " hecho" : "") + '"><span class="ex-ico" aria-hidden="true">' + ico(s.hecha ? "check" : "siguiente") + '</span><div><a href="#/sesion/' + encodeURIComponent(s.id) + '"><b>' + esc(s.titulo) + "</b></a><small>" + (s.hecha ? "hecha" : s.empezada ? "a medias · sigue donde ibas" : "sesión de estudio") + " · " + s.minutos + "\u00a0min</small></div></li>";
     }).join("") +
       '<li class="ex-paso"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="../' + esc(repasoU) + "/repaso/#" + esc(d.bloques[0] ? d.bloques[0].id : "") + '"><b>Lo de la profe, tal cual</b></a><small>repaso de ' + (d.bloques.length === 1 ? "su bloque" : "sus " + d.bloques.length + " bloques") + " · " + minRep + "\u00a0min</small></div></li>" +

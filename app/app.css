@@ -803,3 +803,4 @@ html.ss-foco .marca-cab{display:none}
 .pp-item textarea{width:100%;margin-top:var(--e-1);padding:10px 12px;font:inherit;font-size:16px;color:var(--c-tinta);background:var(--c-hoja);border:1.5px solid var(--c-linea-suave);border-radius:var(--r-1)}
 
 button.nota-boton{font:inherit;text-align:left;cursor:pointer;border:0;width:100%}
+.ex-destacado{border-color:var(--c-tinta);border-width:2px}

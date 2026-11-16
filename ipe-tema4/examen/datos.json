@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "unidad": "ipe-tema4",
+  "evento": "ipe-examen-u1",
+  "titulo": "Riesgos ergonómicos y psicosociales",
+  "asignatura": "IPE I · Tema 4",
+  "fecha": "2026-11-17",
+  "diapositivas": "11 a 17",
+  "conceptos": [18, 26],
+  "test": [12, 18],
+  "mapa": [
+    { "titulo": "2. Riesgos ergonómicos", "diap": "11–14", "lineas": [
+      "Vienen de la <b>carga de trabajo</b>, las condiciones ambientales y el diseño del puesto.",
+      "Carga de trabajo = <b>física</b> + <b>mental</b> → las dos llevan a la <b>fatiga</b>.",
+      "Carga física → <b>TME</b>. Sus factores: <b>posturas</b>, <b>movimientos repetitivos</b> y <b>manipulación de cargas</b>.",
+      "Carga mental → depende de cuánta información, lo complicada que es la respuesta y el tiempo para darla."
+    ] },
+    { "titulo": "3. Riesgos psicosociales", "diap": "15–17", "lineas": [
+      "Vienen de la <b>organización y dirección del trabajo</b> y su entorno social.",
+      "Cadena: <b>factor</b> → <b>riesgo</b> → <b>daño</b>.",
+      "Los 3 riesgos: <b>estrés</b> (burnout, tecnoestrés), <b>violencia</b> (acoso, mobbing) y <b>fatiga</b>.",
+      "Las 3 medidas: <b>organizativas</b>, de <b>afrontamiento</b> y de <b>rehabilitación</b>."
+    ] }
+  ],
+  "casos": [
+    { "titulo": "Actividad 8 · Jaime, montador de muebles", "diap": "13",
+      "caso": "Jaime trabaja como montador de muebles. Últimamente tiene dolores en las muñecas y le han diagnosticado tendinitis. Indica la causa que puede haber provocado la lesión y propón alguna medida preventiva.",
+      "respuesta": "<p><b>Causa:</b> los <b>movimientos repetitivos</b> (diapositiva 13): el mismo gesto, continuo, con el mismo conjunto osteomuscular (la muñeca). La escalera es fatiga → sobrecarga → dolor → <b>lesión</b>; la tendinitis es un TME, consecuencia de la <b>carga física</b>.</p><p><b>Medida:</b> la diapositiva no da medidas propias de los movimientos repetitivos. Razónalo con la pauta de la diapositiva 12: <b>cambiar de posición y alternar</b> la tarea con otras, para no repetir siempre el mismo gesto con la misma muñeca.</p>" },
+    { "titulo": "Actividad 9 · Valery y Gabriel", "diap": "15 y 16",
+      "caso": "a) Valery, desde que cambió de jefe, siente una gran ansiedad: todos los días recibe un correo de su superior criticando su trabajo. b) Gabriel, gestor de incidencias, tiene horarios muy amplios, mucha intensidad, llamadas, correos, wasaps y SMS y clientes difíciles; no duerme bien y se enfada con su familia. Identifica los riesgos y los factores que influyen.",
+      "respuesta": "<p><b>Valery:</b> riesgo de <b>violencia laboral</b>, en concreto <b>acoso psicológico (mobbing)</b>, porque hay una <b>relación asimétrica de poder</b> con su jefe. El daño es un trastorno <b>emocional</b> (ansiedad).</p><p><b>Gabriel:</b> riesgo de <b>estrés laboral</b> (y tecnoestrés, por la avalancha de canales) y de <b>fatiga</b> por exceso de tiempo de trabajo. Factores: la <b>organización y ordenación del trabajo</b> (horarios, intensidad). Daños: <b>fisiológicos</b> (no duerme) y <b>sociales</b> (conflictos con la familia).</p>" }
+  ],
+  "chuleta": [
+    "Carga física + mental → fatiga.",
+    "TME ← carga física (test 13).",
+    "Factores de la carga física: «Postura, Repetir, Cargar».",
+    "Cargas: «Cerca, Rodillas, Recta, Pegada»; para girar, mueve los pies.",
+    "Repetitivos: Fatiga → Sobrecarga → Dolor → Lesión.",
+    "Cantidad de información = carga mental (test 12).",
+    "Organización del trabajo = psicosocial, no ergonómico (test 14 y 15).",
+    "Factor → Riesgo → Daño.",
+    "Burnout = estrés · mobbing = violencia · asimétrica = desigual (test 16, 17 y 18).",
+    "Medidas «O-A-R»: Organizativas, Afrontamiento, Rehabilitación."
+  ],
+  "plan": [
+    ["Lee lo de la profe, diapositiva a diapositiva", "20 min"],
+    ["Cierra y di en voz alta cada «Ponte a prueba»", "15 min"],
+    ["Haz las 7 preguntas del test sin mirar", "5 min"],
+    ["Resuelve los 2 casos antes de abrir la respuesta", "10 min"],
+    ["Pasa las tarjetas; repite las que fallaste", "10 min"],
+    ["Mañana, antes de entrar: solo la chuleta", "5 min"]
+  ]
+}
