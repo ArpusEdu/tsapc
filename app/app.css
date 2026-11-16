@@ -801,3 +801,5 @@ html.ss-foco .marca-cab{display:none}
 .pp-boton{margin-top:var(--e-3)}
 .pp-lbl{display:block;margin-top:var(--e-3);font-weight:700;font-size:var(--t-sm)}
 .pp-item textarea{width:100%;margin-top:var(--e-1);padding:10px 12px;font:inherit;font-size:16px;color:var(--c-tinta);background:var(--c-hoja);border:1.5px solid var(--c-linea-suave);border-radius:var(--r-1)}
+
+button.nota-boton{font:inherit;text-align:left;cursor:pointer;border:0;width:100%}

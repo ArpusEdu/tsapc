@@ -574,6 +574,7 @@
     var notas = '<a class="nota-boton" href="../' + esc(u.repaso.web) + '"><b>Repaso</b><span class="mano">' + (u.porEntregas ? "entrega a entrega" : "bloque a bloque") + '</span><span class="ext">Abrir el repaso' + ico("siguiente") + "</span></a>" +
       (u.simulacro && u.simulacro.web ? '<a class="nota-boton amarilla" href="../' + esc(u.simulacro.web) + '"><b>Simulacro</b><span class="mano">' + esc(u.simulacro.webt || "como el examen") + '</span><span class="ext">Abrir el simulacro' + ico("siguiente") + "</span></a>" : "") +
       E.unidadNotas(u) +
+      (function () { var pp = preguntasProfe(u.id); return pp && pp.length ? '<button type="button" class="nota-boton lila" data-ir="hPp"><b>Para preguntar en clase</b><span class="mano">' + pp.length + ' preguntas para la profe</span></button>' : ""; })() +
       (u.id === "bio3" ? '<a class="nota-boton" data-subject="bio" href="#/lectura/franklin"><b>Lectura</b><span class="mano">La historia de Rosalind Franklin</span></a>' : "");
     var mat = [];
     if (u.repaso.pdf) mat.push(["Repaso en PDF", u.repaso.pdf]);
