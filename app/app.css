@@ -765,3 +765,23 @@ html.ss-foco .marca-cab{display:none}
   .tramo-ahora .av-t{font-family:var(--f-titulo);font-variation-settings:var(--suave)}
 }
 .ss-salir .mano{margin-left:.35em}
+
+/* estudiar para un examen (#/examen/<id>) */
+.ex-pasos,.ex-conceptos{margin:0;padding:0;list-style:none;display:grid;gap:var(--e-2)}
+.ex-paso{display:grid;grid-template-columns:28px 1fr;gap:var(--e-3);align-items:start;padding:var(--e-3) var(--e-4);border-radius:var(--r-2);background:var(--c-tarjeta);border:1.5px solid var(--c-linea-suave)}
+.ex-paso a{color:var(--c-tinta);text-decoration:none;display:inline-block;min-height:24px}
+.ex-paso a:hover b{text-decoration:underline}
+.ex-paso small,.ex-conceptos small{display:block;color:var(--c-tinta-2);font-size:var(--t-sm)}
+.ex-paso.hecho b{text-decoration:line-through;text-decoration-thickness:2px}
+.ex-ico{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--c-linea-suave)}
+.ex-paso.hecho .ex-ico{background:var(--c-ok);border-color:var(--c-ok);color:var(--c-hoja)}
+.ex-ico svg{width:18px;height:18px}
+.ex-conceptos li{padding-block:2px}
+.ex-conceptos li a{display:inline-block;min-height:24px;font-weight:700;color:var(--c-tinta);text-decoration:none}
+.ex-conceptos .num{display:inline-block;min-width:2.4ch;color:var(--c-tinta-2);font-weight:400}
+.ex-sec{margin-top:var(--e-6)}
+.ex-tj{margin-block:var(--e-2);padding:var(--e-2) var(--e-4);border-radius:var(--r-2);background:var(--c-tarjeta);border:1.5px solid var(--c-linea-suave)}
+.ex-tj summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center;gap:var(--e-2)}
+.ex-tj[open]{background:var(--fijo-papel);color:var(--fijo-tinta)}
+.ex-tj .rico{margin-top:var(--e-2);padding-bottom:var(--e-2)}
+.ex-pie{margin-top:var(--e-5);color:var(--c-tinta-2)}

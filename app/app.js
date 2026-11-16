@@ -150,7 +150,8 @@
         '<p class="ex-det">' + L.may(L.fechaLarga(ex.date)) + (ex.claseHora ? ", en tu hora de clase: " + L.hora(ex.claseHora, fmtHora()) : "") + "." + (prof(ex.s) ? " Con " + esc(prof(ex.s)) + "." : "") + "</p>" + (ex.nota && ex.provisional ? '<p class="ex-nota">' + ico("info") + "<span>" + esc(ex.nota) + "</span>" + "</p>" : "") +
         '<div class="ex-fila"><div class="lcd" role="timer" aria-label="Cuenta atrás hasta el ' + cual + '"><div class="lcd-pantalla"><span data-lcd="0">--</span><span class="u" data-lcdu="0">h</span><span data-lcd="1">--</span><span class="u" data-lcdu="1">m</span><span data-lcd="2">--</span><span class="u" data-lcdu="2">s</span></div><div class="lcd-pie"><span>LAB TIMER</span><span>' + L.DIAS[ex.date.getDay()].slice(0, 3).toUpperCase() + " → " + (ex.claseHora || "") + (ex.provisional ? " · PROV." : "") + '</span></div></div><span class="lapiz">hasta el ' + cual + "</span></div>" +
         planHTML(ex, n) +
-        (ex.unidad && D.unidad(ex.unidad) ? '<a class="boton secundario" href="#/unidad/' + esc(ex.unidad) + '">Ver ' + esc(D.unidad(ex.unidad).codigo + " · " + D.unidad(ex.unidad).titulo) + ico("siguiente") + "</a>" : "") + "</div>";
+        '<div class="acciones"><a class="boton" href="#/examen/' + encodeURIComponent(ex.id) + '">Estudiar para el examen' + ico("siguiente") + "</a>" +
+        (ex.unidad && D.unidad(ex.unidad) ? '<a class="boton secundario" href="#/unidad/' + esc(ex.unidad) + '">Ver ' + esc(D.unidad(ex.unidad).codigo + " · " + D.unidad(ex.unidad).titulo) + "</a>" : "") + "</div></div>";
     } else {
       var sinF = D.UNIDADES.filter(function (u) { return !examenDe(u); });
       bloqueEx = '<div class="estado">' + canal("", "lab") + '<div><h3>Ningún examen con fecha</h3><p>Cuando haya una fecha, aquí verás la cuenta atrás y tu plan hasta ese día.</p>' +
@@ -211,7 +212,7 @@
     var lista = PL.avisos({ evs: EVS, entregadas: hechas(), descartados: leer("personal.avisos", {}) || {}, hoy: n, estudioHoy: function (e) { return estudioHoyPara(e, n); } });
     if (!lista.length) return "";
     return '<div class="avisos-hoy" role="group" aria-label="Avisos que insisten hasta que lo hagas"><ul>' + lista.map(function (a) {
-      var S1 = A[a.evento.s] || {}, ir = a.tipo === "estudio" ? (SS && SS.sesionHoy ? SS.sesionHoy() : null) : null;
+      var S1 = A[a.evento.s] || {}, ir = a.tipo === "estudio" ? "#/examen/" + encodeURIComponent(a.evento.id) : null;
       return '<li class="aviso-hoy nivel-' + a.nivel + '" data-subject="' + esc(a.evento.s) + '"><div><p class="av-k"><span class="av-cod">' + esc((S1.ab || "") + " · " + (a.tipo === "entrega" ? "entrega" : "examen")) + '</span><span class="av-nivel">' + (a.nivel === "hoy" ? ico("alerta") : ico("reloj")) + (a.dias <= 0 ? "Hoy" : a.dias === 1 ? "Mañana" : "En " + a.dias + " días") + '</span></p><p class="av-t"><b>' + esc(a.titulo) + "</b></p><p>" + esc(a.texto) + "</p></div>" +
         '<div class="av-acc">' + (ir ? '<a class="boton" href="' + esc(ir) + '">Estudiar ahora</a>' : "") + '<button type="button" class="boton secundario" data-aviso="' + esc(a.id) + '">' + esc(a.accion) + "</button></div></li>";
     }).join("") + "</ul></div>";
@@ -222,6 +223,43 @@
     var p = PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: d.estados, hoy: n }); if (!p) return "";
     var lista = p.hoyToca.length ? '<ol class="plan-hoy">' + p.hoyToca.map(function (x) { return '<li><a href="#/sesion/' + encodeURIComponent(x.id) + '">' + esc(x.titulo) + "</a> <span class=\"num\">" + (+x.minutos || 0) + "\u00a0min</span></li>"; }).join("") + "</ol>" : "";
     return '<div class="plan-ex ritmo-' + p.ritmo + '"><p class="plan-k">Tu plan hasta el examen · ' + p.hechas + " de " + p.total + " sesiones</p><p>" + esc(p.mensaje) + "</p>" + (lista ? '<p class="plan-sub">Hoy:</p>' + lista : "") + "</div>";
+  }
+  /* ---------- estudiar para un examen: #/examen/<id del evento> (solo lo que entra, con plan, conceptos y tarjetas) ---------- */
+  function pExamen(id) {
+    var cabV = function (t) { return { sec: "hoy", titulo: "Examen", html: '<header class="cab">' + titulo("Para tu <em>examen</em>") + "</header>" + t }; };
+    if (!AG) return cabV(cargando("Cargando la agenda"));
+    var ex = null; EVS.forEach(function (e) { if (e.id === id && (e.tipo === "examen" || e.tipo === "oral")) ex = e; });
+    if (!ex) return pNada();
+    var n = ahora(), dias = L.difDias(ex.date, n), S1 = A[ex.s] || {};
+    var d = SS && SS.examenDatos ? SS.examenDatos(ex) : null;
+    var cuando = dias < 0 ? "ya pasó" : L.diaRelativo(ex.date, n).toLowerCase();
+    var cab = '<header class="cab"><p class="sub">' + esc((S1.nombre || "") + " · examen " + cuando) + (ex.provisional ? " · fecha provisional" : "") + "</p>" +
+      titulo(esc(ex.titulo.replace(/^Examen · /, ""))) +
+      (ex.diapositivas ? '<p class="sub">Entra: diapositivas ' + esc(ex.diapositivas.replace("-", " a ")) + (ex.unidad && D.unidad(ex.unidad) ? " de " + esc(D.unidad(ex.unidad).codigo + " · " + D.unidad(ex.unidad).titulo) : "") + ".</p>" : "") + "</header>";
+    if (!d) return { sec: "hoy", titulo: "Examen", html: cab + cargando("Reuniendo lo que entra") };
+    var p = PL ? PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: leer("personal.sesiones", {}) || {}, hoy: n }) : null;
+    var repasoU = ex.unidad || (d.sesiones[0] && d.sesiones[0].unidad);
+    var minS = d.sesiones.filter(function (s) { return !s.hecha; }).reduce(function (a, s) { return a + s.minutos; }, 0);
+    var minRep = 15, minTj = Math.max(5, Math.round(d.tarjetas.length * 0.7));
+    var pasos = d.sesiones.map(function (s) {
+      return '<li class="ex-paso' + (s.hecha ? " hecho" : "") + '"><span class="ex-ico" aria-hidden="true">' + ico(s.hecha ? "check" : "siguiente") + '</span><div><a href="#/sesion/' + encodeURIComponent(s.id) + '"><b>' + esc(s.titulo) + "</b></a><small>" + (s.hecha ? "hecha" : s.empezada ? "a medias · sigue donde ibas" : "sesión de estudio") + " · " + s.minutos + "\u00a0min</small></div></li>";
+    }).join("") +
+      '<li class="ex-paso"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="../' + esc(repasoU) + "/repaso/#" + esc(d.bloques[0] ? d.bloques[0].id : "") + '"><b>Lo de la profe, tal cual</b></a><small>repaso de ' + (d.bloques.length === 1 ? "su bloque" : "sus " + d.bloques.length + " bloques") + " · " + minRep + "\u00a0min</small></div></li>" +
+      '<li class="ex-paso"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="#ex-tarjetas"><b>Las tarjetas del examen</b></a><small>' + d.tarjetas.length + " tarjetas, solo de lo que entra · " + minTj + "\u00a0min</small></div></li>";
+    var total = minS + minRep + minTj;
+    var conceptos = d.sesiones.map(function (s) {
+      return s.conceptos.map(function (c) { return '<li><a href="../' + esc(s.unidad) + "/repaso/#c" + c.n + '"><span class="num">' + c.n + "</span> " + esc(c.titulo) + '</a><small>diap. ' + esc(c.diapositivas) + "</small></li>"; }).join("");
+    }).join("");
+    var tarjetas = d.tarjetas.map(function (o) {
+      return '<details class="ex-tj"><summary>' + esc(o.t.frente) + '</summary><div class="rico">' + E.rico(o.t.dorso, o.t.formato, "../" + o.u + "/repaso/") + "</div>" + (o.t.fuente ? '<p class="tj-fuente">' + esc(o.t.fuente) + "</p>" : "") + "</details>";
+    }).join("");
+    var html = cab +
+      (p ? '<div class="plan-ex ritmo-' + p.ritmo + '"><p>' + esc(p.mensaje) + "</p></div>" : "") +
+      '<section class="ex-sec" aria-labelledby="hExP"><div class="sec-cab"><h2 id="hExP">Cómo prepararlo</h2><span class="mano">unos ' + total + " min en total</span></div><ol class=\"ex-pasos\">" + pasos + "</ol></section>" +
+      '<section class="ex-sec" aria-labelledby="hExC"><div class="sec-cab"><h2 id="hExC">Lo que entra</h2></div><ol class="ex-conceptos">' + conceptos + "</ol></section>" +
+      (d.tarjetas.length ? '<section class="ex-sec" aria-labelledby="hExT" id="ex-tarjetas"><div class="sec-cab"><h2 id="hExT">Tarjetas del examen</h2><span class="mano">dilo antes de abrir</span></div>' + tarjetas + "</section>" : "") +
+      '<p class="ex-pie">Mañana, antes del examen: diez minutos con las tarjetas que te costaron. Nada nuevo.</p>';
+    return { sec: "hoy", titulo: "Examen · " + ex.titulo.replace(/^Examen · /, ""), subject: ex.s, html: html };
   }
   function avisoHecho(id) {
     var n = ahora();
@@ -701,7 +739,7 @@
   function pTarjetas(id) { return E.tarjetas(id) || pNada(); }
 
   /* ================= rutas y pintado ================= */
-  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas, sesion: pSesionE, guia: pGuia, llegada: pLlegada };
+  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas, sesion: pSesionE, guia: pGuia, llegada: pLlegada, examen: pExamen };
   function leerRuta() {
     var h = location.hash.replace(/^#\/?/, ""), p = h.split("/");
     var arg = null, arg2 = null; try { arg = p[1] ? decodeURIComponent(p[1]) : null; arg2 = p[2] ? decodeURIComponent(p[2]) : null; } catch (_) {}

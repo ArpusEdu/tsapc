@@ -21,8 +21,9 @@ test("plan: lo hecho no cuenta y con todo hecho toca repasar", () => {
   assert.equal(q.fase, "repaso"); assert.equal(q.ritmo, "listo"); assert.equal(q.hoyToca.length, 0);
 });
 
-test("plan: víspera y día del examen no proponen nada nuevo; un examen pasado no tiene plan", () => {
-  assert.equal(P.planExamen({ ex: { id: "x", date: d("2026-11-14") }, sesiones: ses(2), estados: {}, hoy: d("2026-11-13") }).fase, "vispera");
+test("plan: la víspera propone lo que falta; el día del examen nada nuevo; un examen pasado no tiene plan", () => {
+  const v = P.planExamen({ ex: { id: "x", date: d("2026-11-14") }, sesiones: ses(2), estados: {}, hoy: d("2026-11-13") });
+  assert.equal(v.fase, "vispera"); assert.equal(v.hoyToca.length, 2, "la víspera, lo que falta se propone igual"); assert.match(v.mensaje, /las 2 sesiones que faltan/);
   assert.equal(P.planExamen({ ex: { id: "x", date: d("2026-11-13") }, sesiones: ses(2), estados: {}, hoy: d("2026-11-13") }).hoyToca.length, 0);
   assert.equal(P.planExamen({ ex: { id: "x", date: d("2026-11-10") }, sesiones: ses(2), estados: {}, hoy: d("2026-11-13") }), null);
 });

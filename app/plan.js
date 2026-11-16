@@ -29,13 +29,13 @@
     var fase = dias === 0 ? "examen" : dias === 1 ? "vispera" : pend.length ? "estudio" : "repaso";
     var porDia = diasEstudio > 0 ? Math.ceil(pend.length / diasEstudio) : 0;
     var noDa = porDia > MAX_DIA;
-    var hoyToca = fase === "estudio" ? pend.slice(0, Math.min(porDia, MAX_DIA)) : [];
+    var hoyToca = fase === "estudio" ? pend.slice(0, Math.min(porDia, MAX_DIA)) : fase === "vispera" ? pend.slice(0, MAX_DIA) : [];
     var hechasHoy = ses.filter(hechaHoy).length;
     var minutosHoy = hoyToca.reduce(function (a, x) { return a + (+x.minutos || 0); }, 0);
     var ritmo = !pend.length ? "listo" : fase !== "estudio" ? "tarde" : porDia <= 1 ? "holgado" : porDia === 2 ? "justo" : "apretado";
     var mensaje;
     if (fase === "examen") mensaje = "Hoy es el examen. Repasa solo lo que marcaste como difícil y confía en lo que ya sabes.";
-    else if (fase === "vispera") mensaje = pend.length ? "Mañana es el examen. No empieces nada nuevo: repasa las tarjetas y lo que te costó. Te quedaron " + pend.length + (pend.length === 1 ? " sesión" : " sesiones") + " sin hacer; míralas en el repaso de la unidad." : "Mañana es el examen. Hoy toca un repaso tranquilo: tarjetas y lo que te costó.";
+    else if (fase === "vispera") mensaje = pend.length ? "Mañana es el examen. Hoy, " + (pend.length === 1 ? "la sesión que falta" : pend.length > MAX_DIA ? "las " + MAX_DIA + " sesiones más importantes" : "las " + pend.length + " sesiones que faltan") + " (unos " + minutosHoy + " min) y después las tarjetas del examen. Duerme: lo que repases hoy se fija esta noche." : "Mañana es el examen. Hoy toca un repaso tranquilo: tarjetas y lo que te costó.";
     else if (fase === "repaso") mensaje = "Has hecho todas las sesiones. Hasta el examen, repaso de hoy y tarjetas: así se queda.";
     else if (noDa) mensaje = "Quedan " + dias + " días y " + pend.length + " sesiones: no da tiempo a todas. Haz " + MAX_DIA + " al día (unos " + minutosHoy + " min) y el resto, con el repaso de la unidad y las tarjetas.";
     else mensaje = (hechasHoy && !hoyToca.length ? "Hoy ya cumpliste. " : "") + "Quedan " + dias + " días y " + pend.length + (pend.length === 1 ? " sesión" : " sesiones") + ": " + (porDia === 1 ? "una al día" : porDia + " al día") + (ritmo === "apretado" ? ". Va justo: si hoy puedes, haz una más." : ritmo === "holgado" && pend.length < diasEstudio ? ", y te sobran días para repasar." : ".");

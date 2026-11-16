@@ -98,7 +98,7 @@
         CARGA[url] = "cargando";
         fetch(url, { credentials: "same-origin" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
           .then(function (j) { caja[clave] = j; CARGA[url] = "ok"; }).catch(function () { CARGA[url] = "error"; })
-          .then(function () { if (/^#\/(sesion|hoy|unidad)/.test(location.hash) || !location.hash) ctx.pintar(true); });
+          .then(function () { if (/^#\/(sesion|hoy|unidad|examen)/.test(location.hash) || !location.hash) ctx.pintar(true); });
       }
       return null;
     }
@@ -457,9 +457,28 @@
       var base = deU.length ? deU : li.filter(function (x) { var U = D.unidad(x.unidad); return U && U.s === ex.s; });
       return { sesiones: base, estados: estadosTodas() };
     }
+    /* todo lo de un examen: sus sesiones (con conceptos y diapositivas) y las tarjetas de sus bloques; null mientras carga */
+    function examenDatos(ex) {
+      var d = paraExamen(ex); if (!d) return null;
+      var ses = d.sesiones.map(function (x) { return { x: x, S: sesionDe(x.id) }; });
+      if (ses.some(function (o) { return !o.S; })) return null;
+      var unidades = {}, bloques = {};
+      ses.forEach(function (o) { unidades[o.S.unidad] = 1; bloques[o.S.unidad + ":b" + (o.S.bloque - 1)] = 1; });
+      var tarjetas = [], falta = false;
+      Object.keys(unidades).forEach(function (u) {
+        var J = bancoDe(u); if (!J) { falta = true; return; }
+        (J.tarjetas || []).forEach(function (t) { if (bloques[u + ":" + t.bloque]) tarjetas.push({ u: u, t: t }); });
+      });
+      if (falta) return null;
+      return {
+        sesiones: ses.map(function (o) { var e = estado(d.estados[o.x.id]); return { id: o.x.id, unidad: o.S.unidad, titulo: o.S.titulo, minutos: +o.S.minutos || 0, bloque: o.S.bloque, hecha: !!e.hecha, empezada: !!(e.inicio && e.paso > 0 && !e.hecha), conceptos: o.S.conceptos.map(function (c) { return { n: c.n, titulo: c.titulo, diapositivas: c.diapositivas }; }) }; }),
+        bloques: Object.keys(bloques).map(function (k) { var p = k.split(":"); return { unidad: p[0], id: p[1] }; }),
+        tarjetas: tarjetas
+      };
+    }
     /* el enlace de la sesión que toca hoy (lo usa la guía) */
     function sesionHoy() { var s = siguienteGuiada(""); return s ? "#/sesion/" + encodeURIComponent(s.id) : null; }
-    return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque, sesionHoy: sesionHoy, paraExamen: paraExamen };
+    return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque, sesionHoy: sesionHoy, paraExamen: paraExamen, examenDatos: examenDatos };
   }
 
   return { crear: crear, L: { nota: nota, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, siguienteSesion: siguienteSesion, siguienteParaExamen: siguienteParaExamen, PASOS: PASOS } };
