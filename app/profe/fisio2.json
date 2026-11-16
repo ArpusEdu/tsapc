@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "unidad": "fisio2",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cada una sale de una diapositiva concreta.",
+  "preguntas": [
+    { "id": "p01", "n": 4, "diap": "3", "tipo": "laboratorio", "pregunta": "Si me ponen una preparación sin decirme de dónde es, ¿qué miro primero para saber a cuál de los cuatro tejidos pertenece?", "porque": "Es la primera decisión que tomarás al microscopio cada día." },
+    { "id": "p02", "n": 5, "diap": "4 y 5", "tipo": "entender", "pregunta": "Si el epitelio no tiene vasos sanguíneos, ¿cómo le llegan el oxígeno y los nutrientes?", "porque": "Una característica que parece un dato suelto y en realidad explica mucho." },
+    { "id": "p03", "n": 9, "diap": "9", "tipo": "examen", "pregunta": "¿Por qué el epitelio pseudoestratificado parece estratificado pero no lo es?", "porque": "Es la confusión típica de examen con los epitelios." },
+    { "id": "p04", "n": 11, "diap": "11", "tipo": "entender", "pregunta": "¿Por qué la piel tiene muchas capas y el pulmón solo una? ¿Qué gana cada uno?", "porque": "Obliga a relacionar el tipo de epitelio con su función, que es lo que pide la diapositiva." },
+    { "id": "p05", "n": 17, "diap": "18", "tipo": "examen", "pregunta": "¿Con qué ejemplo real se recuerda mejor la diferencia entre secreción merocrina, apocrina y holocrina?", "porque": "Tres palabras parecidas: un ejemplo bueno vale más que la definición." },
+    { "id": "p06", "n": 18, "diap": "19", "tipo": "entender", "pregunta": "Una glándula que es a la vez exocrina y endocrina, como el páncreas, ¿cómo se organiza por dentro?", "porque": "Junta las dos clasificaciones de glándulas en un solo órgano." },
+    { "id": "p07", "n": 23, "diap": "29", "tipo": "entender", "pregunta": "¿Qué le pasa al sarcómero cuando el músculo se contrae? ¿Qué se acorta y qué no?", "porque": "Si entiendes el sarcómero, entiendes la contracción entera." },
+    { "id": "p08", "n": 29, "diap": "27 a 37", "tipo": "laboratorio", "pregunta": "Al microscopio, ¿cómo distingo el músculo liso del esquelético y del cardíaco en una sola mirada?", "porque": "Reconocer los tres músculos es un clásico de las prácticas de histología." },
+    { "id": "p09", "n": 34, "diap": "44 a 46", "tipo": "entender", "pregunta": "Si las células de la glía no transmiten impulsos, ¿por qué hay tantas más que neuronas?", "porque": "Cambia la idea de que la glía es solo «relleno»." },
+    { "id": "p10", "n": 35, "diap": "47 y 48", "tipo": "laboratorio", "pregunta": "¿Por qué la sustancia blanca se ve blanca? ¿Qué tiene que no tiene la gris?", "porque": "Lo verás en cortes de encéfalo y médula en el laboratorio." },
+    { "id": "p11", "n": 42, "diap": "55", "tipo": "caso", "pregunta": "¿Por qué los bebés tienen más grasa parda que los adultos?", "porque": "Un ejemplo que fija para siempre la diferencia entre grasa blanca y parda." },
+    { "id": "p12", "n": 46, "diap": "60 a 63", "tipo": "examen", "pregunta": "¿Dónde hay cartílago hialino, elástico y fibroso? ¿Hay un truco para acordarse?", "porque": "Tres tipos y tres localizaciones: pregunta segura de examen." },
+    { "id": "p13", "n": 51, "diap": "72 y 73", "tipo": "laboratorio", "pregunta": "¿Cómo se prepara un hueso para poder cortarlo y verlo al microscopio, si es tan duro?", "porque": "Es una técnica propia de tu ciclo: la descalcificación." },
+    { "id": "p14", "n": 48, "diap": "66 a 68", "tipo": "caso", "pregunta": "En la osteoporosis, ¿qué células del hueso están trabajando de más y cuáles de menos?", "porque": "Pone a trabajar osteoblastos y osteoclastos en un caso real." },
+    { "id": "p15", "n": 58, "diap": "80 a 86", "tipo": "laboratorio", "pregunta": "En un frotis de sangre, ¿cuál es el leucocito más fácil de reconocer y cuál el que más cuesta?", "porque": "El frotis es de lo primero que harás en prácticas." },
+    { "id": "p16", "n": 60, "diap": "88", "tipo": "entender", "pregunta": "Si las plaquetas no son células completas, ¿de dónde salen y por qué no tienen núcleo?", "porque": "Conecta con la hematopoyesis de las diapositivas siguientes." },
+    { "id": "p17", "n": 64, "diap": "94 (imagen)", "tipo": "caso", "pregunta": "Cuando se hace una biopsia de médula ósea, ¿qué se busca en el árbol de la hematopoyesis?", "porque": "Une el árbol de la hematopoyesis con una prueba que llega al laboratorio." },
+    { "id": "p18", "n": 66, "diap": "97 y 98", "tipo": "laboratorio", "pregunta": "En un ganglio linfático, ¿dónde está el tejido linfático denso y dónde el laxo?", "porque": "Los ganglios son muestras muy frecuentes en anatomía patológica." }
+  ]
+}

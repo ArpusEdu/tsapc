@@ -546,7 +546,7 @@
       '<p class="pp-intro">Preguntas para sacar más de cada clase. Salen de las diapositivas; no son de la profe. Cuando hagas una, márcala y apunta lo que te respondió.</p><ol class="pp-lista">' +
       l.map(function (q) {
         var e = est[q.id] || {}, on = !!e.hecha;
-        return '<li class="pp-item' + (on ? " hecha" : "") + '"><p class="pp-k"><span class="pp-tipo">' + esc(TIPO_PP[q.tipo] || q.tipo) + '</span> · <a href="../' + esc(u.id) + "/repaso/#c" + (+q.n) + '">diap. ' + esc(q.diap) + "</a></p>" +
+        return '<li class="pp-item' + (on ? " hecha" : "") + '"><p class="pp-k"><span class="pp-tipo">' + esc(TIPO_PP[q.tipo] || q.tipo) + '</span> · <a href="../' + esc(u.id) + "/repaso/#c" + (+q.n) + '">' + (/^[0-9]/.test(q.diap) ? "diap. " : "") + esc(q.diap) + "</a></p>" +
           '<p class="pp-q">' + esc(q.pregunta) + '</p><p class="pp-por">' + esc(q.porque) + "</p>" +
           '<button type="button" class="boton secundario pp-boton" data-pp="' + esc(u.id) + ":" + esc(q.id) + '" aria-pressed="' + on + '">' + ico(on ? "check" : "info") + (on ? "La pregunté" : "Marcar como preguntada") + "</button>" +
           (on ? '<label class="pp-lbl" for="pp-' + esc(q.id) + '">Lo que te respondió</label><textarea id="pp-' + esc(q.id) + '" rows="3" data-pp-nota="' + esc(u.id) + ":" + esc(q.id) + '" placeholder="Apúntalo con tus palabras.">' + esc(e.nota || "") + "</textarea>" : "") + "</li>";
