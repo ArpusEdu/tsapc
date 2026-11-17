@@ -22,6 +22,31 @@
   function fmtHora() { return L.formatoValido(prefs().hora); }
   function ponerPref(k, v) { var p = prefs(), o = {}; for (var x in p) if (tiene(p, x)) o[x] = p[x]; o[k] = v; return guardar("personal.prefs", o); }
   function hechas() { var h = leer("personal.entregadas", {}); return h && typeof h === "object" ? h : {}; }
+  /* los minutos al día que dice el estudiante (personal.prefs.minutosDia); 20 si no dice nada */
+  function minDia() { return window.EnfoquePlan ? window.EnfoquePlan.minutosDia(prefs().minutosDia) : 20; }
+  /* la planta crece con cualquier estudio: sesión, repaso, tarjetas, práctica o un bloque de Pomodoro */
+  function crecerPlanta() {
+    var a = leer("personal.planta", []), d = L.planta(a, L.clave(ahora()), true);
+    if (d.length !== (Array.isArray(a) ? a.length : 0)) guardar("personal.planta", d);
+  }
+  /* guardar para estudio.js y pomodoro.js: igual que guardar, y si lo guardado es estudio, sale la hoja del día */
+  function guardarEstudio(ruta, v) {
+    var k = Array.isArray(ruta) ? ruta.join(".") : String(ruta), antes = null;
+    if (k === "personal.pomodoro") { var p0 = leer("personal.pomodoro", {}); antes = p0 && p0.dias ? +p0.dias[L.clave(ahora())] || 0 : 0; }
+    var ok = guardar(ruta, v);
+    if (!ok) return ok;
+    if (/^unidades\.[^.]+\.(tarjetas|errores)$/.test(k)) crecerPlanta();
+    else if (k === "personal.pomodoro" && v && v.dias && (+v.dias[L.clave(ahora())] || 0) > antes) crecerPlanta();
+    return ok;
+  }
+  /* los días con algo hecho (para saber si vuelves tras unos días): la planta, los conceptos repasados y el Pomodoro */
+  function diasActivos() {
+    var o = {}, pl = leer("personal.planta", []), cs = leer("personal.conceptos", {}) || {}, po = leer("personal.pomodoro", {}) || {}, x;
+    if (Array.isArray(pl)) pl.forEach(function (d) { if (typeof d === "string") o[d] = 1; });
+    for (x in cs) if (tiene(cs, x) && cs[x] && typeof cs[x].ult === "string") o[cs[x].ult] = 1;
+    if (po.dias && typeof po.dias === "object") for (x in po.dias) if (tiene(po.dias, x) && +po.dias[x] > 0) o[x] = 1;
+    return Object.keys(o);
+  }
 
   /* ---------- agenda (fetch) ---------- */
   var AG = null, EVS = [], agError = false;
@@ -100,6 +125,36 @@
      01 Ahora (avisos que insisten y lo más urgente) · 02 Para tu examen (cuenta atrás, plan y sesión de hoy)
      03 Pendientes y próximos días (entregas, repaso, tarjetas y la semana) · y al final la planta y los atajos.
      Las piezas son las de siempre (plan.js, sesion.js, estudio.js); aquí solo se ordenan. */
+  /* «Lo siguiente»: arriba, una sola cosa con un botón grande. Lo demás se pliega en «Más para hoy».
+     Orden: tras 3 días o más sin estudiar, una sola cosa para arrancar; con el examen a 2 días o menos, recuperar;
+     si vuelve algo, el repaso; si no, el siguiente rato de sesión. */
+  function siguienteHTML(n, ex) {
+    var I = SS && SS.hoyInfo ? SS.hoyInfo() : null, R = I ? I.repaso : null, ses = I ? I.sesion : null;
+    var vuelta = PL ? PL.vuelta(diasActivos(), n) : 0, noPuedo = PL ? PL.noPuedeHoy(leer("personal.avisos", {}) || {}, n) : false;
+    var hayRep = !!(R && R.n > 0 && !R.hecho), exD = ex ? L.difDias(ex.date, n) : 99, q = null;
+    if (ex && exD <= 2 && SS && SS.paraExamen && (SS.paraExamen(ex) || { sesiones: [] }).sesiones.length)
+      q = { k: (exD === 0 ? "hoy es el " : exD === 1 ? "mañana es el " : "en 2 días, el ") + (ex.tipo === "oral" ? "oral" : "examen"), tit: "Recuperar para " + ex.titulo.replace(/^Examen · /, ""),
+        txt: "El test y las tarjetas del examen; relee solo lo que falles. Nada nuevo.", href: "#/examen/" + encodeURIComponent(ex.id), btn: "Empezar a recuperar", min: minDia(), s: ex.s };
+    else if (hayRep && (!vuelta || !ses || R.minutos <= 15))
+      q = { k: "lo que estudiaste, justo antes de olvidarse", tit: R.total > R.n ? "Tu repaso: vuelven " + R.n + " de " + R.total : "Tu repaso de hoy",
+        txt: R.total > R.n ? "El resto, repartido en los próximos días." : "Explícalo otra vez sin mirar.", href: "#/sesion/repaso", btn: R.empezado ? "Seguir el repaso" : "Repasar", min: R.minutos, s: "lab" };
+    else if (ses)
+      q = { k: (I.exa ? "para tu examen · " + I.exa.cuando.toLowerCase() : ses.codigo) + " · rato " + ses.rato, tit: ses.titulo,
+        txt: ses.rato === "B" ? "Rato B: lo de otros días, sin mirar y resolver el misterio." : ses.empezada ? "La dejaste a medias: sigue donde ibas." : "Rato A: un caso real y unos pocos conceptos.",
+        href: ses.href, btn: ses.rato === "B" ? "Seguir con el rato B" : ses.empezada ? "Seguir" : "Empezar", min: ses.minutos, s: ses.s };
+    var hr = hoyRatos(n), minHoy = (hayRep ? R.minutos : 0) + (hr.items.length ? hr.items.reduce(function (a, x) { return a + (+x.minutos || 0); }, 0) : ses && !(I && I.hoyHecha) ? ses.minutos : 0);
+    var intro = vuelta ? '<p class="sig-intro">Vuelves tras ' + vuelta + " días. Normal. Diez minutos para arrancar:</p>"
+      : noPuedo ? '<p class="sig-intro">Vale: hoy no. Si al final tienes diez minutos, esto es lo siguiente.</p>' : "";
+    var cu = typeof prefs().cuando === "string" ? prefs().cuando.trim() : "";
+    var intencion = vuelta ? "" : cu ? '<p class="intencion">' + ico("reloj") + "<span>Tu plan: " + esc(cu) + ', un rato.</span> <button type="button" class="pt-cambiar" data-cuando-borrar>cambiar<span class="sr"> cuándo estudias</span></button></p>'
+      : '<details class="intencion-p"><summary>' + ico("siguiente", "pl-ico") + '¿Cuándo sueles tener 10 minutos?</summary><form class="intencion-f" data-cuando-form><label class="sr" for="cuandoIn">Cuándo sueles tener 10 minutos</label><input id="cuandoIn" name="cuando" type="text" maxlength="60" autocomplete="off" placeholder="en el bus de vuelta" required><button type="submit" class="boton secundario">Apuntar</button></form><p class="ss-mini">Decidir cuándo lo hace más fácil. Se queda en este móvil.</p></details>';
+    var cuerpo = q ? '<p class="sig-k">' + esc(q.k) + '</p><p class="sig-tit">' + esc(q.tit) + "</p><p>" + esc(q.txt) + "</p>" +
+      '<div class="sig-acc"><a class="boton sig-boton' + (noPuedo && !vuelta ? " secundario" : "") + '" href="' + esc(q.href) + '">' + esc(q.btn) + ico("siguiente") + '</a><span class="sig-min num">unos ' + q.min + " min</span></div>"
+      : '<p class="sig-tit">Hoy está todo hecho</p><p>Descansar también cuenta. Si te apetece, en «Más para hoy» tienes las tarjetas y la semana.</p>';
+    return '<section class="lo-siguiente recuadro" data-subject="' + esc(q ? q.s : "lab") + '" aria-labelledby="hSig"><span class="washi" aria-hidden="true"></span>' + intro +
+      '<h2 id="hSig" class="sig-h">Lo siguiente</h2>' + cuerpo +
+      (!vuelta && minHoy ? '<p class="sig-hoy"><b>Hoy: ' + esc(PL ? PL.duracion(minHoy) : minHoy + " min") + "</b>" + (hr.mensaje ? " · " + esc(hr.mensaje) : "") + "</p>" : "") + intencion + "</section>";
+  }
   function tramo(n, id, tit, nota, cuerpo, cls) {
     return '<section class="tramo' + (cls ? " " + cls : "") + '" aria-labelledby="' + id + '"><div class="tramo-cab"><h2 id="' + id + '"><span class="tramo-n" aria-hidden="true">' + n + "</span>" + tit + "</h2>" + (nota ? '<p class="tramo-nota">' + nota + "</p>" : "") + "</div>" + cuerpo + "</section>";
   }
@@ -121,8 +176,12 @@
     var urg = L.pendientes(EVS, h, n)[0];
     var hoy = EVS.filter(function (e) { return e.tipo === "entrega" && e.fecha === k; });
     var est = partesEstudio();
+    cargarIndice();
+    var tt = tiempos(n);
 
-    var pild;
+    var pild, avL = avisosLista(n);
+    /* un solo aviso por examen: si ya sale en los avisos, no se repite como «lo más urgente» */
+    if (urg && avL.some(function (a) { return a.evento && a.evento.id === urg.id; })) urg = null;
     if (urg) {
       var S1 = A[urg.s], dif = L.difDias(urg.date, n), etq = dif <= 0 ? "Hoy" : dif === 1 ? "Mañana" : "Pronto";
       var dentro = '<span class="punto" aria-hidden="true"></span><span class="etq">' + etq + '</span><span class="que">' + esc(S1.ab + " · " + urg.titulo.replace(/^Examen · /, "") + (urg.provisional ? " (provisional)" : "")) + '</span><span class="cuenta num" data-cuenta="' + esc(urg.id) + '"></span>';
@@ -148,7 +207,7 @@
         '<div class="cuando">' + SE.nombre + " · " + cual + " · " + L.diaRelativo(ex.date, n).toLowerCase() + "</div>" +
         '<h3 class="ex-nombre">' + esc(nom) + "</h3>" + (ex.provisional ? '<p class="ex-prov">' + provisional(ex) + "</p>" : "") +
         '<p class="ex-det">' + L.may(L.fechaLarga(ex.date)) + (ex.claseHora ? ", en tu hora de clase: " + L.hora(ex.claseHora, fmtHora()) : "") + "." + (prof(ex.s) ? " Con " + esc(prof(ex.s)) + "." : "") + "</p>" + (ex.nota && ex.provisional ? '<p class="ex-nota">' + ico("info") + "<span>" + esc(ex.nota) + "</span>" + "</p>" : "") +
-        '<div class="ex-fila"><div class="lcd" role="timer" aria-label="Cuenta atrás hasta el ' + cual + '"><div class="lcd-pantalla"><span data-lcd="0">--</span><span class="u" data-lcdu="0">h</span><span data-lcd="1">--</span><span class="u" data-lcdu="1">m</span><span data-lcd="2">--</span><span class="u" data-lcdu="2">s</span></div><div class="lcd-pie"><span>LAB TIMER</span><span>' + L.DIAS[ex.date.getDay()].slice(0, 3).toUpperCase() + " → " + (ex.claseHora || "") + (ex.provisional ? " · PROV." : "") + '</span></div></div><span class="lapiz">hasta el ' + cual + "</span></div>" +
+        '<div class="ex-fila"><div class="lcd" role="timer" aria-label="Cuenta atrás hasta el ' + cual + '" data-lcd-cual="' + cual + '"><div class="lcd-pantalla"><span data-lcd="0">--</span><span class="u" data-lcdu="0"></span><span data-lcd="1"></span><span class="u" data-lcdu="1"></span></div><div class="lcd-pie"><span>LAB TIMER</span><span>' + L.DIAS[ex.date.getDay()].slice(0, 3).toUpperCase() + " → " + (ex.claseHora || "") + (ex.provisional ? " · PROV." : "") + '</span></div></div><span class="lapiz">hasta el ' + cual + "</span></div>" +
         planHTML(ex, n) +
         '<div class="acciones"><a class="boton" href="#/examen/' + encodeURIComponent(ex.id) + '">Estudiar para el examen' + ico("siguiente") + "</a>" +
         (ex.unidad && D.unidad(ex.unidad) ? '<a class="boton secundario" href="#/unidad/' + esc(ex.unidad) + '">Ver ' + esc(D.unidad(ex.unidad).codigo + " · " + D.unidad(ex.unidad).titulo) + "</a>" : "") + "</div></div>";
@@ -170,10 +229,8 @@
         (items ? "<ul>" + items + "</ul>" : (inf.notas.length ? "" : '<span class="mano sem-libre">libre</span>')) + "</li>";
     }).join("");
 
-    /* 01 · Ahora */
-    var avisos = avisosHTML(n), sesHoy = SS && SS.sesionHoy ? SS.sesionHoy() : null;
-    var ahoraHTML = '<div class="urgente">' + pild + "</div>" + avisos +
-      (!urg && !avisos ? '<p class="ahora-siguiente">' + (est.sesion ? 'Nada aprieta hoy. Lo siguiente útil: <a href="#hSs">tu sesión de hoy</a>, en el tramo de abajo.' : "Nada aprieta hoy. Buen día para repasar.") + "</p>" : "");
+    /* 01 · Ahora (dentro de «Más para hoy»): lo urgente que no sale ya en los avisos y «tengo X minutos» */
+    var ahoraHTML = '<div class="urgente">' + pild + "</div>" + tengoHTML(tt);
     /* 02 · Para tu examen */
     var examenHTML = '<div class="tramo-rejilla">' + bloqueEx + (est.sesion ? '<div class="ss-hoy tramo-sesion">' + est.sesion + "</div>" : "") + "</div>";
     /* 03 · Pendientes y próximos días */
@@ -181,22 +238,25 @@
       (tareas ? '<ul class="tareas" id="tareas">' + tareas + "</ul>" : '<p class="vacio-linea">' + ico("check") + "<span>Hoy no hay entregas." + (ex && L.clave(ex.date) === k ? " Hoy toca examen: a por él." : "") + "</span></p>") + "</div>";
     var repaso = (est.repaso ? '<div class="bloque-hoy ss-hoy">' + est.repaso + "</div>" : "") + bajar(E.hoyTarjetas());
     var semanaHTML = '<div class="bloque-hoy"><div class="sec-cab"><h3 id="hSem">Próximos días</h3><span class="sec-nota">cinco días de clase</span></div><ol class="semana">' + semana + "</ol></div>";
-    var pendHTML = '<div class="tramo-rejilla">' + entregas + (repaso ? '<div class="bloque-hoy">' + repaso + "</div>" : "") + "</div>" + semanaHTML;
+    var pendHTML = ponerseAlDiaHTML(tt) + '<div class="tramo-rejilla">' + entregas + (repaso ? '<div class="bloque-hoy">' + repaso + "</div>" : "") + "</div>" + semanaHTML;
     /* al final: la planta y los atajos */
     var finHTML = '<div class="tramo-rejilla"><div class="bloque-hoy"><div class="sec-cab"><h3 id="hPl">Tu planta</h3><span class="sec-nota">crece contigo</span></div>' + plantaHTML() + "</div>" +
       '<div class="bloque-hoy"><div class="sec-cab"><h3 id="hAt">Atajos</h3></div><div class="notas-fila">' +
       '<a class="nota-boton" data-subject="ipe" href="#/agenda"><b>Horario</b><span class="mano">la semana entera</span></a>' +
       '<a class="nota-boton amarilla" href="#/agenda/calendario"><b>Calendario</b><span class="mano">mes y curso</span></a>' +
       '<a class="nota-boton" data-subject="lab" href="#/asignaturas"><b>Unidades</b><span class="mano">repaso y simulacro</span></a>' +
+      '<a class="nota-boton amarilla" href="#/pomodoro"><b>Pomodoro</b><span class="mano">bloques de estudio y descanso</span></a>' +
       '<a class="nota-boton lila" href="../centro/"><b>El centro</b><span class="mano">el pasillo y las salas en 3D</span></a></div></div></div>';
 
     var html = '<header class="cab cab-hoy">' + cab + '<p class="resumen" id="resumen">' + esc(L.resumenHoy(EVS, h, n, ex)) + "</p></header>" +
+      siguienteHTML(n, ex) + avisosHTML(n) +
+      '<details class="mas-hoy" id="masHoy"' + (MAS_ABIERTO ? " open" : "") + '><summary>' + ico("siguiente", "pl-ico") + '<span class="mas-t">Más para hoy</span><span class="mas-n">examen, entregas, tarjetas, la semana y tu planta</span></summary>' +
       '<div class="tramos">' +
-      tramo("01", "hAhora", "Ahora", "lo que no puede esperar", ahoraHTML, "tramo-ahora") +
+      tramo("01", "hAhora", "Ahora", "lo urgente y cuánto tiempo tienes", ahoraHTML, "tramo-ahora") +
       tramo("02", "hEx", "Para tu examen", ex ? esc(A[ex.s].nombre) + " · " + L.diaRelativo(ex.date, n).toLowerCase() : "", examenHTML, "tramo-examen") +
       tramo("03", "hPend", "Pendientes y próximos días", "", pendHTML, "tramo-pend") +
       tramo("04", "hFin", "Lo demás", "", finHTML, "tramo-fin") +
-      "</div>" + (G ? '<p class="guia-pie"><a href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p>" : "");
+      "</div></details>" + (G ? '<p class="guia-pie"><a href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p>" : "");
     return { sec: "hoy", titulo: "Hoy", html: html, tic: true };
   }
 
@@ -205,25 +265,173 @@
   function hoyClave(n) { return L.clave(n); }
   function estudioHoyPara(e, n) {
     var d = SS && SS.paraExamen ? SS.paraExamen(e) : null, k = hoyClave(n);
-    return !!(d && d.sesiones.some(function (x) { var s = d.estados[x.id]; return s && s.hecha === k; }));
+    return !!(d && d.sesiones.some(function (x) { var s = d.estados[x.id]; return s && (s.hecha === k || s.ratoA === k || s.ratoB === k); }));
+  }
+  function vispera(u) {
+    var U = D.unidad(u), n = ahora(), mejor = null;
+    if (!U) return null;
+    EVS.forEach(function (e) {
+      if ((e.tipo !== "examen" && e.tipo !== "oral") || L.difDias(e.date, n) < 1) return;
+      if (e.unidad ? e.unidad !== u : e.s !== U.s) return;
+      if (!mejor || e.date < mejor.date) mejor = e;
+    });
+    return mejor ? L.clave(new Date(mejor.date.getFullYear(), mejor.date.getMonth(), mejor.date.getDate() - 1)) : null;
+  }
+  function avisosLista(n) {
+    return PL ? PL.avisos({ evs: EVS, entregadas: hechas(), descartados: leer("personal.avisos", {}) || {}, hoy: n, estudioHoy: function (e) { return estudioHoyPara(e, n); } }) : [];
   }
   function avisosHTML(n) {
     if (!PL) return "";
-    var lista = PL.avisos({ evs: EVS, entregadas: hechas(), descartados: leer("personal.avisos", {}) || {}, hoy: n, estudioHoy: function (e) { return estudioHoyPara(e, n); } });
+    var lista = avisosLista(n);
     if (!lista.length) return "";
     return '<div class="avisos-hoy" role="group" aria-label="Avisos que insisten hasta que lo hagas"><ul>' + lista.map(function (a) {
       var S1 = A[a.evento.s] || {}, ir = a.tipo === "estudio" ? "#/examen/" + encodeURIComponent(a.evento.id) : null;
       return '<li class="aviso-hoy nivel-' + a.nivel + '" data-subject="' + esc(a.evento.s) + '"><div><p class="av-k"><span class="av-cod">' + esc((S1.ab || "") + " · " + (a.tipo === "entrega" ? "entrega" : "examen")) + '</span><span class="av-nivel">' + (a.nivel === "hoy" ? ico("alerta") : ico("reloj")) + (a.dias <= 0 ? "Hoy" : a.dias === 1 ? "Mañana" : "En " + a.dias + " días") + '</span></p><p class="av-t"><b>' + esc(a.titulo) + "</b></p><p>" + esc(a.texto) + "</p></div>" +
-        '<div class="av-acc">' + (ir ? '<a class="boton" href="' + esc(ir) + '">Estudiar ahora</a>' : "") + '<button type="button" class="boton secundario" data-aviso="' + esc(a.id) + '">' + esc(a.accion) + "</button></div></li>";
+        '<div class="av-acc">' + (ir ? '<a class="boton" href="' + esc(ir) + '">Estudiar ahora</a>' : "") + '<button type="button" class="boton secundario" data-aviso="' + esc(a.id) + '">' + esc(a.accion) + "</button>" + (a.otra ? '<button type="button" class="boton secundario" data-aviso-no="' + esc(a.id) + '">' + esc(a.otra) + "</button>" : "") + "</div></li>";
     }).join("") + "</ul></div>";
   }
   function planHTML(ex, n) {
     if (!PL || !SS || !SS.paraExamen) return "";
     var d = SS.paraExamen(ex); if (!d || !d.sesiones.length) return "";
-    var p = PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: d.estados, hoy: n }); if (!p) return "";
-    var lista = p.hoyToca.length ? '<ol class="plan-hoy">' + p.hoyToca.map(function (x) { return '<li><a href="#/sesion/' + encodeURIComponent(x.id) + '">' + esc(x.titulo) + "</a> <span class=\"num\">" + (+x.minutos || 0) + "\u00a0min</span></li>"; }).join("") + "</ol>" : "";
-    return '<div class="plan-ex ritmo-' + p.ritmo + '"><p class="plan-k">Tu plan hasta el examen · ' + p.hechas + " de " + p.total + " sesiones</p><p>" + esc(p.mensaje) + "</p>" + (lista ? '<p class="plan-sub">Hoy:</p>' + lista : "") + "</div>";
+    var p = PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: d.estados, hoy: n, minutosDia: minDia() }); if (!p) return "";
+    var hoyL = hoyRatos(n), mios = hoyL.items.filter(function (x) { return x.ex && x.ex.id === ex.id; });
+    var lista = mios.length ? '<ol class="plan-hoy">' + mios.map(function (x) { return '<li><a href="#/sesion/' + encodeURIComponent(x.id) + '">' + esc(x.titulo) + "</a> <small>rato " + x.rato + '</small> <span class="num">' + (+x.minutos || 0) + "\u00a0min</span></li>"; }).join("") + "</ol>" : "";
+    return '<div class="plan-ex ritmo-' + p.ritmo + '"><p class="plan-k">Tu plan hasta el examen · ' + p.hechas + " de " + p.total + " sesiones</p><p>" + esc(p.mensaje) + "</p>" + (hoyL.mensaje ? '<p class="plan-sub">' + esc(hoyL.mensaje) + "</p>" : "") + (lista ? '<p class="plan-sub">Hoy:</p>' + lista : "") +
+      '<p class="plan-min">Con ' + p.minutosDia + ' min al día. <a href="#/mesa">Cambiar mis minutos</a></p></div>';
   }
+  /* los ratos de sesión de hoy entre todos los exámenes cercanos (14 días), con el tope global: dos exámenes, uno de cada */
+  function hoyRatos(n) {
+    if (!PL || !SS || !SS.paraExamen) return { items: [], mensaje: "" };
+    var planes = [];
+    EVS.filter(function (e) { var d = L.difDias(e.date, n); return (e.tipo === "examen" || e.tipo === "oral") && d >= 0 && d <= 14; })
+      .sort(function (a, b) { return a.date - b.date; }).forEach(function (ex) {
+        var d = SS.paraExamen(ex); if (!d || !d.sesiones.length) return;
+        var p = PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: d.estados, hoy: n, minutosDia: minDia() }); if (p) planes.push({ ex: ex, plan: p });
+      });
+    return PL.repartir(planes);
+  }
+  /* ---------- tiempos (app/plan.js › pendientesTiempo, tanda, ritmo) ----------
+     Qué hay pendiente, cuánto lleva cada cosa (de menos a más) y el total para ponerse al día; y «tengo X minutos».
+     Guardado: personal.estimaciones.<id de entrega> = minutos que pone el estudiante; personal.ritmo = lo medido de sus sesiones. */
+  var S2M = window.CorteSM2, TANDA_MIN = null, PT_ABIERTO = false, MAS_ABIERTO = false;
+  /* el recorrido de sesiones (para el ritmo y los títulos): el mismo índice que usa sesion.js, que el service worker ya guarda */
+  var INDICE_L = null;
+  function cargarIndice() {
+    if (INDICE_L) return;
+    INDICE_L = [];
+    fetch("sesiones/indice.json", { credentials: "same-origin" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { INDICE_L = Array.isArray(j.sesiones) ? j.sesiones : []; if (/^#\/(hoy|pomodoro)|^$/.test(location.hash)) pintar(true); })
+      .catch(function () { INDICE_L = null; });
+  }
+  function tituloSesion(id) { if (id === "repaso") return "Repaso de hoy"; var s = (INDICE_L || []).filter(function (x) { return x.id === id; })[0]; return s ? s.titulo : ""; }
+  function ritmoGuardado() { var r = leer("personal.ritmo", {}); return r && typeof r === "object" ? r : {}; }
+  function ritmoActual() {
+    if (!PL || !INDICE_L || !INDICE_L.length) return null;
+    var r = ritmoGuardado();
+    return PL.ritmo({ medidas: r.medidas || {}, sesiones: INDICE_L, estados: leer("personal.sesiones", {}) || {} });
+  }
+  /* medir el ritmo real: el tiempo con una sesión abierta y la pantalla a la vista (cada tramo, como mucho 45 min).
+     Solo mientras la sesión no está hecha; al terminarla, la medida queda y ajusta las estimaciones. */
+  var medida = null;
+  function medirCorte() {
+    if (!medida) return;
+    var m = medida, d = Date.now() - m.t0; medida = null;
+    if (d < 5000) return;
+    var r = ritmoGuardado(), med = {}, x;
+    for (x in r.medidas || {}) if (tiene(r.medidas, x)) med[x] = r.medidas[x];
+    med[m.id] = Math.round(((+med[m.id] || 0) + Math.min(d, 45 * 6e4) / 6e4) * 10) / 10;
+    var o = { medidas: med }, ra;
+    guardar("personal.ritmo", o);
+    ra = ritmoActual();
+    if (ra) { o.factor = ra.factor; o.n = ra.n; guardar("personal.ritmo", o); }
+  }
+  function medirInicio() {
+    var r = leerRuta(), est = leer(["personal", "sesiones", r.arg || "_"], null);
+    if (r.sec === "sesion" && r.arg && r.arg !== "repaso" && !document.hidden && !(est && est.hecha)) medida = { id: r.arg, t0: Date.now() };
+  }
+  document.addEventListener("visibilitychange", function () { if (document.hidden) medirCorte(); else medirInicio(); });
+  window.addEventListener("pagehide", medirCorte);
+
+  function tiempos(n) {
+    if (!PL) return null;
+    var k = L.clave(n), cs, x, nRep = 0;
+    var rp = leer(["personal", "sesiones", "_repaso"], null);
+    if (rp && typeof rp === "object" && rp.fecha === k && Array.isArray(rp.cola)) nRep = Math.max(0, rp.cola.length - (+rp.k || 0));
+    else { cs = leer("personal.conceptos", {}) || {}; for (x in cs) if (tiene(cs, x) && cs[x] && cs[x].due && cs[x].due <= k && (!cs[x].ult || cs[x].ult < k)) nRep++; nRep = Math.min(nRep, PL.TOPE_REPASO); }
+    var tj = S2M ? D.UNIDADES.map(function (u) { var m = leer(["unidades", u.id, "tarjetas"], {}); return { u: u.id, titulo: u.codigo, n: S2M.pendientes(m && typeof m === "object" ? m : {}, k) }; }) : [];
+    var ses = [], hr = hoyRatos(n);
+    hr.items.forEach(function (s) { ses.push({ id: s.id, titulo: s.titulo, minutos: s.minutos, rato: s.rato, vence: s.ex.date, examen: (A[s.ex.s] ? A[s.ex.s].ab + " · " : "") + s.ex.titulo.replace(/^Examen · /, "") }); });
+    /* sin examen que guíe: el siguiente rato del recorrido también se puede meter en una tanda */
+    if (!ses.length && SS && SS.hoyInfo) { var inf = SS.hoyInfo(); if (inf.sesion) ses.push({ id: inf.sesion.id, titulo: inf.sesion.titulo, minutos: inf.sesion.minutos, rato: inf.sesion.rato, vence: null }); }
+    var ent = L.pendientes(EVS, hechas(), n).filter(function (e) { return e.tipo === "entrega" && L.difDias(e.date, n) <= 14; })
+      .map(function (e) { return { id: e.id, titulo: (A[e.s] ? A[e.s].ab + " · " : "") + e.titulo, vence: e.due, fecha: e.fecha }; });
+    var ra = ritmoActual(), rg = ritmoGuardado();
+    /* el ritmo calculado se guarda junto a las medidas (personal.ritmo.factor), solo si cambia */
+    if (ra && (rg.factor !== ra.factor || rg.n !== ra.n)) guardar("personal.ritmo", { medidas: rg.medidas || {}, factor: ra.factor, n: ra.n });
+    var t = PL.pendientesTiempo({ hoy: n, factor: ra ? ra.factor : 1, repaso: nRep, tarjetas: tj, sesiones: ses, entregas: ent, estimaciones: leer("personal.estimaciones", {}) || {} });
+    t.ritmo = ra; t.hoyK = k; t.entregasHoy = {}; ent.forEach(function (e) { if (e.fecha === k) t.entregasHoy[e.id] = 1; });
+    return t;
+  }
+  function cuandoTxt(x) { return x.dias === null ? "" : x.dias === 0 ? "vence hoy" : x.dias === 1 ? "mañana" : "en " + x.dias + " días"; }
+  /* el enlace de cada cosa: la entrega de hoy salta a su casilla; las demás, al calendario */
+  function enlaceItem(x, t, txt) {
+    if (x.tipo === "entrega" && t.entregasHoy[x.eid]) return '<button type="button" class="pt-ir" data-ir="t-' + esc(x.eid) + '">' + txt + "</button>";
+    var h = x.tipo === "repaso" ? "#/sesion/repaso" : x.tipo === "tarjetas" ? "#/tarjetas/" + encodeURIComponent(x.u) : x.tipo === "sesion" ? "#/sesion/" + encodeURIComponent(x.sid) : "#/agenda/calendario";
+    return '<a href="' + h + '">' + txt + "</a>";
+  }
+  function minTxt(m) { return m === null ? "" : PL.duracion(m).replace(/ /g, " "); }
+  /* 03 · «Para ponerte al día»: la lista de menos a más y el total */
+  function ponerseAlDiaHTML(t) {
+    if (!t) return "";
+    var cab = '<div class="sec-cab"><h3 id="hDia">Para ponerte al día</h3><span class="sec-nota">de lo más corto a lo más largo</span></div>';
+    if (!t.items.length) return '<div class="bloque-hoy pt" aria-labelledby="hDia">' + cab + '<p class="vacio-linea">' + ico("check") + "<span>Nada pendiente con tiempo. Estás al día.</span></p></div>";
+    var li = t.items.map(function (x) {
+      var tit = esc(x.titulo), meta = esc(x.detalle) + (cuandoTxt(x) ? " · " + cuandoTxt(x) : "");
+      var dcha;
+      if (x.tipo === "entrega") dcha = x.minutos === null
+        ? '<form class="pt-estima" data-estima="' + esc(x.eid) + '"><label><span class="pt-pon">pon tú el tiempo</span><span class="sr"> para ' + tit + ", en minutos</span>" +
+          '<input type="number" inputmode="numeric" name="min" min="1" max="600" placeholder="min" required></label><button type="submit" class="boton secundario pt-poner">Apuntar</button></form>'
+        : '<span class="pt-min num">' + minTxt(x.minutos) + '</span><button type="button" class="pt-cambiar" data-estima-borrar="' + esc(x.eid) + '">cambiar<span class="sr"> el tiempo de ' + tit + "</span></button>";
+      else dcha = '<span class="pt-min num">' + minTxt(x.minutos) + "</span>";
+      return '<li class="pt-item pt-' + x.tipo + '"><span class="pt-que">' + enlaceItem(x, t, "<b>" + tit + "</b>") + "<small>" + meta + "</small></span>" + dcha + "</li>";
+    }).join("");
+    var tot = '<p class="pt-total">Todo lo pendiente: <b class="num">≈ ' + esc(PL.duracion(t.total)) + "</b>" + (t.sinEstimar ? ", más " + (t.sinEstimar === 1 ? "una entrega" : t.sinEstimar + " entregas") + " sin tiempo" : "") + ". No es para hoy: hoy, lo de arriba.</p>";
+    var rit = t.ritmo ? '<p class="pt-ritmo">' + ico("info") + "<span>Sesiones ajustadas a tu ritmo: " + (t.ritmo.factor === 1 ? "duran lo previsto" : t.ritmo.factor > 1 ? "te llevan un " + Math.round((t.ritmo.factor - 1) * 100) + " % más de lo previsto" : "te llevan un " + Math.round((1 - t.ritmo.factor) * 100) + " % menos de lo previsto") + " (medido en " + t.ritmo.n + " sesiones).</span></p>" : "";
+    return '<div class="bloque-hoy pt" aria-labelledby="hDia">' + cab + '<details class="pt-plegado"' + (PT_ABIERTO ? " open" : "") + ' id="ptPlegado"><summary>Ver todo lo pendiente</summary>' + tot + '<ol class="pt-lista">' + li + "</ol>" + rit + "</details></div>";
+  }
+  /* 01 · «Tengo X minutos»: arma una tanda con lo más urgente que quepa */
+  function tengoHTML(t) {
+    if (!t) return "";
+    var bot = [10, 25, 45].map(function (m) { return '<button type="button" data-tengo="' + m + '" aria-pressed="' + (TANDA_MIN === m) + '">' + m + " min</button>"; }).join("");
+    var otro = TANDA_MIN && [10, 25, 45].indexOf(TANDA_MIN) < 0 ? TANDA_MIN : "";
+    var h = '<div class="tengo" role="group" aria-labelledby="hTengo"><h3 id="hTengo" class="tengo-k">¿Cuánto tiempo tienes?</h3>' +
+      '<div class="tengo-fila"><div class="segmentado tengo-botones">' + bot + "</div>" +
+      '<form class="tengo-otro" data-tengo-form><label for="tengoMin">Otro</label><input id="tengoMin" type="number" inputmode="numeric" name="min" min="5" max="240" placeholder="min" value="' + otro + '"><button type="submit" class="boton secundario">Armar</button></form></div>';
+    if (TANDA_MIN) {
+      var r = PL.tanda(t.items, TANDA_MIN);
+      h += '<div class="tanda" id="tandaRes" tabindex="-1">';
+      if (!r.items.length) h += "<p>" + (t.items.length ? "En " + TANDA_MIN + " min no cabe nada de lo pendiente entero. Un bloque de tarjetas sin prisa también cuenta." : "Estás al día: no hay nada pendiente. Si te apetece, un Pomodoro libre.") + "</p>";
+      else h += '<p class="tanda-k">Para tus ' + TANDA_MIN + " min, lo más urgente que cabe" + (r.sobran >= 3 ? " (sobran " + r.sobran + ")" : "") + ":</p>" +
+        '<ol class="tanda-lista">' + r.items.map(function (x) { return "<li>" + enlaceItem(x, t, "<b>" + esc(x.titulo) + "</b>") + ' <span class="num tanda-min">' + minTxt(x.minutos) + (x.parcial ? " de " + minTxt(t.items.filter(function (y) { return y.id === x.id; })[0].minutos) : "") + "</span>" + (cuandoTxt(x) ? " <small>" + cuandoTxt(x) + "</small>" : "") + "</li>"; }).join("") + "</ol>";
+      if (r.sinTiempo.length) h += '<p class="tanda-nota">' + ico("alerta") + "<span>Sin tiempo puesto: " + r.sinTiempo.map(function (x) { return esc(x.titulo) + " (" + cuandoTxt(x) + ")"; }).join(", ") + '. Ponle minutos en <button type="button" class="pt-ir" data-ir="hDia">Para ponerte al día</button>.</span></p>';
+      h += '<div class="acciones"><a class="boton" href="#/pomodoro/tanda/' + TANDA_MIN + '">' + ico("reloj") + "Pomodoro de " + TANDA_MIN + " min</a></div></div>";
+    } else h += '<p class="tengo-pie"><a href="#/pomodoro">' + ico("reloj") + (PO && PO.enMarcha() ? "Volver al Pomodoro en marcha" : "Pomodoro libre") + "</a></p>";
+    return h + "</div>";
+  }
+  function tandaAnuncio() {
+    var t = tiempos(ahora()); if (!t || !TANDA_MIN) return "";
+    var r = PL.tanda(t.items, TANDA_MIN);
+    return r.items.length ? "Tanda de " + TANDA_MIN + " minutos: " + r.items.map(function (x) { return x.titulo; }).join(", ") + "." : "En " + TANDA_MIN + " minutos no cabe nada de lo pendiente.";
+  }
+  function decir(t) { var c = $("#anuncio"); if (!c || !t) return; c.textContent = ""; setTimeout(function () { c.textContent = t; }, 60); }
+  function ponerEstimacion(id, v) {
+    var o = {}, e = leer("personal.estimaciones", {}) || {};
+    for (var x in e) if (tiene(e, x)) o[x] = e[x];
+    if (v === null) delete o[id]; else o[id] = v;
+    if (!guardar("personal.estimaciones", o)) { aviso("No se pudo guardar. Revisa el espacio del navegador.", "error"); return false; }
+    return true;
+  }
+
   /* ---------- estudiar para un examen: #/examen/<id del evento> (solo lo que entra, con plan, conceptos y tarjetas) ---------- */
   function pExamen(id) {
     var cabV = function (t) { return { sec: "hoy", titulo: "Examen", html: '<header class="cab">' + titulo("Para tu <em>examen</em>") + "</header>" + t }; };
@@ -237,11 +445,17 @@
       titulo(esc(ex.titulo.replace(/^Examen · /, ""))) +
       (ex.diapositivas ? '<p class="sub">Entra: diapositivas ' + esc(ex.diapositivas.replace("-", " a ")) + (ex.unidad && D.unidad(ex.unidad) ? " de " + esc(D.unidad(ex.unidad).codigo + " · " + D.unidad(ex.unidad).titulo) : "") + ".</p>" : "") + "</header>";
     if (!d) return { sec: "hoy", titulo: "Examen", html: cab + cargando("Reuniendo lo que entra") };
-    var p = PL ? PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: leer("personal.sesiones", {}) || {}, hoy: n }) : null;
+    var p = PL ? PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: leer("personal.sesiones", {}) || {}, hoy: n, minutosDia: minDia() }) : null;
     var repasoU = ex.unidad || (d.sesiones[0] && d.sesiones[0].unidad);
     var minS = d.sesiones.filter(function (s) { return !s.hecha; }).reduce(function (a, s) { return a + s.minutos; }, 0);
     var minRep = 15, minTj = Math.max(5, Math.round(d.tarjetas.length * 0.7));
     var repEx = ex.unidad && D.unidad(ex.unidad) && ex.diapositivas ? '<li class="ex-paso ex-destacado"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="../' + esc(ex.unidad) + '/examen/"><b>Repaso para el examen, todo en una página</b></a><small>lo de la profe, test, casos, tarjetas y chuleta</small></div></li>' : "";
+    /* primero, recuperar: práctica con nota (lo fallado va a Errores), las tarjetas puntuadas y releer solo lo fallado */
+    var uEx = repasoU && D.unidad(repasoU) ? repasoU : null;
+    var paso = function (href, tit, sub, cls) { return '<li class="ex-paso' + (cls ? " " + cls : "") + '"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="' + esc(href) + '"><b>' + esc(tit) + "</b></a><small>" + esc(sub) + "</small></div></li>"; };
+    var recupera = uEx ? paso("#/practica/" + encodeURIComponent(uEx), "Ponte a prueba", "práctica con nota; lo que falles va a Errores · 10\u00a0min", "ex-destacado") +
+      paso("#/tarjetas/" + encodeURIComponent(uEx), "Las tarjetas, puntuadas", "dilo antes de girarla; cada una vuelve cuando toca · " + minTj + "\u00a0min") +
+      paso("#/errores", "Relee solo lo que fallaste", "tu mazo de errores, no todo el tema") : "";
     var pasos = repEx + d.sesiones.map(function (s) {
       return '<li class="ex-paso' + (s.hecha ? " hecho" : "") + '"><span class="ex-ico" aria-hidden="true">' + ico(s.hecha ? "check" : "siguiente") + '</span><div><a href="#/sesion/' + encodeURIComponent(s.id) + '"><b>' + esc(s.titulo) + "</b></a><small>" + (s.hecha ? "hecha" : s.empezada ? "a medias · sigue donde ibas" : "sesión de estudio") + " · " + s.minutos + "\u00a0min</small></div></li>";
     }).join("") +
@@ -256,11 +470,18 @@
     }).join("");
     var html = cab +
       (p ? '<div class="plan-ex ritmo-' + p.ritmo + '"><p>' + esc(p.mensaje) + "</p></div>" : "") +
-      '<section class="ex-sec" aria-labelledby="hExP"><div class="sec-cab"><h2 id="hExP">Cómo prepararlo</h2><span class="mano">unos ' + total + " min en total</span></div><ol class=\"ex-pasos\">" + pasos + "</ol></section>" +
+      (recupera ? '<section class="ex-sec" aria-labelledby="hExR"><div class="sec-cab"><h2 id="hExR">Primero, recuperar</h2><span class="mano">sacarlo de la cabeza fija más que releer</span></div><ol class="ex-pasos">' + recupera + "</ol></section>" : "") +
+      '<section class="ex-sec" aria-labelledby="hExP"><div class="sec-cab"><h2 id="hExP">' + (recupera ? "Y para completar" : "Cómo prepararlo") + '</h2><span class="mano">unos ' + total + " min en total</span></div><ol class=\"ex-pasos\">" + pasos + "</ol></section>" +
       '<section class="ex-sec" aria-labelledby="hExC"><div class="sec-cab"><h2 id="hExC">Lo que entra</h2></div><ol class="ex-conceptos">' + conceptos + "</ol></section>" +
       (d.tarjetas.length ? '<section class="ex-sec" aria-labelledby="hExT" id="ex-tarjetas"><div class="sec-cab"><h2 id="hExT">Tarjetas del examen</h2><span class="mano">dilo antes de abrir</span></div>' + tarjetas + "</section>" : "") +
       '<p class="ex-pie">Mañana, antes del examen: diez minutos con las tarjetas que te costaron. Nada nuevo.</p>';
     return { sec: "hoy", titulo: "Examen · " + ex.titulo.replace(/^Examen · /, ""), subject: ex.s, html: html };
+  }
+  /* «Hoy no puedo»: calla el aviso hasta mañana sin apuntar estudio */
+  function avisoNoPuedo(id) {
+    if (!guardar("personal.avisos", PL.noPuedo(leer("personal.avisos", {}) || {}, id, ahora()))) { aviso("No se pudo guardar. Revisa el espacio del navegador.", "error"); return; }
+    aviso("Vale. Mañana lo vemos.");
+    pintar(false);
   }
   function avisoHecho(id) {
     var n = ahora();
@@ -274,6 +495,7 @@
       aviso("Entregado. Este aviso ya no saldrá.");
     } else {
       guardar("personal.avisos", PL.descartar(leer("personal.avisos", {}) || {}, id, n));
+      crecerPlanta();
       aviso("Apuntado. Mañana te lo vuelvo a recordar si el examen sigue cerca.");
     }
     pintar(false);
@@ -281,14 +503,18 @@
 
   var HOJAS = [[58, 104, -1], [60, 94, 1], [58, 84, -1], [59, 74, 1], [57, 64, -1], [57, 54, 1], [58, 44, -1], [60, 36, 1], [59, 27, -1], [58, 20, 1], [59, 15, -1], [58, 12, 1], [60, 10, -1]];
   function plantaHTML() {
-    var dias = leer("personal.planta", []), nd = Array.isArray(dias) ? dias.length : 0, hojas = "";
+    var dias = leer("personal.planta", []), nd = Array.isArray(dias) ? dias.length : 0, hojas = "", forma = L.formaPlanta ? L.formaPlanta(nd) : "hojas";
     for (var i = 0; i < Math.min(nd, HOJAS.length); i++) {
       var p = HOJAS[i], sz = 1 - i * 0.035;
       hojas += '<g class="hoja-p" transform="translate(' + p[0] + " " + p[1] + ") scale(" + (p[2] * sz) + " " + sz + ')"><path d="M0 0 C6 -12 20 -14 28 -10 C22 -2 12 4 0 0 Z"/><path class="vena" d="M1 -1 C9 -6 17 -9 25 -10"/></g>';
     }
-    return '<div class="planta" id="planta" data-subject="sost"><svg viewBox="0 0 118 150" role="img" aria-labelledby="plT"><title id="plT">Planta dibujada con ' + nd + (nd === 1 ? " hoja" : " hojas") + ': una por cada día con algo hecho</title>' +
-      '<path class="tallo" d="M59 118 C57 98 63 84 58 66 C54 50 62 36 59 18"/><g>' + hojas + '</g><path class="maceta" d="M30 112 H88 L80 146 H38 Z"/><rect class="maceta-borde" x="26" y="106" width="66" height="12" rx="3"/></svg>' +
-      '<div><p class="racha num">' + nd + "<small>" + (nd === 1 ? "día" : "días") + "</small></p><p>Cada día que estudias o tachas algo, sale una hoja. Un mal día no la seca: la planta espera a que vuelvas.</p></div></div>";
+    /* pasados 13 días ya no caben hojas: la planta cambia de forma (un botón y después una flor), sin niveles ni números */
+    var flor = forma === "boton" ? '<g class="flor-p"><path class="tallo" d="M59 18 C59 12 60 8 59 4"/><ellipse class="flor-boton" cx="59" cy="5" rx="5" ry="7"/></g>'
+      : forma === "flor" ? '<g class="flor-p" transform="translate(59 8)">' + [0, 72, 144, 216, 288].map(function (g) { return '<ellipse class="flor-petalo" cx="0" cy="-7" rx="4.5" ry="7" transform="rotate(' + g + ')"/>'; }).join("") + '<circle class="flor-centro" r="4"/></g>' : "";
+    var desc = forma === "flor" ? "Planta en flor" : forma === "boton" ? "Planta con un botón a punto de abrirse" : "Planta dibujada con " + nd + (nd === 1 ? " hoja" : " hojas");
+    return '<div class="planta" id="planta" data-subject="sost" data-forma="' + forma + '"><svg viewBox="0 0 118 150" role="img" aria-labelledby="plT"><title id="plT">' + desc + ': crece con cada día con algo hecho</title>' +
+      '<path class="tallo" d="M59 118 C57 98 63 84 58 66 C54 50 62 36 59 18"/><g>' + hojas + "</g>" + flor + '<path class="maceta" d="M30 112 H88 L80 146 H38 Z"/><rect class="maceta-borde" x="26" y="106" width="66" height="12" rx="3"/></svg>' +
+      '<div><p class="dias num">' + nd + "<small>" + (nd === 1 ? "día con algo hecho" : "días con algo hecho") + "</small></p><p>Crece con cualquier estudio: una sesión, el repaso, tarjetas, práctica o un bloque de Pomodoro, y al tachar una entrega. Un mal día no la seca: la planta espera a que vuelvas.</p></div></div>";
   }
 
   function tachar(btn) {
@@ -693,6 +919,7 @@
     var html = '<header class="cab">' + titulo("Mi <em>mesa</em>") + '<p class="sub">Tu colección, cómo se ve, cómo se guarda y cómo llevarla en el móvil.</p></header>' +
       '<div class="rejilla rejilla-mesa">' + albumHTML(col) +
       '<section aria-labelledby="hTe"><h2 id="hTe">Tema</h2><p class="sub">Papel de día, noche para la última hora. «Sistema» sigue al móvil.</p>' + seg("tema", tema, [["sistema", "Sistema"], ["papel", "Papel"], ["noche", "Noche"]], "Tema") + "</section>" +
+      '<section aria-labelledby="hMin"><h2 id="hMin">Tu tiempo al día</h2><p class="sub">Con esto se calcula tu plan hasta cada examen. Mejor poco y todos los días.</p>' + seg("mindia", String(minDia()), [["10", "10 min"], ["20", "20 min"], ["30", "30 min"], ["45", "45 min"], ["60", "1 h"]], "Minutos de estudio al día") + "</section>" +
       '<section aria-labelledby="hHo"><h2 id="hHo">Formato de hora</h2><p class="sub">La primera clase: <b class="num" id="ejHora">' + L.hora("14:45", f) + "</b></p>" + seg("hora", f, [["ambas", "Ambas"], ["24", "24 h"], ["12", "12 h"]], "Formato de la hora") + "</section>" +
       '<section class="ancho" aria-labelledby="hCo"><h2 id="hCo">Copia de seguridad</h2><p>Tu progreso se guarda en este dispositivo. Haz una copia para no perderlo o para pasarlo a otro móvil. Al restaurar no se borra nada que no venga en la copia.</p>' +
       '<div class="acciones-copia"><button class="boton" type="button" id="bkSave">' + ico("descargar") + 'Guardar copia de mi progreso</button><button class="boton secundario" type="button" id="bkCopy">Copiar al portapapeles</button>' +
@@ -755,7 +982,7 @@
   }
 
   /* ================= estudiar (app/estudio.js) ================= */
-  var E = window.CorteEstudio({ D: D, A: A, esc: esc, ico: ico, SPR: SPR, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: canal, refrescar: refrescarColeccion,
+  var E = window.CorteEstudio({ D: D, A: A, esc: esc, ico: ico, SPR: SPR, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardarEstudio, vispera: vispera, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: canal, refrescar: refrescarColeccion,
     pintar: function (q) { pintar(q); }, repintar: repintar });
   /* sesión de estudio (app/sesion.js): misterio → descubre → sin mirar → resuelve → lo de otros días */
   /* el examen que guía «Tu sesión de hoy»: solo si cae en los próximos 14 días */
@@ -764,7 +991,7 @@
     if (!ex || L.difDias(ex.date, n) > 14) return null;
     return { ex: ex, cuando: L.diaRelativo(ex.date, n) };
   }
-  var SS = window.CorteSesion ? window.CorteSesion({ examen: examenGuia, D: D, A: A, esc: esc, ico: ico, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: canal, refrescar: refrescarColeccion, rico: E.rico,
+  var SS = window.CorteSesion ? window.CorteSesion({ examen: examenGuia, vispera: vispera, D: D, A: A, esc: esc, ico: ico, MESES: L.MESES, ahora: ahora, leer: leer, guardar: guardar, aviso: aviso, cargando: cargando, ruta: ruta, titulo: titulo, pegatina: canal, refrescar: refrescarColeccion, rico: E.rico,
     pintar: function (q) { pintar(q); }, repintar: repintar }) : null;
   /* bienvenida (app/bienvenida.js): la primera vez, llegada → guía → Hoy; #/guia para volver a ver la guía */
   var MARCA = window.EnfoqueMarca || null;
@@ -782,12 +1009,22 @@
     var u = leer("unidades", {}), pl = leer("personal.planta", []), se = leer("personal.sesiones", {});
     return !!((u && typeof u === "object" && Object.keys(u).length) || (Array.isArray(pl) && pl.length) || Object.keys(hechas()).length || (se && typeof se === "object" && Object.keys(se).length));
   }
-  function pSesionE(id) { return SS ? SS.sesion(id) : pNada(); }
+  /* la sesión, tal cual la pinta sesion.js; aquí solo se añade, bajo su cabecera, el enlace al Pomodoro */
+  function pSesionE(id) {
+    if (!SS) return pNada();
+    var p = SS.sesion(id);
+    if (p && PO && typeof p.html === "string" && p.html.indexOf("</header>") > 0) p.html = p.html.replace("</header>", "</header>" + '<p class="pomo-enlace"><a href="' + (PO.enMarcha() ? "#/pomodoro" : "#/pomodoro/sesion/" + encodeURIComponent(id)) + '">' + ico("reloj") + (PO.enMarcha() ? "Pomodoro en marcha" : "Estudiar esto con Pomodoro") + "</a></p>");
+    return p;
+  }
+  /* Pomodoro (app/pomodoro.js): #/pomodoro, #/pomodoro/sesion/<id>, #/pomodoro/tanda/<min> */
+  var PO = window.EnfoquePomodoro ? window.EnfoquePomodoro.crear({ leer: leer, guardar: guardarEstudio, aviso: aviso, ahora: ahora, esc: esc, ico: ico, titulo: titulo,
+    duracion: function (m) { return PL ? PL.duracion(m) : m + " min"; }, anunciar: decir, tituloSesion: tituloSesion, pintar: function (q) { pintar(q); } }) : null;
+  function pPomodoro(tipo, arg) { if (!PO) return pNada(); cargarIndice(); return PO.pantalla(tipo, arg); }
   function pPractica(id, a2) { return E.practica(id, a2) || pNada(); }
   function pTarjetas(id) { return E.tarjetas(id) || pNada(); }
 
   /* ================= rutas y pintado ================= */
-  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas, sesion: pSesionE, guia: pGuia, llegada: pLlegada, examen: pExamen };
+  var PANT = { hoy: pHoy, agenda: pAgenda, asignaturas: pAsignaturas, asignatura: pAsignatura, unidad: pUnidad, lectura: pLectura, errores: pErrores, mesa: pMesa, practica: pPractica, tarjetas: pTarjetas, sesion: pSesionE, guia: pGuia, llegada: pLlegada, examen: pExamen, pomodoro: pPomodoro };
   function leerRuta() {
     var h = location.hash.replace(/^#\/?/, ""), p = h.split("/");
     var arg = null, arg2 = null; try { arg = p[1] ? decodeURIComponent(p[1]) : null; arg2 = p[2] ? decodeURIComponent(p[2]) : null; } catch (_) {}
@@ -836,7 +1073,7 @@
       examen: function () { pintar(false); }
     });
   }
-  window.addEventListener("hashchange", function () { if (/^#\/|^$/.test(location.hash)) cambiar(); });
+  window.addEventListener("hashchange", function () { medirCorte(); if (/^#\/|^$/.test(location.hash)) cambiar(); medirInicio(); });
   var salta = $(".saltar"); if (salta) salta.addEventListener("click", function (e) { e.preventDefault(); var h = $("#titulo") || vista; h.focus(); });
 
   /* ---------- reloj: cuentas atrás ---------- */
@@ -844,12 +1081,14 @@
     if (!actual || !actual.tic || !AG) return;
     var n = ahora();
     moverAhora();
-    $$("[data-cuenta]").forEach(function (el) { var e = EVS.filter(function (x) { return x.id === el.getAttribute("data-cuenta"); })[0]; if (e) el.textContent = L.cuentaAtras(e.due - n); });
+    $$("[data-cuenta]").forEach(function (el) { var e = EVS.filter(function (x) { return x.id === el.getAttribute("data-cuenta"); })[0]; if (e) el.textContent = e.tipo === "examen" || e.tipo === "oral" ? L.faltan(e.due - n, L.difDias(e.date, n)).texto.toLowerCase() : L.cuentaAtras(e.due - n); });
     var h = hechas();
     $$("[data-queda]").forEach(function (el) { var e = EVS.filter(function (x) { return x.id === el.getAttribute("data-queda"); })[0]; if (e) el.textContent = h[e.id] ? "entregada" : e.due > n ? "quedan " + L.cuentaAtras(e.due - n, true) : "plazo cerrado"; });
     if ($('[data-lcd="0"]')) {
-      var ex = L.proximoExamen(EVS, D.UNIDADES, AG.horario, n), pr = L.partes(ex ? ex.due - n : 0);
-      pr.forEach(function (x, i) { $('[data-lcd="' + i + '"]').textContent = x[0]; $('[data-lcdu="' + i + '"]').textContent = x[1]; });
+      var ex = L.proximoExamen(EVS, D.UNIDADES, AG.horario, n), fa = L.faltan(ex ? ex.due - n : 0, ex ? L.difDias(ex.date, n) : 0);
+      [0, 1].forEach(function (i) { var x = fa.partes[i] || ["", ""]; $('[data-lcd="' + i + '"]').textContent = x[0]; $('[data-lcdu="' + i + '"]').textContent = x[1]; });
+      var lc = $("[data-lcd-cual]"), et = fa.texto + " para el " + (lc ? lc.getAttribute("data-lcd-cual") : "examen");
+      if (lc && lc.getAttribute("aria-label") !== et) lc.setAttribute("aria-label", et);
     }
   }
   setInterval(function () { if (!document.hidden) tic(); }, 1000);
@@ -860,9 +1099,18 @@
     if (!t || !vista.contains(t) && !t.closest(".mesa")) return;
     if (t.hasAttribute("data-tarea")) return tachar(t);
     if (t.hasAttribute("data-aviso")) return avisoHecho(t.getAttribute("data-aviso"));
+    if (t.hasAttribute("data-aviso-no")) return avisoNoPuedo(t.getAttribute("data-aviso-no"));
+    if (t.hasAttribute("data-cuando-borrar")) { ponerPref("cuando", ""); return repintarConFoco("#cuandoIn"); }
+    if (t.hasAttribute("data-mindia")) {
+      var md = PL ? PL.minutosDia(t.getAttribute("data-mindia")) : 20;
+      if (!ponerPref("minutosDia", md)) aviso("No se pudo guardar la preferencia.", "error"); else decir("Apuntado: " + md + " minutos al día.");
+      return repintarConFoco('[data-mindia="' + md + '"]');
+    }
     if (t.hasAttribute("data-pp")) return profeMarcar(t.getAttribute("data-pp"));
+    if (t.hasAttribute("data-tengo")) { TANDA_MIN = +t.getAttribute("data-tengo"); repintarConFoco('[data-tengo="' + TANDA_MIN + '"]'); return decir(tandaAnuncio()); }
+    if (t.hasAttribute("data-estima-borrar")) { var eb = t.getAttribute("data-estima-borrar"); if (ponerEstimacion(eb, null)) repintarConFoco('[data-estima="' + eb + '"] input'); return; }
     if (t.getAttribute("data-accion") === "reintentar") { vista.innerHTML = cargando("Cargando la agenda"); return cargarAgenda(); }
-    if (t.hasAttribute("data-ir")) { var d = document.getElementById(t.getAttribute("data-ir")); if (d) { d.scrollIntoView({ block: "center", behavior: M.modo() === "completo" ? "smooth" : "auto" }); var c = d.querySelector(".casilla"); if (c) c.focus({ preventScroll: true }); } return; }
+    if (t.hasAttribute("data-ir")) { var d = document.getElementById(t.getAttribute("data-ir")); if (d) { abrirHasta(d); d.scrollIntoView({ block: "center", behavior: M.modo() === "completo" ? "smooth" : "auto" }); var c = d.querySelector(".casilla"); if (c) c.focus({ preventScroll: true }); } return; }
     if (t.hasAttribute("data-hora")) {
       var v = L.formatoValido(t.getAttribute("data-hora"));
       if (!ponerPref("hora", v)) aviso("No se pudo guardar la preferencia.", "error");
@@ -880,7 +1128,34 @@
       return repintarConFoco('[data-mes="' + paso + '"]:not([disabled])', '[data-mes="' + (-paso) + '"]');
     }
   });
-  function repintarConFoco(sel, alt) { pintar(true); var b = $(sel, vista) || (alt && $(alt, vista)); if (b) b.focus({ preventScroll: true }); }
+  /* formularios pequeños de Hoy: los minutos de una entrega y «tengo X minutos» (otro) */
+  document.addEventListener("submit", function (ev) {
+    var f = ev.target; if (!f || !vista.contains(f)) return;
+    if (f.hasAttribute("data-estima")) {
+      ev.preventDefault();
+      var id = f.getAttribute("data-estima"), v = PL ? PL.minValidos(f.elements.min.value) : null;
+      if (v === null) { aviso("Pon un número de minutos entre 1 y 600.", "error"); f.elements.min.focus(); return; }
+      if (ponerEstimacion(id, v)) { repintarConFoco('[data-estima-borrar="' + id + '"]'); decir("Apuntado: " + v + " min."); }
+    } else if (f.hasAttribute("data-cuando-form")) {
+      ev.preventDefault();
+      var cu = String(f.elements.cuando.value || "").replace(/\s+/g, " ").trim().slice(0, 60);
+      if (!cu) { f.elements.cuando.focus(); return; }
+      if (!ponerPref("cuando", cu)) { aviso("No se pudo guardar.", "error"); return; }
+      repintarConFoco("[data-cuando-borrar]"); decir("Tu plan: " + cu + ", un rato.");
+    } else if (f.hasAttribute("data-tengo-form")) {
+      ev.preventDefault();
+      var m = Math.round(+f.elements.min.value);
+      if (!(m >= 5 && m <= 240)) { aviso("Pon entre 5 y 240 minutos.", "error"); f.elements.min.focus(); return; }
+      TANDA_MIN = m; repintarConFoco("#tandaRes"); decir(tandaAnuncio());
+    }
+  });
+  /* lo que está dentro de un plegable cerrado («Más para hoy», «Ver todo lo pendiente») se abre antes de ir a ello */
+  function abrirHasta(el) { for (var p = el; p && p !== vista; p = p.parentElement) if (p.tagName === "DETAILS" && !p.open) p.open = true; }
+  document.addEventListener("toggle", function (ev) {
+    var d = ev.target; if (!d || !d.id) return;
+    if (d.id === "masHoy") MAS_ABIERTO = d.open; else if (d.id === "ptPlegado") PT_ABIERTO = d.open;
+  }, true);
+  function repintarConFoco(sel, alt) { pintar(true); var b = $(sel, vista) || (alt && $(alt, vista)); if (b) { abrirHasta(b); b.focus({ preventScroll: true }); } }
 
   /* ---------- conexión: avisar al perderla y al recuperarla (lo guardado sigue funcionando) ---------- */
   window.addEventListener("offline", function () { aviso("Sin conexión. Lo que ya abriste sigue funcionando y tu progreso se guarda igual."); });
@@ -898,6 +1173,7 @@
     if (!visto) lg.classList.add("enfocar");
   })();
   pintar(true);
+  medirInicio();
   cargarAgenda();
   try { if (S.persistir) S.persistir(); } catch (_) {}
 })();

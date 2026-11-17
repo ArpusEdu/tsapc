@@ -55,7 +55,7 @@ test("el recorrido: entre 8 y 10 pasos sobre pantallas de verdad, con texto y si
   /* recorre Hoy (01, 02, 03), una unidad, una sesión, la agenda, errores, Mi mesa y el centro */
   const rutas = G.PASOS.map((p) => p.ruta(ctx, "#/hoy"));
   ["#/hoy", "#/unidad/bio3", "#/sesion/x", "#/agenda", "#/errores", "#/mesa", "#/asignaturas"].forEach((r) => assert.ok(rutas.includes(r), r));
-  assert.match(texto, /Ya lo entregué/); assert.match(texto, /Ya estudié hoy/);
+  assert.match(texto, /Ya lo entregué/); assert.match(texto, /Ya lo hice/); assert.match(texto, /Hoy no puedo/);
   assert.match(texto, /Pamplona/); assert.match(texto, /copia/i); assert.match(texto, /Fecha por confirmar/);
   /* la sesión se salta si no hay; dentro de una sesión se queda en ella */
   const ses = G.PASOS.find((p) => p.id === "sesion");

@@ -14,6 +14,18 @@ test("sesión: la nota sale de lo que dijiste sin mirar", () => {
   assert.equal(L.nota([], 0), "bien");
 });
 
+test("sin mirar: sin intento, como mucho «otra»; la primera vez, como mucho «bien»", () => {
+  assert.equal(L.nota([true, true, true], 3, { intento: false }), "otra", "sin palabras ni voz alta no hay «fácil»");
+  assert.equal(L.nota([true, true, true], 3, { primera: true }), "bien");
+  assert.equal(L.nota([true, false, false], 3, { primera: true }), "otra");
+  assert.equal(L.nota([true, true, true], 3, { intento: true }), "facil");
+  assert.equal(L.nota([true, true], 2, { intento: undefined }), "facil", "lo guardado antes, sin el dato, no se castiga");
+  assert.equal(L.hayIntento("", false), false); assert.equal(L.hayIntento("   x ", false), false);
+  assert.equal(L.hayIntento("", true), true, "«Lo he dicho en voz alta» vale");
+  assert.equal(L.hayIntento("célula epitelial", false), true);
+  assert.equal(L.resultado(3, 3), "todo"); assert.equal(L.resultado(2, 4), "mitad"); assert.equal(L.resultado(1, 4), "poco");
+});
+
 test("sesión: datos guardados raros no rompen nada", () => {
   const e = L.estado({ paso: 99, i: -3, apuesta: 7, acierto: "quizá", cola: [{ u: "lab1", id: "x" }, null, { u: 3 }] });
   assert.equal(e.paso, 5); assert.equal(e.i, 0); assert.equal(e.apuesta, ""); assert.equal(e.acierto, null);
@@ -28,15 +40,43 @@ test("sesión: lo de otros días trae primero lo que ya toca y mezcla asignatura
     { unidad: "bio1", bloques: [], tarjetas: [{ id: "z", bloqueNum: "BLOQUE 1" }, { id: "y", bloqueNum: "BLOQUE 2" }], estados: {} }
   ];
   const r = L.elegirOtros(f, hoy, S2, 4);
-  assert.deepEqual(r[0], { u: "lab1", id: "b" }, "la vencida va primero");
-  assert.ok(!r.some((x) => x.id === "c"), "solo de los bloques pedidos");
-  assert.deepEqual(r.slice(1).map((x) => x.u), ["lab1", "bio1", "bio1"], "alterna unidades");
+  assert.deepEqual(r, [{ u: "lab1", id: "b" }], "solo lo que ya toca o ya viste: nada sin estudiar");
+  const f2 = [
+    { unidad: "lab1", bloques: [], tarjetas: [{ id: "a" }, { id: "b" }, { id: "n" }], estados: { a: { due: "2026-11-20", ult: "2026-11-09" }, b: { due: "2026-11-10" } } },
+    { unidad: "bio1", bloques: [], tarjetas: [{ id: "z" }, { id: "y" }], estados: { z: { due: "2026-11-15", ult: "2026-11-08" }, y: { due: "2026-11-30", ult: "2026-11-11" } } }
+  ];
+  const r2 = L.elegirOtros(f2, hoy, S2, 4);
+  assert.deepEqual(r2[0], { u: "lab1", id: "b" }, "la vencida va primero");
+  assert.ok(!r2.some((x) => x.id === "n"), "la tarjeta sin estudiar no sale");
+  assert.ok(!r2.some((x) => x.id === "y"), "la vista hoy mismo, tampoco");
+  assert.deepEqual(r2.slice(1).map((x) => x.u), ["bio1", "lab1"], "luego las ya vistas que antes vuelven, alternando unidades");
+  assert.deepEqual(L.elegirOtros(f2, hoy, S2, 0), [], "con 0, nada");
+});
+
+test("sesión en dos ratos: misterio → descubre → (pausa) → otros días → sin mirar → resuelve", () => {
+  const ids = ["c1", "c2"];
+  const e = (o) => L.estado(o);
+  assert.equal(L.siguientePaso(e({ paso: 0 }), ids), 1);
+  assert.equal(L.siguientePaso(e({ paso: 1 }), ids), 4, "acabado descubre, el rato B empieza por lo de otros días");
+  assert.equal(L.siguientePaso(e({ paso: 4, cola: [{ u: "a", id: "x" }], k: 1 }), ids), 2);
+  assert.equal(L.siguientePaso(e({ paso: 2, cola: [], k: 0, recuerdo: { c1: { guardado: true }, c2: { guardado: true } } }), ids), 3);
+  assert.equal(L.siguientePaso(e({ paso: 3, cola: [], k: 0, acierto: "si", recuerdo: { c1: { guardado: true }, c2: { guardado: true } } }), ids), 5);
+  /* una sesión a medias del orden antiguo (sin mirar hecho, otros días sin hacer) sigue sin perder nada */
+  assert.equal(L.siguientePaso(e({ paso: 3, acierto: "no", recuerdo: { c1: { guardado: true }, c2: { guardado: true } } }), ids), 4);
+  assert.equal(L.enPausa(e({ paso: 4, ratoA: "2026-11-13" }), "2026-11-13"), true);
+  assert.equal(L.enPausa(e({ paso: 4, ratoA: "2026-11-13", ratoB: "2026-11-13" }), "2026-11-13"), false);
+  assert.equal(L.enPausa(e({ paso: 4, ratoA: "2026-11-12" }), "2026-11-13"), false, "otro día, el B empieza solo");
+  assert.deepEqual(L.PASOS.map((p) => p[0]), ["misterio", "descubre", "otros", "sinmirar", "resuelve"]);
+  assert.equal(L.VISTA[4], 2); assert.equal(L.VISTA[2], 3);
 });
 
 test("repaso: vuelve lo que ya toca, nunca lo estudiado hoy mismo", () => {
   const hoy = "2026-11-12";
   const est = { a: { due: "2026-11-12", ult: "2026-11-11" }, b: { due: "2026-11-11", ult: "2026-11-11" }, c: { due: "2026-11-12", ult: "2026-11-12" }, d: { due: "2026-11-20", ult: "2026-11-11" } };
   assert.deepEqual(L.conceptosHoy(est, hoy), ["b", "a"], "primero el más atrasado; ni el de hoy ni el futuro");
+  assert.deepEqual(L.conceptosHoy(est, hoy, 1), ["b"], "con tope, solo los más atrasados; el resto, otro día");
+  const muchos = {}; for (let i = 0; i < 23; i++) muchos["k" + i] = { due: "2026-11-" + String(1 + (i % 11)).padStart(2, "0"), ult: "2026-10-01" };
+  assert.equal(L.conceptosHoy(muchos, hoy, L.TOPE_REPASO).length, 8);
   assert.equal(L.vuelve({ due: "2026-11-12" }, "2026-11-12", S2), "mañana", "lo que se estudia hoy vuelve, como pronto, mañana");
   assert.equal(L.vuelve({ due: "2026-11-15" }, "2026-11-12", S2), "en 3 días");
 });

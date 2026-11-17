@@ -1,5 +1,7 @@
 /* Corte · sesión de estudio (Fase 7, nueva metodología): #/sesion/<id>
-   Cinco momentos: 1 El misterio · 2 Descubre · 3 Sin mirar · 4 Resuelve · 5 Lo de otros días.
+   Cinco momentos en dos ratos de unos 10 min: rato A = 1 El misterio · 2 Descubre; rato B = 3 Lo de otros días · 4 Sin mirar · 5 Resuelve.
+   El número de «paso» guardado no cambia de significado (0 misterio, 1 descubre, 2 sin mirar, 3 resuelve, 4 otros días, 5 hecha):
+   solo cambia el orden en que se recorren, así las sesiones a medias de antes siguen donde estaban.
    Contenido en app/sesiones/<id>.json: «profe» va tal cual del repaso; «corte» está escrito para la sesión y se marca.
    Guardado en tsapc:v2 › personal.sesiones.<id> (por dónde vas, tu apuesta, lo que escribiste)
    y personal.conceptos.<id> (repaso espaciado de cada concepto, el mismo SM-2 de las tarjetas).
@@ -11,15 +13,39 @@
   else root.CorteSesion = api.crear;
 })(typeof self !== "undefined" ? self : this, function () {
   "use strict";
-  var PASOS = [["misterio", "El misterio"], ["descubre", "Descubre"], ["sinmirar", "Sin mirar"], ["resuelve", "Resuelve"], ["otros", "Lo de otros días"]];
+  /* en el orden en que se hacen; VISTA traduce el «paso» guardado a su sitio en esta lista */
+  var PASOS = [["misterio", "El misterio"], ["descubre", "Descubre"], ["otros", "Lo de otros días"], ["sinmirar", "Sin mirar"], ["resuelve", "Resuelve"]];
+  var VISTA = { 0: 0, 1: 1, 4: 2, 2: 3, 3: 4, 5: 5 };
+  var TOPE_REPASO = 8;   /* lo que vuelve en un día; el resto, los días siguientes (los más atrasados primero) */
 
   /* ================= lógica pura ================= */
-  /* lo que dijiste sin mirar → nota del repaso espaciado: todo = «fácil», la mitad o más = «bien», menos = «otra vez» */
-  function nota(marcas, total) {
+  /* lo que dijiste sin mirar → nota del repaso espaciado: todo = «fácil», la mitad o más = «bien», menos = «otra vez».
+     o.intento === false (ni palabras escritas ni «Lo he dicho en voz alta»): como mucho «otra».
+     o.primera (la primera vez que se puntúa ese concepto): como mucho «bien». */
+  function nota(marcas, total, o) {
     var n = 0; (marcas || []).forEach(function (m) { if (m) n++; });
-    if (!total) return "bien";
-    return n >= total ? "facil" : n * 2 >= total ? "bien" : "otra";
+    o = o || {};
+    if (o.intento === false) return "otra";
+    var r = !total ? "bien" : n >= total ? "facil" : n * 2 >= total ? "bien" : "otra";
+    return o.primera && r === "facil" ? "bien" : r;
   }
+  /* ¿hubo intento de recordar? Unas palabras escritas (dos o más) o haberlo dicho en voz alta */
+  function hayIntento(txt, voz) { return !!voz || (String(txt || "").match(/[0-9A-Za-zÀ-ÖØ-öø-ÿ]{2,}/g) || []).length >= 2; }
+  /* el resultado, en tres: todo / la mitad o más / menos de la mitad */
+  function resultado(n, total) { return !total || n >= total ? "todo" : n * 2 >= total ? "mitad" : "poco"; }
+  /* el orden del recorrido: misterio → descubre → (pausa) → otros días → sin mirar → resuelve → hecha.
+     Decide por lo que ya está hecho, así una sesión empezada con el orden antiguo sigue sin perder nada. ids: los conceptos. */
+  function otrosHecho(e) { return !!(e.cola && e.k >= e.cola.length); }
+  function sinMirarHecho(e, ids) { return (ids || []).every(function (id) { return e.recuerdo[id] && e.recuerdo[id].guardado; }); }
+  function siguientePaso(e, ids) {
+    if (e.paso === 0) return 1;
+    if (e.paso === 1 || !otrosHecho(e)) return 4;
+    if (!sinMirarHecho(e, ids)) return 2;
+    if (!e.acierto) return 3;
+    return 5;
+  }
+  /* ¿toca la pausa entre ratos? Rato A hecho hoy y aún no se ha empezado el B */
+  function enPausa(e, hoy) { return e.paso === 4 && !!e.ratoA && !e.ratoB && e.ratoA === hoy && !e.hecha; }
   /* estado inicial de una sesión, o el guardado limpio */
   function estado(v) {
     var e = v && typeof v === "object" && !Array.isArray(v) ? v : {};
@@ -31,7 +57,8 @@
       acierto: e.acierto === "si" || e.acierto === "casi" || e.acierto === "no" ? e.acierto : null,
       cola: Array.isArray(e.cola) ? e.cola.filter(function (x) { return x && typeof x.u === "string" && typeof x.id === "string"; }).slice(0, 6) : null,
       k: Math.max(0, +e.k || 0), vuelta: !!e.vuelta,
-      inicio: typeof e.inicio === "string" ? e.inicio : null, hecha: typeof e.hecha === "string" ? e.hecha : null
+      inicio: typeof e.inicio === "string" ? e.inicio : null, hecha: typeof e.hecha === "string" ? e.hecha : null,
+      ratoA: typeof e.ratoA === "string" ? e.ratoA : null, ratoB: typeof e.ratoB === "string" ? e.ratoB : null
     };
   }
   /* la siguiente sesión del recorrido: la que está a medias; si no, la primera sin hacer; si no, ninguna */
@@ -52,13 +79,15 @@
     }
     return { s: siguienteSesion(lista, estados), de: null };
   }
-  /* los conceptos que vuelven hoy: ya tocan y no se estudiaron hoy mismo (lo de hoy vuelve, como pronto, mañana) */
-  function conceptosHoy(estados, hoy) {
+  /* los conceptos que vuelven hoy: ya tocan y no se estudiaron hoy mismo (lo de hoy vuelve, como pronto, mañana).
+     Los más atrasados primero; con tope, solo los primeros (el resto vuelve los días siguientes). */
+  function conceptosHoy(estados, hoy, tope) {
     var out = [];
     for (var k in estados) if (Object.prototype.hasOwnProperty.call(estados, k)) {
       var e = estados[k]; if (e && e.due && e.due <= hoy && (!e.ult || e.ult < hoy)) out.push({ id: k, due: e.due });
     }
-    return out.sort(function (a, b) { return a.due < b.due ? -1 : a.due > b.due ? 1 : 0; }).map(function (x) { return x.id; });
+    out = out.sort(function (a, b) { return a.due < b.due ? -1 : a.due > b.due ? 1 : 0; }).map(function (x) { return x.id; });
+    return tope > 0 ? out.slice(0, tope) : out;
   }
   /* cuándo vuelve, dicho para una persona */
   function vuelve(e, hoy, S2) {
@@ -67,22 +96,27 @@
     var p = hoy.split("-"), q = d.split("-"), dias = Math.round((new Date(+q[0], +q[1] - 1, +q[2]) - new Date(+p[0], +p[1] - 1, +p[2])) / 864e5);
     return dias <= 1 ? "mañana" : "en " + dias + " días";
   }
-  /* las tarjetas de otros días: primero las que ya tocan (vencidas), después las nuevas de los bloques pedidos; mezcladas y sin repetir unidad seguida si se puede */
+  /* las tarjetas de otros días: primero las que ya tocan (vencidas, las más atrasadas antes); después, solo tarjetas ya vistas
+     de los bloques pedidos (las que antes vuelven), mezcladas y sin repetir unidad seguida si se puede.
+     Nunca tarjetas sin estudiar: lo de otros días es recordar, no aprender algo nuevo de golpe. */
   function elegirOtros(fuentes, hoy, S2, n, soloVencidas) {
-    var vencidas = [], nuevas = [];
+    var vencidas = [], vistas = [];
     fuentes.forEach(function (f) {
       (f.tarjetas || []).forEach(function (t) {
         if (f.bloques && f.bloques.length && f.bloques.indexOf(t.bloqueNum) < 0) return;
         var e = f.estados && f.estados[t.id];
-        if (e && S2.vencida(e, hoy)) vencidas.push({ u: f.unidad, id: t.id, due: e.due });
-        else if (!e) nuevas.push({ u: f.unidad, id: t.id });
+        if (!e || !e.due) return;
+        if (S2.vencida(e, hoy)) vencidas.push({ u: f.unidad, id: t.id, due: e.due });
+        else if (e.ult !== hoy) vistas.push({ u: f.unidad, id: t.id, due: e.due });
       });
     });
-    vencidas.sort(function (a, b) { return a.due < b.due ? -1 : a.due > b.due ? 1 : 0; });
-    var porU = {}; nuevas.forEach(function (x) { (porU[x.u] = porU[x.u] || []).push(x); });
+    var porFecha = function (a, b) { return a.due < b.due ? -1 : a.due > b.due ? 1 : 0; };
+    vencidas.sort(porFecha); vistas.sort(porFecha);
+    var porU = {}; vistas.forEach(function (x) { (porU[x.u] = porU[x.u] || []).push(x); });
     var us = Object.keys(porU), mezcla = [], quedan = true;
     for (var r = 0; quedan; r++) { quedan = false; us.forEach(function (u) { if (porU[u][r]) { mezcla.push(porU[u][r]); quedan = true; } }); }
-    return vencidas.map(function (x) { return { u: x.u, id: x.id }; }).concat(soloVencidas ? [] : mezcla).slice(0, n || 4);
+    var lim = n === 0 ? 0 : n || 4;
+    return vencidas.concat(soloVencidas ? [] : mezcla).map(function (x) { return { u: x.u, id: x.id }; }).slice(0, lim);
   }
 
   /* ================= la pantalla ================= */
@@ -110,6 +144,17 @@
     function leerS(id) { return estado(ctx.leer(rutaS(id), null)); }
     function guardarS(id, e) { if (!ctx.guardar(rutaS(id), e)) ctx.aviso("No se pudo guardar. Revisa el espacio del navegador.", "error"); }
     function conceptos() { var c = ctx.leer(["personal", "conceptos"], {}); return c && typeof c === "object" ? c : {}; }
+    /* con un examen cerca, lo de su unidad no vence después de la víspera (app.js dice cuál es) */
+    function topeDe(u) { try { return ctx.vispera ? ctx.vispera(u) : null; } catch (_) { return null; } }
+    function puntuarConcepto(cid, u, resp) {
+      var todos = conceptos(); todos[cid] = S2.limitar(S2.puntuar(todos[cid] || null, resp, hoy()), topeDe(u), hoy());
+      ctx.guardar(["personal", "conceptos"], todos); return todos[cid];
+    }
+    function puntuarTarjeta(u, tid, resp) {
+      var est = ctx.leer(["unidades", u, "tarjetas"], {}) || {};
+      est[tid] = S2.limitar(S2.puntuar(est[tid] || null, resp, hoy()), topeDe(u), hoy());
+      ctx.guardar(["unidades", u, "tarjetas"], est);
+    }
 
     /* la siguiente sesión que conviene (guiada por el examen cercano), sin contar la actual */
     function siguienteGuiada(sinId) {
@@ -134,8 +179,8 @@
     var DE_CORTE = sello("de Enfoque"), DE_PROFE = '<span class="ss-sello profe">' + ico("check") + "de tu profe</span>";
     function pasos(n) {
       return '<ol class="ss-pasos" aria-label="Momentos de la sesión">' + PASOS.map(function (p, k) {
-        var cl = k < n ? "hecho" : k === n ? "ahora" : "";
-        return '<li class="' + cl + '"' + (k === n ? ' aria-current="step"' : "") + '><span class="ss-num num">' + (k < n ? ico("check") : k + 1) + '</span><span class="ss-nom">' + p[1] + "</span></li>";
+        var cl = (k < n ? "hecho" : k === n ? "ahora" : "") + (k === 2 ? " rato-b" : "");
+        return '<li class="' + cl + '"' + (k === n ? ' aria-current="step"' : "") + '><span class="ss-num num">' + (k < n ? ico("check") : k + 1) + '</span><span class="ss-nom">' + (k === 0 || k === 2 ? '<span class="sr">' + (k === 0 ? "Rato A: " : "Rato B: ") + "</span>" : "") + p[1] + "</span></li>";
       }).join("") + "</ol>";
     }
     function boton(txt, attr, sec, icono) { return '<button type="button" class="boton' + (sec ? " secundario" : "") + '" ' + attr + ">" + (icono ? ico(icono) : "") + txt + "</button>"; }
@@ -185,20 +230,39 @@
       return h + '<div class="acciones ss-sig">' + (ult ? boton("Ahora, sin mirar", 'data-ss="sig"', false, "siguiente") : boton("Siguiente concepto", 'data-ss="sig"', false, "siguiente")) + "</div></article>";
     }
     /* ---------- 3 · sin mirar ---------- */
+    /* antes de comparar: el intento (palabras o «en voz alta») y la calibración de un toque («¿cuántos puntos crees que tienes?») */
+    function intentoHTML(r, tot, pre) {
+      var voz = '<button type="button" class="boton secundario ss-voz" data-' + pre + '="voz" aria-pressed="' + !!r.voz + '">' + ico(r.voz ? "check" : "info") + "Lo he dicho en voz alta</button>";
+      var cree = '<div class="ss-cree" role="group" aria-labelledby="' + pre + 'Cree"><p id="' + pre + 'Cree" class="ss-mini">¿Cuántos puntos crees que tienes? <span class="mano">(de ' + tot + ')</span></p><div class="segmentado">';
+      for (var k = 0; k <= tot; k++) cree += '<button type="button" data-' + pre + '-cree="' + k + '" aria-pressed="' + (r.cree === k) + '">' + k + "</button>";
+      return '<div class="ss-intento">' + voz + cree + "</div></div></div>";
+    }
+    /* después de puntuar: tres estilos (todo / la mitad o más / menos), la calibración y lo que faltó, con lo de la profe plegado */
+    function resultadoHTML(c, r, marcas, cuando) {
+      var n2 = marcas.filter(Boolean).length, tot = c.recuerda.puntos.length, res = resultado(n2, tot), sin = r.intento === false;
+      var txt = sin ? "Sin intento (ni escrito ni en voz alta), así que vuelve mañana. La próxima vez, aunque sean dos palabras."
+        : res === "todo" ? "Lo tienes." : res === "mitad" ? "Buena base: lo que faltó vuelve antes." : "Normal al principio: vuelve pronto para afianzarlo.";
+      var cal = typeof r.cree === "number" ? '<p class="ss-cal">Creías ' + r.cree + " de " + tot + "; tenías " + n2 + "." + (r.cree === n2 ? " Te conoces bien." : r.cree > n2 ? " Sabías menos de lo que creías: es lo normal, por eso se comprueba." : " Sabías más de lo que creías.") + "</p>" : "";
+      var falta = c.recuerda.puntos.filter(function (_, k) { return !marcas[k]; });
+      return '<p class="ss-fb ' + (sin ? "poco" : res === "todo" ? "bien" : res === "mitad" ? "medio" : "poco") + '" role="status"><b>' + n2 + " de " + tot + ".</b> " + txt + (cuando ? " Te lo vuelvo a pedir " + cuando + ", en tu repaso." : "") + "</p>" + cal + faltaHTML(c, falta);
+    }
+    function faltaHTML(c, falta) {
+      if (!falta.length) return "";
+      return '<section class="ss-falta-pt" aria-label="Lo que faltó"><p class="ss-mini">Lo que faltó:</p><ul>' + falta.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>" + profePlegada(c) + "</section>";
+    }
+    function profePlegada(c) { return c.profe && c.profe.dice ? '<details class="ss-plegado ss-ver-profe"><summary>Ver lo de la profe</summary><div class="ss-profe">' + DE_PROFE + '<div class="ss-dice rico">' + rico(c.profe.dice) + "</div></div></details>" : ""; }
     function vSinMirar(S, e) {
-      var c = S.conceptos[e.i], r = e.recuerdo[c.id] || {}, n = S.conceptos.length;
+      var c = S.conceptos[e.i], r = e.recuerdo[c.id] || {}, n = S.conceptos.length, tot = c.recuerda.puntos.length;
       var h = '<p class="ss-cuenta num">' + (e.i + 1) + " de " + n + " · todo tapado</p>" +
         '<article class="ss-recuerda" aria-labelledby="ssR"><h2 id="ssR">' + esc(c.titulo) + '</h2><p class="ss-pide">' + esc(c.recuerda.pide) + "</p>" +
         '<label class="sr" for="ssTxt">Tu explicación</label><textarea id="ssTxt" rows="6" data-ss-txt="rec:' + esc(c.id) + '"' + (r.comparado ? " readonly" : "") + ' placeholder="Escríbelo como se lo contarías a alguien que no sabe nada. También vale decirlo en voz alta y escribir solo las palabras clave.">' + esc(r.txt || "") + "</textarea>";
-      if (!r.comparado) return h + '<div class="acciones">' + boton("Comparar con el original", 'data-ss="comparar"', false, "check") + '</div><p class="ss-por mano">Lo que cuesta un poco recordar es lo que más se queda. Sacarlo de la cabeza vale más que releerlo tres veces.</p></article>';
+      if (!r.comparado) return h + intentoHTML(r, tot, "ss") + '<div class="acciones">' + boton("Comparar con el original", 'data-ss="comparar"', false, "check") + '</div><p class="ss-por mano">Escribe unas palabras o dilo en voz alta: sin intento, vuelve mañana igual. Lo que cuesta un poco recordar es lo que más se queda.</p></article>';
       var marcas = Array.isArray(r.marcas) ? r.marcas : [];
       h += '<section class="ss-puntos" aria-labelledby="ssPt">' + DE_PROFE + '<h3 id="ssPt">¿Qué dijiste?</h3><p class="ss-mini">Marca lo que tenías, aunque fuera con otras palabras.</p><ul>' + c.recuerda.puntos.map(function (p, k) {
         return '<li><label class="ss-check"><input type="checkbox" data-ss-marca="' + k + '"' + (marcas[k] ? " checked" : "") + (r.guardado ? " disabled" : "") + "><span>" + esc(p) + "</span></label></li>";
       }).join("") + "</ul></section>";
       if (!r.guardado) return h + '<div class="acciones">' + boton("Listo, seguir", 'data-ss="puntuar"', false, "siguiente") + "</div></article>";
-      var st = conceptos()[c.id];
-      var n2 = marcas.filter(Boolean).length, tot = c.recuerda.puntos.length;
-      h += '<p class="ss-fb ' + (n2 >= tot ? "bien" : "mal") + '" role="status"><b>' + n2 + " de " + tot + ".</b> " + (n2 >= tot ? "Lo tienes. " : n2 * 2 >= tot ? "Buena base; lo que faltó vuelve antes. " : "Normal la primera vez: vuelve pronto para afianzarlo. ") + "Te lo vuelvo a pedir " + vuelve(st, hoy(), S2) + ", en tu repaso.</p>";
+      h += resultadoHTML(c, r, marcas, vuelve(conceptos()[c.id], hoy(), S2));
       return h + '<div class="acciones">' + boton(e.i === n - 1 ? "Volver al misterio" : "Siguiente", 'data-ss="sig"', false, "siguiente") + "</div></article>";
     }
     /* ---------- 4 · resuelve ---------- */
@@ -212,9 +276,9 @@
         (m.solucionProfe ? '<div class="ss-profe">' + DE_PROFE + '<div class="ss-dice rico">' + rico(m.solucionProfe) + "</div>" + (m.entiendeProfe ? '<div class="ss-ent"><b>Entiéndelo:</b> ' + rico(m.entiendeProfe) + "</div>" : "") + "</div>" : "<p>" + esc(m.solucion) + "</p>") +
         '<ul class="ss-claves">' + m.claves.map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("") + "</ul>" +
         '<div class="ss-ac" role="group" aria-label="¿Tu apuesta iba bien encaminada?"><span>¿Tu apuesta iba bien encaminada?</span>' + [["si", "Sí"], ["casi", "Más o menos"], ["no", "No"]].map(function (x) { return '<button type="button" class="boton secundario" data-ss-ac="' + x[0] + '" aria-pressed="' + (ok === x[0]) + '">' + x[1] + "</button>"; }).join("") + "</div></details>" +
-        (ok ? '<p class="ss-fb bien" role="status">' + (ok === "no" ? "Perfecto que fallaras al principio: justo eso hace que ahora se te quede." : "Fíjate: antes no lo sabías y ahora sí.") + "</p>" : "") +
+        (ok ? '<p class="ss-fb bien" role="status">' + (ok === "no" ? "Fallar al principio es lo que hace que ahora se quede." : "Fíjate: antes no lo sabías y ahora sí.") + "</p>" : "") +
         (con.length ? '<section class="ss-conecta" aria-labelledby="ssCo"><h3 id="ssCo">Esto se conecta con…</h3><ul>' + con.map(function (x) { return '<li><a href="' + esc(x.ruta) + '">' + esc(x.texto) + "</a></li>"; }).join("") + "</ul></section>" : "") +
-        (ok ? '<div class="acciones">' + boton("Lo de otros días", 'data-ss="sig"', false, "siguiente") + "</div>" : "") + "</section>";
+        (ok ? '<div class="acciones">' + boton(otrosHecho(e) ? "Terminar la sesión" : "Lo de otros días", 'data-ss="sig"', false, "siguiente") + "</div>" : "") + "</section>";
     }
     /* ---------- 5 · lo de otros días ---------- */
     function fuentes(S) {
@@ -224,15 +288,24 @@
       var fs = fuentes(S);
       if (fs.some(function (f) { return !f; })) return ctx.cargando("Buscando lo de otros días");
       if (!e.cola) { e.cola = elegirOtros(fs, hoy(), S2, 4); e.k = 0; e.vuelta = false; guardarS(id, e); }
-      if (e.k >= e.cola.length) return vFin(S, e);
+      if (!e.cola.length) return '<section class="ss-caso recuadro" aria-labelledby="ssOt"><span class="washi" aria-hidden="true"></span><h2 id="ssOt">Hoy no vuelve nada de otros días</h2><p>Todo lo que ya estudiaste está fresco. Pasa directamente a recordar sin mirar.</p><div class="acciones">' + boton("Ahora, sin mirar", 'data-ss="sig"', false, "siguiente") + "</div></section>";
+      if (e.k >= e.cola.length) return '<section class="ss-caso recuadro" aria-labelledby="ssOt"><span class="washi" aria-hidden="true"></span><h2 id="ssOt">Lo de otros días, hecho</h2><div class="acciones">' + boton("Seguir", 'data-ss="sig"', false, "siguiente") + "</div></section>";
       var it = e.cola[e.k], J = BANCOS[it.u], t = J && J.tarjetas.filter(function (x) { return x.id === it.id; })[0];
       if (!t) { e.k++; guardarS(id, e); return vOtros(S, e, id); }
       var U = D.unidad(it.u), S1 = U ? A[U.s] : null;
-      return '<p class="ss-cuenta num">' + (e.k + 1) + " de " + e.cola.length + " · mezclado: así se recuerda en el examen y en el trabajo</p>" +
+      return '<p class="ss-cuenta num">' + (e.k + 1) + " de " + e.cola.length + " · antes de recordar sin mirar, un poco de otra cosa</p>" +
         '<article class="tj-ficha ss-ficha' + (e.vuelta ? " vuelta" : "") + '"' + (S1 ? ' data-subject="' + esc(U.s) + '"' : "") + ' aria-live="polite"><p class="tj-meta">' + (U ? esc(U.codigo + " · " + U.titulo) : "") + '</p><h2 class="tj-frente">' + esc(t.frente) + "</h2>" +
         (e.vuelta ? '<div class="tj-dorso rico">' + ctx.rico(t.dorso, t.formato, "../" + it.u + "/repaso/") + "</div>" : '<p class="ss-mini">Dilo en voz alta o en la cabeza antes de girarla.</p>') + "</article>" +
         (e.vuelta ? '<div class="tj-botones" role="group" aria-label="¿Cómo te ha ido?">' + boton("Otra vez", 'data-ss-tj="otra"', true) + boton("Bien", 'data-ss-tj="bien"') + boton("Fácil", 'data-ss-tj="facil"', true) + "</div>"
           : '<div class="tj-botones">' + boton("Ver la respuesta", 'data-ss="girar"') + "</div>");
+    }
+    /* ---------- entre los dos ratos ---------- */
+    function vPausa(S, e) {
+      var m = Math.max(1, Math.ceil((+S.minutos || 0) / 2));
+      return '<section class="ss-fin ss-pausa recuadro" aria-labelledby="ssPa"><span class="washi" aria-hidden="true"></span>' +
+        '<h2 id="ssPa">Rato A, hecho</h2><p>Mañana sigues donde lo dejes (o ahora mismo). Lo que queda es el rato B: lo de otros días, recordar sin mirar y resolver el misterio. Unos ' + m + "\u00a0min.</p>" +
+        '<p class="mano">Dejar pasar un rato antes de recordarlo sin mirar cuesta un poco más, y por eso se queda mejor.</p>' +
+        '<div class="acciones">' + boton("Seguir ahora con el rato B", 'data-ss="ratob"', false, "siguiente") + '<a class="boton secundario" href="#/hoy">Volver a Hoy</a></div></section>';
     }
     function vFin(S, e) {
       var sigS = siguienteGuiada(S.id);
@@ -240,8 +313,10 @@
         var r = e.recuerdo[c.id] || {}, m = (r.marcas || []).filter(Boolean).length, st = cs[c.id];
         return "<li><b>" + esc(c.titulo) + '</b><span class="num">' + m + " / " + c.recuerda.puntos.length + "</span><span>" + (st && st.due ? "vuelve " + vuelve(st, hoy(), S2) : "") + "</span></li>";
       }).join("");
+      var pri = null; S.conceptos.forEach(function (c) { var st = cs[c.id]; if (st && st.due && (!pri || st.due < pri.due)) pri = st; });
+      var nC = S.conceptos.length;
       return '<section class="ss-fin recuadro" aria-labelledby="ssFin"><span class="washi" aria-hidden="true"></span>' + ctx.pegatina("matraz", "lab", "") +
-        '<h2 id="ssFin">Sesión hecha</h2><p>' + (e.hecha === hoy() ? "Has estudiado para entender, no solo para aprobar. " : "") + "Esto es lo que te llevas y cuándo vuelve:</p>" +
+        '<h2 id="ssFin">Sesión hecha</h2><p>' + (e.hecha === hoy() ? "Hoy te llevas " + nC + (nC === 1 ? " concepto" : " conceptos") + "." + (pri ? " El primero vuelve " + vuelve(pri, hoy(), S2) + "." : "") + " " : "") + "Esto es lo que te llevas y cuándo vuelve:</p>" +
         '<ul class="ss-resumen">' + filas + "</ul>" +
         '<p class="mano">No hace falta repasarlo antes: cuando toque, en Hoy aparecerá «Tu repaso de hoy» y te lo pediré otra vez sin mirar.</p>' +
         (sigS ? '<p class="ss-sigue">Lo siguiente: <b>' + esc(sigS.titulo) + "</b>. Mañana, o ahora si te quedan ganas.</p>" : "") +
@@ -269,12 +344,12 @@
       if (!ls) return { sec: "hoy", titulo: "Repaso de hoy", html: cab + ctx.cargando("Preparando el repaso") };
       var r = leerR();
       if (!r) {
-        var idx = indiceConceptos(ls), cola = conceptosHoy(conceptos(), hoy()).filter(function (id) { return idx[id]; }).map(function (id) { return { t: "c", id: id }; });
+        var idx = indiceConceptos(ls), cola = conceptosHoy(conceptos(), hoy()).filter(function (id) { return idx[id]; }).slice(0, TOPE_REPASO).map(function (id) { return { t: "c", id: id }; });
         var us = {}; ls.forEach(function (S) { us[S.unidad] = 1; (S.otrosDias || []).forEach(function (f) { us[f.unidad] = 1; }); });
         var fs = Object.keys(us).map(function (u) { var J = bancoDe(u); return J ? { unidad: u, bloques: [], tarjetas: J.tarjetas, estados: ctx.leer(["unidades", u, "tarjetas"], {}) || {} } : null; });
         if (fs.some(function (f) { return !f; })) return { sec: "hoy", titulo: "Repaso de hoy", html: cab + ctx.cargando("Buscando lo que vuelve hoy") };
-        elegirOtros(fs, hoy(), S2, 6, true).forEach(function (x) { cola.push({ t: "t", u: x.u, id: x.id }); });
-        r = { fecha: hoy(), cola: cola, k: 0 }; guardarR(r);
+        elegirOtros(fs, hoy(), S2, TOPE_REPASO - cola.length, true).forEach(function (x) { cola.push({ t: "t", u: x.u, id: x.id }); });
+        r = { fecha: hoy(), cola: cola, k: 0, total: conceptosHoy(conceptos(), hoy()).filter(function (id) { return idx[id]; }).length }; guardarR(r);
       }
       var html;
       if (!r.cola.length) html = '<div class="estado">' + ctx.pegatina("gafas", "lab", "quieta") + '<div><h2 class="estado-tit">Hoy no vuelve nada</h2><p>Todo lo que has estudiado está fresco. Puedes hacer una sesión nueva o descansar: también cuenta.</p><div class="acciones">' + (function () { var s = siguienteGuiada(""); return s ? '<a class="boton" href="#/sesion/' + encodeURIComponent(s.id) + '">Hacer «' + esc(s.titulo) + '»</a><a class="boton secundario" href="#/hoy">Volver a Hoy</a>' : '<a class="boton" href="#/hoy">Volver a Hoy</a>'; })() + "</div></div></div>";
@@ -285,8 +360,8 @@
           var x = indiceConceptos(ls)[it.id], c = x.c, U = D.unidad(x.S.unidad), marcas = Array.isArray(r.marcas) ? r.marcas : [];
           html = cuenta + '<article class="ss-recuerda" data-subject="' + esc(U.s) + '" aria-labelledby="rpT"><p class="ss-k mano">' + esc(U.codigo + " · " + x.S.titulo) + '</p><h2 id="rpT">' + esc(c.titulo) + '</h2><p class="ss-pide">' + esc(c.recuerda.pide) + "</p>" +
             '<label class="sr" for="ssTxt">Tu explicación</label><textarea id="ssTxt" rows="5" data-rp-txt' + (r.comparado ? " readonly" : "") + ' placeholder="Sin mirar: lo que recuerdes, con tus palabras.">' + esc(r.txt || "") + "</textarea>";
-          if (!r.comparado) html += '<div class="acciones">' + boton("Comparar con el original", 'data-rp="comparar"', false, "check") + "</div></article>";
-          else html += '<section class="ss-puntos">' + DE_PROFE + '<h3>¿Qué dijiste?</h3><ul>' + c.recuerda.puntos.map(function (p, k) { return '<li><label class="ss-check"><input type="checkbox" data-rp-marca="' + k + '"' + (marcas[k] ? " checked" : "") + "><span>" + esc(p) + "</span></label></li>"; }).join("") + '</ul></section><div class="acciones">' + boton("Listo, seguir", 'data-rp="puntuar"', false, "siguiente") + "</div></article>";
+          if (!r.comparado) html += intentoHTML(r, c.recuerda.puntos.length, "rp") + '<div class="acciones">' + boton("Comparar con el original", 'data-rp="comparar"', false, "check") + "</div></article>";
+          else html += '<section class="ss-puntos">' + DE_PROFE + '<h3>¿Qué dijiste?</h3><p class="ss-mini">Marca lo que tenías, aunque fuera con otras palabras.</p><ul>' + c.recuerda.puntos.map(function (p, k) { return '<li><label class="ss-check"><input type="checkbox" data-rp-marca="' + k + '"' + (marcas[k] ? " checked" : "") + "><span>" + esc(p) + "</span></label></li>"; }).join("") + "</ul>" + profePlegada(c) + '</section><div class="acciones">' + boton("Listo, seguir", 'data-rp="puntuar"', false, "siguiente") + "</div></article>";
         } else {
           var J = BANCOS[it.u], t = J && J.tarjetas.filter(function (y) { return y.id === it.id; })[0], U2 = D.unidad(it.u);
           if (!t) { r.k++; guardarR(r); return pRepaso(); }
@@ -300,18 +375,23 @@
     function clicRepaso(t) {
       var r = leerR(); if (!r || r.k >= r.cola.length) return;
       var it = r.cola[r.k], a = t.getAttribute("data-rp");
-      if (a === "comparar") { var tx = $("#ssTxt"); r.txt = tx ? tx.value.slice(0, 4000) : ""; r.comparado = true; r.marcas = []; EF = "x"; guardarR(r); return ctx.repintar("[data-rp-marca]"); }
+      var tx0 = $("#ssTxt");
+      if (a === "voz") { if (tx0) r.txt = tx0.value.slice(0, 4000); r.voz = !r.voz; guardarR(r); return ctx.repintar('[data-rp="voz"]'); }
+      if (t.hasAttribute("data-rp-cree")) { if (tx0) r.txt = tx0.value.slice(0, 4000); r.cree = +t.getAttribute("data-rp-cree"); guardarR(r); return ctx.repintar('[data-rp-cree="' + r.cree + '"]'); }
+      if (a === "comparar") { r.txt = tx0 ? tx0.value.slice(0, 4000) : ""; r.intento = hayIntento(r.txt, r.voz); r.comparado = true; r.marcas = []; EF = "x"; guardarR(r); return ctx.repintar("[data-rp-marca]"); }
       if (a === "puntuar") {
         var idx = indiceConceptos(todas() || []), x = idx[it.id]; if (!x) return;
         var m = x.c.recuerda.puntos.map(function (_, k) { var el = document.querySelector('[data-rp-marca="' + k + '"]'); return !!(el && el.checked); });
-        var todos = conceptos(); todos[it.id] = S2.puntuar(todos[it.id] || null, nota(m, m.length), hoy()); ctx.guardar(["personal", "conceptos"], todos); crecePlanta();
+        puntuarConcepto(it.id, x.S.unidad, nota(m, m.length, { intento: r.intento })); crecePlanta();
         ctx.refrescar && ctx.refrescar(x.S.unidad);
-        r.k++; r.comparado = false; r.marcas = []; r.txt = ""; EF = "x"; guardarR(r); return ctx.repintar("#titulo", true);
+        var nM = m.filter(Boolean).length;
+        if (typeof r.cree === "number") ctx.aviso("Creías " + r.cree + " de " + m.length + "; tenías " + nM + ".");
+        else if (r.intento === false) ctx.aviso("Sin intento: vuelve mañana.");
+        r.k++; r.comparado = false; r.marcas = []; r.txt = ""; r.voz = false; r.cree = null; r.intento = null; EF = "x"; guardarR(r); return ctx.repintar("#titulo", true);
       }
       if (a === "girar") { r.vuelta = true; EF = "x"; guardarR(r); return ctx.repintar('[data-rp-tj="bien"]'); }
       if (t.hasAttribute("data-rp-tj")) {
-        var est = ctx.leer(["unidades", it.u, "tarjetas"], {}) || {};
-        est[it.id] = S2.puntuar(est[it.id] || null, t.getAttribute("data-rp-tj"), hoy()); ctx.guardar(["unidades", it.u, "tarjetas"], est); ctx.refrescar && ctx.refrescar(it.u); crecePlanta();
+        puntuarTarjeta(it.u, it.id, t.getAttribute("data-rp-tj")); ctx.refrescar && ctx.refrescar(it.u); crecePlanta();
         r.k++; r.vuelta = false; EF = "x"; guardarR(r); return ctx.repintar('[data-rp="girar"], [data-rp="comparar"], .ss-fin .boton');
       }
     }
@@ -336,20 +416,31 @@
       }
       var U = D.unidad(S.unidad), e = leerS(id);
       if (!e.inicio) { e.inicio = hoy(); guardarS(id, e); }
-      var cuerpo = e.paso === 0 ? vMisterio(S, e) : e.paso === 1 ? vDescubre(S, e) : e.paso === 2 ? vSinMirar(S, e) : e.paso === 3 ? vResuelve(S, e) : vOtros(S, e, id);
+      /* el rato A se hizo otro día: el B empieza solo, sin pausa */
+      if (e.paso === 4 && e.ratoA && !e.ratoB && e.ratoA < hoy()) { e.ratoB = hoy(); guardarS(id, e); }
+      var fin = !!e.hecha || e.paso === 5;
+      var cuerpo = fin ? vFin(S, e) : e.paso === 0 ? vMisterio(S, e) : e.paso === 1 ? vDescubre(S, e) : e.paso === 2 ? vSinMirar(S, e) : e.paso === 3 ? vResuelve(S, e) : enPausa(e, hoy()) ? vPausa(S, e) : vOtros(S, e, id);
       var compacta = e.paso > 0;
       var html = (compacta ? "" : ctx.ruta([["Asignaturas", "#/asignaturas"], [A[U.s].nombre, "#/asignatura/" + U.s], [U.codigo, "#/unidad/" + U.id], ["Sesión"]])) +
-        '<header class="cab ss-cab' + (compacta ? " compacta" : "") + '"><div class="ss-cab-fila"><p class="ss-k mano">Sesión · ' + esc(U.codigo) + (compacta ? "" : " · bloque " + S.bloque + " · unos " + S.minutos + "\u00a0min") + '</p><a class="ss-salir" href="#/hoy">Salir <span class="mano">(se guarda)</span></a></div>' + ctx.titulo('<span class="fluor asig">' + esc(S.titulo) + "</span>") + "</header>" +
-        pasos(Math.min(e.paso, 4) + (e.paso === 4 && e.cola && e.k >= e.cola.length ? 1 : 0)) + '<div class="ss-cuerpo" id="ssCuerpo">' + cuerpo + "</div>";
+        '<header class="cab ss-cab' + (compacta ? " compacta" : "") + '"><div class="ss-cab-fila"><p class="ss-k mano">Sesión · ' + esc(U.codigo) + (compacta ? "" : " · bloque " + S.bloque + " · dos ratos de unos " + Math.max(1, Math.ceil((+S.minutos || 0) / 2)) + "\u00a0min") + '</p><a class="ss-salir" href="#/hoy">Salir <span class="mano">(se guarda)</span></a></div>' + ctx.titulo('<span class="fluor asig">' + esc(S.titulo) + "</span>") + "</header>" +
+        pasos(fin ? 5 : VISTA[e.paso]) + '<div class="ss-cuerpo" id="ssCuerpo">' + cuerpo + "</div>";
       return { sec: "hoy", titulo: "Sesión · " + S.titulo, subject: U.s, html: html, montar: function () { foco(); etiquetarTablas(); }, animar: function (M) { var f = EF; EF = null; var c = $("#ssCuerpo"); if (f && c) M.animar(f === "abajo" ? (c.querySelector(".ss-profe, .ss-resp, .ss-puntos, .ss-fb, .tj-dorso") || c) : c, [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 280, easing: M.CURVA.salida }, "ss"); } };
     }
 
     /* ---------- acciones ---------- */
     function rutaAct() { var p = location.hash.replace(/^#\/?/, "").split("/"); return p[0] === "sesion" ? decodeURIComponent(p[1] || "") : null; }
+    /* pasar al siguiente momento según lo hecho (el rato A termina al acabar «descubre») */
+    function saltar(e, S) {
+      var ids = S.conceptos.map(function (c) { return c.id; }), ant = e.paso;
+      e.paso = siguientePaso(e, ids); e.i = 0;
+      if (ant === 1) { e.ratoA = hoy(); e.ratoB = null; }
+      if (e.paso === 2) { for (var k = 0; k < ids.length; k++) if (!(e.recuerdo[ids[k]] && e.recuerdo[ids[k]].guardado)) { e.i = k; break; } }
+      if (e.paso === 5 && !e.hecha) { e.hecha = hoy(); crecePlanta(); }
+    }
     function avanzar(id, e, S) {
       var n = S.conceptos.length;
       if ((e.paso === 1 || e.paso === 2) && e.i < n - 1) e.i++;
-      else { e.paso++; e.i = 0; }
+      else saltar(e, S);
       EF = "pagina"; guardarS(id, e); ctx.repintar("#titulo", true);
     }
     document.addEventListener("click", function (ev) {
@@ -368,23 +459,29 @@
         return ctx.repintar('[data-ss-ap^="' + (k + 1) + ':"], [data-ss=sig]');
       }
       if (a === "sig") return avanzar(id, e, S);
-      if (a === "comparar") { var r = e.recuerdo[c.id] = e.recuerdo[c.id] || {}; var tx = $("#ssTxt"); r.txt = tx ? tx.value.slice(0, 4000) : r.txt || ""; r.comparado = true; r.marcas = c.recuerda.puntos.map(function () { return false; }); EF = "abajo"; guardarS(id, e); return ctx.repintar("[data-ss-marca]"); }
+      if (a === "ratob") { e.ratoB = hoy(); EF = "pagina"; guardarS(id, e); return ctx.repintar("#titulo", true); }
+      if (e.paso === 2 && c && (a === "voz" || t.hasAttribute("data-ss-cree"))) {
+        var rv = e.recuerdo[c.id] = e.recuerdo[c.id] || {}, txv = $("#ssTxt"); if (txv) rv.txt = txv.value.slice(0, 4000);
+        if (a === "voz") { rv.voz = !rv.voz; guardarS(id, e); return ctx.repintar('[data-ss="voz"]'); }
+        rv.cree = +t.getAttribute("data-ss-cree"); guardarS(id, e); return ctx.repintar('[data-ss-cree="' + rv.cree + '"]');
+      }
+      if (a === "comparar") { var r = e.recuerdo[c.id] = e.recuerdo[c.id] || {}; var tx = $("#ssTxt"); r.txt = tx ? tx.value.slice(0, 4000) : r.txt || ""; r.intento = hayIntento(r.txt, r.voz); r.comparado = true; r.marcas = c.recuerda.puntos.map(function () { return false; }); EF = "abajo"; guardarS(id, e); return ctx.repintar("[data-ss-marca]"); }
       if (a === "puntuar") {
         var r2 = e.recuerdo[c.id] = e.recuerdo[c.id] || {};
         r2.marcas = c.recuerda.puntos.map(function (_, k2) { var x = document.querySelector('[data-ss-marca="' + k2 + '"]'); return !!(x && x.checked); });
         r2.guardado = true;
-        var todos = conceptos(); todos[c.id] = S2.puntuar(todos[c.id] || null, nota(r2.marcas, c.recuerda.puntos.length), hoy());
-        ctx.guardar(["personal", "conceptos"], todos); ctx.refrescar && ctx.refrescar(S.unidad); crecePlanta();
+        var primera = !conceptos()[c.id];
+        puntuarConcepto(c.id, S.unidad, nota(r2.marcas, c.recuerda.puntos.length, { intento: r2.intento, primera: primera }));
+        ctx.refrescar && ctx.refrescar(S.unidad); crecePlanta();
         EF = "abajo"; guardarS(id, e); return ctx.repintar("[data-ss=sig]");
       }
       if (t.hasAttribute("data-ss-ac")) { e.acierto = t.getAttribute("data-ss-ac"); EF = "abajo"; guardarS(id, e); return ctx.repintar("[data-ss=sig]"); }
       if (a === "girar") { e.vuelta = true; EF = "abajo"; guardarS(id, e); return ctx.repintar('[data-ss-tj="bien"]'); }
       if (t.hasAttribute("data-ss-tj")) {
-        var it = e.cola[e.k], est = ctx.leer(["unidades", it.u, "tarjetas"], {}) || {};
-        est[it.id] = S2.puntuar(est[it.id] || null, t.getAttribute("data-ss-tj"), hoy());
-        ctx.guardar(["unidades", it.u, "tarjetas"], est); ctx.refrescar && ctx.refrescar(it.u);
-        e.k++; e.vuelta = false; if (e.k >= e.cola.length) e.hecha = hoy();
-        EF = "pagina"; guardarS(id, e); return ctx.repintar('[data-ss="girar"], .ss-fin .boton');
+        var it = e.cola[e.k];
+        puntuarTarjeta(it.u, it.id, t.getAttribute("data-ss-tj")); ctx.refrescar && ctx.refrescar(it.u); crecePlanta();
+        e.k++; e.vuelta = false; if (e.k >= e.cola.length) saltar(e, S);
+        EF = "pagina"; guardarS(id, e); return ctx.repintar(e.paso === 4 ? '[data-ss="girar"]' : "#titulo", e.paso !== 4);
       }
       if (a === "reiniciar") { var nuevo = estado(null); nuevo.inicio = hoy(); guardarS(id, nuevo); EF = "pagina"; return ctx.repintar("#titulo", true); }
     });
@@ -412,30 +509,49 @@
         '<span class="ss-hoy-txt"><span class="ss-k mano">' + esc(k) + "</span><b>" + esc(tit) + "</b><span>" + esc(txt) + "</span>" + (extra || "") + "</span>" +
         '<span class="boton">' + esc(btn) + ico("siguiente") + "</span></a>";
     }
-    /* en Hoy: primero el repaso (lo estudiado vuelve sin mirar) y después la siguiente sesión del recorrido */
-    function hoyBloque() {
-      var h = hoy(), lista = indice(), est = estadosTodas(), html = "";
-      var rp = leerR(), nRep = rp ? rp.cola.length - rp.k : pendientesHoy(), repHecho = rp && rp.cola.length && rp.k >= rp.cola.length;
-      if (nRep > 0 || repHecho) {
-        html += '<div class="sec-cab"><h2 id="hRp">Tu repaso de hoy</h2><span class="mano">' + (repHecho ? "hecho" : "unos 5 min") + "</span></div>" +
-          tarjetaHoy("#/sesion/repaso", "gafas", "lab", "vuelve justo antes de olvidarse", repHecho ? "Repaso hecho" : rp ? nRep + (nRep === 1 ? " cosa vuelve hoy" : " cosas vuelven hoy") : nRep + (nRep === 1 ? " concepto vuelve hoy" : " conceptos vuelven hoy"),
-            repHecho ? "Lo que te costó volverá antes. Mañana, más." : "Explícalo otra vez sin mirar. Si lo recuerdas, tardará más en volver.", repHecho ? "Verlo" : "Repasar");
-      }
-      if (!lista) return '<section class="ancho ss-hoy" aria-label="Estudio de hoy">' + html + "</section>";
+    /* lo que pinta Hoy: el repaso de hoy (con tope y sus minutos de verdad) y la siguiente sesión, por ratos.
+       { repaso: {n, total, minutos, hecho, empezado}, sesion: {id, titulo, href, rato, minutos, empezada, unidad, s, pegatina, guia, hechas, base, hoyHecha} | null } */
+    function hoyInfo() {
+      var h = hoy(), est = estadosTodas(), rp = leerR(), todosV = pendientesHoy(), rep;
+      if (rp) {
+        var q = rp.cola.slice(rp.k), nc = q.filter(function (x) { return x.t === "c"; }).length;
+        rep = { n: q.length, total: Math.max(+rp.total || 0, rp.cola.filter(function (x) { return x.t === "c"; }).length), minutos: q.length ? Math.max(1, Math.ceil(nc * 1.5 + (q.length - nc) * 0.7)) : 0, hecho: !!(rp.cola.length && rp.k >= rp.cola.length), empezado: rp.k > 0 };
+      } else { var n0 = Math.min(todosV, TOPE_REPASO); rep = { n: n0, total: todosV, minutos: n0 ? Math.max(1, Math.ceil(n0 * 1.5)) : 0, hecho: false, empezado: false }; }
+      var lista = indice(); if (!lista) return { repaso: rep, sesion: null, cargando: true };
       var exa = null; try { exa = ctx.examen ? ctx.examen() : null; } catch (_) {}
       var guia = siguienteParaExamen(lista, est, exa && exa.ex, function (u) { var U = D.unidad(u); return U ? U.s : ""; });
       var sig = guia.s, base = guia.de || lista;
-      var hechas = base.filter(function (x) { return est[x.id] && est[x.id].hecha; }).length;
-      var hoyHecha = lista.filter(function (x) { return est[x.id] && est[x.id].hecha === h; })[0];
-      var deQue = guia.de ? " de " + (exa.ex.unidad && D.unidad(exa.ex.unidad) ? D.unidad(exa.ex.unidad).codigo : (A[exa.ex.s] ? A[exa.ex.s].ab : "esta asignatura")) : " del recorrido";
-      var prog = '<span class="ss-recorrido" aria-label="' + hechas + " de " + base.length + ' sesiones hechas"><i style="width:' + Math.round(hechas / Math.max(1, base.length) * 100) + '%"></i></span><span class="ss-mini">' + hechas + " de " + base.length + " sesiones" + deQue + "</span>";
-      html += '<div class="sec-cab"><h2 id="hSs">Tu sesión de hoy</h2><span class="mano">' + (sig ? "unos " + sig.minutos + " min" : "recorrido completo") + "</span></div>";
+      var info = { repaso: rep, sesion: null, exa: guia.de ? exa : null, hechas: base.filter(function (x) { return est[x.id] && est[x.id].hecha; }).length, base: base.length,
+        hoyHecha: lista.filter(function (x) { return est[x.id] && est[x.id].hecha === h; })[0] || null };
+      if (sig) {
+        var e = estado(est[sig.id]), U = D.unidad(sig.unidad), aHecho = !!(e.ratoA || e.paso >= 2);
+        info.sesion = { id: sig.id, titulo: sig.titulo, href: "#/sesion/" + encodeURIComponent(sig.id), rato: aHecho ? "B" : "A", minutos: Math.max(1, Math.ceil((+sig.minutos || 0) / 2)),
+          empezada: !!(e.inicio && !e.hecha && e.paso > 0), ratoAHoy: e.ratoA === h, unidad: sig.unidad, s: U ? U.s : "lab", pegatina: sig.pegatina || (U ? U.pegatina : "matraz"), bloque: sig.bloque, gancho: sig.gancho, codigo: U ? U.codigo : "" };
+      }
+      return info;
+    }
+    /* en Hoy: primero el repaso (lo estudiado vuelve sin mirar) y después la siguiente sesión del recorrido */
+    function hoyBloque() {
+      var I = hoyInfo(), R = I.repaso, html = "";
+      if (R.n > 0 || R.hecho) {
+        var tope = !R.hecho && R.total > R.n;
+        html += '<div class="sec-cab"><h2 id="hRp">Tu repaso de hoy</h2><span class="mano">' + (R.hecho ? "hecho" : "unos " + R.minutos + " min") + "</span></div>" +
+          tarjetaHoy("#/sesion/repaso", "gafas", "lab", "vuelve justo antes de olvidarse", R.hecho ? "Repaso hecho" : tope ? "Vuelven " + R.n + " de " + R.total : R.n + (R.n === 1 ? " cosa vuelve hoy" : " cosas vuelven hoy"),
+            R.hecho ? "Lo que te costó volverá antes. Mañana, más." : tope ? "El resto, repartido en los próximos días. Primero, lo más atrasado." : "Explícalo otra vez sin mirar. Si lo recuerdas, tardará más en volver.", R.hecho ? "Verlo" : R.empezado ? "Seguir" : "Repasar");
+      }
+      if (I.cargando) return '<section class="ancho ss-hoy" aria-label="Estudio de hoy">' + html + "</section>";
+      var sig = I.sesion, exa = I.exa;
+      var deQue = exa ? " de " + (exa.ex.unidad && D.unidad(exa.ex.unidad) ? D.unidad(exa.ex.unidad).codigo : (A[exa.ex.s] ? A[exa.ex.s].ab : "esta asignatura")) : " del recorrido";
+      var prog = '<span class="ss-recorrido" aria-label="' + I.hechas + " de " + I.base + ' sesiones hechas"><i style="width:' + Math.round(I.hechas / Math.max(1, I.base) * 100) + '%"></i></span><span class="ss-mini">' + I.hechas + " de " + I.base + " sesiones" + deQue + "</span>";
+      html += '<div class="sec-cab"><h2 id="hSs">Tu sesión de hoy</h2><span class="mano">' + (sig ? "rato " + sig.rato + " · unos " + sig.minutos + " min" : "recorrido completo") + "</span></div>";
       if (!sig) html += tarjetaHoy("#/asignaturas", "gafas", "lab", "todas hechas", "Has terminado el recorrido", "Lo que estudiaste seguirá volviendo en tu repaso. Pronto llegarán más sesiones.", "Ver unidades", prog);
       else {
-        var U = D.unidad(sig.unidad), e = estado(est[sig.id]), empezada = e.inicio && !e.hecha && e.paso > 0;
-        var k = guia.de ? "para tu examen · " + exa.cuando.toLowerCase() : (U ? U.codigo : "") + " · bloque " + sig.bloque + " · " + (sig.gancho || "empieza con un misterio");
-        var txt = hoyHecha && !empezada ? "Ya hiciste una hoy (" + hoyHecha.titulo + "). Si te apetece, sigue con la siguiente; si no, mañana." : empezada ? "La dejaste a medias: sigue donde ibas." : "Un caso real, unos pocos conceptos y lo de otros días. Sin tener que organizarte.";
-        html += tarjetaHoy("#/sesion/" + encodeURIComponent(sig.id), sig.pegatina || (U ? U.pegatina : "matraz"), U ? U.s : "lab", k, sig.titulo, txt, empezada ? "Seguir" : "Empezar", prog);
+        var k = exa ? "para tu examen · " + exa.cuando.toLowerCase() : sig.codigo + " · bloque " + sig.bloque + " · " + (sig.gancho || "empieza con un misterio");
+        var txt = sig.rato === "B" ? (sig.ratoAHoy ? "Rato A hecho hoy. Mañana sigues con el B (o ahora mismo): otros días, sin mirar y resuelve." : "Rato B: lo de otros días, recordar sin mirar y resolver el misterio.")
+          : sig.empezada ? "La dejaste a medias: sigue donde ibas."
+          : I.hoyHecha ? "Ya hiciste una hoy (" + I.hoyHecha.titulo + "). Si te apetece, el primer rato de la siguiente; si no, mañana."
+          : "Rato A: un caso real y unos pocos conceptos. El resto, otro rato.";
+        html += tarjetaHoy(sig.href, sig.pegatina, sig.s, k, sig.titulo, txt, sig.rato === "B" ? "Seguir con el rato B" : sig.empezada ? "Seguir" : "Empezar", prog);
       }
       return '<section class="ancho ss-hoy" aria-labelledby="hSs">' + html + "</section>";
     }
@@ -478,8 +594,8 @@
     }
     /* el enlace de la sesión que toca hoy (lo usa la guía) */
     function sesionHoy() { var s = siguienteGuiada(""); return s ? "#/sesion/" + encodeURIComponent(s.id) : null; }
-    return { sesion: pSesion, hoyBloque: hoyBloque, unidadBloque: unidadBloque, sesionHoy: sesionHoy, paraExamen: paraExamen, examenDatos: examenDatos };
+    return { sesion: pSesion, hoyBloque: hoyBloque, hoyInfo: hoyInfo, unidadBloque: unidadBloque, sesionHoy: sesionHoy, paraExamen: paraExamen, examenDatos: examenDatos };
   }
 
-  return { crear: crear, L: { nota: nota, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, siguienteSesion: siguienteSesion, siguienteParaExamen: siguienteParaExamen, PASOS: PASOS } };
+  return { crear: crear, L: { nota: nota, hayIntento: hayIntento, resultado: resultado, siguientePaso: siguientePaso, enPausa: enPausa, VISTA: VISTA, TOPE_REPASO: TOPE_REPASO, estado: estado, elegirOtros: elegirOtros, conceptosHoy: conceptosHoy, vuelve: vuelve, siguienteSesion: siguienteSesion, siguienteParaExamen: siguienteParaExamen, PASOS: PASOS } };
 });

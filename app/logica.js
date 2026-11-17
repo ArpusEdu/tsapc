@@ -83,6 +83,14 @@
     if (corta) return h + " h " + pad(m) + " min";
     return pad(h) + ":" + pad(m) + ":" + pad(sec);
   }
+  /* la cuenta atrás de un examen, sin agobiar: días hasta las últimas 24 h («Faltan 9 días»); solo entonces horas y minutos.
+     dias = días de calendario hasta el examen. Devuelve { partes: [[valor, unidad]], texto } */
+  function faltan(ms, dias) {
+    ms = Math.max(0, +ms || 0);
+    if (ms >= 864e5) { var d = Math.max(1, Math.round(+dias) || Math.floor(ms / 864e5)); return { partes: [[String(d), d === 1 ? "día" : "días"]], texto: "Faltan " + d + (d === 1 ? " día" : " días") }; }
+    var s = Math.floor(ms / 1000), h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60);
+    return { partes: [[pad(h), "h"], [pad(m), "min"]], texto: ms > 0 ? "Faltan " + h + " h " + pad(m) + " min" : "Es ahora" };
+  }
   /* las tres casillas del LCD: horas, minutos y segundos; con un día o más, días, horas y minutos */
   function partes(ms) {
     var s = Math.max(0, Math.floor(ms / 1000));
@@ -152,6 +160,9 @@
     return l;
   }
 
+  /* la forma de la planta según los días con algo hecho: hojas (hasta 13), después un botón y, pasados 26, una flor. Sin niveles. */
+  function formaPlanta(nd) { nd = +nd || 0; return nd <= 13 ? "hojas" : nd <= 26 ? "boton" : "flor"; }
+
   var NUM = ["ninguna", "una", "dos", "tres", "cuatro", "cinco", "seis"];
   function resumenHoy(evs, hechas, n, ex) {
     var k = clave(n), hoy = evs.filter(function (e) { return e.tipo === "entrega" && e.fecha === k; });
@@ -191,7 +202,7 @@
 
   return { DIAS: DIAS, MESES: MESES, TIPO: TIPO, pad: pad, may: may, escapar: escapar, sid: sid, clave: clave, parseDia: parseDia, hm: hm, difDias: difDias,
     ahoraDesde: ahoraDesde, reloj: reloj, inicioClase: inicioClase, prepararEventos: prepararEventos, pendientes: pendientes, proximoExamen: proximoExamen,
-    cuentaAtras: cuentaAtras, partes: partes, h12: h12, h12r: h12r, hora: hora, rango: rango, formatoValido: formatoValido, diaRelativo: diaRelativo, fechaLarga: fechaLarga,
-    semana: semana, infoDia: infoDia, progreso: progreso, planta: planta, resumenHoy: resumenHoy,
+    cuentaAtras: cuentaAtras, partes: partes, faltan: faltan, h12: h12, h12r: h12r, hora: hora, rango: rango, formatoValido: formatoValido, diaRelativo: diaRelativo, fechaLarga: fechaLarga,
+    semana: semana, infoDia: infoDia, progreso: progreso, planta: planta, formaPlanta: formaPlanta, resumenHoy: resumenHoy,
     coleccionLimpia: coleccionLimpia, estampar: estampar, refrescar: refrescar, marcarVistas: marcarVistas, palidez: palidez };
 });

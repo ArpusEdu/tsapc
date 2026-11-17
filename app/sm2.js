@@ -35,6 +35,13 @@
     e.ult = hoy; if (!e.ini) e.ini = hoy;
     return e;
   }
+  /* Con un examen cerca, nada de su unidad vence después de la víspera: si el próximo repaso cae más tarde, se adelanta a la víspera.
+     tope: "AAAA-MM-DD" (la víspera) o null. Si la víspera ya es hoy o pasó, no se toca nada. Devuelve un estado nuevo. */
+  function limitar(estado, tope, hoy) {
+    if (!estado || !tope || !estado.due || (hoy && tope <= hoy) || estado.due <= tope) return estado;
+    var e = {}, k; for (k in estado) if (tiene(estado, k)) e[k] = estado[k];
+    e.due = tope; return e;
+  }
   /* Próximo intervalo de cada botón, para enseñarlo bajo el botón. */
   function previsto(estado, hoy) { return { otra: 0, bien: puntuar(estado, "bien", hoy).int, facil: puntuar(estado, "facil", hoy).int }; }
 
@@ -61,6 +68,6 @@
     return r;
   }
 
-  return { NUEVAS_DIA: NUEVAS_DIA, nuevasRestantes: nuevasRestantes, CALIDAD: CALIDAD, CAJAS: CAJAS, DOMINADA: DOMINADA, dia: dia, sumarDias: sumarDias, nuevo: nuevo, desdeCaja: desdeCaja, puntuar: puntuar, previsto: previsto,
+  return { NUEVAS_DIA: NUEVAS_DIA, nuevasRestantes: nuevasRestantes, CALIDAD: CALIDAD, CAJAS: CAJAS, DOMINADA: DOMINADA, dia: dia, sumarDias: sumarDias, nuevo: nuevo, desdeCaja: desdeCaja, puntuar: puntuar, limitar: limitar, previsto: previsto,
     caja: caja, dominada: dominada, vencida: vencida, paraHoy: paraHoy, pendientes: pendientes, recuento: recuento };
 });

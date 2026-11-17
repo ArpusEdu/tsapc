@@ -98,8 +98,8 @@ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
 .planta .maceta-borde{fill:#b05d3b;stroke:var(--fijo-tinta);stroke-width:2}
 .planta .brota path{transform-box:fill-box;transform-origin:0 50%;animation:brota 900ms var(--ease-muelle)}
 @keyframes brota{from{transform:scale(0)}}
-.racha{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:700;font-size:52px;line-height:1}
-.racha small{margin-left:6px;font-family:var(--f-texto);font-size:var(--t-base);font-weight:400;color:var(--c-tinta-2)}
+.dias{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:700;font-size:52px;line-height:1}
+.dias small{margin-left:6px;font-family:var(--f-texto);font-size:var(--t-base);font-weight:400;color:var(--c-tinta-2)}
 .planta p+p{margin-top:var(--e-2);color:var(--c-tinta-2);font-size:var(--t-sm);max-width:34ch}
 
 .notas-fila{display:flex;flex-wrap:wrap;gap:var(--e-5) var(--e-4);padding:6px 4px}
@@ -804,3 +804,169 @@ html.ss-foco .marca-cab{display:none}
 
 button.nota-boton{font:inherit;text-align:left;cursor:pointer;border:0;width:100%}
 .ex-destacado{border-color:var(--c-tinta);border-width:2px}
+
+/* ================= organizador: tiempos, «tengo X minutos» y Pomodoro ================= */
+/* 03 · Para ponerte al día: una lista compacta de menos a más, con el total arriba */
+.pt-total{margin:0;font-size:var(--t-lg);color:var(--c-tinta)}
+.pt-total b{font-family:var(--f-titulo);font-variation-settings:var(--suave)}
+.pt-lista{margin:0;padding:0;list-style:none;border-top:1.5px solid var(--c-linea-suave)}
+.pt-item{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--e-1) var(--e-3);padding:var(--e-2) 0;border-bottom:1.5px dashed var(--c-linea-suave)}
+.pt-que{display:grid;min-width:0;flex:1 1 12rem}
+.pt-que a,.pt-ir{display:inline-flex;align-items:center;min-height:var(--toque);color:var(--c-tinta);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-align:left;overflow-wrap:anywhere}
+.pt-ir{padding:0;font:inherit;background:none;border:0;cursor:pointer}
+.pt-que small{color:var(--c-tinta-2);font-size:var(--t-xs)}
+.pt-min{flex:none;font:700 var(--t-sm)/1 var(--f-mono);color:var(--c-tinta);padding:4px 8px;border-radius:var(--r-pildora);background:var(--c-hoja-2)}
+.pt-cambiar{min-height:var(--toque);padding:0 6px;font:inherit;font-size:var(--t-xs);color:var(--c-tinta-2);background:none;border:0;text-decoration:underline;cursor:pointer}
+.pt-estima{display:flex;flex-wrap:wrap;align-items:center;gap:var(--e-2)}
+.pt-estima label{display:flex;align-items:center;gap:var(--e-2)}
+.pt-pon{font-size:var(--t-xs);font-style:italic;color:var(--c-tinta-2)}
+.pt-estima input,.tengo-otro input,.pomo-campo-aj input{width:5.5em;min-height:var(--toque);padding:0 10px;font:inherit;font-size:16px;color:var(--c-tinta);background:var(--c-tarjeta);border:1.5px solid var(--c-linea);border-radius:var(--r-1)}
+.pt-poner{min-height:var(--toque);padding:0 var(--e-4)}
+.pt-ritmo{display:flex;gap:var(--e-2);align-items:flex-start;margin:0;font-size:var(--t-sm);color:var(--c-tinta-2)}
+.pt-ritmo .ico{flex:none;width:18px;height:18px;margin-top:2px}
+
+/* 01 · ¿Cuánto tiempo tienes? */
+.tengo{display:grid;gap:var(--e-3);padding:var(--e-4);border-radius:var(--r-2);background:var(--c-tarjeta);border:1.5px solid var(--c-linea-suave);min-width:0}
+.tengo-k{margin:0;font-size:var(--t-lg)}
+.tengo-fila{display:flex;flex-wrap:wrap;align-items:center;gap:var(--e-3)}
+.tengo-botones button{padding:0 14px;font-variant-numeric:tabular-nums;touch-action:manipulation}
+.tengo-otro{display:flex;flex-wrap:wrap;align-items:center;gap:var(--e-2)}
+.tengo-otro label{font-weight:700}
+.tengo-otro .boton{min-height:var(--toque)}
+.tengo-pie{margin:0}
+.tengo-pie a{display:inline-flex;align-items:center;gap:6px;min-height:var(--toque);color:var(--c-tinta);font-weight:700}
+.tengo-pie .ico{width:18px;height:18px}
+.tanda{display:grid;gap:var(--e-2);padding-top:var(--e-3);border-top:1.5px dashed var(--c-linea-suave)}
+.tanda:focus{outline:none}
+.tanda:focus-visible{outline:2px solid var(--c-foco);outline-offset:4px}
+.tanda p{margin:0}
+.tanda-k{font-weight:700}
+.tanda-lista{margin:0;padding-left:1.4em}
+.tanda-lista li{margin-block:2px}
+.tanda-lista a,.tanda-lista .pt-ir{min-height:var(--toque)}
+.tanda-min{font:700 var(--t-sm)/1 var(--f-mono)}
+.tanda-lista small{color:var(--c-tinta-2)}
+.tanda-nota{display:flex;gap:var(--e-2);align-items:flex-start;font-size:var(--t-sm)}
+.tanda-nota .ico{flex:none;width:18px;height:18px;margin-top:2px;color:var(--c-aviso)}
+.tanda-nota .pt-ir{min-height:24px;display:inline}
+.tanda .acciones{margin:var(--e-1) 0 0}
+
+/* ---------- Pomodoro: el anillo del logo es el progreso ---------- */
+.pomo{display:grid;justify-items:center;gap:var(--e-3);margin-block:var(--e-2) var(--e-6)}
+.pomo-esfera{position:relative;width:min(100%,320px);aspect-ratio:1;color:var(--c-marca)}
+.pomo-esfera[data-fase="descanso"],.pomo-esfera[data-fase="largo"]{color:var(--c-ok)}
+.pomo-anillo{display:block;width:100%;height:100%}
+.pomo-campo{fill:var(--c-tarjeta)}
+.pomo-pista{fill:none;stroke:var(--c-linea-suave);stroke-width:3.2}
+.pomo-avance{fill:none;stroke:currentColor;stroke-width:3.2;stroke-linecap:round}
+.pomo-esfera[data-fase="parado"] .pomo-avance{opacity:0}
+.pomo-muesca{fill:none;stroke:var(--c-eosina);stroke-width:3.2;stroke-linecap:round}
+.pomo-lectura{position:absolute;inset:18%;display:grid;place-content:center;justify-items:center;text-align:center;gap:2px}
+.pomo-lectura p{margin:0}
+.pomo-fase{font-weight:700;font-size:var(--t-sm);color:var(--c-tinta);text-wrap:balance}
+.pomo-tiempo{font:700 clamp(2.6rem,1.6rem + 5vw,3.6rem)/1 var(--f-mono);font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:var(--c-tinta)}
+.pomo-esfera[data-pausa] .pomo-tiempo{opacity:.6}
+.pomo-ciclo{font-size:var(--t-xs);color:var(--c-tinta-2)}
+.pomo-origen{margin:0;color:var(--c-tinta-2)}
+.pomo-origen a{color:var(--c-tinta);font-weight:700}
+.pomo-acc{justify-content:center;margin:0}
+.pomo-acc .boton{touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.pomo-nota{max-width:42ch;margin:0;font-size:var(--t-sm);color:var(--c-tinta-2);text-align:center}
+/* al cambiar de fase, la esfera «enfoca» un instante (como el logo): solo transform y opacidad */
+.pomo-esfera.cambia{animation:pomo-enfoca .6s var(--ease-salida) both}
+@keyframes pomo-enfoca{0%{transform:scale(.96);opacity:.55}100%{transform:none;opacity:1}}
+.pomo-cifras{display:flex;flex-wrap:wrap;gap:var(--e-3) var(--e-6);margin:0}
+.pomo-cifras div{display:grid}
+.pomo-cifras dt{font-size:var(--t-sm);color:var(--c-tinta-2)}
+.pomo-cifras dd{margin:0;font:700 var(--t-xl)/1.1 var(--f-titulo);color:var(--c-tinta)}
+.pomo-cumplido{display:flex;gap:var(--e-2);align-items:center;margin:0;font-weight:700}
+.pomo-cumplido .ico{width:18px;height:18px;color:var(--c-ok)}
+.pomo-h3{margin:var(--e-4) 0 var(--e-2);font-size:var(--t-md,1.0625rem)}
+.pomo-hist{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:0;padding:0;list-style:none}
+.pomo-hist li{display:grid;justify-items:center;gap:4px;min-width:0;font-size:var(--t-xs);color:var(--c-tinta-2)}
+.pomo-hist .num{color:var(--c-tinta);font-weight:700}
+.pomo-barra{display:flex;align-items:flex-end;width:100%;max-width:28px;height:64px;border-radius:4px;background:var(--c-hoja-2);box-shadow:inset 0 0 0 1px var(--c-linea-suave);overflow:hidden}
+.pomo-barra i{display:block;width:100%;background:var(--c-marca)}
+.pomo-dia{text-align:center;line-height:1.15}
+.pomo-ajustes{display:grid;gap:var(--e-3)}
+.pomo-campo-aj{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--e-2);padding-bottom:var(--e-2);border-bottom:1px dashed var(--c-linea-suave)}
+.pomo-campo-aj span{min-width:0;flex:1 1 10rem}
+.pomo-ajustes .acciones{margin:0}
+.pomo-enlace{margin:0 0 var(--e-3)}
+.pomo-enlace a{display:inline-flex;align-items:center;gap:6px;min-height:var(--toque);color:var(--c-tinta);font-weight:700}
+.pomo-enlace .ico{width:18px;height:18px}
+
+/* el indicador en otras pantallas: encima de la barra, a la derecha; sin región viva */
+.pomo-mini{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(76px + env(safe-area-inset-bottom));z-index:var(--z-pildora)}
+.pomo-mini[hidden]{display:none}
+.pomo-mini a{display:inline-flex;align-items:center;gap:8px;min-height:var(--toque);padding:6px 14px 6px 8px;border-radius:var(--r-pildora);background:var(--c-relleno);color:var(--c-sobre-tinta);font-weight:700;text-decoration:none;box-shadow:var(--sombra-flota);touch-action:manipulation;user-select:none;-webkit-user-select:none;transition:transform 120ms var(--ease-salida)}
+.pomo-mini a:active{transform:scale(.97)}
+.pm-anillo{width:24px;height:24px;flex:none}
+.pm-anillo circle{fill:none;stroke:currentColor;stroke-width:5;stroke-dasharray:110 13}
+.pomo-mini[data-fase="descanso"] a,.pomo-mini[data-fase="largo"] a{background:var(--c-ok);color:var(--c-sobre-tinta)}
+.pm-t{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+body:has(#pomoMini:not([hidden])){padding-bottom:calc(140px + env(safe-area-inset-bottom))}
+html.ss-foco .pomo-mini{bottom:max(16px,env(safe-area-inset-bottom))}
+@media (min-width:900px){ .pomo-mini{bottom:max(24px,env(safe-area-inset-bottom));right:max(24px,env(safe-area-inset-right))} }
+@media (prefers-reduced-motion:reduce){ .pomo-esfera.cambia{animation:none} .pomo-mini a{transition:none} .pomo-mini a:active{transform:none} }
+
+/* ===== Lo siguiente: arriba, una sola cosa (revisión del método, 2026-11) ===== */
+.lo-siguiente{display:grid;gap:var(--e-2);margin-bottom:var(--e-5);padding:var(--e-5) var(--e-4) var(--e-4);border-style:solid;border-width:2px;border-color:var(--asig-borde,var(--c-linea))}
+.lo-siguiente p{margin:0}
+.sig-intro{font-weight:700;color:var(--c-tinta)}
+.sig-h{margin:0;font-size:var(--t-sm);font-family:var(--f-texto);font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--asig-texto,var(--c-tinta-2))}
+.sig-k{font-size:var(--t-sm);color:var(--c-tinta-2)}
+.sig-tit{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:700;font-size:var(--t-xl);line-height:1.1;color:var(--c-tinta);text-wrap:balance}
+.sig-acc{display:flex;flex-wrap:wrap;align-items:center;gap:var(--e-3);margin-top:var(--e-2)}
+.recuadro .sig-boton{margin-top:0;min-height:52px;padding-inline:22px;font-size:var(--t-lg)}
+.sig-min{color:var(--c-tinta-2);font-size:var(--t-sm)}
+.sig-hoy{padding-top:var(--e-2);border-top:1.5px dashed var(--c-linea-suave);color:var(--c-tinta-2);font-size:var(--t-sm)}
+.sig-hoy b{color:var(--c-tinta);font-size:var(--t-base)}
+@media (max-width:420px){ .sig-boton{flex:1 1 100%;justify-content:center} }
+.intencion{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:var(--t-sm);color:var(--c-tinta)}
+.intencion .ico{width:18px;height:18px;flex:none}
+.intencion-p>summary{display:flex;align-items:center;gap:8px;list-style:none;min-height:var(--toque);cursor:pointer;font-size:var(--t-sm);font-weight:700;color:var(--c-tinta)}
+.intencion-p>summary::-webkit-details-marker{display:none}
+.intencion-f{display:flex;flex-wrap:wrap;gap:var(--e-2);align-items:center}
+.intencion-f input{flex:1 1 12em;min-width:0;min-height:var(--toque);padding:0 12px;font:inherit;font-size:16px;color:var(--c-tinta);background:var(--c-hoja);border:1.5px solid var(--c-linea);border-radius:var(--r-1)}
+.intencion-f .boton{min-height:var(--toque)}
+.intencion-p .ss-mini{margin-top:var(--e-1)}
+/* lo demás, plegado */
+.mas-hoy{margin-top:var(--e-5);border-top:1.5px dashed var(--c-linea)}
+.mas-hoy>summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;min-height:52px;padding-block:var(--e-3);cursor:pointer;list-style:none}
+.mas-hoy>summary::-webkit-details-marker{display:none}
+.mas-t{font-family:var(--f-titulo);font-variation-settings:var(--suave);font-weight:700;font-size:var(--t-lg);color:var(--c-tinta)}
+.mas-n{font-size:var(--t-sm);color:var(--c-tinta-2)}
+.mas-hoy>.tramos{padding-top:var(--e-4)}
+.pt-plegado>summary{display:flex;align-items:center;min-height:var(--toque);cursor:pointer;font-weight:700;color:var(--c-tinta)}
+.pt-plegado .pt-total{margin-bottom:var(--e-3);font-size:var(--t-base)}
+.plan-min{font-size:var(--t-sm);color:var(--c-tinta-2)}
+.plan-min a{color:var(--c-tinta);font-weight:700}
+.plan-hoy small{color:var(--c-tinta-2)}
+/* cuenta atrás: días hasta las últimas 24 h */
+.lcd-pantalla span:empty{display:none}
+/* sesión: dos ratos, el intento y el resultado en tres estilos */
+.ss-pasos li.rato-b{position:relative}
+.ss-pasos li.rato-b::before{content:'';position:absolute;left:-3px;top:2px;height:30px;border-left:2px dotted var(--c-linea)}
+.ss-intento{display:grid;gap:var(--e-3);margin-top:var(--e-3)}
+.ss-voz{justify-self:start}
+.ss-voz .ico{width:18px;height:18px}
+.ss-cree .segmentado{flex-wrap:wrap;margin-top:var(--e-1)}
+.ss-cree .segmentado button{padding:0 14px;min-width:var(--toque);font-variant-numeric:tabular-nums}
+.ss-fb.medio{background:var(--c-hoja-2);border:1.5px solid var(--c-linea-suave)}
+.ss-fb.poco{background:var(--c-hoja-2);border:1.5px dashed var(--c-linea)}
+.ss-cal{margin-top:var(--e-2);font-size:var(--t-sm);color:var(--c-tinta)}
+.ss-falta-pt{margin-top:var(--e-3)}
+.ss-falta-pt ul{margin:var(--e-1) 0 0;padding-left:1.2em;display:grid;gap:4px}
+.ss-ver-profe{margin-block:var(--e-2) 0}
+.ss-pausa .acciones{display:flex;flex-wrap:wrap;gap:var(--e-2)}
+/* planta: después de 13 días cambia de forma */
+.planta .flor-boton{fill:var(--asig);stroke:var(--c-linea);stroke-width:1.4}
+.planta .flor-petalo{fill:var(--c-hoja);stroke:var(--asig-texto,var(--c-linea));stroke-width:1.4}
+.planta .flor-centro{fill:var(--asig);stroke:var(--c-linea);stroke-width:1.2}
+/* Pomodoro: los días sin bloques, en tono neutro */
+.pomo-hist li.cero .num{color:var(--c-tinta-2);font-weight:400}
+.seg-mindia{flex-wrap:wrap}
+.pl-ico{flex:none;width:18px;height:18px;align-self:center;transition:transform var(--d-media) var(--ease-salida)}
+.mas-hoy[open]>summary .pl-ico,.intencion-p[open]>summary .pl-ico{transform:rotate(90deg)}
+.intencion-p>summary{list-style:none}

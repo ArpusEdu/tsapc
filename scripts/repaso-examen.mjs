@@ -99,8 +99,8 @@ details>div{padding:0 0 10px}
 
 <section id="mapa"><h2>El tema en 1 minuto</h2><div class="mapa">${D.mapa.map((m) => '<div class="caja"><h3>' + esc(m.titulo) + '</h3><p class="cx-f">Diapositivas ' + esc(m.diap) + "</p><ul>" + m.lineas.map((l) => "<li>" + l + "</li>").join("") + "</ul></div>").join("")}</div></section>
 
-<section id="diapos"><h2>Diapositiva a diapositiva</h2>
-<div class="herr"><button type="button" class="boton" id="tapar" aria-pressed="false">Tapar lo de la profe</button><span class="cx-f">Tápalo, dilo en voz alta y toca para comprobar.</span></div>
+<section id="diapos" class="tapado"><h2>Diapositiva a diapositiva</h2>
+<div class="herr"><button type="button" class="boton" id="tapar" aria-pressed="true">Destapar todo</button><span class="cx-f">Lo de la profe empieza tapado: dilo en voz alta y toca cada diapositiva para comprobar. Relee solo lo que falles.</span></div>
 ${cs.map(concepto).join("\n")}
 </section>
 

@@ -543,6 +543,8 @@
       var resp = t.getAttribute("data-tj-r"); if (!resp || !s.cola.length) return;
       var id = s.cola.shift(), todos = estadosT(u), previo = estadosCon(u, J)[id] || null;
       todos[id] = S2.puntuar(previo, resp, hoyClave());
+      /* con un examen cerca, nada de su unidad vence después de la víspera */
+      if (ctx.vispera && S2.limitar) todos[id] = S2.limitar(todos[id], ctx.vispera(u), hoyClave());
       if (!ctx.guardar(rutaU(u, "tarjetas"), todos)) ctx.aviso("No se pudo guardar.", "error");
       if (resp === "otra") s.cola.splice(Math.min(3, s.cola.length), 0, id); else s.hechas++;
       s.vuelta = false; EF = { t: "puntuada", r: resp }; refrescar(u);

@@ -133,14 +133,14 @@
      fase: lo que se enseña después de hacerlo, sin cambiar de paso (el hueco se desliza al nuevo sitio). */
   function sesionDe(ctx) { try { return ctx.sesionHoy ? ctx.sesionHoy() : null; } catch (_) { return null; } }
   function unidadDe(ctx) { try { var u = ctx.unidadHoy ? ctx.unidadHoy() : null; return u ? "#/unidad/" + encodeURIComponent(u) : null; } catch (_) { return null; } }
-  var AVISO_BOTONES = "«Ya lo entregué» lo apaga del todo; «Ya estudié hoy» lo calla hasta mañana.";
+  var AVISO_BOTONES = "Puedes decir «Ya lo hice» o «Hoy no puedo»: los dos lo callan hasta mañana, sin reproches. En una entrega, «Ya lo entregué» lo apaga del todo.";
   var PASOS = [
-    { id: "ahora", zona: "Hoy · 01 Ahora", t: "Lo que <em>no puede esperar</em>", ruta: function () { return "#/hoy"; },
-      el: [".tramo-ahora .aviso-hoy", ".tramo-ahora"],
-      c: function (i) {
-        return "<p>Hoy se lee de arriba abajo: <b>01 Ahora</b>, <b>02 Para tu examen</b> y <b>03 Pendientes</b>. Lo urgente, primero.</p>" +
-          (i === 0 ? "<p>Este aviso insiste cada día hasta que le respondes. " + AVISO_BOTONES + "</p>"
-            : "<p>Cuando se acerque una entrega o un examen, aquí sale un aviso que insiste cada día. " + AVISO_BOTONES + "</p>");
+    { id: "ahora", zona: "Hoy · Lo siguiente", t: "Tu sesión <em>de hoy</em>", ruta: function () { return "#/hoy"; },
+      el: [".lo-siguiente"],
+      c: function () {
+        return "<p>Arriba, una sola cosa: lo siguiente que toca. Casi siempre, tu sesión de hoy o tu repaso. Un botón y a estudiar, sin tener que organizarte.</p>" +
+          "<p>Cada sesión va en dos ratos de unos diez minutos: si hoy solo tienes uno, mañana sigues donde lo dejes. Lo demás está plegado en «Más para hoy».</p>" +
+          "<p>Cuando se acerque un examen o una entrega, debajo sale un aviso. " + AVISO_BOTONES + "</p>";
       } },
     { id: "examen", zona: "Hoy · 02 Para tu examen", t: "La cuenta atrás <em>y tu plan</em>", ruta: function () { return "#/hoy"; },
       el: [".tramo-examen .plan-ex", ".tramo-examen .ex-tarjeta .ex-fila", ".tramo-examen .estado"],
@@ -154,7 +154,7 @@
       el: [".tramo-pend .tramo-rejilla", ".tramo-pend"],
       c: function () {
         return "<p>Las entregas de hoy se tachan al terminarlas. Cada día con algo hecho, a tu planta le sale una hoja; un mal día no la seca.</p>" +
-          "<p><b>Tu repaso de hoy</b> trae lo que ya estudiaste justo antes de que se te olvide: unos cinco minutos. Las tarjetas que tocan salen aquí también.</p>";
+          "<p><b>Tu repaso de hoy</b> trae lo que ya estudiaste justo antes de que se te olvide, unas pocas cosas cada día. Las tarjetas que tocan salen aquí también.</p>";
       } },
     { id: "unidad", zona: "Una unidad", t: "Todo para <em>estudiarla</em>", ruta: function (ctx) { return unidadDe(ctx); },
       el: ['section[aria-labelledby="hEs"] .notas-fila', 'section[aria-labelledby="hEs"]'],
@@ -170,8 +170,8 @@
       ruta: function (ctx, hash) { return /^#\/sesion\/(?!repaso(\/|$))/.test(hash || "") ? hash : sesionDe(ctx); },
       el: [".ss-pasos"],
       c: function () {
-        return '<ol class="rc-momentos">' + [["El misterio", "un caso que aún no sabes resolver."], ["Descubre", "lo de la profe, tal cual."], ["Sin mirar", "lo explicas de memoria."], ["Resuelve", "vuelves al caso."], ["Otros días", "lo que ya estudiaste."]]
-          .map(function (x) { return "<li><span><b>" + x[0] + ":</b> " + x[1] + "</span></li>"; }).join("") + "</ol><p>Recordar sin mirar es lo que fija. Si sales, se guarda.</p>";
+        return '<ol class="rc-momentos">' + [["El misterio", "un caso que aún no sabes resolver."], ["Descubre", "lo de la profe, tal cual."], ["Otros días", "lo que ya estudiaste."], ["Sin mirar", "lo explicas de memoria."], ["Resuelve", "vuelves al caso."]]
+          .map(function (x) { return "<li><span><b>" + x[0] + ":</b> " + x[1] + "</span></li>"; }).join("") + "</ol><p>Los dos primeros son el rato A; los otros tres, el rato B. Recordar sin mirar es lo que fija. Si sales, se guarda.</p>";
       } },
     { id: "agenda", zona: "Agenda", t: "Horario <em>y calendario</em>", ruta: function () { return "#/agenda"; },
       el: ["#pestanas .pestanas"],
@@ -278,6 +278,8 @@
         var s = typeof lista[k] === "function" ? lista[k](ctx) : lista[k];
         if (!s) continue;
         var el = document.querySelector(s);
+        /* lo que está en un plegable cerrado («Más para hoy») se abre para poder enseñarlo */
+        for (var p = el && el.parentElement; p; p = p.parentElement) if (p.tagName === "DETAILS" && !p.open) p.open = true;
         if (el && el.getClientRects().length && !$(".cargando", document.getElementById("vista") || document)) return { el: el, k: k };
       }
       return null;
