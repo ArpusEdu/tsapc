@@ -59,7 +59,7 @@
   function pintar(){
     L.forEach(q=>{const art=document.getElementById("c"+(+q.n));if(!art)return;
       let a=art.querySelector('.pp-r[data-q="'+q.id+'"]');
-      if(!a){a=document.createElement("aside");a.className="pp-r";a.dataset.q=q.id;a.setAttribute("aria-label","Para preguntar en clase");art.appendChild(a)}
+      if(!a){a=document.createElement("aside");a.className="pp-r";a.dataset.q=q.id;a.setAttribute("aria-label","Para preguntar en clase · concepto "+(+q.n));art.appendChild(a)}
       a.innerHTML=caja(q)})
   }
   function estilos(){

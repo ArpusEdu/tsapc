@@ -1,132 +1,152 @@
-/* Corte · genera la página de repaso de una unidad a partir de su contenido.
-   Uso: node scripts/repaso.mjs <unidad>          → escribe <unidad>/repaso/index.html
-        node scripts/repaso.mjs <unidad> --comprobar → solo dice si la página está al día
-   Fuente: <unidad>/repaso/contenido.json (lo escrito a mano) + scripts/plantilla-repaso.html
-   (copia del repaso original de Bio 3). De la plantilla se conserva todo lo que no depende del tema: estilos, plan de estudio,
-   tarjetas, índice, scripts. Lo que depende del tema se genera aquí.
+/* Enfoque · genera la página de repaso de una unidad a partir de su contenido.
+   Uso: node scripts/repaso.mjs <unidad>                    → escribe <unidad>/repaso/index.html
+        node scripts/repaso.mjs <unidad> --comprobar        → solo dice si la página está al día
+        node scripts/repaso.mjs <unidad> --salida <carpeta> → escribe <carpeta>/<unidad>.html (para comparar)
+        node scripts/repaso.mjs <unidad> --plantilla <html> → usa otra plantilla (por defecto scripts/plantilla-repaso.html)
+   Fuente: <unidad>/repaso/contenido.json (lo escrito a mano) + scripts/plantilla-repaso.html. De la plantilla se conserva todo
+   lo que no depende del tema: estilos, plan de estudio, tarjetas, índice, scripts. Lo que depende del tema se genera aquí.
 
    contenido.json:
    { unidad, titulo (pestaña), eyebrow, h1, sub, clave (localStorage), examen: {em, asig, examen, fecha}, simulacro (ruta o null),
      bloques: [{ titulo, conceptos: [{ titulo, lv (1-3), fuente ("Diapositiva 8"), defs: [{t, facil, diapo?, n?}],
                  prof (HTML: lo que dice la profe), imgs: [{src, alt, w, h}], entiende (HTML), truco (HTML), q }] }],
      llave: [{q, porque, resp (HTML)}], trampas: [[a, b, c]], numeros: [[num, que]], impres: [{titulo, items: [[preg, resp]]}] }
-   El chequeo final y el glosario salen solos (preguntas de cada bloque y definiciones). */
+   El chequeo final y el glosario salen solos (preguntas de cada bloque y definiciones).
+   Campos opcionales (los de los repasos que se escribieron a mano): ver la cabecera de scripts/html-a-contenido.mjs.
+   Las piezas se pintan con las funciones de ese archivo, que son las mismas con las que se comprobó cada contenido.json.
+
+   Después del montaje, enfoque() da a la página el aspecto de la app (cabecera con el logo y el portaobjetos de la unidad,
+   iconos del sistema en lugar de emojis, fuentes locales). No cambia ni un texto: los emojis que leen los scripts
+   (📍, 📌, «BLOQUE N», los del planificador) siguen en el HTML, escondidos con hidden. */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { createRequire } from "node:module";
+import { esc, pintaConcepto, pintaSeccion, pintaCajon, pintaToc, extrasPorDefecto, etiquetas, medidaJpeg } from "./html-a-contenido.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const [u, opt] = process.argv.slice(2);
-if (!u) { console.error("Uso: node scripts/repaso.mjs <unidad> [--comprobar]"); process.exit(1); }
+const args = process.argv.slice(2);
+const u = args[0];
+const opcion = (k) => { const i = args.indexOf(k); return i > 0 ? args[i + 1] : null; };
+if (!u || u.startsWith("--")) { console.error("Uso: node scripts/repaso.mjs <unidad> [--comprobar] [--salida <carpeta>] [--plantilla <html>]"); process.exit(1); }
 const D = JSON.parse(fs.readFileSync(path.join(RAIZ, u, "repaso", "contenido.json"), "utf8"));
-const plantilla = fs.readFileSync(path.join(RAIZ, "scripts", "plantilla-repaso.html"), "utf8");
+const APP = createRequire(import.meta.url)("../app/datos.js").UNIDADES.find((x) => x.id === u);
+if (!APP) throw new Error("La unidad " + u + " no está en app/datos.js");
+const plantilla = fs.readFileSync(opcion("--plantilla") || path.join(RAIZ, "scripts", "plantilla-repaso.html"), "utf8");
 
-const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const TAG = { 1: "🔴 IMPRESCINDIBLE", 2: "🟠 IMPORTANTE", 3: "🔵 LEER UNA VEZ" };
 const MIN = { 1: 9, 2: 6, 3: 3 };
-const ICO = { 1: "🔴", 2: "🟠", 3: "🔵" };
+const H = (o, k) => (o[k + "Html"] != null ? o[k + "Html"] : esc(o[k]));
 
-/* ancho y alto reales de un JPEG (marcador SOF), para reservar el hueco y que la página no salte al cargar */
-function medida(src) {
-  const f = path.join(RAIZ, u, "repaso", src);
-  if (!fs.existsSync(f)) throw new Error("Falta la imagen " + f);
-  const b = fs.readFileSync(f);
-  for (let i = 2; i < b.length - 9;) {
-    if (b[i] !== 0xff) { i++; continue; }
-    const m = b[i + 1], len = b.readUInt16BE(i + 2);
-    if (m >= 0xc0 && m <= 0xc3) return [b.readUInt16BE(i + 7), b.readUInt16BE(i + 5)];
-    i += 2 + len;
-  }
-  throw new Error("No sé leer el tamaño de " + f);
-}
+/* ancho y alto reales de un JPEG, para reservar el hueco y que la página no salte al cargar */
+const medida = (src) => { const m = medidaJpeg(path.join(RAIZ, u, "repaso", src)); if (!m) throw new Error("Falta o no sé leer la imagen " + src); return m; };
 
 /* numeración global */
 let n = 0;
 const bloques = D.bloques.map((b, i) => ({ ...b, i, conceptos: b.conceptos.map((c) => ({ ...c, n: ++n })) }));
 const todos = bloques.flatMap((b) => b.conceptos);
+todos.forEach((c, i) => { if (c.n !== i + 1) throw new Error("Numeración rota en " + c.titulo); });
+const E = etiquetas(D);
 const cuenta = (lv) => todos.filter((c) => c.lv === lv).length;
 
-function concepto(c) {
-  const defs = (c.defs || []).length
-    ? '<div class="defs"><p class="lbl">📘 Qué significa cada palabra</p><ul>' + c.defs.map((d) =>
-        '<li><b class="term">' + d.t + '</b><div class="fd easy"><span class="fl">💡 Para entenderlo</span>' + d.facil + "</div>" +
-        (d.diapo ? '<div class="fd ok"><span class="fl">📌 Definición de la diapositiva · la del examen</span>«' + d.diapo + (d.n ? " (diap. " + d.n + ")" : "") + "»</div>" : "") + "</li>").join("") + "</ul></div>\n"
-    : "";
-  const figs = (c.imgs || []).map((f) => { const [w, hh] = medida(f.src); return '<figure><img src="' + f.src + '" width="' + w + '" height="' + hh + '" loading="lazy" decoding="async" alt="' + esc(f.alt) + '"><figcaption>' + esc(f.alt) + "</figcaption></figure>\n"; }).join("");
-  return '<article class="cpt lv' + c.lv + '" id="c' + c.n + '" data-lv="' + c.lv + '">\n' +
-    '<header class="c-h"><span class="c-n">' + c.n + "</span><h3>" + esc(c.titulo) + "</h3></header>\n" +
-    '<div class="c-meta"><span class="tag lv' + c.lv + '">' + TAG[c.lv] + '</span><span class="srcl">📍 ' + esc(c.fuente) + "</span></div>\n" +
-    '<div class="c-body">\n' + defs +
-    '<p class="lbl prof">📋 Lo que dice la profe</p>\n<div class="prof-t">' + c.prof + "</div>\n" + figs +
-    (c.entiende ? '<div class="box und"><p class="lbl">💡 Entiéndelo</p><p>' + c.entiende + "</p></div>\n" : "") +
-    (c.truco ? '<div class="box tip"><p class="lbl">🧠 Truco para recordarlo</p><p>' + c.truco + "</p></div>\n" : "") +
-    '<div class="box q"><p class="lbl">❓ Ponte a prueba</p><p class="qt">' + esc(c.q) + '</p><label class="dom"><input type="checkbox" data-n="' + c.n + '"> Lo domino</label></div>\n' +
-    "</div></article>\n";
-}
-
 function bloque(b) {
-  const cs = b.conceptos, min = cs.reduce((s, c) => s + MIN[c.lv], 0) + 4;
+  const cs = b.conceptos, min = b.min != null ? b.min : cs.reduce((s, c) => s + MIN[c.lv], 0) + 4;
   const r = cs.filter((c) => c.lv === 1).length;
-  return '<section class="blk" id="b' + b.i + '" data-min="' + min + '"><h2 class="blk-h"><span class="bn">BLOQUE ' + (b.i + 1) + '</span><span class="bt">' + esc(b.titulo) +
-    '</span><span class="bc">⏱ ' + min + " min · Conceptos " + cs[0].n + "–" + cs[cs.length - 1].n + " · " + r + ' 🔴 · <b class="bd">0</b>/' + cs.length + " dominados</span></h2>" +
-    cs.map(concepto).join("") + "</section>";
-}
-
-const tabla = (cab, filas) => '<div class="tw"><table><thead><tr>' + cab.map((h) => "<th>" + h + "</th>").join("") + "</tr></thead><tbody>" +
-  filas.map((f) => "<tr>" + f.map((x) => "<td>" + x + "</td>").join("") + "</tr>").join("") + "</tbody></table></div>";
-
-function extras() {
-  let h = "";
-  if (D.llave && D.llave.length) h += '<section class="xs" id="llave"><h2 class="xs-h">🔑 Bloque ' + (bloques.length + 1) + ' · Preguntas llave</h2><p>Candidatas elegidas por lo que más destacan las diapositivas, de más a menos probable. <strong>No son preguntas confirmadas por la profe.</strong> Escríbelas de memoria al menos una vez.</p>' +
-    D.llave.map((p, i) => '<details class="pq"><summary><span class="pn">🔑 ' + (i + 1) + "</span> " + esc(p.q) + '</summary><div class="pa"><p><em>Por qué:</em> ' + esc(p.porque) + "</p><p><strong>Respuesta modelo:</strong></p><p>" + p.resp + "</p></div></details>").join("") + "</section>";
-  /* aviso del buscador y los filtros (repaso.js lo muestra u oculta) */
-  h += '<p class="empty" id="empty" hidden>No hay conceptos con ese filtro o esa búsqueda.</p>';
-  if (D.trampas && D.trampas.length) h += '<section class="xs" id="trampas"><h2 class="xs-h">⚠️ Trampas típicas del examen</h2>' + tabla(["No confundas…", "…con…", "Cómo diferenciarlos"], D.trampas) + "</section>";
-  if (D.numeros && D.numeros.length) h += '<section class="xs" id="numeros"><h2 class="xs-h">🔢 Números clave (apréndelos como una tabla de multiplicar)</h2>' + tabla(["Número", "Qué es"], D.numeros.map(([a, b]) => ["<strong>" + a + "</strong>", b])) + "</section>";
-  h += '<section class="xs" id="chequeo"><h2 class="xs-h">✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)</h2><ol>' +
-    bloques.map((b) => { const c = b.conceptos.find((x) => x.lv === 1) || b.conceptos[0]; return "<li>" + esc(c.q) + " (Bloque " + (b.i + 1) + ")</li>"; }).join("") + "</ol></section>";
-  if (D.impres && D.impres.length) h += '<section class="xs" id="impres"><h2 class="xs-h">⚡ Lo imprescindible (repaso exprés)</h2><p class="meta">Pregunta directa → respuesta corta. Toca cada pregunta para ver la respuesta.</p>' +
-    D.impres.map((g, i) => "<h3 class='ih'>" + (i + 1) + " · " + esc(g.titulo) + "</h3>" + g.items.map(([p, r]) => '<details class="pq"><summary>' + esc(p) + '</summary><div class="pa"><p>' + r + "</p></div></details>").join("")).join("") + "</section>";
-  const glos = new Map();
-  for (const c of todos) for (const d of c.defs || []) if (!glos.has(d.t.toLowerCase())) glos.set(d.t.toLowerCase(), [d.t, d.facil]);
-  const g = [...glos.values()].sort((a, b) => a[0].localeCompare(b[0], "es"));
-  if (g.length) h += '<section class="xs" id="glosario"><h2 class="xs-h">📖 Glosario (palabras importantes, por orden alfabético)</h2>' + tabla(["Término", "Qué significa"], g.map(([t, f]) => ["<strong>" + t + "</strong>", f])) + "</section>";
-  return h;
-}
-
-function cajon() {
-  const det = bloques.map((b) => '<details class="db"><summary><span class="dn">' + (b.i + 1) + '</span><span class="dt2">' + esc(b.titulo) + '</span><span class="dc" data-b="b' + b.i + '">0/' + b.conceptos.length + '</span></summary><a class="dbk" href="#b' + b.i + '">Ir al inicio del bloque</a>' +
-    b.conceptos.map((c) => '<a class="dl i' + c.lv + '" href="#c' + c.n + '"><i></i>' + c.n + ". " + esc(c.titulo) + "</a>").join("") + "</details>").join("\n");
-  const ex = [["trampas", "⚠️ Trampas típicas del examen"], ["numeros", "🔢 Números clave (apréndelos como una tabla de multiplicar)"], ["chequeo", "✅ Chequeo final (contesta sin mirar; si fallas una, vuelve a su bloque)"], ["impres", "⚡ Lo imprescindible"], ["glosario", "📖 Glosario (palabras importantes, por orden alfabético)"]]
-    .filter(([id]) => id === "chequeo" || (id === "glosario" ? todos.some((c) => (c.defs || []).length) : (D[id] || []).length));
-  return det + "\n\n" + (D.llave && D.llave.length ? '<a class="dl bll" href="#llave"><span class="dn">' + (bloques.length + 1) + "</span>🔑 Preguntas llave</a>\n" : "") +
-    '<p class="dx">Extras</p>' + ex.map(([id, t]) => '<a class="dl" href="#' + id + '">' + t + "</a>").join("");
+  const bc = b.bc != null ? b.bc : "⏱ " + min + " min · Conceptos " + cs[0].n + "–" + cs[cs.length - 1].n + " · " + r + ' 🔴 · <b class="bd">0</b>/' + cs.length + " dominados";
+  return '<section class="blk" id="b' + b.i + '" data-min="' + min + '"><h2 class="blk-h"><span class="bn">' + (b.bn != null ? esc(b.bn) : "BLOQUE " + (b.i + 1)) + '</span><span class="bt">' + H(b, "titulo") +
+    '</span><span class="bc">' + bc + "</span></h2>" + (b.antes ? b.antes + "\n" : "") + cs.map((c) => pintaConcepto(c, medida, E)).join("") + (b.despues ? b.despues + "\n" : "") + "</section>";
 }
 
 /* ---------- montaje sobre la plantilla ---------- */
 let h = plantilla;
 const cambia = (re, fn, que) => { if (!re.test(h)) throw new Error("La plantilla no tiene: " + que); h = h.replace(re, fn); };
 cambia(/data-unit="[^"]*"/, 'data-unit="' + u + '"', "data-unit");
+cambia(/data-subject="[^"]*"/, 'data-subject="' + APP.s + '"', "data-subject");
+const SPR = "../../assets/corte/iconos.svg#i-";
+const ICO = (id) => '<svg class="ico" aria-hidden="true" focusable="false"><use href="' + SPR + id + '"/></svg>';
+const VOLVER = "../../app/#/unidad/" + encodeURIComponent(u);
+cambia(/<a class="dt big" href="[^"]*">/, '<a class="dt big" href="' + VOLVER + '">', "volver del índice");
 cambia(/<title>[^<]*<\/title>/, "<title>" + esc(D.titulo) + "</title>", "title");
-const leyenda = [1, 2, 3].filter((lv) => cuenta(lv)).map((lv) => '<span class="tag lv' + lv + '">' + TAG[lv] + " · " + cuenta(lv) + "</span>").join("");
-cambia(/<header class="top">[\s\S]*?<\/header><details class="how">/, () => '<header class="top"><p class="eyebrow">' + esc(D.eyebrow) + "</p>\n<h1>" + esc(D.h1) + '</h1>\n<p class="sub">' + esc(D.sub) + '</p>\n<div class="legend">' + leyenda + '</div></header><details class="how">', "cabecera");
-cambia(/(<select id="toc"[^>]*><option value="">Ir a…<\/option>)[\s\S]*?(<\/select>)/, (m, a, b) => a + bloques.map((x) => '<option value="b' + x.i + '">Bloque ' + (x.i + 1) + " · " + esc(x.titulo) + "</option>").join("") +
-  (D.llave && D.llave.length ? '<option value="llave">🔑 Preguntas llave</option>' : "") + b, "índice desplegable");
+const leyenda = D.leyenda != null ? D.leyenda : [1, 2, 3].filter((lv) => cuenta(lv)).map((lv) => '<span class="tag lv' + lv + '">' + TAG[lv] + " · " + cuenta(lv) + "</span>").join("");
+/* cabecera como la de la unidad en la app: volver y logo arriba (en el HTML, para que nada salte al cargar);
+   el portaobjetos con el código y el tema en el color de la asignatura (.spec: repaso.js ya no lo inserta) */
+const diap = (() => { const t = String(APP.tema || "").split(" · ")[0]; return t && t !== APP.examen && t.length <= 14 ? t + " · " + APP.examen : APP.examen; })();
+cambia(/<header class="top">[\s\S]*?<\/header><details class="how">/, () => '<header class="top"><div class="top-barra"><a class="mc-back" href="' + VOLVER + '">' + ICO("volver") + "Volver a la unidad</a>" +
+  '<a class="top-marca" href="../../app/#/hoy" aria-label="Enfoque: ir a Hoy"><img class="logo-papel" src="../../assets/enfoque/logo.svg" width="120" height="32" alt=""><img class="logo-noche" src="../../assets/enfoque/logo-noche.svg" width="120" height="32" alt=""></a></div>\n' +
+  '<div class="spec porta"><div class="porta-etq" aria-hidden="true"><span class="porta-cod">' + esc(APP.codigo.toUpperCase()) + '</span><span class="porta-diap">' + esc(diap) + '</span></div><div class="porta-muestra">' +
+  '<p class="eyebrow">' + H(D, "eyebrow") + "</p>\n<h1>" + H(D, "h1") + '</h1>\n<p class="sub">' + H(D, "sub") + '</p></div></div>\n<div class="legend">' + leyenda + '</div></header><details class="how">', "cabecera");
+if (D.como != null) cambia(/<details class="how">[\s\S]*?<\/details>/, () => '<details class="how">' + D.como + "</details>", "cómo usar");
+cambia(/(<select id="toc"[^>]*><option value="">Ir a…<\/option>)[\s\S]*?(<\/select>)/, (m, a, b) => a + pintaToc(D, bloques) + b, "índice desplegable");
 const sim = D.simulacro ? "../../" + D.simulacro : null;
-cambia(/<a class="simlink" href="[^"]*">[\s\S]*?<\/a>/, () => sim ? '<a class="simlink" href="' + sim + '"><span>📝 Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><span aria-hidden="true">→</span></a>' : "", "enlace al simulacro");
-cambia(/<a class="dt sim" href="[^"]*">[^<]*<\/a>/, () => sim ? '<a class="dt sim" href="' + sim + '">📝 Simulacro</a>' : "", "simulacro del índice");
+cambia(/<a class="simlink" href="[^"]*">[\s\S]*?<\/a>/, () => sim ? '<a class="simlink" href="' + sim + '">' + ICO("editar") + '<span>Cuando acabes un bloque, ponte a prueba en el <b>Simulacro</b></span><svg class="ico flecha" aria-hidden="true" focusable="false"><use href="' + SPR + 'siguiente"/></svg></a>' : "", "enlace al simulacro");
+cambia(/<a class="dt sim" href="[^"]*">[^<]*<\/a>/, () => sim ? '<a class="dt sim" href="' + sim + '">' + ICO("editar") + "Simulacro</a>" : "", "simulacro del índice");
 cambia(/<section class="blk" id="b0"[\s\S]*?(?=<section class="xs")/, () => bloques.map(bloque).join("\n") + "\n", "bloques");
-cambia(/<section class="xs"[\s\S]*?(?=<div class="tpill")/, () => extras() + "\n", "secciones extra");
-cambia(/<details class="db">[\s\S]*?(?=<\/div><\/aside>)/, () => cajon(), "índice lateral");
+const extras = (D.extras || extrasPorDefecto(D, todos)).map((x) => pintaSeccion(x, D, bloques, todos)).join("");
+cambia(/<section class="xs"[\s\S]*?(?=<\/main>)/, () => extras + "\n", "secciones extra");
+cambia(/<details class="db">[\s\S]*?(?=<\/div><\/aside>)/, () => pintaCajon(D, bloques), "índice lateral");
 cambia(/const KEY="[^"]*"/, 'const KEY="' + D.clave + '"', "KEY");
+const EX = D.examen;
 cambia(/const EXAM=\{id:"[^"]*",em:"[^"]*",asig:"[^"]*",examen:"[^"]*",fecha:[^,]*,(horario:\[[^\]]*\]),repaso:"#",simulacro:[^,]*,/, (m, hor) =>
-  "const EXAM={id:" + JSON.stringify(u) + ",em:" + JSON.stringify(D.examen.em) + ",asig:" + JSON.stringify(D.examen.asig) + ",examen:" + JSON.stringify(D.examen.examen) + ",fecha:" + JSON.stringify(D.examen.fecha || null) + "," + hor + ',repaso:"#",simulacro:' + JSON.stringify(sim) + ",", "EXAM");
+  "const EXAM={id:" + JSON.stringify(EX.id || u) + ",em:" + JSON.stringify(EX.em) + ",asig:" + JSON.stringify(EX.asig) + ",examen:" + JSON.stringify(EX.examen) + ",fecha:" + JSON.stringify(EX.fecha === undefined ? null : EX.fecha) + "," +
+  (EX.horario ? "horario:" + JSON.stringify(EX.horario) : hor) + ',repaso:"#",simulacro:' + JSON.stringify(sim) + ",", "EXAM");
+/* lo propio de la unidad fuera del contenido */
+if (D.tipografia && /fonts\.googleapis\.com\/css2\?family=/.test(h)) cambia(/(fonts\.googleapis\.com\/css2\?family=)[^&"]*&/, (m, a) => a + D.tipografia + "&", "tipografía");
+if (D.css) cambia(/<\/head>/, () => "<style>" + D.css + "</style></head>", "</head>");
+if (D.buscar) {
+  const RE = /document\.querySelectorAll\("([^"]+) \.pq"\)\.forEach\(d=>add\(d,"([^"]*)",d\.querySelector\("summary"\)\.textContent,txt\(d\)\)\)/g;
+  const ms = [...h.matchAll(RE)];
+  if (!ms.length) throw new Error("La plantilla no tiene el buscador de secciones");
+  const a = ms[0].index, b = ms[ms.length - 1].index + ms[ms.length - 1][0].length;
+  h = h.slice(0, a) + D.buscar.map(([s, t]) => 'document.querySelectorAll("' + s + ' .pq").forEach(d=>add(d,"' + t + '",d.querySelector("summary").textContent,txt(d)))').join(";") + h.slice(b);
+}
+const P = D.plan || {};
+if (P.repaso) cambia(/const REVIEW=(\[[\s\S]*?\}\s*\]);/, () => "const REVIEW=" + P.repaso + ";", "REVIEW");
+if (P.unDia) cambia(/(else if\(N===1\)msg\.innerHTML=`<p class="note warn">)[\s\S]*?(<\/p>`)/, (m, a, b) => a + P.unDia + b, "aviso de 1 día");
+if (P.ultimoDia) cambia(/\(rng\?rng\+"[^"]*":"[^"]*"\):rng/, () => '(rng?rng+"' + P.ultimoDia[0] + '":"' + P.ultimoDia[1] + '"):rng', "último día");
 
-const dest = path.join(RAIZ, u, "repaso", "index.html");
-if (opt === "--comprobar") {
+h = enfoque(h);
+
+/* ---------- los emojis de las piezas fijas: fuera de la vista, dentro del texto ----------
+   Solo en las piezas de la página (etiquetas, títulos de sección, índice, nivel, fuente, «Cómo usar»), nunca en lo de la
+   profe ni en las explicaciones. Cada emoji sigue en el HTML dentro de <i hidden>: lo leen extraer-preguntas, las tarjetas
+   y el plan («📍 Diapositiva 8» y «📌 Definición…» dan el mismo texto). Los de nivel pasan a su marca (rombo, círculo,
+   anillo) y algunos se acompañan del icono del sistema. Dentro de <option> no cabe nada: allí se quita. */
+function enfoque(html) {
+  const EMO = /(?:\p{Extended_Pictographic}|\p{Regional_Indicator}{2})(?:️|‍\p{Extended_Pictographic})*\s?/gu;
+  const NIVEL = { "🔴": [1, "imprescindible"], "🟠": [2, "importante"], "🔵": [3, "leer una vez"] };
+  const ICONO = { "⚠️": "alerta", "⚠": "alerta", "✅": "check", "📅": "calendario", "📆": "calendario", "⏱": "reloj", "⏱️": "reloj", "🔎": "buscar", "📝": "editar" };
+  const texto = (t, iconos) => t.replace(EMO, (m) => {
+    const e = m.trim(), k = NIVEL[e], sp = m !== e ? " " : "";
+    if (k) return '<i class="nv nv' + k[0] + '" role="img" aria-label="' + k[1] + '"><i hidden>' + e + "</i></i>" + sp;
+    return "<i hidden>" + m + "</i>" + (iconos && ICONO[e] ? ICO(ICONO[e]) : "");
+  });
+  const limpia = (frag, iconos) => frag.split(/(<[^>]*>)/).map((p, i) => (i % 2 ? p : texto(p, iconos))).join("");
+  const i0 = html.indexOf("<body>");
+  return html.slice(0, i0) + html.slice(i0).split(/(<script[\s\S]*?<\/script>)/).map((t, i) => {
+    if (i % 2) return t;   /* los scripts no se tocan */
+    /* bio1 arrastra en una sección literal los <link> a las hojas viejas (las de los simulacros): se quitan, no son texto */
+    t = t.replace(/<link rel="stylesheet" href="\.\.\/\.\.\/assets\/(?:repaso|unidades)\.css">/g, "");
+    const en = (re, iconos) => { t = t.replace(re, (m, a, b, c) => a + limpia(b, iconos) + c); };
+    en(/(<p class="lbl[^"]*">)([\s\S]*?)(<\/p>)/g, false);
+    en(/(<span class="fl">)([^<]*)(<\/span>)/g, true);
+    en(/(<span class="srcl">)([\s\S]*?)(<\/span>)/g, true);
+    en(/(<span class="tag lv\d">)([^<]*)(<\/span>)/g, false);
+    en(/(<span class="bc">)([\s\S]*?)(<\/span><\/h2>)/g, true);
+    en(/(<h2 class="xs-h">)([\s\S]*?)(<\/h2>)/g, true);
+    en(/(<p class="(?:eyebrow|sub|meta|dx)">)([\s\S]*?)(<\/p>)/g, false);
+    en(/(<details class="how">)([\s\S]*?)(<\/details>)/g, false);
+    en(/(<span class="pn">)([^<]*)(<\/span>)/g, false);
+    en(/(<a class="dl[^"]*"[^>]*>)([\s\S]*?)(<\/a>)/g, true);
+    return t.replace(/(<option[^>]*>)([^<]*)(<\/option>)/g, (m, a, b, c) => a + b.replace(EMO, "") + c);
+  }).join("");
+}
+
+const dest = opcion("--salida") ? path.join(path.resolve(opcion("--salida")), u + ".html") : path.join(RAIZ, u, "repaso", "index.html");
+if (args.includes("--comprobar")) {
   const ok = fs.existsSync(dest) && fs.readFileSync(dest, "utf8") === h;
   console.log(u, ok ? "al día" : "DESACTUALIZADA");
   process.exit(ok ? 0 : 1);
 }
+fs.mkdirSync(path.dirname(dest), { recursive: true });
 fs.writeFileSync(dest, h);
-console.log(u + "/repaso/index.html ·", todos.length, "conceptos ·", bloques.length, "bloques ·", Math.round(h.length / 1024), "KB");
+console.log(path.relative(RAIZ, dest) + " ·", todos.length, "conceptos ·", bloques.length, "bloques ·", Math.round(h.length / 1024), "KB");

@@ -15,4 +15,4 @@ jobs:
       - name: Pruebas
         run: node --test "tests/*.test.mjs"
       - name: Repasos generados al día
-        run: for u in bio3 fisio4 ipe-tema4; do node scripts/repaso.mjs "$u" --comprobar; done
+        run: for u in bio1 bio2 bio3 fisio1 fisio2 fisio3 fisio4 gest1 gest2 ingles1 ipe2 ipe-tema4 ipe-tema5 lab1 lab2; do node scripts/repaso.mjs "$u" --comprobar; done
