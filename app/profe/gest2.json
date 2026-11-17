@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "unidad": "gest2",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Esta unidad va por bloques.",
+  "preguntas": [
+    { "id": "p01", "n": 2, "diap": "Bloque 1", "tipo": "entender", "pregunta": "¿Qué pasa si un resultado del laboratorio no es cierto?", "porque": "Tu responsabilidad, en concreto." },
+    { "id": "p02", "n": 3, "diap": "Bloque 1", "tipo": "examen", "pregunta": "¿Cómo distingo funciones personales y sociales?", "porque": "Grupos que se confunden." },
+    { "id": "p03", "n": 4, "diap": "Bloque 2", "tipo": "laboratorio", "pregunta": "¿Qué supone gestionar el control de existencias?", "porque": "Una tarea real del día a día." },
+    { "id": "p04", "n": 5, "diap": "Bloque 2", "tipo": "entender", "pregunta": "¿Qué hace que un resultado sea reproducible?", "porque": "Calidad de lo que entregas." },
+    { "id": "p05", "n": 8, "diap": "Bloque 3", "tipo": "entender", "pregunta": "¿Dónde trabaja un técnico de laboratorio clínico?", "porque": "Salidas del ciclo hermano." },
+    { "id": "p06", "n": 11, "diap": "Bloque 3", "tipo": "caso", "pregunta": "¿La automatización quitará trabajo al técnico?", "porque": "Duda real sobre tu futuro." },
+    { "id": "p07", "n": 17, "diap": "Bloque 5", "tipo": "examen", "pregunta": "¿Por qué decimos funciones de ayuda al diagnóstico?", "porque": "Matiz clave de tu título." },
+    { "id": "p08", "n": 18, "diap": "Bloque 5", "tipo": "laboratorio", "pregunta": "¿Qué citologías puede seleccionar el técnico?", "porque": "Lo que harás al microscopio." },
+    { "id": "p09", "n": 20, "diap": "Bloque 5", "tipo": "laboratorio", "pregunta": "¿Qué técnicas genéticas haremos en el ciclo?", "porque": "Une con cultivos y cariotipos." },
+    { "id": "p10", "n": 23, "diap": "Bloque 6", "tipo": "entender", "pregunta": "¿Qué puestos de trabajo tiene nuestro título?", "porque": "Ocho puestos, ocho salidas." },
+    { "id": "p11", "n": 24, "diap": "Bloque 6", "tipo": "examen", "pregunta": "¿Qué puestos tiene el TSAPC que no tiene el TSLCB?", "porque": "La comparativa que cae." },
+    { "id": "p12", "n": 26, "diap": "Bloque 6", "tipo": "caso", "pregunta": "¿Qué hace un técnico en el sector funerario?", "porque": "Una salida poco conocida." },
+    { "id": "p13", "n": 29, "diap": "Bloque 7", "tipo": "laboratorio", "pregunta": "¿Qué se espera del técnico en la tinción?", "porque": "Lo práctico del título." },
+    { "id": "p14", "n": 31, "diap": "Bloque 7", "tipo": "examen", "pregunta": "¿Cómo comparo los objetivos de los dos títulos?", "porque": "Tabla típica de examen." }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "unidad": "ingles1",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Preguntas en español sobre el inglés. Cada una sale de una diapositiva o de la infografía.",
+  "preguntas": [
+    { "id": "p01", "n": 2, "diap": "U1, diap. 3", "tipo": "entender", "pregunta": "¿Cómo sé si un verbo inglés es regular?", "porque": "La base de todo el tema." },
+    { "id": "p02", "n": 3, "diap": "U1, diap. 4", "tipo": "examen", "pregunta": "¿Por qué «stop» pasa a «stopped» con doble p?", "porque": "Ortografía que resta puntos." },
+    { "id": "p03", "n": 4, "diap": "U1, diap. 5", "tipo": "laboratorio", "pregunta": "¿Cómo se pronuncia la -ed de «stained»?", "porque": "Vocabulario de tinción en inglés." },
+    { "id": "p04", "n": 6, "diap": "U1, diap. 7", "tipo": "entender", "pregunta": "¿Qué patrones de irregulares conviene aprender?", "porque": "Menos lista, más lógica." },
+    { "id": "p05", "n": 7, "diap": "U1, diap. 8", "tipo": "laboratorio", "pregunta": "¿Qué irregulares de la lista salen en los protocolos?", "porque": "Verbos para leer protocolos." },
+    { "id": "p06", "n": 9, "diap": "U2, diap. 4", "tipo": "laboratorio", "pregunta": "¿Un protocolo se escribe en Present Simple?", "porque": "Inglés útil en el laboratorio." },
+    { "id": "p07", "n": 10, "diap": "U2, diap. 5", "tipo": "examen", "pregunta": "¿Dónde va el adverbio de frecuencia con «to be»?", "porque": "La excepción que cae." },
+    { "id": "p08", "n": 12, "diap": "U2, diap. 7", "tipo": "examen", "pregunta": "¿Por qué «watch» lleva -es en tercera persona?", "porque": "La regla de la -s." },
+    { "id": "p09", "n": 14, "diap": "U2, diap. 9", "tipo": "laboratorio", "pregunta": "¿Cómo digo en inglés que estoy tiñendo muestras?", "porque": "Present Continuous en tu trabajo." },
+    { "id": "p10", "n": 15, "diap": "U2, diap. 10", "tipo": "examen", "pregunta": "¿Cuándo se dobla la consonante al añadir -ing?", "porque": "Ortografía que resta puntos." },
+    { "id": "p11", "n": 17, "diap": "Infografía, pág. 1", "tipo": "examen", "pregunta": "¿Qué pistas indican Simple o Continuous?", "porque": "Elegir tiempo sin dudar." },
+    { "id": "p12", "n": 19, "diap": "U2, diap. 13", "tipo": "entender", "pregunta": "¿Por qué no se usa «yesterday» con Present Perfect?", "porque": "Sin decir cuándo: la regla clave." },
+    { "id": "p13", "n": 20, "diap": "U2, diap. 14", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre «for» y «since»?", "porque": "Dos palabras que se mezclan." },
+    { "id": "p14", "n": 23, "diap": "Infografía, pág. 2", "tipo": "examen", "pregunta": "¿Cómo se dice «llevo dos horas esperando»?", "porque": "La trampa del español." },
+    { "id": "p15", "n": 25, "diap": "U2, diap. 18", "tipo": "entender", "pregunta": "¿Cuándo uso Perfect Simple y cuándo Continuous?", "porque": "Resultado frente a duración." },
+    { "id": "p16", "n": 26, "diap": "U2, diap. 18", "tipo": "examen", "pregunta": "¿Por qué no se dice «I am knowing»?", "porque": "Los stative verbs, en rojo." }
+  ]
+}

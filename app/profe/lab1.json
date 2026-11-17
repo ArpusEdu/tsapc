@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "unidad": "lab1",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Cada una sale de una diapositiva concreta.",
+  "preguntas": [
+    { "id": "p01", "n": 2, "diap": "6", "tipo": "entender", "pregunta": "¿Por qué el vidrio sigue siendo el material más usado?", "porque": "Elegir material con criterio." },
+    { "id": "p02", "n": 3, "diap": "7", "tipo": "laboratorio", "pregunta": "¿Por qué el cuarzo se usa en espectrofotometría?", "porque": "Une material y aparato." },
+    { "id": "p03", "n": 5, "diap": "9", "tipo": "examen", "pregunta": "¿Cuándo es mejor usar plástico que vidrio?", "porque": "Ventajas e inconvenientes." },
+    { "id": "p04", "n": 6, "diap": "10", "tipo": "examen", "pregunta": "¿Cómo sé si un material es volumétrico o no?", "porque": "Clasificación clásica de examen." },
+    { "id": "p05", "n": 7, "diap": "11 y 12", "tipo": "laboratorio", "pregunta": "¿Cuándo uso probeta y cuándo pipeta?", "porque": "Precisión según la tarea." },
+    { "id": "p06", "n": 9, "diap": "15", "tipo": "laboratorio", "pregunta": "¿La pipeta Pasteur sirve para medir volúmenes?", "porque": "No volumétrica, pero muy usada." },
+    { "id": "p07", "n": 10, "diap": "16 y 17", "tipo": "laboratorio", "pregunta": "¿Cómo se usa bien una micropipeta?", "porque": "La usarás a diario." },
+    { "id": "p08", "n": 11, "diap": "18", "tipo": "examen", "pregunta": "¿Por qué el enrase se lee por abajo del menisco?", "porque": "Error típico al medir." },
+    { "id": "p09", "n": 17, "diap": "26, 27 y 28", "tipo": "laboratorio", "pregunta": "¿Por qué se calienta el asa de siembra en el mechero?", "porque": "Asepsia en microbiología." },
+    { "id": "p10", "n": 21, "diap": "32, 33 y 35", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre desinfectar y esterilizar?", "porque": "Las esporas marcan la diferencia." },
+    { "id": "p11", "n": 22, "diap": "34", "tipo": "caso", "pregunta": "¿Cómo puede un vaso mal lavado falsear un antidopaje?", "porque": "El caso práctico de la profe." },
+    { "id": "p12", "n": 25, "diap": "39 y 40", "tipo": "laboratorio", "pregunta": "¿Cómo sé que el autoclave ha esterilizado bien?", "porque": "Control que harás en el laboratorio." },
+    { "id": "p13", "n": 27, "diap": "43 y 44", "tipo": "examen", "pregunta": "¿Qué tipo de agua se usa para preparar reactivos?", "porque": "Cuatro tipos que se mezclan." },
+    { "id": "p14", "n": 28, "diap": "45 y 46", "tipo": "entender", "pregunta": "¿En qué se diferencia la ósmosis inversa de la normal?", "porque": "Purificar agua, paso a paso." },
+    { "id": "p15", "n": 33, "diap": "56", "tipo": "laboratorio", "pregunta": "¿Qué reactivos usaremos más en anatomía patológica?", "porque": "Lo conecta con tu ciclo." },
+    { "id": "p16", "n": 35, "diap": "59", "tipo": "laboratorio", "pregunta": "¿Cuándo uso granatario y cuándo balanza analítica?", "porque": "Precisión según lo que peses." },
+    { "id": "p17", "n": 38, "diap": "62", "tipo": "entender", "pregunta": "¿Por qué el plasma queda arriba al centrifugar sangre?", "porque": "La densidad, en un tubo real." },
+    { "id": "p18", "n": 40, "diap": "65, 66 y 67", "tipo": "entender", "pregunta": "¿Cómo mide un espectrofotómetro la concentración?", "porque": "Luz y concentración, conectadas." },
+    { "id": "p19", "n": 43, "diap": "71", "tipo": "entender", "pregunta": "¿Quién escribe los PNT de un laboratorio?", "porque": "Documentos que seguirás a diario." }
+  ]
+}

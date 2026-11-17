@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "unidad": "ipe-tema5",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Cada una sale de una diapositiva concreta.",
+  "preguntas": [
+    { "id": "p01", "n": 4, "diap": "2", "tipo": "examen", "pregunta": "¿Por qué hay que proteger antes de socorrer?", "porque": "El orden PAS, con sentido." },
+    { "id": "p02", "n": 6, "diap": "3", "tipo": "examen", "pregunta": "¿Qué preguntas tiene el triaje SHORT?", "porque": "Colores que caen." },
+    { "id": "p03", "n": 7, "diap": "4", "tipo": "laboratorio", "pregunta": "¿Qué botiquín debe tener nuestro laboratorio?", "porque": "Saber dónde está y qué lleva." },
+    { "id": "p04", "n": 10, "diap": "5", "tipo": "entender", "pregunta": "¿Por qué la cadena de supervivencia va en ese orden?", "porque": "Cada eslabón cuenta." },
+    { "id": "p05", "n": 12, "diap": "6", "tipo": "examen", "pregunta": "¿Cuándo se enciende el DEA durante la RCP?", "porque": "El aparato que guía la RCP." },
+    { "id": "p06", "n": 13, "diap": "6", "tipo": "caso", "pregunta": "¿Qué hago primero si estoy solo con alguien inconsciente?", "porque": "Decidir rápido salva vidas." },
+    { "id": "p07", "n": 15, "diap": "7", "tipo": "entender", "pregunta": "¿Cómo sé si un atragantamiento es completo?", "porque": "Decide si actuar o animar a toser." },
+    { "id": "p08", "n": 17, "diap": "7", "tipo": "laboratorio", "pregunta": "¿Dónde se ponen las manos en la maniobra de Heimlich?", "porque": "Práctica que puede salvar a alguien." },
+    { "id": "p09", "n": 19, "diap": "8", "tipo": "examen", "pregunta": "¿Por qué el torniquete es el último recurso?", "porque": "El orden de los tres métodos." },
+    { "id": "p10", "n": 21, "diap": "9", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre epistaxis y otorragia?", "porque": "Vocabulario médico que cae." },
+    { "id": "p11", "n": 23, "diap": "10", "tipo": "laboratorio", "pregunta": "¿Qué hago si me quemo con la estufa del laboratorio?", "porque": "Accidente posible en tu puesto." },
+    { "id": "p12", "n": 24, "diap": "10", "tipo": "examen", "pregunta": "¿Cómo se aplica la regla de los nueves?", "porque": "Cálculo típico de examen." },
+    { "id": "p13", "n": 27, "diap": "11", "tipo": "examen", "pregunta": "¿Cómo distingo una luxación de una fractura?", "porque": "Síntomas que se parecen." },
+    { "id": "p14", "n": 29, "diap": "12", "tipo": "laboratorio", "pregunta": "¿Qué hago si me corto con un cristal roto?", "porque": "Herida típica del laboratorio." },
+    { "id": "p15", "n": 31, "diap": "12", "tipo": "caso", "pregunta": "¿Qué hago si un compañero se desmaya en una autopsia?", "porque": "La lipotimia, en un caso real." },
+    { "id": "p16", "n": 32, "diap": "12", "tipo": "entender", "pregunta": "¿Por qué no hay que sujetar a quien convulsiona?", "porque": "Errores comunes al ayudar." },
+    { "id": "p17", "n": 33, "diap": "13", "tipo": "entender", "pregunta": "¿Por qué no se debe mover a un herido?", "porque": "La norma general del tema." }
+  ]
+}

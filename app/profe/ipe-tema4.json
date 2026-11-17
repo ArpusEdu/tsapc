@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "unidad": "ipe-tema4",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Cada una sale de una diapositiva concreta.",
+  "preguntas": [
+    { "id": "p01", "n": 4, "diap": "3", "tipo": "laboratorio", "pregunta": "¿Qué riesgo tiene un suelo mojado en el laboratorio?", "porque": "Caídas en tu puesto." },
+    { "id": "p02", "n": 5, "diap": "3", "tipo": "examen", "pregunta": "¿Qué medidas de las escaleras hay que saberse?", "porque": "Cifras que caen." },
+    { "id": "p03", "n": 6, "diap": "3", "tipo": "laboratorio", "pregunta": "¿Qué iluminación necesita un puesto de microscopio?", "porque": "Tu vista, a diario." },
+    { "id": "p04", "n": 7, "diap": "4", "tipo": "entender", "pregunta": "¿Qué diferencia hay entre equipo de trabajo y máquina?", "porque": "Definiciones del RD 1215/1997." },
+    { "id": "p05", "n": 9, "diap": "5", "tipo": "laboratorio", "pregunta": "¿El micrótomo necesita resguardos como una máquina?", "porque": "Riesgo de corte en histología." },
+    { "id": "p06", "n": 12, "diap": "7", "tipo": "entender", "pregunta": "¿Qué efectos tiene una descarga eléctrica?", "porque": "Riesgo en equipos eléctricos." },
+    { "id": "p07", "n": 13, "diap": "7 y 8", "tipo": "examen", "pregunta": "¿Qué factores hacen más grave una descarga?", "porque": "Factores que caen." },
+    { "id": "p08", "n": 14, "diap": "8", "tipo": "examen", "pregunta": "¿Algún truco para las cinco reglas de oro?", "porque": "Lista que hay que saber de memoria." },
+    { "id": "p09", "n": 16, "diap": "10", "tipo": "entender", "pregunta": "¿Qué es lo más peligroso de un incendio?", "porque": "Más allá de las llamas." },
+    { "id": "p10", "n": 17, "diap": "10", "tipo": "laboratorio", "pregunta": "¿Qué extintor se usa si arde un equipo eléctrico?", "porque": "Fuego en el laboratorio." },
+    { "id": "p11", "n": 20, "diap": "12", "tipo": "laboratorio", "pregunta": "¿Qué postura es mejor para trabajar al microscopio?", "porque": "Horas de microscopio por delante." },
+    { "id": "p12", "n": 21, "diap": "13", "tipo": "laboratorio", "pregunta": "¿Cómo se levanta bien una garrafa del suelo?", "porque": "Tu espalda, a diario." },
+    { "id": "p13", "n": 22, "diap": "13", "tipo": "caso", "pregunta": "¿Cortar en el micrótomo es un movimiento repetitivo?", "porque": "Lleva el tema a histología." },
+    { "id": "p14", "n": 24, "diap": "15", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre factor de riesgo y riesgo?", "porque": "Conceptos que se mezclan." },
+    { "id": "p15", "n": 25, "diap": "16", "tipo": "caso", "pregunta": "¿Cómo se nota el estrés laboral en un equipo?", "porque": "Riesgo invisible pero real." }
+  ]
+}

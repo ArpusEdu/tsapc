@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "unidad": "bio1",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Esta unidad va por bloques.",
+  "preguntas": [
+    { "id": "p01", "n": 2, "diap": "Bloque 1", "tipo": "laboratorio", "pregunta": "¿Por qué se trabaja en campana de flujo laminar?", "porque": "La esterilidad, desde el primer día." },
+    { "id": "p02", "n": 5, "diap": "Bloque 2", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre explante y cultivo de órgano?", "porque": "Dos tipos que se confunden." },
+    { "id": "p03", "n": 7, "diap": "Bloque 2", "tipo": "entender", "pregunta": "¿Por qué el cultivo de células es el más utilizado?", "porque": "El tipo que más verás." },
+    { "id": "p04", "n": 8, "diap": "Bloque 3", "tipo": "examen", "pregunta": "¿Cómo distingo un cultivo primario de uno secundario?", "porque": "Pareja clásica de examen." },
+    { "id": "p05", "n": 9, "diap": "Bloque 4", "tipo": "entender", "pregunta": "¿Qué pasa en cada fase de la curva de crecimiento?", "porque": "Explica cuándo toca el pase." },
+    { "id": "p06", "n": 10, "diap": "Bloque 4", "tipo": "laboratorio", "pregunta": "¿Cómo sé si unas células crecen en monocapa?", "porque": "Cambia cómo se manejan." },
+    { "id": "p07", "n": 14, "diap": "Bloque 5", "tipo": "caso", "pregunta": "¿Una línea celular continua se parece a un tumor?", "porque": "Une cultivos y cáncer." },
+    { "id": "p08", "n": 16, "diap": "Bloque 6", "tipo": "laboratorio", "pregunta": "¿Cuándo conviene disgregar con enzimas y no a mano?", "porque": "Elegir bien protege la muestra." },
+    { "id": "p09", "n": 19, "diap": "Bloque 6", "tipo": "laboratorio", "pregunta": "¿Por qué el azul tripán solo tiñe las células muertas?", "porque": "La base del recuento de viables." },
+    { "id": "p10", "n": 20, "diap": "Bloque 6", "tipo": "examen", "pregunta": "¿Cómo se calcula la densidad con la cámara de Neubauer?", "porque": "Cálculo típico de examen." },
+    { "id": "p11", "n": 23, "diap": "Bloque 6", "tipo": "laboratorio", "pregunta": "¿Por qué el color del medio avisa de un problema?", "porque": "Lo vigilarás cada 2-3 días." },
+    { "id": "p12", "n": 25, "diap": "Bloque 6", "tipo": "laboratorio", "pregunta": "¿En qué punto de confluencia se hace el pase?", "porque": "Se decide mirando al microscopio." },
+    { "id": "p13", "n": 26, "diap": "Bloque 6", "tipo": "entender", "pregunta": "¿Qué pasa si dejo la tripsina demasiado tiempo?", "porque": "El paso más delicado del pase." },
+    { "id": "p14", "n": 27, "diap": "Bloque 6", "tipo": "entender", "pregunta": "¿Para qué sirve el DMSO al congelar células?", "porque": "Clave para conservar las células." },
+    { "id": "p15", "n": 28, "diap": "Bloque 6", "tipo": "laboratorio", "pregunta": "¿Por qué hay que quitar el DMSO antes de sembrar?", "porque": "Un paso que no se puede saltar." },
+    { "id": "p16", "n": 29, "diap": "Bloque 7", "tipo": "caso", "pregunta": "¿Cómo se nota que un cultivo está contaminado?", "porque": "Bacterias, levaduras y hongos." },
+    { "id": "p17", "n": 30, "diap": "Bloque 7", "tipo": "laboratorio", "pregunta": "¿Bastan los antibióticos del medio para no contaminar?", "porque": "La asepsia sigue mandando." },
+    { "id": "p18", "n": 31, "diap": "Bloque 8", "tipo": "caso", "pregunta": "¿Cómo se usan los cultivos para fabricar vacunas?", "porque": "Una aplicación real del tema." }
+  ]
+}

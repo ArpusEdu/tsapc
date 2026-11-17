@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "unidad": "gest1",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Esta unidad va por bloques.",
+  "preguntas": [
+    { "id": "p01", "n": 4, "diap": "Bloque 1", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre equidad e igualdad?", "porque": "Se confunden muchísimo." },
+    { "id": "p02", "n": 5, "diap": "Bloque 1", "tipo": "entender", "pregunta": "¿Por qué la OMS habla de bienestar y no de enfermedad?", "porque": "Cambia cómo entiendes la salud." },
+    { "id": "p03", "n": 7, "diap": "Bloque 2", "tipo": "examen", "pregunta": "¿Por qué el estilo de vida pesa más que la sanidad?", "porque": "El dato de Lalonde que cae." },
+    { "id": "p04", "n": 12, "diap": "Bloque 2", "tipo": "entender", "pregunta": "¿En qué se diferencia Dahlgren y Whitehead de Lalonde?", "porque": "Dos modelos que se comparan." },
+    { "id": "p05", "n": 15, "diap": "Bloque 3", "tipo": "caso", "pregunta": "¿Una citología de cribado es prevención?", "porque": "Tu futuro trabajo, en el sistema." },
+    { "id": "p06", "n": 19, "diap": "Bloque 4", "tipo": "entender", "pregunta": "¿Qué pasa en el modelo liberal si no tienes seguro?", "porque": "El modelo, visto en una persona." },
+    { "id": "p07", "n": 24, "diap": "Bloque 4", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre Bismarck y Beveridge?", "porque": "La pareja más preguntada." },
+    { "id": "p08", "n": 27, "diap": "Bloque 5", "tipo": "entender", "pregunta": "¿Por qué España sigue el modelo Beveridge?", "porque": "Tu sistema, explicado." },
+    { "id": "p09", "n": 29, "diap": "Bloque 5", "tipo": "examen", "pregunta": "¿Qué ley conviene saberse mejor para el examen?", "porque": "Muchas leyes, poco tiempo." },
+    { "id": "p10", "n": 31, "diap": "Bloque 5", "tipo": "entender", "pregunta": "¿Qué decide el Estado y qué cada comunidad?", "porque": "Competencias que confunden." },
+    { "id": "p11", "n": 34, "diap": "Bloque 6", "tipo": "caso", "pregunta": "¿Cómo llega una biopsia del centro de salud al hospital?", "porque": "Primaria y especializada, conectadas." },
+    { "id": "p12", "n": 39, "diap": "Bloque 6", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre cartera básica y suplementaria?", "porque": "Tipos de cartera que caen." },
+    { "id": "p13", "n": 42, "diap": "Bloque 6", "tipo": "entender", "pregunta": "¿Cómo se decide el orden en el triaje de urgencias?", "porque": "El triaje, en la vida real." },
+    { "id": "p14", "n": 47, "diap": "Bloque 7", "tipo": "caso", "pregunta": "¿Qué principio bioético hay detrás del consentimiento?", "porque": "La autonomía en el día a día." },
+    { "id": "p15", "n": 49, "diap": "Bloque 7", "tipo": "laboratorio", "pregunta": "¿Cómo afecta la protección de datos a los informes?", "porque": "Datos de pacientes en tus manos." },
+    { "id": "p16", "n": 51, "diap": "Bloque 8", "tipo": "entender", "pregunta": "¿En qué grupo de la LOPS entra nuestro título?", "porque": "Tu lugar como profesional." },
+    { "id": "p17", "n": 58, "diap": "Bloque 9", "tipo": "examen", "pregunta": "¿Cómo distingo eficacia, efectividad y eficiencia?", "porque": "Palabras que siempre se mezclan." },
+    { "id": "p18", "n": 62, "diap": "Bloque 9", "tipo": "caso", "pregunta": "¿Por qué diagnosticar tarde sale más caro?", "porque": "Lo que vale tu trabajo." },
+    { "id": "p19", "n": 69, "diap": "Bloque 10", "tipo": "examen", "pregunta": "¿Un informe a tiempo es proceso o resultado?", "porque": "Donabedian aplicado al laboratorio." },
+    { "id": "p20", "n": 73, "diap": "Bloque 10", "tipo": "laboratorio", "pregunta": "¿Cómo se aplica el ciclo PDCA en un laboratorio?", "porque": "Calidad que harás a diario." }
+  ]
+}

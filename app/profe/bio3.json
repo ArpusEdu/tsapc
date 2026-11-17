@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "unidad": "bio3",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Cada una sale de una diapositiva concreta.",
+  "preguntas": [
+    { "id": "p01", "n": 2, "diap": "8 y 13", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre nucleósido y nucleótido?", "porque": "Solo los separa el fosfato." },
+    { "id": "p02", "n": 5, "diap": "11", "tipo": "examen", "pregunta": "¿Algún truco para recordar púricas y pirimidínicas?", "porque": "Caen seguro en el examen." },
+    { "id": "p03", "n": 7, "diap": "20 y 21", "tipo": "laboratorio", "pregunta": "¿Por qué el ADN se tiñe con colorantes básicos?", "porque": "Une química y tinción." },
+    { "id": "p04", "n": 10, "diap": "17, 18 y 19", "tipo": "entender", "pregunta": "¿Por qué G-C se une más fuerte que A-T?", "porque": "Los puentes de hidrógeno, en concreto." },
+    { "id": "p05", "n": 12, "diap": "23 y 24", "tipo": "examen", "pregunta": "¿Qué significa que las cadenas sean antiparalelas?", "porque": "Base de replicación y transcripción." },
+    { "id": "p06", "n": 14, "diap": "27 a 29", "tipo": "entender", "pregunta": "¿Qué proteínas forman el nucleosoma?", "porque": "Del ADN a la cromatina." },
+    { "id": "p07", "n": 16, "diap": "34", "tipo": "laboratorio", "pregunta": "¿Se ve la heterocromatina al microscopio?", "porque": "Lo verás en el núcleo teñido." },
+    { "id": "p08", "n": 17, "diap": "35 a 37", "tipo": "entender", "pregunta": "¿En qué se parece el ADN mitocondrial al bacteriano?", "porque": "Dos ADN circulares." },
+    { "id": "p09", "n": 21, "diap": "44", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre ARNm, ARNt y ARNr?", "porque": "Tres ARN que se mezclan." },
+    { "id": "p10", "n": 26, "diap": "54", "tipo": "examen", "pregunta": "¿Qué quiere decir que la replicación es semiconservativa?", "porque": "Cae casi siempre." },
+    { "id": "p11", "n": 27, "diap": "55 a 57", "tipo": "entender", "pregunta": "¿Por qué una de las hebras se copia a trozos?", "porque": "La semidiscontinua, al fin clara." },
+    { "id": "p12", "n": 33, "diap": "67 a 74", "tipo": "examen", "pregunta": "¿Algún truco para ordenar las enzimas de la replicación?", "porque": "Muchas enzimas, mucho lío." },
+    { "id": "p13", "n": 34, "diap": "76 y 77", "tipo": "caso", "pregunta": "¿Qué pasa cuando los telómeros se acortan del todo?", "porque": "Lleva el tema a la célula real." },
+    { "id": "p14", "n": 38, "diap": "81 y 82", "tipo": "examen", "pregunta": "¿Cómo distingo la cadena molde de la codificante?", "porque": "Se confunden en el examen." },
+    { "id": "p15", "n": 42, "diap": "86 y 87", "tipo": "entender", "pregunta": "¿Por qué se quitan los intrones si están en el gen?", "porque": "El splicing, con sentido." },
+    { "id": "p16", "n": 43, "diap": "88", "tipo": "caso", "pregunta": "¿Cómo salen varias proteínas de un mismo gen?", "porque": "El splicing alternativo, en concreto." },
+    { "id": "p17", "n": 47, "diap": "95", "tipo": "examen", "pregunta": "¿Cuáles son los codones de inicio y de parada?", "porque": "Los que pide el examen." },
+    { "id": "p18", "n": 54, "diap": "108", "tipo": "caso", "pregunta": "¿Por qué una deleción cambia toda la proteína?", "porque": "El marco de lectura, explicado." },
+    { "id": "p19", "n": 55, "diap": "109", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre mutación errónea y sin sentido?", "porque": "Tipos que se mezclan." }
+  ]
+}

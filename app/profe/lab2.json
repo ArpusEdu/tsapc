@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "unidad": "lab2",
+  "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Cada una sale de una diapositiva concreta.",
+  "preguntas": [
+    { "id": "p01", "n": 4, "diap": "10", "tipo": "examen", "pregunta": "¿Cómo distingo los cinco tipos de señales?", "porque": "Colores y formas que caen." },
+    { "id": "p02", "n": 5, "diap": "11", "tipo": "laboratorio", "pregunta": "¿Qué debo localizar el primer día en un laboratorio?", "porque": "Antes de tocar nada." },
+    { "id": "p03", "n": 6, "diap": "12 y 13", "tipo": "laboratorio", "pregunta": "¿Por qué la ropa del laboratorio mejor de algodón?", "porque": "Un detalle que protege de verdad." },
+    { "id": "p04", "n": 8, "diap": "15", "tipo": "laboratorio", "pregunta": "¿Qué guantes uso con xilol o con formol?", "porque": "Reactivos de cada día en patológica." },
+    { "id": "p05", "n": 9, "diap": "16 y 17", "tipo": "laboratorio", "pregunta": "¿Cuándo hace falta mascarilla y no solo gafas?", "porque": "Elegir el EPI adecuado." },
+    { "id": "p06", "n": 10, "diap": "18", "tipo": "caso", "pregunta": "¿Qué EPI llevo para tallar una pieza quirúrgica?", "porque": "Tu puesto de trabajo real." },
+    { "id": "p07", "n": 12, "diap": "21", "tipo": "examen", "pregunta": "¿Cuál es la vía de intoxicación más frecuente?", "porque": "Pregunta típica de examen." },
+    { "id": "p08", "n": 14, "diap": "23", "tipo": "entender", "pregunta": "¿Qué hace que una radiación sea ionizante?", "porque": "La energía lo cambia todo." },
+    { "id": "p09", "n": 18, "diap": "27 y 28", "tipo": "examen", "pregunta": "¿Algún truco para memorizar los pictogramas?", "porque": "Los verás en cada frasco." },
+    { "id": "p10", "n": 19, "diap": "29", "tipo": "laboratorio", "pregunta": "¿Dónde busco la ficha de seguridad de un reactivo?", "porque": "Saberlo antes de un accidente." },
+    { "id": "p11", "n": 20, "diap": "30", "tipo": "caso", "pregunta": "¿Qué productos no pueden ir en el mismo armario?", "porque": "La tabla de compatibilidad." },
+    { "id": "p12", "n": 22, "diap": "33", "tipo": "caso", "pregunta": "¿Qué hizo mal el técnico del caso práctico 2.1?", "porque": "Aprender del error ajeno." },
+    { "id": "p13", "n": 29, "diap": "41", "tipo": "laboratorio", "pregunta": "¿Qué pasa si centrifugo sin equilibrar los tubos?", "porque": "Riesgo real con citologías." },
+    { "id": "p14", "n": 32, "diap": "44", "tipo": "laboratorio", "pregunta": "¿Por qué se apaga la luz UV antes de usar la cabina?", "porque": "Normas de la cabina de bioseguridad." },
+    { "id": "p15", "n": 36, "diap": "49", "tipo": "examen", "pregunta": "¿Por qué los residuos químicos no van al desagüe?", "porque": "La regla general, con motivo." },
+    { "id": "p16", "n": 39, "diap": "52", "tipo": "examen", "pregunta": "¿Qué residuos biosanitarios se consideran especiales?", "porque": "Grupos que se confunden." },
+    { "id": "p17", "n": 41, "diap": "54", "tipo": "laboratorio", "pregunta": "¿Dónde tiro un bisturí usado en el tallado?", "porque": "Contenedor que usarás cada día." },
+    { "id": "p18", "n": 46, "diap": "60", "tipo": "laboratorio", "pregunta": "¿Cómo limpio un vertido de sangre en la mesa?", "porque": "Te pasará tarde o temprano." },
+    { "id": "p19", "n": 50, "diap": "64", "tipo": "caso", "pregunta": "¿Qué hago justo después de pincharme con una aguja?", "porque": "Actuar rápido cambia el riesgo." }
+  ]
+}
