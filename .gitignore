@@ -1,2 +1,4 @@
 .impeccable/hook.cache.json
 .claude/settings.local.json
+# Graphify: grafo local del código (se regenera; pesa ~1 MB y cambia en cada build)
+graphify-out/

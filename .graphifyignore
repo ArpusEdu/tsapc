@@ -1,0 +1,15 @@
+# Graphify: lo que NO entra en el grafo (sintaxis .gitignore)
+files/
+assets/vendor/
+node_modules/
+**/img/
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.svg
+*.woff2
+graphify-out/
+.impeccable/

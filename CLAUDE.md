@@ -34,6 +34,15 @@ Contexto de producto: `PRODUCT.md`. Marca: `docs/enfoque/marca.md` (aprobada; ma
 - En Windows, **no editar con `Get-Content`/`Set-Content` de PowerShell**: estropean los acentos. Usar node o las herramientas de edición.
 - Probar en navegador real a 360, 390 y 1280 px, en tema claro y oscuro, sin desbordes horizontales.
 
+## Graphify: consulta el grafo antes de leer archivos grandes
+
+Grafo del código (funciones, llamadas, imports) en `graphify-out/` (local, en `.gitignore`; exclusiones en `.graphifyignore`). Antes de abrir `app/app.js`, `assets/store.js` u otro archivo grande para buscar algo, pregunta al grafo y lee solo las líneas que te indique:
+
+- `python -m graphify query "plan examen planExamen" --budget 1500`: subgrafo con archivo y línea. Usa nombres de funciones o palabras del código, no frases.
+- `python -m graphify explain "store.js"` (qué contiene y con qué conecta) · `python -m graphify affected "app/app.js::guardar()"` (qué depende de algo; si un nombre es ambiguo, el CLI lista las rutas para usar `ruta::símbolo`).
+- Regenerar tras cambios de código: `python -m graphify update .` (sin LLM, solo lo cambiado). Desde cero: `python -m graphify extract . --code-only` y luego `python -m graphify cluster-only . --no-label`.
+- Solo indexa `.js` y `.mjs` (el JS en línea de los `.html`, los `.json`, los `.css`, los `.md` y `docs/fuentes/*.txt` no entran): para eso, Grep.
+
 ## Criterios de calidad
 
 Lighthouse móvil: Rendimiento ≥ 90, Accesibilidad ≥ 95, Buenas prácticas ≥ 95. Contraste AA en los dos temas. Señal no cromática además del color. `prefers-reduced-motion` respetado. Animaciones solo de `transform`/`opacity`.
