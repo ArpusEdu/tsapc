@@ -2,8 +2,8 @@
    Orden la primera vez: llegada → guía → Hoy.
    · Llegada: qué es esto, dónde estás y qué haces aquí, en un vistazo. «Empezar» lleva a la guía; «Ya la conozco», a Hoy.
      Se recuerda en tsapc:v2 › personal.prefs.llegadaVista (fecha ISO). No sale a quien ya vio la guía o ya tiene progreso.
-   · Guía: un recorrido sobre la app de verdad. Va abriendo las pantallas reales (Hoy → una unidad → una sesión → Agenda →
-     Errores → Mi mesa → el centro), oscurece el resto con un velo y deja un hueco iluminado, como el campo del microscopio,
+   · Guía: tres pasos sobre Hoy de verdad (lo siguiente, tu examen y lo pendiente); las demás pantallas traen una pista
+     la primera vez (personal.prefs.pistas). Oscurece el resto con un velo y deja un hueco iluminado, como el campo del microscopio,
      alrededor de lo que explica. Una tarjeta con la etiqueta de portaobjetos dice qué es y para qué sirve. En algunos pasos
      lo haces tú (abrir la sesión, pasar al calendario) y el paso avanza al hacerlo. Al final, la sesión de hoy.
      Se recuerda en personal.prefs.guiaVista (fecha ISO) y, mientras está a medias, el paso en personal.prefs.guiaPaso
@@ -134,6 +134,9 @@
   function sesionDe(ctx) { try { return ctx.sesionHoy ? ctx.sesionHoy() : null; } catch (_) { return null; } }
   function unidadDe(ctx) { try { var u = ctx.unidadHoy ? ctx.unidadHoy() : null; return u ? "#/unidad/" + encodeURIComponent(u) : null; } catch (_) { return null; } }
   var AVISO_BOTONES = "Puedes decir «Ya lo hice» o «Hoy no puedo»: los dos lo callan hasta mañana, sin reproches. En una entrega, «Ya lo entregué» lo apaga del todo.";
+  /* La guía son tres pasos, todos en Hoy (PASOS). El resto de pantallas trae una pista la primera vez que se entra (PISTAS):
+     se recuerda en personal.prefs.pistas = { "<pantalla>": "fecha ISO" }. Los pasos antiguos (unidad, sesión, agenda, errores,
+     Mi mesa y el centro) siguen aquí abajo, en PASOS_OTROS, como texto de esas pistas. */
   var PASOS = [
     { id: "ahora", zona: "Hoy · Lo siguiente", t: "Tu sesión <em>de hoy</em>", ruta: function () { return "#/hoy"; },
       el: [".lo-siguiente"],
@@ -156,6 +159,8 @@
         return "<p>Las entregas de hoy se tachan al terminarlas. Cada día con algo hecho, a tu planta le sale una hoja; un mal día no la seca.</p>" +
           "<p><b>Tu repaso de hoy</b> trae lo que ya estudiaste justo antes de que se te olvide, unas pocas cosas cada día. Las tarjetas que tocan salen aquí también.</p>";
       } },
+  ];
+  var PASOS_OTROS = [
     { id: "unidad", zona: "Una unidad", t: "Todo para <em>estudiarla</em>", ruta: function (ctx) { return unidadDe(ctx); },
       el: ['section[aria-labelledby="hEs"] .notas-fila', 'section[aria-labelledby="hEs"]'],
       c: function () {
@@ -199,6 +204,28 @@
           "<p>Si el móvil va justo, dentro tienes «Ver sin 3D».</p>";
       } }
   ];
+  /* ---------- pistas: la primera vez que se entra en cada pantalla, una nota corta que se cierra con «Entendido» ----------
+     La clave es la sección de la ruta (#/unidad/…, #/sesion/…, #/agenda, #/errores, #/mesa, #/asignaturas). */
+  function de(id) { return PASOS_OTROS.filter(function (p) { return p.id === id; })[0]; }
+  var PISTAS = {
+    unidad: { t: de("unidad").t, c: function () { return de("unidad").c(0) + de("sesiones").c(0).replace("Hoy te dice cuál toca, y es esta.", "Hoy te dice cuál toca."); } },
+    sesion: { t: de("sesion").t, c: function () { return de("sesion").c(0); } },
+    agenda: { t: de("agenda").t, c: function () { return de("agenda").c(0) + de("agenda").fase.c(0); } },
+    errores: { t: de("errores").t, c: function () { return de("errores").c(0); } },
+    mesa: { t: de("mesa").t, c: function () { return de("mesa").c(0); } },
+    asignaturas: { t: de("centro").t, c: function () { return de("centro").c(0); } }
+  };
+  function vistasPistas(prefs) { var p = prefs && typeof prefs === "object" && prefs.pistas; return p && typeof p === "object" && !Array.isArray(p) ? p : {}; }
+  /* ¿toca la pista de esta pantalla? Solo si existe y no se ha visto */
+  function pistaPendiente(prefs, clave) { return !!(clave && Object.prototype.hasOwnProperty.call(PISTAS, clave) && !vistasPistas(prefs)[clave]); }
+  /* marcar una pista como vista sin tocar las demás preferencias */
+  function conPista(prefs, clave, fecha) {
+    var v = vistasPistas(prefs), o = {}, k;
+    for (k in v) if (Object.prototype.hasOwnProperty.call(v, k)) o[k] = v[k];
+    o[clave] = fecha;
+    return con(prefs, "pistas", o);
+  }
+
   /* el cierre: lleva a la sesión de hoy (o a Hoy si aún no hay) */
   var CIERRE = {
     t: "Ya lo <em>tienes</em>.",
@@ -595,9 +622,21 @@
       if (esLlegada("#" + String(e.oldURL || "").split("#")[1]) && !esLlegada(location.hash)) { marcarLlegada(); document.documentElement.classList.remove("en-llegada"); }
     });
 
-    return { pantalla: pantalla, llegada: llegada, debeMostrar: function (hash) { return debeMostrar(prefs(), hash); }, debeLlegar: function (hash, hay) { return debeLlegar(prefs(), hash, hay); }, marcar: marcar };
+    /* ================= las pistas de la primera vez ================= */
+    function pista(clave) {
+      if (T.activo || !pistaPendiente(prefs(), clave)) return "";
+      var P = PISTAS[clave];
+      return '<aside class="pista" aria-labelledby="pistaT" data-pista="' + attr(clave) + '"><p class="pista-k">' + ico("info") + "Primera vez aquí</p>" +
+        '<h2 class="pista-t" id="pistaT">' + P.t + '</h2><div class="pista-c">' + P.c() + "</div>" +
+        '<button type="button" class="boton secundario pista-ok" data-pista-ok="' + attr(clave) + '">Entendido</button></aside>';
+    }
+    function verPista(clave) { var p = prefs(); if (pistaPendiente(p, clave)) ctx.guardar("personal.prefs", conPista(p, clave, new Date().toISOString())); }
+
+    return { pantalla: pantalla, llegada: llegada, debeMostrar: function (hash) { return debeMostrar(prefs(), hash); }, debeLlegar: function (hash, hay) { return debeLlegar(prefs(), hash, hay); }, marcar: marcar,
+      pista: pista, verPista: verPista };
   }
 
   return { crear: crear, esGuia: esGuia, esLlegada: esLlegada, debeMostrar: debeMostrar, debeLlegar: debeLlegar, limitar: limitar, conVista: conVista, conLlegada: conLlegada, conPaso: conPaso, pasoGuardado: pasoGuardado,
-    desplazamiento: desplazamiento, situar: situar, limpiarSesiones: limpiarSesiones, arcos: arcos, PASOS: PASOS, CIERRE: CIERRE, LLEGADA: LLEGADA };
+    desplazamiento: desplazamiento, situar: situar, limpiarSesiones: limpiarSesiones, arcos: arcos, PASOS: PASOS, CIERRE: CIERRE, LLEGADA: LLEGADA,
+    PISTAS: PISTAS, pistaPendiente: pistaPendiente, conPista: conPista };
 });

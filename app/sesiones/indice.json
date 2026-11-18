@@ -93,6 +93,6 @@
     { "id": "ipe-tema4-incendios", "unidad": "ipe-tema4", "bloque": 4, "titulo": "Los incendios", "minutos": 15, "pegatina": "botiquin", "gancho": "tres fuegos, tres extintores" },
     { "id": "ipe-tema4-ergonomia", "unidad": "ipe-tema4", "bloque": 5, "titulo": "Ergonomía (I): carga de trabajo y posturas", "minutos": 20, "pegatina": "botiquin", "gancho": "la primera causa" },
     { "id": "ipe-tema4-cargas", "unidad": "ipe-tema4", "bloque": 5, "titulo": "Ergonomía (II): cargas, repetición y carga mental", "minutos": 25, "pegatina": "botiquin", "gancho": "las muñecas de Jaime" },
-    { "id": "ipe-tema4-psicosociales", "unidad": "ipe-tema4", "bloque": 6, "titulo": "Los riesgos psicosociales", "minutos": 25, "pegatina": "botiquin", "gancho": "valery y Gabriel" }
+    { "id": "ipe-tema4-psicosociales", "unidad": "ipe-tema4", "bloque": 6, "titulo": "Los riesgos psicosociales", "minutos": 25, "pegatina": "botiquin", "gancho": "Valery y Gabriel" }
   ]
 }

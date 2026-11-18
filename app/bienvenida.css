@@ -136,3 +136,12 @@ html.en-llegada .vista{min-height:calc(100vh - 28px);min-height:calc(100dvh - 28
 .ll-luz{animation:ll-luz 600ms ease-out both}
 @keyframes ll-luz{from{opacity:0}}
 @media (prefers-reduced-motion:reduce){ .ll-e,.ll-anillo,.ll-luz{animation:none} }
+
+/* ---------- pistas de la primera vez (personal.prefs.pistas) ---------- */
+.pista{margin:0 0 var(--e-4);padding:var(--e-3) var(--e-4) var(--e-4);background:var(--c-tarjeta);border:1.5px solid var(--c-linea);border-radius:var(--r-mano);color:var(--c-tinta)}
+.pista-k{display:flex;align-items:center;gap:6px;margin:0 0 4px;font-size:var(--t-sm);font-weight:700;color:var(--c-tinta-2)}
+.pista-k .ico{width:16px;height:16px;color:var(--c-eosina)}
+.pista-t{margin:0 0 var(--e-2);font-size:var(--t-lg);line-height:1.25}
+.pista-c p{margin:0 0 var(--e-2);max-width:62ch}
+.pista-c ol{margin:0 0 var(--e-2);padding-left:1.3em}
+.pista-ok{margin-top:var(--e-1)}

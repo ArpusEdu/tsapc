@@ -58,8 +58,8 @@
     if (fase === "examen") mensaje = "Hoy es el examen. Repasa solo lo que marcaste como difícil y confía en lo que ya sabes.";
     else if (fase === "recupera") mensaje = (dias === 1 ? "Mañana es el examen." : "Quedan 2 días: ya no toca aprender nada nuevo.") + " Hoy, recuperar: el test y las tarjetas del examen, y relee solo lo que falles." + (pend.length ? " Lo que entra de " + (pend.length === 1 ? "la sesión que falta" : "las " + pend.length + " sesiones que faltan") + " también sale ahí." : "") + (dias === 1 ? " Duerme: lo que repases hoy se fija esta noche." : "");
     else if (fase === "repaso") mensaje = "Has hecho todas las sesiones. Hasta el examen, repaso de hoy y tarjetas: así se queda.";
-    else if (noDa) mensaje = "Quedan " + dias + " días y " + nS + " (unos " + duracion(minPend) + "): con " + mDia + " min al día no da para todas. Haz lo de hoy y el resto, con el repaso de la unidad y las tarjetas.";
-    else mensaje = (hechasHoy && !hoyToca.length ? "Hoy ya cumpliste. " : "") + "Quedan " + dias + " días y " + nS + ": unos " + necesarios + " min al día" + (ritmo === "apretado" ? ". Va justo con tus " + mDia + " min: si hoy puedes, un rato más." : ritmo === "holgado" ? ", y te sobran días para repasar." : ".");
+    else if (noDa) mensaje = "Quedan " + dias + " días y " + nS + ": con " + mDia + " min al día no da para todas. Haz lo de hoy y el resto, con el repaso de la unidad y las tarjetas.";
+    else mensaje = (hechasHoy && !hoyToca.length ? "Hoy ya cumpliste. " : "") + "Quedan " + dias + " días y " + nS + (ritmo === "apretado" ? ". Va justo con tus " + mDia + " min: si hoy puedes, un rato más." : ritmo === "holgado" ? ", y te sobran días para repasar." : ".");
     return { noDa: noDa, dias: dias, pendientes: pend.length, hechas: hechas, total: ses.length, porDia: porDia, hoyToca: hoyToca, hechasHoy: hechasHoy,
       minutosHoy: acc, minutosDia: mDia, necesarios: necesarios, ritmo: ritmo, fase: fase, mensaje: mensaje };
   }
@@ -98,7 +98,7 @@
         if (d < 0 || d > 7 || (tiene(ent, e.id) && ent[e.id])) return;
         if (e.due && e.due < hoy) return;                                   /* ya cerró: no se insiste */
         out.push({ id: "entrega:" + e.id, tipo: "entrega", evento: e, dias: d, nivel: d === 0 ? "hoy" : d === 1 ? "manana" : d <= 3 ? "pronto" : "semana",
-          titulo: e.titulo, texto: (d === 0 ? "Se entrega hoy" : d === 1 ? "Se entrega mañana" : "Se entrega en " + d + " días") + (e.hora ? ", a las " + e.hora : "") + "." + (e.nota ? " " + e.nota + "." : ""),
+          titulo: e.titulo, texto: (d === 0 ? "Se entrega hoy" : d === 1 ? "Se entrega mañana" : "Se entrega en " + d + " días") + (e.hora ? ", a las " + e.hora : "") + "." + (e.nota ? " " + String(e.nota).replace(/[.\s]+$/, "") + "." : ""),
           accion: "Ya lo entregué" });
       } else if (e.tipo === "examen" || e.tipo === "oral") {
         if (d < 0 || d > AVISO_DIAS) return;
@@ -192,7 +192,7 @@
     return { items: items, total: total, sinEstimar: sin };
   }
 
-  /* «tengo X minutos»: una tanda con lo más urgente que quepa.
+  /* «tengo X minutos»: una tanda con lo más urgente que quepa entero (sin pasarse).
      Prioridad: lo que vence antes (entregas por su plazo, sesiones por la fecha de su examen); el repaso y las tarjetas
      no tienen plazo, pero vencen hoy: cuentan como «mañana». A igual urgencia, entrega > sesión > repaso > tarjetas.
      El repaso y las tarjetas se pueden partir (si quedan 3 min o más); una sesión o una entrega, no.
@@ -203,13 +203,12 @@
     var cola = (items || []).slice().sort(function (a, b) {
       return urg(a) - urg(b) || ORDEN_TIPO[a.tipo] - ORDEN_TIPO[b.tipo] || (a.minutos || 0) - (b.minutos || 0) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
     });
-    /* un rato de sesión (unos 10 min) entra aunque pase un poco: hasta un 30 % (mínimo 3 min) de lo que tienes */
-    var holgura = Math.max(3, Math.round(cap * 0.3));
+    /* solo lo que cabe: nada que pase de los minutos que tienes (un rato de 13 min no entra en 10) */
     var out = [], usados = 0, fuera = 0, sinTiempo = [];
     cola.forEach(function (x) {
       if (x.minutos === null) { if (x.dias !== null && x.dias <= 2) sinTiempo.push(x); return; }
       var libre = cap - usados;
-      if (x.minutos <= libre || (x.rato && !usados && x.minutos <= libre + holgura)) { out.push(x); usados += x.minutos; return; }
+      if (x.minutos <= libre) { out.push(x); usados += x.minutos; return; }
       if (x.divisible && libre >= 3) { var p = {}; for (var k in x) if (tiene(x, k)) p[k] = x[k]; p.minutos = libre; p.parcial = true; out.push(p); usados += libre; return; }
       fuera++;
     });

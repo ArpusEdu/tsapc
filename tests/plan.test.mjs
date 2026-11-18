@@ -177,7 +177,7 @@ test("tengo X minutos: el examen más cercano manda entre sesiones", () => {
   assert.deepEqual(P.tanda([], 25).items, []);
 });
 
-test("tengo X minutos: una sesión cuenta como dos ratos y en 10 min ya cabe uno", () => {
+test("tengo X minutos: una sesión cuenta como dos ratos y solo entra lo que cabe", () => {
   const items = P.pendientesTiempo({ hoy: HOY, sesiones: [
     { id: "s1", titulo: "Sesión", minutos: 13, rato: "A", vence: d("2026-11-20") },
     { id: "s1", titulo: "Sesión", minutos: 13, rato: "B", vence: d("2026-11-20") },
@@ -185,9 +185,10 @@ test("tengo X minutos: una sesión cuenta como dos ratos y en 10 min ya cabe uno
   assert.deepEqual(items.map((x) => x.id), ["sesion:s1:A", "sesion:s1:B"]);
   assert.match(items[0].titulo, /rato A/);
   const t = P.tanda(items, 10);
-  assert.deepEqual(t.items.map((x) => x.id), ["sesion:s1:A"], "13 min entran en 10 (holgura de 3)");
-  assert.equal(t.sobran, 0);
-  assert.deepEqual(P.tanda(items, 25).items.map((x) => x.id), ["sesion:s1:A"], "el B no entra en los 12 que quedan: la holgura es solo para el primero");
+  assert.deepEqual(t.items, [], "un rato de 13 min no entra en 10: solo lo que cabe");
+  assert.equal(t.sobran, 10);
+  assert.deepEqual(P.tanda(items, 13).items.map((x) => x.id), ["sesion:s1:A"], "en 13, justo");
+  assert.deepEqual(P.tanda(items, 25).items.map((x) => x.id), ["sesion:s1:A"], "el B no entra en los 12 que quedan");
   assert.deepEqual(P.tanda(items, 26).items.map((x) => x.id), ["sesion:s1:A", "sesion:s1:B"]);
 });
 

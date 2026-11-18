@@ -30,7 +30,7 @@ var ASIGNATURAS = {
   "pegatina": "tubos"
  },
  "ipe": {
-  "nombre": "IPE I",
+  "nombre": "IPE",
   "completo": "Itinerario personal para la empleabilidad I",
   "ab": "IPE",
   "pegatina": "botiquin"
@@ -521,7 +521,7 @@ var UNIDADES = [
  {
   "id": "ipe2",
   "s": "ipe",
-  "codigo": "IPE 2",
+  "codigo": "IPE · Tema 3",
   "titulo": "Riesgos ambientales",
   "examen": "2º examen",
   "tema": "Tema 3 · Riesgos ambientales en el trabajo",
@@ -566,7 +566,7 @@ var UNIDADES = [
  {
   "id": "ipe-tema4",
   "s": "ipe",
-  "codigo": "IPE 4",
+  "codigo": "IPE · Tema 4",
   "titulo": "Seguridad y ergonomía",
   "examen": "Tema 4",
   "tema": "Tema 4 · Riesgos de las condiciones de seguridad, ergonómicos y psicosociales",
@@ -592,7 +592,7 @@ var UNIDADES = [
  {
   "id": "ipe-tema5",
   "s": "ipe",
-  "codigo": "IPE 5",
+  "codigo": "IPE · Tema 5",
   "titulo": "Primeros auxilios",
   "examen": "Tema 5",
   "tema": "Los primeros auxilios en la empresa",

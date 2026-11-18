@@ -43,11 +43,19 @@
   }
 
   /* eventos de la agenda con asignatura normalizada, fecha y vencimiento */
+  /* la nota de un evento tal como la ve el estudiante: sin apuntes internos («confirmado por el usuario el …»),
+     sin puntos dobles y terminada en punto. Quien la pinta no añade otro punto. */
+  function notaVisible(t) {
+    t = String(t || "").replace(/[,;]?\s*[^,.;()]*\bpor (?:el|la) usuari[oa]\b[^.;]*/gi, "").replace(/\s+/g, " ").replace(/\s+([.,;)])/g, "$1").replace(/\.{2,}/g, ".").trim();
+    if (!t) return "";
+    return /[.!?…]$/.test(t) ? t : t + ".";
+  }
   function prepararEventos(agenda) {
     var horario = agenda && agenda.horario || [];
     return ((agenda && agenda.eventos) || []).map(function (e) {
       var o = {}; for (var k in e) if (Object.prototype.hasOwnProperty.call(e, k)) o[k] = e[k];
       o.s = sid(e.asig); o.date = parseDia(e.fecha);
+      if (typeof o.nota === "string") { o.nota = notaVisible(o.nota); if (!o.nota) delete o.nota; }
       if (!o.date) return null;
       if (e.cierre) { var c = e.cierre.split("T"), dd = parseDia(c[0]), t = hm(c[1]); o.due = new Date(dd.getFullYear(), dd.getMonth(), dd.getDate(), t[0], t[1]); }
       else if (e.hora) { var t2 = hm(e.hora); o.due = new Date(o.date.getFullYear(), o.date.getMonth(), o.date.getDate(), t2[0], t2[1]); }
@@ -164,13 +172,20 @@
   function formaPlanta(nd) { nd = +nd || 0; return nd <= 13 ? "hojas" : nd <= 26 ? "boton" : "flor"; }
 
   var NUM = ["ninguna", "una", "dos", "tres", "cuatro", "cinco", "seis"];
+  /* el examen (u oral) de hoy, aunque su hora ya haya pasado */
+  function examenDeHoy(evs, n) {
+    var k = clave(n);
+    return (evs || []).filter(function (e) { return (e.tipo === "examen" || e.tipo === "oral") && e.fecha === k; })[0] || null;
+  }
   function resumenHoy(evs, hechas, n, ex) {
     var k = clave(n), hoy = evs.filter(function (e) { return e.tipo === "entrega" && e.fecha === k; });
     var quedan = hoy.filter(function (e) { return !(hechas || {})[e.id]; }).length;
     var a = quedan ? "Hoy, " + (quedan === 1 ? "una entrega" : (NUM[quedan] || quedan) + " entregas") + "." : (hoy.length ? "Hoy, todo entregado." : "Hoy, sin entregas.");
+    /* el mismo examen que la tarjeta y los avisos: si hay uno hoy (aunque ya haya empezado), ese */
+    var deHoy = examenDeHoy(evs, n); if (deHoy) ex = deHoy;
     if (!ex) return a;
-    var r = diaRelativo(ex.date, n);
-    return a + " " + (r === "Hoy" ? "Hoy toca examen." : r + ", examen.");
+    var dd = difDias(ex.date, n), r = diaRelativo(ex.date, n);
+    return a + " " + (dd === 0 ? "Hoy toca examen." : dd > 7 ? may(DIAS[ex.date.getDay()]) + " " + ex.date.getDate() + " de " + MESES[ex.date.getMonth()] + ", examen." : r + ", examen.");
   }
 
   /* ---------- colección de temas dominados (Mi mesa · tsapc:v2 › personal.coleccion) ----------
@@ -203,6 +218,6 @@
   return { DIAS: DIAS, MESES: MESES, TIPO: TIPO, pad: pad, may: may, escapar: escapar, sid: sid, clave: clave, parseDia: parseDia, hm: hm, difDias: difDias,
     ahoraDesde: ahoraDesde, reloj: reloj, inicioClase: inicioClase, prepararEventos: prepararEventos, pendientes: pendientes, proximoExamen: proximoExamen,
     cuentaAtras: cuentaAtras, partes: partes, faltan: faltan, h12: h12, h12r: h12r, hora: hora, rango: rango, formatoValido: formatoValido, diaRelativo: diaRelativo, fechaLarga: fechaLarga,
-    semana: semana, infoDia: infoDia, progreso: progreso, planta: planta, formaPlanta: formaPlanta, resumenHoy: resumenHoy,
+    semana: semana, infoDia: infoDia, progreso: progreso, planta: planta, formaPlanta: formaPlanta, resumenHoy: resumenHoy, examenDeHoy: examenDeHoy, notaVisible: notaVisible,
     coleccionLimpia: coleccionLimpia, estampar: estampar, refrescar: refrescar, marcarVistas: marcarVistas, palidez: palidez };
 });

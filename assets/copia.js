@@ -47,7 +47,7 @@
   }
 
   function nombreArchivo(ahora) {
-    return "tsapc-copia-" + (ahora || new Date()).toISOString().slice(0, 10) + ".json";
+    return "enfoque-copia-" + (ahora || new Date()).toISOString().slice(0, 10) + ".json";
   }
 
   /* Devuelve {ok:true, claves:Map, formato, ignoradas} o {ok:false, error}. */
@@ -123,12 +123,12 @@
       const a = doc.createElement("a"); a.href = url; a.download = nombreArchivo();
       doc.body.appendChild(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(url), 2000);
-      msg.textContent = "Copia guardada con " + pie(Object.keys(JSON.parse(t).claves).length) + ".";
+      msg.textContent = "Copia guardada en Descargas (" + a.download + ").";
     });
     if (botonCopiar) botonCopiar.addEventListener("click", async () => {
       const t = texto();
       if (!t) { msg.textContent = "Todavía no hay progreso que copiar."; return; }
-      try { await navigator.clipboard.writeText(t); msg.textContent = "Copia en el portapapeles (" + pie(Object.keys(JSON.parse(t).claves).length) + ")."; }
+      try { await navigator.clipboard.writeText(t); msg.textContent = "Copia en el portapapeles. Pégala en una nota o un correo para guardarla."; }
       catch (_) { msg.textContent = "El navegador no permite copiar. Usa «Guardar copia de mi progreso»."; }
     });
     entradaArchivo.addEventListener("change", async ev => {

@@ -101,9 +101,13 @@
     var pasado = ex.due <= n;
     return (ex.provisional && !pasado ? provisional(ex) + " " : "") + '<span class="insignia' + (pasado ? " pasada" : "") + '">' + ico("calendario") + (pasado ? "Examen hecho · " + ex.date.getDate() + " " + L.MESES[ex.date.getMonth()].slice(0, 3) : "Examen · " + L.diaRelativo(ex.date, n).toLowerCase().replace(/^hoy$/, "hoy") + (ex.claseHora ? " · en tu hora de clase" : "")) + "</span>";
   }
-  function progresoDe(u) {
+  function progresoDe(u, conSesiones) {
     if (!u.progreso) return null;
-    return L.progreso(u.progreso.total, leer(["unidades", u.id, "repaso", "dominados"], null), crudo(u.progreso.clave));
+    var dom = leer(["unidades", u.id, "repaso", "dominados"], null), todos = [];
+    (Array.isArray(dom) ? dom : []).forEach(function (x) { var k = String(x); if (todos.indexOf(k) < 0) todos.push(k); });
+    var ses = conSesiones && SS && SS.estudiadosDe ? SS.estudiadosDe(u.id) : null;
+    (ses || []).forEach(function (x) { var k = String(x); if (todos.indexOf(k) < 0) todos.push(k); });
+    return L.progreso(u.progreso.total, todos.length ? todos : dom, crudo(u.progreso.clave));
   }
   function barra(p, etiqueta) {
     return '<div class="progreso"><div class="progreso-txt"><span>' + etiqueta + '</span><b class="num">' + p.hechos + " / " + p.total + '</b></div><div class="progreso-barra" role="progressbar" aria-label="' + esc(etiqueta) + '" aria-valuemin="0" aria-valuemax="' + p.total + '" aria-valuenow="' + p.hechos + '" aria-valuetext="' + p.hechos + " de " + p.total + '"><i style="width:' + p.pct + '%"></i></div></div>';
@@ -142,7 +146,7 @@
       q = { k: (I.exa ? "para tu examen · " + I.exa.cuando.toLowerCase() : ses.codigo) + " · rato " + ses.rato, tit: ses.titulo,
         txt: ses.rato === "B" ? "Rato B: lo de otros días, sin mirar y resolver el misterio." : ses.empezada ? "La dejaste a medias: sigue donde ibas." : "Rato A: un caso real y unos pocos conceptos.",
         href: ses.href, btn: ses.rato === "B" ? "Seguir con el rato B" : ses.empezada ? "Seguir" : "Empezar", min: ses.minutos, s: ses.s };
-    var hr = hoyRatos(n), minHoy = (hayRep ? R.minutos : 0) + (hr.items.length ? hr.items.reduce(function (a, x) { return a + (+x.minutos || 0); }, 0) : ses && !(I && I.hoyHecha) ? ses.minutos : 0);
+    var hr = tiempoHoy(n), minHoy = hr.min;
     var intro = vuelta ? '<p class="sig-intro">Vuelves tras ' + vuelta + " días. Normal. Diez minutos para arrancar:</p>"
       : noPuedo ? '<p class="sig-intro">Vale: hoy no. Si al final tienes diez minutos, esto es lo siguiente.</p>' : "";
     var cu = typeof prefs().cuando === "string" ? prefs().cuando.trim() : "";
@@ -155,6 +159,14 @@
       '<h2 id="hSig" class="sig-h">Lo siguiente</h2>' + cuerpo +
       (!vuelta && minHoy ? '<p class="sig-hoy"><b>Hoy: ' + esc(PL ? PL.duracion(minHoy) : minHoy + " min") + "</b>" + (hr.mensaje ? " · " + esc(hr.mensaje) : "") + "</p>" : "") + intencion + "</section>";
   }
+  /* la única cifra de «hoy»: el repaso que vuelve y los ratos de sesión que tocan. La misma en Hoy, en el plan y en el examen. */
+  function tiempoHoy(n) {
+    var I = SS && SS.hoyInfo ? SS.hoyInfo() : null, R = I ? I.repaso : null, ses = I ? I.sesion : null, hr = hoyRatos(n);
+    var hayRep = !!(R && R.n > 0 && !R.hecho);
+    var min = (hayRep ? R.minutos : 0) + (hr.items.length ? hr.items.reduce(function (a, x) { return a + (+x.minutos || 0); }, 0) : ses && !(I && I.hoyHecha) ? ses.minutos : 0);
+    return { min: min, mensaje: hr.mensaje, items: hr.items };
+  }
+  function tiempoHoyTxt(n) { var m = tiempoHoy(n).min; return m ? (PL ? PL.duracion(m) : m + " min") : ""; }
   function tramo(n, id, tit, nota, cuerpo, cls) {
     return '<section class="tramo' + (cls ? " " + cls : "") + '" aria-labelledby="' + id + '"><div class="tramo-cab"><h2 id="' + id + '"><span class="tramo-n" aria-hidden="true">' + n + "</span>" + tit + "</h2>" + (nota ? '<p class="tramo-nota">' + nota + "</p>" : "") + "</div>" + cuerpo + "</section>";
   }
@@ -235,7 +247,7 @@
     var examenHTML = '<div class="tramo-rejilla">' + bloqueEx + (est.sesion ? '<div class="ss-hoy tramo-sesion">' + est.sesion + "</div>" : "") + "</div>";
     /* 03 · Pendientes y próximos días */
     var entregas = '<div class="bloque-hoy" aria-labelledby="hHoy"><div class="sec-cab"><h3 id="hHoy">Entregas de hoy</h3>' + (tareas ? '<span class="sec-nota">tacha al terminar</span>' : "") + "</div>" +
-      (tareas ? '<ul class="tareas" id="tareas">' + tareas + "</ul>" : '<p class="vacio-linea">' + ico("check") + "<span>Hoy no hay entregas." + (ex && L.clave(ex.date) === k ? " Hoy toca examen: a por él." : "") + "</span></p>") + "</div>";
+      (tareas ? '<ul class="tareas" id="tareas">' + tareas + "</ul>" : '<p class="vacio-linea">' + ico("check") + "<span>Hoy no hay entregas." + (L.examenDeHoy(EVS, n) || (ex && L.clave(ex.date) === k) ? " Hoy toca examen: a por él." : "") + "</span></p>") + "</div>";
     var repaso = (est.repaso ? '<div class="bloque-hoy ss-hoy">' + est.repaso + "</div>" : "") + bajar(E.hoyTarjetas());
     var semanaHTML = '<div class="bloque-hoy"><div class="sec-cab"><h3 id="hSem">Próximos días</h3><span class="sec-nota">cinco días de clase</span></div><ol class="semana">' + semana + "</ol></div>";
     var pendHTML = ponerseAlDiaHTML(tt) + '<div class="tramo-rejilla">' + entregas + (repaso ? '<div class="bloque-hoy">' + repaso + "</div>" : "") + "</div>" + semanaHTML;
@@ -294,9 +306,9 @@
     if (!PL || !SS || !SS.paraExamen) return "";
     var d = SS.paraExamen(ex); if (!d || !d.sesiones.length) return "";
     var p = PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: d.estados, hoy: n, minutosDia: minDia() }); if (!p) return "";
-    var hoyL = hoyRatos(n), mios = hoyL.items.filter(function (x) { return x.ex && x.ex.id === ex.id; });
-    var lista = mios.length ? '<ol class="plan-hoy">' + mios.map(function (x) { return '<li><a href="#/sesion/' + encodeURIComponent(x.id) + '">' + esc(x.titulo) + "</a> <small>rato " + x.rato + '</small> <span class="num">' + (+x.minutos || 0) + "\u00a0min</span></li>"; }).join("") + "</ol>" : "";
-    return '<div class="plan-ex ritmo-' + p.ritmo + '"><p class="plan-k">Tu plan hasta el examen · ' + p.hechas + " de " + p.total + " sesiones</p><p>" + esc(p.mensaje) + "</p>" + (hoyL.mensaje ? '<p class="plan-sub">' + esc(hoyL.mensaje) + "</p>" : "") + (lista ? '<p class="plan-sub">Hoy:</p>' + lista : "") +
+    var hoyL = hoyRatos(n), mios = hoyL.items.filter(function (x) { return x.ex && x.ex.id === ex.id; }), th = tiempoHoyTxt(n);
+    var lista = mios.length ? '<ol class="plan-hoy">' + mios.map(function (x) { return '<li><a href="#/sesion/' + encodeURIComponent(x.id) + '">' + esc(x.titulo) + "</a> <small>rato " + x.rato + "</small></li>"; }).join("") + "</ol>" : "";
+    return '<div class="plan-ex ritmo-' + p.ritmo + '"><p class="plan-k">Tu plan hasta el examen · ' + p.hechas + " de " + p.total + " sesiones</p><p>" + esc(p.mensaje) + "</p>" + (hoyL.mensaje ? '<p class="plan-sub">' + esc(hoyL.mensaje) + "</p>" : "") + (lista ? '<p class="plan-sub">Hoy' + (th ? ", unos " + esc(th) : "") + ":</p>" + lista : "") +
       '<p class="plan-min">Con ' + p.minutosDia + ' min al día. <a href="#/mesa">Cambiar mis minutos</a></p></div>';
   }
   /* los ratos de sesión de hoy entre todos los exámenes cercanos (14 días), con el tope global: dos exámenes, uno de cada */
@@ -434,7 +446,7 @@
 
   /* ---------- estudiar para un examen: #/examen/<id del evento> (solo lo que entra, con plan, conceptos y tarjetas) ---------- */
   function pExamen(id) {
-    var cabV = function (t) { return { sec: "hoy", titulo: "Examen", html: '<header class="cab">' + titulo("Para tu <em>examen</em>") + "</header>" + t }; };
+    var cabV = function (t) { return { sec: "asignaturas", titulo: "Examen", html: '<header class="cab">' + titulo("Para tu <em>examen</em>") + "</header>" + t }; };
     if (!AG) return cabV(cargando("Cargando la agenda"));
     var ex = null; EVS.forEach(function (e) { if (e.id === id && (e.tipo === "examen" || e.tipo === "oral")) ex = e; });
     if (!ex) return pNada();
@@ -444,10 +456,11 @@
     var cab = '<header class="cab"><p class="sub">' + esc((S1.nombre || "") + " · examen " + cuando) + (ex.provisional ? " · fecha provisional" : "") + "</p>" +
       titulo(esc(ex.titulo.replace(/^Examen · /, ""))) +
       (ex.diapositivas ? '<p class="sub">Entra: diapositivas ' + esc(ex.diapositivas.replace("-", " a ")) + (ex.unidad && D.unidad(ex.unidad) ? " de " + esc(D.unidad(ex.unidad).codigo + " · " + D.unidad(ex.unidad).titulo) : "") + ".</p>" : "") + "</header>";
-    if (!d) return { sec: "hoy", titulo: "Examen", html: cab + cargando("Reuniendo lo que entra") };
+    var rutaEx = ruta([["Asignaturas", "#/asignaturas"], [S1.nombre || "Asignatura", "#/asignatura/" + ex.s]].concat(ex.unidad && D.unidad(ex.unidad) ? [[D.unidad(ex.unidad).codigo, "#/unidad/" + ex.unidad]] : []).concat([["Examen"]]));
+    cab = rutaEx + cab;
+    if (!d) return { sec: "asignaturas", titulo: "Examen", subject: ex.s, html: cab + (SS && SS.hayFallo && SS.hayFallo() ? SS.errorHTML("No se pudo reunir lo que entra") : cargando("Reuniendo lo que entra")) };
     var p = PL ? PL.planExamen({ ex: ex, sesiones: d.sesiones, estados: leer("personal.sesiones", {}) || {}, hoy: n, minutosDia: minDia() }) : null;
     var repasoU = ex.unidad || (d.sesiones[0] && d.sesiones[0].unidad);
-    var minS = d.sesiones.filter(function (s) { return !s.hecha; }).reduce(function (a, s) { return a + s.minutos; }, 0);
     var minRep = 15, minTj = Math.max(5, Math.round(d.tarjetas.length * 0.7));
     var repEx = ex.unidad && D.unidad(ex.unidad) && ex.diapositivas ? '<li class="ex-paso ex-destacado"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="../' + esc(ex.unidad) + '/examen/"><b>Repaso para el examen, todo en una página</b></a><small>lo de la profe, test, casos, tarjetas y chuleta</small></div></li>' : "";
     /* primero, recuperar: práctica con nota (lo fallado va a Errores), las tarjetas puntuadas y releer solo lo fallado */
@@ -461,7 +474,6 @@
     }).join("") +
       '<li class="ex-paso"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="../' + esc(repasoU) + "/repaso/#" + esc(d.bloques[0] ? d.bloques[0].id : "") + '"><b>Lo de la profe, tal cual</b></a><small>repaso de ' + (d.bloques.length === 1 ? "su bloque" : "sus " + d.bloques.length + " bloques") + " · " + minRep + "\u00a0min</small></div></li>" +
       '<li class="ex-paso"><span class="ex-ico" aria-hidden="true">' + ico("siguiente") + '</span><div><a href="#ex-tarjetas"><b>Las tarjetas del examen</b></a><small>' + d.tarjetas.length + " tarjetas, solo de lo que entra · " + minTj + "\u00a0min</small></div></li>";
-    var total = minS + minRep + minTj;
     var conceptos = d.sesiones.map(function (s) {
       return s.conceptos.map(function (c) { return '<li><a href="../' + esc(s.unidad) + "/repaso/#c" + c.n + '"><span class="num">' + c.n + "</span> " + esc(c.titulo) + '</a><small>diap. ' + esc(c.diapositivas) + "</small></li>"; }).join("");
     }).join("");
@@ -471,11 +483,11 @@
     var html = cab +
       (p ? '<div class="plan-ex ritmo-' + p.ritmo + '"><p>' + esc(p.mensaje) + "</p></div>" : "") +
       (recupera ? '<section class="ex-sec" aria-labelledby="hExR"><div class="sec-cab"><h2 id="hExR">Primero, recuperar</h2><span class="mano">sacarlo de la cabeza fija más que releer</span></div><ol class="ex-pasos">' + recupera + "</ol></section>" : "") +
-      '<section class="ex-sec" aria-labelledby="hExP"><div class="sec-cab"><h2 id="hExP">' + (recupera ? "Y para completar" : "Cómo prepararlo") + '</h2><span class="mano">unos ' + total + " min en total</span></div><ol class=\"ex-pasos\">" + pasos + "</ol></section>" +
+      '<section class="ex-sec" aria-labelledby="hExP"><div class="sec-cab"><h2 id="hExP">' + (recupera ? "Y para completar" : "Cómo prepararlo") + "</h2>" + (tiempoHoyTxt(n) ? '<span class="mano">hoy, unos ' + esc(tiempoHoyTxt(n)) + "</span>" : "") + "</div><ol class=\"ex-pasos\">" + pasos + "</ol></section>" +
       '<section class="ex-sec" aria-labelledby="hExC"><div class="sec-cab"><h2 id="hExC">Lo que entra</h2></div><ol class="ex-conceptos">' + conceptos + "</ol></section>" +
       (d.tarjetas.length ? '<section class="ex-sec" aria-labelledby="hExT" id="ex-tarjetas"><div class="sec-cab"><h2 id="hExT">Tarjetas del examen</h2><span class="mano">dilo antes de abrir</span></div>' + tarjetas + "</section>" : "") +
       '<p class="ex-pie">Mañana, antes del examen: diez minutos con las tarjetas que te costaron. Nada nuevo.</p>';
-    return { sec: "hoy", titulo: "Examen · " + ex.titulo.replace(/^Examen · /, ""), subject: ex.s, html: html };
+    return { sec: "asignaturas", titulo: "Examen · " + ex.titulo.replace(/^Examen · /, ""), subject: ex.s, html: html };
   }
   /* «Hoy no puedo»: calla el aviso hasta mañana sin apuntar estudio */
   function avisoNoPuedo(id) {
@@ -538,9 +550,9 @@
   /* ================= AGENDA ================= */
   var calVista = "mes", calMes = null;
   function pestanasAgenda(cual) {
-    return '<ul class="pestanas" aria-label="Agenda">' + [["horario", "Horario", "#/agenda", "ipe"], ["calendario", "Calendario", "#/agenda/calendario", "lab"]].map(function (t) {
+    return '<nav aria-label="Agenda: horario o calendario"><ul class="pestanas">' + [["horario", "Horario", "#/agenda", "ipe"], ["calendario", "Calendario", "#/agenda/calendario", "lab"]].map(function (t) {
       return '<li><a class="pestana" data-subject="' + t[3] + '" href="' + t[2] + '"' + (t[0] === cual ? ' aria-current="page"' : "") + ">" + t[1] + "</a></li>";
-    }).join("") + "</ul>";
+    }).join("") + "</ul></nav>";
   }
   function pAgenda(arg) {
     var cal = arg === "calendario";
@@ -736,7 +748,7 @@
     var cuerpo;
     if (u.length) {
       cuerpo = '<ol class="unidades">' + u.map(function (x) {
-        var p = progresoDe(x);
+        var p = progresoDe(x, true);
         return '<li><a class="unidad-fila" href="#/unidad/' + x.id + '"><span class="u-cod">' + esc(x.codigo) + '</span><span class="u-txt"><span class="u-tit">' + esc(x.titulo) + '</span><span class="u-tema">' + esc(x.tema) + "</span>" +
           (p ? '<span class="mini-barra" aria-hidden="true"><i style="width:' + p.pct + '%"></i></span><span class="sr">Repaso: ' + p.hechos + " de " + p.total + "</span>" : "") + "</span>" + insigniaExamen(x, n) + ico("siguiente", "u-flecha") + "</a></li>";
       }).join("") + "</ol>" + (AG ? fechas : "");
@@ -748,7 +760,11 @@
 
   /* ================= UNIDAD ================= */
   /* lo que se escribe en la zona esmerilada: «Tema 3 · 2º examen» */
-  function diapDe(u) { var t = String(u.tema || "").split(" · ")[0]; return t && t !== u.examen && t.length <= 14 ? t + " · " + u.examen : u.examen; }
+  function diapDe(u) {
+    var t = String(u.tema || "").split(" · ")[0], cod = String(u.codigo || "");
+    if (t && cod.indexOf(t) >= 0) return u.examen && cod.indexOf(u.examen) < 0 ? u.examen : "1.º curso";
+    return t && t !== u.examen && t.length <= 14 ? t + " · " + u.examen : u.examen;
+  }
   /* ---------- preguntas para hacer en clase (app/profe/<u>.json): se marcan como hechas y se apunta la respuesta ---------- */
   var PROFE = {}, PROFE_IDX = null, PROFE_CARGA = {};
   var TIPO_PP = { entender: "Para entender", laboratorio: "Tu oficio en el laboratorio", caso: "Un caso real", examen: "Para el examen" };
@@ -797,7 +813,16 @@
 
   function pUnidad(id) {
     var u = D.unidad(id); if (!u) return pNada();
-    var S1 = A[u.s], n = ahora(), pf = prof(u.s), p = progresoDe(u), ev = EVS.filter(function (e) { return e.unidad === u.id; })[0];
+    var S1 = A[u.s], n = ahora(), pf = prof(u.s), p = progresoDe(u, true), ev = EVS.filter(function (e) { return e.unidad === u.id; })[0];
+    /* si el examen dice qué entra (sesiones o diapositivas), se marca bloque a bloque */
+    var exU = ev && (ev.tipo === "examen" || ev.tipo === "oral") && (Array.isArray(ev.sesiones) && ev.sesiones.length || ev.diapositivas) ? ev : null;
+    var entran = exU && SS && SS.bloquesExamen ? SS.bloquesExamen(exU) : null;
+    var marcar = !!(entran && entran.length && entran.length < u.bloques.length);
+    var listaBl = '<ol class="bloques' + (marcar ? " con-examen" : "") + '">' + u.bloques.map(function (b, i) {
+      var dentro = marcar && entran.indexOf(i + 1) >= 0;
+      return "<li" + (dentro ? ' class="entra"' : "") + "><span>" + esc(b) + (dentro ? ' <span class="insignia entra-ex">' + ico("check") + "entra en el examen</span>" : "") + "</span></li>";
+    }).join("") + "</ol>";
+    var notaBl = marcar ? '<p class="bl-nota">' + ico("info") + "<span>Al examen" + (exU.date ? " del " + exU.date.getDate() + " de " + L.MESES[exU.date.getMonth()] : "") + " entran " + (entran.length === 1 ? "el bloque " + entran[0] : "los bloques " + entran.slice(0, -1).join(", ") + " y " + entran[entran.length - 1]) + (exU.diapositivas ? " (diapositivas " + esc(String(exU.diapositivas).replace("-", " a ")) + ")" : "") + ".</span></p>" : "";
     var notas = '<a class="nota-boton" href="../' + esc(u.repaso.web) + '"><b>Repaso</b><span class="mano">' + (u.porEntregas ? "entrega a entrega" : "bloque a bloque") + '</span><span class="ext">Abrir el repaso' + ico("siguiente") + "</span></a>" +
       (u.simulacro && u.simulacro.web ? '<a class="nota-boton amarilla" href="../' + esc(u.simulacro.web) + '"><b>Simulacro</b><span class="mano">' + esc(u.simulacro.webt || "como el examen") + '</span><span class="ext">Abrir el simulacro' + ico("siguiente") + "</span></a>" : "") +
       E.unidadNotas(u) +
@@ -810,9 +835,9 @@
     var html = ruta([["Asignaturas", "#/asignaturas"], [S1.nombre, "#/asignatura/" + u.s], [u.codigo]]) +
       '<header class="cab cab-porta">' + porta(u.s, u.codigo.toUpperCase(), diapDe(u), titulo(esc(u.titulo)) + '<p class="sub">' + esc(u.tema) + (pf ? " · " + esc(pf) : "") + "</p>") + insigniaExamen(u, n) + "</header>" +
       (p ? barra(p, "Repaso dominado") : "") + E.unidadResumen(u) + (SS ? SS.unidadBloque(u.id) : "") +
-      '<div class="rejilla rejilla-unidad"><section aria-labelledby="hBl"><div class="sec-cab"><h2 id="hBl">Lo que entra</h2><span class="sec-nota">' + (u.porEntregas ? "por entregas" : "bloque a bloque") + '</span></div><ol class="bloques">' + u.bloques.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("") + "</ol></section>" +
+      '<div class="rejilla rejilla-unidad"><section aria-labelledby="hBl"><div class="sec-cab"><h2 id="hBl">Lo que trae la unidad</h2><span class="sec-nota">' + (u.porEntregas ? "por entregas" : "bloque a bloque") + "</span></div>" + notaBl + listaBl + "</section>" +
       '<section aria-labelledby="hEs"><div class="sec-cab"><h2 id="hEs">Para estudiar</h2><span class="sec-nota">empieza por el repaso</span></div><div class="notas-fila">' + notas + "</div>" +
-      (ev && ev.nota ? '<div class="nota nota-ex"><span class="mano">' + esc(ev.titulo) + ". " + esc(ev.nota) + ".</span></div>" : "") +
+      (ev && ev.nota ? '<div class="nota nota-ex"><span class="mano">' + esc(ev.titulo) + ". " + esc(ev.nota) + "</span></div>" : "") +
       (mat.length ? '<h3 class="mat-tit">Material</h3><ul class="material">' + mat.map(function (m) { var pdf = /\.pdf$/i.test(m[1]); return '<li><a href="../' + esc(m[1]) + '">' + ico(pdf ? "descargar" : "abrir-fuera") + esc(m[0]) + (pdf ? ' <span class="tipo">PDF</span>' : "") + "</a></li>"; }).join("") + "</ul>" : "") +
       "</section></div>" + preguntasProfeHTML(u);
     return { sec: "asignaturas", titulo: u.codigo + " · " + u.titulo, subject: u.s, html: html };
@@ -929,7 +954,7 @@
       '<div><h3>Android (Chrome)</h3><ol><li>Abre esta página en Chrome.</li><li>Toca el menú <b>⋮</b> de arriba a la derecha.</li><li>Elige <b>Instalar aplicación</b> o <b>Añadir a pantalla de inicio</b>.</li></ol></div>' +
       '<div><h3>Ordenador (Chrome o Edge)</h3><ol><li>En la barra de direcciones, pulsa el icono de instalar.</li><li>Confirma con <b>Instalar</b>.</li></ol></div></div>' +
       '<p class="sub">Después de la primera visita funciona sin conexión.</p></section>' +
-      (G ? '<section aria-labelledby="hGu"><h2 id="hGu">La guía</h2><p class="sub">Un recorrido por la app de verdad, en diez pasos: qué hay en cada pantalla y para qué sirve.</p><p><a class="boton secundario" href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p></section>" : "") +
+      (G ? '<section aria-labelledby="hGu"><h2 id="hGu">La guía</h2><p class="sub">Tres pasos en Hoy: lo siguiente, tu examen y lo pendiente. Las demás pantallas traen una pista la primera vez que entras.</p><p><a class="boton secundario" href="#/guia">' + ico("info") + "Ver la guía otra vez</a></p></section>" : "") +
       '<section aria-labelledby="hCr"><h2 id="hCr">Letras</h2><ul class="creditos"><li><b class="f-fraunces">Fraunces</b> · The Fraunces Project Authors (Undercase Type)</li><li><b>Atkinson Hyperlegible</b> · Braille Institute of America</li><li><b class="num">Atkinson Hyperlegible Mono</b> · The Atkinson Hyperlegible Mono Project Authors</li><li><b class="mano">Caveat</b> · The Caveat Project Authors</li></ul><p class="sub">Todas con licencia SIL Open Font License 1.1. <a href="../assets/corte/fuentes/OFL.txt">Leer la licencia</a>.</p></section>' +
       '<section aria-labelledby="hWe"><h2 id="hWe">La web de siempre</h2><p>La portada de antes sigue igual, con todos los repasos y simulacros.</p><p><a class="boton secundario" href="../">Ir a la portada de siempre</a></p></section>' +
       "</div>";
@@ -1019,7 +1044,13 @@
   /* Pomodoro (app/pomodoro.js): #/pomodoro, #/pomodoro/sesion/<id>, #/pomodoro/tanda/<min> */
   var PO = window.EnfoquePomodoro ? window.EnfoquePomodoro.crear({ leer: leer, guardar: guardarEstudio, aviso: aviso, ahora: ahora, esc: esc, ico: ico, titulo: titulo,
     duracion: function (m) { return PL ? PL.duracion(m) : m + " min"; }, anunciar: decir, tituloSesion: tituloSesion, pintar: function (q) { pintar(q); } }) : null;
-  function pPomodoro(tipo, arg) { if (!PO) return pNada(); cargarIndice(); return PO.pantalla(tipo, arg); }
+  function pPomodoro(tipo, arg) {
+    if (!PO) return pNada();
+    cargarIndice();
+    var p = PO.pantalla(tipo, arg);
+    if (p) { p.sec = ""; p.html = ruta([["Hoy", "#/hoy"], ["Pomodoro"]]) + p.html; }
+    return p;
+  }
   function pPractica(id, a2) { return E.practica(id, a2) || pNada(); }
   function pTarjetas(id) { return E.tarjetas(id) || pNada(); }
 
@@ -1037,10 +1068,14 @@
     var quietas = M.modo() !== "completo" || !io;
     $$(".pegatina.dibujar", vista).forEach(function (el) { if (quietas) el.classList.add("dibujada"); else io.observe(el); });
   }
-  var actual = null;
+  var actual = null, PISTA = null;
   function pintar(quieta) {
     var r = leerRuta(), f = tiene(PANT, r.sec) ? PANT[r.sec] : pNada, p;
     try { p = f(r.arg, r.arg2); } catch (err) { p = { sec: "", titulo: "Error", html: '<header class="cab">' + titulo("Algo se ha <em>torcido</em>") + '</header><div class="estado es-error" role="alert"><svg aria-hidden="true"><use href="' + SPR + 'i-alerta"/></svg><div><h2 class="estado-tit">No se pudo pintar esta pantalla</h2><p>Tus datos no se han tocado. Prueba a recargar.</p></div></div>' }; }
+    /* la pista de la primera vez que se entra en esta pantalla (bienvenida.js), bajo su cabecera */
+    PISTA = null;
+    var clP = r.sec === "sesion" && r.arg === "repaso" ? null : r.sec, ph = G && G.pista && clP && typeof p.html === "string" ? G.pista(clP) : "";
+    if (ph) { PISTA = clP; p.html = p.html.indexOf("</header>") > 0 ? p.html.replace("</header>", "</header>" + ph) : ph + p.html; }
     var y = window.scrollY;
     M.cortarTodo();                                   /* nada se queda a medias al repintar */
     /* modo examen: mientras se hace un intento en modo examen, nada se mueve (mov.js lo lee aquí) */
@@ -1073,7 +1108,7 @@
       examen: function () { pintar(false); }
     });
   }
-  window.addEventListener("hashchange", function () { medirCorte(); if (/^#\/|^$/.test(location.hash)) cambiar(); medirInicio(); });
+  window.addEventListener("hashchange", function () { if (PISTA && G) { G.verPista(PISTA); PISTA = null; } medirCorte(); if (/^#\/|^$/.test(location.hash)) cambiar(); medirInicio(); });
   var salta = $(".saltar"); if (salta) salta.addEventListener("click", function (e) { e.preventDefault(); var h = $("#titulo") || vista; h.focus(); });
 
   /* ---------- reloj: cuentas atrás ---------- */
@@ -1098,6 +1133,7 @@
     var t = ev.target.closest ? ev.target.closest("button") : null;
     if (!t || !vista.contains(t) && !t.closest(".mesa")) return;
     if (t.hasAttribute("data-tarea")) return tachar(t);
+    if (t.hasAttribute("data-pista-ok")) { if (G) G.verPista(t.getAttribute("data-pista-ok")); PISTA = null; var asd = t.closest(".pista"); if (asd) asd.remove(); var h1p = $("#titulo"); if (h1p) h1p.focus({ preventScroll: true }); return; }
     if (t.hasAttribute("data-aviso")) return avisoHecho(t.getAttribute("data-aviso"));
     if (t.hasAttribute("data-aviso-no")) return avisoNoPuedo(t.getAttribute("data-aviso-no"));
     if (t.hasAttribute("data-cuando-borrar")) { ponerPref("cuando", ""); return repintarConFoco("#cuandoIn"); }

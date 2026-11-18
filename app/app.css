@@ -970,3 +970,17 @@ html.ss-foco .pomo-mini{bottom:max(16px,env(safe-area-inset-bottom))}
 .pl-ico{flex:none;width:18px;height:18px;align-self:center;transition:transform var(--d-media) var(--ease-salida)}
 .mas-hoy[open]>summary .pl-ico,.intencion-p[open]>summary .pl-ico{transform:rotate(90deg)}
 .intencion-p>summary{list-style:none}
+
+/* revisión final (2026-11-18) */
+/* el plan dentro de la tarjeta del examen: tarjeta normal, sin fondo de color ni borde discontinuo */
+.plan-ex{background:var(--c-tarjeta);border:1.5px solid var(--c-linea);border-radius:var(--r-mano)}
+.plan-ex.ritmo-apretado{outline:0;border-color:var(--c-aviso);background:var(--c-aviso-suave)}
+/* «Siguiente concepto» desactivado y su motivo, justo debajo */
+.ss-falta{display:flex;gap:var(--e-2);align-items:flex-start;margin-top:var(--e-2);color:var(--c-tinta);font-weight:700}
+.ss-falta .ico{flex:none;width:18px;height:18px;margin-top:3px}
+/* lo que entra al examen, marcado en «Lo que trae la unidad» */
+.bloques.con-examen>li:not(.entra){color:var(--c-tinta-2)}
+.bloques>li.entra{font-weight:700}
+.bloques .entra-ex{margin-left:var(--e-2);min-height:28px;padding:3px 10px;font-size:var(--t-xs);vertical-align:middle}
+.bl-nota{display:flex;gap:var(--e-2);align-items:flex-start;margin:0 0 var(--e-3);color:var(--c-tinta)}
+.bl-nota .ico{flex:none;width:18px;height:18px;margin-top:3px}

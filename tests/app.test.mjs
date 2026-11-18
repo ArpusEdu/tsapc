@@ -128,3 +128,26 @@ test("datos: 15 unidades, ids de carpeta y bloques", () => {
   assert.ok(D.FRANKLIN.includes("@foto"));
   assert.equal(L.escapar('<a href="x">'), "&lt;a href=&quot;x&quot;&gt;");
 });
+
+test("resumen de Hoy: el examen de hoy aunque ya haya empezado; con más de 7 días, con el mes", () => {
+  const evs = L.prepararEventos(AG);
+  const dia = new Date(2026, 10, 17, 21, 0);   /* el examen de IPE del 17 ya empezó */
+  const ex = L.proximoExamen(evs, D.UNIDADES, AG.horario, dia);
+  assert.match(L.resumenHoy(evs, {}, dia, ex), /Hoy toca examen\./);
+  const lejos = { date: new Date(2026, 11, 15), fecha: "2026-12-15", tipo: "examen" };
+  assert.match(L.resumenHoy([], {}, new Date(2026, 10, 18, 10), lejos), /Martes 15 de diciembre, examen\./);
+  assert.match(L.resumenHoy([], {}, new Date(2026, 11, 10, 10), lejos), /Martes 15, examen\./);
+});
+
+test("las notas de la agenda nunca enseñan apuntes internos ni puntos dobles", () => {
+  const evs = L.prepararEventos(AG);
+  evs.forEach((e) => { if (e.nota) { assert.doesNotMatch(e.nota, /usuari[oa]|\.\./i, e.id); assert.match(e.nota, /[.!?…]$/, e.id); } });
+  assert.equal(L.notaVisible("Sale el 2, confirmado por el usuario el 2026-11-13."), "Sale el 2.");
+  assert.equal(L.notaVisible("Hora por confirmar"), "Hora por confirmar.");
+  assert.equal(L.notaVisible(""), "");
+});
+
+test("un solo nombre por unidad: «IPE · Tema N»", () => {
+  ["ipe2", "ipe-tema4", "ipe-tema5"].forEach((id) => assert.match(D.unidad(id).codigo, /^IPE · Tema \d$/));
+  assert.equal(D.ASIGNATURAS.ipe.nombre, "IPE");
+});

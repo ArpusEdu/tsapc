@@ -97,7 +97,8 @@
     var BANCOS = {}, CARGA = {};
     function banco(u) {
       if (BANCOS[u]) return BANCOS[u];
-      if (!CARGA[u] || CARGA[u] === "error") {
+      /* una sola petición: tras un error no se vuelve a pedir al repintar (sería un bucle); solo con «Reintentar» */
+      if (!CARGA[u]) {
         CARGA[u] = "cargando";
         fetch("preguntas/" + u + ".json", { credentials: "same-origin" })
           .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -442,7 +443,7 @@
         it.auto[qq.id] = au; guardarIntento(u, it); return ctx.repintar(".qz-nav .boton:not([disabled])");
       }
       switch (a) {
-        case "recargar": CARGA[u] = "error"; banco(u); return ctx.pintar(true);
+        case "recargar": delete CARGA[u]; banco(u); return ctx.pintar(true);
         case "seguir": e.fase = "hacer"; return ctx.repintar("#titulo", true);
         case "ver-resultado": e.fase = "resultado"; return ctx.repintar("#titulo", true);
         case "descartar": return confirmar("¿Descartar el intento a medias?", "Se borran sus respuestas. Tu historial y tu mazo de errores no se tocan.", "Descartar", "Cancelar").then(function (ok) { if (!ok) return; var v = intentos(u); v.actual = null; ctx.guardar(rutaU(u, "intentos"), v); ctx.repintar('[data-qz="empezar"]'); });
@@ -556,7 +557,7 @@
       var R = rutaAct(), t = ev.target.closest ? ev.target.closest("button, a[data-qz]") : null;
       if (!R || !t || !document.getElementById("vista").contains(t)) return;
       var J = BANCOS[R.u];
-      if (t.getAttribute("data-qz") === "recargar") { CARGA[R.u] = "error"; banco(R.u); return ctx.pintar(true); }
+      if (t.getAttribute("data-qz") === "recargar") { delete CARGA[R.u]; banco(R.u); return ctx.pintar(true); }
       if (!J) return;
       if (t.getAttribute("data-qz") === "salir") { ev.preventDefault(); return salir(R.u); }
       if (R.sec === "practica") clicPractica(t, R.u, J); else clicTarjetas(t, R.u, J);

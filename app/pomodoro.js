@@ -13,6 +13,7 @@
   "use strict";
   var MIN = 60000, DIA = 864e5;
   var DEF = { estudio: 25, descanso: 5, largo: 15, cada: 4, objetivo: 0 };
+  var MIN_SESION = 10;   /* desde una sesión, un bloque del tamaño de un rato */
   var LIM = { estudio: [5, 90], descanso: [1, 30], largo: [5, 45], cada: [2, 8], objetivo: [0, 600] };
   var FASES = { estudio: "Estudio", descanso: "Descanso", largo: "Descanso largo" };
   function tiene(o, k) { return !!o && Object.prototype.hasOwnProperty.call(o, k); }
@@ -140,7 +141,7 @@
       var c = cfg(), e = est(), p = datos(), n = reloj();
       /* llegar con algo concreto (una sesión o una tanda) lo apunta como origen del siguiente bloque */
       var org = e.origen, preMin = c.estudio;
-      if (tipo === "sesion" && arg && /^[a-z0-9-]+$/.test(arg)) org = { tipo: "sesion", id: arg, titulo: ctx.tituloSesion ? ctx.tituloSesion(arg) || "" : "", href: "#/sesion/" + encodeURIComponent(arg) };
+      if (tipo === "sesion" && arg && /^[a-z0-9-]+$/.test(arg)) { preMin = MIN_SESION; org = { tipo: "sesion", id: arg, titulo: ctx.tituloSesion ? ctx.tituloSesion(arg) || "" : "", href: "#/sesion/" + encodeURIComponent(arg) }; }
       if (tipo === "tanda" && +arg > 0) { preMin = Math.min(90, Math.max(5, Math.round(+arg))); org = { tipo: "tanda", id: "tanda-" + preMin, titulo: "tu tanda de " + preMin + " min", href: "#/hoy" }; }
       if (!e.fase && (tipo === "sesion" || tipo === "tanda")) { pendienteOrigen = { org: org, min: preMin }; }
       else if (!tipo) pendienteOrigen = null;

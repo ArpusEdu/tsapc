@@ -35,7 +35,7 @@ test("exportar e importar es idempotente", () => {
   const j = JSON.parse(t);
   assert.equal(j.app, "tsapc"); assert.equal(j.formato, 1); assert.equal(j.origen, "https://x.github.io");
   assert.ok(!isNaN(Date.parse(j.exportado)));
-  assert.match(C.nombreArchivo(new Date("2026-11-03T10:00:00Z")), /^tsapc-copia-2026-11-03\.json$/);
+  assert.match(C.nombreArchivo(new Date("2026-11-03T10:00:00Z")), /^enfoque-copia-2026-11-03\.json$/);
 });
 
 test("exporta todas las claves, también las que la lista antigua olvidaba", () => {

@@ -38,35 +38,33 @@ test("marcar la guía como vista no toca las demás preferencias", () => {
   assert.deepEqual(G.conVista([1], "x"), { guiaVista: "x" });
 });
 
-test("el recorrido: entre 8 y 10 pasos sobre pantallas de verdad, con texto y sin gamificación", () => {
-  assert.ok(G.PASOS.length >= 8 && G.PASOS.length <= 10);
+test("la guía: tres pasos en Hoy; el resto, pistas la primera vez que se entra en cada pantalla", () => {
+  assert.equal(G.PASOS.length, 3);
   const ctx = { sesionHoy: () => "#/sesion/x", unidadHoy: () => "bio3" };
   const textos = [];
   G.PASOS.forEach((p) => {
     assert.ok(p.id && p.zona && p.t && Array.isArray(p.el) && p.el.length, p.id);
-    const r = p.ruta(ctx, "#/hoy");
-    assert.match(r, /^#\//, p.id);
+    assert.equal(p.ruta(ctx, "#/hoy"), "#/hoy", "todos los pasos son en Hoy");
     for (let i = 0; i < p.el.length; i++) textos.push(p.c(i));
-    if (p.fase) textos.push(p.fase.t, p.fase.c(0));
     textos.push(p.t);
+  });
+  /* las pistas cubren las demás pantallas */
+  ["unidad", "sesion", "agenda", "errores", "mesa", "asignaturas"].forEach((k) => {
+    assert.ok(G.PISTAS[k], k);
+    textos.push(G.PISTAS[k].t, G.PISTAS[k].c());
   });
   const texto = textos.join(" ") + G.CIERRE.t + G.CIERRE.c("#/sesion/x") + G.CIERRE.c(null);
   assert.doesNotMatch(texto, /puntos|monedas|ranking|racha|nivel|logro|enhorabuena|felicidades|confeti|!/i);
-  /* recorre Hoy (01, 02, 03), una unidad, una sesión, la agenda, errores, Mi mesa y el centro */
-  const rutas = G.PASOS.map((p) => p.ruta(ctx, "#/hoy"));
-  ["#/hoy", "#/unidad/bio3", "#/sesion/x", "#/agenda", "#/errores", "#/mesa", "#/asignaturas"].forEach((r) => assert.ok(rutas.includes(r), r));
   assert.match(texto, /Ya lo entregué/); assert.match(texto, /Ya lo hice/); assert.match(texto, /Hoy no puedo/);
   assert.match(texto, /Pamplona/); assert.match(texto, /copia/i); assert.match(texto, /Fecha por confirmar/);
-  /* la sesión se salta si no hay; dentro de una sesión se queda en ella */
-  const ses = G.PASOS.find((p) => p.id === "sesion");
-  assert.equal(ses.ruta({ sesionHoy: () => null }, "#/hoy"), null);
-  assert.equal(ses.ruta(ctx, "#/sesion/otra"), "#/sesion/otra");
-  /* hay pasos de «hazlo tú» y cada uno espera la ruta a la que se llega al hacerlo */
-  const haz = G.PASOS.filter((p) => p.haz);
-  assert.ok(haz.length >= 2);
-  assert.ok(G.PASOS.find((p) => p.id === "sesiones").haz.espera.test("#/sesion/bio3-arn"));
-  assert.ok(!G.PASOS.find((p) => p.id === "sesiones").haz.espera.test("#/sesion/repaso"));
-  assert.ok(G.PASOS.find((p) => p.id === "agenda").haz.espera.test("#/agenda/calendario"));
+  /* cada pista sale una vez: se apunta en personal.prefs.pistas sin tocar lo demás */
+  assert.equal(G.pistaPendiente({}, "unidad"), true);
+  assert.equal(G.pistaPendiente(null, "mesa"), true);
+  assert.equal(G.pistaPendiente({}, "hoy"), false, "Hoy no lleva pista: ya está la guía");
+  const p = G.conPista({ tema: "noche", pistas: { agenda: "a" } }, "unidad", "f");
+  assert.deepEqual(p, { tema: "noche", pistas: { agenda: "a", unidad: "f" } });
+  assert.equal(G.pistaPendiente(p, "unidad"), false);
+  assert.equal(G.pistaPendiente({ pistas: [1] }, "unidad"), true, "lo guardado raro no rompe nada");
   /* el cierre lleva a la sesión de hoy, y si no la hay, a Hoy */
   assert.match(G.CIERRE.botones("#/sesion/x"), /href="#\/sesion\/x"/);
   assert.match(G.CIERRE.botones(null), /href="#\/hoy"/);
