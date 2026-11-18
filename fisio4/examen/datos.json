@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "unidad": "fisio4",
+  "evento": "fisio-examen-diciembre",
+  "titulo": "Aparato cardiovascular, sangre y aparato urinario",
+  "asignatura": "Fisiopatología · Unidad 4",
+  "fecha": "2026-12-01",
+  "diapositivas": "2 a 106",
+  "conceptos": [1, 78],
+  "textos": {
+    "plan": "Plan hasta el examen",
+    "casos": "Preguntas de desarrollo",
+    "chuleta": "Chuleta para el último día",
+    "chuletaSub": "El día del examen, solo esto. Nada nuevo."
+  },
+  "mapa": [
+    { "titulo": "1. El corazón", "diap": "2–14", "lineas": [
+      "Aparato cardiovascular = <b>corazón + vasos + sangre</b>.",
+      "Válvulas: <b>tricúspide</b> a la derecha, <b>mitral</b> a la izquierda.",
+      "Sangre por latido: <b>contractilidad, precarga, poscarga y frecuencia</b>.",
+      "Conducción: <b>nódulo sinusal</b> → aurículas → <b>nódulo AV</b> → ventrículos."
+    ] },
+    { "titulo": "2. El sistema vascular", "diap": "15–22", "lineas": [
+      "<b>Arterias</b> salen del corazón; <b>venas</b> vuelven a él.",
+      "Capas, de dentro afuera: <b>íntima, media y adventicia</b>; la media es la más gruesa.",
+      "Circuito <b>menor</b> = pulmones · circuito <b>mayor</b> = todo el cuerpo.",
+      "Linfático: devuelve líquido, absorbe y defiende."
+    ] },
+    { "titulo": "3. Sangre y hemodinámica", "diap": "23–27", "lineas": [
+      "Tensión normal: sistólica <b>120-140</b>, diastólica <b>60-90</b> mmHg.",
+      "La regulan los <b>nervios</b>, las <b>hormonas</b> y el <b>riñón</b>.",
+      "Volemia de un adulto: <b>5-6 litros</b>; volemia y tensión suben y bajan juntas."
+    ] },
+    { "titulo": "4. Hemostasia y coagulación", "diap": "28–41", "lineas": [
+      "3 fases: <b>vasoconstricción</b>, <b>agregado plaquetario</b> y <b>coágulo</b>.",
+      "La <b>trombina</b> convierte el fibrinógeno (soluble) en <b>fibrina</b> (insoluble).",
+      "Vía <b>intrínseca</b> (lesión vascular) y <b>extrínseca</b> (lesión tisular) → <b>vía común</b>.",
+      "Frenos: proteína C y S y <b>antitrombina III</b>. La <b>plasmina</b> deshace el coágulo."
+    ] },
+    { "titulo": "5. Los vasos enfermos", "diap": "42–47", "lineas": [
+      "<b>Isquemia</b> → hipoxia; lo más grave, en corazón y cerebro.",
+      "<b>Aneurisma</b>: riesgo en hombre de 60, hipertenso y fumador.",
+      "<b>Varices</b>: válvula rota → sangre parada → vena hinchada."
+    ] },
+    { "titulo": "6. Aterosclerosis y trombosis", "diap": "48–55", "lineas": [
+      "<b>Aterosclerosis</b>: placa de grasa (ateroma) que endurece la arteria.",
+      "<b>Trombo</b>: coágulo dentro de un vaso; <b>ocluyente</b> (total) o <b>mural</b> (parcial).",
+      "Trombo <b>blanco</b>: arteria, plaquetas · <b>rojo</b>: vena, fibrina.",
+      "Se detecta con el <b>dímero D</b>."
+    ] },
+    { "titulo": "7. Embolia e ictus", "diap": "56–62", "lineas": [
+      "<b>Émbolo</b>: viaja y tapa un vaso lejos de donde salió; la mayoría, tromboembolias.",
+      "AVC <b>isquémicos 80 %</b> (aterotrombóticos 55 %) y <b>hemorrágicos 20 %</b>.",
+      "Síntomas: pérdida de fuerza en un lado, disartria, pérdida de equilibrio o de visión."
+    ] },
+    { "titulo": "8. El corazón enfermo", "diap": "63–68", "lineas": [
+      "Arritmias: <b>taquicardia &gt;100</b>, <b>bradicardia &lt;60</b> latidos por minuto.",
+      "<b>Angina</b>: dolor corto, sin lesión · <b>infarto</b>: necrosis por falta de riego de <b>más de 20 minutos</b>.",
+      "Valvulopatías: por la edad o por bacterias."
+    ] },
+    { "titulo": "9. Tensión, edema y coagulación", "diap": "69–80", "lineas": [
+      "<b>HTA</b>, el «asesino silencioso»: 90 % primaria, sin causa concreta.",
+      "<b>Shock</b>: piel fría y sudada, pulso rápido y débil.",
+      "Agua del cuerpo: 60 % = 40 dentro + 20 fuera de las células.",
+      "<b>CID</b>, <b>hemofilia</b> (factores VIII y IX) y <b>trombocitopenia</b> (pocas plaquetas)."
+    ] },
+    { "titulo": "10. Aparato urinario: anatomía", "diap": "81–87", "lineas": [
+      "<b>Nefrona</b>: unidad del riñón, más de un millón por riñón.",
+      "Orden: glomérulo · Bowman · proximal · Henle · distal · colector.",
+      "Arteriola <b>aferente</b> entra al glomérulo; <b>eferente</b> sale."
+    ] },
+    { "titulo": "11. Aparato urinario: fisiología", "diap": "89–93", "lineas": [
+      "Orina: <b>filtración</b>, <b>reabsorción</b> y <b>secreción</b>.",
+      "Equilibrios: agua, iones y ácido-base.",
+      "<b>Renina</b> (tensión), <b>EPO</b> (glóbulos rojos) y <b>vitamina D</b> (calcio)."
+    ] },
+    { "titulo": "12. El riñón enfermo", "diap": "94–106", "lineas": [
+      "Orina normal: 1500 cm³ al día; <b>poliuria &gt;2500</b>, <b>oliguria 500-1000</b>, <b>anuria &lt;100</b>.",
+      "<b>ITU</b> ascendente: uretritis → cistitis → pielonefritis.",
+      "<b>Nefrítico</b>: HTA, edema y hematuria · <b>nefrótico</b>: proteinuria y edemas.",
+      "Insuficiencia renal <b>aguda</b> (urgencia) y <b>crónica</b> (diabetes + HTA → diálisis o trasplante)."
+    ] }
+  ],
+  "casos": [
+    { "titulo": "Hemostasia y cascada de coagulación", "diap": "28 a 41",
+      "caso": "Explica la hemostasia y la cascada de coagulación.",
+      "respuesta": "<p>La <strong>hemostasia</strong> detiene una hemorragia en 3 fases: <strong>vasoconstricción local</strong>, <strong>agregado plaquetario</strong> y <strong>coágulo</strong>. La coagulación transforma el <strong>fibrinógeno</strong> (soluble) en <strong>fibrina</strong> (insoluble) gracias a la <strong>trombina</strong>. Se activa por la <strong>vía intrínseca</strong> (lesión vascular) o la <strong>extrínseca</strong> (lesión tisular), que confluyen en la <strong>vía común</strong>: X → II (trombina) → I (fibrina) → XIII la insolubiliza. Frenos: flujo normal, hígado, proteína C y S y <strong>antitrombina III</strong> (potenciada por heparina). Después, la <strong>plasmina</strong> deshace la fibrina (fibrinólisis).</p>" },
+    { "titulo": "Trombosis y embolia", "diap": "50 a 57",
+      "caso": "Explica la trombosis y la embolia: definición, causas y tipos.",
+      "respuesta": "<p><strong>Trombosis</strong>: coágulo dentro de un vaso. Causas: aterosclerosis, alteraciones de la coagulación o de la sangre, flujos en torbellino, lesiones del endotelio. Según oclusión: <strong>ocluyente</strong> (total) o <strong>mural</strong> (parcial). Según ubicación: <strong>por precipitación</strong> (blancos, arterias, plaquetas), <strong>por coagulación</strong> (rojos, venas, más fibrina) e <strong>hialina</strong> (vénulas y capilares). Se detecta con el <strong>dímero D</strong>.</p><p><strong>Embolia</strong>: oclusión por un émbolo que circula y se encaja en un vaso pequeño: tromboembolia (la mayoría), grasa, aérea, séptica, tisular, de cuerpo extraño y de líquido amniótico.</p>" },
+    { "titulo": "Accidente vascular cerebral", "diap": "58 a 62",
+      "caso": "¿Qué es un AVC? Tipos, síntomas y factores de riesgo.",
+      "respuesta": "<p>Interrupción del riego en una parte del cerebro. <strong>Isquémicos (80 %)</strong>: extravasculares (vasoconstricción) o intravasculares: aterotrombótico (55 %) y embólico. <strong>Hemorrágicos (20 %)</strong>: pico hipertensivo o aneurisma congénito.</p><p>Síntomas: pérdida de fuerza en un lado, dificultad para hablar (disartria), pérdida de equilibrio, mareo o dolor de cabeza brusco, pérdida de visión. Riesgo no modificable: edad, sexo, raza, antecedentes; modificable: HTA, tabaco, grasas, diabetes, alcohol, obesidad, sedentarismo…</p>" },
+    { "titulo": "Angina de pecho e infarto", "diap": "65 a 67",
+      "caso": "Compara la angina de pecho y el infarto agudo de miocardio.",
+      "respuesta": "<p>Las dos son <strong>cardiopatías isquémicas</strong> por obstrucción coronaria, casi siempre por <strong>ateromas</strong>. La <strong>angina</strong>: dolor torácico de corta duración, sin lesiones permanentes, puede evolucionar a infarto. El <strong>infarto</strong>: dolor más intenso por <strong>necrosis</strong> del miocardio cuando la falta de riego dura <strong>más de 20 minutos</strong>; causa habitual, un trombo en una coronaria.</p>" },
+    { "titulo": "La nefrona y la orina", "diap": "81 a 89",
+      "caso": "Explica la nefrona y la formación de la orina.",
+      "respuesta": "<p>La <strong>nefrona</strong> es la unidad estructural y funcional del riñón (más de un millón por riñón): <strong>corpúsculo renal</strong> (glomérulo + cápsula de Bowman) y <strong>sistema tubular</strong> (túbulo proximal, asa de Henle, túbulo distal y colector). La sangre se <strong>filtra</strong> en el glomérulo; en los túbulos hay <strong>reabsorción</strong> (agua, glucosa, aminoácidos) y <strong>secreción activa</strong> (tóxicos). Lo que queda es la orina (unos 1500 cm³ al día).</p>" }
+  ],
+  "chuleta": [
+    "Tricúspide a la derecha, mitral a la izquierda.",
+    "Sinusal → aurículas → AV → ventrículos.",
+    "Capas: Íntima, Media (la más gruesa), Adventicia.",
+    "Tensión: 120-140 / 60-90 mmHg · volemia 5-6 litros.",
+    "Hemostasia: vasoconstricción → plaquetas → coágulo.",
+    "Trombina: fibrinógeno → fibrina · plasmina la deshace.",
+    "Vitamina K: factores II, VII, IX y X · hemofilia: VIII y IX.",
+    "Trombo se forma en el sitio; émbolo viaja.",
+    "Trombo blanco = arteria · rojo = vena · dímero D.",
+    "AVC: 80 % isquémicos (55 % aterotrombóticos), 20 % hemorrágicos.",
+    "Angina avisa; infarto = necrosis, más de 20 minutos.",
+    "HTA: 90 % primaria, «asesino silencioso».",
+    "Nefrona: Glomérulo · Bowman · proximal · Henle · distal · colector.",
+    "Orina: filtra, reabsorbe, secreta · 1500 cm³ al día.",
+    "Poliuria = cantidad · polaquiuria = veces.",
+    "Nefrítico = sangre · nefrótico = proteínas.",
+    "Renina, EPO y vitamina D."
+  ],
+  "plan": [
+    ["Bloques 1 y 2: corazón y vasos. Lee, tapa y dilo en voz alta", "19 y 20 de nov."],
+    ["Bloques 3 y 4: tensión, volemia, hemostasia y coagulación", "21 y 22 de nov."],
+    ["Bloques 5 y 6: isquemia, aneurismas, varices, aterosclerosis y trombosis", "23 y 24 de nov."],
+    ["Bloque 7: embolia e ictus. Haz la pregunta de desarrollo del AVC", "25 de nov."],
+    ["Bloques 8 y 9: corazón enfermo, tensión, edema y coagulación", "26 y 27 de nov."],
+    ["Bloques 10 a 12: aparato urinario entero", "28 y 29 de nov."],
+    ["Las 5 preguntas de desarrollo por escrito, sin mirar, y las tarjetas que falles", "30 de nov."],
+    ["Antes de entrar: solo la chuleta", "1 de dic."]
+  ]
+}

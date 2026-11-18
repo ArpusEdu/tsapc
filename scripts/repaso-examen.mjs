@@ -18,7 +18,11 @@ const [desde, hasta] = D.conceptos;
 let n = 0; const cs = [], bloques = new Set();
 C.bloques.forEach((b, i) => b.conceptos.forEach((k) => { n++; if (n >= desde && n <= hasta) { cs.push({ n, k, bi: i, bt: b.titulo }); bloques.add("b" + i); } }));
 const tarjetas = (P.tarjetas || []).filter((t) => bloques.has(t.bloque));
-const test = ((C.impres && C.impres[0] && C.impres[0].items) || []).filter(([q]) => { const m = /^(\d+)\./.exec(q); return m && +m[1] >= D.test[0] && +m[1] <= D.test[1]; });
+/* test: con «test» [desde, hasta] salen las preguntas numeradas de la profe; sin él, todas las preguntas rápidas de «impres» */
+const test = D.test ? ((C.impres && C.impres[0] && C.impres[0].items) || []).filter(([q]) => { const m = /^(\d+)\./.exec(q); return m && +m[1] >= D.test[0] && +m[1] <= D.test[1]; })
+  : (C.impres || []).flatMap((g) => g.items || []);
+/* títulos de sección; «textos» en datos.json los cambia (p. ej., un examen con días por delante) */
+const T = Object.assign({ plan: "Plan para hoy", test: D.test ? "Test de la profe (preguntas " + D.test[0] + " a " + D.test[1] + ")" : "Preguntas rápidas", casos: "Casos de las actividades", casosNota: "Respuestas modelo de Enfoque, hechas solo con lo que dicen las diapositivas.", chuleta: "Chuleta para mañana", chuletaSub: "Mañana, antes de entrar, solo esto. Nada nuevo." }, D.textos || {});
 
 const concepto = ({ n, k }) => {
   const defs = (k.defs || []).map((d) => "<li><b>" + esc(d.t) + ":</b> " + (d.diapo ? "«" + esc(d.diapo) + "»" : esc(d.facil || "")) + "</li>").join("");
@@ -95,7 +99,7 @@ details>div{padding:0 0 10px}
 <p class="sub"><b>${esc(D.titulo)}</b> · ${DIAS[fecha.getDay()]} ${fecha.getDate()} de ${MESES[fecha.getMonth()]}. Solo lo que entra: ${cs.length} conceptos, ${test.length} preguntas del test, ${D.casos.length} casos y ${tarjetas.length} tarjetas.</p>
 <ul class="indice"><li><a href="#plan">Plan</a></li><li><a href="#mapa">El tema en 1 minuto</a></li><li><a href="#diapos">Diapositiva a diapositiva</a></li><li><a href="#test">Test</a></li><li><a href="#casos">Casos</a></li><li><a href="#tarjetas">Tarjetas</a></li><li><a href="#chuleta">Chuleta</a></li></ul>
 
-<section id="plan" class="plan"><h2>Plan para hoy</h2><div class="caja"><ol>${D.plan.map(([a, b]) => "<li>" + esc(a) + " <small>· " + esc(b) + "</small></li>").join("")}</ol></div></section>
+<section id="plan" class="plan"><h2>${esc(T.plan)}</h2><div class="caja"><ol>${D.plan.map(([a, b]) => "<li>" + esc(a) + " <small>· " + esc(b) + "</small></li>").join("")}</ol></div></section>
 
 <section id="mapa"><h2>El tema en 1 minuto</h2><div class="mapa">${D.mapa.map((m) => '<div class="caja"><h3>' + esc(m.titulo) + '</h3><p class="cx-f">Diapositivas ' + esc(m.diap) + "</p><ul>" + m.lineas.map((l) => "<li>" + l + "</li>").join("") + "</ul></div>").join("")}</div></section>
 
@@ -104,21 +108,21 @@ details>div{padding:0 0 10px}
 ${cs.map(concepto).join("\n")}
 </section>
 
-<section id="test"><h2>Test de la profe (preguntas ${D.test[0]} a ${D.test[1]})</h2><p class="sub">Piensa la respuesta antes de abrir.</p>
+<section id="test"><h2>${esc(T.test)}</h2><p class="sub">Piensa la respuesta antes de abrir.</p>
 ${test.map(([q, a]) => "<details><summary>" + esc(q) + "</summary><div>" + a + "</div></details>").join("\n")}
 </section>
 
-<section id="casos"><h2>Casos de las actividades</h2>
+<section id="casos"><h2>${esc(T.casos)}</h2>
 ${D.casos.map((c) => '<div class="caja caso"><h3>' + esc(c.titulo) + '</h3><p class="cx-f">Diapositivas ' + esc(c.diap) + "</p><p>" + esc(c.caso) + "</p><details><summary>Ver la respuesta modelo</summary><div>" + c.respuesta + "</div></details></div>").join("\n")}
-<p class="cx-f">Respuestas modelo de Enfoque, hechas solo con lo que dicen las diapositivas.</p>
+<p class="cx-f">${esc(T.casosNota)}</p>
 </section>
 
 <section id="tarjetas"><h2>Tarjetas</h2><p class="sub">Dilo antes de abrir. Las que falles, repítelas al final.</p>
 ${tarjetas.map((t) => "<details><summary>" + esc(t.frente) + "</summary><div>" + (t.formato === "html" ? t.dorso : "<p>" + esc(t.dorso) + "</p>") + "</div></details>").join("\n")}
 </section>
 
-<section id="chuleta" class="chuleta"><h2>Chuleta para mañana</h2><div class="caja"><ul>${D.chuleta.map((x) => "<li>" + esc(x) + "</li>").join("")}</ul></div>
-<p class="sub">Mañana, antes de entrar, solo esto. Nada nuevo. Lo de la profe va tal cual; mapa, trucos, casos y chuleta son de Enfoque.</p></section>
+<section id="chuleta" class="chuleta"><h2>${esc(T.chuleta)}</h2><div class="caja"><ul>${D.chuleta.map((x) => "<li>" + esc(x) + "</li>").join("")}</ul></div>
+<p class="sub">${esc(T.chuletaSub)} Lo de la profe va tal cual; mapa, trucos, casos y chuleta son de Enfoque.</p></section>
 </main>
 <script>
 (function(){var b=document.getElementById("tapar"),s=document.getElementById("diapos");if(!b||!s)return;
