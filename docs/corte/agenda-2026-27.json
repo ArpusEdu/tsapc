@@ -450,10 +450,12 @@
       "id": "bio-examen-diciembre",
       "tipo": "examen",
       "asig": "bio",
-      "titulo": "Examen · Biología molecular y citogenética",
+      "titulo": "Examen · Unidad 3 de Biología molecular: ácidos nucleicos",
+      "unidad": "bio3",
+      "diapositivas": "6-110",
       "fecha": "2026-12-14",
       "hora": null,
-      "nota": "En horario de clase (lunes, 18:00). Unidades que entran por confirmar."
+      "nota": "En horario de clase (lunes, 18:00). Entra solo la unidad 3."
     },
     {
       "id": "ipe-examen-nomina",

@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "unidad": "bio3",
+  "evento": "bio-examen-diciembre",
+  "titulo": "Ácidos nucleicos, replicación, transcripción y traducción",
+  "asignatura": "Biología molecular · Unidad 3",
+  "fecha": "2026-12-14",
+  "diapositivas": "6 a 110",
+  "conceptos": [1, 56],
+  "textos": {
+    "plan": "Plan hasta el examen",
+    "casos": "Preguntas de desarrollo",
+    "chuleta": "Chuleta para el último día",
+    "chuletaSub": "El día del examen, solo esto. Nada nuevo."
+  },
+  "mapa": [
+    { "titulo": "1. Las piezas", "diap": "6–14", "lineas": [
+      "Funciones: el ADN <b>almacena y transmite</b>; el ARN <b>expresa</b>.",
+      "<b>Nucleótido</b> = fosfato + pentosa + base; sin fosfato es <b>nucleósido</b>.",
+      "ADN = <b>desoxirribosa</b>; ARN = <b>ribosa</b>.",
+      "Púricas: <b>A y G</b>; pirimidínicas: <b>C, T y U</b>. Se unen por enlace <b>fosfodiéster</b>."
+    ] },
+    { "titulo": "2. Propiedades y estructura primaria", "diap": "15–21", "lineas": [
+      "Ácidos, viscosos, hibridan y se <b>desnaturalizan</b> (y se renaturalizan).",
+      "Extremo <b>5’</b> = el del fosfato; <b>3’</b> = el del azúcar.",
+      "Complementariedad: <b>A-T con 2</b> puentes de H, <b>C-G con 3</b>."
+    ] },
+    { "titulo": "3. Doble hélice y empaquetamiento", "diap": "22–33", "lineas": [
+      "Modelo de <b>1953</b>: Watson, Crick, Wilkins y Franklin.",
+      "Doble hélice: eje central, <b>antiparalelas</b>, complementarias, bases dentro, <b>10 por giro</b>.",
+      "ADN → <b>nucleosoma</b> (8 histonas) → fibra → <b>solenoide</b> (6 y 6) → cromosoma."
+    ] },
+    { "titulo": "4. Tipos de ADN", "diap": "34–38", "lineas": [
+      "<b>Eucromatina</b>: suelta, se lee · <b>heterocromatina</b>: apretada.",
+      "Mitocondrial: 16,5 kb y 37 genes · cloroplastos: 120-160 kb y unos 150 genes.",
+      "Bacteria: un anillo, suelto y desnudo, más <b>plásmidos</b>."
+    ] },
+    { "titulo": "5. El ARN", "diap": "39–48", "lineas": [
+      "Ribosa, <b>uracilo</b>, corto y de una cadena.",
+      "<b>ARNm</b> lleva el mensaje; <b>ARNt</b> transporta (trébol que se pliega en L).",
+      "<b>ARNr</b>: el 80 % del ARN; subunidades 60 y 40."
+    ] },
+    { "titulo": "6. Flujo y replicación", "diap": "49–57", "lineas": [
+      "Replicación ADN→ADN · transcripción ADN→ARN · traducción ARN→proteína.",
+      "Se replica en la <b>fase S</b>.",
+      "<b>Semiconservativa</b>, con orígenes (1 en bacteria, muchos en eucariotas), <b>bidireccional</b> y <b>semidiscontinua</b>."
+    ] },
+    { "titulo": "7. Fases y enzimas de la replicación", "diap": "59–77", "lineas": [
+      "<b>Helicasa</b> abre · <b>SSB</b> sujeta separadas · <b>topoisomerasa y girasa</b> quitan tensión.",
+      "<b>Primasa</b> pone primers de ARN · <b>Pol III</b> construye 5’→3’.",
+      "<b>Pol I</b> cambia los primers por ADN · <b>ligasa</b> pega los fragmentos de Okazaki.",
+      "Eucariotas: muchos orígenes, muchas polimerasas, histonas y <b>telómeros</b> que se acortan."
+    ] },
+    { "titulo": "8. La transcripción", "diap": "78–83", "lineas": [
+      "Iniciación en el <b>promotor</b> · elongación · terminación en el <b>terminador</b>.",
+      "ARN polimerasa I → ARNr, <b>II → ARNm</b>, III → ARNt.",
+      "El ARN es como la cadena <b>codificante</b>, con U en vez de T."
+    ] },
+    { "titulo": "9. La maduración del ARN", "diap": "84–88", "lineas": [
+      "Solo en eucariotas: <b>CAP-5’</b> y <b>cola poliA</b> (100-200 A).",
+      "<b>Splicing</b>: se quitan los <b>intrones</b> y se empalman los <b>exones</b>.",
+      "Splicing alternativo: 1 gen → varias proteínas."
+    ] },
+    { "titulo": "10. El código genético", "diap": "90–95", "lineas": [
+      "<b>20 aminoácidos</b>; codón = 3 nucleótidos; 4³ = <b>64 = 61 + 3</b>.",
+      "Universal, no ambiguo, <b>degenerado</b> y continuo.",
+      "Inicio <b>AUG</b>; STOP <b>UAA, UAG, UGA</b>."
+    ] },
+    { "titulo": "11. Las fases de la traducción", "diap": "96–104", "lineas": [
+      "Sitios del ribosoma: <b>A → P → E</b>.",
+      "Iniciación: el primer ARNt empieza en <b>P</b>.",
+      "Elongación: entra, une (peptidil transferasa), avanza y sale.",
+      "Terminación: codón STOP, entra el factor de liberación."
+    ] },
+    { "titulo": "12. Las mutaciones génicas", "diap": "106–110", "lineas": [
+      "<b>Somática</b> → células hijas · <b>sexual</b> → hijos.",
+      "Génicas: <b>inserción, deleción y sustitución</b>.",
+      "Inserción y deleción cambian el <b>marco de lectura</b>.",
+      "Sustitución: <b>silenciosa</b> (igual), <b>errónea</b> (otro AA), <b>sin sentido</b> (STOP)."
+    ] }
+  ],
+  "casos": [
+    { "titulo": "La replicación del ADN", "diap": "53 a 77",
+      "caso": "Explica la replicación del ADN: características, fases y enzimas.",
+      "respuesta": "<p>Duplica una molécula de ADN en dos idénticas, en la <strong>fase S</strong>. Es <strong>semiconservativa</strong>, empieza en un <strong>origen</strong> (uno en procariotas, varios en eucariotas), es <strong>bidireccional</strong> y <strong>semidiscontinua</strong>.</p><p><strong>Iniciación:</strong> proteínas reconocen el origen, las <strong>helicasas</strong> rompen los puentes de H y forman la burbuja, las <strong>SSBP</strong> mantienen separadas las cadenas y la <strong>girasa</strong> y la <strong>topoisomerasa</strong> relajan la tensión.</p><p><strong>Elongación:</strong> la <strong>primasa</strong> coloca primers, la <strong>ADN polimerasa III</strong> sintetiza 5’→3’, continua en la hebra conductora y discontinua en la retardada (fragmentos de Okazaki); la <strong>ADN polimerasa I</strong> sustituye los primers por ADN y la <strong>ligasa</strong> une los fragmentos.</p>" },
+    { "titulo": "La traducción", "diap": "90 a 104",
+      "caso": "Explica la traducción: qué se necesita, los sitios del ribosoma y sus 3 fases.",
+      "respuesta": "<p>Síntesis de una proteína a partir de un ARNm. Necesita <strong>ARNm, 20 AA, ribosomas, ARNt y peptidil transferasa</strong>. Ribosoma: subunidad menor (une el ARNm) y mayor con sitios <strong>A</strong> (ARNt con el siguiente AA), <strong>P</strong> (cadena en crecimiento) y <strong>E</strong> (salida).</p><p><strong>Iniciación:</strong> ARNt+Met con la subunidad menor en el CAP-5’, busca <strong>AUG</strong>, se une la subunidad mayor y el ARNt queda en P. <strong>Elongación:</strong> entra un ARNt en A, la peptidil transferasa forma el enlace peptídico, el ribosoma avanza 5’→3’ y el ARNt vacío sale por E. <strong>Terminación:</strong> codón STOP (UAA, UGA, UAG), los factores de liberación se sitúan en A y la proteína se libera.</p>" },
+    { "titulo": "Transcripción y maduración", "diap": "78 a 88",
+      "caso": "Explica la transcripción y la maduración del ARN.",
+      "respuesta": "<p>Síntesis de ARN con una cadena de ADN como molde, por la <strong>ARN polimerasa</strong> (una en procariotas; tres en eucariotas: I ARNr, II ARNm, III ARNt). <strong>Iniciación:</strong> reconoce el promotor. <strong>Elongación:</strong> ribonucleótidos 5’→3’ sobre la cadena molde; el ARN es como la codificante con U en vez de T. <strong>Terminación:</strong> terminador.</p><p>En eucariotas el ARN <strong>madura</strong>: CAP-5’, cola poliA (100-200 A) y <strong>splicing</strong> (el spliceosoma quita intrones y empalma exones).</p>" },
+    { "titulo": "Código genético y mutaciones", "diap": "92 a 110",
+      "caso": "Describe el código genético y los tipos de mutaciones génicas.",
+      "respuesta": "<p>Diccionario de nucleótidos a aminoácidos: <strong>codón = 3 nucleótidos</strong>; 4³ = 64 (61 AA + 3 STOP). Universal, no ambiguo, <strong>degenerado</strong>, continuo y no solapado. Inicio <strong>AUG</strong> (Met); STOP <strong>UAA, UAG, UGA</strong>.</p><p>Mutaciones génicas: <strong>inserción</strong> y <strong>deleción</strong> (cambian el marco de lectura salvo si son de 3 o múltiplo de 3) y <strong>sustitución</strong>: silenciosa (mismo AA), errónea (otro AA) y sin sentido (STOP, proteína más corta).</p>" },
+    { "titulo": "ADN y ARN, doble hélice y empaquetamiento", "diap": "6 a 48",
+      "caso": "Compara ADN y ARN y describe la doble hélice y su empaquetamiento.",
+      "respuesta": "<p><strong>ADN:</strong> desoxirribosa; A, T, G, C; doble hélice antiparalela; millones de pares de bases; almacena y transmite. <strong>ARN:</strong> ribosa; A, U, G, C; cadena simple; mucho más pequeño; expresa la información.</p><p><strong>Doble hélice:</strong> eje central, antiparalelas, complementarias (A-T 2 puentes, C-G 3), bases dentro, 10 nucleótidos por giro. <strong>Empaquetamiento:</strong> nucleosoma (8 histonas) → fibra de cromatina → solenoide (6 nucleosomas por vuelta) → cromosoma metafásico.</p>" }
+  ],
+  "chuleta": [
+    "ADN = desoxirribosa, A-T-G-C · ARN = ribosa, A-U-G-C.",
+    "Nucleósido = base + azúcar · nucleótido = + fosfato.",
+    "«Pura AGua»: púricas A y G; el resto, pirimidínicas.",
+    "A-T: 2 puentes · C-G: 3 puentes.",
+    "5’ = fosfato · 3’ = azúcar · cadenas antiparalelas.",
+    "Nucleosoma = 8 histonas · solenoide = 6 y 6.",
+    "ARNr = 80 % · ribosoma 60 + 40.",
+    "Replicación en fase S: semiconservativa, bidireccional, semidiscontinua.",
+    "Helicasa, SSB, topoisomerasa, primasa, Pol III, Pol I, ligasa.",
+    "Pol III construye · Pol I quita primers · ligasa pega Okazaki.",
+    "ARN polimerasa: I → ARNr · II → ARNm · III → ARNt.",
+    "Promotor = salida · terminador = meta.",
+    "Maduración: CAP-5’, cola poliA y splicing (fuera intrones).",
+    "64 codones = 61 + 3 · AUG inicio · UAA, UAG, UGA STOP.",
+    "No ambiguo: 1 codón → 1 AA · degenerado: 1 AA ← varios codones.",
+    "Ribosoma: A → P → E; el primer ARNt empieza en P.",
+    "Mutaciones: inserción, deleción, sustitución (silenciosa, errónea, sin sentido)."
+  ],
+  "plan": [
+    ["Bloques 1 y 2: las piezas, propiedades y complementariedad", "2 y 3 de dic."],
+    ["Bloques 3 y 4: doble hélice, empaquetamiento y tipos de ADN", "4 de dic."],
+    ["Bloque 5: el ARN y sus tipos", "5 de dic."],
+    ["Bloques 6 y 7: replicación y sus enzimas. Haz la pregunta de desarrollo", "6 y 7 de dic."],
+    ["Bloques 8 y 9: transcripción y maduración", "8 y 9 de dic."],
+    ["Bloques 10 y 11: código genético y traducción", "10 y 11 de dic."],
+    ["Bloque 12: mutaciones. Después, las 5 preguntas de desarrollo por escrito, sin mirar", "12 de dic."],
+    ["Pasa todas las tarjetas y repite las que falles", "13 de dic."],
+    ["Antes de entrar: solo la chuleta", "14 de dic."]
+  ]
+}
