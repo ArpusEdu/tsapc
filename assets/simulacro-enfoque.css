@@ -101,7 +101,7 @@ h1,h2,h3{font-family:var(--f-titulo);font-weight:500;margin:0;text-wrap:balance;
 /* ---------- preguntas ---------- */
 .it{display:flex;flex-direction:column;gap:var(--e-2);min-width:0;padding:var(--e-3) clamp(12px,3vw,18px);background:var(--c-hoja);border:1px solid var(--c-linea-suave);border-radius:var(--r-3)}
 .it .q{font-weight:700;line-height:1.45}
-.it .n{font:700 var(--t-xs)/1 var(--f-mono);color:var(--asig-texto);margin-right:6px}
+.it .q .n{font:700 var(--t-xs)/1 var(--f-mono);color:var(--asig-texto);margin-right:6px}
 .it.right{border-color:var(--c-ok);box-shadow:inset 3px 0 0 var(--c-ok)}
 .it.wrong{border-color:var(--c-error);box-shadow:inset 3px 0 0 var(--c-error)}
 .llave{border-width:2px;border-color:var(--c-aviso)}

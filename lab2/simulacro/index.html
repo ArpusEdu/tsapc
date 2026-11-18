@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../../assets/corte/base.css">
 <link rel="stylesheet" href="../../assets/corte/componentes.css">
 <link rel="stylesheet" href="../../assets/simulacro-enfoque.css">
-<script>document.addEventListener("DOMContentLoaded",function(){var MCU=(location.pathname.replace(/index.html$/,"").split("/").filter(Boolean).slice(-2)[0]||"");function mk(c){var a=document.createElement("a");a.className=c;a.href="../../app/#/unidad/"+encodeURIComponent(MCU);a.innerHTML='<svg class="ico" aria-hidden="true" focusable="false"><use href="../../assets/corte/iconos.svg#i-volver"/></svg>Volver a la unidad';return a}
+<script>document.addEventListener("DOMContentLoaded",function(){var MCU=(location.pathname.replace(/index\.html$/,"").split("/").filter(Boolean).slice(-2)[0]||"");function mk(c){var a=document.createElement("a");a.className=c;a.href="../../app/#/unidad/"+encodeURIComponent(MCU);a.innerHTML='<svg class="ico" aria-hidden="true" focusable="false"><use href="../../assets/corte/iconos.svg#i-volver"/></svg>Volver a la unidad';return a}
 var M=document.querySelector("main")||document.body,top=mk("mc-back");M.insertBefore(top,M.firstChild);
 var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a la unidad en la app");M.appendChild(f);
 function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});

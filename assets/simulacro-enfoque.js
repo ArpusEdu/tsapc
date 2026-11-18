@@ -7,7 +7,7 @@
   };
   var RE = /(🔑)️?\s*/;
   function limpiar(raiz) {
-    var els = (raiz || document).querySelectorAll(".sec-h .t, .pchip > span");
+    var els = (raiz || document).querySelectorAll(".sec-h .t, .pchip > span, .it .q > .n");
     for (var i = 0; i < els.length; i++) {
       for (var t = els[i].firstChild; t; t = t.nextSibling) {
         if (t.nodeType !== 3) continue;
