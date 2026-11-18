@@ -425,11 +425,24 @@
       "titulo": "Examen · Tema 4: riesgos ergonómicos y psicosociales",
       "unidad": "ipe-tema4",
       "diapositivas": "11-17",
-      "sesiones": ["ipe-tema4-ergonomia", "ipe-tema4-cargas", "ipe-tema4-psicosociales"],
+      "sesiones": [
+        "ipe-tema4-ergonomia",
+        "ipe-tema4-cargas",
+        "ipe-tema4-psicosociales"
+      ],
       "fecha": "2026-11-17",
       "hora": null,
       "provisional": true,
       "nota": "Fecha provisional, puede cambiar. Entra el tema 4 de la diapositiva 11 al final (puntos 2 y 3: riesgos ergonómicos y psicosociales)."
+    },
+    {
+      "id": "fisio-examen-diciembre",
+      "tipo": "examen",
+      "asig": "fisio",
+      "titulo": "Examen · Fisiopatología general",
+      "fecha": "2026-12-01",
+      "hora": null,
+      "nota": "En horario de clase (martes, 16:35). Unidades que entran por confirmar."
     },
     {
       "id": "ipe-examen-nomina",
