@@ -8,6 +8,7 @@ Contexto de producto: `PRODUCT.md`. Marca: `docs/enfoque/marca.md` (aprobada; ma
 
 1. **El contenido de la profe va literal.** Todo lo marcado como «profe» (prof-t, `profe.dice`, definiciones de diapositiva) se copia tal cual del PDF. No se resume, no se corrige, no se reescribe. Las erratas del PDF solo se arreglan declarándolas en `correcciones` de `contenido.json`. `tests/fuentes.test.mjs` y `tests/sesion.test.mjs` lo comprueban.
 2. **Lo de «Enfoque»** (marcado «de Enfoque»; antes «de Corte»: ganchos, «¿por qué?», casos, trucos) usa solo hechos que estén en el material de la profe. Nada inventado.
+   **Excepción decidida por el usuario el 2026-11-18: «Para saber más».** En los repasos, cada concepto puede llevar una ampliación breve con información que complemente lo de la profe (mecanismo, ejemplo clínico, relación con el laboratorio de anatomía patológica). Va siempre aparte, marcada como «Para saber más · de Enfoque, no viene en tus diapositivas», con datos de manual bien establecidos y sin contradecir nunca a la profe; si hay duda, no se pone. Lo de la profe sigue siendo lo que se estudia para el examen.
 3. **Nada de pago**: ni servicios, ni fuentes, ni componentes Premium (Skiper UI solo gratis), ni APIs.
 4. **No se pierde ni un dato de progreso.** El progreso vive en `localStorage` del dispositivo (`assets/store.js`, copia en `assets/copia.js`). Las claves viejas se migran; nunca se borran sin preguntar.
 5. **Sin push ni publicación sin el visto bueno del usuario.** Commits locales sí.

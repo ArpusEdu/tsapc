@@ -14,6 +14,15 @@
    El chequeo final y el glosario salen solos (preguntas de cada bloque y definiciones).
    Campos opcionales (los de los repasos que se escribieron a mano): ver la cabecera de scripts/html-a-contenido.mjs.
    Las piezas se pintan con las funciones de ese archivo, que son las mismas con las que se comprobó cada contenido.json.
+   amplia (concepto, opcional): «Para saber más». HTML breve (2-4 frases o una lista corta; si es texto sin etiquetas se
+     envuelve en <p>) con lo que complementa a la profe: el mecanismo, un ejemplo clínico o una cifra de manual, cómo se ve en
+     el laboratorio de anatomía patológica, la relación con otro tema. Es lo único de un concepto que NO sale de las
+     diapositivas (excepción de la regla 2 de CLAUDE.md, 2026-11-18): datos de manual bien establecidos, sin contradecir a
+     la profe; si hay duda, no se pone. Se pinta al final del concepto, tras «Ponte a prueba», como <details class="amplia">
+     cerrado con la etiqueta «Para saber más · de Enfoque, no viene en tus diapositivas». Va fuera de todo lo que leen los
+     scripts y las pruebas (.prof-t, .qt, .defs, .fd, data-n): no entra en las tarjetas, ni en app/preguntas, ni en
+     tests/fuentes.test.mjs, ni en «Tapar» (solo tapa .fd); en «Ponte a prueba» se esconde con el resto del cuerpo.
+     html-a-contenido.mjs no lo conoce: se añade aquí, después de pintaConcepto (lo vigila tests/amplia.test.mjs).
 
    Después del montaje, enfoque() da a la página el aspecto de la app (cabecera con el logo y el portaobjetos de la unidad,
    iconos del sistema en lugar de emojis, fuentes locales). No cambia ni un texto: los emojis que leen los scripts
@@ -41,6 +50,17 @@ const H = (o, k) => (o[k + "Html"] != null ? o[k + "Html"] : esc(o[k]));
 /* ancho y alto reales de un JPEG, para reservar el hueco y que la página no salte al cargar */
 const medida = (src) => { const m = medidaJpeg(path.join(RAIZ, u, "repaso", src)); if (!m) throw new Error("Falta o no sé leer la imagen " + src); return m; };
 
+/* «Para saber más»: después de lo que pinta pintaConcepto, al final del cuerpo del concepto */
+const ETQ_AMPLIA = '<span class="lbl">Para saber más</span><span class="amplia-de"> · de Enfoque, no viene en tus diapositivas</span>';
+function conAmplia(c, art) {
+  if (c.amplia == null) return art;
+  const cuerpo = /^\s*</.test(c.amplia) ? c.amplia : "<p>" + c.amplia + "</p>";
+  const caja = '<details class="amplia"><summary>' + ETQ_AMPLIA + '</summary><div class="amplia-b">' + cuerpo + "</div></details>\n";
+  const FIN = /<\/div><\/article>\n$/;
+  if (!FIN.test(art)) throw new Error("No sé dónde poner «Para saber más» en " + c.titulo);
+  return art.replace(FIN, () => caja + "</div></article>\n");
+}
+
 /* numeración global */
 let n = 0;
 const bloques = D.bloques.map((b, i) => ({ ...b, i, conceptos: b.conceptos.map((c) => ({ ...c, n: ++n })) }));
@@ -54,7 +74,7 @@ function bloque(b) {
   const r = cs.filter((c) => c.lv === 1).length;
   const bc = b.bc != null ? b.bc : "⏱ " + min + " min · Conceptos " + cs[0].n + "–" + cs[cs.length - 1].n + " · " + r + ' 🔴 · <b class="bd">0</b>/' + cs.length + " dominados";
   return '<section class="blk" id="b' + b.i + '" data-min="' + min + '"><h2 class="blk-h"><span class="bn">' + (b.bn != null ? esc(b.bn) : "BLOQUE " + (b.i + 1)) + '</span><span class="bt">' + H(b, "titulo") +
-    '</span><span class="bc">' + bc + "</span></h2>" + (b.antes ? b.antes + "\n" : "") + cs.map((c) => pintaConcepto(c, medida, E)).join("") + (b.despues ? b.despues + "\n" : "") + "</section>";
+    '</span><span class="bc">' + bc + "</span></h2>" + (b.antes ? b.antes + "\n" : "") + cs.map((c) => conAmplia(c, pintaConcepto(c, medida, E))).join("") + (b.despues ? b.despues + "\n" : "") + "</section>";
 }
 
 /* ---------- montaje sobre la plantilla ---------- */
