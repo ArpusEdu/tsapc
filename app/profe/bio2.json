@@ -3,23 +3,229 @@
   "unidad": "bio2",
   "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Cada una sale de una diapositiva concreta.",
   "preguntas": [
-    { "id": "p01", "n": 2, "diap": "2", "tipo": "entender", "pregunta": "¿Por qué el ADN tiene que unirse a proteínas?", "porque": "Del ADN suelto al cromosoma." },
-    { "id": "p02", "n": 3, "diap": "3", "tipo": "laboratorio", "pregunta": "¿Por qué los cromosomas solo se ven en metafase?", "porque": "Explica todo el protocolo." },
-    { "id": "p03", "n": 5, "diap": "5", "tipo": "examen", "pregunta": "¿Cómo se calcula el índice centromérico?", "porque": "Con él se clasifican los 4 tipos." },
-    { "id": "p04", "n": 6, "diap": "6", "tipo": "examen", "pregunta": "¿Algún truco para reconocer un acrocéntrico?", "porque": "Sale en el dibujo del examen." },
-    { "id": "p05", "n": 8, "diap": "7", "tipo": "entender", "pregunta": "¿Qué células del cuerpo son haploides?", "porque": "Diploide y haploide, sin líos." },
-    { "id": "p06", "n": 11, "diap": "8", "tipo": "laboratorio", "pregunta": "¿Por qué se usa sangre periférica para el cariotipo?", "porque": "La muestra que más procesarás." },
-    { "id": "p07", "n": 13, "diap": "9", "tipo": "laboratorio", "pregunta": "¿Por qué el tubo lleva heparina sódica?", "porque": "Un detalle que decide la muestra." },
-    { "id": "p08", "n": 15, "diap": "11", "tipo": "examen", "pregunta": "¿Qué pasa si el cultivo pasa de las 72 horas?", "porque": "Dato concreto que cae." },
-    { "id": "p09", "n": 16, "diap": "12", "tipo": "entender", "pregunta": "¿Cómo para la colchicina las células en metafase?", "porque": "Clave del sacrificio del cultivo." },
-    { "id": "p10", "n": 17, "diap": "13", "tipo": "laboratorio", "pregunta": "¿Para qué se hinchan las células con KCl?", "porque": "El choque hipotónico, explicado." },
-    { "id": "p11", "n": 19, "diap": "15", "tipo": "laboratorio", "pregunta": "¿Por qué la extensión se hace por goteo?", "porque": "Técnica que harás con tus manos." },
-    { "id": "p12", "n": 22, "diap": "17", "tipo": "caso", "pregunta": "¿Cómo se detecta ADN fetal en la sangre de la madre?", "porque": "Evita pruebas invasivas." },
-    { "id": "p13", "n": 23, "diap": "27", "tipo": "caso", "pregunta": "¿Qué cambio en el gen HBB da la anemia falciforme?", "porque": "Un caso práctico de la profe." },
-    { "id": "p14", "n": 26, "diap": "20", "tipo": "laboratorio", "pregunta": "¿Para qué se trata con tripsina antes del Giemsa?", "porque": "El bandeo más usado." },
-    { "id": "p15", "n": 27, "diap": "21", "tipo": "laboratorio", "pregunta": "¿Por qué las bandas Q necesitan fluorescencia?", "porque": "Otro reactivo, otro microscopio." },
-    { "id": "p16", "n": 28, "diap": "22", "tipo": "examen", "pregunta": "¿Por qué las bandas R son el negativo de las G?", "porque": "Pareja que se confunde." },
-    { "id": "p17", "n": 32, "diap": "25", "tipo": "examen", "pregunta": "¿Cómo se lee el nombre de una banda en el ideograma?", "porque": "La nomenclatura que cae." },
-    { "id": "p18", "n": 33, "diap": "26 y 28", "tipo": "entender", "pregunta": "¿Qué diferencia hay entre gen y locus?", "porque": "Dos palabras que se mezclan." }
+    {
+      "id": "p01",
+      "n": 2,
+      "diap": "2",
+      "tipo": "entender",
+      "pregunta": "¿Por qué el ADN tiene que unirse a proteínas?",
+      "porque": "Del ADN suelto al cromosoma."
+    },
+    {
+      "id": "p02",
+      "n": 3,
+      "diap": "3",
+      "tipo": "laboratorio",
+      "pregunta": "¿Por qué los cromosomas solo se ven en metafase?",
+      "porque": "Explica todo el protocolo."
+    },
+    {
+      "id": "p19",
+      "n": 4,
+      "diap": "4",
+      "tipo": "examen",
+      "pregunta": "¿Qué diferencia hay entre cromátida y cromosoma?",
+      "porque": "Confusión típica de examen."
+    },
+    {
+      "id": "p03",
+      "n": 5,
+      "diap": "5",
+      "tipo": "examen",
+      "pregunta": "¿Cómo se calcula el índice centromérico?",
+      "porque": "Con él se clasifican los 4 tipos."
+    },
+    {
+      "id": "p04",
+      "n": 6,
+      "diap": "6",
+      "tipo": "examen",
+      "pregunta": "¿Algún truco para reconocer un acrocéntrico?",
+      "porque": "Sale en el dibujo del examen."
+    },
+    {
+      "id": "p05",
+      "n": 8,
+      "diap": "7",
+      "tipo": "entender",
+      "pregunta": "¿Qué células del cuerpo son haploides?",
+      "porque": "Diploide y haploide, sin líos."
+    },
+    {
+      "id": "p06",
+      "n": 11,
+      "diap": "8",
+      "tipo": "laboratorio",
+      "pregunta": "¿Por qué se usa sangre periférica para el cariotipo?",
+      "porque": "La muestra que más procesarás."
+    },
+    {
+      "id": "p21",
+      "n": 12,
+      "diap": "8 a 15",
+      "tipo": "examen",
+      "pregunta": "¿Algún truco para recordar los siete pasos en orden?",
+      "porque": "Secuencia larga y fácil de desordenar."
+    },
+    {
+      "id": "p07",
+      "n": 13,
+      "diap": "9",
+      "tipo": "laboratorio",
+      "pregunta": "¿Por qué el tubo lleva heparina sódica?",
+      "porque": "Un detalle que decide la muestra."
+    },
+    {
+      "id": "p22",
+      "n": 14,
+      "diap": "10",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué medio de cultivo se usa para sembrar la sangre?",
+      "porque": "RPMI 1640, el resaltado."
+    },
+    {
+      "id": "p08",
+      "n": 15,
+      "diap": "11",
+      "tipo": "examen",
+      "pregunta": "¿Qué pasa si el cultivo pasa de las 72 horas?",
+      "porque": "Dato concreto que cae."
+    },
+    {
+      "id": "p09",
+      "n": 16,
+      "diap": "12",
+      "tipo": "entender",
+      "pregunta": "¿Cómo para la colchicina las células en metafase?",
+      "porque": "Clave del sacrificio del cultivo."
+    },
+    {
+      "id": "p10",
+      "n": 17,
+      "diap": "13",
+      "tipo": "laboratorio",
+      "pregunta": "¿Para qué se hinchan las células con KCl?",
+      "porque": "El choque hipotónico, explicado."
+    },
+    {
+      "id": "p11",
+      "n": 19,
+      "diap": "15",
+      "tipo": "laboratorio",
+      "pregunta": "¿Por qué la extensión se hace por goteo?",
+      "porque": "Técnica que harás con tus manos."
+    },
+    {
+      "id": "p23",
+      "n": 20,
+      "diap": "9 a 15",
+      "tipo": "examen",
+      "pregunta": "¿Qué dato clave hay que saber de cada paso?",
+      "porque": "La tabla del caso práctico 1."
+    },
+    {
+      "id": "p24",
+      "n": 21,
+      "diap": "16",
+      "tipo": "caso",
+      "pregunta": "¿Cómo redacto el procedimiento como si fuera el técnico?",
+      "porque": "Es el caso práctico de la profe."
+    },
+    {
+      "id": "p12",
+      "n": 22,
+      "diap": "17",
+      "tipo": "caso",
+      "pregunta": "¿Cómo se detecta ADN fetal en la sangre de la madre?",
+      "porque": "Evita pruebas invasivas."
+    },
+    {
+      "id": "p13",
+      "n": 23,
+      "diap": "27",
+      "tipo": "caso",
+      "pregunta": "¿Qué cambio en el gen HBB da la anemia falciforme?",
+      "porque": "Un caso práctico de la profe."
+    },
+    {
+      "id": "p14",
+      "n": 26,
+      "diap": "20",
+      "tipo": "laboratorio",
+      "pregunta": "¿Para qué se trata con tripsina antes del Giemsa?",
+      "porque": "El bandeo más usado."
+    },
+    {
+      "id": "p15",
+      "n": 27,
+      "diap": "21",
+      "tipo": "laboratorio",
+      "pregunta": "¿Por qué las bandas Q necesitan fluorescencia?",
+      "porque": "Otro reactivo, otro microscopio."
+    },
+    {
+      "id": "p16",
+      "n": 28,
+      "diap": "22",
+      "tipo": "examen",
+      "pregunta": "¿Por qué las bandas R son el negativo de las G?",
+      "porque": "Pareja que se confunde."
+    },
+    {
+      "id": "p25",
+      "n": 31,
+      "diap": "20 a 24",
+      "tipo": "examen",
+      "pregunta": "¿Qué banda es la más usada para el cariotipo?",
+      "porque": "Dato estrella de la tabla."
+    },
+    {
+      "id": "p17",
+      "n": 32,
+      "diap": "25",
+      "tipo": "examen",
+      "pregunta": "¿Cómo se lee el nombre de una banda en el ideograma?",
+      "porque": "La nomenclatura que cae."
+    },
+    {
+      "id": "p18",
+      "n": 33,
+      "diap": "26 y 28",
+      "tipo": "entender",
+      "pregunta": "¿Qué diferencia hay entre gen y locus?",
+      "porque": "Dos palabras que se mezclan."
+    },
+    {
+      "id": "p26",
+      "n": 34,
+      "diap": "Hoja «Cariotipo»",
+      "tipo": "laboratorio",
+      "pregunta": "¿En qué grupos hay cromosomas con satélites?",
+      "porque": "Clave para ordenar un cariotipo."
+    },
+    {
+      "id": "p20",
+      "n": 35,
+      "diap": "Hoja «Cariotipo»",
+      "tipo": "laboratorio",
+      "pregunta": "¿Por qué se ordenan los cromosomas por tamaño y centrómero?",
+      "porque": "La base de resolver un cariotipo."
+    },
+    {
+      "id": "p27",
+      "n": 36,
+      "diap": "Hoja «Cariotipo»",
+      "tipo": "examen",
+      "pregunta": "¿Cómo se escribe la fórmula de una trisomía 21?",
+      "porque": "Nomenclatura que tendrás que escribir."
+    },
+    {
+      "id": "p28",
+      "n": 37,
+      "diap": "Hoja «Cariotipo»",
+      "tipo": "caso",
+      "pregunta": "¿Cómo se llega al diagnóstico con la hoja de la profe?",
+      "porque": "El ejercicio resuelto, paso a paso."
+    }
   ]
 }

@@ -3,23 +3,317 @@
   "unidad": "fisio2",
   "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Cada una sale de una diapositiva concreta.",
   "preguntas": [
-    { "id": "p01", "n": 4, "diap": "3", "tipo": "laboratorio", "pregunta": "¿Qué miro primero para saber qué tejido es?", "porque": "Lo decidirás cada día al microscopio." },
-    { "id": "p02", "n": 5, "diap": "4 y 5", "tipo": "entender", "pregunta": "¿Cómo se alimenta el epitelio sin vasos?", "porque": "Explica mucho del tejido." },
-    { "id": "p03", "n": 9, "diap": "9", "tipo": "examen", "pregunta": "¿Por qué el pseudoestratificado parece estratificado?", "porque": "Confusión típica de examen." },
-    { "id": "p04", "n": 11, "diap": "11", "tipo": "entender", "pregunta": "¿Por qué la piel tiene tantas capas y el pulmón una?", "porque": "Tipo de epitelio y función." },
-    { "id": "p05", "n": 17, "diap": "18", "tipo": "examen", "pregunta": "¿Un ejemplo de secreción merocrina, apocrina y holocrina?", "porque": "Con un ejemplo no se olvida." },
-    { "id": "p06", "n": 18, "diap": "19", "tipo": "entender", "pregunta": "¿Cómo es por dentro una glándula exocrina y endocrina?", "porque": "Las dos clases en un órgano." },
-    { "id": "p07", "n": 23, "diap": "29", "tipo": "entender", "pregunta": "¿Qué se acorta del sarcómero al contraerse?", "porque": "La clave de la contracción." },
-    { "id": "p08", "n": 29, "diap": "27 a 37", "tipo": "laboratorio", "pregunta": "¿Cómo distingo los tres tipos de músculo al microscopio?", "porque": "Clásico de prácticas." },
-    { "id": "p09", "n": 34, "diap": "44 a 46", "tipo": "entender", "pregunta": "¿Para qué hay tanta glía si no transmite impulsos?", "porque": "La glía no es solo relleno." },
-    { "id": "p10", "n": 35, "diap": "47 y 48", "tipo": "laboratorio", "pregunta": "¿Por qué la sustancia blanca es blanca?", "porque": "Lo verás en cortes de encéfalo." },
-    { "id": "p11", "n": 42, "diap": "55", "tipo": "caso", "pregunta": "¿Por qué los bebés tienen más grasa parda?", "porque": "Fija grasa blanca y parda." },
-    { "id": "p12", "n": 46, "diap": "60 a 63", "tipo": "examen", "pregunta": "¿Algún truco para los tres tipos de cartílago?", "porque": "Pregunta segura de examen." },
-    { "id": "p13", "n": 51, "diap": "72 y 73", "tipo": "laboratorio", "pregunta": "¿Cómo se corta un hueso para verlo al microscopio?", "porque": "Técnica propia de tu ciclo." },
-    { "id": "p14", "n": 48, "diap": "66 a 68", "tipo": "caso", "pregunta": "¿Qué células fallan en la osteoporosis?", "porque": "Osteoblastos y osteoclastos en un caso real." },
-    { "id": "p15", "n": 58, "diap": "80 a 86", "tipo": "laboratorio", "pregunta": "¿Qué leucocito cuesta más reconocer en un frotis?", "porque": "El frotis llega pronto en prácticas." },
-    { "id": "p16", "n": 60, "diap": "88", "tipo": "entender", "pregunta": "¿De dónde salen las plaquetas si no son células?", "porque": "Enlaza con la hematopoyesis." },
-    { "id": "p17", "n": 64, "diap": "94 (imagen)", "tipo": "caso", "pregunta": "¿Qué se busca en una biopsia de médula ósea?", "porque": "Una prueba que llega al laboratorio." },
-    { "id": "p18", "n": 66, "diap": "97 y 98", "tipo": "laboratorio", "pregunta": "¿Dónde está el tejido linfático denso en un ganglio?", "porque": "Los ganglios son muestras frecuentes." }
+    {
+      "id": "p01",
+      "n": 4,
+      "diap": "3",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué miro primero para saber qué tejido es?",
+      "porque": "Lo decidirás cada día al microscopio."
+    },
+    {
+      "id": "p02",
+      "n": 5,
+      "diap": "4 y 5",
+      "tipo": "entender",
+      "pregunta": "¿Cómo se alimenta el epitelio sin vasos?",
+      "porque": "Explica mucho del tejido."
+    },
+    {
+      "id": "p21",
+      "n": 7,
+      "diap": "7",
+      "tipo": "examen",
+      "pregunta": "¿Cómo se pone nombre a un epitelio de revestimiento?",
+      "porque": "Capas más forma: dos apellidos."
+    },
+    {
+      "id": "p22",
+      "n": 8,
+      "diap": "8",
+      "tipo": "laboratorio",
+      "pregunta": "¿Dónde busco epitelio simple plano en un corte?",
+      "porque": "Alvéolos, vasos y serosas."
+    },
+    {
+      "id": "p03",
+      "n": 9,
+      "diap": "9",
+      "tipo": "examen",
+      "pregunta": "¿Por qué el pseudoestratificado parece estratificado?",
+      "porque": "Confusión típica de examen."
+    },
+    {
+      "id": "p23",
+      "n": 10,
+      "diap": "10",
+      "tipo": "laboratorio",
+      "pregunta": "¿Cómo sé si un epitelio plano está queratinizado?",
+      "porque": "Piel frente a boca o esófago."
+    },
+    {
+      "id": "p04",
+      "n": 11,
+      "diap": "11",
+      "tipo": "entender",
+      "pregunta": "¿Por qué la piel tiene tantas capas y el pulmón una?",
+      "porque": "Tipo de epitelio y función."
+    },
+    {
+      "id": "p24",
+      "n": 12,
+      "diap": "12",
+      "tipo": "entender",
+      "pregunta": "¿Cómo protege un epitelio frente a las agresiones?",
+      "porque": "Glucocálix, queratina y uniones."
+    },
+    {
+      "id": "p25",
+      "n": 13,
+      "diap": "13",
+      "tipo": "entender",
+      "pregunta": "¿Una glándula puede ser de una sola célula?",
+      "porque": "Unicelulares y pluricelulares."
+    },
+    {
+      "id": "p26",
+      "n": 14,
+      "diap": "14",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué es el adenómero de una glándula exocrina?",
+      "porque": "La parte secretora, para reconocerla."
+    },
+    {
+      "id": "p05",
+      "n": 17,
+      "diap": "18",
+      "tipo": "examen",
+      "pregunta": "¿Un ejemplo de secreción merocrina, apocrina y holocrina?",
+      "porque": "Con un ejemplo no se olvida."
+    },
+    {
+      "id": "p06",
+      "n": 18,
+      "diap": "19",
+      "tipo": "entender",
+      "pregunta": "¿Cómo es por dentro una glándula exocrina y endocrina?",
+      "porque": "Las dos clases en un órgano."
+    },
+    {
+      "id": "p27",
+      "n": 20,
+      "diap": "25",
+      "tipo": "entender",
+      "pregunta": "¿Qué tienen en común los tres tipos de músculo?",
+      "porque": "La capacidad de contraerse."
+    },
+    {
+      "id": "p28",
+      "n": 22,
+      "diap": "27 y 28",
+      "tipo": "laboratorio",
+      "pregunta": "¿Dónde están los núcleos en una fibra esquelética?",
+      "porque": "Periféricos: pista para reconocerla."
+    },
+    {
+      "id": "p07",
+      "n": 23,
+      "diap": "29",
+      "tipo": "entender",
+      "pregunta": "¿Qué se acorta del sarcómero al contraerse?",
+      "porque": "La clave de la contracción."
+    },
+    {
+      "id": "p29",
+      "n": 24,
+      "diap": "27 y 30",
+      "tipo": "examen",
+      "pregunta": "¿En qué se diferencian endomisio, perimisio y epimisio?",
+      "porque": "Tres envolturas que se confunden."
+    },
+    {
+      "id": "p30",
+      "n": 26,
+      "diap": "32",
+      "tipo": "entender",
+      "pregunta": "¿Qué papel tiene el calcio en la contracción?",
+      "porque": "Es la llave de la ACTIVIDAD."
+    },
+    {
+      "id": "p31",
+      "n": 27,
+      "diap": "33 y 34",
+      "tipo": "entender",
+      "pregunta": "¿Para qué sirven los discos intercalares?",
+      "porque": "Que el corazón se contraiga a la vez."
+    },
+    {
+      "id": "p32",
+      "n": 28,
+      "diap": "35 a 37",
+      "tipo": "caso",
+      "pregunta": "¿Qué músculo hace que se nos ponga la piel de gallina?",
+      "porque": "Músculo liso en algo cotidiano."
+    },
+    {
+      "id": "p08",
+      "n": 29,
+      "diap": "27 a 37",
+      "tipo": "laboratorio",
+      "pregunta": "¿Cómo distingo los tres tipos de músculo al microscopio?",
+      "porque": "Clásico de prácticas."
+    },
+    {
+      "id": "p33",
+      "n": 32,
+      "diap": "40",
+      "tipo": "entender",
+      "pregunta": "¿Por dónde entra y sale el mensaje en la neurona?",
+      "porque": "Dendritas, soma y axón en orden."
+    },
+    {
+      "id": "p09",
+      "n": 34,
+      "diap": "44 a 46",
+      "tipo": "entender",
+      "pregunta": "¿Para qué hay tanta glía si no transmite impulsos?",
+      "porque": "La glía no es solo relleno."
+    },
+    {
+      "id": "p10",
+      "n": 35,
+      "diap": "47 y 48",
+      "tipo": "laboratorio",
+      "pregunta": "¿Por qué la sustancia blanca es blanca?",
+      "porque": "Lo verás en cortes de encéfalo."
+    },
+    {
+      "id": "p34",
+      "n": 36,
+      "diap": "49",
+      "tipo": "laboratorio",
+      "pregunta": "¿Por qué en el conectivo las células están tan separadas?",
+      "porque": "La matriz extracelular es lo clave."
+    },
+    {
+      "id": "p35",
+      "n": 37,
+      "diap": "50",
+      "tipo": "examen",
+      "pregunta": "¿La sangre cuenta como tejido conectivo?",
+      "porque": "Uno de los 7 tipos que sorprende."
+    },
+    {
+      "id": "p19",
+      "n": 39,
+      "diap": "52",
+      "tipo": "examen",
+      "pregunta": "¿Qué diferencia de verdad al conjuntivo laxo del denso?",
+      "porque": "Se confunden fácilmente."
+    },
+    {
+      "id": "p11",
+      "n": 42,
+      "diap": "55",
+      "tipo": "caso",
+      "pregunta": "¿Por qué los bebés tienen más grasa parda?",
+      "porque": "Fija grasa blanca y parda."
+    },
+    {
+      "id": "p12",
+      "n": 46,
+      "diap": "60 a 63",
+      "tipo": "examen",
+      "pregunta": "¿Algún truco para los tres tipos de cartílago?",
+      "porque": "Pregunta segura de examen."
+    },
+    {
+      "id": "p14",
+      "n": 48,
+      "diap": "66 a 68",
+      "tipo": "caso",
+      "pregunta": "¿Qué células fallan en la osteoporosis?",
+      "porque": "Osteoblastos y osteoclastos en un caso real."
+    },
+    {
+      "id": "p13",
+      "n": 51,
+      "diap": "72 y 73",
+      "tipo": "laboratorio",
+      "pregunta": "¿Cómo se corta un hueso para verlo al microscopio?",
+      "porque": "Técnica propia de tu ciclo."
+    },
+    {
+      "id": "p36",
+      "n": 56,
+      "diap": "78",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué mide el hematocrito de una analítica?",
+      "porque": "Dato que verás en el laboratorio."
+    },
+    {
+      "id": "p37",
+      "n": 57,
+      "diap": "79",
+      "tipo": "examen",
+      "pregunta": "¿Qué leucocitos son granulocitos y cuáles no?",
+      "porque": "Clasificación básica del frotis."
+    },
+    {
+      "id": "p15",
+      "n": 58,
+      "diap": "80 a 86",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué leucocito cuesta más reconocer en un frotis?",
+      "porque": "El frotis llega pronto en prácticas."
+    },
+    {
+      "id": "p16",
+      "n": 60,
+      "diap": "88",
+      "tipo": "entender",
+      "pregunta": "¿De dónde salen las plaquetas si no son células?",
+      "porque": "Enlaza con la hematopoyesis."
+    },
+    {
+      "id": "p38",
+      "n": 62,
+      "diap": "90 a 92",
+      "tipo": "entender",
+      "pregunta": "¿Qué células salen de la línea linfoide?",
+      "porque": "Linfoide frente a mieloide."
+    },
+    {
+      "id": "p17",
+      "n": 64,
+      "diap": "94 (imagen)",
+      "tipo": "caso",
+      "pregunta": "¿Qué se busca en una biopsia de médula ósea?",
+      "porque": "Una prueba que llega al laboratorio."
+    },
+    {
+      "id": "p18",
+      "n": 66,
+      "diap": "97 y 98",
+      "tipo": "laboratorio",
+      "pregunta": "¿Dónde está el tejido linfático denso en un ganglio?",
+      "porque": "Los ganglios son muestras frecuentes."
+    },
+    {
+      "id": "p39",
+      "n": 67,
+      "diap": "99",
+      "tipo": "examen",
+      "pregunta": "¿Qué diferencia hay entre un sistema y un aparato?",
+      "porque": "Mismos tejidos o tejidos distintos."
+    },
+    {
+      "id": "p20",
+      "n": 70,
+      "diap": "102",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué planos anatómicos usamos al tallar una pieza?",
+      "porque": "Los usarás al describir muestras."
+    }
   ]
 }

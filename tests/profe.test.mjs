@@ -21,7 +21,9 @@ test("preguntas para clase: bien formadas y enlazadas a su concepto y diapositiv
       assert.ok(q.porque.length >= 10 && q.porque.length <= 60, q.id + ": porqué breve");
       const k = conceptos[q.n - 1]; assert.ok(k, q.id + ": no existe el concepto " + q.n);
       const diaps = (k.fuente || "").match(/\d+/g) || [];
-      for (const d of q.diap.match(/\d+/g)) assert.ok(diaps.includes(d), q.id + ": la diapositiva " + d + " no es del concepto " + q.n + " (" + k.fuente + ")");
+      const nums = q.diap.match(/\d+/g);
+      if (nums) for (const d of nums) assert.ok(diaps.includes(d), q.id + ": la diapositiva " + d + " no es del concepto " + q.n + " (" + k.fuente + ")");
+      else assert.ok((k.fuente || "").includes(q.diap.replace(/[«»]/g, "").split(" ")[0]), q.id + ": la referencia «" + q.diap + "» no sale de la fuente del concepto " + q.n);
     }
   }
 });

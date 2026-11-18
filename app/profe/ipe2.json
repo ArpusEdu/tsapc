@@ -5,7 +5,10 @@
   "preguntas": [
     { "id": "p01", "n": 2, "diap": "2", "tipo": "examen", "pregunta": "¿Por qué el ambiente térmico incluye también el frío?", "porque": "Clasificación con trampa." },
     { "id": "p02", "n": 3, "diap": "3", "tipo": "entender", "pregunta": "¿Qué daños da el ruido además de la sordera?", "porque": "Efectos más allá del oído." },
+    { "id": "p17", "n": 4, "diap": "3", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre nivel diario y nivel de pico?", "porque": "Lo explicó en clase; no está en la diapositiva." },
     { "id": "p03", "n": 5, "diap": "3", "tipo": "examen", "pregunta": "¿Qué obliga a la empresa cada nivel de ruido?", "porque": "El semáforo que cae seguro." },
+    { "id": "p18", "n": 6, "diap": "4", "tipo": "entender", "pregunta": "¿De qué depende el daño de una vibración?", "porque": "Base de los dos modos de exposición." },
+    { "id": "p19", "n": 7, "diap": "4", "tipo": "caso", "pregunta": "¿Por qué se ponen blancos los dedos con un taladro?", "porque": "El síndrome de Raynaud, explicado." },
     { "id": "p04", "n": 8, "diap": "5", "tipo": "examen", "pregunta": "¿Qué diferencia hay entre valor de acción y valor límite?", "porque": "Cifras de vibraciones." },
     { "id": "p05", "n": 9, "diap": "5", "tipo": "laboratorio", "pregunta": "¿Vibra algún equipo de nuestro laboratorio?", "porque": "Lleva el tema a tu puesto." },
     { "id": "p06", "n": 10, "diap": "6", "tipo": "laboratorio", "pregunta": "¿Qué temperatura debe tener un laboratorio?", "porque": "Límites de la tabla de la profe." },
@@ -13,11 +16,16 @@
     { "id": "p08", "n": 14, "diap": "7", "tipo": "laboratorio", "pregunta": "¿La luz UV de la cabina es radiación no ionizante?", "porque": "Lo conecta con el laboratorio." },
     { "id": "p09", "n": 15, "diap": "7", "tipo": "caso", "pregunta": "¿Por qué los rayos X son tan peligrosos?", "porque": "Radiación en el hospital." },
     { "id": "p10", "n": 17, "diap": "8", "tipo": "examen", "pregunta": "¿Cuál es la vía de entrada más común de los químicos?", "porque": "Pregunta típica del test." },
+    { "id": "p20", "n": 18, "diap": "9", "tipo": "examen", "pregunta": "¿Por qué los corrosivos están en dos grupos?", "porque": "La profe quiere que sepas los 3 grupos." },
     { "id": "p11", "n": 19, "diap": "10", "tipo": "laboratorio", "pregunta": "¿Qué tengo que mirar en la etiqueta de un reactivo?", "porque": "Antes de abrir cualquier frasco." },
     { "id": "p12", "n": 20, "diap": "10", "tipo": "laboratorio", "pregunta": "¿Qué pictogramas llevan los reactivos que usamos?", "porque": "Los verás en cada frasco." },
+    { "id": "p21", "n": 21, "diap": "11", "tipo": "examen", "pregunta": "¿Cuáles son las tres fases para prevenir el riesgo químico?", "porque": "Base de la prevención química." },
     { "id": "p13", "n": 22, "diap": "13", "tipo": "examen", "pregunta": "¿Por qué eliminar el químico va antes que el EPI?", "porque": "El orden de las medidas cae." },
     { "id": "p14", "n": 23, "diap": "Ejercicio 8", "tipo": "entender", "pregunta": "¿Qué órganos dañan más los químicos?", "porque": "Del frasco al cuerpo." },
+    { "id": "p22", "n": 24, "diap": "14", "tipo": "laboratorio", "pregunta": "¿Una alergia a un agente biológico es riesgo biológico?", "porque": "La definición va más allá de infección." },
+    { "id": "p23", "n": 25, "diap": "14", "tipo": "laboratorio", "pregunta": "¿Qué es la vía parenteral y cuándo ocurre?", "porque": "Pinchazos y cortes en el laboratorio." },
     { "id": "p15", "n": 27, "diap": "15", "tipo": "examen", "pregunta": "¿De qué depende el grupo de un agente biológico?", "porque": "Cuatro grupos que caen." },
+    { "id": "p24", "n": 28, "diap": "16", "tipo": "caso", "pregunta": "¿Por qué se actúa primero sobre el foco de contagio?", "porque": "La historia del mono lo explica." },
     { "id": "p16", "n": 29, "diap": "Ejercicio 15", "tipo": "laboratorio", "pregunta": "¿Qué agentes biológicos hay en anatomía patológica?", "porque": "Tu sector, en concreto." }
   ]
 }

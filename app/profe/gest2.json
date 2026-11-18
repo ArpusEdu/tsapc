@@ -3,19 +3,245 @@
   "unidad": "gest2",
   "nota": "Preguntas para hacer en clase (de Enfoque, no de la profe). Cortas y normales. Esta unidad va por bloques.",
   "preguntas": [
-    { "id": "p01", "n": 2, "diap": "Bloque 1", "tipo": "entender", "pregunta": "¿Qué pasa si un resultado del laboratorio no es cierto?", "porque": "Tu responsabilidad, en concreto." },
-    { "id": "p02", "n": 3, "diap": "Bloque 1", "tipo": "examen", "pregunta": "¿Cómo distingo funciones personales y sociales?", "porque": "Grupos que se confunden." },
-    { "id": "p03", "n": 4, "diap": "Bloque 2", "tipo": "laboratorio", "pregunta": "¿Qué supone gestionar el control de existencias?", "porque": "Una tarea real del día a día." },
-    { "id": "p04", "n": 5, "diap": "Bloque 2", "tipo": "entender", "pregunta": "¿Qué hace que un resultado sea reproducible?", "porque": "Calidad de lo que entregas." },
-    { "id": "p05", "n": 8, "diap": "Bloque 3", "tipo": "entender", "pregunta": "¿Dónde trabaja un técnico de laboratorio clínico?", "porque": "Salidas del ciclo hermano." },
-    { "id": "p06", "n": 11, "diap": "Bloque 3", "tipo": "caso", "pregunta": "¿La automatización quitará trabajo al técnico?", "porque": "Duda real sobre tu futuro." },
-    { "id": "p07", "n": 17, "diap": "Bloque 5", "tipo": "examen", "pregunta": "¿Por qué decimos funciones de ayuda al diagnóstico?", "porque": "Matiz clave de tu título." },
-    { "id": "p08", "n": 18, "diap": "Bloque 5", "tipo": "laboratorio", "pregunta": "¿Qué citologías puede seleccionar el técnico?", "porque": "Lo que harás al microscopio." },
-    { "id": "p09", "n": 20, "diap": "Bloque 5", "tipo": "laboratorio", "pregunta": "¿Qué técnicas genéticas haremos en el ciclo?", "porque": "Une con cultivos y cariotipos." },
-    { "id": "p10", "n": 23, "diap": "Bloque 6", "tipo": "entender", "pregunta": "¿Qué puestos de trabajo tiene nuestro título?", "porque": "Ocho puestos, ocho salidas." },
-    { "id": "p11", "n": 24, "diap": "Bloque 6", "tipo": "examen", "pregunta": "¿Qué puestos tiene el TSAPC que no tiene el TSLCB?", "porque": "La comparativa que cae." },
-    { "id": "p12", "n": 26, "diap": "Bloque 6", "tipo": "caso", "pregunta": "¿Qué hace un técnico en el sector funerario?", "porque": "Una salida poco conocida." },
-    { "id": "p13", "n": 29, "diap": "Bloque 7", "tipo": "laboratorio", "pregunta": "¿Qué se espera del técnico en la tinción?", "porque": "Lo práctico del título." },
-    { "id": "p14", "n": 31, "diap": "Bloque 7", "tipo": "examen", "pregunta": "¿Cómo comparo los objetivos de los dos títulos?", "porque": "Tabla típica de examen." }
+    {
+      "id": "p16",
+      "n": 1,
+      "diap": "Bloque 1",
+      "tipo": "entender",
+      "pregunta": "¿Quién supervisa el trabajo del técnico de laboratorio?",
+      "porque": "Siempre bajo el titulado universitario."
+    },
+    {
+      "id": "p01",
+      "n": 2,
+      "diap": "Bloque 1",
+      "tipo": "entender",
+      "pregunta": "¿Qué pasa si un resultado del laboratorio no es cierto?",
+      "porque": "Tu responsabilidad, en concreto."
+    },
+    {
+      "id": "p02",
+      "n": 3,
+      "diap": "Bloque 1",
+      "tipo": "examen",
+      "pregunta": "¿Cómo distingo funciones personales y sociales?",
+      "porque": "Grupos que se confunden."
+    },
+    {
+      "id": "p03",
+      "n": 4,
+      "diap": "Bloque 2",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué supone gestionar el control de existencias?",
+      "porque": "Una tarea real del día a día."
+    },
+    {
+      "id": "p04",
+      "n": 5,
+      "diap": "Bloque 2",
+      "tipo": "entender",
+      "pregunta": "¿Qué hace que un resultado sea reproducible?",
+      "porque": "Calidad de lo que entregas."
+    },
+    {
+      "id": "p17",
+      "n": 6,
+      "diap": "Bloque 2",
+      "tipo": "entender",
+      "pregunta": "¿Por qué piden iniciativa y autonomía al técnico?",
+      "porque": "Para resolver problemas en el trabajo."
+    },
+    {
+      "id": "p18",
+      "n": 7,
+      "diap": "Bloque 2",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué procedimientos de prevención supervisa el técnico?",
+      "porque": "Entornos de trabajo seguros."
+    },
+    {
+      "id": "p05",
+      "n": 8,
+      "diap": "Bloque 3",
+      "tipo": "entender",
+      "pregunta": "¿Dónde trabaja un técnico de laboratorio clínico?",
+      "porque": "Salidas del ciclo hermano."
+    },
+    {
+      "id": "p19",
+      "n": 9,
+      "diap": "Bloque 3",
+      "tipo": "examen",
+      "pregunta": "¿Quién regula la actividad profesional del TSLCB?",
+      "porque": "La administración sanitaria estatal."
+    },
+    {
+      "id": "p20",
+      "n": 10,
+      "diap": "Bloque 3",
+      "tipo": "entender",
+      "pregunta": "¿Por qué se piden profesionales versátiles?",
+      "porque": "El ambiente profesional del laboratorio."
+    },
+    {
+      "id": "p06",
+      "n": 11,
+      "diap": "Bloque 3",
+      "tipo": "caso",
+      "pregunta": "¿La automatización quitará trabajo al técnico?",
+      "porque": "Duda real sobre tu futuro."
+    },
+    {
+      "id": "p21",
+      "n": 12,
+      "diap": "Bloque 3",
+      "tipo": "laboratorio",
+      "pregunta": "¿Desde dónde hay que revisar los protocolos?",
+      "porque": "La calidad empieza antes del análisis."
+    },
+    {
+      "id": "p22",
+      "n": 13,
+      "diap": "Bloque 4",
+      "tipo": "entender",
+      "pregunta": "¿Para qué necesita el técnico conocer la patología?",
+      "porque": "Relacionarla con la fisiopatología."
+    },
+    {
+      "id": "p15",
+      "n": 15,
+      "diap": "Bloque 4",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué objetivos de análisis dependen del técnico?",
+      "porque": "Tu papel en el proceso."
+    },
+    {
+      "id": "p23",
+      "n": 16,
+      "diap": "Bloque 4",
+      "tipo": "examen",
+      "pregunta": "¿Qué objetivos tiene la fase post analítica?",
+      "porque": "Lista que se pide enumerar."
+    },
+    {
+      "id": "p07",
+      "n": 17,
+      "diap": "Bloque 5",
+      "tipo": "examen",
+      "pregunta": "¿Por qué decimos funciones de ayuda al diagnóstico?",
+      "porque": "Matiz clave de tu título."
+    },
+    {
+      "id": "p08",
+      "n": 18,
+      "diap": "Bloque 5",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué citologías puede seleccionar el técnico?",
+      "porque": "Lo que harás al microscopio."
+    },
+    {
+      "id": "p24",
+      "n": 19,
+      "diap": "Bloque 5",
+      "tipo": "laboratorio",
+      "pregunta": "¿El técnico de anatomía patológica obtiene las muestras?",
+      "porque": "Las recibe; no suele obtenerlas."
+    },
+    {
+      "id": "p09",
+      "n": 20,
+      "diap": "Bloque 5",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué técnicas genéticas haremos en el ciclo?",
+      "porque": "Une con cultivos y cariotipos."
+    },
+    {
+      "id": "p25",
+      "n": 21,
+      "diap": "Bloque 5",
+      "tipo": "examen",
+      "pregunta": "¿Qué funciones comparten el TSAPC y el TSLCB?",
+      "porque": "Casi las mismas, con matices."
+    },
+    {
+      "id": "p26",
+      "n": 22,
+      "diap": "Bloque 6",
+      "tipo": "examen",
+      "pregunta": "¿Qué sector tiene el TSAPC que no tiene el TSLCB?",
+      "porque": "Diferencia clara entre los dos títulos."
+    },
+    {
+      "id": "p10",
+      "n": 23,
+      "diap": "Bloque 6",
+      "tipo": "entender",
+      "pregunta": "¿Qué puestos de trabajo tiene nuestro título?",
+      "porque": "Ocho puestos, ocho salidas."
+    },
+    {
+      "id": "p11",
+      "n": 24,
+      "diap": "Bloque 6",
+      "tipo": "examen",
+      "pregunta": "¿Qué puestos tiene el TSAPC que no tiene el TSLCB?",
+      "porque": "La comparativa que cae."
+    },
+    {
+      "id": "p27",
+      "n": 25,
+      "diap": "Bloque 6",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué aporta la robótica a la anatomía patológica?",
+      "porque": "Avances que verás en el laboratorio."
+    },
+    {
+      "id": "p12",
+      "n": 26,
+      "diap": "Bloque 6",
+      "tipo": "caso",
+      "pregunta": "¿Qué hace un técnico en el sector funerario?",
+      "porque": "Una salida poco conocida."
+    },
+    {
+      "id": "p28",
+      "n": 27,
+      "diap": "Bloque 7",
+      "tipo": "entender",
+      "pregunta": "¿Por qué relacionar la patología con lo morfológico?",
+      "porque": "Es lo que se ve al microscopio."
+    },
+    {
+      "id": "p29",
+      "n": 28,
+      "diap": "Bloque 7",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué gestiona el técnico con aplicaciones informáticas?",
+      "porque": "Documentos, existencias y organización."
+    },
+    {
+      "id": "p13",
+      "n": 29,
+      "diap": "Bloque 7",
+      "tipo": "laboratorio",
+      "pregunta": "¿Qué se espera del técnico en la tinción?",
+      "porque": "Lo práctico del título."
+    },
+    {
+      "id": "p30",
+      "n": 30,
+      "diap": "Bloque 7",
+      "tipo": "entender",
+      "pregunta": "¿Para qué sirven el liderazgo y la motivación en equipo?",
+      "porque": "Coordinar y organizar el equipo."
+    },
+    {
+      "id": "p14",
+      "n": 31,
+      "diap": "Bloque 7",
+      "tipo": "examen",
+      "pregunta": "¿Cómo comparo los objetivos de los dos títulos?",
+      "porque": "Tabla típica de examen."
+    }
   ]
 }
