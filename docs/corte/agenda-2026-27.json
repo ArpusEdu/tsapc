@@ -447,6 +447,15 @@
       "diapositivas": "2-106"
     },
     {
+      "id": "bio-examen-diciembre",
+      "tipo": "examen",
+      "asig": "bio",
+      "titulo": "Examen · Biología molecular y citogenética",
+      "fecha": "2026-12-14",
+      "hora": null,
+      "nota": "En horario de clase (lunes, 18:00). Unidades que entran por confirmar."
+    },
+    {
       "id": "ipe-examen-nomina",
       "tipo": "examen",
       "asig": "ipe",
