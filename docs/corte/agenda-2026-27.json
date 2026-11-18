@@ -439,10 +439,11 @@
       "id": "fisio-examen-diciembre",
       "tipo": "examen",
       "asig": "fisio",
-      "titulo": "Examen · Fisiopatología general",
+      "titulo": "Examen · Unidad 4 de Fisiopatología",
       "fecha": "2026-12-01",
       "hora": null,
-      "nota": "En horario de clase (martes, 16:35). Unidades que entran por confirmar."
+      "nota": "En horario de clase (martes, 16:35). Entra solo la unidad 4.",
+      "unidad": "fisio4"
     },
     {
       "id": "ipe-examen-nomina",
