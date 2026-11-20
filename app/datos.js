@@ -208,6 +208,10 @@ var UNIDADES = [
   },
   "extra": [
    [
+    "Alcalinos y gases nobles · para saber más",
+    "lab1/tabla-periodica/"
+   ],
+   [
     "Test de 50",
     "lab1/test-50/"
    ],

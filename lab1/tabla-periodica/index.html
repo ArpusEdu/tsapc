@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="es" data-unit="lab1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.mc-back{display:flex;align-items:center;gap:6px;width:max-content;margin:10px 0 0 max(12px,env(safe-area-inset-left,0px));padding:8px 14px;border-radius:999px;background:#7a1f3d;color:#fff!important;text-decoration:none;font:700 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.18);position:relative;z-index:5}
+.mc-float{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));z-index:30;margin:0;padding:7px 12px;font-size:14px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.mc-back.mc-float{background:#fff;color:#7a1f3d!important;border:2px solid #7a1f3d;box-shadow:0 3px 10px rgba(0,0,0,.28)}
+.mc-float.on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-color-scheme:dark){.mc-back{background:#ff8fae;color:#1d1825!important}.mc-back.mc-float{background:#1d1825;color:#ff8fae!important;border-color:#ff8fae}}</style>
+<script>document.addEventListener("DOMContentLoaded",function(){var MCU=(location.pathname.replace(/index\.html$/,"").split("/").filter(Boolean).slice(-2)[0]||"");function mk(c){var a=document.createElement("a");a.className=c;a.href="../../app/#/unidad/"+encodeURIComponent(MCU);a.textContent="\u2190 Volver a la unidad";return a}
+var top=mk("mc-back");top.textContent="\u2190 Volver a la unidad";document.body.insertBefore(top,document.body.firstChild);
+var f=mk("mc-back mc-float");f.setAttribute("aria-label","Volver a la unidad en la app");document.body.appendChild(f);
+function u(){f.classList.toggle("on",top.getBoundingClientRect().bottom<0)}addEventListener("scroll",u,{passive:true});u();});
+(function(){var PK="pos:"+location.pathname,tm;function sv(){try{localStorage.setItem(PK,String(Math.round(scrollY)))}catch(e){}}addEventListener("scroll",function(){clearTimeout(tm);tm=setTimeout(sv,250)},{passive:true});addEventListener("pagehide",sv);addEventListener("load",function(){if(location.hash)return;var y=0;try{y=+localStorage.getItem(PK)||0}catch(e){}if(y<300)return;setTimeout(function(){scrollTo(0,y);var d=document.createElement("div");d.textContent="\ud83d\udccd Seguimos donde lo dejaste";d.style.cssText="position:fixed;left:50%;top:calc(58px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:70;background:#1d1828;color:#fff;padding:9px 16px;border-radius:999px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 3px 10px rgba(0,0,0,.25);transition:opacity .4s";document.body.appendChild(d);setTimeout(function(){d.style.opacity="0"},2600);setTimeout(function(){d.remove()},3200)},60)});})();</script>
+<title>Alcalinos y gases nobles · Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icon-192.png">
+<meta name="theme-color" content="#21124f">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+/* Layout: una columna de cuaderno de laboratorio; las dos columnas de la tabla periódica, lado a lado, como protagonistas */
+:root{
+  --bg:#f5f7f6; --surface:#ffffff; --fg:#17201d; --muted:#56635e; --line:#d6dedb;
+  --alc:#b4471f; --alc-soft:#fbe9e1; --nob:#2f5fa8; --nob-soft:#e3ecf9;
+  --ok:#1f7a4a; --mal:#b3261e;
+  --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111715; --surface:#1a2320; --fg:#e7eeeb; --muted:#9aa8a2; --line:#2e3a36;
+  --alc:#f08a62; --alc-soft:#3a2219; --nob:#8fb4f0; --nob-soft:#1c2840; --ok:#6fd39c; --mal:#ff8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111715; --surface:#1a2320; --fg:#e7eeeb; --muted:#9aa8a2; --line:#2e3a36;
+  --alc:#f08a62; --alc-soft:#3a2219; --nob:#8fb4f0; --nob-soft:#1c2840; --ok:#6fd39c; --mal:#ff8a80; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 56px}
+main{max-width:760px;margin:18px auto 0;display:grid;gap:36px}
+h1,h2{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(1.9rem,6vw,2.6rem)}
+h2{font-size:1.35rem}
+p{margin:0}
+.lead{color:var(--muted);max-width:62ch;margin-top:10px}
+.eyebrow{font:600 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+section{display:grid;gap:14px}
+
+/* pares */
+.pares{display:grid;gap:8px}
+.cab,.par{display:grid;grid-template-columns:1fr 28px 1fr;align-items:center;gap:8px}
+.cab span{font:600 .72rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.cab .a{color:var(--nob)} .cab .b{color:var(--alc)}
+.el{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;min-width:0}
+.el.n{background:var(--nob-soft)} .el.a{background:var(--alc-soft)}
+.sim{font:600 1.5rem/1 var(--mono);width:2.4ch}
+.el.n .sim{color:var(--nob)} .el.a .sim{color:var(--alc)}
+.nom{font-weight:500;overflow-wrap:anywhere}
+.z{margin-left:auto;font:500 .9rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.flecha{text-align:center;font:600 .8rem var(--mono);color:var(--muted)}
+.nota{font-size:.92rem;color:var(--muted)}
+.nota b{color:var(--fg)}
+
+/* trucos */
+.trucos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.truco{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:6px;min-width:0}
+.truco .t{font:600 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.frase{font-size:1.05rem}
+.frase b{font-family:var(--mono)}
+.alcf b{color:var(--alc)} .nobf b{color:var(--nob)}
+
+/* comparación */
+.tabla{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.95rem}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+thead th{font:600 .75rem var(--mono);letter-spacing:.06em;text-transform:uppercase}
+thead th:nth-child(2){color:var(--alc)} thead th:nth-child(3){color:var(--nob)}
+td:first-child{color:var(--muted)}
+
+ul.lab{margin:0;padding-left:1.2em;display:grid;gap:8px}
+.llama{display:inline-block;width:.8em;height:.8em;border-radius:50%;vertical-align:-.05em;margin-right:4px}
+
+/* prueba */
+.prueba{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:16px}
+.modos{display:flex;flex-wrap:wrap;gap:8px}
+button{font:inherit;cursor:pointer;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:8px 14px}
+button:focus-visible,input:focus-visible{outline:2px solid var(--nob);outline-offset:2px}
+.modos button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.preg{font-size:1.15rem;min-height:1.6em}
+.preg .grande{font:600 2rem var(--mono)}
+.fila{display:flex;flex-wrap:wrap;gap:8px}
+input{font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg);flex:1 1 200px;min-width:0}
+.prim{background:var(--fg);color:var(--bg);border-color:var(--fg);font-weight:600}
+.fb{min-height:1.5em;font-weight:500}
+.fb.ok{color:var(--ok)} .fb.mal{color:var(--mal)}
+.marcador{font:500 .9rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.aviso{font-size:.88rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:440px){.sim{font-size:1.25rem}.el{padding:9px 10px;gap:8px}.cab,.par{grid-template-columns:1fr 18px 1fr;gap:5px}}
+@media (prefers-reduced-motion:no-preference){.fb{transition:opacity .2s}}
+</style>
+
+<main>
+  <header>
+    <div class="eyebrow">Química para el laboratorio · grupos 1 y 18</div>
+    <h1>Metales alcalinos y gases nobles</h1>
+    <p class="lead">Se aprenden mejor juntos: cada metal alcalino va justo después de un gas noble en la tabla. Si sabes uno, sabes el otro.</p>
+  </header>
+
+  <section aria-labelledby="t-pares">
+    <h2 id="t-pares">Las dos columnas, emparejadas</h2>
+    <div class="pares" role="table" aria-label="Gases nobles y metales alcalinos con su número atómico">
+      <div class="cab" role="row"><span class="a" role="columnheader">Gas noble · grupo 18</span><span role="columnheader"></span><span class="b" role="columnheader">Metal alcalino · grupo 1</span></div>
+      <div id="pares"></div>
+    </div>
+    <p class="nota"><b>Regla:</b> número atómico del alcalino = el del gas noble <b>+1</b>. El hidrógeno (H) está en la columna 1, pero <b>no</b> es un metal alcalino.</p>
+  </section>
+
+  <section aria-labelledby="t-trucos">
+    <h2 id="t-trucos">Frases para memorizarlos</h2>
+    <div class="trucos">
+      <div class="truco"><span class="t">Alcalinos, de arriba abajo</span><p class="frase alcf">«<b>Li</b>sa <b>Na</b>da <b>K</b>on <b>R</b>u<b>b</b>én <b>C</b>a<b>s</b>i <b>Fr</b>ancés»</p></div>
+      <div class="truco"><span class="t">Gases nobles, de arriba abajo</span><p class="frase nobf">«<b>He</b>len <b>Ne</b>cesita <b>Ar</b>roz, <b>Kr</b>ema, <b>Xe</b>rez y <b>R</b>amó<b>n</b>»</p></div>
+      <div class="truco"><span class="t">Los dos símbolos que engañan</span><p><b style="font-family:var(--mono);color:var(--alc)">Na</b> = sodio (latín <i>natrium</i>)<br><b style="font-family:var(--mono);color:var(--alc)">K</b> = potasio (latín <i>kalium</i>)</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-dif">
+    <h2 id="t-dif">En qué se diferencian</h2>
+    <div class="tabla"><table>
+      <thead><tr><th scope="col"></th><th scope="col">Metales alcalinos</th><th scope="col">Gases nobles</th></tr></thead>
+      <tbody>
+        <tr><td>Electrones en la última capa</td><td>1</td><td>8 (el helio, 2)</td></tr>
+        <tr><td>Qué hacen</td><td>Lo pierden y quedan como ion <b>+1</b> (Na⁺, K⁺)</td><td>Casi nunca reaccionan: su capa ya está completa</td></tr>
+        <tr><td>Reactividad</td><td>Altísima, y <b>aumenta al bajar</b> por el grupo</td><td>Casi nula: son inertes</td></tr>
+        <tr><td>Aspecto</td><td>Metales blandos, se cortan con cuchillo</td><td>Gases sin color ni olor, de un solo átomo</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section aria-labelledby="t-lab">
+    <h2 id="t-lab">Lo que más sale en el laboratorio</h2>
+    <ul class="lab">
+      <li><b>Na⁺ y K⁺</b> son electrolitos que se miden en sangre y orina. El sodio abunda <b>fuera</b> de la célula y el potasio <b>dentro</b>.</li>
+      <li><b>Seguridad:</b> los alcalinos reaccionan con el agua de forma violenta (sueltan hidrógeno y calor). Se guardan <b>en aceite o queroseno</b>.</li>
+      <li><b>Ensayo a la llama:</b> <span class="llama" style="background:#d62828" aria-hidden="true"></span>litio rojo, <span class="llama" style="background:#f4a300" aria-hidden="true"></span>sodio amarillo-naranja, <span class="llama" style="background:#8e5bd6" aria-hidden="true"></span>potasio violeta.</li>
+      <li><b>Argón</b> como atmósfera inerte, <b>helio</b> para enfriar los imanes de la resonancia magnética, <b>radón</b> radiactivo (riesgo en sótanos mal ventilados).</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="t-prueba">
+    <h2 id="t-prueba">Ponte a prueba</h2>
+    <div class="prueba">
+      <div class="modos" role="group" aria-label="Qué preguntar">
+        <button type="button" data-modo="nombre" aria-pressed="true">Símbolo → nombre</button>
+        <button type="button" data-modo="simbolo" aria-pressed="false">Nombre → símbolo</button>
+        <button type="button" data-modo="grupo" aria-pressed="false">¿Alcalino o noble?</button>
+        <button type="button" data-modo="z" aria-pressed="false">Número atómico</button>
+      </div>
+      <p class="preg" id="preg" aria-live="polite"></p>
+      <form class="fila" id="form" autocomplete="off">
+        <input id="resp" aria-label="Tu respuesta" placeholder="Escribe tu respuesta">
+        <button class="prim" type="submit">Comprobar</button>
+        <button type="button" id="sig">Siguiente</button>
+      </form>
+      <div class="fila" id="botonesGrupo" hidden>
+        <button type="button" class="prim" data-g="a">Metal alcalino</button>
+        <button type="button" class="prim" data-g="n">Gas noble</button>
+      </div>
+      <p class="fb" id="fb" aria-live="polite"></p>
+      <p class="marcador" id="marcador">0 de 0 bien</p>
+    </div>
+  </section>
+
+  <p class="aviso"><b>Para saber más · de Enfoque, no viene en tus diapositivas.</b> Son datos generales de química. Para el examen manda lo que diga la profe.</p>
+</main>
+
+<script>
+const NOB=[["He","helio",2],["Ne","neón",10],["Ar","argón",18],["Kr","kriptón",36],["Xe","xenón",54],["Rn","radón",86]];
+const ALC=[["Li","litio",3],["Na","sodio",11],["K","potasio",19],["Rb","rubidio",37],["Cs","cesio",55],["Fr","francio",87]];
+const el=(e,c)=>`<div class="el ${c}" role="cell"><span class="sim">${e[0]}</span><span class="nom">${e[1]}</span><span class="z">${e[2]}</span></div>`;
+document.getElementById("pares").innerHTML=NOB.map((n,i)=>`<div class="par" role="row" style="margin-top:${i?8:0}px">${el(n,"n")}<span class="flecha" role="cell" aria-label="más uno">+1</span>${el(ALC[i],"a")}</div>`).join("");
+
+const TODOS=[...NOB.map(e=>[...e,"n"]),...ALC.map(e=>[...e,"a"])];
+const sin=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").trim().toLowerCase();
+let modo="nombre",act=null,bien=0,total=0,respondida=false;
+const $=id=>document.getElementById(id);
+function nueva(){
+  let n; do{n=TODOS[Math.floor(Math.random()*TODOS.length)]}while(n===act&&TODOS.length>1);
+  act=n;respondida=false;$("fb").textContent="";$("fb").className="fb";$("resp").value="";
+  const g=modo==="grupo";$("form").hidden=g;$("botonesGrupo").hidden=!g;
+  if(modo==="nombre")$("preg").innerHTML=`¿Qué elemento es <span class="grande">${n[0]}</span>?`;
+  if(modo==="simbolo")$("preg").innerHTML=`¿Cuál es el símbolo del <b>${n[1]}</b>?`;
+  if(modo==="grupo")$("preg").innerHTML=`<span class="grande">${n[0]}</span> · ${n[1]}: ¿de qué grupo es?`;
+  if(modo==="z")$("preg").innerHTML=`¿Qué número atómico tiene el <b>${n[1]}</b> (${n[0]})?`;
+  if(!g)$("resp").focus({preventScroll:true});
+}
+function corregir(ok,txt){
+  if(respondida)return;respondida=true;total++;if(ok)bien++;
+  $("fb").className="fb "+(ok?"ok":"mal");$("fb").textContent=(ok?"✓ Bien. ":"✗ No. ")+txt;
+  $("marcador").textContent=`${bien} de ${total} bien`;
+}
+$("form").addEventListener("submit",e=>{
+  e.preventDefault();if(respondida){nueva();return}
+  const r=$("resp").value;if(!r.trim())return;const n=act;
+  const pista=n[3]==="a"?`Va justo después de ${NOB[ALC.findIndex(x=>x[0]===n[0])][1]} (${NOB[ALC.findIndex(x=>x[0]===n[0])][2]}).`:"";
+  if(modo==="nombre")corregir(sin(r)===sin(n[1]),`${n[0]} es ${n[1]}.`);
+  if(modo==="simbolo")corregir(r.trim()===n[0]||(sin(r)===sin(n[0])&&r.trim()[0]===n[0][0]),`El ${n[1]} es ${n[0]}.`);
+  if(modo==="z")corregir(parseInt(r,10)===n[2],`El ${n[1]} es el ${n[2]}. ${pista}`);
+});
+document.querySelectorAll("[data-g]").forEach(b=>b.addEventListener("click",()=>{
+  if(respondida){nueva();return}
+  corregir(b.dataset.g===act[3],`${act[1]} es ${act[3]==="a"?"metal alcalino (grupo 1)":"gas noble (grupo 18)"}.`);
+}));
+$("sig").addEventListener("click",nueva);
+document.querySelectorAll("[data-modo]").forEach(b=>b.addEventListener("click",()=>{
+  modo=b.dataset.modo;document.querySelectorAll("[data-modo]").forEach(x=>x.setAttribute("aria-pressed",x===b));nueva();
+}));
+nueva();
+</script>
+
+</body>
+</html>
