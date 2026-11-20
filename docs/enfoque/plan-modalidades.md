@@ -55,3 +55,7 @@ Se mantiene la regla: lo de la profe es literal; lo generado usa solo hechos del
 3. Cuaderno digital (Cornell, dibujo y etiquetado).
 4. Clase narrada y vídeo.
 5. Recomendaciones.
+
+## Hecho en el paso 2
+- 2026-11-19 · Escuchar el repaso en voz alta (`assets/repaso.js`).
+- 2026-11-20 · «Práctica de Enfoque» en todas las unidades: huecos, relacionar y verdadero/falso con las frases de la profe tal cual (`scripts/practica-enfoque.mjs`). Arregla la práctica de Fisio 4 e IPE tema 4, que no tenían simulacro.

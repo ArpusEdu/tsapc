@@ -27,6 +27,7 @@ Contexto de producto: `PRODUCT.md`. Marca: `docs/enfoque/marca.md` (aprobada; ma
 ## Cómo se trabaja
 
 - Unidad nueva desde un PDF: texto con pdfjs → `docs/fuentes/<u>.txt` (+ `<u>-imagenes.txt`) → `<u>/repaso/contenido.json` → `node scripts/repaso.mjs <u>` → `node scripts/unidad-datos.mjs <u>` → `node scripts/extraer-preguntas.mjs`. Además: objeto en `app/datos.js`, entrada `EX` (con `"sim": {}`) y `PROG` en `index.html`, `UNIDADES` en `assets/store.js` y en `extraer-preguntas.mjs`, `sw.js` SHELL, sala en `centro/index.html`, número de unidades en `tests/app.test.mjs`. Si el prefijo de la clave no coincide con la carpeta (ipe4 → ipe-tema4), `ALIAS` en `assets/store.js`. Dibujo en `assets/especimen.js` y nombre corto en `SHORT` de `assets/repaso.js`. La clave de guardado debe cumplir `PERMITIDAS` de `assets/copia.js` (lo vigila `tests/copia.test.mjs`).
+- `extraer-preguntas.mjs` también genera en cada unidad el banco «Práctica de Enfoque» (`scripts/practica-enfoque.mjs`): huecos, relacionar y verdadero/falso hechos solo con frases literales de `prof`; `tests/preguntas.test.mjs` comprueba que cada trozo está tal cual.
 - Sesión de estudio: escribir `app/sesiones/<id>.json` con `profe.dice` vacío → `node scripts/copiar-profe.mjs <u> <id>` → `node scripts/registrar-sesiones.mjs <ids…>`.
 - Tras tocar archivos del SHELL: `node scripts/sw-version.mjs`.
 - Siempre antes de dar algo por hecho: `node --test tests/` (todo en verde). GitHub las repite en cada push (`.github/workflows/pruebas.yml`).

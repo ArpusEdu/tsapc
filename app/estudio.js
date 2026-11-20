@@ -218,7 +218,7 @@
     function vistaElegir(u, J, act, e) {
       var b = bancoSel(J, e), n = seleccion(u, J, e).length, nm = nMazo(u.id), h = historial(u.id), mj = Q.mejor(h);
       var tipos = {}; b.preguntas.forEach(function (q) { tipos[q.tipo] = (tipos[q.tipo] || 0) + 1; });
-      var html = '<p class="sub qz-intro">' + esc(b.titulo) + " · " + b.preguntas.length + " preguntas sacadas tal cual del simulacro: " + Object.keys(tipos).map(function (t) { return tipos[t] + " de " + Q.TIPOS[t].toLowerCase(); }).join(", ") + ".</p>";
+      var html = '<p class="sub qz-intro">' + esc(b.titulo) + " · " + b.preguntas.length + (b.generado ? " preguntas hechas con las frases de la profe, tal cual: " : " preguntas sacadas tal cual del simulacro: ") + Object.keys(tipos).map(function (t) { return tipos[t] + " de " + (b.generado && t === "esquema" ? "completar huecos" : Q.TIPOS[t].toLowerCase()); }).join(", ") + ".</p>";
       if (act && !act.terminado) {
         var hechas = act.orden.filter(function (id) { return J.porId[id] && Q.contestada(J.porId[id], act.resp[id]); }).length;
         html += '<div class="recuadro qz-medias"><span class="washi" aria-hidden="true"></span><h2 class="qz-h">Tienes un intento a medias</h2><p>' + MODOS[act.modo] + " · " + hechas + " de " + act.orden.length + " contestadas" + (act.limite ? " · con tiempo" : "") + '. Está guardado: sigue donde lo dejaste.</p><div class="acciones"><button type="button" class="boton" data-qz="seguir">Seguir' + ico("siguiente") + '</button><button type="button" class="boton secundario" data-qz="descartar">Descartarlo</button></div></div>';
@@ -239,7 +239,7 @@
           b.partes.map(function (p) { var c = b.preguntas.filter(function (q) { return q.parte === p.id; }).length; return '<li><button type="button" data-qz-parte="' + esc(p.id) + '" aria-pressed="' + (e.partes.indexOf(p.id) >= 0) + '"><span>' + esc(Q.plano((p.k ? p.k + " · " : "") + p.t)) + '</span><b class="num">' + c + "</b></button></li>"; }).join("") + "</ul></section>";
       }
       html += '<section class="ancho qz-empezar"><button type="button" class="boton" data-qz="empezar"' + (n ? "" : " disabled") + ">" + (n ? "Empezar · " + n + (n === 1 ? " pregunta" : " preguntas") : "No hay preguntas con esa elección") + ico("siguiente") + "</button>" +
-        '<a class="boton fantasma" href="../' + esc(J.bancos[0].fuente) + '">Abrir el simulacro de siempre</a></section>';
+        (J.bancos[0].generado ? "" : '<a class="boton fantasma" href="../' + esc(J.bancos[0].fuente) + '">Abrir el simulacro de siempre</a>') + "</section>";
       html += '<section class="ancho" aria-labelledby="hQh"><div class="sec-cab"><h2 id="hQh">Tus intentos</h2>' + (mj ? '<span class="mano">mejor nota: ' + coma(mj.nota) + "</span>" : "") + "</div>" + listaHistorial(h) + "</section></div>";
       return html;
     }
@@ -269,7 +269,7 @@
       }).join("") + "</ol></div>";
       var ctxTxt = parte.contexto ? '<div class="qz-contexto">' + esc(parte.contexto).replace(/\{(\d+)\}/g, function (m, d) { return '<span class="qz-hueco' + (+d === q.hueco ? " actual" : "") + '">(' + d + ")" + (+d === q.hueco ? " ____" : "") + "</span>"; }) + "</div>" : "";
       var how = parte.how ? '<details class="qz-how"' + (/<blockquote|Caso/.test(parte.how) ? " open" : "") + "><summary>" + esc(Q.plano((parte.k ? parte.k + " · " : "") + parte.t)) + '</summary><div class="rico">' + r(q, parte.how) + "</div></details>" : "";
-      var enun = q.hueco ? "Hueco (" + q.hueco + ")" : q.tipo === "esquema" ? r(q, q.texto) + ' <span class="qz-n">diap. ' + esc(String(q.diapositiva)) + "</span>" : r(q, q.variante === "selgap" || q.variante === "gap" ? q.texto.replace("{}", "_____") : q.texto);
+      var enun = q.hueco ? "Hueco (" + q.hueco + ")" : q.tipo === "esquema" ? r(q, q.texto) + (q.diapositiva ? ' <span class="qz-n">diap. ' + esc(String(q.diapositiva)) + "</span>" : "") : r(q, q.variante === "selgap" || q.variante === "gap" ? q.texto.replace("{}", "_____") : q.texto);
       var html = barra + indice + '<article class="qz-hoja" aria-labelledby="qzEnun">' + how + ctxTxt +
         '<div class="qz-num mano" aria-hidden="true">' + esc(q.n ? q.n : String(i + 1)) + '.</div><h1 id="titulo" tabindex="-1" class="qz-enun' + (q.variante === "fix" ? " qz-tachado" : "") + '"><span class="sr">Pregunta ' + (i + 1) + " de " + total + ". </span><span id=\"qzEnun\" class=\"rico\">" + enun + "</span>" + (q.pista ? ' <span class="qz-pista">(' + esc(q.pista) + ")</span>" : "") + "</h1>" +
         respuestaHTML(q, act, vista, ex) + "</article>";
@@ -300,8 +300,8 @@
           return '<div class="qz-rel-f' + (d ? (d.ok ? " bien" : " mal") : "") + '"><label for="qzR' + oi + '" class="rico">' + (d ? ico(d.ok ? "check" : "cerrar") + '<span class="sr">' + (d.ok ? "Bien: " : "Mal: ") + "</span>" : "") + r(q, f[0]) + '</label><select id="qzR' + oi + '" data-qz-rel="' + oi + '"' + (vista ? " disabled" : "") + '><option value="">— elige —</option>' + q.opciones.map(function (o, j) { return '<option value="' + j + '"' + (val === j ? " selected" : "") + ">" + esc(Q.plano(o)) + "</option>"; }).join("") + "</select>" + (d && !d.ok ? '<span class="qz-buena">' + esc(Q.plano(d.buena)) + "</span>" : "") + "</div>";
         }).join("") + "</div>";
       } else if (q.tipo === "esquema" || q.tipo === "escribir") {
-        var campos = q.tipo === "esquema" ? q.respuestas.map(function (a, k) { return { etiqueta: String(k + 1) }; }) : q.campos;
-        if (q.tipo === "esquema") h += '<figure class="qz-fig"><img src="' + esc(baseDe(q) + q.img) + '" alt="Esquema para rellenar: ' + esc(Q.plano(q.texto)) + '" loading="lazy"></figure>';
+        var campos = q.tipo === "esquema" ? q.respuestas.map(function (a, k) { return { etiqueta: q.variante === "hueco" ? "Lo que falta" : String(k + 1) }; }) : q.campos;
+        if (q.tipo === "esquema" && q.img) h += '<figure class="qz-fig"><img src="' + esc(baseDe(q) + q.img) + '" alt="Esquema para rellenar: ' + esc(Q.plano(q.texto)) + '" loading="lazy"></figure>';
         h += '<div class="qz-campos' + (q.tipo === "esquema" ? " esquema" : "") + '">' + campos.map(function (f, k) {
           var val = Array.isArray(v) && typeof v[k] === "string" ? v[k] : "", d = c ? c.detalle[k] : null;
           var ovr = d && !d.ok && val && q.tipo === "esquema" ? ' <button type="button" class="qz-mini" data-qz-ovr="' + k + '">La tenía bien</button>' : "";

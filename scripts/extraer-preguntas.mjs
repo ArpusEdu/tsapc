@@ -6,6 +6,7 @@
    Ids estables: <u>.q.017 (banco principal), <u>.<banco>.q.017 (otros bancos), <u>.t.q12 / <u>.t.d12_0 / ingles1.t.v7 (tarjetas).
    Nada de dependencias: los datos se leen con un analizador de literales y vm, y el HTML de los repasos con un lector mínimo. */
 import fs from "node:fs";
+import { bancoEnfoque } from "./practica-enfoque.mjs";
 import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
@@ -185,6 +186,8 @@ export function extraerUnidad(u) {
     const r = D.PARTS ? bancoPartes(u, D, u + ".q.") : bancoArrays(u, html, D, u + ".q.");
     bancos.push(Object.assign({ id: "sim", titulo: "Simulacro", fuente: dir, formato: formatoDe(html) }, r));
   }
+  const enfoque = bancoEnfoque(u);   /* huecos, relacionar y V/F con las frases de la profe (scripts/practica-enfoque.mjs) */
+  if (enfoque) bancos.push(enfoque);
   const tarjetas = tarjetasRepaso(u).concat(u === "ingles1" ? tarjetasVocabulario() : []);
   return { unidad: u, version: 1, bancos, tarjetas };
 }
